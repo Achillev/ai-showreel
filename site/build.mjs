@@ -253,6 +253,7 @@ function page(title, body, { desc = '', jsonld = '', canonical = '', path = '' }
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600;700&family=Newsreader:ital,wght@0,400;0,500;0,600;1,400;1,600&display=swap">
 <link rel="stylesheet" href="/assets/style.css">
 <script type="application/ld+json">${JSON.stringify(graph)}</script>
+<script defer src="/_vercel/insights/script.js"></script>
 </head><body>
 <a class="skip" href="#main">Aller au contenu</a>
 <header class="site-head">
