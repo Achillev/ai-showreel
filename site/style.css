@@ -481,10 +481,11 @@ main:focus, main:focus-visible { outline: none; }
 }
 
 /* filtre de la liste de cas (clic sur une case de la matrice) */
-.cas-filter { display: flex; align-items: center; gap: 14px; margin-bottom: 18px; padding: 12px 16px; background: var(--accent-soft); border: 1px solid var(--accent); border-radius: 10px; font-size: 14.5px; color: var(--ink); }
-.cas-filter strong { font-family: var(--serif); font-size: 19px; color: var(--accent); }
-.cas-clear { margin-left: auto; background: var(--surface); border: 1px solid var(--line); border-radius: 8px; padding: 7px 14px; font: inherit; font-size: 13px; font-weight: 600; color: var(--ink); cursor: pointer; }
-.cas-clear:hover { border-color: var(--accent); color: var(--accent); }
+.cas-filter { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; margin-bottom: 20px; }
+.cf-btn { background: var(--surface); border: 1px solid var(--line); border-radius: 999px; padding: 8px 15px; font: inherit; font-size: 14px; font-weight: 600; color: var(--ink); cursor: pointer; transition: border-color .15s, background .15s, color .15s; }
+.cf-btn:hover { border-color: var(--accent); color: var(--accent); }
+.cf-btn.is-on { background: var(--accent); border-color: var(--accent); color: #fff; }
+.cf-count { margin-left: 4px; font-size: 13.5px; color: var(--ink-faint); }
 
 /* ===== OPTIMISATION MOBILE (trafic ~80% mobile) ===== */
 /* garde-fous globaux : jamais de scroll horizontal parasite, mots longs coupables */
@@ -515,8 +516,8 @@ a, button { -webkit-tap-highlight-color: rgba(27, 77, 255, .12); }
   /* CTA et filtre : empiles, bouton pleine largeur (cible tactile confortable) */
   .feedback { flex-direction: column; align-items: flex-start; gap: 14px; padding: 20px; }
   .feedback-btn { width: 100%; text-align: center; min-height: 46px; display: flex; align-items: center; justify-content: center; }
-  .cas-filter { flex-wrap: wrap; }
-  .cas-clear { margin-left: 0; }
+  .cas-filter { gap: 7px; }
+  .cf-btn { padding: 8px 13px; font-size: 13.5px; }
   .site-foot { padding: 26px 16px 48px; }
 }
 

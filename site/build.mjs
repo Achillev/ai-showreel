@@ -25,34 +25,62 @@ function feedbackLink(c) {
   return mailto(`Correction - ${c?.marque || ''} (${id})`, body);
 }
 
-// ---------- libellés ----------
-const INDUSTRIES = {
-  retail_ecom: 'Retail & e-commerce', voyage_hospitality: 'Voyage & hospitality',
-  banque_assurance_fintech: 'Banque, assurance & fintech', telco: 'Télécoms',
-  media_entertainment: 'Média & entertainment', luxe_beaute: 'Luxe & beauté',
-  auto: 'Automobile', cpg_d2c: 'CPG & D2C', food_beverage: 'Food & beverage',
-  sante_pharma: 'Santé & pharma', tech_saas: 'Tech & SaaS',
-  energie_utilities: 'Énergie & utilities', immobilier: 'Immobilier', sport_fitness: 'Sport & fitness',
-  education: 'Éducation', secteur_public: 'Secteur public', autre: 'Autre',
+// ---------- i18n : langue courante + helpers ----------
+// LANG est bascule par setLang() avant chaque passe de rendu (FR -> dist/, EN -> dist/en/).
+let LANG = 'fr';
+const t = (fr, en) => (LANG === 'en' && en != null) ? en : fr;   // libelle inline
+const P = () => (LANG === 'en' ? '/en' : '');                     // prefixe d'URL interne
+const LANGS = ['fr', 'en'];
+const enPath = (p) => '/en' + (p === '/' ? '/' : p);             // chemin FR -> chemin EN
+
+// ---------- libellés (source bilingue [fr, en]) ----------
+const _INDUSTRIES = {
+  retail_ecom: ['Retail & e-commerce', 'Retail & e-commerce'], voyage_hospitality: ['Voyage & hospitality', 'Travel & hospitality'],
+  banque_assurance_fintech: ['Banque, assurance & fintech', 'Banking, insurance & fintech'], telco: ['Télécoms', 'Telecom'],
+  media_entertainment: ['Média & entertainment', 'Media & entertainment'], luxe_beaute: ['Luxe & beauté', 'Luxury & beauty'],
+  auto: ['Automobile', 'Automotive'], cpg_d2c: ['CPG & D2C', 'CPG & D2C'], food_beverage: ['Food & beverage', 'Food & beverage'],
+  sante_pharma: ['Santé & pharma', 'Health & pharma'], tech_saas: ['Tech & SaaS', 'Tech & SaaS'],
+  energie_utilities: ['Énergie & utilities', 'Energy & utilities'], immobilier: ['Immobilier', 'Real estate'], sport_fitness: ['Sport & fitness', 'Sports & fitness'],
+  education: ['Éducation', 'Education'], secteur_public: ['Secteur public', 'Public sector'], autre: ['Autre', 'Other'],
 };
-const LEVIERS = {
-  acquisition: 'Acquisition', activation_conversion: 'Activation / conversion',
-  retention: 'Rétention', monetisation: 'Monétisation',
+const _LEVIERS = {
+  acquisition: ['Acquisition', 'Acquisition'], activation_conversion: ['Activation / conversion', 'Activation / conversion'],
+  retention: ['Rétention', 'Retention'], monetisation: ['Monétisation', 'Monetization'],
 };
-const FAMILLES = {
-  personnalisation: 'Personnalisation', generation: 'Génération', conversation: 'Conversation',
-  prediction: 'Prédiction', optimisation_automatisation: 'Optimisation / automatisation',
+const _FAMILLES = {
+  personnalisation: ['Personnalisation', 'Personalization'], generation: ['Génération', 'Generation'], conversation: ['Conversation', 'Conversation'],
+  prediction: ['Prédiction', 'Prediction'], optimisation_automatisation: ['Optimisation / automatisation', 'Optimization / automation'],
 };
-const IMPLEM = { custom: 'IA custom', plateforme: 'Plateforme martech', hybride: 'Hybride' };
-const PREUVE_LABEL = {
-  A: 'A — Résultats financiers', B: 'B — Étude de cas plateforme chiffrée',
-  C: 'C — Presse citant la marque', D: 'D — Déclaratif conférence',
+const _IMPLEM = { custom: ['IA custom', 'Custom AI'], plateforme: ['Plateforme martech', 'Martech platform'], hybride: ['Hybride', 'Hybrid'] };
+const _PREUVE_LABEL = {
+  A: ['A — Résultats financiers', 'A — Financial results'], B: ['B — Étude de cas plateforme chiffrée', 'B — Quantified platform case study'],
+  C: ['C — Presse citant la marque', 'C — Press naming the brand'], D: ['D — Déclaratif conférence', 'D — Conference statement'],
 };
-const VIVANT = {
-  confirme: { t: 'Vivant confirmé', c: 'ok' },
-  signaux_mitiges: { t: 'Signaux mitigés', c: 'warn' },
-  incertain: { t: 'Incertain', c: 'bad' },
+const _VIVANT = {
+  confirme: { t: ['Vivant confirmé', 'Live confirmed'], c: 'ok' },
+  signaux_mitiges: { t: ['Signaux mitigés', 'Mixed signals'], c: 'warn' },
+  incertain: { t: ['Incertain', 'Uncertain'], c: 'bad' },
 };
+const _FIAB = {
+  T1_primaire: { t: ['Primaire', 'Primary'], c: 't1', d: ['Document primaire : décision de justice, doc financier officiel, communiqué de la marque', 'Primary document: court ruling, official financial filing, brand press release'] },
+  T2_officiel_interesse: { t: ['Officiel intéressé', 'Interested party'], c: 't2', d: ['Source officielle mais intéressée : customer story plateforme/vendor/intégrateur', 'Official but interested source: platform/vendor/integrator customer story'] },
+  T3_presse_etablie: { t: ['Presse établie', 'Established press'], c: 't3', d: ['Presse majeure reconnue', 'Recognized major press'] },
+  T4_secondaire: { t: ['Secondaire', 'Secondary'], c: 't4', d: ['Presse spécialisée ou analyse tierce', 'Trade press or third-party analysis'] },
+};
+const _MEDIA_SRC = { officielle: ['Vidéo officielle', 'Official video'], demo: ['Démonstration', 'Demo'], la_pub: ['La publicité (générée par IA)', 'The ad (AI-generated)'], couverture: ['Couverture presse', 'Press coverage'] };
+
+// maps aplaties dans la langue courante (reconstruites par setLang)
+let INDUSTRIES, LEVIERS, FAMILLES, IMPLEM, PREUVE_LABEL, VIVANT, FIAB, MEDIA_SRC, NAV;
+function setLang(l) {
+  LANG = l;
+  const idx = l === 'en' ? 1 : 0;
+  const flat = m => Object.fromEntries(Object.entries(m).map(([k, v]) => [k, v[idx]]));
+  const flatObj = m => Object.fromEntries(Object.entries(m).map(([k, v]) => [k, Object.fromEntries(Object.entries(v).map(([kk, vv]) => [kk, Array.isArray(vv) ? vv[idx] : vv]))]));
+  INDUSTRIES = flat(_INDUSTRIES); LEVIERS = flat(_LEVIERS); FAMILLES = flat(_FAMILLES);
+  IMPLEM = flat(_IMPLEM); PREUVE_LABEL = flat(_PREUVE_LABEL); MEDIA_SRC = flat(_MEDIA_SRC);
+  VIVANT = flatObj(_VIVANT); FIAB = flatObj(_FIAB);
+  NAV = _NAV.map(([href, fr, en]) => [href, l === 'en' ? en : fr]);
+}
 
 // ---------- utils ----------
 const esc = (s = '') => String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
@@ -190,7 +218,6 @@ function ytId(url = '') {
   const m = url.match(/(?:youtu\.be\/|youtube\.com\/(?:watch\?v=|shorts\/|embed\/))([\w-]{11})/);
   return m ? m[1] : null;
 }
-const MEDIA_SRC = { officielle: 'Vidéo officielle', demo: 'Démonstration', la_pub: 'La publicité (générée par IA)', couverture: 'Couverture presse' };
 function mediaBlock(c) {
   const md = c.media;
   if (!md) return '';
@@ -199,7 +226,7 @@ function mediaBlock(c) {
     const id = ytId(md.url);
     if (!id) return '';
     return `<section class="block block-media">
-      <div class="block-head"><h2>Le cas en action</h2><span class="media-tag">${esc(label)}</span></div>
+      <div class="block-head"><h2>${t('Le cas en action', 'The case in action')}</h2><span class="media-tag">${esc(label)}</span></div>
       <div class="video-frame"><iframe src="https://www.youtube-nocookie.com/embed/${esc(id)}" title="${esc(md.titre || c.marque)}" loading="lazy" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
       ${md.titre ? `<p class="media-cap">${esc(md.titre)} · <a href="${esc(md.url)}" target="_blank" rel="noopener">voir sur YouTube</a></p>` : ''}
     </section>`;
@@ -209,13 +236,7 @@ function mediaBlock(c) {
     <img class="media-img" src="${esc(md.url)}" alt="${esc(md.titre || c.marque)}" loading="lazy">
   </section>`;
 }
-const preuveBadge = (n) => `<span class="grade grade-${n}" title="${esc(PREUVE_LABEL[n] || '')}">Preuve ${n}</span>`;
-const FIAB = {
-  T1_primaire: { t: 'Primaire', c: 't1', d: 'Document primaire : décision de justice, doc financier officiel, communiqué de la marque' },
-  T2_officiel_interesse: { t: 'Officiel intéressé', c: 't2', d: 'Source officielle mais intéressée : customer story plateforme/vendor/intégrateur' },
-  T3_presse_etablie: { t: 'Presse établie', c: 't3', d: 'Presse majeure reconnue' },
-  T4_secondaire: { t: 'Secondaire', c: 't4', d: 'Presse spécialisée ou analyse tierce' },
-};
+const preuveBadge = (n) => `<span class="grade grade-${n}" title="${esc(PREUVE_LABEL[n] || '')}">${t('Preuve', 'Proof')} ${n}</span>`;
 const fiabBadge = (f) => { const v = FIAB[f]; return v ? `<span class="fiab fiab-${v.c}" title="${esc(v.d)}">${v.t}</span>` : ''; };
 const vivantBadge = (s) => { const v = VIVANT[s] || VIVANT.incertain; return `<span class="vivant v-${v.c}"><span class="dot"></span>${v.t}</span>`; };
 
@@ -226,50 +247,63 @@ function scoreBar(label, val) {
 
 // Domaine de production : À REMPLACER au naming/déploiement (une seule constante).
 const SITE = 'https://ai-showreel.com';
+// Flag bilingue : passe à true quand le contenu EN (fiches + pages) est traduit et prêt à indexer.
+// false = seul le FR est généré/indexé ; la machinerie i18n reste en place mais l'anglais n'est pas exposé.
+const BILINGUAL = false;
 const ORG_JSONLD = { '@type': 'Organization', '@id': SITE + '/#org', name: 'AI Showreel', url: SITE, description: 'Index indépendant des déploiements IA prouvés en marketing digital, noté sur une échelle de preuve publique.' };
 
-const NAV = [
-  ['/', 'La base'], ['/veille.html', 'Le radar'], ['/rapports.html', 'Les rapports'],
-  ['/patterns.html', 'Les patterns'], ['/outils.html', 'Les outils'],
-  ['/perception.html', "L'acceptation"], ['/cimetiere.html', 'Le cimetière'],
+const _NAV = [
+  ['/', 'La base', 'The index'], ['/veille.html', 'Le radar', 'The radar'], ['/rapports.html', 'Les rapports', 'The reports'],
+  ['/patterns.html', 'Les patterns', 'The patterns'], ['/outils.html', 'Les outils', 'The stack'],
+  ['/perception.html', "L'acceptation", 'Acceptance'], ['/cimetiere.html', 'Le cimetière', 'The graveyard'],
 ];
 function page(title, body, { desc = '', jsonld = '', canonical = '', path = '' } = {}) {
-  const url = SITE + (path || '');
-  const navHtml = NAV.map(([href, label]) => `<a href="${href}"${href === (path || '/') ? ' aria-current="page"' : ''}>${label}</a>`).join('');
+  const frUrl = SITE + (path || '/');
+  const enUrl = SITE + enPath(path || '/');
+  const url = LANG === 'en' ? enUrl : frUrl;
+  const can = canonical || url;
+  const altUrl = LANG === 'en' ? frUrl : enUrl;
+  const ogImg = SITE + ((BILINGUAL && LANG === 'en') ? '/og-image-en.png' : '/og-image.png');
+  const navHtml = NAV.map(([href, label]) => `<a href="${P()}${href}"${href === (path || '/') ? ' aria-current="page"' : ''}>${label}</a>`).join('');
+  const org = { ...ORG_JSONLD, description: t('Index indépendant des déploiements IA prouvés en marketing digital, noté sur une échelle de preuve publique.', 'Independent index of AI deployments proven at scale in digital marketing, graded on a public evidence scale.') };
   const nodes = jsonld ? (() => { const p = JSON.parse(jsonld); return Array.isArray(p) ? p : [p]; })() : [];
-  const graph = { '@context': 'https://schema.org', '@graph': [ORG_JSONLD, { '@type': 'WebSite', '@id': SITE + '/#site', url: SITE, name: 'AI Showreel', publisher: { '@id': SITE + '/#org' } }, ...nodes] };
-  return normalizeHtmlText(`<!doctype html><html lang="fr"><head>
+  const graph = { '@context': 'https://schema.org', '@graph': [org, { '@type': 'WebSite', '@id': SITE + '/#site', url: SITE, name: 'AI Showreel', inLanguage: LANG, publisher: { '@id': SITE + '/#org' } }, ...nodes] };
+  return normalizeHtmlText(`<!doctype html><html lang="${LANG}"><head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
 <title>${esc(title)}</title>
 <meta name="description" content="${esc(desc)}">
 <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
 <meta name="theme-color" content="#f7f6f3" media="(prefers-color-scheme: light)">
 <meta name="theme-color" content="#0e1116" media="(prefers-color-scheme: dark)">
-<link rel="canonical" href="${esc(canonical || url)}">
+<link rel="canonical" href="${esc(can)}">${BILINGUAL ? `
+<link rel="alternate" hreflang="fr" href="${esc(frUrl)}">
+<link rel="alternate" hreflang="en" href="${esc(enUrl)}">
+<link rel="alternate" hreflang="x-default" href="${esc(enUrl)}">` : ''}
 <link rel="icon" href="/favicon.ico" sizes="32x32">
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 <link rel="manifest" href="/site.webmanifest">
-<meta property="og:type" content="website"><meta property="og:site_name" content="AI Showreel"><meta property="og:locale" content="fr_FR">
-<meta property="og:title" content="${esc(title)}"><meta property="og:description" content="${esc(desc)}"><meta property="og:url" content="${esc(canonical || url)}">
-<meta property="og:image" content="${SITE}/og-image.png"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta property="og:image:alt" content="AI Showreel, les déploiements IA prouvés du marketing digital">
-<meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="${esc(title)}"><meta name="twitter:description" content="${esc(desc)}"><meta name="twitter:image" content="${SITE}/og-image.png">
+<meta property="og:type" content="website"><meta property="og:site_name" content="AI Showreel"><meta property="og:locale" content="${LANG === 'en' ? 'en_US' : 'fr_FR'}">
+<meta property="og:title" content="${esc(title)}"><meta property="og:description" content="${esc(desc)}"><meta property="og:url" content="${esc(can)}">
+<meta property="og:image" content="${ogImg}"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta property="og:image:alt" content="${t('AI Showreel, les déploiements IA prouvés du marketing digital', 'AI Showreel, the proven AI deployments of digital marketing')}">
+<meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="${esc(title)}"><meta name="twitter:description" content="${esc(desc)}"><meta name="twitter:image" content="${ogImg}">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600;700&family=Newsreader:ital,wght@0,400;0,500;0,600;1,400;1,600&display=swap">
 <link rel="stylesheet" href="/assets/style.css">
 <script type="application/ld+json">${JSON.stringify(graph)}</script>
 <script defer src="/_vercel/insights/script.js"></script>
 </head><body>
-<a class="skip" href="#main">Aller au contenu</a>
+<a class="skip" href="#main">${t('Aller au contenu', 'Skip to content')}</a>
 <header class="site-head">
-  <a class="brand" href="/" translate="no"><span class="brand-mark" aria-hidden="true">◆</span> AI&nbsp;Showreel <span class="brand-sub">l'analyse niveau grand cabinet, pour tout le monde</span></a>
-  <nav aria-label="Navigation principale">${navHtml}</nav>
+  <a class="brand" href="${P()}/" translate="no"><span class="brand-mark" aria-hidden="true">◆</span> AI&nbsp;Showreel <span class="brand-sub">${t("l'analyse niveau grand cabinet, pour tout le monde", 'consulting-grade analysis, for everyone')}</span></a>
+  <nav aria-label="${t('Navigation principale', 'Main navigation')}">${navHtml}</nav>${BILINGUAL ? `
+  <a class="lang-switch" href="${esc(altUrl)}" hreflang="${LANG === 'en' ? 'fr' : 'en'}" aria-label="${t('Voir en anglais', 'Voir en français')}">${LANG === 'en' ? 'FR' : 'EN'}</a>` : ''}
 </header>
 <main id="main" tabindex="-1">${body}</main>
 <footer class="site-foot">
-  <p><strong>AI Showreel</strong> — index indépendant des déploiements IA prouvés en marketing digital. Chaque cas est noté sur une échelle de preuve publique et vérifié vivant à sa date.</p>
-  <p class="foot-links"><a href="${mailto('AI Showreel - proposer un cas ou une correction', 'Votre message :\n\n\nSi c\'est une correction, merci d\'indiquer la fiche concernée et une source.')}">Proposer un cas ou une correction</a> · <a href="/methodologie.html">Méthodologie</a></p>
-  <p class="foot-meta">« L'Evident du marketing digital » : un index éditorialement indépendant, sans biais vendeur ni sponsor.</p>
+  <p><strong>AI Showreel</strong> ${t('— index indépendant des déploiements IA prouvés en marketing digital. Chaque cas est noté sur une échelle de preuve publique et vérifié vivant à sa date.', '— independent index of AI deployments proven at scale in digital marketing. Every case is graded on a public evidence scale and verified live at its date.')}</p>
+  <p class="foot-links"><a href="${mailto('AI Showreel - proposer un cas ou une correction', 'Votre message :\n\n\nSi c\'est une correction, merci d\'indiquer la fiche concernée et une source.')}">${t('Proposer un cas ou une correction', 'Submit a case or a correction')}</a> · <a href="${P()}/methodologie.html">${t('Méthodologie', 'Methodology')}</a></p>
+  <p class="foot-meta">${t('« L\'Evident du marketing digital » : un index éditorialement indépendant, sans biais vendeur ni sponsor.', 'The independent evidence index for AI in digital marketing. No vendor bias, no sponsor.')}</p>
 </footer>
 </body></html>`);
 }
@@ -752,37 +786,43 @@ function indexPage(cases) {
   const succes = cases.filter(c => c.type_fiche !== 'echec_retrait');
   const body = `
   <section class="hero">
-    <h1>Ce que les leaders de votre secteur ont <em>vraiment</em> déployé en IA.</h1>
-    <p class="lede">Un index indépendant des déploiements IA à l'échelle en marketing digital. Chaque cas est noté sur une échelle de preuve publique, vérifié vivant à sa date, et mappé sur le parcours client. Pas de POC, pas de biais vendeur, pas de slides périmées.</p>
+    <h1>${t('Ce que les leaders de votre secteur ont <em>vraiment</em> déployé en IA.', 'What the leaders in your industry have <em>actually</em> deployed in AI.')}</h1>
+    <p class="lede">${t("Un index indépendant des déploiements IA à l'échelle en marketing digital. Chaque cas est noté sur une échelle de preuve publique, vérifié vivant à sa date, et mappé sur le parcours client. Pas de POC, pas de biais vendeur, pas de slides périmées.", 'An independent index of AI deployments at scale in digital marketing. Every case is graded on a public evidence scale, verified live at its date, and mapped to the customer journey. No POCs, no vendor bias, no stale slides.')}</p>
     <div class="hero-stats">
-      <div><strong>${succes.length}</strong> cas prouvés</div>
-      <div><strong>${new Set(succes.map(c => c.industrie)).size}</strong> industries</div>
-      <div><strong>${succes.filter(c => ['A', 'B'].includes(c.niveau_preuve?.niveau)).length}</strong> en preuve A/B</div>
+      <div><strong>${succes.length}</strong> ${t('cas prouvés', 'proven cases')}</div>
+      <div><strong>${new Set(succes.map(c => c.industrie)).size}</strong> ${t('industries', 'industries')}</div>
+      <div><strong>${succes.filter(c => ['A', 'B'].includes(c.niveau_preuve?.niveau)).length}</strong> ${t('en preuve A/B', 'at evidence A/B')}</div>
     </div>
   </section>
 
   <section class="section">
-    <div class="section-head"><h2>La matrice de couverture</h2><p>Où les leaders investissent — et où personne n'ose encore. Les cases vides sont vos angles morts.</p></div>
+    <div class="section-head"><h2>${t('La matrice de couverture', 'The coverage matrix')}</h2><p>${t("Où les leaders investissent — et où personne n'ose encore. Les cases vides sont vos angles morts.", 'Where leaders invest, and where no one dares yet. The empty cells are your blind spots.')}</p></div>
     ${coverageMatrix(succes)}
   </section>
 
   <section class="section" id="cas">
-    <div class="section-head"><h2>Les cas</h2><p>Triés, sourcés, datés. Cliquez une case de la matrice pour filtrer par industrie x levier.</p></div>
-    <div class="cas-filter" hidden></div>
+    <div class="section-head"><h2>${t('Les cas', 'The cases')}</h2><p>${t('Triés, sourcés, datés. Filtrez par levier, ou cliquez une case de la matrice.', 'Sorted, sourced, dated. Filter by growth lever, or click a matrix cell.')}</p></div>
+    <div class="cas-filter" role="group" aria-label="${t('Filtrer par levier', 'Filter by lever')}">
+      <button type="button" class="cf-btn is-on" data-lev="">${t('Tous', 'All')}</button>
+      ${Object.entries(LEVIERS).map(([k, v]) => `<button type="button" class="cf-btn" data-lev="${k}">${esc(v)}</button>`).join('')}
+      <span class="cf-count" aria-live="polite"></span>
+    </div>
     <div class="cards">${succes.map(caseCard).join('')}</div>
   </section>
 
   <section class="feedback">
-    <div><h3>Faites référencer votre cas d'usage</h3><p>Votre marque a déployé l'IA à l'échelle en marketing, avec un résultat public ? Proposez-le. S'il passe le filtre de preuve (chiffre public, source vérifiable), il entre dans l'index - au même titre que les autres, sans passe-droit ni biais vendeur.</p></div>
-    <a class="feedback-btn" href="${mailto('AI Showreel - faire référencer un cas d\'usage', 'Marque :\nLe déploiement IA (en une phrase) :\nLe résultat chiffré et public :\nLa source (URL earnings, presse établie ou étude) :\n\nRappel : un cas entre dans l\'index uniquement s\'il passe le filtre de preuve.')}">Proposer votre cas</a>
+    <div><h3>${t("Faites référencer votre cas d'usage", 'Get your use case listed')}</h3><p>${t("Votre marque a déployé l'IA à l'échelle en marketing, avec un résultat public ? Proposez-le. S'il passe le filtre de preuve (chiffre public, source vérifiable), il entre dans l'index - au même titre que les autres, sans passe-droit ni biais vendeur.", 'Has your brand deployed AI at scale in marketing, with a public result? Submit it. If it passes the evidence filter (public figure, verifiable source), it enters the index on the same footing as the rest, no favors, no vendor bias.')}</p></div>
+    <a class="feedback-btn" href="${mailto('AI Showreel - faire référencer un cas d\'usage', 'Marque :\nLe déploiement IA (en une phrase) :\nLe résultat chiffré et public :\nLa source (URL earnings, presse établie ou étude) :\n\nRappel : un cas entre dans l\'index uniquement s\'il passe le filtre de preuve.')}">${t('Proposer votre cas', 'Submit your case')}</a>
   </section>
   <script>
-(function(){var I=${JSON.stringify(INDUSTRIES)},L=${JSON.stringify(LEVIERS)};
-var cards=[].slice.call(document.querySelectorAll('#cas .card')),b=document.querySelector('#cas .cas-filter');
-function clr(){cards.forEach(function(c){c.style.display='';});b.hidden=true;}
-function ap(i,l){if(!i&&!l){clr();return;}var n=0;cards.forEach(function(c){var ok=(!i||c.dataset.ind===i)&&(!l||c.dataset.lev===l);c.style.display=ok?'':'none';if(ok)n++;});b.hidden=false;b.innerHTML='<span><strong>'+n+'</strong> cas filtres . '+((I[i]||'')+(i&&l?' x ':'')+(L[l]||''))+'</span><button type="button" class="cas-clear">Tout afficher</button>';b.querySelector('.cas-clear').onclick=function(){clr();history.pushState('','',location.pathname);};}
-[].slice.call(document.querySelectorAll('.mcell-link')).forEach(function(a){a.addEventListener('click',function(e){e.preventDefault();ap(a.dataset.ind,a.dataset.lev);history.pushState('','','/?ind='+a.dataset.ind+'&lev='+a.dataset.lev+'#cas');var t=document.getElementById('cas');if(t)t.scrollIntoView({behavior:'smooth'});});});
-var q=new URLSearchParams(location.search);if(q.get('ind')||q.get('lev'))ap(q.get('ind'),q.get('lev'));})();
+(function(){
+var cards=[].slice.call(document.querySelectorAll('#cas .card')),cnt=document.querySelector('#cas .cf-count'),btns=[].slice.call(document.querySelectorAll('#cas .cf-btn'));
+var CASWORD=${JSON.stringify(t('cas', 'cases'))};
+function setBtn(l){btns.forEach(function(x){x.classList.toggle('is-on',(x.dataset.lev||'')===(l||''));});}
+function apply(i,l){var n=0;cards.forEach(function(c){var ok=(!i||c.dataset.ind===i)&&(!l||c.dataset.lev===l);c.style.display=ok?'':'none';if(ok)n++;});setBtn(l||'');cnt.textContent=(i||l)?(n+' '+CASWORD):'';}
+btns.forEach(function(bn){bn.addEventListener('click',function(){apply('',bn.dataset.lev||'');history.pushState('','',location.pathname+(bn.dataset.lev?('?lev='+bn.dataset.lev):'')+'#cas');});});
+[].slice.call(document.querySelectorAll('.mcell-link')).forEach(function(a){a.addEventListener('click',function(e){e.preventDefault();apply(a.dataset.ind,a.dataset.lev);history.pushState('','',location.pathname+'?ind='+a.dataset.ind+'&lev='+a.dataset.lev+'#cas');var el=document.getElementById('cas');if(el)el.scrollIntoView({behavior:'smooth'});});});
+var q=new URLSearchParams(location.search);if(q.get('ind')||q.get('lev'))apply(q.get('ind')||'',q.get('lev')||'');})();
   </script>`;
   const years = cases.map(c => (c.dates?.verifie_le || '').slice(0, 4)).filter(Boolean).sort();
   const temporal = years.length ? `${years[0]}/${years[years.length - 1]}` : '';
@@ -1051,38 +1091,51 @@ function build() {
   const cases = files.map(f => { try { return JSON.parse(readFileSync(join(CASES_DIR, f), 'utf8')); } catch (e) { console.error('SKIP', f, e.message); return null; } }).filter(Boolean);
 
   rmSync(DIST, { recursive: true, force: true });
-  mkdirSync(join(DIST, 'cas'), { recursive: true });
   mkdirSync(join(DIST, 'assets'), { recursive: true });
 
-  mkdirSync(join(DIST, 'rapport'), { recursive: true });
-  writeFileSync(join(DIST, 'index.html'), indexPage(cases));
-  writeFileSync(join(DIST, 'veille.html'), veillePage(cases));
-  writeFileSync(join(DIST, 'rapports.html'), reportsIndexPage(cases));
-  writeFileSync(join(DIST, 'patterns.html'), patternsPage(cases));
-  writeFileSync(join(DIST, 'outils.html'), outilsPage(cases));
-  writeFileSync(join(DIST, 'perception.html'), perceptionPage());
-  writeFileSync(join(DIST, 'cimetiere.html'), cimetierePage(cases));
-  writeFileSync(join(DIST, 'methodologie.html'), methodoPage());
-  for (const c of cases) writeFileSync(join(DIST, 'cas', `${c.id}.html`), fichePage(c, cases));
-
-  // Rapports sectoriels
-  const reportUrls = [];
-  for (const ind of Object.keys(INDUSTRIES)) {
-    const html = reportPage(ind, cases);
-    if (html) { writeFileSync(join(DIST, 'rapport', `${industrySlug(ind)}.html`), html); reportUrls.push(`/rapport/${industrySlug(ind)}.html`); }
+  // rendu bilingue : FR -> dist/, EN -> dist/en/
+  function renderAll(lang) {
+    setLang(lang);
+    const out = lang === 'en' ? join(DIST, 'en') : DIST;
+    mkdirSync(join(out, 'cas'), { recursive: true });
+    mkdirSync(join(out, 'rapport'), { recursive: true });
+    writeFileSync(join(out, 'index.html'), indexPage(cases));
+    writeFileSync(join(out, 'veille.html'), veillePage(cases));
+    writeFileSync(join(out, 'rapports.html'), reportsIndexPage(cases));
+    writeFileSync(join(out, 'patterns.html'), patternsPage(cases));
+    writeFileSync(join(out, 'outils.html'), outilsPage(cases));
+    writeFileSync(join(out, 'perception.html'), perceptionPage());
+    writeFileSync(join(out, 'cimetiere.html'), cimetierePage(cases));
+    writeFileSync(join(out, 'methodologie.html'), methodoPage());
+    for (const c of cases) writeFileSync(join(out, 'cas', `${c.id}.html`), fichePage(c, cases));
+    const rUrls = [];
+    for (const ind of Object.keys(INDUSTRIES)) {
+      const html = reportPage(ind, cases);
+      if (html) { writeFileSync(join(out, 'rapport', `${industrySlug(ind)}.html`), html); rUrls.push(`/rapport/${industrySlug(ind)}.html`); }
+    }
+    return rUrls;
   }
+  const reportUrls = renderAll('fr');
+  if (BILINGUAL) renderAll('en');
 
-  // GEO/SEO : sitemap, robots, llms.txt
+  // GEO/SEO : sitemap bilingue (alternates hreflang), robots, llms.txt
   const staticUrls = ['/', '/veille.html', '/rapports.html', '/patterns.html', '/outils.html', '/perception.html', '/cimetiere.html', '/methodologie.html'];
-  const caseUrls = cases.map(c => `/cas/${c.id}.html`);
   const latest = cases.map(c => c.dates?.verifie_le).filter(Boolean).sort().pop() || '';
-  const entries = [
+  const logical = [
     ...staticUrls.map(u => ({ u, d: latest, p: u === '/' ? '1.0' : '0.7' })),
     ...reportUrls.map(u => ({ u, d: latest, p: '0.6' })),
     ...cases.map(c => ({ u: `/cas/${c.id}.html`, d: c.dates?.verifie_le || latest, p: '0.8' })),
   ];
-  const sitemap = `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${entries.map(({ u, d, p }) => `  <url><loc>${SITE}${u}</loc>${d ? `<lastmod>${d}</lastmod>` : ''}<priority>${p}</priority></url>`).join('\n')}\n</urlset>\n`;
+  const alts = (u) => `<xhtml:link rel="alternate" hreflang="fr" href="${SITE}${u}"/><xhtml:link rel="alternate" hreflang="en" href="${SITE}${enPath(u)}"/><xhtml:link rel="alternate" hreflang="x-default" href="${SITE}${enPath(u)}"/>`;
+  const urlRows = logical.flatMap(({ u, d, p }) => BILINGUAL ? [
+    `  <url><loc>${SITE}${u}</loc>${alts(u)}${d ? `<lastmod>${d}</lastmod>` : ''}<priority>${p}</priority></url>`,
+    `  <url><loc>${SITE}${enPath(u)}</loc>${alts(u)}${d ? `<lastmod>${d}</lastmod>` : ''}<priority>${p}</priority></url>`,
+  ] : [
+    `  <url><loc>${SITE}${u}</loc>${d ? `<lastmod>${d}</lastmod>` : ''}<priority>${p}</priority></url>`,
+  ]);
+  const sitemap = `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"${BILINGUAL ? ' xmlns:xhtml="http://www.w3.org/1999/xhtml"' : ''}>\n${urlRows.join('\n')}\n</urlset>\n`;
   writeFileSync(join(DIST, 'sitemap.xml'), sitemap);
+  setLang('fr');
   const aiBots = ['GPTBot', 'OAI-SearchBot', 'ChatGPT-User', 'ClaudeBot', 'Claude-Web', 'anthropic-ai', 'PerplexityBot', 'Perplexity-User', 'Google-Extended', 'CCBot', 'Applebot-Extended', 'cohere-ai'];
   const robots = `# AI Showreel - index cite par les moteurs et les LLM, crawlers IA bienvenus\nUser-agent: *\nAllow: /\n\n${aiBots.map(b => `User-agent: ${b}\nAllow: /`).join('\n\n')}\n\nSitemap: ${SITE}/sitemap.xml\n`;
   writeFileSync(join(DIST, 'robots.txt'), robots);
