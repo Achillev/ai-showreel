@@ -1,0 +1,289 @@
+{
+  "id": "intuit-genos-intuit-assist-growth-2025",
+  "type_fiche": "succes",
+  "marque": "Intuit",
+  "groupe": "Intuit Inc.",
+  "industrie": "tech_saas",
+  "marches_deploiement": [
+    "Etats-Unis",
+    "Canada (deploiement TurboTax et QuickBooks)"
+  ],
+  "transposable_ue": {
+    "flag": "oui_avec_adaptations",
+    "note": "Assistant genAI embarque dans un produit financier grand public et PME. En UE, RGPD sur les donnees financieres personnelles, et vigilance AI Act sur les usages proches de la fiscalite et du credit. Le pattern (reduire la friction d'onboarding et de completion par IA) reste transposable hors du perimetre fiscal US."
+  },
+  "metier": "growth produit / activation-conversion (usage interne Intuit sur ses propres produits)",
+  "intervenants": [
+    {
+      "nom": "Sasan Goodarzi",
+      "role": "CEO d'Intuit",
+      "source_ref": "S1"
+    }
+  ],
+  "axes": {
+    "levier": "activation_conversion",
+    "touchpoints": [
+      "application TurboTax",
+      "QuickBooks",
+      "parcours de completion et de service assiste"
+    ],
+    "etape_parcours": "achat",
+    "famille": "generation",
+    "pattern": "assistant genAI 'done-for-you' integre au produit pour reduire la friction et convertir",
+    "type_ia": [
+      "genAI / LLM",
+      "modeles proprietaires (GenOS)",
+      "machine learning"
+    ],
+    "plateforme_stack": [
+      "custom/in-house (GenOS, Intuit Assist)"
+    ],
+    "objectif_metrique": [
+      "temps de completion du parcours",
+      "productivite des experts",
+      "croissance du chiffre d'affaires porte par l'IA"
+    ]
+  },
+  "implementation": "custom",
+  "objectif_business": "Reduire la friction qui fait abandonner un parcours fiscal ou comptable, et augmenter la valeur delivree par les experts, pour convertir et retenir mieux ses 100 millions de clients. Intuit fait tourner son growth sur son propre systeme genAI, GenOS et Intuit Assist.",
+  "points_cles": ["Assistant genAI done-for-you integre a TurboTax et QuickBooks pour reduire la friction.", "Construit sur GenOS et Intuit Assist, systeme genAI proprietaire maison.", "Temps de declaration reduit de 12%, experts environ 20% plus rapides.", "Croissance de 15% du chiffre d'affaires rattachee a l'IA, preuve A confirmee."],
+  "description": "Intuit a construit GenOS, son systeme d'exploitation genAI proprietaire, et Intuit Assist, l'assistant qui en decoule, integres a TurboTax et QuickBooks. Le produit 'done-for-you' de TurboTax, mobile et pilote par l'IA, pre-remplit et guide le contribuable pour reduire le temps passe a declarer. Cote service assiste, l'IA appuie les experts humains pour qu'ils traitent un dossier plus vite. Le CEO Sasan Goodarzi rattache a cette strategie d'IA une croissance du chiffre d'affaires. Le perimetre couvre environ 100 millions de clients.",
+  "resultats": [
+    {
+      "metrique": "Reduction du temps moyen passe a declarer (TurboTax done-for-you)",
+      "valeur": "12% en moins",
+      "citation_exacte": "12% reduction in the average time a customer spent filing",
+      "source_ref": "S1"
+    },
+    {
+      "metrique": "Temps passe par les experts a preparer une declaration (full-service)",
+      "valeur": "environ 20% en moins",
+      "citation_exacte": "experts spent about 20% less time preparing a return",
+      "source_ref": "S1"
+    },
+    {
+      "metrique": "Croissance du chiffre d'affaires rattachee a la strategie IA, en glissement annuel",
+      "valeur": "15%",
+      "citation_exacte": "drove 15% year-over-year revenue growth across the business",
+      "source_ref": "S1"
+    }
+  ],
+  "niveau_preuve": {
+    "niveau": "A",
+    "justification": "Chiffres avances par le CEO Sasan Goodarzi lors de la publication des resultats (Q3 FY2025) et documentes dans la presse specialisee, avec le deploiement genAI (Intuit Assist) confirme par les communiques investisseurs d'Intuit."
+  },
+  "dates": {
+    "lancement": "GenOS et Intuit Assist annonces en 2023 ; deploiement dans TurboTax et QuickBooks a partir de la saison fiscale 2024",
+    "derniere_confirmation_activite": "mai 2025 (resultats Q3 FY2025 citant les gains chiffres de l'IA sur le funnel)",
+    "verifie_le": "2026-07-11",
+    "revoir_apres": "2027-01-11"
+  },
+  "statut_vivant": {
+    "statut": "confirme",
+    "note": "Intuit continue d'investir GenOS et Intuit Assist comme axe strategique (agentic AI 2025), et le rattache explicitement a sa croissance dans ses communications investisseurs."
+  },
+  "sources": [
+    {
+      "ref": "S1",
+      "type": "presse",
+      "fiabilite": "T3_presse_etablie",
+      "titre": "Intuit leans into AI to improve taxpayer experience, boost revenue",
+      "url": "https://www.customerexperiencedive.com/news/intuit-turbotax-ai-taxpayer-experience-revenue/749052/",
+      "date_publication": "2025-05-28",
+      "consulte_le": "2026-07-11"
+    },
+    {
+      "ref": "S2",
+      "type": "blog_officiel",
+      "fiabilite": "T1_primaire",
+      "titre": "Introducing Intuit Assist: The Generative AI-Powered Financial Assistant for Small Businesses and Consumers",
+      "url": "https://investors.intuit.com/news-events/press-releases/detail/43/introducing-intuit-assist-the-generative-ai-powered-financial-assistant-for-small-businesses-and-consumers",
+      "date_publication": "2023-09-05",
+      "consulte_le": "2026-07-11"
+    },
+    {
+      "ref": "S3",
+      "type": "analyse_academique",
+      "fiabilite": "T4_secondaire",
+      "titre": "TurboTax Meets Turbo Innovation: AI at Intuit (MIT Sloan Management Review)",
+      "url": "https://sloanreview.mit.edu/article/turbotax-meets-turbo-innovation-ai-at-intuit/",
+      "consulte_le": "2026-07-11"
+    }
+  ],
+  "fonctionnement_operationnel": {
+    "cadence": "En temps reel dans le parcours produit, avec forte saisonnalite fiscale pour TurboTax",
+    "opere_par": "Equipes produit et data science d'Intuit, sur GenOS et Intuit Assist",
+    "signal_pilote": "Les donnees financieres first-party du client et les documents importes. Sans donnees propres bien structurees, le pre-remplissage 'done-for-you' se degrade et le gain de temps disparait.",
+    "etapes": [
+      {
+        "etape": "Import et comprehension des donnees",
+        "detail": "Intuit Assist recupere et interprete documents et historique financier du client.",
+        "acteur": "IA"
+      },
+      {
+        "etape": "Pre-remplissage et guidage",
+        "detail": "Le produit 'done-for-you' pre-remplit la declaration et guide les etapes restantes.",
+        "acteur": "IA"
+      },
+      {
+        "etape": "Appui a l'expert",
+        "detail": "Pour le full-service, l'IA prepare le dossier pour que l'expert humain traite plus vite.",
+        "acteur": "IA et expert"
+      },
+      {
+        "etape": "Validation et depot",
+        "detail": "Le client ou l'expert valide et depose la declaration.",
+        "acteur": "Client / expert"
+      },
+      {
+        "etape": "Mesure",
+        "detail": "Temps de completion, temps expert et conversion sont suivis et rattaches a la croissance.",
+        "acteur": "Equipe produit"
+      }
+    ]
+  },
+  "schema_flow": {
+    "statut": "documente",
+    "noeuds": [
+      {
+        "id": "client",
+        "role_generique": "humain",
+        "label": "Client TurboTax ou QuickBooks"
+      },
+      {
+        "id": "data",
+        "role_generique": "data_source",
+        "label": "Documents et donnees financieres first-party"
+      },
+      {
+        "id": "genos",
+        "role_generique": "modele_ia",
+        "label": "Assistant genAI Intuit Assist",
+        "outil_documente": "Intuit GenOS / Intuit Assist"
+      },
+      {
+        "id": "produit",
+        "role_generique": "site_app",
+        "label": "Parcours TurboTax / QuickBooks"
+      },
+      {
+        "id": "expert",
+        "role_generique": "humain",
+        "label": "Expert humain (full-service)"
+      }
+    ],
+    "liens": [
+      [
+        "client",
+        "data"
+      ],
+      [
+        "data",
+        "genos"
+      ],
+      [
+        "genos",
+        "produit",
+        "pre-remplissage et guidage"
+      ],
+      [
+        "genos",
+        "expert",
+        "preparation du dossier"
+      ],
+      [
+        "produit",
+        "client"
+      ],
+      [
+        "expert",
+        "client"
+      ]
+    ]
+  },
+  "replication": {
+    "statut_epistemique": "infere",
+    "prerequis_data": [
+      "donnees client first-party structurees",
+      "documents importables et exploitables",
+      "instrumentation du temps de completion"
+    ],
+    "prerequis_orga": [
+      "equipe data science produit",
+      "boucle d'appui IA aux operateurs humains",
+      "gouvernance sur donnees sensibles"
+    ],
+    "stack_possible": [
+      "assistant genAI integre au produit (custom ou LLM + RAG)",
+      "pipeline de donnees first-party",
+      "couche de mesure du funnel"
+    ],
+    "premiere_etape": "Cibler une etape du parcours a fort abandon et y brancher un assistant qui pre-remplit et guide, avec mesure du temps de completion.",
+    "playbook": [
+      {
+        "action": "Cibler une etape du parcours a fort abandon et instrumenter le temps de completion",
+        "livrable": "Baseline chiffree (temps, taux d'abandon) sur l'etape cible"
+      },
+      {
+        "action": "Construire le pipeline de donnees first-party et d'import de documents, avec la gouvernance qui va avec",
+        "livrable": "Donnees client structurees et exploitables par l'assistant"
+      },
+      {
+        "action": "Developper l'assistant qui pre-remplit et guide sur ce perimetre restreint",
+        "livrable": "MVP en beta interne avec mesure de la qualite du pre-remplissage"
+      },
+      {
+        "action": "Lancer un test controle sur un segment de clients reels",
+        "livrable": "Gain de temps de completion et impact conversion mesures vs groupe temoin"
+      },
+      {
+        "action": "Etendre a l'appui des operateurs humains (dossiers pre-prepares) et generaliser",
+        "livrable": "Assistant en production + suivi de la productivite des experts"
+      }
+    ],
+    "equipe": "1 PM + 2-4 ingenieurs ML/backend + 1 designer + conformite (donnees financieres sensibles)"
+  },
+  "seo": {
+    "slug": "intuit-genos-intuit-assist-growth-2025",
+    "title": "Intuit : genAI maison (GenOS, Intuit Assist) pour son growth - temps de declaration reduit de 12% (2025)",
+    "meta_description": "Intuit fait tourner son growth sur son propre systeme genAI GenOS et Intuit Assist : temps de declaration TurboTax reduit de 12%, experts 20% plus rapides, croissance de 15% du chiffre d'affaires.",
+    "resume_citable": "Intuit utilise son propre systeme genAI GenOS et Intuit Assist dans TurboTax et QuickBooks : temps de declaration reduit de 12%, experts 20% plus rapides, croissance de 15% du chiffre d'affaires rattachee a l'IA.",
+    "faq": [
+      {
+        "q": "Comment Intuit utilise-t-il l'IA pour sa propre croissance ?",
+        "a": "Via GenOS et Intuit Assist integres a TurboTax et QuickBooks, pour reduire la friction du parcours, accelerer les experts et convertir mieux ses 100 millions de clients."
+      },
+      {
+        "q": "Quels resultats chiffres Intuit rattache-t-il a cette IA ?",
+        "a": "Un temps de declaration reduit de 12% sur le produit 'done-for-you' de TurboTax, des experts 20% plus rapides et une croissance de 15% du chiffre d'affaires."
+      }
+    ]
+  },
+  "logo_domain": "intuit.com",
+  "stack_technique": [
+    {
+      "nom": "GenOS",
+      "categorie": "plateforme",
+      "detail": "systeme d'exploitation genAI proprietaire d'Intuit, socle commun des usages IA du groupe",
+      "url": "https://www.intuit.com"
+    },
+    {
+      "nom": "Intuit Assist",
+      "categorie": "outil",
+      "detail": "assistant genAI derive de GenOS, integre a TurboTax et QuickBooks (pre-remplissage, guidage, appui aux experts)",
+      "url": "https://www.intuit.com"
+    },
+    {
+      "nom": "LLM orchestres par GenOS",
+      "categorie": "llm",
+      "detail": "combinaison de modeles proprietaires et de LLM tiers ; les modeles exacts ne sont pas detailles dans les sources",
+      "url": "https://www.intuit.com"
+    },
+    {
+      "nom": "Pipeline de donnees first-party",
+      "categorie": "infra",
+      "detail": "documents importes et historique financier du client, carburant du pre-remplissage 'done-for-you'",
+      "url": "https://www.intuit.com"
+    }
+  ]
+}

@@ -1,0 +1,292 @@
+{
+  "id": "target-targetrun-propension-2026",
+  "type_fiche": "succes",
+  "marque": "Target",
+  "industrie": "retail_ecom",
+  "marches_deploiement": [
+    "Etats-Unis"
+  ],
+  "transposable_ue": {
+    "flag": "oui_avec_adaptations",
+    "note": "Le modele profile chaque client (Guest) a partir de son historique d'achat et de son engagement pour predire sa frequence de visite. En UE, base legale du profilage et consentement du programme de fidelite a cadrer (RGPD), sans blocage sur le principe."
+  },
+  "metier": "CRM / personnalisation des offres (MarTech)",
+  "marque_linkedin": "https://www.linkedin.com/company/target/",
+  "intervenants": [
+    {
+      "nom": "Prashasti Gupta",
+      "role": "Senior Data Scientist, Target (equipe MarTech Offer Personalization)",
+      "source_ref": "S1"
+    },
+    {
+      "nom": "Utsav Mishra",
+      "role": "Lead Data Scientist, DS Guest and Digital (MarTech/AdTech, Target)",
+      "source_ref": "S1"
+    }
+  ],
+  "axes": {
+    "levier": "retention",
+    "touchpoints": [
+      "app Target Circle",
+      "offres personnalisees",
+      "email et push"
+    ],
+    "etape_parcours": "fidélité",
+    "famille": "prediction",
+    "pattern": "propension de visite (predicted trip count) pour cadrer et cibler les offres",
+    "type_ia": [
+      "deep learning",
+      "LSTM et Bi-LSTM",
+      "mecanisme d'attention multi-tete",
+      "contextual multi-arm bandit"
+    ],
+    "plateforme_stack": [
+      "custom/in-house",
+      "TensorFlow",
+      "PySpark",
+      "Kubeflow"
+    ],
+    "objectif_metrique": [
+      "taux de redemption des offres",
+      "engagement Circle",
+      "precision de prevision de visite"
+    ]
+  },
+  "implementation": "custom",
+  "objectif_business": "Predire combien de fois un client Target Circle va venir dans les prochaines semaines pour lui envoyer les bonnes offres au bon moment, et faire remonter la redemption chez les clients qui utilisent rarement les offres.",
+  "points_cles": ["Prediction de la frequence de visite des clients Circle avec le modele TargetRun.", "Deep learning Bi-LSTM et attention multi-tete, sous TensorFlow, PySpark, Kubeflow.", "Test A/B: +78% de redemption chez les clients qui utilisent rarement les offres.", "Preuve B, statut confirme, TargetRun et moteur CORE en production."],
+  "description": "TargetRun est un modele de deep learning construit par l'equipe MarTech Offer Personalization de Target. Il predit la frequence de visite d'un client (Guest) sur un horizon de deux a trois semaines. L'architecture combine des LSTM bidirectionnels et une attention multi-tete sur 52 semaines d'historique client (depenses, activite digitale) resumees en sequences de 26 pas, plus des attributs statiques (engagement, adhesion). La prevision de nombre de visites alimente CORE (Contextual Offer Recommendation Engine), le moteur d'offres de Target base sur un bandit contextuel, qui decide quelles offres un client voit et comment elles sont structurees. CORE a servi des millions d'offres recommandees en 2023.",
+  "resultats": [
+    {
+      "metrique": "Hausse de redemption chez les clients qui utilisent rarement les offres (test A/B)",
+      "valeur": "+78%",
+      "citation_exacte": "a dramatic 78% lift in redemption among guests who rarely redeem offers",
+      "source_ref": "S1"
+    },
+    {
+      "metrique": "Gain de precision du nouveau modele",
+      "valeur": "+15%",
+      "citation_exacte": "The new model was 15% more accurate",
+      "source_ref": "S1"
+    },
+    {
+      "metrique": "Hausse du pouvoir predictif global",
+      "valeur": "plus de +40%",
+      "citation_exacte": "its overall predictive power increased by over 40%",
+      "source_ref": "S1"
+    },
+    {
+      "metrique": "Reduction de la sur-prediction",
+      "valeur": "-44%",
+      "citation_exacte": "the 44% reduction in over-prediction",
+      "source_ref": "S1"
+    },
+    {
+      "metrique": "Offres recommandees servies par CORE",
+      "valeur": "des millions en 2023",
+      "citation_exacte": "CORE powered millions of recommended offers in 2023",
+      "source_ref": "S2"
+    }
+  ],
+  "niveau_preuve": {
+    "niveau": "B",
+    "justification": "Blog d'ingenierie officiel de Target decrivant l'architecture et les resultats d'un test A/B chiffre, corrobore par un second billet officiel sur le moteur CORE. Source primaire mais interne (pas de presse independante), d'ou B."
+  },
+  "dates": {
+    "lancement": "CORE en production servant des millions d'offres des 2023; billet TargetRun publie en mai 2026",
+    "derniere_confirmation_activite": "mai 2026 (publication du billet technique TargetRun)",
+    "verifie_le": "2026-07-11",
+    "revoir_apres": "2027-01-11"
+  },
+  "statut_vivant": {
+    "statut": "confirme",
+    "note": "TargetRun et CORE sont decrits comme en production dans les billets d'ingenierie recents de Target; le dispositif Circle est actif a l'echelle nationale."
+  },
+  "sources": [
+    {
+      "ref": "S1",
+      "type": "eng_blog",
+      "fiabilite": "T1_primaire",
+      "titre": "TargetRun: AI-Powered Trip Prediction for Delivering Timely Offers",
+      "url": "https://tech.target.com/blog/targetrun-shopping-offers",
+      "date_publication": "2026-05-06",
+      "consulte_le": "2026-07-11"
+    },
+    {
+      "ref": "S2",
+      "type": "eng_blog",
+      "fiabilite": "T1_primaire",
+      "titre": "Contextual Offer Recommendations Engine at Target",
+      "url": "https://tech.target.com/blog/contextual-offer-recommendation-engine",
+      "date_publication": "2024",
+      "consulte_le": "2026-07-11"
+    }
+  ],
+  "fonctionnement_operationnel": {
+    "cadence": "Scoring recurrent par client sur un horizon de deux a trois semaines; les offres sont ensuite choisies par CORE au fil de l'engagement.",
+    "opere_par": "Equipe AI/ML Offer Personalization de Target Tech (MarTech), sur une stack maison TensorFlow / PySpark / Kubeflow.",
+    "signal_pilote": "Le nombre de visites predit par client. Si l'historique digital et transactionnel d'un client est trop pauvre, la prevision est bruyante; les attributs statiques (engagement, adhesion) servent d'ancrage.",
+    "etapes": [
+      {
+        "etape": "Construction des sequences",
+        "detail": "52 semaines de depenses et d'activite digitale par client sont resumees en une sequence de 26 pas, plus des attributs statiques.",
+        "acteur": "equipe data / plateforme"
+      },
+      {
+        "etape": "Prediction du nombre de visites",
+        "detail": "Le modele LSTM bidirectionnel avec attention predit combien de fois le client va venir dans les prochaines semaines.",
+        "acteur": "modele IA (TargetRun)"
+      },
+      {
+        "etape": "Selection des offres",
+        "detail": "La prevision alimente CORE (bandit contextuel), qui choisit les offres a montrer et leur structure pour maximiser l'engagement.",
+        "acteur": "modele IA (CORE)"
+      },
+      {
+        "etape": "Diffusion et mesure",
+        "detail": "Les offres partent dans l'app Circle et par email/push; la reaction (add, redemption) revient en donnee et affine les modeles.",
+        "acteur": "plateforme / equipe data"
+      }
+    ]
+  },
+  "schema_flow": {
+    "statut": "documente",
+    "noeuds": [
+      {
+        "id": "n1",
+        "role_generique": "data_source",
+        "label": "52 semaines de depenses et d'activite digitale par Guest"
+      },
+      {
+        "id": "n2",
+        "role_generique": "modele_ia",
+        "label": "Prediction du nombre de visites",
+        "outil_documente": "TargetRun (Bi-LSTM + attention)"
+      },
+      {
+        "id": "n3",
+        "role_generique": "modele_ia",
+        "label": "Moteur d'offres contextuel",
+        "outil_documente": "CORE (contextual multi-arm bandit)"
+      },
+      {
+        "id": "n4",
+        "role_generique": "canal_conversationnel",
+        "label": "App Circle, email, push"
+      },
+      {
+        "id": "n5",
+        "role_generique": "humain",
+        "label": "Equipe AI/ML Offer Personalization"
+      }
+    ],
+    "liens": [
+      [
+        "n1",
+        "n2"
+      ],
+      [
+        "n2",
+        "n3"
+      ],
+      [
+        "n3",
+        "n4"
+      ],
+      [
+        "n5",
+        "n3"
+      ],
+      [
+        "n4",
+        "n1",
+        "add et redemption reinjectes"
+      ]
+    ]
+  },
+  "replication": {
+    "statut_epistemique": "infere",
+    "prerequis_data": [
+      "historique d'achat et d'activite digitale par client rattache a un ID unique",
+      "programme de fidelite avec offres et opt-in",
+      "signaux d'engagement (add, redemption)"
+    ],
+    "prerequis_orga": [
+      "equipe data science capable de tenir un modele sequentiel",
+      "moteur de decision d'offres (bandit ou reco) en aval"
+    ],
+    "stack_possible": [
+      "custom (TensorFlow / PySpark / Kubeflow)",
+      "plateformes de decisioning (Braze, Salesforce, Adobe) avec prediction de frequence"
+    ],
+    "premiere_etape": "Predire une frequence de visite (trip count) par client sur 2-3 semaines, puis brancher cette prevision sur le ciblage et le timing des offres du programme de fidelite.",
+    "playbook": [
+      {
+        "action": "Cadrer la data : rattacher 52 semaines d'historique d'achat et d'activite digitale a un ID client unique et construire les sequences.",
+        "livrable": "Dataset sequentiel propre avec attributs statiques (engagement, adhesion)."
+      },
+      {
+        "action": "Entrainer une baseline simple puis le modele sequentiel (LSTM/Bi-LSTM) de prediction du nombre de visites.",
+        "livrable": "Modele battant la baseline sur precision et sur-prediction, valide hors echantillon."
+      },
+      {
+        "action": "Brancher la prevision de visites sur le moteur d'offres (bandit contextuel ou regles) pour cadrer ciblage et timing.",
+        "livrable": "Ciblage et timing des offres pilotes par la propension, en pre-production."
+      },
+      {
+        "action": "Lancer un test A/B sur la redemption, en isolant le segment des clients qui utilisent rarement les offres.",
+        "livrable": "Lecture du lift par segment et decision de generalisation."
+      }
+    ],
+    "equipe": "2 data scientists + 1 ML engineer + 1 PM MarTech, adosses a l'equipe CRM qui opere le programme d'offres."
+  },
+  "seo": {
+    "slug": "target-targetrun-propension-2026",
+    "title": "Target : propension de visite TargetRun - +78% de redemption chez les clients peu actifs (2026)",
+    "meta_description": "Target predit la frequence de visite de ses clients Circle avec TargetRun (Bi-LSTM) et alimente son moteur d'offres CORE: +78% de redemption chez les clients qui utilisent rarement les offres.",
+    "resume_citable": "Le modele TargetRun de Target predit le nombre de visites d'un client Circle avec des Bi-LSTM et alimente le moteur d'offres CORE; un test A/B a montre +78% de redemption chez les clients qui utilisent rarement les offres, +15% de precision et +40% de pouvoir predictif.",
+    "faq": [
+      {
+        "q": "Que predit TargetRun ?",
+        "a": "Le nombre de fois qu'un client Target Circle va venir dans les deux a trois prochaines semaines, a partir de 52 semaines d'historique, via un modele LSTM bidirectionnel avec attention."
+      },
+      {
+        "q": "Quel resultat chiffre ?",
+        "a": "Dans un test A/B, +78% de redemption chez les clients qui utilisent rarement les offres, +15% de precision, plus de +40% de pouvoir predictif et -44% de sur-prediction."
+      }
+    ]
+  },
+  "logo_domain": "target.com",
+  "stack_technique": [
+    {
+      "nom": "TargetRun (modele in-house)",
+      "categorie": "llm",
+      "detail": "Modele de deep learning maison : LSTM bidirectionnels plus attention multi-tete sur 52 semaines d'historique resumees en sequences de 26 pas, plus attributs statiques.",
+      "url": "https://tech.target.com"
+    },
+    {
+      "nom": "CORE (Contextual Offer Recommendation Engine)",
+      "categorie": "plateforme",
+      "detail": "Moteur d'offres maison base sur un bandit contextuel, alimente par la prevision de visites ; des millions d'offres servies en 2023.",
+      "url": "https://tech.target.com"
+    },
+    {
+      "nom": "TensorFlow",
+      "categorie": "outil",
+      "detail": "Framework d'entrainement du modele sequentiel.",
+      "url": "https://www.tensorflow.org"
+    },
+    {
+      "nom": "PySpark",
+      "categorie": "outil",
+      "detail": "Preparation distribuee des sequences d'historique client.",
+      "url": "https://spark.apache.org"
+    },
+    {
+      "nom": "Kubeflow",
+      "categorie": "infra",
+      "detail": "Orchestration des pipelines ML (entrainement et scoring recurrents).",
+      "url": "https://www.kubeflow.org"
+    }
+  ]
+}

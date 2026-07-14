@@ -1,0 +1,272 @@
+{
+  "id": "macys-ask-macys-gemini-2026",
+  "type_fiche": "succes",
+  "marque": "Macy's",
+  "industrie": "retail_ecom",
+  "marches_deploiement": [
+    "Etats-Unis"
+  ],
+  "transposable_ue": {
+    "flag": "oui_avec_adaptations",
+    "note": "L'essayage virtuel repose sur l'upload d'une photo du client, donnee sensible qui rapproche le traitement du biometrique : en UE, base legale et consentement explicite RGPD sont requis, et l'AI Act impose une transparence sur le fait que l'interlocuteur est une IA. L'agent affiche deja un avertissement (l'IA peut se tromper), point de depart utile pour une conformite AI Act."
+  },
+  "metier": "e-commerce / experience client digitale",
+  "logo_domain": "macys.com",
+  "intervenants": [
+    {
+      "nom": "Max Magni",
+      "role": "Chief Customer and Digital Officer, Macy's Inc.",
+      "source_ref": "S2"
+    },
+    {
+      "nom": "Chad Westfall",
+      "role": "Senior Vice President, Technology Product Development and Customer Experience, Macy's",
+      "source_ref": "S1"
+    }
+  ],
+  "agences": [
+    {
+      "nom": "Google Cloud",
+      "role": "Fournisseur de la plateforme Gemini Enterprise for Customer Experience et partenaire de developpement de l'agent",
+      "source_ref": "S1"
+    }
+  ],
+  "axes": {
+    "levier": "activation_conversion",
+    "touchpoints": [
+      "site macys.com",
+      "application mobile Macy's",
+      "magasin (essayage virtuel)"
+    ],
+    "etape_parcours": "consideration",
+    "famille": "conversation",
+    "pattern": "assistant shopping conversationnel genAI (agent multimodal avec essayage virtuel)",
+    "type_ia": [
+      "agent conversationnel LLM",
+      "multimodal texte-image",
+      "essayage virtuel par image",
+      "recommandation produit"
+    ],
+    "plateforme_stack": [
+      "Google Gemini Enterprise for Customer Experience"
+    ],
+    "objectif_metrique": [
+      "revenu par visite",
+      "depense par client",
+      "conversion",
+      "decouverte produit"
+    ]
+  },
+  "implementation": "hybride",
+  "objectif_business": "Transformer la recherche produit en decouverte guidee pour faire progresser le revenu par visite et aider le client a trouver ce qu'il cherche vraiment, du navigateur hesitant a l'acheteur.",
+  "points_cles": ["Agent de shopping conversationnel multimodal avec essayage virtuel sur macys.com et l'app.", "Google Gemini Enterprise for Customer Experience, catalogue de 2,5 millions de references.", "Revenu par visite x4,75 en beta, des milliers de clients par jour deux mois apres le lancement.", "Preuve B, statut confirme : deploye a 100 % des visiteurs, mesure A/B citee par Macy's."],
+  "description": "Ask Macy's est un agent de shopping conversationnel deploye sur macys.com (desktop et mobile) et l'application Macy's (iOS et Android). Le client decrit en langage naturel ce qu'il cherche - budget, occasion, couleur, style, taille - et l'agent repond comme un vendeur : il propose des marques et des tendances, recommande des produits, complete la tenue (option complete the look pour les accessoires). C'est un agent multimodal qui gere le texte et l'image : le client peut uploader une photo pour un essayage virtuel qui montre le vetement porte, avec differents arriere-plans, y compris en magasin. Le systeme opere sur un catalogue de plus de 2,5 millions de references. Construit sur Gemini Enterprise for Customer Experience de Google Cloud apres l'abandon d'une premiere approche menee sur environ six mois, l'agent a ete monte en moins de six semaines : premiere reunion le 9 fevrier 2026, beta quatre semaines plus tard aupres d'une petite part des visiteurs et de milliers de collaborateurs, passage a 50% des visiteurs le lendemain, puis 100% une semaine apres. Le lancement public a eu lieu autour du 23-24 mars 2026, annonce a la conference Shoptalk a Las Vegas, apres un dark launch interne en decembre 2025.",
+  "resultats": [
+    {
+      "metrique": "Revenu par visite (utilisateurs vs non-utilisateurs, en beta)",
+      "valeur": "x4,75",
+      "citation_exacte": "revenue per visit was 4.75 times higher among customers who used Ask Macy's",
+      "source_ref": "S3"
+    },
+    {
+      "metrique": "Depense en ligne des utilisateurs vs non-utilisateurs",
+      "valeur": "environ +400%",
+      "citation_exacte": "spend about 4.75 times more than those who don't",
+      "source_ref": "S2"
+    },
+    {
+      "metrique": "Clients par jour, deux mois apres le lancement",
+      "valeur": "des milliers",
+      "citation_exacte": "serves thousands of shoppers daily",
+      "source_ref": "S1"
+    }
+  ],
+  "niveau_preuve": {
+    "niveau": "B",
+    "justification": "Chiffre du revenu par visite (x4,75) issu d'un A/B test cite par Macy's, repris dans la customer story officielle de Google Cloud (vendor) et corrobore par deux presses etablies (Fortune, Retail Dive). Ce n'est pas un chiffre de resultats financiers, d'ou le niveau B plutot que A."
+  },
+  "dates": {
+    "lancement": "Dark launch interne decembre 2025 ; lancement public 23-24 mars 2026 (annonce a Shoptalk, Las Vegas)",
+    "derniere_confirmation_activite": "Environ mai 2026 (des milliers de clients par jour, deux mois apres le lancement, selon la customer story Google Cloud du 22 avril 2026)",
+    "verifie_le": "2026-07-12",
+    "revoir_apres": "2027-01-12"
+  },
+  "statut_vivant": {
+    "statut": "confirme",
+    "note": "Deploye a 100% des visiteurs web et sur l'app, sur un catalogue de plus de 2,5 millions de references. La customer story Google Cloud confirme des milliers d'utilisateurs quotidiens deux mois apres le lancement. Le 4,75x est un chiffre de beta ; le deploiement, lui, est bien a l'echelle."
+  },
+  "sources": [
+    {
+      "ref": "S1",
+      "type": "customer_story_plateforme",
+      "fiabilite": "T2_officiel_interesse",
+      "titre": "A New Era for Online Shopping: How Macy's Built the 'Ask Macy's' AI Agent in 4 Weeks With Gemini Enterprise for Customer Experience",
+      "url": "https://www.googlecloudpresscorner.com/2026-04-22-A-New-Era-for-Online-Shopping-How-Macys-Built-the-Ask-Macys-AI-Agent-in-4-Weeks-With-Gemini-Enterprise-for-Customer-Experience",
+      "date_publication": "2026-04-22",
+      "consulte_le": "2026-07-12"
+    },
+    {
+      "ref": "S2",
+      "type": "presse",
+      "fiabilite": "T3_presse_etablie",
+      "titre": "Macy's just launched an AI-powered shopping assistant. Customers who use it spend nearly 400% more",
+      "url": "https://fortune.com/2026/03/27/macys-ai-powered-shopping-assistant-customers-spending-google-gemini/",
+      "date_publication": "2026-03-27",
+      "consulte_le": "2026-07-12"
+    },
+    {
+      "ref": "S3",
+      "type": "presse",
+      "fiabilite": "T3_presse_etablie",
+      "titre": "Macy's introduces AI-powered shopping assistant",
+      "url": "https://www.retaildive.com/news/ask-macys-AI-conversational-shopping-assistant/815928/",
+      "date_publication": "2026-03",
+      "consulte_le": "2026-07-12"
+    }
+  ],
+  "fonctionnement_operationnel": {
+    "cadence": "Temps reel a chaque session client ; l'agent repond au fil de la conversation.",
+    "opere_par": "Equipe produit digital et experience client de Macy's, avec le support de Google Cloud sur la plateforme Gemini Enterprise.",
+    "signal_pilote": "Le contexte fourni par le client dans la conversation (budget, occasion, couleur, style, taille) croise au catalogue produit temps reel. Si le flux catalogue ou la donnee de disponibilite manque, l'agent recommande des references fausses ou en rupture et perd sa credibilite.",
+    "etapes": [
+      {
+        "etape": "Capter l'intention en langage naturel",
+        "detail": "Le client decrit ce qu'il cherche ; l'agent pose des questions de cadrage (occasion, budget, taille, style) plutot que de renvoyer une liste de resultats.",
+        "acteur": "IA"
+      },
+      {
+        "etape": "Interroger le catalogue et recommander",
+        "detail": "L'agent croise l'intention avec le catalogue de plus de 2,5 millions de references pour proposer produits, marques et tenues completes (complete the look).",
+        "acteur": "IA"
+      },
+      {
+        "etape": "Proposer l'essayage virtuel",
+        "detail": "Sur upload d'une photo, l'agent montre le produit porte, avec differents arriere-plans, y compris une variante en magasin.",
+        "acteur": "IA"
+      },
+      {
+        "etape": "Superviser et ajuster",
+        "detail": "L'equipe affine le ton et les garde-fous (par exemple ajustements pour tenir compte du climat, ton plus amical) et surveille la qualite des reponses ; un avertissement signale que l'IA peut se tromper.",
+        "acteur": "equipe produit / experience client"
+      }
+    ]
+  },
+  "schema_flow": {
+    "statut": "documente",
+    "noeuds": [
+      {
+        "id": "client",
+        "role_generique": "humain",
+        "label": "Client (macys.com, app, magasin)"
+      },
+      {
+        "id": "canal",
+        "role_generique": "canal_conversationnel",
+        "label": "Interface Ask Macy's (chat multimodal, upload photo)"
+      },
+      {
+        "id": "agent",
+        "role_generique": "modele_ia",
+        "label": "Agent Gemini Enterprise for Customer Experience",
+        "outil_documente": "Google Gemini Enterprise for Customer Experience"
+      },
+      {
+        "id": "catalogue",
+        "role_generique": "data_source",
+        "label": "Catalogue produit (2,5M+ references)"
+      },
+      {
+        "id": "tryon",
+        "role_generique": "modele_ia",
+        "label": "Essayage virtuel par image"
+      },
+      {
+        "id": "ops",
+        "role_generique": "humain",
+        "label": "Equipe produit / experience client Macy's"
+      }
+    ],
+    "liens": [
+      [
+        "client",
+        "canal"
+      ],
+      [
+        "canal",
+        "agent"
+      ],
+      [
+        "catalogue",
+        "agent"
+      ],
+      [
+        "agent",
+        "tryon"
+      ],
+      [
+        "tryon",
+        "canal"
+      ],
+      [
+        "agent",
+        "canal",
+        "recommandations et tenues completes"
+      ],
+      [
+        "ops",
+        "agent",
+        "reglage du ton et garde-fous"
+      ]
+    ]
+  },
+  "stack_technique": [
+    {
+      "nom": "Gemini Enterprise for Customer Experience",
+      "categorie": "plateforme",
+      "detail": "Plateforme agentique Google Cloud, integree aux systemes existants de Macy's ; agent multimodal (texte et image) avec essayage virtuel.",
+      "url": "https://cloud.google.com"
+    }
+  ],
+  "replication": {
+    "statut_epistemique": "infere",
+    "prerequis_data": [
+      "Catalogue produit structure, a jour et interrogeable en temps reel (attributs, visuels, disponibilite, prix)",
+      "Referentiel d'attributs riche (occasion, style, couleur, taille) pour que l'agent raisonne au-dela du mot-cle",
+      "Pour l'essayage virtuel : capacite a traiter des images uploadees dans un cadre de consentement clair"
+    ],
+    "prerequis_orga": [
+      "Une equipe produit digital capable de piloter un agent en production et d'iterer sur le ton et les garde-fous",
+      "Un partenariat plateforme (ici Google Cloud) ou une equipe IA interne pour l'integration et l'evaluation",
+      "Un dispositif de mesure A/B pour isoler l'effet de l'agent sur le revenu par visite",
+      "Une gouvernance des donnees photo (biometrique en UE) et une transparence IA conforme"
+    ],
+    "stack_possible": [
+      "Google Gemini Enterprise for Customer Experience",
+      "Ou un agent conversationnel construit sur un LLM multimodal branche sur le catalogue via RAG",
+      "Brique d'essayage virtuel par image",
+      "Outillage d'A/B test natif ou tiers"
+    ],
+    "equipe": "Un product owner de l'experience conversationnelle, des ingenieurs pour l'integration au catalogue et aux systemes existants, un profil data pour l'evaluation et l'A/B test, un relais merchandising pour la qualite des recommandations.",
+    "premiere_etape": "Verifier que le catalogue produit est interrogeable en temps reel avec des attributs assez riches pour qu'un agent raisonne par occasion et par style, pas seulement par mot-cle : c'est ce qui separe un vrai assistant d'un moteur de recherche deguise."
+  },
+  "seo": {
+    "slug": "macys-ask-macys-gemini-2026",
+    "title": "Macy's : assistant shopping conversationnel Ask Macy's (Gemini) - x4,75 de revenu par visite (2026)",
+    "meta_description": "Macy's a deploye Ask Macy's, un agent de shopping Gemini avec essayage virtuel, a 100% de ses visiteurs. En beta, revenu par visite x4,75 chez les utilisateurs.",
+    "resume_citable": "En mars 2026, Macy's a lance Ask Macy's, un agent de shopping conversationnel multimodal base sur Google Gemini Enterprise, deploye a 100% de ses visiteurs web et app sur un catalogue de 2,5 millions de references ; en beta, le revenu par visite etait 4,75 fois superieur chez les utilisateurs de l'agent.",
+    "faq": [
+      {
+        "q": "Quelle IA fait tourner Ask Macy's ?",
+        "a": "L'agent est construit sur Gemini Enterprise for Customer Experience de Google Cloud. C'est un agent multimodal qui gere texte et image, avec un essayage virtuel sur upload de photo."
+      },
+      {
+        "q": "Le chiffre de 4,75x est-il un resultat a l'echelle ?",
+        "a": "Le 4,75x de revenu par visite a ete mesure en A/B test pendant la beta, aupres d'environ la moitie des visiteurs. Le deploiement, lui, est passe a 100% des visiteurs web et de l'app, sur un catalogue de plus de 2,5 millions de references."
+      },
+      {
+        "q": "Ask Macy's est-il transposable en Europe ?",
+        "a": "Oui avec adaptations. L'essayage virtuel manipule des photos du client (donnee sensible proche du biometrique en UE), ce qui impose consentement RGPD explicite et transparence IA au titre de l'AI Act."
+      }
+    ]
+  }
+}

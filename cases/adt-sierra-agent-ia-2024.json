@@ -1,0 +1,266 @@
+{
+  "id": "adt-sierra-agent-ia-2024",
+  "type_fiche": "succes",
+  "marque": "ADT",
+  "industrie": "autre",
+  "marches_deploiement": [
+    "Etats-Unis"
+  ],
+  "transposable_ue": {
+    "flag": "oui_avec_adaptations",
+    "note": "Pattern transposable, mais la securite domestique est un domaine sensible : sous AI Act et RGPD, la classification d'intention (distinguer une urgence d'une question de facturation) doit etre encadree, avec voie humaine et journalisation. ADT le tourne avec garde-fous serres et revue humaine."
+  },
+  "metier": "service client",
+  "axes": {
+    "levier": "retention",
+    "touchpoints": [
+      "centre d'aide",
+      "chat",
+      "compte client"
+    ],
+    "etape_parcours": "post-achat",
+    "famille": "conversation",
+    "pattern": "agent client genAI",
+    "type_ia": [
+      "agent conversationnel",
+      "LLM",
+      "classification d'intention"
+    ],
+    "plateforme_stack": [
+      "Sierra"
+    ],
+    "objectif_metrique": [
+      "deviation du volume support",
+      "temps de resolution",
+      "qualite de reponse"
+    ]
+  },
+  "implementation": "plateforme",
+  "objectif_business": "Absorber une part des 2 millions de demandes de service par mois avec un agent IA fiable, sans degrader la qualite sur un secteur ou une mauvaise classification a des consequences reelles.",
+  "points_cles": ["Agent client IA sur le centre d'aide (depannage, mot de passe, EasyPay).", "Construit sur la plateforme Sierra, avec garde-fous et escalade humaine.", "Contexte d'environ 2 millions de demandes de care par mois.", "Preuve B, statut vivant confirme."],
+  "description": "ADT, l'un des plus gros acteurs americains de la securite domestique, a deploye fin 2024 un agent IA construit sur la plateforme Sierra (societe de Bret Taylor). L'agent traite des questions du centre d'aide : depannage (par exemple pourquoi une centrale bipe), reinitialisation de mot de passe, inscription au prelevement EasyPay. ADT gere environ 2 millions de demandes de care par mois. Les capacites annoncees en extension couvrent le paiement, la reprogrammation d'intervention et la commande de pancartes ou de piles. L'agent tourne avec des garde-fous serres et une revue humaine, parce qu'une erreur de classification d'intention sur un client securite a un cout reel.",
+  "resultats": [
+    {
+      "metrique": "Demandes de care traitees par mois",
+      "valeur": "~2 millions",
+      "citation_exacte": "two million care requests",
+      "source_ref": "S1"
+    },
+    {
+      "metrique": "Perimetre fonctionnel",
+      "valeur": "depannage, compte et facturation, extension vers paiement et rendez-vous",
+      "citation_exacte": "from troubleshooting inquiries to account and billing questions",
+      "source_ref": "S1"
+    }
+  ],
+  "niveau_preuve": {
+    "niveau": "B",
+    "justification": "Etude de cas de la plateforme Sierra (source officielle interessee) recoupee par la presse specialisee qui a couvert le partenariat en novembre 2024 ; pas de metrique de deviation publiee, d'ou un niveau B plutot que superieur."
+  },
+  "dates": {
+    "lancement": "2024-11",
+    "derniere_confirmation_activite": "2025-11 (Sierra couverte par Forbes, valorisation et clients Fortune 500)",
+    "verifie_le": "2026-07-11",
+    "revoir_apres": "2027-01-11"
+  },
+  "statut_vivant": {
+    "statut": "confirme",
+    "note": "Le cas ADT reste affiche par Sierra comme client, et Sierra est passee a une valorisation de plusieurs milliards en 2025 avec une base de grands comptes, ce qui rend l'abandon du deploiement improbable a court terme."
+  },
+  "sources": [
+    {
+      "ref": "S1",
+      "type": "customer_story_plateforme",
+      "fiabilite": "T2_officiel_interesse",
+      "titre": "How ADT deploys a Sierra AI agent to make every second count",
+      "url": "https://sierra.ai/customers/adt",
+      "date_publication": "2024-11",
+      "consulte_le": "2026-07-11"
+    },
+    {
+      "ref": "S2",
+      "type": "presse",
+      "fiabilite": "T4_secondaire",
+      "titre": "ADT Partners with Sierra for Better AI Customer Support",
+      "url": "https://analyticsindiamag.com/ai-news-updates/adt-partners-with-sierra-for-better-ai-customer-support/",
+      "date_publication": "2024-11",
+      "consulte_le": "2026-07-11"
+    },
+    {
+      "ref": "S3",
+      "type": "presse",
+      "fiabilite": "T3_presse_etablie",
+      "titre": "Inside OpenAI Chairman's $10 Billion AI Customer Service Startup Sierra",
+      "url": "https://www.forbes.com/sites/richardnieva/2025/11/05/sierra-bret-taylor-clay-bavor/",
+      "date_publication": "2025-11-05",
+      "consulte_le": "2026-07-11"
+    }
+  ],
+  "fonctionnement_operationnel": {
+    "cadence": "Temps reel, avec revue humaine dense sur les intentions a risque et iterations regulieres sur les workflows.",
+    "opere_par": "Equipe experience client d'ADT, en co-construction avec les ingenieurs Sierra qui embarquent sur les workflows.",
+    "signal_pilote": "La justesse de la classification d'intention. Sur un client securite, confondre une urgence avec une question de facturation a un cout reel, donc l'escalade humaine est cablee des le moindre doute.",
+    "etapes": [
+      {
+        "etape": "Definition des intentions et garde-fous",
+        "detail": "Cartographier les demandes traitables (depannage, mot de passe, EasyPay) et poser des limites strictes sur ce que l'agent n'a pas le droit de faire seul.",
+        "acteur": "equipe experience client"
+      },
+      {
+        "etape": "Construction de l'agent",
+        "detail": "Cabler les workflows, les connexions au compte client et les regles d'escalade sur la plateforme Sierra.",
+        "acteur": "agence"
+      },
+      {
+        "etape": "Traitement des demandes",
+        "detail": "L'agent repond au depannage et aux questions de compte, oriente vers un humain les cas sensibles.",
+        "acteur": "IA"
+      },
+      {
+        "etape": "Revue et extension",
+        "detail": "Surveiller les conversations, corriger les erreurs, ouvrir progressivement de nouvelles capacites (paiement, rendez-vous).",
+        "acteur": "equipe experience client"
+      }
+    ]
+  },
+  "schema_flow": {
+    "statut": "approche_type",
+    "noeuds": [
+      {
+        "id": "user",
+        "role_generique": "humain",
+        "label": "Client ADT"
+      },
+      {
+        "id": "help",
+        "role_generique": "site_app",
+        "label": "Centre d'aide / chat"
+      },
+      {
+        "id": "agent",
+        "role_generique": "modele_ia",
+        "label": "Agent IA",
+        "outil_documente": "Sierra"
+      },
+      {
+        "id": "account",
+        "role_generique": "crm",
+        "label": "Systeme compte / facturation"
+      },
+      {
+        "id": "human",
+        "role_generique": "humain",
+        "label": "Conseiller ADT (escalade)"
+      }
+    ],
+    "liens": [
+      [
+        "user",
+        "help"
+      ],
+      [
+        "help",
+        "agent"
+      ],
+      [
+        "account",
+        "agent"
+      ],
+      [
+        "agent",
+        "help"
+      ],
+      [
+        "agent",
+        "human",
+        "escalade intention a risque"
+      ],
+      [
+        "human",
+        "help"
+      ]
+    ]
+  },
+  "replication": {
+    "statut_epistemique": "infere",
+    "prerequis_data": [
+      "base de connaissances du centre d'aide",
+      "acces compte et facturation en lecture",
+      "historique de tickets par intention"
+    ],
+    "prerequis_orga": [
+      "equipe support qui supervise l'agent",
+      "regles d'escalade sur les cas sensibles",
+      "processus de revue des conversations"
+    ],
+    "stack_possible": [
+      "Sierra",
+      "Decagon",
+      "Intercom Fin",
+      "LLM + orchestrateur maison"
+    ],
+    "premiere_etape": "Choisir les intentions sans risque (mot de passe, statut de compte) pour un pilote, et definir la ligne rouge des intentions a escalader d'office.",
+    "playbook": [
+      {
+        "action": "Cartographier les intentions du support, choisir un lot a faible risque (mot de passe, statut de compte) et ecrire la ligne rouge des cas a escalader d'office.",
+        "livrable": "Carte des intentions + regles d'escalade validees"
+      },
+      {
+        "action": "Construire l'agent sur la plateforme : workflows, connexion au compte client en lecture, garde-fous.",
+        "livrable": "Agent fonctionnel en environnement de test"
+      },
+      {
+        "action": "Ouvrir un pilote sur une part du trafic avec revue systematique des conversations.",
+        "livrable": "Rapport de pilote : taux de resolution, erreurs de classification d'intention"
+      },
+      {
+        "action": "Elargir progressivement le perimetre (paiement, rendez-vous) et installer la revue hebdomadaire des conversations.",
+        "livrable": "Agent en production sur le lot d'intentions, tableau de bord de deviation du volume"
+      }
+    ],
+    "equipe": "1 responsable experience client + 1 dev integration (API compte et facturation) + des superviseurs support pour la revue des conversations, avec l'appui des ingenieurs du vendor"
+  },
+  "stack_technique": [
+    {
+      "nom": "Sierra",
+      "categorie": "plateforme",
+      "detail": "Plateforme d'agents IA pour le service client sur laquelle l'agent ADT est construit : workflows, garde-fous et regles d'escalade.",
+      "url": "https://sierra.ai"
+    },
+    {
+      "nom": "LLM orchestres par Sierra",
+      "categorie": "llm",
+      "detail": "Modeles de langage geres par la plateforme ; ni ADT ni Sierra ne publient les modeles exacts utilises.",
+      "url": "https://sierra.ai"
+    },
+    {
+      "nom": "Classification d'intention et escalade",
+      "categorie": "outil",
+      "detail": "Brique qui distingue les demandes traitables (depannage, mot de passe, EasyPay) des cas sensibles a router vers un conseiller humain.",
+      "url": "https://sierra.ai"
+    },
+    {
+      "nom": "Connexion aux systemes compte et facturation ADT",
+      "categorie": "infra",
+      "detail": "Acces au compte client (EasyPay, statut, facturation) pour traiter les demandes transactionnelles.",
+      "url": "https://www.adt.com"
+    }
+  ],
+  "seo": {
+    "slug": "adt-sierra-agent-ia-2024",
+    "title": "ADT : agent client IA (Sierra) sur 2 millions de demandes par mois (2024)",
+    "meta_description": "ADT a deploye fin 2024 un agent IA Sierra sur son centre d'aide, dans un contexte de 2 millions de demandes de care par mois.",
+    "resume_citable": "ADT, geant americain de la securite domestique, a deploye fin 2024 un agent IA construit sur Sierra pour traiter le depannage et les questions de compte, sur un volume d'environ 2 millions de demandes de care par mois, avec garde-fous serres et revue humaine.",
+    "faq": [
+      {
+        "q": "Que traite l'agent IA d'ADT ?",
+        "a": "Les questions du centre d'aide : depannage d'equipement, reinitialisation de mot de passe, inscription au prelevement EasyPay, avec une extension prevue vers le paiement et la reprogrammation d'intervention."
+      },
+      {
+        "q": "Pourquoi la revue humaine est-elle importante ici ?",
+        "a": "Sur un client securite, une mauvaise classification d'intention a des consequences reelles, donc ADT cable une escalade humaine des qu'il y a un doute."
+      }
+    ]
+  },
+  "logo_domain": "adt.com"
+}

@@ -1,0 +1,277 @@
+{
+  "id": "delta-air-lines-fetcherr-pricing-ia-2025",
+  "type_fiche": "succes",
+  "marque": "Delta Air Lines",
+  "industrie": "voyage_hospitality",
+  "marches_deploiement": [
+    "Etats-Unis"
+  ],
+  "transposable_ue": {
+    "flag": "oui_avec_adaptations",
+    "note": "La tarification dynamique par IA est transposable, mais l'UE encadre le prix personnalise: la directive Omnibus impose d'informer le client quand un prix est personnalise par decision automatisee, le RGPD exige une base legale des que des donnees personnelles alimentent le prix, et l'AI Act demande de documenter l'usage. Delta insiste sur une tarification pilotee par la demande, pas individualisee par personne."
+  },
+  "metier": "revenue management / pricing",
+  "intervenants": [
+    {
+      "nom": "Glen Hauenstein",
+      "role": "President, Delta Air Lines",
+      "source_ref": "S1"
+    }
+  ],
+  "agences": [
+    {
+      "nom": "Fetcherr",
+      "role": "Fournisseur du moteur de tarification IA (large market model) qui calcule les prix",
+      "source_ref": "S1"
+    }
+  ],
+  "axes": {
+    "levier": "monetisation",
+    "touchpoints": [
+      "moteur de tarification",
+      "canaux de distribution",
+      "site et app Delta"
+    ],
+    "etape_parcours": "achat",
+    "famille": "optimisation_automatisation",
+    "pattern": "pricing dynamique par IA (yield management)",
+    "type_ia": [
+      "large market model (Fetcherr)",
+      "prediction de demande",
+      "optimisation de prix"
+    ],
+    "plateforme_stack": [
+      "Fetcherr",
+      "systemes de revenue management Delta"
+    ],
+    "objectif_metrique": [
+      "revenu unitaire",
+      "yield",
+      "revenu par siege",
+      "marge"
+    ]
+  },
+  "implementation": "plateforme",
+  "objectif_business": "Fixer chaque tarif au niveau que le marche accepte, itineraire par itineraire, au lieu de s'appuyer sur des classes tarifaires figees, pour capter davantage de revenu par siege.",
+  "points_cles": ["Grilles de classes tarifaires remplacees par des prix calcules par IA, itineraire par itineraire.", "Moteur de tarification Fetcherr (large market model) integre au revenue management.", "Environ 3% des tarifs domestiques fixes par l'IA au T2 2025, objectif 20% fin 2025.", "Preuve A, statut signaux mitiges."],
+  "description": "Delta remplace progressivement ses grilles de classes tarifaires par des prix calcules par le moteur de Fetcherr, decrit comme un large market model. Le systeme ingere les recherches consommateurs, les prix concurrents et des signaux de demande comme la meteo, puis fixe le tarif. Au deuxieme trimestre 2025, environ 3 pour cent des tarifs du reseau domestique etaient fixes par l'IA, contre 1 pour cent fin 2024, avec un objectif annonce de 20 pour cent d'ici la fin 2025. Delta indique etre encore en phase de test et de montee en charge.",
+  "resultats": [
+    {
+      "metrique": "Part des tarifs domestiques fixes par l'IA (T2 2025, cible fin 2025)",
+      "valeur": "3%, objectif 20%",
+      "citation_exacte": "3 percent of its domestic flights",
+      "source_ref": "S2"
+    },
+    {
+      "metrique": "Cadrage revenu en earnings call (T2 2025)",
+      "valeur": "optimisation du revenu via le partenariat Fetcherr",
+      "citation_exacte": "We're optimizing revenue through our partnership with Fetcherr, leveraging AI-enhanced pricing solutions",
+      "source_ref": "S1"
+    },
+    {
+      "metrique": "Appreciation des premiers resultats par la direction",
+      "valeur": "resultats juges encourageants, deploiement poursuivi avec prudence",
+      "citation_exacte": "We like what we see",
+      "source_ref": "S2"
+    }
+  ],
+  "niveau_preuve": {
+    "niveau": "A",
+    "justification": "Chiffres et cadrage enonces par le President de Delta lors de l'earnings call du deuxieme trimestre 2025, corrobores par plusieurs presses etablies qui reprennent les memes valeurs (3% actuel, 20% vise)."
+  },
+  "dates": {
+    "lancement": "fin 2024 (pilote a 1% des tarifs domestiques)",
+    "derniere_confirmation_activite": "2025-07 (earnings call T2 2025)",
+    "verifie_le": "2026-07-11",
+    "revoir_apres": "2027-01-11"
+  },
+  "statut_vivant": {
+    "statut": "signaux_mitiges",
+    "note": "La derniere confirmation publique chiffree remonte a l'earnings call de juillet 2025, avec un objectif de 20% pour fin 2025. Pas de mise a jour chiffree verifiee en 2026, et le programme a suscite une demande d'explications de senateurs americains sur le prix pilote par IA."
+  },
+  "sources": [
+    {
+      "ref": "S1",
+      "type": "analyse",
+      "fiabilite": "T4_secondaire",
+      "titre": "Delta starting to scale its AI-driven dynamic pricing system",
+      "url": "https://www.constellationr.com/insights/news/delta-starting-scale-its-ai-driven-dynamic-pricing-system",
+      "date_publication": "2025-07",
+      "consulte_le": "2026-07-11"
+    },
+    {
+      "ref": "S2",
+      "type": "presse",
+      "fiabilite": "T3_presse_etablie",
+      "titre": "Delta Is Using AI to Determine Some Ticket Prices. What Does That Mean for Travelers?",
+      "url": "https://www.afar.com/magazine/delta-is-using-ai-to-set-fares-what-that-means-for-travelers",
+      "date_publication": "2025-07",
+      "consulte_le": "2026-07-11"
+    },
+    {
+      "ref": "S3",
+      "type": "presse",
+      "fiabilite": "T3_presse_etablie",
+      "titre": "Senators Demand Answers as Delta Plans to Price More Tickets Based on What AI Thinks You'll Pay",
+      "url": "https://www.newsweek.com/senators-want-answers-delta-ai-powered-pricing-plan-2102358",
+      "date_publication": "2025-07",
+      "consulte_le": "2026-07-11"
+    }
+  ],
+  "fonctionnement_operationnel": {
+    "cadence": "Reoptimisation continue des tarifs selon l'evolution de la demande et du marche.",
+    "opere_par": "Equipe revenue management de Delta, avec le moteur de tarification Fetcherr.",
+    "signal_pilote": "La demande predite par itineraire et date, croisee avec les prix concurrents et les recherches consommateurs. Sans flux de donnees marche fiable, le prix propose derive et le revenu unitaire se degrade.",
+    "etapes": [
+      {
+        "etape": "Ingestion des donnees marche",
+        "detail": "Recherches consommateurs, prix concurrents et signaux de demande comme la meteo sont agreges en continu.",
+        "acteur": "IA"
+      },
+      {
+        "etape": "Prediction de la demande",
+        "detail": "Le large market model estime la demande et le consentement a payer par itineraire et date.",
+        "acteur": "IA"
+      },
+      {
+        "etape": "Fixation du tarif",
+        "detail": "Le moteur pose un prix par itineraire, en remplacement des classes tarifaires fixes.",
+        "acteur": "IA"
+      },
+      {
+        "etape": "Supervision et montee en charge",
+        "detail": "L'equipe revenue management etend progressivement le perimetre des tarifs pilotes par l'IA et surveille les resultats.",
+        "acteur": "equipe revenue management"
+      }
+    ]
+  },
+  "schema_flow": {
+    "statut": "approche_type",
+    "noeuds": [
+      {
+        "id": "data",
+        "role_generique": "data_source",
+        "label": "Recherches, prix concurrents, signaux de demande"
+      },
+      {
+        "id": "lmm",
+        "role_generique": "modele_ia",
+        "label": "Moteur de tarification (large market model)",
+        "outil_documente": "Fetcherr"
+      },
+      {
+        "id": "rm",
+        "role_generique": "humain",
+        "label": "Revenue management Delta"
+      },
+      {
+        "id": "dist",
+        "role_generique": "site_app",
+        "label": "Canaux de distribution et prix affiche"
+      },
+      {
+        "id": "flyer",
+        "role_generique": "humain",
+        "label": "Voyageur"
+      }
+    ],
+    "liens": [
+      [
+        "data",
+        "lmm"
+      ],
+      [
+        "lmm",
+        "dist"
+      ],
+      [
+        "rm",
+        "lmm",
+        "perimetre et supervision"
+      ],
+      [
+        "dist",
+        "flyer"
+      ]
+    ]
+  },
+  "stack_technique": [
+    {
+      "nom": "Fetcherr",
+      "categorie": "plateforme",
+      "detail": "moteur de tarification IA (large market model) qui ingere recherches, prix concurrents et signaux de demande, puis fixe le prix par itineraire",
+      "url": "https://fetcherr.io"
+    },
+    {
+      "nom": "Systemes de revenue management Delta",
+      "categorie": "infra",
+      "detail": "systemes internes auxquels le moteur est integre et qui gardent la supervision du perimetre pilote par l'IA",
+      "url": "https://www.delta.com"
+    },
+    {
+      "nom": "Canaux de distribution Delta (site, app, GDS)",
+      "categorie": "infra",
+      "detail": "surfaces ou le tarif calcule est publie et vendu",
+      "url": "https://www.delta.com"
+    }
+  ],
+  "replication": {
+    "statut_epistemique": "infere",
+    "prerequis_data": [
+      "historique de reservations et de tarifs",
+      "prix concurrents en temps reel",
+      "signaux de demande (evenements, meteo, recherches)"
+    ],
+    "prerequis_orga": [
+      "equipe revenue management mure",
+      "integration du moteur de pricing aux canaux de distribution",
+      "gouvernance sur la transparence et l'equite des prix"
+    ],
+    "stack_possible": [
+      "moteur de pricing IA vendeur (type Fetcherr)",
+      "modeles de demande maison",
+      "systeme de revenue management existant"
+    ],
+    "premiere_etape": "Isoler un sous-ensemble d'itineraires domestiques et y tester le moteur de pricing contre la grille tarifaire actuelle.",
+    "playbook": [
+      {
+        "action": "Auditer les donnees (historique de reservations et de tarifs, prix concurrents, signaux de demande) et isoler un perimetre pilote d'itineraires.",
+        "livrable": "Perimetre pilote defini et flux de donnees branches"
+      },
+      {
+        "action": "Integrer le moteur de pricing aux systemes de revenue management et de distribution.",
+        "livrable": "Prix calcules par l'IA disponibles en pre-production"
+      },
+      {
+        "action": "Faire tourner le moteur en shadow mode : comparer ses prix a la grille actuelle sans les afficher.",
+        "livrable": "Rapport d'ecart et estimation du revenu incremental"
+      },
+      {
+        "action": "Basculer un petit pourcentage de tarifs en production avec des garde-fous (planchers, plafonds, supervision humaine).",
+        "livrable": "1-3% des tarifs pilotes par l'IA avec suivi du revenu unitaire"
+      },
+      {
+        "action": "Monter en charge progressivement et poser la gouvernance transparence / equite des prix.",
+        "livrable": "Perimetre etendu avec comite de supervision et reporting"
+      }
+    ],
+    "equipe": "equipe revenue management existante + 1-2 data engineers pour l'integration + juridique pour la conformite prix"
+  },
+  "seo": {
+    "slug": "delta-air-lines-fetcherr-pricing-ia-2025",
+    "title": "Delta Air Lines : pricing dynamique par IA avec Fetcherr - 3% des tarifs domestiques, objectif 20% (2025)",
+    "meta_description": "Delta fixe environ 3% de ses tarifs domestiques via le moteur IA de Fetcherr en 2025, avec un objectif de 20% en fin d'annee, annonce en earnings call.",
+    "resume_citable": "En 2025, Delta Air Lines fixe environ 3% de ses tarifs domestiques avec le moteur d'IA de Fetcherr et vise 20% d'ici fin 2025, selon son President en earnings call.",
+    "faq": [
+      {
+        "q": "Comment Delta utilise-t-elle l'IA pour ses prix ?",
+        "a": "Le moteur de Fetcherr, un large market model, ingere recherches, prix concurrents et signaux de demande, puis fixe le tarif par itineraire a la place des classes tarifaires figees."
+      },
+      {
+        "q": "Quelle part des tarifs Delta est fixee par l'IA ?",
+        "a": "Environ 3% du reseau domestique au deuxieme trimestre 2025, contre 1% fin 2024, avec un objectif annonce de 20% pour la fin 2025."
+      }
+    ]
+  },
+  "logo_domain": "delta.com"
+}

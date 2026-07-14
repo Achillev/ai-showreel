@@ -1,0 +1,197 @@
+{
+  "id": "cnet-articles-ia-erreurs-2023",
+  "type_fiche": "echec_retrait",
+  "marque": "CNET",
+  "groupe": "Red Ventures",
+  "industrie": "media_entertainment",
+  "marches_deploiement": [
+    "Etats-Unis"
+  ],
+  "transposable_ue": {
+    "flag": "oui",
+    "note": "Meme risque pour tout media ou editeur UE misant sur la generation d'articles a l'echelle pour le SEO. L'AI Act impose la transparence sur les contenus generes, et sur des sujets finance ou sante l'erreur factuelle engage la credibilite et, selon le cas, la responsabilite. La divulgation minimale et enterree de CNET serait insuffisante au regard des attentes europeennes."
+  },
+  "metier": "contenu editorial / SEO",
+  "axes": {
+    "levier": "acquisition",
+    "touchpoints": [
+      "articles explainer finance",
+      "recherche organique"
+    ],
+    "etape_parcours": "decouverte",
+    "famille": "generation",
+    "pattern": "generation d'articles SEO a l'echelle",
+    "type_ia": [
+      "generation de texte (LLM)"
+    ],
+    "plateforme_stack": [
+      "moteur IA interne Red Ventures",
+      "custom"
+    ],
+    "objectif_metrique": [
+      "trafic SEO",
+      "volume de contenu",
+      "cout par article"
+    ]
+  },
+  "implementation": "custom",
+  "objectif_business": "Produire a bas cout un volume d'articles explicatifs de finance personnelle pour capter du trafic de recherche, sans mobiliser de redacteurs pour chaque sujet.",
+  "description": "A partir de fin 2022, CNET a publie discretement des dizaines d'articles explicatifs de finance personnelle (interet compose, CD, prets auto) generes par un outil IA, sous la signature CNET Money Staff puis CNET Money, la mention de l'IA etant releguee dans une page auteur peu visible. En janvier 2023, Futurism revele l'usage et pointe des erreurs. CNET reconnait des inexactitudes, appose une note de relecture sur les articles concernes et suspend l'outil de generation.",
+  "resultats": [
+    {
+      "metrique": "Inexactitudes majeures dans un seul article (interet compose)",
+      "valeur": "5+ erreurs majeures",
+      "citation_exacte": "at least five significant inaccuracies",
+      "source_ref": "S1"
+    },
+    {
+      "metrique": "reaction editoriale",
+      "valeur": "note de relecture apposee, outil de generation suspendu",
+      "citation_exacte": "We are currently reviewing this story for accuracy",
+      "source_ref": "S1"
+    }
+  ],
+  "niveau_preuve": {
+    "niveau": "C",
+    "justification": "Enquete de Futurism reprise par la presse etablie (CNN Business, Gizmodo, The Washington Post) qui cite nommement CNET, ses corrections et sa reponse. Pas de document financier ni judiciaire."
+  },
+  "dates": {
+    "lancement": "novembre 2022 (debut des publications IA)",
+    "derniere_confirmation_activite": "2023-01-25 (suspension de l'outil, vague de corrections)",
+    "verifie_le": "2026-07-11",
+    "revoir_apres": "2027-07-11"
+  },
+  "statut_vivant": {
+    "statut": "confirme",
+    "note": "Retrait confirme : CNET a suspendu l'outil de generation d'articles en janvier 2023 apres la vague de corrections. L'entreprise a ensuite publie des garde-fous editoriaux sur l'usage de l'IA."
+  },
+  "sources": [
+    {
+      "ref": "S1",
+      "type": "presse",
+      "fiabilite": "T3_presse_etablie",
+      "titre": "CNET Is Reviewing the Accuracy of All Its AI-Written Articles After Multiple Major Corrections",
+      "url": "https://gizmodo.com/cnet-ai-chatgpt-news-robot-1849996151",
+      "date_publication": "2023-01-17",
+      "consulte_le": "2026-07-11"
+    },
+    {
+      "ref": "S2",
+      "type": "presse",
+      "fiabilite": "T3_presse_etablie",
+      "titre": "Plagued with errors: A news outlet's decision to write stories with AI backfires",
+      "url": "https://www.cnn.com/2023/01/25/tech/cnet-ai-tool-news-stories",
+      "date_publication": "2023-01-25",
+      "consulte_le": "2026-07-11"
+    }
+  ],
+  "post_mortem": {
+    "ce_qui_s_est_passe": "Des novembre 2022, CNET publie des dizaines d'articles de finance personnelle generes par un outil IA interne, sous une signature de type CNET Money Staff. En janvier 2023, Futurism revele l'usage et des erreurs factuelles ; un seul article sur l'interet compose contient au moins cinq inexactitudes majeures (interet calcule a 10 300 dollars au lieu de 300, entre autres). CNET reconnait les erreurs, appose une note de relecture, corrige plus de la moitie des articles concernes et suspend l'outil.",
+    "raison_echec": "Publication a l'echelle d'articles generes sur un sujet a fort enjeu factuel (finance) sans relecture suffisante, avec une divulgation de l'usage de l'IA enterree dans une page auteur. La verification humaine annoncee n'a pas empeche des erreurs de calcul et des formulations proches du plagiat.",
+    "date_retrait": "2023-01-25",
+    "cout_estime": "Cout reputationnel pour un titre tech de reference. Pas de cout financier direct publie. Consequence durable : mefiance accrue du public et des moteurs envers le contenu genere non divulgue.",
+    "signaux_avant_coureurs": "Infere : choisir la finance personnelle, domaine ou une erreur de chiffre est immediatement verifiable et couteuse pour le lecteur ; cadencer jusqu'a une douzaine d'articles par jour ; cacher la mention IA. Un simple controle de calcul sur un echantillon aurait revele le taux d'erreur avant la publication de masse.",
+    "lecons_avec_recul": "Infere : la generation d'articles a l'echelle demande une relecture experte proportionnelle a l'enjeu factuel, pas une case cochee. Sur des sujets YMYL (finance, sante), le cout d'une erreur non detectee depasse le gain de productivite. Et la divulgation doit etre visible du lecteur, pas reservee a qui fouille la page auteur.",
+    "le_pattern_reste_il_valide": "Infere : le pattern de la generation de contenu SEO assistee par IA reste valide et s'est generalise depuis 2023. L'echec condamne l'execution : publication de masse sans relecture experte et sans divulgation claire, sur un domaine a fort enjeu. Avec verification humaine calibree et transparence, le pattern tient."
+  },
+  "schema_flow": {
+    "statut": "approche_type",
+    "noeuds": [
+      {
+        "id": "brief",
+        "role_generique": "humain",
+        "label": "Equipe SEO/editoriale (sujets a produire)"
+      },
+      {
+        "id": "engine",
+        "role_generique": "modele_ia",
+        "label": "Moteur IA de generation d'articles (interne)",
+        "outil_documente": "outil IA interne Red Ventures"
+      },
+      {
+        "id": "review",
+        "role_generique": "humain",
+        "label": "Relecture / fact-check (insuffisante)"
+      },
+      {
+        "id": "cms",
+        "role_generique": "site_app",
+        "label": "Site CNET (articles finance)"
+      }
+    ],
+    "liens": [
+      [
+        "brief",
+        "engine"
+      ],
+      [
+        "engine",
+        "review"
+      ],
+      [
+        "review",
+        "cms"
+      ],
+      [
+        "cms",
+        "brief",
+        "trafic SEO (jusqu'aux corrections de masse)"
+      ]
+    ]
+  },
+  "stack_technique": [
+    {
+      "nom": "Moteur de generation interne Red Ventures",
+      "categorie": "llm",
+      "detail": "outil proprietaire de generation d'articles ; le modele sous-jacent n'a jamais ete divulgue publiquement",
+      "url": "https://www.redventures.com"
+    },
+    {
+      "nom": "Red Ventures",
+      "categorie": "integrateur",
+      "detail": "maison mere de CNET a l'epoque, conceptrice et operatrice de l'outil de generation",
+      "url": "https://www.redventures.com"
+    },
+    {
+      "nom": "CMS editorial CNET",
+      "categorie": "infra",
+      "detail": "publication des articles generes sous la signature CNET Money, avec la mention IA releguee en page auteur",
+      "url": "https://www.cnet.com"
+    }
+  ],
+  "replication": {
+    "statut_epistemique": "infere",
+    "prerequis_data": [
+      "corpus source fiable par sujet",
+      "guidelines de divulgation IA",
+      "checklist de fact-check par domaine"
+    ],
+    "prerequis_orga": [
+      "relecteurs experts du domaine",
+      "seuil d'echantillonnage qualite avant publication de masse"
+    ],
+    "stack_possible": [
+      "LLM avec sources citees",
+      "verification humaine proportionnelle a l'enjeu",
+      "mention IA visible en tete d'article"
+    ],
+    "premiere_etape": "Avant toute publication de masse, faire relire par un expert un echantillon d'articles generes et mesurer le taux d'erreur ; ne passer a l'echelle que si ce taux est acceptable."
+  },
+  "seo": {
+    "slug": "cnet-articles-ia-erreurs-2023",
+    "title": "CNET : articles finance generes par IA truffes d'erreurs - outil suspendu (2023)",
+    "meta_description": "En 2023, CNET a suspendu son outil IA apres avoir corrige plus de la moitie de dizaines d'articles finance generes, dont un avec cinq erreurs majeures.",
+    "resume_citable": "Fin 2022, CNET a publie des dizaines d'articles de finance generes par IA sous une signature maison ; en janvier 2023, apres des erreurs factuelles (au moins cinq dans un seul article), il a corrige plus de la moitie des textes et suspendu l'outil.",
+    "faq": [
+      {
+        "q": "Combien d'articles CNET a-t-il du corriger ?",
+        "a": "Sur les dizaines d'articles de finance generes par IA, plus de la moitie ont recu des corrections. Un seul explainer sur l'interet compose contenait au moins cinq inexactitudes majeures."
+      },
+      {
+        "q": "Faut-il renoncer a generer du contenu SEO avec l'IA ?",
+        "a": "Non. Le pattern reste valide avec une relecture experte proportionnelle a l'enjeu factuel et une divulgation visible. L'echec de CNET vient de la publication de masse sans fact-check suffisant sur un sujet finance."
+      }
+    ]
+  },
+  "logo_domain": "cnet.com"
+}

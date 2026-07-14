@@ -1,0 +1,269 @@
+{
+  "id": "adobe-firefly-genstudio-marketing-interne-2023",
+  "type_fiche": "succes",
+  "marque": "Adobe",
+  "industrie": "tech_saas",
+  "marches_deploiement": [
+    "Etats-Unis",
+    "international (marketing et social media Adobe)"
+  ],
+  "transposable_ue": {
+    "flag": "oui",
+    "note": "Production de contenu marketing par IA generative. Adobe positionne Firefly comme commercialement sur (entraine sur des donnees licenciees), ce qui limite le risque droits d'auteur cote UE. L'AI Act demande le marquage des contenus generes par IA ; pas de traitement de donnees personnelles sensible dans ce cas de production d'assets."
+  },
+  "metier": "marketing / production de contenu (usage interne Adobe)",
+  "axes": {
+    "levier": "acquisition",
+    "touchpoints": [
+      "reseaux sociaux (Instagram, TikTok)",
+      "campagnes marketing",
+      "assets de marque"
+    ],
+    "etape_parcours": "decouverte",
+    "famille": "generation",
+    "pattern": "production de contenu marketing a l'echelle par IA generative en propre",
+    "type_ia": [
+      "IA generative d'images",
+      "Generative Fill",
+      "modeles Firefly personnalises"
+    ],
+    "plateforme_stack": [
+      "Adobe Firefly",
+      "Adobe GenStudio",
+      "Adobe Photoshop (Generative Fill)"
+    ],
+    "objectif_metrique": [
+      "temps de production",
+      "volume de contenu produit",
+      "vitesse de mise en marche des campagnes"
+    ]
+  },
+  "implementation": "plateforme",
+  "objectif_business": "Absorber la demande croissante de contenu social et de campagnes sans gonfler les couts et les delais. Adobe utilise ses propres outils generatifs pour produire plus d'assets, plus vite, tout en gardant la coherence de marque.",
+  "points_cles": ["Adobe produit son propre contenu marketing par IA generative.", "Firefly et Generative Fill dans Photoshop, industrialises via GenStudio.", "Temps de production des campagnes social reduit de 33%, volume double.", "Preuve B, statut vivant confirme."],
+  "description": "Adobe fait tourner son propre marketing sur Firefly et GenStudio. Les equipes marketing utilisent Generative Fill dans Photoshop et des images generees par Firefly pour produire le contenu social de la marque. Adobe a concu GenStudio for Performance Marketing en dogfoodant ces outils : ses equipes ont produit des dizaines de milliers d'assets pour une seule campagne. Adobe Brand Studio a aussi utilise Firefly pour l'identite visuelle d'Adobe MAX 2024, en generant des centaines d'assets on-brand. Le perimetre couvre la creation, l'adaptation et la mise a l'echelle du contenu de campagne.",
+  "resultats": [
+    {
+      "metrique": "Temps de production des campagnes social (Instagram, TikTok)",
+      "valeur": "33% plus rapide",
+      "citation_exacte": "reducing production times for social media campaigns by 33%",
+      "source_ref": "S1"
+    },
+    {
+      "metrique": "Volume de contenu social produit pour Adobe",
+      "valeur": "double",
+      "citation_exacte": "doubling the volume of content created for Adobe's social media",
+      "source_ref": "S1"
+    },
+    {
+      "metrique": "Assets produits par les equipes marketing pour une campagne",
+      "valeur": "dizaines de milliers",
+      "citation_exacte": "tens of thousands of assets for a single campaign",
+      "source_ref": "S2"
+    }
+  ],
+  "niveau_preuve": {
+    "niveau": "B",
+    "justification": "Chiffres publies par Adobe dans son propre communique officiel (33% de temps en moins, volume double) et usage interne confirme par un second communique Adobe (Brand Studio, MAX 2024). Communique officiel chiffre de la marque-sujet, sources concordantes."
+  },
+  "dates": {
+    "lancement": "usage interne de Firefly et Generative Fill pour le marketing Adobe a partir de 2023 ; GenStudio annonce en 2023",
+    "derniere_confirmation_activite": "mars 2025 (communique Adobe sur l'usage interne de Firefly par Brand Studio pour MAX 2024)",
+    "verifie_le": "2026-07-11",
+    "revoir_apres": "2027-01-11"
+  },
+  "statut_vivant": {
+    "statut": "confirme",
+    "note": "Firefly et GenStudio sont des lignes produit strategiques d'Adobe, avec plus de 22 milliards d'assets generes au niveau mondial. Le dogfooding marketing est reaffirme dans les communications 2024-2025 (Brand Studio, GenStudio for Performance Marketing)."
+  },
+  "sources": [
+    {
+      "ref": "S1",
+      "type": "blog_officiel",
+      "fiabilite": "T1_primaire",
+      "titre": "Adobe GenStudio Accelerates Enterprise Content Supply Chain with Customized Firefly Models",
+      "url": "https://news.adobe.com/news/news-details/2023/adobe-genstudio-accelerates-enterprise-content-supply-chain-with-customized-firefly-models",
+      "date_publication": "2023-10-10",
+      "consulte_le": "2026-07-11"
+    },
+    {
+      "ref": "S2",
+      "type": "blog_officiel",
+      "fiabilite": "T1_primaire",
+      "titre": "Adobe Expands GenStudio Content Supply Chain Offering for Marketing and Creative Teams",
+      "url": "https://news.adobe.com/news/2025/03/adobe-expands-genstudio-content-supply-chain",
+      "date_publication": "2025-03-18",
+      "consulte_le": "2026-07-11"
+    }
+  ],
+  "fonctionnement_operationnel": {
+    "cadence": "Par campagne et en flux continu pour le contenu social, avec production a la demande",
+    "opere_par": "Equipes marketing et Brand Studio d'Adobe, sur Firefly, GenStudio et Photoshop",
+    "signal_pilote": "Les guidelines de marque et les modeles Firefly personnalises. Sans modele entraine sur les assets de marque, le contenu genere derive et demande plus de reprise manuelle, ce qui annule le gain de temps.",
+    "etapes": [
+      {
+        "etape": "Cadrage de la campagne",
+        "detail": "Le marketing definit le brief, les formats sociaux et les regles de marque.",
+        "acteur": "Marketing"
+      },
+      {
+        "etape": "Generation des assets",
+        "detail": "Firefly genere images et variantes ; Generative Fill dans Photoshop etend et adapte les visuels.",
+        "acteur": "IA"
+      },
+      {
+        "etape": "Adaptation multi-format",
+        "detail": "Les assets sont declines par plateforme (Instagram, TikTok) via GenStudio.",
+        "acteur": "IA et marketing"
+      },
+      {
+        "etape": "Controle de marque",
+        "detail": "Les equipes valident la coherence on-brand avant publication.",
+        "acteur": "Brand Studio"
+      },
+      {
+        "etape": "Publication et iteration",
+        "detail": "Le contenu part sur les canaux sociaux ; les volumes et delais sont mesures.",
+        "acteur": "Marketing"
+      }
+    ]
+  },
+  "schema_flow": {
+    "statut": "documente",
+    "noeuds": [
+      {
+        "id": "brief",
+        "role_generique": "humain",
+        "label": "Brief campagne et guidelines de marque"
+      },
+      {
+        "id": "modele",
+        "role_generique": "modele_ia",
+        "label": "Modeles Firefly (dont modeles personnalises)",
+        "outil_documente": "Adobe Firefly"
+      },
+      {
+        "id": "fill",
+        "role_generique": "modele_ia",
+        "label": "Generative Fill dans Photoshop",
+        "outil_documente": "Adobe Photoshop"
+      },
+      {
+        "id": "genstudio",
+        "role_generique": "dam",
+        "label": "Chaine de contenu GenStudio",
+        "outil_documente": "Adobe GenStudio"
+      },
+      {
+        "id": "social",
+        "role_generique": "site_app",
+        "label": "Canaux sociaux Adobe (Instagram, TikTok)"
+      }
+    ],
+    "liens": [
+      [
+        "brief",
+        "modele"
+      ],
+      [
+        "modele",
+        "fill",
+        "images de base a etendre"
+      ],
+      [
+        "fill",
+        "genstudio"
+      ],
+      [
+        "modele",
+        "genstudio"
+      ],
+      [
+        "genstudio",
+        "social",
+        "assets declines par plateforme"
+      ]
+    ]
+  },
+  "replication": {
+    "statut_epistemique": "infere",
+    "prerequis_data": [
+      "banque d'assets de marque pour entrainer un modele custom",
+      "guidelines de marque formalisees",
+      "briefs de campagne structures"
+    ],
+    "prerequis_orga": [
+      "equipe creative ou brand studio",
+      "processus de validation on-brand",
+      "outil de mesure du temps et du volume de production"
+    ],
+    "stack_possible": [
+      "IA generative d'images (Firefly ou equivalent)",
+      "outil d'edition avec remplissage generatif",
+      "chaine de contenu / DAM"
+    ],
+    "premiere_etape": "Entrainer un modele generatif sur les assets de marque et cadrer un premier flux de production social mesurable.",
+    "playbook": [
+      {
+        "action": "Formaliser les guidelines de marque et rassembler la banque d'assets de reference.",
+        "livrable": "Corpus d'assets et regles on-brand documentees"
+      },
+      {
+        "action": "Entrainer ou configurer un modele generatif personnalise sur ces assets et equiper les createurs (remplissage generatif dans l'outil d'edition).",
+        "livrable": "Modele custom teste sur des briefs reels"
+      },
+      {
+        "action": "Cadrer un premier flux de production social : formats, gabarits, etape de validation on-brand.",
+        "livrable": "Workflow de production documente avec point de controle marque"
+      },
+      {
+        "action": "Produire en volume, decliner par plateforme et comparer temps de production et volume a la periode precedente.",
+        "livrable": "Campagne publiee + mesure avant/apres du temps et du volume"
+      }
+    ],
+    "equipe": "1 directeur artistique ou brand manager + 1-2 createurs formes aux outils generatifs + 1 marketeur pour la mesure"
+  },
+  "stack_technique": [
+    {
+      "nom": "Adobe Firefly",
+      "categorie": "llm",
+      "detail": "Modeles generatifs d'images d'Adobe, entraines sur des contenus licencies, utilises pour produire les visuels de campagne et de social.",
+      "url": "https://www.adobe.com/products/firefly.html"
+    },
+    {
+      "nom": "Modeles Firefly personnalises",
+      "categorie": "llm",
+      "detail": "Versions de Firefly entrainees sur les assets de la marque pour garder la coherence visuelle a l'echelle.",
+      "url": "https://www.adobe.com/products/firefly.html"
+    },
+    {
+      "nom": "Adobe GenStudio",
+      "categorie": "plateforme",
+      "detail": "Chaine de contenu qui industrialise creation, declinaison multi-format et validation des assets de campagne.",
+      "url": "https://business.adobe.com"
+    },
+    {
+      "nom": "Adobe Photoshop (Generative Fill)",
+      "categorie": "outil",
+      "detail": "Remplissage generatif utilise pour etendre et adapter les visuels aux formats sociaux (Instagram, TikTok).",
+      "url": "https://www.adobe.com/products/photoshop.html"
+    }
+  ],
+  "seo": {
+    "slug": "adobe-firefly-genstudio-marketing-interne-2023",
+    "title": "Adobe : IA generative pour son propre marketing (Firefly, GenStudio) - production social 33% plus rapide, volume double (2023)",
+    "meta_description": "Adobe utilise Firefly et Generative Fill pour son propre contenu marketing : temps de production social reduit de 33% et volume de contenu double pour ses reseaux sociaux.",
+    "resume_citable": "Adobe fait tourner son propre marketing sur Firefly et Generative Fill : temps de production des campagnes social reduit de 33% et volume de contenu double pour les reseaux sociaux d'Adobe.",
+    "faq": [
+      {
+        "q": "Comment Adobe utilise-t-il l'IA pour son propre marketing ?",
+        "a": "Ses equipes produisent le contenu social de la marque avec Firefly et Generative Fill dans Photoshop, et industrialisent les campagnes via GenStudio."
+      },
+      {
+        "q": "Quels gains chiffres Adobe revendique-t-il ?",
+        "a": "Une reduction de 33% du temps de production des campagnes social et un volume de contenu double pour ses reseaux sociaux, avec des dizaines de milliers d'assets sur une campagne."
+      }
+    ]
+  },
+  "logo_domain": "adobe.com"
+}

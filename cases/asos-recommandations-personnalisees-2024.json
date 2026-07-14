@@ -1,0 +1,280 @@
+{
+  "type_fiche": "succes",
+  "id": "asos-recommandations-personnalisees-2024",
+  "marque": "ASOS",
+  "industrie": "retail_ecom",
+  "marches_deploiement": [
+    "Royaume-Uni",
+    "Union europeenne",
+    "International (plus de 200 marches)"
+  ],
+  "transposable_ue": {
+    "flag": "oui",
+    "note": "ASOS opere deja en UE et sert ses recommandations dans plus de 200 marches. Le profilage sur comportement d'achat releve du RGPD (base legale, information, opt-out) ; l'assistant conversationnel sur LLM ajoute les obligations de transparence de l'AI Act pour les systemes generatifs."
+  },
+  "metier": "E-commerce mode / recommandation et decouverte produit",
+  "marque_linkedin": "https://www.linkedin.com/company/asos-com",
+  "axes": {
+    "levier": "activation_conversion",
+    "touchpoints": [
+      "Application mobile",
+      "Site web",
+      "Fils de recommandation produit",
+      "AI Stylist (assistant conversationnel)"
+    ],
+    "etape_parcours": "decouverte -> consideration -> achat",
+    "famille": "personnalisation",
+    "pattern": "Recommandation produit par deep learning a l'echelle du catalogue, plus assistant de style conversationnel",
+    "type_ia": [
+      "modele transformer de recommandation",
+      "deep learning sur interactions client",
+      "assistant conversationnel (LLM)"
+    ],
+    "plateforme_stack": [
+      "custom/in-house",
+      "Microsoft Azure AI Studio",
+      "Azure OpenAI"
+    ],
+    "objectif_metrique": [
+      "pertinence des recommandations",
+      "engagement",
+      "conversion mobile"
+    ]
+  },
+  "implementation": "hybride",
+  "stack_technique": [
+    {
+      "nom": "Modele transformer de recommandation (in-house ASOS)",
+      "categorie": "outil",
+      "detail": "Modele maison qui remplace la factorisation matricielle en 2024 (+20% sur les metriques d'evaluation) et sert environ 5 milliards de requetes par jour.",
+      "url": "https://www.asos.com"
+    },
+    {
+      "nom": "Microsoft Azure AI Studio",
+      "categorie": "plateforme",
+      "detail": "Environnement Azure utilise avec Microsoft pour construire l'assistant conversationnel AI Stylist.",
+      "url": "https://azure.microsoft.com"
+    },
+    {
+      "nom": "Azure OpenAI",
+      "categorie": "llm",
+      "detail": "Modeles OpenAI serves via Azure, brique LLM de l'AI Stylist ; la version de modele exacte n'est pas nommee dans les sources.",
+      "url": "https://azure.microsoft.com/en-us/products/ai-services/openai-service"
+    },
+    {
+      "nom": "AI Stylist",
+      "categorie": "outil",
+      "detail": "Assistant de decouverte produit par le dialogue (style, occasion), branche sur le catalogue ASOS.",
+      "url": "https://www.asos.com"
+    }
+  ],
+  "objectif_business": "Rendre un catalogue de dizaines de milliers de references, renouvele chaque semaine, parcourable et pertinent pour un public majoritairement mobile.",
+  "points_cles": ["Recommandation produit personnalisee par deep learning sur tout le catalogue.", "Modele transformer maison plus AI Stylist conversationnel sur Azure OpenAI.", "Metriques d'evaluation ameliorees de plus de 20%, environ 5 milliards de requetes par jour.", "Preuve B, statut vivant confirme."],
+  "description": "ASOS vend de la mode en ligne a un public jeune, avec pres de 50 000 references disponibles a tout moment et des centaines de nouveautes chaque semaine. Pour que ce catalogue reste navigable, l'entreprise classe les produits par recommandation personnalisee sur ses differents points de contact, a partir des interactions clients (achats, sauvegardes, ajouts au panier) traitees par deep learning. En 2024, l'equipe a remplace son modele historique de factorisation matricielle par un modele transformer, qui a ameliore de plus de 20 % ses metriques d'evaluation par rapport a cette base. Le systeme de recommandation sert environ 5 milliards de requetes par jour, dans neuf langues et plus de 200 marches. ASOS a par ailleurs mis en service un AI Stylist, un assistant conversationnel construit avec Microsoft sur Azure OpenAI, qui aide le client a decouvrir des produits par le dialogue selon son style et l'occasion.",
+  "fonctionnement_operationnel": {
+    "cadence": "Service temps reel des recommandations ; reentrainement periodique des modeles a mesure que le catalogue et les interactions evoluent.",
+    "opere_par": "Equipe data science et machine learning d'ASOS, en lien avec les equipes produit et merchandising ; l'assistant conversationnel s'appuie sur la stack Azure de Microsoft.",
+    "signal_pilote": "Les interactions client (achats, sauvegardes, ajouts au panier). Sur un catalogue qui se renouvelle chaque semaine, un nouveau produit part sans historique et doit etre rattache vite a des signaux, sinon il reste invisible dans les fils.",
+    "etapes": [
+      {
+        "etape": "Agreger les interactions",
+        "detail": "Achats, produits sauvegardes et ajouts au panier alimentent en continu le profil de gout du client.",
+        "acteur": "IA / equipe data"
+      },
+      {
+        "etape": "Classer le catalogue par client",
+        "detail": "Le modele transformer ordonne les produits selon leur pertinence pour chaque personne, sur chaque surface.",
+        "acteur": "IA / equipe data"
+      },
+      {
+        "etape": "Servir a l'echelle",
+        "detail": "Environ 5 milliards de requetes de recommandation par jour sont servies dans neuf langues et plus de 200 marches.",
+        "acteur": "IA / plateforme"
+      },
+      {
+        "etape": "Ouvrir la decouverte au dialogue",
+        "detail": "L'AI Stylist laisse le client decrire ce qu'il cherche en langage naturel et propose des produits en reponse.",
+        "acteur": "IA / assistant conversationnel"
+      }
+    ]
+  },
+  "resultats": [
+    {
+      "metrique": "Amelioration des metriques d'evaluation du nouveau modele transformer vs base",
+      "valeur": "plus de 20 %",
+      "citation_exacte": "over 20% improvement",
+      "source_ref": "S1"
+    },
+    {
+      "metrique": "Requetes de recommandation servies par jour",
+      "valeur": "5 milliards",
+      "citation_exacte": "5 billion requests a day",
+      "source_ref": "S1"
+    },
+    {
+      "metrique": "Catalogue servi dans 9 langues et plus de 200 marches",
+      "valeur": "~50 000 produits",
+      "citation_exacte": "nearly 50,000 products ... in nine languages and in over 200 markets",
+      "source_ref": "S1"
+    }
+  ],
+  "niveau_preuve": {
+    "niveau": "B",
+    "justification": "Chiffres publies sur le blog technique officiel d'ASOS (equipe recommandation) et corrobores par une customer story Microsoft pour l'assistant conversationnel. L'amelioration de plus de 20 % est une metrique d'evaluation hors ligne, pas un resultat business audite ; le passage a l'echelle est en revanche bien documente."
+  },
+  "dates": {
+    "lancement": "Recommandation par ML de longue date ; modele transformer decrit en 2024 ; AI Stylist deploye en 2023-2024",
+    "derniere_confirmation_activite": "2024-2025 - blog technique ASOS (avril 2024) et rapport annuel 2025",
+    "verifie_le": "2026-07-11",
+    "revoir_apres": "2027-01-11"
+  },
+  "statut_vivant": {
+    "statut": "confirme",
+    "note": "ASOS est un pure player mode actif et cote (LSE). Publication technique recente sur la refonte du moteur de recommandation et assistant conversationnel en service."
+  },
+  "sources": [
+    {
+      "ref": "S1",
+      "type": "eng_blog",
+      "titre": "Transforming Recommendations at ASOS - ASOS Tech Blog (Ed Harris)",
+      "url": "https://medium.com/asos-techblog/transforming-recommendations-at-asos-254b95c6a07a",
+      "date_publication": "2024-04-24",
+      "consulte_le": "2026-07-11",
+      "fiabilite": "T2_officiel_interesse"
+    },
+    {
+      "ref": "S2",
+      "type": "customer_story_plateforme",
+      "titre": "ASOS uses Azure AI Studio to surprise and delight young fashion lovers - Microsoft Customer Stories",
+      "url": "https://www.microsoft.com/en/customers/story/1731404546482708710-asos-retailer-azure-ai-studio",
+      "date_publication": "2024",
+      "consulte_le": "2026-07-11",
+      "fiabilite": "T2_officiel_interesse"
+    },
+    {
+      "ref": "S3",
+      "type": "document_officiel_sec",
+      "titre": "ASOS Plc Annual Report and Accounts 2025",
+      "url": "https://www.asosplc.com/media/buijobcn/49775_asos_ar25_text_int_031225-final.pdf",
+      "date_publication": "2025",
+      "consulte_le": "2026-07-11",
+      "fiabilite": "T1_primaire"
+    }
+  ],
+  "schema_flow": {
+    "statut": "documente",
+    "noeuds": [
+      {
+        "id": "int",
+        "role_generique": "data_source",
+        "label": "Interactions client (achats, sauvegardes, panier)"
+      },
+      {
+        "id": "trf",
+        "role_generique": "modele_ia",
+        "label": "Modele transformer de recommandation",
+        "outil_documente": "Modele in-house ASOS"
+      },
+      {
+        "id": "surf",
+        "role_generique": "site_app",
+        "label": "Fils de recommandation (app, web)"
+      },
+      {
+        "id": "sty",
+        "role_generique": "modele_ia",
+        "label": "AI Stylist (assistant conversationnel)",
+        "outil_documente": "Azure OpenAI"
+      },
+      {
+        "id": "buy",
+        "role_generique": "site_app",
+        "label": "Clic / achat"
+      }
+    ],
+    "liens": [
+      [
+        "int",
+        "trf"
+      ],
+      [
+        "trf",
+        "surf"
+      ],
+      [
+        "int",
+        "sty"
+      ],
+      [
+        "sty",
+        "surf"
+      ],
+      [
+        "surf",
+        "buy"
+      ],
+      [
+        "buy",
+        "int",
+        "boucle de feedback"
+      ]
+    ]
+  },
+  "replication": {
+    "statut_epistemique": "infere",
+    "prerequis_data": [
+      "Historique d'interactions client (achats, sauvegardes, panier)",
+      "Catalogue avec attributs produits et flux de nouveautes",
+      "Infrastructure de service temps reel"
+    ],
+    "prerequis_orga": [
+      "Equipe ML pour maintenir et reentrainer les modeles de ranking",
+      "Pour l'assistant conversationnel, une brique LLM encadree (garde-fous, transparence)"
+    ],
+    "stack_possible": [
+      "Moteur de reco manage (AWS Personalize, Google Recommendations AI) pour une premiere version",
+      "Azure OpenAI ou equivalent pour un assistant de style, branche sur le catalogue"
+    ],
+    "premiere_etape": "Remplacer le tri par defaut d'une surface a fort trafic (home app) par un classement personnalise base sur les interactions, et mesurer engagement et conversion contre le tri actuel.",
+    "playbook": [
+      {
+        "action": "Auditer la collecte des interactions client (achats, sauvegardes, ajouts au panier) et la rattacher proprement a un identifiant par personne.",
+        "livrable": "Dataset d'interactions exploitable, par client et par produit."
+      },
+      {
+        "action": "Mettre en place un premier classement personnalise sur une surface a fort trafic (home app), via un moteur manage ou un modele simple, en A/B test contre le tri actuel.",
+        "livrable": "Fil personnalise en test avec plan de mesure fige."
+      },
+      {
+        "action": "Lire l'A/B test (engagement, conversion) et traiter le cold start des nouveautes via les attributs produit.",
+        "livrable": "Rapport A/B et regles de rattachement des nouveaux produits."
+      },
+      {
+        "action": "Etendre le classement aux autres surfaces et industrialiser le reentrainement au fil du renouvellement du catalogue.",
+        "livrable": "Pipeline de reentrainement et monitoring en production."
+      },
+      {
+        "action": "Prototyper un assistant conversationnel de style branche sur le catalogue, en beta fermee, avec garde-fous et transparence.",
+        "livrable": "Assistant teste sur un perimetre restreint avant ouverture."
+      }
+    ],
+    "equipe": "2 data scientists / ML engineers + 1 PM produit ; pour l'assistant conversationnel, 1 dev supplementaire sur la brique LLM et les garde-fous."
+  },
+  "seo": {
+    "slug": "asos-recommandations-personnalisees-2024",
+    "title": "ASOS : recommandation produit par deep learning - 5 milliards de requetes par jour (2024)",
+    "meta_description": "ASOS classe pres de 50 000 produits par recommandation personnalisee sur ses points de contact. Son nouveau modele transformer a ameliore ses metriques de plus de 20 %, pour 5 milliards de requetes servies par jour.",
+    "resume_citable": "ASOS sert environ 5 milliards de requetes de recommandation par jour sur pres de 50 000 produits ; son passage a un modele transformer en 2024 a ameliore ses metriques d'evaluation de plus de 20 %, complete par un AI Stylist conversationnel sur Azure OpenAI.",
+    "faq": [
+      {
+        "q": "Comment ASOS personnalise-t-il la decouverte produit ?",
+        "a": "En classant le catalogue par recommandation deep learning a partir des interactions clients, et via un assistant conversationnel AI Stylist qui repond en langage naturel."
+      },
+      {
+        "q": "Le gain de plus de 20 % est-il un resultat de ventes ?",
+        "a": "Non : c'est une amelioration des metriques d'evaluation du modele par rapport a l'ancienne base, pas un chiffre de chiffre d'affaires audite."
+      }
+    ]
+  },
+  "logo_domain": "asos.com"
+}

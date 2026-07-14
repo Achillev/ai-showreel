@@ -1,0 +1,244 @@
+{
+  "id": "netflix-reco-personnalisee-2015",
+  "type_fiche": "succes",
+  "marque": "Netflix",
+  "industrie": "media_entertainment",
+  "marches_deploiement": [
+    "Monde (190+ pays)",
+    "Etats-Unis",
+    "Europe"
+  ],
+  "transposable_ue": {
+    "flag": "oui",
+    "note": "Recommandation sur donnee de visionnage first-party, base licite d'interet legitime ou de contrat. RGPD applicable au profilage ; l'AI Act ne classe pas un reco de contenu de divertissement comme haut risque. Deja opere sur les marches UE de Netflix."
+  },
+  "metier": "Product / CRM / retention",
+  "marque_linkedin": "https://www.linkedin.com/company/netflix/",
+  "axes": {
+    "levier": "retention",
+    "touchpoints": [
+      "application Netflix",
+      "page d'accueil",
+      "rangees personnalisees",
+      "artwork des titres"
+    ],
+    "etape_parcours": "fidelite",
+    "famille": "personnalisation",
+    "pattern": "moteur de recommandation de contenu",
+    "type_ia": [
+      "filtrage collaboratif",
+      "machine learning",
+      "ranking personnalise"
+    ],
+    "plateforme_stack": [
+      "custom/in-house"
+    ],
+    "objectif_metrique": [
+      "heures visionnees",
+      "churn / retention",
+      "engagement"
+    ]
+  },
+  "implementation": "custom",
+  "stack_technique": [
+    {
+      "nom": "Moteur de recommandation custom Netflix",
+      "categorie": "outil",
+      "detail": "Filtrage collaboratif et ranking personnalise qui pilotent le choix des rangees, l'ordre des titres et l'artwork ; ML proprietaire de Netflix.",
+      "url": "https://research.netflix.com"
+    },
+    {
+      "nom": "Pipeline de logs de visionnage",
+      "categorie": "infra",
+      "detail": "Journalisation par profil (play, duree, abandon, appareil, heure) alimentant le scoring temps reel et le reentrainement batch.",
+      "url": "https://netflixtechblog.com"
+    },
+    {
+      "nom": "Cadre d'A/B testing Netflix",
+      "categorie": "outil",
+      "detail": "Experimentation continue sur l'interface pour valider chaque evolution des modeles de recommandation.",
+      "url": "https://netflixtechblog.com"
+    }
+  ],
+  "objectif_business": "Reduire le churn en aidant chaque abonne a trouver vite un titre a regarder, avant qu'il ne quitte l'application. La personnalisation remplace la recherche comme porte d'entree du catalogue et augmente la valeur vie de l'abonnement.",
+  "points_cles": ["Moteur de recommandation qui classe le catalogue pour chaque profil.", "Filtrage collaboratif et ranking personnalise custom, pilotant home, rangees et artwork.", "Environ 80% des heures visionnees issues des recommandations, valeur estimee a plus de 1 Md$ par an.", "Preuve B, statut confirme."],
+  "description": "Le systeme classe et ordonne le catalogue pour chaque profil a partir des signaux de visionnage (ce qui est clique, la duree regardee, l'heure, l'appareil, ce qui est ignore). Il pilote la page d'accueil : le choix des rangees, l'ordre des titres dans chaque rangee, et jusqu'a l'artwork affiche par titre. La grande majorite des heures regardees vient de ces recommandations, pas d'une recherche active.",
+  "resultats": [
+    {
+      "metrique": "Part des heures visionnees issues des recommandations",
+      "valeur": "~80%",
+      "citation_exacte": "approximately 80 percent of hours of content streamed",
+      "source_ref": "S1"
+    },
+    {
+      "metrique": "Valeur annuelle estimee de la retention via personnalisation (2016)",
+      "valeur": "> 1 Md$/an",
+      "citation_exacte": "saved the company over $1 billion per year",
+      "source_ref": "S1"
+    }
+  ],
+  "niveau_preuve": {
+    "niveau": "B",
+    "justification": "Chiffres publies par deux cadres Netflix (Gomez-Uribe, VP Product Innovation, et Neil Hunt, Chief Product Officer) dans un article revu de l'ACM, repris et attribues par un rapport de recherche independant. Chiffrage direct de la marque-sujet, pas des resultats financiers stricto sensu."
+  },
+  "dates": {
+    "lancement": "2007 (Cinematch) ; personnalisation generale de la page d'accueil deployee ensuite",
+    "derniere_confirmation_activite": "2025 (systeme toujours au coeur du produit et des communications Netflix)",
+    "verifie_le": "2026-07-11",
+    "revoir_apres": "2027-07-11"
+  },
+  "statut_vivant": {
+    "statut": "confirme",
+    "note": "La recommandation reste la mecanique centrale de l'application Netflix ; feature visible en production pour tout abonne."
+  },
+  "sources": [
+    {
+      "ref": "S1",
+      "type": "analyse_academique",
+      "fiabilite": "T4_secondaire",
+      "titre": "Why Am I Seeing This? Case Study: Netflix (New America / Open Technology Institute)",
+      "url": "https://www.newamerica.org/oti/reports/why-am-i-seeing-this/case-study-netflix/",
+      "consulte_le": "2026-07-11"
+    },
+    {
+      "ref": "S2",
+      "type": "analyse_academique",
+      "fiabilite": "T1_primaire",
+      "titre": "Carlos A. Gomez-Uribe & Neil Hunt, The Netflix Recommender System: Algorithms, Business Value, and Innovation, ACM Transactions on Management Information Systems 6(4)",
+      "url": "https://dl.acm.org/doi/10.1145/2843948",
+      "date_publication": "2015-12",
+      "consulte_le": "2026-07-11"
+    }
+  ],
+  "fonctionnement_operationnel": {
+    "cadence": "Scoring en temps reel a chaque ouverture de session ; reentrainement des modeles en batch regulier sur les logs de visionnage.",
+    "opere_par": "Equipe centrale Personnalisation / Machine Learning de Netflix, adossee aux equipes Product.",
+    "signal_pilote": "Le visionnage implicite (play, duree regardee, abandon, scroll sans clic). Si ce flux de logs se coupe ou se biaise, le classement se degrade et la page d'accueil perd sa pertinence.",
+    "etapes": [
+      {
+        "etape": "Collecte des signaux",
+        "detail": "Chaque interaction de l'abonne (lecture, duree, appareil, heure, titres ignores) est journalisee par profil.",
+        "acteur": "site_app / equipe data"
+      },
+      {
+        "etape": "Scoring et ranking",
+        "detail": "Les modeles ordonnent le catalogue pour le profil : quelles rangees, quel ordre de titres, quel artwork montrer.",
+        "acteur": "IA"
+      },
+      {
+        "etape": "Rendu de la page d'accueil",
+        "detail": "L'application compose la home personnalisee a partir des scores ; l'abonne voit une grille propre a son profil.",
+        "acteur": "site_app"
+      },
+      {
+        "etape": "Boucle de reentrainement",
+        "detail": "Les nouveaux logs de visionnage realimentent les modeles pour ajuster les recommandations suivantes.",
+        "acteur": "equipe data / IA"
+      }
+    ]
+  },
+  "schema_flow": {
+    "statut": "documente",
+    "noeuds": [
+      {
+        "id": "n1",
+        "role_generique": "data_source",
+        "label": "Signaux de visionnage (play, duree, abandon, appareil)"
+      },
+      {
+        "id": "n2",
+        "role_generique": "modele_ia",
+        "label": "Modeles de ranking et recommandation",
+        "outil_documente": "Systemes custom Netflix"
+      },
+      {
+        "id": "n3",
+        "role_generique": "site_app",
+        "label": "Application Netflix (home personnalisee, rangees, artwork)"
+      },
+      {
+        "id": "n4",
+        "role_generique": "humain",
+        "label": "Abonne"
+      }
+    ],
+    "liens": [
+      [
+        "n1",
+        "n2"
+      ],
+      [
+        "n2",
+        "n3"
+      ],
+      [
+        "n3",
+        "n4"
+      ],
+      [
+        "n4",
+        "n1",
+        "nouveau visionnage realimente les signaux"
+      ]
+    ]
+  },
+  "replication": {
+    "statut_epistemique": "infere",
+    "playbook": [
+      {
+        "action": "Instrumenter proprement le visionnage implicite (play, duree, abandon, scroll sans clic) par profil.",
+        "livrable": "Pipeline de logs fiable et structure de catalogue avec metadonnees."
+      },
+      {
+        "action": "Construire un premier modele de filtrage collaboratif et un ranking evalue hors ligne sur l'historique.",
+        "livrable": "Modele baseline avec metriques offline documentees."
+      },
+      {
+        "action": "Lancer un A/B test sur une rangee ou une section de la page d'accueil.",
+        "livrable": "Readout engagement vs groupe de controle."
+      },
+      {
+        "action": "Etendre le pilotage a la home entiere : choix des rangees, ordre des titres.",
+        "livrable": "Page d'accueil personnalisee generalisee."
+      },
+      {
+        "action": "Installer la boucle de reentrainement reguliere et le suivi churn / heures visionnees.",
+        "livrable": "Process d'iteration et tableau de bord retention."
+      }
+    ],
+    "equipe": "2-3 data scientists + 1 data engineer + 1 PM, avec une capacite d'A/B testing sur l'interface.",
+    "prerequis_data": [
+      "logs de visionnage / consommation par utilisateur",
+      "catalogue structure avec metadonnees",
+      "identifiant profil stable"
+    ],
+    "prerequis_orga": [
+      "equipe data science interne",
+      "capacite d'A/B testing sur l'interface",
+      "pipeline de logs temps reel"
+    ],
+    "stack_possible": [
+      "custom/in-house",
+      "AWS Personalize ou moteur de reco managed",
+      "feature store"
+    ],
+    "premiere_etape": "Instrumenter proprement le visionnage implicite (play, duree, abandon) par profil avant tout modele."
+  },
+  "seo": {
+    "slug": "netflix-reco-personnalisee-2015",
+    "title": "Netflix : moteur de recommandation - 80% des heures vues et > 1 Md$/an de retention (2015)",
+    "meta_description": "Le systeme de recommandation Netflix pilote ~80% des heures visionnees et vaudrait plus d'1 Md$/an en retention, selon deux cadres Netflix.",
+    "resume_citable": "Chez Netflix, environ 80% des heures visionnees viennent des recommandations personnalisees, un systeme que ses cadres chiffrent a plus d'1 milliard de dollars par an en retention (article ACM, 2015).",
+    "faq": [
+      {
+        "q": "Combien vaut la recommandation Netflix ?",
+        "a": "Deux cadres Netflix l'ont estimee a plus d'1 milliard de dollars par an en valeur de retention dans un article ACM de 2015."
+      },
+      {
+        "q": "Quelle part du visionnage vient des recommandations ?",
+        "a": "Environ 80% des heures de contenu streamees sur Netflix proviennent des recommandations, pas de la recherche."
+      }
+    ]
+  },
+  "logo_domain": "netflix.com"
+}

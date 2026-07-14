@@ -1,0 +1,257 @@
+{
+  "id": "rakuten-future-purchase-prediction-ads-2025",
+  "type_fiche": "succes",
+  "marque": "Rakuten",
+  "groupe": "Rakuten Group, Inc.",
+  "industrie": "retail_ecom",
+  "marches_deploiement": [
+    "Japon"
+  ],
+  "transposable_ue": {
+    "flag": "non",
+    "note": "Le moteur repose sur les donnees croisees de plus de 70 services Rakuten sous un identifiant unique (achats, mobile, banque, voyage, contenu), un croisement de donnees personnelles qui serait tres encadre en UE. Le RGPD impose une base legale et un consentement clair pour ce type de recoupement cross-services, et l'AI Act ajoute des obligations sur le profilage. Le pattern (prediction d'acheteurs futurs pour cibler la pub) reste valable, mais l'ecosysteme de donnees qui le rend efficace est propre a Rakuten au Japon."
+  },
+  "metier": "marketing",
+  "marque_linkedin": "https://www.linkedin.com/company/rakuten/",
+  "axes": {
+    "levier": "acquisition",
+    "touchpoints": [
+      "publicite display et ciblee",
+      "reseau publicitaire Rakuten",
+      "services de l'ecosysteme Rakuten"
+    ],
+    "etape_parcours": "découverte",
+    "famille": "prediction",
+    "pattern": "prediction d'acheteurs futurs pour le ciblage publicitaire",
+    "type_ia": [
+      "modele predictif",
+      "machine learning sur donnees comportementales"
+    ],
+    "plateforme_stack": [
+      "Future Purchase Prediction (Rakuten)",
+      "donnees de plus de 70 services Rakuten"
+    ],
+    "objectif_metrique": [
+      "cout d'acquisition (CPA)",
+      "portee sur acheteurs non atteints par le ciblage classique"
+    ]
+  },
+  "implementation": "custom",
+  "stack_technique": [
+    {
+      "nom": "Future Purchase Prediction",
+      "categorie": "plateforme",
+      "detail": "Service publicitaire de Rakuten qui predit les acheteurs futurs et les cible pour les annonceurs.",
+      "url": "https://global.rakuten.com/corp/"
+    },
+    {
+      "nom": "Modele predictif proprietaire Rakuten",
+      "categorie": "outil",
+      "detail": "Machine learning sur donnees comportementales croisees avec les donnees des annonceurs ; l'architecture exacte du modele n'est pas publique.",
+      "url": "https://global.rakuten.com/corp/"
+    },
+    {
+      "nom": "Ecosysteme de donnees Rakuten",
+      "categorie": "infra",
+      "detail": "Donnees de plus de 70 services (marketplace Ichiba, mobile, banque, voyage, contenu) sous un identifiant unique.",
+      "url": "https://www.rakuten.com"
+    },
+    {
+      "nom": "Regie publicitaire Rakuten",
+      "categorie": "plateforme",
+      "detail": "Diffusion des annonces aux profils predits sur le reseau Rakuten.",
+      "url": "https://www.rakuten.com"
+    }
+  ],
+  "objectif_business": "Trouver des acheteurs que le ciblage publicitaire classique rate, en predisant qui va acheter avant qu'il ne le montre, et faire baisser le cout d'acquisition des annonceurs qui achetent de l'espace chez Rakuten.",
+  "points_cles": ["Prediction d'acheteurs futurs par IA pour le ciblage publicitaire.", "Modele predictif proprietaire nourri par les donnees de plus de 70 services Rakuten.", "Cout d'acquisition client reduit de 50% en moyenne sur les cas cites.", "Preuve B, statut confirme dans la communication Rakuten d'octobre 2025."],
+  "description": "Future Purchase Prediction est un service publicitaire de Rakuten qui utilise l'IA pour prevoir quels utilisateurs vont acheter. Il s'appuie sur les donnees croisees de plus de 70 services de l'ecosysteme Rakuten (marketplace Ichiba, mobile, banque, voyage, contenu) plus les donnees des annonceurs. L'IA identifie une demande que les cibleurs humains ne voient pas et va chercher des clients potentiels manques par les campagnes de ciblage conventionnelles. Rakuten met en avant des cas concrets, dont un fabricant de logements et un fabricant de boissons, avec en moyenne une reduction de moitie du cout d'acquisition client.",
+  "resultats": [
+    {
+      "metrique": "Reduction moyenne du cout d'acquisition client (CPA)",
+      "valeur": "50%",
+      "citation_exacte": "average 50% reduction in customer acquisition cost (CPA)",
+      "source_ref": "S1"
+    },
+    {
+      "metrique": "Services Rakuten mobilises dans la base de donnees",
+      "valeur": "70+ services",
+      "citation_exacte": "vast data from over 70 Rakuten services",
+      "source_ref": "S1"
+    }
+  ],
+  "niveau_preuve": {
+    "niveau": "B",
+    "justification": "Chiffre publie par Rakuten dans sa propre communication d'innovation (source officielle interessee, T2) et repris par une presse specialisee etablie (PYMNTS, T4). Le gain de CPA de 50% est une moyenne communiquee par Rakuten a partir de cas clients, pas un resultat audite par un tiers, ce qui place a B."
+  },
+  "dates": {
+    "lancement": "2025",
+    "derniere_confirmation_activite": "2025-10",
+    "verifie_le": "2026-07-11",
+    "revoir_apres": "2027-01-11"
+  },
+  "statut_vivant": {
+    "statut": "confirme",
+    "note": "Service presente comme actif dans la communication officielle Rakuten d'octobre 2025, avec des cas clients chiffres a l'appui."
+  },
+  "sources": [
+    {
+      "ref": "S1",
+      "type": "blog_officiel",
+      "fiabilite": "T2_officiel_interesse",
+      "titre": "Rakuten's Ad Business Utilizes AI to Identify Future Buyers",
+      "url": "https://global.rakuten.com/corp/innovation/rnn/2025/2506_014/",
+      "date_publication": "2025-10-10",
+      "consulte_le": "2026-07-11"
+    },
+    {
+      "ref": "S2",
+      "type": "presse",
+      "fiabilite": "T4_secondaire",
+      "titre": "Rakuten Puts 'Brain Twin' AI at Center of Retail Ecosystem",
+      "url": "https://www.pymnts.com/news/artificial-intelligence/2025/rakuten-taps-agentic-ai-to-enhance-omotenashi-ultimate-service/",
+      "date_publication": "2025",
+      "consulte_le": "2026-07-11"
+    }
+  ],
+  "fonctionnement_operationnel": {
+    "cadence": "Scoring predictif reentraine sur les donnees comportementales, active par campagne annonceur",
+    "opere_par": "Equipe data et regie publicitaire de Rakuten ; l'annonceur definit sa cible et son objectif de CPA",
+    "signal_pilote": "Les signaux d'achat croises sur les plus de 70 services Rakuten. Si l'utilisateur n'est pas dans l'ecosysteme ou refuse le croisement de donnees, le modele perd son avantage.",
+    "etapes": [
+      {
+        "etape": "Definition de la campagne",
+        "detail": "L'annonceur precise le produit, la cible et l'objectif de cout d'acquisition.",
+        "acteur": "client"
+      },
+      {
+        "etape": "Prediction des acheteurs",
+        "detail": "Le modele croise les donnees de l'ecosysteme Rakuten et de l'annonceur pour scorer les futurs acheteurs.",
+        "acteur": "IA"
+      },
+      {
+        "etape": "Diffusion ciblee",
+        "detail": "La regie sert les annonces aux profils predits, y compris ceux manques par le ciblage classique.",
+        "acteur": "IA / regie"
+      },
+      {
+        "etape": "Mesure et ajustement",
+        "detail": "L'equipe suit le CPA reel contre l'objectif et ajuste le perimetre de ciblage.",
+        "acteur": "equipe data"
+      }
+    ]
+  },
+  "schema_flow": {
+    "statut": "approche_type",
+    "noeuds": [
+      {
+        "id": "ecosysteme",
+        "role_generique": "data_source",
+        "label": "Donnees de plus de 70 services Rakuten"
+      },
+      {
+        "id": "annonceur_data",
+        "role_generique": "data_source",
+        "label": "Donnees de l'annonceur"
+      },
+      {
+        "id": "modele",
+        "role_generique": "modele_ia",
+        "label": "Modele de prediction d'achat futur",
+        "outil_documente": "Future Purchase Prediction (Rakuten)"
+      },
+      {
+        "id": "regie",
+        "role_generique": "paid_platform",
+        "label": "Regie publicitaire Rakuten"
+      },
+      {
+        "id": "cible",
+        "role_generique": "humain",
+        "label": "Acheteurs potentiels predits"
+      }
+    ],
+    "liens": [
+      [
+        "ecosysteme",
+        "modele"
+      ],
+      [
+        "annonceur_data",
+        "modele"
+      ],
+      [
+        "modele",
+        "regie"
+      ],
+      [
+        "regie",
+        "cible"
+      ],
+      [
+        "cible",
+        "ecosysteme",
+        "signaux d'achat en retour"
+      ]
+    ]
+  },
+  "replication": {
+    "statut_epistemique": "infere",
+    "prerequis_data": [
+      "Signaux comportementaux et d'achat a large couverture",
+      "Identifiant client unifie entre services",
+      "Donnees de conversion des annonceurs pour l'entrainement"
+    ],
+    "prerequis_orga": [
+      "Base legale RGPD pour le croisement de donnees cross-services",
+      "Regie ou plateforme d'activation publicitaire",
+      "Boucle de mesure CPA par campagne"
+    ],
+    "stack_possible": [
+      "Modele predictif sur donnees first-party",
+      "CDP unifiant les identifiants",
+      "Plateforme d'activation publicitaire"
+    ],
+    "premiere_etape": "Verifier qu'on dispose d'un identifiant client unifie et d'un volume de conversions suffisant pour entrainer un modele de prediction d'achat.",
+    "playbook": [
+      {
+        "action": "Auditer la donnee : identifiant client unifie, volume de conversions exploitable, base legale du croisement (RGPD en UE).",
+        "livrable": "Cartographie data et avis de conformite."
+      },
+      {
+        "action": "Consolider les signaux comportementaux et d'achat dans une CDP ou un feature store sous identifiant unique.",
+        "livrable": "Profils unifies actives pour l'entrainement."
+      },
+      {
+        "action": "Entrainer un modele de prediction d'achat et le backtester sur l'historique de conversions.",
+        "livrable": "Modele de scoring avec lift mesure hors ligne."
+      },
+      {
+        "action": "Activer un pilote publicitaire sur les profils predits, avec un objectif de CPA et une cellule de ciblage classique en comparaison.",
+        "livrable": "Campagne test vs ciblage conventionnel."
+      },
+      {
+        "action": "Lire le CPA reel contre l'objectif, ajuster le perimetre de ciblage et industrialiser le scoring par campagne.",
+        "livrable": "Comparatif CPA documente et process de scoring reproductible."
+      }
+    ],
+    "equipe": "2 data scientists + 1 data engineer + 1 PM + 1 traffic manager ; juridique RGPD pour le croisement de donnees."
+  },
+  "seo": {
+    "slug": "rakuten-future-purchase-prediction-ads-2025",
+    "title": "Rakuten : prediction d'acheteurs futurs par IA - CPA reduit de 50% (2025)",
+    "meta_description": "Le service publicitaire Future Purchase Prediction de Rakuten predit les futurs acheteurs a partir de plus de 70 services et divise par deux le cout d'acquisition.",
+    "resume_citable": "En 2025, le service publicitaire Future Purchase Prediction de Rakuten predit les acheteurs futurs a partir des donnees de plus de 70 services de son ecosysteme et reduit en moyenne de 50% le cout d'acquisition client des annonceurs.",
+    "faq": [
+      {
+        "q": "Comment fonctionne Future Purchase Prediction ?",
+        "a": "L'IA croise les donnees de plus de 70 services Rakuten et celles des annonceurs pour predire qui va acheter, puis cible ces profils en publicite."
+      },
+      {
+        "q": "Quel gain est rapporte ?",
+        "a": "Rakuten communique une reduction moyenne de 50% du cout d'acquisition client sur des cas comme un fabricant de logements et un fabricant de boissons."
+      }
+    ]
+  },
+  "logo_domain": "rakuten.com"
+}

@@ -1,0 +1,308 @@
+{
+  "id": "ralph-lauren-ask-ralph-2025",
+  "type_fiche": "succes",
+  "marque": "Ralph Lauren",
+  "groupe": "Ralph Lauren Corporation",
+  "industrie": "luxe_beaute",
+  "marches_deploiement": [
+    "Etats-Unis"
+  ],
+  "transposable_ue": {
+    "flag": "oui_avec_adaptations",
+    "note": "Ask Ralph genere des tenues shoppables a partir de prompts en langage naturel, en s'appuyant sur le catalogue et l'inventaire disponible. Le pattern se transpose bien en UE car il repose surtout sur de la donnee produit first-party (fiches, images, stock) et non sur des donnees sensibles. Deux points a traiter : sous l'AI Act, obligation de transparence (indiquer a l'utilisateur qu'il dialogue avec une IA) ; sous le RGPD, base legale claire des lors que l'assistant memorise des preferences ou personnalise sur l'historique. Le socle technique (Azure OpenAI, recherche en langage naturel sur catalogue) est disponible en region europeenne."
+  },
+  "metier": "e-commerce / merchandising digital",
+  "logo_domain": "ralphlauren.com",
+  "intervenants": [
+    {
+      "nom": "David Lauren",
+      "role": "Chief Branding and Innovation Officer, Ralph Lauren",
+      "source_ref": "S1"
+    },
+    {
+      "nom": "Naveen Seshadri",
+      "role": "Chief Digital Officer, Ralph Lauren",
+      "source_ref": "S2"
+    },
+    {
+      "nom": "Shelley Bransten",
+      "role": "Corporate Vice President, Microsoft",
+      "source_ref": "S1"
+    }
+  ],
+  "agences": [
+    {
+      "nom": "Microsoft",
+      "role": "Partenaire technologique : agent d'achat personnalise developpe conjointement, modeles conversationnels via Azure OpenAI",
+      "source_ref": "S2"
+    }
+  ],
+  "axes": {
+    "levier": "activation_conversion",
+    "touchpoints": [
+      "application mobile Ralph Lauren",
+      "assistant conversationnel Ask Ralph"
+    ],
+    "etape_parcours": "consideration",
+    "famille": "conversation",
+    "pattern": "assistant shopping conversationnel genAI qui genere des tenues completes shoppables a partir de prompts en langage naturel",
+    "type_ia": [
+      "IA generative",
+      "assistant conversationnel",
+      "traitement du langage naturel",
+      "recommandation produit"
+    ],
+    "plateforme_stack": [
+      "Microsoft Azure OpenAI",
+      "agent d'achat personnalise developpe avec Microsoft",
+      "moteur de recherche en langage naturel sur catalogue"
+    ],
+    "objectif_metrique": [
+      "engagement dans l'app mobile",
+      "decouverte produit et mise en tenue",
+      "conversion vers l'achat de tenues completes"
+    ]
+  },
+  "implementation": "hybride",
+  "stack_technique": [
+    {
+      "nom": "Microsoft Azure OpenAI",
+      "categorie": "plateforme",
+      "detail": "Fournit les modeles d'IA generative et de langage qui interpretent les prompts ouverts et alimentent la conversation. Ralph Lauren decrit un partenariat de longue date avec Microsoft, poursuivi sur Azure OpenAI pour Ask Ralph.",
+      "url": "https://azure.microsoft.com/en-us/products/ai-services/openai-service"
+    },
+    {
+      "nom": "Agent d'achat personnalise",
+      "categorie": "outil",
+      "detail": "Developpe conjointement avec Microsoft. Interprete l'intention plutot que des mots-cles, adapte les recommandations au ton, a la satisfaction et au contexte (lieu, evenement), et compose des tenues completes uniquement a partir de l'inventaire disponible.",
+      "url": "https://www.ralphlauren.com"
+    },
+    {
+      "nom": "Moteur de recherche en langage naturel",
+      "categorie": "outil",
+      "detail": "Optimise pour des entrees detaillees, il relie le prompt de l'utilisateur au catalogue Polo Ralph Lauren pour ne remonter que des articles reellement disponibles.",
+      "url": "https://www.ralphlauren.com"
+    },
+    {
+      "nom": "Application mobile Ralph Lauren",
+      "categorie": "plateforme",
+      "detail": "Canal de diffusion de Ask Ralph, sur iOS et Android, pour les titulaires de compte aux Etats-Unis. L'assistant y est integre comme outil de style et de shopping.",
+      "url": "https://www.ralphlauren.com"
+    }
+  ],
+  "objectif_business": "Transformer la decouverte produit dans l'app en une conversation de style qui debouche sur un achat. Ask Ralph reproduit l'accompagnement d'un vendeur en boutique, met en avant le point de vue de la marque sur le style, et pousse des tenues completes achetables plutot que des articles isoles, pour approfondir la relation client dans le canal digital.",
+  "points_cles": ["Assistant shopping conversationnel genAI generant des tenues completes shoppables (Ask Ralph).", "Agent developpe avec Microsoft sur Azure OpenAI, recherche en langage naturel sur catalogue.", "Rollout live dans l'app US (iOS et Android) depuis septembre 2025.", "Preuve B, statut confirme ; aucune metrique d'adoption publique a ce stade."],
+  "description": "Ask Ralph est un assistant conversationnel integre a l'app mobile Ralph Lauren, lance en septembre 2025 aux Etats-Unis (iOS et Android). L'utilisateur ecrit une demande en langage naturel, du type \"What should I wear to a concert?\" ou \"How can I style my navy-blue men's blazer?\", et recoit des tenues completes presentees en laydown visuel, avec conseils de style et idees cadeaux. Chaque piece est shoppable : on peut acheter un element ou la tenue entiere. L'assistant, developpe avec Microsoft sur Azure OpenAI, interprete l'intention plutot que de matcher des mots-cles, pose des questions de clarification, et affine ses suggestions selon les preferences exprimees. Il ne propose que des articles disponibles dans l'inventaire Polo Ralph Lauren, hommes et femmes. Ralph Lauren decrit un outil appele a s'enrichir avec l'usage et annonce une feuille de route : commandes vocales, memoire des preferences, navigation par image, extension a d'autres marques du groupe et a d'autres marches. Aucune metrique d'adoption ou de conversion n'a ete rendue publique a ce stade.",
+  "resultats": [
+    {
+      "metrique": "Statut de deploiement",
+      "valeur": "rollout live dans l'app US (iOS et Android), a partir de septembre 2025",
+      "citation_exacte": "begins rolling out today",
+      "source_ref": "S1"
+    },
+    {
+      "metrique": "Sortie livree a l'utilisateur",
+      "valeur": "tenues completes shoppables, personnalisees, tirees de l'inventaire disponible",
+      "citation_exacte": "multiple, shoppable visual laydowns of complete outfits",
+      "source_ref": "S1"
+    },
+    {
+      "metrique": "Perimetre marche au lancement",
+      "valeur": "Etats-Unis uniquement, expansion a d'autres marques et marches annoncee",
+      "citation_exacte": "rolling out to Ralph Lauren app users in the United States",
+      "source_ref": "S1"
+    }
+  ],
+  "niveau_preuve": {
+    "niveau": "B",
+    "justification": "Le deploiement est triangule par trois sources concordantes : le communique officiel de Ralph Lauren (T1 primaire, 9 sept. 2025), la customer story Microsoft qui documente le stack et cite le Chief Digital Officer (T2), et la presse specialisee etablie (Marketing Dive, T3). La feature est live a l'echelle nationale US dans l'app phare de la marque et confirmee active mi-2026. Aucune metrique publique d'adoption ou de conversion n'existe a ce jour, ce qui plafonne le niveau sous A."
+  },
+  "dates": {
+    "lancement": "septembre 2025 (communique du 9 sept., rollout dans l'app US)",
+    "derniere_confirmation_activite": "2026-07",
+    "verifie_le": "2026-07-13",
+    "revoir_apres": "2027-01-13"
+  },
+  "statut_vivant": {
+    "statut": "confirme",
+    "note": "Feature toujours disponible mi-2026 pour les titulaires de compte US, avec une page produit dediee (ralphlauren.com/askralphinfo) et une feuille de route publique (voix, memoire des preferences, navigation par image, autres marques et marches). Environ 10 mois en production, aucun signal de retrait."
+  },
+  "sources": [
+    {
+      "ref": "S1",
+      "type": "blog_officiel",
+      "fiabilite": "T1_primaire",
+      "titre": "Ralph Lauren Introduces Ask Ralph, a New Conversational AI Shopping Experience",
+      "url": "https://corporate.ralphlauren.com/pr_250909_AskRalph.html",
+      "date_publication": "2025-09-09",
+      "consulte_le": "2026-07-13"
+    },
+    {
+      "ref": "S2",
+      "type": "customer_story_plateforme",
+      "fiabilite": "T2_officiel_interesse",
+      "titre": "Ralph Lauren redefines shopping with Microsoft AI-powered styling companion Ask Ralph",
+      "url": "https://www.microsoft.com/en/customers/story/25195-ralph-lauren-azure-openai",
+      "date_publication": "2025",
+      "consulte_le": "2026-07-13"
+    },
+    {
+      "ref": "S3",
+      "type": "presse",
+      "fiabilite": "T3_presse_etablie",
+      "titre": "Ralph Lauren debuts Ask Ralph AI shopping assistant on mobile app",
+      "url": "https://www.marketingdive.com/news/ralph-lauren-debuts-ask-ralph-ai-shopping-assistant-on-mobile-app/759756/",
+      "date_publication": "2025-09",
+      "consulte_le": "2026-07-13"
+    }
+  ],
+  "fonctionnement_operationnel": {
+    "cadence": "Temps reel, dans l'app mobile, 24/7. Les recommandations sont recalculees a chaque prompt et se recadrent au fil de la conversation.",
+    "opere_par": "Equipe digital et e-commerce de Ralph Lauren, avec Microsoft pour la couche Azure OpenAI et l'agent d'achat personnalise. Le merchandising alimente et cadre le catalogue exploite.",
+    "signal_pilote": "L'intention exprimee dans le prompt, croisee avec la disponibilite reelle en inventaire. Si le flux catalogue et stock n'est pas synchronise, l'assistant risque de composer des tenues avec des articles indisponibles et casse l'experience shoppable.",
+    "etapes": [
+      {
+        "etape": "Prompt utilisateur",
+        "detail": "Le client ecrit une demande ouverte dans l'app (occasion, piece a styliser, idee cadeau).",
+        "acteur": "client"
+      },
+      {
+        "etape": "Interpretation de l'intention",
+        "detail": "L'agent, via Azure OpenAI, comprend le contexte plutot que des mots-cles et, si besoin, pose une question de clarification.",
+        "acteur": "IA"
+      },
+      {
+        "etape": "Recherche sur le catalogue",
+        "detail": "Le moteur de recherche en langage naturel relie l'intention aux fiches produit et ne retient que des articles Polo Ralph Lauren en stock.",
+        "acteur": "IA"
+      },
+      {
+        "etape": "Composition et affichage",
+        "detail": "L'assistant compose des tenues completes en laydown visuel, avec conseils de style, et permet d'acheter une piece ou l'ensemble.",
+        "acteur": "IA"
+      },
+      {
+        "etape": "Affinage et supervision",
+        "detail": "Le client raffine ses preferences ; l'equipe suit la qualite des recommandations, cadre le catalogue et etend le perimetre (nouvelles marques, voix, image).",
+        "acteur": "marketing"
+      }
+    ]
+  },
+  "schema_flow": {
+    "statut": "documente",
+    "noeuds": [
+      {
+        "id": "user",
+        "role_generique": "site_app",
+        "label": "Utilisateur dans l'app mobile Ralph Lauren (US)"
+      },
+      {
+        "id": "askralph",
+        "role_generique": "canal_conversationnel",
+        "label": "Ask Ralph (interface conversationnelle)"
+      },
+      {
+        "id": "agent",
+        "role_generique": "modele_ia",
+        "label": "Agent d'achat personnalise + recherche en langage naturel",
+        "outil_documente": "Microsoft Azure OpenAI"
+      },
+      {
+        "id": "catalog",
+        "role_generique": "data_source",
+        "label": "Catalogue et inventaire Polo Ralph Lauren (articles disponibles)"
+      }
+    ],
+    "liens": [
+      [
+        "user",
+        "askralph",
+        "prompt en langage naturel"
+      ],
+      [
+        "askralph",
+        "agent"
+      ],
+      [
+        "agent",
+        "catalog",
+        "recherche d'articles en stock"
+      ],
+      [
+        "catalog",
+        "agent",
+        "produits disponibles"
+      ],
+      [
+        "agent",
+        "askralph",
+        "tenues completes shoppables + conseils"
+      ],
+      [
+        "askralph",
+        "user",
+        "laydown visuel, achat piece ou tenue"
+      ]
+    ]
+  },
+  "replication": {
+    "statut_epistemique": "infere",
+    "prerequis_data": [
+      "Catalogue produit structure avec attributs de style exploitables (couleur, matiere, occasion, categorie)",
+      "Disponibilite et stock en temps reel pour ne proposer que des articles achetables",
+      "Images produit propres exploitables en laydown de tenue",
+      "Regles de mise en tenue ou historique de stylisme pour cadrer les associations"
+    ],
+    "prerequis_orga": [
+      "Equipe merchandising qui possede et qualifie le catalogue exploite",
+      "Equipe digital/e-commerce pour integrer l'assistant a l'app et au panier",
+      "Partenariat cloud/LLM et cadre de gouvernance des reponses de l'IA"
+    ],
+    "stack_possible": [
+      "LLM via cloud (Azure OpenAI ou equivalent) pour la conversation et l'interpretation d'intention",
+      "Moteur de recherche semantique sur le catalogue (approche RAG) branche sur le stock",
+      "Couche de mise en tenue qui assemble des looks complets depuis les articles remontes",
+      "Integration app commerce et panier pour l'achat en un geste"
+    ],
+    "premiere_etape": "Qualifier le catalogue avec des attributs de style et brancher la disponibilite stock en temps reel : sans ce socle, un assistant qui compose des tenues remonte vite des articles indisponibles et perd sa promesse shoppable.",
+    "playbook": [
+      {
+        "action": "Structurer et enrichir le catalogue produit avec des attributs de style et d'occasion, et connecter le flux de disponibilite en temps reel.",
+        "livrable": "Catalogue exploitable par une recherche semantique, limite aux articles en stock."
+      },
+      {
+        "action": "Poser un moteur de recherche en langage naturel qui relie un prompt libre aux produits pertinents et disponibles.",
+        "livrable": "Recherche d'intention validee sur un echantillon de requetes clients."
+      },
+      {
+        "action": "Ajouter la couche conversationnelle (LLM via cloud) qui interprete le contexte, pose des questions de clarification et compose des tenues completes.",
+        "livrable": "Assistant capable de rendre des tenues completes coherentes en laydown."
+      },
+      {
+        "action": "Integrer l'assistant a l'app et au panier pour rendre chaque piece et chaque tenue achetables en un geste.",
+        "livrable": "Parcours prompt vers achat de bout en bout dans l'app."
+      },
+      {
+        "action": "Ouvrir a un segment d'utilisateurs, suivre la qualite des recommandations et la conversion, puis elargir le perimetre (marques, canaux, marches) et les modalites (voix, image, memoire).",
+        "livrable": "Assistant en production avec boucle de suivi qualite et feuille de route d'extension."
+      }
+    ],
+    "equipe": "Equipe merchandising qui detient le catalogue, ingenieurs IA/data pour la recherche semantique et l'orchestration LLM, equipe produit et e-commerce pour l'integration app et panier, partenaire cloud pour la couche generative."
+  },
+  "seo": {
+    "slug": "ralph-lauren-ask-ralph-2025",
+    "title": "Ralph Lauren : Ask Ralph, l'assistant styliste genAI qui genere des tenues shoppables (2025)",
+    "meta_description": "Ask Ralph, l'assistant conversationnel de l'app Ralph Lauren lance en 2025 (Azure OpenAI), genere des tenues completes shoppables a partir de prompts en langage naturel.",
+    "resume_citable": "Ask Ralph, l'assistant conversationnel de l'app mobile Ralph Lauren lance en septembre 2025 aux Etats-Unis et developpe avec Microsoft sur Azure OpenAI, genere des tenues completes shoppables a partir de prompts en langage naturel, en ne proposant que des articles disponibles dans l'inventaire Polo Ralph Lauren.",
+    "faq": [
+      {
+        "q": "Qu'est-ce que Ask Ralph et comment ca marche ?",
+        "a": "Ask Ralph est un assistant conversationnel de l'app mobile Ralph Lauren. L'utilisateur ecrit une demande en langage naturel et recoit des tenues completes shoppables, presentees en laydown visuel avec conseils de style, tirees de l'inventaire Polo Ralph Lauren disponible."
+      },
+      {
+        "q": "Sur quelle technologie repose Ask Ralph et ou est-il deploye ?",
+        "a": "Il a ete developpe avec Microsoft sur Azure OpenAI et combine un agent d'achat personnalise et un moteur de recherche en langage naturel. Il est live dans l'app Ralph Lauren aux Etats-Unis (iOS et Android) depuis septembre 2025, avec une expansion annoncee a d'autres marques et marches."
+      }
+    ]
+  }
+}

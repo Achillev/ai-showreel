@@ -1,0 +1,309 @@
+{
+  "id": "cvs-health-conversation-centre-contact-2025",
+  "type_fiche": "succes",
+  "marque": "CVS Health",
+  "industrie": "sante_pharma",
+  "marches_deploiement": [
+    "Etats-Unis"
+  ],
+  "transposable_ue": {
+    "flag": "oui_avec_adaptations",
+    "note": "L'analyse IA d'appels enregistres et le scoring predictif de satisfaction touchent des donnees de sante et des enregistrements de voix. En UE, base legale RGPD et information des membres requises, encadrement de l'enregistrement des appels par le droit national, et vigilance AI Act sur l'analyse comportementale. Les donnees de sante relevent de l'article 9 RGPD."
+  },
+  "metier": "service client / relation membre",
+  "marque_linkedin": "https://www.linkedin.com/company/cvs-health/",
+  "intervenants": [
+    {
+      "nom": "Srikant Narasimhan",
+      "role": "Vice President, Head of Enterprise Customer Experience & Insights, CVS Health",
+      "source_ref": "S1"
+    },
+    {
+      "nom": "Pushpendu Pal",
+      "role": "Senior Vice President and Chief Digital Technology Officer, CVS Health",
+      "source_ref": "S2"
+    }
+  ],
+  "agences": [
+    {
+      "nom": "Cresta",
+      "role": "Fournisseur de la plateforme d'intelligence conversationnelle",
+      "source_ref": "S1"
+    },
+    {
+      "nom": "Salesforce",
+      "role": "Fournisseur d'Agentforce Health pour le centre de contact",
+      "source_ref": "S2"
+    }
+  ],
+  "axes": {
+    "levier": "retention",
+    "touchpoints": [
+      "centre d'appels membres",
+      "conseillers relation client (CSR)",
+      "canal telephonique"
+    ],
+    "etape_parcours": "post-achat",
+    "famille": "conversation",
+    "pattern": "intelligence conversationnelle et agents IA sur 100% des appels du centre de contact",
+    "type_ia": [
+      "IA conversationnelle",
+      "analyse de la parole",
+      "scoring predictif (CSAT)",
+      "resume automatique d'appel"
+    ],
+    "plateforme_stack": [
+      "Cresta",
+      "Salesforce Agentforce Health"
+    ],
+    "objectif_metrique": [
+      "part des appels scores",
+      "temps de travail apres appel",
+      "CSAT predictif",
+      "vitesse d'obtention des insights"
+    ]
+  },
+  "implementation": "plateforme",
+  "objectif_business": "Passer d'un echantillon d'appels notes manuellement a une lecture de 100% des interactions du centre de contact, pour mesurer la satisfaction sur chaque appel, reduire le travail post-appel des conseillers et detecter les problemes en temps reel plutot qu'apres des semaines de sondage.",
+  "points_cles": ["Intelligence conversationnelle appliquee a 100% des appels du centre de contact membres.", "Plateforme Cresta (resume, CSAT predictif) plus agents Salesforce Agentforce Health.", "Part des appels notes passee de 5% a 100%, sur 185 millions de personnes servies par an.", "Preuve B, statut confirme."],
+  "description": "CVS Health a deploye l'intelligence conversationnelle de Cresta dans son centre de contact membres. L'entreprise notait 5% de ses appels ; elle en note desormais 100%. Le point de depart a ete le resume automatique d'appel, qui a reduit le travail post-appel des conseillers, avant d'ouvrir un scoring predictif de la satisfaction (CSAT) sur chaque appel. CVS Health sert 185 millions de personnes par an. En parallele, l'entreprise etend une couche d'agents IA via Salesforce Agentforce Health pour ses activites Aetna et CVS Caremark, avec un perimetre de plusieurs dizaines de millions de membres.",
+  "resultats": [
+    {
+      "metrique": "Part des appels notes par l'IA",
+      "valeur": "de 5% a 100%",
+      "citation_exacte": "Now we've scored 100% of our calls.",
+      "source_ref": "S1"
+    },
+    {
+      "metrique": "Scoring predictif de satisfaction",
+      "valeur": "CSAT predictif sur chaque appel",
+      "citation_exacte": "the ability to score the predictive CSAT on every single call",
+      "source_ref": "S1"
+    },
+    {
+      "metrique": "Travail apres appel",
+      "valeur": "reduction quasi immediate",
+      "citation_exacte": "almost immediate return in terms of reductions in after-call work time",
+      "source_ref": "S1"
+    },
+    {
+      "metrique": "Personnes servies par an (relation membre CVS Health)",
+      "valeur": "185 M",
+      "citation_exacte": "CVS Health serves 185 million people each year",
+      "source_ref": "S2"
+    }
+  ],
+  "niveau_preuve": {
+    "niveau": "B",
+    "justification": "Le resultat central (passage de 5% a 100% des appels notes, CSAT predictif) est documente par une etude de cas plateforme chiffree (Cresta), corroboree par un communique CVS/Salesforce sur le deploiement d'agents IA a l'echelle de plusieurs dizaines de millions de membres. Etude de cas vendor chiffree = B."
+  },
+  "dates": {
+    "lancement": "2025 (deploiement Cresta documente fin 2025) ; extension Agentforce annoncee 2026",
+    "derniere_confirmation_activite": "mai 2026 (communique CVS/Salesforce Agentforce Health)",
+    "verifie_le": "2026-07-11",
+    "revoir_apres": "2027-01-11"
+  },
+  "statut_vivant": {
+    "statut": "confirme",
+    "note": "Deploiement Cresta documente fin 2025 avec resultats live, et extension Agentforce Health annoncee mi-2026. Dynamique active et recente sur la relation membre au centre de contact."
+  },
+  "sources": [
+    {
+      "ref": "S1",
+      "type": "customer_story_plateforme",
+      "fiabilite": "T2_officiel_interesse",
+      "titre": "How CVS Health Went From Scoring 5% of Calls to 100% with AI-powered Conversation Intelligence",
+      "url": "https://cresta.com/blog/how-cvs-health-went-from-scoring-5-of-calls-to-100-with-ai-powered-conversation-intelligence",
+      "date_publication": "2025-12-23",
+      "consulte_le": "2026-07-11"
+    },
+    {
+      "ref": "S2",
+      "type": "presse",
+      "fiabilite": "T2_officiel_interesse",
+      "titre": "CVS Health to Deliver Faster, More Personalized Call Center Care for Millions of Members with Salesforce's Agentforce Health",
+      "url": "https://www.prnewswire.com/news-releases/cvs-health-to-deliver-faster-more-personalized-call-center-care-for-millions-of-members-with-salesforces-agentforce-health-302783519.html",
+      "date_publication": "2026-05-28",
+      "consulte_le": "2026-07-11"
+    }
+  ],
+  "fonctionnement_operationnel": {
+    "cadence": "Temps reel sur chaque appel, avec analyse post-appel en continu",
+    "opere_par": "Direction de l'experience client et des insights de CVS Health, au-dessus des equipes du centre de contact",
+    "signal_pilote": "Le contenu des appels transcrits et le CSAT predictif calcule dessus. Sans transcription fiable ni base de consentement a l'analyse des appels, la couverture retombe a l'echantillon manuel de depart.",
+    "etapes": [
+      {
+        "etape": "Captation et transcription",
+        "detail": "Chaque appel membre est transcrit et rendu analysable.",
+        "acteur": "IA"
+      },
+      {
+        "etape": "Resume automatique",
+        "detail": "Le systeme genere un resume d'appel qui allege le travail post-appel du conseiller.",
+        "acteur": "IA"
+      },
+      {
+        "etape": "Scoring predictif",
+        "detail": "Un CSAT predictif est calcule sur 100% des appels, avec une vue par conseiller.",
+        "acteur": "IA"
+      },
+      {
+        "etape": "Detection et remediation",
+        "detail": "Les equipes reperent les problemes en temps reel et agissent sans attendre un sondage.",
+        "acteur": "Equipe experience client"
+      },
+      {
+        "etape": "Extension agents IA",
+        "detail": "Des agents IA (Agentforce Health) assistent les conseillers Aetna et Caremark aupres des membres.",
+        "acteur": "IA et equipe relation membre"
+      }
+    ]
+  },
+  "schema_flow": {
+    "statut": "documente",
+    "noeuds": [
+      {
+        "id": "appel",
+        "role_generique": "data_source",
+        "label": "Appels membres transcrits"
+      },
+      {
+        "id": "ci",
+        "role_generique": "modele_ia",
+        "label": "Intelligence conversationnelle (resume, CSAT predictif)",
+        "outil_documente": "Cresta"
+      },
+      {
+        "id": "csr",
+        "role_generique": "humain",
+        "label": "Conseiller relation client"
+      },
+      {
+        "id": "cx",
+        "role_generique": "humain",
+        "label": "Direction experience client"
+      },
+      {
+        "id": "agent",
+        "role_generique": "modele_ia",
+        "label": "Agents IA relation membre",
+        "outil_documente": "Salesforce Agentforce Health"
+      },
+      {
+        "id": "membre",
+        "role_generique": "humain",
+        "label": "Membre CVS Health / Aetna"
+      }
+    ],
+    "liens": [
+      [
+        "appel",
+        "ci"
+      ],
+      [
+        "ci",
+        "csr",
+        "resume et allegement du post-appel"
+      ],
+      [
+        "ci",
+        "cx",
+        "CSAT predictif sur 100% des appels"
+      ],
+      [
+        "cx",
+        "csr",
+        "remediation temps reel"
+      ],
+      [
+        "agent",
+        "membre",
+        "assistance conversationnelle"
+      ],
+      [
+        "csr",
+        "appel",
+        "nouvel appel, boucle continue"
+      ]
+    ]
+  },
+  "stack_technique": [
+    {
+      "nom": "Cresta",
+      "categorie": "plateforme",
+      "detail": "intelligence conversationnelle du centre de contact : transcription, resume automatique d'appel et CSAT predictif sur 100% des appels",
+      "url": "https://cresta.com"
+    },
+    {
+      "nom": "Salesforce Agentforce Health",
+      "categorie": "plateforme",
+      "detail": "agents IA du centre de contact pour les membres Aetna et CVS Caremark, extension annoncee en 2026",
+      "url": "https://www.salesforce.com/agentforce/"
+    },
+    {
+      "nom": "Transcription vocale temps reel",
+      "categorie": "outil",
+      "detail": "brique speech-to-text integree a la plateforme conversationnelle, prealable au resume et au scoring",
+      "url": "https://cresta.com"
+    }
+  ],
+  "replication": {
+    "statut_epistemique": "infere",
+    "prerequis_data": [
+      "appels transcrits",
+      "historique CSAT pour entrainer le scoring",
+      "base de consentement a l'analyse des appels"
+    ],
+    "prerequis_orga": [
+      "centre de contact avec volume d'appels",
+      "equipe qualite/experience client",
+      "cadre de conformite sur l'enregistrement"
+    ],
+    "stack_possible": [
+      "plateforme d'intelligence conversationnelle (Cresta, Observe.ai, etc.)",
+      "agents IA de service (Agentforce, custom)",
+      "transcription vocale"
+    ],
+    "premiere_etape": "Brancher la transcription des appels et lancer le resume automatique comme premier cas d'usage a ROI rapide.",
+    "playbook": [
+      {
+        "action": "Poser le cadre de conformite (enregistrement des appels, consentement, donnees de sante) et contractualiser la plateforme.",
+        "livrable": "Dossier conformite valide et contrat signe"
+      },
+      {
+        "action": "Brancher la transcription sur les appels et lancer le resume automatique sur une equipe pilote.",
+        "livrable": "Resumes en production limitee, temps post-appel mesure avant / apres"
+      },
+      {
+        "action": "Generaliser le resume automatique et calibrer le CSAT predictif sur l'historique de notes manuelles.",
+        "livrable": "Scoring predictif valide contre l'echantillon note a la main"
+      },
+      {
+        "action": "Passer a 100% des appels scores avec des tableaux de bord par equipe et par conseiller.",
+        "livrable": "Couverture complete des appels avec vues de pilotage"
+      },
+      {
+        "action": "Installer la boucle de remediation temps reel cote experience client, sans attendre les sondages.",
+        "livrable": "Process detection-action documente et opere"
+      }
+    ],
+    "equipe": "1 responsable experience client + 1 chef de projet centre de contact + IT telephonie, avec juridique et conformite en appui"
+  },
+  "seo": {
+    "slug": "cvs-health-conversation-centre-contact-2025",
+    "title": "CVS Health : intelligence conversationnelle sur 100% des appels (Cresta) - CSAT predictif (2025)",
+    "meta_description": "CVS Health note desormais 100% de ses appels membres contre 5% avant, avec CSAT predictif via Cresta, et etend des agents IA Salesforce Agentforce a des millions de membres.",
+    "resume_citable": "CVS Health, qui sert 185 millions de personnes par an, est passe de 5% a 100% de ses appels notes en deployant l'intelligence conversationnelle de Cresta avec un CSAT predictif sur chaque appel, et etend des agents IA Salesforce Agentforce Health a ses membres Aetna et Caremark.",
+    "faq": [
+      {
+        "q": "Qu'a change l'intelligence conversationnelle chez CVS Health ?",
+        "a": "L'entreprise notait 5% de ses appels manuellement ; avec Cresta, elle en note 100% et calcule un CSAT predictif sur chaque appel, avec une reduction quasi immediate du travail post-appel des conseillers."
+      },
+      {
+        "q": "Quel est le role de Salesforce Agentforce Health ?",
+        "a": "Il ajoute une couche d'agents IA qui assistent les conseillers Aetna et CVS Caremark pour resoudre plus vite les demandes des membres, sur un perimetre de plusieurs dizaines de millions de membres."
+      }
+    ]
+  },
+  "logo_domain": "cvshealth.com"
+}

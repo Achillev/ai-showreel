@@ -1,0 +1,276 @@
+{
+  "type_fiche": "succes",
+  "id": "river-island-performance-max-smec",
+  "marque": "River Island",
+  "groupe": "River Island",
+  "industrie": "retail_ecom",
+  "marches_deploiement": [
+    "Royaume-Uni"
+  ],
+  "transposable_ue": {
+    "flag": "oui",
+    "note": "Detaillant mode base au Royaume-Uni. Performance Max et l'orchestration tierce sont disponibles en UE ; prevoir Consent Mode v2 et un feed produit propre. Pas de classification haut risque au sens de l'AI Act."
+  },
+  "metier": "E-commerce / media performance",
+  "intervenants": [
+    {
+      "nom": "Elvis Mugera",
+      "role": "Paid Media Lead, River Island (au moment du projet)",
+      "source_ref": "S1"
+    }
+  ],
+  "axes": {
+    "levier": "acquisition",
+    "touchpoints": [
+      "Google Shopping",
+      "Google Search",
+      "YouTube",
+      "Display",
+      "Discover"
+    ],
+    "etape_parcours": "consideration -> achat",
+    "famille": "optimisation_automatisation",
+    "pattern": "Scoring produit predictif au-dessus de Performance Max : au lieu du bucketing statique hero/zombie, un modele evalue le potentiel d'un produit par effet de voisinage (attributs comparables) pour donner de la visibilite aux nouveautes et a la longue traine que l'algo delaisse faute d'historique",
+    "type_ia": [
+      "modele predictif de potentiel produit (SmartScoreAI)",
+      "segmentation produit dynamique",
+      "smart bidding (enchères ML)"
+    ],
+    "plateforme_stack": [
+      "Google Ads Performance Max",
+      "smec Campaign Orchestrator (SmartScoreAI, Dynamic Segments)",
+      "Google Shopping / Search / YouTube / Display"
+    ],
+    "objectif_metrique": [
+      "revenu",
+      "ROAS",
+      "visibilité des nouveautés / longue traine"
+    ]
+  },
+  "implementation": "hybride",
+  "stack_technique": [
+    {
+      "nom": "smec Campaign Orchestrator",
+      "categorie": "plateforme",
+      "detail": "Couche d'orchestration au-dessus de Performance Max : pilotage des budgets et du tROAS au niveau compte.",
+      "url": "https://smarter-ecommerce.com"
+    },
+    {
+      "nom": "smec SmartScoreAI",
+      "categorie": "outil",
+      "detail": "Scoring predictif du potentiel produit par effet de voisinage (type, marque, prix, saisonnalite), qui note les nouveautes sans historique.",
+      "url": "https://smarter-ecommerce.com"
+    },
+    {
+      "nom": "smec Dynamic Segments",
+      "categorie": "outil",
+      "detail": "Segmentation produit dynamique (fort potentiel, valeurs sures, nouveautes, faible priorite) qui evolue avec les signaux.",
+      "url": "https://smarter-ecommerce.com"
+    },
+    {
+      "nom": "Google Ads Performance Max",
+      "categorie": "plateforme",
+      "detail": "Encheres et diffusion multi-canaux (Shopping, Search, YouTube, Display) pilotees par le ML de Google.",
+      "url": "https://ads.google.com"
+    },
+    {
+      "nom": "Google Merchant Center",
+      "categorie": "outil",
+      "detail": "Feed produit alimentant Performance Max ; la richesse des attributs conditionne le scoring par voisinage.",
+      "url": "https://www.google.com"
+    }
+  ],
+  "objectif_business": "Faire remonter les nouveautes et les produits de longue traine que Performance Max ignore faute de donnees historiques, sans sacrifier la profitabilite.",
+  "points_cles": ["Scoring produit predictif ajoute au-dessus de Google Performance Max pour les nouveautes et la longue traine.", "Stack smec Campaign Orchestrator (SmartScoreAI, Dynamic Segments) sur feed Merchant Center.", "Revenu +34% et ROAS +19% sur la categorie Kidswear.", "Preuve B, statut confirme, finaliste des European Search Awards 2026."],
+  "description": "River Island a remplace son systeme de tri statique des produits (buckets hero/zombie) par une approche dynamique pilotee par l'IA au-dessus de Performance Max, via le Campaign Orchestrator de smec. Trois briques : SmartScoreAI evalue chaque produit par un effet de voisinage, en le comparant a des articles similaires (type, marque, prix, saisonnalite) plutot qu'a son seul historique de ventes ; Dynamic Segments regroupe automatiquement les produits en categories strategiques (fort potentiel, valeurs sures, nouveautes, faible priorite) qui evoluent avec les signaux ; l'orchestration des budgets et du tROAS pilote l'investissement au niveau du compte et redirige la depense vers les campagnes les plus performantes. Sur la categorie Kidswear, smec annonce un revenu en hausse de 34 % et un ROAS en hausse de 19 %. Le travail a valu a smec une place de finaliste des European Search Awards 2026 dans la categorie Best Use of AI in PPC, avec River Island.",
+  "fonctionnement_operationnel": {
+    "cadence": "Scoring et re-segmentation continus au fil des signaux produit ; pilotage budget/tROAS au niveau compte.",
+    "opere_par": "L'equipe paid media de la marque, avec l'outil d'orchestration tiers qui score et regroupe les produits.",
+    "signal_pilote": "Les attributs et signaux produit (type, marque, prix, saisonnalite, performance des voisins). Sans attributs produit riches, l'effet de voisinage ne fonctionne pas et les nouveautes restent invisibles.",
+    "etapes": [
+      {
+        "etape": "Structurer les attributs produit",
+        "detail": "Fournir type, marque, prix, saisonnalite au niveau article pour que le scoring par voisinage ait de quoi comparer.",
+        "acteur": "Equipe data / e-commerce"
+      },
+      {
+        "etape": "Scorer par effet de voisinage",
+        "detail": "Le modele estime le potentiel d'un produit a partir de ses pairs, ce qui donne une note aux nouveautes sans historique.",
+        "acteur": "SmartScoreAI (outil)"
+      },
+      {
+        "etape": "Re-segmenter en continu",
+        "detail": "Les produits basculent entre categories (fort potentiel, valeurs sures, nouveautes, faible priorite) selon l'evolution des signaux.",
+        "acteur": "Dynamic Segments (outil)"
+      },
+      {
+        "etape": "Piloter budget et tROAS au niveau compte",
+        "detail": "La depense est reallouee vers les campagnes qui performent. L'equipe fixe les seuils de ROAS, l'outil ajuste.",
+        "acteur": "Equipe media + outil"
+      }
+    ]
+  },
+  "resultats": [
+    {
+      "metrique": "Revenu (categorie Kidswear)",
+      "valeur": "+34 %",
+      "citation_exacte": "+34% revenue",
+      "source_ref": "S1"
+    },
+    {
+      "metrique": "ROAS (categorie Kidswear)",
+      "valeur": "+19 %",
+      "citation_exacte": "+19% ROAS",
+      "source_ref": "S1"
+    }
+  ],
+  "niveau_preuve": {
+    "niveau": "B",
+    "justification": "Etude de cas d'un partenaire specialise (smec) chiffree et nominative (River Island, Elvis Mugera) - source interessee. Le projet est corrobore par sa selection comme finaliste des European Search Awards 2026, programme tiers, mais les chiffres ne sont pas confirmes en resultats financiers."
+  },
+  "dates": {
+    "lancement": "Non date precisement dans l'etude smec",
+    "derniere_confirmation_activite": "2026 - projet cite comme finaliste des European Search Awards 2026",
+    "verifie_le": "2026-07-11",
+    "revoir_apres": "2026-10-11"
+  },
+  "statut_vivant": {
+    "statut": "confirme",
+    "note": "La selection du cas comme finaliste des European Search Awards 2026 date le travail de fin 2025-2026, signal recent de vivacite. La date exacte de mesure des +34 %/+19 % n'est pas precisee."
+  },
+  "sources": [
+    {
+      "ref": "S1",
+      "type": "customer_story_plateforme",
+      "titre": "River Island - smec case study (SmartScoreAI, Dynamic Segments, Performance Max)",
+      "url": "https://smarter-ecommerce.com/en/case-studies/river-island/",
+      "date_publication": "2026",
+      "consulte_le": "2026-07-11",
+      "fiabilite": "T2_officiel_interesse"
+    },
+    {
+      "ref": "S2",
+      "type": "blog_officiel",
+      "titre": "smec finalist for the European Search Awards 2026 (Best Use of AI in PPC, with River Island)",
+      "url": "https://smarter-ecommerce.com/blog/en/news/best-ppc-management-software-smec-finalist-for-the-european-search-awards-2026/",
+      "date_publication": "2026",
+      "consulte_le": "2026-07-11",
+      "fiabilite": "T2_officiel_interesse"
+    }
+  ],
+  "schema_flow": {
+    "statut": "documente",
+    "noeuds": [
+      {
+        "id": "attr",
+        "role_generique": "data_source",
+        "label": "Attributs produit (type, marque, prix, saisonnalite)"
+      },
+      {
+        "id": "score",
+        "role_generique": "modele_ia",
+        "label": "Scoring par effet de voisinage",
+        "outil_documente": "smec SmartScoreAI"
+      },
+      {
+        "id": "seg",
+        "role_generique": "paid_platform",
+        "label": "Segmentation dynamique + orchestration tROAS/budget",
+        "outil_documente": "smec Dynamic Segments / Campaign Orchestrator"
+      },
+      {
+        "id": "pmax",
+        "role_generique": "paid_platform",
+        "label": "IA Google : enchères et diffusion",
+        "outil_documente": "Google Ads Performance Max"
+      },
+      {
+        "id": "shop",
+        "role_generique": "site_app",
+        "label": "Boutique River Island (achat)"
+      }
+    ],
+    "liens": [
+      [
+        "attr",
+        "score"
+      ],
+      [
+        "score",
+        "seg"
+      ],
+      [
+        "seg",
+        "pmax"
+      ],
+      [
+        "pmax",
+        "shop"
+      ],
+      [
+        "shop",
+        "score",
+        "feedback ventes"
+      ]
+    ]
+  },
+  "replication": {
+    "statut_epistemique": "infere",
+    "prerequis_data": [
+      "Attributs produit riches au niveau article (type, marque, prix, saisonnalite)",
+      "Feed Shopping propre",
+      "Consent Mode v2 en UE"
+    ],
+    "prerequis_orga": [
+      "Un catalogue avec beaucoup de nouveautes et de longue traine",
+      "Un outil d'orchestration/scoring tiers au-dessus de PMax"
+    ],
+    "stack_possible": [
+      "Google Ads Performance Max + outil de scoring produit et d'orchestration (smec ou equivalent) + feed produit enrichi"
+    ],
+    "premiere_etape": "Identifier les nouveautes et produits de longue traine sans historique, puis tester un scoring par voisinage pour leur donner de la visibilite dans PMax.",
+    "playbook": [
+      {
+        "action": "Enrichir les attributs produit au niveau article (type, marque, prix, saisonnalite) et nettoyer le feed Shopping.",
+        "livrable": "Feed Merchant Center enrichi et valide."
+      },
+      {
+        "action": "Brancher l'outil de scoring et d'orchestration au-dessus de Performance Max.",
+        "livrable": "Scoring par voisinage actif sur tout le catalogue."
+      },
+      {
+        "action": "Mettre en place les segments dynamiques et la structure de campagnes par categorie strategique, avec tROAS par segment.",
+        "livrable": "Campagnes PMax segmentees en diffusion."
+      },
+      {
+        "action": "Laisser l'orchestration reallouer budget et tROAS, puis lire revenu et ROAS sur une categorie test face au bucketing statique.",
+        "livrable": "Comparatif revenu / ROAS vs approche statique et decision de generalisation."
+      }
+    ],
+    "equipe": "1 paid media lead + 1 profil data / e-commerce pour les attributs produit + le support de l'editeur."
+  },
+  "seo": {
+    "slug": "river-island-performance-max-scoring-produit-smec",
+    "title": "River Island : sortir les nouveautes de l'angle mort de Performance Max - +34 % de revenu (Kidswear)",
+    "meta_description": "River Island a ajoute a Performance Max un scoring produit predictif (smec) pour les nouveautes : +34 % de revenu, +19 % de ROAS sur le Kidswear.",
+    "resume_citable": "River Island a augmente son revenu de 34 % et son ROAS de 19 % sur le Kidswear en ajoutant a Google Performance Max un scoring produit predictif (smec SmartScoreAI) qui evalue les nouveautes par effet de voisinage plutot que par leur seul historique de ventes.",
+    "faq": [
+      {
+        "q": "Quel probleme de Performance Max ce cas resout-il ?",
+        "a": "PMax favorise les produits a fort historique et delaisse les nouveautes et la longue traine. Le scoring par voisinage leur attribue un potentiel estime pour les rendre eligibles a la diffusion."
+      },
+      {
+        "q": "Faut-il developper le modele soi-meme ?",
+        "a": "Non dans ce cas : le scoring vient d'un outil tiers (smec) branche au-dessus de Google Ads. L'enjeu cote marque est la richesse des attributs produit."
+      }
+    ]
+  },
+  "agences": [
+    {
+      "nom": "smec (Smarter Ecommerce)",
+      "role": "Editeur/partenaire - scoring produit et orchestration Performance Max",
+      "source_ref": "S1"
+    }
+  ],
+  "logo_domain": "riverisland.com"
+}

@@ -1,0 +1,263 @@
+{
+  "id": "doordash-promotions-causal-ml-2025",
+  "type_fiche": "succes",
+  "marque": "DoorDash",
+  "industrie": "food_beverage",
+  "marches_deploiement": [
+    "Etats-Unis"
+  ],
+  "transposable_ue": {
+    "flag": "oui_avec_adaptations",
+    "note": "Le ciblage causal des promotions est transposable, mais le profilage individuel pour personnaliser une offre exige une base legale RGPD et une information sur la logique de decision automatisee. L'analyse causale elle-meme reste neutre au regard de l'AI Act."
+  },
+  "metier": "marketing / growth",
+  "intervenants": [
+    {
+      "nom": "Sudeep Das",
+      "role": "Co-auteur du travail sur les promotions causales, DoorDash",
+      "source_ref": "S1"
+    },
+    {
+      "nom": "Muxi Xu",
+      "role": "Co-auteur du travail sur les promotions causales, DoorDash",
+      "source_ref": "S1"
+    }
+  ],
+  "axes": {
+    "levier": "monetisation",
+    "touchpoints": [
+      "campagnes promotionnelles",
+      "app DoorDash",
+      "CRM marketing"
+    ],
+    "etape_parcours": "fidélité",
+    "famille": "prediction",
+    "pattern": "ciblage causal des promotions (personnalisation des offres)",
+    "type_ia": [
+      "causal machine learning (double machine learning)",
+      "uplift modeling (T-learner, S-learner)",
+      "optimisation sous contrainte de budget"
+    ],
+    "plateforme_stack": [
+      "custom/in-house"
+    ],
+    "objectif_metrique": [
+      "cout par commande incrementale",
+      "commandes incrementales",
+      "efficacite du budget promo",
+      "marge"
+    ]
+  },
+  "implementation": "custom",
+  "stack_technique": [
+    {
+      "nom": "Framework causal in-house DoorDash",
+      "categorie": "outil",
+      "detail": "Cadre a deux etages: estimation de l'uplift par client (double machine learning, meta-apprenants T-learner et S-learner), presente au workshop causal ML de KDD 2025.",
+      "url": "https://www.doordash.com"
+    },
+    {
+      "nom": "Optimiseur d'allocation sous contrainte",
+      "categorie": "outil",
+      "detail": "Choisit quels clients recoivent quelle offre pour maximiser les commandes incrementales dans le budget promo fixe.",
+      "url": "https://www.doordash.com"
+    },
+    {
+      "nom": "App et CRM DoorDash (envoi des offres)",
+      "categorie": "infra",
+      "detail": "Canaux internes par lesquels les promotions ciblees sont delivrees, puis l'incremental reel mesure pour reentrainer le modele.",
+      "url": "https://www.doordash.com"
+    }
+  ],
+  "objectif_business": "Depenser le budget promotionnel la ou il cree vraiment des commandes supplementaires, au lieu de subventionner des commandes qui auraient eu lieu sans promo.",
+  "points_cles": ["Ciblage causal des promotions : effet incremental estime par client, puis allocation sous budget.", "Framework causal in-house (double machine learning, meta-apprenants T-learner et S-learner).", "Cout par commande incrementale reduit de pres de moitie a lift equivalent.", "Preuve B, statut confirme, presente au workshop causal ML de KDD 2025."],
+  "description": "DoorDash estime, par causal machine learning, l'effet incremental d'une promotion sur la probabilite de commande de chaque utilisateur, puis choisit quelles promos envoyer sous contrainte de budget. Le cadre a deux etages: d'abord estimer la reponse causale par client avec des methodes comme le double machine learning et les meta-apprenants, puis optimiser l'allocation des offres. Le probleme adresse est celui des promotions non incrementales, ou une remise recompense une commande qui aurait eu lieu de toute facon et brule de la marge. Le travail a ete presente au workshop causal ML de KDD 2025.",
+  "resultats": [
+    {
+      "metrique": "Cout par commande incrementale reduit, a lift equivalent, personnalise vs uniforme",
+      "valeur": "pres de moitie",
+      "citation_exacte": "the personalized approach reduced cost per incremental order by nearly half",
+      "source_ref": "S1"
+    },
+    {
+      "metrique": "Probleme adresse par le ciblage causal, promo non ciblee par individu",
+      "valeur": "surdepense",
+      "citation_exacte": "often lead to overspending when not tailored to individuals",
+      "source_ref": "S1"
+    }
+  ],
+  "niveau_preuve": {
+    "niveau": "B",
+    "justification": "Papier technique des equipes DoorDash presente au workshop causal ML de KDD 2025, avec un resultat chiffre (cout par commande incrementale divise par pres de deux), plus un billet d'ingenierie officiel concordant. Pas de chiffre financier consolide, d'ou un niveau B."
+  },
+  "dates": {
+    "lancement": "methode presentee 2025-08 (KDD 2025), appliquee sur donnees DoorDash",
+    "derniere_confirmation_activite": "2025 (papier et billet d'ingenierie DoorDash)",
+    "verifie_le": "2026-07-11",
+    "revoir_apres": "2027-01-11"
+  },
+  "statut_vivant": {
+    "statut": "confirme",
+    "note": "Cadre causal decrit comme applique aux scenarios marketing reels de DoorDash, documente par un papier et un billet d'ingenierie officiels."
+  },
+  "sources": [
+    {
+      "ref": "S1",
+      "type": "analyse_academique",
+      "fiabilite": "T1_primaire",
+      "titre": "Causal Machine Learning for Promotions: Industry Evidence and Applications (KDD 2025 Workshop)",
+      "url": "https://causal-machine-learning.github.io/kdd2025-workshop/papers/16.pdf",
+      "date_publication": "2025-08",
+      "consulte_le": "2026-07-11"
+    },
+    {
+      "ref": "S2",
+      "type": "eng_blog",
+      "fiabilite": "T2_officiel_interesse",
+      "titre": "Smarter promotions with causal machine learning",
+      "url": "https://careersatdoordash.com/blog/doordash-smarter-promotions-with-causal-machine-learning/",
+      "date_publication": "2025",
+      "consulte_le": "2026-07-11"
+    }
+  ],
+  "fonctionnement_operationnel": {
+    "cadence": "Par campagne, avec estimation de l'uplift avant l'envoi et mesure de l'incremental apres.",
+    "opere_par": "Equipe data science marketing de DoorDash.",
+    "signal_pilote": "L'uplift causal estime par client, soit la difference de probabilite de commande avec et sans promo. Sans mesure causale, on confond correlation et effet et le budget se disperse sur des commandes non incrementales.",
+    "etapes": [
+      {
+        "etape": "Definition de la campagne",
+        "detail": "L'equipe marketing fixe l'objectif et le budget de la campagne promotionnelle.",
+        "acteur": "marketing"
+      },
+      {
+        "etape": "Estimation de la reponse causale",
+        "detail": "Un modele causal estime l'effet incremental de la promo sur la probabilite de commande de chaque client.",
+        "acteur": "IA"
+      },
+      {
+        "etape": "Optimisation de l'allocation",
+        "detail": "Le systeme choisit quels clients cibler pour maximiser les commandes incrementales sous contrainte de budget.",
+        "acteur": "IA"
+      },
+      {
+        "etape": "Envoi et mesure",
+        "detail": "Les offres ciblees sont envoyees, puis l'incremental reel est mesure pour reentrainer le modele.",
+        "acteur": "equipe data"
+      }
+    ]
+  },
+  "schema_flow": {
+    "statut": "documente",
+    "noeuds": [
+      {
+        "id": "hist",
+        "role_generique": "data_source",
+        "label": "Historique de commandes et de traitements promo"
+      },
+      {
+        "id": "causal",
+        "role_generique": "modele_ia",
+        "label": "Estimation de l'uplift causal par client"
+      },
+      {
+        "id": "opt",
+        "role_generique": "modele_ia",
+        "label": "Optimiseur d'allocation sous budget"
+      },
+      {
+        "id": "chan",
+        "role_generique": "crm",
+        "label": "Envoi des offres (app / CRM)"
+      },
+      {
+        "id": "user",
+        "role_generique": "humain",
+        "label": "Client"
+      }
+    ],
+    "liens": [
+      [
+        "hist",
+        "causal"
+      ],
+      [
+        "causal",
+        "opt"
+      ],
+      [
+        "opt",
+        "chan",
+        "offres ciblees"
+      ],
+      [
+        "chan",
+        "user"
+      ],
+      [
+        "user",
+        "hist",
+        "commande observee"
+      ]
+    ]
+  },
+  "replication": {
+    "statut_epistemique": "infere",
+    "prerequis_data": [
+      "historique de commandes avec exposition aux promos",
+      "identifiant client stable",
+      "resultats d'experiences ou de variation naturelle pour ancrer le causal"
+    ],
+    "prerequis_orga": [
+      "equipe data science a l'aise avec l'inference causale",
+      "capacite d'A/B testing",
+      "budget promo pilotable par segment"
+    ],
+    "stack_possible": [
+      "double machine learning et meta-apprenants pour l'uplift",
+      "optimiseur sous contrainte",
+      "outil d'envoi CRM"
+    ],
+    "premiere_etape": "Estimer l'uplift causal d'une promo existante sur un segment, puis comparer un ciblage par uplift a un envoi uniforme.",
+    "playbook": [
+      {
+        "action": "Auditer l'historique promo: expositions aux offres, commandes, identifiant client stable.",
+        "livrable": "Dataset exposition-resultat pret pour la modelisation"
+      },
+      {
+        "action": "Construire l'estimation d'uplift (double machine learning ou meta-apprenants) sur une promo passee.",
+        "livrable": "Modele d'uplift valide offline (uplift par decile, courbes Qini)"
+      },
+      {
+        "action": "Ajouter l'optimisation d'allocation sous budget et definir la campagne test.",
+        "livrable": "Plan de campagne: bras cible par uplift contre bras uniforme, budget fixe"
+      },
+      {
+        "action": "Lancer le test controle ciblage par uplift contre envoi uniforme.",
+        "livrable": "Lecture du cout par commande incrementale des deux bras"
+      },
+      {
+        "action": "Industrialiser: reentrainement par campagne et mesure incrementale systematique.",
+        "livrable": "Pipeline promo causal reutilisable sur chaque campagne"
+      }
+    ],
+    "equipe": "2 data scientists a l'aise avec l'inference causale + 1 PM growth + 1 operateur CRM pour l'envoi."
+  },
+  "seo": {
+    "slug": "doordash-promotions-causal-ml-2025",
+    "title": "DoorDash : ciblage causal des promotions - cout par commande incrementale divise par pres de deux (2025)",
+    "meta_description": "DoorDash cible ses promotions par causal machine learning: en estimant l'effet incremental par client, l'approche personnalisee reduit le cout par commande incrementale de pres de moitie a lift equivalent.",
+    "resume_citable": "DoorDash cible ses promotions par causal machine learning en estimant l'uplift de chaque client ; l'approche personnalisee reduit le cout par commande incrementale de pres de moitie a performance de vente equivalente.",
+    "faq": [
+      {
+        "q": "Comment DoorDash decide-t-il a qui envoyer une promotion ?",
+        "a": "Un modele de causal machine learning estime, pour chaque client, l'effet incremental de la promo sur sa probabilite de commande, puis l'allocation est optimisee sous contrainte de budget."
+      },
+      {
+        "q": "Quel gain apporte le ciblage causal des promos ?",
+        "a": "A performance de vente equivalente, l'approche personnalisee reduit le cout par commande incrementale de pres de moitie par rapport a un envoi uniforme."
+      }
+    ]
+  },
+  "logo_domain": "doordash.com"
+}

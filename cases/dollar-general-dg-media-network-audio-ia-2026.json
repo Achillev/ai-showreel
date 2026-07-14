@@ -1,0 +1,314 @@
+{
+  "id": "dollar-general-dg-media-network-audio-ia-2026",
+  "type_fiche": "succes",
+  "marque": "Dollar General",
+  "groupe": "Dollar General Corporation",
+  "industrie": "retail_ecom",
+  "marches_deploiement": [
+    "Etats-Unis"
+  ],
+  "transposable_ue": {
+    "flag": "oui_avec_adaptations",
+    "note": "Le principe (diffuser en magasin des spots audio generes par IA, contextualises par les donnees de point de vente et la geographie) se transpose a un retailer europeen qui exploite un parc physique et une regie retail media. Le ciblage repose ici sur du contexte agrege par magasin (ce qui se vend, quand, ou), pas sur des donnees individuelles, ce qui limite l'exposition RGPD ; si des donnees personnelles entraient dans la boucle, il faudrait une base legale claire. Sous l'AI Act, une publicite audio generee par IA releve des obligations de transparence sur le contenu synthetique. Le hardware audio en magasin et les accords annonceurs restent a monter localement."
+  },
+  "metier": "retail media / marketing magasin",
+  "intervenants": [
+    {
+      "nom": "Austin Leonard",
+      "role": "VP and General Manager, DG Media Network",
+      "source_ref": "S1"
+    },
+    {
+      "nom": "Matt Elsley",
+      "role": "Co-founder and CEO, QSIC",
+      "source_ref": "S1"
+    }
+  ],
+  "agences": [
+    {
+      "nom": "QSIC",
+      "role": "Partenaire technologique : plateforme audio retail qui genere, planifie, diffuse et mesure les publicites audio in-store",
+      "source_ref": "S1"
+    }
+  ],
+  "axes": {
+    "levier": "monetisation",
+    "touchpoints": [
+      "haut-parleurs en magasin",
+      "point de vente physique",
+      "reseau audio in-store DG Media Network"
+    ],
+    "etape_parcours": "achat",
+    "famille": "generation",
+    "pattern": "regie retail media audio in-store, publicites audio generees par IA et localisees",
+    "type_ia": [
+      "IA generative",
+      "generation de publicite audio",
+      "personnalisation contextuelle par donnees POS et geographie"
+    ],
+    "plateforme_stack": [
+      "QSIC (plateforme audio retail)",
+      "DG Media Network (regie)"
+    ],
+    "objectif_metrique": [
+      "portee publicitaire in-store",
+      "delivery verifiee",
+      "impact incremental mesure (closed-loop reporting)",
+      "revenus retail media"
+    ]
+  },
+  "implementation": "hybride",
+  "stack_technique": [
+    {
+      "nom": "QSIC",
+      "categorie": "plateforme",
+      "detail": "Plateforme audio retail qui integre les donnees de point de vente (POS), une musique curatee et des publicites audio generees par IA pour planifier, creer, diffuser, mesurer et optimiser le messaging audio en magasin. Verification de la delivery et reporting en boucle fermee, au-dela des standards IAB."
+    },
+    {
+      "nom": "DG Media Network (DGMN)",
+      "categorie": "plateforme",
+      "detail": "Regie retail media de Dollar General. Elle commercialise l'inventaire publicitaire de l'enseigne aupres des marques ; le reseau audio in-store est un de ses formats, ici etendu via QSIC."
+    }
+  ],
+  "objectif_business": "Transformer le parc de magasins physiques en inventaire publicitaire adressable et vendable, et en tirer une source de revenus retail media a forte marge. L'audio genere par IA permet d'offrir aux annonceurs un messaging localise et temps reel, mesurable magasin par magasin, avec une portee particuliere dans les zones rurales que Dollar General couvre densement.",
+  "points_cles": ["Reseau audio retail media in-store avec publicites audio generees par IA et localisees.", "Plateforme QSIC branchee sur les donnees POS, regie DG Media Network.", "Extension a environ 6000 magasins, total porte a 12000 magasins au T2 2026.", "Preuve B, statut confirme."],
+  "description": "DG Media Network, la regie retail media de Dollar General, etend son reseau audio in-store en s'appuyant sur la plateforme QSIC. QSIC combine les donnees de point de vente (POS), une musique curatee et des publicites audio generees par IA pour diffuser en magasin des messages cibles et localises. L'annonce d'avril 2026 porte sur le deploiement a environ 6000 magasins supplementaires repartis dans 48 Etats, ce qui double la presence audio existante et porte le total a 12000 magasins equipes au 2e trimestre 2026. La plateforme depasse les standards de l'IAB grace a une verification de la delivery et un reporting en boucle fermee (closed-loop) qui laisse aux marques une lecture de l'impact incremental de leur depense. QSIC revendique plus de 350 millions de shoppers touches par mois a l'echelle mondiale. Dollar General exploite plus de 20000 magasins aux Etats-Unis, avec environ 75% de la population americaine a moins de cinq miles (environ 8 km) d'un point de vente, ce qui donne au reseau une portee forte dans les communautes rurales et souvent sous-desservies.",
+  "resultats": [
+    {
+      "metrique": "Magasins equipes ajoutes dans 48 Etats par l'extension QSIC",
+      "valeur": "environ 6000",
+      "citation_exacte": "approximately 6,000 DG stores in 48 states",
+      "source_ref": "S1"
+    },
+    {
+      "metrique": "Total de magasins avec audio in-store au T2 2026, double la presence existante",
+      "valeur": "12000 magasins",
+      "citation_exacte": "the total number of DG stores with in-store audio capabilities to 12,000",
+      "source_ref": "S1"
+    },
+    {
+      "metrique": "Shoppers touches chaque mois par le reseau QSIC dans le monde",
+      "valeur": "350M+",
+      "citation_exacte": "reaching more than 350 million shoppers each month globally",
+      "source_ref": "S1"
+    },
+    {
+      "metrique": "Empreinte US, environ 75% de la population a moins de cinq miles d'un magasin",
+      "valeur": "20000+ magasins",
+      "citation_exacte": "approximately 75% of the U.S. population living within five miles of a location",
+      "source_ref": "S1"
+    },
+    {
+      "metrique": "Delivery verifiee et reporting, au-dela des standards IAB",
+      "valeur": "boucle fermee",
+      "citation_exacte": "verifies ad delivery and its closed-loop reporting",
+      "source_ref": "S2"
+    }
+  ],
+  "niveau_preuve": {
+    "niveau": "B",
+    "justification": "Chiffres publies dans le communique officiel conjoint DG Media Network / QSIC (T1 primaire de la marque-sujet et de son partenaire plateforme) : 6000 magasins ajoutes, 12000 au total au T2 2026, plus de 350 millions de shoppers mensuels. Corrobore par la presse professionnelle etablie (Retail Dive). Ce sont des chiffres de deploiement et de portee annonces conjointement par la marque et le vendor, pas des resultats financiers ni un incremental audite : le cas ne monte donc pas au niveau A malgre la solidite des sources."
+  },
+  "dates": {
+    "lancement": "2026-04 (annonce de l'extension IA via QSIC ; reseau audio in-store deja existant sur environ 6000 magasins)",
+    "derniere_confirmation_activite": "2026-04",
+    "verifie_le": "2026-07-13",
+    "revoir_apres": "2027-01-13"
+  },
+  "statut_vivant": {
+    "statut": "confirme",
+    "note": "Le reseau audio in-store preexiste (l'extension QSIC double une presence deja operationnelle d'environ 6000 magasins). L'objectif de 12000 magasins etait fixe au 2e trimestre 2026 ; annonce recente (avril 2026), aucun signal de retrait. Nous n'avons pas de source post-completion confirmant que les 12000 magasins sont tous en service."
+  },
+  "sources": [
+    {
+      "ref": "S1",
+      "type": "blog_officiel",
+      "fiabilite": "T1_primaire",
+      "titre": "DG Media Network to Introduce AI-Enabled In-Store Audio Network Across Thousands of Dollar General Stores",
+      "url": "https://www.dgmedianetwork.com/news/dg-media-network-to-introduce-ai-enabled-in-store-audio-network-across-thousands-of-dollar-general-stores",
+      "date_publication": "2026-04-13",
+      "consulte_le": "2026-07-13"
+    },
+    {
+      "ref": "S2",
+      "type": "presse",
+      "fiabilite": "T3_presse_etablie",
+      "titre": "Dollar General's media network rolls out AI store audio program",
+      "url": "https://www.retaildive.com/news/dollar-general-ai-store-audio-media-network/817301/",
+      "date_publication": "2026-04-13",
+      "consulte_le": "2026-07-13"
+    },
+    {
+      "ref": "S3",
+      "type": "presse",
+      "fiabilite": "T4_secondaire",
+      "titre": "DG Media Network to Introduce AI-Enabled In-Store Audio Network (republication du communique)",
+      "url": "https://www.stocktitan.net/news/DG/dg-media-network-to-introduce-ai-enabled-in-store-audio-network-o0qiqrx2spq6.html",
+      "date_publication": "2026-04-13",
+      "consulte_le": "2026-07-13"
+    }
+  ],
+  "fonctionnement_operationnel": {
+    "cadence": "Diffusion continue en magasin ; campagnes planifiees et optimisees en continu, contexte rafraichi par les donnees POS",
+    "opere_par": "DG Media Network, la regie retail media de Dollar General, sur la plateforme QSIC",
+    "signal_pilote": "Les donnees de point de vente par magasin (produits, promotions, moments d'affluence) et la geographie du magasin. C'est ce contexte qui rend le message localise et temps reel ; sans ce flux, la diffusion retombe sur du generique et perd sa valeur pour l'annonceur.",
+    "etapes": [
+      {
+        "etape": "Achat d'inventaire",
+        "detail": "Un annonceur reserve de l'inventaire audio in-store aupres de DG Media Network, avec ciblage geographique et engagements de delivery.",
+        "acteur": "annonceur"
+      },
+      {
+        "etape": "Ingestion du contexte",
+        "detail": "QSIC ingere les donnees POS et le contexte local de chaque magasin pour cadrer le message a diffuser.",
+        "acteur": "IA"
+      },
+      {
+        "etape": "Generation et planification",
+        "detail": "La plateforme genere ou assemble les spots audio localises et les planifie par magasin et par creneau, entremeles a la musique curatee.",
+        "acteur": "IA"
+      },
+      {
+        "etape": "Diffusion en magasin",
+        "detail": "Les spots sont joues sur les haut-parleurs des magasins equipes, au moment prevu.",
+        "acteur": "IA"
+      },
+      {
+        "etape": "Mesure et reporting",
+        "detail": "QSIC verifie la delivery et renvoie a l'annonceur un reporting en boucle fermee sur la portee et l'impact incremental.",
+        "acteur": "agence"
+      }
+    ]
+  },
+  "schema_flow": {
+    "statut": "approche_type",
+    "noeuds": [
+      {
+        "id": "annonceur",
+        "role_generique": "humain",
+        "label": "Annonceur / marque qui achete l'inventaire"
+      },
+      {
+        "id": "dgmn",
+        "role_generique": "paid_platform",
+        "label": "DG Media Network (regie retail media)"
+      },
+      {
+        "id": "pos",
+        "role_generique": "data_source",
+        "label": "Donnees de point de vente par magasin (POS, geo)"
+      },
+      {
+        "id": "qsic",
+        "role_generique": "modele_ia",
+        "label": "QSIC : generation, planification et diffusion audio par IA",
+        "outil_documente": "QSIC"
+      },
+      {
+        "id": "magasin",
+        "role_generique": "site_app",
+        "label": "Haut-parleurs en magasin, shoppers"
+      },
+      {
+        "id": "reporting",
+        "role_generique": "data_source",
+        "label": "Verification de delivery et closed-loop reporting"
+      }
+    ],
+    "liens": [
+      [
+        "annonceur",
+        "dgmn",
+        "achat d'inventaire audio"
+      ],
+      [
+        "dgmn",
+        "qsic",
+        "campagne et ciblage"
+      ],
+      [
+        "pos",
+        "qsic",
+        "contexte local et temps reel"
+      ],
+      [
+        "qsic",
+        "magasin",
+        "spots audio generes par IA, localises"
+      ],
+      [
+        "magasin",
+        "reporting",
+        "delivery verifiee"
+      ],
+      [
+        "reporting",
+        "annonceur",
+        "impact incremental (boucle fermee)"
+      ]
+    ]
+  },
+  "replication": {
+    "statut_epistemique": "infere",
+    "prerequis_data": [
+      "Donnees de point de vente par magasin, disponibles en quasi temps reel",
+      "Referentiel geographique et attributs locaux par magasin",
+      "Catalogue produits et calendrier promotionnel",
+      "Inventaire audio structure (magasins equipes, creneaux disponibles)"
+    ],
+    "prerequis_orga": [
+      "Une regie retail media dediee (vente d'espaces, ad ops, relation annonceurs)",
+      "Un parc de magasins physiques equipes en materiel audio",
+      "Un cadre de mesure et de reporting accepte par les annonceurs",
+      "Le respect des obligations de transparence sur le contenu audio genere par IA"
+    ],
+    "stack_possible": [
+      "Plateforme audio retail type QSIC (generation, planification, diffusion, mesure)",
+      "Integration des flux POS vers la plateforme",
+      "Moteur de generation de spots audio par IA",
+      "Systeme de diffusion sonore en magasin",
+      "Outillage de closed-loop reporting vers l'annonceur"
+    ],
+    "premiere_etape": "Cartographier l'inventaire audio disponible (magasins equipes, creneaux, couverture geographique) et brancher les donnees POS par magasin, avant de proposer le premier format aux annonceurs.",
+    "playbook": [
+      {
+        "action": "Auditer le parc de magasins : materiel audio en place, couverture, zones a fort trafic.",
+        "livrable": "Inventaire audio adressable cartographie."
+      },
+      {
+        "action": "Integrer les donnees POS par magasin pour contextualiser le messaging (produits, promotions, moments).",
+        "livrable": "Flux POS connecte a la plateforme audio."
+      },
+      {
+        "action": "Mettre en place la generation d'audio par IA et la planification par magasin et par creneau via une plateforme type QSIC.",
+        "livrable": "Pipeline de creation et de diffusion de spots localises."
+      },
+      {
+        "action": "Structurer l'offre commerciale de la regie : formats, tarification, ciblage geographique, engagements de delivery.",
+        "livrable": "Kit media vendable aux annonceurs."
+      },
+      {
+        "action": "Brancher la mesure : verification de delivery et reporting en boucle fermee vers l'annonceur.",
+        "livrable": "Reporting d'impact par campagne."
+      }
+    ],
+    "equipe": "Une regie retail media (commercial et ad ops), une equipe data pour les flux POS et le contexte local, l'exploitation magasins pour le materiel audio, et un partenaire plateforme pour la generation et la diffusion."
+  },
+  "seo": {
+    "slug": "dollar-general-dg-media-network-audio-ia-2026",
+    "title": "Dollar General : regie retail media audio in-store generee par IA - 12000 magasins (2026)",
+    "meta_description": "DG Media Network etend avec QSIC son reseau audio in-store genere par IA a environ 6000 magasins de plus, portant le total a 12000 magasins au T2 2026.",
+    "resume_citable": "En avril 2026, DG Media Network etend avec la plateforme QSIC son reseau de publicites audio in-store generees par IA a environ 6000 magasins supplementaires dans 48 Etats, doublant sa presence audio pour atteindre 12000 magasins equipes au 2e trimestre 2026.",
+    "faq": [
+      {
+        "q": "Combien de magasins Dollar General diffusent des publicites audio generees par IA ?",
+        "a": "L'extension avec QSIC ajoute environ 6000 magasins dans 48 Etats, ce qui double la presence audio existante et porte le total a 12000 magasins equipes au 2e trimestre 2026."
+      },
+      {
+        "q": "Comment fonctionne le reseau audio in-store de DG Media Network ?",
+        "a": "La plateforme QSIC combine les donnees de point de vente, une musique curatee et des publicites audio generees par IA pour diffuser en magasin des messages localises et temps reel, avec verification de la delivery et reporting en boucle fermee."
+      }
+    ]
+  },
+  "logo_domain": "dollargeneral.com"
+}

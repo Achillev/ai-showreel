@@ -1,0 +1,269 @@
+{
+  "id": "ups-mera-reponse-email-genai-2024",
+  "type_fiche": "succes",
+  "marque": "UPS",
+  "groupe": "United Parcel Service",
+  "industrie": "autre",
+  "marches_deploiement": [
+    "Etats-Unis"
+  ],
+  "transposable_ue": {
+    "flag": "oui_avec_adaptations",
+    "note": "Un assistant genAI qui redige les reponses email du service client est transposable en UE. Le traitement de contenus clients par un LLM impose une base legale RGPD, un controle du lieu d'hebergement et de traitement des donnees, et une information au titre de l'AI Act. Le maintien d'une validation humaine avant envoi facilite la conformite."
+  },
+  "metier": "service client",
+  "intervenants": [
+    {
+      "nom": "Bala Subramanian",
+      "role": "Chief Digital and Technology Officer, UPS",
+      "source_ref": "S1"
+    }
+  ],
+  "agences": [
+    {
+      "nom": "Microsoft Azure OpenAI",
+      "role": "Fournisseur des modeles GPT-3.5 Turbo et GPT-4 utilises par MeRA",
+      "source_ref": "S1"
+    }
+  ],
+  "axes": {
+    "levier": "retention",
+    "touchpoints": [
+      "email service client"
+    ],
+    "etape_parcours": "post-achat",
+    "famille": "generation",
+    "pattern": "assistance agent genAI (redaction de reponses)",
+    "type_ia": [
+      "LLM (GPT-3.5 Turbo, GPT-4)",
+      "analyse de sentiment"
+    ],
+    "plateforme_stack": [
+      "Microsoft Azure OpenAI",
+      "custom/in-house"
+    ],
+    "objectif_metrique": [
+      "temps de traitement par email",
+      "volume d'emails traites",
+      "coherence des reponses"
+    ]
+  },
+  "implementation": "hybride",
+  "objectif_business": "Reduire le temps que les conseillers passent a rediger des reponses email face a un volume massif, sans deteriorer la qualite ni le ton, en gardant l'humain comme validateur final.",
+  "description": "MeRA (Message Response Automation) est un assistant genAI qui redige des reponses aux emails clients de UPS. Le systeme lit le message entrant, analyse le sentiment, applique les regles metier et la base de connaissances de UPS, puis propose une reponse complete que le conseiller confirme ou modifie avant envoi. Le role de l'agent bascule vers la validation, ce qui accelere le traitement tout en maintenant un controle humain. UPS est parti des modeles GPT-3.5 Turbo et GPT-4 via Azure OpenAI, avec un cadre de raisonnement sequentiel entraine sur ses propres regles.",
+  "resultats": [
+    {
+      "metrique": "Reduction du temps de traitement par email (pilote)",
+      "valeur": "50%",
+      "citation_exacte": "During pilot testing, UPS earned 50% reduction in the time agents spent resolving e-mails.",
+      "source_ref": "S1"
+    },
+    {
+      "metrique": "Volume d'emails clients quotidien adresse",
+      "valeur": "environ 52 000",
+      "citation_exacte": "automates responses to some of the roughly 52,000 customer e-mails UPS receives each day",
+      "source_ref": "S1"
+    }
+  ],
+  "niveau_preuve": {
+    "niveau": "C",
+    "justification": "Presse etablie (CIO) citant UPS nommement, avec chiffres et citation du dirigeant, confirmee par une seconde reprise presse specialisee (Supply Chain 24/7). Reconnaissance externe via le CIO 100 Award 2024. Chiffre pilote plutot que resultat financier consolide, d'ou C."
+  },
+  "dates": {
+    "lancement": "conception juillet 2023, beta octobre 2023, production limitee novembre 2023",
+    "derniere_confirmation_activite": "2024 (couverture presse et CIO 100 Award)",
+    "verifie_le": "2026-07-11",
+    "revoir_apres": "2027-01-11"
+  },
+  "statut_vivant": {
+    "statut": "confirme",
+    "note": "MeRA documente en production sur le centre de contact, avec un plan d'extension a d'autres fonctions (RH, ventes, finance)."
+  },
+  "sources": [
+    {
+      "ref": "S1",
+      "type": "presse",
+      "fiabilite": "T3_presse_etablie",
+      "titre": "UPS delivers customer wins with generative AI",
+      "url": "https://www.cio.com/article/2096052/ups-delivers-customer-wins-with-generative-ai.html",
+      "date_publication": "2024",
+      "consulte_le": "2026-07-11"
+    },
+    {
+      "ref": "S2",
+      "type": "presse",
+      "fiabilite": "T4_secondaire",
+      "titre": "UPS Cuts Email Response Time in Half with AI Automation",
+      "url": "https://www.supplychain247.com/article/ups-mera-ai-automation",
+      "date_publication": "2024",
+      "consulte_le": "2026-07-11"
+    }
+  ],
+  "fonctionnement_operationnel": {
+    "cadence": "Temps reel, a chaque email client entrant, dans le flux de travail du conseiller.",
+    "opere_par": "Centre de contact UPS, avec la direction Digital and Technology pour le systeme MeRA.",
+    "signal_pilote": "La qualite des regles metier et de la base de connaissances qui nourrissent le modele. Si ces regles sont obsoletes, le brouillon propose devient faux et le conseiller doit tout reecrire, ce qui supprime le gain de temps.",
+    "etapes": [
+      {
+        "etape": "Reception de l'email",
+        "detail": "Un message client arrive dans la file du service client.",
+        "acteur": "client"
+      },
+      {
+        "etape": "Analyse et redaction",
+        "detail": "MeRA lit le message, evalue le sentiment, applique les regles UPS et redige une reponse complete.",
+        "acteur": "IA"
+      },
+      {
+        "etape": "Validation humaine",
+        "detail": "Le conseiller confirme ou ajuste la reponse proposee avant l'envoi.",
+        "acteur": "service client"
+      },
+      {
+        "etape": "Envoi et boucle",
+        "detail": "La reponse validee part au client ; les corrections nourrissent l'amelioration du systeme.",
+        "acteur": "service client"
+      }
+    ]
+  },
+  "schema_flow": {
+    "statut": "documente",
+    "noeuds": [
+      {
+        "id": "cust",
+        "role_generique": "humain",
+        "label": "Client UPS"
+      },
+      {
+        "id": "inbox",
+        "role_generique": "canal_conversationnel",
+        "label": "File email service client"
+      },
+      {
+        "id": "llm",
+        "role_generique": "modele_ia",
+        "label": "MeRA (redaction de reponse)",
+        "outil_documente": "Azure OpenAI GPT-3.5 Turbo / GPT-4"
+      },
+      {
+        "id": "kb",
+        "role_generique": "data_source",
+        "label": "Regles metier et base de connaissances UPS"
+      },
+      {
+        "id": "agent",
+        "role_generique": "humain",
+        "label": "Conseiller (validation)"
+      }
+    ],
+    "liens": [
+      [
+        "cust",
+        "inbox"
+      ],
+      [
+        "inbox",
+        "llm"
+      ],
+      [
+        "kb",
+        "llm"
+      ],
+      [
+        "llm",
+        "agent",
+        "brouillon propose"
+      ],
+      [
+        "agent",
+        "cust",
+        "reponse validee"
+      ]
+    ]
+  },
+  "replication": {
+    "statut_epistemique": "infere",
+    "prerequis_data": [
+      "historique d'emails clients etiquetes",
+      "base de connaissances et regles metier a jour",
+      "modele de sentiment ou LLM avec analyse de tonalite"
+    ],
+    "prerequis_orga": [
+      "conseillers formes au role de validateur",
+      "boucle de correction pour ameliorer le modele",
+      "cadre de conformite sur le traitement des donnees clients"
+    ],
+    "stack_possible": [
+      "LLM commercial via cloud",
+      "integration a l'outil de ticketing / email",
+      "couche de regles metier"
+    ],
+    "premiere_etape": "Prendre une categorie d'emails a fort volume et bien documentee, generer des brouillons valides par l'agent, mesurer le temps gagne.",
+    "playbook": [
+      {
+        "action": "Choisir une categorie d'emails a fort volume et bien documentee ; rassembler l'historique et les regles metier correspondantes.",
+        "livrable": "Corpus d'emails etiquetes + regles metier documentees et a jour."
+      },
+      {
+        "action": "Brancher le LLM (Azure OpenAI ou equivalent) sur les regles et la base de connaissances, generer des brouillons en shadow mode.",
+        "livrable": "Brouillons compares aux reponses reelles des agents, ecarts analyses."
+      },
+      {
+        "action": "Lancer le pilote avec validation humaine sur un groupe d'agents et mesurer le temps de traitement.",
+        "livrable": "Tableau temps par email : groupe pilote vs groupe temoin."
+      },
+      {
+        "action": "Installer la boucle de correction : les modifications des agents nourrissent prompts et regles.",
+        "livrable": "Taux de brouillons acceptes sans retouche en progression documentee."
+      },
+      {
+        "action": "Etendre aux categories d'emails voisines avec garde-fous de ton et de conformite.",
+        "livrable": "Production sur le domaine d'emails cible avec suivi qualite hebdomadaire."
+      }
+    ],
+    "equipe": "1 PM + 1-2 devs (integration LLM et ticketing) + 1 expert metier service client + agents pilotes comme validateurs"
+  },
+  "seo": {
+    "slug": "ups-mera-reponse-email-genai-2024",
+    "title": "UPS : assistant genAI MeRA - 50% de temps gagne sur les emails clients (2024)",
+    "meta_description": "MeRA, l'assistant genAI de UPS, redige des reponses aux emails clients validees par un conseiller et reduit de 50% le temps de traitement, sur un flux d'environ 52 000 emails par jour.",
+    "resume_citable": "UPS a deploye MeRA, un assistant genAI qui redige les reponses aux emails clients (validees par un conseiller) et reduit de 50% le temps de traitement, sur environ 52 000 emails recus chaque jour.",
+    "faq": [
+      {
+        "q": "Qu'est-ce que MeRA chez UPS ?",
+        "a": "Un assistant genAI qui lit l'email d'un client, analyse le sentiment et redige une reponse complete que le conseiller valide ou ajuste avant envoi."
+      },
+      {
+        "q": "Quel gain MeRA a-t-il apporte ?",
+        "a": "Une reduction de 50% du temps que les conseillers passent a traiter les emails pendant le pilote, sur un volume d'environ 52 000 emails par jour."
+      }
+    ]
+  },
+  "logo_domain": "ups.com",
+  "stack_technique": [
+    {
+      "nom": "Microsoft Azure OpenAI Service",
+      "categorie": "plateforme",
+      "detail": "Plateforme cloud qui fournit a UPS les modeles OpenAI dans un cadre entreprise.",
+      "url": "https://azure.microsoft.com"
+    },
+    {
+      "nom": "OpenAI GPT-3.5 Turbo et GPT-4",
+      "categorie": "llm",
+      "detail": "Modeles de depart de MeRA pour lire l'email, evaluer le sentiment et rediger la reponse.",
+      "url": "https://openai.com"
+    },
+    {
+      "nom": "MeRA (Message Response Automation)",
+      "categorie": "outil",
+      "detail": "Systeme custom UPS : cadre de raisonnement sequentiel entraine sur les regles metier et la base de connaissances maison.",
+      "url": "https://www.ups.com"
+    },
+    {
+      "nom": "File email du centre de contact UPS",
+      "categorie": "infra",
+      "detail": "Canal d'entree (environ 52 000 emails clients par jour) dans lequel MeRA propose ses brouillons au conseiller.",
+      "url": "https://www.ups.com"
+    }
+  ]
+}

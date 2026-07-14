@@ -1,0 +1,312 @@
+{
+  "id": "walgreens-mywalgreens-personnalisation-2024",
+  "type_fiche": "succes",
+  "marque": "Walgreens",
+  "groupe": "Walgreens Boots Alliance",
+  "industrie": "sante_pharma",
+  "marches_deploiement": [
+    "Etats-Unis"
+  ],
+  "transposable_ue": {
+    "flag": "oui_avec_adaptations",
+    "note": "La personnalisation des offres repose sur un profil client de fidelite et des donnees de comportement d'achat, parfois adjacentes a la sante (vaccins, produits pharmacie). En UE, profilage marketing soumis a base legale et consentement RGPD, et les alertes contextuelles liees a la sante demandent une vigilance sur l'article 9. Le pattern (CDP plus activation) se transpose ; le perimetre des donnees exploitables est plus etroit."
+  },
+  "metier": "marketing / CRM / fidelite / e-commerce",
+  "marque_linkedin": "https://www.linkedin.com/company/walgreens/",
+  "intervenants": [
+    {
+      "nom": "Matt Harker",
+      "role": "Vice President, Global Marketing Strategy and Transformation, Walgreens Boots Alliance",
+      "source_ref": "S2"
+    },
+    {
+      "nom": "Beth Lubotsky",
+      "role": "Senior Director, Customer Engagement & Loyalty, Walgreen Co.",
+      "source_ref": "S2"
+    },
+    {
+      "nom": "Francesco Tinto",
+      "role": "Global Chief Information Officer et Senior Vice President, Walgreens Boots Alliance",
+      "source_ref": "S3"
+    }
+  ],
+  "agences": [
+    {
+      "nom": "Adobe",
+      "role": "Couche d'activation et de personnalisation (stack Adobe)",
+      "source_ref": "S2"
+    }
+  ],
+  "axes": {
+    "levier": "retention",
+    "touchpoints": [
+      "application myWalgreens",
+      "walgreens.com",
+      "offres et bannieres personnalisees",
+      "programme de fidelite"
+    ],
+    "etape_parcours": "fidelite",
+    "famille": "personnalisation",
+    "pattern": "personnalisation de masse des offres sur base de fidelite via CDP et activation",
+    "type_ia": [
+      "machine learning",
+      "systeme de recommandation",
+      "personnalisation"
+    ],
+    "plateforme_stack": [
+      "Adobe (Experience Cloud, couche d'activation)",
+      "custom/in-house"
+    ],
+    "objectif_metrique": [
+      "membres recevant des offres personnalisees",
+      "conversion clic vers achat",
+      "engagement"
+    ]
+  },
+  "implementation": "hybride",
+  "objectif_business": "Servir a plus de 110 millions de membres du programme myWalgreens l'offre, le contenu et les recommandations les plus pertinents sur l'app et le site, pour convertir plus de clics en achats et renforcer la fidelite sur une base de clients massive.",
+  "description": "Le programme de fidelite myWalgreens et l'application alimentent un moteur de personnalisation qui pousse offres, contenus et recommandations adaptes au profil de chaque client. Sur la couche Adobe d'activation, Walgreens personnalise les resultats de recherche, les bannieres marketing et les offres du carrousel myWalgreens, avec des alertes contextuelles par region (pic de grippe, pollen). Selon un communique de mai 2024, plus de 110 millions de membres recoivent des offres personnalisees chaque jour. Le CIO decrit une IA embarquee dans la relation client pour servir la meilleure promotion et le meilleur contenu, y compris des parcours d'accompagnement pour les patients atteints de maladies chroniques.",
+  "resultats": [
+    {
+      "metrique": "Membres recevant des offres personnalisees chaque jour",
+      "valeur": "plus de 110 millions",
+      "citation_exacte": "more than 110 million members receive personalized offerings daily",
+      "source_ref": "S1"
+    },
+    {
+      "metrique": "Role de l'IA dans la personnalisation",
+      "valeur": "servir la meilleure promotion, le meilleur contenu, des offres personnalisees",
+      "citation_exacte": "we can serve the best promotion, the best content, personalized offerings",
+      "source_ref": "S3"
+    },
+    {
+      "metrique": "Perimetre client Walgreens Boots Alliance",
+      "valeur": "plus de 100 millions de clients dans le monde",
+      "citation_exacte": "100+ million customers worldwide",
+      "source_ref": "S2"
+    }
+  ],
+  "niveau_preuve": {
+    "niveau": "C",
+    "justification": "L'echelle de la personnalisation (plus de 110 millions de membres recevant des offres personnalisees chaque jour) est affirmee par un communique officiel Walgreens, et le dispositif Adobe plus le pilotage IA sont documentes par une etude de cas et par la presse tech nommant les responsables. Pas de resultat d'impact independant chiffre (conversion), d'ou C."
+  },
+  "dates": {
+    "lancement": "2020 (relance de myWalgreens) ; personnalisation de masse sur stack Adobe deployee a partir de 2021",
+    "derniere_confirmation_activite": "mai 2024 (communique : plus de 110 millions de membres recevant des offres personnalisees chaque jour)",
+    "verifie_le": "2026-07-11",
+    "revoir_apres": "2027-01-11"
+  },
+  "statut_vivant": {
+    "statut": "confirme",
+    "note": "Base de fidelite de plus de 110 millions de membres confirmee mi-2024, personnalisation decrite comme centrale par le CIO. Le programme myWalgreens reste actif. A re-verifier au vu des restructurations en cours chez Walgreens Boots Alliance."
+  },
+  "sources": [
+    {
+      "ref": "S1",
+      "type": "presse",
+      "fiabilite": "T1_primaire",
+      "titre": "Walgreens Introduces Summer of Savings",
+      "url": "https://corporate.walgreens.com/news-and-stories/press-releases/2024/walgreens-introduces-summer-savings/",
+      "date_publication": "2024-05-29",
+      "consulte_le": "2026-07-11"
+    },
+    {
+      "ref": "S2",
+      "type": "presse",
+      "fiabilite": "T4_secondaire",
+      "titre": "How Walgreens solves mass personalization challenge with Adobe",
+      "url": "https://diginomica.com/walgreens-solves-mass-personalization-challenge-adobe",
+      "consulte_le": "2026-07-11"
+    },
+    {
+      "ref": "S3",
+      "type": "presse",
+      "fiabilite": "T3_presse_etablie",
+      "titre": "Walgreens Boots Alliance gets personal with AI",
+      "url": "https://www.cio.com/article/304711/walgreens-boots-alliance-gets-personal-with-ai.html",
+      "consulte_le": "2026-07-11"
+    }
+  ],
+  "fonctionnement_operationnel": {
+    "cadence": "Temps reel a l'ouverture de l'app et du site, avec offres rafraichies au fil du comportement d'achat",
+    "opere_par": "Equipe marketing et fidelite de Walgreens, avec le partenaire technologique d'activation (Adobe)",
+    "signal_pilote": "L'identifiant de fidelite myWalgreens qui relie les achats a une personne, plus le comportement de navigation et les signaux regionaux. Sans cet identifiant, la personnalisation retombe sur des offres generiques par magasin.",
+    "etapes": [
+      {
+        "etape": "Constitution du profil",
+        "detail": "Les achats, la navigation et l'appartenance au programme myWalgreens alimentent un profil client.",
+        "acteur": "Equipe data"
+      },
+      {
+        "etape": "Selection des offres",
+        "detail": "Le moteur choisit offres, recommandations et bannieres les plus pertinentes pour chaque profil.",
+        "acteur": "IA"
+      },
+      {
+        "etape": "Activation",
+        "detail": "La couche Adobe pousse le contenu personnalise sur l'app, le site et le carrousel myWalgreens.",
+        "acteur": "Marketing et partenaire techno"
+      },
+      {
+        "etape": "Alertes contextuelles",
+        "detail": "Des alertes regionales (grippe, pollen) declenchent des offres et messages adaptes.",
+        "acteur": "IA"
+      },
+      {
+        "etape": "Mesure et boucle",
+        "detail": "Clics et achats reviennent au profil et affinent les prochaines offres.",
+        "acteur": "Equipe data et marketing"
+      }
+    ]
+  },
+  "schema_flow": {
+    "statut": "approche_type",
+    "noeuds": [
+      {
+        "id": "src",
+        "role_generique": "data_source",
+        "label": "Achats, navigation, signaux regionaux"
+      },
+      {
+        "id": "cdp",
+        "role_generique": "cdp",
+        "label": "Profils membres myWalgreens"
+      },
+      {
+        "id": "reco",
+        "role_generique": "modele_ia",
+        "label": "Moteur de personnalisation des offres"
+      },
+      {
+        "id": "activation",
+        "role_generique": "paid_platform",
+        "label": "Couche d'activation",
+        "outil_documente": "Adobe"
+      },
+      {
+        "id": "app",
+        "role_generique": "site_app",
+        "label": "App myWalgreens et walgreens.com"
+      },
+      {
+        "id": "membre",
+        "role_generique": "humain",
+        "label": "Membre myWalgreens"
+      }
+    ],
+    "liens": [
+      [
+        "src",
+        "cdp"
+      ],
+      [
+        "cdp",
+        "reco"
+      ],
+      [
+        "reco",
+        "activation"
+      ],
+      [
+        "activation",
+        "app",
+        "offres et contenus personnalises"
+      ],
+      [
+        "app",
+        "membre"
+      ],
+      [
+        "membre",
+        "src",
+        "clic et achat, boucle de feedback"
+      ]
+    ]
+  },
+  "replication": {
+    "statut_epistemique": "infere",
+    "prerequis_data": [
+      "programme de fidelite identifiant chaque client",
+      "historique d'achat et de navigation first-party",
+      "signaux contextuels (region, saisonnalite)"
+    ],
+    "prerequis_orga": [
+      "equipe CRM et fidelite",
+      "partenaire d'activation ou stack martech",
+      "boucle de mesure des offres"
+    ],
+    "stack_possible": [
+      "CDP",
+      "moteur de recommandation ou de personnalisation",
+      "plateforme d'activation (Adobe, Salesforce, custom)",
+      "app mobile et site"
+    ],
+    "premiere_etape": "Unifier les achats des membres fidelite dans un profil exploitable par une couche d'activation de personnalisation.",
+    "playbook": [
+      {
+        "action": "Unifier achats et navigation sous l'identifiant de fidelite dans un profil client exploitable.",
+        "livrable": "Profil unifie par membre, teste sur un echantillon."
+      },
+      {
+        "action": "Brancher la couche d'activation sur un premier emplacement (carrousel d'offres).",
+        "livrable": "Offres personnalisees live sur un emplacement unique."
+      },
+      {
+        "action": "Comparer personnalise vs generique par A/B test.",
+        "livrable": "Lecture conversion clic vers achat, personnalise contre temoin."
+      },
+      {
+        "action": "Etendre aux autres emplacements (recherche, bannieres) et ajouter les alertes contextuelles regionales.",
+        "livrable": "Personnalisation multi-emplacements en production."
+      },
+      {
+        "action": "Boucler la mesure continue et la gouvernance des offres (eligibilite, pression commerciale).",
+        "livrable": "Tableau de bord offres + regles d'eligibilite documentees."
+      }
+    ],
+    "equipe": "1 PM CRM/fidelite + 1-2 data engineers + 1 data scientist (moteur d'offres) + equipe marketing pour les regles d'offres"
+  },
+  "seo": {
+    "slug": "walgreens-mywalgreens-personnalisation-2024",
+    "title": "Walgreens : personnalisation de masse myWalgreens - 110 millions de membres cibles chaque jour (2024)",
+    "meta_description": "Walgreens personnalise offres, recherche et bannieres pour plus de 110 millions de membres myWalgreens chaque jour, via une couche d'activation Adobe et un pilotage IA.",
+    "resume_citable": "Walgreens sert des offres personnalisees chaque jour a plus de 110 millions de membres myWalgreens, via un moteur de personnalisation sur couche d'activation Adobe qui adapte recherche, bannieres et offres au profil de chaque client.",
+    "faq": [
+      {
+        "q": "Combien de clients Walgreens personnalise-t-il ?",
+        "a": "Plus de 110 millions de membres du programme myWalgreens recoivent des offres personnalisees chaque jour, selon un communique de mai 2024."
+      },
+      {
+        "q": "Sur quelle technologie repose la personnalisation ?",
+        "a": "Sur un profil client de fidelite active via une couche Adobe, qui personnalise resultats de recherche, bannieres marketing et offres du carrousel myWalgreens, avec des alertes contextuelles regionales."
+      }
+    ]
+  },
+  "logo_domain": "walgreens.com",
+  "stack_technique": [
+    {
+      "nom": "Adobe Experience Cloud",
+      "categorie": "plateforme",
+      "detail": "Couche d'activation qui personnalise resultats de recherche, bannieres marketing et offres du carrousel myWalgreens.",
+      "url": "https://business.adobe.com"
+    },
+    {
+      "nom": "Moteur de personnalisation Walgreens (ML in-house)",
+      "categorie": "outil",
+      "detail": "Modeles maison qui choisissent la meilleure offre et le meilleur contenu par profil ; l'architecture exacte n'est pas publiee.",
+      "url": "https://www.walgreens.com"
+    },
+    {
+      "nom": "Programme de fidelite myWalgreens",
+      "categorie": "infra",
+      "detail": "Identifiant qui relie achats, navigation et profil pour plus de 110 millions de membres ; sans lui, retour aux offres generiques par magasin.",
+      "url": "https://www.walgreens.com"
+    },
+    {
+      "nom": "App myWalgreens et walgreens.com",
+      "categorie": "outil",
+      "detail": "Surfaces de diffusion des offres personnalisees et des alertes contextuelles regionales (grippe, pollen).",
+      "url": "https://www.walgreens.com"
+    }
+  ]
+}

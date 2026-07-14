@@ -1,0 +1,269 @@
+{
+  "id": "lvmh-maia-genai-marketing-2024",
+  "type_fiche": "succes",
+  "marque": "LVMH",
+  "groupe": "LVMH Moet Hennessy Louis Vuitton",
+  "industrie": "luxe_beaute",
+  "marches_deploiement": [
+    "France (siege et Maisons)",
+    "International (Maisons du groupe)"
+  ],
+  "transposable_ue": {
+    "flag": "oui",
+    "note": "Groupe francais, plateforme interne construite sur un socle data groupe. Usage genAI sur donnees d'entreprise : cadrage RGPD sur les donnees RH, client et fournisseurs, isolation des donnees vis-a-vis des modeles tiers (Google, OpenAI) et journalisation des acces."
+  },
+  "metier": "marketing / creation / retail / fonctions support",
+  "intervenants": [
+    {
+      "nom": "Franck Le Moal",
+      "role": "Group IT and Technology Director, LVMH",
+      "source_ref": "S1"
+    }
+  ],
+  "axes": {
+    "levier": "acquisition",
+    "touchpoints": [
+      "outils internes marketing",
+      "creation / design",
+      "e-commerce (copy)",
+      "conseillers de vente (Maisons)"
+    ],
+    "etape_parcours": "consideration",
+    "famille": "generation",
+    "pattern": "assistant genAI interne d'entreprise (contenu marketing, perso, recherche)",
+    "type_ia": [
+      "LLM",
+      "generation d'image",
+      "assistant conversationnel",
+      "agents"
+    ],
+    "plateforme_stack": [
+      "Google Gemini",
+      "Google Imagen",
+      "OpenAI GPT",
+      "socle data groupe (Google Cloud)"
+    ],
+    "objectif_metrique": [
+      "volume de requetes traitees",
+      "adoption interne",
+      "productivite marketing et creation"
+    ]
+  },
+  "implementation": "hybride",
+  "objectif_business": "Doter les equipes marketing, creation et retail des Maisons d'un assistant genAI groupe pour accelerer la production de contenu, la personnalisation des messages client et la recherche interne, sans exposer l'univers de marque a des chatbots grand public.",
+  "description": "MaIA est l'assistant IA interne de LVMH, lance en 2024 et construit sur une combinaison de modeles Google (Gemini, Imagen) et OpenAI (GPT), au-dessus d'un socle data groupe bati avec Google. Il est utilise par 40 000 collaborateurs et traite de l'ordre de 1,5 a 2 millions de requetes par mois. Cote marketing et creation, MaIA sert a generer du copy e-commerce, des messages client personnalises et des mood boards pour les equipes design, en plus de la recherche documentaire et de la traduction. Des Maisons declinent la plateforme en agents dedies : un agent retail chez Celine pour repondre aux questions complexes des conseillers, un agent de prise de contact client chez Tiffany and Co. pour rediger des messages personnalises. LVMH assume de reserver ces outils a l'interne et de ne pas mettre de chatbot sur ses sites de vente.",
+  "resultats": [
+    {
+      "metrique": "Collaborateurs utilisateurs",
+      "valeur": "40 000",
+      "citation_exacte": "more than 2 million requests a month from 40,000 employees",
+      "source_ref": "S1"
+    },
+    {
+      "metrique": "Requetes mensuelles traitees",
+      "valeur": "1,5 a 2 millions",
+      "citation_exacte": "1.5 million requests handled monthly",
+      "source_ref": "S2"
+    }
+  ],
+  "niveau_preuve": {
+    "niveau": "C",
+    "justification": "Deux titres de presse etablie (PYMNTS, WWD via Yahoo Finance) citant nommement LVMH et son directeur technique, avec chiffres concordants d'usage (40 000 collaborateurs, 1,5 a 2 M de requetes/mois). Pas de resultat financier direct attache a MaIA."
+  },
+  "dates": {
+    "lancement": "2024 (deploiement de MaIA au niveau groupe)",
+    "derniere_confirmation_activite": "2025-06 (PYMNTS et WWD, 40 000 collaborateurs, agents Celine et Tiffany)",
+    "verifie_le": "2026-07-11",
+    "revoir_apres": "2027-01-31"
+  },
+  "statut_vivant": {
+    "statut": "confirme",
+    "note": "Usage a l'echelle du groupe confirme mi-2025, avec declinaisons en agents metier par les Maisons (Celine, Tiffany)."
+  },
+  "sources": [
+    {
+      "ref": "S1",
+      "type": "presse",
+      "fiabilite": "T3_presse_etablie",
+      "titre": "LVMH Deploys AI Tools Across Operation, Seeking Efficiency and Customer Retention",
+      "url": "https://www.pymnts.com/artificial-intelligence-2/2025/lvmh-deploys-ai-tools-across-operation-seeking-efficiency-and-customer-retention/",
+      "date_publication": "2025-06-09",
+      "consulte_le": "2026-07-11"
+    },
+    {
+      "ref": "S2",
+      "type": "presse",
+      "fiabilite": "T3_presse_etablie",
+      "titre": "LVMH and Google Executives Talk Agentic AI, Cybersecurity and Navigating Volatility (WWD)",
+      "url": "https://finance.yahoo.com/news/lvmh-google-executives-talk-agentic-193000902.html",
+      "date_publication": "2025",
+      "consulte_le": "2026-07-11"
+    }
+  ],
+  "fonctionnement_operationnel": {
+    "cadence": "Usage quotidien a la demande ; nouveaux agents metier construits par les Maisons au fil des besoins",
+    "opere_par": "Direction IT et technologie du groupe pour la plateforme ; equipes marketing, creation et retail des Maisons comme utilisateurs",
+    "signal_pilote": "L'acces gouverne au socle data groupe et aux donnees de marque. Sans branchement a la donnee interne et au ton de marque, la generation reste generique et inutilisable en luxe.",
+    "etapes": [
+      {
+        "etape": "Requete metier",
+        "detail": "Un collaborateur marketing ou creation demande du copy, une image, une traduction ou une recherche.",
+        "acteur": "marketing / creation"
+      },
+      {
+        "etape": "Traitement multi-modeles",
+        "detail": "MaIA route vers Gemini, Imagen ou GPT selon la tache, ancre sur les donnees et le ton du groupe.",
+        "acteur": "IA / plateforme"
+      },
+      {
+        "etape": "Agent metier",
+        "detail": "Une Maison decline MaIA en agent dedie (retail Celine, prise de contact Tiffany) pour un usage cible.",
+        "acteur": "equipe Maison"
+      },
+      {
+        "etape": "Controle humain",
+        "detail": "Le collaborateur relit et valide le contenu avant diffusion ; les sites de vente restent sans chatbot.",
+        "acteur": "marketing / conseiller"
+      }
+    ]
+  },
+  "schema_flow": {
+    "statut": "approche_type",
+    "noeuds": [
+      {
+        "id": "user",
+        "role_generique": "humain",
+        "label": "Collaborateur marketing / creation / retail"
+      },
+      {
+        "id": "maia",
+        "role_generique": "modele_ia",
+        "label": "MaIA (assistant genAI groupe)",
+        "outil_documente": "Google Gemini + Imagen + OpenAI GPT"
+      },
+      {
+        "id": "data",
+        "role_generique": "data_source",
+        "label": "Socle data groupe LVMH"
+      },
+      {
+        "id": "agent",
+        "role_generique": "modele_ia",
+        "label": "Agents metier des Maisons (Celine, Tiffany)"
+      }
+    ],
+    "liens": [
+      [
+        "user",
+        "maia"
+      ],
+      [
+        "data",
+        "maia",
+        "ancrage donnees et ton de marque"
+      ],
+      [
+        "maia",
+        "agent",
+        "declinaison en agent metier"
+      ],
+      [
+        "maia",
+        "user",
+        "contenu, image, reponse"
+      ]
+    ]
+  },
+  "replication": {
+    "statut_epistemique": "infere",
+    "prerequis_data": [
+      "socle data d'entreprise gouverne",
+      "referentiel de ton et d'univers de marque",
+      "gouvernance d'acces aux donnees sensibles (RH, client)"
+    ],
+    "prerequis_orga": [
+      "direction IT pour tenir la plateforme centrale",
+      "licences genAI entreprise avec isolation des donnees",
+      "relais dans chaque marque pour construire les agents metier"
+    ],
+    "stack_possible": [
+      "Google Gemini / Vertex AI",
+      "OpenAI ChatGPT Enterprise / Azure OpenAI",
+      "generation d'image (Imagen, DALL-E)",
+      "orchestration d'agents"
+    ],
+    "premiere_etape": "Ouvrir un assistant genAI d'entreprise ancre sur la donnee interne et le ton de marque, avec deux cas marketing prioritaires (copy, mood boards).",
+    "playbook": [
+      {
+        "action": "Cadrer la gouvernance data et deux cas d'usage marketing prioritaires (copy e-commerce, mood boards)",
+        "livrable": "Perimetre v1 + regles d'acces aux donnees sensibles (RH, client)"
+      },
+      {
+        "action": "Contractualiser les modeles en version entreprise avec isolation des donnees et journalisation",
+        "livrable": "Acces API multi-modeles isoles, valides par la securite"
+      },
+      {
+        "action": "Construire l'assistant transverse ancre sur le socle data et le referentiel de ton de marque",
+        "livrable": "Assistant v1 ouvert a un premier groupe d'utilisateurs marketing et creation"
+      },
+      {
+        "action": "Deployer plus largement, former les equipes et suivre l'adoption",
+        "livrable": "Tableau de bord requetes et adoption par metier"
+      },
+      {
+        "action": "Decliner en agents metier par marque (support retail, prise de contact client), avec relecture humaine avant diffusion",
+        "livrable": "1 a 2 agents dedies en production dans les marques pilotes"
+      }
+    ],
+    "equipe": "1 equipe plateforme IT (3-5 personnes) + relais metier dans chaque marque pour les agents dedies + gouvernance data et legal"
+  },
+  "seo": {
+    "slug": "lvmh-maia-genai-marketing-2024",
+    "title": "LVMH : assistant genAI interne MaIA - 40 000 collaborateurs, ~2 M de requetes/mois (2024)",
+    "meta_description": "MaIA, l'assistant genAI interne de LVMH construit sur Google et OpenAI, est utilise par 40 000 collaborateurs pour ~1,5 a 2 M de requetes/mois, dont du contenu marketing.",
+    "resume_citable": "MaIA, l'assistant genAI interne de LVMH bati sur Google Gemini/Imagen et OpenAI, est utilise par 40 000 collaborateurs pour environ 1,5 a 2 millions de requetes par mois, dont la generation de contenu marketing et de messages client personnalises.",
+    "faq": [
+      {
+        "q": "Combien de personnes utilisent MaIA chez LVMH ?",
+        "a": "40 000 collaborateurs, pour de l'ordre de 1,5 a 2 millions de requetes par mois selon PYMNTS et WWD."
+      },
+      {
+        "q": "A quoi sert MaIA cote marketing ?",
+        "a": "A generer du copy e-commerce, des messages client personnalises et des mood boards pour les equipes design, en plus de la recherche et de la traduction internes."
+      }
+    ]
+  },
+  "logo_domain": "lvmh.com",
+  "stack_technique": [
+    {
+      "nom": "Google Gemini",
+      "categorie": "llm",
+      "detail": "modele de langage pour la generation de texte, la traduction et la recherche interne",
+      "url": "https://cloud.google.com"
+    },
+    {
+      "nom": "Google Imagen",
+      "categorie": "llm",
+      "detail": "generation d'images, notamment pour les mood boards des equipes design",
+      "url": "https://cloud.google.com"
+    },
+    {
+      "nom": "OpenAI GPT",
+      "categorie": "llm",
+      "detail": "second socle de generation de texte ; MaIA route la requete vers le modele adapte a la tache",
+      "url": "https://openai.com"
+    },
+    {
+      "nom": "Socle data groupe sur Google Cloud",
+      "categorie": "infra",
+      "detail": "ancre la generation sur les donnees et le ton du groupe, avec isolation vis-a-vis des modeles tiers et journalisation des acces",
+      "url": "https://cloud.google.com"
+    },
+    {
+      "nom": "MaIA (plateforme interne LVMH)",
+      "categorie": "plateforme",
+      "detail": "assistant genAI groupe utilise par 40 000 collaborateurs (1,5 a 2 M de requetes par mois), decline en agents metier par les Maisons (Celine, Tiffany)",
+      "url": "https://www.lvmh.com"
+    }
+  ]
+}

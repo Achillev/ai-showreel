@@ -1,0 +1,279 @@
+{
+  "id": "adidas-criteo-commerce-growth-2023",
+  "type_fiche": "succes",
+  "marque": "adidas",
+  "groupe": "adidas AG",
+  "industrie": "retail_ecom",
+  "marches_deploiement": [
+    "Arabie Saoudite",
+    "Emirats Arabes Unis",
+    "Egypte"
+  ],
+  "transposable_ue": {
+    "flag": "oui",
+    "note": "Criteo et ses moteurs d'enchères (Smart Bidding, ARO) operent en Europe. Le retargeting et la prospection s'appuient sur des signaux de navigation ; exposition RGPD reelle, a gerer via consentement et perimetre de collecte. Le cas montre par ailleurs la transposabilite d'un marche a l'autre (MENA ici)."
+  },
+  "metier": "marketing, performance media, retail media",
+  "intervenants": [
+    {
+      "nom": "Aleksandra Matveeva",
+      "role": "Performance Marketing Manager, adidas",
+      "source_ref": "S1"
+    }
+  ],
+  "agences": [
+    {
+      "nom": "Criteo",
+      "role": "Plateforme d'acquisition et de retargeting, moteurs d'enchères Smart Bidding et Adaptive Revenue Optimization",
+      "source_ref": "S1"
+    }
+  ],
+  "axes": {
+    "levier": "acquisition",
+    "touchpoints": [
+      "display",
+      "retargeting dynamique",
+      "prospection d'audience"
+    ],
+    "etape_parcours": "considération",
+    "famille": "optimisation_automatisation",
+    "pattern": "prospection d'audience et enchères pilotees par IA (ARO) en full-funnel",
+    "type_ia": [
+      "optimisation d'enchères (Adaptive Revenue Optimization)",
+      "prospection d'audience par IA"
+    ],
+    "plateforme_stack": [
+      "Criteo Commerce Growth",
+      "Criteo Smart Bidding",
+      "Adaptive Revenue Optimization (ARO)"
+    ],
+    "objectif_metrique": [
+      "ROAS",
+      "ROI",
+      "cout du trafic"
+    ]
+  },
+  "implementation": "plateforme",
+  "objectif_business": "Elargir l'acquisition au-dela du social et du search sur les marches MENA, en laissant l'IA de Criteo prospecter de nouvelles audiences et caler les enchères sur un objectif de ROAS.",
+  "points_cles": ["Prospection d'audience et enchères pilotees par IA sur les marches MENA.", "Plateforme Criteo Commerce Growth avec Adaptive Revenue Optimization (ARO).", "ROAS en hausse de 81% en milieu de funnel, 66% en bas de funnel.", "Preuve B, statut signaux mitiges."],
+  "description": "adidas a etendu son acquisition digitale au Moyen-Orient et en Afrique du Nord avec Criteo, au-dela des canaux social et search. Le dispositif combine prospection d'audience pilotee par IA, retargeting dynamique et le moteur Adaptive Revenue Optimization (ARO), qui fixe les enchères au cout par clic selon l'objectif de ROI et optimise vers les conversions web plutot que vers les simples visites. Sur une campagne de cinq mois, adidas rapporte un ROAS en hausse de 81 pour cent sur les campagnes de milieu de funnel et de 66 pour cent en bas de funnel. Le ROI bas de funnel est passe de 1,25 en janvier a 2,08 en mai. C'est un cas d'optimisation et d'automatisation de l'achat media : l'IA arbitre enchères et audiences, elle ne fabrique pas la creation.",
+  "resultats": [
+    {
+      "metrique": "ROAS milieu de funnel",
+      "valeur": "+81%",
+      "citation_exacte": "improved return on ad spend by 81% in mid-funnel campaigns",
+      "source_ref": "S1"
+    },
+    {
+      "metrique": "ROAS bas de funnel",
+      "valeur": "+66%",
+      "citation_exacte": "66% improvement in ROAS in the lower funnel",
+      "source_ref": "S1"
+    },
+    {
+      "metrique": "ROI bas de funnel (janvier a mai)",
+      "valeur": "de 1,25 a 2,08",
+      "citation_exacte": "from 1.25X to 2.08X",
+      "source_ref": "S1"
+    }
+  ],
+  "niveau_preuve": {
+    "niveau": "B",
+    "justification": "Etude de cas plateforme Criteo chiffree citant nommement adidas et sa Performance Marketing Manager ; source officielle interessee, d'ou B. Le dispositif MENA (prospection IA + ARO) est confirme par la communication officielle de Criteo."
+  },
+  "dates": {
+    "lancement": "2023 (campagne de cinq mois, janvier a mai)",
+    "derniere_confirmation_activite": "2023-2025 (cas rediffuse par Criteo jusqu'en 2025)",
+    "verifie_le": "2026-07-11",
+    "revoir_apres": "2027-01-11"
+  },
+  "statut_vivant": {
+    "statut": "signaux_mitiges",
+    "note": "Le dispositif d'enchères IA de Criteo reste standard et actif. La preuve chiffree publique porte sur une campagne 2023 ; le cas est rediffuse par Criteo mais sans donnees plus recentes verifiees pour adidas MENA."
+  },
+  "sources": [
+    {
+      "ref": "S1",
+      "type": "customer_story_plateforme",
+      "fiabilite": "T2_officiel_interesse",
+      "titre": "adidas | Criteo Success Story",
+      "url": "https://www.criteo.com/success-stories/adidas/",
+      "date_publication": "2023",
+      "consulte_le": "2026-07-11"
+    },
+    {
+      "ref": "S2",
+      "type": "blog_officiel",
+      "fiabilite": "T2_officiel_interesse",
+      "titre": "Criteo : adidas partnered with Criteo to expand its audience beyond social and search (MENA, AI-driven audience prospecting and Adaptive Revenue Optimization)",
+      "url": "https://x.com/criteo/status/1884240114383217073",
+      "date_publication": "2025-01",
+      "consulte_le": "2026-07-11"
+    }
+  ],
+  "fonctionnement_operationnel": {
+    "cadence": "Continu, avec reglage de l'objectif ROI par campagne et optimisation des enchères en temps reel.",
+    "opere_par": "Equipe performance media d'adidas, sur la plateforme Criteo.",
+    "signal_pilote": "La conversion web (achat) et l'objectif de ROI, sur lesquels ARO cale les enchères au cout par clic. Sans conversion suivie, l'optimisation retombe sur les visites et perd en valeur.",
+    "etapes": [
+      {
+        "etape": "Definition de l'objectif ROI",
+        "detail": "adidas fixe l'objectif de retour et le perimetre (marches MENA, produits).",
+        "acteur": "equipe performance media"
+      },
+      {
+        "etape": "Prospection d'audience",
+        "detail": "L'IA de Criteo cherche de nouvelles audiences au-dela du social et du search.",
+        "acteur": "IA (Criteo)"
+      },
+      {
+        "etape": "Optimisation des enchères (ARO)",
+        "detail": "Le moteur fixe les enchères au cout par clic selon l'objectif de ROI, optimise vers les conversions web.",
+        "acteur": "IA (Adaptive Revenue Optimization)"
+      },
+      {
+        "etape": "Lecture ROAS / ROI",
+        "detail": "L'equipe suit ROAS et ROI par etage de funnel et ajuste l'objectif.",
+        "acteur": "equipe performance media"
+      }
+    ]
+  },
+  "schema_flow": {
+    "statut": "approche_type",
+    "noeuds": [
+      {
+        "id": "objectif",
+        "role_generique": "humain",
+        "label": "Objectif ROI adidas"
+      },
+      {
+        "id": "prospect",
+        "role_generique": "modele_ia",
+        "label": "Prospection d'audience par IA",
+        "outil_documente": "Criteo Commerce Growth"
+      },
+      {
+        "id": "aro",
+        "role_generique": "modele_ia",
+        "label": "Optimisation des enchères",
+        "outil_documente": "Adaptive Revenue Optimization (ARO)"
+      },
+      {
+        "id": "display",
+        "role_generique": "paid_platform",
+        "label": "Display / retargeting"
+      },
+      {
+        "id": "conv",
+        "role_generique": "data_source",
+        "label": "Conversions web"
+      }
+    ],
+    "liens": [
+      [
+        "objectif",
+        "aro"
+      ],
+      [
+        "prospect",
+        "display"
+      ],
+      [
+        "aro",
+        "display"
+      ],
+      [
+        "display",
+        "conv"
+      ],
+      [
+        "conv",
+        "aro",
+        "conversions renvoyees pour caler les enchères"
+      ]
+    ]
+  },
+  "replication": {
+    "statut_epistemique": "infere",
+    "prerequis_data": [
+      "tag Criteo sur le site avec evenements d'achat",
+      "catalogue produit"
+    ],
+    "prerequis_orga": [
+      "budget media dedie",
+      "objectif de ROI clair par etage de funnel"
+    ],
+    "stack_possible": [
+      "Criteo Commerce Growth",
+      "Smart Bidding",
+      "Adaptive Revenue Optimization"
+    ],
+    "premiere_etape": "Poser le tag Criteo avec l'evenement d'achat, fixer un objectif de ROAS et lancer prospection + retargeting sous ARO.",
+    "playbook": [
+      {
+        "action": "Poser le tag Criteo avec l'evenement d'achat et brancher le flux catalogue produit.",
+        "livrable": "Tracking de conversion valide et catalogue synchronise"
+      },
+      {
+        "action": "Fixer l'objectif de ROAS ou de ROI par etage de funnel et repartir le budget entre retargeting et prospection.",
+        "livrable": "Plan de campagne full-funnel ecrit"
+      },
+      {
+        "action": "Lancer retargeting dynamique et prospection d'audience sous ARO, en laissant la phase d'apprentissage tourner sans micro-ajustements.",
+        "livrable": "Campagnes actives avec encheres automatisees"
+      },
+      {
+        "action": "Lire ROAS, ROI et cout du trafic par etage de funnel, ajuster objectifs et audiences.",
+        "livrable": "Premier bilan chiffre face a la baseline social et search"
+      },
+      {
+        "action": "Etendre aux marches ou produits suivants sur la base des chiffres.",
+        "livrable": "Plan d'extension arbitre sur ROAS et CPA mesures"
+      }
+    ],
+    "equipe": "1 media buyer (interne ou agence) + 1 dev pour le tag et le flux catalogue"
+  },
+  "stack_technique": [
+    {
+      "nom": "Criteo Commerce Growth",
+      "categorie": "plateforme",
+      "detail": "Plateforme d'acquisition et de retargeting de Criteo, socle de la prospection d'audience par IA au-dela du social et du search.",
+      "url": "https://www.criteo.com"
+    },
+    {
+      "nom": "Criteo Smart Bidding",
+      "categorie": "outil",
+      "detail": "Technologie d'encheres automatisees de Criteo, qui ajuste les mises selon l'objectif de campagne.",
+      "url": "https://www.criteo.com"
+    },
+    {
+      "nom": "Adaptive Revenue Optimization (ARO)",
+      "categorie": "outil",
+      "detail": "Moteur qui fixe les encheres au cout par clic selon l'objectif de ROI et optimise vers les conversions web plutot que les visites.",
+      "url": "https://www.criteo.com"
+    },
+    {
+      "nom": "Tag Criteo et flux catalogue",
+      "categorie": "infra",
+      "detail": "Tag site avec evenements d'achat et flux produit qui alimentent le retargeting dynamique et la mesure du ROAS.",
+      "url": "https://www.criteo.com"
+    }
+  ],
+  "seo": {
+    "slug": "adidas-criteo-commerce-growth-2023",
+    "title": "adidas : prospection et enchères pilotees par IA avec Criteo - ROAS +81% en milieu de funnel (2023)",
+    "meta_description": "adidas a etendu son acquisition MENA avec Criteo (prospection IA + ARO) : ROAS +81% en milieu de funnel, +66% en bas de funnel sur une campagne de cinq mois.",
+    "resume_citable": "adidas a etendu son acquisition au-dela du social et du search sur les marches MENA avec Criteo (prospection d'audience IA et Adaptive Revenue Optimization) et rapporte un ROAS en hausse de 81% en milieu de funnel et de 66% en bas de funnel sur cinq mois.",
+    "faq": [
+      {
+        "q": "Que fait l'IA de Criteo dans ce cas ?",
+        "a": "Elle prospecte de nouvelles audiences et cale les enchères au cout par clic sur un objectif de ROI (Adaptive Revenue Optimization), en optimisant vers les conversions web plutot que les simples visites."
+      },
+      {
+        "q": "Sur quels marches le cas a-t-il tourne ?",
+        "a": "Au Moyen-Orient et en Afrique du Nord : Arabie Saoudite, Emirats Arabes Unis et Egypte, au-dela des canaux social et search deja utilises par adidas."
+      }
+    ]
+  },
+  "logo_domain": "adidas.com"
+}

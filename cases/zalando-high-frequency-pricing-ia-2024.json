@@ -1,0 +1,264 @@
+{
+  "id": "zalando-high-frequency-pricing-ia-2024",
+  "type_fiche": "succes",
+  "marque": "Zalando",
+  "industrie": "retail_ecom",
+  "marches_deploiement": [
+    "Europe (12 marches lors des campagnes de soldes)"
+  ],
+  "transposable_ue": {
+    "flag": "oui",
+    "note": "Systeme deja concu et opere en Europe. La tarification porte sur des prix catalogue et des remises (markdown), pas sur un prix personnalise par individu, ce qui limite l'exposition RGPD. L'AI Act demande de documenter l'usage."
+  },
+  "metier": "pricing / merchandising",
+  "intervenants": [
+    {
+      "nom": "Tim Januschowski",
+      "role": "Co-auteur, equipe pricing et forecasting, Zalando",
+      "source_ref": "S1"
+    },
+    {
+      "nom": "Manuel Kunz",
+      "role": "Co-auteur, equipe pricing, Zalando",
+      "source_ref": "S1"
+    }
+  ],
+  "axes": {
+    "levier": "monetisation",
+    "touchpoints": [
+      "moteur de pricing catalogue",
+      "site et app Zalando"
+    ],
+    "etape_parcours": "achat",
+    "famille": "optimisation_automatisation",
+    "pattern": "markdown pricing a haute frequence (predict-then-optimize)",
+    "type_ia": [
+      "forecasting de demande (gradient-boosted trees)",
+      "optimisation multi-objectif",
+      "predict-then-optimize"
+    ],
+    "plateforme_stack": [
+      "custom/in-house"
+    ],
+    "objectif_metrique": [
+      "profit",
+      "ventes",
+      "revenu",
+      "temps de decision de prix"
+    ]
+  },
+  "implementation": "custom",
+  "objectif_business": "Fixer plusieurs fois par semaine le bon niveau de remise sur des millions d'articles a duree de vie limitee, pour maximiser le profit sans sacrifier les ventes ni le revenu.",
+  "points_cles": ["Markdown pricing a haute frequence sur des millions d'articles, plusieurs fois par semaine.", "Forecasting gradient-boosted trees et optimisation multi-objectif in-house (predict-then-optimize).", "Environ 6 pour cent de profit en plus, temps de decision passe d'heures a minutes.", "Preuve B, valide par 23 A/B tests sur 12 marches, statut vivant confirme."],
+  "description": "Zalando, un des principaux e-commercants mode d'Europe, doit re-optimiser les remises (markdown) sur un catalogue de plusieurs millions d'articles, plusieurs fois par semaine, avec une fenetre de decision de quelques heures. Le systeme decrit combine une prevision de demande a resolution quotidienne par gradient-boosted trees et un cadre d'optimisation multi-objectif, selon le paradigme predict-then-optimize. Il gere le prix d'environ 600 000 articles a tout instant sur l'ensemble des marches. Le nouveau systeme a ete valide par 23 A/B tests sur 12 marches durant les campagnes de soldes 2023-2024, puis deploye en production.",
+  "resultats": [
+    {
+      "metrique": "Profit vs approche precedente, a ventes et revenu equivalents",
+      "valeur": "~6% de profit",
+      "citation_exacte": "approximately 6% higher profit while maintaining equivalent performance on sales and revenue",
+      "source_ref": "S1"
+    },
+    {
+      "metrique": "Temps de decision de prix",
+      "valeur": "d'heures a minutes",
+      "citation_exacte": "from hours to minutes",
+      "source_ref": "S1"
+    },
+    {
+      "metrique": "Profit hebdomadaire en plus, cadre de decomposition a grande echelle",
+      "valeur": "millions d'euros",
+      "citation_exacte": "improving weekly profits by millions of Euros",
+      "source_ref": "S2"
+    }
+  ],
+  "niveau_preuve": {
+    "niveau": "B",
+    "justification": "Deux papiers techniques des equipes de Zalando decrivant le systeme en production, avec resultats chiffres et valides par 23 A/B tests sur 12 marches. Chiffres de recherche interne et non consolides en resultats financiers, d'ou un niveau B."
+  },
+  "dates": {
+    "lancement": "valide et deploye a partir des campagnes de soldes 2023-2024",
+    "derniere_confirmation_activite": "2024 (A/B tests et deploiement en production decrits dans le papier)",
+    "verifie_le": "2026-07-11",
+    "revoir_apres": "2027-01-11"
+  },
+  "statut_vivant": {
+    "statut": "confirme",
+    "note": "Systeme deploye en production apres 23 A/B tests sur 12 marches ; les publications le decrivent comme profondement integre a l'environnement de production de Zalando."
+  },
+  "sources": [
+    {
+      "ref": "S1",
+      "type": "analyse_academique",
+      "fiabilite": "T1_primaire",
+      "titre": "High-Frequency Pricing at Scale for E-Commerce",
+      "url": "https://arxiv.org/abs/2606.13741",
+      "date_publication": "2026",
+      "consulte_le": "2026-07-11"
+    },
+    {
+      "ref": "S2",
+      "type": "analyse_academique",
+      "fiabilite": "T1_primaire",
+      "titre": "Tricks from the Trade for Large-Scale Markdown Pricing: Heuristic Cut Generation for Lagrangian Decomposition",
+      "url": "https://arxiv.org/abs/2404.02996",
+      "date_publication": "2024-04",
+      "consulte_le": "2026-07-11"
+    }
+  ],
+  "fonctionnement_operationnel": {
+    "cadence": "Re-optimisation plusieurs fois par semaine, avec une fenetre de quelques heures pour decider les remises sur tout le catalogue.",
+    "opere_par": "Equipe pricing et data science de Zalando.",
+    "signal_pilote": "La prevision de demande quotidienne par article et par marche, qui alimente l'optimisation des remises. Sans prevision fiable, l'arbitrage entre profit, ventes et revenu se degrade.",
+    "etapes": [
+      {
+        "etape": "Prevision de demande",
+        "detail": "Des modeles gradient-boosted trees estiment la demande quotidienne par article selon le prix.",
+        "acteur": "IA"
+      },
+      {
+        "etape": "Optimisation multi-objectif",
+        "detail": "Un cadre d'optimisation choisit les niveaux de remise qui arbitrent profit, ventes et revenu sur des millions d'articles.",
+        "acteur": "IA"
+      },
+      {
+        "etape": "Application des prix",
+        "detail": "Les remises calculees sont appliquees sur le site et l'app pour tous les marches concernes.",
+        "acteur": "IA"
+      },
+      {
+        "etape": "Supervision et A/B testing",
+        "detail": "L'equipe pricing valide les changements par A/B tests et surveille l'impact profit.",
+        "acteur": "equipe data"
+      }
+    ]
+  },
+  "schema_flow": {
+    "statut": "documente",
+    "noeuds": [
+      {
+        "id": "hist",
+        "role_generique": "data_source",
+        "label": "Historique de ventes et de prix par article"
+      },
+      {
+        "id": "fcst",
+        "role_generique": "modele_ia",
+        "label": "Prevision de demande (gradient-boosted trees)"
+      },
+      {
+        "id": "opt",
+        "role_generique": "modele_ia",
+        "label": "Optimisation multi-objectif des remises"
+      },
+      {
+        "id": "site",
+        "role_generique": "site_app",
+        "label": "Prix affiche (site / app)"
+      },
+      {
+        "id": "team",
+        "role_generique": "humain",
+        "label": "Equipe pricing"
+      }
+    ],
+    "liens": [
+      [
+        "hist",
+        "fcst"
+      ],
+      [
+        "fcst",
+        "opt"
+      ],
+      [
+        "opt",
+        "site",
+        "remises appliquees"
+      ],
+      [
+        "team",
+        "opt",
+        "A/B testing et supervision"
+      ]
+    ]
+  },
+  "replication": {
+    "statut_epistemique": "infere",
+    "prerequis_data": [
+      "historique de ventes et de prix par article",
+      "catalogue avec cycle de vie des produits",
+      "structure de couts et de marge par article"
+    ],
+    "prerequis_orga": [
+      "equipe pricing et data science",
+      "infrastructure de calcul pour re-optimiser tout le catalogue en heures",
+      "processus d'A/B testing"
+    ],
+    "stack_possible": [
+      "forecasting par arbres de gradient",
+      "solveur d'optimisation multi-objectif",
+      "pipeline predict-then-optimize"
+    ],
+    "premiere_etape": "Construire une prevision de demande par article et par prix avant d'y accrocher l'optimisation des remises.",
+    "playbook": [
+      {
+        "action": "Reunir l'historique ventes/prix par article et la structure de marge.",
+        "livrable": "Dataset article x jour x prix avec couts et cycle de vie produit."
+      },
+      {
+        "action": "Construire la prevision de demande par article selon le prix.",
+        "livrable": "Forecast backteste sur l'historique, erreurs documentees par categorie."
+      },
+      {
+        "action": "Accrocher l'optimisation des remises sous contraintes (profit, ventes, revenu) sur un sous-catalogue.",
+        "livrable": "Moteur de markdown operationnel sur un perimetre limite."
+      },
+      {
+        "action": "Valider par A/B tests contre les regles de pricing actuelles, marche par marche.",
+        "livrable": "Lecture profit a ventes et revenu equivalents vs approche precedente."
+      },
+      {
+        "action": "Industrialiser : fenetre de re-optimisation courte, monitoring, extension au catalogue complet.",
+        "livrable": "Systeme en production re-optimisant le catalogue plusieurs fois par semaine."
+      }
+    ],
+    "equipe": "2-4 data scientists (forecasting + optimisation) + 1 data engineer + equipe pricing metier"
+  },
+  "seo": {
+    "slug": "zalando-high-frequency-pricing-ia-2024",
+    "title": "Zalando : markdown pricing IA a haute frequence - environ 6% de profit en plus, valide sur 12 marches (2024)",
+    "meta_description": "Zalando re-optimise les remises sur des millions d'articles plusieurs fois par semaine via forecasting et optimisation multi-objectif ; le systeme a apporte environ 6% de profit en plus, valide par 23 A/B tests.",
+    "resume_citable": "Zalando pilote les remises de plusieurs millions d'articles par forecasting et optimisation multi-objectif ; valide par 23 A/B tests sur 12 marches, le systeme a degage environ 6% de profit en plus a ventes et revenu equivalents.",
+    "faq": [
+      {
+        "q": "Comment Zalando fixe-t-il ses remises ?",
+        "a": "Une prevision de demande par gradient-boosted trees alimente une optimisation multi-objectif qui choisit les niveaux de remise sur des millions d'articles, plusieurs fois par semaine."
+      },
+      {
+        "q": "Quel a ete l'impact du nouveau systeme de pricing ?",
+        "a": "Environ 6% de profit en plus a ventes et revenu equivalents, et un temps de decision passe d'heures a minutes, valide par 23 A/B tests sur 12 marches."
+      }
+    ]
+  },
+  "logo_domain": "zalando.com",
+  "stack_technique": [
+    {
+      "nom": "Modeles de forecasting gradient-boosted trees (in-house)",
+      "categorie": "outil",
+      "detail": "Prevision de demande a resolution quotidienne par article et par prix, socle du systeme predict-then-optimize.",
+      "url": "https://corporate.zalando.com"
+    },
+    {
+      "nom": "Solveur d'optimisation multi-objectif (in-house)",
+      "categorie": "outil",
+      "detail": "Choisit les niveaux de remise qui arbitrent profit, ventes et revenu, avec decomposition lagrangienne pour tenir l'echelle (environ 600 000 articles geres a tout instant).",
+      "url": "https://corporate.zalando.com"
+    },
+    {
+      "nom": "Pipeline predict-then-optimize Zalando",
+      "categorie": "infra",
+      "detail": "Chaine de production qui re-optimise le catalogue plusieurs fois par semaine dans une fenetre de quelques heures, validee par 23 A/B tests sur 12 marches.",
+      "url": "https://corporate.zalando.com"
+    }
+  ]
+}

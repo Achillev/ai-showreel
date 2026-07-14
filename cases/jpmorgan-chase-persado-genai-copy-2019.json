@@ -1,0 +1,280 @@
+{
+  "id": "jpmorgan-chase-persado-genai-copy-2019",
+  "type_fiche": "succes",
+  "marque": "JPMorgan Chase",
+  "groupe": "JPMorgan Chase & Co.",
+  "industrie": "banque_assurance_fintech",
+  "marches_deploiement": [
+    "Etats-Unis"
+  ],
+  "transposable_ue": {
+    "flag": "oui_avec_adaptations",
+    "note": "La generation de copy marketing est transposable en UE. Contraintes: RGPD sur l'usage des donnees d'audience pour cibler et optimiser, et vigilance sur les mentions reglementaires des produits de credit (formulations generees a revalider par la conformite)."
+  },
+  "metier": "Marketing direct / acquisition",
+  "intervenants": [
+    {
+      "nom": "Kristin Lemkau",
+      "role": "Chief Marketing Officer, JPMorgan Chase",
+      "source_ref": "S1"
+    },
+    {
+      "nom": "Abeer Bhatia",
+      "role": "Head of Marketing Growth and Innovation, Chase Card Services",
+      "source_ref": "S1"
+    },
+    {
+      "nom": "Alex Vratskides",
+      "role": "Co-fondateur et CEO, Persado",
+      "source_ref": "S1"
+    }
+  ],
+  "agences": [
+    {
+      "nom": "Persado",
+      "role": "Fournisseur de la technologie IA de generation et d'optimisation de message (partenaire enterprise sur 5 ans)",
+      "source_ref": "S1"
+    }
+  ],
+  "axes": {
+    "levier": "acquisition",
+    "touchpoints": [
+      "email",
+      "bannieres display",
+      "push mobile",
+      "creatives digitales"
+    ],
+    "etape_parcours": "consideration",
+    "famille": "generation",
+    "pattern": "generation de copy marketing par IA",
+    "type_ia": [
+      "generation de langage (NLG)",
+      "machine learning",
+      "optimisation de message par apprentissage"
+    ],
+    "plateforme_stack": [
+      "Persado (Motivation AI / Message Machine)"
+    ],
+    "objectif_metrique": [
+      "taux de clics",
+      "engagement",
+      "reponse directe"
+    ]
+  },
+  "implementation": "plateforme",
+  "objectif_business": "Augmenter le rendement des campagnes de marketing direct de Chase (Card, Mortgage, banque personnelle, credit immobilier, gestion de patrimoine) en confiant la redaction et l'optimisation de la copy a un moteur d'IA plutot qu'au seul jugement des marketeurs.",
+  "points_cles": ["Copy marketing (accroche, corps, CTA) generee et optimisee par IA.", "Via la plateforme Persado, sur email, display et push.", "Pilote : jusqu'a +450% de taux de clics contre 50 a 200% en humain.", "Preuve B, statut signaux mitiges."],
+  "description": "Chase utilise la plateforme de Persado pour generer les accroches, corps de message et appels a l'action de ses campagnes direct-response. Le moteur part d'une base de mots et de phrases taggés par charge emotionnelle, produit de nombreuses variantes, les teste en diffusion reelle et privilegie les formulations qui performent. Le partenariat a demarre par un pilote en 2016 sur les activites Card et Mortgage, puis a ete etendu en 2019 par un accord enterprise-wide de cinq ans. Dans le pilote, la copy rendue par Persado a montre jusqu'a 450% de lift de taux de clics, la ou des variantes ecrites par des humains se situaient dans une fourchette de 50 a 200%.",
+  "resultats": [
+    {
+      "metrique": "Lift du taux de clics sur la copy IA (pilote), contre 50 a 200% en humain",
+      "valeur": "jusqu'a +450%",
+      "citation_exacte": "as high as a 450% lift in click-through rates",
+      "source_ref": "S2"
+    }
+  ],
+  "niveau_preuve": {
+    "niveau": "B",
+    "justification": "Chiffre de pilote publie dans le communique officiel de Persado (fournisseur, source interessee) et repris nommement par la presse specialisee (Marketing Dive, Banking Dive). Ce n'est pas un resultat financier audite, mais plusieurs sources concordent sur le meme chiffre et le meme perimetre."
+  },
+  "dates": {
+    "lancement": "2016 (pilote Card et Mortgage), juillet 2019 (accord enterprise-wide de 5 ans)",
+    "derniere_confirmation_activite": "2019 (annonce de l'accord de 5 ans)",
+    "verifie_le": "2026-07-11",
+    "revoir_apres": "2027-01-11"
+  },
+  "statut_vivant": {
+    "statut": "signaux_mitiges",
+    "note": "L'accord annonce courait sur cinq ans (2019 a 2024). JPMorgan a depuis construit ses propres outils genAI internes (LLM Suite, deploiement 2024). Le pattern -generation de copy marketing par IA- est vivant chez JPMorgan, mais l'etat actuel du contrat Persado n'est pas confirme publiquement apres 2024."
+  },
+  "sources": [
+    {
+      "ref": "S1",
+      "type": "blog_officiel",
+      "fiabilite": "T2_officiel_interesse",
+      "titre": "JPMorgan Chase Announces Five-Year Deal with Persado For AI-Powered Marketing Capabilities",
+      "url": "https://www.persado.com/press-releases/jpmorgan-chase-announces-five-year-deal-with-persado-for-ai-powered-marketing-capabilities/",
+      "date_publication": "2019-07-30",
+      "consulte_le": "2026-07-11"
+    },
+    {
+      "ref": "S2",
+      "type": "presse",
+      "fiabilite": "T3_presse_etablie",
+      "titre": "JPMorgan Chase inks 5-year deal to generate marketing copy via AI",
+      "url": "https://www.marketingdive.com/news/jpmorgan-chase-inks-5-year-deal-to-generate-marketing-copy-via-ai/559836/",
+      "date_publication": "2019-07-30",
+      "consulte_le": "2026-07-11"
+    },
+    {
+      "ref": "S3",
+      "type": "presse",
+      "fiabilite": "T3_presse_etablie",
+      "titre": "JPMorgan Chase bets on AI to generate marketing copy",
+      "url": "https://www.bankingdive.com/news/jpmorgan-chase-bets-on-ai-to-generate-marketing-copy/559846/",
+      "date_publication": "2019-07-31",
+      "consulte_le": "2026-07-11"
+    }
+  ],
+  "fonctionnement_operationnel": {
+    "cadence": "Par campagne, avec une boucle d'optimisation continue sur les performances des variantes.",
+    "opere_par": "Equipe marketing et growth de Chase, en interface avec la plateforme Persado.",
+    "signal_pilote": "Le taux de clics et de conversion par variante de message. Sans un volume d'exposition suffisant, le moteur ne peut pas departager statistiquement les formulations.",
+    "etapes": [
+      {
+        "etape": "Brief et cadrage",
+        "detail": "Les marketeurs definissent l'offre, l'audience et les garde-fous de marque et de conformite.",
+        "acteur": "marketing"
+      },
+      {
+        "etape": "Generation des variantes",
+        "detail": "Persado produit de nombreuses formulations (accroche, corps, CTA) a partir de sa base de mots taggés par charge emotionnelle.",
+        "acteur": "IA"
+      },
+      {
+        "etape": "Diffusion et test",
+        "detail": "Les variantes tournent en diffusion reelle sur email, display et push.",
+        "acteur": "marketing / plateforme"
+      },
+      {
+        "etape": "Optimisation",
+        "detail": "Les performances par variante reviennent dans le modele, qui privilegie les formulations gagnantes pour la suite.",
+        "acteur": "IA"
+      }
+    ]
+  },
+  "schema_flow": {
+    "statut": "approche_type",
+    "noeuds": [
+      {
+        "id": "data",
+        "role_generique": "data_source",
+        "label": "Donnees d'audience et de campagne Chase"
+      },
+      {
+        "id": "humain",
+        "role_generique": "humain",
+        "label": "Marketeurs Chase (brief, garde-fous)"
+      },
+      {
+        "id": "persado",
+        "role_generique": "modele_ia",
+        "label": "Moteur de generation et d'optimisation de message",
+        "outil_documente": "Persado Motivation AI"
+      },
+      {
+        "id": "canaux",
+        "role_generique": "paid_platform",
+        "label": "Email, display, push, creatives digitales"
+      },
+      {
+        "id": "feedback",
+        "role_generique": "data_source",
+        "label": "Taux de clics et conversions par variante"
+      }
+    ],
+    "liens": [
+      [
+        "humain",
+        "persado",
+        "brief et contraintes de marque"
+      ],
+      [
+        "data",
+        "persado"
+      ],
+      [
+        "persado",
+        "canaux",
+        "variantes de copy"
+      ],
+      [
+        "canaux",
+        "feedback"
+      ],
+      [
+        "feedback",
+        "persado",
+        "boucle d'optimisation"
+      ]
+    ]
+  },
+  "replication": {
+    "statut_epistemique": "infere",
+    "prerequis_data": [
+      "Historique de campagnes avec performances par variante",
+      "Volume d'audience suffisant pour tester statistiquement"
+    ],
+    "prerequis_orga": [
+      "Processus de validation de marque et de conformite compatible avec des variantes generees",
+      "Acceptation de laisser un modele ecrire la copy"
+    ],
+    "stack_possible": [
+      "Persado",
+      "Phrasee",
+      "Jasper ou autre NLG marketing",
+      "Test A/B natif de la plateforme d'emailing"
+    ],
+    "premiere_etape": "Choisir un canal a fort volume (email promotionnel) et y tester des variantes generees contre la copy humaine sur une meme audience.",
+    "playbook": [
+      {
+        "action": "Choisir un canal a fort volume (email promotionnel) et etablir la baseline de performance",
+        "livrable": "Historique de performances par variante + audience de test definie"
+      },
+      {
+        "action": "Cadrer les garde-fous de marque et de conformite pour des formulations generees (indispensable en banque)",
+        "livrable": "Regles de validation approuvees par la conformite"
+      },
+      {
+        "action": "Faire generer les variantes par la plateforme a partir du brief (offre, audience, contraintes)",
+        "livrable": "Set de variantes approuvees pretes a diffuser"
+      },
+      {
+        "action": "Tester en diffusion reelle contre la copy humaine sur une meme audience",
+        "livrable": "Lift de CTR et de conversion par variante, statistiquement departage"
+      },
+      {
+        "action": "Etendre aux canaux et produits suivants et industrialiser la boucle brief-generation-validation",
+        "livrable": "Process installe avec la boucle d'optimisation continue"
+      }
+    ],
+    "equipe": "1 responsable CRM/acquisition + 1 marketeur par canal + validation conformite ; pas de data scientist requis"
+  },
+  "seo": {
+    "slug": "jpmorgan-chase-persado-genai-copy-2019",
+    "title": "JPMorgan Chase : copy marketing generee par IA (Persado) - jusqu'a +450% de CTR (2019)",
+    "meta_description": "Chase a confie la copy de ses campagnes direct-response a l'IA de Persado. Pilote: jusqu'a +450% de taux de clics vs variantes humaines.",
+    "resume_citable": "En 2019, JPMorgan Chase signe un accord enterprise-wide de 5 ans avec Persado pour generer sa copy marketing par IA, apres un pilote montrant jusqu'a +450% de taux de clics contre 50 a 200% pour des variantes humaines.",
+    "faq": [
+      {
+        "q": "Quel gain la copy generee par IA a-t-elle apporte a Chase ?",
+        "a": "Dans le pilote, la copy rendue par Persado a montre jusqu'a 450% de lift de taux de clics, contre une fourchette de 50 a 200% pour des variantes ecrites par des humains."
+      },
+      {
+        "q": "Sur quels produits Chase a-t-il deploye cette IA ?",
+        "a": "Le pilote portait sur les activites Card et Mortgage en 2016, puis l'accord de 2019 a couvert la banque personnelle, le credit immobilier, la gestion de patrimoine et la publicite digitale."
+      }
+    ]
+  },
+  "logo_domain": "jpmorganchase.com",
+  "stack_technique": [
+    {
+      "nom": "Persado (Motivation AI / Message Machine)",
+      "categorie": "plateforme",
+      "detail": "generation et optimisation de copy marketing a partir d'une base de mots et phrases taggees par charge emotionnelle",
+      "url": "https://www.persado.com"
+    },
+    {
+      "nom": "Moteur NLG et ML d'optimisation Persado",
+      "categorie": "llm",
+      "detail": "generation de variantes (accroche, corps, CTA) et apprentissage sur les performances par variante en diffusion reelle",
+      "url": "https://www.persado.com"
+    },
+    {
+      "nom": "Canaux d'activation Chase (email, display, push)",
+      "categorie": "infra",
+      "detail": "diffusion des variantes sur les canaux direct-response de Chase ; l'outillage d'envoi n'est pas nomme dans les sources",
+      "url": "https://www.jpmorganchase.com"
+    }
+  ]
+}

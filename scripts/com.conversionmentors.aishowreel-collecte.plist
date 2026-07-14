@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+  <key>Label</key>
+  <string>com.conversionmentors.aishowreel-collecte</string>
+
+  <key>ProgramArguments</key>
+  <array>
+    <string>/bin/bash</string>
+    <string>/Users/elevate/Desktop/Claude apprentissage/ai-showreel/scripts/run-collecte.sh</string>
+  </array>
+
+  <!-- Lundi 08:07 heure locale (minute decalee pour ne pas taper l'API a l'heure pile) -->
+  <key>StartCalendarInterval</key>
+  <dict>
+    <key>Weekday</key>
+    <integer>1</integer>
+    <key>Hour</key>
+    <integer>8</integer>
+    <key>Minute</key>
+    <integer>7</integer>
+  </dict>
+
+  <!-- node + claude sont dans /opt/homebrew/bin -->
+  <key>EnvironmentVariables</key>
+  <dict>
+    <key>PATH</key>
+    <string>/opt/homebrew/bin:/usr/bin:/bin:/usr/sbin:/sbin</string>
+  </dict>
+
+  <key>WorkingDirectory</key>
+  <string>/Users/elevate/Desktop/Claude apprentissage/ai-showreel</string>
+
+  <key>StandardOutPath</key>
+  <string>/Users/elevate/Desktop/Claude apprentissage/ai-showreel/logs/launchd.out.log</string>
+  <key>StandardErrorPath</key>
+  <string>/Users/elevate/Desktop/Claude apprentissage/ai-showreel/logs/launchd.err.log</string>
+</dict>
+</plist>

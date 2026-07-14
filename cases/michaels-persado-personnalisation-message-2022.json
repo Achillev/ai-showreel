@@ -1,0 +1,267 @@
+{
+  "id": "michaels-persado-personnalisation-message-2022",
+  "type_fiche": "succes",
+  "marque": "Michaels",
+  "groupe": "The Michaels Companies, Inc.",
+  "industrie": "retail_ecom",
+  "marches_deploiement": [
+    "Etats-Unis"
+  ],
+  "transposable_ue": {
+    "flag": "oui_avec_adaptations",
+    "note": "Le cas repose sur la generation et le test de variantes de langage marketing sur des donnees d'engagement first-party (clics, conversions), pas sur un profilage individuel lourd. Cette mecanique se transpose en UE, mais l'envoi email et SMS marketing exige un consentement prealable (RGPD et ePrivacy), et le reentrainement du modele sur les donnees d'engagement europeennes doit respecter la limitation de finalite. Le volet AI Act est leger ici : c'est de la generation de copy, pas une decision automatisee produisant des effets juridiques sur une personne. La voix de marque doit etre recalibree marche par marche (langue, ton, mentions legales)."
+  },
+  "metier": "CRM / marketing (personnalisation du message)",
+  "marque_linkedin": "https://www.linkedin.com/company/the-michaels-companies-inc-/",
+  "logo_domain": "michaels.com",
+  "intervenants": [
+    {
+      "nom": "Sachin Shroff",
+      "role": "VP of CRM, Loyalty and Marketing Technology, Michaels",
+      "linkedin_url": "https://www.linkedin.com/in/sachin-shroff-4297127/",
+      "source_ref": "S1"
+    },
+    {
+      "nom": "Stephanie Turner",
+      "role": "Director of Targeted Marketing, Michaels",
+      "source_ref": "S1"
+    }
+  ],
+  "agences": [
+    {
+      "nom": "Persado",
+      "role": "Plateforme genAI de generation et d'optimisation du message marketing (Motivation AI Platform), avec un modele de langage cale sur la voix de marque de Michaels",
+      "source_ref": "S1"
+    }
+  ],
+  "axes": {
+    "levier": "retention",
+    "touchpoints": [
+      "email marketing",
+      "SMS marketing",
+      "Facebook"
+    ],
+    "etape_parcours": "fidelite",
+    "famille": "personnalisation",
+    "pattern": "personnalisation genAI du message marketing (copy) a l'echelle, calee sur la voix de marque",
+    "type_ia": [
+      "IA generative",
+      "generation de langage (NLG)",
+      "modele predictif de performance du message"
+    ],
+    "plateforme_stack": [
+      "Persado Motivation AI Platform"
+    ],
+    "objectif_metrique": [
+      "taux de clic (CTR) email",
+      "taux de clic (CTR) SMS",
+      "part des campagnes personnalisees",
+      "engagement"
+    ]
+  },
+  "implementation": "plateforme",
+  "stack_technique": [
+    {
+      "nom": "Persado Motivation AI Platform",
+      "categorie": "plateforme",
+      "detail": "Genere des variantes de langage marketing, les teste pour alimenter des modeles predictifs, puis predit la formulation la plus performante par campagne. Un modele de langage est cale sur la voix de marque de Michaels et deploye sur email, SMS et Facebook.",
+      "url": "https://www.persado.com"
+    }
+  ],
+  "objectif_business": "Envoyer a chaque client le libelle de message le plus susceptible de le faire cliquer, a l'echelle de millions de clients aux preferences differentes, sans reposer sur du test A/B de copy manuel. Le but est de relancer l'engagement et la fidelite (les clients que Michaels appelle les Makers) sur ses canaux CRM.",
+  "points_cles": ["Personnalisation genAI du message marketing sur email, SMS et Facebook, calee sur la voix de marque.", "Plateforme Persado Motivation AI qui genere, teste et predit le message.", "Personnalisation email portee de 20 a 95 pourcent, +25% CTR email, +41% CTR SMS.", "Preuve B, statut signaux mitiges."],
+  "description": "Michaels, detaillant americain de loisirs creatifs, s'est associe a Persado en 2019 pour personnaliser le langage de ses campagnes marketing. La plateforme Motivation AI de Persado genere des variantes de formulation, les teste sur un echantillon pour nourrir des modeles predictifs, puis predit le message le plus performant pour les campagnes suivantes. Un modele de langage est cale sur la voix de marque de Michaels et applique sur trois canaux : email, SMS et Facebook. La part des campagnes email personnalisees est passee de 20 a 95 pourcent. Les resultats rapportes sont un gain de 25 pourcent du taux de clic sur les campagnes email et de 41 pourcent sur les campagnes SMS. L'etude de cas Persado detaillant ces chiffres a ete publiee en mars 2022 ; le partenariat a ete relaye par la presse retail (Chain Store Age), qui cite le VP CRM de Michaels et reprend les memes chiffres.",
+  "resultats": [
+    {
+      "metrique": "Part des campagnes email personnalisees",
+      "valeur": "de 20 a 95 pourcent",
+      "citation_exacte": "from 20% to 95%",
+      "source_ref": "S1"
+    },
+    {
+      "metrique": "Lift du taux de clic email",
+      "valeur": "+25 pourcent",
+      "citation_exacte": "25% CTR lift on email campaigns",
+      "source_ref": "S2"
+    },
+    {
+      "metrique": "Lift du taux de clic SMS",
+      "valeur": "+41 pourcent",
+      "citation_exacte": "41% CTR lift on SMS campaigns",
+      "source_ref": "S2"
+    }
+  ],
+  "niveau_preuve": {
+    "niveau": "B",
+    "justification": "Etude de cas plateforme Persado chiffree (personnalisation de 20 a 95 pourcent des campagnes email, +25 pourcent CTR email, +41 pourcent CTR SMS), corroboree par la presse retail etablie (Chain Store Age) qui reprend les memes chiffres et cite nommement le VP CRM de Michaels. Les chiffres sont d'origine vendor, d'ou B malgre la concordance presse."
+  },
+  "dates": {
+    "lancement": "2019 (partenariat Persado)",
+    "derniere_confirmation_activite": "2022-03 (etude de cas Persado)",
+    "verifie_le": "2026-07-13",
+    "revoir_apres": "2027-01-13"
+  },
+  "statut_vivant": {
+    "statut": "signaux_mitiges",
+    "note": "La derniere confirmation publique solide date de l'etude de cas Persado de mars 2022. Persado reste un fournisseur actif (prix MarTech Breakthrough 2024) et Michaels opere toujours un programme CRM email et SMS a grande echelle, sans signal de retrait. Mais aucune source publique fraiche de 2025-2026 ne confirme que Persado alimente encore 95 pourcent des campagnes. A reverifier."
+  },
+  "sources": [
+    {
+      "ref": "S1",
+      "type": "customer_story_plateforme",
+      "fiabilite": "T2_officiel_interesse",
+      "titre": "How Michaels Transformed Its Personalization Strategy: Unlocking Greater Loyalty & Engagement",
+      "url": "https://www.persado.com/articles/how-michaels-transformed-its-personalization-strategy-unlocking-greater-loyalty-engagement",
+      "date_publication": "2022-03-30",
+      "consulte_le": "2026-07-13"
+    },
+    {
+      "ref": "S2",
+      "type": "presse",
+      "fiabilite": "T3_presse_etablie",
+      "titre": "Exclusive: Michaels improves personalization via email program",
+      "url": "https://chainstoreage.com/exclusive-michaels-improves-personalization-email-program",
+      "date_publication": "2022",
+      "consulte_le": "2026-07-13"
+    }
+  ],
+  "fonctionnement_operationnel": {
+    "cadence": "Par campagne (batch), avec reentrainement continu du modele sur les resultats d'engagement des campagnes precedentes.",
+    "opere_par": "L'equipe CRM et marketing de Michaels, la generation et l'optimisation du langage etant portees par la plateforme Persado.",
+    "signal_pilote": "Le taux de clic par variante de langage. Le modele apprend quelles formulations font cliquer chaque segment ; si le retour d'engagement (clics, conversions) cesse de remonter, la prediction du message optimal se degrade.",
+    "etapes": [
+      {
+        "etape": "Generation de variantes de langage",
+        "detail": "Persado produit des formulations calees sur la voix de marque de Michaels pour un objet de campagne donne.",
+        "acteur": "IA / plateforme"
+      },
+      {
+        "etape": "Test sur echantillon",
+        "detail": "Les variantes sont deployees sur un sous-ensemble de destinataires en email, SMS ou Facebook pour mesurer leur performance.",
+        "acteur": "marketing"
+      },
+      {
+        "etape": "Mesure et alimentation des modeles",
+        "detail": "Les taux de clic par variante remontent et nourrissent les modeles predictifs de performance du message.",
+        "acteur": "plateforme / data"
+      },
+      {
+        "etape": "Prediction et generalisation",
+        "detail": "Le message predit comme le plus performant est applique aux campagnes suivantes, la personnalisation etant etendue jusqu'a 95 pourcent des campagnes email.",
+        "acteur": "IA"
+      },
+      {
+        "etape": "Supervision par l'equipe CRM",
+        "detail": "L'equipe choisit les campagnes et les segments, et garde la main sur la conformite a la voix de marque.",
+        "acteur": "marketing"
+      }
+    ]
+  },
+  "schema_flow": {
+    "statut": "approche_type",
+    "noeuds": [
+      {
+        "id": "crm_data",
+        "role_generique": "data_source",
+        "label": "Donnees CRM first-party (engagement, clics, conversions, segments)"
+      },
+      {
+        "id": "persado",
+        "role_generique": "modele_ia",
+        "label": "Generation et prediction du message, modele cale sur la voix de marque",
+        "outil_documente": "Persado Motivation AI Platform"
+      },
+      {
+        "id": "canaux",
+        "role_generique": "crm",
+        "label": "Email, SMS et Facebook : envoi du message personnalise"
+      },
+      {
+        "id": "maker",
+        "role_generique": "humain",
+        "label": "Le client (Maker) recoit le message et reagit"
+      }
+    ],
+    "liens": [
+      [
+        "crm_data",
+        "persado",
+        "signal d'engagement par segment"
+      ],
+      [
+        "persado",
+        "canaux",
+        "message predit par campagne"
+      ],
+      [
+        "canaux",
+        "maker"
+      ],
+      [
+        "maker",
+        "crm_data",
+        "clics et conversions, boucle de reentrainement"
+      ]
+    ]
+  },
+  "replication": {
+    "statut_epistemique": "infere",
+    "prerequis_data": [
+      "Donnees d'engagement first-party par canal (ouvertures, clics, conversions)",
+      "Historique de campagnes pour cadrer les variantes",
+      "Segmentation client exploitable",
+      "Un referentiel de voix de marque (ton, vocabulaire, mentions obligatoires)"
+    ],
+    "prerequis_orga": [
+      "Une equipe CRM/marketing proprietaire des campagnes",
+      "Une gouvernance de la voix de marque validant les formulations generees",
+      "Une culture de test-and-learn acceptee sur les canaux CRM"
+    ],
+    "stack_possible": [
+      "Une plateforme genAI de generation et d'optimisation du message (type Persado)",
+      "Un ESP pour l'email et une plateforme d'envoi SMS",
+      "Une connexion aux donnees d'engagement comme signal d'optimisation",
+      "Un modele de langage cale sur la voix de marque"
+    ],
+    "premiere_etape": "Choisir le canal a plus fort volume (l'email) et faire tourner la generation de variantes de langage sur un sous-ensemble de campagnes, avec un groupe de controle, pour etablir un lift de CTR mesurable avant toute generalisation.",
+    "playbook": [
+      {
+        "action": "Cadrer la voix de marque et les garde-fous (ton, vocabulaire, mentions legales) pour que le modele genere dans le registre de la marque.",
+        "livrable": "Une charte de voix exploitable par le modele et validee par le marketing."
+      },
+      {
+        "action": "Brancher les donnees d'engagement (clics, conversions) par canal comme signal d'optimisation du message.",
+        "livrable": "Un flux de retour de CTR par variante."
+      },
+      {
+        "action": "Lancer la generation de variantes de langage sur un echantillon de campagnes email et mesurer le lift contre un controle.",
+        "livrable": "Un premier lift mesure, controle contre variante IA."
+      },
+      {
+        "action": "Etendre la personnalisation aux campagnes SMS et social une fois le lift email confirme.",
+        "livrable": "Une personnalisation multi-canal en production."
+      },
+      {
+        "action": "Generaliser la personnalisation a la majorite des campagnes et surveiller la derive de la voix de marque.",
+        "livrable": "Une part elevee des campagnes personnalisees et un controle qualite en continu."
+      }
+    ],
+    "equipe": "Une equipe CRM/marketing (responsable campagnes et segments), un profil data/analytics pour le signal d'engagement, et la plateforme genAI cote generation. Passer par une plateforme evite de monter une equipe ML lourde cote marque."
+  },
+  "seo": {
+    "slug": "michaels-persado-personnalisation-message-2022",
+    "title": "Michaels : personnalisation genAI du message marketing via Persado - +41% CTR SMS (2022)",
+    "meta_description": "Avec la genAI de Persado calee sur sa voix de marque, Michaels a porte la personnalisation de 20 a 95% de ses campagnes email : +25% CTR email, +41% CTR SMS.",
+    "resume_citable": "Le detaillant de loisirs creatifs Michaels a utilise la plateforme genAI de Persado, calee sur sa voix de marque, pour personnaliser le langage de ses campagnes email, SMS et Facebook, passant de 20 a 95 pourcent de campagnes email personnalisees et gagnant 25 pourcent de CTR email et 41 pourcent de CTR SMS (etude de cas 2022).",
+    "faq": [
+      {
+        "q": "Quels resultats Michaels a-t-il obtenus avec Persado ?",
+        "a": "Un lift de 25 pourcent du taux de clic email et de 41 pourcent du taux de clic SMS, avec la personnalisation portee de 20 a 95 pourcent des campagnes email."
+      },
+      {
+        "q": "Comment fonctionne la personnalisation genAI de Michaels ?",
+        "a": "Persado genere et teste des variantes de langage calees sur la voix de marque de Michaels, puis predit le message le plus performant par campagne sur email, SMS et Facebook."
+      }
+    ]
+  }
+}

@@ -1,0 +1,276 @@
+{
+  "id": "progressive-genai-audio-personnalise-2025",
+  "type_fiche": "succes",
+  "marque": "Progressive",
+  "groupe": "The Progressive Corporation",
+  "industrie": "banque_assurance_fintech",
+  "marches_deploiement": [
+    "Etats-Unis"
+  ],
+  "transposable_ue": {
+    "flag": "oui_avec_adaptations",
+    "note": "La generation IA de variantes audio et leur optimisation par segment reposent sur du ciblage publicitaire et des voix de synthese. En UE, l'usage de la voix de synthese clonee suppose des droits explicites, et le ciblage active des donnees d'audience soumises au RGPD (base legale, consentement sur les cookies et identifiants publicitaires). Le pattern reste transposable, l'assemblage data-audience est a refaire selon les regles locales."
+  },
+  "metier": "Marketing / publicite audio",
+  "intervenants": [
+    {
+      "nom": "Robin England",
+      "role": "Responsable strategie, recherche et analytics chez Progressive (portee sur la campagne)",
+      "source_ref": "S1"
+    }
+  ],
+  "agences": [
+    {
+      "nom": "Claritas",
+      "role": "Partenaire data et IA : optimisation creative (AI Creative Optimization) et activation des variantes par segment",
+      "source_ref": "S1"
+    }
+  ],
+  "axes": {
+    "levier": "acquisition",
+    "touchpoints": [
+      "publicite audio en streaming (Spotify, SiriusXM, iHeart)"
+    ],
+    "etape_parcours": "découverte",
+    "famille": "personnalisation",
+    "pattern": "creative genAI personnalisee a l'echelle (scripts, voix, musique) et optimisee par segment",
+    "type_ia": [
+      "IA generative de texte (scripts)",
+      "voix de synthese",
+      "generation de musique",
+      "optimisation creative par apprentissage"
+    ],
+    "plateforme_stack": [
+      "Claritas AI Creative Optimization",
+      "plateformes audio streaming"
+    ],
+    "objectif_metrique": [
+      "quote starts (demarrages de devis)",
+      "conversions",
+      "vitesse de production creative"
+    ]
+  },
+  "implementation": "hybride",
+  "stack_technique": [
+    {
+      "nom": "Claritas AI Creative Optimization",
+      "categorie": "plateforme",
+      "detail": "Optimisation creative par apprentissage : activation des variantes audio par segment et arret des moins performantes.",
+      "url": "https://claritas.com"
+    },
+    {
+      "nom": "Outils genAI texte, voix et musique",
+      "categorie": "llm",
+      "detail": "Generation des scripts, des voix de synthese et des lits musicaux des 96 variantes ; les outils exacts ne sont pas nommes publiquement.",
+      "url": ""
+    },
+    {
+      "nom": "SiriusXM",
+      "categorie": "plateforme",
+      "detail": "Diffusion des variantes en streaming audio.",
+      "url": "https://www.siriusxm.com"
+    },
+    {
+      "nom": "Spotify",
+      "categorie": "plateforme",
+      "detail": "Diffusion des variantes en streaming audio avec ciblage par segment.",
+      "url": "https://www.spotify.com"
+    },
+    {
+      "nom": "iHeartMedia",
+      "categorie": "plateforme",
+      "detail": "Diffusion des variantes en streaming audio.",
+      "url": "https://www.iheartmedia.com"
+    }
+  ],
+  "objectif_business": "Produire un grand nombre de variantes audio personnalisees en quelques jours au lieu de plusieurs semaines, puis ne diffuser que celles qui performent, pour tirer les demarrages de devis a cout et delai reduits.",
+  "description": "Progressive a confie a l'IA generative l'ecriture des scripts, la creation des voix et des lits musicaux d'une campagne audio, puis a laisse un moteur d'optimisation trier les variantes selon leur performance reelle. L'equipe a fait approuver 96 variantes en 14 jours, contre une poignee de spots produits sur environ sept semaines en methode classique. Les variantes ont ete diffusees en streaming (SiriusXM, Spotify, iHeart et autres), puis activees et optimisees par segment via l'outil de Claritas. Progressive et Claritas rapportent un gain de 31% de demarrages de devis, un lift de 197% par rapport au groupe de controle et 98% d'ecoute jusqu'a la fin. L'enseignement operationnel tient en une phrase du cote Claritas : 96 versions, c'etait peut-etre trop, signe que le volume de creatives doit rester pilote par la mesure et non maximise pour lui-meme.",
+  "resultats": [
+    {
+      "metrique": "Hausse des demarrages de devis (quote starts)",
+      "valeur": "+31%",
+      "citation_exacte": "31% increase in quote starts",
+      "source_ref": "S1"
+    },
+    {
+      "metrique": "Lift de performance vs groupe de controle",
+      "valeur": "+197%",
+      "citation_exacte": "197% lift over control group",
+      "source_ref": "S1"
+    },
+    {
+      "metrique": "Variantes audio genAI approuvees en 14 jours",
+      "valeur": "96 variantes",
+      "citation_exacte": "we had 96 made and approved in 14 days",
+      "source_ref": "S1"
+    }
+  ],
+  "niveau_preuve": {
+    "niveau": "C",
+    "justification": "Campagne rapportee nommement par la presse marketing (The Drum) avec citations de la responsable Progressive et du dirigeant de Claritas, corroboree par la presse specialisee audio sur le volume de variantes et l'effet sur les demarrages de devis. Chiffres declares par les deux parties a la campagne, pas un resultat financier audite."
+  },
+  "dates": {
+    "lancement": "Campagne menee en 2024-2025",
+    "derniere_confirmation_activite": "Couverture presse 2025 ; investissement genAI marketing confirme sur les resultats de Progressive",
+    "verifie_le": "2026-07-11",
+    "revoir_apres": "2027-01-11"
+  },
+  "statut_vivant": {
+    "statut": "confirme",
+    "note": "Progressive a decrit publiquement son investissement dans l'IA generative pour la personnalisation marketing ; la campagne audio genAI est documentee et attribuee nommement."
+  },
+  "sources": [
+    {
+      "ref": "S1",
+      "type": "presse",
+      "fiabilite": "T3_presse_etablie",
+      "titre": "Progressive Insurance tests limits of AI-generated ads - and learns when to pull back",
+      "url": "https://www.thedrum.com/news/progressive-insurance-tests-limits-ai-generated-ads-and-learns-when-pull-back",
+      "date_publication": "2025",
+      "consulte_le": "2026-07-11"
+    },
+    {
+      "ref": "S2",
+      "type": "presse",
+      "fiabilite": "T4_secondaire",
+      "titre": "How AI Is Changing the Audio Ad Market",
+      "url": "https://www.adresultsmedia.com/news-insights/how-ai-is-changing-the-audio-ad-market/",
+      "date_publication": "2024",
+      "consulte_le": "2026-07-11"
+    }
+  ],
+  "fonctionnement_operationnel": {
+    "cadence": "Par campagne : sprint de production de quelques jours, puis optimisation continue en diffusion tant que la campagne tourne.",
+    "opere_par": "Equipe marketing / analytics de Progressive avec le partenaire data Claritas ; l'IA produit, l'humain valide, le moteur d'optimisation arbitre.",
+    "signal_pilote": "Les demarrages de devis et l'engagement par variante. Si le signal de performance par segment manque, on ne sait plus quelles variantes couper et le volume de creatives devient du bruit.",
+    "etapes": [
+      {
+        "etape": "Generation des variantes",
+        "detail": "L'IA ecrit les scripts, genere les voix et les lits musicaux ; l'equipe fait approuver les variantes retenues.",
+        "acteur": "IA et marketing"
+      },
+      {
+        "etape": "Diffusion multi-plateforme",
+        "detail": "Les variantes partent en streaming audio (SiriusXM, Spotify, iHeart) avec un ciblage par segment.",
+        "acteur": "marketing et agence"
+      },
+      {
+        "etape": "Optimisation par segment",
+        "detail": "Le moteur de Claritas active et priorise les variantes selon leur performance reelle et coupe les moins efficaces.",
+        "acteur": "IA et agence"
+      }
+    ]
+  },
+  "schema_flow": {
+    "statut": "documente",
+    "noeuds": [
+      {
+        "id": "brief",
+        "role_generique": "humain",
+        "label": "Brief marketing Progressive"
+      },
+      {
+        "id": "genai",
+        "role_generique": "modele_ia",
+        "label": "Generation genAI (scripts, voix, musique)"
+      },
+      {
+        "id": "opt",
+        "role_generique": "modele_ia",
+        "label": "Optimisation creative par segment",
+        "outil_documente": "Claritas AI Creative Optimization"
+      },
+      {
+        "id": "audio",
+        "role_generique": "paid_platform",
+        "label": "Streaming audio (SiriusXM, Spotify, iHeart)"
+      },
+      {
+        "id": "prospect",
+        "role_generique": "site_app",
+        "label": "Prospect (demarrage de devis)"
+      }
+    ],
+    "liens": [
+      [
+        "brief",
+        "genai",
+        "consignes creatives"
+      ],
+      [
+        "genai",
+        "opt",
+        "variantes audio"
+      ],
+      [
+        "opt",
+        "audio",
+        "variantes activees par segment"
+      ],
+      [
+        "audio",
+        "prospect",
+        "exposition ciblee"
+      ],
+      [
+        "prospect",
+        "opt",
+        "signal de performance (quote starts)"
+      ]
+    ]
+  },
+  "replication": {
+    "statut_epistemique": "infere",
+    "prerequis_data": [
+      "Segments d'audience exploitables",
+      "Mesure fiable des demarrages de devis par variante",
+      "Droits sur la voix de marque ou une voix de synthese licenciee"
+    ],
+    "prerequis_orga": [
+      "Chaine de validation creative acceleree",
+      "Partenaire ou outil d'optimisation media",
+      "Regles de marque pour encadrer la genAI"
+    ],
+    "stack_possible": [
+      "Outils genAI texte/voix/musique + plateforme d'optimisation creative (voie Claritas)",
+      "DSP audio avec creative dynamique"
+    ],
+    "premiere_etape": "Lancer un test A/B de quelques variantes genAI sur un canal audio et brancher la mesure des quote starts avant de monter en volume.",
+    "playbook": [
+      {
+        "action": "Securiser les droits de voix (synthese licenciee ou voix de marque), poser les regles de marque pour la genAI et brancher la mesure des demarrages de devis par variante.",
+        "livrable": "Cadre juridique et mesure par variante operationnels."
+      },
+      {
+        "action": "Sprint de production genAI (scripts, voix, musique) et validation par la chaine creative acceleree.",
+        "livrable": "Lot de 10 a 20 variantes audio approuvees pour le pilote."
+      },
+      {
+        "action": "Diffuser en test avec groupe de controle sur un canal streaming, ciblage par segment.",
+        "livrable": "Campagne pilote live avec lecture de performance par segment."
+      },
+      {
+        "action": "Couper les variantes faibles, mesurer le lift vs controle et decider du volume de production suivant (le volume reste pilote par la mesure).",
+        "livrable": "Bilan lift vs controle et plan de scale."
+      }
+    ],
+    "equipe": "1 responsable media audio + 1 creatif pour valider scripts et voix + le partenaire data/optimisation ; juridique pour les droits de voix."
+  },
+  "seo": {
+    "slug": "progressive-genai-audio-personnalise-2025",
+    "title": "Progressive : publicites audio genAI personnalisees - +31% de demarrages de devis (2025)",
+    "meta_description": "96 variantes audio genAI en 14 jours, optimisees par segment avec Claritas : Progressive gagne 31% de demarrages de devis (lift de 197% vs controle).",
+    "resume_citable": "Sur une campagne audio, Progressive a fait produire par IA generative 96 variantes (scripts, voix, musique) approuvees en 14 jours, optimisees par segment avec Claritas, pour un gain de 31% de demarrages de devis et un lift de 197% face au groupe de controle.",
+    "faq": [
+      {
+        "q": "Qu'a genere l'IA dans la campagne audio de Progressive ?",
+        "a": "L'IA a ecrit les scripts, cree les voix et les lits musicaux de 96 variantes audio, approuvees en 14 jours au lieu d'une poignee de spots sur environ sept semaines en methode classique."
+      },
+      {
+        "q": "Quels resultats la campagne a-t-elle produits ?",
+        "a": "Progressive et Claritas rapportent 31% de demarrages de devis en plus, un lift de 197% par rapport au groupe de controle et 98% d'ecoute jusqu'a la fin des spots."
+      }
+    ]
+  },
+  "logo_domain": "progressive.com"
+}

@@ -1,0 +1,247 @@
+{
+  "type_fiche": "succes",
+  "id": "naranja-x-demand-gen-2023",
+  "marque": "Naranja X",
+  "groupe": "Grupo Financiero Galicia",
+  "industrie": "banque_assurance_fintech",
+  "marches_deploiement": [
+    "Argentine"
+  ],
+  "transposable_ue": {
+    "flag": "oui_avec_adaptations",
+    "note": "Demand Gen est disponible en UE. Le cas a tourne en Argentine ; en Europe, prevoir Consent Mode v2 et le cadrage RGPD des audiences (lookalike/segments). Pas de classification haut risque au sens de l'AI Act pour ce type de campagne."
+  },
+  "metier": "Acquisition media / marketing",
+  "axes": {
+    "levier": "acquisition",
+    "touchpoints": [
+      "YouTube",
+      "Discover",
+      "Gmail",
+      "Google Display Network"
+    ],
+    "etape_parcours": "découverte -> considération",
+    "famille": "optimisation_automatisation",
+    "pattern": "Campagne Demand Gen pilotee par l'IA de Google, formats video et image melanges sur les surfaces YouTube/Discover/Gmail, testee contre les campagnes paid social pour capter la demande en haut de funnel",
+    "type_ia": [
+      "smart bidding (enchères ML)",
+      "allocation cross-surface automatisée",
+      "sélection créative automatisée"
+    ],
+    "plateforme_stack": [
+      "Google Ads Demand Gen",
+      "YouTube / Discover / Gmail / Display"
+    ],
+    "objectif_metrique": [
+      "taux de clic",
+      "coût par action (CPA)",
+      "trafic site"
+    ]
+  },
+  "implementation": "plateforme",
+  "stack_technique": [
+    {
+      "nom": "Google Ads Demand Gen",
+      "categorie": "plateforme",
+      "detail": "Format de campagne IA de Google pour les objectifs de demande : on fournit videos et images, l'algorithme place et optimise sur les surfaces visuelles.",
+      "url": "https://ads.google.com"
+    },
+    {
+      "nom": "Smart bidding et allocation cross-surface",
+      "categorie": "outil",
+      "detail": "Encheres ML et repartition automatique des creations entre YouTube, Discover, Gmail et Display vers les profils les plus susceptibles d'agir.",
+      "url": "https://ads.google.com"
+    },
+    {
+      "nom": "Surfaces YouTube / Discover / Gmail / Display",
+      "categorie": "plateforme",
+      "detail": "Inventaire de diffusion des campagnes Demand Gen.",
+      "url": "https://www.google.com"
+    }
+  ],
+  "objectif_business": "Augmenter le trafic vers le site en captant la demande sur les surfaces visuelles de Google, a un coût par action plus bas que les campagnes sur les reseaux sociaux payants.",
+  "points_cles": ["Test de Demand Gen contre les campagnes paid social sur un objectif de trafic.", "Google Ads Demand Gen, smart bidding et allocation cross-surface YouTube, Discover, Gmail.", "3 fois plus de clics et un cout par action inferieur de 61% au paid social.", "Preuve B, statut signaux mitiges."],
+  "description": "Naranja X, la fintech argentine du Grupo Financiero Galicia, a teste Demand Gen, le format de Google concu pour les objectifs de demande sur YouTube, Discover et Gmail. Le principe : on fournit des videos et des images, et l'algorithme place et optimise les creations sur ces surfaces visuelles vers les profils les plus susceptibles d'agir. Naranja X a compare Demand Gen a ses campagnes paid social sur un objectif de trafic. Le format a fait 3 fois plus de clics, a un coût par action inferieur de 61 % a celui du paid social. Google a mis ce cas en avant au lancement mondial de Demand Gen en octobre 2023, aux cotes d'autres annonceurs comme Samsung Allemagne.",
+  "fonctionnement_operationnel": {
+    "cadence": "En continu, par campagne, avec une phase d'apprentissage. Les creas video et image sont rafraichies regulierement.",
+    "opere_par": "L'equipe media/acquisition, avec l'equipe creative pour alimenter en assets video et image.",
+    "signal_pilote": "L'action de conversion definie (clic qualifie, visite, action sur le site). Si le signal est trop lache (clic brut), le CPA affiche baisse mais la valeur reelle du trafic aussi.",
+    "etapes": [
+      {
+        "etape": "Definir l'action a optimiser",
+        "detail": "Choisir l'objectif (trafic, action site) et poser le tracking correspondant avant de comparer au paid social.",
+        "acteur": "Equipe data / media"
+      },
+      {
+        "etape": "Fournir un mix video + image",
+        "detail": "Demand Gen vit sur des surfaces visuelles. Melanger formats video et image donne a l'algo de quoi tester et placer.",
+        "acteur": "Equipe creative"
+      },
+      {
+        "etape": "Construire les audiences",
+        "detail": "Segments et lookalikes cote Google. C'est le point a cadrer en UE pour la conformite consentement.",
+        "acteur": "Equipe media"
+      },
+      {
+        "etape": "Benchmarker contre le paid social",
+        "detail": "Mesurer CTR et CPA en parallele du social existant pour objectiver le gain, plutot que de juger Demand Gen seul.",
+        "acteur": "Equipe media"
+      }
+    ]
+  },
+  "resultats": [
+    {
+      "metrique": "Taux de clic (vs paid social)",
+      "valeur": "3x",
+      "citation_exacte": "3X higher click-through rates",
+      "source_ref": "S1"
+    },
+    {
+      "metrique": "Coût par action (vs paid social)",
+      "valeur": "-61 %",
+      "citation_exacte": "61% lower cost per action (CPA)",
+      "source_ref": "S1"
+    }
+  ],
+  "niveau_preuve": {
+    "niveau": "B",
+    "justification": "Cas chiffre publie par Google au lancement de Demand Gen (source plateforme, biais interesse), repris nommement par une presse specialisee etablie (MediaPost) le meme jour. Deux sources concordantes mais pas de confirmation en resultats financiers, et le benchmark est un comparatif interne vs paid social."
+  },
+  "dates": {
+    "lancement": "2023 (cas mis en avant au lancement mondial de Demand Gen, octobre 2023)",
+    "derniere_confirmation_activite": "2025-2026 - Demand Gen est devenu le format de demande standard de Google Ads (remplacement de Discovery)",
+    "verifie_le": "2026-07-11",
+    "revoir_apres": "2026-10-11"
+  },
+  "statut_vivant": {
+    "statut": "signaux_mitiges",
+    "note": "Le chiffre date du lancement 2023. Demand Gen a depuis remplace les campagnes Discovery et s'est generalise, donc le pattern est bien vivant ; Naranja X ne communique plus specifiquement sur ce cas."
+  },
+  "sources": [
+    {
+      "ref": "S1",
+      "type": "blog_officiel",
+      "titre": "Demand more from social with AI-powered ads - Google Ads blog",
+      "url": "https://blog.google/products/ads-commerce/demand-more-from-social-with-ai-powered-ads/",
+      "date_publication": "2023-10-10",
+      "consulte_le": "2026-07-11",
+      "fiabilite": "T2_officiel_interesse"
+    },
+    {
+      "ref": "S2",
+      "type": "presse",
+      "titre": "Google Rolls Out 'Demand Gen' Campaign Type - MediaPost (Laurie Sullivan)",
+      "url": "https://www.mediapost.com/publications/article/390004/google-rolls-out-demand-gen-campaign-type.html",
+      "date_publication": "2023-10-10",
+      "consulte_le": "2026-07-11",
+      "fiabilite": "T3_presse_etablie"
+    }
+  ],
+  "schema_flow": {
+    "statut": "documente",
+    "noeuds": [
+      {
+        "id": "assets",
+        "role_generique": "data_source",
+        "label": "Assets : videos + images",
+        "outil_documente": "Demand Gen asset groups"
+      },
+      {
+        "id": "aud",
+        "role_generique": "data_source",
+        "label": "Audiences (segments, lookalikes)"
+      },
+      {
+        "id": "ai",
+        "role_generique": "paid_platform",
+        "label": "IA Google : placement et enchères Demand Gen",
+        "outil_documente": "Google Ads Demand Gen"
+      },
+      {
+        "id": "surf",
+        "role_generique": "site_app",
+        "label": "YouTube / Discover / Gmail / Display"
+      },
+      {
+        "id": "site",
+        "role_generique": "site_app",
+        "label": "Site Naranja X (trafic / action)"
+      }
+    ],
+    "liens": [
+      [
+        "assets",
+        "ai"
+      ],
+      [
+        "aud",
+        "ai"
+      ],
+      [
+        "ai",
+        "surf"
+      ],
+      [
+        "surf",
+        "site"
+      ],
+      [
+        "site",
+        "ai",
+        "feedback action"
+      ]
+    ]
+  },
+  "replication": {
+    "statut_epistemique": "infere",
+    "playbook": [
+      {
+        "action": "Definir l'action a optimiser (trafic qualifie, action site) et poser le tracking correspondant, Consent Mode v2 compris en UE.",
+        "livrable": "Plan de mesure et tags valides."
+      },
+      {
+        "action": "Preparer le mix d'assets video et image, decline des campagnes social existantes et adapte aux specs Demand Gen.",
+        "livrable": "Banque d'assets conforme et chargee dans les groupes d'assets."
+      },
+      {
+        "action": "Construire les audiences (segments, lookalikes) et lancer la campagne en parallele du paid social, a budget comparable.",
+        "livrable": "Campagne Demand Gen live avec budget de test."
+      },
+      {
+        "action": "Laisser passer la phase d'apprentissage, puis comparer CTR et CPA au benchmark paid social.",
+        "livrable": "Readout comparatif Demand Gen vs paid social et decision de scale."
+      }
+    ],
+    "equipe": "1 media buyer Google Ads + un appui creatif pour decliner les assets video et image.",
+    "prerequis_data": [
+      "Tracking d'action site fiable",
+      "Consent Mode v2 en UE pour les audiences",
+      "Signaux d'audience first-party pour les lookalikes"
+    ],
+    "prerequis_orga": [
+      "Banque d'assets video et image",
+      "Un benchmark paid social existant pour comparer"
+    ],
+    "stack_possible": [
+      "Google Ads Demand Gen + GA4, en parallèle des campagnes paid social pour comparaison"
+    ],
+    "premiere_etape": "Dupliquer une campagne social de haut de funnel en Demand Gen avec le meme objectif et les memes creas adaptees, puis comparer CTR et CPA."
+  },
+  "seo": {
+    "slug": "naranja-x-demand-gen-cout-par-action-2023",
+    "title": "Naranja X : Demand Gen contre le paid social - 3x de clics, -61 % de coût par action (2023)",
+    "meta_description": "La fintech argentine Naranja X a teste Google Demand Gen contre ses campagnes paid social : 3x plus de clics et un coût par action inferieur de 61 %.",
+    "resume_citable": "Naranja X (fintech argentine, Grupo Financiero Galicia) a obtenu 3x plus de clics et un coût par action inferieur de 61 % avec Google Demand Gen compare a ses campagnes paid social, cas mis en avant par Google au lancement mondial du format en octobre 2023.",
+    "faq": [
+      {
+        "q": "Demand Gen remplace-t-il le paid social ?",
+        "a": "Pas necessairement. Dans le cas Naranja X, il a servi de canal complementaire de haut de funnel sur les surfaces Google, evalue en comparaison directe du paid social sur CTR et CPA."
+      },
+      {
+        "q": "Quel est le prerequis principal ?",
+        "a": "Des assets video et image en volume et un tracking d'action propre. Demand Gen est une feature Google Ads, pas un modele a developper."
+      }
+    ]
+  },
+  "logo_domain": "naranjax.com"
+}

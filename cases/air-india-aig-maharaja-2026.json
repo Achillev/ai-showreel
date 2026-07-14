@@ -1,0 +1,316 @@
+{
+  "id": "air-india-aig-maharaja-2026",
+  "type_fiche": "succes",
+  "marque": "Air India",
+  "groupe": "Tata Group",
+  "industrie": "voyage_hospitality",
+  "marches_deploiement": [
+    "Inde",
+    "international (clientèle Air India)"
+  ],
+  "transposable_ue": {
+    "flag": "oui_avec_adaptations",
+    "note": "Un agent de service client genAI sur Azure OpenAI est réplicable en UE. Contraintes : hébergement et traitement des données personnelles conformes RGPD, journalisation des décisions et escalade humaine, information des passagers sur l'automatisation. L'AI Act classe l'assistance client à faible risque, mais impose transparence sur l'interaction avec une IA."
+  },
+  "metier": "service client",
+  "intervenants": [
+    {
+      "nom": "Dr. Satya Ramaswamy",
+      "role": "Chief Digital and Technology Officer, Air India",
+      "source_ref": "S1"
+    }
+  ],
+  "agences": [
+    {
+      "nom": "Microsoft",
+      "role": "Fournisseur de la plateforme Azure OpenAI Service et partenaire technique",
+      "source_ref": "S1"
+    }
+  ],
+  "axes": {
+    "levier": "retention",
+    "touchpoints": [
+      "site web Air India",
+      "app mobile",
+      "chat service client"
+    ],
+    "etape_parcours": "post-achat",
+    "famille": "conversation",
+    "pattern": "agent client genAI (service client automatisé)",
+    "type_ia": [
+      "LLM génératif (GPT via Azure OpenAI)",
+      "NLP multilingue"
+    ],
+    "plateforme_stack": [
+      "Microsoft Azure OpenAI Service",
+      "Azure AI"
+    ],
+    "objectif_metrique": [
+      "taux d'automatisation",
+      "volume de requêtes traitées",
+      "coût du service client",
+      "temps de réponse"
+    ]
+  },
+  "implementation": "hybride",
+  "objectif_business": "Absorber la hausse du volume de contacts après le doublement du trafic passager sans grossir le centre d'appels, en automatisant les questions récurrentes et en réservant les agents humains aux cas complexes.",
+  "points_cles": ["Agent client genAI (AI.g / Maharaja) sur le site et l'app.", "Construit sur Azure OpenAI, avec escalade vers un agent humain.", "Environ 40 000 requetes par jour, 97% automatisees, 13 millions de conversations resolues.", "Preuve B, statut vivant confirme."],
+  "description": "AI.g (aussi appelé Maharaja) est l'agent virtuel génératif d'Air India, construit sur Azure OpenAI Service. Il répond aux passagers sur le site et l'app à propos du statut de vol, des bagages, de l'enregistrement, des changements, des remboursements et du programme de fidélité, couvrant plus de 1 300 types de questions. Déployé en pilote en mars 2023 puis élargi, il traite les questions en langage naturel et bascule vers un agent humain pour les cas hors périmètre. Microsoft documente une montée en charge continue : environ 40 000 requêtes par jour et plus de 13 millions de conversations résolues, avec la moitié des clients qui choisissent désormais l'IA comme premier point de contact.",
+  "resultats": [
+    {
+      "metrique": "Requêtes traitées par jour",
+      "valeur": "environ 40 000",
+      "citation_exacte": "40,000 customer queries daily across more than 1,300 different questions",
+      "source_ref": "S1"
+    },
+    {
+      "metrique": "Conversations résolues (cumul)",
+      "valeur": "plus de 13 millions",
+      "citation_exacte": "resolved more than 13 million conversations",
+      "source_ref": "S1"
+    },
+    {
+      "metrique": "Taux d'automatisation / succès",
+      "valeur": "97 pour cent",
+      "citation_exacte": "AI.g now handles 97% of 4 million-plus customer queries",
+      "source_ref": "S1"
+    },
+    {
+      "metrique": "Part des clients choisissant l'IA en premier contact",
+      "valeur": "environ la moitié",
+      "citation_exacte": "about half of Air India's customers now choose AI.g as their first preference",
+      "source_ref": "S1"
+    },
+    {
+      "metrique": "Économies annuelles de service client",
+      "valeur": "plusieurs M$",
+      "citation_exacte": "saves the airline several million dollars a year",
+      "source_ref": "S2"
+    }
+  ],
+  "niveau_preuve": {
+    "niveau": "B",
+    "justification": "Étude de cas Microsoft (fournisseur) chiffrée, actualisée entre 2024 et 2026 avec des chiffres concordants, complétée par le communiqué officiel de déploiement d'Air India."
+  },
+  "dates": {
+    "lancement": "2023-03 (pilote) ; déploiement complet 2023",
+    "derniere_confirmation_activite": "2026-02 (customer story Microsoft actualisée)",
+    "verifie_le": "2026-07-11",
+    "revoir_apres": "2027-01-11"
+  },
+  "statut_vivant": {
+    "statut": "confirme",
+    "note": "Chiffres réaffirmés dans une customer story Microsoft de février 2026 ; l'agent reste en production sur le site et l'app."
+  },
+  "sources": [
+    {
+      "ref": "S1",
+      "type": "customer_story_plateforme",
+      "fiabilite": "T2_officiel_interesse",
+      "titre": "How Azure AI helped Air India reinvent customer service by answering 40,000 daily queries instantly",
+      "url": "https://www.microsoft.com/en/customers/story/26047-air-india-azure-openai-in-foundry-models",
+      "date_publication": "2026-02-11",
+      "consulte_le": "2026-07-11"
+    },
+    {
+      "ref": "S2",
+      "type": "customer_story_plateforme",
+      "fiabilite": "T2_officiel_interesse",
+      "titre": "Air India elevates customer support while saving money with Azure AI, data, and apps",
+      "url": "https://www.microsoft.com/en/customers/story/19768-air-india-azure-open-ai-service",
+      "date_publication": "2024-11-15",
+      "consulte_le": "2026-07-11"
+    },
+    {
+      "ref": "S3",
+      "type": "blog_officiel",
+      "fiabilite": "T1_primaire",
+      "titre": "Air India successfully deploys airline industry's first generative AI virtual agent, powered by Microsoft Azure OpenAI service",
+      "url": "https://www.airindia.com/in/en/newsroom/press-release/air-india-successfully-deploys-airline-industry-s-first-generati.html",
+      "date_publication": "2023-11",
+      "consulte_le": "2026-07-11"
+    }
+  ],
+  "fonctionnement_operationnel": {
+    "cadence": "Temps réel, 24 heures sur 24, avec supervision et enrichissement continu du périmètre de questions.",
+    "opere_par": "Équipe digitale et technologie d'Air India, en lien avec le centre de contact et les équipes Microsoft pour la plateforme.",
+    "signal_pilote": "La question du passager, mise en correspondance avec les systèmes de réservation et d'opérations (statut de vol, bagages, fidélité). Si l'agent perd l'accès à ces systèmes en direct, il ne peut plus répondre sur les cas transactionnels et l'escalade humaine remonte.",
+    "etapes": [
+      {
+        "etape": "Réception de la question",
+        "detail": "Le passager pose sa question en langage naturel sur le site ou l'app.",
+        "acteur": "client"
+      },
+      {
+        "etape": "Classement et récupération",
+        "detail": "L'agent identifie le sujet parmi plus de 1 300 catégories et interroge les systèmes internes pour le contexte (réservation, statut de vol).",
+        "acteur": "IA"
+      },
+      {
+        "etape": "Réponse ou action",
+        "detail": "Il répond, guide un changement ou un remboursement, ou traite la demande automatiquement quand elle est dans le périmètre.",
+        "acteur": "IA"
+      },
+      {
+        "etape": "Escalade",
+        "detail": "Environ 3 pour cent des cas basculent vers un agent humain pour les situations complexes.",
+        "acteur": "IA / humain"
+      },
+      {
+        "etape": "Supervision et amélioration",
+        "detail": "Les équipes lisent les échecs et étendent le périmètre couvert au fil des vagues.",
+        "acteur": "équipe data"
+      }
+    ]
+  },
+  "schema_flow": {
+    "statut": "documente",
+    "noeuds": [
+      {
+        "id": "pax",
+        "role_generique": "humain",
+        "label": "Passager"
+      },
+      {
+        "id": "chan",
+        "role_generique": "canal_conversationnel",
+        "label": "AI.g (site / app)"
+      },
+      {
+        "id": "llm",
+        "role_generique": "modele_ia",
+        "label": "GPT via Azure OpenAI",
+        "outil_documente": "Microsoft Azure OpenAI Service"
+      },
+      {
+        "id": "sys",
+        "role_generique": "data_source",
+        "label": "Systèmes réservation / opérations / fidélité"
+      },
+      {
+        "id": "agent",
+        "role_generique": "humain",
+        "label": "Agent humain (cas complexes)"
+      }
+    ],
+    "liens": [
+      [
+        "pax",
+        "chan"
+      ],
+      [
+        "chan",
+        "llm"
+      ],
+      [
+        "llm",
+        "sys"
+      ],
+      [
+        "sys",
+        "chan"
+      ],
+      [
+        "chan",
+        "pax",
+        "réponse en secondes"
+      ],
+      [
+        "chan",
+        "agent",
+        "escalade ~3 pour cent"
+      ]
+    ]
+  },
+  "replication": {
+    "statut_epistemique": "infere",
+    "prerequis_data": [
+      "base de connaissances service client structurée",
+      "accès API aux systèmes de réservation et d'opérations",
+      "historique des tickets pour cadrer le périmètre"
+    ],
+    "prerequis_orga": [
+      "équipe produit et data",
+      "processus d'escalade humaine défini",
+      "gouvernance des réponses et conformité"
+    ],
+    "stack_possible": [
+      "Azure OpenAI ou équivalent",
+      "couche RAG sur la base de connaissances",
+      "connecteurs vers le PSS / CRM"
+    ],
+    "premiere_etape": "Cartographier les 20 à 30 intentions les plus fréquentes du centre de contact et brancher l'agent sur ce socle avant d'élargir.",
+    "playbook": [
+      {
+        "action": "Cartographier les 20 à 30 intentions les plus fréquentes du centre de contact et structurer la base de connaissances associée.",
+        "livrable": "Périmètre v1 arrêté + corpus de connaissances structuré"
+      },
+      {
+        "action": "Construire l'agent (LLM + récupération sur la base) et définir les règles d'escalade humaine.",
+        "livrable": "Agent en pré-production sur les questions informatives"
+      },
+      {
+        "action": "Connecter en lecture les systèmes transactionnels : réservation, statut de vol, bagages, fidélité.",
+        "livrable": "Réponses contextualisées testées sur des dossiers réels"
+      },
+      {
+        "action": "Lancer un pilote sur un canal (site web) et suivre taux de résolution et échecs.",
+        "livrable": "Rapport de pilote avec seuil de mise en production"
+      },
+      {
+        "action": "Passer en production, élargir le périmètre par vagues et lire les échecs chaque semaine.",
+        "livrable": "Tableau de bord automatisation / escalade suivi en routine"
+      }
+    ],
+    "equipe": "1 PM + 2-3 développeurs (LLM/RAG et intégration API) + 1 responsable du centre de contact + des superviseurs pour la revue des escalades"
+  },
+  "stack_technique": [
+    {
+      "nom": "Microsoft Azure OpenAI Service",
+      "categorie": "plateforme",
+      "detail": "Service Azure exposant les modèles d'OpenAI, socle de l'agent AI.g.",
+      "url": "https://azure.microsoft.com"
+    },
+    {
+      "nom": "Modèles GPT (OpenAI)",
+      "categorie": "llm",
+      "detail": "Modèles de langage génératifs servis via Azure OpenAI ; la version exacte n'est pas publiée.",
+      "url": "https://openai.com"
+    },
+    {
+      "nom": "Azure AI",
+      "categorie": "infra",
+      "detail": "Briques Azure de données et d'applications autour de l'agent (hébergement, sécurité, montée en charge).",
+      "url": "https://azure.microsoft.com"
+    },
+    {
+      "nom": "Connecteurs vers les systèmes de réservation et d'opérations",
+      "categorie": "infra",
+      "detail": "Intégration maison vers réservation, statut de vol, bagages et programme de fidélité, nécessaire aux réponses transactionnelles.",
+      "url": "https://www.airindia.com"
+    },
+    {
+      "nom": "Microsoft",
+      "categorie": "integrateur",
+      "detail": "Partenaire technique du déploiement et de la montée en charge.",
+      "url": "https://www.microsoft.com"
+    }
+  ],
+  "seo": {
+    "slug": "air-india-aig-maharaja-2026",
+    "title": "Air India : agent genAI AI.g - 40 000 requêtes par jour automatisées à 97 pour cent (2026)",
+    "meta_description": "AI.g, l'agent génératif d'Air India sur Azure OpenAI, traite environ 40 000 requêtes par jour et automatise 97 pour cent des demandes, économisant plusieurs millions de dollars par an.",
+    "resume_citable": "L'agent client génératif d'Air India, AI.g, traite environ 40 000 requêtes par jour et a résolu plus de 13 millions de conversations avec un taux d'automatisation de 97 pour cent.",
+    "faq": [
+      {
+        "q": "Qu'est-ce qu'AI.g d'Air India ?",
+        "a": "Un agent de service client génératif construit sur Azure OpenAI, qui répond sur le site et l'app aux questions de vol, bagages, enregistrement, remboursements et fidélité."
+      },
+      {
+        "q": "Quel est son taux d'automatisation ?",
+        "a": "Environ 97 pour cent des demandes sont traitées sans intervention humaine, les 3 pour cent restants étant escaladés vers un agent."
+      }
+    ]
+  },
+  "logo_domain": "airindia.com"
+}

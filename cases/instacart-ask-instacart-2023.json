@@ -1,0 +1,271 @@
+{
+  "id": "instacart-ask-instacart-2023",
+  "type_fiche": "succes",
+  "marque": "Instacart",
+  "industrie": "retail_ecom",
+  "marches_deploiement": [
+    "US"
+  ],
+  "transposable_ue": {
+    "flag": "oui_avec_adaptations",
+    "note": "Deploye aux US sur un modele de marketplace grocery multi-enseignes. En UE, le catalogue partenaire et les reglementations alimentaires different ; l'appel a l'API ChatGPT implique un transfert de donnees a cadrer (RGPD, AI Act transparence). Le perimetre volontairement restreint aux questions alimentaires limite le risque."
+  },
+  "metier": "e-commerce, recherche produit, discovery",
+  "marque_linkedin": "https://www.linkedin.com/company/instacart",
+  "intervenants": [
+    {
+      "nom": "JJ Zhuang",
+      "role": "Chief Architect chez Instacart, cite dans l'annonce du produit",
+      "source_ref": "S1"
+    }
+  ],
+  "axes": {
+    "levier": "activation_conversion",
+    "touchpoints": [
+      "app mobile",
+      "barre de recherche"
+    ],
+    "etape_parcours": "consideration",
+    "famille": "conversation",
+    "pattern": "recherche conversationnelle genAI",
+    "type_ia": [
+      "LLM",
+      "modeles proprietaires",
+      "RAG catalogue"
+    ],
+    "plateforme_stack": [
+      "OpenAI ChatGPT API",
+      "modeles Instacart",
+      "catalogue Instacart"
+    ],
+    "objectif_metrique": [
+      "engagement recherche",
+      "inspiration panier",
+      "decouverte produit"
+    ]
+  },
+  "implementation": "hybride",
+  "objectif_business": "Transformer la barre de recherche en outil d'inspiration alimentaire pour lever l'indecision (quoi cuisiner, quoi acheter) et elargir le panier.",
+  "description": "Ask Instacart est une recherche conversationnelle integree a la barre de recherche de l'app. Le client pose une question alimentaire ouverte (idees d'accompagnement pour un plat, options adaptees a un regime) et l'outil renvoie des recommandations organisees plus des informations sur la preparation, les attributs produit et les considerations dietetiques. Il combine l'API ChatGPT d'OpenAI, les modeles maison d'Instacart et un catalogue de plus d'un milliard d'articles sur plus de 80 000 points de vente partenaires. Le modele est volontairement specialise sur les questions alimentaires. Lance le 31 mai 2023, deploye a tous les clients US dans les semaines suivantes.",
+  "resultats": [
+    {
+      "metrique": "Articles du catalogue, sur 80 000+ points de vente partenaires",
+      "valeur": "1 Md+ d'articles",
+      "citation_exacte": "more than a billion shoppable items across more than 80,000 retail partner locations",
+      "source_ref": "S1"
+    },
+    {
+      "metrique": "Deploiement",
+      "valeur": "Generalise a tous les clients US",
+      "citation_exacte": "all U.S. customers over the coming weeks",
+      "source_ref": "S1"
+    }
+  ],
+  "niveau_preuve": {
+    "niveau": "C",
+    "justification": "Annonce officielle Instacart corroboree par la presse (Search Engine Land, communique PR Newswire). Preuve de passage a l'echelle par la couverture catalogue et le deploiement national, mais pas de resultat financier ou de metrique de conversion publiee. Encore vivant en 2026 (extension a l'app ChatGPT d'OpenAI)."
+  },
+  "dates": {
+    "lancement": "31 mai 2023",
+    "derniere_confirmation_activite": "2025-2026 (Instacart, premiere app tierce dans ChatGPT d'OpenAI)",
+    "verifie_le": "2026-07-11",
+    "revoir_apres": "2027-01-11"
+  },
+  "statut_vivant": {
+    "statut": "confirme",
+    "note": "La recherche IA d'Instacart reste active et l'entreprise a etendu son offre genAI, devenant la premiere app a proposer l'experience Instant Checkout dans ChatGPT d'OpenAI."
+  },
+  "sources": [
+    {
+      "ref": "S1",
+      "type": "blog_officiel",
+      "fiabilite": "T1_primaire",
+      "titre": "Bringing Inspirational, AI-Powered Search to the Instacart app with Ask Instacart",
+      "url": "https://company.instacart.com/updates/bringing-inspirational-ai-powered-search-to-the-instacart-app-with-ask-instacart",
+      "date_publication": "2023-05-31",
+      "consulte_le": "2026-07-11"
+    },
+    {
+      "ref": "S2",
+      "type": "presse",
+      "fiabilite": "T4_secondaire",
+      "titre": "Ask Instacart brings generative AI to Instacart's search experience",
+      "url": "https://searchengineland.com/ask-instacart-generative-ai-launch-427831",
+      "date_publication": "2023-06-01",
+      "consulte_le": "2026-07-11"
+    },
+    {
+      "ref": "S3",
+      "type": "presse",
+      "fiabilite": "T3_presse_etablie",
+      "titre": "Instacart Launches New AI-Powered Food Inspiration Search Tool, Ask Instacart",
+      "url": "https://www.prnewswire.com/news-releases/instacart-launches-new-ai-powered-food-inspiration-search-tool-ask-instacart-301838150.html",
+      "date_publication": "2023-05-31",
+      "consulte_le": "2026-07-11"
+    }
+  ],
+  "fonctionnement_operationnel": {
+    "cadence": "Temps reel a chaque requete de recherche.",
+    "opere_par": "Equipe produit et ML d'Instacart, avec l'API ChatGPT d'OpenAI en dependance externe.",
+    "signal_pilote": "La correspondance entre la question alimentaire et le catalogue partenaire local. Si un article n'est pas reference chez le retailer du client, la recommandation ne se convertit pas en panier.",
+    "etapes": [
+      {
+        "etape": "Question alimentaire ouverte",
+        "detail": "Le client tape une question dans la barre de recherche plutot qu'un mot-cle produit.",
+        "acteur": "client"
+      },
+      {
+        "etape": "Comprehension et generation",
+        "detail": "L'API ChatGPT interprete l'intention, les modeles Instacart alignent la reponse sur le catalogue.",
+        "acteur": "IA"
+      },
+      {
+        "etape": "Organisation des resultats",
+        "detail": "Les produits sont regroupes avec infos de preparation et attributs dietetiques, et matches aux campagnes sponsorisees des marques.",
+        "acteur": "IA"
+      },
+      {
+        "etape": "Cadrage du perimetre",
+        "detail": "Le modele est bride pour ne repondre qu'aux questions alimentaires pertinentes.",
+        "acteur": "equipe data"
+      }
+    ]
+  },
+  "schema_flow": {
+    "statut": "documente",
+    "noeuds": [
+      {
+        "id": "client",
+        "role_generique": "humain",
+        "label": "Client Instacart"
+      },
+      {
+        "id": "recherche",
+        "role_generique": "canal_conversationnel",
+        "label": "Barre Ask Instacart"
+      },
+      {
+        "id": "chatgpt",
+        "role_generique": "modele_ia",
+        "label": "OpenAI ChatGPT API",
+        "outil_documente": "OpenAI ChatGPT API"
+      },
+      {
+        "id": "modeles",
+        "role_generique": "modele_ia",
+        "label": "Modeles Instacart"
+      },
+      {
+        "id": "catalogue",
+        "role_generique": "data_source",
+        "label": "Catalogue 1 Md+ articles, 80 000+ points de vente"
+      }
+    ],
+    "liens": [
+      [
+        "client",
+        "recherche"
+      ],
+      [
+        "recherche",
+        "chatgpt"
+      ],
+      [
+        "chatgpt",
+        "modeles"
+      ],
+      [
+        "catalogue",
+        "modeles"
+      ],
+      [
+        "modeles",
+        "recherche"
+      ]
+    ]
+  },
+  "replication": {
+    "statut_epistemique": "infere",
+    "prerequis_data": [
+      "catalogue produit large et localise par point de vente",
+      "attributs dietetiques et de preparation",
+      "campagnes sponsorisees marques"
+    ],
+    "prerequis_orga": [
+      "accord d'usage d'une API LLM tierce",
+      "garde-fous de perimetre thematique"
+    ],
+    "stack_possible": [
+      "API LLM (ex. OpenAI)",
+      "modeles de reranking maison",
+      "RAG sur catalogue"
+    ],
+    "premiere_etape": "Restreindre le perimetre a un domaine (ici l'alimentaire) et brancher une API LLM sur le catalogue enrichi.",
+    "playbook": [
+      {
+        "action": "Enrichir le catalogue en attributs exploitables (dietetique, preparation, localisation par point de vente)",
+        "livrable": "Catalogue enrichi et requetable par attribut"
+      },
+      {
+        "action": "Definir le perimetre thematique et les garde-fous (ce que l'assistant refuse de traiter)",
+        "livrable": "Spec de cadrage + jeu de questions de test"
+      },
+      {
+        "action": "Brancher l'API LLM sur le catalogue et construire la couche de reranking maison",
+        "livrable": "Prototype de recherche conversationnelle sur un sous-ensemble du catalogue"
+      },
+      {
+        "action": "Ouvrir une beta sur un segment de trafic et comparer a la recherche par mots-cles",
+        "livrable": "Metriques d'engagement et d'ajout au panier vs recherche classique"
+      },
+      {
+        "action": "Generaliser progressivement et surveiller la correspondance reponse-catalogue local",
+        "livrable": "Deploiement complet + suivi de la conversion panier"
+      }
+    ],
+    "equipe": "1 PM + 2 ingenieurs ML/backend + 1 data analyst ; l'enrichissement du catalogue est le gros du travail"
+  },
+  "seo": {
+    "slug": "instacart-ask-instacart-2023",
+    "title": "Instacart : recherche conversationnelle genAI Ask Instacart - 1 Md+ d'articles (2023)",
+    "meta_description": "Ask Instacart transforme la barre de recherche en assistant alimentaire genAI, combinant l'API ChatGPT et le catalogue Instacart de plus d'un milliard d'articles.",
+    "resume_citable": "Ask Instacart, lance en mai 2023, est une recherche conversationnelle genAI qui combine l'API ChatGPT d'OpenAI et un catalogue de plus d'un milliard d'articles sur plus de 80 000 points de vente partenaires, deployee a tous les clients US.",
+    "faq": [
+      {
+        "q": "Sur quelle technologie repose Ask Instacart ?",
+        "a": "Sur l'API ChatGPT d'OpenAI combinee aux modeles maison d'Instacart et a son catalogue de plus d'un milliard d'articles."
+      },
+      {
+        "q": "Ask Instacart repond-il a toutes les questions ?",
+        "a": "Non, le modele est volontairement specialise et ne repond qu'aux questions liees a l'alimentaire."
+      }
+    ]
+  },
+  "logo_domain": "instacart.com",
+  "stack_technique": [
+    {
+      "nom": "OpenAI ChatGPT API",
+      "categorie": "llm",
+      "detail": "interpretation de la question alimentaire ouverte et generation de la reponse",
+      "url": "https://openai.com"
+    },
+    {
+      "nom": "Modeles ML proprietaires Instacart",
+      "categorie": "llm",
+      "detail": "alignement de la reponse sur le catalogue et reranking des produits par point de vente",
+      "url": "https://www.instacart.com"
+    },
+    {
+      "nom": "Catalogue Instacart",
+      "categorie": "infra",
+      "detail": "plus d'un milliard d'articles sur plus de 80 000 points de vente partenaires, avec attributs dietetiques et de preparation",
+      "url": "https://www.instacart.com"
+    },
+    {
+      "nom": "Garde-fous de perimetre thematique",
+      "categorie": "outil",
+      "detail": "cadrage in-house limitant le modele aux questions alimentaires pertinentes",
+      "url": "https://www.instacart.com"
+    }
+  ]
+}

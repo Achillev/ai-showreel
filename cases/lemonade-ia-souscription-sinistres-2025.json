@@ -1,0 +1,281 @@
+{
+  "id": "lemonade-ia-souscription-sinistres-2025",
+  "type_fiche": "succes",
+  "marque": "Lemonade",
+  "groupe": "Lemonade, Inc.",
+  "industrie": "banque_assurance_fintech",
+  "marches_deploiement": [
+    "Etats-Unis",
+    "Allemagne",
+    "Pays-Bas",
+    "France"
+  ],
+  "transposable_ue": {
+    "flag": "oui_avec_adaptations",
+    "note": "Lemonade opere deja en UE (Allemagne, Pays-Bas, France). La souscription et la tarification pilotees par IA relevent d'une decision automatisee au sens du RGPD (art. 22) et sont classees a haut risque par l'AI Act pour l'assurance : supervision humaine, explicabilite et droit de contestation obligatoires."
+  },
+  "metier": "Souscription, tarification et gestion des sinistres (assurance)",
+  "intervenants": [
+    {
+      "nom": "Daniel Schreiber",
+      "role": "CEO et co-fondateur, Lemonade (signataire de la lettre aux actionnaires detaillant l'automatisation IA)",
+      "source_ref": "S1"
+    }
+  ],
+  "axes": {
+    "levier": "monetisation",
+    "touchpoints": [
+      "app de souscription (Maya)",
+      "chat de declaration de sinistre (AI Jim)"
+    ],
+    "etape_parcours": "post-achat",
+    "famille": "prediction",
+    "pattern": "souscription et gestion de sinistres pilotees par IA",
+    "type_ia": [
+      "machine learning (scoring de risque et tarification)",
+      "IA conversationnelle (NLP)",
+      "automatisation des sinistres"
+    ],
+    "plateforme_stack": [
+      "custom/in-house (Maya, AI Jim, customer cortex)"
+    ],
+    "objectif_metrique": [
+      "ratio LAE (cout de gestion des sinistres)",
+      "ratio de sinistralite",
+      "taux d'automatisation des sinistres",
+      "precision de tarification"
+    ]
+  },
+  "implementation": "custom",
+  "objectif_business": "Reduire le cout de gestion des sinistres et affiner la tarification du risque en automatisant la souscription et le traitement des sinistres, pour tenir des ratios de gestion tres inferieurs a ceux des assureurs traditionnels a effectif reduit.",
+  "points_cles": ["Souscription et gestion de sinistres pilotees par IA via Maya et AI Jim.", "Plateforme maison avec customer cortex, machine learning de risque et tarification.", "Environ 96% des avis de sinistre pris sans humain, 55% automatises.", "Ratio LAE tire vers environ 4%, preuve A confirmee."],
+  "description": "Lemonade fait tourner deux agents IA. Maya gere la souscription conversationnelle : elle recommande une couverture, genere un devis personnalise et encaisse le paiement en moins de 90 secondes, adossee au customer cortex, un systeme de machine learning qui estime le risque et le prix en temps reel. AI Jim gere les sinistres : il prend le premier avis de sinistre et resout une partie des dossiers de bout en bout, sans intervention humaine. A fin 2025, la societe indique qu'environ 96% des premiers avis de sinistre sont pris par l'IA sans intervention humaine et qu'environ 55% des sinistres sont entierement automatises. Cette automatisation tire le ratio LAE vers le bas : Lemonade cite un ratio LAE d'environ 4% pour la partie pilotee par l'IA, et un ratio LAE global passe de 13% a 7% en trois ans, pendant que le volume de sinistres etait multiplie par plus de 2,5.",
+  "resultats": [
+    {
+      "metrique": "Ratio LAE (cout de gestion des sinistres) tire par l'automatisation IA",
+      "valeur": "environ 4%",
+      "citation_exacte": "AI-powered automation drives LAE ratios of ~4%",
+      "source_ref": "S3"
+    },
+    {
+      "metrique": "Clients equipes de telemetrie continue alimentant la tarification en temps reel",
+      "valeur": "plus de 90%",
+      "citation_exacte": "Over 90% of our customers have continuous telemetry on",
+      "source_ref": "S3"
+    }
+  ],
+  "niveau_preuve": {
+    "niveau": "A",
+    "justification": "Chiffres publies dans les lettres aux actionnaires de Lemonade (deposees en 8-K aupres de la SEC) et repris par la presse economique. Source primaire de resultats financiers, avec plusieurs trimestres concordants sur la trajectoire d'automatisation."
+  },
+  "dates": {
+    "lancement": "2016-2017 (AI Jim et souscription automatisee), en amelioration continue depuis",
+    "derniere_confirmation_activite": "Fin 2025 / debut 2026 (lettres aux actionnaires trimestrielles)",
+    "verifie_le": "2026-07-11",
+    "revoir_apres": "2027-01-11"
+  },
+  "statut_vivant": {
+    "statut": "confirme",
+    "note": "L'automatisation IA est au coeur du modele Lemonade et est documentee dans les lettres aux actionnaires les plus recentes (Q3 2025 et suivantes), avec des metriques en progression."
+  },
+  "sources": [
+    {
+      "ref": "S1",
+      "type": "document_officiel_sec",
+      "fiabilite": "T1_primaire",
+      "titre": "Lemonade, Inc. - Form 8-K - Shareholder Letter Q3 2025",
+      "url": "https://www.sec.gov/Archives/edgar/data/1691421/000169142125000146/lmndshareholderletterq32.htm",
+      "date_publication": "2025-11",
+      "consulte_le": "2026-07-11"
+    },
+    {
+      "ref": "S2",
+      "type": "document_officiel_sec",
+      "fiabilite": "T1_primaire",
+      "titre": "LMND Shareholder Letter Q3 2025 (PDF)",
+      "url": "https://www.lemonade.com/investor-relations-bo/wp-content/uploads/2025/11/LMND-Shareholder-Letter_Q3_25.pdf",
+      "date_publication": "2025-11",
+      "consulte_le": "2026-07-11"
+    },
+    {
+      "ref": "S3",
+      "type": "presse",
+      "fiabilite": "T3_presse_etablie",
+      "titre": "Lemonade and Porch Show AI Is Rewriting Insurance Math",
+      "url": "https://www.pymnts.com/earnings/2026/lemonade-and-porch-show-ai-is-rewriting-insurance-math/",
+      "date_publication": "2026",
+      "consulte_le": "2026-07-11"
+    }
+  ],
+  "fonctionnement_operationnel": {
+    "cadence": "Temps reel a chaque interaction (devis ou sinistre), reentrainement continu des modeles de risque a mesure que les dossiers se resolvent.",
+    "opere_par": "Equipes data science et assurance de Lemonade ; les agents IA (Maya, AI Jim) tiennent la premiere ligne, les humains traitent les cas non automatises.",
+    "signal_pilote": "Les donnees de risque et l'issue des sinistres passes. Si la qualite des labels de sinistre se degrade, la tarification et l'automatisation deviennent moins fiables.",
+    "etapes": [
+      {
+        "etape": "Souscription conversationnelle",
+        "detail": "Maya dialogue avec le prospect, estime le risque via le customer cortex et genere un devis paye en moins de 90 secondes.",
+        "acteur": "IA"
+      },
+      {
+        "etape": "Declaration de sinistre",
+        "detail": "AI Jim prend le premier avis de sinistre en chat et collecte les informations.",
+        "acteur": "IA"
+      },
+      {
+        "etape": "Resolution automatique",
+        "detail": "Pour environ 55% des dossiers, AI Jim verifie et regle le sinistre de bout en bout, sans humain.",
+        "acteur": "IA"
+      },
+      {
+        "etape": "Escalade humaine",
+        "detail": "Les dossiers complexes ou suspects partent vers un gestionnaire humain.",
+        "acteur": "equipe sinistres"
+      }
+    ]
+  },
+  "schema_flow": {
+    "statut": "documente",
+    "noeuds": [
+      {
+        "id": "client",
+        "role_generique": "canal_conversationnel",
+        "label": "Client (chat de souscription / sinistre)"
+      },
+      {
+        "id": "maya",
+        "role_generique": "modele_ia",
+        "label": "Maya (souscription et tarification)",
+        "outil_documente": "Maya + customer cortex"
+      },
+      {
+        "id": "jim",
+        "role_generique": "modele_ia",
+        "label": "AI Jim (traitement des sinistres)",
+        "outil_documente": "AI Jim"
+      },
+      {
+        "id": "cortex",
+        "role_generique": "data_source",
+        "label": "Customer cortex (donnees de risque)"
+      },
+      {
+        "id": "humain",
+        "role_generique": "humain",
+        "label": "Gestionnaire sinistres (cas complexes)"
+      }
+    ],
+    "liens": [
+      [
+        "client",
+        "maya",
+        "demande de devis"
+      ],
+      [
+        "cortex",
+        "maya",
+        "estimation du risque"
+      ],
+      [
+        "client",
+        "jim",
+        "declaration de sinistre"
+      ],
+      [
+        "jim",
+        "humain",
+        "escalade des cas complexes"
+      ],
+      [
+        "jim",
+        "cortex",
+        "issue du sinistre (reapprentissage)"
+      ]
+    ]
+  },
+  "replication": {
+    "statut_epistemique": "infere",
+    "prerequis_data": [
+      "Historique de sinistres avec issue et cout",
+      "Donnees de risque first-party (souscription, telemetrie)",
+      "Journalisation des interactions client"
+    ],
+    "prerequis_orga": [
+      "Agrement d'assureur ou de MGA",
+      "Fonction actuarielle pour valider les modeles de tarification",
+      "Cadre de conformite pour la decision automatisee (RGPD, AI Act)"
+    ],
+    "stack_possible": [
+      "Plateforme custom (voie Lemonade)",
+      "IA conversationnelle + moteur de regles + modele actuariel",
+      "solutions insurtech de gestion automatisee de sinistres"
+    ],
+    "premiere_etape": "Automatiser d'abord le premier avis de sinistre (prise d'information en chat) avant de viser le reglement de bout en bout.",
+    "playbook": [
+      {
+        "action": "Cadrer la data : historique de sinistres avec issue et cout, donnees de souscription, cartographie des dossiers automatisables",
+        "livrable": "Jeu de donnees labellise + liste des types de sinistres candidats a l'automatisation"
+      },
+      {
+        "action": "Automatiser le premier avis de sinistre : un agent conversationnel collecte les informations, l'humain garde le reglement",
+        "livrable": "Chat de declaration en production, taux de prise en charge IA mesure"
+      },
+      {
+        "action": "Construire le scoring de risque et les regles de reglement automatique sur les cas simples, avec validation actuarielle",
+        "livrable": "Modele valide par la fonction actuarielle + cadre de conformite RGPD/AI Act documente (supervision, contestation)"
+      },
+      {
+        "action": "Ouvrir le reglement de bout en bout sur un perimetre restreint (petits sinistres, faible risque de fraude), avec escalade humaine systematique sur les cas douteux",
+        "livrable": "Part des dossiers regles sans humain mesuree + circuit d'escalade fonctionnel"
+      },
+      {
+        "action": "Etendre type de sinistre par type de sinistre et suivre l'effet economique",
+        "livrable": "Tableau de bord ratio LAE / taux d'automatisation compare a la periode de reference"
+      }
+    ],
+    "equipe": "2-4 data scientists + 1 actuaire + 1 PM + equipe sinistres pour les escalades, avec conformite/DPO en continu"
+  },
+  "seo": {
+    "slug": "lemonade-ia-souscription-sinistres-2025",
+    "title": "Lemonade : souscription et sinistres pilotes par IA - ratio LAE ~4% (2025)",
+    "meta_description": "Maya souscrit en 90 s, AI Jim regle 55% des sinistres sans humain. L'automatisation IA tire le ratio LAE de Lemonade vers ~4%.",
+    "resume_citable": "A fin 2025, les agents IA de Lemonade (Maya pour la souscription, AI Jim pour les sinistres) prennent environ 96% des premiers avis de sinistre sans humain et automatisent environ 55% des dossiers, tirant le ratio LAE vers ~4% contre 13% trois ans plus tot.",
+    "faq": [
+      {
+        "q": "Que font Maya et AI Jim chez Lemonade ?",
+        "a": "Maya gere la souscription conversationnelle et genere un devis tarife en moins de 90 secondes ; AI Jim prend les declarations de sinistre et regle environ 55% des dossiers de bout en bout sans intervention humaine."
+      },
+      {
+        "q": "Quel est l'impact economique de cette automatisation ?",
+        "a": "Lemonade cite un ratio LAE d'environ 4% pour la partie pilotee par l'IA et un ratio LAE global passe de 13% a 7% en trois ans, pendant que le volume de sinistres etait multiplie par plus de 2,5."
+      }
+    ]
+  },
+  "logo_domain": "lemonade.com",
+  "stack_technique": [
+    {
+      "nom": "Maya (agent IA de souscription)",
+      "categorie": "outil",
+      "detail": "agent conversationnel maison qui recommande la couverture, genere le devis et encaisse le paiement en moins de 90 secondes",
+      "url": "https://www.lemonade.com"
+    },
+    {
+      "nom": "AI Jim (agent IA de sinistres)",
+      "categorie": "outil",
+      "detail": "prend environ 96% des premiers avis de sinistre en chat et regle environ 55% des dossiers de bout en bout",
+      "url": "https://www.lemonade.com"
+    },
+    {
+      "nom": "Customer cortex",
+      "categorie": "plateforme",
+      "detail": "systeme de machine learning proprietaire de Lemonade qui estime le risque et le prix en temps reel ; modeles exacts non publies",
+      "url": "https://www.lemonade.com"
+    },
+    {
+      "nom": "Telemetrie continue first-party",
+      "categorie": "infra",
+      "detail": "plus de 90% des clients equipes ; alimente la tarification en temps reel et le reapprentissage des modeles",
+      "url": "https://www.lemonade.com"
+    }
+  ]
+}

@@ -1,0 +1,243 @@
+{
+  "id": "zurich-voice-iq-retention-2025",
+  "type_fiche": "succes",
+  "marque": "Zurich",
+  "groupe": "Zurich Insurance Group",
+  "industrie": "banque_assurance_fintech",
+  "marches_deploiement": [
+    "Espagne (Sabadell Seguros)",
+    "deploiement en cours dans d'autres entites du groupe"
+  ],
+  "transposable_ue": {
+    "flag": "oui",
+    "note": "Le cas est ne en UE (Espagne, coentreprise Sabadell Seguros). L'analyse d'appels enregistres par IA suppose l'information des clients et des agents, une base legale pour le traitement des conversations et, selon les cas, l'avis du comite d'entreprise sur l'outil de guidage des teleconseillers. Pas de decision automatisee a effet juridique ici : l'IA assiste l'agent, elle ne decide pas a sa place."
+  },
+  "metier": "Service client et retention (centre de contact)",
+  "axes": {
+    "levier": "retention",
+    "touchpoints": [
+      "appels du centre de contact",
+      "conversations de retention"
+    ],
+    "etape_parcours": "fidélité",
+    "famille": "conversation",
+    "pattern": "analyse genAI des appels et guidage temps reel de l'agent pour la retention",
+    "type_ia": [
+      "IA generative",
+      "analyse conversationnelle (speech analytics)",
+      "recommandation temps reel"
+    ],
+    "plateforme_stack": [
+      "Voice IQ (solution GenAI Zurich)"
+    ],
+    "objectif_metrique": [
+      "taux de retention client",
+      "qualite de l'interaction agent-client"
+    ]
+  },
+  "implementation": "custom",
+  "objectif_business": "Reduire la resiliation en outillant les teleconseillers pendant l'appel : detecter le motif, proposer la bonne reponse et personnaliser l'offre de retention au bon moment.",
+  "description": "Voice IQ analyse des milliers d'appels clients pour donner aux equipes du centre de contact un guidage en temps reel et des recommandations adaptees a chaque conversation. Concretement, l'outil ecoute les echanges de retention, identifie ce qui se joue et suggere a l'agent la reponse et l'offre les plus pertinentes pour eviter la resiliation. Zurich a d'abord deploye l'outil chez Sabadell Seguros, sa coentreprise en Espagne, ou la retention a progresse de 20%. La solution a recu un prix Qorus Innovation in Insurance 2025 (categorie GenAI Innovation of the Year, bronze), decrite comme une plateforme genAI qui analyse les appels de retention pour renforcer la relation agent-client, ameliorer les pratiques de service et reduire le churn. Voice IQ s'inscrit dans un portefeuille plus large d'outils IA de Zurich cote souscription et service, dont Guideline IQ, un assistant pour souscripteurs deja en service dans 29 entites.",
+  "resultats": [
+    {
+      "metrique": "Progression de la retention client chez Sabadell Seguros (coentreprise Zurich)",
+      "valeur": "+20%",
+      "citation_exacte": "retention rose 20%",
+      "source_ref": "S1"
+    },
+    {
+      "metrique": "Qorus Innovation in Insurance 2025, GenAI Innovation of the Year (bronze)",
+      "valeur": "Prix Qorus 2025",
+      "citation_exacte": "VoiceIQ, a GenAI-powered platform that analyzes retention calls",
+      "source_ref": "S2"
+    }
+  ],
+  "niveau_preuve": {
+    "niveau": "C",
+    "justification": "Resultat de +20% de retention publie par Zurich sur sa page officielle IA (partie interessee), corrobore par un tiers via le prix Qorus / NTT DATA 2025 qui documente nommement la solution VoiceIQ chez Sabadell Seguros. Chiffre declaratif de la marque, pas un resultat financier audite."
+  },
+  "dates": {
+    "lancement": "Deploiement chez Sabadell Seguros documente en 2025",
+    "derniere_confirmation_activite": "Page IA de Zurich et palmares Qorus 2025 (annonce mi-2025)",
+    "verifie_le": "2026-07-11",
+    "revoir_apres": "2027-01-11"
+  },
+  "statut_vivant": {
+    "statut": "confirme",
+    "note": "Voice IQ est presente comme un cas d'usage operationnel sur la page IA officielle de Zurich et a ete recompense en 2025 ; les outils IA du groupe sont en extension a d'autres entites."
+  },
+  "sources": [
+    {
+      "ref": "S1",
+      "type": "blog_officiel",
+      "fiabilite": "T1_primaire",
+      "titre": "AI at Zurich - Zurich Insurance",
+      "url": "https://www.zurich.com/about-us/ai-at-zurich",
+      "date_publication": "2025",
+      "consulte_le": "2026-07-11"
+    },
+    {
+      "ref": "S2",
+      "type": "presse",
+      "fiabilite": "T3_presse_etablie",
+      "titre": "Qorus and NTT DATA announce winners of the tenth Innovation in Insurance Awards",
+      "url": "https://www.qorusglobal.com/content/30308-qorus-and-ntt-data-announce-winners-of-the-tenth-innovation-in-insurance-awards",
+      "date_publication": "2025-07",
+      "consulte_le": "2026-07-11"
+    }
+  ],
+  "fonctionnement_operationnel": {
+    "cadence": "Temps reel pendant l'appel pour le guidage ; analyse en continu du corpus d'appels pour affiner les recommandations.",
+    "opere_par": "Equipe du centre de contact et data/IA de l'entite locale ; l'IA guide, l'agent decide et parle au client.",
+    "signal_pilote": "Le contenu des conversations de retention et l'issue (resiliation evitee ou non). Sans transcription fiable et sans retour sur l'issue, les recommandations ne s'ameliorent plus.",
+    "etapes": [
+      {
+        "etape": "Analyse des appels",
+        "detail": "Voice IQ analyse des milliers d'appels pour reperer motifs de resiliation et bonnes pratiques.",
+        "acteur": "IA"
+      },
+      {
+        "etape": "Guidage temps reel",
+        "detail": "Pendant l'appel, l'outil suggere a l'agent la reponse et l'offre de retention adaptees.",
+        "acteur": "IA"
+      },
+      {
+        "etape": "Action de l'agent",
+        "detail": "L'agent applique ou ajuste la recommandation et mene la conversation avec le client.",
+        "acteur": "teleconseiller"
+      }
+    ]
+  },
+  "schema_flow": {
+    "statut": "approche_type",
+    "noeuds": [
+      {
+        "id": "client",
+        "role_generique": "canal_conversationnel",
+        "label": "Client au telephone (retention)"
+      },
+      {
+        "id": "agent",
+        "role_generique": "humain",
+        "label": "Teleconseiller"
+      },
+      {
+        "id": "voiceiq",
+        "role_generique": "modele_ia",
+        "label": "Voice IQ (analyse et guidage genAI)",
+        "outil_documente": "Voice IQ"
+      },
+      {
+        "id": "corpus",
+        "role_generique": "data_source",
+        "label": "Corpus d'appels analyses"
+      }
+    ],
+    "liens": [
+      [
+        "client",
+        "agent",
+        "appel de retention"
+      ],
+      [
+        "client",
+        "voiceiq",
+        "flux de la conversation"
+      ],
+      [
+        "voiceiq",
+        "agent",
+        "guidage et offre recommandee"
+      ],
+      [
+        "corpus",
+        "voiceiq",
+        "apprentissage sur les appels passes"
+      ],
+      [
+        "agent",
+        "corpus",
+        "issue de l'appel (boucle)"
+      ]
+    ]
+  },
+  "replication": {
+    "statut_epistemique": "infere",
+    "prerequis_data": [
+      "Enregistrements et transcriptions d'appels de retention",
+      "Etiquetage des issues (resiliation evitee ou non)",
+      "Catalogue d'offres de retention"
+    ],
+    "prerequis_orga": [
+      "Centre de contact avec agents formes",
+      "Cadre juridique et social pour l'analyse d'appels",
+      "Boucle qualite pour valider les recommandations"
+    ],
+    "stack_possible": [
+      "Solution genAI custom (voie Voice IQ)",
+      "Plateforme de speech analytics + assistant temps reel du marche",
+      "CCaaS avec module agent-assist"
+    ],
+    "premiere_etape": "Analyser un corpus d'appels de resiliation pour identifier les motifs recurrents avant de brancher le guidage temps reel.",
+    "playbook": [
+      {
+        "action": "Cadrer le juridique (information clients et agents, instances sociales) et securiser l'acces aux enregistrements.",
+        "livrable": "Cadre valide + corpus d'appels de retention accessible."
+      },
+      {
+        "action": "Analyser le corpus de resiliation : motifs recurrents et pratiques des meilleurs agents.",
+        "livrable": "Taxonomie des motifs + playbook de reponses par motif."
+      },
+      {
+        "action": "Construire le guidage (recommandations par motif, offres de retention associees).",
+        "livrable": "Prototype teste sur appels enregistres, hors production."
+      },
+      {
+        "action": "Lancer le pilote temps reel sur une equipe contre une equipe temoin.",
+        "livrable": "Lecture retention et qualite d'appel, pilote vs temoin."
+      },
+      {
+        "action": "Boucler l'apprentissage sur les issues d'appel et planifier l'extension.",
+        "livrable": "Recommandations affinees + plan de deploiement aux autres equipes."
+      }
+    ],
+    "equipe": "1 PM centre de contact + 1-2 data scientists ou ingenieurs genAI + 1 juriste + superviseurs plateau"
+  },
+  "seo": {
+    "slug": "zurich-voice-iq-retention-2025",
+    "title": "Zurich : Voice IQ, guidage genAI des appels de retention - +20% de retention chez Sabadell Seguros (2025)",
+    "meta_description": "Voice IQ analyse les appels et guide les teleconseillers de Zurich en temps reel. Chez Sabadell Seguros, la retention a progresse de 20% (prix Qorus 2025).",
+    "resume_citable": "Voice IQ, la solution genAI de Zurich, analyse les appels de retention et guide les teleconseillers en temps reel ; deployee chez Sabadell Seguros en Espagne, elle a fait progresser la retention de 20% et a recu un prix Qorus Innovation in Insurance 2025.",
+    "faq": [
+      {
+        "q": "Que fait Voice IQ chez Zurich ?",
+        "a": "Voice IQ analyse des milliers d'appels clients et donne aux teleconseillers un guidage en temps reel avec des recommandations personnalisees, pour reduire la resiliation lors des conversations de retention."
+      },
+      {
+        "q": "Quel resultat Voice IQ a-t-il produit ?",
+        "a": "Chez Sabadell Seguros, la coentreprise de Zurich en Espagne, la retention a progresse de 20%, et la solution a recu un prix Qorus Innovation in Insurance 2025 dans la categorie GenAI Innovation of the Year."
+      }
+    ]
+  },
+  "logo_domain": "zurich.com",
+  "stack_technique": [
+    {
+      "nom": "Voice IQ",
+      "categorie": "outil",
+      "detail": "Solution genAI developpee par Zurich : analyse des appels de retention et guidage temps reel du teleconseiller (reponse et offre recommandees).",
+      "url": "https://www.zurich.com"
+    },
+    {
+      "nom": "LLM de Voice IQ (modele exact non publie)",
+      "categorie": "llm",
+      "detail": "Zurich decrit une plateforme genAI sans nommer le modele sous-jacent.",
+      "url": "https://www.zurich.com"
+    },
+    {
+      "nom": "Transcription et speech analytics des appels",
+      "categorie": "infra",
+      "detail": "Conversion des conversations en texte exploitable ; sans transcription fiable et retour sur l'issue, les recommandations cessent de s'ameliorer.",
+      "url": "https://www.zurich.com"
+    }
+  ]
+}

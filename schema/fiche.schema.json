@@ -1,0 +1,340 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "ai-showreel/fiche.schema.json",
+  "title": "Fiche cas d'usage IA — AI Showreel",
+  "type": "object",
+  "required": [
+    "id", "marque", "industrie", "marches_deploiement", "transposable_ue",
+    "metier", "axes", "implementation", "objectif_business", "description",
+    "resultats", "niveau_preuve", "dates", "statut_vivant", "sources",
+    "schema_flow", "replication", "seo"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "description": "Slug unique : marque-pattern-annee",
+      "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$"
+    },
+    "type_fiche": {
+      "type": "string",
+      "enum": ["succes", "echec_retrait"],
+      "default": "succes",
+      "description": "echec_retrait = cas du cimetière : projet arrêté, feature retirée, backlash, retour en arrière. Exige le bloc post_mortem."
+    },
+    "marque": { "type": "string" },
+    "groupe": { "type": "string", "description": "Groupe parent si différent de la marque" },
+    "industrie": {
+      "type": "string",
+      "enum": ["retail_ecom", "voyage_hospitality", "banque_assurance_fintech", "telco", "media_entertainment", "luxe_beaute", "auto", "cpg_d2c", "food_beverage", "sante_pharma", "tech_saas", "energie_utilities", "immobilier", "sport_fitness", "education", "secteur_public", "autre"]
+    },
+    "marches_deploiement": {
+      "type": "array", "items": { "type": "string" }, "minItems": 1,
+      "description": "Pays/régions où le cas est effectivement déployé"
+    },
+    "transposable_ue": {
+      "type": "object",
+      "required": ["flag", "note"],
+      "properties": {
+        "flag": { "type": "string", "enum": ["oui", "oui_avec_adaptations", "non", "a_verifier"] },
+        "note": { "type": "string", "description": "Contraintes RGPD / AI Act / data si pertinent" }
+      }
+    },
+    "metier": { "type": "string", "description": "Fonction concernée : marketing, e-commerce, service client, CRM…" },
+
+    "marque_linkedin": { "type": "string", "description": "URL LinkedIn officielle de la marque — VÉRIFIÉE uniquement, jamais devinée." },
+
+    "logo_domain": { "type": "string", "description": "Domaine officiel de la marque (ex: nike.com) pour récupérer son logo. Le rendu retombe sur un monogramme si le logo ne charge pas — donc une erreur ici n'a aucun coût visuel." },
+
+    "intervenants": {
+      "type": "array",
+      "description": "Personnes publiquement et vérifiablement associées au projet (citées dans une source, intervenues en conférence, auteurs du blog technique). RÈGLE DURE : jamais sur une fiche echec_retrait (on ne pointe pas un échec public sur un individu). Chaque nom doit tracer à une source ; une URL LinkedIn ne s'affiche que si vérifiée (sinon on l'omet, on n'invente jamais). Interdit d'affirmer qu'une personne a travaillé sur le projet sans source explicite.",
+      "items": {
+        "type": "object",
+        "required": ["nom", "role", "source_ref"],
+        "properties": {
+          "nom": { "type": "string" },
+          "role": { "type": "string", "description": "Fonction au moment du projet" },
+          "linkedin_url": { "type": "string", "description": "Seulement si vérifiée. Omettre si non confirmée — ne jamais fabriquer." },
+          "source_ref": { "type": "string", "description": "Réf. dans sources[] où la personne est associée au projet" }
+        }
+      }
+    },
+
+    "agences": {
+      "type": "array",
+      "description": "Agences/intégrateurs/partenaires cités dans le cas comme ayant contribué. Même règle : uniquement si cité dans une source, avec source_ref. URL seulement si vérifiée.",
+      "items": {
+        "type": "object",
+        "required": ["nom", "role", "source_ref"],
+        "properties": {
+          "nom": { "type": "string" },
+          "role": { "type": "string" },
+          "linkedin_url": { "type": "string", "description": "Seulement si vérifiée." },
+          "source_ref": { "type": "string" }
+        }
+      }
+    },
+
+    "axes": {
+      "type": "object",
+      "required": ["levier", "touchpoints", "etape_parcours", "famille", "pattern", "type_ia", "plateforme_stack", "objectif_metrique"],
+      "properties": {
+        "levier": { "type": "string", "enum": ["acquisition", "activation_conversion", "retention", "monetisation"] },
+        "touchpoints": { "type": "array", "items": { "type": "string" }, "minItems": 1 },
+        "etape_parcours": { "type": "string", "description": "découverte | considération | achat | post-achat | fidélité" },
+        "famille": {
+          "type": "string",
+          "enum": ["personnalisation", "generation", "conversation", "prediction", "optimisation_automatisation"],
+          "description": "Niveau 1 de l'axe type de projet (liste provisoire, validée par le pilote)"
+        },
+        "pattern": { "type": "string", "description": "Niveau 2, cross-industrie : ex. 'agent client genAI', 'pricing dynamique'" },
+        "type_ia": { "type": "array", "items": { "type": "string" }, "minItems": 1 },
+        "plateforme_stack": {
+          "type": "array", "items": { "type": "string" }, "minItems": 1,
+          "description": "Outils/plateformes identifiés, ou 'custom/in-house'"
+        },
+        "objectif_metrique": { "type": "array", "items": { "type": "string" }, "minItems": 1 }
+      }
+    },
+
+    "implementation": {
+      "type": "string", "enum": ["custom", "plateforme", "hybride"],
+      "description": "Custom = répliquer est un projet ; plateforme = répliquer est une activation"
+    },
+
+    "objectif_business": { "type": "string" },
+    "points_cles": { "type": "array", "items": { "type": "string" }, "description": "3 a 4 puces courtes (<20 mots) resumant le cas pour une lecture rapide sur mobile. Reformulation condensee de contenu deja source (deploiement, resultat chiffre, mecanisme/stack, niveau de preuve). JAMAIS de fait ou chiffre absent des sources. Ordre : fait -> avec quoi -> resultat -> statut." },
+    "description": { "type": "string", "description": "Concret : comment ça marche pour l'utilisateur final, quel périmètre" },
+
+    "resultats": {
+      "type": "array", "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": ["metrique", "valeur", "citation_exacte", "source_ref"],
+        "properties": {
+          "metrique": { "type": "string" },
+          "valeur": { "type": "string" },
+          "citation_exacte": { "type": "string", "description": "Courte (<15 mots), langue d'origine" },
+          "source_ref": { "type": "string", "description": "Réf. dans sources[] (ex. S1)" }
+        }
+      }
+    },
+
+    "niveau_preuve": {
+      "type": "object",
+      "required": ["niveau", "justification"],
+      "properties": {
+        "niveau": { "type": "string", "enum": ["A", "B", "C", "D"] },
+        "justification": { "type": "string" }
+      },
+      "description": "A=résultats financiers ; B=étude de cas plateforme chiffrée ; C=presse citant la marque ; D=déclaratif conférence. Multi-sources concordantes ⇒ monte."
+    },
+
+    "dates": {
+      "type": "object",
+      "required": ["lancement", "derniere_confirmation_activite", "verifie_le", "revoir_apres"],
+      "properties": {
+        "lancement": { "type": "string" },
+        "derniere_confirmation_activite": { "type": "string" },
+        "verifie_le": { "type": "string", "format": "date" },
+        "revoir_apres": { "type": "string", "format": "date", "description": "Date de péremption de la vérification" }
+      }
+    },
+
+    "statut_vivant": {
+      "type": "object",
+      "required": ["statut"],
+      "properties": {
+        "statut": { "type": "string", "enum": ["confirme", "signaux_mitiges", "incertain"] },
+        "note": { "type": "string" }
+      }
+    },
+
+    "sources": {
+      "type": "array", "minItems": 2,
+      "items": {
+        "type": "object",
+        "required": ["ref", "type", "titre", "url", "consulte_le"],
+        "properties": {
+          "ref": { "type": "string" },
+          "type": { "type": "string", "description": "earnings_call | customer_story_plateforme | presse | conference | blog_officiel | eng_blog | decision_de_justice | document_officiel_sec | analyse_juridique | analyse_academique" },
+          "fiabilite": {
+            "type": "string",
+            "enum": ["T1_primaire", "T2_officiel_interesse", "T3_presse_etablie", "T4_secondaire"],
+            "description": "Grade de fiabilité de la SOURCE (distinct du niveau de preuve du CAS). T1 = document primaire non-interprété (décision de justice, doc SEC, earnings, communiqué officiel de la marque) ; T2 = source officielle mais intéressée (customer story plateforme/vendor/intégrateur) ; T3 = presse établie ; T4 = presse spécialisée / analyse tierce. Le bruit internet (listicle recyclé, agrégateur anonyme, SEO spam) N'ENTRE JAMAIS — il n'a pas de grade, il est exclu à la collecte."
+          },
+          "titre": { "type": "string" },
+          "url": { "type": "string", "format": "uri" },
+          "date_publication": { "type": "string" },
+          "consulte_le": { "type": "string", "format": "date" },
+          "archive_url": { "type": "string", "description": "Snapshot archive.org — la preuve doit survivre au lien" }
+        }
+      }
+    },
+
+    "post_mortem": {
+      "type": "object",
+      "description": "Obligatoire si type_fiche = echec_retrait. Sépare strictement le sourcé (ce qui s'est passé) de l'inféré (signaux, leçons).",
+      "required": ["ce_qui_s_est_passe", "raison_echec", "date_retrait", "lecons_avec_recul"],
+      "properties": {
+        "ce_qui_s_est_passe": { "type": "string", "description": "FAITS SOURCÉS : chronologie du lancement au retrait/échec" },
+        "raison_echec": { "type": "string", "description": "FAITS SOURCÉS : raison publique/documentée (déclaration, article, décision de justice…)" },
+        "date_retrait": { "type": "string", "description": "Date du retrait/arrêt/backpedal" },
+        "cout_estime": { "type": "string", "description": "Si public : coût financier ou réputationnel documenté" },
+        "signaux_avant_coureurs": { "type": "string", "description": "INFÉRÉ : ce qu'on aurait pu voir venir, avec recul" },
+        "lecons_avec_recul": { "type": "string", "description": "INFÉRÉ : ce que ça enseigne à qui veut répliquer le pattern — la vraie valeur du cimetière" },
+        "le_pattern_reste_il_valide": { "type": "string", "description": "INFÉRÉ : l'échec condamne-t-il le pattern, ou seulement cette exécution ? (crucial : Zillow Offers ne condamne pas le pricing prédictif)" }
+      }
+    },
+
+    "fonctionnement_operationnel": {
+      "type": "object",
+      "description": "Comment ça tourne AU QUOTIDIEN, pour une équipe ops qui voudrait le faire tourner. Distinct de la description (ce qui a été fait). Suit docs/REDACTION.md.",
+      "required": ["cadence", "opere_par", "etapes"],
+      "properties": {
+        "cadence": { "type": "string", "description": "Temps réel / batch quotidien / par campagne / réentraînement mensuel…" },
+        "opere_par": { "type": "string", "description": "Quelle équipe tient la main une fois lancé" },
+        "signal_pilote": { "type": "string", "description": "La donnée sur laquelle le système s'optimise, et ce qui casse si elle manque" },
+        "etapes": {
+          "type": "array", "minItems": 2,
+          "items": {
+            "type": "object",
+            "required": ["etape", "detail", "acteur"],
+            "properties": {
+              "etape": { "type": "string" },
+              "detail": { "type": "string" },
+              "acteur": { "type": "string", "description": "IA / équipe data / marketing / agence / client — qui fait ce geste" }
+            }
+          }
+        }
+      }
+    },
+
+    "media": {
+      "type": "object",
+      "description": "Exemple visuel/vidéo du cas en action. FACTUEL : uniquement une URL réelle vérifiée (vidéo officielle de la marque/plateforme, la pub elle-même pour un cas genAI, ou couverture presse). Jamais fabriqué.",
+      "required": ["kind", "url", "source"],
+      "properties": {
+        "kind": { "type": "string", "enum": ["video", "image"] },
+        "url": { "type": "string", "description": "URL YouTube (watch/shorts/youtu.be) ou image" },
+        "source": { "type": "string", "enum": ["officielle", "demo", "la_pub", "couverture"], "description": "officielle = chaîne de la marque/vendor ; demo = démonstration de la feature ; la_pub = la publicité genAI elle-même ; couverture = presse/interview" },
+        "titre": { "type": "string" }
+      }
+    },
+
+    "preuve_visuelle": {
+      "type": "object",
+      "description": "Capture d'écran datée de la feature en production (PeekShot) — preuve de vivacité la plus forte + illustration de la page",
+      "required": ["url_capture", "date_capture", "page_capturee"],
+      "properties": {
+        "url_capture": { "type": "string" },
+        "date_capture": { "type": "string", "format": "date" },
+        "page_capturee": { "type": "string", "format": "uri", "description": "URL de la page où la feature est visible" }
+      }
+    },
+
+    "schema_flow": {
+      "type": "object",
+      "required": ["statut", "noeuds", "liens"],
+      "description": "Schéma de fonctionnement = DONNÉE (rendu auto en diagramme), jamais une image dessinée",
+      "properties": {
+        "statut": {
+          "type": "string", "enum": ["documente", "approche_type"],
+          "description": "documente = architecture publiée (sourcé) ; approche_type = inféré, affiché avec bandeau « approche éprouvée menant au même résultat »"
+        },
+        "noeuds": {
+          "type": "array", "minItems": 2,
+          "items": {
+            "type": "object",
+            "required": ["id", "role_generique", "label"],
+            "properties": {
+              "id": { "type": "string" },
+              "role_generique": { "type": "string", "description": "cdp | crm | canal_conversationnel | modele_ia | dam | site_app | paid_platform | data_source | humain — c'est ce rôle qui est substitué par le stack client" },
+              "label": { "type": "string" },
+              "outil_documente": { "type": "string", "description": "Outil réel si connu (mode documenté)" }
+            }
+          }
+        },
+        "liens": {
+          "type": "array",
+          "items": {
+            "type": "array", "minItems": 2, "maxItems": 3,
+            "items": { "type": "string" },
+            "description": "[id_source, id_cible, label?]"
+          }
+        }
+      }
+    },
+
+    "stack_technique": {
+      "type": "array",
+      "description": "La stack EN DÉTAIL : quel modèle/LLM exactement, via quelle plateforme, quel outil. FACTUEL : seulement si sourcé dans la fiche ou vérifié. url = domaine officiel du produit uniquement.",
+      "items": {
+        "type": "object",
+        "required": ["nom", "categorie"],
+        "properties": {
+          "nom": { "type": "string", "description": "Ex: GPT-4o, Gemini 1.5 Pro, Vertex AI, Advantage+" },
+          "categorie": { "type": "string", "enum": ["llm", "plateforme", "outil", "integrateur", "infra"] },
+          "detail": { "type": "string", "description": "Ex: 'via Azure OpenAI Service', 'RAG sur BigQuery'" },
+          "url": { "type": "string", "description": "Domaine/page officielle du produit. Jamais deviné." }
+        }
+      }
+    },
+
+    "replication": {
+      "type": "object",
+      "required": ["statut_epistemique", "prerequis_data", "stack_possible", "premiere_etape"],
+      "description": "Section INFÉRÉE — toujours affichée séparément des faits sourcés. RÈGLE DURE (2026-07-11) : JAMAIS de délais, budgets, ou scores chiffrés inférés — que du qualitatif factuel. Un chiffre n'apparaît que s'il est sourcé dans le cas (et il vit alors dans resultats/description, pas ici). Les champs effort/time_to_value/budget_estime/score sont OBSOLÈTES : ne plus les remplir, le rendu les ignore.",
+      "properties": {
+        "statut_epistemique": { "type": "string", "const": "infere" },
+        "playbook": {
+          "type": "array",
+          "description": "INFÉRÉ : le plan étape par étape pour répliquer, en étapes ORDONNÉES SANS DURÉES (jamais de 'Semaine 1-2' — un délai inventé est un chiffre faux). Le rendu numérote Étape 1, 2, 3.",
+          "items": {
+            "type": "object",
+            "required": ["action"],
+            "properties": {
+              "phase": { "type": "string", "description": "OBSOLÈTE — ignoré par le rendu, ne plus remplir" },
+              "action": { "type": "string" },
+              "livrable": { "type": "string", "description": "Ce qui existe à la fin de l'étape" }
+            }
+          }
+        },
+        "budget_estime": { "type": "string", "description": "OBSOLÈTE (règle 2026-07-11 : jamais de budget inféré) — ne plus remplir, ignoré par le rendu" },
+        "equipe": { "type": "string", "description": "INFÉRÉ qualitatif : profils nécessaires pour opérer (jamais de chiffres)" },
+        "prerequis_data": { "type": "array", "items": { "type": "string" } },
+        "prerequis_orga": { "type": "array", "items": { "type": "string" } },
+        "stack_possible": { "type": "array", "items": { "type": "string" } },
+        "effort": { "type": "string", "enum": ["S", "M", "L"] },
+        "time_to_value": { "type": "string" },
+        "premiere_etape": { "type": "string" },
+        "score": {
+          "type": "object",
+          "required": ["impact_prouve", "facilite", "accessibilite_data"],
+          "properties": {
+            "impact_prouve": { "type": "integer", "minimum": 1, "maximum": 5 },
+            "facilite": { "type": "integer", "minimum": 1, "maximum": 5, "description": "5 = activer une feature plateforme ; 1 = projet custom lourd" },
+            "accessibilite_data": { "type": "integer", "minimum": 1, "maximum": 5, "description": "5 = data first-party standard ; 1 = data rare/complexe" }
+          },
+          "description": "Score de réplicabilité — alimente la grille quick wins / paris structurants du générateur"
+        }
+      }
+    },
+
+    "seo": {
+      "type": "object",
+      "required": ["slug", "title", "resume_citable"],
+      "description": "Champs SEO/GEO — chaque fiche est une page publique (Loop 1 & 2)",
+      "properties": {
+        "slug": { "type": "string" },
+        "title": { "type": "string", "description": "Pattern : {Marque} : {pattern} — {résultat clé} ({année})" },
+        "meta_description": { "type": "string", "maxLength": 160 },
+        "resume_citable": { "type": "string", "description": "1 phrase stat-dense, autoportante, conçue pour être citée par un LLM" },
+        "faq": {
+          "type": "array",
+          "items": { "type": "object", "required": ["q", "a"], "properties": { "q": { "type": "string" }, "a": { "type": "string" } } }
+        }
+      }
+    }
+  }
+}

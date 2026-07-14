@@ -1,0 +1,255 @@
+{
+  "id": "stubhub-pricing-assistant-ia-2019",
+  "type_fiche": "succes",
+  "marque": "StubHub",
+  "groupe": "eBay (proprietaire au lancement, 2019)",
+  "industrie": "media_entertainment",
+  "marches_deploiement": [
+    "Amerique du Nord"
+  ],
+  "transposable_ue": {
+    "flag": "oui",
+    "note": "Un moteur de recommandation de prix aux vendeurs sur une marketplace est transposable, la friction reglementaire est faible car le vendeur active un toggle optionnel. Le RGPD s'applique aux donnees des vendeurs mais sans obstacle particulier."
+  },
+  "metier": "marketplace / pricing",
+  "axes": {
+    "levier": "monetisation",
+    "touchpoints": [
+      "outil vendeur StubHub",
+      "marketplace de billets"
+    ],
+    "etape_parcours": "achat",
+    "famille": "optimisation_automatisation",
+    "pattern": "moteur de recommandation de prix dynamique aux vendeurs",
+    "type_ia": [
+      "algorithme de recommandation de prix",
+      "modelisation de la probabilite de vente",
+      "donnees de marche temps reel"
+    ],
+    "plateforme_stack": [
+      "custom/in-house"
+    ],
+    "objectif_metrique": [
+      "taux de vente (sell-through)",
+      "volume de transactions",
+      "revenu vendeur",
+      "commissions marketplace"
+    ]
+  },
+  "implementation": "custom",
+  "objectif_business": "Aider les vendeurs a poser un prix qui maximise la probabilite de vente, donc le volume de transactions et les commissions preleves par la marketplace.",
+  "description": "Pricing Assistant, deploye en Amerique du Nord a partir d'avril 2019 et annonce officiellement en novembre 2019, est un toggle optionnel: une fois active, l'algorithme ajuste le prix des billets a la hausse ou a la baisse au fil de l'evolution du marche et de l'approche de la date de l'evenement. Il s'appuie sur pres de vingt ans de donnees de ventes, les prix par siege et section, les transactions recentes comparables et l'activite de marche en cours, et donne un prix conseille ainsi qu'une fourchette haute et basse. La fonctionnalite Sell It Now, lancee en parallele, permet une vente immediate a prix garanti.",
+  "resultats": [
+    {
+      "metrique": "Prix ajuste a la hausse ou a la baisse selon le marche",
+      "valeur": "prix auto-ajuste",
+      "citation_exacte": "moving prices up or down as the market adjusts",
+      "source_ref": "S2"
+    },
+    {
+      "metrique": "Historique de ventes mobilise par le moteur de prix",
+      "valeur": "pres de 20 ans",
+      "citation_exacte": "nearly 20 years of historic sales data on live experiences and ticket prices",
+      "source_ref": "S2"
+    }
+  ],
+  "niveau_preuve": {
+    "niveau": "C",
+    "justification": "Communique officiel StubHub et presse specialisee billetterie decrivant nommement l'outil, son fonctionnement et son perimetre. Aucun chiffre de resultat financier public, d'ou un niveau C."
+  },
+  "dates": {
+    "lancement": "deploiement progressif depuis 2019-04, annonce officielle 2019-11",
+    "derniere_confirmation_activite": "2026-07 (fonctionnalite documentee sur le support StubHub)",
+    "verifie_le": "2026-07-11",
+    "revoir_apres": "2027-01-11"
+  },
+  "statut_vivant": {
+    "statut": "confirme",
+    "note": "L'outil de recommandation de prix reste decrit dans les pages d'aide StubHub. La propriete de StubHub a change apres 2019 (rachat par viagogo en 2020), mais la fonctionnalite persiste."
+  },
+  "sources": [
+    {
+      "ref": "S1",
+      "type": "blog_officiel",
+      "fiabilite": "T1_primaire",
+      "titre": "StubHub launches Pricing Assistant and Sell It Now to make it even easier to sell tickets to live events",
+      "url": "https://stubhubpressbox.com/2019/11/06/stubhub-launches-pricing-assistant-and-sell-it-now-to-make-it-even-easier-to-sell-tickets-to-live-events/",
+      "date_publication": "2019-11-06",
+      "consulte_le": "2026-07-11"
+    },
+    {
+      "ref": "S2",
+      "type": "presse",
+      "fiabilite": "T4_secondaire",
+      "titre": "StubHub Announces New Tools, Including Sell It Now Feature",
+      "url": "https://www.ticketnews.com/2019/11/stubhub-tools-sell-it-now-feature/",
+      "date_publication": "2019-11",
+      "consulte_le": "2026-07-11"
+    },
+    {
+      "ref": "S3",
+      "type": "presse",
+      "fiabilite": "T4_secondaire",
+      "titre": "StubHub Adds Dynamic Ticket Pricing",
+      "url": "https://celebrityaccess.com/2019/11/06/stubhub-adds-dynamic-ticket-pricing/",
+      "date_publication": "2019-11-06",
+      "consulte_le": "2026-07-11"
+    }
+  ],
+  "fonctionnement_operationnel": {
+    "cadence": "Reprix continu selon le marche et l'approche de la date de l'evenement.",
+    "opere_par": "Vendeurs qui activent le toggle, moteur de pricing de StubHub.",
+    "signal_pilote": "L'activite de marche et les transactions recentes comparables par siege et section. Sans liquidite de comparables, la recommandation de prix perd sa fiabilite.",
+    "etapes": [
+      {
+        "etape": "Activation par le vendeur",
+        "detail": "Le vendeur active Pricing Assistant sur ses billets en liste.",
+        "acteur": "client"
+      },
+      {
+        "etape": "Lecture du marche",
+        "detail": "L'algorithme lit prix par section et siege, transactions recentes comparables et activite en cours.",
+        "acteur": "IA"
+      },
+      {
+        "etape": "Ajustement du prix",
+        "detail": "Il monte ou baisse le prix au fil de l'evolution du marche.",
+        "acteur": "IA"
+      },
+      {
+        "etape": "Baisse a l'approche de l'evenement",
+        "detail": "Il abaisse le prix a mesure que la date approche pour maximiser la probabilite de vente.",
+        "acteur": "IA"
+      }
+    ]
+  },
+  "schema_flow": {
+    "statut": "documente",
+    "noeuds": [
+      {
+        "id": "seller",
+        "role_generique": "humain",
+        "label": "Vendeur"
+      },
+      {
+        "id": "tool",
+        "role_generique": "site_app",
+        "label": "Pricing Assistant (outil vendeur)"
+      },
+      {
+        "id": "data",
+        "role_generique": "data_source",
+        "label": "Historique de ventes, transactions comparables, marche en cours"
+      },
+      {
+        "id": "eng",
+        "role_generique": "modele_ia",
+        "label": "Moteur de recommandation de prix"
+      },
+      {
+        "id": "buyer",
+        "role_generique": "humain",
+        "label": "Acheteur"
+      }
+    ],
+    "liens": [
+      [
+        "seller",
+        "tool",
+        "activation du toggle"
+      ],
+      [
+        "data",
+        "eng"
+      ],
+      [
+        "eng",
+        "tool",
+        "prix ajuste"
+      ],
+      [
+        "tool",
+        "buyer"
+      ]
+    ]
+  },
+  "replication": {
+    "statut_epistemique": "infere",
+    "prerequis_data": [
+      "historique de transactions par siege et section",
+      "activite de marche en temps reel",
+      "comparables par type d'evenement"
+    ],
+    "prerequis_orga": [
+      "marketplace avec inventaire vendeur",
+      "outil pour exposer les recommandations",
+      "regles de garde-fous sur les prix"
+    ],
+    "stack_possible": [
+      "moteur de recommandation de prix maison",
+      "modele de probabilite de vente",
+      "flux de donnees de marche"
+    ],
+    "premiere_etape": "Construire une estimation de probabilite de vente par prix sur l'historique de transactions comparables.",
+    "playbook": [
+      {
+        "action": "Consolider l'historique : transactions par evenement, siege et section, avec les comparables",
+        "livrable": "Dataset de transactions nettoye et structure"
+      },
+      {
+        "action": "Modeliser la probabilite de vente par niveau de prix a partir des comparables",
+        "livrable": "Modele evalue en backtest sur les ventes passees"
+      },
+      {
+        "action": "Definir les garde-fous : bornes de prix, fourchettes et regles a l'approche de la date",
+        "livrable": "Politique de pricing documentee et testable"
+      },
+      {
+        "action": "Exposer l'outil aux vendeurs en opt-in (toggle) sur un segment pilote",
+        "livrable": "Outil actif chez des vendeurs pilotes, sell-through mesure"
+      },
+      {
+        "action": "Comparer taux de vente et revenu des annonces avec et sans l'outil, ajuster puis ouvrir a tous",
+        "livrable": "Lecture chiffree du sell-through et deploiement general"
+      }
+    ],
+    "equipe": "1-2 data scientists + 1 dev produit vendeur + 1 PM marketplace"
+  },
+  "seo": {
+    "slug": "stubhub-pricing-assistant-ia-2019",
+    "title": "StubHub : Pricing Assistant, recommandation de prix dynamique aux vendeurs de billets (2019)",
+    "meta_description": "StubHub aide les vendeurs a fixer le bon prix via Pricing Assistant, un algorithme qui ajuste les prix a la hausse ou a la baisse selon le marche, sur pres de vingt ans de donnees de ventes.",
+    "resume_citable": "En 2019, StubHub lance Pricing Assistant, un moteur qui recommande et ajuste automatiquement le prix des billets des vendeurs selon le marche et l'approche de l'evenement, sur pres de vingt ans de donnees.",
+    "faq": [
+      {
+        "q": "Que fait le Pricing Assistant de StubHub ?",
+        "a": "Une fois active par le vendeur, il ajuste le prix des billets a la hausse ou a la baisse selon l'evolution du marche et l'approche de la date de l'evenement."
+      },
+      {
+        "q": "Sur quelles donnees repose la recommandation de prix ?",
+        "a": "Pres de vingt ans d'historique de ventes, les prix par siege et section, les transactions recentes comparables et l'activite de marche en cours."
+      }
+    ]
+  },
+  "logo_domain": "stubhub.com",
+  "stack_technique": [
+    {
+      "nom": "Pricing Assistant",
+      "categorie": "outil",
+      "detail": "toggle vendeur : prix conseille avec fourchette haute et basse, puis ajustement automatique au fil du marche et de l'approche de l'evenement",
+      "url": "https://www.stubhub.com"
+    },
+    {
+      "nom": "Moteur de recommandation de prix in-house",
+      "categorie": "outil",
+      "detail": "modele s'appuyant sur pres de vingt ans de donnees de ventes, les prix par siege et section et les transactions recentes comparables",
+      "url": "https://www.stubhub.com"
+    },
+    {
+      "nom": "Sell It Now",
+      "categorie": "outil",
+      "detail": "vente immediate a prix garanti, lancee en parallele du Pricing Assistant",
+      "url": "https://www.stubhub.com"
+    }
+  ]
+}

@@ -1,0 +1,264 @@
+{
+  "id": "duolingo-decagon-agent-ia-2024",
+  "type_fiche": "succes",
+  "marque": "Duolingo",
+  "industrie": "media_entertainment",
+  "marches_deploiement": [
+    "Etats-Unis",
+    "International (support de l'app)"
+  ],
+  "transposable_ue": {
+    "flag": "oui",
+    "note": "Support d'app grand public a faible enjeu reglementaire. Sous RGPD, prevoir la transparence sur l'interaction automatisee et une voie humaine ; peu de donnees sensibles en jeu comparé a la fintech ou la sante."
+  },
+  "metier": "service client",
+  "intervenants": [
+    {
+      "nom": "Ian Riggins",
+      "role": "Senior Operations Manager, Duolingo",
+      "source_ref": "S1"
+    }
+  ],
+  "axes": {
+    "levier": "retention",
+    "touchpoints": [
+      "chat support in-app",
+      "email (deploiement etendu)"
+    ],
+    "etape_parcours": "post-achat",
+    "famille": "conversation",
+    "pattern": "agent client genAI",
+    "type_ia": [
+      "agent conversationnel",
+      "LLM"
+    ],
+    "plateforme_stack": [
+      "Decagon"
+    ],
+    "objectif_metrique": [
+      "taux de deviation",
+      "charge de maintenance",
+      "temps de resolution"
+    ]
+  },
+  "implementation": "plateforme",
+  "stack_technique": [
+    {
+      "nom": "Decagon",
+      "categorie": "plateforme",
+      "detail": "Plateforme d'agents de support IA deployee sur le chat in-app; 80 pour cent de deviation contre 30 avec le fournisseur precedent.",
+      "url": "https://decagon.ai"
+    },
+    {
+      "nom": "Modeles OpenAI (via Decagon)",
+      "categorie": "llm",
+      "detail": "Decagon construit ses agents sur les modeles OpenAI, d'apres la customer story OpenAI consacree a Decagon.",
+      "url": "https://openai.com"
+    },
+    {
+      "nom": "Base de connaissances / FAQ Duolingo",
+      "categorie": "infra",
+      "detail": "Source des reponses de l'agent, synchronisee automatiquement chaque heure.",
+      "url": "https://www.duolingo.com"
+    },
+    {
+      "nom": "Chat support in-app",
+      "categorie": "infra",
+      "detail": "Canal de deploiement initial; extension a l'email prevue debut 2025.",
+      "url": "https://www.duolingo.com"
+    }
+  ],
+  "objectif_business": "Faire baisser le volume de tickets traite par des humains et le temps passe par l'equipe a maintenir l'outil de support, sur une base de plusieurs centaines de millions d'utilisateurs.",
+  "points_cles": ["Agent de support IA deploye sur le chat in-app, puis etendu a l'email.", "Plateforme Decagon batie sur les modeles OpenAI, FAQ synchronisee chaque heure.", "80% de deviation du chat contre 30% avant, mise en production en environ un mois.", "Preuve B, statut confirme."],
+  "description": "Duolingo a deploye en 2024 l'agent de support IA de Decagon sur son chat. L'agent devie 80 pour cent du volume de chat entrant, contre 30 pour cent avec le fournisseur precedent. La mise en place a pris environ un mois entre les premieres discussions et la mise en production. L'email etait prevu pour debut 2025. La bascule a aussi allege l'equipe : synchronisation horaire automatique de la FAQ, moins de maintenance manuelle, agents humains recentres sur les cas complexes. Duolingo revendique une base de 500 millions d'utilisateurs, ce qui donne l'echelle du volume de contacts absorbe.",
+  "resultats": [
+    {
+      "metrique": "Taux de deviation du chat, contre 30 pour cent avec le fournisseur precedent",
+      "valeur": "80%",
+      "citation_exacte": "80% chat deflection rate",
+      "source_ref": "S1"
+    },
+    {
+      "metrique": "Delai de mise en production",
+      "valeur": "environ un mois",
+      "citation_exacte": "it's been a night-and-day difference",
+      "source_ref": "S1"
+    }
+  ],
+  "niveau_preuve": {
+    "niveau": "B",
+    "justification": "Etude de cas chiffree de la plateforme Decagon avec une personne nommee et citee (Ian Riggins) ; recoupee par la customer story OpenAI sur Decagon. Chiffre de deviation clair mais issu d'une source interessee, d'ou le niveau B."
+  },
+  "dates": {
+    "lancement": "2024-08",
+    "derniere_confirmation_activite": "2025 (email support etendu, Decagon reference le cas)",
+    "verifie_le": "2026-07-11",
+    "revoir_apres": "2027-01-11"
+  },
+  "statut_vivant": {
+    "statut": "confirme",
+    "note": "Le cas reste publie par Decagon et le perimetre s'est etendu vers l'email en 2025. Decagon a par ailleurs consolide une base de grands comptes, ce qui rend le retrait peu probable."
+  },
+  "sources": [
+    {
+      "ref": "S1",
+      "type": "customer_story_plateforme",
+      "fiabilite": "T2_officiel_interesse",
+      "titre": "Duolingo Customer Success Story",
+      "url": "https://decagon.ai/case-studies/duolingo",
+      "date_publication": "2024",
+      "consulte_le": "2026-07-11"
+    },
+    {
+      "ref": "S2",
+      "type": "customer_story_plateforme",
+      "fiabilite": "T2_officiel_interesse",
+      "titre": "Delivering high-performance customer support (Decagon)",
+      "url": "https://openai.com/index/decagon/",
+      "date_publication": "2024",
+      "consulte_le": "2026-07-11"
+    }
+  ],
+  "fonctionnement_operationnel": {
+    "cadence": "Temps reel sur le chat, avec synchronisation horaire automatique de la base FAQ.",
+    "opere_par": "Equipe operations support de Duolingo, avec des Agent Product Managers et ingenieurs Decagon en appui au demarrage.",
+    "signal_pilote": "Le taux de deviation et la justesse des reponses. Le systeme s'appuie sur une FAQ synchronisee chaque heure ; si cette base derive, la qualite des reponses chute et le volume revient sur les humains.",
+    "etapes": [
+      {
+        "etape": "Connexion de la base de connaissances",
+        "detail": "Brancher la FAQ et les procedures pour que l'agent reponde sur du contenu a jour, avec synchronisation automatique horaire.",
+        "acteur": "equipe operations"
+      },
+      {
+        "etape": "Mise en production du chat",
+        "detail": "Deployer l'agent sur le chat entrant ; la bascule a pris environ un mois.",
+        "acteur": "agence"
+      },
+      {
+        "etape": "Traitement et deviation",
+        "detail": "L'agent resout la majorite des demandes sans humain (80 pour cent), et remonte les cas complexes.",
+        "acteur": "IA"
+      },
+      {
+        "etape": "Recentrage des agents",
+        "detail": "Les agents humains se concentrent sur les cas complexes ; la charge de maintenance de l'outil s'effondre.",
+        "acteur": "equipe operations"
+      }
+    ]
+  },
+  "schema_flow": {
+    "statut": "approche_type",
+    "noeuds": [
+      {
+        "id": "user",
+        "role_generique": "humain",
+        "label": "Utilisateur Duolingo"
+      },
+      {
+        "id": "chat",
+        "role_generique": "site_app",
+        "label": "Chat support in-app"
+      },
+      {
+        "id": "agent",
+        "role_generique": "modele_ia",
+        "label": "Agent IA",
+        "outil_documente": "Decagon"
+      },
+      {
+        "id": "faq",
+        "role_generique": "data_source",
+        "label": "FAQ / base de connaissances (sync horaire)"
+      },
+      {
+        "id": "human",
+        "role_generique": "humain",
+        "label": "Agent support (cas complexes)"
+      }
+    ],
+    "liens": [
+      [
+        "user",
+        "chat"
+      ],
+      [
+        "chat",
+        "agent"
+      ],
+      [
+        "faq",
+        "agent",
+        "sync horaire"
+      ],
+      [
+        "agent",
+        "chat"
+      ],
+      [
+        "agent",
+        "human",
+        "escalade cas complexes"
+      ]
+    ]
+  },
+  "replication": {
+    "statut_epistemique": "infere",
+    "prerequis_data": [
+      "FAQ et procedures structurees et a jour",
+      "historique de tickets",
+      "acces au compte utilisateur en lecture"
+    ],
+    "prerequis_orga": [
+      "equipe support prete a passer en supervision",
+      "processus de mise a jour de la FAQ",
+      "regles d'escalade"
+    ],
+    "stack_possible": [
+      "Decagon",
+      "Sierra",
+      "Intercom Fin",
+      "Zendesk AI"
+    ],
+    "premiere_etape": "Auditer la FAQ existante et la mettre au propre : c'est elle qui pilote la qualite de l'agent, avant meme de choisir l'outil.",
+    "playbook": [
+      {
+        "action": "Auditer et nettoyer la FAQ et les procedures: c'est cette base qui pilote la qualite de l'agent.",
+        "livrable": "Base de connaissances a jour et structuree"
+      },
+      {
+        "action": "Connecter la base a la plateforme d'agent et configurer la synchronisation automatique.",
+        "livrable": "Agent branche sur du contenu a jour"
+      },
+      {
+        "action": "Tester en interne la justesse des reponses et definir les regles d'escalade vers les humains.",
+        "livrable": "Suite de tests passee, escalades definies"
+      },
+      {
+        "action": "Mettre en production sur le chat et suivre le taux de deviation.",
+        "livrable": "Agent live sur le chat avec tableau de bord de deviation"
+      },
+      {
+        "action": "Etendre a l'email et recentrer l'equipe support sur les cas complexes.",
+        "livrable": "Deuxieme canal couvert, charge de maintenance reduite"
+      }
+    ],
+    "equipe": "1 responsable operations support (owner de la FAQ) + 1 dev pour les connecteurs; l'editeur fournit des Agent Product Managers au demarrage."
+  },
+  "seo": {
+    "slug": "duolingo-decagon-agent-ia-2024",
+    "title": "Duolingo : agent client IA (Decagon) - 80 pour cent de deviation du chat (2024)",
+    "meta_description": "En 2024, Duolingo a deploye l'agent IA Decagon et devie 80 pour cent de son volume de chat, contre 30 pour cent avec le fournisseur precedent.",
+    "resume_citable": "En 2024, Duolingo a deploye l'agent de support IA de Decagon sur son chat et devie 80 pour cent du volume entrant, contre 30 pour cent avec le fournisseur precedent, avec une mise en production en environ un mois.",
+    "faq": [
+      {
+        "q": "Quel taux de deviation Duolingo a-t-il obtenu avec Decagon ?",
+        "a": "80 pour cent du volume de chat entrant, contre 30 pour cent avec le fournisseur precedent, d'apres l'etude de cas de Decagon citant un manager operations de Duolingo."
+      },
+      {
+        "q": "Combien de temps a pris le deploiement ?",
+        "a": "Environ un mois entre les premieres discussions et la mise en production sur le chat, l'email etant prevu pour debut 2025."
+      }
+    ]
+  },
+  "logo_domain": "duolingo.com"
+}

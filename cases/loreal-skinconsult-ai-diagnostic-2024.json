@@ -1,0 +1,286 @@
+{
+  "id": "loreal-skinconsult-ai-diagnostic-2024",
+  "type_fiche": "succes",
+  "marque": "L'Oreal (Vichy, La Roche-Posay, L'Oreal Paris)",
+  "groupe": "L'Oreal",
+  "industrie": "luxe_beaute",
+  "marches_deploiement": [
+    "International (56 pays)",
+    "Canada",
+    "Chine"
+  ],
+  "transposable_ue": {
+    "flag": "oui_avec_adaptations",
+    "note": "Diagnostic a partir d'un selfie : l'image du visage est une donnee personnelle (potentiellement sensible selon l'usage). Exiger consentement explicite, minimisation et non-conservation de l'image, et une transparence claire sur la nature non medicale du diagnostic (RGPD, AI Act)."
+  },
+  "metier": "e-commerce / conseil beaute",
+  "axes": {
+    "levier": "activation_conversion",
+    "touchpoints": [
+      "site de marque",
+      "kiosque / diagnostic en magasin",
+      "Tmall (Chine)"
+    ],
+    "etape_parcours": "consideration",
+    "famille": "personnalisation",
+    "pattern": "diagnostic IA a partir d'un selfie + recommandation de routine",
+    "type_ia": [
+      "vision par ordinateur",
+      "deep learning (classification d'images)",
+      "algorithme comparatif"
+    ],
+    "plateforme_stack": [
+      "ModiFace",
+      "SkinConsult AI (L'Oreal)"
+    ],
+    "objectif_metrique": [
+      "taux d'achat post-diagnostic",
+      "couverture marches",
+      "personnalisation de la routine"
+    ]
+  },
+  "implementation": "custom",
+  "objectif_business": "Transformer un selfie en diagnostic de peau personnalise et en routine produit, pour orienter l'achat en ligne et en magasin et augmenter la conversion.",
+  "points_cles": ["Diagnostic de peau IA a partir d'un selfie puis recommandation de routine produit.", "Moteur ModiFace / SkinConsult AI, base d'entrainement Skin Ageing Atlases de 6 000 images.", "Jusqu'a 70 % d'achat apres l'experience, deploye en magasin dans 56 pays via 7 marques.", "Preuve B, statut confirme : documente dans le rapport annuel L'Oreal 2024."],
+  "description": "SkinConsult AI analyse un selfie pour evaluer les signes de vieillissement cutane (rides, taches, pores, fermete) via un algorithme comparatif entraine sur la base d'images Skin Ageing Atlases de L'Oreal, puis propose une routine de produits adaptee. La techno, portee par ModiFace, alimente le diagnostic de peau des marques du groupe (Vichy, La Roche-Posay, L'Oreal Paris) sur leurs sites, en magasin et sur Tmall en Chine. En 2024, L'Oreal indique fournir diagnostic de peau et routine en magasin dans 56 pays a travers sept de ses marques.",
+  "resultats": [
+    {
+      "metrique": "Taux d'achat apres l'experience de diagnostic",
+      "valeur": "jusqu'a 70%",
+      "citation_exacte": "up to 70% of consumers purchasing products after the experience",
+      "source_ref": "S1"
+    },
+    {
+      "metrique": "Couverture du diagnostic en magasin",
+      "valeur": "56 pays, 7 marques",
+      "citation_exacte": "in-store in 56 countries through seven of our brands",
+      "source_ref": "S1"
+    },
+    {
+      "metrique": "Images d'entrainement de l'algorithme, base Skin Ageing Atlases",
+      "valeur": "6 000 images",
+      "citation_exacte": "trained using 6,000 images from L'Oreal's Skin Ageing Atlases database",
+      "source_ref": "S3"
+    }
+  ],
+  "niveau_preuve": {
+    "niveau": "B",
+    "justification": "Chiffre de conversion et couverture marches publies dans le rapport annuel officiel L'Oreal (source primaire), techno decrite par la presse etablie et par la marque. Sources concordantes, l'une primaire."
+  },
+  "dates": {
+    "lancement": "SkinConsult AI (Vichy) 2019, puis extension multi-marques ; diagnostic en magasin dans 56 pays confirme pour 2024",
+    "derniere_confirmation_activite": "Rapport annuel L'Oreal 2024",
+    "verifie_le": "2026-07-11",
+    "revoir_apres": "2027-01-31"
+  },
+  "statut_vivant": {
+    "statut": "confirme",
+    "note": "Diagnostic de peau IA generalise a l'echelle du groupe (56 pays, 7 marques) selon le rapport annuel 2024."
+  },
+  "sources": [
+    {
+      "ref": "S1",
+      "type": "rapport_annuel",
+      "fiabilite": "T1_primaire",
+      "titre": "L'Oreal, the Beauty Tech champion (Annual Report 2024)",
+      "url": "https://www.loreal-finance.com/en/annual-report-2024/beauty-tech-champion/",
+      "date_publication": "2025",
+      "consulte_le": "2026-07-11"
+    },
+    {
+      "ref": "S2",
+      "type": "presse",
+      "fiabilite": "T3_presse_etablie",
+      "titre": "L'Oreal to Offer AI-Powered Skin Diagnosis Using Selfies",
+      "url": "https://wwd.com/feature/loreal-to-offer-ai-powered-skin-diagnosis-using-selfies-1203036480/",
+      "date_publication": "2019",
+      "consulte_le": "2026-07-11"
+    },
+    {
+      "ref": "S3",
+      "type": "blog_officiel",
+      "fiabilite": "T1_primaire",
+      "titre": "SkinConsult AI by Vichy",
+      "url": "https://www.loreal.com/en/articles/science-and-technology/skinconsult-ai-vichy/",
+      "date_publication": "2019",
+      "consulte_le": "2026-07-11"
+    }
+  ],
+  "fonctionnement_operationnel": {
+    "cadence": "A la demande (une analyse par selfie), disponible en continu en ligne et en magasin",
+    "opere_par": "Equipe Beauty Tech / ModiFace pour le moteur, equipes de marque et conseillers en magasin pour l'usage",
+    "signal_pilote": "La qualite et la representativite de la base d'images de reference (Skin Ageing Atlases). Un jeu d'entrainement biaise ou trop etroit degrade le diagnostic pour certains phototypes.",
+    "etapes": [
+      {
+        "etape": "Prise du selfie",
+        "detail": "L'utilisateur televerse un selfie sur le site de marque ou en magasin.",
+        "acteur": "client"
+      },
+      {
+        "etape": "Analyse comparative",
+        "detail": "L'algorithme compare le visage a la base d'images graduees et note les signes de vieillissement.",
+        "acteur": "IA (ModiFace / SkinConsult AI)"
+      },
+      {
+        "etape": "Diagnostic et routine",
+        "detail": "Le systeme restitue un diagnostic et une routine produit personnalisee.",
+        "acteur": "IA"
+      },
+      {
+        "etape": "Conseil et achat",
+        "detail": "Le conseiller (magasin) ou la page (web) oriente vers l'achat des produits recommandes.",
+        "acteur": "conseiller / client"
+      },
+      {
+        "etape": "Maintenance du modele",
+        "detail": "Les equipes actualisent la base d'images et la correspondance diagnostic/produits.",
+        "acteur": "equipe data / marque"
+      }
+    ]
+  },
+  "schema_flow": {
+    "statut": "documente",
+    "noeuds": [
+      {
+        "id": "u",
+        "role_generique": "humain",
+        "label": "Utilisateur (selfie)"
+      },
+      {
+        "id": "surface",
+        "role_generique": "site_app",
+        "label": "Site de marque / kiosque magasin / Tmall"
+      },
+      {
+        "id": "model",
+        "role_generique": "modele_ia",
+        "label": "Diagnostic de peau IA",
+        "outil_documente": "ModiFace / SkinConsult AI"
+      },
+      {
+        "id": "atlas",
+        "role_generique": "data_source",
+        "label": "Base d'images Skin Ageing Atlases"
+      },
+      {
+        "id": "reco",
+        "role_generique": "data_source",
+        "label": "Catalogue routines / produits"
+      }
+    ],
+    "liens": [
+      [
+        "u",
+        "surface"
+      ],
+      [
+        "surface",
+        "model"
+      ],
+      [
+        "atlas",
+        "model",
+        "reference comparative"
+      ],
+      [
+        "model",
+        "reco"
+      ],
+      [
+        "reco",
+        "surface",
+        "routine personnalisee"
+      ],
+      [
+        "surface",
+        "u",
+        "diagnostic + recommandation"
+      ]
+    ]
+  },
+  "replication": {
+    "statut_epistemique": "infere",
+    "prerequis_data": [
+      "base d'images de reference graduees et diverses",
+      "mapping diagnostic vers produits",
+      "consentement image et politique de non-conservation"
+    ],
+    "prerequis_orga": [
+      "expertise dermato/data pour l'entrainement et la validation",
+      "integration site + formation conseillers magasin"
+    ],
+    "stack_possible": [
+      "ModiFace",
+      "Perfect Corp (skin analysis)",
+      "Haut.AI",
+      "modele vision interne"
+    ],
+    "premiere_etape": "Constituer ou licencier une base d'images de reference validee et definir le mapping diagnostic vers produits avant tout deploiement.",
+    "playbook": [
+      {
+        "action": "Constituer ou licencier une base d'images de reference graduees et diverses, et cadrer la conformite (consentement, non-conservation de l'image, nature non medicale du diagnostic)",
+        "livrable": "Dataset de reference valide + analyse d'impact RGPD"
+      },
+      {
+        "action": "Definir le mapping diagnostic vers produits et routines avec les experts metier",
+        "livrable": "Matrice diagnostic/routine validee"
+      },
+      {
+        "action": "Entrainer le modele de classification ou integrer un SaaS de skin analysis, puis valider la precision sur des phototypes varies",
+        "livrable": "Prototype avec taux d'erreur mesure par phototype"
+      },
+      {
+        "action": "Integrer le parcours selfie, diagnostic puis routine sur le site et en pilote magasin, avec formation des conseillers",
+        "livrable": "Parcours en production sur un marche + conseillers formes"
+      },
+      {
+        "action": "Mesurer le taux d'achat post-diagnostic et etendre aux autres marques et marches",
+        "livrable": "Tableau de bord conversion post-diagnostic + plan d'extension"
+      }
+    ],
+    "equipe": "1 PM + 1-2 data scientists vision (voie custom) + 1 expert dermato/metier + legal pour la donnee visage"
+  },
+  "seo": {
+    "slug": "loreal-skinconsult-ai-diagnostic-2024",
+    "title": "L'Oreal SkinConsult AI : diagnostic de peau par selfie - jusqu'a 70% d'achat, 56 pays (2024)",
+    "meta_description": "Le diagnostic de peau IA de L'Oreal (SkinConsult AI / ModiFace) est deploye dans 56 pays via 7 marques, avec jusqu'a 70% d'achat apres l'experience.",
+    "resume_citable": "Le diagnostic de peau IA de L'Oreal (SkinConsult AI, moteur ModiFace) est deploye en magasin dans 56 pays a travers 7 marques, avec jusqu'a 70% des consommateurs qui achetent apres l'experience.",
+    "faq": [
+      {
+        "q": "Comment fonctionne SkinConsult AI ?",
+        "a": "Un selfie est compare a la base d'images Skin Ageing Atlases de L'Oreal pour noter les signes de vieillissement et proposer une routine produit personnalisee."
+      },
+      {
+        "q": "Quel est l'impact commercial rapporte ?",
+        "a": "Jusqu'a 70% des consommateurs achetent apres l'experience de diagnostic, deployee en magasin dans 56 pays via 7 marques selon le rapport annuel L'Oreal."
+      }
+    ]
+  },
+  "logo_domain": "loreal.com",
+  "stack_technique": [
+    {
+      "nom": "SkinConsult AI",
+      "categorie": "outil",
+      "detail": "diagnostic des signes de vieillissement cutane (rides, taches, pores, fermete) a partir d'un selfie, avec recommandation de routine",
+      "url": "https://www.loreal.com"
+    },
+    {
+      "nom": "ModiFace",
+      "categorie": "plateforme",
+      "detail": "moteur de vision par ordinateur (filiale L'Oreal) qui porte le diagnostic pour les marques du groupe",
+      "url": "https://www.modiface.com"
+    },
+    {
+      "nom": "Skin Ageing Atlases (base d'entrainement)",
+      "categorie": "infra",
+      "detail": "base proprietaire de 6 000 images graduees de L'Oreal servant de reference comparative a l'algorithme",
+      "url": "https://www.loreal.com"
+    },
+    {
+      "nom": "Tmall",
+      "categorie": "infra",
+      "detail": "canal de distribution du diagnostic en Chine, en plus des sites de marque et des kiosques magasin",
+      "url": "https://www.tmall.com"
+    }
+  ]
+}

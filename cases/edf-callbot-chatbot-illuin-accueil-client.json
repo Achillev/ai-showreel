@@ -1,0 +1,307 @@
+{
+  "id": "edf-callbot-chatbot-illuin-accueil-client",
+  "type_fiche": "succes",
+  "marque": "EDF",
+  "industrie": "energie_utilities",
+  "marches_deploiement": [
+    "France"
+  ],
+  "transposable_ue": {
+    "flag": "oui",
+    "note": "Deploiement francais avec une plateforme editee par la scale-up francaise Illuin Technology, en SaaS. L'approche combine IA generative et methodes plus frugales, et les 5 000 conseillers sont bases en France, ce qui simplifie le cadrage RGPD et la localisation des donnees."
+  },
+  "metier": "service client",
+  "marque_linkedin": "https://www.linkedin.com/company/edf/",
+  "intervenants": [
+    {
+      "nom": "Benoit Lamberti",
+      "role": "Directeur Marketing et de l'Experience Client, EDF",
+      "source_ref": "S2"
+    }
+  ],
+  "agences": [
+    {
+      "nom": "Illuin Technology",
+      "role": "Editeur de la plateforme conversationnelle Dialogue utilisee pour le callbot et le chatbot",
+      "source_ref": "S1"
+    }
+  ],
+  "axes": {
+    "levier": "retention",
+    "touchpoints": [
+      "telephone",
+      "chat",
+      "centre de contact"
+    ],
+    "etape_parcours": "post-achat",
+    "famille": "conversation",
+    "pattern": "callbot de routage intelligent + chatbot de self-service",
+    "type_ia": [
+      "IA generative",
+      "traitement du langage naturel",
+      "routage d'appels"
+    ],
+    "plateforme_stack": [
+      "Dialogue (Illuin Technology)"
+    ],
+    "objectif_metrique": [
+      "taux d'abandon d'appel",
+      "routage direct vers le bon conseiller",
+      "satisfaction client",
+      "volume d'echanges traites"
+    ]
+  },
+  "implementation": "plateforme",
+  "stack_technique": [
+    {
+      "nom": "Dialogue (Illuin Technology)",
+      "categorie": "plateforme",
+      "detail": "Plateforme conversationnelle SaaS qui porte le callbot de routage et le chatbot self-service; eprouvee chez EDF sur plus de 25 millions d'interactions.",
+      "url": "https://www.illuin.tech"
+    },
+    {
+      "nom": "Briques genAI et NLP frugal de Dialogue",
+      "categorie": "llm",
+      "detail": "La plateforme associe IA generative et methodes plus frugales; les modeles exacts ne sont pas nommes publiquement.",
+      "url": "https://www.illuin.tech"
+    },
+    {
+      "nom": "Illuin Technology",
+      "categorie": "integrateur",
+      "detail": "Scale-up francaise editrice de la plateforme, en appui de la direction de l'experience client d'EDF.",
+      "url": "https://www.illuin.tech"
+    },
+    {
+      "nom": "Telephonie et centre de contact EDF",
+      "categorie": "infra",
+      "detail": "5 000 conseillers bases en France; le callbot route l'appel et informe le conseiller de la demande avant la prise en charge.",
+      "url": "https://www.edf.fr"
+    }
+  ],
+  "objectif_business": "Fluidifier l'accueil telephonique et digital: reduire les appels abandonnes, envoyer chaque client vers le bon interlocuteur du premier coup et desengorger les conseillers des demandes simples.",
+  "points_cles": ["Callbot de routage intelligent et chatbot de self-service pour l'accueil client.", "Plateforme conversationnelle Dialogue d'Illuin Technology, en SaaS.", "Abandon d'appel -16%, routage direct +30%, satisfaction +7 points, 100 000 echanges par mois.", "Niveau de preuve B, statut vivant confirme."],
+  "description": "EDF a deploye un callbot et un chatbot sur la plateforme conversationnelle Dialogue d'Illuin Technology, en SaaS. Le callbot interprete la demande a l'oral et oriente l'appel vers le bon parcours: conseiller EDF, service externe comme Enedis, self-service (paiement de facture) ou ressource digitale. Le conseiller est informe a l'avance de la nature de la demande. Le chatbot traite les demandes simples et gere environ 100 000 echanges par mois. La plateforme, qui associe IA generative et approches plus frugales, a ete eprouvee par EDF sur plus de 25 millions d'interactions. Les 5 000 conseillers d'EDF, tous en France, se concentrent sur les cas a valeur.",
+  "resultats": [
+    {
+      "metrique": "Echanges mensuels traites par le chatbot",
+      "valeur": "100 000 par mois",
+      "citation_exacte": "Avec 100 000 echanges mensuels, le pari est reussi",
+      "source_ref": "S2"
+    },
+    {
+      "metrique": "Interactions cumulees sur la plateforme Dialogue chez EDF",
+      "valeur": "plus de 25 millions",
+      "citation_exacte": "testee et approuvee par EDF sur plus de 25M d'interactions",
+      "source_ref": "S3"
+    },
+    {
+      "metrique": "Abandon d'appel -16 %, routage direct +30 %, satisfaction +7 points (callbot)",
+      "valeur": "-16 % d'abandon",
+      "citation_exacte": "le taux d'abandon d'appel a baisse de 16 %",
+      "source_ref": "S1"
+    }
+  ],
+  "niveau_preuve": {
+    "niveau": "B",
+    "justification": "Etude de cas de l'integrateur (Illuin Technology) chiffree sur l'accueil telephonique, confirmee par un article de l'AFRC citant nommement EDF et le directeur de l'experience client, et par une session AFRC mentionnant plus de 25M d'interactions. Sources concordantes."
+  },
+  "dates": {
+    "lancement": "2025 (chatbot intelligent mis en place)",
+    "derniere_confirmation_activite": "novembre 2025 (article AFRC)",
+    "verifie_le": "2026-07-11",
+    "revoir_apres": "2027-01-11"
+  },
+  "statut_vivant": {
+    "statut": "confirme",
+    "note": "Callbot et chatbot en production sur la plateforme Dialogue, volume mensuel confirme fin 2025."
+  },
+  "sources": [
+    {
+      "ref": "S1",
+      "type": "customer_story_plateforme",
+      "fiabilite": "T2_officiel_interesse",
+      "titre": "EDF transforme son accueil client avec un callbot et un chatbot epaules par l'IA",
+      "url": "https://www.illuin.tech/wp-content/uploads/2025/04/EDF-transforme-son-accueil-client-Article-ILLUIN-Technology_Avril-2025.pdf",
+      "date_publication": "2025-04",
+      "consulte_le": "2026-07-11"
+    },
+    {
+      "ref": "S2",
+      "type": "analyse_academique",
+      "fiabilite": "T4_secondaire",
+      "titre": "L'humain et l'IA au coeur de l'experience client (EDF) - AFRC",
+      "url": "https://www.afrc.org/2025/10/30/11-2025-humain-ia-experience-client-edf/",
+      "date_publication": "2025-11",
+      "consulte_le": "2026-07-11"
+    },
+    {
+      "ref": "S3",
+      "type": "conference",
+      "fiabilite": "T4_secondaire",
+      "titre": "Dialogue: une plateforme testee et approuvee par EDF sur plus de 25M d'interactions - AFRC Meet-up 2025",
+      "url": "https://atelier.afrc.org/meet-up-2025/session/267407cb-8614-f011-aaa7-6045bd9d3cdc/dialogue-une-plateforme-a-l-etat-de-l-art-pour-la-conception-d-agents-ia-et-d-experiences-conversationnelles-inedites-testee-et-approuvee-par-edf-sur-plus-de-25m-d-interactions",
+      "date_publication": "2025",
+      "consulte_le": "2026-07-11"
+    }
+  ],
+  "fonctionnement_operationnel": {
+    "cadence": "Temps reel a chaque appel et chaque conversation de chat.",
+    "opere_par": "La direction de l'experience client d'EDF, avec Illuin Technology comme editeur de la plateforme.",
+    "signal_pilote": "La bonne detection de l'intention a l'oral pour le routage. Si l'intention est mal classee, l'appel part vers le mauvais parcours et le gain sur l'abandon et le routage disparait.",
+    "etapes": [
+      {
+        "etape": "Ecoute et interpretation",
+        "detail": "Le callbot interprete la demande du client au telephone et identifie le parcours cible.",
+        "acteur": "IA"
+      },
+      {
+        "etape": "Orientation",
+        "detail": "Il oriente vers un conseiller EDF, un service externe (Enedis), un self-service ou une ressource digitale, en informant le conseiller de la nature de la demande.",
+        "acteur": "IA"
+      },
+      {
+        "etape": "Self-service par chat",
+        "detail": "Le chatbot traite les demandes simples et bascule vers un conseiller au besoin.",
+        "acteur": "IA"
+      },
+      {
+        "etape": "Traitement humain",
+        "detail": "Le conseiller prend le relais sur les cas a valeur, deja contextualise.",
+        "acteur": "service client"
+      }
+    ]
+  },
+  "schema_flow": {
+    "statut": "documente",
+    "noeuds": [
+      {
+        "id": "client",
+        "role_generique": "humain",
+        "label": "Client EDF"
+      },
+      {
+        "id": "tel",
+        "role_generique": "canal_conversationnel",
+        "label": "Appel telephonique"
+      },
+      {
+        "id": "chat",
+        "role_generique": "canal_conversationnel",
+        "label": "Chat"
+      },
+      {
+        "id": "dialogue",
+        "role_generique": "modele_ia",
+        "label": "Callbot / chatbot Dialogue",
+        "outil_documente": "Dialogue (Illuin Technology)"
+      },
+      {
+        "id": "selfservice",
+        "role_generique": "site_app",
+        "label": "Parcours self-service (paiement, digital)"
+      },
+      {
+        "id": "conseiller",
+        "role_generique": "humain",
+        "label": "Conseiller EDF (5 000 en France)"
+      },
+      {
+        "id": "externe",
+        "role_generique": "site_app",
+        "label": "Service externe (Enedis)"
+      }
+    ],
+    "liens": [
+      [
+        "client",
+        "tel"
+      ],
+      [
+        "client",
+        "chat"
+      ],
+      [
+        "tel",
+        "dialogue"
+      ],
+      [
+        "chat",
+        "dialogue"
+      ],
+      [
+        "dialogue",
+        "selfservice",
+        "demande simple"
+      ],
+      [
+        "dialogue",
+        "conseiller",
+        "routage contextualise"
+      ],
+      [
+        "dialogue",
+        "externe",
+        "orientation Enedis"
+      ]
+    ]
+  },
+  "replication": {
+    "statut_epistemique": "infere",
+    "prerequis_data": [
+      "cartographie des intentions et des parcours",
+      "annuaire des services et competences des conseillers",
+      "base de connaissance pour le self-service"
+    ],
+    "prerequis_orga": [
+      "centre de contact structure par competences",
+      "accord sur les regles de routage",
+      "conseiller informe en amont de la demande"
+    ],
+    "stack_possible": [
+      "plateforme conversationnelle voix + chat (Dialogue ou equivalent)",
+      "moteur de routage base intention",
+      "briques genAI ancrees sur base de connaissance"
+    ],
+    "premiere_etape": "Modeliser les intentions d'appel les plus frequentes et brancher un callbot de routage avant d'ajouter le self-service par chat.",
+    "playbook": [
+      {
+        "action": "Cartographier les intentions d'appel les plus frequentes et les parcours cibles: conseiller, self-service, service externe.",
+        "livrable": "Referentiel d'intentions et regles de routage validees"
+      },
+      {
+        "action": "Configurer le callbot de routage sur la plateforme et le brancher a la telephonie.",
+        "livrable": "Callbot fonctionnel en pre-production"
+      },
+      {
+        "action": "Lancer un pilote sur un flux d'appels majeur, avec transmission du contexte au conseiller.",
+        "livrable": "Premiers chiffres d'abandon d'appel et de routage direct"
+      },
+      {
+        "action": "Etendre au chatbot self-service sur les demandes simples (paiement de facture).",
+        "livrable": "Chatbot en production sur les demandes courantes"
+      },
+      {
+        "action": "Mesurer abandon, routage direct et satisfaction; corriger les intentions mal classees.",
+        "livrable": "Bilan chiffre et backlog d'amelioration des intentions"
+      }
+    ],
+    "equipe": "1 responsable experience client + 1-2 devs integration (telephonie, CRM) + l'editeur en appui; les conseillers restent la voie d'escalade."
+  },
+  "seo": {
+    "slug": "edf-callbot-chatbot-illuin-accueil-client",
+    "title": "EDF : callbot et chatbot IA - abandon d'appel -16 %, 100 000 echanges/mois (France)",
+    "meta_description": "EDF a deploye un callbot et un chatbot sur la plateforme Dialogue d'Illuin: -16 % d'appels abandonnes, +30 % de routage direct, +7 points de satisfaction et 100 000 echanges mensuels.",
+    "resume_citable": "Le callbot et le chatbot d'EDF sur la plateforme Dialogue d'Illuin Technology reduisent l'abandon d'appel de 16 %, ameliorent le routage direct de 30 % et la satisfaction de 7 points, avec 100 000 echanges mensuels et plus de 25 millions d'interactions cumulees en France.",
+    "faq": [
+      {
+        "q": "Que fait le callbot d'EDF ?",
+        "a": "Il interprete la demande au telephone et oriente le client vers le bon parcours: conseiller EDF, service externe comme Enedis, self-service ou ressource digitale, en informant le conseiller de la nature de la demande."
+      },
+      {
+        "q": "Quels resultats EDF a-t-il obtenus ?",
+        "a": "Une baisse de 16 % des appels abandonnes, une hausse de 30 % du routage direct, un gain de 7 points de satisfaction et environ 100 000 echanges traites par mois via le chatbot."
+      }
+    ]
+  },
+  "logo_domain": "edf.fr"
+}

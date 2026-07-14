@@ -1,0 +1,295 @@
+{
+  "type_fiche": "succes",
+  "id": "taf-advantage-plus-2024",
+  "marque": "TAF (The Athlete's Foot)",
+  "industrie": "retail_ecom",
+  "marches_deploiement": [
+    "Mexique",
+    "Amerique latine"
+  ],
+  "transposable_ue": {
+    "flag": "oui_avec_adaptations",
+    "note": "Cas mene au Mexique et en Amerique latine. Le pattern (Advantage+ Shopping plus catalog ads, arbitre en incremental) se transpose en UE, mais l'activation exige consentement RGPD/ePrivacy, Pixel et Conversions API conformes. Risque AI Act limite cote annonceur."
+  },
+  "metier": "Acquisition / media performance e-commerce",
+  "axes": {
+    "levier": "acquisition",
+    "touchpoints": [
+      "Facebook Feed",
+      "Instagram Feed",
+      "Advantage+ placements"
+    ],
+    "etape_parcours": "considération -> achat",
+    "famille": "optimisation_automatisation",
+    "pattern": "Campagne de vente automatisee par IA plus ads catalogue dynamiques, avec prospection et retargeting, mesuree en incremental",
+    "type_ia": [
+      "ML de ciblage et d'encheres",
+      "ads catalogue dynamiques",
+      "optimisation creative automatisee"
+    ],
+    "plateforme_stack": [
+      "Meta Advantage+ Shopping Campaigns",
+      "Meta Advantage+ Catalog Ads",
+      "Meta Conversion Lift"
+    ],
+    "objectif_metrique": [
+      "ROAS incremental",
+      "ROAS",
+      "conversions"
+    ]
+  },
+  "implementation": "plateforme",
+  "objectif_business": "Augmenter les ventes en ligne de sneakers en montant le budget sur les campagnes automatisees par IA, tout en verifiant le gain reel en incremental.",
+  "points_cles": ["Montee de budget sur les campagnes de vente automatisees par IA, mesurees en incremental.", "Stack Meta Advantage+ Shopping et Catalog Ads, mesure en Conversion Lift.", "ROAS incremental +165%, conversions +15%, ROAS de 16,2 sur l'ajout au panier.", "Preuve B, statut confirme, etude de cas du partenaire Meta Adsmurai."],
+  "description": "TAF, The Athlete's Foot, presente comme un leader du marche de la sneaker au Mexique et en Amerique latine, a travaille avec l'agence Adsmurai pour pousser ses campagnes de vente sur Meta. La strategie a consiste a augmenter le budget des campagnes Advantage+ Shopping, ou l'IA choisit audiences, placements et creas a partir du catalogue produit, avec des Advantage+ Catalog Ads combinant images et videos de qualite, et une logique de prospection et de retargeting. Le dispositif a ete compare a la strategie habituelle (business as usual) et mesure en incremental. Sur l'evenement ajout au panier, la strategie Meta Advantage a sorti 165 pour cent de ROAS incremental en plus et 15 pour cent de conversions incrementales en plus, avec un ROAS de 16,2 sur la campagne Advantage+ Shopping et un ROAS incremental proche de 2x. Le cas a ete repris par Meta comme exemple de maximisation des ventes avec les campagnes Advantage+.",
+  "fonctionnement_operationnel": {
+    "cadence": "Diffusion en continu, avec montee de budget sur les campagnes Advantage+ ; comparaison a la strategie habituelle par mesure incrementale.",
+    "opere_par": "L'agence Adsmurai avec l'equipe e-commerce de TAF.",
+    "signal_pilote": "Les achats et ajouts au panier remontes par le Pixel et la Conversions API. Sans ce signal, l'algorithme optimise sur du bruit et le ROAS incremental s'effondre.",
+    "etapes": [
+      {
+        "etape": "Alimenter catalogue et creas",
+        "detail": "Feed produit plus des Advantage+ Catalog Ads en images et videos de qualite, avec des calls to action optimises. L'algorithme teste les combinaisons.",
+        "acteur": "Agence / equipe creative"
+      },
+      {
+        "etape": "Monter le budget Advantage+",
+        "detail": "Le budget des campagnes Advantage+ Shopping est augmente, avec prospection et retargeting pilotes par l'IA.",
+        "acteur": "Agence / IA Meta"
+      },
+      {
+        "etape": "Comparer a la strategie habituelle",
+        "detail": "Le gain se lit en incremental face au business as usual, sur l'evenement ajout au panier, pas sur le seul ROAS affiche.",
+        "acteur": "Agence / Meta"
+      }
+    ]
+  },
+  "resultats": [
+    {
+      "metrique": "ROAS incremental sur l'evenement ajout au panier vs strategie habituelle",
+      "valeur": "+165 %",
+      "citation_exacte": "165% increase in incremental ROAS for the Add to cart event",
+      "source_ref": "S1"
+    },
+    {
+      "metrique": "Conversions incrementales vs strategie habituelle",
+      "valeur": "+15 %",
+      "citation_exacte": "15% increase in conversions with the Meta Advantage strategy",
+      "source_ref": "S1"
+    },
+    {
+      "metrique": "ROAS de la campagne Advantage+ Shopping sur l'ajout au panier",
+      "valeur": "16,2",
+      "citation_exacte": "16.2x ROAS from the Advantage+ Shopping campaign",
+      "source_ref": "S2"
+    }
+  ],
+  "niveau_preuve": {
+    "niveau": "B",
+    "justification": "Étude de cas d'un partenaire Meta (Adsmurai), chiffree, avec strategie comparee en incremental et personne nommee, reprise par Meta ; publiee par l'integrateur, non corroboree par une source primaire ou de presse independante."
+  },
+  "dates": {
+    "lancement": "2024",
+    "derniere_confirmation_activite": "2024-05-15 (publication de l'etude de cas) ; Advantage+ reste le format de vente par defaut de Meta",
+    "verifie_le": "2026-07-11",
+    "revoir_apres": "2027-01-11"
+  },
+  "statut_vivant": {
+    "statut": "confirme",
+    "note": "TAF reste un e-commercant actif au Mexique et Advantage+ Shopping est le format de vente par defaut de Meta ; Adsmurai reste partenaire Meta, ce qui garantit la perennite du pattern."
+  },
+  "sources": [
+    {
+      "ref": "S1",
+      "type": "customer_story_plateforme",
+      "titre": "TAF x META - Case Study (Adsmurai, partenaire Meta)",
+      "url": "https://www.adsmurai.com/en/case-studies/taf-meta",
+      "date_publication": "2024-05-15",
+      "consulte_le": "2026-07-11",
+      "fiabilite": "T2_officiel_interesse"
+    },
+    {
+      "ref": "S2",
+      "type": "customer_story_plateforme",
+      "titre": "Automation and performance: discover Meta Advantage solutions (cas TAF)",
+      "url": "https://www.adsmurai.com/en/articles/meta-advantage-solutions",
+      "date_publication": "2024",
+      "consulte_le": "2026-07-11",
+      "fiabilite": "T2_officiel_interesse"
+    },
+    {
+      "ref": "S3",
+      "type": "blog_officiel",
+      "titre": "Meta Advantage+ Sales Campaigns: AI Automated Shop Ads",
+      "url": "https://www.facebook.com/business/ads/meta-advantage-plus/sales-campaigns",
+      "date_publication": "2024",
+      "consulte_le": "2026-07-11",
+      "fiabilite": "T2_officiel_interesse"
+    }
+  ],
+  "schema_flow": {
+    "statut": "documente",
+    "noeuds": [
+      {
+        "id": "cat",
+        "role_generique": "data_source",
+        "label": "Catalogue produit + signaux d'achat",
+        "outil_documente": "Feed produit + Pixel / Conversions API"
+      },
+      {
+        "id": "creas",
+        "role_generique": "data_source",
+        "label": "Catalog ads images et videos",
+        "outil_documente": "Meta Advantage+ Catalog Ads"
+      },
+      {
+        "id": "ai",
+        "role_generique": "paid_platform",
+        "label": "IA Meta : audiences, encheres, placements, prospection + retargeting",
+        "outil_documente": "Meta Advantage+ Shopping"
+      },
+      {
+        "id": "touch",
+        "role_generique": "site_app",
+        "label": "Feed Facebook / Instagram + Advantage+ placements"
+      },
+      {
+        "id": "buy",
+        "role_generique": "site_app",
+        "label": "Achat en ligne"
+      },
+      {
+        "id": "lift",
+        "role_generique": "data_source",
+        "label": "Mesure incrementale vs business as usual",
+        "outil_documente": "Meta Conversion Lift"
+      }
+    ],
+    "liens": [
+      [
+        "cat",
+        "ai"
+      ],
+      [
+        "creas",
+        "ai"
+      ],
+      [
+        "ai",
+        "touch"
+      ],
+      [
+        "touch",
+        "buy"
+      ],
+      [
+        "buy",
+        "lift"
+      ],
+      [
+        "lift",
+        "ai",
+        "boucle d'optimisation en incremental"
+      ]
+    ]
+  },
+  "replication": {
+    "statut_epistemique": "infere",
+    "prerequis_data": [
+      "Catalogue produit propre et a jour (feed)",
+      "Pixel + Conversions API avec achats et ajouts au panier fiables",
+      "Volume suffisant pour un test incremental face au business as usual"
+    ],
+    "prerequis_orga": [
+      "Banque de creas catalogue images et videos",
+      "Accepter de monter le budget sur l'automatise et de laisser l'apprentissage tourner"
+    ],
+    "stack_possible": [
+      "Meta Advantage+ Sales Campaigns + Catalog Ads + CAPI",
+      "Conversion Lift ou geo-test comme arbitre"
+    ],
+    "premiere_etape": "Basculer une part du budget sur une campagne Advantage+ Shopping avec catalog ads, et mesurer le gain incremental face a la structure habituelle.",
+    "playbook": [
+      {
+        "action": "Verifier les prerequis data : feed catalogue propre et a jour, Pixel et Conversions API remontant achats et ajouts au panier de facon fiable.",
+        "livrable": "Audit d'events valide et feed pret."
+      },
+      {
+        "action": "Produire les creas catalogue (images et videos), monter la campagne Advantage+ Shopping et cadrer le test incremental face au business as usual.",
+        "livrable": "Campagnes pretes et protocole de mesure (Conversion Lift ou geo-test)."
+      },
+      {
+        "action": "Lancer, laisser l'apprentissage tourner sans toucher aux reglages, monter le budget progressivement.",
+        "livrable": "Campagne sortie de learning phase avec budget cible atteint."
+      },
+      {
+        "action": "Lire le resultat incremental (ROAS, conversions) et decider de la bascule budgetaire.",
+        "livrable": "Rapport incremental vs business as usual et decision d'allocation."
+      }
+    ],
+    "equipe": "1 media buyer Meta + 1 profil creatif pour les catalog ads + 1 dev pour Pixel/CAPI, ou une agence partenaire Meta comme dans ce cas."
+  },
+  "intervenants": [
+    {
+      "nom": "Alan Rojas",
+      "role": "Ecommerce, TAF",
+      "source_ref": "S1"
+    }
+  ],
+  "agences": [
+    {
+      "nom": "Adsmurai",
+      "role": "Agence / partenaire Meta ayant pilote les campagnes",
+      "source_ref": "S1"
+    }
+  ],
+  "seo": {
+    "slug": "taf-meta-advantage-plus-incremental-2024",
+    "title": "TAF (The Athlete's Foot) : ventes sneakers automatisees par IA (Meta Advantage+) - +165 % de ROAS incremental (2024)",
+    "meta_description": "Avec Adsmurai, TAF a monte le budget de ses campagnes Meta Advantage+ Shopping : +165 % de ROAS incremental et 16,2 de ROAS sur l'ajout au panier au Mexique et en Amerique latine.",
+    "resume_citable": "En 2024, TAF (The Athlete's Foot), leader de la sneaker au Mexique, a obtenu +165 % de ROAS incremental et un ROAS de 16,2 sur l'ajout au panier en montant le budget de ses campagnes Meta Advantage+ Shopping, mesure face a sa strategie habituelle.",
+    "faq": [
+      {
+        "q": "Quel outil IA TAF a-t-il utilise ?",
+        "a": "Meta Advantage+ Shopping et Advantage+ Catalog Ads, qui pilotent audiences, placements et creas a partir du catalogue produit, avec prospection et retargeting."
+      },
+      {
+        "q": "Le gain de 165 % est-il incremental ?",
+        "a": "Oui : il est mesure en incremental sur l'evenement ajout au panier, face a la strategie habituelle (business as usual) de la marque."
+      }
+    ]
+  },
+  "logo_domain": "theathletesfoot.com",
+  "stack_technique": [
+    {
+      "nom": "Meta Advantage+ Shopping Campaigns",
+      "categorie": "plateforme",
+      "detail": "Campagnes de vente automatisees par l'IA de Meta : audiences, encheres, placements et combinaisons de creas pilotes par l'algorithme, prospection et retargeting inclus.",
+      "url": "https://www.facebook.com/business/ads/meta-advantage-plus"
+    },
+    {
+      "nom": "Meta Advantage+ Catalog Ads",
+      "categorie": "outil",
+      "detail": "Ads catalogue dynamiques combinant images et videos a partir du feed produit.",
+      "url": "https://www.facebook.com/business"
+    },
+    {
+      "nom": "Meta Pixel + Conversions API",
+      "categorie": "outil",
+      "detail": "Remontee des achats et ajouts au panier qui sert de signal d'optimisation a l'algorithme.",
+      "url": "https://www.facebook.com/business"
+    },
+    {
+      "nom": "Meta Conversion Lift",
+      "categorie": "outil",
+      "detail": "Mesure incrementale du dispositif face a la strategie habituelle (business as usual).",
+      "url": "https://www.facebook.com/business"
+    },
+    {
+      "nom": "Adsmurai",
+      "categorie": "integrateur",
+      "detail": "Agence partenaire Meta qui a pilote la strategie, les creas et la mesure.",
+      "url": "https://www.adsmurai.com"
+    }
+  ]
+}

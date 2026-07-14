@@ -1,0 +1,272 @@
+{
+  "id": "realtor-com-recherche-ia-2025",
+  "type_fiche": "succes",
+  "marque": "Realtor.com",
+  "groupe": "Move, Inc. (News Corp)",
+  "industrie": "immobilier",
+  "marches_deploiement": [
+    "Etats-Unis"
+  ],
+  "transposable_ue": {
+    "flag": "oui_avec_adaptations",
+    "note": "La recherche en langage naturel avec analyse d'images d'annonces est transposable a un portail europeen. L'adaptation porte sur la langue, le vocabulaire immobilier local et le RGPD sur l'apprentissage a partir du comportement utilisateur."
+  },
+  "metier": "portail immobilier / experience de recherche et generation de leads",
+  "intervenants": [
+    {
+      "nom": "Damian Eales",
+      "role": "CEO, Realtor.com (au lancement de RealAssist AI, 2026)",
+      "source_ref": "S3"
+    },
+    {
+      "nom": "Mickey Neuberger",
+      "role": "Chief Consumer and Marketing Officer, Realtor.com",
+      "source_ref": "S3"
+    }
+  ],
+  "axes": {
+    "levier": "activation_conversion",
+    "touchpoints": [
+      "barre de recherche Realtor.com",
+      "application Realtor.com",
+      "web mobile et desktop"
+    ],
+    "etape_parcours": "consideration",
+    "famille": "conversation",
+    "pattern": "recherche en langage naturel avec comprehension des images d'annonces",
+    "type_ia": [
+      "traitement du langage naturel",
+      "comprehension d'images",
+      "personnalisation par apprentissage du comportement",
+      "modeles Gemini (RealAssist)"
+    ],
+    "plateforme_stack": [
+      "custom/in-house",
+      "Google Gemini",
+      "Google Cloud"
+    ],
+    "objectif_metrique": [
+      "pertinence des resultats",
+      "engagement de recherche",
+      "mise en relation avec un agent"
+    ]
+  },
+  "implementation": "hybride",
+  "stack_technique": [
+    {
+      "nom": "Google Gemini",
+      "categorie": "llm",
+      "detail": "Modeles de la recherche conversationnelle RealAssist AI (comprehension du besoin, memoire des preferences).",
+      "url": "https://cloud.google.com"
+    },
+    {
+      "nom": "Google Cloud",
+      "categorie": "infra",
+      "detail": "Plateforme cloud sur laquelle RealAssist AI est construit.",
+      "url": "https://cloud.google.com"
+    },
+    {
+      "nom": "Recherche NL in-house Realtor.com",
+      "categorie": "outil",
+      "detail": "Recherche vocale et textuelle en langage naturel qui reconnait plus de 300 termes et apprend du comportement utilisateur.",
+      "url": "https://www.realtor.com"
+    },
+    {
+      "nom": "Analyse d'images d'annonces",
+      "categorie": "outil",
+      "detail": "Comprehension des photos d'annonces pour faire remonter des biens correspondants aux criteres exprimes ; le modele de vision exact n'est pas nomme.",
+      "url": "https://www.realtor.com"
+    }
+  ],
+  "objectif_business": "Laisser l'acheteur formuler sa recherche comme il parle, y compris des criteres complexes, et faire correspondre ses mots aux descriptions et aux photos des annonces pour l'amener plus vite vers un bien et un agent.",
+  "description": "Realtor.com deploie en octobre 2025 une recherche vocale et textuelle en langage naturel qui interprete des requetes complexes, par exemple une maison de plain-pied avec piscine dans une ville donnee et de moins de cinq ans. Elle analyse aussi les photos des annonces pour faire remonter des biens correspondants, reconnait plus de trois cents termes comme des plafonds cathedrale ou une cuisine moderne, et apprend du comportement de l'utilisateur pour personnaliser les resultats. En juin 2026, Realtor.com lance RealAssist AI, une experience de recherche conversationnelle construite avec Google Gemini et Google Cloud, disponible en beta pour un groupe d'utilisateurs connectes sur desktop, application et web mobile. RealAssist accompagne l'acheteur de ses premieres questions de budget jusqu'a la mise en relation avec un agent local, en memorisant les preferences d'une session a l'autre.",
+  "resultats": [
+    {
+      "metrique": "Termes reconnus par la recherche NL",
+      "valeur": "plus de 300",
+      "citation_exacte": "recognizes over 300 terms and learns from user behavior",
+      "source_ref": "S1"
+    },
+    {
+      "metrique": "Capacite de correspondance texte et image",
+      "valeur": "analyse les photos d'annonces pour faire remonter des biens",
+      "citation_exacte": "analyze listing photos to surface matching properties",
+      "source_ref": "S1"
+    }
+  ],
+  "niveau_preuve": {
+    "niveau": "C",
+    "justification": "Presse specialisee (HousingWire, Real Estate News) et communique officiel Google Cloud (T2) concordants sur le deploiement, avec des caracteristiques chiffrees de la fonction. Pas de metrique d'engagement isolee et publique, d'ou un niveau C."
+  },
+  "dates": {
+    "lancement": "2025-10 (recherche NL avec analyse d'images) ; 2026-06-02 (RealAssist AI, beta)",
+    "derniere_confirmation_activite": "2026-06 (lancement de RealAssist AI construit avec Google Gemini)",
+    "verifie_le": "2026-07-11",
+    "revoir_apres": "2027-01-11"
+  },
+  "statut_vivant": {
+    "statut": "confirme",
+    "note": "La recherche NL est en production depuis octobre 2025 et a evolue vers RealAssist AI en juin 2026, signe d'un investissement continu sur la brique de recherche IA."
+  },
+  "sources": [
+    {
+      "ref": "S1",
+      "type": "presse",
+      "fiabilite": "T4_secondaire",
+      "titre": "2 more portals embrace AI-powered home search tools",
+      "url": "https://www.realestatenews.com/2025/10/14/2-more-portals-embrace-ai-powered-home-search-tools",
+      "date_publication": "2025-10-14",
+      "consulte_le": "2026-07-11"
+    },
+    {
+      "ref": "S2",
+      "type": "presse",
+      "fiabilite": "T4_secondaire",
+      "titre": "Realtor.com launches AI-powered home search tool",
+      "url": "https://www.housingwire.com/articles/realtor-com-launches-ai-powered-home-search-tool/",
+      "date_publication": "2025-10",
+      "consulte_le": "2026-07-11"
+    },
+    {
+      "ref": "S3",
+      "type": "blog_officiel",
+      "fiabilite": "T2_officiel_interesse",
+      "titre": "Realtor.com Launches RealAssist AI: A Completely Reimagined Way to Find A Home",
+      "url": "https://www.googlecloudpresscorner.com/2026-06-02-Realtor-com-R-Launches-RealAssist-TM-AI-A-Completely-Reimagined-Way-to-Find-A-Home",
+      "date_publication": "2026-06-02",
+      "consulte_le": "2026-07-11"
+    }
+  ],
+  "fonctionnement_operationnel": {
+    "cadence": "Temps reel a chaque requete ; memorisation des preferences entre sessions pour RealAssist.",
+    "opere_par": "Equipe produit et IA de Realtor.com, avec Google Cloud comme fournisseur des modeles pour RealAssist.",
+    "signal_pilote": "La richesse des annonces en texte et en images, plus le comportement de l'utilisateur. Sans description et photos exploitables, la correspondance sur les termes precis se degrade.",
+    "etapes": [
+      {
+        "etape": "Requete parlee ou ecrite",
+        "detail": "L'utilisateur formule sa recherche comme il parle, y compris des criteres complexes.",
+        "acteur": "client"
+      },
+      {
+        "etape": "Interpretation texte et image",
+        "detail": "Le systeme reconnait plus de trois cents termes et analyse les photos d'annonces pour trouver les biens correspondants.",
+        "acteur": "IA"
+      },
+      {
+        "etape": "Personnalisation et memoire",
+        "detail": "Il apprend du comportement et, avec RealAssist, retient les preferences d'une session a l'autre.",
+        "acteur": "IA"
+      },
+      {
+        "etape": "Mise en relation agent",
+        "detail": "RealAssist accompagne du budget jusqu'a la mise en relation avec un agent local.",
+        "acteur": "humain"
+      }
+    ]
+  },
+  "schema_flow": {
+    "statut": "approche_type",
+    "noeuds": [
+      {
+        "id": "listings",
+        "role_generique": "data_source",
+        "label": "Annonces (texte + photos) et comportement utilisateur"
+      },
+      {
+        "id": "model",
+        "role_generique": "modele_ia",
+        "label": "Recherche NL + vision, modeles Gemini (RealAssist)",
+        "outil_documente": "Google Gemini / Google Cloud"
+      },
+      {
+        "id": "app",
+        "role_generique": "site_app",
+        "label": "Realtor.com (web et application)"
+      },
+      {
+        "id": "user",
+        "role_generique": "humain",
+        "label": "Acheteur"
+      }
+    ],
+    "liens": [
+      [
+        "user",
+        "app",
+        "requete NL"
+      ],
+      [
+        "app",
+        "model"
+      ],
+      [
+        "listings",
+        "model"
+      ],
+      [
+        "model",
+        "app",
+        "biens correspondants"
+      ]
+    ]
+  },
+  "replication": {
+    "statut_epistemique": "infere",
+    "prerequis_data": [
+      "annonces avec descriptions riches et photos",
+      "referentiel de termes immobiliers",
+      "historique de comportement utilisateur"
+    ],
+    "prerequis_orga": [
+      "equipe IA ou partenaire cloud pour les modeles",
+      "capacite de vision par ordinateur sur les photos",
+      "boucle de personnalisation"
+    ],
+    "stack_possible": [
+      "LLM de comprehension de requete",
+      "modele de vision pour l'analyse d'images",
+      "moteur de recherche et de classement"
+    ],
+    "premiere_etape": "Enrichir et normaliser le vocabulaire des annonces avant de brancher la comprehension d'images.",
+    "playbook": [
+      {
+        "action": "Normaliser les descriptions d'annonces et constituer le referentiel de termes immobiliers du marche vise.",
+        "livrable": "Vocabulaire structure mappe au parc d'annonces."
+      },
+      {
+        "action": "Brancher la comprehension de requete en langage naturel sur le moteur de recherche existant.",
+        "livrable": "Beta interne de recherche NL sur criteres textuels."
+      },
+      {
+        "action": "Indexer les photos d'annonces avec un modele de vision pour couvrir les criteres visuels (piscine, plain-pied, cuisine moderne).",
+        "livrable": "Index image-criteres branche sur la recherche."
+      },
+      {
+        "action": "Ouvrir une beta utilisateurs et ajouter la personnalisation par apprentissage du comportement.",
+        "livrable": "Beta publique avec mesure d'engagement de recherche."
+      },
+      {
+        "action": "Relier la recherche a la mise en relation avec un agent et generaliser.",
+        "livrable": "Parcours complet requete vers bien vers agent, avec tableau de bord de pertinence."
+      }
+    ],
+    "equipe": "1 PM + 2-4 ingenieurs search / ML + 1 data engineer pour le pipeline d'annonces + partenaire cloud pour les modeles."
+  },
+  "seo": {
+    "slug": "realtor-com-recherche-ia-2025",
+    "title": "Realtor.com : recherche immobiliere IA en langage naturel avec analyse d'images (2025)",
+    "meta_description": "Realtor.com deploie en 2025 une recherche en langage naturel qui reconnait plus de 300 termes et analyse les photos d'annonces.",
+    "resume_citable": "Realtor.com a deploye en octobre 2025 une recherche immobiliere en langage naturel qui reconnait plus de 300 termes et analyse les photos d'annonces, puis a lance RealAssist AI construit avec Google Gemini en juin 2026.",
+    "faq": [
+      {
+        "q": "Comment marche la recherche IA de Realtor.com ?",
+        "a": "L'utilisateur formule sa recherche comme il parle ; le systeme reconnait plus de trois cents termes, analyse les photos d'annonces et apprend du comportement pour personnaliser les resultats."
+      },
+      {
+        "q": "Qu'est-ce que RealAssist AI ?",
+        "a": "Une experience de recherche conversationnelle lancee en beta en juin 2026, construite avec Google Gemini et Google Cloud, qui accompagne l'acheteur du budget jusqu'a la mise en relation avec un agent local."
+      }
+    ]
+  },
+  "logo_domain": "realtor.com"
+}

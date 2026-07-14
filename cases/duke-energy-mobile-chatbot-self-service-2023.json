@@ -1,0 +1,255 @@
+{
+  "id": "duke-energy-mobile-chatbot-self-service-2023",
+  "type_fiche": "succes",
+  "marque": "Duke Energy",
+  "industrie": "energie_utilities",
+  "marches_deploiement": [
+    "Etats-Unis"
+  ],
+  "transposable_ue": {
+    "flag": "oui_avec_adaptations",
+    "note": "Un chatbot de self-service dans l'application mobile est transposable en UE. Le cadrage RGPD porte sur les donnees de compte affichees et l'historique de conversation. Le cas decrit vise des clients americains d'un service regule, contexte reglementaire different du marche europeen."
+  },
+  "metier": "service client",
+  "marque_linkedin": "https://www.linkedin.com/company/duke-energy-corporation/",
+  "intervenants": [
+    {
+      "nom": "Lisa Cornwell",
+      "role": "Product Manager, Duke Energy (application mobile client)",
+      "source_ref": "S1"
+    },
+    {
+      "nom": "Karen Myers",
+      "role": "Product Development Leader, Duke Energy",
+      "source_ref": "S1"
+    }
+  ],
+  "axes": {
+    "levier": "retention",
+    "touchpoints": [
+      "application mobile",
+      "chat"
+    ],
+    "etape_parcours": "post-achat",
+    "famille": "conversation",
+    "pattern": "chatbot de self-service dans l'app mobile",
+    "type_ia": [
+      "chatbot",
+      "traitement du langage naturel"
+    ],
+    "plateforme_stack": [
+      "custom/in-house"
+    ],
+    "objectif_metrique": [
+      "volume d'interactions traitees",
+      "deflexion des demandes",
+      "reduction des formulaires de feedback"
+    ]
+  },
+  "implementation": "custom",
+  "stack_technique": [
+    {
+      "nom": "Chatbot in-house Duke Energy",
+      "categorie": "outil",
+      "detail": "Chatbot NLP developpe par les equipes internes Mobile App et Chatbot; aucune plateforme externe n'est nommee publiquement.",
+      "url": "https://www.duke-energy.com"
+    },
+    {
+      "nom": "Application mobile Duke Energy",
+      "categorie": "infra",
+      "detail": "Canal unique du chatbot, avec acces aux donnees de compte client et refonte de l'ecran More menee en parallele.",
+      "url": "https://www.duke-energy.com"
+    },
+    {
+      "nom": "Fonction feedback in-app",
+      "categorie": "outil",
+      "detail": "Source des points de friction qui priorisent les cas traites par le bot; les envois manuels de formulaires ont chute de 90 %.",
+      "url": "https://www.duke-energy.com"
+    }
+  ],
+  "objectif_business": "Traiter dans l'app mobile les points de friction les plus frequents des clients pour deflechir les demandes vers le self-service et alleger les autres canaux.",
+  "description": "Duke Energy a lance en avril 2023 un chatbot dans son application mobile client, developpe avec ses equipes Mobile App et Chatbot. Il repond aux principaux points de friction identifies via la fonction de feedback de l'app, en parallele d'une refonte de l'ecran More. Sur ses trois premiers mois, il a enregistre plus de 280 000 interactions et 104 000 sessions de chat aupres de 55 000 utilisateurs uniques, et a fait chuter de 90 % les envois manuels de formulaires de feedback. Le projet a recu un Gold Digital Experience Award.",
+  "resultats": [
+    {
+      "metrique": "Interactions en 3 mois, dont 104 000 sessions et 55 000 utilisateurs uniques",
+      "valeur": "280 000+",
+      "citation_exacte": "the chatbot logged more than 280,000 user interactions and 104,000 chat sessions from 55,000 unique users in the first three months",
+      "source_ref": "S1"
+    },
+    {
+      "metrique": "Reduction des envois manuels de formulaires de feedback",
+      "valeur": "-90 %",
+      "citation_exacte": "reduced manual feedback form submissions by 90%",
+      "source_ref": "S2"
+    }
+  ],
+  "niveau_preuve": {
+    "niveau": "D",
+    "justification": "Chiffres presentes par Duke Energy en conference (compte rendu Chartwell citant les responsables produit), repris avec les memes valeurs par une analyse sectorielle. Deploiement reel et chiffre, mais sourcage de niveau declaratif conference."
+  },
+  "dates": {
+    "lancement": "avril 2023",
+    "derniere_confirmation_activite": "2023-2024 (chatbot maintenu dans l'app, portails de support en ligne)",
+    "verifie_le": "2026-07-11",
+    "revoir_apres": "2027-01-11"
+  },
+  "statut_vivant": {
+    "statut": "signaux_mitiges",
+    "note": "Le chatbot de l'app reste reference (pages de support Duke Energy). Les chiffres portent sur les trois premiers mois de 2023; l'evolution depuis n'est pas publiee, d'ou une confirmation d'activite a re-verifier."
+  },
+  "sources": [
+    {
+      "ref": "S1",
+      "type": "conference",
+      "fiabilite": "T4_secondaire",
+      "titre": "Duke Energy Leverages Mobile App Chatbot to Address Top Customer Pain Points",
+      "url": "https://chartwellinc.com/conferences/duke-energy-leverages-mobile-app-chatbbot-to-address-top-customer-pain-points/",
+      "date_publication": "2023",
+      "consulte_le": "2026-07-11"
+    },
+    {
+      "ref": "S2",
+      "type": "analyse_academique",
+      "fiabilite": "T4_secondaire",
+      "titre": "How AI is transforming customer service and outage management for utilities",
+      "url": "https://www.goconvey.com/ai-implementation-utilities-customer-service/",
+      "date_publication": "2025",
+      "consulte_le": "2026-07-11"
+    }
+  ],
+  "fonctionnement_operationnel": {
+    "cadence": "Temps reel dans l'application mobile.",
+    "opere_par": "Les equipes Mobile App et Chatbot de Duke Energy.",
+    "signal_pilote": "Les points de friction remontes par la fonction de feedback de l'app. Sans ce flux de feedback, le chatbot cible mal les cas a traiter et la deflexion diminue.",
+    "etapes": [
+      {
+        "etape": "Detection des points de friction",
+        "detail": "La fonction de feedback de l'app fait remonter les principales douleurs clients.",
+        "acteur": "equipe data"
+      },
+      {
+        "etape": "Reponse dans l'app",
+        "detail": "Le chatbot repond aux demandes courantes et guide vers le self-service.",
+        "acteur": "IA"
+      },
+      {
+        "etape": "Deflexion mesuree",
+        "detail": "Les envois de formulaires de feedback chutent a mesure que les reponses sont resolues en amont.",
+        "acteur": "IA"
+      }
+    ]
+  },
+  "schema_flow": {
+    "statut": "approche_type",
+    "noeuds": [
+      {
+        "id": "client",
+        "role_generique": "humain",
+        "label": "Client Duke Energy"
+      },
+      {
+        "id": "app",
+        "role_generique": "canal_conversationnel",
+        "label": "Application mobile"
+      },
+      {
+        "id": "chatbot",
+        "role_generique": "modele_ia",
+        "label": "Chatbot self-service"
+      },
+      {
+        "id": "feedback",
+        "role_generique": "data_source",
+        "label": "Fonction feedback de l'app"
+      },
+      {
+        "id": "compte",
+        "role_generique": "site_app",
+        "label": "Systemes de compte client"
+      }
+    ],
+    "liens": [
+      [
+        "client",
+        "app"
+      ],
+      [
+        "app",
+        "chatbot"
+      ],
+      [
+        "feedback",
+        "chatbot",
+        "priorisation des cas"
+      ],
+      [
+        "chatbot",
+        "compte",
+        "acces aux donnees compte"
+      ],
+      [
+        "chatbot",
+        "client",
+        "reponse self-service"
+      ]
+    ]
+  },
+  "replication": {
+    "statut_epistemique": "infere",
+    "prerequis_data": [
+      "remontee structuree des points de friction clients",
+      "acces aux donnees de compte",
+      "catalogue des demandes frequentes"
+    ],
+    "prerequis_orga": [
+      "equipe produit mobile",
+      "boucle feedback active dans l'app"
+    ],
+    "stack_possible": [
+      "chatbot NLP integre a l'app mobile",
+      "connecteurs vers les systemes de compte",
+      "outil d'analyse du feedback"
+    ],
+    "premiere_etape": "Analyser le feedback de l'app pour lister les cinq douleurs les plus frequentes et y repondre par un chatbot dans l'app.",
+    "playbook": [
+      {
+        "action": "Analyser le feedback in-app et lister les cinq frictions les plus frequentes.",
+        "livrable": "Liste priorisee des cas a traiter, avec volumes"
+      },
+      {
+        "action": "Concevoir les parcours de reponse et l'acces en lecture aux donnees de compte.",
+        "livrable": "Scripts de dialogue et connecteurs compte valides"
+      },
+      {
+        "action": "Developper et tester le chatbot dans l'app, avec QA sur les cinq cas prioritaires.",
+        "livrable": "Bot fonctionnel en pre-production"
+      },
+      {
+        "action": "Lancer progressivement sur une fraction des utilisateurs de l'app.",
+        "livrable": "Chatbot en production avec suivi des sessions"
+      },
+      {
+        "action": "Mesurer la deflexion (formulaires, contacts) et etendre les cas couverts.",
+        "livrable": "Bilan chiffre de deflexion et backlog des cas suivants"
+      }
+    ],
+    "equipe": "1 PM produit mobile + 2 devs (app et chatbot) + 1 analyste pour le feedback."
+  },
+  "seo": {
+    "slug": "duke-energy-mobile-chatbot-self-service-2023",
+    "title": "Duke Energy : chatbot self-service dans l'app - 280 000 interactions en 3 mois (2023)",
+    "meta_description": "Le chatbot de l'app mobile de Duke Energy a traite plus de 280 000 interactions en trois mois et reduit de 90 % les formulaires de feedback manuels aux Etats-Unis.",
+    "resume_citable": "Le chatbot self-service de l'application mobile de Duke Energy a enregistre plus de 280 000 interactions aupres de 55 000 utilisateurs uniques en trois mois et reduit de 90 % les envois manuels de formulaires de feedback.",
+    "faq": [
+      {
+        "q": "Que fait le chatbot de Duke Energy ?",
+        "a": "Il repond dans l'application mobile aux principaux points de friction identifies via la fonction de feedback et oriente les clients vers le self-service."
+      },
+      {
+        "q": "Quels resultats sur les premiers mois ?",
+        "a": "Plus de 280 000 interactions et 104 000 sessions aupres de 55 000 utilisateurs uniques en trois mois, avec une baisse de 90 % des formulaires de feedback manuels."
+      }
+    ]
+  },
+  "logo_domain": "duke-energy.com"
+}

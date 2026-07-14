@@ -1,0 +1,310 @@
+{
+  "id": "kraft-heinz-tastemaker-genai-creative-2024",
+  "type_fiche": "succes",
+  "marque": "Kraft Heinz",
+  "groupe": "The Kraft Heinz Company",
+  "industrie": "cpg_d2c",
+  "marches_deploiement": [
+    "Etats-Unis",
+    "Monde (portefeuille de plus de 100 marques)"
+  ],
+  "transposable_ue": {
+    "flag": "oui_avec_adaptations",
+    "note": "Le systeme genere du contenu creatif a partir d'un corpus de marque prive, sans donnees personnelles de consommateurs dans la boucle de generation. Sous AI Act, transparence a prevoir sur les visuels generes. La brique data (BigQuery) et le modele (Vertex AI) doivent etre heberges en conformite RGPD pour un deploiement UE."
+  },
+  "metier": "marketing, brand content, e-commerce",
+  "intervenants": [
+    {
+      "nom": "Justin Thomas",
+      "role": "Head of Digital Experience and Growth, Kraft Heinz",
+      "source_ref": "S1"
+    }
+  ],
+  "agences": [
+    {
+      "nom": "Apply Digital",
+      "role": "Conception et developpement de la plateforme TasteMaker",
+      "source_ref": "S1"
+    },
+    {
+      "nom": "Google Cloud",
+      "role": "Socle IA (Vertex AI, modeles Gemini / Imagen / Veo, BigQuery)",
+      "source_ref": "S2"
+    }
+  ],
+  "axes": {
+    "levier": "acquisition",
+    "touchpoints": [
+      "media digital",
+      "fiches produit e-commerce",
+      "reseaux sociaux",
+      "contenu de marque"
+    ],
+    "etape_parcours": "consideration",
+    "famille": "generation",
+    "pattern": "moteur RAG de generation creative sur corpus de marque proprietaire",
+    "type_ia": [
+      "generation d'images",
+      "generation video",
+      "RAG (retrieval-augmented generation)",
+      "modeles generatifs multimodaux"
+    ],
+    "plateforme_stack": [
+      "TasteMaker (moteur RAG interne)",
+      "Google Vertex AI",
+      "Gemini",
+      "Imagen",
+      "Veo",
+      "BigQuery"
+    ],
+    "objectif_metrique": [
+      "delai de production creative",
+      "volume de contenu",
+      "coherence de marque"
+    ]
+  },
+  "implementation": "custom",
+  "objectif_business": "Produire du contenu creatif on-brand a la demande pour un portefeuille de plus de 100 marques, sans les delais et les couts des cycles agence classiques, tout en gardant le controle de la propriete intellectuelle des marques.",
+  "description": "Kraft Heinz a construit TasteMaker, un moteur de generation creative de type RAG bati sur Google Vertex AI avec l'integrateur Apply Digital. Le systeme indexe les assets de marque codifies (charte, visuels, references produit) dans un corpus interne servi via BigQuery, puis genere a la demande des images, du motion et de la video en restant dans les regles de chaque marque. L'instance est proprietaire, ce qui protege l'IP des marques. Kraft Heinz gere plus de 100 marques et rapporte que TasteMaker fait passer les delais de conception creative de semaines a heures, soit une acceleration de l'ordre de 8x. Le deploiement a demarre sur quatre cas d'usage avant d'etre etendu apres les premiers resultats. La feuille de route ajoute l'affinage de la generation d'images sur data proprietaire, la video et le test de concepts sur utilisateurs synthetiques.",
+  "resultats": [
+    {
+      "metrique": "Delai de conception creative, de semaines a heures",
+      "valeur": "8x plus rapide",
+      "citation_exacte": "design timelines slashed from weeks to hours",
+      "source_ref": "S1"
+    },
+    {
+      "metrique": "Perimetre de marques mondiales couvert",
+      "valeur": "plus de 100 marques",
+      "citation_exacte": "portfolio of over 100 global brands",
+      "source_ref": "S3"
+    },
+    {
+      "metrique": "Formats generes a la demande",
+      "valeur": "images, motion graphics, video",
+      "citation_exacte": "images, motion graphics, and video content",
+      "source_ref": "S3"
+    }
+  ],
+  "niveau_preuve": {
+    "niveau": "C",
+    "justification": "Plusieurs sources concordantes citant nommement Kraft Heinz et le facteur 8x (analyste Forrester, customer story Google Cloud, integrateur Apply Digital, presse specialisee). Pas de chiffre isole en resultats financiers, donc C."
+  },
+  "dates": {
+    "lancement": "2024",
+    "derniere_confirmation_activite": "2025",
+    "verifie_le": "2026-07-11",
+    "revoir_apres": "2027-01-11"
+  },
+  "statut_vivant": {
+    "statut": "confirme",
+    "note": "Plateforme deployee, etendue apres quatre premiers cas d'usage, avec feuille de route publique (video, test sur utilisateurs synthetiques). Nommee et documentee par Google Cloud et l'integrateur Apply Digital."
+  },
+  "sources": [
+    {
+      "ref": "S1",
+      "type": "analyse_academique",
+      "fiabilite": "T4_secondaire",
+      "titre": "How Kraft Heinz Is Using GenAI To Re-Imagine The Future Of Creative Content",
+      "url": "https://www.forrester.com/blogs/how-kraft-heinz-is-using-genai-to-re-imagine-the-future-of-creative-content/",
+      "date_publication": "2024",
+      "consulte_le": "2026-07-11"
+    },
+    {
+      "ref": "S2",
+      "type": "customer_story_plateforme",
+      "fiabilite": "T2_officiel_interesse",
+      "titre": "Kraft Heinz case study",
+      "url": "https://cloud.google.com/customers/kraftheinz",
+      "date_publication": "2024",
+      "consulte_le": "2026-07-11"
+    },
+    {
+      "ref": "S3",
+      "type": "presse",
+      "fiabilite": "T4_secondaire",
+      "titre": "Kraft Heinz leverages AI to transform creative condiment content",
+      "url": "https://getcoai.com/news/kraft-heinz-leverages-ai-to-transform-creative-condiment-content/",
+      "date_publication": "2024",
+      "consulte_le": "2026-07-11"
+    },
+    {
+      "ref": "S4",
+      "type": "customer_story_plateforme",
+      "fiabilite": "T2_officiel_interesse",
+      "titre": "Kraft Heinz Tastemaker",
+      "url": "https://www.applydigital.com/work/kraft-heinz-tastemaker/",
+      "date_publication": "2024",
+      "consulte_le": "2026-07-11"
+    }
+  ],
+  "fonctionnement_operationnel": {
+    "cadence": "A la demande, par campagne. Une requete creative aboutit a des assets en heures plutot qu'en semaines.",
+    "opere_par": "Equipes marque et marketing de Kraft Heinz, sur la plateforme TasteMaker construite avec Apply Digital sur Google Vertex AI.",
+    "signal_pilote": "Le corpus d'assets de marque codifies (charte, visuels, produits) servi en RAG. Si le corpus est incomplet ou mal indexe, la generation derive de la charte et perd la coherence de marque.",
+    "etapes": [
+      {
+        "etape": "Indexation des assets de marque",
+        "detail": "Codification de la charte, des visuels et des references produit dans un corpus interne servi via BigQuery.",
+        "acteur": "equipe data / Apply Digital"
+      },
+      {
+        "etape": "Requete creative",
+        "detail": "L'equipe marque decrit le besoin (format, marche, angle) a la plateforme.",
+        "acteur": "marketing"
+      },
+      {
+        "etape": "Generation multimodale",
+        "detail": "TasteMaker produit images, motion et video dans les regles de la marque via Vertex AI (Gemini, Imagen, Veo).",
+        "acteur": "IA"
+      },
+      {
+        "etape": "Controle de marque et diffusion",
+        "detail": "Validation par l'equipe marque, puis mise en media digital, sur fiches e-commerce et social.",
+        "acteur": "marketing"
+      }
+    ]
+  },
+  "schema_flow": {
+    "statut": "documente",
+    "noeuds": [
+      {
+        "id": "assets",
+        "role_generique": "data_source",
+        "label": "Corpus d'assets de marque codifies",
+        "outil_documente": "BigQuery"
+      },
+      {
+        "id": "rag",
+        "role_generique": "modele_ia",
+        "label": "TasteMaker (moteur RAG de generation)",
+        "outil_documente": "Google Vertex AI (Gemini, Imagen, Veo)"
+      },
+      {
+        "id": "team",
+        "role_generique": "humain",
+        "label": "Equipe marque / marketing (requete, controle)"
+      },
+      {
+        "id": "output",
+        "role_generique": "site_app",
+        "label": "Contenu creatif (image, motion, video)"
+      },
+      {
+        "id": "channels",
+        "role_generique": "paid_platform",
+        "label": "Media digital / e-commerce / social"
+      }
+    ],
+    "liens": [
+      [
+        "assets",
+        "rag"
+      ],
+      [
+        "team",
+        "rag",
+        "brief creatif"
+      ],
+      [
+        "rag",
+        "output"
+      ],
+      [
+        "output",
+        "channels"
+      ]
+    ]
+  },
+  "replication": {
+    "statut_epistemique": "infere",
+    "prerequis_data": [
+      "corpus d'assets de marque codifies et indexables",
+      "chartes et regles par marque et par marche",
+      "infrastructure data type entrepot (BigQuery ou equivalent)"
+    ],
+    "prerequis_orga": [
+      "gouvernance qualite du contenu genere",
+      "instance IA privee pour proteger l'IP des marques",
+      "equipe marketing formee au brief creatif sur outil genAI"
+    ],
+    "stack_possible": [
+      "moteur RAG sur modeles generatifs multimodaux",
+      "plateforme cloud (Vertex AI ou equivalent)",
+      "integrateur pour l'assemblage (type Apply Digital)"
+    ],
+    "premiere_etape": "Codifier les assets d'une marque a fort volume de creas et mesurer le delai de conception avant / apres.",
+    "playbook": [
+      {
+        "action": "Codifier les assets d'une marque pilote a fort volume de creas (charte, visuels, references)",
+        "livrable": "Corpus de marque indexe et requetable"
+      },
+      {
+        "action": "Monter le moteur RAG sur les modeles generatifs dans une instance privee",
+        "livrable": "Plateforme generant des assets conformes a la charte"
+      },
+      {
+        "action": "Valider sur 3-4 cas d'usage concrets et mesurer le delai avant/apres",
+        "livrable": "Assets produits + delai de conception compare"
+      },
+      {
+        "action": "Installer le workflow brief-generation-controle de marque et diffuser",
+        "livrable": "Process en production sur media, e-commerce et social"
+      },
+      {
+        "action": "Etendre au portefeuille de marques avec une gouvernance qualite",
+        "livrable": "Corpus par marque + regles de validation communes"
+      }
+    ],
+    "equipe": "1 PM + integrateur (2-4 personnes en build) + 1 brand manager par marque pour la codification et le controle"
+  },
+  "seo": {
+    "slug": "kraft-heinz-tastemaker-genai-creative-2024",
+    "title": "Kraft Heinz : moteur RAG TasteMaker - conception creative 8x plus rapide (2024)",
+    "meta_description": "Kraft Heinz genere son contenu creatif via TasteMaker, un moteur RAG sur Google Vertex AI : delais de semaines a heures (8x), plus de 100 marques.",
+    "resume_citable": "Kraft Heinz a construit TasteMaker, un moteur RAG de generation creative sur Google Vertex AI (avec Apply Digital), qui fait passer la conception creative de semaines a heures (environ 8x) pour un portefeuille de plus de 100 marques.",
+    "faq": [
+      {
+        "q": "Qu'est-ce que TasteMaker chez Kraft Heinz ?",
+        "a": "Un moteur de generation creative de type RAG, bati sur Google Vertex AI avec Apply Digital, qui genere images, motion et video a partir des assets de marque codifies de Kraft Heinz."
+      },
+      {
+        "q": "Quel gain de temps Kraft Heinz revendique-t-il ?",
+        "a": "Des delais de conception creative passes de semaines a heures, soit environ 8x plus rapide, sur un portefeuille de plus de 100 marques."
+      }
+    ]
+  },
+  "logo_domain": "kraftheinzcompany.com",
+  "stack_technique": [
+    {
+      "nom": "TasteMaker (moteur RAG in-house)",
+      "categorie": "plateforme",
+      "detail": "instance proprietaire de Kraft Heinz qui genere images, motion et video dans les regles de chaque marque, en protegeant l'IP",
+      "url": "https://www.kraftheinzcompany.com"
+    },
+    {
+      "nom": "Google Vertex AI",
+      "categorie": "plateforme",
+      "detail": "socle cloud IA sur lequel TasteMaker est construit",
+      "url": "https://cloud.google.com/vertex-ai"
+    },
+    {
+      "nom": "Gemini, Imagen, Veo",
+      "categorie": "llm",
+      "detail": "modeles generatifs Google : texte et raisonnement (Gemini), image (Imagen), video (Veo)",
+      "url": "https://deepmind.google"
+    },
+    {
+      "nom": "BigQuery",
+      "categorie": "infra",
+      "detail": "sert le corpus d'assets de marque codifies (charte, visuels, references produit) au moteur RAG",
+      "url": "https://cloud.google.com/bigquery"
+    },
+    {
+      "nom": "Apply Digital",
+      "categorie": "integrateur",
+      "detail": "conception et developpement de la plateforme avec les equipes Kraft Heinz",
+      "url": "https://www.applydigital.com"
+    }
+  ]
+}

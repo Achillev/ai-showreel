@@ -1,0 +1,292 @@
+{
+  "type_fiche": "succes",
+  "id": "mercadolibre-genai-marketplace-2025",
+  "marque": "MercadoLibre",
+  "industrie": "retail_ecom",
+  "marches_deploiement": [
+    "Argentine",
+    "Brésil",
+    "Mexique",
+    "Amérique latine"
+  ],
+  "transposable_ue": {
+    "flag": "oui_avec_adaptations",
+    "note": "Le pattern (recherche IA, assistant acheteur, outil vendeur generatif alimentant la regie) est transposable a toute marketplace ou retailer qui possede sa propre audience et ses donnees first-party. En UE, la personnalisation de la recherche sur l'historique d'achat et l'agent conversationnel relevent du RGPD (base legale, consentement), et un assistant qui conseille l'acheteur peut tomber sous les obligations de transparence de l'AI Act. Le point dur n'est pas juridique mais structurel : il faut posseder la marketplace et le volume de donnees comportementales."
+  },
+  "metier": "E-commerce / marketing / regie publicitaire (retail media)",
+  "marque_linkedin": "https://www.linkedin.com/company/mercadolibre/",
+  "logo_domain": "mercadolibre.com",
+  "intervenants": [
+    {
+      "nom": "Ariel Szarfsztejn",
+      "role": "President of Commerce, MercadoLibre",
+      "source_ref": "S2"
+    },
+    {
+      "nom": "Martin de los Santos",
+      "role": "CFO, MercadoLibre",
+      "source_ref": "S2"
+    }
+  ],
+  "axes": {
+    "levier": "monetisation",
+    "touchpoints": [
+      "moteur de recherche marketplace",
+      "assistant acheteur conversationnel",
+      "outils vendeurs (Seller Assistant)",
+      "regie publicitaire (search ads)",
+      "Mercado Pago"
+    ],
+    "etape_parcours": "découverte -> considération -> achat -> post-achat",
+    "famille": "generation",
+    "pattern": "GenAI embarquee dans une marketplace : recherche IA et assistant conversationnel cote acheteur, Seller Assistant qui genere listings et videos courtes cote vendeur, le tout nourrissant la regie publicitaire ou l'IA optimise les encheres. La marque possede la marketplace, donc la data comportementale et l'inventaire publicitaire.",
+    "type_ia": [
+      "LLM (compréhension d'intention / recherche sémantique)",
+      "génération vidéo à partir d'une photo produit",
+      "agent conversationnel",
+      "enchères ML (bidding publicitaire)"
+    ],
+    "plateforme_stack": [
+      "custom/in-house (MercadoLibre)"
+    ],
+    "objectif_metrique": [
+      "croissance revenus publicitaires",
+      "part du GMV conseillee par l'IA",
+      "conversion / discovery",
+      "taux de resolution du service client"
+    ]
+  },
+  "implementation": "custom",
+  "objectif_business": "Faire de l'IA un moteur de croissance transverse : ameliorer la decouverte produit et la conversion cote acheteur, accelerer et industrialiser l'offre cote vendeur, et surtout monetiser via une regie publicitaire ou l'IA pilote les encheres et les campagnes. Le tout sans augmenter le churn ni degrader la conversion.",
+  "points_cles": ["GenAI embarquee dans la marketplace : recherche IA, assistant acheteur, Seller Assistant vendeur.", "Briques custom in-house nourrissant la regie publicitaire ou l'IA optimise les encheres.", "Revenus publicitaires +67 % en devise constante au T4 2025, ~20 % du GMV conseille par l'assistant.", "Preuve A, statut confirme : chiffres du 8-K SEC T4 2025 et earnings call."],
+  "description": "MercadoLibre, la marketplace et fintech numero un en Amerique latine, a integre l'IA generative a plusieurs endroits de son ecosysteme et l'a documente dans ses resultats du quatrieme trimestre 2025 (publies le 24 fevrier 2026). Cote acheteur : une recherche enrichie par l'IA lancee en Argentine, qui part d'un terme large et l'elargit selon le comportement du client. Le mot 'ball' renvoie des balles de tennis a un joueur de tennis et des ballons de foot a un amateur de football, et peut afficher des marques ou une gamme prix selon ce que la plateforme sait de l'acheteur. Un assistant conversationnel affine une recherche vague comme 'smartphone' en guidant l'utilisateur sur les attributs produit. Cote vendeur : le Seller Assistant accelere la montee des vendeurs vers de meilleurs paliers de reputation, ameliore la qualite des annonces, cree des videos courtes a partir d'une seule photo produit, et prend en charge des demandes qui passaient avant par le service client. D'apres la direction, environ 20 % du GMV est conseille par cet assistant. Ces briques alimentent la regie : les revenus publicitaires ont grimpe de 67 % en devise constante au T4 2025 (70 % en dollars), portes par les search ads et par les investissements dans le bidding et les outils de campagne. En parallele, l'assistant IA de Mercado Pago, lance en octobre 2025, a traite plus de 9 millions de conversations sur le trimestre, dont pres de 90 % resolues sans intervention humaine.",
+  "fonctionnement_operationnel": {
+    "cadence": "En continu. La recherche IA et l'assistant acheteur tournent en temps reel a chaque requete ; le Seller Assistant est sollicite a la creation ou l'optimisation d'annonce ; la regie optimise les encheres campagne par campagne. Les modeles sont reentraines sur le flux comportemental de la marketplace.",
+    "opere_par": "Les equipes produit et data de MercadoLibre pour les modeles ; l'equipe retail media / ads pour la monetisation ; les vendeurs eux-memes activent le Seller Assistant sur leurs annonces.",
+    "signal_pilote": "Le comportement d'achat et de recherche first-party (historique, transactions, attributs consultes). C'est ce signal qui personnalise la recherche, nourrit le bidding publicitaire et entraine les recommandations vendeur. Sans ce volume de donnees proprietaire, la personnalisation et l'optimisation des encheres perdent leur base.",
+    "etapes": [
+      {
+        "etape": "Comprendre l'intention a la recherche",
+        "detail": "Le moteur IA elargit un terme large en resultats pertinents selon le profil de l'acheteur, la ou une recherche par mot-cle renvoyait une liste indifferenciee.",
+        "acteur": "IA (modele de recherche)"
+      },
+      {
+        "etape": "Assister l'acheteur en conversation",
+        "detail": "Un agent guide l'utilisateur sur les attributs produit pour transformer une requete vague en selection precise.",
+        "acteur": "IA (agent conversationnel)"
+      },
+      {
+        "etape": "Industrialiser l'offre vendeur",
+        "detail": "Le Seller Assistant genere des videos courtes depuis une photo, ameliore les fiches et repond aux questions clients ; le vendeur valide et publie.",
+        "acteur": "IA + vendeur"
+      },
+      {
+        "etape": "Monetiser via la regie",
+        "detail": "Les search ads sont optimises par des algorithmes d'encheres et des outils de campagne automatises ; les annonceurs paient a la performance.",
+        "acteur": "IA (bidding) + equipe ads"
+      },
+      {
+        "etape": "Reboucler sur la donnee",
+        "detail": "Chaque interaction (recherche, clic, achat, conversation) enrichit le signal comportemental qui affine les modeles au tour suivant.",
+        "acteur": "Equipe data"
+      }
+    ]
+  },
+  "resultats": [
+    {
+      "metrique": "Croissance des revenus publicitaires en devise constante, +70% en USD (T4 2025)",
+      "valeur": "+67%",
+      "citation_exacte": "FX-neutral growth of 67% YoY in Q4'25",
+      "source_ref": "S1"
+    },
+    {
+      "metrique": "Part du GMV conseillee par le Seller Assistant",
+      "valeur": "~20 %",
+      "citation_exacte": "20% of our GMV is somehow advised by our assistant",
+      "source_ref": "S2"
+    },
+    {
+      "metrique": "Assistant IA Mercado Pago, ~90% resolues sans humain (T4 2025)",
+      "valeur": "9M+ conversations",
+      "citation_exacte": "handled more than 9mn conversations, with nearly 90% resolved without human intervention",
+      "source_ref": "S1"
+    }
+  ],
+  "niveau_preuve": {
+    "niveau": "A",
+    "justification": "Chiffres publies dans les resultats financiers du T4 2025 (8-K SEC, exhibit 99.1, lettre aux actionnaires), avec le detail des cas d'usage IA et la croissance publicitaire chiffree. Confirmes par le transcript de l'earnings call (part du GMV conseillee par l'assistant) et repris par la presse economique. Trois sources concordantes dont un document primaire SEC."
+  },
+  "dates": {
+    "lancement": "2025 (recherche IA deployee en Argentine courant 2025 ; assistant IA Mercado Pago lance en octobre 2025 ; ensemble documente dans les resultats T4 2025)",
+    "derniere_confirmation_activite": "2026-02-24 (resultats T4 2025 : cas d'usage IA actifs et en montee en charge)",
+    "verifie_le": "2026-07-12",
+    "revoir_apres": "2026-10-12"
+  },
+  "statut_vivant": {
+    "statut": "confirme",
+    "note": "Documente dans les resultats trimestriels les plus recents (fevrier 2026) comme un chantier en cours d'extension a l'ensemble de la marketplace. La croissance publicitaire de 67 % est un resultat financier audite du trimestre."
+  },
+  "sources": [
+    {
+      "ref": "S1",
+      "type": "document_officiel_sec",
+      "titre": "MercadoLibre Inc - Form 8-K, Exhibit 99.1, Letter to Shareholders Q4'25",
+      "url": "https://www.sec.gov/Archives/edgar/data/1099590/000109959026000003/meli-20260224xex991.htm",
+      "date_publication": "2026-02-24",
+      "consulte_le": "2026-07-12",
+      "fiabilite": "T1_primaire"
+    },
+    {
+      "ref": "S2",
+      "type": "earnings_call",
+      "titre": "MercadoLibre (MELI) Q4 2025 Earnings Transcript - The Motley Fool",
+      "url": "https://www.fool.com/earnings/call-transcripts/2026/02/26/mercadolibre-meli-q4-2025-earnings-transcript/",
+      "date_publication": "2026-02-26",
+      "consulte_le": "2026-07-12",
+      "fiabilite": "T3_presse_etablie"
+    },
+    {
+      "ref": "S3",
+      "type": "presse",
+      "titre": "Mercado Libre Says AI Investments Support 45% Revenue Surge - PYMNTS",
+      "url": "https://www.pymnts.com/earnings/2026/mercado-libre-says-ai-investments-support-45-revenue-surge/",
+      "date_publication": "2026-02-24",
+      "consulte_le": "2026-07-12",
+      "fiabilite": "T3_presse_etablie"
+    }
+  ],
+  "schema_flow": {
+    "statut": "documente",
+    "noeuds": [
+      {
+        "id": "buyerdata",
+        "role_generique": "data_source",
+        "label": "Donnees comportementales acheteur (recherche, transactions)"
+      },
+      {
+        "id": "aisearch",
+        "role_generique": "modele_ia",
+        "label": "Recherche IA / discovery",
+        "outil_documente": "MercadoLibre AI search"
+      },
+      {
+        "id": "buyeragent",
+        "role_generique": "canal_conversationnel",
+        "label": "Assistant acheteur conversationnel"
+      },
+      {
+        "id": "sellerasst",
+        "role_generique": "modele_ia",
+        "label": "Seller Assistant (listings + videos courtes)",
+        "outil_documente": "MercadoLibre Seller Assistant"
+      },
+      {
+        "id": "site",
+        "role_generique": "site_app",
+        "label": "Marketplace MercadoLibre"
+      },
+      {
+        "id": "adsai",
+        "role_generique": "paid_platform",
+        "label": "Regie publicitaire (search ads, bidding IA)"
+      },
+      {
+        "id": "mpagent",
+        "role_generique": "canal_conversationnel",
+        "label": "Assistant IA Mercado Pago"
+      }
+    ],
+    "liens": [
+      [
+        "buyerdata",
+        "aisearch"
+      ],
+      [
+        "aisearch",
+        "site"
+      ],
+      [
+        "buyeragent",
+        "site"
+      ],
+      [
+        "sellerasst",
+        "site"
+      ],
+      [
+        "site",
+        "adsai",
+        "inventaire + signal"
+      ],
+      [
+        "adsai",
+        "site",
+        "placements ads"
+      ],
+      [
+        "site",
+        "buyerdata",
+        "feedback comportemental"
+      ],
+      [
+        "mpagent",
+        "site"
+      ]
+    ]
+  },
+  "replication": {
+    "statut_epistemique": "infere",
+    "playbook": [
+      {
+        "action": "Cartographier la donnee comportementale first-party disponible (recherches, clics, achats, attributs consultes) et verifier qu'elle est exploitable pour la personnalisation, base legale comprise en UE.",
+        "livrable": "Inventaire data et cadrage conformite."
+      },
+      {
+        "action": "Commencer par la recherche : passer d'un moteur par mot-cle a une recherche qui comprend l'intention et elargit selon le profil, sur un perimetre ou l'echec est peu couteux.",
+        "livrable": "Recherche IA en test sur un segment ou une categorie."
+      },
+      {
+        "action": "Ajouter un assistant conversationnel cote acheteur pour affiner les requetes vagues, puis un outil generatif cote offre (fiches, visuels, videos courtes) pour industrialiser le catalogue.",
+        "livrable": "Assistant acheteur et outil vendeur en production sur un sous-ensemble."
+      },
+      {
+        "action": "Connecter ces briques a la monetisation : optimiser les encheres et les campagnes de la regie sur le meme signal comportemental, en mesurant l'effet sur revenu pub, conversion et churn.",
+        "livrable": "Boucle discovery -> ads instrumentee avec garde-fous conversion/churn."
+      }
+    ],
+    "equipe": "Equipe produit et data science interne pour les modeles de recherche et generatifs, une equipe retail media pour la monetisation, et des relais cote vendeurs pour adopter les outils. Ce n'est pas une activation de plateforme : c'est un programme d'ingenierie et data soutenu.",
+    "prerequis_data": [
+      "Volume de donnees comportementales first-party (recherche, transactions)",
+      "Catalogue produit structure et attributs exploitables",
+      "Inventaire publicitaire proprietaire a monetiser"
+    ],
+    "prerequis_orga": [
+      "Posseder la marketplace ou l'audience (pas transposable a un pur annonceur)",
+      "Capacite d'ingenierie IA interne durable",
+      "Une regie ou un programme retail media a piloter"
+    ],
+    "stack_possible": [
+      "LLM et modeles de recherche semantique (in-house ou fournisseur)",
+      "Generation video/image a partir d'une photo produit",
+      "Agent conversationnel connecte au catalogue",
+      "Moteur d'encheres ML pour la regie"
+    ],
+    "premiere_etape": "Reperer une recherche a fort volume et faible pertinence, y brancher un moteur qui comprend l'intention, et mesurer l'effet sur la conversion avant d'etendre aux autres briques."
+  },
+  "seo": {
+    "slug": "mercadolibre-genai-marketplace-2025",
+    "title": "MercadoLibre : genAI dans la marketplace - régie publicitaire +67 % au T4 2025",
+    "meta_description": "MercadoLibre a integre recherche IA, assistant acheteur et Seller Assistant generatif : revenus publicitaires +67 % en devise constante et ~20 % du GMV conseille par l'IA au T4 2025.",
+    "resume_citable": "MercadoLibre a embarque l'IA generative dans sa marketplace (recherche IA en Argentine, assistant acheteur, Seller Assistant creant des videos depuis une photo produit), portant ses revenus publicitaires a +67 % en devise constante au T4 2025 et ~20 % de son GMV conseille par l'assistant vendeur.",
+    "faq": [
+      {
+        "q": "En quoi ce cas differe-t-il d'un annonceur qui achete de l'IA publicitaire ?",
+        "a": "MercadoLibre ne loue pas l'IA d'une plateforme : la marque construit l'IA dans son propre produit (recherche, assistants, outils vendeurs) et la monetise via sa regie. Le levier vient de la possession de la marketplace, de sa data et de son inventaire publicitaire."
+      },
+      {
+        "q": "Quel est le prerequis principal pour repliquer ce pattern ?",
+        "a": "Posseder une audience ou une marketplace avec un volume de donnees comportementales first-party, plus une capacite d'ingenierie IA interne. Ce n'est pas une feature a activer mais un programme produit et data."
+      }
+    ]
+  }
+}

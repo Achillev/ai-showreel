@@ -1,0 +1,292 @@
+{
+  "id": "nike-snkrs-exclusive-access-2021",
+  "type_fiche": "succes",
+  "marque": "Nike",
+  "industrie": "sport_fitness",
+  "marches_deploiement": [
+    "Mondial (application Nike et SNKRS, marches ou Nike Membership est actif)"
+  ],
+  "transposable_ue": {
+    "flag": "oui_avec_adaptations",
+    "note": "Le ciblage repose sur des donnees first-party de membres (achats, tentatives d'achat, engagement in-app). Sous RGPD, la personnalisation d'offres exige une base legale et une gestion du consentement pour le profilage marketing. Le pattern reste transposable a tout programme de membership europeen ; c'est la profondeur du profilage qui se cale sur le consentement par marche."
+  },
+  "metier": "marketing / CRM (membership et personnalisation)",
+  "marque_linkedin": "https://www.linkedin.com/company/nike",
+  "intervenants": [
+    {
+      "nom": "John Donahoe",
+      "role": "President-directeur general, Nike (au moment de l'earnings call FY21 Q4)",
+      "source_ref": "S3"
+    }
+  ],
+  "axes": {
+    "levier": "retention",
+    "touchpoints": [
+      "application SNKRS",
+      "application Nike",
+      "notifications d'Exclusive Access",
+      "email membre"
+    ],
+    "etape_parcours": "fidélité",
+    "famille": "personnalisation",
+    "pattern": "offres et acces exclusifs personnalises selon l'engagement et l'historique membre",
+    "type_ia": [
+      "modeles de recommandation",
+      "scoring d'engagement membre",
+      "modeles predictifs de valeur client (Zodiac)",
+      "machine learning de detection de bots"
+    ],
+    "plateforme_stack": [
+      "custom/in-house",
+      "Zodiac (predictive CLV, acquis 2018)",
+      "Celect (demand sensing, acquis 2019)"
+    ],
+    "objectif_metrique": [
+      "frequence d'achat membre",
+      "croissance des membres acheteurs recurrents",
+      "valeur vie client",
+      "conversion des drops SNKRS"
+    ]
+  },
+  "implementation": "custom",
+  "stack_technique": [
+    {
+      "nom": "Scoring d'engagement in-house Nike",
+      "categorie": "outil",
+      "detail": "ML proprietaire combinant engagement in-app et historique de tentatives d'achat pour choisir les invites de l'Exclusive Access ; mix de facteurs variable d'un drop a l'autre.",
+      "url": "https://www.nike.com"
+    },
+    {
+      "nom": "Zodiac",
+      "categorie": "outil",
+      "detail": "Modeles predictifs de valeur vie client (CLV) ; societe acquise par Nike en 2018 et integree a la couche de personnalisation.",
+      "url": "https://www.nike.com"
+    },
+    {
+      "nom": "Celect",
+      "categorie": "outil",
+      "detail": "Demand sensing (prediction de la demande) ; societe acquise par Nike en 2019.",
+      "url": "https://www.nike.com"
+    },
+    {
+      "nom": "ML de detection de bots",
+      "categorie": "outil",
+      "detail": "Filtrage des entrees non authentiques, en priorite sur les lancements les plus populaires.",
+      "url": "https://www.nike.com"
+    },
+    {
+      "nom": "Applications SNKRS et Nike",
+      "categorie": "plateforme",
+      "detail": "Canal de collecte des signaux membre et d'envoi des invitations d'Exclusive Access.",
+      "url": "https://www.nike.com"
+    }
+  ],
+  "objectif_business": "Faire du membership le moteur de l'achat repete en reservant les produits rares aux membres les plus engages, pour augmenter la frequence d'achat, la valeur client et la part du direct-to-consumer.",
+  "description": "Sur SNKRS, l'application de drops de Nike, l'Exclusive Access envoie des invitations d'achat personnalisees pour les paires les plus convoitees. Le choix des destinataires combine des signaux d'engagement in-app et l'historique de tentatives d'achat, sans criteres fixes que l'on pourrait cocher pour garantir l'invitation. Nike decrit le systeme comme evolutif : le mix de facteurs change en continu. En parallele, la couche de recommandation de l'application Nike s'appuie sur les donnees first-party de membres et sur les briques predictives issues des acquisitions de Zodiac (valeur client) et Celect (demand sensing), et Nike utilise du machine learning pour retirer les bots des lancements les plus populaires. Sur le drop de la Dunk Off-White, 90 pour cent des invitations sont allees a des membres qui n'avaient pas obtenu de collaboration Off-White au cours des deux annees precedentes.",
+  "resultats": [
+    {
+      "metrique": "Croissance trimestrielle des membres acheteurs recurrents (FY21 Q4)",
+      "valeur": "+70 pour cent",
+      "citation_exacte": "repeat buying members grew more than 70%",
+      "source_ref": "S1"
+    },
+    {
+      "metrique": "Invitations Dunk Off-White allees a des membres sans collab depuis 2 ans",
+      "valeur": "90 pour cent",
+      "citation_exacte": "90% of invitations went to members",
+      "source_ref": "S1"
+    },
+    {
+      "metrique": "Taille du programme Nike Membership en 2021",
+      "valeur": "~300 M de membres",
+      "citation_exacte": "300 million members",
+      "source_ref": "S4"
+    }
+  ],
+  "niveau_preuve": {
+    "niveau": "C",
+    "justification": "Presse etablie citant nommement Nike et reprenant les chiffres de l'earnings call FY2021 Q4 (croissance des acheteurs recurrents, ciblage SNKRS). Concordance de plusieurs sources, mais pas d'isolation financiere de la seule contribution IA, donc C plutot que A."
+  },
+  "dates": {
+    "lancement": "2018-2019 (Exclusive Access sur SNKRS ; acquisitions Zodiac 2018 et Celect 2019)",
+    "derniere_confirmation_activite": "2021 (earnings call FY21 Q4, juin 2021)",
+    "verifie_le": "2026-07-11",
+    "revoir_apres": "2027-01-11"
+  },
+  "statut_vivant": {
+    "statut": "confirme",
+    "note": "SNKRS et Nike Membership restent au coeur de la strategie direct-to-consumer de Nike. L'Exclusive Access personnalise est toujours actif ; le dernier signal chiffre fort reste l'earnings FY21, la mecanique n'a pas ete dementie depuis."
+  },
+  "sources": [
+    {
+      "ref": "S1",
+      "type": "presse",
+      "fiabilite": "T4_secondaire",
+      "titre": "Nike Ramps Up Data Science for Member Personalization",
+      "url": "https://consumergoods.com/nike-ramps-data-science-member-personalization",
+      "date_publication": "2021-09-24",
+      "consulte_le": "2026-07-11"
+    },
+    {
+      "ref": "S2",
+      "type": "presse",
+      "fiabilite": "T3_presse_etablie",
+      "titre": "Nike's Earnings Calls Provide A Winning Digital Transformation Playbook",
+      "url": "https://www.forbes.com/sites/noahbarsky/2021/07/27/nike-earnings-calls-provide-winning-digital-transformation-playbook/",
+      "date_publication": "2021-07-27",
+      "consulte_le": "2026-07-11"
+    },
+    {
+      "ref": "S3",
+      "type": "presse",
+      "fiabilite": "T3_presse_etablie",
+      "titre": "Nike CEO Says Off-White Dunks Went to 'Most Deserving' SNKRS Users",
+      "url": "https://www.complex.com/sneakers/nike-snkrs-off-white-dunks-ceo-john-donahoe",
+      "date_publication": "2021-09",
+      "consulte_le": "2026-07-11"
+    },
+    {
+      "ref": "S4",
+      "type": "presse",
+      "fiabilite": "T4_secondaire",
+      "titre": "Nike's Record Quarter Fueled By 300 Million Members and Their Consumer Insights",
+      "url": "https://consumergoods.com/nikes-record-quarter-fueled-300-million-members-and-their-consumer-insights",
+      "date_publication": "2021-06",
+      "consulte_le": "2026-07-11"
+    }
+  ],
+  "fonctionnement_operationnel": {
+    "cadence": "Par drop pour l'Exclusive Access (chaque lancement de paire rare), avec scoring d'engagement mis a jour en continu sur les donnees in-app.",
+    "opere_par": "Equipes membership, data science et SNKRS de Nike, avec les modeles predictifs herites de Zodiac et Celect.",
+    "signal_pilote": "L'historique d'engagement membre et de tentatives d'achat par paire. Si le signal first-party se degrade (opt-out, faible identification), le ciblage perd en pertinence et l'Exclusive Access ressemble a une loterie.",
+    "etapes": [
+      {
+        "etape": "Collecte des signaux membre",
+        "detail": "L'application capte engagement in-app, historique d'achats et de tentatives sur les drops SNKRS.",
+        "acteur": "equipe data / IA"
+      },
+      {
+        "etape": "Scoring des membres pour un drop",
+        "detail": "Un modele combine engagement et historique pour identifier les membres a inviter, mix de facteurs variable d'un drop a l'autre.",
+        "acteur": "IA (modele de scoring)"
+      },
+      {
+        "etape": "Envoi des invitations d'Exclusive Access",
+        "detail": "Les membres selectionnes recoivent une fenetre d'achat reservee sur la paire.",
+        "acteur": "equipe SNKRS / marketing"
+      },
+      {
+        "etape": "Filtrage des bots",
+        "detail": "Du machine learning retire les entrees non authentiques, en priorite sur les lancements les plus populaires.",
+        "acteur": "IA (detection de bots)"
+      }
+    ]
+  },
+  "schema_flow": {
+    "statut": "approche_type",
+    "noeuds": [
+      {
+        "id": "data",
+        "role_generique": "data_source",
+        "label": "Donnees first-party membre (engagement, achats, tentatives)"
+      },
+      {
+        "id": "model",
+        "role_generique": "modele_ia",
+        "label": "Scoring d'engagement et modeles predictifs de valeur",
+        "outil_documente": "in-house, Zodiac (CLV), Celect (demand sensing)"
+      },
+      {
+        "id": "app",
+        "role_generique": "site_app",
+        "label": "Application SNKRS / Nike"
+      },
+      {
+        "id": "member",
+        "role_generique": "humain",
+        "label": "Membre Nike"
+      }
+    ],
+    "liens": [
+      [
+        "member",
+        "data",
+        "genere de l'engagement"
+      ],
+      [
+        "data",
+        "model"
+      ],
+      [
+        "model",
+        "app",
+        "liste d'invitations Exclusive Access"
+      ],
+      [
+        "app",
+        "member",
+        "offre d'achat reservee"
+      ]
+    ]
+  },
+  "replication": {
+    "statut_epistemique": "infere",
+    "playbook": [
+      {
+        "action": "Unifier l'identifiant membre et instrumenter l'engagement in-app, les achats et les tentatives d'achat.",
+        "livrable": "Base membre unifiee avec signaux d'engagement exploitables."
+      },
+      {
+        "action": "Construire un scoring d'engagement simple (recence, frequence, tentatives) et le backtester sur l'historique.",
+        "livrable": "Score membre calcule et valide sur donnees passees."
+      },
+      {
+        "action": "Tester une offre reservee sur un segment haute valeur avec groupe de controle.",
+        "livrable": "Readout frequence d'achat et conversion vs controle."
+      },
+      {
+        "action": "Enrichir avec des briques predictives (CLV) et un filtrage anti-bots sur les lancements sensibles.",
+        "livrable": "Modele enrichi et filtrage en production."
+      },
+      {
+        "action": "Generaliser l'acces exclusif par lancement, en variant le mix de facteurs pour eviter le gaming du systeme.",
+        "livrable": "Mecanique en production avec suivi des acheteurs recurrents."
+      }
+    ],
+    "equipe": "1-2 data scientists + 1 data engineer + 1 CRM manager, avec l'equipe produit de l'app pour l'activation des offres.",
+    "prerequis_data": [
+      "identifiant membre unifie",
+      "historique d'engagement in-app et de navigation produit",
+      "historique d'achats et de tentatives d'achat"
+    ],
+    "prerequis_orga": [
+      "programme de membership avec offres reservees",
+      "equipe data capable de maintenir un scoring d'engagement",
+      "gestion du consentement pour le profilage marketing"
+    ],
+    "stack_possible": [
+      "CDP + first-party data",
+      "modele de scoring d'engagement",
+      "moteur de recommandation",
+      "outils d'offres/allocation par segment"
+    ],
+    "premiere_etape": "Unifier l'identifiant membre et instrumenter l'engagement in-app, puis tester une offre reservee sur un segment haute valeur avant de generaliser."
+  },
+  "seo": {
+    "slug": "nike-snkrs-exclusive-access-2021",
+    "title": "Nike : Exclusive Access personnalise sur SNKRS - membres acheteurs recurrents +70% (2021)",
+    "meta_description": "Nike reserve ses drops SNKRS aux membres les plus engages via un scoring IA ; les membres acheteurs recurrents ont cru de plus de 70% sur un trimestre.",
+    "resume_citable": "Nike personnalise l'acces exclusif a ses paires rares sur SNKRS selon l'engagement et l'historique membre : sur le drop Dunk Off-White, 90 pour cent des invitations sont allees a des membres sans collaboration Off-White depuis deux ans, et les membres acheteurs recurrents ont progresse de plus de 70 pour cent au T4 fiscal 2021.",
+    "faq": [
+      {
+        "q": "Comment Nike choisit qui recoit l'Exclusive Access sur SNKRS ?",
+        "a": "Un scoring combine l'engagement in-app et l'historique de tentatives d'achat. Le mix de facteurs change a chaque drop, sans critere fixe garantissant l'invitation."
+      },
+      {
+        "q": "Quel resultat chiffre est documente ?",
+        "a": "Les membres acheteurs recurrents ont cru de plus de 70 pour cent sur le trimestre fiscal, et 90 pour cent des invitations de la Dunk Off-White ont vise des membres sans collab recente."
+      }
+    ]
+  },
+  "logo_domain": "nike.com"
+}

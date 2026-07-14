@@ -1,0 +1,267 @@
+{
+  "id": "zillow-recherche-langage-naturel-2023",
+  "type_fiche": "succes",
+  "marque": "Zillow",
+  "groupe": "Zillow Group",
+  "industrie": "immobilier",
+  "marches_deploiement": [
+    "Etats-Unis"
+  ],
+  "transposable_ue": {
+    "flag": "oui_avec_adaptations",
+    "note": "La recherche en langage naturel sur un catalogue d'annonces est transposable a un portail europeen. L'adaptation porte sur la couverture des donnees locales (temps de trajet, ecoles, points d'interet) et sur le RGPD des recherches sauvegardees et notifications."
+  },
+  "metier": "portail immobilier / experience de recherche",
+  "intervenants": [
+    {
+      "nom": "Jenny Arden",
+      "role": "Chief Design Officer, Zillow (au lancement 2023)",
+      "source_ref": "S1"
+    },
+    {
+      "nom": "Josh Weisberg",
+      "role": "Senior Vice President of Artificial Intelligence, Zillow (mise a jour 2024)",
+      "source_ref": "S2"
+    }
+  ],
+  "axes": {
+    "levier": "activation_conversion",
+    "touchpoints": [
+      "barre de recherche de l'application Zillow",
+      "site Zillow.com",
+      "recherches sauvegardees et notifications"
+    ],
+    "etape_parcours": "consideration",
+    "famille": "conversation",
+    "pattern": "recherche en langage naturel sur un catalogue d'annonces",
+    "type_ia": [
+      "traitement du langage naturel",
+      "modeles de machine learning",
+      "personnalisation des resultats"
+    ],
+    "plateforme_stack": [
+      "custom/in-house"
+    ],
+    "objectif_metrique": [
+      "engagement sur la recherche",
+      "biens sauvegardes",
+      "mises en relation avec un agent"
+    ]
+  },
+  "implementation": "custom",
+  "objectif_business": "Laisser l'acheteur ou le locataire decrire son logement ideal en une phrase plutot que de manier des filtres, pour faire remonter des annonces pertinentes plus vite et raccourcir la recherche.",
+  "description": "Zillow lance la recherche en langage naturel le 26 janvier 2023 sur son application iOS, presentee comme une premiere pour un grand portail residentiel. L'utilisateur tape une phrase comme un objectif de prix et de quartier avec un critere precis, et le systeme balaie des millions de details d'annonces pour faire remonter les biens pertinents. Le 4 septembre 2024, une version enrichie ajoute la recherche par temps de trajet, budget mensuel, ecoles et points d'interet, avec des requetes comme un temps de trajet maximal depuis un lieu ou un logement pres d'une gare. Les modeles de machine learning analysent la requete, personnalisent les resultats et s'entrainent a mieux repondre aux phrases humaines. L'utilisateur peut sauvegarder sa recherche et etre notifie quand une nouvelle annonce correspond. Zillow est decrit comme le site immobilier le plus visite aux Etats-Unis.",
+  "resultats": [
+    {
+      "metrique": "Premier portail residentiel a deployer cette recherche IA",
+      "valeur": "1er grand portail",
+      "citation_exacte": "Zillow is the first major residential real estate marketplace to implement this advanced, AI-powered search engine",
+      "source_ref": "S1"
+    },
+    {
+      "metrique": "Details d'annonces balayes par requete",
+      "valeur": "millions de details",
+      "citation_exacte": "scans millions of listing details to bring relevant results to the surface",
+      "source_ref": "S2"
+    }
+  ],
+  "niveau_preuve": {
+    "niveau": "C",
+    "justification": "Communiques officiels Zillow (T1) et presse specialisee concordants sur un deploiement a l'echelle du premier portail US. Sans metrique d'engagement isolee et publique pour cette fonction precise, le niveau reste C."
+  },
+  "dates": {
+    "lancement": "2023-01-26 (iOS) ; 2024-09-04 (version enrichie : trajet, budget, ecoles, points d'interet)",
+    "derniere_confirmation_activite": "2024-09 (deploiement enrichi confirme ; fonction toujours presente sur les surfaces Zillow)",
+    "verifie_le": "2026-07-11",
+    "revoir_apres": "2027-01-11"
+  },
+  "statut_vivant": {
+    "statut": "confirme",
+    "note": "La recherche en langage naturel a ete elargie en septembre 2024 et reste une brique standard de l'experience Zillow. Distincte de Zillow Offers (iBuying, arrete en 2021), elle porte sur la recherche et la personnalisation."
+  },
+  "sources": [
+    {
+      "ref": "S1",
+      "type": "blog_officiel",
+      "fiabilite": "T1_primaire",
+      "titre": "Zillow's new AI-powered natural-language search is a first in real estate",
+      "url": "https://www.prnewswire.com/news-releases/zillows-new-ai-powered-natural-language-search-is-a-first-in-real-estate-301731350.html",
+      "date_publication": "2023-01-26",
+      "consulte_le": "2026-07-11"
+    },
+    {
+      "ref": "S2",
+      "type": "blog_officiel",
+      "fiabilite": "T1_primaire",
+      "titre": "Zillow's AI-powered home search gets smarter with new natural language features",
+      "url": "https://www.prnewswire.com/news-releases/zillows-ai-powered-home-search-gets-smarter-with-new-natural-language-features-302237266.html",
+      "date_publication": "2024-09-04",
+      "consulte_le": "2026-07-11"
+    },
+    {
+      "ref": "S3",
+      "type": "presse",
+      "fiabilite": "T4_secondaire",
+      "titre": "Zillow, Unfiltered: Portal Giant Adds AI-Fueled Natural Language Feature",
+      "url": "https://www.inman.com/2024/09/04/zillow-unfiltered-portal-giant-adds-ai-fueled-natural-language-feature/",
+      "date_publication": "2024-09-04",
+      "consulte_le": "2026-07-11"
+    }
+  ],
+  "fonctionnement_operationnel": {
+    "cadence": "Temps reel a chaque requete ; notifications par push ou email quand une nouvelle annonce correspond a une recherche sauvegardee.",
+    "opere_par": "Equipe IA et recherche de Zillow pour les modeles ; le catalogue d'annonces alimente les resultats.",
+    "signal_pilote": "La qualite et la fraicheur des details d'annonces et des donnees locales (trajet, ecoles, points d'interet). Sans elles, la phrase de l'utilisateur ne se traduit pas en filtres pertinents.",
+    "etapes": [
+      {
+        "etape": "Requete en langage naturel",
+        "detail": "L'utilisateur decrit son logement ideal en une phrase dans la barre de recherche.",
+        "acteur": "client"
+      },
+      {
+        "etape": "Interpretation et balayage",
+        "detail": "Les modeles ML traduisent la phrase en criteres et balaient des millions d'annonces.",
+        "acteur": "IA"
+      },
+      {
+        "etape": "Personnalisation des resultats",
+        "detail": "Le systeme classe les biens les plus pertinents selon les preferences exprimees.",
+        "acteur": "IA"
+      },
+      {
+        "etape": "Sauvegarde et alerte",
+        "detail": "L'utilisateur sauvegarde la recherche et recoit une notification a l'arrivee d'une annonce correspondante.",
+        "acteur": "client"
+      }
+    ]
+  },
+  "schema_flow": {
+    "statut": "approche_type",
+    "noeuds": [
+      {
+        "id": "listings",
+        "role_generique": "data_source",
+        "label": "Catalogue d'annonces + donnees locales"
+      },
+      {
+        "id": "nlp",
+        "role_generique": "modele_ia",
+        "label": "Modeles NLP et ML de recherche"
+      },
+      {
+        "id": "app",
+        "role_generique": "site_app",
+        "label": "Application et site Zillow"
+      },
+      {
+        "id": "user",
+        "role_generique": "humain",
+        "label": "Acheteur / locataire"
+      }
+    ],
+    "liens": [
+      [
+        "user",
+        "app",
+        "phrase de recherche"
+      ],
+      [
+        "app",
+        "nlp"
+      ],
+      [
+        "listings",
+        "nlp"
+      ],
+      [
+        "nlp",
+        "app",
+        "resultats personnalises"
+      ],
+      [
+        "app",
+        "user",
+        "alerte nouvelle annonce"
+      ]
+    ]
+  },
+  "replication": {
+    "statut_epistemique": "infere",
+    "prerequis_data": [
+      "catalogue d'annonces riche et structure",
+      "donnees geographiques locales (trajet, ecoles, points d'interet)",
+      "historique de comportement pour la personnalisation"
+    ],
+    "prerequis_orga": [
+      "equipe NLP et recherche",
+      "infrastructure de recherche a grande echelle",
+      "systeme de recherches sauvegardees et notifications"
+    ],
+    "stack_possible": [
+      "modele de comprehension de requete NL",
+      "moteur de recherche et de classement",
+      "pipeline de notifications"
+    ],
+    "premiere_etape": "Traduire une phrase libre en criteres de recherche fiables avant d'ajouter la personnalisation.",
+    "playbook": [
+      {
+        "action": "Structurer le catalogue et les donnees locales (trajet, ecoles, points d'interet) en attributs interrogeables.",
+        "livrable": "Catalogue enrichi avec attributs normalises."
+      },
+      {
+        "action": "Construire le modele de comprehension de requete (phrase vers criteres).",
+        "livrable": "Parsing evalue sur un corpus de requetes reelles."
+      },
+      {
+        "action": "Brancher le parsing sur le moteur de recherche et le classement.",
+        "livrable": "Resultats pertinents valides en beta interne."
+      },
+      {
+        "action": "Ouvrir la beta publique sur une plateforme (app mobile d'abord).",
+        "livrable": "Mesures d'engagement et de biens sauvegardes."
+      },
+      {
+        "action": "Ajouter recherches sauvegardees et notifications, etendre les criteres couverts.",
+        "livrable": "Boucle de retention active (alertes nouvelles annonces)."
+      }
+    ],
+    "equipe": "1 PM + 2-3 ingenieurs (NLP, search) + 1 data engineer sur le catalogue et les donnees locales"
+  },
+  "seo": {
+    "slug": "zillow-recherche-langage-naturel-2023",
+    "title": "Zillow : recherche immobiliere en langage naturel, premiere d'un grand portail US (2023)",
+    "meta_description": "Zillow laisse l'acheteur decrire son logement ideal en une phrase. Lancee en 2023, enrichie en 2024, une premiere pour un grand portail US.",
+    "resume_citable": "Zillow a lance en janvier 2023 la recherche immobiliere en langage naturel, presentee comme une premiere pour un grand portail residentiel, enrichie en septembre 2024 avec le temps de trajet, le budget, les ecoles et les points d'interet.",
+    "faq": [
+      {
+        "q": "Comment fonctionne la recherche en langage naturel de Zillow ?",
+        "a": "L'utilisateur decrit son logement ideal en une phrase ; des modeles de machine learning traduisent la phrase en criteres et balaient des millions d'annonces pour remonter les biens pertinents."
+      },
+      {
+        "q": "Cette recherche est-elle la meme chose que Zillow Offers ?",
+        "a": "Non. Zillow Offers etait un programme d'achat de maisons (iBuying) arrete en 2021. La recherche en langage naturel est une fonction de recherche et de personnalisation, distincte et toujours active."
+      }
+    ]
+  },
+  "logo_domain": "zillow.com",
+  "stack_technique": [
+    {
+      "nom": "Modeles NLP de comprehension de requete (in-house Zillow)",
+      "categorie": "llm",
+      "detail": "Traduisent la phrase de l'utilisateur en criteres de recherche (prix, quartier, trajet, ecoles) ; l'architecture exacte n'est pas publiee.",
+      "url": "https://www.zillow.com"
+    },
+    {
+      "nom": "Moteur de recherche et de classement Zillow",
+      "categorie": "outil",
+      "detail": "Balaie des millions de details d'annonces et personnalise l'ordre des resultats.",
+      "url": "https://www.zillow.com"
+    },
+    {
+      "nom": "Catalogue d'annonces et donnees locales",
+      "categorie": "infra",
+      "detail": "Annonces, temps de trajet, ecoles et points d'interet ; leur fraicheur conditionne la pertinence des resultats.",
+      "url": "https://www.zillow.com"
+    }
+  ]
+}

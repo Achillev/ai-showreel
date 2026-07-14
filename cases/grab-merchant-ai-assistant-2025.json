@@ -1,0 +1,300 @@
+{
+  "id": "grab-merchant-ai-assistant-2025",
+  "type_fiche": "succes",
+  "marque": "Grab",
+  "groupe": "Grab Holdings Limited",
+  "industrie": "retail_ecom",
+  "marches_deploiement": [
+    "Indonesie",
+    "Singapour",
+    "Malaisie",
+    "Thailande",
+    "Vietnam",
+    "Philippines",
+    "Asie du Sud-Est (8 pays)"
+  ],
+  "transposable_ue": {
+    "flag": "oui_avec_adaptations",
+    "note": "Un assistant IA qui conseille des commercants sur leurs ventes et leur publicite est transposable a toute marketplace. La contrainte n'est pas technique mais data : il faut un historique de commandes et de campagnes par marchand, et un cadre RGPD clair sur l'usage de ces donnees marchandes. L'AI Act classe un assistant de ce type en risque limite (obligation de transparence sur le fait que le conseil vient d'une IA)."
+  },
+  "metier": "marketing",
+  "marque_linkedin": "https://www.linkedin.com/company/grabapp/",
+  "intervenants": [
+    {
+      "nom": "Philipp Kandal",
+      "role": "Chief Product Officer, Grab",
+      "source_ref": "S1"
+    }
+  ],
+  "agences": [
+    {
+      "nom": "OpenAI",
+      "role": "Partenaire modele (collaboration annoncee en mai 2024, elargie en 2025)",
+      "source_ref": "S1"
+    },
+    {
+      "nom": "Anthropic",
+      "role": "Partenaire strategique sur les solutions d'IA agentique",
+      "source_ref": "S1"
+    }
+  ],
+  "axes": {
+    "levier": "monetisation",
+    "touchpoints": [
+      "app GrabMerchant",
+      "chat assistant marchand",
+      "creation de campagnes publicitaires"
+    ],
+    "etape_parcours": "fidélité",
+    "famille": "conversation",
+    "pattern": "assistant IA de conseil et d'activation pour marchands",
+    "type_ia": [
+      "LLM generatif",
+      "agent conversationnel"
+    ],
+    "plateforme_stack": [
+      "OpenAI",
+      "Anthropic",
+      "integration in-house GrabMerchant"
+    ],
+    "objectif_metrique": [
+      "efficacite publicitaire des marchands",
+      "adoption par les marchands",
+      "taux de reutilisation"
+    ]
+  },
+  "implementation": "hybride",
+  "objectif_business": "Donner a chaque marchand, meme petit et sans equipe marketing, un conseiller disponible en continu qui repond a ses questions d'exploitation, cree ses campagnes publicitaires et met a jour son menu, pour faire monter son chiffre et ses depenses pub sur la plateforme.",
+  "description": "Grab a lance en avril 2025 un assistant IA pour ses marchands, presente comme un conseiller business disponible 24h/24 dans l'app GrabMerchant. Le marchand lui pose des questions d'exploitation (comment vendre plus, ajuster son menu, lancer une promo) et l'assistant repond avec des recommandations personnalisees, peut creer des campagnes publicitaires et mettre a jour le menu. Il peut aussi prendre l'initiative et suggerer des actions. En Indonesie, ou l'outil a ete deploye a grande echelle, les marchands ont echange plus d'un million de fois avec l'assistant en moins de cinq mois, avec un taux de satisfaction eleve. Grab mesure une amelioration de l'efficacite publicitaire chez les marchands qui l'utilisent.",
+  "resultats": [
+    {
+      "metrique": "Interactions marchands en 5 mois, Indonesie (1 083 425 messages)",
+      "valeur": "1M+ interactions",
+      "citation_exacte": "1,083,425 messages from over 1 million interactions in under five months",
+      "source_ref": "S2"
+    },
+    {
+      "metrique": "Amelioration de l'efficacite publicitaire des marchands utilisateurs",
+      "valeur": "11%",
+      "citation_exacte": "11% improvement in advertising promotion efficiency",
+      "source_ref": "S2"
+    },
+    {
+      "metrique": "Taux de satisfaction utilisateur",
+      "valeur": "96,1%",
+      "citation_exacte": "96.1%",
+      "source_ref": "S2"
+    },
+    {
+      "metrique": "Nouveaux marchands GrabFood (entrants depuis janvier 2026) ayant utilise l'assistant",
+      "valeur": "59,2%",
+      "citation_exacte": "59.2% of new GrabFood merchants ... actively used the AI assistant",
+      "source_ref": "S2"
+    }
+  ],
+  "niveau_preuve": {
+    "niveau": "C",
+    "justification": "Communique officiel de Grab (T1) sur le lancement et l'architecture, et presse regionale etablie (Marketing-Interactive, T3) rapportant les chiffres d'usage et d'efficacite en Indonesie. Sources concordantes. L'efficacite publicitaire de 11% est un chiffre communique par Grab, pas un resultat audite, ce qui maintient a C."
+  },
+  "dates": {
+    "lancement": "2025-04-08",
+    "derniere_confirmation_activite": "2026-07",
+    "verifie_le": "2026-07-11",
+    "revoir_apres": "2027-01-11"
+  },
+  "statut_vivant": {
+    "statut": "confirme",
+    "note": "En juillet 2026, la presse regionale confirme l'usage a l'echelle en Indonesie avec un taux de reutilisation eleve chez les marchands (89,9% chez les longue traine, 97,2% chez les mid-market)."
+  },
+  "sources": [
+    {
+      "ref": "S1",
+      "type": "blog_officiel",
+      "fiabilite": "T1_primaire",
+      "titre": "Grab deploys agentic AI to empower merchants and driver partners",
+      "url": "https://www.grab.com/sg/press/others/grab-deploys-agentic-ai-to-empower-merchants-and-driver-partners/",
+      "date_publication": "2025-04-08",
+      "consulte_le": "2026-07-11"
+    },
+    {
+      "ref": "S2",
+      "type": "presse",
+      "fiabilite": "T3_presse_etablie",
+      "titre": "Grab's AI assistant surpasses 1m merchant interactions in under five months",
+      "url": "https://www.marketing-interactive.com/grab-s-ai-assistant-surpasses-1m-merchant-interactions-in-under-five-months",
+      "date_publication": "2026-07-06",
+      "consulte_le": "2026-07-11"
+    },
+    {
+      "ref": "S3",
+      "type": "earnings_call",
+      "fiabilite": "T1_primaire",
+      "titre": "Grab Reports Fourth Quarter and Full Year 2024 Results",
+      "url": "https://investors.grab.com/news-and-events/news-details/2025/Grab-Reports-Fourth-Quarter-and-Full-Year-2024-Results-2025-v9rBPVmWY5/default.aspx",
+      "date_publication": "2025-02",
+      "consulte_le": "2026-07-11"
+    }
+  ],
+  "fonctionnement_operationnel": {
+    "cadence": "Temps reel, disponible 24h/24 dans l'app marchand, avec des relances proactives",
+    "opere_par": "Equipe produit et data de Grab qui tient l'assistant ; le marchand est l'utilisateur final autonome",
+    "signal_pilote": "Les donnees d'exploitation du marchand (ventes, campagnes, menu). Sans historique de commandes et de campagnes propre a chaque marchand, l'assistant ne peut pas personnaliser ses conseils.",
+    "etapes": [
+      {
+        "etape": "Question du marchand",
+        "detail": "Le marchand ouvre le chat dans GrabMerchant et pose une question business ou une demande d'action.",
+        "acteur": "marchand"
+      },
+      {
+        "etape": "Lecture du contexte",
+        "detail": "L'assistant lit les donnees de vente, de campagne et de menu du marchand pour repondre sur son cas.",
+        "acteur": "IA"
+      },
+      {
+        "etape": "Recommandation ou action",
+        "detail": "Il propose une action (promo, ajustement de menu) ou l'execute, comme creer une campagne publicitaire.",
+        "acteur": "IA"
+      },
+      {
+        "etape": "Relance proactive",
+        "detail": "L'assistant revient vers le marchand avec des suggestions pour ameliorer ses ventes.",
+        "acteur": "IA"
+      }
+    ]
+  },
+  "schema_flow": {
+    "statut": "approche_type",
+    "noeuds": [
+      {
+        "id": "marchand",
+        "role_generique": "site_app",
+        "label": "Marchand dans l'app GrabMerchant"
+      },
+      {
+        "id": "assistant",
+        "role_generique": "modele_ia",
+        "label": "Assistant IA marchand",
+        "outil_documente": "OpenAI / Anthropic"
+      },
+      {
+        "id": "data_marchand",
+        "role_generique": "data_source",
+        "label": "Ventes, campagnes, menu du marchand"
+      },
+      {
+        "id": "ads",
+        "role_generique": "paid_platform",
+        "label": "GrabAds (campagnes publicitaires)"
+      }
+    ],
+    "liens": [
+      [
+        "marchand",
+        "assistant"
+      ],
+      [
+        "assistant",
+        "data_marchand"
+      ],
+      [
+        "data_marchand",
+        "assistant"
+      ],
+      [
+        "assistant",
+        "ads",
+        "creation de campagnes"
+      ],
+      [
+        "assistant",
+        "marchand",
+        "recommandations et relances"
+      ]
+    ]
+  },
+  "stack_technique": [
+    {
+      "nom": "OpenAI",
+      "categorie": "llm",
+      "detail": "Partenaire modele de Grab (collaboration annoncee en mai 2024, elargie en 2025) ; modele exact non nomme publiquement",
+      "url": "https://openai.com"
+    },
+    {
+      "nom": "Anthropic",
+      "categorie": "llm",
+      "detail": "Partenaire strategique de Grab sur les solutions d'IA agentique",
+      "url": "https://www.anthropic.com"
+    },
+    {
+      "nom": "App GrabMerchant (integration in-house)",
+      "categorie": "plateforme",
+      "detail": "Back-office marchand dans lequel l'assistant est integre, avec acces aux ventes, campagnes et menu de chaque marchand",
+      "url": "https://www.grab.com"
+    },
+    {
+      "nom": "GrabAds",
+      "categorie": "outil",
+      "detail": "Plateforme publicitaire de Grab sur laquelle l'assistant cree directement les campagnes des marchands",
+      "url": "https://www.grab.com"
+    }
+  ],
+  "replication": {
+    "statut_epistemique": "infere",
+    "prerequis_data": [
+      "Historique de commandes et de ventes par marchand",
+      "Donnees de campagnes publicitaires",
+      "Structure de menu ou de catalogue par marchand"
+    ],
+    "prerequis_orga": [
+      "Regle de transparence IA vis-a-vis du marchand",
+      "Outils d'action connectes (creation de campagne, edition de menu)",
+      "Boucle de mesure sur l'efficacite pub et l'adoption"
+    ],
+    "stack_possible": [
+      "LLM generatif (OpenAI, Anthropic ou modele ouvert)",
+      "Couche outils reliee au back-office marchand",
+      "Integration a la plateforme publicitaire"
+    ],
+    "premiere_etape": "Lister les 10 questions et actions marchandes les plus frequentes, et connecter d'abord la creation de campagne et l'edition de menu.",
+    "playbook": [
+      {
+        "action": "Lister les 10 questions et actions marchandes les plus frequentes (support, account managers) et verifier que ventes, campagnes et catalogue sont accessibles par marchand.",
+        "livrable": "Perimetre fonctionnel priorise et acces data valides"
+      },
+      {
+        "action": "Connecter le LLM aux donnees d'exploitation du marchand en lecture, puis aux deux premieres actions en ecriture : creation de campagne et edition de menu.",
+        "livrable": "Assistant capable de repondre sur le cas du marchand et d'executer deux actions"
+      },
+      {
+        "action": "Lancer un pilote sur un marche ou un segment de marchands, avec transparence IA et garde-fous sur les actions (confirmation avant execution).",
+        "livrable": "Pilote en production avec journalisation des conversations"
+      },
+      {
+        "action": "Mesurer adoption, satisfaction et efficacite publicitaire des marchands utilisateurs contre un groupe temoin.",
+        "livrable": "Bilan chiffre adoption / satisfaction / efficacite pub"
+      },
+      {
+        "action": "Ajouter les relances proactives (suggestions envoyees par l'assistant) et etendre aux marches suivants.",
+        "livrable": "Assistant proactif deploye au-dela du pilote"
+      }
+    ],
+    "equipe": "2-3 devs (LLM et connecteurs back-office) + 1 PM + 1 data analyst + le support marchand pour la boucle qualite"
+  },
+  "seo": {
+    "slug": "grab-merchant-ai-assistant-2025",
+    "title": "Grab : assistant IA pour marchands - plus d'1 million d'interactions en cinq mois (2025)",
+    "meta_description": "L'assistant IA marchand de Grab conseille et active les commercants 24h/24 : plus d'1 million d'interactions en Indonesie et 11% d'efficacite pub en plus.",
+    "resume_citable": "En 2025, l'assistant IA marchand de Grab a depasse un million d'interactions en moins de cinq mois en Indonesie, avec 96,1% de satisfaction et une efficacite publicitaire en hausse de 11% chez les marchands qui l'utilisent.",
+    "faq": [
+      {
+        "q": "A quoi sert l'assistant IA marchand de Grab ?",
+        "a": "Il repond aux questions d'exploitation des commercants 24h/24, cree leurs campagnes publicitaires, met a jour leur menu et suggere des actions pour vendre plus."
+      },
+      {
+        "q": "Quel impact publicitaire est mesure ?",
+        "a": "Grab rapporte une amelioration de 11% de l'efficacite publicitaire chez les marchands qui utilisent l'assistant."
+      }
+    ]
+  },
+  "logo_domain": "grab.com"
+}

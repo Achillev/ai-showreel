@@ -1,0 +1,265 @@
+{
+  "id": "function-of-beauty-formules-ia-2015",
+  "type_fiche": "succes",
+  "marque": "Function of Beauty",
+  "groupe": "Function of Beauty",
+  "industrie": "cpg_d2c",
+  "marches_deploiement": [
+    "Etats-Unis",
+    "Distribution mass retail (Etats-Unis)"
+  ],
+  "transposable_ue": {
+    "flag": "oui_avec_adaptations",
+    "note": "Modele D2C plus retail, fabrique a la commande a partir d'un quiz. Donnees personnelles peu sensibles (profil et objectifs capillaires), RGPD applicable sur le profilage. La contrainte a l'export reste industrielle : la fabrication de formules personnalisees a l'echelle."
+  },
+  "metier": "e-commerce, R&D produit",
+  "axes": {
+    "levier": "activation_conversion",
+    "touchpoints": [
+      "quiz en ligne",
+      "abonnement D2C",
+      "mass retail",
+      "fabrication a la commande"
+    ],
+    "etape_parcours": "achat",
+    "famille": "personnalisation",
+    "pattern": "formulation produit personnalisee par algorithme a partir d'un quiz",
+    "type_ia": [
+      "algorithme de recommandation / formulation",
+      "moteur de personnalisation",
+      "API de transfert vers la fabrication"
+    ],
+    "plateforme_stack": [
+      "custom/in-house (algorithme proprietaire)",
+      "Visual Quiz Builder (front du quiz)",
+      "usine de fabrication a la commande"
+    ],
+    "objectif_metrique": [
+      "taux de completion du quiz",
+      "part du business issue du quiz",
+      "chiffre d'affaires"
+    ]
+  },
+  "implementation": "custom",
+  "objectif_business": "Convertir via un quiz qui transforme les objectifs capillaires en formule sur mesure, faire du quiz le point d'entree quasi unique du business et alimenter un reachat par abonnement.",
+  "points_cles": ["Formulation produit personnalisee par algorithme a partir d'un quiz en ligne.", "Algorithme proprietaire, front Visual Quiz Builder, usine de fabrication a la commande.", "Quiz portant 80% du business, completion 80% (+16,4%), plus de 15 millions de formulations.", "Niveau de preuve B, statut vivant confirme."],
+  "description": "Function of Beauty, fondee en 2015, personnalise des soins capillaires, skincare et body care a partir d'un quiz en ligne. Les reponses alimentent un algorithme proprietaire qui compose une formule et une routine sur mesure, puis une API transmet le profil a la fabrication pour customiser produit et flacon. L'entreprise dit avoir cree a ce jour plus de 15 millions de formulations personnalisees, avec un potentiel de milliards de combinaisons, sur une usine aux lignes automatisees. Le quiz porte l'essentiel de l'activite : il supporte 80 pour cent du business, soit plus d'un million d'engagements par an. Apres une refonte du quiz, la marque a atteint un taux de completion de 80 pour cent, en hausse de 16,4 pour cent par rapport a sa solution interne, avec des centaines de milliers de quiz completes dans les trois premiers mois. Le chiffre d'affaires attendu pour 2023 se situait entre 125 et 150 millions de dollars ; l'entreprise a leve 164 millions de dollars au total et rachete Atolla en 2021.",
+  "resultats": [
+    {
+      "metrique": "Part du business portee par le quiz, plus d'un million d'engagements/an",
+      "valeur": "80%",
+      "citation_exacte": "supports 80% of their business",
+      "source_ref": "S2"
+    },
+    {
+      "metrique": "Taux de completion du quiz apres refonte, +16,4% vs solution interne",
+      "valeur": "80%",
+      "citation_exacte": "80% quiz completion rate, an increase of 16.4%",
+      "source_ref": "S2"
+    },
+    {
+      "metrique": "Formulations personnalisees creees",
+      "valeur": "plus de 15 millions",
+      "citation_exacte": "more than 15 million customized formulations",
+      "source_ref": "S1"
+    },
+    {
+      "metrique": "Chiffre d'affaires attendu 2023",
+      "valeur": "125 a 150 M$",
+      "citation_exacte": "$125 to $150MM",
+      "source_ref": "S1"
+    }
+  ],
+  "niveau_preuve": {
+    "niveau": "B",
+    "justification": "Etude de cas plateforme (Visual Quiz Builder) chiffrant la part du business et la completion, plus profil BeautyMatter chiffrant formulations et chiffre d'affaires. Deux sources concordantes chiffrees, mais interessees ou secondaires et sans resultats financiers publics, donc B."
+  },
+  "dates": {
+    "lancement": "2015",
+    "derniere_confirmation_activite": "2024",
+    "verifie_le": "2026-07-11",
+    "revoir_apres": "2027-01-11"
+  },
+  "statut_vivant": {
+    "statut": "confirme",
+    "note": "Marque active en D2C et mass retail ; quiz refondu documente en 2024, revenu 2023 chiffre, acquisition d'Atolla en 2021. Le quiz reste le coeur du modele."
+  },
+  "sources": [
+    {
+      "ref": "S1",
+      "type": "presse",
+      "fiabilite": "T4_secondaire",
+      "titre": "Function of Beauty Delivering On the Promise of Personalization",
+      "url": "https://beautymatter.com/articles/function-of-beauty",
+      "date_publication": "2023",
+      "consulte_le": "2026-07-11"
+    },
+    {
+      "ref": "S2",
+      "type": "customer_story_plateforme",
+      "fiabilite": "T2_officiel_interesse",
+      "titre": "Function of Beauty personalizes hair care with Visual Quiz Builder",
+      "url": "https://www.visualquizbuilder.com/post/visual-quiz-builder-1r-partner-with-function-of-beauty-to-tackle-hair-care-personalization",
+      "date_publication": "2024-03-12",
+      "consulte_le": "2026-07-11"
+    }
+  ],
+  "fonctionnement_operationnel": {
+    "cadence": "A la commande pour la fabrication ; reachat par abonnement ; le quiz tourne en continu comme point d'entree.",
+    "opere_par": "Equipe data / algorithme pour la formulation, operations pour la fabrication automatisee, e-commerce et CRM pour l'abonnement.",
+    "signal_pilote": "Les reponses au quiz et son taux de completion. Si le quiz decroche, c'est 80 pour cent du business qui perd son point d'entree.",
+    "etapes": [
+      {
+        "etape": "Quiz en ligne",
+        "detail": "Le client renseigne profil et objectifs capillaires (jusqu'a plusieurs objectifs).",
+        "acteur": "client"
+      },
+      {
+        "etape": "Formulation algorithmique",
+        "detail": "L'algorithme proprietaire compose une formule et une routine sur mesure.",
+        "acteur": "IA / algorithme"
+      },
+      {
+        "etape": "Transfert vers la fabrication",
+        "detail": "Une API envoie le profil a l'usine pour customiser produit et flacon.",
+        "acteur": "IA + operations"
+      },
+      {
+        "etape": "Fabrication et reachat",
+        "detail": "Production a la commande sur lignes automatisees, puis reabonnement.",
+        "acteur": "operations + CRM"
+      }
+    ]
+  },
+  "schema_flow": {
+    "statut": "documente",
+    "noeuds": [
+      {
+        "id": "quiz",
+        "role_generique": "data_source",
+        "label": "Quiz en ligne (profil + objectifs)",
+        "outil_documente": "Visual Quiz Builder"
+      },
+      {
+        "id": "algo",
+        "role_generique": "modele_ia",
+        "label": "Algorithme de formulation",
+        "outil_documente": "moteur proprietaire Function of Beauty"
+      },
+      {
+        "id": "api",
+        "role_generique": "site_app",
+        "label": "API vers la fabrication"
+      },
+      {
+        "id": "usine",
+        "role_generique": "site_app",
+        "label": "Fabrication a la commande"
+      }
+    ],
+    "liens": [
+      [
+        "quiz",
+        "algo"
+      ],
+      [
+        "algo",
+        "api"
+      ],
+      [
+        "api",
+        "usine"
+      ],
+      [
+        "usine",
+        "quiz",
+        "reachat via abonnement"
+      ]
+    ]
+  },
+  "stack_technique": [
+    {
+      "nom": "Algorithme de formulation proprietaire",
+      "categorie": "outil",
+      "detail": "Moteur in-house qui convertit profil et objectifs capillaires en formule et routine sur mesure ; sa nature exacte n'est pas detaillee publiquement",
+      "url": "https://www.functionofbeauty.com"
+    },
+    {
+      "nom": "Visual Quiz Builder",
+      "categorie": "outil",
+      "detail": "Front du quiz en ligne, utilise pour la refonte qui a porte la completion a 80 pour cent",
+      "url": "https://www.visualquizbuilder.com"
+    },
+    {
+      "nom": "API de transfert vers la fabrication",
+      "categorie": "infra",
+      "detail": "API in-house qui transmet le profil quiz a l'usine pour customiser produit et flacon",
+      "url": "https://www.functionofbeauty.com"
+    },
+    {
+      "nom": "Usine de fabrication a la commande",
+      "categorie": "infra",
+      "detail": "Lignes automatisees produisant les formules personnalisees a l'unite, plus de 15 millions de formulations creees",
+      "url": "https://www.functionofbeauty.com"
+    }
+  ],
+  "replication": {
+    "statut_epistemique": "infere",
+    "prerequis_data": [
+      "quiz structure convertissant objectifs en attributs formule",
+      "referentiel d'ingredients et regles de compatibilite",
+      "connexion data entre front quiz et fabrication"
+    ],
+    "prerequis_orga": [
+      "fabrication a la commande ou faconnier flexible",
+      "R&D produit pour valider les formules",
+      "e-commerce avec abonnement"
+    ],
+    "stack_possible": [
+      "constructeur de quiz (type Visual Quiz Builder)",
+      "moteur de personnalisation / regles",
+      "chaine de production modulaire + API"
+    ],
+    "premiere_etape": "Construire le quiz et le mapping vers formule sur une categorie, puis prototyper la connexion vers une production a la commande.",
+    "playbook": [
+      {
+        "action": "Construire le quiz (profil, objectifs) et le referentiel d'ingredients avec regles de compatibilite, valides par la R&D produit.",
+        "livrable": "Quiz en ligne et mapping reponses vers attributs de formule sur une categorie"
+      },
+      {
+        "action": "Developper le moteur de formulation (regles ou scoring) et faire valider un premier jeu de formules par la R&D.",
+        "livrable": "Moteur qui sort une formule valide pour chaque combinaison de reponses"
+      },
+      {
+        "action": "Prototyper la production a la commande avec un faconnier flexible et l'API qui transmet le profil a la fabrication.",
+        "livrable": "Chaine quiz vers fabrication testee sur un lot pilote"
+      },
+      {
+        "action": "Lancer le D2C sur la categorie pilote avec abonnement, et mesurer completion du quiz, conversion et reachat.",
+        "livrable": "Offre en vente avec tableau de bord completion / conversion / reachat"
+      },
+      {
+        "action": "Optimiser le quiz (completion) et monter en cadence industrielle avant d'ouvrir d'autres categories.",
+        "livrable": "Production stabilisee et plan d'extension categorie"
+      }
+    ],
+    "equipe": "1 dev quiz / e-commerce + 1 profil data pour le moteur de formulation + R&D produit + operations fabrication"
+  },
+  "seo": {
+    "slug": "function-of-beauty-formules-ia-2015",
+    "title": "Function of Beauty : soin capillaire formule par quiz IA - 80% du business (2015)",
+    "meta_description": "Function of Beauty transforme un quiz en formule sur mesure par algorithme : le quiz porte 80% du business, plus d'un million d'engagements/an, 15M de formules.",
+    "resume_citable": "Function of Beauty formule des soins capillaires sur mesure par algorithme a partir d'un quiz qui supporte 80 pour cent de son business (plus d'un million d'engagements par an), avec plus de 15 millions de formulations creees et un chiffre d'affaires 2023 attendu de 125 a 150 millions de dollars.",
+    "faq": [
+      {
+        "q": "Quelle place le quiz occupe-t-il chez Function of Beauty ?",
+        "a": "Le quiz vers l'experience d'abonnement personnalise supporte 80 pour cent du business, soit plus d'un million d'engagements par an, avec un taux de completion de 80 pour cent apres refonte."
+      },
+      {
+        "q": "Combien de formulations Function of Beauty a-t-il creees ?",
+        "a": "Plus de 15 millions de formulations personnalisees a ce jour, avec un potentiel de milliards de combinaisons, sur des lignes de fabrication automatisees a la commande."
+      }
+    ]
+  },
+  "logo_domain": "functionofbeauty.com"
+}

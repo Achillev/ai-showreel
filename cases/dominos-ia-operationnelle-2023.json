@@ -1,0 +1,289 @@
+{
+  "id": "dominos-ia-operationnelle-2023",
+  "type_fiche": "succes",
+  "marque": "Domino's Pizza",
+  "industrie": "food_beverage",
+  "marches_deploiement": [
+    "Etats-Unis",
+    "international (plus de 90 marches)"
+  ],
+  "transposable_ue": {
+    "flag": "oui_avec_adaptations",
+    "note": "L'optimisation operationnelle (prevision de temps de commande, assistant de gestion) repose surtout sur des donnees d'exploitation, moins sensibles au RGPD que le profilage client. La brique de personnalisation de la commande reste soumise au consentement marketing en UE."
+  },
+  "metier": "operations / e-commerce / experience de commande",
+  "intervenants": [
+    {
+      "nom": "Kelly Garcia",
+      "role": "EVP, Chief Technology Officer, Domino's Pizza",
+      "source_ref": "S1"
+    }
+  ],
+  "agences": [
+    {
+      "nom": "Microsoft",
+      "role": "Partenaire technologique, fournit Azure OpenAI Service pour l'assistant genAI en magasin et la simplification de la commande",
+      "source_ref": "S1"
+    }
+  ],
+  "axes": {
+    "levier": "retention",
+    "touchpoints": [
+      "application de commande",
+      "suivi de commande",
+      "operations en magasin"
+    ],
+    "etape_parcours": "post-achat",
+    "famille": "optimisation_automatisation",
+    "pattern": "IA operationnelle de la chaine de commande : prevision de temps de preparation et assistant genAI de gestion",
+    "type_ia": [
+      "machine learning (prevision)",
+      "IA generative",
+      "grands modeles de langage"
+    ],
+    "plateforme_stack": [
+      "custom/in-house (prevision de commande)",
+      "Microsoft Azure OpenAI Service"
+    ],
+    "objectif_metrique": [
+      "precision de prevision des commandes",
+      "temps de preparation",
+      "charge des managers de magasin",
+      "fiabilite de l'experience de commande"
+    ]
+  },
+  "implementation": "hybride",
+  "stack_technique": [
+    {
+      "nom": "Azure OpenAI Service",
+      "categorie": "plateforme",
+      "detail": "Service LLM cloud sur lequel est bati l'assistant genAI de gestion magasin (stocks, commandes d'ingredients, plannings) et la simplification du parcours de commande.",
+      "url": "https://azure.microsoft.com"
+    },
+    {
+      "nom": "Microsoft",
+      "categorie": "integrateur",
+      "detail": "Partenaire technologique de l'alliance de cinq ans annoncee en octobre 2023; co-construit les pilotes genAI avec les equipes Domino's.",
+      "url": "https://www.microsoft.com"
+    },
+    {
+      "nom": "Modele de prevision de commandes (in-house)",
+      "categorie": "outil",
+      "detail": "ML proprietaire Domino's entraine sur cinq millions de commandes; precision passee de 75% a 95%, temps d'entrainement reduit de plus de 16 heures a moins d'une heure.",
+      "url": "https://www.dominos.com"
+    },
+    {
+      "nom": "Application et suivi de commande Domino's",
+      "categorie": "infra",
+      "detail": "Canal qui consomme les previsions de temps de preparation pour informer le client et caler le staffing.",
+      "url": "https://www.dominos.com"
+    }
+  ],
+  "objectif_business": "Fiabiliser la chaine qui va de la commande a la livraison : predire quand chaque commande sera prete pour mieux staffer et informer le client, et decharger les managers des taches de gestion pour qu'ils se concentrent sur le service.",
+  "points_cles": ["IA operationnelle : prevision de temps de commande et assistant genAI de gestion magasin.", "Modele de prevision in-house plus assistant sur Microsoft Azure OpenAI Service.", "Precision de prevision passee de 75% a 95%, entrainement reduit de 16 heures a moins d'une heure.", "Preuve B, statut confirme."],
+  "description": "Domino's exploite l'IA sur deux plans operationnels. Un modele de prevision, entraine sur cinq millions de commandes, estime le moment ou une commande sera prete ; il a fait passer la precision de ces previsions de 75% a 95% et reduit le temps d'entrainement du modele de plus de 16 heures a moins d'une heure. En octobre 2023, Domino's a scelle une alliance de cinq ans avec Microsoft pour batir, sur Azure OpenAI Service, un assistant genAI aidant les managers de magasin sur la gestion des stocks, les commandes d'ingredients et les plannings, et pour simplifier et personnaliser le parcours de commande. Le groupe exploite plus de 20 000 magasins dans plus de 90 marches.",
+  "resultats": [
+    {
+      "metrique": "Precision de prevision des commandes",
+      "valeur": "passee de 75% a 95%",
+      "citation_exacte": "increased accuracy for order forecasts from 75 percent to 95 percent",
+      "source_ref": "S2"
+    },
+    {
+      "metrique": "Temps d'entrainement du modele de prevision, reduit",
+      "valeur": "16h+ a moins d'1h",
+      "citation_exacte": "reduced the training time to under an hour",
+      "source_ref": "S2"
+    },
+    {
+      "metrique": "Alliance IA de 5 ans avec Microsoft, sur plus de 90 marches",
+      "valeur": "20 000+ magasins",
+      "citation_exacte": "serve millions of customers with consistent and engaging ordering experiences",
+      "source_ref": "S1"
+    }
+  ],
+  "niveau_preuve": {
+    "niveau": "B",
+    "justification": "Resultat de prevision chiffre (75% a 95%) documente par la presse technologique etablie, et alliance IA formalisee par communique officiel Domino's/Microsoft. Le volet assistant genAI etait en phase de pilote au lancement de l'alliance, d'ou une preuve de scale plus forte sur la prevision que sur l'assistant."
+  },
+  "dates": {
+    "lancement": "Modele de prevision anterieur ; alliance IA Domino's-Microsoft annoncee en octobre 2023",
+    "derniere_confirmation_activite": "Alliance de cinq ans engagee en 2023, pilotes genAI lances dans les mois suivants",
+    "verifie_le": "2026-07-11",
+    "revoir_apres": "2027-01-11"
+  },
+  "statut_vivant": {
+    "statut": "confirme",
+    "note": "L'alliance Microsoft court sur cinq ans depuis 2023 et Domino's investit de longue date dans l'IA operationnelle. L'assistant genAI en magasin etait au stade pilote au lancement ; la prevision de commande est une capacite deja deployee."
+  },
+  "sources": [
+    {
+      "ref": "S1",
+      "type": "blog_officiel",
+      "fiabilite": "T1_primaire",
+      "titre": "Domino's and Microsoft Cook Up AI-Driven Innovation Alliance for Smarter Pizza Orders and Seamless Operations",
+      "url": "https://www.prnewswire.com/news-releases/dominos-and-microsoft-cook-up-ai-driven-innovation-alliance-for-smarter-pizza-orders-and-seamless-operations-301945321.html",
+      "date_publication": "2023-10-26",
+      "consulte_le": "2026-07-11"
+    },
+    {
+      "ref": "S2",
+      "type": "presse",
+      "fiabilite": "T4_secondaire",
+      "titre": "How AI helped Domino's improve pizza delivery",
+      "url": "https://www.infoworld.com/article/2257025/how-ai-helped-domino-s-improve-pizza-delivery.html",
+      "consulte_le": "2026-07-11"
+    },
+    {
+      "ref": "S3",
+      "type": "presse",
+      "fiabilite": "T3_presse_etablie",
+      "titre": "Domino's and Microsoft to Create AI-Focused 'Innovation Lab'",
+      "url": "https://www.qsrmagazine.com/operations/fast-food/dominos-and-microsoft-to-create-ai-focused-innovation-lab/",
+      "date_publication": "2023-10-26",
+      "consulte_le": "2026-07-11"
+    }
+  ],
+  "fonctionnement_operationnel": {
+    "cadence": "Prevision en continu sur le flux de commandes ; assistant genAI sollicite au fil des taches de gestion du magasin",
+    "opere_par": "Managers de magasin pour l'exploitation, equipe technologie Domino's et Microsoft pour les modeles",
+    "signal_pilote": "Le flux de commandes historique et temps reel. Sans donnees de commande propres et a jour, la prevision de temps de preparation se degrade et le staffing decale.",
+    "etapes": [
+      {
+        "etape": "Ingestion des commandes",
+        "detail": "Les commandes en cours et l'historique alimentent le modele de prevision.",
+        "acteur": "Equipe data"
+      },
+      {
+        "etape": "Prevision du temps de preparation",
+        "detail": "Le modele estime quand chaque commande sera prete pour caler le staffing et informer le client.",
+        "acteur": "IA"
+      },
+      {
+        "etape": "Assistance a la gestion",
+        "detail": "L'assistant genAI aide le manager sur stocks, commandes d'ingredients et plannings.",
+        "acteur": "IA"
+      },
+      {
+        "etape": "Decision du manager",
+        "detail": "Le manager valide ou ajuste les recommandations d'exploitation.",
+        "acteur": "Manager de magasin"
+      }
+    ]
+  },
+  "schema_flow": {
+    "statut": "documente",
+    "noeuds": [
+      {
+        "id": "orders",
+        "role_generique": "data_source",
+        "label": "Flux de commandes (historique et temps reel)"
+      },
+      {
+        "id": "forecast",
+        "role_generique": "modele_ia",
+        "label": "Modele de prevision de temps de commande"
+      },
+      {
+        "id": "genai",
+        "role_generique": "modele_ia",
+        "label": "Assistant genAI de gestion magasin",
+        "outil_documente": "Azure OpenAI Service"
+      },
+      {
+        "id": "app",
+        "role_generique": "site_app",
+        "label": "Application et suivi de commande"
+      },
+      {
+        "id": "manager",
+        "role_generique": "humain",
+        "label": "Manager de magasin"
+      }
+    ],
+    "liens": [
+      [
+        "orders",
+        "forecast"
+      ],
+      [
+        "forecast",
+        "app",
+        "temps de commande predit"
+      ],
+      [
+        "orders",
+        "genai"
+      ],
+      [
+        "genai",
+        "manager",
+        "aide stocks, commandes, plannings"
+      ],
+      [
+        "manager",
+        "orders",
+        "exploitation, boucle de retour"
+      ]
+    ]
+  },
+  "replication": {
+    "statut_epistemique": "infere",
+    "prerequis_data": [
+      "historique de commandes volumineux et propre",
+      "flux de commandes temps reel",
+      "donnees de stock et de planning pour l'assistant de gestion"
+    ],
+    "prerequis_orga": [
+      "equipe data ou partenaire cloud",
+      "managers formes a l'assistant",
+      "integration au systeme de commande et de suivi"
+    ],
+    "stack_possible": [
+      "modele de prevision (ML)",
+      "cloud avec service LLM (Azure OpenAI, GCP, AWS)",
+      "application de commande avec suivi"
+    ],
+    "premiere_etape": "Consolider un historique de commandes exploitable et entrainer un premier modele de prevision de temps de preparation.",
+    "playbook": [
+      {
+        "action": "Consolider l'historique de commandes (volumes, horodatages, temps de preparation) et fiabiliser le flux temps reel.",
+        "livrable": "Dataset d'entrainement propre et pipeline de donnees en place"
+      },
+      {
+        "action": "Entrainer un premier modele de prevision de temps de preparation et le confronter a l'historique en backtest.",
+        "livrable": "Modele valide offline avec une precision de reference mesuree"
+      },
+      {
+        "action": "Integrer la prevision a l'application de commande et au staffing sur un lot de magasins pilotes.",
+        "livrable": "Pilote en production sur quelques magasins avec suivi de precision"
+      },
+      {
+        "action": "Generaliser la prevision au parc et suivre la precision en continu.",
+        "livrable": "Deploiement complet et tableau de bord de precision"
+      },
+      {
+        "action": "Lancer le pilote d'assistant genAI de gestion (stocks, plannings) sur le service LLM cloud retenu, aupres d'un groupe de managers.",
+        "livrable": "Assistant en pilote avec retours managers collectes"
+      }
+    ],
+    "equipe": "2-3 data scientists / ML engineers + 1 PM operations + 1 dev integration au systeme de commande; managers de magasin pour les retours pilote."
+  },
+  "seo": {
+    "slug": "dominos-ia-operationnelle-2023",
+    "title": "Domino's : IA operationnelle - prevision de commande de 75% a 95% et assistant genAI Microsoft (2023)",
+    "meta_description": "Domino's a porte la precision de prevision de ses commandes de 75% a 95% et scelle une alliance IA de cinq ans avec Microsoft (Azure OpenAI) sur 20 000+ magasins.",
+    "resume_citable": "Domino's a fait passer la precision de prevision de ses commandes de 75% a 95% grace au machine learning, et a engage une alliance IA de cinq ans avec Microsoft (Azure OpenAI) couvrant plus de 20 000 magasins dans plus de 90 marches.",
+    "faq": [
+      {
+        "q": "Quel gain l'IA a-t-elle apporte a la prevision de commande de Domino's ?",
+        "a": "La precision est passee de 75% a 95%, et le temps d'entrainement du modele de plus de 16 heures a moins d'une heure."
+      },
+      {
+        "q": "Que couvre l'alliance avec Microsoft ?",
+        "a": "Un assistant genAI sur Azure OpenAI pour aider les managers (stocks, commandes, plannings) et simplifier le parcours de commande, sur cinq ans."
+      }
+    ]
+  },
+  "logo_domain": "dominos.com"
+}

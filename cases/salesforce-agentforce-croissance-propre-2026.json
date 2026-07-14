@@ -1,0 +1,317 @@
+{
+  "id": "salesforce-agentforce-croissance-propre-2026",
+  "type_fiche": "succes",
+  "marque": "Salesforce",
+  "industrie": "tech_saas",
+  "marches_deploiement": [
+    "Etats-Unis",
+    "international (site help.salesforce.com et proprietes web Salesforce)"
+  ],
+  "transposable_ue": {
+    "flag": "oui_avec_adaptations",
+    "note": "L'agent traite des demandes d'utilisateurs authentifies et des leads inbound. En UE, base legale et information RGPD requises pour le traitement des donnees de contact et de support ; l'AI Act impose la transparence sur l'interaction avec un systeme automatise (l'utilisateur doit savoir qu'il parle a un agent). Pas de classement haut risque pour du support et de la qualification de leads."
+  },
+  "metier": "marketing / vente inbound / support client (usage interne Salesforce)",
+  "intervenants": [
+    {
+      "nom": "Marc Benioff",
+      "role": "Chair et CEO de Salesforce",
+      "source_ref": "S4"
+    },
+    {
+      "nom": "Amber Armstrong",
+      "role": "Chief Marketing Officer, Agentforce Applications, Salesforce",
+      "source_ref": "S2"
+    }
+  ],
+  "axes": {
+    "levier": "acquisition",
+    "touchpoints": [
+      "site help.salesforce.com",
+      "site web Salesforce",
+      "leads inbound",
+      "support client authentifie"
+    ],
+    "etape_parcours": "consideration",
+    "famille": "conversation",
+    "pattern": "agent genAI deploye en propre sur son funnel (qualification de leads inbound et self-service support)",
+    "type_ia": [
+      "agents LLM",
+      "generation augmentee par recuperation (RAG)",
+      "orchestration d'agents"
+    ],
+    "plateforme_stack": [
+      "custom/in-house (Agentforce sur la plateforme Salesforce)",
+      "Data Cloud"
+    ],
+    "objectif_metrique": [
+      "pipeline genere",
+      "leads qualifies",
+      "taux de resolution self-service",
+      "volume de cas traites sans humain"
+    ]
+  },
+  "implementation": "plateforme",
+  "stack_technique": [
+    {
+      "nom": "Salesforce Agentforce",
+      "categorie": "plateforme",
+      "detail": "Plateforme d'agents LLM de Salesforce, deployee en propre pour le support (help.salesforce.com) et la qualification de leads inbound.",
+      "url": "https://www.salesforce.com/agentforce/"
+    },
+    {
+      "nom": "Salesforce Data Cloud",
+      "categorie": "plateforme",
+      "detail": "Couche data qui relie l'agent a l'historique CRM du contact.",
+      "url": "https://www.salesforce.com"
+    },
+    {
+      "nom": "Moteur RAG sur knowledge base",
+      "categorie": "outil",
+      "detail": "Generation augmentee par recuperation sur la base de connaissance produit ; sans KB a jour, le taux de resolution chute.",
+      "url": "https://www.salesforce.com"
+    },
+    {
+      "nom": "CRM Salesforce",
+      "categorie": "outil",
+      "detail": "Creation d'opportunites et suivi du pipeline genere par les agents (SDR / Engagement Agent).",
+      "url": "https://www.salesforce.com"
+    }
+  ],
+  "objectif_business": "Faire tourner sa propre croissance avec son propre produit. Salesforce utilise Agentforce sur ses proprietes web pour qualifier les leads inbound et generer du pipeline, et sur help.salesforce.com pour resoudre les demandes de support sans mobiliser un humain, en dogfooding public de la techno qu'il vend.",
+  "points_cles": ["Agent genAI Agentforce deploye en propre sur le support (help.salesforce.com) et la qualification de leads inbound.", "Stack Agentforce plus Data Cloud et RAG sur la knowledge base, avec humain dans la boucle.", "4,3 millions de demandes traitees sur le portail (70% resolues), 130 M$ de pipeline identifie en autonomie.", "Preuve A, statut confirme."],
+  "description": "Salesforce a mis Agentforce en production sur ses propres canaux. Sur help.salesforce.com, l'agent traite les demandes d'aide et resout une large part des cas de bout en bout, sur un portail qui voit environ 60 millions de sessions et plus de 2 millions de cas de support par an. En parallele, un agent de qualification (SDR / Engagement Agent) travaille les leads inbound : il engage les contacts, cree des opportunites et alimente le pipeline commercial, d'abord sous supervision humaine puis en autonomie avec un humain dans la boucle. Salesforce communique ces chiffres comme preuve d'usage reel de son propre produit.",
+  "resultats": [
+    {
+      "metrique": "Demandes traitees sur help.salesforce.com, 70% resolues",
+      "valeur": "4,3M de demandes",
+      "citation_exacte": "handled 4.3 million inquiries and resolved 70 percent of them",
+      "source_ref": "S1"
+    },
+    {
+      "metrique": "Pipeline identifie de facon autonome par les agents Agentforce en interne",
+      "valeur": "130 M$",
+      "citation_exacte": "$130 million in pipeline that's been identified autonomously through the agents",
+      "source_ref": "S2"
+    },
+    {
+      "metrique": "Engagement Agent interne : 100 000 leads, 1 500 opportunites",
+      "valeur": "60 M$ de pipeline",
+      "citation_exacte": "100,000 leads, created 1,500 opportunities",
+      "source_ref": "S2"
+    },
+    {
+      "metrique": "Environ 4M sur 15 mois, le double du volume humain de support",
+      "valeur": "4M de demandes",
+      "citation_exacte": "now double the volume handled by human agents",
+      "source_ref": "S3"
+    }
+  ],
+  "niveau_preuve": {
+    "niveau": "A",
+    "justification": "Les chiffres du portail (4,3 millions de demandes, 70% resolues) figurent dans un communique officiel de Salesforce, et les chiffres de pipeline interne sont attribues nommement a la CMO Agentforce Applications. Sources concordantes communique officiel plus presse specialisee, avec confirmation exec en earnings."
+  },
+  "dates": {
+    "lancement": "Agentforce lance fin 2024 ; deploiement sur help.salesforce.com annonce decembre 2024 ; usage interne SDR/Engagement Agent industrialise en 2025",
+    "derniere_confirmation_activite": "juin 2026 (communique Agentforce Help Agent citant 4,3 millions de demandes sur le portail Salesforce)",
+    "verifie_le": "2026-07-11",
+    "revoir_apres": "2027-01-11"
+  },
+  "statut_vivant": {
+    "statut": "confirme",
+    "note": "Agentforce est un pilier commercial et communicationnel de Salesforce (plus d'un milliard de dollars d'ARR Agentforce annonce). Le dogfooding sur help.salesforce.com et sur le funnel inbound est mis en avant a repetition dans les communications 2025-2026."
+  },
+  "sources": [
+    {
+      "ref": "S1",
+      "type": "blog_officiel",
+      "fiabilite": "T1_primaire",
+      "titre": "Salesforce Launches Agentforce Help Agent That Deploys in Minutes and Only Charges for Resolutions",
+      "url": "https://www.salesforce.com/news/stories/agentforce-help-agent-announcement/",
+      "date_publication": "2026-06-25",
+      "consulte_le": "2026-07-11"
+    },
+    {
+      "ref": "S2",
+      "type": "presse",
+      "fiabilite": "T4_secondaire",
+      "titre": "Salesforce Agentforce applications transform marketing workflows",
+      "url": "https://www.techzine.eu/blogs/applications/142433/salesforce-agentforce-applications-transform-marketing-workflows/",
+      "consulte_le": "2026-07-11"
+    },
+    {
+      "ref": "S3",
+      "type": "presse",
+      "fiabilite": "T4_secondaire",
+      "titre": "Salesforce's AI Agents Are Now Outworking Its Human Support Teams",
+      "url": "https://www.cxtoday.com/contact-center/agentforce-hits-1-billion-arr-ai-agents-customer-service/",
+      "consulte_le": "2026-07-11"
+    },
+    {
+      "ref": "S4",
+      "type": "presse",
+      "fiabilite": "T4_secondaire",
+      "titre": "Agentforce Now Live on Salesforce Help Portal, Marc Benioff Reveals",
+      "url": "https://www.salesforceben.com/agentforce-now-live-on-salesforce-help-portal-marc-benioff-reveals/",
+      "date_publication": "2024-12-04",
+      "consulte_le": "2026-07-11"
+    }
+  ],
+  "fonctionnement_operationnel": {
+    "cadence": "Temps reel a chaque interaction (chat de support, visiteur inbound), avec supervision humaine sur les leads a fort enjeu",
+    "opere_par": "Equipes support et revenue operations de Salesforce, sur la plateforme Agentforce reliee a Data Cloud",
+    "signal_pilote": "La base de connaissance produit et l'historique CRM du contact. Sans knowledge base a jour et sans donnees CRM propres, l'agent hallucine ou requalifie mal, et le taux de resolution chute.",
+    "etapes": [
+      {
+        "etape": "Detection de l'intention",
+        "detail": "L'agent identifie si le visiteur cherche du support, une information produit ou est un lead a qualifier.",
+        "acteur": "IA"
+      },
+      {
+        "etape": "Reponse ancree sur la connaissance",
+        "detail": "Il repond en s'appuyant sur la knowledge base et les donnees CRM via RAG, sur help.salesforce.com ou sur le site.",
+        "acteur": "IA"
+      },
+      {
+        "etape": "Qualification et creation d'opportunite",
+        "detail": "Pour un lead, l'agent engage, qualifie et cree l'opportunite dans le CRM.",
+        "acteur": "IA"
+      },
+      {
+        "etape": "Passage a l'humain",
+        "detail": "Les cas complexes ou a fort enjeu sont routes vers un SDR ou un agent support humain.",
+        "acteur": "Equipe vente / support"
+      },
+      {
+        "etape": "Mesure et ajustement",
+        "detail": "Taux de resolution, pipeline genere et conversion sont suivis pour ajuster prompts et perimetre de l'agent.",
+        "acteur": "Revenue operations"
+      }
+    ]
+  },
+  "schema_flow": {
+    "statut": "documente",
+    "noeuds": [
+      {
+        "id": "visiteur",
+        "role_generique": "humain",
+        "label": "Visiteur inbound ou client cherchant du support"
+      },
+      {
+        "id": "web",
+        "role_generique": "site_app",
+        "label": "Site Salesforce et help.salesforce.com"
+      },
+      {
+        "id": "agent",
+        "role_generique": "modele_ia",
+        "label": "Agent conversationnel Agentforce",
+        "outil_documente": "Agentforce"
+      },
+      {
+        "id": "kb",
+        "role_generique": "data_source",
+        "label": "Knowledge base produit"
+      },
+      {
+        "id": "crm",
+        "role_generique": "crm",
+        "label": "CRM et Data Cloud Salesforce"
+      },
+      {
+        "id": "humain",
+        "role_generique": "humain",
+        "label": "SDR ou agent support humain"
+      }
+    ],
+    "liens": [
+      [
+        "visiteur",
+        "web"
+      ],
+      [
+        "web",
+        "agent"
+      ],
+      [
+        "kb",
+        "agent"
+      ],
+      [
+        "crm",
+        "agent"
+      ],
+      [
+        "agent",
+        "web",
+        "reponse ou qualification"
+      ],
+      [
+        "agent",
+        "humain",
+        "escalade des cas a fort enjeu"
+      ],
+      [
+        "agent",
+        "crm",
+        "creation d'opportunite, boucle de mesure"
+      ]
+    ]
+  },
+  "replication": {
+    "statut_epistemique": "infere",
+    "prerequis_data": [
+      "knowledge base produit structuree",
+      "donnees CRM first-party propres",
+      "historique de support et de leads"
+    ],
+    "prerequis_orga": [
+      "equipe revenue operations",
+      "processus d'escalade vers humains",
+      "gouvernance des prompts et du perimetre agent"
+    ],
+    "stack_possible": [
+      "plateforme d'agents (Agentforce, Copilot Studio, agent maison)",
+      "CRM",
+      "CDP",
+      "moteur RAG sur la knowledge base"
+    ],
+    "premiere_etape": "Brancher un agent sur une knowledge base a jour et un perimetre de demandes restreint, avec humain dans la boucle.",
+    "playbook": [
+      {
+        "action": "Assainir la knowledge base produit et definir le perimetre de demandes couvertes et exclues par l'agent.",
+        "livrable": "KB a jour et liste de cas couverts validee."
+      },
+      {
+        "action": "Configurer l'agent (support ou qualification de leads) avec humain dans la boucle et regles d'escalade vers SDR / support.",
+        "livrable": "Agent en pre-production sur un canal unique."
+      },
+      {
+        "action": "Lancer un pilote sur trafic reel restreint et mesurer taux de resolution, leads qualifies et pipeline cree.",
+        "livrable": "Tableau de bord resolution / pipeline sur donnees reelles."
+      },
+      {
+        "action": "Elargir le perimetre et le degre d'autonomie selon la qualite observee, en gardant la supervision sur les cas a fort enjeu.",
+        "livrable": "Agent en production avec regles de supervision documentees."
+      }
+    ],
+    "equipe": "1 admin / dev Salesforce + 1 responsable revenue operations ou support + 1 referent contenu pour la knowledge base."
+  },
+  "seo": {
+    "slug": "salesforce-agentforce-croissance-propre-2026",
+    "title": "Salesforce : Agentforce sur son propre funnel - 4,3 millions de demandes resolues et 130 M$ de pipeline (2026)",
+    "meta_description": "Salesforce fait tourner Agentforce sur ses propres canaux : 4,3 millions de demandes traitees sur help.salesforce.com (70% resolues) et 130 M$ de pipeline identifie en autonomie.",
+    "resume_citable": "Salesforce utilise son propre agent Agentforce sur help.salesforce.com (4,3 millions de demandes, 70% resolues) et sur son funnel inbound, ou il a identifie 130 millions de dollars de pipeline en autonomie.",
+    "faq": [
+      {
+        "q": "Comment Salesforce utilise-t-il Agentforce pour sa propre croissance ?",
+        "a": "Sur help.salesforce.com pour resoudre les demandes de support sans humain, et sur son site pour qualifier les leads inbound et generer du pipeline commercial."
+      },
+      {
+        "q": "Quels resultats chiffres Salesforce revendique-t-il ?",
+        "a": "4,3 millions de demandes traitees sur son portail d'aide avec 70% de resolution, et 130 millions de dollars de pipeline identifie de facon autonome par ses agents internes."
+      }
+    ]
+  },
+  "logo_domain": "salesforce.com"
+}

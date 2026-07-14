@@ -1,0 +1,288 @@
+{
+  "id": "ocado-osp-forecasting-2025",
+  "type_fiche": "succes",
+  "marque": "Ocado",
+  "groupe": "Ocado Group",
+  "industrie": "retail_ecom",
+  "marches_deploiement": [
+    "Royaume-Uni",
+    "international (partenaires OSP: Kroger, Casino, Aeon, Sobeys, Coles)"
+  ],
+  "transposable_ue": {
+    "flag": "oui",
+    "note": "Ocado Group est britannique et opere deja OSP pour des enseignes europeennes (Groupe Casino en France, Bon Preu en Espagne). La forecasting porte sur des donnees de stock et de vente, pas de donnees personnelles sensibles, donc peu de friction RGPD."
+  },
+  "metier": "supply chain / operations e-commerce",
+  "marque_linkedin": "https://www.linkedin.com/company/ocado-group/",
+  "axes": {
+    "levier": "retention",
+    "touchpoints": [
+      "site e-commerce grocery",
+      "entrepot automatise (CFC)",
+      "reapprovisionnement fournisseurs"
+    ],
+    "etape_parcours": "achat",
+    "famille": "prediction",
+    "pattern": "demand forecasting deep learning pour disponibilite et reduction du gaspillage",
+    "type_ia": [
+      "deep learning",
+      "reseaux encoder-decoder",
+      "prevision de demande probabiliste"
+    ],
+    "plateforme_stack": [
+      "Ocado Smart Platform (OSP)",
+      "custom/in-house"
+    ],
+    "objectif_metrique": [
+      "taux de disponibilite produit",
+      "part de gaspillage alimentaire",
+      "taux d'acceptation des commandes recommandees"
+    ]
+  },
+  "implementation": "custom",
+  "stack_technique": [
+    {
+      "nom": "OSP Supply Chain (Ocado Smart Platform)",
+      "categorie": "plateforme",
+      "detail": "Module supply chain de la plateforme commerciale d'Ocado Group : previsions, generation des commandes fournisseurs, gestion du stock et de la casse. Vendu aux enseignes partenaires.",
+      "url": "https://www.ocadogroup.com"
+    },
+    {
+      "nom": "Reseaux encoder-decoder (deep learning maison)",
+      "categorie": "llm",
+      "detail": "Modeles de prevision de demande probabiliste developpes en interne, entraines sur des annees de donnees de vente, produit par produit et jour par jour.",
+      "url": "https://www.ocadogroup.com"
+    },
+    {
+      "nom": "Entrepots automatises CFC",
+      "categorie": "infra",
+      "detail": "Customer Fulfilment Centres d'Ocado, dont les niveaux de stock sont cales par les previsions du moteur.",
+      "url": "https://www.ocadogroup.com"
+    }
+  ],
+  "objectif_business": "Commander la bonne quantite de chaque produit frais pour tenir une disponibilite haute sans surstock, en pilotant le reapprovisionnement par la demande predite plutot que par des regles fixes de planificateur.",
+  "points_cles": ["Prevision de demande deep learning pour le reapprovisionnement et la reduction du gaspillage.", "Reseaux encoder-decoder maison sur Ocado Smart Platform, plus de 70 millions de calculs par jour.", "Jusqu'a 98% du stock commande automatiquement, gaspillage a 0,49%, 94,5% des commandes acceptees.", "Preuve B, statut confirme."],
+  "description": "Ocado vend l'epicerie en ligne au Royaume-Uni via Ocado.com et loue sa technologie (Ocado Smart Platform) a des enseignes dans le monde. Le moteur de prevision entraine des modeles de deep learning sur des annees de donnees de vente pour predire, produit par produit et jour par jour, ce que les clients vont acheter. Ces previsions declenchent des commandes fournisseurs automatiques et calent les niveaux de stock dans les entrepots automatises. Pour les produits perissables comme les bananes, le systeme croise stock, duree de vie restante et demande anticipee pour eviter la casse, et lance des ventes flash quand un lot approche de sa date. Un planificateur peut surcharger une prevision, avec visibilite sur l'historique de precision.",
+  "resultats": [
+    {
+      "metrique": "Calculs supply chain executes chaque jour",
+      "valeur": "plus de 70 millions",
+      "citation_exacte": "OSP performs over 70 million supply chain calculations every day",
+      "source_ref": "S2"
+    },
+    {
+      "metrique": "Precision des modeles vs systemes traditionnels",
+      "valeur": "jusqu'a +40%",
+      "citation_exacte": "Upto 40% more accurate than traditional retailer systems",
+      "source_ref": "S1"
+    },
+    {
+      "metrique": "Part du stock commande automatiquement",
+      "valeur": "jusqu'a 98%",
+      "citation_exacte": "Upto 98% of stock ordered automatically with minimal manual intervention",
+      "source_ref": "S1"
+    },
+    {
+      "metrique": "Commandes recommandees (RPO) acceptees sans intervention",
+      "valeur": "plus de 94,5%",
+      "citation_exacte": "Over 94.5% of OSP Supply Chain recommended purchase orders (RPOs) are accepted",
+      "source_ref": "S2"
+    },
+    {
+      "metrique": "Gaspillage alimentaire sur le stock manipule",
+      "valeur": "0,49%",
+      "citation_exacte": "reducing food waste to just 0.49% of all stock handled",
+      "source_ref": "S2"
+    }
+  ],
+  "niveau_preuve": {
+    "niveau": "B",
+    "justification": "Chiffres publies par Ocado Group sur ses propres pages produit et editoriales, concordants entre plusieurs pages officielles. Ocado vend OSP a des tiers, ces resultats fonctionnent comme une etude de cas plateforme chiffree. Pas de presse independante reprenant ces chiffres precis, d'ou B et non C."
+  },
+  "dates": {
+    "lancement": "modeles de deep learning en production sur OSP depuis le milieu des annees 2010, itere depuis",
+    "derniere_confirmation_activite": "octobre 2025 (story newsroom Ocado Group publiee le 8 octobre 2025)",
+    "verifie_le": "2026-07-11",
+    "revoir_apres": "2027-01-11"
+  },
+  "statut_vivant": {
+    "statut": "confirme",
+    "note": "OSP Supply Chain est un produit commercial actif d'Ocado Group, decrit avec ces chiffres sur le site courant et une story datee d'octobre 2025."
+  },
+  "sources": [
+    {
+      "ref": "S1",
+      "type": "blog_officiel",
+      "fiabilite": "T1_primaire",
+      "titre": "Forecasting the future: using deep learning to optimise online grocery supply chains",
+      "url": "https://www.ocadogroup.com/newsroom/stories/forecasting-the-future",
+      "date_publication": "2025-10-08",
+      "consulte_le": "2026-07-11"
+    },
+    {
+      "ref": "S2",
+      "type": "blog_officiel",
+      "fiabilite": "T1_primaire",
+      "titre": "OSP Supply Chain | Ocado Group",
+      "url": "https://www.ocadogroup.com/our-solutions/online-grocery/supply-chain",
+      "date_publication": "2025",
+      "consulte_le": "2026-07-11"
+    },
+    {
+      "ref": "S3",
+      "type": "blog_officiel",
+      "fiabilite": "T1_primaire",
+      "titre": "Ocado's AI: Reducing food waste across grocery supply chains",
+      "url": "https://www.ocadogroup.com/newsroom/stories/ai-keeping-food-waste-low",
+      "date_publication": "2024",
+      "consulte_le": "2026-07-11"
+    }
+  ],
+  "fonctionnement_operationnel": {
+    "cadence": "Batch quotidien a grande echelle: plus de 70 millions de calculs supply chain par jour, previsions rafraichies au fil des mouvements de stock reels.",
+    "opere_par": "Equipe data science et planification supply chain d'Ocado (et, cote client OSP, les planificateurs de l'enseigne partenaire).",
+    "signal_pilote": "La demande predite par produit, croisee avec la duree de vie restante du stock. Si l'historique de vente ou la donnee de peremption manque, la prevision se degrade et le systeme bascule vers des regles plus prudentes, au prix de surstock ou de ruptures.",
+    "etapes": [
+      {
+        "etape": "Ingestion des donnees",
+        "detail": "Ventes historiques, ruptures passees, promotions, jours feries, creneaux de livraison et attributs produit alimentent le centre de controle deep learning.",
+        "acteur": "plateforme OSP / equipe data"
+      },
+      {
+        "etape": "Prevision de demande",
+        "detail": "Les reseaux encoder-decoder predisent la demande par produit et par jour, avec une precision jusqu'a 40% superieure aux systemes classiques.",
+        "acteur": "modele IA"
+      },
+      {
+        "etape": "Generation des commandes",
+        "detail": "Le systeme calcule la quantite optimale a commander et emet des commandes fournisseurs automatiques; jusqu'a 98% du stock est commande sans main humaine.",
+        "acteur": "modele IA / OSP"
+      },
+      {
+        "etape": "Controle par le planificateur",
+        "detail": "Un planificateur peut surcharger une prevision, avec visibilite sur la precision historique; plus de 94,5% des recommandations passent telles quelles.",
+        "acteur": "planificateur supply chain"
+      },
+      {
+        "etape": "Gestion de la casse",
+        "detail": "Pour le perissable, le systeme detecte le risque de purge et declenche des ventes flash pour ecouler avant peremption, maintenant le gaspillage a 0,49%.",
+        "acteur": "OSP"
+      }
+    ]
+  },
+  "schema_flow": {
+    "statut": "documente",
+    "noeuds": [
+      {
+        "id": "n1",
+        "role_generique": "data_source",
+        "label": "Ventes, stock, duree de vie, promotions, creneaux"
+      },
+      {
+        "id": "n2",
+        "role_generique": "modele_ia",
+        "label": "Centre de controle deep learning (encoder-decoder)",
+        "outil_documente": "Ocado Smart Platform"
+      },
+      {
+        "id": "n3",
+        "role_generique": "site_app",
+        "label": "OSP Supply Chain (commandes et stock)",
+        "outil_documente": "OSP"
+      },
+      {
+        "id": "n4",
+        "role_generique": "humain",
+        "label": "Planificateur supply chain"
+      },
+      {
+        "id": "n5",
+        "role_generique": "data_source",
+        "label": "Commandes fournisseurs / entrepot automatise (CFC)"
+      }
+    ],
+    "liens": [
+      [
+        "n1",
+        "n2"
+      ],
+      [
+        "n2",
+        "n3"
+      ],
+      [
+        "n3",
+        "n5"
+      ],
+      [
+        "n4",
+        "n3",
+        "surcharge de prevision"
+      ],
+      [
+        "n5",
+        "n1",
+        "stock reel reinjecte"
+      ]
+    ]
+  },
+  "replication": {
+    "statut_epistemique": "infere",
+    "playbook": [
+      {
+        "action": "Consolider un historique de vente propre par SKU et par jour, avec ruptures passees, promotions, calendrier et dates de peremption pour le frais.",
+        "livrable": "Dataset de vente et d'attributs produit exploitable"
+      },
+      {
+        "action": "Entrainer ou parametrer un modele de prevision sur une categorie perissable ou la casse est visible, et le backtester contre la methode actuelle.",
+        "livrable": "Rapport de precision comparee vs regles existantes"
+      },
+      {
+        "action": "Brancher les previsions sur le reapprovisionnement en mode recommandation : le planificateur valide chaque commande proposee.",
+        "livrable": "Commandes recommandees dans l'outil des planificateurs, taux d'acceptation suivi"
+      },
+      {
+        "action": "Automatiser les commandes au-dessus d'un seuil de confiance, en gardant la surcharge planificateur avec visibilite sur la precision historique.",
+        "livrable": "Part du stock commandee automatiquement, mesuree par categorie"
+      },
+      {
+        "action": "Etendre a l'ensemble des categories et ajouter la gestion de la casse (ventes flash sur les lots proches de la date).",
+        "livrable": "Bilan disponibilite et gaspillage vs baseline avant projet"
+      }
+    ],
+    "equipe": "2-4 data scientists + 1 data engineer + 1 PM supply chain, plus les planificateurs formes au controle et a la surcharge des previsions",
+    "prerequis_data": [
+      "historique de vente granulaire par produit et par jour",
+      "donnee de stock temps reel",
+      "attributs produit et dates de peremption pour le frais",
+      "calendrier promotions et jours feries"
+    ],
+    "prerequis_orga": [
+      "equipe data science interne ou plateforme de forecasting",
+      "processus de reapprovisionnement capable d'accepter des commandes automatiques"
+    ],
+    "stack_possible": [
+      "Ocado Smart Platform (pour un retailer partenaire)",
+      "forecasting maison sur cloud (SageMaker, Vertex AI)",
+      "plateformes de demand planning (Blue Yonder, RELEX, o9)"
+    ],
+    "premiere_etape": "Consolider un historique de vente propre par SKU et par magasin, puis tester un modele de prevision sur une categorie perissable ou la casse est visible."
+  },
+  "seo": {
+    "slug": "ocado-osp-forecasting-2025",
+    "title": "Ocado : forecasting deep learning OSP - 0,49% de gaspillage et 98% de commandes auto (2025)",
+    "meta_description": "Ocado pilote son reapprovisionnement avec des modeles deep learning: jusqu'a 98% du stock commande automatiquement, 0,49% de gaspillage, previsions jusqu'a 40% plus precises.",
+    "resume_citable": "Ocado execute plus de 70 millions de calculs supply chain par jour avec des modeles deep learning, commande automatiquement jusqu'a 98% de son stock, fait accepter 94,5% des commandes recommandees sans intervention et maintient le gaspillage alimentaire a 0,49% du stock manipule.",
+    "faq": [
+      {
+        "q": "Quelle IA Ocado utilise-t-il pour son reapprovisionnement ?",
+        "a": "Un centre de controle de deep learning (reseaux encoder-decoder) entraine sur des annees de donnees de vente, integre a Ocado Smart Platform, qui predit la demande par produit et par jour et emet des commandes fournisseurs automatiques."
+      },
+      {
+        "q": "Quels resultats chiffres ?",
+        "a": "Jusqu'a 40% de precision en plus que les systemes traditionnels, jusqu'a 98% du stock commande automatiquement, plus de 94,5% des commandes recommandees acceptees et un gaspillage alimentaire limite a 0,49% du stock manipule."
+      }
+    ]
+  },
+  "logo_domain": "ocado.com"
+}

@@ -1,0 +1,281 @@
+{
+  "id": "wiley-salesforce-agentforce-self-service-2024",
+  "type_fiche": "succes",
+  "marque": "Wiley",
+  "groupe": "John Wiley & Sons",
+  "industrie": "media_entertainment",
+  "marches_deploiement": [
+    "Etats-Unis",
+    "International"
+  ],
+  "transposable_ue": {
+    "flag": "oui_avec_adaptations",
+    "note": "Agent genAI de service client grounde sur la base de connaissance et le CRM. En UE, transparence sur l'agent IA (AI Act), traitement des donnees clients et supervision humaine des cas complexes a cadrer."
+  },
+  "metier": "service client",
+  "marque_linkedin": "https://www.linkedin.com/company/wiley/",
+  "axes": {
+    "levier": "retention",
+    "touchpoints": [
+      "self-service web",
+      "chat",
+      "service client"
+    ],
+    "etape_parcours": "post-achat",
+    "famille": "conversation",
+    "pattern": "agent genAI de service client autonome (self-service conversationnel)",
+    "type_ia": [
+      "agent conversationnel genAI",
+      "LLM grounde sur base de connaissance et CRM",
+      "Einstein pour la generation de reponses"
+    ],
+    "plateforme_stack": [
+      "Salesforce Agentforce",
+      "Salesforce Service Cloud",
+      "Einstein"
+    ],
+    "objectif_metrique": [
+      "taux de resolution de cas",
+      "vitesse d'onboarding des agents",
+      "ROI"
+    ]
+  },
+  "implementation": "plateforme",
+  "objectif_business": "Absorber les demandes de service courantes (acces au compte, reinitialisation de mot de passe) pendant les pics, pour liberer les agents humains sur les cas complexes.",
+  "description": "Wiley, editeur academique et de formation, deploie Agentforce pour un self-service conversationnel. L'agent repond en s'appuyant sur la base de connaissance de Wiley et resout automatiquement des cas d'acces au compte et de reinitialisation de mot de passe. Quand un cas se termine, Agentforce en resume la conversation pour la personne ou le superviseur suivant, et Wiley exploite ces resumes pour reperer des tendances. Einstein aide par ailleurs les agents a rediger leurs reponses a partir du CRM et de la base de connaissance.",
+  "resultats": [
+    {
+      "metrique": "Resolution de cas (vs ancien chatbot, premieres semaines)",
+      "valeur": "+40%",
+      "citation_exacte": "over 40% case resolution in the first few weeks of use",
+      "source_ref": "S1"
+    },
+    {
+      "metrique": "Onboarding des agents saisonniers",
+      "valeur": "50% plus rapide",
+      "citation_exacte": "onboarded seasonal agents 50% faster",
+      "source_ref": "S1"
+    },
+    {
+      "metrique": "Retour sur investissement Salesforce",
+      "valeur": "213%",
+      "citation_exacte": "213% return on investment with Salesforce",
+      "source_ref": "S2"
+    }
+  ],
+  "niveau_preuve": {
+    "niveau": "C",
+    "justification": "Customer story Salesforce chiffree (T2) corroboree par la presse tech etablie diginomica (T3) couvrant l'annonce a Dreamforce 24. Multi-sources concordantes avec presse independante, d'ou C."
+  },
+  "dates": {
+    "lancement": "2024-09 (Dreamforce, pilote Agentforce)",
+    "derniere_confirmation_activite": "2025 (Agentforce en deploiement large, Wiley cite dans les references Salesforce)",
+    "verifie_le": "2026-07-11",
+    "revoir_apres": "2027-01-11"
+  },
+  "statut_vivant": {
+    "statut": "confirme",
+    "note": "Wiley est une reference recurrente d'Agentforce depuis 2024. Agentforce est en deploiement commercial large chez Salesforce en 2025."
+  },
+  "sources": [
+    {
+      "ref": "S1",
+      "type": "customer_story_plateforme",
+      "fiabilite": "T2_officiel_interesse",
+      "titre": "Agentforce in Action: Customer Success Stories (Salesforce)",
+      "url": "https://www.salesforce.com/news/stories/agentforce-customer-success-stories/",
+      "date_publication": "2024",
+      "consulte_le": "2026-07-11"
+    },
+    {
+      "ref": "S2",
+      "type": "customer_story_plateforme",
+      "fiabilite": "T2_officiel_interesse",
+      "titre": "Wiley sees 213% return on investment with Salesforce",
+      "url": "https://www.salesforce.com/customer-stories/wiley/",
+      "date_publication": "2024",
+      "consulte_le": "2026-07-11"
+    },
+    {
+      "ref": "S3",
+      "type": "presse",
+      "fiabilite": "T3_presse_etablie",
+      "titre": "Dreamforce 24 - Wiley turns the page on productivity gains with Agentforce (diginomica)",
+      "url": "https://diginomica.com/dreamforce-24-wiley-turns-page-productivity-gains-agentforce",
+      "date_publication": "2024-09",
+      "consulte_le": "2026-07-11"
+    }
+  ],
+  "fonctionnement_operationnel": {
+    "cadence": "Temps reel : l'agent traite les demandes entrantes en continu, avec des pics saisonniers (rentrees, examens).",
+    "opere_par": "Equipe service client de Wiley, avec les superviseurs qui exploitent les resumes de cas et gerent les escalades.",
+    "signal_pilote": "La base de connaissance de Wiley, qui grounde les reponses de l'agent. Si elle est incomplete ou obsolete, l'agent resout moins de cas et doit escalader davantage vers l'humain.",
+    "etapes": [
+      {
+        "etape": "Grounding de l'agent",
+        "detail": "Agentforce est configure pour repondre a partir de la base de connaissance et des donnees CRM de Wiley.",
+        "acteur": "Equipe service client / IA"
+      },
+      {
+        "etape": "Resolution en self-service",
+        "detail": "L'agent traite les demandes courantes (acces compte, reset mot de passe) de facon conversationnelle et autonome.",
+        "acteur": "IA (Agentforce)"
+      },
+      {
+        "etape": "Resume et passage de relais",
+        "detail": "En fin de cas, l'agent resume la conversation pour la personne ou le superviseur suivant.",
+        "acteur": "IA (Agentforce)"
+      },
+      {
+        "etape": "Escalade et analyse",
+        "detail": "Les cas complexes vont a un agent humain ; les resumes servent a reperer des tendances et remonter du feedback produit.",
+        "acteur": "Agents humains / superviseurs"
+      }
+    ]
+  },
+  "schema_flow": {
+    "statut": "documente",
+    "noeuds": [
+      {
+        "id": "n1",
+        "role_generique": "data_source",
+        "label": "Base de connaissance Wiley + donnees CRM"
+      },
+      {
+        "id": "n2",
+        "role_generique": "modele_ia",
+        "label": "Agent genAI + Einstein",
+        "outil_documente": "Salesforce Agentforce"
+      },
+      {
+        "id": "n3",
+        "role_generique": "canal_conversationnel",
+        "label": "Self-service conversationnel (chat)"
+      },
+      {
+        "id": "n4",
+        "role_generique": "crm",
+        "label": "Salesforce Service Cloud",
+        "outil_documente": "Salesforce Service Cloud"
+      },
+      {
+        "id": "n5",
+        "role_generique": "humain",
+        "label": "Agents (cas complexes) et superviseurs"
+      }
+    ],
+    "liens": [
+      [
+        "n1",
+        "n2"
+      ],
+      [
+        "n2",
+        "n3"
+      ],
+      [
+        "n3",
+        "n4"
+      ],
+      [
+        "n2",
+        "n4",
+        "resume de conversation"
+      ],
+      [
+        "n4",
+        "n5",
+        "escalade des cas complexes"
+      ],
+      [
+        "n5",
+        "n1",
+        "feedback produit et tendances"
+      ]
+    ]
+  },
+  "replication": {
+    "statut_epistemique": "infere",
+    "prerequis_data": [
+      "base de connaissance structuree et a jour",
+      "donnees CRM clients accessibles a l'agent",
+      "historique de cas pour cadrer les intentions"
+    ],
+    "prerequis_orga": [
+      "service client sur Salesforce Service Cloud",
+      "processus d'escalade humaine pour les cas complexes",
+      "gouvernance sur les reponses de l'agent"
+    ],
+    "stack_possible": [
+      "Salesforce Agentforce + Service Cloud",
+      "toute plateforme d'agent genAI de service grounde sur base de connaissance et CRM"
+    ],
+    "premiere_etape": "Mettre a jour et structurer la base de connaissance sur les demandes les plus frequentes (acces compte, mot de passe), puis y grounder l'agent avant d'elargir le perimetre.",
+    "playbook": [
+      {
+        "action": "Mettre a jour et structurer la base de connaissance sur les demandes a plus fort volume (acces compte, mot de passe).",
+        "livrable": "Articles a jour couvrant les intentions cibles."
+      },
+      {
+        "action": "Configurer l'agent : grounding sur la base et le CRM, garde-fous, regles d'escalade.",
+        "livrable": "Agent en sandbox valide sur des scenarios de test."
+      },
+      {
+        "action": "Lancer le pilote sur une part du trafic chat.",
+        "livrable": "Taux de resolution compare a l'ancien chatbot."
+      },
+      {
+        "action": "Activer les resumes de cas et la boucle superviseurs (tendances, feedback produit).",
+        "livrable": "Passations documentees + tendances remontees chaque semaine."
+      },
+      {
+        "action": "Elargir le perimetre d'intentions selon les taux de resolution observes.",
+        "livrable": "Plan d'extension priorise par volume et taux de succes."
+      }
+    ],
+    "equipe": "1 admin Salesforce + 1 responsable base de connaissance + superviseurs service client pour l'escalade et la boucle qualite"
+  },
+  "seo": {
+    "slug": "wiley-salesforce-agentforce-self-service-2024",
+    "title": "Wiley : agent genAI Agentforce - +40% de resolution de cas (2024)",
+    "meta_description": "Wiley deploie Salesforce Agentforce pour le self-service conversationnel et resout plus de 40% de cas supplementaires vs son ancien chatbot des les premieres semaines.",
+    "resume_citable": "Wiley a augmente de plus de 40% sa resolution de cas des les premieres semaines avec l'agent genAI Salesforce Agentforce, tout en onboardant ses agents saisonniers 50% plus vite, pour un ROI Salesforce de 213%.",
+    "faq": [
+      {
+        "q": "Que fait l'agent Agentforce chez Wiley ?",
+        "a": "Il repond en self-service conversationnel a partir de la base de connaissance de Wiley et resout automatiquement des cas d'acces au compte et de reinitialisation de mot de passe."
+      },
+      {
+        "q": "Quels resultats chiffres ?",
+        "a": "Plus de 40% de resolution de cas en plus vs l'ancien chatbot des les premieres semaines, des agents saisonniers onboardes 50% plus vite, et un ROI Salesforce de 213%."
+      }
+    ]
+  },
+  "logo_domain": "wiley.com",
+  "stack_technique": [
+    {
+      "nom": "Salesforce Agentforce",
+      "categorie": "plateforme",
+      "detail": "Agent genAI autonome qui resout les demandes courantes (acces compte, mot de passe) et resume chaque cas pour le relais humain.",
+      "url": "https://www.salesforce.com/agentforce/"
+    },
+    {
+      "nom": "Salesforce Service Cloud",
+      "categorie": "plateforme",
+      "detail": "Socle du service client Wiley : cas, routage et escalade vers les agents humains.",
+      "url": "https://www.salesforce.com/service/"
+    },
+    {
+      "nom": "Salesforce Einstein",
+      "categorie": "outil",
+      "detail": "Aide les agents humains a rediger leurs reponses a partir du CRM et de la base de connaissance.",
+      "url": "https://www.salesforce.com"
+    },
+    {
+      "nom": "Base de connaissance Wiley",
+      "categorie": "infra",
+      "detail": "Corpus qui grounde les reponses de l'agent ; si elle est obsolete, le taux de resolution chute et l'escalade augmente.",
+      "url": "https://www.wiley.com"
+    }
+  ]
+}

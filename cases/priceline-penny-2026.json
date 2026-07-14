@@ -1,0 +1,314 @@
+{
+  "id": "priceline-penny-2026",
+  "type_fiche": "succes",
+  "marque": "Priceline",
+  "groupe": "Booking Holdings",
+  "industrie": "voyage_hospitality",
+  "marches_deploiement": [
+    "Etats-Unis"
+  ],
+  "transposable_ue": {
+    "flag": "oui_avec_adaptations",
+    "note": "Un agent de réservation agentique est transposable, mais l'usage de la voix et de la mémoire de préférences impose en UE une base légale RGPD, une information sur l'IA (AI Act) et un consentement pour l'enregistrement vocal. Les intégrations paiement dans le fil demandent une conformité DSP2 / SCA."
+  },
+  "metier": "e-commerce / marketing",
+  "intervenants": [
+    {
+      "nom": "Sejal Amin",
+      "role": "Chief Technology Officer, Priceline",
+      "source_ref": "S1"
+    },
+    {
+      "nom": "Cobus Kok",
+      "role": "VP AI Experiences, Priceline",
+      "source_ref": "S1"
+    }
+  ],
+  "agences": [
+    {
+      "nom": "Anthropic",
+      "role": "Fournisseur des modèles Claude pour le raisonnement conversationnel et la planification",
+      "source_ref": "S1"
+    }
+  ],
+  "axes": {
+    "levier": "activation_conversion",
+    "touchpoints": [
+      "site Priceline",
+      "app mobile",
+      "interface vocale"
+    ],
+    "etape_parcours": "achat",
+    "famille": "conversation",
+    "pattern": "agent de réservation agentique genAI",
+    "type_ia": [
+      "LLM (Anthropic Claude)",
+      "voix (OpenAI Realtime)",
+      "agents"
+    ],
+    "plateforme_stack": [
+      "Anthropic Claude",
+      "Google Cloud",
+      "OpenAI (voix)",
+      "custom/in-house"
+    ],
+    "objectif_metrique": [
+      "conversion",
+      "engagement",
+      "temps gagné par voyage",
+      "contacts service client"
+    ]
+  },
+  "implementation": "hybride",
+  "stack_technique": [
+    {
+      "nom": "Anthropic Claude",
+      "categorie": "llm",
+      "detail": "Modeles Claude pour le raisonnement conversationnel et la planification agentique de Penny (comparaison multi-villes, arbitrages).",
+      "url": "https://www.anthropic.com"
+    },
+    {
+      "nom": "OpenAI Realtime",
+      "categorie": "llm",
+      "detail": "Brique voix temps reel de l'interface vocale de Penny.",
+      "url": "https://openai.com"
+    },
+    {
+      "nom": "Google Cloud",
+      "categorie": "infra",
+      "detail": "Hebergement de la stack IA de Priceline.",
+      "url": "https://cloud.google.com"
+    },
+    {
+      "nom": "Stack Priceline in-house",
+      "categorie": "plateforme",
+      "detail": "Moteur de deals, memoire des preferences voyageur, inventaire et prix en temps reel, tunnel de reservation integre a la conversation.",
+      "url": "https://www.priceline.com"
+    }
+  ],
+  "objectif_business": "Faire passer la recherche de voyage d'un empilement de filtres et d'onglets à une conversation unique où le voyageur décrit son besoin et où l'agent compare, arbitre et réserve.",
+  "description": "Penny est l'agent de voyage IA de Priceline. En 2026, il devient agentique : il comprend une demande complexe (comparer des vols vers plusieurs villes sur une semaine donnée), évalue prix et disponibilité en direct, expose les arbitrages et laisse réserver sans quitter la conversation. Le raisonnement s'appuie sur les modèles Claude d'Anthropic sur la stack Priceline hébergée sur Google Cloud, avec OpenAI pour la voix. Priceline positionne Penny sur la mémoire des préférences et sa technologie de deals, pas seulement sur le modèle.",
+  "resultats": [
+    {
+      "metrique": "Temps moyen gagné par voyage, vs contact service client",
+      "valeur": "près de 10 min",
+      "citation_exacte": "travelers who used Penny saved an average of nearly ten minutes per trip",
+      "source_ref": "S1"
+    },
+    {
+      "metrique": "Engagement et conversion des utilisateurs de Penny",
+      "valeur": "supérieurs aux non-utilisateurs",
+      "citation_exacte": "stronger engagement and higher conversion than those who do not",
+      "source_ref": "S1"
+    },
+    {
+      "metrique": "Comparatif d'expérience (analyse Evercore ISI)",
+      "valeur": "meilleure expérience de bout en bout parmi les outils testés",
+      "citation_exacte": "the strongest end-to-end booking experience among the AI travel tools it tested",
+      "source_ref": "S1"
+    },
+    {
+      "metrique": "Signal en earnings Booking Holdings (Q1 2026)",
+      "valeur": "hausse notable chez les utilisateurs de Penny",
+      "citation_exacte": "noticeable uplift from users who engage with Penny compared to non-Penny users",
+      "source_ref": "S2"
+    }
+  ],
+  "niveau_preuve": {
+    "niveau": "C",
+    "justification": "Communiqué officiel Priceline chiffré, mention concordante dans l'earnings call Booking Holdings du T1 2026 et couverture presse spécialisée (Skift) ; le chiffre dur public (temps gagné) reste déclaratif marque."
+  },
+  "dates": {
+    "lancement": "2023 (Penny, chatbot) ; interface vocale 2024 ; version agentique 2026-06",
+    "derniere_confirmation_activite": "2026-06 (annonce version agentique)",
+    "verifie_le": "2026-07-11",
+    "revoir_apres": "2027-01-11"
+  },
+  "statut_vivant": {
+    "statut": "confirme",
+    "note": "Version agentique annoncée en juin 2026, avec bascule du moteur de raisonnement vers Claude ; produit actif sur le site et l'app."
+  },
+  "sources": [
+    {
+      "ref": "S1",
+      "type": "blog_officiel",
+      "fiabilite": "T1_primaire",
+      "titre": "Priceline's Penny Goes Fully Agentic",
+      "url": "https://www.prnewswire.com/news-releases/pricelines-penny-goes-fully-agentic-302790036.html",
+      "date_publication": "2026-06-03",
+      "consulte_le": "2026-07-11"
+    },
+    {
+      "ref": "S2",
+      "type": "presse",
+      "fiabilite": "T3_presse_etablie",
+      "titre": "Booking Holdings AI Assistants Slash Costs and Boost Bookings",
+      "url": "https://www.pymnts.com/earnings/2026/booking-holdings-ai-assistants-slash-costs-and-boost-bookings/",
+      "date_publication": "2026-04-28",
+      "consulte_le": "2026-07-11"
+    },
+    {
+      "ref": "S3",
+      "type": "presse",
+      "fiabilite": "T3_presse_etablie",
+      "titre": "Priceline Gives Penny a Multi-Agent Makeover",
+      "url": "https://skift.com/2026/06/03/priceline-penny-revamp-multiagent-anthropic-claude/",
+      "date_publication": "2026-06-03",
+      "consulte_le": "2026-07-11"
+    }
+  ],
+  "fonctionnement_operationnel": {
+    "cadence": "Temps réel à chaque conversation, avec évaluation continue prix et disponibilité.",
+    "opere_par": "Équipe AI Experiences de Priceline, sur une stack maison hébergée sur Google Cloud.",
+    "signal_pilote": "L'intention de voyage exprimée, croisée avec l'inventaire et les prix en direct et la mémoire des préférences du voyageur. Sans flux de prix et de disponibilité fiable, les arbitrages proposés deviennent faux et la conversion chute.",
+    "etapes": [
+      {
+        "etape": "Formulation du besoin",
+        "detail": "Le voyageur décrit son voyage, y compris des demandes complexes multi-destinations, à l'écrit ou à la voix.",
+        "acteur": "client"
+      },
+      {
+        "etape": "Raisonnement et recherche",
+        "detail": "L'agent planifie, interroge l'inventaire et compare les options sur plusieurs villes et dates.",
+        "acteur": "IA"
+      },
+      {
+        "etape": "Présentation des arbitrages",
+        "detail": "Il expose prix, disponibilité et compromis, en s'appuyant sur la mémoire des préférences et les deals Priceline.",
+        "acteur": "IA"
+      },
+      {
+        "etape": "Réservation dans le fil",
+        "detail": "Le voyageur confirme et paie sans quitter la conversation.",
+        "acteur": "client"
+      }
+    ]
+  },
+  "schema_flow": {
+    "statut": "documente",
+    "noeuds": [
+      {
+        "id": "user",
+        "role_generique": "humain",
+        "label": "Voyageur"
+      },
+      {
+        "id": "chan",
+        "role_generique": "canal_conversationnel",
+        "label": "Penny (texte / voix)"
+      },
+      {
+        "id": "llm",
+        "role_generique": "modele_ia",
+        "label": "Raisonnement agentique",
+        "outil_documente": "Anthropic Claude"
+      },
+      {
+        "id": "voice",
+        "role_generique": "modele_ia",
+        "label": "Voix",
+        "outil_documente": "OpenAI Realtime"
+      },
+      {
+        "id": "inv",
+        "role_generique": "data_source",
+        "label": "Inventaire, prix et deals Priceline"
+      },
+      {
+        "id": "book",
+        "role_generique": "site_app",
+        "label": "Tunnel de réservation"
+      }
+    ],
+    "liens": [
+      [
+        "user",
+        "chan"
+      ],
+      [
+        "chan",
+        "voice"
+      ],
+      [
+        "chan",
+        "llm"
+      ],
+      [
+        "llm",
+        "inv"
+      ],
+      [
+        "inv",
+        "chan"
+      ],
+      [
+        "chan",
+        "book"
+      ],
+      [
+        "book",
+        "user",
+        "confirmation"
+      ]
+    ]
+  },
+  "replication": {
+    "statut_epistemique": "infere",
+    "prerequis_data": [
+      "inventaire et prix en temps réel par API",
+      "mémoire de préférences par utilisateur",
+      "historique de réservation"
+    ],
+    "prerequis_orga": [
+      "équipe IA produit",
+      "intégration paiement dans le fil",
+      "gouvernance des arbitrages proposés"
+    ],
+    "stack_possible": [
+      "LLM commercial pour le raisonnement",
+      "moteur de recherche voyage existant",
+      "brique voix temps réel"
+    ],
+    "premiere_etape": "Brancher un assistant conversationnel sur l'inventaire pour un cas d'usage étroit (comparaison de vols), puis ajouter la réservation dans le fil.",
+    "playbook": [
+      {
+        "action": "Cadrer un cas d'usage etroit (comparaison de vols) et brancher un assistant conversationnel sur l'inventaire et les prix par API.",
+        "livrable": "Prototype conversationnel qui repond avec des donnees d'inventaire reelles."
+      },
+      {
+        "action": "Ajouter la memoire des preferences par utilisateur et la presentation des arbitrages (prix, disponibilite, compromis).",
+        "livrable": "Agent capable de comparer plusieurs villes et dates avec preferences persistees."
+      },
+      {
+        "action": "Integrer la reservation et le paiement dans le fil de conversation, avec la conformite paiement (DSP2/SCA en UE).",
+        "livrable": "Tunnel de reservation transactionnel accessible sans quitter la conversation."
+      },
+      {
+        "action": "Ajouter la brique voix temps reel et ouvrir une beta a un groupe d'utilisateurs.",
+        "livrable": "Interface vocale en beta avec mesure du temps gagne par voyage."
+      },
+      {
+        "action": "Comparer les utilisateurs de l'agent aux non-utilisateurs (engagement, conversion, contacts service client) et generaliser.",
+        "livrable": "Lecture chiffree vs parcours classique et plan de deploiement complet."
+      }
+    ],
+    "equipe": "1 PM IA + 3-5 devs (API inventaire, front conversationnel, paiement) + 1 ML/prompt engineer + juridique paiement et RGPD."
+  },
+  "seo": {
+    "slug": "priceline-penny-2026",
+    "title": "Priceline : agent agentique Penny - près de 10 minutes gagnées par voyage (2026)",
+    "meta_description": "Penny, l'agent de voyage IA de Priceline devenu agentique en 2026 sur Claude, fait gagner près de 10 minutes par voyage et affiche un engagement et une conversion supérieurs.",
+    "resume_citable": "En 2026, Priceline rend son agent Penny pleinement agentique sur les modèles Claude ; les voyageurs qui l'utilisent gagnent en moyenne près de 10 minutes par voyage et convertissent davantage.",
+    "faq": [
+      {
+        "q": "Qu'est-ce que Penny de Priceline ?",
+        "a": "Un agent de voyage IA qui comprend une demande complexe, compare prix et disponibilité en direct et laisse réserver sans quitter la conversation."
+      },
+      {
+        "q": "Quelle technologie utilise Penny ?",
+        "a": "Les modèles Claude d'Anthropic pour le raisonnement, la stack Priceline sur Google Cloud et OpenAI pour la voix."
+      }
+    ]
+  },
+  "logo_domain": "priceline.com"
+}

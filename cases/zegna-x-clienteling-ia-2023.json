@@ -1,0 +1,289 @@
+{
+  "id": "zegna-x-clienteling-ia-2023",
+  "type_fiche": "succes",
+  "marque": "Zegna",
+  "groupe": "Ermenegildo Zegna Group",
+  "industrie": "luxe_beaute",
+  "marches_deploiement": [
+    "Italie (flagship Milan Montenapoleone)",
+    "International (boutiques selectionnees)",
+    "E-commerce zegna.com"
+  ],
+  "transposable_ue": {
+    "flag": "oui",
+    "note": "Groupe italien, deploiement d'abord europeen. Le configurateur croise donnees client (CRM) et catalogue produit. Consentement explicite pour rattacher un profil client aux recommandations et respecter le RGPD sur le profilage."
+  },
+  "metier": "retail / clienteling / e-commerce",
+  "intervenants": [
+    {
+      "nom": "Edoardo Zegna",
+      "role": "Chief Marketing, Digital and Sustainability Officer, Zegna Group",
+      "source_ref": "S1"
+    }
+  ],
+  "agences": [
+    {
+      "nom": "Microsoft",
+      "role": "Partenaire technologique (Azure : CRM, data, analytics et analytics predictif)",
+      "source_ref": "S1"
+    }
+  ],
+  "axes": {
+    "levier": "activation_conversion",
+    "touchpoints": [
+      "boutique (conseiller de vente)",
+      "configurateur 3D",
+      "WhatsApp / WeChat",
+      "e-commerce"
+    ],
+    "etape_parcours": "consideration",
+    "famille": "personnalisation",
+    "pattern": "clienteling assiste par IA (configurateur produit + recommandation)",
+    "type_ia": [
+      "recommandation",
+      "configurateur 3D",
+      "analytics predictif"
+    ],
+    "plateforme_stack": [
+      "Microsoft Azure",
+      "configurateur 3D Zegna X",
+      "CRM"
+    ],
+    "objectif_metrique": [
+      "part des ventes retail",
+      "panier moyen",
+      "personnalisation made-to-measure"
+    ]
+  },
+  "implementation": "hybride",
+  "objectif_business": "Prolonger le savoir-faire made-to-measure de Zegna par un outil digital qui aide les conseillers a personnaliser tenues et sur-mesure, et transformer le clienteling en moteur de chiffre d'affaires retail.",
+  "points_cles": ["Clienteling assiste par IA avec configurateur 3D et recommandation en boutique.", "Microsoft Azure, configurateur Zegna X et CRM client.", "Environ 45 pour cent des ventes boutiques, environ 49 milliards de combinaisons sur-mesure.", "Preuve B, statut vivant confirme."],
+  "description": "Zegna X associe un conseiller de vente a un systeme de recommandation construit avec Microsoft. Un configurateur 3D permet de composer des tenues et des pieces sur-mesure a partir de quelque 49 milliards de combinaisons de coupes et de matieres, avec livraison sous quatre semaines. Le conseiller sollicite le client en un-a-un via boutique, WhatsApp ou WeChat, en s'appuyant sur les donnees CRM et l'historique. Lance au flagship de Milan sur rendez-vous en avril 2023 avec plus de 2 300 produits personnalisables, l'outil a ete etendu a d'autres boutiques puis a zegna.com en 2024. Zegna a alloue plus de 5 millions d'euros a l'ecosysteme Zegna X en 2022.",
+  "resultats": [
+    {
+      "metrique": "Part des ventes retail generee par Zegna X",
+      "valeur": "~45%",
+      "citation_exacte": "accounted for about 45 percent of revenue from Zegna boutiques",
+      "source_ref": "S1"
+    },
+    {
+      "metrique": "Combinaisons de tenues au configurateur",
+      "valeur": "~49 milliards",
+      "citation_exacte": "49 billion potential combinations of clothes and styles",
+      "source_ref": "S2"
+    },
+    {
+      "metrique": "Investissement dans l'ecosysteme (2022)",
+      "valeur": ">5 millions EUR",
+      "citation_exacte": "more than 5 million euro to the Zegna X ecosystem",
+      "source_ref": "S2"
+    }
+  ],
+  "niveau_preuve": {
+    "niveau": "B",
+    "justification": "Customer story Microsoft (partenaire technologique) chiffrant la part de 45% des ventes boutiques, confirmee par la presse mode specialisee qui reprend le meme chiffre et l'investissement. Deux sources concordantes, dirigeant nomme."
+  },
+  "dates": {
+    "lancement": "2023-04-18 (flagship Milan Montenapoleone, sur rendez-vous)",
+    "derniere_confirmation_activite": "2024 (extension a zegna.com annoncee)",
+    "verifie_le": "2026-07-11",
+    "revoir_apres": "2027-01-31"
+  },
+  "statut_vivant": {
+    "statut": "confirme",
+    "note": "Zegna X presente comme pilier de la strategie clienteling du groupe, etendu du flagship aux boutiques et a l'e-commerce. Derniere confirmation publique chiffree datant de 2023-2024."
+  },
+  "sources": [
+    {
+      "ref": "S1",
+      "type": "customer_story_plateforme",
+      "fiabilite": "T2_officiel_interesse",
+      "titre": "Working with Microsoft, Zegna adds AI to digital toolkit to engage clients",
+      "url": "https://news.microsoft.com/europe/2023/04/20/working-with-microsoft-zegna-adds-ai-to-digital-toolkit-to-engage-clients/",
+      "date_publication": "2023-04-20",
+      "consulte_le": "2026-07-11"
+    },
+    {
+      "ref": "S2",
+      "type": "presse",
+      "fiabilite": "T4_secondaire",
+      "titre": "Zegna introduces artificial intelligence to elevate luxury customer experience",
+      "url": "https://www.theindustry.fashion/zegna-introduces-artificial-intelligence-to-elevate-luxury-customer-experience/",
+      "date_publication": "2023",
+      "consulte_le": "2026-07-11"
+    }
+  ],
+  "fonctionnement_operationnel": {
+    "cadence": "Temps reel en rendez-vous client ; le catalogue et les regles de style sont mis a jour par collection",
+    "opere_par": "Conseillers de vente en boutique, appuyes par l'equipe CRM et digital du groupe",
+    "signal_pilote": "Le profil client CRM (historique d'achat, preferences, mensurations). Sans ce rattachement, le configurateur ne fait plus que du catalogue generique et perd son effet clienteling.",
+    "etapes": [
+      {
+        "etape": "Prise de contact",
+        "detail": "Le conseiller engage le client en un-a-un en boutique ou via WhatsApp/WeChat et ouvre sa fiche CRM.",
+        "acteur": "conseiller de vente"
+      },
+      {
+        "etape": "Composition assistee",
+        "detail": "Le configurateur 3D propose des combinaisons de tenues et d'options sur-mesure a partir du catalogue et des preferences.",
+        "acteur": "IA / configurateur"
+      },
+      {
+        "etape": "Personnalisation finale",
+        "detail": "Le conseiller ajuste les propositions, valide la commande sur-mesure et fixe le delai de livraison (moins de quatre semaines).",
+        "acteur": "conseiller de vente"
+      },
+      {
+        "etape": "Suivi",
+        "detail": "Les interactions et achats reviennent dans le CRM pour nourrir les recommandations suivantes.",
+        "acteur": "equipe CRM / data"
+      }
+    ]
+  },
+  "schema_flow": {
+    "statut": "documente",
+    "noeuds": [
+      {
+        "id": "client",
+        "role_generique": "humain",
+        "label": "Client en rendez-vous"
+      },
+      {
+        "id": "conseiller",
+        "role_generique": "humain",
+        "label": "Conseiller de vente"
+      },
+      {
+        "id": "config",
+        "role_generique": "modele_ia",
+        "label": "Configurateur 3D et recommandation Zegna X",
+        "outil_documente": "Microsoft Azure"
+      },
+      {
+        "id": "crm",
+        "role_generique": "crm",
+        "label": "CRM / profil client et historique"
+      },
+      {
+        "id": "catalogue",
+        "role_generique": "data_source",
+        "label": "Catalogue produit et options sur-mesure"
+      }
+    ],
+    "liens": [
+      [
+        "client",
+        "conseiller"
+      ],
+      [
+        "conseiller",
+        "config"
+      ],
+      [
+        "crm",
+        "config",
+        "profil et preferences"
+      ],
+      [
+        "catalogue",
+        "config"
+      ],
+      [
+        "config",
+        "conseiller",
+        "tenues et options proposees"
+      ],
+      [
+        "conseiller",
+        "crm",
+        "interaction et commande enregistrees"
+      ]
+    ]
+  },
+  "replication": {
+    "statut_epistemique": "infere",
+    "prerequis_data": [
+      "CRM client unifie (historique, preferences, mensurations)",
+      "catalogue produit structure avec options de personnalisation",
+      "consentement pour le profilage"
+    ],
+    "prerequis_orga": [
+      "reseau de conseillers formes au clienteling",
+      "chaine sur-mesure capable de tenir un delai court",
+      "equipe digital/CRM pour tenir l'outil"
+    ],
+    "stack_possible": [
+      "cloud analytics (Azure, GCP, AWS)",
+      "configurateur produit 3D",
+      "moteur de recommandation",
+      "CRM retail"
+    ],
+    "premiere_etape": "Brancher le CRM sur un configurateur produit dans une boutique pilote et mesurer le panier des clients servis en un-a-un.",
+    "playbook": [
+      {
+        "action": "Unifier le CRM client (historique, preferences, mensurations) et structurer le catalogue d'options de personnalisation.",
+        "livrable": "Profil client exploitable + catalogue configurable."
+      },
+      {
+        "action": "Construire le configurateur relie au CRM et au catalogue.",
+        "livrable": "Outil utilisable en rendez-vous par un conseiller."
+      },
+      {
+        "action": "Former les conseillers d'une boutique pilote au clienteling outille.",
+        "livrable": "Equipe pilote autonome sur l'outil."
+      },
+      {
+        "action": "Lancer le pilote en flagship sur rendez-vous et mesurer.",
+        "livrable": "Lecture panier moyen et part des ventes assistees vs clients non servis."
+      },
+      {
+        "action": "Etendre aux autres boutiques puis a l'e-commerce.",
+        "livrable": "Deploiement elargi avec boucle CRM alimentee par chaque interaction."
+      }
+    ],
+    "equipe": "1 PM digital retail + equipe dev (configurateur, integrations CRM) + conseillers de vente formes + equipe CRM/data"
+  },
+  "seo": {
+    "slug": "zegna-x-clienteling-ia-2023",
+    "title": "Zegna : clienteling assiste par IA (Zegna X) - environ 45% des ventes boutiques (2023)",
+    "meta_description": "Zegna X, l'outil de clienteling par IA construit avec Microsoft, pese environ 45% des ventes des boutiques Zegna et propose 49 milliards de combinaisons sur-mesure.",
+    "resume_citable": "Zegna X, l'outil de clienteling assiste par IA construit avec Microsoft, represente environ 45% du chiffre d'affaires des boutiques Zegna et propose pres de 49 milliards de combinaisons de tenues sur-mesure.",
+    "faq": [
+      {
+        "q": "Quelle part des ventes Zegna X represente-t-il ?",
+        "a": "Environ 45% du chiffre d'affaires des boutiques Zegna, selon le groupe cite par Microsoft et la presse mode."
+      },
+      {
+        "q": "Que fait concretement Zegna X ?",
+        "a": "Un conseiller compose avec le client, via un configurateur 3D, des tenues et des pieces sur-mesure parmi environ 49 milliards de combinaisons, livrees en moins de quatre semaines."
+      }
+    ]
+  },
+  "logo_domain": "zegna.com",
+  "stack_technique": [
+    {
+      "nom": "Microsoft Azure",
+      "categorie": "plateforme",
+      "detail": "Socle cloud du dispositif : CRM, data, analytics et analytics predictif qui alimentent les recommandations du conseiller.",
+      "url": "https://azure.microsoft.com"
+    },
+    {
+      "nom": "Configurateur 3D Zegna X",
+      "categorie": "outil",
+      "detail": "Compose tenues et pieces sur-mesure parmi environ 49 milliards de combinaisons, livraison sous quatre semaines.",
+      "url": "https://www.zegna.com"
+    },
+    {
+      "nom": "CRM client Zegna",
+      "categorie": "infra",
+      "detail": "Profil, historique d'achat et preferences qui personnalisent les propositions ; sans ce rattachement, l'outil retombe sur du catalogue generique.",
+      "url": "https://www.zegna.com"
+    },
+    {
+      "nom": "WhatsApp / WeChat",
+      "categorie": "outil",
+      "detail": "Canaux du clienteling un-a-un entre le conseiller et le client, en complement de la boutique.",
+      "url": "https://business.whatsapp.com"
+    }
+  ]
+}

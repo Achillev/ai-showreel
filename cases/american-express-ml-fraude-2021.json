@@ -1,0 +1,273 @@
+{
+  "id": "american-express-ml-fraude-2021",
+  "type_fiche": "succes",
+  "marque": "American Express",
+  "groupe": "American Express Company",
+  "industrie": "banque_assurance_fintech",
+  "marches_deploiement": [
+    "Mondial (reseau American Express)"
+  ],
+  "transposable_ue": {
+    "flag": "oui",
+    "note": "Le scoring de fraude en temps reel s'applique au reseau, UE comprise. Sous RGPD et AI Act, le rejet automatise d'une transaction doit rester supervisable et contestable ; la donnee de transaction est traitee sur base d'interet legitime de prevention de la fraude."
+  },
+  "metier": "Risque et lutte anti-fraude (paiements)",
+  "intervenants": [
+    {
+      "nom": "Dr. Dmitry Efimov",
+      "role": "VP Machine Learning Research, American Express",
+      "source_ref": "S2"
+    },
+    {
+      "nom": "Dr. Di Xu",
+      "role": "VP et Head of Information Management Decision Science and AI Labs, American Express",
+      "source_ref": "S2"
+    },
+    {
+      "nom": "Madhurima Khandelwal",
+      "role": "Head of AmEx AI Labs",
+      "source_ref": "S2"
+    }
+  ],
+  "axes": {
+    "levier": "monetisation",
+    "touchpoints": [
+      "autorisation de transaction"
+    ],
+    "etape_parcours": "achat",
+    "famille": "prediction",
+    "pattern": "detection de fraude en temps reel par apprentissage profond",
+    "type_ia": [
+      "deep learning",
+      "machine learning",
+      "scoring de risque en temps reel"
+    ],
+    "plateforme_stack": [
+      "custom/in-house (AmEx AI Labs)",
+      "NVIDIA TensorRT et Triton Inference Server"
+    ],
+    "objectif_metrique": [
+      "precision de detection de fraude",
+      "taux de fraude",
+      "faux positifs"
+    ]
+  },
+  "implementation": "custom",
+  "stack_technique": [
+    {
+      "nom": "Modeles de deep learning anti-fraude (AmEx AI Labs)",
+      "categorie": "outil",
+      "detail": "Modeles maison entraines sur les habitudes de depenses des titulaires et le contexte commercant ; decision de fraude rendue en millisecondes sur chaque autorisation.",
+      "url": "https://www.americanexpress.com"
+    },
+    {
+      "nom": "NVIDIA TensorRT",
+      "categorie": "infra",
+      "detail": "Optimisation de l'inference des modeles de deep learning sur GPU, associee au gain de precision de 6% documente.",
+      "url": "https://developer.nvidia.com/tensorrt"
+    },
+    {
+      "nom": "NVIDIA Triton Inference Server",
+      "categorie": "infra",
+      "detail": "Serving des modeles en production a faible latence sur le flux d'autorisation mondial.",
+      "url": "https://developer.nvidia.com/triton-inference-server"
+    }
+  ],
+  "objectif_business": "Detecter la fraude sur chaque transaction en millisecondes pour limiter les pertes et proteger la relation client, tout en gardant le taux de faux refus assez bas pour ne pas bloquer des achats legitimes.",
+  "description": "American Express fait tourner des modeles de machine learning qui evaluent chaque transaction au moment de l'autorisation, partout dans le monde, et rendent une decision de fraude en millisecondes. Les modeles apprennent des habitudes de depenses du titulaire et du comportement d'achat chez les commercants. American Express surveille de l'ordre de 1 200 milliards de dollars de depenses annuelles et evalue plusieurs milliards de transactions par an. En passant a des modeles de deep learning servis sur GPU (via NVIDIA TensorRT et Triton), la precision de detection de fraude a progresse de 6%. L'entreprise revendique le taux de fraude le plus bas parmi les grands reseaux de cartes pendant 14 annees consecutives, selon le Nilson Report de fevrier 2021.",
+  "resultats": [
+    {
+      "metrique": "Amelioration de la precision de detection de fraude (passage au deep learning sur GPU)",
+      "valeur": "+6%",
+      "citation_exacte": "Improved fraud detection accuracy by 6% with deep learning models",
+      "source_ref": "S1"
+    },
+    {
+      "metrique": "Taux de fraude le plus bas du secteur (Nilson Report, fev. 2021)",
+      "valeur": "14 annees consecutives",
+      "citation_exacte": "the lowest fraud rate among the major credit card networks for 14 consecutive years",
+      "source_ref": "S2"
+    },
+    {
+      "metrique": "Depenses annuelles surveillees en temps reel",
+      "valeur": "~1 200 Md$/an",
+      "citation_exacte": "$1.2 trillion in worldwide billed revenue in 2019",
+      "source_ref": "S2"
+    }
+  ],
+  "niveau_preuve": {
+    "niveau": "C",
+    "justification": "Chiffres documentes par le blog technique de NVIDIA (partenaire d'infrastructure, source interessee) pour le +6%, et par une analyse specialisee (Emerj) qui reprend les depenses surveillees et la revendication de taux de fraude la plus basse (issue du Nilson Report cite par American Express). Pas de resultat financier isolant l'effet de l'IA."
+  },
+  "dates": {
+    "lancement": "Modeles de fraude ML en production depuis plusieurs annees ; bascule deep learning sur GPU documentee autour de 2019-2021",
+    "derniere_confirmation_activite": "2021 (Nilson Report) et documentation technique NVIDIA associee",
+    "verifie_le": "2026-07-11",
+    "revoir_apres": "2027-01-11"
+  },
+  "statut_vivant": {
+    "statut": "confirme",
+    "note": "La detection de fraude par ML est un actif central d'American Express, operee par une equipe AI Labs dediee. Le pattern reste en production ; la revendication de taux de fraude la plus basse s'appuie sur un classement Nilson de 2021, a rafraichir."
+  },
+  "sources": [
+    {
+      "ref": "S1",
+      "type": "eng_blog",
+      "fiabilite": "T2_officiel_interesse",
+      "titre": "How Is AI Used in Fraud Detection? (NVIDIA)",
+      "url": "https://blogs.nvidia.com/blog/ai-fraud-detection-rapids-triton-tensorrt-nemo/",
+      "date_publication": "2023",
+      "consulte_le": "2026-07-11"
+    },
+    {
+      "ref": "S2",
+      "type": "analyse_academique",
+      "fiabilite": "T4_secondaire",
+      "titre": "Artificial Intelligence at American Express - Two Current Use Cases (Emerj)",
+      "url": "https://emerj.com/artificial-intelligence-at-american-express/",
+      "date_publication": "2021",
+      "consulte_le": "2026-07-11"
+    }
+  ],
+  "fonctionnement_operationnel": {
+    "cadence": "Temps reel, sur chaque autorisation, avec reentrainement periodique sur les fraudes confirmees.",
+    "opere_par": "AmEx AI Labs et les equipes risque d'American Express.",
+    "signal_pilote": "Les habitudes de depenses du titulaire et les labels de fraude confirmee. Si les labels arrivent trop tard ou sont bruites, le modele derive et laisse passer de la fraude ou multiplie les faux refus.",
+    "etapes": [
+      {
+        "etape": "Passage de la transaction",
+        "detail": "Une transaction arrive en autorisation sur le reseau American Express.",
+        "acteur": "site_app / reseau"
+      },
+      {
+        "etape": "Scoring en millisecondes",
+        "detail": "Les modeles de deep learning comparent la transaction aux habitudes du titulaire et au contexte commercant et rendent un score.",
+        "acteur": "IA"
+      },
+      {
+        "etape": "Decision",
+        "detail": "La transaction est approuvee, refusee ou mise en revue selon le score et les seuils.",
+        "acteur": "IA / equipe risque"
+      },
+      {
+        "etape": "Boucle d'apprentissage",
+        "detail": "Les fraudes confirmees et contestations reviennent alimenter le reentrainement.",
+        "acteur": "equipe data"
+      }
+    ]
+  },
+  "schema_flow": {
+    "statut": "approche_type",
+    "noeuds": [
+      {
+        "id": "txn",
+        "role_generique": "site_app",
+        "label": "Transaction en autorisation"
+      },
+      {
+        "id": "profil",
+        "role_generique": "data_source",
+        "label": "Habitudes de depenses et contexte commercant"
+      },
+      {
+        "id": "modele",
+        "role_generique": "modele_ia",
+        "label": "Modeles de deep learning anti-fraude",
+        "outil_documente": "AmEx AI Labs sur NVIDIA TensorRT / Triton"
+      },
+      {
+        "id": "decision",
+        "role_generique": "humain",
+        "label": "Decision d'autorisation / revue risque"
+      },
+      {
+        "id": "labels",
+        "role_generique": "data_source",
+        "label": "Fraudes confirmees et contestations"
+      }
+    ],
+    "liens": [
+      [
+        "txn",
+        "modele"
+      ],
+      [
+        "profil",
+        "modele"
+      ],
+      [
+        "modele",
+        "decision",
+        "score en millisecondes"
+      ],
+      [
+        "decision",
+        "labels"
+      ],
+      [
+        "labels",
+        "modele",
+        "reentrainement"
+      ]
+    ]
+  },
+  "replication": {
+    "statut_epistemique": "infere",
+    "prerequis_data": [
+      "Flux de transactions en temps reel",
+      "Historique de fraudes confirmees labellisees",
+      "Profils de depenses par titulaire"
+    ],
+    "prerequis_orga": [
+      "Equipe data science et risque",
+      "Infrastructure d'inference a faible latence",
+      "Gouvernance sur la decision automatisee"
+    ],
+    "stack_possible": [
+      "Modele custom (voie American Express)",
+      "moteurs anti-fraude tiers (Feedzai, Featurespace, SAS)",
+      "inference GPU pour deep learning temps reel"
+    ],
+    "premiere_etape": "Constituer un jeu de fraudes confirmees labellisees et entrainer un premier modele de scoring sur les transactions a plus fort risque.",
+    "playbook": [
+      {
+        "action": "Consolider l'historique de transactions avec les labels de fraude confirmee et les profils de depenses par titulaire.",
+        "livrable": "Jeu de donnees labellise, pret pour l'entrainement."
+      },
+      {
+        "action": "Entrainer un premier modele de scoring sur les transactions a plus fort risque et l'evaluer hors ligne contre les regles actuelles.",
+        "livrable": "Modele evalue (precision, faux positifs) compare a la baseline."
+      },
+      {
+        "action": "Brancher le modele en shadow mode sur le flux d'autorisation, sans impact client, pour verifier latence et scores en conditions reelles.",
+        "livrable": "Rapport de shadow mode : scores en production vs decisions actuelles."
+      },
+      {
+        "action": "Passer le modele en decision sur un segment limite, avec seuils, revue humaine des cas ambigus et procedure de contestation.",
+        "livrable": "Modele en production sur un perimetre, gouvernance de la decision automatisee en place."
+      },
+      {
+        "action": "Monter la boucle de reentrainement sur les fraudes confirmees et contestations, avec suivi de la derive du modele.",
+        "livrable": "Pipeline de reentrainement et tableau de bord fraude / faux refus."
+      }
+    ],
+    "equipe": "2-3 data scientists + 1 ingenieur ML (inference faible latence) + l'equipe risque/fraude pour les seuils et la revue des cas."
+  },
+  "seo": {
+    "slug": "american-express-ml-fraude-2021",
+    "title": "American Express : detection de fraude par deep learning - +6% de precision, taux de fraude le plus bas (2021)",
+    "meta_description": "Amex score chaque transaction en millisecondes sur ~1 200 Md$ de depenses/an. Le deep learning sur GPU a ameliore la precision de detection de 6%.",
+    "resume_citable": "American Express score chaque transaction en millisecondes sur environ 1 200 milliards de dollars de depenses annuelles ; le passage au deep learning sur GPU a ameliore la precision de detection de fraude de 6%, et le reseau revendique le taux de fraude le plus bas du secteur pendant 14 annees consecutives (Nilson, 2021).",
+    "faq": [
+      {
+        "q": "Comment American Express detecte-t-il la fraude ?",
+        "a": "Des modeles de machine learning et de deep learning evaluent chaque transaction au moment de l'autorisation, comparent aux habitudes de depenses du titulaire et rendent une decision en millisecondes, sur l'ensemble du reseau mondial."
+      },
+      {
+        "q": "Quel gain le deep learning a-t-il apporte ?",
+        "a": "Servi sur GPU via NVIDIA TensorRT et Triton, il a ameliore la precision de detection de fraude de 6% par rapport aux modeles precedents."
+      }
+    ]
+  },
+  "logo_domain": "americanexpress.com"
+}

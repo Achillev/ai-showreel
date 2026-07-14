@@ -1,0 +1,252 @@
+{
+  "id": "every-man-jack-klaviyo-predictive-2024",
+  "type_fiche": "succes",
+  "marque": "Every Man Jack",
+  "industrie": "cpg_d2c",
+  "marches_deploiement": [
+    "Etats-Unis"
+  ],
+  "transposable_ue": {
+    "flag": "oui_avec_adaptations",
+    "note": "Les predictions de date de reachat reposent sur l'historique d'achat individuel. En UE, base legale du profilage et consentement email a cadrer (RGPD), mais rien de bloquant sur le principe."
+  },
+  "metier": "CRM / retention marketing",
+  "marque_linkedin": "https://www.linkedin.com/company/every-man-jack/",
+  "intervenants": [
+    {
+      "nom": "Troy Petrunoff",
+      "role": "Senior Retention Marketing Manager, Every Man Jack",
+      "source_ref": "S1"
+    }
+  ],
+  "axes": {
+    "levier": "retention",
+    "touchpoints": [
+      "email",
+      "flows automatises"
+    ],
+    "etape_parcours": "fidélité",
+    "famille": "prediction",
+    "pattern": "timing predictif de reachat (predicted next order date)",
+    "type_ia": [
+      "predictive analytics",
+      "prediction de date de prochaine commande",
+      "prediction de valeur client"
+    ],
+    "plateforme_stack": [
+      "Klaviyo",
+      "Klaviyo AI (predictive analytics)"
+    ],
+    "objectif_metrique": [
+      "revenu attribue par flow",
+      "taux de reachat"
+    ]
+  },
+  "implementation": "plateforme",
+  "stack_technique": [
+    {
+      "nom": "Klaviyo",
+      "categorie": "plateforme",
+      "detail": "Plateforme CRM et email qui porte profils clients, segments et flows automatises.",
+      "url": "https://www.klaviyo.com"
+    },
+    {
+      "nom": "Klaviyo AI (predictive analytics)",
+      "categorie": "outil",
+      "detail": "Calcule pour chaque abonne la date de prochaine commande predite a partir de son historique d'achat et de son rythme de consommation.",
+      "url": "https://www.klaviyo.com"
+    },
+    {
+      "nom": "Flows Klaviyo (reachat)",
+      "categorie": "outil",
+      "detail": "Le flow de reachat se declenche a la date predite de chaque client au lieu du delai fixe de 45 jours de l'ancien outil.",
+      "url": "https://www.klaviyo.com"
+    }
+  ],
+  "objectif_business": "Augmenter le revenu de retention sur des produits de soin en declenchant les rappels de reachat quand le client est reellement sur le point d'etre a court, plutot qu'a un delai fixe.",
+  "points_cles": ["Rappels de reachat cales sur la date de prochaine commande predite par client.", "Klaviyo AI (predictive analytics) et flows Klaviyo, en self-service.", "12,4% du revenu attribue Klaviyo sur 90 jours, +25% de revenu issu des flows sur un an.", "Niveau de preuve B, statut vivant confirme."],
+  "description": "Every Man Jack vend des soins pour hommes en direct et via Target et Whole Foods, pour plus de 100 millions de dollars de revenu annuel. L'ancien outil email envoyait le rappel de reachat a 45 jours, alors que les clients recommandent plutot vers 75 jours. Klaviyo AI calcule pour chaque abonne une date de prochaine commande a partir de son historique et de son rythme de consommation, et l'equipe cale le flow de reachat sur cette date individuelle. Le rappel part au moment ou le client est cense arriver au bout de son produit.",
+  "resultats": [
+    {
+      "metrique": "Part du revenu Klaviyo genere par les segments predictifs (90 jours)",
+      "valeur": "12,4%",
+      "citation_exacte": "generated 12.4% of Klaviyo-attributed revenue with predictive analytics segments",
+      "source_ref": "S1"
+    },
+    {
+      "metrique": "Revenu des flows automatises, en glissement annuel",
+      "valeur": "+25%",
+      "citation_exacte": "25% year-over-year growth in revenue from flows",
+      "source_ref": "S1"
+    }
+  ],
+  "niveau_preuve": {
+    "niveau": "B",
+    "justification": "Deux publications Klaviyo chiffrees et concordantes (customer story dediee et blog officiel citant nommement la marque et le 12,4%). Pas de source de presse independante, d'ou B et non C."
+  },
+  "dates": {
+    "lancement": "2024",
+    "derniere_confirmation_activite": "2025 (blog Klaviyo a jour citant la marque)",
+    "verifie_le": "2026-07-11",
+    "revoir_apres": "2027-01-11"
+  },
+  "statut_vivant": {
+    "statut": "confirme",
+    "note": "Every Man Jack est toujours cite comme client Klaviyo AI dans le contenu courant du vendor. Le pattern (flow de reachat cale sur date predite) est une feature standard de Klaviyo."
+  },
+  "sources": [
+    {
+      "ref": "S1",
+      "type": "customer_story_plateforme",
+      "fiabilite": "T2_officiel_interesse",
+      "titre": "Every Man Jack makes 12.4% of Klaviyo revenue with AI-powered predictive analytics",
+      "url": "https://www.klaviyo.com/customers/case-studies/every-man-jack",
+      "date_publication": "2024",
+      "consulte_le": "2026-07-11"
+    },
+    {
+      "ref": "S2",
+      "type": "blog_officiel",
+      "fiabilite": "T2_officiel_interesse",
+      "titre": "Companies using AI for marketing: 8 top brand examples (Klaviyo)",
+      "url": "https://www.klaviyo.com/blog/companies-using-ai-marketing",
+      "date_publication": "2025",
+      "consulte_le": "2026-07-11"
+    }
+  ],
+  "fonctionnement_operationnel": {
+    "cadence": "Temps quasi reel par abonne : le flow se declenche a la date predite de chaque client, recalculee au fil des achats.",
+    "opere_par": "Equipe retention marketing (une personne pilote chez Every Man Jack), sur Klaviyo en self-service.",
+    "signal_pilote": "La date de prochaine commande predite. Si l'historique d'achat par client est trop pauvre ou mal rattache au profil, la prediction se degrade et le rappel repart sur un delai generique.",
+    "etapes": [
+      {
+        "etape": "Ingestion des donnees d'achat",
+        "detail": "Les achats et l'engagement email alimentent le profil client dans Klaviyo.",
+        "acteur": "IA / plateforme Klaviyo"
+      },
+      {
+        "etape": "Calcul de la date de reachat",
+        "detail": "Le modele predit pour chaque abonne sa prochaine date de commande probable.",
+        "acteur": "Klaviyo AI (predictive analytics)"
+      },
+      {
+        "etape": "Cadrage du flow",
+        "detail": "L'equipe regle le flow de reachat pour partir a la date predite ou un peu avant, au lieu du delai fixe de 45 jours.",
+        "acteur": "Equipe retention marketing"
+      },
+      {
+        "etape": "Envoi et boucle",
+        "detail": "Le rappel part au bon moment ; la reaction du client reintegre le profil et affine la prochaine prediction.",
+        "acteur": "IA / plateforme Klaviyo"
+      }
+    ]
+  },
+  "schema_flow": {
+    "statut": "approche_type",
+    "noeuds": [
+      {
+        "id": "n1",
+        "role_generique": "data_source",
+        "label": "Historique d'achat et engagement email"
+      },
+      {
+        "id": "n2",
+        "role_generique": "modele_ia",
+        "label": "Prediction de date de prochaine commande",
+        "outil_documente": "Klaviyo AI"
+      },
+      {
+        "id": "n3",
+        "role_generique": "crm",
+        "label": "Segments et flows",
+        "outil_documente": "Klaviyo"
+      },
+      {
+        "id": "n4",
+        "role_generique": "canal_conversationnel",
+        "label": "Email de reachat automatise"
+      },
+      {
+        "id": "n5",
+        "role_generique": "humain",
+        "label": "Equipe retention marketing"
+      }
+    ],
+    "liens": [
+      [
+        "n1",
+        "n2"
+      ],
+      [
+        "n2",
+        "n3"
+      ],
+      [
+        "n3",
+        "n4"
+      ],
+      [
+        "n5",
+        "n3"
+      ],
+      [
+        "n4",
+        "n1",
+        "engagement reinjecte au profil"
+      ]
+    ]
+  },
+  "replication": {
+    "statut_epistemique": "infere",
+    "prerequis_data": [
+      "historique d'achat par client rattache a un profil unique",
+      "adresses email opt-in",
+      "produits a consommation repetee avec cycle de reachat identifiable"
+    ],
+    "prerequis_orga": [
+      "une personne cote CRM qui pilote les flows",
+      "produits a reachat previsible dans le catalogue"
+    ],
+    "stack_possible": [
+      "Klaviyo",
+      "toute plateforme email/CRM avec prediction de date de reachat (predictive analytics natif)"
+    ],
+    "premiere_etape": "Verifier que la plateforme email calcule une date de prochaine commande par client, puis brancher le flow de reachat dessus au lieu d'un delai fixe.",
+    "playbook": [
+      {
+        "action": "Verifier que l'historique d'achat est rattache a un profil unique par client.",
+        "livrable": "Profils propres avec historique complet"
+      },
+      {
+        "action": "Activer les predictive analytics et controler les dates predites sur un echantillon.",
+        "livrable": "Dates de prochaine commande disponibles et coherentes"
+      },
+      {
+        "action": "Recabler le flow de reachat sur la date predite au lieu du delai fixe.",
+        "livrable": "Flow predictif actif"
+      },
+      {
+        "action": "Comparer au delai fixe (A/B ou avant-apres) et mesurer le revenu par flow.",
+        "livrable": "Lecture chiffree du gain et extension aux segments predictifs"
+      }
+    ],
+    "equipe": "1 responsable retention / CRM en self-service."
+  },
+  "seo": {
+    "slug": "every-man-jack-klaviyo-predictive-2024",
+    "title": "Every Man Jack : reachat predictif Klaviyo - 12,4% du revenu email (2024)",
+    "meta_description": "Every Man Jack cale ses relances de reachat sur la date predite par Klaviyo AI et en tire 12,4% de son revenu attribue Klaviyo en 90 jours.",
+    "resume_citable": "Every Man Jack a genere 12,4% de son revenu attribue Klaviyo en 90 jours en declenchant ses emails de reachat a la date de prochaine commande predite par Klaviyo AI, avec +25% de revenu issu des flows en un an.",
+    "faq": [
+      {
+        "q": "Quelle IA Every Man Jack utilise-t-il ?",
+        "a": "Klaviyo AI (predictive analytics), qui predit pour chaque abonne sa date de prochaine commande a partir de son historique d'achat."
+      },
+      {
+        "q": "Quel resultat chiffre ?",
+        "a": "12,4% du revenu attribue Klaviyo genere par les segments predictifs sur 90 jours, et une hausse de 25% du revenu issu des flows en glissement annuel."
+      }
+    ]
+  },
+  "logo_domain": "everymanjack.com"
+}

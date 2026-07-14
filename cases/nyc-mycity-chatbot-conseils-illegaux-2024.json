@@ -1,0 +1,196 @@
+{
+  "id": "nyc-mycity-chatbot-conseils-illegaux-2024",
+  "type_fiche": "echec_retrait",
+  "marque": "MyCity (Ville de New York)",
+  "groupe": "City of New York",
+  "industrie": "autre",
+  "marches_deploiement": [
+    "Etats-Unis (New York City)"
+  ],
+  "transposable_ue": {
+    "flag": "oui",
+    "note": "Un chatbot de service public qui delivre des conseils reglementaires faux tomberait, en Europe, sous la categorie a haut risque de l'AI Act (services publics essentiels) et sous des obligations de fiabilite et de supervision humaine renforcees. Le risque juridique est plus fort encore cote UE : orienter un usager vers une pratique illegale via un canal officiel engage l'administration."
+  },
+  "metier": "service public / information aux entreprises",
+  "axes": {
+    "levier": "retention",
+    "touchpoints": [
+      "chatbot du portail MyCity",
+      "service aux entreprises"
+    ],
+    "etape_parcours": "post-achat",
+    "famille": "conversation",
+    "pattern": "agent conversationnel RAG service public",
+    "type_ia": [
+      "LLM (Microsoft Azure AI)",
+      "generation augmentee par recuperation"
+    ],
+    "plateforme_stack": [
+      "Microsoft Azure AI"
+    ],
+    "objectif_metrique": [
+      "self-service des demarches",
+      "acces a l'information reglementaire"
+    ]
+  },
+  "implementation": "plateforme",
+  "stack_technique": [
+    {
+      "nom": "Microsoft Azure AI",
+      "categorie": "plateforme",
+      "detail": "Plateforme d'IA de Microsoft qui heberge le LLM du chatbot MyCity, selon la communication de la ville de New York.",
+      "url": "https://azure.microsoft.com"
+    },
+    {
+      "nom": "LLM Azure (modele exact non publie)",
+      "categorie": "llm",
+      "detail": "Modele de generation de texte fourni via Azure AI ; la ville n'a pas publie le modele precis ni le detail du dispositif de recuperation documentaire.",
+      "url": "https://azure.microsoft.com"
+    },
+    {
+      "nom": "Portail MyCity",
+      "categorie": "outil",
+      "detail": "Portail officiel de services aux entreprises de la ville de New York, canal d'exposition du chatbot.",
+      "url": "https://www.nyc.gov"
+    }
+  ],
+  "objectif_business": "Aider les entrepreneurs new-yorkais a naviguer dans les demarches et reglementations municipales via un assistant conversationnel officiel, pour desengorger les services.",
+  "description": "Annonce par le maire Eric Adams en octobre 2023, le chatbot du portail MyCity devait guider les entreprises dans les regles municipales. En mars 2024, une enquete de The Markup montre qu'il delivre des conseils contraires a la loi : il affirme qu'un bailleur peut refuser les bons de logement Section 8, qu'un employeur peut prelever une part des pourboires de ses salaries, ou qu'un restaurant peut se passer d'accepter les especes. A dix testeurs posant la meme question sur les bons de logement, le bot repond dix fois que le bailleur n'est pas oblige de les accepter, alors que la discrimination par la source de revenu est illegale a New York.",
+  "resultats": [
+    {
+      "metrique": "Conseils contraires a la loi sur pourboires, bons de logement et expulsion",
+      "valeur": "conseils illegaux",
+      "citation_exacte": "Yes, you can take a cut of your worker's tips",
+      "source_ref": "S1"
+    },
+    {
+      "metrique": "Chatbot garde en ligne malgre les preuves, requalifie en pilote",
+      "valeur": "maintenu en ligne",
+      "citation_exacte": "no, buildings did not have to accept housing vouchers",
+      "source_ref": "S1"
+    }
+  ],
+  "niveau_preuve": {
+    "niveau": "C",
+    "justification": "Enquete d'investigation de The Markup, avec tests reproduits et citations directes, reprise par THE CITY et d'autres titres etablis, citant nommement la ville de New York et son administration. Pas de decision de justice publiee."
+  },
+  "dates": {
+    "lancement": "octobre 2023 (annonce du chatbot MyCity)",
+    "derniere_confirmation_activite": "2024-04-02 (chatbot encore en ligne malgre les alertes, selon The Markup)",
+    "verifie_le": "2026-07-11",
+    "revoir_apres": "2027-07-11"
+  },
+  "statut_vivant": {
+    "statut": "signaux_mitiges",
+    "note": "Backpedal partiel : apres l'enquete, l'administration a maintenu le chatbot en ligne en le qualifiant de pilote et en ajoutant des avertissements, plutot que de le retirer. Le cas est un backlash public documente avec retrait incomplet, pas un arret net."
+  },
+  "sources": [
+    {
+      "ref": "S1",
+      "type": "presse",
+      "fiabilite": "T3_presse_etablie",
+      "titre": "NYC's AI Chatbot Tells Businesses to Break the Law",
+      "url": "https://themarkup.org/artificial-intelligence/2024/03/29/nycs-ai-chatbot-tells-businesses-to-break-the-law",
+      "date_publication": "2024-03-29",
+      "consulte_le": "2026-07-11"
+    },
+    {
+      "ref": "S2",
+      "type": "presse",
+      "fiabilite": "T3_presse_etablie",
+      "titre": "Malfunctioning NYC AI Chatbot Still Active Despite Widespread Evidence It's Encouraging Illegal Behavior",
+      "url": "https://www.thecity.nyc/2024/04/02/malfunctioning-nyc-ai-chatbot-still-active-false-information/",
+      "date_publication": "2024-04-02",
+      "consulte_le": "2026-07-11"
+    }
+  ],
+  "post_mortem": {
+    "ce_qui_s_est_passe": "Le maire Eric Adams annonce le chatbot MyCity en octobre 2023 comme aide aux entreprises. Le 29 mars 2024, The Markup publie une enquete montrant qu'il donne des conseils illegaux : refus des bons Section 8, ponction sur les pourboires, expulsion sans procedure, absence de plafond de loyer. Le bot est aussi incoherent, repondant differemment selon les sessions. Le 2 avril, The Markup constate qu'il est toujours en ligne, l'administration l'ayant recadre en pilote avec avertissements plutot que retire.",
+    "raison_echec": "Un assistant conversationnel de service public delivrant des reponses reglementaires generees sans garantie de conformite juridique, sans citation de la regle applicable et sans supervision suffisante. Sur un domaine ou la mauvaise reponse expose l'usager a une pratique illegale, le systeme parlait avec assurance de choses fausses.",
+    "date_retrait": "non retire au 2 avril 2024 ; maintenu en ligne comme pilote avec avertissements",
+    "cout_estime": "Cout reputationnel et juridique : un canal officiel orientant des entreprises vers des pratiques illegales expose la ville a des mises en cause. Pas de cout financier chiffre publie.",
+    "signaux_avant_coureurs": "Infere : ouvrir un canal officiel de conseil reglementaire sans tests systematiques sur les questions a fort enjeu juridique, sans citation de la source de droit, et sans mecanisme de refus quand la reponse n'est pas sure. L'incoherence entre sessions signalait deja que le systeme devinait plutot qu'il ne recuperait la regle.",
+    "lecons_avec_recul": "Infere : sur un domaine ou une reponse fausse a des consequences legales, l'assistant doit citer la regle applicable, refuser quand il n'est pas sur, et etre teste contre une batterie de questions pieges validees par des juristes. Un chatbot de service public ne peut pas se contenter d'un ton assure ; il lui faut une chaine de conformite. Et quand un tel systeme derape, le maintenir en ligne comme pilote deplace le risque sur l'usager.",
+    "le_pattern_reste_il_valide": "Infere : le pattern de l'assistant conversationnel de service public reste valide, a condition qu'il soit adosse a des sources de droit citees, borne aux questions qu'il maitrise, et capable de dire qu'il ne sait pas. L'echec condamne un deploiement generatif non borne sur un domaine juridique, pas l'idee d'aider les usagers a s'y retrouver."
+  },
+  "schema_flow": {
+    "statut": "approche_type",
+    "noeuds": [
+      {
+        "id": "usager",
+        "role_generique": "humain",
+        "label": "Entrepreneur cherchant une regle municipale"
+      },
+      {
+        "id": "chat",
+        "role_generique": "canal_conversationnel",
+        "label": "Chatbot portail MyCity"
+      },
+      {
+        "id": "llm",
+        "role_generique": "modele_ia",
+        "label": "LLM Azure AI",
+        "outil_documente": "Microsoft Azure AI"
+      },
+      {
+        "id": "regles",
+        "role_generique": "data_source",
+        "label": "Corpus reglementaire municipal (recuperation incertaine)"
+      }
+    ],
+    "liens": [
+      [
+        "usager",
+        "chat"
+      ],
+      [
+        "chat",
+        "llm"
+      ],
+      [
+        "regles",
+        "llm",
+        "recuperation (defaillante / non citee)"
+      ],
+      [
+        "llm",
+        "chat",
+        "reponse (parfois illegale)"
+      ]
+    ]
+  },
+  "replication": {
+    "statut_epistemique": "infere",
+    "prerequis_data": [
+      "corpus reglementaire a jour et structure",
+      "batterie de questions pieges validees par des juristes"
+    ],
+    "prerequis_orga": [
+      "validation juridique du perimetre",
+      "supervision humaine et boucle de signalement"
+    ],
+    "stack_possible": [
+      "RAG borne aux textes officiels avec citation obligatoire",
+      "refus de reponse hors perimetre",
+      "revue juridique periodique"
+    ],
+    "premiere_etape": "Restreindre le bot aux questions dont la reponse est adossee a un texte cite, et lui imposer de refuser plutot que de deviner ; faire valider la batterie de tests par des juristes avant ouverture."
+  },
+  "seo": {
+    "slug": "nyc-mycity-chatbot-conseils-illegaux-2024",
+    "title": "NYC MyCity : le chatbot officiel conseille des pratiques illegales (2024)",
+    "meta_description": "En mars 2024, The Markup montre que le chatbot officiel MyCity de New York conseille aux entreprises des pratiques illegales. Maintenu en ligne comme pilote.",
+    "resume_citable": "En mars 2024, le chatbot officiel MyCity de la ville de New York conseillait aux entreprises des pratiques illegales, comme prelever une part des pourboires ou refuser les bons de logement Section 8 ; l'administration l'a maintenu en ligne comme pilote.",
+    "faq": [
+      {
+        "q": "Quels conseils illegaux le chatbot MyCity a-t-il donnes ?",
+        "a": "Il a affirme qu'un employeur pouvait prelever une part des pourboires, qu'un bailleur pouvait refuser les bons Section 8, qu'on pouvait expulser un locataire sans procedure et qu'il n'y avait pas de plafond de loyer, toutes reponses contraires au droit new-yorkais."
+      },
+      {
+        "q": "La ville a-t-elle retire le chatbot ?",
+        "a": "Non. Apres l'enquete, l'administration l'a maintenu en ligne en le presentant comme un pilote et en ajoutant des avertissements, plutot que de le retirer."
+      }
+    ]
+  },
+  "logo_domain": "nyc.gov"
+}

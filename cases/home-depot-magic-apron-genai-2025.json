@@ -1,0 +1,264 @@
+{
+  "id": "home-depot-magic-apron-genai-2025",
+  "type_fiche": "succes",
+  "marque": "The Home Depot",
+  "industrie": "retail_ecom",
+  "marches_deploiement": [
+    "US"
+  ],
+  "transposable_ue": {
+    "flag": "oui_avec_adaptations",
+    "note": "Un assistant conversationnel adosse a une base de connaissances produit maison est transposable a tout distributeur. En UE, l'AI Act impose de dire au client qu'il parle a une IA, et l'usage de l'historique et de la localisation pour la version magasin releve du RGPD."
+  },
+  "metier": "e-commerce, service client, aide a la vente en magasin",
+  "marque_linkedin": "https://www.linkedin.com/company/the-home-depot/",
+  "intervenants": [
+    {
+      "nom": "Jordan Broggi",
+      "role": "Executive Vice President of Customer Experience et President - Online, The Home Depot",
+      "source_ref": "S1"
+    }
+  ],
+  "agences": [
+    {
+      "nom": "Google Cloud",
+      "role": "Partenaire IA pour l'extension agentique de Magic Apron et les outils associes",
+      "source_ref": "S2"
+    }
+  ],
+  "axes": {
+    "levier": "activation_conversion",
+    "touchpoints": [
+      "homedepot.com",
+      "app The Home Depot",
+      "pages produit",
+      "experience en magasin (test)"
+    ],
+    "etape_parcours": "considération",
+    "famille": "conversation",
+    "pattern": "assistant projet conversationnel genAI adosse a une base de connaissances maison",
+    "type_ia": [
+      "LLM generatif",
+      "RAG",
+      "resume d'avis",
+      "multimodal (image)"
+    ],
+    "plateforme_stack": [
+      "base de connaissances proprietaire Home Depot",
+      "Google Cloud"
+    ],
+    "objectif_metrique": [
+      "engagement client",
+      "resolution des questions",
+      "aide a la decision projet"
+    ]
+  },
+  "implementation": "custom",
+  "objectif_business": "Apporter l'expertise des vendeurs du magasin sur le digital, pour donner au client la confiance de se lancer dans son projet de bricolage et lever les frictions de decision sur des produits techniques.",
+  "description": "Magic Apron est la suite d'outils genAI de The Home Depot, lancee le 6 mars 2025. Au depart, un assistant present sur des millions de pages produit de homedepot.com et sur l'app repond aux questions de bricolage et resume les avis clients, a partir d'une base de connaissances maison qui melange les donnees du distributeur et son expertise produit. Le client decrit son projet en langage naturel et recoit des conseils et des recommandations, de la reparation d'un robinet au remodelage d'une cuisine. En janvier 2026, au NRF, Home Depot a etendu Magic Apron avec Google Cloud : capacites conversationnelles enrichies, fonctions multimodales (upload d'image), et une experience en magasin en test avec stock local et guidage vers le rayon. Home Depot decrit alors un assistant qui produit deja de meilleurs resultats d'engagement et de resolution.",
+  "resultats": [
+    {
+      "metrique": "Pages produit couvertes, sur homedepot.com et l'app",
+      "valeur": "millions de pages",
+      "citation_exacte": "millions of product pages online at homedepot.com",
+      "source_ref": "S3"
+    },
+    {
+      "metrique": "Effet declare sur l'engagement et la resolution",
+      "valeur": "resultats juges nettement meilleurs (sans chiffre publie)",
+      "citation_exacte": "materially better engagement and resolution outcomes",
+      "source_ref": "S2"
+    }
+  ],
+  "niveau_preuve": {
+    "niveau": "C",
+    "justification": "Communiques officiels de The Home Depot et de Google Cloud citant nommement la marque, plus presse retail majeure sur le lancement. Le perimetre (millions de pages, extension nationale) etablit la scale, mais aucun chiffre de resultat n'est publie, seulement une amelioration declaree de l'engagement et de la resolution, ce qui plafonne a C."
+  },
+  "dates": {
+    "lancement": "2025-03-06",
+    "derniere_confirmation_activite": "2026-01-11",
+    "verifie_le": "2026-07-11",
+    "revoir_apres": "2027-01-11"
+  },
+  "statut_vivant": {
+    "statut": "confirme",
+    "note": "Extension agentique annoncee au NRF le 11 janvier 2026 avec Google Cloud (fonctions multimodales, experience magasin en test, deploiement national des listes materiaux pour les pros)."
+  },
+  "sources": [
+    {
+      "ref": "S1",
+      "type": "blog_officiel",
+      "fiabilite": "T1_primaire",
+      "titre": "Unveiling Magic Apron: The Home Depot's Smartest Tool Yet",
+      "url": "https://corporate.homedepot.com/news/company/unveiling-magic-apron-home-depots-smartest-tool-yet",
+      "date_publication": "2025-03-06",
+      "consulte_le": "2026-07-11"
+    },
+    {
+      "ref": "S2",
+      "type": "blog_officiel",
+      "fiabilite": "T1_primaire",
+      "titre": "The Home Depot and Google Cloud Launch Agentic AI Tools to Help Customers and Associates",
+      "url": "https://corporate.homedepot.com/news/partnerships/home-depot-and-google-cloud-launch-agentic-ai-tools-help-customers-and-associates",
+      "date_publication": "2026-01-11",
+      "consulte_le": "2026-07-11"
+    },
+    {
+      "ref": "S3",
+      "type": "presse",
+      "fiabilite": "T3_presse_etablie",
+      "titre": "The Home Depot Launches New Suite of Gen AI Tools for Customers",
+      "url": "https://www.retailtouchpoints.com/topics/data-analytics/ai-machine-learning/the-home-depot-launches-new-suite-of-gen-ai-tools-for-customers",
+      "date_publication": "2025-03",
+      "consulte_le": "2026-07-11"
+    }
+  ],
+  "fonctionnement_operationnel": {
+    "cadence": "Temps reel a chaque question client sur le web, l'app, et en test sur l'experience magasin.",
+    "opere_par": "Equipe experience client et digitale de The Home Depot, qui tient la base de connaissances maison et le modele.",
+    "signal_pilote": "La couverture et la fraicheur de la base de connaissances produit et projet. Si elle n'est pas a jour, l'assistant repond a cote ou oriente vers un produit inadapte.",
+    "etapes": [
+      {
+        "etape": "Question projet",
+        "detail": "Le client decrit son projet ou pose une question sur une page produit, a l'ecrit ou via une image.",
+        "acteur": "client"
+      },
+      {
+        "etape": "Recuperation dans la base maison",
+        "detail": "L'assistant va chercher conseils, specifications produit et avis dans la base de connaissances proprietaire.",
+        "acteur": "IA"
+      },
+      {
+        "etape": "Reponse et recommandation",
+        "detail": "Il compose un conseil projet, resume les avis et recommande des produits ; en magasin, il ajoute stock local et rayon.",
+        "acteur": "IA"
+      },
+      {
+        "etape": "Suivi et extension",
+        "detail": "Les equipes mesurent engagement et resolution et etendent le perimetre (pros, magasins, voix).",
+        "acteur": "equipe data"
+      }
+    ]
+  },
+  "schema_flow": {
+    "statut": "documente",
+    "noeuds": [
+      {
+        "id": "client",
+        "role_generique": "site_app",
+        "label": "Client sur homedepot.com, app ou magasin"
+      },
+      {
+        "id": "magic",
+        "role_generique": "modele_ia",
+        "label": "Assistant Magic Apron",
+        "outil_documente": "Base de connaissances Home Depot + Google Cloud"
+      },
+      {
+        "id": "connaissance",
+        "role_generique": "data_source",
+        "label": "Base de connaissances produit, projet, avis, stocks"
+      }
+    ],
+    "liens": [
+      [
+        "client",
+        "magic"
+      ],
+      [
+        "magic",
+        "connaissance"
+      ],
+      [
+        "connaissance",
+        "magic"
+      ],
+      [
+        "magic",
+        "client",
+        "conseil et recommandations"
+      ]
+    ]
+  },
+  "stack_technique": [
+    {
+      "nom": "Magic Apron (assistant in-house)",
+      "categorie": "outil",
+      "detail": "Suite genAI custom de The Home Depot : conversation projet, resume d'avis, RAG sur la base maison, fonctions multimodales (upload d'image) ajoutees en 2026 ; le LLM sous-jacent du lancement n'est pas nomme",
+      "url": "https://www.homedepot.com"
+    },
+    {
+      "nom": "Base de connaissances proprietaire Home Depot",
+      "categorie": "infra",
+      "detail": "Donnees produit, expertise projet, avis clients et stocks locaux, socle du RAG et condition de la justesse des reponses",
+      "url": "https://www.homedepot.com"
+    },
+    {
+      "nom": "Google Cloud",
+      "categorie": "plateforme",
+      "detail": "Partenaire de l'extension agentique annoncee au NRF 2026 : capacites conversationnelles enrichies, multimodal, experience en magasin en test",
+      "url": "https://cloud.google.com"
+    },
+    {
+      "nom": "Site et app The Home Depot",
+      "categorie": "plateforme",
+      "detail": "Surfaces de deploiement de l'assistant, sur des millions de pages produit",
+      "url": "https://www.homedepot.com"
+    }
+  ],
+  "replication": {
+    "statut_epistemique": "infere",
+    "prerequis_data": [
+      "Base de connaissances produit et projet structuree",
+      "Avis clients exploitables pour le resume",
+      "Stocks locaux et plan magasin pour la version en magasin"
+    ],
+    "prerequis_orga": [
+      "Regle de transparence IA vis-a-vis du client",
+      "Equipe pour maintenir et rafraichir la base de connaissances",
+      "Boucle de mesure engagement et resolution"
+    ],
+    "stack_possible": [
+      "LLM generatif via API",
+      "Couche RAG sur la base de connaissances maison",
+      "Module multimodal pour l'upload d'image"
+    ],
+    "premiere_etape": "Constituer une base de connaissances produit et projet, brancher un assistant RAG sur les pages a fort trafic, puis mesurer engagement et resolution.",
+    "playbook": [
+      {
+        "action": "Consolider la base de connaissances : specifications produit, guides projet, avis clients, avec un processus de rafraichissement.",
+        "livrable": "Base de connaissances indexee et interrogeable"
+      },
+      {
+        "action": "Brancher un assistant RAG (LLM via API) sur les pages produit a fort trafic, avec transparence IA et garde-fous sur les conseils techniques.",
+        "livrable": "Assistant en pilote sur un premier lot de pages produit"
+      },
+      {
+        "action": "Ajouter le resume d'avis et mesurer engagement et resolution des questions contre les pages sans assistant.",
+        "livrable": "Bilan chiffre engagement / resolution sur le perimetre pilote"
+      },
+      {
+        "action": "Etendre a l'ensemble du catalogue et preparer les extensions : multimodal (image), stock local et guidage en magasin.",
+        "livrable": "Assistant generalise et feuille de route magasin cadree"
+      }
+    ],
+    "equipe": "2-3 devs ML / back + 1 PM + 1 responsable contenu produit pour la base de connaissances"
+  },
+  "seo": {
+    "slug": "home-depot-magic-apron-genai-2025",
+    "title": "The Home Depot : assistant projet genAI Magic Apron - millions de pages produit (2025)",
+    "meta_description": "Magic Apron, la suite genAI de The Home Depot lancee en 2025, repond aux questions de bricolage sur des millions de pages produit et s'etend en magasin avec Google Cloud.",
+    "resume_citable": "Lancee en mars 2025, la suite genAI Magic Apron de The Home Depot repond aux questions projet sur des millions de pages produit de homedepot.com et s'est etendue en janvier 2026 avec Google Cloud vers le multimodal et l'experience en magasin.",
+    "faq": [
+      {
+        "q": "Qu'est-ce que Magic Apron ?",
+        "a": "C'est la suite d'assistants genAI de The Home Depot, lancee en 2025, qui repond aux questions de bricolage et resume les avis a partir d'une base de connaissances maison."
+      },
+      {
+        "q": "Est-ce deploye a l'echelle ?",
+        "a": "Oui. L'assistant couvre des millions de pages produit sur homedepot.com et l'app, et a ete etendu en janvier 2026 avec Google Cloud vers le multimodal et une experience en magasin en test."
+      }
+    ]
+  },
+  "logo_domain": "homedepot.com"
+}

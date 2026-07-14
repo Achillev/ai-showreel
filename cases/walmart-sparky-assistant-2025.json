@@ -1,0 +1,284 @@
+{
+  "id": "walmart-sparky-assistant-2025",
+  "type_fiche": "succes",
+  "marque": "Walmart",
+  "industrie": "retail_ecom",
+  "marches_deploiement": [
+    "US"
+  ],
+  "transposable_ue": {
+    "flag": "oui_avec_adaptations",
+    "note": "Deploye uniquement aux US (app, site, magasins). Une transposition UE demanderait un catalogue enrichi par marche et une conformite AI Act sur la transparence de l'agent conversationnel. La donnee sous-jacente (avis, catalogue) est first-party, donc RGPD gerable."
+  },
+  "metier": "e-commerce, discovery produit, service client",
+  "marque_linkedin": "https://www.linkedin.com/company/walmart",
+  "intervenants": [
+    {
+      "nom": "Desiree Gosby",
+      "role": "SVP Tech Strategy and Emerging Tech, a presente Sparky au lancement",
+      "source_ref": "S3"
+    },
+    {
+      "nom": "David Guggina",
+      "role": "Walmart U.S., a commente les resultats Sparky en earnings call",
+      "source_ref": "S1"
+    }
+  ],
+  "axes": {
+    "levier": "activation_conversion",
+    "touchpoints": [
+      "app mobile",
+      "site web",
+      "magasin"
+    ],
+    "etape_parcours": "consideration",
+    "famille": "conversation",
+    "pattern": "assistant shopping genAI",
+    "type_ia": [
+      "LLM",
+      "RAG",
+      "agent genAI",
+      "multimodal"
+    ],
+    "plateforme_stack": [
+      "custom/in-house",
+      "catalogue Walmart",
+      "avis clients"
+    ],
+    "objectif_metrique": [
+      "panier moyen",
+      "unites vendues",
+      "engagement"
+    ]
+  },
+  "implementation": "custom",
+  "objectif_business": "Passer d'une recherche par mots-cles a une recherche par intention pour augmenter le panier moyen et la frequence d'usage de l'app.",
+  "points_cles": ["Assistant shopping genAI Sparky, de la recherche par intention aux recommandations.", "Dispositif LLM et RAG maison sur le catalogue et les avis clients.", "Panier moyen +35% vs non-utilisateurs, unites achetees plus que quadruplees.", "Preuve A, statut confirme, present sur app, site et magasins US."],
+  "description": "Sparky est l'assistant genAI de Walmart, accessible via le bouton Ask Sparky dans l'app puis etendu au site et aux magasins. Le client formule une intention (organiser un anniversaire, choisir une creme solaire sous 30 dollars) et Sparky renvoie des recommandations synthetisees a partir du catalogue et des avis, avec comparaisons produit. Lance la semaine du 6 juin 2025 sur l'app. Fonctions ajoutees ensuite : reapprovisionnement automatique des essentiels, planification de repas et support en espagnol.",
+  "resultats": [
+    {
+      "metrique": "Panier moyen des utilisateurs",
+      "valeur": "+35% vs non-utilisateurs",
+      "citation_exacte": "about 35% higher than that of non-users",
+      "source_ref": "S1"
+    },
+    {
+      "metrique": "Utilisateurs actifs hebdomadaires",
+      "valeur": "+100% sur le trimestre",
+      "citation_exacte": "Weekly active users are up over 100%",
+      "source_ref": "S1"
+    },
+    {
+      "metrique": "Unites achetees via Sparky",
+      "valeur": "x4+ vs trimestre precedent",
+      "citation_exacte": "more than quadrupled since its previous fiscal quarter",
+      "source_ref": "S1"
+    }
+  ],
+  "niveau_preuve": {
+    "niveau": "A",
+    "justification": "Chiffres communiques lors de l'earnings call Walmart (exercice fiscal 2026), rapportes par Digital Commerce 360 et Modern Retail. Metriques rattachees a la communication financiere du groupe."
+  },
+  "dates": {
+    "lancement": "Semaine du 6 juin 2025 (app US)",
+    "derniere_confirmation_activite": "Mai 2026 (earnings call, extension au site et aux magasins)",
+    "verifie_le": "2026-07-11",
+    "revoir_apres": "2027-01-11"
+  },
+  "statut_vivant": {
+    "statut": "confirme",
+    "note": "Present sur app, site et magasins en 2026, avec nouvelles capacites (reapprovisionnement, planification repas, espagnol) et croissance des usages confirmee en earnings call."
+  },
+  "sources": [
+    {
+      "ref": "S1",
+      "type": "presse",
+      "fiabilite": "T4_secondaire",
+      "titre": "Walmart credits Sparky AI agent with lifting AOV, unit sales growth",
+      "url": "https://www.digitalcommerce360.com/2026/05/22/walmart-sparky-agent-ai-sales-supply-chain/",
+      "date_publication": "2026-05-22",
+      "consulte_le": "2026-07-11"
+    },
+    {
+      "ref": "S2",
+      "type": "presse",
+      "fiabilite": "T4_secondaire",
+      "titre": "Walmart says AI users build 35% bigger baskets than others",
+      "url": "https://www.modernretail.co/technology/walmart-says-ai-users-build-35-bigger-baskets-than-others/",
+      "date_publication": "2026",
+      "consulte_le": "2026-07-11"
+    },
+    {
+      "ref": "S3",
+      "type": "blog_officiel",
+      "fiabilite": "T1_primaire",
+      "titre": "Walmart: The Future of Shopping Is Agentic. Meet Sparky.",
+      "url": "https://corporate.walmart.com/news/2025/06/06/walmart-the-future-of-shopping-is-agentic-meet-sparky",
+      "date_publication": "2025-06-06",
+      "consulte_le": "2026-07-11"
+    }
+  ],
+  "fonctionnement_operationnel": {
+    "cadence": "Temps reel a chaque session, avec suivi des metriques panier et unites par trimestre fiscal.",
+    "opere_par": "Equipe Emerging Tech et Walmart U.S. (in-house), branchee sur le catalogue et les avis.",
+    "signal_pilote": "L'appariement entre l'intention exprimee en langage naturel et la donnee produit structuree. Si le catalogue n'est pas enrichi, Sparky ne trouve pas le bon produit et l'effet panier disparait.",
+    "etapes": [
+      {
+        "etape": "Expression d'intention",
+        "detail": "Le client decrit un besoin ou une occasion via Ask Sparky.",
+        "acteur": "client"
+      },
+      {
+        "etape": "Synthese et recommandation",
+        "detail": "Le systeme RAG synthetise avis et fiches, renvoie des recommandations et des comparaisons.",
+        "acteur": "IA"
+      },
+      {
+        "etape": "Actions transactionnelles",
+        "detail": "Sparky aide a comparer, ajouter au panier et, selon les cas, reapprovisionner des essentiels.",
+        "acteur": "IA"
+      },
+      {
+        "etape": "Lecture des metriques",
+        "detail": "Panier moyen, unites et actifs hebdo sont suivis pour piloter l'extension des capacites.",
+        "acteur": "equipe data"
+      }
+    ]
+  },
+  "schema_flow": {
+    "statut": "approche_type",
+    "noeuds": [
+      {
+        "id": "client",
+        "role_generique": "humain",
+        "label": "Client app, site ou magasin"
+      },
+      {
+        "id": "sparky",
+        "role_generique": "canal_conversationnel",
+        "label": "Assistant Sparky"
+      },
+      {
+        "id": "llm",
+        "role_generique": "modele_ia",
+        "label": "LLM + RAG multimodal"
+      },
+      {
+        "id": "catalogue",
+        "role_generique": "data_source",
+        "label": "Catalogue et avis Walmart"
+      },
+      {
+        "id": "site",
+        "role_generique": "site_app",
+        "label": "Parcours d'achat Walmart"
+      }
+    ],
+    "liens": [
+      [
+        "client",
+        "sparky"
+      ],
+      [
+        "sparky",
+        "llm"
+      ],
+      [
+        "catalogue",
+        "llm"
+      ],
+      [
+        "llm",
+        "sparky"
+      ],
+      [
+        "sparky",
+        "site"
+      ]
+    ]
+  },
+  "replication": {
+    "statut_epistemique": "infere",
+    "prerequis_data": [
+      "catalogue produit enrichi et structure",
+      "avis clients",
+      "signaux d'intention par categorie"
+    ],
+    "prerequis_orga": [
+      "equipe IA interne ou partenaire",
+      "gouvernance de la qualite du catalogue"
+    ],
+    "stack_possible": [
+      "LLM fondation",
+      "moteur RAG sur catalogue",
+      "orchestration multimodale texte et image"
+    ],
+    "premiere_etape": "Auditer la richesse du catalogue (specs, attributs, avis) avant de brancher un assistant, car c'est le facteur limitant.",
+    "playbook": [
+      {
+        "action": "Auditer la richesse du catalogue (attributs, specs, avis) categorie par categorie.",
+        "livrable": "Rapport de couverture + plan d'enrichissement des fiches produit."
+      },
+      {
+        "action": "Construire le RAG catalogue + avis et un premier assistant sur quelques categories bien couvertes.",
+        "livrable": "Prototype qui repond a des intentions types (occasion, budget, contrainte)."
+      },
+      {
+        "action": "Lancer la beta in-app avec un point d'entree dedie sur un segment d'utilisateurs.",
+        "livrable": "Mesures panier moyen et engagement, utilisateurs vs non-utilisateurs."
+      },
+      {
+        "action": "Ajouter les actions transactionnelles (comparaison, ajout panier).",
+        "livrable": "Assistant transactionnel integre au checkout."
+      },
+      {
+        "action": "Etendre les capacites (reapprovisionnement, langues) selon les metriques.",
+        "livrable": "Roadmap arbitree par panier moyen, unites et actifs hebdo."
+      }
+    ],
+    "equipe": "1 PM + 3-4 ingenieurs (LLM/RAG, app) + equipe catalogue/contenu + 1 data analyst pour la mesure"
+  },
+  "seo": {
+    "slug": "walmart-sparky-assistant-2025",
+    "title": "Walmart Sparky : assistant shopping genAI - panier moyen +35% (2025)",
+    "meta_description": "Sparky, l'assistant genAI de Walmart, genere des paniers 35% plus eleves que les non-utilisateurs et a plus que quadruple les unites achetees en un trimestre.",
+    "resume_citable": "Les clients de Walmart qui utilisent l'assistant genAI Sparky ont un panier moyen environ 35% plus eleve que les non-utilisateurs, et les unites achetees via Sparky ont plus que quadruple en un trimestre fiscal (earnings call FY2026).",
+    "faq": [
+      {
+        "q": "Quel effet Sparky a-t-il sur le panier ?",
+        "a": "Walmart indique que le panier moyen des utilisateurs de Sparky est environ 35% plus eleve que celui des non-utilisateurs."
+      },
+      {
+        "q": "Ou Sparky est-il disponible ?",
+        "a": "Sur l'app, le site et les magasins Walmart aux Etats-Unis, avec un support en espagnol ajoute depuis le lancement."
+      }
+    ]
+  },
+  "logo_domain": "walmart.com",
+  "stack_technique": [
+    {
+      "nom": "Sparky",
+      "categorie": "outil",
+      "detail": "Assistant shopping genAI developpe en interne par Walmart, accessible via le bouton Ask Sparky dans l'app puis sur le site et en magasin.",
+      "url": "https://corporate.walmart.com"
+    },
+    {
+      "nom": "LLM de Sparky (modele exact non publie)",
+      "categorie": "llm",
+      "detail": "Walmart ne nomme pas publiquement le modele fondation ; les sources decrivent un dispositif LLM + RAG multimodal in-house.",
+      "url": "https://corporate.walmart.com"
+    },
+    {
+      "nom": "RAG sur catalogue et avis clients Walmart",
+      "categorie": "infra",
+      "detail": "La synthese des recommandations s'appuie sur les fiches produit et les avis ; la richesse du catalogue est le facteur limitant.",
+      "url": "https://www.walmart.com"
+    },
+    {
+      "nom": "App et site Walmart",
+      "categorie": "plateforme",
+      "detail": "Surfaces d'exposition de Sparky, integrees au parcours d'achat (comparaison, ajout panier, reapprovisionnement).",
+      "url": "https://www.walmart.com"
+    }
+  ]
+}

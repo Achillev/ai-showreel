@@ -1,0 +1,293 @@
+{
+  "id": "squirrel-ai-apprentissage-adaptatif-2024",
+  "type_fiche": "succes",
+  "marque": "Squirrel AI",
+  "groupe": "Yixue Squirrel AI",
+  "industrie": "education",
+  "marches_deploiement": [
+    "Chine (20+ provinces, 100+ villes)"
+  ],
+  "transposable_ue": {
+    "flag": "oui_avec_adaptations",
+    "note": "Apprentissage adaptatif sur mineurs, avec collecte massive de donnees comportementales. En UE, RGPD et AI Act (education = haut risque) imposeraient minimisation des donnees, base legale claire, supervision humaine et evaluation. Le modele chinois de reseau physique de centres n'est pas directement transposable ; la couche adaptative l'est."
+  },
+  "metier": "Product / pedagogie adaptative / reseau de centres",
+  "axes": {
+    "levier": "activation_conversion",
+    "touchpoints": [
+      "tablettes d'apprentissage Squirrel AI",
+      "centres physiques et boutiques",
+      "systeme adaptatif en ligne"
+    ],
+    "etape_parcours": "post-achat",
+    "famille": "personnalisation",
+    "pattern": "apprentissage adaptatif un-a-un piloté par la decomposition fine des connaissances",
+    "type_ia": [
+      "apprentissage adaptatif",
+      "graphe de connaissances / knowledge decomposition",
+      "modele de maitrise (knowledge tracing)"
+    ],
+    "plateforme_stack": [
+      "systeme adaptatif proprietaire Squirrel AI",
+      "donnees de 24M+ eleves et milliards de comportements d'apprentissage"
+    ],
+    "objectif_metrique": [
+      "maitrise des connaissances",
+      "taux de reussite aux exercices",
+      "efficacite d'apprentissage",
+      "engagement et motivation"
+    ]
+  },
+  "implementation": "custom",
+  "objectif_business": "Donner a chaque eleve un plan et un tutorat un-a-un genere par le systeme, avec une efficacite superieure a l'enseignement de masse, pour porter un reseau de centres et de tablettes a l'echelle de dizaines de millions d'eleves en Chine.",
+  "points_cles": ["Apprentissage adaptatif un-a-un via decomposition fine des points de connaissance.", "Systeme proprietaire avec graphe de connaissances et knowledge tracing.", "Plus de 24 millions d'eleves, record Guinness de 112 718 participants, maitrise de 41,6% a 85,1%.", "Preuve B, statut confirme (Time Best Inventions 2025, record homologue 2024)."],
+  "description": "Squirrel AI decompose chaque matiere en milliers de points de connaissance fins, puis diagnostique ce que l'eleve maitrise et construit un parcours individualise. Le systeme delivre exercices, explications et remediation en un-a-un, adaptes en continu aux reponses. Il est distribue via des centres physiques et des tablettes en Chine. En septembre 2024, Squirrel AI a organise une lecon de mathematiques en ligne synchronisant plus de 112 000 eleves, homologuee par le Guinness World Records.",
+  "resultats": [
+    {
+      "metrique": "Record Guinness - eleves a une lecon de maths en ligne sur 24h (sept. 2024)",
+      "valeur": "112 718 participants",
+      "citation_exacte": "112,718 participants for an online math lesson in Shanghai",
+      "source_ref": "S1"
+    },
+    {
+      "metrique": "Maitrise des connaissances en apprentissage synchronise (record)",
+      "valeur": "de 41,6% a 85,1%",
+      "citation_exacte": "Knowledge mastery improved from 41.6% to 85.1%",
+      "source_ref": "S1"
+    },
+    {
+      "metrique": "Eleves accompagnes par le systeme adaptatif (cumul)",
+      "valeur": "24 millions+",
+      "citation_exacte": "educating more than 24 million students in China",
+      "source_ref": "S2"
+    },
+    {
+      "metrique": "Gain de precision en raisonnement / application (etude)",
+      "valeur": "+16,8% / +11,6%",
+      "citation_exacte": "accuracy rates in reasoning and application by 16.8% and 11.6%",
+      "source_ref": "S3"
+    }
+  ],
+  "niveau_preuve": {
+    "niveau": "B",
+    "justification": "Chiffres d'echelle homologues par le Guinness World Records (evenement de sept. 2024) et repris par Time (Best Inventions 2025) et le Forum economique mondial ; gains d'apprentissage documentes par une etude academique. Sources concordantes, majoritairement officielles ou tierces, d'ou niveau B."
+  },
+  "dates": {
+    "lancement": "2016 (fondation) ; systeme adaptatif deploye a l'echelle depuis la fin des annees 2010",
+    "derniere_confirmation_activite": "2025 (Time Best Inventions 2025 ; record Guinness homologue en 2024)",
+    "verifie_le": "2026-07-11",
+    "revoir_apres": "2027-01-11"
+  },
+  "statut_vivant": {
+    "statut": "confirme",
+    "note": "Reconnu dans les Best Inventions 2025 de Time ; record Guinness de septembre 2024 ; reseau et systeme actifs en Chine. Contexte reglementaire chinois du tutorat prive a suivre."
+  },
+  "sources": [
+    {
+      "ref": "S1",
+      "type": "presse",
+      "fiabilite": "T2_officiel_interesse",
+      "titre": "Squirrel Ai Learning Sets Guinness World Record for the most users to take an online mathematics lesson in 24 hours (PR Newswire)",
+      "url": "https://www.prnewswire.com/news-releases/squirrel-ai-learning-sets-guinness-world-record-for-the-most-users-to-take-an-online-mathematics-lesson-in-24-hours-302324623.html",
+      "date_publication": "2024-11",
+      "consulte_le": "2026-07-11"
+    },
+    {
+      "ref": "S2",
+      "type": "presse",
+      "fiabilite": "T3_presse_etablie",
+      "titre": "Squirrel Ai Intelligent Adaptive Learning System: The Best Inventions of 2025 (TIME)",
+      "url": "https://time.com/collections/best-inventions-2025/7318298/squirrel-ai-intelligent-adaptive-learning-system/",
+      "date_publication": "2025",
+      "consulte_le": "2026-07-11"
+    },
+    {
+      "ref": "S3",
+      "type": "analyse_academique",
+      "fiabilite": "T4_secondaire",
+      "titre": "The Squirrel AI Adaptive Learning System Accompanying Millions of Children in Their Growth (ResearchGate)",
+      "url": "https://www.researchgate.net/publication/389306045_The_Squirrel_AI_Adaptive_Learning_System_Accompanying_Millions_of_Children_in_Their_Growth",
+      "date_publication": "2025",
+      "consulte_le": "2026-07-11"
+    },
+    {
+      "ref": "S4",
+      "type": "presse",
+      "fiabilite": "T3_presse_etablie",
+      "titre": "This AI tutor could make humans 10 times smarter, its creator says (World Economic Forum)",
+      "url": "https://www.weforum.org/stories/2024/07/ai-tutor-china-teaching-gaps/",
+      "date_publication": "2024-07",
+      "consulte_le": "2026-07-11"
+    }
+  ],
+  "fonctionnement_operationnel": {
+    "cadence": "Temps reel pendant la session ; reajustement du parcours a chaque reponse de l'eleve ; reentrainement des modeles sur la base de comportements accumules.",
+    "opere_par": "Equipe IA/pedagogie de Squirrel AI pour le systeme ; encadrants humains dans les centres pour l'accompagnement et la motivation.",
+    "signal_pilote": "L'etat de maitrise estime de chaque point de connaissance. Si le diagnostic est faux, le parcours propose des exercices mal calibres et l'efficacite promise s'effondre.",
+    "etapes": [
+      {
+        "etape": "Diagnostic",
+        "detail": "Le systeme evalue ce que l'eleve maitrise sur des points de connaissance fins.",
+        "acteur": "IA"
+      },
+      {
+        "etape": "Plan individualise",
+        "detail": "Un parcours d'exercices et d'explications est genere pour combler les lacunes detectees.",
+        "acteur": "IA"
+      },
+      {
+        "etape": "Remediation adaptative",
+        "detail": "A chaque reponse, le systeme reajuste la difficulte et le prochain contenu.",
+        "acteur": "IA"
+      },
+      {
+        "etape": "Accompagnement humain",
+        "detail": "Dans les centres, des encadrants soutiennent la motivation et gerent les cas hors modele.",
+        "acteur": "equipe data"
+      }
+    ]
+  },
+  "schema_flow": {
+    "statut": "approche_type",
+    "noeuds": [
+      {
+        "id": "n1",
+        "role_generique": "humain",
+        "label": "Eleve"
+      },
+      {
+        "id": "n2",
+        "role_generique": "site_app",
+        "label": "Tablette / interface Squirrel AI"
+      },
+      {
+        "id": "n3",
+        "role_generique": "modele_ia",
+        "label": "Moteur adaptatif (graphe de connaissances + knowledge tracing)"
+      },
+      {
+        "id": "n4",
+        "role_generique": "data_source",
+        "label": "Reponses eleve et historique de comportements"
+      },
+      {
+        "id": "n5",
+        "role_generique": "humain",
+        "label": "Encadrant en centre"
+      }
+    ],
+    "liens": [
+      [
+        "n1",
+        "n2"
+      ],
+      [
+        "n2",
+        "n4"
+      ],
+      [
+        "n4",
+        "n3"
+      ],
+      [
+        "n3",
+        "n2",
+        "prochain exercice adapte au niveau de maitrise"
+      ],
+      [
+        "n2",
+        "n1"
+      ],
+      [
+        "n5",
+        "n1",
+        "motivation et cas hors modele"
+      ]
+    ]
+  },
+  "replication": {
+    "statut_epistemique": "infere",
+    "prerequis_data": [
+      "decomposition fine du programme en points de connaissance",
+      "historique de reponses eleve pour estimer la maitrise",
+      "volume de donnees suffisant pour calibrer le modele adaptatif"
+    ],
+    "prerequis_orga": [
+      "equipe pedagogique pour construire le graphe de connaissances",
+      "equipe data science pour le knowledge tracing",
+      "reseau de distribution (centres, tablettes ou app) et conformite donnees mineurs"
+    ],
+    "stack_possible": [
+      "moteur d'apprentissage adaptatif (proprietaire ou plateforme)",
+      "graphe de connaissances par matiere",
+      "modele de maitrise / knowledge tracing"
+    ],
+    "premiere_etape": "Decomposer une matiere en points de connaissance fins et instrumenter les reponses, avant de brancher le moteur adaptatif.",
+    "playbook": [
+      {
+        "action": "Faire construire par l'equipe pedagogique le graphe de points de connaissance fins sur une matiere pilote",
+        "livrable": "Graphe de connaissances valide par des enseignants"
+      },
+      {
+        "action": "Produire la banque d'exercices taggee sur le graphe et tracer chaque reponse eleve",
+        "livrable": "Plateforme d'exercices instrumentee, premieres donnees de reponse"
+      },
+      {
+        "action": "Entrainer le modele de maitrise (knowledge tracing) sur les reponses accumulees",
+        "livrable": "Diagnostic de maitrise evalue contre des tests de reference"
+      },
+      {
+        "action": "Boucler l'adaptatif : generer le parcours individualise (prochain exercice, remediation) a partir du diagnostic",
+        "livrable": "Moteur adaptatif en pilote sur un groupe d'eleves"
+      },
+      {
+        "action": "Ajouter l'accompagnement humain (motivation, cas hors modele) et la conformite donnees mineurs, puis etendre aux autres matieres",
+        "livrable": "Dispositif complet mesure sur la progression avant/apres"
+      }
+    ],
+    "equipe": "2-3 experts pedagogiques + 2 data scientists + 1-2 devs + 1 DPO ou juriste pour les donnees de mineurs"
+  },
+  "seo": {
+    "slug": "squirrel-ai-apprentissage-adaptatif-2024",
+    "title": "Squirrel AI : apprentissage adaptatif - 24M d'eleves et record Guinness (2024)",
+    "meta_description": "Squirrel AI, apprentissage adaptatif un-a-un en Chine, a accompagne plus de 24 millions d'eleves et etabli un record Guinness (112 718 eleves a une lecon de maths, 2024).",
+    "resume_citable": "Squirrel AI, systeme d'apprentissage adaptatif un-a-un deploye en Chine, a accompagne plus de 24 millions d'eleves et etabli en septembre 2024 un record Guinness de 112 718 participants a une lecon de maths en ligne, avec une maitrise passant de 41,6% a 85,1% en apprentissage synchronise.",
+    "faq": [
+      {
+        "q": "Comment fonctionne Squirrel AI ?",
+        "a": "Le systeme decompose chaque matiere en milliers de points de connaissance fins, diagnostique la maitrise de l'eleve, puis genere un parcours individualise d'exercices et de remediation reajuste a chaque reponse."
+      },
+      {
+        "q": "Quelle est son echelle ?",
+        "a": "Plus de 24 millions d'eleves accompagnes en Chine selon la presse, et un record Guinness homologue de 112 718 participants a une lecon de maths en ligne en septembre 2024."
+      }
+    ]
+  },
+  "logo_domain": "squirrelai.com",
+  "stack_technique": [
+    {
+      "nom": "Systeme adaptatif proprietaire Squirrel AI",
+      "categorie": "plateforme",
+      "detail": "moteur qui diagnostique la maitrise de l'eleve et genere le parcours un-a-un, exercice par exercice",
+      "url": "https://squirrelai.com"
+    },
+    {
+      "nom": "Graphe de connaissances par matiere",
+      "categorie": "outil",
+      "detail": "decomposition de chaque matiere en milliers de points de connaissance fins, construite par l'equipe pedagogique",
+      "url": "https://squirrelai.com"
+    },
+    {
+      "nom": "Modele de maitrise (knowledge tracing)",
+      "categorie": "outil",
+      "detail": "estimation en continu de ce que l'eleve maitrise, calibree sur les comportements d'apprentissage de plus de 24 millions d'eleves",
+      "url": "https://squirrelai.com"
+    },
+    {
+      "nom": "Tablettes et centres physiques",
+      "categorie": "infra",
+      "detail": "reseau de distribution : centres dans plus de 100 villes chinoises et tablettes d'apprentissage dediees",
+      "url": "https://squirrelai.com"
+    }
+  ]
+}

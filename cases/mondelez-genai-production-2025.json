@@ -1,0 +1,276 @@
+{
+  "id": "mondelez-genai-production-2025",
+  "type_fiche": "succes",
+  "marque": "Mondelez International",
+  "groupe": "Mondelez International",
+  "industrie": "cpg_d2c",
+  "marches_deploiement": [
+    "Etats-Unis",
+    "Bresil (Lacta)",
+    "Royaume-Uni (Cadbury)",
+    "Europe (Milka)"
+  ],
+  "transposable_ue": {
+    "flag": "oui",
+    "note": "Mondelez evite les images de personnes et passe tout le contenu genere par une revue humaine, ce qui limite l'exposition RGPD et facilite la conformite AI Act sur les visuels synthetiques. Milka et Cadbury sont deja des marques europeennes."
+  },
+  "metier": "marketing",
+  "intervenants": [
+    {
+      "nom": "Jon Halvorson",
+      "role": "Global Senior Vice President of Consumer Experience, Mondelez",
+      "source_ref": "S1"
+    },
+    {
+      "nom": "Tina Vaswani",
+      "role": "Vice President of Digital Enablement and Data, Mondelez",
+      "source_ref": "S1"
+    }
+  ],
+  "agences": [
+    {
+      "nom": "Accenture",
+      "role": "Co-developpement de la plateforme genAI proprietaire",
+      "source_ref": "S1"
+    },
+    {
+      "nom": "Publicis Groupe",
+      "role": "Co-developpement de la plateforme genAI proprietaire",
+      "source_ref": "S1"
+    }
+  ],
+  "axes": {
+    "levier": "acquisition",
+    "touchpoints": [
+      "social",
+      "pages produit e-commerce",
+      "publicite TV (a venir)"
+    ],
+    "etape_parcours": "découverte",
+    "famille": "generation",
+    "pattern": "plateforme genAI proprietaire de production publicitaire",
+    "type_ia": [
+      "generation d'images",
+      "generation video",
+      "modeles generatifs"
+    ],
+    "plateforme_stack": [
+      "plateforme proprietaire Mondelez",
+      "Accenture",
+      "Publicis Groupe"
+    ],
+    "objectif_metrique": [
+      "cout de production",
+      "vitesse de mise en marche",
+      "nombre de variantes creatives"
+    ]
+  },
+  "implementation": "custom",
+  "stack_technique": [
+    {
+      "nom": "Plateforme genAI proprietaire Mondelez",
+      "categorie": "plateforme",
+      "detail": "Plateforme interne de production publicitaire (40 M$ investis) : visuels et videos produit animes, avec workflow de revue humaine et exclusion des images de personnes.",
+      "url": "https://www.mondelezinternational.com"
+    },
+    {
+      "nom": "Modeles de generation d'images et de video",
+      "categorie": "llm",
+      "detail": "Modeles generatifs integres a la plateforme ; leurs noms ne sont pas publies dans les sources.",
+      "url": "https://www.mondelezinternational.com"
+    },
+    {
+      "nom": "Accenture",
+      "categorie": "integrateur",
+      "detail": "Co-developpement de la plateforme genAI proprietaire.",
+      "url": "https://www.accenture.com"
+    },
+    {
+      "nom": "Publicis Groupe",
+      "categorie": "integrateur",
+      "detail": "Co-developpement de la plateforme genAI proprietaire.",
+      "url": "https://www.publicisgroupe.com"
+    }
+  ],
+  "objectif_business": "Reduire la part du budget publicitaire mangee par la creation et la production (environ 60 pour cent chez un grand CPG), produire plus de variantes plus vite, et depenser moins en agences externes.",
+  "description": "Mondelez a investi 40 millions de dollars dans une plateforme genAI proprietaire, developpee avec Accenture et Publicis Groupe. Le groupe cible une baisse de 30 a 50 pour cent du cout de production du contenu marketing, sur un poste creation-production qui pese environ 60 pour cent du budget publicitaire d'un grand fabricant de biens de grande consommation. Les premiers usages sont deja en ligne : contenu social pour Chips Ahoy et Milka, pages produit Oreo sur Amazon et Walmart. Le groupe evite pour l'instant les images de personnes et se concentre sur des visuels de produit animes, avec revue humaine de tout ce que l'IA sort. La feuille de route pousse vers des spots TV courts prets a diffuser pour les fetes 2025-2026, avec l'ambition affichee d'un passage a un format Super Bowl 2027. Un exemple cite : une animation Milka de huit secondes ou des vagues de chocolat deferlent sur un biscuit, ce type de plan coutant traditionnellement des centaines de milliers de dollars.",
+  "resultats": [
+    {
+      "metrique": "Investissement engage",
+      "valeur": "40 M$",
+      "citation_exacte": "$40 million",
+      "source_ref": "S1"
+    },
+    {
+      "metrique": "Reduction visee du cout de production du contenu marketing",
+      "valeur": "30% a 50%",
+      "citation_exacte": "30% to 50%",
+      "source_ref": "S1"
+    },
+    {
+      "metrique": "Part du budget publicitaire en creation-production (contexte CPG)",
+      "valeur": "environ 60%",
+      "citation_exacte": "creative development and production consume about 60% of advertising budgets",
+      "source_ref": "S2"
+    }
+  ],
+  "niveau_preuve": {
+    "niveau": "C",
+    "justification": "Investissement et objectifs annonces par Mondelez via ses dirigeants, repris par CNBC et la presse specialisee ; la baisse de cout est un objectif chiffre, pas encore un resultat audite, donc C."
+  },
+  "dates": {
+    "lancement": "2025-10 (annonce, premiers usages sociaux deja en ligne)",
+    "derniere_confirmation_activite": "2025-10",
+    "verifie_le": "2026-07-11",
+    "revoir_apres": "2027-01-11"
+  },
+  "statut_vivant": {
+    "statut": "confirme",
+    "note": "Plateforme annoncee en octobre 2025 avec usages sociaux deja live (Chips Ahoy, Milka) et pages produit Oreo ; deploiements TV programmes pour les fetes."
+  },
+  "sources": [
+    {
+      "ref": "S1",
+      "type": "presse",
+      "fiabilite": "T4_secondaire",
+      "titre": "Mondelez invests $40m in generative AI to cut marketing costs",
+      "url": "https://www.foodbev.com/news/mondelez-invests-40m-in-generative-ai-to-cut-marketing-costs",
+      "date_publication": "2025-10-27",
+      "consulte_le": "2026-07-11"
+    },
+    {
+      "ref": "S2",
+      "type": "presse",
+      "fiabilite": "T3_presse_etablie",
+      "titre": "Oreo-maker Mondelez to use new generative AI tool to slash marketing costs",
+      "url": "https://www.cnbc.com/2025/10/24/oreo-maker-mondelez-to-use-new-generative-ai-tool-to-slash-marketing-costs.html",
+      "date_publication": "2025-10-24",
+      "consulte_le": "2026-07-11"
+    }
+  ],
+  "fonctionnement_operationnel": {
+    "cadence": "Par campagne et par lancement ; production de nombreuses variantes a la demande, revue humaine systematique avant diffusion.",
+    "opere_par": "Equipes consumer experience et data de Mondelez, avec Accenture et Publicis sur la plateforme.",
+    "signal_pilote": "La fidelite du rendu produit et le respect des chartes de marque. Le garde-fou tenu : pas d'images de personnes, revue humaine de chaque sortie avant mise en ligne.",
+    "etapes": [
+      {
+        "etape": "Brief et cadrage",
+        "detail": "Definition du produit, du format et du message par marche, alimentes dans la plateforme proprietaire.",
+        "acteur": "marketing / marque"
+      },
+      {
+        "etape": "Generation des variantes",
+        "detail": "Production de visuels et videos produit animes (ex. animation Milka), en plusieurs versions.",
+        "acteur": "IA / plateforme (Accenture, Publicis)"
+      },
+      {
+        "etape": "Revue humaine",
+        "detail": "Controle qualite et conformite de chaque sortie avant diffusion ; exclusion des images de personnes.",
+        "acteur": "equipe creative Mondelez"
+      },
+      {
+        "etape": "Diffusion",
+        "detail": "Mise en ligne sur social et pages produit e-commerce, extension progressive vers la TV.",
+        "acteur": "marketing / e-commerce"
+      }
+    ]
+  },
+  "schema_flow": {
+    "statut": "approche_type",
+    "noeuds": [
+      {
+        "id": "brief",
+        "role_generique": "humain",
+        "label": "Brief marque (produit, format, marche)"
+      },
+      {
+        "id": "plat",
+        "role_generique": "modele_ia",
+        "label": "Plateforme genAI proprietaire",
+        "outil_documente": "Mondelez + Accenture + Publicis"
+      },
+      {
+        "id": "rev",
+        "role_generique": "humain",
+        "label": "Revue humaine (qualite, conformite)"
+      },
+      {
+        "id": "chan",
+        "role_generique": "paid_platform",
+        "label": "Social / pages produit / TV"
+      }
+    ],
+    "liens": [
+      [
+        "brief",
+        "plat"
+      ],
+      [
+        "plat",
+        "rev"
+      ],
+      [
+        "rev",
+        "chan"
+      ],
+      [
+        "rev",
+        "plat",
+        "corrections renvoyees pour regeneration"
+      ]
+    ]
+  },
+  "replication": {
+    "statut_epistemique": "infere",
+    "playbook": [
+      {
+        "action": "Choisir un perimetre a fort volume (contenu social et fiches produit d'une marque) et reunir assets produit, packagings et chartes.",
+        "livrable": "Corpus de marque pret et backlog de formats a produire."
+      },
+      {
+        "action": "Monter un POC avec un integrateur ou une equipe interne sur un lot de visuels produit, en fixant les garde-fous (pas de personnes, revue humaine systematique).",
+        "livrable": "Premiers visuels valides par la marque et charte de garde-fous ecrite."
+      },
+      {
+        "action": "Industrialiser le workflow generation -> revue -> publication et mesurer le cout par asset avant/apres.",
+        "livrable": "Pipeline outille avec cout par visuel documente."
+      },
+      {
+        "action": "Etendre a d'autres marques et marches, puis aux formats video courts.",
+        "livrable": "Catalogue de variantes multi-marches en production et bilan d'economies."
+      }
+    ],
+    "equipe": "1 lead contenu + 1-2 creatifs (direction artistique, prompts) + 1 profil data/outillage, plus la revue humaine par les equipes de marque ; integrateur en option.",
+    "prerequis_data": [
+      "assets produit et chartes de marque",
+      "references packaging par marche"
+    ],
+    "prerequis_orga": [
+      "equipe capable de piloter une plateforme genAI et d'en assurer la revue",
+      "arbitrage make-or-buy vis-a-vis des agences externes"
+    ],
+    "stack_possible": [
+      "plateforme genAI (maison ou via integrateur)",
+      "modeles image et video",
+      "workflow de revue humaine"
+    ],
+    "premiere_etape": "Cibler le contenu social et les pages produit e-commerce, la ou les volumes et la repetitivite justifient l'automatisation."
+  },
+  "seo": {
+    "slug": "mondelez-genai-production-2025",
+    "title": "Mondelez : 40 M$ dans une plateforme genAI pour couper 30 a 50% du cout de production pub (2025)",
+    "meta_description": "Mondelez investit 40 M$ dans une plateforme genAI (Accenture, Publicis) visant 30 a 50% d'economies sur la production marketing. Chips Ahoy et Milka deja live.",
+    "resume_citable": "Mondelez a investi 40 millions de dollars dans une plateforme genAI proprietaire (avec Accenture et Publicis) visant 30 a 50% de baisse du cout de production marketing, avec du contenu social deja en ligne pour Chips Ahoy et Milka.",
+    "faq": [
+      {
+        "q": "Que produit la plateforme genAI de Mondelez aujourd'hui ?",
+        "a": "Du contenu social (Chips Ahoy, Milka) et des pages produit Oreo, avec des spots TV courts programmes pour les fetes et une revue humaine systematique."
+      },
+      {
+        "q": "Mondelez utilise-t-il des images de personnes generees ?",
+        "a": "Non, le groupe evite les images de personnes et se concentre sur des visuels de produit animes."
+      }
+    ]
+  },
+  "logo_domain": "mondelezinternational.com"
+}

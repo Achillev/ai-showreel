@@ -1,0 +1,264 @@
+{
+  "id": "mars-creativex-creative-quality-2024",
+  "type_fiche": "succes",
+  "marque": "Mars",
+  "groupe": "Mars, Incorporated",
+  "industrie": "cpg_d2c",
+  "marches_deploiement": [
+    "Monde (65 marches vises)",
+    "Etats-Unis",
+    "Royaume-Uni"
+  ],
+  "transposable_ue": {
+    "flag": "oui",
+    "note": "Le systeme note la qualite creative des assets publicitaires, sans profilage individuel ; exposition RGPD faible. Transposable tel quel dans l'UE, ou le programme est deja deploye via un reseau media multi-marches."
+  },
+  "metier": "marketing, media",
+  "agences": [
+    {
+      "nom": "CreativeX",
+      "role": "Plateforme de mesure de la qualite creative (Creative Quality Score), notation des assets par IA",
+      "source_ref": "S1"
+    },
+    {
+      "nom": "EssenceMediaCom",
+      "role": "Agence media, co-pilotage du programme d'excellence creative",
+      "source_ref": "S1"
+    }
+  ],
+  "axes": {
+    "levier": "acquisition",
+    "touchpoints": [
+      "paid social",
+      "video (TikTok, plateformes)",
+      "display"
+    ],
+    "etape_parcours": "découverte",
+    "famille": "optimisation_automatisation",
+    "pattern": "scoring IA de la qualite creative branche sur la production media",
+    "type_ia": [
+      "vision par ordinateur",
+      "scoring / classification creative"
+    ],
+    "plateforme_stack": [
+      "CreativeX (Creative Quality Score)"
+    ],
+    "objectif_metrique": [
+      "ROI sur ventes (NSV)",
+      "cout par vue completee",
+      "conformite aux guidelines creatives"
+    ]
+  },
+  "implementation": "plateforme",
+  "objectif_business": "Faire respecter des standards de qualite creative a l'echelle de dizaines de marques et de marches, pour que le budget media travaille mieux plutot que de financer des assets mal calibres.",
+  "points_cles": ["Scoring IA de la qualite creative des assets publicitaires, branche sur la production media.", "Plateforme CreativeX (Creative Quality Score, vision), agence EssenceMediaCom.", "Environ +33 % de ROI NSV sur TikTok pour les assets a score eleve, 50 marques et 65 marches.", "Preuve B, statut signaux mitiges : derniere preuve chiffree sur 2023-2024."],
+  "description": "Mars et son agence EssenceMediaCom se sont appuyes sur CreativeX pour deployer un programme d'excellence creative sur 50 marques et 65 marches, sur cinq ans. CreativeX note chaque asset avec un Creative Quality Score, branche sur l'ecosysteme de production de contenu du groupe (plateformes, agences, partenaires media, equipes de mesure). L'IA verifie si les assets respectent les regles creatives des plateformes (cadrage, logo, duree, sous-titres, etc.). Sur 30 campagnes Mars mesurees sur TikTok entre 2023 et 2024, les assets qui suivaient quatre regles creatives ou plus, et affichaient un score de qualite eleve, ont surperforme : environ 33 pour cent de ROI NSV en plus sur TikTok. Le programme est presente comme generant des economies media chiffrees en millions. C'est un cas d'optimisation, pas de generation : l'IA n'ecrit pas la creation, elle la note et oriente le budget vers ce qui marche.",
+  "resultats": [
+    {
+      "metrique": "ROI sur ventes (NSV) sur TikTok, assets a score de qualite eleve",
+      "valeur": "environ +33%",
+      "citation_exacte": "33% higher NSV ROI on TikTok",
+      "source_ref": "S1"
+    },
+    {
+      "metrique": "Echelle du programme, 65 marches sur 5 ans",
+      "valeur": "50 marques",
+      "citation_exacte": "50 brands and 65 markets over five years",
+      "source_ref": "S2"
+    },
+    {
+      "metrique": "Cout par vue completee pour +10 pts de score creatif (recherche CreativeX 2024)",
+      "valeur": "-6,3% de cout",
+      "citation_exacte": "every 10 percentage point improvement in Creative Quality Score led to a 6.3% reduction in Cost Per Completed View",
+      "source_ref": "S1"
+    }
+  ],
+  "niveau_preuve": {
+    "niveau": "B",
+    "justification": "Etude de cas chiffree du partenaire de mesure (CreativeX / Circana) citant nommement Mars ; source interessee, d'ou B et non A, mais quantifiee et multi-marches."
+  },
+  "dates": {
+    "lancement": "2023 (programme), donnees 2023-2024",
+    "derniere_confirmation_activite": "2024",
+    "verifie_le": "2026-07-11",
+    "revoir_apres": "2027-01-11"
+  },
+  "statut_vivant": {
+    "statut": "signaux_mitiges",
+    "note": "Programme decrit comme s'etalant sur cinq ans, donc structurellement vivant, mais la derniere preuve chiffree publique porte sur 2023-2024. A reconfirmer avec des donnees plus recentes."
+  },
+  "sources": [
+    {
+      "ref": "S1",
+      "type": "customer_story_plateforme",
+      "fiabilite": "T4_secondaire",
+      "titre": "See How Mars' AI-Led Digital Strategy is Leveling Up Creative Quality",
+      "url": "https://www.circana.com/post/mars-levels-up-creative-quality",
+      "date_publication": "2024",
+      "consulte_le": "2026-07-11"
+    },
+    {
+      "ref": "S2",
+      "type": "customer_story_plateforme",
+      "fiabilite": "T2_officiel_interesse",
+      "titre": "How Mars scaled a creative excellence program across 50 brands and 65 markets",
+      "url": "https://www.creativex.com/blog/video-how-mars-scaled-a-creative-excellence-program-across-50-brands-and-65-markets-to-unlock-multi-millions-in-media-savings",
+      "date_publication": "2024",
+      "consulte_le": "2026-07-11"
+    }
+  ],
+  "fonctionnement_operationnel": {
+    "cadence": "Continu : chaque asset produit est note avant et pendant la diffusion, avec boucle de correction par campagne.",
+    "opere_par": "Equipes media et brand de Mars, avec EssenceMediaCom, sur la plateforme CreativeX.",
+    "signal_pilote": "Le Creative Quality Score et le respect des guidelines creatives des plateformes. Sans flux d'assets connecte a la plateforme, le scoring n'a rien a mesurer et le programme s'arrete.",
+    "etapes": [
+      {
+        "etape": "Ingestion des assets",
+        "detail": "Les creations passent par CreativeX, branche sur les plateformes, agences et partenaires media.",
+        "acteur": "equipe media / agence"
+      },
+      {
+        "etape": "Notation automatique",
+        "detail": "L'IA attribue un Creative Quality Score et verifie le respect des regles creatives par plateforme.",
+        "acteur": "IA (CreativeX)"
+      },
+      {
+        "etape": "Correction et arbitrage",
+        "detail": "Les assets faibles sont corriges ou depriorises ; le budget se concentre sur les creations a score eleve.",
+        "acteur": "equipes brand / media"
+      },
+      {
+        "etape": "Mesure de l'impact",
+        "detail": "Suivi du ROI NSV et du cout par vue completee pour boucler sur la qualite creative.",
+        "acteur": "equipe mesure / Circana"
+      }
+    ]
+  },
+  "schema_flow": {
+    "statut": "documente",
+    "noeuds": [
+      {
+        "id": "assets",
+        "role_generique": "data_source",
+        "label": "Assets creatifs (50 marques, 65 marches)"
+      },
+      {
+        "id": "score",
+        "role_generique": "modele_ia",
+        "label": "Notation qualite creative",
+        "outil_documente": "CreativeX (Creative Quality Score)"
+      },
+      {
+        "id": "team",
+        "role_generique": "humain",
+        "label": "Equipes brand / media + EssenceMediaCom"
+      },
+      {
+        "id": "media",
+        "role_generique": "paid_platform",
+        "label": "Plateformes media (TikTok, etc.)"
+      }
+    ],
+    "liens": [
+      [
+        "assets",
+        "score"
+      ],
+      [
+        "score",
+        "team"
+      ],
+      [
+        "team",
+        "media"
+      ],
+      [
+        "media",
+        "score",
+        "performance renvoyee pour ajuster le budget"
+      ]
+    ]
+  },
+  "replication": {
+    "statut_epistemique": "infere",
+    "prerequis_data": [
+      "flux d'assets creatifs centralise",
+      "acces aux performances media par plateforme"
+    ],
+    "prerequis_orga": [
+      "standards creatifs partages entre marques et agences",
+      "gouvernance media capable d'imposer les correctifs"
+    ],
+    "stack_possible": [
+      "plateforme de creative analytics (CreativeX ou equivalent)",
+      "connexion aux regies media"
+    ],
+    "premiere_etape": "Connecter les assets d'une plateforme (ex. TikTok) au scoring creatif et comparer la performance des assets a score eleve vs bas.",
+    "playbook": [
+      {
+        "action": "Centraliser le flux d'assets d'une plateforme pilote (par exemple TikTok) et le connecter au scoring",
+        "livrable": "Assets d'un premier lot de campagnes ingeres dans la plateforme"
+      },
+      {
+        "action": "Encoder les regles creatives a verifier par plateforme, alignees entre marques et agences",
+        "livrable": "Referentiel de guidelines partage et parametre"
+      },
+      {
+        "action": "Scorer le stock de campagnes et lire les ecarts par marque",
+        "livrable": "Baseline de Creative Quality Score par marque et par plateforme"
+      },
+      {
+        "action": "Corriger ou deprioriser les assets faibles et concentrer le budget sur les scores eleves",
+        "livrable": "Campagnes relancees avec un mix d'assets conforme"
+      },
+      {
+        "action": "Mesurer le lien score/performance (ROI NSV, cout par vue completee) pour trancher l'extension",
+        "livrable": "Lecture chiffree qui justifie ou non le passage multi-marques"
+      }
+    ],
+    "equipe": "1 responsable excellence creative + l'agence media + un relais brand par marque"
+  },
+  "seo": {
+    "slug": "mars-creativex-creative-quality-2024",
+    "title": "Mars : scoring IA de la qualite creative sur 50 marques - +33% de ROI NSV sur TikTok (2024)",
+    "meta_description": "Mars note la qualite creative de ses pubs par IA (CreativeX) sur 50 marques et 65 marches : +33% de ROI NSV sur TikTok pour les meilleurs assets.",
+    "resume_citable": "Mars a deploye avec CreativeX un scoring IA de la qualite creative sur 50 marques et 65 marches ; sur 30 campagnes TikTok 2023-2024, les assets a score eleve ont degage environ 33% de ROI NSV en plus.",
+    "faq": [
+      {
+        "q": "L'IA de Mars genere-t-elle la creation publicitaire ?",
+        "a": "Non. Elle note la qualite creative des assets et oriente le budget media vers ceux qui respectent les regles et performent le mieux. C'est de l'optimisation, pas de la generation."
+      },
+      {
+        "q": "Quel gain mesure Mars ?",
+        "a": "Environ 33 pour cent de ROI NSV en plus sur TikTok pour les assets a score de qualite eleve, sur 30 campagnes mesurees en 2023-2024."
+      }
+    ]
+  },
+  "logo_domain": "mars.com",
+  "stack_technique": [
+    {
+      "nom": "CreativeX",
+      "categorie": "plateforme",
+      "detail": "plateforme de creative analytics qui note chaque asset par vision par ordinateur (Creative Quality Score) et verifie les regles creatives par plateforme (cadrage, logo, duree, sous-titres)",
+      "url": "https://www.creativex.com"
+    },
+    {
+      "nom": "Connecteurs regies media",
+      "categorie": "infra",
+      "detail": "le scoring se branche sur l'ecosysteme de production et les plateformes (TikTok, paid social, display) pour lire assets et performances",
+      "url": "https://www.creativex.com"
+    },
+    {
+      "nom": "EssenceMediaCom",
+      "categorie": "integrateur",
+      "detail": "agence media, co-pilotage du programme d'excellence creative sur 50 marques et 65 marches",
+      "url": "https://www.essencemediacom.com"
+    },
+    {
+      "nom": "Circana",
+      "categorie": "outil",
+      "detail": "partenaire de mesure du lien entre score creatif et ROI sur ventes (NSV)",
+      "url": "https://www.circana.com"
+    }
+  ]
+}

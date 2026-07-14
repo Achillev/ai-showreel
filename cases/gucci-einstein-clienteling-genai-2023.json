@@ -1,0 +1,259 @@
+{
+  "id": "gucci-einstein-clienteling-genai-2023",
+  "type_fiche": "succes",
+  "marque": "Gucci",
+  "groupe": "Kering",
+  "industrie": "luxe_beaute",
+  "marches_deploiement": [
+    "International (7 hubs de service client)",
+    "Italie (Gucci 9)"
+  ],
+  "transposable_ue": {
+    "flag": "oui",
+    "note": "Marque italienne, service client multi-canal. L'IA genere des suggestions de reponse a partir de donnees client internes ; encadrer le traitement des donnees de conversation (RGPD) et garder le conseiller decisionnaire sur le message envoye."
+  },
+  "metier": "service client / clienteling",
+  "intervenants": [
+    {
+      "nom": "Vasilis Dimtropoulos",
+      "role": "VP Global Gucci 9",
+      "source_ref": "S2"
+    }
+  ],
+  "axes": {
+    "levier": "retention",
+    "touchpoints": [
+      "conseiller Gucci 9",
+      "telephone",
+      "WhatsApp",
+      "chat / messagerie"
+    ],
+    "etape_parcours": "post-achat",
+    "famille": "conversation",
+    "pattern": "copilote genAI pour conseiller (suggestion de reponse au ton de marque)",
+    "type_ia": [
+      "genAI",
+      "LLM",
+      "generation de reponse assistee"
+    ],
+    "plateforme_stack": [
+      "Salesforce Einstein for Service"
+    ],
+    "objectif_metrique": [
+      "coherence du ton de marque",
+      "montee en competence des conseillers",
+      "qualite de la relation client"
+    ]
+  },
+  "implementation": "plateforme",
+  "objectif_business": "Aider les conseillers de Gucci 9 a repondre aux clients avec une voix de marque coherente sur tous les canaux, et raccourcir la montee en competence des nouveaux conseillers sans diluer le service haut de gamme.",
+  "description": "Gucci a place l'IA au coeur de Gucci 9, son reseau mondial de service client. Avec Einstein for Service de Salesforce, le systeme genere des suggestions de reponse courtes dans une voix de marque guccifiee, en combinant donnees internes et IA, pour aider les conseillers a traiter des demandes qui vont de la restauration d'un sac vintage a la reservation dans un restaurant Gucci Osteria. Le conseiller peut utiliser la reponse telle quelle, la modifier pour personnaliser l'echange, ou ecrire la sienne. Gucci 9 s'appuie sur 600 conseillers repartis dans sept hubs mondiaux, joignables en boutique, par telephone ou via WhatsApp. Le dispositif raccourcit l'apprentissage de la voix de marque pour les nouveaux entrants.",
+  "resultats": [
+    {
+      "metrique": "Conseillers Gucci 9 couverts, sur 7 hubs mondiaux",
+      "valeur": "600 conseillers",
+      "citation_exacte": "600 client advisors across seven global hubs",
+      "source_ref": "S1"
+    },
+    {
+      "metrique": "Effet rapporte sur les nouveaux conseillers",
+      "valeur": "apprentissage de la voix de marque raccourci",
+      "citation_exacte": "shortened the learning curve for new team members",
+      "source_ref": "S1"
+    }
+  ],
+  "niveau_preuve": {
+    "niveau": "C",
+    "justification": "Customer story Salesforce chiffrant l'echelle de deploiement (600 conseillers, 7 hubs), confirmee par une presse specialisee citant nommement Gucci et le VP Global Gucci 9 avec des resultats positifs. Pas de metrique de conversion ou de revenu publique."
+  },
+  "dates": {
+    "lancement": "2023 (Einstein for Service integre a Gucci 9 ; tests amorces ~18 mois plus tot)",
+    "derniere_confirmation_activite": "2023 (customer story Salesforce et couverture presse)",
+    "verifie_le": "2026-07-11",
+    "revoir_apres": "2027-01-31"
+  },
+  "statut_vivant": {
+    "statut": "confirme",
+    "note": "Gucci 9 est un reseau de service client operationnel ; l'usage d'Einstein for Service est documente en 2023. Derniere confirmation publique chiffree datant de 2023."
+  },
+  "sources": [
+    {
+      "ref": "S1",
+      "type": "customer_story_plateforme",
+      "fiabilite": "T2_officiel_interesse",
+      "titre": "AI amplifies the Gucci voice across client service centers (Salesforce customer story)",
+      "url": "https://www.salesforce.com/customer-stories/gucci-ai-amplifies-client-service/",
+      "date_publication": "2023",
+      "consulte_le": "2026-07-11"
+    },
+    {
+      "ref": "S2",
+      "type": "presse",
+      "fiabilite": "T4_secondaire",
+      "titre": "Enterprise AI at the speed of trust? Marc Benioff sets out Salesforce's generative AI stall",
+      "url": "https://diginomica.com/enterprise-ai-speed-trust-marc-benioff-sets-out-salesforces-generative-ai-stall",
+      "date_publication": "2023-06",
+      "consulte_le": "2026-07-11"
+    }
+  ],
+  "fonctionnement_operationnel": {
+    "cadence": "Temps reel pendant l'echange client ; suggestions generees a chaque interaction",
+    "opere_par": "Conseillers Gucci 9 dans les sept hubs, sur Einstein for Service",
+    "signal_pilote": "Les donnees client internes et le referentiel de ton de marque qui alimentent la suggestion. Sans ce referentiel guccifie, la reponse generee sort de la voix de marque et devient inutilisable.",
+    "etapes": [
+      {
+        "etape": "Demande client",
+        "detail": "Un client contacte Gucci 9 en boutique, par telephone ou via WhatsApp.",
+        "acteur": "client"
+      },
+      {
+        "etape": "Suggestion de reponse",
+        "detail": "Einstein for Service genere une reponse courte dans la voix de marque a partir des donnees internes.",
+        "acteur": "IA"
+      },
+      {
+        "etape": "Arbitrage du conseiller",
+        "detail": "Le conseiller utilise, edite ou reecrit la suggestion selon le contexte relationnel.",
+        "acteur": "conseiller"
+      },
+      {
+        "etape": "Montee en competence",
+        "detail": "Les suggestions servent aussi de guide de ton pour former plus vite les nouveaux conseillers.",
+        "acteur": "conseiller / management"
+      }
+    ]
+  },
+  "schema_flow": {
+    "statut": "documente",
+    "noeuds": [
+      {
+        "id": "client",
+        "role_generique": "humain",
+        "label": "Client Gucci"
+      },
+      {
+        "id": "conseiller",
+        "role_generique": "humain",
+        "label": "Conseiller Gucci 9"
+      },
+      {
+        "id": "einstein",
+        "role_generique": "modele_ia",
+        "label": "Suggestion de reponse au ton de marque",
+        "outil_documente": "Salesforce Einstein for Service"
+      },
+      {
+        "id": "crm",
+        "role_generique": "crm",
+        "label": "Donnees client internes"
+      }
+    ],
+    "liens": [
+      [
+        "client",
+        "conseiller"
+      ],
+      [
+        "conseiller",
+        "einstein",
+        "contexte de la demande"
+      ],
+      [
+        "crm",
+        "einstein",
+        "donnees client et ton de marque"
+      ],
+      [
+        "einstein",
+        "conseiller",
+        "reponse suggeree"
+      ],
+      [
+        "conseiller",
+        "client",
+        "message valide ou reecrit"
+      ]
+    ]
+  },
+  "stack_technique": [
+    {
+      "nom": "Salesforce Einstein for Service",
+      "categorie": "plateforme",
+      "detail": "Genere les suggestions de reponse courtes dans la voix de marque a partir des donnees internes ; le conseiller garde la main sur le message envoye",
+      "url": "https://www.salesforce.com"
+    },
+    {
+      "nom": "CRM Salesforce (donnees client internes)",
+      "categorie": "plateforme",
+      "detail": "Socle de donnees client qui alimente les suggestions d'Einstein sur les demandes Gucci 9",
+      "url": "https://www.salesforce.com"
+    },
+    {
+      "nom": "Referentiel de ton de marque Gucci",
+      "categorie": "outil",
+      "detail": "Corpus et regles in-house qui cadrent la voix guccifiee des reponses generees",
+      "url": "https://www.gucci.com"
+    },
+    {
+      "nom": "WhatsApp",
+      "categorie": "outil",
+      "detail": "Un des canaux de contact de Gucci 9, avec la boutique et le telephone",
+      "url": "https://www.whatsapp.com"
+    }
+  ],
+  "replication": {
+    "statut_epistemique": "infere",
+    "prerequis_data": [
+      "historique et donnees client centralises (CRM)",
+      "referentiel de ton et de voix de marque",
+      "corpus de reponses de qualite pour cadrer le style"
+    ],
+    "prerequis_orga": [
+      "reseau de service client structure",
+      "regle claire de controle humain avant envoi",
+      "formation des conseillers a l'outil"
+    ],
+    "stack_possible": [
+      "Salesforce Einstein for Service",
+      "autres suites CRM avec genAI de service",
+      "LLM avec garde-fous de ton de marque"
+    ],
+    "premiere_etape": "Connecter le CRM de service a un generateur de reponse cadre par le ton de marque, teste sur une equipe de conseillers.",
+    "playbook": [
+      {
+        "action": "Constituer le referentiel de ton de marque : corpus de reponses de qualite, regles de style, cas interdits, et poser la regle de controle humain avant envoi.",
+        "livrable": "Referentiel de voix de marque valide par la direction relation client"
+      },
+      {
+        "action": "Parametrer la generation de suggestions dans le CRM de service (Einstein for Service ou equivalent), branchee sur les donnees client et le referentiel.",
+        "livrable": "Suggestions de reponse fonctionnelles en environnement de test"
+      },
+      {
+        "action": "Lancer un pilote sur une equipe de conseillers d'un hub, avec la liberte d'utiliser, editer ou reecrire chaque suggestion.",
+        "livrable": "Pilote en production avec taux d'utilisation des suggestions suivi"
+      },
+      {
+        "action": "Mesurer conformite au ton, temps de reponse et montee en competence des nouveaux, former les managers, puis etendre aux autres hubs.",
+        "livrable": "Bilan du pilote et plan de deploiement multi-hubs"
+      }
+    ],
+    "equipe": "1 admin Salesforce + 1 responsable qualite / ton de marque + les managers des conseillers pour la formation"
+  },
+  "seo": {
+    "slug": "gucci-einstein-clienteling-genai-2023",
+    "title": "Gucci : suggestions genAI au ton de marque pour 600 conseillers (Gucci 9, 2023)",
+    "meta_description": "Gucci equipe les 600 conseillers de Gucci 9, sur 7 hubs, d'Einstein for Service qui suggere des reponses dans une voix de marque guccifiee et accelere l'onboarding.",
+    "resume_citable": "Gucci equipe les 600 conseillers de son reseau Gucci 9, repartis sur sept hubs mondiaux, d'Einstein for Service qui genere des suggestions de reponse dans une voix de marque guccifiee et raccourcit la montee en competence des nouveaux conseillers.",
+    "faq": [
+      {
+        "q": "Combien de conseillers Gucci utilise-t-il avec l'IA ?",
+        "a": "600 conseillers repartis sur sept hubs mondiaux dans le reseau Gucci 9, selon la customer story Salesforce."
+      },
+      {
+        "q": "Que fait l'IA pour les conseillers Gucci ?",
+        "a": "Elle suggere des reponses courtes dans la voix de marque guccifiee, que le conseiller peut utiliser, editer ou remplacer, en gardant la main sur la relation."
+      }
+    ]
+  },
+  "logo_domain": "gucci.com"
+}

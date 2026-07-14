@@ -1,0 +1,309 @@
+{
+  "id": "reckitt-agentic-marketing-genai-2024",
+  "type_fiche": "succes",
+  "marque": "Reckitt",
+  "groupe": "Reckitt Benckiser Group plc",
+  "industrie": "cpg_d2c",
+  "marches_deploiement": [
+    "Royaume-Uni",
+    "Deploiement multi-marches (plus de 500 marketeurs sur quatre marches, extension annoncee)"
+  ],
+  "transposable_ue": {
+    "flag": "oui",
+    "note": "Reckitt est un groupe britannique deja soumis au RGPD. Les outils reposent sur des GPT custom entraines sur les donnees Reckitt et sur des taches internes (concept, adaptation, analyse post-campagne), sans decision automatisee sur des personnes. Sous AI Act, encadrement standard des outils generatifs internes."
+  },
+  "metier": "marketing, brand management",
+  "intervenants": [
+    {
+      "nom": "Fabrice Beaulieu",
+      "role": "Chief Marketing, Sustainability and Corporate Affairs Officer, Reckitt",
+      "source_ref": "S1"
+    }
+  ],
+  "agences": [
+    {
+      "nom": "Boston Consulting Group (BCG)",
+      "role": "Co-construction de la plateforme et des solutions genAI marketing",
+      "source_ref": "S1"
+    },
+    {
+      "nom": "EPAM",
+      "role": "Deploiement de l'IA agentique marketing a l'echelle",
+      "source_ref": "S4"
+    }
+  ],
+  "axes": {
+    "levier": "acquisition",
+    "touchpoints": [
+      "concept creatif",
+      "adaptation et localisation d'annonces",
+      "analyse post-campagne media",
+      "reseaux sociaux"
+    ],
+    "etape_parcours": "consideration",
+    "famille": "optimisation_automatisation",
+    "pattern": "agents genAI marketing sur la chaine concept-adaptation-analyse",
+    "type_ia": [
+      "GPT custom entraines sur data Reckitt",
+      "IA generative multimodale",
+      "agents IA"
+    ],
+    "plateforme_stack": [
+      "plateforme genAI marketing interne (avec BCG)",
+      "GPT custom",
+      "outils genAI multimodaux",
+      "agents IA (avec EPAM)"
+    ],
+    "objectif_metrique": [
+      "temps de developpement de concept",
+      "temps d'adaptation et de localisation",
+      "temps d'analyse post-campagne",
+      "qualite creative"
+    ]
+  },
+  "implementation": "hybride",
+  "stack_technique": [
+    {
+      "nom": "GPT custom",
+      "categorie": "llm",
+      "detail": "GPT custom entraines sur les donnees Reckitt pour le concept, l'adaptation d'annonces et l'analyse post-campagne ; l'infrastructure d'hebergement exacte n'est pas publique.",
+      "url": "https://openai.com"
+    },
+    {
+      "nom": "Plateforme genAI marketing interne Reckitt",
+      "categorie": "plateforme",
+      "detail": "Suite de solutions genAI centree sur le marketing, co-construite avec BCG, incluant des outils multimodaux et des agents.",
+      "url": "https://www.reckitt.com"
+    },
+    {
+      "nom": "Boston Consulting Group (BCG)",
+      "categorie": "integrateur",
+      "detail": "Co-construction de la plateforme et des solutions genAI marketing.",
+      "url": "https://www.bcg.com"
+    },
+    {
+      "nom": "EPAM",
+      "categorie": "integrateur",
+      "detail": "Industrialisation et deploiement de l'IA agentique marketing a l'echelle (plus de 500 marketeurs, quatre marches).",
+      "url": "https://www.epam.com"
+    }
+  ],
+  "objectif_business": "Reduire le temps passe sur les taches marketing repetitives (concept, adaptation d'annonces par marche, analyse post-campagne) tout en gardant ou en ameliorant la qualite, et etendre l'usage a plusieurs centaines de marketeurs sur plusieurs marches.",
+  "points_cles": ["Suite d'agents genAI marketing (concept, adaptation, analyse) co-construite avec BCG.", "GPT custom entraines sur les donnees Reckitt, industrialisation avec EPAM.", "Concept -60%, localisation d'annonces -30%, analyse post-campagne -90% avec qualite doublee.", "Deploye a plus de 500 marketeurs sur 4 marches, preuve B, statut confirme."],
+  "description": "Reckitt a construit avec BCG une suite de solutions genAI centrees sur le marketing plutot que dispersees en pilotes isoles. Les outils s'appuient sur des GPT custom entraines sur les donnees Reckitt et couvrent trois taches enchainees. La generation de concepts produit, ou Reckitt annonce jusqu'a 60 pour cent de temps en moins avec une qualite amelioree. L'adaptation et la localisation d'annonces, avec environ 30 pour cent de temps en moins. L'analyse post-campagne media, ou le temps passe baisse jusqu'a 90 pour cent avec une qualite doublee. Ces resultats ont d'abord ete presentes par le CMO Fabrice Beaulieu au festival Cannes Lions en juin 2024, sur un pilote de quatre mois portant sur des marques comme Gaviscon et Finish. Reckitt a ensuite deploye une suite d'agents marketing a plus de 500 marketeurs sur quatre marches, avec un doublement annonce, en travaillant l'industrialisation avec EPAM. L'approche revendiquee vise des taches qui representaient 30 a 40 pour cent du temps des equipes.",
+  "resultats": [
+    {
+      "metrique": "Temps de developpement de concept",
+      "valeur": "jusqu'a -60%",
+      "citation_exacte": "reduce concept development time by up to 60%",
+      "source_ref": "S1"
+    },
+    {
+      "metrique": "Temps d'adaptation et de localisation d'annonces",
+      "valeur": "environ -30%",
+      "citation_exacte": "30% reduction in the time required to adapt and localise ads",
+      "source_ref": "S1"
+    },
+    {
+      "metrique": "Temps d'analyse post-campagne media, qualite doublee",
+      "valeur": "jusqu'a -90%",
+      "citation_exacte": "reducing time spent by up to 90% while improving quality two-fold",
+      "source_ref": "S1"
+    },
+    {
+      "metrique": "Deploiement sur 4 marches, doublement annonce",
+      "valeur": "500+ marketeurs",
+      "citation_exacte": "over 500 marketers across four markets",
+      "source_ref": "S3"
+    }
+  ],
+  "niveau_preuve": {
+    "niveau": "B",
+    "justification": "Chiffres publies par Reckitt (communique officiel et presentation du CMO a Cannes Lions), corrobores par BCG co-constructeur de la plateforme et par la presse specialisee (Digiday, EPAM). Pas de chiffre isole en resultats financiers, donc B."
+  },
+  "dates": {
+    "lancement": "2024-06",
+    "derniere_confirmation_activite": "2025",
+    "verifie_le": "2026-07-11",
+    "revoir_apres": "2027-01-11"
+  },
+  "statut_vivant": {
+    "statut": "confirme",
+    "note": "Resultats presentes a Cannes Lions en juin 2024 sur un pilote de quatre mois, puis passage a plus de 500 marketeurs sur quatre marches avec extension annoncee et industrialisation avec EPAM."
+  },
+  "sources": [
+    {
+      "ref": "S1",
+      "type": "blog_officiel",
+      "fiabilite": "T1_primaire",
+      "titre": "Reckitt's first GenAI results demonstrate changing face of marketing during Cannes Lions",
+      "url": "https://www.reckitt.com/news/reckitt-s-first-genai-results-demonstrate-changing-face-of-marketing-during-cannes-lions-international-festival-of-creativity/",
+      "date_publication": "2024-06",
+      "consulte_le": "2026-07-11"
+    },
+    {
+      "ref": "S2",
+      "type": "customer_story_plateforme",
+      "fiabilite": "T2_officiel_interesse",
+      "titre": "How Reckitt Reinvented Innovation-to-Launch with AI",
+      "url": "https://www.bcg.com/x/mark-your-moment/global-consumer-goods-leader-finds-efficiency-gains-with-genai-platform",
+      "date_publication": "2024",
+      "consulte_le": "2026-07-11"
+    },
+    {
+      "ref": "S3",
+      "type": "presse",
+      "fiabilite": "T3_presse_etablie",
+      "titre": "How Reckitt is beating the AI odds with its approach to pilots",
+      "url": "https://digiday.com/marketing/how-reckitt-is-beating-the-ai-odds-with-its-approach-to-pilots/",
+      "date_publication": "2025",
+      "consulte_le": "2026-07-11"
+    },
+    {
+      "ref": "S4",
+      "type": "presse",
+      "fiabilite": "T4_secondaire",
+      "titre": "This Is Not a Pilot: Lessons from Reckitt's Global Rollout of Agentic AI",
+      "url": "https://www.epam.com/about/newsroom/in-the-news/2025/this-is-not-a-pilot-lessons-from-reckitt-s-global-rollout-of-agentic-ai",
+      "date_publication": "2025",
+      "consulte_le": "2026-07-11"
+    }
+  ],
+  "fonctionnement_operationnel": {
+    "cadence": "En continu, sur les taches marketing du quotidien (concept, adaptation par marche, analyse apres chaque campagne).",
+    "opere_par": "Les marketeurs Reckitt eux-memes (plus de 500 sur quatre marches), sur une plateforme genAI construite avec BCG et industrialisee avec EPAM.",
+    "signal_pilote": "La qualite et la fraicheur des GPT custom entraines sur les donnees Reckitt (marque, historique de campagnes). Si le corpus data derive, l'adaptation localisee et l'analyse post-campagne perdent en pertinence.",
+    "etapes": [
+      {
+        "etape": "Generation de concept",
+        "detail": "Le marketeur produit des concepts produit via une interface genAI, jusqu'a 60 pour cent plus vite.",
+        "acteur": "marketing / IA"
+      },
+      {
+        "etape": "Adaptation et localisation",
+        "detail": "Declinaison et localisation des annonces par marche via outils multimodaux, environ 30 pour cent plus vite.",
+        "acteur": "marketing / IA"
+      },
+      {
+        "etape": "Analyse post-campagne",
+        "detail": "Synthese automatique de la performance media apres campagne, jusqu'a 90 pour cent de temps en moins.",
+        "acteur": "IA / equipe data"
+      },
+      {
+        "etape": "Mise a l'echelle",
+        "detail": "Diffusion de la suite d'agents a plus de 500 marketeurs sur quatre marches, avec extension annoncee.",
+        "acteur": "marketing / EPAM"
+      }
+    ]
+  },
+  "schema_flow": {
+    "statut": "approche_type",
+    "noeuds": [
+      {
+        "id": "data",
+        "role_generique": "data_source",
+        "label": "Donnees Reckitt (marque, campagnes)"
+      },
+      {
+        "id": "gpt",
+        "role_generique": "modele_ia",
+        "label": "GPT custom + agents marketing",
+        "outil_documente": "plateforme genAI (avec BCG et EPAM)"
+      },
+      {
+        "id": "mkt",
+        "role_generique": "humain",
+        "label": "Marketeurs (500+ sur 4 marches)"
+      },
+      {
+        "id": "media",
+        "role_generique": "paid_platform",
+        "label": "Annonces localisees / media"
+      },
+      {
+        "id": "analyse",
+        "role_generique": "data_source",
+        "label": "Analyse post-campagne"
+      }
+    ],
+    "liens": [
+      [
+        "data",
+        "gpt"
+      ],
+      [
+        "mkt",
+        "gpt",
+        "concept et brief"
+      ],
+      [
+        "gpt",
+        "media"
+      ],
+      [
+        "media",
+        "analyse"
+      ],
+      [
+        "analyse",
+        "gpt",
+        "boucle apprentissage"
+      ]
+    ]
+  },
+  "replication": {
+    "statut_epistemique": "infere",
+    "prerequis_data": [
+      "corpus de marque et historique de campagnes exploitable",
+      "assets creatifs pour l'adaptation et la localisation",
+      "donnees media post-campagne structurees"
+    ],
+    "prerequis_orga": [
+      "concentration sur un domaine (marketing) plutot que pilotes disperses",
+      "conduite du changement aupres des marketeurs",
+      "gouvernance qualite des GPT custom"
+    ],
+    "stack_possible": [
+      "GPT custom entraines sur data interne",
+      "outils genAI multimodaux pour l'adaptation",
+      "integrateur pour l'industrialisation (type BCG, EPAM)"
+    ],
+    "premiere_etape": "Choisir une chaine de taches marketing repetitives (adaptation d'annonces par marche) et mesurer le temps avant / apres.",
+    "playbook": [
+      {
+        "action": "Choisir une chaine de taches repetitives (adaptation et localisation d'annonces par marche) et mesurer le temps et la qualite de reference.",
+        "livrable": "Baseline temps / qualite par tache."
+      },
+      {
+        "action": "Construire les GPT custom sur le corpus de marque et l'historique de campagnes, avec garde-fous de gouvernance qualite.",
+        "livrable": "Outils genAI operables par les marketeurs sur un perimetre pilote."
+      },
+      {
+        "action": "Faire tourner le pilote avec un groupe de marketeurs sur 2-3 marques, en mesurant avant / apres.",
+        "livrable": "Mesure chiffree des gains de temps et de la qualite percue."
+      },
+      {
+        "action": "Etendre par marche avec formation et conduite du changement, en concentrant l'effort sur le domaine marketing plutot qu'en pilotes disperses.",
+        "livrable": "Deploiement a une population elargie avec gouvernance qualite installee."
+      }
+    ],
+    "equipe": "1 sponsor CMO + 1 PM IA + 2-3 marketeurs referents + integrateur (type BCG / EPAM) + IT pour la securite des donnees."
+  },
+  "seo": {
+    "slug": "reckitt-agentic-marketing-genai-2024",
+    "title": "Reckitt : agents genAI marketing - concept -60%, analyse media -90% (2024)",
+    "meta_description": "Reckitt a deploye des agents genAI marketing (avec BCG) a plus de 500 marketeurs sur 4 marches : concept -60%, localisation -30%, analyse post-campagne -90%.",
+    "resume_citable": "Reckitt a deploye avec BCG une suite d'agents genAI marketing a plus de 500 marketeurs sur quatre marches, revendiquant jusqu'a 60% de temps en moins sur le concept, environ 30% sur la localisation d'annonces et jusqu'a 90% sur l'analyse post-campagne media.",
+    "faq": [
+      {
+        "q": "Quels gains Reckitt revendique-t-il avec la genAI marketing ?",
+        "a": "Jusqu'a 60% de temps en moins sur le developpement de concept, environ 30% sur l'adaptation et la localisation d'annonces, et jusqu'a 90% sur l'analyse post-campagne media avec une qualite doublee."
+      },
+      {
+        "q": "A quelle echelle Reckitt a-t-il deploye ces outils ?",
+        "a": "A plus de 500 marketeurs sur quatre marches, avec un doublement annonce, apres un pilote de quatre mois presente a Cannes Lions en juin 2024."
+      }
+    ]
+  },
+  "logo_domain": "reckitt.com"
+}

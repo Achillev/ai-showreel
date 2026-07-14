@@ -1,0 +1,266 @@
+{
+  "id": "kroger-8451-personnalisation-predictive-2024",
+  "type_fiche": "succes",
+  "marque": "Kroger",
+  "groupe": "The Kroger Co. (division data: 84.51 degrees)",
+  "industrie": "retail_ecom",
+  "marches_deploiement": [
+    "Etats-Unis"
+  ],
+  "transposable_ue": {
+    "flag": "oui_avec_adaptations",
+    "note": "Le dispositif repose sur la donnee de carte de fidelite (Plus Card) et le profilage predictif par foyer. En UE, base legale du profilage marketing et de la tarification personnalisee a cadrer (RGPD), avec un point d'attention sur la personnalisation des prix."
+  },
+  "metier": "CRM / personnalisation et media retail",
+  "marque_linkedin": "https://www.linkedin.com/company/the-kroger-co/",
+  "axes": {
+    "levier": "retention",
+    "touchpoints": [
+      "carte de fidelite Plus Card",
+      "offres et coupons personnalises",
+      "email My Magazine",
+      "prix personnalises"
+    ],
+    "etape_parcours": "fidélité",
+    "famille": "prediction",
+    "pattern": "modelisation de propension et personnalisation predictive par foyer",
+    "type_ia": [
+      "predictive analytics",
+      "algorithmes prescriptifs",
+      "propensity modeling",
+      "segmentation comportementale"
+    ],
+    "plateforme_stack": [
+      "84.51 degrees (plateforme de personnalisation maison)",
+      "custom/in-house"
+    ],
+    "objectif_metrique": [
+      "fidelite et retention",
+      "pertinence des offres",
+      "revenu media retail"
+    ]
+  },
+  "implementation": "custom",
+  "objectif_business": "Servir a chaque foyer client des offres, coupons et prix pertinents a partir de son comportement d'achat predit, pour renforcer la fidelite et monetiser l'audience aupres des marques CPG.",
+  "points_cles": ["Personnalisation predictive par foyer : offres, coupons et prix cibles.", "Filiale data 84.51 degrees avec algorithmes predictifs et prescriptifs de propension.", "Plus de 62 millions de foyers scores, plus de 1 500 partenaires servis.", "Plus de 6 millions d'offres personnalisees par trimestre, preuve B confirmee."],
+  "description": "84.51 degrees est la filiale data de Kroger. Elle croise la donnee de la carte de fidelite Plus Card, le comportement en ligne, la saisonnalite et le panier pour scorer chaque foyer avec des algorithmes predictifs et prescriptifs. Ces scores pilotent des offres et coupons personnalises (par exemple via l'email My Magazine), une tarification personnalisee pour les membres, et des audiences vendues aux marques CPG via Kroger Precision Marketing. La plateforme couvre plus de 62 millions de foyers aux Etats-Unis et sert plus de 1 500 partenaires (marques, agences, editeurs). La modelisation de propension segmente les acheteurs et individualise l'experience a chaque visite.",
+  "resultats": [
+    {
+      "metrique": "Foyers couverts par la donnee et la personnalisation",
+      "valeur": "plus de 62 millions",
+      "citation_exacte": "over 62 million households in the U.S.",
+      "source_ref": "S1"
+    },
+    {
+      "metrique": "Partenaires servis (marques, agences, editeurs)",
+      "valeur": "plus de 1 500",
+      "citation_exacte": "more than 1,500 consumer packaged goods companies",
+      "source_ref": "S1"
+    },
+    {
+      "metrique": "Offres uniques et personnalisees delivrees aux membres Plus Card (My Magazine, un trimestre)",
+      "valeur": "plus de 6 millions",
+      "citation_exacte": "more than 6 million unique and customized offers",
+      "source_ref": "S2"
+    }
+  ],
+  "niveau_preuve": {
+    "niveau": "B",
+    "justification": "Chiffres publies par 84.51 degrees (filiale de Kroger) sur son perimetre de foyers et de partenaires, corrobores par la presse etablie (Food Dive) sur le volume d'offres personnalisees. Aucun resultat financier isolant l'impact IA, d'ou B."
+  },
+  "dates": {
+    "lancement": "programme d'analytics et de personnalisation Kroger/84.51 mature depuis les annees 2010 (dunnhumbyUSA puis 84.51 degrees en 2015)",
+    "derniere_confirmation_activite": "pages 84.51 degrees a jour citant 62 millions de foyers et 1 500+ partenaires",
+    "verifie_le": "2026-07-11",
+    "revoir_apres": "2027-01-11"
+  },
+  "statut_vivant": {
+    "statut": "confirme",
+    "note": "84.51 degrees est une activite permanente de Kroger, decrite avec ces chiffres sur son site courant; Kroger Precision Marketing est un reseau media retail actif."
+  },
+  "sources": [
+    {
+      "ref": "S1",
+      "type": "blog_officiel",
+      "fiabilite": "T2_officiel_interesse",
+      "titre": "How data science enables the personalized experience customers crave (84.51 degrees)",
+      "url": "https://www.8451.com/knowledge-hub/technology/how-data-science-enables-the-personalized-experience-customers-crave/",
+      "date_publication": "2024",
+      "consulte_le": "2026-07-11"
+    },
+    {
+      "ref": "S2",
+      "type": "presse",
+      "fiabilite": "T3_presse_etablie",
+      "titre": "Kroger's analytics and personalized pricing keep it a step ahead of its competitors",
+      "url": "https://www.fooddive.com/news/krogers-analytics-and-personalized-pricing-keep-it-a-step-ahead-of-its-com/446685/",
+      "date_publication": "2017",
+      "consulte_le": "2026-07-11"
+    }
+  ],
+  "fonctionnement_operationnel": {
+    "cadence": "Scoring continu par foyer, rafraichi a chaque achat; les offres et audiences sont produites par campagne et par cycle promotionnel.",
+    "opere_par": "Les data scientists de 84.51 degrees, avec les equipes marketing et media retail de Kroger.",
+    "signal_pilote": "Le comportement d'achat historique par foyer via la Plus Card. Sans rattachement fiable du panier au foyer (carte non scannee), la personnalisation se degrade et les offres redeviennent generiques.",
+    "etapes": [
+      {
+        "etape": "Collecte de la donnee foyer",
+        "detail": "Achats en magasin et en ligne, saisonnalite, panier et comportement digital sont rattaches au foyer via la Plus Card.",
+        "acteur": "plateforme 84.51 / equipe data"
+      },
+      {
+        "etape": "Scoring predictif",
+        "detail": "Des algorithmes predictifs et prescriptifs scorent des milliers d'attributs pour estimer la propension d'achat et le prochain besoin.",
+        "acteur": "modele IA"
+      },
+      {
+        "etape": "Activation des offres",
+        "detail": "Les scores generent offres, coupons et prix personnalises (My Magazine, app) pour chaque membre.",
+        "acteur": "marketing Kroger / plateforme"
+      },
+      {
+        "etape": "Monetisation media",
+        "detail": "Les memes signaux construisent des audiences vendues aux marques CPG via Kroger Precision Marketing, avec mesure au foyer.",
+        "acteur": "equipe media retail"
+      }
+    ]
+  },
+  "schema_flow": {
+    "statut": "documente",
+    "noeuds": [
+      {
+        "id": "n1",
+        "role_generique": "data_source",
+        "label": "Donnee Plus Card: achats, panier, comportement digital"
+      },
+      {
+        "id": "n2",
+        "role_generique": "cdp",
+        "label": "Plateforme de personnalisation",
+        "outil_documente": "84.51 degrees"
+      },
+      {
+        "id": "n3",
+        "role_generique": "modele_ia",
+        "label": "Scoring predictif et prescriptif (propension)"
+      },
+      {
+        "id": "n4",
+        "role_generique": "canal_conversationnel",
+        "label": "Offres, coupons, prix personnalises (My Magazine, app)"
+      },
+      {
+        "id": "n5",
+        "role_generique": "paid_platform",
+        "label": "Kroger Precision Marketing (media retail)"
+      }
+    ],
+    "liens": [
+      [
+        "n1",
+        "n2"
+      ],
+      [
+        "n2",
+        "n3"
+      ],
+      [
+        "n3",
+        "n4"
+      ],
+      [
+        "n3",
+        "n5"
+      ],
+      [
+        "n4",
+        "n1",
+        "reaction aux offres reinjectee"
+      ]
+    ]
+  },
+  "replication": {
+    "statut_epistemique": "infere",
+    "prerequis_data": [
+      "programme de fidelite rattachant le panier au foyer",
+      "historique d'achat riche par foyer",
+      "signaux digitaux et saisonniers"
+    ],
+    "prerequis_orga": [
+      "equipe data science interne ou partenaire",
+      "capacite d'activation des offres et, pour la monetisation, un reseau media retail"
+    ],
+    "stack_possible": [
+      "plateforme maison type 84.51 degrees",
+      "CDP + moteur de personnalisation (Salesforce, Adobe, Bloomreach)",
+      "predictive analytics natif d'un CRM"
+    ],
+    "premiere_etape": "Rattacher proprement chaque panier a un foyer via la fidelite, puis scorer la propension d'achat par categorie pour cibler les premieres offres personnalisees.",
+    "playbook": [
+      {
+        "action": "Fiabiliser le rattachement panier-foyer via le programme de fidelite (scan de la carte, comptes en ligne)",
+        "livrable": "Taux de rattachement mesure et en progression"
+      },
+      {
+        "action": "Construire les premiers scores de propension par categorie d'achat",
+        "livrable": "Scores par foyer valides hors ligne"
+      },
+      {
+        "action": "Activer offres et coupons personnalises sur un segment, contre offres generiques",
+        "livrable": "Campagne test avec lift de redemption mesure"
+      },
+      {
+        "action": "Industrialiser le cycle offres (rafraichissement des scores a chaque achat) et suivre la retention",
+        "livrable": "Moteur d'offres en production branche sur le CRM"
+      },
+      {
+        "action": "Monetiser les memes signaux en media retail aupres des marques",
+        "livrable": "Audiences packagees avec mesure au foyer"
+      }
+    ],
+    "equipe": "2-3 data scientists + 1 data engineer + equipe CRM/offres ; media retail en phase 2"
+  },
+  "seo": {
+    "slug": "kroger-8451-personnalisation-predictive-2024",
+    "title": "Kroger / 84.51 : personnalisation predictive par foyer - 62 millions de foyers scores (2024)",
+    "meta_description": "Kroger score plus de 62 millions de foyers avec les algorithmes predictifs de 84.51 degrees pour servir offres, coupons et prix personnalises et monetiser l'audience aupres de 1 500+ marques.",
+    "resume_citable": "La filiale data de Kroger, 84.51 degrees, score plus de 62 millions de foyers americains avec des algorithmes predictifs et prescriptifs pour personnaliser offres, coupons et prix, delivrant plus de 6 millions d'offres personnalisees par trimestre et servant plus de 1 500 partenaires media.",
+    "faq": [
+      {
+        "q": "Comment Kroger personnalise-t-il ses offres ?",
+        "a": "Via sa filiale 84.51 degrees, qui score chaque foyer avec des algorithmes predictifs et prescriptifs a partir de la donnee de carte de fidelite Plus Card, pour generer offres, coupons et prix personnalises."
+      },
+      {
+        "q": "Quelle echelle ?",
+        "a": "Plus de 62 millions de foyers couverts aux Etats-Unis, plus de 6 millions d'offres personnalisees delivrees en un trimestre via My Magazine, et plus de 1 500 partenaires marques et media servis."
+      }
+    ]
+  },
+  "logo_domain": "kroger.com",
+  "stack_technique": [
+    {
+      "nom": "84.51 degrees (plateforme maison)",
+      "categorie": "plateforme",
+      "detail": "filiale data de Kroger : plateforme de personnalisation qui score plus de 62 millions de foyers",
+      "url": "https://www.8451.com"
+    },
+    {
+      "nom": "Algorithmes predictifs et prescriptifs de propension",
+      "categorie": "llm",
+      "detail": "scoring de milliers d'attributs par foyer (propension d'achat, prochain besoin), modeles proprietaires 84.51",
+      "url": "https://www.8451.com"
+    },
+    {
+      "nom": "Programme de fidelite Plus Card",
+      "categorie": "infra",
+      "detail": "rattache chaque panier au foyer ; sans ce lien, la personnalisation redevient generique",
+      "url": "https://www.kroger.com"
+    },
+    {
+      "nom": "Kroger Precision Marketing",
+      "categorie": "outil",
+      "detail": "reseau media retail opere par 84.51 qui monetise les audiences aupres de plus de 1 500 partenaires",
+      "url": "https://www.8451.com"
+    }
+  ]
+}

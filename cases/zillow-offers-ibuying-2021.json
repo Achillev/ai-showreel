@@ -1,0 +1,215 @@
+{
+  "type_fiche": "echec_retrait",
+  "id": "zillow-offers-ibuying-2021",
+  "marque": "Zillow",
+  "industrie": "retail_ecom",
+  "marches_deploiement": [
+    "États-Unis (25 aires métropolitaines : Phoenix, Atlanta, Dallas...)"
+  ],
+  "transposable_ue": {
+    "flag": "oui",
+    "note": "La leçon - ne pas appliquer une prédiction moyenne à des paris unitaires irréversibles à fort levier - est universelle. Le pricing prédictif reste largement utilisé en UE (crédit, assurance) avec des décotes de risque explicites."
+  },
+  "metier": "Pricing / achat-revente instantané (iBuying)",
+  "axes": {
+    "levier": "monetisation",
+    "touchpoints": [
+      "site web zillow.com",
+      "offre d'achat instantanée en ligne (cash offer)"
+    ],
+    "etape_parcours": "conversion vendeur : offre d'achat automatisée",
+    "famille": "prediction",
+    "pattern": "Pricing prédictif à grande échelle : un modèle d'estimation fixe automatiquement le prix d'achat de biens, la marge étant réalisée à la revente",
+    "type_ia": [
+      "machine learning prédictif (AVM)",
+      "forecasting de prix",
+      "modèles de valorisation"
+    ],
+    "plateforme_stack": [
+      "Zestimate (modèle propriétaire)",
+      "modèles internes d'offre et de forecast Zillow"
+    ],
+    "objectif_metrique": [
+      "marge par transaction",
+      "volume de maisons achetées",
+      "valeur d'inventaire"
+    ]
+  },
+  "implementation": "custom",
+  "objectif_business": "Transformer l'audience du portail en business transactionnel : acheter des maisons au prix prédit par l'algorithme, rénover légèrement, revendre avec marge - objectif affiché d'environ 5 000 maisons/mois et 20 Md$ de revenus annuels à terme.",
+  "description": "Lancé en avril 2018 (après un pilote « Instant Offers » en 2017), Zillow Offers permettait à un propriétaire de recevoir en ligne une offre d'achat cash quasi instantanée, calculée par les modèles prédictifs de Zillow. Le programme a été étendu à 25 métropoles. En 2021, pour gagner des parts de marché dans un marché en surchauffe, Zillow a volontairement enchéri au-dessus de son propre modèle et acheté 9 680 maisons au seul T3 2021. Quand le marché s'est refroidi, l'algorithme - entraîné sur des dynamiques de hausse - a continué de surpayer systématiquement : ~9 800 maisons en stock, dont environ deux tiers valaient moins que leur prix d'achat. Le 2 novembre 2021, Zillow a annoncé la fermeture complète de Zillow Offers, une dépréciation de 304 M$ au T3, et la suppression de 25 % des effectifs (~2 000 postes). C'est l'échec public le plus documenté d'IA prédictive appliquée directement au P&L d'une grande entreprise.",
+  "post_mortem": {
+    "ce_qui_s_est_passe": "Avr. 2018 : lancement, expansion à 25 métros. Fév. 2021 : le Zestimate devient une offre cash « live » sur certains marchés. Été 2021 : achats records (9 680 maisons au T3) alors que la hausse ralentit. 17-18 oct. 2021 : suspension des nouvelles acquisitions (officiellement pour capacités de rénovation). 2 nov. 2021 : wind-down complet annoncé dans les résultats T3 - write-down de 304 M$, 240-265 M$ anticipés au T4, -25 % des effectifs ; l'action perd ~25 % le lendemain. 2022 : liquidation du stock, pertes cumulées estimées au-delà de 500 M$.",
+    "raison_echec": "Déclaration officielle du CEO Rich Barton (2 nov. 2021) : « We've determined the unpredictability in forecasting home prices far exceeds what we anticipated. » Analyses (Stanford GSB, presse) : erreur de forecast dans un marché qui se retourne, sélection adverse (les vendeurs acceptent surtout les offres trop généreuses sur les biens surestimés), et décision managériale d'enchérir au-dessus du modèle pour le volume - un échec autant organisationnel qu'algorithmique.",
+    "date_retrait": "2021-11-02 (annonce ; liquidation achevée courant 2022)",
+    "cout_estime": "304 M$ de dépréciation au T3 + 240-265 M$ anticipés au T4 (total ~540-569 M$) ; ~30 000 $ de perte moyenne par maison revendue ; ~2 000 licenciements ; ~2,4 Md$ de capitalisation effacés en une séance.",
+    "signaux_avant_coureurs": "L'écart croissant et public entre Zestimate et prix de vente réels dans les marchés chauds. La décision documentée d'enchérir AU-DESSUS du modèle : quand on surcharge manuellement son propre algorithme pour faire du volume, le modèle ne protège plus rien. La « pause » d'octobre attribuée aux capacités de rénovation - signal classique d'un problème plus profond. Et une asymétrie structurelle connue de l'iBuying : les offres trop hautes sont systématiquement acceptées, les justes refusées.",
+    "lecons_avec_recul": "(1) Un modèle précis « en moyenne » peut détruire de la valeur quand la transaction est irréversible et la sélection adverse systématique : le coût d'erreur est asymétrique. (2) Ne jamais laisser un objectif de croissance court-circuiter les sorties du modèle - la gouvernance compte plus que le R². (3) Les modèles entraînés sur un régime de marché échouent au changement de régime : il faut des stress tests de retournement et des circuit breakers sur l'exposition du bilan. (4) Backtester la rentabilité par transaction, pas la précision de prédiction.",
+    "le_pattern_reste_il_valide": "Oui. L'échec ne condamne pas le pricing prédictif : Opendoor, resté discipliné sur des biens standardisés avec des décotes de risque explicites, a continué l'iBuying, et les AVM restent au cœur du crédit et de l'assurance. Ce qui est condamné : appliquer une prédiction moyenne à des paris unitaires irréversibles à fort levier, en surchargeant le modèle pour la croissance."
+  },
+  "resultats": [
+    {
+      "metrique": "Dépréciation d'inventaire T3 2021, +240-265 M$ au T4",
+      "valeur": "304 M$",
+      "citation_exacte": "a $304 million write-down on inventory",
+      "source_ref": "S3"
+    },
+    {
+      "metrique": "Licenciements, environ 2 000 postes",
+      "valeur": "~25 % des effectifs",
+      "citation_exacte": "cut 25% of its workforce",
+      "source_ref": "S4"
+    },
+    {
+      "metrique": "Raison officielle donnée par le CEO",
+      "valeur": "prix imprévisibles",
+      "citation_exacte": "unpredictability in forecasting home prices far exceeds what we anticipated",
+      "source_ref": "S1"
+    },
+    {
+      "metrique": "Perte moyenne par maison",
+      "valeur": "~30 000 $",
+      "citation_exacte": "losing about $30,000 per home",
+      "source_ref": "S2"
+    }
+  ],
+  "niveau_preuve": {
+    "niveau": "A",
+    "justification": "Résultats financiers audités et communications officielles à la SEC (8-K et lettre aux actionnaires T3 2021) chiffrant write-downs, licenciements et motifs, corroborés par la presse financière majeure et une analyse académique (Stanford GSB)."
+  },
+  "dates": {
+    "lancement": "2018-04",
+    "date_retrait": "2021-11-02",
+    "derniere_confirmation_activite": "2022 (liquidation de l'inventaire)",
+    "verifie_le": "2026-07-11",
+    "revoir_apres": "2027-07-11"
+  },
+  "statut_vivant": {
+    "statut": "incertain",
+    "note": "Programme définitivement fermé fin 2021-2022. Conservé comme référence : c'est l'échec d'IA prédictive le mieux documenté publiquement."
+  },
+  "sources": [
+    {
+      "ref": "S1",
+      "type": "document_officiel_sec",
+      "titre": "Zillow Group - Form 8-K, Q3 2021 Shareholder Letter (wind-down de Zillow Offers)",
+      "url": "https://www.sec.gov/Archives/edgar/data/1617640/000161764021000085/q32021991.htm",
+      "date_publication": "2021-11-02",
+      "consulte_le": "2026-07-11",
+      "fiabilite": "T1_primaire"
+    },
+    {
+      "ref": "S2",
+      "type": "analyse_academique",
+      "titre": "Flip Flop: Why Zillow's Algorithmic Home Buying Venture Imploded - Stanford GSB",
+      "url": "https://www.gsb.stanford.edu/insights/flip-flop-why-zillows-algorithmic-home-buying-venture-imploded",
+      "date_publication": "2021-12-09",
+      "consulte_le": "2026-07-11",
+      "fiabilite": "T3_presse_etablie"
+    },
+    {
+      "ref": "S3",
+      "type": "presse",
+      "titre": "Zillow to exit its home buying business and cut 25% of staff - CNN Business",
+      "url": "https://www.cnn.com/2021/11/02/homes/zillow-exit-ibuying-home-business",
+      "date_publication": "2021-11-02",
+      "consulte_le": "2026-07-11",
+      "fiabilite": "T3_presse_etablie"
+    },
+    {
+      "ref": "S4",
+      "type": "presse",
+      "titre": "Zillow will stop buying and renovating homes and cut 25% of its workforce - NPR",
+      "url": "https://www.npr.org/2021/11/03/1051941654/zillow-will-stop-buying-and-renovating-homes-and-cut-25-of-its-workforce",
+      "date_publication": "2021-11-03",
+      "consulte_le": "2026-07-11",
+      "fiabilite": "T3_presse_etablie"
+    }
+  ],
+  "schema_flow": {
+    "statut": "documente",
+    "noeuds": [
+      {
+        "id": "z",
+        "role_generique": "modele_ia",
+        "label": "Zestimate + modèles d'offre (entraînés sur marché haussier)"
+      },
+      {
+        "id": "override",
+        "role_generique": "humain",
+        "label": "Override managérial : enchérir au-dessus du modèle (volume)"
+      },
+      {
+        "id": "buy",
+        "role_generique": "site_app",
+        "label": "Achat automatisé de maisons (irréversible)"
+      },
+      {
+        "id": "market",
+        "role_generique": "data_source",
+        "label": "Retournement de marché (été 2021)"
+      },
+      {
+        "id": "loss",
+        "role_generique": "data_source",
+        "label": "Surpaiement systématique -> write-down 304 M$"
+      }
+    ],
+    "liens": [
+      [
+        "z",
+        "buy"
+      ],
+      [
+        "override",
+        "buy",
+        "court-circuite le modèle"
+      ],
+      [
+        "market",
+        "loss"
+      ],
+      [
+        "buy",
+        "loss"
+      ]
+    ]
+  },
+  "seo": {
+    "slug": "zillow-offers-echec-ibuying-2021",
+    "title": "Zillow Offers : l'IA de pricing qui a coûté 500 M$ et fermé le business (2021)",
+    "meta_description": "Zillow a fermé son programme d'achat de maisons piloté par IA en 2021 après plus de 500 M$ de pertes. Post-mortem : le pattern était-il condamné, ou seulement son exécution ?",
+    "resume_citable": "En novembre 2021, Zillow a fermé Zillow Offers après un write-down de 304 M$ et 25 % de licenciements, son modèle de pricing prédictif ayant surpayé des milliers de maisons au retournement du marché - l'échec d'IA prédictive le mieux documenté.",
+    "faq": [
+      {
+        "q": "L'IA de pricing est-elle en cause ?",
+        "a": "En partie seulement. Le modèle était entraîné sur un marché haussier, mais l'échec est autant organisationnel : la direction a choisi d'enchérir au-dessus du modèle pour le volume, court-circuitant sa propre protection."
+      },
+      {
+        "q": "Le pattern reste-t-il valide ?",
+        "a": "Oui. Opendoor a continué l'iBuying avec des décotes de risque explicites, et les AVM restent au cœur du crédit et de l'assurance. Ce qui échoue, c'est le pari unitaire irréversible à fort levier sur une prédiction moyenne."
+      }
+    ]
+  },
+  "logo_domain": "zillow.com",
+  "stack_technique": [
+    {
+      "nom": "Zestimate",
+      "categorie": "outil",
+      "detail": "Modèle propriétaire d'estimation de valeur des biens (AVM), devenu en février 2021 une offre cash live sur certains marchés.",
+      "url": "https://www.zillow.com"
+    },
+    {
+      "nom": "Modèles internes d'offre et de forecast Zillow",
+      "categorie": "outil",
+      "detail": "Modèles de pricing et de prévision qui calculaient l'offre d'achat ; entraînés sur un marché haussier, ils ont surpayé au retournement, aggravés par la décision managériale d'enchérir au-dessus du modèle.",
+      "url": "https://www.zillow.com"
+    },
+    {
+      "nom": "Plateforme d'offre cash zillow.com",
+      "categorie": "plateforme",
+      "detail": "Parcours en ligne où le propriétaire recevait une offre d'achat quasi instantanée calculée par les modèles.",
+      "url": "https://www.zillow.com"
+    }
+  ]
+}

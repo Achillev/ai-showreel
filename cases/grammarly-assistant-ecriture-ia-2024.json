@@ -1,0 +1,267 @@
+{
+  "id": "grammarly-assistant-ecriture-ia-2024",
+  "type_fiche": "succes",
+  "marque": "Grammarly",
+  "industrie": "education",
+  "marches_deploiement": [
+    "Etats-Unis",
+    "International"
+  ],
+  "transposable_ue": {
+    "flag": "oui_avec_adaptations",
+    "note": "Assistant d'ecriture IA freemium, grand public, entreprise et education (etablissements superieurs). RGPD applicable au traitement du texte des utilisateurs ; l'AI Act impose la transparence sur l'assistance par IA. Grammarly met en avant des protections de niveau entreprise pour les comptes organisationnels."
+  },
+  "metier": "Product / assistant d'ecriture / freemium et B2B/B2Edu",
+  "marque_linkedin": "https://www.linkedin.com/company/grammarly/",
+  "axes": {
+    "levier": "monetisation",
+    "touchpoints": [
+      "extension navigateur et applications",
+      "Grammarly (correction et suggestions)",
+      "GrammarlyGO (generation)",
+      "Grammarly for Education / Business"
+    ],
+    "etape_parcours": "fidélité",
+    "famille": "generation",
+    "pattern": "assistant d'ecriture IA freemium converti en abonnements premium et licences organisationnelles",
+    "type_ia": [
+      "NLP / correction et style",
+      "genAI (GrammarlyGO)",
+      "assistance a l'ecriture contextuelle"
+    ],
+    "plateforme_stack": [
+      "moteurs NLP proprietaires Grammarly",
+      "genAI GrammarlyGO"
+    ],
+    "objectif_metrique": [
+      "utilisateurs actifs quotidiens",
+      "organisations clientes",
+      "conversion premium",
+      "revenu et valorisation"
+    ]
+  },
+  "implementation": "custom",
+  "objectif_business": "Convertir une base gratuite tres large d'utilisateurs d'un assistant d'ecriture en abonnements premium et en licences organisationnelles (entreprises et etablissements), l'IU generative (GrammarlyGO) servant a defendre et augmenter la valeur premium.",
+  "description": "Grammarly corrige l'orthographe, la grammaire, le ton et le style dans les applications et le navigateur, en s'inserant partout ou l'utilisateur ecrit. GrammarlyGO ajoute une couche generative pour rediger, reformuler et repondre. Le modele est freemium : gratuit a l'entree, premium pour les fonctions avancees, et licences pour les organisations (Grammarly for Business, Grammarly for Education dans l'enseignement superieur). En 2025, l'entreprise revendique plus de 40 millions d'utilisateurs quotidiens et 50 000 organisations clientes.",
+  "resultats": [
+    {
+      "metrique": "Utilisateurs quotidiens (2025)",
+      "valeur": "40 millions+",
+      "citation_exacte": "40 million people and 50,000 organizations use Grammarly",
+      "source_ref": "S1"
+    },
+    {
+      "metrique": "Organisations clientes (2025)",
+      "valeur": "50 000+",
+      "citation_exacte": "40 million people and 50,000 organizations use Grammarly",
+      "source_ref": "S1"
+    },
+    {
+      "metrique": "Valorisation",
+      "valeur": "13 Md$",
+      "citation_exacte": "valuation of $13 billion",
+      "source_ref": "S1"
+    },
+    {
+      "metrique": "Financement de croissance leve aupres de General Catalyst (2024)",
+      "valeur": "1 Md$",
+      "citation_exacte": "Grammarly Announces $1 Billion Growth Financing With General Catalyst",
+      "source_ref": "S2"
+    }
+  ],
+  "niveau_preuve": {
+    "niveau": "C",
+    "justification": "Grammarly est une societe privee sans resultats financiers publics ; les chiffres d'usage (40M utilisateurs quotidiens, 50 000 organisations) sont rapportes par la presse economique majeure (Forbes) citant la marque, et le financement de 1 Md$ est confirme par un communiqué officiel de Grammarly. Presse citant la marque plus communiqué officiel, d'ou niveau C."
+  },
+  "dates": {
+    "lancement": "GrammarlyGO (couche genAI) lance en 2023 ; Grammarly historique anterieur",
+    "derniere_confirmation_activite": "2025 (fiche Forbes : 40M utilisateurs quotidiens, 50 000 organisations, valorisation 13 Md$)",
+    "verifie_le": "2026-07-11",
+    "revoir_apres": "2027-01-11"
+  },
+  "statut_vivant": {
+    "statut": "confirme",
+    "note": "Base et clientele en croissance ; financement de 1 Md$ en 2024, acquisitions de Coda (2024) et Superhuman (2025), nouveau CEO fin 2024. Produit actif et en expansion vers les agents IA."
+  },
+  "sources": [
+    {
+      "ref": "S1",
+      "type": "presse",
+      "fiabilite": "T3_presse_etablie",
+      "titre": "Grammarly - Company Overview & News (Forbes)",
+      "url": "https://www.forbes.com/companies/grammarly/",
+      "date_publication": "2025-09",
+      "consulte_le": "2026-07-11"
+    },
+    {
+      "ref": "S2",
+      "type": "blog_officiel",
+      "fiabilite": "T1_primaire",
+      "titre": "Grammarly Announces $1 Billion Growth Financing With General Catalyst",
+      "url": "https://www.grammarly.com/blog/company/grammarly-announces-growth-financing/",
+      "date_publication": "2024",
+      "consulte_le": "2026-07-11"
+    }
+  ],
+  "fonctionnement_operationnel": {
+    "cadence": "Temps reel pendant la frappe ; suggestions et generation a la demande de l'utilisateur.",
+    "opere_par": "Equipe Product/IA de Grammarly ; cote organisation, l'administrateur gere les licences, l'analytique et les regles.",
+    "signal_pilote": "La pertinence et la justesse des suggestions dans le contexte ou l'utilisateur ecrit. Une suggestion fausse ou hors ton erode la confiance et donc la conversion premium.",
+    "etapes": [
+      {
+        "etape": "Insertion dans l'ecriture",
+        "detail": "L'utilisateur ecrit dans une app ou le navigateur ; Grammarly analyse le texte en contexte.",
+        "acteur": "humain"
+      },
+      {
+        "etape": "Suggestions et generation",
+        "detail": "Le moteur propose corrections, ajustements de ton et, avec GrammarlyGO, redaction ou reformulation.",
+        "acteur": "IA"
+      },
+      {
+        "etape": "Conversion",
+        "detail": "Les fonctions avancees poussent vers le premium ; les organisations achetent des licences groupees.",
+        "acteur": "marketing"
+      },
+      {
+        "etape": "Administration organisation",
+        "detail": "Pour les comptes Business/Education, l'admin gere acces, analytique et regles de style.",
+        "acteur": "client"
+      }
+    ]
+  },
+  "schema_flow": {
+    "statut": "documente",
+    "noeuds": [
+      {
+        "id": "n1",
+        "role_generique": "humain",
+        "label": "Utilisateur (etudiant, professionnel)"
+      },
+      {
+        "id": "n2",
+        "role_generique": "site_app",
+        "label": "Grammarly (extension, apps) + GrammarlyGO"
+      },
+      {
+        "id": "n3",
+        "role_generique": "modele_ia",
+        "label": "Moteurs NLP + genAI",
+        "outil_documente": "Grammarly (proprietaire) + GrammarlyGO"
+      },
+      {
+        "id": "n4",
+        "role_generique": "data_source",
+        "label": "Texte et contexte d'ecriture"
+      }
+    ],
+    "liens": [
+      [
+        "n1",
+        "n2"
+      ],
+      [
+        "n2",
+        "n4"
+      ],
+      [
+        "n4",
+        "n3"
+      ],
+      [
+        "n3",
+        "n2",
+        "corrections ou texte genere renvoyes en contexte"
+      ],
+      [
+        "n2",
+        "n1"
+      ]
+    ]
+  },
+  "stack_technique": [
+    {
+      "nom": "Moteurs NLP proprietaires Grammarly",
+      "categorie": "llm",
+      "detail": "Modeles in-house de correction d'orthographe, de grammaire, de ton et de style, analysant le texte en contexte pendant la frappe",
+      "url": "https://www.grammarly.com"
+    },
+    {
+      "nom": "GrammarlyGO",
+      "categorie": "outil",
+      "detail": "Couche generative lancee en 2023 pour rediger, reformuler et repondre ; les LLM sous-jacents ne sont pas detailles publiquement",
+      "url": "https://www.grammarly.com"
+    },
+    {
+      "nom": "Distribution multi-surface (extension et apps)",
+      "categorie": "plateforme",
+      "detail": "Extension navigateur et applications qui inserent l'assistant partout ou l'utilisateur ecrit",
+      "url": "https://www.grammarly.com"
+    },
+    {
+      "nom": "Administration Grammarly Business / Education",
+      "categorie": "outil",
+      "detail": "Gestion des licences, analytique et regles de style pour les comptes organisationnels, avec protections de donnees de niveau entreprise",
+      "url": "https://www.grammarly.com"
+    }
+  ],
+  "replication": {
+    "statut_epistemique": "infere",
+    "prerequis_data": [
+      "acces au texte de l'utilisateur en contexte, avec consentement",
+      "moteurs de correction et de generation fiables",
+      "protections de donnees pour les comptes organisationnels"
+    ],
+    "prerequis_orga": [
+      "modele freemium avec palier premium clair",
+      "offre licences pour entreprises et etablissements",
+      "administration et analytique cote client"
+    ],
+    "stack_possible": [
+      "moteurs NLP proprietaires ou LLM",
+      "couche genAI d'assistance a l'ecriture",
+      "distribution multi-surface (navigateur, apps)"
+    ],
+    "premiere_etape": "Choisir une surface d'ecriture a forte frequence et y rendre la suggestion fiable, avant d'y greffer la generation et le premium.",
+    "playbook": [
+      {
+        "action": "Choisir une surface d'ecriture a forte frequence (navigateur ou une app cible) et construire le moteur de suggestion, en cadrant consentement et traitement du texte.",
+        "livrable": "Prototype de suggestion en contexte sur la surface choisie"
+      },
+      {
+        "action": "Ouvrir une version gratuite et mesurer le taux d'acceptation des suggestions, seul vrai signal de qualite ; iterer jusqu'a un niveau de confiance suffisant.",
+        "livrable": "Base d'utilisateurs gratuits avec taux d'acceptation suivi"
+      },
+      {
+        "action": "Greffer la couche generative (redaction, reformulation) en s'appuyant sur des LLM du marche.",
+        "livrable": "Fonctions generatives en beta sur la base existante"
+      },
+      {
+        "action": "Lancer le palier premium sur les fonctions avancees et mesurer la conversion gratuit vers payant.",
+        "livrable": "Offre premium en production avec funnel de conversion mesure"
+      },
+      {
+        "action": "Construire l'offre organisationnelle : administration, analytique, regles de style, protections de donnees entreprise.",
+        "livrable": "Offre licences B2B / education commercialisable"
+      }
+    ],
+    "equipe": "3-5 ingenieurs NLP / ML + 1 PM + 1 designer + 1 growth pour le funnel freemium"
+  },
+  "seo": {
+    "slug": "grammarly-assistant-ecriture-ia-2024",
+    "title": "Grammarly : assistant d'ecriture IA - 40M d'utilisateurs quotidiens (2024)",
+    "meta_description": "Grammarly, assistant d'ecriture IA freemium avec la couche generative GrammarlyGO, revendique plus de 40 millions d'utilisateurs quotidiens et 50 000 organisations, pour une valorisation de 13 Md$.",
+    "resume_citable": "Grammarly, assistant d'ecriture IA freemium dote de la couche generative GrammarlyGO, revendiquait en 2025 plus de 40 millions d'utilisateurs quotidiens et 50 000 organisations clientes, pour une valorisation de 13 milliards de dollars et un financement de croissance de 1 milliard leve en 2024.",
+    "faq": [
+      {
+        "q": "Comment Grammarly monetise-t-il son IA ?",
+        "a": "Par un modele freemium : gratuit a l'entree, abonnements premium pour les fonctions avancees et GrammarlyGO, et licences pour les entreprises et etablissements d'enseignement superieur."
+      },
+      {
+        "q": "Quelle est son echelle ?",
+        "a": "Plus de 40 millions d'utilisateurs quotidiens et 50 000 organisations clientes en 2025 selon Forbes, pour une valorisation de 13 milliards de dollars."
+      }
+    ]
+  },
+  "logo_domain": "grammarly.com"
+}

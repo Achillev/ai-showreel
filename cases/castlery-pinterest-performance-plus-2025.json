@@ -1,0 +1,269 @@
+{
+  "id": "castlery-pinterest-performance-plus-2025",
+  "type_fiche": "succes",
+  "marque": "Castlery",
+  "industrie": "retail_ecom",
+  "marches_deploiement": [
+    "Singapour",
+    "Asie-Pacifique"
+  ],
+  "transposable_ue": {
+    "flag": "oui",
+    "note": "Pinterest Performance+ est disponible en Europe. L'automatisation s'appuie sur les signaux Pinterest et le catalogue produit, sans data first-party exportee ; exposition RGPD limitee. Tracking conversion cote UE via tag Pinterest et API de conversion en mode consenti."
+  },
+  "metier": "marketing, e-commerce, acquisition payante",
+  "intervenants": [
+    {
+      "nom": "Camille Wong",
+      "role": "Performance Marketing (Singapour), Castlery",
+      "source_ref": "S1"
+    }
+  ],
+  "agences": [
+    {
+      "nom": "Aleph",
+      "role": "Partenaire commercial Pinterest pour l'Asie-Pacifique, accompagnement de l'activation",
+      "source_ref": "S1"
+    }
+  ],
+  "axes": {
+    "levier": "acquisition",
+    "touchpoints": [
+      "Pinterest",
+      "shopping / catalog ads"
+    ],
+    "etape_parcours": "considération",
+    "famille": "optimisation_automatisation",
+    "pattern": "campagne shopping entierement automatisee (enchères, ciblage, budget, creative)",
+    "type_ia": [
+      "optimisation d'enchères et de budget",
+      "ciblage automatise"
+    ],
+    "plateforme_stack": [
+      "Pinterest Performance+"
+    ],
+    "objectif_metrique": [
+      "ROAS",
+      "panier moyen (AOV)",
+      "CPA"
+    ]
+  },
+  "implementation": "plateforme",
+  "objectif_business": "Passer d'un pilotage manuel de campagnes catalogue a une acquisition automatisee sur Pinterest, pour vendre plus de mobilier avec moins de gestes de reglage.",
+  "points_cles": ["Bascule d'une campagne catalogue manuelle a Pinterest Performance+ (encheres, ciblage, budget, creative automatises).", "Suite Pinterest Performance+ operee avec le partenaire commercial Aleph en Asie-Pacifique.", "ROAS x2,3, panier moyen +98%, cout par acquisition -14% vs pilotage manuel.", "Preuve B, statut vivant confirme."],
+  "description": "Castlery, marque de mobilier vendu en direct, a compare sa campagne Catalogue Sales pilotee a la main a la suite complete Pinterest Performance+, qui automatise enchères, ciblage, budget et selection creative. Sur l'Asie-Pacifique, avec Aleph comme partenaire commercial Pinterest, la version automatisee a produit un ROAS multiplie par 2,3, un panier moyen en hausse de 98 pour cent et un cout par acquisition en baisse de 14 pour cent face au reglage manuel. L'interet du cas tient a l'ecart mesure a perimetre comparable : meme marque, meme catalogue, mais l'automatisation cherche mieux les acheteurs a fort panier. C'est un cas d'optimisation et d'automatisation de l'achat media, pas de generation.",
+  "resultats": [
+    {
+      "metrique": "ROAS vs campagne manuelle",
+      "valeur": "x2,3",
+      "citation_exacte": "2.3x increase",
+      "source_ref": "S1"
+    },
+    {
+      "metrique": "Panier moyen (AOV)",
+      "valeur": "+98%",
+      "citation_exacte": "98% boost in average order value",
+      "source_ref": "S1"
+    },
+    {
+      "metrique": "Cout par acquisition (CPA)",
+      "valeur": "-14%",
+      "citation_exacte": "14% decrease in cost per acquisition",
+      "source_ref": "S1"
+    }
+  ],
+  "niveau_preuve": {
+    "niveau": "B",
+    "justification": "Etude de cas plateforme Pinterest chiffree citant nommement Castlery, sa Performance Marketing et le partenaire Aleph ; source officielle interessee, d'ou B. Le produit Performance+ est confirme par la page produit Pinterest."
+  },
+  "dates": {
+    "lancement": "2025 (Performance+ generalise en 2024-2025, campagne Castlery 2025)",
+    "derniere_confirmation_activite": "2025",
+    "verifie_le": "2026-07-11",
+    "revoir_apres": "2027-01-11"
+  },
+  "statut_vivant": {
+    "statut": "confirme",
+    "note": "Pinterest Performance+ est un produit standard mis en avant par Pinterest en 2025 (blog SMB, page produit). Activation vivante et disponible."
+  },
+  "sources": [
+    {
+      "ref": "S1",
+      "type": "customer_story_plateforme",
+      "fiabilite": "T2_officiel_interesse",
+      "titre": "Castlery Success Story - Pinterest Performance+",
+      "url": "https://business.pinterest.com/success-stories/castlery-pinterest-performance-plus/",
+      "date_publication": "2025",
+      "consulte_le": "2026-07-11"
+    },
+    {
+      "ref": "S2",
+      "type": "blog_officiel",
+      "fiabilite": "T2_officiel_interesse",
+      "titre": "Maximize Results. Minimize Effort. Get Pinterest Performance+",
+      "url": "https://business.pinterest.com/pinterest-performance-plus/",
+      "date_publication": "2025",
+      "consulte_le": "2026-07-11"
+    }
+  ],
+  "fonctionnement_operationnel": {
+    "cadence": "Continu, par campagne : une fois lancee, la campagne s'optimise en temps reel sans reglage manuel des enchères.",
+    "opere_par": "Equipe performance marketing de la marque, appuyee par le partenaire commercial Pinterest (Aleph en APAC).",
+    "signal_pilote": "L'evenement de conversion (achat) remonte via le tag Pinterest et l'API de conversion. Sans ce signal, l'optimisation ROAS et panier moyen ne peut pas fonctionner.",
+    "etapes": [
+      {
+        "etape": "Connexion catalogue et tracking",
+        "detail": "Le flux produit et l'evenement d'achat sont branches sur Pinterest.",
+        "acteur": "equipe e-commerce"
+      },
+      {
+        "etape": "Choix de l'objectif",
+        "detail": "La marque fixe l'objectif (ROAS ou conversions) et le budget, puis active la suite Performance+.",
+        "acteur": "equipe acquisition"
+      },
+      {
+        "etape": "Optimisation automatique",
+        "detail": "L'IA gere enchères, ciblage, budget et selection creative pour chercher les acheteurs a fort panier.",
+        "acteur": "IA (Pinterest Performance+)"
+      },
+      {
+        "etape": "Lecture des resultats",
+        "detail": "L'equipe suit ROAS, panier moyen et CPA, ajuste budget et catalogue.",
+        "acteur": "equipe acquisition"
+      }
+    ]
+  },
+  "schema_flow": {
+    "statut": "approche_type",
+    "noeuds": [
+      {
+        "id": "catalog",
+        "role_generique": "data_source",
+        "label": "Catalogue mobilier"
+      },
+      {
+        "id": "perfplus",
+        "role_generique": "modele_ia",
+        "label": "Automatisation enchères / ciblage / budget / creative",
+        "outil_documente": "Pinterest Performance+"
+      },
+      {
+        "id": "pinterest",
+        "role_generique": "paid_platform",
+        "label": "Diffusion Pinterest"
+      },
+      {
+        "id": "conv",
+        "role_generique": "data_source",
+        "label": "Signal d'achat (tag + API conversion)"
+      },
+      {
+        "id": "team",
+        "role_generique": "humain",
+        "label": "Equipe Castlery + Aleph"
+      }
+    ],
+    "liens": [
+      [
+        "catalog",
+        "perfplus"
+      ],
+      [
+        "perfplus",
+        "pinterest"
+      ],
+      [
+        "pinterest",
+        "conv"
+      ],
+      [
+        "conv",
+        "perfplus",
+        "conversions renvoyees pour reoptimiser"
+      ],
+      [
+        "team",
+        "perfplus",
+        "objectif + budget"
+      ]
+    ]
+  },
+  "stack_technique": [
+    {
+      "nom": "Pinterest Performance+",
+      "categorie": "plateforme",
+      "detail": "suite d'automatisation Pinterest Ads : encheres, ciblage, budget et selection creative pilotes par le ML de Pinterest",
+      "url": "https://business.pinterest.com/pinterest-performance-plus/"
+    },
+    {
+      "nom": "Pinterest Tag + API de conversions",
+      "categorie": "infra",
+      "detail": "remontee des achats web cote navigateur et serveur, le signal qui alimente l'optimisation ROAS et panier moyen",
+      "url": "https://business.pinterest.com"
+    },
+    {
+      "nom": "Catalogues Pinterest",
+      "categorie": "outil",
+      "detail": "flux produit (visuels, prix, stock) qui alimente les annonces shopping automatisees",
+      "url": "https://business.pinterest.com"
+    },
+    {
+      "nom": "Aleph",
+      "categorie": "integrateur",
+      "detail": "partenaire commercial officiel de Pinterest en Asie-Pacifique, accompagnement de l'activation Castlery",
+      "url": "https://alephholding.com"
+    }
+  ],
+  "replication": {
+    "statut_epistemique": "infere",
+    "prerequis_data": [
+      "catalogue produit structure",
+      "tag Pinterest + API de conversion avec evenement d'achat"
+    ],
+    "prerequis_orga": [
+      "budget media Pinterest dedie",
+      "acceptation de deleguer le pilotage a l'automatisation"
+    ],
+    "stack_possible": [
+      "Pinterest Performance+",
+      "connecteur catalogue e-commerce"
+    ],
+    "premiere_etape": "Dupliquer une campagne catalogue manuelle en Performance+ et comparer ROAS, panier moyen et CPA a perimetre egal.",
+    "playbook": [
+      {
+        "action": "Brancher le flux catalogue et la mesure d'achat (tag Pinterest + API de conversions), verifier les evenements remontes.",
+        "livrable": "Catalogue synchronise et achats visibles dans Pinterest Ads Manager"
+      },
+      {
+        "action": "Dupliquer la campagne catalogue manuelle en version Performance+, meme budget, meme objectif (ROAS ou conversions).",
+        "livrable": "Deux campagnes comparables actives, manuelle et automatisee"
+      },
+      {
+        "action": "Laisser la phase d'apprentissage converger sans toucher aux reglages.",
+        "livrable": "Campagne sortie d'apprentissage avec un volume de conversions lisible"
+      },
+      {
+        "action": "Comparer ROAS, panier moyen et CPA a perimetre egal, puis basculer le budget vers la version gagnante.",
+        "livrable": "Bilan chiffre et decision de bascule budgetaire"
+      }
+    ],
+    "equipe": "1 media buyer + 1 dev ou integrateur e-commerce pour le flux catalogue et l'API de conversions"
+  },
+  "seo": {
+    "slug": "castlery-pinterest-performance-plus-2025",
+    "title": "Castlery : shopping Pinterest automatise par IA (Performance+) - ROAS x2,3, panier moyen +98% (2025)",
+    "meta_description": "Castlery a bascule ses campagnes catalogue sur Pinterest Performance+ : ROAS multiplie par 2,3, panier moyen +98% et CPA -14% vs pilotage manuel en APAC.",
+    "resume_citable": "Castlery a remplace sa campagne catalogue manuelle par la suite Pinterest Performance+ (achat media automatise par IA) et a multiplie son ROAS par 2,3, augmente son panier moyen de 98% et baisse son CPA de 14% a perimetre comparable.",
+    "faq": [
+      {
+        "q": "Qu'automatise Pinterest Performance+ ?",
+        "a": "Les enchères, le ciblage, le budget et la selection creative d'une campagne shopping : l'annonceur fixe un objectif et un budget, l'IA gere le reste."
+      },
+      {
+        "q": "Le gain vient-il de meilleures creations ?",
+        "a": "Non. C'est un cas d'optimisation de l'achat media a catalogue egal. L'automatisation cible mieux les acheteurs a fort panier ; elle ne genère pas de nouveaux visuels."
+      }
+    ]
+  },
+  "logo_domain": "castlery.com"
+}

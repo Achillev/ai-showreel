@@ -1,0 +1,287 @@
+{
+  "id": "khan-academy-khanmigo-tuteur-ia-2024",
+  "type_fiche": "succes",
+  "marque": "Khan Academy",
+  "industrie": "education",
+  "marches_deploiement": [
+    "Etats-Unis",
+    "Inde",
+    "Bresil",
+    "Philippines",
+    "70+ pays (usage enseignant gratuit)"
+  ],
+  "transposable_ue": {
+    "flag": "oui_avec_adaptations",
+    "note": "Tuteur genAI destine a des mineurs en contexte scolaire. RGPD et protection des donnees eleves (equivalent FERPA) au coeur du sujet ; l'AI Act classe l'education parmi les usages a haut risque, ce qui impose transparence, supervision humaine et evaluation. Khan Academy garde l'enseignant dans la boucle, ce qui aide la conformite."
+  },
+  "metier": "Product / pedagogie / relation eleve-enseignant",
+  "marque_linkedin": "https://www.linkedin.com/company/khan-academy/",
+  "axes": {
+    "levier": "activation_conversion",
+    "touchpoints": [
+      "plateforme Khan Academy",
+      "Khanmigo (eleve)",
+      "Khanmigo for Teachers",
+      "tableau de bord district"
+    ],
+    "etape_parcours": "considération",
+    "famille": "conversation",
+    "pattern": "tuteur conversationnel genAI a l'echelle d'un district scolaire",
+    "type_ia": [
+      "genAI conversationnelle",
+      "LLM (GPT-4)",
+      "tutorat socratique guide"
+    ],
+    "plateforme_stack": [
+      "OpenAI GPT-4",
+      "integration in-house Khan Academy"
+    ],
+    "objectif_metrique": [
+      "eleves actifs",
+      "adoption district",
+      "temps enseignant economise",
+      "engagement d'apprentissage"
+    ]
+  },
+  "implementation": "hybride",
+  "objectif_business": "Faire adopter Khanmigo par des districts scolaires entiers comme tuteur eleve et assistant enseignant, pour ancrer Khan Academy dans le quotidien de la classe et convertir l'usage grand public gratuit en partenariats district payants.",
+  "points_cles": ["Tuteur conversationnel genAI qui guide l'eleve sans donner la reponse.", "Khanmigo base sur OpenAI GPT-4, versions eleve et enseignant.", "2,0 millions d'utilisateurs en 2024-25, dont 770 000 eleves en districts US.", "+731% d'inscriptions sur un an, preuve B confirmee."],
+  "description": "Khanmigo est un tuteur genAI base sur GPT-4. Pour l'eleve, il guide pas a pas sans donner la reponse directement, dans l'esprit du questionnement socratique, et suit le contexte de l'exercice en cours. Pour l'enseignant, Khanmigo for Teachers prepare des plans de lecon, redige des consignes et aide a la correction. Le produit est vendu aux districts (programme Khan Academy Districts) avec un tableau de bord de suivi, et reste accessible gratuitement a des enseignants isoles dans plus de 70 pays.",
+  "resultats": [
+    {
+      "metrique": "Utilisateurs Khanmigo dans le monde (SY24-25)",
+      "valeur": "2,0 millions",
+      "citation_exacte": "2.0M total global Khanmigo users had access",
+      "source_ref": "S1"
+    },
+    {
+      "metrique": "Eleves US en partenariat district utilisant Khanmigo",
+      "valeur": "770 000",
+      "citation_exacte": "770K students in the U.S. district partnerships program utilized Khanmigo",
+      "source_ref": "S1"
+    },
+    {
+      "metrique": "Croissance des inscriptions (YoY, SY24-25 vs SY23-24)",
+      "valeur": "+731%",
+      "citation_exacte": "731% year-over-year growth in signups",
+      "source_ref": "S1"
+    }
+  ],
+  "niveau_preuve": {
+    "niveau": "B",
+    "justification": "Chiffres de deploiement publies par Khan Academy dans son rapport annuel officiel SY24-25 (source primaire de la marque-sujet), corrobores par une annonce gouvernementale d'Etat (New Hampshire) confirmant un deploiement reel au niveau d'un Etat."
+  },
+  "dates": {
+    "lancement": "2023-03 (Khanmigo lance avec GPT-4)",
+    "derniere_confirmation_activite": "2025 (rapport annuel SY24-25 : 2,0M d'utilisateurs, expansion districts et pays)",
+    "verifie_le": "2026-07-11",
+    "revoir_apres": "2027-01-11"
+  },
+  "statut_vivant": {
+    "statut": "confirme",
+    "note": "Deploiement en expansion sur SY25-26 (blog Districts), nouveaux pays (Inde, Bresil, Philippines) et Etats US. Feature active et centrale au produit."
+  },
+  "sources": [
+    {
+      "ref": "S1",
+      "type": "document_officiel_sec",
+      "fiabilite": "T1_primaire",
+      "titre": "Khan Academy Annual Report SY24-25",
+      "url": "https://annualreport.khanacademy.org/",
+      "date_publication": "2025",
+      "consulte_le": "2026-07-11"
+    },
+    {
+      "ref": "S2",
+      "type": "document_officiel_sec",
+      "fiabilite": "T3_presse_etablie",
+      "titre": "Khan Academy to extend its AI services, at no cost, to New Hampshire educators and students (NH Department of Education)",
+      "url": "https://www.education.nh.gov/news-and-media/khan-academy-extend-its-ai-services-no-cost-new-hampshire-educators-and-students",
+      "date_publication": "2024",
+      "consulte_le": "2026-07-11"
+    },
+    {
+      "ref": "S3",
+      "type": "blog_officiel",
+      "fiabilite": "T2_officiel_interesse",
+      "titre": "What's New for the 2025-26 School Year: Big Updates from Khan Academy Districts",
+      "url": "https://blog.khanacademy.org/whats-new-for-the-2025-26-school-year-big-updates-from-khan-academy-districts/",
+      "date_publication": "2025",
+      "consulte_le": "2026-07-11"
+    }
+  ],
+  "fonctionnement_operationnel": {
+    "cadence": "Temps reel a chaque interaction eleve ou enseignant ; deploiement par vagues au rythme du calendrier scolaire (rentree, semestres).",
+    "opere_par": "Equipe Product/IA de Khan Academy pour le systeme ; cote client, l'administrateur district provisionne les comptes et les enseignants pilotent l'usage en classe.",
+    "signal_pilote": "La qualite du guidage pas a pas : le tuteur doit orienter sans donner la reponse. Si le LLM lache la solution ou se trompe, la valeur pedagogique et la confiance de l'enseignant s'effondrent.",
+    "etapes": [
+      {
+        "etape": "Provisionnement district",
+        "detail": "Le district signe le partenariat, cree les comptes eleves et enseignants et parametre les acces.",
+        "acteur": "client"
+      },
+      {
+        "etape": "Interaction eleve",
+        "detail": "L'eleve travaille un exercice et sollicite Khanmigo, qui pose des questions et guide plutot que de repondre.",
+        "acteur": "IA"
+      },
+      {
+        "etape": "Appui enseignant",
+        "detail": "L'enseignant genere plans de lecon et consignes via Khanmigo for Teachers et suit l'activite eleve.",
+        "acteur": "marketing"
+      },
+      {
+        "etape": "Garde-fous et suivi",
+        "detail": "Khan Academy applique des garde-fous sur les sorties et suit l'usage agrege pour le district.",
+        "acteur": "equipe data"
+      }
+    ]
+  },
+  "schema_flow": {
+    "statut": "documente",
+    "noeuds": [
+      {
+        "id": "n1",
+        "role_generique": "humain",
+        "label": "Eleve"
+      },
+      {
+        "id": "n2",
+        "role_generique": "humain",
+        "label": "Enseignant"
+      },
+      {
+        "id": "n3",
+        "role_generique": "site_app",
+        "label": "Plateforme Khan Academy + Khanmigo"
+      },
+      {
+        "id": "n4",
+        "role_generique": "modele_ia",
+        "label": "LLM tuteur socratique",
+        "outil_documente": "OpenAI GPT-4"
+      },
+      {
+        "id": "n5",
+        "role_generique": "data_source",
+        "label": "Contexte d'exercice et progression eleve"
+      }
+    ],
+    "liens": [
+      [
+        "n1",
+        "n3"
+      ],
+      [
+        "n2",
+        "n3"
+      ],
+      [
+        "n3",
+        "n5"
+      ],
+      [
+        "n5",
+        "n4"
+      ],
+      [
+        "n4",
+        "n3",
+        "guidage ou plan de lecon genere renvoye a l'utilisateur"
+      ],
+      [
+        "n3",
+        "n1"
+      ],
+      [
+        "n3",
+        "n2"
+      ]
+    ]
+  },
+  "replication": {
+    "statut_epistemique": "infere",
+    "prerequis_data": [
+      "contenu pedagogique structure et aligne au programme",
+      "contexte d'exercice en cours (question, reponse, niveau)",
+      "garde-fous stricts sur les sorties du LLM (ne pas donner la reponse, pas de contenu inadapte a des mineurs)"
+    ],
+    "prerequis_orga": [
+      "modele de vente aux institutions (districts, etablissements)",
+      "gouvernance des donnees eleves et conformite",
+      "process d'evaluation continue de la qualite pedagogique"
+    ],
+    "stack_possible": [
+      "LLM (OpenAI, Anthropic ou equivalent)",
+      "couche de prompt socratique et de garde-fous",
+      "tableau de bord de suivi pour l'institution"
+    ],
+    "premiere_etape": "Definir le garde-fou pedagogique central (le tuteur guide sans donner la reponse) et le valider sur une matiere avant d'ouvrir un pilote a une ecole.",
+    "playbook": [
+      {
+        "action": "Definir le garde-fou pedagogique central (guider sans donner la reponse) et le perimetre matiere",
+        "livrable": "Spec du tuteur + jeu d'evaluation des reponses"
+      },
+      {
+        "action": "Brancher le LLM sur le contenu pedagogique et le contexte d'exercice en cours",
+        "livrable": "Prototype fonctionnel sur une matiere"
+      },
+      {
+        "action": "Evaluer la qualite pedagogique et verrouiller la conformite donnees mineurs",
+        "livrable": "Rapport d'evaluation + cadre juridique valide"
+      },
+      {
+        "action": "Piloter dans un etablissement avec des enseignants volontaires, versions eleve et enseignant",
+        "livrable": "Retours enseignants + metriques d'usage reelles"
+      },
+      {
+        "action": "Construire le tableau de bord institution et le modele de vente aux etablissements",
+        "livrable": "Offre institutionnelle prete, cycle de vente engage"
+      }
+    ],
+    "equipe": "1 PM + 2 devs + 1 expert pedagogique + 1 juriste (donnees mineurs)"
+  },
+  "seo": {
+    "slug": "khan-academy-khanmigo-tuteur-ia-2024",
+    "title": "Khan Academy Khanmigo : tuteur genAI GPT-4 a 2 millions d'utilisateurs (2024)",
+    "meta_description": "Khanmigo, tuteur genAI GPT-4 de Khan Academy, a touche 2 millions d'utilisateurs en 2024-25 dont 770 000 eleves en partenariats district US, avec +731% d'inscriptions.",
+    "resume_citable": "Khanmigo, le tuteur genAI GPT-4 de Khan Academy, a atteint 2,0 millions d'utilisateurs dans le monde en 2024-25, dont 770 000 eleves en partenariats district US, avec une croissance des inscriptions de 731% sur un an.",
+    "faq": [
+      {
+        "q": "Qu'est-ce que Khanmigo ?",
+        "a": "Un tuteur genAI base sur GPT-4 qui guide l'eleve par le questionnement plutot que de donner la reponse, double d'un assistant enseignant pour preparer et corriger."
+      },
+      {
+        "q": "Quelle est son echelle de deploiement ?",
+        "a": "2,0 millions d'utilisateurs dans le monde en 2024-25 selon le rapport annuel de Khan Academy, dont 770 000 eleves via des partenariats district aux Etats-Unis, avec une expansion en Inde, au Bresil et aux Philippines."
+      }
+    ]
+  },
+  "logo_domain": "khanacademy.org",
+  "stack_technique": [
+    {
+      "nom": "OpenAI GPT-4",
+      "categorie": "llm",
+      "detail": "modele de langage motorisant le tuteur et l'assistant enseignant depuis le lancement de mars 2023",
+      "url": "https://openai.com"
+    },
+    {
+      "nom": "Khanmigo (integration in-house)",
+      "categorie": "plateforme",
+      "detail": "couche produit de Khan Academy : suivi du contexte d'exercice, prompts socratiques, versions eleve et enseignant",
+      "url": "https://www.khanacademy.org"
+    },
+    {
+      "nom": "Garde-fous pedagogiques et de securite",
+      "categorie": "outil",
+      "detail": "regles empechant de donner la reponse directement et filtrant les contenus inadaptes a des mineurs",
+      "url": "https://www.khanacademy.org"
+    },
+    {
+      "nom": "Tableau de bord district",
+      "categorie": "outil",
+      "detail": "suivi d'usage agrege pour les partenariats districts (programme Khan Academy Districts)",
+      "url": "https://www.khanacademy.org"
+    }
+  ]
+}

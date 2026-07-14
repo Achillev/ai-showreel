@@ -1,0 +1,303 @@
+{
+  "id": "volkswagen-ida-cerence-chatgpt-2024",
+  "type_fiche": "succes",
+  "marque": "Volkswagen",
+  "groupe": "Volkswagen Group",
+  "industrie": "auto",
+  "marches_deploiement": [
+    "Europe",
+    "Etats-Unis",
+    "deploiement multi-marches"
+  ],
+  "transposable_ue": {
+    "flag": "oui",
+    "note": "Premier deploiement en Europe (juin 2024) sur les marques Volkswagen, Cupra, Seat et Skoda. Cerence Chat Pro est concu pour l'usage automobile ; le point RGPD porte sur le transit des requetes vers la couche cloud LLM."
+  },
+  "metier": "experience produit / interface vocale embarquee",
+  "intervenants": [
+    {
+      "nom": "Kai Gruenitz",
+      "role": "Member of Volkswagen Brand Board of Management, Development",
+      "source_ref": "S1"
+    },
+    {
+      "nom": "Stefan Ortmanns",
+      "role": "CEO, Cerence",
+      "source_ref": "S1"
+    }
+  ],
+  "agences": [
+    {
+      "nom": "Cerence",
+      "role": "Partenaire technologique, integration de Cerence Chat Pro (ChatGPT) dans l'assistant vocal IDA",
+      "source_ref": "S1"
+    }
+  ],
+  "axes": {
+    "levier": "retention",
+    "touchpoints": [
+      "vehicule (assistant vocal IDA)",
+      "headunit"
+    ],
+    "etape_parcours": "post-achat",
+    "famille": "conversation",
+    "pattern": "assistant vocal in-car genAI",
+    "type_ia": [
+      "LLM (ChatGPT)",
+      "NLU hybride embarque/cloud",
+      "reconnaissance vocale"
+    ],
+    "plateforme_stack": [
+      "Cerence Chat Pro",
+      "ChatGPT / OpenAI"
+    ],
+    "objectif_metrique": [
+      "marques et modeles couverts",
+      "langues supportees",
+      "usage vocal"
+    ]
+  },
+  "implementation": "hybride",
+  "objectif_business": "Ajouter une couche de conversation en langage naturel a l'assistant vocal IDA deja present dans les vehicules, pour enrichir l'experience a bord sans que le conducteur ait a installer ou parametrer quoi que ce soit.",
+  "points_cles": ["Integration de ChatGPT dans l'assistant vocal embarque IDA.", "Cerence Chat Pro en approche hybride embarque/cloud, activee par mise a jour cloud.", "Deploye sur Volkswagen, Cupra, Seat et Skoda, live en cinq langues.", "Preuve B, statut confirme, deploiement Europe puis Etats-Unis."],
+  "description": "Cerence Chat Pro integre ChatGPT dans l'arriere-plan de l'assistant vocal IDA de Volkswagen. Le conducteur garde la commande vehicule embarquee (climatisation, navigation, telephone) et gagne l'acces a des reponses conversationnelles et a de l'information web en temps reel via la meme interface vocale, grace a l'approche hybride embarque plus cloud de Cerence. Deploye a partir du 24 juin 2024 par mise a jour cloud sur la gamme europeenne (ID., Golf, Tiguan, Passat, plus modeles plus anciens), puis etendu aux Etats-Unis et a d'autres marches fin 2024 et debut 2025. Disponible sur Volkswagen, Cupra, Seat et Skoda, en cinq langues.",
+  "resultats": [
+    {
+      "metrique": "Langues live sur Cerence Chat Pro (EN-US, EN-UK, DE, ES, CS)",
+      "valeur": "5 langues",
+      "citation_exacte": "live in five languages",
+      "source_ref": "S1"
+    },
+    {
+      "metrique": "Marques du groupe couvertes (Volkswagen, Cupra, Seat, Skoda)",
+      "valeur": "4 marques",
+      "citation_exacte": "brands, including Volkswagen, Cupra, Seat, and Skoda",
+      "source_ref": "S1"
+    },
+    {
+      "metrique": "Positionnement marche (declaration groupe)",
+      "valeur": "parmi les premiers constructeurs grand-volume a integrer ChatGPT",
+      "citation_exacte": "one of the first high-volume manufacturers",
+      "source_ref": "S2"
+    },
+    {
+      "metrique": "Usage vise (declaration VW)",
+      "valeur": "usage quotidien de l'IA par les conducteurs",
+      "citation_exacte": "use this artificial intelligence on a daily basis",
+      "source_ref": "S1"
+    }
+  ],
+  "niveau_preuve": {
+    "niveau": "B",
+    "justification": "Etude de cas du fournisseur Cerence (partie interessee) chiffrant le deploiement (cinq langues, quatre marques, gamme complete), corroboree par le blog officiel du Volkswagen Group ; portee multi-marches mais pas de metrique d'usage financiere isolee."
+  },
+  "dates": {
+    "lancement": "2024-06-24 (Europe)",
+    "derniere_confirmation_activite": "2025 (extension US et nouvelles langues)",
+    "verifie_le": "2026-07-11",
+    "revoir_apres": "2027-01-11"
+  },
+  "statut_vivant": {
+    "statut": "confirme",
+    "note": "Roll-out actif et etendu du marche europeen vers les Etats-Unis et de nouveaux modeles 2025 ; annonce initiale au CES 2024, premiere mise a disposition conducteurs en juin 2024."
+  },
+  "sources": [
+    {
+      "ref": "S1",
+      "type": "customer_story_plateforme",
+      "fiabilite": "T2_officiel_interesse",
+      "titre": "Volkswagen and Cerence Commence Roll-Out of New Generative AI Solutions to Drivers",
+      "url": "https://investors.cerence.com/news-events/press-releases/detail/127/volkswagen-and-cerence-commence-roll-out-of-new-generative-ai-solutions-to-drivers",
+      "date_publication": "2024-06-24",
+      "consulte_le": "2026-07-11"
+    },
+    {
+      "ref": "S2",
+      "type": "blog_officiel",
+      "fiabilite": "T1_primaire",
+      "titre": "ChatGPT is now available in many Volkswagen models",
+      "url": "https://www.volkswagen-group.com/en/articles/chatgpt-is-now-available-in-many-volkswagen-models-18464",
+      "date_publication": "2024",
+      "consulte_le": "2026-07-11"
+    },
+    {
+      "ref": "S3",
+      "type": "blog_officiel",
+      "fiabilite": "T1_primaire",
+      "titre": "World premiere at CES: Volkswagen integrates ChatGPT into its vehicles",
+      "url": "https://www.volkswagen-newsroom.com/en/press-releases/world-premiere-at-ces-volkswagen-integrates-chatgpt-into-its-vehicles-18048",
+      "date_publication": "2024-01",
+      "consulte_le": "2026-07-11"
+    }
+  ],
+  "fonctionnement_operationnel": {
+    "cadence": "Temps reel pendant le trajet ; deploiement par mise a jour cloud, sans intervention du conducteur.",
+    "opere_par": "Les equipes produit et voix de Volkswagen avec Cerence comme partenaire d'integration.",
+    "signal_pilote": "La requete vocale et la distinction entre commande vehicule (traitee en embarque) et question ouverte (routee vers le cloud LLM). Sans connectivite, la partie conversationnelle cloud n'est plus disponible.",
+    "etapes": [
+      {
+        "etape": "Activation",
+        "detail": "Le conducteur s'adresse a l'assistant IDA deja present dans le vehicule.",
+        "acteur": "client"
+      },
+      {
+        "etape": "Arbitrage embarque/cloud",
+        "detail": "L'approche hybride Cerence traite les commandes vehicule en local et envoie les questions ouvertes vers ChatGPT.",
+        "acteur": "IA"
+      },
+      {
+        "etape": "Reponse conversationnelle",
+        "detail": "Cerence Chat Pro fait rediger la reponse par ChatGPT et la restitue via IDA.",
+        "acteur": "IA"
+      },
+      {
+        "etape": "Diffusion par mise a jour",
+        "detail": "La fonction est activee sur le parc par mise a jour cloud, marche par marche et modele par modele.",
+        "acteur": "equipe data"
+      }
+    ]
+  },
+  "schema_flow": {
+    "statut": "documente",
+    "noeuds": [
+      {
+        "id": "conducteur",
+        "role_generique": "humain",
+        "label": "Conducteur"
+      },
+      {
+        "id": "ida",
+        "role_generique": "site_app",
+        "label": "Assistant vocal IDA",
+        "outil_documente": "Volkswagen IDA"
+      },
+      {
+        "id": "chatpro",
+        "role_generique": "modele_ia",
+        "label": "Couche genAI automobile",
+        "outil_documente": "Cerence Chat Pro"
+      },
+      {
+        "id": "llm",
+        "role_generique": "modele_ia",
+        "label": "Generation de reponse",
+        "outil_documente": "ChatGPT / OpenAI"
+      }
+    ],
+    "liens": [
+      [
+        "conducteur",
+        "ida",
+        "commande vocale"
+      ],
+      [
+        "ida",
+        "chatpro",
+        "question ouverte"
+      ],
+      [
+        "chatpro",
+        "llm",
+        "prompt automobile"
+      ],
+      [
+        "llm",
+        "chatpro",
+        "reponse"
+      ],
+      [
+        "chatpro",
+        "ida",
+        "restitution"
+      ],
+      [
+        "ida",
+        "conducteur",
+        "reponse vocale"
+      ]
+    ]
+  },
+  "replication": {
+    "statut_epistemique": "infere",
+    "prerequis_data": [
+      "assistant vocal existant a augmenter",
+      "contexte vehicule et session"
+    ],
+    "prerequis_orga": [
+      "partenariat avec un fournisseur voix automobile",
+      "cadre juridique sur le transit cloud"
+    ],
+    "stack_possible": [
+      "Cerence ou equivalent voix automobile",
+      "LLM cloud type ChatGPT",
+      "NLU hybride embarque/cloud"
+    ],
+    "premiere_etape": "Brancher la couche conversationnelle du fournisseur voix sur l'assistant embarque deja deploye, puis activer par mise a jour cloud.",
+    "playbook": [
+      {
+        "action": "Choisir le fournisseur voix automobile et cadrer le juridique du transit des requetes vers le cloud.",
+        "livrable": "Contrat partenaire + cadre RGPD sur les donnees de requete."
+      },
+      {
+        "action": "Integrer la couche conversationnelle dans l'assistant vocal existant, avec arbitrage embarque/cloud.",
+        "livrable": "Prototype fonctionnel sur banc et vehicule de test."
+      },
+      {
+        "action": "Tester les langues cibles et valider securite et non-distraction du conducteur.",
+        "livrable": "Recette validee par marche et par langue."
+      },
+      {
+        "action": "Activer la fonction sur une flotte pilote par mise a jour cloud.",
+        "livrable": "Fonction live sur parc pilote avec metriques d'usage vocal."
+      },
+      {
+        "action": "Deployer marche par marche et modele par modele.",
+        "livrable": "Rollout OTA suivi de l'usage et des incidents."
+      }
+    ],
+    "equipe": "1 PM produit embarque + equipe voix/HMI interne + partenaire voix automobile + juriste data"
+  },
+  "seo": {
+    "slug": "volkswagen-ida-cerence-chatgpt-2024",
+    "title": "Volkswagen : ChatGPT dans l'assistant IDA via Cerence - 4 marques, 5 langues (2024)",
+    "meta_description": "Volkswagen a integre ChatGPT dans son assistant vocal IDA avec Cerence Chat Pro, deploye des juin 2024 sur VW, Cupra, Seat et Skoda en cinq langues.",
+    "resume_citable": "Volkswagen a integre ChatGPT dans son assistant vocal embarque IDA via Cerence Chat Pro, deploye par mise a jour cloud a partir de juin 2024 sur les marques Volkswagen, Cupra, Seat et Skoda, live en cinq langues.",
+    "faq": [
+      {
+        "q": "Comment ChatGPT arrive-t-il dans les Volkswagen ?",
+        "a": "Via Cerence Chat Pro, integre dans l'arriere-plan de l'assistant vocal IDA, active par mise a jour cloud sans installation par le conducteur."
+      },
+      {
+        "q": "Quelles marques et langues sont couvertes ?",
+        "a": "Les marques Volkswagen, Cupra, Seat et Skoda utilisant IDA, en cinq langues (anglais US et UK, allemand, espagnol, tcheque)."
+      }
+    ]
+  },
+  "logo_domain": "vw.com",
+  "stack_technique": [
+    {
+      "nom": "Cerence Chat Pro",
+      "categorie": "plateforme",
+      "detail": "Couche genAI concue pour l'automobile, qui integre ChatGPT dans l'arriere-plan de l'assistant vocal IDA.",
+      "url": "https://www.cerence.ai"
+    },
+    {
+      "nom": "ChatGPT (OpenAI)",
+      "categorie": "llm",
+      "detail": "Modele qui redige les reponses aux questions ouvertes routees vers le cloud.",
+      "url": "https://openai.com"
+    },
+    {
+      "nom": "Assistant vocal IDA",
+      "categorie": "outil",
+      "detail": "Assistant embarque de Volkswagen (commande vehicule traitee en local), interface unique pour le conducteur.",
+      "url": "https://www.volkswagen-group.com"
+    },
+    {
+      "nom": "NLU hybride embarque/cloud Cerence",
+      "categorie": "infra",
+      "detail": "Arbitrage entre commandes vehicule traitees en embarque et questions ouvertes envoyees au LLM cloud.",
+      "url": "https://www.cerence.ai"
+    }
+  ]
+}

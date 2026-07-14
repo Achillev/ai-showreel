@@ -1,0 +1,281 @@
+{
+  "id": "bank-of-america-erica-assistant-2024",
+  "type_fiche": "succes",
+  "marque": "Bank of America",
+  "groupe": "Bank of America Corporation",
+  "industrie": "banque_assurance_fintech",
+  "marches_deploiement": [
+    "Etats-Unis"
+  ],
+  "transposable_ue": {
+    "flag": "oui_avec_adaptations",
+    "note": "Assistant deploye aux Etats-Unis. En UE, un assistant qui lit comptes et transactions impose une base legale RGPD claire et, sous l'AI Act, une obligation de transparence (dire au client qu'il parle a une IA). Le pattern est transposable, l'architecture de donnees et la conformite sont a refaire."
+  },
+  "metier": "service client",
+  "intervenants": [
+    {
+      "nom": "Nikki Katz",
+      "role": "Head of Digital, Bank of America",
+      "source_ref": "S1"
+    },
+    {
+      "nom": "Hari Gopalkrishnan",
+      "role": "Chief Technology and Information Officer, Bank of America",
+      "source_ref": "S2"
+    }
+  ],
+  "axes": {
+    "levier": "retention",
+    "touchpoints": [
+      "app mobile Bank of America",
+      "assistant vocal et texte"
+    ],
+    "etape_parcours": "post-achat",
+    "famille": "conversation",
+    "pattern": "assistant financier conversationnel a l'echelle",
+    "type_ia": [
+      "traitement du langage naturel",
+      "analyse predictive",
+      "assistant conversationnel"
+    ],
+    "plateforme_stack": [
+      "custom/in-house"
+    ],
+    "objectif_metrique": [
+      "volume d'interactions traitees",
+      "delai de reponse",
+      "engagement digital"
+    ]
+  },
+  "implementation": "custom",
+  "stack_technique": [
+    {
+      "nom": "Erica (moteur NLP maison)",
+      "categorie": "outil",
+      "detail": "Moteur de comprehension du langage naturel et de la voix construit en interne par Bank of America, integre au core banking ; les sources ne nomment pas de LLM tiers.",
+      "url": "https://www.bankofamerica.com"
+    },
+    {
+      "nom": "Moteur d'insights proactifs (analyse predictive maison)",
+      "categorie": "outil",
+      "detail": "Analyse predictive sur les transactions qui detecte les evenements (depense inhabituelle, echeance, opportunite d'epargne) et pousse des alertes personnalisees.",
+      "url": "https://www.bankofamerica.com"
+    },
+    {
+      "nom": "App mobile Bank of America",
+      "categorie": "plateforme",
+      "detail": "Canal unique d'Erica (texte et voix), avec integration profonde aux comptes et transactions en temps reel.",
+      "url": "https://www.bankofamerica.com"
+    }
+  ],
+  "objectif_business": "Traiter en libre-service le gros du besoin quotidien des clients (solde, transactions, budget, alertes, virements) dans l'app, deporter les demandes simples hors des canaux couteux et pousser des insights proactifs pour ancrer l'usage de l'app.",
+  "points_cles": ["Assistant conversationnel Erica dans l'app mobile pour solde, transactions, budget et alertes proactives.", "Moteur NLP et voix maison, integre au core banking, sur donnees de compte en temps reel.", "Plus de 3 milliards d'interactions et 58 millions par mois ; reponse en 44 secondes pour 98% des clients.", "Preuve A, statut vivant confirme."],
+  "description": "Erica est l'assistant integre a l'app mobile de Bank of America, lance en 2018. Le client l'interroge en langage naturel ou par la voix pour verifier un solde, retrouver une transaction, gerer un budget ou recevoir une alerte. Les volumes sont massifs et documentes par la banque : plus de 2 milliards d'interactions et 42 millions de clients aides annonces en avril 2024, puis 3 milliards d'interactions et pres de 50 millions d'utilisateurs en aout 2025, avec une moyenne de plus de 58 millions d'interactions par mois. Erica pousse aussi des insights personnalises proactifs sans que le client ait a demander.",
+  "resultats": [
+    {
+      "metrique": "Interactions cumulees (avril 2024)",
+      "valeur": "plus de 2 milliards",
+      "citation_exacte": "Erica Surpasses 2 Billion Interactions, Helping 42 Million Clients",
+      "source_ref": "S1"
+    },
+    {
+      "metrique": "Delai de reponse pour plus de 98% des clients",
+      "valeur": "44 s en moyenne",
+      "citation_exacte": "Over 98% of clients receive answers within 44 seconds on average",
+      "source_ref": "S1"
+    },
+    {
+      "metrique": "Interactions cumulees (aout 2025)",
+      "valeur": "plus de 3 milliards",
+      "citation_exacte": "Erica Surpasses 3 Billion Client Interactions",
+      "source_ref": "S2"
+    },
+    {
+      "metrique": "Interactions mensuelles moyennes (2025)",
+      "valeur": "58 M+/mois",
+      "citation_exacte": "averages more than 58 million interactions per month",
+      "source_ref": "S2"
+    }
+  ],
+  "niveau_preuve": {
+    "niveau": "A",
+    "justification": "Volumes publies par Bank of America elle-meme dans plusieurs communiques officiels concordants (T1), sur plusieurs annees (2 milliards en 2024, 3 milliards en 2025), en ligne avec ses disclosures d'engagement digital rattachees au reporting trimestriel. Plusieurs sources primaires concordantes de la marque-sujet font monter le niveau."
+  },
+  "dates": {
+    "lancement": "2018",
+    "derniere_confirmation_activite": "2025-08",
+    "verifie_le": "2026-07-11",
+    "revoir_apres": "2027-01-11"
+  },
+  "statut_vivant": {
+    "statut": "confirme",
+    "note": "Croissance continue et documentee : 2 milliards d'interactions en avril 2024, 3 milliards en aout 2025, 58 millions par mois. Feature centrale de l'app, aucun signal de retrait."
+  },
+  "sources": [
+    {
+      "ref": "S1",
+      "type": "presse",
+      "fiabilite": "T1_primaire",
+      "titre": "BofA's Erica Surpasses 2 Billion Interactions, Helping 42 Million Clients Since Launch",
+      "url": "https://newsroom.bankofamerica.com/content/newsroom/press-releases/2024/04/bofa-s-erica-surpasses-2-billion-interactions--helping-42-millio.html",
+      "date_publication": "2024-04-08",
+      "consulte_le": "2026-07-11"
+    },
+    {
+      "ref": "S2",
+      "type": "presse",
+      "fiabilite": "T1_primaire",
+      "titre": "A Decade of AI Innovation: BofA's Virtual Assistant Erica Surpasses 3 Billion Client Interactions",
+      "url": "https://www.prnewswire.com/news-releases/a-decade-of-ai-innovation-bofas-virtual-assistant-erica-surpasses-3-billion-client-interactions-302533883.html",
+      "date_publication": "2025-08-20",
+      "consulte_le": "2026-07-11"
+    },
+    {
+      "ref": "S3",
+      "type": "presse",
+      "fiabilite": "T3_presse_etablie",
+      "titre": "Bank of America's Erica surpasses 2 billion interactions",
+      "url": "https://www.retailbankerinternational.com/news/bank-of-america-virtual-assistant-erica-passes-2-billion-interactions/",
+      "date_publication": "2024-04",
+      "consulte_le": "2026-07-11"
+    }
+  ],
+  "fonctionnement_operationnel": {
+    "cadence": "Temps reel, 24/7, dans l'app mobile ; insights proactifs pousses en continu",
+    "opere_par": "Equipe produit digital et technologie de Bank of America, en interne",
+    "signal_pilote": "L'intention exprimee par le client (requete en langage naturel ou voix) plus les signaux transactionnels qui declenchent les insights proactifs. Sans donnees de compte propres et a jour, les insights et alertes perdent leur pertinence.",
+    "etapes": [
+      {
+        "etape": "Requete client",
+        "detail": "Le client tape ou dit sa demande dans l'app (solde, transaction, budget, virement).",
+        "acteur": "client"
+      },
+      {
+        "etape": "Comprehension et reponse",
+        "detail": "Erica interprete l'intention, va chercher la donnee de compte et repond, en moyenne en moins de 44 secondes.",
+        "acteur": "IA"
+      },
+      {
+        "etape": "Insights proactifs",
+        "detail": "En dehors de toute requete, Erica detecte des evenements (depense inhabituelle, echeance, opportunite d'epargne) et pousse une alerte personnalisee.",
+        "acteur": "IA"
+      },
+      {
+        "etape": "Supervision et amelioration",
+        "detail": "L'equipe interne suit les volumes, la satisfaction et les cas mal compris pour elargir le perimetre traite.",
+        "acteur": "equipe data"
+      }
+    ]
+  },
+  "schema_flow": {
+    "statut": "approche_type",
+    "noeuds": [
+      {
+        "id": "client",
+        "role_generique": "site_app",
+        "label": "Client dans l'app mobile"
+      },
+      {
+        "id": "erica",
+        "role_generique": "modele_ia",
+        "label": "Erica (assistant NLP + predictif)"
+      },
+      {
+        "id": "compte",
+        "role_generique": "data_source",
+        "label": "Comptes, transactions, signaux financiers"
+      },
+      {
+        "id": "insights",
+        "role_generique": "modele_ia",
+        "label": "Moteur d'insights proactifs"
+      }
+    ],
+    "liens": [
+      [
+        "client",
+        "erica"
+      ],
+      [
+        "erica",
+        "compte"
+      ],
+      [
+        "compte",
+        "erica"
+      ],
+      [
+        "erica",
+        "client"
+      ],
+      [
+        "compte",
+        "insights"
+      ],
+      [
+        "insights",
+        "client",
+        "alerte proactive"
+      ]
+    ]
+  },
+  "replication": {
+    "statut_epistemique": "infere",
+    "prerequis_data": [
+      "Donnees de compte et de transaction en temps reel",
+      "Historique d'intents clients pour l'entrainement",
+      "Regles de detection d'evenements pour les insights proactifs"
+    ],
+    "prerequis_orga": [
+      "Equipe produit digital dediee dans la duree",
+      "Cadre de securite et de conformite bancaire",
+      "Gouvernance des messages proactifs (frequence, pertinence)"
+    ],
+    "stack_possible": [
+      "Moteur NLP/LLM",
+      "Couche d'analyse predictive sur les transactions",
+      "Integration profonde au core banking et a l'app mobile"
+    ],
+    "premiere_etape": "Cartographier les 20 intentions client les plus frequentes dans l'app et brancher l'assistant sur la donnee de compte en lecture avant d'ajouter le proactif.",
+    "playbook": [
+      {
+        "action": "Cartographier les 20 intentions client les plus frequentes (solde, transaction, virement, budget) a partir des logs support et app.",
+        "livrable": "Referentiel d'intentions priorisees par volume."
+      },
+      {
+        "action": "Construire l'assistant en lecture seule sur les donnees de compte pour ces intentions, en environnement de test.",
+        "livrable": "Prototype interne teste sur donnees reelles."
+      },
+      {
+        "action": "Ouvrir une beta a un segment de clients dans l'app, avec escalade humaine et transparence sur la nature IA.",
+        "livrable": "Assistant en beta, taux de resolution et satisfaction suivis."
+      },
+      {
+        "action": "Elargir le perimetre aux actions transactionnelles et aux alertes, avec validation securite et conformite bancaire.",
+        "livrable": "Assistant generalise dans l'app."
+      },
+      {
+        "action": "Ajouter les insights proactifs declenches par les signaux transactionnels, avec gouvernance de la frequence des messages.",
+        "livrable": "Moteur d'alertes personnalisees en production."
+      }
+    ],
+    "equipe": "1 equipe produit digital dediee (PM, design) + 3-5 ingenieurs NLP/ML + conformite et securite bancaire impliquees en continu."
+  },
+  "seo": {
+    "slug": "bank-of-america-erica-assistant-2024",
+    "title": "Bank of America : assistant Erica - plus de 3 milliards d'interactions (2024-2025)",
+    "meta_description": "Erica, l'assistant de l'app Bank of America, a depasse 2 milliards d'interactions en 2024 et 3 milliards en 2025, avec 58 millions par mois.",
+    "resume_citable": "Erica, l'assistant conversationnel de l'app Bank of America lance en 2018, a depasse 2 milliards d'interactions et 42 millions de clients en avril 2024, puis 3 milliards d'interactions et pres de 50 millions d'utilisateurs en aout 2025.",
+    "faq": [
+      {
+        "q": "Combien d'interactions Erica a-t-il traitees ?",
+        "a": "Plus de 2 milliards annoncees en avril 2024 et plus de 3 milliards en aout 2025, avec une moyenne de plus de 58 millions par mois."
+      },
+      {
+        "q": "Erica repond-il vite ?",
+        "a": "Bank of America indique que plus de 98% des clients recoivent une reponse en 44 secondes en moyenne."
+      }
+    ]
+  },
+  "logo_domain": "bankofamerica.com"
+}

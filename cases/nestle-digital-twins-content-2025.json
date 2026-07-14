@@ -1,0 +1,296 @@
+{
+  "id": "nestle-digital-twins-content-2025",
+  "type_fiche": "succes",
+  "marque": "Nestle",
+  "groupe": "Nestle",
+  "industrie": "cpg_d2c",
+  "marches_deploiement": [
+    "Monde (45 studios de contenu, 7 hubs marketing)",
+    "Suisse",
+    "Etats-Unis"
+  ],
+  "transposable_ue": {
+    "flag": "oui",
+    "note": "Contenu produit sans images de personnes ; donnees personnelles limitees a la personnalisation media. Sous AI Act, transparence sur les visuels synthetiques a prevoir. Le groupe est suisse, deja rompu au RGPD."
+  },
+  "metier": "marketing, e-commerce",
+  "intervenants": [
+    {
+      "nom": "David Rennie",
+      "role": "Head of Strategic Business Units, Marketing and Sales, Nestle",
+      "source_ref": "S1"
+    }
+  ],
+  "agences": [
+    {
+      "nom": "Accenture Song",
+      "role": "Developpement du service de jumeaux numeriques et de contenu",
+      "source_ref": "S1"
+    },
+    {
+      "nom": "Nvidia",
+      "role": "Omniverse et NVIDIA AI Enterprise pour la creation de jumeaux numeriques et la generation",
+      "source_ref": "S1"
+    },
+    {
+      "nom": "Microsoft",
+      "role": "Hebergement / infrastructure cloud",
+      "source_ref": "S1"
+    }
+  ],
+  "axes": {
+    "levier": "acquisition",
+    "touchpoints": [
+      "fiches produit e-commerce",
+      "paid social",
+      "display",
+      "sites de marque"
+    ],
+    "etape_parcours": "considération",
+    "famille": "generation",
+    "pattern": "usine de contenu produit genAI a partir de jumeaux numeriques",
+    "type_ia": [
+      "generation d'images",
+      "rendu 3D / jumeaux numeriques",
+      "modeles generatifs"
+    ],
+    "plateforme_stack": [
+      "Nvidia Omniverse",
+      "NVIDIA AI Enterprise",
+      "Microsoft cloud",
+      "service interne Nestle (Accenture Song)"
+    ],
+    "objectif_metrique": [
+      "cout de production",
+      "vitesse de production",
+      "volume de contenu personnalise"
+    ]
+  },
+  "implementation": "hybride",
+  "stack_technique": [
+    {
+      "nom": "Nvidia Omniverse",
+      "categorie": "plateforme",
+      "detail": "Creation et gestion des jumeaux numeriques 3D des produits (4 000 produits maitres, cible 10 000).",
+      "url": "https://www.nvidia.com/en-us/omniverse/"
+    },
+    {
+      "nom": "NVIDIA AI Enterprise",
+      "categorie": "plateforme",
+      "detail": "Socle logiciel IA pour generer le contenu a partir des jumeaux, sans nouveau shooting ; les modeles generatifs precis ne sont pas nommes dans les sources.",
+      "url": "https://www.nvidia.com"
+    },
+    {
+      "nom": "Microsoft (cloud)",
+      "categorie": "infra",
+      "detail": "Hebergement du service de jumeaux numeriques et de contenu.",
+      "url": "https://www.microsoft.com"
+    },
+    {
+      "nom": "Accenture Song",
+      "categorie": "integrateur",
+      "detail": "Developpement du service interne de jumeaux numeriques et de contenu avec Nestle.",
+      "url": "https://www.accenture.com"
+    }
+  ],
+  "objectif_business": "Produire du contenu produit de qualite constante a l'echelle, plus vite et beaucoup moins cher, pour alimenter la personnalisation media et les fiches e-commerce sur des centaines de references.",
+  "description": "Nestle a lance un service interne qui cree des jumeaux numeriques de ses produits, developpe avec Accenture Song, bati sur Nvidia Omniverse et NVIDIA AI Enterprise et heberge chez Microsoft. A partir de ces maquettes 3D, les equipes generent du contenu neuf sans reshooter, et le declinent par canal et par marche. Le groupe annonce 4 000 produits maitres numerises et vise 10 000 en deux ans. La production s'appuie sur 45 studios de contenu et sur les Integrated Marketing Services, soit 250 experts marketing repartis dans 7 hubs qui font tourner la mise a l'echelle et la localisation. Nestle chiffre les economies liees a la mise a l'echelle des jumeaux numeriques a plus de 70 pour cent. Les marques citees incluent Purina, Nescafe Dolce Gusto et Nespresso. Le contexte plus large : 72 pour cent des investissements media en digital et plus de 340 millions d'enregistrements de donnees first party.",
+  "resultats": [
+    {
+      "metrique": "Economies sur la mise a l'echelle des jumeaux numeriques",
+      "valeur": "plus de 70%",
+      "citation_exacte": "over 70%",
+      "source_ref": "S1"
+    },
+    {
+      "metrique": "Jumeaux numeriques crees, cible 10 000 en deux ans",
+      "valeur": "4 000",
+      "citation_exacte": "4,000 digital master products",
+      "source_ref": "S1"
+    },
+    {
+      "metrique": "Studios de contenu, 250 experts repartis dans 7 hubs",
+      "valeur": "45 studios",
+      "citation_exacte": "250 marketing experts across 7 hubs",
+      "source_ref": "S1"
+    }
+  ],
+  "niveau_preuve": {
+    "niveau": "C",
+    "justification": "Chiffres publies par Nestle (communique officiel et citation d'un dirigeant), corrobores par la presse specialisee ; pas de detail isole en resultats financiers, donc C."
+  },
+  "dates": {
+    "lancement": "2025-06",
+    "derniere_confirmation_activite": "2025-06",
+    "verifie_le": "2026-07-11",
+    "revoir_apres": "2027-01-11"
+  },
+  "statut_vivant": {
+    "statut": "confirme",
+    "note": "Service annonce officiellement en juin 2025 avec objectif chiffre a deux ans ; infrastructure et partenaires nommes."
+  },
+  "sources": [
+    {
+      "ref": "S1",
+      "type": "blog_officiel",
+      "fiabilite": "T1_primaire",
+      "titre": "Nestle is creating AI-powered digital twins for brands like Purina, Nescafe Dolce Gusto and Nespresso",
+      "url": "https://www.nestle.com/media/news/brands-ai-digital-twins-content-service",
+      "date_publication": "2025-06-11",
+      "consulte_le": "2026-07-11"
+    },
+    {
+      "ref": "S2",
+      "type": "presse",
+      "fiabilite": "T3_presse_etablie",
+      "titre": "Nestle launches in-house AI service to create high-quality product content at scale",
+      "url": "https://www.thegrocer.co.uk/news/nestle-launches-in-house-ai-service-to-create-high-quality-product-content-at-scale/705559.article",
+      "date_publication": "2025",
+      "consulte_le": "2026-07-11"
+    },
+    {
+      "ref": "S3",
+      "type": "presse",
+      "fiabilite": "T4_secondaire",
+      "titre": "Nestle, LVMH, L'Oreal Ramp Up Content Creation With AI-Powered Digital Twins",
+      "url": "https://consumergoods.com/nestle-lvmh-loreal-ramp-content-creation-ai-powered-digital-twins",
+      "date_publication": "2025",
+      "consulte_le": "2026-07-11"
+    }
+  ],
+  "fonctionnement_operationnel": {
+    "cadence": "Continu, par reference produit et par campagne ; regeneration du contenu sans reshoot quand un format ou un marche l'exige.",
+    "opere_par": "Integrated Marketing Services (250 experts, 7 hubs) et 45 studios de contenu, avec Accenture Song sur le socle technique.",
+    "signal_pilote": "L'exactitude du jumeau numerique face au produit vendu et la coherence de marque. Un jumeau errone propage l'erreur sur tout le contenu genere.",
+    "etapes": [
+      {
+        "etape": "Numerisation du produit",
+        "detail": "Creation du produit maitre numerique (4 000 a date, cible 10 000) dans Omniverse.",
+        "acteur": "equipe data / 3D + Accenture Song"
+      },
+      {
+        "etape": "Generation de contenu",
+        "detail": "Production de visuels et de fiches a partir du jumeau, sans nouveau shooting.",
+        "acteur": "studios de contenu / IA"
+      },
+      {
+        "etape": "Localisation et mise a l'echelle",
+        "detail": "Adaptation par marque, marche et format via les 7 hubs marketing.",
+        "acteur": "Integrated Marketing Services"
+      },
+      {
+        "etape": "Diffusion et personnalisation",
+        "detail": "Alimentation des fiches e-commerce et des canaux media, avec ciblage sur les donnees first party.",
+        "acteur": "marketing / e-commerce"
+      }
+    ]
+  },
+  "schema_flow": {
+    "statut": "documente",
+    "noeuds": [
+      {
+        "id": "prod",
+        "role_generique": "data_source",
+        "label": "Produit physique + packaging"
+      },
+      {
+        "id": "twin",
+        "role_generique": "dam",
+        "label": "Produit maitre numerique (jumeau 3D)",
+        "outil_documente": "Nvidia Omniverse"
+      },
+      {
+        "id": "gen",
+        "role_generique": "modele_ia",
+        "label": "Generation de contenu",
+        "outil_documente": "NVIDIA AI Enterprise (service Nestle / Accenture Song)"
+      },
+      {
+        "id": "ims",
+        "role_generique": "humain",
+        "label": "Integrated Marketing Services (localisation, mise a l'echelle)"
+      },
+      {
+        "id": "chan",
+        "role_generique": "paid_platform",
+        "label": "E-commerce / paid social / display"
+      }
+    ],
+    "liens": [
+      [
+        "prod",
+        "twin"
+      ],
+      [
+        "twin",
+        "gen"
+      ],
+      [
+        "gen",
+        "ims"
+      ],
+      [
+        "ims",
+        "chan"
+      ]
+    ]
+  },
+  "replication": {
+    "statut_epistemique": "infere",
+    "playbook": [
+      {
+        "action": "Choisir une categorie a fort volume de references et auditer les assets 3D et photo existants (packagings, chartes, mentions par marche).",
+        "livrable": "Perimetre pilote et inventaire d'assets exploitables."
+      },
+      {
+        "action": "Numeriser un premier lot de produits en jumeaux 3D, avec un studio ou un integrateur.",
+        "livrable": "Lot de produits maitres numeriques valides par les marques."
+      },
+      {
+        "action": "Monter le pipeline de generation de visuels a partir des jumeaux et le workflow de validation marque.",
+        "livrable": "Pipeline operationnel et premiers visuels publies."
+      },
+      {
+        "action": "Decliner par canal et localiser par marche via une structure de production centralisee.",
+        "livrable": "Variantes multi-marches en production."
+      },
+      {
+        "action": "Mesurer le cout par visuel avant/apres et arbitrer l'extension du catalogue de jumeaux.",
+        "livrable": "Bilan d'economies chiffre et plan d'extension."
+      }
+    ],
+    "equipe": "1 lead production de contenu + 2-3 artistes 3D ou un studio + 1 profil pipeline/outillage, plus la validation par les equipes de marque ; integrateur en option.",
+    "prerequis_data": [
+      "catalogue produit avec references 3D ou photo exploitables",
+      "regles de marque et mentions par marche",
+      "donnees first party pour la personnalisation"
+    ],
+    "prerequis_orga": [
+      "structure de production centralisee type hub",
+      "gouvernance qualite du contenu genere"
+    ],
+    "stack_possible": [
+      "moteur 3D / jumeaux numeriques",
+      "modeles de generation d'images",
+      "integrateur (type Accenture Song) ou equipe interne"
+    ],
+    "premiere_etape": "Numeriser une categorie a fort volume de references et mesurer le cout par visuel avant / apres."
+  },
+  "seo": {
+    "slug": "nestle-digital-twins-content-2025",
+    "title": "Nestle : usine de contenu genAI par jumeaux numeriques - plus de 70% d'economies (2025)",
+    "meta_description": "Nestle genere son contenu produit a partir de 4 000 jumeaux numeriques via genAI : plus de 70% d'economies, 45 studios, 7 hubs marketing.",
+    "resume_citable": "Nestle a lance en 2025 un service interne de jumeaux numeriques et de contenu genAI (Accenture Song, Nvidia, Microsoft) revendiquant plus de 70% d'economies sur la mise a l'echelle, avec 4 000 produits numerises (cible 10 000) et 45 studios de contenu.",
+    "faq": [
+      {
+        "q": "Combien de produits Nestle a-t-il numerises ?",
+        "a": "4 000 produits maitres numeriques a date, avec un objectif de 10 000 jumeaux numeriques en deux ans."
+      },
+      {
+        "q": "Quelles economies Nestle revendique-t-il ?",
+        "a": "Plus de 70 pour cent d'economies sur la mise a l'echelle des jumeaux numeriques, selon son communique officiel."
+      }
+    ]
+  },
+  "logo_domain": "nestle.com"
+}

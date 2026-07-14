@@ -1,0 +1,275 @@
+{
+  "id": "netflix-artwork-acquisition-2017",
+  "type_fiche": "succes",
+  "marque": "Netflix",
+  "groupe": "Netflix, Inc.",
+  "industrie": "media_entertainment",
+  "marches_deploiement": [
+    "Mondial"
+  ],
+  "transposable_ue": {
+    "flag": "oui",
+    "note": "La personnalisation de l'image d'accroche s'appuie sur des donnees d'engagement first-party sur la propre plateforme de Netflix. Peu de friction RGPD specifique, la donnee restant interne au service. La transparence sur le caractere personnalise de l'interface reste une bonne pratique."
+  },
+  "metier": "marketing (conversion de l'attention) et produit",
+  "intervenants": [
+    {
+      "nom": "Justin Basilico",
+      "role": "Research/Engineering Director, Netflix (co-auteur du blog technique)",
+      "source_ref": "S1"
+    },
+    {
+      "nom": "Tony Jebara",
+      "role": "VP of Machine Learning, Netflix (co-auteur du blog technique)",
+      "source_ref": "S1"
+    }
+  ],
+  "axes": {
+    "levier": "acquisition",
+    "touchpoints": [
+      "page d'accueil et rangees de titres",
+      "image d'accroche (artwork) de chaque titre"
+    ],
+    "etape_parcours": "considération",
+    "famille": "personnalisation",
+    "pattern": "personnalisation de l'image d'accroche (artwork) par bandits contextuels",
+    "type_ia": [
+      "contextual bandits",
+      "modeles de prediction d'engagement",
+      "computer vision"
+    ],
+    "plateforme_stack": [
+      "custom/in-house"
+    ],
+    "objectif_metrique": [
+      "probabilite de lecture / clic",
+      "engagement",
+      "aide a la decouverte"
+    ]
+  },
+  "implementation": "custom",
+  "stack_technique": [
+    {
+      "nom": "Bandits contextuels custom Netflix",
+      "categorie": "outil",
+      "detail": "ML proprietaire qui choisit, parmi les images candidates d'un titre, celle a plus forte probabilite de lecture pour chaque membre.",
+      "url": "https://research.netflix.com"
+    },
+    {
+      "nom": "Modeles de prediction d'engagement",
+      "categorie": "outil",
+      "detail": "Prediction de la probabilite de lecture par membre et par image, apprise sur les signaux d'engagement first-party.",
+      "url": "https://research.netflix.com"
+    },
+    {
+      "nom": "Infrastructure de serving d'images Netflix",
+      "categorie": "infra",
+      "detail": "Rendu des images personnalisees a l'echelle : plus de 100 millions de comptes, pic de 20 millions de requetes par seconde.",
+      "url": "https://netflixtechblog.com"
+    },
+    {
+      "nom": "Post-training de LLM (evolution 2025)",
+      "categorie": "llm",
+      "detail": "Travaux publies par Netflix Research en 2025 faisant evoluer la personnalisation d'artwork via post-training de LLM ; modele exact non nomme.",
+      "url": "https://research.netflix.com"
+    }
+  ],
+  "objectif_business": "Convertir l'attention en visionnage en montrant a chaque membre l'image la plus susceptible de declencher le clic au moment de la consideration, et aider a decouvrir des titres inconnus.",
+  "points_cles": ["Personnalisation de l'image d'accroche de chaque titre membre par membre.", "Bandits contextuels proprietaires servant plus de 100 millions de comptes, pic de 20 millions de requetes par seconde.", "Gain A/B significatif vs non personnalise, plus fort pour les titres inconnus.", "Preuve B, statut confirme."],
+  "description": "Cette brique choisit quelle image afficher pour un titre donne, membre par membre. Elle est distincte du moteur de recommandation qui decide quel titre proposer: elle se place au-dessus de ce classement et personnalise la representation visuelle du titre deja retenu. Netflix decrit un probleme de bandits contextuels: parmi une a plusieurs dizaines d'images candidates par titre, le modele predit celle qui maximise la probabilite de lecture pour ce membre precis, puis retient l'image au plus haut score. Le systeme sert plus de 100 millions de comptes, avec un pic de 20 millions de requetes par seconde pour le rendu des images personnalisees. Les tests A/B ont montre un gain significatif face a une approche non personnalisee, l'effet etant plus fort pour les membres qui ne connaissent pas encore le titre. Documente en 2017, le dispositif est toujours en production: la presse etablie confirme fin 2025 que la technologie de promotion de Netflix reste pilotee par du machine learning, et l'equipe de recherche a publie en 2025 des travaux de personnalisation d'artwork via post-training de LLM.",
+  "resultats": [
+    {
+      "metrique": "Pic de rendu, sur plus de 100 millions de comptes personnalises",
+      "valeur": "20 M requetes/s",
+      "citation_exacte": "20 million requests per second",
+      "source_ref": "S1"
+    },
+    {
+      "metrique": "En A/B vs non personnalise, plus fort sur les titres inconnus",
+      "valeur": "gain significatif",
+      "citation_exacte": "generated a significant lift",
+      "source_ref": "S1"
+    },
+    {
+      "metrique": "Continuite en production",
+      "valeur": "technologie de promotion encore pilotee par ML en 2025",
+      "citation_exacte": "title recommendation algorithms and promotion technology",
+      "source_ref": "S2"
+    }
+  ],
+  "niveau_preuve": {
+    "niveau": "B",
+    "justification": "Blog d'ingenierie primaire de Netflix documentant le systeme, son echelle et un gain A/B, plus presse etablie et publication de recherche 2025 confirmant la continuite en production. Le gain est qualifie de significatif sans pourcentage public, donc B."
+  },
+  "dates": {
+    "lancement": "2017-12 (dispositif documente)",
+    "derniere_confirmation_activite": "2025-10",
+    "verifie_le": "2026-07-11",
+    "revoir_apres": "2027-01-11"
+  },
+  "statut_vivant": {
+    "statut": "confirme",
+    "note": "Dispositif documente en 2017 et toujours actif: la presse confirme en octobre 2025 que la technologie de promotion reste pilotee par ML, et Netflix Research a publie en 2025 une evolution de la personnalisation d'artwork via LLM."
+  },
+  "sources": [
+    {
+      "ref": "S1",
+      "type": "eng_blog",
+      "fiabilite": "T1_primaire",
+      "titre": "Artwork Personalization at Netflix",
+      "url": "https://netflixtechblog.com/artwork-personalization-c589f074ad76",
+      "date_publication": "2017-12-07",
+      "consulte_le": "2026-07-11"
+    },
+    {
+      "ref": "S2",
+      "type": "presse",
+      "fiabilite": "T3_presse_etablie",
+      "titre": "Netflix bets on AI to power ads, search, and storytelling",
+      "url": "https://www.emarketer.com/content/netflix-bets-on-ai-power-ads-search-storytelling",
+      "date_publication": "2025-10-22",
+      "consulte_le": "2026-07-11"
+    },
+    {
+      "ref": "S3",
+      "type": "analyse_academique",
+      "fiabilite": "T1_primaire",
+      "titre": "Netflix Artwork Personalization via LLM Post-training",
+      "url": "https://research.netflix.com/publication/netflix-artwork-personalization-via-llm-post-training",
+      "date_publication": "2025",
+      "consulte_le": "2026-07-11"
+    }
+  ],
+  "fonctionnement_operationnel": {
+    "cadence": "Temps reel a chaque affichage de la page d'accueil, avec reentrainement periodique des modeles de prediction d'engagement.",
+    "opere_par": "Equipes machine learning et personnalisation de Netflix.",
+    "signal_pilote": "La probabilite de lecture predite par membre et par titre, apprise sur les signaux d'engagement first-party. Sans banque d'images candidates par titre ni signal d'engagement, le systeme n'a rien a arbitrer.",
+    "etapes": [
+      {
+        "etape": "Recommandation du titre",
+        "detail": "Le moteur de reco decide quels titres montrer au membre (etape amont, distincte).",
+        "acteur": "IA (recommandation)"
+      },
+      {
+        "etape": "Selection de l'image",
+        "detail": "Parmi les images candidates du titre, le bandit contextuel predit celle a plus forte probabilite de lecture pour ce membre.",
+        "acteur": "IA (personnalisation d'artwork)"
+      },
+      {
+        "etape": "Rendu personnalise",
+        "detail": "L'image retenue est rendue dans l'interface, a l'echelle de dizaines de millions de requetes par seconde.",
+        "acteur": "IA / infrastructure"
+      },
+      {
+        "etape": "Apprentissage continu",
+        "detail": "Les clics et lectures observes affinent les predictions par les tests A/B et l'exploration.",
+        "acteur": "equipe ML"
+      }
+    ]
+  },
+  "schema_flow": {
+    "statut": "documente",
+    "noeuds": [
+      {
+        "id": "reco",
+        "role_generique": "modele_ia",
+        "label": "Recommandation du titre (amont, distincte)"
+      },
+      {
+        "id": "imgs",
+        "role_generique": "data_source",
+        "label": "Images candidates par titre"
+      },
+      {
+        "id": "bandit",
+        "role_generique": "modele_ia",
+        "label": "Bandit contextuel de selection d'image",
+        "outil_documente": "custom Netflix"
+      },
+      {
+        "id": "ui",
+        "role_generique": "site_app",
+        "label": "Interface Netflix (page d'accueil)"
+      }
+    ],
+    "liens": [
+      [
+        "reco",
+        "bandit",
+        "titre retenu"
+      ],
+      [
+        "imgs",
+        "bandit"
+      ],
+      [
+        "bandit",
+        "ui"
+      ],
+      [
+        "ui",
+        "bandit",
+        "clics et lectures reinjectes"
+      ]
+    ]
+  },
+  "replication": {
+    "statut_epistemique": "infere",
+    "playbook": [
+      {
+        "action": "Produire plusieurs visuels candidats par contenu sur un sous-catalogue a fort trafic.",
+        "livrable": "Banque d'images multi-variantes prete a servir."
+      },
+      {
+        "action": "Instrumenter clic et lecture par visuel affiche, puis construire un premier modele de prediction d'engagement.",
+        "livrable": "Dataset propre et modele evalue hors ligne."
+      },
+      {
+        "action": "Lancer un bandit simple (epsilon-greedy ou Thompson sampling) sur une surface a fort trafic, en fraction de trafic.",
+        "livrable": "Bandit en production sur un perimetre limite."
+      },
+      {
+        "action": "Mesurer le clic et la lecture incrementaux en A/B contre l'image unique.",
+        "livrable": "Readout de gain incremental, ou decision d'arret."
+      },
+      {
+        "action": "Industrialiser : exploration continue, montee en charge du serving, monitoring de derive.",
+        "livrable": "Systeme en production avec tableau de bord et alerting."
+      }
+    ],
+    "equipe": "2 ingenieurs ML + 1 data engineer + 1 PM, avec une chaine creative capable de produire plusieurs visuels par contenu.",
+    "prerequis_data": [
+      "plusieurs images candidates par contenu",
+      "signaux d'engagement first-party (clic, lecture)",
+      "identifiant membre stable"
+    ],
+    "prerequis_orga": [
+      "equipe ML pour bandits contextuels",
+      "chaine de production d'assets visuels par titre",
+      "infrastructure de rendu a forte charge"
+    ],
+    "stack_possible": [
+      "framework de bandits contextuels",
+      "modele de prediction d'engagement",
+      "pipeline d'A/B testing et d'exploration"
+    ],
+    "premiere_etape": "Produire plusieurs visuels par contenu et lancer un test de bandit simple sur une surface a fort trafic, en mesurant le clic incremental."
+  },
+  "seo": {
+    "slug": "netflix-artwork-acquisition-2017",
+    "title": "Netflix : image d'accroche personnalisee par bandits contextuels - 20 M de requetes/s (2017)",
+    "meta_description": "Netflix personnalise l'image d'accroche de chaque titre par membre avec des bandits contextuels ; plus de 100 M de comptes, 20 M de requetes/s, gain A/B significatif.",
+    "resume_citable": "Netflix choisit l'image d'accroche de chaque titre membre par membre avec des bandits contextuels, une couche distincte du classement des titres qui sert plus de 100 millions de comptes a un pic de 20 millions de requetes par seconde, avec un gain A/B significatif plus fort pour les titres inconnus.",
+    "faq": [
+      {
+        "q": "En quoi est-ce distinct de la recommandation Netflix ?",
+        "a": "La recommandation decide quel titre montrer ; cette couche decide quelle image afficher pour ce titre, membre par membre, en se placant au-dessus du classement."
+      },
+      {
+        "q": "Quelle est l'echelle du dispositif ?",
+        "a": "Plus de 100 millions de comptes personnalises, avec un pic de 20 millions de requetes par seconde pour le rendu des images, et un gain A/B qualifie de significatif."
+      }
+    ]
+  },
+  "logo_domain": "netflix.com"
+}

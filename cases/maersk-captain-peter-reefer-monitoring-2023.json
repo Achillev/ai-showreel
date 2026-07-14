@@ -1,0 +1,251 @@
+{
+  "id": "maersk-captain-peter-reefer-monitoring-2023",
+  "type_fiche": "succes",
+  "marque": "Maersk",
+  "groupe": "A.P. Moller-Maersk",
+  "industrie": "autre",
+  "marches_deploiement": [
+    "international (flotte reefer mondiale)"
+  ],
+  "transposable_ue": {
+    "flag": "oui",
+    "note": "Service deja mondial, UE incluse. Les donnees traitees sont surtout techniques (temperature, humidite, atmosphere, position du conteneur) et peu personnelles, ce qui limite l'exposition RGPD ; l'usage de modeles predictifs pour des alertes reste a documenter cote AI Act selon la criticite des decisions."
+  },
+  "metier": "service client / operations",
+  "axes": {
+    "levier": "retention",
+    "touchpoints": [
+      "portail et app Captain Peter",
+      "alertes et notifications",
+      "export de datalog"
+    ],
+    "etape_parcours": "post-achat",
+    "famille": "prediction",
+    "pattern": "monitoring predictif de cargo refrigere (visibilite client)",
+    "type_ia": [
+      "detection d'anomalie / alertes predictives",
+      "telemetrie IoT"
+    ],
+    "plateforme_stack": [
+      "Remote Container Management",
+      "IoT (capteurs, GPS, transmetteurs)",
+      "custom/in-house"
+    ],
+    "objectif_metrique": [
+      "couverture de la flotte en donnees horaires",
+      "reactivite sur les alertes cargo",
+      "transparence pour le client"
+    ]
+  },
+  "implementation": "custom",
+  "objectif_business": "Donner aux clients de fret refrigere une visibilite fine et en continu sur l'etat de leur cargaison perissable, pour reagir avant qu'un ecart de temperature ne se transforme en perte, et reduire les demandes manuelles de statut.",
+  "description": "Captain Peter est la couche client du systeme Remote Container Management (RCM) de Maersk pour les conteneurs refrigeres. Des capteurs IoT, GPS et transmetteurs equipent la flotte reefer et remontent des donnees de temperature, d'humidite, d'atmosphere et de position. Captain Peter transmet au client des mises a jour de statut, des alertes basees sur des seuils definis par type de marchandise et l'acces a l'historique. Le client telecharge les donnees horaires en Excel ou PDF. Le service, lance pour les clients en 2017 puis muscle par un passage aux donnees horaires, vise a automatiser les demandes recurrentes de suivi et a signaler tot les anomalies de conservation.",
+  "resultats": [
+    {
+      "metrique": "Part de la flotte reefer passee en donnees horaires (2022)",
+      "valeur": "plus de 80%",
+      "citation_exacte": "more than 80% of the reefer fleet was upgraded to deliver hourly data to Captain Peter",
+      "source_ref": "S1"
+    },
+    {
+      "metrique": "Cible de couverture de la flotte reefer en datalog horaire, fin 2023",
+      "valeur": "90%",
+      "citation_exacte": "by the end 2023, 90% of the Maersk reefer fleet will support hourly datalog transmission",
+      "source_ref": "S1"
+    }
+  ],
+  "niveau_preuve": {
+    "niveau": "C",
+    "justification": "Communications officielles de Maersk (marque-sujet) sur le lancement client de RCM et la montee en donnees horaires, deux sources primaires concordantes. La preuve porte sur la couverture et le deploiement plutot que sur un resultat financier consolide, d'ou C. L'IA se limite ici a la detection d'anomalie et aux alertes sur telemetrie, pas a du generatif."
+  },
+  "dates": {
+    "lancement": "2017 (RCM ouvert aux clients) ; passage aux donnees horaires en 2022-2023",
+    "derniere_confirmation_activite": "2023 (annonce de la solution reefer integree par API et du datalog partageable)",
+    "verifie_le": "2026-07-11",
+    "revoir_apres": "2027-01-11"
+  },
+  "statut_vivant": {
+    "statut": "confirme",
+    "note": "Captain Peter documente comme service actif sur la flotte reefer, avec une majorite des conteneurs remontant des donnees horaires et un export de datalog disponible pour les clients."
+  },
+  "sources": [
+    {
+      "ref": "S1",
+      "type": "blog_officiel",
+      "fiabilite": "T1_primaire",
+      "titre": "Maersk launches API-integrated reefer solution with shareable datalog",
+      "url": "https://www.maersk.com/news/articles/2023/03/17/maersk-launches-api-integrated-reefer-solution-with-shareable-datalog",
+      "date_publication": "2023-03-17",
+      "consulte_le": "2026-07-11"
+    },
+    {
+      "ref": "S2",
+      "type": "blog_officiel",
+      "fiabilite": "T1_primaire",
+      "titre": "Maersk Line launches Remote Container Management for customers",
+      "url": "https://www.maersk.com/en/news/2017/06/26/maersk-line-launches-remote-container-management-for-customers",
+      "date_publication": "2017-06-26",
+      "consulte_le": "2026-07-11"
+    }
+  ],
+  "fonctionnement_operationnel": {
+    "cadence": "Flux continu, avec transmission horaire des donnees pour la majorite de la flotte reefer, y compris en mer via satellite.",
+    "opere_par": "Equipes Maersk de gestion des conteneurs et du reefer, avec le client comme destinataire des alertes.",
+    "signal_pilote": "La telemetrie du conteneur (temperature, humidite, atmosphere, position) comparee a des seuils par marchandise. Si un capteur ou la transmission tombe, l'alerte n'arrive pas et la perte peut passer inapercue jusqu'a l'arrivee.",
+    "etapes": [
+      {
+        "etape": "Captation de la donnee",
+        "detail": "Les capteurs IoT du conteneur remontent temperature, humidite, atmosphere et position, a la frequence horaire.",
+        "acteur": "IA"
+      },
+      {
+        "etape": "Comparaison aux seuils",
+        "detail": "Le systeme compare les valeurs aux seuils definis par type de marchandise et detecte les ecarts.",
+        "acteur": "IA"
+      },
+      {
+        "etape": "Alerte au client",
+        "detail": "Captain Peter notifie le client (statut, alarme) pour qu'il decide d'une action sur sa cargaison.",
+        "acteur": "IA"
+      },
+      {
+        "etape": "Decision et export",
+        "detail": "Le client consulte l'historique, telecharge le datalog horaire et arbitre sur sa chaine du froid.",
+        "acteur": "client"
+      }
+    ]
+  },
+  "schema_flow": {
+    "statut": "documente",
+    "noeuds": [
+      {
+        "id": "cont",
+        "role_generique": "data_source",
+        "label": "Conteneur reefer (capteurs IoT / GPS)"
+      },
+      {
+        "id": "rcm",
+        "role_generique": "modele_ia",
+        "label": "Remote Container Management (seuils, alertes)",
+        "outil_documente": "RCM Maersk"
+      },
+      {
+        "id": "cp",
+        "role_generique": "site_app",
+        "label": "Captain Peter (portail / app)"
+      },
+      {
+        "id": "cust",
+        "role_generique": "humain",
+        "label": "Client fret refrigere"
+      }
+    ],
+    "liens": [
+      [
+        "cont",
+        "rcm",
+        "telemetrie horaire"
+      ],
+      [
+        "rcm",
+        "cp",
+        "statut et alertes"
+      ],
+      [
+        "cp",
+        "cust",
+        "notification / datalog"
+      ],
+      [
+        "cust",
+        "cp",
+        "consultation"
+      ]
+    ]
+  },
+  "replication": {
+    "statut_epistemique": "infere",
+    "prerequis_data": [
+      "parc de conteneurs (ou d'actifs) equipes de capteurs IoT",
+      "seuils de conformite par type de marchandise",
+      "connectivite pour la transmission, y compris en mer"
+    ],
+    "prerequis_orga": [
+      "equipe operations pour le parc de capteurs",
+      "processus d'alerte et de reaction cote client",
+      "maintenance des capteurs et de la transmission"
+    ],
+    "stack_possible": [
+      "plateforme IoT de telemetrie",
+      "moteur de regles / detection d'anomalie",
+      "portail client pour statut et export"
+    ],
+    "premiere_etape": "Equiper un sous-parc d'actifs critiques de capteurs, definir les seuils par marchandise, puis exposer statut et alertes au client.",
+    "playbook": [
+      {
+        "action": "Equiper un sous-parc d'actifs critiques de capteurs (temperature, position) et fiabiliser la remontee",
+        "livrable": "Pilote instrumente avec flux de donnees stable"
+      },
+      {
+        "action": "Definir les seuils d'alerte par type de marchandise avec les operations",
+        "livrable": "Referentiel de seuils valide"
+      },
+      {
+        "action": "Construire le moteur d'alertes et le portail client (statut, historique, export)",
+        "livrable": "Portail en beta avec alertes actives sur le pilote"
+      },
+      {
+        "action": "Fiabiliser la transmission (couverture reseau, capteurs defaillants) et ouvrir le service aux clients",
+        "livrable": "Service en production avec taux de couverture et de disponibilite mesures"
+      },
+      {
+        "action": "Etendre au parc complet et monter la frequence de remontee des donnees",
+        "livrable": "Plan de couverture du parc (cible type 80-90% en donnees horaires)"
+      }
+    ],
+    "equipe": "1 equipe operations IoT (pose et maintenance des capteurs) + 2-3 devs plateforme et portail + 1 PM + support client pour le traitement des alertes"
+  },
+  "seo": {
+    "slug": "maersk-captain-peter-reefer-monitoring-2023",
+    "title": "Maersk : Captain Peter, monitoring predictif du reefer - plus de 80% de la flotte en donnees horaires (2023)",
+    "meta_description": "Captain Peter, la couche client du Remote Container Management de Maersk, remonte la telemetrie IoT du reefer, alerte sur les ecarts de conservation et couvre plus de 80% de la flotte en donnees horaires.",
+    "resume_citable": "Maersk expose aux clients de fret refrigere Captain Peter, qui remonte la telemetrie IoT du conteneur et alerte sur les ecarts de conservation ; plus de 80% de la flotte reefer transmettait des donnees horaires en 2022.",
+    "faq": [
+      {
+        "q": "Qu'est-ce que Captain Peter de Maersk ?",
+        "a": "La couche client du Remote Container Management, qui transmet aux clients de fret refrigere le statut, les alertes et l'historique de temperature, d'humidite et de position de leurs conteneurs."
+      },
+      {
+        "q": "Quelle est la part de la flotte reefer couverte ?",
+        "a": "Maersk indique que plus de 80% de la flotte reefer remontait des donnees horaires en 2022, avec une cible de 90% fin 2023."
+      }
+    ]
+  },
+  "logo_domain": "maersk.com",
+  "stack_technique": [
+    {
+      "nom": "Remote Container Management (RCM)",
+      "categorie": "plateforme",
+      "detail": "systeme maison Maersk de collecte de la telemetrie reefer et de detection des ecarts par seuils selon le type de marchandise",
+      "url": "https://www.maersk.com"
+    },
+    {
+      "nom": "Captain Peter",
+      "categorie": "outil",
+      "detail": "portail et app client : statut, alertes, historique et export du datalog horaire en Excel ou PDF",
+      "url": "https://www.maersk.com"
+    },
+    {
+      "nom": "Capteurs IoT, GPS et transmetteurs embarques",
+      "categorie": "infra",
+      "detail": "remontee horaire de temperature, humidite, atmosphere et position sur plus de 80% de la flotte reefer, y compris en mer via satellite",
+      "url": "https://www.maersk.com"
+    },
+    {
+      "nom": "API reefer Maersk",
+      "categorie": "infra",
+      "detail": "integration des donnees et du datalog partageable dans les systemes du client",
+      "url": "https://www.maersk.com"
+    }
+  ]
+}

@@ -1,0 +1,350 @@
+{
+  "id": "pinterest-performance-plus-ia-publicitaire-2025",
+  "type_fiche": "succes",
+  "marque": "Pinterest",
+  "industrie": "media_entertainment",
+  "marches_deploiement": [
+    "Etats-Unis",
+    "Europe",
+    "International (lancement global)"
+  ],
+  "transposable_ue": {
+    "flag": "oui",
+    "note": "Performance+ est disponible sur les marches europeens de Pinterest. La fonction New Customer Acquisition repose sur l'upload d'une liste de clients existants pour prioriser les nouveaux acheteurs : ce rapprochement de donnees personnelles suppose une base legale RGPD et un consentement conformes au marche."
+  },
+  "metier": "regie publicitaire / monetisation / adtech",
+  "logo_domain": "pinterest.com",
+  "intervenants": [
+    {
+      "nom": "Bill Ready",
+      "role": "CEO, Pinterest",
+      "source_ref": "S1"
+    }
+  ],
+  "axes": {
+    "levier": "monetisation",
+    "touchpoints": [
+      "plateforme publicitaire Pinterest",
+      "home feed Pinterest",
+      "shopping ads",
+      "pages produit Pinterest"
+    ],
+    "etape_parcours": "achat",
+    "famille": "optimisation_automatisation",
+    "pattern": "suite publicitaire IA full-funnel (bidding ROAS automatise, priorisation des nouveaux clients, budgets et ciblage geres par l'algorithme)",
+    "type_ia": [
+      "enchere automatisee optimisee sur la valeur de conversion",
+      "modele de recommandation et de ranking (taste graph)",
+      "modele de ranking fondationnel (historique utilisateur)",
+      "optimisation de ciblage et de budget"
+    ],
+    "plateforme_stack": [
+      "Pinterest Performance+",
+      "Performance+ ROAS bidding",
+      "Performance+ New Customer Acquisition",
+      "OmniSage",
+      "PinFM",
+      "Navigator 1"
+    ],
+    "objectif_metrique": [
+      "part du revenu lower-funnel via l'automatisation",
+      "ROAS",
+      "conversions nouveaux clients",
+      "uplift de conversion",
+      "saves (engagement)"
+    ]
+  },
+  "implementation": "plateforme",
+  "objectif_business": "Faire passer une part croissante du revenu publicitaire lower-funnel de Pinterest par une suite d'annonces automatisee par IA, en ameliorant le ROAS et l'acquisition de nouveaux clients pour les annonceurs, et en renforcant l'engagement qui alimente l'inventaire monetisable.",
+  "points_cles": ["Suite publicitaire IA full-funnel automatisant enchere, ciblage et budget (Performance+).", "Briques ROAS bidding et New Customer Acquisition, modeles maison OmniSage et PinFM.", "Environ 30% du revenu lower-funnel automatise, +64% de conversions nouveaux clients.", "Preuve A, statut confirme via les earnings calls 2025."],
+  "description": "Pinterest a construit Performance+, une suite publicitaire ou l'algorithme prend en charge l'enchere, le ciblage et le budget d'une campagne. Un annonceur choisit un objectif, laisse le systeme optimiser la diffusion, et peut activer deux briques cle : le ROAS bidding, qui optimise sur la valeur de conversion plutot que sur un simple volume, et le New Customer Acquisition, qui utilise une liste de clients existants fournie par l'annonceur pour prioriser la diffusion vers des acheteurs net-new. Sous cette couche publicitaire tournent les modeles de recommandation maison de Pinterest. OmniSage, entraine sur le taste graph, sert de signal unique pour retrouver et classer le contenu ; PinFM, un modele de ranking fondationnel, distille l'historique complet d'un utilisateur dans les recommandations du home feed et des Pins associes. Ces modeles augmentent les saves, donc l'engagement et l'inventaire que la suite publicitaire peut ensuite monetiser. La suite a ete lancee globalement en octobre 2024, le ROAS bidding a ete ajoute au premier trimestre 2025, et environ 30% du revenu lower-funnel passait par Performance+ un an apres le lancement global.",
+  "resultats": [
+    {
+      "metrique": "Revenu lower-funnel retail via ROAS bidding",
+      "valeur": "22%",
+      "citation_exacte": "22% of our lower funnel retail revenue now flows through ROAS bidding",
+      "source_ref": "S2"
+    },
+    {
+      "metrique": "Uplift de conversion des annonceurs retail sur Performance+",
+      "valeur": "+24%",
+      "citation_exacte": "24% higher conversion lift",
+      "source_ref": "S2"
+    },
+    {
+      "metrique": "Conversions nouveaux clients avec New Customer Acquisition vs controle",
+      "valeur": "+64%",
+      "citation_exacte": "new customer conversions increase by an average of 64%",
+      "source_ref": "S1"
+    },
+    {
+      "metrique": "ROAS des annonceurs SMB apres mise a jour des modeles de diffusion",
+      "valeur": "+28%",
+      "citation_exacte": "28% improvement in ROAS during testing for SMB advertisers",
+      "source_ref": "S3"
+    },
+    {
+      "metrique": "Saves sitewide apportes par le modele OmniSage",
+      "valeur": "+450 points de base",
+      "citation_exacte": "OmniSage drove a 450 basis point lift in sitewide saves",
+      "source_ref": "S1"
+    },
+    {
+      "metrique": "SKUs shopping uniques avec impression payante (YoY, Q3 2025)",
+      "valeur": "+100%",
+      "citation_exacte": "unique shopping SKUs with a paid ad impression grew more than 100%",
+      "source_ref": "S2"
+    },
+    {
+      "metrique": "Part du revenu international portee par les shopping ads (2023 au Q3 2025)",
+      "valeur": "de 9% a 30%",
+      "citation_exacte": "shopping ads represented just 9% of international revenue. In Q3 2025, it reached 30%",
+      "source_ref": "S2"
+    }
+  ],
+  "niveau_preuve": {
+    "niveau": "A",
+    "justification": "Resultats chiffres annonces par le CEO en earnings calls Q3 et Q4 2025, corrobores par les blogs officiels Pinterest ; plusieurs sources primaires concordantes."
+  },
+  "dates": {
+    "lancement": "Suite Performance+ lancee globalement en octobre 2024 ; ROAS bidding ajoute au Q1 2025 ; New Customer Acquisition en test/beta courant 2025",
+    "derniere_confirmation_activite": "Earnings call Q4 2025 (12 fevrier 2026) et expansion de la suite annoncee en juin 2026",
+    "verifie_le": "2026-07-12",
+    "revoir_apres": "2027-01-12"
+  },
+  "statut_vivant": {
+    "statut": "confirme",
+    "note": "Environ 30% du revenu lower-funnel passe par Performance+ un an apres le lancement global. La suite continue de s'etendre (nouvelles briques annoncees en juin 2026), et les modeles OmniSage/PinFM etaient toujours mis en avant a l'earnings Q4 2025."
+  },
+  "sources": [
+    {
+      "ref": "S1",
+      "type": "earnings_call",
+      "fiabilite": "T1_primaire",
+      "titre": "Pinterest (PINS) Q4 2025 Earnings Call Transcript",
+      "url": "https://www.fool.com/earnings/call-transcripts/2026/02/12/pinterest-pins-q4-2025-earnings-call-transcript/",
+      "date_publication": "2026-02-12",
+      "consulte_le": "2026-07-12"
+    },
+    {
+      "ref": "S2",
+      "type": "earnings_call",
+      "fiabilite": "T1_primaire",
+      "titre": "Pinterest, Inc. (NYSE:PINS) Q3 2025 Earnings Call Transcript",
+      "url": "https://www.insidermonkey.com/blog/pinterest-inc-nysepins-q3-2025-earnings-call-transcript-1641001/",
+      "date_publication": "2025-11",
+      "consulte_le": "2026-07-12"
+    },
+    {
+      "ref": "S3",
+      "type": "blog_officiel",
+      "fiabilite": "T2_officiel_interesse",
+      "titre": "Grow your business faster: How Pinterest Performance+ automates success for SMBs",
+      "url": "https://business.pinterest.com/blog/smb-automate-success-with-performance-plus/",
+      "date_publication": "2026-06-15",
+      "consulte_le": "2026-07-12"
+    },
+    {
+      "ref": "S4",
+      "type": "blog_officiel",
+      "fiabilite": "T1_primaire",
+      "titre": "Introducing new AI and automation campaign features to support advertisers | Pinterest Newsroom",
+      "url": "https://newsroom.pinterest.com/news/introducing-new-ai-and-automation-campaign-features-to-support-advertisers/",
+      "date_publication": "2024-10-01",
+      "consulte_le": "2026-07-12"
+    }
+  ],
+  "fonctionnement_operationnel": {
+    "cadence": "Enchere en temps reel a chaque impression ; reentrainement periodique des modeles de recommandation et de ranking",
+    "opere_par": "Cote plateforme, les equipes ML et ads engineering de Pinterest ; cote annonceur, une equipe growth/paid qui configure l'objectif et fournit les donnees",
+    "signal_pilote": "La valeur de conversion remontee par l'annonceur pour le ROAS bidding, et la liste de clients existants pour le New Customer Acquisition. Sans signal de conversion valorise, le bidding retombe sur du volume ; sans liste client, la priorisation des nouveaux acheteurs ne fonctionne pas.",
+    "etapes": [
+      {
+        "etape": "Fournir le catalogue et les signaux de conversion",
+        "detail": "L'annonceur branche son flux produit et la remontee des conversions valorisees pour que le systeme optimise sur la valeur et non le simple clic.",
+        "acteur": "annonceur / equipe data"
+      },
+      {
+        "etape": "Charger la liste de clients existants",
+        "detail": "Pour activer New Customer Acquisition, l'annonceur importe sa base clients ; le systeme assigne une valeur superieure aux prospects net-new et priorise leur diffusion.",
+        "acteur": "annonceur / marketing"
+      },
+      {
+        "etape": "Laisser Performance+ gerer enchere, ciblage et budget",
+        "detail": "Une fois l'objectif fixe, l'algorithme automatise la diffusion sur le home feed et les surfaces shopping.",
+        "acteur": "IA / plateforme Pinterest"
+      },
+      {
+        "etape": "Alimenter l'inventaire par les modeles de reco",
+        "detail": "OmniSage et PinFM classent le contenu et personnalisent le feed, ce qui augmente les saves et l'engagement que la suite publicitaire monetise ensuite.",
+        "acteur": "IA / equipe ML Pinterest"
+      }
+    ]
+  },
+  "schema_flow": {
+    "statut": "approche_type",
+    "noeuds": [
+      {
+        "id": "taste",
+        "role_generique": "data_source",
+        "label": "Taste graph et signaux d'engagement des utilisateurs"
+      },
+      {
+        "id": "advdata",
+        "role_generique": "data_source",
+        "label": "Catalogue produit, conversions valorisees et liste clients de l'annonceur"
+      },
+      {
+        "id": "omnisage",
+        "role_generique": "modele_ia",
+        "label": "OmniSage (recommandation et ranking)",
+        "outil_documente": "OmniSage"
+      },
+      {
+        "id": "pinfm",
+        "role_generique": "modele_ia",
+        "label": "PinFM (ranking fondationnel sur historique)",
+        "outil_documente": "PinFM"
+      },
+      {
+        "id": "pplus",
+        "role_generique": "paid_platform",
+        "label": "Performance+ (ROAS bidding, NCA, budgets et ciblage automatises)",
+        "outil_documente": "Pinterest Performance+"
+      },
+      {
+        "id": "feed",
+        "role_generique": "site_app",
+        "label": "Home feed et surfaces shopping Pinterest"
+      },
+      {
+        "id": "advertiser",
+        "role_generique": "humain",
+        "label": "Annonceur / equipe growth"
+      }
+    ],
+    "liens": [
+      [
+        "taste",
+        "omnisage"
+      ],
+      [
+        "taste",
+        "pinfm"
+      ],
+      [
+        "omnisage",
+        "feed"
+      ],
+      [
+        "pinfm",
+        "feed"
+      ],
+      [
+        "advdata",
+        "pplus"
+      ],
+      [
+        "advertiser",
+        "pplus",
+        "configure l'objectif et fournit les donnees"
+      ],
+      [
+        "pplus",
+        "feed",
+        "diffusion des annonces"
+      ],
+      [
+        "feed",
+        "advdata",
+        "boucle de conversion valorisee (ROAS)"
+      ],
+      [
+        "feed",
+        "taste",
+        "boucle d'engagement (saves)"
+      ]
+    ]
+  },
+  "stack_technique": [
+    {
+      "nom": "Pinterest Performance+",
+      "categorie": "plateforme",
+      "detail": "Suite d'annonces automatisant enchere, ciblage et budget",
+      "url": "https://business.pinterest.com/pinterest-performance-plus/"
+    },
+    {
+      "nom": "OmniSage",
+      "categorie": "llm",
+      "detail": "Modele de recommandation et de ranking entraine sur le taste graph Pinterest"
+    },
+    {
+      "nom": "PinFM",
+      "categorie": "llm",
+      "detail": "Modele de ranking fondationnel distillant l'historique utilisateur dans le home feed"
+    },
+    {
+      "nom": "Navigator 1",
+      "categorie": "infra",
+      "detail": "Modele coeur reduisant la latence et le cout (environ 90% de moins qu'un modele tiers de premier plan)"
+    }
+  ],
+  "replication": {
+    "statut_epistemique": "infere",
+    "prerequis_data": [
+      "Flux catalogue produit propre et a jour",
+      "Remontee des conversions valorisees (valeur d'achat, pas seulement le clic) via pixel/API de conversion",
+      "Liste de clients existants exploitable pour distinguer les acheteurs net-new"
+    ],
+    "prerequis_orga": [
+      "Alignement marketing/data sur une definition commune de la valeur de conversion et du nouveau client",
+      "Base legale et consentement RGPD pour le rapprochement de la liste clients",
+      "Acceptation de deleguer enchere, ciblage et budget a l'algorithme de la plateforme"
+    ],
+    "stack_possible": [
+      "Pinterest Performance+ (ROAS bidding, New Customer Acquisition)",
+      "Equivalents plateforme : Meta Advantage+ avec objectif nouveaux clients, Google Performance Max avec value-based bidding et new customer acquisition goal",
+      "Outil de mesure incremental natif de la plateforme pour valider l'apport"
+    ],
+    "playbook": [
+      {
+        "action": "Instrumenter la valeur de conversion et non le simple volume, pour que le bidding optimise sur le ROAS",
+        "livrable": "Flux de conversions valorisees remonte a la plateforme"
+      },
+      {
+        "action": "Constituer et charger la liste de clients existants pour prioriser les acheteurs net-new",
+        "livrable": "Segment client servant de reference au ciblage new-customer"
+      },
+      {
+        "action": "Activer la suite automatisee sur un objectif lower-funnel et laisser l'algorithme piloter",
+        "livrable": "Campagne Performance+ en diffusion automatisee"
+      },
+      {
+        "action": "Mesurer l'apport en incremental et le ROAS nouveaux clients contre une campagne de controle",
+        "livrable": "Lecture de l'uplift reel de l'automatisation et de la brique new-customer"
+      }
+    ],
+    "equipe": "Un pilote paid/growth cote annonceur, un profil data pour la mesure des conversions valorisees et le rapprochement de la liste clients.",
+    "premiere_etape": "Instrumenter la valeur de conversion et preparer la liste de clients existants : ce sont les deux signaux qui font fonctionner le ROAS bidding et la priorisation des nouveaux clients."
+  },
+  "seo": {
+    "slug": "pinterest-performance-plus-ia-publicitaire-2025",
+    "title": "Pinterest : suite publicitaire IA Performance+ - 30% du revenu lower-funnel automatise (2025)",
+    "meta_description": "Performance+, la suite publicitaire IA de Pinterest : enchere et acquisition auto. +64% de conversions net-new, +28% de ROAS, 30% du revenu lower-funnel.",
+    "resume_citable": "En 2025, la suite publicitaire IA Performance+ de Pinterest portait environ 30% du revenu lower-funnel, avec +64% de conversions nouveaux clients via New Customer Acquisition et +28% de ROAS pour les annonceurs SMB, adosse aux modeles de recommandation maison OmniSage et PinFM.",
+    "faq": [
+      {
+        "q": "Qu'est-ce que Pinterest Performance+ ?",
+        "a": "Une suite publicitaire ou l'algorithme de Pinterest gere l'enchere, le ciblage et le budget d'une campagne. Elle inclut le ROAS bidding, qui optimise sur la valeur de conversion, et le New Customer Acquisition, qui priorise les acheteurs net-new a partir d'une liste de clients existants."
+      },
+      {
+        "q": "Quels modeles IA Pinterest utilise-t-il ?",
+        "a": "Des modeles maison : OmniSage, entraine sur le taste graph pour recommander et classer le contenu (+450 points de base de saves sitewide), et PinFM, un modele de ranking fondationnel base sur l'historique utilisateur (+240 points de base de saves)."
+      },
+      {
+        "q": "Quelle est la preuve du passage a l'echelle ?",
+        "a": "Les resultats sont cites par le CEO en earnings calls Q3 et Q4 2025 : environ 30% du revenu lower-funnel passe par Performance+ un an apres le lancement global d'octobre 2024."
+      }
+    ]
+  }
+}

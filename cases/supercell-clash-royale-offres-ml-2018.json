@@ -1,0 +1,265 @@
+{
+  "id": "supercell-clash-royale-offres-ml-2018",
+  "type_fiche": "succes",
+  "marque": "Supercell",
+  "groupe": "Tencent (actionnaire majoritaire)",
+  "industrie": "media_entertainment",
+  "marches_deploiement": [
+    "Mondial (Clash Royale, Brawl Stars)"
+  ],
+  "transposable_ue": {
+    "flag": "oui_avec_adaptations",
+    "note": "La personnalisation des offres de cartes s'appuie sur le comportement d'achat et de progression du joueur. Sous RGPD, ce profilage a des fins de monetisation demande une base legale et de la transparence, et la personnalisation d'offres reste surveillee par le droit de la consommation. Le pattern d'offre servie par ML est transposable, avec ce cadrage."
+  },
+  "metier": "marketing (monetisation)",
+  "intervenants": [
+    {
+      "nom": "Jarno Seppanen",
+      "role": "Data Scientist, Supercell",
+      "source_ref": "S1"
+    },
+    {
+      "nom": "Otto Soderlund",
+      "role": "AI Lead, Supercell",
+      "source_ref": "S2"
+    }
+  ],
+  "axes": {
+    "levier": "monetisation",
+    "touchpoints": [
+      "boutique in-game",
+      "offres de cartes personnalisees",
+      "campagnes UA (extension 2025)"
+    ],
+    "etape_parcours": "achat",
+    "famille": "personnalisation",
+    "pattern": "personnalisation ML des offres in-game (quelle carte ou offre servir)",
+    "type_ia": [
+      "modeles predictifs de propension",
+      "segmentation par machine learning",
+      "IA generative pour l'UA (pilotes 2025)"
+    ],
+    "plateforme_stack": [
+      "custom/in-house"
+    ],
+    "objectif_metrique": [
+      "conversion des offres en boutique",
+      "LTV",
+      "efficience UA (extension 2025)"
+    ]
+  },
+  "implementation": "custom",
+  "objectif_business": "Augmenter la conversion et la LTV en servant a chaque joueur l'offre de carte la plus pertinente, avec une petite equipe qui automatise la monetisation recurrente plutot que de la grossir.",
+  "description": "Depuis 2018, Clash Royale sert des offres de cartes personnalisees dans sa boutique grace a du machine learning. Le systeme regarde le nombre de cartes deja possedees, la proximite d'un joueur d'un palier d'amelioration et sa frequence d'achat, entre autres facteurs, pour decider quelles offres montrer. Le prix et la taille des lots restent codes en dur; le ML choisit les cartes que le joueur est le plus susceptible d'acheter. La logique assumee par l'equipe est de rester petite et d'automatiser tout ce qui revient de facon reguliere. En 2025, Supercell a decrit un plan IA plus large presente par son AI Lead, avec la personnalisation de masse pour l'acquisition, la prediction du comportement joueur et l'ajustement des activites de retention et de monetisation pour maximiser la LTV, ainsi que des pilotes de creation d'assets UA. Le groupe fait par ailleurs tourner en production un agent de support IA construit avec OpenAI dans Brawl Stars.",
+  "resultats": [
+    {
+      "metrique": "Offres de cartes servies par ML, jeu top-grossing",
+      "valeur": "depuis 2018",
+      "citation_exacte": "Whatever happens on a regular schedule, we try to automate",
+      "source_ref": "S1"
+    },
+    {
+      "metrique": "Personnalisation de masse UA et monetisation, pilotage de la LTV",
+      "valeur": "plan 2025",
+      "citation_exacte": "Mass personalisation for UA activities",
+      "source_ref": "S2"
+    },
+    {
+      "metrique": "Cout par ticket, agent de support IA Brawl Stars ; +20% CSAT, 7 s de reponse",
+      "valeur": "-90% par ticket",
+      "citation_exacte": "90% reduction in cost of solving a ticket",
+      "source_ref": "S3"
+    }
+  ],
+  "niveau_preuve": {
+    "niveau": "C",
+    "justification": "Presse specialisee reconnue rapportant nommement des interventions de data scientists et de l'AI Lead de Supercell sur la monetisation et l'UA, plus une etude de cas vendor chiffree pour l'agent de support. Pas de chiffre financier sur la monetisation elle-meme, donc C."
+  },
+  "dates": {
+    "lancement": "2018 (personnalisation ML des offres dans Clash Royale)",
+    "derniere_confirmation_activite": "2025-11 (plan IA presente par l'AI Lead)",
+    "verifie_le": "2026-07-11",
+    "revoir_apres": "2027-01-11"
+  },
+  "statut_vivant": {
+    "statut": "confirme",
+    "note": "La personnalisation ML de la monetisation tourne dans Clash Royale depuis 2018, et Supercell a decrit en 2025 son extension a l'acquisition et a la monetisation, avec un agent de support IA en production."
+  },
+  "sources": [
+    {
+      "ref": "S1",
+      "type": "presse",
+      "fiabilite": "T3_presse_etablie",
+      "titre": "Supercell's Jarno Seppanen on how Clash Royale uses machine learning to automate monetization",
+      "url": "https://www.pocketgamer.biz/supercells-jarno-seppnen-on-how-clash-royale-uses-machine-learning-automate-monetization/",
+      "date_publication": "2018-07-13",
+      "consulte_le": "2026-07-11"
+    },
+    {
+      "ref": "S2",
+      "type": "presse",
+      "fiabilite": "T4_secondaire",
+      "titre": "Supercell's AI masterplan explained",
+      "url": "https://www.pocketgamer.biz/supercells-ai-masterplan-explained/",
+      "date_publication": "2025-11-18",
+      "consulte_le": "2026-07-11"
+    },
+    {
+      "ref": "S3",
+      "type": "customer_story_plateforme",
+      "fiabilite": "T2_officiel_interesse",
+      "titre": "How Supercell is Turning Player Support into Connected and Seamless Gameplay Experience with AI Agents (Tomoro.ai)",
+      "url": "https://tomoro.ai/case-studies/supercell-gameplay-agent",
+      "date_publication": "",
+      "consulte_le": "2026-07-11"
+    }
+  ],
+  "fonctionnement_operationnel": {
+    "cadence": "Offre servie en continu au fil des sessions, sur une base reguliere que l'equipe cherche a automatiser au maximum.",
+    "opere_par": "Equipe data science de Supercell, en petit effectif par choix, avec les equipes de jeu.",
+    "signal_pilote": "L'etat du joueur: cartes possedees, proximite d'un palier d'amelioration, frequence d'achat. Sans ce signal a jour, l'offre servie perd sa pertinence et la conversion baisse.",
+    "etapes": [
+      {
+        "etape": "Lecture de l'etat du joueur",
+        "detail": "Le systeme mesure inventaire, progression et historique d'achat.",
+        "acteur": "IA (data science)"
+      },
+      {
+        "etape": "Selection de l'offre",
+        "detail": "Le ML choisit les cartes a proposer; le prix et la taille des lots sont fixes en dur.",
+        "acteur": "IA (data science)"
+      },
+      {
+        "etape": "Affichage en boutique",
+        "detail": "L'offre personnalisee apparait dans le store du jeu.",
+        "acteur": "jeu (Clash Royale)"
+      },
+      {
+        "etape": "Boucle de mesure",
+        "detail": "Conversion et achats reinjectes pour affiner les propensions.",
+        "acteur": "equipe data"
+      }
+    ]
+  },
+  "schema_flow": {
+    "statut": "documente",
+    "noeuds": [
+      {
+        "id": "state",
+        "role_generique": "data_source",
+        "label": "Etat du joueur (cartes, progression, achats)"
+      },
+      {
+        "id": "ml",
+        "role_generique": "modele_ia",
+        "label": "Modele de propension d'offre",
+        "outil_documente": "custom Supercell"
+      },
+      {
+        "id": "store",
+        "role_generique": "site_app",
+        "label": "Boutique in-game (Clash Royale)"
+      }
+    ],
+    "liens": [
+      [
+        "state",
+        "ml"
+      ],
+      [
+        "ml",
+        "store"
+      ],
+      [
+        "store",
+        "state",
+        "achats reinjectes"
+      ]
+    ]
+  },
+  "replication": {
+    "statut_epistemique": "infere",
+    "prerequis_data": [
+      "inventaire et progression par joueur",
+      "historique et frequence d'achat",
+      "catalogue d'offres"
+    ],
+    "prerequis_orga": [
+      "petite equipe data science autonome",
+      "process d'A/B testing des offres",
+      "gouvernance sur la personnalisation d'offres"
+    ],
+    "stack_possible": [
+      "modele de propension custom",
+      "pipeline de features joueur",
+      "systeme d'offres in-game"
+    ],
+    "premiere_etape": "Cartographier l'etat du joueur (inventaire, progression, frequence d'achat) et tester un modele de propension sur un segment avant de generaliser a la boutique.",
+    "playbook": [
+      {
+        "action": "Cartographier l'etat du joueur : inventaire, progression et historique d'achat consolides par joueur",
+        "livrable": "Pipeline de features joueur a jour en continu"
+      },
+      {
+        "action": "Definir l'espace d'offres : ce que le ML choisit (contenu) et ce qui reste fixe (prix, taille des lots), plus la gouvernance de la personnalisation",
+        "livrable": "Catalogue d'offres et regles ecrites"
+      },
+      {
+        "action": "Entrainer le modele de propension : predire par joueur les contenus les plus susceptibles d'etre achetes",
+        "livrable": "Modele evalue offline sur l'historique d'achat"
+      },
+      {
+        "action": "A/B tester : offres personnalisees servies a un segment contre la boutique standard",
+        "livrable": "Lecture conversion et revenu par joueur sur le test"
+      },
+      {
+        "action": "Generaliser a toute la base et automatiser tout ce qui revient sur une base reguliere",
+        "livrable": "Offres servies par ML en routine, boucle de mesure permanente"
+      }
+    ],
+    "equipe": "1-2 data scientists + 1 dev backend, en lien avec l'equipe du jeu et le monetization design"
+  },
+  "seo": {
+    "slug": "supercell-clash-royale-offres-ml-2018",
+    "title": "Supercell : offres de cartes servies par ML dans Clash Royale - 7 ans en production (2018)",
+    "meta_description": "Clash Royale sert depuis 2018 des offres de cartes personnalisees par machine learning ; en 2025, Supercell etend l'IA a l'acquisition et a la monetisation.",
+    "resume_citable": "Clash Royale sert depuis 2018 des offres de cartes personnalisees par machine learning selon l'inventaire, la progression et la frequence d'achat du joueur, une petite equipe data science automatisant la monetisation recurrente ; en 2025, Supercell a decrit l'extension de l'IA a l'acquisition et a la monetisation.",
+    "faq": [
+      {
+        "q": "Comment Supercell personnalise-t-il la monetisation de Clash Royale ?",
+        "a": "Un modele de machine learning choisit, selon l'etat du joueur, les cartes a proposer en boutique ; le prix et la taille des lots restent fixes a la main."
+      },
+      {
+        "q": "Depuis quand ce systeme tourne-t-il ?",
+        "a": "Depuis 2018, ce qui en fait un dispositif de monetisation ML en production continue dans un jeu top-grossing, etendu en 2025 a l'acquisition et a la monetisation."
+      }
+    ]
+  },
+  "logo_domain": "supercell.com",
+  "stack_technique": [
+    {
+      "nom": "Modele de propension in-house",
+      "categorie": "outil",
+      "detail": "ML qui choisit les cartes a proposer selon les cartes possedees, la proximite d'un palier d'amelioration et la frequence d'achat ; prix et taille des lots restent codes en dur",
+      "url": "https://supercell.com"
+    },
+    {
+      "nom": "Pipeline de features joueur",
+      "categorie": "infra",
+      "detail": "etat du joueur (inventaire, progression, achats) tenu a jour pour servir l'offre en boutique",
+      "url": "https://supercell.com"
+    },
+    {
+      "nom": "OpenAI",
+      "categorie": "llm",
+      "detail": "modeles utilises pour l'agent de support IA en production dans Brawl Stars, systeme distinct de la monetisation ML",
+      "url": "https://openai.com"
+    },
+    {
+      "nom": "Tomoro.ai",
+      "categorie": "integrateur",
+      "detail": "partenaire de construction de l'agent de support IA de Brawl Stars",
+      "url": "https://tomoro.ai"
+    }
+  ]
+}

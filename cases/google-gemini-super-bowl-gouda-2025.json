@@ -1,0 +1,195 @@
+{
+  "id": "google-gemini-super-bowl-gouda-2025",
+  "type_fiche": "echec_retrait",
+  "marque": "Google",
+  "groupe": "Alphabet",
+  "industrie": "autre",
+  "marches_deploiement": [
+    "Etats-Unis"
+  ],
+  "transposable_ue": {
+    "flag": "oui",
+    "note": "Risque identique pour toute marque qui met en avant une reponse d'IA dans sa publicite : un chiffre errone repris a l'ecran engage la marque au titre de la publicite trompeuse. En UE, l'AI Act et les regles de loyaute publicitaire imposent d'autant plus de verifier les affirmations chiffrees generees. Le probleme n'est pas la langue ni le marche, c'est le controle des faits produits par le modele."
+  },
+  "metier": "marketing / demonstration produit IA",
+  "axes": {
+    "levier": "acquisition",
+    "touchpoints": [
+      "spot Super Bowl",
+      "pages locales de demonstration Gemini"
+    ],
+    "etape_parcours": "decouverte",
+    "famille": "generation",
+    "pattern": "reponse d'IA generative mise en avant en publicite (fait errone)",
+    "type_ia": [
+      "LLM generatif",
+      "generation de texte marketing"
+    ],
+    "plateforme_stack": [
+      "Google Gemini"
+    ],
+    "objectif_metrique": [
+      "notoriete Gemini",
+      "credibilite de l'assistant"
+    ]
+  },
+  "implementation": "plateforme",
+  "objectif_business": "Promouvoir Gemini aupres des petites entreprises pendant le Super Bowl 2025 en montrant l'IA rediger des descriptifs produit, ici pour un commercant de fromages.",
+  "description": "Pour le Super Bowl 2025, Google diffuse une campagne montrant Gemini aider des petites entreprises a rediger leurs contenus. Dans le spot consacre a un fromager du Wisconsin, le texte genere affirme que le gouda represente 50 a 60 pour cent de la consommation mondiale de fromage. Le chiffre est faux : le gouda ne figure meme pas dans le top 10 selon les donnees publiques. Un responsable de Google defend d'abord l'ad en disant que ce n'est pas une hallucination, le modele s'appuyant sur une source web. Face a la controverse, le chiffre est retire de l'ad et de la page produit avant la diffusion du match.",
+  "resultats": [
+    {
+      "metrique": "Statistique du gouda retiree du spot et de la page produit",
+      "valeur": "chiffre retire",
+      "citation_exacte": "quietly edited to remove the number",
+      "source_ref": "S1"
+    },
+    {
+      "metrique": "Defense initiale: un responsable Google invoque une source web",
+      "valeur": "pas une hallucination",
+      "citation_exacte": "not a hallucination",
+      "source_ref": "S1"
+    }
+  ],
+  "niveau_preuve": {
+    "niveau": "C",
+    "justification": "Presse etablie (Fortune, TechRadar) documente nommement la marque, le chiffre errone, la defense d'un dirigeant et la correction. La modification de l'ad par Google confirme les faits. Pas de document financier, donc C."
+  },
+  "dates": {
+    "lancement": "2025-02 (campagne Super Bowl 2025)",
+    "derniere_confirmation_activite": "2025-02-07 (chiffre retire de l'ad avant le match)",
+    "verifie_le": "2026-07-11",
+    "revoir_apres": "2027-07-11"
+  },
+  "statut_vivant": {
+    "statut": "confirme",
+    "note": "Correction confirmee : le chiffre a ete retire de l'ad et de la page avant la diffusion du Super Bowl. La campagne et Gemini se sont poursuivis, seule l'affirmation fausse a ete supprimee."
+  },
+  "sources": [
+    {
+      "ref": "S1",
+      "type": "presse",
+      "fiabilite": "T3_presse_etablie",
+      "titre": "A Super Bowl ad featuring Google's Gemini AI contained a whopper of a mistake about cheese",
+      "url": "https://fortune.com/2025/02/09/google-gemini-ai-super-bowl-ad-cheese-gouda/",
+      "date_publication": "2025-02-09",
+      "consulte_le": "2026-07-11"
+    },
+    {
+      "ref": "S2",
+      "type": "presse",
+      "fiabilite": "T3_presse_etablie",
+      "titre": "Google fumbles Gemini Super Bowl ad's cheese statistic",
+      "url": "https://www.techradar.com/computing/artificial-intelligence/google-fumbles-gemini-super-bowl-ads-cheese-statistic",
+      "date_publication": "2025-02-08",
+      "consulte_le": "2026-07-11"
+    }
+  ],
+  "post_mortem": {
+    "ce_qui_s_est_passe": "Debut fevrier 2025, Google diffuse une campagne Super Bowl montrant Gemini rediger des descriptifs pour des petites entreprises. Le spot du fromager fait affirmer par l'IA que le gouda pese 50 a 60 pour cent de la consommation mondiale de fromage. Un observateur releve l'erreur. Un dirigeant de Google defend d'abord l'ad en disant que ce n'est pas une hallucination mais une reprise d'une source web. Devant la controverse, Google retire le chiffre de l'ad et de la page produit avant la diffusion du match.",
+    "raison_echec": "Le modele a repris un chiffre faux present sur une page web et l'a integre a un contenu marketing valide sans verification. La defense publique initiale (ce n'est pas une hallucination) a aggrave la situation en revelant qu'aucun garde-fou factuel ne separait la sortie du modele de la mise a l'antenne. L'erreur etait d'autant plus visible que l'ad servait justement a vanter la fiabilite de Gemini.",
+    "date_retrait": "2025-02-07 (chiffre retire avant la diffusion du Super Bowl).",
+    "cout_estime": "Cout reputationnel : la bevue est reprise par la presse tech au pire moment pour une demonstration de fiabilite. Pas de cout financier direct publie.",
+    "signaux_avant_coureurs": "Infere : mettre a l'antenne une sortie de LLM contenant une statistique chiffree sans verification humaine est un risque connu. Le fait que le modele s'appuie sur le web ne garantit pas la justesse, puisque le web contient des erreurs. Une relecture factuelle des affirmations chiffrees avant tournage aurait suffi.",
+    "lecons_avec_recul": "Infere : toute affirmation chiffree generee par une IA et destinee a etre publiee doit passer par une verification humaine, surtout dans une pub qui vend la fiabilite de cette IA. Distinguer hallucination et reprise d'une source fausse ne change rien pour le public : c'est la marque qui porte l'erreur. Verifier les faits saillants n'est pas optionnel.",
+    "le_pattern_reste_il_valide": "Infere : oui, montrer une IA generative rediger des contenus marketing reste un pattern valide et repandu. L'echec porte sur l'absence de controle factuel et sur une communication de crise maladroite, pas sur l'idee. Avec une verification des chiffres avant diffusion, la meme demonstration tient."
+  },
+  "schema_flow": {
+    "statut": "approche_type",
+    "noeuds": [
+      {
+        "id": "source",
+        "role_generique": "data_source",
+        "label": "Pages web (dont une erronee)"
+      },
+      {
+        "id": "llm",
+        "role_generique": "modele_ia",
+        "label": "LLM generatif (descriptif produit)",
+        "outil_documente": "Google Gemini"
+      },
+      {
+        "id": "ad",
+        "role_generique": "paid_platform",
+        "label": "Spot publicitaire et page produit"
+      },
+      {
+        "id": "public",
+        "role_generique": "humain",
+        "label": "Public et presse (fact-check)"
+      }
+    ],
+    "liens": [
+      [
+        "source",
+        "llm"
+      ],
+      [
+        "llm",
+        "ad"
+      ],
+      [
+        "ad",
+        "public"
+      ],
+      [
+        "public",
+        "ad",
+        "correction (chiffre retire)"
+      ]
+    ]
+  },
+  "stack_technique": [
+    {
+      "nom": "Google Gemini",
+      "categorie": "llm",
+      "detail": "LLM generatif mis en scene dans la campagne : il redige le descriptif produit du fromager, y compris la statistique fausse sur le gouda",
+      "url": "https://gemini.google.com"
+    },
+    {
+      "nom": "Ancrage sur sources web",
+      "categorie": "outil",
+      "detail": "Le chiffre errone venait d'une page web reprise par le modele ; c'est l'absence de verification de cette reprise qui est en cause, pas une hallucination selon Google",
+      "url": "https://www.google.com"
+    },
+    {
+      "nom": "Pages locales de demonstration Gemini",
+      "categorie": "plateforme",
+      "detail": "Pages produit Google mettant en avant les reponses de Gemini pour les petites entreprises, corrigees en meme temps que le spot",
+      "url": "https://www.google.com"
+    }
+  ],
+  "replication": {
+    "statut_epistemique": "infere",
+    "prerequis_data": [
+      "contenus a generer",
+      "sources de reference verifiables"
+    ],
+    "prerequis_orga": [
+      "relecture factuelle humaine avant publication",
+      "process de correction rapide"
+    ],
+    "stack_possible": [
+      "LLM generatif",
+      "verification des affirmations chiffrees",
+      "chaine de validation editoriale"
+    ],
+    "premiere_etape": "Ajouter une etape obligatoire de verification humaine des faits chiffres pour tout contenu genere destine a une diffusion publique, a fortiori une pub qui vante l'IA."
+  },
+  "seo": {
+    "slug": "google-gemini-super-bowl-gouda-2025",
+    "title": "Google Gemini : chiffre faux sur le gouda dans une pub Super Bowl - correction (2025)",
+    "meta_description": "En fevrier 2025, une pub Super Bowl de Gemini affirme un chiffre faux sur le gouda. Google defend puis retire la statistique avant le match.",
+    "resume_citable": "En fevrier 2025, une pub Super Bowl de Google Gemini affirmait a tort que le gouda pesait 50 a 60 pour cent de la consommation mondiale de fromage ; Google a retire le chiffre de l'ad avant la diffusion du match.",
+    "faq": [
+      {
+        "q": "Quelle erreur contenait la pub Gemini du Super Bowl 2025 ?",
+        "a": "Le texte genere affirmait que le gouda represente 50 a 60 pour cent de la consommation mondiale de fromage, ce qui est faux. Un dirigeant a d'abord nie l'hallucination en invoquant une source web, puis Google a retire le chiffre de l'ad et de la page produit."
+      },
+      {
+        "q": "Faut-il abandonner la generation de contenu marketing par IA ?",
+        "a": "Non. L'echec vient de l'absence de verification factuelle et d'une communication de crise maladroite, pas du pattern. Avec une relecture humaine des affirmations chiffrees avant diffusion, la meme demonstration reste valide."
+      }
+    ]
+  },
+  "logo_domain": "google.com"
+}

@@ -1,0 +1,312 @@
+{
+  "id": "hyundai-india-yellowai-conversational-ai-2022",
+  "type_fiche": "succes",
+  "marque": "Hyundai Motor India",
+  "groupe": "Hyundai Motor Company",
+  "industrie": "auto",
+  "marches_deploiement": [
+    "Inde"
+  ],
+  "transposable_ue": {
+    "flag": "oui_avec_adaptations",
+    "note": "Repose fortement sur WhatsApp comme canal de conversion, dominant en Inde. En UE, il faut le consentement marketing opt-in (RGPD) pour les campagnes sortantes et adapter le mix de canaux."
+  },
+  "metier": "marketing / vente / service client (omnicanal)",
+  "agences": [
+    {
+      "nom": "Yellow.ai",
+      "role": "Plateforme d'IA conversationnelle omnicanale (agent commerce, module Engage WhatsApp, helpdesk)",
+      "source_ref": "S1"
+    }
+  ],
+  "axes": {
+    "levier": "acquisition",
+    "touchpoints": [
+      "site web",
+      "WhatsApp",
+      "Facebook",
+      "Google Business Messages"
+    ],
+    "etape_parcours": "consideration",
+    "famille": "conversation",
+    "pattern": "agent conversationnel commerce et lead-gen",
+    "type_ia": [
+      "IA conversationnelle",
+      "NLP (DynamicNLP)"
+    ],
+    "plateforme_stack": [
+      "Yellow.ai"
+    ],
+    "objectif_metrique": [
+      "ventes de vehicules generees",
+      "conversion lead-to-retail",
+      "impressions campagnes",
+      "temps de reponse"
+    ]
+  },
+  "implementation": "plateforme",
+  "objectif_business": "Transformer l'interet en ligne en essais et en ventes : laisser les prospects explorer les modeles, choisir une finition et reserver un essai via un agent conversationnel disponible sur les canaux ou sont les acheteurs indiens, et nourrir des campagnes sortantes personnalisees.",
+  "points_cles": ["Agent conversationnel omnicanal de commerce et lead-gen (exploration, finition, essai).", "Yellow.ai (DynamicNLP, module Engage, helpdesk) sur web, WhatsApp, Facebook et GBM.", "1000+ ventes de vehicules, 50% de conversion lead-to-retail, 1 million+ d'impressions.", "Niveau de preuve B, statut vivant signaux mitiges."],
+  "description": "Hyundai Motor India a deploye avec Yellow.ai un agent conversationnel omnicanal (site web, WhatsApp, Facebook, Google Business Messages) qui laisse le client explorer la gamme, choisir sa finition et reserver un essai. Le module Engage sert des campagnes WhatsApp personnalisees ; le module helpdesk outille les agents humains pour le service. Le dispositif combine parcours d'achat automatises et campagnes sortantes mesurees via des tableaux de bord temps reel. Cote resultats publies pour cette periode : ventes generees, conversion lead-to-retail et volume d'impressions campagnes.",
+  "resultats": [
+    {
+      "metrique": "Ventes de vehicules generees via l'agent (parcours automatises + campagnes sortantes)",
+      "valeur": "1 000+",
+      "citation_exacte": "1000 plus vehicle sales",
+      "source_ref": "S1"
+    },
+    {
+      "metrique": "Conversion lead-to-retail",
+      "valeur": "50 %",
+      "citation_exacte": "50% lead-to-retail conversions",
+      "source_ref": "S1"
+    },
+    {
+      "metrique": "Impressions clients (14 campagnes sortantes)",
+      "valeur": "1 000 000+",
+      "citation_exacte": "1 million plus customer impressions",
+      "source_ref": "S1"
+    },
+    {
+      "metrique": "Temps de reponse moyen (helpdesk)",
+      "valeur": "22 secondes",
+      "citation_exacte": "average response time of 22 seconds",
+      "source_ref": "S1"
+    }
+  ],
+  "niveau_preuve": {
+    "niveau": "B",
+    "justification": "Etude de cas chiffree du fournisseur Yellow.ai (partie interessee) avec des metriques de vente et de conversion, corroboree par la presse indienne confirmant le deploiement d'un chatbot IA de Hyundai India sur son site de vente en ligne. Donnees de la periode 2022."
+  },
+  "dates": {
+    "lancement": "2021 (chatbot IA Hyundai India) / campagnes et resultats documentes en 2022",
+    "derniere_confirmation_activite": "2022 (resultats de l'etude de cas Yellow.ai)",
+    "verifie_le": "2026-07-11",
+    "revoir_apres": "2026-10-11"
+  },
+  "statut_vivant": {
+    "statut": "signaux_mitiges",
+    "note": "Le deploiement d'un chatbot IA de Hyundai India est atteste par la presse ; les metriques chiffrees proviennent d'une etude de cas fournisseur de la periode 2022, sans confirmation chiffree recente."
+  },
+  "sources": [
+    {
+      "ref": "S1",
+      "type": "customer_story_plateforme",
+      "fiabilite": "T2_officiel_interesse",
+      "titre": "Hyundai boosts revenue and improves customer service through AI automation",
+      "url": "https://yellow.ai/case-study/hyundai/",
+      "date_publication": "2022",
+      "consulte_le": "2026-07-11"
+    },
+    {
+      "ref": "S2",
+      "type": "presse",
+      "fiabilite": "T3_presse_etablie",
+      "titre": "Hyundai Launches AI Chatbot Hi Hyundai To Enhance Customer Service",
+      "url": "https://www.businessworld.in/article/Hyundai-Launches-AI-Chatbot-Hi-Hyundai-To-Enhance-Customer-Service/29-06-2021-394795/",
+      "date_publication": "2021-06-29",
+      "consulte_le": "2026-07-11"
+    },
+    {
+      "ref": "S3",
+      "type": "presse",
+      "fiabilite": "T4_secondaire",
+      "titre": "Hyundai India Launches AI Chatbot Hi Hyundai",
+      "url": "https://www.mobilityoutlook.com/news/hyundai-india-launches-ai-chatbot-hi-hyundai/",
+      "date_publication": "2021",
+      "consulte_le": "2026-07-11"
+    }
+  ],
+  "fonctionnement_operationnel": {
+    "cadence": "Temps reel sur les canaux entrants ; campagnes sortantes planifiees (mensuelles) sur WhatsApp.",
+    "opere_par": "L'equipe marketing digital et CRM de Hyundai Motor India, sur la plateforme Yellow.ai, avec des agents humains en relais via le helpdesk.",
+    "signal_pilote": "Le comportement de conversation et les evenements de conversion (essai reserve, finition choisie). Sans opt-in ni segmentation propre, les campagnes sortantes WhatsApp perdent en pertinence et en delivrabilite.",
+    "etapes": [
+      {
+        "etape": "Entree dans la conversation",
+        "detail": "Le prospect engage l'agent sur le site, WhatsApp, Facebook ou Google Business Messages.",
+        "acteur": "client"
+      },
+      {
+        "etape": "Qualification et configuration",
+        "detail": "L'agent aide a explorer la gamme, choisir une finition et propose la reservation d'essai.",
+        "acteur": "IA"
+      },
+      {
+        "etape": "Campagnes sortantes",
+        "detail": "Le module Engage envoie des campagnes WhatsApp personnalisees vers des segments cibles.",
+        "acteur": "marketing"
+      },
+      {
+        "etape": "Relais humain et service",
+        "detail": "Le helpdesk permet aux agents de reprendre la main pour des resolutions personnalisees.",
+        "acteur": "service client"
+      },
+      {
+        "etape": "Mesure",
+        "detail": "Les tableaux de bord temps reel suivent conversions, ventes et performance des campagnes.",
+        "acteur": "equipe data"
+      }
+    ]
+  },
+  "schema_flow": {
+    "statut": "documente",
+    "noeuds": [
+      {
+        "id": "prospect",
+        "role_generique": "humain",
+        "label": "Prospect"
+      },
+      {
+        "id": "canaux",
+        "role_generique": "canal_conversationnel",
+        "label": "Web / WhatsApp / Facebook / GBM"
+      },
+      {
+        "id": "agent",
+        "role_generique": "modele_ia",
+        "label": "Agent conversationnel",
+        "outil_documente": "Yellow.ai (DynamicNLP)"
+      },
+      {
+        "id": "engage",
+        "role_generique": "paid_platform",
+        "label": "Campagnes sortantes",
+        "outil_documente": "Yellow.ai Engage (WhatsApp)"
+      },
+      {
+        "id": "helpdesk",
+        "role_generique": "humain",
+        "label": "Agents helpdesk"
+      },
+      {
+        "id": "dash",
+        "role_generique": "data_source",
+        "label": "Tableaux de bord et analytics"
+      }
+    ],
+    "liens": [
+      [
+        "prospect",
+        "canaux",
+        "message"
+      ],
+      [
+        "canaux",
+        "agent",
+        "requete"
+      ],
+      [
+        "agent",
+        "canaux",
+        "reponse + reservation essai"
+      ],
+      [
+        "engage",
+        "canaux",
+        "campagne WhatsApp"
+      ],
+      [
+        "agent",
+        "helpdesk",
+        "escalade"
+      ],
+      [
+        "agent",
+        "dash",
+        "evenements de conversion"
+      ],
+      [
+        "dash",
+        "engage",
+        "ciblage des segments"
+      ]
+    ]
+  },
+  "stack_technique": [
+    {
+      "nom": "Yellow.ai",
+      "categorie": "plateforme",
+      "detail": "Plateforme d'IA conversationnelle omnicanale qui porte l'agent commerce sur le site web, WhatsApp, Facebook et Google Business Messages",
+      "url": "https://yellow.ai"
+    },
+    {
+      "nom": "Yellow.ai DynamicNLP",
+      "categorie": "llm",
+      "detail": "Moteur NLP de la plateforme qui comprend les demandes des prospects sans entrainement intent par intent",
+      "url": "https://yellow.ai"
+    },
+    {
+      "nom": "Yellow.ai Engage",
+      "categorie": "outil",
+      "detail": "Module de campagnes sortantes personnalisees sur WhatsApp, 14 campagnes et plus d'un million d'impressions sur la periode",
+      "url": "https://yellow.ai"
+    },
+    {
+      "nom": "WhatsApp Business API",
+      "categorie": "outil",
+      "detail": "Canal principal de conversion et de campagnes en Inde, opere via la plateforme",
+      "url": "https://business.whatsapp.com"
+    },
+    {
+      "nom": "Module helpdesk Yellow.ai",
+      "categorie": "outil",
+      "detail": "Outille les agents humains pour reprendre la main sur le service, avec un temps de reponse moyen de 22 secondes",
+      "url": "https://yellow.ai"
+    }
+  ],
+  "replication": {
+    "statut_epistemique": "infere",
+    "prerequis_data": [
+      "catalogue produit et finitions",
+      "base de prospects avec consentement",
+      "evenements de conversion (essais, ventes)"
+    ],
+    "prerequis_orga": [
+      "equipe marketing digital et CRM",
+      "process de relais vers les concessions et le service"
+    ],
+    "stack_possible": [
+      "Yellow.ai ou plateforme d'agent conversationnel",
+      "API WhatsApp Business",
+      "CRM pour la remontee des leads"
+    ],
+    "premiere_etape": "Brancher un agent conversationnel sur le site et WhatsApp avec un parcours de reservation d'essai relie au CRM.",
+    "playbook": [
+      {
+        "action": "Cadrer le parcours cible (exploration de gamme, choix de finition, reservation d'essai) et preparer le catalogue produit et la base de prospects avec consentement opt-in.",
+        "livrable": "Parcours conversationnel specifie et base opt-in prete"
+      },
+      {
+        "action": "Parametrer l'agent sur la plateforme conversationnelle, le deployer sur le site et WhatsApp, et relier la reservation d'essai au CRM et aux concessions.",
+        "livrable": "Agent en production sur deux canaux avec leads remontant au CRM"
+      },
+      {
+        "action": "Lancer les premieres campagnes sortantes WhatsApp sur des segments cibles opt-in et activer le helpdesk pour le relais humain.",
+        "livrable": "Campagnes actives et circuit d'escalade vers les agents en place"
+      },
+      {
+        "action": "Suivre dans les tableaux de bord la conversion lead-to-retail, les essais reserves et la performance des campagnes, et ajuster segments et parcours.",
+        "livrable": "Tableau de bord de conversion et plan d'optimisation"
+      }
+    ],
+    "equipe": "1 chef de projet CRM / digital + 1 conversation designer (ou l'editeur de la plateforme) + relais concessions et service client"
+  },
+  "seo": {
+    "slug": "hyundai-india-yellowai-conversational-ai-2022",
+    "title": "Hyundai Motor India : agent conversationnel omnicanal (Yellow.ai) - 1000+ ventes et 50 % de conversion (2022)",
+    "meta_description": "L'agent conversationnel omnicanal de Hyundai Motor India (Yellow.ai) a genere plus de 1000 ventes de vehicules, 50 % de conversion lead-to-retail et plus d'1 million d'impressions.",
+    "resume_citable": "L'agent conversationnel omnicanal de Hyundai Motor India (Yellow.ai, sur web, WhatsApp, Facebook et Google Business Messages) a contribue a plus de 1000 ventes de vehicules, 50 % de conversion lead-to-retail et plus d'un million d'impressions sur 14 campagnes sortantes.",
+    "faq": [
+      {
+        "q": "Quels resultats commerciaux Hyundai India a-t-il obtenus avec son agent conversationnel ?",
+        "a": "Plus de 1000 ventes de vehicules generees, 50 % de conversion lead-to-retail et plus d'un million d'impressions sur 14 campagnes sortantes, selon l'etude de cas Yellow.ai."
+      },
+      {
+        "q": "Sur quels canaux l'agent est-il present ?",
+        "a": "Site web, WhatsApp, Facebook et Google Business Messages, avec un module de campagnes sortantes sur WhatsApp et un helpdesk pour le relais humain."
+      }
+    ]
+  },
+  "logo_domain": "hyundai.com"
+}

@@ -1,0 +1,268 @@
+{
+  "id": "root-tarification-telematique-ia-2025",
+  "type_fiche": "succes",
+  "marque": "Root",
+  "groupe": "Root, Inc.",
+  "industrie": "banque_assurance_fintech",
+  "marches_deploiement": [
+    "Etats-Unis"
+  ],
+  "transposable_ue": {
+    "flag": "oui_avec_adaptations",
+    "note": "La tarification a partir du comportement de conduite mesure par smartphone est un profilage a effet direct sur le prix : en UE elle releve de la decision automatisee (RGPD art. 22) et du profilage, avec base legale, transparence sur les variables et droit de contestation. L'usage des donnees de localisation et de conduite exige un consentement clair. Des assureurs UE font deja du pay-how-you-drive, le pattern est transposable avec ce cadre."
+  },
+  "metier": "Souscription et tarification (assurance auto)",
+  "axes": {
+    "levier": "monetisation",
+    "touchpoints": [
+      "application mobile (test drive telematique)",
+      "parcours de devis"
+    ],
+    "etape_parcours": "achat",
+    "famille": "prediction",
+    "pattern": "tarification et segmentation du risque a partir de la telematique smartphone",
+    "type_ia": [
+      "machine learning (scoring de risque)",
+      "modeles de tarification a partir de donnees capteurs"
+    ],
+    "plateforme_stack": [
+      "custom/in-house (application et modeles Root)"
+    ],
+    "objectif_metrique": [
+      "ratio combine",
+      "croissance du chiffre d'affaires",
+      "resultat net",
+      "qualite de la segmentation du risque"
+    ]
+  },
+  "implementation": "custom",
+  "stack_technique": [
+    {
+      "nom": "Application mobile Root (captation telematique)",
+      "categorie": "outil",
+      "detail": "Test drive de deux a quatre semaines : les capteurs du smartphone mesurent freinage, regularite, virages, heure de conduite et attention au volant.",
+      "url": "https://www.joinroot.com"
+    },
+    {
+      "nom": "Modeles ML de scoring et de tarification Root",
+      "categorie": "outil",
+      "detail": "Machine learning in-house qui estime le risque individuel a partir de la conduite mesuree et fixe le prix ; variable la plus lourde du modele de souscription.",
+      "url": "https://www.joinroot.com"
+    },
+    {
+      "nom": "Donnees de sinistres Root",
+      "categorie": "infra",
+      "detail": "Historique des sinistres (issue, cout) qui nourrit le reentrainement continu des modeles de risque.",
+      "url": "https://www.joinroot.com"
+    }
+  ],
+  "objectif_business": "Fixer un prix plus juste que la tarification classique en mesurant la conduite reelle, ecarter les segments les plus risques et gagner en rentabilite technique sur un portefeuille auto.",
+  "points_cles": ["Tarification auto fondee sur la conduite reelle mesuree par les capteurs du smartphone (test drive 2 a 4 semaines).", "Modeles ML in-house de scoring de risque, reentraines sur l'historique de sinistres.", "Croissance du chiffre d'affaires +29% et resultat net 40,3 M$ en 2025 (contre 30,9 M en 2024).", "Preuve A, statut confirme."],
+  "description": "Root fait de la conduite reelle sa variable de tarification principale. A l'ouverture d'un devis, l'application propose un test drive de deux a quatre semaines pendant lequel les capteurs du smartphone mesurent le freinage, la regularite, les virages, l'heure de conduite et l'attention au volant. Ces donnees alimentent un modele de machine learning qui estime le risque individuel et fixe le prix, la ou un assureur classique s'appuie surtout sur l'age, le code postal ou le score de credit. Root decrit cette mesure comme le predicteur le plus puissant des sinistres et la variable qui pese le plus dans son modele de souscription. La segmentation sert aussi a ecarter un groupe de conducteurs juge trop risque, jusqu'a deux fois plus expose aux accidents que la cible moyenne. En 2025, la societe publie des resultats annuels records avec 29% de croissance du chiffre d'affaires et environ 40 millions de dollars de resultat net (40,3 millions contre 30,9 millions en 2024), signe que le modele pilote par la donnee tient sa promesse economique.",
+  "resultats": [
+    {
+      "metrique": "Croissance du chiffre d'affaires 2025",
+      "valeur": "+29%",
+      "citation_exacte": "Record 2025 Results with 29% Revenue Growth",
+      "source_ref": "S1"
+    },
+    {
+      "metrique": "Resultat net 2025, contre 30,9 M en 2024",
+      "valeur": "40,3 M$",
+      "citation_exacte": "net profit of $40.3 million in 2025 and $30.9 million in 2024",
+      "source_ref": "S3"
+    },
+    {
+      "metrique": "Plus d'accidents que la cible moyenne, pour le segment ecarte",
+      "valeur": "jusqu'a 2x",
+      "citation_exacte": "up to two times more likely to get in an accident than our average targeted customer",
+      "source_ref": "S3"
+    }
+  ],
+  "niveau_preuve": {
+    "niveau": "A",
+    "justification": "Resultats financiers 2025 publies par Root, Inc. (communique de resultats et rapport annuel Form 10-K depose aupres de la SEC). La description du modele telematique et de la segmentation vient du 10-K, source primaire non interpretee."
+  },
+  "dates": {
+    "lancement": "2015-2016 (assureur auto app-first fonde sur la telematique), en amelioration continue",
+    "derniere_confirmation_activite": "Resultats du quatrieme trimestre et de l'exercice 2025 publies en fevrier 2026",
+    "verifie_le": "2026-07-11",
+    "revoir_apres": "2027-01-11"
+  },
+  "statut_vivant": {
+    "statut": "confirme",
+    "note": "Modele coeur de metier de Root, documente dans le Form 10-K et le communique de resultats 2025, avec un retour a la rentabilite."
+  },
+  "sources": [
+    {
+      "ref": "S1",
+      "type": "document_officiel_sec",
+      "fiabilite": "T1_primaire",
+      "titre": "Root, Inc. Announces 2025 Fourth Quarter and Full Year Results",
+      "url": "https://www.globenewswire.com/news-release/2026/02/25/3245047/22064/en/Root-Inc-Announces-2025-Fourth-Quarter-and-Full-Year-Results.html",
+      "date_publication": "2026-02-25",
+      "consulte_le": "2026-07-11"
+    },
+    {
+      "ref": "S2",
+      "type": "blog_officiel",
+      "fiabilite": "T1_primaire",
+      "titre": "What is telematics technology - Root Insurance",
+      "url": "https://www.joinroot.com/car-insurance/telematics/",
+      "date_publication": "2025",
+      "consulte_le": "2026-07-11"
+    },
+    {
+      "ref": "S3",
+      "type": "document_officiel_sec",
+      "fiabilite": "T1_primaire",
+      "titre": "Root, Inc. Files Annual Report (Form 10-K) - telematics-driven auto insurance model",
+      "url": "https://www.stocktitan.net/sec-filings/ROOT/10-k-root-inc-files-annual-report-8dceeeffac16.html",
+      "date_publication": "2026",
+      "consulte_le": "2026-07-11"
+    }
+  ],
+  "fonctionnement_operationnel": {
+    "cadence": "Collecte telematique sur un test drive de deux a quatre semaines par nouveau client, puis reentrainement continu des modeles de risque a mesure que les sinistres remontent.",
+    "opere_par": "Equipes data science et actuariat de Root ; l'application capte la donnee, les modeles fixent le prix, l'humain intervient sur la conformite et les cas limites.",
+    "signal_pilote": "Le comportement de conduite mesure (freinage, regularite, attention, heure). Si la captation capteur se degrade ou n'est pas representative, le scoring et donc le prix perdent en fiabilite.",
+    "etapes": [
+      {
+        "etape": "Test drive telematique",
+        "detail": "Le prospect roule deux a quatre semaines avec l'app qui mesure sa conduite via les capteurs du smartphone.",
+        "acteur": "client et IA"
+      },
+      {
+        "etape": "Scoring et tarification",
+        "detail": "Le modele de machine learning estime le risque individuel et calcule un prix personnalise.",
+        "acteur": "IA"
+      },
+      {
+        "etape": "Segmentation et selection",
+        "detail": "La segmentation ecarte les profils juges trop risques et cible les conducteurs prudents avec un tarif competitif.",
+        "acteur": "IA et actuariat"
+      },
+      {
+        "etape": "Suivi et reajustement",
+        "detail": "Les issues de sinistres nourrissent le reentrainement des modeles et l'ajustement des tarifs.",
+        "acteur": "equipe data"
+      }
+    ]
+  },
+  "schema_flow": {
+    "statut": "documente",
+    "noeuds": [
+      {
+        "id": "app",
+        "role_generique": "site_app",
+        "label": "Application Root (test drive telematique)"
+      },
+      {
+        "id": "capteurs",
+        "role_generique": "data_source",
+        "label": "Donnees capteurs smartphone (conduite)"
+      },
+      {
+        "id": "modele",
+        "role_generique": "modele_ia",
+        "label": "Modele de scoring de risque et de tarification"
+      },
+      {
+        "id": "sinistres",
+        "role_generique": "data_source",
+        "label": "Historique des sinistres"
+      },
+      {
+        "id": "client",
+        "role_generique": "humain",
+        "label": "Prospect / assure"
+      }
+    ],
+    "liens": [
+      [
+        "client",
+        "app",
+        "ouverture du devis et test drive"
+      ],
+      [
+        "app",
+        "capteurs",
+        "captation de la conduite"
+      ],
+      [
+        "capteurs",
+        "modele",
+        "variables de risque"
+      ],
+      [
+        "modele",
+        "client",
+        "prix personnalise"
+      ],
+      [
+        "sinistres",
+        "modele",
+        "reentrainement (boucle)"
+      ]
+    ]
+  },
+  "replication": {
+    "statut_epistemique": "infere",
+    "prerequis_data": [
+      "Donnees telematiques de conduite (capteurs mobiles ou boitier)",
+      "Historique de sinistres avec issue et cout",
+      "Consentement explicite a la captation"
+    ],
+    "prerequis_orga": [
+      "Agrement d'assureur ou de MGA",
+      "Fonction actuarielle pour valider les modeles",
+      "Cadre de conformite pour la decision automatisee et le profilage (RGPD, AI Act)"
+    ],
+    "stack_possible": [
+      "Plateforme et SDK telematique custom (voie Root)",
+      "SDK telematique tiers + modele de scoring interne",
+      "solutions insurtech de tarification comportementale"
+    ],
+    "premiere_etape": "Lancer un programme telematique optionnel (pay-how-you-drive) sur un segment volontaire avant d'en faire la variable de tarification principale.",
+    "playbook": [
+      {
+        "action": "Cadrer avec l'actuariat et la conformite : variables autorisees, consentement a la captation, regime de la decision automatisee (RGPD art. 22 en UE).",
+        "livrable": "Dossier de conformite et perimetre de variables valide."
+      },
+      {
+        "action": "Mettre en place la captation telematique (SDK tiers ou maison) sur un programme volontaire pay-how-you-drive.",
+        "livrable": "Application qui collecte des trajets fiables sur un segment pilote."
+      },
+      {
+        "action": "Entrainer le modele de scoring sur conduite + historique de sinistres et le backtester avec l'actuariat.",
+        "livrable": "Modele valide avec lift predictif documente face aux variables classiques."
+      },
+      {
+        "action": "Lancer la tarification comportementale en option (rabais au bon conducteur) et passer l'homologation reglementaire du produit.",
+        "livrable": "Produit pilote approuve et commercialise."
+      },
+      {
+        "action": "Monter progressivement le poids de la variable telematique dans la tarification principale, en suivant le ratio combine.",
+        "livrable": "Portefeuille tarife par la conduite avec suivi de rentabilite technique."
+      }
+    ],
+    "equipe": "2-4 data scientists + actuaires + 1 PM application mobile + conformite / juridique."
+  },
+  "seo": {
+    "slug": "root-tarification-telematique-ia-2025",
+    "title": "Root : tarification auto pilotee par la telematique IA - resultats 2025 records, +29% de CA (2025)",
+    "meta_description": "Root fixe ses prix auto a partir de la conduite mesuree par smartphone. Modele telematique IA, +29% de CA et 40,3 M$ de resultat net en 2025.",
+    "resume_citable": "Root fait du comportement de conduite mesure par smartphone la variable principale de sa tarification auto ; en 2025 l'assureur app-first publie une croissance de 29% de son chiffre d'affaires et 40,3 millions de dollars de resultat net.",
+    "faq": [
+      {
+        "q": "Comment Root fixe-t-il le prix d'une assurance auto ?",
+        "a": "L'application Root mesure la conduite reelle du prospect sur un test drive de deux a quatre semaines (freinage, regularite, attention, heure) et un modele de machine learning en deduit le risque puis le prix, plutot que de s'appuyer surtout sur l'age ou le code postal."
+      },
+      {
+        "q": "Le modele telematique de Root est-il rentable ?",
+        "a": "En 2025 Root publie des resultats annuels records avec 29% de croissance du chiffre d'affaires et environ 40 millions de dollars de resultat net, contre 30,9 millions en 2024."
+      }
+    ]
+  },
+  "logo_domain": "joinroot.com"
+}

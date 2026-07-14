@@ -1,0 +1,309 @@
+{
+  "id": "lidl-lidlize-genai-2025",
+  "type_fiche": "succes",
+  "marque": "Lidl",
+  "groupe": "Schwarz Group",
+  "industrie": "retail_ecom",
+  "marches_deploiement": [
+    "France"
+  ],
+  "transposable_ue": {
+    "flag": "oui",
+    "note": "Cas deja mene dans l'UE (Lidl France). Le dispositif a ete construit avec un souci explicite de conformite : modele Bria entraine sur des jeux de donnees licencies, tracabilite de chaque asset genere vers sa source, moderation de contenu integree. Repliquer suppose une base legale RGPD pour les images soumises par les utilisateurs et une vigilance AI Act sur le contenu genere."
+  },
+  "metier": "marketing / brand / social",
+  "logo_domain": "lidl.com",
+  "intervenants": [
+    {
+      "nom": "Christophe Sennet",
+      "role": "Technical director, Marcel",
+      "source_ref": "S1"
+    }
+  ],
+  "agences": [
+    {
+      "nom": "Marcel (Publicis Groupe)",
+      "role": "Agence creative, conception de la campagne et de l'automatisation des prompts",
+      "source_ref": "S1"
+    },
+    {
+      "nom": "Bria",
+      "role": "Fournisseur du modele de generation d'images, entraine sur le langage visuel de Lidl",
+      "source_ref": "S1"
+    }
+  ],
+  "axes": {
+    "levier": "acquisition",
+    "touchpoints": [
+      "app web Lidlize",
+      "TikTok",
+      "galerie communautaire de votes"
+    ],
+    "etape_parcours": "decouverte",
+    "famille": "generation",
+    "pattern": "campagne genAI participative : generateur d'images UGC dans la palette de marque",
+    "type_ia": [
+      "generation d'images (diffusion)",
+      "LLM pour interpretation d'intention",
+      "NLP pour moderation de contenu"
+    ],
+    "plateforme_stack": [
+      "Bria (modele visuel fine-tune)",
+      "OpenAI (intention utilisateur)",
+      "spaCy (regles de contenu)",
+      "AWS"
+    ],
+    "objectif_metrique": [
+      "participation",
+      "volume de creations",
+      "reach organique",
+      "engagement social"
+    ]
+  },
+  "implementation": "custom",
+  "objectif_business": "Faire vivre la marque Lidl aupres du grand public en le laissant creer lui-meme des objets a l'identite visuelle de l'enseigne, avec une mecanique virale : la creation la plus aimee est fabriquee et vendue pour de vrai.",
+  "points_cles": ["App genAI Lidlize laissant le public creer des objets dans la palette de marque Lidl.", "Modele Bria fine-tune, LLM OpenAI pour l'intention, spaCy pour la moderation, sur AWS.", "1,7 million de visuels et plus d'1 million de participants en 3 semaines.", "Preuve B, statut signaux mitiges : campagne ponctuelle primee au D&AD 2025."],
+  "description": "Lidl France, avec l'agence Marcel (Publicis), a lance une app appelee Lidlize qui laisse n'importe qui generer un visuel dans la palette rouge, bleu et jaune de la marque. L'utilisateur tape le nom d'un objet, une voiture, des baskets, une statuette pour animal, sans aucune competence en prompt engineering. Derriere, un LLM d'OpenAI interprete l'intention et compose un prompt structure, spaCy applique les regles de contenu autorise, et un modele de Bria entraine sur le langage visuel de Lidl produit l'image pour qu'elle reste reconnaissable comme du Lidl quel que soit l'objet demande. Les creations etaient exposees dans une galerie publique ou la communaute votait : la plus aimee devait etre reellement fabriquee et vendue par l'enseigne, ce qui donnait la mecanique d'incitation. Le systeme tourne sur AWS, avec une entree multilingue (saisie francaise traduite) et un temps de generation ramene de 8 a 2 secondes pour tenir la charge.",
+  "resultats": [
+    {
+      "metrique": "Visuels uniques generes en 3 semaines",
+      "valeur": "1,7 million",
+      "citation_exacte": "users created over 1.7 million unique visuals",
+      "source_ref": "S1"
+    },
+    {
+      "metrique": "Pic de charge en requetes d'images par minute",
+      "valeur": "1000+ req/min",
+      "citation_exacte": "image requests peaked at over 1,000 per minute",
+      "source_ref": "S1"
+    },
+    {
+      "metrique": "Temps de generation",
+      "valeur": "8 s ramene a 2 s",
+      "citation_exacte": "reduced from 8 seconds to 2 seconds",
+      "source_ref": "S1"
+    },
+    {
+      "metrique": "Participants",
+      "valeur": "plus d'1 million",
+      "citation_exacte": "Over one million people participated, generating more than 2 million products",
+      "source_ref": "S2"
+    }
+  ],
+  "niveau_preuve": {
+    "niveau": "B",
+    "justification": "Etude de cas du vendor Bria chiffree, plus presse etablie (PYMNTS) citant nommement Lidl et Marcel, plus fiche d'archive officielle D&AD confirmant l'echelle de participation. Sources concordantes sur les memes ordres de grandeur. Pas de niveau A : aucun resultat financier ni chiffre d'affaires attribue."
+  },
+  "dates": {
+    "lancement": "2025 (campagne France, environ 3 semaines, couverte en juin 2025)",
+    "derniere_confirmation_activite": "2025 (Wood Pencil D&AD 2025 pour la campagne)",
+    "verifie_le": "2026-07-12",
+    "revoir_apres": "2027-01-12"
+  },
+  "statut_vivant": {
+    "statut": "signaux_mitiges",
+    "note": "Campagne ponctuelle, pas un deploiement pereenne : l'app a tourne environ trois semaines en 2025 puis la campagne s'est cloturee. Elle passe le filtre par le volume et la viralite documentes (1,7 M de visuels, 1 M+ de participants, pics >1000 requetes/min) et par la reconnaissance D&AD 2025. Le pattern (generateur genAI dans la palette de marque, mecanique de vote) reste rejouable mais ce cas precis n'est plus en ligne."
+  },
+  "sources": [
+    {
+      "ref": "S1",
+      "type": "presse",
+      "fiabilite": "T3_presse_etablie",
+      "titre": "How Lidl Used GenAI to Fuel a Viral Grocery Marketing Campaign",
+      "url": "https://www.pymnts.com/news/artificial-intelligence/2025/how-lidl-used-genai-to-fuel-a-viral-grocery-marketing-campaign/",
+      "date_publication": "2025-06-03",
+      "consulte_le": "2026-07-12"
+    },
+    {
+      "ref": "S2",
+      "type": "document_officiel_sec",
+      "fiabilite": "T1_primaire",
+      "titre": "Lidlize - D&AD Awards archive (Wood Pencil, Creator Content, 2025)",
+      "url": "https://www.dandad.org/work/d-ad-awards-archive/lidlize",
+      "date_publication": "2025",
+      "consulte_le": "2026-07-12"
+    },
+    {
+      "ref": "S3",
+      "type": "customer_story_plateforme",
+      "fiabilite": "T2_officiel_interesse",
+      "titre": "Case Study: Personalized AI Marketing Campaign - Lidl (Bria)",
+      "url": "https://pages.bria.ai/hubfs/case_study_Lidl.pdf",
+      "consulte_le": "2026-07-12"
+    },
+    {
+      "ref": "S4",
+      "type": "presse",
+      "fiabilite": "T4_secondaire",
+      "titre": "How Lidl Went Viral with 1.7 Million AI-Generated Products",
+      "url": "https://influencermarketinghub.com/lidl-went-viral-ai-generated-products/",
+      "date_publication": "2025-06-16",
+      "consulte_le": "2026-07-12"
+    }
+  ],
+  "fonctionnement_operationnel": {
+    "cadence": "Temps reel pendant la fenetre de campagne (environ 3 semaines), generation a la demande de chaque utilisateur",
+    "opere_par": "Agence creative (Marcel) plus l'equipe marque Lidl France, sur une infra cloud auto-scalee",
+    "signal_pilote": "L'intention de l'utilisateur (le mot ou l'objet saisi) : c'est ce que le LLM transforme en prompt structure. Si l'interpretation d'intention ou la moderation lachent, on genere du hors-charte ou du contenu interdit, et l'image ne ressemble plus a du Lidl.",
+    "etapes": [
+      {
+        "etape": "Saisie libre de l'utilisateur",
+        "detail": "L'utilisateur tape le nom d'un objet dans l'app, sans prompt engineering, en francais.",
+        "acteur": "client / grand public"
+      },
+      {
+        "etape": "Interpretation et structuration du prompt",
+        "detail": "Un LLM d'OpenAI comprend l'intention et compose un prompt structure standardise ; spaCy filtre le contenu autorise.",
+        "acteur": "IA"
+      },
+      {
+        "etape": "Generation dans le langage visuel Lidl",
+        "detail": "Le modele Bria fine-tune produit l'image dans la palette et le style de la marque, en environ 2 secondes.",
+        "acteur": "IA"
+      },
+      {
+        "etape": "Exposition et vote communautaire",
+        "detail": "La creation entre dans une galerie publique ou la communaute vote ; le visuel le plus aime est destine a etre fabrique et vendu.",
+        "acteur": "client / equipe marque"
+      }
+    ]
+  },
+  "media": {
+    "kind": "video",
+    "url": "https://www.youtube.com/watch?v=mba6sPCSX_8",
+    "source": "couverture",
+    "titre": "Lidl - Lidlize (case study)"
+  },
+  "schema_flow": {
+    "statut": "documente",
+    "noeuds": [
+      {
+        "id": "user",
+        "role_generique": "humain",
+        "label": "Saisie libre de l'utilisateur (nom d'objet)"
+      },
+      {
+        "id": "llm",
+        "role_generique": "modele_ia",
+        "label": "Interpretation d'intention et prompt structure",
+        "outil_documente": "OpenAI"
+      },
+      {
+        "id": "mod",
+        "role_generique": "modele_ia",
+        "label": "Regles de contenu autorise",
+        "outil_documente": "spaCy"
+      },
+      {
+        "id": "bria",
+        "role_generique": "modele_ia",
+        "label": "Generation image dans le style Lidl",
+        "outil_documente": "Bria (fine-tune)"
+      },
+      {
+        "id": "app",
+        "role_generique": "site_app",
+        "label": "App Lidlize et galerie de votes",
+        "outil_documente": "AWS"
+      },
+      {
+        "id": "vote",
+        "role_generique": "humain",
+        "label": "Vote communautaire ; gagnant fabrique en vrai"
+      }
+    ],
+    "liens": [
+      [
+        "user",
+        "llm"
+      ],
+      [
+        "llm",
+        "mod"
+      ],
+      [
+        "mod",
+        "bria"
+      ],
+      [
+        "bria",
+        "app"
+      ],
+      [
+        "app",
+        "vote"
+      ],
+      [
+        "vote",
+        "app",
+        "boucle virale : le plus aime devient produit"
+      ]
+    ]
+  },
+  "stack_technique": [
+    {
+      "nom": "Bria",
+      "categorie": "llm",
+      "detail": "Modele de generation d'images fine-tune sur le langage visuel de Lidl",
+      "url": "https://bria.ai"
+    },
+    {
+      "nom": "OpenAI",
+      "categorie": "llm",
+      "detail": "Interpretation de l'intention utilisateur et generation du prompt structure"
+    },
+    {
+      "nom": "spaCy",
+      "categorie": "outil",
+      "detail": "NLP open source pour l'application des regles de contenu autorise"
+    },
+    {
+      "nom": "AWS",
+      "categorie": "infra",
+      "detail": "Hebergement et auto-scaling pour tenir les pics de charge"
+    }
+  ],
+  "replication": {
+    "statut_epistemique": "infere",
+    "prerequis_data": [
+      "Un langage visuel de marque suffisamment codifie (palette, formes, style) pour fine-tuner un modele de generation",
+      "Des jeux de donnees d'entrainement licencies, pour eviter le risque de contenu non source",
+      "Des regles explicites de contenu autorise a traduire en filtres de moderation"
+    ],
+    "prerequis_orga": [
+      "Une agence creative ou une equipe capable d'orchestrer LLM d'intention, moderation et modele image",
+      "Une mecanique d'incitation reelle cote enseigne (ici, fabriquer le produit gagnant) pour declencher la viralite",
+      "Une infra capable d'absorber des pics de trafic soudains (auto-scaling)",
+      "Une revue juridique sur les images soumises et generees (RGPD, droit a l'image, AI Act)"
+    ],
+    "stack_possible": [
+      "Modele de generation d'images fine-tunable sur une charte (type Bria)",
+      "LLM pour transformer une saisie libre en prompt structure",
+      "Bibliotheque NLP pour la moderation (type spaCy)",
+      "Cloud avec auto-scaling",
+      "Galerie web avec systeme de votes"
+    ],
+    "equipe": "Un directeur de creation cote agence, un profil technique pour brancher LLM d'intention, moderation et modele image, un data/MLOps pour le fine-tune et la charge, un juridique pour le contenu.",
+    "premiere_etape": "Verifier qu'on peut fine-tuner un modele de generation sur la charte de marque avec des donnees licenciees : c'est ce qui rend chaque image reconnaissable et defendable juridiquement."
+  },
+  "seo": {
+    "slug": "lidl-lidlize-genai-2025",
+    "title": "Lidl : campagne genAI Lidlize - 1,7 M de visuels en 3 semaines (2025)",
+    "meta_description": "Lidl France et l'agence Marcel ont lance Lidlize, une app genAI generant des objets dans la palette de la marque : 1,7 M de visuels et 1 M+ de participants en 3 semaines.",
+    "resume_citable": "En 2025, Lidl France et l'agence Marcel (Publicis) ont lance Lidlize, une app genAI (modele Bria fine-tune plus OpenAI et spaCy) qui a genere plus d'1,7 million de visuels de marque en trois semaines, avec plus d'un million de participants et des pics au-dela de 1000 requetes d'images par minute.",
+    "faq": [
+      {
+        "q": "Quelle IA la campagne Lidlize a-t-elle utilisee ?",
+        "a": "Un modele de generation d'images de Bria fine-tune sur le langage visuel de Lidl, couple a un LLM d'OpenAI pour interpreter l'intention de l'utilisateur et a spaCy pour la moderation de contenu, le tout heberge sur AWS."
+      },
+      {
+        "q": "Quelle etait la mecanique virale ?",
+        "a": "L'utilisateur tapait le nom d'un objet et obtenait un visuel a l'identite de Lidl ; les creations etaient exposees dans une galerie publique et la plus aimee devait etre fabriquee et vendue pour de vrai."
+      },
+      {
+        "q": "Est-ce un deploiement permanent ?",
+        "a": "Non. C'est une campagne ponctuelle qui a tourne environ trois semaines en 2025 ; elle est notable par son echelle (1,7 M de visuels, 1 M+ de participants) et un Wood Pencil D&AD 2025, pas par une mise en production durable."
+      }
+    ]
+  }
+}

@@ -1,0 +1,297 @@
+{
+  "id": "hims-hers-medmatch-personnalisation-2025",
+  "type_fiche": "succes",
+  "marque": "Hims & Hers",
+  "groupe": "Hims & Hers Health, Inc.",
+  "industrie": "sante_pharma",
+  "marches_deploiement": [
+    "Etats-Unis"
+  ],
+  "transposable_ue": {
+    "flag": "oui_avec_adaptations",
+    "note": "MedMatch route un patient vers une formulation de traitement a partir de donnees d'intake sante. En UE, ces donnees relevent de l'article 9 RGPD (donnees de sante), base legale et consentement explicite requis, et l'acte de prescription reste encadre par le droit medical de chaque pays. La telesante D2C n'a pas partout le meme cadre qu'aux Etats-Unis. Le routage algorithmique d'un traitement peut aussi tomber sous les obligations de transparence de l'AI Act selon l'usage."
+  },
+  "metier": "marketing / e-commerce / telesante",
+  "marque_linkedin": "https://www.linkedin.com/company/hims-inc/",
+  "intervenants": [
+    {
+      "nom": "Andrew Dudum",
+      "role": "Co-fondateur et Chief Executive Officer",
+      "source_ref": "S2"
+    },
+    {
+      "nom": "Yemi Okupe",
+      "role": "Chief Financial Officer",
+      "source_ref": "S2"
+    },
+    {
+      "nom": "Mo Elshenawy",
+      "role": "Chief Technology Officer (nomme en 2025)",
+      "source_ref": "S3"
+    }
+  ],
+  "axes": {
+    "levier": "activation_conversion",
+    "touchpoints": [
+      "plateforme web et application Hims & Hers",
+      "questionnaire d'intake",
+      "recommandation de traitement personnalise"
+    ],
+    "etape_parcours": "consideration",
+    "famille": "personnalisation",
+    "pattern": "routage de traitement personnalise par IA sur donnees d'intake (MedMatch)",
+    "type_ia": [
+      "machine learning",
+      "systeme de recommandation",
+      "traitement de donnees d'intake"
+    ],
+    "plateforme_stack": [
+      "custom/in-house (MedMatch)"
+    ],
+    "objectif_metrique": [
+      "abonnes utilisant des solutions personnalisees",
+      "conversion en abonnement",
+      "revenu"
+    ]
+  },
+  "implementation": "custom",
+  "objectif_business": "Convertir un visiteur qui remplit un questionnaire en abonne d'un traitement adapte, en poussant la bonne formulation et le bon parcours de soin plutot qu'un catalogue generique, pour augmenter la conversion et ancrer l'abonnement dans la duree.",
+  "points_cles": ["Routage de traitement personnalise par IA sur donnees d'intake, avec validation clinique.", "MedMatch, moteur de machine learning proprietaire in-house, lance en 2023.", "Plus de 1,4 million d'abonnes en solutions personnalisees sur 2,4 millions, CA T1 2025 de 586 M$ (+111%).", "Niveau de preuve A, statut vivant confirme."],
+  "description": "MedMatch, lance en 2023, analyse des donnees d'intake pour orienter chaque patient vers le parcours de soin et la formulation qui lui conviennent. La personnalisation est devenue le socle de l'offre : au premier trimestre 2025, sur pres de 2,4 millions d'abonnes, plus de 1,4 million utilisaient des solutions personnalisees. La direction decrit un axe strategique d'approfondissement de la personnalisation et l'a associe a l'arrivee d'un directeur technique charge de renforcer diagnostic et automatisation par IA. Le chiffre d'affaires du T1 2025 a atteint 586 millions de dollars, en hausse de 111% sur un an.",
+  "resultats": [
+    {
+      "metrique": "Abonnes utilisant des solutions personnalisees (T1 2025)",
+      "valeur": "plus de 1,4 million",
+      "citation_exacte": "over 1.4 million utilizing personalized solutions",
+      "source_ref": "S2"
+    },
+    {
+      "metrique": "Base d'abonnes totale au T1 2025, en hausse de 38% sur un an",
+      "valeur": "pres de 2,4 millions",
+      "citation_exacte": "the subscriber base grew to nearly 2.4 million",
+      "source_ref": "S2"
+    },
+    {
+      "metrique": "Chiffre d'affaires T1 2025, en hausse de 111% sur un an",
+      "valeur": "586 M$",
+      "citation_exacte": "Revenue of $586.0 million, up 111%",
+      "source_ref": "S1"
+    },
+    {
+      "metrique": "Role de MedMatch dans le parcours",
+      "valeur": "routage des patients vers le bon parcours de soin",
+      "citation_exacte": "Tools like MedMatch use data to route patients to the right care pathways",
+      "source_ref": "S3"
+    }
+  ],
+  "niveau_preuve": {
+    "niveau": "A",
+    "justification": "Les volumes d'abonnes personnalises et le chiffre d'affaires sont publies dans les resultats financiers T1 2025 de Hims & Hers (communique officiel, societe cotee), source primaire concordante avec la couverture presse qui documente MedMatch. Chiffres de resultats = niveau A."
+  },
+  "dates": {
+    "lancement": "2023 (MedMatch)",
+    "derniere_confirmation_activite": "mai 2025 (resultats T1 2025 : 1,4 million d'abonnes en solutions personnalisees) ; personnalisation reaffirmee comme axe 2025-2030",
+    "verifie_le": "2026-07-11",
+    "revoir_apres": "2027-01-11"
+  },
+  "statut_vivant": {
+    "statut": "confirme",
+    "note": "La personnalisation est le pilier declare de la croissance de l'abonnement, chiffree trimestre apres trimestre et reaffirmee dans les objectifs long terme. Aucun signal de retrait."
+  },
+  "sources": [
+    {
+      "ref": "S1",
+      "type": "document_officiel_sec",
+      "fiabilite": "T1_primaire",
+      "titre": "Hims & Hers Health, Inc. Reports First Quarter 2025 Financial Results",
+      "url": "https://investors.hims.com/news/news-details/2025/Hims--Hers-Health-Inc--Reports-First-Quarter-2025-Financial-Results/",
+      "date_publication": "2025-05-05",
+      "consulte_le": "2026-07-11"
+    },
+    {
+      "ref": "S2",
+      "type": "presse",
+      "fiabilite": "T4_secondaire",
+      "titre": "Hims & Hers Health, Inc. Reports First Quarter 2025 Financial Results (StockTitan)",
+      "url": "https://www.stocktitan.net/news/HIMS/hims-hers-health-inc-reports-first-quarter-2025-financial-3y0fdmfgb0c7.html",
+      "date_publication": "2025-05-05",
+      "consulte_le": "2026-07-11"
+    },
+    {
+      "ref": "S3",
+      "type": "presse",
+      "fiabilite": "T4_secondaire",
+      "titre": "Hims & Hers Leads the Charge in AI-Powered Personalized Healthcare",
+      "url": "https://www.nasdaq.com/articles/hims-hers-leads-charge-ai-powered-personalized-healthcare",
+      "consulte_le": "2026-07-11"
+    }
+  ],
+  "fonctionnement_operationnel": {
+    "cadence": "Temps reel a chaque intake, ajustement continu au fil des renouvellements et des retours patients",
+    "opere_par": "Equipe produit et data science, en lien avec l'equipe clinique qui valide les prescriptions",
+    "signal_pilote": "Les reponses au questionnaire d'intake et l'historique de traitement. Sans donnees d'intake structurees et sans boucle de suivi clinique, le systeme retombe sur une offre standard et perd son interet de conversion.",
+    "etapes": [
+      {
+        "etape": "Recueil de l'intake",
+        "detail": "Le patient renseigne un questionnaire de sante et ses objectifs sur la plateforme.",
+        "acteur": "Client"
+      },
+      {
+        "etape": "Analyse et routage",
+        "detail": "MedMatch analyse les donnees pour proposer le parcours de soin et la formulation adaptes.",
+        "acteur": "IA"
+      },
+      {
+        "etape": "Validation clinique",
+        "detail": "Un praticien du reseau confirme ou ajuste la recommandation avant prescription.",
+        "acteur": "Equipe clinique"
+      },
+      {
+        "etape": "Abonnement et livraison",
+        "detail": "Le traitement personnalise est mis en abonnement et expedie.",
+        "acteur": "Plateforme"
+      },
+      {
+        "etape": "Suivi et ajustement",
+        "detail": "Les renouvellements, effets et retours patients alimentent l'ajustement des recommandations.",
+        "acteur": "Equipe data et clinique"
+      }
+    ]
+  },
+  "schema_flow": {
+    "statut": "documente",
+    "noeuds": [
+      {
+        "id": "intake",
+        "role_generique": "data_source",
+        "label": "Questionnaire d'intake sante"
+      },
+      {
+        "id": "match",
+        "role_generique": "modele_ia",
+        "label": "Moteur de routage de traitement",
+        "outil_documente": "MedMatch"
+      },
+      {
+        "id": "clinicien",
+        "role_generique": "humain",
+        "label": "Praticien du reseau"
+      },
+      {
+        "id": "app",
+        "role_generique": "site_app",
+        "label": "Plateforme Hims & Hers"
+      },
+      {
+        "id": "patient",
+        "role_generique": "humain",
+        "label": "Patient abonne"
+      }
+    ],
+    "liens": [
+      [
+        "intake",
+        "match"
+      ],
+      [
+        "match",
+        "clinicien",
+        "recommandation de traitement"
+      ],
+      [
+        "clinicien",
+        "app",
+        "prescription validee"
+      ],
+      [
+        "app",
+        "patient"
+      ],
+      [
+        "patient",
+        "intake",
+        "renouvellement et retours, boucle de suivi"
+      ]
+    ]
+  },
+  "stack_technique": [
+    {
+      "nom": "MedMatch",
+      "categorie": "outil",
+      "detail": "Moteur de machine learning proprietaire de Hims & Hers, lance en 2023, qui analyse les donnees d'intake pour router chaque patient vers le parcours de soin et la formulation adaptes ; les techniques exactes ne sont pas publiees",
+      "url": "https://www.hims.com"
+    },
+    {
+      "nom": "Plateforme Hims & Hers (web et app)",
+      "categorie": "plateforme",
+      "detail": "Porte le questionnaire d'intake, l'abonnement et la livraison des traitements personnalises",
+      "url": "https://www.hims.com"
+    },
+    {
+      "nom": "Workflow de validation clinique",
+      "categorie": "outil",
+      "detail": "Circuit in-house par lequel un praticien du reseau confirme ou ajuste chaque recommandation avant prescription",
+      "url": "https://www.hims.com"
+    }
+  ],
+  "replication": {
+    "statut_epistemique": "infere",
+    "prerequis_data": [
+      "questionnaire d'intake structure",
+      "historique de traitement first-party",
+      "boucle de suivi des resultats"
+    ],
+    "prerequis_orga": [
+      "reseau de praticiens pour valider les recommandations",
+      "cadre reglementaire de telesante",
+      "equipe data science interne"
+    ],
+    "stack_possible": [
+      "moteur de reco ou de scoring",
+      "cloud (AWS, GCP ou Azure)",
+      "plateforme d'abonnement",
+      "workflow de revue clinique"
+    ],
+    "premiere_etape": "Structurer un questionnaire d'intake exploitable par un moteur de recommandation et le relier a un workflow de validation clinique.",
+    "playbook": [
+      {
+        "action": "Structurer le questionnaire d'intake avec l'equipe clinique et definir le referentiel de parcours de soin et de formulations ; cadrer la conformite (donnees de sante, telesante, article 9 RGPD en UE).",
+        "livrable": "Intake structure et referentiel de parcours valides cliniquement et juridiquement"
+      },
+      {
+        "action": "Construire la premiere version du moteur de routage (regles puis scoring) et le workflow de validation par un praticien avant toute prescription.",
+        "livrable": "Moteur de recommandation relie au circuit de revue clinique"
+      },
+      {
+        "action": "Lancer un pilote sur une verticale avec un panel de praticiens, en comparant conversion et pertinence contre le parcours standard.",
+        "livrable": "Pilote en production avec taux d'ajustement des recommandations par les praticiens"
+      },
+      {
+        "action": "Brancher l'abonnement et la boucle de suivi : renouvellements, effets et retours patients alimentent l'ajustement du moteur.",
+        "livrable": "Boucle de suivi operante et retention mesuree"
+      },
+      {
+        "action": "Etendre a d'autres verticales et affiner le moteur sur l'historique accumule.",
+        "livrable": "Moteur multi-verticales avec bilan conversion / retention"
+      }
+    ],
+    "equipe": "2 data scientists + 1 PM + une equipe clinique de praticiens valideurs + juridique specialise sante"
+  },
+  "seo": {
+    "slug": "hims-hers-medmatch-personnalisation-2025",
+    "title": "Hims & Hers : traitement personnalise par IA (MedMatch) - 1,4 million d'abonnes (2025)",
+    "meta_description": "MedMatch route chaque patient Hims & Hers vers un traitement adapte. Au T1 2025, plus de 1,4 million d'abonnes sur 2,4 millions utilisaient des solutions personnalisees.",
+    "resume_citable": "Au premier trimestre 2025, Hims & Hers comptait plus de 1,4 million d'abonnes en solutions personnalisees sur pres de 2,4 millions, son moteur MedMatch routant chaque patient vers un traitement adapte, pour un chiffre d'affaires de 586 millions de dollars en hausse de 111%.",
+    "faq": [
+      {
+        "q": "Qu'est-ce que MedMatch ?",
+        "a": "Le moteur de personnalisation de Hims & Hers, lance en 2023, qui analyse les donnees d'intake d'un patient pour l'orienter vers le parcours de soin et la formulation adaptes, avant validation par un praticien."
+      },
+      {
+        "q": "Quelle part des abonnes est concernee ?",
+        "a": "Au premier trimestre 2025, plus de 1,4 million d'abonnes utilisaient des solutions personnalisees, sur une base de pres de 2,4 millions d'abonnes."
+      }
+    ]
+  },
+  "logo_domain": "hims.com"
+}

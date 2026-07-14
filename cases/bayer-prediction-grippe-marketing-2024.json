@@ -1,0 +1,290 @@
+{
+  "id": "bayer-prediction-grippe-marketing-2024",
+  "type_fiche": "succes",
+  "marque": "Bayer Consumer Health",
+  "groupe": "Bayer AG",
+  "industrie": "sante_pharma",
+  "marches_deploiement": [
+    "Australie",
+    "expansion mondiale prevue"
+  ],
+  "transposable_ue": {
+    "flag": "oui",
+    "note": "Le modele s'entraine sur des tendances de recherche agregees et des donnees ouvertes (meteo, climat), sans donnees de sante individuelles, ce qui limite l'exposition RGPD. L'usage (prevision de demande pour piloter le media saisonnier) est peu sensible au regard de l'AI Act. Le pattern se transpose directement en UE, sous reserve de disposer des donnees de tendances par marche."
+  },
+  "metier": "marketing (media et performance)",
+  "marque_linkedin": "https://www.linkedin.com/company/bayer/",
+  "intervenants": [
+    {
+      "nom": "Patricia Corsi",
+      "role": "Global Chief Marketing and Information Officer, Consumer Health Division, Bayer",
+      "source_ref": "S2"
+    }
+  ],
+  "agences": [
+    {
+      "nom": "Google Cloud",
+      "role": "Plateforme de machine learning pour le modele de prevision et publication de l'etude de cas",
+      "source_ref": "S1"
+    }
+  ],
+  "axes": {
+    "levier": "acquisition",
+    "touchpoints": [
+      "paid search (Google Ads)",
+      "site web produits",
+      "activation media saisonniere"
+    ],
+    "etape_parcours": "decouverte",
+    "famille": "prediction",
+    "pattern": "prevision de la demande par machine learning sur tendances de recherche pour piloter le media",
+    "type_ia": [
+      "machine learning",
+      "modele de prevision",
+      "series temporelles"
+    ],
+    "plateforme_stack": [
+      "Google Cloud (machine learning)",
+      "Google Trends",
+      "donnees meteo et climat open-source"
+    ],
+    "objectif_metrique": [
+      "taux de clic (CTR)",
+      "cout par clic",
+      "trafic site"
+    ]
+  },
+  "implementation": "hybride",
+  "stack_technique": [
+    {
+      "nom": "Google Cloud (machine learning)",
+      "categorie": "plateforme",
+      "detail": "Technologie ML sur laquelle le modele de prevision a ete construit ; la source ne precise pas le service exact (Vertex AI, BigQuery ML).",
+      "url": "https://cloud.google.com"
+    },
+    {
+      "nom": "Google Trends",
+      "categorie": "outil",
+      "detail": "Signal principal du modele : tendances de recherche rhume et grippe par region, croisees avec des donnees meteo et climat open-source.",
+      "url": "https://trends.google.com"
+    },
+    {
+      "nom": "Google Ads",
+      "categorie": "plateforme",
+      "detail": "Canal d'activation paid search declenche par les previsions, ou sont mesures CTR, cout par clic et trafic.",
+      "url": "https://ads.google.com"
+    }
+  ],
+  "objectif_business": "Prevoir les pics de recherche de produits contre le rhume et la grippe par region, pour donner aux equipes marketing le temps de planifier et d'activer les campagnes au bon moment, et servir la bonne offre a des consommateurs qui cherchent a soulager leurs symptomes.",
+  "points_cles": ["Modele ML de prevision des pics de recherche rhume et grippe par region.", "Construit sur Google Cloud avec Google Trends et donnees meteo/climat, active en paid search.", "Paid search : +85% de CTR, -33% de cout par clic, trafic x2,6 en glissement annuel.", "Preuve B, statut signaux mitiges (cas Australie, extension mondiale visee)."],
+  "description": "L'equipe Bayer Consumer Health d'Australie a construit debut 2022 un modele de prevision sur la technologie de machine learning de Google Cloud, en combinant les donnees Google Trends et des donnees externes ouvertes comme la meteo et le climat, pour anticiper les tendances de rhume et de grippe par region australienne. Ces previsions ont servi de declencheurs de marketing data-driven pour planifier et activer les campagnes media plus tot. Sur le paid search, Bayer rapporte une hausse de 85% du taux de clic d'une annee sur l'autre, une baisse de 33% du cout par clic, et un trafic vers son site multiplie par 2,6. Le projet s'est montre assez concluant pour que l'equipe vise une extension mondiale.",
+  "resultats": [
+    {
+      "metrique": "Taux de clic paid search (glissement annuel)",
+      "valeur": "+85%",
+      "citation_exacte": "an 85% increase in click through rates year-on-year",
+      "source_ref": "S1"
+    },
+    {
+      "metrique": "Cout par clic, en glissement annuel",
+      "valeur": "-33%",
+      "citation_exacte": "a 33% reduction in cost per click",
+      "source_ref": "S1"
+    },
+    {
+      "metrique": "Trafic vers le site, en glissement annuel",
+      "valeur": "x2,6",
+      "citation_exacte": "a 2.6X year-on-year increase in traffic to its website",
+      "source_ref": "S1"
+    }
+  ],
+  "niveau_preuve": {
+    "niveau": "B",
+    "justification": "Les resultats media (85% de CTR, 33% de cout par clic, 2,6x de trafic) sont documentes et chiffres par l'etude de cas Google (Think with Google), corroboree par une seconde source sur la strategie AI marketing de Bayer Consumer Health. Etude de cas plateforme chiffree = B."
+  },
+  "dates": {
+    "lancement": "debut 2022 (Australie)",
+    "derniere_confirmation_activite": "2024 (etude de cas Google publiee, resultats media chiffres, intention d'extension mondiale)",
+    "verifie_le": "2026-07-11",
+    "revoir_apres": "2027-01-11"
+  },
+  "statut_vivant": {
+    "statut": "signaux_mitiges",
+    "note": "Le cas australien est documente et chiffre, avec une intention d'extension mondiale. L'ampleur du deploiement hors Australie n'est pas re-sourcee avec des chiffres a jour ; le pattern (prevision de demande pour piloter le media) reste actif chez Bayer Consumer Health, qui investit par ailleurs dans l'IA marketing."
+  },
+  "sources": [
+    {
+      "ref": "S1",
+      "type": "customer_story_plateforme",
+      "fiabilite": "T2_officiel_interesse",
+      "titre": "Predicting demand through search trends (Bayer, Think with Google)",
+      "url": "https://www.thinkwithgoogle.com/intl/en-cee/marketing-strategies/automation/search-trends-demand-predictions-bayer/",
+      "consulte_le": "2026-07-11"
+    },
+    {
+      "ref": "S2",
+      "type": "presse",
+      "fiabilite": "T4_secondaire",
+      "titre": "Why Bayer Has Turned to AI to Transform Consumer Self-Care",
+      "url": "https://www.adweek.com/sponsored/why-bayer-has-turned-to-ai-to-transform-consumer-self-care/",
+      "consulte_le": "2026-07-11"
+    }
+  ],
+  "fonctionnement_operationnel": {
+    "cadence": "Reentrainement et prevision par saison, avec activation media a l'approche des pics anticipes",
+    "opere_par": "Equipe marketing et data de Bayer Consumer Health, avec la technologie de machine learning de Google Cloud",
+    "signal_pilote": "Les tendances de recherche par region croisees avec la meteo et le climat. Sans donnees de recherche a jour et sans historique par region, le modele perd sa capacite a anticiper les pics et l'avantage de timing disparait.",
+    "etapes": [
+      {
+        "etape": "Collecte des signaux",
+        "detail": "Donnees Google Trends et donnees externes ouvertes (meteo, climat) sont rassemblees par region.",
+        "acteur": "Equipe data"
+      },
+      {
+        "etape": "Prevision",
+        "detail": "Le modele de machine learning anticipe les pics de recherche rhume et grippe par region.",
+        "acteur": "IA"
+      },
+      {
+        "etape": "Planification media",
+        "detail": "Le marketing utilise le delai gagne pour planifier et calibrer les campagnes.",
+        "acteur": "Marketing"
+      },
+      {
+        "etape": "Activation",
+        "detail": "Les campagnes paid search sont declenchees au bon moment sur les regions concernees.",
+        "acteur": "Marketing"
+      },
+      {
+        "etape": "Mesure",
+        "detail": "CTR, cout par clic et trafic sont mesures et compares a l'annee precedente.",
+        "acteur": "Equipe data et marketing"
+      }
+    ]
+  },
+  "schema_flow": {
+    "statut": "documente",
+    "noeuds": [
+      {
+        "id": "trends",
+        "role_generique": "data_source",
+        "label": "Google Trends et donnees meteo/climat"
+      },
+      {
+        "id": "ml",
+        "role_generique": "modele_ia",
+        "label": "Modele de prevision de la demande",
+        "outil_documente": "Google Cloud (machine learning)"
+      },
+      {
+        "id": "marketing",
+        "role_generique": "humain",
+        "label": "Equipe marketing Bayer Consumer Health"
+      },
+      {
+        "id": "paid",
+        "role_generique": "paid_platform",
+        "label": "Paid search",
+        "outil_documente": "Google Ads"
+      },
+      {
+        "id": "site",
+        "role_generique": "site_app",
+        "label": "Site produits Bayer"
+      },
+      {
+        "id": "conso",
+        "role_generique": "humain",
+        "label": "Consommateur"
+      }
+    ],
+    "liens": [
+      [
+        "trends",
+        "ml"
+      ],
+      [
+        "ml",
+        "marketing",
+        "prevision des pics par region"
+      ],
+      [
+        "marketing",
+        "paid",
+        "planification et activation"
+      ],
+      [
+        "paid",
+        "site"
+      ],
+      [
+        "site",
+        "conso"
+      ],
+      [
+        "conso",
+        "trends",
+        "recherches, boucle de signal"
+      ]
+    ]
+  },
+  "replication": {
+    "statut_epistemique": "infere",
+    "prerequis_data": [
+      "donnees de tendances de recherche par region",
+      "donnees externes ouvertes (meteo, climat)",
+      "historique de performance media"
+    ],
+    "prerequis_orga": [
+      "equipe data marketing",
+      "acces a une plateforme de ML",
+      "coordination avec l'activation media"
+    ],
+    "stack_possible": [
+      "plateforme de ML (Google Cloud, Vertex AI, BigQuery ML ou equivalent)",
+      "Google Trends ou source de tendances",
+      "plateforme paid search"
+    ],
+    "premiere_etape": "Constituer un jeu de donnees de tendances de recherche par region croise avec la meteo, et le tester sur une saison contre l'historique media.",
+    "playbook": [
+      {
+        "action": "Rassembler l'historique de tendances de recherche par region et les donnees meteo ouvertes, puis les aligner avec l'historique de performance media.",
+        "livrable": "Dataset regional couvrant 2-3 saisons."
+      },
+      {
+        "action": "Entrainer un modele de prevision des pics de recherche par region et le backtester contre la saison precedente.",
+        "livrable": "Modele avec erreur de prevision mesuree sur l'historique."
+      },
+      {
+        "action": "Definir les seuils de declenchement et le processus de planification media anticipee avec l'equipe activation.",
+        "livrable": "Calendrier d'activation pilote par les previsions."
+      },
+      {
+        "action": "Activer sur une saison test dans 1-2 regions et comparer CTR, cout par clic et trafic a l'annee precedente.",
+        "livrable": "Bilan de saison chiffre contre l'historique."
+      },
+      {
+        "action": "Etendre aux autres regions et automatiser le rafraichissement des previsions a chaque saison.",
+        "livrable": "Pipeline de prevision saisonnier en production."
+      }
+    ],
+    "equipe": "1 data scientist + 1 media buyer search + 1 responsable marketing pour arbitrer le calendrier d'activation."
+  },
+  "seo": {
+    "slug": "bayer-prediction-grippe-marketing-2024",
+    "title": "Bayer : prevision de la demande grippe par IA - +85% de CTR, trafic x2,6 (2024)",
+    "meta_description": "Bayer Consumer Health prevoit les pics de rhume et grippe par ML Google Cloud pour piloter son media. Resultat paid search : +85% de CTR, -33% de cout par clic, trafic x2,6.",
+    "resume_citable": "Bayer Consumer Health a construit sur Google Cloud un modele qui prevoit les pics de recherche rhume et grippe par region, pilotant un paid search a +85% de taux de clic, -33% de cout par clic et un trafic multiplie par 2,6 en glissement annuel.",
+    "faq": [
+      {
+        "q": "Comment fonctionne le modele de prevision de Bayer ?",
+        "a": "Il combine les donnees Google Trends et des donnees ouvertes de meteo et climat sur la technologie de machine learning de Google Cloud pour anticiper les pics de recherche rhume et grippe par region, d'abord en Australie."
+      },
+      {
+        "q": "Quels resultats media le modele a-t-il permis ?",
+        "a": "Sur le paid search, une hausse de 85% du taux de clic d'une annee sur l'autre, une baisse de 33% du cout par clic et un trafic vers le site multiplie par 2,6."
+      }
+    ]
+  },
+  "logo_domain": "bayer.com"
+}

@@ -1,0 +1,288 @@
+{
+  "id": "peloton-iq-personalisation-bedrock-2025",
+  "type_fiche": "succes",
+  "marque": "Peloton",
+  "groupe": "Peloton Interactive, Inc.",
+  "industrie": "sport_fitness",
+  "marches_deploiement": [
+    "Etats-Unis et marches Peloton (equipements connectes et application mobile)"
+  ],
+  "transposable_ue": {
+    "flag": "oui_avec_adaptations",
+    "note": "Peloton IQ analyse des donnees biometriques et d'entrainement issues d'appareils connectes et de wearables tiers (Garmin, Fitbit, Apple Health). Sous RGPD, les donnees de sante sont des donnees de categorie particuliere (art. 9) : consentement explicite, minimisation et localisation du traitement. Amazon Bedrock est disponible en regions UE, ce qui rend le pattern transposable avec une base legale adaptee."
+  },
+  "metier": "marketing / produit (personnalisation et engagement membre)",
+  "marque_linkedin": "https://www.linkedin.com/company/peloton-interactive",
+  "agences": [
+    {
+      "nom": "Amazon Web Services (AWS)",
+      "role": "Fournisseur de la couche IA generative (Amazon Bedrock, SageMaker) sur laquelle tourne Peloton IQ",
+      "source_ref": "S1"
+    }
+  ],
+  "axes": {
+    "levier": "retention",
+    "touchpoints": [
+      "ecran des equipements Peloton (Bike, Row, Tread)",
+      "application mobile Peloton",
+      "plans d'entrainement hebdomadaires",
+      "insights et recommandations post-seance"
+    ],
+    "etape_parcours": "fidélité",
+    "famille": "personnalisation",
+    "pattern": "plans et recommandations d'entrainement personnalises par genAI a partir de donnees d'usage",
+    "type_ia": [
+      "grands modeles de langage",
+      "vision par ordinateur",
+      "generation d'insights personnalises"
+    ],
+    "plateforme_stack": [
+      "Amazon Bedrock",
+      "OpenAI GPT (raisonnement complexe)",
+      "Meta Llama 4 Scout (insights temps reel)",
+      "Amazon SageMaker (fine-tuning)"
+    ],
+    "objectif_metrique": [
+      "engagement et frequence d'entrainement",
+      "retention des membres",
+      "adoption des plans personnalises"
+    ]
+  },
+  "implementation": "hybride",
+  "stack_technique": [
+    {
+      "nom": "Amazon Bedrock",
+      "categorie": "plateforme",
+      "detail": "Plateforme genAI managee d'AWS sur laquelle tourne Peloton IQ, avec un workflow double : pre-generation batch mise en cache et generation temps reel.",
+      "url": "https://aws.amazon.com/bedrock/"
+    },
+    {
+      "nom": "OpenAI GPT",
+      "categorie": "llm",
+      "detail": "Modeles GPT d'OpenAI utilises pour le raisonnement complexe (construction des plans d'entrainement).",
+      "url": "https://openai.com"
+    },
+    {
+      "nom": "Meta Llama 4 Scout",
+      "categorie": "llm",
+      "detail": "Modele de Meta utilise pour les insights temps reel declenches par les actions du membre.",
+      "url": "https://www.llama.com"
+    },
+    {
+      "nom": "Amazon SageMaker",
+      "categorie": "plateforme",
+      "detail": "Service AWS utilise pour le fine-tuning des modeles sur les donnees Peloton.",
+      "url": "https://aws.amazon.com/sagemaker/"
+    },
+    {
+      "nom": "Integrations wearables (Garmin Connect, Fitbit, Apple Health)",
+      "categorie": "outil",
+      "detail": "Sources de donnees tierces qui enrichissent le contexte du membre au-dela des seances sur les equipements Peloton.",
+      "url": "https://www.onepeloton.com"
+    }
+  ],
+  "objectif_business": "Relancer l'engagement des membres en transformant leur historique d'entrainement en plans hebdomadaires et en recommandations personnalises, pour soutenir la frequence d'usage et la retention de l'abonnement.",
+  "points_cles": ["Plans d'entrainement hebdomadaires et insights personnalises par genAI (Peloton IQ).", "Tourne sur Amazon Bedrock, avec GPT d'OpenAI et Llama 4 Scout de Meta.", "Des millions d'insights par semaine pour plus de 6 millions de membres.", "Preuve B, statut confirme en production depuis octobre 2025."],
+  "description": "Peloton IQ est la couche d'IA et de vision par ordinateur lancee en octobre 2025 sur l'ensemble des equipements connectes Peloton et sur l'application mobile. Elle genere pour chaque membre un plan d'entrainement hebdomadaire editable, ajuste aux objectifs (force, poids, longevite), au niveau et aux preferences declarees. A chaque seance, les recommandations s'affinent, avec des cibles de performance calculees a partir de l'historique du membre et des donnees de wearables tiers (Garmin Connect, Fitbit, Apple Health). Les insights transforment les activites, sur et hors plateforme, en tendances de performance, recuperation et regularite. Le systeme tourne sur Amazon Bedrock, avec un workflow double : une pre-generation en batch mise en cache pour un affichage immediat, et une generation temps reel declenchee par les actions du membre. Peloton utilise les modeles GPT d'OpenAI pour le raisonnement complexe et Llama 4 Scout de Meta pour les insights temps reel, avec du fine-tuning sur SageMaker.",
+  "resultats": [
+    {
+      "metrique": "Insights personnalises Peloton IQ generes chaque semaine",
+      "valeur": "des millions",
+      "citation_exacte": "millions of Peloton IQ Insights per week",
+      "source_ref": "S1"
+    },
+    {
+      "metrique": "Base de membres servie",
+      "valeur": "6 millions+",
+      "citation_exacte": "over 6 million",
+      "source_ref": "S1"
+    },
+    {
+      "metrique": "Entrainements traites chaque mois",
+      "valeur": "pres de 50 millions",
+      "citation_exacte": "nearly 50 million",
+      "source_ref": "S1"
+    }
+  ],
+  "niveau_preuve": {
+    "niveau": "B",
+    "justification": "Etude de cas plateforme (AWS) chiffree sur l'architecture et le volume (millions d'insights hebdomadaires, 6 millions de membres, 50 millions d'entrainements mensuels), corroboree par le communiqué investisseurs de Peloton annoncant Peloton IQ. Volumes d'usage documentes, mais pas de KPI de retention isole, donc B."
+  },
+  "dates": {
+    "lancement": "2025-10 (annonce et deploiement de Peloton IQ)",
+    "derniere_confirmation_activite": "2025-11-25 (blog technique AWS documentant l'architecture en production)",
+    "verifie_le": "2026-07-11",
+    "revoir_apres": "2027-01-11"
+  },
+  "statut_vivant": {
+    "statut": "confirme",
+    "note": "Peloton IQ est en production sur tout le parc d'equipements connectes et l'app mobile depuis octobre 2025, avec une architecture documentee par AWS en novembre 2025."
+  },
+  "sources": [
+    {
+      "ref": "S1",
+      "type": "customer_story_plateforme",
+      "fiabilite": "T2_officiel_interesse",
+      "titre": "Peloton IQ: How Peloton Generates Millions of Personalized Fitness Insights Weekly Using Amazon Bedrock",
+      "url": "https://aws.amazon.com/blogs/industries/peloton-iq-how-peloton-generates-millions-of-personalized-fitness-insights-weekly-using-amazon-bedrock/",
+      "date_publication": "2025-11-25",
+      "consulte_le": "2026-07-11"
+    },
+    {
+      "ref": "S2",
+      "type": "blog_officiel",
+      "fiabilite": "T1_primaire",
+      "titre": "Peloton Enters New Era with AI-Powered Peloton IQ and New Product Portfolio",
+      "url": "https://investor.onepeloton.com/news-releases/news-release-details/peloton-enters-new-era-ai-powered-peloton-iq-and-new-product",
+      "date_publication": "2025-10-01",
+      "consulte_le": "2026-07-11"
+    },
+    {
+      "ref": "S3",
+      "type": "blog_officiel",
+      "fiabilite": "T2_officiel_interesse",
+      "titre": "From Personalized Insights to Actions: Powering Peloton IQ for Cross Training",
+      "url": "https://careers.onepeloton.com/en/blog/product-and-tech/from-personalized-insights-to-actions-powering-peloton-iq-for-cross-training/",
+      "date_publication": "2025",
+      "consulte_le": "2026-07-11"
+    }
+  ],
+  "fonctionnement_operationnel": {
+    "cadence": "Double : pre-generation en batch mise en cache pour l'affichage immediat, et generation temps reel declenchee par l'action du membre. Plans revus a la semaine.",
+    "opere_par": "Equipes produit et machine learning de Peloton, sur l'infrastructure IA geree par AWS.",
+    "signal_pilote": "L'historique d'entrainement et les donnees de wearables tiers. Si le membre ne connecte pas ses appareils ou s'entraine peu, le contexte s'appauvrit et les insights perdent en pertinence.",
+    "etapes": [
+      {
+        "etape": "Collecte du contexte membre",
+        "detail": "Historique d'entrainement, biometrie des appareils connectes, preferences et donnees de wearables tiers sont agreges.",
+        "acteur": "equipe data / IA"
+      },
+      {
+        "etape": "Pre-generation batch",
+        "detail": "Des insights et cibles de performance sont pre-calcules et mis en cache pour un affichage instantane.",
+        "acteur": "IA (Bedrock, batch)"
+      },
+      {
+        "etape": "Generation temps reel",
+        "detail": "A l'action du membre, un insight ou un ajustement de plan est genere a la volee par les LLM.",
+        "acteur": "IA (Llama 4 Scout / GPT)"
+      },
+      {
+        "etape": "Restitution et edition",
+        "detail": "Le plan hebdomadaire s'affiche sur l'ecran et l'app ; le membre peut l'editer.",
+        "acteur": "membre"
+      }
+    ]
+  },
+  "schema_flow": {
+    "statut": "documente",
+    "noeuds": [
+      {
+        "id": "context",
+        "role_generique": "data_source",
+        "label": "Historique d'entrainement, biometrie, wearables tiers",
+        "outil_documente": "Garmin Connect, Fitbit, Apple Health"
+      },
+      {
+        "id": "bedrock",
+        "role_generique": "modele_ia",
+        "label": "Generation d'insights et de plans (batch + temps reel)",
+        "outil_documente": "Amazon Bedrock, GPT, Llama 4 Scout, SageMaker"
+      },
+      {
+        "id": "device",
+        "role_generique": "site_app",
+        "label": "Equipements Peloton et application mobile"
+      },
+      {
+        "id": "member",
+        "role_generique": "humain",
+        "label": "Membre Peloton"
+      }
+    ],
+    "liens": [
+      [
+        "member",
+        "context",
+        "seances et donnees"
+      ],
+      [
+        "context",
+        "bedrock"
+      ],
+      [
+        "bedrock",
+        "device",
+        "plans et insights personnalises"
+      ],
+      [
+        "device",
+        "member"
+      ],
+      [
+        "member",
+        "device",
+        "edition du plan"
+      ]
+    ]
+  },
+  "replication": {
+    "statut_epistemique": "infere",
+    "playbook": [
+      {
+        "action": "Structurer l'historique d'entrainement ou d'usage par utilisateur (seances, objectifs, preferences declarees) dans un profil requetable.",
+        "livrable": "Profil d'usage unifie par utilisateur"
+      },
+      {
+        "action": "Brancher un LLM managed sur un premier cas d'insight, par exemple le resume hebdomadaire, en pre-generation batch.",
+        "livrable": "Insights batch en beta interne"
+      },
+      {
+        "action": "Mettre en cache et afficher les insights dans l'app, mesurer ouverture et engagement sur une cohorte beta.",
+        "livrable": "Feature en beta utilisateur avec metriques d'engagement"
+      },
+      {
+        "action": "Ajouter la generation temps reel declenchee par l'action de l'utilisateur et les plans editables.",
+        "livrable": "Plans personnalises en production sur l'app"
+      },
+      {
+        "action": "Connecter les wearables ou capteurs tiers pour enrichir le contexte et affiner les cibles de performance.",
+        "livrable": "Pipeline enrichi + bilan frequence et retention"
+      }
+    ],
+    "equipe": "2-3 ML engineers + 1 dev app + 1 PM, avec un juriste pour les donnees de sante (art. 9 RGPD en UE)",
+    "prerequis_data": [
+      "historique d'entrainement ou d'usage par utilisateur",
+      "connexion aux wearables ou capteurs biometriques",
+      "preferences et objectifs declares"
+    ],
+    "prerequis_orga": [
+      "equipe ML pour maintenir prompts et fine-tuning",
+      "base legale pour le traitement de donnees de sante",
+      "capacite d'affichage temps reel sur l'app et les appareils"
+    ],
+    "stack_possible": [
+      "plateforme LLM managed (Bedrock, Vertex AI, Azure OpenAI)",
+      "pipeline batch + temps reel",
+      "integration wearables"
+    ],
+    "premiere_etape": "Structurer l'historique d'entrainement par utilisateur et brancher un LLM managed sur un premier cas d'insight (par exemple resume hebdomadaire), avant d'ajouter la generation temps reel."
+  },
+  "seo": {
+    "slug": "peloton-iq-personalisation-bedrock-2025",
+    "title": "Peloton : plans et insights d'entrainement personnalises par IA (Peloton IQ) - des millions d'insights par semaine (2025)",
+    "meta_description": "Peloton IQ genere des plans et recommandations d'entrainement personnalises sur Amazon Bedrock ; des millions d'insights par semaine pour plus de 6 millions de membres.",
+    "resume_citable": "Peloton IQ, lance en octobre 2025 sur Amazon Bedrock (GPT et Llama 4 Scout), genere des plans d'entrainement hebdomadaires et des recommandations personnalises : des millions d'insights par semaine pour plus de 6 millions de membres et pres de 50 millions d'entrainements mensuels.",
+    "faq": [
+      {
+        "q": "Que fait Peloton IQ pour le membre ?",
+        "a": "Il genere un plan d'entrainement hebdomadaire editable et des recommandations personnalises a partir de l'historique d'entrainement et des donnees de wearables tiers."
+      },
+      {
+        "q": "Sur quelle technologie tourne Peloton IQ ?",
+        "a": "Sur Amazon Bedrock, avec les modeles GPT d'OpenAI pour le raisonnement complexe et Llama 4 Scout de Meta pour les insights temps reel, fine-tunes sur SageMaker."
+      }
+    ]
+  },
+  "logo_domain": "onepeloton.com"
+}

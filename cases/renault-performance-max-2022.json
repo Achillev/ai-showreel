@@ -1,0 +1,308 @@
+{
+  "type_fiche": "succes",
+  "id": "renault-performance-max-2022",
+  "marque": "Renault",
+  "groupe": "Renault Group",
+  "industrie": "auto",
+  "marches_deploiement": [
+    "Turquie (Renault Mais)",
+    "Royaume-Uni (Renault Retail Group)"
+  ],
+  "transposable_ue": {
+    "flag": "oui_avec_adaptations",
+    "note": "Marque européenne ; en UE, Performance Max exige Consent Mode v2 (RGPD/DMA) et pose un enjeu de transparence des placements (boîte noire) - gouvernance à prévoir, mais pas de classification haut risque AI Act."
+  },
+  "metier": "Génération de leads / media performance",
+  "marque_linkedin": "https://www.linkedin.com/company/renaultgroup/",
+  "intervenants": [
+    {
+      "nom": "Özlem Kılıçkaya",
+      "role": "Responsable communication marketing, Renault Mais (au moment du projet)",
+      "linkedin_url": "https://tr.linkedin.com/in/ozlemkilickaya",
+      "source_ref": "S1"
+    }
+  ],
+  "axes": {
+    "levier": "acquisition",
+    "touchpoints": [
+      "Google Search",
+      "YouTube",
+      "Display",
+      "Discover",
+      "Gmail",
+      "Google Maps"
+    ],
+    "etape_parcours": "considération -> lead",
+    "famille": "optimisation_automatisation",
+    "pattern": "Consolidation multi-formats / multi-canaux dans une campagne unique pilotée par le machine learning de Google (enchères, mix créatif, canaux) sur objectif de conversion",
+    "type_ia": [
+      "smart bidding (enchères ML)",
+      "sélection et rotation créative automatisée",
+      "allocation cross-canal automatisée"
+    ],
+    "plateforme_stack": [
+      "Google Ads Performance Max",
+      "Google Search / YouTube / Display / Discover / Maps / Gmail"
+    ],
+    "objectif_metrique": [
+      "coût par conversion",
+      "volume de leads",
+      "CPA vs objectif"
+    ]
+  },
+  "implementation": "plateforme",
+  "stack_technique": [
+    {
+      "nom": "Google Ads Performance Max",
+      "categorie": "plateforme",
+      "detail": "Campagne unique multi-canaux (Search, YouTube, Display, Discover, Maps, Gmail) pilotee par le ML de Google : encheres, mix creatif, allocation.",
+      "url": "https://ads.google.com"
+    },
+    {
+      "nom": "Smart Bidding (Google)",
+      "categorie": "outil",
+      "detail": "Encheres automatiques par machine learning sur objectif de conversion.",
+      "url": "https://ads.google.com"
+    },
+    {
+      "nom": "Google Analytics (GA4) + import de conversions offline",
+      "categorie": "outil",
+      "detail": "Remontee des leads qualifies par les concessions dans Google Ads, pour que l'algorithme apprenne sur la vraie conversion.",
+      "url": "https://marketingplatform.google.com"
+    },
+    {
+      "nom": "Salesforce",
+      "categorie": "outil",
+      "detail": "CRM utilise par Groupe Renault pour requalifier les leads et reinjecter leur qualite dans Google.",
+      "url": "https://www.salesforce.com"
+    },
+    {
+      "nom": "OMD",
+      "categorie": "integrateur",
+      "detail": "Agence media de Renault Mais (Turquie) sur la consolidation Performance Max.",
+      "url": "https://www.omd.com"
+    }
+  ],
+  "objectif_business": "Baisser le coût par lead qualifié et arrêter de gérer une campagne par format et par canal : une seule campagne, pilotée par l'IA de Google.",
+  "points_cles": ["Campagnes de generation de leads consolidees dans une campagne unique Google Performance Max.", "Pilotage par le machine learning de Google (encheres, mix creatif, canaux), qualite des leads importee du CRM.", "Cout par conversion -86% en Turquie, +1 261 leads a CPA -67% au Royaume-Uni.", "Preuve B, statut signaux mitiges."],
+  "description": "En Turquie, l'équipe de Renault Mais gérait ses campagnes de génération de leads (essais, contacts concessionnaire) séparément par format et par plateforme, avec l'agence OMD. Elle a tout regroupé dans une campagne Performance Max unique. Le principe : on dépose les assets - vidéos, images, textes - et l'algorithme de Google décide en continu quelle créa montrer, sur quel canal parmi Search, YouTube, Display, Discover, Maps et Gmail, et à quelle enchère. Les créas qui ne convertissent pas sont écartées automatiquement. Renault Mais annonce un coût par conversion divisé par presque sept, soit -86 %. Le même schéma tourne ailleurs dans le groupe : au Royaume-Uni, Renault Retail Group a généré 1 261 leads de plus à un coût 67 % sous son objectif. Depuis, Performance Max est devenu le format par défaut de Google pour ce type d'acquisition.",
+  "fonctionnement_operationnel": {
+    "cadence": "En continu, avec une phase d'apprentissage de 4 à 6 semaines au démarrage. On ne juge pas les résultats avant qu'elle soit passée.",
+    "opere_par": "L'équipe media (ou l'agence), avec l'équipe CRM/data pour renvoyer la qualité des leads dans Google.",
+    "signal_pilote": "La conversion importée. Si on optimise sur le volume brut de leads plutôt que sur les leads réellement qualifiés par les concessions, l'algo fabrique du contact sans valeur.",
+    "etapes": [
+      {
+        "etape": "Définir la vraie conversion",
+        "detail": "Un lead n'est pas un formulaire rempli : c'est un contact que la concession juge exploitable. C'est cette définition qu'on donne à Google, pas le clic.",
+        "acteur": "Équipe marketing + réseau concessions"
+      },
+      {
+        "etape": "Remonter la qualité depuis le CRM",
+        "detail": "Les leads qui aboutissent à un essai ou un devis sont réinjectés dans Google Ads (import offline). L'algo apprend alors à chercher les bons profils, pas les curieux.",
+        "acteur": "Équipe data / CRM"
+      },
+      {
+        "etape": "Fournir les assets en volume",
+        "detail": "Vidéos, images et accroches en quantité, pour donner de la matière à tester. Trop peu d'assets et l'algo tourne en rond sur les mêmes combinaisons.",
+        "acteur": "Agence créative"
+      },
+      {
+        "etape": "Cadrer la conformité UE",
+        "detail": "En Europe, Consent Mode v2 est obligatoire et la campagne reste une boîte noire sur le détail des placements. À encadrer côté gouvernance avant de scaler.",
+        "acteur": "Équipe data / juridique"
+      },
+      {
+        "etape": "Laisser converger avant de juger",
+        "detail": "Pendant l'apprentissage, le CPA est instable. Couper ou remanier à ce stade, c'est saborder la campagne.",
+        "acteur": "IA Google"
+      }
+    ]
+  },
+  "resultats": [
+    {
+      "metrique": "Coût par conversion (Turquie)",
+      "valeur": "-86 %",
+      "citation_exacte": "reducing our cost per conversion by 86%",
+      "source_ref": "S1"
+    },
+    {
+      "metrique": "Conversions additionnelles (UK)",
+      "valeur": "+1 261",
+      "citation_exacte": "an additional 1,261 conversions",
+      "source_ref": "S2"
+    },
+    {
+      "metrique": "CPA vs objectif (UK)",
+      "valeur": "-67 % vs KPI",
+      "citation_exacte": "at a CPA 67% lower than their KPI",
+      "source_ref": "S2"
+    }
+  ],
+  "niveau_preuve": {
+    "niveau": "B",
+    "justification": "Étude de cas Think with Google chiffrée avec citation nominative d'une dirigeante Renault Mais (biais plateforme), corroborée par une étude de cas d'agence indépendante sur une autre entité Renault (UK) - pas de confirmation en résultats financiers."
+  },
+  "dates": {
+    "lancement": "2021 (cas publié février 2022)",
+    "derniere_confirmation_activite": "2025-2026 - Performance Max devenu l'infrastructure par défaut de l'acquisition Google Ads",
+    "verifie_le": "2026-07-11",
+    "revoir_apres": "2026-10-11"
+  },
+  "statut_vivant": {
+    "statut": "signaux_mitiges",
+    "note": "Le cas chiffré date de 2022 et Renault ne communique plus publiquement dessus ; en revanche le pattern lui-même est plus vivant que jamais (PMax = format central Google Ads en 2025-2026) et l'usage multi-entités Renault (Turquie + réseau UK) suggère une adoption durable."
+  },
+  "sources": [
+    {
+      "ref": "S1",
+      "type": "customer_story_plateforme",
+      "titre": "Performance Max is the future of marketing - cas Renault Turquie (Renault Mais)",
+      "url": "https://business.google.com/uk/think/ai-excellence/performance-max-marketing-consumer/",
+      "date_publication": "2022-02",
+      "consulte_le": "2026-07-11",
+      "fiabilite": "T2_officiel_interesse"
+    },
+    {
+      "ref": "S2",
+      "type": "customer_story_plateforme",
+      "titre": "ClickThrough reduce Renault Retail Group's CPA by 67% with Performance Max",
+      "url": "https://www.clickthrough-marketing.com/case-studies/renault-retail-group-google-performance-max",
+      "date_publication": "2022",
+      "consulte_le": "2026-07-11",
+      "fiabilite": "T2_officiel_interesse"
+    },
+    {
+      "ref": "S3",
+      "type": "customer_story_plateforme",
+      "titre": "Groupe Renault boosts sales and reduces cost per lead with Google and Salesforce",
+      "url": "https://marketingplatform.google.com/about/resources/groupe-renault-boosts-sales-and-reduces-cost-per-lead-with-google-and-saleforce/",
+      "date_publication": "2022",
+      "consulte_le": "2026-07-11",
+      "fiabilite": "T2_officiel_interesse"
+    }
+  ],
+  "schema_flow": {
+    "statut": "documente",
+    "noeuds": [
+      {
+        "id": "assets",
+        "role_generique": "data_source",
+        "label": "Assets : vidéos, images, textes, feed",
+        "outil_documente": "Asset groups PMax"
+      },
+      {
+        "id": "conv",
+        "role_generique": "data_source",
+        "label": "Signaux de conversion (leads qualifiés)",
+        "outil_documente": "GA4 + import offline CRM"
+      },
+      {
+        "id": "ai",
+        "role_generique": "paid_platform",
+        "label": "IA Google : enchères, choix de canal, rotation créa",
+        "outil_documente": "Google Ads Performance Max"
+      },
+      {
+        "id": "touch",
+        "role_generique": "site_app",
+        "label": "Search / YouTube / Display / Discover / Maps / Gmail"
+      },
+      {
+        "id": "lead",
+        "role_generique": "site_app",
+        "label": "Lead concessionnaire (essai, contact)"
+      }
+    ],
+    "liens": [
+      [
+        "assets",
+        "ai"
+      ],
+      [
+        "conv",
+        "ai"
+      ],
+      [
+        "ai",
+        "touch"
+      ],
+      [
+        "touch",
+        "lead"
+      ],
+      [
+        "lead",
+        "conv",
+        "feedback qualité lead"
+      ]
+    ]
+  },
+  "replication": {
+    "statut_epistemique": "infere",
+    "prerequis_data": [
+      "Tracking de conversion fiable (leads qualifiés, pas bruts)",
+      "Consent Mode v2 en UE",
+      "Valeurs de conversion différenciées (scoring lead)"
+    ],
+    "prerequis_orga": [
+      "Assets créatifs vidéo/image/texte en volume",
+      "Import de la qualité des leads depuis le CRM"
+    ],
+    "stack_possible": [
+      "Google Ads Performance Max + GA4 + import de conversions offline (CRM / Salesforce)"
+    ],
+    "premiere_etape": "Expérience officielle Google Ads « PMax vs campagnes existantes » sur un objectif de conversion unique, avec import de la qualité des leads depuis le CRM avant tout scaling.",
+    "playbook": [
+      {
+        "action": "Definir la vraie conversion (lead juge exploitable par la concession, pas le formulaire) et brancher GA4 + import de conversions offline depuis le CRM.",
+        "livrable": "Conversion importee fiable dans Google Ads."
+      },
+      {
+        "action": "Produire les assets en volume (videos, images, accroches) et monter les groupes d'assets.",
+        "livrable": "Asset groups complets prets a diffuser."
+      },
+      {
+        "action": "Lancer Performance Max en experience officielle contre les campagnes existantes, sur un objectif de conversion unique. En UE, verifier Consent Mode v2 avant le lancement.",
+        "livrable": "Test structure en diffusion."
+      },
+      {
+        "action": "Laisser passer la phase d'apprentissage (4 a 6 semaines) sans couper ni remanier.",
+        "livrable": "Campagne convergee avec CPA stabilise."
+      },
+      {
+        "action": "Lire cout par conversion et volume vs campagnes historiques, arbitrer la consolidation et poser la gouvernance (transparence des placements).",
+        "livrable": "Decision de consolidation documentee et regles de pilotage."
+      }
+    ],
+    "equipe": "1 media buyer (ou l'agence) + 1 profil data / CRM pour l'import offline + l'agence creative pour les assets."
+  },
+  "seo": {
+    "slug": "renault-google-performance-max-cout-par-lead-2022",
+    "title": "Renault : génération de leads auto pilotée par l'IA de Google (Performance Max) - -86 % de coût par conversion",
+    "meta_description": "Comment Renault a consolidé ses campagnes de génération de leads dans une seule campagne Performance Max pilotée par le ML de Google : -86 % de coût par conversion.",
+    "resume_citable": "Renault (Turquie) a réduit son coût par conversion de 86 % en consolidant ses campagnes de génération de leads dans une campagne unique Google Performance Max pilotée par machine learning ; l'entité UK a répliqué avec un CPA 67 % sous son objectif.",
+    "faq": [
+      {
+        "q": "Faut-il un modèle IA custom pour répliquer ?",
+        "a": "Non : Performance Max est une feature de Google Ads. L'enjeu est la qualité du tracking de conversion et le volume d'assets créatifs, pas le développement d'un modèle."
+      },
+      {
+        "q": "Quel risque en Europe ?",
+        "a": "Consent Mode v2 obligatoire et faible transparence des placements (boîte noire) - à cadrer côté gouvernance, sans classification haut risque au sens de l'AI Act."
+      }
+    ]
+  },
+  "agences": [
+    {
+      "nom": "OMD",
+      "role": "Agence media (Turquie)",
+      "source_ref": "S1"
+    },
+    {
+      "nom": "ClickThrough Marketing",
+      "role": "Agence - déploiement UK (Renault Retail Group)",
+      "source_ref": "S2"
+    }
+  ],
+  "logo_domain": "renault.com"
+}

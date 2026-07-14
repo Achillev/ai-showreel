@@ -1,0 +1,257 @@
+{
+  "id": "strava-athlete-intelligence-2024",
+  "type_fiche": "succes",
+  "marque": "Strava",
+  "industrie": "sport_fitness",
+  "marches_deploiement": [
+    "Mondial (plus de 190 pays, application Strava)"
+  ],
+  "transposable_ue": {
+    "flag": "oui_avec_adaptations",
+    "note": "Athlete Intelligence traite des donnees d'entrainement et de frequence cardiaque, proches de donnees de sante. Sous RGPD, ces donnees appellent une base legale robuste et une information claire de l'utilisateur. La fonction est deja diffusee en UE dans le cadre du deploiement multilingue (14 langues), en opt-in pour les abonnes."
+  },
+  "metier": "marketing / produit (personnalisation abonne)",
+  "marque_linkedin": "https://www.linkedin.com/company/strava",
+  "axes": {
+    "levier": "retention",
+    "touchpoints": [
+      "application Strava",
+      "resume post-activite",
+      "insights de tendance sur 30 jours"
+    ],
+    "etape_parcours": "fidélité",
+    "famille": "personnalisation",
+    "pattern": "insights d'entrainement personnalises en langage naturel a partir des donnees d'activite",
+    "type_ia": [
+      "grands modeles de langage",
+      "generation d'insights en langage naturel",
+      "detection de tendances et de records"
+    ],
+    "plateforme_stack": [
+      "custom/in-house (couche IA Strava)"
+    ],
+    "objectif_metrique": [
+      "valeur percue de l'abonnement",
+      "engagement des abonnes",
+      "comprehension des metriques de performance"
+    ]
+  },
+  "implementation": "custom",
+  "objectif_business": "Renforcer la valeur de l'abonnement Strava en traduisant des donnees d'entrainement complexes en insights simples et personnalises, pour retenir les abonnes et rendre leurs metriques actionnables.",
+  "description": "Athlete Intelligence est la fonction d'IA lancee par Strava le 3 octobre 2024, d'abord en beta publique pour les abonnes. Elle analyse et interprete les donnees d'entrainement en insights personnalises et guidance en langage naturel. La fonction agrege les tendances des seances des 30 derniers jours et couvre l'allure, la frequence cardiaque, le denivele, la puissance et le Relative Effort, la metrique proprietaire d'intensite de Strava. Elle detecte les jalons et fait remonter les temps forts : allure la plus rapide, plus longue distance, plus haut Relative Effort, plus gros denivele. Elle est disponible en 14 langues, avec une option de retrait. Strava compte plus de 125 millions d'athletes dans plus de 190 pays et plus de 10 milliards d'activites televersees, ce qui donne au systeme un socle de donnees d'entrainement a grande echelle.",
+  "resultats": [
+    {
+      "metrique": "Base d'athletes de la plateforme, dans plus de 190 pays",
+      "valeur": "125 M+ d'athletes",
+      "citation_exacte": "more than 125 million athletes in more than 190 countries",
+      "source_ref": "S1"
+    },
+    {
+      "metrique": "Activites televersees, socle de donnees d'entrainement",
+      "valeur": "10 Md+ d'activites",
+      "citation_exacte": "more than 10 billion activity uploads on Strava",
+      "source_ref": "S1"
+    },
+    {
+      "metrique": "Couverture linguistique au lancement, en beta publique mondiale",
+      "valeur": "14 langues",
+      "citation_exacte": "available globally in 14 languages",
+      "source_ref": "S2"
+    }
+  ],
+  "niveau_preuve": {
+    "niveau": "C",
+    "justification": "Communique et press release de la marque (repris par PRNewswire) plus presse tech etablie citant nommement Strava et la fonction Athlete Intelligence. Chiffres de scale de la plateforme documentes, mais pas de KPI de retention ou de business result isole, donc C."
+  },
+  "dates": {
+    "lancement": "2024-10-03 (beta publique Athlete Intelligence)",
+    "derniere_confirmation_activite": "2025-02 (sortie de beta et nouvelles mises a jour : donnees virtuelles, insights de puissance, analyse de segments)",
+    "verifie_le": "2026-07-11",
+    "revoir_apres": "2027-01-11"
+  },
+  "statut_vivant": {
+    "statut": "confirme",
+    "note": "Athlete Intelligence est passee de beta a fonction etablie (fevrier 2025) avec des enrichissements successifs. Elle fait partie de l'offre abonne de Strava."
+  },
+  "sources": [
+    {
+      "ref": "S1",
+      "type": "blog_officiel",
+      "fiabilite": "T2_officiel_interesse",
+      "titre": "Strava's Athlete Intelligence Translates Workout Data into Simple and Personalized Insights",
+      "url": "https://press.strava.com/articles/stravas-athlete-intelligence-translates-workout-data-into-simple-and",
+      "date_publication": "2024-10-03",
+      "consulte_le": "2026-07-11"
+    },
+    {
+      "ref": "S2",
+      "type": "presse",
+      "fiabilite": "T3_presse_etablie",
+      "titre": "Strava's powerful AI insights are here - Athlete Intelligence is now available in beta",
+      "url": "https://www.techradar.com/health-fitness/strava-s-powerful-ai-insights-are-here-athlete-intelligence-is-now-available-in-beta",
+      "date_publication": "2024-10",
+      "consulte_le": "2026-07-11"
+    },
+    {
+      "ref": "S3",
+      "type": "presse",
+      "fiabilite": "T4_secondaire",
+      "titre": "Athlete Intelligence launches for Strava subscribers",
+      "url": "https://endurance.biz/2024/industry-news/athlete-intelligence-launches-for-strava-subscribers/",
+      "date_publication": "2024-10",
+      "consulte_le": "2026-07-11"
+    }
+  ],
+  "fonctionnement_operationnel": {
+    "cadence": "A chaque activite pour le resume post-seance, avec une agregation glissante des tendances sur 30 jours.",
+    "opere_par": "Equipes produit et data de Strava ; la fonction est en self-service pour l'abonne.",
+    "signal_pilote": "Les donnees d'activite televersees (allure, frequence cardiaque, puissance, Relative Effort). Sans capteur ni televersement regulier, l'agregation 30 jours se vide et les insights deviennent generiques.",
+    "etapes": [
+      {
+        "etape": "Televersement de l'activite",
+        "detail": "L'athlete synchronise sa montre ou son telephone ; l'activite alimente Strava.",
+        "acteur": "athlete"
+      },
+      {
+        "etape": "Agregation des tendances",
+        "detail": "Le systeme agrege les seances des 30 derniers jours sur les metriques cles.",
+        "acteur": "IA / equipe data"
+      },
+      {
+        "etape": "Generation de l'insight",
+        "detail": "Un LLM traduit les donnees en insight personnalise et en guidance en langage naturel, dans la langue de l'abonne.",
+        "acteur": "IA"
+      },
+      {
+        "etape": "Restitution",
+        "detail": "L'insight et les temps forts (records d'allure, denivele) s'affichent apres l'activite.",
+        "acteur": "site_app"
+      }
+    ]
+  },
+  "schema_flow": {
+    "statut": "approche_type",
+    "noeuds": [
+      {
+        "id": "activity",
+        "role_generique": "data_source",
+        "label": "Donnees d'activite televersees (30 jours glissants)"
+      },
+      {
+        "id": "ai",
+        "role_generique": "modele_ia",
+        "label": "Generation d'insights en langage naturel",
+        "outil_documente": "couche IA Strava (in-house)"
+      },
+      {
+        "id": "app",
+        "role_generique": "site_app",
+        "label": "Application Strava"
+      },
+      {
+        "id": "athlete",
+        "role_generique": "humain",
+        "label": "Athlete abonne"
+      }
+    ],
+    "liens": [
+      [
+        "athlete",
+        "activity",
+        "televersement des seances"
+      ],
+      [
+        "activity",
+        "ai"
+      ],
+      [
+        "ai",
+        "app",
+        "insight personnalise"
+      ],
+      [
+        "app",
+        "athlete"
+      ]
+    ]
+  },
+  "replication": {
+    "statut_epistemique": "infere",
+    "prerequis_data": [
+      "flux d'activite ou d'usage par utilisateur",
+      "metriques structurees de performance",
+      "historique glissant sur plusieurs semaines"
+    ],
+    "prerequis_orga": [
+      "equipe produit pour cadrer le format d'insight",
+      "base legale pour des donnees proches de la sante",
+      "couche multilingue si audience internationale"
+    ],
+    "stack_possible": [
+      "LLM managed ou in-house",
+      "pipeline d'agregation de metriques",
+      "app avec restitution post-activite"
+    ],
+    "premiere_etape": "Definir 3 a 5 insights a forte valeur (records, tendances) et brancher un LLM sur les metriques deja disponibles, en opt-in.",
+    "playbook": [
+      {
+        "action": "Definir 3 a 5 insights a forte valeur (records, tendances 30 jours) a partir des metriques deja collectees",
+        "livrable": "Spec des insights avec formules et seuils"
+      },
+      {
+        "action": "Monter le pipeline d'agregation glissante sur 30 jours des metriques par utilisateur",
+        "livrable": "Agregats calcules et testes sur donnees reelles"
+      },
+      {
+        "action": "Brancher le LLM sur les agregats avec gabarits et garde-fous (pas de conseil medical), en opt-in",
+        "livrable": "Resume post-activite genere, en beta"
+      },
+      {
+        "action": "Cadrer la conformite : base legale pour des donnees proches de la sante, information utilisateur, option de retrait",
+        "livrable": "Dossier RGPD et opt-out fonctionnel"
+      },
+      {
+        "action": "Ouvrir en beta, mesurer engagement et valeur percue, puis etendre langues et metriques couvertes",
+        "livrable": "Fonction en production multilingue avec tableau d'usage"
+      }
+    ],
+    "equipe": "1 PM + 1 data engineer + 1 dev backend + une relecture juridique pour les donnees proches de la sante"
+  },
+  "seo": {
+    "slug": "strava-athlete-intelligence-2024",
+    "title": "Strava : insights d'entrainement personnalises par IA (Athlete Intelligence) - 125 millions d'athletes (2024)",
+    "meta_description": "Strava traduit les donnees d'entrainement en insights personnalises en langage naturel via Athlete Intelligence ; deploye en 14 langues aupres de plus de 125 millions d'athletes.",
+    "resume_citable": "Strava a lance Athlete Intelligence en octobre 2024 pour traduire les donnees d'entrainement en insights personnalises en langage naturel : la fonction couvre allure, frequence cardiaque, puissance et Relative Effort sur 30 jours glissants, en 14 langues, sur une base de plus de 125 millions d'athletes et 10 milliards d'activites televersees.",
+    "faq": [
+      {
+        "q": "Que fait Athlete Intelligence de Strava ?",
+        "a": "Elle analyse les donnees d'entrainement des 30 derniers jours et les traduit en insights personnalises et guidance en langage naturel, avec detection de records et de jalons."
+      },
+      {
+        "q": "Pour qui la fonction est-elle disponible ?",
+        "a": "Pour les abonnes Strava, en beta publique au lancement, disponible en 14 langues avec une option de retrait."
+      }
+    ]
+  },
+  "logo_domain": "strava.com",
+  "stack_technique": [
+    {
+      "nom": "Couche IA Strava (Athlete Intelligence)",
+      "categorie": "plateforme",
+      "detail": "generation in-house d'insights et de guidance en langage naturel a partir des seances, en opt-in pour les abonnes",
+      "url": "https://www.strava.com"
+    },
+    {
+      "nom": "Grand modele de langage",
+      "categorie": "llm",
+      "detail": "traduction des metriques agregees en texte personnalise dans 14 langues ; le fournisseur n'est pas nomme dans les sources de la fiche",
+      "url": "https://www.strava.com"
+    },
+    {
+      "nom": "Pipeline d'agregation 30 jours",
+      "categorie": "infra",
+      "detail": "agregation glissante des seances : allure, frequence cardiaque, puissance, denivele et Relative Effort, avec detection de records",
+      "url": "https://www.strava.com"
+    }
+  ]
+}

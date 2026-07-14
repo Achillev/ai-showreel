@@ -1,0 +1,295 @@
+{
+  "id": "klarna-agent-client-genai-2024",
+  "type_fiche": "succes",
+  "marque": "Klarna",
+  "groupe": "Klarna Bank AB",
+  "industrie": "banque_assurance_fintech",
+  "marches_deploiement": [
+    "International (23 marches)",
+    "Etats-Unis",
+    "Royaume-Uni",
+    "Suede",
+    "Allemagne"
+  ],
+  "transposable_ue": {
+    "flag": "oui",
+    "note": "Klarna est une banque suedoise, donc deja soumise au RGPD. L'assistant traite des donnees de compte et de transaction, ce qui impose une base legale claire et un routage vers un humain sur les cas sensibles. L'AI Act classera un agent de service client en risque limite (obligation de transparence : dire au client qu'il parle a une IA)."
+  },
+  "metier": "service client",
+  "intervenants": [
+    {
+      "nom": "Sebastian Siemiatkowski",
+      "role": "Co-fondateur et CEO de Klarna",
+      "source_ref": "S1"
+    }
+  ],
+  "agences": [
+    {
+      "nom": "OpenAI",
+      "role": "Fournisseur du modele et partenaire de deploiement de l'assistant",
+      "source_ref": "S2"
+    }
+  ],
+  "axes": {
+    "levier": "retention",
+    "touchpoints": [
+      "app Klarna",
+      "chat in-app",
+      "service client"
+    ],
+    "etape_parcours": "post-achat",
+    "famille": "conversation",
+    "pattern": "agent client genAI",
+    "type_ia": [
+      "LLM generatif",
+      "assistant conversationnel"
+    ],
+    "plateforme_stack": [
+      "OpenAI (GPT-4)",
+      "integration in-house"
+    ],
+    "objectif_metrique": [
+      "taux de resolution automatisee",
+      "temps de resolution",
+      "cout du service client"
+    ]
+  },
+  "implementation": "hybride",
+  "objectif_business": "Absorber le volume de demandes de service client sans grossir l'equipe, et raccourcir le temps de resolution sur les cas simples (remboursements, litiges, paiements, annulations) tout en gardant un humain pour le reste.",
+  "points_cles": ["Agent client genAI qui prend le chat de service par defaut.", "Construit avec OpenAI GPT-4, integre a l'app et aux donnees de compte.", "2,3 millions de conversations le premier mois, charge de 700 agents.", "Resolution en moins de 2 minutes, preuve B, signaux mitiges."],
+  "description": "L'assistant vit dans l'app Klarna et prend la main sur le chat de service client. Un mois apres son lancement de fevrier 2024, il avait tenu 2,3 millions de conversations, soit les deux tiers des chats de support. Il couvre 23 marches, dialogue dans plus de 35 langues et boucle une demande en moins de deux minutes la ou un agent en prenait onze. Le client peut a tout moment demander un humain. En 2025, Klarna a reconnu avoir taille trop loin dans les effectifs et a rouvert des postes de support premium tenus par des humains, tout en gardant l'assistant en production.",
+  "resultats": [
+    {
+      "metrique": "Conversations tenues le premier mois",
+      "valeur": "2,3 millions",
+      "citation_exacte": "handles two-thirds of customer service chats in its first month",
+      "source_ref": "S1"
+    },
+    {
+      "metrique": "Charge de travail equivalente, en agents temps plein",
+      "valeur": "700 agents",
+      "citation_exacte": "on par with 700 full-time agents",
+      "source_ref": "S1"
+    },
+    {
+      "metrique": "Temps de resolution d'une demande, contre 11 min avant",
+      "valeur": "moins de 2 min",
+      "citation_exacte": "resolve their errands in less than 2 mins",
+      "source_ref": "S1"
+    },
+    {
+      "metrique": "Amelioration de resultat attendue en 2024",
+      "valeur": "40 millions USD",
+      "citation_exacte": "estimated to drive a $40 million USD in profit improvement",
+      "source_ref": "S1"
+    },
+    {
+      "metrique": "Baisse des demandes repetees",
+      "valeur": "25%",
+      "citation_exacte": "leading to a 25% drop in repeat inquiries",
+      "source_ref": "S1"
+    }
+  ],
+  "niveau_preuve": {
+    "niveau": "B",
+    "justification": "Chiffres publies par Klarna (communique officiel, T1) et repris dans la customer story d'OpenAI (T2), concordants. Le gain de 40 M USD est une estimation interne de l'entreprise, pas un resultat audite, ce qui plafonne a B. La reversibilite 2025 est documentee par une source presse etablie (TechCrunch)."
+  },
+  "dates": {
+    "lancement": "2024-02",
+    "derniere_confirmation_activite": "2025-10",
+    "verifie_le": "2026-07-11",
+    "revoir_apres": "2027-01-11"
+  },
+  "statut_vivant": {
+    "statut": "signaux_mitiges",
+    "note": "L'assistant tourne toujours, mais Klarna a corrige le tir en 2025 : le CEO a declare publiquement avoir coupe trop d'humains et rouvert des roles de support premium tenus par des personnes. Le pattern reste en production, l'execution 100% IA a ete rebalancee."
+  },
+  "sources": [
+    {
+      "ref": "S1",
+      "type": "blog_officiel",
+      "fiabilite": "T1_primaire",
+      "titre": "Klarna AI assistant handles two-thirds of customer service chats in its first month",
+      "url": "https://www.klarna.com/international/press/klarna-ai-assistant-handles-two-thirds-of-customer-service-chats-in-its-first-month/",
+      "date_publication": "2024-02-27",
+      "consulte_le": "2026-07-11"
+    },
+    {
+      "ref": "S2",
+      "type": "customer_story_plateforme",
+      "fiabilite": "T2_officiel_interesse",
+      "titre": "Klarna's AI assistant does the work of 700 full-time agents",
+      "url": "https://openai.com/index/klarna/",
+      "date_publication": "2024-02-27",
+      "consulte_le": "2026-07-11"
+    },
+    {
+      "ref": "S3",
+      "type": "presse",
+      "fiabilite": "T3_presse_etablie",
+      "titre": "Klarna CEO says company will use humans to offer VIP customer service",
+      "url": "https://techcrunch.com/2025/06/04/klarna-ceo-says-company-will-use-humans-to-offer-vip-customer-service/",
+      "date_publication": "2025-06-04",
+      "consulte_le": "2026-07-11"
+    }
+  ],
+  "fonctionnement_operationnel": {
+    "cadence": "Temps reel, 24/7, sur chaque chat entrant",
+    "opere_par": "Equipe service client (supervision et cas escalades) epaulee par l'equipe IA/data qui tient le modele",
+    "signal_pilote": "Le taux de resolution sans escalade et le taux de contact repete. Si le taux de repetition monte, c'est que l'assistant ferme des tickets mal resolus : c'est le signal qui a declenche le rebalancement de 2025.",
+    "etapes": [
+      {
+        "etape": "Reception du chat",
+        "detail": "Le client ouvre le chat dans l'app ; l'assistant prend la demande par defaut et annonce qu'il est une IA.",
+        "acteur": "IA"
+      },
+      {
+        "etape": "Recuperation du contexte",
+        "detail": "L'assistant lit le compte, les commandes et l'historique de paiement du client pour repondre sur son cas precis (remboursement, litige, annulation).",
+        "acteur": "IA"
+      },
+      {
+        "etape": "Resolution ou escalade",
+        "detail": "Cas simple : l'assistant traite et cloture. Cas complexe ou demande explicite : passage a un agent humain avec le contexte de la conversation.",
+        "acteur": "IA / service client"
+      },
+      {
+        "etape": "Boucle qualite",
+        "detail": "L'equipe suit satisfaction, contacts repetes et volume escalade pour ajuster le perimetre confie a l'IA.",
+        "acteur": "equipe data"
+      }
+    ]
+  },
+  "schema_flow": {
+    "statut": "approche_type",
+    "noeuds": [
+      {
+        "id": "client",
+        "role_generique": "site_app",
+        "label": "Client dans l'app Klarna"
+      },
+      {
+        "id": "assistant",
+        "role_generique": "modele_ia",
+        "label": "Assistant de service client",
+        "outil_documente": "OpenAI GPT-4"
+      },
+      {
+        "id": "compte",
+        "role_generique": "data_source",
+        "label": "Donnees compte, commandes, paiements"
+      },
+      {
+        "id": "agent",
+        "role_generique": "humain",
+        "label": "Agent de service client"
+      }
+    ],
+    "liens": [
+      [
+        "client",
+        "assistant"
+      ],
+      [
+        "assistant",
+        "compte"
+      ],
+      [
+        "compte",
+        "assistant"
+      ],
+      [
+        "assistant",
+        "client"
+      ],
+      [
+        "assistant",
+        "agent",
+        "escalade cas complexes"
+      ],
+      [
+        "agent",
+        "client"
+      ]
+    ]
+  },
+  "replication": {
+    "statut_epistemique": "infere",
+    "prerequis_data": [
+      "Historique de tickets de support etiquetes",
+      "Acces temps reel au compte et aux transactions du client",
+      "Base de connaissance procedures/politiques a jour"
+    ],
+    "prerequis_orga": [
+      "Regle claire de handoff vers l'humain",
+      "Boucle de mesure satisfaction et contacts repetes",
+      "Cadre conformite (transparence IA, donnees sensibles)"
+    ],
+    "stack_possible": [
+      "LLM generatif (OpenAI, Anthropic, ou modele ouvert)",
+      "Couche RAG sur la base de connaissance",
+      "Integration au systeme de ticketing et au core banking"
+    ],
+    "premiere_etape": "Isoler les 5 a 10 types de demandes les plus frequents et les mieux documentes, et cadrer une regle de bascule vers l'humain avant d'ouvrir le trafic.",
+    "playbook": [
+      {
+        "action": "Isoler les 5 a 10 types de demandes les plus frequents et mettre a jour la base de connaissance",
+        "livrable": "Perimetre de cas documente + procedures a jour"
+      },
+      {
+        "action": "Definir les regles de handoff vers l'humain et la transparence (annonce IA au client)",
+        "livrable": "Politique d'escalade validee par le service client et la conformite"
+      },
+      {
+        "action": "Brancher le LLM sur les donnees de compte, de commande et de paiement",
+        "livrable": "Assistant en beta sur un marche et une langue"
+      },
+      {
+        "action": "Piloter sur une part du trafic et comparer aux agents",
+        "livrable": "Taux de resolution, contacts repetes et satisfaction mesures"
+      },
+      {
+        "action": "Monter en charge par marche en surveillant le taux de contacts repetes (le signal d'alerte chez Klarna)",
+        "livrable": "Assistant par defaut avec boucle qualite installee"
+      }
+    ],
+    "equipe": "1 PM + 2 devs + 1 responsable service client + conformite"
+  },
+  "seo": {
+    "slug": "klarna-agent-client-genai-2024",
+    "title": "Klarna : agent client genAI - 2,3 millions de chats le premier mois (2024)",
+    "meta_description": "L'assistant IA de Klarna (OpenAI) a tenu 2,3 M de conversations en un mois, soit 700 agents, avant un rebalancement humain en 2025.",
+    "resume_citable": "En 2024, l'assistant IA de Klarna construit avec OpenAI a tenu 2,3 millions de conversations en un mois (deux tiers du support, charge de 700 agents), avant que Klarna ne rouvre des postes humains en 2025.",
+    "faq": [
+      {
+        "q": "Quel modele fait tourner l'assistant de Klarna ?",
+        "a": "Il est construit avec OpenAI (GPT-4), integre a l'app et aux donnees de compte de Klarna."
+      },
+      {
+        "q": "Klarna a-t-elle remplace tous ses agents humains ?",
+        "a": "Non. En 2025, le CEO a reconnu avoir coupe trop loin et a rouvert des postes de support premium tenus par des humains, l'assistant restant en production."
+      }
+    ]
+  },
+  "logo_domain": "klarna.com",
+  "stack_technique": [
+    {
+      "nom": "OpenAI GPT-4",
+      "categorie": "llm",
+      "detail": "modele de langage de l'assistant, deploye avec OpenAI comme partenaire",
+      "url": "https://openai.com"
+    },
+    {
+      "nom": "Integration in-house Klarna",
+      "categorie": "infra",
+      "detail": "connexion temps reel au compte, aux commandes et a l'historique de paiement du client pour traiter son cas precis",
+      "url": "https://www.klarna.com"
+    },
+    {
+      "nom": "Chat in-app et routage vers agents humains",
+      "categorie": "outil",
+      "detail": "l'assistant prend le chat par defaut, annonce qu'il est une IA et escalade vers un humain sur demande ou cas complexe",
+      "url": "https://www.klarna.com"
+    }
+  ]
+}

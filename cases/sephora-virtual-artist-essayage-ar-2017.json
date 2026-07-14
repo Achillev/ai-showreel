@@ -1,0 +1,276 @@
+{
+  "id": "sephora-virtual-artist-essayage-ar-2017",
+  "type_fiche": "succes",
+  "marque": "Sephora",
+  "groupe": "LVMH",
+  "industrie": "luxe_beaute",
+  "marches_deploiement": [
+    "Etats-Unis",
+    "International (33 pays)"
+  ],
+  "transposable_ue": {
+    "flag": "oui",
+    "note": "Essayage AR par la camera : le rendu peut s'executer cote client, ce qui limite le stockage de donnees biometriques. Prevoir consentement camera explicite et non-conservation des images de visage (RGPD)."
+  },
+  "metier": "e-commerce / retail",
+  "intervenants": [
+    {
+      "nom": "Bridget Dolan",
+      "role": "VP of Innovation, Sephora (au moment du projet)",
+      "source_ref": "S1"
+    }
+  ],
+  "axes": {
+    "levier": "activation_conversion",
+    "touchpoints": [
+      "application mobile Sephora",
+      "site (SephoraVirtualArtist.com)",
+      "kiosque en magasin"
+    ],
+    "etape_parcours": "consideration",
+    "famille": "generation",
+    "pattern": "essayage virtuel AR (rendu maquillage synthetique sur le visage)",
+    "type_ia": [
+      "vision par ordinateur",
+      "AR (rendu temps reel)",
+      "facial mapping / skin-tone analysis"
+    ],
+    "plateforme_stack": [
+      "ModiFace"
+    ],
+    "objectif_metrique": [
+      "teintes essayees",
+      "visites de la feature",
+      "conversion / reduction des retours"
+    ]
+  },
+  "implementation": "plateforme",
+  "objectif_business": "Faire tester virtuellement des milliers de teintes pour lever le doute couleur, augmenter la conversion et reduire les retours sur le maquillage.",
+  "points_cles": ["Essayage virtuel AR du maquillage via la camera (app, web, kiosque magasin).", "Moteur ModiFace: facial mapping, analyse du teint et rendu temps reel sur un catalogue de teintes calibrees.", "Des centaines de millions de teintes essayees depuis 2016 (200 M teintes, 8,5 M visites a 2018).", "Preuve B, statut confirme."],
+  "description": "Sephora Virtual Artist, lance en 2016 et construit avec ModiFace, permet d'essayer virtuellement des milliers de produits de maquillage depuis l'application ou le web via la camera. Le systeme fait du facial mapping et une analyse du teint pour appliquer un rendu realiste (levres, yeux, joues), propose des looks d'experts et des tutoriels, et une vue avant/apres en ecran partage. La feature est aussi accessible en magasin. Sephora exploite plus de 2 300 points de vente dans 33 pays et 14 000 produits de 200 marques.",
+  "resultats": [
+    {
+      "metrique": "Combinaisons de teintes essayees (depuis 2016)",
+      "valeur": "des centaines de millions",
+      "citation_exacte": "our clients have virtually tried on hundreds of millions of shade combinations",
+      "source_ref": "S1"
+    },
+    {
+      "metrique": "Empreinte retail supportant l'essayage, dans 33 pays",
+      "valeur": "2 300+ magasins",
+      "citation_exacte": "over 2,300 Sephora locations in 33 countries",
+      "source_ref": "S1"
+    },
+    {
+      "metrique": "Teintes essayees a 2018, et 8,5 M de visites",
+      "valeur": "200 M teintes",
+      "citation_exacte": "over 200 million shades tried on and more than 8.5 million visits",
+      "source_ref": "S3"
+    }
+  ],
+  "niveau_preuve": {
+    "niveau": "B",
+    "justification": "Chiffre d'usage cite dans un communique officiel Sephora (source primaire, VP Innovation) et confirme par la presse. Multi-sources concordantes sur la meme feature."
+  },
+  "dates": {
+    "lancement": "2016 (application), extensions annoncees en mars 2017",
+    "derniere_confirmation_activite": "Feature toujours disponible dans l'app Sephora et en magasin (chiffres cumules a 2018 dans la presse)",
+    "verifie_le": "2026-07-11",
+    "revoir_apres": "2027-01-31"
+  },
+  "statut_vivant": {
+    "statut": "confirme",
+    "note": "Virtual Artist reste une feature standard de l'ecosysteme Sephora ; l'essayage AR est devenu la base de l'experience beaute en ligne."
+  },
+  "sources": [
+    {
+      "ref": "S1",
+      "type": "communique_officiel",
+      "fiabilite": "T1_primaire",
+      "titre": "Sephora Virtual Artist Adds Virtual Try On Of Thousands Of Eyeshadow Shades, New Expert Looks And An Expanded Library Of Virtual Tutorials",
+      "url": "https://www.prnewswire.com/news-releases/sephora-virtual-artist-adds-virtual-try-on-of-thousands-of-eyeshadow-shades-new-expert-looks-and-an-expanded-library-of-virtual-tutorials-300422078.html",
+      "date_publication": "2017-03-13",
+      "consulte_le": "2026-07-11"
+    },
+    {
+      "ref": "S2",
+      "type": "presse",
+      "fiabilite": "T3_presse_etablie",
+      "titre": "Sephora's Virtual Artist brings augmented reality to large beauty audience",
+      "url": "https://www.retaildive.com/ex/mobilecommercedaily/sephoras-virtual-artist-brings-augmented-reality-to-larger-beauty-audience",
+      "date_publication": "2017",
+      "consulte_le": "2026-07-11"
+    },
+    {
+      "ref": "S3",
+      "type": "presse",
+      "fiabilite": "T4_secondaire",
+      "titre": "How Sephora is leveraging AR and AI to transform retail and help customers buy cosmetics",
+      "url": "https://www.techrepublic.com/article/how-sephora-is-leveraging-ar-and-ai-to-transform-retail-and-help-customers-buy-cosmetics/",
+      "date_publication": "2018",
+      "consulte_le": "2026-07-11"
+    }
+  ],
+  "fonctionnement_operationnel": {
+    "cadence": "Temps reel (essayage a l'ouverture de la camera), disponible en continu",
+    "opere_par": "Sephora Innovation Lab pour la feature, avec ModiFace comme fournisseur du moteur AR",
+    "signal_pilote": "La correspondance entre la teinte reelle du produit et le rendu AR. Une teinte mal calibree fausse l'essai et peut generer des retours au lieu de les reduire.",
+    "etapes": [
+      {
+        "etape": "Selection d'un produit ou look",
+        "detail": "L'utilisateur choisit une teinte, un look d'expert ou un tutoriel dans l'app.",
+        "acteur": "client"
+      },
+      {
+        "etape": "Facial mapping",
+        "detail": "Le moteur cartographie le visage et analyse le teint via la camera.",
+        "acteur": "IA (ModiFace)"
+      },
+      {
+        "etape": "Rendu et comparaison",
+        "detail": "Le produit est applique en temps reel ; l'ecran partage montre l'avant/apres.",
+        "acteur": "IA (ModiFace)"
+      },
+      {
+        "etape": "Achat",
+        "detail": "L'utilisateur ajoute au panier les references validees virtuellement.",
+        "acteur": "client"
+      },
+      {
+        "etape": "Mise a jour du catalogue AR",
+        "detail": "Sephora et ModiFace ajoutent les nouvelles references et recalibrent les rendus.",
+        "acteur": "equipe Sephora / ModiFace"
+      }
+    ]
+  },
+  "schema_flow": {
+    "statut": "documente",
+    "noeuds": [
+      {
+        "id": "u",
+        "role_generique": "humain",
+        "label": "Cliente (camera)"
+      },
+      {
+        "id": "app",
+        "role_generique": "site_app",
+        "label": "App Sephora / Virtual Artist"
+      },
+      {
+        "id": "engine",
+        "role_generique": "modele_ia",
+        "label": "Moteur essayage AR + facial mapping",
+        "outil_documente": "ModiFace"
+      },
+      {
+        "id": "catalogue",
+        "role_generique": "data_source",
+        "label": "Catalogue teintes (200 marques)"
+      }
+    ],
+    "liens": [
+      [
+        "u",
+        "app"
+      ],
+      [
+        "app",
+        "engine"
+      ],
+      [
+        "catalogue",
+        "engine",
+        "teintes calibrees"
+      ],
+      [
+        "engine",
+        "app",
+        "rendu maquillage temps reel"
+      ],
+      [
+        "app",
+        "u",
+        "essai puis ajout au panier"
+      ]
+    ]
+  },
+  "replication": {
+    "statut_epistemique": "infere",
+    "prerequis_data": [
+      "referentiel produit maquillage avec teintes calibrees",
+      "assets visuels des looks"
+    ],
+    "prerequis_orga": [
+      "integration app/e-commerce",
+      "process de calibration continue"
+    ],
+    "stack_possible": [
+      "ModiFace",
+      "Perfect Corp (YouCam)",
+      "Banuba"
+    ],
+    "premiere_etape": "Activer l'essayage AR sur les categories maquillage a plus fort trafic et calibrer les teintes best-sellers.",
+    "playbook": [
+      {
+        "action": "Choisir le fournisseur AR (ModiFace, Perfect Corp, Banuba) sur le realisme du rendu et la couverture produit",
+        "livrable": "Fournisseur retenu et contrat signe"
+      },
+      {
+        "action": "Calibrer les teintes best-sellers : faire correspondre teinte reelle et rendu AR sur les references a plus fort trafic",
+        "livrable": "Catalogue AR calibre sur le top des ventes"
+      },
+      {
+        "action": "Integrer le SDK aux fiches produit maquillage, avec consentement camera explicite et non-conservation des images de visage (RGPD)",
+        "livrable": "Essayage live sur un perimetre pilote"
+      },
+      {
+        "action": "Suivre teintes essayees, conversion et retours contre les fiches sans essayage, puis etendre aux autres categories",
+        "livrable": "Lecture chiffree, plan d'extension et process de calibration continue des nouveautes"
+      }
+    ],
+    "equipe": "1 PM e-commerce + 1 dev mobile/front + 1 referent catalogue pour la calibration des teintes"
+  },
+  "seo": {
+    "slug": "sephora-virtual-artist-essayage-ar-2017",
+    "title": "Sephora Virtual Artist : essayage virtuel AR - des centaines de millions de teintes essayees (2016-2018)",
+    "meta_description": "Sephora Virtual Artist, construit avec ModiFace, a fait essayer virtuellement des centaines de millions de combinaisons de teintes depuis 2016.",
+    "resume_citable": "Sephora Virtual Artist, l'essayage AR construit avec ModiFace, a fait essayer des centaines de millions de combinaisons de teintes depuis 2016 (plus de 200 millions de teintes et 8,5 millions de visites cumulees a 2018).",
+    "faq": [
+      {
+        "q": "Qui a construit Sephora Virtual Artist ?",
+        "a": "La feature a ete developpee par le Sephora Innovation Lab avec le fournisseur AR ModiFace, lance en 2016."
+      },
+      {
+        "q": "Quel volume d'usage a-t-elle atteint ?",
+        "a": "Des centaines de millions de combinaisons de teintes essayees depuis 2016, dont plus de 200 millions de teintes et 8,5 millions de visites cumulees a 2018 selon la presse."
+      }
+    ]
+  },
+  "logo_domain": "sephora.com",
+  "stack_technique": [
+    {
+      "nom": "ModiFace",
+      "categorie": "outil",
+      "detail": "moteur d'essayage AR : facial mapping, analyse du teint et rendu maquillage temps reel (levres, yeux, joues)",
+      "url": "https://www.modiface.com"
+    },
+    {
+      "nom": "Application Sephora / SephoraVirtualArtist.com",
+      "categorie": "infra",
+      "detail": "surfaces d'essayage in-house : app mobile, web et kiosques en magasin",
+      "url": "https://www.sephora.com"
+    },
+    {
+      "nom": "Catalogue de teintes calibrees",
+      "categorie": "infra",
+      "detail": "referentiel produits (14 000 references, 200 marques) dont les teintes sont calibrees pour que le rendu AR corresponde au produit reel",
+      "url": "https://www.sephora.com"
+    }
+  ],
+  "media": {
+    "kind": "video",
+    "url": "https://www.youtube.com/watch?v=NFApcSocFDM",
+    "source": "officielle",
+    "titre": "Sephora Virtual Artist : essayage AR"
+  }
+}

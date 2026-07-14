@@ -1,0 +1,282 @@
+{
+  "type_fiche": "succes",
+  "id": "samsung-performance-max-galaxy-campus-2022",
+  "marque": "Samsung Electronics",
+  "groupe": "Samsung Electronics",
+  "industrie": "telco",
+  "marches_deploiement": [
+    "Coree du Sud"
+  ],
+  "transposable_ue": {
+    "flag": "oui_avec_adaptations",
+    "note": "Performance Max est disponible en UE, mais impose Consent Mode v2 (RGPD/DMA) et laisse peu de visibilite sur le detail des placements. Le cas lui-meme a tourne en Coree ; en Europe, prevoir la gouvernance consentement avant de scaler. Pas de classification haut risque au sens de l'AI Act."
+  },
+  "metier": "Media performance e-commerce",
+  "intervenants": [
+    {
+      "nom": "Kwon Jongil",
+      "role": "Senior Professional, IM Marketing group, Samsung Electronics Coree (au moment du projet)",
+      "source_ref": "S1"
+    }
+  ],
+  "axes": {
+    "levier": "acquisition",
+    "touchpoints": [
+      "Google Search",
+      "YouTube",
+      "Display",
+      "Discover",
+      "Gmail",
+      "Google Maps"
+    ],
+    "etape_parcours": "consideration -> achat",
+    "famille": "optimisation_automatisation",
+    "pattern": "Ajout d'une campagne Performance Max au-dessus des campagnes Display et Discovery existantes, pilotage ML des enchères, du mix créatif et de l'allocation cross-canal sur un objectif de conversion e-commerce",
+    "type_ia": [
+      "smart bidding (enchères ML)",
+      "sélection et rotation créative automatisée",
+      "allocation cross-canal automatisée"
+    ],
+    "plateforme_stack": [
+      "Google Ads Performance Max",
+      "Google Search / YouTube / Display / Discover / Maps / Gmail"
+    ],
+    "objectif_metrique": [
+      "conversions",
+      "coût par conversion",
+      "taux de clic"
+    ]
+  },
+  "implementation": "plateforme",
+  "objectif_business": "Amplifier les promotions du Galaxy Campus Store, la boutique en ligne Samsung reservee aux etudiants coreens, en trouvant de nouvelles audiences sans faire exploser le coût par conversion.",
+  "points_cles": ["Campagne Google Performance Max ajoutee au-dessus des campagnes Display et Discovery existantes (Galaxy Campus Store).", "Pilotage ML des encheres, du mix creatif et de l'allocation cross-canal, teste en controle sur cinq semaines.", "2,5x de conversions, cout par conversion -60%, taux de clic double.", "Preuve B, statut signaux mitiges."],
+  "description": "Samsung Electronics a monte un test controle en Coree sur son Galaxy Campus Store, un site marchand dedie aux etudiants pour les produits mobiles et IT. Le groupe temoin tournait avec ses campagnes Display et Discovery seules ; le groupe test ajoutait une campagne Performance Max par-dessus. Toutes visaient les memes conversions : une vue de page ou un achat sur le site Samsung. On depose les assets (videos, images, textes), et l'algorithme de Google decide en continu quelle creation montrer, sur quel canal parmi Search, YouTube, Display, Discover, Maps et Gmail, et a quelle enchere. Le test a tourne cinq semaines. En complement des campagnes existantes, Performance Max a fait 2,5 fois plus de conversions, avec un coût par conversion en baisse de 60 % et un taux de clic double. Apres ce resultat, Samsung a etendu l'usage de Performance Max, y compris sur des campagnes courtes, et a commence a deployer les Video action campaigns au premier trimestre 2022.",
+  "fonctionnement_operationnel": {
+    "cadence": "En continu, avec une phase de montee en puissance de deux semaines. Le cas Samsung a ete juge sur cinq semaines, pas avant.",
+    "opere_par": "L'equipe media (interne ou agence), avec l'equipe data pour le tracking des conversions e-commerce.",
+    "signal_pilote": "La conversion e-commerce (vue de page ou achat). Si le tag de conversion est mal pose ou incomplet, l'algo optimise sur du bruit et le coût par conversion ne descend pas.",
+    "etapes": [
+      {
+        "etape": "Poser proprement le suivi de conversion",
+        "detail": "Definir la meme action de conversion pour toutes les campagnes (vue de page ou achat sur le site), sinon le test A/B n'est pas comparable.",
+        "acteur": "Equipe data"
+      },
+      {
+        "etape": "Structurer le test en incrementiel",
+        "detail": "Un groupe temoin Display + Discovery seul, un groupe test avec Performance Max en plus. C'est le delta entre les deux qui mesure l'apport reel.",
+        "acteur": "Equipe media"
+      },
+      {
+        "etape": "Fournir les assets en volume",
+        "detail": "Videos, images et accroches en quantite pour donner de la matiere a l'algo. Peu d'assets et il tourne en rond sur les memes combinaisons.",
+        "acteur": "Equipe creative"
+      },
+      {
+        "etape": "Laisser converger avant de conclure",
+        "detail": "Deux semaines de ramp-up minimum. Couper ou remanier pendant cette phase fausse la lecture.",
+        "acteur": "IA Google"
+      }
+    ]
+  },
+  "resultats": [
+    {
+      "metrique": "Conversions (vs Display + Discovery seuls)",
+      "valeur": "2,5x",
+      "citation_exacte": "2.5X conversions",
+      "source_ref": "S1"
+    },
+    {
+      "metrique": "Coût par conversion",
+      "valeur": "-60 %",
+      "citation_exacte": "-60% cost per conversion",
+      "source_ref": "S1"
+    },
+    {
+      "metrique": "Taux de clic",
+      "valeur": "2x",
+      "citation_exacte": "2X click through rate",
+      "source_ref": "S1"
+    }
+  ],
+  "niveau_preuve": {
+    "niveau": "B",
+    "justification": "Etude de cas Think with Google chiffree, issue d'un test controle (groupe temoin vs test) avec citation nominative d'un responsable Samsung Coree - biais plateforme. La realite de la boutique (Galaxy Campus Store) est corroboree par une source presse independante, mais l'incrementiel n'est pas confirme en resultats financiers."
+  },
+  "dates": {
+    "lancement": "2022 (test de cinq semaines en Coree, cas publie 2022)",
+    "derniere_confirmation_activite": "2025-2026 - Performance Max reste le format d'acquisition par defaut de Google Ads",
+    "verifie_le": "2026-07-11",
+    "revoir_apres": "2026-10-11"
+  },
+  "statut_vivant": {
+    "statut": "signaux_mitiges",
+    "note": "Le cas chiffre date de 2022 et Samsung ne communique plus dessus. Le pattern lui-meme (PMax en complement des campagnes existantes) est plus central que jamais dans Google Ads en 2025-2026, et le Galaxy Campus Store est toujours actif cote presse coreenne."
+  },
+  "sources": [
+    {
+      "ref": "S1",
+      "type": "customer_story_plateforme",
+      "titre": "How Samsung Electronics boosts conversions - Think with Google APAC",
+      "url": "https://business.google.com/en-all/think/ai-excellence/samsung-electronics-boosts-conversions/",
+      "date_publication": "2022",
+      "consulte_le": "2026-07-11",
+      "fiabilite": "T2_officiel_interesse"
+    },
+    {
+      "ref": "S2",
+      "type": "presse",
+      "titre": "Korean students can get discounts on various Samsung products via Galaxy Campus Store - SamMobile",
+      "url": "https://www.sammobile.com/news/samsung-korea-galaxy-campus-store-discounts-smartphones-laptops-accessories-students/",
+      "date_publication": "2022",
+      "consulte_le": "2026-07-11",
+      "fiabilite": "T4_secondaire"
+    }
+  ],
+  "schema_flow": {
+    "statut": "documente",
+    "noeuds": [
+      {
+        "id": "assets",
+        "role_generique": "data_source",
+        "label": "Assets : videos, images, textes",
+        "outil_documente": "Asset groups PMax"
+      },
+      {
+        "id": "conv",
+        "role_generique": "data_source",
+        "label": "Signal de conversion (vue de page / achat)",
+        "outil_documente": "Google tag / GA4"
+      },
+      {
+        "id": "ai",
+        "role_generique": "paid_platform",
+        "label": "IA Google : enchères, canal, rotation créa",
+        "outil_documente": "Google Ads Performance Max"
+      },
+      {
+        "id": "base",
+        "role_generique": "paid_platform",
+        "label": "Campagnes existantes Display + Discovery"
+      },
+      {
+        "id": "touch",
+        "role_generique": "site_app",
+        "label": "Search / YouTube / Display / Discover / Maps / Gmail"
+      },
+      {
+        "id": "store",
+        "role_generique": "site_app",
+        "label": "Galaxy Campus Store (achat)"
+      }
+    ],
+    "liens": [
+      [
+        "assets",
+        "ai"
+      ],
+      [
+        "conv",
+        "ai"
+      ],
+      [
+        "base",
+        "touch"
+      ],
+      [
+        "ai",
+        "touch"
+      ],
+      [
+        "touch",
+        "store"
+      ],
+      [
+        "store",
+        "conv",
+        "feedback conversion"
+      ]
+    ]
+  },
+  "replication": {
+    "statut_epistemique": "infere",
+    "prerequis_data": [
+      "Tracking de conversion e-commerce fiable (vue de page / achat)",
+      "Consent Mode v2 en UE",
+      "Feed produit propre si vente en ligne"
+    ],
+    "prerequis_orga": [
+      "Assets créatifs vidéo/image/texte en volume",
+      "Capacité à structurer un test incrémental (temoin vs test)"
+    ],
+    "stack_possible": [
+      "Google Ads Performance Max + GA4, en complément de campagnes Display/Discovery existantes"
+    ],
+    "premiere_etape": "Lancer un test officiel Google Ads PMax en complement des campagnes actuelles, sur un objectif de conversion unique, et mesurer le delta plutot que le volume brut.",
+    "playbook": [
+      {
+        "action": "Valider le tracking de conversion : une seule action de conversion (vue de page ou achat), identique sur toutes les campagnes",
+        "livrable": "Tag valide dans Google Ads / GA4, meme action pour temoin et test"
+      },
+      {
+        "action": "Reunir les assets en volume (videos, images, titres, descriptions) pour les asset groups",
+        "livrable": "Banque d'assets chargee, plusieurs formats par groupe"
+      },
+      {
+        "action": "Structurer le test incrementiel : Display + Discovery seuls en temoin, PMax en plus sur le perimetre test",
+        "livrable": "Plan de test ecrit avec budget et KPI (conversions, cout par conversion)"
+      },
+      {
+        "action": "Lancer la campagne et ne pas la remanier pendant le ramp-up",
+        "livrable": "Campagne live, deux semaines d'apprentissage sans intervention"
+      },
+      {
+        "action": "Comparer conversions et cout par conversion entre temoin et test, puis decider du scaling",
+        "livrable": "Lecture incrementale documentee et decision budget"
+      }
+    ],
+    "equipe": "1 media buyer + 1 profil data/tracking (tag et conversions) + assets fournis par la crea interne ou une agence"
+  },
+  "seo": {
+    "slug": "samsung-performance-max-galaxy-campus-store-2022",
+    "title": "Samsung : Performance Max sur le Galaxy Campus Store - 2,5x de conversions, -60 % de coût par conversion (2022)",
+    "meta_description": "Samsung a ajoute Performance Max a ses campagnes Display et Discovery (Galaxy Campus Store, Coree) : 2,5x de conversions, -60 % de coût par conversion.",
+    "resume_citable": "Samsung Electronics a multiplie par 2,5 ses conversions et baisse son coût par conversion de 60 % en ajoutant une campagne Google Performance Max au-dessus de ses campagnes Display et Discovery pour le Galaxy Campus Store en Coree (test controle sur cinq semaines, 2022).",
+    "faq": [
+      {
+        "q": "Performance Max remplace-t-il les campagnes existantes ?",
+        "a": "Dans le cas Samsung, non : PMax a ete ajoute au-dessus des campagnes Display et Discovery en place, et c'est ce complement qui a fait 2,5x plus de conversions."
+      },
+      {
+        "q": "Faut-il developper un modele IA ?",
+        "a": "Non. Performance Max est une feature de Google Ads. L'enjeu est la qualite du tracking de conversion et le volume d'assets, pas le developpement d'un modele."
+      }
+    ]
+  },
+  "logo_domain": "samsung.com",
+  "stack_technique": [
+    {
+      "nom": "Google Ads Performance Max",
+      "categorie": "plateforme",
+      "detail": "campagne unique pilotee par le ML de Google : encheres, choix du canal et rotation des creas sur Search, YouTube, Display, Discover, Maps et Gmail",
+      "url": "https://ads.google.com"
+    },
+    {
+      "nom": "Smart Bidding",
+      "categorie": "outil",
+      "detail": "encheres automatiques optimisees sur l'action de conversion definie (vue de page ou achat)",
+      "url": "https://ads.google.com"
+    },
+    {
+      "nom": "Google tag / GA4",
+      "categorie": "outil",
+      "detail": "pose du signal de conversion e-commerce, partage entre le groupe temoin et le groupe test",
+      "url": "https://marketingplatform.google.com/about/analytics/"
+    },
+    {
+      "nom": "Campagnes Display et Discovery",
+      "categorie": "plateforme",
+      "detail": "campagnes existantes conservees comme groupe temoin, PMax ajoute par-dessus dans le groupe test",
+      "url": "https://ads.google.com"
+    }
+  ]
+}

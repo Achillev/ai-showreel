@@ -1,0 +1,306 @@
+{
+  "id": "adeo-leroy-merlin-fiches-produit-gemini-2024",
+  "type_fiche": "succes",
+  "marque": "Leroy Merlin (Adeo)",
+  "groupe": "Adeo",
+  "industrie": "retail_ecom",
+  "marches_deploiement": [
+    "France",
+    "International (enseignes Adeo)"
+  ],
+  "transposable_ue": {
+    "flag": "oui",
+    "note": "Deja deploye en UE (Adeo, base en France). L'enrichissement automatique des attributs produit par IA generative porte sur des donnees catalogue, pas sur des donnees personnelles. Une etape de verification et un controle humain sur les cas incertains repondent aux exigences de qualite et de tracabilite attendues sous l'AI Act."
+  },
+  "metier": "e-commerce, gestion du catalogue produit",
+  "marque_linkedin": "https://www.linkedin.com/company/leroy-merlin/",
+  "intervenants": [
+    {
+      "nom": "Anthony Pierson",
+      "role": "Digital Domain Leader, ADEO Service",
+      "source_ref": "S1"
+    },
+    {
+      "nom": "Guillaume Leger",
+      "role": "Partner et Product Lead, Artefact",
+      "source_ref": "S1"
+    }
+  ],
+  "agences": [
+    {
+      "nom": "Artefact",
+      "role": "Partenaire de mise en oeuvre du projet d'enrichissement des fiches produit",
+      "source_ref": "S1"
+    },
+    {
+      "nom": "Google Cloud",
+      "role": "Fournisseur des modeles Gemini utilises pour l'extraction d'attributs",
+      "source_ref": "S1"
+    }
+  ],
+  "axes": {
+    "levier": "activation_conversion",
+    "touchpoints": [
+      "fiches produit e-commerce",
+      "moteur de recherche et filtres du site",
+      "referentiel catalogue"
+    ],
+    "etape_parcours": "considération",
+    "famille": "generation",
+    "pattern": "enrichissement genAI des attributs et fiches produit",
+    "type_ia": [
+      "LLM generatif",
+      "classification (DistilBERT)",
+      "extraction d'attributs",
+      "auto-verification"
+    ],
+    "plateforme_stack": [
+      "Google Cloud Gemini",
+      "DistilBERT",
+      "custom/in-house Adeo"
+    ],
+    "objectif_metrique": [
+      "taux de couverture des attributs",
+      "precision des attributs",
+      "taux d'erreur",
+      "part de predictions automatisees"
+    ]
+  },
+  "implementation": "custom",
+  "objectif_business": "Rendre les fiches produit completes et fiables a grande echelle, pour ne pas perdre de ventes a cause d'un contenu produit insuffisant et pour ameliorer la recherche et le filtrage sur le site.",
+  "points_cles": ["Enrichissement automatise des fiches produit par IA generative, avec Artefact.", "Classification DistilBERT puis extraction d'attributs par Gemini avec auto-verification.", "Couverture des attributs passee de 27% a 87%, plus de 96% d'exactitude.", "Preuve B, statut vivant confirme en production."],
+  "description": "Adeo, la maison mere de Leroy Merlin, a industrialise l'enrichissement de ses fiches produit avec l'IA generative, en partenariat avec Artefact et sur Google Cloud. Le catalogue couvre environ 3 600 categories, avec 50 a 60 attributs en moyenne par produit et une bibliotheque de 11 000 attributs. Un modele de classification DistilBERT range les produits, puis Gemini extrait les valeurs d'attributs avec une etape d'auto-verification integree. La couverture des attributs est passee de 27% a 87%. Sur un lot mesure, environ 32 000 predictions ont ete faites, dont plus de 20 000 entierement automatisees, avec plus de 96% d'exactitude et un taux d'erreur de 3,6%, contre environ 8% pour l'humain. 63% des produits atteignent une precision superieure a 96%.",
+  "resultats": [
+    {
+      "metrique": "Couverture des attributs produit",
+      "valeur": "de 27% a 87%",
+      "citation_exacte": "increased from 27% to 87%",
+      "source_ref": "S2"
+    },
+    {
+      "metrique": "Taux d'erreur 3,6%, contre environ 8% pour un humain",
+      "valeur": "96%+ d'exactitude",
+      "citation_exacte": "over 96% accuracy, with an error rate of 3.6%",
+      "source_ref": "S1"
+    },
+    {
+      "metrique": "des produits depassent 96% de precision",
+      "valeur": "63%",
+      "citation_exacte": "63% of products achieved >96% precision",
+      "source_ref": "S1"
+    },
+    {
+      "metrique": "Predictions IA entierement automatisees, sur environ 32 000",
+      "valeur": "20 000+",
+      "citation_exacte": "About 32,000 predictions were made by the algorithm, over 20,000 of which were fully automated",
+      "source_ref": "S1"
+    }
+  ],
+  "niveau_preuve": {
+    "niveau": "B",
+    "justification": "Etude de cas chiffree publiee par l'integrateur Artefact et par Google Cloud (sources officielles interessees), avec des mesures de couverture, d'exactitude et de taux d'erreur sur un lot de production. Chiffres venant des partenaires du projet, pas d'un audit tiers, ce qui place a B."
+  },
+  "dates": {
+    "lancement": "2024",
+    "derniere_confirmation_activite": "2025",
+    "verifie_le": "2026-07-11",
+    "revoir_apres": "2027-01-11"
+  },
+  "statut_vivant": {
+    "statut": "confirme",
+    "note": "Etude de cas Artefact et Google Cloud decrivant un dispositif en production sur le catalogue Adeo, avec extension de la strategie IA generative du groupe (Gemini) sur plusieurs enseignes."
+  },
+  "sources": [
+    {
+      "ref": "S1",
+      "type": "customer_story_plateforme",
+      "fiabilite": "T2_officiel_interesse",
+      "titre": "ADEO: Improving product referencing speed and quality with AI",
+      "url": "https://www.artefact.com/cases/adeo-improving-product-referencing-speed-and-quality-with-ai/",
+      "date_publication": "2024",
+      "consulte_le": "2026-07-11"
+    },
+    {
+      "ref": "S2",
+      "type": "customer_story_plateforme",
+      "fiabilite": "T2_officiel_interesse",
+      "titre": "ADEO case study - Google Cloud",
+      "url": "https://cloud.google.com/customers/adeogroup-gen-ai",
+      "date_publication": "2024",
+      "consulte_le": "2026-07-11"
+    },
+    {
+      "ref": "S3",
+      "type": "presse",
+      "fiabilite": "T4_secondaire",
+      "titre": "Leroy Merlin entraine ses vendeurs avec une IA conversationnelle",
+      "url": "https://www.republik-retail.fr/solutions-techno/omnicanal/leroy-merlin-entraine-ses-vendeurs-avec-une-ia-conversationnelle.html",
+      "date_publication": "2025",
+      "consulte_le": "2026-07-11"
+    }
+  ],
+  "fonctionnement_operationnel": {
+    "cadence": "Par lot sur le catalogue, avec traitement continu des nouveaux produits et references a enrichir.",
+    "opere_par": "Equipe data et catalogue d'Adeo, avec l'appui d'Artefact pour la mise en oeuvre du pipeline.",
+    "signal_pilote": "La qualite des sources produit (documents fournisseurs, libelles) et le referentiel d'attributs. Si la source est pauvre, l'extraction se degrade et le taux d'erreur monte.",
+    "etapes": [
+      {
+        "etape": "Classification",
+        "detail": "DistilBERT range chaque produit dans une des 3 600 categories du referentiel.",
+        "acteur": "IA"
+      },
+      {
+        "etape": "Extraction d'attributs",
+        "detail": "Gemini extrait les valeurs d'attributs a partir des documents et libelles produit.",
+        "acteur": "IA"
+      },
+      {
+        "etape": "Auto-verification",
+        "detail": "Une etape de verification integree filtre les predictions peu sures avant automatisation.",
+        "acteur": "IA"
+      },
+      {
+        "etape": "Controle et bascule",
+        "detail": "Les predictions sures sont automatisees, les cas incertains passent en revue humaine avant publication.",
+        "acteur": "equipe data"
+      }
+    ]
+  },
+  "schema_flow": {
+    "statut": "documente",
+    "noeuds": [
+      {
+        "id": "source",
+        "role_generique": "data_source",
+        "label": "Documents et libelles produit fournisseurs"
+      },
+      {
+        "id": "classif",
+        "role_generique": "modele_ia",
+        "label": "Classification produit",
+        "outil_documente": "DistilBERT"
+      },
+      {
+        "id": "extraction",
+        "role_generique": "modele_ia",
+        "label": "Extraction d'attributs et auto-verification",
+        "outil_documente": "Google Cloud Gemini"
+      },
+      {
+        "id": "fiche",
+        "role_generique": "site_app",
+        "label": "Fiche produit enrichie sur le site"
+      }
+    ],
+    "liens": [
+      [
+        "source",
+        "classif"
+      ],
+      [
+        "classif",
+        "extraction"
+      ],
+      [
+        "extraction",
+        "fiche"
+      ],
+      [
+        "extraction",
+        "extraction",
+        "auto-verification, cas incertains en revue"
+      ]
+    ]
+  },
+  "replication": {
+    "statut_epistemique": "infere",
+    "prerequis_data": [
+      "Referentiel d'attributs et taxonomie de categories",
+      "Documents et libelles produit fournisseurs exploitables",
+      "Jeu de validation pour mesurer precision et erreur"
+    ],
+    "prerequis_orga": [
+      "Regle de bascule automatique vers revue humaine sur les cas incertains",
+      "Equipe catalogue pour arbitrer les cas limites",
+      "Metrique de couverture et d'erreur suivie"
+    ],
+    "stack_possible": [
+      "Modele de classification produit",
+      "LLM generatif pour l'extraction d'attributs",
+      "Etape d'auto-verification et seuil de confiance"
+    ],
+    "premiere_etape": "Choisir une categorie a fort volume et fiches pauvres, brancher classification puis extraction genAI, et fixer un seuil d'automatisation avec revue des cas incertains.",
+    "playbook": [
+      {
+        "action": "Choisir une categorie a fort volume et fiches pauvres, auditer le referentiel d'attributs et la qualite des sources fournisseurs.",
+        "livrable": "Perimetre pilote arrete + jeu de validation annote"
+      },
+      {
+        "action": "Mettre en place la classification produit (modele type DistilBERT) sur le referentiel de categories.",
+        "livrable": "Classifieur evalue sur le jeu de validation"
+      },
+      {
+        "action": "Brancher l'extraction d'attributs par LLM avec auto-verification et seuil de confiance.",
+        "livrable": "Pipeline d'extraction avec taux d'erreur mesure face a la saisie humaine"
+      },
+      {
+        "action": "Cabler la bascule : predictions sures automatisees, cas incertains envoyes en file de revue humaine.",
+        "livrable": "File de revue outillee et regle de bascule documentee"
+      },
+      {
+        "action": "Passer la categorie pilote en production, suivre couverture et taux d'erreur, arbitrer l'extension.",
+        "livrable": "Tableau de bord couverture/precision et plan d'extension aux categories suivantes"
+      }
+    ],
+    "equipe": "1 ML engineer + 1 data engineer + 1 product owner catalogue, avec des experts categorie pour la revue des cas incertains"
+  },
+  "stack_technique": [
+    {
+      "nom": "Google Gemini",
+      "categorie": "llm",
+      "detail": "Modeles Gemini de Google utilises pour extraire les valeurs d'attributs produit, avec une etape d'auto-verification integree.",
+      "url": "https://cloud.google.com/vertex-ai"
+    },
+    {
+      "nom": "DistilBERT",
+      "categorie": "llm",
+      "detail": "Modele de classification open source (version distillee de BERT) qui range chaque produit dans une des 3 600 categories du referentiel.",
+      "url": "https://huggingface.co"
+    },
+    {
+      "nom": "Google Cloud",
+      "categorie": "plateforme",
+      "detail": "Socle cloud sur lequel tourne le pipeline d'enrichissement du catalogue Adeo.",
+      "url": "https://cloud.google.com"
+    },
+    {
+      "nom": "Artefact",
+      "categorie": "integrateur",
+      "detail": "Partenaire de mise en oeuvre du pipeline de classification et d'extraction d'attributs.",
+      "url": "https://www.artefact.com"
+    },
+    {
+      "nom": "Pipeline custom Adeo",
+      "categorie": "infra",
+      "detail": "Orchestration maison : referentiel de 11 000 attributs, seuils de confiance et bascule vers la revue humaine.",
+      "url": "https://www.adeo.com"
+    }
+  ],
+  "seo": {
+    "slug": "adeo-leroy-merlin-fiches-produit-gemini-2024",
+    "title": "Leroy Merlin (Adeo) : fiches produit enrichies par IA generative - couverture de 27% a 87% (2024)",
+    "meta_description": "Adeo, maison mere de Leroy Merlin, enrichit ses fiches produit avec Gemini et Artefact : couverture des attributs passee de 27% a 87%, plus de 96% d'exactitude.",
+    "resume_citable": "Avec Gemini et Artefact, Adeo (Leroy Merlin) a porte la couverture des attributs de ses fiches produit de 27% a 87%, avec plus de 96% d'exactitude et 63% des produits au-dela de 96% de precision.",
+    "faq": [
+      {
+        "q": "Que fait l'IA sur les fiches produit d'Adeo ?",
+        "a": "Un modele de classification range les produits et Gemini extrait automatiquement les valeurs d'attributs, avec une auto-verification, pour completer les fiches a grande echelle."
+      },
+      {
+        "q": "Quel gain chiffre ?",
+        "a": "La couverture des attributs est passee de 27% a 87%, avec plus de 96% d'exactitude sur le lot mesure et un taux d'erreur de 3,6% contre environ 8% pour l'humain."
+      }
+    ]
+  },
+  "logo_domain": "leroymerlin.fr"
+}

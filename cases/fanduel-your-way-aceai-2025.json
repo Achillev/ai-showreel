@@ -1,0 +1,303 @@
+{
+  "id": "fanduel-your-way-aceai-2025",
+  "type_fiche": "succes",
+  "marque": "FanDuel",
+  "groupe": "Flutter Entertainment",
+  "industrie": "sport_fitness",
+  "marches_deploiement": [
+    "Etats-Unis (Etats ou FanDuel Sportsbook est autorise, hors Connecticut pour AceAI)"
+  ],
+  "transposable_ue": {
+    "flag": "oui_avec_adaptations",
+    "note": "Risque reglementaire fort. FanDuel opere le pari sportif en ligne aux Etats-Unis sous un cadre Etat par Etat, sans equivalent direct en UE ou l'agrement est national (ANJ en France, entre autres). La personnalisation des paris et l'assistant genAI de decouverte tombent sous les regles de jeu responsable et de marketing des jeux d'argent, plus l'AI Act pour le profilage et les assistants conversationnels. Flutter opere aussi des marques UE (Paddy Power, Sisal, tombola), donc le pattern est portable a un operateur agree, avec garde-fous sur l'incitation."
+  },
+  "metier": "marketing / produit (personnalisation de l'offre de paris)",
+  "marque_linkedin": "https://www.linkedin.com/company/fanduel",
+  "intervenants": [
+    {
+      "nom": "Peter Jackson",
+      "role": "CEO, Flutter Entertainment",
+      "source_ref": "S1"
+    }
+  ],
+  "axes": {
+    "levier": "monetisation",
+    "touchpoints": [
+      "application FanDuel Sportsbook",
+      "constructeur de parlay Your Way",
+      "assistant conversationnel AceAI",
+      "decouverte de paris"
+    ],
+    "etape_parcours": "achat",
+    "famille": "personnalisation",
+    "pattern": "personnalisation de l'offre de paris pilotee par pricing IA, avec assistant genAI de decouverte",
+    "type_ia": [
+      "modeles de pricing et de gestion du risque",
+      "grands modeles de langage (assistant AceAI)",
+      "recommandation et decouverte de paris"
+    ],
+    "plateforme_stack": [
+      "custom/in-house (pricing et risque Flutter)",
+      "AceAI (plusieurs LLM + infrastructure sportsbook)",
+      "numberFire (analytics sportif FanDuel)"
+    ],
+    "objectif_metrique": [
+      "adoption de l'offre personnalisee",
+      "penetration du parlay",
+      "engagement et retention client",
+      "marge brute structurelle"
+    ]
+  },
+  "implementation": "custom",
+  "objectif_business": "Elargir et personnaliser l'offre de paris pour capter des mises impossibles avec un catalogue standard, en s'appuyant sur les modeles de pricing proprietaires et une couche de decouverte assistee par IA.",
+  "points_cles": ["Personnalisation de l'offre de paris via Your Way, avec assistant genAI AceAI de decouverte.", "Pricing et risque in-house Flutter, AceAI multi-LLM, statistiques numberFire.", "Au Super Bowl 2025, 1 client sur 20 a utilise Your Way, 90% ont place des paris autrement impossibles.", "Niveau de preuve A, statut vivant confirme."],
+  "description": "Your Way est le produit de parlay personnalisable de FanDuel, deploye dans tous les Etats pour la NFL au cours du trimestre et mis a l'epreuve au Super Bowl 2025. Il donne au client une plus grande latitude pour construire ses combines, en s'appuyant sur les capacites proprietaires de pricing et de gestion du risque de Flutter pour proposer des combinaisons quasi illimitees tout en tenant la marge. Selon les resultats du T4 2024 de Flutter, environ 1 client sur 20 a utilise Your Way pendant le Super Bowl, et 90 pour cent d'entre eux ont place des paris qu'ils n'auraient pas pu faire sans ces options de personnalisation. Le jour du Super Bowl, FanDuel a compte 3 millions de clients actifs, 17,7 millions de paris et 470 millions de dollars mises. En complement, FanDuel a lance AceAI, un assistant conversationnel qui combine plusieurs grands modeles de langage a l'infrastructure sportsbook et aux donnees de numberFire : le client peut y analyser des statistiques joueurs et equipes, decouvrir des idees de paris et construire ses combines dans une seule conversation, l'ajout au coupon restant a sa main.",
+  "resultats": [
+    {
+      "metrique": "Clients ayant utilise Your Way au Super Bowl 2025",
+      "valeur": "1 sur 20 environ",
+      "citation_exacte": "approximately 1 in 20 customers used the product",
+      "source_ref": "S1"
+    },
+    {
+      "metrique": "Utilisateurs Your Way placant des paris autrement impossibles",
+      "valeur": "90%",
+      "citation_exacte": "90% placing bets they couldn't have made",
+      "source_ref": "S1"
+    },
+    {
+      "metrique": "Mises le jour du Super Bowl, sur 3M de clients et 17,7M de paris",
+      "valeur": "470M$",
+      "citation_exacte": "3 million active customers placing 17.7 million bets with $470 million wagered",
+      "source_ref": "S1"
+    }
+  ],
+  "niveau_preuve": {
+    "niveau": "A",
+    "justification": "Chiffres issus des resultats financiers du T4 2024 de Flutter (publies le 4 mars 2025) et attribues au CEO Peter Jackson, donc niveau A. La presse specialisee corrobore l'adoption de Your Way au Super Bowl et l'activite FanDuel."
+  },
+  "dates": {
+    "lancement": "2024-2025 (Your Way deploye tous Etats pour la NFL ; AceAI lance en juillet 2026)",
+    "derniere_confirmation_activite": "2026-07 (AceAI ouvert a tous les clients US hors Connecticut, 7 sports)",
+    "verifie_le": "2026-07-11",
+    "revoir_apres": "2027-01-11"
+  },
+  "statut_vivant": {
+    "statut": "confirme",
+    "note": "Your Way est en production depuis la saison NFL 2024-2025. AceAI, la couche conversationnelle genAI, a ete ouvert plus largement en juillet 2026. Le programme de personnalisation IA de FanDuel est actif et en expansion."
+  },
+  "sources": [
+    {
+      "ref": "S1",
+      "type": "document_officiel_sec",
+      "fiabilite": "T1_primaire",
+      "titre": "Flutter Entertainment Reports Fourth Quarter 2024 Financial Results",
+      "url": "https://www.globenewswire.com/news-release/2025/03/04/3036956/0/en/Flutter-Entertainment-Reports-Fourth-Quarter-2024-Financial-Results.html",
+      "date_publication": "2025-03-04",
+      "consulte_le": "2026-07-11"
+    },
+    {
+      "ref": "S2",
+      "type": "presse",
+      "fiabilite": "T3_presse_etablie",
+      "titre": "Flutter touts growth, particularly in US despite tough NFL season",
+      "url": "https://igamingbusiness.com/finance/flutter-fanduel-q4-2024/",
+      "date_publication": "2025-03",
+      "consulte_le": "2026-07-11"
+    },
+    {
+      "ref": "S3",
+      "type": "blog_officiel",
+      "fiabilite": "T2_officiel_interesse",
+      "titre": "Meet AceAI: FanDuel's AI-Powered Sports Betting Assistant",
+      "url": "https://www.fanduel.com/about/news/meet-aceai-fanduel-s-ai-powered-sports-betting-assistant",
+      "date_publication": "2026-07-07",
+      "consulte_le": "2026-07-11"
+    },
+    {
+      "ref": "S4",
+      "type": "presse",
+      "fiabilite": "T4_secondaire",
+      "titre": "How FanDuel's AI Chatbot, AceAI, Is Reshaping Sports Betting",
+      "url": "https://www.playusa.com/news/fanduel-expands-ai-sports-betting-assistant/",
+      "date_publication": "2026-07",
+      "consulte_le": "2026-07-11"
+    }
+  ],
+  "fonctionnement_operationnel": {
+    "cadence": "Temps reel : les combines Your Way sont cotees a la volee par les modeles de pricing ; AceAI repond en conversation avec memoire des echanges.",
+    "opere_par": "Equipes trading, produit et data science de FanDuel/Flutter ; AceAI a ete construit par une equipe d'environ 20 personnes (ingenieurs, specialistes IA, produit, design, conformite).",
+    "signal_pilote": "Le pricing et la gestion du risque sur des combinaisons quasi illimitees. Sans modele de risque solide, une offre de parlay ouverte expose l'operateur a des combinaisons a marge negative.",
+    "etapes": [
+      {
+        "etape": "Construction de la combine",
+        "detail": "Le client assemble une combine personnalisee au-dela du catalogue standard, seul ou via AceAI.",
+        "acteur": "client"
+      },
+      {
+        "etape": "Pricing et controle du risque",
+        "detail": "Les modeles proprietaires cotent la combine et bornent l'exposition en tenant la marge.",
+        "acteur": "IA (pricing / risque)"
+      },
+      {
+        "etape": "Decouverte assistee",
+        "detail": "AceAI analyse statistiques et tendances via numberFire et propose des idees de paris dans la conversation.",
+        "acteur": "IA (LLM)"
+      },
+      {
+        "etape": "Ajout au coupon",
+        "detail": "Le client valide et ajoute lui-meme la selection ; l'IA ne place jamais le pari a sa place.",
+        "acteur": "client"
+      }
+    ]
+  },
+  "schema_flow": {
+    "statut": "documente",
+    "noeuds": [
+      {
+        "id": "stats",
+        "role_generique": "data_source",
+        "label": "Statistiques et analytics sportifs",
+        "outil_documente": "numberFire (FanDuel)"
+      },
+      {
+        "id": "aceai",
+        "role_generique": "modele_ia",
+        "label": "Assistant conversationnel de decouverte",
+        "outil_documente": "AceAI (plusieurs LLM)"
+      },
+      {
+        "id": "pricing",
+        "role_generique": "modele_ia",
+        "label": "Pricing et gestion du risque des combines",
+        "outil_documente": "in-house Flutter"
+      },
+      {
+        "id": "app",
+        "role_generique": "site_app",
+        "label": "Application FanDuel Sportsbook (Your Way)"
+      },
+      {
+        "id": "customer",
+        "role_generique": "humain",
+        "label": "Client parieur"
+      }
+    ],
+    "liens": [
+      [
+        "stats",
+        "aceai"
+      ],
+      [
+        "customer",
+        "aceai",
+        "questions et idees de paris"
+      ],
+      [
+        "aceai",
+        "app",
+        "combine suggeree"
+      ],
+      [
+        "app",
+        "pricing",
+        "combine a coter"
+      ],
+      [
+        "pricing",
+        "app",
+        "cote et limite de risque"
+      ],
+      [
+        "app",
+        "customer",
+        "ajout au coupon (par le client)"
+      ]
+    ]
+  },
+  "stack_technique": [
+    {
+      "nom": "AceAI (multi-LLM)",
+      "categorie": "llm",
+      "detail": "Assistant conversationnel de decouverte qui combine plusieurs grands modeles de langage a l'infrastructure sportsbook ; les modeles exacts ne sont pas nommes publiquement",
+      "url": "https://www.fanduel.com"
+    },
+    {
+      "nom": "Moteur de pricing et de risque Flutter",
+      "categorie": "outil",
+      "detail": "Modeles proprietaires de pricing et de gestion du risque qui cotent en temps reel les combines Your Way et bornent l'exposition",
+      "url": "https://www.flutter.com"
+    },
+    {
+      "nom": "numberFire",
+      "categorie": "outil",
+      "detail": "Plateforme d'analytics sportif de FanDuel qui alimente AceAI en statistiques joueurs et equipes",
+      "url": "https://www.numberfire.com"
+    },
+    {
+      "nom": "FanDuel Sportsbook",
+      "categorie": "plateforme",
+      "detail": "Application sportsbook qui expose le constructeur de parlay Your Way et la conversation AceAI",
+      "url": "https://www.fanduel.com"
+    }
+  ],
+  "replication": {
+    "statut_epistemique": "infere",
+    "prerequis_data": [
+      "catalogue de marches et de props granulaire",
+      "modele de correlation et de pricing des combines",
+      "donnees statistiques sportives pour la decouverte"
+    ],
+    "prerequis_orga": [
+      "equipe trading et data science pour le pricing du risque",
+      "conformite jeu responsable et agrement local",
+      "garde-fous AI Act sur l'assistant conversationnel"
+    ],
+    "stack_possible": [
+      "moteur de pricing de parlay",
+      "assistant LLM branche sur les donnees produit",
+      "app avec constructeur de combine"
+    ],
+    "premiere_etape": "Batir un modele de pricing et de correlation des combines, puis exposer un constructeur personnalise sur un sport avant d'ajouter une couche conversationnelle.",
+    "playbook": [
+      {
+        "action": "Cadrer la data : catalogue de marches et de props granulaire, historique de cotes et de resultats pour modeliser les correlations entre selections.",
+        "livrable": "Referentiel de marches et jeu de donnees de correlation exploitable"
+      },
+      {
+        "action": "Construire et backtester le modele de pricing et de risque des combines sur un sport, avec des limites d'exposition par combinaison.",
+        "livrable": "Moteur de pricing valide en backtest, avec regles de bornage du risque"
+      },
+      {
+        "action": "Exposer un constructeur de combine personnalise dans l'app sur ce sport, cote en temps reel par le moteur.",
+        "livrable": "Constructeur en production sur un sport, cote a la volee"
+      },
+      {
+        "action": "Tester en conditions reelles sur un evenement a fort trafic et mesurer adoption, part de paris rendus possibles et tenue de la marge.",
+        "livrable": "Bilan chiffre adoption / marge sur l'evenement test"
+      },
+      {
+        "action": "Ajouter la couche conversationnelle de decouverte branchee sur les statistiques, avec ajout au coupon laisse au client et garde-fous jeu responsable.",
+        "livrable": "Assistant de decouverte en beta, conforme aux regles locales"
+      }
+    ],
+    "equipe": "2-3 quants / data scientists pricing + 1 PM + 2 devs app + 1 profil conformite jeu responsable"
+  },
+  "seo": {
+    "slug": "fanduel-your-way-aceai-2025",
+    "title": "FanDuel : paris personnalises Your Way et assistant genAI AceAI - 1 client sur 20 au Super Bowl (2025)",
+    "meta_description": "FanDuel personnalise l'offre de paris via Your Way (pricing IA) et l'assistant genAI AceAI ; au Super Bowl 2025, 1 client sur 20 l'a utilise, 90% placant des paris autrement impossibles.",
+    "resume_citable": "FanDuel personnalise l'offre de paris avec Your Way, un constructeur de combines cote par ses modeles de pricing IA, complete par l'assistant genAI AceAI : selon les resultats T4 2024 de Flutter, environ 1 client sur 20 a utilise Your Way au Super Bowl 2025 et 90 pour cent d'entre eux ont place des paris impossibles sans cette personnalisation, sur une journee a 3 millions de clients actifs et 470 millions de dollars mises.",
+    "faq": [
+      {
+        "q": "Comment FanDuel personnalise l'offre de paris ?",
+        "a": "Via Your Way, un constructeur de combines personnalisables cote en temps reel par les modeles de pricing et de risque proprietaires, et via l'assistant genAI AceAI qui aide a decouvrir et assembler des paris."
+      },
+      {
+        "q": "Quel resultat chiffre est documente ?",
+        "a": "Selon les resultats T4 2024 de Flutter, environ 1 client sur 20 a utilise Your Way au Super Bowl 2025 et 90 pour cent d'entre eux ont place des paris qu'ils n'auraient pas pu faire sans cette personnalisation."
+      }
+    ]
+  },
+  "logo_domain": "fanduel.com"
+}

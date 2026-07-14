@@ -1,0 +1,323 @@
+{
+  "type_fiche": "succes",
+  "id": "vodafone-ai-booster-churn-2022",
+  "marque": "Vodafone",
+  "industrie": "telco",
+  "marches_deploiement": [
+    "8+ pays via AI Booster (Allemagne, UK, Italie, Espagne, Turquie, Égypte, Afrique du Sud...)"
+  ],
+  "transposable_ue": {
+    "flag": "oui_avec_adaptations",
+    "note": "Déjà opéré majoritairement en UE. Le scoring de churn est un profilage RGPD (base légale, minimisation, information client) ; si des décisions entièrement automatisées en découlent, art. 22 RGPD à cadrer. AI Act : risque limité, obligations de transparence."
+  },
+  "metier": "Rétention / CRM & base management",
+  "marque_linkedin": "https://www.linkedin.com/company/vodafone",
+  "axes": {
+    "levier": "retention",
+    "touchpoints": [
+      "campagnes de rétention sortantes (appels, SMS, email)",
+      "offres personnalisées in-app / MyVodafone",
+      "service client (priorisation)"
+    ],
+    "etape_parcours": "post-achat / fidélisation",
+    "famille": "prediction",
+    "pattern": "Churn prediction industrialisée : modèles de résiliation entraînés par marché sur une plateforme MLOps groupe, avec templates standardisés répliqués de pays en pays pour déclencher des actions de rétention proactives",
+    "type_ia": [
+      "ML supervisé de classification (XGBoost, BigQuery ML)",
+      "pipelines AutoML / Vertex AI",
+      "détection de drift et explicabilité automatisées"
+    ],
+    "plateforme_stack": [
+      "Google Cloud Vertex AI (plateforme interne « AI Booster »)",
+      "Neuron (data ocean sur BigQuery)",
+      "Cloud Build CI/CD"
+    ],
+    "objectif_metrique": [
+      "taux d'attrition",
+      "time-to-market des modèles",
+      "uplift de rétention"
+    ]
+  },
+  "implementation": "hybride",
+  "objectif_business": "Retenir les clients avant qu'ils partent, marché par marché, et arrêter de reconstruire un modèle de churn à zéro dans chaque pays.",
+  "points_cles": ["Prédiction de churn industrialisée, un modèle par marché répliqué de pays en pays.", "Plateforme MLOps AI Booster sur Vertex AI, baseline XGBoost, data unifiée sur BigQuery.", "Time-to-market divisé par 5, PoC en production en 4 semaines au lieu de 5 mois.", "Preuve B, statut confirmé, milliers de modèles par jour sur 8+ pays."],
+  "description": "Vodafone a monté AI Booster, une plateforme interne de mise en production de modèles bâtie sur Vertex AI et branchée sur Neuron, son entrepôt de données groupe. Le cas fondateur, c'est la prédiction de résiliation. L'équipe Big Data & AI construit un modèle de churn pour un marché à partir des données d'usage, de facturation, de contrat et d'interactions, le pousse en production via des pipelines standardisés, puis réutilise le même gabarit dans un autre pays sans repartir de zéro. Les scores qui en sortent nourrissent les campagnes de rétention et la personnalisation des offres. La plateforme fait tourner des milliers de modèles par jour sur plus de huit pays, et fait passer un modèle de l'essai à la production en quatre semaines au lieu de cinq mois. Un point d'honnêteté : les chiffres publics portent sur la vitesse et l'échelle de production, pas sur des points de churn évités, que Vodafone ne communique pas.",
+  "fonctionnement_operationnel": {
+    "cadence": "Scores recalculés en batch régulier (souvent hebdomadaire), modèles réentraînés quand leur performance dérive. C'est un programme permanent, pas une campagne.",
+    "opere_par": "Une équipe data science centrale pour les modèles et la plateforme, les équipes marketing/CRM locales pour l'activation.",
+    "signal_pilote": "Le label de résiliation historique. S'il est mal défini (quand considère-t-on qu'un client a churné ?), tout le modèle est biaisé, quelle que soit sa précision affichée.",
+    "etapes": [
+      {
+        "etape": "Unifier la donnée client",
+        "detail": "Usage, facturation, contrats, tickets support rassemblés au même endroit, avec au moins douze mois de profondeur. Sans cette base, pas de modèle fiable.",
+        "acteur": "Équipe data"
+      },
+      {
+        "etape": "Entraîner et scorer",
+        "detail": "Un modèle apprend à repérer les signaux de départ et attribue à chaque client une probabilité de churn. Un XGBoost suffit souvent comme point de départ.",
+        "acteur": "IA / data science"
+      },
+      {
+        "etape": "Passer la main aux équipes locales",
+        "detail": "Les scores partent dans le CRM. Le marketing du pays décide quoi faire des clients à risque : offre, appel, geste commercial.",
+        "acteur": "Marketing / CRM local"
+      },
+      {
+        "etape": "Toujours garder un groupe témoin",
+        "detail": "On ne contacte pas 100 % des clients à risque. Une partie sert de témoin, sinon impossible de savoir si la rétention vient de l'action ou du hasard.",
+        "acteur": "Équipe data + marketing"
+      },
+      {
+        "etape": "Surveiller la dérive et réentraîner",
+        "detail": "Le comportement client change ; un modèle laissé tel quel se dégrade en silence. La plateforme suit cette dérive et déclenche le réentraînement.",
+        "acteur": "IA / MLOps"
+      }
+    ]
+  },
+  "resultats": [
+    {
+      "metrique": "Time-to-market des modèles ML",
+      "valeur": "÷5",
+      "citation_exacte": "5x reduction in time to market",
+      "source_ref": "S2"
+    },
+    {
+      "metrique": "Délai PoC vers production, contre environ 5 mois auparavant",
+      "valeur": "4 semaines",
+      "citation_exacte": "PoC-to-production can now be as little as four weeks",
+      "source_ref": "S3"
+    },
+    {
+      "metrique": "Fréquence de déploiement",
+      "valeur": "x5",
+      "citation_exacte": "5x increase in deployment frequency",
+      "source_ref": "S2"
+    },
+    {
+      "metrique": "Modèles ML en production par jour, sur 8+ pays",
+      "valeur": "milliers/jour",
+      "citation_exacte": "thousands of ML models daily",
+      "source_ref": "S1"
+    }
+  ],
+  "niveau_preuve": {
+    "niveau": "B",
+    "justification": "Documenté par des sources officielles Google Cloud et un intégrateur (Datatonic) avec porte-parole Vodafone nommés - chiffres solides mais opérationnels (vitesse/échelle MLOps) : aucun impact churn en points de pourcentage n'est public, et les sources sont côté fournisseurs."
+  },
+  "dates": {
+    "lancement": "2022 (plateforme lancée mi-2022 ; use case churn documenté 2022-2023)",
+    "derniere_confirmation_activite": "2026-04 (nouveaux services IA Vodafone-Google Cloud) ; partenariat 10 ans >1 Md$ signé oct. 2024",
+    "verifie_le": "2026-07-11",
+    "revoir_apres": "2027-01-11"
+  },
+  "statut_vivant": {
+    "statut": "confirme",
+    "note": "La relation Vodafone-Google Cloud s'est approfondie (deal 10 ans oct. 2024, produits IA jusqu'en avril 2026) et Vertex AI reste la plateforme ML du groupe - l'infrastructure du use case churn est structurellement pérennisée."
+  },
+  "sources": [
+    {
+      "ref": "S1",
+      "type": "blog_officiel",
+      "titre": "Vodafone's ML platform, built on Vertex AI (AI Booster)",
+      "url": "https://cloud.google.com/blog/products/ai-machine-learning/vodafones-ml-platform-built-on-vertex-ai",
+      "date_publication": "2022-07-06",
+      "consulte_le": "2026-07-11",
+      "fiabilite": "T2_officiel_interesse"
+    },
+    {
+      "ref": "S2",
+      "type": "blog_officiel",
+      "titre": "How Vodafone uses CI/CD to speed up ML pipelines (customer churn prediction)",
+      "url": "https://cloud.google.com/blog/products/devops-sre/how-vodafone-uses-cicd-to-speed-up-ml-pipelines",
+      "date_publication": "2023-07-18",
+      "consulte_le": "2026-07-11",
+      "fiabilite": "T2_officiel_interesse"
+    },
+    {
+      "ref": "S3",
+      "type": "customer_story_plateforme",
+      "titre": "AI Booster: How Vodafone is Supercharging AI & ML at Scale - Datatonic",
+      "url": "https://datatonic.com/case-studies/ai-booster-vodafone-supercharging-ai-ml-at-scale/",
+      "date_publication": "2022",
+      "consulte_le": "2026-07-11",
+      "fiabilite": "T2_officiel_interesse"
+    },
+    {
+      "ref": "S4",
+      "type": "blog_officiel",
+      "titre": "Vodafone and Google Deepen Strategic Partnership with Ten Year, Billion+ Dollar Deal",
+      "url": "https://www.vodafone.com/news/newsroom/technology/vodafone-and-google-deepen-strategic-partnership-with-10-yr-deal",
+      "date_publication": "2024-10",
+      "consulte_le": "2026-07-11",
+      "fiabilite": "T1_primaire"
+    }
+  ],
+  "schema_flow": {
+    "statut": "documente",
+    "noeuds": [
+      {
+        "id": "data",
+        "role_generique": "data_source",
+        "label": "Data client unifiée (usage, facturation, contrat, tickets)",
+        "outil_documente": "Neuron / BigQuery"
+      },
+      {
+        "id": "model",
+        "role_generique": "modele_ia",
+        "label": "Modèle de churn par marché",
+        "outil_documente": "Vertex AI (XGBoost / BigQuery ML)"
+      },
+      {
+        "id": "mlops",
+        "role_generique": "modele_ia",
+        "label": "Pipelines CI/CD standardisés (LAB->STAGING->PROD)",
+        "outil_documente": "AI Booster / Cloud Build"
+      },
+      {
+        "id": "score",
+        "role_generique": "cdp",
+        "label": "Scores de churn par client"
+      },
+      {
+        "id": "action",
+        "role_generique": "crm",
+        "label": "Campagnes de rétention + offres personnalisées"
+      },
+      {
+        "id": "outcome",
+        "role_generique": "data_source",
+        "label": "Rétention observée -> réentraînement"
+      }
+    ],
+    "liens": [
+      [
+        "data",
+        "model"
+      ],
+      [
+        "model",
+        "mlops"
+      ],
+      [
+        "mlops",
+        "score"
+      ],
+      [
+        "score",
+        "action"
+      ],
+      [
+        "action",
+        "outcome"
+      ],
+      [
+        "outcome",
+        "model",
+        "réentraînement"
+      ]
+    ]
+  },
+  "replication": {
+    "statut_epistemique": "infere",
+    "prerequis_data": [
+      "Historique client unifié (usage, facturation, contrats, tickets, interactions)",
+      "Label de résiliation fiable, 12+ mois de profondeur",
+      "Gouvernance RGPD du profilage"
+    ],
+    "prerequis_orga": [
+      "Équipe data science + boucle d'activation marketing",
+      "Capacité à faire des tests contrôlés (groupe témoin)"
+    ],
+    "stack_possible": [
+      "Vertex AI ou équivalent (Databricks, SageMaker, Snowflake+ML)",
+      "XGBoost en baseline",
+      "Activation via CDP/CRM (Salesforce Marketing Cloud, Braze)"
+    ],
+    "premiere_etape": "Cadrer un pilote sur un segment à forte valeur : définir le label churn, entraîner un modèle baseline sur l'entrepôt existant, mesurer l'uplift d'une campagne de rétention ciblée scores hauts vs groupe contrôle.",
+    "playbook": [
+      {
+        "action": "Définir le label de résiliation (quand un client a-t-il churné) et unifier les données client sur 12+ mois.",
+        "livrable": "Définition du label validée + table client unifiée (usage, facturation, contrats, tickets)."
+      },
+      {
+        "action": "Entraîner un modèle baseline (XGBoost) et le backtester sur l'historique.",
+        "livrable": "Modèle avec métriques de performance sur données passées."
+      },
+      {
+        "action": "Pousser les scores dans le CRM et lancer une campagne pilote sur les hauts scores, avec groupe témoin non contacté.",
+        "livrable": "Campagne de rétention live + design de mesure avec témoin."
+      },
+      {
+        "action": "Mesurer l'uplift de rétention et industrialiser le pipeline (réentraînement, détection de dérive).",
+        "livrable": "Lecture d'uplift vs témoin + pipeline automatisé documenté."
+      },
+      {
+        "action": "Répliquer le gabarit sur un second segment ou marché sans repartir de zéro.",
+        "livrable": "Template de pipeline réutilisable, second modèle en production."
+      }
+    ],
+    "equipe": "2 data scientists + 1 data engineer + 1 PM + équipe CRM/marketing locale pour l'activation"
+  },
+  "seo": {
+    "slug": "vodafone-churn-prediction-vertex-ai-booster",
+    "title": "Vodafone : churn prediction industrialisée sur 8+ pays (AI Booster / Vertex AI)",
+    "meta_description": "Comment Vodafone a industrialisé la prédiction de churn sur 8+ marchés avec une plateforme MLOps groupe (AI Booster), faisant passer un modèle du PoC à la prod en 4 semaines.",
+    "resume_citable": "Vodafone a industrialisé la prédiction de churn sur plus de 8 pays via AI Booster, sa plateforme MLOps sur Vertex AI, réduisant par 5 le time-to-market des modèles et passant du PoC à la production en 4 semaines au lieu de 5 mois.",
+    "faq": [
+      {
+        "q": "Est-ce répliquable par une marque plus petite ?",
+        "a": "Le pattern oui, l'échelle non : il faut un historique client unifié, une équipe data science et une boucle d'activation. L'effort est élevé - c'est un projet, pas une activation de feature."
+      },
+      {
+        "q": "Quel est le vrai apport documenté ?",
+        "a": "Les chiffres publics portent sur la vitesse et l'échelle de production des modèles (MLOps), pas sur des points de churn évités, qui ne sont pas publiés."
+      }
+    ]
+  },
+  "agences": [
+    {
+      "nom": "Datatonic",
+      "role": "Intégrateur - build de la plateforme AI Booster",
+      "source_ref": "S3"
+    }
+  ],
+  "logo_domain": "vodafone.com",
+  "stack_technique": [
+    {
+      "nom": "Google Cloud Vertex AI",
+      "categorie": "plateforme",
+      "detail": "Socle de la plateforme interne AI Booster : entraînement, pipelines et serving des modèles de churn par marché.",
+      "url": "https://cloud.google.com/vertex-ai"
+    },
+    {
+      "nom": "XGBoost",
+      "categorie": "outil",
+      "detail": "Algorithme de classification utilisé en baseline pour les modèles de résiliation.",
+      "url": "https://xgboost.ai"
+    },
+    {
+      "nom": "Google BigQuery / BigQuery ML",
+      "categorie": "infra",
+      "detail": "Entrepôt du data ocean groupe (Neuron) qui unifie usage, facturation, contrats et tickets.",
+      "url": "https://cloud.google.com/bigquery"
+    },
+    {
+      "nom": "Google Cloud Build",
+      "categorie": "infra",
+      "detail": "CI/CD des pipelines standardisés LAB vers STAGING vers PROD, répliqués de pays en pays.",
+      "url": "https://cloud.google.com/build"
+    },
+    {
+      "nom": "AI Booster",
+      "categorie": "outil",
+      "detail": "Plateforme MLOps interne de Vodafone bâtie sur Vertex AI : des milliers de modèles par jour sur 8+ pays, PoC vers production en 4 semaines.",
+      "url": "https://www.vodafone.com"
+    },
+    {
+      "nom": "Datatonic",
+      "categorie": "integrateur",
+      "detail": "Intégrateur qui a construit la plateforme AI Booster avec les équipes Vodafone.",
+      "url": "https://datatonic.com"
+    }
+  ]
+}

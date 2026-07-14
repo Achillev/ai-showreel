@@ -1,0 +1,267 @@
+{
+  "id": "slazenger-insider-ai-omnichannel-2024",
+  "type_fiche": "succes",
+  "marque": "Slazenger",
+  "industrie": "retail_ecom",
+  "marches_deploiement": [
+    "region non divulguee"
+  ],
+  "transposable_ue": {
+    "flag": "a_verifier",
+    "note": "La customer story ne precise pas la region du deploiement. Le pattern (web push, SMS, segmentation comportementale) est transposable en UE moyennant consentement et base legale du profilage (RGPD)."
+  },
+  "metier": "e-commerce / CRM",
+  "axes": {
+    "levier": "activation_conversion",
+    "touchpoints": [
+      "email",
+      "web push",
+      "SMS",
+      "site web"
+    ],
+    "etape_parcours": "achat",
+    "famille": "personnalisation",
+    "pattern": "orchestration de parcours personnalises (relance panier + baisse de prix)",
+    "type_ia": [
+      "segmentation AI",
+      "generative AI (Insider One AI)",
+      "optimisation timing et canal"
+    ],
+    "plateforme_stack": [
+      "Insider",
+      "Insider Architect",
+      "Insider One AI",
+      "Smart Journey Creator",
+      "Smart Segment Creator"
+    ],
+    "objectif_metrique": [
+      "ROI",
+      "acquisition clients",
+      "taux de conversion",
+      "recuperation de panier"
+    ]
+  },
+  "implementation": "plateforme",
+  "objectif_business": "Convertir les visiteurs hesitants d'un e-commerce de sportswear en recuperant les paniers abandonnes et en re-engageant sur les baisses de prix, sans casser la marge.",
+  "points_cles": ["Parcours personnalises de relance panier et d'alerte baisse de prix, pilotes par IA.", "Stack Insider avec Architect et Insider One AI (segmentation, timing, canaux).", "ROI 49x en 8 semaines, +700% d'acquisition, 40% du revenu panier recupere.", "Preuve B, statut signaux mitiges (region et date non divulguees)."],
+  "description": "Slazenger a construit sur Insider des parcours personnalises pilotes par Insider One AI. Pour l'abandon de panier, Architect et le Smart Journey Creator determinent les meilleurs canaux, delais et heures d'envoi, avec relances par email, web push et SMS et code promo par SMS. Pour les baisses de prix, une notification part par email et web push sous 24 heures des qu'un produit vu, mis en wishlist ou abandonne baisse d'au moins 10%. Les campagnes couvrent pres de trente segments clients.",
+  "resultats": [
+    {
+      "metrique": "ROI de la solution",
+      "valeur": "49x en 8 semaines",
+      "citation_exacte": "49x ROI within eight weeks",
+      "source_ref": "S1"
+    },
+    {
+      "metrique": "Acquisition clients",
+      "valeur": "+700%",
+      "citation_exacte": "700% increase in customer acquisition",
+      "source_ref": "S1"
+    },
+    {
+      "metrique": "Revenu potentiel recupere sur une campagne d'abandon de panier",
+      "valeur": "40%",
+      "citation_exacte": "recovered 40% of its potential revenue within a single campaign",
+      "source_ref": "S1"
+    },
+    {
+      "metrique": "Conversion sur le segment sensible au prix",
+      "valeur": "+54%",
+      "citation_exacte": "54% increase in conversion rate",
+      "source_ref": "S1"
+    }
+  ],
+  "niveau_preuve": {
+    "niveau": "B",
+    "justification": "Customer story Insider chiffree, reprise sur une seconde page officielle Insider. Aucune source de presse independante, region non divulguee, d'ou B."
+  },
+  "dates": {
+    "lancement": "2024 (usage d'Insider One AI, branding introduit sur cette periode)",
+    "derniere_confirmation_activite": "2026 (customer story en ligne)",
+    "verifie_le": "2026-07-11",
+    "revoir_apres": "2027-01-11"
+  },
+  "statut_vivant": {
+    "statut": "signaux_mitiges",
+    "note": "La date exacte de lancement n'est pas divulguee et aucune source tierce ne date le cas. La customer story reste publiee et attribuee a Insider One AI, produit courant."
+  },
+  "sources": [
+    {
+      "ref": "S1",
+      "type": "customer_story_plateforme",
+      "fiabilite": "T2_officiel_interesse",
+      "titre": "Slazenger gained 49X ROI thanks to Insider's omnichannel marketing solution",
+      "url": "https://insiderone.com/case-studies/slazenger/",
+      "date_publication": "2024",
+      "consulte_le": "2026-07-11"
+    },
+    {
+      "ref": "S2",
+      "type": "blog_officiel",
+      "fiabilite": "T2_officiel_interesse",
+      "titre": "5 omnichannel marketing examples and case studies (with results) - Insider",
+      "url": "https://insiderone.com/omnichannel-marketing-examples/",
+      "date_publication": "2025",
+      "consulte_le": "2026-07-11"
+    }
+  ],
+  "fonctionnement_operationnel": {
+    "cadence": "Temps reel evenementiel : chaque abandon de panier ou baisse de prix declenche le parcours correspondant.",
+    "opere_par": "Equipe e-commerce de Slazenger, sur Insider en self-service.",
+    "signal_pilote": "Le comportement onsite (vues, wishlist, paniers) et le prix produit. Sans suivi fiable du prix et du panier par utilisateur, le declenchement des notifications baisse de prix et relance panier ne fonctionne plus.",
+    "etapes": [
+      {
+        "etape": "Unification et segmentation",
+        "detail": "La base client unifiee et le Smart Segment Creator decoupent l'audience en pres de trente segments.",
+        "acteur": "IA (Insider One AI) / equipe e-commerce"
+      },
+      {
+        "etape": "Construction du parcours",
+        "detail": "Architect et le Smart Journey Creator fixent canaux, delais et heures d'envoi optimaux.",
+        "acteur": "IA / equipe e-commerce"
+      },
+      {
+        "etape": "Declenchement panier",
+        "detail": "Relances email, web push et SMS avec code promo par SMS sur les paniers abandonnes.",
+        "acteur": "IA (declenchement automatique)"
+      },
+      {
+        "etape": "Declenchement baisse de prix",
+        "detail": "Notification email et web push sous 24 heures quand un produit suivi baisse d'au moins 10%.",
+        "acteur": "IA (declenchement automatique)"
+      }
+    ]
+  },
+  "schema_flow": {
+    "statut": "approche_type",
+    "noeuds": [
+      {
+        "id": "n1",
+        "role_generique": "data_source",
+        "label": "Comportement onsite (vues, wishlist, paniers) et prix"
+      },
+      {
+        "id": "n2",
+        "role_generique": "crm",
+        "label": "Base client unifiee + Architect",
+        "outil_documente": "Insider"
+      },
+      {
+        "id": "n3",
+        "role_generique": "modele_ia",
+        "label": "Insider One AI (segmentation, generation, timing)",
+        "outil_documente": "Insider One AI"
+      },
+      {
+        "id": "n4",
+        "role_generique": "canal_conversationnel",
+        "label": "Email / web push / SMS"
+      },
+      {
+        "id": "n5",
+        "role_generique": "humain",
+        "label": "Equipe e-commerce"
+      }
+    ],
+    "liens": [
+      [
+        "n1",
+        "n2"
+      ],
+      [
+        "n2",
+        "n3"
+      ],
+      [
+        "n3",
+        "n4"
+      ],
+      [
+        "n5",
+        "n2"
+      ],
+      [
+        "n4",
+        "n1",
+        "engagement reinjecte"
+      ]
+    ]
+  },
+  "replication": {
+    "statut_epistemique": "infere",
+    "prerequis_data": [
+      "suivi comportemental onsite par utilisateur",
+      "flux de prix produit en temps quasi reel",
+      "identifiants email / opt-in web push et SMS"
+    ],
+    "prerequis_orga": [
+      "une equipe e-commerce qui pilote les parcours",
+      "catalogue avec variations de prix a exploiter"
+    ],
+    "stack_possible": [
+      "Insider",
+      "toute plateforme d'engagement omnicanal avec triggers panier et baisse de prix et segmentation AI"
+    ],
+    "premiere_etape": "Brancher le suivi du prix et du panier par utilisateur, puis armer d'abord le parcours d'abandon de panier avant d'ajouter les alertes baisse de prix.",
+    "playbook": [
+      {
+        "action": "Brancher les signaux : suivi comportemental onsite (vues, wishlist, panier) et flux de prix produit",
+        "livrable": "Evenements et prix remontant en temps quasi reel dans la plateforme"
+      },
+      {
+        "action": "Collecter les opt-ins web push et SMS et poser la base legale du profilage (RGPD)",
+        "livrable": "Canaux actives avec consentements traces"
+      },
+      {
+        "action": "Armer le parcours d'abandon de panier : relance multicanale (email, web push, SMS avec code promo) au timing optimise",
+        "livrable": "Parcours panier live sur un segment test"
+      },
+      {
+        "action": "Ajouter l'alerte baisse de prix : notification sous 24 h quand un produit suivi baisse d'au moins 10%",
+        "livrable": "Second parcours live, segments affines"
+      },
+      {
+        "action": "Mesurer revenu recupere et conversion par segment contre la periode sans parcours",
+        "livrable": "Lecture ROI par parcours et plan d'extension des segments"
+      }
+    ],
+    "equipe": "1 CRM manager + 1 dev pour le tracking et le flux prix ; l'editeur accompagne la construction des premiers parcours"
+  },
+  "seo": {
+    "slug": "slazenger-insider-ai-omnichannel-2024",
+    "title": "Slazenger : parcours IA omnicanal avec Insider - 49x ROI en 8 semaines (2024)",
+    "meta_description": "Slazenger a orchestre relance panier et alertes baisse de prix sur Insider One AI : 49x ROI en 8 semaines, +700% d'acquisition, 40% de revenu panier recupere.",
+    "resume_citable": "Slazenger a obtenu un ROI de 49x en huit semaines et +700% d'acquisition clients en orchestrant sur Insider One AI des parcours personnalises de relance panier (40% du revenu potentiel recupere) et d'alerte baisse de prix.",
+    "faq": [
+      {
+        "q": "Quels parcours Slazenger a-t-il automatises ?",
+        "a": "Une relance de panier abandonne multicanale (email, web push, SMS) et des alertes de baisse de prix envoyees sous 24 heures quand un produit suivi baisse d'au moins 10%."
+      },
+      {
+        "q": "Quel ROI ?",
+        "a": "49x de ROI en huit semaines, avec +700% d'acquisition clients et 40% du revenu potentiel recupere sur une seule campagne d'abandon de panier."
+      }
+    ]
+  },
+  "logo_domain": "slazenger.com",
+  "stack_technique": [
+    {
+      "nom": "Insider",
+      "categorie": "plateforme",
+      "detail": "plateforme d'engagement omnicanal : base client unifiee, parcours et campagnes email, web push et SMS",
+      "url": "https://insiderone.com"
+    },
+    {
+      "nom": "Insider Architect",
+      "categorie": "outil",
+      "detail": "orchestrateur de parcours cross-canal : choix des canaux, delais et heures d'envoi",
+      "url": "https://insiderone.com"
+    },
+    {
+      "nom": "Insider One AI (Smart Journey Creator, Smart Segment Creator)",
+      "categorie": "outil",
+      "detail": "couche IA generative et predictive : construction des parcours et des segments (pres de trente segments chez Slazenger)",
+      "url": "https://insiderone.com"
+    }
+  ]
+}

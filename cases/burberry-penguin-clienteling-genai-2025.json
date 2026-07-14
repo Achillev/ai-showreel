@@ -1,0 +1,270 @@
+{
+  "id": "burberry-penguin-clienteling-genai-2025",
+  "type_fiche": "succes",
+  "marque": "Burberry",
+  "groupe": "Burberry Group",
+  "industrie": "luxe_beaute",
+  "marches_deploiement": [
+    "International (tous les marches Burberry)",
+    "Royaume-Uni"
+  ],
+  "transposable_ue": {
+    "flag": "oui",
+    "note": "Groupe britannique. La brique clienteling s'appuie sur des donnees client opt-in (comportement, historique). Base legale de traitement et minimisation a poser pour un usage temps reel des donnees en boutique cote UE."
+  },
+  "metier": "service client / clienteling / data science",
+  "axes": {
+    "levier": "activation_conversion",
+    "touchpoints": [
+      "conseiller service client",
+      "boutique",
+      "canaux de service (chat, telephone)"
+    ],
+    "etape_parcours": "consideration",
+    "famille": "conversation",
+    "pattern": "copilote genAI pour conseiller (recherche, reconnaissance image, complete-the-look)",
+    "type_ia": [
+      "LLM fine-tune",
+      "transformer",
+      "reconnaissance d'image",
+      "recommandation"
+    ],
+    "plateforme_stack": [
+      "custom/in-house"
+    ],
+    "objectif_metrique": [
+      "panier moyen (ATV)",
+      "productivite conseiller",
+      "satisfaction client"
+    ]
+  },
+  "implementation": "custom",
+  "stack_technique": [
+    {
+      "nom": "LLM fine-tunes sur les looks Burberry",
+      "categorie": "llm",
+      "detail": "Modeles de langage adaptes au corpus de looks cures de la marque pour le complete-the-look ; le modele de base n'est pas nomme dans les sources.",
+      "url": "https://www.burberry.com"
+    },
+    {
+      "nom": "Reconnaissance d'image street-to-shop (transformers maison)",
+      "categorie": "outil",
+      "detail": "Detection d'un produit Burberry sur une photo et rattachement au catalogue, integree a Penguin.",
+      "url": "https://www.burberry.com"
+    },
+    {
+      "nom": "Recherche produit en langage naturel multilingue",
+      "categorie": "outil",
+      "detail": "Brique de recherche de Penguin, construite en interne sur le catalogue produit.",
+      "url": "https://www.burberry.com"
+    },
+    {
+      "nom": "Suite de modeles data (intention, recommandation, affinite produit)",
+      "categorie": "outil",
+      "detail": "Modeles maison qui alimentent les campagnes pilotees en boutique, plus de 90% des campagnes store-led utilisant ce cadre.",
+      "url": "https://www.burberry.com"
+    }
+  ],
+  "objectif_business": "Donner aux conseillers service client de Burberry un copilote genAI qui accelere la recherche produit, la reconnaissance d'articles et les suggestions de tenues, pour servir les clients plus vite et augmenter la valeur des transactions.",
+  "points_cles": ["Copilote GenAI Penguin pour conseillers : recherche produit, reconnaissance image street-to-shop, complete-the-look.", "Construit en interne (transformers et LLM fine-tunes sur les looks Burberry) par une equipe de trois personnes.", "+24% de panier moyen sur les canaux service client, plus de 100 conseillers equipes.", "Preuve B, statut vivant confirme (DataIQ Awards 2025)."],
+  "description": "Penguin est une plateforme generative construite en interne par une equipe data science de trois personnes avec le service client. Elle combine trois fonctions : une recherche produit en langage naturel multilingue, une reconnaissance d'image street-to-shop qui identifie un produit Burberry sur une photo et le retrouve au catalogue, et un complete-the-look qui genere des propositions de tenues coherentes avec l'esthetique de la marque a partir d'un seul article. Penguin s'appuie sur des transformers et des LLM fine-tunes sur les looks Burberry. En parallele, Burberry exploite une suite de modeles data (intention, recommandation, affinite produit) qui alimente les campagnes pilotees en boutique. La demarche a ete distinguee aux DataIQ Awards 2025.",
+  "resultats": [
+    {
+      "metrique": "Hausse du panier moyen (canaux service client)",
+      "valeur": "+24%",
+      "citation_exacte": "24% uplift in Average Transaction Value within customer service channels",
+      "source_ref": "S1"
+    },
+    {
+      "metrique": "Conseillers equipes, sur tous les marches",
+      "valeur": "100+",
+      "citation_exacte": "over 100 consultants worldwide across every Burberry market",
+      "source_ref": "S1"
+    },
+    {
+      "metrique": "Revenu incremental campagnes boutique 2024, +11% sur un an",
+      "valeur": "7 M GBP",
+      "citation_exacte": "7 million in incremental revenue in 2024, an 11% uplift year-on-year",
+      "source_ref": "S2"
+    },
+    {
+      "metrique": "Campagnes store-led utilisant le cadre IA",
+      "valeur": ">90%",
+      "citation_exacte": "More than 90% of store-led campaigns now use the AI-driven framework",
+      "source_ref": "S2"
+    }
+  ],
+  "niveau_preuve": {
+    "niveau": "B",
+    "justification": "Deux dossiers laureats DataIQ Awards 2025 chiffrant separement le copilote clienteling (Penguin, +24% ATV) et la transformation data (7 M GBP incremental). Etude de cas chiffree, jugee par un tiers du secteur, pas de figure issue de la marque seule."
+  },
+  "dates": {
+    "lancement": "2024 (Penguin en production ; campagnes store-led chiffrees sur 2024)",
+    "derniere_confirmation_activite": "2025 (DataIQ Awards, adoption par 100+ conseillers)",
+    "verifie_le": "2026-07-11",
+    "revoir_apres": "2027-01-31"
+  },
+  "statut_vivant": {
+    "statut": "confirme",
+    "note": "Plateforme distinguee aux DataIQ Awards 2025, adoptee sur tous les marches. Construite et maintenue en interne par l'equipe data science."
+  },
+  "sources": [
+    {
+      "ref": "S1",
+      "type": "analyse_academique",
+      "fiabilite": "T4_secondaire",
+      "titre": "Most Innovative Use of AI (Global) - Burberry (DataIQ Awards 2025)",
+      "url": "https://www.dataiq.global/award-winner/most-innovative-use-of-ai-global-burberry/",
+      "date_publication": "2025",
+      "consulte_le": "2026-07-11"
+    },
+    {
+      "ref": "S2",
+      "type": "analyse_academique",
+      "fiabilite": "T4_secondaire",
+      "titre": "Transformation with Data (Global) - Burberry (DataIQ Awards 2025)",
+      "url": "https://www.dataiq.global/award-winner/transformation-with-data-global-burberry/",
+      "date_publication": "2025",
+      "consulte_le": "2026-07-11"
+    }
+  ],
+  "fonctionnement_operationnel": {
+    "cadence": "Temps reel pendant l'interaction client ; les modeles produit et looks sont reentraines au fil des collections",
+    "opere_par": "Conseillers service client, outilles par l'equipe data science interne (trois personnes) et le service client",
+    "signal_pilote": "Le catalogue produit a jour et les looks Burberry cures qui servent au fine-tuning. Sans ce corpus de marque, le complete-the-look derape hors de l'esthetique et perd sa credibilite.",
+    "etapes": [
+      {
+        "etape": "Requete du conseiller",
+        "detail": "Le conseiller pose une question produit en langage naturel ou charge une photo d'article a identifier.",
+        "acteur": "conseiller service client"
+      },
+      {
+        "etape": "Recherche et reconnaissance",
+        "detail": "Penguin interprete la requete ou detecte le produit sur l'image (street-to-shop) et le relie au catalogue.",
+        "acteur": "IA"
+      },
+      {
+        "etape": "Suggestion de tenue",
+        "detail": "A partir d'un article, le complete-the-look genere des propositions coherentes avec les looks Burberry.",
+        "acteur": "IA"
+      },
+      {
+        "etape": "Reponse au client",
+        "detail": "Le conseiller valide, ajuste et transmet la reponse au client, gardant la main sur la relation.",
+        "acteur": "conseiller service client"
+      }
+    ]
+  },
+  "schema_flow": {
+    "statut": "documente",
+    "noeuds": [
+      {
+        "id": "conseiller",
+        "role_generique": "humain",
+        "label": "Conseiller service client"
+      },
+      {
+        "id": "penguin",
+        "role_generique": "modele_ia",
+        "label": "Penguin (recherche NL, reconnaissance image, complete-the-look)",
+        "outil_documente": "custom (transformers + LLM fine-tunes)"
+      },
+      {
+        "id": "catalogue",
+        "role_generique": "data_source",
+        "label": "Catalogue produit et looks Burberry cures"
+      },
+      {
+        "id": "client",
+        "role_generique": "humain",
+        "label": "Client"
+      }
+    ],
+    "liens": [
+      [
+        "client",
+        "conseiller"
+      ],
+      [
+        "conseiller",
+        "penguin",
+        "requete produit ou photo"
+      ],
+      [
+        "catalogue",
+        "penguin",
+        "correspondance et fine-tuning"
+      ],
+      [
+        "penguin",
+        "conseiller",
+        "produit trouve, tenue suggeree"
+      ],
+      [
+        "conseiller",
+        "client",
+        "reponse validee"
+      ]
+    ]
+  },
+  "replication": {
+    "statut_epistemique": "infere",
+    "prerequis_data": [
+      "catalogue produit structure avec images",
+      "corpus de looks de marque pour le fine-tuning",
+      "donnees client opt-in pour la personnalisation"
+    ],
+    "prerequis_orga": [
+      "equipe data science interne capable de fine-tuner des LLM",
+      "service client implique dans la conception",
+      "conduite du changement cote conseillers"
+    ],
+    "stack_possible": [
+      "LLM open ou API avec fine-tuning",
+      "modele de vision (detection produit)",
+      "moteur de recommandation",
+      "interface conseiller mobile/tablette"
+    ],
+    "premiere_etape": "Prototyper une recherche produit en langage naturel plus un complete-the-look sur un catalogue, teste avec une poignee de conseillers.",
+    "playbook": [
+      {
+        "action": "Structurer le catalogue (attributs, images) et curer un corpus de looks de marque avec les equipes style.",
+        "livrable": "Corpus d'entrainement valide par la direction de style."
+      },
+      {
+        "action": "Prototyper la recherche produit en langage naturel sur le catalogue et la faire tester par une poignee de conseillers.",
+        "livrable": "Prototype teste avec retours conseillers documentes."
+      },
+      {
+        "action": "Ajouter la reconnaissance d'image et le complete-the-look fine-tune sur le corpus de looks.",
+        "livrable": "Copilote trois fonctions en pilote sur un perimetre restreint."
+      },
+      {
+        "action": "Deployer aupres des conseillers d'un marche avec formation ; le conseiller garde la main sur la reponse au client.",
+        "livrable": "Adoption mesuree sur un premier marche."
+      },
+      {
+        "action": "Comparer le panier moyen des canaux equipes et non equipes, puis arbitrer l'extension aux autres marches.",
+        "livrable": "Bilan panier moyen et plan de rollout."
+      }
+    ],
+    "equipe": "2-3 data scientists + le service client implique dans la conception + 1 sponsor retail pour l'adoption des conseillers."
+  },
+  "seo": {
+    "slug": "burberry-penguin-clienteling-genai-2025",
+    "title": "Burberry : copilote genAI clienteling (Penguin) - +24% de panier moyen (2025)",
+    "meta_description": "Penguin, la plateforme generative de clienteling batie en interne par Burberry, affiche +24% de panier moyen sur les canaux service client et 100+ conseillers equipes.",
+    "resume_citable": "Penguin, le copilote genAI de clienteling construit en interne par Burberry, a apporte +24% de panier moyen sur les canaux service client et equipe plus de 100 conseillers sur tous les marches.",
+    "faq": [
+      {
+        "q": "Quel gain Penguin a-t-il apporte a Burberry ?",
+        "a": "Une hausse de 24% du panier moyen sur les canaux service client, avec plus de 100 conseillers equipes, selon les DataIQ Awards 2025."
+      },
+      {
+        "q": "Que fait Penguin ?",
+        "a": "Recherche produit en langage naturel, reconnaissance d'un article Burberry sur une photo, et generation de tenues completes coherentes avec l'esthetique de la marque."
+      }
+    ]
+  },
+  "logo_domain": "burberry.com"
+}

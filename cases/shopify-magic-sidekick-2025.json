@@ -1,0 +1,268 @@
+{
+  "id": "shopify-magic-sidekick-2025",
+  "type_fiche": "succes",
+  "marque": "Shopify",
+  "industrie": "retail_ecom",
+  "marches_deploiement": [
+    "Mondial (plateforme)"
+  ],
+  "transposable_ue": {
+    "flag": "oui",
+    "note": "Plateforme mondiale avec marchands UE. Magic genere du contenu marchand (descriptions, images, emails) a partir des donnees produit du commercant, sans traitement de donnees personnelles clients. L'AI Act demande la transparence sur le contenu genere, compatible avec un brouillon editable par le marchand."
+  },
+  "metier": "e-commerce, marketing, outillage marchand",
+  "marque_linkedin": "https://www.linkedin.com/company/shopify",
+  "intervenants": [
+    {
+      "nom": "Harley Finkelstein",
+      "role": "President de Shopify, a communique les chiffres d'adoption de Sidekick",
+      "source_ref": "S1"
+    }
+  ],
+  "axes": {
+    "levier": "activation_conversion",
+    "touchpoints": [
+      "back-office Shopify admin",
+      "fiches produit",
+      "emails marketing"
+    ],
+    "etape_parcours": "achat",
+    "famille": "generation",
+    "pattern": "generation genAI de contenu marchand",
+    "type_ia": [
+      "LLM",
+      "generation de texte",
+      "generation d'images",
+      "agent genAI"
+    ],
+    "plateforme_stack": [
+      "Shopify Magic",
+      "Shopify Sidekick",
+      "LLM fondation"
+    ],
+    "objectif_metrique": [
+      "adoption marchands",
+      "temps gagne",
+      "productivite operationnelle"
+    ]
+  },
+  "implementation": "plateforme",
+  "objectif_business": "Diffuser la generation de contenu IA a l'ensemble des marchands, sans abonnement separe, pour reduire le temps passe sur les taches de production (fiches, emails, visuels) et retenir les commercants sur la plateforme.",
+  "points_cles": ["Generation genAI de contenu marchand (descriptions, images, emails) via Shopify Magic.", "Agent conversationnel Sidekick qui pilote ces fonctions en langage naturel.", "750 000 marchands integres et pres de 100 millions d'interactions au T3 2025.", "Preuve B, statut confirme, chiffres communiques par le president de Shopify."],
+  "description": "Shopify Magic regroupe les fonctions genAI integrees au back-office : generation de descriptions produit, d'images, d'emails et d'articles de blog, a partir des donnees du marchand. Le generateur de descriptions accepte des entrees detaillees (liens produits concurrents, personas cibles, mots-cles SEO). Sidekick est l'agent conversationnel qui pilote ces fonctions en langage naturel, par voix ou partage d'ecran, et couvre automatisation de taches, analytics et support. Magic est livre par defaut a chaque marchand sur chaque plan, sans abonnement IA distinct. Chiffres d'adoption communiques par le president de Shopify au T3 2025.",
+  "resultats": [
+    {
+      "metrique": "Nouveaux marchands integres via Sidekick (T3 2025)",
+      "valeur": "750 000",
+      "citation_exacte": "750,000 new merchants onboarded",
+      "source_ref": "S1"
+    },
+    {
+      "metrique": "Interactions totales",
+      "valeur": "~100 millions",
+      "citation_exacte": "nearly 100 million total interactions",
+      "source_ref": "S1"
+    },
+    {
+      "metrique": "Activite generee en octobre",
+      "valeur": "8 millions USD",
+      "citation_exacte": "$8 million in activity during October alone",
+      "source_ref": "S1"
+    }
+  ],
+  "niveau_preuve": {
+    "niveau": "B",
+    "justification": "Chiffres d'adoption communiques par le president de Shopify Harley Finkelstein dans le contexte des resultats du T3 2025, rapportes par la presse. Metriques d'usage a l'echelle de la plateforme, mais l'activite chiffree porte sur l'agent plus que sur un resultat financier consolide."
+  },
+  "dates": {
+    "lancement": "2023 (Magic), 2024 (Sidekick generalise)",
+    "derniere_confirmation_activite": "Novembre 2025 (chiffres T3 2025)",
+    "verifie_le": "2026-07-11",
+    "revoir_apres": "2027-01-11"
+  },
+  "statut_vivant": {
+    "statut": "confirme",
+    "note": "Magic livre par defaut sur tous les plans, Sidekick en forte croissance d'adoption au T3 2025 selon le president de Shopify. Fonctions positionnees au coeur de la strategie de vente de fin d'annee."
+  },
+  "sources": [
+    {
+      "ref": "S1",
+      "type": "presse",
+      "fiabilite": "T4_secondaire",
+      "titre": "Shopify President: AI Tools Central to Holiday Sales Strategy as Sidekick Adoption Soars",
+      "url": "https://mlq.ai/news/shopify-president-ai-tools-central-to-holiday-sales-strategy-as-sidekick-adoption-soars/",
+      "date_publication": "2025-11-04",
+      "consulte_le": "2026-07-11"
+    },
+    {
+      "ref": "S2",
+      "type": "blog_officiel",
+      "fiabilite": "T2_officiel_interesse",
+      "titre": "Sidekick - AI-enabled commerce assistant",
+      "url": "https://www.shopify.com/sidekick",
+      "date_publication": "2025",
+      "consulte_le": "2026-07-11"
+    }
+  ],
+  "fonctionnement_operationnel": {
+    "cadence": "A la demande, a chaque tache marchand (fiche, email, requete analytique).",
+    "opere_par": "Le marchand lui-meme, la plateforme Shopify fournissant le modele et l'agent.",
+    "signal_pilote": "La qualite des donnees produit du marchand. Le generateur produit une description faible si la fiche source manque d'attributs ou de contexte.",
+    "etapes": [
+      {
+        "etape": "Demande en langage naturel",
+        "detail": "Le marchand decrit ce qu'il veut (redaction, image, analyse) a Sidekick ou active Magic dans l'admin.",
+        "acteur": "client"
+      },
+      {
+        "etape": "Generation du brouillon",
+        "detail": "Magic genere description, image, email ou reponse a partir des donnees produit et des entrees fournies.",
+        "acteur": "IA"
+      },
+      {
+        "etape": "Acceptation ou edition",
+        "detail": "Le marchand accepte le brouillon ou l'ajuste avant publication.",
+        "acteur": "client"
+      }
+    ]
+  },
+  "schema_flow": {
+    "statut": "approche_type",
+    "noeuds": [
+      {
+        "id": "marchand",
+        "role_generique": "humain",
+        "label": "Marchand Shopify"
+      },
+      {
+        "id": "sidekick",
+        "role_generique": "canal_conversationnel",
+        "label": "Sidekick (agent)",
+        "outil_documente": "Shopify Sidekick"
+      },
+      {
+        "id": "magic",
+        "role_generique": "modele_ia",
+        "label": "Shopify Magic (generation)",
+        "outil_documente": "Shopify Magic"
+      },
+      {
+        "id": "donnees",
+        "role_generique": "data_source",
+        "label": "Donnees produit du marchand"
+      },
+      {
+        "id": "admin",
+        "role_generique": "site_app",
+        "label": "Shopify admin et boutique"
+      }
+    ],
+    "liens": [
+      [
+        "marchand",
+        "sidekick"
+      ],
+      [
+        "sidekick",
+        "magic"
+      ],
+      [
+        "donnees",
+        "magic"
+      ],
+      [
+        "magic",
+        "admin"
+      ],
+      [
+        "admin",
+        "marchand",
+        "acceptation ou edition"
+      ]
+    ]
+  },
+  "replication": {
+    "statut_epistemique": "infere",
+    "prerequis_data": [
+      "donnees produit structurees",
+      "historique de boutique",
+      "gabarits de contenu marchand"
+    ],
+    "prerequis_orga": [
+      "integration au back-office",
+      "modele par defaut sans friction d'activation"
+    ],
+    "stack_possible": [
+      "LLM fondation via API",
+      "generation d'images",
+      "agent conversationnel sur le back-office"
+    ],
+    "premiere_etape": "Integrer un generateur de contenu au flux de creation de fiche et le proposer active par defaut, l'adoption suivant l'acceptation du brouillon.",
+    "playbook": [
+      {
+        "action": "Lister les contenus a plus fort volume (fiches, emails, visuels) et les donnees produit disponibles pour les nourrir",
+        "livrable": "Backlog des cas d'usage classes par volume et valeur"
+      },
+      {
+        "action": "Integrer la generation de descriptions au flux de creation de fiche, en brouillon editable et active par defaut",
+        "livrable": "Generateur en production sur un premier flux"
+      },
+      {
+        "action": "Ajouter les entrees enrichies : mots-cles SEO, persona cible, references concurrentes",
+        "livrable": "Generation contextualisee, qualite evaluee sur echantillon"
+      },
+      {
+        "action": "Exposer les fonctions via une interface conversationnelle unique (agent)",
+        "livrable": "Agent couvrant plusieurs taches, usage instrumente"
+      },
+      {
+        "action": "Suivre taux d'acceptation des brouillons, temps gagne et retention des utilisateurs de la fonction",
+        "livrable": "Tableau d'adoption et arbitrage des prochaines fonctions"
+      }
+    ],
+    "equipe": "cote marchand : personne, la fonction est en self-service. Cote plateforme : 1-2 devs + 1 PM + 1 relecteur qualite des sorties"
+  },
+  "seo": {
+    "slug": "shopify-magic-sidekick-2025",
+    "title": "Shopify Magic et Sidekick : generation genAI de contenu marchand - 750 000 marchands (2025)",
+    "meta_description": "Shopify Magic genere descriptions, images et emails pour les marchands ; Sidekick a integre 750 000 nouveaux marchands au T3 2025 avec pres de 100 millions d'interactions.",
+    "resume_citable": "Au T3 2025, l'agent genAI Sidekick de Shopify a integre 750 000 nouveaux marchands et cumule pres de 100 millions d'interactions, la suite Magic generant descriptions, images et emails livree par defaut sur tous les plans.",
+    "faq": [
+      {
+        "q": "Que genere Shopify Magic ?",
+        "a": "Des descriptions produit, des images, des emails et des articles de blog a partir des donnees du marchand, livre par defaut sur tous les plans."
+      },
+      {
+        "q": "Quelle adoption pour Sidekick ?",
+        "a": "Shopify a annonce 750 000 nouveaux marchands integres via Sidekick au T3 2025, avec pres de 100 millions d'interactions."
+      }
+    ]
+  },
+  "logo_domain": "shopify.com",
+  "stack_technique": [
+    {
+      "nom": "Shopify Magic",
+      "categorie": "plateforme",
+      "detail": "fonctions genAI integrees a l'admin : descriptions produit, images, emails et articles, generes a partir des donnees du marchand",
+      "url": "https://www.shopify.com/magic"
+    },
+    {
+      "nom": "Shopify Sidekick",
+      "categorie": "outil",
+      "detail": "agent conversationnel qui pilote ces fonctions en langage naturel (voix, partage d'ecran) et couvre automatisation, analytics et support",
+      "url": "https://www.shopify.com/sidekick"
+    },
+    {
+      "nom": "LLM de fondation",
+      "categorie": "llm",
+      "detail": "modeles de generation de texte et d'images sous-jacents ; le fournisseur n'est pas nomme dans les sources de la fiche",
+      "url": "https://www.shopify.com"
+    },
+    {
+      "nom": "Shopify admin",
+      "categorie": "infra",
+      "detail": "back-office ou Magic est livre par defaut sur tous les plans, sans abonnement IA separe",
+      "url": "https://www.shopify.com"
+    }
+  ]
+}

@@ -1,0 +1,297 @@
+{
+  "id": "general-motors-onstar-iva-google-cloud-2023",
+  "type_fiche": "succes",
+  "marque": "General Motors",
+  "groupe": "General Motors",
+  "industrie": "auto",
+  "marches_deploiement": [
+    "Etats-Unis",
+    "Canada"
+  ],
+  "transposable_ue": {
+    "flag": "oui_avec_adaptations",
+    "note": "Deploiement Amerique du Nord ; une transposition UE demande la localisation des langues, la conformite RGPD sur les donnees de conversation et l'adaptation des flux de service client par pays."
+  },
+  "metier": "service client / experience d'achat",
+  "intervenants": [
+    {
+      "nom": "Mike Abbott",
+      "role": "Vice President of Software and Services, General Motors",
+      "source_ref": "S1"
+    }
+  ],
+  "agences": [
+    {
+      "nom": "Google Cloud",
+      "role": "Fournisseur des briques d'IA conversationnelle (Dialogflow) et de l'IA generative",
+      "source_ref": "S1"
+    }
+  ],
+  "axes": {
+    "levier": "retention",
+    "touchpoints": [
+      "OnStar (assistant vocal embarque)",
+      "chatbots sur les sites GM",
+      "service client"
+    ],
+    "etape_parcours": "post-achat",
+    "famille": "conversation",
+    "pattern": "assistant vocal service + agent genAI web",
+    "type_ia": [
+      "IA conversationnelle",
+      "reconnaissance d'intention (NLU)",
+      "IA generative"
+    ],
+    "plateforme_stack": [
+      "Google Cloud Dialogflow",
+      "Google Cloud (IA generative)"
+    ],
+    "objectif_metrique": [
+      "requetes traitees par mois",
+      "deviation d'appels",
+      "parc couvert"
+    ]
+  },
+  "implementation": "hybride",
+  "objectif_business": "Absorber a l'echelle les demandes non urgentes des membres OnStar (routage, navigation, questions vehicule) par une IA conversationnelle, et etendre l'usage a l'experience d'achat via des chatbots genAI sur les sites GM.",
+  "description": "L'OnStar Interactive Virtual Assistant, lance en 2022, s'appuie sur la reconnaissance d'intention de Google Cloud (Dialogflow) pour aider les membres OnStar sur les demandes non urgentes : itineraires, navigation, routage. Il est disponible sur la plupart des vehicules GM connectes OnStar a partir des millesimes 2015. GM etend l'approche aux chatbots genAI sur ses sites web pour repondre aux questions des acheteurs sur les vehicules, et pilote avec Google Cloud des usages d'IA generative pour l'experience d'achat et de possession.",
+  "resultats": [
+    {
+      "metrique": "Requetes clients traitees par mois (US + Canada)",
+      "valeur": "> 1 000 000",
+      "citation_exacte": "over 1 million customer inquiries a month",
+      "source_ref": "S1"
+    },
+    {
+      "metrique": "Parc couvert: vehicules GM connectes OnStar",
+      "valeur": "millesimes 2015+",
+      "citation_exacte": "most model-year 2015 and newer GM vehicles",
+      "source_ref": "S1"
+    },
+    {
+      "metrique": "Ambition genAI declaree: achat, possession, interaction",
+      "valeur": "transformer l'achat",
+      "citation_exacte": "Generative AI has the potential to revolutionize the buying, ownership, and interaction experience",
+      "source_ref": "S1"
+    }
+  ],
+  "niveau_preuve": {
+    "niveau": "C",
+    "justification": "Chiffre d'usage public (plus d'un million de requetes par mois) rapporte par plusieurs titres de presse etablie citant nommement GM et Google Cloud ; la brique genAI web est plus recente et moins chiffree. Donnee de reference datee de 2023."
+  },
+  "dates": {
+    "lancement": "2022 (OnStar Interactive Virtual Assistant)",
+    "derniere_confirmation_activite": "2023-08 (1 million de requetes par mois, extension genAI annoncee)",
+    "verifie_le": "2026-07-11",
+    "revoir_apres": "2026-10-11"
+  },
+  "statut_vivant": {
+    "statut": "signaux_mitiges",
+    "note": "OnStar reste le service phare de GM et l'assistant est toujours en service, mais la derniere metrique publique chiffree (1 million de requetes par mois) date de 2023 ; pas de mise a jour chiffree recente trouvee."
+  },
+  "sources": [
+    {
+      "ref": "S1",
+      "type": "presse",
+      "fiabilite": "T3_presse_etablie",
+      "titre": "GM, Google Cloud bringing AI to millions of vehicles",
+      "url": "https://www.wardsauto.com/news/archive-auto-General-Motors-OnStar-Google-Cloud-AI/692293/",
+      "date_publication": "2023-08",
+      "consulte_le": "2026-07-11"
+    },
+    {
+      "ref": "S2",
+      "type": "presse",
+      "fiabilite": "T4_secondaire",
+      "titre": "GM details its work with Google in advancing AI capabilities",
+      "url": "https://www.repairerdrivennews.com/2023/08/31/gm-details-its-work-with-google-in-advancing-ai-capabilities/",
+      "date_publication": "2023-08-31",
+      "consulte_le": "2026-07-11"
+    },
+    {
+      "ref": "S3",
+      "type": "presse",
+      "fiabilite": "T3_presse_etablie",
+      "titre": "GM Teams Up with Google Cloud on AI Initiatives",
+      "url": "https://www.automotive-fleet.com/news/gm-teams-up-with-google-cloud-on-ai-initiatives",
+      "date_publication": "2023-08",
+      "consulte_le": "2026-07-11"
+    }
+  ],
+  "fonctionnement_operationnel": {
+    "cadence": "Temps reel, 24/7, sur chaque interaction membre OnStar ou visiteur des sites GM.",
+    "opere_par": "Les equipes OnStar et service client de GM, avec Google Cloud pour la couche IA.",
+    "signal_pilote": "L'intention detectee dans la demande. Si l'intent est mal reconnu, la demande est mal routee ou bascule vers un agent humain, ce qui degrade la deviation d'appels.",
+    "etapes": [
+      {
+        "etape": "Reception de la demande",
+        "detail": "Un membre sollicite OnStar par la voix, ou un visiteur ouvre le chatbot d'un site GM.",
+        "acteur": "client"
+      },
+      {
+        "etape": "Reconnaissance d'intention",
+        "detail": "Dialogflow classe la demande (itineraire, navigation, question vehicule) et decide du traitement.",
+        "acteur": "IA"
+      },
+      {
+        "etape": "Reponse ou routage",
+        "detail": "L'assistant repond directement pour les demandes non urgentes, ou route vers le bon service.",
+        "acteur": "IA"
+      },
+      {
+        "etape": "Escalade humaine",
+        "detail": "Les cas hors perimetre ou urgents sont transferes a un conseiller.",
+        "acteur": "service client"
+      }
+    ]
+  },
+  "schema_flow": {
+    "statut": "documente",
+    "noeuds": [
+      {
+        "id": "membre",
+        "role_generique": "humain",
+        "label": "Membre OnStar / acheteur"
+      },
+      {
+        "id": "onstar",
+        "role_generique": "canal_conversationnel",
+        "label": "OnStar IVA / chatbot site GM"
+      },
+      {
+        "id": "nlu",
+        "role_generique": "modele_ia",
+        "label": "Reconnaissance d'intention",
+        "outil_documente": "Google Cloud Dialogflow"
+      },
+      {
+        "id": "genai",
+        "role_generique": "modele_ia",
+        "label": "IA generative (experience d'achat)",
+        "outil_documente": "Google Cloud"
+      },
+      {
+        "id": "conseiller",
+        "role_generique": "humain",
+        "label": "Conseiller service client"
+      }
+    ],
+    "liens": [
+      [
+        "membre",
+        "onstar",
+        "demande"
+      ],
+      [
+        "onstar",
+        "nlu",
+        "texte/voix"
+      ],
+      [
+        "nlu",
+        "onstar",
+        "intention + reponse"
+      ],
+      [
+        "onstar",
+        "genai",
+        "question vehicule ouverte"
+      ],
+      [
+        "genai",
+        "onstar",
+        "reponse redigee"
+      ],
+      [
+        "onstar",
+        "conseiller",
+        "escalade"
+      ],
+      [
+        "onstar",
+        "membre",
+        "restitution"
+      ]
+    ]
+  },
+  "stack_technique": [
+    {
+      "nom": "Google Cloud Dialogflow",
+      "categorie": "plateforme",
+      "detail": "Reconnaissance d'intention (NLU) au coeur de l'OnStar Interactive Virtual Assistant : classe les demandes non urgentes (itineraires, navigation, routage) et decide du traitement",
+      "url": "https://cloud.google.com/dialogflow"
+    },
+    {
+      "nom": "IA generative Google Cloud",
+      "categorie": "llm",
+      "detail": "Briques genAI de Google Cloud pour les chatbots des sites GM et les usages pilotes sur l'experience d'achat ; modele exact non nomme dans les sources",
+      "url": "https://cloud.google.com"
+    },
+    {
+      "nom": "OnStar",
+      "categorie": "infra",
+      "detail": "Plateforme de services connectes embarquee de GM, canal vocal de l'assistant sur les vehicules millesimes 2015 et plus recents",
+      "url": "https://www.onstar.com"
+    },
+    {
+      "nom": "Google Cloud (partenariat GM)",
+      "categorie": "integrateur",
+      "detail": "Fournisseur des briques d'IA conversationnelle et generative et partenaire du deploiement",
+      "url": "https://cloud.google.com"
+    }
+  ],
+  "replication": {
+    "statut_epistemique": "infere",
+    "prerequis_data": [
+      "historique des demandes et intents",
+      "base de connaissance vehicule et service",
+      "referentiel des flux de routage"
+    ],
+    "prerequis_orga": [
+      "equipe service client",
+      "gouvernance sur l'escalade humaine"
+    ],
+    "stack_possible": [
+      "Dialogflow ou equivalent NLU",
+      "LLM cloud pour les reponses genAI",
+      "connecteurs CRM/service"
+    ],
+    "premiere_etape": "Cartographier les intents les plus frequents du service client et automatiser d'abord ceux a fort volume et faible risque.",
+    "playbook": [
+      {
+        "action": "Cartographier les intents du service client a partir de l'historique des demandes et retenir ceux a fort volume et faible risque.",
+        "livrable": "Liste priorisee d'intents avec volumes et regles d'escalade"
+      },
+      {
+        "action": "Construire l'agent sur Dialogflow (ou NLU equivalent) pour les intents retenus, branche sur la base de connaissance vehicule et service.",
+        "livrable": "Agent conversationnel fonctionnel en environnement de test"
+      },
+      {
+        "action": "Integrer les canaux (voix embarquee, chat web) et le routage vers un conseiller pour les cas hors perimetre ou urgents.",
+        "livrable": "Assistant en pilote sur un canal avec escalade humaine operante"
+      },
+      {
+        "action": "Mesurer volume traite et deviation d'appels, corriger les intents mal reconnus, puis ajouter la couche genAI pour les questions ouvertes.",
+        "livrable": "Bilan chiffre de deviation et extension genAI cadree"
+      }
+    ],
+    "equipe": "1 conversation designer + 2 devs integration + 1 responsable service client ; un integrateur cloud peut porter le build"
+  },
+  "seo": {
+    "slug": "general-motors-onstar-iva-google-cloud-2023",
+    "title": "General Motors : assistant OnStar sur Google Cloud - plus d'1 million de requetes par mois (2023)",
+    "meta_description": "L'OnStar Interactive Virtual Assistant de GM, base sur Google Cloud Dialogflow, traite plus d'un million de requetes clients par mois aux Etats-Unis et au Canada.",
+    "resume_citable": "L'OnStar Interactive Virtual Assistant de General Motors, base sur Google Cloud Dialogflow, traite plus d'un million de requetes clients par mois aux Etats-Unis et au Canada, sur les vehicules GM connectes a partir des millesimes 2015.",
+    "faq": [
+      {
+        "q": "Quel volume l'assistant OnStar de GM traite-t-il ?",
+        "a": "Plus d'un million de requetes clients par mois aux Etats-Unis et au Canada, selon les donnees publiques de 2023."
+      },
+      {
+        "q": "Sur quelle technologie repose-t-il ?",
+        "a": "La reconnaissance d'intention de Google Cloud (Dialogflow), etendue a des chatbots genAI sur les sites GM pour l'experience d'achat."
+      }
+    ]
+  },
+  "logo_domain": "gm.com"
+}

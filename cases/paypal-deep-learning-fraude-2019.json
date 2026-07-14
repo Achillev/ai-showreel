@@ -1,0 +1,268 @@
+{
+  "id": "paypal-deep-learning-fraude-2019",
+  "type_fiche": "succes",
+  "marque": "PayPal",
+  "groupe": "PayPal Holdings, Inc.",
+  "industrie": "banque_assurance_fintech",
+  "marches_deploiement": [
+    "Mondial (systeme temps reel 24/7)"
+  ],
+  "transposable_ue": {
+    "flag": "oui",
+    "note": "Le scoring de fraude en temps reel s'opere sur les paiements, UE comprise. Sous RGPD et AI Act, la decision de blocage automatique doit rester explicable et contestable ; la donnee de transaction est traitee au titre de la prevention de la fraude."
+  },
+  "metier": "Risque et lutte anti-fraude (paiements)",
+  "intervenants": [
+    {
+      "nom": "Sri Shivananda",
+      "role": "CTO et Senior Vice President, PayPal",
+      "source_ref": "S2"
+    }
+  ],
+  "axes": {
+    "levier": "monetisation",
+    "touchpoints": [
+      "paiement / checkout",
+      "autorisation de transaction"
+    ],
+    "etape_parcours": "achat",
+    "famille": "prediction",
+    "pattern": "detection de fraude en temps reel par deep learning",
+    "type_ia": [
+      "deep learning (reseaux de neurones)",
+      "machine learning",
+      "inference GPU temps reel"
+    ],
+    "plateforme_stack": [
+      "custom/in-house",
+      "NVIDIA T4 GPU (inference)"
+    ],
+    "objectif_metrique": [
+      "taux de detection de fraude",
+      "latence d'inference",
+      "capacite serveur"
+    ]
+  },
+  "implementation": "custom",
+  "stack_technique": [
+    {
+      "nom": "Reseaux de neurones profonds PayPal",
+      "categorie": "llm",
+      "detail": "Modeles anti-fraude proprietaires de PayPal, entraines sur le flux de paiements et les fraudes confirmees ; architecture exacte non publiee.",
+      "url": "https://www.paypal.com"
+    },
+    {
+      "nom": "NVIDIA T4 (GPU d'inference)",
+      "categorie": "infra",
+      "detail": "GPU sur lesquels PayPal a bascule l'inference temps reel : +10% de detection et capacite serveur divisee par pres de 8 par rapport aux CPU.",
+      "url": "https://www.nvidia.com"
+    },
+    {
+      "nom": "Systeme de scoring temps reel PayPal",
+      "categorie": "outil",
+      "detail": "Chaine custom qui score chaque transaction a la volee, 24/7, et route vers approbation, blocage ou revue humaine.",
+      "url": "https://www.paypal.com"
+    }
+  ],
+  "objectif_business": "Detecter la fraude en temps reel sur un flux de paiements mondial, 24 heures sur 24, sans degrader la latence de checkout ni faire exploser le cout d'infrastructure.",
+  "points_cles": ["Detection de fraude en temps reel par reseaux de neurones profonds.", "Inference basculee sur GPU NVIDIA T4, systeme de scoring custom 24/7.", "Detection amelioree de 10%, capacite serveur divisee par pres de 8.", "Preuve B, statut aux signaux mitiges (chiffrage de 2019)."],
+  "description": "PayPal a deploye un systeme mondial de detection de fraude en temps reel appuye sur des reseaux de neurones profonds. Les serveurs CPU seuls ne tenaient pas la charge pour un service qui doit tourner en continu et decider a la volee sur chaque transaction. PayPal a bascule l'inference sur GPU NVIDIA T4. Le resultat documente par NVIDIA : une amelioration de 10% de la detection de fraude en temps reel, tout en divisant la capacite serveur necessaire par pres de 8. Le CTO de PayPal decrit un systeme qui rend possibles des capacites auparavant hors de portee.",
+  "resultats": [
+    {
+      "metrique": "Amelioration de la detection de fraude en temps reel (bascule sur GPU)",
+      "valeur": "+10%",
+      "citation_exacte": "improving real-time fraud detection by 10 percent",
+      "source_ref": "S2"
+    },
+    {
+      "metrique": "Reduction de la capacite serveur necessaire",
+      "valeur": "environ 8 fois moins",
+      "citation_exacte": "lowering server capacity by nearly 8x",
+      "source_ref": "S2"
+    }
+  ],
+  "niveau_preuve": {
+    "niveau": "B",
+    "justification": "Deploiement chiffre documente par NVIDIA (partenaire d'infrastructure, source interessee) dans deux publications concordantes, avec une citation directe du CTO de PayPal reliant la marque au projet. Pas un resultat financier ; les chiffres proviennent du fournisseur."
+  },
+  "dates": {
+    "lancement": "2019 (deploiement du systeme mondial d'inference sur GPU documente par NVIDIA)",
+    "derniere_confirmation_activite": "2019 (blog technique NVIDIA) ; pattern deep learning anti-fraude toujours actif chez PayPal",
+    "verifie_le": "2026-07-11",
+    "revoir_apres": "2027-01-11"
+  },
+  "statut_vivant": {
+    "statut": "signaux_mitiges",
+    "note": "La detection de fraude par deep learning est un actif central et vivant de PayPal. Le chiffrage precis (10%, 8x) date du deploiement GPU documente en 2019 ; l'architecture a probablement evolue depuis, sans mise a jour publique chiffree equivalente retrouvee."
+  },
+  "sources": [
+    {
+      "ref": "S1",
+      "type": "eng_blog",
+      "fiabilite": "T2_officiel_interesse",
+      "titre": "How Is AI Used in Fraud Detection? (NVIDIA)",
+      "url": "https://blogs.nvidia.com/blog/ai-fraud-detection-rapids-triton-tensorrt-nemo/",
+      "date_publication": "2023",
+      "consulte_le": "2026-07-11"
+    },
+    {
+      "ref": "S2",
+      "type": "eng_blog",
+      "fiabilite": "T2_officiel_interesse",
+      "titre": "GPU Inference Momentum Continues to Build (NVIDIA)",
+      "url": "https://developer.nvidia.com/blog/gpu-inference-momentum-continues-to-build/",
+      "date_publication": "2019-03-18",
+      "consulte_le": "2026-07-11"
+    },
+    {
+      "ref": "S3",
+      "type": "customer_story_plateforme",
+      "fiabilite": "T2_officiel_interesse",
+      "titre": "Fraud Detection Applications Accelerated by NVIDIA GPUs (customer stories)",
+      "url": "https://nvidia.com/en-eu/customer-stories/fraud-detection-applications",
+      "date_publication": "2020",
+      "consulte_le": "2026-07-11"
+    }
+  ],
+  "fonctionnement_operationnel": {
+    "cadence": "Temps reel, sur chaque transaction, en continu 24/7 avec pics gerables (evenements de forte charge type periode de soldes).",
+    "opere_par": "Equipes data science et ingenierie risque de PayPal.",
+    "signal_pilote": "Le comportement de transaction et les fraudes confirmees. Si la latence d'inference remonte ou si les labels se degradent, le systeme bloque des paiements legitimes ou laisse passer de la fraude.",
+    "etapes": [
+      {
+        "etape": "Transaction",
+        "detail": "Un paiement est initie sur le reseau PayPal.",
+        "acteur": "site_app"
+      },
+      {
+        "etape": "Scoring temps reel",
+        "detail": "Les reseaux de neurones evaluent la transaction en inference GPU a faible latence.",
+        "acteur": "IA"
+      },
+      {
+        "etape": "Decision",
+        "detail": "Le paiement est approuve, bloque ou mis en revue selon le score.",
+        "acteur": "IA / equipe risque"
+      },
+      {
+        "etape": "Reapprentissage",
+        "detail": "Les fraudes confirmees reviennent alimenter l'entrainement des modeles.",
+        "acteur": "equipe data"
+      }
+    ]
+  },
+  "schema_flow": {
+    "statut": "approche_type",
+    "noeuds": [
+      {
+        "id": "txn",
+        "role_generique": "site_app",
+        "label": "Paiement en cours"
+      },
+      {
+        "id": "features",
+        "role_generique": "data_source",
+        "label": "Signaux de transaction et historique"
+      },
+      {
+        "id": "modele",
+        "role_generique": "modele_ia",
+        "label": "Reseaux de neurones anti-fraude (inference GPU)",
+        "outil_documente": "PayPal deep learning sur NVIDIA T4"
+      },
+      {
+        "id": "decision",
+        "role_generique": "humain",
+        "label": "Decision d'autorisation / revue"
+      },
+      {
+        "id": "labels",
+        "role_generique": "data_source",
+        "label": "Fraudes confirmees"
+      }
+    ],
+    "liens": [
+      [
+        "txn",
+        "modele"
+      ],
+      [
+        "features",
+        "modele"
+      ],
+      [
+        "modele",
+        "decision",
+        "score en temps reel"
+      ],
+      [
+        "decision",
+        "labels"
+      ],
+      [
+        "labels",
+        "modele",
+        "reentrainement"
+      ]
+    ]
+  },
+  "replication": {
+    "statut_epistemique": "infere",
+    "playbook": [
+      {
+        "action": "Mesurer la baseline : latence et cout de l'inference actuelle, taux de detection, taux de faux positifs, qualite des labels de fraude confirmee.",
+        "livrable": "Baseline chiffree partagee avec l'equipe risque"
+      },
+      {
+        "action": "Trancher build (modele maison + inference GPU) vs moteur anti-fraude du marche, avec un POC sur du trafic rejoue.",
+        "livrable": "Comparatif detection / latence / cout documente"
+      },
+      {
+        "action": "Deployer le systeme retenu en shadow mode sur le flux reel : scoring en parallele sans impact sur les decisions.",
+        "livrable": "Ecarts de decision documentes sur plusieurs semaines"
+      },
+      {
+        "action": "Basculer progressivement la decision automatique, avec revue humaine sur la zone grise et gouvernance de la contestation (RGPD, explicabilite).",
+        "livrable": "Systeme en production avec regles de blocage et de revue"
+      },
+      {
+        "action": "Reinjecter les fraudes confirmees dans l'entrainement et surveiller la derive du modele.",
+        "livrable": "Boucle de labels et monitoring de derive operationnels"
+      }
+    ],
+    "equipe": "2-4 data scientists risque + des ingenieurs MLOps pour tenir la latence + des analystes fraude pour les revues et la qualite des labels",
+    "prerequis_data": [
+      "Flux de paiements en temps reel",
+      "Historique de fraudes confirmees labellisees",
+      "Signaux comportementaux et d'appareil"
+    ],
+    "prerequis_orga": [
+      "Equipe data science et ingenierie risque",
+      "Infrastructure d'inference a faible latence (GPU)",
+      "Gouvernance de la decision automatisee"
+    ],
+    "stack_possible": [
+      "Modele custom deep learning (voie PayPal)",
+      "moteurs anti-fraude tiers (Feedzai, Featurespace, Sift)",
+      "inference GPU pour tenir la latence"
+    ],
+    "premiere_etape": "Mesurer la latence et le cout de l'inference actuelle avant de decider d'un passage GPU ou d'un moteur externe."
+  },
+  "seo": {
+    "slug": "paypal-deep-learning-fraude-2019",
+    "title": "PayPal : detection de fraude par deep learning sur GPU - +10% de detection, 8x moins de serveurs (2019)",
+    "meta_description": "PayPal a bascule sa detection de fraude temps reel sur GPU NVIDIA : +10% de detection tout en divisant par ~8 la capacite serveur necessaire.",
+    "resume_citable": "PayPal a deploye un systeme mondial de detection de fraude en temps reel sur GPU NVIDIA, ameliorant la detection de 10% tout en divisant par pres de 8 la capacite serveur necessaire.",
+    "faq": [
+      {
+        "q": "Comment PayPal a-t-il ameliore sa detection de fraude ?",
+        "a": "En passant l'inference de ses reseaux de neurones sur GPU NVIDIA T4, ce qui a permis un systeme mondial temps reel 24/7 que les serveurs CPU seuls ne pouvaient pas soutenir."
+      },
+      {
+        "q": "Quels gains PayPal rapporte-t-il ?",
+        "a": "Selon la documentation NVIDIA, une amelioration de 10% de la detection de fraude en temps reel et une capacite serveur necessaire divisee par pres de 8."
+      }
+    ]
+  },
+  "logo_domain": "paypal.com"
+}

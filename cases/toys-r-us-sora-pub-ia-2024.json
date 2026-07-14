@@ -1,0 +1,222 @@
+{
+  "id": "toys-r-us-sora-pub-ia-2024",
+  "type_fiche": "echec_retrait",
+  "marque": "Toys R Us",
+  "industrie": "retail_ecom",
+  "marches_deploiement": [
+    "Etats-Unis",
+    "international"
+  ],
+  "transposable_ue": {
+    "flag": "oui",
+    "note": "Le risque est identique en Europe : une marque grand public qui affiche une pub entierement generee par IA s'expose au meme rejet reputationnel. L'AI Act impose de signaler les contenus synthetiques (obligation de transparence), et les regles de publicite trompeuse s'appliquent si le rendu ne correspond pas au produit. Le probleme ici n'est pas legal mais d'image : le public associe l'IA generative a un renoncement au travail creatif."
+  },
+  "metier": "marketing / brand content",
+  "axes": {
+    "levier": "acquisition",
+    "touchpoints": [
+      "film de marque",
+      "video sociale",
+      "site de marque"
+    ],
+    "etape_parcours": "decouverte",
+    "famille": "generation",
+    "pattern": "publicite video generee par IA",
+    "type_ia": [
+      "generation video (text-to-video)",
+      "modele generatif"
+    ],
+    "plateforme_stack": [
+      "OpenAI Sora",
+      "post-production humaine"
+    ],
+    "objectif_metrique": [
+      "notoriete",
+      "sentiment de marque"
+    ]
+  },
+  "implementation": "custom",
+  "objectif_business": "Faire parler de la marque avec un film hommage a son fondateur Charles Lazarus, en se positionnant comme pionniere de la production video par IA.",
+  "description": "En juin 2024, Toys R Us presente au festival Cannes Lions un film de marque d'environ 66 secondes realise principalement avec Sora, l'outil de generation video d'OpenAI. Le spot raconte l'enfance de Charles Lazarus et le reve qui aurait inspire la marque et sa mascotte girafe. Le rendu porte les marqueurs typiques du generatif : l'enfant change d'apparence d'un plan a l'autre, la texture est lisse et artificielle. La reaction du milieu creatif et du public est immediate et hostile, la pub etant qualifiee de sans ame. La marque a defendu le choix plutot que de retirer le film.",
+  "resultats": [
+    {
+      "metrique": "Sentiment de marque negatif, avant puis apres diffusion",
+      "valeur": "de 13,5% a 53,4%",
+      "citation_exacte": "3.4% positive, 53.4% negative and 43.2% neutral",
+      "source_ref": "S3"
+    },
+    {
+      "metrique": "Reponse officielle de la marque, technologie de pointe invoquee",
+      "valeur": "assume son choix",
+      "citation_exacte": "using the most cutting-edge technology available",
+      "source_ref": "S1"
+    },
+    {
+      "metrique": "Critique creative dominante, rendu percu comme du remplissage IA",
+      "valeur": "juge sans ame",
+      "citation_exacte": "rendering it with soulless AI slop",
+      "source_ref": "S1"
+    }
+  ],
+  "niveau_preuve": {
+    "niveau": "C",
+    "justification": "Presse etablie (Forbes, eMarketer) et outil de mesure de sentiment (Marketing-Interactive) rapportent nommement la marque, l'outil et la reponse de son directoire marketing. Pas de document financier ni judiciaire, donc C."
+  },
+  "dates": {
+    "lancement": "2024-06 (presentation au festival Cannes Lions)",
+    "derniere_confirmation_activite": "2024-06-26 (backlash documente, film maintenu)",
+    "verifie_le": "2026-07-11",
+    "revoir_apres": "2027-07-11"
+  },
+  "statut_vivant": {
+    "statut": "confirme",
+    "note": "Cas de backlash sans retrait : Toys R Us a defendu le film au lieu de le supprimer. L'episode reste un point de reference sur le rejet public de la pub 100% IA."
+  },
+  "sources": [
+    {
+      "ref": "S1",
+      "type": "presse",
+      "fiabilite": "T3_presse_etablie",
+      "titre": "The Toys 'R' Us AI-Generated Ad Controversy, Explained",
+      "url": "https://www.forbes.com/sites/danidiplacido/2024/06/26/the-toys-r-us-ai-generated-ad-controversy-explained/",
+      "date_publication": "2024-06-26",
+      "consulte_le": "2026-07-11"
+    },
+    {
+      "ref": "S2",
+      "type": "presse",
+      "fiabilite": "T3_presse_etablie",
+      "titre": "Toys R Us unveils ad made with Sora AI video tool, prompting criticism",
+      "url": "https://www.emarketer.com/content/toys-r-us-unveils-sora-ai-ad-criticism-cmo",
+      "date_publication": "2024-06-27",
+      "consulte_le": "2026-07-11"
+    },
+    {
+      "ref": "S3",
+      "type": "presse",
+      "fiabilite": "T4_secondaire",
+      "titre": "Toys R Us sees sentiments plummet over 'soulless' AI-generated ad",
+      "url": "https://www.marketing-interactive.com/toys-r-us-sora-ai-sentiments-plummet",
+      "date_publication": "2024-07",
+      "consulte_le": "2026-07-11"
+    }
+  ],
+  "post_mortem": {
+    "ce_qui_s_est_passe": "En juin 2024, Toys R Us devoile a Cannes un film de marque produit principalement avec Sora. Le spot est concu comme un hommage au fondateur Charles Lazarus. Des sa diffusion, creatifs et internautes attaquent le rendu artificiel et le choix de ne pas faire appel a des professionnels. La mesure de sentiment de la marque bascule du neutre vers le negatif en quelques jours. La marque a maintenu le film et defendu son pari technologique.",
+    "raison_echec": "Le rejet vient de deux choses documentees : un rendu visuel incoherent (l'enfant change d'aspect entre les plans, texture lisse typique du generatif) et un rejet de principe du milieu creatif contre une pub qui remplace le travail humain par de l'IA. Le sujet meme du spot, l'imagination sans limite d'un enfant, a rendu le contraste avec un rendu machine encore plus mal recu.",
+    "date_retrait": "Aucun retrait officiel : la marque a maintenu la campagne malgre le backlash.",
+    "cout_estime": "Cout reputationnel : bascule mesuree du sentiment vers le negatif, couverture presse internationale defavorable. Pas de cout financier direct publie.",
+    "signaux_avant_coureurs": "Infere : en 2024 l'outil Sora ne tenait pas la coherence d'un personnage sur plusieurs plans, ce qui etait deja connu des equipes techniques. Diffuser un rendu porteur des artefacts visibles du generatif, sur un sujet emotionnel, et devant un public de creatifs a Cannes, cumulait les conditions du rejet.",
+    "lecons_avec_recul": "Infere : la generation video par IA peut servir en production (previsualisation, moodboards, plans d'appoint) sans etre exposee brute comme le film final d'une grande marque. Le public de 2024 juge severement une pub qui affiche ses coutures IA sur un contenu emotionnel. Mieux vaut un usage discret et maitrise qu'un coup de communication sur le fait d'avoir tout genere.",
+    "le_pattern_reste_il_valide": "Infere : oui, le pattern de la video generee par IA reste valide et progresse vite. L'echec condamne cette execution (rendu 2024 non abouti, sujet mal choisi, mise en avant du procede), pas la categorie. La question de reception est mouvante : ce qui choquait en 2024 sera juge autrement quand la qualite montera et que l'usage se banalisera."
+  },
+  "schema_flow": {
+    "statut": "approche_type",
+    "noeuds": [
+      {
+        "id": "brief",
+        "role_generique": "humain",
+        "label": "Equipe marketing (brief creatif)"
+      },
+      {
+        "id": "gen",
+        "role_generique": "modele_ia",
+        "label": "Generation video text-to-video",
+        "outil_documente": "OpenAI Sora"
+      },
+      {
+        "id": "post",
+        "role_generique": "humain",
+        "label": "Post-production (montage, musique)"
+      },
+      {
+        "id": "diff",
+        "role_generique": "paid_platform",
+        "label": "Diffusion (film de marque, social)"
+      },
+      {
+        "id": "public",
+        "role_generique": "humain",
+        "label": "Public et milieu creatif"
+      }
+    ],
+    "liens": [
+      [
+        "brief",
+        "gen"
+      ],
+      [
+        "gen",
+        "post"
+      ],
+      [
+        "post",
+        "diff"
+      ],
+      [
+        "diff",
+        "public"
+      ],
+      [
+        "public",
+        "brief",
+        "reaction (backlash)"
+      ]
+    ]
+  },
+  "replication": {
+    "statut_epistemique": "infere",
+    "prerequis_data": [
+      "brief creatif",
+      "references de style",
+      "prompts iteres"
+    ],
+    "prerequis_orga": [
+      "direction artistique humaine",
+      "controle qualite du rendu avant diffusion"
+    ],
+    "stack_possible": [
+      "outil text-to-video",
+      "suite de montage",
+      "revue creative interne"
+    ],
+    "premiere_etape": "Definir ou l'IA video sert reellement (previz, plans d'appoint) et decider en amont si le rendu final peut supporter d'etre expose brut au public cible."
+  },
+  "seo": {
+    "slug": "toys-r-us-sora-pub-ia-2024",
+    "title": "Toys R Us : film de marque genere avec Sora - backlash sur la pub IA (2024)",
+    "meta_description": "En juin 2024, Toys R Us diffuse a Cannes un film de marque fait avec Sora. Le rendu juge sans ame fait basculer le sentiment de marque vers le negatif.",
+    "resume_citable": "En juin 2024, Toys R Us a devoile a Cannes un film de marque genere principalement avec Sora d'OpenAI ; le sentiment de marque a chute a 3,4% positif contre 53,4% negatif apres diffusion.",
+    "faq": [
+      {
+        "q": "Qu'est-ce qui a mal tourne avec la pub Toys R Us de 2024 ?",
+        "a": "Le film de marque, produit principalement avec Sora, presentait un rendu incoherent (l'enfant change d'apparence entre les plans) et a ete rejete comme sans ame par le public et le milieu creatif. Le sentiment de marque a bascule vers le negatif."
+      },
+      {
+        "q": "La video generee par IA est-elle un pattern condamne ?",
+        "a": "Non. L'echec porte sur cette execution de 2024 (rendu non abouti, mise en avant du procede sur un sujet emotionnel), pas sur la categorie, qui progresse vite et sert deja en production d'appoint."
+      }
+    ]
+  },
+  "logo_domain": "toysrus.com",
+  "stack_technique": [
+    {
+      "nom": "OpenAI Sora",
+      "categorie": "llm",
+      "detail": "Modele text-to-video d'OpenAI utilise pour generer l'essentiel des plans du film ; en 2024, il ne tenait pas la coherence d'un personnage entre les plans.",
+      "url": "https://openai.com/sora"
+    },
+    {
+      "nom": "OpenAI",
+      "categorie": "plateforme",
+      "detail": "Editeur du modele Sora utilise pour la production du film de marque.",
+      "url": "https://openai.com"
+    },
+    {
+      "nom": "Post-production humaine",
+      "categorie": "outil",
+      "detail": "Montage, musique et corrections realises par l'equipe creative ; outils non nommes publiquement.",
+      "url": "https://www.toysrus.com"
+    }
+  ]
+}

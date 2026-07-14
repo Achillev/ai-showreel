@@ -1,0 +1,265 @@
+{
+  "id": "uber-upfront-pricing-ia-2023",
+  "type_fiche": "succes",
+  "marque": "Uber",
+  "industrie": "autre",
+  "marches_deploiement": [
+    "Etats-Unis",
+    "plusieurs marches internationaux"
+  ],
+  "transposable_ue": {
+    "flag": "oui_avec_adaptations",
+    "note": "Le prix upfront calcule par ML est transposable, mais l'UE encadre la tarification personnalisee: information obligatoire sur les prix personnalises par decision automatisee (directive Omnibus), base legale RGPD si des donnees personnelles entrent dans le calcul, et vigilance sur la discrimination tarifaire. La composante liee au profil du passager est la plus sensible."
+  },
+  "metier": "marketplace / pricing",
+  "axes": {
+    "levier": "monetisation",
+    "touchpoints": [
+      "app passager",
+      "app chauffeur",
+      "moteur de tarification"
+    ],
+    "etape_parcours": "achat",
+    "famille": "optimisation_automatisation",
+    "pattern": "pricing dynamique / upfront pricing par machine learning",
+    "type_ia": [
+      "machine learning (prediction de demande)",
+      "prediction temps et distance",
+      "tarification par itineraire"
+    ],
+    "plateforme_stack": [
+      "custom/in-house"
+    ],
+    "objectif_metrique": [
+      "revenu par course",
+      "taux de matching",
+      "equilibre offre-demande",
+      "prix moyen"
+    ]
+  },
+  "implementation": "custom",
+  "objectif_business": "Afficher, avant la reservation, un prix par itineraire qui equilibre offre et demande et optimise le revenu de la course, tout en gardant un taux de matching eleve.",
+  "description": "Depuis 2022, Uber montre un prix upfront calcule avant la reservation a partir du temps et de la distance estimes de l'origine a la destination, et des schemas de demande pour cet itineraire a cette heure. Le route-based pricing etend cette logique en s'appuyant sur la reponse agregee et anonymisee des chauffeurs a des demandes similaires et sur la demande de long terme par zone. Bloomberg, repris par Slate, rapporte qu'Uber recourt au machine learning pour calculer les tarifs au-dela du seul temps et distance, en fonction de ce que la plateforme sait ou suppose du passager.",
+  "resultats": [
+    {
+      "metrique": "Recours au machine learning pour la tarification",
+      "valeur": "calcul des tarifs au-dela du temps et de la distance",
+      "citation_exacte": "machine learning to calculate fares not only based on time and distance",
+      "source_ref": "S3"
+    },
+    {
+      "metrique": "Hausse du prix moyen (Uber et Lyft, sur trois ans)",
+      "valeur": "plus de 40%",
+      "citation_exacte": "a 40-plus-percent increase in average fares over three years",
+      "source_ref": "S3"
+    },
+    {
+      "metrique": "Base du prix upfront pour le passager",
+      "valeur": "longueur et duree estimees du trajet",
+      "citation_exacte": "Upfront rider prices are based on the estimated length and duration of the trip",
+      "source_ref": "S1"
+    }
+  ],
+  "niveau_preuve": {
+    "niveau": "C",
+    "justification": "Pages officielles Uber decrivant le mecanisme, plus reporting Bloomberg repris par une presse etablie attribuant nommement le machine learning a Uber. Pas de chiffre financier isolant l'effet du ML sur le revenu."
+  },
+  "dates": {
+    "lancement": "prix upfront passager deploye a partir de 2016-2017 ; generalisation cote chauffeur et route-based pricing en 2022",
+    "derniere_confirmation_activite": "2026-07 (pages officielles de tarification actives)",
+    "verifie_le": "2026-07-11",
+    "revoir_apres": "2027-01-11"
+  },
+  "statut_vivant": {
+    "statut": "confirme",
+    "note": "Le prix upfront et le route-based pricing restent le mode de tarification par defaut, documentes sur les pages officielles Uber."
+  },
+  "sources": [
+    {
+      "ref": "S1",
+      "type": "blog_officiel",
+      "fiabilite": "T1_primaire",
+      "titre": "Uber Marketplace pricing for successful matches (route-based pricing)",
+      "url": "https://www.uber.com/us/en/marketplace/pricing/route-based-pricing/",
+      "date_publication": "",
+      "consulte_le": "2026-07-11"
+    },
+    {
+      "ref": "S2",
+      "type": "blog_officiel",
+      "fiabilite": "T1_primaire",
+      "titre": "Ride Prices and Rates - How It Works (Upfront Pricing)",
+      "url": "https://www.uber.com/us/en/ride/how-it-works/upfront-pricing/",
+      "date_publication": "",
+      "consulte_le": "2026-07-11"
+    },
+    {
+      "ref": "S3",
+      "type": "presse",
+      "fiabilite": "T3_presse_etablie",
+      "titre": "Why Uber and Lyft Replaced Surge Pricing With Upfront Fares",
+      "url": "https://slate.com/technology/2023/08/lyft-uber-surge-prime-time-upfront-pricing.html",
+      "date_publication": "2023-08",
+      "consulte_le": "2026-07-11"
+    }
+  ],
+  "fonctionnement_operationnel": {
+    "cadence": "Temps reel, un prix calcule a chaque demande de course.",
+    "opere_par": "Equipe marketplace et pricing d'Uber, sur une stack maison.",
+    "signal_pilote": "La demande predite par itineraire et par heure, croisee avec le temps et la distance estimes et la reponse agregee des chauffeurs. Sans donnees de trafic et de demande fiables, la prediction de prix se degrade.",
+    "etapes": [
+      {
+        "etape": "Estimation du trajet",
+        "detail": "Le systeme estime temps et distance de l'origine a la destination.",
+        "acteur": "IA"
+      },
+      {
+        "etape": "Prediction de la demande",
+        "detail": "Les schemas de demande sur l'itineraire a cette heure et la reponse agregee des chauffeurs sont evalues.",
+        "acteur": "IA"
+      },
+      {
+        "etape": "Calcul du prix upfront",
+        "detail": "Un prix unique est calcule avant la reservation, incluant peages, taxes et surcharges applicables.",
+        "acteur": "IA"
+      },
+      {
+        "etape": "Affichage et acceptation",
+        "detail": "Le passager voit le prix avant de commander et accepte ou non la course.",
+        "acteur": "client"
+      }
+    ]
+  },
+  "schema_flow": {
+    "statut": "documente",
+    "noeuds": [
+      {
+        "id": "rider",
+        "role_generique": "humain",
+        "label": "Passager"
+      },
+      {
+        "id": "app",
+        "role_generique": "site_app",
+        "label": "App Uber"
+      },
+      {
+        "id": "data",
+        "role_generique": "data_source",
+        "label": "Temps, distance, demande par itineraire, reponse chauffeurs"
+      },
+      {
+        "id": "ml",
+        "role_generique": "modele_ia",
+        "label": "Modele de tarification (machine learning)"
+      },
+      {
+        "id": "driver",
+        "role_generique": "humain",
+        "label": "Chauffeur"
+      }
+    ],
+    "liens": [
+      [
+        "rider",
+        "app"
+      ],
+      [
+        "app",
+        "data"
+      ],
+      [
+        "data",
+        "ml"
+      ],
+      [
+        "ml",
+        "app",
+        "prix upfront"
+      ],
+      [
+        "app",
+        "driver",
+        "matching"
+      ]
+    ]
+  },
+  "replication": {
+    "statut_epistemique": "infere",
+    "prerequis_data": [
+      "historique de trajets et de prix",
+      "demande en temps reel par zone",
+      "disponibilite de l'offre (chauffeurs)"
+    ],
+    "prerequis_orga": [
+      "equipe marketplace et data science",
+      "capacite de calcul temps reel",
+      "gouvernance sur l'equite tarifaire"
+    ],
+    "stack_possible": [
+      "modeles ML de demande maison",
+      "moteur de matching et de pricing temps reel"
+    ],
+    "premiere_etape": "Construire un modele de prediction temps et distance par itineraire avant d'ajouter la couche demande.",
+    "playbook": [
+      {
+        "action": "Consolider l'historique trajets et prix et la demande par zone dans un entrepot exploitable.",
+        "livrable": "Entrepot de donnees marketplace avec historique fiable."
+      },
+      {
+        "action": "Construire le modele de prediction temps et distance par itineraire.",
+        "livrable": "Estimateur valide contre le realise (erreur mesuree)."
+      },
+      {
+        "action": "Ajouter la couche demande (schemas par itineraire et par heure) et calculer un prix upfront en shadow mode, sans l'afficher.",
+        "livrable": "Modele de prix compare a la tarification actuelle sur donnees reelles."
+      },
+      {
+        "action": "Tester le prix upfront sur une zone contre la tarification en place, en suivant taux de matching, revenu par course et plaintes.",
+        "livrable": "Lecture du test et regles d'equite tarifaire documentees."
+      },
+      {
+        "action": "Generaliser zone par zone avec monitoring continu de la derive des predictions.",
+        "livrable": "Moteur de pricing en production avec alerting."
+      }
+    ],
+    "equipe": "3-6 data scientists et ML engineers + 1 PM marketplace + 1 analyste pricing, avec une gouvernance juridique sur la tarification personnalisee (directive Omnibus, RGPD)."
+  },
+  "seo": {
+    "slug": "uber-upfront-pricing-ia-2023",
+    "title": "Uber : upfront pricing par machine learning - hausse de plus de 40% du prix moyen sur trois ans (2023)",
+    "meta_description": "Uber calcule le prix upfront de chaque course par machine learning a partir du temps, de la distance et de la demande par itineraire ; le prix moyen a grimpe de plus de 40% en trois ans.",
+    "resume_citable": "Uber fixe le prix upfront de chaque course via un modele de machine learning combinant temps, distance et demande par itineraire, un mode de tarification generalise depuis 2022.",
+    "faq": [
+      {
+        "q": "Comment Uber calcule-t-il le prix affiche avant la course ?",
+        "a": "Un modele de machine learning combine temps et distance estimes, schemas de demande sur l'itineraire a cette heure et reponse agregee des chauffeurs pour poser un prix unique upfront."
+      },
+      {
+        "q": "Qu'est-ce que le route-based pricing d'Uber ?",
+        "a": "Une extension du prix upfront qui s'appuie sur les reponses agregees des chauffeurs a des demandes similaires et sur la demande de long terme par zone."
+      }
+    ]
+  },
+  "logo_domain": "uber.com",
+  "stack_technique": [
+    {
+      "nom": "Modeles ML de tarification Uber (in-house)",
+      "categorie": "llm",
+      "detail": "Prediction du temps et de la distance par itineraire et des schemas de demande par heure ; algorithmes exacts non publies.",
+      "url": "https://www.uber.com"
+    },
+    {
+      "nom": "Moteur upfront et route-based pricing",
+      "categorie": "plateforme",
+      "detail": "Calcul d'un prix unique avant reservation, etendu par la reponse agregee et anonymisee des chauffeurs a des demandes similaires et la demande de long terme par zone.",
+      "url": "https://www.uber.com/us/en/marketplace/pricing/route-based-pricing/"
+    },
+    {
+      "nom": "Infrastructure marketplace temps reel",
+      "categorie": "infra",
+      "detail": "Donnees de trafic, de demande par zone et de disponibilite chauffeurs servies en temps reel au moteur de prix et de matching.",
+      "url": "https://www.uber.com"
+    }
+  ]
+}

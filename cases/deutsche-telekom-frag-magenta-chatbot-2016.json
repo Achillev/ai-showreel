@@ -1,0 +1,260 @@
+{
+  "type_fiche": "succes",
+  "id": "deutsche-telekom-frag-magenta-chatbot-2016",
+  "marque": "Deutsche Telekom",
+  "groupe": "Deutsche Telekom (marque Telekom / Magenta)",
+  "industrie": "telco",
+  "marches_deploiement": [
+    "Allemagne (Frag Magenta), avec un socle groupe destine a la clientele europeenne du groupe"
+  ],
+  "transposable_ue": {
+    "flag": "oui",
+    "note": "Deja opere en UE (Allemagne). Traitement de requetes client en langage naturel touchant facturation, contrats et pannes : donnees soumises au RGPD, information et securisation. Avec l'arrivee des LLM (projet 1BOT), vigilance sur les reponses generees. AI Act : risque limite, transparence sur le caractere automatise."
+  },
+  "metier": "Service client / self-care conversationnel (chat et voix)",
+  "marque_linkedin": "https://www.linkedin.com/company/deutsche-telekom",
+  "axes": {
+    "levier": "retention",
+    "touchpoints": [
+      "chat sur telekom.de et application MeinMagenta",
+      "hotline service par la voix (Frag Magenta Voice)",
+      "escalade vers conseiller humain"
+    ],
+    "etape_parcours": "post-achat / service et fidelisation",
+    "famille": "conversation",
+    "pattern": "Chatbot de service self-care en langage naturel, etendu a la voix puis reconstruit sur LLM (Frag Magenta 1BOT) pour couvrir des centaines de motifs de contact",
+    "type_ia": [
+      "NLU (comprehension du langage naturel)",
+      "chatbot voix (Frag Magenta Voice)",
+      "plateforme multi-agent LLM (Frag Magenta 1BOT)"
+    ],
+    "plateforme_stack": [
+      "Rasa (NLU) pour le socle historique",
+      "plateforme LLM multi-agent Frag Magenta 1BOT",
+      "integration chat, app et hotline voix"
+    ],
+    "objectif_metrique": [
+      "part de demandes resolues sans conseiller (deflection)",
+      "volume de dialogues traites",
+      "couverture des motifs de contact"
+    ]
+  },
+  "implementation": "custom",
+  "objectif_business": "Absorber en self-care un maximum de demandes courantes (facture, demenagement, panne, offres) avant qu'elles n'atteignent un conseiller, sur le chat comme au telephone.",
+  "points_cles": ["Chatbot de service self-care en langage naturel, etendu a la voix, sur 380+ motifs.", "Socle Rasa (NLU) puis reconstruction sur plateforme LLM multi-agent Frag Magenta 1BOT.", "Plus de 4 millions de dialogues en 2022, plus d'un tiers resolu immediatement.", "Preuve B, statut confirme."],
+  "description": "Frag Magenta est le chatbot de service de Deutsche Telekom, en production depuis l'automne 2016. Le client formule sa demande en langage naturel et l'assistant traite plus de 380 motifs differents, du demenagement a la facture en passant par les pannes et les nouvelles offres. Depuis 2020, il repond aussi par la voix sur la hotline, et depuis l'automne 2023, Frag Magenta Voice s'appuie sur les capacites vocales de Rasa. En 2022, Frag Magenta a mene plus de quatre millions de dialogues client et resout immediatement plus d'un tiers des demandes, le reste etant transfere a un conseiller. Deutsche Telekom a lance en parallele Frag Magenta 1BOT, une reconstruction sur plateforme LLM multi-agent, pour depasser les limites du NLU scripte et etendre la couverture. Le socle est pense pour la clientele europeenne du groupe.",
+  "fonctionnement_operationnel": {
+    "cadence": "Temps reel a chaque contact, en chat et en voix. Les intentions et les parcours sont enrichis en continu ; le passage sur LLM change la cadence de mise a jour.",
+    "opere_par": "Le centre de competence IA de Deutsche Telekom pour la plateforme et les modeles, les equipes service client pour les parcours metier et l'escalade.",
+    "signal_pilote": "Le taux de resolution immediate versus transfert. S'il chute, le chatbot ne deflecte plus et reporte la charge sur les conseillers au lieu de l'absorber.",
+    "etapes": [
+      {
+        "etape": "Cartographier les motifs de contact",
+        "detail": "Plus de 380 motifs sont modelises avec leurs parcours, du demenagement a la panne, pour que l'assistant sache quoi faire de la demande.",
+        "acteur": "Equipe service client + IA"
+      },
+      {
+        "etape": "Comprendre en langage naturel",
+        "detail": "Le NLU lit la formulation libre du client et la relie a un motif, en chat comme en voix sur la hotline.",
+        "acteur": "IA / NLU"
+      },
+      {
+        "etape": "Resoudre ou transferer",
+        "detail": "Plus d'un tiers des demandes sont resolues immediatement ; le reste part vers un conseiller avec le contexte deja capte.",
+        "acteur": "IA puis conseiller humain"
+      },
+      {
+        "etape": "Passer au LLM (1BOT)",
+        "detail": "Reconstruction sur plateforme multi-agent LLM pour elargir la couverture et sortir des reponses purement scriptees.",
+        "acteur": "Centre de competence IA"
+      }
+    ]
+  },
+  "resultats": [
+    {
+      "metrique": "Dialogues client (2022)",
+      "valeur": "4 millions+",
+      "citation_exacte": "In 2022, Frag Magenta conducted over four million customer dialogues",
+      "source_ref": "S1"
+    },
+    {
+      "metrique": "Demandes resolues immediatement",
+      "valeur": "plus d'un tiers",
+      "citation_exacte": "The chatbot solves more than a third of the concerns immediately",
+      "source_ref": "S1"
+    },
+    {
+      "metrique": "Motifs de contact couverts",
+      "valeur": "380+",
+      "citation_exacte": "he can help with over 380 different concerns",
+      "source_ref": "S1"
+    }
+  ],
+  "niveau_preuve": {
+    "niveau": "B",
+    "justification": "Chiffres publies par Deutsche Telekom sur son propre site (4 millions de dialogues 2022, plus d'un tiers resolu immediatement, 380+ motifs) et complements presse citant un dirigeant du groupe sur la strategie de scale chat/voix. Source primaire marque plus presse etablie : solide sur volume et deflection ; l'impact retention en points n'est pas isole."
+  },
+  "dates": {
+    "lancement": "Automne 2016 (chatbot) ; voix depuis 2020 ; Frag Magenta Voice depuis automne 2023",
+    "derniere_confirmation_activite": "2023-2024 (Frag Magenta Voice, projet LLM 1BOT et strategie de scale communiquee)",
+    "verifie_le": "2026-07-11",
+    "revoir_apres": "2027-01-11"
+  },
+  "statut_vivant": {
+    "statut": "confirme",
+    "note": "Chatbot en production continue depuis 2016, etendu a la voix et reconstruit sur LLM (1BOT). Communication dirigeant en 2023 sur un scale massif chat et voix. Aucun signal de retrait."
+  },
+  "sources": [
+    {
+      "ref": "S1",
+      "type": "blog_officiel",
+      "titre": "The Digital Service Assistant / Frag Magenta - Deutsche Telekom",
+      "url": "https://www.telekom.com/en/company/topic-specials/special-customer-service/details/the-digital-service-assistant-564018",
+      "date_publication": "2023",
+      "consulte_le": "2026-07-11",
+      "fiabilite": "T1_primaire"
+    },
+    {
+      "ref": "S2",
+      "type": "presse",
+      "titre": "Chatbots: BT and Deutsche Telekom share insights",
+      "url": "https://techinformed.com/chatbots-bt-and-deutsche-telekom-share-insights/",
+      "date_publication": "2023-10-24",
+      "consulte_le": "2026-07-11",
+      "fiabilite": "T3_presse_etablie"
+    },
+    {
+      "ref": "S3",
+      "type": "blog_officiel",
+      "titre": "Artificial intelligence at Deutsche Telekom",
+      "url": "https://www.telekom.com/en/company/digital-responsibility/details/artificial-intelligence-at-deutsche-telekom-1055154",
+      "date_publication": "2024",
+      "consulte_le": "2026-07-11",
+      "fiabilite": "T1_primaire"
+    }
+  ],
+  "schema_flow": {
+    "statut": "documente",
+    "noeuds": [
+      {
+        "id": "client",
+        "role_generique": "canal_conversationnel",
+        "label": "Client en chat (web, app) ou en voix (hotline)"
+      },
+      {
+        "id": "nlu",
+        "role_generique": "modele_ia",
+        "label": "Frag Magenta (NLU chat + voix, puis LLM multi-agent 1BOT)",
+        "outil_documente": "Rasa / plateforme LLM Frag Magenta 1BOT"
+      },
+      {
+        "id": "kb",
+        "role_generique": "data_source",
+        "label": "Parcours et motifs de contact (380+)"
+      },
+      {
+        "id": "agent",
+        "role_generique": "humain",
+        "label": "Conseiller humain (escalade des cas non resolus)"
+      }
+    ],
+    "liens": [
+      [
+        "client",
+        "nlu"
+      ],
+      [
+        "kb",
+        "nlu"
+      ],
+      [
+        "nlu",
+        "client",
+        "resolution immediate (>1/3)"
+      ],
+      [
+        "nlu",
+        "agent",
+        "transfert avec contexte"
+      ]
+    ]
+  },
+  "stack_technique": [
+    {
+      "nom": "Rasa",
+      "categorie": "plateforme",
+      "detail": "NLU du socle historique de Frag Magenta et capacites vocales de Frag Magenta Voice depuis l'automne 2023",
+      "url": "https://rasa.com"
+    },
+    {
+      "nom": "Frag Magenta 1BOT",
+      "categorie": "plateforme",
+      "detail": "reconstruction interne sur plateforme LLM multi-agent pour depasser le NLU scripte ; les modeles sous-jacents ne sont pas divulgues",
+      "url": "https://www.telekom.com"
+    },
+    {
+      "nom": "Canaux chat et voix Telekom",
+      "categorie": "infra",
+      "detail": "integration au chat de telekom.de, a l'app MeinMagenta et a la hotline telephonique",
+      "url": "https://www.telekom.com"
+    }
+  ],
+  "replication": {
+    "statut_epistemique": "infere",
+    "prerequis_data": [
+      "Cartographie des motifs de contact et de leurs parcours de resolution",
+      "Corpus de conversations pour entrainer la comprehension d'intention",
+      "Acces aux systemes self-care pour agir (facture, options, panne)"
+    ],
+    "prerequis_orga": [
+      "Equipe IA/service client qui maintient les parcours",
+      "Process d'escalade propre vers les conseillers"
+    ],
+    "stack_possible": [
+      "Rasa ou un LLM du marche en RAG pour la comprehension",
+      "Brique voix pour la hotline",
+      "Connexion API aux back-offices de service"
+    ],
+    "premiere_etape": "Prioriser les 10 a 20 motifs de contact les plus volumineux, modeliser leurs parcours, mesurer le taux de resolution immediate contre le transfert avant d'elargir.",
+    "playbook": [
+      {
+        "action": "Prioriser les 10 a 20 motifs de contact les plus volumineux et cartographier leurs parcours de resolution.",
+        "livrable": "Catalogue de motifs avec parcours modelises"
+      },
+      {
+        "action": "Construire la comprehension du langage (NLU ou LLM en RAG) et connecter les API des back-offices self-care (facture, options, panne).",
+        "livrable": "Bot capable de resoudre les motifs prioritaires en recette"
+      },
+      {
+        "action": "Lancer en beta sur le chat web avec une escalade vers conseiller qui transmet le contexte deja capte.",
+        "livrable": "Bot en production limitee, taux de resolution immediate mesure"
+      },
+      {
+        "action": "Generaliser le chat, enrichir les motifs en continu et surveiller le ratio resolution / transfert.",
+        "livrable": "Couverture etendue avec tableau de bord de deflection"
+      },
+      {
+        "action": "Etendre le socle a la voix sur la hotline avec une brique vocale.",
+        "livrable": "Voicebot en production sur les motifs les plus volumineux"
+      }
+    ],
+    "equipe": "2-4 devs / ML conversationnel + 1 PM + experts service client pour les parcours et l'escalade"
+  },
+  "seo": {
+    "slug": "deutsche-telekom-frag-magenta-chatbot-service-2016",
+    "title": "Deutsche Telekom : Frag Magenta, chatbot self-care - 4M dialogues, 1/3 resolu (2016)",
+    "meta_description": "Frag Magenta, chatbot de service de Deutsche Telekom depuis 2016 : 380+ motifs en chat et voix, 4M+ dialogues en 2022, plus d'un tiers resolu immediatement.",
+    "resume_citable": "Deutsche Telekom opere depuis 2016 Frag Magenta, un chatbot de service client en chat et voix couvrant plus de 380 motifs de contact, qui a mene plus de 4 millions de dialogues en 2022 et resout immediatement plus d'un tiers des demandes.",
+    "faq": [
+      {
+        "q": "Le chatbot gere-t-il aussi la voix ?",
+        "a": "Oui, depuis 2020 sur la hotline, et depuis 2023 via Frag Magenta Voice. Deutsche Telekom reconstruit le socle sur LLM avec le projet 1BOT."
+      },
+      {
+        "q": "Combien de demandes resout-il seul ?",
+        "a": "Plus d'un tiers des demandes sont resolues immediatement d'apres Deutsche Telekom ; le reste est transfere a un conseiller avec le contexte deja capte."
+      }
+    ]
+  },
+  "logo_domain": "telekom.com"
+}

@@ -1,0 +1,279 @@
+{
+  "id": "expedia-in-chatgpt-2026",
+  "type_fiche": "succes",
+  "marque": "Expedia",
+  "groupe": "Expedia Group",
+  "industrie": "voyage_hospitality",
+  "marches_deploiement": [
+    "Etats-Unis",
+    "Canada (hors Quebec)",
+    "Nouvelle-Zelande",
+    "Inde",
+    "Singapour",
+    "Mexique"
+  ],
+  "transposable_ue": {
+    "flag": "non",
+    "note": "Les apps dans ChatGPT sont ouvertes aux utilisateurs hors Espace économique européen, Suisse et Royaume-Uni ; Expedia in ChatGPT n'est pas disponible dans l'UE au lancement. Le pattern de distribution via un assistant tiers reste transposable si l'app est publiée sur un marché UE, sous réserve du RGPD et de l'AI Act."
+  },
+  "metier": "e-commerce / marketing / distribution",
+  "intervenants": [],
+  "agences": [
+    {
+      "nom": "OpenAI",
+      "role": "Plateforme ChatGPT et Apps SDK (Model Context Protocol) hébergeant l'app Expedia",
+      "source_ref": "S2"
+    }
+  ],
+  "axes": {
+    "levier": "acquisition",
+    "touchpoints": [
+      "ChatGPT (app Expedia)",
+      "plugin ChatGPT historique"
+    ],
+    "etape_parcours": "découverte",
+    "famille": "conversation",
+    "pattern": "distribution via assistant conversationnel tiers (app dans ChatGPT)",
+    "type_ia": [
+      "LLM (ChatGPT / OpenAI)",
+      "Model Context Protocol"
+    ],
+    "plateforme_stack": [
+      "OpenAI ChatGPT",
+      "OpenAI Apps SDK",
+      "Model Context Protocol",
+      "custom/in-house"
+    ],
+    "objectif_metrique": [
+      "couverture marchés",
+      "présence dans l'assistant tiers",
+      "acquisition de nouveaux points de contact"
+    ]
+  },
+  "implementation": "hybride",
+  "stack_technique": [
+    {
+      "nom": "OpenAI ChatGPT",
+      "categorie": "plateforme",
+      "detail": "Assistant qui heberge l'app Expedia; accessible aux utilisateurs connectes dans six marches hors UE au lancement.",
+      "url": "https://openai.com"
+    },
+    {
+      "nom": "OpenAI Apps SDK",
+      "categorie": "outil",
+      "detail": "Kit de developpement des apps dans ChatGPT, lance le 6 octobre 2025, sur lequel l'app Expedia est construite.",
+      "url": "https://openai.com"
+    },
+    {
+      "nom": "Model Context Protocol",
+      "categorie": "outil",
+      "detail": "Protocole ouvert sur lequel est bati l'Apps SDK; relie la conversation a l'inventaire Expedia.",
+      "url": "https://modelcontextprotocol.io"
+    },
+    {
+      "nom": "Infrastructure inventaire et prix Expedia",
+      "categorie": "infra",
+      "detail": "Fournit vols, hotels et destinations avec prix et disponibilite en direct, dans le prolongement du plugin ChatGPT de 2023.",
+      "url": "https://www.expedia.com"
+    }
+  ],
+  "objectif_business": "Se placer là où les voyageurs commencent à planifier hors du site d'Expedia, en exposant l'inventaire vols, hôtels et destinations directement dans une conversation ChatGPT, avec prix et disponibilité en direct.",
+  "description": "Expedia a été l'un des premiers partenaires des apps dans ChatGPT, lancées par OpenAI le 6 octobre 2025 via l'Apps SDK bâti sur le Model Context Protocol. L'utilisateur connecté à ChatGPT peut demander des options de voyage (hôtels, vols, destinations) avec prix et disponibilité dynamiques, tirés en direct de l'infrastructure Expedia. L'app prolonge le plugin ChatGPT d'Expedia lancé en 2023, l'un des premiers d'un acteur du voyage. Au lancement, elle est accessible aux utilisateurs connectés dans six marchés hors UE.",
+  "resultats": [
+    {
+      "metrique": "Marchés hors UE en production de l'app dans ChatGPT",
+      "valeur": "6 marchés",
+      "citation_exacte": "live in ChatGPT for all logged-in ChatGPT users in US, Canada (excluding Quebec province), New Zealand, India, Singapore and Mexico",
+      "source_ref": "S1"
+    },
+    {
+      "metrique": "Partenaire de lancement OpenAI des apps dans ChatGPT (6 oct 2025)",
+      "valeur": "partenaire jour 1",
+      "citation_exacte": "naming Expedia and Booking.com among its first partners",
+      "source_ref": "S2"
+    }
+  ],
+  "niveau_preuve": {
+    "niveau": "C",
+    "justification": "Communiqué officiel Expedia et presse spécialisée établie (Skift, PhocusWire) documentant un déploiement multi-marchés et un statut de partenaire de lancement OpenAI. Preuve de scale = déploiement multi-marchés plus plugin en production depuis 2023 ; les métriques de performance ne sont pas publiques."
+  },
+  "dates": {
+    "lancement": "2023 (plugin ChatGPT) ; 2025-10-06 (app dans ChatGPT via Apps SDK)",
+    "derniere_confirmation_activite": "2025-10 (lancement des apps dans ChatGPT)",
+    "verifie_le": "2026-07-11",
+    "revoir_apres": "2027-01-11"
+  },
+  "statut_vivant": {
+    "statut": "confirme",
+    "note": "App dans ChatGPT lancée en octobre 2025 sur six marchés ; prolonge un plugin en production depuis 2023."
+  },
+  "sources": [
+    {
+      "ref": "S1",
+      "type": "blog_officiel",
+      "fiabilite": "T1_primaire",
+      "titre": "Expedia in ChatGPT",
+      "url": "https://www.expedia.com/product/expedia-in-chatgpt/",
+      "date_publication": "2025-10",
+      "consulte_le": "2026-07-11"
+    },
+    {
+      "ref": "S2",
+      "type": "presse",
+      "fiabilite": "T3_presse_etablie",
+      "titre": "ChatGPT Travel Apps Are Now a Thing - Starting with Booking.com and Expedia",
+      "url": "https://skift.com/2025/10/06/expedia-booking-chatgpt-apps-openai/",
+      "date_publication": "2025-10-06",
+      "consulte_le": "2026-07-11"
+    },
+    {
+      "ref": "S3",
+      "type": "presse",
+      "fiabilite": "T4_secondaire",
+      "titre": "ChatGPT brings apps into chat, starting with Expedia and Booking.com",
+      "url": "https://www.phocuswire.com/openai-chatgpt-apps-expedia-booking-tripadvisor",
+      "date_publication": "2025-10-06",
+      "consulte_le": "2026-07-11"
+    }
+  ],
+  "fonctionnement_operationnel": {
+    "cadence": "Temps réel à chaque requête dans ChatGPT ; l'app appelle l'inventaire Expedia en direct.",
+    "opere_par": "Équipe distribution et produit d'Expedia Group, avec l'intégration technique via l'Apps SDK d'OpenAI.",
+    "signal_pilote": "La requête de l'utilisateur dans ChatGPT, résolue contre l'inventaire et les prix Expedia via le Model Context Protocol. Si la connexion MCP ou le flux de prix tombe, l'app ne remonte plus d'options réservables.",
+    "etapes": [
+      {
+        "etape": "Requête dans ChatGPT",
+        "detail": "L'utilisateur connecté demande des options de voyage dans une conversation ChatGPT.",
+        "acteur": "client"
+      },
+      {
+        "etape": "Appel de l'app Expedia",
+        "detail": "ChatGPT invoque l'app Expedia via l'Apps SDK et le Model Context Protocol.",
+        "acteur": "IA"
+      },
+      {
+        "etape": "Récupération de l'inventaire",
+        "detail": "L'app interroge l'infrastructure Expedia pour prix et disponibilité en direct.",
+        "acteur": "IA / équipe data"
+      },
+      {
+        "etape": "Restitution et bascule",
+        "detail": "Les options sont présentées dans la conversation, avec passage vers Expedia pour finaliser.",
+        "acteur": "client"
+      }
+    ]
+  },
+  "schema_flow": {
+    "statut": "documente",
+    "noeuds": [
+      {
+        "id": "user",
+        "role_generique": "humain",
+        "label": "Utilisateur ChatGPT"
+      },
+      {
+        "id": "chatgpt",
+        "role_generique": "canal_conversationnel",
+        "label": "ChatGPT",
+        "outil_documente": "OpenAI ChatGPT"
+      },
+      {
+        "id": "app",
+        "role_generique": "site_app",
+        "label": "App Expedia (Apps SDK / MCP)",
+        "outil_documente": "OpenAI Apps SDK"
+      },
+      {
+        "id": "inv",
+        "role_generique": "data_source",
+        "label": "Inventaire et prix Expedia"
+      },
+      {
+        "id": "expedia",
+        "role_generique": "site_app",
+        "label": "Expedia (finalisation)"
+      }
+    ],
+    "liens": [
+      [
+        "user",
+        "chatgpt"
+      ],
+      [
+        "chatgpt",
+        "app"
+      ],
+      [
+        "app",
+        "inv"
+      ],
+      [
+        "inv",
+        "app"
+      ],
+      [
+        "app",
+        "chatgpt"
+      ],
+      [
+        "chatgpt",
+        "expedia",
+        "bascule pour réserver"
+      ]
+    ]
+  },
+  "replication": {
+    "statut_epistemique": "infere",
+    "prerequis_data": [
+      "inventaire et prix exposables par API",
+      "catalogue produit structuré pour un assistant tiers"
+    ],
+    "prerequis_orga": [
+      "équipe distribution et produit",
+      "capacité à publier et maintenir une app sur une plateforme tierce",
+      "gouvernance de la marque hors de son propre canal"
+    ],
+    "stack_possible": [
+      "Apps SDK OpenAI / Model Context Protocol",
+      "connecteur temps réel vers l'inventaire",
+      "authentification utilisateur"
+    ],
+    "premiere_etape": "Exposer l'inventaire via une API propre et un connecteur MCP, puis publier une app sur la plateforme conversationnelle là où l'audience se trouve.",
+    "playbook": [
+      {
+        "action": "Exposer inventaire, prix et disponibilite via une API propre et stable.",
+        "livrable": "API inventaire documentee et testee en charge"
+      },
+      {
+        "action": "Construire le connecteur MCP et l'app via l'Apps SDK: recherche, restitution, bascule vers le site pour finaliser.",
+        "livrable": "App fonctionnelle en environnement de test"
+      },
+      {
+        "action": "Gerer l'authentification utilisateur et passer la revue de publication de la plateforme.",
+        "livrable": "App validee et publiee sur les marches autorises"
+      },
+      {
+        "action": "Lancer, suivre le trafic in-chat et les bascules vers le site.",
+        "livrable": "Tableau de bord trafic et conversion du nouveau canal"
+      }
+    ],
+    "equipe": "2 devs API / integration + 1 PM distribution + 1 juriste pour marches et donnees."
+  },
+  "seo": {
+    "slug": "expedia-in-chatgpt-2026",
+    "title": "Expedia : app dans ChatGPT - partenaire de lancement OpenAI sur 6 marchés (2026)",
+    "meta_description": "Expedia figure parmi les premiers partenaires des apps dans ChatGPT lancées par OpenAI le 6 octobre 2025, avec un déploiement dans six marchés hors UE et un plugin ChatGPT en production depuis 2023.",
+    "resume_citable": "Expedia a été l'un des premiers partenaires des apps dans ChatGPT lancées par OpenAI le 6 octobre 2025, exposant son inventaire dans la conversation sur six marchés hors UE.",
+    "faq": [
+      {
+        "q": "Comment fonctionne Expedia in ChatGPT ?",
+        "a": "L'utilisateur connecté demande des options de voyage dans ChatGPT ; l'app Expedia remonte hôtels, vols et destinations avec prix et disponibilité en direct via l'Apps SDK d'OpenAI."
+      },
+      {
+        "q": "Où est-ce disponible ?",
+        "a": "Au lancement, dans six marchés hors UE : Etats-Unis, Canada hors Quebec, Nouvelle-Zelande, Inde, Singapour et Mexique."
+      }
+    ]
+  },
+  "logo_domain": "expedia.com"
+}

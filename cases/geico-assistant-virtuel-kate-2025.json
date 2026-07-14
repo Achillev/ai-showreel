@@ -1,0 +1,242 @@
+{
+  "id": "geico-assistant-virtuel-kate-2025",
+  "type_fiche": "succes",
+  "marque": "GEICO",
+  "groupe": "Berkshire Hathaway",
+  "industrie": "banque_assurance_fintech",
+  "marches_deploiement": [
+    "Etats-Unis"
+  ],
+  "transposable_ue": {
+    "flag": "oui",
+    "note": "Assistant conversationnel de self-service sur compte client (solde, echeance, carte d'assurance, documents). En UE, il faut informer clairement que l'interlocuteur est une IA, permettre le passage a un agent humain, et securiser l'acces au compte. Pas de decision automatisee a effet juridique : l'assistant restitue de l'information deja detenue et oriente. Le pattern est directement transposable."
+  },
+  "metier": "Service client / self-service mobile",
+  "axes": {
+    "levier": "retention",
+    "touchpoints": [
+      "application mobile GEICO",
+      "assistant IA sur le site geico.com"
+    ],
+    "etape_parcours": "post-achat",
+    "famille": "conversation",
+    "pattern": "assistant virtuel de self-service sur compte client",
+    "type_ia": [
+      "comprehension du langage naturel",
+      "assistant conversationnel",
+      "IA generative (assistant actuel)"
+    ],
+    "plateforme_stack": [
+      "custom/in-house (assistant virtuel GEICO, dont Kate dans l'app)"
+    ],
+    "objectif_metrique": [
+      "engagement dans l'application",
+      "deflection des appels",
+      "resolution en self-service"
+    ]
+  },
+  "implementation": "custom",
+  "objectif_business": "Remplacer les FAQ statiques, les serveurs vocaux et les formulaires par une conversation qui sait quoi demander, pour resoudre les demandes courantes en self-service et desengorger le centre d'appels.",
+  "description": "GEICO fait tourner un assistant virtuel de self-service sur ses canaux numeriques. Dans l'application, l'assistant Kate, lance en janvier 2017, repond en langage naturel aux questions de compte a fort volume et faible enjeu : solde, date du prochain paiement, recuperation de la carte d'assurance, resume de couverture, telechargement de documents, demande d'assistance routiere. Sur le site, GEICO expose desormais un assistant IA qui affiche les couvertures, les cartes et documents, et repond aux questions de police, en signalant a chaque echange que l'on parle a une IA et en proposant de basculer vers un agent humain quand la demande le depasse. A son lancement, PYMNTS a rapporte une hausse d'environ 10% de l'engagement dans l'application attribuee a Kate. L'assistant est toujours en service et a evolue vers une couche generative cote site, dans une logique de conversation qui sait quoi demander plutot que de renvoyer vers une page d'aide.",
+  "resultats": [
+    {
+      "metrique": "Hausse de l'engagement dans l'application attribuee a l'assistant Kate (au lancement)",
+      "valeur": "environ +10%",
+      "citation_exacte": "10% increase in mobile app engagement attributable to Kate",
+      "source_ref": "S2"
+    },
+    {
+      "metrique": "Signalement systematique de l'IA, bascule vers un agent possible",
+      "valeur": "IA toujours signalee",
+      "citation_exacte": "we'll make sure to let you know when you're interacting with our AI",
+      "source_ref": "S1"
+    }
+  ],
+  "niveau_preuve": {
+    "niveau": "C",
+    "justification": "Assistant documente par la page officielle GEICO (preuve de service actuel) et par la presse spécialisée qui rapporte le lancement et une hausse d'engagement chiffree. Le chiffre d'engagement date du lancement (2017) et est declaratif ; l'existence du service est verifiable en direct sur le site."
+  },
+  "dates": {
+    "lancement": "Janvier 2017 (assistant Kate dans l'app), evolue depuis vers un assistant IA cote site",
+    "derniere_confirmation_activite": "Assistant IA en service sur geico.com, verifie en 2026",
+    "verifie_le": "2026-07-11",
+    "revoir_apres": "2027-01-11"
+  },
+  "statut_vivant": {
+    "statut": "confirme",
+    "note": "L'assistant virtuel est accessible en direct sur geico.com, avec signalement de l'IA et bascule vers un agent humain ; en production continue depuis 2017."
+  },
+  "sources": [
+    {
+      "ref": "S1",
+      "type": "blog_officiel",
+      "fiabilite": "T1_primaire",
+      "titre": "Get Help Fast with Our GEICO AI Virtual Assistant",
+      "url": "https://www.geico.com/ai-assistant/",
+      "date_publication": "2025",
+      "consulte_le": "2026-07-11"
+    },
+    {
+      "ref": "S2",
+      "type": "presse",
+      "fiabilite": "T3_presse_etablie",
+      "titre": "Neither Gecko Nor Caveman, GEICO Adds Virtual Assistant Kate",
+      "url": "https://www.pymnts.com/chatbot-tracker/2017/neither-gecko-nor-caveman-geico-adds-virtual-assistant-kate/",
+      "date_publication": "2017-01",
+      "consulte_le": "2026-07-11"
+    },
+    {
+      "ref": "S3",
+      "type": "presse",
+      "fiabilite": "T3_presse_etablie",
+      "titre": "Geico introduces virtual assistant 'Kate'",
+      "url": "https://www.marketingdive.com/news/geico-introduces-virtual-assistant-kate/433800/",
+      "date_publication": "2017-01",
+      "consulte_le": "2026-07-11"
+    }
+  ],
+  "fonctionnement_operationnel": {
+    "cadence": "Temps reel, a chaque session client sur l'app ou le site.",
+    "opere_par": "Equipes digital et service client de GEICO ; l'assistant tient la premiere ligne, l'agent humain prend le relais sur les cas complexes.",
+    "signal_pilote": "L'acces aux donnees de compte du client (police, paiements, documents). Sans authentification et donnees a jour, l'assistant ne peut pas repondre aux questions de compte et se limite aux generalites.",
+    "etapes": [
+      {
+        "etape": "Identification de la demande",
+        "detail": "L'assistant comprend en langage naturel la question du client et signale qu'il s'agit d'une IA.",
+        "acteur": "IA"
+      },
+      {
+        "etape": "Restitution en self-service",
+        "detail": "Il affiche l'information de compte demandee (solde, echeance, carte, document) ou execute l'action courante.",
+        "acteur": "IA"
+      },
+      {
+        "etape": "Bascule vers un agent",
+        "detail": "Quand la demande depasse le self-service, l'assistant propose de passer a un conseiller humain.",
+        "acteur": "IA et service client"
+      }
+    ]
+  },
+  "schema_flow": {
+    "statut": "approche_type",
+    "noeuds": [
+      {
+        "id": "client",
+        "role_generique": "canal_conversationnel",
+        "label": "Client (app / site)"
+      },
+      {
+        "id": "assistant",
+        "role_generique": "modele_ia",
+        "label": "Assistant virtuel GEICO (Kate)"
+      },
+      {
+        "id": "compte",
+        "role_generique": "crm",
+        "label": "Donnees de compte et de police"
+      },
+      {
+        "id": "agent",
+        "role_generique": "humain",
+        "label": "Agent de service client"
+      }
+    ],
+    "liens": [
+      [
+        "client",
+        "assistant",
+        "question de compte"
+      ],
+      [
+        "compte",
+        "assistant",
+        "donnees de police et paiement"
+      ],
+      [
+        "assistant",
+        "client",
+        "reponse ou action en self-service"
+      ],
+      [
+        "assistant",
+        "agent",
+        "escalade des cas complexes"
+      ]
+    ]
+  },
+  "stack_technique": [
+    {
+      "nom": "Assistant virtuel GEICO (Kate)",
+      "categorie": "outil",
+      "detail": "Assistant conversationnel in-house lance en 2017 dans l'app, evolue depuis vers une couche generative cote site ; GEICO ne publie pas les technologies sous-jacentes",
+      "url": "https://www.geico.com"
+    },
+    {
+      "nom": "Couche de comprehension du langage naturel et genAI",
+      "categorie": "llm",
+      "detail": "NLU pour identifier la demande, puis IA generative sur l'assistant actuel du site ; modele exact non nomme publiquement",
+      "url": "https://www.geico.com"
+    },
+    {
+      "nom": "Systemes de compte et de police GEICO",
+      "categorie": "infra",
+      "detail": "Acces authentifie aux donnees de police, paiements et documents, condition du self-service (solde, echeance, carte, telechargements)",
+      "url": "https://www.geico.com"
+    }
+  ],
+  "replication": {
+    "statut_epistemique": "infere",
+    "prerequis_data": [
+      "Acces authentifie aux donnees de compte (police, paiements, documents)",
+      "Catalogue des intentions et actions self-service",
+      "Journalisation des sessions"
+    ],
+    "prerequis_orga": [
+      "Politique de transparence sur l'IA et bascule humaine",
+      "Securite d'acces au compte",
+      "Boucle qualite sur les reponses"
+    ],
+    "stack_possible": [
+      "Assistant conversationnel custom (voie GEICO)",
+      "Plateforme de chatbot/agent virtuel du marche connectee au SI client",
+      "LLM encadre + connecteurs aux systemes de police"
+    ],
+    "premiere_etape": "Cibler les cinq questions de compte les plus frequentes et les traiter en self-service authentifie avant d'elargir le perimetre.",
+    "playbook": [
+      {
+        "action": "Extraire des logs du centre d'appels les cinq questions de compte les plus frequentes et cadrer les regles : transparence IA, bascule humaine, securite d'acces.",
+        "livrable": "Catalogue d'intentions priorisees et regles de gouvernance validees"
+      },
+      {
+        "action": "Connecter l'assistant aux donnees de compte en acces authentifie (police, paiements, documents) via des connecteurs en lecture.",
+        "livrable": "Acces securise au compte teste de bout en bout"
+      },
+      {
+        "action": "Lancer un pilote sur l'app ou le site avec les cinq intentions, signalement de l'IA a chaque echange et bascule vers un agent.",
+        "livrable": "Assistant en pilote avec journalisation des sessions"
+      },
+      {
+        "action": "Mesurer resolution en self-service et deflection des appels, corriger les reponses fautives, puis elargir le perimetre d'intentions.",
+        "livrable": "Bilan chiffre deflection / resolution et feuille de route d'extension"
+      }
+    ],
+    "equipe": "1 PM + 2 devs (bot et connecteurs SI) + 1 responsable service client pour les scripts et l'escalade"
+  },
+  "seo": {
+    "slug": "geico-assistant-virtuel-kate-2025",
+    "title": "GEICO : assistant virtuel de self-service (Kate) - environ +10% d'engagement dans l'app (2025)",
+    "meta_description": "GEICO fait tourner un assistant IA de self-service (solde, carte, documents). Au lancement, Kate a apporte environ 10% d'engagement en plus dans l'application.",
+    "resume_citable": "GEICO exploite un assistant virtuel de self-service (Kate dans l'app, un assistant IA sur le site) qui traite les questions de compte a fort volume ; a son lancement, PYMNTS a rapporte une hausse d'environ 10% de l'engagement dans l'application.",
+    "faq": [
+      {
+        "q": "Que fait l'assistant virtuel de GEICO ?",
+        "a": "Il repond en langage naturel aux questions de compte a fort volume et faible enjeu (solde, echeance de paiement, carte d'assurance, resume de couverture, telechargement de documents) et propose de basculer vers un agent humain si besoin."
+      },
+      {
+        "q": "L'assistant est-il toujours en service ?",
+        "a": "Oui, un assistant IA de GEICO est accessible en direct sur geico.com, avec signalement de l'IA a chaque echange, en production continue depuis le lancement de Kate en 2017."
+      }
+    ]
+  },
+  "logo_domain": "geico.com"
+}

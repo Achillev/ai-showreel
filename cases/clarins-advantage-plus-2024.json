@@ -1,0 +1,285 @@
+{
+  "type_fiche": "succes",
+  "id": "clarins-advantage-plus-2024",
+  "marque": "Clarins",
+  "industrie": "luxe_beaute",
+  "marches_deploiement": [
+    "France"
+  ],
+  "transposable_ue": {
+    "flag": "oui",
+    "note": "Cas deja deploye en France, donc en environnement RGPD/ePrivacy. La mesure repose sur une etude Conversion Lift Meta et Google Analytics ; l'activation exige consentement, Pixel et Conversions API conformes. Ciblage algorithmique Meta a risque limite au sens de l'AI Act cote annonceur."
+  },
+  "metier": "Acquisition / e-commerce / CRM",
+  "axes": {
+    "levier": "acquisition",
+    "touchpoints": [
+      "Facebook Feed",
+      "Instagram Feed",
+      "Advantage+ placements"
+    ],
+    "etape_parcours": "découverte -> achat",
+    "famille": "optimisation_automatisation",
+    "pattern": "Campagne de vente automatisee par IA plus ads catalogue dynamiques, evaluee en incremental par Conversion Lift face au dernier clic",
+    "type_ia": [
+      "ML de ciblage et d'encheres",
+      "ads catalogue dynamiques"
+    ],
+    "plateforme_stack": [
+      "Meta Advantage+ Shopping Campaigns",
+      "Meta Advantage+ Catalog Ads",
+      "Meta Conversion Lift"
+    ],
+    "objectif_metrique": [
+      "achats web incrementaux",
+      "visites paid search incrementales",
+      "contribution reelle vs dernier clic"
+    ]
+  },
+  "implementation": "plateforme",
+  "objectif_business": "Prouver que Meta est un canal d'acquisition sous-estime par la mesure au dernier clic, et le piloter en incremental plutot que sur l'attribution.",
+  "points_cles": ["Campagnes de vente Meta automatisees (Advantage+ Shopping et Catalog Ads) mesurees en incremental.", "Etude Conversion Lift avec groupe temoin recoupee avec Google Analytics, avec l'agence tigrz.", "+22% d'achats web incrementaux, 85% invisibles au dernier clic, achats web x6,5 vs dernier clic.", "Preuve B, statut vivant confirme."],
+  "description": "Clarins, la marque francaise de cosmetiques et de soins, a voulu mesurer la vraie contribution de Meta a ses ventes en ligne en France, au-dela de ce que remonte l'attribution au dernier clic. La marque a fait tourner ses campagnes Advantage+ Shopping et Advantage+ Catalog Ads, ou l'IA de Meta choisit audiences, placements et creas a partir du catalogue produit, puis a lance une etude Conversion Lift avec groupe temoin du 6 au 31 mai 2024, recoupee avec Google Analytics. Le resultat : les pubs Meta ont genere 22 pour cent d'achats web incrementaux et 19 pour cent de visites paid search incrementales, et 85 pour cent des achats web attribuables a Meta n'apparaissaient pas dans le modele au dernier clic. Mesures par le Conversion Lift, les achats web etaient 6,5 fois superieurs a ce que voyait l'attribution au dernier clic.",
+  "fonctionnement_operationnel": {
+    "cadence": "Diffusion en continu ; la mesure incrementale se fait par vagues de test (ici une fenetre de test de 4 semaines avec groupe temoin).",
+    "opere_par": "L'equipe e-commerce / acquisition / CRM France, avec l'agence sociale tigrz.",
+    "signal_pilote": "Les achats web remontes par le Pixel et la Conversions API, et le groupe temoin du Conversion Lift. Sans groupe temoin propre, on retombe sur l'attribution qui sous-estime le canal.",
+    "etapes": [
+      {
+        "etape": "Diffuser via l'IA Meta",
+        "detail": "Advantage+ Shopping et Catalog Ads choisissent audiences, placements et creas a partir du catalogue produit. L'equipe fournit le feed et les visuels.",
+        "acteur": "IA Meta"
+      },
+      {
+        "etape": "Monter l'etude d'incrementalite",
+        "detail": "Conversion Lift avec groupe temoin sur la France, mai 2024, recoupe avec Google Analytics pour comparer contribution reelle et dernier clic.",
+        "acteur": "Équipe data / Meta"
+      },
+      {
+        "etape": "Lire l'ecart avec l'attribution",
+        "detail": "L'analyse montre la part d'achats invisibles au dernier clic (85 pour cent) et le multiplicateur de 6,5x. C'est ce qui justifie le budget en interne.",
+        "acteur": "Équipe media"
+      }
+    ]
+  },
+  "resultats": [
+    {
+      "metrique": "Achats web incrementaux attribues a Meta",
+      "valeur": "+22 %",
+      "citation_exacte": "22% incremental lift in web purchases",
+      "source_ref": "S1"
+    },
+    {
+      "metrique": "Visites paid search incrementales attribuees a Meta",
+      "valeur": "+19 %",
+      "citation_exacte": "19% incremental lift in paid search visits",
+      "source_ref": "S1"
+    },
+    {
+      "metrique": "Achats web non vus par le dernier clic",
+      "valeur": "85 %",
+      "citation_exacte": "85% of web purchases not accounted for in last-click",
+      "source_ref": "S1"
+    },
+    {
+      "metrique": "Achats web mesures en Conversion Lift vs dernier clic",
+      "valeur": "x6,5",
+      "citation_exacte": "6.5X more web purchases measured by conversion lift",
+      "source_ref": "S1"
+    }
+  ],
+  "niveau_preuve": {
+    "niveau": "B",
+    "justification": "Étude de cas officielle Meta, chiffree et adossee a un Conversion Lift avec groupe temoin recoupe avec Google Analytics (methode incrementale serieuse), avec personne et agence nommees ; source unique publiee par la plateforme."
+  },
+  "dates": {
+    "lancement": "2024-05-06",
+    "derniere_confirmation_activite": "2025 - Advantage+ devenu le standard Meta (Advantage+ Sales Campaigns)",
+    "verifie_le": "2026-07-11",
+    "revoir_apres": "2027-01-11"
+  },
+  "statut_vivant": {
+    "statut": "confirme",
+    "note": "Clarins reste un annonceur Meta actif en France et Advantage+ est le format de vente par defaut de Meta, ce qui garantit la perennite du pattern."
+  },
+  "sources": [
+    {
+      "ref": "S1",
+      "type": "customer_story_plateforme",
+      "titre": "Clarins: Facebook ads case study - Advantage+ shopping + Conversion Lift",
+      "url": "https://www.facebook.com/business/success/clarins",
+      "date_publication": "2024",
+      "consulte_le": "2026-07-11",
+      "fiabilite": "T2_officiel_interesse"
+    },
+    {
+      "ref": "S2",
+      "type": "blog_officiel",
+      "titre": "Meta Advantage+ Catalog Ads: Product Advertising AI Tool",
+      "url": "https://www.facebook.com/business/ads/meta-advantage-plus/catalog-ads/",
+      "date_publication": "2024",
+      "consulte_le": "2026-07-11",
+      "fiabilite": "T2_officiel_interesse"
+    }
+  ],
+  "schema_flow": {
+    "statut": "documente",
+    "noeuds": [
+      {
+        "id": "cat",
+        "role_generique": "data_source",
+        "label": "Catalogue produit + signaux d'achat",
+        "outil_documente": "Feed produit + Pixel / Conversions API"
+      },
+      {
+        "id": "ai",
+        "role_generique": "paid_platform",
+        "label": "IA Meta : audiences, encheres, placements, creas",
+        "outil_documente": "Meta Advantage+ Shopping + Catalog Ads"
+      },
+      {
+        "id": "touch",
+        "role_generique": "site_app",
+        "label": "Feed Facebook / Instagram + Advantage+ placements"
+      },
+      {
+        "id": "buy",
+        "role_generique": "site_app",
+        "label": "Achat en ligne"
+      },
+      {
+        "id": "lift",
+        "role_generique": "data_source",
+        "label": "Mesure incrementale vs dernier clic",
+        "outil_documente": "Meta Conversion Lift + Google Analytics"
+      }
+    ],
+    "liens": [
+      [
+        "cat",
+        "ai"
+      ],
+      [
+        "ai",
+        "touch"
+      ],
+      [
+        "touch",
+        "buy"
+      ],
+      [
+        "buy",
+        "lift"
+      ],
+      [
+        "lift",
+        "ai",
+        "boucle d'optimisation en incremental"
+      ]
+    ]
+  },
+  "stack_technique": [
+    {
+      "nom": "Meta Advantage+ Shopping",
+      "categorie": "plateforme",
+      "detail": "campagne de vente automatisee : audiences, encheres et placements pilotes par le ML de Meta",
+      "url": "https://www.facebook.com/business/ads/advantage-plus-shopping-campaigns"
+    },
+    {
+      "nom": "Meta Advantage+ Catalog Ads",
+      "categorie": "plateforme",
+      "detail": "ads catalogue dynamiques generees a partir du feed produit",
+      "url": "https://www.facebook.com/business/ads/meta-advantage-plus/catalog-ads/"
+    },
+    {
+      "nom": "Meta Pixel + Conversions API",
+      "categorie": "infra",
+      "detail": "remontee des achats web cote navigateur et serveur en mode consenti, le signal qui nourrit l'algorithme",
+      "url": "https://www.facebook.com/business/tools/conversions-api"
+    },
+    {
+      "nom": "Meta Conversion Lift",
+      "categorie": "outil",
+      "detail": "etude d'incrementalite avec groupe temoin, l'arbitre du test face au dernier clic",
+      "url": "https://www.facebook.com/business/m/one-sheeters/conversion-lift"
+    },
+    {
+      "nom": "Google Analytics",
+      "categorie": "outil",
+      "detail": "recoupement de la mesure incrementale avec l'analytics maison",
+      "url": "https://marketingplatform.google.com/about/analytics/"
+    }
+  ],
+  "replication": {
+    "statut_epistemique": "infere",
+    "prerequis_data": [
+      "Catalogue produit propre et a jour (feed)",
+      "Pixel + Conversions API avec achats fiables",
+      "Volume suffisant pour un groupe temoin Conversion Lift"
+    ],
+    "prerequis_orga": [
+      "Accord interne pour piloter en incremental plutot qu'au dernier clic",
+      "Capacite a monter et lire une etude d'incrementalite"
+    ],
+    "stack_possible": [
+      "Meta Advantage+ Sales Campaigns + Catalog Ads + CAPI",
+      "Conversion Lift ou geo-test comme arbitre",
+      "Recoupement avec l'outil analytics maison"
+    ],
+    "premiere_etape": "Lancer une etude Conversion Lift avec groupe temoin sur les campagnes Advantage+ existantes, et comparer le resultat a l'attribution au dernier clic.",
+    "playbook": [
+      {
+        "action": "Fiabiliser le feed produit et la mesure d'achat (Pixel + Conversions API) en mode consentement conforme.",
+        "livrable": "Feed propre et evenements d'achat valides dans Events Manager"
+      },
+      {
+        "action": "Basculer ou lancer les campagnes Advantage+ Shopping et Catalog Ads sur le perimetre a mesurer.",
+        "livrable": "Campagnes automatisees actives, phase d'apprentissage enclenchee"
+      },
+      {
+        "action": "Monter l'etude Conversion Lift avec Meta : groupe temoin, fenetre de test d'environ 4 semaines, plan de recoupement analytics.",
+        "livrable": "Protocole de test valide avec groupe temoin"
+      },
+      {
+        "action": "Laisser courir la fenetre de test sans modifier la structure des campagnes.",
+        "livrable": "Donnees d'incrementalite collectees sur la periode"
+      },
+      {
+        "action": "Lire le lift face a l'attribution au dernier clic, recouper avec Google Analytics, arbitrer le budget sur l'incremental.",
+        "livrable": "Rapport d'incrementalite et regle de pilotage budgetaire"
+      }
+    ],
+    "equipe": "1 media buyer Meta + 1 analyste data pour la lecture d'incrementalite, agence sociale en option"
+  },
+  "intervenants": [
+    {
+      "nom": "Stephanie Catarino",
+      "role": "Directrice E-Commerce, Acquisition & CRM France, Groupe Clarins",
+      "source_ref": "S1"
+    }
+  ],
+  "agences": [
+    {
+      "nom": "tigrz",
+      "role": "Agence sociale (strategie et execution des campagnes)",
+      "source_ref": "S1"
+    }
+  ],
+  "seo": {
+    "slug": "clarins-meta-advantage-plus-incremental-2024",
+    "title": "Clarins : acquisition Meta pilotee en incremental (Advantage+) - +22 % d'achats web incrementaux (2024)",
+    "meta_description": "Clarins a mesure la vraie contribution de Meta en France par Conversion Lift : +22 % d'achats web incrementaux et 85 % des achats invisibles au dernier clic.",
+    "resume_citable": "En 2024, Clarins a mesure par Conversion Lift que ses campagnes Meta Advantage+ apportaient +22 % d'achats web incrementaux en France, dont 85 % restaient invisibles a l'attribution au dernier clic.",
+    "faq": [
+      {
+        "q": "Le resultat de Clarins est-il attribue ou incremental ?",
+        "a": "Incremental : la marque a utilise une etude Conversion Lift avec groupe temoin, recoupee avec Google Analytics, plus rigoureuse qu'une mesure au dernier clic."
+      },
+      {
+        "q": "Quel outil IA Clarins a-t-il utilise ?",
+        "a": "Meta Advantage+ Shopping et Advantage+ Catalog Ads, qui pilotent audiences, placements et creas a partir du catalogue produit."
+      }
+    ]
+  },
+  "logo_domain": "clarins.com"
+}

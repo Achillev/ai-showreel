@@ -1,0 +1,298 @@
+{
+  "id": "origin-energy-kraken-genai-service-australie",
+  "type_fiche": "succes",
+  "marque": "Origin Energy",
+  "industrie": "energie_utilities",
+  "marches_deploiement": [
+    "Australie"
+  ],
+  "transposable_ue": {
+    "flag": "oui_avec_adaptations",
+    "note": "Le pattern (systeme d'exploitation client nativement IA avec assistance genAI a la redaction) est transposable en UE, mais la plateforme Kraken vient de l'ecosysteme britannique et le deploiement decrit est australien. En UE, il faut cadrer la retention des transcriptions et l'usage des LLM sur donnees clients selon le RGPD et l'AI Act."
+  },
+  "metier": "service client",
+  "marque_linkedin": "https://www.linkedin.com/company/origin-energy/",
+  "intervenants": [
+    {
+      "nom": "Frank Calabria",
+      "role": "CEO d'Origin Energy",
+      "source_ref": "S2"
+    }
+  ],
+  "agences": [
+    {
+      "nom": "Kraken (Octopus Energy Group)",
+      "role": "Editeur de la plateforme d'exploitation client, incluant l'outil genAI Magic Ink",
+      "source_ref": "S1"
+    }
+  ],
+  "axes": {
+    "levier": "retention",
+    "touchpoints": [
+      "email",
+      "centre de contact",
+      "espace client"
+    ],
+    "etape_parcours": "post-achat",
+    "famille": "conversation",
+    "pattern": "systeme d'exploitation client nativement IA + assistance genAI a la redaction",
+    "type_ia": [
+      "LLM (modeles type GPT)",
+      "resume automatique",
+      "generation de texte"
+    ],
+    "plateforme_stack": [
+      "Kraken",
+      "Magic Ink"
+    ],
+    "objectif_metrique": [
+      "cout de service (cost-to-serve)",
+      "satisfaction client",
+      "volume de comptes migres"
+    ]
+  },
+  "implementation": "plateforme",
+  "stack_technique": [
+    {
+      "nom": "Kraken",
+      "categorie": "plateforme",
+      "detail": "Plateforme d'exploitation client nativement IA du groupe Octopus (compte, facturation, interactions), vers laquelle Origin a migre 4,2 millions de clients.",
+      "url": "https://kraken.tech"
+    },
+    {
+      "nom": "Magic Ink",
+      "categorie": "outil",
+      "detail": "Outil genAI integre a Kraken : resume les interactions et redige des brouillons de reponse pour les conseillers d'Origin.",
+      "url": "https://kraken.tech"
+    },
+    {
+      "nom": "LLM type GPT (modele exact non publie)",
+      "categorie": "llm",
+      "detail": "Modeles de generation de texte de type GPT utilises par Magic Ink ; version et fournisseur non publies.",
+      "url": "https://kraken.tech"
+    }
+  ],
+  "objectif_business": "Reduire le cout de service et gagner en agilite en remplacant les systemes herites par une plateforme nativement IA, tout en ameliorant l'experience client sur plus de 4 millions de comptes.",
+  "points_cles": ["Migration de 4,2 millions de clients vers une plateforme nativement IA.", "Plateforme Kraken avec l'outil genAI Magic Ink pour resumer et rediger.", "170 millions de dollars de cout de service economises, satisfaction a 87%.", "Preuve B, statut confirme et plateforme en production."],
+  "description": "Origin Energy a migre son parc de clients residentiels et professionnels vers Kraken, la plateforme d'exploitation nativement IA du groupe Octopus. La bascule a concerne 4,2 millions de clients en deux ans et demi. La plateforme integre Magic Ink, l'outil genAI qui resume les interactions et redige des brouillons de reponse pour les conseillers. Origin met en avant un cout de service reduit de 170 millions de dollars, un indice de satisfaction client (Customer Happiness Index) de 87 % et une note Trustpilot passee a Excellent. La vitesse de la plateforme est citee comme un facteur: une modification qui prenait trois a quatre mois sur l'ancien systeme se deploie en deux a trois semaines sur Kraken.",
+  "resultats": [
+    {
+      "metrique": "Clients migres vers la plateforme nativement IA, en 2,5 ans",
+      "valeur": "4,2 millions",
+      "citation_exacte": "4.2 million customers migrated in 2.5 years",
+      "source_ref": "S1"
+    },
+    {
+      "metrique": "Reduction du cout de service (cost-to-serve)",
+      "valeur": "170 M$",
+      "citation_exacte": "$170 million saving in cost-to-serve",
+      "source_ref": "S1"
+    },
+    {
+      "metrique": "Indice de satisfaction client (Customer Happiness Index)",
+      "valeur": "87 %",
+      "citation_exacte": "87% Customer Happiness Index",
+      "source_ref": "S1"
+    },
+    {
+      "metrique": "Deploiement d'une modification, contre 3 a 4 mois sur l'ancien systeme (temoignage Origin)",
+      "valeur": "2-3 semaines",
+      "citation_exacte": "it took the Kraken development team about 2-3 weeks to implement the same change that took our legacy platform 3-4 months",
+      "source_ref": "S1"
+    }
+  ],
+  "niveau_preuve": {
+    "niveau": "B",
+    "justification": "Etude de cas plateforme chiffree (Kraken) avec volume de migration, cout de service et satisfaction, corroboree par la presse specialisee (iTnews) qui reprend les economies annoncees dans les resultats semestriels d'Origin. Les metriques genAI de Magic Ink sont de niveau groupe, pas isolees pour Origin."
+  },
+  "dates": {
+    "lancement": "2020 (debut du programme de migration vers Kraken)",
+    "derniere_confirmation_activite": "2025-2026 (Origin renforce son investissement dans Kraken et confirme les economies)",
+    "verifie_le": "2026-07-11",
+    "revoir_apres": "2027-01-11"
+  },
+  "statut_vivant": {
+    "statut": "confirme",
+    "note": "Migration achevee et plateforme en production. Origin a augmente sa participation dans Kraken en 2026, signe de continuite."
+  },
+  "sources": [
+    {
+      "ref": "S1",
+      "type": "customer_story_plateforme",
+      "fiabilite": "T2_officiel_interesse",
+      "titre": "Case Study: Origin - Kraken",
+      "url": "https://kraken.tech/case-studies/origin",
+      "date_publication": "2024",
+      "consulte_le": "2026-07-11"
+    },
+    {
+      "ref": "S2",
+      "type": "presse",
+      "fiabilite": "T3_presse_etablie",
+      "titre": "Origin Energy says Kraken platform will save $70m to $80m this year",
+      "url": "https://www.itnews.com.au/news/origin-energy-says-kraken-platform-will-save-70m-to-80m-this-year-576198",
+      "date_publication": "2022-02-17",
+      "consulte_le": "2026-07-11"
+    },
+    {
+      "ref": "S3",
+      "type": "customer_story_plateforme",
+      "fiabilite": "T2_officiel_interesse",
+      "titre": "AI Adoption Case Study: Kraken's generative AI tool for customer service (Magic Ink)",
+      "url": "https://www.techuk.org/resource/case-study-kraken-tech-s-generative-ai-tool-for-customer-service.html",
+      "date_publication": "2024",
+      "consulte_le": "2026-07-11"
+    }
+  ],
+  "fonctionnement_operationnel": {
+    "cadence": "Temps reel pour l'assistance a la redaction; migration menee par vagues sur deux ans et demi.",
+    "opere_par": "Les equipes service client d'Origin, sur une plateforme maintenue par Kraken.",
+    "signal_pilote": "Le cout de service par compte et l'indice de satisfaction. La plateforme s'appuie sur un historique client unifie; sans cette vue, l'assistance genAI perd son interet.",
+    "etapes": [
+      {
+        "etape": "Migration des comptes",
+        "detail": "Origin transfere ses clients de l'ancien systeme vers Kraken, par vagues successives.",
+        "acteur": "equipe data"
+      },
+      {
+        "etape": "Assistance a la redaction",
+        "detail": "Magic Ink resume les interactions et propose des brouillons de reponse aux conseillers.",
+        "acteur": "IA"
+      },
+      {
+        "etape": "Traitement client",
+        "detail": "Le conseiller valide et repond; les operations courantes passent en self-service.",
+        "acteur": "service client"
+      },
+      {
+        "etape": "Iteration produit",
+        "detail": "Les evolutions de parcours sont deployees en quelques semaines plutot qu'en plusieurs mois.",
+        "acteur": "agence"
+      }
+    ]
+  },
+  "schema_flow": {
+    "statut": "documente",
+    "noeuds": [
+      {
+        "id": "client",
+        "role_generique": "humain",
+        "label": "Client Origin"
+      },
+      {
+        "id": "canal",
+        "role_generique": "canal_conversationnel",
+        "label": "Email / centre de contact / espace client"
+      },
+      {
+        "id": "kraken",
+        "role_generique": "site_app",
+        "label": "Plateforme Kraken",
+        "outil_documente": "Kraken"
+      },
+      {
+        "id": "histo",
+        "role_generique": "data_source",
+        "label": "Historique client unifie"
+      },
+      {
+        "id": "magicink",
+        "role_generique": "modele_ia",
+        "label": "Magic Ink (LLM type GPT)",
+        "outil_documente": "Magic Ink"
+      },
+      {
+        "id": "conseiller",
+        "role_generique": "humain",
+        "label": "Conseiller Origin"
+      }
+    ],
+    "liens": [
+      [
+        "client",
+        "canal"
+      ],
+      [
+        "canal",
+        "kraken"
+      ],
+      [
+        "histo",
+        "magicink"
+      ],
+      [
+        "kraken",
+        "magicink"
+      ],
+      [
+        "magicink",
+        "conseiller",
+        "brouillon / resume"
+      ],
+      [
+        "conseiller",
+        "client",
+        "reponse"
+      ]
+    ]
+  },
+  "replication": {
+    "statut_epistemique": "infere",
+    "playbook": [
+      {
+        "action": "Auditer les systemes herites (CRM, facturation, canaux) et cadrer la migration : perimetre, vagues de comptes, criteres de reussite.",
+        "livrable": "Plan de migration par vagues avec jalons"
+      },
+      {
+        "action": "Migrer une premiere vague de comptes vers la plateforme cible et stabiliser les operations sur cette cohorte.",
+        "livrable": "Cohorte pilote operee entierement sur la nouvelle plateforme"
+      },
+      {
+        "action": "Enchainer les vagues suivantes et former le service client a la supervision de l'assistance genAI (relecture, correction, envoi).",
+        "livrable": "Majorite du parc migre, conseillers formes"
+      },
+      {
+        "action": "Activer l'assistance a la redaction et le self-service sur tout le parc, avec mesure de la satisfaction et du volume traite par conseiller.",
+        "livrable": "Brouillons genAI en production, tableau de bord satisfaction"
+      },
+      {
+        "action": "Decommissionner les systemes herites et chiffrer le cost-to-serve par compte contre la baseline d'avant migration.",
+        "livrable": "Bilan economique documente"
+      }
+    ],
+    "equipe": "Une equipe programme de migration (data, IT, metier), les equipes service client formees a la supervision, et l'editeur de la plateforme comme partenaire de bout en bout",
+    "prerequis_data": [
+      "historique client unifie sur une plateforme unique",
+      "donnees de facturation et de contrat accessibles en temps reel",
+      "corpus d'interactions pour l'assistance genAI"
+    ],
+    "prerequis_orga": [
+      "volonte de remplacer les systemes herites",
+      "programme de migration par vagues",
+      "service client forme a l'assistance IA"
+    ],
+    "stack_possible": [
+      "plateforme d'exploitation energie nativement IA (Kraken)",
+      "LLM d'entreprise pour l'assistance a la redaction",
+      "CRM/facturation integres"
+    ],
+    "premiere_etape": "Unifier l'historique client sur une plateforme unique avant d'activer l'assistance genAI a la redaction."
+  },
+  "seo": {
+    "slug": "origin-energy-kraken-genai-service-australie",
+    "title": "Origin Energy : plateforme nativement IA Kraken - 170 M$ de cout de service en moins (Australie)",
+    "meta_description": "Origin Energy a migre 4,2 millions de clients vers Kraken, plateforme nativement IA avec l'outil genAI Magic Ink: 170 M$ de cout de service economises et 87 % de satisfaction en Australie.",
+    "resume_citable": "Origin Energy a migre 4,2 millions de clients australiens vers Kraken, la plateforme nativement IA du groupe Octopus incluant l'outil genAI Magic Ink, pour 170 millions de dollars de cout de service economises et un indice de satisfaction de 87 %.",
+    "faq": [
+      {
+        "q": "Quelle est la part de l'IA dans le resultat d'Origin ?",
+        "a": "La plateforme Kraken est nativement IA et integre l'outil genAI Magic Ink pour l'assistance a la redaction. Les economies de cout de service et la satisfaction sont mesurees au niveau de la plateforme; les volumes Magic Ink sont publies au niveau du groupe Kraken."
+      },
+      {
+        "q": "Combien de clients ont ete migres ?",
+        "a": "4,2 millions de clients residentiels et professionnels en deux ans et demi, en Australie."
+      }
+    ]
+  },
+  "logo_domain": "originenergy.com.au"
+}

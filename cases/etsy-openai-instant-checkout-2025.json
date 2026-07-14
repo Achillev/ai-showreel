@@ -1,0 +1,286 @@
+{
+  "id": "etsy-openai-instant-checkout-2025",
+  "type_fiche": "succes",
+  "marque": "Etsy",
+  "industrie": "retail_ecom",
+  "marches_deploiement": [
+    "Etats-Unis"
+  ],
+  "transposable_ue": {
+    "flag": "a_verifier",
+    "note": "Instant Checkout est lance aux Etats-Unis pour les vendeurs Etsy americains. La contrainte n'est pas d'abord le RGPD cote marque mais l'ouverture du canal : le paiement in-chat n'est pas disponible en UE a la date de verification. Une marque UE peut se preparer en exposant un catalogue propre au protocole ouvert (ACP), sans transaction UE active pour l'instant."
+  },
+  "metier": "e-commerce",
+  "axes": {
+    "levier": "acquisition",
+    "touchpoints": [
+      "ChatGPT",
+      "conversation d'achat in-chat",
+      "checkout Stripe"
+    ],
+    "etape_parcours": "achat",
+    "famille": "conversation",
+    "pattern": "commerce agentique (checkout in-chat via protocole ouvert)",
+    "type_ia": [
+      "LLM",
+      "agent d'achat"
+    ],
+    "plateforme_stack": [
+      "OpenAI",
+      "Stripe",
+      "Agentic Commerce Protocol"
+    ],
+    "objectif_metrique": [
+      "captation de la demande in-chat",
+      "conversion",
+      "acces a un canal a large distribution"
+    ]
+  },
+  "implementation": "plateforme",
+  "stack_technique": [
+    {
+      "nom": "OpenAI ChatGPT (Instant Checkout)",
+      "categorie": "plateforme",
+      "detail": "Canal d'achat in-chat: recommande le produit, prepare la commande et la transmet au marchand; commission prelevee sur les achats aboutis.",
+      "url": "https://openai.com"
+    },
+    {
+      "nom": "Agentic Commerce Protocol",
+      "categorie": "outil",
+      "detail": "Protocole ouvert co-construit par OpenAI et Stripe, qui normalise l'echange commande / acceptation entre l'agent et le backend marchand.",
+      "url": "https://openai.com"
+    },
+    {
+      "nom": "Stripe",
+      "categorie": "plateforme",
+      "detail": "Traite le paiement de la transaction in-chat.",
+      "url": "https://stripe.com"
+    },
+    {
+      "nom": "Backend commande Etsy",
+      "categorie": "infra",
+      "detail": "Accepte ou refuse chaque commande transmise par ChatGPT et gere stock, prix et expedition.",
+      "url": "https://www.etsy.com"
+    }
+  ],
+  "objectif_business": "Capter la demande d'achat la ou l'utilisateur cherche deja quoi acheter (ChatGPT, 700 millions d'utilisateurs par semaine) et convertir sans le faire sortir de la conversation.",
+  "description": "Le 29 septembre 2025, OpenAI a lance Instant Checkout dans ChatGPT, avec Etsy comme marchand disponible des le premier jour : les utilisateurs americains de ChatGPT (Plus, Pro et Free) peuvent acheter un article aupres d'un vendeur Etsy americain sans quitter la conversation. La transaction passe par l'Agentic Commerce Protocol, un protocole ouvert co-construit avec Stripe : ChatGPT transmet la commande au backend du marchand, qui l'accepte ou la refuse, puis le paiement se declenche. OpenAI preleve une petite commission sur les achats aboutis. Au lancement, le systeme ne gere que des achats a article unique, avec panier multi-articles, marchands supplementaires (plus d'un million de marchands Shopify comme Glossier, SKIMS, Spanx, Vuori) et regions a venir. A l'annonce, l'action Etsy a bondi d'environ 16 pour cent.",
+  "resultats": [
+    {
+      "metrique": "Action Etsy a l'annonce d'Instant Checkout",
+      "valeur": "+16% environ",
+      "citation_exacte": "Etsy pops 16%",
+      "source_ref": "S3"
+    },
+    {
+      "metrique": "Utilisateurs ChatGPT hebdomadaires, taille du canal expose",
+      "valeur": "700M/semaine",
+      "citation_exacte": "700 million people leveraging ChatGPT weekly",
+      "source_ref": "S4"
+    },
+    {
+      "metrique": "Perimetre au lancement, vendeurs Etsy US",
+      "valeur": "1 article/achat",
+      "citation_exacte": "Instant Checkout works for single-item purchases",
+      "source_ref": "S2"
+    }
+  ],
+  "niveau_preuve": {
+    "niveau": "C",
+    "justification": "Lancement annonce par OpenAI et couvert nommement par plusieurs presses etablies (CNBC, TechCrunch, Digital Commerce 360) ; signal de marche public (action Etsy). Cas recent (moins de 12 mois a la verification) et volume transactionnel non encore publie, d'ou un niveau C et un statut vivant prudent."
+  },
+  "dates": {
+    "lancement": "2025-09-29",
+    "derniere_confirmation_activite": "2025-10 (extension annoncee vers les marchands Shopify ; Walmart rejoint le dispositif)",
+    "verifie_le": "2026-07-11",
+    "revoir_apres": "2027-01-11"
+  },
+  "statut_vivant": {
+    "statut": "signaux_mitiges",
+    "note": "Le canal est actif et le protocole ouvert (ACP) s'ouvre a d'autres marchands, mais le deploiement reste jeune : achats a article unique, US uniquement, volume transactionnel non publie. Le commerce agentique in-chat est encore en phase de preuve cote conversion reelle, ce qui justifie de revoir la fiche a court terme."
+  },
+  "sources": [
+    {
+      "ref": "S1",
+      "type": "presse",
+      "fiabilite": "T3_presse_etablie",
+      "titre": "OpenAI takes on Google, Amazon with new agentic shopping system",
+      "url": "https://techcrunch.com/2025/09/29/openai-takes-on-google-amazon-with-new-agentic-shopping-system/",
+      "date_publication": "2025-09-29",
+      "consulte_le": "2026-07-11"
+    },
+    {
+      "ref": "S2",
+      "type": "presse",
+      "fiabilite": "T3_presse_etablie",
+      "titre": "ChatGPT debuts new checkout experience with Etsy, Shopify merchants as early users",
+      "url": "https://www.digitalcommerce360.com/2025/09/30/chatgpt-debuts-checkout-experience-etsy-shopify-merchants/",
+      "date_publication": "2025-09-30",
+      "consulte_le": "2026-07-11"
+    },
+    {
+      "ref": "S3",
+      "type": "presse",
+      "fiabilite": "T3_presse_etablie",
+      "titre": "Etsy pops 16% as OpenAI announces ChatGPT Instant Checkout for the shopping site",
+      "url": "https://www.cnbc.com/2025/09/29/chatgpt-instant-checkout-etsy-shopify.html",
+      "date_publication": "2025-09-29",
+      "consulte_le": "2026-07-11"
+    },
+    {
+      "ref": "S4",
+      "type": "presse",
+      "fiabilite": "T4_secondaire",
+      "titre": "OpenAI Equips ChatGPT With Online Shopping Capabilities",
+      "url": "https://builtin.com/articles/openai-instant-checkout-launch-20250930",
+      "date_publication": "2025-09-30",
+      "consulte_le": "2026-07-11"
+    }
+  ],
+  "fonctionnement_operationnel": {
+    "cadence": "Temps reel a chaque achat ; cote marque, flux produit et disponibilite maintenus en continu pour repondre aux demandes du protocole.",
+    "opere_par": "Cote Etsy/marchand : equipe e-commerce et paiement qui expose le catalogue et traite les commandes. Cote canal : OpenAI opere l'agent, Stripe le paiement.",
+    "signal_pilote": "La disponibilite et l'exactitude du produit renvoye au moment de l'achat. Si le backend marchand refuse mal ou renvoie un stock errone, la conversion in-chat casse, ce qui a ete un point de friction rapporte pour d'autres marchands du dispositif.",
+    "etapes": [
+      {
+        "etape": "Exposition du catalogue au protocole",
+        "detail": "Le marchand rend ses produits accessibles a l'Agentic Commerce Protocol pour qu'ils soient proposables dans ChatGPT.",
+        "acteur": "equipe e-commerce"
+      },
+      {
+        "etape": "Recommandation et intention d'achat",
+        "detail": "ChatGPT propose des produits pertinents dans la conversation et prepare la commande.",
+        "acteur": "IA"
+      },
+      {
+        "etape": "Confirmation et paiement",
+        "detail": "L'utilisateur confirme commande, livraison et paiement in-chat ; Stripe traite le paiement, OpenAI preleve une petite commission.",
+        "acteur": "client"
+      },
+      {
+        "etape": "Acceptation et traitement",
+        "detail": "Le backend marchand accepte ou refuse, puis traite et expedie la commande.",
+        "acteur": "equipe e-commerce"
+      }
+    ]
+  },
+  "schema_flow": {
+    "statut": "documente",
+    "noeuds": [
+      {
+        "id": "user",
+        "role_generique": "humain",
+        "label": "Utilisateur ChatGPT (US)"
+      },
+      {
+        "id": "agent",
+        "role_generique": "modele_ia",
+        "label": "Agent d'achat ChatGPT",
+        "outil_documente": "OpenAI"
+      },
+      {
+        "id": "acp",
+        "role_generique": "data_source",
+        "label": "Agentic Commerce Protocol (catalogue marchand)"
+      },
+      {
+        "id": "pay",
+        "role_generique": "paid_platform",
+        "label": "Paiement",
+        "outil_documente": "Stripe"
+      },
+      {
+        "id": "merchant",
+        "role_generique": "site_app",
+        "label": "Backend marchand Etsy"
+      }
+    ],
+    "liens": [
+      [
+        "user",
+        "agent"
+      ],
+      [
+        "acp",
+        "agent",
+        "produits proposables"
+      ],
+      [
+        "agent",
+        "merchant",
+        "commande transmise"
+      ],
+      [
+        "merchant",
+        "agent",
+        "acceptation / refus"
+      ],
+      [
+        "agent",
+        "pay",
+        "paiement"
+      ],
+      [
+        "merchant",
+        "user",
+        "expedition"
+      ]
+    ]
+  },
+  "replication": {
+    "statut_epistemique": "infere",
+    "prerequis_data": [
+      "catalogue produit propre expose au protocole",
+      "stock et prix en temps reel fiables",
+      "backend capable d'accepter ou refuser une commande par API"
+    ],
+    "prerequis_orga": [
+      "equipe e-commerce/paiement pour l'integration ACP",
+      "decision sur la commission cedee a la plateforme",
+      "capacite logistique US"
+    ],
+    "stack_possible": [
+      "Agentic Commerce Protocol (open source)",
+      "Stripe",
+      "Shopify",
+      "OpenAI"
+    ],
+    "premiere_etape": "Fiabiliser le flux stock/prix en temps reel, car c'est lui qui casse la conversion agentique, avant d'integrer le protocole.",
+    "playbook": [
+      {
+        "action": "Fiabiliser le flux stock et prix en temps reel: c'est lui qui casse la conversion agentique.",
+        "livrable": "Flux catalogue fiable expose par API"
+      },
+      {
+        "action": "Implementer l'API commande: acceptation, refus, statuts, remboursements.",
+        "livrable": "Backend commande conforme au protocole"
+      },
+      {
+        "action": "Integrer l'Agentic Commerce Protocol et tester en sandbox avec le paiement.",
+        "livrable": "Parcours d'achat in-chat valide de bout en bout"
+      },
+      {
+        "action": "Lancer sur le perimetre autorise (US, article unique) et suivre la conversion in-chat.",
+        "livrable": "Canal actif avec suivi des ventes et des refus de commande"
+      }
+    ],
+    "equipe": "1-2 devs backend e-commerce + 1 PM + 1 referent paiement et fraude."
+  },
+  "seo": {
+    "slug": "etsy-openai-instant-checkout-2025",
+    "title": "Etsy : commerce agentique dans ChatGPT (Instant Checkout OpenAI) - action +16 pour cent (2025)",
+    "meta_description": "Le 29 septembre 2025, Etsy est devenu marchand du jour 1 d'Instant Checkout dans ChatGPT ; son action a bondi d'environ 16 pour cent a l'annonce.",
+    "resume_citable": "Le 29 septembre 2025, OpenAI a lance Instant Checkout dans ChatGPT avec Etsy comme marchand du premier jour : les utilisateurs americains achetent un article aupres d'un vendeur Etsy sans quitter la conversation, via l'Agentic Commerce Protocol co-construit avec Stripe ; l'action Etsy a bondi d'environ 16 pour cent a l'annonce.",
+    "faq": [
+      {
+        "q": "Comment fonctionne Instant Checkout pour une marque ?",
+        "a": "La marque expose son catalogue a l'Agentic Commerce Protocol ; ChatGPT propose les produits et transmet la commande au backend marchand, qui l'accepte, le paiement passant par Stripe et OpenAI prelevant une petite commission."
+      },
+      {
+        "q": "Le dispositif est-il deja mature ?",
+        "a": "Non, il est jeune : achats a article unique, Etats-Unis uniquement au lancement, volume transactionnel non publie. L'extension aux marchands Shopify et au panier multi-articles etait annoncee comme a venir."
+      }
+    ]
+  },
+  "logo_domain": "etsy.com"
+}

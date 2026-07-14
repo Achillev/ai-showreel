@@ -1,0 +1,269 @@
+{
+  "id": "airbnb-smart-pricing-ia-2018",
+  "type_fiche": "succes",
+  "marque": "Airbnb",
+  "industrie": "voyage_hospitality",
+  "marches_deploiement": [
+    "Monde"
+  ],
+  "transposable_ue": {
+    "flag": "oui",
+    "note": "Un outil de suggestion de prix aux hotes est directement transposable, la friction reglementaire est faible car l'hote garde la main sur ses bornes de prix et son activation. Le RGPD s'applique aux donnees des hotes mais sans obstacle particulier."
+  },
+  "metier": "marketplace / pricing",
+  "intervenants": [
+    {
+      "nom": "Peng Ye",
+      "role": "Auteur principal du modele de pricing, Airbnb",
+      "source_ref": "S1"
+    }
+  ],
+  "axes": {
+    "levier": "monetisation",
+    "touchpoints": [
+      "outil hote Price Tips",
+      "outil hote Smart Pricing",
+      "site et app Airbnb"
+    ],
+    "etape_parcours": "achat",
+    "famille": "optimisation_automatisation",
+    "pattern": "suggestion de prix dynamique aux vendeurs (host pricing)",
+    "type_ia": [
+      "classification (probabilite de reservation)",
+      "regression avec fonction de perte personnalisee",
+      "personnalisation"
+    ],
+    "plateforme_stack": [
+      "custom/in-house"
+    ],
+    "objectif_metrique": [
+      "taux d'occupation",
+      "revenu hote",
+      "adoption des suggestions de prix",
+      "volume de reservations et commissions"
+    ]
+  },
+  "implementation": "custom",
+  "objectif_business": "Aider chaque hote a fixer un prix par nuit qui maximise a la fois la probabilite de reservation et le revenu, sur un catalogue ou aucun bien n'est identique a un autre.",
+  "points_cles": ["Suggestion de prix dynamique aux hotes (Price Tips, Smart Pricing).", "Modele maison en trois briques: classifieur, regression, personnalisation.", "Deploye en production, efficacite demontree en A/B test en ligne.", "Preuve B, statut vivant confirme."],
+  "description": "Price Tips, lance en 2015, suggere a l'hote un prix par nuit. Smart Pricing, lance la meme annee, ajuste automatiquement le prix dans les bornes que l'hote definit. Le modele publie a KDD 2018 combine trois briques: un classifieur qui predit la probabilite de reservation de chaque nuit-annonce, une regression qui predit le prix optimal avec une fonction de perte sur mesure, puis une couche de personnalisation qui produit la suggestion finale. La difficulte propre a Airbnb est qu'aucune annonce n'est identique, ce qui empeche d'estimer une courbe de demande classique. Le modele est deploye en production et valide en A/B test.",
+  "resultats": [
+    {
+      "metrique": "Validation en production",
+      "valeur": "efficacite du modele demontree en A/B test en ligne",
+      "citation_exacte": "Online A/B testing results demonstrate the effectiveness of the proposed strategy model",
+      "source_ref": "S1"
+    },
+    {
+      "metrique": "Perimetre de deploiement",
+      "valeur": "alimente Price Tips et Smart Pricing en production",
+      "citation_exacte": "deployed in production to power the Price Tips and Smart Pricing tool",
+      "source_ref": "S1"
+    }
+  ],
+  "niveau_preuve": {
+    "niveau": "B",
+    "justification": "Papier scientifique publie par les equipes d'Airbnb a KDD 2018, decrivant un systeme en production valide par A/B testing. Absence de chiffre de revenu public isolant l'effet du modele, d'ou un niveau B et non A."
+  },
+  "dates": {
+    "lancement": "Price Tips 2015-06 ; Smart Pricing 2015-11 ; modele detaille publie 2018-08 (KDD)",
+    "derniere_confirmation_activite": "2026-07 (Smart Pricing reste un outil hote standard)",
+    "verifie_le": "2026-07-11",
+    "revoir_apres": "2027-01-11"
+  },
+  "statut_vivant": {
+    "statut": "confirme",
+    "note": "Smart Pricing reste une fonctionnalite hote standard sur Airbnb. Le modele decrit date de 2018 et a probablement evolue depuis, mais le pattern de suggestion de prix dynamique est toujours actif."
+  },
+  "sources": [
+    {
+      "ref": "S1",
+      "type": "analyse_academique",
+      "fiabilite": "T1_primaire",
+      "titre": "Customized Regression Model for Airbnb Dynamic Pricing (KDD 2018)",
+      "url": "https://www.kdd.org/kdd2018/accepted-papers/view/customized-regression-model-for-airbnb-dynamic-pricing",
+      "date_publication": "2018-08",
+      "consulte_le": "2026-07-11"
+    },
+    {
+      "ref": "S2",
+      "type": "analyse_academique",
+      "fiabilite": "T1_primaire",
+      "titre": "Customized Regression Model for Airbnb Dynamic Pricing (ACM SIGKDD Proceedings)",
+      "url": "https://dl.acm.org/doi/10.1145/3219819.3219830",
+      "date_publication": "2018-08",
+      "consulte_le": "2026-07-11"
+    },
+    {
+      "ref": "S3",
+      "type": "blog_officiel",
+      "fiabilite": "T2_officiel_interesse",
+      "titre": "Airbnb Engineering and Data Science at KDD 2018",
+      "url": "https://medium.com/airbnb-engineering/airbnb-engineering-and-data-science-at-kdd-2018-1f53a97b896e",
+      "date_publication": "2018",
+      "consulte_le": "2026-07-11"
+    }
+  ],
+  "fonctionnement_operationnel": {
+    "cadence": "Mise a jour quotidienne des prix suggeres, avec ajustement automatique si Smart Pricing est active.",
+    "opere_par": "Equipe pricing et data science d'Airbnb pour le modele, les hotes pour le parametrage.",
+    "signal_pilote": "La probabilite de reservation predite par nuit-annonce, croisee avec la demande locale. Sans ce signal, la suggestion de prix perd sa pertinence et l'hote se rabat sur un prix statique.",
+    "etapes": [
+      {
+        "etape": "Prediction de la probabilite de reservation",
+        "detail": "Un classifieur estime la chance qu'une nuit-annonce soit reservee a un prix donne.",
+        "acteur": "IA"
+      },
+      {
+        "etape": "Calcul du prix optimal",
+        "detail": "Une regression avec fonction de perte sur mesure propose le prix qui equilibre reservation et revenu.",
+        "acteur": "IA"
+      },
+      {
+        "etape": "Personnalisation de la suggestion",
+        "detail": "Une couche de personnalisation ajuste la suggestion finale pour l'annonce.",
+        "acteur": "IA"
+      },
+      {
+        "etape": "Parametrage par l'hote",
+        "detail": "L'hote fixe ses bornes de prix minimum et maximum et active ou non l'ajustement automatique.",
+        "acteur": "client"
+      }
+    ]
+  },
+  "schema_flow": {
+    "statut": "documente",
+    "noeuds": [
+      {
+        "id": "data",
+        "role_generique": "data_source",
+        "label": "Demande locale, historique de reservations"
+      },
+      {
+        "id": "clf",
+        "role_generique": "modele_ia",
+        "label": "Classifieur probabilite de reservation"
+      },
+      {
+        "id": "reg",
+        "role_generique": "modele_ia",
+        "label": "Regression prix optimal"
+      },
+      {
+        "id": "tool",
+        "role_generique": "site_app",
+        "label": "Outil hote (Price Tips / Smart Pricing)"
+      },
+      {
+        "id": "host",
+        "role_generique": "humain",
+        "label": "Hote"
+      }
+    ],
+    "liens": [
+      [
+        "data",
+        "clf"
+      ],
+      [
+        "clf",
+        "reg"
+      ],
+      [
+        "reg",
+        "tool",
+        "prix suggere"
+      ],
+      [
+        "host",
+        "tool",
+        "bornes min/max"
+      ]
+    ]
+  },
+  "replication": {
+    "statut_epistemique": "infere",
+    "prerequis_data": [
+      "historique de reservations et de prix",
+      "signaux de demande locale (evenements, saisonnalite)",
+      "caracteristiques des annonces"
+    ],
+    "prerequis_orga": [
+      "equipe data science pricing",
+      "outil hote pour exposer les suggestions",
+      "boucle d'A/B testing"
+    ],
+    "stack_possible": [
+      "classifieur et regression sur donnees tabulaires",
+      "couche de personnalisation",
+      "pipeline de mise a jour quotidienne"
+    ],
+    "premiere_etape": "Construire un modele de probabilite de reservation par nuit-annonce avant d'y accrocher l'optimisation de prix.",
+    "playbook": [
+      {
+        "action": "Consolider l'historique de reservations et de prix avec les signaux de demande locale (saisonnalite, evenements).",
+        "livrable": "Dataset nuit-annonce pret pour l'entrainement"
+      },
+      {
+        "action": "Entrainer le classifieur de probabilite de reservation et le valider hors ligne.",
+        "livrable": "Modele evalue avec courbes de calibration"
+      },
+      {
+        "action": "Accrocher l'optimisation de prix (regression avec fonction de perte adaptee) et la couche de personnalisation.",
+        "livrable": "Suggestion de prix par nuit validee en backtest"
+      },
+      {
+        "action": "Exposer les suggestions dans l'outil vendeur avec bornes minimum et maximum controlees par l'hote.",
+        "livrable": "Interface de suggestion de prix en beta"
+      },
+      {
+        "action": "Lancer un A/B test sur un sous-ensemble d'hotes et mesurer occupation et revenu.",
+        "livrable": "Resultat de test controle et decision de deploiement"
+      }
+    ],
+    "equipe": "2 data scientists pricing + 1 data engineer + 1 PM cote outil vendeur"
+  },
+  "stack_technique": [
+    {
+      "nom": "Classifieur de probabilite de reservation",
+      "categorie": "llm",
+      "detail": "Modele maison d'Airbnb qui predit la chance qu'une nuit-annonce soit reservee a un prix donne.",
+      "url": "https://www.airbnb.com"
+    },
+    {
+      "nom": "Regression a fonction de perte personnalisee",
+      "categorie": "llm",
+      "detail": "Modele maison qui calcule le prix optimal en equilibrant probabilite de reservation et revenu, publie a KDD 2018.",
+      "url": "https://www.airbnb.com"
+    },
+    {
+      "nom": "Couche de personnalisation",
+      "categorie": "outil",
+      "detail": "Ajuste la suggestion finale aux caracteristiques propres de chaque annonce.",
+      "url": "https://www.airbnb.com"
+    },
+    {
+      "nom": "Price Tips et Smart Pricing",
+      "categorie": "outil",
+      "detail": "Outils hotes qui exposent la suggestion et appliquent l'ajustement automatique quotidien dans les bornes fixees par l'hote.",
+      "url": "https://www.airbnb.com"
+    }
+  ],
+  "seo": {
+    "slug": "airbnb-smart-pricing-ia-2018",
+    "title": "Airbnb : Smart Pricing, suggestion de prix dynamique aux hotes validee en A/B test (2018)",
+    "meta_description": "Airbnb suggere aux hotes un prix par nuit via un modele combinant probabilite de reservation et prix optimal, deploye en production sur Price Tips et Smart Pricing et valide en A/B test.",
+    "resume_citable": "Airbnb calcule pour chaque hote un prix par nuit avec un modele en trois briques (probabilite de reservation, prix optimal, personnalisation), deploye en production et valide par A/B testing (KDD 2018).",
+    "faq": [
+      {
+        "q": "Comment fonctionne le Smart Pricing d'Airbnb ?",
+        "a": "Un modele predit la probabilite de reservation de chaque nuit, puis un prix optimal et une personnalisation ; l'hote fixe des bornes et le prix s'ajuste automatiquement chaque jour."
+      },
+      {
+        "q": "Pourquoi Airbnb n'utilise-t-il pas une courbe de demande classique ?",
+        "a": "Parce qu'aucune annonce n'est identique a une autre, ce qui rend impossible l'estimation d'une courbe de demande standard ; le modele contourne le probleme avec une fonction de perte sur mesure."
+      }
+    ]
+  },
+  "logo_domain": "airbnb.com"
+}

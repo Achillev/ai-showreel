@@ -1,0 +1,295 @@
+{
+  "id": "loreal-modiface-essayage-virtuel-2024",
+  "type_fiche": "succes",
+  "marque": "L'Oreal (marques ModiFace)",
+  "groupe": "L'Oreal",
+  "industrie": "luxe_beaute",
+  "marches_deploiement": [
+    "International (multi-marchés)",
+    "Etats-Unis",
+    "Europe",
+    "Chine"
+  ],
+  "transposable_ue": {
+    "flag": "oui",
+    "note": "L'essayage virtuel s'execute le plus souvent en local sur l'appareil (camera) ; peu de donnees biometriques stockees si l'inference reste cote client. Verifier le consentement camera et la non-conservation des images de visage pour rester conforme RGPD."
+  },
+  "metier": "e-commerce / marketing",
+  "intervenants": [
+    {
+      "nom": "Nicolas Hieronimus",
+      "role": "Directeur general de L'Oreal (declaration en resultats)",
+      "source_ref": "S1"
+    },
+    {
+      "nom": "Lubomira Rochet",
+      "role": "Global Chief Digital Officer, L'Oreal (au moment du projet)",
+      "source_ref": "S2"
+    }
+  ],
+  "axes": {
+    "levier": "activation_conversion",
+    "touchpoints": [
+      "site e-commerce de marque",
+      "site retailer",
+      "application mobile",
+      "borne / miroir en magasin"
+    ],
+    "etape_parcours": "consideration",
+    "famille": "generation",
+    "pattern": "essayage virtuel AR (rendu maquillage synthetique sur le visage)",
+    "type_ia": [
+      "vision par ordinateur",
+      "AR (rendu temps reel)",
+      "deep learning (detection/tracking du visage)"
+    ],
+    "plateforme_stack": [
+      "ModiFace"
+    ],
+    "objectif_metrique": [
+      "sessions d'essayage",
+      "taux de conversion",
+      "engagement / temps passe"
+    ]
+  },
+  "implementation": "plateforme",
+  "objectif_business": "Reduire le doute a l'achat sur le maquillage (couleur, teinte) en laissant tester les produits sur son propre visage, et augmenter conversion et engagement sur le e-commerce et en magasin.",
+  "points_cles": ["Essayage virtuel AR du maquillage sur le visage, en ligne et en magasin.", "Moteur ModiFace (vision, deep learning, rendu temps reel), filiale L'Oreal.", "Plus de 100 millions de sessions en 2023 (40 M en 2022), conversion multipliee par 3.", "Preuve A, statut confirme : chiffre declare en resultats annuels 2024."],
+  "description": "ModiFace, acquis par L'Oreal en 2018, fournit l'essayage virtuel et le diagnostic beaute a une large part des marques du groupe (Maybelline, L'Oreal Paris, Lancome, Urban Decay, etc.) ainsi qu'a des retailers et plateformes (Amazon, A.S. Watson, DM). L'utilisateur ouvre sa camera, le systeme detecte et suit le visage en temps reel, puis applique un rendu photorealiste du produit (rouge a levres, fard, teint). Le meme moteur alimente aussi le diagnostic de peau. Deploiement mondial, sur le web des marques, chez les retailers et via des miroirs/bornes en magasin.",
+  "resultats": [
+    {
+      "metrique": "Sessions d'essayage numeriques en 2023, contre 40 millions en 2022",
+      "valeur": "100 millions+",
+      "citation_exacte": "over 100 million sessions of digital try-ons in 2023 versus 40 in '22",
+      "source_ref": "S1"
+    },
+    {
+      "metrique": "Effet sur la conversion (avec vs sans essayage)",
+      "valeur": "x3",
+      "citation_exacte": "Conversion rates triple when L'Oreal uses AR tech",
+      "source_ref": "S2"
+    },
+    {
+      "metrique": "Looks essayes par utilisateur",
+      "valeur": "42",
+      "citation_exacte": "People are trying 42 looks because it's fun and entertaining",
+      "source_ref": "S2"
+    }
+  ],
+  "niveau_preuve": {
+    "niveau": "A",
+    "justification": "Chiffre de 100 millions de sessions declare par le DG Nicolas Hieronimus en presentation de resultats (fevrier 2024), corrobore par la Chief Digital Officer (The Drum) et par le deploiement multi-retailers documente (WWD)."
+  },
+  "dates": {
+    "lancement": "Acquisition ModiFace 2018 ; montee en charge continue jusqu'a 2023-2024",
+    "derniere_confirmation_activite": "Resultats annuels L'Oreal fevrier 2024 (100 M de sessions en 2023)",
+    "verifie_le": "2026-07-11",
+    "revoir_apres": "2027-01-31"
+  },
+  "statut_vivant": {
+    "statut": "confirme",
+    "note": "Croissance forte declaree sur les resultats 2023, extension du maquillage vers le skincare confirmee par le DG."
+  },
+  "sources": [
+    {
+      "ref": "S1",
+      "type": "presse",
+      "fiabilite": "T4_secondaire",
+      "titre": "L'Oreal Sees 150% Increase in Virtual Try-Ons as Consumers Seek AR Immersion (cite l'earnings call, Nicolas Hieronimus)",
+      "url": "https://www.pymnts.com/news/retail/2024/loreal-sees-150percent-increase-in-virtual-try-ons-as-consumers-seek-ar-immersion/",
+      "date_publication": "2024-02",
+      "consulte_le": "2026-07-11"
+    },
+    {
+      "ref": "S2",
+      "type": "presse",
+      "fiabilite": "T3_presse_etablie",
+      "titre": "Conversion rates triple when L'Oreal uses AR tech to showcase products",
+      "url": "https://www.thedrum.com/news/2019/07/02/conversion-rates-triple-when-l-or-al-uses-ar-tech-showcase-products",
+      "date_publication": "2019-07-02",
+      "consulte_le": "2026-07-11"
+    },
+    {
+      "ref": "S3",
+      "type": "presse",
+      "fiabilite": "T3_presse_etablie",
+      "titre": "Amazon Implements L'Oreal's ModiFace Virtual Makeup Try-ons",
+      "url": "https://wwd.com/beauty-industry-news/color-cosmetics/amazon-implements-loreals-modiface-virtual-makeup-try-ons-1203148094/",
+      "date_publication": "2020",
+      "consulte_le": "2026-07-11"
+    }
+  ],
+  "fonctionnement_operationnel": {
+    "cadence": "Temps reel (rendu a l'ouverture de la camera), integre en continu sur les surfaces marchandes",
+    "opere_par": "Equipe ModiFace / Beauty Tech pour le moteur, equipes e-commerce des marques et retailers pour l'integration",
+    "signal_pilote": "Le mapping precis des references produit (teintes, textures) sur le rendu. Si une teinte n'est pas correctement calibree, l'essayage induit en erreur et casse la confiance a l'achat.",
+    "etapes": [
+      {
+        "etape": "Ouverture de l'essayage",
+        "detail": "L'utilisateur active la camera sur la page produit ou la borne magasin.",
+        "acteur": "client"
+      },
+      {
+        "etape": "Detection et suivi du visage",
+        "detail": "Le moteur detecte les traits et suit les mouvements en temps reel.",
+        "acteur": "IA (ModiFace)"
+      },
+      {
+        "etape": "Rendu du produit",
+        "detail": "La teinte/texture selectionnee est appliquee de facon photorealiste et suit le visage comme un miroir.",
+        "acteur": "IA (ModiFace)"
+      },
+      {
+        "etape": "Comparaison et ajout au panier",
+        "detail": "L'utilisateur enchaine les looks, compare avant/apres et passe a l'achat.",
+        "acteur": "client"
+      },
+      {
+        "etape": "Calibration et catalogue",
+        "detail": "Les equipes maintiennent la correspondance produit/rendu a chaque nouvelle collection.",
+        "acteur": "equipe marque / ModiFace"
+      }
+    ]
+  },
+  "schema_flow": {
+    "statut": "documente",
+    "noeuds": [
+      {
+        "id": "u",
+        "role_generique": "humain",
+        "label": "Consommateur (camera)"
+      },
+      {
+        "id": "surface",
+        "role_generique": "site_app",
+        "label": "Page produit / app / borne magasin"
+      },
+      {
+        "id": "engine",
+        "role_generique": "modele_ia",
+        "label": "Moteur d'essayage virtuel",
+        "outil_documente": "ModiFace"
+      },
+      {
+        "id": "catalogue",
+        "role_generique": "data_source",
+        "label": "Catalogue teintes/textures calibrees"
+      }
+    ],
+    "liens": [
+      [
+        "u",
+        "surface"
+      ],
+      [
+        "surface",
+        "engine"
+      ],
+      [
+        "catalogue",
+        "engine",
+        "correspondance produit/rendu"
+      ],
+      [
+        "engine",
+        "surface",
+        "rendu photorealiste temps reel"
+      ],
+      [
+        "surface",
+        "u",
+        "essayage puis ajout au panier"
+      ]
+    ]
+  },
+  "replication": {
+    "statut_epistemique": "infere",
+    "prerequis_data": [
+      "referentiel produit avec teintes/textures calibrees pour le rendu AR",
+      "assets visuels des produits"
+    ],
+    "prerequis_orga": [
+      "integration e-commerce (page produit, app)",
+      "process de calibration a chaque collection"
+    ],
+    "stack_possible": [
+      "ModiFace",
+      "Perfect Corp (YouCam)",
+      "Banuba",
+      "Wanna/AR SaaS"
+    ],
+    "premiere_etape": "Brancher un SaaS d'essayage sur les pages produit maquillage a plus fort trafic et calibrer les teintes prioritaires.",
+    "playbook": [
+      {
+        "action": "Choisir les pages produit maquillage a plus fort trafic et contractualiser un SaaS d'essayage",
+        "livrable": "Liste des SKUs pilotes + contrat SaaS signe"
+      },
+      {
+        "action": "Calibrer les teintes et textures prioritaires avec le fournisseur",
+        "livrable": "Referentiel teintes/rendu valide visuellement par le metier"
+      },
+      {
+        "action": "Integrer le SDK sur les pages pilotes avec consentement camera et non-conservation des images",
+        "livrable": "Essayage en production sur les pages pilotes, conforme RGPD"
+      },
+      {
+        "action": "Mesurer en A/B l'effet sur conversion et engagement (avec vs sans essayage)",
+        "livrable": "Lecture chiffree du lift de conversion et du temps passe"
+      },
+      {
+        "action": "Etendre au reste du catalogue, aux apps et aux bornes magasin, avec calibration a chaque collection",
+        "livrable": "Plan de deploiement par collection + process de calibration recurrent"
+      }
+    ],
+    "equipe": "1 PM e-commerce + 1 dev front + 1 referent produit pour la calibration des teintes"
+  },
+  "seo": {
+    "slug": "loreal-modiface-essayage-virtuel-2024",
+    "title": "L'Oreal ModiFace : essayage virtuel AR - 100 M de sessions en 2023, conversion x3",
+    "meta_description": "Le moteur d'essayage virtuel ModiFace de L'Oreal a depasse 100 millions de sessions en 2023 (40 M en 2022) et triple les taux de conversion.",
+    "resume_citable": "L'essayage virtuel ModiFace de L'Oreal a totalise plus de 100 millions de sessions en 2023 (contre 40 millions en 2022) et triple le taux de conversion la ou il est deploye.",
+    "faq": [
+      {
+        "q": "Combien de sessions d'essayage virtuel L'Oreal a-t-il enregistrees ?",
+        "a": "Plus de 100 millions de sessions d'essayage numerique en 2023, contre 40 millions en 2022, selon la presentation de resultats du groupe."
+      },
+      {
+        "q": "Quel est l'effet sur les ventes ?",
+        "a": "La ou l'essayage ModiFace est deploye, le temps passe augmente et le taux de conversion est multiplie par trois selon L'Oreal."
+      }
+    ]
+  },
+  "logo_domain": "loreal.com",
+  "stack_technique": [
+    {
+      "nom": "ModiFace",
+      "categorie": "plateforme",
+      "detail": "moteur d'essayage virtuel et de diagnostic beaute acquis par L'Oreal en 2018, utilise par les marques du groupe et des retailers (Amazon, A.S. Watson, DM)",
+      "url": "https://www.modiface.com"
+    },
+    {
+      "nom": "Moteur de detection et suivi du visage",
+      "categorie": "outil",
+      "detail": "deep learning proprietaire ModiFace : detection des traits et tracking en temps reel avant application du rendu photorealiste",
+      "url": "https://www.modiface.com"
+    },
+    {
+      "nom": "SDK d'integration (web, app, borne)",
+      "categorie": "infra",
+      "detail": "brique embarquee sur les pages produit, les applications et les miroirs/bornes en magasin ; l'inference tourne le plus souvent en local sur l'appareil",
+      "url": "https://www.modiface.com"
+    },
+    {
+      "nom": "Referentiel de teintes calibrees",
+      "categorie": "infra",
+      "detail": "correspondance produit/rendu (teintes, textures) maintenue par les equipes a chaque collection ; c'est ce qui fait la fiabilite de l'essayage",
+      "url": "https://www.loreal.com"
+    }
+  ],
+  "media": {
+    "kind": "video",
+    "url": "https://www.youtube.com/watch?v=9sl4EPTTgmM",
+    "source": "officielle",
+    "titre": "L'Oreal Paris Virtual Try On (ModiFace)"
+  }
+}

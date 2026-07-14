@@ -1,0 +1,291 @@
+{
+  "id": "tesco-clubcard-challenges-personnalisation-2024",
+  "type_fiche": "succes",
+  "marque": "Tesco",
+  "groupe": "Tesco PLC",
+  "industrie": "retail_ecom",
+  "marches_deploiement": [
+    "Royaume-Uni"
+  ],
+  "transposable_ue": {
+    "flag": "oui_avec_adaptations",
+    "note": "Le mecanisme repose sur le profilage transactionnel des membres de fidelite. En UE, base legale et consentement RGPD requis pour personnaliser objectifs et recompenses. Un systeme qui fixe un seuil de depense individuel a partir de l'historique reste hors haut risque au sens de l'AI Act, mais la transparence sur la logique de ciblage s'impose."
+  },
+  "metier": "marketing / CRM / fidelite",
+  "intervenants": [
+    {
+      "nom": "Ken Murphy",
+      "role": "Group Chief Executive, Tesco PLC (cite dans l'etude de cas Eagle Eye)",
+      "source_ref": "S1"
+    }
+  ],
+  "agences": [
+    {
+      "nom": "dunnhumby",
+      "role": "Filiale data de Tesco, a l'origine du Clubcard et de la modelisation client",
+      "source_ref": "S2"
+    },
+    {
+      "nom": "Eagle Eye",
+      "role": "Plateforme loyalty qui execute la personnalisation des Clubcard Challenges (moteur de decision par IA)",
+      "source_ref": "S1"
+    }
+  ],
+  "axes": {
+    "levier": "retention",
+    "touchpoints": [
+      "application mobile Tesco",
+      "programme Clubcard",
+      "defis de depense personnalises",
+      "email et notifications"
+    ],
+    "etape_parcours": "fidelite",
+    "famille": "personnalisation",
+    "pattern": "gamification de la fidelite par objectifs de depense personnalises calcules par IA",
+    "type_ia": [
+      "machine learning",
+      "moteur de decision et d'optimisation d'offres"
+    ],
+    "plateforme_stack": [
+      "Eagle Eye",
+      "dunnhumby",
+      "custom/in-house"
+    ],
+    "objectif_metrique": [
+      "engagement application",
+      "frequence de visite",
+      "depense incrementale",
+      "taux de participation et de completion"
+    ]
+  },
+  "implementation": "plateforme",
+  "objectif_business": "Faire revenir les membres Clubcard plus souvent et augmenter leur depense sur une periode de six semaines, en leur proposant des defis chiffres taille pour leur panier habituel plutot que des promotions uniformes.",
+  "points_cles": ["Defis de depense personnalises par IA dans l'app Clubcard.", "Moteur de decision Eagle Eye sur l'historique d'achat, appuye par dunnhumby.", "Jusqu'a 10 millions de membres cibles, plus d'un demi-milliard de points en 2024.", "Preuve B, statut confirme, quatre campagnes de six semaines en 2024."],
+  "description": "Les Clubcard Challenges sont des defis de depense personnalises proposes dans l'application Tesco. Chaque membre recoit des objectifs (par exemple depenser un certain montant sur une categorie) et gagne des points Clubcard s'il les atteint sur six semaines, jusqu'a 50 livres de points. L'affectation des defis est calculee par le moteur d'IA d'Eagle Eye, qui prend selon l'editeur plus de 190 decisions par membre pour fixer produits cibles, seuils de depense et niveaux de recompense a partir de l'historique d'achat. Tesco a deroule quatre campagnes de six semaines en 2024, en elargissant a chaque vague la population incluse, jusqu'a 10 millions de clients pour la derniere. Le programme s'appuie sur la matiere data du Clubcard, par lequel transitent 82% des ventes UK de Tesco.",
+  "resultats": [
+    {
+      "metrique": "Clients cibles par la derniere campagne Clubcard Challenges (2024)",
+      "valeur": "jusqu'a 10 millions",
+      "citation_exacte": "10 million Clubcard members targeted in latest 2024 campaign",
+      "source_ref": "S1"
+    },
+    {
+      "metrique": "Points Clubcard supplementaires distribues via les Challenges",
+      "valeur": "500M+",
+      "citation_exacte": "over half a billion extra Clubcard points",
+      "source_ref": "S1"
+    },
+    {
+      "metrique": "Visiteurs des pages Challenges convertis en joueurs",
+      "valeur": "76%",
+      "citation_exacte": "76% of distinct visitors converted to players",
+      "source_ref": "S1"
+    },
+    {
+      "metrique": "Part des ventes UK de Tesco realisees via Clubcard",
+      "valeur": "82%",
+      "citation_exacte": "82% of Tesco's UK sales flow through Clubcard transactions",
+      "source_ref": "S2"
+    }
+  ],
+  "niveau_preuve": {
+    "niveau": "B",
+    "justification": "Etude de cas de la plateforme Eagle Eye chiffree (reach, conversion joueurs, points distribues) citant le CEO Ken Murphy, corroboree par l'analyse eMarketer sur le poids du Clubcard (82% des ventes UK). Source vendor interessee mais concordante avec la presse d'analyse."
+  },
+  "dates": {
+    "lancement": "Clubcard Challenges pilotes en 2022, deployes a l'echelle sur quatre campagnes en 2024",
+    "derniere_confirmation_activite": "2024 (campagnes de la periode de Noel 2024) ; poids du Clubcard confirme par eMarketer en juin 2026",
+    "verifie_le": "2026-07-11",
+    "revoir_apres": "2027-01-11"
+  },
+  "statut_vivant": {
+    "statut": "confirme",
+    "note": "Les Challenges ont ete elargis campagne apres campagne en 2024 et sont presentes par Tesco comme un moteur de son engagement digital record. Le Clubcard reste central dans la strategie retail media et fidelite du groupe."
+  },
+  "sources": [
+    {
+      "ref": "S1",
+      "type": "customer_story_plateforme",
+      "fiabilite": "T2_officiel_interesse",
+      "titre": "Tesco Clubcard Challenges - Eagle Eye case study",
+      "url": "https://eagleeye.com/case-studies/tesco-clubcard-challenges",
+      "consulte_le": "2026-07-11"
+    },
+    {
+      "ref": "S2",
+      "type": "analyse_academique",
+      "fiabilite": "T4_secondaire",
+      "titre": "How Tesco built a retail platform powered by loyalty data and AI",
+      "url": "https://www.emarketer.com/content/how-tesco-built-retail-platform-powered-by-loyalty-data-ai",
+      "date_publication": "2026-06-08",
+      "consulte_le": "2026-07-11"
+    }
+  ],
+  "fonctionnement_operationnel": {
+    "cadence": "Par campagne (vagues de six semaines), avec affectation individuelle des defis en amont de chaque vague",
+    "opere_par": "Equipe fidelite et CRM de Tesco, appuyee par dunnhumby pour la data et par Eagle Eye pour l'execution",
+    "signal_pilote": "L'historique d'achat Clubcard de chaque membre. Sans identifiant reliant les tickets a une personne, le moteur ne peut pas calibrer un seuil de depense atteignable, et le defi devient soit trivial soit hors de portee.",
+    "etapes": [
+      {
+        "etape": "Selection de la population",
+        "detail": "L'equipe fidelite fixe le perimetre de la vague et le nombre de clients inclus, elargi campagne apres campagne.",
+        "acteur": "Marketing fidelite"
+      },
+      {
+        "etape": "Calibrage des defis",
+        "detail": "Le moteur Eagle Eye calcule pour chaque membre les produits cibles, le seuil de depense et la recompense a partir de son historique.",
+        "acteur": "IA"
+      },
+      {
+        "etape": "Diffusion dans l'app",
+        "detail": "Les defis apparaissent dans l'application Tesco avec la progression et la recompense en points Clubcard.",
+        "acteur": "Application"
+      },
+      {
+        "etape": "Suivi de progression",
+        "detail": "Chaque achat met a jour l'avancement du membre vers son objectif sur les six semaines.",
+        "acteur": "IA"
+      },
+      {
+        "etape": "Mesure et iteration",
+        "detail": "Participation, completion et depense incrementale sont mesurees, puis la vague suivante elargit la cible.",
+        "acteur": "Equipe data et marketing"
+      }
+    ]
+  },
+  "schema_flow": {
+    "statut": "documente",
+    "noeuds": [
+      {
+        "id": "clubcard",
+        "role_generique": "data_source",
+        "label": "Historique d'achat Clubcard"
+      },
+      {
+        "id": "dh",
+        "role_generique": "cdp",
+        "label": "Modelisation client",
+        "outil_documente": "dunnhumby"
+      },
+      {
+        "id": "engine",
+        "role_generique": "modele_ia",
+        "label": "Moteur de decision des defis",
+        "outil_documente": "Eagle Eye"
+      },
+      {
+        "id": "app",
+        "role_generique": "site_app",
+        "label": "Application mobile Tesco"
+      },
+      {
+        "id": "membre",
+        "role_generique": "humain",
+        "label": "Membre Clubcard"
+      }
+    ],
+    "liens": [
+      [
+        "clubcard",
+        "dh"
+      ],
+      [
+        "dh",
+        "engine"
+      ],
+      [
+        "engine",
+        "app",
+        "defis personnalises"
+      ],
+      [
+        "app",
+        "membre"
+      ],
+      [
+        "membre",
+        "clubcard",
+        "nouvel achat, avancement du defi"
+      ]
+    ]
+  },
+  "replication": {
+    "statut_epistemique": "infere",
+    "prerequis_data": [
+      "historique transactionnel first-party par membre",
+      "programme de fidelite identifiant chaque client",
+      "capacite a rattacher chaque ticket au bon profil"
+    ],
+    "prerequis_orga": [
+      "programme de fidelite actif a large base",
+      "equipe CRM pilotant les campagnes",
+      "boucle de mesure incrementale"
+    ],
+    "stack_possible": [
+      "plateforme loyalty avec moteur d'offres (Eagle Eye, Talon.One, equivalent)",
+      "CDP ou entrepot client",
+      "application mobile"
+    ],
+    "premiere_etape": "Definir un mecanisme de defi chiffre et brancher le moteur d'offres sur l'historique d'achat des membres pour calibrer des seuils individuels.",
+    "playbook": [
+      {
+        "action": "Definir le mecanisme de defi (duree, recompense, categories eligibles) et le perimetre de la population pilote.",
+        "livrable": "Spec du challenge et regles de calibrage individuel."
+      },
+      {
+        "action": "Brancher le moteur d'offres sur l'historique d'achat des membres pour calculer des seuils de depense atteignables par personne.",
+        "livrable": "Seuils et recompenses calcules pour la population test."
+      },
+      {
+        "action": "Lancer une premiere campagne de six semaines sur une population reduite, avec groupe temoin et suivi de progression dans l'app.",
+        "livrable": "Campagne live, progression visible par le membre."
+      },
+      {
+        "action": "Lire participation, completion et depense incrementale contre le temoin.",
+        "livrable": "Bilan chiffre de la vague pilote."
+      },
+      {
+        "action": "Elargir la population vague apres vague en ajustant le calibrage sur les enseignements.",
+        "livrable": "Plan de scaling et calendrier des campagnes suivantes."
+      }
+    ],
+    "equipe": "1 responsable fidelite/CRM + 1 data analyst + le vendor loyalty, avec un relais app pour l'affichage des defis."
+  },
+  "seo": {
+    "slug": "tesco-clubcard-challenges-personnalisation-2024",
+    "title": "Tesco : defis de fidelite personnalises par IA (Clubcard Challenges) - 10 millions de membres cibles (2024)",
+    "meta_description": "Tesco personnalise par IA des defis de depense (Eagle Eye) sur les donnees Clubcard : jusqu'a 10 millions de membres et un demi-milliard de points en 2024.",
+    "resume_citable": "Tesco a cible jusqu'a 10 millions de membres Clubcard avec des defis de depense personnalises par le moteur IA d'Eagle Eye, distribuant plus d'un demi-milliard de points sur ses campagnes 2024, sur un programme par lequel passent 82% des ventes UK.",
+    "faq": [
+      {
+        "q": "Comment fonctionnent les Clubcard Challenges ?",
+        "a": "Chaque membre recoit dans l'app Tesco des objectifs de depense calcules par le moteur d'IA d'Eagle Eye a partir de son historique, et gagne des points Clubcard (jusqu'a 50 livres) s'il les atteint sur six semaines."
+      },
+      {
+        "q": "Quelle echelle a atteint le dispositif ?",
+        "a": "Tesco a deroule quatre campagnes de six semaines en 2024, la derniere ciblant jusqu'a 10 millions de clients, avec plus d'un demi-milliard de points Clubcard distribues sur la periode."
+      }
+    ]
+  },
+  "logo_domain": "tesco.com",
+  "stack_technique": [
+    {
+      "nom": "Eagle Eye",
+      "categorie": "plateforme",
+      "detail": "Plateforme loyalty dont le moteur d'IA calibre les defis : plus de 190 decisions par membre (produits cibles, seuil de depense, recompense) a partir de l'historique d'achat.",
+      "url": "https://eagleeye.com"
+    },
+    {
+      "nom": "dunnhumby",
+      "categorie": "integrateur",
+      "detail": "Filiale data de Tesco, a l'origine du Clubcard, qui assure la modelisation client en amont du moteur.",
+      "url": "https://www.dunnhumby.com"
+    },
+    {
+      "nom": "Application mobile Tesco / programme Clubcard",
+      "categorie": "infra",
+      "detail": "Canal de diffusion des defis et source de la donnee : 82% des ventes UK de Tesco transitent par le Clubcard.",
+      "url": "https://www.tesco.com"
+    }
+  ]
+}

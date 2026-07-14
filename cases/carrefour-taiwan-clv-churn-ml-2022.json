@@ -1,0 +1,299 @@
+{
+  "id": "carrefour-taiwan-clv-churn-ml-2022",
+  "type_fiche": "succes",
+  "marque": "Carrefour Taiwan",
+  "groupe": "Carrefour",
+  "industrie": "retail_ecom",
+  "marches_deploiement": [
+    "Taiwan"
+  ],
+  "transposable_ue": {
+    "flag": "oui_avec_adaptations",
+    "note": "Les modeles de valeur vie client et de churn reposent sur la donnee client first-party. En UE, le profilage predictif a fin marketing exige une base legale et un consentement RGPD, et une information sur la logique du modele si une decision significative en decoule. La prediction de churn et de CLV pour cibler la publicite reste hors haut risque au sens de l'AI Act."
+  },
+  "metier": "marketing / CRM / data",
+  "intervenants": [
+    {
+      "nom": "Henry Ting",
+      "role": "Digital Chief Technology Officer, Carrefour Taiwan",
+      "source_ref": "S1"
+    },
+    {
+      "nom": "David Kestermans",
+      "role": "Director of IT, Marketing, Digital, Carrefour Belgium",
+      "source_ref": "S2"
+    }
+  ],
+  "agences": [
+    {
+      "nom": "Google Cloud",
+      "role": "Fournisseur cloud et IA (AutoML, BigQuery, Recommendations AI) supportant les modeles predictifs et la personnalisation",
+      "source_ref": "S1"
+    }
+  ],
+  "axes": {
+    "levier": "retention",
+    "touchpoints": [
+      "publicite en ligne ciblee",
+      "application mobile",
+      "site e-commerce",
+      "recommandations produit"
+    ],
+    "etape_parcours": "fidelite",
+    "famille": "prediction",
+    "pattern": "modeles de valeur vie client et de churn pour concentrer l'effort marketing sur les clients a retenir",
+    "type_ia": [
+      "machine learning (AutoML)",
+      "modeles predictifs (CLV, churn, conversion, segmentation)",
+      "systemes de recommandation"
+    ],
+    "plateforme_stack": [
+      "Google Cloud AutoML",
+      "BigQuery",
+      "Recommendations AI",
+      "Google Ads"
+    ],
+    "objectif_metrique": [
+      "cout par action",
+      "retour sur investissement publicitaire",
+      "identification des clients a haute valeur",
+      "engagement"
+    ]
+  },
+  "implementation": "hybride",
+  "stack_technique": [
+    {
+      "nom": "Google Cloud AutoML",
+      "categorie": "plateforme",
+      "detail": "Service d'entrainement automatise sur lequel les quatre modeles (valeur vie client, segmentation, conversion, churn) ont ete construits a partir de 2019.",
+      "url": "https://cloud.google.com/automl"
+    },
+    {
+      "nom": "BigQuery",
+      "categorie": "infra",
+      "detail": "Entrepot analytique socle de la donnee client, dans la modernisation data du groupe Carrefour sur Google Cloud.",
+      "url": "https://cloud.google.com/bigquery"
+    },
+    {
+      "nom": "Recommendations AI",
+      "categorie": "outil",
+      "detail": "Service Google Cloud de recommandation produit utilise sur l'app et le site e-commerce.",
+      "url": "https://cloud.google.com"
+    },
+    {
+      "nom": "Google Ads",
+      "categorie": "plateforme",
+      "detail": "Canal d'activation : la publicite en ligne est concentree sur les clients a haute valeur identifies par les modeles.",
+      "url": "https://ads.google.com"
+    }
+  ],
+  "objectif_business": "Concentrer la depense marketing sur les clients a plus forte valeur et a risque de depart, en identifiant par modele predictif qui vaut la peine d'etre adresse, pour baisser le cout d'acquisition et remonter le retour sur investissement publicitaire.",
+  "points_cles": ["Quatre modeles predictifs (valeur vie client, segmentation, conversion, churn) pour cibler les clients a retenir.", "Construits sur Google Cloud AutoML et BigQuery, activation via Google Ads.", "Cout par action -40%, retour sur investissement publicitaire x2,64, app a plus de 5 millions de telechargements.", "Preuve B, statut signaux mitiges."],
+  "description": "Carrefour Taiwan a charge sa donnee client dans Google Cloud AutoML a partir de 2019 et a construit quatre modeles de machine learning : valeur vie client, segmentation, prediction de taux de conversion et prediction de taux de churn. En ciblant la publicite en priorite sur les clients a haute valeur identifies par ces modeles, l'enseigne a baisse son cout par action publicitaire en ligne de 40% et porte son retour sur investissement publicitaire a 2,64 fois son niveau anterieur. L'infrastructure a ensuite migre vers Google Cloud (migration achevee en juillet 2021), l'application depassant cinq millions de telechargements en juin 2022. Le dispositif s'inscrit dans une modernisation data plus large du groupe Carrefour sur Google Cloud, ou BigQuery sert de socle analytique et ou l'enseigne revendique 104 millions de foyers touches par an dans le monde.",
+  "resultats": [
+    {
+      "metrique": "Baisse du cout par action de la publicite en ligne",
+      "valeur": "-40%",
+      "citation_exacte": "lowered its cost per action of online advertising by 40%",
+      "source_ref": "S1"
+    },
+    {
+      "metrique": "Retour sur investissement publicitaire, vs le niveau anterieur",
+      "valeur": "x2,64",
+      "citation_exacte": "return on ad spend is 2.64 times higher compared to before",
+      "source_ref": "S1"
+    },
+    {
+      "metrique": "Telechargements de l'application (juin 2022)",
+      "valeur": "plus de 5 millions",
+      "citation_exacte": "its app had more than five million downloads",
+      "source_ref": "S1"
+    },
+    {
+      "metrique": "Foyers touches par an dans le monde (groupe Carrefour)",
+      "valeur": "104 M",
+      "citation_exacte": "104 million households reached across the world each year",
+      "source_ref": "S2"
+    }
+  ],
+  "niveau_preuve": {
+    "niveau": "B",
+    "justification": "Deux customer stories Google Cloud chiffrees et attribuees a des dirigeants nommes (Henry Ting a Taiwan, David Kestermans en Belgique) documentent les modeles predictifs et les resultats media. Sources officielles interessees (le fournisseur cloud), sans corroboration presse independante sur les chiffres Taiwan."
+  },
+  "dates": {
+    "lancement": "Donnee chargee dans AutoML en 2019 ; migration vers Google Cloud achevee en juillet 2021",
+    "derniere_confirmation_activite": "juin 2022 (chiffre d'application dans l'etude de cas Google Cloud)",
+    "verifie_le": "2026-07-11",
+    "revoir_apres": "2027-01-11"
+  },
+  "statut_vivant": {
+    "statut": "signaux_mitiges",
+    "note": "L'etude de cas Taiwan est documentee jusqu'en 2022, sans confirmation publique plus recente des memes chiffres. Le partenariat data et IA de Carrefour avec Google Cloud reste actif au niveau groupe (plateforme data, assistant Gemini deploye en 2025), mais le detail des modeles CLV et churn Taiwan n'a pas de mise a jour recente verifiee."
+  },
+  "sources": [
+    {
+      "ref": "S1",
+      "type": "customer_story_plateforme",
+      "fiabilite": "T2_officiel_interesse",
+      "titre": "Carrefour Taiwan Case Study - Google Cloud",
+      "url": "https://cloud.google.com/customers/carrefourtaiwan",
+      "consulte_le": "2026-07-11"
+    },
+    {
+      "ref": "S2",
+      "type": "customer_story_plateforme",
+      "fiabilite": "T2_officiel_interesse",
+      "titre": "Carrefour - Google Cloud",
+      "url": "https://cloud.google.com/customers/featured/carrefour",
+      "consulte_le": "2026-07-11"
+    }
+  ],
+  "fonctionnement_operationnel": {
+    "cadence": "Batch : reentrainement periodique des modeles, ciblage publicitaire ajuste par campagne",
+    "opere_par": "Equipe digital et data de Carrefour Taiwan, sur l'infrastructure Google Cloud",
+    "signal_pilote": "L'historique d'achat et de comportement client qui alimente les modeles CLV et churn. Sans donnee assez riche par client, les predictions se degradent et le ciblage retombe sur des segments larges peu rentables.",
+    "etapes": [
+      {
+        "etape": "Chargement de la donnee client",
+        "detail": "La donnee client est envoyee dans AutoML pour l'entrainement des modeles.",
+        "acteur": "Equipe data"
+      },
+      {
+        "etape": "Construction des modeles",
+        "detail": "Quatre modeles sont entraines : valeur vie client, segmentation, conversion, churn.",
+        "acteur": "IA"
+      },
+      {
+        "etape": "Identification des clients a retenir",
+        "detail": "Les modeles designent les clients a haute valeur et ceux a risque de depart.",
+        "acteur": "IA"
+      },
+      {
+        "etape": "Ciblage media",
+        "detail": "La publicite en ligne est concentree sur ces clients via l'integration Google Ads.",
+        "acteur": "Marketing"
+      },
+      {
+        "etape": "Mesure et reentrainement",
+        "detail": "Cout par action et retour sur investissement publicitaire sont suivis et renvoyes aux modeles.",
+        "acteur": "Equipe data"
+      }
+    ]
+  },
+  "schema_flow": {
+    "statut": "documente",
+    "noeuds": [
+      {
+        "id": "data",
+        "role_generique": "data_source",
+        "label": "Donnee client Carrefour Taiwan"
+      },
+      {
+        "id": "bq",
+        "role_generique": "cdp",
+        "label": "Entrepot analytique",
+        "outil_documente": "BigQuery"
+      },
+      {
+        "id": "automl",
+        "role_generique": "modele_ia",
+        "label": "Modeles CLV, churn, conversion, segmentation",
+        "outil_documente": "Google Cloud AutoML"
+      },
+      {
+        "id": "ads",
+        "role_generique": "paid_platform",
+        "label": "Publicite en ligne ciblee",
+        "outil_documente": "Google Ads"
+      },
+      {
+        "id": "client",
+        "role_generique": "humain",
+        "label": "Client a haute valeur ou a risque de churn"
+      }
+    ],
+    "liens": [
+      [
+        "data",
+        "bq"
+      ],
+      [
+        "bq",
+        "automl"
+      ],
+      [
+        "automl",
+        "ads",
+        "ciblage des clients a retenir"
+      ],
+      [
+        "ads",
+        "client"
+      ],
+      [
+        "client",
+        "data",
+        "achat et comportement, boucle de feedback"
+      ]
+    ]
+  },
+  "replication": {
+    "statut_epistemique": "infere",
+    "prerequis_data": [
+      "historique d'achat et de comportement par client",
+      "volume suffisant pour entrainer des modeles CLV et churn",
+      "rattachement fiable des achats a un identifiant client"
+    ],
+    "prerequis_orga": [
+      "equipe data capable d'entrainer et maintenir des modeles",
+      "integration entre modeles et plateforme media",
+      "boucle de mesure du cout par action"
+    ],
+    "stack_possible": [
+      "AutoML ou equivalent (Vertex AI, cloud ML)",
+      "entrepot de donnees (BigQuery, Snowflake)",
+      "connexion aux plateformes publicitaires"
+    ],
+    "premiere_etape": "Entrainer un modele de valeur vie client sur l'historique d'achat pour identifier les clients a concentrer en priorite dans le ciblage media.",
+    "playbook": [
+      {
+        "action": "Consolider l'historique d'achat et de comportement dans l'entrepot, rattache a un identifiant client fiable.",
+        "livrable": "Table client unifiee, prete pour l'entrainement."
+      },
+      {
+        "action": "Entrainer un premier modele de valeur vie client (AutoML ou equivalent) et le valider hors ligne contre l'historique.",
+        "livrable": "Scores CLV par client, evalues et documentes."
+      },
+      {
+        "action": "Ajouter les modeles de churn et de conversion, puis definir les segments a adresser en priorite.",
+        "livrable": "Scores en production batch et segments actionnables."
+      },
+      {
+        "action": "Brancher les segments sur la plateforme publicitaire en audiences first-party et lancer les campagnes ciblees.",
+        "livrable": "Campagnes concentrees sur les clients a retenir."
+      },
+      {
+        "action": "Comparer cout par action et retour sur investissement publicitaire au ciblage anterieur, et installer le reentrainement periodique.",
+        "livrable": "Bilan media chiffre et pipeline de reentrainement."
+      }
+    ],
+    "equipe": "1-2 data scientists ou analysts + 1 data engineer pour les pipelines + 1 responsable media pour l'activation."
+  },
+  "seo": {
+    "slug": "carrefour-taiwan-clv-churn-ml-2022",
+    "title": "Carrefour Taiwan : modeles IA de valeur vie client et de churn - cout par action -40%, ROAS x2,64 (2022)",
+    "meta_description": "Carrefour Taiwan a bati sur Google Cloud AutoML des modeles de valeur vie client et de churn pour cibler ses clients a retenir : cout/action -40%, ROAS x2,64.",
+    "resume_citable": "Carrefour Taiwan a bati sur Google Cloud AutoML quatre modeles predictifs (valeur vie client, segmentation, conversion, churn) pour concentrer sa publicite sur les clients a retenir, baissant son cout par action de 40% et portant son retour sur investissement publicitaire a 2,64 fois son niveau anterieur.",
+    "faq": [
+      {
+        "q": "Quels modeles Carrefour Taiwan a-t-il construits ?",
+        "a": "Quatre modeles de machine learning sur Google Cloud AutoML : valeur vie client, segmentation, prediction de conversion et prediction de churn, pour cibler la publicite sur les clients a haute valeur."
+      },
+      {
+        "q": "Quels resultats media ont ete obtenus ?",
+        "a": "Un cout par action de la publicite en ligne en baisse de 40% et un retour sur investissement publicitaire porte a 2,64 fois son niveau anterieur, selon l'etude de cas Google Cloud."
+      }
+    ]
+  },
+  "logo_domain": "carrefour.com.tw"
+}

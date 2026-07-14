@@ -1,0 +1,340 @@
+{
+  "id": "octopus-energy-magic-ink-genai-service-2023",
+  "type_fiche": "succes",
+  "marque": "Octopus Energy",
+  "groupe": "Octopus Energy Group",
+  "industrie": "energie_utilities",
+  "marches_deploiement": [
+    "Royaume-Uni"
+  ],
+  "transposable_ue": {
+    "flag": "oui_avec_adaptations",
+    "note": "Le pattern (assistance genAI a la redaction, agent supervise) est compatible RGPD car l'humain reste dans la boucle et envoie le message. Magic Ink annote les faits verifies avec leur source et signale le texte non verifie, ce qui limite le risque de reponse fausse. L'agent autonome Arlo est cadre pour exclure les clients vulnerables et les cas sensibles, une precaution utile au regard de l'AI Act."
+  },
+  "metier": "service client",
+  "marque_linkedin": "https://www.linkedin.com/company/octopus-energy/",
+  "intervenants": [
+    {
+      "nom": "Greg Jackson",
+      "role": "Fondateur et CEO d'Octopus Energy Group",
+      "source_ref": "S3"
+    },
+    {
+      "nom": "Ashley Firth",
+      "role": "Deputy CTO, Octopus Energy",
+      "source_ref": "S2"
+    }
+  ],
+  "axes": {
+    "levier": "retention",
+    "touchpoints": [
+      "email",
+      "centre de contact",
+      "chat"
+    ],
+    "etape_parcours": "post-achat",
+    "famille": "conversation",
+    "pattern": "agent client genAI (assistance a la redaction + agent autonome)",
+    "type_ia": [
+      "LLM (modeles type GPT)",
+      "generation de texte",
+      "resume automatique d'appel"
+    ],
+    "plateforme_stack": [
+      "Kraken (Octopus Energy Group)",
+      "Magic Ink",
+      "Arlo"
+    ],
+    "objectif_metrique": [
+      "part d'emails traites avec assistance IA",
+      "satisfaction client",
+      "volume traite par conseiller"
+    ]
+  },
+  "implementation": "hybride",
+  "stack_technique": [
+    {
+      "nom": "Kraken",
+      "categorie": "plateforme",
+      "detail": "Plateforme d'exploitation client d'Octopus Energy Group (compte, facturation, interactions), socle qui fournit l'historique unifie sur lequel s'appuie la genAI.",
+      "url": "https://kraken.tech"
+    },
+    {
+      "nom": "Magic Ink",
+      "categorie": "outil",
+      "detail": "Outil genAI integre a Kraken : redige des brouillons de reponse dans le ton du conseiller, annote les faits verifies avec leur source et surligne le texte non verifie ; resume aussi les appels.",
+      "url": "https://kraken.tech"
+    },
+    {
+      "nom": "LLM type GPT (modele exact non publie)",
+      "categorie": "llm",
+      "detail": "Modeles de generation de texte de type GPT utilises par Magic Ink ; Octopus ne publie pas la version ni le fournisseur exact.",
+      "url": "https://kraken.tech"
+    },
+    {
+      "nom": "Arlo",
+      "categorie": "outil",
+      "detail": "Agent autonome teste par Octopus sur les demandes simples (tarifs, prelevements, details du compte), avec exclusion des clients vulnerables et escalade humaine.",
+      "url": "https://octopus.energy"
+    }
+  ],
+  "objectif_business": "Absorber le volume d'emails clients sans multiplier les effectifs, en tenant un niveau de satisfaction au moins egal a celui des conseillers humains et en reduisant le cout de traitement.",
+  "points_cles": ["Assistance genAI a la redaction des reponses email, sous supervision humaine.", "Outil Magic Ink integre a la plateforme Kraken, plus agent autonome Arlo.", "Environ 35% des emails rediges avec l'assistance ; satisfaction 80% contre 65%.", "Preuve B, statut confirme en production a l'echelle du groupe."],
+  "description": "Magic Ink est l'outil de genAI integre a la plateforme Kraken d'Octopus. Quand un conseiller ouvre un email client, l'outil lit l'historique complet du compte et les donnees produit, puis redige un brouillon de reponse dans le ton du conseiller. Il annote les faits verifies avec leur source et surligne ce qu'il n'a pas pu verifier. Le conseiller relit, ajuste si besoin et envoie: l'humain reste l'expediteur. Environ 35 % des emails sont ecrits avec cette assistance, et pres d'un message sur trois genere par Magic Ink part sans modification ou presque. Octopus a ensuite teste Arlo, un agent qui repond seul aux demandes simples (renouvellement de tarif, date de prelevement, details du compte), en excluant les clients vulnerables et les dossiers complexes. Pendant l'essai, Arlo a traite environ 8 000 emails par semaine, soit 4 % des emails clients recus au Royaume-Uni.",
+  "resultats": [
+    {
+      "metrique": "Part des emails clients rediges avec l'assistance de Magic Ink",
+      "valeur": "environ 35 %",
+      "citation_exacte": "Around 35% of customer emails are currently written with the assistance of this tool",
+      "source_ref": "S1"
+    },
+    {
+      "metrique": "Appels resumes cumules, soit 695 379 heures de conversation et 9 415 901 messages generes",
+      "valeur": "6,2M d'appels",
+      "citation_exacte": "6,239,087 calls - the equivalent of 695,379 hours of talking time",
+      "source_ref": "S1"
+    },
+    {
+      "metrique": "Charge de travail couverte sur les emails clients (declaration CEO, 2023)",
+      "valeur": "250 personnes",
+      "citation_exacte": "doing the work of 250 people by answering customer emails",
+      "source_ref": "S3"
+    },
+    {
+      "metrique": "Satisfaction IA contre conseillers humains (declaration CEO, 2023)",
+      "valeur": "80% vs 65%",
+      "citation_exacte": "80 per cent satisfaction rate, higher than the 65 per cent achieved by workers",
+      "source_ref": "S3"
+    },
+    {
+      "metrique": "Emails hebdomadaires traites par l'agent Arlo (essai), 4% du volume UK, satisfaction 76% contre 72%",
+      "valeur": "8 000 emails",
+      "citation_exacte": "around 8,000 emails a week - 4% of all customer emails",
+      "source_ref": "S2"
+    }
+  ],
+  "niveau_preuve": {
+    "niveau": "B",
+    "justification": "Etude de cas plateforme chiffree (techUK/Kraken) avec volumes precis, confirmee par un communique officiel de la marque et par la presse nationale (The Times relaye par City AM) citant nommement le CEO. Sources concordantes."
+  },
+  "dates": {
+    "lancement": "fevrier 2023 (premiers emails clients rediges avec l'IA)",
+    "derniere_confirmation_activite": "2025 (essai de l'agent autonome Arlo, presente comme concluant)",
+    "verifie_le": "2026-07-11",
+    "revoir_apres": "2027-01-11"
+  },
+  "statut_vivant": {
+    "statut": "confirme",
+    "note": "Magic Ink est en production a l'echelle du groupe Kraken (Octopus et licencies). Arlo a ete etendu apres un essai de trois mois au Royaume-Uni."
+  },
+  "sources": [
+    {
+      "ref": "S1",
+      "type": "customer_story_plateforme",
+      "fiabilite": "T2_officiel_interesse",
+      "titre": "AI Adoption Case Study: Kraken's generative AI tool for customer service helping Octopus Energy",
+      "url": "https://www.techuk.org/resource/case-study-kraken-tech-s-generative-ai-tool-for-customer-service.html",
+      "date_publication": "2024",
+      "consulte_le": "2026-07-11"
+    },
+    {
+      "ref": "S2",
+      "type": "blog_officiel",
+      "fiabilite": "T1_primaire",
+      "titre": "Octopus Energy's AI trial wins customer approval",
+      "url": "https://octopus.energy/press/more-news-press-releases/octopus-energy-s-ai-trial-wins-customer-approval/",
+      "date_publication": "2025",
+      "consulte_le": "2026-07-11"
+    },
+    {
+      "ref": "S3",
+      "type": "presse",
+      "fiabilite": "T3_presse_etablie",
+      "titre": "AI doing the work of over 200 people at Octopus, chief executive says",
+      "url": "https://www.cityam.com/ai-doing-the-work-of-over-200-people-at-octopus-chief-executive-says/",
+      "date_publication": "2023-05-08",
+      "consulte_le": "2026-07-11"
+    },
+    {
+      "ref": "S4",
+      "type": "presse",
+      "fiabilite": "T3_presse_etablie",
+      "titre": "AI 'now doing work of 250 people three months after launch', Octopus Energy boss reveals",
+      "url": "https://www.yorkshirepost.co.uk/business/ai-now-doing-work-of-250-people-three-months-after-launch-octopus-energy-boss-reveals-4133923",
+      "date_publication": "2023",
+      "consulte_le": "2026-07-11"
+    }
+  ],
+  "fonctionnement_operationnel": {
+    "cadence": "Temps reel a chaque email entrant, avec un reentrainement continu sur l'historique client de la plateforme.",
+    "opere_par": "Les equipes de service client d'Octopus, outillees par l'equipe Kraken qui maintient les modeles et les garde-fous.",
+    "signal_pilote": "L'historique complet du compte (contrat, factures, echanges passes) et la note de satisfaction post-reponse. Sans acces a cet historique unifie, le brouillon perd sa pertinence et le taux de messages envoyes sans retouche s'effondre.",
+    "etapes": [
+      {
+        "etape": "Reception et contextualisation",
+        "detail": "L'email arrive dans Kraken, qui rassemble l'historique du compte et les donnees produit associees.",
+        "acteur": "IA"
+      },
+      {
+        "etape": "Redaction du brouillon",
+        "detail": "Magic Ink genere une reponse dans le ton du conseiller, annote les faits verifies avec leur source et surligne le texte non verifie.",
+        "acteur": "IA"
+      },
+      {
+        "etape": "Relecture et envoi",
+        "detail": "Le conseiller controle, corrige si necessaire et envoie. C'est lui l'expediteur, pas la machine.",
+        "acteur": "service client"
+      },
+      {
+        "etape": "Traitement autonome des demandes simples",
+        "detail": "Sur un perimetre cadre (tarifs, prelevements, details du compte), l'agent Arlo repond seul et bascule vers un humain pour tout cas sensible ou vulnerable.",
+        "acteur": "IA"
+      }
+    ]
+  },
+  "schema_flow": {
+    "statut": "documente",
+    "noeuds": [
+      {
+        "id": "client",
+        "role_generique": "humain",
+        "label": "Client Octopus"
+      },
+      {
+        "id": "email",
+        "role_generique": "canal_conversationnel",
+        "label": "Email / chat entrant"
+      },
+      {
+        "id": "kraken",
+        "role_generique": "site_app",
+        "label": "Plateforme Kraken",
+        "outil_documente": "Kraken"
+      },
+      {
+        "id": "histo",
+        "role_generique": "data_source",
+        "label": "Historique compte et donnees produit"
+      },
+      {
+        "id": "magicink",
+        "role_generique": "modele_ia",
+        "label": "Magic Ink (LLM type GPT)",
+        "outil_documente": "Magic Ink"
+      },
+      {
+        "id": "conseiller",
+        "role_generique": "humain",
+        "label": "Conseiller service client"
+      },
+      {
+        "id": "arlo",
+        "role_generique": "modele_ia",
+        "label": "Arlo (agent autonome)",
+        "outil_documente": "Arlo"
+      }
+    ],
+    "liens": [
+      [
+        "client",
+        "email"
+      ],
+      [
+        "email",
+        "kraken"
+      ],
+      [
+        "histo",
+        "magicink"
+      ],
+      [
+        "kraken",
+        "magicink"
+      ],
+      [
+        "magicink",
+        "conseiller",
+        "brouillon annote"
+      ],
+      [
+        "conseiller",
+        "client",
+        "reponse envoyee"
+      ],
+      [
+        "email",
+        "arlo",
+        "demandes simples"
+      ],
+      [
+        "arlo",
+        "client",
+        "reponse autonome"
+      ],
+      [
+        "arlo",
+        "conseiller",
+        "escalade cas sensibles"
+      ]
+    ]
+  },
+  "replication": {
+    "statut_epistemique": "infere",
+    "playbook": [
+      {
+        "action": "Unifier l'historique client (contrat, facturation, echanges passes) dans une vue unique accessible au systeme et aux conseillers.",
+        "livrable": "Fiche client 360 requetable en temps reel"
+      },
+      {
+        "action": "Brancher un LLM en mode brouillon supervise sur le canal email, avec annotation des faits verifies et surlignage du texte non verifie.",
+        "livrable": "Assistant de redaction en pilote sur une file d'emails"
+      },
+      {
+        "action": "Mesurer le taux d'utilisation, la part de brouillons envoyes sans retouche et la satisfaction post-reponse ; definir les regles d'exclusion (cas vulnerables, litiges).",
+        "livrable": "Tableau de bord qualite + perimetre d'exclusion valide"
+      },
+      {
+        "action": "Etendre l'assistance a tous les conseillers et ajouter le resume automatique d'appels.",
+        "livrable": "Deploiement general avec controle qualite continu"
+      },
+      {
+        "action": "Tester un agent autonome sur un perimetre borne de demandes simples, avec escalade humaine systematique et comparaison de satisfaction vs conseillers.",
+        "livrable": "Essai controle documente, decision d'extension"
+      }
+    ],
+    "equipe": "2-3 devs/ML engineers + 1 PM + un noyau de conseillers referents pour la relecture et la QA des reponses",
+    "prerequis_data": [
+      "historique client unifie (contrat, facturation, echanges)",
+      "corpus d'emails passes pour caler le ton",
+      "referentiel produit accessible en temps reel"
+    ],
+    "prerequis_orga": [
+      "service client dispose a superviser plutot qu'a rediger de zero",
+      "processus de controle qualite sur les reponses IA",
+      "cadre d'exclusion des cas vulnerables"
+    ],
+    "stack_possible": [
+      "LLM d'entreprise (type GPT) avec ancrage sur donnees maison",
+      "CRM/plateforme de service unifiee",
+      "couche de verification factuelle avec citation de source"
+    ],
+    "premiere_etape": "Unifier l'historique client dans une seule vue et brancher un LLM en mode brouillon supervise sur un canal (l'email)."
+  },
+  "seo": {
+    "slug": "octopus-energy-magic-ink-genai-service-2023",
+    "title": "Octopus Energy : agent client genAI Magic Ink - 35 % des emails rediges par l'IA (2023)",
+    "meta_description": "Magic Ink, l'IA generative de Kraken, redige environ 35 % des emails clients d'Octopus Energy sous supervision humaine, avec une satisfaction superieure a celle des conseillers seuls.",
+    "resume_citable": "Chez Octopus Energy, l'outil genAI Magic Ink assiste la redaction d'environ 35 % des emails clients et a resume plus de 6,2 millions d'appels, l'agent autonome Arlo traitant 8 000 emails par semaine avec 76 % de satisfaction contre 72 % pour les conseillers.",
+    "faq": [
+      {
+        "q": "Magic Ink remplace-t-il les conseillers d'Octopus Energy ?",
+        "a": "Non. L'outil redige un brouillon; le conseiller relit, corrige et envoie. L'humain reste l'expediteur, et l'agent autonome Arlo est cantonne aux demandes simples."
+      },
+      {
+        "q": "Quel est le niveau de satisfaction de l'IA d'Octopus ?",
+        "a": "L'agent Arlo a obtenu 76 % de satisfaction pendant son essai contre 72 % pour des reponses de conseillers humains, et le CEO a cite 80 % pour l'IA contre 65 % pour les conseillers en 2023."
+      }
+    ]
+  },
+  "logo_domain": "octopus.energy"
+}

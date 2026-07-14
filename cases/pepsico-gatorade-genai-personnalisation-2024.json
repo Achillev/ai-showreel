@@ -1,0 +1,280 @@
+{
+  "id": "pepsico-gatorade-genai-personnalisation-2024",
+  "type_fiche": "succes",
+  "marque": "Gatorade",
+  "groupe": "PepsiCo",
+  "industrie": "cpg_d2c",
+  "marches_deploiement": [
+    "Etats-Unis (gatorade.com, plateforme Gatorade iD)"
+  ],
+  "transposable_ue": {
+    "flag": "oui_avec_adaptations",
+    "note": "L'utilisateur saisit des prompts et les designs sont lies a un compte de fidelite : donnees personnelles et contenus generes par l'utilisateur a encadrer (RGPD, moderation, filtrage des prompts). Sous AI Act, le caractere genAI de l'outil doit rester transparent."
+  },
+  "metier": "marketing, e-commerce, D2C",
+  "intervenants": [
+    {
+      "nom": "Xavi Cortadellas",
+      "role": "Senior Director of Marketing, Athletic Equipment, Gatorade",
+      "source_ref": "S1"
+    },
+    {
+      "nom": "Leon Imas",
+      "role": "Vice President of Design, PepsiCo",
+      "source_ref": "S1"
+    }
+  ],
+  "agences": [
+    {
+      "nom": "Adobe",
+      "role": "Adobe Firefly Services (modeles genAI commerciaux) pour la generation des visuels",
+      "source_ref": "S2"
+    },
+    {
+      "nom": "Work & Co (Accenture Song)",
+      "role": "Integration de l'experience dans gatorade.com",
+      "source_ref": "S3"
+    }
+  ],
+  "axes": {
+    "levier": "activation_conversion",
+    "touchpoints": [
+      "site D2C gatorade.com",
+      "plateforme de fidelite Gatorade iD"
+    ],
+    "etape_parcours": "achat",
+    "famille": "generation",
+    "pattern": "personnalisation produit genAI en libre-service sur un site D2C",
+    "type_ia": [
+      "generation d'images",
+      "modeles generatifs commerciaux (Firefly)"
+    ],
+    "plateforme_stack": [
+      "Adobe Firefly Services",
+      "Gatorade iD",
+      "gatorade.com"
+    ],
+    "objectif_metrique": [
+      "engagement / adhesion au programme de fidelite",
+      "conversion sur produit personnalise",
+      "profondeur de personnalisation"
+    ]
+  },
+  "implementation": "plateforme",
+  "stack_technique": [
+    {
+      "nom": "Adobe Firefly Services",
+      "categorie": "plateforme",
+      "detail": "Modeles genAI commerciaux d'Adobe utilises pour generer les motifs appliques a la Squeeze Bottle, avec un depot de 200 000 assets pre-generes pour tenir la charge.",
+      "url": "https://business.adobe.com"
+    },
+    {
+      "nom": "Gatorade iD",
+      "categorie": "outil",
+      "detail": "Plateforme de fidelite gratuite de Gatorade qui porte l'acces au configurateur et le paiement en points (200 points par generation apres deux designs gratuits).",
+      "url": "https://www.gatorade.com"
+    },
+    {
+      "nom": "Work & Co (Accenture Song)",
+      "categorie": "integrateur",
+      "detail": "Agence qui a integre l'experience de personnalisation dans gatorade.com.",
+      "url": "https://work.co"
+    }
+  ],
+  "objectif_business": "Donner un motif d'inscription et d'achat sur le canal D2C en laissant les sportifs concevoir une bouteille unique, tout en gardant l'identite visuelle iconique de la Squeeze Bottle.",
+  "description": "Gatorade a mis en ligne sur gatorade.com un configurateur de bouteille Squeeze pilote par genAI, ouvert via la plateforme de fidelite gratuite Gatorade iD. L'utilisateur tape ses centres d'interet (un sport, un loisir), choisit une ambiance de motif et une palette, et l'outil genere un design applique a la bouteille sans casser son look iconique. La technologie s'appuie sur Adobe Firefly Services, avec un depot de 200 000 assets pre-generes pour tenir la charge et la personnalisation. Chaque membre dispose de deux designs gratuits, puis paie en points de fidelite (200 points par generation suivante) ; la bouteille personnalisee coute 34,99 dollars. L'outil, lance en octobre 2024, est toujours disponible sur gatorade.com a la date de verification. C'est un deploiement productise et durable, pas un coup de communication : une feature D2C branchee sur la fidelite, avec une page produit dediee toujours en ligne.",
+  "resultats": [
+    {
+      "metrique": "Bibliotheque d'assets pre-generes via Adobe Firefly",
+      "valeur": "200 000 assets",
+      "citation_exacte": "repository of 200,000 pre-generated assets via Adobe Firefly",
+      "source_ref": "S2"
+    },
+    {
+      "metrique": "Options de design proposees (profondeur de personnalisation)",
+      "valeur": "millions d'options",
+      "citation_exacte": "millions of different design options",
+      "source_ref": "S1"
+    },
+    {
+      "metrique": "Bouteille personnalisee : 2 designs gratuits, puis 200 points de fidelite",
+      "valeur": "34,99 $",
+      "citation_exacte": "The cost of one custom squeeze bottle is $34.99",
+      "source_ref": "S2"
+    }
+  ],
+  "niveau_preuve": {
+    "niveau": "C",
+    "justification": "Communique officiel PepsiCo plus etude de cas Adobe (partenaire) et presse, avec liveness confirmee par la page produit gatorade.com ; les indicateurs publies decrivent l'echelle et le modele, pas encore des resultats d'affaires audites, donc C."
+  },
+  "dates": {
+    "lancement": "2024-10-14",
+    "derniere_confirmation_activite": "2026-07 (page produit gatorade.com/bottles/ai/squeeze en ligne)",
+    "verifie_le": "2026-07-11",
+    "revoir_apres": "2027-01-11"
+  },
+  "statut_vivant": {
+    "statut": "confirme",
+    "note": "L'outil est decrit comme toujours disponible sur gatorade.com et dispose d'une page produit dediee active a la verification, plus de 18 mois apres le lancement."
+  },
+  "sources": [
+    {
+      "ref": "S1",
+      "type": "document_officiel_sec",
+      "fiabilite": "T1_primaire",
+      "titre": "Gatorade Launches Generative AI Squeeze Bottle Personalization to Fuel Athlete Self-Expression",
+      "url": "https://www.pepsico.com/en/newsroom/press-releases/2024/gatorade-launches-generative-ai-squeeze-bottle-personalization-to-fuel-athlete-self-expression",
+      "date_publication": "2024-10-14",
+      "consulte_le": "2026-07-11"
+    },
+    {
+      "ref": "S2",
+      "type": "customer_story_plateforme",
+      "fiabilite": "T2_officiel_interesse",
+      "titre": "Gatorade uses Adobe Firefly AI for unique bottle designs",
+      "url": "https://business.adobe.com/blog/gatorade-fuels-creative-self-expression-with-customizable-squeeze-bottles-powered-adobe-firefly-services-generative-ai",
+      "date_publication": "2024",
+      "consulte_le": "2026-07-11"
+    },
+    {
+      "ref": "S3",
+      "type": "blog_officiel",
+      "fiabilite": "T1_primaire",
+      "titre": "Custom AI-Imagined Water Bottle - Gatorade Official Site",
+      "url": "https://www.gatorade.com/bottles/ai/squeeze",
+      "date_publication": "2026",
+      "consulte_le": "2026-07-11"
+    }
+  ],
+  "fonctionnement_operationnel": {
+    "cadence": "Temps reel, en libre-service : chaque generation se declenche a la demande d'un membre Gatorade iD.",
+    "opere_par": "Equipes design et D2C de PepsiCo/Gatorade, sur Adobe Firefly Services, integration Work & Co.",
+    "signal_pilote": "Le prompt de l'utilisateur et son compte de fidelite. Sans garde-fous (moderation, look iconique impose, filtrage des prompts), la sortie peut deriver hors de la marque ou produire du contenu indesirable.",
+    "etapes": [
+      {
+        "etape": "Entree dans le configurateur",
+        "detail": "Le membre Gatorade iD ouvre l'outil sur gatorade.com et saisit ses centres d'interet.",
+        "acteur": "client"
+      },
+      {
+        "etape": "Generation du design",
+        "detail": "Firefly genere un motif applique a la Squeeze Bottle, en gardant le look iconique.",
+        "acteur": "IA (Adobe Firefly Services)"
+      },
+      {
+        "etape": "Choix et facturation",
+        "detail": "Deux designs gratuits, puis 200 points de fidelite par generation ; commande de la bouteille a 34,99 $.",
+        "acteur": "plateforme D2C / client"
+      },
+      {
+        "etape": "Production et livraison",
+        "detail": "Impression du design retenu sur la bouteille et expedition.",
+        "acteur": "supply / e-commerce"
+      }
+    ]
+  },
+  "schema_flow": {
+    "statut": "documente",
+    "noeuds": [
+      {
+        "id": "user",
+        "role_generique": "humain",
+        "label": "Membre Gatorade iD (prompt)"
+      },
+      {
+        "id": "id",
+        "role_generique": "crm",
+        "label": "Plateforme de fidelite Gatorade iD",
+        "outil_documente": "Gatorade iD / gatorade.com"
+      },
+      {
+        "id": "ff",
+        "role_generique": "modele_ia",
+        "label": "Generation du design",
+        "outil_documente": "Adobe Firefly Services"
+      },
+      {
+        "id": "shop",
+        "role_generique": "site_app",
+        "label": "Commande D2C + production bouteille"
+      }
+    ],
+    "liens": [
+      [
+        "user",
+        "id"
+      ],
+      [
+        "id",
+        "ff"
+      ],
+      [
+        "ff",
+        "user",
+        "apercu du design pour choix"
+      ],
+      [
+        "user",
+        "shop"
+      ]
+    ]
+  },
+  "replication": {
+    "statut_epistemique": "infere",
+    "playbook": [
+      {
+        "action": "Choisir un produit personnalisable a forte charge identitaire et cadrer les garde-fous : look de marque impose, moderation des prompts et des sorties.",
+        "livrable": "Brief creatif + regles de marque et de moderation"
+      },
+      {
+        "action": "Prototyper le configurateur sur un modele image commercial, avec le produit comme gabarit fixe et le motif comme seule zone generee.",
+        "livrable": "Demo generant des designs conformes a la marque"
+      },
+      {
+        "action": "Pre-generer une bibliotheque d'assets pour tenir la charge et brancher le compte client ou le programme de fidelite comme porte d'entree.",
+        "livrable": "Bibliotheque d'assets + parcours membre fonctionnel"
+      },
+      {
+        "action": "Connecter la production a la demande (impression du design, expedition) et le checkout.",
+        "livrable": "Chaine commande-production testee de bout en bout"
+      },
+      {
+        "action": "Lancer, puis suivre inscriptions, taux de conversion sur produit personnalise et incidents de moderation.",
+        "livrable": "Feature en production avec tableau de bord"
+      }
+    ],
+    "equipe": "1 PM D2C + 1 direction artistique + une agence d'integration ; la moderation et le service client absorbent le flux au lancement",
+    "prerequis_data": [
+      "compte client / programme de fidelite",
+      "chartes visuelles produit a preserver",
+      "bibliotheque d'assets ou modele genAI commercial"
+    ],
+    "prerequis_orga": [
+      "chaine de personnalisation-production (print on demand)",
+      "moderation des prompts et des sorties"
+    ],
+    "stack_possible": [
+      "Adobe Firefly Services ou modele image commercial equivalent",
+      "plateforme D2C avec compte client",
+      "integrateur front"
+    ],
+    "premiere_etape": "Choisir un produit personnalisable a forte charge identitaire et prototyper un configurateur genAI avec look de marque impose et garde-fous de prompt."
+  },
+  "seo": {
+    "slug": "pepsico-gatorade-genai-personnalisation-2024",
+    "title": "Gatorade (PepsiCo) : bouteille Squeeze personnalisee par genAI - 200 000 assets Firefly (2024)",
+    "meta_description": "Gatorade laisse les sportifs designer leur Squeeze Bottle par genAI (Adobe Firefly) sur gatorade.com : 200 000 assets, millions d'options, toujours en ligne.",
+    "resume_citable": "Gatorade (PepsiCo) a lance en 2024 un configurateur de bouteille Squeeze pilote par genAI via Adobe Firefly, avec 200 000 assets pre-generes et des millions d'options, encore en ligne sur gatorade.com plus de 18 mois apres.",
+    "faq": [
+      {
+        "q": "Comment fonctionne la personnalisation genAI de Gatorade ?",
+        "a": "Sur gatorade.com, un membre Gatorade iD saisit ses centres d'interet ; Adobe Firefly genere un motif applique a la Squeeze Bottle. Deux designs gratuits, puis paiement en points ; bouteille a 34,99 dollars."
+      },
+      {
+        "q": "Est-ce un simple coup de communication ?",
+        "a": "Non. C'est une feature D2C productise, branchee sur le programme de fidelite, avec une page produit dediee toujours active plus de 18 mois apres le lancement."
+      }
+    ]
+  },
+  "logo_domain": "gatorade.com"
+}

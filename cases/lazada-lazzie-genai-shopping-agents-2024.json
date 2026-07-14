@@ -1,0 +1,324 @@
+{
+  "id": "lazada-lazzie-genai-shopping-agents-2024",
+  "type_fiche": "succes",
+  "marque": "Lazada",
+  "groupe": "Alibaba Group",
+  "industrie": "retail_ecom",
+  "marches_deploiement": [
+    "Indonesie",
+    "Malaisie",
+    "Philippines",
+    "Singapour",
+    "Thailande",
+    "Vietnam"
+  ],
+  "transposable_ue": {
+    "flag": "oui_avec_adaptations",
+    "note": "Le pattern (assistant shopping conversationnel + agents genAI de recommandation, de resume d'avis et de generation de fiches produit) se transpose a n'importe quelle marketplace. En UE, l'assistant conversationnel impose une obligation de transparence sous l'AI Act (dire au client qu'il parle a une IA) et une base legale RGPD pour l'usage de l'historique de navigation et d'achat qui alimente les recommandations. Le contenu genere (descriptions, images, modeles) releve des regles europeennes sur le contenu synthetique. Le modele sous-jacent ici est Qwen, propre au groupe Alibaba ; un replicateur europeen substituerait un LLM multilingue avec hebergement et residence des donnees conformes."
+  },
+  "metier": "e-commerce / marketing marketplace (experience acheteur et outils vendeur)",
+  "intervenants": [
+    {
+      "nom": "James Dong",
+      "role": "Chief Executive Officer, Lazada Group",
+      "source_ref": "S1"
+    }
+  ],
+  "axes": {
+    "levier": "activation_conversion",
+    "touchpoints": [
+      "application et site Lazada",
+      "assistant conversationnel AI Lazzie",
+      "fiches produit",
+      "back-office vendeur"
+    ],
+    "etape_parcours": "consideration",
+    "famille": "conversation",
+    "pattern": "assistant shopping conversationnel grand public plus agents genAI de recommandation, de resume d'avis et de generation de fiches produit sur une marketplace",
+    "type_ia": [
+      "IA generative",
+      "assistant conversationnel",
+      "recommandation",
+      "resume automatique d'avis",
+      "generation de contenu produit",
+      "traduction automatique"
+    ],
+    "plateforme_stack": [
+      "custom/in-house (Lazada)",
+      "Alibaba Qwen (LLM)",
+      "Marco MT (traduction)"
+    ],
+    "objectif_metrique": [
+      "commandes et taux de conversion",
+      "interactions utilisateurs",
+      "fiches produit optimisees",
+      "vues de page vendeur",
+      "taux de remboursement traite en autonomie"
+    ]
+  },
+  "implementation": "hybride",
+  "stack_technique": [
+    {
+      "nom": "AI Lazzie",
+      "categorie": "outil",
+      "detail": "Assistant conversationnel grand public integre a l'app et au site Lazada. Il repond aux questions produit, compare les caracteristiques, resume les avis clients et suit les listes de souhaits et le comportement de navigation pour recommander. Presente comme un co-pilote destine a augmenter le taux de conversion.",
+      "url": "https://www.lazada.com"
+    },
+    {
+      "nom": "Alibaba Qwen",
+      "categorie": "llm",
+      "detail": "Grand modele de langage du groupe Alibaba qui alimente Lazzie et la generation de contenu. Sert de socle conversationnel et generatif pour les fonctions genAI de la marketplace.",
+      "url": "https://qwen.ai"
+    },
+    {
+      "nom": "Marco MT",
+      "categorie": "outil",
+      "detail": "Outil de traduction fonde sur des LLM, utilise pour que les vendeurs creent des fiches produit dans la langue de leur marche cible en interpretant les termes culturels et sectoriels. Les descriptions et images generees sont adaptees par region, langue et nuance culturelle.",
+      "url": "https://www.lazada.com"
+    },
+    {
+      "nom": "Product Listing Agent",
+      "categorie": "outil",
+      "detail": "Agent cote vendeur qui genere titres et descriptions, traduit les fiches dans les langues d'Asie du Sud-Est et suggere un prix competitif fonde sur la demande en temps reel.",
+      "url": "https://www.lazada.com"
+    }
+  ],
+  "objectif_business": "Augmenter la conversion et le panier sur la marketplace en repondant aux questions produit des acheteurs au moment de la consideration, en personnalisant recommandations et resumes d'avis, et en abaissant le cout de production de fiches produit de qualite pour le million de vendeurs actifs, sur six marches d'Asie du Sud-Est ou l'appetence pour l'IA d'achat est deja forte.",
+  "points_cles": ["Assistant shopping Lazzie plus agents genAI de reco, resume d'avis et fiches produit.", "Fonde sur le LLM Qwen d'Alibaba, sur six marches d'Asie du Sud-Est.", "Pilote : commandes +42%, interactions +50% ; plus de 13 millions de fiches optimisees.", "35% des remboursements traites en autonomie, preuve B confirmee."],
+  "description": "En octobre 2024, Lazada annonce une suite de fonctions genAI pour ses six marches d'Asie du Sud-Est (Indonesie, Malaisie, Philippines, Singapour, Thailande, Vietnam), articulee autour de deux camps. Cote acheteur, l'assistant AI Lazzie repond aux questions produit, compare les caracteristiques, resume les avis clients et personnalise les recommandations a partir du comportement de navigation et de l'historique d'achat ; s'y ajoutent des smart reviews, des offres et vouchers curates par IA, et un mecanisme SmartStack qui combine automatiquement recompenses et bons vendeurs. Cote vendeur, un Product Listing Agent genere titres et descriptions, traduit les fiches dans les langues de la region via l'outil Marco MT et suggere un prix competitif selon la demande en temps reel ; un Refund Agent traite des demandes de remboursement en autonomie. L'ensemble repose sur Qwen, le grand modele de langage du groupe Alibaba. Lazada declare relier environ 160 millions d'utilisateurs actifs a plus d'un million de vendeurs actifs chaque mois. En phase pilote, Lazzie aurait augmente les commandes de 42 pour cent et les interactions de 50 pour cent ; ces chiffres sont un pilote, pas un resultat generalise. Le Product Listing Agent a optimise plus de 13 millions de fiches, avec des vues de page en hausse jusqu'a 180 pour cent en une semaine, et 35 pour cent des demandes de remboursement etaient traitees en autonomie avec 99 pour cent de precision (presse, novembre 2025).",
+  "resultats": [
+    {
+      "metrique": "Lazzie en phase pilote : commandes, interactions +50%",
+      "valeur": "+42% de commandes",
+      "citation_exacte": "increased orders by 42 percent and drove 50-percent more user interactions",
+      "source_ref": "S2"
+    },
+    {
+      "metrique": "Fiches optimisees par le Listing Agent : 11 h economisees, vues +180% en une semaine",
+      "valeur": "13 millions+",
+      "citation_exacte": "optimized more than 13 million listings, saving sellers an average of 11 work hours",
+      "source_ref": "S2"
+    },
+    {
+      "metrique": "Demandes de remboursement traitees en autonomie, 99% de precision",
+      "valeur": "35%",
+      "citation_exacte": "35 percent of refund requests were now handled autonomously with a 99-percent accuracy rate",
+      "source_ref": "S2"
+    },
+    {
+      "metrique": "Utilisateurs actifs relies a plus d'un million de vendeurs par mois",
+      "valeur": "160 millions d'actifs",
+      "citation_exacte": "about 160 million active users to more than one million actively-selling sellers every month",
+      "source_ref": "S1"
+    },
+    {
+      "metrique": "Repondants d'Asie du Sud-Est decidant d'achat via du contenu IA ; reco perso 92%, resumes 90%",
+      "valeur": "88%",
+      "citation_exacte": "88% of respondents in Southeast Asia make purchase decisions using AI-generated content",
+      "source_ref": "S1"
+    }
+  ],
+  "niveau_preuve": {
+    "niveau": "B",
+    "justification": "Communique officiel de Lazada (T1_primaire, PR Newswire, oct. 2024) annoncant la suite genAI sur six marches et chiffrant l'echelle de la marketplace (160 millions d'utilisateurs, un million de vendeurs), concordant avec une presse etablie (The Manila Times, nov. 2025) qui rapporte les chiffres d'impact attribues a Lazada (13 millions de fiches optimisees, remboursements en autonomie, et le pilote a +42 pour cent). Chiffres publics et concordants mais aucun de niveau resultats financiers ; le +42 pour cent est explicitement un pilote."
+  },
+  "dates": {
+    "lancement": "2024-10",
+    "derniere_confirmation_activite": "2025-11",
+    "verifie_le": "2026-07-13",
+    "revoir_apres": "2027-01-13"
+  },
+  "statut_vivant": {
+    "statut": "confirme",
+    "note": "Suite annoncee en octobre 2024 et toujours documentee en novembre 2025 par la presse, avec des volumes en hausse cote vendeur (plus de 13 millions de fiches optimisees) et de nouveaux agents (Refund Agent, Sponsored Max). Aucun signal de retrait."
+  },
+  "sources": [
+    {
+      "ref": "S1",
+      "type": "blog_officiel",
+      "fiabilite": "T1_primaire",
+      "titre": "Lazada Announces Suite of GenAI Features to Transform Shopping and Seller Experiences in Southeast Asia",
+      "url": "https://www.prnewswire.com/apac/news-releases/lazada-announces-suite-of-genai-features-to-transform-shopping-and-seller-experiences-in-southeast-asia-302290849.html",
+      "date_publication": "2024-10-30",
+      "consulte_le": "2026-07-13"
+    },
+    {
+      "ref": "S2",
+      "type": "presse",
+      "fiabilite": "T3_presse_etablie",
+      "titre": "My AI Lazzie encounter: How Lazada's AI makes shopping smarter, faster and more human",
+      "url": "https://www.manilatimes.net/2025/11/04/business/sunday-business-it/my-ai-lazzie-encounter-how-lazadas-ai-makes-shopping-smarter-faster-and-more-human/2214980",
+      "date_publication": "2025-11-04",
+      "consulte_le": "2026-07-13"
+    }
+  ],
+  "fonctionnement_operationnel": {
+    "cadence": "Temps reel pour l'assistant Lazzie et les recommandations cote acheteur ; a la demande pour la generation de fiches vendeur ; suggestions de prix reevaluees sur la demande en temps reel",
+    "opere_par": "Equipes produit et IA de Lazada, sur l'infrastructure et les modeles Qwen du groupe Alibaba",
+    "signal_pilote": "Cote acheteur, l'intention exprimee dans la conversation plus le comportement de navigation et l'historique d'achat ; cote vendeur, le catalogue et les signaux de demande en temps reel. Si l'historique first-party ou le catalogue structure manquent, les recommandations et la generation de fiches perdent leur pertinence.",
+    "etapes": [
+      {
+        "etape": "Question de l'acheteur",
+        "detail": "Le client interroge Lazzie sur un produit, une comparaison ou un avis, dans l'app ou sur le site.",
+        "acteur": "client"
+      },
+      {
+        "etape": "Reponse conversationnelle et recommandation",
+        "detail": "Lazzie interprete la requete via Qwen, va chercher fiches, avis et historique, resume les avis et propose des recommandations personnalisees et des vouchers.",
+        "acteur": "IA"
+      },
+      {
+        "etape": "Generation de la fiche cote vendeur",
+        "detail": "Le vendeur soumet un produit ; le Product Listing Agent genere titre et description, traduit dans la langue du marche via Marco MT et suggere un prix competitif.",
+        "acteur": "IA"
+      },
+      {
+        "etape": "Traitement autonome des remboursements",
+        "detail": "Le Refund Agent instruit une partie des demandes de remboursement et emet des codes de retour, sans intervention humaine sur les cas standards.",
+        "acteur": "IA"
+      },
+      {
+        "etape": "Supervision et pilotage",
+        "detail": "Les equipes suivent conversion, interactions, vues de page vendeur et taux de remboursement autonome pour etendre le perimetre et ajuster les modeles.",
+        "acteur": "equipe data"
+      }
+    ]
+  },
+  "schema_flow": {
+    "statut": "approche_type",
+    "noeuds": [
+      {
+        "id": "acheteur",
+        "role_generique": "site_app",
+        "label": "Acheteur dans l'app et le site Lazada"
+      },
+      {
+        "id": "lazzie",
+        "role_generique": "canal_conversationnel",
+        "label": "Assistant conversationnel AI Lazzie",
+        "outil_documente": "Alibaba Qwen"
+      },
+      {
+        "id": "catalogue",
+        "role_generique": "data_source",
+        "label": "Catalogue produit, avis, historique de navigation et d'achat"
+      },
+      {
+        "id": "listing_agent",
+        "role_generique": "modele_ia",
+        "label": "Product Listing Agent (generation et traduction de fiches)",
+        "outil_documente": "Marco MT"
+      },
+      {
+        "id": "vendeur",
+        "role_generique": "humain",
+        "label": "Vendeur marketplace"
+      }
+    ],
+    "liens": [
+      [
+        "acheteur",
+        "lazzie",
+        "question produit"
+      ],
+      [
+        "lazzie",
+        "catalogue",
+        "recherche produits et avis"
+      ],
+      [
+        "catalogue",
+        "lazzie",
+        "fiches, avis, historique"
+      ],
+      [
+        "lazzie",
+        "acheteur",
+        "reponse, resume d'avis, recommandations"
+      ],
+      [
+        "vendeur",
+        "listing_agent",
+        "produit brut"
+      ],
+      [
+        "listing_agent",
+        "catalogue",
+        "fiche optimisee et traduite"
+      ],
+      [
+        "catalogue",
+        "acheteur",
+        "fiches enrichies"
+      ]
+    ]
+  },
+  "replication": {
+    "statut_epistemique": "infere",
+    "prerequis_data": [
+      "Catalogue produit structure et multilingue",
+      "Historique de navigation et d'achat first-party par utilisateur",
+      "Corpus d'avis clients exploitable pour le resume automatique",
+      "Signaux de demande en temps reel pour la suggestion de prix"
+    ],
+    "prerequis_orga": [
+      "Marketplace avec vendeurs tiers a outiller",
+      "Equipe produit et IA capable d'operer un assistant conversationnel en continu",
+      "Acces a un LLM multilingue couvrant les langues des marches vises",
+      "Cadre de transparence et de conformite sur l'IA conversationnelle et le contenu genere"
+    ],
+    "stack_possible": [
+      "LLM multilingue (type Qwen) comme socle conversationnel et generatif",
+      "Couche assistant integree a l'app et au site, branchee sur le catalogue et les avis",
+      "Agent de generation et traduction de fiches produit",
+      "Moteur de recommandation sur donnees first-party",
+      "Module de resume automatique d'avis",
+      "Agent de traitement des remboursements sur les cas standards"
+    ],
+    "premiere_etape": "Identifier le point de friction de conversion le plus couteux (les questions produit qui restent sans reponse au moment de la consideration) et y brancher un assistant conversationnel adosse au catalogue et aux avis, avant d'etendre aux outils vendeur.",
+    "playbook": [
+      {
+        "action": "Cartographier les questions produit recurrentes des acheteurs a partir des logs de recherche, de support et de conversation.",
+        "livrable": "Referentiel des intentions d'achat prioritaires par volume."
+      },
+      {
+        "action": "Brancher un assistant conversationnel sur le catalogue, les avis et l'historique first-party pour repondre, comparer et recommander.",
+        "livrable": "Assistant en beta sur un segment d'acheteurs, taux de reponse et conversion suivis."
+      },
+      {
+        "action": "Ajouter un module de resume automatique d'avis et des recommandations personnalisees fondees sur la navigation et l'historique.",
+        "livrable": "Resumes d'avis et recommandations affiches sur les fiches et dans l'assistant."
+      },
+      {
+        "action": "Outiller les vendeurs avec un agent de generation et de traduction de fiches et une suggestion de prix fondee sur la demande.",
+        "livrable": "Generation de fiches multilingues en libre-service pour les vendeurs."
+      },
+      {
+        "action": "Etendre aux operations a fort volume (remboursements standards) avec un agent autonome supervise, puis mesurer conversion, interactions et vues de page vendeur.",
+        "livrable": "Suite d'agents en production avec tableau de bord d'impact acheteur et vendeur."
+      }
+    ],
+    "equipe": "1 equipe produit e-commerce (PM, design) + ingenieurs IA (assistant conversationnel, recommandation, generation de fiches, integrations catalogue) + data pour les signaux de demande + conformite pour la transparence IA et le contenu genere."
+  },
+  "seo": {
+    "slug": "lazada-lazzie-genai-shopping-agents-2024",
+    "title": "Lazada : assistant Lazzie et agents genAI de marketplace - +42% de commandes en pilote (2024)",
+    "meta_description": "Lazada deploie l'assistant AI Lazzie (Qwen) plus des agents genAI de reco, resume d'avis et generation de fiches sur 6 marches d'Asie du Sud-Est ; +42% de commandes en pilote, 13 millions de fiches optimisees.",
+    "resume_citable": "Lazada a deploye en 2024 sur six marches d'Asie du Sud-Est l'assistant conversationnel AI Lazzie (fonde sur le modele Qwen d'Alibaba) plus des agents genAI de recommandation, de resume d'avis et de generation de fiches produit ; en phase pilote l'assistant a augmente les commandes de 42 pour cent, et le Product Listing Agent a optimise plus de 13 millions de fiches vendeur.",
+    "faq": [
+      {
+        "q": "Quel modele alimente l'assistant AI Lazzie de Lazada ?",
+        "a": "Lazzie repose sur Qwen, le grand modele de langage du groupe Alibaba, maison mere de Lazada."
+      },
+      {
+        "q": "Le chiffre de +42 pour cent de commandes est-il un resultat general ?",
+        "a": "Non. Selon The Manila Times (nov. 2025), Lazzie a augmente les commandes de 42 pour cent et les interactions de 50 pour cent en phase pilote uniquement, pas en resultat generalise."
+      },
+      {
+        "q": "Sur quels marches ces fonctions sont-elles deployees ?",
+        "a": "Les six marches de Lazada en Asie du Sud-Est : Indonesie, Malaisie, Philippines, Singapour, Thailande et Vietnam."
+      }
+    ]
+  },
+  "logo_domain": "lazada.com"
+}

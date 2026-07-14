@@ -1,0 +1,278 @@
+{
+  "id": "wimbledon-ibm-watsonx-catch-me-up-2024",
+  "type_fiche": "succes",
+  "marque": "Wimbledon (The Championships)",
+  "groupe": "All England Lawn Tennis Club (AELTC)",
+  "industrie": "sport_fitness",
+  "marches_deploiement": [
+    "Mondial (application Wimbledon et wimbledon.com)"
+  ],
+  "transposable_ue": {
+    "flag": "oui",
+    "note": "Wimbledon est un evenement britannique, l'audience est mondiale. Le pattern (contenu editorial genere par IA a partir de donnees proprietaires, dans la voix de la marque) est directement transposable en UE : IBM watsonx est disponible en regions europeennes. Points d'attention sous AI Act et RGPD : gouvernance des donnees, tracabilite du modele, et information de l'audience sur le contenu genere par IA."
+  },
+  "metier": "marketing / contenu et engagement fan",
+  "axes": {
+    "levier": "retention",
+    "touchpoints": [
+      "application Wimbledon",
+      "site wimbledon.com",
+      "resumes joueurs (Catch Me Up)",
+      "commentaire audio des highlights"
+    ],
+    "etape_parcours": "fidélité",
+    "famille": "generation",
+    "pattern": "contenu editorial genere par genAI dans la voix de la marque pour l'engagement fan",
+    "type_ia": [
+      "grands modeles de langage",
+      "generation de texte tunee sur donnees proprietaires",
+      "synthese de commentaire audio"
+    ],
+    "plateforme_stack": [
+      "IBM watsonx.ai",
+      "IBM watsonx.data",
+      "cloud hybride IBM"
+    ],
+    "objectif_metrique": [
+      "engagement toutes plateformes",
+      "inscriptions myWIMBLEDON",
+      "impressions et portee digitale"
+    ]
+  },
+  "implementation": "plateforme",
+  "objectif_business": "Retenir et approfondir l'engagement d'une audience mondiale pendant et autour du tournoi en livrant du contenu personnalise et des recits generes automatiquement, sans grossir l'equipe editoriale a chaque match.",
+  "points_cles": ["Resumes joueurs Catch Me Up et commentaire audio des highlights generes par IA.", "IBM watsonx.ai et watsonx.data, modele tune sur le ton editorial du tournoi.", "Plus 16 pour cent d'engagement toutes plateformes et plus 39 pour cent d'inscrits myWIMBLEDON en 2025.", "Preuve B, statut vivant confirme."],
+  "description": "Sur l'application Wimbledon et sur wimbledon.com, la fonction Catch Me Up genere des resumes pour chaque joueur de simple : ce qui s'est passe a son dernier match et les enjeux du prochain. Le fan personnalise sa liste en ajoutant ses joueurs favoris. Les fans peuvent aussi ajouter un commentaire audio genere par IA sur les reels de highlights, avec une narration en debut et fin de reel et sur les points cles. Le contenu est produit par IBM watsonx.ai, un modele tune sur des donnees Wimbledon de confiance et entraine a ecrire dans le style editorial et le ton du tournoi. Les donnees structurees et non structurees sont gerees par watsonx.data sur une architecture lakehouse ouverte, accessible aux applications a travers le cloud hybride du club. Ces capacites s'ajoutent a la fonction Likelihood to Win, qui calcule en continu la probabilite de victoire de chaque joueur.",
+  "resultats": [
+    {
+      "metrique": "Hausse de l'engagement toutes plateformes (2025, en glissement annuel)",
+      "valeur": "16 pour cent",
+      "citation_exacte": "16% year-on-year increase in engagement across all platforms",
+      "source_ref": "S2"
+    },
+    {
+      "metrique": "Croissance des inscrits myWIMBLEDON sur un an",
+      "valeur": "39 pour cent",
+      "citation_exacte": "39% growth in those registered to myWIMBLEDON",
+      "source_ref": "S2"
+    },
+    {
+      "metrique": "Impressions digitales du tournoi, environ 730 millions de personnes atteintes",
+      "valeur": "~18 milliards",
+      "citation_exacte": "roughly 18 billion impressions",
+      "source_ref": "S3"
+    }
+  ],
+  "niveau_preuve": {
+    "niveau": "B",
+    "justification": "Etude de cas plateforme (IBM watsonx) chiffree, corroboree par un communiqué IBM/AELTC et par la presse economique (Fortune) qui citent nommement Wimbledon et les hausses d'engagement rapportees par l'AELTC. Chiffres d'engagement rapportes par la marque via son partenaire, donc B plutot que A."
+  },
+  "dates": {
+    "lancement": "2024-07 (Catch Me Up et commentaire audio genere par IA pour The Championships 2024)",
+    "derniere_confirmation_activite": "2026-06 (annonce des fonctions IA reconduites et enrichies pour The Championships 2026)",
+    "verifie_le": "2026-07-11",
+    "revoir_apres": "2027-01-11"
+  },
+  "statut_vivant": {
+    "statut": "confirme",
+    "note": "Le partenariat IBM-Wimbledon est reconduit et enrichi pour l'edition 2026 (nouvelles fonctions, plateformes digitales modernisees). Le programme genAI est en production sur plusieurs editions consecutives."
+  },
+  "sources": [
+    {
+      "ref": "S1",
+      "type": "customer_story_plateforme",
+      "fiabilite": "T2_officiel_interesse",
+      "titre": "How IBM helps Wimbledon use generative AI to drive personalised fan engagement",
+      "url": "https://www.ibm.com/case-studies/blog/how-ibm-helps-wimbledon-use-generative-ai-to-drive-personalised-fan-engagement",
+      "date_publication": "2024-07",
+      "consulte_le": "2026-07-11"
+    },
+    {
+      "ref": "S2",
+      "type": "blog_officiel",
+      "fiabilite": "T2_officiel_interesse",
+      "titre": "Wimbledon and IBM Introduce New AI-Powered Fan Experiences and Modernized Digital Platforms for The Championships 2026",
+      "url": "https://newsroom.ibm.com/2026-06-22-wimbledon-and-ibm-introduce-new-ai-powered-fan-experiences-and-modernized-digital-platforms-for-the-championships-2026",
+      "date_publication": "2026-06-22",
+      "consulte_le": "2026-07-11"
+    },
+    {
+      "ref": "S3",
+      "type": "presse",
+      "fiabilite": "T3_presse_etablie",
+      "titre": "750 million fans and 2.7 million data points: How IBM's AI powers Wimbledon from hidden 'Court 19'",
+      "url": "https://fortune.com/2026/07/09/wimbledon-ibm-ai-digital-transformation-sports/",
+      "date_publication": "2026-07-09",
+      "consulte_le": "2026-07-11"
+    }
+  ],
+  "fonctionnement_operationnel": {
+    "cadence": "Temps quasi reel pendant le tournoi : les resumes joueurs et le commentaire des highlights se regenerent au fil des matchs et des resultats.",
+    "opere_par": "Equipe digitale et editoriale de l'AELTC, avec IBM Consulting pour l'operation du modele et la supervision editoriale.",
+    "signal_pilote": "Les donnees de match structurees et l'historique Wimbledon. Si l'alimentation en donnees de confiance ou le tuning sur le ton editorial manquent, le contenu genere sort du style de la marque ou produit des erreurs factuelles.",
+    "etapes": [
+      {
+        "etape": "Ingestion des donnees de match",
+        "detail": "watsonx.data centralise donnees structurees et non structurees du tournoi sur une architecture lakehouse ouverte.",
+        "acteur": "equipe data / IBM"
+      },
+      {
+        "etape": "Generation du contenu",
+        "detail": "watsonx.ai, tune sur les donnees et le ton Wimbledon, redige les resumes Catch Me Up et la narration des highlights.",
+        "acteur": "IA (watsonx.ai)"
+      },
+      {
+        "etape": "Supervision editoriale",
+        "detail": "L'equipe editoriale valide le respect du style et la justesse factuelle avant diffusion.",
+        "acteur": "equipe editoriale AELTC"
+      },
+      {
+        "etape": "Diffusion personnalisee",
+        "detail": "Le fan recoit ses resumes selon les joueurs suivis, sur l'app et le site.",
+        "acteur": "site_app"
+      }
+    ]
+  },
+  "schema_flow": {
+    "statut": "documente",
+    "noeuds": [
+      {
+        "id": "matchdata",
+        "role_generique": "data_source",
+        "label": "Donnees de match et historique Wimbledon",
+        "outil_documente": "IBM watsonx.data (lakehouse ouvert)"
+      },
+      {
+        "id": "genai",
+        "role_generique": "modele_ia",
+        "label": "Generation de resumes et de commentaire audio",
+        "outil_documente": "IBM watsonx.ai (modele tune sur le ton Wimbledon)"
+      },
+      {
+        "id": "editorial",
+        "role_generique": "humain",
+        "label": "Supervision editoriale AELTC"
+      },
+      {
+        "id": "app",
+        "role_generique": "site_app",
+        "label": "Application Wimbledon et wimbledon.com"
+      },
+      {
+        "id": "fan",
+        "role_generique": "humain",
+        "label": "Fan (liste de joueurs personnalisee)"
+      }
+    ],
+    "liens": [
+      [
+        "matchdata",
+        "genai"
+      ],
+      [
+        "genai",
+        "editorial",
+        "controle style et faits"
+      ],
+      [
+        "editorial",
+        "app"
+      ],
+      [
+        "app",
+        "fan",
+        "Catch Me Up personnalise"
+      ],
+      [
+        "fan",
+        "app",
+        "choix des joueurs suivis"
+      ]
+    ]
+  },
+  "replication": {
+    "statut_epistemique": "infere",
+    "prerequis_data": [
+      "flux de donnees d'evenement structurees et fiables",
+      "corpus editorial de reference pour le ton de la marque",
+      "identifiant utilisateur pour la personnalisation"
+    ],
+    "prerequis_orga": [
+      "equipe editoriale pour superviser le contenu genere",
+      "gouvernance du modele et information de l'audience sur le contenu IA",
+      "capacite d'exploitation en pic pendant l'evenement"
+    ],
+    "stack_possible": [
+      "plateforme genAI (watsonx, Azure OpenAI, Vertex AI ou equivalent)",
+      "lakehouse / data store",
+      "app ou site avec couche de personnalisation"
+    ],
+    "premiere_etape": "Constituer un corpus editorial de reference et brancher un flux de donnees d'evenement, puis generer des resumes en relecture humaine avant toute diffusion automatique.",
+    "playbook": [
+      {
+        "action": "Constituer le corpus editorial de reference (ton de la marque) et brancher le flux de donnees d'evenement structure.",
+        "livrable": "Corpus editorial + flux de donnees valides."
+      },
+      {
+        "action": "Tuner ou prompter le modele sur le ton maison et generer des resumes en interne.",
+        "livrable": "Generateur evalue par l'equipe editoriale sur des cas reels."
+      },
+      {
+        "action": "Mettre en place la relecture humaine avant toute diffusion, avec un circuit rapide pendant l'evenement.",
+        "livrable": "Workflow de validation editoriale tenable en pic."
+      },
+      {
+        "action": "Ouvrir la beta sur une partie de l'audience (app).",
+        "livrable": "Resumes personnalises live avec mesure d'engagement."
+      },
+      {
+        "action": "Tirer le bilan post-evenement et etendre (audio, personnalisation plus fine).",
+        "livrable": "Lecture engagement et inscriptions + roadmap de la prochaine edition."
+      }
+    ],
+    "equipe": "1 PM digital + 1-2 ingenieurs genAI + equipe editoriale pour la supervision + 1 data engineer sur le flux d'evenement"
+  },
+  "seo": {
+    "slug": "wimbledon-ibm-watsonx-catch-me-up-2024",
+    "title": "Wimbledon : contenu editorial genAI (IBM watsonx) - engagement +16% en 2025",
+    "meta_description": "Wimbledon genere des resumes joueurs et du commentaire de highlights via IBM watsonx.ai ; l'AELTC rapporte +16% d'engagement et +39% d'inscrits myWIMBLEDON.",
+    "resume_citable": "Wimbledon utilise IBM watsonx.ai pour generer des resumes de joueurs (Catch Me Up) et du commentaire audio des highlights dans le ton editorial du tournoi : l'AELTC rapporte en 2025 une hausse de 16 pour cent de l'engagement toutes plateformes et une croissance de 39 pour cent des inscrits myWIMBLEDON.",
+    "faq": [
+      {
+        "q": "Que genere l'IA de Wimbledon pour les fans ?",
+        "a": "Des resumes personnalises pour chaque joueur de simple (Catch Me Up) et un commentaire audio sur les reels de highlights, produits par watsonx.ai dans le ton editorial du tournoi."
+      },
+      {
+        "q": "Quel impact chiffre est rapporte ?",
+        "a": "L'AELTC rapporte en 2025 une hausse de 16 pour cent de l'engagement toutes plateformes et une croissance de 39 pour cent des inscrits myWIMBLEDON sur un an."
+      }
+    ]
+  },
+  "logo_domain": "wimbledon.com",
+  "stack_technique": [
+    {
+      "nom": "IBM watsonx.ai",
+      "categorie": "plateforme",
+      "detail": "Genere les resumes Catch Me Up et le commentaire audio des highlights, avec un modele tune sur les donnees et le ton editorial de Wimbledon.",
+      "url": "https://www.ibm.com/products/watsonx-ai"
+    },
+    {
+      "nom": "IBM watsonx.data",
+      "categorie": "infra",
+      "detail": "Lakehouse ouvert qui gere les donnees structurees et non structurees du tournoi, accessibles aux applications via le cloud hybride du club.",
+      "url": "https://www.ibm.com/products/watsonx-data"
+    },
+    {
+      "nom": "IBM Consulting",
+      "categorie": "integrateur",
+      "detail": "Opere le modele et accompagne la supervision editoriale aux cotes de l'equipe digitale de l'AELTC.",
+      "url": "https://www.ibm.com/consulting"
+    },
+    {
+      "nom": "Application Wimbledon et wimbledon.com",
+      "categorie": "outil",
+      "detail": "Surfaces de diffusion des resumes personnalises et du commentaire audio aux fans.",
+      "url": "https://www.wimbledon.com"
+    }
+  ]
+}

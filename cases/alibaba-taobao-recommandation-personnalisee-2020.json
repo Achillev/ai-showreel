@@ -1,0 +1,260 @@
+{
+  "type_fiche": "succes",
+  "id": "alibaba-taobao-recommandation-personnalisee-2020",
+  "marque": "Taobao",
+  "groupe": "Alibaba Group",
+  "industrie": "retail_ecom",
+  "marches_deploiement": [
+    "Chine"
+  ],
+  "transposable_ue": {
+    "flag": "oui_avec_adaptations",
+    "note": "Le pattern (recommandation temps reel par deep learning sur chaque surface de l'app) se transpose, mais l'echelle et la densite de signaux du marche chinois lui sont propres. En UE, le profilage temps reel exige base legale RGPD et information ; l'architecture data (localisation, transferts) doit etre repensee."
+  },
+  "metier": "E-commerce / recommandation produit a l'echelle",
+  "axes": {
+    "levier": "activation_conversion",
+    "touchpoints": [
+      "Page d'accueil Taobao Mobile",
+      "Fil \" You May Like \"",
+      "Pages de recherche",
+      "Venues d'operations promotionnelles"
+    ],
+    "etape_parcours": "decouverte -> consideration -> achat",
+    "famille": "personnalisation",
+    "pattern": "Recommandation produit temps reel par deep learning, servie sur des centaines de scenarios de l'application",
+    "type_ia": [
+      "reseaux de neurones profonds (DNN)",
+      "recommandation temps reel",
+      "recall et ranking"
+    ],
+    "plateforme_stack": [
+      "Alibaba Cloud AI OS",
+      "Alibaba Cloud AIRec",
+      "custom/in-house"
+    ],
+    "objectif_metrique": [
+      "taux de conversion",
+      "CTR du fil de recommandation",
+      "retention"
+    ]
+  },
+  "implementation": "custom",
+  "objectif_business": "Faire de la recommandation le second mode de navigation de l'app apres la recherche, pour qu'un catalogue immense reste parcourable et convertisse.",
+  "points_cles": ["Recommandation produit temps reel par deep learning, second mode de navigation apres la recherche.", "Chaine recall puis ranking sur Alibaba Cloud AI OS, productisee en AIRec.", "Plus de 80% des utilisateurs Taobao Mobile couverts, 1000+ scenarios; +9% de conversion chez un client AIRec.", "Preuve B, statut vivant confirme."],
+  "description": "Sur Taobao, l'application e-commerce grand public d'Alibaba, la recommandation personnalisee est devenue le deuxieme mode de navigation apres la recherche. Le systeme capture le comportement de l'utilisateur (vues, clics, achats) et sert en quelques millisecondes des produits adaptes, sur la page d'accueil, dans le fil \" You May Like \", sur les pages de recherche et pendant les grandes operations comme le 11.11. L'architecture s'appuie sur des reseaux de neurones profonds et une chaine recall plus ranking, avec des cycles de mise a jour de modele ramenes d'heures a minutes. D'apres Alibaba Cloud, le systeme couvre plus de 80 % des utilisateurs de Taobao Mobile et alimente plus de 1000 scenarios personnalises dans le groupe. La meme technologie, productisee sous le nom Alibaba Cloud AIRec, est vendue a des marchands tiers : sur un cas de detaillant de mode sportive, elle a fait progresser le taux de conversion de 9 % et reduit de 80 % le taux de resultats vides.",
+  "fonctionnement_operationnel": {
+    "cadence": "Temps reel a chaque affichage, avec reentrainement et mise a jour des modeles ramenes d'heures a minutes.",
+    "opere_par": "Equipes IA et infrastructure d'Alibaba (plateforme AI OS), equipes produit par scenario.",
+    "signal_pilote": "Le comportement en session (vues, clics, achats) capte en continu. Sans ce flux temps reel, les recommandations retombent sur des listes generiques et le fil perd sa pertinence.",
+    "etapes": [
+      {
+        "etape": "Capter le comportement",
+        "detail": "Chaque interaction dans l'app remonte et met a jour le profil de l'utilisateur en direct.",
+        "acteur": "IA / plateforme"
+      },
+      {
+        "etape": "Rappeler les candidats",
+        "detail": "Une premiere couche (recall) selectionne un sous-ensemble d'articles pertinents dans un catalogue immense.",
+        "acteur": "IA / plateforme"
+      },
+      {
+        "etape": "Classer et servir",
+        "detail": "Les reseaux de neurones classent les candidats et livrent la liste en quelques millisecondes sur la surface concernee.",
+        "acteur": "IA / plateforme"
+      },
+      {
+        "etape": "Rafraichir les modeles",
+        "detail": "Les cycles de mise a jour, ramenes d'heures a minutes, integrent vite les nouveaux signaux, utile pendant les pics comme le 11.11.",
+        "acteur": "Equipe data / infra"
+      }
+    ]
+  },
+  "resultats": [
+    {
+      "metrique": "Couverture des utilisateurs Taobao Mobile",
+      "valeur": "plus de 80 %",
+      "citation_exacte": "covers more than 80% of Taobao Mobile users",
+      "source_ref": "S1"
+    },
+    {
+      "metrique": "Scenarios personnalises servis dans le groupe",
+      "valeur": "plus de 1000",
+      "citation_exacte": "1000+ personalized scenarios in the Alibaba Group",
+      "source_ref": "S1"
+    },
+    {
+      "metrique": "Taux de conversion (client AIRec, detaillant mode sportive)",
+      "valeur": "+9 %",
+      "citation_exacte": "Transaction conversion rate improved by 9%",
+      "source_ref": "S1"
+    }
+  ],
+  "niveau_preuve": {
+    "niveau": "B",
+    "justification": "Chiffres publies par Alibaba Cloud (blogs techniques officiels), donc source interessee et non auditee par un tiers. Deux articles concordants decrivent l'echelle sur Taobao ; les chiffres de conversion proviennent d'un cas client de la solution productisee AIRec."
+  },
+  "dates": {
+    "lancement": "Recommandation deep learning industrialisee sur Taobao vers 2016-2018",
+    "derniere_confirmation_activite": "2021 - Alibaba Cloud decrit le systeme comme servant des centaines de millions d'utilisateurs par jour, recommandation seconde seulement apres la recherche",
+    "verifie_le": "2026-07-11",
+    "revoir_apres": "2027-01-11"
+  },
+  "statut_vivant": {
+    "statut": "confirme",
+    "note": "La recommandation est un pilier de l'app Taobao et de l'offre cloud d'Alibaba (AIRec). Documentation officielle recente (2020-2021) confirmant le deploiement a grande echelle."
+  },
+  "sources": [
+    {
+      "ref": "S1",
+      "type": "blog_officiel",
+      "titre": "The Secret Behind Taobao's AI-Powered Personalized Recommendations - Alibaba Cloud Community",
+      "url": "https://www.alibabacloud.com/blog/the-secret-behind-taobaos-ai-powered-personalized-recommendations_596205",
+      "date_publication": "2020-05-11",
+      "consulte_le": "2026-07-11",
+      "fiabilite": "T2_officiel_interesse"
+    },
+    {
+      "ref": "S2",
+      "type": "blog_officiel",
+      "titre": "How Taobao Applies AI to Personalized Recommendations - Alibaba Cloud Community",
+      "url": "https://www.alibabacloud.com/blog/how-taobao-applies-ai-to-personalized-recommendations_597556",
+      "date_publication": "2021-04-01",
+      "consulte_le": "2026-07-11",
+      "fiabilite": "T2_officiel_interesse"
+    }
+  ],
+  "schema_flow": {
+    "statut": "documente",
+    "noeuds": [
+      {
+        "id": "beh",
+        "role_generique": "data_source",
+        "label": "Comportement en session (vues, clics, achats)"
+      },
+      {
+        "id": "recall",
+        "role_generique": "modele_ia",
+        "label": "Recall : selection des candidats",
+        "outil_documente": "Alibaba Cloud AI OS"
+      },
+      {
+        "id": "rank",
+        "role_generique": "modele_ia",
+        "label": "Ranking par reseaux de neurones profonds"
+      },
+      {
+        "id": "surf",
+        "role_generique": "site_app",
+        "label": "Surfaces Taobao : accueil, fil You May Like, recherche"
+      },
+      {
+        "id": "act",
+        "role_generique": "site_app",
+        "label": "Clic / achat"
+      }
+    ],
+    "liens": [
+      [
+        "beh",
+        "recall"
+      ],
+      [
+        "recall",
+        "rank"
+      ],
+      [
+        "rank",
+        "surf"
+      ],
+      [
+        "surf",
+        "act"
+      ],
+      [
+        "act",
+        "beh",
+        "boucle temps reel"
+      ]
+    ]
+  },
+  "replication": {
+    "statut_epistemique": "infere",
+    "prerequis_data": [
+      "Flux comportemental temps reel a l'echelle de l'audience",
+      "Catalogue produit large avec attributs exploitables",
+      "Infrastructure de service a faible latence"
+    ],
+    "prerequis_orga": [
+      "Equipe ML et infra capable de tenir un service temps reel",
+      "Surfaces applicatives instrumentees par scenario"
+    ],
+    "stack_possible": [
+      "Alibaba Cloud AIRec ou un moteur de reco manage equivalent (AWS Personalize, Google Recommendations AI)",
+      "Feature store plus modele de ranking pour une version custom"
+    ],
+    "premiere_etape": "Ajouter un fil \" pour vous \" sur la home de l'app, alimente par le comportement de session, et mesurer sa part dans la navigation et la conversion face a la recherche seule.",
+    "playbook": [
+      {
+        "action": "Instrumenter le flux comportemental (vues, clics, achats) et structurer le catalogue avec des identifiants stables.",
+        "livrable": "Pipeline d'evenements temps reel fiable branche sur le catalogue"
+      },
+      {
+        "action": "Lancer une premiere recommandation managee (AIRec, AWS Personalize ou equivalent) sur une surface unique, la home.",
+        "livrable": "Fil de type pour vous en beta sur une part du trafic"
+      },
+      {
+        "action": "Mener un A/B test face a la navigation sans reco et lire CTR, conversion et part de navigation.",
+        "livrable": "Resultat de test controle et decision d'extension"
+      },
+      {
+        "action": "Etendre aux autres surfaces (recherche, fiches) et raccourcir le cycle de mise a jour des modeles.",
+        "livrable": "Reco servie sur plusieurs scenarios avec monitoring de fraicheur"
+      }
+    ],
+    "equipe": "1 ML engineer + 1 data engineer + 1 PM pour une version managee ; une equipe ML et infra complete pour du custom a l'echelle"
+  },
+  "stack_technique": [
+    {
+      "nom": "Alibaba Cloud AI OS",
+      "categorie": "plateforme",
+      "detail": "Plateforme interne d'Alibaba qui unifie recall, ranking et service temps reel des recommandations sur les surfaces Taobao.",
+      "url": "https://www.alibabacloud.com"
+    },
+    {
+      "nom": "Reseaux de neurones profonds recall + ranking",
+      "categorie": "llm",
+      "detail": "Modeles maison de selection de candidats puis de classement, avec des cycles de mise a jour ramenes d'heures a minutes.",
+      "url": "https://www.alibabacloud.com"
+    },
+    {
+      "nom": "Alibaba Cloud AIRec",
+      "categorie": "plateforme",
+      "detail": "Version productisee du moteur de recommandation de Taobao, vendue aux marchands tiers.",
+      "url": "https://www.alibabacloud.com"
+    },
+    {
+      "nom": "Flux comportemental temps reel",
+      "categorie": "infra",
+      "detail": "Captation en continu des vues, clics et achats qui met a jour le profil utilisateur en direct.",
+      "url": "https://www.taobao.com"
+    }
+  ],
+  "seo": {
+    "slug": "alibaba-taobao-recommandation-personnalisee-2020",
+    "title": "Taobao (Alibaba) : recommandation produit temps reel par deep learning - plus de 80 % des utilisateurs mobile couverts",
+    "meta_description": "La recommandation personnalisee de Taobao est le second mode de navigation apres la recherche : deep learning temps reel sur des centaines de scenarios, couvrant plus de 80 % des utilisateurs de Taobao Mobile.",
+    "resume_citable": "Sur Taobao, la recommandation produit temps reel par reseaux de neurones couvre plus de 80 % des utilisateurs mobile et 1000+ scenarios ; productisee en Alibaba Cloud AIRec, elle a fait gagner +9 % de conversion a un detaillant de mode sportive.",
+    "faq": [
+      {
+        "q": "Quelle place tient la recommandation sur Taobao ?",
+        "a": "C'est le deuxieme mode de navigation apres la recherche, servi en temps reel sur la home, le fil You May Like et les pages de recherche."
+      },
+      {
+        "q": "Les chiffres sont-ils independants ?",
+        "a": "Non : ils proviennent des blogs techniques officiels d'Alibaba Cloud, source interessee. Le taux de conversion +9 % concerne un client de la solution AIRec, pas Taobao lui-meme."
+      }
+    ]
+  },
+  "logo_domain": "taobao.com"
+}

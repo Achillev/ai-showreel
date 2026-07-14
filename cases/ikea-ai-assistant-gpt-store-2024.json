@@ -1,0 +1,278 @@
+{
+  "id": "ikea-ai-assistant-gpt-store-2024",
+  "type_fiche": "succes",
+  "marque": "IKEA",
+  "groupe": "Ingka Group",
+  "industrie": "retail_ecom",
+  "marches_deploiement": [
+    "US"
+  ],
+  "transposable_ue": {
+    "flag": "oui_avec_adaptations",
+    "note": "Publier un assistant de marque sur un store de GPT tiers est transposable partout ou le service est disponible. En UE, l'AI Act impose la transparence sur l'usage d'une IA, et confier l'assistant a une plateforme tierce souleve la question du transfert et de l'usage des donnees de conversation, a encadrer sous le RGPD."
+  },
+  "metier": "e-commerce, decouverte et inspiration produit",
+  "marque_linkedin": "https://www.linkedin.com/company/ikea/",
+  "intervenants": [
+    {
+      "nom": "Parag Parekh",
+      "role": "Global Chief Digital Officer, IKEA Retail (Ingka Group)",
+      "source_ref": "S1"
+    },
+    {
+      "nom": "Francesco Marzoni",
+      "role": "Chief Data and Analytics Officer, Ingka Group",
+      "source_ref": "S1"
+    }
+  ],
+  "agences": [
+    {
+      "nom": "OpenAI",
+      "role": "Plateforme hote (GPT Store) et modele sous-jacent de l'assistant",
+      "source_ref": "S1"
+    }
+  ],
+  "axes": {
+    "levier": "acquisition",
+    "touchpoints": [
+      "OpenAI GPT Store",
+      "renvoi vers ikea.com"
+    ],
+    "etape_parcours": "découverte",
+    "famille": "conversation",
+    "pattern": "assistant de marque publie sur un store de GPT tiers",
+    "type_ia": [
+      "LLM generatif",
+      "generation d'images",
+      "reconnaissance d'image (identification produit)"
+    ],
+    "plateforme_stack": [
+      "OpenAI GPT Store"
+    ],
+    "objectif_metrique": [
+      "utilisateurs mensuels",
+      "renvoi vers le site",
+      "transactions issues du renvoi"
+    ]
+  },
+  "implementation": "plateforme",
+  "objectif_business": "Tester le GPT Store comme canal d'acquisition et d'inspiration, en donnant des recommandations d'ameublement personnalisees, tout en apprenant ce qu'il faut pour construire un GPT de marche utile.",
+  "description": "IKEA a publie son IKEA AI Assistant sur le OpenAI GPT Store le 5 fevrier 2024, pour les utilisateurs GPT Plus aux Etats-Unis. L'assistant donne des recommandations de meubles et de decoration selon les dimensions de la piece, le style, le budget et des criteres de durabilite, peut generer des images de rendu et identifier un meuble a partir d'une photo. Ingka presente l'initiative comme une demarche pragmatique, orientee apprentissage. Trois mois apres le lancement, le directeur data et analytics d'Ingka indiquait a Digiday environ 1 500 utilisateurs par mois. Vingt pour cent de ces interactions menaient a une visite sur ikea.com, surtout vers le mobilier d'exterieur et les canapes, et 5% de ces visites debouchaient sur une transaction. L'exercice servait surtout a tester le comportement de recherche et a voir si le GPT Store pouvait etre un canal d'acquisition, avant d'integrer la techno directement aux surfaces d'IKEA.",
+  "resultats": [
+    {
+      "metrique": "Utilisateurs mensuels, trois mois apres le lancement",
+      "valeur": "environ 1 500/mois",
+      "citation_exacte": "clocked 1,500 users a month",
+      "source_ref": "S2"
+    },
+    {
+      "metrique": "Interactions menant a une visite sur ikea.com",
+      "valeur": "20%",
+      "citation_exacte": "Twenty percent of those interactions have resulted in visits",
+      "source_ref": "S2"
+    },
+    {
+      "metrique": "Visites debouchant sur une transaction",
+      "valeur": "5%",
+      "citation_exacte": "Five percent of those visits resulted in a transaction",
+      "source_ref": "S2"
+    }
+  ],
+  "niveau_preuve": {
+    "niveau": "C",
+    "justification": "Communique officiel d'Ingka sur le lancement et chiffres d'usage donnes par le directeur data et analytics d'Ingka a Digiday, presse etablie citant nommement la marque. Les volumes sont modestes et l'usage revendique est celui d'un test, ce qui reste source mais ne va pas au-dela de C."
+  },
+  "dates": {
+    "lancement": "2024-02-05",
+    "derniere_confirmation_activite": "2024-05",
+    "verifie_le": "2026-07-11",
+    "revoir_apres": "2027-01-11"
+  },
+  "statut_vivant": {
+    "statut": "signaux_mitiges",
+    "note": "Le dernier signal public solide date de mai 2024 (Digiday), avec des volumes modestes (environ 1 500 utilisateurs par mois) et un usage decrit comme un apprentissage. Ingka evoquait alors une integration future de la techno aux surfaces propres d'IKEA, ce qui laisse incertain le maintien de l'assistant sur le GPT Store en 2026."
+  },
+  "sources": [
+    {
+      "ref": "S1",
+      "type": "blog_officiel",
+      "fiabilite": "T1_primaire",
+      "titre": "IKEA launches new AI-powered assistant in OpenAI GPT Store",
+      "url": "https://www.ingka.com/newsroom/ikea-launches-new-ai-powered-assistant-in-openai-gpt-store/",
+      "date_publication": "2024-02-05",
+      "consulte_le": "2026-07-11"
+    },
+    {
+      "ref": "S2",
+      "type": "presse",
+      "fiabilite": "T3_presse_etablie",
+      "titre": "Ikea launched an AI assistant earlier this year. Has it actually driven sales?",
+      "url": "https://digiday.com/marketing/ikea-launched-an-ai-assistant-earlier-this-year-has-it-actually-driven-sales/",
+      "date_publication": "2024-05-21",
+      "consulte_le": "2026-07-11"
+    },
+    {
+      "ref": "S3",
+      "type": "presse",
+      "fiabilite": "T3_presse_etablie",
+      "titre": "Ikea launches generative AI assistant",
+      "url": "https://www.digitalcommerce360.com/2024/02/06/ikea-launches-generative-ai-assistant/",
+      "date_publication": "2024-02-06",
+      "consulte_le": "2026-07-11"
+    }
+  ],
+  "fonctionnement_operationnel": {
+    "cadence": "Temps reel a chaque conversation, dans l'environnement d'un GPT Store tiers.",
+    "opere_par": "Equipe digitale et data d'Ingka, qui configure le GPT et suit les metriques d'usage et de renvoi.",
+    "signal_pilote": "Le renvoi vers ikea.com et la transaction qui suit. Comme la conversation vit chez un tiers, IKEA ne voit qu'un signal partiel du parcours et depend du store pour la distribution.",
+    "etapes": [
+      {
+        "etape": "Expression du besoin",
+        "detail": "L'utilisateur decrit sa piece, son style, son budget ou envoie une photo de meuble a identifier.",
+        "acteur": "client"
+      },
+      {
+        "etape": "Recommandation",
+        "detail": "L'assistant propose des produits IKEA, des rendus generes et des criteres de choix.",
+        "acteur": "IA"
+      },
+      {
+        "etape": "Renvoi vers le site",
+        "detail": "L'utilisateur clique vers ikea.com pour verifier disponibilite et acheter.",
+        "acteur": "client"
+      },
+      {
+        "etape": "Mesure et apprentissage",
+        "detail": "L'equipe suit utilisateurs, taux de renvoi et transactions pour juger le canal.",
+        "acteur": "equipe data"
+      }
+    ]
+  },
+  "schema_flow": {
+    "statut": "documente",
+    "noeuds": [
+      {
+        "id": "user",
+        "role_generique": "canal_conversationnel",
+        "label": "Utilisateur dans le GPT Store"
+      },
+      {
+        "id": "gpt",
+        "role_generique": "modele_ia",
+        "label": "IKEA AI Assistant",
+        "outil_documente": "OpenAI GPT Store"
+      },
+      {
+        "id": "site",
+        "role_generique": "site_app",
+        "label": "ikea.com (disponibilite, achat)"
+      }
+    ],
+    "liens": [
+      [
+        "user",
+        "gpt"
+      ],
+      [
+        "gpt",
+        "user",
+        "recommandations et rendus"
+      ],
+      [
+        "gpt",
+        "site",
+        "renvoi vers le site"
+      ],
+      [
+        "site",
+        "gpt",
+        "signal de transaction (partiel)"
+      ]
+    ]
+  },
+  "replication": {
+    "statut_epistemique": "infere",
+    "prerequis_data": [
+      "Catalogue produit et disponibilite exposables a un GPT",
+      "Referentiel de styles et de criteres (budget, durabilite)",
+      "Suivi du renvoi vers le site et de la transaction"
+    ],
+    "prerequis_orga": [
+      "Acceptation de distribuer via une plateforme tierce",
+      "Cadre de gouvernance des donnees de conversation",
+      "Metriques de canal (utilisateurs, renvoi, transaction)"
+    ],
+    "stack_possible": [
+      "GPT de marque sur un store tiers",
+      "Connexion au catalogue et a la disponibilite",
+      "Generation d'images de rendu"
+    ],
+    "premiere_etape": "Publier un GPT de marque relie au catalogue, instrumenter le renvoi vers le site, et juger le canal sur le volume et la transaction avant d'investir.",
+    "playbook": [
+      {
+        "action": "Cadrer le perimetre du GPT : ton de marque, cas d'usage couverts, garde-fous et regles de renvoi vers le site",
+        "livrable": "Brief du GPT valide (instructions, exemples, limites)"
+      },
+      {
+        "action": "Construire le GPT et le relier au catalogue (produits, styles, budget), avec liens sortants traques (UTM)",
+        "livrable": "GPT fonctionnel teste en interne, liens vers le site instrumentes"
+      },
+      {
+        "action": "Valider juridique et data (usage des conversations par la plateforme tierce), puis publier sur le store",
+        "livrable": "GPT publie + cadre de gouvernance des donnees documente"
+      },
+      {
+        "action": "Suivre utilisateurs, taux de renvoi vers le site et transactions issues du renvoi",
+        "livrable": "Tableau de bord du canal avec les trois metriques"
+      },
+      {
+        "action": "Juger le canal sur volume et transaction avant d'investir plus (integration aux surfaces propres ou arret)",
+        "livrable": "Decision go/no-go documentee"
+      }
+    ],
+    "equipe": "1 PM digital + 1 dev (connexion catalogue et tracking) + validation juridique/data"
+  },
+  "seo": {
+    "slug": "ikea-ai-assistant-gpt-store-2024",
+    "title": "IKEA : assistant de marque sur le OpenAI GPT Store - environ 1 500 utilisateurs par mois (2024)",
+    "meta_description": "IKEA a publie un assistant genAI sur le OpenAI GPT Store en 2024 : recommandations d'ameublement, rendus et identification produit, avec environ 1 500 utilisateurs par mois.",
+    "resume_citable": "IKEA a publie son assistant genAI sur le OpenAI GPT Store en fevrier 2024 : trois mois apres, il comptait environ 1 500 utilisateurs par mois, dont 20% menaient a une visite sur ikea.com et 5% de ces visites a une transaction.",
+    "faq": [
+      {
+        "q": "Que fait l'IKEA AI Assistant ?",
+        "a": "Publie sur le OpenAI GPT Store en 2024, il recommande des meubles selon la piece, le style et le budget, genere des rendus et identifie un produit a partir d'une photo."
+      },
+      {
+        "q": "Quels resultats ?",
+        "a": "Un usage modeste et oriente apprentissage : environ 1 500 utilisateurs par mois trois mois apres le lancement, 20% de renvoi vers ikea.com et 5% de transactions sur ces visites."
+      }
+    ]
+  },
+  "logo_domain": "ikea.com",
+  "stack_technique": [
+    {
+      "nom": "OpenAI GPT Store",
+      "categorie": "plateforme",
+      "detail": "store de distribution du GPT de marque, reserve aux abonnes ChatGPT Plus au lancement",
+      "url": "https://openai.com"
+    },
+    {
+      "nom": "LLM OpenAI sous-jacent aux GPTs",
+      "categorie": "llm",
+      "detail": "modele generatif d'OpenAI motorisant les GPTs du store ; version exacte non precisee dans les sources",
+      "url": "https://openai.com"
+    },
+    {
+      "nom": "Generation et reconnaissance d'images (outillage OpenAI)",
+      "categorie": "outil",
+      "detail": "rendus d'ameublement generes et identification d'un meuble a partir d'une photo, via les capacites natives des GPTs",
+      "url": "https://openai.com"
+    },
+    {
+      "nom": "Catalogue et site ikea.com",
+      "categorie": "infra",
+      "detail": "referentiel produits, styles et budget cote IKEA, avec renvoi traque vers le site pour la disponibilite et l'achat",
+      "url": "https://www.ikea.com"
+    }
+  ]
+}

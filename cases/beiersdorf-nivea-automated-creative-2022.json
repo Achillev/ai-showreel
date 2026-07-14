@@ -1,0 +1,303 @@
+{
+  "id": "beiersdorf-nivea-automated-creative-2022",
+  "type_fiche": "succes",
+  "marque": "Nivea",
+  "groupe": "Beiersdorf",
+  "industrie": "cpg_d2c",
+  "marches_deploiement": [
+    "Europe du Nord",
+    "Amerique du Nord",
+    "Deploiement multi-marches (contenu localise a l'echelle globale)"
+  ],
+  "transposable_ue": {
+    "flag": "oui",
+    "note": "Beiersdorf est un groupe allemand, deja rompu au RGPD. L'optimisation creative repose sur des donnees de performance media et du tagging d'assets, pas sur du profilage individuel. Les applications de recommandation par selfie (Skin Guide) impliquent des donnees biometriques et exigent consentement explicite et minimisation sous RGPD et AI Act."
+  },
+  "metier": "marketing, media, creative optimisation",
+  "intervenants": [
+    {
+      "nom": "Adam Wright",
+      "role": "Head of Digital, Beiersdorf Northern Europe",
+      "source_ref": "S1"
+    },
+    {
+      "nom": "Jasmin Quellmann",
+      "role": "Head of Marketing Technology and AI, Beiersdorf",
+      "source_ref": "S2"
+    }
+  ],
+  "agences": [
+    {
+      "nom": "Automated Creative",
+      "role": "Tests genAI des elements creatifs et optimisation de la performance media",
+      "source_ref": "S1"
+    },
+    {
+      "nom": "Grip",
+      "role": "Localisation et rendu automatise du contenu publicitaire (InstantRender)",
+      "source_ref": "S2"
+    }
+  ],
+  "axes": {
+    "levier": "acquisition",
+    "touchpoints": [
+      "paid social",
+      "media e-commerce",
+      "generation de leads",
+      "contenu publicitaire localise"
+    ],
+    "etape_parcours": "consideration",
+    "famille": "optimisation_automatisation",
+    "pattern": "test et optimisation genAI des elements creatifs + localisation automatisee a l'echelle",
+    "type_ia": [
+      "generation et test d'elements creatifs",
+      "tagging automatique d'assets",
+      "rendu automatise (digital twins)"
+    ],
+    "plateforme_stack": [
+      "Automated Creative",
+      "Grip InstantRender",
+      "NVIDIA Omniverse (digital twins)"
+    ],
+    "objectif_metrique": [
+      "cout par lead",
+      "cout par visite qualifiee",
+      "ROAS",
+      "delai de deploiement de campagne"
+    ]
+  },
+  "implementation": "hybride",
+  "stack_technique": [
+    {
+      "nom": "Automated Creative",
+      "categorie": "outil",
+      "detail": "Plateforme adtech de test et de tagging des elements creatifs (visuels, messages), qui isole ce qui fait la performance de chaque asset par audience.",
+      "url": "https://automatedcreative.net"
+    },
+    {
+      "nom": "Grip InstantRender",
+      "categorie": "outil",
+      "detail": "Moteur de rendu et de localisation automatises du contenu publicitaire, qui fait passer la production de semaines a minutes.",
+      "url": "https://www.grip.tools"
+    },
+    {
+      "nom": "NVIDIA Omniverse",
+      "categorie": "infra",
+      "detail": "Plateforme de digital twins sur laquelle est batie la technologie InstantRender de Grip.",
+      "url": "https://www.nvidia.com/en-us/omniverse/"
+    }
+  ],
+  "objectif_business": "Produire et localiser du contenu publicitaire pour tous les formats et marches sans les delais et les couts des shootings et des retouches manuelles, tout en optimisant la performance media asset par asset.",
+  "description": "Beiersdorf, maison de Nivea et Eucerin, combine deux briques IA sur sa chaine publicitaire. Avec Automated Creative, la marque teste des elements creatifs (visuels, messages) pour ameliorer la performance media; chaque asset est tague en arriere-plan, ce qui permet de comprendre pourquoi une annonce a fonctionne pour une audience donnee. Les premiers chantiers (septembre 2021, puis janvier 2022) portent sur le message, la generation de leads, le trafic web et la retail media. Nivea rapporte une baisse de 40 pour cent du cout par lead sur une campagne de generation de leads, une baisse de 60 pour cent du cout par visite qualifiee sur une campagne de trafic social, et une hausse de 20 pour cent du ROAS sur une campagne e-commerce. En parallele, Beiersdorf industrialise la localisation avec Grip et sa technologie InstantRender, batie sur des digital twins NVIDIA Omniverse, qui fait passer la production de semaines a minutes et permet de reduire le deploiement de campagne de plus de 50 pour cent. La marque a par ailleurs exploite plus de 12 millions d'images issues de 10 000 femmes pour son application de recommandation Skin Guide.",
+  "resultats": [
+    {
+      "metrique": "Cout par lead (campagne de generation de leads)",
+      "valeur": "-40%",
+      "citation_exacte": "decreased Nivea's cost per lead by 40%",
+      "source_ref": "S1"
+    },
+    {
+      "metrique": "Cout par visite qualifiee (campagne de trafic social)",
+      "valeur": "-60%",
+      "citation_exacte": "60% drop in cost per quality visit",
+      "source_ref": "S1"
+    },
+    {
+      "metrique": "ROAS (campagne e-commerce)",
+      "valeur": "+20%",
+      "citation_exacte": "20% increase in return on ad spend",
+      "source_ref": "S1"
+    },
+    {
+      "metrique": "Delai de deploiement, production passee de semaines a minutes",
+      "valeur": "-50%+",
+      "citation_exacte": "reduce campaign deployment by over 50%",
+      "source_ref": "S2"
+    }
+  ],
+  "niveau_preuve": {
+    "niveau": "C",
+    "justification": "Chiffres de performance rapportes par la presse specialisee (AdExchanger, Adweek) citant nommement Beiersdorf et Nivea, et par le fournisseur Grip pour la localisation. Pas de resultats financiers, donc C."
+  },
+  "dates": {
+    "lancement": "2021-09",
+    "derniere_confirmation_activite": "2025",
+    "verifie_le": "2026-07-11",
+    "revoir_apres": "2027-01-11"
+  },
+  "statut_vivant": {
+    "statut": "confirme",
+    "note": "Partenariat Automated Creative demarre en septembre 2021 avec chantiers successifs (message, leads, trafic, retail media); localisation industrialisee avec Grip et NVIDIA Omniverse confirmee sur la periode recente."
+  },
+  "sources": [
+    {
+      "ref": "S1",
+      "type": "presse",
+      "fiabilite": "T4_secondaire",
+      "titre": "Nivea's Parent Company Uses AI To Understand The DNA Of Its Top-Performing Creative",
+      "url": "https://www.adexchanger.com/ai/niveas-parent-company-uses-ai-to-understand-the-dna-of-its-top-performing-creative/",
+      "date_publication": "2022",
+      "consulte_le": "2026-07-11"
+    },
+    {
+      "ref": "S2",
+      "type": "customer_story_plateforme",
+      "fiabilite": "T2_officiel_interesse",
+      "titre": "Beiersdorf localizes global ad content with Grip",
+      "url": "https://www.grip.tools/resources/beiersdorf-scales-global-ad-content-with-grip",
+      "date_publication": "2025",
+      "consulte_le": "2026-07-11"
+    },
+    {
+      "ref": "S3",
+      "type": "presse",
+      "fiabilite": "T3_presse_etablie",
+      "titre": "How Nivea Is Using AI to Measure Creative Effectiveness",
+      "url": "https://www.adweek.com/brand-marketing/how-nivea-is-using-ai-to-measure-creative-effectiveness/",
+      "date_publication": "2022",
+      "consulte_le": "2026-07-11"
+    }
+  ],
+  "fonctionnement_operationnel": {
+    "cadence": "En continu par campagne pour l'optimisation creative; a la demande par format et par marche pour la localisation.",
+    "opere_par": "Equipes digital et marketing de Beiersdorf, avec Automated Creative sur l'optimisation et Grip sur la localisation.",
+    "signal_pilote": "Les donnees de performance media par asset (cout par lead, cout par visite, ROAS) et le tagging des elements creatifs. Sans tagging propre, on ne sait pas pourquoi une annonce marche et l'optimisation reste aveugle.",
+    "etapes": [
+      {
+        "etape": "Tagging et test des elements creatifs",
+        "detail": "Chaque asset est decompose et tague en arriere-plan pour isoler visuels et messages performants.",
+        "acteur": "IA / Automated Creative"
+      },
+      {
+        "etape": "Optimisation media",
+        "detail": "Les variantes performantes sont poussees, ce qui baisse le cout par lead et par visite et remonte le ROAS.",
+        "acteur": "marketing / IA"
+      },
+      {
+        "etape": "Localisation automatisee",
+        "detail": "Grip InstantRender genere les declinaisons par format et marche a partir de digital twins, en minutes.",
+        "acteur": "IA / Grip"
+      },
+      {
+        "etape": "Deploiement par marche",
+        "detail": "Diffusion acceleree des campagnes localisees, avec un delai de deploiement reduit de plus de 50 pour cent.",
+        "acteur": "marketing"
+      }
+    ]
+  },
+  "schema_flow": {
+    "statut": "documente",
+    "noeuds": [
+      {
+        "id": "assets",
+        "role_generique": "data_source",
+        "label": "Assets creatifs tagges"
+      },
+      {
+        "id": "ac",
+        "role_generique": "modele_ia",
+        "label": "Test et optimisation creative",
+        "outil_documente": "Automated Creative"
+      },
+      {
+        "id": "grip",
+        "role_generique": "modele_ia",
+        "label": "Localisation / rendu automatise",
+        "outil_documente": "Grip InstantRender (NVIDIA Omniverse)"
+      },
+      {
+        "id": "media",
+        "role_generique": "paid_platform",
+        "label": "Paid social / e-commerce"
+      },
+      {
+        "id": "perf",
+        "role_generique": "data_source",
+        "label": "Performance media (CPL, CPQV, ROAS)"
+      }
+    ],
+    "liens": [
+      [
+        "assets",
+        "ac"
+      ],
+      [
+        "ac",
+        "grip",
+        "variantes retenues"
+      ],
+      [
+        "grip",
+        "media"
+      ],
+      [
+        "media",
+        "perf"
+      ],
+      [
+        "perf",
+        "ac",
+        "boucle optimisation"
+      ]
+    ]
+  },
+  "replication": {
+    "statut_epistemique": "infere",
+    "prerequis_data": [
+      "assets creatifs decomposables et tagges",
+      "donnees de performance media par asset et par audience",
+      "references produit et regles de marque par marche"
+    ],
+    "prerequis_orga": [
+      "process de test creatif continu",
+      "coordination entre optimisation media et localisation",
+      "consentement et minimisation pour toute donnee biometrique (Skin Guide)"
+    ],
+    "stack_possible": [
+      "plateforme de test et tagging creatif (type Automated Creative)",
+      "moteur de rendu et localisation (type Grip / digital twins)",
+      "connecteurs media"
+    ],
+    "premiere_etape": "Tagger les assets d'une campagne de generation de leads et tester les variantes pour isoler ce qui baisse le cout par lead.",
+    "playbook": [
+      {
+        "action": "Choisir une campagne de generation de leads et decomposer ses assets en elements testables (visuels, messages, formats).",
+        "livrable": "Bibliotheque d'assets taggee element par element."
+      },
+      {
+        "action": "Lancer les variantes en test sur le paid social avec mesure de performance par element creatif.",
+        "livrable": "Matrice de performance par visuel et par message."
+      },
+      {
+        "action": "Pousser les combinaisons gagnantes et comparer le cout par lead a la campagne de reference.",
+        "livrable": "Bilan CPL avant/apres documente."
+      },
+      {
+        "action": "Industrialiser la localisation des creas gagnantes par marche et format via un moteur de rendu automatise.",
+        "livrable": "Declinaisons multi-marches generees en heures plutot qu'en semaines."
+      },
+      {
+        "action": "Etendre le dispositif aux campagnes de trafic et e-commerce, avec le ROAS comme metrique d'arbitrage.",
+        "livrable": "Process de test creatif continu documente et reproductible."
+      }
+    ],
+    "equipe": "1 responsable media + 1 creative ops ; la technique est portee par les plateformes ou l'agence partenaire."
+  },
+  "seo": {
+    "slug": "beiersdorf-nivea-automated-creative-2022",
+    "title": "Nivea (Beiersdorf) : optimisation creative IA - cout par lead -40% (2022)",
+    "meta_description": "Nivea optimise sa creative avec Automated Creative et localise a l'echelle avec Grip : cout par lead -40%, cout par visite -60%, ROAS +20%, deploiement -50%.",
+    "resume_citable": "Nivea (Beiersdorf) a reduit son cout par lead de 40%, son cout par visite qualifiee de 60% et augmente son ROAS de 20% en testant ses elements creatifs avec Automated Creative, et localise son contenu a l'echelle avec Grip (digital twins NVIDIA Omniverse), reduisant le deploiement de campagne de plus de 50%.",
+    "faq": [
+      {
+        "q": "Quels resultats Nivea obtient-il avec l'optimisation creative par IA ?",
+        "a": "Un cout par lead reduit de 40%, un cout par visite qualifiee reduit de 60% et un ROAS en hausse de 20%, en testant et taguant ses elements creatifs avec Automated Creative."
+      },
+      {
+        "q": "Comment Beiersdorf localise-t-il son contenu a l'echelle ?",
+        "a": "Avec Grip et sa technologie InstantRender basee sur des digital twins NVIDIA Omniverse, qui fait passer la production de semaines a minutes et reduit le deploiement de campagne de plus de 50%."
+      }
+    ]
+  },
+  "logo_domain": "nivea.com"
+}

@@ -1,0 +1,295 @@
+{
+  "type_fiche": "succes",
+  "id": "sephora-personnalisation-dynamic-yield-2020",
+  "marque": "Sephora",
+  "groupe": "LVMH",
+  "industrie": "retail_ecom",
+  "marches_deploiement": [
+    "Asie du Sud-Est",
+    "International"
+  ],
+  "transposable_ue": {
+    "flag": "oui",
+    "note": "Sephora opere en UE. Color IQ (scan de teint) et la synchronisation CRM entre magasin et online relevent du RGPD : donnees personnelles, base legale du profilage, information du client. Pas de risque AI Act eleve sur la reco produit et le scan de teint."
+  },
+  "metier": "E-commerce beaute / personnalisation on-site et omnicanale",
+  "marque_linkedin": "https://www.linkedin.com/company/sephora",
+  "intervenants": [
+    {
+      "nom": "Johnna Marcus",
+      "role": "Senior director, Sephora Innovation Lab (au moment de l'article)",
+      "source_ref": "S1"
+    }
+  ],
+  "axes": {
+    "levier": "activation_conversion",
+    "touchpoints": [
+      "Magasin (scan Color IQ)",
+      "Fiche produit online",
+      "Recherche sans resultat",
+      "Compte Beauty Insider"
+    ],
+    "etape_parcours": "consideration -> achat -> fidelite",
+    "famille": "personnalisation",
+    "pattern": "Matching produit par vision par ordinateur (teint) plus recommandation on-site personnalisee, synchronisee entre magasin et online",
+    "type_ia": [
+      "vision par ordinateur (matching de teint)",
+      "algorithmes de recommandation on-site",
+      "personnalisation omnicanale"
+    ],
+    "plateforme_stack": [
+      "Color IQ (in-house, computer vision)",
+      "Dynamic Yield"
+    ],
+    "objectif_metrique": [
+      "conversion",
+      "ROI de la personnalisation",
+      "fidelite / retention"
+    ]
+  },
+  "implementation": "hybride",
+  "objectif_business": "Reproduire en ligne le conseil personnalise du magasin : trouver le bon teint, recommander les bons produits, et garder le fil entre l'achat en boutique et la session web.",
+  "points_cles": ["Matching produit par vision par ordinateur (Color IQ) plus recommandation on-site personnalisee, synchronisee magasin-online.", "Stack Color IQ in-house et Dynamic Yield, unifie par le programme de fidelite Beauty Insider.", "ROI de 6 pour 1 sur les recommandations de fiche produit (Sephora SEA), 82 experiences en six mois.", "14 millions de correspondances Color IQ, preuve B, statut confirme."],
+  "description": "Sephora personnalise le parcours beaute sur deux fronts. En magasin, Color IQ scanne le teint de peau du client et le traduit en un code a quatre chiffres issu d'une bibliotheque de nuances construite avec le Pantone Color Institute ; ce code filtre ensuite les fonds de teint et correcteurs sur mobile et online, une fois rattache au compte de fidelite Beauty Insider. Depuis son lancement, Color IQ a genere 14 millions de correspondances en boutique. En ligne, Sephora SEA (Asie du Sud-Est) a confie a Dynamic Yield la personnalisation des recommandations produit et l'optimisation des points de discovery. Six mois apres le demarrage, l'equipe avait mis en place 82 experiences personnalisees ; les recommandations sur fiche produit ont degage a elles seules un ROI de 6 pour 1, avec plus de 6,50 dollars de revenu direct par dollar investi. La personnalisation s'etend a la page \" aucun resultat \", ou des recommandations contextuelles ont porte le taux d'ajout au panier a 30 % pour les visiteurs qui reviennent.",
+  "fonctionnement_operationnel": {
+    "cadence": "Scan Color IQ ponctuel en magasin (donnee durable rattachee au compte) ; recommandations on-site servies en temps reel a chaque session.",
+    "opere_par": "Equipe innovation / retail de Sephora pour Color IQ ; equipe e-commerce et CRM pour la personnalisation on-site, outillee par Dynamic Yield.",
+    "signal_pilote": "Le code de teint et l'historique d'achat / navigation, synchronises entre magasin et online via le compte Beauty Insider. Si le lien CRM casse, la session online repart sans contexte et la reco perd sa pertinence.",
+    "etapes": [
+      {
+        "etape": "Capter le teint en magasin",
+        "detail": "Color IQ scanne la peau et attribue un code de nuance, rattache au compte Beauty Insider du client.",
+        "acteur": "IA / equipe retail"
+      },
+      {
+        "etape": "Filtrer les produits par teint",
+        "detail": "Le code filtre fonds de teint et correcteurs sur mobile et online, pour ne montrer que les nuances adaptees.",
+        "acteur": "IA / plateforme"
+      },
+      {
+        "etape": "Personnaliser la reco on-site",
+        "detail": "Sur fiche produit et page sans resultat, Dynamic Yield sert des recommandations selon le contexte (produits similaires, achetes ensemble, automatique) et choisit la meilleure strategie par marche.",
+        "acteur": "IA / equipe e-commerce"
+      },
+      {
+        "etape": "Synchroniser magasin et online",
+        "detail": "Les donnees CRM alimentent la session online a partir des achats et comportements en boutique.",
+        "acteur": "Equipe CRM"
+      }
+    ]
+  },
+  "resultats": [
+    {
+      "metrique": "ROI des recommandations sur fiche produit (Sephora SEA)",
+      "valeur": "6 pour 1",
+      "citation_exacte": "6X ROI from PDP Recommendations",
+      "source_ref": "S2"
+    },
+    {
+      "metrique": "Correspondances Color IQ generees en magasin",
+      "valeur": "14 millions",
+      "citation_exacte": "Sephora stores have generated 14 million Color IQ matches",
+      "source_ref": "S1"
+    },
+    {
+      "metrique": "Experiences personnalisees deployees en 6 mois (Sephora SEA)",
+      "valeur": "82",
+      "citation_exacte": "82 Live Experiences powered by Dynamic Yield",
+      "source_ref": "S2"
+    }
+  ],
+  "niveau_preuve": {
+    "niveau": "B",
+    "justification": "Le ROI on-site vient d'une customer story Dynamic Yield chiffree (source vendor interessee) ; le volume de 14 millions de correspondances Color IQ est rapporte par la presse (Digiday) avec citation d'une responsable Sephora. Deux volets concordants, mais pas de resultat financier consolide au niveau du groupe."
+  },
+  "dates": {
+    "lancement": "Color IQ cree en 2012 (avec Pantone) ; personnalisation on-site Sephora SEA via Dynamic Yield vers 2019-2020",
+    "derniere_confirmation_activite": "Color IQ relance avec une techno plus inclusive ; Dynamic Yield reste le socle de personnalisation de Sephora SEA",
+    "verifie_le": "2026-07-11",
+    "revoir_apres": "2027-01-11"
+  },
+  "statut_vivant": {
+    "statut": "confirme",
+    "note": "Color IQ est un service en magasin de longue date, relance avec une techno plus inclusive ; la personnalisation on-site de Sephora SEA repose sur Dynamic Yield. Pattern actif."
+  },
+  "sources": [
+    {
+      "ref": "S1",
+      "type": "presse",
+      "titre": "How Color IQ, Sephora's shade-matching skin care tool, boosts brand loyalty - Digiday",
+      "url": "https://digiday.com/marketing/color-iq-sephoras-shade-matching-skin-care-tool-boosts-brand-loyalty/",
+      "date_publication": "2019",
+      "consulte_le": "2026-07-11",
+      "fiabilite": "T3_presse_etablie"
+    },
+    {
+      "ref": "S2",
+      "type": "customer_story_plateforme",
+      "titre": "Case Study: Sephora SEA Personalizes Beauty - Dynamic Yield",
+      "url": "https://www.dynamicyield.com/case-studies/sephora/",
+      "date_publication": "2020",
+      "consulte_le": "2026-07-11",
+      "fiabilite": "T2_officiel_interesse"
+    },
+    {
+      "ref": "S3",
+      "type": "presse",
+      "titre": "Sephora SEA Chooses Dynamic Yield to Personalize the Entire Customer Journey - PR Newswire",
+      "url": "https://www.prnewswire.com/news-releases/sephora-sea-chooses-dynamic-yield-to-personalize-the-entire-customer-journey-630121763.html",
+      "date_publication": "2020",
+      "consulte_le": "2026-07-11",
+      "fiabilite": "T2_officiel_interesse"
+    }
+  ],
+  "schema_flow": {
+    "statut": "documente",
+    "noeuds": [
+      {
+        "id": "scan",
+        "role_generique": "data_source",
+        "label": "Scan de teint en magasin",
+        "outil_documente": "Color IQ (computer vision)"
+      },
+      {
+        "id": "crm",
+        "role_generique": "crm",
+        "label": "Compte Beauty Insider (code teint + historique)"
+      },
+      {
+        "id": "reco",
+        "role_generique": "modele_ia",
+        "label": "Recommandation on-site personnalisee",
+        "outil_documente": "Dynamic Yield"
+      },
+      {
+        "id": "site",
+        "role_generique": "site_app",
+        "label": "Fiche produit, page sans resultat, mobile"
+      },
+      {
+        "id": "buy",
+        "role_generique": "site_app",
+        "label": "Ajout au panier / achat"
+      }
+    ],
+    "liens": [
+      [
+        "scan",
+        "crm"
+      ],
+      [
+        "crm",
+        "reco"
+      ],
+      [
+        "reco",
+        "site"
+      ],
+      [
+        "site",
+        "buy"
+      ],
+      [
+        "buy",
+        "crm",
+        "boucle omnicanale"
+      ]
+    ]
+  },
+  "replication": {
+    "statut_epistemique": "infere",
+    "prerequis_data": [
+      "Compte client unifie reliant achats magasin et online (CRM / loyalty)",
+      "Attributs produits fins (nuances, categories) pour filtrer et recommander",
+      "Historique de navigation et d'achat on-site"
+    ],
+    "prerequis_orga": [
+      "Programme de fidelite comme cle d'unification des donnees",
+      "Materiel de scan en magasin si l'on veut la brique teint",
+      "Equipe e-commerce pilotant l'outil de personnalisation"
+    ],
+    "stack_possible": [
+      "Moteur de personnalisation on-site (Dynamic Yield, ou equivalent) pour les recommandations et l'optimisation des pages",
+      "Brique de matching produit dediee (teint, taille) selon le secteur"
+    ],
+    "premiere_etape": "Deployer des recommandations sur fiche produit et sur la page \" aucun resultat \" via un moteur de personnalisation, et mesurer le ROI direct contre un groupe temoin.",
+    "playbook": [
+      {
+        "action": "Unifier la cle client : verifier que le programme de fidelite relie achats magasin, profil et sessions online",
+        "livrable": "Compte client unique avec historique consolide"
+      },
+      {
+        "action": "Structurer les attributs produit fins (nuances, categories, complements) necessaires au filtrage et a la recommandation",
+        "livrable": "Catalogue avec attributs exploitables par le moteur"
+      },
+      {
+        "action": "Deployer le moteur de personnalisation sur fiche produit et page sans resultat, avec groupe temoin",
+        "livrable": "Premieres recommandations en production, mesurees contre temoin"
+      },
+      {
+        "action": "Decliner les strategies de reco (similaires, achetes ensemble, automatique) par page et par marche",
+        "livrable": "Batterie d'experiences A/B testees en production"
+      },
+      {
+        "action": "Mesurer le revenu direct par euro investi contre le temoin, generaliser ce qui gagne ; la brique scan en magasin vient apres, si le business le justifie",
+        "livrable": "Tableau de ROI par experience et plan de scaling"
+      }
+    ],
+    "equipe": "1 PM e-commerce + 1 dev front pour l'integration + 1 CRM manager ; l'editeur accompagne la mise en place des campagnes"
+  },
+  "seo": {
+    "slug": "sephora-personnalisation-dynamic-yield-2020",
+    "title": "Sephora : personnalisation beaute (Color IQ + reco on-site) - 6 pour 1 de ROI sur les recos produit",
+    "meta_description": "Sephora relie scan de teint Color IQ et recommandations on-site personnalisees. Sephora SEA a tire un ROI de 6 pour 1 des recommandations sur fiche produit via Dynamic Yield, et Color IQ a genere 14 millions de correspondances.",
+    "resume_citable": "Sephora personnalise le parcours beaute par vision par ordinateur (Color IQ, 14 millions de correspondances) et recommandation on-site : Sephora SEA a obtenu un ROI de 6 pour 1 sur les recommandations de fiche produit via Dynamic Yield, avec 82 experiences en six mois.",
+    "faq": [
+      {
+        "q": "Que fait Color IQ ?",
+        "a": "Il scanne le teint de peau en magasin et attribue un code de nuance qui, relie au compte Beauty Insider, filtre ensuite fonds de teint et correcteurs online."
+      },
+      {
+        "q": "D'ou vient le ROI de 6 pour 1 ?",
+        "a": "D'une customer story Dynamic Yield sur Sephora SEA, portant sur les recommandations de fiche produit. C'est une source vendor, pas un resultat financier de groupe."
+      }
+    ]
+  },
+  "agences": [
+    {
+      "nom": "Dynamic Yield",
+      "role": "Plateforme de personnalisation on-site (recommandations, optimisation des pages) pour Sephora SEA",
+      "source_ref": "S2"
+    },
+    {
+      "nom": "Pantone Color Institute",
+      "role": "Partenaire de creation de la bibliotheque de nuances Color IQ",
+      "source_ref": "S1"
+    }
+  ],
+  "logo_domain": "sephora.com",
+  "stack_technique": [
+    {
+      "nom": "Dynamic Yield",
+      "categorie": "plateforme",
+      "detail": "moteur de personnalisation on-site : recommandations sur fiche produit et page sans resultat, optimisation des points de discovery (82 experiences en six mois chez Sephora SEA)",
+      "url": "https://www.dynamicyield.com"
+    },
+    {
+      "nom": "Color IQ",
+      "categorie": "outil",
+      "detail": "scan de teint in-house en magasin (vision par ordinateur), traduit en code a quatre chiffres rattache au compte client",
+      "url": "https://www.sephora.com"
+    },
+    {
+      "nom": "Beauty Insider",
+      "categorie": "infra",
+      "detail": "programme de fidelite qui unifie code de teint, achats magasin et navigation online, cle de la synchronisation omnicanale",
+      "url": "https://www.sephora.com"
+    },
+    {
+      "nom": "Pantone Color Institute",
+      "categorie": "integrateur",
+      "detail": "partenaire de construction de la bibliotheque de nuances de Color IQ",
+      "url": "https://www.pantone.com"
+    }
+  ]
+}

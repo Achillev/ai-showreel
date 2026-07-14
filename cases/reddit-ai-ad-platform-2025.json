@@ -1,0 +1,334 @@
+{
+  "id": "reddit-ai-ad-platform-2025",
+  "type_fiche": "succes",
+  "marque": "Reddit",
+  "groupe": "Reddit, Inc.",
+  "industrie": "media_entertainment",
+  "marches_deploiement": [
+    "Etats-Unis",
+    "International"
+  ],
+  "transposable_ue": {
+    "flag": "oui_avec_adaptations",
+    "note": "Les produits publicitaires automatises de Reddit sont accessibles aux annonceurs UE. Cote annonceur, l'usage des signaux d'intention et le suivi de conversions serveur (Conversions API) demandent une base RGPD (consentement, minimisation). L'AI Act impose de la transparence sur les decisions automatisees d'allocation media, sans bloquer l'activation."
+  },
+  "metier": "Regie publicitaire / monetisation (ad platform)",
+  "logo_domain": "reddit.com",
+  "intervenants": [
+    {
+      "nom": "Jennifer Wong",
+      "role": "Chief Operating Officer, Reddit",
+      "source_ref": "S2"
+    },
+    {
+      "nom": "Steve Huffman",
+      "role": "Co-fondateur et CEO, Reddit",
+      "source_ref": "S3"
+    }
+  ],
+  "axes": {
+    "levier": "monetisation",
+    "touchpoints": [
+      "plateforme publicitaire Reddit",
+      "feed et fils de conversation",
+      "recherche on-platform",
+      "annonces Shopping (Dynamic Product Ads)"
+    ],
+    "etape_parcours": "achat",
+    "famille": "optimisation_automatisation",
+    "pattern": "regie publicitaire optimisee par ML (campagnes automatisees + ranking + formats genAI)",
+    "type_ia": [
+      "machine learning d'optimisation de campagne",
+      "modeles de ranking et prediction de conversion",
+      "genAI (resumes de conversation, recherche conversationnelle)"
+    ],
+    "plateforme_stack": [
+      "custom/in-house",
+      "Reddit Max",
+      "Dynamic Product Ads",
+      "Reddit Answers"
+    ],
+    "objectif_metrique": [
+      "revenu publicitaire",
+      "CPA annonceur",
+      "volume de conversions",
+      "ROAS"
+    ]
+  },
+  "implementation": "custom",
+  "objectif_business": "Faire croitre la monetisation de l'inventaire Reddit en ameliorant la performance des annonceurs, via une couche IA qui automatise le pilotage des campagnes et l'affichage des annonces lower-funnel.",
+  "points_cles": ["Regie publicitaire optimisee par IA en interne (Reddit Max, Dynamic Product Ads, resumes de conversation).", "Machine learning d'optimisation d'encheres et de ranking sur les signaux de communaute.", "Revenu pub 690 M$ au T4 2025 (+75%), CPA -17% et conversions +27% en test.", "ROAS Shopping +75% sur 2025, preuve A, statut confirme."],
+  "description": "Reddit a construit en interne une couche d'IA au-dessus de sa regie. Trois briques la composent. Reddit Max est un type de campagne automatise: l'annonceur fixe l'objectif, budget et cible large, et les modeles choisissent placements et encheres sur le mid et lower funnel a partir des signaux de communaute (posts, commentaires, interets). Les annonces Shopping (Dynamic Product Ads) s'appuient sur des modeles ML de ranking qui piochent dans un catalogue produit et se sont ameliores tout au long de 2025, avec un pic sur le Black Friday et le Cyber Monday. Enfin, des formats genAI comme les Conversation Summaries integrent des extraits de discussions Reddit dans les annonces. En parallele, cote grand public, Reddit Answers apporte une recherche conversationnelle qui a fait passer les recherches directes sur Reddit a plus de 80 millions de personnes par semaine au T4 2025; cette surface reste non monetisee pour l'instant mais elargit le futur inventaire publicitaire. L'ensemble tourne pour des dizaines de milliers d'annonceurs et pese l'essentiel des revenus du groupe.",
+  "resultats": [
+    {
+      "metrique": "Revenu total T4 2025, +70% en glissement annuel",
+      "valeur": "726 M$",
+      "citation_exacte": "Q4 Revenue grew 70% year-over-year to $726 million",
+      "source_ref": "S1"
+    },
+    {
+      "metrique": "Revenu publicitaire T4 2025, +75% en glissement annuel",
+      "valeur": "690 M$",
+      "citation_exacte": "Ad revenue increased 75% year-over-year to $690 million",
+      "source_ref": "S1"
+    },
+    {
+      "metrique": "Campagnes Reddit Max (test), conversions +27% vs standard",
+      "valeur": "-17% de CPA",
+      "citation_exacte": "delivered 17% lower cost per action and 27% higher conversion volume",
+      "source_ref": "S3"
+    },
+    {
+      "metrique": "ROAS des annonces Shopping (Dynamic Product Ads), apres refonte des modeles ML",
+      "valeur": "+75% de ROAS",
+      "citation_exacte": "over 75% improvement in advertiser ROAS throughout 2025",
+      "source_ref": "S3"
+    },
+    {
+      "metrique": "Recherche on-platform (Reddit Answers) au T4 2025, contre 60 M un an plus tot",
+      "valeur": "80 M+/semaine",
+      "citation_exacte": "Over 80 million people searching directly on Reddit every week",
+      "source_ref": "S3"
+    }
+  ],
+  "niveau_preuve": {
+    "niveau": "A",
+    "justification": "Chiffres issus des resultats financiers du T4/exercice 2025 (communique officiel depose a la SEC et earnings call du 5 fevrier 2026), corrobores par la presse. Les metriques publicitaires (CPA, ROAS) sont annoncees par la COO en earnings call."
+  },
+  "dates": {
+    "lancement": "2024-2025 (Reddit Answers lance en decembre 2024; Reddit Max en beta et modeles ML Shopping ameliores sur 2025)",
+    "derniere_confirmation_activite": "2026-02-05 (resultats T4 et exercice 2025)",
+    "verifie_le": "2026-07-12",
+    "revoir_apres": "2026-11-15"
+  },
+  "statut_vivant": {
+    "statut": "confirme",
+    "note": "Produits actifs et centraux dans les resultats T4 2025 publies le 5 fevrier 2026; Reddit annonce etendre l'automatisation et l'onboarding annonceurs sur 2026."
+  },
+  "sources": [
+    {
+      "ref": "S1",
+      "type": "document_officiel_sec",
+      "fiabilite": "T1_primaire",
+      "titre": "Reddit Reports Fourth Quarter and Full Year 2025 Results; Announces $1 Billion Share Repurchase Program (Form 8-K, communique de resultats)",
+      "url": "https://www.sec.gov/Archives/edgar/data/1713445/000171344525000016/earningspressreleaseq424.htm",
+      "date_publication": "2026-02-05",
+      "consulte_le": "2026-07-12"
+    },
+    {
+      "ref": "S2",
+      "type": "earnings_call",
+      "fiabilite": "T3_presse_etablie",
+      "titre": "Reddit (RDDT) Q4 2025 Earnings Call Transcript",
+      "url": "https://www.fool.com/earnings/call-transcripts/2026/02/05/reddit-rddt-q4-2025-earnings-call-transcript/",
+      "date_publication": "2026-02-05",
+      "consulte_le": "2026-07-12"
+    },
+    {
+      "ref": "S3",
+      "type": "presse",
+      "fiabilite": "T4_secondaire",
+      "titre": "Reddit hits $726M revenue as AI-powered ads drive 70% growth",
+      "url": "https://ppc.land/reddit-hits-726m-revenue-as-ai-powered-ads-drive-70-growth/",
+      "date_publication": "2026-02",
+      "consulte_le": "2026-07-12"
+    },
+    {
+      "ref": "S4",
+      "type": "presse",
+      "fiabilite": "T3_presse_etablie",
+      "titre": "Reddit revenue soars as it bets on AI and advertising",
+      "url": "https://techcrunch.com/2025/07/31/reddit-revenue-soars-as-it-bets-on-ai-and-advertising/",
+      "date_publication": "2025-07-31",
+      "consulte_le": "2026-07-12"
+    }
+  ],
+  "fonctionnement_operationnel": {
+    "cadence": "Temps reel pour l'optimisation des encheres et du ranking; reentrainement continu des modeles ML sur les signaux de conversion; pilotage par campagne cote annonceur.",
+    "opere_par": "Les equipes produit et data science de Reddit pour les modeles; les annonceurs et leurs agences pour le lancement et le budget des campagnes.",
+    "signal_pilote": "Le signal de conversion remonte par l'annonceur (pixel + Conversions API) et les signaux d'intention issus des communautes. Sans suivi de conversion propre, les campagnes automatisees lower-funnel perdent leur boucle d'optimisation et retombent sur des proxies plus faibles.",
+    "etapes": [
+      {
+        "etape": "L'annonceur configure un objectif lower-funnel",
+        "detail": "Il choisit un type de campagne automatise (Reddit Max), fixe budget et objectif, fournit creatives et, pour le Shopping, un catalogue produit.",
+        "acteur": "annonceur / agence"
+      },
+      {
+        "etape": "Les modeles allouent placements et encheres",
+        "detail": "L'IA arbitre en temps reel les placements sur le feed, les fils de conversation et la recherche, en s'appuyant sur les signaux de communaute.",
+        "acteur": "IA (modeles Reddit)"
+      },
+      {
+        "etape": "Les annonces Shopping rankent le catalogue",
+        "detail": "Les modeles ML de Dynamic Product Ads selectionnent et ordonnent les produits par probabilite de conversion.",
+        "acteur": "IA (modeles Reddit)"
+      },
+      {
+        "etape": "La boucle de conversion reentraine le systeme",
+        "detail": "Les conversions remontees ajustent l'allocation; les equipes data surveillent CPA et ROAS et etendent l'automatisation.",
+        "acteur": "equipe data Reddit"
+      }
+    ]
+  },
+  "schema_flow": {
+    "statut": "approche_type",
+    "noeuds": [
+      {
+        "id": "n1",
+        "role_generique": "data_source",
+        "label": "Signaux de communaute (posts, commentaires, interets)"
+      },
+      {
+        "id": "n2",
+        "role_generique": "humain",
+        "label": "Annonceur (objectif, budget, creatives, catalogue)"
+      },
+      {
+        "id": "n3",
+        "role_generique": "modele_ia",
+        "label": "Modeles ML (optimisation encheres, ranking, genAI)"
+      },
+      {
+        "id": "n4",
+        "role_generique": "paid_platform",
+        "label": "Regie Reddit (Reddit Max, Dynamic Product Ads)",
+        "outil_documente": "Reddit Max / DPA"
+      },
+      {
+        "id": "n5",
+        "role_generique": "site_app",
+        "label": "Placements Reddit (feed, conversations, recherche)"
+      },
+      {
+        "id": "n6",
+        "role_generique": "humain",
+        "label": "Utilisateur Reddit"
+      }
+    ],
+    "liens": [
+      [
+        "n1",
+        "n3"
+      ],
+      [
+        "n2",
+        "n4"
+      ],
+      [
+        "n4",
+        "n3"
+      ],
+      [
+        "n3",
+        "n4",
+        "allocation optimisee"
+      ],
+      [
+        "n4",
+        "n5"
+      ],
+      [
+        "n5",
+        "n6"
+      ],
+      [
+        "n6",
+        "n3",
+        "signal de conversion (boucle)"
+      ]
+    ]
+  },
+  "stack_technique": [
+    {
+      "nom": "Reddit Max",
+      "categorie": "plateforme",
+      "detail": "Type de campagne automatise mid/lower funnel, in-house",
+      "url": "reddit.com"
+    },
+    {
+      "nom": "Dynamic Product Ads (Shopping)",
+      "categorie": "plateforme",
+      "detail": "Modeles ML de ranking sur catalogue produit, in-house",
+      "url": "reddit.com"
+    },
+    {
+      "nom": "Reddit Answers",
+      "categorie": "outil",
+      "detail": "Recherche conversationnelle genAI on-platform (non monetisee au T4 2025)",
+      "url": "reddit.com"
+    },
+    {
+      "nom": "Conversation Summaries",
+      "categorie": "outil",
+      "detail": "Format publicitaire genAI integrant des extraits de discussions",
+      "url": "reddit.com"
+    }
+  ],
+  "replication": {
+    "statut_epistemique": "infere",
+    "prerequis_data": [
+      "Suivi de conversions robuste cote annonceur (pixel + API de conversions serveur)",
+      "Signaux d'intention first-party a volume (engagement, interets)",
+      "Catalogue produit structure et a jour pour les annonces Shopping"
+    ],
+    "prerequis_orga": [
+      "Equipe ad-ops capable de piloter des campagnes automatisees et de lire l'incremental",
+      "Competence data science pour les modeles de ranking et d'allocation (cote plateforme)",
+      "Gouvernance data conforme RGPD pour l'usage des signaux et le suivi serveur"
+    ],
+    "stack_possible": [
+      "Produits de campagne automatisee (Reddit Max, Meta Advantage+, Google Performance Max)",
+      "Flux catalogue pour Dynamic Product Ads",
+      "API de conversions serveur (Conversions API)",
+      "Formats genAI natifs de la plateforme (resumes de conversation)"
+    ],
+    "playbook": [
+      {
+        "action": "Instrumenter le suivi de conversions de bout en bout (pixel + API serveur)",
+        "livrable": "Signal de conversion fiable qui alimente l'optimisation"
+      },
+      {
+        "action": "Structurer les signaux d'intention et les segments first-party disponibles",
+        "livrable": "Base de ciblage propre et conforme"
+      },
+      {
+        "action": "Activer un type de campagne automatise sur un objectif lower-funnel",
+        "livrable": "Campagne pilotee par les modeles plutot que par des reglages manuels"
+      },
+      {
+        "action": "Brancher un catalogue produit pour les annonces Shopping dynamiques",
+        "livrable": "Annonces produit rankees par probabilite de conversion"
+      },
+      {
+        "action": "Ajouter des formats genAI natifs (resumes de conversation) sur les creatives",
+        "livrable": "Formats contextualises testes contre les formats standard"
+      },
+      {
+        "action": "Mesurer CPA et ROAS en incremental et reallouer le budget",
+        "livrable": "Arbitrage budgetaire fonde sur la performance mesuree"
+      }
+    ],
+    "equipe": "Profils ad-ops et growth marketing pour le pilotage; data science pour les modeles cote plateforme; analyste pour la mesure incrementale.",
+    "premiere_etape": "Brancher le suivi de conversions serveur et activer un type de campagne automatise sur un objectif lower-funnel, avant d'ouvrir le budget."
+  },
+  "seo": {
+    "slug": "reddit-ai-ad-platform-2025",
+    "title": "Reddit : regie publicitaire optimisee par IA - revenus +70% au T4 2025 (2025)",
+    "meta_description": "Reddit a bati une regie pub optimisee par IA (Reddit Max, Shopping ML, resumes de conversation): revenu pub +75% a 690 M$ au T4 2025, CPA -17%.",
+    "resume_citable": "Au T4 2025, la regie IA de Reddit (Reddit Max, Dynamic Product Ads, Conversation Summaries) a porte le revenu publicitaire a 690 M$ (+75% en glissement annuel), les campagnes automatisees Reddit Max affichant un CPA en baisse de 17% et un volume de conversions en hausse de 27% en test.",
+    "faq": [
+      {
+        "q": "Qu'est-ce que Reddit Max ?",
+        "a": "Un type de campagne publicitaire automatise de Reddit: l'annonceur fixe objectif et budget, les modeles IA arbitrent placements et encheres sur le mid et lower funnel a partir des signaux de communaute."
+      },
+      {
+        "q": "Quels resultats la couche IA publicitaire de Reddit a-t-elle produits ?",
+        "a": "Un revenu publicitaire de 690 M$ au T4 2025 (+75% en glissement annuel), des campagnes Reddit Max a CPA -17% et conversions +27% en test, et un ROAS Shopping ameliore de plus de 75% sur 2025."
+      },
+      {
+        "q": "Reddit Answers est-il monetise ?",
+        "a": "Non au T4 2025. Cette recherche conversationnelle genAI porte la recherche on-platform a plus de 80 millions de personnes par semaine, mais reste non monetisee et elargit surtout l'inventaire futur."
+      }
+    ]
+  }
+}

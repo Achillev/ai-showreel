@@ -1,0 +1,284 @@
+{
+  "id": "commonwealth-bank-messaging-genai-2024",
+  "type_fiche": "succes",
+  "marque": "Commonwealth Bank of Australia",
+  "groupe": "Commonwealth Bank of Australia",
+  "industrie": "banque_assurance_fintech",
+  "marches_deploiement": [
+    "Australie"
+  ],
+  "transposable_ue": {
+    "flag": "oui_avec_adaptations",
+    "note": "Messagerie GenAI deployee en Australie. En UE, l'usage de la donnee transactionnelle pour la messagerie et les alertes anti-fraude impose une base legale RGPD et une obligation de transparence IA sous l'AI Act. Le pattern (messagerie client GenAI + alertes proactives) est transposable, la conformite est a refaire par marche."
+  },
+  "metier": "service client",
+  "intervenants": [
+    {
+      "nom": "Matt Comyn",
+      "role": "CEO, Commonwealth Bank of Australia",
+      "source_ref": "S1"
+    }
+  ],
+  "axes": {
+    "levier": "retention",
+    "touchpoints": [
+      "app mobile CommBank",
+      "messagerie client in-app",
+      "alertes proactives"
+    ],
+    "etape_parcours": "post-achat",
+    "famille": "conversation",
+    "pattern": "messagerie client GenAI + alertes proactives",
+    "type_ia": [
+      "LLM generatif",
+      "assistant conversationnel",
+      "detection d'anomalies"
+    ],
+    "plateforme_stack": [
+      "custom/in-house"
+    ],
+    "objectif_metrique": [
+      "delai d'attente centre d'appels",
+      "volume de demandes traitees en messagerie",
+      "pertes liees a la fraude et aux arnaques"
+    ]
+  },
+  "implementation": "custom",
+  "objectif_business": "Deporter le volume d'appels vers une messagerie GenAI dans l'app pour reduire les temps d'attente, et utiliser la meme couche IA pour envoyer des alertes proactives qui coupent la fraude et les arnaques avant qu'elles n'aboutissent.",
+  "points_cles": ["Messagerie client GenAI dans l'app plus alertes proactives de transaction suspecte.", "Couche GenAI interne sur le flux transactionnel, avec NameCheck, CallerCheck et CustomerCheck.", "Plus de 50 000 demandes par jour, temps d'attente -40%, pertes arnaques -50%.", "Preuve B, statut vivant confirme."],
+  "description": "Commonwealth Bank a mis une messagerie client propulsee par IA generative dans son app mobile, qui traite plus de 50 000 demandes de clients particuliers par jour. Sur le dernier exercice, la banque attribue a cette messagerie une baisse de 40% des temps d'attente au centre d'appels. La meme brique IA envoie des alertes proactives de transaction suspecte (autour de 20 000 par jour, avec une montee en charge prevue a 35 000), auxquelles CBA relie une chute de 30% des fraudes signalees par les clients et une reduction de 50% des pertes liees aux arnaques via ses fonctions NameCheck, CallerCheck et CustomerCheck.",
+  "resultats": [
+    {
+      "metrique": "Reduction des temps d'attente au centre d'appels",
+      "valeur": "40%",
+      "citation_exacte": "40% reduction in call centre wait times",
+      "source_ref": "S1"
+    },
+    {
+      "metrique": "Demandes clients par jour (messagerie GenAI)",
+      "valeur": "50 000+",
+      "citation_exacte": "50,000 messaging enquiries from retail customers a day",
+      "source_ref": "S1"
+    },
+    {
+      "metrique": "Baisse des fraudes signalees par les clients",
+      "valeur": "30%",
+      "citation_exacte": "30% drop in customer-reported frauds",
+      "source_ref": "S1"
+    },
+    {
+      "metrique": "Reduction des pertes liees aux arnaques",
+      "valeur": "50%",
+      "citation_exacte": "50% reduction in customer scam losses",
+      "source_ref": "S1"
+    }
+  ],
+  "niveau_preuve": {
+    "niveau": "B",
+    "justification": "Chiffres publies par CommBank dans une communication officielle (T1) alignee sur ses resultats d'exercice FY24, repris par la presse specialisee (T2/T4). Metriques operationnelles rattachees aux resultats mais pas des lignes de P&L auditees, donc B plutot que A."
+  },
+  "dates": {
+    "lancement": "2024",
+    "derniere_confirmation_activite": "2025-07",
+    "verifie_le": "2026-07-11",
+    "revoir_apres": "2027-01-11"
+  },
+  "statut_vivant": {
+    "statut": "confirme",
+    "note": "Deploiement confirme sur l'exercice 2024 et prolonge en 2025 (montee en charge des alertes proactives, extension d'autres outils GenAI comme ChatIT en interne). Feature active dans l'app."
+  },
+  "sources": [
+    {
+      "ref": "S1",
+      "type": "blog_officiel",
+      "fiabilite": "T1_primaire",
+      "titre": "Customer safety, convenience and recognition boosted by early implementation of Gen AI",
+      "url": "https://www.commbank.com.au/articles/newsroom/2024/11/reimagining-banking-nov24.html",
+      "date_publication": "2024-11-28",
+      "consulte_le": "2026-07-11"
+    },
+    {
+      "ref": "S2",
+      "type": "presse",
+      "fiabilite": "T4_secondaire",
+      "titre": "Commonwealth Bank uses AI to enhance customer service",
+      "url": "https://cfotech.com.au/story/commonwealth-bank-uses-ai-to-enhance-customer-service",
+      "date_publication": "2024-11",
+      "consulte_le": "2026-07-11"
+    }
+  ],
+  "fonctionnement_operationnel": {
+    "cadence": "Temps reel pour la messagerie ; alertes proactives declenchees en continu sur les transactions",
+    "opere_par": "Equipes service client et risque/fraude de CommBank, sur une couche GenAI interne",
+    "signal_pilote": "La donnee transactionnelle en temps reel. C'est elle qui alimente a la fois les reponses de la messagerie et la detection d'anomalies pour les alertes. Sans flux transactionnel propre, les alertes proactives deviennent du bruit et perdent la confiance des clients.",
+    "etapes": [
+      {
+        "etape": "Demande en messagerie",
+        "detail": "Le client ecrit dans la messagerie de l'app ; la couche GenAI repond aux demandes courantes et desengorge le centre d'appels.",
+        "acteur": "IA"
+      },
+      {
+        "etape": "Surveillance transactionnelle",
+        "detail": "En parallele, le systeme scrute les transactions pour reperer les schemas de fraude et d'arnaque.",
+        "acteur": "IA"
+      },
+      {
+        "etape": "Alerte proactive",
+        "detail": "Sur transaction suspecte, une alerte est poussee au client (environ 20 000 par jour), avec les controles NameCheck, CallerCheck et CustomerCheck.",
+        "acteur": "IA"
+      },
+      {
+        "etape": "Escalade et pilotage",
+        "detail": "Les cas complexes ou a risque partent vers un agent ; les equipes suivent temps d'attente, taux de fraude et pertes pour ajuster.",
+        "acteur": "service client / equipe risque"
+      }
+    ]
+  },
+  "schema_flow": {
+    "statut": "approche_type",
+    "noeuds": [
+      {
+        "id": "client",
+        "role_generique": "site_app",
+        "label": "Client dans l'app CommBank"
+      },
+      {
+        "id": "messagerie",
+        "role_generique": "modele_ia",
+        "label": "Messagerie GenAI"
+      },
+      {
+        "id": "transactions",
+        "role_generique": "data_source",
+        "label": "Flux transactionnel temps reel"
+      },
+      {
+        "id": "fraude",
+        "role_generique": "modele_ia",
+        "label": "Detection fraude/arnaque"
+      },
+      {
+        "id": "agent",
+        "role_generique": "humain",
+        "label": "Agent service client / risque"
+      }
+    ],
+    "liens": [
+      [
+        "client",
+        "messagerie"
+      ],
+      [
+        "messagerie",
+        "transactions"
+      ],
+      [
+        "transactions",
+        "messagerie"
+      ],
+      [
+        "messagerie",
+        "client"
+      ],
+      [
+        "transactions",
+        "fraude"
+      ],
+      [
+        "fraude",
+        "client",
+        "alerte proactive"
+      ],
+      [
+        "messagerie",
+        "agent",
+        "escalade"
+      ]
+    ]
+  },
+  "stack_technique": [
+    {
+      "nom": "Couche GenAI interne CommBank",
+      "categorie": "llm",
+      "detail": "messagerie generative developpee en interne ; les modeles sous-jacents ne sont pas divulgues publiquement",
+      "url": "https://www.commbank.com.au"
+    },
+    {
+      "nom": "Detection d'anomalies transactionnelles",
+      "categorie": "outil",
+      "detail": "modeles internes qui scrutent le flux de transactions en continu et declenchent les alertes proactives (environ 20 000 par jour)",
+      "url": "https://www.commbank.com.au"
+    },
+    {
+      "nom": "NameCheck / CallerCheck / CustomerCheck",
+      "categorie": "outil",
+      "detail": "fonctions anti-arnaque maison auxquelles CBA relie la reduction de 50% des pertes liees aux arnaques",
+      "url": "https://www.commbank.com.au"
+    },
+    {
+      "nom": "App mobile CommBank",
+      "categorie": "infra",
+      "detail": "canal unique de la messagerie GenAI et des alertes proactives, branche sur le core banking",
+      "url": "https://www.commbank.com.au"
+    }
+  ],
+  "replication": {
+    "statut_epistemique": "infere",
+    "prerequis_data": [
+      "Flux transactionnel en temps reel",
+      "Historique de fraude et d'arnaque etiquete",
+      "Base de connaissance des demandes clients frequentes"
+    ],
+    "prerequis_orga": [
+      "Coordination service client et equipe risque/fraude",
+      "Politique de messages proactifs (frequence, faux positifs)",
+      "Cadre conformite et transparence IA"
+    ],
+    "stack_possible": [
+      "LLM generatif pour la messagerie",
+      "Modeles de detection d'anomalies sur transactions",
+      "Integration app mobile et core banking"
+    ],
+    "premiere_etape": "Commencer par la messagerie sur les demandes les plus frequentes pour reduire les appels, puis brancher la detection d'anomalies sur le flux transactionnel pour les alertes.",
+    "playbook": [
+      {
+        "action": "Cartographier les demandes clients les plus frequentes en messagerie et poser le cadre conformite (donnees transactionnelles, transparence IA).",
+        "livrable": "Corpus de demandes priorise et cadre juridique valide"
+      },
+      {
+        "action": "Construire la messagerie GenAI sur les demandes de tete, integree a l'app, avec escalade vers agent outillee.",
+        "livrable": "Beta interne fonctionnelle avec parcours d'escalade"
+      },
+      {
+        "action": "Deployer progressivement aupres des clients et mesurer l'effet sur les temps d'attente du centre d'appels.",
+        "livrable": "Messagerie en production avec tableau de bord de deflection"
+      },
+      {
+        "action": "Brancher la detection d'anomalies sur le flux transactionnel temps reel et calibrer les seuils de faux positifs.",
+        "livrable": "Moteur d'alertes valide en pre-production"
+      },
+      {
+        "action": "Lancer les alertes proactives avec une boucle commune service client / equipe risque et suivre fraudes signalees et pertes.",
+        "livrable": "Alertes en production avec suivi fraude et pertes"
+      }
+    ],
+    "equipe": "2-4 ingenieurs ML/LLM + 1 PM + equipe risque fraude + service client pour l'escalade"
+  },
+  "seo": {
+    "slug": "commonwealth-bank-messaging-genai-2024",
+    "title": "Commonwealth Bank : messagerie client GenAI - 40% de temps d'attente en moins (2024)",
+    "meta_description": "La messagerie GenAI de CommBank traite 50 000 demandes par jour, a coupe 40% des temps d'attente et 50% des pertes liees aux arnaques.",
+    "resume_citable": "En 2024, la messagerie client GenAI de Commonwealth Bank of Australia traite plus de 50 000 demandes par jour, avec une baisse de 40% des temps d'attente au centre d'appels et une reduction de 50% des pertes liees aux arnaques.",
+    "faq": [
+      {
+        "q": "Que fait la messagerie GenAI de CommBank ?",
+        "a": "Elle repond en temps reel a plus de 50 000 demandes clients par jour dans l'app et pousse des alertes proactives de transaction suspecte."
+      },
+      {
+        "q": "Quel effet sur le centre d'appels ?",
+        "a": "CommBank attribue a cette messagerie une baisse de 40% des temps d'attente au centre d'appels sur l'exercice."
+      }
+    ]
+  },
+  "logo_domain": "commbank.com.au"
+}

@@ -1,0 +1,263 @@
+{
+  "id": "sinsay-advantage-plus-omnichannel-2025",
+  "type_fiche": "succes",
+  "marque": "Sinsay",
+  "groupe": "LPP Group",
+  "industrie": "retail_ecom",
+  "marches_deploiement": [
+    "Republique tcheque"
+  ],
+  "transposable_ue": {
+    "flag": "oui",
+    "note": "Cas deja mene dans l'UE (Republique tcheque) sur des produits Meta standard. Le suivi omnicanal repose sur la Conversions API : le partage d'evenements magasin et web suppose une base legale RGPD et un consentement conforme au marche."
+  },
+  "metier": "marketing / paid social / e-commerce",
+  "logo_domain": "sinsay.com",
+  "intervenants": [
+    {
+      "nom": "Gabriela Machlowska",
+      "role": "Paid Social Team Leader, LPP Group",
+      "source_ref": "S1"
+    }
+  ],
+  "axes": {
+    "levier": "acquisition",
+    "touchpoints": [
+      "Facebook",
+      "Instagram",
+      "catalogue produits",
+      "magasin physique"
+    ],
+    "etape_parcours": "consideration",
+    "famille": "optimisation_automatisation",
+    "pattern": "catalogue publicitaire automatise (Advantage+) mesure en omnicanal",
+    "type_ia": [
+      "machine learning",
+      "optimisation d'enchere et de ciblage",
+      "recommandation produit"
+    ],
+    "plateforme_stack": [
+      "Meta Advantage+ catalog ads",
+      "Meta Advantage+ audience",
+      "Meta Advantage+ placements",
+      "Meta Conversions API"
+    ],
+    "objectif_metrique": [
+      "ROAS incremental",
+      "cout par achat incremental",
+      "conversions omnicanal",
+      "achats omnicanal"
+    ]
+  },
+  "implementation": "plateforme",
+  "objectif_business": "Augmenter les achats omnicanal (web, app, magasin) generes par le paid social tout en tenant l'efficacite du budget publicitaire.",
+  "points_cles": ["Publicite sociale omnicanale via les Advantage+ catalog ads et omnichannel ads de Meta.", "Stack Meta Advantage+ (catalog, audience, placements) et Conversions API pour la mesure.", "Achats omnicanal x9,5, ROAS incremental +54%, cout par achat -43,3%.", "Preuve B, mesure en conversion lift test (Republique tcheque, oct-nov 2025)."],
+  "description": "Sinsay, marque mode a croissance rapide du groupe polonais LPP (femme, homme, enfant, presente sur environ 26 marches), a bascule sa publicite sociale vers une approche pleinement omnicanale. La marque combine les Advantage+ catalog ads, dont la fonction de machine learning tire automatiquement des visuels personnalises de produits pertinents et achetables depuis le flux catalogue, avec des omnichannel ads couvrant le web, l'app et le magasin. L'audience Advantage+ laisse l'algorithme sortir des parametres de ciblage coeur de la marque, et les placements Advantage+ automatisent la diffusion. Le suivi passe par la Meta Conversions API pour rattacher les evenements en ligne et hors ligne. La marque a valide l'apport via un conversion lift test multi-cellules comparant les Advantage+ catalog ads seuls a la combinaison catalog + omnichannel ads, mene en Republique tcheque du 14 octobre au 11 novembre 2025.",
+  "resultats": [
+    {
+      "metrique": "Achats omnicanal",
+      "valeur": "x9,5",
+      "citation_exacte": "9.5X more omnichannel purchases (online, in-app, in-store)",
+      "source_ref": "S1"
+    },
+    {
+      "metrique": "ROAS incremental",
+      "valeur": "+54%",
+      "citation_exacte": "54% increase in incremental return on ad spend",
+      "source_ref": "S1"
+    },
+    {
+      "metrique": "Cout par achat incremental",
+      "valeur": "-43,3%",
+      "citation_exacte": "43.3% lower incremental cost per purchase",
+      "source_ref": "S1"
+    },
+    {
+      "metrique": "Conversions omnicanal",
+      "valeur": "+77%",
+      "citation_exacte": "77% increase in omnichannel conversions (web, app, and in-store)",
+      "source_ref": "S1"
+    }
+  ],
+  "niveau_preuve": {
+    "niveau": "B",
+    "justification": "Etude de cas plateforme (Meta) chiffree, resultats issus d'un conversion lift test date et nomme, corroboree par de la presse etablie sur l'echelle et la vivacite de la marque."
+  },
+  "dates": {
+    "lancement": "Test omnicanal mene du 14 octobre au 11 novembre 2025 (Republique tcheque)",
+    "derniere_confirmation_activite": "Novembre 2025 (expansion continue de Sinsay, 2000e magasin ouvert)",
+    "verifie_le": "2026-07-12",
+    "revoir_apres": "2027-01-12"
+  },
+  "statut_vivant": {
+    "statut": "confirme",
+    "note": "Sinsay est le moteur de croissance de LPP (plus de 2000 magasins, environ 24 a 26 marches) et continue d'etendre son dispositif. Le cas documente une fenetre de test precise ; l'usage des produits Advantage+ de Meta est standard et courant."
+  },
+  "sources": [
+    {
+      "ref": "S1",
+      "type": "customer_story_plateforme",
+      "fiabilite": "T2_officiel_interesse",
+      "titre": "Sinsay Clothing: driving omnichannel growth with Advantage+ and omnichannel ads",
+      "url": "https://www.facebook.com/business/success/sinsay-clothing",
+      "consulte_le": "2026-07-12"
+    },
+    {
+      "ref": "S2",
+      "type": "presse",
+      "fiabilite": "T3_presse_etablie",
+      "titre": "Poland's Sinsay opens 91 stores in 19 countries in record 1-week rollout",
+      "url": "https://tvpworld.com/91456120/polands-sinsay-opens-91-stores-in-19-countries-in-record-1week-rollout",
+      "consulte_le": "2026-07-12"
+    }
+  ],
+  "fonctionnement_operationnel": {
+    "cadence": "Diffusion continue par campagne, optimisation en temps reel par l'algorithme",
+    "opere_par": "Equipe paid social de la marque (LPP Group)",
+    "signal_pilote": "Les evenements d'achat omnicanal (web, app, magasin) remontes via la Conversions API ; sans ce signal, l'optimisation perd la mesure de l'incrementalite et le pilotage omnicanal casse.",
+    "etapes": [
+      {
+        "etape": "Alimenter le catalogue produit",
+        "detail": "Maintenir un flux catalogue a jour (visuels, prix, disponibilite) que le machine learning d'Advantage+ pioche pour composer des annonces personnalisees.",
+        "acteur": "equipe data / e-commerce"
+      },
+      {
+        "etape": "Brancher la mesure omnicanal",
+        "detail": "Envoyer les evenements en ligne et hors ligne via la Meta Conversions API pour rattacher les achats magasin aux campagnes.",
+        "acteur": "equipe data"
+      },
+      {
+        "etape": "Lancer Advantage+ catalog + omnichannel ads",
+        "detail": "Activer catalog ads, audience et placements Advantage+, laisser l'algorithme elargir le ciblage au-dela du coeur de cible.",
+        "acteur": "marketing / paid social"
+      },
+      {
+        "etape": "Mesurer par conversion lift",
+        "detail": "Comparer en test multi-cellules catalog seul versus catalog + omnichannel pour isoler l'apport incremental.",
+        "acteur": "marketing / paid social"
+      }
+    ]
+  },
+  "schema_flow": {
+    "statut": "approche_type",
+    "noeuds": [
+      {
+        "id": "catalogue",
+        "role_generique": "data_source",
+        "label": "Flux catalogue produits (visuels, prix, stock)",
+        "outil_documente": "Meta catalog"
+      },
+      {
+        "id": "events",
+        "role_generique": "data_source",
+        "label": "Evenements achat web / app / magasin",
+        "outil_documente": "Meta Conversions API"
+      },
+      {
+        "id": "ia",
+        "role_generique": "modele_ia",
+        "label": "Machine learning Advantage+ (perso, audience, placements)",
+        "outil_documente": "Meta Advantage+"
+      },
+      {
+        "id": "meta",
+        "role_generique": "paid_platform",
+        "label": "Diffusion Facebook / Instagram",
+        "outil_documente": "Meta Ads"
+      },
+      {
+        "id": "client",
+        "role_generique": "site_app",
+        "label": "Site, app et magasin Sinsay"
+      },
+      {
+        "id": "ops",
+        "role_generique": "humain",
+        "label": "Equipe paid social LPP"
+      }
+    ],
+    "liens": [
+      [
+        "catalogue",
+        "ia"
+      ],
+      [
+        "ia",
+        "meta"
+      ],
+      [
+        "meta",
+        "client"
+      ],
+      [
+        "client",
+        "events"
+      ],
+      [
+        "events",
+        "ia",
+        "boucle d'optimisation incrementale"
+      ],
+      [
+        "ops",
+        "ia",
+        "cadrage campagne et test lift"
+      ]
+    ]
+  },
+  "replication": {
+    "statut_epistemique": "infere",
+    "prerequis_data": [
+      "Flux catalogue produit propre et a jour (visuels, prix, disponibilite)",
+      "Suivi des evenements de conversion en ligne via pixel / Conversions API",
+      "Capacite a remonter les achats magasin (identifiant transaction, matching offline)"
+    ],
+    "prerequis_orga": [
+      "Reseau de magasins physiques pour justifier la mesure omnicanal",
+      "Alignement data / e-commerce / paid social sur une definition commune de l'achat incremental",
+      "Base legale et consentement RGPD pour le partage d'evenements"
+    ],
+    "stack_possible": [
+      "Meta Advantage+ catalog ads",
+      "Meta Advantage+ audience et placements",
+      "Meta Conversions API",
+      "Outil de conversion lift natif de la plateforme"
+    ],
+    "playbook": [
+      {
+        "action": "Structurer et fiabiliser le flux catalogue produit",
+        "livrable": "Catalogue synchronise exploitable par le machine learning"
+      },
+      {
+        "action": "Deployer la mesure omnicanal via Conversions API (web, app, magasin)",
+        "livrable": "Evenements d'achat unifies et attribues"
+      },
+      {
+        "action": "Activer les campagnes Advantage+ catalog et les omnichannel ads",
+        "livrable": "Diffusion automatisee elargie au-dela du coeur de cible"
+      },
+      {
+        "action": "Cadrer un conversion lift test multi-cellules pour isoler l'incrementalite",
+        "livrable": "Lecture de l'apport reel du dispositif omnicanal"
+      }
+    ],
+    "equipe": "Un pilote paid social, un profil data pour le catalogue et la Conversions API, un relais e-commerce / retail pour le rattachement magasin.",
+    "premiere_etape": "Verifier que les achats magasin peuvent etre remontes a Meta via la Conversions API : c'est ce qui rend la mesure omnicanal possible."
+  },
+  "seo": {
+    "slug": "sinsay-advantage-plus-omnichannel-2025",
+    "title": "Sinsay : Advantage+ omnicanal - x9,5 d'achats omnicanal (2025)",
+    "meta_description": "Sinsay (LPP) combine Advantage+ catalog ads et omnichannel ads mesures en conversion lift : x9,5 d'achats omnicanal et +54% de ROAS incremental.",
+    "resume_citable": "En 2025, Sinsay (groupe LPP) a combine les Advantage+ catalog ads de Meta a des omnichannel ads, obtenant en test lift x9,5 d'achats omnicanal, +54% de ROAS incremental et -43,3% de cout par achat incremental en Republique tcheque.",
+    "faq": [
+      {
+        "q": "Quelle IA Sinsay a-t-elle utilisee ?",
+        "a": "Le machine learning des produits Advantage+ de Meta : catalog ads qui composent des annonces personnalisees depuis le flux produit, plus audience et placements automatises."
+      },
+      {
+        "q": "Comment les resultats ont-ils ete mesures ?",
+        "a": "Via un conversion lift test multi-cellules comparant les Advantage+ catalog ads seuls a leur combinaison avec des omnichannel ads, en Republique tcheque du 14 octobre au 11 novembre 2025."
+      }
+    ]
+  }
+}

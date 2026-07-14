@@ -1,0 +1,269 @@
+{
+  "id": "rent-the-runway-personnalisation-ia-decouverte-2026",
+  "type_fiche": "succes",
+  "marque": "Rent the Runway",
+  "groupe": "Rent the Runway, Inc.",
+  "industrie": "retail_ecom",
+  "marches_deploiement": [
+    "Etats-Unis"
+  ],
+  "transposable_ue": {
+    "flag": "oui_avec_adaptations",
+    "note": "La mecanique repose sur des donnees d'engagement first-party (favoris, vues, historique de location) pour personnaliser un feed de decouverte, ce qui se transpose en environnement RGPD avec une base legale claire et un droit d'opposition. Le second volet, l'imagerie produit generee par IA, releve des obligations de transparence sur les contenus synthetiques prevues par l'AI Act (marquage des visuels generes par IA). Le detail de la stack n'est pas divulgue par Rent the Runway, donc l'orchestration serait a refaire."
+  },
+  "metier": "e-commerce / merchandising digital",
+  "intervenants": [
+    {
+      "nom": "Teri Bariquit",
+      "role": "Interim CEO and President, Rent the Runway",
+      "source_ref": "S1"
+    }
+  ],
+  "axes": {
+    "levier": "retention",
+    "touchpoints": [
+      "site et application Rent the Runway",
+      "page d'accueil et feed For You",
+      "fiches produit (imagerie)"
+    ],
+    "etape_parcours": "decouverte",
+    "famille": "personnalisation",
+    "pattern": "personnalisation du parcours de decouverte (carrousels et feed For You) plus imagerie produit generee par IA sur l'inventaire ancien",
+    "type_ia": [
+      "personnalisation et recommandation",
+      "generation d'images par IA",
+      "moteur de decouverte"
+    ],
+    "plateforme_stack": [
+      "custom/in-house (fournisseur et modeles non divulgues)"
+    ],
+    "objectif_metrique": [
+      "engagement (hearting)",
+      "vues produit",
+      "revenu add-on",
+      "retention des abonnes"
+    ]
+  },
+  "implementation": "custom",
+  "objectif_business": "Approfondir la decouverte et l'engagement des abonnes actifs de la location par abonnement, pour qu'ils trouvent plus vite des pieces a louer, reservent davantage et restent abonnes. Rent the Runway decrit un moteur de decouverte au coeur de sa strategie 2026, avec un revenu add-on en hausse de 70,4% sur un an, tire par un engagement d'abonnes plus fort.",
+  "points_cles": ["Carrousels personnalises et feed For You live pour tous les abonnes depuis avril 2026.", "Moteur de recommandation sur signaux first-party plus imagerie produit generee par IA (stack non divulguee).", "Hearting +11% sur la page d'accueil, vues +129% sur les styles a imagerie IA.", "Preuve A, statut confirme."],
+  "description": "En avril 2026, Rent the Runway a deploye des carrousels personnalises sur l'ensemble de sa plateforme, live pour tous les abonnes. L'abonnee y decouvre des pieces proches de ses favoris recents et parcourt un feed For You cale sur ses gouts. La marque mesure une hausse de 11% du hearting (mise en favori) sur la page d'accueil pour les abonnes actifs. Second volet, toujours en avril 2026, une imagerie produit generee par IA a remplace des visuels anciens par des images plus realistes, censees aider la cliente a se projeter dans la piece ; les vues sur ces styles ont augmente de 129%. Un troisieme chantier, la generation automatisee de tenues completes, est entre en test interne en mai 2026 et n'etait pas encore ouvert aux abonnes a la date des resultats : Rent the Runway indique vouloir le deployer dans les mois suivants, ce qui en fait une extension a venir et non un resultat a l'echelle. Le contexte de crediblite est un trimestre public (Q1 FY2026, clos le 30 avril 2026, publie le 3 juin 2026) avec un chiffre d'affaires de 89,9 millions de dollars en hausse de 29,2% sur un an et 155 692 abonnes actifs en fin de periode. Rent the Runway ne divulgue ni les modeles ni les fournisseurs derriere ces fonctionnalites.",
+  "resultats": [
+    {
+      "metrique": "Hearting en page d'accueil (abonnes actifs), apres les carrousels et le feed For You",
+      "valeur": "+11%",
+      "citation_exacte": "an 11% increase in hearting behavior for active subscribers",
+      "source_ref": "S1"
+    },
+    {
+      "metrique": "Vues sur les styles, apres passage a une imagerie IA plus realiste",
+      "valeur": "+129%",
+      "citation_exacte": "increased views on these tried and true styles by 129%",
+      "source_ref": "S1"
+    },
+    {
+      "metrique": "Carrousels personnalises live pour tous les abonnes depuis avril 2026 (fin Q1 FY2026)",
+      "valeur": "155 692 abonnes",
+      "citation_exacte": "we launched personalized carousels across our platform, now live for all subscribers",
+      "source_ref": "S1"
+    },
+    {
+      "metrique": "Chiffre d'affaires du trimestre, +29,2% sur un an (Q1 FY2026)",
+      "valeur": "89,9 M$",
+      "citation_exacte": "Revenue Grew to $89.9M, up 29.2% YoY",
+      "source_ref": "S1"
+    }
+  ],
+  "niveau_preuve": {
+    "niveau": "A",
+    "justification": "Chiffres publies par Rent the Runway elle-meme dans son 8-K depose a la SEC (Exhibit 99.1, resultats Q1 FY2026, T1_primaire), repris a l'identique dans son communique officiel et concordants avec la transcription de l'earnings call. Le hearting a +11% et les vues a +129% sont attribues explicitement par la marque aux deux fonctionnalites IA, et les carrousels sont declares live pour tous les abonnes. Document primaire de resultats financiers, donc niveau A."
+  },
+  "dates": {
+    "lancement": "avril 2026 (carrousels personnalises et imagerie IA)",
+    "derniere_confirmation_activite": "2026-06",
+    "verifie_le": "2026-07-13",
+    "revoir_apres": "2027-01-13"
+  },
+  "statut_vivant": {
+    "statut": "confirme",
+    "note": "Carrousels personnalises declares live pour tous les abonnes dans les resultats du 3 juin 2026, avec la decouverte pilotee par IA posee comme axe central de la strategie 2026. Deploiement recent (environ trois mois a la date de verification) : a resurveiller au prochain trimestre. La generation de tenues restait en test interne, non ouverte aux abonnes."
+  },
+  "sources": [
+    {
+      "ref": "S1",
+      "type": "document_officiel_sec",
+      "fiabilite": "T1_primaire",
+      "titre": "Rent the Runway, Inc. Announces First Quarter 2026 Results (Form 8-K, Exhibit 99.1)",
+      "url": "https://www.sec.gov/Archives/edgar/data/0001468327/000146832726000029/q12026earningsrelease.htm",
+      "date_publication": "2026-06-03",
+      "consulte_le": "2026-07-13"
+    },
+    {
+      "ref": "S2",
+      "type": "blog_officiel",
+      "fiabilite": "T1_primaire",
+      "titre": "Rent the Runway, Inc. Announces First Quarter 2026 Results",
+      "url": "https://www.globenewswire.com/news-release/2026/06/03/3305987/0/en/Rent-the-Runway-Inc-Announces-First-Quarter-2026-Results.html",
+      "date_publication": "2026-06-03",
+      "consulte_le": "2026-07-13"
+    },
+    {
+      "ref": "S3",
+      "type": "conference",
+      "fiabilite": "T4_secondaire",
+      "titre": "Rent the Runway (RENT) Q1 2026 Earnings Call Transcript",
+      "url": "https://www.fool.com/earnings/call-transcripts/2026/06/04/rent-the-runway-rent-q1-2026-earnings-transcript/",
+      "date_publication": "2026-06-04",
+      "consulte_le": "2026-07-13"
+    }
+  ],
+  "fonctionnement_operationnel": {
+    "cadence": "Feed personnalise recalcule en continu au fil de la navigation et des favoris ; imagerie produit regeneree par lot quand l'inventaire est mis a jour ou rafraichi",
+    "opere_par": "Equipe produit et data de Rent the Runway (fournisseur et modeles non divulgues)",
+    "signal_pilote": "Les signaux d'engagement first-party de l'abonnee : favoris (hearts), vues, historique de location. Le feed For You s'optimise dessus ; si ces signaux manquent ou sont pauvres pour une nouvelle abonnee, la personnalisation retombe sur des recommandations generiques.",
+    "etapes": [
+      {
+        "etape": "Collecte des signaux d'engagement",
+        "detail": "L'abonnee met des pieces en favori, consulte des fiches, loue ; ces evenements alimentent son profil de gout.",
+        "acteur": "client"
+      },
+      {
+        "etape": "Construction du feed For You",
+        "detail": "Le moteur de recommandation compose les carrousels personnalises et le feed a partir des favoris recents et des preferences detectees.",
+        "acteur": "IA"
+      },
+      {
+        "etape": "Generation de l'imagerie produit",
+        "detail": "Un modele d'imagerie IA produit des visuels plus realistes pour remplacer les images anciennes de l'inventaire, pour aider la cliente a se projeter.",
+        "acteur": "IA"
+      },
+      {
+        "etape": "Diffusion sur le site et l'app",
+        "detail": "Carrousels, feed For You et nouveaux visuels sont servis sur la page d'accueil et les fiches produit de tous les abonnes.",
+        "acteur": "equipe data"
+      },
+      {
+        "etape": "Mesure et iteration",
+        "detail": "L'equipe suit le hearting, les vues et l'engagement pour valider l'impact et etendre le perimetre (test interne de generation de tenues en amont d'un futur deploiement).",
+        "acteur": "marketing"
+      }
+    ]
+  },
+  "schema_flow": {
+    "statut": "approche_type",
+    "noeuds": [
+      {
+        "id": "signaux",
+        "role_generique": "data_source",
+        "label": "Signaux first-party : favoris, vues, historique de location"
+      },
+      {
+        "id": "reco",
+        "role_generique": "modele_ia",
+        "label": "Moteur de recommandation (carrousels et feed For You)"
+      },
+      {
+        "id": "imagerie",
+        "role_generique": "modele_ia",
+        "label": "Generation d'imagerie produit par IA"
+      },
+      {
+        "id": "app",
+        "role_generique": "site_app",
+        "label": "Site et application Rent the Runway"
+      },
+      {
+        "id": "abonnee",
+        "role_generique": "humain",
+        "label": "Abonnee active"
+      }
+    ],
+    "liens": [
+      [
+        "abonnee",
+        "signaux",
+        "favoris, vues, locations"
+      ],
+      [
+        "signaux",
+        "reco",
+        "profil de gout"
+      ],
+      [
+        "reco",
+        "app",
+        "carrousels et feed personnalises"
+      ],
+      [
+        "imagerie",
+        "app",
+        "visuels produit realistes"
+      ],
+      [
+        "app",
+        "abonnee",
+        "decouverte personnalisee"
+      ]
+    ]
+  },
+  "replication": {
+    "statut_epistemique": "infere",
+    "prerequis_data": [
+      "Historique d'engagement first-party par utilisateur (favoris, vues, achats ou locations)",
+      "Catalogue produit structure avec attributs de style exploitables par un moteur de recommandation",
+      "Inventaire d'images produit, avec identification des visuels anciens ou peu performants a regenerer"
+    ],
+    "prerequis_orga": [
+      "Equipe produit et data capable d'operer un moteur de recommandation dans la duree",
+      "Gouvernance sur l'imagerie generee par IA : coherence de marque, controle qualite, transparence sur les contenus synthetiques",
+      "Base legale RGPD pour la personnalisation et, en UE, marquage AI Act des visuels generes"
+    ],
+    "stack_possible": [
+      "Moteur de recommandation (item-to-item et feed personnalise) sur donnees first-party",
+      "Modele de generation ou d'amelioration d'images produit",
+      "Couche de diffusion sur page d'accueil et fiches produit avec test A/B",
+      "Instrumentation d'engagement (favoris, vues) pour mesurer l'impact"
+    ],
+    "premiere_etape": "Instrumenter proprement les signaux d'engagement first-party (favoris, vues, conversions) et lancer un premier carrousel personnalise item-to-item sur la page d'accueil, en A/B test, avant d'attaquer l'imagerie generee.",
+    "playbook": [
+      {
+        "action": "Auditer et fiabiliser la collecte des signaux d'engagement first-party par utilisateur (favoris, vues, locations ou achats).",
+        "livrable": "Profil de gout exploitable par utilisateur, base de la personnalisation."
+      },
+      {
+        "action": "Deployer un premier carrousel personnalise et un feed de decouverte cale sur les favoris recents, en A/B test sur la page d'accueil.",
+        "livrable": "Carrousel personnalise mesure contre un flux non personnalise."
+      },
+      {
+        "action": "Identifier les produits dont l'imagerie est ancienne ou sous-performante, puis regenerer des visuels realistes par IA avec controle qualite et coherence de marque.",
+        "livrable": "Lot d'images produit renouvelees, avec suivi des vues avant/apres."
+      },
+      {
+        "action": "Etendre la diffusion a l'ensemble de la base une fois l'impact valide, en gardant l'instrumentation d'engagement.",
+        "livrable": "Personnalisation live pour tous les utilisateurs, impact suivi."
+      },
+      {
+        "action": "Explorer la generation de tenues completes en test interne avant toute ouverture, pour passer de la piece isolee au look.",
+        "livrable": "Prototype de recommandation de tenues valide en interne."
+      }
+    ],
+    "equipe": "1 equipe produit (PM, design) + data scientists ou ML engineers pour le moteur de recommandation et l'imagerie generee + une fonction merchandising ou brand pour valider la coherence des visuels."
+  },
+  "seo": {
+    "slug": "rent-the-runway-personnalisation-ia-decouverte-2026",
+    "title": "Rent the Runway : decouverte personnalisee par IA - +11% de favoris et +129% de vues (2026)",
+    "meta_description": "Carrousels personnalises et feed For You live pour tous les abonnes depuis avril 2026, plus une imagerie produit generee par IA : +11% de hearting, +129% de vues.",
+    "resume_citable": "Rent the Runway a rendu ses carrousels personnalises et son feed For You live pour tous ses abonnes en avril 2026, avec une hausse de 11% du hearting, tandis qu'une imagerie produit generee par IA a fait grimper les vues des styles concernes de 129% (resultats Q1 FY2026, chiffre d'affaires 89,9 M$).",
+    "faq": [
+      {
+        "q": "Qu'a deploye Rent the Runway en matiere d'IA pour la decouverte ?",
+        "a": "Des carrousels personnalises et un feed For You live pour tous les abonnes depuis avril 2026, cales sur leurs favoris et leurs gouts, plus une imagerie produit generee par IA pour rafraichir l'inventaire ancien. La generation automatisee de tenues completes etait encore en test interne."
+      },
+      {
+        "q": "Quels resultats la marque publie-t-elle ?",
+        "a": "Une hausse de 11% du hearting sur la page d'accueil pour les abonnes actifs et une hausse de 129% des vues sur les styles passes a l'imagerie IA, dans les resultats Q1 FY2026 (chiffre d'affaires 89,9 M$, +29,2% sur un an, 155 692 abonnes actifs)."
+      }
+    ]
+  },
+  "logo_domain": "renttherunway.com"
+}

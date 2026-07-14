@@ -1,0 +1,252 @@
+{
+  "id": "meta-reco-feed-ia-2025",
+  "type_fiche": "succes",
+  "marque": "Meta",
+  "groupe": "Meta Platforms",
+  "industrie": "media_entertainment",
+  "marches_deploiement": [
+    "Etats-Unis",
+    "Monde",
+    "Europe"
+  ],
+  "transposable_ue": {
+    "flag": "oui",
+    "note": "Systemes de recommandation de contenu grand public. Profilage soumis au RGPD ; obligations de transparence et option de flux non personnalise imposees par le DSA aux tres grandes plateformes. Deja opere dans l'UE."
+  },
+  "metier": "Product / personnalisation / engagement",
+  "marque_linkedin": "https://www.linkedin.com/company/meta/",
+  "axes": {
+    "levier": "retention",
+    "touchpoints": [
+      "fil Facebook",
+      "fil et Reels Instagram",
+      "Threads",
+      "recommandations video"
+    ],
+    "etape_parcours": "fidelite",
+    "famille": "personnalisation",
+    "pattern": "recommandation de fil et de video par IA (modeles a grande echelle / LLM)",
+    "type_ia": [
+      "deep learning",
+      "modeles de recommandation a grande echelle",
+      "LLM appliques au ranking"
+    ],
+    "plateforme_stack": [
+      "custom/in-house"
+    ],
+    "objectif_metrique": [
+      "temps passe",
+      "vues de contenu",
+      "engagement"
+    ]
+  },
+  "implementation": "custom",
+  "stack_technique": [
+    {
+      "nom": "Modeles de ranking proprietaires Meta",
+      "categorie": "outil",
+      "detail": "Deep learning de recommandation a grande echelle qui classe les contenus candidats du fil et des Reels ; ML proprietaire de Meta, non commercialise.",
+      "url": "https://ai.meta.com"
+    },
+    {
+      "nom": "Architectures type LLM appliquees au ranking",
+      "categorie": "llm",
+      "detail": "Approches de type LLM utilisees pour le classement du fil et de la video selon Meta ; le modele exact n'est pas nomme publiquement.",
+      "url": "https://ai.meta.com"
+    },
+    {
+      "nom": "Infrastructure ML interne Meta",
+      "categorie": "infra",
+      "detail": "Serving du scoring en temps reel a chaque chargement de fil et entrainement sur les logs d'interactions.",
+      "url": "https://engineering.fb.com"
+    }
+  ],
+  "objectif_business": "Augmenter le temps passe et l'engagement sur Facebook, Instagram et Threads en montrant a chaque utilisateur davantage de contenu pertinent, ce qui alimente directement l'inventaire publicitaire et le revenu.",
+  "points_cles": ["Rearchitecture des systemes de ranking et recommandation de fil et video par IA.", "Modeles de ranking a grande echelle proprietaires, avec approches type LLM.", "+5% de temps passe sur Facebook et +6% sur Instagram au Q2 2025.", "Preuve A, statut confirme, gains reconfirmes trimestre par trimestre."],
+  "description": "Meta a rearchitecture ses systemes de ranking et de recommandation avec des modeles de plus grande echelle, incluant des approches type LLM appliquees au classement du fil et de la video. L'objectif est de mieux predire ce que chaque utilisateur va trouver interessant. Les gains sont mesures en points de temps passe et de vues, et communiques trimestre par trimestre en resultats.",
+  "resultats": [
+    {
+      "metrique": "Hausse du temps passe sur Facebook (Q2 2025)",
+      "valeur": "+5%",
+      "citation_exacte": "a 5% increase in time spent on Facebook",
+      "source_ref": "S1"
+    },
+    {
+      "metrique": "Hausse du temps passe sur Instagram (Q2 2025)",
+      "valeur": "+6%",
+      "citation_exacte": "6% on Instagram",
+      "source_ref": "S1"
+    },
+    {
+      "metrique": "Hausse des vues de posts organiques feed et video, Facebook (Q4 2025)",
+      "valeur": "+7%",
+      "citation_exacte": "a 7% lift in views of organic feed and video posts",
+      "source_ref": "S2"
+    }
+  ],
+  "niveau_preuve": {
+    "niveau": "A",
+    "justification": "Chiffres enonces par Mark Zuckerberg lors de l'earnings call Q2 2025 (rapportes par la presse) et repris/complet dans une communication officielle Meta pour Q4 2025. Resultats d'une societe cotee, attribues explicitement aux ameliorations des systemes de recommandation."
+  },
+  "dates": {
+    "lancement": "Recommandation par IA au coeur des apps depuis des annees ; vague de modeles a grande echelle / LLM en 2024-2025",
+    "derniere_confirmation_activite": "2026-01-28 (communication officielle Meta sur les gains Q4 2025)",
+    "verifie_le": "2026-07-11",
+    "revoir_apres": "2027-01-11"
+  },
+  "statut_vivant": {
+    "statut": "confirme",
+    "note": "Gains reconfirmes trimestre apres trimestre en 2025 ; recommandation centrale au produit Meta."
+  },
+  "sources": [
+    {
+      "ref": "S1",
+      "type": "presse",
+      "fiabilite": "T3_presse_etablie",
+      "titre": "Zuckerberg: AI increased the time spent on Facebook and Instagram in Q2 (TechCrunch, earnings Q2 2025)",
+      "url": "https://techcrunch.com/2025/07/30/zuckerberg-ai-increased-the-time-spent-on-facebook-and-instagram-in-q2/",
+      "date_publication": "2025-07-30",
+      "consulte_le": "2026-07-11"
+    },
+    {
+      "ref": "S2",
+      "type": "blog_officiel",
+      "fiabilite": "T2_officiel_interesse",
+      "titre": "2026: AI Drives Performance (About Meta)",
+      "url": "https://about.fb.com/news/2026/01/2026-ai-drives-performance/",
+      "date_publication": "2026-01-28",
+      "consulte_le": "2026-07-11"
+    }
+  ],
+  "fonctionnement_operationnel": {
+    "cadence": "Scoring en temps reel a chaque chargement de fil ; iterations de modeles et gains mesures par trimestre.",
+    "opere_par": "Equipes Ranking / Recommendation de Meta, adossees a l'infra ML interne.",
+    "signal_pilote": "Le temps passe et les interactions par utilisateur, qui servent d'objectif d'optimisation et de mesure. Sans ce signal en continu, les modeles de ranking ne peuvent ni s'entrainer ni prouver leur gain.",
+    "etapes": [
+      {
+        "etape": "Collecte des interactions",
+        "detail": "Vues, temps passe, likes, partages, commentaires sont journalises par utilisateur et par contenu.",
+        "acteur": "site_app / equipe data"
+      },
+      {
+        "etape": "Ranking du fil",
+        "detail": "Les modeles a grande echelle classent les contenus candidats pour maximiser la pertinence predite.",
+        "acteur": "IA"
+      },
+      {
+        "etape": "Rendu personnalise",
+        "detail": "Chaque utilisateur voit un fil et des Reels ordonnes pour lui sur Facebook, Instagram ou Threads.",
+        "acteur": "site_app"
+      },
+      {
+        "etape": "Mesure et iteration",
+        "detail": "Les gains de temps passe et de vues sont mesures et rapportes ; les modeles sont iteres au trimestre.",
+        "acteur": "equipe data"
+      }
+    ]
+  },
+  "schema_flow": {
+    "statut": "documente",
+    "noeuds": [
+      {
+        "id": "n1",
+        "role_generique": "data_source",
+        "label": "Interactions (vues, temps passe, likes, partages)"
+      },
+      {
+        "id": "n2",
+        "role_generique": "modele_ia",
+        "label": "Modeles de ranking a grande echelle (approches type LLM)",
+        "outil_documente": "Systemes custom Meta"
+      },
+      {
+        "id": "n3",
+        "role_generique": "site_app",
+        "label": "Fils Facebook / Instagram / Threads + Reels"
+      },
+      {
+        "id": "n4",
+        "role_generique": "humain",
+        "label": "Utilisateur"
+      }
+    ],
+    "liens": [
+      [
+        "n1",
+        "n2"
+      ],
+      [
+        "n2",
+        "n3"
+      ],
+      [
+        "n3",
+        "n4"
+      ],
+      [
+        "n4",
+        "n1",
+        "interactions realimentent le ranking"
+      ]
+    ]
+  },
+  "replication": {
+    "statut_epistemique": "infere",
+    "playbook": [
+      {
+        "action": "Etablir une mesure fiable du temps passe et des vues par utilisateur, et poser un cadre d'A/B testing sur le fil.",
+        "livrable": "Tableau de bord d'engagement et protocole d'experimentation valides."
+      },
+      {
+        "action": "Construire le pipeline de logs d'interactions et une baseline de ranking mesuree en production.",
+        "livrable": "Baseline documentee avec ses metriques de reference."
+      },
+      {
+        "action": "Entrainer des modeles de recommandation plus lourds sur les interactions et les evaluer hors ligne contre la baseline.",
+        "livrable": "Modele candidat battant la baseline en evaluation offline."
+      },
+      {
+        "action": "Lancer l'A/B en production sur une fraction du trafic et mesurer temps passe et vues.",
+        "livrable": "Readout d'experience avec gain significatif ou decision d'arret."
+      },
+      {
+        "action": "Generaliser le modele gagnant et installer des iterations trimestrielles.",
+        "livrable": "Gains de temps passe et de vues suivis et rapportes par trimestre."
+      }
+    ],
+    "equipe": "3-5 ingenieurs ML ranking + 1 data engineer + 1 PM, adosses a une equipe infra pour le serving temps reel.",
+    "prerequis_data": [
+      "logs d'interactions par utilisateur a grande echelle",
+      "catalogue de contenus indexe",
+      "signaux d'engagement explicites et implicites"
+    ],
+    "prerequis_orga": [
+      "equipe ML de ranking",
+      "infra de serving temps reel massive",
+      "capacite d'experimentation trimestrielle"
+    ],
+    "stack_possible": [
+      "custom/in-house",
+      "modeles de recommandation a grande echelle",
+      "architectures type LLM pour le ranking"
+    ],
+    "premiere_etape": "Etablir une mesure fiable du temps passe et un cadre d'A/B testing avant d'investir dans des modeles de ranking plus lourds."
+  },
+  "seo": {
+    "slug": "meta-reco-feed-ia-2025",
+    "title": "Meta : recommandation de fil par IA - +5% temps Facebook, +6% Instagram (2025)",
+    "meta_description": "Les nouveaux modeles de recommandation de Meta ont ajoute +5% de temps passe sur Facebook et +6% sur Instagram au Q2 2025, selon l'earnings call.",
+    "resume_citable": "Les modeles de recommandation IA de Meta ont ajoute +5% de temps passe sur Facebook et +6% sur Instagram au Q2 2025, puis +7% de vues de posts organiques feed et video au Q4 2025.",
+    "faq": [
+      {
+        "q": "Combien l'IA a-t-elle ajoute au temps passe sur Meta ?",
+        "a": "Au Q2 2025, +5% sur Facebook et +6% sur Instagram, attribues par Zuckerberg aux ameliorations des systemes de recommandation."
+      },
+      {
+        "q": "Ces gains sont-ils recents ?",
+        "a": "Oui, reconfirmes au fil de 2025 : Meta cite encore +7% de vues de posts organiques feed et video sur Facebook au Q4 2025."
+      }
+    ]
+  },
+  "logo_domain": "meta.com"
+}

@@ -1,0 +1,284 @@
+{
+  "id": "colgate-palmolive-genai-contenu-2025",
+  "type_fiche": "succes",
+  "marque": "Colgate-Palmolive",
+  "groupe": "Colgate-Palmolive",
+  "industrie": "cpg_d2c",
+  "marches_deploiement": [
+    "Etats-Unis",
+    "Deploiement multi-marches vise pour la mise a l'echelle du contenu"
+  ],
+  "transposable_ue": {
+    "flag": "oui",
+    "note": "Production de contenu marketing par genAI, sans donnees personnelles au coeur du dispositif. Sous AI Act, transparence a prevoir sur les contenus generes, notamment les personnages animaux de synthese. Les visuels doivent respecter les regles de publicite locales par marche."
+  },
+  "metier": "marketing",
+  "intervenants": [
+    {
+      "nom": "Brigitte King",
+      "role": "Chief Digital and Insights Officer, Colgate-Palmolive",
+      "source_ref": "S1"
+    }
+  ],
+  "agences": [
+    {
+      "nom": "Google",
+      "role": "Outil genAI Veo et accompagnement technique",
+      "source_ref": "S1"
+    },
+    {
+      "nom": "Boston Consulting Group",
+      "role": "Partenaire du pilote genAI marketing",
+      "source_ref": "S1"
+    }
+  ],
+  "axes": {
+    "levier": "acquisition",
+    "touchpoints": [
+      "video publicitaire",
+      "contenu social",
+      "assets multi-marches"
+    ],
+    "etape_parcours": "découverte",
+    "famille": "generation",
+    "pattern": "production video et contenu marketing par genAI a l'echelle",
+    "type_ia": [
+      "generation video",
+      "generation d'images",
+      "modeles generatifs"
+    ],
+    "plateforme_stack": [
+      "Google Veo",
+      "process interne Colgate-Palmolive",
+      "Boston Consulting Group"
+    ],
+    "objectif_metrique": [
+      "vitesse de production",
+      "cout par concept",
+      "consideration lift"
+    ]
+  },
+  "implementation": "hybride",
+  "objectif_business": "Produire plus de contenu marketing, plus vite et moins cher, sans perdre en efficacite publicitaire, pour alimenter volume, variete et velocite sur les marques du groupe.",
+  "points_cles": ["Production de publicites video par genAI avec Hill's Pet Nutrition (3 V : volume, variete, velocite).", "Outil Google Veo, en partenariat avec Google et Boston Consulting Group.", "Videos produites 4 a 6 fois plus vite, cout par concept plus bas, consideration lift egal ou superieur.", "Preuve B, statut vivant confirme."],
+  "description": "Colgate-Palmolive a mene un pilote de contenu marketing par genAI avec sa division Hill's Pet Nutrition, en partenariat avec Google et Boston Consulting Group. En utilisant l'outil Veo de Google, les equipes ont produit deux publicites video pretes a diffuser 4 a 6 fois plus vite que la production habituelle, a un cout par concept nettement plus bas, tout en obtenant un consideration lift egal ou superieur aux creations business as usual. Un des spots a genere par IA des personnages animaux d'apparence naturelle, difficiles a obtenir autrement. Brigitte King, Chief Digital and Insights Officer, resume l'objectif autour des trois V du contenu : volume, variete, velocite. Une fois un produit et une campagne cadres, le groupe utilise l'IA pour developper rapidement des milliers d'assets de contenu, adaptes par marche et par canal.",
+  "resultats": [
+    {
+      "metrique": "Vitesse de production video",
+      "valeur": "4 a 6x plus vite",
+      "citation_exacte": "4X to 6X faster than the usual production time",
+      "source_ref": "S1"
+    },
+    {
+      "metrique": "Consideration lift vs creation classique",
+      "valeur": "egal ou superieur",
+      "citation_exacte": "the same or better consideration lift",
+      "source_ref": "S1"
+    },
+    {
+      "metrique": "Cout par concept",
+      "valeur": "nettement plus bas",
+      "citation_exacte": "significantly lower per concept",
+      "source_ref": "S1"
+    }
+  ],
+  "niveau_preuve": {
+    "niveau": "B",
+    "justification": "Etude de cas plateforme (Think with Google) chiffree sur la vitesse et le consideration lift, avec dirigeant nomme ; corroboree par la couverture presse et l'analyse MIT Sloan sur la strategie genAI du groupe. Vitesse chiffree mais pas de resultats financiers, donc B."
+  },
+  "dates": {
+    "lancement": "2025",
+    "derniere_confirmation_activite": "2025-12",
+    "verifie_le": "2026-07-11",
+    "revoir_apres": "2027-01-11"
+  },
+  "statut_vivant": {
+    "statut": "confirme",
+    "note": "Pilote documente fin 2025 par Think with Google ; le groupe decrit une extension a la production de milliers d'assets par marche et canal. Strategie genAI du groupe egalement documentee par MIT Sloan."
+  },
+  "sources": [
+    {
+      "ref": "S1",
+      "type": "customer_story_plateforme",
+      "fiabilite": "T2_officiel_interesse",
+      "titre": "Colgate-Palmolive's gen-AI marketing pilot",
+      "url": "https://business.google.com/us/think/ai-excellence/colgate-palmolive-gen-ai-marketing-pilot/",
+      "date_publication": "2025-12",
+      "consulte_le": "2026-07-11"
+    },
+    {
+      "ref": "S2",
+      "type": "analyse_academique",
+      "fiabilite": "T3_presse_etablie",
+      "titre": "The GenAI Focus Shifts to Innovation at Colgate-Palmolive",
+      "url": "https://sloanreview.mit.edu/article/the-genai-focus-shifts-to-innovation-at-colgate-palmolive/",
+      "date_publication": "2024",
+      "consulte_le": "2026-07-11"
+    },
+    {
+      "ref": "S3",
+      "type": "presse",
+      "fiabilite": "T4_secondaire",
+      "titre": "Scaling at Speed: How Colgate-Palmolive Uses AI to Globalize Product Success",
+      "url": "https://consumergoods.com/scaling-speed-how-colgate-palmolive-uses-ai-globalize-product-success",
+      "date_publication": "2025",
+      "consulte_le": "2026-07-11"
+    }
+  ],
+  "fonctionnement_operationnel": {
+    "cadence": "Par campagne pour les videos maitresses, puis production continue de declinaisons a l'echelle une fois le concept valide.",
+    "opere_par": "Equipe marketing et digital Colgate-Palmolive, avec Google sur l'outil et Boston Consulting Group sur le cadrage du pilote.",
+    "signal_pilote": "Le consideration lift des creations et le cout par concept. Si les assets generes ne tiennent pas le niveau d'efficacite des creations classiques, le gain de vitesse ne sert a rien.",
+    "etapes": [
+      {
+        "etape": "Cadrage du concept",
+        "detail": "Definition du produit, du message et du cadre creatif de la campagne.",
+        "acteur": "marketing"
+      },
+      {
+        "etape": "Generation des videos maitresses",
+        "detail": "Production de spots via Veo, y compris personnages de synthese.",
+        "acteur": "IA (Google Veo) + equipe creative"
+      },
+      {
+        "etape": "Controle d'efficacite",
+        "detail": "Mesure du consideration lift face aux creations business as usual.",
+        "acteur": "equipe insights"
+      },
+      {
+        "etape": "Mise a l'echelle multi-marches",
+        "detail": "Declinaison en milliers d'assets adaptes par marche et canal.",
+        "acteur": "IA + marketing local"
+      }
+    ]
+  },
+  "schema_flow": {
+    "statut": "documente",
+    "noeuds": [
+      {
+        "id": "brief",
+        "role_generique": "humain",
+        "label": "Brief campagne (marketing)"
+      },
+      {
+        "id": "veo",
+        "role_generique": "modele_ia",
+        "label": "Generation video et assets",
+        "outil_documente": "Google Veo"
+      },
+      {
+        "id": "test",
+        "role_generique": "data_source",
+        "label": "Mesure consideration lift"
+      },
+      {
+        "id": "chan",
+        "role_generique": "paid_platform",
+        "label": "Diffusion multi-marches / multi-canaux"
+      }
+    ],
+    "liens": [
+      [
+        "brief",
+        "veo"
+      ],
+      [
+        "veo",
+        "test"
+      ],
+      [
+        "test",
+        "chan"
+      ],
+      [
+        "test",
+        "veo",
+        "iteration si le lift est insuffisant"
+      ]
+    ]
+  },
+  "stack_technique": [
+    {
+      "nom": "Google Veo",
+      "categorie": "llm",
+      "detail": "modele de generation video de Google, utilise pour produire les spots, y compris les personnages animaux de synthese",
+      "url": "https://deepmind.google"
+    },
+    {
+      "nom": "Google",
+      "categorie": "integrateur",
+      "detail": "accompagnement technique de l'outil et du pilote genAI",
+      "url": "https://www.google.com"
+    },
+    {
+      "nom": "Boston Consulting Group",
+      "categorie": "integrateur",
+      "detail": "partenaire conseil du pilote, cadrage et equipe pluridisciplinaire",
+      "url": "https://www.bcg.com"
+    },
+    {
+      "nom": "Dispositif de pretest (consideration lift)",
+      "categorie": "outil",
+      "detail": "mesure d'efficacite des creations generees face aux creations business as usual ; protocole non detaille publiquement",
+      "url": "https://www.colgatepalmolive.com"
+    }
+  ],
+  "replication": {
+    "statut_epistemique": "infere",
+    "prerequis_data": [
+      "chartes de marque et guidelines par marche",
+      "un dispositif de test creatif (consideration lift, pretest)",
+      "briefs campagne structures"
+    ],
+    "prerequis_orga": [
+      "equipe creative capable de piloter des outils genAI",
+      "gouvernance sur les contenus de synthese et la conformite publicitaire"
+    ],
+    "stack_possible": [
+      "modele de generation video (Veo, Runway, Sora)",
+      "outils de declinaison / creative automation",
+      "solution de pretest publicitaire"
+    ],
+    "premiere_etape": "Prendre une campagne existante, produire une version genAI en parallele et comparer cout, delai et consideration lift.",
+    "playbook": [
+      {
+        "action": "Choisir la marque et la campagne pilote, cadrer le message et les garde-fous de marque pour la generation.",
+        "livrable": "Brief campagne et cadre creatif valides"
+      },
+      {
+        "action": "Constituer l'equipe pluridisciplinaire (creatifs, insights, tech) et configurer l'acces a l'outil de generation video.",
+        "livrable": "Equipe operante, outil configure sur les assets de marque"
+      },
+      {
+        "action": "Produire un ou deux spots genAI en parallele d'une reference de production classique.",
+        "livrable": "Videos pretes a diffuser, cout et delai documentes"
+      },
+      {
+        "action": "Pretester le consideration lift des spots genAI face aux creations business as usual.",
+        "livrable": "Rapport comparatif cout / delai / lift"
+      },
+      {
+        "action": "Si le lift tient, industrialiser la declinaison en assets adaptes par marche et par canal.",
+        "livrable": "Bibliotheque d'assets multi-marches deployee"
+      }
+    ],
+    "equipe": "1 lead marketing + 1-2 creatifs formes aux outils genAI + 1 responsable insights pour le pretest, conseil externe en option"
+  },
+  "seo": {
+    "slug": "colgate-palmolive-genai-contenu-2025",
+    "title": "Colgate-Palmolive : video publicitaire par genAI - production 4 a 6x plus rapide (2025)",
+    "meta_description": "Colgate-Palmolive et Hill's produisent des spots video par genAI (Google Veo) : 4 a 6 fois plus vite, cout par concept plus bas, consideration lift maintenu.",
+    "resume_citable": "Colgate-Palmolive a produit avec Hill's Pet Nutrition des publicites video par genAI (Google Veo, BCG) 4 a 6 fois plus vite qu'en production classique, a cout par concept nettement plus bas et avec un consideration lift egal ou superieur aux creations business as usual.",
+    "faq": [
+      {
+        "q": "Quel outil genAI Colgate-Palmolive a-t-il utilise ?",
+        "a": "L'outil Veo de Google, dans un pilote mene avec la division Hill's Pet Nutrition et Boston Consulting Group."
+      },
+      {
+        "q": "Quel gain de production le pilote a-t-il montre ?",
+        "a": "Des videos produites 4 a 6 fois plus vite, a un cout par concept nettement plus bas, avec un consideration lift egal ou superieur aux creations classiques."
+      }
+    ]
+  },
+  "logo_domain": "colgatepalmolive.com"
+}

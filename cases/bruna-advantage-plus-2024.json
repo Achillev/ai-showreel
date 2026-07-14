@@ -1,0 +1,275 @@
+{
+  "type_fiche": "succes",
+  "id": "bruna-advantage-plus-2024",
+  "marque": "Bruna",
+  "industrie": "retail_ecom",
+  "marches_deploiement": [
+    "Espagne",
+    "France",
+    "Belgique"
+  ],
+  "transposable_ue": {
+    "flag": "oui",
+    "note": "Cas deja deploye en Espagne, France et Belgique, donc en environnement RGPD/ePrivacy. Repose sur la Conversions API cote serveur et des etudes Conversion Lift ; activation soumise au consentement. Risque AI Act limite cote annonceur."
+  },
+  "metier": "Acquisition / media performance e-commerce",
+  "axes": {
+    "levier": "acquisition",
+    "touchpoints": [
+      "Facebook Feed",
+      "Instagram Feed",
+      "Advantage+ placements"
+    ],
+    "etape_parcours": "découverte -> achat",
+    "famille": "optimisation_automatisation",
+    "pattern": "Campagne de vente automatisee par IA plus Conversions API, mesuree en incremental par Conversion Lift, sur un pic saisonnier",
+    "type_ia": [
+      "ML de ciblage et d'encheres",
+      "ads catalogue dynamiques"
+    ],
+    "plateforme_stack": [
+      "Meta Advantage+ Shopping Campaigns",
+      "Meta Advantage+ placements",
+      "Conversions API",
+      "Meta Conversion Lift"
+    ],
+    "objectif_metrique": [
+      "achats incrementaux",
+      "part de revenu via Meta",
+      "ajouts au panier"
+    ]
+  },
+  "implementation": "plateforme",
+  "stack_technique": [
+    {
+      "nom": "Meta Advantage+ Shopping Campaigns",
+      "categorie": "plateforme",
+      "detail": "Format de vente automatise de Meta : l'IA choisit audiences, encheres, placements et creas a partir du feed catalogue.",
+      "url": "https://www.facebook.com/business/ads/meta-advantage-plus/sales-campaigns"
+    },
+    {
+      "nom": "Meta Conversions API",
+      "categorie": "outil",
+      "detail": "Remontee cote serveur des achats et ajouts au panier, pour que l'algorithme optimise meme quand le navigateur bloque le tracking.",
+      "url": "https://developers.facebook.com/docs/marketing-api/conversions-api"
+    },
+    {
+      "nom": "Meta Conversion Lift",
+      "categorie": "outil",
+      "detail": "Etudes d'incrementalite par groupes exposes / non exposes, utilisees pour isoler la part reellement generee par Meta.",
+      "url": "https://www.facebook.com/business"
+    },
+    {
+      "nom": "Roas Hunter",
+      "categorie": "integrateur",
+      "detail": "Agence media partenaire Meta basee a Valence, qui a opere le dispositif avec l'equipe e-commerce de Bruna.",
+      "url": "https://roashunter.com"
+    }
+  ],
+  "objectif_business": "Pousser les ventes en ligne pendant la saison des mariages, dans un secteur tres concurrentiel, en mesurant la part reelle de Meta plutot que l'attribution seule.",
+  "points_cles": ["Campagnes de vente Meta automatisees par IA (Advantage+ Shopping) sur la saison des mariages.", "Conversions API cote serveur pour la mesure, incrementalite via Conversion Lift, avec l'agence Roas Hunter.", "50% des revenus via Meta, 38% d'achats incrementaux, 62% des ajouts au panier.", "Preuve B, statut vivant confirme."],
+  "description": "Bruna, la marque espagnole de bijoux et accessoires personnalisables, a confie ses campagnes de vente sur Meta au mode Advantage+ Shopping, ou l'IA choisit audiences, placements et creas a partir du catalogue produit. Le compte a ete branche a la Conversions API cote serveur pour fiabiliser la remontee des achats, puis mesure par des etudes Conversion Lift sur la periode de forte demande liee aux mariages en Espagne, France et Belgique. Le travail a ete mene avec l'agence Roas Hunter, partenaire Meta base a Valence. Sur ce dispositif, 50 pour cent des revenus ont ete generes via les technologies Meta, 38 pour cent des achats etaient incrementaux et 62 pour cent des ajouts au panier venaient des technologies Meta.",
+  "fonctionnement_operationnel": {
+    "cadence": "Diffusion en continu, avec une montee en charge sur le pic saisonnier des mariages ; mesure incrementale par vagues de Conversion Lift.",
+    "opere_par": "L'agence Roas Hunter avec l'equipe e-commerce de Bruna.",
+    "signal_pilote": "Les achats et ajouts au panier remontes par la Conversions API cote serveur. Sans ce signal serveur, l'algorithme perd des conversions bloquees par le navigateur et optimise moins bien.",
+    "etapes": [
+      {
+        "etape": "Fiabiliser la mesure d'achat",
+        "detail": "Conversions API cote serveur pour que chaque vente remonte meme quand le navigateur bloque le tracking. C'est le carburant de l'optimisation.",
+        "acteur": "Agence / equipe data"
+      },
+      {
+        "etape": "Diffuser via l'IA Meta",
+        "detail": "Advantage+ Shopping choisit audiences, placements et creas a partir du catalogue. L'equipe fournit feed et visuels.",
+        "acteur": "IA Meta"
+      },
+      {
+        "etape": "Mesurer en incremental",
+        "detail": "Des etudes Conversion Lift isolent la part reellement generee par Meta pendant le pic mariages, pour arbitrer le budget.",
+        "acteur": "Agence / Meta"
+      }
+    ]
+  },
+  "resultats": [
+    {
+      "metrique": "Part de revenu genere via les technologies Meta",
+      "valeur": "50 %",
+      "citation_exacte": "50% of revenues generated via Meta technologies",
+      "source_ref": "S1"
+    },
+    {
+      "metrique": "Part d'achats incrementaux attribues aux technologies Meta",
+      "valeur": "38 %",
+      "citation_exacte": "38% of incremental purchases attributed to Meta technologies",
+      "source_ref": "S1"
+    },
+    {
+      "metrique": "Part d'ajouts au panier generes par les technologies Meta",
+      "valeur": "62 %",
+      "citation_exacte": "62% of add-to-cart events generated by Meta technologies",
+      "source_ref": "S1"
+    }
+  ],
+  "niveau_preuve": {
+    "niveau": "B",
+    "justification": "Étude de cas partenaire officielle Meta (Meta Business Partners), chiffree, adossee a la Conversions API et a des Conversion Lift, avec fondatrice et agence nommees ; source unique publiee par la plateforme et son partenaire."
+  },
+  "dates": {
+    "lancement": "2024",
+    "derniere_confirmation_activite": "2024 - saison des mariages ; Advantage+ reste le format de vente par defaut de Meta",
+    "verifie_le": "2026-07-11",
+    "revoir_apres": "2027-01-11"
+  },
+  "statut_vivant": {
+    "statut": "confirme",
+    "note": "Bruna reste un e-commercant actif et Advantage+ Shopping est le format de vente par defaut de Meta ; l'agence Roas Hunter reste partenaire Meta, ce qui garantit la perennite du pattern."
+  },
+  "sources": [
+    {
+      "ref": "S1",
+      "type": "customer_story_plateforme",
+      "titre": "Roas Hunter: Meta Business Partner Advantage+ Success Story - Bruna",
+      "url": "https://www.facebook.com/business/marketing-partners/case-studies/Roas-Hunter_Bruna",
+      "date_publication": "2024",
+      "consulte_le": "2026-07-11",
+      "fiabilite": "T2_officiel_interesse"
+    },
+    {
+      "ref": "S2",
+      "type": "blog_officiel",
+      "titre": "Meta Advantage+ Sales Campaigns: AI Automated Shop Ads",
+      "url": "https://www.facebook.com/business/ads/meta-advantage-plus/sales-campaigns",
+      "date_publication": "2024",
+      "consulte_le": "2026-07-11",
+      "fiabilite": "T2_officiel_interesse"
+    }
+  ],
+  "schema_flow": {
+    "statut": "documente",
+    "noeuds": [
+      {
+        "id": "cat",
+        "role_generique": "data_source",
+        "label": "Catalogue produit + signaux d'achat",
+        "outil_documente": "Feed produit + Conversions API"
+      },
+      {
+        "id": "ai",
+        "role_generique": "paid_platform",
+        "label": "IA Meta : audiences, encheres, placements, creas",
+        "outil_documente": "Meta Advantage+ Shopping"
+      },
+      {
+        "id": "touch",
+        "role_generique": "site_app",
+        "label": "Feed Facebook / Instagram + Advantage+ placements"
+      },
+      {
+        "id": "buy",
+        "role_generique": "site_app",
+        "label": "Achat en ligne"
+      },
+      {
+        "id": "lift",
+        "role_generique": "data_source",
+        "label": "Mesure incrementale",
+        "outil_documente": "Meta Conversion Lift"
+      }
+    ],
+    "liens": [
+      [
+        "cat",
+        "ai"
+      ],
+      [
+        "ai",
+        "touch"
+      ],
+      [
+        "touch",
+        "buy"
+      ],
+      [
+        "buy",
+        "lift"
+      ],
+      [
+        "lift",
+        "ai",
+        "boucle d'optimisation en incremental"
+      ]
+    ]
+  },
+  "replication": {
+    "statut_epistemique": "infere",
+    "prerequis_data": [
+      "Catalogue produit propre et a jour (feed)",
+      "Conversions API cote serveur avec achats et ajouts au panier fiables",
+      "Volume suffisant pour des etudes Conversion Lift"
+    ],
+    "prerequis_orga": [
+      "Un pic saisonnier ou un budget concentre a arbitrer",
+      "Accord pour piloter en incremental plutot qu'au dernier clic"
+    ],
+    "stack_possible": [
+      "Meta Advantage+ Sales Campaigns + CAPI (server-side GTM, Shopify ou partenaire)",
+      "Conversion Lift ou geo-test comme arbitre"
+    ],
+    "premiere_etape": "Brancher la Conversions API cote serveur puis lancer une campagne Advantage+ Shopping, et mesurer sa part incrementale par un Conversion Lift sur le pic saisonnier.",
+    "playbook": [
+      {
+        "action": "Brancher la Conversions API cote serveur (server-side GTM, Shopify ou partenaire) et verifier la deduplication avec le pixel.",
+        "livrable": "Achats et ajouts au panier remontes de facon fiable."
+      },
+      {
+        "action": "Nettoyer le feed catalogue : titres, images, prix, stock et categories a jour.",
+        "livrable": "Catalogue valide dans le gestionnaire de catalogue Meta."
+      },
+      {
+        "action": "Lancer la campagne Advantage+ Shopping avec le budget concentre sur le pic saisonnier, sans sur-segmentation manuelle.",
+        "livrable": "Campagne en phase d'apprentissage."
+      },
+      {
+        "action": "Laisser l'algorithme optimiser ; surveiller frequence, fatigue creative et repartition des placements.",
+        "livrable": "Campagne stabilisee, journal des ajustements."
+      },
+      {
+        "action": "Mesurer la part incrementale par Conversion Lift (ou geo-test) et arbitrer le budget sur cette base plutot qu'au dernier clic.",
+        "livrable": "Lecture incrementale et decision budget documentees."
+      }
+    ],
+    "equipe": "1 media buyer Meta (interne ou agence) + 1 dev pour la Conversions API."
+  },
+  "intervenants": [
+    {
+      "nom": "Maria Alguacil",
+      "role": "Founder & Creative Director, Bruna",
+      "source_ref": "S1"
+    }
+  ],
+  "agences": [
+    {
+      "nom": "Roas Hunter",
+      "role": "Agence media partenaire Meta (Valence, Espagne)",
+      "source_ref": "S1"
+    }
+  ],
+  "seo": {
+    "slug": "bruna-meta-advantage-plus-incremental-2024",
+    "title": "Bruna : ventes Meta automatisees par IA (Advantage+) - 38 % d'achats incrementaux (2024)",
+    "meta_description": "Avec l'agence Roas Hunter, Bruna a mesure que Meta Advantage+ generait 50 % de ses revenus et 38 % d'achats incrementaux sur la saison des mariages en Espagne, France et Belgique.",
+    "resume_citable": "En 2024, la marque espagnole Bruna a genere 50 % de ses revenus et 38 % d'achats incrementaux via Meta Advantage+ et la Conversions API, mesures par Conversion Lift sur la saison des mariages en Espagne, France et Belgique.",
+    "faq": [
+      {
+        "q": "Quel dispositif Meta Bruna a-t-il utilise ?",
+        "a": "Advantage+ Shopping pour la diffusion, la Conversions API pour fiabiliser la mesure d'achat cote serveur, et des etudes Conversion Lift pour l'incrementalite."
+      },
+      {
+        "q": "Qui a opere les campagnes ?",
+        "a": "L'agence Roas Hunter, partenaire Meta basee a Valence, avec l'equipe e-commerce de Bruna."
+      }
+    ]
+  },
+  "logo_domain": "bruna.nl"
+}

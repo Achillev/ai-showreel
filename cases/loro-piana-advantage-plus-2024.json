@@ -1,0 +1,301 @@
+{
+  "type_fiche": "succes",
+  "id": "loro-piana-advantage-plus-2024",
+  "marque": "Loro Piana",
+  "groupe": "LVMH",
+  "industrie": "luxe_beaute",
+  "marches_deploiement": [
+    "Emirats arabes unis"
+  ],
+  "transposable_ue": {
+    "flag": "oui",
+    "note": "Le cas est piloté par une equipe LVMH europeenne (Publicis/Spark Foundry). En UE, l'activation demande un consentement RGPD/ePrivacy propre (Pixel + Conversions API) et l'usage d'audiences personnalisees. Le ciblage algorithmique Meta reste un risque limite au sens de l'AI Act cote annonceur."
+  },
+  "metier": "Acquisition / media performance e-commerce",
+  "axes": {
+    "levier": "acquisition",
+    "touchpoints": [
+      "Facebook Feed",
+      "Instagram Feed",
+      "Advantage+ placements"
+    ],
+    "etape_parcours": "considération -> achat",
+    "famille": "optimisation_automatisation",
+    "pattern": "Campagne de vente entierement automatisee par IA (audiences, placements, encheres, combinaisons creatives), remarketing et prospection dans une seule campagne",
+    "type_ia": [
+      "ML de ciblage et d'encheres",
+      "ads catalogue dynamiques",
+      "optimisation creative automatisee"
+    ],
+    "plateforme_stack": [
+      "Meta Advantage+ Sales Campaigns",
+      "Meta Advantage+ placements",
+      "Advantage+ campaign budget",
+      "Custom audiences",
+      "Carousel / Collection ads"
+    ],
+    "objectif_metrique": [
+      "coût par achat",
+      "volume d'achats",
+      "coût par ajout au panier"
+    ]
+  },
+  "implementation": "plateforme",
+  "objectif_business": "Vendre davantage de produits de luxe en ligne aux Emirats sans multiplier les campagnes manuelles : l'IA de Meta gere le ciblage et la diffusion, l'equipe garde la main sur le catalogue et les creas.",
+  "points_cles": ["Campagne de vente e-commerce entierement automatisee par l'IA de Meta aux Emirats.", "Meta Advantage+ Sales Campaigns, Pixel et Conversions API, custom audiences.", "Deux fois plus d'achats, cout par achat -52 %, cout par ajout au panier -13 %.", "Preuve B, statut confirme : etude de cas Meta sur test compare a la structure manuelle."],
+  "description": "Loro Piana, la maison italienne de mode et de cachemire du groupe LVMH, a compare son ancienne structure de campagnes catalogue (ciblage et segmentation manuels) au mode Advantage+ Sales Campaigns de Meta. Le principe : l'annonceur fournit le catalogue et les visuels (carousels photo et catalogue, collection ads, photo ads), et l'algorithme decide seul des audiences, des placements, des encheres et des combinaisons creatives, tout en couvrant remarketing et prospection dans une meme campagne. Le test a vise hommes et femmes de 18 ans et plus aux Emirats arabes unis, avec des audiences personnalisees de clients existants et de visiteurs du site. Sur la periode du 7 mars au 6 avril 2024, la campagne Advantage+ a sorti deux fois plus d'achats et un coût par achat 52 pour cent plus bas que la structure manuelle, avec un coût par ajout au panier en baisse de 13 pour cent.",
+  "fonctionnement_operationnel": {
+    "cadence": "En continu, budget de campagne gere par l'algorithme (Advantage+ campaign budget). Chaque changement majeur relance une phase d'apprentissage de 1 a 2 semaines.",
+    "opere_par": "L'equipe performance marketing de la marque, epaulee par l'agence media Spark Foundry (Publicis) et l'equipe e-commerce pour le feed.",
+    "signal_pilote": "Les achats et ajouts au panier remontes par le Pixel et la Conversions API. Si ce signal est incomplet, l'algorithme optimise sur du bruit et le coût par achat remonte.",
+    "etapes": [
+      {
+        "etape": "Fournir catalogue et creas",
+        "detail": "Feed produit plus un stock de formats varies : carousels photo et catalogue, collection ads, photo ads. L'algorithme teste les combinaisons, l'equipe ne choisit pas la gagnante.",
+        "acteur": "Équipe e-commerce / creative"
+      },
+      {
+        "etape": "Charger les audiences personnalisees",
+        "detail": "Listes de clients existants et de visiteurs du site, utilisees comme signaux de valeur et pour le remarketing dans la meme campagne.",
+        "acteur": "Équipe data / CRM"
+      },
+      {
+        "etape": "Laisser l'IA piloter",
+        "detail": "Advantage+ decide audiences, placements et encheres, et combine prospection et remarketing. Modifier la campagne trop souvent casse l'apprentissage.",
+        "acteur": "IA Meta"
+      },
+      {
+        "etape": "Comparer a la structure manuelle",
+        "detail": "La decision de bascule s'est prise sur un test compare Advantage+ contre campagnes catalogue manuelles, arbitre sur coût par achat et volume.",
+        "acteur": "Équipe media / agence"
+      }
+    ]
+  },
+  "resultats": [
+    {
+      "metrique": "Volume d'achats vs campagnes manuelles",
+      "valeur": "x2",
+      "citation_exacte": "2X more purchases",
+      "source_ref": "S1"
+    },
+    {
+      "metrique": "Coût par achat vs campagnes manuelles",
+      "valeur": "-52 %",
+      "citation_exacte": "52% lower cost per purchase",
+      "source_ref": "S1"
+    },
+    {
+      "metrique": "Coût par ajout au panier vs campagnes manuelles",
+      "valeur": "-13 %",
+      "citation_exacte": "13% lower cost per add-to-cart",
+      "source_ref": "S1"
+    }
+  ],
+  "niveau_preuve": {
+    "niveau": "B",
+    "justification": "Étude de cas officielle Meta, chiffree, adossee a un test compare Advantage+ contre structure manuelle, avec personnes et agence nommees ; source unique publiee par la plateforme, non corroboree par une source primaire ou de presse."
+  },
+  "dates": {
+    "lancement": "2024-03-07",
+    "derniere_confirmation_activite": "2025 - Advantage+ devenu le format de vente par defaut chez Meta (renomme Advantage+ Sales Campaigns)",
+    "verifie_le": "2026-07-11",
+    "revoir_apres": "2027-01-11"
+  },
+  "statut_vivant": {
+    "statut": "confirme",
+    "note": "Loro Piana reste un annonceur Meta actif et Advantage+ Sales Campaigns est le format de vente par defaut de Meta (plus de 20 Md$ de run-rate annuel annonce fin 2024), ce qui garantit la perennite du pattern."
+  },
+  "sources": [
+    {
+      "ref": "S1",
+      "type": "customer_story_plateforme",
+      "titre": "Loro Piana: Facebook ads case study - Advantage+ sales campaigns",
+      "url": "https://www.facebook.com/business/success/loro-piana",
+      "date_publication": "2024",
+      "consulte_le": "2026-07-11",
+      "fiabilite": "T2_officiel_interesse"
+    },
+    {
+      "ref": "S2",
+      "type": "blog_officiel",
+      "titre": "Meta Advantage+ Sales Campaigns: AI Automated Shop Ads",
+      "url": "https://www.facebook.com/business/ads/meta-advantage-plus/sales-campaigns",
+      "date_publication": "2024",
+      "consulte_le": "2026-07-11",
+      "fiabilite": "T2_officiel_interesse"
+    }
+  ],
+  "schema_flow": {
+    "statut": "documente",
+    "noeuds": [
+      {
+        "id": "cat",
+        "role_generique": "data_source",
+        "label": "Catalogue produit + signaux d'achat",
+        "outil_documente": "Feed produit + Pixel / Conversions API"
+      },
+      {
+        "id": "aud",
+        "role_generique": "data_source",
+        "label": "Audiences personnalisees (clients, visiteurs)",
+        "outil_documente": "Custom audiences Meta"
+      },
+      {
+        "id": "creas",
+        "role_generique": "data_source",
+        "label": "Creas : carousels, collection, photo ads"
+      },
+      {
+        "id": "ai",
+        "role_generique": "paid_platform",
+        "label": "IA Meta : audiences, encheres, placements, prospection + remarketing",
+        "outil_documente": "Meta Advantage+ Sales Campaigns"
+      },
+      {
+        "id": "touch",
+        "role_generique": "site_app",
+        "label": "Feed Facebook / Instagram + Advantage+ placements"
+      },
+      {
+        "id": "buy",
+        "role_generique": "site_app",
+        "label": "Achat en ligne"
+      }
+    ],
+    "liens": [
+      [
+        "cat",
+        "ai"
+      ],
+      [
+        "aud",
+        "ai"
+      ],
+      [
+        "creas",
+        "ai"
+      ],
+      [
+        "ai",
+        "touch"
+      ],
+      [
+        "touch",
+        "buy"
+      ],
+      [
+        "buy",
+        "ai",
+        "boucle d'optimisation sur les achats"
+      ]
+    ]
+  },
+  "replication": {
+    "statut_epistemique": "infere",
+    "prerequis_data": [
+      "Catalogue produit propre et a jour (feed)",
+      "Pixel + Conversions API avec evenements d'achat et d'ajout au panier fiables",
+      "Listes clients et visiteurs pour audiences personnalisees et exclusions"
+    ],
+    "prerequis_orga": [
+      "Banque de creas multi-formats (carousels, collection, photo)",
+      "Accepter de laisser tourner l'apprentissage sans sur-piloter la campagne"
+    ],
+    "stack_possible": [
+      "Meta Advantage+ Sales Campaigns + CAPI (server-side GTM ou partenaire)",
+      "Advantage+ campaign budget"
+    ],
+    "premiere_etape": "Lancer un test compare : une campagne Advantage+ Sales contre la structure catalogue manuelle existante, sur 20 a 30 pour cent du budget social, arbitre sur coût par achat.",
+    "playbook": [
+      {
+        "action": "Fiabiliser le feed produit et la mesure : Pixel + Conversions API avec evenements d'achat et d'ajout au panier verifies",
+        "livrable": "Feed propre + evenements valides dans Events Manager"
+      },
+      {
+        "action": "Charger les audiences personnalisees (clients, visiteurs) et constituer la banque de creas multi-formats",
+        "livrable": "Audiences actives + carousels, collection et photo ads prets"
+      },
+      {
+        "action": "Lancer Advantage+ Sales en parallele de la structure catalogue manuelle, sur une part du budget",
+        "livrable": "Test compare live, phase d'apprentissage enclenchee"
+      },
+      {
+        "action": "Laisser converger sans modifier la campagne, chaque changement majeur relancant 1 a 2 semaines d'apprentissage",
+        "livrable": "Campagne sortie de la phase d'apprentissage, donnees stables"
+      },
+      {
+        "action": "Arbitrer sur cout par achat et volume d'achats contre la structure manuelle",
+        "livrable": "Decision chiffree de bascule du budget catalogue vers Advantage+"
+      }
+    ],
+    "equipe": "1 media buyer + 1 dev pour la Conversions API + l'equipe e-commerce pour le feed"
+  },
+  "intervenants": [
+    {
+      "nom": "Serena Arosio",
+      "role": "Global Performance Marketing Manager, Loro Piana",
+      "source_ref": "S1"
+    },
+    {
+      "nom": "Owen Dumenil",
+      "role": "Performance Lead LVMH, Loro Piana",
+      "source_ref": "S1"
+    }
+  ],
+  "agences": [
+    {
+      "nom": "Spark Foundry (Publicis)",
+      "role": "Agence media sur le compte",
+      "source_ref": "S1"
+    }
+  ],
+  "seo": {
+    "slug": "loro-piana-meta-advantage-plus-2024",
+    "title": "Loro Piana : vente e-commerce automatisee par IA (Meta Advantage+) - x2 achats, -52 % de coût par achat (2024)",
+    "meta_description": "Loro Piana (LVMH) a confie ses campagnes de vente Meta a l'IA Advantage+ aux Emirats : deux fois plus d'achats et un coût par achat 52 % plus bas que la structure manuelle.",
+    "resume_citable": "En 2024, Loro Piana (LVMH) a double ses achats en ligne et baisse son coût par achat de 52 % aux Emirats en confiant ses campagnes de vente a l'IA de Meta (Advantage+ Sales Campaigns), face a sa structure catalogue manuelle.",
+    "faq": [
+      {
+        "q": "Quel outil Loro Piana a-t-il utilise ?",
+        "a": "Meta Advantage+ Sales Campaigns, qui pilote audiences, encheres, placements et creas, et couvre prospection et remarketing dans une seule campagne."
+      },
+      {
+        "q": "Contre quoi la performance est-elle comparee ?",
+        "a": "Contre les campagnes catalogue manuelles precedentes de la marque, avec ciblage et segmentation faits a la main."
+      }
+    ]
+  },
+  "logo_domain": "loropiana.com",
+  "stack_technique": [
+    {
+      "nom": "Meta Advantage+ Sales Campaigns",
+      "categorie": "plateforme",
+      "detail": "audiences, placements, encheres et combinaisons creatives pilotes par le ML de Meta, prospection et remarketing dans une meme campagne",
+      "url": "https://www.facebook.com/business/ads/meta-advantage-plus/sales-campaigns"
+    },
+    {
+      "nom": "Meta Pixel + Conversions API",
+      "categorie": "infra",
+      "detail": "remontee des achats et ajouts au panier, le signal sur lequel l'algorithme optimise",
+      "url": "https://www.facebook.com/business/tools/conversions-api"
+    },
+    {
+      "nom": "Custom audiences Meta",
+      "categorie": "outil",
+      "detail": "listes de clients existants et de visiteurs du site, utilisees comme signaux de valeur et pour le remarketing",
+      "url": "https://www.facebook.com/business"
+    },
+    {
+      "nom": "Formats catalogue Meta (carousel, collection, photo ads)",
+      "categorie": "outil",
+      "detail": "la banque de creas fournie a l'algorithme, qui teste les combinaisons sans arbitrage humain",
+      "url": "https://www.facebook.com/business"
+    },
+    {
+      "nom": "Spark Foundry (Publicis)",
+      "categorie": "integrateur",
+      "detail": "agence media sur le compte, co-pilotage du test compare Advantage+ contre structure manuelle",
+      "url": "https://www.sparkfoundryww.com"
+    }
+  ]
+}

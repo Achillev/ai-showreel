@@ -1,0 +1,303 @@
+{
+  "id": "mercedes-benz-mbux-chatgpt-2024",
+  "type_fiche": "succes",
+  "marque": "Mercedes-Benz",
+  "groupe": "Mercedes-Benz Group AG",
+  "industrie": "auto",
+  "marches_deploiement": [
+    "Etats-Unis",
+    "Allemagne",
+    "Royaume-Uni",
+    "deploiement mondial (parc MBUX)"
+  ],
+  "transposable_ue": {
+    "flag": "oui",
+    "note": "Deja deploye en Allemagne et au Royaume-Uni des decembre 2024. Les donnees de commande vocale transitent par le Mercedes-Benz Intelligent Cloud puis sont anonymisees ; le point de vigilance RGPD porte sur le consentement a l'envoi de la requete vers Azure OpenAI et Bing."
+  },
+  "metier": "experience produit / interface vocale embarquee",
+  "intervenants": [
+    {
+      "nom": "Markus Schaefer",
+      "role": "Chief Technology Officer, Development and Procurement, Mercedes-Benz",
+      "source_ref": "S1"
+    }
+  ],
+  "axes": {
+    "levier": "retention",
+    "touchpoints": [
+      "vehicule (infotainment MBUX)",
+      "assistant vocal Hey Mercedes"
+    ],
+    "etape_parcours": "post-achat",
+    "famille": "conversation",
+    "pattern": "assistant vocal in-car genAI",
+    "type_ia": [
+      "LLM (ChatGPT/GPT)",
+      "reconnaissance et synthese vocale",
+      "recherche web"
+    ],
+    "plateforme_stack": [
+      "Microsoft Azure OpenAI Service",
+      "ChatGPT",
+      "Microsoft Bing"
+    ],
+    "objectif_metrique": [
+      "nombre de vehicules equipes",
+      "engagement vocal",
+      "differenciation d'usage"
+    ]
+  },
+  "implementation": "hybride",
+  "stack_technique": [
+    {
+      "nom": "ChatGPT (OpenAI)",
+      "categorie": "llm",
+      "detail": "Modele conversationnel qui redige les reponses en langage naturel aux questions ouvertes du conducteur.",
+      "url": "https://openai.com"
+    },
+    {
+      "nom": "Microsoft Azure OpenAI Service",
+      "categorie": "plateforme",
+      "detail": "Hebergement cloud du modele ChatGPT utilise par Mercedes-Benz pour la couche generative de l'assistant.",
+      "url": "https://azure.microsoft.com"
+    },
+    {
+      "nom": "Microsoft Bing",
+      "categorie": "outil",
+      "detail": "Recherche web declenchee par l'assistant pour recuperer une information a jour avant la redaction de la reponse.",
+      "url": "https://www.bing.com"
+    },
+    {
+      "nom": "MBUX (Hey Mercedes)",
+      "categorie": "plateforme",
+      "detail": "Systeme d'infotainment embarque qui capte la voix, distingue commande vehicule et question ouverte, et restitue la reponse.",
+      "url": "https://www.mercedes-benz.com"
+    },
+    {
+      "nom": "Mercedes-Benz Intelligent Cloud",
+      "categorie": "infra",
+      "detail": "Stockage et anonymisation des donnees de commande vocale avant analyse.",
+      "url": "https://www.mercedes-benz.com"
+    }
+  ],
+  "objectif_business": "Enrichir l'assistant vocal embarque avec des reponses en langage naturel sur des sujets ouverts, au-dela des commandes vehicule, pour renforcer l'attachement a la marque sur la duree de possession et differencier l'experience a bord.",
+  "description": "Sur les vehicules equipes du systeme d'infotainment MBUX, l'utilisateur active l'assistant en disant Hey Mercedes ou via le bouton du volant. Au-dela des commandes classiques (navigation, telephone, climatisation), l'assistant declenche une recherche Bing et fait rediger une reponse en langage naturel par ChatGPT via Azure OpenAI. Le conducteur peut poser des questions de culture generale, sur une destination, la meteo, une recette, et poursuivre la conversation sur le sujet. Lance en programme beta aux Etats-Unis le 16 juin 2023 pour plus de 900 000 vehicules, puis pousse en serie a plus de trois millions de vehicules dans le monde via mise a jour a distance en decembre 2024, en allemand, anglais britannique et anglais americain.",
+  "resultats": [
+    {
+      "metrique": "Vehicules eligibles a la mise a jour ChatGPT (serie, decembre 2024)",
+      "valeur": "> 3 000 000",
+      "citation_exacte": "free update to over three million vehicles",
+      "source_ref": "S2"
+    },
+    {
+      "metrique": "Vehicules dans le programme beta US (juin 2023)",
+      "valeur": "> 900 000",
+      "citation_exacte": "over 900,000 vehicles equipped with the MBUX infotainment system",
+      "source_ref": "S1"
+    },
+    {
+      "metrique": "Positionnement du dispositif (declaration CTO)",
+      "valeur": "complement de la commande vocale existante",
+      "citation_exacte": "ChatGPT complements the existing intuitive voice control via 'Hey Mercedes.'",
+      "source_ref": "S1"
+    }
+  ],
+  "niveau_preuve": {
+    "niveau": "C",
+    "justification": "Chiffre de deploiement public (plus de trois millions de vehicules) issu du communique officiel Mercedes-Benz et repris par plusieurs titres de presse concordants ; pas de metrique financiere isolant l'impact, donc niveau C plutot que A."
+  },
+  "dates": {
+    "lancement": "2023-06-16 (beta US ChatGPT)",
+    "derniere_confirmation_activite": "2024-12-17 (deploiement serie a plus de 3 millions de vehicules)",
+    "verifie_le": "2026-07-11",
+    "revoir_apres": "2027-01-11"
+  },
+  "statut_vivant": {
+    "statut": "confirme",
+    "note": "Feature poussee en serie via mise a jour a distance en decembre 2024, active sur le parc MBUX ; la marque a par ailleurs annonce le MBUX Virtual Assistant genAI de nouvelle generation (MB.OS) pour les plateformes suivantes."
+  },
+  "sources": [
+    {
+      "ref": "S1",
+      "type": "presse",
+      "fiabilite": "T3_presse_etablie",
+      "titre": "Mercedes-Benz Adds ChatGPT to Vehicles",
+      "url": "https://www.automotive-fleet.com/news/mercedes-benz-adds-chatgpt-to-vehicles",
+      "date_publication": "2023-06",
+      "consulte_le": "2026-07-11"
+    },
+    {
+      "ref": "S2",
+      "type": "blog_officiel",
+      "fiabilite": "T1_primaire",
+      "titre": "Human-like conversations with your Mercedes-Benz: Enabled by MBUX Voice Assistant and AI-driven knowledge feature",
+      "url": "https://media.mbusa.com/releases/human-like-conversations-with-your-mercedes-benz-enabled-by-mbux-voice-assistant-and-ai-driven-knowledge-feature",
+      "date_publication": "2024-12",
+      "consulte_le": "2026-07-11"
+    },
+    {
+      "ref": "S3",
+      "type": "presse",
+      "fiabilite": "T4_secondaire",
+      "titre": "Mercedes-Benz is rolling out ChatGPT-powered MBUX Voice Assistant to three million vehicles",
+      "url": "https://www.neowin.net/news/mercedesbenz-is-rolling-out-chatgpt-powered-mbux-voice-assistant-to-three-million-vehicles/",
+      "date_publication": "2024-12",
+      "consulte_le": "2026-07-11"
+    }
+  ],
+  "fonctionnement_operationnel": {
+    "cadence": "Temps reel, une requete a la fois pendant le trajet.",
+    "opere_par": "L'equipe connected services et voice de Mercedes-Benz, avec Microsoft Azure OpenAI en back-end.",
+    "signal_pilote": "La requete vocale et son contexte. Sans connectivite cellulaire ni acces au cloud, la partie recherche et reponse genAI tombe et l'assistant retombe sur les commandes locales.",
+    "etapes": [
+      {
+        "etape": "Activation",
+        "detail": "Le conducteur dit Hey Mercedes ou presse le bouton du volant.",
+        "acteur": "client"
+      },
+      {
+        "etape": "Comprehension et routage",
+        "detail": "L'assistant MBUX distingue une commande vehicule d'une question ouverte ; les questions ouvertes partent vers la couche genAI.",
+        "acteur": "IA"
+      },
+      {
+        "etape": "Recherche et redaction",
+        "detail": "Une recherche Bing recupere l'information a jour, ChatGPT via Azure OpenAI redige une reponse en langage naturel.",
+        "acteur": "IA"
+      },
+      {
+        "etape": "Restitution et suivi",
+        "detail": "La reponse est lue au conducteur, qui peut poursuivre la conversation sur le meme sujet.",
+        "acteur": "IA"
+      },
+      {
+        "etape": "Journalisation",
+        "detail": "Les donnees de commande vocale sont stockees dans le Mercedes-Benz Intelligent Cloud, anonymisees puis analysees.",
+        "acteur": "equipe data"
+      }
+    ]
+  },
+  "schema_flow": {
+    "statut": "documente",
+    "noeuds": [
+      {
+        "id": "conducteur",
+        "role_generique": "humain",
+        "label": "Conducteur"
+      },
+      {
+        "id": "mbux",
+        "role_generique": "site_app",
+        "label": "Assistant vocal MBUX (Hey Mercedes)",
+        "outil_documente": "MBUX / MB.OS"
+      },
+      {
+        "id": "bing",
+        "role_generique": "data_source",
+        "label": "Recherche web",
+        "outil_documente": "Microsoft Bing"
+      },
+      {
+        "id": "llm",
+        "role_generique": "modele_ia",
+        "label": "Generation de reponse",
+        "outil_documente": "ChatGPT via Azure OpenAI Service"
+      },
+      {
+        "id": "cloud",
+        "role_generique": "data_source",
+        "label": "Stockage et anonymisation",
+        "outil_documente": "Mercedes-Benz Intelligent Cloud"
+      }
+    ],
+    "liens": [
+      [
+        "conducteur",
+        "mbux",
+        "commande vocale"
+      ],
+      [
+        "mbux",
+        "bing",
+        "requete de recherche"
+      ],
+      [
+        "bing",
+        "llm",
+        "contexte web"
+      ],
+      [
+        "llm",
+        "mbux",
+        "reponse langage naturel"
+      ],
+      [
+        "mbux",
+        "conducteur",
+        "restitution vocale"
+      ],
+      [
+        "mbux",
+        "cloud",
+        "journalisation anonymisee"
+      ]
+    ]
+  },
+  "replication": {
+    "statut_epistemique": "infere",
+    "playbook": [
+      {
+        "action": "Isoler les questions ouvertes que l'assistant vocal actuel ne sait pas traiter et cadrer le volet juridique du consentement a l'envoi des requetes vers le cloud.",
+        "livrable": "Liste priorisee de cas d'usage et dossier privacy valide."
+      },
+      {
+        "action": "Prototyper le routage d'intention (commande vehicule vs question ouverte) et brancher un LLM cloud avec recherche web sur banc d'essai.",
+        "livrable": "Prototype fonctionnel hors vehicule avec latence mesuree."
+      },
+      {
+        "action": "Durcir le dispositif : filtrage des sujets sensibles, comportement en perte de connectivite, integration ASR/TTS embarquee.",
+        "livrable": "Version durcie testee en conditions reelles de conduite."
+      },
+      {
+        "action": "Ouvrir un programme beta sur un sous-parc via mise a jour a distance et mesurer l'engagement vocal.",
+        "livrable": "Rapport beta : usage, sujets demandes, incidents."
+      },
+      {
+        "action": "Deployer en serie par mise a jour OTA et suivre l'usage en production.",
+        "livrable": "Feature en production sur le parc cible avec tableau de bord d'usage."
+      }
+    ],
+    "equipe": "1 PM voice + 2-4 devs embarque/connected services + 1 ingenieur cloud/LLM, avec un appui juridique privacy.",
+    "prerequis_data": [
+      "contenu de reference a jour (recherche web ou base connaissance)",
+      "contexte vehicule et session"
+    ],
+    "prerequis_orga": [
+      "equipe connected services",
+      "accord juridique et privacy sur l'envoi de requetes au cloud"
+    ],
+    "stack_possible": [
+      "Azure OpenAI ou equivalent LLM cloud",
+      "moteur de recherche/RAG",
+      "couche ASR/TTS embarquee"
+    ],
+    "premiere_etape": "Isoler les questions ouvertes que l'assistant vocal actuel ne sait pas traiter et les router vers un LLM avec recherche."
+  },
+  "seo": {
+    "slug": "mercedes-benz-mbux-chatgpt-2024",
+    "title": "Mercedes-Benz : assistant vocal MBUX augmente a ChatGPT - plus de 3 millions de vehicules (2024)",
+    "meta_description": "Mercedes-Benz a pousse ChatGPT via Azure OpenAI dans plus de 3 millions de vehicules MBUX en decembre 2024, apres un beta US de 900 000 vehicules en 2023.",
+    "resume_citable": "En decembre 2024, Mercedes-Benz a rendu ChatGPT (Azure OpenAI + Bing) disponible en mise a jour gratuite sur plus de trois millions de vehicules MBUX, apres un beta americain couvrant plus de 900 000 vehicules en juin 2023.",
+    "faq": [
+      {
+        "q": "Quelle technologie fait tourner l'assistant vocal genAI de Mercedes-Benz ?",
+        "a": "ChatGPT via Microsoft Azure OpenAI Service, couple a une recherche Microsoft Bing pour les reponses a jour."
+      },
+      {
+        "q": "Sur combien de vehicules la feature est-elle deployee ?",
+        "a": "Plus de trois millions de vehicules equipes MBUX dans le monde depuis decembre 2024, apres un beta US de plus de 900 000 vehicules en 2023."
+      }
+    ]
+  },
+  "logo_domain": "mercedes-benz.com"
+}

@@ -1,0 +1,276 @@
+{
+  "id": "nykaa-reco-retargeting-ai-2023",
+  "type_fiche": "succes",
+  "marque": "Nykaa",
+  "groupe": "FSN E-Commerce Ventures",
+  "industrie": "luxe_beaute",
+  "marches_deploiement": [
+    "Inde"
+  ],
+  "transposable_ue": {
+    "flag": "oui_avec_adaptations",
+    "note": "Retargeting et recommandation reposent sur le suivi comportemental cross-device. En UE, cela suppose une base legale et un consentement cookies/traceurs conforme (RGPD, ePrivacy), plus une gestion du consentement pour la publicite personnalisee."
+  },
+  "metier": "e-commerce / marketing",
+  "intervenants": [
+    {
+      "nom": "Hitesh Malhotra",
+      "role": "Chief Marketing Officer, Nykaa.com",
+      "source_ref": "S1"
+    }
+  ],
+  "axes": {
+    "levier": "activation_conversion",
+    "touchpoints": [
+      "application mobile",
+      "site web",
+      "navigateur mobile",
+      "publicite retargeting"
+    ],
+    "etape_parcours": "achat",
+    "famille": "personnalisation",
+    "pattern": "recommandation produit + retargeting personnalise pilotes par ML",
+    "type_ia": [
+      "machine learning (moteur de recommandation)",
+      "prediction d'intention d'achat"
+    ],
+    "plateforme_stack": [
+      "Criteo (Criteo Engine)",
+      "moteur de recommandation Nykaa"
+    ],
+    "objectif_metrique": [
+      "ventes",
+      "panier moyen (AOV)",
+      "ROI media"
+    ]
+  },
+  "implementation": "plateforme",
+  "stack_technique": [
+    {
+      "nom": "Criteo Engine",
+      "categorie": "plateforme",
+      "detail": "Moteur ML de Criteo qui estime la propension a l'achat a partir d'un large pool de donnees comportementales et selectionne les produits les plus pertinents pour chaque shopper.",
+      "url": "https://www.criteo.com"
+    },
+    {
+      "nom": "Retargeting dynamique Criteo",
+      "categorie": "outil",
+      "detail": "Diffusion des publicites personnalisees dans le format prefere du shopper, sur app et web mobile.",
+      "url": "https://www.criteo.com"
+    },
+    {
+      "nom": "Moteur de recommandation Nykaa",
+      "categorie": "outil",
+      "detail": "ML proprietaire de Nykaa pour la recommandation on-site, base sur l'historique d'achat, la navigation et le type de peau. Modeles exacts non publies.",
+      "url": "https://www.nykaa.com"
+    }
+  ],
+  "objectif_business": "Ramener les acheteurs mobiles vers l'achat et augmenter le panier moyen en poussant les bons produits au bon moment via une recommandation et un retargeting pilotes par ML.",
+  "points_cles": ["Recommandation produit et retargeting personnalises pilotes par ML.", "Criteo Engine pour le scoring d'intention, plus un moteur de recommandation interne.", "Ventes x7,5, panier moyen +54%, ROI media x1,7.", "Preuve B, statut confirme."],
+  "description": "Nykaa, plateforme beaute indienne, exploite la recommandation produit et le retargeting dynamique pour engager ses acheteurs sur l'app et le web mobile. Le Criteo Engine s'appuie sur un large pool de donnees pour estimer la propension a l'achat et identifier les produits les plus pertinents, puis diffuse des publicites personnalisees dans le format prefere du shopper. En parallele, Nykaa developpe ses propres moteurs de recommandation (historique d'achat, navigation, type de peau) et evolue vers une exploitation genAI de la personnalisation, couverte par la presse beaute.",
+  "resultats": [
+    {
+      "metrique": "Ventes (via retargeting/recommandation personnalises)",
+      "valeur": "x7,5",
+      "citation_exacte": "7.5x increase in sales",
+      "source_ref": "S1"
+    },
+    {
+      "metrique": "Panier moyen (AOV)",
+      "valeur": "+54%",
+      "citation_exacte": "54% increase in Average Order Value",
+      "source_ref": "S1"
+    },
+    {
+      "metrique": "Retour sur investissement media",
+      "valeur": "x1,7",
+      "citation_exacte": "1.7x increase in ROI",
+      "source_ref": "S1"
+    }
+  ],
+  "niveau_preuve": {
+    "niveau": "B",
+    "justification": "Etude de cas plateforme (Criteo) chiffree, avec citation du CMO de Nykaa, completee par la presse beaute etablie (BeautyMatter) sur la personnalisation AI de la marque."
+  },
+  "dates": {
+    "lancement": "Personnalisation/retargeting deployes de longue date ; presse sur la personnalisation AI-native de Nykaa 2023-2024",
+    "derniere_confirmation_activite": "Couverture BeautyMatter 2023-2024 sur la personnalisation et le passage vers une entreprise AI-native",
+    "verifie_le": "2026-07-11",
+    "revoir_apres": "2027-01-31"
+  },
+  "statut_vivant": {
+    "statut": "confirme",
+    "note": "Personnalisation au coeur du modele Nykaa (moteur de decouverte, recommandations), avec une trajectoire declaree vers plus de genAI."
+  },
+  "sources": [
+    {
+      "ref": "S1",
+      "type": "customer_story_plateforme",
+      "fiabilite": "T2_officiel_interesse",
+      "titre": "Nykaa - Criteo Success Story",
+      "url": "https://www.criteo.com/success-stories/nykaa/",
+      "date_publication": "s.d.",
+      "consulte_le": "2026-07-11"
+    },
+    {
+      "ref": "S2",
+      "type": "presse",
+      "fiabilite": "T3_presse_etablie",
+      "titre": "Nykaa and the Rise of India's Beauty Economy",
+      "url": "https://beautymatter.com/articles/how-nykaa-built-indias-beauty-market",
+      "date_publication": "2024",
+      "consulte_le": "2026-07-11"
+    }
+  ],
+  "fonctionnement_operationnel": {
+    "cadence": "Temps reel (recommandations et enchères par impression), campagnes de retargeting continues",
+    "opere_par": "Equipe growth/performance marketing de Nykaa, avec le moteur ML de la plateforme (Criteo) et l'equipe data pour les moteurs de reco internes",
+    "signal_pilote": "Le flux de donnees comportementales (navigation, panier, historique) et un catalogue produit propre. Si le tracking ou le flux produit se degrade, la recommandation perd sa pertinence et le retargeting devient bruit.",
+    "etapes": [
+      {
+        "etape": "Collecte du signal",
+        "detail": "Navigation, recherches, ajouts panier et achats alimentent le pool de donnees.",
+        "acteur": "site/app + equipe data"
+      },
+      {
+        "etape": "Scoring d'intention",
+        "detail": "Le moteur ML estime la propension a l'achat et les produits les plus pertinents.",
+        "acteur": "IA (Criteo Engine / reco Nykaa)"
+      },
+      {
+        "etape": "Diffusion personnalisee",
+        "detail": "Publicites de retargeting et recommandations sont poussees dans le format prefere du shopper.",
+        "acteur": "IA + equipe media"
+      },
+      {
+        "etape": "Achat",
+        "detail": "Le shopper revient sur l'app/web et convertit.",
+        "acteur": "client"
+      },
+      {
+        "etape": "Optimisation",
+        "detail": "L'equipe growth ajuste budgets, audiences et flux produit selon la performance.",
+        "acteur": "marketing / data"
+      }
+    ]
+  },
+  "schema_flow": {
+    "statut": "approche_type",
+    "noeuds": [
+      {
+        "id": "u",
+        "role_generique": "humain",
+        "label": "Shopper (app / web mobile)"
+      },
+      {
+        "id": "app",
+        "role_generique": "site_app",
+        "label": "App et site Nykaa"
+      },
+      {
+        "id": "data",
+        "role_generique": "data_source",
+        "label": "Donnees comportementales + catalogue"
+      },
+      {
+        "id": "engine",
+        "role_generique": "modele_ia",
+        "label": "Moteur de reco / scoring d'intention",
+        "outil_documente": "Criteo Engine"
+      },
+      {
+        "id": "ads",
+        "role_generique": "paid_platform",
+        "label": "Retargeting personnalise"
+      }
+    ],
+    "liens": [
+      [
+        "u",
+        "app"
+      ],
+      [
+        "app",
+        "data"
+      ],
+      [
+        "data",
+        "engine"
+      ],
+      [
+        "engine",
+        "ads"
+      ],
+      [
+        "ads",
+        "u",
+        "publicite produit pertinente"
+      ],
+      [
+        "engine",
+        "app",
+        "recommandations on-site"
+      ],
+      [
+        "u",
+        "data",
+        "nouveau signal comportemental"
+      ]
+    ]
+  },
+  "replication": {
+    "statut_epistemique": "infere",
+    "playbook": [
+      {
+        "action": "Fiabiliser le flux produit (prix, stock, images, attributs) et verifier que le tracking comportemental est consenti et complet sur app et web.",
+        "livrable": "Feed catalogue valide + plan de taggage conforme RGPD"
+      },
+      {
+        "action": "Brancher la plateforme de retargeting/recommandation sur le feed et le tracking, definir les segments a plus forte intention (abandonnistes panier, visiteurs PDP recurrents).",
+        "livrable": "Campagnes configurees sur 2-3 segments pilotes"
+      },
+      {
+        "action": "Lancer le test avec un budget media cadre et un groupe de controle, mesurer ventes attribuees, panier moyen et ROI media.",
+        "livrable": "Premier read de performance vs controle"
+      },
+      {
+        "action": "Etendre aux autres segments, ajuster budgets, audiences et flux produit selon la performance, activer la recommandation on-site.",
+        "livrable": "Dispositif etendu avec regles d'optimisation documentees"
+      }
+    ],
+    "equipe": "1 media buyer/growth + 1 dev pour le tracking et le flux produit, avec un analyste en appui pour la mesure",
+    "prerequis_data": [
+      "flux produit propre et a jour",
+      "tracking comportemental consenti",
+      "historique d'achat first-party"
+    ],
+    "prerequis_orga": [
+      "equipe performance marketing",
+      "gestion du consentement (surtout en UE)",
+      "budget media"
+    ],
+    "stack_possible": [
+      "Criteo",
+      "moteur de recommandation (Algolia, Dynamic Yield, Bloomreach)",
+      "reco interne ML"
+    ],
+    "premiere_etape": "Fiabiliser le flux produit et le tracking consenti, puis activer un moteur de reco/retargeting sur les segments a plus forte intention."
+  },
+  "seo": {
+    "slug": "nykaa-reco-retargeting-ai-2023",
+    "title": "Nykaa : recommandation + retargeting ML - ventes x7,5 et panier moyen +54%",
+    "meta_description": "Nykaa a multiplie ses ventes par 7,5 et augmente son panier moyen de 54% grace a la recommandation et au retargeting personnalises pilotes par ML (Criteo).",
+    "resume_citable": "Nykaa a multiplie ses ventes par 7,5, augmente son panier moyen de 54% et son ROI media par 1,7 grace a la recommandation produit et au retargeting personnalises pilotes par machine learning.",
+    "faq": [
+      {
+        "q": "Quel resultat Nykaa a-t-il obtenu avec la personnalisation ML ?",
+        "a": "Une multiplication des ventes par 7,5, une hausse du panier moyen de 54% et un ROI media multiplie par 1,7, selon l'etude de cas Criteo citant le CMO de Nykaa."
+      },
+      {
+        "q": "Sur quels canaux la personnalisation opere-t-elle ?",
+        "a": "Sur l'application et le web mobile de Nykaa, avec du retargeting publicitaire personnalise et des recommandations produit on-site pilotees par un moteur ML."
+      }
+    ]
+  },
+  "logo_domain": "nykaa.com"
+}

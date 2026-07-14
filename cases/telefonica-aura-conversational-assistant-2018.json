@@ -1,0 +1,273 @@
+{
+  "type_fiche": "succes",
+  "id": "telefonica-aura-conversational-assistant-2018",
+  "marque": "Telefonica",
+  "groupe": "Telefonica (marques Movistar, Vivo, O2)",
+  "industrie": "telco",
+  "marches_deploiement": [
+    "Espagne, Bresil, Royaume-Uni, Allemagne, Argentine, Chili (multi-marches), 30+ canaux"
+  ],
+  "transposable_ue": {
+    "flag": "oui",
+    "note": "Deja opere en UE (Espagne, Allemagne, Royaume-Uni au lancement). L'assistant gere des produits, la facturation et des requetes en langage naturel : traitement de donnees client soumis au RGPD, information et securisation des acces. Avec l'ajout de generatif, vigilance sur les reponses personnalisees. AI Act : risque limite, obligation de transparence sur le caractere automatise."
+  },
+  "metier": "Relation client / self-care conversationnel",
+  "marque_linkedin": "https://www.linkedin.com/company/telefonica",
+  "axes": {
+    "levier": "retention",
+    "touchpoints": [
+      "applications mobiles (Mi Movistar, Meu Vivo, MyO2)",
+      "appareils domestiques (Movistar Home) et TV",
+      "sites web, centres d'appels, canaux tiers (Facebook Messenger, Google Assistant)"
+    ],
+    "etape_parcours": "post-achat / self-care et fidelisation",
+    "famille": "conversation",
+    "pattern": "Assistant conversationnel client multi-marches : un meme socle IA en langage naturel gere produits, facturation et requetes, decline par marque et par langue, puis enrichi au generatif",
+    "type_ia": [
+      "NLP / comprehension du langage naturel",
+      "machine learning",
+      "IA generative (ajoutee pour reponses personnalisees et creation de contenu)"
+    ],
+    "plateforme_stack": [
+      "Microsoft Azure Cognitive Services (Language Understanding) au lancement",
+      "socle Aura interne decline par marche",
+      "integration multi-canaux (app, TV, device, web, call center)"
+    ],
+    "objectif_metrique": [
+      "interactions self-care traitees",
+      "utilisateurs actifs",
+      "deflection vers les canaux automatises"
+    ]
+  },
+  "implementation": "custom",
+  "objectif_business": "Donner aux clients un point d'entree unique en langage naturel pour gerer leur abonnement et leurs factures, marque par marque, et absorber le volume de contacts sans le renvoyer vers les conseillers.",
+  "points_cles": ["Assistant conversationnel self-care multi-marques (Movistar, Vivo, O2) en langage naturel.", "Socle NLP sur Azure Cognitive Services, enrichi ensuite d'IA generative.", "Environ 400 millions d'interactions par an sur plus de 30 canaux.", "Preuve B, statut confirme, actif depuis 2018."],
+  "description": "Aura est l'assistant conversationnel de Telefonica, lance en 2018 sous les marques du groupe (Movistar en Espagne et Amerique latine, Vivo au Bresil, O2 au Royaume-Uni et en Allemagne). Le client parle ou ecrit en langage naturel pour consulter sa facture, gerer ses services ou resoudre une question, via l'app, la TV, le device Movistar Home, le web ou le call center. Le socle a d'abord ete entraine sur Azure Cognitive Services pour coller aux accents et tournures de chaque pays, puis Telefonica y a ajoute du generatif pour des reponses personnalisees et de la creation de contenu. Le groupe revendique environ 400 millions d'interactions par an et une presence sur plus de 30 canaux, sur une base de plus de 350 millions de clients. Sept ans apres son lancement, Aura reste le canal conversationnel de reference du groupe.",
+  "fonctionnement_operationnel": {
+    "cadence": "Temps reel a chaque interaction client. Le modele de langage est reentraine par marche a mesure que les intentions et le catalogue evoluent.",
+    "opere_par": "Une equipe IA/produit centrale pour le socle Aura, les equipes digitales locales de chaque marque pour l'adaptation langue/offre et l'integration aux canaux.",
+    "signal_pilote": "La qualite de la comprehension d'intention par marche. Si le modele lit mal une tournure locale, il renvoie le client vers un conseiller et le benefice de deflection s'effondre.",
+    "etapes": [
+      {
+        "etape": "Entrainer un socle par marche",
+        "detail": "Le meme moteur conversationnel est entraine aux accents, tournures et offres de chaque pays plutot que dupliquer un assistant a zero.",
+        "acteur": "Equipe IA / data centrale"
+      },
+      {
+        "etape": "Brancher tous les canaux",
+        "detail": "App, TV, device domestique, web, call center et canaux tiers pointent vers le meme assistant, pour une reponse coherente quel que soit le point d'entree.",
+        "acteur": "Equipes digitales locales"
+      },
+      {
+        "etape": "Gerer produits et facturation",
+        "detail": "L'assistant execute des actions self-care (consulter une facture, activer une option) en plus de repondre, pour eviter le passage en conseiller.",
+        "acteur": "IA / Aura"
+      },
+      {
+        "etape": "Enrichir au generatif",
+        "detail": "Ajout de reponses personnalisees et de creation de contenu la ou le NLP scriptait des reponses fixes.",
+        "acteur": "Equipe IA / data"
+      }
+    ]
+  },
+  "resultats": [
+    {
+      "metrique": "Interactions annuelles",
+      "valeur": "~400 millions/an",
+      "citation_exacte": "400 million interactions each year",
+      "source_ref": "S1"
+    },
+    {
+      "metrique": "Canaux couverts",
+      "valeur": "30+",
+      "citation_exacte": "over 30 channels",
+      "source_ref": "S1"
+    },
+    {
+      "metrique": "Portee au lancement, sur 6 pays",
+      "valeur": "350M+ clients",
+      "citation_exacte": "Over 350 million customers in 17 countries",
+      "source_ref": "S2"
+    }
+  ],
+  "niveau_preuve": {
+    "niveau": "B",
+    "justification": "Cas documente par Telefonica (transformation handbook officiel : 400 millions d'interactions/an, 30+ canaux) et par une customer story Microsoft au lancement (marches, technologie Azure). Sources officielles Telefonica et vendor concordantes ; les chiffres portent sur le volume et la couverture, pas sur un impact retention en points."
+  },
+  "dates": {
+    "lancement": "2018 (annonce fevrier 2018, deploiement par marque a partir de 2018)",
+    "derniere_confirmation_activite": "2025 (transformation handbook Telefonica decrivant Aura et son passage au generatif)",
+    "verifie_le": "2026-07-11",
+    "revoir_apres": "2027-01-11"
+  },
+  "statut_vivant": {
+    "statut": "confirme",
+    "note": "Aura est decrit comme actif dans le transformation handbook 2025 de Telefonica, avec ajout d'IA generative. Sept ans de production continue sur plusieurs marches."
+  },
+  "sources": [
+    {
+      "ref": "S1",
+      "type": "blog_officiel",
+      "titre": "Aura, Telefonica's Artificial Intelligence - Transformation Handbooks",
+      "url": "https://www.telefonica.com/en/transformation-handbooks/innovation-handbook/aura-telefonicas-artificial-intelligence/",
+      "date_publication": "2025",
+      "consulte_le": "2026-07-11",
+      "fiabilite": "T1_primaire"
+    },
+    {
+      "ref": "S2",
+      "type": "customer_story_plateforme",
+      "titre": "Aura, Telefonica's AI, learns the language of people to transform customer engagement",
+      "url": "https://news.microsoft.com/transform/aura-telefonicas-ai-learns-the-language-of-people-to-transform-customer-engagement/",
+      "date_publication": "2018-08-01",
+      "consulte_le": "2026-07-11",
+      "fiabilite": "T2_officiel_interesse"
+    },
+    {
+      "ref": "S3",
+      "type": "blog_officiel",
+      "titre": "Telefonica launches Aura and leads the integration of AI in its networks and customer care",
+      "url": "https://www.telefonica.com/en/communication-room/blog/telefonica-launches-aura-and-leads-the-integration-of-artificial-intelligence-in-its-networks-and-customer-care/",
+      "date_publication": "2018-02",
+      "consulte_le": "2026-07-11",
+      "fiabilite": "T1_primaire"
+    }
+  ],
+  "schema_flow": {
+    "statut": "documente",
+    "noeuds": [
+      {
+        "id": "client",
+        "role_generique": "canal_conversationnel",
+        "label": "Client en langage naturel (app, TV, device, web, call center)"
+      },
+      {
+        "id": "nlp",
+        "role_generique": "modele_ia",
+        "label": "Socle conversationnel Aura (comprehension d'intention par marche)",
+        "outil_documente": "Azure Cognitive Services / socle interne + generatif"
+      },
+      {
+        "id": "systems",
+        "role_generique": "site_app",
+        "label": "Systemes produits et facturation (self-care)"
+      },
+      {
+        "id": "agent",
+        "role_generique": "humain",
+        "label": "Conseiller humain en escalade"
+      }
+    ],
+    "liens": [
+      [
+        "client",
+        "nlp"
+      ],
+      [
+        "nlp",
+        "systems"
+      ],
+      [
+        "systems",
+        "client",
+        "reponse / action self-care"
+      ],
+      [
+        "nlp",
+        "agent",
+        "escalade si intention non traitee"
+      ]
+    ]
+  },
+  "replication": {
+    "statut_epistemique": "infere",
+    "prerequis_data": [
+      "Corpus d'intentions et de conversations par marche/langue",
+      "Acces aux systemes de facturation et de gestion des services pour agir, pas seulement repondre",
+      "Gouvernance RGPD sur les donnees client"
+    ],
+    "prerequis_orga": [
+      "Equipe IA/produit centrale plus relais digitaux locaux",
+      "Capacite a integrer l'assistant a tous les canaux existants"
+    ],
+    "stack_possible": [
+      "Azure AI, Google Dialogflow/Vertex AI, ou un LLM du marche en RAG",
+      "Couche d'orchestration multi-canal",
+      "Connexion API aux back-offices facturation/services"
+    ],
+    "premiere_etape": "Cadrer un premier marche et deux ou trois intentions self-care a fort volume (facture, changement d'option), mesurer la deflection et le taux de resolution avant d'ouvrir d'autres canaux et pays.",
+    "playbook": [
+      {
+        "action": "Cadrer un premier marche et deux ou trois intentions self-care a fort volume (consulter la facture, changer une option).",
+        "livrable": "Corpus d'intentions, parcours cibles et objectifs de deflection."
+      },
+      {
+        "action": "Entrainer le NLU sur la langue et les tournures locales, brancher les API facturation et gestion des services pour que l'assistant agisse, pas seulement reponde.",
+        "livrable": "Assistant capable d'executer les actions self-care en pre-production."
+      },
+      {
+        "action": "Lancer sur un premier canal (l'app), mesurer deflection et taux de resolution, ajuster les intentions mal comprises.",
+        "livrable": "Bilan chiffre du canal pilote avec taux de resolution par intention."
+      },
+      {
+        "action": "Ouvrir les canaux supplementaires (web, call center) et industrialiser le reentrainement au fil du catalogue.",
+        "livrable": "Socle multicanal en production et process de mise a jour des intentions."
+      },
+      {
+        "action": "Repliquer marque par marque et pays par pays sur le meme socle plutot que dupliquer des assistants.",
+        "livrable": "Playbook de localisation (langue, offres, canaux) par marche."
+      }
+    ],
+    "equipe": "1 equipe socle (3-5 ingenieurs NLP/backend + 1 PM) + un relais digital par marche pour la langue, l'offre et les canaux."
+  },
+  "seo": {
+    "slug": "telefonica-aura-assistant-conversationnel-2018",
+    "title": "Telefonica : Aura, assistant conversationnel multi-marches - 400M interactions/an (2018)",
+    "meta_description": "Aura, assistant conversationnel de Telefonica depuis 2018 (Movistar, Vivo, O2) : produits et facturation en langage naturel, 30+ canaux, ~400M interactions/an.",
+    "resume_citable": "Telefonica opere depuis 2018 Aura, un assistant conversationnel decline par marque (Movistar, Vivo, O2) qui gere produits et facturation en langage naturel sur plus de 30 canaux et revendique environ 400 millions d'interactions par an.",
+    "faq": [
+      {
+        "q": "Aura est-il un simple chatbot ?",
+        "a": "Il execute des actions self-care (facture, options) en plus de repondre, sur app, TV, device domestique, web et call center, et par marque du groupe."
+      },
+      {
+        "q": "Quel est l'apport documente ?",
+        "a": "Le volume et la couverture (400M interactions/an, 30+ canaux, plusieurs marches). L'impact retention en points n'est pas publie."
+      }
+    ]
+  },
+  "agences": [
+    {
+      "nom": "Microsoft",
+      "role": "Fournisseur des services cognitifs au lancement (Azure Cognitive Services)",
+      "source_ref": "S2"
+    }
+  ],
+  "logo_domain": "telefonica.com",
+  "stack_technique": [
+    {
+      "nom": "Microsoft Azure Cognitive Services (Language Understanding)",
+      "categorie": "plateforme",
+      "detail": "Comprehension du langage naturel au lancement, entrainee aux accents et tournures de chaque marche.",
+      "url": "https://azure.microsoft.com"
+    },
+    {
+      "nom": "Socle Aura (in-house)",
+      "categorie": "plateforme",
+      "detail": "Socle conversationnel interne de Telefonica, decline par marque (Movistar, Vivo, O2) et par langue, branche sur les systemes produits et facturation.",
+      "url": "https://www.telefonica.com"
+    },
+    {
+      "nom": "Brique generative ajoutee a Aura",
+      "categorie": "llm",
+      "detail": "IA generative ajoutee pour des reponses personnalisees et de la creation de contenu ; fournisseur et modele non nommes publiquement.",
+      "url": "https://www.telefonica.com"
+    },
+    {
+      "nom": "Integration multi-canaux",
+      "categorie": "infra",
+      "detail": "Plus de 30 canaux branches sur le meme assistant : apps (Mi Movistar, Meu Vivo, MyO2), TV, Movistar Home, web, call center, Facebook Messenger, Google Assistant.",
+      "url": "https://www.telefonica.com"
+    }
+  ]
+}

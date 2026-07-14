@@ -1,0 +1,280 @@
+{
+  "id": "rightmove-recherche-ia-2025",
+  "type_fiche": "succes",
+  "marque": "Rightmove",
+  "industrie": "immobilier",
+  "marches_deploiement": [
+    "Royaume-Uni"
+  ],
+  "transposable_ue": {
+    "flag": "oui",
+    "note": "Rightmove opere au Royaume-Uni, deja soumis a un regime data proche du RGPD. Les briques (recherche NL entrainee sur les annonces, restyling genAI d'images) sont directement transposables a un portail de l'UE, sous reserve de l'AI Act sur les fonctions generatives."
+  },
+  "metier": "portail immobilier / experience de recherche",
+  "intervenants": [
+    {
+      "nom": "Tarah Lourens",
+      "role": "Chief Technology and Operations Officer, Rightmove",
+      "source_ref": "S1"
+    }
+  ],
+  "axes": {
+    "levier": "activation_conversion",
+    "touchpoints": [
+      "recherche AI Keywords sur l'application Rightmove",
+      "recherche conversationnelle Use AI",
+      "outil Style with AI sur les images d'annonce"
+    ],
+    "etape_parcours": "consideration",
+    "famille": "conversation",
+    "pattern": "recherche en langage naturel plus restyling genAI d'images d'annonce",
+    "type_ia": [
+      "traitement du langage naturel",
+      "analyse d'images et de textes d'annonces",
+      "generation d'images (restyling)",
+      "modeles Gemini (recherche conversationnelle)"
+    ],
+    "plateforme_stack": [
+      "custom/in-house",
+      "Google Cloud",
+      "Google Gemini"
+    ],
+    "objectif_metrique": [
+      "pertinence de la recherche",
+      "engagement sur les annonces",
+      "connexion emotionnelle a un bien"
+    ]
+  },
+  "implementation": "hybride",
+  "stack_technique": [
+    {
+      "nom": "Google Gemini",
+      "categorie": "llm",
+      "detail": "Modeles de la recherche conversationnelle Use AI (beta fevrier 2026).",
+      "url": "https://cloud.google.com"
+    },
+    {
+      "nom": "Google Cloud",
+      "categorie": "infra",
+      "detail": "Plateforme cloud avec laquelle la recherche conversationnelle est construite.",
+      "url": "https://cloud.google.com"
+    },
+    {
+      "nom": "AI Keywords (in-house Rightmove)",
+      "categorie": "outil",
+      "detail": "Prompts intelligents entraines sur 25 ans de donnees Rightmove, qui balaient images et textes des annonces.",
+      "url": "https://www.rightmove.co.uk"
+    },
+    {
+      "nom": "Style with AI (in-house Rightmove)",
+      "categorie": "outil",
+      "detail": "Restyling genAI des photos d'annonce (retrait de meubles, lumiere, styles) ; le modele generatif sous-jacent n'est pas nomme.",
+      "url": "https://www.rightmove.co.uk"
+    }
+  ],
+  "objectif_business": "Aider l'utilisateur a trouver un bien qui colle a ses criteres exacts en langage courant, et l'aider a se projeter dans un logement pour maintenir l'engagement sur le premier portail immobilier du Royaume-Uni.",
+  "description": "Rightmove deploie en 2025 AI Keywords sur son application : des prompts intelligents comme brique apparente, vue sur riviere ou chauffage au sol, entraines sur vingt-cinq ans de donnees Rightmove, qui balaient images et textes des annonces pour remonter des biens plus pertinents. La meme annee, l'outil Style with AI permet a un acheteur de retirer les meubles d'une photo, d'ajuster la lumiere et de changer le style d'un logement, par exemple vers un style scandinave ou art deco, pour l'aider a se projeter. En fevrier 2026, Rightmove ouvre en beta une recherche conversationnelle via un bouton Use AI, ou l'utilisateur decrit son besoin en langage naturel et affine par la conversation ; cette recherche est construite avec Google Cloud sur les modeles Gemini. Rightmove indique que plus de quatre-vingts pour cent du temps passe sur les portails immobiliers l'est sur Rightmove et compte vingt-sept initiatives IA en developpement.",
+  "resultats": [
+    {
+      "metrique": "Part du temps sur les portails immobiliers capte par Rightmove",
+      "valeur": "plus de 80 %",
+      "citation_exacte": "Over 80% of all time spent on property portals is on Rightmove",
+      "source_ref": "S1"
+    },
+    {
+      "metrique": "Base d'entrainement de la recherche, historique Rightmove",
+      "valeur": "25 ans de donnees",
+      "citation_exacte": "Trained on Rightmove's 25 years of data",
+      "source_ref": "S1"
+    }
+  ],
+  "niveau_preuve": {
+    "niveau": "C",
+    "justification": "Communiques officiels Rightmove (T1) et presse specialisee britannique concordants sur le deploiement, avec une preuve d'echelle (part du temps passe, base de donnees de 25 ans). Pas de metrique d'effet isolee, d'ou un niveau C."
+  },
+  "dates": {
+    "lancement": "2025 (AI Keywords et Style with AI) ; 2026-02-13 (recherche conversationnelle Use AI, beta)",
+    "derniere_confirmation_activite": "2026-02 (lancement de la recherche conversationnelle construite avec Google Cloud)",
+    "verifie_le": "2026-07-11",
+    "revoir_apres": "2027-01-11"
+  },
+  "statut_vivant": {
+    "statut": "confirme",
+    "note": "AI Keywords et Style with AI sont en production depuis 2025, la recherche conversationnelle est en beta depuis fevrier 2026, avec vingt-sept initiatives IA annoncees."
+  },
+  "sources": [
+    {
+      "ref": "S1",
+      "type": "blog_officiel",
+      "fiabilite": "T1_primaire",
+      "titre": "Rightmove unveils AI tools to enhance home search experience",
+      "url": "https://www.rightmove.co.uk/press-centre/rightmove-unveils-ai-tools-to-enhance-home-search-experience/",
+      "date_publication": "2025",
+      "consulte_le": "2026-07-11"
+    },
+    {
+      "ref": "S2",
+      "type": "presse",
+      "fiabilite": "T4_secondaire",
+      "titre": "Rightmove upgrades AI tools to improve conversational property search",
+      "url": "https://propertyindustryeye.com/rightmove-upgrades-ai-tools-to-improve-property-search/",
+      "date_publication": "2026-02",
+      "consulte_le": "2026-07-11"
+    },
+    {
+      "ref": "S3",
+      "type": "blog_officiel",
+      "fiabilite": "T1_primaire",
+      "titre": "Rightmove launches next phase of AI-powered property search",
+      "url": "https://www.rightmove.co.uk/press-centre/rightmove-launches-next-phase-of-ai-powered-property-search/",
+      "date_publication": "2026-02",
+      "consulte_le": "2026-07-11"
+    }
+  ],
+  "fonctionnement_operationnel": {
+    "cadence": "Temps reel a chaque requete ; generation d'image a la demande pour Style with AI.",
+    "opere_par": "Equipe technologie et produit de Rightmove, avec Google Cloud comme fournisseur des modeles Gemini pour la recherche conversationnelle.",
+    "signal_pilote": "Les images et textes des annonces plus vingt-cinq ans de donnees Rightmove. Sans ce corpus, les prompts intelligents ne trouvent pas les biens qui portent le critere demande.",
+    "etapes": [
+      {
+        "etape": "Recherche par prompt ou conversation",
+        "detail": "L'utilisateur choisit un prompt intelligent ou decrit son besoin en langage naturel via Use AI.",
+        "acteur": "client"
+      },
+      {
+        "etape": "Balayage images et textes",
+        "detail": "AI Keywords scanne images et textes des annonces pour remonter des biens plus pertinents.",
+        "acteur": "IA"
+      },
+      {
+        "etape": "Affinage conversationnel",
+        "detail": "La recherche Use AI affine les resultats par la conversation, sur les modeles Gemini.",
+        "acteur": "IA"
+      },
+      {
+        "etape": "Projection visuelle",
+        "detail": "Style with AI retire les meubles, ajuste la lumiere ou change le style d'une photo pour aider a se projeter.",
+        "acteur": "IA"
+      }
+    ]
+  },
+  "schema_flow": {
+    "statut": "approche_type",
+    "noeuds": [
+      {
+        "id": "listings",
+        "role_generique": "data_source",
+        "label": "Annonces (images + textes), 25 ans de donnees Rightmove"
+      },
+      {
+        "id": "search",
+        "role_generique": "modele_ia",
+        "label": "AI Keywords + recherche conversationnelle",
+        "outil_documente": "Google Cloud / Gemini"
+      },
+      {
+        "id": "style",
+        "role_generique": "modele_ia",
+        "label": "Style with AI (generation d'images)"
+      },
+      {
+        "id": "app",
+        "role_generique": "site_app",
+        "label": "Application et site Rightmove"
+      },
+      {
+        "id": "user",
+        "role_generique": "humain",
+        "label": "Acheteur"
+      }
+    ],
+    "liens": [
+      [
+        "user",
+        "app",
+        "prompt / phrase"
+      ],
+      [
+        "app",
+        "search"
+      ],
+      [
+        "listings",
+        "search"
+      ],
+      [
+        "search",
+        "app",
+        "biens pertinents"
+      ],
+      [
+        "listings",
+        "style"
+      ],
+      [
+        "style",
+        "app",
+        "image restylee"
+      ]
+    ]
+  },
+  "replication": {
+    "statut_epistemique": "infere",
+    "prerequis_data": [
+      "annonces avec images et textes exploitables",
+      "historique long de donnees pour l'entrainement",
+      "droits sur les images pour le restyling"
+    ],
+    "prerequis_orga": [
+      "equipe IA ou partenaire cloud pour les modeles",
+      "capacite de vision et de generation d'images",
+      "surface de recherche a fort trafic"
+    ],
+    "stack_possible": [
+      "modele NL de recherche",
+      "modele de vision pour scanner les annonces",
+      "modele generatif d'images pour le restyling"
+    ],
+    "premiere_etape": "Indexer images et textes d'annonces pour que les prompts trouvent le bon critere avant d'ajouter la generation.",
+    "playbook": [
+      {
+        "action": "Indexer images et textes des annonces et constituer le referentiel de criteres recherches (brique apparente, chauffage au sol, vue).",
+        "livrable": "Index multimodal des annonces mappe a un vocabulaire de criteres."
+      },
+      {
+        "action": "Lancer la recherche par prompts / mots-cles en langage naturel sur l'application.",
+        "livrable": "Recherche NL en production sur un sous-ensemble de criteres."
+      },
+      {
+        "action": "Ajouter la brique de restyling d'images (projection visuelle), apres verification des droits sur les photos.",
+        "livrable": "Outil de restyling en beta avec cadre juridique valide."
+      },
+      {
+        "action": "Construire la recherche conversationnelle sur un LLM (affinage du besoin par le dialogue), avec un partenaire cloud.",
+        "livrable": "Beta conversationnelle sur un groupe d'utilisateurs."
+      },
+      {
+        "action": "Mesurer pertinence et engagement, puis generaliser.",
+        "livrable": "Tableau de bord pertinence / engagement et roadmap des initiatives suivantes."
+      }
+    ],
+    "equipe": "1 PM + 2-4 ingenieurs ML / search + 1 designer produit + juridique pour les droits d'images."
+  },
+  "seo": {
+    "slug": "rightmove-recherche-ia-2025",
+    "title": "Rightmove : recherche immobiliere IA et restyling genAI d'images (UK, 2025)",
+    "meta_description": "Rightmove deploie AI Keywords et Style with AI en 2025 puis une recherche conversationnelle sur Google Gemini en 2026 (UK).",
+    "resume_citable": "Rightmove a deploye en 2025 AI Keywords, entraine sur 25 ans de donnees, et Style with AI pour restyler les photos d'annonce, puis une recherche conversationnelle sur les modeles Google Gemini en 2026 ; plus de 80 % du temps passe sur les portails immobiliers britanniques l'est sur Rightmove.",
+    "faq": [
+      {
+        "q": "Que fait AI Keywords de Rightmove ?",
+        "a": "Des prompts intelligents comme vue sur riviere ou chauffage au sol, entraines sur vingt-cinq ans de donnees, qui scannent images et textes des annonces pour remonter des biens plus pertinents."
+      },
+      {
+        "q": "Qu'est-ce que Style with AI ?",
+        "a": "Un outil qui retire les meubles d'une photo, ajuste la lumiere et change le style d'un logement, par exemple vers un style scandinave ou art deco, pour aider l'acheteur a se projeter."
+      }
+    ]
+  },
+  "logo_domain": "rightmove.co.uk"
+}

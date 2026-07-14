@@ -1,0 +1,150 @@
+{
+  "verifie_le": "2026-07-11",
+  "usages": [
+    {
+      "famille": "conversation",
+      "titre_lisible": "Chatbots et assistants",
+      "resume": "Les consommateurs n'acceptent pas les chatbots par defaut : 64% prefereraient que les entreprises n'utilisent pas d'IA dans leur service client (Gartner, 2024) et pres d'un utilisateur sur cinq du service client par IA n'en retire aucun benefice (Qualtrics, 2025). L'acceptation se construit sur trois conditions mesurees par Salesforce : savoir qu'on parle a une IA, pouvoir escalader vers un humain, comprendre la logique de l'agent.",
+      "chiffres": [
+        { "stat": "Consommateurs qui prefereraient que les entreprises n'utilisent pas d'IA dans leur service client", "valeur": "64%", "annee": "2024", "source_ref": "S2" },
+        { "stat": "Consommateurs qui envisageraient de passer a un concurrent s'ils apprenaient que l'entreprise prevoit d'utiliser l'IA pour le service client", "valeur": "53%", "annee": "2024", "source_ref": "S2" },
+        { "stat": "Consommateurs qui veulent savoir s'ils communiquent avec un agent IA", "valeur": "pres de 75%", "annee": "2024", "source_ref": "S1" },
+        { "stat": "Consommateurs plus enclins a utiliser un agent IA s'il existe un chemin d'escalade clair vers un humain", "valeur": "45%", "annee": "2024", "source_ref": "S1" },
+        { "stat": "Consommateurs plus enclins a utiliser un agent IA si sa logique est clairement expliquee", "valeur": "44%", "annee": "2024", "source_ref": "S1" },
+        { "stat": "Clients qui font confiance aux entreprises pour utiliser l'IA de facon ethique", "valeur": "42% (contre 58% en 2023)", "annee": "2024", "source_ref": "S1" },
+        { "stat": "Consommateurs ayant utilise l'IA pour le service client qui n'en ont tire aucun benefice, soit un taux d'echec pres de quatre fois superieur aux autres usages de l'IA", "valeur": "pres de 1 sur 5", "annee": "2025", "source_ref": "S3" },
+        { "stat": "Consommateurs inquiets que l'IA les empeche de joindre un humain", "valeur": "50%", "annee": "2025", "source_ref": "S3" }
+      ],
+      "conditions_acceptation": [
+        "Etre informe qu'on parle a une IA et non a un humain (pres de 75% le demandent, Salesforce 2024)",
+        "Un chemin d'escalade clair vers un agent humain (45% plus enclins a utiliser l'agent IA, Salesforce 2024)",
+        "Une logique de l'agent clairement expliquee (44% plus enclins, Salesforce 2024)"
+      ],
+      "lignes_rouges": [
+        "Rendre l'humain injoignable : c'est la premiere inquietude des consommateurs sur l'IA dans le service client (Gartner 2024) et 50% craignent que l'IA les coupe du contact humain (Qualtrics 2025)",
+        "Remplacer le service client par l'IA sans alternative : 53% envisageraient de partir chez un concurrent (Gartner 2024)"
+      ],
+      "sources": [
+        { "ref": "S1", "institut": "Salesforce", "etude": "State of the AI Connected Customer (enquete aupres de 16 585 consommateurs et acheteurs professionnels, terrain juillet-aout 2024)", "annee": "2024", "url": "https://www.salesforce.com/news/stories/ai-customer-research/", "fiabilite": "T1_primaire", "consulte_le": "2026-07-11" },
+        { "ref": "S2", "institut": "Gartner", "etude": "Gartner Survey Finds 64% of Customers Would Prefer That Companies Didn't Use AI For Customer Service (enquete aupres de 5 728 clients, decembre 2023)", "annee": "2024", "url": "https://www.gartner.com/en/newsroom/press-releases/2024-07-09-gartner-survey-finds-64-percent-of-customers-would-prefer-that-companies-didnt-use-ai-for-customer-service", "fiabilite": "T1_primaire", "consulte_le": "2026-07-11" },
+        { "ref": "S3", "institut": "Qualtrics", "etude": "2026 Consumer Experience Trends Report (plus de 20 000 consommateurs, 14 pays, terrain T3 2025)", "annee": "2025", "url": "https://www.qualtrics.com/articles/news/ai-powered-customer-service-fails-at-four-times-the-rate-of-other-tasks/", "fiabilite": "T1_primaire", "consulte_le": "2026-07-11" }
+      ]
+    },
+    {
+      "famille": "generation",
+      "titre_lisible": "Contenu genere par IA (pubs, images, textes)",
+      "resume": "Un ecart net separe les annonceurs des consommateurs : 77% des annonceurs voient l'IA positivement contre 38% des consommateurs (Yahoo/Publicis, 2024). Les mesures implicites confirment le rejet declare : en EEG, les pubs generees par IA produisent une activation memorielle plus faible que les pubs traditionnelles et sont decrites comme agacantes, ennuyeuses et confuses (NIQ, 2024). La disclosure a un effet ambivalent : elle augmente fortement la confiance quand elle est remarquee (Yahoo/Publicis), mais 27% des jeunes consommateurs disent faire moins confiance a une entreprise dont la pub est creee par IA (IAB, 2024).",
+      "chiffres": [
+        { "stat": "Annonceurs qui percoivent l'IA positivement, contre 38% des consommateurs", "valeur": "77% vs 38%", "annee": "2024", "source_ref": "S1" },
+        { "stat": "Consommateurs qui estiment que l'IA rend difficile de savoir quel contenu est authentique", "valeur": "72%", "annee": "2024", "source_ref": "S1" },
+        { "stat": "Lift de confiance globale envers l'entreprise quand la mention IA d'une pub est remarquee (avec +47% d'attrait de la pub et +73% de credibilite de la pub)", "valeur": "+96%", "annee": "2024", "source_ref": "S1" },
+        { "stat": "Consommateurs Gen Z et millennials qui feraient moins confiance a une entreprise s'ils savaient qu'une pub a ete creee par IA (contre 31% qui feraient davantage confiance)", "valeur": "27%", "annee": "2024", "source_ref": "S2" },
+        { "stat": "Consommateurs Gen Z et millennials reserves ou negatifs sur l'usage de l'IA pour les pubs", "valeur": "52%", "annee": "2024", "source_ref": "S2" },
+        { "stat": "Pubs generees par IA : activation memorielle plus faible en EEG que les pubs traditionnelles, meme a qualite jugee elevee, et effet de halo negatif sur la marque", "valeur": "mesure implicite (EEG, environ 150 participants sur plus de 2 000)", "annee": "2024", "source_ref": "S3" },
+        { "stat": "Consommateurs opposes aux mannequins generes par IA dans la publicite (52% des femmes, 41% des hommes)", "valeur": "46%", "annee": "2025", "source_ref": "S4" },
+        { "stat": "Consommateurs de 50 ans et plus qui veulent que l'etiquetage du contenu genere par IA soit une obligation legale (contre 77% des plus jeunes)", "valeur": "89%", "annee": "2025", "source_ref": "S4" }
+      ],
+      "conditions_acceptation": [
+        "Une disclosure visible : quand la mention IA est remarquee, la confiance globale envers l'entreprise augmente de 96% (Yahoo/Publicis 2024)",
+        "Une qualite visuelle suffisante : les visuels IA de basse qualite augmentent l'effort cognitif et distraient du message (NIQ 2024)"
+      ],
+      "lignes_rouges": [
+        "Le contenu IA non declare puis identifie : 72% des consommateurs disent que l'IA rend l'authenticite difficile a etablir (Yahoo/Publicis 2024) et les marques utilisant des pubs IA sont plus souvent jugees inauthentiques ou non ethiques par les consommateurs que par les dirigeants (IAB 2024)",
+        "Les mannequins et personnes generes par IA : 46% des consommateurs n'en veulent pas dans la publicite, l'inquietude premiere etant les standards de beaute irrealistes (Attest 2025)"
+      ],
+      "sources": [
+        { "ref": "S1", "institut": "Yahoo / Publicis Media (terrain Ebco)", "etude": "Enquete sur la perception de l'IA dans la publicite (plus de 1 200 consommateurs US et 350 annonceurs, terrain octobre-novembre 2023, publication fevrier 2024)", "annee": "2024", "url": "https://www.yahooinc.com/press/yahoo-publicis-media-survey-reveals-ai-ad-disclosure-increases-consumer-trust", "fiabilite": "T1_primaire", "consulte_le": "2026-07-11" },
+        { "ref": "S2", "institut": "IAB (avec Attest)", "etude": "The AI Ad Gap : Why Young Consumers Aren't Yet Buying Into Gen AI Ads (300 consommateurs US 16-43 ans et 75 dirigeants publicitaires, terrain aout-octobre 2024)", "annee": "2024", "url": "https://www.iab.com/insights/why-young-consumers-avoid-gen-ai-ads/", "fiabilite": "T1_primaire", "consulte_le": "2026-07-11" },
+        { "ref": "S3", "institut": "NIQ (NielsenIQ)", "etude": "NIQ Research Uncovers Hidden Consumer Attitudes Toward AI-Generated Ads (plus de 2 000 participants, environ 150 en EEG)", "annee": "2024", "url": "https://nielseniq.com/global/en/news-center/2024/niq-research-uncovers-hidden-consumer-attitudes-toward-ai-generated-ads/", "fiabilite": "T1_primaire", "consulte_le": "2026-07-11" },
+        { "ref": "S4", "institut": "Attest", "etude": "2025 Consumer Adoption of AI Report (consommateurs 18-67 ans aux US, UK, Canada et Australie, terrain janvier 2025)", "annee": "2025", "url": "https://www.askattest.com/blog/articles/2025-consumer-adoption-of-ai-report", "fiabilite": "T1_primaire", "consulte_le": "2026-07-11" }
+      ]
+    },
+    {
+      "famille": "personnalisation",
+      "titre_lisible": "Recommandation, offres personnalisees et donnees",
+      "resume": "Le paradoxe est documente des deux cotes : 71% des consommateurs attendent des interactions personnalisees et 76% sont frustres quand elles manquent (McKinsey, 2021), mais 75% declarent ne pas acheter aupres d'organisations auxquelles ils ne confient pas leurs donnees (Cisco, 2024). La « creepy line » est localisee : messages recus quelques secondes apres une recherche et suivi de localisation sont les pratiques qui mettent le plus mal a l'aise (Periscope by McKinsey, 2019).",
+      "chiffres": [
+        { "stat": "Consommateurs qui attendent des entreprises des interactions personnalisees", "valeur": "71%", "annee": "2021", "source_ref": "S1" },
+        { "stat": "Consommateurs frustres quand la personnalisation n'a pas lieu", "valeur": "76%", "annee": "2021", "source_ref": "S1" },
+        { "stat": "Consommateurs qui declarent ne pas acheter aupres d'organisations auxquelles ils ne font pas confiance pour leurs donnees", "valeur": "75%", "annee": "2024", "source_ref": "S3" },
+        { "stat": "Consommateurs de 25-34 ans ayant change d'entreprise ou de fournisseur a cause de ses pratiques de donnees (contre 18% des 75 ans et plus)", "valeur": "49%", "annee": "2024", "source_ref": "S3" },
+        { "stat": "Consommateurs mal a l'aise face aux messages de suivi de localisation (Allemagne et Royaume-Uni)", "valeur": "40%", "annee": "2019", "source_ref": "S2" },
+        { "stat": "Consommateurs mal a l'aise quand un message arrive quelques secondes apres un achat ou une recherche en ligne (UK 38%, US 38%, France 37%)", "valeur": "37-38%", "annee": "2019", "source_ref": "S2" },
+        { "stat": "Mesusage des donnees personnelles : premiere inquietude des consommateurs quand les entreprises automatisent les interactions avec l'IA (+8 points en un an)", "valeur": "53%", "annee": "2025", "source_ref": "S4" }
+      ],
+      "conditions_acceptation": [
+        "La confiance dans le traitement des donnees precede l'achat : 75% ne achetent pas sans elle (Cisco 2024)",
+        "Un cadre legal protecteur rassure : 59% des consommateurs disent que des lois fortes sur la vie privee les rendent plus a l'aise pour partager des informations dans des applications IA (Cisco 2024)",
+        "La personnalisation elle-meme est attendue quand elle est consentie : environ la moitie des consommateurs (US 55%, UK 52%) disent s'inscrire souvent ou parfois a des services personnalises (Periscope by McKinsey 2019)"
+      ],
+      "lignes_rouges": [
+        "Le message declenche quelques secondes apres une recherche ou un achat : deuxieme ou troisieme cause de malaise selon les pays (Periscope by McKinsey 2019)",
+        "Le suivi de localisation percu comme de la surveillance : 40% de malaise en Allemagne et au Royaume-Uni (Periscope by McKinsey 2019)",
+        "Le mesusage des donnees personnelles par l'IA, devenu la premiere inquietude des consommateurs, a 53% et en hausse (Qualtrics 2025)"
+      ],
+      "sources": [
+        { "ref": "S1", "institut": "McKinsey & Company", "etude": "Next in Personalization 2021 : The value of getting personalization right, or wrong, is multiplying", "annee": "2021", "url": "https://www.mckinsey.com/capabilities/growth-marketing-and-sales/our-insights/the-value-of-getting-personalization-right-or-wrong-is-multiplying", "fiabilite": "T1_primaire", "consulte_le": "2026-07-11" },
+        { "ref": "S2", "institut": "Periscope by McKinsey", "etude": "The Art of Personalization (2 590 consommateurs en France, Allemagne, UK et US)", "annee": "2019", "url": "https://www.mckinsey.com/capabilities/growth-marketing-and-sales/solutions/periscope/news/press-releases/49-percent-of-consumers-actively-sign-up-for-personalization-new-research-from-periscope-by-mckinsey-reveals", "fiabilite": "T1_primaire", "consulte_le": "2026-07-11" },
+        { "ref": "S3", "institut": "Cisco", "etude": "Cisco 2024 Consumer Privacy Survey (plus de 2 600 consommateurs, 12 pays)", "annee": "2024", "url": "https://www.cisco.com/c/en/us/about/trust-center/consumer-privacy-survey.html", "fiabilite": "T1_primaire", "consulte_le": "2026-07-11" },
+        { "ref": "S4", "institut": "Qualtrics", "etude": "2026 Consumer Experience Trends Report (plus de 20 000 consommateurs, 14 pays, terrain T3 2025)", "annee": "2025", "url": "https://www.qualtrics.com/articles/news/ai-powered-customer-service-fails-at-four-times-the-rate-of-other-tasks/", "fiabilite": "T1_primaire", "consulte_le": "2026-07-11" }
+      ]
+    },
+    {
+      "famille": "prediction",
+      "titre_lisible": "Scoring et decisions algorithmiques sur les personnes",
+      "resume": "C'est la famille la moins acceptee : 68% des Americains jugent inacceptable un score financier personnel calcule par algorithme et 67% l'analyse video automatisee d'entretiens d'embauche (Pew Research, 2018). La demande d'explication et de recours est massive : 83% veulent savoir quelles donnees l'IA utilise et 91% veulent pouvoir corriger des donnees erronees (Consumer Reports, 2024). A l'echelle mondiale, seuls 46% se disent prets a faire confiance aux systemes d'IA et 70% jugent une regulation necessaire (KPMG / Universite de Melbourne, 2025).",
+      "chiffres": [
+        { "stat": "Americains qui jugent inacceptable un score de finances personnelles calcule par algorithme pour proposer des offres", "valeur": "68%", "annee": "2018", "source_ref": "S1" },
+        { "stat": "Americains qui jugent inacceptable l'analyse video assistee par ordinateur des entretiens d'embauche", "valeur": "67%", "annee": "2018", "source_ref": "S1" },
+        { "stat": "Americains qui pensent que les programmes informatiques refleteront toujours un certain biais humain", "valeur": "58%", "annee": "2018", "source_ref": "S1" },
+        { "stat": "Americains qui veulent savoir quelles donnees une IA utilise pour prendre une decision les concernant", "valeur": "83%", "annee": "2024", "source_ref": "S2" },
+        { "stat": "Americains qui veulent pouvoir corriger les donnees erronees utilisees par une decision algorithmique", "valeur": "91%", "annee": "2024", "source_ref": "S2" },
+        { "stat": "Americains tres mal a l'aise avec l'IA analysant les entretiens d'embauche en video (39% pour la qualification a un pret, 39% pour la selection de locataires)", "valeur": "45%", "annee": "2024", "source_ref": "S2" },
+        { "stat": "Personnes dans le monde prets a faire confiance aux systemes d'IA", "valeur": "46%", "annee": "2025", "source_ref": "S3" },
+        { "stat": "Personnes dans le monde qui estiment qu'une regulation de l'IA est necessaire", "valeur": "70%", "annee": "2025", "source_ref": "S3" }
+      ],
+      "conditions_acceptation": [
+        "Transparence sur les donnees utilisees : 83% des Americains la reclament (Consumer Reports 2024)",
+        "Droit de correction des donnees erronees : 91% le demandent (Consumer Reports 2024)",
+        "Explication de la logique de decision : 44% des consommateurs sont plus enclins a utiliser un agent IA si sa logique est clairement expliquee (Salesforce 2024)",
+        "L'acceptabilite depend du contexte de la decision : 50% des Americains jugent equitable un score de risque criminel pour la liberation conditionnelle, contre 32% pour un score financier applique aux consommateurs (Pew Research 2018)"
+      ],
+      "lignes_rouges": [
+        "La decision opaque et sans recours sur l'emploi, le credit ou le logement : 45% tres mal a l'aise pour l'embauche, 39% pour le pret, 39% pour le logement (Consumer Reports 2024)",
+        "Le scoring des personnes a partir de donnees comportementales : 68% le jugent inacceptable pour les offres financieres (Pew Research 2018)"
+      ],
+      "sources": [
+        { "ref": "S1", "institut": "Pew Research Center", "etude": "Public Attitudes Toward Computer Algorithms (4 594 adultes americains, terrain mai-juin 2018)", "annee": "2018", "url": "https://www.pewresearch.org/internet/2018/11/16/public-attitudes-toward-computer-algorithms/", "fiabilite": "T1_primaire", "consulte_le": "2026-07-11" },
+        { "ref": "S2", "institut": "Consumer Reports", "etude": "Attitudes toward Artificial Intelligence and Algorithmic Decision-Making Survey (2 022 adultes americains, representatif national, mai 2024)", "annee": "2024", "url": "https://advocacy.consumerreports.org/press_release/consumer-reports-survey-many-americans-concerned-about-ai-algorithms/", "fiabilite": "T1_primaire", "consulte_le": "2026-07-11" },
+        { "ref": "S3", "institut": "KPMG / Universite de Melbourne", "etude": "Trust, attitudes and use of artificial intelligence : A global study 2025 (plus de 48 000 personnes, 47 pays, terrain novembre 2024 - janvier 2025)", "annee": "2025", "url": "https://kpmg.com/xx/en/our-insights/ai-and-technology/trust-attitudes-and-use-of-ai.html", "fiabilite": "T1_primaire", "consulte_le": "2026-07-11" },
+        { "ref": "S4", "institut": "Salesforce", "etude": "State of the AI Connected Customer (enquete aupres de 16 585 consommateurs et acheteurs professionnels, terrain juillet-aout 2024)", "annee": "2024", "url": "https://www.salesforce.com/news/stories/ai-customer-research/", "fiabilite": "T1_primaire", "consulte_le": "2026-07-11" }
+      ]
+    },
+    {
+      "famille": "optimisation_automatisation",
+      "titre_lisible": "Pricing dynamique et publicite automatisee",
+      "resume": "Le pricing algorithmique est le terrain le plus inflammable : 68% des consommateurs disent se sentir leses quand les marques utilisent le pricing dynamique et 80% jugent plus dignes de confiance les marques aux prix constants (Gartner, 2024). L'equite percue varie selon le secteur : le pricing dynamique n'est juge juste que par 33% a 40% des repondants selon qu'il s'agit de concerts ou de cinemas (YouGov, 17 marches). Le prix personnalise par les donnees individuelles est le plus rejete : 47% des Americains s'y opposent fermement (Consumer Reports, 2024).",
+      "chiffres": [
+        { "stat": "Consommateurs qui se sentent leses (taken advantage of) quand les marques utilisent le pricing dynamique", "valeur": "68%", "annee": "2024", "source_ref": "S1" },
+        { "stat": "Consommateurs d'accord pour dire que les marques aux prix constants sont plus dignes de confiance", "valeur": "80%", "annee": "2024", "source_ref": "S1" },
+        { "stat": "Consommateurs ayant vecu des situations de prix inattendues sur un an (surge pricing, frais caches, hausses imprevues)", "valeur": "79%", "annee": "2024", "source_ref": "S1" },
+        { "stat": "Repondants jugeant le pricing dynamique juste pour les cinemas (38% parcs d'attractions, 35% evenements sportifs, 33% concerts, ou 49% le jugent injuste)", "valeur": "40%", "annee": "2024", "source_ref": "S2" },
+        { "stat": "Americains fermement opposes au prix personnalise selon les donnees individuelles (price discrimination)", "valeur": "47%", "annee": "2024", "source_ref": "S3" }
+      ],
+      "conditions_acceptation": [
+        "La constance des prix comme signal de confiance : 80% jugent plus fiables les marques aux prix stables (Gartner 2024)",
+        "Le secteur conditionne l'equite percue : le pricing dynamique est mieux tolere pour les cinemas (40% le jugent juste) que pour les concerts (33%) (YouGov 2024)"
+      ],
+      "lignes_rouges": [
+        "Le pricing dynamique percu comme abus : 68% se sentent leses (Gartner 2024)",
+        "Le prix individualise a partir des donnees personnelles : 47% d'opposition ferme (Consumer Reports 2024)",
+        "Les frais caches et hausses imprevues, vecus par 79% des consommateurs sur un an et associes a la perte de confiance (Gartner 2024)"
+      ],
+      "sources": [
+        { "ref": "S1", "institut": "Gartner", "etude": "Gartner Marketing Survey Finds 68% of Consumers Report They Feel Taken Advantage of When Brands Use Dynamic Pricing (2024 Cultural Attitudes and Behavior Survey et Consumer Community survey d'octobre 2024)", "annee": "2024", "url": "https://www.gartner.com/en/newsroom/press-releases/2024-12-16-gartner-marketing-survey-finds-68-percent-of-consumers-report-they-feel-taken-advantage-of-when-brands-use-dynamic-pricing", "fiabilite": "T1_primaire", "consulte_le": "2026-07-11" },
+        { "ref": "S2", "institut": "YouGov", "etude": "Fair or unfair? Consumer opinion on dynamic pricing (17 marches, echantillons de 511 a 2 054 adultes par marche, terrain avril 2023, publication juin 2024)", "annee": "2024", "url": "https://yougov.com/articles/49709-fair-unfair-consumer-opinion-on-dynamic-pricing-2024", "fiabilite": "T1_primaire", "consulte_le": "2026-07-11" },
+        { "ref": "S3", "institut": "Consumer Reports", "etude": "Attitudes toward Artificial Intelligence and Algorithmic Decision-Making Survey (2 022 adultes americains, mai 2024)", "annee": "2024", "url": "https://advocacy.consumerreports.org/press_release/consumer-reports-survey-many-americans-concerned-about-ai-algorithms/", "fiabilite": "T1_primaire", "consulte_le": "2026-07-11" }
+      ]
+    }
+  ]
+}

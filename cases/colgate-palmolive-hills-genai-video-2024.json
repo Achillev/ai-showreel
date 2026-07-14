@@ -1,0 +1,289 @@
+{
+  "id": "colgate-palmolive-hills-genai-video-2024",
+  "type_fiche": "succes",
+  "marque": "Colgate-Palmolive",
+  "groupe": "Colgate-Palmolive Company",
+  "industrie": "cpg_d2c",
+  "marches_deploiement": [
+    "Etats-Unis (division Hill's Pet Nutrition)",
+    "Grands marches (extension annoncee du modele)"
+  ],
+  "transposable_ue": {
+    "flag": "oui_avec_adaptations",
+    "note": "Le modele genere de la video publicitaire a partir d'outils generatifs (Google Veo), sans donnees personnelles dans la boucle de creation. Sous AI Act, transparence a prevoir sur les personnages et scenes generes. La brique Gemini / Google Workspace doit etre configuree en conformite RGPD pour un deploiement UE."
+  },
+  "metier": "marketing, brand content",
+  "intervenants": [
+    {
+      "nom": "Brigitte King",
+      "role": "Chief Digital and Insights Officer, Colgate-Palmolive",
+      "source_ref": "S1"
+    }
+  ],
+  "agences": [
+    {
+      "nom": "Google",
+      "role": "Outils generatifs (Veo pour la video, Gemini) et accompagnement technique",
+      "source_ref": "S1"
+    },
+    {
+      "nom": "Boston Consulting Group (BCG)",
+      "role": "Cadrage et equipe pluridisciplinaire du pilote",
+      "source_ref": "S1"
+    }
+  ],
+  "axes": {
+    "levier": "acquisition",
+    "touchpoints": [
+      "video publicitaire",
+      "media digital",
+      "brand content"
+    ],
+    "etape_parcours": "consideration",
+    "famille": "generation",
+    "pattern": "generation video genAI selon un modele repetable volume-variete-velocite",
+    "type_ia": [
+      "generation video",
+      "generation d'images",
+      "LLM (Gemini)"
+    ],
+    "plateforme_stack": [
+      "Google Veo",
+      "Gemini",
+      "Google Workspace"
+    ],
+    "objectif_metrique": [
+      "vitesse de production",
+      "cout par concept",
+      "consideration"
+    ]
+  },
+  "implementation": "plateforme",
+  "objectif_business": "Prouver un modele repetable de production de contenu (volume, variete, velocite) qui produit des videos publicitaires plus vite et moins cher, sans perdre en efficacite mesuree, pour l'etendre a travers le portefeuille.",
+  "description": "Colgate-Palmolive a mene avec Google et BCG un pilote de contenu genAI pour sa division Hill's Pet Nutrition. En utilisant Google Veo, une equipe pluridisciplinaire (marketeurs Hill's, specialistes internes, BCG, technologues Google) a produit deux videos publicitaires pretes a diffuser, 4 a 6 fois plus vite que le delai de production habituel, avec un cout par concept nettement plus bas et une consideration egale ou superieure a la creative habituelle. Le pilote etait bati autour des trois V du contenu: volume, variete, velocite. Colgate-Palmolive positionne cette demarche comme un modele repetable a etendre a d'autres marques, dans un contexte ou l'entreprise deploie plus largement la genAI marketing (insights consommateurs, jumeaux consommateurs synthetiques, upskilling des equipes via Google Workspace avec Gemini).",
+  "resultats": [
+    {
+      "metrique": "Vitesse de production video",
+      "valeur": "4 a 6x plus vite",
+      "citation_exacte": "two consumer-ready video ads 4X to 6X faster",
+      "source_ref": "S1"
+    },
+    {
+      "metrique": "Cout par concept",
+      "valeur": "nettement plus bas",
+      "citation_exacte": "significantly lower costs per concept",
+      "source_ref": "S1"
+    },
+    {
+      "metrique": "Consideration vs la creative habituelle",
+      "valeur": "egale ou superieure",
+      "citation_exacte": "same or better consideration lift compared to business-as-usual creative",
+      "source_ref": "S1"
+    }
+  ],
+  "niveau_preuve": {
+    "niveau": "C",
+    "justification": "Chiffres publies par Google (customer story Think with Google) citant nommement Colgate-Palmolive et sa dirigeante, corrobores par la presse et l'analyse tierce (MIT Sloan) sur la genAI marketing du groupe. Cas de type pilote etendu, pas de resultats financiers, donc C."
+  },
+  "dates": {
+    "lancement": "2024",
+    "derniere_confirmation_activite": "2025",
+    "verifie_le": "2026-07-11",
+    "revoir_apres": "2027-01-11"
+  },
+  "statut_vivant": {
+    "statut": "signaux_mitiges",
+    "note": "Pilote chiffre et documente sur Hill's, presente comme modele repetable a etendre. La preuve d'echelle porte sur l'intention de deploiement plus que sur un volume deja industrialise; a re-verifier sur l'extension effective a d'autres marques."
+  },
+  "sources": [
+    {
+      "ref": "S1",
+      "type": "customer_story_plateforme",
+      "fiabilite": "T2_officiel_interesse",
+      "titre": "Colgate-Palmolive's gen-AI marketing pilot",
+      "url": "https://business.google.com/us/think/ai-excellence/colgate-palmolive-gen-ai-marketing-pilot/",
+      "date_publication": "2024",
+      "consulte_le": "2026-07-11"
+    },
+    {
+      "ref": "S2",
+      "type": "analyse_academique",
+      "fiabilite": "T4_secondaire",
+      "titre": "The GenAI Focus Shifts to Innovation at Colgate-Palmolive",
+      "url": "https://sloanreview.mit.edu/article/the-genai-focus-shifts-to-innovation-at-colgate-palmolive/",
+      "date_publication": "2024",
+      "consulte_le": "2026-07-11"
+    },
+    {
+      "ref": "S3",
+      "type": "presse",
+      "fiabilite": "T4_secondaire",
+      "titre": "Hill's Pet Nutrition drives Colgate-Palmolive growth; Uses AI for marketing",
+      "url": "https://www.petfoodindustry.com/business-strategy/news/15817937/hills-pet-nutrition-drives-colgatepalmolive-growth-uses-ai-for-marketing",
+      "date_publication": "2024",
+      "consulte_le": "2026-07-11"
+    }
+  ],
+  "fonctionnement_operationnel": {
+    "cadence": "Par campagne, sur un modele repetable; generation des concepts video en jours plutot qu'en semaines.",
+    "opere_par": "Equipe pluridisciplinaire Colgate-Palmolive (marketeurs Hill's, specialistes internes) avec Google et BCG.",
+    "signal_pilote": "La consideration mesuree sur la creative generee, comparee a la creative habituelle. Si la consideration decroche, le gain de vitesse ne compense pas la perte d'efficacite.",
+    "etapes": [
+      {
+        "etape": "Cadrage du modele",
+        "detail": "Definition des trois V (volume, variete, velocite) et du perimetre Hill's avec BCG et Google.",
+        "acteur": "marketing / BCG"
+      },
+      {
+        "etape": "Generation video",
+        "detail": "Production de deux videos pretes a diffuser via Google Veo, avec personnages animaux realistes.",
+        "acteur": "IA / equipe creative"
+      },
+      {
+        "etape": "Test d'efficacite",
+        "detail": "Mesure de la consideration face a la creative habituelle et du cout par concept.",
+        "acteur": "insights / marketing"
+      },
+      {
+        "etape": "Extension du modele",
+        "detail": "Reutilisation du modele repetable sur d'autres marques du portefeuille.",
+        "acteur": "marketing"
+      }
+    ]
+  },
+  "schema_flow": {
+    "statut": "documente",
+    "noeuds": [
+      {
+        "id": "brief",
+        "role_generique": "humain",
+        "label": "Equipe Hill's + BCG + Google"
+      },
+      {
+        "id": "veo",
+        "role_generique": "modele_ia",
+        "label": "Generation video",
+        "outil_documente": "Google Veo"
+      },
+      {
+        "id": "ads",
+        "role_generique": "site_app",
+        "label": "Videos publicitaires pretes a diffuser"
+      },
+      {
+        "id": "test",
+        "role_generique": "data_source",
+        "label": "Test consideration / cout par concept"
+      },
+      {
+        "id": "media",
+        "role_generique": "paid_platform",
+        "label": "Media digital"
+      }
+    ],
+    "liens": [
+      [
+        "brief",
+        "veo"
+      ],
+      [
+        "veo",
+        "ads"
+      ],
+      [
+        "ads",
+        "test"
+      ],
+      [
+        "test",
+        "media",
+        "si consideration validee"
+      ]
+    ]
+  },
+  "stack_technique": [
+    {
+      "nom": "Google Veo",
+      "categorie": "llm",
+      "detail": "modele de generation video de Google, utilise pour les deux spots Hill's, dont les personnages animaux realistes",
+      "url": "https://deepmind.google"
+    },
+    {
+      "nom": "Gemini",
+      "categorie": "llm",
+      "detail": "LLM de Google utilise dans la demarche genAI du groupe, notamment pour l'ideation et l'upskilling des equipes",
+      "url": "https://gemini.google.com"
+    },
+    {
+      "nom": "Google Workspace avec Gemini",
+      "categorie": "plateforme",
+      "detail": "environnement de travail ou le groupe deploie Gemini pour monter les equipes en competence",
+      "url": "https://workspace.google.com"
+    },
+    {
+      "nom": "Boston Consulting Group",
+      "categorie": "integrateur",
+      "detail": "cadrage du pilote et participation a l'equipe pluridisciplinaire",
+      "url": "https://www.bcg.com"
+    }
+  ],
+  "replication": {
+    "statut_epistemique": "infere",
+    "prerequis_data": [
+      "briefs de marque et references produit",
+      "protocole de mesure de la consideration",
+      "historique de couts de production pour comparer"
+    ],
+    "prerequis_orga": [
+      "equipe pluridisciplinaire creation / insights / tech",
+      "modele repetable documente (trois V)",
+      "garde-fou d'efficacite avant industrialisation"
+    ],
+    "stack_possible": [
+      "outil de generation video (type Google Veo)",
+      "LLM pour l'ideation (type Gemini)",
+      "brand safety et validation humaine"
+    ],
+    "premiere_etape": "Choisir une marque et generer deux concepts video, puis les tester en consideration contre la production habituelle.",
+    "playbook": [
+      {
+        "action": "Cadrer le modele des trois V (volume, variete, velocite) et le perimetre du pilote sur une marque.",
+        "livrable": "Note de cadrage avec objectifs de vitesse, cout et efficacite"
+      },
+      {
+        "action": "Monter l'equipe pluridisciplinaire (marketing, creatifs, insights, tech) et ouvrir l'acces aux outils de generation.",
+        "livrable": "Equipe et environnement de production prets"
+      },
+      {
+        "action": "Generer deux concepts video prets a diffuser, en gardant la validation humaine sur chaque plan.",
+        "livrable": "Deux spots finalises, delai et cout par concept mesures"
+      },
+      {
+        "action": "Tester la consideration face a la creative habituelle et comparer le cout par concept a l'historique.",
+        "livrable": "Bilan chiffre du pilote (vitesse, cout, consideration)"
+      },
+      {
+        "action": "Documenter le modele repetable pour l'etendre a d'autres marques du portefeuille.",
+        "livrable": "Playbook interne d'extension valide"
+      }
+    ],
+    "equipe": "1 marketeur pilote + 1 creatif genAI + 1 profil insights, avec l'editeur de l'outil et un conseil en appui"
+  },
+  "seo": {
+    "slug": "colgate-palmolive-hills-genai-video-2024",
+    "title": "Colgate-Palmolive : video genAI (Google Veo) - production 4 a 6x plus rapide (2024)",
+    "meta_description": "Colgate-Palmolive a produit des videos Hill's avec Google Veo 4 a 6x plus vite, a cout par concept plus bas et consideration egale ou superieure.",
+    "resume_citable": "Colgate-Palmolive a produit avec Google Veo et BCG deux videos publicitaires Hill's Pet Nutrition 4 a 6 fois plus vite que d'habitude, a cout par concept nettement plus bas et avec une consideration egale ou superieure, sur un modele repetable volume-variete-velocite destine a etre etendu.",
+    "faq": [
+      {
+        "q": "Quel gain Colgate-Palmolive a-t-il obtenu avec la video genAI ?",
+        "a": "Deux videos publicitaires Hill's produites 4 a 6 fois plus vite que le delai habituel, a cout par concept nettement plus bas et avec une consideration egale ou superieure a la creative classique."
+      },
+      {
+        "q": "Quel outil et quel modele Colgate-Palmolive a-t-il utilises ?",
+        "a": "Google Veo pour la generation video, dans un pilote avec Google et BCG bati sur les trois V du contenu: volume, variete, velocite."
+      }
+    ]
+  },
+  "logo_domain": "colgatepalmolive.com"
+}

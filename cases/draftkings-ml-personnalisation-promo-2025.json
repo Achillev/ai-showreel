@@ -1,0 +1,281 @@
+{
+  "id": "draftkings-ml-personnalisation-promo-2025",
+  "type_fiche": "succes",
+  "marque": "DraftKings",
+  "groupe": "DraftKings Inc.",
+  "industrie": "sport_fitness",
+  "marches_deploiement": [
+    "Etats-Unis (Etats ou le sportsbook et l'iGaming DraftKings sont autorises)"
+  ],
+  "transposable_ue": {
+    "flag": "oui_avec_adaptations",
+    "note": "Risque reglementaire fort. Le pari sportif en UE releve d'un agrement national (par exemple l'ANJ en France) et non du modele americain d'ouverture Etat par Etat. La personnalisation ML des offres et l'optimisation promotionnelle se heurtent aux regles de jeu responsable et aux restrictions du marketing des jeux d'argent, renforcees par l'AI Act sur le profilage. Le pattern (ML sur cohortes, pricing, promo) est transposable a un operateur agree UE, mais l'intensite du profilage et de la promo se cale sur le cadre local."
+  },
+  "metier": "marketing / CRM et trading (personnalisation et promo)",
+  "marque_linkedin": "https://www.linkedin.com/company/draftkings",
+  "intervenants": [
+    {
+      "nom": "Jason Robins",
+      "role": "Cofondateur et CEO, DraftKings",
+      "source_ref": "S1"
+    }
+  ],
+  "axes": {
+    "levier": "monetisation",
+    "touchpoints": [
+      "application sportsbook DraftKings",
+      "moteur promotionnel",
+      "recommandation de contenu et de paris",
+      "pricing du live-betting"
+    ],
+    "etape_parcours": "post-achat",
+    "famille": "personnalisation",
+    "pattern": "personnalisation ML et optimisation de la promo et du pricing sur cohortes de joueurs",
+    "type_ia": [
+      "machine learning de personnalisation",
+      "modeles de pricing et de risque en direct",
+      "optimisation du moteur promotionnel",
+      "recommandation de contenu"
+    ],
+    "plateforme_stack": [
+      "custom/in-house (data science DraftKings)"
+    ],
+    "objectif_metrique": [
+      "retention de revenu par utilisateur",
+      "mix de handle en parlay",
+      "marge nette du sportsbook",
+      "efficience promotionnelle"
+    ]
+  },
+  "implementation": "custom",
+  "stack_technique": [
+    {
+      "nom": "ML de personnalisation DraftKings (in-house)",
+      "categorie": "outil",
+      "detail": "Personnalise l'interface du super-app selon l'historique de jeu et recommande contenus, paris et marches.",
+      "url": "https://www.draftkings.com"
+    },
+    {
+      "nom": "Moteur promotionnel optimise par IA (in-house)",
+      "categorie": "outil",
+      "detail": "Cible les offres pour maximiser l'efficience promo plutot que le volume; en debut de deploiement selon la direction.",
+      "url": "https://www.draftkings.com"
+    },
+    {
+      "nom": "Modeles de pricing et de risque live-betting (in-house)",
+      "categorie": "outil",
+      "detail": "Ajustent cotes et couverture du risque en temps reel sur le live-betting.",
+      "url": "https://www.draftkings.com"
+    },
+    {
+      "nom": "Super-app sportsbook DraftKings",
+      "categorie": "infra",
+      "detail": "Canal unique ou personnalisation, recommandations et promotions sont delivrees aux joueurs.",
+      "url": "https://www.draftkings.com"
+    }
+  ],
+  "objectif_business": "Ameliorer l'economie des cohortes de joueurs en personnalisant produit, contenu et promotions par machine learning, pour relever la retention de revenu par utilisateur et la marge du sportsbook.",
+  "points_cles": ["Personnalisation ML du produit, des recommandations et optimisation du moteur promotionnel.", "Modeles in-house de personnalisation, de promo et de pricing du live-betting.", "Retention de revenu par utilisateur superieure a 100%, marge sportsbook de ~6,5% a plus de 9%.", "Preuve A, statut confirme."],
+  "description": "DraftKings a decrit lors de son earnings call du T4 2025 comment l'IA et le machine learning se diffusent dans le produit, la personnalisation et le trading. Le moteur promotionnel commence a etre optimise par IA pour cibler les offres, l'interface du super-app se personnalise selon l'historique de jeu, et des modeles de contenu recommandent paris et marches. Cote trading, des modeles de pricing et de risque interviennent sur le live-betting. L'entreprise relie ces briques a une economie de cohortes qui s'ameliore dans le temps : la retention de revenu par utilisateur depasse 100 pour cent apres la periode initiale de churn de cohorte, et les cohortes d'Etats plus anciens montrent a la fois une forte retention et une monetisation accrue via un mix de parlay plus eleve et une promo plus efficiente. Au T4, le mix de handle en parlay a progresse de pres de 500 points de base, contribuant a l'expansion de marge du sportsbook.",
+  "resultats": [
+    {
+      "metrique": "Retention de revenu par utilisateur (apres churn initial de cohorte)",
+      "valeur": "plus de 100%",
+      "citation_exacte": "revenue retention per user is above 100%",
+      "source_ref": "S1"
+    },
+    {
+      "metrique": "Hausse du mix de handle en parlay au T4 2025, en points de base",
+      "valeur": "pres de 500 pb",
+      "citation_exacte": "nearly 500 basis points",
+      "source_ref": "S1"
+    },
+    {
+      "metrique": "Progression de la marge nette du sportsbook",
+      "valeur": "de 6,5% a 9%+",
+      "citation_exacte": "around 6.5% ... over 9%",
+      "source_ref": "S1"
+    }
+  ],
+  "niveau_preuve": {
+    "niveau": "A",
+    "justification": "Chiffres enonces par la direction (CEO Jason Robins, CFO) lors de l'earnings call du T4 2025 de DraftKings (fevrier 2026), donc niveau A. La transcription de presse etablie corrobore les propos et l'attribution de la personnalisation ML a l'amelioration de l'economie des cohortes."
+  },
+  "dates": {
+    "lancement": "2024-2025 (deploiement progressif de l'IA dans le produit, la promo et le trading)",
+    "derniere_confirmation_activite": "2026-02-13 (earnings call T4 2025)",
+    "verifie_le": "2026-07-11",
+    "revoir_apres": "2027-01-11"
+  },
+  "statut_vivant": {
+    "statut": "confirme",
+    "note": "Le deploiement de l'IA dans la personnalisation et l'optimisation promo est en cours et cite comme un levier de croissance lors du dernier earnings call. Le moteur promo IA en est au debut de son deploiement selon la direction."
+  },
+  "sources": [
+    {
+      "ref": "S1",
+      "type": "earnings_call",
+      "fiabilite": "T3_presse_etablie",
+      "titre": "DraftKings (DKNG) Q4 2025 Earnings Call Transcript",
+      "url": "https://www.fool.com/earnings/call-transcripts/2026/02/13/draftkings-dkng-q4-2025-earnings-call-transcript/",
+      "date_publication": "2026-02-13",
+      "consulte_le": "2026-07-11"
+    },
+    {
+      "ref": "S2",
+      "type": "analyse_academique",
+      "fiabilite": "T4_secondaire",
+      "titre": "Operator Intelligence Profile: DraftKings Inc",
+      "url": "https://www.gamingeminence.com/post/operator-profile-draftkings-inc",
+      "date_publication": "2025",
+      "consulte_le": "2026-07-11"
+    }
+  ],
+  "fonctionnement_operationnel": {
+    "cadence": "Continu : pricing et risque en temps reel sur le live-betting, personnalisation d'interface a la session, reentrainement periodique des modeles de cohorte et de promo.",
+    "opere_par": "Equipes data science, trading et CRM de DraftKings.",
+    "signal_pilote": "L'historique de jeu par utilisateur et la performance des cohortes. Sans donnee de comportement propre et propre attribution, la personnalisation de promo derape en sur-promotion ou en offres non pertinentes.",
+    "etapes": [
+      {
+        "etape": "Collecte du comportement de jeu",
+        "detail": "Historique de mises, de marches joues et d'usage du super-app par utilisateur et par cohorte.",
+        "acteur": "equipe data / IA"
+      },
+      {
+        "etape": "Personnalisation de l'interface",
+        "detail": "L'UI du super-app se reorganise selon l'historique de jeu pour le cross-sell.",
+        "acteur": "IA"
+      },
+      {
+        "etape": "Optimisation de la promo",
+        "detail": "Le moteur promotionnel cible les offres pour maximiser l'efficience plutot que le volume.",
+        "acteur": "IA (moteur promo)"
+      },
+      {
+        "etape": "Pricing et risque en direct",
+        "detail": "Des modeles ajustent la cote et la couverture du risque sur le live-betting.",
+        "acteur": "IA (trading)"
+      }
+    ]
+  },
+  "schema_flow": {
+    "statut": "approche_type",
+    "noeuds": [
+      {
+        "id": "behavior",
+        "role_generique": "data_source",
+        "label": "Historique de jeu et cohortes"
+      },
+      {
+        "id": "mlperso",
+        "role_generique": "modele_ia",
+        "label": "Personnalisation, recommandation et promo ML",
+        "outil_documente": "in-house DraftKings"
+      },
+      {
+        "id": "pricing",
+        "role_generique": "modele_ia",
+        "label": "Pricing et risque du live-betting",
+        "outil_documente": "in-house DraftKings"
+      },
+      {
+        "id": "app",
+        "role_generique": "site_app",
+        "label": "Application sportsbook / super-app"
+      },
+      {
+        "id": "player",
+        "role_generique": "humain",
+        "label": "Joueur"
+      }
+    ],
+    "liens": [
+      [
+        "player",
+        "behavior",
+        "mises et usage"
+      ],
+      [
+        "behavior",
+        "mlperso"
+      ],
+      [
+        "behavior",
+        "pricing"
+      ],
+      [
+        "mlperso",
+        "app",
+        "UI et offres personnalisees"
+      ],
+      [
+        "pricing",
+        "app",
+        "cotes en direct"
+      ],
+      [
+        "app",
+        "player"
+      ]
+    ]
+  },
+  "replication": {
+    "statut_epistemique": "infere",
+    "prerequis_data": [
+      "historique de transactions et de comportement par utilisateur",
+      "attribution par cohorte d'acquisition",
+      "catalogue de marches ou de produits pour la recommandation"
+    ],
+    "prerequis_orga": [
+      "equipe data science pour maintenir les modeles",
+      "conformite jeu responsable et cadre reglementaire local",
+      "gouvernance du profilage sous AI Act en UE"
+    ],
+    "stack_possible": [
+      "modeles de recommandation et de personnalisation",
+      "moteur d'optimisation promotionnelle",
+      "modeles de pricing / risque temps reel"
+    ],
+    "premiere_etape": "Instrumenter le comportement par utilisateur et l'attribution par cohorte, puis tester un moteur promo optimise sur un segment avant de generaliser.",
+    "playbook": [
+      {
+        "action": "Instrumenter le comportement par utilisateur et l'attribution par cohorte d'acquisition.",
+        "livrable": "Socle data comportement et cohortes fiable"
+      },
+      {
+        "action": "Construire un premier modele de personnalisation ou de recommandation et le tester sur un segment.",
+        "livrable": "Modele en test avec lecture d'engagement par cohorte"
+      },
+      {
+        "action": "Tester le moteur promo optimise en A/B contre la promo standard sur un segment.",
+        "livrable": "Lecture d'efficience promo (cout contre revenu incremental)"
+      },
+      {
+        "action": "Generaliser les briques gagnantes et poser la gouvernance jeu responsable et profilage.",
+        "livrable": "Deploiement elargi avec cadre de conformite documente"
+      },
+      {
+        "action": "Etendre au pricing temps reel si l'infrastructure de flux le permet.",
+        "livrable": "Modeles de pricing en pilote sur le live-betting"
+      }
+    ],
+    "equipe": "3-5 data scientists / ML engineers + 1 PM + equipe CRM + conformite jeu responsable."
+  },
+  "seo": {
+    "slug": "draftkings-ml-personnalisation-promo-2025",
+    "title": "DraftKings : personnalisation ML et optimisation promo - retention de revenu par utilisateur >100% (2025)",
+    "meta_description": "DraftKings personnalise produit, contenu et promotions par machine learning ; la retention de revenu par utilisateur depasse 100% et le mix parlay progresse de 500 points de base.",
+    "resume_citable": "DraftKings applique le machine learning a la personnalisation du produit, a la recommandation de paris et a l'optimisation promotionnelle : lors de l'earnings call T4 2025, la direction rapporte une retention de revenu par utilisateur superieure a 100 pour cent apres le churn initial de cohorte, un mix de handle en parlay en hausse de pres de 500 points de base et une marge nette du sportsbook passee d'environ 6,5 a plus de 9 pour cent.",
+    "faq": [
+      {
+        "q": "Comment DraftKings utilise le machine learning en marketing ?",
+        "a": "Pour personnaliser l'interface selon l'historique de jeu, recommander des paris et des marches, et optimiser le ciblage des promotions afin d'ameliorer l'efficience plutot que le volume."
+      },
+      {
+        "q": "Quel resultat chiffre est documente ?",
+        "a": "Une retention de revenu par utilisateur superieure a 100 pour cent apres churn initial, un mix parlay en hausse de pres de 500 points de base et une marge sportsbook passee d'environ 6,5 a plus de 9 pour cent."
+      }
+    ]
+  },
+  "logo_domain": "draftkings.com"
+}

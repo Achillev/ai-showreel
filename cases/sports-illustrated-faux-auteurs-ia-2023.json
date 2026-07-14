@@ -1,0 +1,218 @@
+{
+  "id": "sports-illustrated-faux-auteurs-ia-2023",
+  "type_fiche": "echec_retrait",
+  "marque": "Sports Illustrated",
+  "groupe": "The Arena Group (editeur sous licence a l'epoque)",
+  "industrie": "media_entertainment",
+  "marches_deploiement": [
+    "Etats-Unis"
+  ],
+  "transposable_ue": {
+    "flag": "oui",
+    "note": "Le risque editorial et de marque est identique en Europe. L'AI Act impose la transparence sur les contenus generes, et les regles deontologiques de la presse europeenne interdisent les auteurs fictifs. Un editeur UE qui sous-traite du contenu produit affilie a un prestataire s'expose au meme retour de baton s'il ne controle pas l'origine des signatures."
+  },
+  "metier": "contenu editorial / e-commerce",
+  "axes": {
+    "levier": "monetisation",
+    "touchpoints": [
+      "articles de recommandation produit",
+      "site editorial"
+    ],
+    "etape_parcours": "consideration",
+    "famille": "generation",
+    "pattern": "generation de contenu editorial IA a l'echelle",
+    "type_ia": [
+      "generation de texte (LLM)",
+      "generation d'images (portraits synthetiques)"
+    ],
+    "plateforme_stack": [
+      "AdVon Commerce (prestataire tiers)",
+      "generated.photos"
+    ],
+    "objectif_metrique": [
+      "volume de contenu affilie",
+      "trafic SEO",
+      "revenu d'affiliation"
+    ]
+  },
+  "implementation": "plateforme",
+  "objectif_business": "Produire a bas cout un volume d'articles de recommandation produit generateurs de revenus d'affiliation, via un prestataire externe de contenu.",
+  "description": "Sur le site de Sports Illustrated, des articles de recommandation produit paraissaient sous des signatures d'auteurs qui n'existaient pas. Le 27 novembre 2023, Futurism revele que des bios comme celle de Drew Ortiz utilisaient des portraits achetes sur generated.photos, un site vendant des visages generes par IA. Les auteurs fictifs (Drew Ortiz, Sora Tanaka, entre autres) ont disparu du site des que le magazine a ete interroge. Le contenu provenait du prestataire AdVon Commerce, qui affirmait a SI qu'il etait ecrit et edite par des humains, mais faisait signer ses auteurs sous pseudonyme.",
+  "resultats": [
+    {
+      "metrique": "reaction editoriale : partenariat AdVon rompu",
+      "valeur": "contenu retire",
+      "citation_exacte": "We are removing the content while our internal investigation continues",
+      "source_ref": "S2"
+    },
+    {
+      "metrique": "reaction de la redaction : le syndicat exige des standards journalistiques",
+      "valeur": "syndicat horrifie",
+      "citation_exacte": "not publishing computer-written stories by fake people",
+      "source_ref": "S2"
+    }
+  ],
+  "niveau_preuve": {
+    "niveau": "C",
+    "justification": "Enquete initiale de Futurism, reprise par la presse etablie (PBS NewsHour, Variety, CBS) qui cite nommement Sports Illustrated et Arena Group et leurs communiques. Consequences (limogeage du PDG, perte de licence) documentees par Sportico."
+  },
+  "dates": {
+    "lancement": "articles affilies publies avant novembre 2023 (date exacte de debut non precisee)",
+    "derniere_confirmation_activite": "2023-11-27 (revelation Futurism, retrait du contenu)",
+    "verifie_le": "2026-07-11",
+    "revoir_apres": "2027-07-11"
+  },
+  "statut_vivant": {
+    "statut": "confirme",
+    "note": "Retrait confirme : contenu supprime et partenariat AdVon rompu en novembre 2023. Le PDG d'Arena, Ross Levinsohn, a ete limoge en decembre 2023 ; Arena a perdu la licence Sports Illustrated en 2024 (declencheur legal : un paiement manque, dans un contexte de crise reputationnelle)."
+  },
+  "sources": [
+    {
+      "ref": "S1",
+      "type": "presse",
+      "fiabilite": "T4_secondaire",
+      "titre": "Sports Illustrated Published Articles by Fake, AI-Generated Writers",
+      "url": "https://futurism.com/sports-illustrated-ai-generated-writers",
+      "date_publication": "2023-11-27",
+      "consulte_le": "2026-07-11"
+    },
+    {
+      "ref": "S2",
+      "type": "presse",
+      "fiabilite": "T3_presse_etablie",
+      "titre": "Sports Illustrated found publishing AI generated stories, photos and authors",
+      "url": "https://www.pbs.org/newshour/economy/sports-illustrated-found-publishing-ai-generated-stories-photos-and-authors",
+      "date_publication": "2023-11-29",
+      "consulte_le": "2026-07-11"
+    },
+    {
+      "ref": "S3",
+      "type": "presse",
+      "fiabilite": "T3_presse_etablie",
+      "titre": "Sports Illustrated Publisher Losing License, Staff Firings Announced",
+      "url": "https://www.sportico.com/business/media/2024/sports-illustrated-arena-group-license-1234763506/",
+      "date_publication": "2024-01-19",
+      "consulte_le": "2026-07-11"
+    }
+  ],
+  "post_mortem": {
+    "ce_qui_s_est_passe": "Sports Illustrated publiait des articles de recommandation produit signes d'auteurs fictifs, avec des portraits achetes sur generated.photos. Le 27 novembre 2023, Futurism l'expose ; les profils disparaissent du site des les premieres questions. Arena Group attribue le contenu au prestataire AdVon Commerce, retire les articles et rompt le partenariat. Le PDG Ross Levinsohn est limoge environ deux semaines plus tard. En 2024, Arena perd la licence de publication de SI au profit de Minute Media.",
+    "raison_echec": "Externalisation d'un volume de contenu affilie a un prestataire qui utilisait des signatures fictives et, selon des sources citees par Futurism, au moins en partie de la generation automatique de texte, sans controle editorial de SI sur l'origine des auteurs ni des textes.",
+    "date_retrait": "2023-11-27",
+    "cout_estime": "Cout reputationnel majeur pour un titre a l'histoire journalistique forte. Limogeage du PDG d'Arena en decembre 2023. En 2024, Arena perd la licence SI et annonce le licenciement d'un tiers de ses effectifs (declencheur legal : un paiement de licence manque, sur fond de crise).",
+    "signaux_avant_coureurs": "Infere : des auteurs sans historique verifiable, des portraits introuvables ailleurs que sur un vendeur de visages IA, un prestataire qui impose des pseudonymes. Chacun de ces signaux, verifiable en interne avant publication, aurait du bloquer la mise en ligne.",
+    "lecons_avec_recul": "Infere : la generation de contenu a l'echelle n'est pas le probleme, la tromperie sur l'auteur l'est. Un media peut utiliser l'IA pour produire ou assister du contenu a condition de le divulguer et de garder des signatures reelles et une chaine de responsabilite editoriale. Sous-traiter la production sans controler l'origine des signatures transfere le risque de marque sans transferer la responsabilite.",
+    "le_pattern_reste_il_valide": "Infere : le pattern de la production de contenu assistee par IA reste valide et se generalise dans l'edition. Ce qui est condamne ici, c'est l'usage cache et les faux auteurs, pas l'outil. La ligne rouge est la transparence : contenu IA divulgue et signature humaine responsable d'un cote, fraude editoriale de l'autre."
+  },
+  "schema_flow": {
+    "statut": "approche_type",
+    "noeuds": [
+      {
+        "id": "editeur",
+        "role_generique": "humain",
+        "label": "Sports Illustrated (donneur d'ordre)"
+      },
+      {
+        "id": "prestataire",
+        "role_generique": "humain",
+        "label": "AdVon Commerce (prestataire contenu)",
+        "outil_documente": "AdVon Commerce"
+      },
+      {
+        "id": "genia",
+        "role_generique": "modele_ia",
+        "label": "Generation de texte + portraits synthetiques"
+      },
+      {
+        "id": "photos",
+        "role_generique": "data_source",
+        "label": "generated.photos (visages IA)",
+        "outil_documente": "generated.photos"
+      },
+      {
+        "id": "site",
+        "role_generique": "site_app",
+        "label": "Site SI (articles affilies)"
+      }
+    ],
+    "liens": [
+      [
+        "editeur",
+        "prestataire"
+      ],
+      [
+        "prestataire",
+        "genia"
+      ],
+      [
+        "photos",
+        "genia",
+        "portraits d'auteurs fictifs"
+      ],
+      [
+        "genia",
+        "site"
+      ],
+      [
+        "site",
+        "editeur",
+        "revenu affilie (jusqu'au scandale)"
+      ]
+    ]
+  },
+  "replication": {
+    "statut_epistemique": "infere",
+    "prerequis_data": [
+      "catalogue produit",
+      "guidelines editoriales et de divulgation IA"
+    ],
+    "prerequis_orga": [
+      "responsable editorial nomme",
+      "process de verification d'auteur",
+      "clause contractuelle interdisant les faux auteurs"
+    ],
+    "stack_possible": [
+      "LLM avec relecture humaine",
+      "signature d'auteur reel et biographie verifiable",
+      "mention de contenu assiste par IA"
+    ],
+    "premiere_etape": "Fixer une regle non negociable : tout article a un auteur humain reel et responsable, et tout usage d'IA est divulgue au lecteur ; l'inscrire dans le contrat prestataire."
+  },
+  "seo": {
+    "slug": "sports-illustrated-faux-auteurs-ia-2023",
+    "title": "Sports Illustrated : articles IA sous faux auteurs - contenu retire (2023)",
+    "meta_description": "En 2023, Sports Illustrated publiait des articles produit sous auteurs fictifs aux portraits generes par IA. Contenu retire, PDG limoge, licence perdue en 2024.",
+    "resume_citable": "En novembre 2023, Sports Illustrated a ete pris a publier des articles de recommandation produit signes d'auteurs fictifs aux portraits generes par IA ; le contenu a ete retire, le partenariat prestataire rompu et le PDG d'Arena limoge.",
+    "faq": [
+      {
+        "q": "Sports Illustrated a-t-il ecrit ses articles avec de l'IA ?",
+        "a": "Le prestataire AdVon Commerce affirmait a SI que les textes etaient ecrits et edites par des humains, mais les signait sous des auteurs fictifs avec des portraits generes par IA. Des sources citees par Futurism affirment qu'au moins une partie des textes etait aussi generee automatiquement."
+      },
+      {
+        "q": "Que faut-il retenir pour un media qui veut utiliser l'IA ?",
+        "a": "La transparence est la ligne rouge. Contenu assiste par IA divulgue et signature humaine responsable restent acceptables ; auteurs fictifs et usage cache detruisent la confiance et exposent la marque."
+      }
+    ]
+  },
+  "logo_domain": "si.com",
+  "stack_technique": [
+    {
+      "nom": "AdVon Commerce",
+      "categorie": "integrateur",
+      "detail": "prestataire externe de contenu affilie ; il affirmait a SI que les textes etaient ecrits et edites par des humains, mais signait sous pseudonymes et, selon des sources citees par Futurism, utilisait au moins en partie de la generation automatique de texte (outil non identifie)",
+      "url": "https://advoncommerce.com"
+    },
+    {
+      "nom": "generated.photos",
+      "categorie": "outil",
+      "detail": "banque de portraits generes par IA ou ont ete achetes les visages des auteurs fictifs (Drew Ortiz, Sora Tanaka)",
+      "url": "https://generated.photos"
+    },
+    {
+      "nom": "Site editorial si.com",
+      "categorie": "infra",
+      "detail": "surface de publication des articles de recommandation produit, sans controle de SI sur l'origine des signatures",
+      "url": "https://www.si.com"
+    }
+  ]
+}

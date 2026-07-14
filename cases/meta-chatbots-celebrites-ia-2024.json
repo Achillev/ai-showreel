@@ -1,0 +1,214 @@
+{
+  "id": "meta-chatbots-celebrites-ia-2024",
+  "type_fiche": "echec_retrait",
+  "marque": "Meta",
+  "groupe": "Meta Platforms",
+  "industrie": "media_entertainment",
+  "marches_deploiement": [
+    "Etats-Unis"
+  ],
+  "transposable_ue": {
+    "flag": "oui_avec_adaptations",
+    "note": "Transposable, mais avec des contraintes UE plus fortes : usage de l'image et de la voix de personnalites (droits de la personnalite), transparence sur le caractere artificiel de l'agent (AI Act), et protection des mineurs. Au dela du droit, l'enseignement principal est produit et non legal : l'appetence des utilisateurs pour un chatbot a la facon d'une celebrite s'est revelee faible. Ce constat vaut des deux cotes de l'Atlantique."
+  },
+  "metier": "produit / engagement social",
+  "axes": {
+    "levier": "retention",
+    "touchpoints": [
+      "Messenger",
+      "Instagram",
+      "WhatsApp",
+      "personas IA"
+    ],
+    "etape_parcours": "fidelite",
+    "famille": "conversation",
+    "pattern": "chatbots IA a l'effigie de celebrites",
+    "type_ia": [
+      "LLM generatif",
+      "personas conversationnels"
+    ],
+    "plateforme_stack": [
+      "Meta AI",
+      "custom"
+    ],
+    "objectif_metrique": [
+      "engagement utilisateurs",
+      "temps passe",
+      "adoption des personas"
+    ]
+  },
+  "implementation": "custom",
+  "stack_technique": [
+    {
+      "nom": "Meta AI (modeles generatifs)",
+      "categorie": "llm",
+      "detail": "LLM proprietaire de Meta animant les personas ; le modele exact n'est pas nomme dans les sources.",
+      "url": "https://ai.meta.com"
+    },
+    {
+      "nom": "Personas conversationnels custom",
+      "categorie": "outil",
+      "detail": "28 personnages construits en interne sur l'image et le style de celebrites, sous accords de droits de personnalite.",
+      "url": "https://www.meta.com"
+    },
+    {
+      "nom": "Messenger, Instagram, WhatsApp",
+      "categorie": "plateforme",
+      "detail": "Canaux de diffusion des chatbots aupres des utilisateurs des applications Meta.",
+      "url": "https://www.meta.com"
+    },
+    {
+      "nom": "Meta AI Studio",
+      "categorie": "plateforme",
+      "detail": "Outil de creation de personnages IA par les utilisateurs, vers lequel Meta a pivote apres le retrait.",
+      "url": "https://ai.meta.com"
+    }
+  ],
+  "objectif_business": "Augmenter l'engagement sur les applications Meta avec des chatbots incarnant des personas inspirees de celebrites (voix, style), pour donner envie de discuter avec l'IA.",
+  "description": "En septembre 2023, a sa conference Connect, Meta lance une premiere serie de 28 chatbots IA incarnant des personas inspirees de celebrites, avec des figures comme Kendall Jenner, Charli D'Amelio, Chris Paul ou Snoop Dogg pretant leur image. Meta aurait paye plusieurs millions de dollars pour ces accords. Moins d'un an plus tard, en juillet 2024, l'entreprise retire discretement ces chatbots. Aucun n'avait rassemble d'audience notable, loin des comptes personnels des celebrites concernees. Meta reoriente vers AI Studio, un outil qui laisse les utilisateurs creer leurs propres personnages IA.",
+  "resultats": [
+    {
+      "metrique": "Retrait des chatbots celebrites apres le lancement",
+      "valeur": "moins d'un an",
+      "citation_exacte": "less than a year after Meta launched the celebrity chatbots",
+      "source_ref": "S2"
+    },
+    {
+      "metrique": "cause du retrait",
+      "valeur": "aucune audience significative, faible engagement",
+      "citation_exacte": "None of the AI chatbots amassed particularly big followings",
+      "source_ref": "S2"
+    }
+  ],
+  "niveau_preuve": {
+    "niveau": "C",
+    "justification": "The Information a revele le retrait et plusieurs medias tech (Social Media Today, WinBuzzer) l'ont confirme en citant nommement la marque, les celebrites et la cause. Pas de document financier detaille, donc C."
+  },
+  "dates": {
+    "lancement": "2023-09 (annonce a la conference Connect)",
+    "derniere_confirmation_activite": "2024-07-31 (retrait confirme des chatbots celebrites)",
+    "verifie_le": "2026-07-11",
+    "revoir_apres": "2027-07-11"
+  },
+  "statut_vivant": {
+    "statut": "confirme",
+    "note": "Retrait confirme en juillet 2024. Meta a bascule vers AI Studio (personnages crees par les utilisateurs). Distinct de l'affaire de janvier 2025 sur les comptes de personnages IA generes par Meta."
+  },
+  "sources": [
+    {
+      "ref": "S1",
+      "type": "presse",
+      "fiabilite": "T3_presse_etablie",
+      "titre": "Meta Scraps Celebrity AI Chatbots That Fell Flat With Users",
+      "url": "https://www.theinformation.com/articles/meta-scraps-celebrity-ai-chatbots-that-fell-flat-with-users",
+      "date_publication": "2024-07-30",
+      "consulte_le": "2026-07-11"
+    },
+    {
+      "ref": "S2",
+      "type": "presse",
+      "fiabilite": "T4_secondaire",
+      "titre": "Meta Retires Celebrity-Styled AI Bots",
+      "url": "https://www.socialmediatoday.com/news/meta-retires-celebrity-styled-ai-bots/722974/",
+      "date_publication": "2024-07-31",
+      "consulte_le": "2026-07-11"
+    },
+    {
+      "ref": "S3",
+      "type": "presse",
+      "fiabilite": "T4_secondaire",
+      "titre": "Meta Ends Celebrity AI Chatbot Project Amid Low Interest",
+      "url": "https://winbuzzer.com/2024/07/31/meta-ends-celebrity-ai-chatbot-project-amid-low-interest-xcxwbn/",
+      "date_publication": "2024-07-31",
+      "consulte_le": "2026-07-11"
+    }
+  ],
+  "post_mortem": {
+    "ce_qui_s_est_passe": "En septembre 2023, Meta presente a Connect une premiere serie de 28 chatbots IA incarnant des personas inspirees de celebrites, avec des figures comme Kendall Jenner, Snoop Dogg, Charli D'Amelio ou Chris Paul. Selon la presse, Meta aurait paye plusieurs millions de dollars pour ces accords. Les bots n'attirent pas d'audience notable. En juillet 2024, Meta les retire discretement et reoriente vers AI Studio, qui laisse les utilisateurs creer leurs propres personnages IA.",
+    "raison_echec": "La cause documentee est le manque d'adoption : aucun de ces chatbots n'a rassemble d'audience significative. Discuter avec une IA a la facon d'une celebrite, alors que la vraie personne est joignable ailleurs, n'a pas trouve son public. Le produit reposait sur un pari d'usage qui ne s'est pas verifie, malgre l'investissement dans les accords de personnalite.",
+    "date_retrait": "2024-07 (chatbots celebrites mis hors ligne).",
+    "cout_estime": "Plusieurs millions de dollars d'accords avec des celebrites, selon la presse, pour un produit retire en moins d'un an. Montant exact non publie.",
+    "signaux_avant_coureurs": "Infere : le doute sur l'appetence pour des personas de celebrites factices existait des le lancement. La valeur d'une celebrite tient a l'authenticite du lien, difficile a repliquer par un chatbot. Un test d'usage plus modeste avant les gros accords aurait pu reveler la faible traction.",
+    "lecons_avec_recul": "Infere : payer des droits de personnalite ne cree pas l'usage. Un persona IA ne remplace pas le lien qu'une audience entretient avec une vraie personne. Mieux vaut valider l'appetence sur un format leger avant d'engager des accords couteux. Le pivot vers des personnages crees par les utilisateurs suggere que la demande etait pour la creation, pas pour la consommation de personas imposees.",
+    "le_pattern_reste_il_valide": "Infere : le pattern des personas conversationnels reste valide, mais deplace. L'echec porte sur les personas de celebrites imposees, pas sur les agents IA en general ni sur les personnages crees par les utilisateurs, vers lesquels Meta a pivote. La categorie survit, l'execution celebrite a echoue."
+  },
+  "schema_flow": {
+    "statut": "approche_type",
+    "noeuds": [
+      {
+        "id": "deal",
+        "role_generique": "humain",
+        "label": "Accords de personnalite (celebrites)"
+      },
+      {
+        "id": "persona",
+        "role_generique": "modele_ia",
+        "label": "Personas conversationnels IA",
+        "outil_documente": "Meta AI"
+      },
+      {
+        "id": "apps",
+        "role_generique": "site_app",
+        "label": "Messenger, Instagram, WhatsApp"
+      },
+      {
+        "id": "users",
+        "role_generique": "humain",
+        "label": "Utilisateurs (faible adoption)"
+      }
+    ],
+    "liens": [
+      [
+        "deal",
+        "persona"
+      ],
+      [
+        "persona",
+        "apps"
+      ],
+      [
+        "apps",
+        "users"
+      ],
+      [
+        "users",
+        "persona",
+        "signal (faible engagement, retrait)"
+      ]
+    ]
+  },
+  "replication": {
+    "statut_epistemique": "infere",
+    "prerequis_data": [
+      "signal d'engagement par persona",
+      "tests d'usage prealables"
+    ],
+    "prerequis_orga": [
+      "accords de droits de personnalite si celebrites",
+      "capacite a arreter vite un format sans traction"
+    ],
+    "stack_possible": [
+      "LLM avec personas",
+      "outil de creation de personnages par les utilisateurs",
+      "mesure d'engagement"
+    ],
+    "premiere_etape": "Tester l'appetence sur un format leger et peu couteux avant tout accord de personnalite, en mesurant l'engagement reel plutot que la curiosite de lancement."
+  },
+  "seo": {
+    "slug": "meta-chatbots-celebrites-ia-2024",
+    "title": "Meta : chatbots IA de celebrites retires faute d'audience (2024)",
+    "meta_description": "Lances en septembre 2023, les chatbots IA de celebrites de Meta (Kendall Jenner, Snoop Dogg) sont retires en juillet 2024 faute d'engagement.",
+    "resume_citable": "Meta a lance en septembre 2023 des chatbots IA a l'effigie de celebrites comme Kendall Jenner et Snoop Dogg, puis les a retires en juillet 2024 faute d'audience, malgre des accords a plusieurs millions de dollars.",
+    "faq": [
+      {
+        "q": "Pourquoi Meta a-t-il retire ses chatbots de celebrites ?",
+        "a": "Aucun de ces chatbots n'a rassemble d'audience notable. Discuter avec une IA a la facon d'une celebrite, alors que la vraie personne est joignable ailleurs, n'a pas trouve son public. Meta les a retires en juillet 2024, moins d'un an apres le lancement, et a pivote vers AI Studio."
+      },
+      {
+        "q": "Les personas conversationnels IA sont-ils un pattern condamne ?",
+        "a": "Non. L'echec porte sur les personas de celebrites imposees, pas sur les agents IA en general ni sur les personnages crees par les utilisateurs, vers lesquels Meta a bascule. La categorie survit, cette execution a echoue."
+      }
+    ]
+  },
+  "logo_domain": "meta.com"
+}

@@ -1,0 +1,268 @@
+{
+  "id": "amazon-scot-demand-forecasting-2024",
+  "type_fiche": "succes",
+  "marque": "Amazon",
+  "industrie": "retail_ecom",
+  "marches_deploiement": [
+    "Mondial (plus de 185 pays)"
+  ],
+  "transposable_ue": {
+    "flag": "oui",
+    "note": "La prevision porte sur des series temporelles de vente et de stock, pas sur des donnees personnelles. Deploye deja sur les marches europeens d'Amazon. Peu de contrainte RGPD sur le principe."
+  },
+  "metier": "supply chain / operations (SCOT: Supply Chain Optimization Technologies)",
+  "marque_linkedin": "https://www.linkedin.com/company/amazon/",
+  "intervenants": [
+    {
+      "nom": "Ping Xu",
+      "role": "Forecasting Science Director, SCOT (Amazon)",
+      "source_ref": "S1"
+    },
+    {
+      "nom": "Kari Torkkola",
+      "role": "Senior Principal Research Scientist, Amazon",
+      "source_ref": "S1"
+    },
+    {
+      "nom": "Dhruv Madeka",
+      "role": "Principal Applied Scientist, Amazon",
+      "source_ref": "S1"
+    }
+  ],
+  "axes": {
+    "levier": "activation_conversion",
+    "touchpoints": [
+      "catalogue e-commerce",
+      "reseau logistique et entrepots",
+      "decisions d'achat et de placement de stock"
+    ],
+    "etape_parcours": "achat",
+    "famille": "prediction",
+    "pattern": "prevision de demande probabiliste a l'echelle du catalogue",
+    "type_ia": [
+      "deep learning",
+      "reseaux recurrents autoregressifs (DeepAR)",
+      "modeles quantiles multi-horizon (MQ-Transformer)",
+      "prevision probabiliste"
+    ],
+    "plateforme_stack": [
+      "custom/in-house",
+      "Apache Spark"
+    ],
+    "objectif_metrique": [
+      "precision de prevision de demande",
+      "niveau de stock",
+      "disponibilite produit"
+    ]
+  },
+  "implementation": "custom",
+  "objectif_business": "Predire la demande de chaque produit du catalogue pour decider combien commander et ou placer le stock, de facon a tenir la disponibilite sans immobiliser du capital en surstock.",
+  "points_cles": ["Prevision de demande probabiliste a l'echelle du catalogue (equipe SCOT).", "Modeles deep learning maison (DeepAR, MQ-Transformer) sur Apache Spark.", "Precision de prevision multipliee par 15, sur plus de 400 millions de produits.", "Preuve B, statut vivant confirme."],
+  "description": "Amazon vend plus de 400 millions de produits dans plus de 185 pays. Son equipe SCOT (Supply Chain Optimization Technologies) predit la demande de chaque reference pour alimenter les decisions de reapprovisionnement, de placement de stock et de capacite logistique. Le systeme a evolue depuis 2008: des methodes de series temporelles classiques, puis une foret aleatoire quantile parcimonieuse, et enfin un modele unifie de deep learning. Les travaux publies incluent DeepAR (reseaux recurrents autoregressifs produisant des previsions probabilistes) et MQ-Transformer (previsions multi-horizon avec attention). La prevision est probabiliste: elle ne donne pas un chiffre unique mais une distribution, ce qui permet d'arbitrer entre risque de rupture et cout de surstock.",
+  "resultats": [
+    {
+      "metrique": "Amelioration de precision du modele deep learning unifie vs foret quantile precedente",
+      "valeur": "x15",
+      "citation_exacte": "a 15-fold improvement in forecast accuracy",
+      "source_ref": "S1"
+    },
+    {
+      "metrique": "Produits du catalogue couverts, dans 185+ pays",
+      "valeur": "400M+ produits",
+      "citation_exacte": "sells more than 400 million products in over 185 countries",
+      "source_ref": "S1"
+    }
+  ],
+  "niveau_preuve": {
+    "niveau": "B",
+    "justification": "Publications techniques d'Amazon Science (organisation scientifique d'Amazon) decrivant nommement le systeme de prevision d'Amazon et son gain de precision chiffre. Source officielle interessee, non independante, d'ou B."
+  },
+  "dates": {
+    "lancement": "chaine de prevision en production depuis 2008, bascule vers le deep learning autour de 2018-2020",
+    "derniere_confirmation_activite": "publications Amazon Science toujours en ligne et systeme SCOT actif (references 2024)",
+    "verifie_le": "2026-07-11",
+    "revoir_apres": "2027-01-11"
+  },
+  "statut_vivant": {
+    "statut": "confirme",
+    "note": "SCOT est une organisation permanente d'Amazon; la chaine de prevision est un actif operationnel continu, decrit dans des publications scientifiques accessibles."
+  },
+  "sources": [
+    {
+      "ref": "S1",
+      "type": "eng_blog",
+      "fiabilite": "T2_officiel_interesse",
+      "titre": "The history of Amazon's forecasting algorithm",
+      "url": "https://www.amazon.science/latest-news/the-history-of-amazons-forecasting-algorithm",
+      "date_publication": "2021",
+      "consulte_le": "2026-07-11"
+    },
+    {
+      "ref": "S2",
+      "type": "analyse_academique",
+      "fiabilite": "T2_officiel_interesse",
+      "titre": "Probabilistic demand forecasting at scale",
+      "url": "https://www.amazon.science/publications/probabilistic-demand-forecasting-at-scale",
+      "date_publication": "2017",
+      "consulte_le": "2026-07-11"
+    }
+  ],
+  "fonctionnement_operationnel": {
+    "cadence": "Reentrainement et scoring reguliers sur l'ensemble du catalogue; les previsions alimentent en continu les decisions d'achat et de placement de stock.",
+    "opere_par": "Equipe SCOT (scientifiques et ingenieurs supply chain d'Amazon), sur une plateforme ML maison batie sur Apache Spark.",
+    "signal_pilote": "La distribution de demande predite par produit. Si l'historique de vente est court (produit neuf) ou perturbe (rupture, promo exceptionnelle), la prevision devient bruyante et le systeme s'appuie sur des produits comparables.",
+    "etapes": [
+      {
+        "etape": "Preparation des donnees",
+        "detail": "Ventes, prix, disponibilite, saisonnalite et attributs produit sont consolides en series temporelles a l'echelle du catalogue.",
+        "acteur": "plateforme ML / equipe data"
+      },
+      {
+        "etape": "Prevision probabiliste",
+        "detail": "Le modele de deep learning (type DeepAR / MQ-Transformer) produit pour chaque reference une distribution de demande sur plusieurs horizons.",
+        "acteur": "modele IA"
+      },
+      {
+        "etape": "Decision de stock",
+        "detail": "Les systemes de reapprovisionnement consomment ces distributions pour arbitrer quantite a commander et lieu de placement.",
+        "acteur": "systemes SCOT"
+      },
+      {
+        "etape": "Boucle d'apprentissage",
+        "detail": "Les ventes reelles et les ruptures observees reviennent en donnee d'entrainement et affinent les previsions suivantes.",
+        "acteur": "plateforme ML"
+      }
+    ]
+  },
+  "schema_flow": {
+    "statut": "documente",
+    "noeuds": [
+      {
+        "id": "n1",
+        "role_generique": "data_source",
+        "label": "Series temporelles: ventes, prix, disponibilite, attributs produit"
+      },
+      {
+        "id": "n2",
+        "role_generique": "modele_ia",
+        "label": "Modele deep learning de prevision probabiliste",
+        "outil_documente": "DeepAR / MQ-Transformer (SCOT)"
+      },
+      {
+        "id": "n3",
+        "role_generique": "site_app",
+        "label": "Systemes de reapprovisionnement et placement de stock",
+        "outil_documente": "SCOT"
+      },
+      {
+        "id": "n4",
+        "role_generique": "data_source",
+        "label": "Reseau logistique et entrepots"
+      }
+    ],
+    "liens": [
+      [
+        "n1",
+        "n2"
+      ],
+      [
+        "n2",
+        "n3"
+      ],
+      [
+        "n3",
+        "n4"
+      ],
+      [
+        "n4",
+        "n1",
+        "ventes et ruptures reinjectees"
+      ]
+    ]
+  },
+  "replication": {
+    "statut_epistemique": "infere",
+    "prerequis_data": [
+      "historique de vente par SKU sur plusieurs annees",
+      "signaux de disponibilite et de prix",
+      "attributs produit pour rattacher les nouveautes a des comparables"
+    ],
+    "prerequis_orga": [
+      "equipe de data science supply chain",
+      "systeme de reapprovisionnement capable de consommer des previsions probabilistes"
+    ],
+    "stack_possible": [
+      "forecasting maison (DeepAR via GluonTS, MQ-Transformer)",
+      "Amazon Forecast / SageMaker",
+      "Google Vertex AI Forecast",
+      "plateformes de demand planning"
+    ],
+    "premiere_etape": "Remplacer une prevision point (moyenne) par une prevision probabiliste (quantiles) sur une categorie a forte variabilite, et mesurer le gain sur ruptures et surstock.",
+    "playbook": [
+      {
+        "action": "Consolider les series temporelles par SKU : ventes, prix, disponibilite, attributs produit sur plusieurs annees.",
+        "livrable": "Dataset multi-annees pret a l'entrainement"
+      },
+      {
+        "action": "Remplacer la prevision point par une prevision probabiliste (quantiles, type DeepAR) sur une categorie a forte variabilite.",
+        "livrable": "Modele quantile evalue en backtest face a l'existant"
+      },
+      {
+        "action": "Brancher les distributions de demande sur la decision de stock : quantite a commander et placement.",
+        "livrable": "Regle de commande qui consomme les quantiles"
+      },
+      {
+        "action": "Faire tourner le pilote en parallele du systeme existant et mesurer ruptures et surstock.",
+        "livrable": "Bilan comparatif chiffre sur la categorie pilote"
+      },
+      {
+        "action": "Etendre au reste du catalogue et industrialiser la boucle de reentrainement.",
+        "livrable": "Chaine de prevision en production avec monitoring de precision"
+      }
+    ],
+    "equipe": "2-3 data scientists forecasting + 1-2 data engineers + 1 responsable supply chain qui possede la regle de commande"
+  },
+  "stack_technique": [
+    {
+      "nom": "DeepAR",
+      "categorie": "llm",
+      "detail": "Reseaux recurrents autoregressifs de prevision probabiliste, publies par Amazon et disponibles en open source via GluonTS.",
+      "url": "https://www.amazon.science"
+    },
+    {
+      "nom": "MQ-Transformer",
+      "categorie": "llm",
+      "detail": "Modele quantile multi-horizon avec attention, publie par Amazon Science, coeur du modele unifie de deep learning.",
+      "url": "https://www.amazon.science"
+    },
+    {
+      "nom": "Plateforme ML maison sur Apache Spark",
+      "categorie": "infra",
+      "detail": "Pipeline d'entrainement et de scoring a l'echelle des 400 millions de references.",
+      "url": "https://spark.apache.org"
+    },
+    {
+      "nom": "Systemes SCOT de reapprovisionnement",
+      "categorie": "outil",
+      "detail": "Systemes internes qui consomment les distributions de demande pour decider quantites a commander et placement du stock.",
+      "url": "https://www.amazon.com"
+    }
+  ],
+  "seo": {
+    "slug": "amazon-scot-demand-forecasting-2024",
+    "title": "Amazon : prevision de demande deep learning (SCOT) - x15 en precision sur 400M de produits (2024)",
+    "meta_description": "L'equipe SCOT d'Amazon predit la demande de plus de 400 millions de produits avec des modeles deep learning probabilistes et a multiplie par 15 la precision de prevision.",
+    "resume_citable": "L'equipe SCOT d'Amazon predit la demande de plus de 400 millions de produits dans 185 pays avec des modeles deep learning probabilistes (DeepAR, MQ-Transformer) et a obtenu une amelioration de precision de x15 en passant a un modele unifie de deep learning.",
+    "faq": [
+      {
+        "q": "Comment Amazon predit-il la demande ?",
+        "a": "Via son equipe SCOT et des modeles de deep learning probabilistes (DeepAR, MQ-Transformer) qui produisent, pour chaque reference du catalogue, une distribution de demande sur plusieurs horizons, consommee ensuite par les systemes de reapprovisionnement."
+      },
+      {
+        "q": "Quel gain chiffre ?",
+        "a": "Une amelioration de precision de prevision d'un facteur 15 en passant de la foret aleatoire quantile a un modele unifie de deep learning, a l'echelle de plus de 400 millions de produits."
+      }
+    ]
+  },
+  "logo_domain": "amazon.com"
+}

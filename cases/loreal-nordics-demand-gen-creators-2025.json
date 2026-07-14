@@ -1,0 +1,289 @@
+{
+  "type_fiche": "succes",
+  "id": "loreal-nordics-demand-gen-creators-2025",
+  "marque": "L'Oreal",
+  "groupe": "L'Oreal Groupe",
+  "industrie": "luxe_beaute",
+  "marches_deploiement": [
+    "Suede",
+    "Nordiques"
+  ],
+  "transposable_ue": {
+    "flag": "oui",
+    "note": "Cas deja deploye dans l'UE (Suede). Demand Gen impose Consent Mode v2 pour les audiences ; l'usage de createurs YouTube releve des regles de transparence publicitaire, sans classification haut risque au sens de l'AI Act."
+  },
+  "metier": "Marketing / media performance multi-marques",
+  "intervenants": [
+    {
+      "nom": "Christoffer Vildershoj",
+      "role": "Multi-Divisional Head of Data-Driven Experiences, L'Oreal (au moment du projet)",
+      "source_ref": "S1"
+    },
+    {
+      "nom": "Perin Gursel",
+      "role": "CPD Media Lead, L'Oreal (au moment du projet)",
+      "source_ref": "S1"
+    },
+    {
+      "nom": "Karolina Starkhammar",
+      "role": "Nordic Head of Media, L'Oreal Nordics (au moment du projet)",
+      "source_ref": "S1"
+    }
+  ],
+  "axes": {
+    "levier": "acquisition",
+    "touchpoints": [
+      "YouTube",
+      "Discover",
+      "Gmail",
+      "Display"
+    ],
+    "etape_parcours": "découverte -> considération",
+    "famille": "optimisation_automatisation",
+    "pattern": "Campagne Demand Gen multi-marques adossee a un createur YouTube local, pilotage IA du placement et des encheres sur les surfaces visuelles de Google pour amener du trafic marchand qualifie",
+    "type_ia": [
+      "smart bidding (enchères ML)",
+      "allocation cross-surface automatisée",
+      "sélection créative automatisée"
+    ],
+    "plateforme_stack": [
+      "Google Ads Demand Gen",
+      "YouTube (createur) / Discover / Gmail / Display",
+      "Google Ads Performance Max (pour l'outil SkinGenius)"
+    ],
+    "objectif_metrique": [
+      "taux de clic",
+      "coût par clic",
+      "trafic marchand (Lyko.se)",
+      "taux de complétion outil (SkinGenius)"
+    ]
+  },
+  "implementation": "plateforme",
+  "objectif_business": "Amener du trafic marchand qualifie vers le detaillant Lyko.se pour un portefeuille de marques grand public, en combinant l'IA de Google et l'audience d'un createur local, a un coût par clic tres inferieur aux benchmarks video du secteur.",
+  "points_cles": ["Campagne Demand Gen multi-marques avec un createur YouTube vers le detaillant Lyko.se.", "Google Ads Demand Gen et Performance Max, smart bidding, surfaces YouTube, Discover et Gmail.", "3,6x plus de clics, cout par clic 7,5x plus bas, completion SkinGenius +50 % YoY.", "Preuve B, statut confirme : cas Think with Google publie en octobre 2025."],
+  "description": "L'Oreal a monte en Suede une campagne Demand Gen multi-marques couvrant Garnier, L'Oreal Paris, NYX Cosmetics et Maybelline New York, adossee a un createur YouTube suedois connu, pour amener du trafic vers le detaillant Lyko.se. On fournit les creations et l'audience du createur ; l'IA de Google place et optimise sur YouTube, Discover et Gmail. Compare aux benchmarks des Video Action Campaigns pour d'autres annonceurs CPG en Suede, la campagne a fait 3,6 fois plus de clics a un coût par clic 7,5 fois plus bas. En parallele, L'Oreal a utilise Performance Max pour diriger du trafic qualifie vers son outil de diagnostic de peau SkinGenius, avec un taux de completion de l'outil en hausse de 50 % en glissement annuel en Suede, le plus eleve au monde pour L'Oreal. Le cas a ete publie par Think with Google en octobre 2025.",
+  "fonctionnement_operationnel": {
+    "cadence": "Par campagne, avec rafraichissement des creations createur ; toujours pilotee par l'IA de Google.",
+    "opere_par": "L'equipe media multi-marques et l'equipe data-driven experiences, avec l'agence/createur pour la production video.",
+    "signal_pilote": "L'action de trafic marchand (visite Lyko.se, completion SkinGenius). Si le tracking cross-marque n'est pas consolide, l'attribution entre marques et l'optimisation se degradent.",
+    "etapes": [
+      {
+        "etape": "Choisir le createur et cadrer le brief",
+        "detail": "Selectionner un createur local dont l'audience colle aux marques, et produire des videos exploitables par Demand Gen.",
+        "acteur": "Equipe media + createur"
+      },
+      {
+        "etape": "Unifier le tracking marchand",
+        "detail": "Consolider les signaux de trafic vers Lyko.se et la completion SkinGenius pour piloter plusieurs marques dans une meme logique.",
+        "acteur": "Equipe data-driven experiences"
+      },
+      {
+        "etape": "Laisser Demand Gen placer et enchérir",
+        "detail": "L'IA de Google diffuse les creations sur YouTube, Discover et Gmail vers les profils les plus susceptibles d'agir.",
+        "acteur": "IA Google"
+      },
+      {
+        "etape": "Benchmarker contre la video classique",
+        "detail": "Comparer CTR et CPC aux benchmarks Video Action Campaign du secteur pour objectiver le gain.",
+        "acteur": "Equipe media"
+      }
+    ]
+  },
+  "resultats": [
+    {
+      "metrique": "Taux de clic (vs benchmark Video Action Campaign CPG Suede)",
+      "valeur": "3,6x",
+      "citation_exacte": "3.6X higher click-through-rate",
+      "source_ref": "S1"
+    },
+    {
+      "metrique": "Coût par clic (vs benchmark Video Action Campaign CPG Suede)",
+      "valeur": "7,5x plus bas",
+      "citation_exacte": "7.5X lower cost-per-click",
+      "source_ref": "S1"
+    },
+    {
+      "metrique": "Taux de completion outil SkinGenius (Suede, YoY)",
+      "valeur": "+50 %",
+      "citation_exacte": "50% year-on-year increase",
+      "source_ref": "S1"
+    }
+  ],
+  "niveau_preuve": {
+    "niveau": "B",
+    "justification": "Etude de cas Think with Google chiffree, tres recente (octobre 2025), avec trois responsables L'Oreal cites nommement - source plateforme interessee. Le programme Google AI de L'Oreal est corrobore par une seconde page Think with Google (AI Max), mais les chiffres Demand Gen ne sont pas confirmes en resultats financiers."
+  },
+  "dates": {
+    "lancement": "2025 (cas publie octobre 2025)",
+    "derniere_confirmation_activite": "2025-10 - publication Think with Google",
+    "verifie_le": "2026-07-11",
+    "revoir_apres": "2026-10-11"
+  },
+  "statut_vivant": {
+    "statut": "confirme",
+    "note": "Cas tres recent (octobre 2025) avec responsables nommes et resultats specifiques. Demand Gen et Performance Max sont des formats actifs et centraux de Google Ads en 2026."
+  },
+  "sources": [
+    {
+      "ref": "S1",
+      "type": "customer_story_plateforme",
+      "titre": "How L'Oreal reinvented beauty marketing with AI - Think with Google",
+      "url": "https://business.google.com/en-all/think/consumer-insights/loreal-beauty-tech-marketing/",
+      "date_publication": "2025-10",
+      "consulte_le": "2026-07-11",
+      "fiabilite": "T2_officiel_interesse"
+    },
+    {
+      "ref": "S2",
+      "type": "customer_story_plateforme",
+      "titre": "L'Oreal's AI Max search marketing strategy - Think with Google",
+      "url": "https://business.google.com/uk/think/ai-excellence/loreal-ai-max-search-marketing-strategy/",
+      "date_publication": "2025",
+      "consulte_le": "2026-07-11",
+      "fiabilite": "T2_officiel_interesse"
+    }
+  ],
+  "schema_flow": {
+    "statut": "documente",
+    "noeuds": [
+      {
+        "id": "crea",
+        "role_generique": "data_source",
+        "label": "Creations video (createur YouTube) + assets marques"
+      },
+      {
+        "id": "aud",
+        "role_generique": "data_source",
+        "label": "Audience createur + signaux trafic marchand"
+      },
+      {
+        "id": "ai",
+        "role_generique": "paid_platform",
+        "label": "IA Google : placement et enchères Demand Gen",
+        "outil_documente": "Google Ads Demand Gen"
+      },
+      {
+        "id": "surf",
+        "role_generique": "site_app",
+        "label": "YouTube / Discover / Gmail / Display"
+      },
+      {
+        "id": "shop",
+        "role_generique": "site_app",
+        "label": "Lyko.se (trafic marchand) + outil SkinGenius"
+      }
+    ],
+    "liens": [
+      [
+        "crea",
+        "ai"
+      ],
+      [
+        "aud",
+        "ai"
+      ],
+      [
+        "ai",
+        "surf"
+      ],
+      [
+        "surf",
+        "shop"
+      ],
+      [
+        "shop",
+        "ai",
+        "feedback trafic / completion"
+      ]
+    ]
+  },
+  "replication": {
+    "statut_epistemique": "infere",
+    "prerequis_data": [
+      "Tracking de trafic marchand consolide (retailer partenaire)",
+      "Consent Mode v2 en UE",
+      "Signaux d'audience first-party pour le ciblage"
+    ],
+    "prerequis_orga": [
+      "Un ou plusieurs createurs alignes avec les marques",
+      "Une logique media multi-marques coordonnee",
+      "Un detaillant partenaire ou une destination marchande claire"
+    ],
+    "stack_possible": [
+      "Google Ads Demand Gen + creations createur + Performance Max pour les outils/diagnostics + GA4"
+    ],
+    "premiere_etape": "Produire une video createur exploitable en Demand Gen et l'evaluer contre un benchmark video classique sur CTR et CPC, avant d'etendre aux autres marques.",
+    "playbook": [
+      {
+        "action": "Choisir un createur local dont l'audience colle aux marques et cadrer le brief multi-marques",
+        "livrable": "Contrat createur + brief video valide par les marques"
+      },
+      {
+        "action": "Produire les creations exploitables en Demand Gen (formats video adaptes aux surfaces Google)",
+        "livrable": "Videos createur + assets declines par marque, prets a diffuser"
+      },
+      {
+        "action": "Consolider le tracking marchand : signaux de trafic vers le detaillant, completion d'outil, Consent Mode v2",
+        "livrable": "Conversions remontees dans Google Ads, coherentes entre marques"
+      },
+      {
+        "action": "Lancer la campagne et laisser l'IA de Google placer et encherir sans sur-pilotage",
+        "livrable": "Campagne live sur YouTube, Discover et Gmail, apprentissage stabilise"
+      },
+      {
+        "action": "Benchmarker CTR et CPC contre les Video Action Campaigns du secteur, puis decider de l'extension",
+        "livrable": "Lecture comparee CTR/CPC + decision d'extension aux autres marques"
+      }
+    ],
+    "equipe": "1 media buyer Google Ads + 1 responsable createur/contenu + 1 analyste pour le tracking marchand"
+  },
+  "seo": {
+    "slug": "loreal-nordics-demand-gen-createurs-cout-par-clic-2025",
+    "title": "L'Oreal : Demand Gen multi-marques avec createur en Suede - 3,6x de clics, coût par clic 7,5x plus bas (2025)",
+    "meta_description": "L'Oreal a combine Google Demand Gen et un createur YouTube (Suede) pour amener du trafic vers Lyko.se : 3,6x plus de clics, coût par clic 7,5x plus bas.",
+    "resume_citable": "L'Oreal a obtenu 3,6x plus de clics a un coût par clic 7,5x plus bas que les benchmarks video CPG suedois en combinant Google Demand Gen et un createur YouTube pour ses marques Garnier, L'Oreal Paris, NYX et Maybelline, avec un taux de completion de l'outil SkinGenius en hausse de 50 % (Think with Google, octobre 2025).",
+    "faq": [
+      {
+        "q": "Qu'apporte le createur dans une campagne Demand Gen ?",
+        "a": "L'audience et la credibilite du createur nourrissent des creations que l'IA de Google diffuse sur ses surfaces visuelles. Dans le cas L'Oreal, la combinaison a fait 3,6x plus de clics a coût par clic tres reduit."
+      },
+      {
+        "q": "Pourquoi mesurer contre les Video Action Campaigns ?",
+        "a": "C'est le benchmark video de reference. Comparer Demand Gen a ces campagnes sur CTR et CPC objective l'apport du format et du createur plutot que de juger la campagne isolement."
+      }
+    ]
+  },
+  "logo_domain": "loreal.com",
+  "stack_technique": [
+    {
+      "nom": "Google Ads Demand Gen",
+      "categorie": "plateforme",
+      "detail": "placement, encheres et selection creative pilotes par l'IA de Google sur YouTube, Discover et Gmail",
+      "url": "https://ads.google.com"
+    },
+    {
+      "nom": "Google Ads Performance Max",
+      "categorie": "plateforme",
+      "detail": "utilise en parallele pour amener du trafic qualifie vers l'outil de diagnostic SkinGenius",
+      "url": "https://ads.google.com"
+    },
+    {
+      "nom": "Smart Bidding (Google)",
+      "categorie": "outil",
+      "detail": "encheres ML optimisees sur l'action de trafic marchand (visite Lyko.se, completion SkinGenius)",
+      "url": "https://ads.google.com"
+    },
+    {
+      "nom": "YouTube (creations createur)",
+      "categorie": "infra",
+      "detail": "surface principale de diffusion et audience du createur suedois qui porte les creations multi-marques",
+      "url": "https://www.youtube.com"
+    },
+    {
+      "nom": "SkinGenius (L'Oreal)",
+      "categorie": "outil",
+      "detail": "outil de diagnostic de peau du groupe, destination des campagnes Performance Max (+50% de completion YoY en Suede)",
+      "url": "https://www.loreal.com"
+    }
+  ]
+}

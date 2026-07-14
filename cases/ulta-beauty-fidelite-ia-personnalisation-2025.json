@@ -1,0 +1,297 @@
+{
+  "id": "ulta-beauty-fidelite-ia-personnalisation-2025",
+  "type_fiche": "succes",
+  "marque": "Ulta Beauty",
+  "industrie": "retail_ecom",
+  "marches_deploiement": [
+    "Etats-Unis"
+  ],
+  "transposable_ue": {
+    "flag": "oui_avec_adaptations",
+    "note": "La personnalisation s'appuie sur la donnee first-party des membres du programme de fidelite (historique d'achat, navigation, telephone comme identifiant cross-canal). En UE, consentement RGPD requis pour ce profilage et pour l'usage du numero de telephone comme cle de ciblage. Un conseiller beaute par IA reste hors haut risque au sens de l'AI Act tant qu'il ne prend pas de decision a effet juridique."
+  },
+  "metier": "marketing / CRM / fidelite",
+  "intervenants": [
+    {
+      "nom": "Kelly Mahoney",
+      "role": "Interim CMO et SVP Customer and Growth Marketing, Ulta Beauty",
+      "source_ref": "S1"
+    },
+    {
+      "nom": "Kecia Steelman",
+      "role": "Chief Executive Officer, Ulta Beauty",
+      "source_ref": "S3"
+    }
+  ],
+  "axes": {
+    "levier": "retention",
+    "touchpoints": [
+      "application mobile",
+      "site e-commerce",
+      "email",
+      "publicite retargetee",
+      "programme Ulta Beauty Rewards",
+      "conseiller beaute et Skin Advisor par IA"
+    ],
+    "etape_parcours": "fidelite",
+    "famille": "personnalisation",
+    "pattern": "personnalisation des offres et des recommandations produit par IA sur donnees de fidelite",
+    "type_ia": [
+      "machine learning",
+      "systemes de recommandation",
+      "IA conversationnelle"
+    ],
+    "plateforme_stack": [
+      "custom/in-house",
+      "profils clients unifies",
+      "outils de recommandation et de ciblage"
+    ],
+    "objectif_metrique": [
+      "part des ventes issue des membres",
+      "taux de rachat",
+      "engagement",
+      "conversion",
+      "reactivation des clients inactifs"
+    ]
+  },
+  "implementation": "hybride",
+  "objectif_business": "Retenir une base de membres qui pese l'essentiel du chiffre d'affaires en poussant a chaque membre les recommandations et offres correspondant a ses achats, et en reactivant les clients qui decrochent avant qu'ils ne partent.",
+  "description": "Le programme Ulta Beauty Rewards compte environ 44 millions de membres actifs, dont provient plus de 95% du chiffre d'affaires. Ulta unifie la donnee first-party de ces membres (historique d'achat, navigation, preferences, numero de telephone comme identifiant cross-canal) dans des profils exploites par du machine learning pour personnaliser recommandations produit, emails et offres. Le distributeur retargete par la publicite payante les membres devenus inactifs. Sur la couche IA plus recente, Ulta a integre les identifiants de fidelite dans son interface Skin Advisor pour proposer des routines soin basees sur l'historique d'achat et le stock en temps reel, et teste un conseiller beaute virtuel. Kelly Mahoney resume la matiere premiere du dispositif quand elle qualifie la donnee de crown jewel de l'entreprise.",
+  "resultats": [
+    {
+      "metrique": "Part du chiffre d'affaires issue des membres du programme de fidelite",
+      "valeur": "plus de 95%",
+      "citation_exacte": "Ninety-five percent of every dollar that comes through the company is coming from members",
+      "source_ref": "S1"
+    },
+    {
+      "metrique": "Membres actifs du programme Ulta Beauty Rewards",
+      "valeur": "environ 44 millions",
+      "citation_exacte": "44 million active members",
+      "source_ref": "S1"
+    },
+    {
+      "metrique": "Taux de rachat des clients",
+      "valeur": "95%",
+      "citation_exacte": "95% repeat customer rate",
+      "source_ref": "S2"
+    },
+    {
+      "metrique": "Membres de fidelite en hausse de 5% sur un an (exercice 2025)",
+      "valeur": "46,7 millions",
+      "citation_exacte": "46.7 million loyalty members in fiscal 2025",
+      "source_ref": "S3"
+    }
+  ],
+  "niveau_preuve": {
+    "niveau": "C",
+    "justification": "Trois sources presse concordantes (Glossy, PYMNTS, CX Dive) citent Ulta nommement avec des chiffres coherents entre eux et avec les resultats financiers de la marque (plus de 95% des ventes issues des membres, base de fidelite de 44 a 47 millions selon la periode). Convergence de sources etablies."
+  },
+  "dates": {
+    "lancement": "Programme de fidelite lance en 2014 (Ultamate Rewards), renomme Ulta Beauty Rewards en 2024 ; personnalisation par IA amplifiee a partir de 2024",
+    "derniere_confirmation_activite": "mars 2026 (couverture de l'earnings call Q4 FY2025, personnalisation par IA reaffirmee par la CEO Kecia Steelman)",
+    "verifie_le": "2026-07-11",
+    "revoir_apres": "2027-01-11"
+  },
+  "statut_vivant": {
+    "statut": "confirme",
+    "note": "La personnalisation par IA adossee au programme de fidelite est presentee comme un pilier de croissance sur les resultats trimestriels jusqu'en 2026, avec un objectif d'extension de la base de membres vers 50 millions a horizon 2028."
+  },
+  "sources": [
+    {
+      "ref": "S1",
+      "type": "presse",
+      "fiabilite": "T4_secondaire",
+      "titre": "Ulta Beauty Strategies: Inside Ulta's 44-million-member loyalty program",
+      "url": "https://www.glossy.co/beauty/ulta-beauty-strategies-inside-ultas-44-million-member-loyalty-program/",
+      "date_publication": "2025-02-24",
+      "consulte_le": "2026-07-11"
+    },
+    {
+      "ref": "S2",
+      "type": "presse",
+      "fiabilite": "T4_secondaire",
+      "titre": "Ulta Beauty's AI Strategy Drives a 95% Customer Repurchase Rate",
+      "url": "https://www.pymnts.com/news/retail/2025/ulta-beauty-ai-strategy-95percent-customer-repurchase-rate/",
+      "date_publication": "2025-05-27",
+      "consulte_le": "2026-07-11"
+    },
+    {
+      "ref": "S3",
+      "type": "presse",
+      "fiabilite": "T4_secondaire",
+      "titre": "Ulta sees AI as a personalization tool - and its loyalty program as the fuel",
+      "url": "https://www.customerexperiencedive.com/news/ulta-ai-personalization-loyalty-program/814711/",
+      "date_publication": "2026-03-13",
+      "consulte_le": "2026-07-11"
+    }
+  ],
+  "fonctionnement_operationnel": {
+    "cadence": "Temps quasi reel : messages et recommandations mis a jour au fil des actions du membre, campagnes de reactivation par vague",
+    "opere_par": "Equipe customer et growth marketing d'Ulta, appuyee par les equipes data et produit",
+    "signal_pilote": "L'historique d'achat et de navigation rattache au profil de fidelite, avec le numero de telephone comme cle cross-canal. Sans ce rattachement, le membre redevient anonyme et la recommandation perd sa base.",
+    "etapes": [
+      {
+        "etape": "Unification de la donnee membre",
+        "detail": "Historique d'achat, navigation, preferences et coordonnees sont centralises dans un profil unique.",
+        "acteur": "Equipe data"
+      },
+      {
+        "etape": "Scoring et recommandation",
+        "detail": "Le machine learning classe pour chaque membre les produits et offres a mettre en avant.",
+        "acteur": "IA"
+      },
+      {
+        "etape": "Diffusion personnalisee",
+        "detail": "Emails, offres in-app et recommandations produit sont pousses au membre, mis a jour quasi en temps reel.",
+        "acteur": "Marketing et plateforme"
+      },
+      {
+        "etape": "Reactivation des inactifs",
+        "detail": "Les membres qui decrochent sont retargetes par la publicite payante avant de basculer en perte.",
+        "acteur": "Marketing"
+      },
+      {
+        "etape": "Conseil augmente par IA",
+        "detail": "Skin Advisor relie l'identifiant de fidelite pour proposer des routines basees sur l'historique et le stock en temps reel.",
+        "acteur": "IA"
+      }
+    ]
+  },
+  "schema_flow": {
+    "statut": "documente",
+    "noeuds": [
+      {
+        "id": "src",
+        "role_generique": "data_source",
+        "label": "Achats, navigation, preferences membres"
+      },
+      {
+        "id": "cdp",
+        "role_generique": "cdp",
+        "label": "Profils Ulta Beauty Rewards unifies"
+      },
+      {
+        "id": "ml",
+        "role_generique": "modele_ia",
+        "label": "Machine learning de recommandation et ciblage"
+      },
+      {
+        "id": "canaux",
+        "role_generique": "site_app",
+        "label": "App, site, email, retargeting, Skin Advisor"
+      },
+      {
+        "id": "membre",
+        "role_generique": "humain",
+        "label": "Membre Ulta Beauty Rewards"
+      }
+    ],
+    "liens": [
+      [
+        "src",
+        "cdp"
+      ],
+      [
+        "cdp",
+        "ml"
+      ],
+      [
+        "ml",
+        "canaux",
+        "recommandations et offres personnalisees"
+      ],
+      [
+        "canaux",
+        "membre"
+      ],
+      [
+        "membre",
+        "src",
+        "achat et navigation, boucle de feedback"
+      ]
+    ]
+  },
+  "replication": {
+    "statut_epistemique": "infere",
+    "prerequis_data": [
+      "donnee first-party des membres (achat, navigation)",
+      "identifiant cross-canal fiable",
+      "programme de fidelite a forte penetration"
+    ],
+    "prerequis_orga": [
+      "equipe growth et CRM outillee",
+      "profils clients unifies",
+      "capacite de retargeting payant sur base de fidelite"
+    ],
+    "stack_possible": [
+      "CDP ou entrepot client",
+      "moteur de recommandation",
+      "plateforme d'orchestration email et in-app",
+      "brique IA conversationnelle pour le conseil"
+    ],
+    "premiere_etape": "Unifier la donnee d'achat et de navigation des membres dans un profil exploitable, avec un identifiant cross-canal stable.",
+    "playbook": [
+      {
+        "action": "Unifier achats, navigation et preferences des membres dans un profil unique, avec un identifiant cross-canal stable (le telephone chez Ulta).",
+        "livrable": "Profil membre unifie exploitable."
+      },
+      {
+        "action": "Mettre en place le scoring et la recommandation, personnaliser emails et offres in-app avec groupe temoin.",
+        "livrable": "Premieres campagnes personnalisees mesurees contre temoin."
+      },
+      {
+        "action": "Construire les audiences de reactivation des membres inactifs et les brancher au retargeting paye.",
+        "livrable": "Boucle de reactivation en production avec cout par membre reactive."
+      },
+      {
+        "action": "Ajouter la brique conseil (routines fondees sur l'historique et le stock) et lire l'impact retention global.",
+        "livrable": "Assistant de conseil en pilote et bilan retention annuel."
+      }
+    ],
+    "equipe": "1 PM growth/CRM + 2 data scientists ou engineers + 1 marketeur lifecycle + 1 relais paid media."
+  },
+  "seo": {
+    "slug": "ulta-beauty-fidelite-ia-personnalisation-2025",
+    "title": "Ulta Beauty : fidelite personnalisee par IA - 95% des ventes issues des membres (2025)",
+    "meta_description": "Ulta Beauty personnalise offres et recommandations par IA sur ses 44 millions de membres Rewards, d'ou provient plus de 95% du chiffre d'affaires.",
+    "resume_citable": "Plus de 95% du chiffre d'affaires d'Ulta Beauty provient de ses quelque 44 millions de membres Ulta Beauty Rewards, dont la donnee first-party alimente une personnalisation par machine learning des offres, des recommandations et du conseil beaute augmente par IA.",
+    "faq": [
+      {
+        "q": "Quel poids ont les membres fideles chez Ulta Beauty ?",
+        "a": "Plus de 95% du chiffre d'affaires provient des membres du programme Ulta Beauty Rewards, qui compte environ 44 millions de membres actifs."
+      },
+      {
+        "q": "Comment Ulta utilise-t-elle l'IA pour la fidelite ?",
+        "a": "Elle exploite la donnee first-party des membres par machine learning pour personnaliser offres et recommandations, reactiver les inactifs par retargeting, et relier l'identifiant de fidelite a son Skin Advisor pour des routines basees sur l'historique et le stock."
+      }
+    ]
+  },
+  "logo_domain": "ulta.com",
+  "stack_technique": [
+    {
+      "nom": "Profils clients unifies Ulta (in-house)",
+      "categorie": "infra",
+      "detail": "Donnee first-party des membres Rewards (historique d'achat, navigation, preferences) unifiee avec le numero de telephone comme identifiant cross-canal.",
+      "url": "https://www.ulta.com"
+    },
+    {
+      "nom": "Machine learning de recommandation et de ciblage (in-house)",
+      "categorie": "llm",
+      "detail": "Scoring et personnalisation des recommandations produit, emails et offres ; modeles exacts non communiques.",
+      "url": "https://www.ulta.com"
+    },
+    {
+      "nom": "Skin Advisor",
+      "categorie": "outil",
+      "detail": "Interface de conseil soin reliee a l'identifiant de fidelite : routines proposees a partir de l'historique d'achat et du stock en temps reel.",
+      "url": "https://www.ulta.com"
+    },
+    {
+      "nom": "Plateformes publicitaires de retargeting",
+      "categorie": "plateforme",
+      "detail": "Reactivation payante des membres devenus inactifs ; plateformes non nommees publiquement.",
+      "url": "https://www.ulta.com"
+    }
+  ]
+}

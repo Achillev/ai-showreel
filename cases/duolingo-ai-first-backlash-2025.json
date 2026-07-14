@@ -1,0 +1,223 @@
+{
+  "id": "duolingo-ai-first-backlash-2025",
+  "type_fiche": "echec_retrait",
+  "marque": "Duolingo",
+  "industrie": "education",
+  "marches_deploiement": [
+    "États-Unis",
+    "Canada",
+    "Mondial (communauté de marque en ligne)"
+  ],
+  "transposable_ue": {
+    "flag": "oui",
+    "note": "Cas de communication, sans dépendance réglementaire particulière. La leçon vaut pour toute marque grand public européenne dont l'attachement client repose sur une personnalité humaine : annoncer une bascule AI-first en langage d'efficacité interne se retourne de la même façon."
+  },
+  "metier": "marketing / communication de marque",
+  "axes": {
+    "levier": "acquisition",
+    "touchpoints": [
+      "TikTok",
+      "Instagram",
+      "communication corporate",
+      "application"
+    ],
+    "etape_parcours": "découverte (perception de marque)",
+    "famille": "generation",
+    "pattern": "communication publique d'une stratégie AI-first",
+    "type_ia": [
+      "IA générative de création de contenu (cours)"
+    ],
+    "plateforme_stack": [
+      "genAI de création de cours",
+      "custom"
+    ],
+    "objectif_metrique": [
+      "croissance des utilisateurs",
+      "sentiment de marque"
+    ]
+  },
+  "implementation": "hybride",
+  "stack_technique": [
+    {
+      "nom": "genAI de creation de cours (outillage interne)",
+      "categorie": "llm",
+      "detail": "IA generative utilisee pour produire les cours; elle a permis de doubler l'offre selon le memo. Les modeles exacts ne sont pas nommes dans les sources de la fiche.",
+      "url": "https://www.duolingo.com"
+    },
+    {
+      "nom": "Pipeline de production de contenu Duolingo",
+      "categorie": "outil",
+      "detail": "Chaine interne qui integre la generation IA a la creation de cours, en reduisant le recours aux prestataires pour les taches automatisables.",
+      "url": "https://www.duolingo.com"
+    },
+    {
+      "nom": "Application Duolingo",
+      "categorie": "infra",
+      "detail": "Distribue les cours produits; c'est la croissance d'utilisateurs de l'app qui a flechi chez les jeunes en Amerique du Nord pendant le backlash.",
+      "url": "https://www.duolingo.com"
+    }
+  ],
+  "objectif_business": "Accélérer la production de cours par l'IA générative et le faire savoir en interne comme priorité stratégique, en réduisant le recours aux prestataires pour les tâches automatisables.",
+  "description": "Fin avril 2025, le CEO Luis von Ahn publie un mémo annonçant que Duolingo devient AI-first : arrêt progressif des prestataires pour les tâches que l'IA peut faire, et embauche seulement quand une équipe ne peut pas automatiser le travail. Le mémo cite l'IA générative comme ayant permis de doubler l'offre de cours. La réaction n'est pas venue des employés seulement mais du public : sur les comptes TikTok et Instagram de la marque, connus pour leur ton décalé, les commentaires se sont retournés contre l'IA sous chaque post, avec des menaces de désinstaller l'application. La croissance d'utilisateurs a marqué le pas, surtout chez les jeunes aux États-Unis et au Canada. En mai 2025, von Ahn revient publiquement sur son message.",
+  "resultats": [
+    {
+      "metrique": "Recadrage public du CEO, il ne voit pas l'IA remplacer ses employés",
+      "valeur": "IA ne remplace pas",
+      "citation_exacte": "I do not see AI as replacing what our employees do",
+      "source_ref": "S1"
+    },
+    {
+      "metrique": "Surprise du CEO, il ne s'attendait pas à l'ampleur du rejet",
+      "valeur": "backlash sous-estimé",
+      "citation_exacte": "I did not expect the amount of blowback",
+      "source_ref": "S2"
+    },
+    {
+      "metrique": "Auto-critique du CEO, il reconnaît avoir mal formulé le mémo",
+      "valeur": "mémo mal formulé",
+      "citation_exacte": "I didn't do that well",
+      "source_ref": "S4"
+    }
+  ],
+  "niveau_preuve": {
+    "niveau": "C",
+    "justification": "Plusieurs titres de presse majeure (Fortune, Financial Times cité par Fortune, TechCrunch) rapportent nommément le mémo, le backlash sur les réseaux et le recadrage du CEO, sans document financier ni chiffre d'impact audité."
+  },
+  "dates": {
+    "lancement": "Mémo AI-first publié fin avril 2025",
+    "derniere_confirmation_activite": "2025-08 (le CEO revient encore sur le mémo dans la presse)",
+    "verifie_le": "2026-07-11",
+    "revoir_apres": "2027-07-11"
+  },
+  "statut_vivant": {
+    "statut": "confirme",
+    "note": "Recadrage confirmé : von Ahn a walk-back la communication publique en mai 2025 tout en gardant l'orientation AI-first en interne. Ce qui a été retiré, c'est le message, pas l'usage de l'IA. Duolingo a continué de croître globalement."
+  },
+  "sources": [
+    {
+      "ref": "S1",
+      "type": "presse",
+      "fiabilite": "T3_presse_etablie",
+      "titre": "Duolingo CEO walks back AI-first comments: I do not see AI as replacing what our employees do - Fortune",
+      "url": "https://fortune.com/2025/05/24/duolingo-ai-first-employees-ceo-luis-von-ahn/",
+      "date_publication": "2025-05-24",
+      "consulte_le": "2026-07-11"
+    },
+    {
+      "ref": "S2",
+      "type": "presse",
+      "fiabilite": "T3_presse_etablie",
+      "titre": "Duolingo's CEO outlined his plan to become an AI-first company. He didn't expect the human backlash that followed - Fortune",
+      "url": "https://fortune.com/2025/06/09/duolingo-ceo-surprised-backlash-ai-first-company-announcement/",
+      "date_publication": "2025-06-09",
+      "consulte_le": "2026-07-11"
+    },
+    {
+      "ref": "S3",
+      "type": "presse",
+      "fiabilite": "T4_secondaire",
+      "titre": "Duolingo went AI-first and then came the consumer backlash - Customer Experience Dive",
+      "url": "https://www.customerexperiencedive.com/news/duolingo-ai-first-consumer-backlash-lessons/757133/",
+      "date_publication": "2025",
+      "consulte_le": "2026-07-11"
+    },
+    {
+      "ref": "S4",
+      "type": "presse",
+      "fiabilite": "T4_secondaire",
+      "titre": "Continuing to Hire: Duolingo's CEO Clarifies AI Stance After Backlash - Read the Memo - Entrepreneur",
+      "url": "https://www.entrepreneur.com/business-news/duolingo-ceo-clarifies-ai-stance-after-backlash-read-memo/492141",
+      "date_publication": "2025-05",
+      "consulte_le": "2026-07-11"
+    }
+  ],
+  "post_mortem": {
+    "ce_qui_s_est_passe": "Fin avril 2025, von Ahn publie un mémo AI-first : arrêt progressif des prestataires pour les tâches automatisables, embauche seulement si une équipe ne peut pas automatiser, l'IA générative ayant permis de doubler l'offre de cours. Le rejet est venu surtout du public : sur les comptes TikTok et Instagram de Duolingo, les commentaires se sont retournés sous chaque post, avec des menaces de désinstaller l'application. La croissance a marqué le pas chez les jeunes aux États-Unis et au Canada. En mai 2025, von Ahn recadre sur LinkedIn puis dans la presse, dit ne pas voir l'IA remplacer les employés et continuer d'embaucher au même rythme.",
+    "raison_echec": "Le positionnement AI-first, formulé en langage d'efficacité et de réduction des prestataires, a été lu par la communauté comme un remplacement des humains par l'IA. Cette communauté valorise justement la personnalité humaine et décalée de la marque. Décalage entre le message corporate et l'attachement à la marque.",
+    "date_retrait": "2025-05 (recadrage de la communication ; l'orientation IA interne, elle, reste)",
+    "cout_estime": "Coût réputationnel et fléchissement mesuré de la croissance d'utilisateurs chez les jeunes en Amérique du Nord (selon Customer Experience Dive). Pas de perte financière chiffrée publiquement ; Duolingo a continué de croître globalement.",
+    "signaux_avant_coureurs": "Inféré : la valeur de marque de Duolingo repose sur une mascotte irrévérencieuse et une voix très humaine sur les réseaux. Annoncer AI-first et la sortie des prestataires à cette audience précise était une friction prévisible. Le mémo ouvrait sur le coût et l'automatisation, pas sur le bénéfice utilisateur.",
+    "lecons_avec_recul": "Inféré : un message d'efficacité interne devient un message de marque dès qu'il est public. Pour une marque grand public dont l'équité tient à la chaleur humaine, le vocabulaire AI-first se lit comme une dégradation de la relation. Il faut séparer l'adoption opérationnelle de l'IA du positionnement public, et cadrer la communication sur la valeur pour l'utilisateur, pas sur la baisse de coûts.",
+    "le_pattern_reste_il_valide": "Inféré : nuance. La création de cours par IA générative a fonctionné (offre doublée) et Duolingo est resté AI-first en interne. Ce qui a échoué, c'est la communication publique, pas la technologie. Le pattern condamné est le message AI-first assené à une communauté qui prise l'humain ; le pipeline genAI de contenu, lui, reste valide."
+  },
+  "schema_flow": {
+    "statut": "approche_type",
+    "noeuds": [
+      {
+        "id": "ceo",
+        "role_generique": "humain",
+        "label": "CEO : mémo AI-first (efficacité, sortie des prestataires)"
+      },
+      {
+        "id": "social",
+        "role_generique": "canal_conversationnel",
+        "label": "TikTok et Instagram de la marque"
+      },
+      {
+        "id": "community",
+        "role_generique": "humain",
+        "label": "Communauté attachée à la marque humaine"
+      },
+      {
+        "id": "growth",
+        "role_generique": "data_source",
+        "label": "Croissance utilisateurs (fléchissement Amérique du Nord)"
+      }
+    ],
+    "liens": [
+      [
+        "ceo",
+        "social",
+        "message public"
+      ],
+      [
+        "social",
+        "community",
+        "lecture : remplacement des humains"
+      ],
+      [
+        "community",
+        "growth",
+        "boycott et menaces de desinstallation"
+      ],
+      [
+        "growth",
+        "ceo",
+        "recadrage public"
+      ]
+    ]
+  },
+  "replication": {
+    "statut_epistemique": "infere",
+    "prerequis_data": [
+      "écoute sociale du sentiment de marque",
+      "suivi de croissance segmenté par géographie et âge"
+    ],
+    "prerequis_orga": [
+      "aligner communication corporate et équipe de marque avant toute annonce IA",
+      "distinguer adoption interne de l'IA et positionnement public"
+    ],
+    "stack_possible": [
+      "genAI de production de contenu (usage interne)",
+      "gouvernance de communication de marque"
+    ],
+    "premiere_etape": "Avant d'annoncer une bascule IA, tester le message auprès de la communauté et le recadrer sur le bénéfice utilisateur, pas sur la réduction des coûts et des prestataires."
+  },
+  "seo": {
+    "slug": "duolingo-ai-first-backlash-2025",
+    "title": "Duolingo : le mémo AI-first et le backlash public - recadrage du CEO (2025)",
+    "meta_description": "En 2025, Duolingo annonce devenir AI-first ; la communauté se retourne sur TikTok et Instagram. Le CEO fait marche arrière sur le message. Post-mortem de communication.",
+    "resume_citable": "En avril 2025, le mémo AI-first de Duolingo a déclenché un boycott sur TikTok et Instagram et fléchi la croissance chez les jeunes en Amérique du Nord ; le CEO Luis von Ahn a recadré publiquement en mai, disant ne pas voir l'IA remplacer ses employés.",
+    "faq": [
+      {
+        "q": "Duolingo a-t-il abandonné l'IA ?",
+        "a": "Non. L'entreprise est restée AI-first en interne, la création de cours par IA a doublé l'offre. Ce qui a été retiré, c'est la communication publique jugée maladroite, pas l'usage de la technologie."
+      },
+      {
+        "q": "Quelle est la leçon principale ?",
+        "a": "Un message d'efficacité interne devient un message de marque dès qu'il est public. Pour une marque dont l'équité repose sur l'humain, annoncer AI-first en langage de réduction de coûts se retourne."
+      }
+    ]
+  },
+  "logo_domain": "duolingo.com"
+}

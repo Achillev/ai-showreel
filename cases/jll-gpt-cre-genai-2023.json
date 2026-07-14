@@ -1,0 +1,280 @@
+{
+  "id": "jll-gpt-cre-genai-2023",
+  "type_fiche": "succes",
+  "marque": "JLL",
+  "groupe": "Jones Lang LaSalle",
+  "industrie": "immobilier",
+  "marches_deploiement": [
+    "Monde"
+  ],
+  "transposable_ue": {
+    "flag": "oui_avec_adaptations",
+    "note": "JLL a deploye l'outil a son effectif mondial, Europe comprise. La transposition passe par une gouvernance stricte des donnees metier et un environnement de calcul conforme RGPD et AI Act, ce que JLL revendique explicitement comme prerequis."
+  },
+  "metier": "conseil et courtage immobilier commercial (usage interne)",
+  "intervenants": [
+    {
+      "nom": "Yao Morin",
+      "role": "Chief Technology Officer, JLL",
+      "source_ref": "S2"
+    },
+    {
+      "nom": "Mihir Shah",
+      "role": "CEO, JLL Technologies",
+      "source_ref": "S3"
+    }
+  ],
+  "axes": {
+    "levier": "acquisition",
+    "touchpoints": [
+      "assistant interne JLL GPT",
+      "plateforme JLL Falcon"
+    ],
+    "etape_parcours": "consideration",
+    "famille": "conversation",
+    "pattern": "assistant genAI metier construit sur un LLM vertical proprietaire",
+    "type_ia": [
+      "LLM custom",
+      "recuperation augmentee (RAG)",
+      "generation de texte",
+      "comprehension d'images"
+    ],
+    "plateforme_stack": [
+      "custom/in-house",
+      "Microsoft Azure"
+    ],
+    "objectif_metrique": [
+      "adoption par les employes",
+      "temps de recherche et de production de livrables deal",
+      "productivite des brokers"
+    ]
+  },
+  "implementation": "custom",
+  "objectif_business": "Donner aux equipes de courtage commercial un assistant genAI conforme aux exigences de securite et de confidentialite de JLL, pour rechercher des deals, modeliser et produire des livrables client plus vite sur des donnees proprietaires.",
+  "description": "JLL GPT est lance le 1er aout 2023 par la division JLL Technologies, presente comme le premier grand modele de langage construit specifiquement pour l'immobilier commercial. Il est entraine sur des decennies de donnees de transactions internes JLL completees par des sources externes, et deploye dans un environnement de calcul securise. Dans les 48 heures suivant l'ouverture, plus de 11 000 employes sur un effectif d'environ 103 000 s'en servent. En octobre 2024, au lancement de la plateforme JLL Falcon, plus de 47 000 professionnels l'ont deja utilise. JLL GPT a alors gagne la comprehension d'images et vingt-cinq fois plus de memoire de travail que sa version initiale. Falcon ajoute l'acces a plusieurs LLM, des modeles multimodaux et plus de soixante fonctions IA selon la ligne de metier. Les brokers s'en servent pour rechercher des deals, modeliser des flux de tresorerie et preparer des livrables client.",
+  "resultats": [
+    {
+      "metrique": "Adoption en 48h, sur un effectif d'environ 103 000",
+      "valeur": "11 000+ employes",
+      "citation_exacte": "more than 11,000 employees used the large language model",
+      "source_ref": "S2"
+    },
+    {
+      "metrique": "Professionnels ayant utilise l'outil (octobre 2024)",
+      "valeur": "47 000+",
+      "citation_exacte": "More than 47,000 JLL professionals have already used the tool",
+      "source_ref": "S3"
+    }
+  ],
+  "niveau_preuve": {
+    "niveau": "C",
+    "justification": "Communiques officiels JLL (T1) et presse etablie (CIO Dive) concordants, avec des chiffres d'adoption a l'echelle mondiale. Pas d'impact financier isole publie, d'ou un niveau C et non A."
+  },
+  "dates": {
+    "lancement": "2023-08-01 (JLL GPT) ; 2024-10-29 (plateforme JLL Falcon)",
+    "derniere_confirmation_activite": "2026-03 (le CTO indique qu'environ un quart des 110 000 employes utilisent quotidiennement les plateformes IA internes)",
+    "verifie_le": "2026-07-11",
+    "revoir_apres": "2027-01-11"
+  },
+  "statut_vivant": {
+    "statut": "confirme",
+    "note": "JLL GPT est integre a la plateforme Falcon depuis fin 2024 et continue d'evoluer. Le CTO confirme en 2026 un usage quotidien des plateformes IA internes par une part importante de l'effectif."
+  },
+  "sources": [
+    {
+      "ref": "S1",
+      "type": "blog_officiel",
+      "fiabilite": "T1_primaire",
+      "titre": "JLL unveils first GPT model for commercial real estate",
+      "url": "https://www.prnewswire.com/news-releases/jll-unveils-first-gpt-model-for-commercial-real-estate-301890405.html",
+      "date_publication": "2023-08-01",
+      "consulte_le": "2026-07-11"
+    },
+    {
+      "ref": "S2",
+      "type": "presse",
+      "fiabilite": "T3_presse_etablie",
+      "titre": "JLL rolls out proprietary generative AI model to internal employees",
+      "url": "https://www.ciodive.com/news/JLL-GPT-Technologies-rollout-generative-AI/690146/",
+      "date_publication": "2023-08-08",
+      "consulte_le": "2026-07-11"
+    },
+    {
+      "ref": "S3",
+      "type": "blog_officiel",
+      "fiabilite": "T1_primaire",
+      "titre": "JLL Falcon kicks off new era of AI-powered CRE innovation",
+      "url": "https://ir.jll.com/news-releases/press-release-details/2024/JLL-Falcon-kicks-off-new-era-of-AI-powered-CRE-innovation/default.aspx",
+      "date_publication": "2024-10-29",
+      "consulte_le": "2026-07-11"
+    },
+    {
+      "ref": "S4",
+      "type": "presse",
+      "fiabilite": "T4_secondaire",
+      "titre": "How JLL built an AI platform to help employees and clients close the deal",
+      "url": "https://www.runtime.news/how-jll-built-an-ai-platform-to-help-employees-and-clients-close-the-deal/",
+      "date_publication": "2026-03",
+      "consulte_le": "2026-07-11"
+    }
+  ],
+  "fonctionnement_operationnel": {
+    "cadence": "A la demande, en temps reel, sur requete d'un employe pendant son travail sur un deal.",
+    "opere_par": "JLL Technologies tient le modele et la gouvernance des donnees ; les equipes de courtage l'utilisent au quotidien.",
+    "signal_pilote": "Le corpus de donnees CRE proprietaires, nettoye et gouverne. Sans lui, le modele repond de facon generique et perd son avantage metier face a un LLM public.",
+    "etapes": [
+      {
+        "etape": "Question en langage naturel",
+        "detail": "Le broker pose une question sur un marche, un actif ou une modelisation.",
+        "acteur": "humain"
+      },
+      {
+        "etape": "Recuperation sur donnees gouvernees",
+        "detail": "Le systeme va chercher l'information dans les donnees CRE internes de JLL avant de repondre.",
+        "acteur": "IA"
+      },
+      {
+        "etape": "Generation du livrable",
+        "detail": "JLL GPT produit une reponse, une synthese ou une ebauche de document, avec comprehension d'images depuis 2024.",
+        "acteur": "IA"
+      },
+      {
+        "etape": "Validation humaine",
+        "detail": "Le broker verifie et utilise la sortie dans son travail client ; l'IA ne se substitue pas a l'expertise.",
+        "acteur": "humain"
+      }
+    ]
+  },
+  "schema_flow": {
+    "statut": "documente",
+    "noeuds": [
+      {
+        "id": "data",
+        "role_generique": "data_source",
+        "label": "Donnees de transactions CRE JLL + sources externes"
+      },
+      {
+        "id": "llm",
+        "role_generique": "modele_ia",
+        "label": "JLL GPT (LLM vertical custom)",
+        "outil_documente": "JLL GPT sur Microsoft Azure"
+      },
+      {
+        "id": "app",
+        "role_generique": "site_app",
+        "label": "Interface JLL GPT / plateforme Falcon"
+      },
+      {
+        "id": "broker",
+        "role_generique": "humain",
+        "label": "Broker / consultant CRE"
+      }
+    ],
+    "liens": [
+      [
+        "broker",
+        "app",
+        "question NL"
+      ],
+      [
+        "app",
+        "llm"
+      ],
+      [
+        "data",
+        "llm",
+        "RAG"
+      ],
+      [
+        "llm",
+        "app",
+        "reponse / livrable"
+      ]
+    ]
+  },
+  "replication": {
+    "statut_epistemique": "infere",
+    "prerequis_data": [
+      "corpus metier proprietaire volumineux et structure",
+      "gouvernance et qualite des donnees",
+      "droits d'usage clairs sur les donnees client"
+    ],
+    "prerequis_orga": [
+      "equipe ML et securite dediee",
+      "environnement de calcul conforme",
+      "conduite du changement aupres des metiers"
+    ],
+    "stack_possible": [
+      "LLM sur cloud securise",
+      "couche RAG sur base documentaire interne",
+      "controles de conformite et de confidentialite"
+    ],
+    "premiere_etape": "Constituer et gouverner un corpus metier propre avant de brancher un LLM dessus.",
+    "playbook": [
+      {
+        "action": "Constituer et gouverner le corpus metier proprietaire (nettoyage, droits d'usage, qualite)",
+        "livrable": "Corpus documente avec droits valides et proprietaires identifies"
+      },
+      {
+        "action": "Monter l'environnement de calcul securise (acces, logs, confidentialite) avec l'equipe securite",
+        "livrable": "Infra cloud conforme validee par la securite"
+      },
+      {
+        "action": "Brancher le LLM et la couche RAG sur le corpus, sur un metier pilote",
+        "livrable": "Assistant en alpha avec jeu de questions metier de reference"
+      },
+      {
+        "action": "Pilote avec un groupe d'utilisateurs metier, mesurer qualite des reponses et adoption",
+        "livrable": "Retours qualite + taux d'usage du groupe pilote"
+      },
+      {
+        "action": "Deployer largement avec conduite du changement et suivi d'usage",
+        "livrable": "Assistant ouvert a l'effectif, adoption suivie en continu"
+      }
+    ],
+    "equipe": "2-3 ingenieurs ML/data + 1 responsable securite/conformite + 1 PM + relais dans les metiers"
+  },
+  "seo": {
+    "slug": "jll-gpt-cre-genai-2023",
+    "title": "JLL : JLL GPT, LLM metier pour l'immobilier commercial, 47 000 professionnels utilisateurs (2023)",
+    "meta_description": "JLL GPT, LLM construit pour l'immobilier commercial. Plus de 11 000 employes en 48h et plus de 47 000 professionnels utilisateurs en 2024.",
+    "resume_citable": "JLL GPT, lance en aout 2023, est un LLM vertical pour l'immobilier commercial entraine sur les donnees de transactions internes de JLL ; plus de 11 000 employes l'ont utilise en 48 heures et plus de 47 000 professionnels en 2024.",
+    "faq": [
+      {
+        "q": "Qu'est-ce que JLL GPT ?",
+        "a": "Un grand modele de langage construit par JLL Technologies pour l'immobilier commercial, entraine sur des decennies de donnees de transactions internes et deploye dans un environnement securise pour les employes de JLL."
+      },
+      {
+        "q": "Combien d'employes utilisent JLL GPT ?",
+        "a": "Plus de 11 000 employes s'en sont servis dans les 48 heures suivant le lancement en aout 2023, et plus de 47 000 professionnels JLL l'avaient utilise en octobre 2024."
+      }
+    ]
+  },
+  "logo_domain": "jll.com",
+  "stack_technique": [
+    {
+      "nom": "JLL GPT",
+      "categorie": "llm",
+      "detail": "LLM vertical proprietaire entraine sur des decennies de donnees de transactions CRE internes, enrichi de comprehension d'images en 2024",
+      "url": "https://www.jll.com"
+    },
+    {
+      "nom": "Microsoft Azure",
+      "categorie": "infra",
+      "detail": "environnement de calcul securise dans lequel le modele est deploye",
+      "url": "https://azure.microsoft.com"
+    },
+    {
+      "nom": "Couche RAG sur donnees CRE gouvernees",
+      "categorie": "outil",
+      "detail": "recuperation dans les donnees internes JLL avant generation, cle de l'avantage metier vs LLM public",
+      "url": "https://www.jll.com"
+    },
+    {
+      "nom": "JLL Falcon",
+      "categorie": "plateforme",
+      "detail": "plateforme lancee fin 2024 : acces a plusieurs LLM, modeles multimodaux et plus de soixante fonctions IA par ligne de metier",
+      "url": "https://www.jll.com"
+    }
+  ]
+}

@@ -1,0 +1,288 @@
+{
+  "id": "king-candy-crush-offres-ml-2024",
+  "type_fiche": "succes",
+  "marque": "King",
+  "groupe": "Microsoft (Activision Blizzard King)",
+  "industrie": "media_entertainment",
+  "marches_deploiement": [
+    "Mondial (Candy Crush Saga)"
+  ],
+  "transposable_ue": {
+    "flag": "oui_avec_adaptations",
+    "note": "La recommandation d'offres repose sur le profilage du comportement d'achat et de progression du joueur. Sous RGPD, le profilage a des fins de monetisation demande une base legale et de la transparence. La personnalisation d'offres et de prix reste sous surveillance du droit de la consommation. Le pattern est transposable, avec un cadrage juridique."
+  },
+  "metier": "marketing (monetisation) et LiveOps de jeu",
+  "intervenants": [
+    {
+      "nom": "Sahar Asadi",
+      "role": "Director of AI Labs, King",
+      "source_ref": "S1"
+    }
+  ],
+  "axes": {
+    "levier": "monetisation",
+    "touchpoints": [
+      "boutique in-game",
+      "offres et bundles personnalises",
+      "conception et test des niveaux"
+    ],
+    "etape_parcours": "achat",
+    "famille": "personnalisation",
+    "pattern": "recommandation ML d'offres et de bundles personnalises",
+    "type_ia": [
+      "modeles supervises et non supervises",
+      "modeles attentionnels",
+      "reseaux de neurones",
+      "computer vision (test automatise des niveaux)"
+    ],
+    "plateforme_stack": [
+      "custom/in-house",
+      "TensorFlow",
+      "Keras",
+      "Google Cloud"
+    ],
+    "objectif_metrique": [
+      "taux de clic sur l'offre",
+      "take rate",
+      "engagement",
+      "cadence et qualite de production des niveaux"
+    ]
+  },
+  "implementation": "custom",
+  "objectif_business": "Augmenter l'engagement et la conversion sur les offres in-game en servant a chaque joueur le bundle le plus pertinent, tout en produisant et testant les niveaux de Candy Crush a l'echelle.",
+  "points_cles": ["Recommandation ML de bundles personnalises dans la boutique de Candy Crush Saga.", "Modeles attentionnels maison sur TensorFlow, Keras et Google Cloud.", "+30% de taux de clic et plus de +40% de take rate.", "Quasi tous les niveaux concus avec l'aide de l'IA, preuve B confirmee."],
+  "description": "King recommande des bundles personnalises dans Candy Crush Saga avec un systeme de machine learning qui combine apprentissage supervise et non supervise et une approche de prediction dite scale-invariant, appuyee sur des modeles attentionnels au niveau joueur. Un papier signe par des equipes de King rapporte une hausse de l'engagement de 30 pour cent sur le taux de clic et de plus de 40 pour cent sur le take rate, avec un cadrage explicite du deploiement a l'echelle de millions d'utilisateurs, de la maintenance et du suivi des modeles, et des boucles de feedback degenerees a surveiller. En parallele, l'IA irrigue la production du jeu: selon la directrice des AI Labs, la quasi-totalite des niveaux de Candy Crush est desormais concue avec l'aide de l'IA, des bots jouant chaque niveau des milliers de fois pour mesurer la difficulte avant que les designers ne valident. King a aussi construit BAIT, un bot de test qui parcourt le jeu par capture d'ecran et reconnaissance d'interface pour detecter textures manquantes, textes absents et artefacts de rendu.",
+  "resultats": [
+    {
+      "metrique": "Engagement sur l'offre (taux de clic)",
+      "valeur": "+30 pour cent",
+      "citation_exacte": "enhances user engagement by 30% concerning click rate",
+      "source_ref": "S2"
+    },
+    {
+      "metrique": "Take rate des bundles recommandes",
+      "valeur": "plus de 40 pour cent",
+      "citation_exacte": "more than 40% concerning take rate",
+      "source_ref": "S2"
+    },
+    {
+      "metrique": "Niveaux Candy Crush concus avec l'aide de l'IA",
+      "valeur": "quasi tous les niveaux",
+      "citation_exacte": "Practically every Candy Crush Saga level is now created with the help of AI",
+      "source_ref": "S1"
+    }
+  ],
+  "niveau_preuve": {
+    "niveau": "B",
+    "justification": "Papier technique signe par des equipes de King, chiffre sur le taux de clic et le take rate d'un systeme deploye a l'echelle de millions de joueurs, corrobore par de la presse specialisee et un article d'ingenierie sur le test automatise. Pas un document financier, donc B."
+  },
+  "dates": {
+    "lancement": "systeme de reco d'offres a l'echelle documente en 2024 ; IA de conception de niveaux en production depuis plusieurs annees",
+    "derniere_confirmation_activite": "2024-08",
+    "verifie_le": "2026-07-11",
+    "revoir_apres": "2027-01-11"
+  },
+  "statut_vivant": {
+    "statut": "confirme",
+    "note": "Candy Crush Saga reste un jeu top-grossing en production continue. Le papier de reco d'offres date de 2024 et l'usage de l'IA dans la conception des niveaux est confirme la meme annee par la directrice des AI Labs."
+  },
+  "sources": [
+    {
+      "ref": "S1",
+      "type": "presse",
+      "fiabilite": "T4_secondaire",
+      "titre": "How King balances human and AI-powered design in Candy Crush Saga",
+      "url": "https://mobilegamer.biz/how-king-balances-human-and-ai-powered-design-in-candy-crush-saga/",
+      "date_publication": "2024-04-09",
+      "consulte_le": "2026-07-11"
+    },
+    {
+      "ref": "S2",
+      "type": "analyse_academique",
+      "fiabilite": "T2_officiel_interesse",
+      "titre": "On a Scale-Invariant Approach to Bundle Recommendations in Candy Crush Saga",
+      "url": "https://arxiv.org/abs/2408.06799",
+      "date_publication": "2024-08-13",
+      "consulte_le": "2026-07-11"
+    },
+    {
+      "ref": "S3",
+      "type": "eng_blog",
+      "fiabilite": "T4_secondaire",
+      "titre": "How King uses AI to test Candy Crush Saga",
+      "url": "https://www.infoq.com/articles/candy-crush-QA-AI-saga/",
+      "date_publication": "",
+      "consulte_le": "2026-07-11"
+    }
+  ],
+  "fonctionnement_operationnel": {
+    "cadence": "Recommandation d'offres en continu au fil des sessions ; production et test des niveaux en flux, avec des bots qui jouent chaque niveau des milliers de fois avant sortie.",
+    "opere_par": "AI Labs de King et les equipes de jeu (game teams), les designers gardant la validation finale sur les niveaux.",
+    "signal_pilote": "Le comportement d'achat et de progression du joueur (cartes ou boosters possedes, proximite d'un objectif, frequence d'achat). Sans donnee comportementale fraiche, la reco d'offre perd sa pertinence et le take rate chute.",
+    "etapes": [
+      {
+        "etape": "Test automatise des niveaux",
+        "detail": "Des bots IA jouent chaque niveau des milliers de fois pour mesurer difficulte et frictions ; BAIT detecte les bugs visuels.",
+        "acteur": "IA (bots de test)"
+      },
+      {
+        "etape": "Validation design",
+        "detail": "Les designers lisent les metriques IA, annotent les bons et mauvais exemples et decident d'ajuster.",
+        "acteur": "designers (humains)"
+      },
+      {
+        "etape": "Prediction de l'offre",
+        "detail": "Le modele attentionnel predit, par joueur, le bundle a plus forte propension de conversion.",
+        "acteur": "IA (systeme de reco)"
+      },
+      {
+        "etape": "Affichage et suivi",
+        "detail": "La boutique sert l'offre ; taux de clic, take rate, diversite et boucles de feedback sont monitores.",
+        "acteur": "equipe data / LiveOps"
+      }
+    ]
+  },
+  "schema_flow": {
+    "statut": "documente",
+    "noeuds": [
+      {
+        "id": "behav",
+        "role_generique": "data_source",
+        "label": "Comportement d'achat et de progression"
+      },
+      {
+        "id": "reco",
+        "role_generique": "modele_ia",
+        "label": "Modele attentionnel de reco de bundles",
+        "outil_documente": "custom King (TensorFlow, Keras)"
+      },
+      {
+        "id": "store",
+        "role_generique": "site_app",
+        "label": "Boutique in-game (Candy Crush)"
+      },
+      {
+        "id": "bots",
+        "role_generique": "modele_ia",
+        "label": "Bots de test des niveaux + BAIT"
+      },
+      {
+        "id": "design",
+        "role_generique": "humain",
+        "label": "Designers (validation)"
+      }
+    ],
+    "liens": [
+      [
+        "behav",
+        "reco"
+      ],
+      [
+        "reco",
+        "store"
+      ],
+      [
+        "store",
+        "behav",
+        "clics et achats reinjectes"
+      ],
+      [
+        "bots",
+        "design"
+      ],
+      [
+        "design",
+        "store",
+        "niveaux valides"
+      ]
+    ]
+  },
+  "replication": {
+    "statut_epistemique": "infere",
+    "prerequis_data": [
+      "evenements d'achat in-app",
+      "signaux de progression et d'inventaire par joueur",
+      "catalogue d'offres et de bundles"
+    ],
+    "prerequis_orga": [
+      "equipe data science pour maintenir et monitorer les modeles",
+      "process de validation design pour les niveaux",
+      "surveillance des boucles de feedback et de la diversite"
+    ],
+    "stack_possible": [
+      "modele de reco custom",
+      "TensorFlow ou PyTorch",
+      "infra cloud (ex. Google Cloud)",
+      "pipeline d'A/B testing"
+    ],
+    "premiere_etape": "Instrumenter finement l'inventaire et la progression du joueur, puis tester un modele de propension d'offre sur un segment avant de generaliser.",
+    "playbook": [
+      {
+        "action": "Instrumenter finement les evenements d'achat, l'inventaire et la progression par joueur",
+        "livrable": "Pipeline d'evenements fiable et documente"
+      },
+      {
+        "action": "Construire un premier modele de propension d'offre et l'evaluer hors ligne",
+        "livrable": "Modele entraine avec metriques de precision offline"
+      },
+      {
+        "action": "Lancer un A/B test sur un segment de joueurs contre les offres statiques",
+        "livrable": "Lift de taux de clic et de take rate mesure"
+      },
+      {
+        "action": "Generaliser et installer le monitoring (boucles de feedback degenerees, diversite des offres)",
+        "livrable": "Reco en production avec surveillance continue et alerting"
+      }
+    ],
+    "equipe": "2 data scientists + 1 data engineer + 1 PM LiveOps"
+  },
+  "seo": {
+    "slug": "king-candy-crush-offres-ml-2024",
+    "title": "King : offres personnalisees par ML dans Candy Crush - +30% de clics, +40% de take rate (2024)",
+    "meta_description": "King recommande des bundles personnalises dans Candy Crush Saga avec du machine learning : +30% sur le taux de clic et plus de +40% sur le take rate.",
+    "resume_citable": "King recommande des bundles personnalises dans Candy Crush Saga avec un systeme de machine learning deploye a l'echelle de millions de joueurs, avec +30 pour cent sur le taux de clic et plus de +40 pour cent sur le take rate ; en parallele, la quasi-totalite des niveaux est concue avec l'aide de l'IA.",
+    "faq": [
+      {
+        "q": "Comment King personnalise-t-il la monetisation de Candy Crush ?",
+        "a": "Un modele attentionnel predit, pour chaque joueur, le bundle a plus forte propension d'achat et le sert dans la boutique, avec une hausse mesuree du clic et du take rate."
+      },
+      {
+        "q": "L'IA sert-elle aussi a la conception des niveaux ?",
+        "a": "Oui. Selon la directrice des AI Labs de King, la quasi-totalite des niveaux est desormais concue avec l'aide de l'IA, des bots testant chaque niveau des milliers de fois avant sa sortie."
+      }
+    ]
+  },
+  "logo_domain": "king.com",
+  "stack_technique": [
+    {
+      "nom": "Modeles attentionnels de recommandation (in-house King)",
+      "categorie": "llm",
+      "detail": "apprentissage supervise et non supervise, approche scale-invariant, prediction du bundle par joueur",
+      "url": "https://www.king.com"
+    },
+    {
+      "nom": "TensorFlow",
+      "categorie": "outil",
+      "detail": "framework ML utilise par les equipes de King pour entrainer les modeles",
+      "url": "https://www.tensorflow.org"
+    },
+    {
+      "nom": "Keras",
+      "categorie": "outil",
+      "detail": "API de construction des reseaux de neurones au-dessus de TensorFlow",
+      "url": "https://keras.io"
+    },
+    {
+      "nom": "Google Cloud",
+      "categorie": "infra",
+      "detail": "infrastructure cloud d'entrainement et de serving des modeles",
+      "url": "https://cloud.google.com"
+    },
+    {
+      "nom": "Bots de test et BAIT (in-house)",
+      "categorie": "outil",
+      "detail": "bots qui jouent chaque niveau des milliers de fois et detectent les bugs visuels par reconnaissance d'interface",
+      "url": "https://www.king.com"
+    }
+  ]
+}

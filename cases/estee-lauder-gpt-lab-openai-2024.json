@@ -1,0 +1,294 @@
+{
+  "id": "estee-lauder-gpt-lab-openai-2024",
+  "type_fiche": "succes",
+  "marque": "The Estee Lauder Companies",
+  "groupe": "The Estee Lauder Companies",
+  "industrie": "luxe_beaute",
+  "marches_deploiement": [
+    "International (~150 pays)",
+    "Etats-Unis"
+  ],
+  "transposable_ue": {
+    "flag": "oui_avec_adaptations",
+    "note": "Usage genAI interne sur donnees proprietaires (etudes conso, essais cliniques, donnees produit). Passer par une offre entreprise avec isolation des donnees (pas d'entrainement sur les prompts), controle d'acces et journalisation pour rester conforme RGPD et secret des affaires."
+  },
+  "metier": "R&D / marketing",
+  "intervenants": [
+    {
+      "nom": "Jane Lauder",
+      "role": "EVP Enterprise Marketing et Chief Data Officer, ELC",
+      "source_ref": "S1"
+    },
+    {
+      "nom": "Kingsuk Chakrabarty",
+      "role": "Director of Enterprise Architecture, AI and R&D, ELC",
+      "source_ref": "S2"
+    }
+  ],
+  "axes": {
+    "levier": "acquisition",
+    "touchpoints": [
+      "outils internes marketing",
+      "R&D produit",
+      "insights consommateurs"
+    ],
+    "etape_parcours": "consideration",
+    "famille": "generation",
+    "pattern": "genAI interne d'entreprise (GPT sur mesure sur donnees proprietaires)",
+    "type_ia": [
+      "LLM",
+      "GPT sur mesure",
+      "analyse de donnees conso"
+    ],
+    "plateforme_stack": [
+      "OpenAI ChatGPT Enterprise",
+      "GPT sur mesure (240+)",
+      "Azure OpenAI Service"
+    ],
+    "objectif_metrique": [
+      "temps de reponse R&D/marketing",
+      "vitesse de lancement de campagnes",
+      "adoption interne"
+    ]
+  },
+  "implementation": "hybride",
+  "stack_technique": [
+    {
+      "nom": "OpenAI ChatGPT Enterprise",
+      "categorie": "plateforme",
+      "detail": "Socle d'acces des collaborateurs aux GPT sur mesure, avec isolation des donnees d'entreprise.",
+      "url": "https://openai.com"
+    },
+    {
+      "nom": "GPT sur mesure (240+)",
+      "categorie": "outil",
+      "detail": "Assistants specialises branches sur les donnees proprietaires: etudes conso, claims, informations fournisseurs, copywriting par marque.",
+      "url": "https://openai.com"
+    },
+    {
+      "nom": "Azure OpenAI Service",
+      "categorie": "plateforme",
+      "detail": "Porte l'outil qui exploite la base proprietaire de donnees produit et de claims pour accelerer les campagnes locales.",
+      "url": "https://azure.microsoft.com"
+    },
+    {
+      "nom": "Microsoft",
+      "categorie": "integrateur",
+      "detail": "Collaboration etendue annoncee en avril 2024 pour la genAI sur le portefeuille de marques.",
+      "url": "https://www.microsoft.com"
+    },
+    {
+      "nom": "Coffre de donnees ELC",
+      "categorie": "infra",
+      "detail": "Etudes conso, essais cliniques et donnees produit de plus de 20 marques; c'est la source d'ancrage des GPT.",
+      "url": "https://www.elcompanies.com"
+    }
+  ],
+  "objectif_business": "Accelerer la mise sur le marche et l'exploitation des donnees proprietaires (etudes conso, essais cliniques, donnees produit) sur un portefeuille de plus de 20 marques, via des assistants genAI specialises.",
+  "points_cles": ["GenAI interne d'entreprise, 240+ GPT sur mesure branches sur les donnees proprietaires.", "OpenAI ChatGPT Enterprise et Azure OpenAI, coordonnes par un GPT Lab transverse.", "Temps de reponse R&D et marketing ameliore de plus de 90%, sur 20+ marques.", "Niveau de preuve B, statut vivant confirme."],
+  "description": "ELC a mis a disposition de ses collaborateurs plus de 240 GPT sur mesure via son partenariat OpenAI, coordonnes par un GPT Lab transverse qui prototype et priorise les cas d'usage a fort impact. Les applications vont de l'analyse de grandes bases d'etudes conso a la synthese d'informations fournisseurs, en passant par des GPT de copywriting par marque. En parallele, un outil sous Azure OpenAI exploite la base proprietaire de donnees produit et de claims pour lancer plus vite des campagnes localement pertinentes. Les collaborateurs interrogent via ChatGPT Enterprise le coffre de donnees (essais cliniques, etudes conso) issu d'un portefeuille de plus de 20 marques dont Clinique et Aveda.",
+  "resultats": [
+    {
+      "metrique": "GPT sur mesure deployes",
+      "valeur": "240+",
+      "citation_exacte": "more than 240 custom GPTs",
+      "source_ref": "S2"
+    },
+    {
+      "metrique": "Gain de temps de reponse (R&D et marketing)",
+      "valeur": "+90%",
+      "citation_exacte": "improved response times across R&D and marketing teams by more than 90%",
+      "source_ref": "S2"
+    },
+    {
+      "metrique": "Perimetre du portefeuille",
+      "valeur": "20+ marques, ~150 pays",
+      "citation_exacte": "products sold in approximately 150 countries and territories",
+      "source_ref": "S1"
+    }
+  ],
+  "niveau_preuve": {
+    "niveau": "B",
+    "justification": "Communique officiel ELC (source primaire) sur le programme genAI et son perimetre, complete par la presse specialisee chiffrant les 240 GPT et le gain de temps de reponse. Deux sources concordantes, l'une primaire."
+  },
+  "dates": {
+    "lancement": "2023 (partenariat OpenAI), extension Microsoft/Azure annoncee avril 2024",
+    "derniere_confirmation_activite": "Communications ELC/Microsoft 2024 sur l'extension genAI",
+    "verifie_le": "2026-07-11",
+    "revoir_apres": "2027-01-31"
+  },
+  "statut_vivant": {
+    "statut": "confirme",
+    "note": "Programme etendu (OpenAI puis collaboration Microsoft/Azure en 2024), GPT Lab actif pour prioriser de nouveaux cas d'usage."
+  },
+  "sources": [
+    {
+      "ref": "S1",
+      "type": "communique_officiel",
+      "fiabilite": "T1_primaire",
+      "titre": "The Estee Lauder Companies and Microsoft Increase Collaboration to Power Prestige Beauty with Generative AI",
+      "url": "https://www.elcompanies.com/en/news-and-media/newsroom/press-releases/2024/04-26-2024",
+      "date_publication": "2024-04-26",
+      "consulte_le": "2026-07-11"
+    },
+    {
+      "ref": "S2",
+      "type": "presse",
+      "fiabilite": "T4_secondaire",
+      "titre": "Estee Lauder builds out generative AI capabilities with GPT Lab",
+      "url": "https://www.ciodive.com/news/Estee-Lauder-ELC-generative-AI-OpenAI-partnership-ChatGPT/733005/",
+      "date_publication": "2024",
+      "consulte_le": "2026-07-11"
+    },
+    {
+      "ref": "S3",
+      "type": "customer_story_plateforme",
+      "fiabilite": "T2_officiel_interesse",
+      "titre": "Estee Lauder uses AI to reimagine trend forecasting and consumer marketing",
+      "url": "https://news.microsoft.com/source/features/digital-transformation/estee-lauder-uses-ai-to-reimagine-trend-forecasting-and-consumer-marketing/",
+      "date_publication": "2024",
+      "consulte_le": "2026-07-11"
+    }
+  ],
+  "fonctionnement_operationnel": {
+    "cadence": "Usage quotidien par les equipes ; nouveaux GPT prototypes au fil des cas d'usage priorises",
+    "opere_par": "GPT Lab transverse (architecture, IA, R&D) qui identifie, prototype et priorise ; equipes marque/marketing/R&D comme utilisateurs",
+    "signal_pilote": "La qualite et l'acces aux donnees proprietaires (etudes conso, essais cliniques, donnees produit). Si l'assistant n'est pas branche sur ces donnees, il perd sa specificite et ne fait que du generique.",
+    "etapes": [
+      {
+        "etape": "Detection du cas d'usage",
+        "detail": "Le GPT Lab evalue la valeur et l'effort, et priorise les GPT a haute valeur et rapides a construire.",
+        "acteur": "GPT Lab / equipe IA"
+      },
+      {
+        "etape": "Construction du GPT",
+        "detail": "Un GPT sur mesure est branche sur la donnee pertinente (survey, claims, fournisseurs).",
+        "acteur": "equipe IA"
+      },
+      {
+        "etape": "Mise a disposition",
+        "detail": "Le GPT est publie aux equipes concernees via ChatGPT Enterprise.",
+        "acteur": "IA / plateforme"
+      },
+      {
+        "etape": "Usage metier",
+        "detail": "Marketing et R&D interrogent le coffre de donnees pour insights, copywriting, synthese.",
+        "acteur": "marketing / R&D"
+      },
+      {
+        "etape": "Suivi d'adoption",
+        "detail": "Le GPT Lab mesure l'adoption et les gains de temps pour arbitrer les prochains cas.",
+        "acteur": "GPT Lab"
+      }
+    ]
+  },
+  "schema_flow": {
+    "statut": "approche_type",
+    "noeuds": [
+      {
+        "id": "user",
+        "role_generique": "humain",
+        "label": "Collaborateur marketing / R&D"
+      },
+      {
+        "id": "gpt",
+        "role_generique": "modele_ia",
+        "label": "GPT sur mesure (240+)",
+        "outil_documente": "OpenAI ChatGPT Enterprise"
+      },
+      {
+        "id": "vault",
+        "role_generique": "data_source",
+        "label": "Coffre de donnees ELC (etudes conso, essais cliniques, claims)"
+      },
+      {
+        "id": "lab",
+        "role_generique": "humain",
+        "label": "GPT Lab (priorisation cas d'usage)"
+      }
+    ],
+    "liens": [
+      [
+        "user",
+        "gpt"
+      ],
+      [
+        "gpt",
+        "vault"
+      ],
+      [
+        "vault",
+        "gpt",
+        "reponse ancree aux donnees ELC"
+      ],
+      [
+        "gpt",
+        "user",
+        "insight / contenu"
+      ],
+      [
+        "lab",
+        "gpt",
+        "priorise et publie les GPT"
+      ]
+    ]
+  },
+  "replication": {
+    "statut_epistemique": "infere",
+    "prerequis_data": [
+      "donnees proprietaires structurees (etudes, claims, catalogue)",
+      "gouvernance d'acces aux donnees sensibles"
+    ],
+    "prerequis_orga": [
+      "cellule transverse pour prioriser les cas d'usage",
+      "licence genAI entreprise avec isolation des donnees",
+      "conduite du changement / adoption"
+    ],
+    "stack_possible": [
+      "OpenAI ChatGPT Enterprise",
+      "Azure OpenAI Service",
+      "assistants/GPT sur mesure connectes a la donnee interne"
+    ],
+    "premiere_etape": "Cartographier les taches marketing/R&D repetitives sur donnees proprietaires et lancer 2 ou 3 GPT prioritaires avec une cellule dediee.",
+    "playbook": [
+      {
+        "action": "Cartographier les taches marketing et R&D repetitives sur donnees proprietaires et prioriser par valeur et effort.",
+        "livrable": "Backlog de cas d'usage priorise"
+      },
+      {
+        "action": "Poser le socle: licence genAI entreprise, gouvernance d'acces aux donnees, cellule transverse type GPT Lab.",
+        "livrable": "Cadre d'usage et cellule en place"
+      },
+      {
+        "action": "Construire 2 ou 3 GPT pilotes branches sur la donnee pertinente.",
+        "livrable": "GPT pilotes publies aux equipes concernees"
+      },
+      {
+        "action": "Former les equipes et suivre adoption et gains de temps.",
+        "livrable": "Tableau de bord adoption et temps gagne"
+      },
+      {
+        "action": "Arbitrer la vague suivante de GPT a partir des mesures.",
+        "livrable": "Backlog v2 priorise par la cellule"
+      }
+    ],
+    "equipe": "Cellule transverse de 2-3 personnes (architecture, IA, data) + relais metier par marque; gouvernance data pour les acces sensibles."
+  },
+  "seo": {
+    "slug": "estee-lauder-gpt-lab-openai-2024",
+    "title": "Estee Lauder : 240+ GPT sur mesure (OpenAI) - temps de reponse R&D/marketing ameliore de 90% (2024)",
+    "meta_description": "Estee Lauder a deploye plus de 240 GPT sur mesure via OpenAI et un GPT Lab transverse, ameliorant les temps de reponse R&D et marketing de plus de 90%.",
+    "resume_citable": "Estee Lauder a deploye plus de 240 GPT sur mesure via son partenariat OpenAI et un GPT Lab transverse, ameliorant les temps de reponse des equipes R&D et marketing de plus de 90% sur un portefeuille de plus de 20 marques.",
+    "faq": [
+      {
+        "q": "Combien de GPT sur mesure Estee Lauder a-t-il deployes ?",
+        "a": "Plus de 240 GPT personnalises, mis a disposition des collaborateurs via ChatGPT Enterprise et coordonnes par un GPT Lab transverse."
+      },
+      {
+        "q": "Quel gain mesure a ete rapporte ?",
+        "a": "Une amelioration des temps de reponse des equipes R&D et marketing de plus de 90%, selon la presse specialisee citant l'entreprise."
+      }
+    ]
+  },
+  "logo_domain": "elcompanies.com"
+}

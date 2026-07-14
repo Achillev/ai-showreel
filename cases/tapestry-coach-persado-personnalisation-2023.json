@@ -1,0 +1,256 @@
+{
+  "id": "tapestry-coach-persado-personnalisation-2023",
+  "type_fiche": "succes",
+  "marque": "Tapestry",
+  "groupe": "Tapestry (Coach, Kate Spade, Stuart Weitzman)",
+  "industrie": "luxe_beaute",
+  "marches_deploiement": [
+    "Etats-Unis"
+  ],
+  "transposable_ue": {
+    "flag": "oui_avec_adaptations",
+    "note": "Le modele de langage de Persado est entraine sur des interactions de consommateurs US. Pour l'UE, reentrainer sur des donnees locales consenties et adapter la langue et le ton par marche ; le contenu genere reste soumis au controle marketing."
+  },
+  "metier": "e-commerce / marketing / CRM",
+  "intervenants": [
+    {
+      "nom": "Kathleen Jiang",
+      "role": "Content Optimization Program Manager, Tapestry",
+      "source_ref": "S1"
+    }
+  ],
+  "agences": [
+    {
+      "nom": "Persado",
+      "role": "Plateforme genAI de generation et d'optimisation de langage marketing",
+      "source_ref": "S1"
+    }
+  ],
+  "axes": {
+    "levier": "activation_conversion",
+    "touchpoints": [
+      "pages produit et checkout",
+      "landing pages",
+      "bannieres et boutons du site",
+      "email",
+      "page de remerciement post-achat"
+    ],
+    "etape_parcours": "achat",
+    "famille": "generation",
+    "pattern": "generation et optimisation de langage marketing personnalise",
+    "type_ia": [
+      "generation de langage (NLG)",
+      "optimisation par test",
+      "modele de langage emotionnel"
+    ],
+    "plateforme_stack": [
+      "Persado"
+    ],
+    "objectif_metrique": [
+      "revenu e-commerce",
+      "taux de conversion",
+      "taux d'abandon de panier"
+    ]
+  },
+  "implementation": "plateforme",
+  "objectif_business": "Faire monter le revenu e-commerce en remplacant le copy generique du site par un langage genere et optimise par IA, emotionnel et conversationnel, proche de ce que dirait un conseiller en boutique.",
+  "description": "Tapestry, maison mere de Coach et Kate Spade, utilise Persado pour generer et optimiser le langage marketing de son e-commerce. La plateforme s'appuie sur un jeu de donnees issu des analytics de transactions et des interactions de 150 millions de consommateurs americains pour produire un copy emotionnel et conversationnel. Le contenu genere est deploye sur les pages de checkout, les landing pages, les bannieres et boutons du site, les campagnes email et les pages de remerciement post-achat. Chaque variante est testee pour retenir la formulation la plus performante. Tapestry rapporte une hausse du revenu e-commerce et une baisse de l'abandon de panier grace au contenu personnalise.",
+  "resultats": [
+    {
+      "metrique": "Hausse du revenu e-commerce (contenu web personnalise)",
+      "valeur": "+3 a 5%",
+      "citation_exacte": "3-5% increase in e-commerce revenue via personalized web content",
+      "source_ref": "S1"
+    },
+    {
+      "metrique": "Consommateurs US dans la base d'entrainement du langage",
+      "valeur": "150M",
+      "citation_exacte": "interactions from 150 million U.S. consumers",
+      "source_ref": "S1"
+    }
+  ],
+  "niveau_preuve": {
+    "niveau": "C",
+    "justification": "Deux titres de presse trade (Consumer Goods Technology, Chain Store Age) citant nommement Tapestry et le chiffre de 3 a 5% de revenu e-commerce, avec une responsable de programme nommee. Chiffre de conversion et d'abandon rapporte qualitativement."
+  },
+  "dates": {
+    "lancement": "2023 (deploiement du contenu genere par Persado sur le site)",
+    "derniere_confirmation_activite": "2023 (annonce publique du programme et des resultats)",
+    "verifie_le": "2026-07-11",
+    "revoir_apres": "2027-01-31"
+  },
+  "statut_vivant": {
+    "statut": "confirme",
+    "note": "Programme de personnalisation du contenu confirme en 2023 ; Tapestry a par ailleurs elargi son usage de l'IA (outils internes Rexy, systeme Mira) sur 2024-2026, signe d'une trajectoire IA maintenue."
+  },
+  "sources": [
+    {
+      "ref": "S1",
+      "type": "presse",
+      "fiabilite": "T3_presse_etablie",
+      "titre": "Tapestry and Marks and Spencer Power E-Commerce Personalization With Generative AI",
+      "url": "https://consumergoods.com/tapestry-and-marks-spencer-power-e-commerce-personalization-generative-ai",
+      "date_publication": "2023-05-23",
+      "consulte_le": "2026-07-11"
+    },
+    {
+      "ref": "S2",
+      "type": "presse",
+      "fiabilite": "T3_presse_etablie",
+      "titre": "Tapestry personalizes checkout content with generative AI",
+      "url": "https://chainstoreage.com/tapestry-personalizes-checkout-content-generative-ai",
+      "date_publication": "2023",
+      "consulte_le": "2026-07-11"
+    }
+  ],
+  "fonctionnement_operationnel": {
+    "cadence": "Par campagne et par emplacement du site ; test continu des variantes de langage",
+    "opere_par": "Equipe optimisation de contenu et e-commerce de Tapestry, sur la plateforme Persado",
+    "signal_pilote": "La performance mesuree de chaque variante (clic, conversion, revenu). Sans volume de trafic pour trancher les tests, la selection de la meilleure formulation perd sa fiabilite.",
+    "etapes": [
+      {
+        "etape": "Choix de l'emplacement",
+        "detail": "L'equipe cible un emplacement a fort enjeu (checkout, landing, banniere, email).",
+        "acteur": "marketing / e-commerce"
+      },
+      {
+        "etape": "Generation des variantes",
+        "detail": "Persado genere plusieurs formulations emotionnelles et conversationnelles a partir de son modele.",
+        "acteur": "IA"
+      },
+      {
+        "etape": "Test et selection",
+        "detail": "Les variantes sont testees ; la formulation la plus performante est retenue.",
+        "acteur": "IA / marketing"
+      },
+      {
+        "etape": "Deploiement et mesure",
+        "detail": "Le contenu gagnant est mis en ligne, l'impact revenu et abandon est suivi.",
+        "acteur": "e-commerce"
+      }
+    ]
+  },
+  "schema_flow": {
+    "statut": "documente",
+    "noeuds": [
+      {
+        "id": "data",
+        "role_generique": "data_source",
+        "label": "Interactions de 150 M de consommateurs US"
+      },
+      {
+        "id": "persado",
+        "role_generique": "modele_ia",
+        "label": "Generation et optimisation de langage",
+        "outil_documente": "Persado"
+      },
+      {
+        "id": "site",
+        "role_generique": "site_app",
+        "label": "E-commerce (checkout, landing, email)"
+      },
+      {
+        "id": "equipe",
+        "role_generique": "humain",
+        "label": "Equipe optimisation de contenu"
+      }
+    ],
+    "liens": [
+      [
+        "data",
+        "persado",
+        "modele de langage entraine"
+      ],
+      [
+        "equipe",
+        "persado",
+        "brief et emplacement"
+      ],
+      [
+        "persado",
+        "site",
+        "variantes de copy testees"
+      ],
+      [
+        "site",
+        "persado",
+        "performance mesuree"
+      ]
+    ]
+  },
+  "replication": {
+    "statut_epistemique": "infere",
+    "prerequis_data": [
+      "trafic e-commerce suffisant pour trancher les tests",
+      "acces aux emplacements de copy du site et des emails",
+      "historique de performance par emplacement"
+    ],
+    "prerequis_orga": [
+      "equipe marketing/e-commerce pilotant les tests",
+      "processus de validation du contenu genere",
+      "integration de la plateforme au CMS et a l'ESP"
+    ],
+    "stack_possible": [
+      "Persado ou plateforme NLG equivalente",
+      "outil d'A/B testing",
+      "CMS e-commerce et ESP"
+    ],
+    "premiere_etape": "Brancher un generateur de langage sur un emplacement a fort trafic (checkout ou email) et comparer au copy existant.",
+    "playbook": [
+      {
+        "action": "Choisir un ou deux emplacements a fort enjeu et fort trafic (checkout, email) et verifier que le volume permet de trancher les tests.",
+        "livrable": "Liste d'emplacements priorises et plan de test."
+      },
+      {
+        "action": "Brancher la plateforme au CMS et a l'ESP, cadrer le processus de validation du ton par la marque.",
+        "livrable": "Integration operante et charte de validation du contenu genere."
+      },
+      {
+        "action": "Generer les variantes et les tester face au copy existant, emplacement par emplacement.",
+        "livrable": "Premiers tests conclus, formulations gagnantes identifiees."
+      },
+      {
+        "action": "Deployer les gagnants, lire l'impact revenu et abandon de panier, decider de l'extension a d'autres emplacements.",
+        "livrable": "Bilan chiffre par emplacement et roadmap d'extension."
+      }
+    ],
+    "equipe": "1 responsable optimisation de contenu + 1 marketeur CRM/e-commerce + 1 relais dev pour l'integration CMS/ESP."
+  },
+  "seo": {
+    "slug": "tapestry-coach-persado-personnalisation-2023",
+    "title": "Tapestry (Coach) : copy e-commerce genere par IA (Persado) - +3 a 5% de revenu en ligne (2023)",
+    "meta_description": "Tapestry, maison mere de Coach, utilise Persado pour generer et optimiser le langage de son e-commerce, avec +3 a 5% de revenu en ligne sur le contenu web personnalise.",
+    "resume_citable": "Tapestry, maison mere de Coach et Kate Spade, utilise Persado pour generer et optimiser le copy de son e-commerce, avec une hausse de 3 a 5% du revenu en ligne sur le contenu web personnalise.",
+    "faq": [
+      {
+        "q": "Quel gain Tapestry rapporte-t-il avec Persado ?",
+        "a": "Une hausse de 3 a 5% du revenu e-commerce sur le contenu web personnalise, plus une amelioration de la conversion et de l'abandon de panier."
+      },
+      {
+        "q": "Ou le contenu genere est-il utilise ?",
+        "a": "Sur les pages de checkout et de destination, les bannieres et boutons du site, les emails et les pages de remerciement post-achat."
+      }
+    ]
+  },
+  "logo_domain": "tapestry.com",
+  "stack_technique": [
+    {
+      "nom": "Persado",
+      "categorie": "plateforme",
+      "detail": "Plateforme genAI de generation et d'optimisation de langage marketing : variantes emotionnelles et conversationnelles testees emplacement par emplacement.",
+      "url": "https://www.persado.com"
+    },
+    {
+      "nom": "Modele de langage Persado",
+      "categorie": "llm",
+      "detail": "Modele proprietaire entraine sur les analytics de transactions et les interactions de 150 millions de consommateurs US.",
+      "url": "https://www.persado.com"
+    },
+    {
+      "nom": "Site e-commerce et ESP de Tapestry",
+      "categorie": "infra",
+      "detail": "Emplacements branches : checkout, landing pages, bannieres et boutons, emails, pages de remerciement post-achat.",
+      "url": "https://www.tapestry.com"
+    }
+  ]
+}

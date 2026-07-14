@@ -1,0 +1,310 @@
+{
+  "id": "wendys-freshai-drive-2025",
+  "type_fiche": "succes",
+  "marque": "Wendy's",
+  "industrie": "food_beverage",
+  "marches_deploiement": [
+    "Etats-Unis"
+  ],
+  "transposable_ue": {
+    "flag": "oui_avec_adaptations",
+    "note": "Traitement de la voix des clients au drive : base legale et information RGPD requises, transparence AI Act sur l'interlocuteur IA. Les modeles de langage doivent etre reentraines sur les accents et langues locales (Wendy's a ajoute l'espagnol aux Etats-Unis)."
+  },
+  "metier": "operations restaurant / prise de commande / service client",
+  "intervenants": [
+    {
+      "nom": "Kirk Tanner",
+      "role": "President and Chief Executive Officer, Wendy's",
+      "source_ref": "S2"
+    },
+    {
+      "nom": "Ken Cook",
+      "role": "Chief Financial Officer, Wendy's",
+      "source_ref": "S2"
+    }
+  ],
+  "agences": [
+    {
+      "nom": "Google Cloud",
+      "role": "Partenaire technologique, fournit les grands modeles de langage qui equipent FreshAI",
+      "source_ref": "S1"
+    }
+  ],
+  "axes": {
+    "levier": "activation_conversion",
+    "touchpoints": [
+      "drive-thru",
+      "micro et haut-parleur de commande",
+      "menu digital"
+    ],
+    "etape_parcours": "achat",
+    "famille": "conversation",
+    "pattern": "agent vocal de prise de commande au drive-thru avec suggestion de vente",
+    "type_ia": [
+      "grands modeles de langage",
+      "reconnaissance vocale (ASR)",
+      "traitement du langage naturel",
+      "synthese vocale"
+    ],
+    "plateforme_stack": [
+      "Google Cloud",
+      "FreshAI (custom sur Google Cloud)"
+    ],
+    "objectif_metrique": [
+      "precision de commande",
+      "temps de service",
+      "taille de panier",
+      "mix digital des ventes"
+    ]
+  },
+  "implementation": "hybride",
+  "objectif_business": "Prendre les commandes au drive par une IA vocale batie avec Google Cloud pour fluidifier le service, reduire les erreurs et pousser des suggestions de vente qui font monter le panier, tout en liberant les equipiers.",
+  "description": "FreshAI est l'IA vocale de prise de commande au drive de Wendy's, developpee avec Google Cloud et lancee en test en 2023. Elle comprend le langage naturel, gere des millions de combinaisons de commande et de personnalisation, et propose des articles complementaires selon la commande en cours. Le systeme a demarre en pilote sur deux Etats en 2024, puis un programme franchise. Debut 2025, il equipait plus de 160 restaurants, avec une cible de plus de 500 restaurants sur l'annee, en traitant des dizaines de milliers de commandes par jour. Wendy's a depuis ajoute l'espagnol.",
+  "resultats": [
+    {
+      "metrique": "Restaurants equipes debut 2025, cible de plus de 500",
+      "valeur": "160+ restaurants",
+      "citation_exacte": "over 160 units, target over 500 restaurants",
+      "source_ref": "S2"
+    },
+    {
+      "metrique": "Commandes traitees par jour",
+      "valeur": "dizaines de milliers",
+      "citation_exacte": "processing tens of thousands of orders daily",
+      "source_ref": "S1"
+    },
+    {
+      "metrique": "Mix digital des ventes totales, record au T1",
+      "valeur": "plus de 20%",
+      "citation_exacte": "digital mix to a record of over 20% of total sales",
+      "source_ref": "S2"
+    }
+  ],
+  "niveau_preuve": {
+    "niveau": "C",
+    "justification": "Presse restauration etablie et communications officielles de la marque citant nommement Wendy's, le nombre de restaurants et le partenaire Google Cloud, avec commentaire du CEO Kirk Tanner en earnings sur le mix digital. Les metriques propres a FreshAI (precision, temps d'attente) ne sont pas publiees en chiffres, d'ou C plutot que A."
+  },
+  "dates": {
+    "lancement": "Test en 2023, pilote franchise et deploiement sur deux Etats en 2024",
+    "derniere_confirmation_activite": "2025 (plus de 160 restaurants, cible de 500, ajout de l'espagnol)",
+    "verifie_le": "2026-07-11",
+    "revoir_apres": "2027-01-11"
+  },
+  "statut_vivant": {
+    "statut": "confirme",
+    "note": "Deploiement en expansion active en 2025 (cible de plus de 500 restaurants) et enrichissement fonctionnel (espagnol). Wendy's a annonce des investissements tech continus sur le drive."
+  },
+  "sources": [
+    {
+      "ref": "S1",
+      "type": "blog_officiel",
+      "fiabilite": "T2_officiel_interesse",
+      "titre": "Transforming the Ordering Experience: Wendy's FreshAI Update",
+      "url": "https://www.wendys.com/blog/wendysr-square-deal-blog/transforming-ordering-experience-wendys-freshai-update",
+      "consulte_le": "2026-07-11"
+    },
+    {
+      "ref": "S2",
+      "type": "presse",
+      "fiabilite": "T3_presse_etablie",
+      "titre": "Wendy's to deploy drive-thru AI to over 500 restaurants this year",
+      "url": "https://www.restaurantdive.com/news/wendys-deploy-digital-menu-boards-drive-thru-ai-500-restaurants-2025/746977/",
+      "date_publication": "2025-02-13",
+      "consulte_le": "2026-07-11"
+    },
+    {
+      "ref": "S3",
+      "type": "presse",
+      "fiabilite": "T3_presse_etablie",
+      "titre": "Wendy's Plans Major Tech Investments to Improve Restaurant Order Accuracy and Speed",
+      "url": "https://restauranttechnologynews.com/2025/02/wendys-plans-major-tech-investments-to-improve-restaurant-order-accuracy-and-speed-and-accelerate-global-expansion/",
+      "date_publication": "2025-02-01",
+      "consulte_le": "2026-07-11"
+    }
+  ],
+  "fonctionnement_operationnel": {
+    "cadence": "Temps reel, a chaque commande passee au drive",
+    "opere_par": "Equipes restaurant pour la reprise et la preparation ; equipe digital Wendy's et Google Cloud pour le modele",
+    "signal_pilote": "Precision de comprehension vocale et taux de reprise humaine. Le modele doit gerer des millions de combinaisons de personnalisation ; s'il bute sur un accent, du bruit ou une demande hors menu, un equipier reprend.",
+    "etapes": [
+      {
+        "etape": "Prise de parole client",
+        "detail": "Le client commande au micro du drive.",
+        "acteur": "Client"
+      },
+      {
+        "etape": "Comprehension et suggestion",
+        "detail": "FreshAI comprend la commande, gere la personnalisation et propose des articles complementaires pour augmenter le panier.",
+        "acteur": "IA"
+      },
+      {
+        "etape": "Affichage et confirmation",
+        "detail": "La commande apparait sur le menu digital pour verification.",
+        "acteur": "Menu digital"
+      },
+      {
+        "etape": "Reprise humaine si besoin",
+        "detail": "Un equipier reprend la conversation en cas de blocage.",
+        "acteur": "Equipier"
+      },
+      {
+        "etape": "Preparation",
+        "detail": "La commande validee part en cuisine.",
+        "acteur": "Equipier"
+      }
+    ]
+  },
+  "schema_flow": {
+    "statut": "documente",
+    "noeuds": [
+      {
+        "id": "client",
+        "role_generique": "humain",
+        "label": "Client au drive"
+      },
+      {
+        "id": "micro",
+        "role_generique": "canal_conversationnel",
+        "label": "Micro et haut-parleur du drive"
+      },
+      {
+        "id": "freshai",
+        "role_generique": "modele_ia",
+        "label": "Agent vocal FreshAI",
+        "outil_documente": "FreshAI sur Google Cloud"
+      },
+      {
+        "id": "menu",
+        "role_generique": "site_app",
+        "label": "Menu digital"
+      },
+      {
+        "id": "equipier",
+        "role_generique": "humain",
+        "label": "Equipier restaurant"
+      }
+    ],
+    "liens": [
+      [
+        "client",
+        "micro",
+        "commande vocale"
+      ],
+      [
+        "micro",
+        "freshai"
+      ],
+      [
+        "freshai",
+        "menu",
+        "affichage et suggestion de vente"
+      ],
+      [
+        "freshai",
+        "equipier",
+        "reprise si blocage"
+      ],
+      [
+        "menu",
+        "client",
+        "confirmation"
+      ],
+      [
+        "equipier",
+        "menu",
+        "preparation"
+      ]
+    ]
+  },
+  "replication": {
+    "statut_epistemique": "infere",
+    "prerequis_data": [
+      "menu structure avec regles de personnalisation",
+      "enregistrements audio pour entrainer et evaluer l'ASR",
+      "catalogue d'articles complementaires pour la suggestion de vente"
+    ],
+    "prerequis_orga": [
+      "integration au POS et aux menus digitaux",
+      "process de reprise humaine",
+      "franchises embarquees"
+    ],
+    "stack_possible": [
+      "LLM et voice AI (Google Cloud, autres vendors)",
+      "menus digitaux connectes",
+      "POS integre"
+    ],
+    "premiere_etape": "Tester sur une poignee de restaurants avec reprise humaine par defaut, en mesurant precision et temps de service avant d'ouvrir aux franchises.",
+    "playbook": [
+      {
+        "action": "Structurer le menu et les regles de personnalisation en donnees exploitables par la machine.",
+        "livrable": "Menu structure avec combinaisons valides et regles de suggestion."
+      },
+      {
+        "action": "Integrer la chaine vocale (micro, ASR, LLM, TTS) dans un restaurant laboratoire, reprise humaine par defaut.",
+        "livrable": "Prototype prenant des commandes reelles sous supervision."
+      },
+      {
+        "action": "Etendre le pilote a une poignee de restaurants et mesurer.",
+        "livrable": "Tableau precision de commande / taux de reprise humaine / temps de service."
+      },
+      {
+        "action": "Integrer POS et menus digitaux, activer la suggestion de vente.",
+        "livrable": "Commande transmise en cuisine sans ressaisie, panier suivi."
+      },
+      {
+        "action": "Ouvrir le rollout aux franchises avec formation et support.",
+        "livrable": "Deploiement multi-restaurants avec suivi central des metriques."
+      }
+    ],
+    "equipe": "1 PM operations + equipe digital/IA (ou partenaire cloud) + equipes restaurant pour la reprise humaine + 1 responsable franchises"
+  },
+  "seo": {
+    "slug": "wendys-freshai-drive-2025",
+    "title": "Wendy's FreshAI : IA vocale au drive avec Google Cloud - cap sur 500 restaurants (2025)",
+    "meta_description": "FreshAI, l'IA vocale de prise de commande au drive de Wendy's batie avec Google Cloud, equipait plus de 160 restaurants debut 2025 avec une cible de plus de 500.",
+    "resume_citable": "Wendy's FreshAI, agent vocal de commande au drive developpe avec Google Cloud, equipait plus de 160 restaurants debut 2025 pour une cible de plus de 500, traitant des dizaines de milliers de commandes par jour.",
+    "faq": [
+      {
+        "q": "Avec qui Wendy's a-t-il developpe FreshAI ?",
+        "a": "Avec Google Cloud, dont les grands modeles de langage equipent l'agent vocal, en test depuis 2023."
+      },
+      {
+        "q": "Combien de restaurants sont equipes ?",
+        "a": "Plus de 160 restaurants debut 2025, avec une cible annoncee de plus de 500 restaurants sur l'annee."
+      }
+    ]
+  },
+  "logo_domain": "wendys.com",
+  "stack_technique": [
+    {
+      "nom": "Google Cloud",
+      "categorie": "plateforme",
+      "detail": "Partenaire technologique : les grands modeles de langage et briques vocales de FreshAI tournent sur Google Cloud.",
+      "url": "https://cloud.google.com"
+    },
+    {
+      "nom": "FreshAI",
+      "categorie": "outil",
+      "detail": "Agent vocal custom de Wendy's sur Google Cloud : comprehension de la commande, millions de combinaisons de personnalisation, suggestion d'articles complementaires.",
+      "url": "https://www.wendys.com"
+    },
+    {
+      "nom": "Chaine vocale ASR / TTS",
+      "categorie": "infra",
+      "detail": "Reconnaissance et synthese vocales au micro du drive, avec reprise humaine quand le modele bute (accent, bruit, hors menu).",
+      "url": "https://cloud.google.com"
+    },
+    {
+      "nom": "Menus digitaux et POS Wendy's",
+      "categorie": "infra",
+      "detail": "Affichage de la commande pour confirmation par le client et transmission en cuisine sans ressaisie.",
+      "url": "https://www.wendys.com"
+    }
+  ],
+  "media": {
+    "kind": "video",
+    "url": "https://www.youtube.com/watch?v=08tMUpaAjeg",
+    "source": "officielle",
+    "titre": "Wendy's FreshAI au drive, avec Google Cloud"
+  }
+}

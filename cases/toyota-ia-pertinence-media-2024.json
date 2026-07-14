@@ -1,0 +1,255 @@
+{
+  "id": "toyota-ia-pertinence-media-2024",
+  "type_fiche": "succes",
+  "marque": "Toyota",
+  "groupe": "Toyota Motor Corporation",
+  "industrie": "auto",
+  "marches_deploiement": [
+    "Danemark"
+  ],
+  "transposable_ue": {
+    "flag": "oui",
+    "note": "Cas deja opere dans l'UE (Danemark). Le dispositif s'appuie sur des signaux data proprietaires et achetes agreges pour piloter la diffusion search : la collecte et l'usage de ces signaux supposent une base legale RGPD et un consentement conforme au marche."
+  },
+  "metier": "marketing / media / acquisition",
+  "logo_domain": "toyota.com",
+  "agences": [
+    {
+      "nom": "EssenceMediacom",
+      "role": "Agence media (strategie search integree pilotee par IA)",
+      "source_ref": "S1"
+    }
+  ],
+  "axes": {
+    "levier": "acquisition",
+    "touchpoints": [
+      "recherche payante",
+      "site web",
+      "concession"
+    ],
+    "etape_parcours": "consideration",
+    "famille": "optimisation_automatisation",
+    "pattern": "optimisation media pilotee par IA a l'echelle (pertinence search en temps reel)",
+    "type_ia": [
+      "machine learning",
+      "optimisation predictive de la diffusion"
+    ],
+    "plateforme_stack": [
+      "Google Search",
+      "signaux data proprietaires et achetes",
+      "custom/in-house (agence)"
+    ],
+    "objectif_metrique": [
+      "taux de conversion",
+      "trafic en concession",
+      "part de marche"
+    ]
+  },
+  "implementation": "hybride",
+  "objectif_business": "Rendre la presence media de Toyota plus pertinente au moment de la recherche pour convertir davantage l'intention en visites concession et en ventes sur le marche danois.",
+  "points_cles": ["Media search pilote par IA vers une pertinence individualisee, avec l'agence EssenceMediacom.", "Milliers de signaux proprietaires et achetes, jusqu'a 400 000 ajustements par mois.", "+65% de taux de conversion et +23% de trafic en concession au Danemark.", "Preuve B, statut signaux mitiges, leadership documente de janvier a mai 2024."],
+  "description": "Sur le marche automobile danois (environ 1 million de recherches mensuelles), EssenceMediacom a bascule le media de Toyota d'un ciblage large vers une pertinence individualisee pilotee par IA. Le systeme exploite des milliers de signaux issus de plateformes proprietaires et achetees pour rattacher chaque recherche a l'etape de vie et au besoin reel derriere elle, puis associer le bon modele Toyota. Plutot que de s'en remettre aux algorithmes des plateformes, l'equipe applique jusqu'a 400 000 ajustements par mois sur le timing et le dosage de la diffusion. L'objectif est de servir le bon message au bon moment sur Google Search, ce qui a soutenu la position de Toyota comme premiere marque de vehicules particuliers au Danemark chaque mois de janvier a mai 2024. A noter, sur l'ensemble de l'annee 2024, Volkswagen a repris la premiere place du marche danois : la mention de leadership de Toyota porte sur la fenetre janvier-mai 2024.",
+  "resultats": [
+    {
+      "metrique": "Ajustements media mensuels",
+      "valeur": "jusqu'a 400 000",
+      "citation_exacte": "we have made up to 400,000 adjustments per month",
+      "source_ref": "S1"
+    },
+    {
+      "metrique": "Trafic en concession",
+      "valeur": "+23%",
+      "citation_exacte": "increased the number of physical store visits by as much as 23%",
+      "source_ref": "S1"
+    },
+    {
+      "metrique": "Taux de conversion",
+      "valeur": "+65%",
+      "citation_exacte": "a 65% rise in conversion rates",
+      "source_ref": "S1"
+    },
+    {
+      "metrique": "Marche danois (vehicules particuliers), chaque mois de janvier a mai 2024",
+      "valeur": "1re place",
+      "citation_exacte": "best-selling car brand for passenger vehicles in every month from January to May 2024",
+      "source_ref": "S1"
+    }
+  ],
+  "niveau_preuve": {
+    "niveau": "B",
+    "justification": "Etude de cas d'agence chiffree (metriques media et conversion nommees), avec un resultat de marche (leadership mensuel danois) corrobore par une source marche independante confirmant la progression de Toyota au Danemark en 2024."
+  },
+  "dates": {
+    "lancement": "Campagne 2024 (leadership mensuel documente de janvier a mai 2024)",
+    "derniere_confirmation_activite": "Mai 2024 (fin de la fenetre de leadership documentee dans le cas)",
+    "verifie_le": "2026-07-12",
+    "revoir_apres": "2026-10-12"
+  },
+  "statut_vivant": {
+    "statut": "signaux_mitiges",
+    "note": "Le dispositif media pilote par IA est documente sur janvier-mai 2024 ; la relation agence-marque et la mecanique de pertinence search sont un mode operatoire courant, vraisemblablement toujours en place, mais aucune confirmation publique 2025-2026 n'a ete trouvee. Volkswagen a repris la tete du marche danois sur l'annee pleine 2024."
+  },
+  "sources": [
+    {
+      "ref": "S1",
+      "type": "customer_story_plateforme",
+      "fiabilite": "T2_officiel_interesse",
+      "titre": "AI-driven relevance makes Toyota the best-selling passenger car brand",
+      "url": "https://www.essencemediacom.com/case-studies/toyota-best-selling-car-brand",
+      "consulte_le": "2026-07-12"
+    },
+    {
+      "ref": "S2",
+      "type": "presse",
+      "fiabilite": "T4_secondaire",
+      "titre": "Denmark Full Year 2024: Volkswagen back to #1 brand, Tesla Model Y and VW ID.4 on top",
+      "url": "https://bestsellingcarsblog.com/2025/01/denmark-full-year-2024-volkswagen-back-to-1-brand-tesla-model-y-and-vw-id-4-on-top/",
+      "consulte_le": "2026-07-12"
+    }
+  ],
+  "fonctionnement_operationnel": {
+    "cadence": "Optimisation continue de la diffusion search, avec des ajustements de timing et de dosage a haute frequence (jusqu'a 400 000 par mois)",
+    "opere_par": "Equipe media de l'agence EssenceMediacom pour Toyota",
+    "signal_pilote": "Les signaux d'intention derriere chaque recherche (etape de vie, besoin) croises aux signaux proprietaires et achetes ; sans ces signaux, le rattachement recherche-modele et le pilotage fin de la diffusion s'effondrent.",
+    "etapes": [
+      {
+        "etape": "Agreger les signaux",
+        "detail": "Rassembler des milliers de signaux issus de plateformes proprietaires et achetees pour lire l'intention derriere chaque recherche.",
+        "acteur": "equipe data / agence"
+      },
+      {
+        "etape": "Associer recherche et modele",
+        "detail": "Utiliser l'IA pour rattacher chaque requete a l'etape de vie et au besoin, puis au bon modele Toyota.",
+        "acteur": "IA"
+      },
+      {
+        "etape": "Ajuster la diffusion en continu",
+        "detail": "Appliquer le timing et le dosage adequats plutot que de deleguer aux algorithmes des plateformes, jusqu'a 400 000 ajustements par mois.",
+        "acteur": "IA / equipe media"
+      },
+      {
+        "etape": "Mesurer conversion et trafic concession",
+        "detail": "Suivre l'impact sur les conversions et les visites en concession pour reallouer la pression media.",
+        "acteur": "equipe media / marketing"
+      }
+    ]
+  },
+  "schema_flow": {
+    "statut": "approche_type",
+    "noeuds": [
+      {
+        "id": "signaux",
+        "role_generique": "data_source",
+        "label": "Signaux proprietaires et achetes (intention, etape de vie)"
+      },
+      {
+        "id": "recherche",
+        "role_generique": "data_source",
+        "label": "Requetes de recherche du marche automobile"
+      },
+      {
+        "id": "ia",
+        "role_generique": "modele_ia",
+        "label": "Moteur IA de pertinence (matching requete-modele, dosage)"
+      },
+      {
+        "id": "search",
+        "role_generique": "paid_platform",
+        "label": "Diffusion Google Search",
+        "outil_documente": "Google Search"
+      },
+      {
+        "id": "client",
+        "role_generique": "site_app",
+        "label": "Site Toyota et concessions (Danemark)"
+      },
+      {
+        "id": "ops",
+        "role_generique": "humain",
+        "label": "Equipe media EssenceMediacom"
+      }
+    ],
+    "liens": [
+      [
+        "signaux",
+        "ia"
+      ],
+      [
+        "recherche",
+        "ia"
+      ],
+      [
+        "ia",
+        "search"
+      ],
+      [
+        "search",
+        "client"
+      ],
+      [
+        "client",
+        "signaux",
+        "boucle de mesure conversion et trafic"
+      ],
+      [
+        "ops",
+        "ia",
+        "cadrage et ajustements media"
+      ]
+    ]
+  },
+  "replication": {
+    "statut_epistemique": "infere",
+    "prerequis_data": [
+      "Acces a des signaux d'intention issus de plateformes proprietaires (site, CRM) et de sources achetees",
+      "Suivi fiable des conversions en ligne et, si possible, des visites en concession",
+      "Capacite a segmenter les recherches par etape de vie et besoin plutot que par audience large"
+    ],
+    "prerequis_orga": [
+      "Une equipe media capable d'operer une optimisation search a haute frequence plutot que de deleguer entierement aux algorithmes",
+      "Alignement marketing / data sur une definition commune de la pertinence et de la conversion",
+      "Base legale et consentement RGPD pour l'usage des signaux data"
+    ],
+    "stack_possible": [
+      "Google Search / Google Ads",
+      "Couche de scoring d'intention et de matching requete-produit (in-house ou agence)",
+      "Outil de mesure de conversion et de trafic en concession"
+    ],
+    "playbook": [
+      {
+        "action": "Cartographier les signaux d'intention disponibles et les etapes de vie a couvrir",
+        "livrable": "Referentiel des signaux et des segments de besoin par modele"
+      },
+      {
+        "action": "Construire la logique de matching entre requete de recherche et modele pertinent",
+        "livrable": "Regles ou modele associant chaque requete a une offre"
+      },
+      {
+        "action": "Passer d'un ciblage large a une diffusion search ajustee en continu",
+        "livrable": "Dispositif media pilote a haute frequence sur le timing et le dosage"
+      },
+      {
+        "action": "Mettre en place la mesure conversion et trafic concession pour reallouer la pression",
+        "livrable": "Boucle de lecture reliant depense media, conversions et visites"
+      }
+    ],
+    "equipe": "Un responsable media search, un profil data pour l'agregation et le scoring des signaux, un relais marketing marque pour la coherence modele-message.",
+    "premiere_etape": "Identifier les signaux d'intention exploitables (recherche, CRM, data achetee) et definir comment lire l'etape de vie derriere une requete : c'est ce qui permet de sortir du ciblage large."
+  },
+  "seo": {
+    "slug": "toyota-ia-pertinence-media-2024",
+    "title": "Toyota : media search pilote par IA - +65% de conversion au Danemark (2024)",
+    "meta_description": "Toyota et EssenceMediacom pilotent le media search par IA au Danemark : jusqu'a 400 000 ajustements/mois, +23% de trafic concession et +65% de conversion.",
+    "resume_citable": "En 2024 au Danemark, Toyota et l'agence EssenceMediacom ont pilote le media search par IA avec jusqu'a 400 000 ajustements par mois, obtenant +23% de visites en concession et +65% de taux de conversion, Toyota etant premiere marque de vehicules particuliers chaque mois de janvier a mai 2024.",
+    "faq": [
+      {
+        "q": "Quelle IA Toyota a-t-elle utilisee au Danemark ?",
+        "a": "Une couche d'IA appliquee au media search qui lit l'intention derriere chaque recherche (etape de vie, besoin) a partir de milliers de signaux proprietaires et achetes, puis associe le bon modele et ajuste la diffusion en continu."
+      },
+      {
+        "q": "Quelle est l'ampleur du dispositif ?",
+        "a": "Jusqu'a 400 000 ajustements media par mois, avec un impact mesure de +23% sur les visites en concession et +65% sur le taux de conversion, sur un marche d'environ 1 million de recherches mensuelles."
+      }
+    ]
+  }
+}

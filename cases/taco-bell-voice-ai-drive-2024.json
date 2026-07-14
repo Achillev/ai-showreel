@@ -1,0 +1,307 @@
+{
+  "id": "taco-bell-voice-ai-drive-2024",
+  "type_fiche": "succes",
+  "marque": "Taco Bell",
+  "groupe": "Yum! Brands",
+  "industrie": "food_beverage",
+  "marches_deploiement": [
+    "Etats-Unis"
+  ],
+  "transposable_ue": {
+    "flag": "oui_avec_adaptations",
+    "note": "Enregistrement et traitement de la voix des clients : information et base legale RGPD requises, conservation limitee. L'AI Act impose la transparence sur le fait que le client parle a une IA. Multilinguisme et accents locaux a re-entrainer par marche."
+  },
+  "metier": "operations restaurant / service client / prise de commande",
+  "intervenants": [
+    {
+      "nom": "Lawrence Kim",
+      "role": "Chief Innovation Officer, Yum! Brands",
+      "source_ref": "S1"
+    },
+    {
+      "nom": "Dane Mathews",
+      "role": "Global Chief Digital and Technology Officer, Taco Bell",
+      "source_ref": "S1"
+    }
+  ],
+  "agences": [
+    {
+      "nom": "Omilia",
+      "role": "Fournisseur de la solution Voice AI de prise de commande au drive",
+      "source_ref": "S2"
+    }
+  ],
+  "axes": {
+    "levier": "activation_conversion",
+    "touchpoints": [
+      "drive-thru",
+      "micro et haut-parleur de commande",
+      "menu digital"
+    ],
+    "etape_parcours": "achat",
+    "famille": "conversation",
+    "pattern": "agent vocal de prise de commande au drive-thru integre au POS",
+    "type_ia": [
+      "reconnaissance vocale (ASR)",
+      "traitement du langage naturel",
+      "synthese vocale",
+      "grands modeles de langage"
+    ],
+    "plateforme_stack": [
+      "Omilia (Voice AI)",
+      "Yum! Poseidon POS",
+      "menus digitaux"
+    ],
+    "objectif_metrique": [
+      "temps de service",
+      "precision de commande",
+      "charge de travail des equipiers",
+      "retention des employes"
+    ]
+  },
+  "implementation": "hybride",
+  "objectif_business": "Prendre les commandes au drive par une IA vocale pour decharger les equipiers, tenir un service rapide et coherent aux heures de pointe, et liberer le personnel pour l'accueil et la preparation.",
+  "points_cles": ["IA vocale de prise de commande au drive-thru, integree au POS et aux menus digitaux.", "Solution Omilia Voice AI branchee sur le POS Poseidon de Yum!.", "Environ 890 restaurants dans 38 Etats, temps de transaction a parite ou plus rapide.", "Preuve A, statut signaux mitiges (incident viral ete 2025, rollout ralenti puis repris)."],
+  "description": "Taco Bell deploie une IA vocale, fournie par Omilia, qui prend les commandes au drive-thru. Le systeme comprend le langage naturel, gere les modifications de commande sans script fige, s'adapte au stock en temps reel et aux offres limitees, filtre le bruit de la route et gere differents accents. Il est branche sur le POS proprietaire Poseidon de Yum! et sur les menus digitaux. Parti de plus de 100 restaurants dans 13 Etats a l'ete 2024, le deploiement a atteint environ 890 restaurants dans 38 Etats. Le rollout a connu un accroc mediatise a l'ete 2025 (commandes aberrantes poussees par des clients pour pieger le systeme), qui a conduit Yum! a temporiser avant de reprendre l'expansion.",
+  "resultats": [
+    {
+      "metrique": "Restaurants Taco Bell US equipes de l'IA vocale, dans 38 Etats",
+      "valeur": "environ 890",
+      "citation_exacte": "over 890 U.S. restaurant units across 38 states",
+      "source_ref": "S2"
+    },
+    {
+      "metrique": "Perimetre initial du deploiement, dans 13 Etats (juillet 2024)",
+      "valeur": "100+ drive-thru",
+      "citation_exacte": "more than 100 Taco Bell U.S. drive-thrus across 13 states",
+      "source_ref": "S1"
+    },
+    {
+      "metrique": "Temps de transaction au drive, contre la prise de commande classique",
+      "valeur": "parite ou plus rapide",
+      "citation_exacte": "on par with or faster than traditional order-taking methods",
+      "source_ref": "S2"
+    }
+  ],
+  "niveau_preuve": {
+    "niveau": "A",
+    "justification": "Deploiement a l'echelle annonce par communique officiel Yum! Brands (100+ restaurants, 13 Etats en 2024) et confirme en expansion continue par la presse restauration etablie (environ 890 restaurants, 38 Etats). Source primaire de la marque plus couverture presse concordante."
+  },
+  "dates": {
+    "lancement": "Partenariat Omilia depuis 2023 ; expansion annoncee juillet 2024",
+    "derniere_confirmation_activite": "2026 (environ 890 restaurants dans 38 Etats)",
+    "verifie_le": "2026-07-11",
+    "revoir_apres": "2027-01-11"
+  },
+  "statut_vivant": {
+    "statut": "signaux_mitiges",
+    "note": "Le deploiement est bien vivant et a poursuivi son expansion jusqu'a environ 890 restaurants. Mais l'ete 2025 a vu un incident viral (clients passant des commandes absurdes pour pieger l'IA) qui a pousse Yum! a ralentir et revoir le rollout avant de reprendre. La technologie tient sur les commandes standard, moins sur les commandes tres personnalisees."
+  },
+  "sources": [
+    {
+      "ref": "S1",
+      "type": "document_officiel_sec",
+      "fiabilite": "T1_primaire",
+      "titre": "Yum! Brands to Expand Voice AI Technology to Hundreds of Taco Bell U.S. Drive-Thru Locations in 2024",
+      "url": "https://investors.yum.com/news-events/financial-releases/news-details/2024/Yum-Brands-to-Expand-Voice-AI-Technology-to-Hundreds-of-Taco-Bell-U.S.-Drive-Thru-Locations-in-2024-with-a-Future-Vision-to-Bring-the-Technology-to-Its-Brands-Drive-Thrus-Around-the-World/default.aspx",
+      "date_publication": "2024-07-31",
+      "consulte_le": "2026-07-11"
+    },
+    {
+      "ref": "S2",
+      "type": "presse",
+      "fiabilite": "T3_presse_etablie",
+      "titre": "Taco Bell's drive-thru voice AI expands to nearly 900 restaurants",
+      "url": "https://www.nrn.com/quick-service/taco-bell-s-drive-thru-voice-ai-expands-to-nearly-900-restaurants",
+      "consulte_le": "2026-07-11"
+    },
+    {
+      "ref": "S3",
+      "type": "presse",
+      "fiabilite": "T3_presse_etablie",
+      "titre": "Taco Bell to roll out AI drive-thru ordering in hundreds of locations by end of year",
+      "url": "https://www.cnbc.com/2024/07/31/taco-bell-to-roll-out-ai-drive-thru-ordering-in-hundreds-of-locations.html",
+      "date_publication": "2024-07-31",
+      "consulte_le": "2026-07-11"
+    }
+  ],
+  "fonctionnement_operationnel": {
+    "cadence": "Temps reel, a chaque commande passee au drive",
+    "opere_par": "Equipes restaurant pour l'escalade et la preparation ; equipe digital Taco Bell/Yum! et Omilia pour le modele et l'integration",
+    "signal_pilote": "Precision de reconnaissance vocale et taux d'escalade vers un equipier. Si l'IA ne gere pas les accents, le bruit ou les modifications complexes, l'experience se degrade et le personnel doit reprendre la main.",
+    "etapes": [
+      {
+        "etape": "Prise de parole client",
+        "detail": "Le client passe sa commande au micro du drive.",
+        "acteur": "Client"
+      },
+      {
+        "etape": "Comprehension et gestion de la commande",
+        "detail": "L'IA vocale transcrit, comprend, gere les modifications et s'adapte au stock et aux offres du moment.",
+        "acteur": "IA"
+      },
+      {
+        "etape": "Confirmation visuelle",
+        "detail": "La commande s'affiche sur le menu digital pour verification par le client.",
+        "acteur": "Menu digital"
+      },
+      {
+        "etape": "Envoi en cuisine",
+        "detail": "La commande part vers le POS Poseidon.",
+        "acteur": "IA / POS"
+      },
+      {
+        "etape": "Escalade humaine",
+        "detail": "En cas de blocage ou de commande complexe, un equipier reprend la conversation.",
+        "acteur": "Equipier"
+      }
+    ]
+  },
+  "schema_flow": {
+    "statut": "documente",
+    "noeuds": [
+      {
+        "id": "client",
+        "role_generique": "humain",
+        "label": "Client au drive"
+      },
+      {
+        "id": "micro",
+        "role_generique": "canal_conversationnel",
+        "label": "Micro et haut-parleur du drive"
+      },
+      {
+        "id": "voiceai",
+        "role_generique": "modele_ia",
+        "label": "IA vocale de prise de commande",
+        "outil_documente": "Omilia Voice AI"
+      },
+      {
+        "id": "menu",
+        "role_generique": "site_app",
+        "label": "Menu digital"
+      },
+      {
+        "id": "pos",
+        "role_generique": "crm",
+        "label": "POS Poseidon (Yum!)"
+      },
+      {
+        "id": "equipier",
+        "role_generique": "humain",
+        "label": "Equipier restaurant"
+      }
+    ],
+    "liens": [
+      [
+        "client",
+        "micro",
+        "commande vocale"
+      ],
+      [
+        "micro",
+        "voiceai"
+      ],
+      [
+        "voiceai",
+        "menu",
+        "affichage de la commande"
+      ],
+      [
+        "voiceai",
+        "pos",
+        "envoi de la commande"
+      ],
+      [
+        "voiceai",
+        "equipier",
+        "escalade si blocage"
+      ],
+      [
+        "pos",
+        "equipier",
+        "preparation"
+      ]
+    ]
+  },
+  "replication": {
+    "statut_epistemique": "infere",
+    "prerequis_data": [
+      "menu structure et regles de personnalisation",
+      "etat du stock et offres limitees en temps reel",
+      "enregistrements audio pour entrainer et evaluer l'ASR"
+    ],
+    "prerequis_orga": [
+      "integration au POS existant",
+      "process d'escalade vers un humain",
+      "adhesion des franchises",
+      "reseau de menus digitaux"
+    ],
+    "stack_possible": [
+      "voice AI vendor (Omilia, Google Cloud)",
+      "POS integre",
+      "menus digitaux connectes"
+    ],
+    "premiere_etape": "Piloter sur quelques restaurants avec escalade humaine systematique, en mesurant precision de commande et temps de service avant d'elargir.",
+    "playbook": [
+      {
+        "action": "Structurer le menu et les regles de personnalisation, cartographier l'integration POS et l'etat du stock temps reel.",
+        "livrable": "Menu structure exploitable par le vendor voice AI et spec d'integration POS."
+      },
+      {
+        "action": "Integrer la voice AI au POS et aux menus digitaux sur 2-3 restaurants pilotes, avec escalade humaine systematique.",
+        "livrable": "Pilote fonctionnel : commande vocale de bout en bout, equipier en filet."
+      },
+      {
+        "action": "Mesurer precision de commande, temps de service et taux d'escalade contre la prise de commande humaine.",
+        "livrable": "Tableau de bord comparatif par restaurant pilote."
+      },
+      {
+        "action": "Durcir le systeme (bruit, accents, commandes hors norme ou de sabotage) et figer les regles d'escalade.",
+        "livrable": "Playbook d'exploitation par restaurant, incidents documentes."
+      },
+      {
+        "action": "Deployer par vagues avec l'adhesion des franchises, en suivant les memes metriques.",
+        "livrable": "Plan de rollout multi-sites et suivi hebdomadaire des indicateurs."
+      }
+    ],
+    "equipe": "1 PM operations restaurant + 1 integrateur POS + le vendor voice AI ; en exploitation, les equipiers assurent l'escalade et la preparation."
+  },
+  "seo": {
+    "slug": "taco-bell-voice-ai-drive-2024",
+    "title": "Taco Bell : IA vocale au drive-thru - environ 890 restaurants dans 38 Etats (2024-2026)",
+    "meta_description": "Taco Bell (Yum! Brands) prend les commandes au drive par une IA vocale Omilia deployee dans environ 890 restaurants sur 38 Etats, integree au POS Poseidon.",
+    "resume_citable": "Taco Bell a deploie l'IA vocale de prise de commande au drive-thru (Omilia) dans environ 890 restaurants sur 38 Etats, avec des temps de transaction a parite ou plus rapides que la prise de commande humaine.",
+    "faq": [
+      {
+        "q": "Qui fournit l'IA vocale de Taco Bell ?",
+        "a": "Omilia, partenaire depuis 2023, dont la solution est integree au POS proprietaire Poseidon de Yum! Brands et aux menus digitaux."
+      },
+      {
+        "q": "Le deploiement a-t-il rencontre des problemes ?",
+        "a": "Oui. A l'ete 2025, des clients ont pousse des commandes absurdes pour pieger le systeme, ce qui a conduit Yum! a ralentir et revoir le rollout avant de le reprendre."
+      }
+    ]
+  },
+  "logo_domain": "tacobell.com",
+  "stack_technique": [
+    {
+      "nom": "Omilia Voice AI",
+      "categorie": "plateforme",
+      "detail": "Solution de prise de commande vocale au drive : ASR, comprehension du langage naturel, gestion des modifications de commande, filtrage du bruit et des accents, synthese vocale.",
+      "url": "https://omilia.com"
+    },
+    {
+      "nom": "Yum! Poseidon POS",
+      "categorie": "infra",
+      "detail": "POS proprietaire de Yum! Brands sur lequel la commande vocale est envoyee en cuisine.",
+      "url": "https://www.yum.com"
+    },
+    {
+      "nom": "Menus digitaux drive-thru",
+      "categorie": "infra",
+      "detail": "Ecrans de confirmation visuelle de la commande, synchronises avec le stock temps reel et les offres limitees.",
+      "url": "https://www.tacobell.com"
+    }
+  ]
+}

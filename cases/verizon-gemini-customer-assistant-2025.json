@@ -1,0 +1,294 @@
+{
+  "type_fiche": "succes",
+  "id": "verizon-gemini-customer-assistant-2025",
+  "marque": "Verizon",
+  "industrie": "telco",
+  "marches_deploiement": [
+    "Etats-Unis (28 000 conseillers care et boutiques)"
+  ],
+  "transposable_ue": {
+    "flag": "oui_avec_adaptations",
+    "note": "L'assistant lit des documents internes et le contexte client pour aider un conseiller humain, pas de decision automatisee sur le client. En UE, cadrer le traitement des donnees client (RGPD) et l'usage d'un LLM sur des donnees de facturation. AI Act : risque limite, obligation de transparence si des offres sont poussees automatiquement."
+  },
+  "metier": "Service client / care & vente assistee",
+  "marque_linkedin": "https://www.linkedin.com/company/verizon",
+  "axes": {
+    "levier": "activation_conversion",
+    "touchpoints": [
+      "centres de relation client (appels, chat)",
+      "boutiques Verizon",
+      "poste de travail conseiller (Agent Assist Panel)"
+    ],
+    "etape_parcours": "post-achat / service et upsell",
+    "famille": "conversation",
+    "pattern": "Agent assist genAI : un LLM branche sur la base documentaire interne et le contexte client souffle au conseiller la reponse et l'offre pertinente en temps reel",
+    "type_ia": [
+      "LLM generatif (Google Gemini)",
+      "RAG sur base documentaire interne",
+      "agents conversationnels Vertex AI"
+    ],
+    "plateforme_stack": [
+      "Google Cloud Vertex AI",
+      "Gemini",
+      "Agent Assist Panel / Customer Engagement Suite"
+    ],
+    "objectif_metrique": [
+      "taux de reponse aux demandes (answerability)",
+      "ventes generees par le care",
+      "duree de traitement d'appel"
+    ]
+  },
+  "implementation": "plateforme",
+  "objectif_business": "Donner a chaque conseiller une reponse fiable en direct pour raccourcir les appels, mieux resoudre, et transformer le service en canal de vente pendant que la base perd des abonnes.",
+  "points_cles": ["Agent assist genAI qui souffle reponse et offre pertinente au conseiller en temps reel.", "Gemini sur Vertex AI, RAG sur environ 15 000 documents internes.", "95% de demandes couvertes, ventes via le care en hausse de pres de 40%.", "Preuve B, statut confirme, 28 000 conseillers et boutiques equipes."],
+  "description": "Verizon a branche Gemini sur ses plateformes de care via Vertex AI. Le conseiller garde la main, mais un assistant conversationnel appele Personal Research Assistant va chercher la reponse dans environ 15 000 documents internes et le contexte du client, puis la restitue en temps reel au lieu de laisser l'agent fouiller une base de connaissances. Un second agent, Problem Solver, guide le depannage. Le systeme couvre 28 000 conseillers et boutiques. Verizon annonce 95 pour cent de demandes auxquelles l'assistant sait repondre. Sur le trimestre, les ventes passees par l'equipe care ont bondi de pres de 40 pour cent : Verizon a requalifie ses agents de care en agents capables de vendre, pendant que le groupe perdait des abonnes postpayes apres des hausses de prix. Le deploiement s'inscrit dans cinq ans de collaboration avec Google Cloud.",
+  "fonctionnement_operationnel": {
+    "cadence": "Temps reel pendant l'interaction. La base documentaire est reindexee en continu au fil des mises a jour produits et tarifs.",
+    "opere_par": "Les equipes care et retail au quotidien, une equipe data/plateforme cote Verizon pour l'indexation et la qualite des reponses, Google Cloud pour l'infrastructure.",
+    "signal_pilote": "La qualite et la fraicheur de la base documentaire indexee. Si un document est perime ou manquant, l'assistant repond faux avec assurance et le conseiller propage l'erreur.",
+    "etapes": [
+      {
+        "etape": "Indexer la connaissance interne",
+        "detail": "Environ 15 000 documents (procedures, offres, tarifs, depannage) sont mis a disposition du LLM en RAG. Sans cette base propre, l'assistant hallucine.",
+        "acteur": "Equipe data / plateforme"
+      },
+      {
+        "etape": "Assister le conseiller en direct",
+        "detail": "Pendant l'appel ou le chat, l'assistant lit l'intention et le contexte client, remonte la reponse et l'offre pertinente dans l'Agent Assist Panel.",
+        "acteur": "IA / Gemini"
+      },
+      {
+        "etape": "Garder l'humain decideur",
+        "detail": "Le conseiller valide, reformule et decide de l'offre. L'assistant propose, il ne conclut pas la vente a sa place.",
+        "acteur": "Conseiller care / vente"
+      },
+      {
+        "etape": "Mesurer answerability et ventes",
+        "detail": "Suivi du taux de demandes couvertes, de la duree d'appel et des ventes issues du care pour arbitrer l'extension.",
+        "acteur": "Equipe data + management care"
+      }
+    ]
+  },
+  "resultats": [
+    {
+      "metrique": "Ventes via l'equipe care",
+      "valeur": "pres de +40%",
+      "citation_exacte": "sales through its 28,000-strong customer service team surged nearly 40%",
+      "source_ref": "S3"
+    },
+    {
+      "metrique": "Taux de reponse de l'assistant",
+      "valeur": "95%",
+      "citation_exacte": "95% comprehensive answerability for customer inquiries",
+      "source_ref": "S1"
+    },
+    {
+      "metrique": "Conseillers care et boutiques equipes",
+      "valeur": "28 000",
+      "citation_exacte": "28,000 of Verizon's customer care reps and retail stores",
+      "source_ref": "S1"
+    }
+  ],
+  "niveau_preuve": {
+    "niveau": "B",
+    "justification": "Chiffres de deploiement confirmes par le communique officiel Google Cloud (28 000 conseillers, 95 pour cent d'answerability) et hausse de ventes de pres de 40 pour cent rapportee autour des resultats T1 2025 de Verizon. Communique vendor plus reprise presse : solide, mais l'answerability est une mesure interne et le +40 pour cent n'isole pas la part strictement attribuable a l'IA."
+  },
+  "dates": {
+    "lancement": "Pilote juillet 2024, deploiement complet janvier 2025 ; annonce conjointe Google Cloud le 9 avril 2025",
+    "derniere_confirmation_activite": "2025-04 (communique Google Cloud et resultats T1 2025)",
+    "verifie_le": "2026-07-11",
+    "revoir_apres": "2027-01-11"
+  },
+  "statut_vivant": {
+    "statut": "confirme",
+    "note": "Deploiement a l'echelle nationale confirme en avril 2025 dans un communique conjoint Google Cloud / Verizon, adosse a un partenariat pluriannuel. Aucun signal de retrait."
+  },
+  "sources": [
+    {
+      "ref": "S1",
+      "type": "blog_officiel",
+      "titre": "Google Cloud and Verizon Drive Customer Experience Improvements with Gemini Integration",
+      "url": "https://www.googlecloudpresscorner.com/2025-04-09-Google-Cloud-and-Verizon-Drive-Customer-Experience-Improvements-for-Verizon-Customers-with-Gemini-Integration",
+      "date_publication": "2025-04-09",
+      "consulte_le": "2026-07-11",
+      "fiabilite": "T2_officiel_interesse"
+    },
+    {
+      "ref": "S2",
+      "type": "presse",
+      "titre": "Verizon Teams Up with Google to Give 28,000 Customer Support Reps a Personal Research Assistant",
+      "url": "https://www.cxtoday.com/contact-center/verizon-teams-up-with-google-to-give-28000-customer-support-reps-a-personal-research-assistant/",
+      "date_publication": "2025-04-09",
+      "consulte_le": "2026-07-11",
+      "fiabilite": "T3_presse_etablie"
+    },
+    {
+      "ref": "S3",
+      "type": "presse",
+      "titre": "Verizon AI boosts sales amid customer churn (reprenant Reuters, resultats T1 2025)",
+      "url": "https://cresta.com/news/verizon-ai-boosts-sales-amid-customer-churn",
+      "date_publication": "2025-04",
+      "consulte_le": "2026-07-11",
+      "fiabilite": "T4_secondaire"
+    }
+  ],
+  "schema_flow": {
+    "statut": "documente",
+    "noeuds": [
+      {
+        "id": "docs",
+        "role_generique": "data_source",
+        "label": "Base documentaire interne (~15 000 documents) + contexte client",
+        "outil_documente": "Corpus Verizon indexe pour RAG"
+      },
+      {
+        "id": "llm",
+        "role_generique": "modele_ia",
+        "label": "Assistant conversationnel (recherche + reponse en direct)",
+        "outil_documente": "Gemini sur Vertex AI"
+      },
+      {
+        "id": "panel",
+        "role_generique": "site_app",
+        "label": "Agent Assist Panel (poste conseiller)"
+      },
+      {
+        "id": "agent",
+        "role_generique": "humain",
+        "label": "Conseiller care / vente qui valide et pousse l'offre"
+      },
+      {
+        "id": "client",
+        "role_generique": "canal_conversationnel",
+        "label": "Client en appel, chat ou boutique"
+      }
+    ],
+    "liens": [
+      [
+        "docs",
+        "llm"
+      ],
+      [
+        "llm",
+        "panel"
+      ],
+      [
+        "panel",
+        "agent"
+      ],
+      [
+        "agent",
+        "client"
+      ],
+      [
+        "client",
+        "llm",
+        "nouvelle question -> nouvelle recherche"
+      ]
+    ]
+  },
+  "replication": {
+    "statut_epistemique": "infere",
+    "prerequis_data": [
+      "Base documentaire interne propre et a jour (procedures, offres, tarifs, depannage)",
+      "Acces au contexte client en temps reel dans le poste conseiller",
+      "Gouvernance RGPD sur les donnees client exposees au LLM"
+    ],
+    "prerequis_orga": [
+      "Equipe care/retail formee a travailler avec un assistant",
+      "Process d'entretien de la base documentaire (qui la maintient a jour)"
+    ],
+    "stack_possible": [
+      "Vertex AI + Gemini, ou Azure OpenAI, ou un RAG maison sur un LLM du marche",
+      "Brique agent assist integree au CRM / poste conseiller",
+      "Moteur de recherche vectoriel sur la doc interne"
+    ],
+    "premiere_etape": "Choisir un domaine de care a fort volume, indexer la doc correspondante en RAG, et mesurer answerability et duree d'appel sur un groupe de conseillers pilote contre un groupe temoin.",
+    "playbook": [
+      {
+        "action": "Choisir un domaine de care a fort volume et auditer la documentation associee (fraicheur, proprietaires, trous).",
+        "livrable": "Inventaire documentaire avec responsables et statut de mise a jour."
+      },
+      {
+        "action": "Indexer la documentation en RAG, brancher le LLM et tester l'answerability en interne sur un jeu de questions reelles.",
+        "livrable": "Assistant en sandbox avec taux de reponse mesure question par question."
+      },
+      {
+        "action": "Lancer le pilote sur un groupe de conseillers contre un groupe temoin.",
+        "livrable": "Lecture duree d'appel, answerability et satisfaction, pilote vs temoin."
+      },
+      {
+        "action": "Integrer le contexte client et les offres dans le panel conseiller, l'humain gardant la decision.",
+        "livrable": "Assistant qui propose l'offre pertinente dans le poste de travail."
+      },
+      {
+        "action": "Installer le process d'entretien de la base documentaire et planifier l'extension aux autres domaines.",
+        "livrable": "Rituel de mise a jour documentaire + plan de rollout chiffre."
+      }
+    ],
+    "equipe": "1 PM + 1-2 ingenieurs data/RAG + 1 responsable base de connaissance + managers care pour le pilote"
+  },
+  "seo": {
+    "slug": "verizon-gemini-agent-assist-care-2025",
+    "title": "Verizon : agent assist Gemini sur 28 000 conseillers - ventes care +40% (2025)",
+    "meta_description": "Verizon a deploye un assistant Gemini sur 28 000 conseillers care et boutiques : 95% de demandes couvertes et des ventes via le care en hausse de pres de 40%.",
+    "resume_citable": "Verizon a equipe 28 000 conseillers care et boutiques d'un assistant Gemini (Vertex AI) branche sur 15 000 documents internes, atteignant 95% de reponses couvertes et une hausse des ventes via le care de pres de 40% au T1 2025.",
+    "faq": [
+      {
+        "q": "L'IA remplace-t-elle les conseillers ?",
+        "a": "Non : elle assiste un humain qui garde la main. Verizon a requalifie ses conseillers care en vendeurs plutot que de reduire les effectifs."
+      },
+      {
+        "q": "Le +40% de ventes vient-il uniquement de l'IA ?",
+        "a": "Le chiffre porte sur les ventes via l'equipe care sur le trimestre. L'assistant y contribue avec la requalification des agents, mais la part strictement imputable a l'IA n'est pas isolee publiquement."
+      }
+    ]
+  },
+  "agences": [
+    {
+      "nom": "Google Cloud",
+      "role": "Fournisseur de la plateforme IA (Vertex AI, Gemini, Agent Assist)",
+      "source_ref": "S1"
+    }
+  ],
+  "intervenants": [
+    {
+      "nom": "Sampath Sowmyanarayan",
+      "role": "CEO Verizon Consumer Group (cite sur les resultats du deploiement)",
+      "source_ref": "S2"
+    }
+  ],
+  "logo_domain": "verizon.com",
+  "stack_technique": [
+    {
+      "nom": "Google Gemini",
+      "categorie": "llm",
+      "detail": "LLM qui genere les reponses de l'assistant conversationnel (Personal Research Assistant) et du guide de depannage (Problem Solver).",
+      "url": "https://cloud.google.com/vertex-ai"
+    },
+    {
+      "nom": "Google Cloud Vertex AI",
+      "categorie": "plateforme",
+      "detail": "Plateforme d'hebergement et d'orchestration des agents conversationnels branches sur la base documentaire.",
+      "url": "https://cloud.google.com/vertex-ai"
+    },
+    {
+      "nom": "Agent Assist Panel / Customer Engagement Suite",
+      "categorie": "outil",
+      "detail": "Panel integre au poste de travail des 28 000 conseillers, qui restitue reponse et offre pertinente en temps reel.",
+      "url": "https://cloud.google.com"
+    },
+    {
+      "nom": "Corpus documentaire interne Verizon",
+      "categorie": "infra",
+      "detail": "Environ 15 000 documents (procedures, offres, tarifs, depannage) indexes en RAG et reindexes en continu.",
+      "url": "https://www.verizon.com"
+    },
+    {
+      "nom": "Google Cloud",
+      "categorie": "integrateur",
+      "detail": "Partenaire technologique du deploiement, dans le cadre d'une collaboration de cinq ans avec Verizon.",
+      "url": "https://cloud.google.com"
+    }
+  ]
+}

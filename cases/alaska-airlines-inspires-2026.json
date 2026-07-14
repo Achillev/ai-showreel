@@ -1,0 +1,304 @@
+{
+  "id": "alaska-airlines-inspires-2026",
+  "type_fiche": "succes",
+  "marque": "Alaska Airlines",
+  "groupe": "Alaska Air Group",
+  "industrie": "voyage_hospitality",
+  "marches_deploiement": [
+    "Etats-Unis"
+  ],
+  "transposable_ue": {
+    "flag": "oui_avec_adaptations",
+    "note": "Une recherche de destination en langage naturel est transposable. En UE, la personnalisation via le programme de fidélité relève du RGPD ; l'input vocal et le multilingue simplifient l'accès mais imposent une information claire sur l'usage de l'IA (AI Act)."
+  },
+  "metier": "e-commerce / marketing",
+  "intervenants": [
+    {
+      "nom": "Bernadette Berger",
+      "role": "Director of innovation, Alaska Airlines",
+      "source_ref": "S1"
+    }
+  ],
+  "agences": [
+    {
+      "nom": "Microsoft",
+      "role": "Fournisseur d'Azure OpenAI in Foundry Models, socle du moteur de recherche",
+      "source_ref": "S1"
+    }
+  ],
+  "axes": {
+    "levier": "acquisition",
+    "touchpoints": [
+      "site web Alaska Airlines",
+      "recherche de destination",
+      "entrée vocale"
+    ],
+    "etape_parcours": "découverte",
+    "famille": "conversation",
+    "pattern": "recherche par langage naturel pour l'inspiration voyage",
+    "type_ia": [
+      "LLM génératif (Azure OpenAI)",
+      "recherche sémantique",
+      "NLP multilingue",
+      "voix"
+    ],
+    "plateforme_stack": [
+      "Microsoft Azure OpenAI in Foundry Models",
+      "custom/in-house"
+    ],
+    "objectif_metrique": [
+      "conversion",
+      "temps de planification",
+      "satisfaction",
+      "taux de réutilisation"
+    ]
+  },
+  "implementation": "hybride",
+  "objectif_business": "Ouvrir la phase de découverte, longtemps sous-exploitée sur le site, en laissant le voyageur décrire son envie plutôt que de partir d'un couple origine-destination, puis le relier à l'inventaire et au programme de fidélité.",
+  "description": "Alaska Inspires est l'outil de recherche de destination en langage naturel d'Alaska Airlines, lancé publiquement en 2024 et bâti sur Azure OpenAI in Foundry Models. Le voyageur décrit ce qu'il cherche (ambiance, budget, type d'expérience), à l'écrit ou à la voix, et l'outil propose, compare et permet de réserver. Il gère plus de 90 langues et se connecte au programme de fidélité pour personnaliser selon les points, le statut et les objectifs de voyage. Avant cet outil, moins de 1 pour cent des visiteurs cliquaient sur l'entrée où voler et le temps de recherche moyen se comptait en dizaines d'heures.",
+  "resultats": [
+    {
+      "metrique": "Réduction du temps de planification de destination",
+      "valeur": "-75 pour cent",
+      "citation_exacte": "reduces destination planning time by 75%",
+      "source_ref": "S1"
+    },
+    {
+      "metrique": "Taux de conversion de l'outil, contre 5 pour cent en standard",
+      "valeur": "7 pour cent",
+      "citation_exacte": "7% conversion rate (outperforming the standard 5%)",
+      "source_ref": "S1"
+    },
+    {
+      "metrique": "Satisfaction déclarée",
+      "valeur": "90 pour cent",
+      "citation_exacte": "90% guest satisfaction rating",
+      "source_ref": "S1"
+    },
+    {
+      "metrique": "Intention de réutilisation",
+      "valeur": "87 pour cent",
+      "citation_exacte": "87% of customers say they will use the tool again",
+      "source_ref": "S1"
+    },
+    {
+      "metrique": "Langues prises en charge",
+      "valeur": "plus de 90",
+      "citation_exacte": "supports more than 90 languages and voice input",
+      "source_ref": "S1"
+    }
+  ],
+  "niveau_preuve": {
+    "niveau": "C",
+    "justification": "Presse spécialisée établie (CX Dive) reprenant les chiffres de la customer story Microsoft, avec source vendor concordante et déclaration d'une dirigeante nommée."
+  },
+  "dates": {
+    "lancement": "2024 (lancement public d'Alaska Inspires)",
+    "derniere_confirmation_activite": "2025-12 (couverture CX Dive et customer story Microsoft)",
+    "verifie_le": "2026-07-11",
+    "revoir_apres": "2027-01-11"
+  },
+  "statut_vivant": {
+    "statut": "confirme",
+    "note": "Chiffres publiés fin 2025 ; outil accessible sur le site d'Alaska Airlines."
+  },
+  "sources": [
+    {
+      "ref": "S1",
+      "type": "presse",
+      "fiabilite": "T3_presse_etablie",
+      "titre": "Alaska Airlines works to simplify travel discovery with AI trip planning tool",
+      "url": "https://www.customerexperiencedive.com/news/alaska-airlines-natural-language-search-trip-planning/807705/",
+      "date_publication": "2025-12-12",
+      "consulte_le": "2026-07-11"
+    },
+    {
+      "ref": "S2",
+      "type": "presse",
+      "fiabilite": "T4_secondaire",
+      "titre": "Alaska Airlines: AI Flight Search Tool for Redeeming Loyalty Points",
+      "url": "https://skift.com/2024/05/12/alaska-airlines-tests-ai-vision-for-loyalty-and-flight-search/",
+      "date_publication": "2024-05-12",
+      "consulte_le": "2026-07-11"
+    }
+  ],
+  "fonctionnement_operationnel": {
+    "cadence": "Temps réel à chaque requête, avec ré-analyse des parcours pour ajuster les suggestions.",
+    "opere_par": "Équipe innovation et digital d'Alaska Airlines, sur Azure OpenAI.",
+    "signal_pilote": "La description d'envie du voyageur, croisée avec la carte des destinations desservies et les données de fidélité. Sans lien à l'inventaire des routes et au statut du membre, l'outil propose des destinations non réservables ou non pertinentes.",
+    "etapes": [
+      {
+        "etape": "Expression de l'envie",
+        "detail": "Le voyageur décrit son besoin en langage naturel, à l'écrit ou à la voix, dans l'une des 90 langues.",
+        "acteur": "client"
+      },
+      {
+        "etape": "Interprétation",
+        "detail": "Le moteur traduit l'envie en contraintes (budget, ambiance, période) et cherche des destinations desservies.",
+        "acteur": "IA"
+      },
+      {
+        "etape": "Personnalisation fidélité",
+        "detail": "Il ajuste selon les points, le statut et les objectifs du membre du programme de fidélité.",
+        "acteur": "IA / équipe data"
+      },
+      {
+        "etape": "Comparaison et réservation",
+        "detail": "Le voyageur compare les options et bascule vers la réservation.",
+        "acteur": "client"
+      }
+    ]
+  },
+  "schema_flow": {
+    "statut": "documente",
+    "noeuds": [
+      {
+        "id": "user",
+        "role_generique": "humain",
+        "label": "Voyageur"
+      },
+      {
+        "id": "search",
+        "role_generique": "site_app",
+        "label": "Alaska Inspires (recherche NL)"
+      },
+      {
+        "id": "llm",
+        "role_generique": "modele_ia",
+        "label": "Moteur genAI",
+        "outil_documente": "Azure OpenAI in Foundry Models"
+      },
+      {
+        "id": "routes",
+        "role_generique": "data_source",
+        "label": "Réseau de destinations desservies"
+      },
+      {
+        "id": "loyalty",
+        "role_generique": "crm",
+        "label": "Programme de fidélité (points, statut)"
+      },
+      {
+        "id": "book",
+        "role_generique": "site_app",
+        "label": "Réservation"
+      }
+    ],
+    "liens": [
+      [
+        "user",
+        "search"
+      ],
+      [
+        "search",
+        "llm"
+      ],
+      [
+        "llm",
+        "routes"
+      ],
+      [
+        "llm",
+        "loyalty"
+      ],
+      [
+        "routes",
+        "search"
+      ],
+      [
+        "search",
+        "book"
+      ],
+      [
+        "book",
+        "user",
+        "billet"
+      ]
+    ]
+  },
+  "replication": {
+    "statut_epistemique": "infere",
+    "prerequis_data": [
+      "catalogue des destinations et routes",
+      "données de fidélité par membre",
+      "contenu descriptif des destinations pour la recherche sémantique"
+    ],
+    "prerequis_orga": [
+      "équipe innovation ou produit digital",
+      "lien avec le programme de fidélité",
+      "gouvernance de la personnalisation"
+    ],
+    "stack_possible": [
+      "Azure OpenAI ou équivalent",
+      "recherche sémantique / vectorielle",
+      "connecteur vers le moteur de réservation"
+    ],
+    "premiere_etape": "Indexer les destinations avec un contenu descriptif riche, puis exposer une recherche en langage naturel sur ce catalogue avant d'ajouter la personnalisation fidélité.",
+    "playbook": [
+      {
+        "action": "Indexer le catalogue des destinations desservies avec un contenu descriptif riche (ambiance, budget, saison).",
+        "livrable": "Index sémantique des destinations prêt à interroger"
+      },
+      {
+        "action": "Construire le moteur (LLM + recherche sémantique) qui traduit l'envie exprimée en contraintes et retourne des destinations réservables.",
+        "livrable": "Prototype de recherche en langage naturel sur le catalogue"
+      },
+      {
+        "action": "Connecter l'inventaire des routes et la bascule vers le moteur de réservation.",
+        "livrable": "Parcours découverte puis réservation testé de bout en bout"
+      },
+      {
+        "action": "Lancer un pilote utilisateurs et comparer conversion et satisfaction à la recherche standard.",
+        "livrable": "Rapport de pilote avec métriques comparées"
+      },
+      {
+        "action": "Ajouter la personnalisation fidélité (points, statut) et déployer en production.",
+        "livrable": "Outil en production avec tableau de bord conversion et réutilisation"
+      }
+    ],
+    "equipe": "1 PM innovation + 2 développeurs (LLM / recherche sémantique et intégration réservation) + 1 designer"
+  },
+  "stack_technique": [
+    {
+      "nom": "Microsoft Azure OpenAI in Foundry Models",
+      "categorie": "plateforme",
+      "detail": "Socle génératif du moteur de recherche, avec prise en charge de plus de 90 langues et de l'entrée vocale.",
+      "url": "https://azure.microsoft.com"
+    },
+    {
+      "nom": "Moteur Alaska Inspires (custom)",
+      "categorie": "outil",
+      "detail": "Couche maison qui traduit l'envie du voyageur en contraintes et interroge le réseau de destinations desservies.",
+      "url": "https://www.alaskaair.com"
+    },
+    {
+      "nom": "Connecteur programme de fidélité",
+      "categorie": "infra",
+      "detail": "Personnalisation des suggestions selon les points, le statut et les objectifs de voyage du membre.",
+      "url": "https://www.alaskaair.com"
+    },
+    {
+      "nom": "Microsoft",
+      "categorie": "integrateur",
+      "detail": "Fournisseur de la plateforme et partenaire technique du déploiement.",
+      "url": "https://www.microsoft.com"
+    }
+  ],
+  "seo": {
+    "slug": "alaska-airlines-inspires-2026",
+    "title": "Alaska Airlines : recherche genAI Alaska Inspires - temps de planification -75 pour cent (2026)",
+    "meta_description": "Alaska Inspires, la recherche de destination en langage naturel d'Alaska Airlines sur Azure OpenAI, réduit de 75 pour cent le temps de planification et convertit à 7 pour cent contre 5 pour cent standard.",
+    "resume_citable": "Alaska Airlines rapporte qu'Alaska Inspires, sa recherche de destination genAI, réduit de 75 pour cent le temps de planification et convertit à 7 pour cent, contre 5 pour cent pour la recherche standard.",
+    "faq": [
+      {
+        "q": "Qu'est-ce qu'Alaska Inspires ?",
+        "a": "Une recherche de destination en langage naturel d'Alaska Airlines, bâtie sur Azure OpenAI, qui laisse décrire une envie de voyage à l'écrit ou à la voix dans plus de 90 langues."
+      },
+      {
+        "q": "Quels résultats sont publiés ?",
+        "a": "Une réduction de 75 pour cent du temps de planification, un taux de conversion de 7 pour cent contre 5 pour cent standard, 90 pour cent de satisfaction et 87 pour cent d'intention de réutilisation."
+      }
+    ]
+  },
+  "logo_domain": "alaskaair.com"
+}

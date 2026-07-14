@@ -1,0 +1,156 @@
+[
+  {
+    "marque": "La Redoute",
+    "industrie": "E-commerce mode & maison",
+    "marches_deploiement": ["France (marché principal de la marque)", "Espagne", "Portugal (périmètre du test mesuré)"],
+    "transposable_ue": {
+      "bool": true,
+      "note": "Déjà déployé en UE. Nécessite consentement RGPD/ePrivacy propre (pixel + Conversions API) ; ciblage algorithmique Meta = risque limité au sens de l'AI Act, pas d'obligation lourde côté annonceur."
+    },
+    "metier": "Acquisition / media performance e-commerce",
+    "levier": "acquisition",
+    "touchpoints": ["Facebook Feed", "Instagram Feed", "Reels", "Stories"],
+    "etape_parcours": "découverte → conversion (achat en ligne)",
+    "famille": "optimisation_automatisation",
+    "pattern": "Campagne paid social entièrement automatisée par IA (audiences, placements, enchères, combinaisons créatives) + contenus créateurs, mesurée en incrémental",
+    "type_ia": ["machine learning de ciblage et d'enchères", "optimisation créative automatisée (jusqu'à 150 combinaisons)", "ads catalogue produit dynamiques"],
+    "plateforme_stack": ["Meta Advantage+ shopping campaigns", "Meta Advantage+ catalog ads", "Meta Conversion Lift (mesure)", "Partnership/creator ads (agence Ykone)"],
+    "implementation": "plateforme",
+    "objectif_business": "Augmenter les ventes en ligne incrémentales sur l'Espagne et le Portugal en laissant l'IA de Meta piloter la diffusion, tout en touchant de nouvelles audiences via des Reels de créateurs.",
+    "description": "La Redoute (mode et décoration, groupe français historique de la VAD) a fait tourner ses campagnes de vente sur Meta en mode Advantage+ shopping : l'annonceur fournit le catalogue produits et les assets, l'IA de Meta choisit automatiquement audiences, placements, enchères et combinaisons créatives. L'équipe a ajouté une cellule avec des vidéos et photos produites par des créateurs (via l'agence Ykone), diffusées en Reels et Stories en plus des ads catalogue classiques. Le dispositif a été mesuré du 7 juin au 11 juillet 2024 par une étude Conversion Lift multi-cellules (méthode contrefactuelle de Meta), comparant Advantage+ seul vs Advantage+ enrichi des contenus créateurs. Résultat : +51 % de ROAS incrémental, +35 % d'achats incrémentaux et -26 % de coût par achat incrémental sur la cellule enrichie. Le périmètre mesuré couvre l'Europe du Sud (Espagne/Portugal), la marque opérant par ailleurs son acquisition Meta sur ses autres marchés. Un test séparé mené avec la plateforme de créateurs The Cirqle (cité par le CEO La Redoute Southern Europe) corrobore l'ordre de grandeur avec un ROAS achat passé de 5,19 à 8,35 (+61 %) vs campagnes habituelles.",
+    "resultats": [
+      {"metrique": "ROAS incrémental", "valeur": "+51 %", "citation_exacte": "51% increase in incremental ROAS", "source_ref": "S1"},
+      {"metrique": "Achats incrémentaux", "valeur": "+35 %", "citation_exacte": "35% increase in incremental purchases", "source_ref": "S1"},
+      {"metrique": "Coût par achat incrémental", "valeur": "-26 %", "citation_exacte": "26% decrease in cost per incremental purchase", "source_ref": "S1"},
+      {"metrique": "ROAS achat (test créateurs séparé)", "valeur": "8,35 vs 5,19 (+61 %)", "citation_exacte": "drove a 61% ROAS lift with Creator ads", "source_ref": "S2"}
+    ],
+    "niveau_preuve": {
+      "niveau": "B",
+      "justification": "Étude de cas officielle Meta, chiffrée et adossée à un Conversion Lift multi-cellules (méthode incrémentale sérieuse), mais publiée par la plateforme elle-même ; partiellement corroborée par un test tiers (The Cirqle) avec attribution revenue."
+    },
+    "dates": {
+      "lancement": "2024-06-07 (début du test mesuré ; usage Advantage+ antérieur)",
+      "derniere_confirmation_activite": "Étude The Cirqle en ligne (programme creator ads + paid social toujours actif) ; Advantage+ devenu le standard Meta (renommé Advantage+ sales campaigns en 2025)",
+      "verifie_le": "2026-07-11"
+    },
+    "statut_vivant": {
+      "statut": "confirmé",
+      "note": "La Redoute reste un annonceur Meta actif et poursuit le dispositif créateurs + campagnes automatisées ; le produit Advantage+ shopping est désormais le format de vente par défaut chez Meta (>20 Md$ de run-rate annoncés fin 2024), ce qui garantit la pérennité du pattern."
+    },
+    "sources": [
+      {"ref": "S1", "type": "étude de cas plateforme (Meta for Business)", "titre": "La Redoute: Facebook ads case study — Advantage+ shopping campaigns + creator Reels (Conversion Lift multi-cellules)", "url": "https://www.facebook.com/business/success/3-la-redoute", "date_publication": "2024 (campagne 07/06–11/07/2024)", "consulte_le": "2026-07-11"},
+      {"ref": "S2", "type": "étude de cas partenaire (plateforme créateurs)", "titre": "How La Redoute drove a 61% ROAS lift with Creator ads — The Cirqle", "url": "https://thecirqle.com/success-story-la-redoute", "date_publication": "non datée (post-2024)", "consulte_le": "2026-07-11"},
+      {"ref": "S3", "type": "annonce produit plateforme (contexte)", "titre": "Introducing New Automation Tools to Increase Sales and Drive Growth (lancement Advantage+ shopping)", "url": "https://about.fb.com/news/2022/08/introducing-new-automation-tools-to-increase-sales-and-drive-growth/", "date_publication": "2022-08-10", "consulte_le": "2026-07-11"}
+    ],
+    "replication_inferee": {
+      "prerequis_data": "Catalogue produit propre et à jour (feed), pixel + Conversions API avec événements d'achat fiables (idéalement 50+ conversions/semaine), listes clients pour exclusion/plafond clients existants",
+      "stack_possible": "Meta Advantage+ sales campaigns + CAPI (server-side GTM, Shopify ou partenaire), banque de créas vidéo verticales (créateurs/UGC), mesure via Conversion Lift ou geo-test",
+      "effort": "S",
+      "time_to_value": "4 à 8 semaines (apprentissage algorithmique compris)",
+      "premiere_etape": "Lancer un test A/B structuré : campagne Advantage+ (20-30 % du budget social) vs structure manuelle existante, avec Conversion Lift ou incrémentalité géographique comme arbitre"
+    }
+  },
+  {
+    "marque": "Renault (Renault Mais — distributeur officiel Turquie ; corroboré par Renault Retail Group UK)",
+    "industrie": "Automobile",
+    "marches_deploiement": ["Turquie (Renault Mais)", "Royaume-Uni (Renault Retail Group, réseau de distribution)"],
+    "transposable_ue": {
+      "bool": true,
+      "note": "Marque européenne ; en UE, Performance Max exige Consent Mode v2 (RGPD/DMA) et pose un enjeu de transparence des placements (boîte noire) — gouvernance à prévoir, mais pas de classification haut risque AI Act."
+    },
+    "metier": "Génération de leads / media performance (demandes d'essai et contacts concessionnaires)",
+    "levier": "acquisition",
+    "touchpoints": ["Google Search", "YouTube", "Display", "Discover", "Gmail", "Google Maps"],
+    "etape_parcours": "considération → lead (demande d'essai / contact)",
+    "famille": "optimisation_automatisation",
+    "pattern": "Consolidation multi-formats/multi-canaux dans une campagne unique pilotée par le machine learning de Google (enchères, mix créatif, canaux) sur objectif de conversion",
+    "type_ia": ["smart bidding (enchères ML sur valeur/conversion)", "sélection et rotation créative automatisée", "allocation cross-canal automatisée"],
+    "plateforme_stack": ["Google Ads Performance Max", "Google Search / YouTube / Display / Discover / Maps / Gmail"],
+    "implementation": "plateforme",
+    "objectif_business": "Réduire le coût par lead qualifié et gagner du temps opérationnel en remplaçant des campagnes séparées par format/plateforme par une campagne unique optimisée par l'IA de Google.",
+    "description": "L'équipe marketing de Renault en Turquie (Renault Mais, avec l'agence OMD) gérait des campagnes distinctes par format et par canal pour générer des leads (essais, contacts). Elle a consolidé vidéos, images et assets search dans une seule campagne Performance Max : le ML de Google décide en continu quelle créa diffuser, sur quel canal (Search, YouTube, Display, Discover, Maps, Gmail), à quelle enchère, pour maximiser les conversions cibles. Le système écarte automatiquement les créas sous-performantes au profit des meilleures. Résultat revendiqué : -86 % de coût par conversion, avec un gain de temps de gestion significatif. Le pattern est répliqué ailleurs dans l'écosystème Renault : au Royaume-Uni, Renault Retail Group (réseau de distribution) a généré 1 261 conversions additionnelles à un CPA 67 % sous son KPI via Performance Max avec l'agence ClickThrough. Performance Max est depuis devenu le format standard de Google pour ce type d'acquisition (les annonceurs constatent en moyenne +13 % de conversions incrémentales à CPA similaire selon Google).",
+    "resultats": [
+      {"metrique": "Coût par conversion (Turquie)", "valeur": "-86 %", "citation_exacte": "reducing our cost per conversion by 86%", "source_ref": "S1"},
+      {"metrique": "Conversions additionnelles (UK, Renault Retail Group)", "valeur": "+1 261 conversions", "citation_exacte": "an additional 1,261 conversions", "source_ref": "S2"},
+      {"metrique": "CPA vs objectif (UK)", "valeur": "-67 % vs KPI", "citation_exacte": "at a CPA 67% lower than their KPI", "source_ref": "S2"},
+      {"metrique": "Benchmark Google tous annonceurs PMax", "valeur": "+13 % conversions incrémentales à CPA similaire", "citation_exacte": "average increase of 13% total incremental conversions", "source_ref": "S1"}
+    ],
+    "niveau_preuve": {
+      "niveau": "B",
+      "justification": "Étude de cas Think with Google chiffrée avec citation nominative d'une dirigeante Renault Mais (biais plateforme), corroborée par une étude de cas d'agence indépendante sur une autre entité Renault (UK) — pas de confirmation en résultats financiers."
+    },
+    "dates": {
+      "lancement": "2021 (Performance Max GA nov. 2021 ; cas Renault publié février 2022)",
+      "derniere_confirmation_activite": "Pas de communication Renault récente spécifique à PMax ; le format est devenu l'infrastructure par défaut de l'acquisition Google Ads (2025-2026) et Groupe Renault documente par ailleurs son usage continu du stack Google (GMP/Salesforce)",
+      "verifie_le": "2026-07-11"
+    },
+    "statut_vivant": {
+      "statut": "signaux_mitiges",
+      "note": "Le cas chiffré date de 2022 et Renault ne communique plus publiquement dessus ; en revanche le pattern lui-même est plus vivant que jamais (PMax = format central Google Ads en 2025-2026) et l'usage multi-entités Renault (Turquie + réseau UK) suggère une adoption durable."
+    },
+    "sources": [
+      {"ref": "S1", "type": "étude de cas plateforme (Think with Google UK)", "titre": "Performance Max is the future of marketing — cas Renault Turquie (Özlem Kılıçkaya, Renault Mais)", "url": "https://business.google.com/uk/think/ai-excellence/performance-max-marketing-consumer/", "date_publication": "2022-02", "consulte_le": "2026-07-11"},
+      {"ref": "S2", "type": "étude de cas agence", "titre": "ClickThrough reduce Renault Retail Group's CPA by 67% with Performance Max", "url": "https://www.clickthrough-marketing.com/case-studies/renault-retail-group-google-performance-max", "date_publication": "non datée (post-2022)", "consulte_le": "2026-07-11"},
+      {"ref": "S3", "type": "étude de cas plateforme (contexte stack Google chez Renault)", "titre": "Groupe Renault boosts sales and reduces cost per lead with Google and Salesforce", "url": "https://marketingplatform.google.com/about/resources/groupe-renault-boosts-sales-and-reduces-cost-per-lead-with-google-and-saleforce/", "date_publication": "non datée", "consulte_le": "2026-07-11"}
+    ],
+    "replication_inferee": {
+      "prerequis_data": "Tracking de conversion fiable (leads qualifiés, pas de leads bruts), Consent Mode v2 en UE, valeurs de conversion différenciées (scoring lead), assets créatifs vidéo/image/texte en volume",
+      "stack_possible": "Google Ads Performance Max + GA4 + import de conversions offline (CRM/Salesforce) pour optimiser sur les leads qui convertissent réellement",
+      "effort": "S",
+      "time_to_value": "6 à 10 semaines (période d'apprentissage incluse)",
+      "premiere_etape": "Expérience officielle Google Ads « PMax vs campagnes existantes » sur un objectif de conversion unique, avec import de la qualité des leads depuis le CRM avant tout scaling"
+    }
+  },
+  {
+    "marque": "Vodafone",
+    "industrie": "Télécommunications",
+    "marches_deploiement": ["Déployé sur 8+ pays via la plateforme AI Booster (empreinte groupe ~17 pays Europe & Afrique : Allemagne, UK, Italie, Espagne, Turquie, Égypte, Afrique du Sud…)"],
+    "transposable_ue": {
+      "bool": true,
+      "note": "Déjà opéré majoritairement en UE. Le scoring de churn est un profilage RGPD (base légale, minimisation, information client) ; si des décisions entièrement automatisées en découlent, art. 22 RGPD à cadrer. AI Act : risque limité (pas de domaine haut risque), obligations de transparence."
+    },
+    "metier": "Rétention / CRM & base management (équipes Big Data & AI groupe + marketing locaux)",
+    "levier": "retention",
+    "touchpoints": ["campagnes de rétention sortantes (appels, SMS, email)", "offres personnalisées in-app / MyVodafone", "service client (priorisation)"],
+    "etape_parcours": "post-achat / fidélisation (détection du risque de départ avant résiliation)",
+    "famille": "prediction",
+    "pattern": "Churn prediction industrialisée : modèles prédictifs de résiliation entraînés par marché sur une plateforme MLOps groupe, avec templates standardisés répliqués de pays en pays pour déclencher des actions de rétention proactives",
+    "type_ia": ["ML supervisé de classification (XGBoost, BigQuery ML, TensorFlow)", "pipelines AutoML / Vertex AI Pipelines", "détection de drift et explicabilité automatisées"],
+    "plateforme_stack": ["Google Cloud Vertex AI (plateforme interne « AI Booster »)", "Neuron (data ocean groupe sur Google Cloud / BigQuery)", "Cloud Build CI/CD, GitHub"],
+    "implementation": "hybride",
+    "objectif_business": "Réduire l'attrition clients (le levier n°1 de valeur dans les télécoms) en prédisant les résiliations par marché, et industrialiser la production de ces modèles pour que chaque pays n'ait plus à repartir de zéro.",
+    "description": "Vodafone a construit AI Booster, une plateforme MLOps groupe bâtie sur Vertex AI (Google Cloud) et alimentée par Neuron, son « data ocean » centralisant les données clients et réseau. Le use case fondateur documenté est la prédiction du churn : l'équipe Big Data & AI développe un modèle de churn pour un marché local (features d'usage, facturation, contrat, interactions), le déploie en production via des pipelines CI/CD standardisés (LAB → STAGING → PROD), puis réplique le template sur d'autres pays malgré des données locales différentes. Les scores de churn alimentent les campagnes de rétention proactives et la personnalisation des offres dans les marchés. La plateforme gère des milliers de modèles par jour sur 8+ pays (le double du plan initial) et fait passer un modèle du PoC à la production en 4 semaines au lieu de 5 mois. Le dispositif est en production depuis 2022 et s'inscrit dans un partenariat Vodafone-Google élargi en octobre 2024 (10 ans, >1 Md$) qui cite explicitement Vertex AI et les modèles Gemini, avec de nouveaux produits IA lancés en 2025-2026.",
+    "resultats": [
+      {"metrique": "Time to market des modèles ML", "valeur": "÷5", "citation_exacte": "5x reduction in time to market", "source_ref": "S2"},
+      {"metrique": "Délai PoC → production", "valeur": "4 semaines au lieu de ~5 mois (-80 %)", "citation_exacte": "PoC-to-production can now be as little as four weeks", "source_ref": "S3"},
+      {"metrique": "Fréquence de déploiement des pipelines", "valeur": "x5 (1 → 5 pipelines/mois)", "citation_exacte": "5x increase in deployment frequency", "source_ref": "S2"},
+      {"metrique": "Échelle de la plateforme", "valeur": "milliers de modèles/jour, 8+ pays", "citation_exacte": "thousands of ML models daily", "source_ref": "S1"}
+    ],
+    "niveau_preuve": {
+      "niveau": "B",
+      "justification": "Documenté par des sources officielles Google Cloud et un intégrateur (Datatonic) avec porte-parole Vodafone nommés — chiffres solides mais opérationnels (vitesse/échelle MLOps) : aucun impact churn en points de pourcentage n'est public, et les sources sont côté fournisseurs."
+    },
+    "dates": {
+      "lancement": "2021-2022 (18 mois de build, plateforme lancée mi-2022 ; use case churn documenté 2022-2023)",
+      "derniere_confirmation_activite": "2026-04 (nouveaux services IA Vodafone-Google Cloud pour PME) ; partenariat 10 ans >1 Md$ signé oct. 2024 citant Vertex AI/Gemini",
+      "verifie_le": "2026-07-11"
+    },
+    "statut_vivant": {
+      "statut": "confirme",
+      "note": "La relation Vodafone-Google Cloud s'est approfondie (deal 10 ans oct. 2024, produits IA lancés jusqu'en avril 2026) et Vertex AI reste la plateforme ML du groupe — l'infrastructure du use case churn est structurellement pérennisée, même si Vodafone ne republie pas de chiffres churn."
+    },
+    "sources": [
+      {"ref": "S1", "type": "blog officiel fournisseur (Google Cloud)", "titre": "Vodafone's ML platform, built on Vertex AI (AI Booster)", "url": "https://cloud.google.com/blog/products/ai-machine-learning/vodafones-ml-platform-built-on-vertex-ai", "date_publication": "2022-07-06", "consulte_le": "2026-07-11"},
+      {"ref": "S2", "type": "blog technique officiel (Google Cloud, co-signé Vodafone)", "titre": "How Vodafone uses CI/CD to speed up ML pipelines (use case : customer churn prediction multi-marchés)", "url": "https://cloud.google.com/blog/products/devops-sre/how-vodafone-uses-cicd-to-speed-up-ml-pipelines", "date_publication": "2023-07-18", "consulte_le": "2026-07-11"},
+      {"ref": "S3", "type": "étude de cas intégrateur", "titre": "AI Booster: How Vodafone is Supercharging AI & ML at Scale — Datatonic", "url": "https://datatonic.com/case-studies/ai-booster-vodafone-supercharging-ai-ml-at-scale/", "date_publication": "~2022", "consulte_le": "2026-07-11"},
+      {"ref": "S4", "type": "communiqué officiel marque (signal de vie)", "titre": "Vodafone and Google Deepen Strategic Partnership with Ten Year, Billion+ Dollar Deal", "url": "https://www.vodafone.com/news/newsroom/technology/vodafone-and-google-deepen-strategic-partnership-with-10-yr-deal", "date_publication": "2024-10", "consulte_le": "2026-07-11"}
+    ],
+    "replication_inferee": {
+      "prerequis_data": "Historique client unifié (usage, facturation, contrats, tickets support, interactions) avec label de résiliation fiable, 12+ mois de profondeur, gouvernance RGPD du profilage",
+      "stack_possible": "Vertex AI ou équivalent (Databricks, SageMaker, Snowflake+ML) sur un entrepôt cloud (BigQuery/Snowflake), XGBoost en baseline, activation via CDP/CRM (Salesforce Marketing Cloud, Braze) pour les campagnes de rétention",
+      "effort": "L",
+      "time_to_value": "4 à 6 mois pour un premier marché/segment (modèle + boucle d'activation + test contrôlé), 12+ mois pour l'industrialisation multi-marchés",
+      "premiere_etape": "Cadrer un pilote sur un segment à forte valeur : définir le label churn, entraîner un modèle baseline sur l'entrepôt existant, et mesurer l'uplift d'une campagne de rétention ciblée scores hauts vs groupe contrôle"
+    }
+  }
+]

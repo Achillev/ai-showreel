@@ -1,0 +1,268 @@
+{
+  "id": "atlassian-rovo-marketing-interne-2026",
+  "type_fiche": "succes",
+  "marque": "Atlassian",
+  "industrie": "tech_saas",
+  "marches_deploiement": [
+    "Etats-Unis",
+    "Australie",
+    "international (equipes Atlassian)"
+  ],
+  "transposable_ue": {
+    "flag": "oui_avec_adaptations",
+    "note": "Agents genAI internes qui interrogent le CRM et la base de connaissance de l'entreprise. En UE, RGPD sur les donnees de comptes et de contacts agreges par l'agent, et gouvernance des acces internes. Pas de traitement grand public dans ce cas d'usage interne marketing."
+  },
+  "metier": "marketing / account-based marketing (usage interne Atlassian)",
+  "intervenants": [
+    {
+      "nom": "Peter Partner",
+      "role": "Account-Based Marketing team, Atlassian",
+      "source_ref": "S1"
+    }
+  ],
+  "axes": {
+    "levier": "acquisition",
+    "touchpoints": [
+      "ciblage de comptes ABM",
+      "preparation de campagnes",
+      "contenu marketing (blog, copy, social)"
+    ],
+    "etape_parcours": "consideration",
+    "famille": "generation",
+    "pattern": "agents genAI internes pour le ciblage de comptes et la production de contenu marketing",
+    "type_ia": [
+      "agents genAI",
+      "generation augmentee par recuperation (RAG) sur Confluence et CRM"
+    ],
+    "plateforme_stack": [
+      "Atlassian Rovo",
+      "Atlassian Intelligence",
+      "Confluence"
+    ],
+    "objectif_metrique": [
+      "efficacite de la preparation de comptes",
+      "priorisation des comptes cibles",
+      "vitesse de production de contenu"
+    ]
+  },
+  "implementation": "plateforme",
+  "stack_technique": [
+    {
+      "nom": "Atlassian Rovo",
+      "categorie": "plateforme",
+      "detail": "Couche d'agents genAI d'Atlassian, qui heberge le Customer 360 Agent et les agents de contenu utilises par le marketing interne.",
+      "url": "https://www.atlassian.com/software/rovo"
+    },
+    {
+      "nom": "Atlassian Intelligence",
+      "categorie": "plateforme",
+      "detail": "Fonctions IA embarquees dans les produits Atlassian, socle des capacites generatives ; les LLM sous-jacents ne sont pas nommes dans les sources.",
+      "url": "https://www.atlassian.com"
+    },
+    {
+      "nom": "Confluence",
+      "categorie": "outil",
+      "detail": "Base de connaissance interne dont les pages alimentent en RAG les agents de redaction (blog, copy, social).",
+      "url": "https://www.atlassian.com/software/confluence"
+    },
+    {
+      "nom": "CRM Atlassian (connecteur Rovo)",
+      "categorie": "outil",
+      "detail": "Source des dates de renouvellement, contacts, usage produit et opportunites agregees par le Customer 360 Agent ; l'editeur CRM n'est pas nomme dans les sources.",
+      "url": "https://www.atlassian.com"
+    }
+  ],
+  "objectif_business": "Faire tourner son propre marketing sur son propre produit. Les equipes marketing d'Atlassian utilisent Rovo pour reperer les comptes a prioriser, preparer les campagnes ABM et produire du contenu, en dogfooding public de la techno qu'Atlassian vend.",
+  "description": "Atlassian utilise Rovo, sa couche d'agents genAI, en interne dans le marketing. L'equipe account-based marketing a construit un Customer 360 Agent qui agrege les donnees du CRM (dates de renouvellement, contacts cles, usage produit, opportunites) pour identifier les comptes a fort potentiel et preparer les campagnes ciblees. D'autres agents, alimentes par les pages Confluence et les metriques internes, redigent des brouillons de blog, de copy de campagne et de contenu social. L'usage est documente par les marketeurs Atlassian eux-memes. La preuve d'echelle vient de l'adoption de Rovo, avec des millions d'utilisateurs actifs mensuels revendiques par Atlassian.",
+  "resultats": [
+    {
+      "metrique": "Preparation de comptes et ciblage ABM, gain revendique par l'equipe (non chiffre)",
+      "valeur": "Gain d'efficacite",
+      "citation_exacte": "a huge efficiency win for us",
+      "source_ref": "S1"
+    },
+    {
+      "metrique": "Utilisateurs actifs mensuels de Rovo (preuve d'echelle)",
+      "valeur": "Millions d'actifs",
+      "citation_exacte": "millions of monthly active users who rely on Rovo",
+      "source_ref": "S3"
+    }
+  ],
+  "niveau_preuve": {
+    "niveau": "D",
+    "justification": "L'usage marketing interne est documente par les marketeurs Atlassian dans un blog officiel, mais sans metrique de conversion ou de ROI chiffree. La preuve d'echelle repose sur l'adoption de Rovo (millions d'utilisateurs actifs mensuels) communiquee dans la lettre aux actionnaires. Declaratif interne, honnetement gradue."
+  },
+  "dates": {
+    "lancement": "Rovo generalise en 2024 ; usage marketing interne documente en 2025-2026",
+    "derniere_confirmation_activite": "avril 2026 (lettre aux actionnaires Q3 FY26 confirmant la croissance de Rovo)",
+    "verifie_le": "2026-07-11",
+    "revoir_apres": "2027-01-11"
+  },
+  "statut_vivant": {
+    "statut": "confirme",
+    "note": "Rovo est un axe strategique d'Atlassian, en croissance selon la lettre aux actionnaires d'avril 2026. Le dogfooding marketing est documente publiquement par les equipes Atlassian."
+  },
+  "sources": [
+    {
+      "ref": "S1",
+      "type": "blog_officiel",
+      "fiabilite": "T2_officiel_interesse",
+      "titre": "AI and Rovo Use Cases for Marketers at Atlassian (Part 1)",
+      "url": "https://community.atlassian.com/forums/Atlassian-AI-Rovo-articles/How-Atlassian-Marketers-use-AI-amp-Rovo-Part-1/ba-p/3120707",
+      "consulte_le": "2026-07-11"
+    },
+    {
+      "ref": "S2",
+      "type": "blog_officiel",
+      "fiabilite": "T2_officiel_interesse",
+      "titre": "How Atlassian Marketers use AI & Rovo (Part 2): Agents and Rovo",
+      "url": "https://community.atlassian.com/forums/Atlassian-AI-Rovo-articles/How-Atlassian-Marketers-use-AI-amp-Rovo-Part-2-Agents-and-Rovo/ba-p/3125345",
+      "consulte_le": "2026-07-11"
+    },
+    {
+      "ref": "S3",
+      "type": "document_officiel_sec",
+      "fiabilite": "T1_primaire",
+      "titre": "Our Q3 FY26 letter to shareholders",
+      "url": "https://www.atlassian.com/blog/company-news/shareholder-letter-q3fy26",
+      "date_publication": "2026-04-30",
+      "consulte_le": "2026-07-11"
+    }
+  ],
+  "fonctionnement_operationnel": {
+    "cadence": "Par campagne pour le ciblage ABM, en continu pour la production de contenu",
+    "opere_par": "Equipe account-based marketing d'Atlassian, sur Rovo relie a Confluence et au CRM",
+    "signal_pilote": "Les donnees CRM et les pages Confluence internes. Sans CRM propre et sans base de connaissance a jour, le Customer 360 Agent renvoie des comptes mal priorises et du contenu hors-sujet.",
+    "etapes": [
+      {
+        "etape": "Agregation des donnees de comptes",
+        "detail": "Le Customer 360 Agent consolide dates de renouvellement, contacts, usage produit et opportunites depuis le CRM.",
+        "acteur": "IA"
+      },
+      {
+        "etape": "Priorisation et white space",
+        "detail": "L'agent identifie les comptes a fort potentiel et les zones a couvrir pour les campagnes.",
+        "acteur": "IA et marketing"
+      },
+      {
+        "etape": "Production de contenu",
+        "detail": "Des agents de contenu redigent des brouillons de blog, copy et social a partir de Confluence.",
+        "acteur": "IA"
+      },
+      {
+        "etape": "Validation humaine",
+        "detail": "Les marketeurs revoient, ajustent et lancent les campagnes.",
+        "acteur": "Marketing"
+      }
+    ]
+  },
+  "schema_flow": {
+    "statut": "documente",
+    "noeuds": [
+      {
+        "id": "crm",
+        "role_generique": "crm",
+        "label": "CRM Atlassian"
+      },
+      {
+        "id": "confluence",
+        "role_generique": "data_source",
+        "label": "Pages Confluence et metriques internes"
+      },
+      {
+        "id": "rovo",
+        "role_generique": "modele_ia",
+        "label": "Agents Rovo (Customer 360, agents de contenu)",
+        "outil_documente": "Atlassian Rovo"
+      },
+      {
+        "id": "marketing",
+        "role_generique": "humain",
+        "label": "Equipe account-based marketing"
+      },
+      {
+        "id": "campagne",
+        "role_generique": "site_app",
+        "label": "Campagnes ABM et contenu"
+      }
+    ],
+    "liens": [
+      [
+        "crm",
+        "rovo"
+      ],
+      [
+        "confluence",
+        "rovo"
+      ],
+      [
+        "rovo",
+        "marketing",
+        "comptes prioritaires et brouillons"
+      ],
+      [
+        "marketing",
+        "campagne",
+        "validation et lancement"
+      ]
+    ]
+  },
+  "replication": {
+    "statut_epistemique": "infere",
+    "prerequis_data": [
+      "CRM propre et exploitable",
+      "base de connaissance interne (wiki, docs)",
+      "definition des comptes cibles"
+    ],
+    "prerequis_orga": [
+      "equipe marketing capable de construire et superviser des agents",
+      "gouvernance des acces aux donnees internes"
+    ],
+    "stack_possible": [
+      "plateforme d'agents genAI (Rovo ou equivalent)",
+      "connecteur CRM",
+      "moteur RAG sur le wiki interne"
+    ],
+    "premiere_etape": "Connecter un agent au CRM et au wiki interne pour automatiser la preparation de fiches comptes et la priorisation ABM.",
+    "playbook": [
+      {
+        "action": "Inventorier les sources (CRM, wiki interne) et poser la gouvernance des acces : quelles donnees chaque agent a le droit de lire.",
+        "livrable": "Perimetre de donnees autorise, documente par agent."
+      },
+      {
+        "action": "Construire un premier agent Customer 360 qui consolide les fiches comptes (renouvellements, contacts, usage, opportunites) et le tester sur 10-20 comptes.",
+        "livrable": "Agent en test avec fiches comptes generees et verifiables."
+      },
+      {
+        "action": "Faire verifier par les marketeurs la fiabilite des priorisations, ajuster prompts et connecteurs jusqu'a un taux d'erreur acceptable.",
+        "livrable": "Agent valide et adopte par l'equipe ABM."
+      },
+      {
+        "action": "Ajouter des agents de contenu branches sur le wiki, avec revue humaine systematique avant publication.",
+        "livrable": "Brouillons de blog et de copy generes, workflow de validation en place."
+      },
+      {
+        "action": "Mesurer le temps de preparation d'un compte et d'une campagne avant/apres pour objectiver le gain.",
+        "livrable": "Bilan d'efficacite chiffre en interne."
+      }
+    ],
+    "equipe": "1 marketeur ops qui construit et maintient les agents + 1 admin plateforme pour les connecteurs et les acces ; pas d'equipe data dediee."
+  },
+  "seo": {
+    "slug": "atlassian-rovo-marketing-interne-2026",
+    "title": "Atlassian : Rovo pour son propre marketing ABM - Customer 360 Agent et contenu genAI (2026)",
+    "meta_description": "Atlassian utilise son propre Rovo dans le marketing : un Customer 360 Agent agrege le CRM pour cibler les comptes ABM et des agents redigent le contenu, avec des millions d'utilisateurs Rovo.",
+    "resume_citable": "Atlassian fait tourner son marketing ABM sur son propre Rovo : un Customer 360 Agent agrege le CRM pour prioriser les comptes cibles et des agents redigent le contenu, Rovo comptant des millions d'utilisateurs actifs mensuels.",
+    "faq": [
+      {
+        "q": "Comment le marketing d'Atlassian utilise-t-il Rovo ?",
+        "a": "Via un Customer 360 Agent qui agrege le CRM pour identifier les comptes ABM prioritaires, et des agents de contenu qui redigent blog, copy et social a partir de Confluence."
+      },
+      {
+        "q": "L'impact est-il chiffre ?",
+        "a": "L'usage est documente par les marketeurs Atlassian comme un gain d'efficacite, sans metrique de conversion publique. La preuve d'echelle vient de l'adoption de Rovo, avec des millions d'utilisateurs actifs mensuels."
+      }
+    ]
+  },
+  "logo_domain": "atlassian.com"
+}

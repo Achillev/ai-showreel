@@ -1,0 +1,304 @@
+{
+  "id": "loreal-beauty-genius-assistant-genai-2024",
+  "type_fiche": "succes",
+  "marque": "L'Oreal Paris",
+  "groupe": "L'Oreal",
+  "industrie": "luxe_beaute",
+  "marches_deploiement": [
+    "Etats-Unis"
+  ],
+  "transposable_ue": {
+    "flag": "oui_avec_adaptations",
+    "note": "Agent conversationnel grand public : consentement et minimisation des donnees de conversation (RGPD), transparence de l'interaction avec une IA et garde-fous sur les conseils sante/peau (AI Act, obligations d'information). Le RAG doit rester borne au catalogue et aux contenus valides pour eviter les reponses hors perimetre."
+  },
+  "metier": "marketing / conseil beaute digital",
+  "intervenants": [
+    {
+      "nom": "Nicolas Hieronimus",
+      "role": "Directeur general de L'Oreal",
+      "source_ref": "S1"
+    }
+  ],
+  "axes": {
+    "levier": "activation_conversion",
+    "touchpoints": [
+      "site de marque",
+      "application mobile",
+      "WhatsApp"
+    ],
+    "etape_parcours": "consideration",
+    "famille": "conversation",
+    "pattern": "agent beaute genAI 24/7 (conseil + recommandation produit)",
+    "type_ia": [
+      "LLM (GPT-4o)",
+      "RAG",
+      "vision (diagnostic peau, essayage virtuel)"
+    ],
+    "plateforme_stack": [
+      "Azure OpenAI Service",
+      "GPT-4o",
+      "embeddings Ada",
+      "ModiFace"
+    ],
+    "objectif_metrique": [
+      "conversations engagees",
+      "taux d'achat post-conseil",
+      "temps de reponse"
+    ]
+  },
+  "implementation": "hybride",
+  "objectif_business": "Offrir un conseil beaute personnalise et disponible en continu pour lever le doute a l'achat et orienter vers les produits pertinents du catalogue L'Oreal Paris (750+ references).",
+  "points_cles": ["Assistant beaute genAI 24/7 sur web, app et WhatsApp, conseil et recommandation produit.", "GPT-4o et RAG sur Azure OpenAI, embeddings Ada, essayage et diagnostic ModiFace.", "Plus de 50 000 conversations en deux mois aux Etats-Unis, latence visee sous 5 secondes.", "Preuve B, statut confirme : documente dans le rapport annuel L'Oreal 2024."],
+  "description": "Beauty Genius est un assistant beaute genAI accessible depuis le smartphone (web de marque, application, WhatsApp). L'utilisateur pose une question de peau, maquillage ou coloration, obtient un diagnostic, un essayage virtuel et des recommandations tirees des 750+ produits L'Oreal Paris. Le moteur combine un LLM (GPT-4o) et un systeme RAG borne au contenu L'Oreal pour ancrer les reponses, avec un essayage/diagnostic visuel fourni par ModiFace. Lance aux Etats-Unis en 2024, avec un deploiement annonce sur d'autres marches cles en 2025.",
+  "resultats": [
+    {
+      "metrique": "Conversations generees (US, deux premiers mois)",
+      "valeur": "50 000+",
+      "citation_exacte": "stimulated more than 50,000 conversations in its first two months",
+      "source_ref": "S1"
+    },
+    {
+      "metrique": "Latence maximale visee",
+      "valeur": "moins de 5 secondes",
+      "citation_exacte": "keep maximum latency below 5 seconds",
+      "source_ref": "S2"
+    },
+    {
+      "metrique": "Charge testee en utilisateurs simultanes",
+      "valeur": "2 000 utilisateurs",
+      "citation_exacte": "2,000 simultaneous users",
+      "source_ref": "S2"
+    }
+  ],
+  "niveau_preuve": {
+    "niveau": "B",
+    "justification": "Chiffre d'usage publie dans le rapport annuel officiel L'Oreal (source primaire) et architecture technique confirmee par la customer story Microsoft Azure OpenAI. Deux sources concordantes, l'une primaire."
+  },
+  "dates": {
+    "lancement": "2024 (US, apres devoilement a VivaTech puis CES)",
+    "derniere_confirmation_activite": "Rapport annuel L'Oreal 2024 (deploiement autres marches en 2025)",
+    "verifie_le": "2026-07-11",
+    "revoir_apres": "2027-01-31"
+  },
+  "statut_vivant": {
+    "statut": "confirme",
+    "note": "Documente dans le rapport annuel 2024 avec extension prevue en 2025 ; disponible aussi sur WhatsApp."
+  },
+  "sources": [
+    {
+      "ref": "S1",
+      "type": "rapport_annuel",
+      "fiabilite": "T1_primaire",
+      "titre": "L'Oreal, the Beauty Tech champion (Annual Report 2024)",
+      "url": "https://www.loreal-finance.com/en/annual-report-2024/beauty-tech-champion/",
+      "date_publication": "2025",
+      "consulte_le": "2026-07-11"
+    },
+    {
+      "ref": "S2",
+      "type": "customer_story_plateforme",
+      "fiabilite": "T2_officiel_interesse",
+      "titre": "AI at the service of beauty: L'Oreal Groupe deploys its AI agent with Azure OpenAI Service",
+      "url": "https://www.microsoft.com/en/customers/story/25570-loreal-azure-openai",
+      "date_publication": "2024",
+      "consulte_le": "2026-07-11"
+    },
+    {
+      "ref": "S3",
+      "type": "presse",
+      "fiabilite": "T3_presse_etablie",
+      "titre": "L'Oreal Paris launches game-changing AI assistant Beauty Genius",
+      "url": "https://theindustry.beauty/loreal-paris-launches-game-changing-ai-assistant-beauty-genius/",
+      "date_publication": "2024",
+      "consulte_le": "2026-07-11"
+    }
+  ],
+  "fonctionnement_operationnel": {
+    "cadence": "Temps reel, disponible 24/7",
+    "opere_par": "Equipe Beauty Tech L'Oreal (plateforme IA) et equipe digitale de la marque (contenu, garde-fous, catalogue)",
+    "signal_pilote": "La fraicheur et l'exactitude du catalogue produit et de la base de connaissance RAG. Si le RAG n'est pas a jour ou mal borne, l'agent recommande des produits indisponibles ou sort de son perimetre de conseil.",
+    "etapes": [
+      {
+        "etape": "Question de l'utilisateur",
+        "detail": "L'utilisateur decrit un besoin peau, maquillage ou coloration, ou envoie une photo pour diagnostic/essayage.",
+        "acteur": "client"
+      },
+      {
+        "etape": "Recuperation de contexte",
+        "detail": "Le systeme RAG va chercher, dans la base L'Oreal, les produits et contenus pertinents pour ancrer la reponse.",
+        "acteur": "IA (embeddings Ada)"
+      },
+      {
+        "etape": "Generation de la reponse",
+        "detail": "GPT-4o formule un conseil personnalise et une recommandation de routine sous 5 secondes.",
+        "acteur": "IA (GPT-4o)"
+      },
+      {
+        "etape": "Diagnostic et essayage visuel",
+        "detail": "ModiFace realise le diagnostic de peau ou l'essayage virtuel de maquillage a partir de la camera.",
+        "acteur": "IA (ModiFace)"
+      },
+      {
+        "etape": "Supervision et mise a jour",
+        "detail": "L'equipe de marque met a jour le catalogue, verifie les garde-fous de contenu et suit les conversations agregees.",
+        "acteur": "equipe marque / data"
+      }
+    ]
+  },
+  "schema_flow": {
+    "statut": "documente",
+    "noeuds": [
+      {
+        "id": "u",
+        "role_generique": "humain",
+        "label": "Consommateur (smartphone / WhatsApp)"
+      },
+      {
+        "id": "app",
+        "role_generique": "site_app",
+        "label": "Surface L'Oreal Paris (web / app / WhatsApp)"
+      },
+      {
+        "id": "llm",
+        "role_generique": "modele_ia",
+        "label": "Agent Beauty Genius",
+        "outil_documente": "Azure OpenAI GPT-4o"
+      },
+      {
+        "id": "rag",
+        "role_generique": "data_source",
+        "label": "Base de connaissance RAG (750+ produits L'Oreal)",
+        "outil_documente": "Azure OpenAI embeddings Ada"
+      },
+      {
+        "id": "vto",
+        "role_generique": "modele_ia",
+        "label": "Diagnostic peau / essayage virtuel",
+        "outil_documente": "ModiFace"
+      }
+    ],
+    "liens": [
+      [
+        "u",
+        "app"
+      ],
+      [
+        "app",
+        "llm"
+      ],
+      [
+        "llm",
+        "rag"
+      ],
+      [
+        "rag",
+        "llm",
+        "reponse ancree au catalogue"
+      ],
+      [
+        "llm",
+        "vto"
+      ],
+      [
+        "vto",
+        "app"
+      ],
+      [
+        "app",
+        "u",
+        "conseil + recommandation produit"
+      ]
+    ]
+  },
+  "replication": {
+    "statut_epistemique": "infere",
+    "prerequis_data": [
+      "catalogue produit structure et a jour",
+      "contenus experts valides (routines, ingredients)",
+      "images pour diagnostic/essayage si feature visuelle"
+    ],
+    "prerequis_orga": [
+      "equipe produit/legal pour les garde-fous de conseil",
+      "process de mise a jour du catalogue",
+      "budget d'inference LLM"
+    ],
+    "stack_possible": [
+      "Azure OpenAI ou equivalent (LLM + embeddings)",
+      "moteur RAG",
+      "brique d'essayage virtuel (ModiFace, Perfect Corp, Banuba)"
+    ],
+    "premiere_etape": "Indexer le catalogue et les contenus experts dans un RAG, puis brancher un LLM avec des garde-fous stricts sur le perimetre de conseil.",
+    "playbook": [
+      {
+        "action": "Structurer le catalogue produit et les contenus experts (routines, ingredients) puis les indexer",
+        "livrable": "Base de connaissance vectorisee, a jour et bornee au perimetre de conseil"
+      },
+      {
+        "action": "Brancher le LLM sur le RAG avec des garde-fous stricts (pas de conseil medical, produits disponibles uniquement)",
+        "livrable": "Prototype conversationnel valide par le legal et le metier"
+      },
+      {
+        "action": "Beta fermee : tests de charge, latence et taux de reponses hors perimetre",
+        "livrable": "Latence sous l'objectif + grille d'evaluation des reponses sur un panel de questions reelles"
+      },
+      {
+        "action": "Lancer sur un marche et un canal (web de marque), avec suivi des conversations agregees",
+        "livrable": "Agent en production + tableau de bord conversations/recommandations"
+      },
+      {
+        "action": "Ajouter la brique visuelle (diagnostic, essayage) et etendre aux autres canaux (app, WhatsApp) et marches",
+        "livrable": "Parcours visuel integre + plan de deploiement multi-marche"
+      }
+    ],
+    "equipe": "1 PM + 2 devs (RAG, integration) + 1 expert metier pour les garde-fous et le contenu + legal en revue"
+  },
+  "seo": {
+    "slug": "loreal-beauty-genius-assistant-genai-2024",
+    "title": "L'Oreal Beauty Genius : agent beaute genAI - 50 000 conversations en deux mois (2024)",
+    "meta_description": "Beauty Genius, l'assistant beaute genAI de L'Oreal Paris (GPT-4o + RAG + ModiFace), a genere plus de 50 000 conversations en deux mois aux Etats-Unis.",
+    "resume_citable": "Beauty Genius, l'assistant beaute genAI de L'Oreal Paris sous GPT-4o et RAG, a stimule plus de 50 000 conversations en deux mois aux Etats-Unis en 2024, avec une latence visee sous 5 secondes.",
+    "faq": [
+      {
+        "q": "Sur quelle technologie repose Beauty Genius ?",
+        "a": "Sur Azure OpenAI (GPT-4o pour la conversation, embeddings Ada pour un systeme RAG borne au catalogue L'Oreal) et sur ModiFace pour le diagnostic de peau et l'essayage virtuel."
+      },
+      {
+        "q": "Ou est-il deploye ?",
+        "a": "Lance aux Etats-Unis en 2024 (web de marque, application, WhatsApp), avec un deploiement annonce sur d'autres marches cles en 2025."
+      }
+    ]
+  },
+  "logo_domain": "lorealparis.com",
+  "stack_technique": [
+    {
+      "nom": "GPT-4o",
+      "categorie": "llm",
+      "detail": "modele de conversation qui formule le conseil beaute et la recommandation de routine, latence visee sous 5 secondes",
+      "url": "https://openai.com"
+    },
+    {
+      "nom": "Azure OpenAI Service",
+      "categorie": "plateforme",
+      "detail": "heberge GPT-4o et les embeddings pour L'Oreal, teste jusqu'a 2 000 utilisateurs simultanes",
+      "url": "https://azure.microsoft.com"
+    },
+    {
+      "nom": "Embeddings Ada (OpenAI)",
+      "categorie": "llm",
+      "detail": "vectorisation du catalogue et des contenus L'Oreal pour le systeme RAG borne aux 750+ references",
+      "url": "https://openai.com"
+    },
+    {
+      "nom": "ModiFace",
+      "categorie": "outil",
+      "detail": "diagnostic de peau et essayage virtuel de maquillage a partir de la camera, filiale L'Oreal",
+      "url": "https://www.modiface.com"
+    },
+    {
+      "nom": "WhatsApp",
+      "categorie": "infra",
+      "detail": "canal de distribution de l'assistant en plus du web de marque et de l'application",
+      "url": "https://www.whatsapp.com"
+    }
+  ]
+}

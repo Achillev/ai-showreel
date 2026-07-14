@@ -1,0 +1,291 @@
+{
+  "id": "nubank-nuformer-scoring-credit-2025",
+  "type_fiche": "succes",
+  "marque": "Nubank",
+  "groupe": "Nu Holdings Ltd.",
+  "industrie": "banque_assurance_fintech",
+  "marches_deploiement": [
+    "Bresil",
+    "Mexique",
+    "Colombie"
+  ],
+  "transposable_ue": {
+    "flag": "oui_avec_adaptations",
+    "note": "Le scoring de credit par foundation model est transposable, mais l'AI Act classe l'evaluation de solvabilite comme systeme a haut risque : documentation, supervision humaine et explicabilite requises. Le RGPD (art. 22) encadre la decision de credit automatisee ; il faut un droit d'explication et de contestation."
+  },
+  "metier": "Risque credit et underwriting",
+  "intervenants": [
+    {
+      "nom": "Daniela Canuta",
+      "role": "Lead Data Scientist, Nubank (intervention publique sur les modeles de credit ML)",
+      "source_ref": "S3"
+    }
+  ],
+  "axes": {
+    "levier": "monetisation",
+    "touchpoints": [
+      "app bancaire",
+      "decision de credit et de limite"
+    ],
+    "etape_parcours": "post-achat",
+    "famille": "prediction",
+    "pattern": "foundation model transactionnel pour le scoring de credit",
+    "type_ia": [
+      "foundation model self-supervise (transformer)",
+      "embeddings transactionnels",
+      "fusion tabular et sequentiel"
+    ],
+    "plateforme_stack": [
+      "custom/in-house (nuFormer)",
+      "PyTorch",
+      "Databricks / PySpark"
+    ],
+    "objectif_metrique": [
+      "churn",
+      "AuC / precision du scoring",
+      "part de marche carte de credit",
+      "qualite du portefeuille"
+    ]
+  },
+  "implementation": "custom",
+  "stack_technique": [
+    {
+      "nom": "nuFormer",
+      "categorie": "llm",
+      "detail": "Foundation model transformer self-supervise entraine en interne sur les sequences de transactions, produisant des embeddings de comportement client fusionnes avec les variables tabulaires.",
+      "url": "https://international.nubank.com.br"
+    },
+    {
+      "nom": "LightGBM",
+      "categorie": "llm",
+      "detail": "Gradient boosting servant de baseline sectorielle de scoring, battue de +1,25% d'AuC relatif par le modele fusionne.",
+      "url": "https://github.com/microsoft/LightGBM"
+    },
+    {
+      "nom": "PyTorch",
+      "categorie": "outil",
+      "detail": "Framework d'entrainement du foundation model.",
+      "url": "https://pytorch.org"
+    },
+    {
+      "nom": "Databricks",
+      "categorie": "plateforme",
+      "detail": "Plateforme de traitement de donnees a grande echelle pour l'entrainement et le scoring.",
+      "url": "https://www.databricks.com"
+    },
+    {
+      "nom": "PySpark (Apache Spark)",
+      "categorie": "infra",
+      "detail": "Pipelines de preparation des donnees transactionnelles.",
+      "url": "https://spark.apache.org"
+    }
+  ],
+  "objectif_business": "Approuver du credit pour des profils que le scoring classique ecarte, sans degrader la qualite du portefeuille, et gagner de la part de marche carte de credit en prenant de meilleures decisions de risque a grande echelle.",
+  "points_cles": ["Foundation model transactionnel nuFormer pour le scoring de credit.", "Transformer self-supervise custom, embeddings fusionnes avec des variables tabulaires (PyTorch, Databricks).", "+1,25% d'AuC relatif vs LightGBM, -4,4% de churn, plus fort gain de part de marche en 10 trimestres.", "Preuve B, statut confirme."],
+  "description": "Nubank a construit nuFormer, un foundation model self-supervise entraine sur ses donnees de transaction. Le modele produit des embeddings du comportement transactionnel du client, qu'il fusionne avec des variables tabulaires classiques pour scorer le risque de credit et alimenter les decisions d'octroi et d'augmentation de limite. Sur les segments comparables, la version fusionnee a apporte une amelioration relative de l'AuC de +1,25% par rapport a la reference du secteur (LightGBM), et le modele en production a reduit le churn client de 4,4% en relatif face au modele de reference. Nubank attribue a nuFormer son plus fort gain trimestriel de part de marche carte de credit au Bresil en dix trimestres, au quatrieme trimestre 2025. Le modele est operationnel au Bresil et se deploie vers les prets personnels et les marches du Mexique et de la Colombie.",
+  "resultats": [
+    {
+      "metrique": "Gain relatif d'AuC du scoring, contre la baseline secteur LightGBM",
+      "valeur": "+1,25% d'AuC",
+      "citation_exacte": "+1.25% relative improvement in test AuC over the industry-standard LightGBM baseline",
+      "source_ref": "S2"
+    },
+    {
+      "metrique": "Reduction relative du churn client, contre le modele de reference",
+      "valeur": "-4,4% de churn",
+      "citation_exacte": "4.4% relative reduction in customer churn against the baseline model",
+      "source_ref": "S2"
+    },
+    {
+      "metrique": "Plus fort gain trimestriel de part de marche carte de credit au Bresil (Q4 2025)",
+      "valeur": "10 trimestres",
+      "citation_exacte": "largest quarterly credit card market share gain in Brazil in ten quarters",
+      "source_ref": "S2"
+    }
+  ],
+  "niveau_preuve": {
+    "niveau": "B",
+    "justification": "Les gains de modele (AuC, churn) proviennent de la recherche publiee par Nubank et de son deploiement en production ; le gain de part de marche figure dans les resultats du quatrieme trimestre 2025. Sources concordantes (page officielle Nubank, analyse tierce reprenant les memes chiffres). Attribution du gain de part de marche a nuFormer portee par Nubank, donc conservee comme telle."
+  },
+  "dates": {
+    "lancement": "2025 (mise en production de nuFormer sur le credit au Bresil)",
+    "derniere_confirmation_activite": "Q4 2025 / 2026 (resultats trimestriels et communication AI strategy)",
+    "verifie_le": "2026-07-11",
+    "revoir_apres": "2027-01-11"
+  },
+  "statut_vivant": {
+    "statut": "confirme",
+    "note": "nuFormer est en production sur le credit au Bresil et en cours de deploiement vers les prets personnels et les marches Mexique et Colombie, confirme par la communication Nubank de fin 2025 et 2026."
+  },
+  "sources": [
+    {
+      "ref": "S1",
+      "type": "blog_officiel",
+      "fiabilite": "T2_officiel_interesse",
+      "titre": "Nu's AI-powered credit model extends access while maintaining portfolio quality",
+      "url": "https://international.nubank.com.br/company/nubanks-ai-powered-credit-model-extends-access-while-maintaining-portfolio-quality/",
+      "date_publication": "2026",
+      "consulte_le": "2026-07-11"
+    },
+    {
+      "ref": "S2",
+      "type": "analyse_academique",
+      "fiabilite": "T4_secondaire",
+      "titre": "Nubank's AI Model Rewrites Credit Underwriting (WhiteSight)",
+      "url": "https://whitesight.net/nubanks-ai-model-rewrites-credit-underwriting/",
+      "date_publication": "2026-04-22",
+      "consulte_le": "2026-07-11"
+    },
+    {
+      "ref": "S3",
+      "type": "eng_blog",
+      "fiabilite": "T2_officiel_interesse",
+      "titre": "How Nubank uses causality, machine learning and Python to support credit limit increase decisions",
+      "url": "https://building.nubank.com/how-nubank-uses-causality-machine-learning-and-python-to-support-credit-limit-increase-decisions/",
+      "date_publication": "2026-07-01",
+      "consulte_le": "2026-07-11"
+    }
+  ],
+  "fonctionnement_operationnel": {
+    "cadence": "Batch d'entrainement periodique du foundation model, scoring en continu pour les decisions de credit ; iterations frequentes des modeles.",
+    "opere_par": "Equipes data science et risque credit de Nubank.",
+    "signal_pilote": "Le comportement de transaction et le remboursement observe. Si la donnee transactionnelle se degrade ou si les labels de defaut arrivent en retard, la calibration du risque devient moins fiable.",
+    "etapes": [
+      {
+        "etape": "Pre-entrainement",
+        "detail": "nuFormer apprend en self-supervise sur les sequences de transactions pour produire des embeddings du comportement client.",
+        "acteur": "equipe data"
+      },
+      {
+        "etape": "Fusion et scoring",
+        "detail": "Les embeddings sont combines a des variables tabulaires classiques pour scorer le risque de credit.",
+        "acteur": "IA"
+      },
+      {
+        "etape": "Decision de credit",
+        "detail": "Le score alimente l'octroi, la limite et son augmentation, sous garde-fous de politique de risque.",
+        "acteur": "equipe risque"
+      },
+      {
+        "etape": "Suivi en production",
+        "detail": "Plus d'un millier d'indicateurs de suivi sont surveilles pour detecter la derive et declencher un reentrainement.",
+        "acteur": "equipe data"
+      }
+    ]
+  },
+  "schema_flow": {
+    "statut": "documente",
+    "noeuds": [
+      {
+        "id": "txn",
+        "role_generique": "data_source",
+        "label": "Sequences de transactions client"
+      },
+      {
+        "id": "nuformer",
+        "role_generique": "modele_ia",
+        "label": "nuFormer (foundation model transactionnel)",
+        "outil_documente": "nuFormer (transformer self-supervise)"
+      },
+      {
+        "id": "tabular",
+        "role_generique": "data_source",
+        "label": "Variables tabulaires de credit"
+      },
+      {
+        "id": "score",
+        "role_generique": "modele_ia",
+        "label": "Modele de scoring fusionne"
+      },
+      {
+        "id": "credit",
+        "role_generique": "humain",
+        "label": "Decision d'octroi et de limite"
+      }
+    ],
+    "liens": [
+      [
+        "txn",
+        "nuformer",
+        "embeddings"
+      ],
+      [
+        "nuformer",
+        "score"
+      ],
+      [
+        "tabular",
+        "score"
+      ],
+      [
+        "score",
+        "credit",
+        "score de risque"
+      ],
+      [
+        "credit",
+        "txn",
+        "remboursement observe (reapprentissage)"
+      ]
+    ]
+  },
+  "replication": {
+    "statut_epistemique": "infere",
+    "playbook": [
+      {
+        "action": "Etablir une baseline de scoring robuste (gradient boosting sur variables tabulaires) et documenter son AuC par segment.",
+        "livrable": "Baseline documentee avec metriques de reference."
+      },
+      {
+        "action": "Pre-entrainer un modele self-supervise sur les sequences de transactions first-party.",
+        "livrable": "Embeddings transactionnels evalues hors ligne."
+      },
+      {
+        "action": "Fusionner embeddings et variables tabulaires, puis mesurer le gain marginal d'AuC contre la baseline sur les segments comparables.",
+        "livrable": "Modele fusionne battant la baseline, avec gain chiffre."
+      },
+      {
+        "action": "Passer la validation risque et conformite : explicabilite, supervision humaine, gouvernance de systeme a haut risque (AI Act, art. 22 RGPD).",
+        "livrable": "Dossier de gouvernance modele approuve."
+      },
+      {
+        "action": "Deployer progressivement sur les decisions d'octroi et de limite, avec monitoring de derive et reentrainement declenchable.",
+        "livrable": "Modele en production avec indicateurs de suivi et plan de repli."
+      }
+    ],
+    "equipe": "3-5 data scientists / ML engineers + 1 data engineer, plus une fonction risque credit et conformite dediee pour la gouvernance du modele.",
+    "prerequis_data": [
+      "Volume important de sequences de transactions first-party",
+      "Historique de defaut et de remboursement labellise",
+      "Infrastructure de traitement a grande echelle"
+    ],
+    "prerequis_orga": [
+      "Equipe data science capable d'entrainer un foundation model",
+      "Fonction risque credit et conformite",
+      "Gouvernance modele (AI Act haut risque)"
+    ],
+    "stack_possible": [
+      "Foundation model custom (voie Nubank)",
+      "gradient boosting type LightGBM comme baseline",
+      "PyTorch, Databricks, Spark"
+    ],
+    "premiere_etape": "Etablir un baseline de scoring robuste (gradient boosting) et mesurer le gain marginal d'embeddings transactionnels avant d'industrialiser."
+  },
+  "seo": {
+    "slug": "nubank-nuformer-scoring-credit-2025",
+    "title": "Nubank : scoring de credit par foundation model (nuFormer) - plus fort gain de part de marche en 10 trimestres (2025)",
+    "meta_description": "Le foundation model transactionnel de Nubank : +1,25% d'AuC vs LightGBM, -4,4% de churn, plus fort gain de part de marche carte de credit en 10 trimestres.",
+    "resume_citable": "En 2025, Nubank met en production nuFormer, un foundation model transactionnel qui ameliore l'AuC du scoring de credit de +1,25% relatif face a LightGBM, reduit le churn de 4,4% et lui vaut son plus fort gain trimestriel de part de marche carte de credit au Bresil en dix trimestres.",
+    "faq": [
+      {
+        "q": "Qu'est-ce que nuFormer ?",
+        "a": "Un foundation model self-supervise entraine sur les transactions des clients Nubank, qui produit des embeddings de comportement fusionnes avec des variables tabulaires pour scorer le risque de credit."
+      },
+      {
+        "q": "Quels resultats Nubank rapporte-t-il ?",
+        "a": "Une amelioration relative de l'AuC de +1,25% face a LightGBM, une reduction du churn de 4,4% en production, et le plus fort gain trimestriel de part de marche carte de credit au Bresil en dix trimestres au Q4 2025."
+      }
+    ]
+  },
+  "logo_domain": "nubank.com.br"
+}

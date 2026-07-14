@@ -1,0 +1,221 @@
+{
+  "id": "amazon-just-walk-out-retrait-2024",
+  "type_fiche": "echec_retrait",
+  "marque": "Amazon Fresh",
+  "groupe": "Amazon",
+  "industrie": "retail_ecom",
+  "marches_deploiement": [
+    "Etats-Unis"
+  ],
+  "transposable_ue": {
+    "flag": "oui_avec_adaptations",
+    "note": "Le checkout par vision par ordinateur est deployable en Europe, mais la captation video en magasin et l'annotation humaine d'images de clients relevent du RGPD (base legale, information, minimisation) et, selon l'usage, de regles sur la biometrie. La lecon economique (le cout cache de la supervision humaine derriere une automatisation presentee comme totale) est transposable telle quelle."
+  },
+  "metier": "retail / operations magasin",
+  "axes": {
+    "levier": "activation_conversion",
+    "touchpoints": [
+      "magasin physique",
+      "sortie sans caisse"
+    ],
+    "etape_parcours": "achat",
+    "famille": "optimisation_automatisation",
+    "pattern": "checkout sans caisse par vision par ordinateur",
+    "type_ia": [
+      "vision par ordinateur",
+      "fusion de capteurs",
+      "annotation humaine"
+    ],
+    "plateforme_stack": [
+      "Amazon Just Walk Out (custom)"
+    ],
+    "objectif_metrique": [
+      "temps de passage en caisse",
+      "cout operationnel",
+      "friction a l'achat"
+    ]
+  },
+  "implementation": "custom",
+  "objectif_business": "Supprimer la caisse en magasin : le client prend ses articles et repart, le systeme detecte ce qu'il emporte et le facture automatiquement, pour reduire la friction et le cout de passage.",
+  "description": "Just Walk Out equipait des magasins Amazon Fresh de plafonds de cameras et de capteurs pour facturer automatiquement ce que le client emporte, sans passage en caisse. En 2024, Amazon retire cette technologie de ses magasins Amazon Fresh americains et la remplace par des Dash Carts, des chariots qui scannent les articles. Des reportages, dont The Information, rapportent qu'une large part des transactions passait en realite par des annotateurs humains en Inde qui validaient les video. Amazon conteste la formulation d'une dependance aux relecteurs humains.",
+  "resultats": [
+    {
+      "metrique": "retrait",
+      "valeur": "Just Walk Out retire des magasins Amazon Fresh americains, remplace par les Dash Carts",
+      "citation_exacte": "The characterization that Just Walk Out technology relies on human reviewers is inaccurate",
+      "source_ref": "S1"
+    },
+    {
+      "metrique": "supervision humaine",
+      "valeur": "des annotateurs valident une partie des visites quand le systeme n'est pas sur",
+      "citation_exacte": "may also validate a small minority of shopping visits",
+      "source_ref": "S1"
+    }
+  ],
+  "niveau_preuve": {
+    "niveau": "C",
+    "justification": "Retrait rapporte par la presse etablie (Retail Dive, sur la base de The Information) citant nommement Amazon et sa reponse officielle par porte-parole. Pas de communique financier isole ni de decision de justice."
+  },
+  "dates": {
+    "lancement": "Just Walk Out en magasin Amazon Fresh a partir de 2020 (premiers deploiements)",
+    "derniere_confirmation_activite": "2024-04-03 (retrait des Amazon Fresh US rapporte)",
+    "verifie_le": "2026-07-11",
+    "revoir_apres": "2027-07-11"
+  },
+  "statut_vivant": {
+    "statut": "signaux_mitiges",
+    "note": "Retrait partiel : Just Walk Out est retire des Amazon Fresh americains, mais subsiste dans des magasins Amazon Go, dans de plus petits magasins au Royaume-Uni, et est licencie a des tiers (stades, aeroports). C'est un recul cible sur le format supermarche, pas l'abandon de la technologie."
+  },
+  "sources": [
+    {
+      "ref": "S1",
+      "type": "presse",
+      "fiabilite": "T3_presse_etablie",
+      "titre": "Amazon removes Just Walk Out tech from US Amazon Fresh stores",
+      "url": "https://www.retaildive.com/news/amazon-removes-just-walk-out-tech-amazon-fresh-stores-dash-carts/712150/",
+      "date_publication": "2024-04-03",
+      "consulte_le": "2026-07-11"
+    },
+    {
+      "ref": "S2",
+      "type": "presse",
+      "fiabilite": "T4_secondaire",
+      "titre": "Amazon hits out at report that Just Walk Out relies on human reviewers watching from afar",
+      "url": "https://retailtechinnovationhub.com/home/2024/4/17/amazon-hits-back-at-media-reports-that-its-just-walk-out-technology-relies-on-human-reviewers-watching-from-afar",
+      "date_publication": "2024-04-17",
+      "consulte_le": "2026-07-11"
+    }
+  ],
+  "post_mortem": {
+    "ce_qui_s_est_passe": "Amazon deploie Just Walk Out dans ses magasins Amazon Fresh a partir de 2020. En 2024, l'entreprise retire cette technologie des Amazon Fresh americains et la remplace par des Dash Carts, chariots qui scannent les articles pendant les courses. The Information rapporte qu'une large part des ventes reposait sur des annotateurs en Inde validant les video. Amazon repond que la technologie ne depend pas de relecteurs humains, que ces equipes entrainent surtout le modele et n'en valident qu'une petite minorite. Just Walk Out reste dans les Amazon Go et chez des clients tiers.",
+    "raison_echec": "Sur le format supermarche, l'economie ne tenait pas : un environnement dense en articles et en clients demandait une supervision humaine couteuse pour atteindre la fiabilite de facturation, sans les gains d'echelle attendus. Le Dash Cart, qui remet le scan au client, offrait un compromis cout/fiabilite plus simple pour ce format.",
+    "date_retrait": "2024 (retrait des Amazon Fresh US, rapporte en avril 2024)",
+    "cout_estime": "Cout non chiffre publiquement. Investissement pluriannuel en cameras, capteurs et infrastructure par magasin, plus le cout de l'annotation humaine, pour un format ou la technologie a finalement ete remplacee. Cout reputationnel lie a l'ecart entre l'image d'automatisation totale et le recours a des annotateurs.",
+    "signaux_avant_coureurs": "Infere : un cout par magasin eleve (plafonds de cameras et capteurs), un besoin persistant d'annotation humaine pour atteindre la fiabilite, et une expansion du format supermarche plus lente qu'annoncee. La dependance a la supervision humaine dans les scenes complexes indiquait que l'automatisation n'etait pas encore autonome a ce niveau de densite.",
+    "lecons_avec_recul": "Infere : il faut mesurer le cout complet d'une automatisation, supervision humaine incluse, et le confronter au format reel. Une technologie qui marche dans un petit magasin de proximite (Amazon Go) ne se transpose pas mecaniquement a un supermarche dense. Et communiquer une automatisation comme totale quand elle repose en partie sur des humains cree un risque reputationnel quand l'ecart se voit.",
+    "le_pattern_reste_il_valide": "Infere : oui, le pattern du checkout sans friction reste valide, mais son economie depend fortement du format. Amazon lui-meme le conserve dans les petits magasins et le licencie a des tiers. L'echec est un recul cible sur le supermarche, pas la condamnation du checkout par vision par ordinateur. Le Dash Cart montre qu'un compromis semi-automatise peut mieux coller a un format donne."
+  },
+  "schema_flow": {
+    "statut": "documente",
+    "noeuds": [
+      {
+        "id": "client",
+        "role_generique": "humain",
+        "label": "Client qui prend ses articles et sort"
+      },
+      {
+        "id": "capteurs",
+        "role_generique": "data_source",
+        "label": "Cameras plafond + capteurs de rayon"
+      },
+      {
+        "id": "cv",
+        "role_generique": "modele_ia",
+        "label": "Vision par ordinateur (detection panier)",
+        "outil_documente": "Amazon Just Walk Out"
+      },
+      {
+        "id": "annot",
+        "role_generique": "humain",
+        "label": "Annotateurs (Inde) validant les cas incertains"
+      },
+      {
+        "id": "compte",
+        "role_generique": "site_app",
+        "label": "Compte Amazon (facturation auto)"
+      }
+    ],
+    "liens": [
+      [
+        "client",
+        "capteurs"
+      ],
+      [
+        "capteurs",
+        "cv"
+      ],
+      [
+        "cv",
+        "annot",
+        "cas a faible confiance"
+      ],
+      [
+        "annot",
+        "cv",
+        "validation / correction"
+      ],
+      [
+        "cv",
+        "compte",
+        "facturation"
+      ]
+    ]
+  },
+  "replication": {
+    "statut_epistemique": "infere",
+    "prerequis_data": [
+      "flux video multi-cameras",
+      "capteurs de poids/rayon",
+      "catalogue et planogramme"
+    ],
+    "prerequis_orga": [
+      "equipe d'annotation et de supervision",
+      "modele economique par format valide"
+    ],
+    "stack_possible": [
+      "vision par ordinateur + fusion de capteurs",
+      "chariot scannant (compromis semi-auto)",
+      "conformite RGPD sur la captation en magasin"
+    ],
+    "premiere_etape": "Chiffrer le cout complet par format, supervision humaine incluse, sur un magasin pilote, avant d'engager l'instrumentation a l'echelle."
+  },
+  "stack_technique": [
+    {
+      "nom": "Amazon Just Walk Out",
+      "categorie": "plateforme",
+      "detail": "Technologie maison de checkout sans caisse, retiree des Amazon Fresh US en 2024 mais conservee dans les Amazon Go et licenciee a des tiers via AWS.",
+      "url": "https://aws.amazon.com"
+    },
+    {
+      "nom": "Vision par ordinateur et fusion de capteurs",
+      "categorie": "llm",
+      "detail": "Modeles maison qui detectent les articles pris en rayon a partir des flux cameras et capteurs ; architecture non publiee.",
+      "url": "https://www.amazon.com"
+    },
+    {
+      "nom": "Cameras plafond et capteurs de rayon",
+      "categorie": "infra",
+      "detail": "Instrumentation physique par magasin, principal poste de cout du format supermarche.",
+      "url": "https://www.amazon.com"
+    },
+    {
+      "nom": "Annotation humaine",
+      "categorie": "outil",
+      "detail": "Equipes, notamment en Inde, qui entrainent le modele et valident les visites a faible confiance ; Amazon conteste une dependance structurelle.",
+      "url": "https://www.amazon.com"
+    },
+    {
+      "nom": "Dash Cart",
+      "categorie": "outil",
+      "detail": "Chariot a scan embarque qui a remplace Just Walk Out dans les Amazon Fresh americains, compromis semi-automatise.",
+      "url": "https://www.amazon.com"
+    }
+  ],
+  "seo": {
+    "slug": "amazon-just-walk-out-retrait-2024",
+    "title": "Amazon Just Walk Out : retire des Amazon Fresh, remplace par Dash Carts (2024)",
+    "meta_description": "En 2024, Amazon retire Just Walk Out de ses supermarches Fresh americains au profit des Dash Carts, sur fond de supervision humaine cachee.",
+    "resume_citable": "En 2024, Amazon a retire sa technologie de checkout sans caisse Just Walk Out de ses supermarches Amazon Fresh americains au profit des Dash Carts, apres des reportages sur le recours a des annotateurs humains ; la techno subsiste dans les Amazon Go et chez des tiers.",
+    "faq": [
+      {
+        "q": "Just Walk Out reposait-il sur des humains ?",
+        "a": "The Information a rapporte qu'une large part des transactions passait par des annotateurs en Inde. Amazon conteste toute dependance et affirme que ces equipes entrainent surtout le modele et ne valident qu'une petite minorite des visites incertaines."
+      },
+      {
+        "q": "Amazon a-t-il abandonne le checkout sans caisse ?",
+        "a": "Non, seulement sur le format supermarche. Just Walk Out reste dans les magasins Amazon Go, dans de plus petits magasins au Royaume-Uni, et est licencie a des tiers comme des stades et aeroports."
+      }
+    ]
+  },
+  "logo_domain": "amazon.com"
+}

@@ -1,0 +1,273 @@
+{
+  "type_fiche": "succes",
+  "id": "de-paardendrogist-advantage-plus-2024",
+  "marque": "De Paardendrogist",
+  "industrie": "retail_ecom",
+  "marches_deploiement": [
+    "Pays-Bas",
+    "Belgique",
+    "Allemagne"
+  ],
+  "transposable_ue": {
+    "flag": "oui",
+    "note": "Cas deja deploye aux Pays-Bas, en Belgique et en Allemagne, donc en environnement RGPD/ePrivacy. Repose sur le catalogue produit et le suivi d'achat Meta ; activation soumise au consentement. Le ciblage geographique manuel reste sous controle de l'annonceur. Risque AI Act limite."
+  },
+  "metier": "Acquisition / media performance e-commerce",
+  "axes": {
+    "levier": "acquisition",
+    "touchpoints": [
+      "Facebook Feed",
+      "Instagram Feed",
+      "Advantage+ placements"
+    ],
+    "etape_parcours": "découverte -> achat",
+    "famille": "optimisation_automatisation",
+    "pattern": "Campagne de vente automatisee par IA combinee a un ciblage geographique et a des posts sponsorises, dans une structure de compte restructuree",
+    "type_ia": [
+      "ML de ciblage et d'encheres",
+      "ads catalogue dynamiques"
+    ],
+    "plateforme_stack": [
+      "Meta Advantage+ Shopping Campaigns",
+      "Meta Advantage+ placements",
+      "Boosted posts",
+      "Retargeting"
+    ],
+    "objectif_metrique": [
+      "revenu genere",
+      "ROAS",
+      "taux de conversion"
+    ]
+  },
+  "implementation": "plateforme",
+  "objectif_business": "Restructurer le compte Meta pour mieux allouer le budget, augmenter le revenu sur les produits de la marque propre et tenir un ROAS d'au moins 10.",
+  "points_cles": ["Compte Meta restructure autour de campagnes de vente automatisees par IA.", "Meta Advantage+ Shopping plus posts sponsorises, retargeting et ciblage geographique.", "Revenu +111,2% et +404% sur le pic de novembre, ROAS superieur a 18.", "Preuve B, statut confirme, projet mene avec l'agence scandiweb."],
+  "description": "De Paardendrogist, un e-commercant neerlandais de produits de soin pour chevaux avec plus de 30 ans d'anciennete, a restructure son compte Meta avec l'agence scandiweb. Le dispositif s'appuie sur des campagnes Advantage+ Shopping, ou l'IA choisit audiences, placements et creas a partir du catalogue produit, combinees a des posts sponsorises, du retargeting et un ciblage geographique concentre sur les zones a forte densite d'elevages, aux Pays-Bas, en Belgique et en Allemagne. Les formats testes vont du visuel simple aux carousels catalogue et collection ads. Advantage+ Shopping et les posts sponsorises ont porte a eux deux 45 pour cent du revenu Meta. La restructuration a fait grimper le revenu de 111,2 pour cent, avec un taux de conversion en hausse de 30 pour cent. Sur le pic de novembre 2024 compare a novembre 2023, le revenu a bondi de 404 pour cent et le ROAS global a depasse 18, particulierement fort sur le marche neerlandais.",
+  "fonctionnement_operationnel": {
+    "cadence": "Diffusion en continu, avec montee en charge sur le pic saisonnier de novembre ; regles automatiques pour ajuster la depense selon la meteo, qui pese sur la demande de produits equins.",
+    "opere_par": "L'agence scandiweb avec l'equipe de De Paardendrogist.",
+    "signal_pilote": "Les achats remontes par le suivi Meta et le ROAS cible d'au moins 10. Si le signal d'achat manque, l'algorithme optimise mal et le ROAS decroche.",
+    "etapes": [
+      {
+        "etape": "Restructurer le compte",
+        "detail": "Reorganisation des campagnes pour une meilleure allocation de budget entre Advantage+ Shopping, posts sponsorises et retargeting.",
+        "acteur": "Agence"
+      },
+      {
+        "etape": "Diffuser via l'IA Meta",
+        "detail": "Advantage+ Shopping choisit audiences, placements et creas a partir du catalogue. Formats testes : visuel simple, carousels catalogue, collection ads.",
+        "acteur": "IA Meta"
+      },
+      {
+        "etape": "Cibler les zones equines et gerer la meteo",
+        "detail": "Ciblage geographique sur les regions a forte densite d'elevages, avec des regles automatiques qui ajustent la depense selon la meteo.",
+        "acteur": "Agence"
+      }
+    ]
+  },
+  "resultats": [
+    {
+      "metrique": "Croissance du revenu apres restructuration",
+      "valeur": "+111,2 %",
+      "citation_exacte": "111.2% revenue growth",
+      "source_ref": "S1"
+    },
+    {
+      "metrique": "Part du revenu Meta portee par Advantage+ Shopping et posts sponsorises",
+      "valeur": "45 %",
+      "citation_exacte": "together drove 45% of total revenue",
+      "source_ref": "S1"
+    },
+    {
+      "metrique": "Revenu sur le pic novembre 2024 vs novembre 2023",
+      "valeur": "+404 %",
+      "citation_exacte": "revenue increase of +404% (Nov 2024 vs Nov 2023)",
+      "source_ref": "S2"
+    },
+    {
+      "metrique": "ROAS global sur la periode",
+      "valeur": ">18",
+      "citation_exacte": "the overall ROAS exceeded 18",
+      "source_ref": "S2"
+    }
+  ],
+  "niveau_preuve": {
+    "niveau": "B",
+    "justification": "Deux etudes de cas chiffrees de l'integrateur qui a mene le projet (scandiweb), concordantes sur la meme marque et le meme dispositif Advantage+ ; publiees par l'agence, sans corroboration primaire ou de presse independante."
+  },
+  "dates": {
+    "lancement": "2024",
+    "derniere_confirmation_activite": "2025-01-31 (etude de cas pic saisonnier) ; Advantage+ reste le format de vente par defaut de Meta",
+    "verifie_le": "2026-07-11",
+    "revoir_apres": "2027-01-11"
+  },
+  "statut_vivant": {
+    "statut": "confirme",
+    "note": "De Paardendrogist reste un e-commercant actif et Advantage+ Shopping est le format de vente par defaut de Meta ; scandiweb reste partenaire e-commerce, ce qui garantit la perennite du pattern."
+  },
+  "sources": [
+    {
+      "ref": "S1",
+      "type": "customer_story_plateforme",
+      "titre": "Meta Ads Restructure Yields 111% Revenue Growth for De Paardendrogist (scandiweb)",
+      "url": "https://scandiweb.com/blog/meta-ads-restructure-yields-significant-revenue-growth-for-paardendrogist/",
+      "date_publication": "2024-08-17",
+      "consulte_le": "2026-07-11",
+      "fiabilite": "T2_officiel_interesse"
+    },
+    {
+      "ref": "S2",
+      "type": "customer_story_plateforme",
+      "titre": "Case Study: +404% Revenue in Peak Season with Meta Ads (De Paardendrogist, scandiweb)",
+      "url": "https://scandiweb.com/blog/ppc-case-study-increased-revenue-during-peak-season-with-meta-ads/",
+      "date_publication": "2025-01-31",
+      "consulte_le": "2026-07-11",
+      "fiabilite": "T2_officiel_interesse"
+    }
+  ],
+  "schema_flow": {
+    "statut": "documente",
+    "noeuds": [
+      {
+        "id": "cat",
+        "role_generique": "data_source",
+        "label": "Catalogue produit + signaux d'achat",
+        "outil_documente": "Feed produit + suivi d'achat Meta"
+      },
+      {
+        "id": "geo",
+        "role_generique": "data_source",
+        "label": "Ciblage geographique (zones a forte densite d'elevages)"
+      },
+      {
+        "id": "ai",
+        "role_generique": "paid_platform",
+        "label": "IA Meta : audiences, encheres, placements, creas",
+        "outil_documente": "Meta Advantage+ Shopping + boosted posts"
+      },
+      {
+        "id": "touch",
+        "role_generique": "site_app",
+        "label": "Feed Facebook / Instagram + Advantage+ placements"
+      },
+      {
+        "id": "buy",
+        "role_generique": "site_app",
+        "label": "Achat en ligne"
+      }
+    ],
+    "liens": [
+      [
+        "cat",
+        "ai"
+      ],
+      [
+        "geo",
+        "ai"
+      ],
+      [
+        "ai",
+        "touch"
+      ],
+      [
+        "touch",
+        "buy"
+      ],
+      [
+        "buy",
+        "ai",
+        "boucle d'optimisation sur les achats"
+      ]
+    ]
+  },
+  "stack_technique": [
+    {
+      "nom": "Meta Advantage+ Shopping",
+      "categorie": "plateforme",
+      "detail": "campagne de vente automatisee : audiences, encheres, placements et creas pilotes par le ML de Meta a partir du catalogue",
+      "url": "https://www.facebook.com/business/ads/advantage-plus-shopping-campaigns"
+    },
+    {
+      "nom": "Meta Pixel + Conversions API",
+      "categorie": "infra",
+      "detail": "remontee des achats, le signal qui permet a l'algorithme de tenir le ROAS cible d'au moins 10",
+      "url": "https://www.facebook.com/business/tools/conversions-api"
+    },
+    {
+      "nom": "Regles automatiques Meta Ads",
+      "categorie": "outil",
+      "detail": "regles qui ajustent la depense selon un facteur externe, ici la meteo qui pese sur la demande de produits equins",
+      "url": "https://www.facebook.com/business"
+    },
+    {
+      "nom": "scandiweb",
+      "categorie": "integrateur",
+      "detail": "agence e-commerce qui a restructure le compte et pilote les campagnes",
+      "url": "https://scandiweb.com"
+    }
+  ],
+  "replication": {
+    "statut_epistemique": "infere",
+    "prerequis_data": [
+      "Catalogue produit propre et a jour (feed)",
+      "Suivi d'achat Meta fiable (Pixel + Conversions API)",
+      "Donnees geographiques pour cibler les zones a forte demande"
+    ],
+    "prerequis_orga": [
+      "Compte Meta a restructurer pour reallouer le budget",
+      "Regles automatiques pour piloter la depense selon un facteur externe (ici la meteo)"
+    ],
+    "stack_possible": [
+      "Meta Advantage+ Sales Campaigns + CAPI",
+      "Regles automatiques de gestion du budget"
+    ],
+    "premiere_etape": "Restructurer le compte autour d'une campagne Advantage+ Shopping et d'un ciblage geographique, avec un ROAS cible clair a defendre.",
+    "playbook": [
+      {
+        "action": "Auditer et restructurer le compte : allocation du budget entre Advantage+ Shopping, posts sponsorises et retargeting.",
+        "livrable": "Nouveau plan de compte avec repartition budgetaire"
+      },
+      {
+        "action": "Fiabiliser le feed catalogue et la mesure d'achat (Pixel + Conversions API).",
+        "livrable": "Tracking d'achat valide dans Events Manager"
+      },
+      {
+        "action": "Lancer Advantage+ Shopping avec un ROAS cible clair et un ciblage geographique sur les zones a forte demande.",
+        "livrable": "Campagnes actives sur les marches vises"
+      },
+      {
+        "action": "Laisser la phase d'apprentissage converger et tester les formats (visuel simple, carousel catalogue, collection ads).",
+        "livrable": "Formats gagnants identifies par le cout et le ROAS"
+      },
+      {
+        "action": "Poser les regles automatiques sur le facteur externe pertinent (ici la meteo) et lire revenu, conversion et ROAS.",
+        "livrable": "Pilotage documente et budget realloue sur ce qui performe"
+      }
+    ],
+    "equipe": "1 media buyer (interne ou agence) + un acces dev pour le feed et la Conversions API"
+  },
+  "agences": [
+    {
+      "nom": "scandiweb",
+      "role": "Agence e-commerce ayant restructure et pilote les campagnes Meta",
+      "source_ref": "S1"
+    }
+  ],
+  "seo": {
+    "slug": "de-paardendrogist-meta-advantage-plus-2024",
+    "title": "De Paardendrogist : ventes Meta automatisees par IA (Advantage+) - +404 % de revenu sur le pic, ROAS >18 (2024)",
+    "meta_description": "Avec scandiweb, le neerlandais De Paardendrogist a restructure son compte Meta autour d'Advantage+ Shopping : +111 % de revenu, +404 % sur le pic de novembre et un ROAS superieur a 18.",
+    "resume_citable": "En 2024, l'e-commercant neerlandais De Paardendrogist a fait +111 % de revenu (et +404 % sur le pic de novembre, ROAS superieur a 18) en restructurant son compte Meta autour de campagnes Advantage+ Shopping et d'un ciblage geographique, aux Pays-Bas, en Belgique et en Allemagne.",
+    "faq": [
+      {
+        "q": "Quel outil IA De Paardendrogist a-t-il utilise ?",
+        "a": "Meta Advantage+ Shopping, qui pilote audiences, placements et creas a partir du catalogue, combine a des posts sponsorises et un ciblage geographique."
+      },
+      {
+        "q": "Le resultat est-il incremental ou attribue ?",
+        "a": "Attribue : les chiffres viennent de l'agence scandiweb (revenu et ROAS mesures sur le compte), sans etude d'incrementalite publiee pour ce cas."
+      }
+    ]
+  },
+  "logo_domain": "depaardendrogist.nl"
+}

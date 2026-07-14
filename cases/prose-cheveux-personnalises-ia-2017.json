@@ -1,0 +1,272 @@
+{
+  "id": "prose-cheveux-personnalises-ia-2017",
+  "type_fiche": "succes",
+  "marque": "Prose",
+  "groupe": "Prose (Prose Hair)",
+  "industrie": "cpg_d2c",
+  "marches_deploiement": [
+    "Etats-Unis"
+  ],
+  "transposable_ue": {
+    "flag": "oui_avec_adaptations",
+    "note": "Modele D2C fabrique a la commande a partir d'un questionnaire. Les donnees collectees (type de cheveux, cuir chevelu, code postal, mode de vie) sont personnelles mais peu sensibles ; RGPD applicable sur le profilage et la conservation. La contrainte reelle a l'export est industrielle : reproduire la chaine de fabrication a la demande."
+  },
+  "metier": "e-commerce, R&D produit",
+  "intervenants": [
+    {
+      "nom": "Arnaud Plas",
+      "role": "Cofondateur et CEO, Prose",
+      "source_ref": "S1"
+    },
+    {
+      "nom": "Nicolas Mussat",
+      "role": "Chief Technology Officer, Prose",
+      "source_ref": "S1"
+    }
+  ],
+  "axes": {
+    "levier": "activation_conversion",
+    "touchpoints": [
+      "quiz de consultation en ligne",
+      "abonnement D2C",
+      "fabrication a la commande"
+    ],
+    "etape_parcours": "achat",
+    "famille": "personnalisation",
+    "pattern": "formulation produit personnalisee par algorithme a partir d'un questionnaire",
+    "type_ia": [
+      "algorithme de recommandation / formulation",
+      "machine learning",
+      "moteur de personnalisation"
+    ],
+    "plateforme_stack": [
+      "custom/in-house",
+      "chaine de fabrication automatisee a la commande"
+    ],
+    "objectif_metrique": [
+      "taux de reachat / retention",
+      "part d'abonnes",
+      "chiffre d'affaires"
+    ]
+  },
+  "implementation": "custom",
+  "stack_technique": [
+    {
+      "nom": "Algorithme de formulation Prose",
+      "categorie": "outil",
+      "detail": "Moteur in-house (regles + machine learning) qui convertit les reponses au questionnaire en formule, sur plus de 160 ingredients et jusqu'a 79 000 milliards de combinaisons.",
+      "url": "https://prose.com"
+    },
+    {
+      "nom": "Quiz de consultation en ligne",
+      "categorie": "outil",
+      "detail": "Questionnaire de 25 questions (cheveux, cuir chevelu, mode de vie, code postal) qui alimente l'algorithme.",
+      "url": "https://prose.com"
+    },
+    {
+      "nom": "Chaine de fabrication a la commande",
+      "categorie": "infra",
+      "detail": "Ligne automatisee capable de produire jusqu'a 30 000 flacons sur mesure par jour.",
+      "url": "https://prose.com"
+    },
+    {
+      "nom": "Boucle Review & Refine",
+      "categorie": "outil",
+      "detail": "Retours d'usage structures qui ajustent la formule au reachat suivant.",
+      "url": "https://prose.com"
+    }
+  ],
+  "objectif_business": "Remplacer la formule generique par une formule faite pour chaque client, pour battre les produits standards sur la performance percue et installer un reachat par abonnement.",
+  "description": "Prose fait remplir un questionnaire en ligne (25 questions sur le type de cheveux, l'etat du cuir chevelu, le mode de vie, jusqu'au code postal pour l'environnement local), puis son algorithme compose une formule sur mesure. Le systeme peut generer jusqu'a 79 000 milliards de formulations a partir de plus de 160 ingredients, et les produits sont fabriques a la commande sur une chaine automatisee capable de sortir jusqu'a 30 000 flacons par jour. En 2020, Prose etait en route pour 50 millions de dollars de chiffre d'affaires, plus du triple de l'annee precedente ; plus de 2 millions de clients avaient rempli le questionnaire et 55 pour cent d'entre eux avaient rachete sur les douze derniers mois, contre une moyenne sectorielle plus proche de 30 pour cent. Le fonds Forerunner Ventures indique qu'aujourd'hui 75 pour cent du chiffre d'affaires de Prose vient des abonnements. Une etude clinique en double aveugle menee par l'organisme independant Intertek sur 206 participants pendant 28 jours a compare les produits Prose a six references du commerce.",
+  "resultats": [
+    {
+      "metrique": "Reachat sur 12 mois, vs ~30% de moyenne secteur",
+      "valeur": "55%",
+      "citation_exacte": "55% made repeat purchases in the latest 12 months",
+      "source_ref": "S1"
+    },
+    {
+      "metrique": "Chiffre d'affaires 2020, plus du triple de l'annee precedente",
+      "valeur": "~50 M$",
+      "citation_exacte": "on track to hit $50 million in revenue this year, more than triple last year's figure",
+      "source_ref": "S1"
+    },
+    {
+      "metrique": "Part du chiffre d'affaires en abonnement",
+      "valeur": "75%",
+      "citation_exacte": "Today, 75% of Prose's revenue comes from subscriptions",
+      "source_ref": "S2"
+    },
+    {
+      "metrique": "Clients ayant rempli le questionnaire",
+      "valeur": "plus de 2 millions",
+      "citation_exacte": "Over 2 million customers completed the questionnaire",
+      "source_ref": "S1"
+    }
+  ],
+  "niveau_preuve": {
+    "niveau": "C",
+    "justification": "Chiffres de croissance, reachat et volume rapportes par Forbes citant nommement l'entreprise et son CEO, complementes par la fiche investisseur Forerunner Ventures sur la part d'abonnement. Presse etablie plus source investisseur concordantes, mais pas de resultats financiers publics, donc C."
+  },
+  "dates": {
+    "lancement": "2017",
+    "derniere_confirmation_activite": "2025",
+    "verifie_le": "2026-07-11",
+    "revoir_apres": "2027-01-11"
+  },
+  "statut_vivant": {
+    "statut": "confirme",
+    "note": "Prose reste actif en D2C (site marchand et quiz en ligne), etude clinique et couverture sectorielle en 2025. Modele d'abonnement toujours au coeur du chiffre d'affaires selon Forerunner Ventures."
+  },
+  "sources": [
+    {
+      "ref": "S1",
+      "type": "presse",
+      "fiabilite": "T3_presse_etablie",
+      "titre": "Why One Entrepreneur Thinks Millions Of Americans Will Spend $25 On His Personalized Shampoo",
+      "url": "https://www.forbes.com/sites/amyfeldman/2020/08/18/why-one-entrepreneur-thinks-millions-of-americans-will-spend-25-on-his-personalized-shampoo/",
+      "date_publication": "2020-08-18",
+      "consulte_le": "2026-07-11"
+    },
+    {
+      "ref": "S2",
+      "type": "analyse_academique",
+      "fiabilite": "T2_officiel_interesse",
+      "titre": "Prose - Forerunner Ventures",
+      "url": "https://www.forerunnerventures.com/explore/forerunner-ventures-prose",
+      "date_publication": "2024",
+      "consulte_le": "2026-07-11"
+    }
+  ],
+  "fonctionnement_operationnel": {
+    "cadence": "A la commande pour la fabrication ; reabonnement recurrent ; affinage de la formule a chaque retour client.",
+    "opere_par": "Equipe data science et chimistes pour l'algorithme et les formules, operations pour la fabrication a la demande, CRM pour l'abonnement.",
+    "signal_pilote": "Les reponses au questionnaire et les retours d'usage (fonction Review & Refine). Sans feedback structure, la formule ne s'ameliore pas et le reachat s'effondre.",
+    "etapes": [
+      {
+        "etape": "Consultation en ligne",
+        "detail": "25 questions sur cheveux, cuir chevelu, mode de vie et environnement (code postal).",
+        "acteur": "client"
+      },
+      {
+        "etape": "Formulation algorithmique",
+        "detail": "L'algorithme compose une formule parmi un espace de dizaines de milliers de milliards de possibilites.",
+        "acteur": "IA / algorithme"
+      },
+      {
+        "etape": "Fabrication a la commande",
+        "detail": "La chaine automatisee produit le flacon sur mesure (jusqu'a 30 000 par jour).",
+        "acteur": "operations"
+      },
+      {
+        "etape": "Retour et raffinage",
+        "detail": "Le client note le produit, la formule s'ajuste au reachat suivant.",
+        "acteur": "client + algorithme"
+      }
+    ]
+  },
+  "schema_flow": {
+    "statut": "documente",
+    "noeuds": [
+      {
+        "id": "quiz",
+        "role_generique": "data_source",
+        "label": "Questionnaire de consultation (25 questions)"
+      },
+      {
+        "id": "algo",
+        "role_generique": "modele_ia",
+        "label": "Algorithme de formulation",
+        "outil_documente": "moteur in-house Prose"
+      },
+      {
+        "id": "usine",
+        "role_generique": "site_app",
+        "label": "Fabrication a la commande"
+      },
+      {
+        "id": "abo",
+        "role_generique": "crm",
+        "label": "Abonnement / reachat"
+      }
+    ],
+    "liens": [
+      [
+        "quiz",
+        "algo"
+      ],
+      [
+        "algo",
+        "usine"
+      ],
+      [
+        "usine",
+        "abo"
+      ],
+      [
+        "abo",
+        "algo",
+        "Review & Refine affine la formule"
+      ]
+    ]
+  },
+  "replication": {
+    "statut_epistemique": "infere",
+    "prerequis_data": [
+      "questionnaire structure convertissant des reponses en attributs formule",
+      "referentiel d'ingredients et regles de compatibilite",
+      "boucle de feedback produit"
+    ],
+    "prerequis_orga": [
+      "capacite de fabrication a la commande ou faconnier flexible",
+      "chimistes / R&D pour valider les formules",
+      "moteur d'abonnement et CRM"
+    ],
+    "stack_possible": [
+      "moteur de personnalisation / regles + ML",
+      "chaine de production modulaire",
+      "plateforme e-commerce avec abonnement"
+    ],
+    "premiere_etape": "Modeliser le passage reponses vers formule sur une categorie simple, puis tester la faisabilite industrielle de la fabrication a la commande.",
+    "playbook": [
+      {
+        "action": "Modeliser le passage reponses vers formule sur une categorie simple, avec les chimistes / R&D.",
+        "livrable": "Matrice attributs client vers ingredients validee par la R&D."
+      },
+      {
+        "action": "Construire le questionnaire en ligne et le moteur de formulation v1 (regles + ML), avec regles de compatibilite d'ingredients.",
+        "livrable": "Prototype quiz vers formule testable en interne."
+      },
+      {
+        "action": "En parallele, valider la faisabilite industrielle : faconnier flexible ou mini-ligne de fabrication a la commande.",
+        "livrable": "Capacite pilote de production a la demande."
+      },
+      {
+        "action": "Lancer un pilote D2C sur un segment, avec abonnement et CRM.",
+        "livrable": "Premiere cohorte de clients avec mesure du reachat."
+      },
+      {
+        "action": "Brancher la boucle de feedback produit (type Review & Refine) et monter en capacite.",
+        "livrable": "Reachat mesure vs benchmark secteur et plan de capacite industrielle."
+      }
+    ],
+    "equipe": "1-2 data scientists + 2-3 chimistes / R&D + 1 PM + operations industrielles + CRM pour l'abonnement."
+  },
+  "seo": {
+    "slug": "prose-cheveux-personnalises-ia-2017",
+    "title": "Prose : soin capillaire formule par algorithme - 55% de reachat, 75% d'abonnement (2017)",
+    "meta_description": "Prose formule des soins capillaires sur mesure par algorithme via un quiz de 25 questions : 55% de reachat sur 12 mois, 75% du CA en abonnement.",
+    "resume_citable": "Prose formule par algorithme des soins capillaires sur mesure a partir d'un questionnaire, avec un espace de 79 000 milliards de formulations, un reachat de 55 pour cent sur douze mois (vs ~30 pour cent dans le secteur) et 75 pour cent du chiffre d'affaires en abonnement.",
+    "faq": [
+      {
+        "q": "Comment Prose personnalise-t-il ses produits ?",
+        "a": "Un questionnaire de 25 questions alimente un algorithme qui compose une formule sur mesure parmi des dizaines de milliers de milliards de combinaisons, fabriquee ensuite a la commande."
+      },
+      {
+        "q": "Quelle est la preuve de reachat de Prose ?",
+        "a": "55 pour cent des plus de 2 millions de clients ayant rempli le questionnaire ont rachete sur les douze derniers mois, contre une moyenne sectorielle proche de 30 pour cent, et 75 pour cent du chiffre d'affaires vient des abonnements."
+      }
+    ]
+  },
+  "logo_domain": "prose.com"
+}

@@ -1,0 +1,278 @@
+{
+  "id": "coursera-coach-genai-2023",
+  "type_fiche": "succes",
+  "marque": "Coursera",
+  "industrie": "education",
+  "marches_deploiement": [
+    "Etats-Unis",
+    "International (26 langues)",
+    "Europe"
+  ],
+  "transposable_ue": {
+    "flag": "oui_avec_adaptations",
+    "note": "Assistant genAI grand public et entreprise, disponible en 26 langues. RGPD applicable aux echanges apprenant ; l'AI Act impose la transparence sur l'interaction avec une IA. Le support multilingue facilite le deploiement UE."
+  },
+  "metier": "Product / plateforme d'apprentissage / B2B et B2C",
+  "marque_linkedin": "https://www.linkedin.com/company/coursera/",
+  "axes": {
+    "levier": "retention",
+    "touchpoints": [
+      "plateforme Coursera",
+      "Coursera Coach (apprenant)",
+      "cours et Professional Certificates",
+      "espace entreprise Coursera for Business"
+    ],
+    "etape_parcours": "post-achat",
+    "famille": "conversation",
+    "pattern": "assistant d'apprentissage genAI integre au parcours de cours",
+    "type_ia": [
+      "genAI conversationnelle",
+      "LLM",
+      "reponse contextuelle au contenu de cours"
+    ],
+    "plateforme_stack": [
+      "LLM (genAI)",
+      "integration in-house Coursera"
+    ],
+    "objectif_metrique": [
+      "engagement apprenant",
+      "completion de cours",
+      "retention d'abonnement",
+      "valeur pour les clients entreprise"
+    ]
+  },
+  "implementation": "hybride",
+  "objectif_business": "Augmenter l'engagement et la completion en donnant a chaque apprenant un assistant qui repond dans le contexte du cours, pour soutenir la retention des abonnes Consumer et la valeur percue par les clients Enterprise.",
+  "points_cles": ["Assistant d'apprentissage genAI qui repond dans le contexte du cours, en 26 langues.", "Bati sur un LLM (fournisseur non precise) avec retrieval sur le contenu de cours.", "Plus de 34 millions de messages echanges avec plus de 2,4 millions d'apprenants.", "Preuve B, statut confirme, Newsweek AI Impact Award 2025."],
+  "description": "Coursera Coach est un assistant d'apprentissage genAI lance en beta en 2023 (avril, environ six mois apres la sortie publique de ChatGPT). Il repond aux questions dans le contexte du cours suivi, resume des videos, clarifie des notions, aide a la prise de notes et oriente vers des objectifs de carriere. Il est propose aux apprenants payants Consumer et aux clients Enterprise, en 26 langues. Des etablissements l'activent pour leurs propres cours, comme l'universite du Michigan.",
+  "resultats": [
+    {
+      "metrique": "Messages echanges depuis le lancement (juin 2025)",
+      "valeur": "34 millions+",
+      "citation_exacte": "Coach has exchanged over 34 million messages",
+      "source_ref": "S1"
+    },
+    {
+      "metrique": "Apprenants ayant utilise Coach",
+      "valeur": "2,4 millions+",
+      "citation_exacte": "with more than 2.4 million learners",
+      "source_ref": "S1"
+    },
+    {
+      "metrique": "Langues supportees",
+      "valeur": "26",
+      "citation_exacte": "26 different languages",
+      "source_ref": "S1"
+    },
+    {
+      "metrique": "Chiffre d'affaires annuel Coursera 2024",
+      "valeur": "694,7 M$ (+9%)",
+      "citation_exacte": "Total revenue was $694.7 million, up 9%",
+      "source_ref": "S2"
+    }
+  ],
+  "niveau_preuve": {
+    "niveau": "B",
+    "justification": "Chiffres d'usage de Coach publies officiellement par Coursera (blog produit, juin 2025) et distinction Newsweek AI Impact Award ; adosses au contexte financier d'une societe cotee (resultats FY2024). Source officielle mais interessee sur l'usage produit, d'ou niveau B."
+  },
+  "dates": {
+    "lancement": "2023-04 (Coursera Coach en beta)",
+    "derniere_confirmation_activite": "2025-06 (blog Coursera : 34M messages, 2,4M apprenants, 26 langues ; Newsweek AI Impact Award)",
+    "verifie_le": "2026-07-11",
+    "revoir_apres": "2027-01-11"
+  },
+  "statut_vivant": {
+    "statut": "confirme",
+    "note": "Coach ouvert au-dela de la beta, disponible aux apprenants payants et clients Enterprise, primé en 2025 et en expansion linguistique. Feature active."
+  },
+  "sources": [
+    {
+      "ref": "S1",
+      "type": "blog_officiel",
+      "fiabilite": "T2_officiel_interesse",
+      "titre": "Coursera Coach Wins Newsweek AI Impact Award for Outcomes in Commercial Learning (Coursera Blog)",
+      "url": "https://blog.coursera.org/coach-wins-newsweek-ai-impact-award/",
+      "date_publication": "2025-06-23",
+      "consulte_le": "2026-07-11"
+    },
+    {
+      "ref": "S2",
+      "type": "document_officiel_sec",
+      "fiabilite": "T1_primaire",
+      "titre": "Coursera Reports Fourth Quarter and Full Year 2024 Financial Results",
+      "url": "https://investor.coursera.com/news/news-details/2025/Coursera-Reports-Fourth-Quarter-and-Full-Year-2024-Financial-Results/default.aspx",
+      "date_publication": "2025-01",
+      "consulte_le": "2026-07-11"
+    },
+    {
+      "ref": "S3",
+      "type": "presse",
+      "fiabilite": "T3_presse_etablie",
+      "titre": "U-M launches AI-powered Coursera Coach for interactive instruction (University of Michigan News)",
+      "url": "https://news.umich.edu/u-m-launches-ai-powered-coursera-coach-for-interactive-instruction/",
+      "date_publication": "2024",
+      "consulte_le": "2026-07-11"
+    }
+  ],
+  "fonctionnement_operationnel": {
+    "cadence": "Temps reel a chaque question de l'apprenant, pendant le suivi d'un cours.",
+    "opere_par": "Equipe Product/IA de Coursera ; cote client Enterprise ou etablissement, l'administrateur active Coach sur ses cours.",
+    "signal_pilote": "La pertinence contextuelle de la reponse par rapport au cours en cours. Sans ancrage au contenu du cours, l'assistant devient un chatbot generique sans valeur de retention.",
+    "etapes": [
+      {
+        "etape": "Ouverture du cours",
+        "detail": "L'apprenant lance un cours ; Coach est disponible dans l'interface.",
+        "acteur": "humain"
+      },
+      {
+        "etape": "Question contextuelle",
+        "detail": "L'apprenant pose une question ; le contexte du cours et de la lecon est joint au prompt.",
+        "acteur": "IA"
+      },
+      {
+        "etape": "Reponse et guidage",
+        "detail": "Le LLM clarifie, resume ou oriente vers un objectif de carriere, dans la langue de l'apprenant.",
+        "acteur": "IA"
+      },
+      {
+        "etape": "Activation cote client",
+        "detail": "Pour l'Enterprise et les etablissements, l'admin decide de rendre Coach disponible sur ses parcours.",
+        "acteur": "client"
+      }
+    ]
+  },
+  "schema_flow": {
+    "statut": "documente",
+    "noeuds": [
+      {
+        "id": "n1",
+        "role_generique": "humain",
+        "label": "Apprenant (payant / entreprise)"
+      },
+      {
+        "id": "n2",
+        "role_generique": "site_app",
+        "label": "Plateforme Coursera + Coach"
+      },
+      {
+        "id": "n3",
+        "role_generique": "modele_ia",
+        "label": "LLM genAI",
+        "outil_documente": "LLM (non precise publiquement)"
+      },
+      {
+        "id": "n4",
+        "role_generique": "data_source",
+        "label": "Contenu du cours et progression apprenant"
+      }
+    ],
+    "liens": [
+      [
+        "n1",
+        "n2"
+      ],
+      [
+        "n2",
+        "n4"
+      ],
+      [
+        "n4",
+        "n3"
+      ],
+      [
+        "n3",
+        "n2",
+        "reponse contextuelle au cours"
+      ],
+      [
+        "n2",
+        "n1"
+      ]
+    ]
+  },
+  "stack_technique": [
+    {
+      "nom": "LLM (fournisseur non precise publiquement)",
+      "categorie": "llm",
+      "detail": "Coursera ne nomme pas publiquement le modele derriere Coach ; la fiche reste au niveau documente",
+      "url": "https://www.coursera.org"
+    },
+    {
+      "nom": "Coursera Coach",
+      "categorie": "outil",
+      "detail": "assistant d'apprentissage integre in-house au parcours de cours, en 26 langues",
+      "url": "https://www.coursera.org"
+    },
+    {
+      "nom": "Retrieval sur le contenu de cours",
+      "categorie": "infra",
+      "detail": "ancrage des reponses au contexte du cours et de la lecon, ce qui distingue Coach d'un chatbot generique",
+      "url": "https://www.coursera.org"
+    },
+    {
+      "nom": "Coursera for Business",
+      "categorie": "plateforme",
+      "detail": "espace entreprise ou l'administrateur active Coach sur ses parcours",
+      "url": "https://www.coursera.org/business"
+    }
+  ],
+  "replication": {
+    "statut_epistemique": "infere",
+    "prerequis_data": [
+      "catalogue de cours structure et indexable",
+      "contexte de lecon rattachable a chaque question",
+      "gestion multilingue des contenus"
+    ],
+    "prerequis_orga": [
+      "equipe produit capable d'integrer l'assistant au parcours existant",
+      "offre Consumer et Enterprise pour amortir le cout",
+      "suivi des couts d'inference"
+    ],
+    "stack_possible": [
+      "LLM (OpenAI, Anthropic ou equivalent)",
+      "retrieval sur le contenu de cours",
+      "couche de prompt et garde-fous in-house"
+    ],
+    "premiere_etape": "Brancher l'assistant sur le contexte du cours (retrieval) plutot que sur un LLM nu, pour que la reponse serve la completion.",
+    "playbook": [
+      {
+        "action": "Indexer le catalogue de cours (transcripts, lecons, structure) pour permettre le retrieval contextuel.",
+        "livrable": "Index de contenu interrogeable par cours et par lecon"
+      },
+      {
+        "action": "Construire l'assistant : contexte de lecon joint au prompt, garde-fous et gestion multilingue.",
+        "livrable": "Prototype interne repondant dans le contexte du cours"
+      },
+      {
+        "action": "Ouvrir une beta sur un sous-ensemble de cours et d'apprenants payants.",
+        "livrable": "Beta live avec mesures d'usage (messages, utilisateurs)"
+      },
+      {
+        "action": "Mesurer engagement et completion face a une cohorte sans assistant, suivre les couts d'inference.",
+        "livrable": "Bilan d'impact et modele de cout par apprenant"
+      },
+      {
+        "action": "Ouvrir aux clients entreprise avec activation par l'admin et etendre les langues couvertes.",
+        "livrable": "Assistant generalise sur les offres Consumer et Enterprise"
+      }
+    ],
+    "equipe": "2 devs + 1 PM + 1 learning designer, avec un suivi data des couts d'inference"
+  },
+  "seo": {
+    "slug": "coursera-coach-genai-2023",
+    "title": "Coursera Coach : assistant genAI - 34M de messages avec 2,4M d'apprenants (2023)",
+    "meta_description": "Coursera Coach, assistant d'apprentissage genAI en 26 langues, a echange plus de 34 millions de messages avec 2,4 millions d'apprenants et a recu le Newsweek AI Impact Award 2025.",
+    "resume_citable": "Coursera Coach, assistant d'apprentissage genAI lance en 2023 et disponible en 26 langues, avait echange plus de 34 millions de messages avec 2,4 millions d'apprenants a la mi-2025, sur une plateforme a 694,7 M$ de revenu 2024.",
+    "faq": [
+      {
+        "q": "Qu'est-ce que Coursera Coach ?",
+        "a": "Un assistant d'apprentissage genAI integre a la plateforme Coursera qui repond dans le contexte du cours, resume, clarifie et oriente vers des objectifs de carriere, en 26 langues, pour les apprenants payants et les clients entreprise."
+      },
+      {
+        "q": "Quelle est son echelle d'usage ?",
+        "a": "Plus de 34 millions de messages echanges avec plus de 2,4 millions d'apprenants a la mi-2025, selon le blog officiel de Coursera."
+      }
+    ]
+  },
+  "logo_domain": "coursera.org"
+}

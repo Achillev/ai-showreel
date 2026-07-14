@@ -1,0 +1,272 @@
+{
+  "id": "zynga-chartboost-adtech-ml-2021",
+  "type_fiche": "succes",
+  "marque": "Zynga",
+  "groupe": "Take-Two Interactive",
+  "industrie": "media_entertainment",
+  "marches_deploiement": [
+    "Mondial (portefeuille Zynga et reseau Chartboost)"
+  ],
+  "transposable_ue": {
+    "flag": "oui_avec_adaptations",
+    "note": "Une chaine publicitaire programmatique pilotee par ML repose sur le tracking et le ciblage. Sous RGPD, ePrivacy et ATT (iOS), le signal d'attribution et la precision d'enchere dependent du consentement. Le pattern d'integration verticale UA plus monetisation ads est transposable, avec un cadrage consentement et un inventaire suffisant."
+  },
+  "metier": "marketing (user acquisition et monetisation publicitaire)",
+  "axes": {
+    "levier": "monetisation",
+    "touchpoints": [
+      "reseau publicitaire in-game (SSP)",
+      "achat media programmatique (DSP)",
+      "mediation via SDK",
+      "campagnes UA"
+    ],
+    "etape_parcours": "découverte",
+    "famille": "optimisation_automatisation",
+    "pattern": "adtech verticalement integree pilotee par ML (DSP, SSP, mediation)",
+    "type_ia": [
+      "machine learning programmatique",
+      "data science d'enchere et de yield"
+    ],
+    "plateforme_stack": [
+      "Chartboost (DSP, SSP, mediation)",
+      "SDK Chartboost"
+    ],
+    "objectif_metrique": [
+      "CPM et yield publicitaire",
+      "efficience UA (CPI, ROAS)",
+      "controle et marge sur la chaine ad"
+    ]
+  },
+  "implementation": "plateforme",
+  "objectif_business": "Internaliser la chaine publicitaire, cote acquisition et cote monetisation, pour capter la marge et l'optimiser par machine learning a travers le portefeuille Zynga et le reseau de partenaires Chartboost.",
+  "points_cles": ["Internalisation de la chaine publicitaire pilotee par ML (DSP, SSP, mediation).", "Plateforme Chartboost et son SDK, rachetee en 2021.", "Rachat pour environ 250 millions de dollars, cede a LoopMe en decembre 2024.", "Preuve B, statut signaux mitiges."],
+  "description": "En aout 2021, Zynga a rachete Chartboost, une plateforme publicitaire unifiee qui reunit un DSP, un SSP et de la mediation via un SDK, et qui s'appuie sur du machine learning et de la data science avances pour optimiser la publicite programmatique et les yields. L'operation, conclue le 4 aout 2021, a ete presentee autour de 250 millions de dollars en cash, la consideration exacte figurant a 234,6 millions de dollars dans les documents SEC de Take-Two. L'objectif etait l'integration verticale: reunir contenu, relation directe aux joueurs, reach massif et pile publicitaire complete, applicable au portefeuille de jeux Zynga comme aux partenaires de Chartboost, pour mieux acquerir et monetiser les joueurs. Zynga, passe dans le giron de Take-Two en 2022, a ensuite cede Chartboost a LoopMe en decembre 2024. Le cas illustre un pari d'adtech pilotee par ML mise au service de l'UA et de la monetisation ads d'un editeur mobile a grande echelle, jusqu'a la revente de la plateforme.",
+  "resultats": [
+    {
+      "metrique": "Rachat de Chartboost, clos aout 2021, 234,6 M$ au 8-K",
+      "valeur": "~250 M$",
+      "citation_exacte": "approximately $250 million in cash",
+      "source_ref": "S1"
+    },
+    {
+      "metrique": "Optimise la publicite programmatique et les yields",
+      "valeur": "ML et data science",
+      "citation_exacte": "advanced machine learning and data science capabilities",
+      "source_ref": "S1"
+    },
+    {
+      "metrique": "Cession de Chartboost, decembre 2024",
+      "valeur": "cede a LoopMe",
+      "citation_exacte": "LoopMe Acquires Chartboost from Zynga",
+      "source_ref": "S3"
+    }
+  ],
+  "niveau_preuve": {
+    "niveau": "B",
+    "justification": "Communique officiel de la marque et documents SEC de la maison mere documentent l'acquisition et le role du ML dans la chaine publicitaire, avec presse etablie concordante. Pas de mesure isolee de la performance de l'IA, donc B."
+  },
+  "dates": {
+    "lancement": "2021-08-04 (cloture de l'acquisition de Chartboost)",
+    "derniere_confirmation_activite": "2024-12 (cession de Chartboost a LoopMe)",
+    "verifie_le": "2026-07-11",
+    "revoir_apres": "2027-01-11"
+  },
+  "statut_vivant": {
+    "statut": "signaux_mitiges",
+    "note": "Le chapitre de la plateforme detenue en propre s'est referme en decembre 2024 avec la cession de Chartboost a LoopMe. La monetisation publicitaire pilotee par ML reste centrale pour Zynga et Take-Two, mais l'integration verticale via Chartboost n'est plus la forme retenue."
+  },
+  "sources": [
+    {
+      "ref": "S1",
+      "type": "blog_officiel",
+      "fiabilite": "T1_primaire",
+      "titre": "Zynga Closes Acquisition of Chartboost, a Leading Mobile Advertising and Monetization Platform",
+      "url": "https://www.zynga.com/blog/zynga-closes-acquisition-of-chartboost-a-leading-mobile-advertising-and-monetization-platform/",
+      "date_publication": "2021-08",
+      "consulte_le": "2026-07-11"
+    },
+    {
+      "ref": "S2",
+      "type": "presse",
+      "fiabilite": "T3_presse_etablie",
+      "titre": "Why Zynga Bought Chartboost, Then Was Bought By Take-Two",
+      "url": "https://www.forbes.com/sites/johnkoetsier/2022/01/17/self-control-why-zynga-bought-chartboost-then-was-bought-by-take-two/",
+      "date_publication": "2022-01-17",
+      "consulte_le": "2026-07-11"
+    },
+    {
+      "ref": "S3",
+      "type": "presse",
+      "fiabilite": "T3_presse_etablie",
+      "titre": "LoopMe Buys Chartboost From Zynga For Direct Paths Into Mobile Apps",
+      "url": "https://www.adexchanger.com/mobile/loopme-buys-chartboost-from-zynga-for-direct-paths-into-mobile-apps/",
+      "date_publication": "2024-12",
+      "consulte_le": "2026-07-11"
+    },
+    {
+      "ref": "S4",
+      "type": "document_officiel_sec",
+      "fiabilite": "T1_primaire",
+      "titre": "Take-Two Interactive Software Inc - Form 8-K (FY2022), consideration Chartboost 234,6 M$",
+      "url": "https://www.sec.gov/Archives/edgar/data/946581/000119312522096547/d342728dex991.htm",
+      "date_publication": "2022",
+      "consulte_le": "2026-07-11"
+    }
+  ],
+  "fonctionnement_operationnel": {
+    "cadence": "Enchere programmatique en temps reel, cote demande et cote offre, avec mediation continue sur l'inventaire des jeux.",
+    "opere_par": "Equipe ad tech de Zynga (ex-Chartboost), au service des equipes UA et monetisation du portefeuille.",
+    "signal_pilote": "Le signal d'attribution et de valeur de l'utilisateur, qui nourrit l'enchere et le yield. Si le consentement tracking se degrade, l'optimisation d'enchere et le CPM baissent.",
+    "etapes": [
+      {
+        "etape": "Sourcing de l'inventaire",
+        "detail": "Le SSP et le SDK collectent l'inventaire publicitaire dans les jeux Zynga et du reseau.",
+        "acteur": "plateforme (Chartboost)"
+      },
+      {
+        "etape": "Enchere programmatique",
+        "detail": "Le DSP enchérit sur cet inventaire pour l'UA, arbitre par le ML sur la valeur estimee.",
+        "acteur": "IA (ML d'enchere)"
+      },
+      {
+        "etape": "Mediation et yield",
+        "detail": "La mediation arbitre entre sources de demande pour maximiser le CPM et le remplissage.",
+        "acteur": "IA (ML de yield)"
+      },
+      {
+        "etape": "Boucle UA et monetisation",
+        "detail": "Les memes joueurs sont acquis d'un cote et monetises par la pub de l'autre, dans une chaine integree.",
+        "acteur": "equipe marketing / monetisation"
+      }
+    ]
+  },
+  "schema_flow": {
+    "statut": "documente",
+    "noeuds": [
+      {
+        "id": "inv",
+        "role_generique": "data_source",
+        "label": "Inventaire publicitaire (jeux Zynga + reseau)"
+      },
+      {
+        "id": "cb",
+        "role_generique": "paid_platform",
+        "label": "Chartboost - DSP, SSP, mediation",
+        "outil_documente": "Chartboost (ML programmatique)"
+      },
+      {
+        "id": "ua",
+        "role_generique": "paid_platform",
+        "label": "Acquisition de joueurs (UA)"
+      },
+      {
+        "id": "games",
+        "role_generique": "site_app",
+        "label": "Portefeuille de jeux Zynga"
+      }
+    ],
+    "liens": [
+      [
+        "games",
+        "inv"
+      ],
+      [
+        "inv",
+        "cb"
+      ],
+      [
+        "cb",
+        "ua"
+      ],
+      [
+        "ua",
+        "games",
+        "nouveaux joueurs"
+      ],
+      [
+        "cb",
+        "games",
+        "revenu publicitaire"
+      ]
+    ]
+  },
+  "replication": {
+    "statut_epistemique": "infere",
+    "prerequis_data": [
+      "inventaire publicitaire proprietaire",
+      "signaux d'attribution et de valeur utilisateur",
+      "volume suffisant pour entrainer les modeles d'enchere"
+    ],
+    "prerequis_orga": [
+      "equipe ad tech capable d'operer DSP, SSP et mediation",
+      "gestion du consentement et de la conformite",
+      "portefeuille assez large pour l'integration verticale"
+    ],
+    "stack_possible": [
+      "plateforme adtech (DSP, SSP, mediation)",
+      "SDK d'inventaire",
+      "modeles ML d'enchere et de yield"
+    ],
+    "premiere_etape": "Mesurer le cout et la marge de la chaine publicitaire actuelle, puis tester une mediation ML sur une part de l'inventaire avant d'envisager une integration verticale.",
+    "playbook": [
+      {
+        "action": "Mesurer le cout et la marge de la chaine publicitaire actuelle, cote UA et cote monetisation.",
+        "livrable": "Baseline CPM, CPI, ROAS et part de marge captee par chaque intermediaire."
+      },
+      {
+        "action": "Tester une mediation pilotee par ML sur une part de l'inventaire.",
+        "livrable": "Lecture yield et remplissage vs mediation actuelle."
+      },
+      {
+        "action": "Internaliser progressivement le cote demande (DSP) sur les campagnes UA.",
+        "livrable": "Campagnes UA operees en propre avec ROAS compare a l'externe."
+      },
+      {
+        "action": "Consolider les signaux d'attribution (consentement, ATT/SKAN cote iOS).",
+        "livrable": "Mesure fiabilisee qui alimente les modeles d'enchere."
+      },
+      {
+        "action": "Arbitrer build vs buy sur la chaine complete.",
+        "livrable": "Decision documentee : plateforme tierce, build ou acquisition."
+      }
+    ],
+    "equipe": "1 responsable adtech + 2-3 ingenieurs ad/ML + equipes UA et monetisation + 1 juriste consentement/tracking"
+  },
+  "seo": {
+    "slug": "zynga-chartboost-adtech-ml-2021",
+    "title": "Zynga : adtech ML integree via Chartboost - 250 M$ pour acquerir et monetiser (2021)",
+    "meta_description": "Zynga a rachete Chartboost (environ 250 M$) pour internaliser une chaine publicitaire pilotee par ML, cote acquisition et monetisation, avant de la ceder a LoopMe en 2024.",
+    "resume_citable": "Zynga a rachete en aout 2021 la plateforme publicitaire Chartboost pour environ 250 millions de dollars (234,6 M$ de consideration au 8-K de Take-Two) afin d'integrer verticalement une chaine DSP, SSP et mediation pilotee par machine learning, au service de l'acquisition et de la monetisation, avant de la ceder a LoopMe en decembre 2024.",
+    "faq": [
+      {
+        "q": "Pourquoi Zynga a rachete Chartboost ?",
+        "a": "Pour prendre le controle de sa chaine publicitaire et l'optimiser par machine learning, cote acquisition de joueurs et cote monetisation par la publicite, en integration verticale."
+      },
+      {
+        "q": "Le dispositif est-il toujours en place ?",
+        "a": "La plateforme detenue en propre ne l'est plus: Zynga, sous Take-Two, a cede Chartboost a LoopMe en decembre 2024. La monetisation publicitaire pilotee par ML reste toutefois un enjeu central."
+      }
+    ]
+  },
+  "logo_domain": "zynga.com",
+  "stack_technique": [
+    {
+      "nom": "Chartboost",
+      "categorie": "plateforme",
+      "detail": "Plateforme publicitaire unifiee rachetee par Zynga en 2021 : DSP, SSP et mediation, optimisee par machine learning et data science.",
+      "url": "https://www.chartboost.com"
+    },
+    {
+      "nom": "SDK Chartboost",
+      "categorie": "infra",
+      "detail": "Collecte l'inventaire publicitaire dans les jeux Zynga et du reseau de partenaires.",
+      "url": "https://www.chartboost.com"
+    },
+    {
+      "nom": "ML d'enchere et de yield Chartboost",
+      "categorie": "outil",
+      "detail": "Modeles proprietaires qui arbitrent l'enchere programmatique cote demande et le yield cote offre ; leur precision depend du signal d'attribution et du consentement tracking.",
+      "url": "https://www.chartboost.com"
+    }
+  ]
+}

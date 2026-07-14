@@ -1,0 +1,289 @@
+{
+  "id": "nubank-assistant-openai-2024",
+  "type_fiche": "succes",
+  "marque": "Nubank",
+  "groupe": "Nu Holdings",
+  "industrie": "banque_assurance_fintech",
+  "marches_deploiement": [
+    "Bresil",
+    "Mexique",
+    "Colombie"
+  ],
+  "transposable_ue": {
+    "flag": "oui_avec_adaptations",
+    "note": "Deploye en Amerique latine avec OpenAI. En UE, l'usage de GPT-4o sur des donnees de compte impose une base legale RGPD, un encadrement des transferts hors UE et, sous l'AI Act, la transparence IA. Le pattern (assistant client + copilote agent) est transposable, l'hebergement et la conformite sont a revoir."
+  },
+  "metier": "service client",
+  "axes": {
+    "levier": "retention",
+    "touchpoints": [
+      "app Nubank",
+      "chat de service client",
+      "poste agent (copilote)"
+    ],
+    "etape_parcours": "post-achat",
+    "famille": "conversation",
+    "pattern": "agent client genAI + copilote agent",
+    "type_ia": [
+      "LLM generatif",
+      "assistant conversationnel",
+      "vision (analyse de documents)"
+    ],
+    "plateforme_stack": [
+      "OpenAI (GPT-4o)",
+      "integration in-house"
+    ],
+    "objectif_metrique": [
+      "taux de resolution niveau 1",
+      "temps de reponse chat",
+      "productivite des agents"
+    ]
+  },
+  "implementation": "hybride",
+  "stack_technique": [
+    {
+      "nom": "OpenAI GPT-4o",
+      "categorie": "llm",
+      "detail": "Modele de l'assistant client et du copilote agent, y compris la vision pour l'analyse de documents.",
+      "url": "https://openai.com"
+    },
+    {
+      "nom": "Assistant client in-house",
+      "categorie": "outil",
+      "detail": "Brique conversationnelle integree a l'app Nubank : plus de 2 millions de chats par mois, 55% des demandes de niveau 1 resolues sans humain.",
+      "url": "https://international.nubank.com.br"
+    },
+    {
+      "nom": "Copilote de centre d'appels",
+      "categorie": "outil",
+      "detail": "Resumes de conversation, analyse de sentiment et reponses suggerees en temps reel sur le poste agent ; utilise par plus de 45% des agents.",
+      "url": "https://international.nubank.com.br"
+    },
+    {
+      "nom": "OpenAI (partenariat)",
+      "categorie": "integrateur",
+      "detail": "Partenaire du deploiement des deux briques conversationnelles.",
+      "url": "https://openai.com"
+    }
+  ],
+  "objectif_business": "Absorber le volume de service client d'une base de plus de 100 millions de clients sans exploser les couts, en automatisant les demandes de niveau 1 et en equipant les agents humains d'un copilote pour aller plus vite sur le reste.",
+  "points_cles": ["Assistant client genAI et copilote agent pour le service client.", "Construit avec OpenAI GPT-4o et integration in-house.", "Plus de 2 millions de chats par mois, 55% des demandes niveau 1 resolues sans humain, -70% de temps de reponse.", "Preuve B, statut confirme."],
+  "description": "Nubank a deploye, avec OpenAI sur GPT-4o, deux briques conversationnelles. Un assistant client tient plus de 2 millions de chats par mois et resout autour de 55% des demandes de niveau 1 sans passer par un humain, avec un temps de reponse chat reduit de 70%. En parallele, un copilote de centre d'appels assiste les agents en temps reel (resumes de conversation, analyse de sentiment, reponses suggerees) et est utilise par plus de 45% des agents. La banque sert plus de 114 millions de clients au Bresil, au Mexique et en Colombie.",
+  "resultats": [
+    {
+      "metrique": "Chats traites par l'assistant",
+      "valeur": "plus de 2 M/mois",
+      "citation_exacte": "handles over 2 million chats per month",
+      "source_ref": "S1"
+    },
+    {
+      "metrique": "Demandes de niveau 1 resolues sans humain",
+      "valeur": "55%",
+      "citation_exacte": "resolves 55% of Tier 1 inquiries",
+      "source_ref": "S1"
+    },
+    {
+      "metrique": "Reduction du temps de reponse chat",
+      "valeur": "70%",
+      "citation_exacte": "reduced the chat response time by 70%",
+      "source_ref": "S1"
+    },
+    {
+      "metrique": "Agents utilisant le copilote",
+      "valeur": "plus de 45%",
+      "citation_exacte": "Over 45% of Nubank agents use the copilot",
+      "source_ref": "S1"
+    }
+  ],
+  "niveau_preuve": {
+    "niveau": "B",
+    "justification": "Chiffres issus de la customer story OpenAI (T2, source officielle mais interessee) et repris par la presse fintech (T4), concordants. Metriques operationnelles fournies par la plateforme et la marque, non auditees en resultats financiers, donc B."
+  },
+  "dates": {
+    "lancement": "2024",
+    "derniere_confirmation_activite": "2025-03",
+    "verifie_le": "2026-07-11",
+    "revoir_apres": "2027-01-11"
+  },
+  "statut_vivant": {
+    "statut": "confirme",
+    "note": "Partenariat OpenAI et deploiement confirmes, avec des chiffres publies en mars 2025 (2 M de chats mensuels, copilote adopte par 45% des agents). Nubank continue d'etendre ses cas GenAI."
+  },
+  "sources": [
+    {
+      "ref": "S1",
+      "type": "customer_story_plateforme",
+      "fiabilite": "T2_officiel_interesse",
+      "titre": "Nubank elevates customer experiences with OpenAI",
+      "url": "https://openai.com/index/nubank/",
+      "date_publication": "2025-03-10",
+      "consulte_le": "2026-07-11"
+    },
+    {
+      "ref": "S2",
+      "type": "presse",
+      "fiabilite": "T4_secondaire",
+      "titre": "Nubank Elevates Customer Experiences with OpenAI",
+      "url": "https://ffnews.com/newsarticle/nubank-elevates-customer-experiences-with-openai/",
+      "date_publication": "2025-03-10",
+      "consulte_le": "2026-07-11"
+    }
+  ],
+  "agences": [
+    {
+      "nom": "OpenAI",
+      "role": "Fournisseur des modeles GPT-4o et partenaire du deploiement",
+      "source_ref": "S1"
+    }
+  ],
+  "fonctionnement_operationnel": {
+    "cadence": "Temps reel sur les chats clients et en direct sur le poste agent",
+    "opere_par": "Equipes service client et data/IA de Nubank, sur les modeles OpenAI",
+    "signal_pilote": "Le taux de resolution niveau 1 sans escalade et le sentiment client. Si la resolution niveau 1 baisse ou le sentiment se degrade, le volume repart vers les agents et le gain de productivite s'efface.",
+    "etapes": [
+      {
+        "etape": "Chat entrant",
+        "detail": "Le client ouvre un chat ; l'assistant traite les demandes de niveau 1 (compte, carte, paiement) et cloture ce qu'il peut.",
+        "acteur": "IA"
+      },
+      {
+        "etape": "Escalade vers agent",
+        "detail": "Les demandes non resolues passent a un agent humain avec le contexte de la conversation.",
+        "acteur": "IA / service client"
+      },
+      {
+        "etape": "Copilote agent",
+        "detail": "Cote agent, le copilote fournit resume, analyse de sentiment et reponses suggerees en temps reel.",
+        "acteur": "IA / service client"
+      },
+      {
+        "etape": "Suivi et ajustement",
+        "detail": "L'equipe data suit resolution, temps de reponse et adoption du copilote pour elargir le perimetre confie a l'IA.",
+        "acteur": "equipe data"
+      }
+    ]
+  },
+  "schema_flow": {
+    "statut": "approche_type",
+    "noeuds": [
+      {
+        "id": "client",
+        "role_generique": "site_app",
+        "label": "Client dans l'app Nubank"
+      },
+      {
+        "id": "assistant",
+        "role_generique": "modele_ia",
+        "label": "Assistant client",
+        "outil_documente": "OpenAI GPT-4o"
+      },
+      {
+        "id": "compte",
+        "role_generique": "data_source",
+        "label": "Donnees compte et transactions"
+      },
+      {
+        "id": "agent",
+        "role_generique": "humain",
+        "label": "Agent de service client"
+      },
+      {
+        "id": "copilote",
+        "role_generique": "modele_ia",
+        "label": "Copilote agent",
+        "outil_documente": "OpenAI GPT-4o"
+      }
+    ],
+    "liens": [
+      [
+        "client",
+        "assistant"
+      ],
+      [
+        "assistant",
+        "compte"
+      ],
+      [
+        "compte",
+        "assistant"
+      ],
+      [
+        "assistant",
+        "client"
+      ],
+      [
+        "assistant",
+        "agent",
+        "escalade niveau 2"
+      ],
+      [
+        "copilote",
+        "agent",
+        "resumes et reponses suggerees"
+      ],
+      [
+        "agent",
+        "client"
+      ]
+    ]
+  },
+  "replication": {
+    "statut_epistemique": "infere",
+    "playbook": [
+      {
+        "action": "Identifier les demandes de niveau 1 les plus volumineuses dans l'historique de tickets et definir une regle d'escalade nette vers l'humain.",
+        "livrable": "Taxonomie des demandes et regles de handoff validees."
+      },
+      {
+        "action": "Construire l'assistant sur le LLM avec acces aux donnees de compte, en environnement de test, avec cadre conformite pour l'usage d'un LLM tiers.",
+        "livrable": "Assistant en pre-production sur 3 a 5 familles de demandes."
+      },
+      {
+        "action": "Lancer un pilote en production sur une fraction du trafic chat et mesurer resolution niveau 1 et temps de reponse.",
+        "livrable": "Readout du pilote avec taux de resolution sans humain."
+      },
+      {
+        "action": "Elargir le perimetre de demandes couvertes et deployer sur tout le trafic de niveau 1.",
+        "livrable": "Assistant generalise avec tableau de bord resolution/satisfaction."
+      },
+      {
+        "action": "Lancer le copilote agent (resumes, sentiment, suggestions) et conduire l'adoption aupres des equipes.",
+        "livrable": "Copilote actif avec taux d'adoption des agents suivi."
+      }
+    ],
+    "equipe": "1 PM service client + 2-3 devs integration/IA + 1 responsable base de connaissance, avec la conformite pour l'usage d'un LLM tiers sur donnees clients.",
+    "prerequis_data": [
+      "Historique de tickets de support etiquetes par niveau",
+      "Acces temps reel au compte client",
+      "Transcriptions d'appels pour entrainer le copilote"
+    ],
+    "prerequis_orga": [
+      "Regle de handoff assistant vers agent",
+      "Adoption du copilote cote agents (conduite du changement)",
+      "Cadre conformite pour l'usage d'un LLM tiers sur donnees clients"
+    ],
+    "stack_possible": [
+      "LLM generatif (OpenAI GPT-4o ou equivalent)",
+      "Couche RAG sur base de connaissance",
+      "Integration au ticketing et au poste agent"
+    ],
+    "premiere_etape": "Automatiser d'abord les demandes de niveau 1 les plus volumineuses avec une regle d'escalade nette, puis outiller les agents avec le copilote."
+  },
+  "seo": {
+    "slug": "nubank-assistant-openai-2024",
+    "title": "Nubank : agent client genAI (OpenAI) - 2 M de chats par mois, 55% resolus (2024)",
+    "meta_description": "Avec OpenAI (GPT-4o), l'assistant de Nubank tient 2 M de chats par mois, resout 55% des demandes niveau 1 et coupe 70% du temps de reponse.",
+    "resume_citable": "En 2024, l'assistant client de Nubank construit avec OpenAI (GPT-4o) tient plus de 2 millions de chats par mois et resout 55% des demandes de niveau 1 sans humain, avec un temps de reponse chat reduit de 70% sur une base de 114 millions de clients.",
+    "faq": [
+      {
+        "q": "Quel modele utilise Nubank ?",
+        "a": "Nubank s'appuie sur OpenAI GPT-4o pour son assistant client et son copilote de centre d'appels."
+      },
+      {
+        "q": "Combien de demandes l'assistant resout-il seul ?",
+        "a": "Environ 55% des demandes de niveau 1, sur plus de 2 millions de chats traites chaque mois."
+      }
+    ]
+  },
+  "logo_domain": "nubank.com.br"
+}

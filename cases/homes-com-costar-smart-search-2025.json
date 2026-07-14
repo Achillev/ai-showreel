@@ -1,0 +1,264 @@
+{
+  "id": "homes-com-costar-smart-search-2025",
+  "type_fiche": "succes",
+  "marque": "Homes.com",
+  "groupe": "CoStar Group",
+  "industrie": "immobilier",
+  "marches_deploiement": [
+    "Etats-Unis"
+  ],
+  "transposable_ue": {
+    "flag": "oui_avec_adaptations",
+    "note": "La recherche vocale et textuelle en langage naturel est transposable a un portail europeen. L'adaptation porte sur la langue, les points d'interet locaux et le RGPD sur les donnees de conversation, que CoStar dit conserver dans l'ecosysteme Homes.com."
+  },
+  "metier": "portail immobilier / experience de recherche et generation de leads",
+  "intervenants": [
+    {
+      "nom": "Andy Florance",
+      "role": "Founder and CEO, CoStar Group",
+      "source_ref": "S1"
+    }
+  ],
+  "axes": {
+    "levier": "activation_conversion",
+    "touchpoints": [
+      "recherche Smart Search sur Homes.com",
+      "interface conversationnelle Homes AI (voix et texte)"
+    ],
+    "etape_parcours": "consideration",
+    "famille": "conversation",
+    "pattern": "recherche vocale et textuelle en langage naturel, puis assistant conversationnel",
+    "type_ia": [
+      "traitement du langage naturel",
+      "reconnaissance vocale (speech-to-text)",
+      "assistant conversationnel"
+    ],
+    "plateforme_stack": [
+      "custom/in-house",
+      "Microsoft Azure OpenAI"
+    ],
+    "objectif_metrique": [
+      "temps passe sur le site",
+      "volume de leads soumis",
+      "engagement de recherche"
+    ]
+  },
+  "implementation": "hybride",
+  "objectif_business": "Remplacer les filtres par une recherche en langage courant, y compris multi-villes et par points d'interet, pour retenir l'utilisateur plus longtemps sur Homes.com et augmenter les leads adresses aux agents abonnes.",
+  "description": "Homes.com, le portail residentiel de CoStar Group, lance Smart Search le 14 octobre 2025 : une recherche en langage naturel qui accepte des requetes conversationnelles comme une maison de plain-pied avec piscine dans une ville donnee, des recherches multi-villes, des requetes par point d'interet et la commande vocale par reconnaissance de la parole. En fevrier 2026, CoStar deploie Homes AI, une interface de recherche pilotee par un modele de langage qui permet une conversation a deux sens par voix ou texte pour explorer biens et quartiers, avec des donnees qui restent dans l'ecosysteme Homes.com. Le PDG rapporte que les utilisateurs qui passent par le mode IA restent plus longtemps sur le site et soumettent plus de leads. Homes.com revendique 108 millions de visiteurs uniques mensuels en moyenne en 2025.",
+  "resultats": [
+    {
+      "metrique": "Effet du mode IA sur l'engagement et les leads",
+      "valeur": "plus de temps sur le site et plus de leads soumis",
+      "citation_exacte": "users who engage with the AI mode spend significantly more time on the site and submit more leads",
+      "source_ref": "S1"
+    },
+    {
+      "metrique": "Visiteurs uniques mensuels en moyenne (2025)",
+      "valeur": "108 millions",
+      "citation_exacte": "108 million average monthly unique visitors in 2025",
+      "source_ref": "S1"
+    }
+  ],
+  "niveau_preuve": {
+    "niveau": "C",
+    "justification": "Declarations du CEO de CoStar rapportees par la presse specialisee (Real Estate News) et communiques officiels CoStar concordants. Metrique d'engagement qualitative et audience revendiquee, sans chiffrage precis de l'effet IA, d'ou un niveau C."
+  },
+  "dates": {
+    "lancement": "2025-10-14 (Smart Search) ; 2026-02 (Homes AI)",
+    "derniere_confirmation_activite": "2026-02 (lancement de Homes AI et communication CoStar au T4 2025)",
+    "verifie_le": "2026-07-11",
+    "revoir_apres": "2027-01-11"
+  },
+  "statut_vivant": {
+    "statut": "confirme",
+    "note": "Smart Search est en production depuis octobre 2025 et a evolue vers Homes AI en fevrier 2026. CoStar mise publiquement sur cette experience IA apres un T4 2025 juge solide."
+  },
+  "sources": [
+    {
+      "ref": "S1",
+      "type": "presse",
+      "fiabilite": "T4_secondaire",
+      "titre": "CoStar touts Homes.com momentum, bets big on AI after strong Q4",
+      "url": "https://www.realestatenews.com/2026/02/24/costar-touts-homes-com-momentum-bets-big-on-ai-after-strong-q4",
+      "date_publication": "2026-02-24",
+      "consulte_le": "2026-07-11"
+    },
+    {
+      "ref": "S2",
+      "type": "presse",
+      "fiabilite": "T4_secondaire",
+      "titre": "2 more portals embrace AI-powered home search tools",
+      "url": "https://www.realestatenews.com/2025/10/14/2-more-portals-embrace-ai-powered-home-search-tools",
+      "date_publication": "2025-10-14",
+      "consulte_le": "2026-07-11"
+    },
+    {
+      "ref": "S3",
+      "type": "blog_officiel",
+      "fiabilite": "T1_primaire",
+      "titre": "Homes.com Launches Smart Search Feature, Enabling Users to Search the Way You Speak",
+      "url": "https://www.costargroup.com/press-room/2025/homescom-launches-smart-search-feature-enabling-users-search-way",
+      "date_publication": "2025-10-14",
+      "consulte_le": "2026-07-11"
+    }
+  ],
+  "fonctionnement_operationnel": {
+    "cadence": "Temps reel a chaque requete ; conversation continue en mode Homes AI.",
+    "opere_par": "Equipe produit et IA de CoStar / Homes.com ; les agents abonnes recoivent les leads generes.",
+    "signal_pilote": "Le catalogue d'annonces et les donnees de quartier, plus les donnees de conversation gardees dans l'ecosysteme Homes.com. Sans elles, l'assistant ne peut ni situer ni comparer les biens.",
+    "etapes": [
+      {
+        "etape": "Requete vocale ou textuelle",
+        "detail": "L'utilisateur decrit son besoin en langage courant, y compris multi-villes ou par point d'interet.",
+        "acteur": "client"
+      },
+      {
+        "etape": "Interpretation et remontee",
+        "detail": "Smart Search traduit la phrase en criteres et fait remonter les biens correspondants.",
+        "acteur": "IA"
+      },
+      {
+        "etape": "Conversation a deux sens",
+        "detail": "En mode Homes AI, l'utilisateur affine par voix ou texte pour explorer biens et quartiers.",
+        "acteur": "IA"
+      },
+      {
+        "etape": "Generation du lead",
+        "detail": "L'intention forte se traduit en lead adresse a un agent abonne.",
+        "acteur": "humain"
+      }
+    ]
+  },
+  "schema_flow": {
+    "statut": "approche_type",
+    "noeuds": [
+      {
+        "id": "listings",
+        "role_generique": "data_source",
+        "label": "Annonces et donnees de quartier Homes.com"
+      },
+      {
+        "id": "model",
+        "role_generique": "modele_ia",
+        "label": "Recherche NL + assistant conversationnel Homes AI",
+        "outil_documente": "Microsoft Azure OpenAI"
+      },
+      {
+        "id": "app",
+        "role_generique": "site_app",
+        "label": "Homes.com"
+      },
+      {
+        "id": "user",
+        "role_generique": "humain",
+        "label": "Acheteur"
+      },
+      {
+        "id": "agent",
+        "role_generique": "humain",
+        "label": "Agent abonne"
+      }
+    ],
+    "liens": [
+      [
+        "user",
+        "app",
+        "requete voix / texte"
+      ],
+      [
+        "app",
+        "model"
+      ],
+      [
+        "listings",
+        "model"
+      ],
+      [
+        "model",
+        "app",
+        "biens et reponses"
+      ],
+      [
+        "app",
+        "agent",
+        "lead"
+      ]
+    ]
+  },
+  "stack_technique": [
+    {
+      "nom": "Microsoft Azure OpenAI",
+      "categorie": "plateforme",
+      "detail": "Service cloud qui fournit le modele conversationnel derriere la recherche en langage naturel et Homes AI ; le modele exact n'est pas nomme publiquement",
+      "url": "https://azure.microsoft.com"
+    },
+    {
+      "nom": "Smart Search / Homes AI (custom in-house)",
+      "categorie": "outil",
+      "detail": "Couche construite par CoStar : traduction des phrases en criteres de recherche, requetes multi-villes et par point d'interet, commande vocale (speech-to-text), puis conversation a deux sens par voix ou texte",
+      "url": "https://www.homes.com"
+    },
+    {
+      "nom": "Catalogue d'annonces et donnees de quartier CoStar",
+      "categorie": "infra",
+      "detail": "Base d'annonces residentielle et donnees locales de CoStar Group qui alimentent la recherche ; les donnees de conversation restent dans l'ecosysteme Homes.com",
+      "url": "https://www.costargroup.com"
+    }
+  ],
+  "replication": {
+    "statut_epistemique": "infere",
+    "prerequis_data": [
+      "catalogue d'annonces structure",
+      "donnees de quartier et points d'interet",
+      "stockage maitrise des donnees de conversation"
+    ],
+    "prerequis_orga": [
+      "acces a un modele conversationnel (cloud ou interne)",
+      "reconnaissance vocale",
+      "routage des leads vers les agents"
+    ],
+    "stack_possible": [
+      "modele conversationnel type Azure OpenAI",
+      "moteur de recherche NL",
+      "speech-to-text"
+    ],
+    "premiere_etape": "Livrer une recherche NL fiable avant d'ouvrir la conversation a deux sens.",
+    "playbook": [
+      {
+        "action": "Structurer le catalogue d'annonces et les donnees de quartier et points d'interet ; definir ou vivent les donnees de conversation.",
+        "livrable": "Catalogue interrogeable par criteres et cadre de conservation des conversations"
+      },
+      {
+        "action": "Construire la recherche en langage naturel : traduction de la phrase en criteres via un modele conversationnel, tests sur les requetes reelles y compris multi-villes.",
+        "livrable": "Recherche NL en production a cote des filtres classiques"
+      },
+      {
+        "action": "Ajouter la commande vocale (speech-to-text) et mesurer temps passe et engagement de recherche contre le parcours filtres.",
+        "livrable": "Mode vocal actif et premier bilan d'engagement"
+      },
+      {
+        "action": "Ouvrir la conversation a deux sens (exploration de biens et de quartiers) et brancher le routage des leads vers les agents.",
+        "livrable": "Assistant conversationnel en production avec suivi du volume de leads"
+      }
+    ],
+    "equipe": "2-3 devs search / ML + 1 PM + 1 data engineer pour le catalogue et les points d'interet"
+  },
+  "seo": {
+    "slug": "homes-com-costar-smart-search-2025",
+    "title": "Homes.com : Smart Search et Homes AI, recherche immobiliere en langage naturel (CoStar, 2025)",
+    "meta_description": "Homes.com (CoStar) lance Smart Search en 2025 puis Homes AI en 2026. Les utilisateurs du mode IA restent plus longtemps et soumettent plus de leads.",
+    "resume_citable": "Homes.com (CoStar Group) a lance Smart Search en octobre 2025 puis Homes AI en fevrier 2026 pour la recherche immobiliere en langage naturel ; le CEO indique que les utilisateurs du mode IA passent plus de temps sur le site et soumettent plus de leads, sur une audience de 108 millions de visiteurs uniques mensuels.",
+    "faq": [
+      {
+        "q": "Qu'est-ce que Smart Search de Homes.com ?",
+        "a": "Une recherche en langage naturel lancee en octobre 2025 qui accepte des requetes conversationnelles, multi-villes et par point d'interet, ainsi que la commande vocale."
+      },
+      {
+        "q": "Quel effet CoStar rapporte-t-il sur l'engagement ?",
+        "a": "Selon le CEO Andy Florance, les utilisateurs qui passent par le mode IA restent significativement plus longtemps sur le site et soumettent plus de leads."
+      }
+    ]
+  },
+  "logo_domain": "homes.com"
+}

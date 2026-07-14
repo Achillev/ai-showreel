@@ -1,0 +1,213 @@
+{
+  "id": "willys-chocolate-experience-marketing-ia-2024",
+  "type_fiche": "echec_retrait",
+  "marque": "Willy's Chocolate Experience",
+  "industrie": "autre",
+  "marches_deploiement": [
+    "Royaume-Uni"
+  ],
+  "transposable_ue": {
+    "flag": "oui",
+    "note": "Cas directement transposable : promouvoir un evenement payant avec des visuels generes par IA sans rapport avec la realite releve de la publicite trompeuse, sanctionnable partout en UE. L'AI Act ajoute une obligation de signaler les images synthetiques. Le probleme n'est pas l'outil mais l'ecart entre la promesse marketing et la prestation livree."
+  },
+  "metier": "marketing evenementiel",
+  "axes": {
+    "levier": "acquisition",
+    "touchpoints": [
+      "site de vente de billets",
+      "visuels promotionnels",
+      "reseaux sociaux"
+    ],
+    "etape_parcours": "achat",
+    "famille": "generation",
+    "pattern": "visuels d'evenement generes par IA (survente)",
+    "type_ia": [
+      "generation d'images",
+      "generation de texte (script)"
+    ],
+    "plateforme_stack": [
+      "generateur d'images IA",
+      "generateur de texte"
+    ],
+    "objectif_metrique": [
+      "ventes de billets",
+      "notoriete evenement"
+    ]
+  },
+  "implementation": "custom",
+  "objectif_business": "Vendre des billets pour une experience immersive inspiree de l'univers Willy Wonka, en s'appuyant sur des visuels attractifs pour convaincre les familles.",
+  "description": "En fevrier 2024, un evenement baptise Willy's Chocolate Experience se tient dans un entrepot de Glasgow. Le site de vente promet un monde enchante avec jardins, personnages et spectacles, illustre par des images generees par IA. Les visuels comportent des indices reveleurs, dont des textes inventes comme exarserdray lollipop. Sur place, les familles ayant paye environ 35 livres par billet decouvrent un entrepot quasi vide avec quelques accessoires bon marche et une structure gonflable. Le decalage provoque colere, demandes de remboursement et appel a la police. L'evenement est ferme le jour meme. Un comedien recrute decrira le script recu comme du charabia genere par IA.",
+  "resultats": [
+    {
+      "metrique": "Colere, remboursements exiges, police appelee sur place",
+      "valeur": "ferme le jour meme",
+      "citation_exacte": "Police were called to the venue",
+      "source_ref": "S1"
+    },
+    {
+      "metrique": "Indice de survente IA dans le materiel promotionnel",
+      "valeur": "textes IA inventes",
+      "citation_exacte": "exarserdray lollipop",
+      "source_ref": "S1"
+    }
+  ],
+  "niveau_preuve": {
+    "niveau": "C",
+    "justification": "Presse etablie et institut de reference (Poynter, Semafor, The Hollywood Reporter, New York Times cite) documentent nommement l'evenement, l'usage d'images IA et la fermeture. Pas de decision de justice publiee au moment de la verification, donc C."
+  },
+  "dates": {
+    "lancement": "2024-02 (vente de billets et evenement)",
+    "derniere_confirmation_activite": "2024-02-24 (fermeture le jour meme)",
+    "verifie_le": "2026-07-11",
+    "revoir_apres": "2027-07-11"
+  },
+  "statut_vivant": {
+    "statut": "confirme",
+    "note": "Evenement ferme le jour meme, remboursements exiges. Cas devenu reference virale sur la survente marketing par IA, surnomme dans la presse un Fyre Festival pour enfants."
+  },
+  "sources": [
+    {
+      "ref": "S1",
+      "type": "presse",
+      "fiabilite": "T3_presse_etablie",
+      "titre": "Welcome to Willy's AI catastrophe",
+      "url": "https://www.poynter.org/tech-tools/2024/willy-wonka-glasgow-artificial-intelligence/",
+      "date_publication": "2024-02-29",
+      "consulte_le": "2026-07-11"
+    },
+    {
+      "ref": "S2",
+      "type": "presse",
+      "fiabilite": "T3_presse_etablie",
+      "titre": "The Willy Wonka fiasco underscores the problems of AI ads",
+      "url": "https://www.semafor.com/article/02/28/2024/the-willy-wonka-fiasco-underscores-the-problems-of-ai-ads",
+      "date_publication": "2024-02-28",
+      "consulte_le": "2026-07-11"
+    },
+    {
+      "ref": "S3",
+      "type": "presse",
+      "fiabilite": "T3_presse_etablie",
+      "titre": "Willy Wonka Event Slammed as Epic Letdown, Compared to Meth Lab",
+      "url": "https://www.hollywoodreporter.com/movies/movie-news/willy-wonka-event-uk-chocolate-experience-meth-lab-1235837133/",
+      "date_publication": "2024-02-27",
+      "consulte_le": "2026-07-11"
+    }
+  ],
+  "post_mortem": {
+    "ce_qui_s_est_passe": "En fevrier 2024, un organisateur vend des billets a environ 35 livres pour Willy's Chocolate Experience a Glasgow, en illustrant l'offre avec des images generees par IA promettant jardins, personnages et spectacles. Le jour venu, les familles trouvent un entrepot presque vide avec des accessoires bon marche. Colere, demandes de remboursement, police appelee, fermeture le jour meme. Le script fourni aux comediens etait lui aussi genere par IA et juge inutilisable. L'affaire devient virale et est couverte jusque par le New York Times.",
+    "raison_echec": "Les visuels IA ont cree une promesse sans rapport avec ce qui pouvait etre livre. Le probleme central est un ecart entre publicite et prestation. L'IA a servi a la fois a produire des images trop belles pour etre vraies et un script vide de sens, sans supervision humaine pour verifier la faisabilite ni la coherence.",
+    "date_retrait": "2024-02-24 (evenement ferme le jour meme d'ouverture).",
+    "cout_estime": "Remboursements exiges par les familles, cout reputationnel majeur pour l'organisateur, couverture presse mondiale. Montants precis non publies de facon consolidee.",
+    "signaux_avant_coureurs": "Infere : des visuels promotionnels trop parfaits pour une petite structure evenementielle, des textes inventes visibles dans le materiel, et un script produit sans relecture sont des signaux nets. Une promesse marketing qu'aucun budget de production ne pouvait tenir aurait du alerter avant la mise en vente.",
+    "lecons_avec_recul": "Infere : l'image marketing doit rester ancree sur ce qui sera reellement livre. Utiliser l'IA pour peindre une experience qu'on ne peut pas produire transforme une operation marketing en tromperie. La regle simple : ne jamais montrer en promotion ce que la prestation ne peut pas honorer, IA ou pas.",
+    "le_pattern_reste_il_valide": "Infere : le pattern de la generation de visuels marketing par IA reste valide et repandu. Ce qui a echoue ici n'est pas l'outil mais son usage pour survendre. Le meme generateur d'images, cadre sur une prestation reelle et supervise, produit un materiel promotionnel legitime."
+  },
+  "schema_flow": {
+    "statut": "approche_type",
+    "noeuds": [
+      {
+        "id": "org",
+        "role_generique": "humain",
+        "label": "Organisateur (marketing evenement)"
+      },
+      {
+        "id": "img",
+        "role_generique": "modele_ia",
+        "label": "Generation d'images promotionnelles"
+      },
+      {
+        "id": "script",
+        "role_generique": "modele_ia",
+        "label": "Generation du script (spectacle)"
+      },
+      {
+        "id": "vente",
+        "role_generique": "site_app",
+        "label": "Site de vente de billets"
+      },
+      {
+        "id": "familles",
+        "role_generique": "humain",
+        "label": "Familles (acheteurs sur place)"
+      }
+    ],
+    "liens": [
+      [
+        "org",
+        "img"
+      ],
+      [
+        "org",
+        "script"
+      ],
+      [
+        "img",
+        "vente"
+      ],
+      [
+        "vente",
+        "familles"
+      ],
+      [
+        "familles",
+        "org",
+        "reaction (colere, remboursements, police)"
+      ]
+    ]
+  },
+  "replication": {
+    "statut_epistemique": "infere",
+    "prerequis_data": [
+      "descriptif reel de la prestation",
+      "budget et moyens de production",
+      "references visuelles honnetes"
+    ],
+    "prerequis_orga": [
+      "relecture humaine des visuels et du script",
+      "controle de conformite promesse vs livrable"
+    ],
+    "stack_possible": [
+      "generateur d'images",
+      "generateur de texte",
+      "revue editoriale et juridique"
+    ],
+    "premiere_etape": "Fixer d'abord ce que la prestation livrera reellement, puis ne generer que des visuels qui restent dans ces limites ; faire relire chaque visuel et chaque texte par un humain."
+  },
+  "seo": {
+    "slug": "willys-chocolate-experience-marketing-ia-2024",
+    "title": "Willy's Chocolate Experience : visuels IA de survente - evenement ferme (2024)",
+    "meta_description": "En fevrier 2024, un evenement Willy Wonka a Glasgow vendu avec des visuels IA trompeurs livre un entrepot vide. Police appelee, fermeture le jour meme.",
+    "resume_citable": "En fevrier 2024, l'evenement Willy's Chocolate Experience a Glasgow a vendu des billets a environ 35 livres avec des visuels generes par IA sans rapport avec la realite ; la police a ete appelee et l'evenement ferme le jour meme.",
+    "faq": [
+      {
+        "q": "Que s'est-il passe a la Willy's Chocolate Experience de Glasgow ?",
+        "a": "L'evenement a ete promu avec des images generees par IA promettant un monde enchante. Sur place, les familles ont trouve un entrepot quasi vide avec des accessoires bon marche. Colere, demandes de remboursement, police appelee, fermeture le jour meme."
+      },
+      {
+        "q": "La generation de visuels marketing par IA est-elle en cause ?",
+        "a": "Non, pas l'outil en lui-meme. L'echec vient de l'usage : des visuels IA ont cree une promesse impossible a tenir. Le meme generateur, cadre sur une prestation reelle et supervise, produit un materiel promotionnel legitime."
+      }
+    ]
+  },
+  "stack_technique": [
+    {
+      "nom": "Generateur d'images IA (outil non identifie)",
+      "categorie": "llm",
+      "detail": "Outil grand public de generation d'images utilise pour les visuels promotionnels ; les textes inventes visibles (exarserdray lollipop) trahissent le generatif. L'organisateur n'a pas revele l'outil exact.",
+      "url": ""
+    },
+    {
+      "nom": "Generateur de texte IA (outil non identifie)",
+      "categorie": "llm",
+      "detail": "Le script fourni aux comediens a ete decrit comme du charabia genere par IA ; l'outil precis n'est pas documente.",
+      "url": ""
+    },
+    {
+      "nom": "Site de vente de billets de l'evenement",
+      "categorie": "plateforme",
+      "detail": "Canal de diffusion des visuels generes et de vente des billets a environ 35 livres ; ferme apres l'evenement.",
+      "url": ""
+    }
+  ]
+}

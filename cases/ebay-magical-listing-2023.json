@@ -1,0 +1,250 @@
+{
+  "id": "ebay-magical-listing-2023",
+  "type_fiche": "succes",
+  "marque": "eBay",
+  "industrie": "retail_ecom",
+  "marches_deploiement": [
+    "US",
+    "International (deploiement progressif)"
+  ],
+  "transposable_ue": {
+    "flag": "oui",
+    "note": "Plateforme mondiale avec vendeurs UE. La generation de fiches a partir d'une photo traite des images produit, pas de donnees personnelles sensibles. L'AI Act impose la transparence sur le contenu genere, ce qui reste compatible avec une fiche redactionnelle assistee et editable par le vendeur."
+  },
+  "metier": "e-commerce, outillage vendeur, marketplace",
+  "marque_linkedin": "https://www.linkedin.com/company/ebay",
+  "axes": {
+    "levier": "activation_conversion",
+    "touchpoints": [
+      "app mobile vendeur",
+      "Seller Hub"
+    ],
+    "etape_parcours": "achat",
+    "famille": "generation",
+    "pattern": "generation genAI de fiche produit a partir d'une photo",
+    "type_ia": [
+      "vision par ordinateur",
+      "LLM",
+      "generation de texte"
+    ],
+    "plateforme_stack": [
+      "custom/in-house",
+      "modeles genAI eBay"
+    ],
+    "objectif_metrique": [
+      "temps de mise en vente",
+      "adoption vendeur",
+      "completude des fiches"
+    ]
+  },
+  "implementation": "plateforme",
+  "stack_technique": [
+    {
+      "nom": "Modeles vision + LLM eBay (in-house)",
+      "categorie": "llm",
+      "detail": "Reconnaissent l'objet sur la photo et generent titre, description, categorie et attributs; eBay ne detaille pas publiquement les modeles.",
+      "url": "https://www.ebay.com"
+    },
+    {
+      "nom": "Seller Hub et app mobile vendeur",
+      "categorie": "infra",
+      "detail": "Points d'entree de Magical Listing: photo prise ou televersee, puis revue et edition par le vendeur avant publication.",
+      "url": "https://www.ebay.com"
+    },
+    {
+      "nom": "Taxonomie catalogue et moteur de suggestion prix",
+      "categorie": "outil",
+      "detail": "Briques eBay existantes combinees a la generation: mapping categorie et sous-categorie, suggestions de prix et de frais de port.",
+      "url": "https://www.ebay.com"
+    }
+  ],
+  "objectif_business": "Reduire la friction de mise en vente, en particulier pour les vendeurs debutants confrontes au probleme du cold start, en generant automatiquement une fiche complete.",
+  "points_cles": ["Generation genAI d'une fiche produit a partir d'une simple photo, avec revue du vendeur.", "Outil Magical Listing, modeles vision et LLM eBay in-house dans le Seller Hub.", "30% des vendeurs US de l'app l'ont teste, plus de 95% ont garde la description IA.", "Niveau de preuve B, statut vivant confirme."],
+  "description": "L'outil Magical Listing genere une annonce a partir d'une simple photo prise ou televersee dans l'app eBay. L'IA analyse l'image et produit titre, description, date de sortie, categorie et sous-categorie, et se combine aux autres briques d'eBay pour suggerer prix et frais de port. Le vendeur revoit et edite avant publication. Objectif direct : accelerer la creation de fiches detaillees et coherentes, surtout pour les nouveaux vendeurs. Deploye a partir de fin 2023 dans le Seller Hub et l'app mobile.",
+  "resultats": [
+    {
+      "metrique": "Vendeurs US de l'app ayant essaye l'outil au moins une fois",
+      "valeur": "30%",
+      "citation_exacte": "30% of U.S. sellers using the app on iOS or Android tried the tool at least once",
+      "source_ref": "S1"
+    },
+    {
+      "metrique": "Vendeurs ayant garde la description IA, avec ou sans edition",
+      "valeur": "95%+",
+      "citation_exacte": "more than 95% used the AI-drafted descriptions",
+      "source_ref": "S1"
+    }
+  ],
+  "niveau_preuve": {
+    "niveau": "B",
+    "justification": "Metriques d'adoption et de retention communiquees par eBay et rapportees par la presse specialisee (Retail Dive, TechCrunch). Chiffres d'usage a l'echelle de la marketplace, mais pas de resultat financier direct."
+  },
+  "dates": {
+    "lancement": "Septembre 2023 (annonce), deploiement fin 2023",
+    "derniere_confirmation_activite": "2026 (page Selling with AI active, outil integre au Seller Hub)",
+    "verifie_le": "2026-07-11",
+    "revoir_apres": "2027-01-11"
+  },
+  "statut_vivant": {
+    "statut": "confirme",
+    "note": "Fonction integree de facon permanente au Seller Hub et a l'app ; eBay continue d'etendre ses outils vendeurs genAI (page officielle Selling with AI)."
+  },
+  "sources": [
+    {
+      "ref": "S1",
+      "type": "presse",
+      "fiabilite": "T3_presse_etablie",
+      "titre": "EBay's new AI tool generates product listings from photos",
+      "url": "https://www.retaildive.com/news/ebay-ai-magical-listing-product-descriptions-listings/693185/",
+      "date_publication": "2023-09-11",
+      "consulte_le": "2026-07-11"
+    },
+    {
+      "ref": "S2",
+      "type": "presse",
+      "fiabilite": "T3_presse_etablie",
+      "titre": "eBay rolls out a tool that generates product listings from photos",
+      "url": "https://techcrunch.com/2023/09/07/ebay-rolls-out-a-tool-that-generates-product-listings-from-photos/",
+      "date_publication": "2023-09-07",
+      "consulte_le": "2026-07-11"
+    },
+    {
+      "ref": "S3",
+      "type": "blog_officiel",
+      "fiabilite": "T2_officiel_interesse",
+      "titre": "Selling is now even easier with AI",
+      "url": "https://pages.ebay.com/sellingwithAI/",
+      "date_publication": "2024",
+      "consulte_le": "2026-07-11"
+    }
+  ],
+  "fonctionnement_operationnel": {
+    "cadence": "A la demande, a chaque creation de fiche par un vendeur.",
+    "opere_par": "Plateforme eBay (in-house) ; le vendeur reste dans la boucle pour valider.",
+    "signal_pilote": "La qualite de la photo et la reconnaissance de l'objet. Sur un produit mal cadre ou peu identifiable, la fiche generee derape et le vendeur doit tout reprendre.",
+    "etapes": [
+      {
+        "etape": "Prise de photo",
+        "detail": "Le vendeur photographie ou televerse une image du produit dans l'app.",
+        "acteur": "client"
+      },
+      {
+        "etape": "Analyse et generation",
+        "detail": "L'IA reconnait l'objet et genere titre, description, categorie et attributs.",
+        "acteur": "IA"
+      },
+      {
+        "etape": "Suggestions complementaires",
+        "detail": "La plateforme propose prix et frais de port a partir de ses autres briques.",
+        "acteur": "IA"
+      },
+      {
+        "etape": "Revue et publication",
+        "detail": "Le vendeur edite si besoin puis publie l'annonce.",
+        "acteur": "client"
+      }
+    ]
+  },
+  "schema_flow": {
+    "statut": "documente",
+    "noeuds": [
+      {
+        "id": "vendeur",
+        "role_generique": "humain",
+        "label": "Vendeur eBay"
+      },
+      {
+        "id": "photo",
+        "role_generique": "data_source",
+        "label": "Photo produit"
+      },
+      {
+        "id": "genai",
+        "role_generique": "modele_ia",
+        "label": "Vision + LLM eBay"
+      },
+      {
+        "id": "fiche",
+        "role_generique": "site_app",
+        "label": "Fiche produit Seller Hub"
+      }
+    ],
+    "liens": [
+      [
+        "vendeur",
+        "photo"
+      ],
+      [
+        "photo",
+        "genai"
+      ],
+      [
+        "genai",
+        "fiche"
+      ],
+      [
+        "fiche",
+        "vendeur",
+        "revue et edition"
+      ]
+    ]
+  },
+  "replication": {
+    "statut_epistemique": "infere",
+    "prerequis_data": [
+      "images produit",
+      "taxonomie de categories",
+      "referentiel d'attributs"
+    ],
+    "prerequis_orga": [
+      "modele vision-langage ou API",
+      "boucle de validation vendeur"
+    ],
+    "stack_possible": [
+      "modele multimodal image vers texte",
+      "mapping vers taxonomie catalogue",
+      "moteur de suggestion prix"
+    ],
+    "premiere_etape": "Brancher un modele multimodal sur le flux de creation de fiche et laisser le vendeur editer la sortie.",
+    "playbook": [
+      {
+        "action": "Cadrer les champs a generer (titre, description, categorie, attributs) et la taxonomie cible.",
+        "livrable": "Spec de la fiche generee et jeux de photos de test"
+      },
+      {
+        "action": "Brancher un modele multimodal (API) sur le flux de creation de fiche.",
+        "livrable": "Prototype photo vers fiche sur le catalogue de test"
+      },
+      {
+        "action": "Construire le mapping vers la taxonomie et l'ecran de revue vendeur.",
+        "livrable": "Fiche pre-remplie editable en pre-production"
+      },
+      {
+        "action": "Ouvrir une beta a un segment de vendeurs et mesurer l'essai et la retention de la description.",
+        "livrable": "Chiffres d'adoption et de retention sur la beta"
+      },
+      {
+        "action": "Generaliser et suivre completude des fiches et temps de mise en vente.",
+        "livrable": "Fonction en production avec tableau de bord d'adoption"
+      }
+    ],
+    "equipe": "2 devs + 1 PM + 1 profil data pour la taxonomie et l'evaluation des sorties."
+  },
+  "seo": {
+    "slug": "ebay-magical-listing-2023",
+    "title": "eBay Magical Listing : fiche produit genAI depuis une photo - 30% des vendeurs (2023)",
+    "meta_description": "Magical Listing d'eBay genere titre et description d'une annonce a partir d'une photo. 30% des vendeurs US de l'app l'ont teste, plus de 95% ont garde la description IA.",
+    "resume_citable": "Avec Magical Listing (2023), eBay genere une fiche produit complete depuis une photo : 30% des vendeurs US de l'app l'ont essaye et plus de 95% d'entre eux ont utilise la description generee par l'IA.",
+    "faq": [
+      {
+        "q": "Que genere Magical Listing ?",
+        "a": "A partir d'une photo, l'IA d'eBay genere titre, description, categorie et attributs, et suggere prix et frais de port."
+      },
+      {
+        "q": "Quelle est l'adoption de l'outil ?",
+        "a": "30% des vendeurs US de l'app l'ont essaye au moins une fois et plus de 95% ont utilise la description generee."
+      }
+    ]
+  },
+  "logo_domain": "ebay.com"
+}

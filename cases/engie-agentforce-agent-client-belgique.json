@@ -1,0 +1,269 @@
+{
+  "id": "engie-agentforce-agent-client-belgique",
+  "type_fiche": "succes",
+  "marque": "ENGIE",
+  "industrie": "energie_utilities",
+  "marches_deploiement": [
+    "Belgique"
+  ],
+  "transposable_ue": {
+    "flag": "oui",
+    "note": "Deploiement deja dans l'UE (Belgique), integre a l'application mobile ENGIE pour les clients avec contrat ou compteur intelligent. L'agent repond sur des sujets factuels (facturation, energie propre, compteurs, recharge VE), ce qui limite l'exposition a des donnees sensibles et facilite le cadrage RGPD et AI Act."
+  },
+  "metier": "service client",
+  "marque_linkedin": "https://www.linkedin.com/company/engie/",
+  "agences": [
+    {
+      "nom": "Capgemini",
+      "role": "Partenaire d'integration pour la mise en production d'Agentforce",
+      "source_ref": "S1"
+    }
+  ],
+  "axes": {
+    "levier": "retention",
+    "touchpoints": [
+      "application mobile",
+      "chat"
+    ],
+    "etape_parcours": "post-achat",
+    "famille": "conversation",
+    "pattern": "agent client genAI autonome integre au CRM",
+    "type_ia": [
+      "agent IA generatif",
+      "LLM",
+      "recuperation ancree sur base de connaissance"
+    ],
+    "plateforme_stack": [
+      "Salesforce Agentforce"
+    ],
+    "objectif_metrique": [
+      "taux de resolution autonome",
+      "taux d'assistance client",
+      "delai de mise en production"
+    ]
+  },
+  "implementation": "plateforme",
+  "stack_technique": [
+    {
+      "nom": "Salesforce Agentforce",
+      "categorie": "plateforme",
+      "detail": "Agent genAI natif Salesforce, ancre sur la base de connaissance et le contexte CRM; resout seul 71 % des cas dans l'app.",
+      "url": "https://www.salesforce.com/agentforce/"
+    },
+    {
+      "nom": "Salesforce (CRM)",
+      "categorie": "plateforme",
+      "detail": "Socle compte et contrat sur lequel l'agent s'appuie pour contextualiser ses reponses.",
+      "url": "https://www.salesforce.com"
+    },
+    {
+      "nom": "Capgemini",
+      "categorie": "integrateur",
+      "detail": "Partenaire d'integration; mise en production en moins d'un mois, contre environ neuf mois pour les projets IA precedents.",
+      "url": "https://www.capgemini.com"
+    },
+    {
+      "nom": "Application mobile ENGIE",
+      "categorie": "infra",
+      "detail": "Canal unique de l'agent pour les clients belges disposant d'un contrat ou d'un compteur intelligent.",
+      "url": "https://www.engie.com"
+    }
+  ],
+  "objectif_business": "Repondre instantanement aux questions courantes des clients dans l'app mobile, resoudre un maximum de cas sans conseiller et raccourcir drastiquement le delai entre l'idee et la mise en production d'un agent.",
+  "points_cles": ["Agent client genAI autonome dans l'app mobile ENGIE (facturation, compteurs, recharge VE).", "Salesforce Agentforce ancre sur le CRM, integre avec Capgemini.", "71% des cas resolus seul, 83% des utilisateurs assistes, mise en production en moins d'un mois.", "Niveau de preuve B, statut vivant confirme."],
+  "description": "ENGIE a integre Agentforce nativement dans Salesforce pour ses clients belges disposant d'un contrat ou d'un compteur intelligent. L'agent, accessible dans l'application mobile ENGIE, donne des reponses immediates sur la facturation, l'energie propre, les compteurs intelligents et la recharge de vehicules electriques, et guide l'onboarding. Il resout seul 71 % des cas et assiste 83 % des utilisateurs. La mise en production, menee avec Capgemini, a pris moins d'un mois, la ou les projets IA precedents demandaient environ neuf mois.",
+  "resultats": [
+    {
+      "metrique": "Cas resolus de facon autonome par l'agent",
+      "valeur": "71 %",
+      "citation_exacte": "autonomously resolving 71% of cases",
+      "source_ref": "S1"
+    },
+    {
+      "metrique": "Utilisateurs assistes par Agentforce",
+      "valeur": "83 %",
+      "citation_exacte": "assisting 83% of users with Agentforce",
+      "source_ref": "S1"
+    },
+    {
+      "metrique": "Delai de mise en production, contre environ neuf mois pour les projets IA precedents",
+      "valeur": "moins d'un mois",
+      "citation_exacte": "up and running in less than a month",
+      "source_ref": "S2"
+    }
+  ],
+  "niveau_preuve": {
+    "niveau": "B",
+    "justification": "Etude de cas plateforme chiffree (Salesforce) avec taux de resolution et d'assistance, reprise dans un article de la meme source. Sources concordantes mais toutes deux de l'editeur, d'ou un niveau B."
+  },
+  "dates": {
+    "lancement": "2024-2025 (deploiement Agentforce cote client belge)",
+    "derniere_confirmation_activite": "2025 (etudes de cas Salesforce a jour)",
+    "verifie_le": "2026-07-11",
+    "revoir_apres": "2027-01-11"
+  },
+  "statut_vivant": {
+    "statut": "confirme",
+    "note": "Agent en production dans l'app ENGIE en Belgique. ENGIE annonce une extension a d'autres cas d'usage (agents terrain, agents commerciaux) via Agentforce."
+  },
+  "sources": [
+    {
+      "ref": "S1",
+      "type": "customer_story_plateforme",
+      "fiabilite": "T2_officiel_interesse",
+      "titre": "ENGIE lights the way in energy service with Agentforce's instant answers",
+      "url": "https://www.salesforce.com/customer-stories/engie/",
+      "date_publication": "2025",
+      "consulte_le": "2026-07-11"
+    },
+    {
+      "ref": "S2",
+      "type": "blog_officiel",
+      "fiabilite": "T2_officiel_interesse",
+      "titre": "How ENGIE and Salesforce Are Redefining Customer Engagement",
+      "url": "https://www.salesforce.com/blog/engie-redefines-customer-engagement/",
+      "date_publication": "2025",
+      "consulte_le": "2026-07-11"
+    }
+  ],
+  "fonctionnement_operationnel": {
+    "cadence": "Temps reel dans l'application mobile, en continu.",
+    "opere_par": "Les equipes CRM et service client d'ENGIE, avec Capgemini pour l'integration initiale.",
+    "signal_pilote": "La base de connaissance produit et l'etat du compte client dans Salesforce. Si la base est incomplete ou mal a jour, le taux de resolution autonome chute et l'agent renvoie vers un conseiller.",
+    "etapes": [
+      {
+        "etape": "Question dans l'app",
+        "detail": "Le client belge pose une question dans l'application mobile ENGIE (facturation, compteur, recharge VE).",
+        "acteur": "client"
+      },
+      {
+        "etape": "Reponse ancree",
+        "detail": "Agentforce recupere la reponse dans la base de connaissance et le contexte CRM, puis repond ou guide l'onboarding.",
+        "acteur": "IA"
+      },
+      {
+        "etape": "Resolution ou escalade",
+        "detail": "L'agent boucle le cas seul quand il le peut, sinon il transmet a un conseiller.",
+        "acteur": "IA"
+      }
+    ]
+  },
+  "schema_flow": {
+    "statut": "documente",
+    "noeuds": [
+      {
+        "id": "client",
+        "role_generique": "humain",
+        "label": "Client ENGIE (Belgique)"
+      },
+      {
+        "id": "app",
+        "role_generique": "canal_conversationnel",
+        "label": "Application mobile ENGIE"
+      },
+      {
+        "id": "agentforce",
+        "role_generique": "modele_ia",
+        "label": "Agent IA Agentforce",
+        "outil_documente": "Salesforce Agentforce"
+      },
+      {
+        "id": "crm",
+        "role_generique": "crm",
+        "label": "Salesforce (compte, contrat)"
+      },
+      {
+        "id": "kb",
+        "role_generique": "data_source",
+        "label": "Base de connaissance produit"
+      },
+      {
+        "id": "conseiller",
+        "role_generique": "humain",
+        "label": "Conseiller ENGIE"
+      }
+    ],
+    "liens": [
+      [
+        "client",
+        "app"
+      ],
+      [
+        "app",
+        "agentforce"
+      ],
+      [
+        "kb",
+        "agentforce"
+      ],
+      [
+        "crm",
+        "agentforce"
+      ],
+      [
+        "agentforce",
+        "client",
+        "reponse instantanee"
+      ],
+      [
+        "agentforce",
+        "conseiller",
+        "escalade"
+      ]
+    ]
+  },
+  "replication": {
+    "statut_epistemique": "infere",
+    "prerequis_data": [
+      "base de connaissance produit structuree",
+      "CRM a jour avec l'etat des comptes",
+      "referentiel des questions frequentes"
+    ],
+    "prerequis_orga": [
+      "CRM Salesforce deja en place",
+      "equipe capable de maintenir la base de connaissance",
+      "partenaire d'integration pour le demarrage"
+    ],
+    "stack_possible": [
+      "Salesforce Agentforce",
+      "alternative: agent genAI ancre sur base de connaissance et connecte au CRM"
+    ],
+    "premiere_etape": "Structurer la base de connaissance des questions les plus frequentes et brancher un agent genAI ancre dessus dans un canal unique (l'app).",
+    "playbook": [
+      {
+        "action": "Structurer la base de connaissance des questions frequentes: facturation, compteurs intelligents, recharge VE.",
+        "livrable": "Base de connaissance propre et versionnee"
+      },
+      {
+        "action": "Configurer l'agent sur le CRM: ancrage sur la base, ton, perimetre de reponse.",
+        "livrable": "Agent configure en environnement de test"
+      },
+      {
+        "action": "Tester la justesse des reponses et les regles d'escalade vers conseiller, puis brancher le canal app.",
+        "livrable": "Suite de tests passee, escalade operante"
+      },
+      {
+        "action": "Mettre en production dans l'app et suivre le taux de resolution autonome.",
+        "livrable": "Agent live avec tableau de bord resolution et assistance"
+      }
+    ],
+    "equipe": "1 admin Salesforce + 1 owner de la base de connaissance + integrateur au demarrage; les conseillers traitent les escalades."
+  },
+  "seo": {
+    "slug": "engie-agentforce-agent-client-belgique",
+    "title": "ENGIE : agent client genAI Agentforce - 71 % des cas resolus seul (Belgique)",
+    "meta_description": "En Belgique, l'agent Agentforce d'ENGIE resout 71 % des cas de facon autonome et assiste 83 % des utilisateurs dans l'app mobile, mis en production en moins d'un mois avec Capgemini.",
+    "resume_citable": "L'agent client genAI Agentforce d'ENGIE, integre a l'app mobile en Belgique, resout seul 71 % des cas et assiste 83 % des utilisateurs, deploye en moins d'un mois contre environ neuf pour les projets IA anterieurs.",
+    "faq": [
+      {
+        "q": "Que fait l'agent Agentforce d'ENGIE ?",
+        "a": "Il repond dans l'app mobile aux questions sur la facturation, l'energie propre, les compteurs intelligents et la recharge de vehicules electriques, et guide l'onboarding des clients belges."
+      },
+      {
+        "q": "Combien de temps a pris le deploiement ?",
+        "a": "Moins d'un mois avec le partenaire Capgemini, contre environ neuf mois pour les projets IA precedents d'ENGIE."
+      }
+    ]
+  },
+  "logo_domain": "engie.com"
+}

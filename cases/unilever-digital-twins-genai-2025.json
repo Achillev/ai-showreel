@@ -1,0 +1,293 @@
+{
+  "id": "unilever-digital-twins-genai-2025",
+  "type_fiche": "succes",
+  "marque": "Unilever",
+  "groupe": "Unilever",
+  "industrie": "cpg_d2c",
+  "marches_deploiement": [
+    "Monde (18 marches pour la Beauty AI Studio)",
+    "Etats-Unis",
+    "Royaume-Uni",
+    "Inde"
+  ],
+  "transposable_ue": {
+    "flag": "oui",
+    "note": "Peu de donnees personnelles en jeu : les visuels partent de jumeaux numeriques de produits, sans creation d'images de personnes. Sous AI Act, transparence a prevoir sur le caractere synthetique des visuels publicitaires (art. 50)."
+  },
+  "metier": "marketing, e-commerce",
+  "intervenants": [
+    {
+      "nom": "Esi Eggleston Bracey",
+      "role": "Chief Growth and Marketing Officer, Unilever",
+      "source_ref": "S1"
+    }
+  ],
+  "agences": [
+    {
+      "nom": "The Brandtech Group",
+      "role": "Construction de la Beauty AI Studio (chaine de production genAI pour la beaute)",
+      "source_ref": "S3"
+    },
+    {
+      "nom": "Nvidia",
+      "role": "Plateforme Omniverse et framework OpenUSD pour les jumeaux numeriques 3D",
+      "source_ref": "S1"
+    }
+  ],
+  "axes": {
+    "levier": "acquisition",
+    "touchpoints": [
+      "paid social",
+      "display programmatique",
+      "fiches e-commerce",
+      "pages produit"
+    ],
+    "etape_parcours": "considération",
+    "famille": "generation",
+    "pattern": "production creative genAI a partir de jumeaux numeriques produit",
+    "type_ia": [
+      "generation d'images",
+      "rendu 3D / jumeaux numeriques",
+      "modeles multimodaux"
+    ],
+    "plateforme_stack": [
+      "Nvidia Omniverse",
+      "OpenUSD",
+      "Beauty AI Studio (Brandtech)"
+    ],
+    "objectif_metrique": [
+      "cout de production",
+      "vitesse de production",
+      "taux de completion video",
+      "taux de clic"
+    ]
+  },
+  "implementation": "hybride",
+  "objectif_business": "Sortir de la production publicitaire pensee pour la television d'abord et alimenter les canaux digitaux en visuels produit, plus vite et moins cher, sans reshoot systematique.",
+  "description": "Unilever construit un jumeau numerique de chaque produit : une source 3D unique qui contient les variantes, le packaging et les mentions dans chaque langue. A partir de cette source, les equipes generent et adaptent les visuels pour le paid social, le display programmatique et les fiches e-commerce sans repartir d'un shooting photo. La Beauty AI Studio, batie avec The Brandtech Group, sert des marques comme Dove Intensive Repair, TRESemme Lamellar Shine et Vaseline Gluta Hya, et tourne dans 18 marches. Le systeme ne fabrique pas d'images de personnes : il travaille le produit, le fond et la mise en scene. Unilever chiffre l'ensemble a un cout de production divise par deux et une production deux fois plus rapide au global, avec sur le perimetre beaute des gains de l'ordre de 55 pour cent d'economies et 65 pour cent de delai en moins.",
+  "resultats": [
+    {
+      "metrique": "Economies de production sur la beaute, contenu produit 65% plus vite",
+      "valeur": "55% d'economies",
+      "citation_exacte": "55% growth in savings and turned around content 65% faster",
+      "source_ref": "S1"
+    },
+    {
+      "metrique": "Production de contenu au global, a moitie du cout",
+      "valeur": "2x plus vite",
+      "citation_exacte": "produce some of its content twice as fast and at half the cost",
+      "source_ref": "S1"
+    },
+    {
+      "metrique": "Taux de completion video et taux de clic publicitaires",
+      "valeur": "plus que doubles",
+      "citation_exacte": "measures of advertising effectiveness such as video completion rate and click-through rate doubled",
+      "source_ref": "S2"
+    }
+  ],
+  "niveau_preuve": {
+    "niveau": "C",
+    "justification": "Chiffres declares par la marque (Chief Growth and Marketing Officer) et repris par plusieurs titres de presse marketing etablie ; pas de ligne isolable dans les resultats financiers, donc C plutot que A."
+  },
+  "dates": {
+    "lancement": "2023 (Beauty AI Studio) ; extension jumeaux numeriques annoncee en 2025",
+    "derniere_confirmation_activite": "2025-03",
+    "verifie_le": "2026-07-11",
+    "revoir_apres": "2027-01-11"
+  },
+  "statut_vivant": {
+    "statut": "confirme",
+    "note": "Programme presente comme deploye dans 18 marches et etendu en 2025 ; communication officielle recente."
+  },
+  "sources": [
+    {
+      "ref": "S1",
+      "type": "presse",
+      "fiabilite": "T3_presse_etablie",
+      "titre": "How Unilever's AI marketing bets are increasing production efficiency",
+      "url": "https://www.marketingdive.com/news/unilever-ai-marketing-bets-halve-production-costs-double-speed/742913/",
+      "date_publication": "2025-03-19",
+      "consulte_le": "2026-07-11"
+    },
+    {
+      "ref": "S2",
+      "type": "blog_officiel",
+      "fiabilite": "T1_primaire",
+      "titre": "Unilever reinvents product shoots with digital twins and AI",
+      "url": "https://www.unilever.com/news/press-and-media/press-releases/2025/unilever-reinvents-product-shoots-with-digital-twins-and-ai/",
+      "date_publication": "2025",
+      "consulte_le": "2026-07-11"
+    },
+    {
+      "ref": "S3",
+      "type": "presse",
+      "fiabilite": "T4_secondaire",
+      "titre": "Unilever is building a gen AI assembly line for its digital creative",
+      "url": "https://digiday.com/marketing/inside-unilevers-ai-beauty-marketing-assembly-line-and-its-implications-for-agencies/",
+      "date_publication": "2025",
+      "consulte_le": "2026-07-11"
+    }
+  ],
+  "fonctionnement_operationnel": {
+    "cadence": "Continu, par vague de campagne et par lancement produit ; adaptation des visuels a la demande une fois le jumeau numerique cree.",
+    "opere_par": "Equipes creatives et e-commerce des marques, appuyees par la Beauty AI Studio (Brandtech) et une equipe centrale jumeaux numeriques.",
+    "signal_pilote": "La fidelite du jumeau numerique au produit reel (packaging, teinte, mentions legales par marche). Si le jumeau derive du produit vendu, tout le contenu genere devient faux et inexploitable.",
+    "etapes": [
+      {
+        "etape": "Creation du jumeau numerique",
+        "detail": "Modelisation 3D du produit dans Omniverse/OpenUSD, avec ses variantes, packagings et libelles par langue.",
+        "acteur": "equipe data / 3D + Nvidia (tech)"
+      },
+      {
+        "etape": "Generation des visuels",
+        "detail": "A partir du jumeau, generation des scenes, fonds et declinaisons pour paid social, display et e-commerce, sans reshoot.",
+        "acteur": "Beauty AI Studio (Brandtech) / IA"
+      },
+      {
+        "etape": "Adaptation par marche",
+        "detail": "Localisation des mentions, formats et messages pour les 18 marches, en repartant de la meme source.",
+        "acteur": "equipes marques locales"
+      },
+      {
+        "etape": "Diffusion et mesure",
+        "detail": "Mise en ligne sur les canaux payants et e-commerce, suivi du taux de completion video et du taux de clic.",
+        "acteur": "marketing / e-commerce"
+      }
+    ]
+  },
+  "schema_flow": {
+    "statut": "documente",
+    "noeuds": [
+      {
+        "id": "prod",
+        "role_generique": "data_source",
+        "label": "Produit physique + packaging par marche"
+      },
+      {
+        "id": "twin",
+        "role_generique": "dam",
+        "label": "Jumeau numerique 3D (source unique)",
+        "outil_documente": "Nvidia Omniverse / OpenUSD"
+      },
+      {
+        "id": "gen",
+        "role_generique": "modele_ia",
+        "label": "Generation de visuels",
+        "outil_documente": "Beauty AI Studio (Brandtech Group)"
+      },
+      {
+        "id": "chan",
+        "role_generique": "paid_platform",
+        "label": "Paid social / display / e-commerce"
+      },
+      {
+        "id": "team",
+        "role_generique": "humain",
+        "label": "Equipes marques (validation, localisation)"
+      }
+    ],
+    "liens": [
+      [
+        "prod",
+        "twin"
+      ],
+      [
+        "twin",
+        "gen"
+      ],
+      [
+        "gen",
+        "team"
+      ],
+      [
+        "team",
+        "chan"
+      ],
+      [
+        "chan",
+        "gen",
+        "signaux de performance qui orientent les declinaisons"
+      ]
+    ]
+  },
+  "replication": {
+    "statut_epistemique": "infere",
+    "prerequis_data": [
+      "fichiers 3D ou photos produit exploitables",
+      "reference packaging et mentions legales par marche",
+      "guidelines de marque"
+    ],
+    "prerequis_orga": [
+      "equipe creative capable de piloter une chaine genAI",
+      "process de validation legale des visuels synthetiques"
+    ],
+    "stack_possible": [
+      "moteur 3D (Omniverse ou equivalent)",
+      "modeles de generation d'images",
+      "plateforme d'assemblage type Brandtech, ou stack maison"
+    ],
+    "premiere_etape": "Choisir une gamme a fort volume de declinaisons e-commerce et en modeliser un jumeau numerique pilote.",
+    "playbook": [
+      {
+        "action": "Choisir une gamme a fort volume de declinaisons e-commerce et reunir les sources : fichiers 3D ou photos produit, packaging et mentions legales par marche.",
+        "livrable": "Dossier source complet de la gamme pilote."
+      },
+      {
+        "action": "Modeliser le jumeau numerique (3D, variantes, langues) et le faire valider contre le produit reel.",
+        "livrable": "Jumeau numerique valide, conforme au packaging vendu."
+      },
+      {
+        "action": "Generer les declinaisons pour paid social, display et fiches e-commerce, avec validation marque et legale de chaque visuel synthetique.",
+        "livrable": "Bibliotheque de visuels approuves par canal et par marche."
+      },
+      {
+        "action": "Diffuser, puis comparer cout par asset, delai, completion video et CTR a la production classique.",
+        "livrable": "Bilan couts/delais et decision d'extension a d'autres gammes."
+      }
+    ],
+    "equipe": "1 artiste 3D + 1 creative technologist genAI + 1 responsable marque pour la validation + 1 juriste pour les mentions et la transparence AI Act."
+  },
+  "seo": {
+    "slug": "unilever-digital-twins-genai-2025",
+    "title": "Unilever : jumeaux numeriques et genAI - production creative deux fois plus rapide a moitie prix (2025)",
+    "meta_description": "Unilever produit ses visuels beaute a partir de jumeaux numeriques et de genAI : jusqu'a 55% d'economies, 65% plus vite, dans 18 marches.",
+    "resume_citable": "Unilever a industrialise la production creative genAI a partir de jumeaux numeriques produit, atteignant environ 55% d'economies et 65% de delai en moins sur la beaute, avec taux de completion video et taux de clic doubles, dans 18 marches.",
+    "faq": [
+      {
+        "q": "Unilever genere-t-il des images de personnes avec l'IA ?",
+        "a": "Non. Le systeme travaille le produit, le packaging et la mise en scene a partir d'un jumeau numerique, sans creer d'images de personnes."
+      },
+      {
+        "q": "Quels gains Unilever revendique-t-il ?",
+        "a": "Deux fois plus vite et moitie moins cher au global, et sur la beaute environ 55 pour cent d'economies et 65 pour cent de delai en moins."
+      }
+    ]
+  },
+  "logo_domain": "unilever.com",
+  "stack_technique": [
+    {
+      "nom": "Nvidia Omniverse",
+      "categorie": "plateforme",
+      "detail": "Plateforme de creation des jumeaux numeriques 3D des produits (variantes, packaging, mentions par langue).",
+      "url": "https://www.nvidia.com/en-us/omniverse/"
+    },
+    {
+      "nom": "OpenUSD",
+      "categorie": "outil",
+      "detail": "Framework de description 3D utilise comme format des jumeaux numeriques.",
+      "url": "https://openusd.org"
+    },
+    {
+      "nom": "Beauty AI Studio (The Brandtech Group)",
+      "categorie": "integrateur",
+      "detail": "Chaine de production genAI pour la beaute, batie avec Brandtech, en service dans 18 marches (Dove, TRESemme, Vaseline).",
+      "url": "https://thebrandtechgroup.com"
+    },
+    {
+      "nom": "Modeles de generation d'images",
+      "categorie": "llm",
+      "detail": "Generation des scenes, fonds et declinaisons a partir du jumeau numerique, sans images de personnes ; modeles exacts non nommes publiquement.",
+      "url": "https://thebrandtechgroup.com"
+    }
+  ]
+}

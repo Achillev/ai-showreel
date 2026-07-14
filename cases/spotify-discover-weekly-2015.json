@@ -1,0 +1,249 @@
+{
+  "id": "spotify-discover-weekly-2015",
+  "type_fiche": "succes",
+  "marque": "Spotify",
+  "industrie": "media_entertainment",
+  "marches_deploiement": [
+    "Monde (marches Spotify)",
+    "Etats-Unis",
+    "Europe"
+  ],
+  "transposable_ue": {
+    "flag": "oui",
+    "note": "Recommandation sur donnee d'ecoute first-party ; profilage soumis au RGPD mais standard pour un service de streaming. Deja opere sur les marches UE de Spotify depuis 2015."
+  },
+  "metier": "Product / personnalisation / decouverte",
+  "marque_linkedin": "https://www.linkedin.com/company/spotify/",
+  "axes": {
+    "levier": "retention",
+    "touchpoints": [
+      "application Spotify",
+      "playlist hebdomadaire personnalisee"
+    ],
+    "etape_parcours": "fidelite",
+    "famille": "personnalisation",
+    "pattern": "playlist algorithmique de decouverte",
+    "type_ia": [
+      "filtrage collaboratif",
+      "filtrage par contenu / analyse audio",
+      "machine learning"
+    ],
+    "plateforme_stack": [
+      "custom/in-house"
+    ],
+    "objectif_metrique": [
+      "streams",
+      "temps d'ecoute",
+      "decouverte d'artistes",
+      "retention"
+    ]
+  },
+  "implementation": "custom",
+  "objectif_business": "Rendre la decouverte musicale automatique et sans effort, pour ancrer l'habitude d'ouvrir Spotify chaque semaine et augmenter le temps d'ecoute et la fidelite face aux plateformes concurrentes.",
+  "points_cles": ["Playlist hebdomadaire de 30 titres de decouverte, regeneree chaque lundi sans action.", "Filtrage collaboratif et analyse audio in-house sur l'historique d'ecoute.", "Plus de 100 milliards de titres streames, ecoute plus de 2x plus longue.", "Preuve B, statut confirme, feature active depuis 2015 (communique 10 ans)."],
+  "description": "Chaque lundi, Spotify livre a l'auditeur une playlist de 30 titres qu'il n'a pas encore ecoutes mais susceptibles de lui plaire. Le systeme croise le filtrage collaboratif (ce qu'ecoutent des profils proches), l'analyse du contenu audio et l'historique d'ecoute. La playlist se regenere chaque semaine, sans action de l'utilisateur. Depuis 2025, l'auditeur peut filtrer Discover Weekly par genre.",
+  "resultats": [
+    {
+      "metrique": "Streams cumules depuis le lancement",
+      "valeur": "100 Md+ de titres",
+      "citation_exacte": "100 Billion+ Tracks Streamed",
+      "source_ref": "S1"
+    },
+    {
+      "metrique": "Decouvertes d'artistes generees chaque semaine",
+      "valeur": "des dizaines de millions",
+      "citation_exacte": "over 56 million new artist discoveries",
+      "source_ref": "S2"
+    },
+    {
+      "metrique": "Intensite d'ecoute vs non-utilisateurs (mesure historique)",
+      "valeur": "2x plus longtemps",
+      "citation_exacte": "stream more than 2x as long as non-Discover Weekly users",
+      "source_ref": "S2"
+    }
+  ],
+  "niveau_preuve": {
+    "niveau": "B",
+    "justification": "Chiffres publies par Spotify (newsroom 10 ans, et regie publicitaire Spotify) sur une feature en production depuis 2015. Chiffrage direct de la marque-sujet, volume cumule verifiable dans le temps, sans passer par les resultats financiers."
+  },
+  "dates": {
+    "lancement": "2015-07-20",
+    "derniere_confirmation_activite": "2025-06-30 (10 ans de Discover Weekly, 100 Md+ de titres streames)",
+    "verifie_le": "2026-07-11",
+    "revoir_apres": "2027-01-11"
+  },
+  "statut_vivant": {
+    "statut": "confirme",
+    "note": "Feature toujours active apres 10 ans, enrichie en 2025 par des filtres de genre. Communique anniversaire Spotify du 30 juin 2025."
+  },
+  "sources": [
+    {
+      "ref": "S1",
+      "type": "blog_officiel",
+      "fiabilite": "T2_officiel_interesse",
+      "titre": "Discover Weekly Turns 10: Celebrating 100 Billion+ Tracks Streamed (Spotify Newsroom)",
+      "url": "https://newsroom.spotify.com/2025-06-30/discover-weekly-turns-10-celebrating-100-billion-tracks-streamed-and-a-decade-of-personalized-discovery/",
+      "date_publication": "2025-06-30",
+      "consulte_le": "2026-07-11"
+    },
+    {
+      "ref": "S2",
+      "type": "blog_officiel",
+      "fiabilite": "T2_officiel_interesse",
+      "titre": "Five Years of Discover Weekly (Spotify Advertising)",
+      "url": "https://ads.spotify.com/en-US/news-and-insights/five-years-of-discovery-and-engagement-through-discover-weekly/",
+      "consulte_le": "2026-07-11"
+    }
+  ],
+  "fonctionnement_operationnel": {
+    "cadence": "Batch hebdomadaire : une nouvelle playlist par auditeur chaque lundi.",
+    "opere_par": "Equipe Personnalisation / Recommandation de Spotify.",
+    "signal_pilote": "L'historique d'ecoute de l'auditeur et les patterns de co-ecoute entre profils proches. Sans donnee d'ecoute recente, le filtrage collaboratif n'a rien pour rapprocher l'auditeur d'autres profils.",
+    "etapes": [
+      {
+        "etape": "Agregation des ecoutes",
+        "detail": "Les ecoutes de la semaine, playlists suivies et titres sautes sont consolides par profil.",
+        "acteur": "equipe data"
+      },
+      {
+        "etape": "Generation des candidats",
+        "detail": "Filtrage collaboratif et analyse audio produisent une liste de titres jamais ecoutes mais probables.",
+        "acteur": "IA"
+      },
+      {
+        "etape": "Assemblage de la playlist",
+        "detail": "Le systeme selectionne 30 titres, ordonnes pour l'auditeur, livres le lundi.",
+        "acteur": "IA"
+      },
+      {
+        "etape": "Boucle de retour",
+        "detail": "Ce que l'auditeur ecoute, sauvegarde ou saute dans la playlist affine la semaine suivante.",
+        "acteur": "humain / IA"
+      }
+    ]
+  },
+  "schema_flow": {
+    "statut": "documente",
+    "noeuds": [
+      {
+        "id": "n1",
+        "role_generique": "data_source",
+        "label": "Historique d'ecoute + patterns de co-ecoute"
+      },
+      {
+        "id": "n2",
+        "role_generique": "modele_ia",
+        "label": "Filtrage collaboratif + analyse audio",
+        "outil_documente": "Systemes custom Spotify"
+      },
+      {
+        "id": "n3",
+        "role_generique": "site_app",
+        "label": "Playlist Discover Weekly (application Spotify)"
+      },
+      {
+        "id": "n4",
+        "role_generique": "humain",
+        "label": "Auditeur"
+      }
+    ],
+    "liens": [
+      [
+        "n1",
+        "n2"
+      ],
+      [
+        "n2",
+        "n3"
+      ],
+      [
+        "n3",
+        "n4"
+      ],
+      [
+        "n4",
+        "n1",
+        "ecoutes de la semaine realimentent le modele"
+      ]
+    ]
+  },
+  "replication": {
+    "statut_epistemique": "infere",
+    "prerequis_data": [
+      "historique d'ecoute / consommation par utilisateur",
+      "catalogue avec features audio ou metadonnees",
+      "volume d'utilisateurs suffisant pour le filtrage collaboratif"
+    ],
+    "prerequis_orga": [
+      "equipe data science",
+      "pipeline batch fiable",
+      "surface produit pour exposer la playlist"
+    ],
+    "stack_possible": [
+      "custom/in-house",
+      "moteur de reco managed",
+      "job batch hebdomadaire"
+    ],
+    "premiere_etape": "Verifier qu'on a assez de volume d'ecoute croise pour que le filtrage collaboratif produise des candidats pertinents.",
+    "playbook": [
+      {
+        "action": "Verifier le volume de signal : assez d'usage croise (utilisateurs actifs, co-consommation) pour que le filtrage collaboratif produise des candidats",
+        "livrable": "Etude de faisabilite chiffree, go/no-go"
+      },
+      {
+        "action": "Consolider les historiques : ecoutes, sauvegardes et skips par profil dans un pipeline fiable",
+        "livrable": "Dataset par utilisateur, rafraichi chaque semaine"
+      },
+      {
+        "action": "Construire le modele candidat : filtrage collaboratif + features de contenu pour scorer des items jamais consommes",
+        "livrable": "Liste de candidats scores par utilisateur, evaluee offline"
+      },
+      {
+        "action": "Assembler la playlist (30 items ordonnes) et la livrer dans une surface produit dediee, un jour fixe",
+        "livrable": "Playlist hebdomadaire en beta sur un segment"
+      },
+      {
+        "action": "Boucler le feedback : reinjecter ecoutes, sauvegardes et skips, mesurer retention et temps d'ecoute contre temoin",
+        "livrable": "Boucle d'apprentissage active et lecture d'impact"
+      }
+    ],
+    "equipe": "2 data scientists + 1 data engineer + 1 PM produit"
+  },
+  "seo": {
+    "slug": "spotify-discover-weekly-2015",
+    "title": "Spotify : Discover Weekly - 100 Md+ de titres streames en 10 ans (2015)",
+    "meta_description": "La playlist algorithmique Discover Weekly de Spotify a genere plus de 100 milliards de titres streames depuis 2015 et fait ecouter plus de 2x plus longtemps.",
+    "resume_citable": "Discover Weekly, la playlist hebdomadaire personnalisee de Spotify lancee en 2015, a cumule plus de 100 milliards de titres streames et fait ecouter ses utilisateurs plus de deux fois plus longtemps.",
+    "faq": [
+      {
+        "q": "Combien de streams a genere Discover Weekly ?",
+        "a": "Plus de 100 milliards de titres streames depuis son lancement en 2015, selon le communiqué anniversaire Spotify de juin 2025."
+      },
+      {
+        "q": "Comment marche Discover Weekly ?",
+        "a": "Une playlist de 30 titres livree chaque lundi, batie par filtrage collaboratif, analyse audio et historique d'ecoute."
+      }
+    ]
+  },
+  "logo_domain": "spotify.com",
+  "stack_technique": [
+    {
+      "nom": "Filtrage collaboratif in-house",
+      "categorie": "outil",
+      "detail": "rapprochement des profils par co-ecoute pour predire des titres jamais ecoutes mais probables",
+      "url": "https://www.spotify.com"
+    },
+    {
+      "nom": "Analyse de contenu audio in-house",
+      "categorie": "outil",
+      "detail": "features audio des titres, en complement du collaboratif la ou la co-ecoute manque (nouveautes, niches)",
+      "url": "https://www.spotify.com"
+    },
+    {
+      "nom": "Pipeline batch hebdomadaire",
+      "categorie": "infra",
+      "detail": "regeneration de la playlist de 30 titres chaque lundi pour chaque auditeur, sans action de sa part",
+      "url": "https://www.spotify.com"
+    }
+  ]
+}

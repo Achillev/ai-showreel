@@ -1,0 +1,335 @@
+{
+  "id": "tripadvisor-ai-parcours-reservation-2026",
+  "type_fiche": "succes",
+  "marque": "Tripadvisor",
+  "groupe": "Tripadvisor, Inc. (Tripadvisor, Viator, TheFork)",
+  "industrie": "voyage_hospitality",
+  "marches_deploiement": [
+    "International (Tripadvisor, Viator)",
+    "Europe (TheFork)"
+  ],
+  "transposable_ue": {
+    "flag": "oui",
+    "note": "Le cas est deja partiellement europeen : TheFork est une marque nee en Europe (siege a Paris, marches France, Espagne, Italie), et son assistant IA de recherche full-content comme son support client IA tournent sur du public europeen. La contrainte UE porte surtout sur la transparence AI Act (indiquer a l'utilisateur qu'il dialogue avec une IA dans le chat pre-booking et l'assistant restaurant) et sur la base legale RGPD des donnees de reservation et de comportement qui alimentent la personnalisation. Le corpus exploite (menus, photos, avis, fiches d'experiences) est du contenu editorial et non de la donnee personnelle sensible, ce qui facilite la transposition."
+  },
+  "metier": "e-commerce / marketplace / marketing digital",
+  "intervenants": [
+    {
+      "nom": "Matt Goldberg",
+      "role": "President and CEO, Tripadvisor, Inc.",
+      "source_ref": "S1"
+    },
+    {
+      "nom": "Mike Noonan",
+      "role": "Chief Financial Officer, Tripadvisor, Inc.",
+      "source_ref": "S2"
+    }
+  ],
+  "axes": {
+    "levier": "activation_conversion",
+    "touchpoints": [
+      "assistant IA Ask TheFork (recherche menus, photos, avis)",
+      "chat IA pre-booking de l'app Viator",
+      "point de vente Tripadvisor",
+      "inscription operateurs d'experiences (sign-up assiste par IA)",
+      "support client TheFork automatise par IA"
+    ],
+    "etape_parcours": "consideration et achat",
+    "famille": "conversation",
+    "pattern": "assistants IA conversationnels integres au parcours de reservation (recherche full-content, chat pre-booking, onboarding operateurs)",
+    "type_ia": [
+      "IA generative",
+      "assistant conversationnel",
+      "recherche full-content sur contenu non structure",
+      "traitement du langage naturel"
+    ],
+    "plateforme_stack": [
+      "custom/in-house (assistants et orchestration)",
+      "partenaires LLM tiers (OpenAI, Perplexity, Microsoft, Amazon, Anthropic) pour l'integration aux plateformes IA"
+    ],
+    "objectif_metrique": [
+      "taux de conversion au point de vente",
+      "taux de conversion a l'inscription des operateurs",
+      "engagement et pertinence des recommandations",
+      "part du support traite en self-service"
+    ]
+  },
+  "implementation": "hybride",
+  "stack_technique": [
+    {
+      "nom": "Ask TheFork (assistant IA restaurant)",
+      "categorie": "outil",
+      "detail": "Assistant conversationnel de TheFork qui fait de la recherche full-content sur les menus, photos et avis pour rendre la decouverte de restaurants plus intuitive et ameliorer la pertinence des recommandations, l'engagement et la conversion.",
+      "url": "https://www.thefork.com"
+    },
+    {
+      "nom": "Chat IA pre-booking Viator",
+      "categorie": "outil",
+      "detail": "Chat conversationnel ajoute a l'app Viator pour repondre aux questions avant reservation et aider le client a decider avec plus de confiance.",
+      "url": "https://www.viator.com"
+    },
+    {
+      "nom": "Inscription operateurs assistee par IA (Viator)",
+      "categorie": "outil",
+      "detail": "Onboarding des nouveaux operateurs d'experiences simplifie par une IA qui accelere le remplissage et la mise en ligne des offres ; presente comme un levier de volume de supply.",
+      "url": "https://www.viator.com"
+    }
+  ],
+  "objectif_business": "Augmenter la conversion tout au long du parcours de reservation du groupe (decouverte, pre-booking, checkout) et lever le frein de supply cote operateurs, en integrant des assistants IA dans les trois marques Tripadvisor, Viator et TheFork plutot que dans une seule surface.",
+  "points_cles": ["Assistants IA integres au parcours de reservation de Tripadvisor, Viator et TheFork.", "Recherche full-content Ask TheFork, chat pre-booking Viator, onboarding operateurs assiste.", "+20% de conversion au point de vente sur deux trimestres, sign-up operateurs plus que double.", "Preuve A, statut confirme, chiffres de l'earnings call Q1 2026."],
+  "description": "Tripadvisor a integre l'IA a plusieurs points du parcours de reservation de ses trois marques, et en a chiffre l'effet lors de son earnings call du Q1 2026 (mai 2026). Sur TheFork, un assistant IA (presente comme Ask TheFork) fait de la recherche full-content sur les menus, les photos et les avis pour rendre la decouverte de restaurants plus intuitive et pousser la pertinence des recommandations ; environ 40% des requetes de support client B2C de TheFork sont deja traitees par IA. Sur l'app Viator, un chat IA de pre-booking repond aux questions avant l'achat. Toujours cote Viator, l'inscription des nouveaux operateurs d'experiences a ete simplifiee par une IA d'aide au sign-up, ce qui a plus que double le taux de conversion a l'inscription et debloque du volume de supply. Sur le point de vente Tripadvisor, la simplification du parcours combinee aux ameliorations IA a produit plus de 20% de croissance de la conversion sur deux trimestres. Le groupe note enfin que le trafic issu des plateformes IA reste faible en volume mais convertit deja parmi les mieux de tous ses canaux, un signal qu'il relie a l'intention elevee de la recherche conversationnelle. Tripadvisor a par ailleurs noue des integrations avec plusieurs plateformes IA (OpenAI, Perplexity, Microsoft, Amazon, et recemment Anthropic).",
+  "resultats": [
+    {
+      "metrique": "Croissance de la conversion au point de vente, sur deux trimestres",
+      "valeur": "plus de 20%",
+      "citation_exacte": "more than 20% growth in conversion over the last 2 quarters",
+      "source_ref": "S1"
+    },
+    {
+      "metrique": "Conversion a l'inscription des operateurs d'experiences (Viator, sign-up assiste par IA)",
+      "valeur": "plus que doublee",
+      "citation_exacte": "which has more than doubled sign-up conversion",
+      "source_ref": "S1"
+    },
+    {
+      "metrique": "Conversion du trafic issu des sources IA (volume encore faible)",
+      "valeur": "parmi les meilleures",
+      "citation_exacte": "conversion is already among the highest of any channel in our portfolio",
+      "source_ref": "S1"
+    },
+    {
+      "metrique": "Requetes de support client B2C TheFork traitees par IA",
+      "valeur": "environ 40%",
+      "citation_exacte": "approximately 40% of B2C customer support queries now handled through AI",
+      "source_ref": "S2"
+    },
+    {
+      "metrique": "Revenu TheFork Q1 2026, marque portant l'IA (+11% a change constant, EBITDA 8%)",
+      "valeur": "+23%",
+      "citation_exacte": "Revenue grew 23% or 11% in constant currency",
+      "source_ref": "S3"
+    }
+  ],
+  "niveau_preuve": {
+    "niveau": "A",
+    "justification": "Chiffres annonces par le President et CEO et le CFO de Tripadvisor lors de l'earnings call du Q1 2026 (mai 2026), reproduits de facon concordante par trois transcripts de presse financiere etablie (Motley Fool, Investing.com, Insider Monkey). Source de type resultats financiers, plusieurs reproductions concordantes des memes verbatims."
+  },
+  "dates": {
+    "lancement": "2025 (deploiement progressif des assistants IA sur les trois marques)",
+    "derniere_confirmation_activite": "2026-05",
+    "verifie_le": "2026-07-13",
+    "revoir_apres": "2027-01-13"
+  },
+  "statut_vivant": {
+    "statut": "confirme",
+    "note": "Gains de conversion presentes comme en cours et croissants a l'earnings call du 7 mai 2026, soit deux mois avant verification. Les features sont deja en production sur les trois marques et le groupe annonce vouloir etendre le socle de paiement et le chat pour capter davantage de conversion."
+  },
+  "sources": [
+    {
+      "ref": "S1",
+      "type": "earnings_call",
+      "fiabilite": "T3_presse_etablie",
+      "titre": "Tripadvisor (TRIP) Q1 2026 Earnings Call Transcript",
+      "url": "https://www.fool.com/earnings/call-transcripts/2026/05/08/tripadvisor-trip-q1-2026-earnings-transcript/",
+      "date_publication": "2026-05-08",
+      "consulte_le": "2026-07-13"
+    },
+    {
+      "ref": "S2",
+      "type": "earnings_call",
+      "fiabilite": "T3_presse_etablie",
+      "titre": "Earnings call transcript: Tripadvisor Q1 2026 sees earnings miss, stock rises",
+      "url": "https://www.investing.com/news/transcripts/earnings-call-transcript-tripadvisor-q1-2026-sees-earnings-miss-stock-rises-93CH-4668845",
+      "date_publication": "2026-05-07",
+      "consulte_le": "2026-07-13"
+    },
+    {
+      "ref": "S3",
+      "type": "earnings_call",
+      "fiabilite": "T3_presse_etablie",
+      "titre": "Tripadvisor, Inc. (NASDAQ:TRIP) Q1 2026 Earnings Call Transcript",
+      "url": "https://www.insidermonkey.com/blog/tripadvisor-inc-nasdaqtrip-q1-2026-earnings-call-transcript-1758012/",
+      "date_publication": "2026-05",
+      "consulte_le": "2026-07-13"
+    }
+  ],
+  "fonctionnement_operationnel": {
+    "cadence": "Temps reel dans les surfaces client (chat pre-booking Viator, assistant Ask TheFork, support IA TheFork) ; par vague de produit cote onboarding operateurs ; suivi de la conversion au fil des trimestres.",
+    "opere_par": "Equipes produit et data de chaque marque du groupe (Tripadvisor, Viator, TheFork), avec une orchestration IA maison et des LLM partenaires appeles selon la surface.",
+    "signal_pilote": "Le taux de conversion (reservation restaurant ou experience, inscription operateur) et les signaux d'intention issus des questions posees dans le chat. Si le corpus de contenu (menus, photos, avis, fiches d'experiences) ou l'indexation full-content se degradent, la pertinence des reponses et donc la conversion chutent.",
+    "etapes": [
+      {
+        "etape": "Question du voyageur ou du convive",
+        "detail": "Le client interroge l'assistant : recherche de restaurant sur TheFork, ou question avant reservation d'une activite dans l'app Viator.",
+        "acteur": "client"
+      },
+      {
+        "etape": "Recherche full-content et generation de la reponse",
+        "detail": "L'assistant IA cherche a travers les menus, photos et avis (TheFork) ou les fiches d'experiences (Viator), puis genere une reponse et des recommandations ciblees.",
+        "acteur": "IA"
+      },
+      {
+        "etape": "Passage a la reservation",
+        "detail": "Le parcours de checkout, simplifie et couple aux options de paiement, transforme la reponse en reservation ; la conversion est mesuree au point de vente.",
+        "acteur": "client"
+      },
+      {
+        "etape": "Onboarding operateur assiste par IA",
+        "detail": "Cote supply, un nouvel operateur d'experiences remplit et met en ligne son offre avec une IA qui accelere le sign-up ; l'equipe supply suit le taux de conversion a l'inscription.",
+        "acteur": "IA"
+      },
+      {
+        "etape": "Support et supervision",
+        "detail": "L'IA de TheFork traite une partie des requetes de support B2C ; les equipes produit suivent conversion, engagement et cas mal compris pour elargir le perimetre.",
+        "acteur": "equipe data"
+      }
+    ]
+  },
+  "schema_flow": {
+    "statut": "approche_type",
+    "noeuds": [
+      {
+        "id": "user",
+        "role_generique": "site_app",
+        "label": "Voyageur / convive dans l'app (Viator, TheFork, Tripadvisor)"
+      },
+      {
+        "id": "assistant",
+        "role_generique": "canal_conversationnel",
+        "label": "Assistant IA (Ask TheFork, chat pre-booking Viator)"
+      },
+      {
+        "id": "contenu",
+        "role_generique": "data_source",
+        "label": "Corpus full-content : menus, photos, avis, fiches d'experiences"
+      },
+      {
+        "id": "llm",
+        "role_generique": "modele_ia",
+        "label": "LLM de generation et de recherche conversationnelle"
+      },
+      {
+        "id": "checkout",
+        "role_generique": "site_app",
+        "label": "Parcours de reservation et paiement"
+      },
+      {
+        "id": "onboarding",
+        "role_generique": "modele_ia",
+        "label": "IA d'assistance a l'inscription des operateurs"
+      },
+      {
+        "id": "supply",
+        "role_generique": "data_source",
+        "label": "Catalogue d'offres et d'experiences (supply)"
+      }
+    ],
+    "liens": [
+      [
+        "user",
+        "assistant",
+        "question en langage naturel"
+      ],
+      [
+        "assistant",
+        "contenu",
+        "recherche full-content"
+      ],
+      [
+        "contenu",
+        "llm",
+        "contexte recupere"
+      ],
+      [
+        "llm",
+        "assistant",
+        "reponse et recommandations"
+      ],
+      [
+        "assistant",
+        "checkout",
+        "intention de reservation"
+      ],
+      [
+        "checkout",
+        "user",
+        "reservation confirmee"
+      ],
+      [
+        "onboarding",
+        "supply",
+        "offre operateur mise en ligne plus vite"
+      ],
+      [
+        "supply",
+        "contenu",
+        "nouvelles offres indexees"
+      ]
+    ]
+  },
+  "replication": {
+    "statut_epistemique": "infere",
+    "prerequis_data": [
+      "Un corpus de contenu riche et propre : menus, photos, avis, fiches produit ou d'experiences, indexable pour de la recherche full-content",
+      "Historique de comportement first-party (recherches, reservations) pour cadrer la pertinence des recommandations",
+      "Catalogue de supply structure cote operateurs pour brancher l'onboarding assiste"
+    ],
+    "prerequis_orga": [
+      "Une marketplace a deux faces (demande et supply) ou l'onboarding operateur est un frein reel de croissance",
+      "Une equipe produit et data capable d'operer des assistants conversationnels en production sur plusieurs surfaces",
+      "Un cadre de conformite pour la transparence IA (AI Act) et la base legale RGPD des donnees de reservation"
+    ],
+    "stack_possible": [
+      "Assistant conversationnel maison couple a un LLM tiers appele selon la surface",
+      "Moteur de recherche full-content / semantique sur le corpus de contenu non structure",
+      "Chat pre-booking integre a l'app de reservation",
+      "Assistant de sign-up qui pre-remplit et met en ligne l'offre cote operateur",
+      "Automatisation IA du support client de premier niveau"
+    ],
+    "premiere_etape": "Choisir une seule surface a fort volume (par exemple la recherche produit) et y brancher un assistant qui interroge le contenu existant (menus, avis, fiches), en mesurant la conversion avant et apres plutot que l'engagement seul.",
+    "playbook": [
+      {
+        "action": "Cartographier les surfaces du parcours ou l'utilisateur pose des questions ou hesite : recherche, comparaison, pre-booking, onboarding operateur.",
+        "livrable": "Liste priorisee des surfaces par volume et par impact conversion."
+      },
+      {
+        "action": "Nettoyer et indexer le corpus de contenu (menus, photos, avis, fiches) pour permettre une recherche full-content fiable.",
+        "livrable": "Index de contenu interrogeable par l'assistant."
+      },
+      {
+        "action": "Brancher un assistant conversationnel sur une premiere surface, avec transparence sur sa nature IA, et le contraindre au contenu verifie de la marketplace.",
+        "livrable": "Assistant en production sur une surface, reponses tracables au contenu source."
+      },
+      {
+        "action": "Mesurer la conversion incrementale de la surface equipee contre une surface temoin, pas seulement l'engagement du chat.",
+        "livrable": "Lecture conversion avant / apres, decision d'extension ou d'arret."
+      },
+      {
+        "action": "Etendre au cote supply : un assistant d'inscription qui accelere la mise en ligne des offres operateurs, suivi sur le taux de conversion au sign-up.",
+        "livrable": "Onboarding operateur assiste, conversion a l'inscription mesuree."
+      }
+    ],
+    "equipe": "1 equipe produit par surface (PM, design conversationnel) + ingenieurs IA (orchestration, recherche full-content, integration LLM) + une equipe data marketplace + conformite RGPD / AI Act impliquee en continu."
+  },
+  "seo": {
+    "slug": "tripadvisor-ai-parcours-reservation-2026",
+    "title": "Tripadvisor : IA integree au parcours de reservation - conversion point de vente +20% sur deux trimestres (2026)",
+    "meta_description": "Tripadvisor a integre des assistants IA a Viator, TheFork et son point de vente : +20% de conversion sur deux trimestres et un sign-up operateurs plus que double.",
+    "resume_citable": "Au Q1 2026, Tripadvisor a chiffre l'effet de l'IA sur son parcours de reservation : plus de 20% de croissance de la conversion au point de vente sur deux trimestres, un taux de conversion a l'inscription des operateurs d'experiences Viator plus que double, un assistant Ask TheFork en recherche full-content sur menus, photos et avis, et environ 40% du support B2C de TheFork traite par IA.",
+    "faq": [
+      {
+        "q": "Quel effet l'IA a-t-elle eu sur la conversion de Tripadvisor ?",
+        "a": "Au point de vente Tripadvisor, la simplification du parcours et les ameliorations IA ont produit plus de 20% de croissance de la conversion sur deux trimestres. Cote Viator, l'inscription des operateurs d'experiences assistee par IA a plus que double le taux de conversion au sign-up."
+      },
+      {
+        "q": "Que font les assistants IA de TheFork et Viator ?",
+        "a": "Sur TheFork, un assistant IA (Ask TheFork) fait de la recherche full-content sur les menus, photos et avis pour la decouverte de restaurants, et environ 40% du support client B2C est traite par IA. Sur l'app Viator, un chat IA de pre-booking repond aux questions avant l'achat."
+      },
+      {
+        "q": "Le trafic issu des plateformes IA convertit-il bien ?",
+        "a": "Tripadvisor indique que le volume issu des sources IA reste faible mais que sa conversion est deja parmi les plus elevees de tous ses canaux, ce que le groupe relie a l'intention elevee de la recherche conversationnelle."
+      }
+    ]
+  },
+  "logo_domain": "tripadvisor.com"
+}

@@ -1,0 +1,208 @@
+{
+  "id": "levis-mannequins-ia-lalaland-2023",
+  "type_fiche": "echec_retrait",
+  "marque": "Levi's",
+  "groupe": "Levi Strauss & Co.",
+  "industrie": "retail_ecom",
+  "marches_deploiement": [
+    "Etats-Unis",
+    "international"
+  ],
+  "transposable_ue": {
+    "flag": "oui",
+    "note": "Meme risque en Europe : presenter des mannequins generes par IA comme un levier de diversite expose au reproche de diversite artificielle. L'AI Act impose de signaler les images synthetiques, et le sujet touche a des questions d'emploi (mannequins, photographes) et de representation qui sont sensibles cote UE comme US. Le probleme est de cadrage et de reception, pas de faisabilite technique."
+  },
+  "metier": "marketing / production d'imagerie produit",
+  "axes": {
+    "levier": "acquisition",
+    "touchpoints": [
+      "fiche produit e-commerce",
+      "imagerie marketing",
+      "site de marque"
+    ],
+    "etape_parcours": "consideration",
+    "famille": "generation",
+    "pattern": "mannequins et imagerie produit generes par IA",
+    "type_ia": [
+      "generation d'images",
+      "modeles de personnes synthetiques"
+    ],
+    "plateforme_stack": [
+      "Lalaland.ai",
+      "generation d'images"
+    ],
+    "objectif_metrique": [
+      "diversite percue de l'offre",
+      "cout de production visuelle"
+    ]
+  },
+  "implementation": "plateforme",
+  "objectif_business": "Tester des mannequins generes par IA pour montrer les produits sur une plus grande variete de morphologies, ages et carnations, et permettre aux clients de se voir davantage represente.",
+  "description": "Le 22 mars 2023, Levi Strauss annonce un partenariat pilote avec Lalaland.ai, une societe d'Amsterdam qui genere des mannequins realistes par IA. La marque presente la demarche comme un moyen d'accroitre la diversite visible dans son merchandising. Le cadrage declenche une critique immediate : montrer plus de diversite avec des personnes synthetiques plutot qu'avec de vrais mannequins issus de groupes sous-representes est percu comme de la diversite a moindre cout, au risque d'evincer des professionnels. Le 28 mars, Levi's precise que le pilote ne remplace pas les shootings reels et n'est pas un moyen d'avancer sur la diversite.",
+  "resultats": [
+    {
+      "metrique": "Recadrage officiel du pilote apres le backlash",
+      "valeur": "Role diversite retire",
+      "citation_exacte": "We do not see this pilot as a means to advance diversity",
+      "source_ref": "S1"
+    },
+    {
+      "metrique": "Shootings reels et recours a de vrais mannequins divers maintenus",
+      "valeur": "Shootings maintenus",
+      "citation_exacte": "we are not scaling back our plans for live photo shoots",
+      "source_ref": "S1"
+    }
+  ],
+  "niveau_preuve": {
+    "niveau": "C",
+    "justification": "Presse etablie (NBC News) et etude de cas academique (Journal of Contingencies and Crisis Management, Wiley) documentent nommement la marque, le partenaire et les declarations. Le communique de recadrage de la marque appuie les faits. Pas de document financier, donc C."
+  },
+  "dates": {
+    "lancement": "2023-03-22 (annonce du partenariat Lalaland.ai)",
+    "derniere_confirmation_activite": "2023-03-28 (communique de recadrage)",
+    "verifie_le": "2026-07-11",
+    "revoir_apres": "2027-07-11"
+  },
+  "statut_vivant": {
+    "statut": "confirme",
+    "note": "Cas de recadrage : Levi's n'a pas annule le pilote technique mais a demonte publiquement le cadrage diversite en six jours. L'episode reste cite comme reference sur la diversite artificielle."
+  },
+  "sources": [
+    {
+      "ref": "S1",
+      "type": "presse",
+      "fiabilite": "T3_presse_etablie",
+      "titre": "After backlash, Levi's says AI-generated models 'to increase diversity' won't replace real shoots",
+      "url": "https://rangefinderonline.com/news-features/after-backlash-levis-ai-generate-models/",
+      "date_publication": "2023-03",
+      "consulte_le": "2026-07-11"
+    },
+    {
+      "ref": "S2",
+      "type": "presse",
+      "fiabilite": "T3_presse_etablie",
+      "titre": "Virtual supermodels made with AI spark fears in fashion workforce",
+      "url": "https://www.nbcnews.com/business/business-news/ai-models-levis-controversy-backlash-rcna77280",
+      "date_publication": "2023-03-31",
+      "consulte_le": "2026-07-11"
+    },
+    {
+      "ref": "S3",
+      "type": "analyse_academique",
+      "fiabilite": "T4_secondaire",
+      "titre": "Levi's and Lalaland.ai collaboration crisis",
+      "url": "https://onlinelibrary.wiley.com/doi/full/10.1111/1468-5973.12527",
+      "date_publication": "2024",
+      "consulte_le": "2026-07-11"
+    }
+  ],
+  "post_mortem": {
+    "ce_qui_s_est_passe": "Le 22 mars 2023, Levi's annonce un pilote avec Lalaland.ai pour generer des mannequins par IA, presente comme un moyen d'augmenter la diversite visible. La critique monte en quelques jours : associations, presse et professionnels reprochent a la marque de simuler la diversite au lieu de recruter de vrais mannequins divers. Le 28 mars, Levi's publie un recadrage : le pilote ne remplace pas les shootings reels et n'est pas un instrument de diversite.",
+    "raison_echec": "L'erreur est de cadrage, pas de technique. Justifier un outil de generation d'images par un argument de diversite a fait apparaitre une contradiction directe : remplacer des personnes reelles sous-representees par des images de synthese va a l'encontre de l'objectif affiche. La marque a du dissocier l'outil de son argumentaire initial.",
+    "date_retrait": "Aucun retrait du pilote technique : recadrage public du cadrage diversite le 28 mars 2023.",
+    "cout_estime": "Cout reputationnel : couverture presse defavorable pendant plusieurs jours, cas repris comme exemple de crise de communication. Pas de cout financier direct publie.",
+    "signaux_avant_coureurs": "Infere : lier un outil de reduction de cout de production visuelle a un enjeu identitaire aussi charge que la diversite etait un pari de communication risque. La confusion entre efficacite operationnelle et engagement social etait previsible pour qui teste le message aupres des publics concernes.",
+    "lecons_avec_recul": "Infere : la generation d'images produit peut se justifier par la variete d'affichage, l'echelle ou le cout, sans etre habillee en progres social. Le message doit correspondre a ce que l'outil fait reellement. Sur un sujet sensible, mieux vaut annoncer un usage pratique et sobre que revendiquer une vertu qui se retourne.",
+    "le_pattern_reste_il_valide": "Infere : oui, l'imagerie produit generee par IA est devenue courante depuis 2023 (essayage virtuel, variantes de mannequins, declinaisons de shootings). L'echec porte sur le cadrage diversite de cette annonce, pas sur la categorie. Le pattern tient si l'on est honnete sur ce qu'il apporte : de la variete et de l'echelle, pas de la representation reelle."
+  },
+  "schema_flow": {
+    "statut": "approche_type",
+    "noeuds": [
+      {
+        "id": "cat",
+        "role_generique": "data_source",
+        "label": "Catalogue produit et besoins d'affichage"
+      },
+      {
+        "id": "gen",
+        "role_generique": "modele_ia",
+        "label": "Generation de mannequins",
+        "outil_documente": "Lalaland.ai"
+      },
+      {
+        "id": "site",
+        "role_generique": "site_app",
+        "label": "Fiches produit et imagerie marketing"
+      },
+      {
+        "id": "public",
+        "role_generique": "humain",
+        "label": "Public, professionnels, presse"
+      }
+    ],
+    "liens": [
+      [
+        "cat",
+        "gen"
+      ],
+      [
+        "gen",
+        "site"
+      ],
+      [
+        "site",
+        "public"
+      ],
+      [
+        "public",
+        "gen",
+        "reaction (backlash sur le cadrage)"
+      ]
+    ]
+  },
+  "replication": {
+    "statut_epistemique": "infere",
+    "prerequis_data": [
+      "catalogue produit",
+      "regles d'affichage par marche",
+      "chartes de marque"
+    ],
+    "prerequis_orga": [
+      "validation juridique et communication sur le cadrage",
+      "signalement des images synthetiques"
+    ],
+    "stack_possible": [
+      "plateforme de generation de mannequins",
+      "outil d'essayage virtuel",
+      "revue editoriale"
+    ],
+    "premiere_etape": "Definir l'argument reel de l'outil (variete d'affichage, cout, echelle) et bannir tout habillage en progres social qui creerait une contradiction visible."
+  },
+  "seo": {
+    "slug": "levis-mannequins-ia-lalaland-2023",
+    "title": "Levi's : mannequins IA Lalaland.ai presentes comme diversite - recadrage (2023)",
+    "meta_description": "En mars 2023, Levi's annonce des mannequins generes par IA pour la diversite. La critique de diversite artificielle force un recadrage public en six jours.",
+    "resume_citable": "En mars 2023, Levi's a presente un pilote de mannequins generes par IA (Lalaland.ai) comme un levier de diversite, puis a du recadrer publiquement en six jours face au reproche de diversite artificielle.",
+    "faq": [
+      {
+        "q": "Pourquoi le projet de mannequins IA de Levi's a-t-il fait polemique ?",
+        "a": "La marque a justifie des mannequins generes par IA par un argument de diversite. Le public y a vu une diversite artificielle, remplacant de vrais mannequins sous-representes par des images de synthese. Levi's a du recadrer : le pilote ne remplace pas les shootings reels et n'est pas un instrument de diversite."
+      },
+      {
+        "q": "L'imagerie produit generee par IA est-elle un pattern valide ?",
+        "a": "Oui. L'echec porte sur le cadrage diversite de l'annonce, pas sur la categorie, largement adoptee depuis pour la variete d'affichage, l'essayage virtuel et l'echelle. Le pattern tient si le message correspond a ce que l'outil apporte reellement."
+      }
+    ]
+  },
+  "logo_domain": "levi.com",
+  "stack_technique": [
+    {
+      "nom": "Lalaland.ai",
+      "categorie": "plateforme",
+      "detail": "societe d'Amsterdam qui genere des mannequins realistes par IA, partenaire du pilote Levi's de mars 2023",
+      "url": "https://lalaland.ai"
+    },
+    {
+      "nom": "Moteur generatif Lalaland.ai",
+      "categorie": "llm",
+      "detail": "modele proprietaire de generation de personnes synthetiques (morphologies, ages, carnations varies) ; architecture exacte non publiee",
+      "url": "https://lalaland.ai"
+    },
+    {
+      "nom": "E-commerce Levi's (fiches produit et imagerie)",
+      "categorie": "infra",
+      "detail": "surface de diffusion prevue pour les visuels generes, aux cotes des shootings reels maintenus",
+      "url": "https://www.levi.com"
+    }
+  ]
+}

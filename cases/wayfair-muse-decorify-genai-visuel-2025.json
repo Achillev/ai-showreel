@@ -1,0 +1,264 @@
+{
+  "id": "wayfair-muse-decorify-genai-visuel-2025",
+  "type_fiche": "succes",
+  "marque": "Wayfair",
+  "industrie": "retail_ecom",
+  "marches_deploiement": [
+    "US"
+  ],
+  "transposable_ue": {
+    "flag": "oui_avec_adaptations",
+    "note": "La generation d'images d'ambiance shoppables est transposable a tout e-commerce ameublement. En UE, l'AI Act impose de signaler que les visuels sont generes par IA, et l'usage de photos de piece televersees par le client releve du RGPD (donnee personnelle a traiter avec base legale et minimisation)."
+  },
+  "metier": "e-commerce, decouverte et inspiration produit",
+  "marque_linkedin": "https://www.linkedin.com/company/wayfair/",
+  "intervenants": [
+    {
+      "nom": "Fiona Tan",
+      "role": "Chief Technology Officer, Wayfair",
+      "source_ref": "S1"
+    },
+    {
+      "nom": "Shrenik Sadalgi",
+      "role": "Director of Research and Development, Wayfair",
+      "source_ref": "S1"
+    }
+  ],
+  "axes": {
+    "levier": "acquisition",
+    "touchpoints": [
+      "site Wayfair",
+      "outil Muse (wayfairnext.com/muse)",
+      "app mobile"
+    ],
+    "etape_parcours": "découverte",
+    "famille": "generation",
+    "pattern": "generation genAI d'images d'interieur shoppables",
+    "type_ia": [
+      "generation d'images",
+      "vision par ordinateur",
+      "recherche visuelle"
+    ],
+    "plateforme_stack": [
+      "custom/in-house Wayfair",
+      "modeles genAI Wayfair"
+    ],
+    "objectif_metrique": [
+      "inspiration et decouverte",
+      "designs generes",
+      "passage vers l'achat"
+    ]
+  },
+  "implementation": "custom",
+  "objectif_business": "Aider le client qui ne sait pas par ou commencer a passer d'une idee floue a une scene concrete, puis a des produits achetables, pour ouvrir la decouverte en haut de parcours et alimenter la conversion.",
+  "description": "Wayfair a d'abord lance Decorify a l'ete 2023, un outil ou le client televersait une photo de sa piece, choisissait un style et recevait une image generee par IA, avec des produits Wayfair ressemblants proposes en liens shoppables. Decorify a produit plus de 175 000 designs depuis son lancement, mais deformait souvent l'architecture des pieces et repartait de zero a chaque nouvelle image. Le 11 fevrier 2025, Wayfair a remplace Decorify par Muse, un moteur d'inspiration a la Pinterest : le client tape une requete comme moody 1920s style living room, parcourt des images d'interieurs generees par IA et clique pour voir les produits proches dans le catalogue de 30 millions de references. Muse assume de ne plus tenter d'apparier au pixel un produit reel, et presente des articles inspires de la scene generee.",
+  "resultats": [
+    {
+      "metrique": "Designs generes par Decorify depuis son lancement",
+      "valeur": "plus de 175 000",
+      "citation_exacte": "curated over 175,000 designs since it launched",
+      "source_ref": "S2"
+    },
+    {
+      "metrique": "Catalogue mobilise pour l'appariement produit",
+      "valeur": "environ 30 millions de references",
+      "citation_exacte": "Wayfair's 30 million SKUs",
+      "source_ref": "S3"
+    }
+  ],
+  "niveau_preuve": {
+    "niveau": "C",
+    "justification": "Communique officiel de Wayfair sur Muse et presse retail majeure (Retail Dive, Business of Home) citant nommement la marque, avec le chiffre de 175 000 designs pour Decorify et la taille du catalogue. Pas de resultat de conversion ou financier publie sur l'outil, ce qui place a C."
+  },
+  "dates": {
+    "lancement": "2023 (Decorify), 2025-02-11 (Muse)",
+    "derniere_confirmation_activite": "2025-03",
+    "verifie_le": "2026-07-11",
+    "revoir_apres": "2027-01-11"
+  },
+  "statut_vivant": {
+    "statut": "confirme",
+    "note": "Muse a ete lance le 11 fevrier 2025 en remplacement de Decorify et etait actif au premier trimestre 2025 (couverture Business of Home et Dwell). Outil accessible via wayfairnext.com/muse."
+  },
+  "sources": [
+    {
+      "ref": "S1",
+      "type": "blog_officiel",
+      "fiabilite": "T1_primaire",
+      "titre": "Wayfair Introduces New AI-Powered Tool 'Muse' to Inspire and Personalize the Home Shopping Experience",
+      "url": "https://investor.wayfair.com/news/news-details/2025/Wayfair-Introduces-New-AI-Powered-Tool-Muse-to-Inspire-and-Personalize-the-Home-Shopping-Experience/default.aspx",
+      "date_publication": "2025-02-11",
+      "consulte_le": "2026-07-11"
+    },
+    {
+      "ref": "S2",
+      "type": "presse",
+      "fiabilite": "T3_presse_etablie",
+      "titre": "Wayfair wants AI images to stoke IRL purchases",
+      "url": "https://www.retaildive.com/news/wayfair-generative-ai-imagery-irl-purchases/739874/",
+      "date_publication": "2025-02",
+      "consulte_le": "2026-07-11"
+    },
+    {
+      "ref": "S3",
+      "type": "presse",
+      "fiabilite": "T4_secondaire",
+      "titre": "Wayfair's new tool shows AI's strengths and limitations",
+      "url": "https://businessofhome.com/articles/wayfair-s-new-tool-shows-ai-s-strengths-and-limitations.html",
+      "date_publication": "2025-03",
+      "consulte_le": "2026-07-11"
+    }
+  ],
+  "fonctionnement_operationnel": {
+    "cadence": "Temps reel a chaque requete d'inspiration du client.",
+    "opere_par": "Equipe R&D et technologie de Wayfair, qui tient les modeles de generation d'images et l'appariement au catalogue.",
+    "signal_pilote": "La pertinence de l'appariement entre l'image generee et le catalogue reel. Si le mapping vers les references est faible, le client voit une belle scene mais des produits eloignes, et le passage a l'achat casse.",
+    "etapes": [
+      {
+        "etape": "Requete d'inspiration",
+        "detail": "Le client decrit un style ou une piece en langage naturel, ou televerse une photo (Decorify).",
+        "acteur": "client"
+      },
+      {
+        "etape": "Generation de scene",
+        "detail": "Le modele genere une image d'interieur correspondant a la demande.",
+        "acteur": "IA"
+      },
+      {
+        "etape": "Appariement produit",
+        "detail": "Le systeme relie la scene a des references du catalogue presentees comme inspirees de l'image.",
+        "acteur": "IA"
+      },
+      {
+        "etape": "Passage a l'achat",
+        "detail": "Le client explore les produits proposes, construit une collection et ajoute au panier.",
+        "acteur": "client"
+      }
+    ]
+  },
+  "schema_flow": {
+    "statut": "documente",
+    "noeuds": [
+      {
+        "id": "client",
+        "role_generique": "site_app",
+        "label": "Client sur Wayfair / Muse"
+      },
+      {
+        "id": "genai",
+        "role_generique": "modele_ia",
+        "label": "Generation d'images d'interieur",
+        "outil_documente": "Modeles genAI Wayfair (Muse, ex-Decorify)"
+      },
+      {
+        "id": "catalogue",
+        "role_generique": "data_source",
+        "label": "Catalogue produit (environ 30 millions de references)"
+      }
+    ],
+    "liens": [
+      [
+        "client",
+        "genai"
+      ],
+      [
+        "genai",
+        "catalogue"
+      ],
+      [
+        "catalogue",
+        "genai"
+      ],
+      [
+        "genai",
+        "client",
+        "scene et produits inspires"
+      ]
+    ]
+  },
+  "replication": {
+    "statut_epistemique": "infere",
+    "prerequis_data": [
+      "Catalogue produit riche avec visuels",
+      "Referentiel de styles et d'ambiances",
+      "Boucle de mesure du passage inspiration vers achat"
+    ],
+    "prerequis_orga": [
+      "Regle de transparence sur les images generees",
+      "Base legale et minimisation pour les photos televersees par le client",
+      "Equipe capable de tenir un modele de generation d'images"
+    ],
+    "stack_possible": [
+      "Modele de generation d'images d'interieur",
+      "Recherche visuelle pour l'appariement au catalogue",
+      "Interface d'exploration type moodboard shoppable"
+    ],
+    "premiere_etape": "Entrainer ou brancher un modele de generation d'images de piece sur les styles vendus, puis relier chaque scene a des references achetables.",
+    "playbook": [
+      {
+        "action": "Cadrer les styles vendus et reunir un jeu d'images de reference par style.",
+        "livrable": "Referentiel de styles avec exemples valides par le merchandising."
+      },
+      {
+        "action": "Brancher ou affiner un modele de generation d'images de pieces sur ces styles.",
+        "livrable": "Generateur produisant des scenes coherentes par style, evalue en interne."
+      },
+      {
+        "action": "Construire l'appariement scene vers references achetables (recherche visuelle).",
+        "livrable": "Taux de correspondance produit mesure sur un echantillon de scenes."
+      },
+      {
+        "action": "Assembler l'interface d'exploration shoppable, avec mention des images generees par IA.",
+        "livrable": "Beta accessible avec parcours inspiration vers fiche produit."
+      },
+      {
+        "action": "Instrumenter le funnel et arbitrer l'extension.",
+        "livrable": "Funnel mesure : taux de clic produit et conversion depuis l'inspiration."
+      }
+    ],
+    "equipe": "1 PM + 2-3 ML engineers (generation d'images, recherche visuelle) + 1 designer + equipe catalogue"
+  },
+  "seo": {
+    "slug": "wayfair-muse-decorify-genai-visuel-2025",
+    "title": "Wayfair : images d'interieur genAI shoppables (Muse, Decorify) - plus de 175 000 designs (2025)",
+    "meta_description": "Wayfair genere des images d'interieur shoppables avec Muse, qui remplace Decorify (plus de 175 000 designs). Le client passe d'une idee de style a des produits du catalogue.",
+    "resume_citable": "Wayfair a lance Muse en fevrier 2025 pour remplacer Decorify, son outil de generation d'images d'interieur qui avait produit plus de 175 000 designs, en reliant chaque scene generee a un catalogue d'environ 30 millions de references.",
+    "faq": [
+      {
+        "q": "Que fait Muse ?",
+        "a": "Muse genere des images d'interieur a partir d'une requete de style et relie la scene a des produits Wayfair achetables, comme un moteur d'inspiration shoppable."
+      },
+      {
+        "q": "Quelle difference avec Decorify ?",
+        "a": "Decorify partait d'une photo de la piece du client et proposait des produits ressemblants. Muse, lance en 2025, part d'une requete de style et assume de proposer des articles inspires de la scene."
+      }
+    ]
+  },
+  "logo_domain": "wayfair.com",
+  "stack_technique": [
+    {
+      "nom": "Modeles de generation d'images Wayfair",
+      "categorie": "llm",
+      "detail": "Modeles genAI in-house qui produisent les scenes d'interieur de Muse (et avant lui Decorify) ; l'architecture exacte n'est pas publiee.",
+      "url": "https://www.aboutwayfair.com"
+    },
+    {
+      "nom": "Muse",
+      "categorie": "outil",
+      "detail": "Moteur d'inspiration lance le 11 fevrier 2025 : requete de style, images generees, produits inspires cliquables.",
+      "url": "https://www.wayfair.com"
+    },
+    {
+      "nom": "Decorify",
+      "categorie": "outil",
+      "detail": "Outil precedent (2023-2025) : photo de piece televersee, restyling genere, produits ressemblants ; plus de 175 000 designs produits avant son remplacement par Muse.",
+      "url": "https://www.wayfair.com"
+    },
+    {
+      "nom": "Recherche visuelle et catalogue Wayfair",
+      "categorie": "infra",
+      "detail": "Appariement entre la scene generee et les references achetables du catalogue d'environ 30 millions de SKU.",
+      "url": "https://www.wayfair.com"
+    }
+  ]
+}

@@ -1,0 +1,291 @@
+{
+  "id": "kingfisher-hello-casto-bq-genai-2023",
+  "type_fiche": "succes",
+  "marque": "B&Q et Castorama (Kingfisher)",
+  "groupe": "Kingfisher plc",
+  "industrie": "retail_ecom",
+  "marches_deploiement": [
+    "France",
+    "Royaume-Uni",
+    "Pologne"
+  ],
+  "transposable_ue": {
+    "flag": "oui",
+    "note": "Deja deploye en UE (Castorama France et Pologne, Brico Depot France). Les assistants DIY conversationnels et la personnalisation des recommandations tournent sur le premier parti Kingfisher. En UE, l'AI Act impose la transparence sur l'usage d'une IA et le RGPD encadre la personnalisation a partir du comportement de navigation."
+  },
+  "metier": "e-commerce, service client, personnalisation",
+  "marque_linkedin": "https://www.linkedin.com/company/kingfisher-plc/",
+  "intervenants": [
+    {
+      "nom": "Tom Betts",
+      "role": "Group Data Director puis Chief Data Officer, Kingfisher",
+      "source_ref": "S2"
+    },
+    {
+      "nom": "Mohsen Ghasempour",
+      "role": "Group AI Director, Kingfisher",
+      "source_ref": "S2"
+    }
+  ],
+  "agences": [
+    {
+      "nom": "Google Cloud",
+      "role": "Partenaire cloud et IA, Vertex AI Search for Commerce pour la recherche et les assistants",
+      "source_ref": "S1"
+    }
+  ],
+  "axes": {
+    "levier": "activation_conversion",
+    "touchpoints": [
+      "sites e-commerce des enseignes (B&Q, Castorama, Brico Depot)",
+      "assistant DIY conversationnel",
+      "recommandations produit"
+    ],
+    "etape_parcours": "considération",
+    "famille": "personnalisation",
+    "pattern": "recommandations personnalisees plus assistant DIY conversationnel genAI",
+    "type_ia": [
+      "LLM generatif",
+      "moteur de recommandation",
+      "recherche semantique"
+    ],
+    "plateforme_stack": [
+      "Athena (orchestration in-house)",
+      "Google Cloud Vertex AI",
+      "Nucleus (data lake)"
+    ],
+    "objectif_metrique": [
+      "ventes attribuees aux recommandations",
+      "part des ventes e-commerce",
+      "clients aides par l'assistant"
+    ]
+  },
+  "implementation": "hybride",
+  "objectif_business": "Faire progresser les ventes en ligne en poussant les bonnes recommandations produit et en repondant aux questions de bricolage en langage naturel, pour transformer un catalogue technique en parcours guide.",
+  "points_cles": ["Recommandations personnalisees et assistant DIY conversationnel Hello Casto et Hello B&Q.", "Orchestration maison Athena sur Google Cloud Vertex AI et data lake Nucleus.", "Environ 80 M GBP de ventes IA au S1 2025/26, +37% sur un an.", "Hello Casto a environ 60 000 utilisateurs mensuels, preuve A confirmee."],
+  "description": "Kingfisher a construit Athena, un cadre d'orchestration in-house qui branche plusieurs modeles de langage sur ses enseignes. Sur cette base, le groupe a lance Hello Casto, son premier assistant DIY conversationnel genAI, sur Castorama France le 14 novembre 2023, puis Hello B&Q au Royaume-Uni. Le client pose une question de bricolage en langage naturel et recoit des conseils pas a pas et des produits adaptes. En parallele, des moteurs de recommandation et de personnalisation alimentent les pages produit. D'apres les resultats semestriels 2025/26 du groupe, les recommandations et la personnalisation pilotees par l'IA ont genere environ 80 millions de livres de ventes sur le premier semestre, en hausse d'environ 37% sur un an. Hello Casto a aide environ 350 000 clients et compte de l'ordre de 60 000 utilisateurs par mois.",
+  "resultats": [
+    {
+      "metrique": "Ventes IA reco et personnalisation au S1 2025/26, +37% sur un an",
+      "valeur": "environ 80 M GBP",
+      "citation_exacte": "around £80m in H1 25/26",
+      "source_ref": "S4"
+    },
+    {
+      "metrique": "Part des ventes e-commerce pilotee par les algorithmes de reco (B&Q)",
+      "valeur": "environ 10%",
+      "citation_exacte": "c. 10% of e-commerce sales",
+      "source_ref": "S3"
+    },
+    {
+      "metrique": "Utilisateurs mensuels de l'assistant Hello Casto",
+      "valeur": "environ 60 000",
+      "citation_exacte": "Hello Casto monthly users: 60,000",
+      "source_ref": "S2"
+    }
+  ],
+  "niveau_preuve": {
+    "niveau": "A",
+    "justification": "Le chiffre central, environ 80 M GBP de ventes en hausse d'environ 37% sur un an, provient des resultats semestriels 2025/26 de Kingfisher (document financier de la marque). Il est corrobore par la presse specialisee (Digiday sur les utilisateurs de Hello Casto) et par le communique du partenariat Google Cloud. La presence dans les resultats financiers place a A."
+  },
+  "dates": {
+    "lancement": "2023-11-14 (Hello Casto sur Castorama France)",
+    "derniere_confirmation_activite": "2026-03",
+    "verifie_le": "2026-07-11",
+    "revoir_apres": "2027-01-11"
+  },
+  "statut_vivant": {
+    "statut": "confirme",
+    "note": "Partenariat Google Cloud annonce en mars 2026 pour etendre les assistants IA et la recherche sur B&Q, Castorama et Brico Depot ; les figures de ventes IA figurent dans les resultats semestriels 2025/26."
+  },
+  "sources": [
+    {
+      "ref": "S1",
+      "type": "blog_officiel",
+      "fiabilite": "T1_primaire",
+      "titre": "Kingfisher and Google Cloud Partner to Deliver AI-Powered Shopping Across UK and Europe",
+      "url": "https://www.kingfisher.com/media/news/2026/kingfisher-and-google-cloud-partner",
+      "date_publication": "2026-03-18",
+      "consulte_le": "2026-07-11"
+    },
+    {
+      "ref": "S2",
+      "type": "presse",
+      "fiabilite": "T3_presse_etablie",
+      "titre": "As brands look for AI edge, B&Q retail owner Kingfisher is expanding in-house development",
+      "url": "https://digiday.com/marketing/as-brands-look-for-ai-edge-bq-retail-owner-kingfisher-is-expanding-in-house-development/",
+      "date_publication": "2024",
+      "consulte_le": "2026-07-11"
+    },
+    {
+      "ref": "S3",
+      "type": "presse",
+      "fiabilite": "T4_secondaire",
+      "titre": "B&Q and Screwfix owner Kingfisher taps GenAI as it builds data led omnichannel customer experience",
+      "url": "https://retailtechinnovationhub.com/home/2024/3/26/bandq-and-screwfix-owner-kingfisher-taps-genai-as-it-builds-data-led-omnichannel-customer-experience",
+      "date_publication": "2024-03-26",
+      "consulte_le": "2026-07-11"
+    },
+    {
+      "ref": "S4",
+      "type": "document_officiel_sec",
+      "fiabilite": "T1_primaire",
+      "titre": "Kingfisher plc - Half year results for the six months ended 31 July 2025",
+      "url": "https://www.kingfisher.com/~/media/Files/K/Kingfisher-Plc/Universal/investors/result-reports-presentation/2025/half-year-results-pdf.pdf",
+      "date_publication": "2025-09",
+      "consulte_le": "2026-07-11"
+    }
+  ],
+  "fonctionnement_operationnel": {
+    "cadence": "Temps reel pour l'assistant et les recommandations ; les modeles sont branches et orchestres via Athena.",
+    "opere_par": "Equipe data et IA groupe de Kingfisher, qui tient Athena, le data lake Nucleus et les modeles de reco.",
+    "signal_pilote": "Le comportement de navigation et d'achat qui nourrit les recommandations, et la qualite du catalogue pour l'assistant. Sans donnee de navigation propre ni catalogue structure, la reco perd en pertinence et l'assistant repond a cote.",
+    "etapes": [
+      {
+        "etape": "Question ou navigation",
+        "detail": "Le client pose une question DIY a Hello Casto ou Hello B&Q, ou navigue sur les pages produit.",
+        "acteur": "client"
+      },
+      {
+        "etape": "Orchestration",
+        "detail": "Athena route la demande vers le bon modele et compose conseil et recommandations.",
+        "acteur": "IA"
+      },
+      {
+        "etape": "Recommandation personnalisee",
+        "detail": "Les moteurs de reco classent les produits selon le comportement et le contexte du client.",
+        "acteur": "IA"
+      },
+      {
+        "etape": "Mesure et attribution",
+        "detail": "Les equipes suivent les ventes attribuees a la reco et a la personnalisation et arbitrent les modeles.",
+        "acteur": "equipe data"
+      }
+    ]
+  },
+  "schema_flow": {
+    "statut": "documente",
+    "noeuds": [
+      {
+        "id": "client",
+        "role_generique": "site_app",
+        "label": "Client sur B&Q, Castorama, Brico Depot"
+      },
+      {
+        "id": "athena",
+        "role_generique": "modele_ia",
+        "label": "Athena (orchestration genAI) et moteurs de reco",
+        "outil_documente": "Athena + Google Cloud Vertex AI"
+      },
+      {
+        "id": "nucleus",
+        "role_generique": "cdp",
+        "label": "Data lake Nucleus (comportement, catalogue)"
+      }
+    ],
+    "liens": [
+      [
+        "client",
+        "athena"
+      ],
+      [
+        "nucleus",
+        "athena"
+      ],
+      [
+        "athena",
+        "nucleus"
+      ],
+      [
+        "athena",
+        "client",
+        "conseil et recommandations"
+      ]
+    ]
+  },
+  "replication": {
+    "statut_epistemique": "infere",
+    "prerequis_data": [
+      "Data lake unifie du comportement de navigation et d'achat",
+      "Catalogue produit structure pour l'assistant et la reco",
+      "Attribution des ventes aux recommandations"
+    ],
+    "prerequis_orga": [
+      "Cadre d'orchestration multi-modeles",
+      "Equipe data groupe capable de tenir plusieurs enseignes",
+      "Regle de transparence IA"
+    ],
+    "stack_possible": [
+      "Couche d'orchestration LLM type Athena",
+      "Moteur de recommandation sur le comportement",
+      "Recherche semantique commerce"
+    ],
+    "premiere_etape": "Unifier la donnee de navigation et le catalogue, brancher un moteur de reco, puis exposer un assistant conversationnel sur une enseigne pilote.",
+    "playbook": [
+      {
+        "action": "Unifier la donnee de navigation et le catalogue produit dans le data lake",
+        "livrable": "Catalogue structure + donnees de navigation requetables"
+      },
+      {
+        "action": "Brancher un moteur de recommandation sur les pages produit avec attribution des ventes",
+        "livrable": "Reco personnalisee en production sur une enseigne pilote"
+      },
+      {
+        "action": "Construire l'assistant conversationnel sur le catalogue (conseils pas a pas + produits)",
+        "livrable": "Assistant en beta sur un perimetre de questions DIY"
+      },
+      {
+        "action": "Lancer l'assistant sur l'enseigne pilote et mesurer usage et ventes attribuees",
+        "livrable": "Utilisateurs mensuels + ventes attribuees a la reco et a l'assistant"
+      },
+      {
+        "action": "Mutualiser via une couche d'orchestration multi-modeles et etendre aux autres enseignes",
+        "livrable": "Cadre commun type Athena servant plusieurs enseignes"
+      }
+    ],
+    "equipe": "1 PM + 2 ingenieurs ML/data + 1 responsable catalogue + relais e-commerce par enseigne"
+  },
+  "seo": {
+    "slug": "kingfisher-hello-casto-bq-genai-2023",
+    "title": "Kingfisher (B&Q, Castorama) : reco IA et assistant DIY genAI - environ 80 M GBP de ventes (2023)",
+    "meta_description": "Chez Kingfisher, les recommandations IA et l'assistant DIY Hello Casto ont genere environ 80 M GBP de ventes au S1 2025/26, en hausse d'environ 37% sur un an.",
+    "resume_citable": "Chez Kingfisher, les recommandations et la personnalisation IA ont genere environ 80 M GBP de ventes au premier semestre 2025/26, en hausse d'environ 37% sur un an, et l'assistant DIY Hello Casto compte environ 60 000 utilisateurs par mois.",
+    "faq": [
+      {
+        "q": "Qu'a deploye Kingfisher en IA ?",
+        "a": "Des moteurs de recommandation personnalisee et des assistants DIY conversationnels genAI (Hello Casto, Hello B&Q), orchestres par son cadre in-house Athena."
+      },
+      {
+        "q": "Quel resultat chiffre ?",
+        "a": "Environ 80 M GBP de ventes attribuees a la reco et a la personnalisation IA au S1 2025/26, en hausse d'environ 37% sur un an, d'apres les resultats semestriels du groupe."
+      }
+    ]
+  },
+  "logo_domain": "kingfisher.com",
+  "stack_technique": [
+    {
+      "nom": "Athena (orchestration in-house)",
+      "categorie": "plateforme",
+      "detail": "cadre d'orchestration de Kingfisher qui branche plusieurs modeles de langage sur les enseignes du groupe",
+      "url": "https://www.kingfisher.com"
+    },
+    {
+      "nom": "Google Cloud Vertex AI",
+      "categorie": "plateforme",
+      "detail": "socle IA du partenariat Google Cloud, dont Vertex AI Search for Commerce pour la recherche et les assistants",
+      "url": "https://cloud.google.com/vertex-ai"
+    },
+    {
+      "nom": "Nucleus (data lake)",
+      "categorie": "infra",
+      "detail": "data lake groupe : comportement de navigation et d'achat, catalogue, socle des recommandations",
+      "url": "https://www.kingfisher.com"
+    },
+    {
+      "nom": "Moteurs de recommandation et assistants Hello Casto / Hello B&Q",
+      "categorie": "outil",
+      "detail": "reco personnalisee sur les pages produit et assistants DIY conversationnels genAI par enseigne",
+      "url": "https://www.kingfisher.com"
+    }
+  ]
+}

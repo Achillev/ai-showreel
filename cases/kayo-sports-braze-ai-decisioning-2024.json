@@ -1,0 +1,285 @@
+{
+  "id": "kayo-sports-braze-ai-decisioning-2024",
+  "type_fiche": "succes",
+  "marque": "Kayo Sports",
+  "groupe": "Foxtel Group (DAZN)",
+  "industrie": "media_entertainment",
+  "marches_deploiement": [
+    "Australie"
+  ],
+  "transposable_ue": {
+    "flag": "oui_avec_adaptations",
+    "note": "Le decisioning 1:1 combine donnees first et third-party et pilote plusieurs canaux. En UE, base du profilage, consentement multicanal et usage de donnees tierces a cadrer (RGPD)."
+  },
+  "metier": "CRM / lifecycle marketing",
+  "marque_linkedin": "https://www.linkedin.com/company/kayo-sports/",
+  "intervenants": [
+    {
+      "nom": "Anthony O'Byrne",
+      "role": "Managing Director, Revenue, Kayo Sports & BINGE",
+      "source_ref": "S1"
+    }
+  ],
+  "axes": {
+    "levier": "retention",
+    "touchpoints": [
+      "email",
+      "push mobile",
+      "in-app",
+      "SMS",
+      "landing page"
+    ],
+    "etape_parcours": "fidélité",
+    "famille": "optimisation_automatisation",
+    "pattern": "AI decisioning 1:1 (message, creative, canal, timing, frequence, promo par individu)",
+    "type_ia": [
+      "reinforcement learning (dix modeles dedies)",
+      "AI decisioning / next-best-action"
+    ],
+    "plateforme_stack": [
+      "Braze",
+      "BrazeAI Decisioning Studio",
+      "Braze Canvas"
+    ],
+    "objectif_metrique": [
+      "abonnements",
+      "cross-sell",
+      "conversion",
+      "churn"
+    ]
+  },
+  "implementation": "hybride",
+  "objectif_business": "Augmenter les abonnements et reduire le churn d'un service de streaming sportif en orchestrant une relation 1:1 a l'echelle plutot que des campagnes a regles fixes.",
+  "points_cles": ["AI decisioning 1:1 choisit message, creative, canal, timing et promo par abonne.", "Sur Braze et BrazeAI Decisioning Studio, dix modeles de reinforcement learning.", "+14% d'abonnements en FY24, +105% de cross-sell.", "Actions par client de 300 a 1,2 million, preuve B confirmee."],
+  "description": "Kayo Sports, plus gros service australien de streaming sportif, a construit son Customer Cortex sur Braze et BrazeAI Decisioning Studio. Dix modeles de reinforcement learning entraines sur ses donnees first et third-party analysent chaque abonne, et le decisioning choisit pour lui le message, la creative, le canal, le timing, la frequence et la promotion. L'orchestration passe par Canvas sur email, push, in-app et SMS. Le nombre d'actions possibles par client est passe de 300 a 1,2 million.",
+  "resultats": [
+    {
+      "metrique": "Abonnements sur l'exercice FY24",
+      "valeur": "+14%",
+      "citation_exacte": "14% increase in subscriptions in FY24",
+      "source_ref": "S1"
+    },
+    {
+      "metrique": "Cross-sell",
+      "valeur": "+105%",
+      "citation_exacte": "105% increase in cross-sells",
+      "source_ref": "S1"
+    },
+    {
+      "metrique": "Actions personnalisees possibles par client",
+      "valeur": "de 300 a 1,2 million",
+      "citation_exacte": "increasing the number of potential actions from 300 to 1.2 million",
+      "source_ref": "S1"
+    }
+  ],
+  "niveau_preuve": {
+    "niveau": "B",
+    "justification": "Customer story Braze chiffree et citee nommement, corroboree par la presse martech australienne Mi3 (specialisee, T4). Concordant mais sans presse generaliste majeure, d'ou B."
+  },
+  "dates": {
+    "lancement": "2023-2024 (Customer Cortex, apres environ quatre ans de developpement)",
+    "derniere_confirmation_activite": "2025-05 (article Mi3)",
+    "verifie_le": "2026-07-11",
+    "revoir_apres": "2027-01-11"
+  },
+  "statut_vivant": {
+    "statut": "confirme",
+    "note": "Systeme decrit comme en production en 2025, avec extension annoncee vers BINGE (autre marque du groupe). Kayo cite dans le bilan Braze 2025."
+  },
+  "sources": [
+    {
+      "ref": "S1",
+      "type": "customer_story_plateforme",
+      "fiabilite": "T2_officiel_interesse",
+      "titre": "Kayo Sports leverages AI to create 1:1 messaging at scale (Braze)",
+      "url": "https://www.braze.com/customers/kayo-sports-case-study",
+      "date_publication": "2025",
+      "consulte_le": "2026-07-11"
+    },
+    {
+      "ref": "S2",
+      "type": "presse",
+      "fiabilite": "T4_secondaire",
+      "titre": "Kayo customer and revenue chief says AI-decisioning switch has crushed churn (Mi3)",
+      "url": "https://www.mi-3.com.au/05-05-2025/kayo-seeing-incremental-revenue-boon-ai-decisioning-machine-learning-solution-driving-90",
+      "date_publication": "2025-05-05",
+      "consulte_le": "2026-07-11"
+    }
+  ],
+  "fonctionnement_operationnel": {
+    "cadence": "Temps quasi reel : le decisioning choisit la prochaine meilleure action au fil du comportement de chaque abonne, les modeles se reajustent en continu.",
+    "opere_par": "Equipe CRM / revenue de Kayo, sur Braze et Decisioning Studio, avec l'appui data pour les modeles RL.",
+    "signal_pilote": "Le comportement d'engagement et de visionnage par abonne. Le reinforcement learning apprend de la reaction a chaque message ; sans ce retour, le systeme retombe sur des regles generiques.",
+    "etapes": [
+      {
+        "etape": "Unification des donnees",
+        "detail": "Les donnees first et third-party (visionnage, abonnements) alimentent le Customer Cortex.",
+        "acteur": "Equipe data"
+      },
+      {
+        "etape": "Modelisation",
+        "detail": "Dix modeles de reinforcement learning transforment ces donnees en signaux exploitables.",
+        "acteur": "Equipe data / IA"
+      },
+      {
+        "etape": "Decision de la prochaine action",
+        "detail": "Decisioning Studio choisit message, creative, canal, timing, frequence et promo pour chaque abonne.",
+        "acteur": "IA (BrazeAI Decisioning Studio)"
+      },
+      {
+        "etape": "Orchestration et boucle",
+        "detail": "Canvas diffuse sur email, push, in-app et SMS ; la reaction du client nourrit le prochain choix.",
+        "acteur": "IA / equipe CRM"
+      }
+    ]
+  },
+  "schema_flow": {
+    "statut": "documente",
+    "noeuds": [
+      {
+        "id": "n1",
+        "role_generique": "data_source",
+        "label": "Donnees first et third-party (visionnage, abonnements)"
+      },
+      {
+        "id": "n2",
+        "role_generique": "modele_ia",
+        "label": "Dix modeles reinforcement learning (Customer Cortex)"
+      },
+      {
+        "id": "n3",
+        "role_generique": "modele_ia",
+        "label": "Decisioning next-best-action",
+        "outil_documente": "BrazeAI Decisioning Studio"
+      },
+      {
+        "id": "n4",
+        "role_generique": "crm",
+        "label": "Orchestration multicanale",
+        "outil_documente": "Braze Canvas"
+      },
+      {
+        "id": "n5",
+        "role_generique": "canal_conversationnel",
+        "label": "Email / push / in-app / SMS"
+      },
+      {
+        "id": "n6",
+        "role_generique": "humain",
+        "label": "Equipe CRM / revenue"
+      }
+    ],
+    "liens": [
+      [
+        "n1",
+        "n2"
+      ],
+      [
+        "n2",
+        "n3"
+      ],
+      [
+        "n3",
+        "n4"
+      ],
+      [
+        "n4",
+        "n5"
+      ],
+      [
+        "n6",
+        "n3",
+        "objectifs et garde-fous"
+      ],
+      [
+        "n5",
+        "n1",
+        "reaction reinjectee (reinforcement learning)"
+      ]
+    ]
+  },
+  "replication": {
+    "statut_epistemique": "infere",
+    "prerequis_data": [
+      "donnees d'engagement et de consommation par abonne, unifiees",
+      "volume d'interactions suffisant pour entrainer du reinforcement learning",
+      "consentement multicanal"
+    ],
+    "prerequis_orga": [
+      "equipe data capable de construire et maintenir des modeles RL",
+      "equipe CRM qui fixe objectifs et garde-fous",
+      "modele d'abonnement avec churn a piloter"
+    ],
+    "stack_possible": [
+      "Braze + BrazeAI Decisioning Studio",
+      "toute plateforme d'engagement avec moteur de decisioning next-best-action"
+    ],
+    "premiere_etape": "Unifier les donnees d'engagement par abonne et definir la metrique que le decisioning doit optimiser (retention, cross-sell) avant d'ouvrir l'espace d'actions.",
+    "playbook": [
+      {
+        "action": "Unifier les donnees d'engagement et de consommation par abonne dans la plateforme",
+        "livrable": "Profil client unifie alimente en continu"
+      },
+      {
+        "action": "Definir la metrique que le decisioning optimise (retention, cross-sell) et les garde-fous (pression commerciale max)",
+        "livrable": "Objectifs et contraintes du decisioning documentes"
+      },
+      {
+        "action": "Activer le decisioning sur un cycle de vie pilote (ex. onboarding ou reactivation) avec groupe temoin",
+        "livrable": "Premier programme next-best-action en production, mesure vs temoin"
+      },
+      {
+        "action": "Elargir l'espace d'actions : canaux, promotions, frequences, creatives",
+        "livrable": "Catalogue d'actions etendu + mesures incrementales par vague"
+      },
+      {
+        "action": "Ajouter des modeles predictifs maison (churn, propension) en amont du decisioning",
+        "livrable": "Scores proprietaires branches sur le moteur de decision"
+      }
+    ],
+    "equipe": "1-2 CRM managers + 1 data scientist + 1 data engineer pour les flux"
+  },
+  "seo": {
+    "slug": "kayo-sports-braze-ai-decisioning-2024",
+    "title": "Kayo Sports : AI decisioning 1:1 avec Braze - +14% d'abonnements FY24 (2024)",
+    "meta_description": "Kayo Sports a construit son Customer Cortex sur BrazeAI Decisioning Studio : +14% d'abonnements en FY24, +105% de cross-sell, 1,2 million d'actions possibles par client.",
+    "resume_citable": "Kayo Sports a fait passer ses abonnements de +14% en FY24 et son cross-sell de +105% avec un moteur d'AI decisioning 1:1 sur Braze, portant de 300 a 1,2 million le nombre d'actions personnalisees possibles par client.",
+    "faq": [
+      {
+        "q": "Quelle IA fait tourner le systeme de Kayo Sports ?",
+        "a": "BrazeAI Decisioning Studio, alimente par dix modeles de reinforcement learning entraines sur les donnees first et third-party de Kayo."
+      },
+      {
+        "q": "Quels resultats chiffres ?",
+        "a": "+14% d'abonnements sur l'exercice FY24, +105% de cross-sell, et un passage de 300 a 1,2 million d'actions personnalisees possibles par abonne."
+      }
+    ]
+  },
+  "logo_domain": "kayosports.com.au",
+  "stack_technique": [
+    {
+      "nom": "Braze",
+      "categorie": "plateforme",
+      "detail": "plateforme d'engagement client qui porte les profils, les canaux et l'orchestration",
+      "url": "https://www.braze.com"
+    },
+    {
+      "nom": "BrazeAI Decisioning Studio",
+      "categorie": "outil",
+      "detail": "moteur de decisioning next-best-action : choix du message, de la creative, du canal, du timing, de la frequence et de la promo par abonne",
+      "url": "https://www.braze.com"
+    },
+    {
+      "nom": "Braze Canvas",
+      "categorie": "outil",
+      "detail": "orchestration multicanale des parcours sur email, push, in-app et SMS",
+      "url": "https://www.braze.com"
+    },
+    {
+      "nom": "Dix modeles de reinforcement learning (Customer Cortex)",
+      "categorie": "llm",
+      "detail": "modeles maison entraines sur les donnees first et third-party de Kayo, qui transforment le comportement en signaux pour le decisioning",
+      "url": "https://kayosports.com.au"
+    }
+  ]
+}

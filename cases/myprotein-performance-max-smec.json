@@ -1,0 +1,275 @@
+{
+  "type_fiche": "succes",
+  "id": "myprotein-performance-max-smec",
+  "marque": "Myprotein",
+  "groupe": "THG (The Hut Group)",
+  "industrie": "cpg_d2c",
+  "marches_deploiement": [
+    "Irlande",
+    "Japon"
+  ],
+  "transposable_ue": {
+    "flag": "oui",
+    "note": "Marque europeenne, deja deployee en Irlande (UE). Performance Max en UE impose Consent Mode v2 et un feed produit propre. La couche smec ajoute un pilotage tiers au-dessus de PMax, sans classification haut risque au sens de l'AI Act."
+  },
+  "metier": "E-commerce / media performance",
+  "intervenants": [
+    {
+      "nom": "Mason Park",
+      "role": "Paid Media Lead, Myprotein (au moment du projet)",
+      "source_ref": "S1"
+    }
+  ],
+  "axes": {
+    "levier": "acquisition",
+    "touchpoints": [
+      "Google Search",
+      "YouTube",
+      "Display",
+      "Google Shopping",
+      "Discover"
+    ],
+    "etape_parcours": "consideration -> achat",
+    "famille": "optimisation_automatisation",
+    "pattern": "Reprise de controle sur Performance Max via un orchestrateur tiers : segmentation dynamique du catalogue par marge/profitabilite, objectifs tROAS et budgets recalcules chaque jour, pour orienter la depense vers les produits strategiques",
+    "type_ia": [
+      "smart bidding (enchères ML)",
+      "segmentation produit automatisée",
+      "prédiction de potentiel produit"
+    ],
+    "plateforme_stack": [
+      "Google Ads Performance Max",
+      "smec Campaign Orchestrator",
+      "Google Shopping / Search / YouTube / Display"
+    ],
+    "objectif_metrique": [
+      "revenu",
+      "tROAS",
+      "nouveaux clients"
+    ]
+  },
+  "implementation": "hybride",
+  "stack_technique": [
+    {
+      "nom": "Google Ads Performance Max",
+      "categorie": "plateforme",
+      "detail": "Campagnes automatisees cross-surfaces (Search, Shopping, YouTube, Display, Discover) qui executent encheres et diffusion.",
+      "url": "https://ads.google.com"
+    },
+    {
+      "nom": "smec Campaign Orchestrator",
+      "categorie": "outil",
+      "detail": "Orchestrateur tiers au-dessus de PMax : segmentation dynamique du catalogue par prix, type et profitabilite (Dynamic Segments), objectifs tROAS et budgets recalcules chaque jour, metriques maison Sales impact et New Customer Rate.",
+      "url": "https://smarter-ecommerce.com"
+    },
+    {
+      "nom": "Smart bidding Google (encheres ML)",
+      "categorie": "outil",
+      "detail": "Encheres automatiques au sein de PMax, pilotees par les objectifs tROAS que fixe l'orchestrateur segment par segment.",
+      "url": "https://ads.google.com"
+    },
+    {
+      "nom": "Feed produit enrichi (Google Merchant Center)",
+      "categorie": "infra",
+      "detail": "Feed avec prix, type, marge et profitabilite au niveau article ; matiere premiere de la segmentation dynamique.",
+      "url": "https://www.google.com"
+    }
+  ],
+  "objectif_business": "Reprendre la main sur des campagnes Performance Max devenues des boites noires, et orienter la depense vers les produits premium a forte marge plutot que de laisser l'automatisation lisser le catalogue.",
+  "points_cles": ["Reprise de controle sur Performance Max via un orchestrateur tiers.", "smec Campaign Orchestrator au-dessus de Google PMax, segmentation par marge et tROAS recalcules chaque jour.", "Revenu +522% en Irlande et +148% au Japon en glissement annuel.", "Preuve B, statut confirme."],
+  "description": "Myprotein, la marque phare de la division nutrition de THG, gerait ses campagnes Performance Max sur un large catalogue. L'automatisation de PMax lui faisait perdre le controle fin de son catalogue : budget mal reparti, produits importants noyes. THG a branche le Campaign Orchestrator de smec par-dessus PMax. Le systeme segmente les produits par prix, type et profitabilite (fonction Dynamic Segments), calcule des metriques maison comme le Sales impact et le New Customer Rate pour reperer les produits qui convertissent et ceux qui amenent de nouveaux clients, puis genere des campagnes avec des objectifs tROAS et des budgets ajustes, rafraichis chaque jour. Resultat annonce par smec : un revenu en hausse de 522 % en Irlande et de 148 % au Japon, en glissement annuel.",
+  "fonctionnement_operationnel": {
+    "cadence": "Rafraichissement quotidien des segments, objectifs tROAS et budgets. Pilotage en continu au-dessus de PMax.",
+    "opere_par": "L'equipe paid media de la marque, avec l'outil d'orchestration tiers (smec) qui automatise la segmentation et le rebalancing.",
+    "signal_pilote": "Les metriques produit (marge, Sales impact, New Customer Rate) issues du feed et des ventes. Si le feed produit est sale ou la marge absente, la segmentation perd son sens et l'orchestrateur optimise a l'aveugle.",
+    "etapes": [
+      {
+        "etape": "Enrichir le feed produit",
+        "detail": "Injecter prix, type, marge et profitabilite au niveau produit. C'est la matiere premiere de la segmentation dynamique.",
+        "acteur": "Equipe data / e-commerce"
+      },
+      {
+        "etape": "Definir les segments strategiques",
+        "detail": "Grouper les produits (premium forte marge, identite de marque, longue traine) selon les objectifs commerciaux, pas selon le seul historique PMax.",
+        "acteur": "Equipe media + outil"
+      },
+      {
+        "etape": "Laisser l'orchestrateur recalculer",
+        "detail": "Objectifs tROAS et budgets par segment recalcules chaque jour selon les signaux produit. L'equipe fixe le cap, l'outil ajuste.",
+        "acteur": "smec Campaign Orchestrator"
+      },
+      {
+        "etape": "Arbitrer les priorites business",
+        "detail": "Decider quels produits pousser (marge, nouveaux clients) reste un choix humain que l'outil execute ensuite.",
+        "acteur": "Equipe media"
+      }
+    ]
+  },
+  "resultats": [
+    {
+      "metrique": "Revenu Irlande (YoY)",
+      "valeur": "+522 %",
+      "citation_exacte": "a staggering 522% increase in revenue",
+      "source_ref": "S1"
+    },
+    {
+      "metrique": "Revenu Japon (YoY)",
+      "valeur": "+148 %",
+      "citation_exacte": "a 148% revenue boost in Japan",
+      "source_ref": "S1"
+    }
+  ],
+  "niveau_preuve": {
+    "niveau": "B",
+    "justification": "Etude de cas d'un editeur/partenaire specialise (smec) chiffree et nominative (Myprotein, Mason Park) - source interessee. La sante commerciale de Myprotein et son role de moteur de croissance chez THG sont corrobores par la presse economique 2026, mais celle-ci ne confirme pas les chiffres Google-specifiques par marche."
+  },
+  "dates": {
+    "lancement": "Non date precisement dans l'etude smec (comparaisons en glissement annuel)",
+    "derniere_confirmation_activite": "2026 - THG revient a la croissance, Myprotein cite comme principal moteur (presse eco)",
+    "verifie_le": "2026-07-11",
+    "revoir_apres": "2026-10-11"
+  },
+  "statut_vivant": {
+    "statut": "confirme",
+    "note": "Myprotein est presente en 2026 comme le moteur du retour a la croissance de THG (Retail Gazette). Le partenariat smec/PMax est publie comme etude de cas active ; la date exacte du cas n'est pas precisee, d'ou une prudence sur la peremption du chiffre."
+  },
+  "sources": [
+    {
+      "ref": "S1",
+      "type": "customer_story_plateforme",
+      "titre": "How THG achieved +522% revenue growth for Myprotein! - smec case study",
+      "url": "https://smarter-ecommerce.com/en/case-studies/myprotein/",
+      "date_publication": "2024",
+      "consulte_le": "2026-07-11",
+      "fiabilite": "T2_officiel_interesse"
+    },
+    {
+      "ref": "S2",
+      "type": "presse",
+      "titre": "THG returns to profit as Lookfantastic and Myprotein drive growth - Retail Gazette",
+      "url": "https://www.retailgazette.co.uk/blog/2026/03/thg-returns-to-profit-as-lookfantastic-and-myprotein-drive-growth/",
+      "date_publication": "2026-03",
+      "consulte_le": "2026-07-11",
+      "fiabilite": "T3_presse_etablie"
+    }
+  ],
+  "schema_flow": {
+    "statut": "documente",
+    "noeuds": [
+      {
+        "id": "feed",
+        "role_generique": "data_source",
+        "label": "Feed produit enrichi (prix, type, marge)"
+      },
+      {
+        "id": "metrics",
+        "role_generique": "data_source",
+        "label": "Metriques maison (Sales impact, New Customer Rate)",
+        "outil_documente": "smec Campaign Orchestrator"
+      },
+      {
+        "id": "orch",
+        "role_generique": "paid_platform",
+        "label": "Orchestrateur : segmentation, tROAS, budgets (recalcul quotidien)",
+        "outil_documente": "smec Campaign Orchestrator"
+      },
+      {
+        "id": "pmax",
+        "role_generique": "paid_platform",
+        "label": "IA Google : enchères et diffusion",
+        "outil_documente": "Google Ads Performance Max"
+      },
+      {
+        "id": "shop",
+        "role_generique": "site_app",
+        "label": "Boutique Myprotein (achat)"
+      }
+    ],
+    "liens": [
+      [
+        "feed",
+        "orch"
+      ],
+      [
+        "metrics",
+        "orch"
+      ],
+      [
+        "orch",
+        "pmax"
+      ],
+      [
+        "pmax",
+        "shop"
+      ],
+      [
+        "shop",
+        "metrics",
+        "feedback ventes"
+      ]
+    ]
+  },
+  "replication": {
+    "statut_epistemique": "infere",
+    "playbook": [
+      {
+        "action": "Enrichir le feed produit avec la marge et la profitabilite par article, et verifier la qualite des donnees (prix, type, disponibilite).",
+        "livrable": "Feed enrichi et propre dans Merchant Center."
+      },
+      {
+        "action": "Definir les segments strategiques (premium forte marge, identite de marque, longue traine) selon les objectifs commerciaux.",
+        "livrable": "Plan de segmentation valide par le business."
+      },
+      {
+        "action": "Brancher l'orchestrateur au-dessus de PMax et lancer les campagnes par segment avec leurs objectifs tROAS.",
+        "livrable": "Campagnes segmentees live avec recalcul quotidien actif."
+      },
+      {
+        "action": "Laisser l'apprentissage tourner sans sur-ajuster, monitorer revenu et tROAS par segment.",
+        "livrable": "Premier readout revenu/tROAS par segment vs periode de reference."
+      },
+      {
+        "action": "Arbitrer les priorites business (marge vs nouveaux clients) et ajuster segments et objectifs.",
+        "livrable": "Reglage consolide et bilan chiffre du test."
+      }
+    ],
+    "equipe": "1 media buyer Google Ads + 1 profil data/feed pour la marge par article ; l'editeur de l'orchestrateur accompagne le setup.",
+    "prerequis_data": [
+      "Feed produit avec marge et profitabilite au niveau article",
+      "Historique de ventes exploitable",
+      "Consent Mode v2 en UE"
+    ],
+    "prerequis_orga": [
+      "Un catalogue large ou la priorisation produit compte",
+      "Un budget d'outil d'orchestration tiers (couche au-dessus de PMax)"
+    ],
+    "stack_possible": [
+      "Google Ads Performance Max + orchestrateur tiers (smec ou equivalent) + feed produit enrichi"
+    ],
+    "premiere_etape": "Enrichir le feed produit avec la marge par article, puis segmenter PMax par profitabilite avant d'ajouter une couche d'orchestration."
+  },
+  "seo": {
+    "slug": "myprotein-performance-max-orchestration-smec-522-revenu",
+    "title": "Myprotein (THG) : reprendre le controle de Performance Max - +522 % de revenu en Irlande",
+    "meta_description": "THG a repris la main sur Performance Max pour Myprotein via l'orchestrateur smec : +522 % de revenu en Irlande, +148 % au Japon (YoY).",
+    "resume_citable": "THG a fait progresser le revenu de Myprotein de 522 % en Irlande et de 148 % au Japon (YoY) en pilotant Google Performance Max avec l'orchestrateur smec, qui segmente le catalogue par marge et recalcule chaque jour les objectifs tROAS et les budgets.",
+    "faq": [
+      {
+        "q": "Pourquoi ajouter un outil tiers au-dessus de Performance Max ?",
+        "a": "Pour reprendre le controle du catalogue que l'automatisation de PMax lisse. L'orchestrateur segmente par marge et profitabilite et oriente la depense vers les produits strategiques."
+      },
+      {
+        "q": "Est-ce accessible sans gros catalogue ?",
+        "a": "Le levier a le plus de valeur quand le catalogue est large et heterogene en marge. Sur un catalogue restreint, le gain de la segmentation dynamique est plus faible."
+      }
+    ]
+  },
+  "agences": [
+    {
+      "nom": "smec (Smarter Ecommerce)",
+      "role": "Editeur/partenaire - orchestration Performance Max (Campaign Orchestrator)",
+      "source_ref": "S1"
+    }
+  ],
+  "logo_domain": "myprotein.com"
+}

@@ -1,0 +1,262 @@
+{
+  "id": "perplexity-buy-with-pro-2024",
+  "type_fiche": "succes",
+  "marque": "Perplexity",
+  "industrie": "tech_saas",
+  "marches_deploiement": [
+    "Etats-Unis"
+  ],
+  "transposable_ue": {
+    "flag": "a_verifier",
+    "note": "Buy with Pro est lance aux Etats-Unis. Pour un deploiement UE, la question n'est pas le RGPD du cote marque mais la disponibilite du canal : le checkout in-chat de Perplexity et le programme marchand ne sont pas ouverts partout. Une marque UE peut deja optimiser sa presence produit pour etre recommandee, mais le paiement in-app reste US a la date de verification."
+  },
+  "metier": "e-commerce",
+  "axes": {
+    "levier": "acquisition",
+    "touchpoints": [
+      "moteur de reponse Perplexity",
+      "resultats de recherche shopping",
+      "checkout in-app"
+    ],
+    "etape_parcours": "considération",
+    "famille": "conversation",
+    "pattern": "commerce agentique (recommandation produit et checkout in-chat)",
+    "type_ia": [
+      "LLM",
+      "moteur de reponse",
+      "recherche generative"
+    ],
+    "plateforme_stack": [
+      "Perplexity",
+      "Shopify"
+    ],
+    "objectif_metrique": [
+      "intention d'achat",
+      "conversion in-app",
+      "visibilite produit"
+    ]
+  },
+  "implementation": "plateforme",
+  "stack_technique": [
+    {
+      "nom": "Perplexity (moteur de reponse + shopping)",
+      "categorie": "plateforme",
+      "detail": "Moteur de reponse LLM qui indexe les produits et les recommande dans les reponses a intention d'achat, avec le checkout in-app Buy with Pro. Modeles sous-jacents non detailles pour le shopping.",
+      "url": "https://www.perplexity.ai"
+    },
+    {
+      "nom": "Programme marchand Perplexity (API produit)",
+      "categorie": "outil",
+      "detail": "Programme gratuit : la marque partage ses specifications produit via une API unique, garde 100 pour cent du revenu et gagne en visibilite dans les recommandations.",
+      "url": "https://www.perplexity.ai"
+    },
+    {
+      "nom": "Shopify",
+      "categorie": "plateforme",
+      "detail": "Integration utilisee pour la decouverte des produits des marchands Shopify vendant et expediant aux Etats-Unis.",
+      "url": "https://www.shopify.com"
+    }
+  ],
+  "objectif_business": "Ouvrir un canal ou l'utilisateur passe de la recherche produit a l'achat sans quitter l'assistant, et donner aux marques un moyen d'etre recommandees et vendues directement dans les reponses.",
+  "description": "En novembre 2024, Perplexity a lance Buy with Pro, un checkout en un clic reserve d'abord a ses abonnes Pro aux Etats-Unis. L'utilisateur recoit des recommandations produit dans les reponses et peut commander sans aller sur le site du marchand : adresse et carte stockees dans Perplexity, calcul de taxes, livraison gratuite sur les commandes Buy with Pro. L'experience de decouverte s'appuie sur une integration Shopify pour acceder aux produits des marchands qui vendent et expedient aux Etats-Unis. En parallele, Perplexity a ouvert un programme marchand gratuit : les marques partagent leurs specifications produit via une API unique, gardent 100 pour cent du revenu des ventes, et gagnent en visibilite dans les recommandations. Perplexity a rapporte une multiplication par 5 des requetes a intention d'achat depuis le lancement.",
+  "resultats": [
+    {
+      "metrique": "Requetes a intention d'achat depuis le lancement de Buy with Pro",
+      "valeur": "x5",
+      "citation_exacte": "a 5x increase in Shopping Intent queries",
+      "source_ref": "S3"
+    },
+    {
+      "metrique": "Revenu garde par le marchand (programme gratuit)",
+      "valeur": "100% du revenu",
+      "citation_exacte": "They receive 100% of the revenue from the purchases made on the platform",
+      "source_ref": "S3"
+    },
+    {
+      "metrique": "Experience d'achat, livraison gratuite",
+      "valeur": "checkout un clic",
+      "citation_exacte": "one-click checkout to save time for Perplexity Pro users",
+      "source_ref": "S1"
+    }
+  ],
+  "niveau_preuve": {
+    "niveau": "C",
+    "justification": "Lancement couvert nommement par la presse etablie (TechCrunch), recoupe par le blog officiel Perplexity et la presse specialisee e-commerce. Le chiffre de x5 est un declaratif plateforme, d'ou un niveau C plutot que B."
+  },
+  "dates": {
+    "lancement": "2024-11-18",
+    "derniere_confirmation_activite": "2025 (extension du programme marchand et partenariat de paiement PayPal)",
+    "verifie_le": "2026-07-11",
+    "revoir_apres": "2027-01-11"
+  },
+  "statut_vivant": {
+    "statut": "confirme",
+    "note": "Le programme s'est etendu en 2025 (partenariat de paiement PayPal pour ouvrir le checkout au-dela des abonnes Pro, croissance du nombre de marchands). Canal jeune et en mouvement, mais actif et en expansion."
+  },
+  "sources": [
+    {
+      "ref": "S1",
+      "type": "presse",
+      "fiabilite": "T3_presse_etablie",
+      "titre": "Perplexity introduces a shopping feature for Pro users in the US",
+      "url": "https://techcrunch.com/2024/11/18/perplexity-introduces-a-shopping-feature-for-pro-users/",
+      "date_publication": "2024-11-18",
+      "consulte_le": "2026-07-11"
+    },
+    {
+      "ref": "S2",
+      "type": "blog_officiel",
+      "fiabilite": "T2_officiel_interesse",
+      "titre": "Shop like a Pro",
+      "url": "https://www.perplexity.ai/hub/blog/shop-like-a-pro",
+      "date_publication": "2024-11-18",
+      "consulte_le": "2026-07-11"
+    },
+    {
+      "ref": "S3",
+      "type": "presse",
+      "fiabilite": "T3_presse_etablie",
+      "titre": "Perplexity adds an agentic commerce partner for its push into ecommerce",
+      "url": "https://www.digitalcommerce360.com/2025/04/01/perplexity-agentic-commerce-partner-ecommerce-push/",
+      "date_publication": "2025-04-01",
+      "consulte_le": "2026-07-11"
+    }
+  ],
+  "fonctionnement_operationnel": {
+    "cadence": "Temps reel cote utilisateur ; cote marque, flux produit synchronise en continu via l'API marchand.",
+    "opere_par": "Cote marque : equipe e-commerce / feed produit qui alimente et maintient les specifications. Cote canal : Perplexity opere le moteur et le checkout.",
+    "signal_pilote": "La qualite et la fraicheur du flux produit (specifications, prix, disponibilite). Si le feed est pauvre ou perime, la marque est moins souvent recommandee et le checkout echoue.",
+    "etapes": [
+      {
+        "etape": "Inscription au programme marchand",
+        "detail": "La marque partage ses specifications produit via l'API unique de Perplexity, gratuitement.",
+        "acteur": "marketing"
+      },
+      {
+        "etape": "Indexation et recommandation",
+        "detail": "Perplexity indexe les produits et les propose dans les reponses a intention d'achat.",
+        "acteur": "IA"
+      },
+      {
+        "etape": "Checkout in-app",
+        "detail": "L'utilisateur commande en un clic dans Perplexity ; la commande est transmise au marchand qui garde 100 pour cent du revenu.",
+        "acteur": "client"
+      },
+      {
+        "etape": "Traitement et expedition",
+        "detail": "La marque traite la commande et l'expedie via son operation logistique existante.",
+        "acteur": "equipe e-commerce"
+      }
+    ]
+  },
+  "schema_flow": {
+    "statut": "approche_type",
+    "noeuds": [
+      {
+        "id": "user",
+        "role_generique": "humain",
+        "label": "Utilisateur Perplexity"
+      },
+      {
+        "id": "engine",
+        "role_generique": "modele_ia",
+        "label": "Moteur de reponse + shopping",
+        "outil_documente": "Perplexity"
+      },
+      {
+        "id": "feed",
+        "role_generique": "data_source",
+        "label": "Flux produit marchand (API)"
+      },
+      {
+        "id": "checkout",
+        "role_generique": "site_app",
+        "label": "Checkout in-app (Buy with Pro)"
+      },
+      {
+        "id": "merchant",
+        "role_generique": "site_app",
+        "label": "Systeme marchand / logistique"
+      }
+    ],
+    "liens": [
+      [
+        "user",
+        "engine"
+      ],
+      [
+        "feed",
+        "engine",
+        "specifications produit"
+      ],
+      [
+        "engine",
+        "checkout"
+      ],
+      [
+        "checkout",
+        "merchant",
+        "commande transmise"
+      ],
+      [
+        "merchant",
+        "user",
+        "expedition"
+      ]
+    ]
+  },
+  "replication": {
+    "statut_epistemique": "infere",
+    "playbook": [
+      {
+        "action": "Verifier l'eligibilite (vente et expedition aux Etats-Unis) et auditer la qualite du flux produit : specifications, prix, disponibilite.",
+        "livrable": "Feed produit valide et complet"
+      },
+      {
+        "action": "S'inscrire au programme marchand gratuit et connecter le catalogue via l'API produit de Perplexity.",
+        "livrable": "Catalogue expose dans l'index shopping"
+      },
+      {
+        "action": "Tester des requetes d'achat cibles sur la categorie et relever la presence des produits dans les recommandations.",
+        "livrable": "Releve de visibilite dans les reponses shopping"
+      },
+      {
+        "action": "Brancher la mesure des commandes venant du canal et decider du niveau d'investissement (enrichissement du feed, couverture catalogue).",
+        "livrable": "Read commandes et panier moyen par canal"
+      }
+    ],
+    "equipe": "1 responsable e-commerce/feed ; la logistique existante traite les commandes transmises",
+    "prerequis_data": [
+      "flux produit propre (specs, prix, stock)",
+      "capacite d'expedition US",
+      "systeme de commande connectable"
+    ],
+    "prerequis_orga": [
+      "equipe e-commerce/feed qui maintient le catalogue",
+      "decision sur la marge partagee via ce canal"
+    ],
+    "stack_possible": [
+      "Programme marchand Perplexity",
+      "Shopify",
+      "feed manager (Productsup, Feedonomics)"
+    ],
+    "premiere_etape": "Verifier l'eligibilite (expedition US) et la qualite du flux produit, puis s'inscrire au programme marchand gratuit pour tester la visibilite."
+  },
+  "seo": {
+    "slug": "perplexity-buy-with-pro-2024",
+    "title": "Perplexity Buy with Pro : checkout in-chat et programme marchand (2024)",
+    "meta_description": "Depuis novembre 2024, Buy with Pro permet l'achat en un clic dans Perplexity ; la plateforme rapporte une multiplication par 5 des requetes d'achat.",
+    "resume_citable": "En novembre 2024, Perplexity a lance Buy with Pro, un checkout en un clic dans l'assistant appuye sur Shopify, avec un programme marchand gratuit ou les marques gardent 100 pour cent du revenu ; Perplexity rapporte une multiplication par 5 des requetes a intention d'achat depuis le lancement.",
+    "faq": [
+      {
+        "q": "Comment une marque apparait-elle dans Perplexity Shopping ?",
+        "a": "Via le programme marchand gratuit : la marque partage ses specifications produit par une API unique et devient eligible aux recommandations et au checkout Buy with Pro, en gardant 100 pour cent du revenu."
+      },
+      {
+        "q": "Buy with Pro est-il disponible en Europe ?",
+        "a": "Le checkout a d'abord ete lance aux Etats-Unis pour les abonnes Pro. La disponibilite du canal hors US reste a verifier a la date de cette fiche."
+      }
+    ]
+  },
+  "logo_domain": "perplexity.ai"
+}

@@ -1,0 +1,309 @@
+{
+  "id": "papa-johns-google-cloud-personnalisation-2025",
+  "type_fiche": "succes",
+  "marque": "Papa Johns",
+  "industrie": "food_beverage",
+  "marches_deploiement": [
+    "Etats-Unis",
+    "international (environ 50 pays et territoires)"
+  ],
+  "transposable_ue": {
+    "flag": "oui_avec_adaptations",
+    "note": "La personnalisation temps reel de la fidelite et des offres repose sur le profil client : base legale et consentement RGPD requis pour le profilage et le marketing cible, transparence AI Act pour l'agent conversationnel de commande."
+  },
+  "metier": "marketing / fidelite / e-commerce",
+  "intervenants": [
+    {
+      "nom": "Todd Penegor",
+      "role": "President and Chief Executive Officer, Papa Johns",
+      "source_ref": "S1"
+    },
+    {
+      "nom": "Kevin Vasconi",
+      "role": "Chief Digital and Technology Officer, Papa Johns",
+      "source_ref": "S1"
+    }
+  ],
+  "agences": [
+    {
+      "nom": "Google Cloud",
+      "role": "Partenaire technologique pluriannuel : BigQuery, Vertex AI, Gemini et l'agent omnicanal Food Ordering",
+      "source_ref": "S1"
+    }
+  ],
+  "axes": {
+    "levier": "retention",
+    "touchpoints": [
+      "application",
+      "site web",
+      "programme Papa Rewards",
+      "email et push",
+      "commande vocale et de groupe"
+    ],
+    "etape_parcours": "fidelite",
+    "famille": "personnalisation",
+    "pattern": "personnalisation temps reel de la fidelite et de la commande par IA generative",
+    "type_ia": [
+      "IA generative",
+      "grands modeles de langage",
+      "machine learning"
+    ],
+    "plateforme_stack": [
+      "Google Cloud (BigQuery, Vertex AI, Gemini)",
+      "Food Ordering agent"
+    ],
+    "objectif_metrique": [
+      "personnalisation des offres de fidelite",
+      "reorder des clients Papa Rewards",
+      "conversion du parcours de commande",
+      "frequence et retention"
+    ]
+  },
+  "implementation": "plateforme",
+  "stack_technique": [
+    {
+      "nom": "Google BigQuery",
+      "categorie": "infra",
+      "detail": "Entrepot de donnees ou Papa Johns centralise les donnees de commande et de fidelite Papa Rewards.",
+      "url": "https://cloud.google.com/bigquery"
+    },
+    {
+      "nom": "Vertex AI",
+      "categorie": "plateforme",
+      "detail": "Plateforme ML de Google Cloud utilisee pour les modeles de personnalisation (offres, contenus, suggestions selon le profil).",
+      "url": "https://cloud.google.com/vertex-ai"
+    },
+    {
+      "nom": "Gemini",
+      "categorie": "llm",
+      "detail": "Famille de modeles de Google utilisee pour les capacites generatives du dispositif (personnalisation, chatbot, commande vocale).",
+      "url": "https://cloud.google.com"
+    },
+    {
+      "nom": "Food Ordering agent (Google Cloud)",
+      "categorie": "outil",
+      "detail": "Agent de commande omnicanal de Google Cloud, dont Papa Johns est le premier deployeur ; reconnait les membres Papa Rewards pour le reorder.",
+      "url": "https://cloud.google.com"
+    },
+    {
+      "nom": "Google Cloud",
+      "categorie": "integrateur",
+      "detail": "Partenaire technologique pluriannuel, aux cotes de l'equipe d'innovation interne PJX de Papa Johns.",
+      "url": "https://cloud.google.com"
+    }
+  ],
+  "objectif_business": "Anticiper les besoins des clients Papa Rewards et personnaliser en temps reel offres, contenus et parcours de commande, pour faire revenir les membres fideles et pousser le reorder.",
+  "description": "Papa Johns a elargi en avril 2025 son partenariat pluriannuel avec Google Cloud et cree une equipe d'innovation, PJX, pour appliquer BigQuery, Vertex AI et Gemini a ses donnees. Objectifs revendiques : personnaliser en temps reel l'experience du site et de l'app (codes promo et messages selon l'historique, les preferences et la localisation), predire les habitudes de commande pour proposer offres et raccourcis, et deployer un chatbot et une commande vocale. En janvier 2026, Papa Johns est devenu le premier partenaire a deployer l'agent omnicanal Food Ordering de Google Cloud, qui reconnait les membres Papa Rewards pour un reorder fluide ; le deploiement national est prevu d'ici fin 2026. Le reseau compte plus de 6 000 restaurants et sert plus de 150 millions de clients.",
+  "resultats": [
+    {
+      "metrique": "Base de clients servie dans le monde",
+      "valeur": "150 millions+",
+      "citation_exacte": "150 million+ customers worldwide",
+      "source_ref": "S3"
+    },
+    {
+      "metrique": "Reseau de restaurants dans environ 50 pays",
+      "valeur": "6 000+ restaurants",
+      "citation_exacte": "more than 6,000 restaurants in approximately 50 countries",
+      "source_ref": "S1"
+    },
+    {
+      "metrique": "Agent de commande omnicanal Food Ordering de Google Cloud",
+      "valeur": "premier deployeur",
+      "citation_exacte": "the first to deploy our omnichannel Food Ordering agent",
+      "source_ref": "S3"
+    }
+  ],
+  "niveau_preuve": {
+    "niveau": "C",
+    "justification": "Partenariat formalise par communiques officiels Papa Johns et Google Cloud citant nommement la marque, avec un premier deploiement de l'agent de commande annonce debut 2026. Les capacites de personnalisation sont en deploiement et l'agent omnicanal en rollout national d'ici fin 2026 ; aucun resultat de performance chiffre n'est encore publie, d'ou C."
+  },
+  "dates": {
+    "lancement": "Partenariat Google Cloud existant, elargi en avril 2025 ; agent Food Ordering annonce en janvier 2026",
+    "derniere_confirmation_activite": "janvier 2026 (premier deploiement de l'agent Food Ordering, rollout national prevu d'ici fin 2026)",
+    "verifie_le": "2026-07-11",
+    "revoir_apres": "2027-01-11"
+  },
+  "statut_vivant": {
+    "statut": "signaux_mitiges",
+    "note": "Le partenariat et l'equipe PJX sont actifs, et l'agent de commande a demarre son deploiement debut 2026. Mais une partie du dispositif (agent omnicanal, personnalisation temps reel) est encore en rollout national vise pour fin 2026 ; la preuve porte davantage sur l'engagement et le premier deploiement que sur un impact chiffre a l'echelle."
+  },
+  "sources": [
+    {
+      "ref": "S1",
+      "type": "blog_officiel",
+      "fiabilite": "T1_primaire",
+      "titre": "Papa Johns and Google Cloud Team Up to Deliver AI-Powered Pizza Experiences",
+      "url": "https://ir.papajohns.com/news-events/news-releases/detail/622/papa-johns-and-google-cloud-team-up-to-deliver-ai-powered-pizza-experiences",
+      "date_publication": "2025-04-03",
+      "consulte_le": "2026-07-11"
+    },
+    {
+      "ref": "S2",
+      "type": "presse",
+      "fiabilite": "T3_presse_etablie",
+      "titre": "Papa Johns will use Google AI for analytics, marketing",
+      "url": "https://www.restaurantdive.com/news/papa-johns-google-cloud-generative-ai-partnership/744353/",
+      "date_publication": "2025-04-03",
+      "consulte_le": "2026-07-11"
+    },
+    {
+      "ref": "S3",
+      "type": "customer_story_plateforme",
+      "fiabilite": "T2_officiel_interesse",
+      "titre": "Papa Johns and Google Cloud Reimagine the Future of Food Ordering to Better Serve Customers",
+      "url": "https://www.googlecloudpresscorner.com/2026-01-11-Papa-Johns-and-Google-Cloud-Reimagine-the-Future-of-Food-Ordering-to-Better-Serve-Customers",
+      "date_publication": "2026-01-11",
+      "consulte_le": "2026-07-11"
+    }
+  ],
+  "fonctionnement_operationnel": {
+    "cadence": "Temps reel sur les surfaces digitales (site, app, agent de commande) ; campagnes marketing personnalisees par declencheur",
+    "opere_par": "Equipe d'innovation PJX de Papa Johns avec Google Cloud, et le marketing fidelite",
+    "signal_pilote": "Le profil Papa Rewards : historique, preferences, localisation. Sans identification du membre et donnees de commande a jour, la personnalisation et le reorder proactif retombent sur une experience generique.",
+    "etapes": [
+      {
+        "etape": "Unification des donnees",
+        "detail": "Les donnees de commande et de fidelite sont centralisees dans BigQuery.",
+        "acteur": "Equipe PJX / data"
+      },
+      {
+        "etape": "Modeles de personnalisation",
+        "detail": "Vertex AI et Gemini calculent offres, contenus et suggestions selon le profil.",
+        "acteur": "IA"
+      },
+      {
+        "etape": "Personnalisation des surfaces",
+        "detail": "Site, app et agent de commande adaptent l'experience et reconnaissent les membres Papa Rewards pour le reorder.",
+        "acteur": "IA / site et app"
+      },
+      {
+        "etape": "Campagnes declenchees",
+        "detail": "Push et emails personnalises partent selon les occasions et preferences anticipees.",
+        "acteur": "Marketing"
+      }
+    ]
+  },
+  "schema_flow": {
+    "statut": "documente",
+    "noeuds": [
+      {
+        "id": "data",
+        "role_generique": "data_source",
+        "label": "Donnees de commande et de fidelite",
+        "outil_documente": "Google BigQuery"
+      },
+      {
+        "id": "model",
+        "role_generique": "modele_ia",
+        "label": "Modeles de personnalisation",
+        "outil_documente": "Vertex AI, Gemini"
+      },
+      {
+        "id": "agent",
+        "role_generique": "canal_conversationnel",
+        "label": "Agent de commande omnicanal",
+        "outil_documente": "Google Cloud Food Ordering agent"
+      },
+      {
+        "id": "app",
+        "role_generique": "site_app",
+        "label": "Site, app et programme Papa Rewards"
+      },
+      {
+        "id": "client",
+        "role_generique": "humain",
+        "label": "Client Papa Rewards"
+      }
+    ],
+    "liens": [
+      [
+        "data",
+        "model"
+      ],
+      [
+        "model",
+        "app",
+        "offres et contenus personnalises"
+      ],
+      [
+        "model",
+        "agent",
+        "reconnaissance du membre, reorder"
+      ],
+      [
+        "app",
+        "client"
+      ],
+      [
+        "agent",
+        "client"
+      ],
+      [
+        "client",
+        "data",
+        "nouvelle commande, boucle de retour"
+      ]
+    ]
+  },
+  "replication": {
+    "statut_epistemique": "infere",
+    "playbook": [
+      {
+        "action": "Unifier les donnees de commande et de fidelite dans un entrepot cloud, avec identification de chaque client par le programme de fidelite.",
+        "livrable": "Donnees clients unifiees et requetables"
+      },
+      {
+        "action": "Construire les premiers modeles de personnalisation : offres et messages selon l'historique, les preferences et la localisation, testes sur un segment.",
+        "livrable": "Moteur d'offres en test avec groupe de controle"
+      },
+      {
+        "action": "Personnaliser les surfaces (site, app) pour les membres identifies et brancher les campagnes declenchees (push, email) sur les occasions anticipees.",
+        "livrable": "Surfaces personnalisees et campagnes en production"
+      },
+      {
+        "action": "Piloter un agent de commande conversationnel sur un canal, avec reconnaissance des membres pour le reorder.",
+        "livrable": "Agent en pilote sur un perimetre limite"
+      },
+      {
+        "action": "Etendre le dispositif et mesurer reorder, frequence et retention contre des cohortes non exposees.",
+        "livrable": "Bilan retention chiffre par cohorte"
+      }
+    ],
+    "equipe": "1 equipe data de 2-4 personnes + 1 PM fidelite + un partenaire cloud ; le marketing CRM opere les campagnes au quotidien",
+    "prerequis_data": [
+      "donnees de commande et de fidelite unifiees",
+      "programme de fidelite identifiant chaque client",
+      "signaux contextuels (localisation, occasions)"
+    ],
+    "prerequis_orga": [
+      "equipe data ou partenaire cloud",
+      "programme de fidelite actif",
+      "gouvernance du consentement marketing"
+    ],
+    "stack_possible": [
+      "entrepot de donnees (BigQuery, Snowflake)",
+      "plateforme ML et LLM (Vertex AI, Gemini)",
+      "agent de commande conversationnel",
+      "app et site"
+    ],
+    "premiere_etape": "Unifier les donnees de commande et de fidelite dans un entrepot exploitable par des modeles de personnalisation."
+  },
+  "seo": {
+    "slug": "papa-johns-google-cloud-personnalisation-2025",
+    "title": "Papa Johns : personnalisation IA de la fidelite avec Google Cloud - 150 millions de clients (2025)",
+    "meta_description": "Papa Johns personnalise fidelite et commande avec Google Cloud (BigQuery, Vertex AI, Gemini) et deploie le premier agent omnicanal Food Ordering pour ses 150 millions de clients.",
+    "resume_citable": "Papa Johns a formalise un partenariat pluriannuel avec Google Cloud pour personnaliser fidelite et commande via BigQuery, Vertex AI et Gemini, et est devenu en 2026 le premier a deployer l'agent omnicanal Food Ordering de Google Cloud aupres de plus de 150 millions de clients.",
+    "faq": [
+      {
+        "q": "Quels outils Google Cloud Papa Johns utilise-t-il ?",
+        "a": "BigQuery pour les donnees, Vertex AI et Gemini pour la personnalisation, et l'agent omnicanal Food Ordering pour la commande, portes par l'equipe d'innovation PJX."
+      },
+      {
+        "q": "Le dispositif est-il pleinement deploye ?",
+        "a": "Non. Le partenariat est actif et l'agent de commande a demarre son deploiement debut 2026, avec un rollout national vise pour fin 2026 ; l'impact chiffre n'est pas encore publie."
+      }
+    ]
+  },
+  "logo_domain": "papajohns.com"
+}

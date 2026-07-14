@@ -1,0 +1,263 @@
+{
+  "id": "ping-an-agents-ia-service-vente-2025",
+  "type_fiche": "succes",
+  "marque": "Ping An",
+  "groupe": "Ping An Insurance (Group) Company of China, Ltd.",
+  "industrie": "banque_assurance_fintech",
+  "marches_deploiement": [
+    "Chine"
+  ],
+  "transposable_ue": {
+    "flag": "oui_avec_adaptations",
+    "note": "Le pattern (agents IA de service et de vente sur la base clients) est transposable, mais l'echelle chinoise repose sur une base de donnees clients et un cadre data specifiques a la Chine. En UE, un agent IA qui recommande ou vend une police et qui pilote des relances de reactivation touche a la decision automatisee (RGPD art. 22) et au profilage : information de la personne, base legale, et supervision humaine sur les cas a effet significatif. L'assistance a la souscription en assurance est classee a haut risque par l'AI Act."
+  },
+  "metier": "Service client et distribution (assurance, banque, sante)",
+  "axes": {
+    "levier": "monetisation",
+    "touchpoints": [
+      "centre de contact",
+      "application mobile",
+      "agents commerciaux",
+      "canaux de reactivation de police"
+    ],
+    "etape_parcours": "post-achat",
+    "famille": "conversation",
+    "pattern": "agent conversationnel IA de service et d'aide a la vente sur base clients",
+    "type_ia": [
+      "grands modeles de langage",
+      "traitement du langage naturel",
+      "reconnaissance et synthese vocale",
+      "agents IA"
+    ],
+    "plateforme_stack": [
+      "custom/in-house (plateforme d'agents IA du groupe Ping An)"
+    ],
+    "objectif_metrique": [
+      "ventes assistees par IA",
+      "part du service client automatise",
+      "taux de reactivation de police"
+    ]
+  },
+  "implementation": "custom",
+  "stack_technique": [
+    {
+      "nom": "Plateforme d'agents IA Ping An",
+      "categorie": "plateforme",
+      "detail": "Plateforme interne du groupe sur laquelle plus de 230 000 collaborateurs travaillent et plus de 70 000 applications d'agents ont ete construites.",
+      "url": "https://group.pingan.com"
+    },
+    {
+      "nom": "Grands modeles proprietaires Ping An",
+      "categorie": "llm",
+      "detail": "LLM et briques NLP developpes en interne par le groupe pour le service, la vente et la reactivation ; modeles exacts non publies dans les sources.",
+      "url": "https://group.pingan.com"
+    },
+    {
+      "nom": "Briques voix (reconnaissance et synthese vocale)",
+      "categorie": "outil",
+      "detail": "Couche vocale maison qui permet aux representants IA de traiter les demandes a la voix comme a l'ecrit.",
+      "url": "https://group.pingan.com"
+    },
+    {
+      "nom": "Base clients unifiee du groupe",
+      "categorie": "infra",
+      "detail": "Socle de donnees (polices, interactions, paiements) qui alimente la priorisation des relances et la pertinence des reponses.",
+      "url": "https://group.pingan.com"
+    }
+  ],
+  "objectif_business": "Absorber un volume de service massif sans gonfler les effectifs, et faire de l'IA un canal de vente et de retention a part entiere en assistant les agents et en relançant les clients dont la police a laps.",
+  "points_cles": ["Flotte d'agents IA de service et d'aide a la vente sur la base clients.", "Plateforme d'agents interne, LLM proprietaires et couche vocale maison.", "80% du service client, RMB 133 179 millions de ventes assistees, +30% de polices reactivees.", "Preuve A, statut confirme via les resultats 2025 du groupe."],
+  "description": "Ping An fait tourner une flotte d'agents IA sur sa base clients. Cote service, des representants IA prennent la premiere ligne des demandes entrantes (questions de police, sinistres, operations courantes) en langage naturel, a l'ecrit comme a la voix. Cote distribution, les memes briques assistent les agents commerciaux et pilotent des campagnes de vente et de relance. Un systeme de reactivation « IA + humain » repartit les taches de reprise de contact sur les polices lapses, l'IA priorisant les dossiers et preparant l'action, l'humain closant. Le groupe chiffre l'impact dans sa communication de resultats 2025 : environ 1 702 millions d'interactions de service assurees par les representants IA, soit 80% du volume total de service client, RMB 133 179 millions de ventes realisees avec l'aide des agents IA, et 30% de polices reactivees en plus grace au dispositif IA + humain. En interne, plus de 230 000 collaborateurs utilisent la plateforme d'agents et plus de 70 000 applications d'agents ont ete construites.",
+  "resultats": [
+    {
+      "metrique": "Ventes realisees avec l'aide des agents IA en 2025",
+      "valeur": "RMB 133 179 millions",
+      "citation_exacte": "AI agents helped realize RMB133,179 million in sales in 2025",
+      "source_ref": "S1"
+    },
+    {
+      "metrique": "Environ 1 702 millions d'interactions de service, soit 80% du volume total",
+      "valeur": "80%",
+      "citation_exacte": "accounting for 80% of Ping An's total customer service volume in 2025",
+      "source_ref": "S1"
+    },
+    {
+      "metrique": "Polices reactivees en plus via le systeme de repartition IA + humain",
+      "valeur": "+30%",
+      "citation_exacte": "Ping An reinstated 30% more policies via a smart 'AI + human'",
+      "source_ref": "S1"
+    }
+  ],
+  "niveau_preuve": {
+    "niveau": "A",
+    "justification": "Chiffres publies par Ping An dans sa communication de resultats annuels 2025 (rapport et communique officiel du groupe), repris a l'identique par la distribution presse PR Newswire. Source primaire de resultats, plusieurs metriques operationnelles concordantes."
+  },
+  "dates": {
+    "lancement": "Deploiement progressif des agents IA de service et de vente sur plusieurs annees, en montee en charge continue",
+    "derniere_confirmation_activite": "Resultats 2025 publies debut 2026",
+    "verifie_le": "2026-07-11",
+    "revoir_apres": "2027-01-11"
+  },
+  "statut_vivant": {
+    "statut": "confirme",
+    "note": "Les agents IA sont un axe central de la communication de resultats 2025 de Ping An, avec des volumes en hausse d'une periode a l'autre."
+  },
+  "sources": [
+    {
+      "ref": "S1",
+      "type": "earnings_call",
+      "fiabilite": "T1_primaire",
+      "titre": "Ping An Reports 2025 Performance on Positive Trends, Operating Profit Up 10.3% YoY",
+      "url": "https://group.pingan.com/media/news/2026/ar-25.html",
+      "date_publication": "2026",
+      "consulte_le": "2026-07-11"
+    },
+    {
+      "ref": "S2",
+      "type": "presse",
+      "fiabilite": "T2_officiel_interesse",
+      "titre": "Ping An Reports 2025 Performance on Positive Trends, Operating Profit Up 10.3% YoY (PR Newswire APAC)",
+      "url": "https://www.prnewswire.com/apac/news-releases/ping-an-reports-2025-performance-on-positive-trends-operating-profit1-up-10-3-yoy-302726098.html",
+      "date_publication": "2026",
+      "consulte_le": "2026-07-11"
+    }
+  ],
+  "fonctionnement_operationnel": {
+    "cadence": "Temps reel sur le service entrant ; par campagne sur la vente et la reactivation ; reentrainement continu des modeles a mesure que les interactions et les issues remontent.",
+    "opere_par": "Equipes IA et data du groupe pour la plateforme d'agents ; equipes de service et reseau commercial pour la premiere ligne humaine et le closing.",
+    "signal_pilote": "Les donnees clients unifiees (historique de police, interactions, statut de paiement). Si la base clients n'est pas a jour, la priorisation des relances et la pertinence des recommandations se degradent.",
+    "etapes": [
+      {
+        "etape": "Prise en charge du service entrant",
+        "detail": "Le representant IA repond aux demandes courantes en langage naturel, a l'ecrit ou a la voix, et resout ce qui est resoluble sans humain.",
+        "acteur": "IA"
+      },
+      {
+        "etape": "Assistance a la vente",
+        "detail": "L'agent IA prepare et priorise les opportunites, assiste l'agent commercial ou mene la relance directe selon le canal.",
+        "acteur": "IA"
+      },
+      {
+        "etape": "Reactivation des polices lapses",
+        "detail": "Le systeme repartit les taches de reprise de contact ; l'IA cible et prepare, l'humain contacte et finalise la reactivation.",
+        "acteur": "IA et reseau commercial"
+      },
+      {
+        "etape": "Escalade et closing humain",
+        "detail": "Les cas complexes ou a fort enjeu partent vers un conseiller humain.",
+        "acteur": "equipe de service et commerciaux"
+      }
+    ]
+  },
+  "schema_flow": {
+    "statut": "approche_type",
+    "noeuds": [
+      {
+        "id": "client",
+        "role_generique": "canal_conversationnel",
+        "label": "Client (chat, voix, app, appel)"
+      },
+      {
+        "id": "agent_ia",
+        "role_generique": "modele_ia",
+        "label": "Representant / agent IA (service et vente)"
+      },
+      {
+        "id": "base_clients",
+        "role_generique": "crm",
+        "label": "Base clients unifiee du groupe"
+      },
+      {
+        "id": "commercial",
+        "role_generique": "humain",
+        "label": "Agent commercial / conseiller"
+      }
+    ],
+    "liens": [
+      [
+        "client",
+        "agent_ia",
+        "demande de service ou contact"
+      ],
+      [
+        "base_clients",
+        "agent_ia",
+        "contexte client et priorisation"
+      ],
+      [
+        "agent_ia",
+        "commercial",
+        "escalade et closing"
+      ],
+      [
+        "agent_ia",
+        "base_clients",
+        "issue de l'interaction (mise a jour)"
+      ],
+      [
+        "commercial",
+        "client",
+        "vente ou reactivation finalisee"
+      ]
+    ]
+  },
+  "replication": {
+    "statut_epistemique": "infere",
+    "playbook": [
+      {
+        "action": "Cibler un flux de service entrant a fort volume et faible enjeu, et cadrer la conformite : regles d'escalade, information de la personne, supervision humaine (RGPD art. 22, AI Act pour l'assurance).",
+        "livrable": "Perimetre valide + regles d'escalade documentees"
+      },
+      {
+        "action": "Deployer un agent conversationnel sur ce flux avec escalade humaine systematique sur les cas complexes.",
+        "livrable": "Agent en production sur un canal"
+      },
+      {
+        "action": "Etendre a la voix et suivre la part du volume traitee par l'IA, la resolution au premier contact et la satisfaction.",
+        "livrable": "Part automatisee suivie mensuellement"
+      },
+      {
+        "action": "Ajouter l'aide a la vente : l'IA priorise et prepare les relances (polices lapses, opportunites), l'humain contacte et finalise.",
+        "livrable": "Dispositif de reactivation IA + humain avec taux mesure"
+      },
+      {
+        "action": "Industrialiser une plateforme interne d'agents pour que les equipes construisent leurs propres cas d'usage sous gouvernance.",
+        "livrable": "Catalogue d'agents et gouvernance des modeles"
+      }
+    ],
+    "equipe": "Au depart : 1 PM + 2-3 ingenieurs conversationnels + la conformite ; a l'echelle, des equipes IA dediees et un reseau commercial forme au tandem IA + humain",
+    "prerequis_data": [
+      "Base clients unifiee (police, interactions, paiements)",
+      "Historique des issues de vente et de reactivation",
+      "Journalisation des conversations de service"
+    ],
+    "prerequis_orga": [
+      "Reseau commercial pret a travailler en tandem avec l'IA",
+      "Fonction conformite pour la vente assistee et le profilage",
+      "Gouvernance des modeles conversationnels"
+    ],
+    "stack_possible": [
+      "Plateforme d'agents custom (voie Ping An)",
+      "LLM + moteur de regles + couche voix",
+      "solutions d'agents conversationnels du marche pour un perimetre plus etroit"
+    ],
+    "premiere_etape": "Cibler un flux de service entrant a fort volume et faible enjeu, y brancher un agent conversationnel avant d'ajouter l'aide a la vente."
+  },
+  "seo": {
+    "slug": "ping-an-agents-ia-service-vente-2025",
+    "title": "Ping An : agents IA de service et de vente - 80% du service client et RMB 133 milliards de ventes assistees (2025)",
+    "meta_description": "En 2025, les representants IA de Ping An assurent 80% du service client et aident a realiser RMB 133 milliards de ventes, avec +30% de polices reactivees.",
+    "resume_citable": "En 2025, les agents IA de Ping An ont assure environ 1 702 millions d'interactions de service (80% du volume total), aide a realiser RMB 133 179 millions de ventes et permis de reactiver 30% de polices en plus via un dispositif IA plus humain.",
+    "faq": [
+      {
+        "q": "Quelle part du service client de Ping An passe par l'IA ?",
+        "a": "En 2025, les representants IA du groupe ont traite environ 1 702 millions d'interactions, soit 80% du volume total de service client selon la communication de resultats de Ping An."
+      },
+      {
+        "q": "L'IA de Ping An sert-elle aussi a vendre ?",
+        "a": "Oui. Ping An indique que ses agents IA ont aide a realiser RMB 133 179 millions de ventes en 2025 et que le dispositif de reactivation IA plus humain a permis de reactiver 30% de polices en plus."
+      }
+    ]
+  },
+  "logo_domain": "pingan.com"
+}

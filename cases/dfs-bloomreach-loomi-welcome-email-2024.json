@@ -1,0 +1,283 @@
+{
+  "id": "dfs-bloomreach-loomi-welcome-email-2024",
+  "type_fiche": "succes",
+  "marque": "DFS",
+  "groupe": "DFS Furniture plc",
+  "industrie": "retail_ecom",
+  "marches_deploiement": [
+    "Royaume-Uni",
+    "Espagne",
+    "Irlande"
+  ],
+  "transposable_ue": {
+    "flag": "oui",
+    "note": "Deja deploye en UE (Espagne, Irlande). La collecte de zero-party data via questionnaire explicite est plutot favorable au RGPD (donnee fournie et consentie)."
+  },
+  "metier": "CRM / e-commerce",
+  "marque_linkedin": "https://www.linkedin.com/company/dfs/",
+  "intervenants": [
+    {
+      "nom": "Mike Aspinall",
+      "role": "Data Activation Manager, DFS",
+      "source_ref": "S1"
+    }
+  ],
+  "agences": [
+    {
+      "nom": "CACI",
+      "role": "Partenaire d'activation data et d'engagement (strategie et algorithme ML)",
+      "source_ref": "S2"
+    }
+  ],
+  "axes": {
+    "levier": "activation_conversion",
+    "touchpoints": [
+      "email",
+      "showroom physique"
+    ],
+    "etape_parcours": "considération",
+    "famille": "personnalisation",
+    "pattern": "serie de bienvenue personnalisee sur zero-party data avec reco produit IA",
+    "type_ia": [
+      "reco produit IA (Loomi)",
+      "personnalisation de contenu email",
+      "algorithme ML sur historique transactionnel (CACI)"
+    ],
+    "plateforme_stack": [
+      "Bloomreach Engagement",
+      "Bloomreach Loomi"
+    ],
+    "objectif_metrique": [
+      "taux de conversion",
+      "revenu"
+    ]
+  },
+  "implementation": "hybride",
+  "objectif_business": "Combler le vide entre des achats de meuble rares et couteux en engageant tot les nouveaux contacts avec un contenu adapte a ce qu'ils cherchent vraiment.",
+  "points_cles": ["Serie de bienvenue personnalisee sur zero-party data avec reco produit IA.", "Bloomreach Engagement et Loomi, plus un algorithme ML de l'agence CACI.", "+4,2% de conversion et +3,9% de revenu vs controle, +866% de revenu sur la campagne CACI.", "Preuve B, statut confirme."],
+  "description": "DFS, premier vendeur de canapes du Royaume-Uni, engage ses nouveaux contacts avec une serie de bienvenue automatisee sur Bloomreach Engagement. La marque demande d'abord au client ce qui l'interesse (zero-party data via la question what's your thing), puis le scenario envoie automatiquement le guide adapte, par exemple un guide d'achat de meubles de chambre si le client s'y interesse, et l'invite a passer en showroom au bon moment du parcours. Loomi fournit la couche de recommandation produit personnalisee.",
+  "resultats": [
+    {
+      "metrique": "Taux de conversion de la serie de bienvenue (vs groupe controle sans personnalisation)",
+      "valeur": "+4,2%",
+      "citation_exacte": "an increase in conversion rate of 4.2%",
+      "source_ref": "S1"
+    },
+    {
+      "metrique": "Revenu de la serie de bienvenue (vs groupe controle)",
+      "valeur": "+3,9%",
+      "citation_exacte": "a revenue increase of 3.9%",
+      "source_ref": "S1"
+    },
+    {
+      "metrique": "Revenu d'une campagne email pilotee par l'algorithme ML de CACI (sous 14 jours)",
+      "valeur": "+866%",
+      "citation_exacte": "866% uplift in revenue from the email campaign alone, within 14 days",
+      "source_ref": "S2"
+    }
+  ],
+  "niveau_preuve": {
+    "niveau": "B",
+    "justification": "Customer story Bloomreach chiffree (serie de bienvenue) et etude de cas de l'agence CACI chiffree (campagne ML email). Deux sources interessees mais concordantes sur le programme AI email de DFS ; pas de presse tierce, d'ou B."
+  },
+  "dates": {
+    "lancement": "2022 (serie de bienvenue) ; couche Loomi ajoutee en 2024",
+    "derniere_confirmation_activite": "2026 (customer story en ligne, mention de Loomi)",
+    "verifie_le": "2026-07-11",
+    "revoir_apres": "2027-01-11"
+  },
+  "statut_vivant": {
+    "statut": "confirme",
+    "note": "Bloomreach maintient le cas DFS en ligne avec la mention de Loomi (produit IA courant). CACI est partenaire Bloomreach officiel."
+  },
+  "sources": [
+    {
+      "ref": "S1",
+      "type": "customer_story_plateforme",
+      "fiabilite": "T2_officiel_interesse",
+      "titre": "DFS Uses Bloomreach Engagement to Increase Revenue",
+      "url": "https://www.bloomreach.com/en/case-studies/dfs-case-study",
+      "date_publication": "2024",
+      "consulte_le": "2026-07-11"
+    },
+    {
+      "ref": "S2",
+      "type": "customer_story_plateforme",
+      "fiabilite": "T4_secondaire",
+      "titre": "DFS Customer Success Story (CACI)",
+      "url": "https://www.caci.co.uk/wp-content/uploads/2022/12/DFS-Case-Study.pdf",
+      "date_publication": "2022",
+      "consulte_le": "2026-07-11"
+    }
+  ],
+  "fonctionnement_operationnel": {
+    "cadence": "Evenementiel : la serie de bienvenue se declenche a l'inscription et se ramifie selon la reponse du client.",
+    "opere_par": "Equipe CRM / data de DFS, avec l'agence CACI sur la strategie d'engagement.",
+    "signal_pilote": "La zero-party data (ce que le client declare chercher). Sans cette reponse, le scenario ne sait pas quel guide ni quelle categorie pousser et retombe sur un message generique.",
+    "etapes": [
+      {
+        "etape": "Collecte de la preference",
+        "detail": "Le client repond a la question what's your thing, qui capte sa categorie de meuble d'interet.",
+        "acteur": "Client"
+      },
+      {
+        "etape": "Branchement du scenario",
+        "detail": "Bloomreach Engagement route vers le guide correspondant (par exemple chambre) selon la reponse.",
+        "acteur": "IA / plateforme Bloomreach"
+      },
+      {
+        "etape": "Recommandation produit",
+        "detail": "Loomi personnalise les produits recommandes dans l'email.",
+        "acteur": "IA (Loomi)"
+      },
+      {
+        "etape": "Passerelle vers le showroom",
+        "detail": "La serie invite a venir en magasin au bon moment du parcours pour l'essai en personne.",
+        "acteur": "Equipe CRM / plateforme"
+      }
+    ]
+  },
+  "schema_flow": {
+    "statut": "documente",
+    "noeuds": [
+      {
+        "id": "n1",
+        "role_generique": "data_source",
+        "label": "Zero-party data (questionnaire what's your thing)"
+      },
+      {
+        "id": "n2",
+        "role_generique": "crm",
+        "label": "Scenarios de serie de bienvenue",
+        "outil_documente": "Bloomreach Engagement"
+      },
+      {
+        "id": "n3",
+        "role_generique": "modele_ia",
+        "label": "Recommandation produit personnalisee",
+        "outil_documente": "Bloomreach Loomi"
+      },
+      {
+        "id": "n4",
+        "role_generique": "canal_conversationnel",
+        "label": "Email"
+      },
+      {
+        "id": "n5",
+        "role_generique": "site_app",
+        "label": "Showroom physique"
+      },
+      {
+        "id": "n6",
+        "role_generique": "humain",
+        "label": "Equipe CRM DFS + agence CACI"
+      }
+    ],
+    "liens": [
+      [
+        "n1",
+        "n2"
+      ],
+      [
+        "n2",
+        "n3"
+      ],
+      [
+        "n3",
+        "n4"
+      ],
+      [
+        "n4",
+        "n5",
+        "invitation showroom au bon moment"
+      ],
+      [
+        "n6",
+        "n2"
+      ]
+    ]
+  },
+  "stack_technique": [
+    {
+      "nom": "Bloomreach Engagement",
+      "categorie": "plateforme",
+      "detail": "plateforme d'engagement CRM qui collecte la zero-party data et orchestre les scenarios ramifies de la serie de bienvenue",
+      "url": "https://www.bloomreach.com"
+    },
+    {
+      "nom": "Bloomreach Loomi",
+      "categorie": "outil",
+      "detail": "couche IA de Bloomreach qui personnalise la recommandation produit dans les emails",
+      "url": "https://www.bloomreach.com"
+    },
+    {
+      "nom": "Algorithme ML CACI",
+      "categorie": "outil",
+      "detail": "modele construit par l'agence sur l'historique transactionnel, a l'origine de la campagne email a +866% de revenu",
+      "url": "https://www.caci.co.uk"
+    },
+    {
+      "nom": "CACI",
+      "categorie": "integrateur",
+      "detail": "partenaire d'activation data et de strategie d'engagement de DFS",
+      "url": "https://www.caci.co.uk"
+    }
+  ],
+  "replication": {
+    "statut_epistemique": "infere",
+    "prerequis_data": [
+      "mecanisme de collecte de zero-party data (questionnaire de preference)",
+      "catalogue structure par categorie",
+      "identifiants email opt-in"
+    ],
+    "prerequis_orga": [
+      "equipe CRM capable de construire des scenarios ramifies",
+      "articulation entre email et reseau physique pour les achats consideres"
+    ],
+    "stack_possible": [
+      "Bloomreach Engagement + Loomi",
+      "toute plateforme CRM avec scenarios conditionnels et reco produit IA"
+    ],
+    "premiere_etape": "Ajouter une question de preference a l'inscription, puis brancher un scenario de bienvenue qui route le contenu selon la reponse.",
+    "playbook": [
+      {
+        "action": "Ajouter la question de preference a l'inscription (quelle categorie de produit interesse le contact).",
+        "livrable": "Collecte de zero-party data active sur les nouveaux inscrits"
+      },
+      {
+        "action": "Construire le scenario de bienvenue ramifie qui route le contenu (guides, categories) selon la reponse.",
+        "livrable": "Scenario conditionnel valide en recette"
+      },
+      {
+        "action": "Brancher la recommandation produit IA dans les emails de la serie.",
+        "livrable": "Emails personnalises en production"
+      },
+      {
+        "action": "Poser un groupe controle sans personnalisation pour mesurer l'ecart reel.",
+        "livrable": "Test A/B actif avec repartition documentee"
+      },
+      {
+        "action": "Lire conversion et revenu face au controle, puis generaliser la serie et ajouter l'invitation showroom au bon moment.",
+        "livrable": "Bilan chiffre et serie de bienvenue generalisee"
+      }
+    ],
+    "equipe": "1 CRM manager + 1 integrateur email / designer, agence data en option pour la couche ML"
+  },
+  "seo": {
+    "slug": "dfs-bloomreach-loomi-welcome-email-2024",
+    "title": "DFS : serie de bienvenue personnalisee Bloomreach - +4,2% de conversion (2024)",
+    "meta_description": "DFS personnalise sa serie de bienvenue sur Bloomreach Engagement et Loomi a partir de zero-party data : +4,2% de conversion et +3,9% de revenu vs controle.",
+    "resume_citable": "DFS a gagne +4,2% de conversion et +3,9% de revenu sur sa serie de bienvenue en personnalisant le contenu email a partir de zero-party data avec Bloomreach Engagement et Loomi, un programme mene avec l'agence CACI.",
+    "faq": [
+      {
+        "q": "Comment DFS personnalise-t-il ses emails de bienvenue ?",
+        "a": "En demandant au nouveau contact ce qu'il cherche (zero-party data), puis en routant automatiquement le guide et les recommandations produit Loomi correspondants dans Bloomreach Engagement."
+      },
+      {
+        "q": "Quels resultats ?",
+        "a": "Contre un groupe controle sans personnalisation, +4,2% de taux de conversion et +3,9% de revenu sur la serie de bienvenue."
+      }
+    ]
+  },
+  "logo_domain": "dfs.co.uk"
+}

@@ -1,0 +1,264 @@
+{
+  "id": "duolingo-max-genai-2023",
+  "type_fiche": "succes",
+  "marque": "Duolingo",
+  "industrie": "media_entertainment",
+  "marches_deploiement": [
+    "Etats-Unis",
+    "Marches internationaux Duolingo",
+    "Europe"
+  ],
+  "transposable_ue": {
+    "flag": "oui_avec_adaptations",
+    "note": "Feature genAI conversationnelle grand public. RGPD applicable aux echanges avec l'apprenant ; l'AI Act impose la transparence sur l'interaction avec une IA. Deploiement par vagues selon langues et marches."
+  },
+  "metier": "Product / abonnement / monetisation",
+  "marque_linkedin": "https://www.linkedin.com/company/duolingo/",
+  "axes": {
+    "levier": "monetisation",
+    "touchpoints": [
+      "application Duolingo",
+      "abonnement Max",
+      "Video Call",
+      "Explain My Answer",
+      "Roleplay"
+    ],
+    "etape_parcours": "fidelite",
+    "famille": "generation",
+    "pattern": "tuteur conversationnel genAI dans un abonnement premium",
+    "type_ia": [
+      "genAI conversationnelle",
+      "LLM (GPT-4)",
+      "generation de texte et de dialogue"
+    ],
+    "plateforme_stack": [
+      "OpenAI GPT-4",
+      "integration in-house"
+    ],
+    "objectif_metrique": [
+      "abonnements payants",
+      "bookings",
+      "revenu",
+      "engagement"
+    ]
+  },
+  "implementation": "hybride",
+  "stack_technique": [
+    {
+      "nom": "OpenAI GPT-4",
+      "categorie": "llm",
+      "detail": "Modele derriere Explain My Answer, Roleplay et Video Call; genere explications et tours de dialogue en temps reel.",
+      "url": "https://openai.com"
+    },
+    {
+      "nom": "Couche d'integration in-house",
+      "categorie": "outil",
+      "detail": "Prompting avec contexte de lecon et reponse de l'apprenant, garde-fous et restitution dans l'interface.",
+      "url": "https://www.duolingo.com"
+    },
+    {
+      "nom": "Application Duolingo (palier Max)",
+      "categorie": "infra",
+      "detail": "Packaging des fonctions genAI dans un palier d'abonnement au-dessus de Super.",
+      "url": "https://www.duolingo.com"
+    },
+    {
+      "nom": "Rendu voix et personnage anime (Video Call)",
+      "categorie": "outil",
+      "detail": "Synchronise la conversation orale generee en temps reel avec le personnage anime Lily.",
+      "url": "https://www.duolingo.com"
+    }
+  ],
+  "objectif_business": "Creer un palier d'abonnement superieur (Max) au-dessus de Super, en vendant des fonctions genAI que la version gratuite ne peut pas offrir, pour augmenter le revenu par utilisateur et les bookings.",
+  "points_cles": ["Palier premium Max ajoutant des fonctions genAI (Explain My Answer, Roleplay, Video Call).", "Base sur OpenAI GPT-4 avec une couche d'integration in-house.", "Environ 5% des abonnes fin 2024, bookings en hausse de 42% en glissement annuel.", "Preuve A, statut confirme."],
+  "description": "Duolingo Max ajoute des fonctions genAI au-dessus de l'abonnement : Explain My Answer (l'IA explique pourquoi une reponse est fausse), Roleplay (conversation ecrite avec un personnage IA), et Video Call, un appel video avec un personnage anime (Lily) qui tient une conversation orale generee en temps reel. Ces fonctions reposent sur GPT-4. Max est propose comme palier premium a une partie des utilisateurs.",
+  "resultats": [
+    {
+      "metrique": "Part de Max dans le total des abonnes (Q4 2024)",
+      "valeur": "~5%",
+      "citation_exacte": "represents about 5% of total subscribers",
+      "source_ref": "S1"
+    },
+    {
+      "metrique": "Croissance des bookings (Q4 2024, YoY)",
+      "valeur": "+42%",
+      "citation_exacte": "total bookings by 42% year over year",
+      "source_ref": "S1"
+    },
+    {
+      "metrique": "Guidance bookings 2025",
+      "valeur": "> 1 Md$",
+      "citation_exacte": "surpass $1 billion in bookings this year",
+      "source_ref": "S1"
+    }
+  ],
+  "niveau_preuve": {
+    "niveau": "A",
+    "justification": "Chiffres issus de l'earnings call Q4 2024 de Duolingo (transcript), ou la direction attribue explicitement une part de la surperformance des bookings aux abonnements Duolingo Max. Resultats financiers d'une societe cotee."
+  },
+  "dates": {
+    "lancement": "2023-03 (Duolingo Max, avec GPT-4) ; Video Call deploye ensuite",
+    "derniere_confirmation_activite": "2025-02-27 (earnings call Q4 2024 : Max ~5% des abonnes, en croissance)",
+    "verifie_le": "2026-07-11",
+    "revoir_apres": "2027-01-11"
+  },
+  "statut_vivant": {
+    "statut": "confirme",
+    "note": "Max cite en resultats Q4 2024 comme moteur de la surperformance et disponible pour la majorite des DAU ; feature active et en expansion."
+  },
+  "sources": [
+    {
+      "ref": "S1",
+      "type": "earnings_call",
+      "fiabilite": "T1_primaire",
+      "titre": "Duolingo (DUOL) Q4 2024 Earnings Call Transcript (The Motley Fool)",
+      "url": "https://www.fool.com/earnings/call-transcripts/2025/02/27/duolingo-duol-q4-2024-earnings-call-transcript/",
+      "date_publication": "2025-02-27",
+      "consulte_le": "2026-07-11"
+    },
+    {
+      "ref": "S2",
+      "type": "presse",
+      "fiabilite": "T4_secondaire",
+      "titre": "Earnings call transcript: Duolingo Q4 2024 revenue beats forecast (Investing.com)",
+      "url": "https://www.investing.com/news/transcripts/earnings-call-transcript-duolingo-q4-2024-revenue-beats-forecast-stock-drops-93CH-3898383",
+      "date_publication": "2025-02-27",
+      "consulte_le": "2026-07-11"
+    }
+  ],
+  "fonctionnement_operationnel": {
+    "cadence": "Temps reel a chaque interaction de l'apprenant ; les couts d'inference sont suivis comme un poste marge.",
+    "opere_par": "Equipe Product / IA de Duolingo, avec l'API OpenAI en back-end.",
+    "signal_pilote": "La qualite percue de la conversation et de l'explication generees, qui justifie le prix du palier Max. Si la reponse LLM est generique ou fausse, la valeur de l'upgrade s'effondre.",
+    "etapes": [
+      {
+        "etape": "Declenchement",
+        "detail": "L'apprenant lance Explain My Answer, Roleplay ou Video Call depuis l'application.",
+        "acteur": "humain"
+      },
+      {
+        "etape": "Generation",
+        "detail": "Le prompt (contexte de lecon, reponse de l'apprenant) est envoye au LLM qui produit l'explication ou le tour de dialogue.",
+        "acteur": "IA"
+      },
+      {
+        "etape": "Restitution",
+        "detail": "Le texte ou la voix est rendu dans l'interface ; pour Video Call, synchronise avec le personnage anime.",
+        "acteur": "site_app"
+      },
+      {
+        "etape": "Pilotage economique",
+        "detail": "L'equipe suit le cout d'inference par usage et le compare au revenu Max pour tenir la marge.",
+        "acteur": "equipe data / finance"
+      }
+    ]
+  },
+  "schema_flow": {
+    "statut": "documente",
+    "noeuds": [
+      {
+        "id": "n1",
+        "role_generique": "humain",
+        "label": "Apprenant (abonne Max)"
+      },
+      {
+        "id": "n2",
+        "role_generique": "site_app",
+        "label": "Application Duolingo (Explain My Answer / Roleplay / Video Call)"
+      },
+      {
+        "id": "n3",
+        "role_generique": "modele_ia",
+        "label": "LLM genAI",
+        "outil_documente": "OpenAI GPT-4"
+      },
+      {
+        "id": "n4",
+        "role_generique": "data_source",
+        "label": "Contexte de lecon + reponses de l'apprenant"
+      }
+    ],
+    "liens": [
+      [
+        "n1",
+        "n2"
+      ],
+      [
+        "n2",
+        "n4"
+      ],
+      [
+        "n4",
+        "n3"
+      ],
+      [
+        "n3",
+        "n2",
+        "explication ou dialogue genere renvoye a l'apprenant"
+      ],
+      [
+        "n2",
+        "n1"
+      ]
+    ]
+  },
+  "replication": {
+    "statut_epistemique": "infere",
+    "prerequis_data": [
+      "contenu pedagogique structure",
+      "contexte d'usage (reponse en cours, niveau)",
+      "garde-fous sur les reponses du LLM"
+    ],
+    "prerequis_orga": [
+      "equipe produit capable de packager un palier premium",
+      "suivi des couts d'inference",
+      "process d'evaluation qualite des sorties genAI"
+    ],
+    "stack_possible": [
+      "OpenAI / Anthropic ou LLM equivalent",
+      "couche de prompt et de garde-fous in-house",
+      "integration app existante"
+    ],
+    "premiere_etape": "Isoler une fonction a forte valeur percue (l'explication contextualisee) et verifier que le LLM la rend fiable avant d'en faire un argument d'abonnement payant.",
+    "playbook": [
+      {
+        "action": "Isoler une fonction a forte valeur percue (l'explication contextualisee) et la prototyper sur le LLM.",
+        "livrable": "Prototype fonctionnel sur des cas reels d'apprenants"
+      },
+      {
+        "action": "Evaluer la fiabilite des sorties et poser les garde-fous.",
+        "livrable": "Grille d'evaluation qualite et taux d'erreur acceptable atteint"
+      },
+      {
+        "action": "Packager le palier premium: pricing, paywall, parcours d'upgrade.",
+        "livrable": "Offre premium prete avec suivi du cout d'inference par usage"
+      },
+      {
+        "action": "Lancer un pilote sur un sous-ensemble d'utilisateurs et mesurer conversion et retention.",
+        "livrable": "Lecture conversion et churn du palier sur le pilote"
+      },
+      {
+        "action": "Lancer plus largement et piloter la marge: revenu Max contre cout d'inference.",
+        "livrable": "Palier en production avec tableau de bord de marge"
+      }
+    ],
+    "equipe": "2-3 devs produit + 1 PM + 1 profil evaluation qualite genAI + finance pour le suivi des couts d'inference."
+  },
+  "seo": {
+    "slug": "duolingo-max-genai-2023",
+    "title": "Duolingo Max : tuteur genAI GPT-4 - ~5% des abonnes et moteur des bookings (2023)",
+    "meta_description": "Duolingo Max vend des fonctions genAI (Video Call, Roleplay, GPT-4) comme palier premium ; ~5% des abonnes en Q4 2024 et moteur de la surperformance des bookings.",
+    "resume_citable": "Duolingo Max, palier premium genAI base sur GPT-4 (Video Call, Roleplay), pesait environ 5% des abonnes fin 2024 et a tire la surperformance des bookings (+42% en Q4 2024), selon l'earnings call.",
+    "faq": [
+      {
+        "q": "Qu'est-ce que Duolingo Max ?",
+        "a": "Un palier d'abonnement premium ajoutant des fonctions genAI basees sur GPT-4 : Explain My Answer, Roleplay et Video Call (appel video avec un personnage IA)."
+      },
+      {
+        "q": "Quel poids economique pour Max ?",
+        "a": "Environ 5% des abonnes en Q4 2024, cite par la direction comme un moteur cle de la surperformance des bookings sur le trimestre."
+      }
+    ]
+  },
+  "logo_domain": "duolingo.com"
+}

@@ -1,0 +1,287 @@
+{
+  "id": "albertsons-afresh-fresh-forecasting-2025",
+  "type_fiche": "succes",
+  "marque": "Albertsons",
+  "groupe": "Albertsons Companies",
+  "industrie": "retail_ecom",
+  "marches_deploiement": [
+    "Etats-Unis"
+  ],
+  "transposable_ue": {
+    "flag": "oui",
+    "note": "La prevision porte sur la demande de produits frais par rayon et par magasin, pas sur des donnees personnelles. Aucun obstacle RGPD sur le principe; l'enjeu est la qualite de la donnee de vente et de stock frais."
+  },
+  "metier": "supply chain / reapprovisionnement des rayons frais",
+  "marque_linkedin": "https://www.linkedin.com/company/albertsons-companies/",
+  "agences": [
+    {
+      "nom": "Afresh",
+      "role": "Editeur de la solution IA de prevision et de reapprovisionnement frais",
+      "source_ref": "S1"
+    }
+  ],
+  "axes": {
+    "levier": "retention",
+    "touchpoints": [
+      "rayons frais en magasin (produce, meat, seafood, deli, bakery)",
+      "reapprovisionnement et commandes",
+      "centres de distribution frais"
+    ],
+    "etape_parcours": "achat",
+    "famille": "prediction",
+    "pattern": "prevision de demande IA pour le frais et reapprovisionnement automatise en rayon",
+    "type_ia": [
+      "machine learning",
+      "prevision de demande frais",
+      "optimisation de reapprovisionnement"
+    ],
+    "plateforme_stack": [
+      "Afresh (Fresh Replenishment, DC Forecast)"
+    ],
+    "objectif_metrique": [
+      "reduction de la demarque (shrink)",
+      "disponibilite en rayon frais",
+      "rotation des stocks"
+    ]
+  },
+  "implementation": "plateforme",
+  "objectif_business": "Predire la demande de chaque produit frais rayon par rayon pour commander la bonne quantite, tenir la disponibilite et reduire la casse sur des produits a duree de vie courte.",
+  "description": "Albertsons Companies exploite 2 257 magasins aux Etats-Unis sous les enseignes Safeway, Albertsons, Jewel-Osco, Shaw's, Vons et ACME. Depuis 2022, l'enseigne deploie la solution IA d'Afresh dans ses rayons frais. Le systeme prend en compte promotions, mises en avant, saisonnalite et jours feries pour predire la demande et recommander aux equipes magasin la quantite a commander, sur des produits ou la casse est structurelle. En octobre 2025, Afresh a annonce l'achevement du deploiement sur l'ensemble des rayons frais du reseau (boulangerie, charcuterie, viande, poisson, fruits et legumes), complete par une brique DC Forecast qui donne aux acheteurs des previsions quotidiennes au niveau des centres de distribution.",
+  "resultats": [
+    {
+      "metrique": "Magasins Albertsons couverts, tous rayons frais",
+      "valeur": "2 257 magasins",
+      "citation_exacte": "Afresh technology now powers bakery, deli, meat, seafood, and produce departments",
+      "source_ref": "S1"
+    },
+    {
+      "metrique": "Reduction de la demarque (resultat type plateforme Afresh, agrege clients)",
+      "valeur": "25%",
+      "citation_exacte": "25% shrink reduction",
+      "source_ref": "S2"
+    },
+    {
+      "metrique": "Hausse des ventes (resultat type plateforme Afresh, agrege clients)",
+      "valeur": "3%",
+      "citation_exacte": "3% sales uplift",
+      "source_ref": "S2"
+    },
+    {
+      "metrique": "Rotation des stocks (resultat type plateforme Afresh, agrege clients)",
+      "valeur": "+7%",
+      "citation_exacte": "7% higher inventory turns",
+      "source_ref": "S2"
+    },
+    {
+      "metrique": "Gaspillage alimentaire evite (cumul plateforme Afresh)",
+      "valeur": "100M+ livres",
+      "citation_exacte": "prevented over 100 million pounds of food waste",
+      "source_ref": "S2"
+    }
+  ],
+  "niveau_preuve": {
+    "niveau": "C",
+    "justification": "Deploiement documente par un communiqué Afresh nommant Albertsons (quotes de la Chief Merchandising Officer d'Albertsons) et par la presse trade etablie (Grocery Dive). Les pourcentages de demarque, ventes et rotation sont des resultats types agreges de la plateforme Afresh, non isoles pour Albertsons, d'ou pas de niveau B sur l'impact."
+  },
+  "dates": {
+    "lancement": "partenariat Albertsons-Afresh depuis 2022",
+    "derniere_confirmation_activite": "23 octobre 2025 (annonce de l'achevement du deploiement sur tous les rayons frais)",
+    "verifie_le": "2026-07-11",
+    "revoir_apres": "2027-01-11"
+  },
+  "statut_vivant": {
+    "statut": "confirme",
+    "note": "Deploiement annonce comme acheve sur l'ensemble des rayons frais d'Albertsons en octobre 2025; Afresh est un fournisseur actif present dans plus de 12 500 rayons de magasins."
+  },
+  "sources": [
+    {
+      "ref": "S1",
+      "type": "customer_story_plateforme",
+      "fiabilite": "T2_officiel_interesse",
+      "titre": "Afresh Completes AI-Powered Fresh Replenishment Roll Out Across All Albertsons Companies Fresh Departments",
+      "url": "https://www.prnewswire.com/news-releases/afresh-completes-ai-powered-fresh-replenishment-and-inventory-management-solution-roll-out-across-all-albertsons-companies-fresh-departments-302592554.html",
+      "date_publication": "2025-10-23",
+      "consulte_le": "2026-07-11"
+    },
+    {
+      "ref": "S2",
+      "type": "presse",
+      "fiabilite": "T3_presse_etablie",
+      "titre": "Afresh expands AI-powered tools for fresh",
+      "url": "https://www.grocerydive.com/news/afresh-ai-solution-fresh-inventory-management-grocery/760795/",
+      "date_publication": "2025",
+      "consulte_le": "2026-07-11"
+    },
+    {
+      "ref": "S3",
+      "type": "customer_story_plateforme",
+      "fiabilite": "T2_officiel_interesse",
+      "titre": "Afresh Completes AI-Powered Fresh Replenishment Roll Out Across All Albertsons Companies Fresh Departments (Afresh)",
+      "url": "https://www.afresh.com/resources/afresh-completes-ai-powered-fresh-replenishment-and-inventory-management-solution-roll-out-across-all-albertsons-companies-fresh-departments",
+      "date_publication": "2025-10-23",
+      "consulte_le": "2026-07-11"
+    }
+  ],
+  "fonctionnement_operationnel": {
+    "cadence": "Recommandations de commande par rayon a la frequence de reappro du magasin; previsions quotidiennes au niveau des centres de distribution (DC Forecast).",
+    "opere_par": "Equipes magasin (managers de rayon frais) pour les commandes, acheteurs pour les centres de distribution, sur la plateforme Afresh.",
+    "signal_pilote": "La demande frais predite par produit et par rayon. Si les inventaires frais sont mal saisis ou la donnee de vente bruitee, la recommandation devient fausse et la casse ou la rupture remonte.",
+    "etapes": [
+      {
+        "etape": "Ingestion des donnees frais",
+        "detail": "Ventes, inventaire, promotions, mises en avant, saisonnalite et jours feries alimentent le modele par rayon.",
+        "acteur": "plateforme Afresh"
+      },
+      {
+        "etape": "Prevision de demande",
+        "detail": "Le modele predit la demande de chaque produit frais sur l'horizon de reappro.",
+        "acteur": "modele IA (Afresh)"
+      },
+      {
+        "etape": "Recommandation de commande",
+        "detail": "Le systeme propose la quantite a commander au manager de rayon, qui valide ou ajuste.",
+        "acteur": "manager de rayon frais"
+      },
+      {
+        "etape": "Prevision au centre de distribution",
+        "detail": "DC Forecast fournit aux acheteurs des previsions quotidiennes pour caler les commandes amont vers les magasins.",
+        "acteur": "acheteur / plateforme Afresh"
+      }
+    ]
+  },
+  "schema_flow": {
+    "statut": "documente",
+    "noeuds": [
+      {
+        "id": "n1",
+        "role_generique": "data_source",
+        "label": "Ventes, inventaire frais, promotions, saisonnalite"
+      },
+      {
+        "id": "n2",
+        "role_generique": "modele_ia",
+        "label": "Prevision de demande frais",
+        "outil_documente": "Afresh Fresh Replenishment / DC Forecast"
+      },
+      {
+        "id": "n3",
+        "role_generique": "site_app",
+        "label": "Recommandations de commande par rayon"
+      },
+      {
+        "id": "n4",
+        "role_generique": "humain",
+        "label": "Manager de rayon frais / acheteur"
+      },
+      {
+        "id": "n5",
+        "role_generique": "data_source",
+        "label": "Rayon frais et centre de distribution"
+      }
+    ],
+    "liens": [
+      [
+        "n1",
+        "n2"
+      ],
+      [
+        "n2",
+        "n3"
+      ],
+      [
+        "n3",
+        "n4"
+      ],
+      [
+        "n4",
+        "n5",
+        "commande validee"
+      ],
+      [
+        "n5",
+        "n1",
+        "ventes et casse reinjectees"
+      ]
+    ]
+  },
+  "replication": {
+    "statut_epistemique": "infere",
+    "prerequis_data": [
+      "donnee de vente et d'inventaire frais fiable par rayon et par magasin",
+      "calendrier promotions et mises en avant",
+      "attributs de duree de vie des produits frais"
+    ],
+    "prerequis_orga": [
+      "managers de rayon prets a suivre des recommandations de commande",
+      "processus d'inventaire frais discipline"
+    ],
+    "stack_possible": [
+      "Afresh",
+      "RELEX, Blue Yonder, Invafresh (forecasting frais specialise)",
+      "forecasting maison"
+    ],
+    "premiere_etape": "Fiabiliser l'inventaire frais d'une categorie a forte casse (par exemple les fruits et legumes), puis brancher un moteur de prevision qui recommande la quantite a commander au manager de rayon.",
+    "playbook": [
+      {
+        "action": "Fiabiliser l'inventaire frais d'une categorie a forte casse (fruits et legumes par exemple) et brancher la donnee de vente.",
+        "livrable": "Donnee de vente et de stock propre sur la categorie pilote"
+      },
+      {
+        "action": "Parametrer la plateforme : catalogue frais, promotions, mises en avant, durees de vie produit.",
+        "livrable": "Previsions calculees en shadow mode, comparees aux commandes reelles"
+      },
+      {
+        "action": "Lancer le pilote en magasin : recommandations de commande validees ou ajustees par le manager de rayon.",
+        "livrable": "Mesure demarque et disponibilite face aux magasins temoins"
+      },
+      {
+        "action": "Etendre aux autres rayons frais et magasins, former les equipes, ajouter la prevision au niveau des centres de distribution.",
+        "livrable": "Plan de deploiement + tableau de bord demarque et rotation par rayon"
+      }
+    ],
+    "equipe": "1 chef de projet supply + 1 data engineer pour les flux ventes et inventaire + les managers de rayon formes ; le vendor porte le modele"
+  },
+  "stack_technique": [
+    {
+      "nom": "Afresh Fresh Replenishment",
+      "categorie": "plateforme",
+      "detail": "Solution SaaS de prevision de demande et de reapprovisionnement dediee aux rayons frais.",
+      "url": "https://www.afresh.com"
+    },
+    {
+      "nom": "Afresh DC Forecast",
+      "categorie": "outil",
+      "detail": "Brique qui donne aux acheteurs des previsions quotidiennes au niveau des centres de distribution.",
+      "url": "https://www.afresh.com"
+    },
+    {
+      "nom": "Modeles ML de prevision frais",
+      "categorie": "llm",
+      "detail": "Machine learning proprietaire d'Afresh integrant promotions, mises en avant, saisonnalite et jours feries ; l'algorithme exact n'est pas publie.",
+      "url": "https://www.afresh.com"
+    },
+    {
+      "nom": "Flux ventes et inventaire Albertsons",
+      "categorie": "infra",
+      "detail": "Connexion aux donnees de vente et d'inventaire frais des 2 257 magasins, condition de fiabilite des recommandations.",
+      "url": "https://www.albertsons.com"
+    }
+  ],
+  "seo": {
+    "slug": "albertsons-afresh-fresh-forecasting-2025",
+    "title": "Albertsons : prevision de demande frais par IA (Afresh) - deploiement sur 2 257 magasins (2025)",
+    "meta_description": "Albertsons a acheve en 2025 le deploiement de la prevision de demande frais d'Afresh sur tous ses rayons frais (2 257 magasins), une plateforme qui affiche 25% de demarque en moins et 3% de ventes en plus.",
+    "resume_citable": "Albertsons a acheve en octobre 2025 le deploiement de la solution IA de prevision de demande frais d'Afresh sur les rayons frais de ses 2 257 magasins; la plateforme revendique en resultats types 25% de demarque en moins, 3% de ventes en plus, 7% de rotation en plus et plus de 100 millions de livres de gaspillage evite.",
+    "faq": [
+      {
+        "q": "Que fait Albertsons avec l'IA d'Afresh ?",
+        "a": "Elle predit la demande de chaque produit frais rayon par rayon et recommande aux equipes magasin la quantite a commander, sur boulangerie, charcuterie, viande, poisson et fruits et legumes, avec une brique de prevision au niveau des centres de distribution."
+      },
+      {
+        "q": "Quelle echelle et quels resultats ?",
+        "a": "Deploiement acheve sur les rayons frais des 2 257 magasins Albertsons en octobre 2025. Afresh revendique en resultats types agreges 25% de demarque en moins, 3% de ventes en plus, 7% de rotation en plus et plus de 100 millions de livres de gaspillage evite."
+      }
+    ]
+  },
+  "logo_domain": "albertsons.com"
+}

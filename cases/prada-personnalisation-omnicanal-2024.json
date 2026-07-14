@@ -1,0 +1,312 @@
+{
+  "id": "prada-personnalisation-omnicanal-2024",
+  "type_fiche": "succes",
+  "marque": "Prada Group",
+  "groupe": "Prada Group",
+  "industrie": "luxe_beaute",
+  "marches_deploiement": [
+    "International (600+ magasins, 70 pays)",
+    "Italie"
+  ],
+  "transposable_ue": {
+    "flag": "oui",
+    "note": "Groupe italien. La personnalisation et la reconnaissance client en magasin reposent sur un profil unifie opt-in (Adobe Real-Time CDP). Consentement et minimisation a cadrer pour l'usage temps reel des donnees en boutique cote RGPD."
+  },
+  "metier": "e-commerce / CRM / merchandising",
+  "intervenants": [
+    {
+      "nom": "Cristiano Agostini",
+      "role": "Chief Information Officer, Prada Group",
+      "source_ref": "S1"
+    },
+    {
+      "nom": "Mario Didonato",
+      "role": "E-Commerce Director, Prada Group",
+      "source_ref": "S1"
+    }
+  ],
+  "agences": [
+    {
+      "nom": "Accenture",
+      "role": "Integrateur de la plateforme de commerce composable et de l'experience omnicanale",
+      "source_ref": "S1"
+    }
+  ],
+  "axes": {
+    "levier": "activation_conversion",
+    "touchpoints": [
+      "e-commerce",
+      "boutique",
+      "checkout",
+      "moteur de recherche et recommandation"
+    ],
+    "etape_parcours": "achat",
+    "famille": "personnalisation",
+    "pattern": "commerce composable + personnalisation et recommandation produit",
+    "type_ia": [
+      "recommandation",
+      "recherche personnalisee",
+      "machine learning"
+    ],
+    "plateforme_stack": [
+      "Adobe Experience Cloud (Real-Time CDP, Journey Optimizer)",
+      "Databricks",
+      "Algolia",
+      "SAP",
+      "Fluent Commerce",
+      "Akeneo"
+    ],
+    "objectif_metrique": [
+      "taux de completion du checkout",
+      "achats cross-canal",
+      "revenu en ligne"
+    ]
+  },
+  "implementation": "hybride",
+  "stack_technique": [
+    {
+      "nom": "Adobe Real-Time CDP + Journey Optimizer",
+      "categorie": "plateforme",
+      "detail": "Construction des profils client unifies opt-in et orchestration des parcours ; permet la reconnaissance du client en boutique avec ses preferences.",
+      "url": "https://business.adobe.com"
+    },
+    {
+      "nom": "Databricks",
+      "categorie": "plateforme",
+      "detail": "Socle data qui unifie les donnees du groupe pour les modeles de forecasting, de personnalisation et d'optimisation marketing.",
+      "url": "https://www.databricks.com"
+    },
+    {
+      "nom": "Algolia",
+      "categorie": "outil",
+      "detail": "Moteur de recherche et de recommandation produit personnalisees sur l'e-commerce.",
+      "url": "https://www.algolia.com"
+    },
+    {
+      "nom": "Fluent Commerce",
+      "categorie": "outil",
+      "detail": "Gestion des commandes (OMS) dans l'architecture composable du groupe.",
+      "url": "https://fluentcommerce.com"
+    },
+    {
+      "nom": "Akeneo",
+      "categorie": "outil",
+      "detail": "Gestion de l'information produit (PIM) alimentant le catalogue e-commerce.",
+      "url": "https://www.akeneo.com"
+    },
+    {
+      "nom": "Accenture",
+      "categorie": "integrateur",
+      "detail": "Integrateur de la plateforme de commerce composable et de l'experience omnicanale, avec SAP dans le paysage systemes du groupe.",
+      "url": "https://www.accenture.com"
+    }
+  ],
+  "objectif_business": "Unifier les donnees client et deployer une plateforme de commerce composable pour offrir une experience personnalisee et fluide entre le web et les 600 boutiques, en levant les frictions de parcours et d'achat.",
+  "points_cles": ["Commerce composable avec personnalisation, recommandation produit et checkout refait.", "Adobe Real-Time CDP, Databricks et Algolia, integres par Accenture.", "Checkout 60% plus rapide, +15% de completions, +50% d'achats cross-canal.", "Preuve B, statut confirme, deploiement par phases sur 600 magasins."],
+  "description": "Prada Group a refondu son socle e-commerce sur une architecture composable integree par Accenture, avec des composants de recherche et de recommandation produit personnalisees. Le checkout a ete refait pour etre plus rapide et faire monter le taux de completion. En parallele, le groupe deploie Adobe Real-Time Customer Data Platform et Journey Optimizer pour construire des profils client unifies : un client opt-in peut etre reconnu quand il entre en boutique, avec ses preferences visibles par le conseiller. Cote data, Databricks unifie les donnees pour les modeles de forecasting, de personnalisation et d'optimisation marketing. Le groupe opere plus de 600 magasins dans 70 pays.",
+  "resultats": [
+    {
+      "metrique": "Vitesse du checkout",
+      "valeur": "60% plus rapide",
+      "citation_exacte": "a blazing fast check-out experience, 60% faster than the previous one",
+      "source_ref": "S1"
+    },
+    {
+      "metrique": "Acheteurs de plus finalisant le checkout",
+      "valeur": "+15%",
+      "citation_exacte": "15% more shoppers are completing their check-outs",
+      "source_ref": "S1"
+    },
+    {
+      "metrique": "Achats cross-canal",
+      "valeur": "+50%",
+      "citation_exacte": "Cross-channel purchases have increased by over 50%",
+      "source_ref": "S1"
+    },
+    {
+      "metrique": "Revenu en ligne (deploiement par phases)",
+      "valeur": "+15%",
+      "citation_exacte": "15% increase in online revenue",
+      "source_ref": "S1"
+    }
+  ],
+  "niveau_preuve": {
+    "niveau": "B",
+    "justification": "Etude de cas Accenture chiffrant plusieurs metriques de conversion et de revenu, avec dirigeants Prada nommes, confirmee par la customer story Databricks sur le socle data et le perimetre du groupe. Deux sources officielles interessees concordantes."
+  },
+  "dates": {
+    "lancement": "2023-2024 (deploiement par phases : composants, marches, marques)",
+    "derniere_confirmation_activite": "2025 (customer story Databricks sur la strategie IA du groupe)",
+    "verifie_le": "2026-07-11",
+    "revoir_apres": "2027-01-31"
+  },
+  "statut_vivant": {
+    "statut": "confirme",
+    "note": "Plateforme deployee par phases trimestrielles sur les marques et marches ; socle data Databricks confirme en 2025 pour forecasting, personnalisation et marketing."
+  },
+  "sources": [
+    {
+      "ref": "S1",
+      "type": "customer_story_plateforme",
+      "fiabilite": "T2_officiel_interesse",
+      "titre": "Prada Group keeps customer experience fashionable (Accenture case study)",
+      "url": "https://www.accenture.com/us-en/case-studies/retail/prada-group-keeps-customer-experience-fashionable",
+      "date_publication": "2024",
+      "consulte_le": "2026-07-11"
+    },
+    {
+      "ref": "S2",
+      "type": "customer_story_plateforme",
+      "fiabilite": "T2_officiel_interesse",
+      "titre": "Prada Group tailors their AI strategy with data intelligence (Databricks)",
+      "url": "https://www.databricks.com/customers/prada-group",
+      "date_publication": "2025",
+      "consulte_le": "2026-07-11"
+    }
+  ],
+  "fonctionnement_operationnel": {
+    "cadence": "Temps reel sur le web et en boutique ; deploiement par phases trimestrielles composant par composant",
+    "opere_par": "Direction e-commerce et IT du groupe, avec Accenture comme integrateur et les equipes data sur les modeles",
+    "signal_pilote": "Le profil client unifie (identite reconciliee web et magasin, consentement, historique). Sans reconciliation opt-in, la reconnaissance en boutique et la personnalisation temps reel tombent.",
+    "etapes": [
+      {
+        "etape": "Unification des donnees",
+        "detail": "Adobe Real-Time CDP fusionne les donnees shopper pour creer un profil client unique.",
+        "acteur": "equipe data / Adobe"
+      },
+      {
+        "etape": "Personnalisation du parcours",
+        "detail": "Recherche et recommandations produit sont personnalisees en ligne ; les frictions du checkout sont retirees.",
+        "acteur": "IA / equipe e-commerce"
+      },
+      {
+        "etape": "Reconnaissance en boutique",
+        "detail": "A l'arrivee d'un client opt-in, le conseiller voit ses preferences et son historique.",
+        "acteur": "conseiller de vente"
+      },
+      {
+        "etape": "Boucle data",
+        "detail": "Les achats et interactions cross-canal reviennent dans la CDP et nourrissent les modeles de forecasting et de perso.",
+        "acteur": "equipe data"
+      }
+    ]
+  },
+  "schema_flow": {
+    "statut": "documente",
+    "noeuds": [
+      {
+        "id": "client",
+        "role_generique": "humain",
+        "label": "Client (web et boutique)"
+      },
+      {
+        "id": "cdp",
+        "role_generique": "cdp",
+        "label": "Profil client unifie",
+        "outil_documente": "Adobe Real-Time CDP + Journey Optimizer"
+      },
+      {
+        "id": "site",
+        "role_generique": "site_app",
+        "label": "E-commerce composable (recherche, reco, checkout)"
+      },
+      {
+        "id": "ml",
+        "role_generique": "modele_ia",
+        "label": "Modeles perso, reco, forecasting",
+        "outil_documente": "Databricks / Algolia"
+      },
+      {
+        "id": "conseiller",
+        "role_generique": "humain",
+        "label": "Conseiller en boutique"
+      }
+    ],
+    "liens": [
+      [
+        "client",
+        "site"
+      ],
+      [
+        "site",
+        "cdp",
+        "evenements de navigation et achat"
+      ],
+      [
+        "cdp",
+        "ml",
+        "profil unifie"
+      ],
+      [
+        "ml",
+        "site",
+        "recommandations personnalisees"
+      ],
+      [
+        "cdp",
+        "conseiller",
+        "preferences client en boutique"
+      ]
+    ]
+  },
+  "replication": {
+    "statut_epistemique": "infere",
+    "playbook": [
+      {
+        "action": "Reconcilier les identites client web et magasin dans une CDP, avec un parcours d'opt-in propre pour le profil unifie.",
+        "livrable": "Profil client unifie operationnel sur un marche pilote"
+      },
+      {
+        "action": "Personnaliser la recherche et les recommandations produit en ligne sur ce marche, branchees sur le profil et le catalogue.",
+        "livrable": "Moteur de recherche/reco personnalise en production pilote"
+      },
+      {
+        "action": "Refondre le checkout pour retirer les frictions et mesurer vitesse et taux de completion en A/B test.",
+        "livrable": "Nouveau checkout teste avec read chiffre"
+      },
+      {
+        "action": "Equiper les conseillers boutique de la reconnaissance client opt-in : preferences et historique visibles a l'arrivee du client.",
+        "livrable": "Clienteling connecte a la CDP en boutique pilote"
+      },
+      {
+        "action": "Etendre par phases aux autres marques et marches, composant par composant, en mesurant les achats cross-canal.",
+        "livrable": "Deploiement multi-marches avec bilan cross-canal"
+      }
+    ],
+    "equipe": "1 direction de programme e-commerce/IT + une equipe data de 3-5 personnes + l'integrateur ; les conseillers boutique formes au clienteling",
+    "prerequis_data": [
+      "identite client reconciliee web et magasin",
+      "consentement opt-in pour le profil unifie",
+      "flux catalogue et stock temps reel"
+    ],
+    "prerequis_orga": [
+      "gouvernance data et consentement",
+      "integrateur pour l'architecture composable",
+      "alignement e-commerce, retail et IT"
+    ],
+    "stack_possible": [
+      "CDP (Adobe, Salesforce, Segment)",
+      "moteur de recherche/reco (Algolia, Constructor)",
+      "plateforme data/ML (Databricks)",
+      "commerce composable"
+    ],
+    "premiere_etape": "Unifier les identites client web et magasin dans une CDP, puis personnaliser recherche et recommandations sur un marche pilote."
+  },
+  "seo": {
+    "slug": "prada-personnalisation-omnicanal-2024",
+    "title": "Prada Group : personnalisation omnicanale et commerce composable - +50% d'achats cross-canal (2024)",
+    "meta_description": "Prada Group a refondu son e-commerce et unifie ses donnees client : checkout 60% plus rapide, +15% de completions, +50% d'achats cross-canal et +15% de revenu en ligne.",
+    "resume_citable": "Prada Group a deploye une plateforme de commerce composable et un profil client unifie, obtenant un checkout 60% plus rapide, +15% de completions, +50% d'achats cross-canal et +15% de revenu en ligne.",
+    "faq": [
+      {
+        "q": "Quels resultats Prada a-t-il obtenus ?",
+        "a": "Un checkout 60% plus rapide, 15% d'acheteurs de plus finalisant, plus de 50% d'achats cross-canal supplementaires et +15% de revenu en ligne, selon l'etude de cas Accenture."
+      },
+      {
+        "q": "Sur quelle technologie repose la personnalisation ?",
+        "a": "Un profil client unifie via Adobe Real-Time CDP et Journey Optimizer, un socle data Databricks et une architecture e-commerce composable integree par Accenture."
+      }
+    ]
+  },
+  "logo_domain": "prada.com"
+}

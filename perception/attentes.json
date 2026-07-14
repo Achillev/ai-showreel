@@ -1,0 +1,192 @@
+{
+  "verifie_le": "2026-07-11",
+  "attentes": [
+    {
+      "theme": "transparence",
+      "titre_lisible": "Disclosure : les consommateurs veulent savoir quand l'IA est dans la boucle",
+      "resume": "La demande de transparence est massive et mesuree sur deux plans distincts. D'abord l'usage : 79% des repondants de 30 pays (Ipsos) veulent que les entreprises declarent leur usage de l'IA, et 75% des consommateurs (Salesforce) veulent savoir s'ils parlent a un agent IA. Ensuite le contenu : le public reste tres inconfortable avec l'information entierement generee par IA (12% de confort sur 6 pays, Reuters Institute), mais accepte bien mieux un contenu produit par des humains assistes d'IA (43%). Le marquage reel des contenus IA reste rare aux yeux du public : seuls 19% disent voir des labels IA quotidiennement. Pour un CMO, la regle qui ressort des donnees est que la divulgation est attendue par defaut, et que le positionnement 'humain assiste par IA' est nettement mieux accepte que le 'tout IA'.",
+      "chiffres": [
+        { "stat": "Sont d'accord pour que les entreprises utilisant l'IA soient obligees de le declarer (40% tout a fait d'accord)", "valeur": "79%", "annee": "2025", "pays": "global (30 pays)", "source_ref": "S1" },
+        { "stat": "Des consommateurs veulent savoir s'ils communiquent avec un agent IA", "valeur": "75%", "annee": "2025", "pays": "global", "source_ref": "S2" },
+        { "stat": "Se disent a l'aise avec une information entierement produite par l'IA", "valeur": "12%", "annee": "2025", "pays": "6 pays (AR, DK, FR, JP, UK, US)", "source_ref": "S3" },
+        { "stat": "Se disent a l'aise avec un contenu entierement produit par des humains", "valeur": "62%", "annee": "2025", "pays": "6 pays", "source_ref": "S3" },
+        { "stat": "Acceptent un contenu ou l'humain pilote avec assistance de l'IA", "valeur": "43%", "annee": "2025", "pays": "6 pays", "source_ref": "S3" },
+        { "stat": "Disent voir des labels 'contenu IA' au quotidien, alors que 77% consomment de l'info chaque jour", "valeur": "19%", "annee": "2025", "pays": "6 pays", "source_ref": "S3" },
+        { "stat": "Veulent des lois plus fortes contre la desinformation generee par IA", "valeur": "87%", "annee": "2025", "pays": "global (47 pays)", "source_ref": "S4" }
+      ],
+      "sources": [
+        { "ref": "S1", "institut": "Ipsos", "etude": "Ipsos AI Monitor 2025 (30 pays)", "annee": "2025", "url": "https://www.ipsos.com/en/conflicting-global-perceptions-around-ai-present-mixed-signals-brands", "fiabilite": "T1_primaire", "consulte_le": "2026-07-11" },
+        { "ref": "S2", "institut": "Salesforce", "etude": "State of the AI Connected Customer 2025", "annee": "2025", "url": "https://www.salesforce.com/resources/research-reports/state-of-the-connected-customer/", "fiabilite": "T1_primaire", "consulte_le": "2026-07-11" },
+        { "ref": "S3", "institut": "Reuters Institute (Oxford)", "etude": "Generative AI and News Report 2025 (YouGov, ~2000 repondants par pays, juin-juillet 2025)", "annee": "2025", "url": "https://reutersinstitute.politics.ox.ac.uk/generative-ai-and-news-report-2025-how-people-think-about-ais-role-journalism-and-society", "fiabilite": "T1_primaire", "consulte_le": "2026-07-11" },
+        { "ref": "S4", "institut": "KPMG / University of Melbourne", "etude": "Trust, attitudes and use of AI: a global study 2025 (48 000+ repondants, 47 pays, nov. 2024 - janv. 2025)", "annee": "2025", "url": "https://kpmg.com/xx/en/media/press-releases/2025/04/trust-of-ai-remains-a-critical-challenge.html", "fiabilite": "T1_primaire", "consulte_le": "2026-07-11" }
+      ]
+    },
+    {
+      "theme": "echappatoire_humaine",
+      "titre_lisible": "L'escalade vers un humain conditionne l'acceptation des agents IA",
+      "resume": "Salesforce mesure directement ce qui fait accepter un agent IA en service client : la possibilite de sortir de la conversation automatisee. 45% des consommateurs se disent plus enclins a utiliser un agent IA s'il existe un chemin d'escalade clair vers un humain, et 44% si la logique de l'agent est clairement expliquee. Le rapport resume que la plupart des clients veulent savoir qu'ils parlent a une IA et preferent disposer d'options d'escalade humaine. L'echappatoire humaine n'est donc pas un frein a l'automatisation : c'est la condition mesuree de son adoption.",
+      "chiffres": [
+        { "stat": "Plus enclins a utiliser un agent IA s'il existe un chemin d'escalade clair vers un humain", "valeur": "45%", "annee": "2025", "pays": "global", "source_ref": "S2" },
+        { "stat": "Plus enclins a utiliser un agent IA si sa logique est clairement expliquee", "valeur": "44%", "annee": "2025", "pays": "global", "source_ref": "S2" }
+      ],
+      "sources": [
+        { "ref": "S2", "institut": "Salesforce", "etude": "State of the AI Connected Customer 2025", "annee": "2025", "url": "https://www.salesforce.com/resources/research-reports/state-of-the-connected-customer/", "fiabilite": "T1_primaire", "consulte_le": "2026-07-11" }
+      ]
+    },
+    {
+      "theme": "controle_donnees",
+      "titre_lisible": "Donnees personnelles : forte inquietude, comportements qui ne suivent pas",
+      "resume": "Moins d'un repondant sur deux (48%, Ipsos 30 pays) fait confiance aux entreprises utilisant l'IA pour proteger ses donnees. Cisco mesure le paradoxe au niveau des outils : 84% des consommateurs de 12 pays s'inquietent que les donnees saisies dans une IA generative deviennent publiques, mais 30% des utilisateurs y entrent quand meme des informations personnelles ou confidentielles. Le levier identifie par Cisco est reglementaire : 59% disent que des lois de protection des donnees solides les rendent plus a l'aise pour partager des informations dans des applications IA. En France, les donnees personnelles arrivent parmi les premieres inquietudes citees sur l'IA (16%), derriere l'impact societal.",
+      "chiffres": [
+        { "stat": "Font confiance aux entreprises utilisant l'IA pour garder leurs donnees en securite", "valeur": "48%", "annee": "2025", "pays": "global (30 pays)", "source_ref": "S1" },
+        { "stat": "S'inquietent que les donnees entrees dans la GenAI puissent devenir publiques", "valeur": "84%", "annee": "2024", "pays": "global (12 pays)", "source_ref": "S5" },
+        { "stat": "Des utilisateurs de GenAI y saisissent malgre tout des informations personnelles ou confidentielles", "valeur": "30%", "annee": "2024", "pays": "global (12 pays)", "source_ref": "S5" },
+        { "stat": "Disent que des lois de protection des donnees solides les rendent plus a l'aise pour partager des informations dans des applications IA", "valeur": "59%", "annee": "2024", "pays": "global (12 pays)", "source_ref": "S5" },
+        { "stat": "Des Francais citent les donnees personnelles comme inquietude principale liee a l'IA", "valeur": "16%", "annee": "2025", "pays": "fr", "source_ref": "S8" }
+      ],
+      "sources": [
+        { "ref": "S1", "institut": "Ipsos", "etude": "Ipsos AI Monitor 2025 (30 pays)", "annee": "2025", "url": "https://www.ipsos.com/en/conflicting-global-perceptions-around-ai-present-mixed-signals-brands", "fiabilite": "T1_primaire", "consulte_le": "2026-07-11" },
+        { "ref": "S5", "institut": "Cisco", "etude": "Cisco 2024 Consumer Privacy Survey (2 600 consommateurs, 12 pays)", "annee": "2024", "url": "https://newsroom.cisco.com/c/r/newsroom/en/us/a/y2024/m10/cisco-survey-shows-strong-relationship-between-privacy-awareness-and-trust-in-ai.html", "fiabilite": "T1_primaire", "consulte_le": "2026-07-11" },
+        { "ref": "S8", "institut": "CREDOC / ARCEP", "etude": "Barometre du numerique, edition 2026 (terrain 2025)", "annee": "2026", "url": "https://www.arcep.fr/uploads/tx_gspublication/barometre-du-numerique-edition-2026_RAPPORT.pdf", "fiabilite": "T1_primaire", "consulte_le": "2026-07-11" }
+      ]
+    },
+    {
+      "theme": "equite_confiance",
+      "titre_lisible": "Confiance et equite : le deficit s'installe alors que l'usage progresse",
+      "resume": "L'etude mondiale KPMG / University of Melbourne (48 000 repondants, 47 pays) chiffre le deficit : 66% des gens utilisent deja l'IA regulierement mais seuls 46% sont prets a lui faire confiance, et 70% estiment qu'une regulation est necessaire. Fait notable, la comparaison avec l'edition pre-ChatGPT montre que la confiance a baisse a mesure que l'adoption montait. Sur l'equite au sens strict, Ipsos mesure que 54% font confiance a l'IA pour ne pas discriminer, un score superieur a la confiance dans l'equite des humains (45%) : la crainte de biais algorithmique n'est pas majoritaire dans les donnees. Cote marques, Salesforce mesure un contexte degrade : 72% des consommateurs font moins confiance aux entreprises qu'il y a un an, et 60% disent que les progres de l'IA rendent la confiance envers les entreprises plus importante.",
+      "chiffres": [
+        { "stat": "Prets a faire confiance aux systemes d'IA", "valeur": "46%", "annee": "2025", "pays": "global (47 pays)", "source_ref": "S4" },
+        { "stat": "Estiment qu'une regulation de l'IA est necessaire", "valeur": "70%", "annee": "2025", "pays": "global (47 pays)", "source_ref": "S4" },
+        { "stat": "Font confiance a l'IA pour ne pas discriminer ni montrer de biais", "valeur": "54%", "annee": "2025", "pays": "global (30 pays)", "source_ref": "S1" },
+        { "stat": "Font confiance aux humains pour etre equitables (comparaison avec l'IA)", "valeur": "45%", "annee": "2025", "pays": "global (30 pays)", "source_ref": "S1" },
+        { "stat": "Des consommateurs font moins confiance aux entreprises qu'il y a un an", "valeur": "72%", "annee": "2025", "pays": "global", "source_ref": "S2" },
+        { "stat": "Disent que les progres de l'IA rendent la confiance envers les entreprises plus importante", "valeur": "60%", "annee": "2025", "pays": "global", "source_ref": "S2" }
+      ],
+      "sources": [
+        { "ref": "S4", "institut": "KPMG / University of Melbourne", "etude": "Trust, attitudes and use of AI: a global study 2025", "annee": "2025", "url": "https://kpmg.com/xx/en/media/press-releases/2025/04/trust-of-ai-remains-a-critical-challenge.html", "fiabilite": "T1_primaire", "consulte_le": "2026-07-11" },
+        { "ref": "S1", "institut": "Ipsos", "etude": "Ipsos AI Monitor 2025 (30 pays)", "annee": "2025", "url": "https://www.ipsos.com/en/conflicting-global-perceptions-around-ai-present-mixed-signals-brands", "fiabilite": "T1_primaire", "consulte_le": "2026-07-11" },
+        { "ref": "S2", "institut": "Salesforce", "etude": "State of the AI Connected Customer 2025", "annee": "2025", "url": "https://www.salesforce.com/resources/research-reports/state-of-the-connected-customer/", "fiabilite": "T1_primaire", "consulte_le": "2026-07-11" }
+      ]
+    }
+  ],
+  "adoption": [
+    {
+      "theme": "usage_us",
+      "resume": "Aux Etats-Unis, Pew Research mesure une adoption qui double puis continue de grimper : 17% des adultes americains avaient utilise ChatGPT en 2023, 34% en fevrier 2025, 44% en fevrier 2026. En incluant tous les chatbots IA, 49% des adultes americains en ont utilise un debut 2026. L'usage professionnel suit : 28% des actifs utilisaient ChatGPT pour le travail debut 2025, contre 8% en 2023.",
+      "chiffres": [
+        { "stat": "Des adultes americains ont utilise ChatGPT (fevrier 2025), contre 17% en 2023", "valeur": "34%", "annee": "2025", "pays": "us", "source_ref": "S6" },
+        { "stat": "Des adultes americains ont utilise ChatGPT (fevrier 2026)", "valeur": "44%", "annee": "2026", "pays": "us", "source_ref": "S7" },
+        { "stat": "Des adultes americains ont utilise un chatbot IA, tous outils confondus (fevrier 2026)", "valeur": "49%", "annee": "2026", "pays": "us", "source_ref": "S7" },
+        { "stat": "Des actifs americains utilisent ChatGPT pour le travail, contre 8% en 2023", "valeur": "28%", "annee": "2025", "pays": "us", "source_ref": "S6" }
+      ],
+      "sources": [
+        { "ref": "S6", "institut": "Pew Research Center", "etude": "ChatGPT use among Americans roughly doubled since 2023 (n=5 123, fevrier-mars 2025)", "annee": "2025", "url": "https://www.pewresearch.org/short-reads/2025/06/25/34-of-us-adults-have-used-chatgpt-about-double-the-share-in-2023/", "fiabilite": "T1_primaire", "consulte_le": "2026-07-11" },
+        { "ref": "S7", "institut": "Pew Research Center", "etude": "Americans and AI 2026: how opinions and use of AI differ by age (n=5 119, fevrier 2026)", "annee": "2026", "url": "https://www.pewresearch.org/internet/2026/06/17/how-opinions-and-use-of-ai-differ-by-age/", "fiabilite": "T1_primaire", "consulte_le": "2026-07-11" }
+      ]
+    },
+    {
+      "theme": "usage_multi_pays",
+      "resume": "Sur six pays (Argentine, Danemark, France, Japon, Royaume-Uni, Etats-Unis), le Reuters Institute mesure une acceleration nette en un an : 61% ont deja utilise une IA generative (contre 40% en 2024) et l'usage hebdomadaire a presque double, de 18% a 34%. ChatGPT domine avec 22% d'usage hebdomadaire moyen. L'usage pour s'informer reste marginal mais double lui aussi : 6% s'informent via l'IA chaque semaine (7% utilisent des chatbots IA pour les news dans le Digital News Report, jusqu'a 15% chez les moins de 25 ans).",
+      "chiffres": [
+        { "stat": "Ont deja utilise une IA generative, contre 40% en 2024", "valeur": "61%", "annee": "2025", "pays": "6 pays (AR, DK, FR, JP, UK, US)", "source_ref": "S3" },
+        { "stat": "Usage hebdomadaire d'IA generative, contre 18% en 2024", "valeur": "34%", "annee": "2025", "pays": "6 pays", "source_ref": "S3" },
+        { "stat": "Usage hebdomadaire de ChatGPT, outil dominant", "valeur": "22%", "annee": "2025", "pays": "6 pays", "source_ref": "S3" },
+        { "stat": "Utilisent un chatbot IA pour s'informer chaque semaine (15% chez les moins de 25 ans)", "valeur": "7%", "annee": "2025", "pays": "global (marches du Digital News Report)", "source_ref": "S13" }
+      ],
+      "sources": [
+        { "ref": "S3", "institut": "Reuters Institute (Oxford)", "etude": "Generative AI and News Report 2025", "annee": "2025", "url": "https://reutersinstitute.politics.ox.ac.uk/generative-ai-and-news-report-2025-how-people-think-about-ais-role-journalism-and-society", "fiabilite": "T1_primaire", "consulte_le": "2026-07-11" },
+        { "ref": "S13", "institut": "Reuters Institute (Oxford)", "etude": "Digital News Report 2025, executive summary", "annee": "2025", "url": "https://reutersinstitute.politics.ox.ac.uk/digital-news-report/2025/dnr-executive-summary", "fiabilite": "T1_primaire", "consulte_le": "2026-07-11" }
+      ]
+    },
+    {
+      "theme": "usage_france",
+      "resume": "Le Barometre du numerique (CREDOC pour l'ARCEP, l'Arcom, le CGE et l'ANCT) mesure en France l'adoption la plus rapide jamais enregistree en 25 ans d'existence du barometre : 48% des Francais utilisent l'IA generative en 2025, contre 20% en 2023, plus vite que l'internet ou le smartphone en leur temps. ChatGPT ecrase le marche : environ huit utilisateurs d'IA sur dix y recourent, loin devant Gemini. Le premier usage est la recherche d'information (73% des utilisateurs).",
+      "chiffres": [
+        { "stat": "Des Francais utilisent l'IA generative, contre 20% en 2023", "valeur": "48%", "annee": "2025", "pays": "fr", "source_ref": "S8" },
+        { "stat": "Des utilisateurs d'IA generative en France utilisent ChatGPT, outil largement dominant", "valeur": "80%", "annee": "2025", "pays": "fr", "source_ref": "S8" },
+        { "stat": "Des utilisateurs citent la recherche d'information comme usage, premier cas d'usage", "valeur": "73%", "annee": "2025", "pays": "fr", "source_ref": "S8" }
+      ],
+      "sources": [
+        { "ref": "S8", "institut": "CREDOC / ARCEP", "etude": "Barometre du numerique, edition 2026 (terrain 2025)", "annee": "2026", "url": "https://www.arcep.fr/uploads/tx_gspublication/barometre-du-numerique-edition-2026_RAPPORT.pdf", "fiabilite": "T1_primaire", "consulte_le": "2026-07-11" },
+        { "ref": "S14", "institut": "Maire Info", "etude": "L'intelligence artificielle utilisee par pres d'un Francais sur deux (synthese du barometre)", "annee": "2026", "url": "https://www.maire-info.com/l'intelligence-artificielle-utilisee-aujourd'hui-par-pres-d'un-fran%EF%BF%BDais-sur-deux-selon-le-barometre-du-numerique-article2-30464", "fiabilite": "T3_presse_etablie", "consulte_le": "2026-07-11" }
+      ]
+    },
+    {
+      "theme": "usage_uk",
+      "resume": "Au Royaume-Uni, Deloitte (Digital Consumer Trends, 4 150 repondants de 16 a 75 ans) suit la progression edition apres edition : 36% avaient utilise une IA generative en 2024 (environ 18 millions de personnes), 63% dans l'edition 2026 (terrain mai 2026). L'usage quotidien reste minoritaire (10%, 18% a Londres). Point de vigilance pour les marques : 27% des utilisateurs d'IA ne realisent pas que l'outil est probabiliste et peut produire des erreurs.",
+      "chiffres": [
+        { "stat": "Des consommateurs britanniques (16-75 ans) ont utilise une IA generative", "valeur": "63%", "annee": "2026", "pays": "uk", "source_ref": "S9" },
+        { "stat": "Avaient utilise une IA generative en 2024, soit environ 18 millions de personnes", "valeur": "36%", "annee": "2024", "pays": "uk", "source_ref": "S10" },
+        { "stat": "Utilisent une application d'IA generative quotidiennement (18% a Londres)", "valeur": "10%", "annee": "2026", "pays": "uk", "source_ref": "S9" },
+        { "stat": "Des utilisateurs d'IA ne realisent pas que l'outil est probabiliste et peut generer des erreurs", "valeur": "27%", "annee": "2026", "pays": "uk", "source_ref": "S9" }
+      ],
+      "sources": [
+        { "ref": "S9", "institut": "Deloitte", "etude": "Digital Consumer Trends 2026, UK (n=4 150, terrain mai 2026)", "annee": "2026", "url": "https://www.deloitte.com/uk/en/Industries/tmt/research/digital-consumer-trends.html", "fiabilite": "T1_primaire", "consulte_le": "2026-07-11" },
+        { "ref": "S10", "institut": "Deloitte", "etude": "Digital Consumer Trends 2024, UK (n=4 150, terrain avril 2024)", "annee": "2024", "url": "https://www.deloitte.com/uk/en/about/press-room/over-eighteen-million-people-in-the-uk-have-now-used-generative-ai.html", "fiabilite": "T1_primaire", "consulte_le": "2026-07-11" }
+      ]
+    },
+    {
+      "theme": "ai_search_shopping",
+      "resume": "Adobe Analytics mesure le trafic reel (plus de 1 000 milliards de visites sur les sites retail americains), pas du declaratif. Le trafic envoye vers les sites retail US par les outils d'IA generative a bondi de 1 200% entre juillet 2024 et fevrier 2025, et la croissance continue : +138% sur un an en mai 2026, soit +1 324% depuis octobre 2024. La qualite du trafic s'est inversee : debut 2025 le trafic IA convertissait 9% moins bien que les autres sources ; en mai 2026 il convertit 54% mieux, avec 53% de temps passe en plus sur le site. Cote declaratif, 39% des consommateurs americains avaient deja utilise l'IA generative pour un achat en ligne debut 2025.",
+      "chiffres": [
+        { "stat": "Croissance du trafic vers les sites retail US venant de sources d'IA generative (fevrier 2025 vs juillet 2024)", "valeur": "+1200%", "annee": "2025", "pays": "us", "source_ref": "S11" },
+        { "stat": "Des consommateurs americains ont utilise l'IA generative pour leurs achats en ligne (53% prevoyaient de le faire dans l'annee)", "valeur": "39%", "annee": "2025", "pays": "us", "source_ref": "S11" },
+        { "stat": "Croissance annuelle du trafic retail refere par l'IA en mai 2026 (+1324% depuis octobre 2024)", "valeur": "+138%", "annee": "2026", "pays": "us", "source_ref": "S12" },
+        { "stat": "Le trafic venant de l'IA convertit mieux que les sources non-IA (il convertissait 9% moins bien debut 2025)", "valeur": "+54%", "annee": "2026", "pays": "us", "source_ref": "S12" },
+        { "stat": "Temps passe en plus sur les sites retail par les visiteurs arrivant via une IA", "valeur": "+53%", "annee": "2026", "pays": "us", "source_ref": "S12" }
+      ],
+      "sources": [
+        { "ref": "S11", "institut": "Adobe (Adobe Analytics)", "etude": "Traffic to US retail websites from generative AI sources jumps 1,200 percent (+ enquete 5 000 repondants US)", "annee": "2025", "url": "https://blog.adobe.com/en/publish/2025/03/17/adobe-analytics-traffic-to-us-retail-websites-from-generative-ai-sources-jumps-1200-percent", "fiabilite": "T1_primaire", "consulte_le": "2026-07-11" },
+        { "ref": "S12", "institut": "Digital Commerce 360 (donnees Adobe Analytics)", "etude": "Adobe: AI-referred traffic to retail sites doubles in a year (mai 2026)", "annee": "2026", "url": "https://www.digitalcommerce360.com/2026/06/17/adobe-ai-referred-traffic-to-retail-sites-doubles-in-a-year/", "fiabilite": "T3_presse_etablie", "consulte_le": "2026-07-11" }
+      ]
+    },
+    {
+      "theme": "ecart_mefiance_usage",
+      "resume": "L'insight le plus solide de toutes ces etudes est le meme paradoxe mesure quatre fois independamment : la mefiance declaree ne freine pas l'usage. KPMG : 66% utilisent l'IA regulierement, 46% seulement sont prets a lui faire confiance, et la confiance a baisse depuis 2022 pendant que l'adoption montait. Cisco : 84% craignent que leurs donnees GenAI deviennent publiques, 30% y saisissent quand meme des donnees personnelles. France (CREDOC) : 52% des Francais se disent mefiants envers l'IA, la meme annee ou 48% l'utilisent et ou l'adoption bat le record de vitesse du barometre. Ipsos : 53% de nerveux contre 52% d'enthousiastes, un quasi 50/50 qui n'empeche pas la diffusion. Pour un CMO, la mefiance declaree en survey est un signal d'exigences a satisfaire (transparence, escalade humaine, donnees), pas un predicteur de non-usage.",
+      "chiffres": [
+        { "stat": "Utilisent l'IA intentionnellement et regulierement, alors que 46% seulement sont prets a lui faire confiance", "valeur": "66%", "annee": "2025", "pays": "global (47 pays)", "source_ref": "S4" },
+        { "stat": "Craignent que les donnees saisies en GenAI deviennent publiques, alors que 30% des utilisateurs y saisissent des donnees personnelles", "valeur": "84%", "annee": "2024", "pays": "global (12 pays)", "source_ref": "S5" },
+        { "stat": "Des Francais se declarent mefiants envers l'IA, l'annee ou 48% l'utilisent", "valeur": "52%", "annee": "2025", "pays": "fr", "source_ref": "S8" },
+        { "stat": "Disent que l'IA les rend nerveux, contre 52% enthousiastes pour les produits et services IA", "valeur": "53%", "annee": "2025", "pays": "global (30 pays)", "source_ref": "S1" }
+      ],
+      "sources": [
+        { "ref": "S4", "institut": "KPMG / University of Melbourne", "etude": "Trust, attitudes and use of AI: a global study 2025", "annee": "2025", "url": "https://kpmg.com/xx/en/media/press-releases/2025/04/trust-of-ai-remains-a-critical-challenge.html", "fiabilite": "T1_primaire", "consulte_le": "2026-07-11" },
+        { "ref": "S5", "institut": "Cisco", "etude": "Cisco 2024 Consumer Privacy Survey", "annee": "2024", "url": "https://newsroom.cisco.com/c/r/newsroom/en/us/a/y2024/m10/cisco-survey-shows-strong-relationship-between-privacy-awareness-and-trust-in-ai.html", "fiabilite": "T1_primaire", "consulte_le": "2026-07-11" },
+        { "ref": "S8", "institut": "CREDOC / ARCEP", "etude": "Barometre du numerique, edition 2026", "annee": "2026", "url": "https://www.arcep.fr/uploads/tx_gspublication/barometre-du-numerique-edition-2026_RAPPORT.pdf", "fiabilite": "T1_primaire", "consulte_le": "2026-07-11" },
+        { "ref": "S1", "institut": "Ipsos", "etude": "Ipsos AI Monitor 2025", "annee": "2025", "url": "https://www.ipsos.com/en/conflicting-global-perceptions-around-ai-present-mixed-signals-brands", "fiabilite": "T1_primaire", "consulte_le": "2026-07-11" }
+      ]
+    }
+  ],
+  "generations": [
+    {
+      "theme": "ecart_usage_par_age",
+      "resume": "L'ecart d'usage entre generations est le plus documente de tous les indicateurs, et il est massif partout. Etats-Unis (Pew, fevrier 2026) : 66% des 18-29 ans ont utilise un chatbot IA contre 23% des 65+, et 31% des 18-29 ans en utilisent un quotidiennement contre 7% des 65+. Six pays (Reuters Institute) : 59% d'usage hebdomadaire chez les 18-24 ans contre 20% chez les 55+. Royaume-Uni (Deloitte 2024) : 62% des 16-34 ans contre 14% des 55-75 ans. France (CREDOC) : 85% des 18-24 ans utilisent l'IA generative, contre 48% de la population totale.",
+      "chiffres": [
+        { "stat": "Des 18-29 ans americains ont utilise un chatbot IA, contre 23% des 65 ans et plus", "valeur": "66%", "annee": "2026", "pays": "us", "source_ref": "S7" },
+        { "stat": "Des 18-29 ans americains utilisent un chatbot IA quotidiennement, contre 7% des 65 ans et plus", "valeur": "31%", "annee": "2026", "pays": "us", "source_ref": "S7" },
+        { "stat": "Usage hebdomadaire d'IA generative chez les 18-24 ans, contre 20% chez les 55 ans et plus", "valeur": "59%", "annee": "2025", "pays": "6 pays (AR, DK, FR, JP, UK, US)", "source_ref": "S3" },
+        { "stat": "Des 16-34 ans britanniques ont utilise une IA generative, contre 14% des 55-75 ans", "valeur": "62%", "annee": "2024", "pays": "uk", "source_ref": "S10" },
+        { "stat": "Des 18-24 ans francais utilisent l'IA generative, contre 48% de la population totale", "valeur": "85%", "annee": "2025", "pays": "fr", "source_ref": "S8" }
+      ],
+      "sources": [
+        { "ref": "S7", "institut": "Pew Research Center", "etude": "Americans and AI 2026: how opinions and use of AI differ by age (n=5 119, fevrier 2026)", "annee": "2026", "url": "https://www.pewresearch.org/internet/2026/06/17/how-opinions-and-use-of-ai-differ-by-age/", "fiabilite": "T1_primaire", "consulte_le": "2026-07-11" },
+        { "ref": "S3", "institut": "Reuters Institute (Oxford)", "etude": "Generative AI and News Report 2025", "annee": "2025", "url": "https://reutersinstitute.politics.ox.ac.uk/generative-ai-and-news-report-2025-how-people-think-about-ais-role-journalism-and-society", "fiabilite": "T1_primaire", "consulte_le": "2026-07-11" },
+        { "ref": "S10", "institut": "Deloitte", "etude": "Digital Consumer Trends 2024, UK", "annee": "2024", "url": "https://www.deloitte.com/uk/en/about/press-room/over-eighteen-million-people-in-the-uk-have-now-used-generative-ai.html", "fiabilite": "T1_primaire", "consulte_le": "2026-07-11" },
+        { "ref": "S8", "institut": "CREDOC / ARCEP", "etude": "Barometre du numerique, edition 2026", "annee": "2026", "url": "https://www.arcep.fr/uploads/tx_gspublication/barometre-du-numerique-edition-2026_RAPPORT.pdf", "fiabilite": "T1_primaire", "consulte_le": "2026-07-11" }
+      ]
+    },
+    {
+      "theme": "attitudes_par_age",
+      "resume": "Le cliche 'jeunes enthousiastes, seniors mefiants' n'est vrai que pour l'usage, pas pour les attitudes. Pew (fevrier 2026) mesure l'inverse de l'intuition : les 18-29 ans americains sont plus pessimistes que leurs aines sur l'impact societal de l'IA (48% anticipent un impact negatif sur 20 ans, contre 35% des 65+), et plus nombreux a anticiper un impact negatif sur leur propre vie (37% contre 28%). Ils utilisent donc massivement un outil dont ils se mefient plus que les boomers. La ou les jeunes sont effectivement plus ouverts, c'est sur le contenu : le Reuters Institute mesure chez eux un confort superieur avec l'information produite avec de l'IA et un usage double des chatbots pour s'informer (15% hebdomadaire chez les moins de 25 ans contre 7% en moyenne).",
+      "chiffres": [
+        { "stat": "Des 18-29 ans americains anticipent un impact negatif de l'IA sur la societe a 20 ans, contre 35% des 65 ans et plus", "valeur": "48%", "annee": "2026", "pays": "us", "source_ref": "S7" },
+        { "stat": "Des 18-29 ans americains anticipent un impact negatif de l'IA sur leur propre vie, contre 28% des 65 ans et plus", "valeur": "37%", "annee": "2026", "pays": "us", "source_ref": "S7" },
+        { "stat": "Des moins de 25 ans utilisent un chatbot IA pour s'informer chaque semaine, contre 7% en moyenne tous ages", "valeur": "15%", "annee": "2025", "pays": "global (marches du Digital News Report)", "source_ref": "S13" }
+      ],
+      "sources": [
+        { "ref": "S7", "institut": "Pew Research Center", "etude": "Americans and AI 2026: how opinions and use of AI differ by age", "annee": "2026", "url": "https://www.pewresearch.org/internet/2026/06/17/how-opinions-and-use-of-ai-differ-by-age/", "fiabilite": "T1_primaire", "consulte_le": "2026-07-11" },
+        { "ref": "S13", "institut": "Reuters Institute (Oxford)", "etude": "Digital News Report 2025, executive summary", "annee": "2025", "url": "https://reutersinstitute.politics.ox.ac.uk/digital-news-report/2025/dnr-executive-summary", "fiabilite": "T1_primaire", "consulte_le": "2026-07-11" }
+      ]
+    }
+  ]
+}

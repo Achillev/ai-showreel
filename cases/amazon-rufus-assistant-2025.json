@@ -1,0 +1,289 @@
+{
+  "id": "amazon-rufus-assistant-2025",
+  "type_fiche": "succes",
+  "marque": "Amazon",
+  "industrie": "retail_ecom",
+  "marches_deploiement": [
+    "US",
+    "UK",
+    "Inde",
+    "France",
+    "Allemagne",
+    "Italie",
+    "Espagne",
+    "Canada"
+  ],
+  "transposable_ue": {
+    "flag": "oui",
+    "note": "Deja en production sur plusieurs marches UE (France, Allemagne, Italie, Espagne). L'assistant traite des donnees de navigation et d'achat first-party ; l'usage RGPD est cadre par la base contractuelle Amazon. Les reponses generees doivent rester tracables aux avis et fiches produit pour eviter les affirmations non fondees."
+  },
+  "metier": "e-commerce, service client, discovery produit",
+  "marque_linkedin": "https://www.linkedin.com/company/amazon",
+  "intervenants": [
+    {
+      "nom": "Andy Jassy",
+      "role": "CEO d'Amazon, a communique les chiffres Rufus en earnings call Q3 2025",
+      "source_ref": "S1"
+    }
+  ],
+  "axes": {
+    "levier": "activation_conversion",
+    "touchpoints": [
+      "app mobile",
+      "site web",
+      "page produit",
+      "barre de recherche"
+    ],
+    "etape_parcours": "consideration",
+    "famille": "conversation",
+    "pattern": "assistant shopping genAI",
+    "type_ia": [
+      "LLM",
+      "RAG",
+      "agent genAI"
+    ],
+    "plateforme_stack": [
+      "custom/in-house",
+      "modeles fondation AWS",
+      "catalogue produit Amazon",
+      "avis clients"
+    ],
+    "objectif_metrique": [
+      "taux de conversion",
+      "sales incrementales",
+      "engagement"
+    ]
+  },
+  "implementation": "custom",
+  "objectif_business": "Transformer la recherche produit en dialogue pour lever les objections d'achat plus tot dans le parcours et augmenter la conversion sur un catalogue de centaines de millions de references.",
+  "points_cles": ["Assistant shopping conversationnel genAI sur l'app et le site Amazon.", "LLM maison plus RAG sur catalogue, fiches et avis, avec fonctions agentiques.", "Run rate de ~10 milliards USD de ventes incrementales, utilisateurs 60% plus susceptibles d'acheter.", "Preuve A, statut vivant confirme."],
+  "description": "Rufus est un assistant conversationnel integre a l'app et au site Amazon. Le client pose une question en langage naturel (comparer deux modeles, verifier une compatibilite, trouver un cadeau sous contrainte de budget) et Rufus repond en s'appuyant sur le catalogue, les fiches produit et les avis. Il a evolue vers des fonctions agentiques : recommandation d'un produit unique via Help Me Decide, achat pour le compte du client via Buy for Me, et recherche au-dela du catalogue Amazon. Lance en beta en fevrier 2024 aux US, etendu a sept autres marches en 2025.",
+  "resultats": [
+    {
+      "metrique": "Ventes incrementales, run rate annualise (Q3 2025)",
+      "valeur": "~10 Md USD",
+      "citation_exacte": "$10 billion in annual incremental sales",
+      "source_ref": "S1"
+    },
+    {
+      "metrique": "Probabilite d'achat, utilisateurs vs non-utilisateurs",
+      "valeur": "+60%",
+      "citation_exacte": "60% more likely to complete a purchase",
+      "source_ref": "S1"
+    },
+    {
+      "metrique": "Shoppers ayant utilise Rufus en 2025",
+      "valeur": "~250 millions",
+      "citation_exacte": "250 million shoppers used Rufus in 2025",
+      "source_ref": "S1"
+    },
+    {
+      "metrique": "Interactions, en glissement annuel",
+      "valeur": "+210%",
+      "citation_exacte": "interactions increased 210%",
+      "source_ref": "S1"
+    }
+  ],
+  "niveau_preuve": {
+    "niveau": "A",
+    "justification": "Chiffres annonces par le CEO Andy Jassy lors de l'earnings call Q3 2025 d'Amazon, repris par Fortune et la presse economique. Resultat rattache aux resultats financiers, avec methode d'attribution (fenetre glissante sept jours) precisee."
+  },
+  "dates": {
+    "lancement": "Fevrier 2024 (beta US)",
+    "derniere_confirmation_activite": "Novembre 2025 (earnings call Q3 2025)",
+    "verifie_le": "2026-07-11",
+    "revoir_apres": "2027-01-11"
+  },
+  "statut_vivant": {
+    "statut": "confirme",
+    "note": "Assistant actif sur huit marches fin 2025, avec ajout continu de fonctions (Help Me Decide en octobre 2025, Buy for Me). Chiffres confirmes en earnings call."
+  },
+  "sources": [
+    {
+      "ref": "S1",
+      "type": "presse",
+      "fiabilite": "T3_presse_etablie",
+      "titre": "Amazon says its AI shopping assistant Rufus is so effective it's on pace to pull in an extra $10 billion in sales",
+      "url": "https://fortune.com/2025/11/02/amazon-rufus-ai-shopping-assistant-chatbot-10-billion-sales-monetization/",
+      "date_publication": "2025-11-02",
+      "consulte_le": "2026-07-11"
+    },
+    {
+      "ref": "S2",
+      "type": "presse",
+      "fiabilite": "T4_secondaire",
+      "titre": "Amazon says its AI shopping assistant is gaining traction, with Rufus users up 115%",
+      "url": "https://www.modernretail.co/technology/amazon-says-its-ai-shopping-assistant-is-gaining-traction-with-rufus-users-up-115/",
+      "date_publication": "2025",
+      "consulte_le": "2026-07-11"
+    }
+  ],
+  "fonctionnement_operationnel": {
+    "cadence": "Temps reel a chaque session client, avec attribution mesuree sur une fenetre glissante de sept jours.",
+    "opere_par": "Equipe produit et science des donnees Amazon (in-house), reliee au catalogue et au flux d'avis.",
+    "signal_pilote": "La qualite et la fraicheur des fiches produit et des avis. Si un produit a peu d'avis ou des specs incompletes, Rufus repond mal et l'effet conversion s'efface sur cette reference.",
+    "etapes": [
+      {
+        "etape": "Question en langage naturel",
+        "detail": "Le client tape ou dicte une question dans la barre de recherche ou sur une page produit.",
+        "acteur": "client"
+      },
+      {
+        "etape": "Recuperation et generation",
+        "detail": "Le modele va chercher les fiches, specs et avis pertinents, puis genere une reponse synthetique avec produits suggeres.",
+        "acteur": "IA"
+      },
+      {
+        "etape": "Aide a la decision",
+        "detail": "Sur un panier hesitant, Help Me Decide propose un produit unique avec une justification generee.",
+        "acteur": "IA"
+      },
+      {
+        "etape": "Mesure de l'impact aval",
+        "detail": "Les achats consecutifs a une interaction sont attribues via une fenetre de sept jours pour piloter l'optimisation.",
+        "acteur": "equipe data"
+      }
+    ]
+  },
+  "schema_flow": {
+    "statut": "approche_type",
+    "noeuds": [
+      {
+        "id": "client",
+        "role_generique": "humain",
+        "label": "Client sur app ou site"
+      },
+      {
+        "id": "canal",
+        "role_generique": "canal_conversationnel",
+        "label": "Assistant Rufus"
+      },
+      {
+        "id": "llm",
+        "role_generique": "modele_ia",
+        "label": "LLM + RAG"
+      },
+      {
+        "id": "catalogue",
+        "role_generique": "data_source",
+        "label": "Catalogue, fiches, avis"
+      },
+      {
+        "id": "site",
+        "role_generique": "site_app",
+        "label": "Parcours d'achat Amazon"
+      }
+    ],
+    "liens": [
+      [
+        "client",
+        "canal"
+      ],
+      [
+        "canal",
+        "llm"
+      ],
+      [
+        "catalogue",
+        "llm"
+      ],
+      [
+        "llm",
+        "canal"
+      ],
+      [
+        "canal",
+        "site"
+      ],
+      [
+        "site",
+        "catalogue",
+        "achat mesure J+7"
+      ]
+    ]
+  },
+  "replication": {
+    "statut_epistemique": "infere",
+    "prerequis_data": [
+      "catalogue produit structure et a jour",
+      "avis clients exploitables",
+      "historique de navigation first-party"
+    ],
+    "prerequis_orga": [
+      "equipe data science ou plateforme LLM interne",
+      "guardrails contre les hallucinations sur specs produit"
+    ],
+    "stack_possible": [
+      "LLM fondation (via API ou heberge)",
+      "moteur RAG sur catalogue",
+      "couche d'attribution conversion"
+    ],
+    "premiere_etape": "Cadrer un perimetre de questions produit a fort trafic et brancher un RAG sur les fiches et avis existants.",
+    "playbook": [
+      {
+        "action": "Cadrer les questions produit a fort trafic et structurer l'acces au catalogue, aux fiches et aux avis.",
+        "livrable": "Perimetre v1 + index RAG sur fiches et avis"
+      },
+      {
+        "action": "Construire l'assistant (LLM + RAG) avec des guardrails contre les hallucinations sur les specs produit.",
+        "livrable": "Prototype qui repond sur le perimetre en citant ses sources"
+      },
+      {
+        "action": "Integrer l'assistant au parcours (barre de recherche, page produit) et poser l'attribution des achats sur fenetre glissante.",
+        "livrable": "Assistant en beta sur une part du trafic, mesure branchee"
+      },
+      {
+        "action": "Mener l'A/B test conversion utilisateurs vs non-utilisateurs et corriger les categories ou l'assistant repond mal.",
+        "livrable": "Lecture d'impact conversion et taux d'erreurs par categorie"
+      },
+      {
+        "action": "Etendre le perimetre et ajouter des fonctions d'aide a la decision.",
+        "livrable": "Assistant en production avec tableau de bord des ventes assistees"
+      }
+    ],
+    "equipe": "1 PM + 2-3 ingenieurs ML/LLM + 1 data engineer catalogue + une revue qualite continue des reponses"
+  },
+  "stack_technique": [
+    {
+      "nom": "LLM maison Amazon",
+      "categorie": "llm",
+      "detail": "Modele de langage construit en interne et specialise sur le shopping (catalogue, avis, web) ; Amazon ne publie pas l'architecture exacte.",
+      "url": "https://www.aboutamazon.com"
+    },
+    {
+      "nom": "RAG sur catalogue, fiches et avis",
+      "categorie": "outil",
+      "detail": "Recuperation des fiches, specs et avis pertinents avant generation de la reponse, pour garder les affirmations tracables.",
+      "url": "https://www.amazon.com"
+    },
+    {
+      "nom": "Infrastructure AWS",
+      "categorie": "infra",
+      "detail": "Entrainement et inference des modeles fondation maison sur l'infrastructure AWS.",
+      "url": "https://aws.amazon.com"
+    },
+    {
+      "nom": "Fonctions agentiques Help Me Decide et Buy for Me",
+      "categorie": "outil",
+      "detail": "Recommandation d'un produit unique avec justification generee, et achat pour le compte du client.",
+      "url": "https://www.amazon.com"
+    }
+  ],
+  "seo": {
+    "slug": "amazon-rufus-assistant-2025",
+    "title": "Amazon Rufus : assistant shopping genAI - ~10 Md USD de ventes incrementales (2025)",
+    "meta_description": "Rufus, l'assistant conversationnel d'Amazon, aurait genere un run rate de 10 Md USD de ventes incrementales et rend les acheteurs 60% plus susceptibles d'acheter.",
+    "resume_citable": "En 2025, l'assistant shopping genAI Rufus d'Amazon a atteint un run rate de 10 milliards USD de ventes incrementales annualisees et rendu ses utilisateurs 60% plus susceptibles d'acheter, selon l'earnings call Q3 2025.",
+    "faq": [
+      {
+        "q": "Combien Rufus rapporte-t-il a Amazon ?",
+        "a": "Andy Jassy a annonce en Q3 2025 un run rate de 10 milliards USD de ventes incrementales annualisees attribuees a Rufus."
+      },
+      {
+        "q": "Rufus ameliore-t-il la conversion ?",
+        "a": "Amazon indique que les clients qui utilisent Rufus sont 60% plus susceptibles de finaliser un achat que les non-utilisateurs."
+      }
+    ]
+  },
+  "logo_domain": "amazon.com"
+}

@@ -1,0 +1,295 @@
+{
+  "id": "bookingcom-ai-trip-planner-2026",
+  "type_fiche": "succes",
+  "marque": "Booking.com",
+  "groupe": "Booking Holdings",
+  "industrie": "voyage_hospitality",
+  "marches_deploiement": [
+    "Etats-Unis",
+    "Royaume-Uni",
+    "Australie",
+    "Nouvelle-Zelande",
+    "Singapour"
+  ],
+  "transposable_ue": {
+    "flag": "oui_avec_adaptations",
+    "note": "Le déploiement UE a suivi le lancement anglophone, avec extension annoncée vers l'Espagne, l'Italie, l'Allemagne, la France, la Pologne et les Pays-Bas. En UE, l'usage des données de compte et de recherche pour la personnalisation relève du RGPD, et l'AI Act impose la transparence sur l'interaction avec une IA."
+  },
+  "metier": "e-commerce / marketing",
+  "intervenants": [
+    {
+      "nom": "Glenn Fogel",
+      "role": "CEO, Booking.com",
+      "source_ref": "S1"
+    },
+    {
+      "nom": "Rob Francis",
+      "role": "Chief Technology Officer, Booking.com",
+      "source_ref": "S1"
+    },
+    {
+      "nom": "Joe Futty",
+      "role": "VP of Product Marketplace, Booking.com",
+      "source_ref": "S2"
+    }
+  ],
+  "agences": [
+    {
+      "nom": "OpenAI",
+      "role": "Fournisseur de l'API ChatGPT sous-jacente à l'AI Trip Planner",
+      "source_ref": "S1"
+    }
+  ],
+  "axes": {
+    "levier": "activation_conversion",
+    "touchpoints": [
+      "app mobile Booking.com",
+      "site web",
+      "app Booking.com dans ChatGPT"
+    ],
+    "etape_parcours": "considération",
+    "famille": "conversation",
+    "pattern": "assistant de planification de voyage genAI",
+    "type_ia": [
+      "LLM (OpenAI ChatGPT API)",
+      "ML propriétaire"
+    ],
+    "plateforme_stack": [
+      "OpenAI ChatGPT API",
+      "custom/in-house",
+      "OpenAI Apps SDK (ChatGPT)"
+    ],
+    "objectif_metrique": [
+      "engagement",
+      "contacts service client",
+      "conversion",
+      "couverture marchés"
+    ]
+  },
+  "implementation": "hybride",
+  "stack_technique": [
+    {
+      "nom": "OpenAI ChatGPT API",
+      "categorie": "llm",
+      "detail": "API LLM sous-jacente a l'AI Trip Planner ; la version de modele exacte n'est pas precisee dans les sources.",
+      "url": "https://openai.com"
+    },
+    {
+      "nom": "Modeles ML maison Booking.com",
+      "categorie": "outil",
+      "detail": "Couches proprietaires de recommandation et de personnalisation combinees a l'API ChatGPT, ancrees sur l'inventaire et les prix en direct.",
+      "url": "https://www.booking.com"
+    },
+    {
+      "nom": "OpenAI Apps SDK",
+      "categorie": "plateforme",
+      "detail": "SDK qui porte l'app Booking.com dans ChatGPT depuis octobre 2025, parmi les premiers partenaires.",
+      "url": "https://openai.com"
+    }
+  ],
+  "objectif_business": "Capter la phase d'inspiration et de planification en langage naturel pour amener plus tôt les voyageurs vers l'inventaire Booking.com et raccourcir le chemin jusqu'à la réservation.",
+  "description": "L'AI Trip Planner de Booking.com, lancé en bêta aux Etats-Unis en juin 2023, est un assistant conversationnel bâti sur les modèles ML maison et l'API ChatGPT d'OpenAI. Le voyageur pose des questions ouvertes (où partir pour un week-end en amoureux), reçoit des suggestions de destinations et d'hébergements avec prix et liens de réservation, et affine dans la conversation. La suite s'est étoffée en 2024 avec Smart Filter (recherche en langage naturel), Property Q&A (réponses tirées des fiches) et Review Summaries. En octobre 2025, Booking.com est aussi devenu l'un des premiers partenaires des apps dans ChatGPT via l'Apps SDK d'OpenAI.",
+  "resultats": [
+    {
+      "metrique": "Etats-Unis, Royaume-Uni, Australie, Nouvelle-Zelande, Singapour, extension UE annoncée",
+      "valeur": "5 marchés + UE",
+      "citation_exacte": "Available in US, UK, Australia, New Zealand, Singapore; expanding to Spain, Italy, Germany, France, Poland",
+      "source_ref": "S2"
+    },
+    {
+      "metrique": "Intérêt déclaré des voyageurs pour un itinéraire IA personnalisé",
+      "valeur": "41 pour cent",
+      "citation_exacte": "41% of all travelers expressed interest in using a personalized, AI-curated itinerary",
+      "source_ref": "S2"
+    },
+    {
+      "metrique": "Ambition produit (conversations 1 pour 1 à l'échelle)",
+      "valeur": "déclaratif CTO",
+      "citation_exacte": "we're able to start having scalable, one-to-one conversations with our customers on their terms",
+      "source_ref": "S1"
+    }
+  ],
+  "niveau_preuve": {
+    "niveau": "C",
+    "justification": "Communiqués officiels Booking.com documentant le déploiement multi-marchés et la montée en gamme des fonctions, repris par la presse spécialisée (Skift). Preuve de scale = déploiement multi-marchés et plus de 12 mois en production ; les métriques de performance publiques restent qualitatives."
+  },
+  "dates": {
+    "lancement": "2023-06 (bêta Etats-Unis)",
+    "derniere_confirmation_activite": "2025-10 (app Booking.com dans ChatGPT via Apps SDK)",
+    "verifie_le": "2026-07-11",
+    "revoir_apres": "2027-01-11"
+  },
+  "statut_vivant": {
+    "statut": "confirme",
+    "note": "Suite d'outils genAI enrichie en 2024 et étendue à ChatGPT en octobre 2025 ; produit actif et multi-marchés."
+  },
+  "sources": [
+    {
+      "ref": "S1",
+      "type": "blog_officiel",
+      "fiabilite": "T1_primaire",
+      "titre": "Booking.com Launches New AI Trip Planner to Enhance Travel Planning Experience",
+      "url": "https://news.booking.com/bookingcom-launches-new-ai-trip-planner-to-enhance-travel-planning-experience/",
+      "date_publication": "2023-06-27",
+      "consulte_le": "2026-07-11"
+    },
+    {
+      "ref": "S2",
+      "type": "blog_officiel",
+      "fiabilite": "T1_primaire",
+      "titre": "Booking.com Enhances Travel Planning with New AI-Powered Features for Easier, Smarter Decisions",
+      "url": "https://news.booking.com/bookingcom-enhances-travel-planning-with-new-ai-powered-features--for-easier-smarter-decisions/",
+      "date_publication": "2024-10-30",
+      "consulte_le": "2026-07-11"
+    },
+    {
+      "ref": "S3",
+      "type": "presse",
+      "fiabilite": "T3_presse_etablie",
+      "titre": "ChatGPT Travel Apps Are Now a Thing - Starting with Booking.com and Expedia",
+      "url": "https://skift.com/2025/10/06/expedia-booking-chatgpt-apps-openai/",
+      "date_publication": "2025-10-06",
+      "consulte_le": "2026-07-11"
+    }
+  ],
+  "fonctionnement_operationnel": {
+    "cadence": "Temps réel à chaque conversation, avec ajout de fonctions par vagues produit.",
+    "opere_par": "Équipe produit marketplace de Booking.com, appuyée par les équipes ML maison.",
+    "signal_pilote": "L'intention exprimée en langage naturel, croisée avec l'inventaire et les prix Booking.com en direct. Si l'assistant ne remonte pas la disponibilité réelle, il reste un moteur d'inspiration sans valeur transactionnelle.",
+    "etapes": [
+      {
+        "etape": "Question ouverte",
+        "detail": "Le voyageur pose une demande d'inspiration ou de planification en langage naturel.",
+        "acteur": "client"
+      },
+      {
+        "etape": "Génération de suggestions",
+        "detail": "L'assistant combine ML maison et API ChatGPT pour proposer destinations et hébergements.",
+        "acteur": "IA"
+      },
+      {
+        "etape": "Ancrage sur l'inventaire",
+        "detail": "Il tire prix, disponibilité et liens de réservation depuis la base Booking.com.",
+        "acteur": "IA / équipe data"
+      },
+      {
+        "etape": "Affinage et bascule",
+        "detail": "Le voyageur affine dans la conversation puis passe vers la fiche et la réservation.",
+        "acteur": "client"
+      }
+    ]
+  },
+  "schema_flow": {
+    "statut": "approche_type",
+    "noeuds": [
+      {
+        "id": "user",
+        "role_generique": "humain",
+        "label": "Voyageur"
+      },
+      {
+        "id": "chan",
+        "role_generique": "canal_conversationnel",
+        "label": "AI Trip Planner (app / ChatGPT)"
+      },
+      {
+        "id": "llm",
+        "role_generique": "modele_ia",
+        "label": "ChatGPT API + ML maison",
+        "outil_documente": "OpenAI ChatGPT API"
+      },
+      {
+        "id": "inv",
+        "role_generique": "data_source",
+        "label": "Inventaire et prix Booking.com"
+      },
+      {
+        "id": "pdp",
+        "role_generique": "site_app",
+        "label": "Fiche hébergement et réservation"
+      }
+    ],
+    "liens": [
+      [
+        "user",
+        "chan"
+      ],
+      [
+        "chan",
+        "llm"
+      ],
+      [
+        "llm",
+        "inv"
+      ],
+      [
+        "inv",
+        "chan"
+      ],
+      [
+        "chan",
+        "pdp"
+      ],
+      [
+        "pdp",
+        "user",
+        "réservation"
+      ]
+    ]
+  },
+  "replication": {
+    "statut_epistemique": "infere",
+    "prerequis_data": [
+      "inventaire et prix accessibles par API",
+      "fiches produit riches pour le Q&A",
+      "avis clients pour les résumés"
+    ],
+    "prerequis_orga": [
+      "équipe produit IA",
+      "gouvernance de la personnalisation multi-marchés",
+      "processus de rollout par pays"
+    ],
+    "stack_possible": [
+      "API LLM commerciale",
+      "couche RAG sur l'inventaire et les fiches",
+      "moteur de recherche existant"
+    ],
+    "premiere_etape": "Démarrer par la recherche en langage naturel (Smart Filter) sur un marché, avant d'ajouter la planification et le Q&A produit.",
+    "playbook": [
+      {
+        "action": "Brancher une recherche en langage naturel sur le moteur de recherche existant, sur un seul marche, en A/B test contre les filtres classiques.",
+        "livrable": "Recherche en langage naturel en test avec plan de mesure."
+      },
+      {
+        "action": "Construire l'assistant conversationnel adosse a l'inventaire et aux prix en direct via API, avec liens de reservation reels.",
+        "livrable": "Assistant en beta, ancre sur la disponibilite reelle."
+      },
+      {
+        "action": "Ajouter le Q&A produit tire des fiches et les resumes d'avis pour couvrir la phase de reassurance.",
+        "livrable": "Fonctions Q&A et resumes d'avis en production."
+      },
+      {
+        "action": "Mesurer engagement, contacts service client et conversion contre le parcours classique, puis lancer le rollout pays par pays.",
+        "livrable": "Bilan par marche et plan d'extension."
+      }
+    ],
+    "equipe": "1 PM + 2-3 devs (API LLM, RAG sur l'inventaire) + 1 data scientist pour l'evaluation des reponses."
+  },
+  "seo": {
+    "slug": "bookingcom-ai-trip-planner-2026",
+    "title": "Booking.com : AI Trip Planner genAI - déploiement multi-marchés depuis 2023 (2026)",
+    "meta_description": "L'AI Trip Planner de Booking.com, bâti sur l'API ChatGPT, est en production sur cinq marchés depuis 2023, avec extension UE et une app dans ChatGPT depuis octobre 2025.",
+    "resume_citable": "Booking.com exploite depuis 2023 un AI Trip Planner conversationnel bâti sur l'API ChatGPT, déployé sur cinq marchés anglophones puis étendu à l'UE et à ChatGPT en octobre 2025.",
+    "faq": [
+      {
+        "q": "Comment fonctionne l'AI Trip Planner de Booking.com ?",
+        "a": "Le voyageur pose des questions ouvertes et reçoit des suggestions de destinations et d'hébergements avec prix et liens de réservation, tirées de l'inventaire Booking.com."
+      },
+      {
+        "q": "Depuis quand est-il déployé ?",
+        "a": "Depuis juin 2023 en bêta aux Etats-Unis, puis sur le Royaume-Uni, l'Australie, la Nouvelle-Zelande et Singapour, avec extension UE et une app dans ChatGPT en octobre 2025."
+      }
+    ]
+  },
+  "logo_domain": "booking.com"
+}

@@ -1,0 +1,280 @@
+{
+  "id": "dhl-freight-viva-chatbot-voicebot-2024",
+  "type_fiche": "succes",
+  "marque": "DHL Freight",
+  "groupe": "DHL Group",
+  "industrie": "autre",
+  "marches_deploiement": [
+    "Suede",
+    "France",
+    "Republique tcheque"
+  ],
+  "transposable_ue": {
+    "flag": "oui",
+    "note": "Deja deploye en UE (Suede, France, Republique tcheque, extension Allemagne/Italie/Pays-Bas prevue). L'execution integre donc RGPD et AI Act : conditions d'utilisation et notice de confidentialite dediees au chatbot VIVA publiees par DHL, information sur l'usage de l'IA, encadrement du traitement des donnees de transport."
+  },
+  "metier": "service client",
+  "intervenants": [
+    {
+      "nom": "Markus Voss",
+      "role": "CEO, DHL Freight",
+      "source_ref": "S1"
+    },
+    {
+      "nom": "Andrea Wylegala",
+      "role": "VP Customer Service and Tele Sales, DHL Freight",
+      "source_ref": "S1"
+    },
+    {
+      "nom": "Karin Ekstrom",
+      "role": "Project Manager Commercial System, DHL Freight",
+      "source_ref": "S1"
+    }
+  ],
+  "axes": {
+    "levier": "retention",
+    "touchpoints": [
+      "chatbot (help center web)",
+      "voicebot telephonique"
+    ],
+    "etape_parcours": "post-achat",
+    "famille": "conversation",
+    "pattern": "chatbot et voicebot service client autonome genAI",
+    "type_ia": [
+      "genAI (LLM)",
+      "voicebot",
+      "memoire de court terme"
+    ],
+    "plateforme_stack": [
+      "ICE 2.0 (in-house)",
+      "custom"
+    ],
+    "objectif_metrique": [
+      "taux de resolution autonome",
+      "disponibilite 24/7",
+      "charge du service client"
+    ]
+  },
+  "implementation": "custom",
+  "objectif_business": "Absorber les demandes recurrentes du service client fret (suivi d'expedition, reclamations, questions produit) de facon autonome et 24/7, dans plusieurs pays, sans multiplier les effectifs.",
+  "description": "VIVA est l'assistant IA du service client de DHL Freight, decline en chatbot et en voicebot dans le cadre du projet interne ICE 2.0. Un client peut suivre une expedition, ouvrir une reclamation ou poser une question sur les produits DHL Freight, a l'ecrit via le help center ou par telephone avec le voicebot, 24 heures sur 24. La version 2025 ajoute une memoire de court terme qui permet a l'assistant de se souvenir des questions precedentes dans une meme conversation. DHL a d'abord lance VIVA en Suede en 2021 sous forme intentiste, puis est passe a une version genAI capable de formuler des reponses completes.",
+  "resultats": [
+    {
+      "metrique": "Demandes traitees de facon autonome, sans intervention humaine",
+      "valeur": "93%",
+      "citation_exacte": "Our virtual colleague is smart enough to answer 93 percent of inquiries without assistance.",
+      "source_ref": "S1"
+    },
+    {
+      "metrique": "Deploiement: Suede (2021), France (2024), Republique tcheque (2025)",
+      "valeur": "3 pays",
+      "citation_exacte": "2024: VIVA has now also been launched in France.",
+      "source_ref": "S1"
+    }
+  ],
+  "niveau_preuve": {
+    "niveau": "C",
+    "justification": "Communication officielle de la marque DHL Freight (blog et pages produit VIVA par pays) chiffree, avec le deploiement multi-marches verifiable via les help centers en ligne. Source unique d'organisation (DHL) mais confirmee par plusieurs pages officielles et l'existence des services en production, d'ou C plutot que B."
+  },
+  "dates": {
+    "lancement": "2021 (Suede, version intentiste) ; version genAI 2024 (France) ; memoire de court terme 2025",
+    "derniere_confirmation_activite": "2025 (deploiement Republique tcheque, extension 2026 annoncee)",
+    "verifie_le": "2026-07-11",
+    "revoir_apres": "2027-01-11"
+  },
+  "statut_vivant": {
+    "statut": "confirme",
+    "note": "VIVA en production dans plusieurs pays, avec pages help center et conditions d'utilisation publiees par DHL, et un calendrier d'extension a l'Allemagne, l'Italie et les Pays-Bas."
+  },
+  "sources": [
+    {
+      "ref": "S1",
+      "type": "blog_officiel",
+      "fiabilite": "T2_officiel_interesse",
+      "titre": "AI Chatbot VIVA Redefines Customer Service",
+      "url": "https://dhl-freight-connections.com/en/solutions/ai-chatbot-viva/",
+      "date_publication": "2025",
+      "consulte_le": "2026-07-11"
+    },
+    {
+      "ref": "S2",
+      "type": "blog_officiel",
+      "fiabilite": "T1_primaire",
+      "titre": "AI-Based Customer Service Assistant Viva (help center Suede)",
+      "url": "https://www.dhl.com/se-en/home/freight/help-center-for-european-road-and-rail/welcome-to-viva.html",
+      "date_publication": "2024",
+      "consulte_le": "2026-07-11"
+    }
+  ],
+  "fonctionnement_operationnel": {
+    "cadence": "Temps reel, 24/7, sur chaque conversation entrante en chat ou par telephone.",
+    "opere_par": "Service client DHL Freight, dans le cadre du programme ICE 2.0.",
+    "signal_pilote": "L'acces au statut d'expedition et a la base de connaissances produits. Si le lien vers les donnees de suivi tombe, l'assistant ne peut plus repondre aux demandes de tracking, qui forment le gros du volume, et bascule vers l'humain.",
+    "etapes": [
+      {
+        "etape": "Contact client",
+        "detail": "Le client ouvre le chat du help center ou appelle et formule sa demande (suivi, reclamation, question produit).",
+        "acteur": "client"
+      },
+      {
+        "etape": "Comprehension",
+        "detail": "VIVA identifie l'intention, avec memoire des echanges precedents dans la conversation depuis 2025.",
+        "acteur": "IA"
+      },
+      {
+        "etape": "Reponse autonome",
+        "detail": "L'assistant formule une reponse complete a partir des donnees de suivi et de la base produits.",
+        "acteur": "IA"
+      },
+      {
+        "etape": "Escalade si besoin",
+        "detail": "Les 7% de cas hors perimetre sont transferes a un agent du service client.",
+        "acteur": "IA"
+      }
+    ]
+  },
+  "schema_flow": {
+    "statut": "documente",
+    "noeuds": [
+      {
+        "id": "cust",
+        "role_generique": "humain",
+        "label": "Client DHL Freight"
+      },
+      {
+        "id": "chan",
+        "role_generique": "canal_conversationnel",
+        "label": "Chatbot help center / voicebot"
+      },
+      {
+        "id": "ai",
+        "role_generique": "modele_ia",
+        "label": "VIVA (genAI)",
+        "outil_documente": "ICE 2.0 (in-house)"
+      },
+      {
+        "id": "data",
+        "role_generique": "data_source",
+        "label": "Suivi d'expedition et base produits"
+      },
+      {
+        "id": "agent",
+        "role_generique": "humain",
+        "label": "Agent service client"
+      }
+    ],
+    "liens": [
+      [
+        "cust",
+        "chan"
+      ],
+      [
+        "chan",
+        "ai"
+      ],
+      [
+        "ai",
+        "data"
+      ],
+      [
+        "data",
+        "ai"
+      ],
+      [
+        "ai",
+        "cust",
+        "reponse autonome"
+      ],
+      [
+        "ai",
+        "agent",
+        "escalade 7%"
+      ]
+    ]
+  },
+  "stack_technique": [
+    {
+      "nom": "ICE 2.0 (plateforme interne DHL Freight)",
+      "categorie": "infra",
+      "detail": "socle conversationnel du programme interne qui porte le chatbot et le voicebot VIVA dans chaque pays",
+      "url": "https://www.dhl.com"
+    },
+    {
+      "nom": "LLM genAI de VIVA",
+      "categorie": "llm",
+      "detail": "version generative de l'assistant depuis 2024, avec memoire de court terme depuis 2025 ; le fournisseur du modele n'est pas divulgue publiquement",
+      "url": "https://www.dhl.com"
+    },
+    {
+      "nom": "Brique voicebot",
+      "categorie": "outil",
+      "detail": "canal telephonique de VIVA, decline pays par pays en complement du chat du help center",
+      "url": "https://www.dhl.com"
+    },
+    {
+      "nom": "API de suivi d'expedition DHL Freight",
+      "categorie": "infra",
+      "detail": "donnees de tracking temps reel, le gros du volume de demandes ; si ce lien tombe, l'assistant bascule vers l'humain",
+      "url": "https://www.dhl.com"
+    }
+  ],
+  "replication": {
+    "statut_epistemique": "infere",
+    "prerequis_data": [
+      "API de suivi d'expedition en temps reel",
+      "base de connaissances produits et procedures",
+      "historique de conversations pour l'entrainement"
+    ],
+    "prerequis_orga": [
+      "equipe service client pilote par pays",
+      "gouvernance multilingue et deploiement progressif",
+      "cadre RGPD / AI Act pour un assistant client"
+    ],
+    "stack_possible": [
+      "LLM avec orchestration d'intentions",
+      "brique voicebot pour le canal telephonique",
+      "connecteurs vers le systeme de suivi"
+    ],
+    "premiere_etape": "Deployer le chatbot sur le suivi d'expedition dans un pays pilote, mesurer le taux de resolution autonome, puis ajouter reclamations et voicebot.",
+    "playbook": [
+      {
+        "action": "Cadrer le perimetre pilote (le suivi d'expedition d'abord) et le dispositif RGPD / AI Act (conditions d'utilisation, notice de confidentialite).",
+        "livrable": "Perimetre fonctionnel et cadre juridique publies"
+      },
+      {
+        "action": "Connecter l'assistant a l'API de suivi et a la base de connaissances produits.",
+        "livrable": "Bot capable de repondre au tracking en recette"
+      },
+      {
+        "action": "Lancer le chatbot dans un pays pilote avec escalade vers agent, et mesurer le taux de resolution autonome.",
+        "livrable": "Chatbot en production avec taux de resolution suivi"
+      },
+      {
+        "action": "Ajouter les reclamations, les questions produit et la memoire de conversation.",
+        "livrable": "Couverture fonctionnelle elargie sur le pays pilote"
+      },
+      {
+        "action": "Ajouter le canal voix et repliquer le socle au pays suivant.",
+        "livrable": "Voicebot actif et deuxieme pays en deploiement"
+      }
+    ],
+    "equipe": "2-3 devs conversationnels + 1 PM + referents service client par pays"
+  },
+  "seo": {
+    "slug": "dhl-freight-viva-chatbot-voicebot-2024",
+    "title": "DHL Freight : chatbot et voicebot VIVA - 93% des demandes traitees sans intervention (2024)",
+    "meta_description": "VIVA, l'assistant IA de DHL Freight (chatbot et voicebot), traite 93% des demandes clients sans intervention humaine, 24/7, deploye en Suede, France et Republique tcheque.",
+    "resume_citable": "VIVA, l'assistant IA de DHL Freight decline en chatbot et voicebot, repond a 93% des demandes clients sans intervention humaine, deploye en Suede (2021), France (2024) et Republique tcheque (2025).",
+    "faq": [
+      {
+        "q": "Qu'est-ce que VIVA de DHL Freight ?",
+        "a": "Un assistant IA de service client, en chatbot et en voicebot, qui gere le suivi d'expedition, les reclamations et les questions produit 24 heures sur 24."
+      },
+      {
+        "q": "Quel taux de resolution VIVA atteint-il ?",
+        "a": "DHL Freight indique que VIVA repond a 93% des demandes sans intervention humaine, le reste etant transfere a un agent."
+      }
+    ]
+  },
+  "logo_domain": "dhl.com"
+}

@@ -1,0 +1,267 @@
+{
+  "id": "coupang-ml-recommandation-personnalisation-2023",
+  "type_fiche": "succes",
+  "marque": "Coupang",
+  "groupe": "Coupang, Inc.",
+  "industrie": "retail_ecom",
+  "marches_deploiement": [
+    "Coree du Sud",
+    "Taiwan"
+  ],
+  "transposable_ue": {
+    "flag": "oui_avec_adaptations",
+    "note": "Un moteur de recommandation et de personnalisation multi-surface (feed d'accueil, recherche, annonces) est un standard du e-commerce, transposable en UE. Le point d'attention est le RGPD sur l'usage de l'historique de navigation et d'achat pour personnaliser, et la transparence attendue sur le classement des annonces. La difficulte reelle est l'ingenierie et la donnee, pas la geographie."
+  },
+  "metier": "e-commerce",
+  "marque_linkedin": "https://www.linkedin.com/company/coupang/",
+  "axes": {
+    "levier": "activation_conversion",
+    "touchpoints": [
+      "feed d'accueil",
+      "recherche",
+      "annonces produit",
+      "Coupang Eats",
+      "Coupang Play"
+    ],
+    "etape_parcours": "considération",
+    "famille": "personnalisation",
+    "pattern": "moteur de recommandation et personnalisation multi-surface",
+    "type_ia": [
+      "machine learning de recommandation",
+      "modeles de langage (Ko-BERT) pour la recherche",
+      "prevision de prix"
+    ],
+    "plateforme_stack": [
+      "Coupang ML Platform (in-house)",
+      "custom/in-house"
+    ],
+    "objectif_metrique": [
+      "engagement client",
+      "efficacite operationnelle",
+      "nombre de modeles en production"
+    ]
+  },
+  "implementation": "custom",
+  "objectif_business": "Personnaliser chaque surface de l'app (accueil, recherche, annonces) et industrialiser la mise en production de modeles pour soutenir a la fois la croissance du chiffre et l'efficacite operationnelle.",
+  "description": "Coupang fait tourner un socle interne, la Coupang ML Platform, qui industrialise le cycle de vie des modeles de bout en bout : exploration, preparation des donnees d'entrainement, developpement et mise en production. Ce socle alimente les surfaces de recommandation et de personnalisation de l'app (feed d'accueil, recherche, annonces produit) sur Coupang shopping, Coupang Eats et Coupang Play, ainsi que la prevision de prix et la comprehension des requetes de recherche via des modeles de langage. D'apres le blog d'ingenierie publie en septembre 2023, tous les grands groupes ML de Coupang utilisent un ou plusieurs services de la plateforme, avec plus de 100 000 executions de workflows sur un an pour plus de 600 projets ML. Coupang presente l'IA comme un levier de long terme pour la croissance du chiffre et l'expansion des marges.",
+  "resultats": [
+    {
+      "metrique": "Executions de workflows sur un an",
+      "valeur": "plus de 100 000",
+      "citation_exacte": "100K+ workflow runs on the platform spanning 600+ ML projects",
+      "source_ref": "S1"
+    },
+    {
+      "metrique": "Adoption interne de la plateforme",
+      "valeur": "tous les grands groupes ML de Coupang",
+      "citation_exacte": "All major ML groups at Coupang use one or more Coupang ML Platform services",
+      "source_ref": "S1"
+    },
+    {
+      "metrique": "Chiffre d'affaires T3 2025, +18% sur un an",
+      "valeur": "9,27 Md USD",
+      "citation_exacte": "revenue of $9.27B ... Revenue increased 18% year-over-year",
+      "source_ref": "S3"
+    }
+  ],
+  "niveau_preuve": {
+    "niveau": "C",
+    "justification": "Blog d'ingenierie officiel de Coupang (source interessee, chiffres d'infrastructure) et resultats financiers de la societe cotee pour la mesure de l'echelle. Coupang ne publie pas de gain de conversion attribue precisement a la recommandation ; ce qui est prouve, c'est un deploiement industrialise et durable (plus de 600 projets ML, plus de 100 000 executions par an) et une echelle confirmee en resultats financiers. C par prudence, faute de lift chiffre par surface."
+  },
+  "dates": {
+    "lancement": "2023",
+    "derniere_confirmation_activite": "2025-11",
+    "verifie_le": "2026-07-11",
+    "revoir_apres": "2027-01-11"
+  },
+  "statut_vivant": {
+    "statut": "confirme",
+    "note": "Coupang reaffirme en resultats du T3 2025 son investissement dans l'IA, y compris sa propre infrastructure de calcul, pour la qualite de service et l'efficacite. La plateforme ML est en production depuis plusieurs annees."
+  },
+  "sources": [
+    {
+      "ref": "S1",
+      "type": "eng_blog",
+      "fiabilite": "T2_officiel_interesse",
+      "titre": "Meet Coupang's Machine Learning Platform",
+      "url": "https://www.coupang.jobs/en/life-at-coupang/engineering-blog/meet-coupang-s-machine-learning-platform/",
+      "date_publication": "2023-09-08",
+      "consulte_le": "2026-07-11"
+    },
+    {
+      "ref": "S2",
+      "type": "eng_blog",
+      "fiabilite": "T2_officiel_interesse",
+      "titre": "Accelerating Coupang's AI Journey with LLMs",
+      "url": "https://www.coupang.jobs/en/life-at-coupang/engineering-blog/accelerating-coupang-s-ai-journey-with-llms/",
+      "date_publication": "2024",
+      "consulte_le": "2026-07-11"
+    },
+    {
+      "ref": "S3",
+      "type": "earnings_call",
+      "fiabilite": "T1_primaire",
+      "titre": "Coupang, Inc. Q3 2025 Earnings Release",
+      "url": "https://s206.q4cdn.com/919117365/files/doc_financials/2025/q3/2025-Q3_Earnings-Release_F.pdf",
+      "date_publication": "2025-11-04",
+      "consulte_le": "2026-07-11"
+    }
+  ],
+  "fonctionnement_operationnel": {
+    "cadence": "Recommandation en temps quasi reel sur chaque surface ; entrainement et mise en production continus via la plateforme",
+    "opere_par": "Les groupes ML de Coupang, appuyes sur la plateforme ML interne qui standardise l'entrainement et le deploiement",
+    "signal_pilote": "Le comportement de navigation et d'achat par surface. Si la donnee de feedback (clics, achats) n'est pas propre et fraiche, les recommandations derivent.",
+    "etapes": [
+      {
+        "etape": "Preparation des donnees",
+        "detail": "La plateforme prepare les donnees d'entrainement a partir du comportement client par surface.",
+        "acteur": "equipe data"
+      },
+      {
+        "etape": "Entrainement des modeles",
+        "detail": "Les groupes ML developpent et entrainent les modeles de recommandation, recherche et prix via la plateforme.",
+        "acteur": "equipe data"
+      },
+      {
+        "etape": "Mise en production",
+        "detail": "Les modeles sont deployes sur le feed d'accueil, la recherche et les annonces de l'app.",
+        "acteur": "IA"
+      },
+      {
+        "etape": "Boucle de feedback",
+        "detail": "Clics et achats reviennent alimenter l'entrainement pour ajuster les recommandations.",
+        "acteur": "IA / equipe data"
+      }
+    ]
+  },
+  "schema_flow": {
+    "statut": "documente",
+    "noeuds": [
+      {
+        "id": "comportement",
+        "role_generique": "data_source",
+        "label": "Comportement de navigation et d'achat"
+      },
+      {
+        "id": "plateforme",
+        "role_generique": "modele_ia",
+        "label": "Coupang ML Platform (entrainement et deploiement)",
+        "outil_documente": "Coupang ML Platform"
+      },
+      {
+        "id": "surfaces",
+        "role_generique": "site_app",
+        "label": "Feed d'accueil, recherche, annonces"
+      },
+      {
+        "id": "client",
+        "role_generique": "humain",
+        "label": "Client Coupang"
+      }
+    ],
+    "liens": [
+      [
+        "comportement",
+        "plateforme"
+      ],
+      [
+        "plateforme",
+        "surfaces"
+      ],
+      [
+        "surfaces",
+        "client"
+      ],
+      [
+        "client",
+        "comportement",
+        "clics et achats en retour"
+      ]
+    ]
+  },
+  "stack_technique": [
+    {
+      "nom": "Coupang ML Platform",
+      "categorie": "infra",
+      "detail": "plateforme MLOps interne qui industrialise exploration, preparation des donnees, entrainement et mise en production (plus de 100 000 executions de workflows par an, 600+ projets)",
+      "url": "https://www.coupang.com"
+    },
+    {
+      "nom": "Modeles de recommandation et de ranking proprietaires",
+      "categorie": "llm",
+      "detail": "modeles internes qui personnalisent feed d'accueil, recherche et annonces sur Coupang, Coupang Eats et Coupang Play",
+      "url": "https://www.coupang.com"
+    },
+    {
+      "nom": "Ko-BERT",
+      "categorie": "llm",
+      "detail": "variante coreenne de BERT integree par Coupang pour la comprehension des requetes de recherche",
+      "url": "https://www.coupang.com"
+    },
+    {
+      "nom": "Modeles de prevision de prix",
+      "categorie": "outil",
+      "detail": "modeles internes de forecasting de prix alimentes par la meme plateforme",
+      "url": "https://www.coupang.com"
+    }
+  ],
+  "replication": {
+    "statut_epistemique": "infere",
+    "prerequis_data": [
+      "Journaux de comportement client par surface",
+      "Donnees de feedback (clics, achats) propres et fraiches",
+      "Catalogue et signaux de recherche"
+    ],
+    "prerequis_orga": [
+      "Plateforme d'industrialisation ML (entrainement, deploiement, monitoring)",
+      "Equipes ML par domaine",
+      "Boucle de mesure sur l'engagement et la conversion"
+    ],
+    "stack_possible": [
+      "Plateforme MLOps interne ou managee",
+      "Modeles de recommandation et de ranking",
+      "Modeles de langage pour la recherche"
+    ],
+    "premiere_etape": "Mettre en place une boucle de feedback propre sur une seule surface (par exemple le feed d'accueil) avant d'etendre a la recherche et aux annonces.",
+    "playbook": [
+      {
+        "action": "Choisir une seule surface (par exemple le feed d'accueil) et auditer les journaux de comportement disponibles.",
+        "livrable": "Jeu de donnees d'entrainement propre sur la surface choisie"
+      },
+      {
+        "action": "Construire la boucle de feedback (clics, achats) et le pipeline d'entrainement reproductible.",
+        "livrable": "Pipeline de donnees et d'entrainement versionne"
+      },
+      {
+        "action": "Entrainer un premier modele de recommandation et le deployer en A/B test sur une fraction du trafic.",
+        "livrable": "Modele en production sur une part limitee du trafic"
+      },
+      {
+        "action": "Mesurer engagement et conversion face a l'heuristique existante, iterer sur les features et le ranking.",
+        "livrable": "Bilan chiffre et modele gagnant generalise sur la surface"
+      },
+      {
+        "action": "Industrialiser (monitoring, reentrainement regulier) et etendre a une deuxieme surface comme la recherche.",
+        "livrable": "Socle MLOps reutilisable et deuxieme surface en chantier"
+      }
+    ],
+    "equipe": "2 data scientists + 1-2 ML engineers + 1 PM, avec une equipe data platform en appui"
+  },
+  "seo": {
+    "slug": "coupang-ml-recommandation-personnalisation-2023",
+    "title": "Coupang : recommandation et personnalisation multi-surface par IA a l'echelle (2023)",
+    "meta_description": "La plateforme ML de Coupang alimente recommandation, recherche et annonces sur toutes ses apps, avec plus de 600 projets ML et 100 000 executions de workflows par an.",
+    "resume_citable": "Coupang fait tourner une plateforme ML interne qui alimente recommandation, recherche et annonces sur toutes ses apps, avec plus de 600 projets ML et plus de 100 000 executions de workflows par an, adoptee par tous ses grands groupes ML.",
+    "faq": [
+      {
+        "q": "A quoi sert la plateforme ML de Coupang ?",
+        "a": "Elle industrialise l'entrainement et la mise en production des modeles qui personnalisent le feed d'accueil, la recherche et les annonces sur les apps Coupang."
+      },
+      {
+        "q": "Coupang publie-t-elle un gain de conversion attribue a la recommandation ?",
+        "a": "Non. Ce qui est documente publiquement, c'est l'echelle du deploiement (plus de 600 projets ML) et la confirmation d'investissement IA en resultats financiers, pas un lift par surface."
+      }
+    ]
+  },
+  "logo_domain": "coupang.com"
+}

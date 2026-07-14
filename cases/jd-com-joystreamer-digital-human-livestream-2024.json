@@ -1,0 +1,282 @@
+{
+  "id": "jd-com-joystreamer-digital-human-livestream-2024",
+  "type_fiche": "succes",
+  "marque": "JD.com",
+  "groupe": "JD.com, Inc.",
+  "industrie": "retail_ecom",
+  "marches_deploiement": [
+    "Chine"
+  ],
+  "transposable_ue": {
+    "flag": "oui_avec_adaptations",
+    "note": "Le pattern (presentateur de live commerce genere par IA) est transposable, mais le live shopping est beaucoup plus mature en Chine qu'en Europe, ce qui limite l'effet a marche egal. Deux contraintes fortes cote UE : l'AI Act impose de signaler qu'un contenu ou un avatar est synthetique (transparence sur les deepfakes), et reutiliser l'image et la voix d'une personne reelle exige son consentement explicite et une base RGPD."
+  },
+  "metier": "marketing",
+  "agences": [
+    {
+      "nom": "JD Explore Academy / JD.com R&D",
+      "role": "Equipe interne ayant developpe le modele de digital human JoyStreamer",
+      "source_ref": "S3"
+    }
+  ],
+  "axes": {
+    "levier": "activation_conversion",
+    "touchpoints": [
+      "live shopping",
+      "app JD",
+      "salles de livestream marchands"
+    ],
+    "etape_parcours": "considération",
+    "famille": "generation",
+    "pattern": "presentateur de live commerce genere par IA",
+    "type_ia": [
+      "digital human generatif",
+      "synthese voix et video",
+      "LLM"
+    ],
+    "plateforme_stack": [
+      "JoyStreamer (in-house)",
+      "JoyAI LLM"
+    ],
+    "objectif_metrique": [
+      "taux de conversion des commandes",
+      "cout de production du livestream",
+      "heures de diffusion couvertes"
+    ]
+  },
+  "implementation": "custom",
+  "objectif_business": "Faire tourner des salles de live shopping 24h/24 sans mobiliser d'animateurs humains, et ouvrir le live commerce a des marchands qui ne peuvent pas se payer un studio et une equipe.",
+  "description": "JoyStreamer est le modele de digital human de JD.com qui anime des salles de live shopping a la place d'un animateur humain. L'avatar presente les produits, repond aux questions du chat en direct et gere la vente de bout en bout. La demonstration la plus visible remonte a avril 2024 : un avatar du fondateur Richard Liu (Liu Qiangdong), baptise Procurement and Sales Digital Human, a tenu un livestream qui a depasse 20 millions de vues dans la premiere heure et genere autour de 50 millions de yuan de ventes. JD a ensuite rendu l'outil gratuit pour les marchands, ce qui a fait grimper l'adoption. Fin 2025, le groupe met en avant plus de 50 outils IA pour marchands et une bascule de JoyStreamer d'assistant de diffusion vers un moteur de croissance du live qui planifie, presente, anime et analyse la session.",
+  "resultats": [
+    {
+      "metrique": "Vues sur le livestream de l'avatar du fondateur (premiere heure)",
+      "valeur": "plus de 20 millions",
+      "citation_exacte": "generated over 20 million views within the first hour",
+      "source_ref": "S1"
+    },
+    {
+      "metrique": "Ventes generees pendant les sessions d'avril 2024, environ 6,9 millions USD",
+      "valeur": "50 millions de yuan",
+      "citation_exacte": "50 million yuan ($6.9 million) in sales",
+      "source_ref": "S1"
+    },
+    {
+      "metrique": "Baisse du cout de diffusion vs animateur humain",
+      "valeur": "90%",
+      "citation_exacte": "Cut livestreaming costs by 90 percent compared with human hosts",
+      "source_ref": "S1"
+    },
+    {
+      "metrique": "Hausse du taux de conversion des commandes en heures creuses",
+      "valeur": "30%",
+      "citation_exacte": "30 percent increase in order conversion rates during off-peak hours",
+      "source_ref": "S1"
+    },
+    {
+      "metrique": "Part des questions frequentes traitees par l'avatar",
+      "valeur": "70%",
+      "citation_exacte": "answer 70 percent of the frequently asked questions",
+      "source_ref": "S1"
+    }
+  ],
+  "niveau_preuve": {
+    "niveau": "C",
+    "justification": "Presse etablie citant nommement JD.com (China Daily HK, Global Times) et blog officiel de la marque, sources concordantes sur le fonctionnement et les chiffres. Les valeurs de conversion et de cout sont des chiffres communiques par JD via la presse, pas des resultats audites, ce qui maintient a C. China Daily et Global Times sont des medias d'Etat chinois, a lire avec ce biais."
+  },
+  "dates": {
+    "lancement": "2024-04",
+    "derniere_confirmation_activite": "2025-10",
+    "verifie_le": "2026-07-11",
+    "revoir_apres": "2027-01-11"
+  },
+  "statut_vivant": {
+    "statut": "confirme",
+    "note": "En octobre 2025, JD confirme que JoyStreamer est monte en gamme et fait partie des plus de 50 outils IA offerts aux marchands pendant le 11.11. Adoption en hausse apres la gratuite pour les marchands."
+  },
+  "sources": [
+    {
+      "ref": "S1",
+      "type": "presse",
+      "fiabilite": "T3_presse_etablie",
+      "titre": "Virtual humans helping spur e-commerce",
+      "url": "https://www.chinadailyhk.com/hk/article/582576",
+      "date_publication": "2024-04",
+      "consulte_le": "2026-07-11"
+    },
+    {
+      "ref": "S2",
+      "type": "presse",
+      "fiabilite": "T3_presse_etablie",
+      "titre": "Chinese e-commerce giants tap AI solutions to unlock business opportunities",
+      "url": "https://www.globaltimes.cn/page/202510/1345878.shtml",
+      "date_publication": "2025-10",
+      "consulte_le": "2026-07-11"
+    },
+    {
+      "ref": "S3",
+      "type": "blog_officiel",
+      "fiabilite": "T2_officiel_interesse",
+      "titre": "The Future of Industry Marketing with JD.com's AI-Powered Solutions",
+      "url": "https://jdcorporateblog.com/the-future-of-industry-marketing-with-jd-coms-ai-powered-solutions/",
+      "date_publication": "2026",
+      "consulte_le": "2026-07-11"
+    }
+  ],
+  "fonctionnement_operationnel": {
+    "cadence": "Temps reel, sessions de live pouvant tourner en continu, y compris en heures creuses",
+    "opere_par": "Equipe marchande (mise en place du catalogue et du script) epaulee par l'equipe IA de JD qui tient le modele JoyStreamer",
+    "signal_pilote": "L'engagement du chat en direct et le taux de conversion pendant la session. Si le catalogue et les prix ne sont pas a jour, l'avatar presente une offre fausse et la salle perd sa credibilite.",
+    "etapes": [
+      {
+        "etape": "Preparation de la session",
+        "detail": "Le marchand charge les produits, les prix et le script de vente ; l'avatar et la voix sont configures.",
+        "acteur": "marchand"
+      },
+      {
+        "etape": "Diffusion",
+        "detail": "JoyStreamer presente les produits en direct, deroule le script et met en avant les promotions.",
+        "acteur": "IA"
+      },
+      {
+        "etape": "Interaction",
+        "detail": "L'avatar lit le chat et repond aux questions frequentes des acheteurs pendant le live.",
+        "acteur": "IA"
+      },
+      {
+        "etape": "Analyse post-session",
+        "detail": "Le systeme remonte vues, conversion et ventes ; l'equipe ajuste catalogue, horaires et argumentaire.",
+        "acteur": "equipe data"
+      }
+    ]
+  },
+  "schema_flow": {
+    "statut": "approche_type",
+    "noeuds": [
+      {
+        "id": "catalogue",
+        "role_generique": "data_source",
+        "label": "Catalogue produits, prix, promotions"
+      },
+      {
+        "id": "joystreamer",
+        "role_generique": "modele_ia",
+        "label": "Digital human JoyStreamer",
+        "outil_documente": "JoyStreamer (JD.com)"
+      },
+      {
+        "id": "live",
+        "role_generique": "site_app",
+        "label": "Salle de live shopping dans l'app JD"
+      },
+      {
+        "id": "acheteur",
+        "role_generique": "humain",
+        "label": "Acheteurs dans le chat"
+      }
+    ],
+    "liens": [
+      [
+        "catalogue",
+        "joystreamer"
+      ],
+      [
+        "joystreamer",
+        "live"
+      ],
+      [
+        "live",
+        "acheteur"
+      ],
+      [
+        "acheteur",
+        "joystreamer",
+        "questions du chat"
+      ]
+    ]
+  },
+  "replication": {
+    "statut_epistemique": "infere",
+    "prerequis_data": [
+      "Catalogue produit structure avec prix et stock a jour",
+      "Scripts de vente par categorie",
+      "Corpus voix et video pour l'avatar (ou avatar sur etagere)"
+    ],
+    "prerequis_orga": [
+      "Regle de conformite sur la mention du caractere synthetique de l'avatar",
+      "Consentement si usage de l'image d'une personne reelle",
+      "Modele de handoff vers un humain sur les cas sensibles"
+    ],
+    "stack_possible": [
+      "Generateur de digital human (avatar + synthese voix)",
+      "LLM pour le script et le chat en direct",
+      "Integration au catalogue et au moteur de live commerce"
+    ],
+    "premiere_etape": "Choisir une categorie a fort volume et catalogue propre, et scripter une session pilote avant d'ouvrir le trafic.",
+    "playbook": [
+      {
+        "action": "Choisir une categorie a fort volume, nettoyer catalogue et prix, scripter les sessions",
+        "livrable": "Catalogue fiable + scripts de vente par produit"
+      },
+      {
+        "action": "Configurer la solution de digital human (avatar, voix) et verrouiller le cadre juridique (consentement image, mention du caractere synthetique)",
+        "livrable": "Avatar valide techniquement et juridiquement"
+      },
+      {
+        "action": "Brancher le LLM sur le script et la FAQ produits, repeter en interne",
+        "livrable": "Session pilote enregistree et validee hors trafic"
+      },
+      {
+        "action": "Lancer le pilote en heures creuses sur trafic reel, avec handoff humain sur les cas sensibles",
+        "livrable": "Conversion et engagement chat mesures vs baseline"
+      },
+      {
+        "action": "Etendre les horaires puis les categories, ajuster scripts et promotions sur les donnees de session",
+        "livrable": "Salles en quasi-continu + dashboard couts/conversion"
+      }
+    ],
+    "equipe": "1 responsable live commerce + 1 dev integration + 1 juriste (droit a l'image, transparence IA)"
+  },
+  "seo": {
+    "slug": "jd-com-joystreamer-digital-human-livestream-2024",
+    "title": "JD.com : live commerce anime par IA - cout de diffusion divise par dix (2024)",
+    "meta_description": "Le digital human JoyStreamer de JD.com anime des lives shopping sans humain : 50 M yuan de ventes sur une session et cout de diffusion reduit de 90%.",
+    "resume_citable": "En 2024, l'avatar IA du fondateur de JD.com a genere environ 50 millions de yuan de ventes et plus de 20 millions de vues en une heure, tandis que le digital human JoyStreamer reduit le cout de diffusion d'un live de 90% par rapport a un animateur humain.",
+    "faq": [
+      {
+        "q": "Qu'est-ce que JoyStreamer ?",
+        "a": "C'est le modele de digital human de JD.com qui anime des sessions de live shopping a la place d'un humain : il presente les produits, repond au chat et gere la vente."
+      },
+      {
+        "q": "Quel resultat a marque le lancement ?",
+        "a": "En avril 2024, un avatar du fondateur Richard Liu a tenu un live depassant 20 millions de vues en une heure et environ 50 millions de yuan de ventes."
+      }
+    ]
+  },
+  "logo_domain": "jd.com",
+  "stack_technique": [
+    {
+      "nom": "JoyStreamer",
+      "categorie": "plateforme",
+      "detail": "modele de digital human in-house de JD.com : avatar, synthese voix et video, animation de la session de live commerce",
+      "url": "https://www.jd.com"
+    },
+    {
+      "nom": "JoyAI LLM",
+      "categorie": "llm",
+      "detail": "LLM maison de JD alimentant le script de vente et les reponses au chat en direct",
+      "url": "https://www.jd.com"
+    },
+    {
+      "nom": "Moteur de live commerce JD",
+      "categorie": "infra",
+      "detail": "salles de livestream de l'app JD, connectees au catalogue, aux prix et aux promotions des marchands",
+      "url": "https://www.jd.com"
+    },
+    {
+      "nom": "JD Explore Academy",
+      "categorie": "integrateur",
+      "detail": "equipe R&D interne de JD.com qui a developpe et maintient le modele de digital human",
+      "url": "https://www.jd.com"
+    }
+  ]
+}

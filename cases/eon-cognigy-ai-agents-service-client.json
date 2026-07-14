@@ -1,0 +1,285 @@
+{
+  "id": "eon-cognigy-ai-agents-service-client",
+  "type_fiche": "succes",
+  "marque": "E.ON",
+  "industrie": "energie_utilities",
+  "marches_deploiement": [
+    "Allemagne",
+    "Pays-Bas"
+  ],
+  "transposable_ue": {
+    "flag": "oui",
+    "note": "Deploiement deja europeen (E.ON et sa filiale Essent aux Pays-Bas). L'orchestration multicanale collecte de gros volumes de conversations, ce qui impose un cadrage RGPD sur la retention et l'usage des transcriptions, mais le pattern est nativement compatible avec le marche UE."
+  },
+  "metier": "service client",
+  "marque_linkedin": "https://www.linkedin.com/company/e.on/",
+  "intervenants": [
+    {
+      "nom": "Nikolai Berenbrock",
+      "role": "Head of Conversational Experiences, E.ON",
+      "source_ref": "S1"
+    }
+  ],
+  "axes": {
+    "levier": "retention",
+    "touchpoints": [
+      "telephone",
+      "chat",
+      "application mobile"
+    ],
+    "etape_parcours": "post-achat",
+    "famille": "conversation",
+    "pattern": "agents conversationnels multicanaux (voix + chat)",
+    "type_ia": [
+      "IA conversationnelle",
+      "traitement du langage naturel",
+      "agents virtuels"
+    ],
+    "plateforme_stack": [
+      "Cognigy.AI"
+    ],
+    "objectif_metrique": [
+      "taux d'automatisation",
+      "volume de conversations traitees",
+      "cout de service"
+    ]
+  },
+  "implementation": "plateforme",
+  "stack_technique": [
+    {
+      "nom": "Cognigy.AI",
+      "categorie": "plateforme",
+      "detail": "Plateforme d'IA conversationnelle qui porte plus de 30 agents voix et chat; 70 % d'automatisation sur plus de 2 millions de conversations par an.",
+      "url": "https://www.cognigy.com"
+    },
+    {
+      "nom": "Connecteurs back-office E.ON",
+      "categorie": "outil",
+      "detail": "Acces aux systemes de compte, facturation et contrat pour executer releve, changement de contrat et coordonnees de paiement de bout en bout.",
+      "url": "https://www.eon.com"
+    },
+    {
+      "nom": "Agent Robin (Essent)",
+      "categorie": "outil",
+      "detail": "Agent voix et chat prime de la filiale neerlandaise, construit sur la meme brique Cognigy.AI.",
+      "url": "https://www.essent.nl"
+    },
+    {
+      "nom": "Canaux telephone et chat E.ON",
+      "categorie": "infra",
+      "detail": "Prise en charge 24 heures sur 24 sur les deux canaux, avec transfert conditionnel vers conseiller.",
+      "url": "https://www.eon.com"
+    }
+  ],
+  "objectif_business": "Automatiser les demandes repetitives sur tous les canaux pour reduire la charge et le cout des centres de contact, tout en gardant les conseillers disponibles pour les cas a forte valeur.",
+  "points_cles": ["Agents conversationnels multicanaux voix et chat pour les taches courantes de service client.", "Plateforme Cognigy.AI, plus de 30 agents en production dont Robin chez Essent.", "70% d'automatisation sur plus de 2 millions de conversations par an.", "Niveau de preuve B, statut vivant confirme."],
+  "description": "E.ON exploite un portefeuille de plus de 30 agents conversationnels construits sur Cognigy.AI, actifs au telephone et en chat, 24 heures sur 24. Ils gerent des taches courantes: releve de compteur, facturation en self-service, changement de contrat de bout en bout, mise a jour des coordonnees de paiement. Quand une demande sort de leur perimetre, un transfert vers un conseiller est prevu. La filiale neerlandaise Essent a construit sur la meme brique un agent primé, Robin, qui opere lui aussi par telephone et chat. L'ensemble traite plus de deux millions de conversations par an, avec un taux d'automatisation de 70 % cote clients et collaborateurs.",
+  "resultats": [
+    {
+      "metrique": "Taux d'automatisation des conversations",
+      "valeur": "70 %",
+      "citation_exacte": "70% automation rate",
+      "source_ref": "S1"
+    },
+    {
+      "metrique": "Conversations traitees par les agents IA, plus de 200 000 par mois",
+      "valeur": "2M+ par an",
+      "citation_exacte": "2M+ AI conversations annually",
+      "source_ref": "S1"
+    },
+    {
+      "metrique": "Agents conversationnels en production (chat et voix)",
+      "valeur": "30+ agents",
+      "citation_exacte": "30+ AI agents live",
+      "source_ref": "S1"
+    }
+  ],
+  "niveau_preuve": {
+    "niveau": "B",
+    "justification": "Etude de cas plateforme chiffree (Cognigy) avec volumes annuels et taux d'automatisation, reprise sur la page clients de l'editeur. Sources concordantes mais toutes deux du fournisseur, d'ou un niveau B et non superieur."
+  },
+  "dates": {
+    "lancement": "portefeuille conversationnel deploye sur plusieurs annees, agent Robin d'Essent primé cote 2021-2023",
+    "derniere_confirmation_activite": "2025 (etude de cas et page clients Cognigy a jour)",
+    "verifie_le": "2026-07-11",
+    "revoir_apres": "2027-01-11"
+  },
+  "statut_vivant": {
+    "statut": "confirme",
+    "note": "Plus de 30 agents en production selon l'editeur. A resurveiller apres le rachat de Cognigy par NiCE, qui peut faire evoluer le cadre contractuel."
+  },
+  "sources": [
+    {
+      "ref": "S1",
+      "type": "customer_story_plateforme",
+      "fiabilite": "T2_officiel_interesse",
+      "titre": "E.ON's AI Agents Provide Best-in-Class Service",
+      "url": "https://www.cognigy.com/en/case-study/eon",
+      "date_publication": "2025",
+      "consulte_le": "2026-07-11"
+    },
+    {
+      "ref": "S2",
+      "type": "customer_story_plateforme",
+      "fiabilite": "T2_officiel_interesse",
+      "titre": "Customer Success Stories - Cognigy",
+      "url": "https://www.cognigy.com/customer-success-stories",
+      "date_publication": "2025",
+      "consulte_le": "2026-07-11"
+    }
+  ],
+  "fonctionnement_operationnel": {
+    "cadence": "Temps reel, 24 heures sur 24, sur les canaux voix et chat.",
+    "opere_par": "Les unites metier d'E.ON, qui concoivent leurs propres flux sur Cognigy.AI, avec le support de l'editeur.",
+    "signal_pilote": "L'intention detectee dans la conversation et le taux de resolution sans humain. Si l'intention est mal classee, le transfert vers conseiller augmente et le taux d'automatisation baisse.",
+    "etapes": [
+      {
+        "etape": "Prise en charge multicanale",
+        "detail": "Le client arrive par telephone ou chat; l'agent identifie l'intention et le contexte du compte.",
+        "acteur": "IA"
+      },
+      {
+        "etape": "Execution de la tache",
+        "detail": "L'agent realise l'operation courante (releve, facturation, changement de contrat, coordonnees de paiement) de bout en bout.",
+        "acteur": "IA"
+      },
+      {
+        "etape": "Transfert conditionnel",
+        "detail": "Hors perimetre ou cas complexe, l'agent passe la main a un conseiller avec le contexte.",
+        "acteur": "IA"
+      },
+      {
+        "etape": "Amelioration continue",
+        "detail": "Les equipes analysent les conversations agregees pour ajuster les flux et le portefeuille de services.",
+        "acteur": "equipe data"
+      }
+    ]
+  },
+  "schema_flow": {
+    "statut": "documente",
+    "noeuds": [
+      {
+        "id": "client",
+        "role_generique": "humain",
+        "label": "Client E.ON"
+      },
+      {
+        "id": "voix",
+        "role_generique": "canal_conversationnel",
+        "label": "Telephone"
+      },
+      {
+        "id": "chat",
+        "role_generique": "canal_conversationnel",
+        "label": "Chat / app"
+      },
+      {
+        "id": "cognigy",
+        "role_generique": "modele_ia",
+        "label": "Agents IA Cognigy.AI",
+        "outil_documente": "Cognigy.AI"
+      },
+      {
+        "id": "backoffice",
+        "role_generique": "site_app",
+        "label": "Systemes E.ON (compte, facturation, contrat)"
+      },
+      {
+        "id": "conseiller",
+        "role_generique": "humain",
+        "label": "Conseiller"
+      }
+    ],
+    "liens": [
+      [
+        "client",
+        "voix"
+      ],
+      [
+        "client",
+        "chat"
+      ],
+      [
+        "voix",
+        "cognigy"
+      ],
+      [
+        "chat",
+        "cognigy"
+      ],
+      [
+        "cognigy",
+        "backoffice",
+        "execution self-service"
+      ],
+      [
+        "cognigy",
+        "client",
+        "reponse / operation"
+      ],
+      [
+        "cognigy",
+        "conseiller",
+        "transfert cas complexe"
+      ]
+    ]
+  },
+  "replication": {
+    "statut_epistemique": "infere",
+    "prerequis_data": [
+      "catalogue d'intentions et de taches self-service",
+      "acces API aux systemes de facturation et de contrat",
+      "historique de conversations pour l'entrainement"
+    ],
+    "prerequis_orga": [
+      "equipes metier capables de concevoir et maintenir les flux",
+      "gouvernance des transferts vers conseillers"
+    ],
+    "stack_possible": [
+      "plateforme d'IA conversationnelle (Cognigy, Kore.ai, equivalent)",
+      "connecteurs CRM et facturation",
+      "moteur voix + chat"
+    ],
+    "premiere_etape": "Choisir deux ou trois taches a fort volume et faible complexite (releve, date de facture) et les automatiser sur le chat avant d'ajouter la voix.",
+    "playbook": [
+      {
+        "action": "Choisir deux ou trois taches a fort volume et faible complexite: releve de compteur, date de facture.",
+        "livrable": "Perimetre self-service priorise avec volumes"
+      },
+      {
+        "action": "Construire les flux sur la plateforme et les connecteurs API vers facturation et contrat.",
+        "livrable": "Flux de bout en bout en environnement de test"
+      },
+      {
+        "action": "Lancer sur le chat et mesurer le taux d'automatisation.",
+        "livrable": "Premier agent en production avec tableau de bord"
+      },
+      {
+        "action": "Ajouter le canal voix sur les memes taches.",
+        "livrable": "Agent voix en production"
+      },
+      {
+        "action": "Etendre le portefeuille de taches et regler la gouvernance des transferts vers conseillers.",
+        "livrable": "Portefeuille d'agents et regles de transfert documentes"
+      }
+    ],
+    "equipe": "1-2 concepteurs de flux cote metier + 1 dev API + 1 responsable centre de contact pour la gouvernance des transferts."
+  },
+  "seo": {
+    "slug": "eon-cognigy-ai-agents-service-client",
+    "title": "E.ON : 30+ agents conversationnels IA - 70 % d'automatisation sur 2 millions de conversations",
+    "meta_description": "E.ON automatise 70 % de plus de 2 millions de conversations clients par an grace a plus de 30 agents Cognigy.AI en voix et chat, en Allemagne et aux Pays-Bas.",
+    "resume_citable": "E.ON exploite plus de 30 agents conversationnels Cognigy.AI qui automatisent 70 % de plus de deux millions de conversations clients par an, sur telephone et chat, en Allemagne et aux Pays-Bas.",
+    "faq": [
+      {
+        "q": "Quelles taches les agents IA d'E.ON traitent-ils ?",
+        "a": "Releve de compteur, facturation en self-service, changement de contrat de bout en bout et mise a jour des coordonnees de paiement, avec transfert vers un conseiller pour les cas complexes."
+      },
+      {
+        "q": "Sur quels canaux fonctionnent-ils ?",
+        "a": "Au telephone et en chat, 24 heures sur 24, avec plus de 30 agents en production dont l'agent Robin de la filiale Essent aux Pays-Bas."
+      }
+    ]
+  },
+  "logo_domain": "eon.com"
+}

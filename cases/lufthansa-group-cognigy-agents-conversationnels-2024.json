@@ -1,0 +1,286 @@
+{
+  "id": "lufthansa-group-cognigy-agents-conversationnels-2024",
+  "type_fiche": "succes",
+  "marque": "Lufthansa Group",
+  "groupe": "Deutsche Lufthansa AG",
+  "industrie": "voyage_hospitality",
+  "marches_deploiement": [
+    "Allemagne",
+    "Autriche",
+    "Suisse",
+    "international (multilingue)"
+  ],
+  "transposable_ue": {
+    "flag": "oui",
+    "note": "Deja deploye en UE (compagnies du groupe Lufthansa, Austrian Airlines, SWISS). Les contraintes RGPD et AI Act sont donc integrees a l'execution : information sur l'IA, gestion du consentement pour la voix, minimisation des donnees de reservation traitees."
+  },
+  "metier": "service client",
+  "intervenants": [
+    {
+      "nom": "Nick Allgaier",
+      "role": "Product Manager Digital Assistants, Lufthansa Group Hub Airlines",
+      "source_ref": "S1"
+    }
+  ],
+  "agences": [
+    {
+      "nom": "Cognigy (NiCE)",
+      "role": "Plateforme d'IA conversationnelle utilisee pour construire et exploiter les agents multilingues a l'echelle",
+      "source_ref": "S1"
+    }
+  ],
+  "axes": {
+    "levier": "retention",
+    "touchpoints": [
+      "site web",
+      "live-chat",
+      "SMS",
+      "voix"
+    ],
+    "etape_parcours": "post-achat",
+    "famille": "conversation",
+    "pattern": "agent conversationnel service client multilingue",
+    "type_ia": [
+      "NLU",
+      "IA conversationnelle",
+      "traduction temps reel"
+    ],
+    "plateforme_stack": [
+      "Cognigy.AI"
+    ],
+    "objectif_metrique": [
+      "volume de conversations traitees",
+      "temps de traitement moyen (AHT)",
+      "taux de resolution"
+    ]
+  },
+  "implementation": "plateforme",
+  "objectif_business": "Remplacer un chatbot interne rigide, mis en difficulte par les pics de demande pendant et apres le covid, par une plateforme capable d'absorber des millions de conversations dans plusieurs langues et de liberer les agents pour les cas complexes.",
+  "points_cles": ["Agents conversationnels multilingues du service client sur les compagnies du hub Lufthansa.", "Plateforme Cognigy.AI, NLU, traduction temps reel, canaux chat, SMS et voix.", "16 millions de conversations par an, pics jusqu'a 375 000 interactions par jour.", "Preuve B, statut confirme : etude de cas Cognigy et interview du responsable produit."],
+  "description": "Le groupe Lufthansa opere ses assistants numeriques sur la plateforme Cognigy pour les compagnies du hub (Lufthansa, Austrian Airlines, SWISS). Un client peut poser sa question sur le site, en live-chat, par SMS ou par la voix, dans sa langue, et l'agent gere les gestes courants : rebooking, information voyage, recherche de vol alternatif, demande de remboursement. La traduction en temps reel permet de servir un public international avec un meme socle. Quand la demande depasse l'automatisable, le relais passe a un conseiller humain.",
+  "resultats": [
+    {
+      "metrique": "Conversations traitees par an avec l'IA",
+      "valeur": "16 millions",
+      "citation_exacte": "16 million conversations throughout the year with AI",
+      "source_ref": "S1"
+    },
+    {
+      "metrique": "Pic d'interactions en une journee de forte demande",
+      "valeur": "jusqu'a 375 000",
+      "citation_exacte": "peak days seeing up to 375,000 interactions",
+      "source_ref": "S1"
+    },
+    {
+      "metrique": "Repartition annuelle declaree: environ 10 M en chat, plus d'1 M en voix",
+      "valeur": "10 M chat, 1 M voix",
+      "citation_exacte": "10 million interactions per year over chat...over one million...on voice",
+      "source_ref": "S2"
+    }
+  ],
+  "niveau_preuve": {
+    "niveau": "B",
+    "justification": "Etude de cas plateforme Cognigy chiffree (volume annuel et pic journalier), completee par une interview publique du responsable produit Lufthansa (VUX World) qui detaille l'echelle chat et voix. Chiffres durs cotes vendor, corrobores par le declaratif dirigeant."
+  },
+  "dates": {
+    "lancement": "deploiement Cognigy engage pendant la periode covid ; monte en charge en 2023-2024",
+    "derniere_confirmation_activite": "2024 (etude de cas Cognigy et interview publique)",
+    "verifie_le": "2026-07-11",
+    "revoir_apres": "2027-01-11"
+  },
+  "statut_vivant": {
+    "statut": "confirme",
+    "note": "Agents en production sur les compagnies du hub Lufthansa, avec un volume annuel de l'ordre de 16 millions de conversations documente par le fournisseur."
+  },
+  "sources": [
+    {
+      "ref": "S1",
+      "type": "customer_story_plateforme",
+      "fiabilite": "T2_officiel_interesse",
+      "titre": "Lufthansa - Cognigy Case Study",
+      "url": "https://www.cognigy.com/en/case-study/lufthansa",
+      "date_publication": "2024",
+      "consulte_le": "2026-07-11"
+    },
+    {
+      "ref": "S2",
+      "type": "conference",
+      "fiabilite": "T4_secondaire",
+      "titre": "The AI chatbot serving 10m customers a year, with Nick Allgaier, Lufthansa",
+      "url": "https://vux.world/the-ai-chatbot-serving-10m-customers-a-year-with-nick-allgaier-lufthansa/",
+      "date_publication": "2024",
+      "consulte_le": "2026-07-11"
+    }
+  ],
+  "fonctionnement_operationnel": {
+    "cadence": "Temps reel, en continu, avec des pics saisonniers et de crise (meteo, greves) qui multiplient le volume.",
+    "opere_par": "Equipe Digital Assistants du groupe Lufthansa, sur la plateforme Cognigy.",
+    "signal_pilote": "L'intention du client croisee avec l'etat de sa reservation et les disponibilites de vols alternatifs. Si le flux d'inventaire et de statut de vol se degrade pendant une crise, les propositions de rebooking deviennent fausses au moment ou le volume explose.",
+    "etapes": [
+      {
+        "etape": "Entree multicanale",
+        "detail": "Le client ecrit ou parle sur le site, en live-chat, par SMS ou par la voix, dans sa langue.",
+        "acteur": "client"
+      },
+      {
+        "etape": "Comprehension et traduction",
+        "detail": "L'agent identifie l'intention et applique la traduction temps reel pour un socle multilingue unique.",
+        "acteur": "IA"
+      },
+      {
+        "etape": "Traitement de la demande",
+        "detail": "Rebooking, information voyage, recherche de vol alternatif ou remboursement sont executes ou prepares.",
+        "acteur": "IA"
+      },
+      {
+        "etape": "Escalade humaine",
+        "detail": "Les cas complexes ou sensibles sont transmis a un conseiller avec le contexte de la conversation.",
+        "acteur": "IA"
+      }
+    ]
+  },
+  "schema_flow": {
+    "statut": "documente",
+    "noeuds": [
+      {
+        "id": "user",
+        "role_generique": "humain",
+        "label": "Client Lufthansa Group"
+      },
+      {
+        "id": "chan",
+        "role_generique": "canal_conversationnel",
+        "label": "Web / live-chat / SMS / voix"
+      },
+      {
+        "id": "ai",
+        "role_generique": "modele_ia",
+        "label": "Agent conversationnel multilingue",
+        "outil_documente": "Cognigy.AI"
+      },
+      {
+        "id": "res",
+        "role_generique": "data_source",
+        "label": "Reservation, statut vol et inventaire"
+      },
+      {
+        "id": "agent",
+        "role_generique": "humain",
+        "label": "Conseiller service client"
+      }
+    ],
+    "liens": [
+      [
+        "user",
+        "chan"
+      ],
+      [
+        "chan",
+        "ai"
+      ],
+      [
+        "ai",
+        "res"
+      ],
+      [
+        "res",
+        "ai"
+      ],
+      [
+        "ai",
+        "user",
+        "reponse / rebooking"
+      ],
+      [
+        "ai",
+        "agent",
+        "escalade"
+      ]
+    ]
+  },
+  "replication": {
+    "statut_epistemique": "infere",
+    "prerequis_data": [
+      "acces temps reel au statut des vols et a l'inventaire",
+      "acces aux dossiers de reservation",
+      "base de connaissances multilingue"
+    ],
+    "prerequis_orga": [
+      "equipe produit dediee aux assistants",
+      "processus d'escalade vers les conseillers",
+      "capacite a tenir la charge lors des pics de crise"
+    ],
+    "stack_possible": [
+      "plateforme d'IA conversationnelle d'entreprise",
+      "brique de traduction temps reel",
+      "connecteurs vers les systemes de reservation"
+    ],
+    "premiere_etape": "Deployer un agent sur un canal (live-chat) et une langue pour le rebooking, puis etendre aux autres langues et canaux.",
+    "playbook": [
+      {
+        "action": "Cadrer les cas d'usage prioritaires (rebooking, information voyage, remboursement) sur un canal et une langue",
+        "livrable": "Perimetre v1 + parcours conversationnels cibles"
+      },
+      {
+        "action": "Connecter les systemes de reservation, le statut des vols et l'inventaire",
+        "livrable": "Connecteurs temps reel testes, y compris en mode degrade"
+      },
+      {
+        "action": "Construire et lancer l'agent en live-chat avec escalade vers un conseiller, contexte de conversation transmis",
+        "livrable": "Agent v1 en production sur un canal, taux de resolution mesure"
+      },
+      {
+        "action": "Etendre les langues via la traduction temps reel et ajouter SMS puis voix",
+        "livrable": "Socle multilingue multicanal en production"
+      },
+      {
+        "action": "Tester la tenue de charge sur les pics (meteo, greves) et industrialiser la mesure",
+        "livrable": "Plan de capacite + tableau de bord volume, resolution, AHT"
+      }
+    ],
+    "equipe": "1 product manager assistants + 2-3 devs conversationnels et integration + les equipes service client pour les parcours d'escalade"
+  },
+  "seo": {
+    "slug": "lufthansa-group-cognigy-agents-conversationnels-2024",
+    "title": "Lufthansa Group : agents conversationnels Cognigy - 16 millions de conversations par an (2024)",
+    "meta_description": "Le groupe Lufthansa opere ses assistants service client sur Cognigy et traite 16 millions de conversations par an, avec des pics a 375 000 interactions par jour, en plusieurs langues.",
+    "resume_citable": "Le groupe Lufthansa traite 16 millions de conversations par an sur la plateforme Cognigy, avec des pics jusqu'a 375 000 interactions par jour, pour le rebooking et le service client multilingue.",
+    "faq": [
+      {
+        "q": "Quelle technologie utilise le service client IA de Lufthansa ?",
+        "a": "La plateforme d'IA conversationnelle Cognigy, avec traduction en temps reel, pour les compagnies du hub Lufthansa, Austrian Airlines et SWISS."
+      },
+      {
+        "q": "Quel volume l'IA de Lufthansa traite-t-elle ?",
+        "a": "Environ 16 millions de conversations par an, avec des pics allant jusqu'a 375 000 interactions dans une seule journee de forte demande."
+      }
+    ]
+  },
+  "logo_domain": "lufthansa.com",
+  "stack_technique": [
+    {
+      "nom": "Cognigy.AI",
+      "categorie": "plateforme",
+      "detail": "plateforme d'IA conversationnelle d'entreprise (NLU, orchestration des dialogues) qui porte les assistants des compagnies du hub, 16 millions de conversations par an",
+      "url": "https://www.cognigy.com"
+    },
+    {
+      "nom": "Canaux chat, SMS et voix Cognigy",
+      "categorie": "outil",
+      "detail": "meme socle conversationnel expose en live-chat (environ 10 M d'interactions par an), SMS et voix (plus d'1 M par an)",
+      "url": "https://www.cognigy.com"
+    },
+    {
+      "nom": "Traduction temps reel",
+      "categorie": "outil",
+      "detail": "permet de servir un public international multilingue avec un socle de dialogues unique",
+      "url": "https://www.cognigy.com"
+    },
+    {
+      "nom": "Systemes de reservation et statut vol Lufthansa",
+      "categorie": "infra",
+      "detail": "acces temps reel aux dossiers de reservation, au statut des vols et a l'inventaire pour le rebooking ; le signal critique en periode de crise",
+      "url": "https://www.lufthansa.com"
+    }
+  ]
+}

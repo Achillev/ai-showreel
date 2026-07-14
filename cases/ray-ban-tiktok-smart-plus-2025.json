@@ -1,0 +1,264 @@
+{
+  "id": "ray-ban-tiktok-smart-plus-2025",
+  "type_fiche": "succes",
+  "marque": "Ray-Ban",
+  "groupe": "EssilorLuxottica",
+  "industrie": "retail_ecom",
+  "marches_deploiement": [
+    "Etats-Unis"
+  ],
+  "transposable_ue": {
+    "flag": "oui_avec_adaptations",
+    "note": "Smart+ Catalog Ads est disponible en Europe. Le ciblage repose sur les signaux TikTok et le catalogue produit, sans data first-party exportee ; exposition RGPD limitee. Le tracking de conversion cote UE demande le mode consenti et la CAPI TikTok correctement configures."
+  },
+  "metier": "marketing, e-commerce, acquisition payante",
+  "intervenants": [
+    {
+      "nom": "Roberta Atzori",
+      "role": "Performance Marketing Manager, Ray-Ban",
+      "source_ref": "S1"
+    }
+  ],
+  "axes": {
+    "levier": "acquisition",
+    "touchpoints": [
+      "paid social",
+      "TikTok",
+      "catalog ads / DPA"
+    ],
+    "etape_parcours": "achat",
+    "famille": "optimisation_automatisation",
+    "pattern": "campagne paid entierement automatisee (enchères, ciblage, placement) branchee sur le catalogue produit",
+    "type_ia": [
+      "optimisation d'enchères et de ciblage",
+      "selection creative automatisee"
+    ],
+    "plateforme_stack": [
+      "TikTok Smart+ Catalog Ads",
+      "TikTok Symphony"
+    ],
+    "objectif_metrique": [
+      "ROAS",
+      "CPA",
+      "taux de conversion"
+    ]
+  },
+  "implementation": "plateforme",
+  "stack_technique": [
+    {
+      "nom": "TikTok Smart+ Catalog Ads",
+      "categorie": "plateforme",
+      "detail": "Campagne automatisee de TikTok : ciblage, encheres, placements et selection creative geres par l'IA a partir du catalogue.",
+      "url": "https://ads.tiktok.com"
+    },
+    {
+      "nom": "TikTok Symphony",
+      "categorie": "plateforme",
+      "detail": "Suite IA de TikTok citee dans la stack du cas.",
+      "url": "https://ads.tiktok.com"
+    },
+    {
+      "nom": "Catalogue produit TikTok",
+      "categorie": "outil",
+      "detail": "Flux produit (lunettes) branche sur TikTok pour servir dynamiquement le bon article a chaque utilisateur.",
+      "url": "https://ads.tiktok.com"
+    },
+    {
+      "nom": "TikTok Pixel + Events API",
+      "categorie": "outil",
+      "detail": "Signal de conversion (achat) remonte a la plateforme ; sans lui l'optimisation tourne a l'aveugle.",
+      "url": "https://ads.tiktok.com"
+    }
+  ],
+  "objectif_business": "Vendre des lunettes en direct pendant le pic estival americain sans multiplier le pilotage manuel de campagnes, en laissant l'automatisation TikTok chercher les acheteurs et servir les produits du catalogue.",
+  "points_cles": ["Campagne de vente entierement automatisee par IA branchee sur le catalogue produit.", "Outil TikTok Smart+ Catalog Ads, avec la suite Symphony et le pixel.", "ROAS en hausse de 42%, CPA en baisse de 50%, conversion en hausse de 47%.", "Preuve B, statut confirme sur un produit TikTok standard."],
+  "description": "Ray-Ban a diffuse ses campagnes de vente sur TikTok via Smart+ Catalog Ads, la formule automatisee de TikTok. L'annonceur fournit le catalogue produit et un objectif de performance ; l'IA de la plateforme gere le ciblage, les enchères, les placements et la selection des creations, puis sert dynamiquement le bon produit a chaque utilisateur. Ray-Ban a active cette approche sur le marche americain pendant les mois d'ete, periode de forte demande sur les lunettes de soleil. Compare a un pilotage manuel, le passage en automatisation a produit un cout par acquisition en baisse de 50 pour cent, un taux de conversion en hausse de 47 pour cent et un ROAS superieur de 42 pour cent. C'est un cas d'optimisation et d'automatisation de l'achat media, pas de generation creative : l'IA arbitre le budget et le ciblage, elle ne fabrique pas la publicite.",
+  "resultats": [
+    {
+      "metrique": "ROAS vs pilotage manuel",
+      "valeur": "+42%",
+      "citation_exacte": "42% higher return on ad spend (ROAS)",
+      "source_ref": "S1"
+    },
+    {
+      "metrique": "Cout par acquisition (CPA)",
+      "valeur": "-50%",
+      "citation_exacte": "50% decrease in Cost Per Acquisition",
+      "source_ref": "S1"
+    },
+    {
+      "metrique": "Taux de conversion",
+      "valeur": "+47%",
+      "citation_exacte": "conversion rate skyrocketed by 47%",
+      "source_ref": "S1"
+    }
+  ],
+  "niveau_preuve": {
+    "niveau": "B",
+    "justification": "Etude de cas plateforme TikTok chiffree citant nommement Ray-Ban et son Performance Marketing Manager ; source officielle interessee, d'ou B. Le produit Smart+ est confirme par le communique de lancement TikTok."
+  },
+  "dates": {
+    "lancement": "2024-2025 (Smart+ lance en octobre 2024, campagne Ray-Ban sur le pic estival)",
+    "derniere_confirmation_activite": "2025",
+    "verifie_le": "2026-07-11",
+    "revoir_apres": "2027-01-11"
+  },
+  "statut_vivant": {
+    "statut": "confirme",
+    "note": "Smart+ est un produit standard du catalogue TikTok Ads, enrichi en 2025 (Advertising Week New York). L'activation reste disponible et documentee."
+  },
+  "sources": [
+    {
+      "ref": "S1",
+      "type": "customer_story_plateforme",
+      "fiabilite": "T2_officiel_interesse",
+      "titre": "How Ray-Ban Drove Sales With Smart+ Catalog Ads",
+      "url": "https://ads.tiktok.com/business/en-US/inspiration/ray-ban-automation-tiktok-success-story",
+      "date_publication": "2025",
+      "consulte_le": "2026-07-11"
+    },
+    {
+      "ref": "S2",
+      "type": "blog_officiel",
+      "fiabilite": "T2_officiel_interesse",
+      "titre": "Automate, Measure and Maximize: TikTok Is Building For The Future With New Performance Advertising Solutions (Smart+)",
+      "url": "https://newsroom.tiktok.com/tiktok-is-building-for-the-future-with-smart-plus",
+      "date_publication": "2024-10",
+      "consulte_le": "2026-07-11"
+    }
+  ],
+  "fonctionnement_operationnel": {
+    "cadence": "Continu, en temps reel : l'enchère et le ciblage se recalculent a chaque impression sur toute la duree de la campagne.",
+    "opere_par": "Equipe acquisition / performance marketing de la marque, qui alimente le catalogue et fixe l'objectif ; l'arbitrage quotidien est delegue a TikTok.",
+    "signal_pilote": "L'evenement de conversion remonte a TikTok (achat via pixel et CAPI). Si le signal d'achat manque ou est mal attribue, l'IA optimise a l'aveugle et la performance decroche.",
+    "etapes": [
+      {
+        "etape": "Connexion du catalogue",
+        "detail": "Le flux produit (lunettes) est branche sur TikTok pour servir des annonces dynamiques.",
+        "acteur": "equipe e-commerce / marketing"
+      },
+      {
+        "etape": "Definition de l'objectif",
+        "detail": "La marque fixe un objectif de conversion ou de ROAS et un budget ; le reste est laisse a Smart+.",
+        "acteur": "equipe acquisition"
+      },
+      {
+        "etape": "Optimisation automatique",
+        "detail": "L'IA choisit audiences, placements, enchères et creations, et sert le produit adapte a chaque utilisateur.",
+        "acteur": "IA (TikTok Smart+)"
+      },
+      {
+        "etape": "Lecture et arbitrage budget",
+        "detail": "L'equipe suit ROAS et CPA, ajuste le budget et le catalogue, ne micro-pilote plus les enchères.",
+        "acteur": "equipe acquisition"
+      }
+    ]
+  },
+  "schema_flow": {
+    "statut": "approche_type",
+    "noeuds": [
+      {
+        "id": "catalog",
+        "role_generique": "data_source",
+        "label": "Catalogue produit (lunettes)"
+      },
+      {
+        "id": "smartplus",
+        "role_generique": "modele_ia",
+        "label": "Automatisation enchères / ciblage / creative",
+        "outil_documente": "TikTok Smart+ Catalog Ads"
+      },
+      {
+        "id": "feed",
+        "role_generique": "paid_platform",
+        "label": "Diffusion TikTok (feed)"
+      },
+      {
+        "id": "conv",
+        "role_generique": "data_source",
+        "label": "Signal de conversion (pixel + CAPI)"
+      },
+      {
+        "id": "team",
+        "role_generique": "humain",
+        "label": "Equipe acquisition Ray-Ban"
+      }
+    ],
+    "liens": [
+      [
+        "catalog",
+        "smartplus"
+      ],
+      [
+        "smartplus",
+        "feed"
+      ],
+      [
+        "feed",
+        "conv"
+      ],
+      [
+        "conv",
+        "smartplus",
+        "conversions renvoyees pour reoptimiser"
+      ],
+      [
+        "team",
+        "smartplus",
+        "objectif + budget"
+      ]
+    ]
+  },
+  "replication": {
+    "statut_epistemique": "infere",
+    "prerequis_data": [
+      "catalogue produit structure",
+      "pixel + CAPI TikTok avec evenement d'achat fiable"
+    ],
+    "prerequis_orga": [
+      "budget media TikTok dedie",
+      "acceptation de ceder le pilotage fin a l'automatisation"
+    ],
+    "stack_possible": [
+      "TikTok Smart+ Catalog Ads",
+      "connecteur catalogue e-commerce"
+    ],
+    "premiere_etape": "Connecter le catalogue produit et l'evenement d'achat, puis lancer une campagne Smart+ Catalog Ads contre un objectif de ROAS.",
+    "playbook": [
+      {
+        "action": "Brancher le catalogue produit et le tracking (pixel + Events API) avec un evenement d'achat fiable.",
+        "livrable": "Flux produit valide et achat qui remonte dans TikTok Ads."
+      },
+      {
+        "action": "Lancer une campagne Smart+ Catalog Ads avec un objectif de ROAS ou de conversion et un budget de test.",
+        "livrable": "Campagne automatisee en diffusion."
+      },
+      {
+        "action": "Laisser la phase d'apprentissage tourner, suivre ROAS et CPA sans micro-piloter les encheres.",
+        "livrable": "Lecture stabilisee vs campagne manuelle de reference."
+      },
+      {
+        "action": "Arbitrer : scaler le budget, ajuster le catalogue ou l'objectif selon la performance.",
+        "livrable": "Decision budget et regles de gestion documentees."
+      }
+    ],
+    "equipe": "1 media buyer + 1 integrateur e-commerce pour le flux catalogue et l'Events API."
+  },
+  "seo": {
+    "slug": "ray-ban-tiktok-smart-plus-2025",
+    "title": "Ray-Ban : achat TikTok automatise par IA (Smart+) - +42% de ROAS, -50% de CPA (2025)",
+    "meta_description": "Ray-Ban a bascule ses campagnes de vente TikTok sur Smart+ Catalog Ads : ROAS +42%, CPA -50% et taux de conversion +47% vs pilotage manuel.",
+    "resume_citable": "Ray-Ban a diffuse ses campagnes de vente sur TikTok via Smart+ Catalog Ads (achat media pilote par IA) et a obtenu un ROAS superieur de 42%, un CPA en baisse de 50% et un taux de conversion en hausse de 47% face au pilotage manuel.",
+    "faq": [
+      {
+        "q": "Qu'est-ce que TikTok Smart+ Catalog Ads ?",
+        "a": "La formule automatisee de TikTok : l'annonceur fournit son catalogue et un objectif, l'IA gere ciblage, enchères, placements et selection creative, et sert dynamiquement le bon produit a chaque utilisateur."
+      },
+      {
+        "q": "L'IA cree-t-elle la publicite de Ray-Ban ?",
+        "a": "Non. Dans ce cas, l'IA optimise et automatise l'achat media (enchères, ciblage, budget). C'est de l'optimisation, pas de la generation creative."
+      }
+    ]
+  },
+  "logo_domain": "ray-ban.com"
+}

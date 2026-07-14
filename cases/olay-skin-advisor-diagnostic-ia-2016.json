@@ -1,0 +1,290 @@
+{
+  "id": "olay-skin-advisor-diagnostic-ia-2016",
+  "type_fiche": "succes",
+  "marque": "Olay",
+  "groupe": "Procter & Gamble",
+  "industrie": "luxe_beaute",
+  "marches_deploiement": [
+    "Etats-Unis",
+    "Chine",
+    "Deploiement mondial"
+  ],
+  "transposable_ue": {
+    "flag": "oui_avec_adaptations",
+    "note": "Le diagnostic repose sur l'analyse d'un selfie, donnee biometrique au sens du RGPD. Consentement explicite et base legale requis, traitement de preference cote client ou avec minimisation. Sous AI Act, un outil de diagnostic peau grand public reste hors haut risque mais exige transparence sur le fait que la sortie est indicative, pas medicale."
+  },
+  "metier": "e-commerce, marketing",
+  "intervenants": [
+    {
+      "nom": "Dr. Frauke Neuser",
+      "role": "Principal Scientist, Olay (P&G)",
+      "source_ref": "S3"
+    }
+  ],
+  "agences": [
+    {
+      "nom": "Nara Logics",
+      "role": "Developpement du moteur de recommandation IA du Skin Advisor",
+      "source_ref": "S2"
+    },
+    {
+      "nom": "NVIDIA",
+      "role": "Plateforme GPU / deep learning pour l'analyse d'image",
+      "source_ref": "S3"
+    }
+  ],
+  "axes": {
+    "levier": "activation_conversion",
+    "touchpoints": [
+      "site de marque Olay",
+      "app / web app Skin Advisor",
+      "e-commerce"
+    ],
+    "etape_parcours": "considération",
+    "famille": "personnalisation",
+    "pattern": "diagnostic peau IA sur selfie menant a une reco produit",
+    "type_ia": [
+      "computer vision",
+      "deep learning",
+      "moteur de recommandation"
+    ],
+    "plateforme_stack": [
+      "custom/in-house (Nara Logics)",
+      "NVIDIA GPU / deep learning"
+    ],
+    "objectif_metrique": [
+      "taux de conversion",
+      "taux de rebond",
+      "panier moyen"
+    ]
+  },
+  "implementation": "custom",
+  "stack_technique": [
+    {
+      "nom": "Modele de vision deep learning P&G",
+      "categorie": "llm",
+      "detail": "Modele d'analyse d'image developpe pour Olay, entraine sur des millions de selfies : estimation de l'age de la peau et detection des zones a traiter.",
+      "url": "https://www.pg.com"
+    },
+    {
+      "nom": "Nara Logics",
+      "categorie": "outil",
+      "detail": "Moteur de recommandation IA qui associe le profil de peau et les reponses au questionnaire aux produits et routines Olay.",
+      "url": "https://www.naralogics.com"
+    },
+    {
+      "nom": "NVIDIA (plateforme GPU / deep learning)",
+      "categorie": "infra",
+      "detail": "Plateforme GPU utilisee pour l'entrainement et l'inference des modeles d'analyse d'image.",
+      "url": "https://www.nvidia.com"
+    },
+    {
+      "nom": "Skin Advisor (web app Olay)",
+      "categorie": "outil",
+      "detail": "Web app grand public qui porte le parcours selfie, questionnaire, diagnostic et recommandation, reliee a l'e-commerce Olay.",
+      "url": "https://www.olay.com"
+    }
+  ],
+  "objectif_business": "Reduire la friction et l'incertitude a l'achat de skincare en ligne en remplacant le catalogue par un diagnostic personnalise, pour convertir mieux et faire monter le panier.",
+  "description": "Olay Skin Advisor demande un selfie et quelques reponses, puis estime un age de la peau et pointe les zones a traiter par deep learning. A partir de la, l'outil propose une routine et des produits Olay adaptes. Lance en 2016 apres deux ans de developpement et l'analyse de millions de selfies, il a d'abord tourne en beta en Amerique du Nord avant un deploiement mondial, dont la Chine. P&G rapporte que la plateforme a double le taux de conversion des ventes, reduit d'un tiers le taux de rebond des visiteurs en ligne et fait monter le panier moyen. En Chine, le panier moyen a progresse de 40 pour cent. L'outil a engage plus de 4 millions de consommateurs et sert des recommandations a des dizaines de milliers d'utilisateurs chaque semaine, 94 pour cent d'entre eux recevant des suggestions personnalisees. Le moteur de recommandation a ete developpe avec Nara Logics, l'analyse d'image s'appuyant sur la plateforme GPU de NVIDIA.",
+  "resultats": [
+    {
+      "metrique": "Taux de conversion des ventes",
+      "valeur": "double",
+      "citation_exacte": "doubled its sales conversion rate",
+      "source_ref": "S1"
+    },
+    {
+      "metrique": "Taux de rebond en ligne",
+      "valeur": "-1/3",
+      "citation_exacte": "reduced its bounce rate for online visitors by one-third",
+      "source_ref": "S1"
+    },
+    {
+      "metrique": "Panier moyen en Chine",
+      "valeur": "+40%",
+      "citation_exacte": "average basket size increased 40%",
+      "source_ref": "S1"
+    },
+    {
+      "metrique": "Consommateurs engages",
+      "valeur": "plus de 4 millions",
+      "citation_exacte": "engaged more than 4 million consumers",
+      "source_ref": "S1"
+    }
+  ],
+  "niveau_preuve": {
+    "niveau": "C",
+    "justification": "Chiffres attribues a P&G et repris par plusieurs titres presse (VentureBeat, Marketing Dive, The Drum) citant nommement Olay ; pas de detail isole dans les resultats financiers du groupe, donc C plutot que A."
+  },
+  "dates": {
+    "lancement": "2016",
+    "derniere_confirmation_activite": "2024",
+    "verifie_le": "2026-07-11",
+    "revoir_apres": "2027-01-11"
+  },
+  "statut_vivant": {
+    "statut": "confirme",
+    "note": "Skin Advisor reste la porte d'entree diagnostic de la marque Olay, deploye mondialement et toujours reference dans les analyses du secteur beaute en 2024."
+  },
+  "sources": [
+    {
+      "ref": "S1",
+      "type": "presse",
+      "fiabilite": "T3_presse_etablie",
+      "titre": "How Olay used AI to double its conversion rate",
+      "url": "https://venturebeat.com/ai/how-olay-used-ai-to-double-its-conversion-rate",
+      "date_publication": "2019",
+      "consulte_le": "2026-07-11"
+    },
+    {
+      "ref": "S2",
+      "type": "presse",
+      "fiabilite": "T3_presse_etablie",
+      "titre": "VentureBeat: Olay doubles conversion rates with AI-powered skincare advisor",
+      "url": "https://www.marketingdive.com/news/venturebeat-olay-doubles-conversion-rates-with-ai-powered-skincare-advisor/528229/",
+      "date_publication": "2019",
+      "consulte_le": "2026-07-11"
+    },
+    {
+      "ref": "S3",
+      "type": "presse",
+      "fiabilite": "T3_presse_etablie",
+      "titre": "How P&G harnessed AI to create 'first of its kind' Olay Skin Advisor",
+      "url": "https://www.thedrum.com/news/how-pg-harnessed-ai-create-first-its-kind-olay-skin-advisor",
+      "date_publication": "2018",
+      "consulte_le": "2026-07-11"
+    }
+  ],
+  "fonctionnement_operationnel": {
+    "cadence": "Temps reel a chaque session utilisateur ; reentrainement periodique du modele sur de nouveaux selfies et retours produits.",
+    "opere_par": "Equipe data science Olay/P&G pour le modele, equipe e-commerce et CRM pour l'integration au parcours d'achat.",
+    "signal_pilote": "La qualite du selfie et la coherence entre le score de peau et la reco. Un cadrage ou un eclairage mauvais degrade le diagnostic et fait chuter la confiance dans la reco.",
+    "etapes": [
+      {
+        "etape": "Capture et analyse du selfie",
+        "detail": "Estimation de l'age de la peau et detection des zones a traiter par vision et deep learning.",
+        "acteur": "IA"
+      },
+      {
+        "etape": "Questionnaire complementaire",
+        "detail": "Quelques questions sur les preoccupations et les habitudes affinent le profil.",
+        "acteur": "utilisateur"
+      },
+      {
+        "etape": "Recommandation de routine",
+        "detail": "Le moteur associe le profil aux produits Olay et propose une routine.",
+        "acteur": "IA (moteur Nara Logics)"
+      },
+      {
+        "etape": "Passage a l'achat",
+        "detail": "Les produits recommandes sont pousses vers le panier e-commerce, mesure sur conversion et panier.",
+        "acteur": "e-commerce"
+      }
+    ]
+  },
+  "schema_flow": {
+    "statut": "documente",
+    "noeuds": [
+      {
+        "id": "selfie",
+        "role_generique": "data_source",
+        "label": "Selfie + reponses utilisateur"
+      },
+      {
+        "id": "vision",
+        "role_generique": "modele_ia",
+        "label": "Analyse d'image (age de peau, zones)",
+        "outil_documente": "deep learning sur GPU NVIDIA"
+      },
+      {
+        "id": "reco",
+        "role_generique": "modele_ia",
+        "label": "Moteur de recommandation",
+        "outil_documente": "Nara Logics"
+      },
+      {
+        "id": "site",
+        "role_generique": "site_app",
+        "label": "Web app Skin Advisor / e-commerce Olay"
+      }
+    ],
+    "liens": [
+      [
+        "selfie",
+        "vision"
+      ],
+      [
+        "vision",
+        "reco"
+      ],
+      [
+        "reco",
+        "site"
+      ],
+      [
+        "site",
+        "reco",
+        "retour d'usage pour affiner"
+      ]
+    ]
+  },
+  "replication": {
+    "statut_epistemique": "infere",
+    "playbook": [
+      {
+        "action": "Choisir une categorie a forte hesitation d'achat et cadrer le diagnostic : quels attributs de peau menent a quels produits du catalogue.",
+        "livrable": "Mapping profil de peau vers catalogue, valide par les equipes produit"
+      },
+      {
+        "action": "Integrer une API de skin analysis du marche (Haut.AI, Perfect Corp, ModiFace) avec le questionnaire complementaire, en marque blanche sur le site.",
+        "livrable": "Prototype de diagnostic fonctionnel de bout en bout"
+      },
+      {
+        "action": "Securiser le volet biometrique : consentement explicite, minimisation, mention claire que la sortie est indicative et non medicale.",
+        "livrable": "Parcours de consentement valide juridiquement"
+      },
+      {
+        "action": "Lancer un A/B test diagnostic vs page catalogue standard et mesurer conversion, panier et rebond.",
+        "livrable": "Read de test avec decision go/no-go"
+      },
+      {
+        "action": "Industrialiser : integration CRM, routine complete multi-produits, boucle de retour d'usage pour affiner les recommandations.",
+        "livrable": "Feature en production avec suivi continu"
+      }
+    ],
+    "equipe": "1 dev front + 1 dev back/integration + 1 PM e-commerce, avec un juriste pour le volet biometrique ; data scientist necessaire seulement en voie custom",
+    "prerequis_data": [
+      "corpus d'images de peau labellisees pour entrainer ou calibrer le modele",
+      "catalogue produit structure avec attributs peau",
+      "consentement biometrique conforme RGPD"
+    ],
+    "prerequis_orga": [
+      "equipe data science ou partenaire vision",
+      "gouvernance sur le caractere non medical de la sortie"
+    ],
+    "stack_possible": [
+      "API de skin analysis tierce (type Haut.AI, Perfect Corp, ModiFace)",
+      "moteur de recommandation produit",
+      "integration au CMS / e-commerce"
+    ],
+    "premiere_etape": "Tester un diagnostic peau sur une categorie a forte hesitation et mesurer conversion et panier contre la page catalogue standard."
+  },
+  "seo": {
+    "slug": "olay-skin-advisor-diagnostic-ia-2016",
+    "title": "Olay : diagnostic peau IA sur selfie - taux de conversion double (2016)",
+    "meta_description": "Olay Skin Advisor analyse un selfie par deep learning pour recommander une routine : conversion doublee, rebond -1/3, panier +40% en Chine, 4M consommateurs.",
+    "resume_citable": "Olay (P&G) a lance en 2016 Skin Advisor, un diagnostic peau par deep learning sur selfie qui a double le taux de conversion, reduit le rebond d'un tiers, fait monter le panier moyen de 40 pour cent en Chine et engage plus de 4 millions de consommateurs.",
+    "faq": [
+      {
+        "q": "Comment fonctionne Olay Skin Advisor ?",
+        "a": "L'utilisateur prend un selfie ; un modele de deep learning estime l'age de la peau et les zones a traiter, puis un moteur de recommandation propose une routine Olay adaptee."
+      },
+      {
+        "q": "Quels resultats Olay revendique-t-il ?",
+        "a": "Un taux de conversion double, un taux de rebond en ligne reduit d'un tiers, un panier moyen en hausse de 40 pour cent en Chine et plus de 4 millions de consommateurs engages."
+      }
+    ]
+  },
+  "logo_domain": "olay.com"
+}

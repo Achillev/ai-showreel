@@ -1,0 +1,299 @@
+{
+  "type_fiche": "succes",
+  "id": "att-ask-att-genai-assistant-2023",
+  "marque": "AT&T",
+  "industrie": "telco",
+  "marches_deploiement": [
+    "Etats-Unis (deploiement interne a l'echelle du groupe)"
+  ],
+  "transposable_ue": {
+    "flag": "oui_avec_adaptations",
+    "note": "Assistant interne branche sur des donnees d'entreprise, avec gouvernance et acces controle. En UE, cadrer l'usage RH (information des salaries), la donnee client si elle entre dans les cas care, et l'hebergement des donnees. AI Act : risque limite pour l'usage interne, vigilance sur les cas touchant le client."
+  },
+  "metier": "Operations internes et service client (assistant salarie)",
+  "marque_linkedin": "https://www.linkedin.com/company/att",
+  "axes": {
+    "levier": "retention",
+    "touchpoints": [
+      "poste de travail des salaries (assistant interne)",
+      "outils de care et de resolution",
+      "systemes internes appelant l'IA en API"
+    ],
+    "etape_parcours": "post-achat / service et back-office",
+    "famille": "conversation",
+    "pattern": "Assistant genAI d'entreprise gouverne : un LLM branche sur la connaissance interne, ouvert a des dizaines de milliers de salaries et appele en masse par des systemes automatises",
+    "type_ia": [
+      "LLM generatif",
+      "RAG sur documents et bases internes",
+      "agents specialises par cas d'usage"
+    ],
+    "plateforme_stack": [
+      "Microsoft Azure OpenAI",
+      "Azure Cosmos DB",
+      "plateforme interne Ask AT&T"
+    ],
+    "objectif_metrique": [
+      "temps de resolution en care",
+      "productivite salarie",
+      "economies operationnelles"
+    ]
+  },
+  "implementation": "hybride",
+  "stack_technique": [
+    {
+      "nom": "Azure OpenAI",
+      "categorie": "llm",
+      "detail": "Modeles OpenAI serves via Azure, brique LLM d'Ask AT&T ; les versions de modeles exactes ne sont pas detaillees publiquement.",
+      "url": "https://azure.microsoft.com/en-us/products/ai-services/openai-service"
+    },
+    {
+      "nom": "Azure Cosmos DB",
+      "categorie": "infra",
+      "detail": "Base de donnees Azure supportant la plateforme et ses cas d'usage a fort volume.",
+      "url": "https://azure.microsoft.com/en-us/products/cosmos-db"
+    },
+    {
+      "nom": "Ask AT&T (plateforme interne)",
+      "categorie": "plateforme",
+      "detail": "Socle gouverne construit par AT&T : RAG sur la connaissance interne, controle des acces, journalisation, API pour les systemes internes ; 71 solutions construites dessus.",
+      "url": "https://www.att.com"
+    },
+    {
+      "nom": "Microsoft Azure",
+      "categorie": "infra",
+      "detail": "Infrastructure cloud du dispositif, operee dans le cadre du partenariat AT&T-Microsoft.",
+      "url": "https://azure.microsoft.com"
+    }
+  ],
+  "objectif_business": "Mettre un assistant IA fiable entre les mains des salaries pour raccourcir la resolution client et industrialiser les gains de productivite, sous gouvernance.",
+  "points_cles": ["Assistant genAI interne gouverne (Ask AT&T) pour les salaries.", "LLM Azure OpenAI plus RAG sur la connaissance interne, appele en API.", "Temps de resolution care -33%, 71 solutions, ~9 milliards de tokens par jour.", "Preuve B, statut vivant confirme."],
+  "description": "Ask AT&T est l'assistant genAI interne d'AT&T, lance en juin 2023. Il donne acces a un LLM branche sur la connaissance de l'entreprise pour resumer des documents, interroger des contrats, ecrire du code, analyser le reseau ou repondre a des questions generales. L'usage a grossi vite : plus de 80 000 salaries y accedaient des l'ete 2024, plus de 100 000 fin 2025. AT&T dit avoir deploye 71 solutions genAI distinctes et reduit de 33 pour cent le temps de resolution des conseillers care. La plateforme traite environ 9 milliards de tokens par jour, l'essentiel venant de systemes internes qui l'appellent en API, pas d'humains. AT&T relie ces solutions a des economies annuelles chiffrees en centaines de millions, dans le cadre d'un programme de reduction de couts a l'echelle du groupe.",
+  "fonctionnement_operationnel": {
+    "cadence": "Temps reel pour l'usage salarie et pour les appels systeme. La base de connaissance est mise a jour en continu ; les modeles et garde-fous sont revus regulierement.",
+    "opere_par": "Une equipe data science / IA centrale (gouvernance, modeles, plateforme), les metiers qui construisent leurs cas d'usage dessus, Microsoft pour l'infrastructure Azure.",
+    "signal_pilote": "La gouvernance : chaque cas d'usage passe par un controle avant mise en production. Sans ce filtre, un assistant ouvert a 100 000 personnes propage des reponses fausses ou des fuites de donnees a grande echelle.",
+    "etapes": [
+      {
+        "etape": "Ouvrir un socle gouverne",
+        "detail": "Une plateforme unique donne acces au LLM avec controle des acces, journalisation et regles d'usage, plutot que des outils sauvages par equipe.",
+        "acteur": "Equipe data science / IA"
+      },
+      {
+        "etape": "Laisser les metiers construire",
+        "detail": "Chaque equipe branche son cas (care, code, contrats, reseau) sur le socle via RAG. 71 solutions ont ete montees ainsi.",
+        "acteur": "Metiers + IA"
+      },
+      {
+        "etape": "Industrialiser via API",
+        "detail": "Les systemes internes appellent l'assistant en masse (l'essentiel des 9 milliards de tokens par jour), pas seulement des humains a leur poste.",
+        "acteur": "Systemes internes / IA"
+      },
+      {
+        "etape": "Mesurer et gouverner en continu",
+        "detail": "Suivi du temps de resolution care, de l'adoption et des economies ; revue des garde-fous a mesure que l'usage grossit.",
+        "acteur": "Equipe IA + management"
+      }
+    ]
+  },
+  "resultats": [
+    {
+      "metrique": "Temps de resolution en care",
+      "valeur": "-33%",
+      "citation_exacte": "AT&T reduced customer care resolution time by 33%",
+      "source_ref": "S1"
+    },
+    {
+      "metrique": "Solutions genAI deployees",
+      "valeur": "71",
+      "citation_exacte": "71 unique generative AI solutions serving over 100,000 employees",
+      "source_ref": "S1"
+    },
+    {
+      "metrique": "Volume traite",
+      "valeur": "~9 Md tokens/jour",
+      "citation_exacte": "9 billion tokens processed daily",
+      "source_ref": "S1"
+    },
+    {
+      "metrique": "Salaries utilisateurs, de 80 000+ en 2024 a 100 000+ en 2025",
+      "valeur": "100 000+ salaries",
+      "citation_exacte": "more than 80,000 employees access",
+      "source_ref": "S2"
+    }
+  ],
+  "niveau_preuve": {
+    "niveau": "B",
+    "justification": "Chiffres operationnels confirmes par une customer story Microsoft avec porte-parole AT&T nomme (71 solutions, 100 000 salaries, 9 milliards de tokens/jour, -33 pour cent de temps de resolution care) et repris par la presse specialisee. Source vendor plus presse : solide sur l'echelle et l'adoption ; les economies restent agregees au niveau groupe, pas isolees par cas."
+  },
+  "dates": {
+    "lancement": "Juin 2023 (Ask AT&T)",
+    "derniere_confirmation_activite": "2025-11 (customer story Microsoft : 100 000+ salaries, 71 solutions)",
+    "verifie_le": "2026-07-11",
+    "revoir_apres": "2027-01-11"
+  },
+  "statut_vivant": {
+    "statut": "confirme",
+    "note": "Adoption en hausse continue de 2023 a fin 2025 (80 000 puis 100 000+ salaries), 71 solutions en production et partenariat Azure actif. Programme structurellement installe."
+  },
+  "sources": [
+    {
+      "ref": "S1",
+      "type": "customer_story_plateforme",
+      "titre": "AT&T creates digital coworkers with Azure to scale AI that works",
+      "url": "https://www.microsoft.com/en/customers/story/25679-at-and-t-azure",
+      "date_publication": "2025-11-18",
+      "consulte_le": "2026-07-11",
+      "fiabilite": "T2_officiel_interesse"
+    },
+    {
+      "ref": "S2",
+      "type": "presse",
+      "titre": "How AT&T's HR team steers 80,000 workers in using its internal generative AI tool",
+      "url": "https://www.worklife.news/technology/ask-att-ai-tool/",
+      "date_publication": "2024-07-30",
+      "consulte_le": "2026-07-11",
+      "fiabilite": "T4_secondaire"
+    },
+    {
+      "ref": "S3",
+      "type": "blog_officiel",
+      "titre": "AT&T's New Generative AI Tool Will Help Support Employees",
+      "url": "https://about.att.com/blogs/2023/generative-ai.html",
+      "date_publication": "2023-06",
+      "consulte_le": "2026-07-11",
+      "fiabilite": "T1_primaire"
+    }
+  ],
+  "schema_flow": {
+    "statut": "documente",
+    "noeuds": [
+      {
+        "id": "knowledge",
+        "role_generique": "data_source",
+        "label": "Connaissance interne (documents, contrats, code, donnees reseau)"
+      },
+      {
+        "id": "platform",
+        "role_generique": "modele_ia",
+        "label": "Socle Ask AT&T (LLM + RAG + gouvernance)",
+        "outil_documente": "Azure OpenAI + Cosmos DB"
+      },
+      {
+        "id": "solutions",
+        "role_generique": "modele_ia",
+        "label": "71 cas d'usage specialises (care, code, contrats, reseau)"
+      },
+      {
+        "id": "humans",
+        "role_generique": "humain",
+        "label": "100 000+ salaries a leur poste"
+      },
+      {
+        "id": "systems",
+        "role_generique": "site_app",
+        "label": "Systemes internes appelant l'IA en API"
+      }
+    ],
+    "liens": [
+      [
+        "knowledge",
+        "platform"
+      ],
+      [
+        "platform",
+        "solutions"
+      ],
+      [
+        "solutions",
+        "humans"
+      ],
+      [
+        "solutions",
+        "systems"
+      ],
+      [
+        "systems",
+        "platform",
+        "appels en masse (majorite des tokens)"
+      ]
+    ]
+  },
+  "replication": {
+    "statut_epistemique": "infere",
+    "prerequis_data": [
+      "Connaissance interne accessible (documents, procedures, contrats, bases metier)",
+      "Un socle unique avec controle des acces et journalisation",
+      "Regles de gouvernance et de conformite sur la donnee exposee"
+    ],
+    "prerequis_orga": [
+      "Une equipe IA centrale qui tient la plateforme et les garde-fous",
+      "Des metiers autorises a construire leurs cas dessus",
+      "Une conduite du changement / formation a l'echelle"
+    ],
+    "stack_possible": [
+      "Azure OpenAI, ou Vertex AI, ou un LLM du marche en RAG",
+      "Base vectorielle sur la doc interne",
+      "Couche de gouvernance et de logging des prompts"
+    ],
+    "premiere_etape": "Monter un socle gouverne avec un premier cas care a fort volume, mesurer le temps de resolution avant/apres, puis ouvrir la construction a d'autres equipes une fois les garde-fous eprouves.",
+    "playbook": [
+      {
+        "action": "Choisir un premier cas care a fort volume et poser la gouvernance : controle des acces, journalisation des prompts, regles d'usage et de conformite.",
+        "livrable": "Charte d'usage et perimetre du pilote valides."
+      },
+      {
+        "action": "Monter le socle (LLM + RAG sur la documentation care) et le mettre entre les mains d'un groupe pilote de conseillers.",
+        "livrable": "Assistant pilote en service, temps de resolution mesure."
+      },
+      {
+        "action": "Comparer le temps de resolution avant/apres, corriger les reponses fausses et durcir les garde-fous.",
+        "livrable": "Bilan chiffre du pilote et liste de correctifs appliques."
+      },
+      {
+        "action": "Ouvrir le socle aux autres equipes (code, contrats, reseau) avec un processus de revue avant mise en production de chaque cas.",
+        "livrable": "3-5 cas d'usage en production sous gouvernance."
+      },
+      {
+        "action": "Exposer l'assistant en API aux systemes internes et suivre adoption, volumes et economies.",
+        "livrable": "API interne active, tableau de bord d'usage et d'economies."
+      }
+    ],
+    "equipe": "1 equipe IA centrale (2-4 ingenieurs + 1 responsable gouvernance) + des referents metier par cas d'usage + la conduite du changement pour l'adoption."
+  },
+  "seo": {
+    "slug": "att-ask-att-genai-100000-salaries-2023",
+    "title": "AT&T : Ask AT&T, assistant genAI a 100 000 salaries - resolution care -33% (2023)",
+    "meta_description": "Ask AT&T, assistant genAI interne (Azure OpenAI) lance en 2023 : 100 000+ salaries, 71 solutions, temps de resolution care reduit de 33%.",
+    "resume_citable": "AT&T a deploye Ask AT&T, un assistant genAI interne gouverne (Azure OpenAI) utilise par plus de 100 000 salaries via 71 solutions, traitant ~9 milliards de tokens par jour et reduisant de 33% le temps de resolution du service client.",
+    "faq": [
+      {
+        "q": "Est-ce un chatbot client ?",
+        "a": "Non : c'est un assistant interne pour les salaries. Le benefice client vient indirectement d'un care plus rapide (-33% de temps de resolution)."
+      },
+      {
+        "q": "D'ou viennent les 9 milliards de tokens par jour ?",
+        "a": "L'essentiel provient de systemes internes qui appellent l'assistant en API, pas d'humains tapant des requetes a leur poste."
+      }
+    ]
+  },
+  "agences": [
+    {
+      "nom": "Microsoft",
+      "role": "Fournisseur de l'infrastructure IA (Azure OpenAI, Cosmos DB)",
+      "source_ref": "S1"
+    }
+  ],
+  "intervenants": [
+    {
+      "nom": "Mark Austin",
+      "role": "VP Data Science, AT&T (porte-parole du deploiement)",
+      "source_ref": "S1"
+    },
+    {
+      "nom": "Andy Markus",
+      "role": "Chief Data Officer, AT&T",
+      "source_ref": "S2"
+    }
+  ],
+  "logo_domain": "att.com"
+}

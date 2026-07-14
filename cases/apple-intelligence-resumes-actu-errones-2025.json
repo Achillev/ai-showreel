@@ -1,0 +1,206 @@
+{
+  "id": "apple-intelligence-resumes-actu-errones-2025",
+  "type_fiche": "echec_retrait",
+  "marque": "Apple",
+  "industrie": "autre",
+  "marches_deploiement": [
+    "Etats-Unis",
+    "Royaume-Uni",
+    "marches Apple Intelligence anglophones"
+  ],
+  "transposable_ue": {
+    "flag": "oui",
+    "note": "Directement transposable : resumer automatiquement des notifications de presse et se tromper expose au reproche de desinformation et engage la responsabilite de qui affiche le resume. En UE, l'AI Act impose la transparence sur les contenus generes, et la reprise erronee d'un media identifie touche a la protection de sa marque. Le probleme est generique : un resume genere attribue a une source tierce sans controle."
+  },
+  "metier": "produit / experience utilisateur (notifications)",
+  "axes": {
+    "levier": "retention",
+    "touchpoints": [
+      "notifications iOS",
+      "ecran de verrouillage",
+      "resumes de presse"
+    ],
+    "etape_parcours": "fidelite",
+    "famille": "generation",
+    "pattern": "resume automatique de contenus tiers (notifications)",
+    "type_ia": [
+      "LLM generatif",
+      "resume automatique"
+    ],
+    "plateforme_stack": [
+      "Apple Intelligence"
+    ],
+    "objectif_metrique": [
+      "engagement notifications",
+      "utilite percue de la fonction"
+    ]
+  },
+  "implementation": "plateforme",
+  "stack_technique": [
+    {
+      "nom": "Apple Intelligence",
+      "categorie": "plateforme",
+      "detail": "Couche IA d'Apple integree a iOS, dont la fonction de resume et de regroupement automatique des notifications en cause dans ce cas.",
+      "url": "https://www.apple.com/apple-intelligence/"
+    },
+    {
+      "nom": "LLM de resume d'Apple Intelligence",
+      "categorie": "llm",
+      "detail": "Modele generatif d'Apple charge de resumer les notifications ; les sources ne nomment pas le modele exact derriere la fonction.",
+      "url": "https://www.apple.com"
+    },
+    {
+      "nom": "iOS (ecran de verrouillage, notifications)",
+      "categorie": "plateforme",
+      "detail": "Canal de diffusion des resumes ; la suspension pour les categories actualites et divertissement est arrivee via la beta iOS 18.3.",
+      "url": "https://www.apple.com/ios/"
+    }
+  ],
+  "objectif_business": "Reduire la charge de notifications en regroupant et resumant automatiquement les alertes, dont celles des applications de presse, pour rendre l'ecran de verrouillage plus lisible.",
+  "description": "A l'automne 2024, Apple deploie dans Apple Intelligence une fonction qui resume et regroupe les notifications, y compris celles des medias. La fonction produit des resumes faux attribues a des sources reconnues. Un resume attribue a la BBC affirme faussement que Luigi Mangione s'est tire dessus. D'autres alertes erronees annoncent l'arrestation de Benyamin Netanyahou, la confirmation de Marco Rubio, le limogeage de Pete Hegseth, ou une victoire de Luke Littler avant qu'il ne joue. La BBC porte plainte aupres d'Apple. Debut janvier 2025, Apple promet un correctif, puis suspend la fonction pour les categories actualites et divertissement via une beta iOS 18.3.",
+  "resultats": [
+    {
+      "metrique": "Fausse affirmation attribuee a la BBC sur Luigi Mangione",
+      "valeur": "Faux resume BBC",
+      "citation_exacte": "had shot himself",
+      "source_ref": "S1"
+    },
+    {
+      "metrique": "Reconnue en beta, mise a jour promise, puis suspendue pour l'actualite",
+      "valeur": "Fonction suspendue",
+      "citation_exacte": "Apple Intelligence features are in beta",
+      "source_ref": "S1"
+    }
+  ],
+  "niveau_preuve": {
+    "niveau": "C",
+    "justification": "Presse etablie (The Register, CNN, CBC) documente nommement la marque, les resumes errones, la plainte de la BBC et la suspension. Le communique d'Apple appuie les faits. Pas de document financier ni judiciaire, donc C."
+  },
+  "dates": {
+    "lancement": "2024 automne (deploiement des resumes de notifications)",
+    "derniere_confirmation_activite": "2025-01-16 (suspension de la fonction pour l'actualite, beta iOS 18.3)",
+    "verifie_le": "2026-07-11",
+    "revoir_apres": "2027-07-11"
+  },
+  "statut_vivant": {
+    "statut": "confirme",
+    "note": "Suspension confirmee : Apple a desactive les resumes de notifications pour les categories actualites et divertissement en janvier 2025, avec un affichage clarifie de la nature generee du resume, en attendant une amelioration."
+  },
+  "sources": [
+    {
+      "ref": "S1",
+      "type": "presse",
+      "fiabilite": "T3_presse_etablie",
+      "titre": "Apple responds to BBC complaint over AI accuracy",
+      "url": "https://www.theregister.com/2025/01/07/apple_responds_bbc_complaint/",
+      "date_publication": "2025-01-07",
+      "consulte_le": "2026-07-11"
+    },
+    {
+      "ref": "S2",
+      "type": "presse",
+      "fiabilite": "T3_presse_etablie",
+      "titre": "Apple is pulling its AI-generated notifications for news after generating fake headlines",
+      "url": "https://www.cnn.com/2025/01/16/media/apple-ai-news-fake-headlines",
+      "date_publication": "2025-01-16",
+      "consulte_le": "2026-07-11"
+    },
+    {
+      "ref": "S3",
+      "type": "presse",
+      "fiabilite": "T3_presse_etablie",
+      "titre": "Apple pulls AI-generated news summaries after feature repeatedly produced inaccurate headlines",
+      "url": "https://www.cbc.ca/news/business/apple-news-summaries-fake-headlines-1.7434136",
+      "date_publication": "2025-01-16",
+      "consulte_le": "2026-07-11"
+    }
+  ],
+  "post_mortem": {
+    "ce_qui_s_est_passe": "A l'automne 2024, Apple active dans Apple Intelligence le resume automatique des notifications, y compris celles des medias. La fonction genere des resumes faux attribues a des sources reconnues, dont un resume attribue a la BBC affirmant que Luigi Mangione s'est tire dessus. La BBC se plaint aupres d'Apple. D'autres resumes errones sur des personnalites politiques et sportives sont documentes. Debut janvier 2025, Apple dit travailler a un correctif et clarifier l'affichage, puis suspend la fonction pour les categories actualites et divertissement via une beta iOS 18.3 vers le 16 janvier.",
+    "raison_echec": "Un LLM resumait des notifications de presse et produisait des affirmations fausses presentees sous le nom du media source. Le format court et l'attribution a une marque de presse reconnue donnaient a l'erreur l'apparence d'une information verifiee. La fonction manquait d'un controle sur la fidelite du resume et d'une separation visuelle claire entre le contenu du media et le texte genere par Apple.",
+    "date_retrait": "2025-01-16 (suspension pour les categories actualites et divertissement, beta iOS 18.3).",
+    "cout_estime": "Cout reputationnel : plainte publique de la BBC, couverture presse mondiale, remise en cause d'une fonction phare d'Apple Intelligence. Pas de cout financier direct publie.",
+    "signaux_avant_coureurs": "Infere : resumer en une ligne des depeches sensibles et les attribuer a un media est un exercice ou l'erreur est grave et visible. Le risque etait connu des le principe : compresser une information factuelle a l'extreme augmente la chance de la deformer, et l'attribuer a une source de confiance amplifie le degat.",
+    "lecons_avec_recul": "Infere : un resume genere destine a etre attribue a un tiers doit etre distingue visuellement du contenu original et teste sur sa fidelite, categorie par categorie. L'actualite sensible n'est pas un bon terrain de rodage pour une fonction en beta. Separer clairement ce que dit la source de ce que dit la machine est la premiere protection.",
+    "le_pattern_reste_il_valide": "Infere : oui, le resume automatique de notifications reste un pattern utile et Apple a choisi de le corriger plutot que de l'abandonner. L'echec condamne le deploiement de cette fonction sur l'actualite sans garde-fous de fidelite, pas la categorie. Sur des contenus moins sensibles et avec un affichage clair de la nature generee, le pattern tient."
+  },
+  "schema_flow": {
+    "statut": "approche_type",
+    "noeuds": [
+      {
+        "id": "notif",
+        "role_generique": "data_source",
+        "label": "Notifications d'applications (dont presse)"
+      },
+      {
+        "id": "llm",
+        "role_generique": "modele_ia",
+        "label": "Resume automatique des notifications",
+        "outil_documente": "Apple Intelligence"
+      },
+      {
+        "id": "device",
+        "role_generique": "site_app",
+        "label": "Ecran de verrouillage iOS"
+      },
+      {
+        "id": "user",
+        "role_generique": "humain",
+        "label": "Utilisateur et medias sources"
+      }
+    ],
+    "liens": [
+      [
+        "notif",
+        "llm"
+      ],
+      [
+        "llm",
+        "device"
+      ],
+      [
+        "device",
+        "user"
+      ],
+      [
+        "user",
+        "llm",
+        "reaction (plainte, suspension)"
+      ]
+    ]
+  },
+  "replication": {
+    "statut_epistemique": "infere",
+    "prerequis_data": [
+      "flux de notifications a resumer",
+      "jeux de test de fidelite par categorie"
+    ],
+    "prerequis_orga": [
+      "QA sur la fidelite des resumes",
+      "regles d'attribution et d'affichage du genere"
+    ],
+    "stack_possible": [
+      "LLM de resume contraint",
+      "verification de fidelite (faithfulness)",
+      "signalisation claire du texte genere"
+    ],
+    "premiere_etape": "Separer visuellement le resume genere du contenu source, exclure d'abord les categories sensibles (actualite), et tester la fidelite du resume avant d'ouvrir la fonction."
+  },
+  "seo": {
+    "slug": "apple-intelligence-resumes-actu-errones-2025",
+    "title": "Apple Intelligence : resumes d'actu faux attribues a la BBC - fonction suspendue (2025)",
+    "meta_description": "En janvier 2025, Apple Intelligence produit des resumes de notifications faux attribues a des medias. Apple suspend la fonction pour l'actualite.",
+    "resume_citable": "En janvier 2025, Apple a suspendu les resumes de notifications d'Apple Intelligence pour l'actualite apres des resumes faux attribues a des medias, dont une fausse affirmation attribuee a la BBC sur Luigi Mangione.",
+    "faq": [
+      {
+        "q": "Pourquoi Apple a-t-il suspendu les resumes de notifications ?",
+        "a": "La fonction produisait des resumes faux attribues a des sources reconnues, dont un resume attribue a la BBC affirmant a tort que Luigi Mangione s'etait tire dessus. Apres la plainte de la BBC, Apple a suspendu la fonction pour les categories actualites et divertissement via une beta iOS 18.3 en janvier 2025."
+      },
+      {
+        "q": "Le resume automatique de notifications est-il un pattern condamne ?",
+        "a": "Non. Apple a choisi de corriger plutot que d'abandonner. L'echec porte sur le deploiement sur l'actualite sensible sans controle de fidelite ni separation claire du texte genere, pas sur la categorie elle-meme."
+      }
+    ]
+  },
+  "logo_domain": "apple.com"
+}

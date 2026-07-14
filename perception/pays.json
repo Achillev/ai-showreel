@@ -1,0 +1,227 @@
+{
+  "verifie_le": "2026-07-11",
+  "note_methodologique": "Toutes les valeurs proviennent des documents primaires consultes le 2026-07-11 : PDF Ipsos AI Monitor 2026 (32 pays, 23 532 adultes de moins de 75 ans, terrain 20 mars - 3 avril 2026, panel en ligne Global Advisor ; dans les marches emergents les echantillons sont plus urbains, connectes et diplomes que la population generale), rapport Pew Research Center d'octobre 2025 (Spring 2025 Global Attitudes Survey, 25 pays, 28 333 adultes hors USA du 8 janvier au 26 avril 2025 + 3 605 adultes USA), rapport pays KPMG / University of Melbourne 2025 (47 pays, plus de 48 000 repondants, terrain novembre 2024 - mi-janvier 2025, 1 001 a 1 098 repondants par pays). Le flash poll Edelman de novembre 2025 n'a pas pu etre verifie sur edelman.com (acces bloque) ; il est source via Al Jazeera (T3).",
+  "pays": [
+    {
+      "nom": "Moyenne globale",
+      "code": "global",
+      "chiffres": [
+        { "stat": "Les produits et services utilisant l'IA me rendent enthousiaste (moyenne 32 pays)", "valeur": "51%", "annee": "2026", "source_ref": "S1" },
+        { "stat": "Les produits et services utilisant l'IA me rendent nerveux (moyenne 32 pays)", "valeur": "50%", "annee": "2026", "source_ref": "S1" },
+        { "stat": "Les produits et services utilisant l'IA ont plus de benefices que d'inconvenients (moyenne 32 pays)", "valeur": "55%", "annee": "2026", "source_ref": "S1" },
+        { "stat": "Je fais confiance aux entreprises qui utilisent l'IA pour proteger mes donnees personnelles (moyenne 32 pays)", "valeur": "47%", "annee": "2026", "source_ref": "S1" },
+        { "stat": "Les produits et services utilisant l'IA devraient avoir l'obligation de declarer cet usage (moyenne 32 pays)", "valeur": "80%", "annee": "2026", "source_ref": "S1" },
+        { "stat": "L'IA a profondement change ma vie quotidienne ces 3-5 dernieres annees (moyenne 32 pays)", "valeur": "54%", "annee": "2026", "source_ref": "S1" },
+        { "stat": "Plus inquiets qu'enthousiastes face a l'usage croissant de l'IA au quotidien (mediane 25 pays ; 42% autant l'un que l'autre, 16% plus enthousiastes)", "valeur": "34%", "annee": "2025", "source_ref": "S2" },
+        { "stat": "Prets a faire confiance aux systemes d'IA (moyenne 47 pays ; 66% utilisent deja l'IA regulierement, 70% jugent une regulation necessaire)", "valeur": "46%", "annee": "2025", "source_ref": "S3" }
+      ],
+      "lecture": "Le monde est coupe en deux a parts presque egales : 51% d'enthousiastes, 50% de nerveux, et de plus en plus souvent les memes personnes. L'axe est geographique - Asie et Amerique latine enthousiastes, Anglosphere et Europe nerveuses - mais un consensus traverse tout : 80% veulent que l'usage de l'IA soit declare. Pour une marque globale, la transparence est le seul message qui fonctionne partout.",
+      "sources": [
+        { "ref": "S1", "institut": "Ipsos", "etude": "Ipsos AI Monitor 2026 (32 pays, 23 532 adultes <75 ans, terrain 20 mars - 3 avril 2026)", "annee": "2026", "url": "https://resources.ipsos.com/rs/297-CXJ-795/images/Ipsos-AI-Monitor-2026.pdf", "fiabilite": "T1_primaire", "consulte_le": "2026-07-11" },
+        { "ref": "S2", "institut": "Pew Research Center", "etude": "How People Around the World View AI (Spring 2025 Global Attitudes Survey, 25 pays)", "annee": "2025", "url": "https://www.pewresearch.org/global/2025/10/15/how-people-around-the-world-view-ai/", "fiabilite": "T1_primaire", "consulte_le": "2026-07-11" },
+        { "ref": "S3", "institut": "KPMG / University of Melbourne", "etude": "Trust, attitudes and use of artificial intelligence: A global study 2025 (47 pays, 48 000+ repondants)", "annee": "2025", "url": "https://kpmg.com/xx/en/our-insights/ai-and-technology/trust-attitudes-and-use-of-ai.html", "fiabilite": "T1_primaire", "consulte_le": "2026-07-11" }
+      ]
+    },
+    {
+      "nom": "France",
+      "code": "fr",
+      "chiffres": [
+        { "stat": "Les produits et services utilisant l'IA me rendent enthousiaste (40% en 2025, 36% en 2023)", "valeur": "33%", "annee": "2026", "source_ref": "S1" },
+        { "stat": "Les produits et services utilisant l'IA me rendent nerveux (50% en 2025)", "valeur": "49%", "annee": "2026", "source_ref": "S1" },
+        { "stat": "L'IA a plus de benefices que d'inconvenients (41% en 2025)", "valeur": "38%", "annee": "2026", "source_ref": "S1" },
+        { "stat": "Je fais confiance aux entreprises qui utilisent l'IA pour proteger mes donnees personnelles (31% en 2025, 35% en 2024)", "valeur": "26%", "annee": "2026", "source_ref": "S1" },
+        { "stat": "Je fais confiance a l'IA pour ne pas discriminer (38% en 2025)", "valeur": "37%", "annee": "2026", "source_ref": "S1" },
+        { "stat": "Plus inquiets qu'enthousiastes face a l'usage croissant de l'IA (49% autant l'un que l'autre, 15% plus enthousiastes)", "valeur": "35%", "annee": "2025", "source_ref": "S2" },
+        { "stat": "Font confiance a la France pour reguler efficacement l'usage de l'IA (45% peu ou pas confiance)", "valeur": "47%", "annee": "2025", "source_ref": "S2" },
+        { "stat": "Prets a faire confiance aux systemes d'IA (61% acceptent ou approuvent l'IA, 81% inquiets d'issues negatives, 71% jugent une regulation necessaire)", "valeur": "33%", "annee": "2025", "source_ref": "S3" }
+      ],
+      "lecture": "Le point noir francais, c'est la donnee : 26% seulement croient que les entreprises utilisant l'IA protegeront leurs donnees personnelles, en recul de 5 points en un an, et l'enthousiasme baisse (33%, -7 points). Une marque qui deploie de l'IA client en France la vend par les garanties - protection des donnees, recours humain, usage declare - pas par l'effet demonstration. La promesse d'innovation seule ne convainc que le tiers du marche.",
+      "sources": [
+        { "ref": "S1", "institut": "Ipsos", "etude": "Ipsos AI Monitor 2026 (32 pays, 23 532 adultes <75 ans, terrain 20 mars - 3 avril 2026)", "annee": "2026", "url": "https://resources.ipsos.com/rs/297-CXJ-795/images/Ipsos-AI-Monitor-2026.pdf", "fiabilite": "T1_primaire", "consulte_le": "2026-07-11" },
+        { "ref": "S2", "institut": "Pew Research Center", "etude": "How People Around the World View AI (Spring 2025 Global Attitudes Survey, sondage telephonique en France)", "annee": "2025", "url": "https://www.pewresearch.org/global/2025/10/15/how-people-around-the-world-view-ai/", "fiabilite": "T1_primaire", "consulte_le": "2026-07-11" },
+        { "ref": "S3", "institut": "KPMG / University of Melbourne", "etude": "Trust, attitudes and use of AI: Country insights report 2025 (fiche France, 1 001-1 098 repondants par pays)", "annee": "2025", "url": "https://mbs.edu/-/media/PDF/Research/Trust-attitudes-and-use-of-AI_Country-Insights-Report.pdf", "fiabilite": "T1_primaire", "consulte_le": "2026-07-11" }
+      ]
+    },
+    {
+      "nom": "Allemagne",
+      "code": "de",
+      "chiffres": [
+        { "stat": "Les produits et services utilisant l'IA me rendent enthousiaste (45% en 2025)", "valeur": "37%", "annee": "2026", "source_ref": "S1" },
+        { "stat": "Les produits et services utilisant l'IA me rendent nerveux (46% en 2025)", "valeur": "41%", "annee": "2026", "source_ref": "S1" },
+        { "stat": "L'IA a plus de benefices que d'inconvenients (49% en 2025, soit -12 points en un an)", "valeur": "37%", "annee": "2026", "source_ref": "S1" },
+        { "stat": "Je fais confiance aux entreprises qui utilisent l'IA pour proteger mes donnees personnelles (41% en 2025)", "valeur": "42%", "annee": "2026", "source_ref": "S1" },
+        { "stat": "Plus inquiets qu'enthousiastes face a l'usage croissant de l'IA (53% autant l'un que l'autre, 17% plus enthousiastes)", "valeur": "29%", "annee": "2025", "source_ref": "S2" },
+        { "stat": "Font confiance a l'Allemagne pour reguler efficacement l'usage de l'IA", "valeur": "70%", "annee": "2025", "source_ref": "S2" },
+        { "stat": "Prets a faire confiance aux systemes d'IA (67% acceptent ou approuvent l'IA, 71% jugent une regulation necessaire)", "valeur": "32%", "annee": "2025", "source_ref": "S3" },
+        { "stat": "Font confiance a l'IA (flash poll Edelman, repris par Al Jazeera)", "valeur": "39%", "annee": "2025", "source_ref": "S4" }
+      ],
+      "lecture": "L'Allemagne n'est pas anxieuse, elle est desabusee : la nervosite recule (41%) mais la perception des benefices s'effondre en meme temps (37%, -12 points en un an). La confiance passe par le cadre institutionnel - 70% font confiance a la regulation allemande, un des scores les plus hauts de l'enquete Pew. Pour une marque, l'argument conformite (AI Act, RGPD, certification) porte plus que la promesse d'innovation, et il faut demontrer un benefice concret plutot que le declarer.",
+      "sources": [
+        { "ref": "S1", "institut": "Ipsos", "etude": "Ipsos AI Monitor 2026 (32 pays, 23 532 adultes <75 ans, terrain 20 mars - 3 avril 2026)", "annee": "2026", "url": "https://resources.ipsos.com/rs/297-CXJ-795/images/Ipsos-AI-Monitor-2026.pdf", "fiabilite": "T1_primaire", "consulte_le": "2026-07-11" },
+        { "ref": "S2", "institut": "Pew Research Center", "etude": "How People Around the World View AI (Spring 2025 Global Attitudes Survey, sondage telephonique en Allemagne)", "annee": "2025", "url": "https://www.pewresearch.org/global/2025/10/15/how-people-around-the-world-view-ai/", "fiabilite": "T1_primaire", "consulte_le": "2026-07-11" },
+        { "ref": "S3", "institut": "KPMG / University of Melbourne", "etude": "Trust, attitudes and use of AI: Country insights report 2025 (fiche Allemagne)", "annee": "2025", "url": "https://mbs.edu/-/media/PDF/Research/Trust-attitudes-and-use-of-AI_Country-Insights-Report.pdf", "fiabilite": "T1_primaire", "consulte_le": "2026-07-11" },
+        { "ref": "S4", "institut": "Edelman (repris par Al Jazeera)", "etude": "Flash poll Edelman Trust Barometer sur la confiance dans l'IA, novembre 2025", "annee": "2025", "url": "https://www.aljazeera.com/economy/2025/11/19/trust-in-ai-far-higher-in-china-than-west-poll-shows", "fiabilite": "T3_presse_etablie", "consulte_le": "2026-07-11" }
+      ]
+    },
+    {
+      "nom": "Royaume-Uni",
+      "code": "gb",
+      "chiffres": [
+        { "stat": "Les produits et services utilisant l'IA me rendent enthousiaste (37% en 2025, 42% en 2023)", "valeur": "29%", "annee": "2026", "source_ref": "S1" },
+        { "stat": "Les produits et services utilisant l'IA me rendent nerveux (61% en 2025)", "valeur": "62%", "annee": "2026", "source_ref": "S1" },
+        { "stat": "L'IA a plus de benefices que d'inconvenients (46% en 2024)", "valeur": "38%", "annee": "2026", "source_ref": "S1" },
+        { "stat": "Je fais confiance aux entreprises qui utilisent l'IA pour proteger mes donnees personnelles (33% en 2025)", "valeur": "37%", "annee": "2026", "source_ref": "S1" },
+        { "stat": "Plus inquiets qu'enthousiastes face a l'usage croissant de l'IA (46% autant l'un que l'autre, 13% plus enthousiastes)", "valeur": "39%", "annee": "2025", "source_ref": "S2" },
+        { "stat": "Font confiance au Royaume-Uni pour reguler efficacement l'usage de l'IA", "valeur": "57%", "annee": "2025", "source_ref": "S2" },
+        { "stat": "Prets a faire confiance aux systemes d'IA (57% acceptent ou approuvent l'IA, 80% jugent une regulation necessaire)", "valeur": "42%", "annee": "2025", "source_ref": "S3" },
+        { "stat": "Font confiance a l'IA (flash poll Edelman, repris par Al Jazeera)", "valeur": "36%", "annee": "2025", "source_ref": "S4" }
+      ],
+      "lecture": "Profil Anglosphere assume : 62% de nerveux pour 29% d'enthousiastes, un des ecarts les plus larges des 32 pays Ipsos, et l'enthousiasme continue de baisser. 80% des Britanniques jugent une regulation necessaire. Une marque a interet a deployer l'IA en sourdine : utilite concrete d'abord, opt-out visible, et jamais de mise en scene de l'IA comme argument marketing principal.",
+      "sources": [
+        { "ref": "S1", "institut": "Ipsos", "etude": "Ipsos AI Monitor 2026 (32 pays, 23 532 adultes <75 ans, terrain 20 mars - 3 avril 2026)", "annee": "2026", "url": "https://resources.ipsos.com/rs/297-CXJ-795/images/Ipsos-AI-Monitor-2026.pdf", "fiabilite": "T1_primaire", "consulte_le": "2026-07-11" },
+        { "ref": "S2", "institut": "Pew Research Center", "etude": "How People Around the World View AI (Spring 2025 Global Attitudes Survey, sondage telephonique au Royaume-Uni)", "annee": "2025", "url": "https://www.pewresearch.org/global/2025/10/15/how-people-around-the-world-view-ai/", "fiabilite": "T1_primaire", "consulte_le": "2026-07-11" },
+        { "ref": "S3", "institut": "KPMG / University of Melbourne", "etude": "Trust, attitudes and use of AI: Country insights report 2025 (fiche Royaume-Uni)", "annee": "2025", "url": "https://mbs.edu/-/media/PDF/Research/Trust-attitudes-and-use-of-AI_Country-Insights-Report.pdf", "fiabilite": "T1_primaire", "consulte_le": "2026-07-11" },
+        { "ref": "S4", "institut": "Edelman (repris par Al Jazeera)", "etude": "Flash poll Edelman Trust Barometer sur la confiance dans l'IA, novembre 2025", "annee": "2025", "url": "https://www.aljazeera.com/economy/2025/11/19/trust-in-ai-far-higher-in-china-than-west-poll-shows", "fiabilite": "T3_presse_etablie", "consulte_le": "2026-07-11" }
+      ]
+    },
+    {
+      "nom": "Etats-Unis",
+      "code": "us",
+      "chiffres": [
+        { "stat": "Les produits et services utilisant l'IA me rendent enthousiaste (38% en 2025)", "valeur": "33%", "annee": "2026", "source_ref": "S1" },
+        { "stat": "Les produits et services utilisant l'IA me rendent nerveux (64% en 2025)", "valeur": "64%", "annee": "2026", "source_ref": "S1" },
+        { "stat": "L'IA a plus de benefices que d'inconvenients (42% en 2025)", "valeur": "38%", "annee": "2026", "source_ref": "S1" },
+        { "stat": "Je fais confiance aux entreprises qui utilisent l'IA pour proteger mes donnees personnelles (33% en 2025)", "valeur": "34%", "annee": "2026", "source_ref": "S1" },
+        { "stat": "Plus inquiets qu'enthousiastes face a l'usage croissant de l'IA, a egalite avec l'Italie au plus haut de l'enquete (38% autant l'un que l'autre, 10% plus enthousiastes)", "valeur": "50%", "annee": "2025", "source_ref": "S2" },
+        { "stat": "Font confiance aux Etats-Unis pour reguler efficacement l'usage de l'IA (47% peu ou pas confiance)", "valeur": "44%", "annee": "2025", "source_ref": "S2" },
+        { "stat": "Prets a faire confiance aux systemes d'IA (54% acceptent ou approuvent l'IA, 72% jugent une regulation necessaire)", "valeur": "41%", "annee": "2025", "source_ref": "S3" },
+        { "stat": "Font confiance a l'IA ; 17% seulement souhaitent adopter davantage l'IA, contre 54% en Chine (flash poll Edelman, repris par Al Jazeera)", "valeur": "32%", "annee": "2025", "source_ref": "S4" }
+      ],
+      "lecture": "Le paradoxe du marche le plus equipe : adoption massive mais 50% se disent plus inquiets qu'enthousiastes et 64% nerveux, sans amelioration depuis 2023. La defiance vise autant les entreprises (34% de confiance sur les donnees) que le regulateur (44%). La marque doit donc porter elle-meme la preuve : transparence sur l'usage, controle laisse a l'utilisateur, benefice chiffrable - l'IA comme badge d'innovation ne convainc plus qu'un Americain sur trois.",
+      "sources": [
+        { "ref": "S1", "institut": "Ipsos", "etude": "Ipsos AI Monitor 2026 (32 pays, 23 532 adultes <75 ans, terrain 20 mars - 3 avril 2026)", "annee": "2026", "url": "https://resources.ipsos.com/rs/297-CXJ-795/images/Ipsos-AI-Monitor-2026.pdf", "fiabilite": "T1_primaire", "consulte_le": "2026-07-11" },
+        { "ref": "S2", "institut": "Pew Research Center", "etude": "How People Around the World View AI (American Trends Panel, 3 605 adultes du 24 au 30 mars 2025 et 5 023 adultes du 9 au 15 juin 2025)", "annee": "2025", "url": "https://www.pewresearch.org/global/2025/10/15/how-people-around-the-world-view-ai/", "fiabilite": "T1_primaire", "consulte_le": "2026-07-11" },
+        { "ref": "S3", "institut": "KPMG / University of Melbourne", "etude": "Trust, attitudes and use of AI: Country insights report 2025 (fiche Etats-Unis)", "annee": "2025", "url": "https://mbs.edu/-/media/PDF/Research/Trust-attitudes-and-use-of-AI_Country-Insights-Report.pdf", "fiabilite": "T1_primaire", "consulte_le": "2026-07-11" },
+        { "ref": "S4", "institut": "Edelman (repris par Al Jazeera)", "etude": "Flash poll Edelman Trust Barometer sur la confiance dans l'IA, novembre 2025", "annee": "2025", "url": "https://www.aljazeera.com/economy/2025/11/19/trust-in-ai-far-higher-in-china-than-west-poll-shows", "fiabilite": "T3_presse_etablie", "consulte_le": "2026-07-11" }
+      ]
+    },
+    {
+      "nom": "Chine",
+      "code": "cn",
+      "chiffres": [
+        { "stat": "Les produits et services utilisant l'IA me rendent enthousiaste (80% en 2024 ; la Chine n'etait pas dans la vague 2025)", "valeur": "83%", "annee": "2026", "source_ref": "S1" },
+        { "stat": "Les produits et services utilisant l'IA me rendent nerveux (34% en 2024, en hausse de 6 points)", "valeur": "40%", "annee": "2026", "source_ref": "S1" },
+        { "stat": "L'IA a plus de benefices que d'inconvenients (83% en 2024)", "valeur": "85%", "annee": "2026", "source_ref": "S1" },
+        { "stat": "Je fais confiance aux entreprises qui utilisent l'IA pour proteger mes donnees personnelles (66% en 2024)", "valeur": "73%", "annee": "2026", "source_ref": "S1" },
+        { "stat": "Prets a faire confiance aux systemes d'IA (92% acceptent ou approuvent l'IA)", "valeur": "68%", "annee": "2025", "source_ref": "S3" },
+        { "stat": "Attendent de l'IA une serie de benefices ; 10% seulement estiment que les risques depassent les benefices, mais 67% restent inquiets d'issues negatives", "valeur": "89%", "annee": "2025", "source_ref": "S3" },
+        { "stat": "Font confiance a l'IA ; 54% souhaitent adopter davantage l'IA (flash poll Edelman, repris par Al Jazeera)", "valeur": "87%", "annee": "2025", "source_ref": "S4" }
+      ],
+      "lecture": "En Chine, l'IA est un argument de vente, pas un risque de marque : 92% acceptent ou approuvent l'IA (KPMG) et 87% lui font confiance (Edelman). Deux nuances pour un CMO : la nervosite monte quand meme (40%, +6 points depuis 2024), notamment sur les contenus generes, et les echantillons en ligne chinois sont plus urbains et diplomes que la population generale. Mettre l'IA en avant fonctionne, a condition de soigner l'authenticite des contenus.",
+      "sources": [
+        { "ref": "S1", "institut": "Ipsos", "etude": "Ipsos AI Monitor 2026 (32 pays, 23 532 adultes <75 ans, terrain 20 mars - 3 avril 2026 ; echantillon Chine en ligne, plus urbain et diplome que la moyenne)", "annee": "2026", "url": "https://resources.ipsos.com/rs/297-CXJ-795/images/Ipsos-AI-Monitor-2026.pdf", "fiabilite": "T1_primaire", "consulte_le": "2026-07-11" },
+        { "ref": "S3", "institut": "KPMG / University of Melbourne", "etude": "Trust, attitudes and use of AI: Country insights report 2025 (fiche Chine)", "annee": "2025", "url": "https://mbs.edu/-/media/PDF/Research/Trust-attitudes-and-use-of-AI_Country-Insights-Report.pdf", "fiabilite": "T1_primaire", "consulte_le": "2026-07-11" },
+        { "ref": "S4", "institut": "Edelman (repris par Al Jazeera)", "etude": "Flash poll Edelman Trust Barometer sur la confiance dans l'IA, novembre 2025", "annee": "2025", "url": "https://www.aljazeera.com/economy/2025/11/19/trust-in-ai-far-higher-in-china-than-west-poll-shows", "fiabilite": "T3_presse_etablie", "consulte_le": "2026-07-11" }
+      ]
+    },
+    {
+      "nom": "Inde",
+      "code": "in",
+      "chiffres": [
+        { "stat": "Les produits et services utilisant l'IA me rendent enthousiaste", "valeur": "79%", "annee": "2026", "source_ref": "S1" },
+        { "stat": "Les produits et services utilisant l'IA me rendent nerveux (enthousiasme et nervosite eleves en meme temps)", "valeur": "63%", "annee": "2026", "source_ref": "S1" },
+        { "stat": "L'IA a plus de benefices que d'inconvenients", "valeur": "80%", "annee": "2026", "source_ref": "S1" },
+        { "stat": "Je fais confiance aux entreprises qui utilisent l'IA pour proteger mes donnees personnelles", "valeur": "74%", "annee": "2026", "source_ref": "S1" },
+        { "stat": "Plus inquiets qu'enthousiastes face a l'usage croissant de l'IA (39% autant l'un que l'autre, 16% plus enthousiastes, forte part sans reponse)", "valeur": "19%", "annee": "2025", "source_ref": "S2" },
+        { "stat": "Font confiance a l'Inde pour reguler efficacement l'usage de l'IA, le score le plus haut des 25 pays (dont 71% une grande confiance)", "valeur": "89%", "annee": "2025", "source_ref": "S2" },
+        { "stat": "Prets a faire confiance aux systemes d'IA, parmi les plus hauts des 47 pays (90% acceptent ou approuvent l'IA, 94% en attendent des benefices)", "valeur": "76%", "annee": "2025", "source_ref": "S3" }
+      ],
+      "lecture": "L'Inde cumule ce qui s'exclut ailleurs : 79% d'enthousiastes ET 63% de nerveux - l'IA est adoptee avec ferveur mais pas banalisee. La confiance institutionnelle est record (89% font confiance a l'Etat pour reguler, Pew). Deux precautions : les echantillons Ipsos et KPMG en ligne sur-representent l'Inde urbaine, connectee et diplomee, et l'enquete Pew en face-a-face montre un public de masse encore peu expose (16% seulement plus enthousiastes qu'inquiets). Le discours IA fonctionne sur les CSP+ urbaines, pas encore comme argument de masse.",
+      "sources": [
+        { "ref": "S1", "institut": "Ipsos", "etude": "Ipsos AI Monitor 2026 (32 pays, 23 532 adultes <75 ans, terrain 20 mars - 3 avril 2026 ; echantillon Inde en ligne, plus urbain et diplome que la moyenne)", "annee": "2026", "url": "https://resources.ipsos.com/rs/297-CXJ-795/images/Ipsos-AI-Monitor-2026.pdf", "fiabilite": "T1_primaire", "consulte_le": "2026-07-11" },
+        { "ref": "S2", "institut": "Pew Research Center", "etude": "How People Around the World View AI (Spring 2025 Global Attitudes Survey, sondage en face-a-face en Inde)", "annee": "2025", "url": "https://www.pewresearch.org/global/2025/10/15/how-people-around-the-world-view-ai/", "fiabilite": "T1_primaire", "consulte_le": "2026-07-11" },
+        { "ref": "S3", "institut": "KPMG / University of Melbourne", "etude": "Trust, attitudes and use of AI: Country insights report 2025 (fiche Inde)", "annee": "2025", "url": "https://mbs.edu/-/media/PDF/Research/Trust-attitudes-and-use-of-AI_Country-Insights-Report.pdf", "fiabilite": "T1_primaire", "consulte_le": "2026-07-11" }
+      ]
+    },
+    {
+      "nom": "Japon",
+      "code": "jp",
+      "chiffres": [
+        { "stat": "Les produits et services utilisant l'IA me rendent enthousiaste (46% en 2025)", "valeur": "47%", "annee": "2026", "source_ref": "S1" },
+        { "stat": "Les produits et services utilisant l'IA me rendent nerveux (23% en 2023, 29% en 2025 : faible mais en hausse continue)", "valeur": "31%", "annee": "2026", "source_ref": "S1" },
+        { "stat": "L'IA a plus de benefices que d'inconvenients (48% en 2025)", "valeur": "50%", "annee": "2026", "source_ref": "S1" },
+        { "stat": "Je fais confiance aux entreprises qui utilisent l'IA pour proteger mes donnees personnelles (31% en 2025)", "valeur": "30%", "annee": "2026", "source_ref": "S1" },
+        { "stat": "Disent avoir une bonne comprehension de ce qu'est l'IA, dernier rang des 32 pays", "valeur": "48%", "annee": "2026", "source_ref": "S1" },
+        { "stat": "Plus inquiets qu'enthousiastes face a l'usage croissant de l'IA (55% autant l'un que l'autre, 16% plus enthousiastes)", "valeur": "28%", "annee": "2025", "source_ref": "S2" },
+        { "stat": "Font confiance au Japon pour reguler efficacement l'usage de l'IA (39% peu ou pas confiance)", "valeur": "41%", "annee": "2025", "source_ref": "S2" },
+        { "stat": "Prets a faire confiance aux systemes d'IA, parmi les plus bas des 47 pays (60% acceptent ou approuvent l'IA, 69% en attendent des benefices)", "valeur": "28%", "annee": "2025", "source_ref": "S3" }
+      ],
+      "lecture": "Le Japon n'est ni emballe ni panique : la nervosite est parmi les plus basses au monde (31%) mais la confiance dans les systemes d'IA aussi (28%, KPMG), et le sentiment de comprendre l'IA est le plus faible des 32 pays Ipsos. Ce n'est pas un marche a convaincre par le discours technologique : montrer l'usage simplement, sans jargon, et garder l'humain visible dans le parcours client compte plus que la promesse d'IA elle-meme.",
+      "sources": [
+        { "ref": "S1", "institut": "Ipsos", "etude": "Ipsos AI Monitor 2026 (32 pays, 23 532 adultes <75 ans, terrain 20 mars - 3 avril 2026)", "annee": "2026", "url": "https://resources.ipsos.com/rs/297-CXJ-795/images/Ipsos-AI-Monitor-2026.pdf", "fiabilite": "T1_primaire", "consulte_le": "2026-07-11" },
+        { "ref": "S2", "institut": "Pew Research Center", "etude": "How People Around the World View AI (Spring 2025 Global Attitudes Survey, sondage telephonique au Japon)", "annee": "2025", "url": "https://www.pewresearch.org/global/2025/10/15/how-people-around-the-world-view-ai/", "fiabilite": "T1_primaire", "consulte_le": "2026-07-11" },
+        { "ref": "S3", "institut": "KPMG / University of Melbourne", "etude": "Trust, attitudes and use of AI: Country insights report 2025 (fiche Japon)", "annee": "2025", "url": "https://mbs.edu/-/media/PDF/Research/Trust-attitudes-and-use-of-AI_Country-Insights-Report.pdf", "fiabilite": "T1_primaire", "consulte_le": "2026-07-11" }
+      ]
+    },
+    {
+      "nom": "Bresil",
+      "code": "br",
+      "chiffres": [
+        { "stat": "Les produits et services utilisant l'IA me rendent enthousiaste (66% en 2023, 57% en 2025 : erosion continue)", "valeur": "52%", "annee": "2026", "source_ref": "S1" },
+        { "stat": "Les produits et services utilisant l'IA me rendent nerveux (46% en 2025)", "valeur": "41%", "annee": "2026", "source_ref": "S1" },
+        { "stat": "L'IA a plus de benefices que d'inconvenients (58% en 2025)", "valeur": "56%", "annee": "2026", "source_ref": "S1" },
+        { "stat": "Je fais confiance aux entreprises qui utilisent l'IA pour proteger mes donnees personnelles (56% en 2023, 47% en 2025)", "valeur": "43%", "annee": "2026", "source_ref": "S1" },
+        { "stat": "Plus inquiets qu'enthousiastes face a l'usage croissant de l'IA (37% autant l'un que l'autre, 10% plus enthousiastes)", "valeur": "48%", "annee": "2025", "source_ref": "S2" },
+        { "stat": "Font confiance au Bresil pour reguler efficacement l'usage de l'IA (45% peu ou pas confiance)", "valeur": "36%", "annee": "2025", "source_ref": "S2" },
+        { "stat": "Prets a faire confiance aux systemes d'IA (86% acceptent ou approuvent l'IA, 91% en attendent des benefices, 79% inquiets d'issues negatives)", "valeur": "55%", "annee": "2025", "source_ref": "S3" },
+        { "stat": "Font confiance a l'IA (flash poll Edelman, repris par Al Jazeera)", "valeur": "67%", "annee": "2025", "source_ref": "S4" }
+      ],
+      "lecture": "Marche encore chaud mais en refroidissement rapide : l'enthousiasme Ipsos a perdu 14 points depuis 2023 et la confiance sur les donnees 13 points, pendant que 48% se disent desormais plus inquiets qu'enthousiastes (Pew). Comme la confiance dans l'Etat regulateur est faible (36%), c'est a la marque de fournir la reassurance elle-meme. Le terrain reste porteur - 86% acceptent l'IA - mais la fenetre ou l'IA impressionnait sans conditions se referme.",
+      "sources": [
+        { "ref": "S1", "institut": "Ipsos", "etude": "Ipsos AI Monitor 2026 (32 pays, 23 532 adultes <75 ans, terrain 20 mars - 3 avril 2026 ; echantillon Bresil en ligne, plus urbain et diplome que la moyenne)", "annee": "2026", "url": "https://resources.ipsos.com/rs/297-CXJ-795/images/Ipsos-AI-Monitor-2026.pdf", "fiabilite": "T1_primaire", "consulte_le": "2026-07-11" },
+        { "ref": "S2", "institut": "Pew Research Center", "etude": "How People Around the World View AI (Spring 2025 Global Attitudes Survey, sondage en face-a-face au Bresil)", "annee": "2025", "url": "https://www.pewresearch.org/global/2025/10/15/how-people-around-the-world-view-ai/", "fiabilite": "T1_primaire", "consulte_le": "2026-07-11" },
+        { "ref": "S3", "institut": "KPMG / University of Melbourne", "etude": "Trust, attitudes and use of AI: Country insights report 2025 (fiche Bresil)", "annee": "2025", "url": "https://mbs.edu/-/media/PDF/Research/Trust-attitudes-and-use-of-AI_Country-Insights-Report.pdf", "fiabilite": "T1_primaire", "consulte_le": "2026-07-11" },
+        { "ref": "S4", "institut": "Edelman (repris par Al Jazeera)", "etude": "Flash poll Edelman Trust Barometer sur la confiance dans l'IA, novembre 2025", "annee": "2025", "url": "https://www.aljazeera.com/economy/2025/11/19/trust-in-ai-far-higher-in-china-than-west-poll-shows", "fiabilite": "T3_presse_etablie", "consulte_le": "2026-07-11" }
+      ]
+    },
+    {
+      "nom": "Espagne",
+      "code": "es",
+      "chiffres": [
+        { "stat": "Les produits et services utilisant l'IA me rendent enthousiaste (45% en 2025)", "valeur": "47%", "annee": "2026", "source_ref": "S1" },
+        { "stat": "Les produits et services utilisant l'IA me rendent nerveux (51% en 2025)", "valeur": "52%", "annee": "2026", "source_ref": "S1" },
+        { "stat": "L'IA a plus de benefices que d'inconvenients (53% en 2025)", "valeur": "54%", "annee": "2026", "source_ref": "S1" },
+        { "stat": "Je fais confiance aux entreprises qui utilisent l'IA pour proteger mes donnees personnelles (stable depuis 2023)", "valeur": "50%", "annee": "2026", "source_ref": "S1" },
+        { "stat": "Plus inquiets qu'enthousiastes face a l'usage croissant de l'IA (38% autant l'un que l'autre, 19% plus enthousiastes, une des parts les plus hautes d'Europe)", "valeur": "39%", "annee": "2025", "source_ref": "S2" },
+        { "stat": "Font confiance a l'Espagne pour reguler efficacement l'usage de l'IA", "valeur": "55%", "annee": "2025", "source_ref": "S2" },
+        { "stat": "Prets a faire confiance aux systemes d'IA (72% acceptent ou approuvent l'IA, 82% jugent une regulation necessaire, 85% inquiets d'issues negatives)", "valeur": "51%", "annee": "2025", "source_ref": "S3" }
+      ],
+      "lecture": "L'Espagne est le plus receptif des grands marches d'Europe de l'Ouest : un Espagnol sur deux voit plus de benefices que d'inconvenients, fait confiance aux entreprises sur les donnees, et 51% sont prets a faire confiance aux systemes d'IA (KPMG), loin devant la France ou l'Allemagne. La demande de cadre reste tres forte (82% veulent une regulation). On peut y communiquer l'IA ouvertement, a condition d'afficher des garde-fous explicites.",
+      "sources": [
+        { "ref": "S1", "institut": "Ipsos", "etude": "Ipsos AI Monitor 2026 (32 pays, 23 532 adultes <75 ans, terrain 20 mars - 3 avril 2026)", "annee": "2026", "url": "https://resources.ipsos.com/rs/297-CXJ-795/images/Ipsos-AI-Monitor-2026.pdf", "fiabilite": "T1_primaire", "consulte_le": "2026-07-11" },
+        { "ref": "S2", "institut": "Pew Research Center", "etude": "How People Around the World View AI (Spring 2025 Global Attitudes Survey, sondage telephonique en Espagne)", "annee": "2025", "url": "https://www.pewresearch.org/global/2025/10/15/how-people-around-the-world-view-ai/", "fiabilite": "T1_primaire", "consulte_le": "2026-07-11" },
+        { "ref": "S3", "institut": "KPMG / University of Melbourne", "etude": "Trust, attitudes and use of AI: Country insights report 2025 (fiche Espagne)", "annee": "2025", "url": "https://mbs.edu/-/media/PDF/Research/Trust-attitudes-and-use-of-AI_Country-Insights-Report.pdf", "fiabilite": "T1_primaire", "consulte_le": "2026-07-11" }
+      ]
+    },
+    {
+      "nom": "Italie",
+      "code": "it",
+      "chiffres": [
+        { "stat": "Les produits et services utilisant l'IA me rendent enthousiaste (49% en 2025)", "valeur": "47%", "annee": "2026", "source_ref": "S1" },
+        { "stat": "Les produits et services utilisant l'IA me rendent nerveux (44% en 2025)", "valeur": "45%", "annee": "2026", "source_ref": "S1" },
+        { "stat": "L'IA a plus de benefices que d'inconvenients (53% en 2025)", "valeur": "53%", "annee": "2026", "source_ref": "S1" },
+        { "stat": "Je fais confiance aux entreprises qui utilisent l'IA pour proteger mes donnees personnelles (54% en 2025), un des plus hauts scores hors Asie", "valeur": "61%", "annee": "2026", "source_ref": "S1" },
+        { "stat": "Je fais confiance a l'IA pour ne pas discriminer (57% en 2025)", "valeur": "60%", "annee": "2026", "source_ref": "S1" },
+        { "stat": "Plus inquiets qu'enthousiastes face a l'usage croissant de l'IA, a egalite avec les Etats-Unis au plus haut de l'enquete (37% autant l'un que l'autre, 12% plus enthousiastes)", "valeur": "50%", "annee": "2025", "source_ref": "S2" },
+        { "stat": "Font confiance a l'Italie pour reguler efficacement l'usage de l'IA (48% peu ou pas confiance)", "valeur": "37%", "annee": "2025", "source_ref": "S2" },
+        { "stat": "Prets a faire confiance aux systemes d'IA (75% acceptent ou approuvent l'IA, 74% jugent une regulation necessaire)", "valeur": "40%", "annee": "2025", "source_ref": "S3" }
+      ],
+      "lecture": "Profil paradoxal : une des populations les plus inquietes de l'enquete Pew (50% plus inquiets qu'enthousiastes) mais la confiance envers les entreprises sur les donnees la plus haute d'Europe occidentale (61%, en hausse de 7 points). La defiance italienne vise l'Etat (37% seulement croient en sa capacite a reguler), pas les marques. Une entreprise credible sur la protection des donnees part donc avec un avantage reel, a condition de ne pas jouer la carte du gadget IA qui nourrit l'inquietude ambiante.",
+      "sources": [
+        { "ref": "S1", "institut": "Ipsos", "etude": "Ipsos AI Monitor 2026 (32 pays, 23 532 adultes <75 ans, terrain 20 mars - 3 avril 2026)", "annee": "2026", "url": "https://resources.ipsos.com/rs/297-CXJ-795/images/Ipsos-AI-Monitor-2026.pdf", "fiabilite": "T1_primaire", "consulte_le": "2026-07-11" },
+        { "ref": "S2", "institut": "Pew Research Center", "etude": "How People Around the World View AI (Spring 2025 Global Attitudes Survey, sondage telephonique en Italie)", "annee": "2025", "url": "https://www.pewresearch.org/global/2025/10/15/how-people-around-the-world-view-ai/", "fiabilite": "T1_primaire", "consulte_le": "2026-07-11" },
+        { "ref": "S3", "institut": "KPMG / University of Melbourne", "etude": "Trust, attitudes and use of AI: Country insights report 2025 (fiche Italie)", "annee": "2025", "url": "https://mbs.edu/-/media/PDF/Research/Trust-attitudes-and-use-of-AI_Country-Insights-Report.pdf", "fiabilite": "T1_primaire", "consulte_le": "2026-07-11" }
+      ]
+    }
+  ]
+}

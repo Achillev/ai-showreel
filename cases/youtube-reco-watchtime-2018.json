@@ -1,0 +1,255 @@
+{
+  "id": "youtube-reco-watchtime-2018",
+  "type_fiche": "succes",
+  "marque": "YouTube",
+  "groupe": "Google (Alphabet)",
+  "industrie": "media_entertainment",
+  "marches_deploiement": [
+    "Monde",
+    "Etats-Unis",
+    "Europe"
+  ],
+  "transposable_ue": {
+    "flag": "oui",
+    "note": "Recommandation sur signaux de visionnage first-party. Profilage soumis au RGPD ; obligations de transparence sur les systemes de recommandation au titre du DSA pour une tres grande plateforme. Deja opere dans l'UE."
+  },
+  "metier": "Product / personnalisation / engagement",
+  "marque_linkedin": "https://www.linkedin.com/company/youtube/",
+  "axes": {
+    "levier": "retention",
+    "touchpoints": [
+      "page d'accueil YouTube",
+      "colonne suggestions",
+      "lecteur video",
+      "application mobile"
+    ],
+    "etape_parcours": "fidelite",
+    "famille": "personnalisation",
+    "pattern": "moteur de recommandation de contenu",
+    "type_ia": [
+      "deep learning",
+      "candidate generation + ranking",
+      "machine learning"
+    ],
+    "plateforme_stack": [
+      "custom/in-house",
+      "Google Brain"
+    ],
+    "objectif_metrique": [
+      "watch time / temps de visionnage",
+      "viewership",
+      "retention"
+    ]
+  },
+  "implementation": "custom",
+  "objectif_business": "Maximiser le temps de visionnage utile en enchainant automatiquement des videos pertinentes, pour retenir l'audience sur la plateforme plutot que de dependre de la recherche ou des abonnements.",
+  "description": "Le systeme genere pour chaque utilisateur un flux de suggestions (home et colonne de droite) a partir de son historique, du temps regarde, des likes, partages et reponses aux sondages. Il repose sur deux reseaux de deep learning, l'un pour selectionner des candidats, l'autre pour les classer. Il traite plus de 80 milliards de signaux et compare les habitudes de visionnage a celles de profils similaires.",
+  "resultats": [
+    {
+      "metrique": "Part du temps de visionnage pilotee par les recommandations",
+      "valeur": "~70%",
+      "citation_exacte": "70% of all watch time is driven by its own recommendations",
+      "source_ref": "S1"
+    },
+    {
+      "metrique": "Poids des recommandations dans le viewership (position officielle)",
+      "valeur": "devant abonnements et recherche",
+      "citation_exacte": "even more than channel subscriptions or search",
+      "source_ref": "S2"
+    }
+  ],
+  "niveau_preuve": {
+    "niveau": "C",
+    "justification": "Chiffre des 70% annonce publiquement en 2018 par Neal Mohan (alors Chief Product Officer de YouTube) et rapporte par la presse specialisee. Confirme qualitativement par le blog officiel YouTube (2021) qui place la recommandation au-dessus des abonnements et de la recherche."
+  },
+  "dates": {
+    "lancement": "Recommandations deep learning deployees a partir de ~2015-2016 ; chiffre des 70% enonce en 2018",
+    "derniere_confirmation_activite": "2021-09-15 (billet officiel YouTube sur le systeme de recommandation)",
+    "verifie_le": "2026-07-11",
+    "revoir_apres": "2027-07-11"
+  },
+  "statut_vivant": {
+    "statut": "confirme",
+    "note": "La recommandation reste la mecanique centrale de YouTube ; page officielle du systeme toujours publiee et feature visible en production."
+  },
+  "sources": [
+    {
+      "ref": "S1",
+      "type": "presse",
+      "fiabilite": "T4_secondaire",
+      "titre": "YouTube Says 70% Of All Watch Time Is Driven By Its Own Recommendations (Tubefilter, citant Neal Mohan au CES 2018)",
+      "url": "https://www.tubefilter.com/2018/01/11/youtube-most-watch-time-driven-by-recommendations/",
+      "date_publication": "2018-01-11",
+      "consulte_le": "2026-07-11"
+    },
+    {
+      "ref": "S2",
+      "type": "blog_officiel",
+      "fiabilite": "T2_officiel_interesse",
+      "titre": "On YouTube's recommendation system (YouTube Blog, Cristos Goodrow, VP Engineering)",
+      "url": "https://blog.youtube/inside-youtube/on-youtubes-recommendation-system/",
+      "date_publication": "2021-09-15",
+      "consulte_le": "2026-07-11"
+    }
+  ],
+  "fonctionnement_operationnel": {
+    "cadence": "Scoring en temps reel a chaque session et apres chaque video ; reentrainement periodique des reseaux sur les logs.",
+    "opere_par": "Equipes Engineering YouTube, avec l'appui de Google Brain.",
+    "signal_pilote": "Le watch time et les signaux d'engagement (clics, duree, likes, partages, reponses aux sondages). Si le systeme optimise le clic plutot que le temps regarde utile, il derive vers l'appat a clic.",
+    "etapes": [
+      {
+        "etape": "Collecte des signaux",
+        "detail": "Historique, temps regarde, likes, partages, reponses aux sondages sont journalises par utilisateur.",
+        "acteur": "site_app / equipe data"
+      },
+      {
+        "etape": "Generation de candidats",
+        "detail": "Un premier reseau de deep learning selectionne un sous-ensemble de videos pertinentes parmi des milliards.",
+        "acteur": "IA"
+      },
+      {
+        "etape": "Ranking",
+        "detail": "Un second reseau ordonne les candidats selon la probabilite de watch time utile pour cet utilisateur.",
+        "acteur": "IA"
+      },
+      {
+        "etape": "Rendu et boucle",
+        "detail": "Home et suggestions sont composees ; le visionnage qui suit realimente les signaux.",
+        "acteur": "site_app / humain"
+      }
+    ]
+  },
+  "schema_flow": {
+    "statut": "documente",
+    "noeuds": [
+      {
+        "id": "n1",
+        "role_generique": "data_source",
+        "label": "Signaux (historique, watch time, likes, partages, sondages)"
+      },
+      {
+        "id": "n2",
+        "role_generique": "modele_ia",
+        "label": "Reseau de candidate generation",
+        "outil_documente": "Deep learning YouTube / Google Brain"
+      },
+      {
+        "id": "n3",
+        "role_generique": "modele_ia",
+        "label": "Reseau de ranking"
+      },
+      {
+        "id": "n4",
+        "role_generique": "site_app",
+        "label": "YouTube (home + suggestions)"
+      },
+      {
+        "id": "n5",
+        "role_generique": "humain",
+        "label": "Utilisateur"
+      }
+    ],
+    "liens": [
+      [
+        "n1",
+        "n2"
+      ],
+      [
+        "n2",
+        "n3"
+      ],
+      [
+        "n3",
+        "n4"
+      ],
+      [
+        "n4",
+        "n5"
+      ],
+      [
+        "n5",
+        "n1",
+        "visionnage realimente les signaux"
+      ]
+    ]
+  },
+  "replication": {
+    "statut_epistemique": "infere",
+    "prerequis_data": [
+      "logs de visionnage par utilisateur",
+      "catalogue de contenus indexe",
+      "signaux d'engagement explicites et implicites"
+    ],
+    "prerequis_orga": [
+      "equipe ML dediee",
+      "infra de serving temps reel a l'echelle",
+      "gouvernance sur l'objectif optimise"
+    ],
+    "stack_possible": [
+      "custom/in-house",
+      "frameworks de deep learning",
+      "systeme two-tower candidate generation + ranking"
+    ],
+    "premiere_etape": "Definir l'objectif optimise (temps utile, pas clic brut) avant d'entrainer le moindre modele, car il conditionne tout le comportement.",
+    "playbook": [
+      {
+        "action": "Definir l'objectif optimise (temps de visionnage utile, pas le clic brut) et instrumenter les logs.",
+        "livrable": "Metrique cible documentee + pipeline de logs fiable par utilisateur."
+      },
+      {
+        "action": "Construire le modele de candidate generation.",
+        "livrable": "Sous-ensemble de candidats pertinents evalue offline contre l'existant."
+      },
+      {
+        "action": "Construire le modele de ranking et l'evaluer offline.",
+        "livrable": "Classement qui bat la baseline sur les logs historiques."
+      },
+      {
+        "action": "Lancer l'A/B test en production sur une fraction du trafic.",
+        "livrable": "Lecture watch time utile et retention vs groupe de controle."
+      },
+      {
+        "action": "Industrialiser le serving temps reel et le reentrainement periodique.",
+        "livrable": "Systeme en production avec monitoring de derive et de qualite."
+      }
+    ],
+    "equipe": "3-5 ML engineers + 1 PM + equipe infra/SRE pour le serving temps reel"
+  },
+  "seo": {
+    "slug": "youtube-reco-watchtime-2018",
+    "title": "YouTube : recommandation deep learning - ~70% du temps de visionnage pilote (2018)",
+    "meta_description": "En 2018 YouTube a declare que ~70% du temps de visionnage vient de ses recommandations deep learning, position confirmee par son blog officiel en 2021.",
+    "resume_citable": "Environ 70% du temps de visionnage sur YouTube est pilote par ses recommandations deep learning, selon Neal Mohan (CES 2018), la plateforme placant la recommandation au-dessus des abonnements et de la recherche.",
+    "faq": [
+      {
+        "q": "Quelle part du visionnage YouTube vient des recommandations ?",
+        "a": "Environ 70%, chiffre annonce par le Chief Product Officer Neal Mohan au CES 2018."
+      },
+      {
+        "q": "Comment marche la recommandation YouTube ?",
+        "a": "Deux reseaux de deep learning, l'un pour generer des candidats parmi des milliards de videos, l'autre pour les classer selon le temps de visionnage utile."
+      }
+    ]
+  },
+  "logo_domain": "youtube.com",
+  "stack_technique": [
+    {
+      "nom": "Systeme de recommandation two-stage YouTube",
+      "categorie": "outil",
+      "detail": "Deux reseaux de deep learning in-house : candidate generation (selection parmi des milliards de videos) puis ranking (classement par watch time utile).",
+      "url": "https://www.youtube.com"
+    },
+    {
+      "nom": "Google Brain",
+      "categorie": "infra",
+      "detail": "Equipe et technologies deep learning de Google qui appuient les reseaux de recommandation.",
+      "url": "https://research.google"
+    },
+    {
+      "nom": "Logs de signaux d'engagement YouTube",
+      "categorie": "infra",
+      "detail": "Plus de 80 milliards de signaux (historique, temps regarde, likes, partages, sondages) journalises par utilisateur, matiere premiere des deux reseaux.",
+      "url": "https://www.youtube.com"
+    }
+  ]
+}

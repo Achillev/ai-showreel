@@ -1,0 +1,285 @@
+{
+  "id": "allwyn-trade-desk-kokai-2025",
+  "type_fiche": "succes",
+  "marque": "Allwyn",
+  "groupe": "Allwyn (operateur de la National Lottery UK)",
+  "industrie": "autre",
+  "marches_deploiement": [
+    "Royaume-Uni"
+  ],
+  "transposable_ue": {
+    "flag": "oui_avec_adaptations",
+    "note": "The Trade Desk Kokai opere en Europe. L'activation de data retail (ici Tesco) suppose un cadre de partage conforme au RGPD et des audiences respectant le consentement. Le secteur des jeux d'argent ajoute des contraintes reglementaires propres au marche vise."
+  },
+  "metier": "marketing, media programmatique, acquisition",
+  "intervenants": [
+    {
+      "nom": "Chris White",
+      "role": "Media Channels Lead, Allwyn UK",
+      "source_ref": "S1"
+    }
+  ],
+  "agences": [
+    {
+      "nom": "Hearts & Science",
+      "role": "Agence media, pilotage de la strategie omnicanal sur Kokai",
+      "source_ref": "S1"
+    },
+    {
+      "nom": "Tesco",
+      "role": "Partenaire de data retail, activation d'audiences pour le ciblage",
+      "source_ref": "S1"
+    }
+  ],
+  "axes": {
+    "levier": "acquisition",
+    "touchpoints": [
+      "CTV",
+      "audio digital",
+      "online video (OLV)",
+      "display"
+    ],
+    "etape_parcours": "considération",
+    "famille": "optimisation_automatisation",
+    "pattern": "achat programmatique omnicanal pilote par IA avec activation de data retail",
+    "type_ia": [
+      "optimisation programmatique par IA",
+      "activation et scoring d'audiences data retail"
+    ],
+    "plateforme_stack": [
+      "The Trade Desk Kokai",
+      "Tesco retail data"
+    ],
+    "objectif_metrique": [
+      "ROAS",
+      "CPA",
+      "cout par conversion",
+      "temps jusqu'a conversion"
+    ]
+  },
+  "implementation": "plateforme",
+  "objectif_business": "Faire converger un plan omnicanal (CTV, audio, video, display) sur une seule vue de performance et raccourcir le chemin vers la conversion pour les produits Lotto et EuroMillions.",
+  "points_cles": ["Achat programmatique omnicanal pilote par IA (CTV, audio, video, display).", "Plateforme The Trade Desk Kokai, avec activation de la data retail Tesco.", "ROAS +43%, CPA -30%, temps jusqu'a conversion -64% vs prospection.", "Preuve B, statut vivant confirme."],
+  "description": "Allwyn, operateur de la National Lottery au Royaume-Uni, a construit une campagne omnicanal full-funnel sur Kokai, la plateforme d'achat media pilotee par IA de The Trade Desk, avec l'agence Hearts & Science. Le dispositif combine CTV, audio digital, online video et display, et active la data retail de Tesco pour cibler des audiences plutot que de prospecter a froid. L'IA de Kokai arbitre l'allocation entre canaux et le controle de frequence cross-canal. Face a une strategie de prospection standard, les audiences alimentees par la data Tesco ont degage un ROAS superieur de 43 pour cent et un cout par acquisition inferieur de 30 pour cent. L'usage de trois canaux plutot qu'un a reduit le temps jusqu'a conversion de 64 pour cent, et le controle de frequence cross-canal a rendu 8 pour cent de budget. C'est un cas d'optimisation et d'automatisation de l'achat media programmatique, pas de generation creative.",
+  "resultats": [
+    {
+      "metrique": "ROAS, audiences data retail vs prospection",
+      "valeur": "+43%",
+      "citation_exacte": "43% higher return on ad spend",
+      "source_ref": "S1"
+    },
+    {
+      "metrique": "Cout par acquisition avec data retail Tesco",
+      "valeur": "-30%",
+      "citation_exacte": "30% lower cost per acquisition",
+      "source_ref": "S1"
+    },
+    {
+      "metrique": "Temps jusqu'a conversion (trois canaux vs un)",
+      "valeur": "-64%",
+      "citation_exacte": "64% reduction in time to conversion",
+      "source_ref": "S1"
+    },
+    {
+      "metrique": "ROAS moyen des campagnes Kokai (US et Canada, 665 campagnes 2025)",
+      "valeur": "environ 5x",
+      "citation_exacte": "5x ROAS (or $5.40 for every dollar spent) on average",
+      "source_ref": "S2"
+    }
+  ],
+  "niveau_preuve": {
+    "niveau": "B",
+    "justification": "Etude de cas plateforme The Trade Desk chiffree citant nommement Allwyn, l'agence Hearts & Science et le partenaire data Tesco ; source officielle interessee, d'ou B. La performance moyenne de Kokai est corroboree par une seconde publication de The Trade Desk."
+  },
+  "dates": {
+    "lancement": "2025 (campagne omnicanal Lotto et EuroMillions sur Kokai)",
+    "derniere_confirmation_activite": "2025",
+    "verifie_le": "2026-07-11",
+    "revoir_apres": "2027-01-11"
+  },
+  "statut_vivant": {
+    "statut": "confirme",
+    "note": "Kokai est la plateforme courante de The Trade Desk, avec des cas et des donnees agregees publies en 2025. Dispositif vivant."
+  },
+  "sources": [
+    {
+      "ref": "S1",
+      "type": "customer_story_plateforme",
+      "fiabilite": "T2_officiel_interesse",
+      "titre": "Allwyn hits the jackpot - reducing time to conversion by 64% with Kokai",
+      "url": "https://www.thetradedesk.com/case-studies/allwyn-hits-the-jackpot-using-a-data-driven-omnichannel-strategy-on-kokai",
+      "date_publication": "2025",
+      "consulte_le": "2026-07-11"
+    },
+    {
+      "ref": "S2",
+      "type": "blog_officiel",
+      "fiabilite": "T2_officiel_interesse",
+      "titre": "Kokai's AI fuels measurable business outcomes",
+      "url": "https://www.thetradedesk.com/resources/how-kokai-ai-drives-roas-advertisers",
+      "date_publication": "2025",
+      "consulte_le": "2026-07-11"
+    }
+  ],
+  "fonctionnement_operationnel": {
+    "cadence": "Continu : allocation entre canaux et enchères optimisees en temps reel sur la duree de la campagne.",
+    "opere_par": "Equipe media d'Allwyn avec l'agence Hearts & Science, sur The Trade Desk Kokai.",
+    "signal_pilote": "La conversion attribuee et l'appartenance aux audiences data retail (Tesco). Sans data retail activee ni mesure cross-canal, l'IA perd le levier qui distingue ce plan d'une prospection classique.",
+    "etapes": [
+      {
+        "etape": "Activation des audiences",
+        "detail": "La data retail Tesco est activee dans Kokai pour cibler des audiences plutot que prospecter a froid.",
+        "acteur": "equipe media / agence"
+      },
+      {
+        "etape": "Plan omnicanal",
+        "detail": "CTV, audio digital, OLV et display sont orchestres dans une seule campagne full-funnel.",
+        "acteur": "agence (Hearts & Science)"
+      },
+      {
+        "etape": "Optimisation par IA",
+        "detail": "Kokai arbitre l'allocation entre canaux, les enchères et le controle de frequence cross-canal.",
+        "acteur": "IA (The Trade Desk Kokai)"
+      },
+      {
+        "etape": "Mesure unifiee",
+        "detail": "L'equipe lit ROAS, CPA et temps jusqu'a conversion sur une vue unique et ajuste le mix.",
+        "acteur": "equipe media Allwyn"
+      }
+    ]
+  },
+  "schema_flow": {
+    "statut": "documente",
+    "noeuds": [
+      {
+        "id": "tesco",
+        "role_generique": "data_source",
+        "label": "Data retail Tesco (audiences)"
+      },
+      {
+        "id": "kokai",
+        "role_generique": "modele_ia",
+        "label": "Achat media omnicanal pilote par IA",
+        "outil_documente": "The Trade Desk Kokai"
+      },
+      {
+        "id": "channels",
+        "role_generique": "paid_platform",
+        "label": "CTV / audio / OLV / display"
+      },
+      {
+        "id": "conv",
+        "role_generique": "data_source",
+        "label": "Conversions attribuees"
+      },
+      {
+        "id": "team",
+        "role_generique": "humain",
+        "label": "Allwyn + Hearts & Science"
+      }
+    ],
+    "liens": [
+      [
+        "tesco",
+        "kokai"
+      ],
+      [
+        "kokai",
+        "channels"
+      ],
+      [
+        "channels",
+        "conv"
+      ],
+      [
+        "conv",
+        "kokai",
+        "conversions renvoyees pour reallouer entre canaux"
+      ],
+      [
+        "team",
+        "kokai",
+        "plan et objectifs"
+      ]
+    ]
+  },
+  "replication": {
+    "statut_epistemique": "infere",
+    "prerequis_data": [
+      "audiences data retail exploitables",
+      "mesure de conversion cross-canal"
+    ],
+    "prerequis_orga": [
+      "budget media omnicanal",
+      "agence ou equipe capable d'operer une DSP",
+      "accord de partage de data retail"
+    ],
+    "stack_possible": [
+      "The Trade Desk Kokai",
+      "partenariat data retail (ex. Tesco / dunnhumby)"
+    ],
+    "premiere_etape": "Activer une audience data retail dans une DSP et comparer son ROAS et son CPA a une prospection standard sur les memes canaux.",
+    "playbook": [
+      {
+        "action": "Cadrer l'accord de partage de data retail (perimetre, consentement, conformite) avec le partenaire.",
+        "livrable": "Audiences retail activables dans la DSP"
+      },
+      {
+        "action": "Construire le plan omnicanal (CTV, audio, OLV, display) et valider la mesure de conversion cross-canal.",
+        "livrable": "Plan de campagne + tracking de conversion valide"
+      },
+      {
+        "action": "Lancer la campagne sous optimisation IA, avec controle de frequence cross-canal active.",
+        "livrable": "Campagne active avec allocation automatique entre canaux"
+      },
+      {
+        "action": "Comparer audiences retail et prospection standard sur ROAS, CPA et temps jusqu'a conversion, puis reallouer.",
+        "livrable": "Bilan comparatif chiffre et budget rearbitre"
+      }
+    ],
+    "equipe": "1 trader programmatique (agence ou interne) + 1 responsable media annonceur + 1 interlocuteur chez le partenaire data"
+  },
+  "stack_technique": [
+    {
+      "nom": "The Trade Desk Kokai",
+      "categorie": "plateforme",
+      "detail": "DSP pilotee par IA : allocation entre canaux, encheres et controle de frequence cross-canal sur CTV, audio, OLV et display.",
+      "url": "https://www.thetradedesk.com"
+    },
+    {
+      "nom": "Data retail Tesco",
+      "categorie": "outil",
+      "detail": "Audiences issues des donnees d'achat Tesco, activees dans Kokai pour cibler plutot que prospecter a froid.",
+      "url": "https://www.tesco.com"
+    },
+    {
+      "nom": "Hearts & Science",
+      "categorie": "integrateur",
+      "detail": "Agence media qui pilote la strategie omnicanal full-funnel sur Kokai.",
+      "url": "https://www.hearts-science.com"
+    },
+    {
+      "nom": "Mesure de conversion cross-canal",
+      "categorie": "outil",
+      "detail": "Vue unifiee ROAS, CPA et temps jusqu'a conversion dans Kokai, qui alimente la reallocation entre canaux.",
+      "url": "https://www.thetradedesk.com"
+    }
+  ],
+  "seo": {
+    "slug": "allwyn-trade-desk-kokai-2025",
+    "title": "Allwyn (National Lottery) : programmatique omnicanal pilote par IA sur Kokai - ROAS +43%, temps de conversion -64% (2025)",
+    "meta_description": "Allwyn a construit un plan omnicanal sur The Trade Desk Kokai avec la data retail Tesco : ROAS +43%, CPA -30% et temps jusqu'a conversion -64% vs prospection standard.",
+    "resume_citable": "Allwyn, operateur de la National Lottery UK, a mene une campagne omnicanal sur The Trade Desk Kokai en activant la data retail Tesco et rapporte un ROAS superieur de 43%, un CPA inferieur de 30% et un temps jusqu'a conversion reduit de 64% face a une prospection standard.",
+    "faq": [
+      {
+        "q": "Qu'apporte la data retail Tesco au dispositif ?",
+        "a": "Elle permet de cibler des audiences reelles plutot que de prospecter a froid. Sur ces audiences, le ROAS est superieur de 43% et le CPA inferieur de 30% a la prospection standard."
+      },
+      {
+        "q": "Que fait l'IA de Kokai ?",
+        "a": "Elle arbitre l'allocation entre CTV, audio, video et display, gere les enchères et le controle de frequence cross-canal. C'est de l'optimisation d'achat media, pas de generation creative."
+      }
+    ]
+  },
+  "logo_domain": "allwyn.com"
+}

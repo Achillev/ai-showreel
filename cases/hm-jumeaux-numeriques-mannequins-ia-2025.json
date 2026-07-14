@@ -1,0 +1,303 @@
+{
+  "id": "hm-jumeaux-numeriques-mannequins-ia-2025",
+  "type_fiche": "succes",
+  "marque": "H&M",
+  "groupe": "H&M Group",
+  "industrie": "retail_ecom",
+  "marches_deploiement": [
+    "International (canaux digitaux et social de H&M)",
+    "Suede"
+  ],
+  "transposable_ue": {
+    "flag": "oui",
+    "note": "H&M est une marque de l'UE (Suede) et le dispositif est ne dans l'UE. Contraintes cle : AI Act (obligation de transparence et d'etiquetage des contenus generes par IA), droit a l'image et cession de droits des mannequins, RGPD pour la numerisation de la personne (traits, mouvements). H&M etiquette les contenus IA et fait signer aux mannequins la propriete de leur jumeau."
+  },
+  "metier": "marketing / creation / production de contenu / e-commerce",
+  "logo_domain": "hm.com",
+  "intervenants": [
+    {
+      "nom": "Jorgen Andersson",
+      "role": "Chief Creative Officer, H&M",
+      "source_ref": "S1"
+    },
+    {
+      "nom": "Johnny Kangasniemi",
+      "role": "Photographe de la campagne jumeaux numeriques",
+      "source_ref": "S3"
+    },
+    {
+      "nom": "Vanessa Moody",
+      "role": "Mannequin numerisee, participante au dispositif",
+      "source_ref": "S3"
+    }
+  ],
+  "agences": [
+    {
+      "nom": "Uncut",
+      "role": "Studio tech suedois ayant cree les repliques IA (jumeaux numeriques) des mannequins",
+      "source_ref": "S3"
+    }
+  ],
+  "axes": {
+    "levier": "acquisition",
+    "touchpoints": [
+      "publicite sociale",
+      "Instagram",
+      "TikTok",
+      "campagnes marketing",
+      "visuels e-commerce"
+    ],
+    "etape_parcours": "consideration",
+    "famille": "generation",
+    "pattern": "jumeaux numeriques IA de mannequins pour la production creative",
+    "type_ia": [
+      "IA generative",
+      "generation d'images",
+      "avatar / jumeau numerique de personne"
+    ],
+    "plateforme_stack": [
+      "Uncut (partenaire IA)",
+      "custom/in-house"
+    ],
+    "objectif_metrique": [
+      "reduction des shootings et reshoots",
+      "volume et flexibilite de production creative",
+      "delai de mise a disposition des visuels"
+    ]
+  },
+  "implementation": "custom",
+  "objectif_business": "Produire des visuels mode (pubs, social, e-commerce) sans multiplier les shootings physiques, tout en gardant des mannequins reels, leurs droits et leur remuneration.",
+  "description": "H&M a numerise une trentaine de mannequins reels pour en faire des jumeaux numeriques generes par IA, avec le studio tech suedois Uncut. Chaque mannequin est photographie sous plusieurs angles et eclairages pour capturer ses traits et ses mouvements, puis Uncut en produit une replique exploitable. Le jumeau sert ensuite a composer des visuels produit et des images de campagne sans organiser un nouveau shooting physique : si une mannequin tourne deja ailleurs, son jumeau peut porter une autre collection le meme jour. Le cadre est pense pour desamorcer le sujet des droits : le mannequin garde la propriete de son jumeau, peut le louer a d'autres marques, y compris des concurrents, et est remunere sur une base alignee sur l'usage classique de son image. Les contenus produits par IA sont etiquetes sur les reseaux sociaux. La premiere campagne publique est sortie le 2 juillet 2025 autour du denim, avec des jumeaux mis en scene sur fond de capitales de la mode, co-creee avec une equipe dediee (photographe Johnny Kangasniemi, mannequin Vanessa Moody) et accompagnee d'un film de making-of. H&M a annonce d'autres drops IA pour l'automne 2025.",
+  "resultats": [
+    {
+      "metrique": "Premiere campagne publique en ligne, collection denim",
+      "valeur": "2 juillet 2025",
+      "citation_exacte": "The first drop goes live on July 2nd",
+      "source_ref": "S1"
+    },
+    {
+      "metrique": "Mise en scene multi-villes",
+      "valeur": "Capitales de la mode (Londres, Paris, Milan, New York, Stockholm)",
+      "citation_exacte": "digital twins...set to the background of fashion capitals around the world",
+      "source_ref": "S1"
+    },
+    {
+      "metrique": "Droits et remuneration des mannequins",
+      "valeur": "Propriete du jumeau et part des revenus conservees par le mannequin",
+      "citation_exacte": "the real-world talent retains ownership and a revenue share",
+      "source_ref": "S3"
+    },
+    {
+      "metrique": "Transparence des contenus IA",
+      "valeur": "Contenus etiquetes comme generes par IA",
+      "citation_exacte": "H&M says its digital models are clearly tagged",
+      "source_ref": "S3"
+    }
+  ],
+  "niveau_preuve": {
+    "niveau": "C",
+    "justification": "Communique officiel de H&M Group (source primaire) confirmant le lancement, corrobore par plusieurs organes de presse etablis nommant la marque et le partenaire Uncut. Pas de resultats financiers isolant l'impact du dispositif, donc pas de niveau A ; pas d'etude de cas plateforme chiffree, donc pas de niveau B."
+  },
+  "dates": {
+    "lancement": "Annonce en mars 2025 ; premiere campagne publique le 2 juillet 2025",
+    "derniere_confirmation_activite": "Automne 2025 (drops IA supplementaires annonces par H&M)",
+    "verifie_le": "2026-07-12",
+    "revoir_apres": "2027-01-12"
+  },
+  "statut_vivant": {
+    "statut": "signaux_mitiges",
+    "note": "Le dispositif est reel : premiere campagne live en juillet 2025 et drops supplementaires annonces pour l'automne 2025. A la date de verification, aucune confirmation publique d'un usage encore actif en 2026 n'a ete trouvee, et l'initiative reste entouree d'un debat sectoriel sur l'emploi des metiers creatifs. A revoir."
+  },
+  "sources": [
+    {
+      "ref": "S1",
+      "type": "blog_officiel",
+      "fiabilite": "T1_primaire",
+      "titre": "H&M continues its exploration of creativity with AI",
+      "url": "https://hmgroup.com/news/hm-continues-its-exploration-of-creativity-with-ai/",
+      "date_publication": "2025",
+      "consulte_le": "2026-07-12"
+    },
+    {
+      "ref": "S2",
+      "type": "presse",
+      "fiabilite": "T3_presse_etablie",
+      "titre": "H&M Releases First Images With AI Digital Twins",
+      "url": "https://www.businessoffashion.com/news/technology/hm-releases-first-images-with-ai-digital-twins/",
+      "date_publication": "2025",
+      "consulte_le": "2026-07-12"
+    },
+    {
+      "ref": "S3",
+      "type": "presse",
+      "fiabilite": "T3_presse_etablie",
+      "titre": "H&M turns to AI 'digital twins' in new campaign, as fashion grapples with blurred realities",
+      "url": "https://fashionunited.com/news/fashion/h-m-turns-to-ai-digital-twins-in-new-campaign-as-fashion-grapples-with-blurred-realities/2025070466982",
+      "date_publication": "2025-07-04",
+      "consulte_le": "2026-07-12"
+    },
+    {
+      "ref": "S4",
+      "type": "presse",
+      "fiabilite": "T4_secondaire",
+      "titre": "H&M drops first AI 'digital twins' to showcase denim collection",
+      "url": "https://www.just-style.com/news/hm-ai-digital-twins-denim/",
+      "date_publication": "2025-07",
+      "consulte_le": "2026-07-12"
+    }
+  ],
+  "fonctionnement_operationnel": {
+    "cadence": "Par campagne et par drop : une fois les jumeaux crees, les visuels se produisent a la demande sans nouveau shooting physique.",
+    "opere_par": "Direction creative et equipes contenu de H&M, avec le partenaire IA Uncut pour la fabrication des jumeaux.",
+    "signal_pilote": "La fidelite du scan initial de chaque mannequin (angles, eclairage, traits, mouvements) et la validite du cadre de droits. Si le scan est pauvre, le jumeau n'est pas exploitable ; si les droits ne sont pas cadres, le visuel n'est pas diffusable.",
+    "etapes": [
+      {
+        "etape": "Numeriser le mannequin",
+        "detail": "Photographier chaque mannequin sous plusieurs angles et eclairages pour capturer ses traits et ses mouvements.",
+        "acteur": "equipe creative H&M et partenaire IA"
+      },
+      {
+        "etape": "Fabriquer le jumeau numerique",
+        "detail": "Uncut genere la replique IA exploitable a partir des donnees capturees.",
+        "acteur": "partenaire IA (Uncut)"
+      },
+      {
+        "etape": "Cadrer droits et remuneration",
+        "detail": "Contractualiser la propriete du jumeau par le mannequin et une remuneration alignee sur l'usage classique de son image.",
+        "acteur": "H&M et agences de mannequins"
+      },
+      {
+        "etape": "Generer les visuels",
+        "detail": "Composer les images produit et campagne en habillant le jumeau, sans reshoot physique.",
+        "acteur": "equipe contenu H&M"
+      },
+      {
+        "etape": "Diffuser en etiquetant",
+        "detail": "Publier sur social et e-commerce en marquant clairement les contenus comme generes par IA.",
+        "acteur": "marketing / social"
+      }
+    ]
+  },
+  "schema_flow": {
+    "statut": "approche_type",
+    "noeuds": [
+      {
+        "id": "mannequins",
+        "role_generique": "humain",
+        "label": "Mannequins reels numerises (scans multi-angles)"
+      },
+      {
+        "id": "uncut",
+        "role_generique": "modele_ia",
+        "label": "Generation des jumeaux numeriques IA",
+        "outil_documente": "Uncut"
+      },
+      {
+        "id": "biblio",
+        "role_generique": "dam",
+        "label": "Bibliotheque de jumeaux numeriques"
+      },
+      {
+        "id": "visuels",
+        "role_generique": "site_app",
+        "label": "Production des visuels campagne / produit"
+      },
+      {
+        "id": "canaux",
+        "role_generique": "paid_platform",
+        "label": "Diffusion social et fiches e-commerce"
+      },
+      {
+        "id": "creatif",
+        "role_generique": "humain",
+        "label": "Direction creative H&M"
+      }
+    ],
+    "liens": [
+      [
+        "mannequins",
+        "uncut"
+      ],
+      [
+        "uncut",
+        "biblio"
+      ],
+      [
+        "biblio",
+        "visuels"
+      ],
+      [
+        "visuels",
+        "canaux"
+      ],
+      [
+        "creatif",
+        "visuels",
+        "direction creative et validation"
+      ],
+      [
+        "creatif",
+        "uncut",
+        "cadrage du dispositif"
+      ]
+    ]
+  },
+  "replication": {
+    "statut_epistemique": "infere",
+    "prerequis_data": [
+      "Accord de mannequins reels et donnees de numerisation (scans multi-angles, eclairages, mouvements)",
+      "Bibliotheque d'actifs pour stocker et versionner les jumeaux",
+      "Catalogue produit et referentiel de styles a habiller sur les jumeaux"
+    ],
+    "prerequis_orga": [
+      "Cadre juridique de cession de droits a l'image et de remuneration des mannequins",
+      "Conformite AI Act : etiquetage systematique des contenus generes par IA",
+      "Alignement entre direction creative, juridique et studio de production"
+    ],
+    "stack_possible": [
+      "Partenaire specialise en jumeaux numeriques (ex. Uncut)",
+      "Modeles generatifs d'images",
+      "Solution de gestion d'actifs (DAM)"
+    ],
+    "playbook": [
+      {
+        "action": "Selectionner un petit groupe de mannequins volontaires et cadrer leurs droits et leur remuneration",
+        "livrable": "Contrats de cession et de remuneration signes"
+      },
+      {
+        "action": "Numeriser les mannequins sous plusieurs angles et eclairages",
+        "livrable": "Donnees sources fiables par mannequin"
+      },
+      {
+        "action": "Produire les jumeaux numeriques avec un partenaire IA",
+        "livrable": "Bibliotheque de jumeaux exploitables"
+      },
+      {
+        "action": "Generer une premiere campagne test sur une categorie produit",
+        "livrable": "Visuels de campagne produits sans reshoot"
+      },
+      {
+        "action": "Etiqueter et diffuser sur social et e-commerce, puis mesurer la perception",
+        "livrable": "Contenus publies conformes et retours audience"
+      }
+    ],
+    "equipe": "Une direction creative, un studio de production photo, un partenaire IA de jumeaux numeriques, et un juriste propriete intellectuelle / droit a l'image.",
+    "premiere_etape": "Selectionner quelques mannequins volontaires et ecrire le cadre de droits et de remuneration avant toute numerisation : c'est ce qui rend le dispositif diffusable et defendable."
+  },
+  "seo": {
+    "slug": "hm-jumeaux-numeriques-mannequins-ia-2025",
+    "title": "H&M : jumeaux numeriques IA de mannequins - premiere campagne live (2025)",
+    "meta_description": "H&M a numerise une trentaine de mannequins reels en jumeaux IA (studio Uncut) pour produire pubs, social et visuels e-commerce sans reshoot. Campagne live juillet 2025.",
+    "resume_citable": "En 2025, H&M a cree avec le studio suedois Uncut des jumeaux numeriques IA d'une trentaine de mannequins reels, qui en gardent la propriete et une part des revenus, pour produire des visuels pubs, social et e-commerce sans reshoot ; premiere campagne live le 2 juillet 2025.",
+    "faq": [
+      {
+        "q": "Combien de mannequins H&M a-t-il numerises ?",
+        "a": "Une trentaine de mannequins reels, transformes en jumeaux numeriques IA avec le studio suedois Uncut. Chaque mannequin garde la propriete de son jumeau et peut le louer a d'autres marques."
+      },
+      {
+        "q": "Les mannequins sont-ils remuneres et les contenus signales ?",
+        "a": "Oui. H&M indique que les mannequins conservent la propriete de leur jumeau et une part des revenus, avec une remuneration alignee sur l'usage classique de leur image, et que les contenus generes par IA sont clairement etiquetes."
+      }
+    ]
+  }
+}

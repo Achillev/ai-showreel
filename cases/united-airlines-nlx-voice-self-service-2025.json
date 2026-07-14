@@ -1,0 +1,290 @@
+{
+  "id": "united-airlines-nlx-voice-self-service-2025",
+  "type_fiche": "succes",
+  "marque": "United Airlines",
+  "industrie": "voyage_hospitality",
+  "marches_deploiement": [
+    "Etats-Unis"
+  ],
+  "transposable_ue": {
+    "flag": "oui_avec_adaptations",
+    "note": "Un self-service vocal et par chat pour gerer annulations, bagages et demandes d'accessibilite est transposable en UE. L'enregistrement et le traitement de la voix imposent une base legale RGPD et un consentement explicite ; l'AI Act demande d'informer le client qu'il parle a une IA. Les donnees de sante implicites (fauteuil roulant, animal d'assistance) relevent de categories sensibles a encadrer."
+  },
+  "metier": "service client",
+  "intervenants": [
+    {
+      "nom": "Rachel Walker",
+      "role": "Managing Director, Service Transformation for Customer Contact Centers, United Airlines",
+      "source_ref": "S1"
+    },
+    {
+      "nom": "Brian Dawson",
+      "role": "Chief Strategy Officer, NLX",
+      "source_ref": "S1"
+    }
+  ],
+  "agences": [
+    {
+      "nom": "NLX",
+      "role": "Plateforme d'IA conversationnelle multimodale (voix et chat) utilisee pour automatiser le self-service",
+      "source_ref": "S1"
+    }
+  ],
+  "axes": {
+    "levier": "retention",
+    "touchpoints": [
+      "centre d'appels (IVR)",
+      "site United",
+      "app mobile"
+    ],
+    "etape_parcours": "post-achat",
+    "famille": "conversation",
+    "pattern": "voicebot self-service service client",
+    "type_ia": [
+      "NLU",
+      "IA conversationnelle multimodale",
+      "voicebot"
+    ],
+    "plateforme_stack": [
+      "NLX",
+      "IVR existant",
+      "custom/in-house"
+    ],
+    "objectif_metrique": [
+      "taux d'automatisation",
+      "satisfaction client (CSAT)",
+      "charge du centre d'appels"
+    ]
+  },
+  "implementation": "plateforme",
+  "objectif_business": "Absorber un volume d'appels devenu ingerable apres la reprise du trafic post-covid, en laissant les voyageurs regler eux-memes les gestes frequents (annulation, bagage, ajout d'un fauteuil roulant ou d'un animal d'assistance) sans attendre un agent.",
+  "points_cles": ["Voicebot self-service pour annulations, bagages et demandes d'accessibilite.", "Plateforme NLX en voix et chat, branchee sur l'IVR et le PNR United.", "64% des demandes de fauteuil roulant automatisees (90% CSAT), 31% des annulations.", "Preuve B, statut confirme, resultats mesures sur six mois."],
+  "description": "United a branche la plateforme NLX sur son parcours de contact pour automatiser des demandes precises par la voix et le chat. Un voyageur qui appelle ou ecrit peut annuler un vol, verifier un bagage ou ajouter une demande d'accessibilite a sa reservation en quelques minutes, guide par un assistant qui comprend la demande en langage naturel et execute l'action dans les systemes United. Quand le cas sort du perimetre automatise, le relais passe a un agent. Le deploiement vise d'abord les demandes a fort volume et a faible variabilite, la ou l'automatisation tient sans degrader l'experience.",
+  "resultats": [
+    {
+      "metrique": "Demandes de fauteuil roulant automatisees",
+      "valeur": "64%",
+      "citation_exacte": "64% of wheelchair contact center requests are automated through NLX",
+      "source_ref": "S1"
+    },
+    {
+      "metrique": "CSAT sur les demandes de fauteuil roulant et d'assistance",
+      "valeur": "90% positif",
+      "citation_exacte": "90% for wheelchair assistance and handling requests",
+      "source_ref": "S1"
+    },
+    {
+      "metrique": "Demandes d'annulation de vol automatisees",
+      "valeur": "31%",
+      "citation_exacte": "31% of flight cancellation requests...are automated through NLX",
+      "source_ref": "S1"
+    },
+    {
+      "metrique": "CSAT sur les annulations",
+      "valeur": "82% positif",
+      "citation_exacte": "82% positive for cancellations",
+      "source_ref": "S1"
+    },
+    {
+      "metrique": "Volume d'appels annuel qui a motive le projet (2022)",
+      "valeur": "environ 30 millions",
+      "citation_exacte": "customer inquiries soared to about 30 million calls a year",
+      "source_ref": "S2"
+    }
+  ],
+  "niveau_preuve": {
+    "niveau": "B",
+    "justification": "Etude de cas plateforme NLX chiffree (taux d'automatisation et CSAT), corroboree par la presse tech (TechCrunch) qui nomme United et decrit le meme deploiement. Les chiffres durs proviennent du vendor, la presse confirme le perimetre et l'echelle."
+  },
+  "dates": {
+    "lancement": "2024 (mise en production du self-service NLX)",
+    "derniere_confirmation_activite": "2025-04 (etude de cas NLX detaillant les resultats sur 6 mois)",
+    "verifie_le": "2026-07-11",
+    "revoir_apres": "2027-01-11"
+  },
+  "statut_vivant": {
+    "statut": "confirme",
+    "note": "Self-service NLX documente comme actif, avec des resultats mesures sur six mois et une reconnaissance externe (Opus Research Conversational AI Award 2024) pour l'ajout automatise de fauteuil roulant et d'animal d'assistance."
+  },
+  "sources": [
+    {
+      "ref": "S1",
+      "type": "customer_story_plateforme",
+      "fiabilite": "T2_officiel_interesse",
+      "titre": "Empowering Travelers Through AI: United Airlines' Self-Service Revolution",
+      "url": "https://nlx.ai/news/empowering-travelers-through-ai-united-airlines-self-service-revolution",
+      "date_publication": "2025-04-11",
+      "consulte_le": "2026-07-11"
+    },
+    {
+      "ref": "S2",
+      "type": "presse",
+      "fiabilite": "T3_presse_etablie",
+      "titre": "How United Airlines uses AI to make flying the friendly skies a bit easier",
+      "url": "https://techcrunch.com/2024/04/21/how-united-airlines-uses-ai-to-make-flying-the-friendly-skies-a-bit-easier/",
+      "date_publication": "2024-04-21",
+      "consulte_le": "2026-07-11"
+    }
+  ],
+  "fonctionnement_operationnel": {
+    "cadence": "Temps reel, a chaque appel ou conversation entrante.",
+    "opere_par": "Equipe Service Transformation des centres de contact United, avec la plateforme NLX.",
+    "signal_pilote": "L'intention exprimee par le voyageur, rapprochee du dossier de reservation en direct. Sans acces fiable au PNR et aux systemes d'inventaire, l'assistant ne peut pas executer l'action et bascule tout vers l'agent, ce qui annule le gain.",
+    "etapes": [
+      {
+        "etape": "Captation de la demande",
+        "detail": "Le voyageur appelle ou ecrit et formule sa demande en langage naturel (annuler, verifier un bagage, ajouter un fauteuil roulant).",
+        "acteur": "client"
+      },
+      {
+        "etape": "Comprehension et qualification",
+        "detail": "L'assistant identifie l'intention et verifie si le cas entre dans un scenario automatise.",
+        "acteur": "IA"
+      },
+      {
+        "etape": "Execution",
+        "detail": "Pour un cas dans le perimetre, l'action est realisee dans les systemes United et confirmee au voyageur.",
+        "acteur": "IA"
+      },
+      {
+        "etape": "Passage a l'agent",
+        "detail": "Hors perimetre ou en cas d'echec, le dossier et le contexte sont transferes a un conseiller humain.",
+        "acteur": "IA"
+      }
+    ]
+  },
+  "schema_flow": {
+    "statut": "documente",
+    "noeuds": [
+      {
+        "id": "user",
+        "role_generique": "humain",
+        "label": "Voyageur"
+      },
+      {
+        "id": "chan",
+        "role_generique": "canal_conversationnel",
+        "label": "IVR / chat United"
+      },
+      {
+        "id": "ai",
+        "role_generique": "modele_ia",
+        "label": "Assistant conversationnel",
+        "outil_documente": "NLX"
+      },
+      {
+        "id": "res",
+        "role_generique": "data_source",
+        "label": "Reservation et systemes United (PNR)"
+      },
+      {
+        "id": "agent",
+        "role_generique": "humain",
+        "label": "Agent centre de contact"
+      }
+    ],
+    "liens": [
+      [
+        "user",
+        "chan"
+      ],
+      [
+        "chan",
+        "ai"
+      ],
+      [
+        "ai",
+        "res"
+      ],
+      [
+        "res",
+        "ai"
+      ],
+      [
+        "ai",
+        "user",
+        "action confirmee"
+      ],
+      [
+        "ai",
+        "agent",
+        "escalade hors perimetre"
+      ]
+    ]
+  },
+  "replication": {
+    "statut_epistemique": "infere",
+    "prerequis_data": [
+      "acces API au systeme de reservation (PNR)",
+      "cartographie des intentions a fort volume",
+      "regles metier par type de demande"
+    ],
+    "prerequis_orga": [
+      "equipe centre de contact prete a co-concevoir les scenarios",
+      "gouvernance de l'escalade vers l'agent",
+      "cadre de conformite pour la voix et les donnees sensibles"
+    ],
+    "stack_possible": [
+      "plateforme d'IA conversationnelle vocale",
+      "integration IVR existante",
+      "connecteurs vers les systemes de reservation"
+    ],
+    "premiere_etape": "Choisir une intention a fort volume et faible variabilite (ex. annulation) et l'automatiser de bout en bout avant d'elargir.",
+    "playbook": [
+      {
+        "action": "Cartographier les intentions a fort volume et faible variabilite (annulation, bagage, accessibilite) et les prioriser par volume et par risque.",
+        "livrable": "Liste priorisee des intentions avec volumes annuels."
+      },
+      {
+        "action": "Connecter la plateforme conversationnelle au PNR et a l'IVR, ecrire les regles metier de la premiere demande.",
+        "livrable": "Premier scenario automatise de bout en bout en pre-production."
+      },
+      {
+        "action": "Piloter sur une intention avec escalade systematique vers l'agent ; mesurer taux d'automatisation et CSAT par scenario.",
+        "livrable": "Bilan du pilote (automatisation, CSAT, echecs et causes)."
+      },
+      {
+        "action": "Etendre aux intentions suivantes et verrouiller la conformite (voix, donnees sensibles comme les demandes d'accessibilite).",
+        "livrable": "Catalogue de scenarios en production et tableau de bord permanent."
+      }
+    ],
+    "equipe": "1 PM centre de contact + 1 dev integration (PNR/IVR) + 1 referent conformite ; le vendor accompagne la conception des scenarios."
+  },
+  "seo": {
+    "slug": "united-airlines-nlx-voice-self-service-2025",
+    "title": "United Airlines : voicebot self-service NLX - 64% des demandes de fauteuil roulant automatisees (2025)",
+    "meta_description": "United Airlines automatise avec NLX 64% des demandes de fauteuil roulant (90% de CSAT) et 31% des annulations de vol par voix et chat, pour absorber 30 millions d'appels par an.",
+    "resume_citable": "United Airlines a branche la plateforme NLX sur son centre de contact et automatise 64% des demandes de fauteuil roulant (90% de CSAT) et 31% des annulations de vol par la voix et le chat.",
+    "faq": [
+      {
+        "q": "Que fait le self-service IA de United Airlines ?",
+        "a": "Il laisse un voyageur annuler un vol, verifier un bagage ou ajouter une demande d'accessibilite par la voix ou le chat, sans attendre un agent, et bascule vers un humain hors perimetre."
+      },
+      {
+        "q": "Quels resultats United a-t-il obtenus ?",
+        "a": "64% des demandes de fauteuil roulant automatisees avec 90% de CSAT, et 31% des annulations de vol automatisees avec 82% de CSAT, sur une base de 6 mois."
+      }
+    ]
+  },
+  "logo_domain": "united.com",
+  "stack_technique": [
+    {
+      "nom": "NLX",
+      "categorie": "plateforme",
+      "detail": "Plateforme d'IA conversationnelle multimodale (voix et chat) qui comprend la demande en langage naturel et execute l'action dans les systemes United.",
+      "url": "https://nlx.ai"
+    },
+    {
+      "nom": "IVR existant United",
+      "categorie": "infra",
+      "detail": "Canal telephonique du centre de contact sur lequel l'assistant est branche.",
+      "url": "https://www.united.com"
+    },
+    {
+      "nom": "Systemes de reservation United (PNR)",
+      "categorie": "infra",
+      "detail": "Acces au dossier de reservation en direct, condition pour executer annulations, bagages et demandes d'accessibilite.",
+      "url": "https://www.united.com"
+    }
+  ]
+}

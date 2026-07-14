@@ -1,0 +1,218 @@
+{
+  "type_fiche": "echec_retrait",
+  "id": "mcdonalds-voice-ai-drive-2024",
+  "marque": "McDonald's",
+  "groupe": "McDonald's (avec IBM)",
+  "industrie": "food_beverage",
+  "marches_deploiement": [
+    "États-Unis (100+ restaurants pilotes, premiers tests à Chicago dès 2019)"
+  ],
+  "transposable_ue": {
+    "flag": "oui",
+    "note": "La leçon vaut pour toute IA transactionnelle en environnement physique bruyant. Aucune spécificité RGPD/AI Act bloquante - l'enjeu est opérationnel (seuil de précision), pas réglementaire."
+  },
+  "metier": "Prise de commande / expérience drive-thru",
+  "axes": {
+    "levier": "activation_conversion",
+    "touchpoints": [
+      "drive-thru (borne vocale)",
+      "point de vente physique"
+    ],
+    "etape_parcours": "commande : prise de commande vocale au moment de l'achat",
+    "famille": "conversation",
+    "pattern": "Voice AI transactionnelle : reconnaissance et compréhension vocale remplaçant l'employé à la prise de commande au drive, en environnement acoustique non contrôlé",
+    "type_ia": [
+      "reconnaissance vocale (ASR)",
+      "NLU conversationnelle",
+      "Automated Order Taking"
+    ],
+    "plateforme_stack": [
+      "technologie Apprente (-> McD Tech Labs -> IBM en 2021)",
+      "IBM Watson / IBM AOT"
+    ],
+    "objectif_metrique": [
+      "coût de main-d'œuvre",
+      "temps d'attente au drive",
+      "précision de commande"
+    ]
+  },
+  "implementation": "hybride",
+  "objectif_business": "Réduire les coûts de main-d'œuvre et les temps d'attente au drive (canal majoritaire des ventes US), standardiser la prise de commande et libérer les équipes.",
+  "description": "McDonald's a racheté la startup de voice AI Apprente en 2019, testé la prise de commande vocale automatisée dans des drives de Chicago, puis revendu sa filiale McD Tech Labs à IBM fin 2021 en signant un partenariat pour industrialiser la technologie. Le système a été déployé dans plus de 100 drive-thrus américains entre 2021 et 2024. Le client parlait à une IA à la borne, un employé n'intervenant qu'en secours. La précision rapportée plafonnait autour de 85 %, avec une intervention humaine sur environ une commande sur cinq. En 2023-2024, des vidéos TikTok virales ont documenté des commandes absurdes : neuf sweet teas au lieu d'un, des centaines de McNuggets ajoutés pendant que les clientes criaient « stop ». Le 13 juin 2024, McDonald's a annoncé aux franchisés la fin du partenariat IBM et l'extinction du système au plus tard le 26 juillet 2024 - tout en réaffirmant que la voice AI au drive ferait « partie du futur » de ses restaurants.",
+  "post_mortem": {
+    "ce_qui_s_est_passe": "2019 : acquisition d'Apprente, premiers tests à Chicago. Oct. 2021 : vente de McD Tech Labs à IBM + partenariat AOT. 2021-2024 : test dans 100+ drive-thrus. 2023-2024 : vidéos virales TikTok de commandes erronées, reprises par la presse nationale. 13 juin 2024 : mémo interne aux franchisés annonçant la fin du test IBM ; extinction au plus tard le 26 juillet 2024. McDonald's annonce ensuite un partenariat élargi avec Google Cloud sur l'IA générative.",
+    "raison_echec": "Pas d'aveu chiffré officiel, mais faisceau documenté : précision d'environ 85 % avec intervention humaine sur ~1 commande sur 5, incapacité face aux accents, au bruit ambiant et aux voix multiples, et dommage d'image des vidéos virales. Déclaration de McDonald's : le test visait à vérifier si la voix automatisée pouvait « simplify operations for crew » ; l'entreprise met fin au partenariat IBM tout en voulant « explore voice ordering solutions more broadly » - un désaveu de l'exécution, pas de l'ambition.",
+    "date_retrait": "2024-06-13 (annonce) ; système éteint au plus tard le 2024-07-26",
+    "cout_estime": "Non publié. Coûts identifiables : acquisition d'Apprente (dizaines de M$ estimées), 3 ans de pilote sur 100+ sites, revente à IBM, et un coût réputationnel réel (vidéos TikTok cumulant des dizaines de millions de vues, devenues le symbole grand public de l'IA vocale ratée). Pour IBM : perte de la vitrine la plus visible de son offre AOT.",
+    "signaux_avant_coureurs": "Une précision de ~85 % au drive = 15 % de frictions sur le geste le plus fréquent du canal principal : le seuil de tolérance (>95 %) était connu et non atteint après 3 ans. L'environnement drive (bruit, accents, deux files) est le pire cas pour l'ASR - choisir le terrain le plus difficile en premier était risqué. La viralité était prévisible : chaque échec se produit devant un client au smartphone. Et la cession à IBM dès 2021 suggérait que McDonald's ne voulait plus porter le développement en propre.",
+    "lecons_avec_recul": "(1) Pour une IA transactionnelle en environnement physique, le taux d'exactitude requis est quasi celui de l'humain dès le jour 1 : à 85 %, l'automatisation coûte plus cher (rattrapage + image) qu'elle ne rapporte. (2) Tester un système vocal dans son environnement le plus hostile, à forte visibilité publique, maximise le risque réputationnel - commencer par des canaux à échec privé (app, téléphone). (3) Faire de « interventions humaines par commande » un critère d'arrêt explicite du pilote. (4) La sortie de McDonald's (fin du partenariat, pas de la techno) est un modèle de backpedal maîtrisé qui préserve l'option future.",
+    "le_pattern_reste_il_valide": "Oui, clairement. McDonald's a réaffirmé qu'une solution vocale au drive fera partie de son futur et s'est allié à Google Cloud ; Wendy's a étendu FreshAI, Taco Bell/Yum! a déployé la voice AI dans des centaines de drives en 2024-2025. L'échec condamne une exécution (technologie pré-LLM 2019-2021, environnement hostile, précision insuffisante), pas le pattern - un cas de « trop tôt avec la mauvaise génération technologique »."
+  },
+  "resultats": [
+    {
+      "metrique": "Ampleur du retrait, restaurants pilotes débranchés",
+      "valeur": "100+ restaurants",
+      "citation_exacte": "McDonald's ends AI drive-thru orders",
+      "source_ref": "S1"
+    },
+    {
+      "metrique": "Date d'extinction (au plus tard)",
+      "valeur": "26 juillet 2024",
+      "citation_exacte": "shut off no later than July 26, 2024",
+      "source_ref": "S3"
+    },
+    {
+      "metrique": "Précision rapportée, intervention humaine sur environ 1 commande sur 5",
+      "valeur": "environ 85%",
+      "citation_exacte": "an accuracy rate of about 85%",
+      "source_ref": "S2"
+    },
+    {
+      "metrique": "Position post-retrait, la voice AI reste dans la roadmap",
+      "valeur": "Voice AI maintenue",
+      "citation_exacte": "explore voice ordering solutions more broadly",
+      "source_ref": "S2"
+    }
+  ],
+  "niveau_preuve": {
+    "niveau": "C",
+    "justification": "Pas de chiffres financiers publiés : les faits reposent sur un mémo interne aux franchisés révélé et confirmé par la presse économique majeure (CNBC, CBS News, Restaurant Business) et sur la déclaration officielle de McDonald's - sourçage presse solide et convergent, mais sans document financier public."
+  },
+  "dates": {
+    "lancement": "2021-10 (tests Apprente dès 2019)",
+    "date_retrait": "2024-06-13 / 2024-07-26 (extinction)",
+    "derniere_confirmation_activite": "2024-2025 (pivot vers Google Cloud)",
+    "verifie_le": "2026-07-11",
+    "revoir_apres": "2027-01-11"
+  },
+  "statut_vivant": {
+    "statut": "incertain",
+    "note": "Système IBM éteint mi-2024. McDonald's poursuit l'ambition voice AI via un nouveau partenariat Google Cloud - le pattern continue chez d'autres enseignes (Wendy's, Taco Bell)."
+  },
+  "sources": [
+    {
+      "ref": "S1",
+      "type": "presse",
+      "titre": "McDonald's ends AI drive-thru orders - for now - CBS News",
+      "url": "https://www.cbsnews.com/news/mcdonalds-ends-ai-drive-thru-ordering/",
+      "date_publication": "2024-06-17",
+      "consulte_le": "2026-07-11",
+      "fiabilite": "T3_presse_etablie"
+    },
+    {
+      "ref": "S2",
+      "type": "presse",
+      "titre": "McDonald's Abandons AI for Drive-Thru Orders - What's Next for Fast-Food CX? - CX Today",
+      "url": "https://www.cxtoday.com/customer-analytics-intelligence/mcdonalds-stops-using-ai-for-drive-thru-orders-whats-next-for-fast-food-cx/",
+      "date_publication": "2024-06-18",
+      "consulte_le": "2026-07-11",
+      "fiabilite": "T4_secondaire"
+    },
+    {
+      "ref": "S3",
+      "type": "presse",
+      "titre": "McDonald's is ending its drive-thru AI test - Restaurant Business",
+      "url": "https://www.restaurantbusinessonline.com/technology/mcdonalds-ending-its-drive-thru-ai-test",
+      "date_publication": "2024-06-13",
+      "consulte_le": "2026-07-11",
+      "fiabilite": "T3_presse_etablie"
+    },
+    {
+      "ref": "S4",
+      "type": "presse",
+      "titre": "McDonald's to end AI drive-thru test with IBM - CNBC",
+      "url": "https://www.cnbc.com/2024/06/17/mcdonalds-to-end-ibm-ai-drive-thru-test.html",
+      "date_publication": "2024-06-17",
+      "consulte_le": "2026-07-11",
+      "fiabilite": "T3_presse_etablie"
+    }
+  ],
+  "schema_flow": {
+    "statut": "documente",
+    "noeuds": [
+      {
+        "id": "voice",
+        "role_generique": "humain",
+        "label": "Commande vocale (bruit, accents, 2 files)"
+      },
+      {
+        "id": "asr",
+        "role_generique": "modele_ia",
+        "label": "ASR + NLU (~85 % de précision)",
+        "outil_documente": "IBM AOT"
+      },
+      {
+        "id": "human",
+        "role_generique": "humain",
+        "label": "Rattrapage humain (~1 commande / 5)"
+      },
+      {
+        "id": "order",
+        "role_generique": "site_app",
+        "label": "Commande (erreurs virales TikTok)"
+      }
+    ],
+    "liens": [
+      [
+        "voice",
+        "asr"
+      ],
+      [
+        "asr",
+        "order"
+      ],
+      [
+        "asr",
+        "human",
+        "escalade fréquente"
+      ],
+      [
+        "human",
+        "order"
+      ]
+    ]
+  },
+  "seo": {
+    "slug": "mcdonalds-voice-ai-drive-retrait-2024",
+    "title": "McDonald's : la voice AI au drive débranchée en 2024 après les vidéos virales",
+    "meta_description": "McDonald's a retiré sa prise de commande vocale par IA (IBM) de 100+ drives en 2024. Post-mortem : pourquoi 85 % de précision ne suffit pas, et pourquoi le pattern reste valide.",
+    "resume_citable": "En juin 2024, McDonald's a mis fin à son test de prise de commande vocale par IA avec IBM dans plus de 100 drives, la précision plafonnant à ~85 % ; l'enseigne poursuit néanmoins l'ambition voice AI via Google Cloud.",
+    "faq": [
+      {
+        "q": "Pourquoi 85 % de précision est-il un échec ?",
+        "a": "Au drive, canal principal, 15 % de frictions sur le geste le plus fréquent coûtent plus en rattrapage humain et en image qu'ils n'économisent. Le seuil opérationnel est proche de l'humain."
+      },
+      {
+        "q": "La voice AI au drive est-elle morte ?",
+        "a": "Non. Wendy's (FreshAI) et Taco Bell l'ont étendue en 2024-2025, et McDonald's a repivoté vers Google Cloud. L'échec est celui d'une génération technologique, pas du pattern."
+      }
+    ]
+  },
+  "logo_domain": "mcdonalds.com",
+  "stack_technique": [
+    {
+      "nom": "Apprente (voice AI)",
+      "categorie": "outil",
+      "detail": "startup d'ASR/NLU rachetee par McDonald's en 2019, devenue McD Tech Labs puis cedee a IBM fin 2021",
+      "url": "https://www.ibm.com"
+    },
+    {
+      "nom": "IBM Automated Order Taking (AOT)",
+      "categorie": "plateforme",
+      "detail": "systeme de prise de commande vocale industrialise par IBM et deploye dans plus de 100 drive-thrus americains entre 2021 et 2024",
+      "url": "https://www.ibm.com"
+    },
+    {
+      "nom": "Briques ASR/NLU IBM Watson",
+      "categorie": "llm",
+      "detail": "reconnaissance et comprehension vocale de generation pre-LLM ; precision rapportee d'environ 85% au drive, rattrapage humain sur environ une commande sur cinq",
+      "url": "https://www.ibm.com"
+    },
+    {
+      "nom": "Bornes de drive-thru equipees",
+      "categorie": "infra",
+      "detail": "micros et haut-parleurs en environnement acoustique non controle (bruit, accents, deux files), le pire cas pour l'ASR",
+      "url": "https://www.mcdonalds.com"
+    }
+  ]
+}

@@ -1,0 +1,267 @@
+{
+  "type_fiche": "succes",
+  "id": "the-north-face-xps-watson-2016",
+  "marque": "The North Face",
+  "groupe": "VF Corporation",
+  "industrie": "retail_ecom",
+  "marches_deploiement": [
+    "Etats-Unis"
+  ],
+  "transposable_ue": {
+    "flag": "oui_avec_adaptations",
+    "note": "Assistant d'achat conversationnel sur site e-commerce, transposable en UE. Un equivalent 2025 s'appuierait sur des LLM et tomberait sous les obligations de transparence de l'AI Act pour l'IA generative. Attention : le dispositif d'origine (Watson XPS) est ancien et n'apparait plus en service."
+  },
+  "metier": "E-commerce / assistant d'achat conversationnel",
+  "axes": {
+    "levier": "activation_conversion",
+    "touchpoints": [
+      "Site e-commerce (thenorthface.com)",
+      "Assistant conversationnel XPS"
+    ],
+    "etape_parcours": "consideration -> achat",
+    "famille": "personnalisation",
+    "pattern": "Assistant d'achat conversationnel qui personnalise la recommandation produit par le dialogue (usage, meteo, activite)",
+    "type_ia": [
+      "traitement du langage naturel",
+      "systeme cognitif (IBM Watson)",
+      "recommandation produit contextuelle"
+    ],
+    "plateforme_stack": [
+      "IBM Watson",
+      "Fluid Expert Personal Shopper (XPS)"
+    ],
+    "objectif_metrique": [
+      "temps passe sur site",
+      "taux de clic vers les recommandations",
+      "intention de reutilisation"
+    ]
+  },
+  "implementation": "plateforme",
+  "objectif_business": "Reproduire en ligne le conseil d'un vendeur specialise : poser quelques questions sur l'usage prevu et ressortir les produits adaptes, plutot que laisser le client filtrer seul un catalogue.",
+  "description": "En 2015-2016, The North Face a mis en ligne XPS (Expert Personal Shopper), un assistant d'achat conversationnel construit par l'agence Fluid et propulse par IBM Watson. Le client decrit ce qu'il cherche en langage naturel, par exemple une veste pour une randonnee a tel endroit et telle saison ; le systeme interprete la demande, estime les conditions (temperature, vent) et classe les produits en consequence. Lance en beta en decembre 2015 apres un pilote d'un mois, l'outil etait au depart limite aux vestes. Sur le pilote, la session moyenne durait deux minutes et le taux de clic vers les recommandations atteignait 60 %. D'apres les comptes rendus ulterieurs, les clients qui utilisaient l'assistant passaient 40 % de temps en plus sur le site et 75 % declaraient vouloir s'en resservir. En novembre 2016, IBM a rachete l'unite XPS de Fluid. Le dispositif d'origine n'apparait plus en service aujourd'hui ; le pattern, lui, s'est generalise avec les assistants conversationnels sur LLM.",
+  "fonctionnement_operationnel": {
+    "cadence": "Temps reel, a la demande du client pendant sa session d'achat.",
+    "opere_par": "Equipe e-commerce / digital de la marque, l'assistant etant fourni par un partenaire technologique (ici Fluid sur IBM Watson).",
+    "signal_pilote": "La demande exprimee par le client en langage naturel, croisee avec des donnees de contexte (lieu, saison, meteo). Sans un mapping fiable entre l'intention et les attributs produits, l'assistant recommande a cote.",
+    "etapes": [
+      {
+        "etape": "Recueillir la demande",
+        "detail": "Le client formule son besoin en langage naturel (activite, lieu, saison).",
+        "acteur": "Client"
+      },
+      {
+        "etape": "Interpreter et contextualiser",
+        "detail": "Le NLP extrait l'intention et estime les conditions (temperature, vent) pour le lieu et la periode.",
+        "acteur": "IA / assistant conversationnel"
+      },
+      {
+        "etape": "Classer les produits",
+        "detail": "Les articles sont ranges par adequation au besoin exprime et au contexte, puis presentes au client.",
+        "acteur": "IA / assistant conversationnel"
+      },
+      {
+        "etape": "Mesurer l'engagement",
+        "detail": "Temps passe, clics vers les recommandations et intention de reutilisation servent a juger l'outil.",
+        "acteur": "Equipe e-commerce"
+      }
+    ]
+  },
+  "resultats": [
+    {
+      "metrique": "Taux de clic vers les recommandations (pilote)",
+      "valeur": "60 %",
+      "citation_exacte": "Click-through rate: 60 percent",
+      "source_ref": "S1"
+    },
+    {
+      "metrique": "Temps passe sur site avec l'assistant",
+      "valeur": "+40 %",
+      "citation_exacte": "Customers spend 40% more time onsite when they interact with the solution",
+      "source_ref": "S2"
+    },
+    {
+      "metrique": "Intention de reutilisation",
+      "valeur": "75 %",
+      "citation_exacte": "75% of consumers who tried it said they would use it again",
+      "source_ref": "S2"
+    }
+  ],
+  "niveau_preuve": {
+    "niveau": "C",
+    "justification": "Communique officiel du lancement (chiffres du pilote : 60 % de clic, 2 min de session) et comptes rendus concordants d'analyses tierces pour le temps passe et l'intention de reutilisation. Pas de resultat financier ; dispositif ancien dont la vivacite n'est plus confirmee."
+  },
+  "dates": {
+    "lancement": "2015-12-14 (beta, apres un pilote d'un mois)",
+    "derniere_confirmation_activite": "2016-11 - IBM rachete l'unite XPS de Fluid ; pas de signal de service actif recent cote thenorthface.com",
+    "verifie_le": "2026-07-11",
+    "revoir_apres": "2027-01-11"
+  },
+  "statut_vivant": {
+    "statut": "incertain",
+    "note": "Le dispositif XPS d'origine (Watson plus Fluid) semble retire depuis longtemps ; l'unite XPS de Fluid a ete rachetee par IBM fin 2016. Le pattern (assistant d'achat conversationnel) est en revanche tres vivant, aujourd'hui porte par les LLM. Fiche a lire comme un cas fondateur, pas comme une feature en production."
+  },
+  "sources": [
+    {
+      "ref": "S1",
+      "type": "presse",
+      "titre": "The North Face, IBM and Fluid Launch New Interactive Shopping Experience using Artificial Intelligence (AI) - PR Newswire",
+      "url": "https://www.prnewswire.com/news-releases/the-north-face-ibm-and-fluid-launch-new-interactive-shopping-experience-using-artificial-intelligence-ai-300192085.html",
+      "date_publication": "2015-12-14",
+      "consulte_le": "2026-07-11",
+      "fiabilite": "T2_officiel_interesse"
+    },
+    {
+      "ref": "S2",
+      "type": "analyse_academique",
+      "titre": "Smarter e-shopping with The North Face and Watson - Harvard Business School (Technology and Operations Management)",
+      "url": "https://d3.harvard.edu/platform-rctom/submission/smarter-e-shopping-with-the-north-face-and-watson/",
+      "date_publication": "2018-11",
+      "consulte_le": "2026-07-11",
+      "fiabilite": "T4_secondaire"
+    },
+    {
+      "ref": "S3",
+      "type": "presse",
+      "titre": "IBM buys Expert Personal Shopper from Fluid to build out Watson's conversation skills - TechCrunch",
+      "url": "https://techcrunch.com/2016/11/01/ibm-buys-expert-personal-shopper-from-fluid-to-build-out-watsons-conversation-skills/",
+      "date_publication": "2016-11-01",
+      "consulte_le": "2026-07-11",
+      "fiabilite": "T3_presse_etablie"
+    }
+  ],
+  "schema_flow": {
+    "statut": "documente",
+    "noeuds": [
+      {
+        "id": "ask",
+        "role_generique": "humain",
+        "label": "Demande client en langage naturel"
+      },
+      {
+        "id": "nlp",
+        "role_generique": "modele_ia",
+        "label": "NLP + contexte (meteo, saison)",
+        "outil_documente": "IBM Watson"
+      },
+      {
+        "id": "xps",
+        "role_generique": "modele_ia",
+        "label": "Classement produit contextuel",
+        "outil_documente": "Fluid Expert Personal Shopper (XPS)"
+      },
+      {
+        "id": "site",
+        "role_generique": "site_app",
+        "label": "Recommandations sur le site"
+      },
+      {
+        "id": "buy",
+        "role_generique": "site_app",
+        "label": "Clic / achat"
+      }
+    ],
+    "liens": [
+      [
+        "ask",
+        "nlp"
+      ],
+      [
+        "nlp",
+        "xps"
+      ],
+      [
+        "xps",
+        "site"
+      ],
+      [
+        "site",
+        "buy"
+      ]
+    ]
+  },
+  "replication": {
+    "statut_epistemique": "infere",
+    "prerequis_data": [
+      "Catalogue avec attributs d'usage exploitables (activite, saison, conditions)",
+      "Mapping entre intentions clients et attributs produits",
+      "Source de contexte externe si pertinent (meteo, localisation)"
+    ],
+    "prerequis_orga": [
+      "Brique conversationnelle encadree (garde-fous, transparence)",
+      "Equipe e-commerce pour maintenir le mapping intention-produit"
+    ],
+    "stack_possible": [
+      "Assistant conversationnel sur LLM (Azure OpenAI, Google, ou equivalent) branche sur le catalogue",
+      "Moteur de recommandation contextuel derriere l'assistant"
+    ],
+    "premiere_etape": "Cibler une categorie a fort besoin de conseil (equipement outdoor, high-tech), brancher un assistant conversationnel sur le catalogue, et mesurer clic vers reco et conversion contre le parcours filtre classique.",
+    "playbook": [
+      {
+        "action": "Choisir une categorie a fort besoin de conseil et cartographier les attributs d'usage du catalogue (activite, saison, conditions).",
+        "livrable": "Mapping intention client vers attributs produits."
+      },
+      {
+        "action": "Brancher un assistant conversationnel (sur LLM aujourd'hui) sur le catalogue de la categorie, avec garde-fous et transparence sur la nature IA.",
+        "livrable": "Assistant en pre-production sur la categorie pilote."
+      },
+      {
+        "action": "Ouvrir en beta sur une part du trafic et mesurer clic vers les recommandations, temps passe et conversion contre le parcours filtre classique.",
+        "livrable": "Resultats du test controle."
+      },
+      {
+        "action": "Iterer sur le mapping intention-produit a partir des conversations reelles et decider de l'extension a d'autres categories.",
+        "livrable": "Bilan et roadmap d'extension."
+      }
+    ],
+    "equipe": "1 PM e-commerce + 1-2 devs + 1 referent catalogue pour entretenir le mapping intention-produit."
+  },
+  "seo": {
+    "slug": "the-north-face-xps-watson-2016",
+    "title": "The North Face : assistant d'achat conversationnel (IBM Watson XPS) - 60 % de clic vers les recos (pilote)",
+    "meta_description": "En 2015-2016, The North Face a lance XPS, un assistant d'achat conversationnel sur IBM Watson qui recommandait des vestes selon l'usage. Pilote : 60 % de clic vers les recos, 40 % de temps en plus sur site.",
+    "resume_citable": "Des 2015, The North Face a teste XPS, un assistant d'achat conversationnel sur IBM Watson qui recommandait des produits selon l'usage et la meteo ; le pilote a atteint 60 % de clic vers les recommandations et 40 % de temps en plus sur site.",
+    "faq": [
+      {
+        "q": "L'assistant XPS de The North Face est-il encore en service ?",
+        "a": "Non, il n'apparait plus en production. L'unite XPS de Fluid a ete rachetee par IBM fin 2016. C'est un cas fondateur du conseil conversationnel, aujourd'hui repris par les LLM."
+      },
+      {
+        "q": "Sur quoi personnalisait-il la recommandation ?",
+        "a": "Sur la demande exprimee en langage naturel (activite, lieu, saison), croisee avec des estimations de conditions comme la temperature et le vent."
+      }
+    ]
+  },
+  "agences": [
+    {
+      "nom": "Fluid",
+      "role": "Agence ayant concu et fourni l'assistant Expert Personal Shopper (XPS)",
+      "source_ref": "S1"
+    },
+    {
+      "nom": "IBM",
+      "role": "Fournisseur de la technologie cognitive Watson ; rachete l'unite XPS de Fluid en novembre 2016",
+      "source_ref": "S3"
+    }
+  ],
+  "logo_domain": "thenorthface.com",
+  "stack_technique": [
+    {
+      "nom": "IBM Watson",
+      "categorie": "plateforme",
+      "detail": "Technologie cognitive (NLP) qui interpretait la demande en langage naturel et estimait le contexte (temperature, vent) pour le lieu et la saison.",
+      "url": "https://www.ibm.com"
+    },
+    {
+      "nom": "Fluid Expert Personal Shopper (XPS)",
+      "categorie": "outil",
+      "detail": "Assistant d'achat conversationnel concu par l'agence Fluid sur Watson ; l'unite XPS a ete rachetee par IBM en novembre 2016.",
+      "url": "https://www.ibm.com"
+    },
+    {
+      "nom": "Site e-commerce thenorthface.com",
+      "categorie": "infra",
+      "detail": "Point d'integration de l'assistant, au depart limite a la categorie vestes.",
+      "url": "https://www.thenorthface.com"
+    }
+  ]
+}

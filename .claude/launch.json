@@ -1,0 +1,11 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "ai-showreel",
+      "runtimeExecutable": "python3",
+      "runtimeArgs": ["-m", "http.server", "4771", "--directory", "/Users/elevate/Desktop/Claude apprentissage/ai-showreel/dist"],
+      "port": 4771
+    }
+  ]
+}

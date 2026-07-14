@@ -1,0 +1,272 @@
+{
+  "id": "flipkart-flippi-genai-assistant-2023",
+  "type_fiche": "succes",
+  "marque": "Flipkart",
+  "groupe": "Flipkart (Walmart)",
+  "industrie": "retail_ecom",
+  "marches_deploiement": [
+    "Inde"
+  ],
+  "transposable_ue": {
+    "flag": "oui_avec_adaptations",
+    "note": "Un assistant d'achat conversationnel genAI est transposable a tout e-commerce. La partie specifique a l'Inde est le multilinguisme (Flipkart sert en anglais et onze autres langues) et le contexte marche. En UE, l'AI Act impose de dire au client qu'il parle a une IA, et le RGPD encadre l'usage de l'historique de navigation et d'achat pour personnaliser les reponses."
+  },
+  "metier": "e-commerce",
+  "marque_linkedin": "https://www.linkedin.com/company/flipkart/",
+  "agences": [
+    {
+      "nom": "OpenAI",
+      "role": "Modele generatif sous-jacent (assistant presente comme ChatGPT-powered au lancement)",
+      "source_ref": "S2"
+    }
+  ],
+  "axes": {
+    "levier": "activation_conversion",
+    "touchpoints": [
+      "app Flipkart",
+      "recherche",
+      "pages categorie",
+      "assistant de shopping conversationnel"
+    ],
+    "etape_parcours": "considération",
+    "famille": "conversation",
+    "pattern": "assistant d'achat conversationnel genAI",
+    "type_ia": [
+      "LLM generatif",
+      "RAG",
+      "detection d'intention",
+      "reformulation de requete"
+    ],
+    "plateforme_stack": [
+      "Flippi (architecture modulaire in-house)",
+      "OpenAI"
+    ],
+    "objectif_metrique": [
+      "taux de conversion",
+      "utilisateurs actifs engages",
+      "satisfaction (pouce en l'air)",
+      "capacite a repondre a la session"
+    ]
+  },
+  "implementation": "custom",
+  "objectif_business": "Rapprocher le shopping en ligne de l'experience d'un vendeur en magasin : le client decrit ce qu'il veut en langage naturel, l'assistant l'aide a decouvrir, comparer et choisir, pour lever les frictions de decouverte produit et convertir plus.",
+  "points_cles": ["Assistant d'achat conversationnel genAI (reformulation, intention, RAG, entites).", "Architecture modulaire Flippi in-house adossee a OpenAI, iteree par A/B testing.", "1,3 million d'utilisateurs actifs mensuels engages, environ 1% de conversion, 68% d'avis positifs.", "Niveau de preuve B, statut vivant confirme."],
+  "description": "Flippi est l'assistant d'achat conversationnel genAI de Flipkart, lance le 4 octobre 2023 avant la grande operation Big Billion Days. Le client dit ce qu'il cherche et recoit des options a comparer, comme s'il parlait a un vendeur. Sous le capot, une architecture modulaire enchaine reformulation de requete, detection d'intention, RAG, reconnaissance d'entites et reduction de contexte pour traiter decouverte produit, personnalisation, identification d'offres et comparaison. D'apres l'article technique publie par les equipes Flipkart, le systeme tourne en production avec des cycles d'iteration par A/B testing, teste sur la recherche, le browse et les pages categorie. Il atteint 1,3 million d'utilisateurs actifs mensuels engages, une conversion last-touch d'environ 1%, et 68% d'avis positifs (pouce en l'air).",
+  "resultats": [
+    {
+      "metrique": "Utilisateurs actifs mensuels engages",
+      "valeur": "1,3 million",
+      "citation_exacte": "Engaged Monthly Active Users (MAU): 1.3 million",
+      "source_ref": "S1"
+    },
+    {
+      "metrique": "Conversion last-touch",
+      "valeur": "environ 1,0%",
+      "citation_exacte": "Last Touch Conversion: ~1.0%",
+      "source_ref": "S1"
+    },
+    {
+      "metrique": "Satisfaction (part de pouces en l'air)",
+      "valeur": "68%",
+      "citation_exacte": "thumbs-up share of 68%",
+      "source_ref": "S1"
+    },
+    {
+      "metrique": "Amelioration de la capacite a repondre a la session sur la periode",
+      "valeur": "environ 32%",
+      "citation_exacte": "consistent improvement of approximately 32%",
+      "source_ref": "S1"
+    }
+  ],
+  "niveau_preuve": {
+    "niveau": "B",
+    "justification": "Article technique chiffre publie par les equipes Flipkart (source officielle interessee, mesures de production et A/B tests), corrobore par la presse indienne etablie sur le lancement et le positionnement. Les chiffres viennent de la marque, pas d'un audit tiers, ce qui place a B."
+  },
+  "dates": {
+    "lancement": "2023-10-04",
+    "derniere_confirmation_activite": "2025-07",
+    "verifie_le": "2026-07-11",
+    "revoir_apres": "2027-01-11"
+  },
+  "statut_vivant": {
+    "statut": "confirme",
+    "note": "L'article technique de 2025 decrit Flippi comme un systeme en production, itere par A/B testing et expose lors des grandes operations commerciales."
+  },
+  "sources": [
+    {
+      "ref": "S1",
+      "type": "eng_blog",
+      "fiabilite": "T2_officiel_interesse",
+      "titre": "Flippi: End To End GenAI Assistant for E-Commerce",
+      "url": "https://arxiv.org/html/2507.05788v2",
+      "date_publication": "2025-07",
+      "consulte_le": "2026-07-11"
+    },
+    {
+      "ref": "S2",
+      "type": "presse",
+      "fiabilite": "T3_presse_etablie",
+      "titre": "Flipkart Launches ChatGPT-Powered Shopping Assistant 'Flippi'",
+      "url": "https://inc42.com/buzz/flipkart-launches-chatgpt-powered-shopping-assistant-flippi/",
+      "date_publication": "2023-10",
+      "consulte_le": "2026-07-11"
+    },
+    {
+      "ref": "S3",
+      "type": "blog_officiel",
+      "fiabilite": "T2_officiel_interesse",
+      "titre": "Access. Convenience. Safety: Leveraging technology to empower every Indian's dreams",
+      "url": "https://stories.flipkart.com/technology-smart-shopping-flipkart-app",
+      "date_publication": "2024",
+      "consulte_le": "2026-07-11"
+    }
+  ],
+  "fonctionnement_operationnel": {
+    "cadence": "Temps reel a chaque session d'achat, avec iteration par A/B testing",
+    "opere_par": "Equipe IA et produit de Flipkart qui tient l'architecture modulaire et les modeles",
+    "signal_pilote": "La capacite a repondre a la session et la conversion qui en decoule. Si le catalogue et les offres ne sont pas bien indexes pour le RAG, l'assistant donne des reponses vagues ou fausses.",
+    "etapes": [
+      {
+        "etape": "Expression du besoin",
+        "detail": "Le client decrit en langage naturel ce qu'il cherche dans la recherche ou l'assistant.",
+        "acteur": "client"
+      },
+      {
+        "etape": "Comprehension de la requete",
+        "detail": "Reformulation, detection d'intention et reconnaissance d'entites structurent la demande.",
+        "acteur": "IA"
+      },
+      {
+        "etape": "Recuperation et reponse",
+        "detail": "Le RAG va chercher produits, offres et comparaisons dans le catalogue et compose la reponse.",
+        "acteur": "IA"
+      },
+      {
+        "etape": "Iteration",
+        "detail": "Les equipes mesurent conversion, satisfaction et couverture des sessions et ajustent par A/B test.",
+        "acteur": "equipe data"
+      }
+    ]
+  },
+  "schema_flow": {
+    "statut": "documente",
+    "noeuds": [
+      {
+        "id": "client",
+        "role_generique": "site_app",
+        "label": "Client dans l'app Flipkart"
+      },
+      {
+        "id": "flippi",
+        "role_generique": "modele_ia",
+        "label": "Assistant Flippi (pipeline modulaire)",
+        "outil_documente": "Flippi (Flipkart) + OpenAI"
+      },
+      {
+        "id": "catalogue",
+        "role_generique": "data_source",
+        "label": "Catalogue produits, offres, comparaisons"
+      }
+    ],
+    "liens": [
+      [
+        "client",
+        "flippi"
+      ],
+      [
+        "flippi",
+        "catalogue"
+      ],
+      [
+        "catalogue",
+        "flippi"
+      ],
+      [
+        "flippi",
+        "client",
+        "options a comparer"
+      ]
+    ]
+  },
+  "stack_technique": [
+    {
+      "nom": "OpenAI",
+      "categorie": "llm",
+      "detail": "Modele generatif sous-jacent ; l'assistant a ete presente comme ChatGPT-powered au lancement, sans que la version exacte du modele soit publiee",
+      "url": "https://openai.com"
+    },
+    {
+      "nom": "Flippi (architecture modulaire in-house)",
+      "categorie": "plateforme",
+      "detail": "Pipeline construit par les equipes Flipkart : reformulation de requete, detection d'intention, reconnaissance d'entites, reduction de contexte",
+      "url": "https://www.flipkart.com"
+    },
+    {
+      "nom": "Couche RAG sur le catalogue Flipkart",
+      "categorie": "outil",
+      "detail": "Recuperation des produits, offres et comparaisons dans le catalogue indexe pour composer les reponses",
+      "url": "https://www.flipkart.com"
+    },
+    {
+      "nom": "Cadre d'A/B testing in-house",
+      "categorie": "outil",
+      "detail": "Cycles d'iteration en production sur la recherche, le browse et les pages categorie, avec mesure de conversion et de satisfaction",
+      "url": "https://www.flipkart.com"
+    }
+  ],
+  "replication": {
+    "statut_epistemique": "infere",
+    "prerequis_data": [
+      "Catalogue produit riche et bien structure",
+      "Base d'offres et de promotions indexee pour le RAG",
+      "Historique de sessions pour mesurer la couverture et la conversion"
+    ],
+    "prerequis_orga": [
+      "Cadre d'A/B testing en production",
+      "Regle de transparence IA vis-a-vis du client",
+      "Equipe capable de tenir un pipeline modulaire (intention, RAG, entites)"
+    ],
+    "stack_possible": [
+      "LLM generatif",
+      "Couche RAG sur le catalogue et les offres",
+      "Modules de detection d'intention et de reconnaissance d'entites"
+    ],
+    "premiere_etape": "Indexer proprement le catalogue et les offres pour le RAG, puis lancer un pilote sur une categorie a fort trafic avec mesure de conversion.",
+    "playbook": [
+      {
+        "action": "Indexer le catalogue, les offres et les attributs produit pour le RAG ; definir le perimetre pilote sur une categorie a fort trafic.",
+        "livrable": "Index catalogue interrogeable et perimetre pilote valide"
+      },
+      {
+        "action": "Assembler le pipeline : reformulation de requete, detection d'intention, RAG, reconnaissance d'entites, avec un LLM du marche via API.",
+        "livrable": "Assistant fonctionnel en environnement de test sur la categorie pilote"
+      },
+      {
+        "action": "Lancer en A/B test sur la recherche et les pages de la categorie pilote, avec mention claire que le client parle a une IA.",
+        "livrable": "Premier A/B test en production avec mesure conversion, satisfaction et couverture des sessions"
+      },
+      {
+        "action": "Iterer sur les cas non couverts (reponses vagues, entites mal reconnues), puis etendre a d'autres categories.",
+        "livrable": "Bilan chiffre du pilote et plan d'extension par categorie"
+      }
+    ],
+    "equipe": "2-3 ML engineers + 1 PM + 1 data analyst pour la mesure, adosses a l'equipe catalogue"
+  },
+  "seo": {
+    "slug": "flipkart-flippi-genai-assistant-2023",
+    "title": "Flipkart : assistant d'achat genAI Flippi - 1,3 million d'utilisateurs actifs (2023)",
+    "meta_description": "Flippi, l'assistant d'achat conversationnel genAI de Flipkart, atteint 1,3 million d'utilisateurs actifs engages, environ 1% de conversion et 68% d'avis positifs.",
+    "resume_citable": "Lance en 2023, Flippi, l'assistant d'achat conversationnel genAI de Flipkart, tourne en production avec 1,3 million d'utilisateurs actifs mensuels engages, une conversion last-touch d'environ 1% et 68% d'avis positifs.",
+    "faq": [
+      {
+        "q": "Qu'est-ce que Flippi ?",
+        "a": "C'est l'assistant d'achat conversationnel genAI de Flipkart, lance en octobre 2023 : le client decrit son besoin en langage naturel et recoit des produits a comparer."
+      },
+      {
+        "q": "Est-il vraiment deploye a l'echelle ?",
+        "a": "Oui. L'article technique de Flipkart le decrit en production, itere par A/B testing, avec 1,3 million d'utilisateurs actifs mensuels engages."
+      }
+    ]
+  },
+  "logo_domain": "flipkart.com"
+}

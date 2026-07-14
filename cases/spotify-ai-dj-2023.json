@@ -1,0 +1,276 @@
+{
+  "id": "spotify-ai-dj-2023",
+  "type_fiche": "succes",
+  "marque": "Spotify",
+  "industrie": "media_entertainment",
+  "marches_deploiement": [
+    "Etats-Unis",
+    "Canada",
+    "60+ marches (2025)"
+  ],
+  "transposable_ue": {
+    "flag": "oui_avec_adaptations",
+    "note": "La voix generative et le script s'appuient sur des donnees d'ecoute first-party (base licite d'interet legitime ou contrat). Contrainte langue : le DJ vocal est deploye par etapes selon les marches. Pas de traitement sensible ; conforme RGPD sous reserve d'information et de controle utilisateur."
+  },
+  "metier": "Product / personnalisation / engagement",
+  "marque_linkedin": "https://www.linkedin.com/company/spotify/",
+  "axes": {
+    "levier": "retention",
+    "touchpoints": [
+      "application Spotify",
+      "lecteur audio",
+      "commentaire vocal du DJ"
+    ],
+    "etape_parcours": "fidelite",
+    "famille": "generation",
+    "pattern": "DJ vocal genAI (voix synthetique + commentaire genere)",
+    "type_ia": [
+      "voix generative",
+      "generation de texte / script",
+      "recommandation personnalisee"
+    ],
+    "plateforme_stack": [
+      "custom/in-house",
+      "Sonantic (voix, acquise par Spotify)",
+      "generative AI"
+    ],
+    "objectif_metrique": [
+      "temps d'ecoute",
+      "retention journaliere",
+      "engagement DJ"
+    ]
+  },
+  "implementation": "custom",
+  "objectif_business": "Reduire la friction du choix musical en donnant a chaque auditeur un guide vocal qui enchaine les titres et explique ses choix, pour rapprocher l'experience d'une radio personnalisee et augmenter le temps passe dans l'application.",
+  "points_cles": ["DJ vocal genAI qui enchaine des titres personnalises et les commente a voix haute.", "Voix synthetique Sonantic, script editorial mis a l'echelle par IA generative.", "25% du temps d'ecoute capte les jours d'usage, engagement quasi double en un an.", "Preuve B, statut confirme, chiffres des communiques Spotify (2023 et 2025)."],
+  "description": "Le DJ combine trois briques : la personnalisation Spotify (quoi jouer), un commentaire ecrit par une salle de redaction d'experts musique puis mis en forme par IA generative (quoi dire), et une voix synthetique realiste issue de la techno Sonantic. L'auditeur presse un bouton, le DJ lance un flux personnalise et commente artistes et titres a voix haute. Depuis 2025, l'auditeur peut aussi formuler des demandes vocales (genre, humeur, artiste) pour reorienter la session en temps reel.",
+  "resultats": [
+    {
+      "metrique": "Part du temps d'ecoute passe avec le DJ (jours d'usage, beta)",
+      "valeur": "25%",
+      "citation_exacte": "25% of their listening time with DJ",
+      "source_ref": "S1"
+    },
+    {
+      "metrique": "Retour des primo-auditeurs le lendemain (beta)",
+      "valeur": "> 50%",
+      "citation_exacte": "more than half of first-time listeners",
+      "source_ref": "S1"
+    },
+    {
+      "metrique": "Evolution de l'engagement sur DJ (sur un an)",
+      "valeur": "environ x2",
+      "citation_exacte": "DJ listener engagement has nearly doubled over the past year",
+      "source_ref": "S2"
+    }
+  ],
+  "niveau_preuve": {
+    "niveau": "B",
+    "justification": "Chiffres d'engagement communiques par Spotify dans ses propres communiques (newsroom), avec deux points de mesure a deux dates (2023 beta, 2025 mise a jour). Chiffrage direct de la marque-sujet mais non audite en resultats financiers."
+  },
+  "dates": {
+    "lancement": "2023-02-22 (beta, Etats-Unis et Canada)",
+    "derniere_confirmation_activite": "2025-05-13 (ajout des demandes vocales, DJ dans 60+ marches)",
+    "verifie_le": "2026-07-11",
+    "revoir_apres": "2027-01-11"
+  },
+  "statut_vivant": {
+    "statut": "confirme",
+    "note": "Feature encore active et enrichie en 2025 (demandes vocales, extension Android Auto). DJ present dans plus de 60 marches."
+  },
+  "sources": [
+    {
+      "ref": "S1",
+      "type": "blog_officiel",
+      "fiabilite": "T2_officiel_interesse",
+      "titre": "Behind the Scenes of Spotify's New AI DJ (Spotify Newsroom)",
+      "url": "https://newsroom.spotify.com/2023-03-08/spotify-new-personalized-ai-dj-how-it-works/",
+      "date_publication": "2023-03-08",
+      "consulte_le": "2026-07-11"
+    },
+    {
+      "ref": "S2",
+      "type": "blog_officiel",
+      "fiabilite": "T2_officiel_interesse",
+      "titre": "Spotify's DJ Now Takes Requests, Enhancing Real-Time Music Discovery (Spotify Newsroom)",
+      "url": "https://newsroom.spotify.com/2025-05-13/dj-voice-requests/",
+      "date_publication": "2025-05-13",
+      "consulte_le": "2026-07-11"
+    }
+  ],
+  "fonctionnement_operationnel": {
+    "cadence": "Temps reel a chaque session ; le pool de commentaires editoriaux est produit et rafraichi en continu par la salle de redaction.",
+    "opere_par": "Equipe Personnalisation Spotify + salle de redaction (experts musique, curateurs, scenaristes) + equipe voix.",
+    "signal_pilote": "L'historique et les preferences d'ecoute de l'auditeur, qui alimentent a la fois la selection des titres et le choix du commentaire. Sans ce signal, le DJ tombe dans une radio generique sans personnalisation.",
+    "etapes": [
+      {
+        "etape": "Selection musicale",
+        "detail": "Le moteur de personnalisation choisit les titres a enchainer pour l'auditeur, avec ses demandes vocales eventuelles.",
+        "acteur": "IA"
+      },
+      {
+        "etape": "Ecriture du commentaire",
+        "detail": "Les experts musique redigent des scripts contextuels sur artistes et titres ; l'IA generative les met a l'echelle et les personnalise.",
+        "acteur": "equipe editoriale / IA"
+      },
+      {
+        "etape": "Synthese vocale",
+        "detail": "La voix Sonantic transforme le script en audio realiste, inseree entre les morceaux.",
+        "acteur": "IA"
+      },
+      {
+        "etape": "Ecoute et reorientation",
+        "detail": "L'auditeur ecoute, peut demander a voix haute un autre genre ou une autre humeur ; la session se recompose.",
+        "acteur": "humain / IA"
+      }
+    ]
+  },
+  "schema_flow": {
+    "statut": "documente",
+    "noeuds": [
+      {
+        "id": "n1",
+        "role_generique": "data_source",
+        "label": "Historique et preferences d'ecoute + demandes vocales"
+      },
+      {
+        "id": "n2",
+        "role_generique": "modele_ia",
+        "label": "Moteur de personnalisation (selection des titres)"
+      },
+      {
+        "id": "n3",
+        "role_generique": "humain",
+        "label": "Salle de redaction (scripts editoriaux)"
+      },
+      {
+        "id": "n4",
+        "role_generique": "modele_ia",
+        "label": "GenAI (mise a l'echelle du commentaire) + voix Sonantic",
+        "outil_documente": "Sonantic"
+      },
+      {
+        "id": "n5",
+        "role_generique": "site_app",
+        "label": "Application Spotify (lecteur + DJ vocal)"
+      },
+      {
+        "id": "n6",
+        "role_generique": "humain",
+        "label": "Auditeur"
+      }
+    ],
+    "liens": [
+      [
+        "n1",
+        "n2"
+      ],
+      [
+        "n3",
+        "n4"
+      ],
+      [
+        "n2",
+        "n4"
+      ],
+      [
+        "n4",
+        "n5"
+      ],
+      [
+        "n5",
+        "n6"
+      ],
+      [
+        "n6",
+        "n1",
+        "demande vocale et ecoute realimentent les signaux"
+      ]
+    ]
+  },
+  "replication": {
+    "statut_epistemique": "infere",
+    "prerequis_data": [
+      "historique d'ecoute / consommation par utilisateur",
+      "catalogue enrichi de metadonnees editoriales",
+      "corpus de scripts par artiste / titre"
+    ],
+    "prerequis_orga": [
+      "equipe editoriale pour les scripts",
+      "capacite de synthese vocale sous licence",
+      "moteur de recommandation existant"
+    ],
+    "stack_possible": [
+      "voix generative (Sonantic, ElevenLabs ou equivalent)",
+      "LLM pour la mise en forme du commentaire",
+      "moteur de reco custom ou managed"
+    ],
+    "premiere_etape": "Cadrer le pipeline editorial (qui ecrit les scripts) avant la couche vocale, car c'est la qualite du commentaire qui fait la difference.",
+    "playbook": [
+      {
+        "action": "Cadrer le pipeline editorial : qui ecrit les scripts (experts, curateurs) et sous quel format par artiste et titre",
+        "livrable": "Corpus de scripts pilote et charte editoriale"
+      },
+      {
+        "action": "Exposer la selection de titres du moteur de reco existant au format session continue",
+        "livrable": "Flux personnalise jouable, sans voix"
+      },
+      {
+        "action": "Mettre les scripts a l'echelle avec un LLM et synthetiser la voix sous licence (Sonantic, ElevenLabs ou equivalent)",
+        "livrable": "Prototype de DJ vocal sur un catalogue restreint"
+      },
+      {
+        "action": "Beta fermee sur un panel : mesurer part du temps d'ecoute et retour le lendemain",
+        "livrable": "Metriques d'engagement comparees au baseline playlist"
+      },
+      {
+        "action": "Ouvrir par marches et langues, puis ajouter les commandes utilisateur (demandes vocales)",
+        "livrable": "Feature en production avec tableau de bord d'engagement"
+      }
+    ],
+    "equipe": "1 equipe produit/ML s'appuyant sur la reco existante + 2-3 experts editoriaux + 1 ingenieur voix/TTS + 1 PM"
+  },
+  "seo": {
+    "slug": "spotify-ai-dj-2023",
+    "title": "Spotify : AI DJ vocal genAI - 25% du temps d'ecoute capte les jours d'usage (2023)",
+    "meta_description": "Le DJ IA de Spotify melange voix generative, script editorial et personnalisation ; en beta il captait 25% du temps d'ecoute et l'engagement a double en un an.",
+    "resume_citable": "Le AI DJ de Spotify (lance 2023, 60+ marches) capte environ 25% du temps d'ecoute les jours d'usage et a vu son engagement quasi doubler en un an, selon les communiques Spotify.",
+    "faq": [
+      {
+        "q": "Comment fonctionne le AI DJ de Spotify ?",
+        "a": "Il combine la personnalisation Spotify, un commentaire ecrit par des experts musique et mis a l'echelle par IA generative, et une voix synthetique Sonantic."
+      },
+      {
+        "q": "Le AI DJ est-il toujours actif ?",
+        "a": "Oui, present dans plus de 60 marches et enrichi en 2025 avec les demandes vocales et le support Android Auto."
+      }
+    ]
+  },
+  "logo_domain": "spotify.com",
+  "stack_technique": [
+    {
+      "nom": "Sonantic",
+      "categorie": "outil",
+      "detail": "technologie de voix synthetique realiste, acquise par Spotify en 2022, qui donne sa voix au DJ",
+      "url": "https://www.spotify.com"
+    },
+    {
+      "nom": "OpenAI",
+      "categorie": "llm",
+      "detail": "technologie d'IA generative citee par Spotify au lancement du DJ pour mettre a l'echelle les commentaires ecrits par la salle de redaction",
+      "url": "https://openai.com"
+    },
+    {
+      "nom": "Moteur de personnalisation Spotify",
+      "categorie": "infra",
+      "detail": "systemes de recommandation in-house qui choisissent les titres a enchainer, reorientables par demandes vocales depuis 2025",
+      "url": "https://www.spotify.com"
+    }
+  ],
+  "media": {
+    "kind": "video",
+    "url": "https://www.youtube.com/watch?v=7GNPkW1LENc",
+    "source": "officielle",
+    "titre": "Meet Spotify's A.I. DJ"
+  }
+}

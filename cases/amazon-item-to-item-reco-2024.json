@@ -1,0 +1,256 @@
+{
+  "type_fiche": "succes",
+  "id": "amazon-item-to-item-reco-2024",
+  "marque": "Amazon",
+  "industrie": "retail_ecom",
+  "marches_deploiement": [
+    "Etats-Unis",
+    "Union europeenne",
+    "International"
+  ],
+  "transposable_ue": {
+    "flag": "oui",
+    "note": "Deja deploye en UE via les marketplaces Amazon locales. La reco produit sur donnees comportementales premiere main releve du profilage au sens RGPD (base legale, information, opt-out) mais ne tombe pas dans les categories a haut risque de l'AI Act."
+  },
+  "metier": "E-commerce / merchandising algorithmique",
+  "marque_linkedin": "https://www.linkedin.com/company/amazon",
+  "axes": {
+    "levier": "activation_conversion",
+    "touchpoints": [
+      "Page d'accueil",
+      "Fiche produit",
+      "Panier",
+      "Email"
+    ],
+    "etape_parcours": "consideration -> achat",
+    "famille": "personnalisation",
+    "pattern": "Moteur de recommandation produit par filtrage collaboratif item-to-item, servi sur tous les points de contact",
+    "type_ia": [
+      "filtrage collaboratif item-to-item",
+      "modeles de recommandation",
+      "apprentissage sur signaux comportementaux"
+    ],
+    "plateforme_stack": [
+      "custom/in-house"
+    ],
+    "objectif_metrique": [
+      "part des achats issus des recommandations",
+      "taux de conversion",
+      "valeur du panier"
+    ]
+  },
+  "implementation": "custom",
+  "objectif_business": "Faire remonter le bon produit au bon moment pour chaque visiteur, sur chaque surface du site, sans intervention manuelle de merchandising.",
+  "description": "Amazon a mis au point une methode de recommandation dite item-to-item collaborative filtering. Plutot que de rapprocher un client d'autres clients qui lui ressemblent, l'algorithme part de chaque article et calcule a l'avance les produits qui apparaissent souvent ensemble dans les historiques d'achat et de navigation. Quand un visiteur regarde ou achete un produit, le systeme ressort en temps reel les articles les plus associes, ponderes selon la proximite avec ce que la personne a deja consulte. Ce moteur alimente les carrousels de la page d'accueil, les blocs \" Frequemment achetes ensemble \" des fiches produit, les recommandations du panier et les campagnes email. La methode a ete concue vers 1997 chez Amazon par Greg Linden, Brent Smith et Jeremy York, puis decrite dans un papier publie en 2003. En 2017, le comite editorial d'IEEE Internet Computing l'a designe comme l'article de son histoire ayant le mieux resiste a l'epreuve du temps. Le systeme reste la fondation de la recommandation Amazon, enrichi depuis par des modeles plus recents.",
+  "fonctionnement_operationnel": {
+    "cadence": "Temps reel a l'affichage, avec un pre-calcul batch des tables de similarite item-to-item reactualise regulierement a mesure que de nouveaux signaux arrivent.",
+    "opere_par": "Equipes data science et ingenierie recommandation, en lien avec les equipes retail par categorie.",
+    "signal_pilote": "Les co-occurrences d'achat et de navigation par produit. Sur un catalogue neuf ou un produit sans historique (cold start), le moteur n'a rien a associer et bascule sur des heuristiques de secours moins performantes.",
+    "etapes": [
+      {
+        "etape": "Collecter les signaux",
+        "detail": "Achats, ajouts au panier, vues et clics remontent en continu et sont rattaches au produit concerne.",
+        "acteur": "IA / plateforme"
+      },
+      {
+        "etape": "Pre-calculer les similarites",
+        "detail": "Pour chaque article, on construit hors ligne la liste des produits les plus co-consommes. C'est ce pre-calcul qui permet de tenir la charge a l'echelle du catalogue.",
+        "acteur": "Equipe data science"
+      },
+      {
+        "etape": "Servir la recommandation",
+        "detail": "A l'affichage, le systeme croise les articles vus ou achetes par la personne avec ces tables et classe les candidats.",
+        "acteur": "IA / plateforme"
+      },
+      {
+        "etape": "Boucler sur le comportement",
+        "detail": "Le clic ou l'achat qui suit une recommandation redevient un signal d'entree. Le systeme se corrige sans qu'un merchandiser choisisse les produits a la main.",
+        "acteur": "IA / plateforme"
+      }
+    ]
+  },
+  "resultats": [
+    {
+      "metrique": "Part des achats attribues aux recommandations (estimation McKinsey, 2013)",
+      "valeur": "35 %",
+      "citation_exacte": "35 percent of what consumers purchase on Amazon come from product recommendations",
+      "source_ref": "S2"
+    },
+    {
+      "metrique": "Methode en production, distinguee IEEE test of time en 2017",
+      "valeur": "depuis ~1997",
+      "citation_exacte": "the single paper ... that had best withstood the test of time",
+      "source_ref": "S1"
+    }
+  ],
+  "niveau_preuve": {
+    "niveau": "C",
+    "justification": "Le mecanisme et son passage a l'echelle sont documentes par le blog scientifique officiel d'Amazon et par un papier IEEE distingue en 2017, soit pres de trois decennies en production. Le chiffre de 35 % des achats est une estimation McKinsey de 2013, pas une divulgation financiere d'Amazon : on ne le presente donc pas comme un resultat de niveau A."
+  },
+  "dates": {
+    "lancement": "1998 (filtrage collaboratif item-to-item), formalise dans le papier IEEE de 2003",
+    "derniere_confirmation_activite": "2024 - recommandations toujours servies sur l'ensemble des surfaces Amazon, algorithme decrit comme la fondation du systeme par Amazon Science",
+    "verifie_le": "2026-07-11",
+    "revoir_apres": "2027-01-11"
+  },
+  "statut_vivant": {
+    "statut": "confirme",
+    "note": "La recommandation produit est un element structurel de l'experience Amazon (page d'accueil, fiche produit, panier, email). Le filtrage item-to-item reste la base, complete par des modeles plus recents."
+  },
+  "sources": [
+    {
+      "ref": "S1",
+      "type": "blog_officiel",
+      "titre": "The history of Amazon's recommendation algorithm - Amazon Science",
+      "url": "https://www.amazon.science/the-history-of-amazons-recommendation-algorithm",
+      "date_publication": "2019",
+      "consulte_le": "2026-07-11",
+      "fiabilite": "T1_primaire"
+    },
+    {
+      "ref": "S2",
+      "type": "analyse_academique",
+      "titre": "How retailers can keep up with consumers - McKinsey & Company",
+      "url": "https://www.mckinsey.com/industries/retail/our-insights/how-retailers-can-keep-up-with-consumers",
+      "date_publication": "2013-10",
+      "consulte_le": "2026-07-11",
+      "fiabilite": "T4_secondaire"
+    },
+    {
+      "ref": "S3",
+      "type": "analyse_academique",
+      "titre": "Amazon.com recommendations: item-to-item collaborative filtering - IEEE Internet Computing (Linden, Smith, York)",
+      "url": "https://ieeexplore.ieee.org/document/1167344/",
+      "date_publication": "2003",
+      "consulte_le": "2026-07-11",
+      "fiabilite": "T1_primaire"
+    }
+  ],
+  "schema_flow": {
+    "statut": "documente",
+    "noeuds": [
+      {
+        "id": "sig",
+        "role_generique": "data_source",
+        "label": "Signaux comportementaux (achats, vues, panier)"
+      },
+      {
+        "id": "sim",
+        "role_generique": "modele_ia",
+        "label": "Tables de similarite item-to-item pre-calculees",
+        "outil_documente": "Filtrage collaboratif item-to-item (in-house)"
+      },
+      {
+        "id": "rank",
+        "role_generique": "modele_ia",
+        "label": "Classement temps reel des candidats"
+      },
+      {
+        "id": "surf",
+        "role_generique": "site_app",
+        "label": "Surfaces : accueil, fiche produit, panier, email"
+      },
+      {
+        "id": "buy",
+        "role_generique": "site_app",
+        "label": "Clic / achat"
+      }
+    ],
+    "liens": [
+      [
+        "sig",
+        "sim"
+      ],
+      [
+        "sim",
+        "rank"
+      ],
+      [
+        "rank",
+        "surf"
+      ],
+      [
+        "surf",
+        "buy"
+      ],
+      [
+        "buy",
+        "sig",
+        "boucle de feedback"
+      ]
+    ]
+  },
+  "replication": {
+    "statut_epistemique": "infere",
+    "prerequis_data": [
+      "Historique d'achats et de navigation rattache au produit et au client",
+      "Catalogue avec identifiants produits stables",
+      "Volume de co-occurrences suffisant par article pour sortir de bonnes associations"
+    ],
+    "prerequis_orga": [
+      "Equipe data capable de maintenir un pipeline de pre-calcul et un service temps reel",
+      "Surfaces d'affichage instrumentees pour mesurer clics et achats post-reco"
+    ],
+    "stack_possible": [
+      "Moteur de reco manage (AWS Personalize, Google Recommendations AI) pour une premiere version sans equipe ML lourde",
+      "Filtrage collaboratif open source (implicit, LightFM) pour une version custom"
+    ],
+    "premiere_etape": "Brancher un bloc \" souvent achetes ensemble \" sur les fiches produit a partir des co-achats, et mesurer le taux de clic et la conversion assistee contre l'affichage sans reco.",
+    "playbook": [
+      {
+        "action": "Consolider l'historique de co-achats et de co-vues par produit, avec identifiants stables.",
+        "livrable": "Matrice de co-occurrences sur le catalogue"
+      },
+      {
+        "action": "Calculer les tables de similarite item-to-item, en open source (implicit, LightFM) ou via un moteur manage.",
+        "livrable": "Table de similarite evaluee hors ligne"
+      },
+      {
+        "action": "Servir un bloc souvent achetes ensemble sur les fiches produit d'un segment du catalogue.",
+        "livrable": "Bloc de reco en production sur le segment pilote"
+      },
+      {
+        "action": "Mener un A/B test face a l'affichage sans reco, mesurer CTR et conversion assistee, puis etendre au panier et a l'email.",
+        "livrable": "Resultat de test et plan d'extension aux autres surfaces"
+      }
+    ],
+    "equipe": "1 data scientist ou ML engineer + 1 dev front pour les emplacements de reco"
+  },
+  "stack_technique": [
+    {
+      "nom": "Filtrage collaboratif item-to-item",
+      "categorie": "llm",
+      "detail": "Algorithme maison d'Amazon concu vers 1997 (Linden, Smith, York), publie en 2003 et distingue par IEEE en 2017 ; toujours la fondation de la recommandation.",
+      "url": "https://www.amazon.science"
+    },
+    {
+      "nom": "Pipeline batch de pre-calcul des similarites",
+      "categorie": "infra",
+      "detail": "Tables produit-produit construites hors ligne, cle du passage a l'echelle du catalogue et du service en temps reel.",
+      "url": "https://www.amazon.science"
+    },
+    {
+      "nom": "Service de recommandation temps reel",
+      "categorie": "outil",
+      "detail": "Classement des candidats a l'affichage, servi sur accueil, fiche produit, panier et email.",
+      "url": "https://www.amazon.com"
+    }
+  ],
+  "seo": {
+    "slug": "amazon-item-to-item-reco-2024",
+    "title": "Amazon : moteur de recommandation item-to-item - jusqu'a 35 % des achats issus des recos (McKinsey)",
+    "meta_description": "Le filtrage collaboratif item-to-item d'Amazon, en production depuis la fin des annees 1990, sert les recommandations sur toutes les surfaces du site. McKinsey estimait a 35 % la part des achats issus des recos.",
+    "resume_citable": "Le moteur de recommandation item-to-item d'Amazon, concu vers 1997 et distingue par IEEE en 2017, alimente accueil, fiche produit, panier et email ; McKinsey estimait en 2013 que 35 % des achats sur Amazon venaient des recommandations.",
+    "faq": [
+      {
+        "q": "Comment fonctionne la recommandation d'Amazon ?",
+        "a": "Par filtrage collaboratif item-to-item : l'algorithme part de chaque produit et pre-calcule les articles souvent achetes ou consultes ensemble, puis les ressort en temps reel selon ce que le visiteur regarde."
+      },
+      {
+        "q": "D'ou vient le chiffre de 35 % ?",
+        "a": "D'une estimation McKinsey publiee en 2013. Ce n'est pas un chiffre communique par Amazon dans ses resultats financiers."
+      }
+    ]
+  },
+  "logo_domain": "amazon.com"
+}

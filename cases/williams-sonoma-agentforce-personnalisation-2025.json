@@ -1,0 +1,369 @@
+{
+  "id": "williams-sonoma-agentforce-personnalisation-2025",
+  "type_fiche": "succes",
+  "marque": "Williams-Sonoma",
+  "groupe": "Williams-Sonoma, Inc. (Williams Sonoma, Williams Sonoma Home, Pottery Barn, Pottery Barn Kids, Pottery Barn Teen, West Elm, Rejuvenation, Mark & Graham, GreenRow)",
+  "industrie": "retail_ecom",
+  "marches_deploiement": [
+    "Etats-Unis"
+  ],
+  "transposable_ue": {
+    "flag": "oui_avec_adaptations",
+    "note": "Le socle (Salesforce Data Cloud, Marketing Cloud, Agentforce 360) est disponible en UE. Ce qui demande de l'adaptation, c'est la matiere premiere du cas : l'unification des donnees first-party d'achat entre plusieurs marques d'un meme groupe pour construire une vue 360 et un profilage marketing suppose une base legale RGPD explicite et une gestion fine du consentement cross-marque. L'agent conversationnel Olive tombe sous l'obligation de transparence de l'AI Act (dire au client qu'il parle a une IA). Le pattern se transpose, la gouvernance data et la conformite sont a refaire."
+  },
+  "metier": "marketing / e-commerce / service client (CRM, personnalisation, agent conversationnel)",
+  "intervenants": [
+    {
+      "nom": "Laura J. Alber",
+      "role": "President and Chief Executive Officer, Williams-Sonoma, Inc.",
+      "source_ref": "S2"
+    },
+    {
+      "nom": "Sameer Hassan",
+      "role": "Chief Technology Officer, Williams-Sonoma, Inc.",
+      "source_ref": "S1"
+    }
+  ],
+  "agences": [
+    {
+      "nom": "Salesforce",
+      "role": "Editeur de la plateforme (Agentforce 360, Data 360 / Data Cloud, Marketing Cloud, Einstein) sur laquelle les cas d'usage sont construits",
+      "source_ref": "S2"
+    },
+    {
+      "nom": "Salesforce Professional Services",
+      "role": "Deploiement de Marketing Cloud et Data Cloud, decrit comme realise en moins de huit mois pour un chantier habituellement de 12 a 18 mois",
+      "source_ref": "S3"
+    }
+  ],
+  "axes": {
+    "levier": "activation_conversion",
+    "touchpoints": [
+      "sites e-commerce des marques (williams-sonoma.com, potterybarn.com, westelm.com...)",
+      "email marketing declenche",
+      "agent conversationnel Olive sur les sites",
+      "outils de design et room planner (Design Crew)"
+    ],
+    "etape_parcours": "consideration",
+    "famille": "personnalisation",
+    "pattern": "IA a l'echelle d'un portefeuille multi-marques : personnalisation data-driven (vue 360 + email dynamique) doublee d'un agent conversationnel genAI pour la decouverte produit et le service",
+    "type_ia": [
+      "IA generative",
+      "agent conversationnel",
+      "segmentation et personnalisation",
+      "traitement du langage naturel"
+    ],
+    "plateforme_stack": [
+      "Salesforce Agentforce 360",
+      "Salesforce Data 360 (Data Cloud)",
+      "Salesforce Marketing Cloud",
+      "Salesforce Einstein"
+    ],
+    "objectif_metrique": [
+      "engagement et nouveaux abonnes",
+      "taux de resolution self-service du chat",
+      "decouverte produit et conversion",
+      "average order value et share of wallet"
+    ]
+  },
+  "implementation": "plateforme",
+  "stack_technique": [
+    {
+      "nom": "Salesforce Data 360 (Data Cloud)",
+      "categorie": "plateforme",
+      "detail": "Moteur de donnees qui unifie et harmonise les donnees first-party a travers les marques pour construire une vue 360 de chaque client, segmentee en audiences fines (etudiants, jeunes maries). C'est le socle commun de la personnalisation email et de l'agent conversationnel.",
+      "url": "https://www.salesforce.com/data/"
+    },
+    {
+      "nom": "Salesforce Marketing Cloud",
+      "categorie": "plateforme",
+      "detail": "Declenche des emails avec images et contenu dynamiques selon le segment et le moment (exemple documente : un email de lit enfant apres l'achat d'un berceau).",
+      "url": "https://www.salesforce.com/marketing/"
+    },
+    {
+      "nom": "Salesforce Agentforce 360",
+      "categorie": "plateforme",
+      "detail": "Plateforme d'agents IA deployee sur le portefeuille de marques. Sert l'agent Olive (service client et guidage culinaire) et des agents de design d'interieur qui verifient la compatibilite des produits avec l'espace du client. Williams-Sonoma a construit l'experience sur la plateforme plutot qu'en stack maison.",
+      "url": "https://www.salesforce.com/agentforce/"
+    },
+    {
+      "nom": "Olive",
+      "categorie": "outil",
+      "detail": "Agent conversationnel genAI expose sur les sites. Traite le statut de commande, les retours, la planification de livraison de meuble, oriente vers un humain a la demande, et donne un guidage culinaire adosse aux recettes, videos et contenus de marque. Construit sur Agentforce.",
+      "url": "https://www.williams-sonoma.com"
+    }
+  ],
+  "objectif_business": "Faire descendre l'IA plus loin dans le parcours d'achat et mettre la personnalisation a l'echelle des neuf marques du groupe, avec deux leviers : des communications marketing personnalisees a partir d'une vue client unifiee, et un agent conversationnel qui prend en charge le service et la decouverte produit sans handoff humain systematique. Objectif operationnel affiche : resoudre en autonomie plus de 60 pour cent des demandes de chat.",
+  "points_cles": ["Personnalisation data-driven et agent conversationnel Olive a l'echelle des neuf marques du groupe.", "Salesforce Data Cloud, Marketing Cloud et Agentforce 360.", "Environ 21 millions de nouveaux abonnes, cible de plus de 60 pour cent du chat resolu en autonomie.", "Preuve B, statut vivant confirme."],
+  "description": "Williams-Sonoma, Inc. exploite la plateforme Salesforce sur deux fronts complementaires, a l'echelle de ses neuf marques. Cote personnalisation, Data Cloud unifie les donnees first-party d'achat et de navigation pour construire une vue 360 de chaque client, segmentee en audiences fines ; Marketing Cloud declenche alors des emails a images et contenu dynamiques au bon moment, par exemple un email de lit enfant apres l'achat d'un berceau. Ce chantier de personnalisation, deploye avec Salesforce Professional Services en moins de huit mois pour un projet habituellement de 12 a 18 mois, est associe a environ 21 millions de nouveaux abonnes. Cote parcours, le groupe a mis en production a Dreamforce 2025 un agent conversationnel nomme Olive, construit sur Agentforce 360 : il gere le statut de commande, les retours, la livraison de meubles, et donne un guidage culinaire tire des recettes et contenus de marque, en escaladant vers un humain a la demande. L'entreprise annonce viser la resolution autonome de plus de 60 pour cent des demandes de chat, et decrit avoir construit l'experience en moins de 30 jours en s'appuyant sur la plateforme plutot qu'en developpant un stack maison. Des agents de design d'interieur completent le dispositif cote decouverte, en verifiant la compatibilite d'un produit avec l'espace du client. Lors du earnings call du premier trimestre 2026, la direction a confirme avoir etendu l'IA plus loin dans le parcours client et mis la personnalisation a l'echelle du portefeuille.",
+  "resultats": [
+    {
+      "metrique": "Nouveaux abonnes lies au programme de personnalisation Data Cloud + Marketing Cloud",
+      "valeur": "environ 21 millions",
+      "citation_exacte": "~21M new subscribers",
+      "source_ref": "S3"
+    },
+    {
+      "metrique": "Deploiement de Marketing Cloud et Data Cloud, contre 12 a 18 mois habituellement",
+      "valeur": "7,5 mois",
+      "citation_exacte": "months to implement a 12-18-month engagement",
+      "source_ref": "S3"
+    },
+    {
+      "metrique": "Demandes de chat resolues en autonomie, cible annoncee",
+      "valeur": "plus de 60%",
+      "citation_exacte": "autonomously resolve more than 60% of chat inquiries",
+      "source_ref": "S2"
+    },
+    {
+      "metrique": "Mise en production de l'agent Olive, sur la plateforme plutot qu'en stack maison",
+      "valeur": "moins de 30 jours",
+      "citation_exacte": "We built this entire experience in under 30 days",
+      "source_ref": "S4"
+    },
+    {
+      "metrique": "Deploiement des agents sur les marques du groupe",
+      "valeur": "tout le portefeuille",
+      "citation_exacte": "Across Its Brand Portfolio",
+      "source_ref": "S2"
+    },
+    {
+      "metrique": "IA etendue dans le parcours et personnalisation a l'echelle, earnings call",
+      "valeur": "confirme, Q1 2026",
+      "citation_exacte": "We scaled personalization across our portfolio of brands",
+      "source_ref": "S1"
+    }
+  ],
+  "niveau_preuve": {
+    "niveau": "B",
+    "justification": "Les chiffres durs (environ 21 millions de nouveaux abonnes, 7,5 mois de deploiement) viennent d'une etude de cas Salesforce chiffree, source officielle mais interessee, donc niveau B. Ils sont corrobores par deux elements plus forts sur le fait du deploiement : un communique Salesforce du 14 octobre 2025 (deploiement multi-marques, objectif de plus de 60 pour cent de resolution autonome) et le earnings call du premier trimestre 2026 ou la CEO Laura Alber confirme avoir etendu l'IA dans le parcours et mis la personnalisation a l'echelle du portefeuille (source de niveau A sur le fait de l'echelle, mais qualitative). La presse etablie (Forbes) documente independamment l'agent Olive et son deploiement en moins de 30 jours."
+  },
+  "dates": {
+    "lancement": "2023 pour la personnalisation Data Cloud et Marketing Cloud ; octobre 2025 (Dreamforce) pour les agents Agentforce et Olive",
+    "derniere_confirmation_activite": "2026 (earnings call Q1 2026)",
+    "verifie_le": "2026-07-13",
+    "revoir_apres": "2027-01-13"
+  },
+  "statut_vivant": {
+    "statut": "confirme",
+    "note": "Agents mis en production a Dreamforce en octobre 2025, personnalisation en place depuis 2023 et en croissance, direction reaffirmant l'extension de l'IA et la mise a l'echelle de la personnalisation lors du earnings call du premier trimestre 2026. Aucun signal de retrait."
+  },
+  "sources": [
+    {
+      "ref": "S1",
+      "type": "earnings_call",
+      "fiabilite": "T1_primaire",
+      "titre": "Williams-Sonoma (WSM) Q1 2026 Earnings Call Transcript",
+      "url": "https://www.theglobeandmail.com/investing/markets/stocks/WSM-N/pressreleases/2068214/williams-sonoma-wsm-q1-2026-earnings-transcript/",
+      "date_publication": "2026",
+      "consulte_le": "2026-07-13"
+    },
+    {
+      "ref": "S2",
+      "type": "customer_story_plateforme",
+      "fiabilite": "T2_officiel_interesse",
+      "titre": "Williams-Sonoma, Inc. Deploys Salesforce Agentforce 360 Across Its Brand Portfolio",
+      "url": "https://investor.salesforce.com/news/news-details/2025/Williams-Sonoma-Inc--Deploys-Salesforce-Agentforce-360-Across-Its-Brand-Portfolio-Elevating-Its-Premium-Customer-Support-and-Experiences-to-the-Next-Level/default.aspx",
+      "date_publication": "2025-10-14",
+      "consulte_le": "2026-07-13"
+    },
+    {
+      "ref": "S3",
+      "type": "customer_story_plateforme",
+      "fiabilite": "T2_officiel_interesse",
+      "titre": "Williams-Sonoma, Inc., builds lifelong customer journeys with data",
+      "url": "https://www.salesforce.com/resources/customer-stories/williams-sonoma-ai-data-customer-engagement/",
+      "date_publication": "2025",
+      "consulte_le": "2026-07-13"
+    },
+    {
+      "ref": "S4",
+      "type": "presse",
+      "fiabilite": "T3_presse_etablie",
+      "titre": "How Williams Sonoma Went From AI Concept To Serving Customers In 30 Days",
+      "url": "https://www.forbes.com/sites/ronschmelzer/2025/10/27/how-williams-sonoma-went-from-ai-concept-to-serving-customers-in-30-days/",
+      "date_publication": "2025-10-27",
+      "consulte_le": "2026-07-13"
+    },
+    {
+      "ref": "S5",
+      "type": "presse",
+      "fiabilite": "T4_secondaire",
+      "titre": "Williams-Sonoma uses agentic AI to enhance customer experience",
+      "url": "https://www.digitalcommerce360.com/2025/10/13/williams-sonoma-agentic-ai-customer-experience-agentforce/",
+      "date_publication": "2025-10-13",
+      "consulte_le": "2026-07-13"
+    }
+  ],
+  "fonctionnement_operationnel": {
+    "cadence": "Temps reel pour l'agent conversationnel sur les sites ; declenchement evenementiel pour l'email personnalise (un geste client declenche le message) ; unification des donnees en continu dans Data Cloud.",
+    "opere_par": "Equipes marketing/CRM, e-commerce et service client de Williams-Sonoma, sur la plateforme Salesforce, avec Salesforce Professional Services pour le deploiement initial.",
+    "signal_pilote": "La donnee first-party unifiee dans Data Cloud, c'est-a-dire l'identite client resolue et l'historique d'achat entre les marques. Si l'identite ne se resout pas d'une marque a l'autre, la segmentation email perd sa pertinence et l'agent perd le contexte client sur lequel il repond.",
+    "etapes": [
+      {
+        "etape": "Unification des donnees",
+        "detail": "Data Cloud rassemble et harmonise les donnees d'achat et de navigation des neuf marques pour construire une vue 360 de chaque client.",
+        "acteur": "equipe data"
+      },
+      {
+        "etape": "Segmentation",
+        "detail": "La vue 360 est decoupee en audiences fines (par exemple etudiants ou jeunes maries) exploitables par le marketing.",
+        "acteur": "equipe data"
+      },
+      {
+        "etape": "Email personnalise declenche",
+        "detail": "Marketing Cloud envoie au bon moment un email a images et contenu dynamiques, selon le segment et le comportement (exemple : lit enfant apres achat d'un berceau).",
+        "acteur": "marketing"
+      },
+      {
+        "etape": "Agent conversationnel en front",
+        "detail": "Sur les sites, l'agent Olive (Agentforce) repond aux questions de service et de decouverte produit, connecte a la vue client et au contenu de marque.",
+        "acteur": "IA"
+      },
+      {
+        "etape": "Escalade humaine",
+        "detail": "Les cas complexes ou la demande explicite du client sont routes vers un conseiller humain.",
+        "acteur": "marketing"
+      },
+      {
+        "etape": "Supervision et extension",
+        "detail": "Les equipes suivent le taux de resolution autonome, l'engagement et la conversion, et etendent l'agent a de nouveaux usages (design, compatibilite produit).",
+        "acteur": "equipe data"
+      }
+    ]
+  },
+  "schema_flow": {
+    "statut": "documente",
+    "noeuds": [
+      {
+        "id": "client",
+        "role_generique": "site_app",
+        "label": "Client sur un site de marque (Williams Sonoma, Pottery Barn, West Elm...)"
+      },
+      {
+        "id": "data360",
+        "role_generique": "cdp",
+        "label": "Vue 360 unifiee cross-marques",
+        "outil_documente": "Salesforce Data 360 (Data Cloud)"
+      },
+      {
+        "id": "marketing",
+        "role_generique": "crm",
+        "label": "Email personnalise a contenu dynamique",
+        "outil_documente": "Salesforce Marketing Cloud"
+      },
+      {
+        "id": "agent",
+        "role_generique": "canal_conversationnel",
+        "label": "Agent conversationnel Olive (service et decouverte)",
+        "outil_documente": "Salesforce Agentforce 360"
+      },
+      {
+        "id": "humain",
+        "role_generique": "humain",
+        "label": "Conseiller humain (escalade)"
+      }
+    ],
+    "liens": [
+      [
+        "client",
+        "data360",
+        "achats et navigation first-party"
+      ],
+      [
+        "data360",
+        "marketing",
+        "segments fins"
+      ],
+      [
+        "marketing",
+        "client",
+        "email personnalise declenche"
+      ],
+      [
+        "data360",
+        "agent",
+        "contexte client et produit"
+      ],
+      [
+        "client",
+        "agent",
+        "questions service et decouverte"
+      ],
+      [
+        "agent",
+        "client",
+        "reponse, guidage, resolution"
+      ],
+      [
+        "agent",
+        "humain",
+        "escalade des cas complexes"
+      ]
+    ]
+  },
+  "replication": {
+    "statut_epistemique": "infere",
+    "prerequis_data": [
+      "Donnees first-party d'achat et de navigation unifiables entre plusieurs marques",
+      "Resolution d'identite client cross-marques (un meme client reconnu d'une enseigne a l'autre)",
+      "Catalogue produit structure et contenu de marque exploitables par un agent (guides, recettes, videos)"
+    ],
+    "prerequis_orga": [
+      "Gouvernance data commune aux differentes marques ou business units du groupe",
+      "Alignement des equipes CRM, e-commerce et service client autour de la meme vue client",
+      "Cadre de conformite (RGPD et AI Act en environnement UE) pour le profilage et l'agent conversationnel"
+    ],
+    "stack_possible": [
+      "Une CDP pour unifier les donnees first-party et resoudre l'identite (Data Cloud ou equivalent)",
+      "Une plateforme marketing declenchant des emails a contenu dynamique",
+      "Une plateforme d'agents conversationnels connectee a la vue client, ou un build LLM plus RAG sur le catalogue et le contenu de marque",
+      "Un LLM generatif pour la conversation et la decouverte produit"
+    ],
+    "premiere_etape": "Unifier l'identite et les donnees d'achat entre les marques dans une vue 360 avant tout cas d'usage IA : c'est le socle commun des deux briques, la personnalisation email et l'agent conversationnel. Sans cette resolution d'identite, ni l'un ni l'autre ne tient a l'echelle.",
+    "playbook": [
+      {
+        "action": "Unifier les donnees first-party des marques dans une plateforme unique et resoudre l'identite client d'une enseigne a l'autre.",
+        "livrable": "Vue 360 avec identite client reconnue cross-marques."
+      },
+      {
+        "action": "Segmenter la base en audiences fines et brancher un email declenche a contenu dynamique sur les moments d'achat.",
+        "livrable": "Campagnes personnalisees pilotees par evenement."
+      },
+      {
+        "action": "Structurer le catalogue produit et le contenu de marque (guides, recettes, videos) pour qu'un agent puisse s'y appuyer.",
+        "livrable": "Base de connaissance produit et contenu exploitable par une IA."
+      },
+      {
+        "action": "Deployer un agent conversationnel sur les sites, connecte a la vue 360, avec garde-fous et escalade humaine a la demande.",
+        "livrable": "Agent en production traitant les demandes courantes de service et de decouverte."
+      },
+      {
+        "action": "Etendre l'agent a la decouverte et au design (visualisation, compatibilite produit) et suivre resolution autonome, conversion et panier moyen.",
+        "livrable": "Agent multi-usage mesure sur des KPI de service et de vente."
+      }
+    ],
+    "equipe": "Un responsable produit digital, une equipe CRM et marketing, des ingenieurs data pour l'unification d'identite, des specialistes du conversationnel et du prompt, et la conformite impliquee sur le profilage et l'agent."
+  },
+  "seo": {
+    "slug": "williams-sonoma-agentforce-personnalisation-2025",
+    "title": "Williams-Sonoma : IA a l'echelle du portefeuille (perso data + agent Olive) - environ 21M nouveaux abonnes et 60% du chat vise en self-service (2025)",
+    "meta_description": "Williams-Sonoma unifie ses donnees sur Salesforce Data Cloud et deploie l'agent Olive sur Agentforce a travers 9 marques : environ 21M nouveaux abonnes, cible de 60% de chat resolu en autonomie.",
+    "resume_citable": "Williams-Sonoma met l'IA a l'echelle de ses neuf marques via Salesforce : Data Cloud unifie les donnees first-party pour une personnalisation email associee a environ 21 millions de nouveaux abonnes, et l'agent conversationnel Olive, construit sur Agentforce 360 en moins de 30 jours, vise la resolution autonome de plus de 60 pour cent des demandes de chat.",
+    "faq": [
+      {
+        "q": "Qu'est-ce que Williams-Sonoma a deploye avec l'IA ?",
+        "a": "Deux briques sur la plateforme Salesforce, a l'echelle de ses neuf marques : une personnalisation marketing pilotee par une vue client unifiee dans Data Cloud, et un agent conversationnel nomme Olive, construit sur Agentforce 360, pour le service et la decouverte produit."
+      },
+      {
+        "q": "Quels resultats sont documentes ?",
+        "a": "Le programme de personnalisation Data Cloud plus Marketing Cloud, deploye en 7,5 mois pour un chantier habituellement de 12 a 18 mois, est associe a environ 21 millions de nouveaux abonnes. L'agent Olive a ete mis en production en moins de 30 jours, avec un objectif annonce de resolution autonome de plus de 60 pour cent des demandes de chat."
+      },
+      {
+        "q": "Est-ce transposable en Europe ?",
+        "a": "Oui avec adaptations. La plateforme existe en UE, mais l'unification des donnees d'achat entre marques et le profilage marketing exigent une base legale RGPD claire, et l'agent conversationnel doit respecter l'obligation de transparence de l'AI Act."
+      }
+    ]
+  },
+  "logo_domain": "williams-sonoma.com"
+}

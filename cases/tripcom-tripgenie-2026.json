@@ -1,0 +1,296 @@
+{
+  "id": "tripcom-tripgenie-2026",
+  "type_fiche": "succes",
+  "marque": "Trip.com",
+  "groupe": "Trip.com Group",
+  "industrie": "voyage_hospitality",
+  "marches_deploiement": [
+    "Chine",
+    "Hong Kong",
+    "Singapour",
+    "Malaisie",
+    "Royaume-Uni",
+    "Allemagne",
+    "Etats-Unis",
+    "international"
+  ],
+  "transposable_ue": {
+    "flag": "oui_avec_adaptations",
+    "note": "Le pattern (assistant conversationnel branché sur l'inventaire et le CRM) est transposable. En UE, l'usage des données de session et d'historique pour la personnalisation impose une base légale RGPD et une information claire ; l'upload d'images par l'utilisateur ajoute une contrainte de minimisation et de conservation."
+  },
+  "metier": "e-commerce / marketing produit",
+  "intervenants": [],
+  "axes": {
+    "levier": "activation_conversion",
+    "touchpoints": [
+      "app mobile Trip.com",
+      "site web",
+      "chat in-app"
+    ],
+    "etape_parcours": "considération",
+    "famille": "conversation",
+    "pattern": "assistant conversationnel genAI de planification et de réservation",
+    "type_ia": [
+      "LLM génératif",
+      "recommandation",
+      "vision (upload d'images)",
+      "traduction automatique"
+    ],
+    "plateforme_stack": [
+      "custom/in-house",
+      "LLM"
+    ],
+    "objectif_metrique": [
+      "volume de commandes assistées par IA",
+      "taux de revisite 7 jours",
+      "engagement",
+      "conversion"
+    ]
+  },
+  "implementation": "custom",
+  "objectif_business": "Transformer l'assistant conversationnel en canal de réservation à part entière, en faisant passer les voyageurs de la question ouverte (où partir, quel hôtel) jusqu'au paiement sans quitter le fil de discussion.",
+  "description": "TripGenie est l'assistant conversationnel intégré à l'app et au site Trip.com. Le voyageur pose une question en langage naturel, compare des hôtels, vérifie des règles de bagages ou de lounge, traduit un menu, et peut réserver dans la conversation. Il accepte aussi l'upload d'images pour lancer une recherche. Trip.com Group a publié en mars 2026 une lecture de trois ans d'usage : les interactions penchent vers la réservation (près de 60 pour cent), le comparateur d'hôtels raccourcit le parcours, et les usages diffèrent par marché, décision en temps réel sur les marchés courts-courriers d'Asie, planification plus en amont en Europe et en Amérique du Nord.",
+  "resultats": [
+    {
+      "metrique": "Volume de commandes assistées par TripGenie sur Trip.com, en glissement annuel",
+      "valeur": "environ +400 pour cent",
+      "citation_exacte": "increased by around 400% year-on-year",
+      "source_ref": "S1"
+    },
+    {
+      "metrique": "Usage des outils cœur (comparateur hôtels, menu, traduction), en glissement annuel",
+      "valeur": "environ +300 pour cent",
+      "citation_exacte": "increased by around 300% year-on-year",
+      "source_ref": "S1"
+    },
+    {
+      "metrique": "Part des interactions liées à la réservation",
+      "valeur": "près de 60 pour cent",
+      "citation_exacte": "Nearly 60% of TripGenie interactions are now booking-related",
+      "source_ref": "S1"
+    },
+    {
+      "metrique": "Clics nécessaires pour le comparateur d'hôtels",
+      "valeur": "-80 pour cent",
+      "citation_exacte": "reduces the number of clicks needed by 80%",
+      "source_ref": "S1"
+    },
+    {
+      "metrique": "Taux de revisite IA à 7 jours (comparateur d'hôtels)",
+      "valeur": "+45 pour cent",
+      "citation_exacte": "a 45% increase in 7-day AI revisit rates",
+      "source_ref": "S1"
+    }
+  ],
+  "niveau_preuve": {
+    "niveau": "C",
+    "justification": "Communiqué officiel de Trip.com Group chiffré sur trois ans d'usage, repris de façon concordante par la presse voyage établie (Travel Daily News, Travolution)."
+  },
+  "dates": {
+    "lancement": "2023 (lancement de TripGenie)",
+    "derniere_confirmation_activite": "2026-03 (publication des données trois ans)",
+    "verifie_le": "2026-07-11",
+    "revoir_apres": "2027-01-11"
+  },
+  "statut_vivant": {
+    "statut": "confirme",
+    "note": "Étude d'usage sur trois ans publiée en mars 2026 ; l'assistant reste accessible sur l'app et le site."
+  },
+  "sources": [
+    {
+      "ref": "S1",
+      "type": "blog_officiel",
+      "fiabilite": "T1_primaire",
+      "titre": "Three Years of TripGenie: How Travellers Around the World are Using AI Differently",
+      "url": "https://www.prnewswire.com/news-releases/three-years-of-tripgenie-how-travellers-around-the-world-are-using-ai-differently-302713190.html",
+      "date_publication": "2026-03-15",
+      "consulte_le": "2026-07-11"
+    },
+    {
+      "ref": "S2",
+      "type": "presse",
+      "fiabilite": "T3_presse_etablie",
+      "titre": "Global travel patterns emerge from three years of TripGenie AI usage",
+      "url": "https://www.traveldailynews.com/technology/global-travel-patterns-emerge-from-three-years-of-tripgenie-ai-usage/",
+      "date_publication": "2026-03",
+      "consulte_le": "2026-07-11"
+    },
+    {
+      "ref": "S3",
+      "type": "blog_officiel",
+      "fiabilite": "T2_officiel_interesse",
+      "titre": "Introducing TripGenie: A Ground-Breaking AI Travel Assistant by Trip.com",
+      "url": "https://www.trip.com/newsroom/introducing-tripgenie-groundbreaking-ai-travel-assistant/",
+      "date_publication": "2023",
+      "consulte_le": "2026-07-11"
+    }
+  ],
+  "fonctionnement_operationnel": {
+    "cadence": "Temps réel à chaque conversation, avec ré-analyse périodique des logs d'usage pour ajuster les parcours.",
+    "opere_par": "Équipe produit IA de Trip.com Group, appuyée par les équipes data et les responsables de marché.",
+    "signal_pilote": "L'intention exprimée dans la conversation, croisée avec l'inventaire hôtels/vols en direct. Si l'inventaire ou les prix ne remontent pas en temps réel, la réponse perd sa valeur transactionnelle et l'assistant redevient un simple moteur de réponses.",
+    "etapes": [
+      {
+        "etape": "Compréhension de la demande",
+        "detail": "Le voyageur écrit ou téléverse une image ; l'assistant extrait l'intention (destination, dates, contrainte de bagage, comparaison d'hôtels).",
+        "acteur": "IA"
+      },
+      {
+        "etape": "Interrogation de l'inventaire",
+        "detail": "L'assistant appelle les moteurs de recherche internes hôtels, vols et attractions pour récupérer disponibilité et prix en direct.",
+        "acteur": "IA / équipe data"
+      },
+      {
+        "etape": "Restitution et comparaison",
+        "detail": "Il présente des options comparées et réduit le nombre de clics jusqu'au choix (comparateur d'hôtels).",
+        "acteur": "IA"
+      },
+      {
+        "etape": "Réservation dans le fil",
+        "detail": "Le voyageur confirme et paie sans quitter la conversation ; l'ordre est enregistré comme commande assistée par IA.",
+        "acteur": "client"
+      },
+      {
+        "etape": "Analyse d'usage",
+        "detail": "Les équipes lisent les logs par marché pour repérer les usages (décision temps réel vs planification amont) et ajuster les fonctions.",
+        "acteur": "équipe data"
+      }
+    ]
+  },
+  "schema_flow": {
+    "statut": "approche_type",
+    "noeuds": [
+      {
+        "id": "user",
+        "role_generique": "humain",
+        "label": "Voyageur"
+      },
+      {
+        "id": "chat",
+        "role_generique": "canal_conversationnel",
+        "label": "TripGenie (app / web)"
+      },
+      {
+        "id": "llm",
+        "role_generique": "modele_ia",
+        "label": "Modèle génératif + reco"
+      },
+      {
+        "id": "inv",
+        "role_generique": "data_source",
+        "label": "Inventaire hôtels / vols / attractions"
+      },
+      {
+        "id": "book",
+        "role_generique": "site_app",
+        "label": "Tunnel de réservation Trip.com"
+      }
+    ],
+    "liens": [
+      [
+        "user",
+        "chat"
+      ],
+      [
+        "chat",
+        "llm"
+      ],
+      [
+        "llm",
+        "inv"
+      ],
+      [
+        "inv",
+        "chat"
+      ],
+      [
+        "chat",
+        "book"
+      ],
+      [
+        "book",
+        "user",
+        "confirmation et suivi"
+      ]
+    ]
+  },
+  "replication": {
+    "statut_epistemique": "infere",
+    "prerequis_data": [
+      "inventaire produit accessible par API en temps réel",
+      "logs de conversation",
+      "historique de recherche par utilisateur"
+    ],
+    "prerequis_orga": [
+      "équipe produit IA dédiée",
+      "gouvernance de la personnalisation",
+      "cellule de lecture des usages par marché"
+    ],
+    "stack_possible": [
+      "LLM commercial ou open-weights",
+      "couche RAG sur l'inventaire",
+      "moteur de recommandation existant"
+    ],
+    "premiere_etape": "Exposer l'inventaire et les prix via une API propre, puis brancher un assistant sur un périmètre étroit (comparaison d'hôtels) avant d'élargir.",
+    "playbook": [
+      {
+        "action": "Exposer l'inventaire et les prix via une API propre et temps reel, prerequis de tout assistant transactionnel.",
+        "livrable": "API inventaire documentee et fiable."
+      },
+      {
+        "action": "Brancher un assistant sur un perimetre etroit (comparaison d'hotels) plutot que sur tout le catalogue.",
+        "livrable": "Prototype conversationnel transactionnel sur le perimetre pilote."
+      },
+      {
+        "action": "Integrer la reservation et le paiement dans le fil de conversation, sans redirection.",
+        "livrable": "Tunnel de reservation complet dans le chat."
+      },
+      {
+        "action": "Instrumenter l'usage : commandes assistees par IA, revisite a 7 jours, clics economises.",
+        "livrable": "Tableau de bord d'usage et de conversion."
+      },
+      {
+        "action": "Lire les logs par marche et etendre les fonctions (upload d'images, traduction) la ou l'usage le justifie.",
+        "livrable": "Roadmap fonctionnelle par marche."
+      }
+    ],
+    "equipe": "1 PM produit IA + 3-5 ingenieurs (LLM/RAG, backend inventaire) + 1 data analyst pour la lecture des usages par marche."
+  },
+  "seo": {
+    "slug": "tripcom-tripgenie-2026",
+    "title": "Trip.com : assistant genAI TripGenie - volume de commandes assistées +400 pour cent (2026)",
+    "meta_description": "TripGenie, l'assistant conversationnel de Trip.com, pousse le volume de commandes assistées par IA de 400 pour cent en un an et réduit de 80 pour cent les clics du comparateur d'hôtels.",
+    "resume_citable": "En 2026, Trip.com rapporte que le volume de commandes assistées par son agent conversationnel TripGenie a progressé d'environ 400 pour cent en un an, avec près de 60 pour cent des interactions liées à la réservation.",
+    "faq": [
+      {
+        "q": "Qu'est-ce que TripGenie ?",
+        "a": "L'assistant conversationnel de Trip.com, intégré à l'app et au site, qui aide à planifier, comparer des hôtels et réserver dans le fil de discussion."
+      },
+      {
+        "q": "Quels résultats Trip.com publie-t-il ?",
+        "a": "Un volume de commandes assistées par IA en hausse d'environ 400 pour cent sur un an, près de 60 pour cent d'interactions liées à la réservation et 80 pour cent de clics en moins sur le comparateur d'hôtels."
+      }
+    ]
+  },
+  "logo_domain": "trip.com",
+  "stack_technique": [
+    {
+      "nom": "TripGenie",
+      "categorie": "plateforme",
+      "detail": "Assistant conversationnel maison integre a l'app et au site : planification, comparaison d'hotels, regles bagages/lounge, traduction, reservation et paiement dans le fil.",
+      "url": "https://www.trip.com"
+    },
+    {
+      "nom": "LLM sous-jacent (custom/in-house)",
+      "categorie": "llm",
+      "detail": "Brique generative avec vision (upload d'images) et traduction ; Trip.com ne nomme pas publiquement le ou les modeles utilises.",
+      "url": "https://www.trip.com"
+    },
+    {
+      "nom": "Moteurs de recherche internes hotels, vols et attractions",
+      "categorie": "infra",
+      "detail": "Inventaire et prix interroges en direct par l'assistant, condition de sa valeur transactionnelle.",
+      "url": "https://www.trip.com"
+    }
+  ]
+}

@@ -1,0 +1,279 @@
+{
+  "id": "redfin-ask-redfin-assistant-2024",
+  "type_fiche": "succes",
+  "marque": "Redfin",
+  "industrie": "immobilier",
+  "marches_deploiement": [
+    "Etats-Unis"
+  ],
+  "transposable_ue": {
+    "flag": "oui_avec_adaptations",
+    "note": "Un assistant genAI sur fiche d'annonce est transposable a un portail europeen. La contrainte principale est le cadre anti-discrimination du logement, que Redfin a traite par des garde-fous fair housing ; en Europe s'y ajoutent le RGPD et l'AI Act sur un systeme oriente client."
+  },
+  "metier": "portail immobilier / experience de recherche et generation de leads",
+  "agences": [
+    {
+      "nom": "Sendbird",
+      "role": "Plateforme d'agents conversationnels IA citee comme partenaire de la construction de l'assistant",
+      "source_ref": "S4"
+    }
+  ],
+  "axes": {
+    "levier": "activation_conversion",
+    "touchpoints": [
+      "application iPhone Redfin",
+      "page de detail d'une annonce"
+    ],
+    "etape_parcours": "consideration",
+    "famille": "conversation",
+    "pattern": "assistant genAI sur la fiche produit qui repond puis oriente vers un agent",
+    "type_ia": [
+      "LLM",
+      "assistant conversationnel",
+      "generation de reponses ancrees sur la fiche"
+    ],
+    "plateforme_stack": [
+      "custom/in-house",
+      "Sendbird"
+    ],
+    "objectif_metrique": [
+      "retour dans l'application",
+      "demandes de mise en relation avec un agent",
+      "demandes de visite"
+    ]
+  },
+  "implementation": "hybride",
+  "stack_technique": [
+    {
+      "nom": "Sendbird",
+      "categorie": "plateforme",
+      "detail": "Plateforme d'agents conversationnels IA citee comme partenaire de la construction d'Ask Redfin.",
+      "url": "https://sendbird.com"
+    },
+    {
+      "nom": "LLM de generation de reponses",
+      "categorie": "llm",
+      "detail": "Reponses generees ancrees sur les details de l'annonce et le marche local ; le modele exact n'est pas nomme publiquement.",
+      "url": ""
+    },
+    {
+      "nom": "Donnees d'annonces et de marche local Redfin",
+      "categorie": "infra",
+      "detail": "Contenu structure des fiches et conditions locales qui servent d'ancrage aux reponses.",
+      "url": "https://www.redfin.com"
+    },
+    {
+      "nom": "Garde-fous fair housing",
+      "categorie": "outil",
+      "detail": "Jeu d'instructions qui impose des reponses conformes aux regles fair housing et refuse les questions touchant a la discrimination au logement.",
+      "url": "https://www.redfin.com"
+    }
+  ],
+  "objectif_business": "Repondre instantanement aux questions d'un acheteur sur une annonce, le marche local et les visites, pour le garder dans l'application et le convertir en mise en relation avec un agent Redfin.",
+  "description": "Ask Redfin est un assistant virtuel genAI lance en beta le 7 mars 2024, puis ouvert a l'echelle nationale aux utilisateurs de l'application iPhone aux Etats-Unis le 2 mai 2024. Il apparait sur la page de detail d'une annonce et repond aux questions sur les caracteristiques du bien, les conditions du marche local, les commodites voisines et les disponibilites de visite. Pour les demandes qui depassent le detail de l'annonce, il passe la main a l'equipe support de Redfin pour connecter l'utilisateur a un agent licencie. L'outil a ete concu avec un jeu d'instructions pour repondre conformement aux regles fair housing et refuser les questions qui touchent a la discrimination au logement. Redfin observe apres le lancement une hausse des mises en relation avec des agents.",
+  "resultats": [
+    {
+      "metrique": "Utilisateurs d'Ask Redfin de retour dans l'app sous une semaine",
+      "valeur": "93 %",
+      "citation_exacte": "93% of Ask Redfin users return to the Redfin app within a week",
+      "source_ref": "S1"
+    },
+    {
+      "metrique": "Part des questions portant sur le bien consulte",
+      "valeur": "59 %",
+      "citation_exacte": "the majority (59%) of questions users pose to Ask Redfin are about the property",
+      "source_ref": "S1"
+    },
+    {
+      "metrique": "Utilisateurs demandant une mise en relation avec un agent",
+      "valeur": "pres de 1 sur 10",
+      "citation_exacte": "Nearly 1 in 10 people who launch Ask Redfin do so to request service from a real estate agent",
+      "source_ref": "S1"
+    },
+    {
+      "metrique": "Utilisateurs demandant une visite",
+      "valeur": "8 %",
+      "citation_exacte": "a slightly smaller share (8%) request a home tour",
+      "source_ref": "S1"
+    }
+  ],
+  "niveau_preuve": {
+    "niveau": "C",
+    "justification": "Chiffres d'engagement rapportes par Redfin sur son propre canal officiel (T1) et repris par la presse specialisee (Inman, HousingWire). Metriques d'usage et de conversion, sans impact financier isole, d'ou un niveau C."
+  },
+  "dates": {
+    "lancement": "2024-03-07 (beta) ; 2024-05-02 (national, application iPhone US)",
+    "derniere_confirmation_activite": "2025-2026 (Redfin poursuit ses outils IA de recherche conversationnelle sur la meme surface)",
+    "verifie_le": "2026-07-11",
+    "revoir_apres": "2027-01-11"
+  },
+  "statut_vivant": {
+    "statut": "confirme",
+    "note": "Ask Redfin est en production depuis mai 2024. Redfin a depuis ajoute une recherche conversationnelle, signe que la brique d'assistance IA sur l'annonce reste active et investie."
+  },
+  "sources": [
+    {
+      "ref": "S1",
+      "type": "blog_officiel",
+      "fiabilite": "T1_primaire",
+      "titre": "Ask Redfin Launches Nationwide, Helping House Hunters Get Quick Answers",
+      "url": "https://www.redfin.com/news/ask-redfin-launches-nationwide/",
+      "date_publication": "2024-05-02",
+      "consulte_le": "2026-07-11"
+    },
+    {
+      "ref": "S2",
+      "type": "blog_officiel",
+      "fiabilite": "T1_primaire",
+      "titre": "Introducing Ask Redfin, an AI-Powered Tool to Quickly Answer Questions about For-Sale Homes",
+      "url": "https://www.redfin.com/news/introducing-ask-redfin/",
+      "date_publication": "2024-03-07",
+      "consulte_le": "2026-07-11"
+    },
+    {
+      "ref": "S3",
+      "type": "presse",
+      "fiabilite": "T4_secondaire",
+      "titre": "Redfin Is Beta Testing Its New AI Search Assistant Ask Redfin",
+      "url": "https://www.inman.com/2024/03/08/redfin-is-beta-testing-its-new-ai-search-assistant-ask-redfin/",
+      "date_publication": "2024-03-08",
+      "consulte_le": "2026-07-11"
+    },
+    {
+      "ref": "S4",
+      "type": "customer_story_plateforme",
+      "fiabilite": "T2_officiel_interesse",
+      "titre": "Redfin builds a custom AI virtual assistant to answer questions about for-sale homes",
+      "url": "https://sendbird.com/resources/redfin",
+      "date_publication": "2024",
+      "consulte_le": "2026-07-11"
+    }
+  ],
+  "fonctionnement_operationnel": {
+    "cadence": "Temps reel, a chaque ouverture de l'assistant sur une fiche d'annonce.",
+    "opere_par": "L'equipe produit et data de Redfin pour l'assistant ; l'equipe support pour le relais vers un agent.",
+    "signal_pilote": "Le contenu structure de l'annonce et les donnees de marche local. Si l'assistant repond sans ancrage sur ces donnees, il derive et sort du cadre fair housing.",
+    "etapes": [
+      {
+        "etape": "Question sur l'annonce",
+        "detail": "L'utilisateur ouvre Ask Redfin sur une fiche et pose une question sur le bien ou le marche.",
+        "acteur": "client"
+      },
+      {
+        "etape": "Reponse ancree et filtree",
+        "detail": "L'assistant repond a partir des details de l'annonce et des conditions locales, en refusant les questions a risque fair housing.",
+        "acteur": "IA"
+      },
+      {
+        "etape": "Relais vers un agent",
+        "detail": "Pour une demande de service ou de visite, l'assistant passe la main a l'equipe support qui connecte a un agent licencie.",
+        "acteur": "humain"
+      }
+    ]
+  },
+  "schema_flow": {
+    "statut": "approche_type",
+    "noeuds": [
+      {
+        "id": "listing",
+        "role_generique": "data_source",
+        "label": "Details d'annonce et donnees de marche local"
+      },
+      {
+        "id": "llm",
+        "role_generique": "modele_ia",
+        "label": "Assistant genAI Ask Redfin"
+      },
+      {
+        "id": "app",
+        "role_generique": "site_app",
+        "label": "Application Redfin, page annonce"
+      },
+      {
+        "id": "agent",
+        "role_generique": "humain",
+        "label": "Agent immobilier Redfin"
+      }
+    ],
+    "liens": [
+      [
+        "listing",
+        "llm"
+      ],
+      [
+        "app",
+        "llm",
+        "question"
+      ],
+      [
+        "llm",
+        "app",
+        "reponse"
+      ],
+      [
+        "llm",
+        "agent",
+        "mise en relation"
+      ]
+    ]
+  },
+  "replication": {
+    "statut_epistemique": "infere",
+    "prerequis_data": [
+      "annonces structurees avec caracteristiques exploitables",
+      "donnees de marche local",
+      "disponibilites de visite et routage vers agents"
+    ],
+    "prerequis_orga": [
+      "garde-fous conformite et anti-discrimination",
+      "equipe support pour le relais humain",
+      "boucle de mesure engagement et conversion"
+    ],
+    "stack_possible": [
+      "LLM avec ancrage sur la fiche (RAG)",
+      "plateforme d'agent conversationnel",
+      "regles de refus sur sujets sensibles"
+    ],
+    "premiere_etape": "Ancrer les reponses sur le contenu structure de l'annonce avant d'ouvrir le champ des questions.",
+    "playbook": [
+      {
+        "action": "Definir le perimetre de questions couvertes et ecrire les garde-fous conformite (anti-discrimination, sujets refuses).",
+        "livrable": "Regles de reponse et de refus documentees."
+      },
+      {
+        "action": "Construire l'assistant ancre sur le contenu structure de l'annonce (RAG) via une plateforme conversationnelle.",
+        "livrable": "Beta interne sur un sous-ensemble d'annonces."
+      },
+      {
+        "action": "Brancher le relais humain : escalade vers l'equipe support puis mise en relation avec un agent licencie, et les disponibilites de visite.",
+        "livrable": "Parcours d'escalade operationnel de bout en bout."
+      },
+      {
+        "action": "Ouvrir une beta publique sur une surface unique (application mobile) avec mesure du retour dans l'app et des demandes d'agent.",
+        "livrable": "Assistant live avec tableau de bord d'engagement."
+      },
+      {
+        "action": "Lire engagement et conversion (demandes de visite, mises en relation) et etendre la surface.",
+        "livrable": "Bilan chiffre et plan de generalisation."
+      }
+    ],
+    "equipe": "1 PM + 2 devs + 1 juriste conformite logement + l'equipe support pour le relais humain."
+  },
+  "seo": {
+    "slug": "redfin-ask-redfin-assistant-2024",
+    "title": "Redfin : Ask Redfin, assistant genAI sur l'annonce, 93 % de retour hebdomadaire (2024)",
+    "meta_description": "Ask Redfin repond aux questions des acheteurs sur une annonce et oriente vers un agent. 93 % des utilisateurs reviennent sous une semaine.",
+    "resume_citable": "Ask Redfin, assistant genAI lance a l'echelle nationale en mai 2024, repond aux questions sur une annonce : 93 % des utilisateurs reviennent dans l'application sous une semaine et pres de 1 sur 10 demande une mise en relation avec un agent.",
+    "faq": [
+      {
+        "q": "Que fait Ask Redfin ?",
+        "a": "C'est un assistant genAI sur la page d'une annonce qui repond aux questions sur le bien, le marche local et les visites, puis oriente vers un agent Redfin pour les demandes de service."
+      },
+      {
+        "q": "Ask Redfin gere-t-il le risque de discrimination au logement ?",
+        "a": "Oui, il a ete concu avec des instructions pour repondre conformement aux regles fair housing et refuser les questions qui touchent a la discrimination au logement."
+      }
+    ]
+  },
+  "logo_domain": "redfin.com"
+}

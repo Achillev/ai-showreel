@@ -1,0 +1,280 @@
+{
+  "id": "volkswagen-myvw-virtual-assistant-gemini-2024",
+  "type_fiche": "succes",
+  "marque": "Volkswagen of America",
+  "groupe": "Volkswagen Group",
+  "industrie": "auto",
+  "marches_deploiement": [
+    "Etats-Unis"
+  ],
+  "transposable_ue": {
+    "flag": "oui_avec_adaptations",
+    "note": "Deploiement initial US via l'app proprietaires myVW. Une transposition UE demande la localisation des manuels et contenus par marche et la conformite RGPD sur les donnees de l'app et les images envoyees pour la reconnaissance du tableau de bord."
+  },
+  "metier": "experience client / relation proprietaire (app)",
+  "intervenants": [
+    {
+      "nom": "Rachael Zaluzec",
+      "role": "Senior Vice President of Customer Experience and Brand Marketing, Volkswagen Group of America",
+      "source_ref": "S1"
+    }
+  ],
+  "agences": [
+    {
+      "nom": "Google Cloud",
+      "role": "Briques d'IA generative (Gemini, Vertex AI, BigQuery) pour l'assistant myVW",
+      "source_ref": "S1"
+    }
+  ],
+  "axes": {
+    "levier": "retention",
+    "touchpoints": [
+      "app mobile myVW",
+      "assistant virtuel",
+      "camera smartphone (multimodal)"
+    ],
+    "etape_parcours": "post-achat",
+    "famille": "conversation",
+    "pattern": "assistant proprietaire genAI sur base de connaissance (RAG multimodal)",
+    "type_ia": [
+      "LLM (Gemini)",
+      "RAG sur documentation",
+      "vision / multimodal"
+    ],
+    "plateforme_stack": [
+      "Google Gemini",
+      "Google Vertex AI",
+      "Google BigQuery"
+    ],
+    "objectif_metrique": [
+      "acces facilite a l'information vehicule",
+      "usage de l'app",
+      "satisfaction proprietaire"
+    ]
+  },
+  "implementation": "hybride",
+  "objectif_business": "Rendre l'information de possession plus accessible dans l'app myVW pour renforcer la relation proprietaire apres l'achat : repondre en langage naturel aux questions sur le vehicule et identifier les temoins du tableau de bord, sans que le client fouille le manuel papier.",
+  "description": "Volkswagen of America a integre l'IA generative de Google dans son app proprietaires myVW pour animer un assistant virtuel. Le proprietaire pose ses questions en langage naturel (par exemple comment changer une roue) et l'assistant repond en s'appuyant sur les manuels, les FAQ, les articles d'aide, les videos YouTube officielles de Volkswagen et des guides pas a pas. La capacite multimodale permet aussi d'identifier un temoin du tableau de bord en pointant la camera du smartphone dessus. Annonce le 26 septembre 2024, initialement disponible sur les Atlas et Atlas Cross Sport de millesime 2024. Le dispositif s'appuie sur Google Gemini, Vertex AI et BigQuery.",
+  "resultats": [
+    {
+      "metrique": "Deploiement initial dans l'app myVW, Atlas et Atlas Cross Sport MY24",
+      "valeur": "2 modeles MY24",
+      "citation_exacte": "The myVW mobile app helps us advance our promise of unparalleled customer service",
+      "source_ref": "S1"
+    },
+    {
+      "metrique": "Capacite multimodale",
+      "valeur": "identification des temoins du tableau de bord via la camera du smartphone",
+      "citation_exacte": "How do I change a tire?",
+      "source_ref": "S1"
+    }
+  ],
+  "niveau_preuve": {
+    "niveau": "C",
+    "justification": "Deploiement en production documente par la presse marketing etablie citant nommement Volkswagen of America et par le communique de la marque ; perimetre initial limite (deux modeles, un marche) et pas de metrique d'adoption publique, donc niveau C."
+  },
+  "dates": {
+    "lancement": "2024-09-26 (annonce)",
+    "derniere_confirmation_activite": "2024-09 (integration Gemini dans myVW, extension modeles annoncee)",
+    "verifie_le": "2026-07-11",
+    "revoir_apres": "2027-01-11"
+  },
+  "statut_vivant": {
+    "statut": "confirme",
+    "note": "Fonction en production dans l'app myVW aux Etats-Unis, d'abord sur Atlas et Atlas Cross Sport MY24, avec une extension a d'autres modeles annoncee ; pas de chiffres d'adoption publics."
+  },
+  "sources": [
+    {
+      "ref": "S1",
+      "type": "presse",
+      "fiabilite": "T3_presse_etablie",
+      "titre": "Volkswagen integrates Google's generative AI to enhance app experience",
+      "url": "https://www.marketingdive.com/news/volkswagen-google-generative-ai-myvw-app-experience/727941/",
+      "date_publication": "2024-09-26",
+      "consulte_le": "2026-07-11"
+    },
+    {
+      "ref": "S2",
+      "type": "blog_officiel",
+      "fiabilite": "T1_primaire",
+      "titre": "Volkswagen integrates AI into the myVW mobile app",
+      "url": "https://media.vw.com/releases/1817",
+      "date_publication": "2024-09-26",
+      "consulte_le": "2026-07-11"
+    },
+    {
+      "ref": "S3",
+      "type": "presse",
+      "fiabilite": "T4_secondaire",
+      "titre": "How Volkswagen is utilising AI to enhance its digital assistant",
+      "url": "https://www.just-auto.com/features/how-volkswagen-is-utilising-ai-to-enhance-its-digital-assistant/",
+      "date_publication": "2024",
+      "consulte_le": "2026-07-11"
+    }
+  ],
+  "fonctionnement_operationnel": {
+    "cadence": "Temps reel, a la demande, dans l'app myVW.",
+    "opere_par": "Les equipes experience client et digital de Volkswagen of America, sur les services Google Cloud.",
+    "signal_pilote": "La question du proprietaire et la base de connaissance indexee (manuels, FAQ, guides, videos). Si la documentation n'est pas a jour ou mal indexee, les reponses derivent ou deviennent fausses.",
+    "etapes": [
+      {
+        "etape": "Question du proprietaire",
+        "detail": "Le client pose une question en langage naturel dans l'app, ou pointe la camera sur le tableau de bord.",
+        "acteur": "client"
+      },
+      {
+        "etape": "Recuperation de contexte",
+        "detail": "L'assistant interroge la base indexee (manuels, FAQ, articles d'aide, videos, guides) via Vertex AI et BigQuery.",
+        "acteur": "IA"
+      },
+      {
+        "etape": "Generation de reponse",
+        "detail": "Gemini redige la reponse, en integrant l'analyse d'image pour l'identification des temoins.",
+        "acteur": "IA"
+      },
+      {
+        "etape": "Mise a jour de la base",
+        "detail": "Les equipes maintiennent la documentation source pour garder les reponses justes a mesure que la gamme evolue.",
+        "acteur": "equipe data"
+      }
+    ]
+  },
+  "schema_flow": {
+    "statut": "documente",
+    "noeuds": [
+      {
+        "id": "proprietaire",
+        "role_generique": "humain",
+        "label": "Proprietaire"
+      },
+      {
+        "id": "app",
+        "role_generique": "site_app",
+        "label": "App myVW",
+        "outil_documente": "myVW (Volkswagen of America)"
+      },
+      {
+        "id": "kb",
+        "role_generique": "data_source",
+        "label": "Base de connaissance (manuels, FAQ, guides, videos)",
+        "outil_documente": "Google BigQuery / Vertex AI"
+      },
+      {
+        "id": "gemini",
+        "role_generique": "modele_ia",
+        "label": "Generation de reponse et vision",
+        "outil_documente": "Google Gemini"
+      }
+    ],
+    "liens": [
+      [
+        "proprietaire",
+        "app",
+        "question / photo tableau de bord"
+      ],
+      [
+        "app",
+        "kb",
+        "recherche de contexte"
+      ],
+      [
+        "kb",
+        "gemini",
+        "documents pertinents"
+      ],
+      [
+        "gemini",
+        "app",
+        "reponse"
+      ],
+      [
+        "app",
+        "proprietaire",
+        "restitution"
+      ]
+    ]
+  },
+  "replication": {
+    "statut_epistemique": "infere",
+    "prerequis_data": [
+      "documentation produit structuree (manuels, FAQ, guides)",
+      "contenus video et articles d'aide indexables"
+    ],
+    "prerequis_orga": [
+      "equipe experience client / digital",
+      "process de maintenance de la base de connaissance"
+    ],
+    "stack_possible": [
+      "Gemini / Vertex AI ou LLM cloud avec RAG",
+      "entrepot pour l'indexation (BigQuery ou equivalent)",
+      "brique vision pour le multimodal"
+    ],
+    "premiere_etape": "Indexer les manuels et FAQ dans un RAG et brancher un assistant en langage naturel dans l'app proprietaire.",
+    "playbook": [
+      {
+        "action": "Inventorier la documentation produit (manuels, FAQ, articles d'aide, videos) et designer un proprietaire par source.",
+        "livrable": "Corpus source complet avec responsables de mise a jour."
+      },
+      {
+        "action": "Indexer le corpus en RAG et brancher le LLM.",
+        "livrable": "Assistant en sandbox qui repond juste sur un jeu de questions proprietaires."
+      },
+      {
+        "action": "Ajouter la brique multimodale (reconnaissance des temoins du tableau de bord).",
+        "livrable": "Fonction camera testee sur les temoins les plus courants."
+      },
+      {
+        "action": "Lancer la beta dans l'app sur un perimetre de modeles restreint.",
+        "livrable": "Fonction live avec feedback in-app collecte."
+      },
+      {
+        "action": "Installer le process de maintenance de la base et etendre a la gamme.",
+        "livrable": "Rituel de mise a jour documente + plan d'extension modeles."
+      }
+    ],
+    "equipe": "1 PM app + 1-2 devs (RAG et mobile) + 1 responsable documentation produit"
+  },
+  "seo": {
+    "slug": "volkswagen-myvw-virtual-assistant-gemini-2024",
+    "title": "Volkswagen : assistant proprietaire genAI dans l'app myVW avec Google Gemini (2024)",
+    "meta_description": "Volkswagen of America a integre Google Gemini dans l'app myVW : assistant qui repond en langage naturel sur le vehicule et identifie les temoins du tableau de bord via la camera.",
+    "resume_citable": "Volkswagen of America a integre Google Gemini (Vertex AI, BigQuery) dans son app proprietaires myVW en septembre 2024, avec un assistant qui repond en langage naturel a partir des manuels et guides et identifie les temoins du tableau de bord via la camera du smartphone.",
+    "faq": [
+      {
+        "q": "Que fait l'assistant genAI de l'app myVW ?",
+        "a": "Il repond en langage naturel aux questions sur le vehicule a partir des manuels, FAQ et guides, et identifie les temoins du tableau de bord en pointant la camera du smartphone."
+      },
+      {
+        "q": "Quelle technologie l'anime ?",
+        "a": "Google Gemini avec Vertex AI et BigQuery, deploye d'abord sur les Atlas et Atlas Cross Sport MY24 aux Etats-Unis."
+      }
+    ]
+  },
+  "logo_domain": "vw.com",
+  "stack_technique": [
+    {
+      "nom": "Google Gemini",
+      "categorie": "llm",
+      "detail": "Modele generatif et multimodal : reponses en langage naturel et identification des temoins du tableau de bord via la camera.",
+      "url": "https://cloud.google.com/vertex-ai"
+    },
+    {
+      "nom": "Google Vertex AI",
+      "categorie": "plateforme",
+      "detail": "Plateforme d'orchestration du RAG sur la base de connaissance (manuels, FAQ, guides, videos).",
+      "url": "https://cloud.google.com/vertex-ai"
+    },
+    {
+      "nom": "Google BigQuery",
+      "categorie": "infra",
+      "detail": "Entrepot qui porte l'indexation des contenus interroges par l'assistant.",
+      "url": "https://cloud.google.com/bigquery"
+    },
+    {
+      "nom": "App myVW",
+      "categorie": "outil",
+      "detail": "Application proprietaires de Volkswagen of America, surface de l'assistant virtuel.",
+      "url": "https://www.vw.com"
+    }
+  ]
+}

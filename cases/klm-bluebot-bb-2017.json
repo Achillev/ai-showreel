@@ -1,0 +1,297 @@
+{
+  "id": "klm-bluebot-bb-2017",
+  "type_fiche": "succes",
+  "marque": "KLM Royal Dutch Airlines",
+  "groupe": "Air France-KLM",
+  "industrie": "voyage_hospitality",
+  "marches_deploiement": [
+    "Pays-Bas",
+    "international (9 langues)"
+  ],
+  "transposable_ue": {
+    "flag": "oui",
+    "note": "Deja opere depuis les Pays-Bas, donc en cadre UE. Un agent conversationnel qui reserve et sert le client via Messenger, Google Assistant et WhatsApp impose RGPD (traitement des donnees de reservation et de messagerie) et, sous AI Act, une information sur l'usage de l'IA dans la conversation."
+  },
+  "metier": "service client",
+  "intervenants": [
+    {
+      "nom": "Martine van der Lee",
+      "role": "Director of Social Media, KLM",
+      "source_ref": "S2"
+    },
+    {
+      "nom": "Ruben Klerks",
+      "role": "Social Media Manager, KLM",
+      "source_ref": "S2"
+    },
+    {
+      "nom": "Pieter Groeneveld",
+      "role": "SVP Digital, Air France-KLM",
+      "source_ref": "S1"
+    }
+  ],
+  "agences": [
+    {
+      "nom": "Google Cloud (Dialogflow)",
+      "role": "Plateforme de comprehension du langage naturel utilisee pour construire BB",
+      "source_ref": "S2"
+    }
+  ],
+  "axes": {
+    "levier": "activation_conversion",
+    "touchpoints": [
+      "Facebook Messenger",
+      "Google Assistant",
+      "WhatsApp"
+    ],
+    "etape_parcours": "achat",
+    "famille": "conversation",
+    "pattern": "agent conversationnel booking et service, hybride IA / humain",
+    "type_ia": [
+      "NLU",
+      "IA conversationnelle"
+    ],
+    "plateforme_stack": [
+      "Google Dialogflow",
+      "Google Assistant",
+      "CRM KLM",
+      "custom/in-house"
+    ],
+    "objectif_metrique": [
+      "part de conversation automatisee",
+      "volume de messages traites",
+      "satisfaction sur les canaux sociaux"
+    ]
+  },
+  "implementation": "hybride",
+  "objectif_business": "Offrir un point d'entree conversationnel aux voyageurs qui ne telechargent pas l'app, pour reserver et se faire aider la ou ils sont deja (messageries et assistants vocaux), en combinant IA et agents humains dans une meme conversation.",
+  "description": "BB (Blue Bot) est l'agent conversationnel de KLM, lance en septembre 2017 comme bot de reservation sur Facebook Messenger. Le voyageur indique sa destination et ses dates, BB affiche les options, et l'achat, les details personnels et la confirmation se font dans la conversation. En decembre 2017, KLM ajoute un service de preparation de bagage sur Google Assistant. BB est construit largement en interne avec Google Dialogflow et connecte au CRM de KLM, ce qui permet a un agent humain de reprendre la main quand le bot ne suit plus. KLM presente BB comme un membre de sa famille de service, adosse a ses equipes sociales qui traitent un fort volume de messages chaque semaine.",
+  "resultats": [
+    {
+      "metrique": "Conversation automatisee via le NLU Dialogflow (non chiffre, declaratif KLM)",
+      "valeur": "une grande partie",
+      "citation_exacte": "we were able to automate a large part of the conversation",
+      "source_ref": "S2"
+    },
+    {
+      "metrique": "Renfort humain de service adosse a BB pour l'escalade",
+      "valeur": "250 collegues",
+      "citation_exacte": "supported by 250 human service colleagues",
+      "source_ref": "S1"
+    }
+  ],
+  "niveau_preuve": {
+    "niveau": "C",
+    "justification": "Communique officiel KLM (marque-sujet) plus etude de cas client Google Cloud, deux sources officielles concordantes qui nomment le projet, ses canaux et ses acteurs. KLM n'a pas publie de taux de deflection ni de conversion chiffres, donc les resultats restent qualitatifs et de scale, ce qui plafonne a C."
+  },
+  "dates": {
+    "lancement": "2017-09 (booking Messenger) ; 2017-12 (packing Google Assistant)",
+    "derniere_confirmation_activite": "2025 (BB toujours presente, page bb.klm.com active)",
+    "verifie_le": "2026-07-11",
+    "revoir_apres": "2027-01-11"
+  },
+  "statut_vivant": {
+    "statut": "confirme",
+    "note": "BB reste en service depuis 2017, presentee par KLM comme active sur Messenger, Google Assistant et WhatsApp, avec un renfort d'agents humains ; page dediee bb.klm.com toujours en ligne."
+  },
+  "sources": [
+    {
+      "ref": "S1",
+      "type": "blog_officiel",
+      "fiabilite": "T1_primaire",
+      "titre": "KLM welcomes BlueBot (BB) to its service family",
+      "url": "https://news.klm.com/klm-welcomes-bluebot-bb-to-its-service-family/",
+      "date_publication": "2017-09-26",
+      "consulte_le": "2026-07-11"
+    },
+    {
+      "ref": "S2",
+      "type": "customer_story_plateforme",
+      "fiabilite": "T2_officiel_interesse",
+      "titre": "KLM builds booking and packing bot 'BB' with Dialogflow",
+      "url": "https://docs.cloud.google.com/dialogflow/docs/case-studies/klm/KLM.pdf",
+      "date_publication": "2018",
+      "consulte_le": "2026-07-11"
+    },
+    {
+      "ref": "S3",
+      "type": "blog_officiel",
+      "fiabilite": "T1_primaire",
+      "titre": "Meet BB (that's short for BlueBot), KLM's smart assistant",
+      "url": "https://bb.klm.com/en",
+      "date_publication": "2025",
+      "consulte_le": "2026-07-11"
+    }
+  ],
+  "fonctionnement_operationnel": {
+    "cadence": "Temps reel, sur chaque conversation entrante dans les messageries et l'assistant vocal.",
+    "opere_par": "Equipe Social Media de KLM, avec les agents du service client pour l'escalade.",
+    "signal_pilote": "La qualite de comprehension des intentions (NLU) et le lien vers l'inventaire et le CRM. Si le NLU ne reconnait pas la demande ou si le CRM ne suit pas, la reprise humaine devient systematique et le canal perd son interet.",
+    "etapes": [
+      {
+        "etape": "Entree conversationnelle",
+        "detail": "Le voyageur ecrit a BB sur Messenger ou WhatsApp, ou l'interroge via Google Assistant.",
+        "acteur": "client"
+      },
+      {
+        "etape": "Comprehension et recherche",
+        "detail": "BB reconnait l'intention (reserver, preparer un bagage) et propose les options adaptees.",
+        "acteur": "IA"
+      },
+      {
+        "etape": "Reservation dans le fil",
+        "detail": "Le voyageur choisit, renseigne ses details et recoit sa confirmation sans quitter la conversation.",
+        "acteur": "client"
+      },
+      {
+        "etape": "Reprise humaine",
+        "detail": "Quand BB ne peut plus repondre, le CRM permet a un agent de reprendre la meme conversation.",
+        "acteur": "service client"
+      }
+    ]
+  },
+  "schema_flow": {
+    "statut": "documente",
+    "noeuds": [
+      {
+        "id": "user",
+        "role_generique": "humain",
+        "label": "Voyageur"
+      },
+      {
+        "id": "chan",
+        "role_generique": "canal_conversationnel",
+        "label": "Messenger / Google Assistant / WhatsApp"
+      },
+      {
+        "id": "ai",
+        "role_generique": "modele_ia",
+        "label": "BB (Blue Bot)",
+        "outil_documente": "Google Dialogflow"
+      },
+      {
+        "id": "crm",
+        "role_generique": "crm",
+        "label": "CRM KLM"
+      },
+      {
+        "id": "agent",
+        "role_generique": "humain",
+        "label": "Agent de service"
+      }
+    ],
+    "liens": [
+      [
+        "user",
+        "chan"
+      ],
+      [
+        "chan",
+        "ai"
+      ],
+      [
+        "ai",
+        "crm"
+      ],
+      [
+        "ai",
+        "user",
+        "options / confirmation"
+      ],
+      [
+        "crm",
+        "agent",
+        "reprise humaine"
+      ],
+      [
+        "agent",
+        "user"
+      ]
+    ]
+  },
+  "replication": {
+    "statut_epistemique": "infere",
+    "prerequis_data": [
+      "moteur de recherche de vols et inventaire par API",
+      "CRM connecte pour la reprise humaine",
+      "corpus d'intentions pour entrainer le NLU"
+    ],
+    "prerequis_orga": [
+      "equipe social media qui tient le bot",
+      "procedure d'escalade dans la meme conversation",
+      "gestion multilingue"
+    ],
+    "stack_possible": [
+      "plateforme NLU / conversationnelle",
+      "integration messageries (Messenger, WhatsApp)",
+      "connecteur CRM"
+    ],
+    "premiere_etape": "Brancher un bot de reservation sur une messagerie avec reprise humaine via le CRM, sur un parcours d'achat simple.",
+    "playbook": [
+      {
+        "action": "Choisir un parcours d'achat simple (reservation directe) et constituer le corpus d'intentions",
+        "livrable": "Liste d'intentions et de dialogues cibles"
+      },
+      {
+        "action": "Construire le NLU et les flows de conversation sur un canal de messagerie",
+        "livrable": "Bot fonctionnel en sandbox"
+      },
+      {
+        "action": "Connecter l'inventaire (API de recherche et de reservation) et le CRM pour la reprise humaine",
+        "livrable": "Reservation de bout en bout dans la conversation + escalade testee"
+      },
+      {
+        "action": "Ouvrir une beta sur un marche et une langue",
+        "livrable": "Part de conversation automatisee et satisfaction mesurees"
+      },
+      {
+        "action": "Etendre langues et canaux avec l'equipe sociale en renfort",
+        "livrable": "Bot multilingue en production avec procedure d'escalade rodee"
+      }
+    ],
+    "equipe": "1 PM conversationnel + 1-2 devs integration + equipe social media pour l'escalade"
+  },
+  "seo": {
+    "slug": "klm-bluebot-bb-2017",
+    "title": "KLM : agent conversationnel BB (BlueBot) - booking et service hybride IA / humain (2017)",
+    "meta_description": "BB (BlueBot), l'agent conversationnel de KLM lance en 2017 sur Dialogflow, reserve des vols sur Messenger et Google Assistant, automatise une grande partie de la conversation et s'adosse a 250 agents.",
+    "resume_citable": "KLM opere depuis 2017 son agent conversationnel BB (BlueBot), construit avec Google Dialogflow, qui reserve des vols sur Messenger et Google Assistant et combine IA et 250 agents humains dans une meme conversation.",
+    "faq": [
+      {
+        "q": "Qu'est-ce que BB (BlueBot) de KLM ?",
+        "a": "Un agent conversationnel lance en 2017 qui reserve des vols sur Messenger et aide a preparer son bagage via Google Assistant, avec reprise par un agent humain quand il ne suit plus."
+      },
+      {
+        "q": "Sur quelle technologie repose BB ?",
+        "a": "BB a ete construit largement en interne avec Google Dialogflow pour la comprehension du langage naturel, et connecte au CRM de KLM."
+      }
+    ]
+  },
+  "logo_domain": "klm.com",
+  "stack_technique": [
+    {
+      "nom": "Google Dialogflow",
+      "categorie": "plateforme",
+      "detail": "comprehension du langage naturel (NLU) de BB, construite largement en interne sur cette base",
+      "url": "https://cloud.google.com/dialogflow"
+    },
+    {
+      "nom": "Facebook Messenger et WhatsApp",
+      "categorie": "infra",
+      "detail": "canaux de messagerie ou BB reserve et sert le voyageur dans le fil de conversation",
+      "url": "https://www.meta.com"
+    },
+    {
+      "nom": "Google Assistant",
+      "categorie": "infra",
+      "detail": "canal vocal ajoute en decembre 2017 pour le service de preparation de bagage",
+      "url": "https://assistant.google.com"
+    },
+    {
+      "nom": "CRM KLM",
+      "categorie": "infra",
+      "detail": "connexion qui permet a un agent humain de reprendre la meme conversation quand le bot ne suit plus",
+      "url": "https://www.klm.com"
+    }
+  ]
+}

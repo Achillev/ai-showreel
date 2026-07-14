@@ -1,0 +1,276 @@
+{
+  "type_fiche": "succes",
+  "id": "stitch-fix-styling-algorithmique-2021",
+  "marque": "Stitch Fix",
+  "industrie": "retail_ecom",
+  "marches_deploiement": [
+    "Etats-Unis"
+  ],
+  "transposable_ue": {
+    "flag": "oui_avec_adaptations",
+    "note": "Le modele repose sur une donnee declarative massive fournie par le client (mensurations, preferences, feedback). En UE il faut une base legale claire pour ce profilage et un stockage conforme RGPD. Stitch Fix avait ouvert au Royaume-Uni puis s'est retire de ce marche en 2022."
+  },
+  "metier": "E-commerce mode / personnalisation produit",
+  "marque_linkedin": "https://www.linkedin.com/company/stitch-fix",
+  "axes": {
+    "levier": "activation_conversion",
+    "touchpoints": [
+      "Questionnaire de style",
+      "Selection \" Fix \" expediee",
+      "Style Shuffle",
+      "Application"
+    ],
+    "etape_parcours": "consideration -> achat -> fidelite",
+    "famille": "personnalisation",
+    "pattern": "Curation produit un-a-un a l'echelle, algorithme de recommandation couple a un styliste humain",
+    "type_ia": [
+      "algorithmes de recommandation",
+      "prediction d'achat",
+      "matching client-produit"
+    ],
+    "plateforme_stack": [
+      "custom/in-house"
+    ],
+    "objectif_metrique": [
+      "taux de conservation des articles envoyes",
+      "valeur par client",
+      "retention"
+    ]
+  },
+  "implementation": "custom",
+  "objectif_business": "Vendre des vetements sans que le client parcoure un catalogue : l'algorithme presort les articles qui ont le plus de chances de plaire, un styliste tranche, la boite arrive chez le client.",
+  "points_cles": ["Curation mode un-a-un : presort algorithmique du stock puis choix final d'un styliste.", "Modeles de recommandation in-house sur donnees declarees et notes Style Shuffle.", "CA FY2021 de 2,1 milliards USD (+22,8%), 4,17 millions de clients actifs, 505 USD par client.", "Preuve A, statut confirme, chiffres de resultats financiers FY2021."],
+  "description": "Stitch Fix vend de la mode par abonnement a la selection. Le client remplit un questionnaire detaille (tailles, budget, styles, ce qu'il veut couvrir ou mettre en avant) et recoit une \" Fix \", une boite de cinq articles choisis pour lui. Il garde ce qu'il veut et renvoie le reste. Derriere ce geste simple, l'entreprise croise des algorithmes de recommandation et le jugement d'un styliste humain. Les modeles predisent, pour chaque client, quels articles du stock ont le plus de chances d'etre gardes, en s'appuyant sur des donnees declarees explicitement par le client plutot que devinees. Le styliste voit une liste presortie et fait le choix final, en ajoutant un mot personnel. La brique \" Style Shuffle \" fait noter des tenues aux clients facon Tinder, ce qui alimente encore le modele en signaux de gout. Sur l'exercice fiscal 2021, Stitch Fix a passe pour la premiere fois la barre des 2 milliards de dollars de chiffre d'affaires, avec 4,17 millions de clients actifs.",
+  "fonctionnement_operationnel": {
+    "cadence": "Par commande (chaque Fix declenche un cycle) et par reassort de stock. Les modeles sont reentraines sur le flux continu de feedback d'achat et de retour.",
+    "opere_par": "Equipe data science pour les modeles, reseau de stylistes pour l'arbitrage final, equipe merchandising pour le stock.",
+    "signal_pilote": "Ce que le client garde ou renvoie, et pourquoi. Sans ce retour structure a chaque boite, le modele n'a plus de verite terrain et la pertinence des selections se degrade.",
+    "etapes": [
+      {
+        "etape": "Recueillir le profil",
+        "detail": "Questionnaire de style a l'inscription, complete par les notes Style Shuffle. La donnee est declaree par le client, pas scrapee.",
+        "acteur": "Client"
+      },
+      {
+        "etape": "Presorter le stock",
+        "detail": "Les algorithmes classent les articles disponibles par probabilite d'etre gardes pour ce client precis.",
+        "acteur": "IA / equipe data"
+      },
+      {
+        "etape": "Trancher la boite",
+        "detail": "Le styliste choisit cinq articles dans la liste presortie et ajoute un message. Le geste humain corrige ce que le modele ne capte pas.",
+        "acteur": "Styliste"
+      },
+      {
+        "etape": "Apprendre du retour",
+        "detail": "Ce qui est garde, renvoye, et le motif de retour repartent dans les modeles et affinent la prochaine selection.",
+        "acteur": "IA / equipe data"
+      }
+    ]
+  },
+  "resultats": [
+    {
+      "metrique": "Chiffre d'affaires FY2021, +22,8% sur un an",
+      "valeur": "2,1 Md USD",
+      "citation_exacte": "$2.1 billion, an increase of 22.8% year over year",
+      "source_ref": "S1"
+    },
+    {
+      "metrique": "Clients actifs fin FY2021, +18% sur un an",
+      "valeur": "4,17 M de clients",
+      "citation_exacte": "4,165,000, an increase of 643,000 or 18% year over year",
+      "source_ref": "S1"
+    },
+    {
+      "metrique": "Chiffre d'affaires net par client actif, +4% sur un an",
+      "valeur": "505 USD",
+      "citation_exacte": "$505, an increase of 4% year over year",
+      "source_ref": "S1"
+    }
+  ],
+  "niveau_preuve": {
+    "niveau": "A",
+    "justification": "Chiffres de resultats financiers publies (communique de resultats FY2021, source SEC/officielle Stitch Fix). Le role du modele de recommandation couple aux stylistes est decrit dans les documents officiels de l'entreprise et corrobore par la presse economique."
+  },
+  "dates": {
+    "lancement": "2011 (lancement du service), modele data-science etendu ensuite",
+    "derniere_confirmation_activite": "2024 - Stitch Fix reste cote (NASDAQ: SFIX) et opere son modele de selection algorithmique",
+    "verifie_le": "2026-07-11",
+    "revoir_apres": "2027-01-11"
+  },
+  "statut_vivant": {
+    "statut": "confirme",
+    "note": "Stitch Fix est une entreprise cotee dont le modele repose entierement sur la selection algorithmique plus stylistes. Croissance forte jusqu'en 2021, puis contraction et retrait du Royaume-Uni en 2022 ; le pattern de personnalisation reste au coeur du business."
+  },
+  "sources": [
+    {
+      "ref": "S1",
+      "type": "document_officiel_sec",
+      "titre": "Stitch Fix Announces Fourth Quarter and Full Fiscal Year 2021 Financial Results",
+      "url": "https://www.globenewswire.com/news-release/2021/09/21/2300938/0/en/Stitch-Fix-Announces-Fourth-Quarter-and-Full-Fiscal-Year-2021-Financial-Results.html",
+      "date_publication": "2021-09-21",
+      "consulte_le": "2026-07-11",
+      "fiabilite": "T1_primaire"
+    },
+    {
+      "ref": "S2",
+      "type": "document_officiel_sec",
+      "titre": "Stitch Fix, Inc. Form 10-K FY2024 (description du modele data science et personnalisation)",
+      "url": "https://www.sec.gov/Archives/edgar/data/1576942/000157694224000099/sfix-20240803.htm",
+      "date_publication": "2024",
+      "consulte_le": "2026-07-11",
+      "fiabilite": "T1_primaire"
+    },
+    {
+      "ref": "S3",
+      "type": "presse",
+      "titre": "The Stitch Fix Story: How A Unique Prioritization Of Data Science Helped The Company Create Billions In Market Value - Forbes",
+      "url": "https://www.forbes.com/sites/stevenli1/2020/02/17/stitch-fix-data-science/",
+      "date_publication": "2020-02-17",
+      "consulte_le": "2026-07-11",
+      "fiabilite": "T3_presse_etablie"
+    }
+  ],
+  "schema_flow": {
+    "statut": "documente",
+    "noeuds": [
+      {
+        "id": "prof",
+        "role_generique": "data_source",
+        "label": "Profil declare + notes Style Shuffle",
+        "outil_documente": "Questionnaire de style, Style Shuffle"
+      },
+      {
+        "id": "model",
+        "role_generique": "modele_ia",
+        "label": "Modeles de recommandation et de prediction d'achat",
+        "outil_documente": "Algorithmes in-house"
+      },
+      {
+        "id": "stock",
+        "role_generique": "data_source",
+        "label": "Stock disponible"
+      },
+      {
+        "id": "styl",
+        "role_generique": "humain",
+        "label": "Styliste (choix final + mot personnel)"
+      },
+      {
+        "id": "fix",
+        "role_generique": "site_app",
+        "label": "Fix expediee (5 articles)"
+      },
+      {
+        "id": "ret",
+        "role_generique": "data_source",
+        "label": "Garde / renvoi + motif"
+      }
+    ],
+    "liens": [
+      [
+        "prof",
+        "model"
+      ],
+      [
+        "stock",
+        "model"
+      ],
+      [
+        "model",
+        "styl"
+      ],
+      [
+        "styl",
+        "fix"
+      ],
+      [
+        "fix",
+        "ret"
+      ],
+      [
+        "ret",
+        "model",
+        "boucle d'apprentissage"
+      ]
+    ]
+  },
+  "replication": {
+    "statut_epistemique": "infere",
+    "prerequis_data": [
+      "Donnees de preference declarees par le client (tailles, styles, budget)",
+      "Feedback structure d'achat et de retour a chaque cycle",
+      "Catalogue avec attributs produits riches"
+    ],
+    "prerequis_orga": [
+      "Capacite logistique d'envoi et de retour (curation physique ou digitale)",
+      "Une equipe humaine de curation si l'on garde la boucle styliste",
+      "Equipe data science pour les modeles de matching"
+    ],
+    "stack_possible": [
+      "Moteur de reco manage plus regles metier pour une box digitale (edit personnalise)",
+      "Formulaire de preference plus scoring produit pour une premiere version sans logistique lourde"
+    ],
+    "premiere_etape": "Tester un \" edit personnalise \" digital : questionnaire de style, presort algorithmique du catalogue, validation humaine, et mesurer le taux d'achat sur la selection contre une page generique.",
+    "playbook": [
+      {
+        "action": "Cadrer la donnee declarative : questionnaire de preference (tailles, budget, styles) et schema du feedback garde/renvoi",
+        "livrable": "Questionnaire en production et modele de donnees du feedback"
+      },
+      {
+        "action": "Enrichir le catalogue avec les attributs produits (coupe, matiere, style) necessaires au matching",
+        "livrable": "Catalogue attribue exploitable par le modele"
+      },
+      {
+        "action": "Construire le presort : modele de matching client-produit entraine sur les premieres donnees",
+        "livrable": "Scoring du stock par client, evalue offline"
+      },
+      {
+        "action": "Ajouter la boucle humaine : liste presortie et outil de choix final avec message personnel pour les curateurs",
+        "livrable": "Premier edit personnalise digital en test"
+      },
+      {
+        "action": "Comparer le taux d'achat sur selection personnalisee contre une page generique et reinjecter le feedback de chaque cycle",
+        "livrable": "Lecture chiffree et modele reentraine sur le flux garde/renvoi"
+      }
+    ],
+    "equipe": "1-2 data scientists + 1 dev + une equipe de curation humaine (stylistes) dimensionnee au volume + le merchandising pour le stock"
+  },
+  "seo": {
+    "slug": "stitch-fix-styling-algorithmique-2021",
+    "title": "Stitch Fix : curation mode algorithmique plus styliste - plus de 2 Md$ de CA (FY2021)",
+    "meta_description": "Stitch Fix selectionne les vetements de chaque client en couplant modeles de recommandation et stylistes humains. L'exercice 2021 a depasse 2 milliards de dollars de chiffre d'affaires pour 4,17 millions de clients actifs.",
+    "resume_citable": "Stitch Fix combine algorithmes de recommandation et stylistes humains pour composer une boite de vetements par client ; l'exercice fiscal 2021 a franchi 2,1 milliards de dollars de chiffre d'affaires (+22,8 %) avec 4,17 millions de clients actifs.",
+    "faq": [
+      {
+        "q": "Qu'est-ce qui est automatise chez Stitch Fix ?",
+        "a": "Le presort du stock par client via des modeles de recommandation. Le choix final des cinq articles reste fait par un styliste humain."
+      },
+      {
+        "q": "D'ou vient la donnee du modele ?",
+        "a": "En grande partie de donnees declarees par le client (questionnaire, notes Style Shuffle) et du feedback garde/renvoi a chaque boite, pas de donnees scrapees."
+      }
+    ]
+  },
+  "logo_domain": "stitchfix.com",
+  "stack_technique": [
+    {
+      "nom": "Modeles de recommandation in-house",
+      "categorie": "outil",
+      "detail": "prediction, pour chaque client, des articles du stock les plus susceptibles d'etre gardes, sur donnees declarees plutot que devinees",
+      "url": "https://www.stitchfix.com"
+    },
+    {
+      "nom": "Style Shuffle",
+      "categorie": "outil",
+      "detail": "notation de tenues dans l'app qui alimente le modele en signaux de gout supplementaires",
+      "url": "https://www.stitchfix.com"
+    },
+    {
+      "nom": "Interface stylistes",
+      "categorie": "infra",
+      "detail": "liste presortie par l'algorithme dans laquelle le styliste humain choisit les cinq articles et ajoute un mot personnel",
+      "url": "https://www.stitchfix.com"
+    }
+  ]
+}

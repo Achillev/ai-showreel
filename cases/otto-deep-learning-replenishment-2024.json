@@ -1,0 +1,275 @@
+{
+  "id": "otto-deep-learning-replenishment-2024",
+  "type_fiche": "succes",
+  "marque": "Otto",
+  "groupe": "Otto Group",
+  "industrie": "retail_ecom",
+  "marches_deploiement": [
+    "Allemagne"
+  ],
+  "transposable_ue": {
+    "flag": "oui",
+    "note": "Otto est un e-commercant allemand, le systeme tourne deja sous droit europeen. La prevision porte sur des donnees de vente et de logistique, pas sur des donnees personnelles sensibles."
+  },
+  "metier": "supply chain / achats",
+  "marque_linkedin": "https://www.linkedin.com/company/otto-de/",
+  "agences": [
+    {
+      "nom": "Blue Yonder",
+      "role": "Editeur du moteur de prevision (case study OTTO reprise par la presse)",
+      "source_ref": "S3"
+    }
+  ],
+  "axes": {
+    "levier": "activation_conversion",
+    "touchpoints": [
+      "site e-commerce",
+      "reapprovisionnement fournisseurs tiers",
+      "logistique et livraison"
+    ],
+    "etape_parcours": "achat",
+    "famille": "prediction",
+    "pattern": "prevision de demande deep learning declenchant des commandes fournisseurs autonomes",
+    "type_ia": [
+      "deep learning",
+      "prevision de demande a court terme"
+    ],
+    "plateforme_stack": [
+      "Blue Yonder",
+      "systemes internes Otto"
+    ],
+    "objectif_metrique": [
+      "precision de prevision de vente",
+      "niveau de stock",
+      "delai de livraison"
+    ]
+  },
+  "implementation": "hybride",
+  "stack_technique": [
+    {
+      "nom": "Blue Yonder",
+      "categorie": "plateforme",
+      "detail": "Editeur du moteur de prevision de demande utilise par Otto, documente par la case study reprise par la presse et l'analyse HBS.",
+      "url": "https://blueyonder.com"
+    },
+    {
+      "nom": "Algorithme deep learning (derive de la physique des particules)",
+      "categorie": "llm",
+      "detail": "Modele de prevision a court terme entraine sur des centaines de variables (ventes, trafic et recherches site, meteo, calendrier, concurrence) ; 90% de precision sur les ventes a 30 jours.",
+      "url": "https://blueyonder.com"
+    },
+    {
+      "nom": "Systemes d'achat et de reapprovisionnement Otto",
+      "categorie": "outil",
+      "detail": "Systemes internes qui declenchent les commandes fournisseurs autonomes quand la prevision depasse le seuil de confiance, et routent les cas incertains vers un acheteur.",
+      "url": "https://www.otto.de"
+    }
+  ],
+  "objectif_business": "Predire ce que les clients vont commander avant qu'ils ne le fassent pour commander la marchandise en amont, reduire le surstock et livrer plus vite depuis un stock deja au bon endroit.",
+  "description": "Otto est l'un des plus gros e-commercants d'Allemagne. Une grande partie de son catalogue provient de marques tierces, avec des delais qui rendaient la disponibilite difficile a tenir. Otto a mis en production un moteur de prevision (algorithme de deep learning derive d'outils de physique des particules) qui predit la demande a court terme a partir de centaines de variables: historique de vente, trafic et recherches sur le site, meteo, jour de la semaine, jours feries, donnees concurrentielles. Quand la prevision est assez sure, le systeme commande de lui-meme la marchandise aupres des marques, sans validation humaine, pour l'avoir en stock avant la commande client. Cote otto.de, l'IA produit 7,5 milliards de previsions individuelles par mois pour piloter arrivees en entrepot, volumes de vente et retours.",
+  "resultats": [
+    {
+      "metrique": "Previsions individuelles produites chaque mois",
+      "valeur": "7,5 milliards",
+      "citation_exacte": "the AI makes 7.5 billion individual forecasts",
+      "source_ref": "S2"
+    },
+    {
+      "metrique": "Precision de prevision sur les ventes a 30 jours",
+      "valeur": "90%",
+      "citation_exacte": "predict with 90% accuracy on any given day what items will be sold",
+      "source_ref": "S3"
+    },
+    {
+      "metrique": "Reduction des niveaux de stock",
+      "valeur": "20%",
+      "citation_exacte": "reduce inventory levels by 20%",
+      "source_ref": "S3"
+    }
+  ],
+  "niveau_preuve": {
+    "niveau": "C",
+    "justification": "The Economist (presse majeure) documente nommement le cas Otto et ses chiffres, corrobore par le site officiel d'Otto (7,5 milliards de previsions/mois). Le chiffre de precision provient a l'origine d'une case study de l'editeur Blue Yonder, d'ou pas de niveau A."
+  },
+  "dates": {
+    "lancement": "systeme en production autour de 2016-2017 (documente par The Economist en avril 2017)",
+    "derniere_confirmation_activite": "page technologie officielle d'Otto a jour citant 7,5 milliards de previsions par mois",
+    "verifie_le": "2026-07-11",
+    "revoir_apres": "2027-01-11"
+  },
+  "statut_vivant": {
+    "statut": "confirme",
+    "note": "Otto decrit toujours sur son site l'IA comme integree a tous ses processus, avec un volume de previsions mensuel chiffre. Systeme continu, pas un pilote."
+  },
+  "sources": [
+    {
+      "ref": "S1",
+      "type": "presse",
+      "fiabilite": "T3_presse_etablie",
+      "titre": "How Germany's Otto uses artificial intelligence",
+      "url": "https://www.economist.com/business/2017/04/12/how-germanys-otto-uses-artificial-intelligence",
+      "date_publication": "2017-04-12",
+      "consulte_le": "2026-07-11"
+    },
+    {
+      "ref": "S2",
+      "type": "blog_officiel",
+      "fiabilite": "T1_primaire",
+      "titre": "Artificial intelligence at OTTO - already part of all business processes today",
+      "url": "https://www.otto.de/unternehmen/en/technologie/artificial-intelligence-at-otto-already-part-of-all-business-processes-today",
+      "date_publication": "2023",
+      "consulte_le": "2026-07-11"
+    },
+    {
+      "ref": "S3",
+      "type": "analyse_academique",
+      "fiabilite": "T4_secondaire",
+      "titre": "Autonomous Stock Replenishment at Online Retailer OTTO (Harvard TOM / HBS AI Institute)",
+      "url": "https://aiinstitute.hbs.edu/platform-rctom/submission/autonomous-stock-replenishment-at-online-retailer-otto/",
+      "date_publication": "2018",
+      "consulte_le": "2026-07-11"
+    }
+  ],
+  "fonctionnement_operationnel": {
+    "cadence": "Prevision continue a tres grande echelle (7,5 milliards de previsions par mois), commandes fournisseurs declenchees automatiquement quand la confiance est suffisante.",
+    "opere_par": "Equipe data science et achats d'Otto, avec le moteur de prevision de l'editeur en coeur de dispositif.",
+    "signal_pilote": "La demande predite a court terme par produit. La commande n'est automatisee que si la prevision est assez sure; sous ce seuil, elle repasse par un acheteur humain.",
+    "etapes": [
+      {
+        "etape": "Collecte des signaux",
+        "detail": "Historique de vente, recherches et trafic sur le site, meteo, jour de la semaine, jours feries et donnees concurrentielles sont agreges.",
+        "acteur": "systemes Otto / equipe data"
+      },
+      {
+        "etape": "Prevision de demande",
+        "detail": "Le modele deep learning predit ce qui sera vendu a court terme, avec une precision de 90% sur les ventes a 30 jours.",
+        "acteur": "modele IA"
+      },
+      {
+        "etape": "Commande autonome",
+        "detail": "Au-dela d'un seuil de confiance, le systeme commande lui-meme la marchandise aupres des marques tierces sans validation humaine.",
+        "acteur": "modele IA / systeme d'achat"
+      },
+      {
+        "etape": "Controle humain sous seuil",
+        "detail": "Les cas incertains restent traites par un acheteur, qui garde la main sur les references a demande instable.",
+        "acteur": "acheteur Otto"
+      }
+    ]
+  },
+  "schema_flow": {
+    "statut": "documente",
+    "noeuds": [
+      {
+        "id": "n1",
+        "role_generique": "data_source",
+        "label": "Ventes, trafic, recherches, meteo, jours feries, concurrence"
+      },
+      {
+        "id": "n2",
+        "role_generique": "modele_ia",
+        "label": "Moteur de prevision deep learning",
+        "outil_documente": "Blue Yonder"
+      },
+      {
+        "id": "n3",
+        "role_generique": "site_app",
+        "label": "Systeme d'achat et de reapprovisionnement Otto"
+      },
+      {
+        "id": "n4",
+        "role_generique": "humain",
+        "label": "Acheteur (cas sous seuil de confiance)"
+      },
+      {
+        "id": "n5",
+        "role_generique": "data_source",
+        "label": "Marques tierces / entrepot"
+      }
+    ],
+    "liens": [
+      [
+        "n1",
+        "n2"
+      ],
+      [
+        "n2",
+        "n3"
+      ],
+      [
+        "n3",
+        "n5",
+        "commande autonome au-dela du seuil"
+      ],
+      [
+        "n2",
+        "n4",
+        "cas incertains"
+      ],
+      [
+        "n5",
+        "n1",
+        "ventes reelles reinjectees"
+      ]
+    ]
+  },
+  "replication": {
+    "statut_epistemique": "infere",
+    "playbook": [
+      {
+        "action": "Agreger l'historique de vente granulaire, les signaux du site (trafic, recherches) et les donnees externes (meteo, calendrier), plus les delais fournisseurs.",
+        "livrable": "Dataset de features consolide et documente"
+      },
+      {
+        "action": "Entrainer ou parametrer le modele de prevision sur une categorie et le backtester contre la methode actuelle des acheteurs.",
+        "livrable": "Precision mesuree vs methode existante, par horizon de prevision"
+      },
+      {
+        "action": "Brancher les previsions sur le processus d'achat en mode recommandation : l'acheteur valide chaque commande proposee.",
+        "livrable": "Recommandations de commande integrees a l'outil acheteur"
+      },
+      {
+        "action": "Definir le seuil de confiance avec les achats et la direction, puis automatiser les commandes au-dessus du seuil sur un perimetre restreint.",
+        "livrable": "Premieres commandes autonomes en production"
+      },
+      {
+        "action": "Elargir le perimetre automatise et suivre stock, disponibilite et delais de livraison.",
+        "livrable": "Bilan stock et regles de gouvernance des commandes autonomes"
+      }
+    ],
+    "equipe": "2-3 data scientists/ML engineers + 1 data engineer + les acheteurs, qui gardent la main sur les references sous le seuil de confiance",
+    "prerequis_data": [
+      "historique de vente granulaire",
+      "signaux comportementaux du site (trafic, recherches)",
+      "donnees externes (meteo, calendrier)",
+      "delais et fiabilite fournisseurs"
+    ],
+    "prerequis_orga": [
+      "accord pour laisser une commande partir sans validation humaine au-dela d'un seuil",
+      "relations fournisseurs compatibles avec des commandes anticipees"
+    ],
+    "stack_possible": [
+      "Blue Yonder",
+      "forecasting maison (deep learning) + regles de seuil",
+      "RELEX, o9"
+    ],
+    "premiere_etape": "Mesurer la precision d'une prevision a court terme sur une categorie, definir un seuil de confiance au-dela duquel la commande peut partir sans validation, puis l'ouvrir progressivement."
+  },
+  "seo": {
+    "slug": "otto-deep-learning-replenishment-2024",
+    "title": "Otto : commandes autonomes pilotees par IA - 90% de precision et -20% de stock (2024)",
+    "meta_description": "Otto predit la demande avec un modele deep learning et commande de lui-meme la marchandise: 90% de precision sur les ventes a 30 jours, 20% de stock en moins, 7,5 milliards de previsions par mois.",
+    "resume_citable": "Otto predit la demande a court terme avec un modele deep learning qui atteint 90% de precision sur les ventes a 30 jours, reduit les stocks de 20% et commande automatiquement la marchandise aupres des marques tierces, en produisant 7,5 milliards de previsions individuelles par mois.",
+    "faq": [
+      {
+        "q": "Comment Otto utilise-t-il l'IA pour ses stocks ?",
+        "a": "Un modele de deep learning predit la demande a court terme a partir de centaines de variables; au-dela d'un seuil de confiance, le systeme commande lui-meme la marchandise aupres des marques tierces sans validation humaine."
+      },
+      {
+        "q": "Quels resultats chiffres ?",
+        "a": "90% de precision sur les ventes a 30 jours, une reduction des niveaux de stock de 20%, et 7,5 milliards de previsions individuelles produites chaque mois cote otto.de."
+      }
+    ]
+  },
+  "logo_domain": "otto.de"
+}

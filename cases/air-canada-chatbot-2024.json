@@ -1,0 +1,196 @@
+{
+  "type_fiche": "echec_retrait",
+  "id": "air-canada-chatbot-2024",
+  "marque": "Air Canada",
+  "industrie": "voyage_hospitality",
+  "marches_deploiement": [
+    "Canada"
+  ],
+  "transposable_ue": {
+    "flag": "oui",
+    "note": "La leçon de responsabilité est directement transposable en UE : un chatbot orienté client engage la marque comme une page de son site. L'AI Act renforce même les obligations de transparence sur les systèmes conversationnels."
+  },
+  "metier": "Service client / support voyageurs",
+  "axes": {
+    "levier": "activation_conversion",
+    "touchpoints": [
+      "site web (chatbot intégré)"
+    ],
+    "etape_parcours": "pré-achat / recherche d'information tarifaire",
+    "famille": "conversation",
+    "pattern": "Chatbot de support self-service répondant aux questions sur les politiques tarifaires, pour dévier les appels du call center",
+    "type_ia": [
+      "NLP conversationnel",
+      "chatbot assisté par IA"
+    ],
+    "plateforme_stack": [
+      "chatbot propriétaire intégré à aircanada.com (stack non publiée)"
+    ],
+    "objectif_metrique": [
+      "taux de déviation des appels",
+      "coût par contact"
+    ]
+  },
+  "implementation": "custom",
+  "objectif_business": "Réduire la charge du centre d'appels et le coût par contact en automatisant les réponses aux questions fréquentes des voyageurs.",
+  "description": "Air Canada a déployé un chatbot sur son site public pour répondre en langage naturel aux questions clients, notamment sur les politiques tarifaires. Le 11 novembre 2022, un client cherchant à réserver un vol de dernière minute après un décès a interrogé le chatbot sur les tarifs deuil. Le chatbot a affirmé qu'il pouvait payer plein tarif puis demander un remboursement partiel sous 90 jours après le vol - une politique inventée, contredite par la page officielle du même site. Le client a payé, demandé le remboursement, et Air Canada a refusé. Après des mois d'allers-retours, il a saisi le Civil Resolution Tribunal de Colombie-Britannique. Le 14 février 2024, le tribunal a condamné Air Canada pour negligent misrepresentation, rejetant explicitement l'argument selon lequel le chatbot serait une entité légale distincte. C'est devenu le précédent juridique de référence mondial sur la responsabilité des marques pour les propos de leurs chatbots.",
+  "post_mortem": {
+    "ce_qui_s_est_passe": "11 nov. 2022 : le chatbot indique à J. Moffatt qu'un remboursement « tarif deuil » peut être demandé jusqu'à 90 jours après le vol. Nov. 2022 - fév. 2023 : Air Canada refuse le remboursement (la vraie politique exclut les demandes après voyage) et propose un avoir de 200 $. Le client saisit le BC Civil Resolution Tribunal. 14 fév. 2024 : décision Moffatt v. Air Canada, 2024 BCCRT 149 - le tribunal juge qu'Air Canada « n'a pas pris de précautions raisonnables pour s'assurer que son chatbot était exact » et la condamne à 650,88 CA$ + 36,14 CA$ d'intérêts + 125 CA$ de frais. La presse constate que le chatbot n'était plus accessible au moment de la médiatisation.",
+    "raison_echec": "Le chatbot a fourni une information fausse contredisant la politique officielle publiée sur le même site. Le tribunal a jugé Air Canada responsable de « toutes les informations sur son site web, qu'elles proviennent d'une page statique ou d'un chatbot », et a rejeté la défense présentant le chatbot comme une entité distincte, la qualifiant de « remarkable submission ».",
+    "date_retrait": "Février 2024 (chatbot constaté hors ligne après le jugement ; aucune date de retrait officiellement communiquée)",
+    "cout_estime": "Direct : 812,02 CA$. Indirect : coût réputationnel mondial (CBC, BBC, Wired, Forbes) et création d'un précédent juridique cité internationalement - le vrai coût est jurisprudentiel.",
+    "signaux_avant_coureurs": "La contradiction entre le chatbot et la page officielle était détectable par un simple test QA croisant les réponses du bot avec les politiques publiées - les sujets à enjeu financier auraient dû être un jeu de test prioritaire. L'absence de disclaimer et d'escalade humaine sur les questions tarifaires sensibles était un signal. Enfin, le traitement du litige (refus, avoir de 200 $, silence) a transformé un incident à 650 $ en précédent mondial.",
+    "lecons_avec_recul": "(1) Juridiquement, votre chatbot EST votre site : tout ce qu'il dit vous engage. (2) Grounding obligatoire : un bot client doit répondre depuis les documents de politique versionnés (RAG contraint + citations), jamais en génération libre sur des sujets à enjeu financier. (3) Prévoir un circuit « make-good » : honorer les erreurs du bot sous un seuil coûte moins cher que le contentieux. (4) QA adversarial sur les politiques de remboursement avant et pendant la production.",
+    "le_pattern_reste_il_valide": "Oui. Le chatbot de service client reste massivement valide et déployé (Klarna revendique l'équivalent de 700 agents en 2024). L'échec condamne une exécution : génération non groundée sur des politiques contractuelles, sans garde-fous ni stratégie de remédiation. Il fixe le cadre de responsabilité dans lequel le pattern doit désormais opérer."
+  },
+  "resultats": [
+    {
+      "metrique": "Dommages accordés, plus 36,14 d'intérêts et 125 de frais",
+      "valeur": "650,88 CA$",
+      "citation_exacte": "$650.88 in damages for negligent misrepresentation",
+      "source_ref": "S2"
+    },
+    {
+      "metrique": "Attribution de responsabilité",
+      "valeur": "Air Canada responsable des propos de son chatbot",
+      "citation_exacte": "responsible for all the information on its website",
+      "source_ref": "S1"
+    },
+    {
+      "metrique": "Défense rejetée",
+      "valeur": "Argument du chatbot comme entité autonome rejeté",
+      "citation_exacte": "a separate legal entity that is responsible for its own actions",
+      "source_ref": "S3"
+    }
+  ],
+  "niveau_preuve": {
+    "niveau": "A",
+    "justification": "Décision de justice publiée et consultable (Moffatt v. Air Canada, 2024 BCCRT 149, CanLII) : faits, chronologie, montants et motifs établis par un tribunal, plus analyses de cabinets d'avocats et presse majeure."
+  },
+  "dates": {
+    "lancement": "2022",
+    "date_retrait": "2024-02",
+    "derniere_confirmation_activite": "2024-02 (hors ligne)",
+    "verifie_le": "2026-07-11",
+    "revoir_apres": "2027-07-11"
+  },
+  "statut_vivant": {
+    "statut": "incertain",
+    "note": "Chatbot constaté hors ligne après le jugement de février 2024 ; Air Canada n'a pas communiqué sur un remplacement."
+  },
+  "sources": [
+    {
+      "ref": "S1",
+      "type": "decision_de_justice",
+      "titre": "Moffatt v. Air Canada, 2024 BCCRT 149 (CanLII)",
+      "url": "https://www.canlii.org/en/bc/bccrt/doc/2024/2024bccrt149/2024bccrt149.html",
+      "date_publication": "2024-02-14",
+      "consulte_le": "2026-07-11",
+      "fiabilite": "T1_primaire"
+    },
+    {
+      "ref": "S2",
+      "type": "analyse_juridique",
+      "titre": "Moffatt v. Air Canada: A Misrepresentation by an AI Chatbot - McCarthy Tétrault",
+      "url": "https://www.mccarthy.ca/en/insights/blogs/techlex/moffatt-v-air-canada-misrepresentation-ai-chatbot",
+      "date_publication": "2024-02",
+      "consulte_le": "2026-07-11",
+      "fiabilite": "T3_presse_etablie"
+    },
+    {
+      "ref": "S3",
+      "type": "analyse_juridique",
+      "titre": "BC Tribunal Confirms Companies Remain Liable for Information Provided by AI Chatbot - American Bar Association",
+      "url": "https://www.americanbar.org/groups/business_law/resources/business-law-today/2024-february/bc-tribunal-confirms-companies-remain-liable-information-provided-ai-chatbot/",
+      "date_publication": "2024-02",
+      "consulte_le": "2026-07-11",
+      "fiabilite": "T3_presse_etablie"
+    },
+    {
+      "ref": "S4",
+      "type": "analyse_juridique",
+      "titre": "Airline ordered to compensate a B.C. man because its chatbot provided inaccurate information - Dentons Data",
+      "url": "https://www.dentonsdata.com/airline-ordered-to-compensate-a-b-c-man-because-its-chatbot-provided-inaccurate-information/",
+      "date_publication": "2024-02",
+      "consulte_le": "2026-07-11",
+      "fiabilite": "T3_presse_etablie"
+    }
+  ],
+  "schema_flow": {
+    "statut": "documente",
+    "noeuds": [
+      {
+        "id": "q",
+        "role_generique": "humain",
+        "label": "Question client (tarif deuil)"
+      },
+      {
+        "id": "bot",
+        "role_generique": "modele_ia",
+        "label": "Chatbot en génération libre (non groundé)"
+      },
+      {
+        "id": "policy",
+        "role_generique": "data_source",
+        "label": "Politique officielle (page statique, ignorée)"
+      },
+      {
+        "id": "ans",
+        "role_generique": "site_app",
+        "label": "Réponse inventée -> litige -> condamnation"
+      }
+    ],
+    "liens": [
+      [
+        "q",
+        "bot"
+      ],
+      [
+        "bot",
+        "ans"
+      ],
+      [
+        "policy",
+        "bot",
+        "aurait dû grounder"
+      ]
+    ]
+  },
+  "stack_technique": [
+    {
+      "nom": "Chatbot propriétaire Air Canada",
+      "categorie": "outil",
+      "detail": "Chatbot NLP intégré à aircanada.com, en génération libre sur les politiques tarifaires ; la stack n'a pas été publiée.",
+      "url": "https://www.aircanada.com"
+    },
+    {
+      "nom": "NLP conversationnel",
+      "categorie": "llm",
+      "detail": "Technologie conversationnelle assistée par IA ; ni le modèle ni l'éditeur n'ont été rendus publics lors du litige.",
+      "url": "https://www.aircanada.com"
+    },
+    {
+      "nom": "Site aircanada.com (pages de politiques)",
+      "categorie": "infra",
+      "detail": "Le même site hébergeait la politique tarifaire officielle, que le chatbot ne consultait pas (absence de grounding), source de la contradiction jugée.",
+      "url": "https://www.aircanada.com"
+    }
+  ],
+  "seo": {
+    "slug": "air-canada-chatbot-condamnation-2024",
+    "title": "Air Canada : le chatbot qui a inventé une politique de remboursement (condamnation 2024)",
+    "meta_description": "Le chatbot d'Air Canada a halluciné une politique de tarif deuil ; un tribunal a condamné la compagnie en 2024. Le précédent juridique de référence sur la responsabilité des chatbots.",
+    "resume_citable": "En février 2024, un tribunal canadien a condamné Air Canada pour une information fausse donnée par son chatbot, établissant qu'une marque est responsable des propos de son chatbot au même titre que d'une page de son site.",
+    "faq": [
+      {
+        "q": "Le pattern chatbot est-il condamné ?",
+        "a": "Non. Ce qui est condamné, c'est la génération libre non groundée sur des politiques contractuelles, sans garde-fous. Le chatbot de service client reste largement déployé."
+      },
+      {
+        "q": "Quelle est la leçon transposable en Europe ?",
+        "a": "Un chatbot engage la marque comme une page de son site ; l'AI Act renforce les obligations de transparence sur les systèmes conversationnels."
+      }
+    ]
+  },
+  "logo_domain": "aircanada.com"
+}

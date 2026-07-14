@@ -1,0 +1,285 @@
+{
+  "id": "natwest-cora-genai-2024",
+  "type_fiche": "succes",
+  "marque": "NatWest",
+  "groupe": "NatWest Group",
+  "industrie": "banque_assurance_fintech",
+  "marches_deploiement": [
+    "Royaume-Uni"
+  ],
+  "transposable_ue": {
+    "flag": "oui",
+    "note": "Deploye au Royaume-Uni, sous UK GDPR tres proche du RGPD. Cora traite des questions de gestion financiere via l'app, le site et les reseaux sociaux ; la bascule vers un humain et la transparence IA restent a formaliser sous l'AI Act pour un deploiement UE, mais le socle data et conformite est deja aligne."
+  },
+  "metier": "service client",
+  "intervenants": [
+    {
+      "nom": "Wendy Redshaw",
+      "role": "Chief Digital Information Officer, NatWest Group Retail Bank",
+      "source_ref": "S1"
+    },
+    {
+      "nom": "David Lindberg",
+      "role": "CEO of Retail Banking, NatWest",
+      "source_ref": "S1"
+    }
+  ],
+  "agences": [
+    {
+      "nom": "IBM",
+      "role": "Partenaire technologique de Cora+ (IBM watsonx Assistant, IBM Cloud, Client Engineering)",
+      "source_ref": "S1"
+    }
+  ],
+  "axes": {
+    "levier": "retention",
+    "touchpoints": [
+      "site NatWest",
+      "app mobile",
+      "reseaux sociaux",
+      "assistant digital Cora"
+    ],
+    "etape_parcours": "post-achat",
+    "famille": "conversation",
+    "pattern": "assistant digital genAI (Cora+)",
+    "type_ia": [
+      "LLM generatif",
+      "assistant conversationnel"
+    ],
+    "plateforme_stack": [
+      "IBM watsonx Assistant",
+      "IBM Cloud"
+    ],
+    "objectif_metrique": [
+      "volume de conversations traitees",
+      "part sans intervention humaine",
+      "satisfaction client"
+    ]
+  },
+  "implementation": "plateforme",
+  "stack_technique": [
+    {
+      "nom": "IBM watsonx Assistant",
+      "categorie": "plateforme",
+      "detail": "Socle conversationnel de Cora+ : comprehension des questions complexes et reponses en langage naturel.",
+      "url": "https://www.ibm.com/products/watsonx-assistant"
+    },
+    {
+      "nom": "LLM generatif watsonx",
+      "categorie": "llm",
+      "detail": "Couche generative pour les reponses et les resumes de conversation transmis aux agents ; le modele exact n'est pas nomme dans les sources.",
+      "url": "https://www.ibm.com/watsonx"
+    },
+    {
+      "nom": "IBM Cloud",
+      "categorie": "infra",
+      "detail": "Hebergement de la solution.",
+      "url": "https://www.ibm.com/cloud"
+    },
+    {
+      "nom": "IBM Client Engineering",
+      "categorie": "integrateur",
+      "detail": "Accompagnement du pilote de douze semaines puis du lancement de Cora+.",
+      "url": "https://www.ibm.com"
+    }
+  ],
+  "objectif_business": "Faire absorber par l'assistant digital le gros des questions de gestion financiere du quotidien, puis monter en gamme avec la GenAI (Cora+) pour tenir des echanges plus complexes et plus humains sans renvoyer systematiquement vers un conseiller.",
+  "points_cles": ["Assistant digital Cora dote d'une surcouche genAI (Cora+) pour les questions financieres complexes.", "Construit avec IBM watsonx Assistant sur IBM Cloud, apres un pilote de douze semaines.", "Volume passe de plus de 5 millions de requetes en 2019 a 10,8 millions en 2023.", "Preuve B, statut confirme."],
+  "description": "Cora est l'assistant digital de NatWest, lance en 2017, accessible sur le site, l'app et les reseaux sociaux. Son volume a grimpe de plus de 5 millions de requetes en 2019 a 10,8 millions en 2023. En juin 2024, NatWest a lance Cora+, une surcouche d'IA generative construite avec IBM (watsonx Assistant sur IBM Cloud) apres un pilote de douze semaines : reponses en langage naturel, comprehension de questions complexes (credit, hypotheque), assistance proactive fondee sur l'historique et resumes de conversation pour le passage a un agent.",
+  "resultats": [
+    {
+      "metrique": "Requetes clients traitees par Cora (2023)",
+      "valeur": "10,8 millions",
+      "citation_exacte": "Cora handled 10.8 million queries",
+      "source_ref": "S1"
+    },
+    {
+      "metrique": "Requetes clients traitees par Cora (2019)",
+      "valeur": "plus de 5 millions",
+      "citation_exacte": "over 5 million queries",
+      "source_ref": "S1"
+    }
+  ],
+  "niveau_preuve": {
+    "niveau": "B",
+    "justification": "Volumes publies par NatWest dans ses communications officielles (T1) et lancement de Cora+ documente avec le partenaire IBM (T2). Chiffres de volume concordants sur plusieurs annees, mais operationnels et non audites en resultats financiers, donc B."
+  },
+  "dates": {
+    "lancement": "2017 (Cora), 2024-06 (Cora+ GenAI)",
+    "derniere_confirmation_activite": "2024-08",
+    "verifie_le": "2026-07-11",
+    "revoir_apres": "2027-01-11"
+  },
+  "statut_vivant": {
+    "statut": "confirme",
+    "note": "Cora en production depuis 2017, volumes en hausse continue, surcouche GenAI Cora+ lancee en juin 2024 apres pilote. NatWest a par ailleurs signe en 2025 un accord IA pluriannuel avec AWS et Accenture, signe d'investissement soutenu."
+  },
+  "sources": [
+    {
+      "ref": "S1",
+      "type": "blog_officiel",
+      "fiabilite": "T1_primaire",
+      "titre": "NatWest launches Cora+, the latest generative AI upgrade to the bank's digital assistant",
+      "url": "https://www.natwestgroup.com/news-and-insights/news-room/press-releases/data-and-technology/2024/jun/natwest-launches-cora-plus-the-latest-generative-ai-upgrade-to-t.html",
+      "date_publication": "2024-06-10",
+      "consulte_le": "2026-07-11"
+    },
+    {
+      "ref": "S2",
+      "type": "blog_officiel",
+      "fiabilite": "T1_primaire",
+      "titre": "We're giving our digital assistant Cora, a generative AI upgrade",
+      "url": "https://www.natwestgroup.com/news-and-insights/latest-stories/ai-and-data/2024/aug/we-are-giving-our-digital-assistant-cora-a-generative-ai-upgrade.html",
+      "date_publication": "2024-08-01",
+      "consulte_le": "2026-07-11"
+    },
+    {
+      "ref": "S3",
+      "type": "presse",
+      "fiabilite": "T4_secondaire",
+      "titre": "NatWest engages IBM to revamp chatbot service with generative AI",
+      "url": "https://www.fintechfutures.com/ai-in-fintech/natwest-engages-ibm-to-revamp-chatbot-service-with-generative-ai",
+      "date_publication": "2024-06",
+      "consulte_le": "2026-07-11"
+    }
+  ],
+  "fonctionnement_operationnel": {
+    "cadence": "Temps reel, 24/7, sur site, app et reseaux sociaux",
+    "opere_par": "Equipe digital et data de NatWest Retail, avec IBM sur la couche watsonx",
+    "signal_pilote": "Le volume de conversations resolues sans conseiller et la satisfaction. Si la part traitee sans humain recule, le cout de service remonte cote centre de relation.",
+    "etapes": [
+      {
+        "etape": "Question client",
+        "detail": "Le client interroge Cora sur le site, l'app ou les reseaux sociaux (solde, paiement, gestion, produit).",
+        "acteur": "client"
+      },
+      {
+        "etape": "Reponse conversationnelle",
+        "detail": "Cora+ repond en langage naturel, y compris sur des sujets plus complexes comme le credit ou l'hypotheque, en s'appuyant sur l'historique du client.",
+        "acteur": "IA"
+      },
+      {
+        "etape": "Passage a un conseiller",
+        "detail": "Si besoin, Cora+ transmet un resume de la conversation a un agent humain pour continuer sans repartir de zero.",
+        "acteur": "IA / service client"
+      },
+      {
+        "etape": "Suivi et entrainement",
+        "detail": "L'equipe suit volumes, satisfaction et part sans humain, et enrichit la base de connaissance.",
+        "acteur": "equipe data"
+      }
+    ]
+  },
+  "schema_flow": {
+    "statut": "documente",
+    "noeuds": [
+      {
+        "id": "client",
+        "role_generique": "canal_conversationnel",
+        "label": "Client (site, app, reseaux sociaux)"
+      },
+      {
+        "id": "cora",
+        "role_generique": "modele_ia",
+        "label": "Cora+ assistant digital",
+        "outil_documente": "IBM watsonx Assistant sur IBM Cloud"
+      },
+      {
+        "id": "connaissance",
+        "role_generique": "data_source",
+        "label": "Base de connaissance bancaire + historique client"
+      },
+      {
+        "id": "agent",
+        "role_generique": "humain",
+        "label": "Conseiller humain"
+      }
+    ],
+    "liens": [
+      [
+        "client",
+        "cora"
+      ],
+      [
+        "cora",
+        "connaissance"
+      ],
+      [
+        "connaissance",
+        "cora"
+      ],
+      [
+        "cora",
+        "client"
+      ],
+      [
+        "cora",
+        "agent",
+        "handoff avec resume"
+      ],
+      [
+        "agent",
+        "client"
+      ]
+    ]
+  },
+  "replication": {
+    "statut_epistemique": "infere",
+    "playbook": [
+      {
+        "action": "Choisir un perimetre pilote sur l'assistant existant (sujets a fort volume) et definir les regles de handoff avec resume vers conseiller.",
+        "livrable": "Perimetre pilote et criteres de succes valides."
+      },
+      {
+        "action": "Construire la surcouche GenAI sur la base de connaissance : reponses en langage naturel, resumes de conversation, acces a l'historique client.",
+        "livrable": "Assistant GenAI fonctionnel en pre-production."
+      },
+      {
+        "action": "Passer les tests de conformite bancaire, de ton et d'escalade, avec jeux de questions adverses.",
+        "livrable": "Dossier de validation risque et conformite."
+      },
+      {
+        "action": "Lancer le pilote en production sur une fraction du trafic et mesurer resolution sans humain et satisfaction.",
+        "livrable": "Readout du pilote de douze semaines."
+      },
+      {
+        "action": "Elargir les sujets couverts et generaliser au trafic complet, en enrichissant la base de connaissance en continu.",
+        "livrable": "Assistant GenAI generalise avec tableau de bord volumes/satisfaction."
+      }
+    ],
+    "equipe": "1 PM conversationnel + 2-3 devs d'integration + 1 responsable base de connaissance + la conformite ; partenaire type IBM en appui.",
+    "prerequis_data": [
+      "Base de connaissance bancaire structuree et a jour",
+      "Historique de conversations pour l'entrainement",
+      "Acces a l'historique client pour l'assistance proactive"
+    ],
+    "prerequis_orga": [
+      "Choix d'une plateforme d'assistant (watsonx ou equivalent)",
+      "Regle de handoff avec resume vers conseiller",
+      "Gouvernance de la base de connaissance"
+    ],
+    "stack_possible": [
+      "IBM watsonx Assistant",
+      "Alternative : plateforme d'assistant + LLM generatif",
+      "Integration multi-canal (web, app, social)"
+    ],
+    "premiere_etape": "Partir d'un assistant deja en place et lui ajouter une surcouche GenAI sur un perimetre pilote, avec resume automatique pour le handoff."
+  },
+  "seo": {
+    "slug": "natwest-cora-genai-2024",
+    "title": "NatWest : assistant digital Cora+ (IBM watsonx) - 10,8 M de requetes en 2023 (2024)",
+    "meta_description": "Cora, l'assistant de NatWest, est passe de 5 M de requetes en 2019 a 10,8 M en 2023 ; Cora+ ajoute la GenAI (IBM watsonx) en juin 2024.",
+    "resume_citable": "Cora, l'assistant digital de NatWest lance en 2017, est passe de plus de 5 millions de requetes en 2019 a 10,8 millions en 2023 ; en juin 2024, NatWest lui a ajoute une surcouche d'IA generative, Cora+, construite avec IBM watsonx.",
+    "faq": [
+      {
+        "q": "Sur quelle technologie repose Cora+ ?",
+        "a": "Cora+ est construit avec IBM watsonx Assistant sur IBM Cloud, apres un pilote de douze semaines lance en juin 2024."
+      },
+      {
+        "q": "Quel volume Cora traite-t-il ?",
+        "a": "10,8 millions de requetes clients en 2023, contre plus de 5 millions en 2019."
+      }
+    ]
+  },
+  "logo_domain": "natwest.com"
+}

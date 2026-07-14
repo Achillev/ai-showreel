@@ -1,0 +1,287 @@
+{
+  "id": "lowes-mylow-openai-2025",
+  "type_fiche": "succes",
+  "marque": "Lowe's",
+  "industrie": "retail_ecom",
+  "marches_deploiement": [
+    "US"
+  ],
+  "transposable_ue": {
+    "flag": "oui_avec_adaptations",
+    "note": "Un conseiller d'achat conversationnel et un assistant vendeur en magasin sont transposables a tout distributeur de bricolage. En UE, l'AI Act impose de signaler au client qu'il parle a une IA, et le RGPD encadre l'usage de l'historique d'achat et du profil de fidelite pour personnaliser les reponses. La version magasin, qui tourne sur les terminaux des vendeurs, reste applicable sans donnee client sensible."
+  },
+  "metier": "e-commerce, service client, formation reseau magasin",
+  "marque_linkedin": "https://www.linkedin.com/company/lowe's-home-improvement/",
+  "intervenants": [
+    {
+      "nom": "Chandhu Nair",
+      "role": "Senior Vice President, Stores, Data, Artificial Intelligence and Innovation",
+      "source_ref": "S1"
+    },
+    {
+      "nom": "Seemantini Godbole",
+      "role": "Chief Digital and Information Officer",
+      "source_ref": "S2"
+    }
+  ],
+  "agences": [
+    {
+      "nom": "OpenAI",
+      "role": "Partenaire de developpement, modele generatif sous-jacent de Mylow et Mylow Companion",
+      "source_ref": "S2"
+    }
+  ],
+  "axes": {
+    "levier": "activation_conversion",
+    "touchpoints": [
+      "lowes.com",
+      "mobile web",
+      "terminaux vendeurs en magasin"
+    ],
+    "etape_parcours": "considération",
+    "famille": "conversation",
+    "pattern": "conseiller d'achat conversationnel genAI plus copilote vendeur",
+    "type_ia": [
+      "LLM generatif",
+      "RAG",
+      "voice-to-text"
+    ],
+    "plateforme_stack": [
+      "OpenAI",
+      "custom/in-house Lowe's"
+    ],
+    "objectif_metrique": [
+      "questions traitees",
+      "satisfaction client",
+      "montee en competence des vendeurs",
+      "conversion projet"
+    ]
+  },
+  "implementation": "hybride",
+  "objectif_business": "Donner a chaque client un avis d'expert projet sur lowes.com et donner a chaque vendeur en magasin l'equivalent d'un collegue expert, pour lever les frictions de decision sur des projets techniques et convertir plus.",
+  "description": "Mylow est le conseiller d'achat conversationnel de Lowe's, lance en mars 2025 sur lowes.com et le mobile web, developpe avec OpenAI. Le client pose des questions ouvertes sur son projet et recoit des conseils pas a pas, des recommandations produit et des liens vers des articles et videos how-to. En mai 2025, Lowe's a deploye Mylow Companion aupres de tous les vendeurs de ses plus de 1 700 magasins, sur les terminaux qu'ils utilisent deja. Le vendeur interroge l'assistant en langage naturel, y compris a la voix, sur les details produit, les conseils de pose ou les stocks. D'apres Retail Dive, Mylow et Mylow Companion traitent ensemble environ 1 million de questions par mois. Une version espagnole de Mylow Companion a ete ajoutee en fevrier 2026.",
+  "resultats": [
+    {
+      "metrique": "Questions traitees par mois (Mylow + Mylow Companion)",
+      "valeur": "environ 1 million",
+      "citation_exacte": "1 million questions per month",
+      "source_ref": "S1"
+    },
+    {
+      "metrique": "Copilote deploye a tous les vendeurs, sur plus de 1 700 magasins",
+      "valeur": "1 700+ magasins",
+      "citation_exacte": "all associates across Lowe's more than 1,700 stores",
+      "source_ref": "S2"
+    },
+    {
+      "metrique": "Satisfaction client depuis le deploiement (aide et connaissances vendeurs)",
+      "valeur": "hausse significative",
+      "citation_exacte": "significant improvements since the rollout",
+      "source_ref": "S4"
+    }
+  ],
+  "niveau_preuve": {
+    "niveau": "C",
+    "justification": "Chiffres de deploiement et d'usage communiques par Lowe's dans ses communiques officiels (1 700 magasins, tous les vendeurs) et repris par la presse retail majeure (Retail Dive, CX Dive) qui cite nommement la marque et le volume d'un million de questions par mois. Pas de resultat financier isole publie sur l'outil, ce qui plafonne a C malgre la concordance des sources."
+  },
+  "dates": {
+    "lancement": "2025-03-05 (Mylow), 2025-05-05 (Mylow Companion)",
+    "derniere_confirmation_activite": "2026-03",
+    "verifie_le": "2026-07-11",
+    "revoir_apres": "2027-01-11"
+  },
+  "statut_vivant": {
+    "statut": "confirme",
+    "note": "Retail Dive (mars 2026) decrit Mylow et Mylow Companion en production, avec ajout d'une version espagnole en fevrier 2026 et environ 1 million de questions traitees par mois."
+  },
+  "sources": [
+    {
+      "ref": "S1",
+      "type": "presse",
+      "fiabilite": "T3_presse_etablie",
+      "titre": "How Lowe's tailors its AI-backed Mylow to different customers",
+      "url": "https://www.retaildive.com/news/lowes-tailors-ai-assistant-mylow-different-customers/814461/",
+      "date_publication": "2026-03",
+      "consulte_le": "2026-07-11"
+    },
+    {
+      "ref": "S2",
+      "type": "blog_officiel",
+      "fiabilite": "T1_primaire",
+      "titre": "Lowe's deploys first at-scale AI assistant for retail associates",
+      "url": "https://corporate.lowes.com/newsroom/press-releases/lowes-deploys-first-scale-ai-assistant-retail-associates-05-05-25",
+      "date_publication": "2025-05-05",
+      "consulte_le": "2026-07-11"
+    },
+    {
+      "ref": "S3",
+      "type": "blog_officiel",
+      "fiabilite": "T1_primaire",
+      "titre": "Lowe's Launches First AI-Powered Home Improvement Virtual Advisor",
+      "url": "https://corporate.lowes.com/newsroom/press-releases/lowes-launches-first-ai-powered-home-improvement-virtual-advisor-03-05-25",
+      "date_publication": "2025-03-05",
+      "consulte_le": "2026-07-11"
+    },
+    {
+      "ref": "S4",
+      "type": "presse",
+      "fiabilite": "T3_presse_etablie",
+      "titre": "Lowe's credits associate-facing app for customer satisfaction boost",
+      "url": "https://www.customerexperiencedive.com/news/lowes-associate-facing-app-customer-satisfaction/758216/",
+      "date_publication": "2025",
+      "consulte_le": "2026-07-11"
+    }
+  ],
+  "fonctionnement_operationnel": {
+    "cadence": "Temps reel a chaque session client sur le web et a chaque sollicitation d'un vendeur en magasin.",
+    "opere_par": "Equipe data et IA de Lowe's, qui tient la base de connaissances projet et la couche RAG ; les vendeurs sont les utilisateurs quotidiens du copilote.",
+    "signal_pilote": "La qualite des reponses projet et la disponibilite des stocks locaux. Si le referentiel produit et l'inventaire ne sont pas a jour, l'assistant oriente vers de mauvais produits ou des ruptures.",
+    "etapes": [
+      {
+        "etape": "Question projet",
+        "detail": "Le client sur lowes.com ou le vendeur en magasin pose une question en langage naturel, a l'ecrit ou a la voix.",
+        "acteur": "client ou vendeur"
+      },
+      {
+        "etape": "Comprehension et recuperation",
+        "detail": "Le LLM interprete la demande et va chercher conseils projet, fiches produit et stocks dans la base Lowe's.",
+        "acteur": "IA"
+      },
+      {
+        "etape": "Reponse guidee",
+        "detail": "L'assistant renvoie un conseil pas a pas, des produits et des liens how-to, et cote magasin sert le vendeur qui parle au client.",
+        "acteur": "IA"
+      },
+      {
+        "etape": "Suivi et adaptation",
+        "detail": "Les equipes mesurent volume, satisfaction et adoption, et ajustent la connaissance et les parcours par segment (grand public, pro).",
+        "acteur": "equipe data"
+      }
+    ]
+  },
+  "schema_flow": {
+    "statut": "documente",
+    "noeuds": [
+      {
+        "id": "utilisateur",
+        "role_generique": "site_app",
+        "label": "Client sur lowes.com ou vendeur en magasin"
+      },
+      {
+        "id": "mylow",
+        "role_generique": "modele_ia",
+        "label": "Mylow / Mylow Companion",
+        "outil_documente": "OpenAI + stack Lowe's"
+      },
+      {
+        "id": "connaissance",
+        "role_generique": "data_source",
+        "label": "Base projet, catalogue produit, stocks locaux"
+      }
+    ],
+    "liens": [
+      [
+        "utilisateur",
+        "mylow"
+      ],
+      [
+        "mylow",
+        "connaissance"
+      ],
+      [
+        "connaissance",
+        "mylow"
+      ],
+      [
+        "mylow",
+        "utilisateur",
+        "conseil et produits"
+      ]
+    ]
+  },
+  "replication": {
+    "statut_epistemique": "infere",
+    "prerequis_data": [
+      "Base de connaissances projet et how-to structuree",
+      "Catalogue produit et stocks locaux exposes en temps reel",
+      "Historique de sessions pour mesurer satisfaction et conversion"
+    ],
+    "prerequis_orga": [
+      "Regle de transparence IA vis-a-vis du client",
+      "Equipements vendeurs capables de porter le copilote en magasin",
+      "Boucle de mesure adoption et satisfaction"
+    ],
+    "stack_possible": [
+      "LLM generatif via API",
+      "Couche RAG sur la connaissance projet et le catalogue",
+      "Interface voix pour l'usage terrain"
+    ],
+    "premiere_etape": "Indexer la connaissance projet et le catalogue pour le RAG, lancer un conseiller web sur une categorie technique a fort trafic, puis etendre aux vendeurs.",
+    "playbook": [
+      {
+        "action": "Indexer la connaissance projet, le catalogue et les stocks locaux pour le RAG",
+        "livrable": "Base interrogeable avec fraicheur des stocks verifiee"
+      },
+      {
+        "action": "Construire le conseiller web sur une categorie technique a fort trafic, avec garde-fous et transparence IA",
+        "livrable": "Agent en beta, taux de bonnes reponses evalue sur des questions reelles"
+      },
+      {
+        "action": "Lancer sur le site et mesurer volume, satisfaction et effet sur la conversion projet",
+        "livrable": "Agent en production + tableau de bord d'usage"
+      },
+      {
+        "action": "Porter le copilote sur les terminaux vendeurs, y compris l'interface voix, en pilote sur un sous-reseau de magasins",
+        "livrable": "Pilote magasin avec adoption vendeurs mesuree"
+      },
+      {
+        "action": "Deployer au reseau complet et decliner par segment et par langue",
+        "livrable": "Rollout complet + versions par segment (grand public, pro) et par langue"
+      }
+    ],
+    "equipe": "1 PM + 2-3 devs (RAG, integrations catalogue/stocks) + 1 responsable contenu how-to + relais operations magasin pour la version vendeur"
+  },
+  "seo": {
+    "slug": "lowes-mylow-openai-2025",
+    "title": "Lowe's : conseiller genAI Mylow avec OpenAI - 1 million de questions par mois (2025)",
+    "meta_description": "Mylow, le conseiller d'achat genAI de Lowe's construit avec OpenAI, et Mylow Companion, deploye a tous les vendeurs de 1 700 magasins, traitent environ 1 million de questions par mois.",
+    "resume_citable": "Lance en 2025 avec OpenAI, le conseiller genAI Mylow de Lowe's et son copilote vendeur Mylow Companion, deploye a tous les vendeurs de plus de 1 700 magasins, traitent ensemble environ 1 million de questions par mois.",
+    "faq": [
+      {
+        "q": "Qu'est-ce que Mylow ?",
+        "a": "C'est le conseiller d'achat conversationnel genAI de Lowe's, lance en mars 2025 avec OpenAI : le client decrit son projet et recoit conseils pas a pas et recommandations produit."
+      },
+      {
+        "q": "Est-ce deploye a l'echelle ?",
+        "a": "Oui. Mylow Companion a ete deploye a tous les vendeurs des plus de 1 700 magasins Lowe's en mai 2025, et l'ensemble traite environ 1 million de questions par mois."
+      }
+    ]
+  },
+  "logo_domain": "lowes.com",
+  "stack_technique": [
+    {
+      "nom": "Modeles generatifs OpenAI",
+      "categorie": "llm",
+      "detail": "socle conversationnel de Mylow et Mylow Companion, developpe en partenariat avec OpenAI ; version de modele non publiee",
+      "url": "https://openai.com"
+    },
+    {
+      "nom": "Mylow",
+      "categorie": "outil",
+      "detail": "conseiller d'achat conversationnel sur lowes.com et mobile web : conseils projet pas a pas, recommandations produit, liens how-to",
+      "url": "https://www.lowes.com"
+    },
+    {
+      "nom": "Mylow Companion",
+      "categorie": "outil",
+      "detail": "copilote vendeur deploye sur les terminaux existants des plus de 1 700 magasins, interrogeable a l'ecrit et a la voix, version espagnole ajoutee en 2026",
+      "url": "https://www.lowes.com"
+    },
+    {
+      "nom": "Couche RAG maison Lowe's",
+      "categorie": "infra",
+      "detail": "base de connaissances projet, catalogue produit et stocks locaux exposes en temps reel a l'agent",
+      "url": "https://www.lowes.com"
+    }
+  ]
+}

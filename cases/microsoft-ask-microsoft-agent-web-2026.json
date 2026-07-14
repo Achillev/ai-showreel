@@ -1,0 +1,280 @@
+{
+  "id": "microsoft-ask-microsoft-agent-web-2026",
+  "type_fiche": "succes",
+  "marque": "Microsoft",
+  "industrie": "tech_saas",
+  "marches_deploiement": [
+    "Etats-Unis",
+    "international (Microsoft.com)"
+  ],
+  "transposable_ue": {
+    "flag": "oui_avec_adaptations",
+    "note": "Agent conversationnel sur site marchand grand public. En UE, l'AI Act impose d'informer l'utilisateur qu'il interagit avec un systeme automatise, et le RGPD encadre la collecte des donnees de navigation et de contact liees a la demande d'essai. Pas de classement haut risque pour un assistant d'aide a l'achat."
+  },
+  "metier": "marketing digital / acquisition web (usage interne Microsoft)",
+  "axes": {
+    "levier": "acquisition",
+    "touchpoints": [
+      "Microsoft.com",
+      "pages produit Azure",
+      "pages d'essai produit",
+      "assistant web Ask Microsoft"
+    ],
+    "etape_parcours": "consideration",
+    "famille": "conversation",
+    "pattern": "agent conversationnel web pour l'acquisition et l'activation sur ses propres pages produit",
+    "type_ia": [
+      "agents LLM",
+      "orchestration generative",
+      "generation augmentee par recuperation (RAG)"
+    ],
+    "plateforme_stack": [
+      "Microsoft Copilot Studio",
+      "Azure"
+    ],
+    "objectif_metrique": [
+      "taux de passage a l'inscription",
+      "initiations d'essai produit",
+      "pages vues par session",
+      "reduction des escalades humaines"
+    ]
+  },
+  "implementation": "plateforme",
+  "stack_technique": [
+    {
+      "nom": "Microsoft Copilot Studio",
+      "categorie": "plateforme",
+      "detail": "Plateforme low-code de construction de l'agent Ask Microsoft, passee de flux de sujets rigides a l'orchestration generative multi-tours.",
+      "url": "https://www.microsoft.com/en-us/microsoft-365-copilot/microsoft-copilot-studio"
+    },
+    {
+      "nom": "Modeles generatifs de Copilot Studio",
+      "categorie": "llm",
+      "detail": "LLM integres a la plateforme pour la comprehension d'intention et la redaction des reponses ; le modele exact n'est pas nomme dans la customer story.",
+      "url": "https://www.microsoft.com"
+    },
+    {
+      "nom": "RAG sur le contenu produit Microsoft.com",
+      "categorie": "outil",
+      "detail": "Generation augmentee par recuperation : l'agent repond a partir de la documentation produit indexee et oriente vers la bonne offre.",
+      "url": "https://www.microsoft.com"
+    },
+    {
+      "nom": "Microsoft Azure",
+      "categorie": "infra",
+      "detail": "Socle cloud du dispositif ; les pages produit Azure sont aussi le perimetre du gain de 16% d'essais.",
+      "url": "https://azure.microsoft.com"
+    }
+  ],
+  "objectif_business": "Transformer l'aide a la navigation sur Microsoft.com en levier d'acquisition. L'agent Ask Microsoft repond aux visiteurs, les oriente vers la bonne offre et augmente la probabilite qu'ils s'inscrivent ou lancent un essai produit, tout en reduisant le recours au chat humain.",
+  "points_cles": ["Agent conversationnel web Ask Microsoft pour l'acquisition sur Microsoft.com.", "Construit avec Copilot Studio, orchestration generative et RAG sur le contenu produit.", "Visiteurs 10 fois plus enclins a s'inscrire, +16% d'essais sur Azure, -70% d'escalades humaines.", "Preuve B, statut confirme."],
+  "description": "Microsoft a construit Ask Microsoft, un agent conversationnel web, avec son propre Copilot Studio, pour aider des millions de visiteurs a trouver l'information sur Microsoft.com. L'agent est passe de flux de sujets rigides a une orchestration generative qui comprend l'intention et tient des conversations multi-tours. Un premier agent a ete deploye en quelques semaines, puis etendu a dix sites produit supplementaires au rythme de deux par semaine. Sur les pages Azure, il pousse davantage d'essais ; sur l'ensemble, les visiteurs qui l'utilisent consultent plus de pages et s'inscrivent bien plus souvent.",
+  "resultats": [
+    {
+      "metrique": "Probabilite de passer a l'inscription apres interaction avec l'agent",
+      "valeur": "10 fois plus eleve",
+      "citation_exacte": "ten times more likely to move forward with signing up for services",
+      "source_ref": "S1"
+    },
+    {
+      "metrique": "Initiations d'essai produit sur le site Azure",
+      "valeur": "16% de plus",
+      "citation_exacte": "16% more initiations of product trial",
+      "source_ref": "S1"
+    },
+    {
+      "metrique": "Reduction des escalades vers un humain",
+      "valeur": "jusqu'a 70% en moins",
+      "citation_exacte": "up to 70% fewer human escalations",
+      "source_ref": "S1"
+    },
+    {
+      "metrique": "Latence de reponse de l'agent mis a jour",
+      "valeur": "jusqu'a 61% inferieure",
+      "citation_exacte": "up to 61% lower latency",
+      "source_ref": "S1"
+    }
+  ],
+  "niveau_preuve": {
+    "niveau": "B",
+    "justification": "Etude de cas officielle et chiffree de Microsoft sur son propre deploiement (Ask Microsoft), avec metriques de conversion et d'engagement. Source unique substantielle (customer story Microsoft), corroboree par la documentation Copilot Studio du meme editeur, d'ou un niveau B et non A."
+  },
+  "dates": {
+    "lancement": "premier agent Ask Microsoft deploye en quelques semaines, generalise sur dix sites produit supplementaires (rythme de deux par semaine)",
+    "derniere_confirmation_activite": "fevrier 2026 (customer story Microsoft publiee le 27 fevrier 2026)",
+    "verifie_le": "2026-07-11",
+    "revoir_apres": "2027-01-11"
+  },
+  "statut_vivant": {
+    "statut": "confirme",
+    "note": "L'agent est en production sur Microsoft.com et en cours d'extension a d'autres sites produit selon la customer story de fevrier 2026. Copilot Studio est un produit actif et mis en avant en continu par Microsoft."
+  },
+  "sources": [
+    {
+      "ref": "S1",
+      "type": "customer_story_plateforme",
+      "fiabilite": "T2_officiel_interesse",
+      "titre": "Microsoft uses Copilot Studio to reshape customer experience and drive higher engagement",
+      "url": "https://www.microsoft.com/en/customers/story/26166-microsoft-microsoft-copilot-studio",
+      "date_publication": "2026-02-27",
+      "consulte_le": "2026-07-11"
+    },
+    {
+      "ref": "S2",
+      "type": "blog_officiel",
+      "fiabilite": "T2_officiel_interesse",
+      "titre": "Microsoft Copilot Studio | Create AI Agents",
+      "url": "https://www.microsoft.com/en-us/microsoft-365-copilot/microsoft-copilot-studio",
+      "consulte_le": "2026-07-11"
+    }
+  ],
+  "fonctionnement_operationnel": {
+    "cadence": "Temps reel a chaque session sur Microsoft.com, avec iterations rapides de test et d'ajustement de l'agent",
+    "opere_par": "Equipe web et marketing digital de Microsoft, sur Copilot Studio",
+    "signal_pilote": "L'intention exprimee par le visiteur et le contenu produit indexe. Sans contenu produit a jour a interroger, l'agent oriente mal et le gain de conversion se perd.",
+    "etapes": [
+      {
+        "etape": "Comprehension de l'intention",
+        "detail": "L'orchestration generative interprete la demande du visiteur en langage naturel, sur plusieurs tours.",
+        "acteur": "IA"
+      },
+      {
+        "etape": "Reponse et orientation",
+        "detail": "L'agent repond a partir du contenu produit et guide vers la bonne offre ou le bon SKU.",
+        "acteur": "IA"
+      },
+      {
+        "etape": "Incitation a l'essai ou l'inscription",
+        "detail": "Sur les pages produit, il pousse vers le lancement d'un essai ou l'inscription au service.",
+        "acteur": "IA"
+      },
+      {
+        "etape": "Extension a d'autres sites",
+        "detail": "L'equipe replique l'agent sur de nouveaux sites produit au rythme de deux par semaine.",
+        "acteur": "Equipe marketing / web"
+      },
+      {
+        "etape": "Mesure de la conversion",
+        "detail": "Passage a l'inscription, essais lances et pages par session sont suivis pour piloter l'agent.",
+        "acteur": "Equipe marketing / web"
+      }
+    ]
+  },
+  "schema_flow": {
+    "statut": "documente",
+    "noeuds": [
+      {
+        "id": "visiteur",
+        "role_generique": "humain",
+        "label": "Visiteur de Microsoft.com"
+      },
+      {
+        "id": "site",
+        "role_generique": "site_app",
+        "label": "Pages produit Microsoft et Azure"
+      },
+      {
+        "id": "agent",
+        "role_generique": "modele_ia",
+        "label": "Agent web Ask Microsoft",
+        "outil_documente": "Microsoft Copilot Studio"
+      },
+      {
+        "id": "contenu",
+        "role_generique": "data_source",
+        "label": "Contenu et documentation produit"
+      },
+      {
+        "id": "essai",
+        "role_generique": "site_app",
+        "label": "Inscription ou essai produit"
+      }
+    ],
+    "liens": [
+      [
+        "visiteur",
+        "site"
+      ],
+      [
+        "site",
+        "agent"
+      ],
+      [
+        "contenu",
+        "agent"
+      ],
+      [
+        "agent",
+        "site",
+        "reponse multi-tours"
+      ],
+      [
+        "agent",
+        "essai",
+        "orientation vers inscription ou essai"
+      ],
+      [
+        "essai",
+        "visiteur"
+      ]
+    ]
+  },
+  "replication": {
+    "statut_epistemique": "infere",
+    "playbook": [
+      {
+        "action": "Cadrer une seule ligne de produit, rassembler le contenu correspondant et fixer un objectif de conversion mesurable.",
+        "livrable": "Perimetre valide, corpus de contenu produit et KPI de reference."
+      },
+      {
+        "action": "Construire l'agent dans la plateforme low-code, activer l'orchestration generative et brancher le contenu produit.",
+        "livrable": "Agent fonctionnel en pre-production."
+      },
+      {
+        "action": "Tester en interne l'exactitude des reponses, le ton et l'escalade humaine, et instrumenter l'analytics de conversion.",
+        "livrable": "Agent valide avec tracking inscription/essai en place."
+      },
+      {
+        "action": "Mettre en ligne sur un premier site et comparer inscriptions et essais des visiteurs exposes a l'agent.",
+        "livrable": "Premier readout de conversion vs visiteurs non exposes."
+      },
+      {
+        "action": "Repliquer l'agent sur les autres sites produit a un rythme regulier, avec le meme cadre de mesure.",
+        "livrable": "Agents deployes en serie et reporting de conversion consolide."
+      }
+    ],
+    "equipe": "1 chef de projet web + 1 builder low-code + 1 responsable du contenu produit, avec un appui analytics.",
+    "prerequis_data": [
+      "contenu et documentation produit indexables",
+      "taxonomie d'offres et de SKU claire",
+      "instrumentation analytics sur la conversion"
+    ],
+    "prerequis_orga": [
+      "equipe web/marketing capable d'iterer sur l'agent",
+      "gouvernance du perimetre et du ton"
+    ],
+    "stack_possible": [
+      "plateforme d'agents low-code (Copilot Studio ou equivalent)",
+      "moteur RAG sur le contenu produit",
+      "outil analytics de conversion"
+    ],
+    "premiere_etape": "Cadrer un agent sur une seule ligne de produit avec le contenu correspondant et un objectif de conversion mesurable."
+  },
+  "seo": {
+    "slug": "microsoft-ask-microsoft-agent-web-2026",
+    "title": "Microsoft : agent web Ask Microsoft pour l'acquisition - 10x plus d'inscriptions et 16% d'essais en plus (2026)",
+    "meta_description": "Microsoft utilise son propre Copilot Studio pour l'agent Ask Microsoft sur Microsoft.com : visiteurs 10x plus enclins a s'inscrire, 16% d'essais produit en plus, 70% d'escalades humaines en moins.",
+    "resume_citable": "L'agent web Ask Microsoft, construit avec Copilot Studio, rend les visiteurs de Microsoft.com dix fois plus enclins a s'inscrire, augmente de 16% les essais produit sur Azure et reduit de 70% les escalades humaines.",
+    "faq": [
+      {
+        "q": "Qu'est-ce que Ask Microsoft ?",
+        "a": "Un agent conversationnel web construit par Microsoft avec son propre Copilot Studio pour aider les visiteurs de Microsoft.com et les orienter vers l'inscription ou l'essai produit."
+      },
+      {
+        "q": "Quel impact sur l'acquisition ?",
+        "a": "Les visiteurs qui interagissent avec l'agent sont dix fois plus enclins a s'inscrire, avec 16% d'initiations d'essai en plus sur le site Azure."
+      }
+    ]
+  },
+  "logo_domain": "microsoft.com"
+}

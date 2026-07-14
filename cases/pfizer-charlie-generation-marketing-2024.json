@@ -1,0 +1,307 @@
+{
+  "id": "pfizer-charlie-generation-marketing-2024",
+  "type_fiche": "succes",
+  "marque": "Pfizer",
+  "industrie": "sante_pharma",
+  "marches_deploiement": [
+    "Etats-Unis",
+    "organisation marketing mondiale de Pfizer"
+  ],
+  "transposable_ue": {
+    "flag": "oui_avec_adaptations",
+    "note": "La promotion pharmaceutique est encadree differemment en UE : pas de publicite grand public pour les medicaments sur ordonnance, revue medicale et reglementaire obligatoire, pharmacovigilance. Un outil de generation de contenu marketing doit integrer ces regles de revue promotionnelle par marche. Les donnees d'entrainement (contenus valides) restent internes, ce qui limite l'exposition RGPD, mais la validation humaine avant diffusion reste indispensable."
+  },
+  "metier": "marketing",
+  "marque_linkedin": "https://www.linkedin.com/company/pfizer/",
+  "intervenants": [
+    {
+      "nom": "Bill Worple",
+      "role": "Vice President, Customer Engagement Platforms and Technology, Pfizer",
+      "source_ref": "S1"
+    },
+    {
+      "nom": "Arpit Jain",
+      "role": "President, Marcel (Publicis Groupe)",
+      "source_ref": "S1"
+    }
+  ],
+  "agences": [
+    {
+      "nom": "Publicis Groupe",
+      "role": "Construction de Charlie sur la base de sa plateforme Marcel",
+      "source_ref": "S1"
+    },
+    {
+      "nom": "IPG (Interpublic Group)",
+      "role": "Partenaire agence utilisateur de la plateforme",
+      "source_ref": "S1"
+    }
+  ],
+  "axes": {
+    "levier": "acquisition",
+    "touchpoints": [
+      "emails aux professionnels de sante",
+      "media digital",
+      "presentations commerciales aux medecins",
+      "reseaux sociaux"
+    ],
+    "etape_parcours": "consideration",
+    "famille": "generation",
+    "pattern": "plateforme genAI de production de contenu marketing sous controle reglementaire",
+    "type_ia": [
+      "IA generative (LLM)",
+      "version customisee de GPT",
+      "systeme de recommandation"
+    ],
+    "plateforme_stack": [
+      "Publicis Marcel (base)",
+      "custom (Charlie)",
+      "GPT"
+    ],
+    "objectif_metrique": [
+      "volume de contenu produit",
+      "vitesse de production et de revue",
+      "adoption interne"
+    ]
+  },
+  "implementation": "hybride",
+  "stack_technique": [
+    {
+      "nom": "GPT customise (OpenAI)",
+      "categorie": "llm",
+      "detail": "Version customisee de GPT entrainee sur les contenus deja valides de Pfizer, classes par aire therapeutique et par produit, avec recoupement des reponses sur ces sources.",
+      "url": "https://openai.com"
+    },
+    {
+      "nom": "Publicis Marcel",
+      "categorie": "plateforme",
+      "detail": "Plateforme de Publicis Groupe sur la base de laquelle Charlie a ete construit.",
+      "url": "https://www.publicisgroupe.com"
+    },
+    {
+      "nom": "Publicis Groupe",
+      "categorie": "integrateur",
+      "detail": "Constructeur de Charlie pour Pfizer ; les agences Publicis et IPG utilisent aussi la plateforme.",
+      "url": "https://www.publicisgroupe.com"
+    },
+    {
+      "nom": "Systeme de pre-tri du risque rouge/jaune/vert",
+      "categorie": "outil",
+      "detail": "Brique custom de Charlie qui classe chaque asset genere selon l'attention que la revue medicale et reglementaire doit y consacrer.",
+      "url": "https://www.pfizer.com"
+    }
+  ],
+  "objectif_business": "Accelerer la production et la revue des contenus marketing de Pfizer (emails, media, presentations commerciales) en donnant aux equipes marque et aux agences un outil unique qui genere, verifie les faits et pre-trie ce que la revue medicale doit examiner de pres.",
+  "description": "Charlie, nomme d'apres le co-fondateur Charles Pfizer, est une plateforme d'IA generative lancee en fevrier 2024 pour la chaine de production de contenu marketing. Construite par Publicis Groupe sur la base de sa plateforme Marcel, elle genere media digital, emails et presentations que les equipes commerciales utilisent avec les medecins, ainsi que des brouillons d'articles medicaux. Le contenu est genere via une version customisee de GPT entrainee sur des contenus deja valides et classes par aire therapeutique et par produit, et les reponses sont recoupees avec ces sources pour limiter les hallucinations. Un systeme de risque rouge/jaune/vert pre-trie les assets selon l'attention que la revue medicale doit y consacrer. Au lancement, environ 600 utilisateurs beta de l'equipe marketing centrale l'utilisaient, avec une extension a des milliers de personnes a travers les marques et aux agences partenaires Publicis et IPG.",
+  "resultats": [
+    {
+      "metrique": "Utilisateurs beta dans l'equipe marketing centrale (lancement)",
+      "valeur": "environ 600",
+      "citation_exacte": "approximately 600 beta users within Pfizer's central marketing team",
+      "source_ref": "S2"
+    },
+    {
+      "metrique": "Extension a des milliers de personnes a travers les marques et les agences Publicis et IPG",
+      "valeur": "des milliers",
+      "citation_exacte": "thousands across the company's various brands",
+      "source_ref": "S1"
+    },
+    {
+      "metrique": "Media digital, emails, presentations commerciales, brouillons d'articles medicaux",
+      "valeur": "4 types de contenu",
+      "citation_exacte": "Digital media, emails and digital presentations that sales teams use",
+      "source_ref": "S1"
+    },
+    {
+      "metrique": "Pre-tri du risque qui priorise la revue medicale",
+      "valeur": "rouge/jaune/vert",
+      "citation_exacte": "red, yellow, green",
+      "source_ref": "S1"
+    }
+  ],
+  "niveau_preuve": {
+    "niveau": "C",
+    "justification": "Le deploiement est documente par la presse (Digiday) et par une seconde publication concordante, avec une echelle d'adoption chiffree (600 utilisateurs beta, des milliers a travers les marques). Pas de resultat financier ou d'etude independante sur l'impact, d'ou C plutot que A ou B."
+  },
+  "dates": {
+    "lancement": "fevrier 2024",
+    "derniere_confirmation_activite": "fevrier 2024 (lancement et deploiement documentes) ; plateforme decrite comme en cours de generalisation a l'organisation marketing",
+    "verifie_le": "2026-07-11",
+    "revoir_apres": "2027-01-11"
+  },
+  "statut_vivant": {
+    "statut": "signaux_mitiges",
+    "note": "Le lancement et l'adoption sont documentes debut 2024, avec une intention de generalisation. Pas de communication chiffree recente confirmant le perimetre actuel ; le pattern (genAI pour la chaine de contenu marketing) reste actif chez Pfizer et dans la pharma, mais l'ampleur exacte de Charlie aujourd'hui n'est pas re-sourcee."
+  },
+  "sources": [
+    {
+      "ref": "S1",
+      "type": "presse",
+      "fiabilite": "T3_presse_etablie",
+      "titre": "With 'Charlie,' Pfizer is building a new generative AI platform for pharma marketing",
+      "url": "https://digiday.com/marketing/with-charlie-pfizer-is-building-a-new-generative-ai-platform-for-pharma-marketing/",
+      "date_publication": "2024-02-22",
+      "consulte_le": "2026-07-11"
+    },
+    {
+      "ref": "S2",
+      "type": "presse",
+      "fiabilite": "T4_secondaire",
+      "titre": "Pfizer partners with Publicis; launches AI platform Charlie",
+      "url": "https://www.storyboard18.com/how-it-works/pfizer-partners-with-publicis-launches-ai-platform-charlie-24165.htm",
+      "date_publication": "2024-02-23",
+      "consulte_le": "2026-07-11"
+    }
+  ],
+  "fonctionnement_operationnel": {
+    "cadence": "En continu, par campagne et par asset, dans le flux de production des equipes marque",
+    "opere_par": "Equipes marketing marque de Pfizer et agences partenaires, avec la revue medicale et reglementaire dans la boucle",
+    "signal_pilote": "Le corpus de contenus deja valides, classes par aire therapeutique et par produit, sur lequel le modele s'appuie. Sans ce corpus a jour et sans revue humaine, le risque d'affirmation non conforme casse le dispositif.",
+    "etapes": [
+      {
+        "etape": "Cadrage du besoin de contenu",
+        "detail": "L'equipe marque decrit l'asset a produire (email, media, presentation) pour une aire therapeutique donnee.",
+        "acteur": "Marketing"
+      },
+      {
+        "etape": "Generation",
+        "detail": "Charlie genere le contenu a partir du corpus valide et recoupe les affirmations avec les sources.",
+        "acteur": "IA"
+      },
+      {
+        "etape": "Pre-tri du risque",
+        "detail": "Le systeme rouge/jaune/vert signale les assets qui demandent le plus d'attention en revue.",
+        "acteur": "IA"
+      },
+      {
+        "etape": "Revue medicale et reglementaire",
+        "detail": "La revue examine en priorite les assets a risque avant validation.",
+        "acteur": "Equipe medicale et reglementaire"
+      },
+      {
+        "etape": "Diffusion",
+        "detail": "Le contenu valide est diffuse par les canaux marketing et par les commerciaux aupres des medecins.",
+        "acteur": "Marketing"
+      }
+    ]
+  },
+  "schema_flow": {
+    "statut": "documente",
+    "noeuds": [
+      {
+        "id": "corpus",
+        "role_generique": "data_source",
+        "label": "Contenus valides par aire therapeutique et produit"
+      },
+      {
+        "id": "charlie",
+        "role_generique": "modele_ia",
+        "label": "Plateforme de generation de contenu",
+        "outil_documente": "Charlie (sur Publicis Marcel, GPT customise)"
+      },
+      {
+        "id": "risk",
+        "role_generique": "modele_ia",
+        "label": "Pre-tri du risque rouge/jaune/vert"
+      },
+      {
+        "id": "revue",
+        "role_generique": "humain",
+        "label": "Revue medicale et reglementaire"
+      },
+      {
+        "id": "canaux",
+        "role_generique": "site_app",
+        "label": "Emails, media, presentations commerciales"
+      },
+      {
+        "id": "hcp",
+        "role_generique": "humain",
+        "label": "Medecins et patients"
+      }
+    ],
+    "liens": [
+      [
+        "corpus",
+        "charlie"
+      ],
+      [
+        "charlie",
+        "risk"
+      ],
+      [
+        "risk",
+        "revue",
+        "priorisation des assets a risque"
+      ],
+      [
+        "revue",
+        "canaux",
+        "contenu valide"
+      ],
+      [
+        "canaux",
+        "hcp"
+      ]
+    ]
+  },
+  "replication": {
+    "statut_epistemique": "infere",
+    "playbook": [
+      {
+        "action": "Constituer le corpus de contenus deja valides, propre et classe par aire therapeutique et par produit, avec les regles de revue promotionnelle par marche.",
+        "livrable": "Corpus exploitable en RAG + referentiel de regles"
+      },
+      {
+        "action": "Brancher un LLM sur le corpus avec recoupement systematique des affirmations sur les sources validees, sur un premier type d'asset (email).",
+        "livrable": "Generateur en beta sur un format de contenu"
+      },
+      {
+        "action": "Construire le pre-tri de risque (rouge/jaune/vert) et le workflow qui priorise la revue medicale et reglementaire.",
+        "livrable": "Circuit de revue outille et operationnel"
+      },
+      {
+        "action": "Ouvrir une beta a un noyau d'utilisateurs marketing et mesurer vitesse de production, taux de correction en revue et adoption.",
+        "livrable": "Bilan pilote chiffre"
+      },
+      {
+        "action": "Etendre aux autres marques et aux agences partenaires, avec formation et gouvernance du contenu.",
+        "livrable": "Plateforme generalisee a l'organisation marketing"
+      }
+    ],
+    "equipe": "1 PM + 2-4 devs/ML (internes ou agence) + la revue medicale et reglementaire integree au workflow des le depart",
+    "prerequis_data": [
+      "corpus de contenus deja valides et classes",
+      "referentiel produit et aire therapeutique",
+      "regles de revue promotionnelle"
+    ],
+    "prerequis_orga": [
+      "equipe de revue medicale et reglementaire",
+      "gouvernance du contenu marketing",
+      "partenaire d'integration IA"
+    ],
+    "stack_possible": [
+      "LLM (GPT ou equivalent) avec RAG sur le corpus valide",
+      "plateforme d'orchestration de contenu",
+      "workflow de revue"
+    ],
+    "premiere_etape": "Constituer un corpus de contenus valides, propre et classe, exploitable en RAG par un LLM sous revue humaine."
+  },
+  "seo": {
+    "slug": "pfizer-charlie-generation-marketing-2024",
+    "title": "Pfizer : plateforme genAI de contenu marketing (Charlie) - 600 utilisateurs beta au lancement (2024)",
+    "meta_description": "Charlie, plateforme d'IA generative de Pfizer construite avec Publicis sur Marcel, genere emails, media et presentations sous controle reglementaire. 600 utilisateurs beta, extension a des milliers.",
+    "resume_citable": "Pfizer a lance en fevrier 2024 Charlie, plateforme d'IA generative construite avec Publicis sur la base de Marcel, qui genere emails, media digital et presentations commerciales sous un systeme de revue rouge/jaune/vert, deployee de 600 utilisateurs beta a des milliers de personnes a travers ses marques.",
+    "faq": [
+      {
+        "q": "Qui a construit Charlie ?",
+        "a": "Publicis Groupe l'a construit pour Pfizer sur la base de sa plateforme Marcel, avec un modele de generation de type GPT customise entraine sur les contenus deja valides de Pfizer."
+      },
+      {
+        "q": "Comment Charlie gere-t-il la conformite ?",
+        "a": "Les reponses sont recoupees avec des contenus valides pour limiter les hallucinations, et un systeme de risque rouge/jaune/vert pre-trie les assets selon l'attention que la revue medicale doit y consacrer."
+      }
+    ]
+  },
+  "logo_domain": "pfizer.com"
+}

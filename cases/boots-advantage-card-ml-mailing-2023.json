@@ -1,0 +1,291 @@
+{
+  "id": "boots-advantage-card-ml-mailing-2023",
+  "type_fiche": "succes",
+  "marque": "Boots",
+  "groupe": "Walgreens Boots Alliance",
+  "industrie": "retail_ecom",
+  "marches_deploiement": [
+    "Royaume-Uni"
+  ],
+  "transposable_ue": {
+    "flag": "oui_avec_adaptations",
+    "note": "Le cas est deja europeen (Royaume-Uni). Le scoring individuel de la propension a utiliser une offre repose sur l'historique d'achat des porteurs de carte. Meme hors UE post-Brexit, un dispositif equivalent en UE exige une base legale et un consentement RGPD pour le profilage marketing. Le mailing personnalise ne releve pas du haut risque au sens de l'AI Act."
+  },
+  "metier": "marketing / CRM / fidelite",
+  "intervenants": [
+    {
+      "nom": "Hollie McLellan",
+      "role": "Director of Customer Marketing, Boots",
+      "source_ref": "S2"
+    }
+  ],
+  "agences": [
+    {
+      "nom": "Marketreach",
+      "role": "Partenaire courrier physique associe a la campagne de mailing trimestriel personnalise",
+      "source_ref": "S1"
+    }
+  ],
+  "axes": {
+    "levier": "retention",
+    "touchpoints": [
+      "mailing trimestriel personnalise",
+      "application Boots",
+      "programme Advantage Card",
+      "offres et coupons"
+    ],
+    "etape_parcours": "fidelite",
+    "famille": "personnalisation",
+    "pattern": "scoring par machine learning de la propension a utiliser une offre, applique au courrier et a l'app",
+    "type_ia": [
+      "machine learning",
+      "modeles de propension"
+    ],
+    "plateforme_stack": [
+      "custom/in-house",
+      "moteur de scoring d'offres",
+      "chaine de production courrier personnalise"
+    ],
+    "objectif_metrique": [
+      "taux de redemption",
+      "depense incrementale",
+      "inscriptions incrementales",
+      "telechargements d'app incrementaux"
+    ]
+  },
+  "implementation": "hybride",
+  "stack_technique": [
+    {
+      "nom": "Modele de propension a l'offre (maison)",
+      "categorie": "outil",
+      "detail": "Modele de machine learning qui score pour chaque membre la probabilite d'utiliser chaque offre candidate ; l'algorithme exact n'est pas nomme dans les sources.",
+      "url": "https://www.boots.com"
+    },
+    {
+      "nom": "Programme Advantage Card (donnee first-party)",
+      "categorie": "infra",
+      "detail": "Historique d'achat d'environ 15 millions d'utilisateurs actifs, carburant du scoring et du rattachement de la redemption au membre.",
+      "url": "https://www.boots.com"
+    },
+    {
+      "nom": "Marketreach",
+      "categorie": "integrateur",
+      "detail": "Partenaire courrier physique : production et envoi du mailing trimestriel personnalise par foyer.",
+      "url": "https://www.marketreach.co.uk"
+    }
+  ],
+  "objectif_business": "Augmenter la depense et l'engagement des porteurs de l'Advantage Card en n'envoyant a chaque membre que les offres qu'il a le plus de chances d'utiliser, mesure contre un groupe de controle pour prouver l'incremental.",
+  "points_cles": ["Mailing trimestriel personnalise : un modele ML score la propension de chaque membre a chaque offre.", "Base sur l'historique Advantage Card (15 millions d'actifs), production courrier avec Marketreach.", "23,9% de redemption, +3,2% de depense incrementale vs controle, 18 583 telechargements d'app.", "Preuve B, statut vivant confirme."],
+  "description": "Boots exploite la donnee de son programme Advantage Card, qui compte de l'ordre de 15 millions d'utilisateurs actifs. Pour son mailing trimestriel, un modele de machine learning score la probabilite que chaque membre utilise chaque offre potentielle, et ne retient que les plus pertinentes pour le courrier personnalise envoye au foyer. Le dispositif est mesure contre un groupe de controle pour isoler l'effet incremental. Les offres personnalisees ont atteint un taux de redemption moyen de 23,9%, avec 2,4 coupons utilises en magasin par membre en moyenne. Comparee au controle, la population adressee a depense 3,2% de plus. Le mailing a aussi genere 2 745 inscriptions incrementales au club Over 60s et 18 583 telechargements incrementaux de l'application sur quatre envois. En parallele, le dispositif de prix personnalises Price Advantage a fait economiser plus de 12 millions de livres aux clients.",
+  "resultats": [
+    {
+      "metrique": "Taux de redemption moyen des offres personnalisees",
+      "valeur": "23,9%",
+      "citation_exacte": "average redemption rate of 23.9% among members",
+      "source_ref": "S1"
+    },
+    {
+      "metrique": "Depense incrementale vs groupe de controle",
+      "valeur": "+3,2%",
+      "citation_exacte": "3.2% increase in customer spend through communications",
+      "source_ref": "S1"
+    },
+    {
+      "metrique": "Telechargements d'application incrementaux (quatre mailings)",
+      "valeur": "18 583",
+      "citation_exacte": "18,583 incremental app downloads",
+      "source_ref": "S1"
+    },
+    {
+      "metrique": "Economies clients generees par les prix personnalises Price Advantage",
+      "valeur": "12 M+ de livres",
+      "citation_exacte": "Price Advantage scheme saved shoppers over 12 million pounds",
+      "source_ref": "S2"
+    }
+  ],
+  "niveau_preuve": {
+    "niveau": "B",
+    "justification": "Etude de cas primee (DMA Awards 2023) documentant un modele de machine learning et une mesure incrementale contre groupe de controle, avec chiffres precis. Corroboree par une source presse etablie (CX Network) sur l'echelle du programme et le dispositif Price Advantage."
+  },
+  "dates": {
+    "lancement": "Application Advantage Card lancee en 2019 ; campagne de mailing trimestriel personnalise par machine learning documentee pour les DMA Awards 2023",
+    "derniere_confirmation_activite": "2023 (etude de cas de la campagne) ; nouvelle vague de personnalisation des offres Advantage Card annoncee pour 2026",
+    "verifie_le": "2026-07-11",
+    "revoir_apres": "2027-01-11"
+  },
+  "statut_vivant": {
+    "statut": "confirme",
+    "note": "Boots poursuit l'investissement dans la personnalisation de l'Advantage Card, avec une nouvelle etape annoncee pour 2026 sur les offres ciblees par l'app. La brique machine learning du mailing est documentee pour 2023."
+  },
+  "sources": [
+    {
+      "ref": "S1",
+      "type": "customer_story_plateforme",
+      "fiabilite": "T2_officiel_interesse",
+      "titre": "Boots: Personalised Advantage Card Direct Mail Case Study (DMA Awards 2023)",
+      "url": "https://www.marketreach.co.uk/success-story/boots-quarterly-mailing-campaign",
+      "date_publication": "2023",
+      "consulte_le": "2026-07-11"
+    },
+    {
+      "ref": "S2",
+      "type": "presse",
+      "fiabilite": "T3_presse_etablie",
+      "titre": "Turning loyalty into an advantage at Boots",
+      "url": "https://www.cxnetwork.com/cx-retail/articles/turning-loyalty-into-an-advantage-at-boots",
+      "date_publication": "2022-11-08",
+      "consulte_le": "2026-07-11"
+    }
+  ],
+  "fonctionnement_operationnel": {
+    "cadence": "Trimestrielle pour le mailing, avec scoring des offres en amont de chaque envoi",
+    "opere_par": "Equipe customer marketing de Boots, appuyee par la data et le partenaire courrier Marketreach",
+    "signal_pilote": "L'historique d'achat de chaque porteur d'Advantage Card. Sans lui, le modele de propension ne peut pas trier les offres, et le mailing redevient un envoi generique non mesurable en incremental.",
+    "etapes": [
+      {
+        "etape": "Constitution de l'univers d'offres",
+        "detail": "Le marketing definit le pool d'offres et de marques candidates pour le trimestre.",
+        "acteur": "Marketing"
+      },
+      {
+        "etape": "Scoring de propension",
+        "detail": "Le modele de machine learning note pour chaque membre la probabilite d'utiliser chaque offre.",
+        "acteur": "IA"
+      },
+      {
+        "etape": "Selection et personnalisation du courrier",
+        "detail": "Seules les offres a plus forte probabilite sont retenues et imprimees dans le mailing du foyer.",
+        "acteur": "Equipe data et agence"
+      },
+      {
+        "etape": "Envoi et mesure incrementale",
+        "detail": "Le courrier part, et la population adressee est comparee a un groupe de controle sur redemption et depense.",
+        "acteur": "Marketing et data"
+      }
+    ]
+  },
+  "schema_flow": {
+    "statut": "documente",
+    "noeuds": [
+      {
+        "id": "advantage",
+        "role_generique": "data_source",
+        "label": "Historique d'achat Advantage Card"
+      },
+      {
+        "id": "cdp",
+        "role_generique": "cdp",
+        "label": "Profils porteurs de carte"
+      },
+      {
+        "id": "propensity",
+        "role_generique": "modele_ia",
+        "label": "Modele de propension a l'offre"
+      },
+      {
+        "id": "mailing",
+        "role_generique": "site_app",
+        "label": "Mailing personnalise et app Boots"
+      },
+      {
+        "id": "controle",
+        "role_generique": "humain",
+        "label": "Groupe de controle (mesure incrementale)"
+      },
+      {
+        "id": "membre",
+        "role_generique": "humain",
+        "label": "Membre adresse"
+      }
+    ],
+    "liens": [
+      [
+        "advantage",
+        "cdp"
+      ],
+      [
+        "cdp",
+        "propensity"
+      ],
+      [
+        "propensity",
+        "mailing",
+        "offres selectionnees par score"
+      ],
+      [
+        "mailing",
+        "membre"
+      ],
+      [
+        "membre",
+        "advantage",
+        "redemption en magasin, boucle de feedback"
+      ],
+      [
+        "controle",
+        "advantage",
+        "reference sans mailing personnalise"
+      ]
+    ]
+  },
+  "replication": {
+    "statut_epistemique": "infere",
+    "prerequis_data": [
+      "historique d'achat des porteurs de carte",
+      "pool d'offres et de marques a arbitrer",
+      "capacite a rattacher la redemption au membre"
+    ],
+    "prerequis_orga": [
+      "programme de fidelite avec adresses postales exploitables",
+      "equipe data pour le scoring",
+      "protocole de test avec groupe de controle"
+    ],
+    "stack_possible": [
+      "moteur de scoring de propension",
+      "chaine de production courrier personnalise",
+      "CDP ou base client",
+      "app de fidelite"
+    ],
+    "premiere_etape": "Construire un modele de propension a l'offre sur l'historique des porteurs de carte et le tester sur un mailing avec groupe de controle.",
+    "playbook": [
+      {
+        "action": "Definir l'univers d'offres et de marques du trimestre et extraire l'historique d'achat par membre du programme de fidelite.",
+        "livrable": "Dataset membre x offre pret pour le scoring."
+      },
+      {
+        "action": "Entrainer le modele de propension et le valider hors ligne : lift de la selection par score contre une selection aleatoire.",
+        "livrable": "Modele avec courbe de lift documentee."
+      },
+      {
+        "action": "Monter la chaine de personnalisation du courrier avec le partenaire print : seules les offres a plus forte probabilite sont imprimees par foyer.",
+        "livrable": "Maquette de mailing personnalise industrialisable."
+      },
+      {
+        "action": "Envoyer sur une population test avec un groupe de controle tire au sort avant l'envoi.",
+        "livrable": "Campagne partie, plan de mesure incremental fige."
+      },
+      {
+        "action": "Mesurer redemption et depense incrementale contre le controle, puis reentrainer le modele avec les redemptions observees.",
+        "livrable": "Bilan incremental chiffre et modele mis a jour."
+      }
+    ],
+    "equipe": "1 data scientist + 1 responsable CRM/fidelite + le partenaire courrier pour la production et l'envoi."
+  },
+  "seo": {
+    "slug": "boots-advantage-card-ml-mailing-2023",
+    "title": "Boots : offres Advantage Card personnalisees par machine learning - 23,9% de redemption et +3,2% de depense (2023)",
+    "meta_description": "Boots score par machine learning la propension de ses membres Advantage Card a chaque offre : 23,9% de redemption, +3,2% de depense vs groupe de controle.",
+    "resume_citable": "Le mailing trimestriel personnalise de Boots, ou un modele de machine learning score la propension de chaque porteur d'Advantage Card a utiliser chaque offre, a atteint 23,9% de redemption et +3,2% de depense incrementale contre groupe de controle.",
+    "faq": [
+      {
+        "q": "Comment Boots personnalise-t-il ses offres Advantage Card ?",
+        "a": "Un modele de machine learning note pour chaque membre la probabilite d'utiliser chaque offre, et ne retient que les plus pertinentes dans le mailing trimestriel et l'app, mesure contre un groupe de controle."
+      },
+      {
+        "q": "Quels resultats la personnalisation a-t-elle produits ?",
+        "a": "Un taux de redemption moyen de 23,9%, 2,4 coupons utilises en magasin par membre, et une depense superieure de 3,2% par rapport au groupe de controle."
+      }
+    ]
+  },
+  "logo_domain": "boots.com"
+}

@@ -1,0 +1,312 @@
+{
+  "id": "wells-fargo-fargo-assistant-2024",
+  "type_fiche": "succes",
+  "marque": "Wells Fargo",
+  "groupe": "Wells Fargo & Company",
+  "industrie": "banque_assurance_fintech",
+  "marches_deploiement": [
+    "Etats-Unis"
+  ],
+  "transposable_ue": {
+    "flag": "oui_avec_adaptations",
+    "note": "Fargo repond en langage naturel sur les comptes et transactions d'un client, par la voix ou le texte. En UE, un tel assistant impose une base legale RGPD claire et, sous l'AI Act, une obligation de transparence (dire au client qu'il parle a une IA). L'interet du cas est justement son architecture privacy-first : la parole est transcrite et detokenisee cote banque, seuls l'intention et les entites transitent par le LLM, jamais les donnees sensibles. Ce parti pris se transpose bien en environnement RGPD ; le detail de l'orchestration et de la conformite reste a refaire."
+  },
+  "metier": "service client / banque digitale",
+  "intervenants": [
+    {
+      "nom": "Michelle Moore",
+      "role": "Head of Digital Data and Artificial Intelligence, Wells Fargo",
+      "source_ref": "S1"
+    },
+    {
+      "nom": "Chintan Mehta",
+      "role": "Head of Digital Technology and Innovation (CIO), Wells Fargo",
+      "source_ref": "S2"
+    }
+  ],
+  "axes": {
+    "levier": "retention",
+    "touchpoints": [
+      "application Wells Fargo Mobile",
+      "assistant vocal et texte Fargo"
+    ],
+    "etape_parcours": "post-achat",
+    "famille": "conversation",
+    "pattern": "assistant bancaire conversationnel a l'echelle, architecture sans PII au LLM",
+    "type_ia": [
+      "IA generative",
+      "assistant conversationnel",
+      "traitement du langage naturel",
+      "detection de PII par petit modele"
+    ],
+    "plateforme_stack": [
+      "custom/in-house (orchestration)",
+      "Google Gemini Flash 2.0"
+    ],
+    "objectif_metrique": [
+      "volume d'interactions traitees",
+      "adoption de l'app mobile",
+      "self-service sans intervention humaine"
+    ]
+  },
+  "implementation": "hybride",
+  "stack_technique": [
+    {
+      "nom": "Fargo (orchestration maison)",
+      "categorie": "outil",
+      "detail": "Assistant integre a l'app Wells Fargo Mobile. La voix du client est transcrite localement, le texte est nettoye et tokenise par la stack de la banque, un petit modele detecte les PII ; seuls l'intention et les entites sont ensuite envoyes au LLM. La detokenisation et les appels d'API restent cote banque.",
+      "url": "https://www.wellsfargo.com"
+    },
+    {
+      "nom": "Google Gemini Flash 2.0",
+      "categorie": "llm",
+      "detail": "Modele principal appele par la couche d'orchestration pour extraire l'intention et les entites de la requete, sans jamais recevoir de donnee brute ni de PII. Wells Fargo decrit un systeme compose ou l'orchestration choisit le modele selon la tache (d'autres modeles comme Llama ou OpenAI peuvent etre mobilises).",
+      "url": "https://cloud.google.com/vertex-ai"
+    },
+    {
+      "nom": "Petit modele de detection de PII (in-house)",
+      "categorie": "outil",
+      "detail": "Modele de langage reduit qui repere et masque les donnees personnelles avant tout appel au LLM, cle de l'architecture privacy-first.",
+      "url": "https://www.wellsfargo.com"
+    },
+    {
+      "nom": "Application Wells Fargo Mobile",
+      "categorie": "plateforme",
+      "detail": "Canal unique de Fargo (voix et texte), integre aux comptes et transactions ; l'app a depasse 33 millions d'utilisateurs actifs mensuels.",
+      "url": "https://www.wellsfargo.com"
+    }
+  ],
+  "objectif_business": "Traiter en libre-service le besoin bancaire quotidien du client (solde, transactions, virements Zelle, paiement de factures, numeros de routage, insights de depense) dans l'app, sans passer par un canal humain couteux, et ancrer l'usage de l'app mobile comme canal principal de la relation.",
+  "points_cles": ["Assistant conversationnel Fargo dans l'app Wells Fargo Mobile, par la voix ou le texte.", "Orchestration maison plus Google Gemini Flash 2.0, PII masquees avant tout appel au LLM.", "De 21,3 millions d'interactions en 2023 a 245,4 millions en 2024, plus de 1 milliard cumulees.", "Preuve A, statut vivant confirme."],
+  "description": "Fargo est l'assistant conversationnel de l'app Wells Fargo Mobile, lance en 2023. Le client l'interroge par la voix ou le texte pour envoyer de l'argent avec Zelle, payer une facture, retrouver un numero de routage, verifier un solde ou comprendre ses depenses. Son architecture est le point remarquable du cas : la parole est transcrite en local, le texte est nettoye et tokenise par la stack Wells Fargo, un petit modele detecte les PII, et seuls l'intention et les entites partent vers un LLM (Google Gemini Flash 2.0 comme modele principal). Aucune donnee client sensible ne passe par le modele. L'usage a bondi de 21,3 millions d'interactions en 2023 a 245,4 millions en 2024, plus de deux fois les projections initiales, pour depasser 1 milliard d'interactions cumulees en moins de trois ans (annonce de mars 2026). Plus de 3 millions de clients hispanophones ont utilise Fargo, avec plus de 160 millions d'interactions.",
+  "resultats": [
+    {
+      "metrique": "Interactions annuelles, 2023 puis 2024, plus de 2x les projections",
+      "valeur": "de 21,3M a 245,4M",
+      "citation_exacte": "from 21.3 million interactions in 2023 to more than 245 million in 2024",
+      "source_ref": "S2"
+    },
+    {
+      "metrique": "Interactions cumulees en moins de trois ans (mars 2026)",
+      "valeur": "1 milliard+",
+      "citation_exacte": "more than 1 billion interactions - achieved in less than three years since its launch",
+      "source_ref": "S1"
+    },
+    {
+      "metrique": "Donnees sensibles au LLM, intention et entites seulement",
+      "valeur": "aucune PII exposee",
+      "citation_exacte": "Our APIs... none of them pass through the LLM",
+      "source_ref": "S2"
+    },
+    {
+      "metrique": "Utilisateurs actifs mensuels de l'app mobile",
+      "valeur": "plus de 33 millions",
+      "citation_exacte": "surpassed 33 million mobile active users last month",
+      "source_ref": "S1"
+    },
+    {
+      "metrique": "Clients hispanophones, plus de 160 millions d'interactions",
+      "valeur": "3M+ de clients",
+      "citation_exacte": "More than 3 million Spanish-speaking customers have used Fargo",
+      "source_ref": "S1"
+    }
+  ],
+  "niveau_preuve": {
+    "niveau": "A",
+    "justification": "Volumes publies par Wells Fargo elle-meme dans un communique officiel (1 milliard d'interactions, 33 millions d'utilisateurs actifs mobiles, mars 2026, T1), concordants avec les chiffres internes rapportes par la presse tech etablie (21,3 millions en 2023, 245,4 millions en 2024, VentureBeat). Plusieurs sources concordantes dont une primaire de la marque-sujet, tenant sur plusieurs annees, font monter le niveau."
+  },
+  "dates": {
+    "lancement": "2023",
+    "derniere_confirmation_activite": "2026-03",
+    "verifie_le": "2026-07-12",
+    "revoir_apres": "2027-01-12"
+  },
+  "statut_vivant": {
+    "statut": "confirme",
+    "note": "Croissance continue et documentee : 245,4 millions d'interactions en 2024, plus de 1 milliard cumulees et 33 millions d'utilisateurs actifs mobiles annonces en mars 2026. Feature centrale de l'app, aucun signal de retrait."
+  },
+  "sources": [
+    {
+      "ref": "S1",
+      "type": "presse",
+      "fiabilite": "T1_primaire",
+      "titre": "Wells Fargo Reaches Major Digital Milestones",
+      "url": "https://newsroom.wf.com/news-releases/news-details/2026/Wells-Fargo-Reaches-Major-Digital-Milestones/default.aspx",
+      "date_publication": "2026-03-26",
+      "consulte_le": "2026-07-12"
+    },
+    {
+      "ref": "S2",
+      "type": "presse",
+      "fiabilite": "T3_presse_etablie",
+      "titre": "Wells Fargo's AI assistant just crossed 245 million interactions - no human handoffs, no sensitive data exposed",
+      "url": "https://venturebeat.com/ai/wells-fargos-ai-assistant-just-crossed-245-million-interactions-with-zero-humans-in-the-loop-and-zero-pii-to-the-llm",
+      "date_publication": "2025-04-08",
+      "consulte_le": "2026-07-12"
+    },
+    {
+      "ref": "S3",
+      "type": "presse",
+      "fiabilite": "T3_presse_etablie",
+      "titre": "Wells Fargo's assistant, powered by Google's AI, poised to hit 100 million interactions annually",
+      "url": "https://venturebeat.com/ai/wells-fargos-google-llm-driven-assistant-may-reach-100-million-interactions-per-year",
+      "date_publication": "2024-01",
+      "consulte_le": "2026-07-12"
+    }
+  ],
+  "fonctionnement_operationnel": {
+    "cadence": "Temps reel, 24/7, dans l'app mobile ; les modeles et l'orchestration sont maintenus en continu",
+    "opere_par": "Equipe Digital Technology and Innovation de Wells Fargo, en interne, avec Google Cloud pour le modele principal",
+    "signal_pilote": "L'intention exprimee par le client, extraite apres masquage des PII. Le systeme s'optimise sur la comprehension d'intention et le taux de resolution sans humain ; si le masquage ou la detokenisation cassent, la reponse ne peut plus etre servie sans exposer de donnee.",
+    "etapes": [
+      {
+        "etape": "Requete client",
+        "detail": "Le client parle ou ecrit sa demande dans l'app (virement Zelle, facture, solde, numero de routage, depenses).",
+        "acteur": "client"
+      },
+      {
+        "etape": "Transcription et masquage local",
+        "detail": "La parole est transcrite en local ; le texte est nettoye et tokenise ; un petit modele detecte et masque les PII avant tout appel externe.",
+        "acteur": "IA"
+      },
+      {
+        "etape": "Extraction d'intention par le LLM",
+        "detail": "La couche d'orchestration envoie le texte masque au LLM (Gemini Flash 2.0), qui renvoie l'intention et les entites, sans jamais voir de donnee brute.",
+        "acteur": "IA"
+      },
+      {
+        "etape": "Execution cote banque",
+        "detail": "La detokenisation, les appels d'API aux comptes et l'action (virement, reponse, insight) se font entierement sur les systemes Wells Fargo.",
+        "acteur": "equipe data"
+      },
+      {
+        "etape": "Supervision et extension",
+        "detail": "L'equipe interne suit les volumes, la resolution et les cas mal compris pour elargir le perimetre et ajuster le choix de modele dans le systeme compose.",
+        "acteur": "equipe data"
+      }
+    ]
+  },
+  "schema_flow": {
+    "statut": "documente",
+    "noeuds": [
+      {
+        "id": "client",
+        "role_generique": "site_app",
+        "label": "Client dans l'app Wells Fargo Mobile"
+      },
+      {
+        "id": "masquage",
+        "role_generique": "modele_ia",
+        "label": "Transcription, tokenisation et masquage PII (in-house)",
+        "outil_documente": "Petit modele de detection de PII"
+      },
+      {
+        "id": "orchestration",
+        "role_generique": "modele_ia",
+        "label": "Couche d'orchestration (systeme compose)"
+      },
+      {
+        "id": "llm",
+        "role_generique": "modele_ia",
+        "label": "LLM d'extraction d'intention et d'entites",
+        "outil_documente": "Google Gemini Flash 2.0"
+      },
+      {
+        "id": "banque",
+        "role_generique": "data_source",
+        "label": "Comptes, transactions, APIs Wells Fargo"
+      }
+    ],
+    "liens": [
+      [
+        "client",
+        "masquage"
+      ],
+      [
+        "masquage",
+        "orchestration",
+        "texte sans PII"
+      ],
+      [
+        "orchestration",
+        "llm",
+        "intention et entites uniquement"
+      ],
+      [
+        "llm",
+        "orchestration",
+        "intention detectee"
+      ],
+      [
+        "orchestration",
+        "banque",
+        "detokenisation et appels API cote banque"
+      ],
+      [
+        "banque",
+        "client",
+        "reponse et action"
+      ]
+    ]
+  },
+  "replication": {
+    "statut_epistemique": "infere",
+    "prerequis_data": [
+      "Donnees de compte et de transaction en temps reel",
+      "Historique d'intents clients pour cadrer les cas couverts",
+      "Referentiel de PII a masquer (noms, numeros de compte, montants sensibles)"
+    ],
+    "prerequis_orga": [
+      "Equipe produit et ingenierie IA dediee dans la duree",
+      "Cadre de securite et de conformite bancaire",
+      "Gouvernance du choix de modele dans un systeme compose"
+    ],
+    "stack_possible": [
+      "Petit modele de detection et masquage de PII cote entreprise",
+      "Couche d'orchestration qui route vers le bon LLM selon la tache",
+      "LLM tiers (type Gemini Flash) appele uniquement sur du texte masque",
+      "Detokenisation et appels d'API conserves en interne"
+    ],
+    "premiere_etape": "Cartographier les intentions client les plus frequentes dans l'app, puis poser la couche de masquage PII avant tout appel a un LLM : c'est elle qui rend l'architecture transposable en environnement reglemente.",
+    "playbook": [
+      {
+        "action": "Cartographier les intentions client les plus frequentes (virement, solde, facture, insight de depense) a partir des logs support et app.",
+        "livrable": "Referentiel d'intentions priorisees par volume."
+      },
+      {
+        "action": "Construire la couche de masquage : transcription locale, tokenisation, petit modele qui detecte et remplace les PII avant tout appel externe.",
+        "livrable": "Pipeline de masquage teste, aucune PII sortante mesuree."
+      },
+      {
+        "action": "Brancher une couche d'orchestration qui envoie le texte masque a un LLM et n'en recupere que l'intention et les entites.",
+        "livrable": "Prototype d'extraction d'intention sur donnees masquees."
+      },
+      {
+        "action": "Executer la reponse et les actions (appels d'API comptes) entierement en interne, apres detokenisation, avec journalisation.",
+        "livrable": "Boucle complete en test, chaque action tracee cote entreprise."
+      },
+      {
+        "action": "Ouvrir une beta a un segment de clients dans l'app avec transparence sur la nature IA, puis elargir le perimetre et ajuster le choix de modele.",
+        "livrable": "Assistant en beta, taux de resolution sans humain suivi."
+      }
+    ],
+    "equipe": "1 equipe produit digital (PM, design) + ingenieurs IA (orchestration, masquage PII, integrations comptes) + securite et conformite bancaire impliquees en continu."
+  },
+  "seo": {
+    "slug": "wells-fargo-fargo-assistant-2024",
+    "title": "Wells Fargo : assistant Fargo sans PII au LLM - 245,4 millions d'interactions en 2024",
+    "meta_description": "Fargo, l'assistant de l'app Wells Fargo, est passe de 21,3 a 245,4 millions d'interactions en 2024 et a depasse 1 milliard cumulees, sans jamais exposer de PII au LLM.",
+    "resume_citable": "Fargo, l'assistant conversationnel de l'app Wells Fargo lance en 2023, est passe de 21,3 millions d'interactions en 2023 a 245,4 millions en 2024 et a depasse 1 milliard cumulees en moins de trois ans, avec une architecture qui n'envoie jamais de donnee client sensible au LLM.",
+    "faq": [
+      {
+        "q": "Combien d'interactions Fargo a-t-il traitees ?",
+        "a": "21,3 millions en 2023, 245,4 millions en 2024 (plus de deux fois les projections) et plus de 1 milliard cumulees en moins de trois ans, annoncees en mars 2026."
+      },
+      {
+        "q": "Comment Fargo protege-t-il les donnees des clients ?",
+        "a": "La parole est transcrite et masquee cote Wells Fargo ; un petit modele detecte les PII et seuls l'intention et les entites sont envoyes au LLM (Gemini Flash 2.0). Aucune donnee sensible ne passe par le modele."
+      }
+    ]
+  },
+  "logo_domain": "wellsfargo.com"
+}

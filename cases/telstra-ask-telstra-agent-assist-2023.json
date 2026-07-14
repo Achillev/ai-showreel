@@ -1,0 +1,277 @@
+{
+  "type_fiche": "succes",
+  "id": "telstra-ask-telstra-agent-assist-2023",
+  "marque": "Telstra",
+  "industrie": "telco",
+  "marches_deploiement": [
+    "Australie (centres de contact et boutiques Telstra)"
+  ],
+  "transposable_ue": {
+    "flag": "oui_avec_adaptations",
+    "note": "Deploye en Australie sur Azure OpenAI. Les deux outils lisent l'historique et les notes client pour aider un conseiller humain : en UE, cadrer le traitement des donnees client (RGPD) et l'hebergement. AI Act : risque limite pour un outil d'assistance interne, transparence a prevoir."
+  },
+  "metier": "Service client / agent assist en centre de contact",
+  "marque_linkedin": "https://www.linkedin.com/company/telstra",
+  "axes": {
+    "levier": "retention",
+    "touchpoints": [
+      "poste du conseiller en centre de contact",
+      "equipes en boutique",
+      "recherche dans la base de connaissance interne"
+    ],
+    "etape_parcours": "post-achat / service",
+    "famille": "conversation",
+    "pattern": "Agent assist genAI double : un outil resume l'historique client en une phrase, l'autre repond aux questions du conseiller depuis la base de connaissance interne",
+    "type_ia": [
+      "LLM generatif (Azure OpenAI)",
+      "RAG sur base de connaissance (Azure AI Search)",
+      "resume automatique (One Sentence Summary)"
+    ],
+    "plateforme_stack": [
+      "Microsoft Azure OpenAI Service",
+      "Azure AI Search",
+      "Azure Machine Learning"
+    ],
+    "objectif_metrique": [
+      "temps gagne par le conseiller",
+      "contacts de suivi evites",
+      "qualite percue de l'interaction client"
+    ]
+  },
+  "implementation": "plateforme",
+  "objectif_business": "Faire gagner du temps au conseiller sur chaque contact, reduire les rappels et rendre l'interaction plus fluide, en lui donnant l'historique client et la reponse metier en direct.",
+  "points_cles": ["Deux outils genAI d'agent assist: resume du dossier client et reponse metier en RAG.", "Construits sur Azure OpenAI et Azure AI Search, avec Microsoft et Accenture.", "90% des conseillers gagnent du temps, 20% de contacts de suivi en moins.", "Preuve B, statut confirme, etendu aux centres de contact et boutiques en 2024."],
+  "description": "Telstra a construit deux outils genAI sur Azure OpenAI et les a etendus a ses centres de contact et equipes boutique. One Sentence Summary condense l'historique, les notes et les transactions d'un client en un resume court, pour que le conseiller comprenne la situation d'un coup d'oeil sans relire tout le dossier. Ask Telstra permet au conseiller d'interroger la base de connaissance interne en langage naturel et d'obtenir une reponse generee. Sur les essais menes fin 2023 avec environ 200 conseillers, 90 pour cent des utilisateurs de One Sentence Summary declarent gagner du temps et etre plus efficaces, avec 20 pour cent de contacts de suivi en moins, et plus de 80 pour cent des testeurs d'Ask Telstra disent que l'outil ameliore l'interaction client. Telstra a etendu les deux outils a l'ensemble des equipes de centre de contact et de boutique sur 2024, avec Microsoft et Accenture.",
+  "fonctionnement_operationnel": {
+    "cadence": "Temps reel pendant le contact client. La base de connaissance interrogee par Ask Telstra est mise a jour au fil des evolutions produits et process.",
+    "opere_par": "Les equipes de centre de contact et de boutique au quotidien, une equipe data/IA Telstra pour les modeles et la base, Microsoft et Accenture pour la plateforme et la mise a l'echelle.",
+    "signal_pilote": "La fraicheur et la justesse de la base de connaissance derriere Ask Telstra. Si elle est perimee, l'outil renvoie une reponse fausse que le conseiller relaie au client.",
+    "etapes": [
+      {
+        "etape": "Resumer le dossier client",
+        "detail": "One Sentence Summary compile historique, notes et transactions en une phrase pour eviter au conseiller de relire tout le dossier.",
+        "acteur": "IA / Azure OpenAI"
+      },
+      {
+        "etape": "Repondre aux questions metier",
+        "detail": "Ask Telstra interroge la base de connaissance interne en langage naturel et remonte une reponse generee au conseiller.",
+        "acteur": "IA / RAG"
+      },
+      {
+        "etape": "Garder le conseiller decideur",
+        "detail": "Le conseiller lit, verifie et decide de la reponse au client. L'IA prepare et suggere, elle ne parle pas au client a sa place.",
+        "acteur": "Conseiller humain"
+      },
+      {
+        "etape": "Mesurer temps gagne et rappels",
+        "detail": "Suivi du temps gagne, des contacts de suivi evites et de la qualite percue pour arbitrer l'extension a toutes les equipes.",
+        "acteur": "Equipe data + management"
+      }
+    ]
+  },
+  "resultats": [
+    {
+      "metrique": "Conseillers gagnant du temps (One Sentence Summary)",
+      "valeur": "90%",
+      "citation_exacte": "90% of employees using the tool saved time and increased effectiveness",
+      "source_ref": "S1"
+    },
+    {
+      "metrique": "Contacts de suivi evites",
+      "valeur": "-20%",
+      "citation_exacte": "20% less follow-up contact",
+      "source_ref": "S1"
+    },
+    {
+      "metrique": "Impact positif percu (Ask Telstra)",
+      "valeur": "80%+",
+      "citation_exacte": "over 80% agreeing the technology has a positive impact on customer interactions",
+      "source_ref": "S1"
+    }
+  ],
+  "niveau_preuve": {
+    "niveau": "B",
+    "justification": "Chiffres publies par Telstra dans son communique officiel et repris dans une customer story Microsoft avec les memes valeurs (90 pour cent de temps gagne, 20 pour cent de rappels en moins, 80 pour cent d'impact positif). Communique marque plus vendor concordants ; les mesures sont declaratives (auto-evaluation des conseillers sur les essais), pas un gain d'efficacite mesure en incrementalite."
+  },
+  "dates": {
+    "lancement": "Essais fin 2023 (~200 conseillers), extension aux equipes centre de contact et boutique sur 2024",
+    "derniere_confirmation_activite": "2024 (extension a toutes les equipes de centre de contact et boutique)",
+    "verifie_le": "2026-07-11",
+    "revoir_apres": "2027-01-11"
+  },
+  "statut_vivant": {
+    "statut": "confirme",
+    "note": "Passage de l'essai (200 conseillers, 2023) au deploiement complet centre de contact et boutique sur 2024, avec Microsoft et Accenture. Programme etendu, pas de signal de retrait."
+  },
+  "sources": [
+    {
+      "ref": "S1",
+      "type": "blog_officiel",
+      "titre": "Telstra scales up AI adoption following promising pilots of generative AI solutions",
+      "url": "https://www.telstra.com.au/aboutus/media/media-releases/telstra-scales-up-ai-adoption",
+      "date_publication": "2024-02-07",
+      "consulte_le": "2026-07-11",
+      "fiabilite": "T1_primaire"
+    },
+    {
+      "ref": "S2",
+      "type": "customer_story_plateforme",
+      "titre": "Telstra dials in elevated customer service with Azure OpenAI Service",
+      "url": "https://www.microsoft.com/en/customers/story/1740058425924206437-telstra-telecommunications-azure-openai-service",
+      "date_publication": "2024-02-23",
+      "consulte_le": "2026-07-11",
+      "fiabilite": "T2_officiel_interesse"
+    }
+  ],
+  "schema_flow": {
+    "statut": "documente",
+    "noeuds": [
+      {
+        "id": "history",
+        "role_generique": "data_source",
+        "label": "Historique, notes et transactions client"
+      },
+      {
+        "id": "kb",
+        "role_generique": "data_source",
+        "label": "Base de connaissance interne Telstra"
+      },
+      {
+        "id": "summary",
+        "role_generique": "modele_ia",
+        "label": "One Sentence Summary (resume du dossier)",
+        "outil_documente": "Azure OpenAI + Azure Machine Learning"
+      },
+      {
+        "id": "ask",
+        "role_generique": "modele_ia",
+        "label": "Ask Telstra (reponse metier en RAG)",
+        "outil_documente": "Azure OpenAI + Azure AI Search"
+      },
+      {
+        "id": "agent",
+        "role_generique": "humain",
+        "label": "Conseiller centre de contact / boutique"
+      }
+    ],
+    "liens": [
+      [
+        "history",
+        "summary"
+      ],
+      [
+        "kb",
+        "ask"
+      ],
+      [
+        "summary",
+        "agent"
+      ],
+      [
+        "ask",
+        "agent"
+      ],
+      [
+        "agent",
+        "ask",
+        "nouvelle question metier"
+      ]
+    ]
+  },
+  "replication": {
+    "statut_epistemique": "infere",
+    "prerequis_data": [
+      "Historique client consolide (notes, transactions) accessible au poste conseiller",
+      "Base de connaissance interne propre et a jour",
+      "Gouvernance RGPD sur les donnees exposees au LLM"
+    ],
+    "prerequis_orga": [
+      "Conseillers formes a verifier les sorties de l'IA",
+      "Process d'entretien de la base de connaissance"
+    ],
+    "stack_possible": [
+      "Azure OpenAI + Azure AI Search, ou Vertex AI, ou un LLM du marche en RAG",
+      "Brique de resume automatique du dossier client",
+      "Integration au poste conseiller / CRM"
+    ],
+    "premiere_etape": "Piloter le resume de dossier sur un groupe de conseillers, mesurer temps gagne et rappels evites contre un groupe temoin, puis ajouter la reponse metier en RAG.",
+    "playbook": [
+      {
+        "action": "Mettre au propre la base de connaissance interne et consolider l'historique client (notes, transactions) accessible au poste conseiller, avec cadrage RGPD.",
+        "livrable": "Base de connaissance indexable et acces donnees valide."
+      },
+      {
+        "action": "Construire le resume automatique de dossier et l'integrer au poste conseiller.",
+        "livrable": "Outil de resume en pilote sur un flux reel."
+      },
+      {
+        "action": "Piloter sur 100-200 conseillers avec groupe temoin ; mesurer temps gagne, rappels evites et qualite percue.",
+        "livrable": "Resultats du pilote contre temoin."
+      },
+      {
+        "action": "Ajouter la reponse metier en RAG sur la base de connaissance, avec verification humaine systematique.",
+        "livrable": "Assistant de reponse metier en pilote."
+      },
+      {
+        "action": "Etendre aux equipes centre de contact et boutique, former a la verification des sorties, installer le process d'entretien de la base.",
+        "livrable": "Deploiement complet et routine de mise a jour de la base."
+      }
+    ],
+    "equipe": "1 PM + 2 devs pour l'integration au poste conseiller + 1 data engineer pour la base de connaissance + 1 referent metier centre de contact ; integrateur optionnel pour la mise a l'echelle."
+  },
+  "seo": {
+    "slug": "telstra-ask-telstra-one-sentence-summary-agent-assist-2023",
+    "title": "Telstra : agent assist genAI (Ask Telstra, One Sentence Summary) - 20% de rappels en moins (2023)",
+    "meta_description": "Telstra : deux outils genAI (Azure OpenAI) pour ses conseillers, Ask Telstra et One Sentence Summary. 90% de temps gagne, 20% de rappels en moins.",
+    "resume_citable": "Telstra a etendu a ses centres de contact deux outils genAI sur Azure OpenAI (One Sentence Summary, Ask Telstra) : 90% des conseillers declarent gagner du temps, avec 20% de contacts de suivi en moins et 80% d'impact positif percu sur l'interaction client.",
+    "faq": [
+      {
+        "q": "L'IA parle-t-elle directement au client ?",
+        "a": "Non : les deux outils assistent le conseiller, qui garde la main. L'un resume le dossier, l'autre repond a ses questions metier depuis la base interne."
+      },
+      {
+        "q": "Les chiffres sont-ils un gain mesure ou declaratif ?",
+        "a": "Ils viennent de l'auto-evaluation des conseillers sur les essais (90% de temps gagne, 20% de rappels en moins). C'est un signal fort, pas une mesure incrementale controlee."
+      }
+    ]
+  },
+  "agences": [
+    {
+      "nom": "Microsoft",
+      "role": "Fournisseur de la plateforme IA (Azure OpenAI, Azure AI Search)",
+      "source_ref": "S2"
+    },
+    {
+      "nom": "Accenture",
+      "role": "Partenaire de mise a l'echelle et de modernisation data",
+      "source_ref": "S1"
+    }
+  ],
+  "logo_domain": "telstra.com.au",
+  "stack_technique": [
+    {
+      "nom": "Microsoft Azure OpenAI Service",
+      "categorie": "llm",
+      "detail": "Modeles OpenAI heberges sur Azure, utilises pour le resume de dossier (One Sentence Summary) et la generation de reponses (Ask Telstra). Version de modele non communiquee.",
+      "url": "https://azure.microsoft.com"
+    },
+    {
+      "nom": "Azure AI Search",
+      "categorie": "outil",
+      "detail": "Indexation et recherche de la base de connaissance interne pour le RAG d'Ask Telstra.",
+      "url": "https://azure.microsoft.com"
+    },
+    {
+      "nom": "Azure Machine Learning",
+      "categorie": "infra",
+      "detail": "Plateforme ML utilisee pour operer les briques de resume et de generation.",
+      "url": "https://azure.microsoft.com"
+    },
+    {
+      "nom": "Accenture",
+      "categorie": "integrateur",
+      "detail": "Partenaire de mise a l'echelle et de modernisation data pour l'extension a toutes les equipes.",
+      "url": "https://www.accenture.com"
+    }
+  ]
+}

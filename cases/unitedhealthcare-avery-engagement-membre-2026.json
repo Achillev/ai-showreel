@@ -1,0 +1,285 @@
+{
+  "id": "unitedhealthcare-avery-engagement-membre-2026",
+  "type_fiche": "succes",
+  "marque": "UnitedHealthcare",
+  "groupe": "UnitedHealth Group",
+  "industrie": "sante_pharma",
+  "marches_deploiement": [
+    "Etats-Unis"
+  ],
+  "transposable_ue": {
+    "flag": "oui_avec_adaptations",
+    "note": "Avery repond en langage naturel sur la couverture, les remboursements et les couts d'un membre, et peut appeler des prestataires pour prendre rendez-vous. En UE, ces donnees relevent de l'article 9 RGPD (donnees de sante), avec consentement et information renforces. Un assistant qui agit sur le parcours de soin peut relever d'obligations de transparence de l'AI Act. Le modele d'assurance sante prive americain ne se transpose pas tel quel aux systemes europeens."
+  },
+  "metier": "service membre / relation client / marketing",
+  "marque_linkedin": "https://www.linkedin.com/company/unitedhealthcare/",
+  "intervenants": [
+    {
+      "nom": "Dan Kueter",
+      "role": "Chief Executive Officer, UnitedHealthcare commercial business",
+      "source_ref": "S1"
+    }
+  ],
+  "axes": {
+    "levier": "retention",
+    "touchpoints": [
+      "application UnitedHealthcare",
+      "myuhc.com",
+      "assistant conversationnel Avery"
+    ],
+    "etape_parcours": "post-achat",
+    "famille": "conversation",
+    "pattern": "compagnon genAI de navigation des benefices et de coordination des soins",
+    "type_ia": [
+      "IA generative",
+      "agent conversationnel",
+      "traitement du langage naturel"
+    ],
+    "plateforme_stack": [
+      "custom/in-house (Avery)"
+    ],
+    "objectif_metrique": [
+      "membres avec acces",
+      "part de resolution en self-service",
+      "recours a un conseiller humain"
+    ]
+  },
+  "implementation": "custom",
+  "objectif_business": "Rendre l'usage de l'assurance sante plus simple pour le membre, en repondant 24/7 en langage naturel sur la couverture, les remboursements et les couts, et en allegeant les conseillers humains sur les demandes que le membre peut resoudre seul.",
+  "description": "Avery est un compagnon d'IA generative lance par UnitedHealthcare le 26 mars 2026. Il repond en langage naturel, 24/7, sur la couverture, les details de remboursement, les estimations de cout, l'aide a la prise de rendez-vous et les options de soin, et peut appeler des prestataires du reseau pour poser un rendez-vous au nom du membre. Il est accessible via l'application UnitedHealthcare et myuhc.com. Au lancement, Avery est ouvert a environ 6,5 millions de membres en contrats employeur et 160 000 membres Medicare Advantage, avec une cible de 20,5 millions de membres commerciaux, Medicare et Medicaid d'ici la fin de l'annee. UnitedHealthcare indique que dans 90% des cas, les membres qui utilisent Avery n'ont pas eu besoin d'un conseiller.",
+  "resultats": [
+    {
+      "metrique": "Membres avec acces au lancement (contrats employeur), plus 160 000 en Medicare Advantage",
+      "valeur": "6,5 millions",
+      "citation_exacte": "approximately 6.5 million members with employer-sponsored health plans",
+      "source_ref": "S1"
+    },
+    {
+      "metrique": "Cible fin d'annee, membres commerciaux, Medicare et Medicaid",
+      "valeur": "20,5 millions",
+      "citation_exacte": "20.5 million commercial, Medicare and Medicaid members by the end of the year",
+      "source_ref": "S1"
+    },
+    {
+      "metrique": "Resolution sans conseiller humain",
+      "valeur": "90% des cas",
+      "citation_exacte": "90% of the time, members who use Avery have not required assistance from an advocate",
+      "source_ref": "S1"
+    }
+  ],
+  "niveau_preuve": {
+    "niveau": "C",
+    "justification": "Le lancement et les volumes sont documentes par le communique officiel de UnitedHealth Group et par la presse etablie (Fierce Healthcare). Le perimetre au lancement (6,5 millions) est en production ; la cible de 20,5 millions est prospective. Presse citant nommement la marque plus source primaire = C, non A car ce n'est pas un resultat financier."
+  },
+  "dates": {
+    "lancement": "2026-03-26",
+    "derniere_confirmation_activite": "mars 2026 (communique de lancement, 6,5 millions de membres en acces)",
+    "verifie_le": "2026-07-11",
+    "revoir_apres": "2027-01-11"
+  },
+  "statut_vivant": {
+    "statut": "confirme",
+    "note": "Lancement recent avec un perimetre en production (6,5 millions de membres) et une trajectoire d'extension annoncee vers 20,5 millions d'ici fin 2026. A re-verifier apres la date cible pour confirmer l'atteinte du perimetre."
+  },
+  "sources": [
+    {
+      "ref": "S1",
+      "type": "blog_officiel",
+      "fiabilite": "T1_primaire",
+      "titre": "UnitedHealthcare Introduces AI Companion Empowering People with Simpler Navigation, Personal Experience",
+      "url": "https://www.unitedhealthgroup.com/newsroom/2026/2026-03-26-uhc-introduces-ai-companion-empowering-people-with-simpler-navigation-personal-experience.html",
+      "date_publication": "2026-03-26",
+      "consulte_le": "2026-07-11"
+    },
+    {
+      "ref": "S2",
+      "type": "presse",
+      "fiabilite": "T3_presse_etablie",
+      "titre": "UnitedHealthcare launches Avery, a generative AI companion for members",
+      "url": "https://www.fiercehealthcare.com/payers/unitedhealthcare-launches-avery-generative-ai-companion-members",
+      "consulte_le": "2026-07-11"
+    }
+  ],
+  "fonctionnement_operationnel": {
+    "cadence": "Temps reel, disponible 24/7, avec apprentissage au fil des interactions",
+    "opere_par": "Equipe produit digital de UnitedHealthcare, adossee aux conseillers membres qui prennent le relais sur les cas complexes",
+    "signal_pilote": "Les donnees de benefices, de remboursement et de cout propres au membre. Sans acces a jour au plan et a l'historique de claims, l'assistant ne peut pas donner de reponse personnalisee fiable et renvoie vers un humain.",
+    "etapes": [
+      {
+        "etape": "Question du membre",
+        "detail": "Le membre interroge Avery via l'app ou myuhc.com sur sa couverture, un cout ou un rendez-vous.",
+        "acteur": "Client"
+      },
+      {
+        "etape": "Reponse personnalisee",
+        "detail": "Avery repond en langage naturel a partir des benefices et de l'historique du membre.",
+        "acteur": "IA"
+      },
+      {
+        "etape": "Action sur le parcours",
+        "detail": "Si besoin, Avery appelle un prestataire du reseau pour poser un rendez-vous au nom du membre.",
+        "acteur": "IA"
+      },
+      {
+        "etape": "Escalade",
+        "detail": "Les cas non resolus sont transmis a un conseiller humain (10% des cas environ).",
+        "acteur": "Conseiller membre"
+      },
+      {
+        "etape": "Apprentissage",
+        "detail": "Les interactions alimentent l'amelioration des reponses et des self-services.",
+        "acteur": "Equipe produit"
+      }
+    ]
+  },
+  "schema_flow": {
+    "statut": "documente",
+    "noeuds": [
+      {
+        "id": "membre",
+        "role_generique": "humain",
+        "label": "Membre UnitedHealthcare"
+      },
+      {
+        "id": "app",
+        "role_generique": "site_app",
+        "label": "Application UnitedHealthcare et myuhc.com"
+      },
+      {
+        "id": "avery",
+        "role_generique": "modele_ia",
+        "label": "Compagnon d'IA generative",
+        "outil_documente": "Avery"
+      },
+      {
+        "id": "benef",
+        "role_generique": "data_source",
+        "label": "Benefices, claims et couts du membre"
+      },
+      {
+        "id": "presta",
+        "role_generique": "site_app",
+        "label": "Prestataires du reseau"
+      },
+      {
+        "id": "conseiller",
+        "role_generique": "humain",
+        "label": "Conseiller membre"
+      }
+    ],
+    "liens": [
+      [
+        "membre",
+        "app"
+      ],
+      [
+        "app",
+        "avery"
+      ],
+      [
+        "benef",
+        "avery"
+      ],
+      [
+        "avery",
+        "presta",
+        "prise de rendez-vous"
+      ],
+      [
+        "avery",
+        "membre",
+        "reponse en langage naturel"
+      ],
+      [
+        "avery",
+        "conseiller",
+        "escalade des cas complexes"
+      ]
+    ]
+  },
+  "replication": {
+    "statut_epistemique": "infere",
+    "prerequis_data": [
+      "donnees de benefices et de plan par membre",
+      "historique de claims",
+      "referentiel des couts et du reseau de prestataires"
+    ],
+    "prerequis_orga": [
+      "equipe produit conversationnel",
+      "conseillers pour l'escalade",
+      "gouvernance conformite sante"
+    ],
+    "stack_possible": [
+      "LLM avec RAG sur les donnees du plan",
+      "orchestration d'agent conversationnel",
+      "integration telephonie pour la prise de rendez-vous"
+    ],
+    "premiere_etape": "Relier de facon fiable les donnees de benefices et de claims d'un membre a un assistant conversationnel, avec une escalade humaine claire.",
+    "playbook": [
+      {
+        "action": "Cadrer les donnees et la conformite : cartographier benefices, claims et couts par membre, poser le cadre juridique sante.",
+        "livrable": "Inventaire des donnees membre accessibles en temps reel + dossier conformite valide."
+      },
+      {
+        "action": "Construire l'assistant sur un perimetre restreint de questions frequentes (couverture, remboursements), en RAG sur les donnees du plan.",
+        "livrable": "Prototype interne teste par des conseillers sur des cas reels."
+      },
+      {
+        "action": "Brancher l'escalade humaine et lancer un pilote ferme sur un segment de membres.",
+        "livrable": "Pilote avec taux de resolution self-service et taux d'escalade mesures."
+      },
+      {
+        "action": "Ajouter les actions sur le parcours (prise de rendez-vous, appel aux prestataires) avec journalisation complete.",
+        "livrable": "Assistant capable d'agir, chaque action tracee."
+      },
+      {
+        "action": "Deployer progressivement par ligne de contrats en suivant le recours aux conseillers.",
+        "livrable": "Rollout avec tableau de bord self-service vs escalade par population."
+      }
+    ],
+    "equipe": "1 PM + 3-5 ingenieurs (LLM/RAG, integrations) + 1 juriste conformite sante + conseillers membres pour l'escalade"
+  },
+  "seo": {
+    "slug": "unitedhealthcare-avery-engagement-membre-2026",
+    "title": "UnitedHealthcare : compagnon genAI membre (Avery) - 6,5 millions de membres, 90% en self-service (2026)",
+    "meta_description": "Avery, compagnon d'IA generative de UnitedHealthcare, repond 24/7 sur benefices et couts. Ouvert a 6,5 millions de membres, cible 20,5 millions, 90% des cas resolus sans conseiller.",
+    "resume_citable": "UnitedHealthcare a lance en mars 2026 Avery, compagnon d'IA generative ouvert a 6,5 millions de membres et vise 20,5 millions d'ici fin d'annee, avec 90% des utilisateurs resolvant leur demande sans conseiller humain.",
+    "faq": [
+      {
+        "q": "Que fait Avery ?",
+        "a": "Il repond en langage naturel 24/7 sur la couverture, les remboursements, les estimations de cout et les options de soin, et peut appeler un prestataire du reseau pour poser un rendez-vous au nom du membre."
+      },
+      {
+        "q": "Combien de membres sont concernes ?",
+        "a": "Environ 6,5 millions de membres en contrats employeur et 160 000 en Medicare Advantage au lancement, avec une cible de 20,5 millions de membres d'ici la fin 2026."
+      }
+    ]
+  },
+  "logo_domain": "uhc.com",
+  "stack_technique": [
+    {
+      "nom": "Avery",
+      "categorie": "outil",
+      "detail": "Compagnon d'IA generative developpe en interne par UnitedHealthcare : reponses en langage naturel sur benefices, remboursements et couts, et prise de rendez-vous par appel aux prestataires.",
+      "url": "https://www.uhc.com"
+    },
+    {
+      "nom": "LLM d'Avery (modele exact non publie)",
+      "categorie": "llm",
+      "detail": "UnitedHealthcare ne nomme pas le modele generatif sous-jacent ; les sources decrivent une IA generative custom/in-house.",
+      "url": "https://www.unitedhealthgroup.com"
+    },
+    {
+      "nom": "Application UnitedHealthcare et myuhc.com",
+      "categorie": "plateforme",
+      "detail": "Surfaces d'acces du membre a Avery, ouvertes a environ 6,5 millions de membres au lancement.",
+      "url": "https://www.myuhc.com"
+    },
+    {
+      "nom": "Systemes de benefices et de claims UnitedHealthcare",
+      "categorie": "infra",
+      "detail": "Donnees de plan, historique de remboursements et referentiel de couts qui alimentent les reponses personnalisees ; sans acces a jour, l'assistant renvoie vers un humain.",
+      "url": "https://www.uhc.com"
+    }
+  ]
+}

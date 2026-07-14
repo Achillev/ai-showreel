@@ -1,0 +1,300 @@
+{
+  "id": "rovio-beacon-ua-ltv-2023",
+  "type_fiche": "succes",
+  "marque": "Rovio",
+  "groupe": "Sega Sammy Holdings",
+  "industrie": "media_entertainment",
+  "marches_deploiement": [
+    "Mondial (portefeuille de jeux Rovio)"
+  ],
+  "transposable_ue": {
+    "flag": "oui_avec_adaptations",
+    "note": "La prediction de LTV s'appuie sur l'attribution des mobile measurement partners et sur des evenements in-app precoces. Sous RGPD et ATT (iOS), le tracking depend du consentement, ce qui degrade le signal d'attribution et donc la precision des modeles pLTV. Le pilotage UA reste transposable, mais la qualite des donnees d'entree depend du taux d'opt-in par marche."
+  },
+  "metier": "marketing (user acquisition)",
+  "intervenants": [
+    {
+      "nom": "Sinem Demiroz Gezici",
+      "role": "User Acquisition Manager, Rovio",
+      "source_ref": "S2"
+    }
+  ],
+  "agences": [
+    {
+      "nom": "Aarki",
+      "role": "Partenaire de retargeting UA, ciblage par IA supervisee des lapsed purchasers et non-purchasers sur Angry Birds 2",
+      "source_ref": "S2"
+    }
+  ],
+  "axes": {
+    "levier": "acquisition",
+    "touchpoints": [
+      "campagnes UA paid",
+      "retargeting in-app",
+      "mediation publicitaire",
+      "attribution MMP"
+    ],
+    "etape_parcours": "découverte",
+    "famille": "prediction",
+    "pattern": "prediction de LTV pour piloter l'acquisition (pLTV)",
+    "type_ia": [
+      "reseaux de neurones profonds",
+      "modeles predictifs de LTV",
+      "segmentation par machine learning"
+    ],
+    "plateforme_stack": [
+      "Beacon (plateforme interne Rovio)",
+      "Aarki",
+      "AWS",
+      "mediation 30+ sources publicitaires"
+    ],
+    "objectif_metrique": [
+      "ROAS / ROI par cohorte",
+      "LTV predite",
+      "efficience du budget UA",
+      "reactivation des joueurs lapsed"
+    ]
+  },
+  "implementation": "hybride",
+  "stack_technique": [
+    {
+      "nom": "Beacon (plateforme interne Rovio)",
+      "categorie": "plateforme",
+      "detail": "Plateforme d'operations de jeux batie sur 10+ ans : attribution, dashboards temps reel, segmentation, mediation de 30+ sources publicitaires, couche ML par defaut.",
+      "url": "https://www.rovio.com"
+    },
+    {
+      "nom": "Modeles pLTV Rovio",
+      "categorie": "outil",
+      "detail": "Reseaux de neurones profonds qui predisent la valeur a long terme d'un joueur des le soft launch, au niveau joueur.",
+      "url": "https://www.rovio.com"
+    },
+    {
+      "nom": "AWS",
+      "categorie": "infra",
+      "detail": "Infrastructure cloud de Beacon, disponibilite annoncee superieure a 99,95 pour cent.",
+      "url": "https://aws.amazon.com"
+    },
+    {
+      "nom": "Aarki",
+      "categorie": "plateforme",
+      "detail": "Partenaire de retargeting : ciblage par IA supervisee des acheteurs lapsed et non-acheteurs sur Angry Birds 2, avec optimisation creative.",
+      "url": "https://www.aarki.com"
+    },
+    {
+      "nom": "Mobile measurement partners (MMP)",
+      "categorie": "outil",
+      "detail": "Attribution mobile qui alimente les modeles de LTV ; les MMP utilises ne sont pas nommes publiquement.",
+      "url": ""
+    }
+  ],
+  "objectif_business": "Acquerir des joueurs rentables en predisant leur valeur a long terme tot dans le cycle de vie, pour allouer le budget UA vers les campagnes qui tiennent l'objectif de ROI et pour reactiver les joueurs lapsed a bon compte.",
+  "points_cles": ["Prediction de LTV joueur des le soft launch pour piloter l'allocation du budget UA.", "Plateforme interne Beacon (reseaux de neurones, attribution MMP, AWS) et retargeting IA avec Aarki.", "ROI a D90 superieur de 1,7x a l'objectif sur Angry Birds 2, objectif LTV D365 atteint en 3 mois.", "Preuve B, statut confirme."],
+  "description": "Beacon est la plateforme interne que Rovio a batie sur plus de dix ans pour operer ses jeux de bout en bout, avec de l'attribution, des tableaux de bord temps reel, de la segmentation d'audience, la mediation de plus de 30 sources publicitaires et une couche de machine learning livree par defaut pour la personnalisation et la prediction. Le systeme prend les donnees d'attribution des mobile measurement partners et les combine a des modeles de LTV au niveau joueur. En soft launch, la modelisation predit la valeur a long terme d'un joueur et sert a selectionner les campagnes UA pour optimiser la performance dans la duree. Sur Angry Birds 2, Rovio a travaille avec Aarki, qui a applique un retargeting supervise par IA pour re-engager les acheteurs lapsed et les non-acheteurs via de la segmentation d'audience haute valeur et de l'optimisation creative. La plateforme tourne sur AWS avec une disponibilite annoncee superieure a 99,95 pour cent.",
+  "resultats": [
+    {
+      "metrique": "ROI a D90 battu en moyenne (retargeting Angry Birds 2)",
+      "valeur": "1,7x l'objectif",
+      "citation_exacte": "beat goals by average of 1.7x",
+      "source_ref": "S2"
+    },
+    {
+      "metrique": "Atteinte de l'objectif de LTV a D365",
+      "valeur": "atteint en 3 mois",
+      "citation_exacte": "reached our long-term ROI goals",
+      "source_ref": "S2"
+    },
+    {
+      "metrique": "Disponibilite de la plateforme, mediation de 30+ sources publicitaires",
+      "valeur": "99,95%+ de dispo",
+      "citation_exacte": "over 99.95%",
+      "source_ref": "S1"
+    }
+  ],
+  "niveau_preuve": {
+    "niveau": "B",
+    "justification": "Etude de cas vendor chiffree (Aarki) sur Angry Birds 2 avec multiplicateurs de ROI, plus le blog produit de la marque qui documente la couche ML de pLTV et le perimetre de Beacon. Pas de resultat en resultats financiers publics, donc B."
+  },
+  "dates": {
+    "lancement": "2023-03 (annonce publique de Beacon ; plateforme developpee sur 10+ ans)",
+    "derniere_confirmation_activite": "2023",
+    "verifie_le": "2026-07-11",
+    "revoir_apres": "2027-01-11"
+  },
+  "statut_vivant": {
+    "statut": "confirme",
+    "note": "Beacon reste la plateforme de production de Rovio, desormais dans le groupe Sega. Le dernier signal public fort remonte a 2023 ; l'usage interne du pLTV pour l'UA n'a pas ete dementi depuis."
+  },
+  "sources": [
+    {
+      "ref": "S1",
+      "type": "blog_officiel",
+      "fiabilite": "T2_officiel_interesse",
+      "titre": "Beacon by Rovio - The Games platform",
+      "url": "https://www.rovio.com/articles/beacon-by-rovio-the-games-platform/",
+      "date_publication": "2023-03-10",
+      "consulte_le": "2026-07-11"
+    },
+    {
+      "ref": "S2",
+      "type": "customer_story_plateforme",
+      "fiabilite": "T2_officiel_interesse",
+      "titre": "Rovio Case Study (Aarki)",
+      "url": "https://marketing.aarki.com/rovio-case-study",
+      "date_publication": "",
+      "consulte_le": "2026-07-11"
+    },
+    {
+      "ref": "S3",
+      "type": "blog_officiel",
+      "fiabilite": "T2_officiel_interesse",
+      "titre": "Using Beacon and UA Data to Tailor FTUE in Rovio Games",
+      "url": "https://www.rovio.com/articles/using-beacon-and-ua-data-to-tailor-ftue-in-rovio-games/",
+      "date_publication": "",
+      "consulte_le": "2026-07-11"
+    }
+  ],
+  "fonctionnement_operationnel": {
+    "cadence": "Continu par campagne, avec reentrainement periodique des modeles de LTV et evaluation quotidienne du ROAS par cohorte.",
+    "opere_par": "Equipe user acquisition et data science de Rovio, avec un partenaire de retargeting (Aarki) sur les campagnes de reactivation.",
+    "signal_pilote": "L'attribution des mobile measurement partners et les evenements in-app precoces (D0 a D7). Si le taux d'opt-in tracking chute, le signal d'attribution se degrade et la pLTV perd en precision, ce qui casse l'allocation budgetaire.",
+    "etapes": [
+      {
+        "etape": "Collecte de l'attribution",
+        "detail": "Beacon ingere les donnees d'attribution des MMP et les evenements in-app par joueur.",
+        "acteur": "equipe data / IA"
+      },
+      {
+        "etape": "Prediction de LTV",
+        "detail": "Les modeles de reseaux de neurones estiment la valeur a long terme du joueur des le soft launch.",
+        "acteur": "IA (Beacon)"
+      },
+      {
+        "etape": "Selection et bidding des campagnes",
+        "detail": "Les campagnes UA sont choisies et enchérries en fonction de la LTV predite et de l'objectif de ROI.",
+        "acteur": "equipe UA"
+      },
+      {
+        "etape": "Retargeting des lapsed",
+        "detail": "Segmentation haute valeur et creatives adaptees pour re-engager acheteurs lapsed et non-acheteurs.",
+        "acteur": "agence (Aarki) / IA"
+      }
+    ]
+  },
+  "schema_flow": {
+    "statut": "documente",
+    "noeuds": [
+      {
+        "id": "mmp",
+        "role_generique": "data_source",
+        "label": "Attribution MMP + evenements in-app"
+      },
+      {
+        "id": "beacon",
+        "role_generique": "modele_ia",
+        "label": "Beacon - prediction pLTV et segmentation",
+        "outil_documente": "Beacon (interne Rovio), AWS"
+      },
+      {
+        "id": "ua",
+        "role_generique": "paid_platform",
+        "label": "Campagnes UA paid (selection et bidding)"
+      },
+      {
+        "id": "aarki",
+        "role_generique": "paid_platform",
+        "label": "Retargeting supervise par IA",
+        "outil_documente": "Aarki"
+      },
+      {
+        "id": "game",
+        "role_generique": "site_app",
+        "label": "Jeu (Angry Birds 2)"
+      }
+    ],
+    "liens": [
+      [
+        "game",
+        "mmp"
+      ],
+      [
+        "mmp",
+        "beacon"
+      ],
+      [
+        "beacon",
+        "ua"
+      ],
+      [
+        "beacon",
+        "aarki"
+      ],
+      [
+        "ua",
+        "game",
+        "installs"
+      ],
+      [
+        "aarki",
+        "game",
+        "reactivation des lapsed"
+      ]
+    ]
+  },
+  "replication": {
+    "statut_epistemique": "infere",
+    "prerequis_data": [
+      "attribution MMP (AppsFlyer, Adjust ou equivalent)",
+      "evenements in-app precoces D0 a D7",
+      "historique d'achats in-app"
+    ],
+    "prerequis_orga": [
+      "equipe UA capable de piloter le bidding par cohorte",
+      "data science pour maintenir les modeles pLTV",
+      "gestion du consentement tracking par marche"
+    ],
+    "stack_possible": [
+      "MMP",
+      "modele pLTV custom ou managed",
+      "plateformes UA (Meta, Google, ad networks)",
+      "partenaire de retargeting"
+    ],
+    "premiere_etape": "Instrumenter les evenements in-app precoces et brancher l'attribution MMP, puis tester un modele pLTV simple sur une campagne pilote avant d'automatiser le bidding.",
+    "playbook": [
+      {
+        "action": "Instrumenter les evenements in-app precoces (D0 a D7) et brancher l'attribution MMP.",
+        "livrable": "Pipeline de donnees par cohorte fiable."
+      },
+      {
+        "action": "Construire un premier modele pLTV simple (signaux D7 vers valeur D90 / D365) et le backtester sur les cohortes historiques.",
+        "livrable": "Modele valide avec erreur de prediction documentee."
+      },
+      {
+        "action": "Piloter une campagne UA test sur la LTV predite, avec un objectif de ROI par cohorte plutot que le CPI.",
+        "livrable": "Campagne pilote au bidding informe par la pLTV."
+      },
+      {
+        "action": "Etendre au portefeuille et lancer le retargeting des joueurs lapsed avec un partenaire, mesure a D90.",
+        "livrable": "Allocation budgetaire par pLTV et campagnes de reactivation avec lecture de ROI."
+      }
+    ],
+    "equipe": "1-2 data scientists + 1 UA manager + 1 data engineer pour le pipeline MMP ; gestion du consentement tracking par marche."
+  },
+  "seo": {
+    "slug": "rovio-beacon-ua-ltv-2023",
+    "title": "Rovio : pilotage UA par LTV predite (Beacon) - ROI D90 x1,7 sur Angry Birds 2 (2023)",
+    "meta_description": "Rovio predit la LTV joueur via sa plateforme Beacon pour allouer le budget UA ; avec Aarki, le ROI D90 a battu l'objectif de 1,7x sur Angry Birds 2.",
+    "resume_citable": "Rovio pilote son acquisition mobile avec des modeles de LTV predite (plateforme Beacon, machine learning sur attribution MMP) : sur Angry Birds 2, le retargeting IA avec Aarki a battu l'objectif de ROI a D90 de 1,7x en moyenne et atteint l'objectif de LTV a D365 en trois mois.",
+    "faq": [
+      {
+        "q": "A quoi sert le machine learning dans l'acquisition de Rovio ?",
+        "a": "A predire la valeur a long terme d'un joueur tot dans son cycle de vie, pour orienter le budget UA vers les campagnes rentables et reactiver les joueurs lapsed au bon cout."
+      },
+      {
+        "q": "Quel resultat chiffre est documente ?",
+        "a": "Sur Angry Birds 2 avec Aarki, un ROI a D90 superieur de 1,7x a l'objectif en moyenne, et l'objectif de LTV a D365 atteint en trois mois."
+      }
+    ]
+  },
+  "logo_domain": "rovio.com"
+}

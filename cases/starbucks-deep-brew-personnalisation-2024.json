@@ -1,0 +1,291 @@
+{
+  "id": "starbucks-deep-brew-personnalisation-2024",
+  "type_fiche": "succes",
+  "marque": "Starbucks",
+  "industrie": "food_beverage",
+  "marches_deploiement": [
+    "Etats-Unis"
+  ],
+  "transposable_ue": {
+    "flag": "oui_avec_adaptations",
+    "note": "La personnalisation repose sur un profil client identifie via le programme de fidelite. En UE, base legale et consentement RGPD requis pour le profilage marketing ; l'AI Act ne classe pas ce type de reco produit en haut risque, mais la transparence sur l'usage des donnees s'impose."
+  },
+  "metier": "marketing / CRM / fidelite",
+  "intervenants": [
+    {
+      "nom": "Laxman Narasimhan",
+      "role": "Chief Executive Officer, Starbucks (au moment de l'earnings call Q1 FY2024)",
+      "source_ref": "S1"
+    },
+    {
+      "nom": "Jon Francis",
+      "role": "Senior Vice President, Analytics and Market Research",
+      "source_ref": "S2"
+    }
+  ],
+  "axes": {
+    "levier": "retention",
+    "touchpoints": [
+      "application mobile",
+      "programme de fidelite Starbucks Rewards",
+      "offres et recommandations personnalisees"
+    ],
+    "etape_parcours": "fidelite",
+    "famille": "personnalisation",
+    "pattern": "recommandations et offres personnalisees par apprentissage par renforcement sur donnees de fidelite",
+    "type_ia": [
+      "apprentissage par renforcement",
+      "filtrage collaboratif",
+      "machine learning"
+    ],
+    "plateforme_stack": [
+      "custom/in-house (Deep Brew)",
+      "Microsoft Azure"
+    ],
+    "objectif_metrique": [
+      "frequence de visite",
+      "montant du panier",
+      "engagement application",
+      "spend des membres fidelite"
+    ]
+  },
+  "implementation": "hybride",
+  "objectif_business": "Augmenter la frequence de visite et le montant depense des membres Starbucks Rewards en poussant a chaque ouverture de l'app la bonne offre ou le bon produit, pour ancrer les clients reguliers et faire revenir les moins frequents.",
+  "points_cles": ["Recommandations et offres personnalisees a l'ouverture de l'app Starbucks Rewards.", "Moteur d'apprentissage par renforcement Deep Brew heberge sur Microsoft Azure.", "16 millions de membres cibles, sur une base US de 34,3 millions de membres actifs.", "Preuve A, statut signaux mitiges (Deep Brew moins cite en earnings depuis 2024)."],
+  "description": "Deep Brew est la plateforme d'IA maison de Starbucks, lancee en 2019. Sa brique de personnalisation tourne sur un moteur d'apprentissage par renforcement heberge dans Microsoft Azure. Quand un membre Rewards ouvre l'application, le systeme propose des produits et des offres calcules a partir de son historique de commande, du magasin, de l'heure, de la meteo et des preferences de clients au profil proche. Le meme moteur sert a designer des offres ciblees par cohortes de membres. Starbucks declare 16 millions de membres actifs recevant ces recommandations dans l'app, sur une base de fidelite US de 34,3 millions de membres actifs au premier trimestre de l'exercice 2024.",
+  "resultats": [
+    {
+      "metrique": "Membres recevant des recommandations personnalisees par apprentissage par renforcement",
+      "valeur": "16 M de membres",
+      "citation_exacte": "16 million active Starbucks Rewards members now receive thoughtful recommendations",
+      "source_ref": "S2"
+    },
+    {
+      "metrique": "Membres actifs fidelite US, en hausse de 13% sur un an (Q1 FY2024)",
+      "valeur": "34,3 M de membres",
+      "citation_exacte": "record 34.3 million active U.S. members",
+      "source_ref": "S3"
+    },
+    {
+      "metrique": "Deep Brew active le ciblage d'offres par cohortes (2024)",
+      "valeur": "ciblage par cohortes",
+      "citation_exacte": "identify and incentivize specific rewards members cohorts",
+      "source_ref": "S1"
+    }
+  ],
+  "niveau_preuve": {
+    "niveau": "A",
+    "justification": "Deep Brew est nomme par le CEO Laxman Narasimhan sur l'earnings call Q1 FY2024 comme levier de personnalisation des offres, et l'architecture d'apprentissage par renforcement est documentee et chiffree (16 millions de membres) par la customer story Microsoft. Sources concordantes primaire earnings + plateforme."
+  },
+  "dates": {
+    "lancement": "2019 (plateforme Deep Brew) ; personnalisation par apprentissage par renforcement dans l'app deployee a partir de 2020",
+    "derniere_confirmation_activite": "janvier 2024 (earnings call Q1 FY2024, Deep Brew cite nommement) ; personnalisation maintenue dans la refonte du programme de fidelite annoncee en 2026",
+    "verifie_le": "2026-07-11",
+    "revoir_apres": "2027-01-11"
+  },
+  "statut_vivant": {
+    "statut": "signaux_mitiges",
+    "note": "La derniere mention nominale de Deep Brew en earnings date de 2024. La personnalisation reste un pilier revendique (refonte du programme de fidelite 2026 axee personnalisation), mais la communication recente met en avant le programme de fidelite plus que la marque Deep Brew. Le pattern est actif ; l'etiquette Deep Brew l'est peut-etre moins."
+  },
+  "sources": [
+    {
+      "ref": "S1",
+      "type": "earnings_call",
+      "fiabilite": "T3_presse_etablie",
+      "titre": "Starbucks (SBUX) Q1 2024 Earnings Call Transcript",
+      "url": "https://www.fool.com/earnings/call-transcripts/2024/01/31/starbucks-sbux-q1-2024-earnings-call-transcript/",
+      "date_publication": "2024-01-31",
+      "consulte_le": "2026-07-11"
+    },
+    {
+      "ref": "S2",
+      "type": "customer_story_plateforme",
+      "fiabilite": "T2_officiel_interesse",
+      "titre": "Starbucks turns to technology to brew up a more personal connection with its customers",
+      "url": "https://news.microsoft.com/source/features/digital-transformation/starbucks-turns-to-technology-to-brew-up-a-more-personal-connection-with-its-customers/",
+      "consulte_le": "2026-07-11"
+    },
+    {
+      "ref": "S3",
+      "type": "presse",
+      "fiabilite": "T4_secondaire",
+      "titre": "Starbucks Uses AI-Powered Personalized Rewards to Boost Frequency and Spend",
+      "url": "https://www.pymnts.com/news/loyalty-and-rewards-news/2024/starbucks-uses-artificial-intelligence-powered-personalized-rewards-boost-frequency-check-size/",
+      "date_publication": "2024-01-30",
+      "consulte_le": "2026-07-11"
+    }
+  ],
+  "fonctionnement_operationnel": {
+    "cadence": "Temps reel a l'ouverture de l'app, reentrainement continu du moteur au fil des interactions",
+    "opere_par": "Equipe analytics et data science de Starbucks, en lien avec le marketing fidelite",
+    "signal_pilote": "L'historique transactionnel first-party du membre et sa reaction aux offres. Sans identifiant de fidelite reliant les commandes a une personne, le moteur perd sa matiere et retombe sur des recommandations generiques par magasin.",
+    "etapes": [
+      {
+        "etape": "Collecte des signaux",
+        "detail": "Historique de commande, magasin, heure, meteo, preferences des membres proches remontent dans le profil.",
+        "acteur": "Equipe data"
+      },
+      {
+        "etape": "Scoring des offres et produits",
+        "detail": "Le moteur d'apprentissage par renforcement classe pour chaque membre les recommandations les plus susceptibles de declencher une commande.",
+        "acteur": "IA"
+      },
+      {
+        "etape": "Affichage dans l'app",
+        "detail": "Les recommandations et offres personnalisees s'affichent a l'ouverture de l'application.",
+        "acteur": "Application"
+      },
+      {
+        "etape": "Mesure de la reponse",
+        "detail": "Commande, redemption d'offre et frequence sont mesurees et renvoyees au moteur.",
+        "acteur": "Equipe data"
+      },
+      {
+        "etape": "Reentrainement",
+        "detail": "Le moteur ajuste ses recommandations avec les nouveaux signaux ; le marketing definit les cohortes a incentiver.",
+        "acteur": "Equipe data et marketing"
+      }
+    ]
+  },
+  "schema_flow": {
+    "statut": "documente",
+    "noeuds": [
+      {
+        "id": "src",
+        "role_generique": "data_source",
+        "label": "Historique commandes, meteo, heure, magasin"
+      },
+      {
+        "id": "cdp",
+        "role_generique": "cdp",
+        "label": "Profils membres Starbucks Rewards"
+      },
+      {
+        "id": "rl",
+        "role_generique": "modele_ia",
+        "label": "Moteur d'apprentissage par renforcement",
+        "outil_documente": "Deep Brew sur Microsoft Azure"
+      },
+      {
+        "id": "app",
+        "role_generique": "site_app",
+        "label": "Application mobile Starbucks"
+      },
+      {
+        "id": "membre",
+        "role_generique": "humain",
+        "label": "Membre Rewards"
+      }
+    ],
+    "liens": [
+      [
+        "src",
+        "rl"
+      ],
+      [
+        "cdp",
+        "rl"
+      ],
+      [
+        "rl",
+        "app",
+        "recommandations personnalisees"
+      ],
+      [
+        "app",
+        "membre"
+      ],
+      [
+        "membre",
+        "src",
+        "nouvelle commande, boucle de feedback"
+      ]
+    ]
+  },
+  "replication": {
+    "statut_epistemique": "infere",
+    "prerequis_data": [
+      "historique transactionnel first-party",
+      "programme de fidelite identifiant chaque client",
+      "signaux contextuels (heure, magasin, meteo)"
+    ],
+    "prerequis_orga": [
+      "equipe data science interne",
+      "programme de fidelite actif avec base de membres",
+      "boucle de mesure des offres"
+    ],
+    "stack_possible": [
+      "moteur de reco (apprentissage par renforcement ou filtrage collaboratif)",
+      "cloud (Azure, GCP ou AWS)",
+      "CDP",
+      "application mobile"
+    ],
+    "premiere_etape": "Unifier l'historique de commande des membres fidelite dans un profil exploitable par un moteur de recommandation.",
+    "playbook": [
+      {
+        "action": "Unifier le profil membre : consolider l'historique transactionnel des membres fidelite dans un profil exploitable",
+        "livrable": "Profil client unique avec commandes, magasin et contexte"
+      },
+      {
+        "action": "Construire la v1 du moteur : filtrage collaboratif ou scoring simple des offres sur le cloud retenu",
+        "livrable": "Modele de scoring evalue offline sur l'historique"
+      },
+      {
+        "action": "Exposer les recommandations a l'ouverture de l'app pour un segment de membres, en A/B contre des offres generiques",
+        "livrable": "Personnalisation live et mesuree sur un segment"
+      },
+      {
+        "action": "Passer a l'apprentissage par renforcement : brancher la reponse aux offres (commande, redemption) comme signal de recompense",
+        "livrable": "Boucle de reentrainement continue en production"
+      },
+      {
+        "action": "Outiller le marketing : main sur les cohortes a incentiver et le design des offres ciblees",
+        "livrable": "Ciblage par cohortes operationnel, mesure frequence et panier en routine"
+      }
+    ],
+    "equipe": "2-3 data scientists + 1 data engineer + 1 PM fidelite + le marketing CRM pour le design des offres"
+  },
+  "seo": {
+    "slug": "starbucks-deep-brew-personnalisation-2024",
+    "title": "Starbucks : offres personnalisees par IA (Deep Brew) - 16 millions de membres cibles (2024)",
+    "meta_description": "Starbucks personnalise offres et recommandations pour 16 millions de membres Rewards via un moteur d'apprentissage par renforcement (Deep Brew) sur Azure.",
+    "resume_citable": "Starbucks pousse des recommandations personnalisees a 16 millions de membres Rewards actifs via son moteur d'apprentissage par renforcement Deep Brew heberge sur Microsoft Azure, cite par le CEO en earnings call Q1 2024.",
+    "faq": [
+      {
+        "q": "Qu'est-ce que Deep Brew ?",
+        "a": "La plateforme d'IA maison de Starbucks, lancee en 2019, dont la brique de personnalisation calcule offres et recommandations produit par apprentissage par renforcement sur Microsoft Azure."
+      },
+      {
+        "q": "Combien de clients sont concernes ?",
+        "a": "16 millions de membres actifs recevaient des recommandations personnalisees dans l'app, sur une base US de 34,3 millions de membres actifs au T1 de l'exercice 2024."
+      }
+    ]
+  },
+  "logo_domain": "starbucks.com",
+  "stack_technique": [
+    {
+      "nom": "Deep Brew",
+      "categorie": "plateforme",
+      "detail": "plateforme d'IA maison de Starbucks (2019), dont la brique de personnalisation calcule offres et recommandations par membre",
+      "url": "https://www.starbucks.com"
+    },
+    {
+      "nom": "Microsoft Azure",
+      "categorie": "infra",
+      "detail": "cloud qui heberge le moteur de personnalisation, documente par la customer story Microsoft",
+      "url": "https://azure.microsoft.com"
+    },
+    {
+      "nom": "Moteur d'apprentissage par renforcement",
+      "categorie": "outil",
+      "detail": "classe offres et produits par membre a partir de l'historique de commande, du magasin, de l'heure, de la meteo et des profils proches",
+      "url": "https://www.starbucks.com"
+    },
+    {
+      "nom": "Application mobile + Starbucks Rewards",
+      "categorie": "infra",
+      "detail": "surface de restitution et cle d'identification du client (34,3 millions de membres actifs US au T1 FY2024)",
+      "url": "https://www.starbucks.com"
+    }
+  ]
+}

@@ -1,0 +1,277 @@
+{
+  "type_fiche": "succes",
+  "id": "ray-ban-advantage-plus-2025",
+  "marque": "Ray-Ban",
+  "groupe": "EssilorLuxottica",
+  "industrie": "luxe_beaute",
+  "marches_deploiement": [
+    "Etats-Unis"
+  ],
+  "transposable_ue": {
+    "flag": "oui",
+    "note": "Cas mene aux Etats-Unis mais pilote par une equipe europeenne (Ray-Ban / EssilorLuxottica, Italie). En UE, l'activation demande consentement RGPD/ePrivacy, Pixel et Conversions API conformes ; l'optimisation par valeur exige de remonter la valeur d'achat cote serveur. Risque AI Act limite cote annonceur."
+  },
+  "metier": "Acquisition / media performance e-commerce",
+  "axes": {
+    "levier": "acquisition",
+    "touchpoints": [
+      "Facebook Feed",
+      "Instagram Feed",
+      "Advantage+ placements"
+    ],
+    "etape_parcours": "considération -> achat",
+    "famille": "optimisation_automatisation",
+    "pattern": "Campagne de vente automatisee par IA optimisee sur la valeur d'achat, combinee a un objectif consideration, mesuree en incremental",
+    "type_ia": [
+      "ML de ciblage et d'encheres",
+      "optimisation par valeur (value optimization)"
+    ],
+    "plateforme_stack": [
+      "Meta Advantage+ Sales Campaigns",
+      "Advantage+ audience",
+      "Advantage+ placements",
+      "Advantage campaign budget",
+      "Value optimization",
+      "Meta Conversion Lift"
+    ],
+    "objectif_metrique": [
+      "ROAS",
+      "valeur moyenne de commande",
+      "ROAS incremental",
+      "coût par conversion incrementale"
+    ]
+  },
+  "implementation": "plateforme",
+  "stack_technique": [
+    {
+      "nom": "Meta Advantage+ Sales Campaigns",
+      "categorie": "plateforme",
+      "detail": "Campagne de vente automatisee par IA : audience, placements et budget geres par Meta.",
+      "url": "https://www.facebook.com/business/ads/meta-advantage-plus"
+    },
+    {
+      "nom": "Value optimization (Meta)",
+      "categorie": "outil",
+      "detail": "Reglage d'optimisation ou l'IA vise les acheteurs a fort panier plutot que le volume brut d'achats.",
+      "url": "https://www.facebook.com/business"
+    },
+    {
+      "nom": "Meta Pixel + Conversions API",
+      "categorie": "outil",
+      "detail": "Remontee de l'achat et de son montant cote serveur, signal indispensable a l'optimisation par valeur.",
+      "url": "https://www.facebook.com/business"
+    },
+    {
+      "nom": "Meta Conversion Lift",
+      "categorie": "outil",
+      "detail": "Mesure incrementale avec methode de search lift, utilisee pour arbitrer entre les trois reglages testes.",
+      "url": "https://www.facebook.com/business"
+    }
+  ],
+  "objectif_business": "Augmenter le rendement des campagnes de vente en poussant l'IA a chercher les acheteurs de forte valeur, plutot que le simple volume d'achats.",
+  "points_cles": ["Test A/B/C de reglages sur des campagnes de vente Meta Advantage+.", "Optimisation par valeur plus objectif consideration, mesure par Conversion Lift.", "ROAS incremental de 2,08x et panier moyen en hausse de 32%.", "Preuve B, statut confirme sur des formats Meta standard."],
+  "description": "Ray-Ban, la marque de lunettes d'EssilorLuxottica, a teste comment mieux regler ses campagnes de vente Meta aux Etats-Unis. La marque a compare trois approches en A/B/C sur des campagnes Advantage+ Sales : optimisation standard, optimisation par valeur (value optimization, ou l'IA vise les acheteurs a fort panier), et optimisation par valeur combinee a un objectif consideration. Le test, du 4 fevrier au 22 mars 2025 sur un public adulte, a ete mesure par un Conversion Lift avec methode de search lift. L'optimisation par valeur seule a apporte 9 pour cent de ROAS en plus et 32 pour cent de valeur moyenne de commande en plus. En ajoutant l'objectif consideration, Ray-Ban a obtenu un ROAS incremental de 2,08x sur l'ensemble des achats, 2,1x sur les achats de verres correcteurs, et un coût par conversion incrementale sur les visites de recherche en baisse de 80 pour cent.",
+  "fonctionnement_operationnel": {
+    "cadence": "Diffusion en continu ; les reglages d'optimisation se comparent par vagues de test avec groupe temoin.",
+    "opere_par": "L'equipe performance marketing de la marque, sur le compte publicitaire Meta.",
+    "signal_pilote": "La valeur d'achat remontee cote serveur (pas seulement l'evenement d'achat). Sans valeur fiable, l'optimisation par valeur n'a rien pour distinguer un gros panier d'un petit.",
+    "etapes": [
+      {
+        "etape": "Remonter la valeur d'achat",
+        "detail": "Le Pixel et la Conversions API envoient non seulement l'achat mais son montant, pour nourrir l'optimisation par valeur.",
+        "acteur": "Équipe data"
+      },
+      {
+        "etape": "Choisir l'optimisation par valeur",
+        "detail": "La campagne Advantage+ Sales est reglee pour viser les acheteurs a fort panier plutot que le volume brut d'achats.",
+        "acteur": "Équipe media"
+      },
+      {
+        "etape": "Ajouter l'objectif consideration",
+        "detail": "Combiner value optimization et objectif consideration a fait chuter le coût par conversion incrementale et double le ROAS incremental dans le test.",
+        "acteur": "Équipe media / IA Meta"
+      },
+      {
+        "etape": "Trancher en incremental",
+        "detail": "Le choix entre les trois reglages s'est fait sur un test A/B/C et un Conversion Lift (search lift), pas sur le ROAS affiche.",
+        "acteur": "Équipe media"
+      }
+    ]
+  },
+  "resultats": [
+    {
+      "metrique": "ROAS (value optimization)",
+      "valeur": "+9 %",
+      "citation_exacte": "9% increase in return on ad spend with value optimization",
+      "source_ref": "S1"
+    },
+    {
+      "metrique": "Valeur moyenne de commande (value optimization)",
+      "valeur": "+32 %",
+      "citation_exacte": "32% increase in average order value",
+      "source_ref": "S1"
+    },
+    {
+      "metrique": "ROAS incremental sur tous les achats (value + consideration)",
+      "valeur": "2,08x",
+      "citation_exacte": "2.08X incremental ROAS on total purchases",
+      "source_ref": "S1"
+    },
+    {
+      "metrique": "Coût par conversion incrementale, visites de recherche",
+      "valeur": "-80 %",
+      "citation_exacte": "80% lower cost per incremental conversion for search visits",
+      "source_ref": "S1"
+    }
+  ],
+  "niveau_preuve": {
+    "niveau": "B",
+    "justification": "Étude de cas officielle Meta, chiffree, adossee a un test A/B/C et a un Conversion Lift (search lift), avec personne nommee ; source unique publiee par la plateforme."
+  },
+  "dates": {
+    "lancement": "2025-02-04",
+    "derniere_confirmation_activite": "2025 - test cloture le 22 mars 2025 ; Advantage+ Sales reste le format de vente par defaut de Meta",
+    "verifie_le": "2026-07-11",
+    "revoir_apres": "2027-01-11"
+  },
+  "statut_vivant": {
+    "statut": "confirme",
+    "note": "Ray-Ban (EssilorLuxottica) reste un annonceur Meta actif ; Advantage+ Sales Campaigns et l'optimisation par valeur sont des features standard de Meta, ce qui garantit la perennite du pattern."
+  },
+  "sources": [
+    {
+      "ref": "S1",
+      "type": "customer_story_plateforme",
+      "titre": "Ray-Ban: Facebook ads case study - Advantage+ sales, value optimization, Conversion Lift",
+      "url": "https://www.facebook.com/business/success/3-ray-ban",
+      "date_publication": "2025",
+      "consulte_le": "2026-07-11",
+      "fiabilite": "T2_officiel_interesse"
+    },
+    {
+      "ref": "S2",
+      "type": "blog_officiel",
+      "titre": "Meta Advantage+ Sales Campaigns: AI Automated Shop Ads",
+      "url": "https://www.facebook.com/business/ads/meta-advantage-plus/sales-campaigns",
+      "date_publication": "2024",
+      "consulte_le": "2026-07-11",
+      "fiabilite": "T2_officiel_interesse"
+    }
+  ],
+  "schema_flow": {
+    "statut": "documente",
+    "noeuds": [
+      {
+        "id": "cat",
+        "role_generique": "data_source",
+        "label": "Catalogue produit + valeur d'achat",
+        "outil_documente": "Feed produit + Pixel / Conversions API (avec montant)"
+      },
+      {
+        "id": "ai",
+        "role_generique": "paid_platform",
+        "label": "IA Meta : optimisation par valeur + objectif consideration",
+        "outil_documente": "Meta Advantage+ Sales Campaigns"
+      },
+      {
+        "id": "touch",
+        "role_generique": "site_app",
+        "label": "Feed Facebook / Instagram + Advantage+ placements"
+      },
+      {
+        "id": "buy",
+        "role_generique": "site_app",
+        "label": "Achat en ligne (dont verres correcteurs)"
+      },
+      {
+        "id": "lift",
+        "role_generique": "data_source",
+        "label": "Mesure incrementale",
+        "outil_documente": "Meta Conversion Lift (search lift)"
+      }
+    ],
+    "liens": [
+      [
+        "cat",
+        "ai"
+      ],
+      [
+        "ai",
+        "touch"
+      ],
+      [
+        "touch",
+        "buy"
+      ],
+      [
+        "buy",
+        "lift"
+      ],
+      [
+        "lift",
+        "ai",
+        "boucle d'optimisation sur la valeur"
+      ]
+    ]
+  },
+  "replication": {
+    "statut_epistemique": "infere",
+    "prerequis_data": [
+      "Valeur d'achat remontee cote serveur (montant, pas seulement l'evenement)",
+      "Pixel + Conversions API fiables",
+      "Volume d'achats suffisant pour l'optimisation par valeur et un Conversion Lift"
+    ],
+    "prerequis_orga": [
+      "Objectif oriente marge / panier plutot que volume brut",
+      "Capacite a lire un test A/B/C et une etude d'incrementalite"
+    ],
+    "stack_possible": [
+      "Meta Advantage+ Sales Campaigns + value optimization + CAPI",
+      "Conversion Lift ou geo-test comme arbitre"
+    ],
+    "premiere_etape": "Activer l'optimisation par valeur sur une campagne Advantage+ Sales et la comparer en A/B a l'optimisation standard, avec la valeur d'achat remontee via CAPI.",
+    "playbook": [
+      {
+        "action": "Fiabiliser Pixel et Conversions API en remontant le montant d'achat, pas seulement l'evenement.",
+        "livrable": "Evenements d'achat avec valeur verifies dans l'Events Manager."
+      },
+      {
+        "action": "Monter le test A/B (ou A/B/C) : optimisation standard vs value optimization, eventuellement plus objectif consideration, sur Advantage+ Sales.",
+        "livrable": "Structure de test avec cellules, budgets et duree definis."
+      },
+      {
+        "action": "Diffuser avec un Conversion Lift actif pour mesurer en incremental, sans remanier les campagnes en cours de test.",
+        "livrable": "Campagnes en diffusion avec mesure incrementale branchee."
+      },
+      {
+        "action": "Lire ROAS incremental, valeur moyenne de commande et cout par conversion incrementale, puis basculer sur le reglage gagnant.",
+        "livrable": "Decision documentee et campagne en production sur le reglage retenu."
+      }
+    ],
+    "equipe": "1 media buyer Meta + 1 dev / analyste pour la Conversions API et la remontee de la valeur d'achat."
+  },
+  "intervenants": [
+    {
+      "nom": "Chiara Boriani",
+      "role": "Performance Marketing Supervisor, Ray-Ban",
+      "source_ref": "S1"
+    }
+  ],
+  "seo": {
+    "slug": "ray-ban-meta-advantage-plus-value-optimization-2025",
+    "title": "Ray-Ban : ventes Meta optimisees sur la valeur par IA (Advantage+) - 2,08x de ROAS incremental (2025)",
+    "meta_description": "Ray-Ban (EssilorLuxottica) a regle ses campagnes Meta Advantage+ sur la valeur d'achat plus un objectif consideration : +32 % de panier moyen et 2,08x de ROAS incremental aux Etats-Unis.",
+    "resume_citable": "En 2025, Ray-Ban (EssilorLuxottica) a obtenu 2,08x de ROAS incremental et +32 % de panier moyen aux Etats-Unis en reglant ses campagnes Meta Advantage+ sur la valeur d'achat, combinee a un objectif consideration, mesure par Conversion Lift.",
+    "faq": [
+      {
+        "q": "Qu'est-ce que l'optimisation par valeur chez Meta ?",
+        "a": "Un reglage ou l'IA vise les acheteurs a fort panier plutot que le simple volume d'achats, en s'appuyant sur la valeur d'achat remontee cote serveur."
+      },
+      {
+        "q": "Le resultat de Ray-Ban est-il incremental ?",
+        "a": "Oui : le ROAS de 2,08x et la baisse de 80 % du coût par conversion sont mesures par un Conversion Lift avec methode de search lift, pas par l'attribution."
+      }
+    ]
+  },
+  "logo_domain": "ray-ban.com"
+}

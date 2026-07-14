@@ -1,0 +1,267 @@
+{
+  "id": "oneisall-amazon-ads-genai-creative-2025",
+  "type_fiche": "succes",
+  "marque": "Oneisall",
+  "industrie": "cpg_d2c",
+  "marches_deploiement": [
+    "Royaume-Uni",
+    "Europe"
+  ],
+  "transposable_ue": {
+    "flag": "oui",
+    "note": "Le cas est deja europeen (deploiement UK). L'outil genère des images lifestyle a partir du produit, sans profilage individuel ; exposition RGPD faible. Vigilance IA Act sur l'etiquetage des visuels generes par IA."
+  },
+  "metier": "marketing, retail media, creation publicitaire",
+  "intervenants": [
+    {
+      "nom": "Britty Chen",
+      "role": "Commercial Director, Oneisall",
+      "source_ref": "S1"
+    }
+  ],
+  "axes": {
+    "levier": "acquisition",
+    "touchpoints": [
+      "retail media (Amazon)",
+      "Sponsored Brands",
+      "Sponsored Products",
+      "Sponsored Display"
+    ],
+    "etape_parcours": "achat",
+    "famille": "generation",
+    "pattern": "generation d'images lifestyle par IA pour les creatives de retail media",
+    "type_ia": [
+      "generation d'images (genAI)"
+    ],
+    "plateforme_stack": [
+      "Amazon Ads Image Generator",
+      "Sponsored Brands",
+      "Sponsored Products",
+      "Sponsored Display"
+    ],
+    "objectif_metrique": [
+      "ventes",
+      "ACOS",
+      "part de voix"
+    ]
+  },
+  "implementation": "plateforme",
+  "stack_technique": [
+    {
+      "nom": "Amazon Ads Image Generator",
+      "categorie": "outil",
+      "detail": "Generateur d'images genAI integre a la console Amazon Ads : produit des visuels lifestyle mettant le produit en situation a partir de la fiche produit. Modele sous-jacent non publie par Amazon.",
+      "url": "https://advertising.amazon.com"
+    },
+    {
+      "nom": "Sponsored Brands / Sponsored Products / Sponsored Display",
+      "categorie": "plateforme",
+      "detail": "Formats publicitaires Amazon Ads dans lesquels les visuels generes sont diffuses et mesures (ventes, ACOS, part de voix).",
+      "url": "https://advertising.amazon.com"
+    },
+    {
+      "nom": "AI Creative Studio",
+      "categorie": "outil",
+      "detail": "Suite creative genAI d'Amazon Ads elargie en 2025 (images et video), successeur naturel du generateur d'images pour monter en cadence.",
+      "url": "https://advertising.amazon.com"
+    }
+  ],
+  "objectif_business": "Produire des visuels publicitaires en contexte (produits mis en situation) sans studio ni budget photo, pour tenir la cadence de creations que demandent des campagnes Sponsored sur Amazon.",
+  "points_cles": ["Generation d'images lifestyle par IA pour remplacer les visuels sur fond blanc.", "Outil Amazon Ads Image Generator, diffuse en Sponsored Brands, Products et Display.", "Ventes en hausse de 50% en glissement annuel, ACOS en baisse de 22% au UK.", "Preuve B, statut confirme et outil en expansion."],
+  "description": "Oneisall, marque de produits connectes pour animaux, a utilise le generateur d'images d'Amazon Ads pour remplacer ses visuels sur fond blanc par des images lifestyle generees par IA. L'annonceur part de la fiche produit ; l'outil produit des images qui mettent le produit en situation, servies dans les formats Sponsored Brands, Sponsored Products et Sponsored Display. Sur le marche britannique en 2025, la marque rapporte une hausse des ventes de 50 pour cent en glissement annuel, une baisse de l'ACOS de 22 pour cent et un gain de 50 pour cent de part de voix sur sa categorie de mots-cles principale. C'est un cas de generation : l'IA fabrique les visuels publicitaires, la ou l'optimisation d'enchères releve d'un autre mecanisme. Amazon documente par ailleurs que les publicites montrant le produit en contexte peuvent afficher un taux de clic superieur de 40 pour cent aux visuels sur fond blanc.",
+  "resultats": [
+    {
+      "metrique": "Ventes en glissement annuel",
+      "valeur": "+50%",
+      "citation_exacte": "50% d'augmentation des ventes",
+      "source_ref": "S1"
+    },
+    {
+      "metrique": "ACOS (cout publicitaire des ventes)",
+      "valeur": "-22%",
+      "citation_exacte": "22% de reduction de l'ACOS",
+      "source_ref": "S1"
+    },
+    {
+      "metrique": "Part de voix sur la categorie de mots-cles principale",
+      "valeur": "+50%",
+      "citation_exacte": "50% de hausse de la part des voix",
+      "source_ref": "S1"
+    },
+    {
+      "metrique": "Taux de clic, produit en contexte vs fond blanc (donnee Amazon Ads)",
+      "valeur": "jusqu'a +40%",
+      "citation_exacte": "click-through rates can be 40% higher",
+      "source_ref": "S2"
+    }
+  ],
+  "niveau_preuve": {
+    "niveau": "B",
+    "justification": "Etude de cas plateforme Amazon Ads chiffree citant nommement Oneisall et sa Commercial Director ; source officielle interessee, d'ou B. L'outil et l'ordre de grandeur du gain creatif sont confirmes par la communication produit d'Amazon."
+  },
+  "dates": {
+    "lancement": "2024-2025 (image generator ouvert en 2024, resultats Oneisall UK 2025)",
+    "derniere_confirmation_activite": "2025",
+    "verifie_le": "2026-07-11",
+    "revoir_apres": "2027-01-11"
+  },
+  "statut_vivant": {
+    "statut": "confirme",
+    "note": "Le generateur d'images d'Amazon Ads est un outil standard, elargi en 2025 (AI Creative Studio, Video Generator). Feature vivante et en expansion."
+  },
+  "sources": [
+    {
+      "ref": "S1",
+      "type": "customer_story_plateforme",
+      "fiabilite": "T2_officiel_interesse",
+      "titre": "How Oneisall increased performance with generative AI",
+      "url": "https://advertising.amazon.com/library/case-studies/oneisall",
+      "date_publication": "2025",
+      "consulte_le": "2026-07-11"
+    },
+    {
+      "ref": "S2",
+      "type": "blog_officiel",
+      "fiabilite": "T2_officiel_interesse",
+      "titre": "Amazon rolls out AI-powered image generation to help advertisers deliver a better ad experience",
+      "url": "https://www.aboutamazon.com/news/innovation-at-amazon/amazon-ads-ai-powered-image-generator",
+      "date_publication": "2023-10",
+      "consulte_le": "2026-07-11"
+    }
+  ],
+  "fonctionnement_operationnel": {
+    "cadence": "Par campagne et par test creatif : les images sont generees a la demande quand une nouvelle creation est necessaire, puis mises en diffusion.",
+    "opere_par": "Equipe retail media / marketing de la marque, dans la console Amazon Ads.",
+    "signal_pilote": "La performance de la creation (taux de clic, ventes attribuees, ACOS) qui indique quelle image mettre en avant. Sans lecture de cette performance, la generation tourne sans boucle d'amelioration.",
+    "etapes": [
+      {
+        "etape": "Selection du produit",
+        "detail": "L'equipe choisit la fiche produit a partir de laquelle generer les visuels.",
+        "acteur": "equipe marketing"
+      },
+      {
+        "etape": "Generation des images",
+        "detail": "L'outil produit plusieurs images lifestyle mettant le produit en situation.",
+        "acteur": "IA (Amazon Ads Image Generator)"
+      },
+      {
+        "etape": "Mise en campagne",
+        "detail": "Les visuels retenus alimentent Sponsored Brands, Sponsored Products et Sponsored Display.",
+        "acteur": "equipe retail media"
+      },
+      {
+        "etape": "Mesure et iteration",
+        "detail": "Suivi des ventes, de l'ACOS et de la part de voix pour garder les meilleures creations.",
+        "acteur": "equipe retail media"
+      }
+    ]
+  },
+  "schema_flow": {
+    "statut": "approche_type",
+    "noeuds": [
+      {
+        "id": "product",
+        "role_generique": "data_source",
+        "label": "Fiche produit"
+      },
+      {
+        "id": "imagegen",
+        "role_generique": "modele_ia",
+        "label": "Generation d'images lifestyle",
+        "outil_documente": "Amazon Ads Image Generator"
+      },
+      {
+        "id": "sponsored",
+        "role_generique": "paid_platform",
+        "label": "Sponsored Brands / Products / Display"
+      },
+      {
+        "id": "perf",
+        "role_generique": "data_source",
+        "label": "Ventes, ACOS, part de voix"
+      },
+      {
+        "id": "team",
+        "role_generique": "humain",
+        "label": "Equipe retail media Oneisall"
+      }
+    ],
+    "liens": [
+      [
+        "product",
+        "imagegen"
+      ],
+      [
+        "imagegen",
+        "team",
+        "images proposees"
+      ],
+      [
+        "team",
+        "sponsored",
+        "creation retenue"
+      ],
+      [
+        "sponsored",
+        "perf"
+      ],
+      [
+        "perf",
+        "team",
+        "meilleures creations gardees"
+      ]
+    ]
+  },
+  "replication": {
+    "statut_epistemique": "infere",
+    "playbook": [
+      {
+        "action": "Choisir un produit best-seller et generer une serie d'images lifestyle depuis la fiche produit dans la console Amazon Ads.",
+        "livrable": "5-10 visuels candidats selectionnes par l'equipe"
+      },
+      {
+        "action": "Lancer un test Sponsored Brands a budget egal : visuels lifestyle generes contre visuels fond blanc existants.",
+        "livrable": "Campagnes de test en diffusion"
+      },
+      {
+        "action": "Lire taux de clic, ventes attribuees et ACOS ; couper les creations perdantes, garder les gagnantes.",
+        "livrable": "Read de test documente avec creations retenues"
+      },
+      {
+        "action": "Etendre aux autres produits et aux formats Sponsored Products et Display, et poser le process d'etiquetage des visuels generes (AI Act).",
+        "livrable": "Bibliotheque de creatives genAI + process d'etiquetage"
+      }
+    ],
+    "equipe": "1 responsable retail media (interne ou agence) ; ni studio photo ni profil data necessaires",
+    "prerequis_data": [
+      "fiches produit sur Amazon",
+      "acces console Amazon Ads"
+    ],
+    "prerequis_orga": [
+      "equipe retail media capable de tester des creations",
+      "process d'etiquetage des visuels generes (IA Act)"
+    ],
+    "stack_possible": [
+      "Amazon Ads Image Generator",
+      "AI Creative Studio"
+    ],
+    "premiere_etape": "Generer des images lifestyle pour un produit best-seller et les tester en Sponsored Brands contre les visuels sur fond blanc."
+  },
+  "seo": {
+    "slug": "oneisall-amazon-ads-genai-creative-2025",
+    "title": "Oneisall : visuels publicitaires generes par IA sur Amazon Ads - +50% de ventes, -22% d'ACOS (2025)",
+    "meta_description": "Oneisall a remplace ses visuels fond blanc par des images lifestyle generees par IA (Amazon Ads Image Generator) : ventes +50% en glissement annuel et ACOS -22% au UK.",
+    "resume_citable": "Oneisall a genere ses creatives Amazon Ads avec l'image generator (genAI) au Royaume-Uni en 2025 et rapporte des ventes en hausse de 50% en glissement annuel, un ACOS en baisse de 22% et une part de voix en hausse de 50% sur sa categorie principale.",
+    "faq": [
+      {
+        "q": "Que genère l'IA dans ce cas Amazon ?",
+        "a": "Des images publicitaires lifestyle : l'outil met le produit en situation a partir de la fiche produit, pour remplacer les visuels sur fond blanc dans les formats Sponsored."
+      },
+      {
+        "q": "Pourquoi passer du fond blanc au lifestyle ?",
+        "a": "Amazon documente que les publicites montrant le produit en contexte peuvent afficher un taux de clic superieur de 40 pour cent aux visuels sur fond blanc."
+      }
+    ]
+  },
+  "logo_domain": "oneisall.com"
+}

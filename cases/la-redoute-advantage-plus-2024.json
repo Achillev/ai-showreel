@@ -1,0 +1,311 @@
+{
+  "type_fiche": "succes",
+  "id": "la-redoute-advantage-plus-2024",
+  "marque": "La Redoute",
+  "industrie": "retail_ecom",
+  "marches_deploiement": [
+    "France",
+    "Espagne",
+    "Portugal"
+  ],
+  "transposable_ue": {
+    "flag": "oui",
+    "note": "Déjà déployé en UE. Nécessite consentement RGPD/ePrivacy propre (Pixel + Conversions API) ; ciblage algorithmique Meta = risque limité au sens de l'AI Act, pas d'obligation lourde côté annonceur."
+  },
+  "metier": "Acquisition / media performance e-commerce",
+  "marque_linkedin": "https://www.linkedin.com/company/la-redoute",
+  "axes": {
+    "levier": "acquisition",
+    "touchpoints": [
+      "Facebook Feed",
+      "Instagram Feed",
+      "Reels",
+      "Stories"
+    ],
+    "etape_parcours": "découverte -> achat",
+    "famille": "optimisation_automatisation",
+    "pattern": "Campagne paid social entièrement automatisée par IA (audiences, placements, enchères, combinaisons créatives), mesurée en incrémental",
+    "type_ia": [
+      "ML de ciblage et d'enchères",
+      "optimisation créative automatisée",
+      "ads catalogue dynamiques"
+    ],
+    "plateforme_stack": [
+      "Meta Advantage+ Shopping",
+      "Meta Advantage+ Catalog Ads",
+      "Meta Conversion Lift",
+      "Ykone (créateurs)"
+    ],
+    "objectif_metrique": [
+      "ROAS",
+      "coût par achat",
+      "achats incrémentaux"
+    ]
+  },
+  "implementation": "plateforme",
+  "objectif_business": "Vendre plus en ligne en Espagne et au Portugal sans alourdir la gestion des campagnes : l'IA de Meta pilote la diffusion, l'équipe se concentre sur le catalogue et les créas.",
+  "points_cles": ["Campagne paid social entierement automatisee par IA, mesuree en incremental.", "Meta Advantage+ Shopping enrichi de Reels createurs, mesure via Conversion Lift.", "+51% de ROAS incremental, +35% d'achats, -26% de cout par achat.", "Preuve B, statut confirme."],
+  "description": "La Redoute, l'enseigne française de mode et décoration, a confié ses campagnes de vente sur Meta au mode Advantage+ Shopping. Le principe : l'annonceur fournit le catalogue produits et les visuels, et l'algorithme de Meta décide seul des audiences, des placements, des enchères et des créas à afficher. L'équipe a testé une variante en ajoutant des vidéos de créateurs produites avec l'agence Ykone, diffusées en Reels et Stories. Pour savoir si ça marchait vraiment, elle n'a pas regardé le ROAS affiché dans l'interface : elle a lancé une étude Conversion Lift avec groupe témoin, du 7 juin au 11 juillet 2024, comparant Advantage+ seul et Advantage+ enrichi des créas créateurs. La variante enrichie a sorti +51 % de ROAS incrémental, +35 % d'achats et -26 % de coût par achat. Un second test avec la plateforme The Cirqle donne un ordre de grandeur cohérent, avec un ROAS passé de 5,19 à 8,35.",
+  "fonctionnement_operationnel": {
+    "cadence": "En continu, budget quotidien. Chaque changement majeur relance une phase d'apprentissage de 1 à 2 semaines pendant laquelle on ne touche à rien.",
+    "opere_par": "L'équipe acquisition (interne ou agence media), épaulée par l'équipe e-commerce pour le feed et l'agence créative pour les vidéos.",
+    "signal_pilote": "Les achats remontés par le Pixel et la Conversions API. Si ce signal est incomplet ou en retard, l'algorithme optimise sur du bruit et les performances s'effondrent sans qu'on voie pourquoi.",
+    "etapes": [
+      {
+        "etape": "Synchroniser le catalogue",
+        "detail": "Le feed produit (prix, stock, visuels) part vers Meta et devient l'inventaire d'annonces. Un feed sale ou périmé se traduit direct en pub sur un produit en rupture.",
+        "acteur": "Équipe e-commerce / feed"
+      },
+      {
+        "etape": "Fiabiliser la mesure d'achat",
+        "detail": "Pixel plus Conversions API côté serveur, pour que chaque vente remonte même quand le navigateur bloque le tracking. C'est le carburant de l'optimisation.",
+        "acteur": "Équipe data"
+      },
+      {
+        "etape": "Charger un stock de créas",
+        "detail": "On alimente en vidéos verticales et Reels créateurs. L'algorithme teste les combinaisons lui-même ; l'équipe ne choisit pas la gagnante à sa place.",
+        "acteur": "Agence créative"
+      },
+      {
+        "etape": "Laisser l'apprentissage se faire",
+        "detail": "L'algo explore audiences, placements et enchères. Couper une campagne trop tôt ou la modifier tous les deux jours casse l'apprentissage et fait repartir de zéro.",
+        "acteur": "IA Meta"
+      },
+      {
+        "etape": "Trancher en incrémental",
+        "detail": "La décision de garder ou couper se prend sur un Conversion Lift avec groupe témoin, pas sur le ROAS attribué qui gonfle les chiffres.",
+        "acteur": "Équipe media"
+      }
+    ]
+  },
+  "resultats": [
+    {
+      "metrique": "ROAS incrémental",
+      "valeur": "+51 %",
+      "citation_exacte": "51% increase in incremental ROAS",
+      "source_ref": "S1"
+    },
+    {
+      "metrique": "Achats incrémentaux",
+      "valeur": "+35 %",
+      "citation_exacte": "35% increase in incremental purchases",
+      "source_ref": "S1"
+    },
+    {
+      "metrique": "Coût par achat incrémental",
+      "valeur": "-26 %",
+      "citation_exacte": "26% decrease in cost per incremental purchase",
+      "source_ref": "S1"
+    },
+    {
+      "metrique": "ROAS achat (test créateurs séparé)",
+      "valeur": "8,35 vs 5,19 (+61 %)",
+      "citation_exacte": "drove a 61% ROAS lift with Creator ads",
+      "source_ref": "S2"
+    }
+  ],
+  "niveau_preuve": {
+    "niveau": "B",
+    "justification": "Étude de cas officielle Meta, chiffrée et adossée à un Conversion Lift multi-cellules (méthode incrémentale sérieuse), mais publiée par la plateforme elle-même ; partiellement corroborée par un test tiers (The Cirqle) avec attribution revenue."
+  },
+  "dates": {
+    "lancement": "2024-06-07",
+    "derniere_confirmation_activite": "2025 - Advantage+ devenu le standard Meta (renommé Advantage+ Sales Campaigns)",
+    "verifie_le": "2026-07-11",
+    "revoir_apres": "2027-01-11"
+  },
+  "statut_vivant": {
+    "statut": "confirme",
+    "note": "La Redoute reste un annonceur Meta actif ; le produit Advantage+ Shopping est désormais le format de vente par défaut chez Meta (>20 Md$ de run-rate annoncés fin 2024), ce qui garantit la pérennité du pattern."
+  },
+  "sources": [
+    {
+      "ref": "S1",
+      "type": "customer_story_plateforme",
+      "titre": "La Redoute - Advantage+ Shopping + creator Reels (Conversion Lift multi-cellules)",
+      "url": "https://www.facebook.com/business/success/3-la-redoute",
+      "date_publication": "2024",
+      "consulte_le": "2026-07-11",
+      "fiabilite": "T2_officiel_interesse"
+    },
+    {
+      "ref": "S2",
+      "type": "customer_story_plateforme",
+      "titre": "How La Redoute drove a 61% ROAS lift with Creator ads - The Cirqle",
+      "url": "https://thecirqle.com/success-story-la-redoute",
+      "date_publication": "2024",
+      "consulte_le": "2026-07-11",
+      "fiabilite": "T2_officiel_interesse"
+    },
+    {
+      "ref": "S3",
+      "type": "blog_officiel",
+      "titre": "Introducing New Automation Tools to Increase Sales and Drive Growth",
+      "url": "https://about.fb.com/news/2022/08/introducing-new-automation-tools-to-increase-sales-and-drive-growth/",
+      "date_publication": "2022-08-10",
+      "consulte_le": "2026-07-11",
+      "fiabilite": "T2_officiel_interesse"
+    }
+  ],
+  "schema_flow": {
+    "statut": "documente",
+    "noeuds": [
+      {
+        "id": "cat",
+        "role_generique": "data_source",
+        "label": "Catalogue produit + signaux d'achat",
+        "outil_documente": "Feed produit + Pixel / Conversions API"
+      },
+      {
+        "id": "creas",
+        "role_generique": "data_source",
+        "label": "Créas catalogue + Reels créateurs",
+        "outil_documente": "Ykone"
+      },
+      {
+        "id": "ai",
+        "role_generique": "paid_platform",
+        "label": "IA Meta : audiences, enchères, placements, créas",
+        "outil_documente": "Meta Advantage+ Shopping"
+      },
+      {
+        "id": "touch",
+        "role_generique": "site_app",
+        "label": "Feed / Reels / Stories"
+      },
+      {
+        "id": "buy",
+        "role_generique": "site_app",
+        "label": "Achat en ligne"
+      },
+      {
+        "id": "lift",
+        "role_generique": "data_source",
+        "label": "Mesure incrémentale",
+        "outil_documente": "Meta Conversion Lift"
+      }
+    ],
+    "liens": [
+      [
+        "cat",
+        "ai"
+      ],
+      [
+        "creas",
+        "ai"
+      ],
+      [
+        "ai",
+        "touch"
+      ],
+      [
+        "touch",
+        "buy"
+      ],
+      [
+        "buy",
+        "lift"
+      ],
+      [
+        "lift",
+        "ai",
+        "boucle d'optimisation"
+      ]
+    ]
+  },
+  "replication": {
+    "statut_epistemique": "infere",
+    "prerequis_data": [
+      "Catalogue produit propre et à jour (feed)",
+      "Pixel + Conversions API avec événements d'achat fiables (50+ conversions/semaine)",
+      "Listes clients pour exclusion / plafond clients existants"
+    ],
+    "prerequis_orga": [
+      "Banque de créas vidéo verticales (créateurs / UGC)",
+      "Capacité à laisser tourner l'apprentissage algorithmique sans sur-piloter"
+    ],
+    "stack_possible": [
+      "Meta Advantage+ Sales Campaigns + CAPI (server-side GTM, Shopify ou partenaire)",
+      "Mesure via Conversion Lift ou geo-test"
+    ],
+    "premiere_etape": "Lancer un test A/B structuré : campagne Advantage+ (20-30 % du budget social) vs structure manuelle existante, avec Conversion Lift ou incrémentalité géographique comme arbitre.",
+    "playbook": [
+      {
+        "action": "Auditer le feed produit et la mesure d'achat",
+        "livrable": "Feed propre (prix, stocks, visuels) + Pixel/CAPI valides dans Events Manager"
+      },
+      {
+        "action": "Constituer la banque de creas",
+        "livrable": "10-15 videos verticales (createurs ou UGC) + ads catalogue prets"
+      },
+      {
+        "action": "Lancer Advantage+ sur 20-30 % du budget social",
+        "livrable": "Campagne live, phase d'apprentissage enclenchee (ne plus toucher)"
+      },
+      {
+        "action": "Laisser converger, puis mesurer en incremental",
+        "livrable": "Conversion Lift ou geo-test qui tranche vs la structure manuelle"
+      },
+      {
+        "action": "Scaler ou arbitrer sur la base de l'incrémental",
+        "livrable": "Decision budget fondee sur le lift reel, pas le ROAS attribue"
+      }
+    ],
+    "equipe": "1 media buyer + 1 dev (CAPI) + creas internes ou agence"
+  },
+  "seo": {
+    "slug": "la-redoute-meta-advantage-plus-roas-2024",
+    "title": "La Redoute : paid social automatisé par IA (Meta Advantage+) - +51 % de ROAS incrémental (2024)",
+    "meta_description": "Comment La Redoute a laissé l'IA de Meta piloter ses campagnes d'acquisition e-commerce en Europe du Sud, mesuré en incrémental : +51 % de ROAS, -26 % de coût par achat.",
+    "resume_citable": "En 2024, La Redoute a obtenu +51 % de ROAS incrémental et -26 % de coût par achat en confiant ses campagnes d'acquisition à l'IA de Meta (Advantage+ Shopping), enrichie de Reels de créateurs, mesuré par Conversion Lift sur l'Espagne et le Portugal.",
+    "faq": [
+      {
+        "q": "Quelle IA La Redoute a-t-elle utilisée ?",
+        "a": "L'automatisation Meta Advantage+ Shopping, qui pilote audiences, enchères, placements et combinaisons créatives, sans modèle custom côté annonceur."
+      },
+      {
+        "q": "Le résultat est-il attribué ou incrémental ?",
+        "a": "Incrémental : la marque a utilisé une étude Conversion Lift multi-cellules, plus rigoureuse qu'une mesure d'attribution simple."
+      }
+    ]
+  },
+  "agences": [
+    {
+      "nom": "Ykone",
+      "role": "Production des créas créateurs (Reels/Stories)",
+      "source_ref": "S1"
+    },
+    {
+      "nom": "The Cirqle",
+      "role": "Plateforme de créateurs - test corroborant",
+      "source_ref": "S2"
+    }
+  ],
+  "logo_domain": "laredoute.fr",
+  "stack_technique": [
+    {
+      "nom": "Meta Advantage+ Shopping",
+      "categorie": "plateforme",
+      "detail": "ciblage, encheres, placements et combinaisons de creas pilotes par le ML de Meta",
+      "url": "https://www.facebook.com/business/ads/advantage-plus-shopping-campaigns"
+    },
+    {
+      "nom": "Conversions API (CAPI)",
+      "categorie": "infra",
+      "detail": "remontee server-side des achats, le signal qui nourrit l'algorithme",
+      "url": "https://www.facebook.com/business/tools/conversions-api"
+    },
+    {
+      "nom": "Meta Conversion Lift",
+      "categorie": "outil",
+      "detail": "mesure incrementale avec groupe temoin, l arbitre du test",
+      "url": "https://www.facebook.com/business/m/one-sheeters/conversion-lift"
+    },
+    {
+      "nom": "Ykone",
+      "categorie": "integrateur",
+      "detail": "production des videos createurs (Reels/Stories)",
+      "url": "https://www.ykone.com"
+    }
+  ]
+}

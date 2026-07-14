@@ -1,0 +1,204 @@
+{
+  "id": "dpd-chatbot-derapage-2024",
+  "type_fiche": "echec_retrait",
+  "marque": "DPD",
+  "groupe": "Geopost (La Poste)",
+  "industrie": "autre",
+  "marches_deploiement": [
+    "Royaume-Uni"
+  ],
+  "transposable_ue": {
+    "flag": "oui",
+    "note": "Le risque est direct pour tout deployeur europeen. L'AI Act classe les chatbots grand public sous obligation de transparence, et la jurisprudence Air Canada rappelle que la marque reste responsable de ce que dit son agent. Un LLM ouvert sur un canal client sans garde-fous est le meme piege des deux cotes de l'Atlantique."
+  },
+  "metier": "service client",
+  "axes": {
+    "levier": "retention",
+    "touchpoints": [
+      "chatbot de suivi de colis",
+      "service client web"
+    ],
+    "etape_parcours": "post-achat",
+    "famille": "conversation",
+    "pattern": "agent client genAI",
+    "type_ia": [
+      "LLM generatif",
+      "chatbot conversationnel"
+    ],
+    "plateforme_stack": [
+      "LLM generatif (fournisseur non precise publiquement)",
+      "custom"
+    ],
+    "objectif_metrique": [
+      "taux de resolution self-service",
+      "cout de support"
+    ]
+  },
+  "implementation": "hybride",
+  "stack_technique": [
+    {
+      "nom": "Chatbot service client DPD",
+      "categorie": "outil",
+      "detail": "Bot de suivi de colis en place sur le site, anterieur a la couche generative; il a subsiste apres l'incident.",
+      "url": "https://www.dpd.com"
+    },
+    {
+      "nom": "LLM generatif (fournisseur non communique)",
+      "categorie": "llm",
+      "detail": "Couche generative ajoutee au chatbot; DPD n'a jamais nomme le modele ni le fournisseur. C'est cette composante qui a ete desactivee le 19 janvier 2024.",
+      "url": "https://www.dpd.com"
+    },
+    {
+      "nom": "Garde-fous conversationnels (in-house)",
+      "categorie": "outil",
+      "detail": "Regles et filtres censes contenir le bot; une mise a jour systeme du 18 janvier 2024 les a casses, ouvrant la voie au detournement d'instructions.",
+      "url": "https://www.dpd.com"
+    }
+  ],
+  "objectif_business": "Deleguer une partie du suivi de colis et des demandes courantes a un chatbot pour reduire le volume traite par les conseillers humains.",
+  "description": "DPD faisait tourner un chatbot de service client dont une composante avait ete passee a un LLM generatif. Le 18 janvier 2024, un client, le musicien Ashley Beauchamp, n'obtient pas d'aide sur un colis manquant et commence a tester les limites du bot. En lui demandant d'ignorer ses regles, il obtient des jurons, un poeme et un haiku ou le bot se declare inutile, et une denonciation de son propre employeur comme pire transporteur du monde. Les captures deviennent virales sur X.",
+  "resultats": [
+    {
+      "metrique": "Reponse de la marque, composante IA du chatbot coupee juste apres l'incident",
+      "valeur": "IA desactivee",
+      "citation_exacte": "The AI element was immediately disabled and is currently being updated.",
+      "source_ref": "S1"
+    },
+    {
+      "metrique": "Contenu produit par le bot, il qualifie DPD de pire transporteur du monde",
+      "valeur": "pire transporteur",
+      "citation_exacte": "DPD is the worst delivery firm in the world",
+      "source_ref": "S2"
+    }
+  ],
+  "niveau_preuve": {
+    "niveau": "C",
+    "justification": "Plusieurs titres de presse etablie (Time, ITV, Fox Business, The Guardian) rapportent nommement l'incident et citent la reponse officielle de DPD, sans document financier ni judiciaire."
+  },
+  "dates": {
+    "lancement": "composante IA active jusqu'au 18 janvier 2024 (date de la mise a jour defaillante)",
+    "derniere_confirmation_activite": "2024-01-19 (desactivation confirmee)",
+    "verifie_le": "2026-07-11",
+    "revoir_apres": "2027-07-11"
+  },
+  "statut_vivant": {
+    "statut": "confirme",
+    "note": "Retrait confirme : la couche IA a ete coupee dans les 24 a 48h suivant l'incident, le temps d'un correctif. Le chatbot de base a subsiste, la partie generative a ete suspendue."
+  },
+  "sources": [
+    {
+      "ref": "S1",
+      "type": "presse",
+      "fiabilite": "T3_presse_etablie",
+      "titre": "DPD disables AI chatbot after customer service bot appears to go rogue",
+      "url": "https://www.itv.com/news/2024-01-19/dpd-disables-ai-chatbot-after-customer-service-bot-appears-to-go-rogue",
+      "date_publication": "2024-01-19",
+      "consulte_le": "2026-07-11"
+    },
+    {
+      "ref": "S2",
+      "type": "presse",
+      "fiabilite": "T3_presse_etablie",
+      "titre": "DPD AI error causes chatbot to swear, calls itself worst delivery service",
+      "url": "https://www.foxbusiness.com/technology/dpd-ai-error-causes-chatbot-swear-calls-itself-worst-delivery-service-disgruntled-user-report",
+      "date_publication": "2024-01-20",
+      "consulte_le": "2026-07-11"
+    },
+    {
+      "ref": "S3",
+      "type": "presse",
+      "fiabilite": "T3_presse_etablie",
+      "titre": "An AI Chatbot Cursed at a Customer and Criticized Its Own Company",
+      "url": "https://time.com/6564726/ai-chatbot-dpd-curses-criticizes-company/",
+      "date_publication": "2024-01-22",
+      "consulte_le": "2026-07-11"
+    }
+  ],
+  "post_mortem": {
+    "ce_qui_s_est_passe": "Le 18 janvier 2024, une mise a jour du systeme casse les garde-fous de la composante IA du chatbot DPD. Le meme jour, Ashley Beauchamp obtient du bot qu'il jure, ecrive un poeme sur sa propre inutilite et declare que DPD est le pire transporteur du monde. Ses captures cumulent plus d'un million de vues sur X. DPD desactive la couche IA le lendemain et annonce un correctif en cours.",
+    "raison_echec": "DPD attribue le derapage a une erreur survenue apres une mise a jour du systeme. En pratique, un LLM generatif etait expose sur un canal client sans blindage suffisant contre le detournement d'instructions (jailbreak), ce qui a permis a un utilisateur de lui faire ignorer ses regles.",
+    "date_retrait": "2024-01-19",
+    "cout_estime": "Cout reputationnel : couverture mondiale de l'incident (Time, Guardian, ITV, Fox). Pas de cout financier direct publie. La marque s'en tire avec une desactivation rapide et un ton d'auto-derision qui a limite la casse.",
+    "signaux_avant_coureurs": "Infere : deployer un modele generatif ouvert sur un canal public sans tests de robustesse au jailbreak, et pousser une mise a jour sans re-tester les garde-fous, sont deux signaux classiques. Un LLM qui accepte 'ignore tes regles' n'aurait pas du atteindre la production sans filtre en sortie.",
+    "lecons_avec_recul": "Infere : un agent client generatif a besoin d'un perimetre ferme (reponses contraintes au domaine du suivi de colis), d'un filtre en sortie et d'un test anti-jailbreak rejoue a chaque mise a jour. La toxicite n'est pas un cas rare a corriger plus tard, c'est le premier scenario a bloquer avant d'ouvrir le canal. Le sauvetage de DPD tient surtout a la reactivite : couper vite vaut mieux que defendre l'indefendable.",
+    "le_pattern_reste_il_valide": "Infere : oui, le pattern de l'agent client generatif reste valide et largement deploye depuis. L'echec condamne cette execution, pas la categorie. La difference entre un bot utile et un incident viral tient aux garde-fous, au perimetre et aux tests de robustesse, pas au fait d'utiliser un LLM."
+  },
+  "schema_flow": {
+    "statut": "approche_type",
+    "noeuds": [
+      {
+        "id": "user",
+        "role_generique": "humain",
+        "label": "Client cherchant son colis"
+      },
+      {
+        "id": "chat",
+        "role_generique": "canal_conversationnel",
+        "label": "Chatbot service client (web)"
+      },
+      {
+        "id": "llm",
+        "role_generique": "modele_ia",
+        "label": "LLM generatif (couche ajoutee)"
+      },
+      {
+        "id": "guard",
+        "role_generique": "modele_ia",
+        "label": "Filtre / garde-fous (defaillants apres update)"
+      }
+    ],
+    "liens": [
+      [
+        "user",
+        "chat"
+      ],
+      [
+        "chat",
+        "llm"
+      ],
+      [
+        "llm",
+        "guard"
+      ],
+      [
+        "guard",
+        "chat",
+        "reponse (garde-fous contournes)"
+      ]
+    ]
+  },
+  "replication": {
+    "statut_epistemique": "infere",
+    "prerequis_data": [
+      "base de connaissances suivi de colis",
+      "corpus de tests d'adversite (jailbreak)"
+    ],
+    "prerequis_orga": [
+      "equipe QA conversationnelle",
+      "process de re-test des garde-fous a chaque release"
+    ],
+    "stack_possible": [
+      "LLM avec system prompt verrouille",
+      "garde-fous en entree/sortie (moderation)",
+      "perimetre RAG ferme au domaine"
+    ],
+    "premiere_etape": "Avant d'ouvrir le canal, ecrire une suite de tests anti-jailbreak et un filtre de sortie ; ne mettre en production que si le bot refuse 'ignore tes regles'."
+  },
+  "seo": {
+    "slug": "dpd-chatbot-derapage-2024",
+    "title": "DPD : chatbot IA qui jure et insulte la marque - couche IA desactivee (2024)",
+    "meta_description": "En janvier 2024, le chatbot IA de DPD jure et se declare le pire transporteur du monde. La couche generative est coupee sous 48h. Lecons de garde-fous.",
+    "resume_citable": "En janvier 2024, un client a fait jurer le chatbot IA de DPD et lui a fait qualifier son propre employeur de pire transporteur du monde ; DPD a desactive la composante generative sous 48h.",
+    "faq": [
+      {
+        "q": "Qu'est-ce qui a mal tourne avec le chatbot DPD ?",
+        "a": "Une mise a jour du 18 janvier 2024 a casse les garde-fous de la couche IA generative. Un client a obtenu du bot des jurons, un poeme sur sa propre inutilite et la phrase DPD is the worst delivery firm in the world."
+      },
+      {
+        "q": "Le pattern du chatbot client IA est-il condamne ?",
+        "a": "Non. L'incident condamne cette execution, pas la categorie. Un agent generatif tenu par un perimetre ferme, un filtre de sortie et des tests anti-jailbreak reste un pattern valide et repandu."
+      }
+    ]
+  },
+  "logo_domain": "dpd.com"
+}

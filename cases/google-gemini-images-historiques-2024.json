@@ -1,0 +1,207 @@
+{
+  "id": "google-gemini-images-historiques-2024",
+  "type_fiche": "echec_retrait",
+  "marque": "Google Gemini",
+  "groupe": "Google (Alphabet)",
+  "industrie": "media_entertainment",
+  "marches_deploiement": [
+    "International"
+  ],
+  "transposable_ue": {
+    "flag": "oui",
+    "note": "Le risque produit est identique en Europe. L'AI Act impose des obligations de transparence sur les contenus generes, et une IA grand public produisant des images historiquement fausses expose l'editeur a un retour de baton public et a des questions de conformite. La lecon sur le reglage anti-biais qui deraille vaut pour tout modele generatif deploye a grande echelle, quel que soit le marche."
+  },
+  "metier": "produit IA grand public / generation d'images",
+  "axes": {
+    "levier": "activation_conversion",
+    "touchpoints": [
+      "application Gemini",
+      "generation d'images"
+    ],
+    "etape_parcours": "consideration",
+    "famille": "generation",
+    "pattern": "generation d'images genAI grand public",
+    "type_ia": [
+      "generation d'images (diffusion)",
+      "modele multimodal"
+    ],
+    "plateforme_stack": [
+      "Google Gemini",
+      "Imagen"
+    ],
+    "objectif_metrique": [
+      "engagement produit",
+      "parite concurrentielle",
+      "adoption"
+    ]
+  },
+  "implementation": "custom",
+  "objectif_business": "Offrir dans Gemini une generation d'images grand public competitive face aux autres assistants IA, pour retenir et engager les utilisateurs.",
+  "description": "Debut fevrier 2024, Google active la generation d'images de personnes dans Gemini. Des utilisateurs constatent que le modele produit des images historiquement fausses : soldats allemands de la Seconde Guerre mondiale racialement divers, peres fondateurs americains non blancs, papesses. Le 22 fevrier 2024, Google suspend la generation d'images de personnes. Dans un billet officiel du 23 fevrier, l'entreprise explique que son reglage destine a montrer une diversite de personnes n'a pas su exclure les cas ou cette diversite n'avait pas lieu d'etre, et que le modele etait devenu trop prudent, refusant des requetes anodines.",
+  "resultats": [
+    {
+      "metrique": "Generation d'images de personnes suspendue",
+      "valeur": "22 fevrier 2024",
+      "citation_exacte": "we're going to pause the image generation of people",
+      "source_ref": "S2"
+    },
+    {
+      "metrique": "Google reconnait que le reglage a manque sa cible sur les images historiques",
+      "valeur": "admission officielle",
+      "citation_exacte": "failed to account for cases that should clearly not show a range",
+      "source_ref": "S1"
+    }
+  ],
+  "niveau_preuve": {
+    "niveau": "C",
+    "justification": "Cas etabli par un billet officiel de Google (source primaire, admission de la marque) et par la presse etablie (TechCrunch, CNBC, Time, Variety) citant la suspension et ses raisons. Le niveau reste C faute de document financier ou judiciaire, mais l'admission officielle renforce la fiabilite."
+  },
+  "dates": {
+    "lancement": "debut fevrier 2024 (activation de la generation d'images de personnes)",
+    "derniere_confirmation_activite": "2024-02-22 (suspension de la generation d'images de personnes)",
+    "verifie_le": "2026-07-11",
+    "revoir_apres": "2027-07-11"
+  },
+  "statut_vivant": {
+    "statut": "confirme",
+    "note": "Retrait confirme : la generation d'images de personnes a ete suspendue le 22 fevrier 2024. Google a annonce une version corrigee ulterieure ; la fiche documente l'episode de retrait, pas l'etat courant du produit."
+  },
+  "sources": [
+    {
+      "ref": "S1",
+      "type": "blog_officiel",
+      "fiabilite": "T1_primaire",
+      "titre": "Gemini image generation got it wrong. We'll do better.",
+      "url": "https://blog.google/products-and-platforms/products/gemini/gemini-image-generation-issue/",
+      "date_publication": "2024-02-23",
+      "consulte_le": "2026-07-11"
+    },
+    {
+      "ref": "S2",
+      "type": "presse",
+      "fiabilite": "T3_presse_etablie",
+      "titre": "Google pauses Gemini's ability to generate images of people after historical inaccuracies",
+      "url": "https://techcrunch.com/2024/02/22/google-gemini-image-pause-people/",
+      "date_publication": "2024-02-22",
+      "consulte_le": "2026-07-11"
+    },
+    {
+      "ref": "S3",
+      "type": "presse",
+      "fiabilite": "T3_presse_etablie",
+      "titre": "Google pauses Gemini AI image generator after it created inaccurate historical pictures",
+      "url": "https://www.cnbc.com/2024/02/22/google-pauses-gemini-ai-image-generator-after-inaccuracies.html",
+      "date_publication": "2024-02-22",
+      "consulte_le": "2026-07-11"
+    }
+  ],
+  "post_mortem": {
+    "ce_qui_s_est_passe": "Debut fevrier 2024, Google active la generation d'images de personnes dans Gemini. Des utilisateurs montrent qu'elle produit des images historiquement fausses : soldats allemands de 1939-1945 racialement divers, peres fondateurs non blancs, papesses. Le 22 fevrier, Google suspend la generation d'images de personnes. Le 23 fevrier, un billet officiel explique que le reglage cense montrer une diversite de personnes n'a pas su exclure les cas ou elle n'avait pas lieu d'etre, et que le modele refusait aussi a tort des requetes anodines.",
+    "raison_echec": "Un reglage anti-biais applique globalement pour garantir la diversite des personnes generees, sans exception pour les contextes historiques ou une representation precise s'impose. Le systeme a surcorrige, produisant des images fausses, puis est devenu trop restrictif. Google le reconnait publiquement.",
+    "date_retrait": "2024-02-22",
+    "cout_estime": "Cout reputationnel et politique important : controverse mondiale, accusations de biais ideologique, pression sur la direction. La generation d'images de personnes est restee indisponible plusieurs mois. Impact chiffre sur le cours ou les revenus non isole publiquement.",
+    "signaux_avant_coureurs": "Infere : appliquer une regle de diversite de maniere uniforme, sans distinguer les prompts ou l'exactitude historique prime, etait un point de rupture previsible. Un jeu de tests couvrant des figures et periodes historiques connues aurait revele la surcorrection avant l'ouverture au public.",
+    "lecons_avec_recul": "Infere : un correctif de biais applique globalement doit etre conditionnel au contexte du prompt. La diversite par defaut est utile pour des personnes generiques, nuisible pour des faits historiques precis. Il faut tester un modele generatif contre des cas ou la bonne reponse est contrainte, pas seulement contre des cas ouverts, et prevoir un mecanisme de desactivation rapide, ce que Google a su faire.",
+    "le_pattern_reste_il_valide": "Infere : oui, la generation d'images grand public reste un pattern valide et central dans les assistants IA, Google inclus apres correctif. L'echec condamne une methode de reglage anti-biais non contextuelle, pas la generation d'images. La lecon est de calibrer la diversite selon le contexte du prompt plutot que de l'imposer partout."
+  },
+  "schema_flow": {
+    "statut": "approche_type",
+    "noeuds": [
+      {
+        "id": "user",
+        "role_generique": "humain",
+        "label": "Utilisateur qui demande une image"
+      },
+      {
+        "id": "gemini",
+        "role_generique": "canal_conversationnel",
+        "label": "Application Gemini"
+      },
+      {
+        "id": "tuning",
+        "role_generique": "modele_ia",
+        "label": "Couche de reglage diversite (non contextuelle)"
+      },
+      {
+        "id": "imggen",
+        "role_generique": "modele_ia",
+        "label": "Generateur d'images",
+        "outil_documente": "Imagen"
+      }
+    ],
+    "liens": [
+      [
+        "user",
+        "gemini"
+      ],
+      [
+        "gemini",
+        "tuning"
+      ],
+      [
+        "tuning",
+        "imggen",
+        "instruction diversite appliquee partout"
+      ],
+      [
+        "imggen",
+        "gemini",
+        "image (parfois historiquement fausse)"
+      ]
+    ]
+  },
+  "stack_technique": [
+    {
+      "nom": "Google Gemini",
+      "categorie": "plateforme",
+      "detail": "Application assistant grand public dans laquelle la generation d'images de personnes a ete activee debut fevrier 2024 puis suspendue le 22 fevrier",
+      "url": "https://gemini.google.com"
+    },
+    {
+      "nom": "Imagen",
+      "categorie": "llm",
+      "detail": "Modele de generation d'images (diffusion) de Google utilise derriere Gemini",
+      "url": "https://deepmind.google"
+    },
+    {
+      "nom": "Couche de reglage diversite",
+      "categorie": "outil",
+      "detail": "Reglage in-house destine a montrer une diversite de personnes, applique sans distinction de contexte ; c'est ce composant que Google a mis en cause dans son billet du 23 fevrier 2024",
+      "url": "https://www.google.com"
+    }
+  ],
+  "replication": {
+    "statut_epistemique": "infere",
+    "prerequis_data": [
+      "jeu de tests de prompts historiques et sensibles",
+      "grille de contextes ou l'exactitude prime sur la diversite"
+    ],
+    "prerequis_orga": [
+      "revue produit avant lancement",
+      "mecanisme de desactivation rapide d'une feature"
+    ],
+    "stack_possible": [
+      "reglage de diversite conditionnel au contexte du prompt",
+      "banc de tests adversariaux avant release",
+      "kill switch feature"
+    ],
+    "premiere_etape": "Constituer un banc de tests de prompts a reponse contrainte (figures et periodes historiques) et exiger qu'il passe avant toute ouverture publique du generateur."
+  },
+  "seo": {
+    "slug": "google-gemini-images-historiques-2024",
+    "title": "Google Gemini : generation d'images historiques suspendue apres surcorrection (2024)",
+    "meta_description": "Le 22 fevrier 2024, Google suspend la generation d'images de personnes dans Gemini apres des images historiques fausses. Le reglage anti-biais avait surcorrige.",
+    "resume_citable": "Le 22 fevrier 2024, Google a suspendu la generation d'images de personnes dans Gemini apres qu'un reglage anti-biais non contextuel eut produit des images historiquement fausses, comme des soldats nazis racialement divers ; Google l'a reconnu dans un billet officiel.",
+    "faq": [
+      {
+        "q": "Pourquoi Google a-t-il suspendu les images de personnes dans Gemini ?",
+        "a": "Un reglage destine a montrer une diversite de personnes s'appliquait meme aux contextes historiques ou une representation precise s'impose, produisant des images fausses. Le modele est aussi devenu trop prudent et refusait des requetes anodines. Google a suspendu la feature le 22 fevrier 2024."
+      },
+      {
+        "q": "Le pattern de generation d'images IA est-il condamne ?",
+        "a": "Non. La generation d'images grand public reste centrale dans les assistants IA. L'echec condamne un reglage anti-biais applique sans tenir compte du contexte du prompt, pas la generation d'images elle-meme."
+      }
+    ]
+  },
+  "logo_domain": "google.com"
+}
