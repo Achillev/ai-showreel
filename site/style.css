@@ -62,7 +62,7 @@ p { text-wrap: pretty; }
 .brand-mark { color: var(--accent); }
 .brand-sub { font-weight: 400; font-size: 12.5px; color: var(--ink-faint); letter-spacing: 0; }
 .site-head nav { display: flex; gap: 22px; font-size: 14.5px; font-weight: 500; }
-.site-head nav a { position: relative; color: var(--ink-soft); padding: 3px 0; transition: color .15s ease; }
+.site-head nav a { position: relative; color: var(--ink-soft); padding: 3px 0; transition: color .15s ease; text-decoration: none; }
 .site-head nav a::after { content: ""; position: absolute; left: 0; right: 0; bottom: -3px; height: 2px; border-radius: 2px; background: var(--accent); transform: scaleX(0); transform-origin: left; transition: transform .24s cubic-bezier(.4,0,.2,1); }
 .head-nav { display: flex; align-items: center; gap: 22px; }
 .nav-utils { display: flex; align-items: center; gap: 14px; flex-shrink: 0; }
@@ -472,12 +472,17 @@ a:focus-visible, button:focus-visible, .card:focus-visible, .feedback-btn:focus-
 }
 ::selection { background: var(--accent-soft); color: var(--ink); }
 /* reveal doux au scroll (ajoute par JS ; sans JS ou en reduced-motion, le contenu reste visible) */
-.reveal { opacity: 0; transform: translateY(16px); transition: opacity .55s ease, transform .55s cubic-bezier(.2,.6,.2,1); }
-.reveal.in { opacity: 1; transform: none; }
+/* fondu d'entree du hero au chargement (CSS pur, se termine toujours visible, ne cache jamais) */
+@keyframes heroIn { from { opacity: 0; transform: translateY(14px); } to { opacity: 1; transform: none; } }
+.hero > * { animation: heroIn .6s cubic-bezier(.2,.6,.2,1) both; }
+.hero > h1 { animation-delay: .03s; }
+.hero > .lede { animation-delay: .12s; }
+.hero > .hero-stats { animation-delay: .2s; }
+@media (prefers-reduced-motion: reduce) { .hero > * { animation: none; } }
 html { scroll-behavior: smooth; }
 
 /* affordances de survol coherentes (feedback d'interaction) */
-.site-head nav a:hover { color: var(--ink); }
+.site-head nav a:hover { color: var(--ink); text-decoration: none; }
 .site-head nav a:hover::after { transform: scaleX(1); }
 .cell.filled { transition: transform .12s ease, box-shadow .12s ease; }
 .cell.filled:hover { transform: translateY(-1px); box-shadow: 0 2px 4px rgba(20,24,31,.08), 0 12px 28px rgba(20,24,31,.1); }

@@ -322,12 +322,6 @@ document.querySelectorAll('#site-nav nav a').forEach(function(a){a.addEventListe
 document.addEventListener('keydown',function(e){if(e.key==='Escape'&&h.classList.contains('nav-open')){setOpen(false);bg.focus();}});
 document.addEventListener('click',function(e){if(h.classList.contains('nav-open')&&!h.contains(e.target))setOpen(false);});
 var mq=matchMedia('(min-width: 781px)');mq.addEventListener('change',function(e){if(e.matches)setOpen(false);});}
-if('IntersectionObserver' in window && !matchMedia('(prefers-reduced-motion: reduce)').matches){
-  var rev=[].slice.call(document.querySelectorAll('.cards, .pattern-group, .pays-card, .band, .feedback'));
-  rev.forEach(function(e){e.classList.add('reveal');});
-  var io=new IntersectionObserver(function(en){en.forEach(function(x){if(x.isIntersecting){x.target.classList.add('in');io.unobserve(x.target);}});},{threshold:.06,rootMargin:'0px 0px -30px 0px'});
-  rev.forEach(function(e){io.observe(e);});
-}
 })();</script>
 </body></html>`);
 }
