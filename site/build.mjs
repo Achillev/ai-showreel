@@ -296,8 +296,10 @@ function page(title, body, { desc = '', jsonld = '', canonical = '', path = '' }
 <a class="skip" href="#main">${t('Aller au contenu', 'Skip to content')}</a>
 <header class="site-head">
   <a class="brand" href="${P()}/" translate="no"><span class="brand-mark" aria-hidden="true">◆</span> AI&nbsp;Showreel <span class="brand-sub">${t("l'analyse niveau grand cabinet, pour tout le monde", 'consulting-grade analysis, for everyone')}</span></a>
-  <nav aria-label="${t('Navigation principale', 'Main navigation')}">${navHtml}</nav>${BILINGUAL ? `
-  <a class="lang-switch" href="${esc(altUrl)}" hreflang="${LANG === 'en' ? 'fr' : 'en'}" aria-label="${t('Voir en anglais', 'Voir en français')}">${LANG === 'en' ? 'FR' : 'EN'}</a>` : ''}
+  <div class="head-nav">
+    <nav aria-label="${t('Navigation principale', 'Main navigation')}">${navHtml}</nav>${BILINGUAL ? `
+    <div class="lang-switch" role="group" aria-label="${t('Langue', 'Language')}"><a href="${esc(frUrl)}" hreflang="fr"${LANG === 'fr' ? ' aria-current="true"' : ''}>FR</a><a href="${esc(enUrl)}" hreflang="en"${LANG === 'en' ? ' aria-current="true"' : ''}>EN</a></div>` : ''}
+  </div>
 </header>
 <main id="main" tabindex="-1">${body}</main>
 <footer class="site-foot">

@@ -57,6 +57,11 @@ p { text-wrap: pretty; }
 .brand-sub { font-weight: 400; font-size: 12.5px; color: var(--ink-faint); letter-spacing: 0; }
 .site-head nav { display: flex; gap: 22px; font-size: 14.5px; font-weight: 500; }
 .site-head nav a { color: var(--ink-soft); }
+.head-nav { display: flex; align-items: center; gap: 22px; flex-wrap: wrap; }
+.lang-switch { display: inline-flex; align-items: center; border: 1px solid var(--line); border-radius: 999px; overflow: hidden; font-size: 12px; font-weight: 700; letter-spacing: .03em; flex-shrink: 0; }
+.lang-switch a { padding: 5px 10px; color: var(--ink-faint); line-height: 1.5; transition: color .12s ease, background .12s ease; }
+.lang-switch a:hover { color: var(--accent); text-decoration: none; }
+.lang-switch a[aria-current="true"] { background: var(--accent); color: #fff; }
 
 /* hero */
 .hero { padding: 48px 0 24px; border-bottom: 1px solid var(--line); margin-bottom: 44px; }
@@ -496,11 +501,13 @@ a, button { -webkit-tap-highlight-color: rgba(27, 77, 255, .12); }
 
 @media (max-width: 780px) {
   main { padding: 0 16px 56px; }
-  /* header en colonne + nav en bande scrollable (les 7 items restent atteignables au pouce) */
-  .site-head { flex-direction: column; align-items: stretch; gap: 8px; padding: 14px 16px 0; }
-  .site-head nav { width: 100%; min-width: 0; max-width: 100vw; gap: 22px; flex-wrap: nowrap; white-space: nowrap; overflow-x: auto; margin: 0 -16px; padding: 2px 16px 10px; scrollbar-width: none; -webkit-overflow-scrolling: touch; font-size: 15px; -webkit-mask-image: linear-gradient(90deg, #000 88%, transparent); mask-image: linear-gradient(90deg, #000 88%, transparent); }
+  /* header en colonne : brand en haut, puis [nav scrollable + toggle langue epingle a droite] */
+  .site-head { flex-direction: column; align-items: stretch; gap: 10px; padding: 14px 16px; }
+  .head-nav { display: flex; flex-wrap: nowrap; align-items: center; gap: 10px; width: 100%; min-width: 0; }
+  .site-head nav { flex: 1 1 auto; min-width: 0; gap: 22px; flex-wrap: nowrap; white-space: nowrap; overflow-x: auto; padding: 2px 0 6px; scrollbar-width: none; -webkit-overflow-scrolling: touch; font-size: 15px; -webkit-mask-image: linear-gradient(90deg, #000 90%, transparent); mask-image: linear-gradient(90deg, #000 90%, transparent); }
   .site-head nav::-webkit-scrollbar { display: none; }
   .site-head nav a { flex: 0 0 auto; min-height: 40px; display: inline-flex; align-items: center; }
+  .lang-switch { flex: 0 0 auto; }
   /* titres et sections : moins d'espace perdu, tailles calibrees pour petit ecran */
   .hero { padding: 22px 0 18px; margin-bottom: 30px; }
   .section { margin: 42px 0; }
