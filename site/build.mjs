@@ -5,9 +5,12 @@
 import { readFileSync, readdirSync, writeFileSync, mkdirSync, rmSync, cpSync, existsSync } from 'node:fs';
 import { fileURLToPath } from 'node:url';
 import { dirname, join } from 'node:path';
+import { createHash } from 'node:crypto';
 import { runGate, normalizeHtmlText } from './qa-gate.mjs';
 
 const __dir = dirname(fileURLToPath(import.meta.url));
+// version du CSS (hash du contenu) -> casse le cache navigateur des qu'il change (evite HTML neuf + CSS cache = layout casse)
+const CSS_VER = createHash('md5').update(readFileSync(join(__dir, 'style.css'))).digest('hex').slice(0, 8);
 const ROOT = join(__dir, '..');
 const CASES_DIR = join(ROOT, 'cases');
 const DIST = join(ROOT, 'dist');
@@ -289,7 +292,7 @@ function page(title, body, { desc = '', jsonld = '', canonical = '', path = '' }
 <meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="${esc(title)}"><meta name="twitter:description" content="${esc(desc)}"><meta name="twitter:image" content="${ogImg}">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400..700;1,9..144,400..600&family=Hanken+Grotesk:wght@400;500;600;700&display=swap">
-<link rel="stylesheet" href="/assets/style.css">
+<link rel="stylesheet" href="/assets/style.css?v=${CSS_VER}">
 <script type="application/ld+json">${JSON.stringify(graph)}</script>
 <script defer src="/_vercel/insights/script.js"></script>
 </head><body>
