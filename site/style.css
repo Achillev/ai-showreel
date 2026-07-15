@@ -750,22 +750,26 @@ html:not(.js-anim) .pipeline-line { stroke-dashoffset: 0; }
 .matrix-wrap { padding-bottom: 2px; }
 /* en-tetes : mono, discrets (Gestalt similarite avec les labels KPI) */
 .matrix thead th, .matrix .row-h { font-family: var(--font-mono); font-size: 10.5px; font-weight: 500; text-transform: uppercase; letter-spacing: .06em; color: var(--text-muted); }
-.matrix .col-h { text-align: center; vertical-align: bottom; padding: 4px 6px 8px; line-height: 1.25; }
+.matrix .col-h { text-align: center; vertical-align: bottom; padding: 6px 6px 10px; line-height: 1.25; }
 .matrix .row-h { text-align: right; white-space: nowrap; padding: 6px 14px 6px 4px; color: var(--text-secondary); }
 .matrix .corner-h { padding: 0; }
-/* cases : grille d'egaux, un peu plus grandes, ratio confortable */
+/* header leviers STICKY dans le module : reste visible en scrollant les lignes */
+@media (min-width: 641px) { .matrix-wrap { overflow-x: visible; } }
+.matrix thead th { position: sticky; top: 0; z-index: 5; background: var(--bg-primary); box-shadow: 0 1px 0 var(--border-subtle); }
+/* cases : grille d'egaux, ratio confortable */
 .matrix .cell { width: 108px; height: 62px; border-radius: 10px; }
-/* heatmap : une seule teinte, intensite = densite de cas (lecture preattentive) */
-.matrix .cell.filled { background: color-mix(in srgb, var(--accent-primary) calc(9% + var(--v, 0) * 30%), var(--bg-secondary)); border: 1px solid color-mix(in srgb, var(--accent-primary) calc(14% + var(--v, 0) * 34%), var(--border-subtle)); box-shadow: none; }
-/* on neutralise les liseres de grade (rainbow) : le grade vit sur chaque fiche, pas dans la vue densite */
-.matrix .cell.filled.g-A, .matrix .cell.filled.g-B, .matrix .cell.filled.g-C, .matrix .cell.filled.g-D { border-left-width: 1px; }
+/* couleur par grade (contraste fort) : case surelevee (blanc en light / relief en dark) + liseré + teinte du grade */
+.matrix .cell.filled { background: var(--bg-elevated); border: 1px solid var(--border-subtle); box-shadow: var(--shadow-card); }
+.matrix .cell.filled.g-A { border-left: 3px solid var(--gA); background: color-mix(in srgb, var(--gA) 13%, var(--bg-elevated)); }
+.matrix .cell.filled.g-B { border-left: 3px solid var(--gB); background: color-mix(in srgb, var(--gB) 13%, var(--bg-elevated)); }
+.matrix .cell.filled.g-C { border-left: 3px solid var(--gC); background: color-mix(in srgb, var(--gC) 13%, var(--bg-elevated)); }
+.matrix .cell.filled.g-D { border-left: 3px solid var(--gD); background: color-mix(in srgb, var(--gD) 13%, var(--bg-elevated)); }
 .matrix .cell.filled a { font-size: 21px; line-height: 62px; color: var(--text-primary); }
 .matrix .cell.filled:hover a { color: var(--text-primary); }
 .matrix .cell.filled:hover { box-shadow: var(--shadow-card-hover); }
-/* legende : barre de gradient qui montre l'echelle */
 .matrix-legend { align-items: center; }
-.lg-scale { display: inline-block; width: 46px; height: 12px; border-radius: 3px; background: linear-gradient(90deg, color-mix(in srgb, var(--accent-primary) 9%, var(--bg-secondary)), color-mix(in srgb, var(--accent-primary) 39%, var(--bg-secondary))); border: 1px solid var(--border-subtle); vertical-align: middle; }
 @media (max-width: 640px) {
+  .matrix-wrap { overflow-x: auto; }
   .matrix .cell { width: 68px; height: 52px; border-radius: 8px; }
   .matrix .cell.filled a { font-size: 17px; line-height: 52px; }
   .matrix thead th, .matrix .row-h { font-size: 9.5px; }
