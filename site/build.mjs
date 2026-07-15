@@ -318,8 +318,14 @@ function page(title, body, { desc = '', jsonld = '', canonical = '', path = '' }
 <main id="main" tabindex="-1">${body}</main>
 <footer class="site-foot">
   <p><strong>AI Showreel</strong> ${t('— index indépendant des déploiements IA prouvés en marketing digital. Chaque cas est noté sur une échelle de preuve publique et vérifié vivant à sa date.', '— independent index of AI deployments proven at scale in digital marketing. Every case is graded on a public evidence scale and verified live at its date.')}</p>
-  <p class="foot-links"><a href="${mailto('AI Showreel - proposer un cas ou une correction', 'Votre message :\n\n\nSi c\'est une correction, merci d\'indiquer la fiche concernée et une source.')}">${t('Proposer un cas ou une correction', 'Submit a case or a correction')}</a> · <a href="${P()}/methodologie.html">${t('Méthodologie', 'Methodology')}</a></p>
+  <p class="foot-links"><a href="${mailto('AI Showreel - proposer un cas ou une correction', 'Votre message :\n\n\nSi c\'est une correction, merci d\'indiquer la fiche concernée et une source.')}">${t('Proposer un cas ou une correction', 'Submit a case or a correction')}</a> · <a href="${P()}/methodologie.html">${t('Méthodologie', 'Methodology')}</a> · <button type="button" class="getdata-btn" data-getdata>${t('Récupérer les données', 'Get the data')}</button></p>
   <p class="foot-meta">${t('« L\'Evident du marketing digital » : un index éditorialement indépendant, sans biais vendeur ni sponsor.', 'The independent evidence index for AI in digital marketing. No vendor bias, no sponsor.')}</p>
+  <div class="built-with" aria-label="${t('Construit avec', 'Built with')}">${[
+    t('Build statique', 'Static build'),
+    t('Zéro dépendance runtime', 'Zero runtime deps'),
+    'Vercel',
+    t('Vérification agentique', 'Agentic verification'),
+  ].map(x => `<span class="bw-item"><svg viewBox="0 0 12 12" aria-hidden="true"><rect x="2" y="2" width="8" height="8" rx="2" fill="none" stroke="currentColor" stroke-width="1.4"/></svg>${esc(x)}</span>`).join('')}</div>
 </footer>
 <script>(function(){
 var tt=document.querySelector('.theme-toggle');if(tt)tt.addEventListener('click',function(){var d=document.documentElement;var eff=d.getAttribute('data-theme')||(matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light');var next=eff==='dark'?'light':'dark';d.setAttribute('data-theme',next);try{localStorage.setItem('theme',next);}catch(e){}});
@@ -983,6 +989,19 @@ function methodoPage() {
   <section class="section prose">
     <h1>${t('La méthodologie <span class="is-product">est</span> le produit.', 'The methodology <span class="is-product">is</span> the product.')}</h1>
     <p class="lede">${t("N'importe qui peut lister des cas d'usage IA. La valeur n'est pas la liste — c'est le regard. Trois disciplines qu'aucun agrégateur ne s'impose.", 'Anyone can list AI use cases. The value is not the list, it is the lens. Three disciplines no aggregator imposes on itself.')}</p>
+    ${(() => {
+      const steps = [
+        [t('Collecte', 'Scraping'), t('sources primaires', 'primary sources')],
+        [t('Vérification', 'Verification'), t('chaque URL, chaque chiffre', 'every URL, every figure')],
+        [t('Scoring', 'Scoring'), t('échelle de preuve A-D', 'A-D evidence scale')],
+        [t('Publication', 'Publication'), t('daté, sourcé, bilingue', 'dated, sourced, bilingual')],
+      ];
+      const W = 820, cy = 34, n = steps.length;
+      const xs = steps.map((_, i) => 70 + i * ((W - 140) / (n - 1)));
+      const lines = xs.slice(0, -1).map((x, i) => `<line class="pipeline-line" pathLength="1" x1="${x + 15}" y1="${cy}" x2="${xs[i + 1] - 15}" y2="${cy}"/>`).join('');
+      const nodes = steps.map((s, i) => `<g class="pipeline-node"><circle cx="${xs[i]}" cy="${cy}" r="7"/><text x="${xs[i]}" y="${cy + 30}" text-anchor="middle" font-size="15">${esc(s[0])}</text><text class="pn-desc" x="${xs[i]}" y="${cy + 47}" text-anchor="middle">${esc(s[1])}</text></g>`).join('');
+      return `<svg class="pipeline" viewBox="0 0 ${W} 92" role="img" aria-label="${t('Pipeline : collecte, vérification, scoring, publication', 'Pipeline: scraping, verification, scoring, publication')}">${lines}${nodes}</svg>`;
+    })()}
 
     <h2>${t('1. Un niveau de preuve public sur chaque cas', '1. A public evidence level on every case')}</h2>
     <p>${t("~90 % des « cas d'usage IA » en circulation viennent des acteurs qui vendent la techno. Nous notons chaque cas sur une échelle explicite, et nous l'affichons :", 'About 90% of the "AI use cases" in circulation come from the players selling the tech. We grade every case on an explicit scale, and we display it:')}</p>

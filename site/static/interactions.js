@@ -337,8 +337,69 @@
     };
   }
 
+  /* ---- 6a. Curseur custom ---- */
+  function customCursor() {
+    if (coarse || reduced) return;
+    var cursor = document.createElement('div');
+    cursor.className = 'custom-cursor';
+    document.body.appendChild(cursor);
+    var mx = 0, my = 0, cx = 0, cy = 0;
+    document.addEventListener('mousemove', function (e) { mx = e.clientX; my = e.clientY; });
+    function loop() {
+      cx += (mx - cx) * 0.18; cy += (my - cy) * 0.18;
+      cursor.style.transform = 'translate3d(' + cx + 'px,' + cy + 'px,0) translate(-50%,-50%)';
+      requestAnimationFrame(loop);
+    }
+    loop();
+    document.querySelectorAll('a, button, [role="button"], .cell.filled, .cell.empty, .card').forEach(function (el) {
+      el.addEventListener('mouseenter', function () { cursor.classList.add('custom-cursor--active'); });
+      el.addEventListener('mouseleave', function () { cursor.classList.remove('custom-cursor--active'); });
+    });
+  }
+
+  /* ---- 6b. Bouton "Get the data" : modal avec exemple curl ---- */
+  function getData() {
+    var btns = [].slice.call(document.querySelectorAll('[data-getdata]'));
+    if (!btns.length) return;
+    var curl = 'curl https://ai-showreel.com/cases.json \\\n  -H "Accept: application/json"';
+    function esc(s) { var d = document.createElement('div'); d.textContent = s; return d.innerHTML; }
+    function feedback(btn) { var o = btn.textContent; btn.textContent = tr('Copié', 'Copied'); setTimeout(function () { btn.textContent = o; }, 1500); }
+    function open() {
+      var html = '<p>' + tr('Chaque cas de l\'index est disponible en JSON. Le meme dataset qui alimente la recherche.', 'Every case in the index is available as JSON. The same dataset that powers search.') + '</p>'
+        + '<div class="code-block"><button class="copy-btn" type="button">' + tr('Copier', 'Copy') + '</button>' + esc(curl) + '</div>';
+      modal.open(tr('Récupérer les données', 'Get the data'), html);
+      var btn = document.querySelector('.modal-overlay .copy-btn');
+      if (btn) btn.addEventListener('click', function () {
+        var ok = function () { feedback(btn); };
+        if (navigator.clipboard && navigator.clipboard.writeText) navigator.clipboard.writeText(curl).then(ok, function () { legacy(); });
+        else legacy();
+        function legacy() { var ta = document.createElement('textarea'); ta.value = curl; document.body.appendChild(ta); ta.select(); try { document.execCommand('copy'); } catch (e) {} document.body.removeChild(ta); ok(); }
+      });
+    }
+    btns.forEach(function (b) { b.addEventListener('click', open); });
+  }
+
+  /* ---- 6c. Schema methodologie : traces de connexion au scroll ---- */
+  function pipelineReveal() {
+    var lines = document.querySelectorAll('.pipeline-line');
+    if (!lines.length) return;
+    function showAll() { [].slice.call(lines).forEach(function (l) { l.classList.add('pipeline-line--visible'); }); }
+    if (reduced || !('IntersectionObserver' in window)) { showAll(); return; }
+    var svg = lines[0].closest('svg') || lines[0].parentNode;
+    var io = new IntersectionObserver(function (es) {
+      es.forEach(function (e) {
+        if (e.isIntersecting) {
+          [].slice.call(lines).forEach(function (l, i) { setTimeout(function () { l.classList.add('pipeline-line--visible'); }, i * 200); });
+          io.disconnect();
+        }
+      });
+    }, { threshold: 0.3 });
+    io.observe(svg);
+    setTimeout(showAll, 2500);
+  }
+
   /* ---- init ---- */
-  function init() { countUp(); constellationCanvas(); matrixInteractions(); cardTilt(); liveTimestamps(); commandPalette(); filterFLIP(); }
+  function init() { countUp(); constellationCanvas(); matrixInteractions(); cardTilt(); liveTimestamps(); commandPalette(); filterFLIP(); customCursor(); getData(); pipelineReveal(); }
   if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', init);
   else init();
 })();

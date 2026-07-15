@@ -706,9 +706,11 @@ html.js-anim .status-dot::after { animation-delay: 1s; }
 .pipeline-node text { fill: var(--text-primary); font-family: var(--font-serif); }
 .pipeline-node .pn-desc { fill: var(--text-muted); font-family: var(--font-mono); font-size: 9px; letter-spacing: .04em; text-transform: uppercase; }
 .pipeline-node circle { fill: var(--bg-secondary); stroke: var(--accent-primary); stroke-width: 1.5; }
-.pipeline-line { stroke: var(--border-strong); stroke-width: 2; stroke-dasharray: 100; stroke-dashoffset: 100; transition: stroke-dashoffset 800ms var(--ease-out-expo); }
+.pipeline-line { stroke: var(--accent-primary); stroke-width: 2; stroke-dasharray: 1; stroke-dashoffset: 1; transition: stroke-dashoffset 800ms var(--ease-out-expo); }
 .pipeline-line.pipeline-line--visible { stroke-dashoffset: 0; }
 html:not(.js-anim) .pipeline-line { stroke-dashoffset: 0; }
+.getdata-btn { font: inherit; font-size: 13px; color: var(--accent-primary); background: none; border: 0; padding: 0; cursor: pointer; }
+.getdata-btn:hover { text-decoration: underline; }
 
 /* ---- Signal "Built with" (footer) ---- */
 .built-with { display: flex; align-items: center; gap: 16px; flex-wrap: wrap; margin: 8px 0 0; font-family: var(--font-mono); font-size: 11px; text-transform: uppercase; letter-spacing: .06em; color: var(--text-muted); }
