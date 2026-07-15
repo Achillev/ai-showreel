@@ -204,11 +204,18 @@
     });
 
     // apparition en cascade (stagger 30ms) ; jamais bloquant
-    if (reduced || !('IntersectionObserver' in window)) return;
+    if (!('IntersectionObserver' in window)) { matrix.classList.add('hdr-in'); return; }
+    if (reduced) {
+      // pas de cascade, mais on joue quand meme l'entree de la sous-nav quand elle arrive
+      var io0 = new IntersectionObserver(function (es) { es.forEach(function (e) { if (e.isIntersecting) { matrix.classList.add('hdr-in'); io0.disconnect(); } }); }, { threshold: 0.08 });
+      io0.observe(matrix);
+      return;
+    }
     matrix.classList.add('is-armed');
     var revealed = false;
     function revealAll() {
       if (revealed) return; revealed = true;
+      matrix.classList.add('hdr-in');
       cells.forEach(function (c, i) { setTimeout(function () { c.classList.add('in'); }, Math.min(i, 40) * 30); });
     }
     var io = new IntersectionObserver(function (es) {
