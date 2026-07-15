@@ -294,19 +294,17 @@ function page(title, body, { desc = '', jsonld = '', canonical = '', path = '' }
 <script defer src="/_vercel/insights/script.js"></script>
 </head><body>
 <a class="skip" href="#main">${t('Aller au contenu', 'Skip to content')}</a>
-<header class="site-head" id="site-head">
-  <div class="head-inner">
+<header class="head-top" id="head-top">
   <a class="brand" href="${P()}/" translate="no"><span class="brand-mark" aria-hidden="true">◆</span> AI&nbsp;Showreel <span class="brand-sub">${t("l'analyse niveau grand cabinet, pour tout le monde", 'consulting-grade analysis, for everyone')}</span></a>
-  <button class="nav-burger" type="button" aria-label="${t('Ouvrir le menu', 'Open menu')}" aria-expanded="false" aria-controls="site-nav"><span class="burger" aria-hidden="true"></span></button>
-  <div class="head-nav" id="site-nav">
-    <nav aria-label="${t('Navigation principale', 'Main navigation')}">${navHtml}</nav>
-    <div class="nav-utils">${BILINGUAL ? `
-      <div class="lang-switch" role="group" aria-label="${t('Langue', 'Language')}"><a href="${esc(frUrl)}" hreflang="fr"${LANG === 'fr' ? ' aria-current="true"' : ''}>FR</a><a href="${esc(enUrl)}" hreflang="en"${LANG === 'en' ? ' aria-current="true"' : ''}>EN</a></div>` : ''}
-      <button class="theme-toggle" type="button" aria-label="${t('Basculer thème clair/sombre', 'Toggle light/dark theme')}" title="${t('Thème', 'Theme')}"><svg viewBox="0 0 20 20" width="17" height="17" aria-hidden="true"><circle cx="10" cy="10" r="8.2" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M10 1.8 a8.2 8.2 0 0 1 0 16.4 z" fill="currentColor"/></svg></button>
-    </div>
-  </div>
+  <div class="nav-utils">${BILINGUAL ? `
+    <div class="lang-switch" role="group" aria-label="${t('Langue', 'Language')}"><a href="${esc(frUrl)}" hreflang="fr"${LANG === 'fr' ? ' aria-current="true"' : ''}>FR</a><a href="${esc(enUrl)}" hreflang="en"${LANG === 'en' ? ' aria-current="true"' : ''}>EN</a></div>` : ''}
+    <button class="theme-toggle" type="button" aria-label="${t('Basculer thème clair/sombre', 'Toggle light/dark theme')}" title="${t('Thème', 'Theme')}"><svg viewBox="0 0 20 20" width="17" height="17" aria-hidden="true"><circle cx="10" cy="10" r="8.2" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M10 1.8 a8.2 8.2 0 0 1 0 16.4 z" fill="currentColor"/></svg></button>
+    <button class="nav-burger" type="button" aria-label="${t('Ouvrir le menu', 'Open menu')}" aria-expanded="false" aria-controls="site-nav"><span class="burger" aria-hidden="true"></span></button>
   </div>
 </header>
+<div class="head-links" id="site-nav">
+  <nav aria-label="${t('Navigation principale', 'Main navigation')}">${navHtml}</nav>
+</div>
 <main id="main" tabindex="-1">${body}</main>
 <footer class="site-foot">
   <p><strong>AI Showreel</strong> ${t('— index indépendant des déploiements IA prouvés en marketing digital. Chaque cas est noté sur une échelle de preuve publique et vérifié vivant à sa date.', '— independent index of AI deployments proven at scale in digital marketing. Every case is graded on a public evidence scale and verified live at its date.')}</p>
@@ -315,13 +313,17 @@ function page(title, body, { desc = '', jsonld = '', canonical = '', path = '' }
 </footer>
 <script>(function(){
 var tt=document.querySelector('.theme-toggle');if(tt)tt.addEventListener('click',function(){var d=document.documentElement;var eff=d.getAttribute('data-theme')||(matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light');var next=eff==='dark'?'light':'dark';d.setAttribute('data-theme',next);try{localStorage.setItem('theme',next);}catch(e){}});
-var h=document.getElementById('site-head'),bg=document.querySelector('.nav-burger');
-if(bg&&h){function setOpen(o){h.classList.toggle('nav-open',o);bg.setAttribute('aria-expanded',o?'true':'false');}
-bg.addEventListener('click',function(){setOpen(!h.classList.contains('nav-open'));});
+var b=document.body,bg=document.querySelector('.nav-burger'),top=document.getElementById('head-top'),links=document.getElementById('site-nav');
+function setHeadH(){if(top)document.documentElement.style.setProperty('--head-h',top.offsetHeight+'px');}
+setHeadH();window.addEventListener('resize',setHeadH);
+if(bg){function setOpen(o){b.classList.toggle('nav-open',o);bg.setAttribute('aria-expanded',o?'true':'false');}
+bg.addEventListener('click',function(e){e.stopPropagation();setOpen(!b.classList.contains('nav-open'));});
 document.querySelectorAll('#site-nav nav a').forEach(function(a){a.addEventListener('click',function(){setOpen(false);});});
-document.addEventListener('keydown',function(e){if(e.key==='Escape'&&h.classList.contains('nav-open')){setOpen(false);bg.focus();}});
-document.addEventListener('click',function(e){if(h.classList.contains('nav-open')&&!h.contains(e.target))setOpen(false);});
+document.addEventListener('keydown',function(e){if(e.key==='Escape'&&b.classList.contains('nav-open')){setOpen(false);bg.focus();}});
+document.addEventListener('click',function(e){if(b.classList.contains('nav-open')&&!(top&&top.contains(e.target))&&!(links&&links.contains(e.target)))setOpen(false);});
 var mq=matchMedia('(min-width: 781px)');mq.addEventListener('change',function(e){if(e.matches)setOpen(false);});}
+/* barre de liens : cachee au scroll bas, revelee au scroll haut */
+var lastY=window.scrollY,tick=false;window.addEventListener('scroll',function(){if(tick)return;tick=true;requestAnimationFrame(function(){var y=window.scrollY;if(y>lastY&&y>200){b.classList.add('nav-hidden');}else{b.classList.remove('nav-hidden');}lastY=y;tick=false;});},{passive:true});
 })();</script>
 </body></html>`);
 }

@@ -54,32 +54,28 @@ p { text-wrap: pretty; }
 .lede, .block p, .prose p, .section-head p, .card-pattern, .pattern, .callout p { max-width: 68ch; }
 
 /* header */
-.site-head {
-  position: sticky; top: 0; z-index: 100;
-  background: var(--bar); -webkit-backdrop-filter: saturate(1.5) blur(12px); backdrop-filter: saturate(1.5) blur(12px);
-  border-bottom: 1px solid var(--line);
-}
-.head-inner {
-  max-width: 1120px; margin: 0 auto; padding: 14px 24px;
-  display: flex; align-items: center; justify-content: space-between; gap: 20px; flex-wrap: wrap;
-}
+/* partie haute : logo + tagline + utilitaires (langue/theme) ; defile normalement, pas sticky */
+.head-top { max-width: 1120px; margin: 0 auto; padding: 16px 24px; display: flex; align-items: center; justify-content: space-between; gap: 20px; }
+/* barre de liens : sticky (enfant direct du body -> colle sur toute la page), se cache au scroll bas, reapparait au scroll haut (sans le logo) */
+.head-links { position: sticky; top: 0; z-index: 100; background: var(--bar); -webkit-backdrop-filter: saturate(1.5) blur(12px); backdrop-filter: saturate(1.5) blur(12px); border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); transition: transform .32s cubic-bezier(.4,0,.2,1); }
+body.nav-hidden .head-links { transform: translateY(-102%); }
 .brand { color: var(--ink); font-weight: 700; font-size: 18px; letter-spacing: -.02em; display: flex; align-items: baseline; gap: 8px; }
 .brand:hover { text-decoration: none; }
 .brand-mark { color: var(--accent); }
 .brand-sub { font-weight: 400; font-size: 12.5px; color: var(--ink-faint); letter-spacing: 0; }
-.site-head nav { display: flex; gap: 22px; font-size: 14.5px; font-weight: 500; }
-.site-head nav a { position: relative; color: var(--ink-soft); padding: 3px 0; transition: color .15s ease; text-decoration: none; }
-.site-head nav a::after { content: ""; position: absolute; left: 0; right: 0; bottom: -3px; height: 2px; border-radius: 2px; background: var(--accent); transform: scaleX(0); transform-origin: left; transition: transform .24s cubic-bezier(.4,0,.2,1); }
-.head-nav { display: flex; align-items: center; gap: 22px; }
+.head-links nav { display: flex; gap: 22px; font-size: 14.5px; font-weight: 500; }
+.head-links nav a { position: relative; color: var(--ink-soft); padding: 3px 0; transition: color .15s ease; text-decoration: none; }
+.head-links nav a::after { content: ""; position: absolute; left: 0; right: 0; bottom: -3px; height: 2px; border-radius: 2px; background: var(--accent); transform: scaleX(0); transform-origin: left; transition: transform .24s cubic-bezier(.4,0,.2,1); }
+.head-links nav { max-width: 1120px; margin: 0 auto; padding: 12px 24px; }
 .nav-utils { display: flex; align-items: center; gap: 14px; flex-shrink: 0; }
 .nav-burger { display: none; align-items: center; justify-content: center; width: 40px; height: 40px; border: 1px solid var(--line); border-radius: var(--radius-pill); background: var(--surface); color: var(--ink); cursor: pointer; padding: 0; flex-shrink: 0; }
 .nav-burger:hover { border-color: var(--accent); color: var(--accent); }
 .burger { position: relative; display: block; width: 18px; height: 2px; background: currentColor; border-radius: 2px; transition: background .1s ease; }
 .burger::before, .burger::after { content: ""; position: absolute; left: 0; width: 18px; height: 2px; background: currentColor; border-radius: 2px; transition: transform .25s ease; }
 .burger::before { top: -6px; } .burger::after { top: 6px; }
-.site-head.nav-open .burger { background: transparent; }
-.site-head.nav-open .burger::before { transform: translateY(6px) rotate(45deg); }
-.site-head.nav-open .burger::after { transform: translateY(-6px) rotate(-45deg); }
+body.nav-open .burger { background: transparent; }
+body.nav-open .burger::before { transform: translateY(6px) rotate(45deg); }
+body.nav-open .burger::after { transform: translateY(-6px) rotate(-45deg); }
 .lang-switch { display: inline-flex; align-items: center; border: 1px solid var(--line); border-radius: 999px; overflow: hidden; font-size: 12px; font-weight: 700; letter-spacing: .03em; flex-shrink: 0; }
 .lang-switch a { padding: 5px 10px; color: var(--ink-faint); line-height: 1.5; transition: color .12s ease, background .12s ease; }
 .lang-switch a:hover { color: var(--accent); text-decoration: none; }
@@ -472,7 +468,7 @@ p { text-wrap: pretty; }
 /* accessibilite clavier : etat focus visible partout ou on peut cliquer/naviguer */
 a:focus-visible, button:focus-visible, .card:focus-visible, .feedback-btn:focus-visible,
 .veille-row:focus-visible, .cross-banner:focus-visible, .cell.filled a:focus-visible,
-.tool-name a:focus-visible, .site-head nav a:focus-visible, .brand:focus-visible,
+.tool-name a:focus-visible, .head-links nav a:focus-visible, .brand:focus-visible,
 .back:focus-visible, [tabindex]:focus-visible {
   outline: 2px solid var(--accent); outline-offset: 3px; border-radius: 5px; text-decoration: none;
 }
@@ -488,8 +484,8 @@ a:focus-visible, button:focus-visible, .card:focus-visible, .feedback-btn:focus-
 html { scroll-behavior: smooth; }
 
 /* affordances de survol coherentes (feedback d'interaction) */
-.site-head nav a:hover { color: var(--ink); text-decoration: none; }
-.site-head nav a:hover::after { transform: scaleX(1); }
+.head-links nav a:hover { color: var(--ink); text-decoration: none; }
+.head-links nav a:hover::after { transform: scaleX(1); }
 .cell.filled { transition: transform .12s ease, box-shadow .12s ease; }
 .cell.filled:hover { transform: translateY(-1px); box-shadow: 0 2px 4px rgba(20,24,31,.08), 0 12px 28px rgba(20,24,31,.1); }
 .tool-row:hover .tool-name a { color: var(--accent); }
@@ -512,11 +508,11 @@ a, button, summary, [role="button"], [tabindex] { touch-action: manipulation; }
 .skip:focus { top: 12px; text-decoration: none; }
 main:focus, main:focus-visible { outline: none; }
 /* onglet de nav actif : "vous etes ici" */
-.site-head nav a[aria-current="page"] { color: var(--ink); font-weight: 600; }
-.site-head nav a[aria-current="page"]::after { transform: scaleX(1); }
+.head-links nav a[aria-current="page"] { color: var(--ink); font-weight: 600; }
+.head-links nav a[aria-current="page"]::after { transform: scaleX(1); }
 /* cibles tactiles confortables sur mobile */
 @media (max-width: 780px) {
-  .site-head nav a { min-height: 44px; display: inline-flex; align-items: center; }
+  .head-links nav a { min-height: 44px; display: inline-flex; align-items: center; }
 }
 
 /* filtre de la liste de cas (clic sur une case de la matrice) */
@@ -535,18 +531,17 @@ a, button { -webkit-tap-highlight-color: rgba(27, 77, 255, .12); }
 
 @media (max-width: 780px) {
   main { padding: 0 16px 56px; }
-  /* header en colonne : brand en haut, puis [nav scrollable + toggle langue epingle a droite] */
-  .head-inner { padding: 12px 16px; gap: 12px; flex-wrap: nowrap; }
+  /* mobile : la partie haute devient une barre sticky compacte (brand + langue/theme + hamburger) */
+  .head-top { position: sticky; top: 0; z-index: 101; max-width: none; padding: 10px 16px; gap: 10px; background: var(--bar); -webkit-backdrop-filter: saturate(1.5) blur(12px); backdrop-filter: saturate(1.5) blur(12px); border-bottom: 1px solid var(--line); }
+  .nav-utils { gap: 8px; }
   .nav-burger { display: inline-flex; }
-  /* drawer : panneau qui glisse sous le header (menu clair, pas un faux "nouvelle page" - Baymard B-NAV-04) */
-  .head-nav { position: absolute; top: 100%; left: 0; right: 0; z-index: 60; flex-direction: column; align-items: stretch; gap: 0; background: var(--surface); border-bottom: 1px solid var(--line); box-shadow: var(--shadow); max-height: 0; overflow: hidden; opacity: 0; pointer-events: none; transition: max-height .3s cubic-bezier(.4,0,.2,1), opacity .22s ease; }
-  .site-head.nav-open .head-nav { max-height: 82vh; opacity: 1; pointer-events: auto; overflow-y: auto; overscroll-behavior: contain; }
-  .head-nav nav { flex-direction: column; align-items: stretch; gap: 0; padding: 4px 0; font-size: 16px; }
-  .head-nav nav a { padding: 13px 20px; min-height: 48px; display: flex; align-items: center; color: var(--ink); }
-  .head-nav nav a::after { display: none; }
-  .head-nav nav a[aria-current="page"] { color: var(--accent); background: var(--accent-soft); }
-  /* utilitaires (langue, theme) : secondaires, separes du primaire - Baymard B-NAV-03 */
-  .nav-utils { border-top: 1px solid var(--line); padding: 14px 20px; gap: 14px; justify-content: flex-start; }
+  /* la barre de liens devient un drawer fixe revele par le hamburger (sous la barre haute) */
+  .head-links { position: fixed; top: var(--head-h, 56px); left: 0; right: 0; z-index: 100; background: var(--surface); border-top: 0; border-bottom: 1px solid var(--line); box-shadow: var(--shadow); max-height: 0; overflow: hidden; opacity: 0; pointer-events: none; transform: none !important; transition: max-height .3s cubic-bezier(.4,0,.2,1), opacity .22s ease; }
+  body.nav-open .head-links { max-height: 78vh; opacity: 1; pointer-events: auto; overflow-y: auto; overscroll-behavior: contain; }
+  .head-links nav { max-width: none; flex-direction: column; align-items: stretch; gap: 0; padding: 4px 0; font-size: 16px; }
+  .head-links nav a { padding: 13px 20px; min-height: 48px; display: flex; align-items: center; color: var(--ink); }
+  .head-links nav a::after { display: none; }
+  .head-links nav a[aria-current="page"] { color: var(--accent); background: var(--accent-soft); }
   /* titres et sections : moins d'espace perdu, tailles calibrees pour petit ecran */
   .hero { padding: 22px 0 18px; margin-bottom: 30px; }
   .section { margin: 42px 0; }
