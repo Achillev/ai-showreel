@@ -270,11 +270,11 @@ function page(title, body, { desc = '', jsonld = '', canonical = '', path = '' }
   const graph = { '@context': 'https://schema.org', '@graph': [org, { '@type': 'WebSite', '@id': SITE + '/#site', url: SITE, name: 'AI Showreel', inLanguage: LANG, publisher: { '@id': SITE + '/#org' } }, ...nodes] };
   return normalizeHtmlText(`<!doctype html><html lang="${LANG}"><head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-<script>try{document.documentElement.setAttribute('data-theme',localStorage.getItem('theme')||'dark');}catch(e){document.documentElement.setAttribute('data-theme','dark');}</script>
+<script>try{document.documentElement.setAttribute('data-theme',localStorage.getItem('theme')||'light');}catch(e){document.documentElement.setAttribute('data-theme','light');}</script>
 <title>${esc(title)}</title>
 <meta name="description" content="${esc(desc)}">
 <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
-<meta name="theme-color" content="#01232a">
+<meta name="theme-color" content="#f9f6f1">
 <link rel="canonical" href="${esc(can)}">${BILINGUAL ? `
 <link rel="alternate" hreflang="fr" href="${esc(frUrl)}">
 <link rel="alternate" hreflang="en" href="${esc(enUrl)}">
@@ -294,12 +294,15 @@ function page(title, body, { desc = '', jsonld = '', canonical = '', path = '' }
 <script defer src="/_vercel/insights/script.js"></script>
 </head><body>
 <a class="skip" href="#main">${t('Aller au contenu', 'Skip to content')}</a>
-<header class="site-head">
+<header class="site-head" id="site-head">
   <a class="brand" href="${P()}/" translate="no"><span class="brand-mark" aria-hidden="true">◆</span> AI&nbsp;Showreel <span class="brand-sub">${t("l'analyse niveau grand cabinet, pour tout le monde", 'consulting-grade analysis, for everyone')}</span></a>
-  <div class="head-nav">
-    <nav aria-label="${t('Navigation principale', 'Main navigation')}">${navHtml}</nav>${BILINGUAL ? `
-    <div class="lang-switch" role="group" aria-label="${t('Langue', 'Language')}"><a href="${esc(frUrl)}" hreflang="fr"${LANG === 'fr' ? ' aria-current="true"' : ''}>FR</a><a href="${esc(enUrl)}" hreflang="en"${LANG === 'en' ? ' aria-current="true"' : ''}>EN</a></div>` : ''}
-    <button class="theme-toggle" type="button" aria-label="${t('Basculer thème clair/sombre', 'Toggle light/dark theme')}" title="${t('Thème', 'Theme')}"><svg viewBox="0 0 20 20" width="17" height="17" aria-hidden="true"><circle cx="10" cy="10" r="8.2" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M10 1.8 a8.2 8.2 0 0 1 0 16.4 z" fill="currentColor"/></svg></button>
+  <button class="nav-burger" type="button" aria-label="${t('Ouvrir le menu', 'Open menu')}" aria-expanded="false" aria-controls="site-nav"><span class="burger" aria-hidden="true"></span></button>
+  <div class="head-nav" id="site-nav">
+    <nav aria-label="${t('Navigation principale', 'Main navigation')}">${navHtml}</nav>
+    <div class="nav-utils">${BILINGUAL ? `
+      <div class="lang-switch" role="group" aria-label="${t('Langue', 'Language')}"><a href="${esc(frUrl)}" hreflang="fr"${LANG === 'fr' ? ' aria-current="true"' : ''}>FR</a><a href="${esc(enUrl)}" hreflang="en"${LANG === 'en' ? ' aria-current="true"' : ''}>EN</a></div>` : ''}
+      <button class="theme-toggle" type="button" aria-label="${t('Basculer thème clair/sombre', 'Toggle light/dark theme')}" title="${t('Thème', 'Theme')}"><svg viewBox="0 0 20 20" width="17" height="17" aria-hidden="true"><circle cx="10" cy="10" r="8.2" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M10 1.8 a8.2 8.2 0 0 1 0 16.4 z" fill="currentColor"/></svg></button>
+    </div>
   </div>
 </header>
 <main id="main" tabindex="-1">${body}</main>
@@ -308,7 +311,22 @@ function page(title, body, { desc = '', jsonld = '', canonical = '', path = '' }
   <p class="foot-links"><a href="${mailto('AI Showreel - proposer un cas ou une correction', 'Votre message :\n\n\nSi c\'est une correction, merci d\'indiquer la fiche concernée et une source.')}">${t('Proposer un cas ou une correction', 'Submit a case or a correction')}</a> · <a href="${P()}/methodologie.html">${t('Méthodologie', 'Methodology')}</a></p>
   <p class="foot-meta">${t('« L\'Evident du marketing digital » : un index éditorialement indépendant, sans biais vendeur ni sponsor.', 'The independent evidence index for AI in digital marketing. No vendor bias, no sponsor.')}</p>
 </footer>
-<script>(function(){var b=document.querySelector('.theme-toggle');if(!b)return;b.addEventListener('click',function(){var d=document.documentElement;var eff=d.getAttribute('data-theme')||(matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light');var next=eff==='dark'?'light':'dark';d.setAttribute('data-theme',next);try{localStorage.setItem('theme',next);}catch(e){}});})();</script>
+<script>(function(){
+var tt=document.querySelector('.theme-toggle');if(tt)tt.addEventListener('click',function(){var d=document.documentElement;var eff=d.getAttribute('data-theme')||(matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light');var next=eff==='dark'?'light':'dark';d.setAttribute('data-theme',next);try{localStorage.setItem('theme',next);}catch(e){}});
+var h=document.getElementById('site-head'),bg=document.querySelector('.nav-burger');
+if(bg&&h){function setOpen(o){h.classList.toggle('nav-open',o);bg.setAttribute('aria-expanded',o?'true':'false');}
+bg.addEventListener('click',function(){setOpen(!h.classList.contains('nav-open'));});
+document.querySelectorAll('#site-nav nav a').forEach(function(a){a.addEventListener('click',function(){setOpen(false);});});
+document.addEventListener('keydown',function(e){if(e.key==='Escape'&&h.classList.contains('nav-open')){setOpen(false);bg.focus();}});
+document.addEventListener('click',function(e){if(h.classList.contains('nav-open')&&!h.contains(e.target))setOpen(false);});
+var mq=matchMedia('(min-width: 781px)');mq.addEventListener('change',function(e){if(e.matches)setOpen(false);});}
+if('IntersectionObserver' in window && !matchMedia('(prefers-reduced-motion: reduce)').matches){
+  var rev=[].slice.call(document.querySelectorAll('.section, .hero, .block, .pattern-group, .pays-card'));
+  rev.forEach(function(e){e.classList.add('reveal');});
+  var io=new IntersectionObserver(function(en){en.forEach(function(x){if(x.isIntersecting){x.target.classList.add('in');io.unobserve(x.target);}});},{threshold:.06,rootMargin:'0px 0px -30px 0px'});
+  rev.forEach(function(e){io.observe(e);});
+}
+})();</script>
 </body></html>`);
 }
 

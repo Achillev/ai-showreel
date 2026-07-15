@@ -57,8 +57,18 @@ p { text-wrap: pretty; }
 .brand-mark { color: var(--accent); }
 .brand-sub { font-weight: 400; font-size: 12.5px; color: var(--ink-faint); letter-spacing: 0; }
 .site-head nav { display: flex; gap: 22px; font-size: 14.5px; font-weight: 500; }
-.site-head nav a { color: var(--ink-soft); }
-.head-nav { display: flex; align-items: center; gap: 22px; flex-wrap: wrap; }
+.site-head nav a { position: relative; color: var(--ink-soft); padding: 3px 0; transition: color .15s ease; }
+.site-head nav a::after { content: ""; position: absolute; left: 0; right: 0; bottom: -3px; height: 2px; border-radius: 2px; background: var(--accent); transform: scaleX(0); transform-origin: left; transition: transform .24s cubic-bezier(.4,0,.2,1); }
+.head-nav { display: flex; align-items: center; gap: 22px; }
+.nav-utils { display: flex; align-items: center; gap: 14px; flex-shrink: 0; }
+.nav-burger { display: none; align-items: center; justify-content: center; width: 40px; height: 40px; border: 1px solid var(--line); border-radius: var(--radius-pill); background: var(--surface); color: var(--ink); cursor: pointer; padding: 0; flex-shrink: 0; }
+.nav-burger:hover { border-color: var(--accent); color: var(--accent); }
+.burger { position: relative; display: block; width: 18px; height: 2px; background: currentColor; border-radius: 2px; transition: background .1s ease; }
+.burger::before, .burger::after { content: ""; position: absolute; left: 0; width: 18px; height: 2px; background: currentColor; border-radius: 2px; transition: transform .25s ease; }
+.burger::before { top: -6px; } .burger::after { top: 6px; }
+.site-head.nav-open .burger { background: transparent; }
+.site-head.nav-open .burger::before { transform: translateY(6px) rotate(45deg); }
+.site-head.nav-open .burger::after { transform: translateY(-6px) rotate(-45deg); }
 .lang-switch { display: inline-flex; align-items: center; border: 1px solid var(--line); border-radius: 999px; overflow: hidden; font-size: 12px; font-weight: 700; letter-spacing: .03em; flex-shrink: 0; }
 .lang-switch a { padding: 5px 10px; color: var(--ink-faint); line-height: 1.5; transition: color .12s ease, background .12s ease; }
 .lang-switch a:hover { color: var(--accent); text-decoration: none; }
@@ -457,11 +467,14 @@ a:focus-visible, button:focus-visible, .card:focus-visible, .feedback-btn:focus-
   outline: 2px solid var(--accent); outline-offset: 3px; border-radius: 5px; text-decoration: none;
 }
 ::selection { background: var(--accent-soft); color: var(--ink); }
+/* reveal doux au scroll (ajoute par JS ; sans JS ou en reduced-motion, le contenu reste visible) */
+.reveal { opacity: 0; transform: translateY(16px); transition: opacity .55s ease, transform .55s cubic-bezier(.2,.6,.2,1); }
+.reveal.in { opacity: 1; transform: none; }
 html { scroll-behavior: smooth; }
 
 /* affordances de survol coherentes (feedback d'interaction) */
-.site-head nav a { transition: color .12s ease; }
-.site-head nav a:hover { color: var(--accent); }
+.site-head nav a:hover { color: var(--ink); }
+.site-head nav a:hover::after { transform: scaleX(1); }
 .cell.filled { transition: transform .12s ease, box-shadow .12s ease; }
 .cell.filled:hover { transform: translateY(-1px); box-shadow: 0 2px 4px rgba(20,24,31,.08), 0 12px 28px rgba(20,24,31,.1); }
 .tool-row:hover .tool-name a { color: var(--accent); }
@@ -484,7 +497,8 @@ a, button, summary, [role="button"], [tabindex] { touch-action: manipulation; }
 .skip:focus { top: 12px; text-decoration: none; }
 main:focus, main:focus-visible { outline: none; }
 /* onglet de nav actif : "vous etes ici" */
-.site-head nav a[aria-current="page"] { color: var(--ink); font-weight: 600; text-decoration: underline; text-decoration-color: var(--accent); text-decoration-thickness: 2px; text-underline-offset: 6px; }
+.site-head nav a[aria-current="page"] { color: var(--ink); font-weight: 600; }
+.site-head nav a[aria-current="page"]::after { transform: scaleX(1); }
 /* cibles tactiles confortables sur mobile */
 @media (max-width: 780px) {
   .site-head nav a { min-height: 44px; display: inline-flex; align-items: center; }
@@ -507,12 +521,17 @@ a, button { -webkit-tap-highlight-color: rgba(27, 77, 255, .12); }
 @media (max-width: 780px) {
   main { padding: 0 16px 56px; }
   /* header en colonne : brand en haut, puis [nav scrollable + toggle langue epingle a droite] */
-  .site-head { flex-direction: column; align-items: stretch; gap: 10px; padding: 14px 16px; }
-  .head-nav { display: flex; flex-wrap: nowrap; align-items: center; gap: 10px; width: 100%; min-width: 0; }
-  .site-head nav { flex: 1 1 auto; min-width: 0; gap: 22px; flex-wrap: nowrap; white-space: nowrap; overflow-x: auto; padding: 2px 0 6px; scrollbar-width: none; -webkit-overflow-scrolling: touch; font-size: 15px; -webkit-mask-image: linear-gradient(90deg, #000 90%, transparent); mask-image: linear-gradient(90deg, #000 90%, transparent); }
-  .site-head nav::-webkit-scrollbar { display: none; }
-  .site-head nav a { flex: 0 0 auto; min-height: 40px; display: inline-flex; align-items: center; }
-  .lang-switch { flex: 0 0 auto; }
+  .site-head { position: relative; padding: 14px 16px; gap: 12px; flex-wrap: nowrap; }
+  .nav-burger { display: inline-flex; }
+  /* drawer : panneau qui glisse sous le header (menu clair, pas un faux "nouvelle page" - Baymard B-NAV-04) */
+  .head-nav { position: absolute; top: 100%; left: 0; right: 0; z-index: 60; flex-direction: column; align-items: stretch; gap: 0; background: var(--surface); border-bottom: 1px solid var(--line); box-shadow: var(--shadow); max-height: 0; overflow: hidden; opacity: 0; pointer-events: none; transition: max-height .3s cubic-bezier(.4,0,.2,1), opacity .22s ease; }
+  .site-head.nav-open .head-nav { max-height: 82vh; opacity: 1; pointer-events: auto; overflow-y: auto; }
+  .head-nav nav { flex-direction: column; align-items: stretch; gap: 0; padding: 4px 0; font-size: 16px; }
+  .head-nav nav a { padding: 13px 20px; min-height: 48px; display: flex; align-items: center; color: var(--ink); }
+  .head-nav nav a::after { display: none; }
+  .head-nav nav a[aria-current="page"] { color: var(--accent); background: var(--accent-soft); }
+  /* utilitaires (langue, theme) : secondaires, separes du primaire - Baymard B-NAV-03 */
+  .nav-utils { border-top: 1px solid var(--line); padding: 14px 20px; gap: 14px; justify-content: flex-start; }
   /* titres et sections : moins d'espace perdu, tailles calibrees pour petit ecran */
   .hero { padding: 22px 0 18px; margin-bottom: 30px; }
   .section { margin: 42px 0; }
