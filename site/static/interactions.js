@@ -5,7 +5,38 @@
   'use strict';
   var reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
   var coarse = window.matchMedia('(pointer: coarse)').matches;
+  var isEN = document.documentElement.getAttribute('lang') === 'en';
   function cssVar(name) { return getComputedStyle(document.documentElement).getPropertyValue(name).trim(); }
+  function tr(fr, en) { return isEN ? en : fr; }
+
+  /* ---- Modal reutilisable (blind spot, get-the-data) ---- */
+  var modal = (function () {
+    var overlay, titleEl, bodyEl, closeBtn, lastFocus;
+    function build() {
+      overlay = document.createElement('div');
+      overlay.className = 'modal-overlay';
+      overlay.setAttribute('role', 'dialog');
+      overlay.setAttribute('aria-modal', 'true');
+      overlay.innerHTML = '<div class="modal"><button class="modal-close" aria-label="' + tr('Fermer', 'Close') + '">×</button><h3></h3><div class="modal-body"></div></div>';
+      document.body.appendChild(overlay);
+      titleEl = overlay.querySelector('h3');
+      bodyEl = overlay.querySelector('.modal-body');
+      closeBtn = overlay.querySelector('.modal-close');
+      overlay.addEventListener('click', function (e) { if (e.target === overlay) close(); });
+      closeBtn.addEventListener('click', close);
+      document.addEventListener('keydown', function (e) { if (e.key === 'Escape' && overlay.classList.contains('open')) close(); });
+    }
+    function open(title, html) {
+      if (!overlay) build();
+      titleEl.textContent = title;
+      bodyEl.innerHTML = html;
+      lastFocus = document.activeElement;
+      overlay.classList.add('open');
+      closeBtn.focus();
+    }
+    function close() { if (overlay) { overlay.classList.remove('open'); if (lastFocus && lastFocus.focus) lastFocus.focus(); } }
+    return { open: open, close: close };
+  })();
 
   /* ---- 1. Count-up (hero + cartes) : 0 -> valeur cible, easeOutExpo ---- */
   function countUp() {
@@ -132,8 +163,62 @@
     var rt; window.addEventListener('resize', function () { clearTimeout(rt); rt = setTimeout(resize, 200); });
   }
 
+  /* ---- 3. Matrice de couverture : focus mode, surlignage, breathe, cascade, angle mort ---- */
+  function matrixInteractions() {
+    var matrix = document.querySelector('.matrix');
+    if (!matrix) return;
+    var cells = [].slice.call(matrix.querySelectorAll('.cell'));
+
+    // focus mode : au survol d'une case avec chiffre, les autres s'estompent
+    cells.forEach(function (c) {
+      if (c.classList.contains('filled')) {
+        c.addEventListener('mouseenter', function () { matrix.classList.add('matrix--focused'); });
+      }
+    });
+    matrix.addEventListener('mouseleave', function () { matrix.classList.remove('matrix--focused'); });
+
+    // surlignage ligne / colonne au survol d'un header
+    var headers = [].slice.call(matrix.querySelectorAll('.row-h[data-row], .col-h[data-col]'));
+    headers.forEach(function (h) {
+      var rk = h.getAttribute('data-row'), ck = h.getAttribute('data-col');
+      var sel = rk ? '[data-row="' + rk + '"]' : '[data-col="' + ck + '"]';
+      function set(on) {
+        [].slice.call(matrix.querySelectorAll(sel)).forEach(function (el) { el.classList.toggle('rc-hi', on); });
+        h.classList.toggle('rc-hi', on);
+      }
+      h.addEventListener('mouseenter', function () { set(true); });
+      h.addEventListener('mouseleave', function () { set(false); });
+    });
+
+    // angle mort : ouvre un modal "opportunite"
+    cells.forEach(function (c) {
+      if (c.dataset.empty) {
+        var open = function () {
+          modal.open(c.dataset.cross || tr('Angle mort', 'Blind spot'),
+            '<p>' + tr('Aucun cas prouve publiquement dans ce croisement. C\'est une fenetre : un pattern deploye ailleurs et absent ici.', 'No publicly proven case in this crossing. That is an opening: a pattern deployed elsewhere and absent here.') + '</p>');
+        };
+        c.addEventListener('click', open);
+        c.addEventListener('keydown', function (e) { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); open(); } });
+      }
+    });
+
+    // apparition en cascade (stagger 30ms) ; jamais bloquant
+    if (reduced || !('IntersectionObserver' in window)) return;
+    matrix.classList.add('is-armed');
+    var revealed = false;
+    function revealAll() {
+      if (revealed) return; revealed = true;
+      cells.forEach(function (c, i) { setTimeout(function () { c.classList.add('in'); }, Math.min(i, 40) * 30); });
+    }
+    var io = new IntersectionObserver(function (es) {
+      es.forEach(function (e) { if (e.isIntersecting) { revealAll(); io.disconnect(); } });
+    }, { threshold: 0.08 });
+    io.observe(matrix);
+    setTimeout(revealAll, 1600); // filet de securite : rien ne reste cache
+  }
+
   /* ---- init ---- */
-  function init() { countUp(); constellationCanvas(); }
+  function init() { countUp(); constellationCanvas(); matrixInteractions(); }
   if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', init);
   else init();
 })();
