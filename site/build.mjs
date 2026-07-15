@@ -11,6 +11,8 @@ import { runGate, normalizeHtmlText } from './qa-gate.mjs';
 const __dir = dirname(fileURLToPath(import.meta.url));
 // version du CSS (hash du contenu) -> casse le cache navigateur des qu'il change (evite HTML neuf + CSS cache = layout casse)
 const CSS_VER = createHash('md5').update(readFileSync(join(__dir, 'style.css'))).digest('hex').slice(0, 8);
+const JS_SRC = join(__dir, 'static', 'interactions.js');
+const JS_VER = existsSync(JS_SRC) ? createHash('md5').update(readFileSync(JS_SRC)).digest('hex').slice(0, 8) : '0';
 const ROOT = join(__dir, '..');
 const CASES_DIR = join(ROOT, 'cases');
 const DIST = join(ROOT, 'dist');
@@ -295,6 +297,7 @@ function page(title, body, { desc = '', jsonld = '', canonical = '', path = '' }
 <link rel="stylesheet" href="/assets/style.css?v=${CSS_VER}">
 <script type="application/ld+json">${JSON.stringify(graph)}</script>
 <script defer src="/_vercel/insights/script.js"></script>
+<script defer src="/interactions.js?v=${JS_VER}"></script>
 </head><body>
 <a class="skip" href="#main">${t('Aller au contenu', 'Skip to content')}</a>
 <header class="head-top" id="head-top">
@@ -824,15 +827,24 @@ function caseCard(c) {
 // ---------- index ----------
 function indexPage(cases) {
   const succes = cases.filter(c => c.type_fiche !== 'echec_retrait');
+  const hCas = succes.length;
+  const hInd = new Set(succes.map(c => c.industrie)).size;
+  const hAB = succes.filter(c => ['A', 'B'].includes(c.niveau_preuve?.niveau)).length;
+  const lastUpd = cases.map(c => c.dates?.verifie_le).filter(Boolean).sort().pop() || '';
+  const nextChk = cases.map(c => c.dates?.revoir_apres).filter(Boolean).sort()[0] || '';
   const body = `
   <section class="hero">
-    <h1>${t('Ce que les leaders de votre secteur ont <em>vraiment</em> déployé en IA.', 'What the leaders in your industry have <em>actually</em> deployed in AI.')}</h1>
+    <canvas class="hero-constellation" aria-hidden="true" data-dots="${hCas}"></canvas>
+    <h1>${t('Ce que les leaders de votre secteur ont <em class="hero-shimmer">vraiment</em> déployé en IA.', 'What the leaders in your industry have <em class="hero-shimmer">actually</em> deployed in AI.')}</h1>
     <p class="lede">${t("Un index indépendant des déploiements IA à l'échelle en marketing digital. Chaque cas est noté sur une échelle de preuve publique, vérifié vivant à sa date, et mappé sur le parcours client. Pas de POC, pas de biais vendeur, pas de slides périmées.", 'An independent index of AI deployments at scale in digital marketing. Every case is graded on a public evidence scale, verified live at its date, and mapped to the customer journey. No POCs, no vendor bias, no stale slides.')}</p>
-    <div class="hero-stats">
-      <div><strong>${succes.length}</strong> ${t('cas prouvés', 'proven cases')}</div>
-      <div><strong>${new Set(succes.map(c => c.industrie)).size}</strong> ${t('industries', 'industries')}</div>
-      <div><strong>${succes.filter(c => ['A', 'B'].includes(c.niveau_preuve?.niveau)).length}</strong> ${t('en preuve A/B', 'at evidence A/B')}</div>
+    <div class="hero-kpis">
+      <div class="hero-kpi"><span class="type-kpi-giga num count-target" data-countup data-target="${hCas}">${hCas}</span><span class="type-kpi-label">${t('cas prouvés', 'proven cases')}</span></div>
+      <span class="hero-kpi-sep" aria-hidden="true">·</span>
+      <div class="hero-kpi"><span class="type-kpi-giga num count-target" data-countup data-target="${hInd}">${hInd}</span><span class="type-kpi-label">${t('industries', 'industries')}</span></div>
+      <span class="hero-kpi-sep" aria-hidden="true">·</span>
+      <div class="hero-kpi"><span class="type-kpi-giga num count-target" data-countup data-target="${hAB}">${hAB}</span><span class="type-kpi-label">${t('en preuve A/B', 'at evidence A/B')}</span></div>
     </div>
+    <p class="hero-meta">${t('Dernière vérification', 'Last verified')} : <span class="num">${esc(lastUpd)}</span> · ${t('prochaine revue à partir de', 'next review from')} <span class="num">${esc(nextChk)}</span></p>
   </section>
 
   <section class="section">
