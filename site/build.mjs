@@ -270,12 +270,11 @@ function page(title, body, { desc = '', jsonld = '', canonical = '', path = '' }
   const graph = { '@context': 'https://schema.org', '@graph': [org, { '@type': 'WebSite', '@id': SITE + '/#site', url: SITE, name: 'AI Showreel', inLanguage: LANG, publisher: { '@id': SITE + '/#org' } }, ...nodes] };
   return normalizeHtmlText(`<!doctype html><html lang="${LANG}"><head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-<script>try{var _t=localStorage.getItem('theme');if(_t)document.documentElement.setAttribute('data-theme',_t);}catch(e){}</script>
+<script>try{document.documentElement.setAttribute('data-theme',localStorage.getItem('theme')||'dark');}catch(e){document.documentElement.setAttribute('data-theme','dark');}</script>
 <title>${esc(title)}</title>
 <meta name="description" content="${esc(desc)}">
 <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
-<meta name="theme-color" content="#f9f6f1" media="(prefers-color-scheme: light)">
-<meta name="theme-color" content="#01232a" media="(prefers-color-scheme: dark)">
+<meta name="theme-color" content="#01232a">
 <link rel="canonical" href="${esc(can)}">${BILINGUAL ? `
 <link rel="alternate" hreflang="fr" href="${esc(frUrl)}">
 <link rel="alternate" hreflang="en" href="${esc(enUrl)}">
