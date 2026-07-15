@@ -801,19 +801,23 @@ function fichePage(c, all = []) {
 function coverageMatrix(cases, { echec = false } = {}) {
   const inds = Object.keys(INDUSTRIES).filter(i => cases.some(c => c.industrie === i));
   const levs = Object.keys(LEVIERS);
+  // heatmap : intensite du fond = densite de cas prouves (une seule variable visuelle, lecture preattentive)
+  const countAt = (ind, lev) => cases.filter(c => c.industrie === ind && c.axes?.levier === lev).length;
+  const maxN = Math.max(1, ...inds.flatMap(ind => levs.map(lev => countAt(ind, lev))));
   let rows = inds.map(ind => {
     const cells = levs.map(lev => {
       const hits = cases.filter(c => c.industrie === ind && c.axes?.levier === lev);
       const cross = `${INDUSTRIES[ind]} × ${LEVIERS[lev]}`;
       if (!hits.length) return `<td class="cell empty" data-row="${ind}" data-col="${lev}" data-empty="1" data-cross="${esc(cross)}" role="button" tabindex="0" aria-label="${t('Angle mort', 'Blind spot')} : ${esc(cross)} — ${t('aucun cas prouvé publiquement', 'no publicly proven case')}"></td>`;
       const best = hits.map(h => h.niveau_preuve?.niveau).sort()[0];
-      return `<td class="cell filled g-${best}" data-row="${ind}" data-col="${lev}"><a class="mcell-link" href="${P()}/?ind=${ind}&lev=${lev}#cas" data-ind="${ind}" data-lev="${lev}" aria-label="${hits.length} ${t('cas prouvés', 'proven cases')} — ${esc(cross)}" title="${hits.length} ${t('cas prouvés', 'proven cases')} : ${esc(cross)}">${hits.length}</a></td>`;
+      const v = (hits.length / maxN).toFixed(3);
+      return `<td class="cell filled g-${best}" data-row="${ind}" data-col="${lev}" style="--v:${v}"><a class="mcell-link" href="${P()}/?ind=${ind}&lev=${lev}#cas" data-ind="${ind}" data-lev="${lev}" aria-label="${hits.length} ${t('cas prouvés', 'proven cases')} — ${esc(cross)}" title="${hits.length} ${t('cas prouvés', 'proven cases')} : ${esc(cross)}">${hits.length}</a></td>`;
     }).join('');
     return `<tr><th class="row-h" data-row="${ind}">${INDUSTRIES[ind]}</th>${cells}</tr>`;
   }).join('');
   const head = levs.map(l => `<th class="col-h" data-col="${l}">${LEVIERS[l]}</th>`).join('');
-  return `<div class="matrix-wrap"><table class="matrix"><thead><tr><th></th>${head}</tr></thead><tbody>${rows}</tbody></table>
-    <p class="matrix-legend"><span class="lg cell empty"></span> ${t('angle mort (opportunité)', 'blind spot (opportunity)')} &nbsp; <span class="lg cell filled g-A"></span> ${t('preuve forte', 'strong evidence')} &nbsp; ${t('le chiffre = nombre de cas prouvés', 'the number = count of proven cases')}</p></div>`;
+  return `<div class="matrix-wrap"><table class="matrix"><thead><tr><th class="corner-h"></th>${head}</tr></thead><tbody>${rows}</tbody></table></div>
+    <p class="matrix-legend"><span class="lg-scale" aria-hidden="true"></span> ${t('plus foncé = plus de cas prouvés', 'darker = more proven cases')} &nbsp;·&nbsp; <span class="lg cell empty"></span> ${t('pointillé = angle mort', 'dashed = blind spot')} &nbsp;·&nbsp; ${t('le chiffre = nombre de cas', 'the number = count of cases')}</p>`;
 }
 
 // Rendu "texte lisible" (pas chiffre-heros geant) si la valeur est longue OU si elle ne contient
