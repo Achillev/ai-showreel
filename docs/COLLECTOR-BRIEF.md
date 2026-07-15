@@ -58,5 +58,8 @@ Ajoute un champ `points_cles` : un tableau de 3 à 4 puces courtes (une phrase c
 ## Sortie
 Écris chaque fiche comme un fichier JSON individuel valide, conforme au schéma, dans le dossier qu'on t'indique. Nom de fichier = le slug (id). Un objet JSON par fichier. Ne mets aucun texte hors des fichiers. À la fin, retourne juste la liste des slugs créés et, pour chacun, marque + niveau de preuve, en une ligne chacun.
 
+## Bilingue (traduction EN en aval)
+Le site est bilingue FR/EN. Tu écris la fiche en **français** normalement. Un step de traduction dédié (voir `docs/TRANSLATE-BRIEF.md`, exécuté après la promotion) produit `translations/en/<id>.json` à partir de ta fiche. Tu n'as donc rien à traduire toi-même. Conséquence pour toi : écris une prose FR claire et bien structurée (elle sera traduite fidèlement), et garde `citation_exacte` dans sa langue d'origine (jamais traduite, ni par toi ni en aval).
+
 ## Ne re-collecte PAS ces cas (déjà en base)
 La Redoute (Advantage+), Renault (Performance Max), Vodafone (churn AI Booster), Air Canada (chatbot), Zillow Offers, McDonald's (voice AI drive).

@@ -46,12 +46,26 @@ une fiche OU un rejet motive, jamais de fabrication.
    A/B (>=2 sources) est publie dans cases/ ; le C/D part en batch/_review/ (revue humaine,
    jamais publie en auto).
 
+6bis. **Traduction EN (site bilingue).** `node site/translate-check.mjs` liste les fiches de
+   cases/ sans traduction EN. Si la liste n'est PAS vide (fiches fraichement promues) : fan-out
+   d'un agent par fiche (ou petits lots), chacun lit docs/TRANSLATE-BRIEF.md + la fiche source
+   cases/<id>.json et ecrit translations/en/<id>.json (prose UNIQUEMENT ; JAMAIS marque, valeur,
+   citation_exacte, source_ref, dates, sources, niveau_preuve.niveau, cles d'axes, ids). Objectif :
+   `node site/translate-check.mjs --count` renvoie 0 avant le build. Sans ca les nouvelles fiches
+   s'affichent en EN avec fallback FR (pas casse, mais pas traduit).
+
 7. **Build.** `node site/qa-gate.mjs && node site/build.mjs`. Si qa-gate bloque, corrige
-   la typographie fautive dans les fiches concernees puis rebuild.
+   la typographie fautive dans les fiches concernees puis rebuild. Anti-slop s'applique aussi
+   aux traductions EN (guillemets droits, tiret simple).
 
 8. **Digest.** Ecris une ligne de bilan dans logs/collecte-runs.md (cree-le s'il manque),
    format : `- AAAA-MM-JJ : X leads decouverts, Y marketing, Z promus (A/B), C en revue,
    base -> N fiches`. Puis termine.
 
-Ne deploie pas (pas de domaine encore). Ne supprime jamais de fiche existante. Ne touche
-pas au .env ni aux secrets.
+9. **Deploiement.** Le site est live sur ai-showreel.com (Vercel connecte a GitHub). Publie
+   les nouvelles fiches : `git add -A && git commit -m "collecte hebdo AAAA-MM-JJ : +Z fiches"
+   && git push origin main`. Le push declenche l'auto-deploy Vercel (build + mise en ligne FR+EN).
+   Verifie que translate-check.mjs renvoie 0 AVANT de pousser (pas de fiche EN non traduite en prod).
+
+Ne supprime jamais de fiche existante. Ne touche pas au .env ni aux secrets. Ne commit jamais
+.env, batch/, dist/, translations/en n'est PAS ignore (il DOIT etre commite avec les fiches).
