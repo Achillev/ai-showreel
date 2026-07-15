@@ -427,15 +427,15 @@ function outilsPage(cases) {
 
   const body = `
   <section class="hero">
-    <h1>La stack réelle de l'IA <em>marketing</em>.</h1>
-    <p class="lede">Pas la théorie : les outils, plateformes et modèles effectivement déployés dans ${total} cas prouvés. Agrégé automatiquement depuis la stack technique de chaque fiche. Le décompte est en nombre de cas où l'outil apparaît.</p>
+    <h1>${t("La stack réelle de l'IA <em>marketing</em>.", 'The real AI <em>marketing</em> stack.')}</h1>
+    <p class="lede">${t(`Pas la théorie : les outils, plateformes et modèles effectivement déployés dans ${total} cas prouvés. Agrégé automatiquement depuis la stack technique de chaque fiche. Le décompte est en nombre de cas où l'outil apparaît.`, `Not theory: the tools, platforms and models actually deployed across ${total} proven cases. Aggregated automatically from each case's tech stack. The count is the number of cases where the tool appears.`)}</p>
   </section>
-  ${section('Les IA et modèles les plus déployés', 'Ce qui tourne réellement derrière, quand c\'est publié.', 'ia')}
-  ${section('Les plateformes et outils martech', 'Là où se déploient les cas, du paid media au CRM.', 'plateforme')}
-  ${section('Les intégrateurs et agences', 'Qui aide les marques à déployer, quand c\'est cité.', 'partenaire')}
-  <section class="section"><div class="section-head"><h2>La matrice outils × type d'usage</h2><p>Quel outil sert quel type de use case. Plus la case est foncée, plus l'outil y est déployé.</p></div>${matrix}</section>`;
-  return page('La stack réelle de l\'IA marketing - AI Showreel', body, {
-    desc: 'Les outils, plateformes et modèles IA effectivement déployés dans les cas marketing prouvés, agrégés et classés.', path: '/outils.html',
+  ${section(t('Les IA et modèles les plus déployés', 'The most deployed AI and models'), t("Ce qui tourne réellement derrière, quand c'est publié.", 'What actually runs under the hood, when it is disclosed.'), 'ia')}
+  ${section(t('Les plateformes et outils martech', 'Martech platforms and tools'), t('Là où se déploient les cas, du paid media au CRM.', 'Where the cases are deployed, from paid media to CRM.'), 'plateforme')}
+  ${section(t('Les intégrateurs et agences', 'Integrators and agencies'), t("Qui aide les marques à déployer, quand c'est cité.", 'Who helps brands deploy, when it is named.'), 'partenaire')}
+  <section class="section"><div class="section-head"><h2>${t("La matrice outils × type d'usage", 'The tools × use-case matrix')}</h2><p>${t("Quel outil sert quel type de use case. Plus la case est foncée, plus l'outil y est déployé.", 'Which tool serves which type of use case. The darker the cell, the more the tool is deployed there.')}</p></div>${matrix}</section>`;
+  return page(t('La stack réelle de l\'IA marketing - AI Showreel', 'The real AI marketing stack - AI Showreel'), body, {
+    desc: t('Les outils, plateformes et modèles IA effectivement déployés dans les cas marketing prouvés, agrégés et classés.', 'The AI tools, platforms and models actually deployed across proven marketing cases, aggregated and ranked.'), path: '/outils.html',
   });
 }
 
@@ -451,7 +451,7 @@ function statCard(ch) {
   return `<div class="p-stat"><div class="p-stat-val">${esc(ch.valeur)}</div><div class="p-stat-label">${esc(ch.stat)}${ch.annee ? ` <span class="p-stat-year">(${esc(ch.annee)})</span>` : ''}</div></div>`;
 }
 function sourcesLine(sources = []) {
-  return sources.length ? `<p class="p-sources">Sources : ${sources.map(s => `<a href="${esc(s.url)}" target="_blank" rel="noopener">${esc(s.institut)}${s.annee ? ' ' + esc(s.annee) : ''}</a>${s.fiabilite === 'T1_primaire' ? '' : ' <span class="fiab fiab-t3">presse</span>'}`).join(' · ')}</p>` : '';
+  return sources.length ? `<p class="p-sources">${t('Sources : ', 'Sources: ')}${sources.map(s => `<a href="${esc(s.url)}" target="_blank" rel="noopener">${esc(s.institut)}${s.annee ? ' ' + esc(s.annee) : ''}</a>${s.fiabilite === 'T1_primaire' ? '' : ` <span class="fiab fiab-t3">${t('presse', 'press')}</span>`}`).join(' · ')}</p>` : '';
 }
 
 // Encart perception par famille, injecte automatiquement sur chaque fiche succes
@@ -459,22 +459,22 @@ function perceptionBlock(famille) {
   const u = PERCEPTION.usages?.usages?.find(x => x.famille === famille);
   if (!u) return '';
   return `<section class="block block-perception">
-    <div class="block-head"><h2>Comment vos clients perçoivent ce type d'usage</h2><span class="percep-tag">Études sourcées</span></div>
+    <div class="block-head"><h2>${t("Comment vos clients perçoivent ce type d'usage", 'How your customers perceive this type of use')}</h2><span class="percep-tag">${t('Études sourcées', 'Sourced studies')}</span></div>
     <p>${esc(u.resume)}</p>
     <div class="p-stats">${(u.chiffres || []).slice(0, 3).map(statCard).join('')}</div>
     <div class="percep-cols">
-      ${u.conditions_acceptation?.length ? `<div><h4>Conditions d'acceptation</h4><ul>${u.conditions_acceptation.map(x => `<li>${esc(x)}</li>`).join('')}</ul></div>` : ''}
-      ${u.lignes_rouges?.length ? `<div class="percep-rouge"><h4>Lignes rouges</h4><ul>${u.lignes_rouges.map(x => `<li>${esc(x)}</li>`).join('')}</ul></div>` : ''}
+      ${u.conditions_acceptation?.length ? `<div><h4>${t("Conditions d'acceptation", 'Acceptance conditions')}</h4><ul>${u.conditions_acceptation.map(x => `<li>${esc(x)}</li>`).join('')}</ul></div>` : ''}
+      ${u.lignes_rouges?.length ? `<div class="percep-rouge"><h4>${t('Lignes rouges', 'Red lines')}</h4><ul>${u.lignes_rouges.map(x => `<li>${esc(x)}</li>`).join('')}</ul></div>` : ''}
     </div>
     ${sourcesLine(u.sources)}
-    <p class="percep-more"><a href="/perception.html">Voir l'acceptation complète : par pays, par usage, par génération</a></p>
+    <p class="percep-more"><a href="${P()}/perception.html">${t("Voir l'acceptation complète : par pays, par usage, par génération", 'See full acceptance: by country, by use, by generation')}</a></p>
   </section>`;
 }
 
 function perceptionPage() {
-  const P = PERCEPTION;
-  if (!P.pays || !P.usages || !P.attentes) return page('L\'acceptation - AI Showreel', '<p>Données en cours de collecte.</p>', {});
-  const paysBlocks = P.pays.pays.map(p => `
+  const PC = PERCEPTION;
+  if (!PC.pays || !PC.usages || !PC.attentes) return page(t('L\'acceptation - AI Showreel', 'Acceptance - AI Showreel'), `<p>${t('Données en cours de collecte.', 'Data being collected.')}</p>`, {});
+  const paysBlocks = PC.pays.pays.map(p => `
     <div class="pays-card">
       <h3>${esc(p.nom)}</h3>
       <div class="p-stats">${(p.chiffres || []).slice(0, 3).map(statCard).join('')}</div>
@@ -482,7 +482,7 @@ function perceptionPage() {
       ${sourcesLine(p.sources?.slice(0, 3))}
     </div>`).join('');
 
-  const usageBlocks = P.usages.usages.map(u => `
+  const usageBlocks = PC.usages.usages.map(u => `
     <section class="pattern-group">
       <div class="pg-head"><h2>${esc(u.titre_lisible)}</h2></div>
       <p>${esc(u.resume)}</p>
@@ -504,16 +504,16 @@ function perceptionPage() {
 
   const body = `
   <section class="hero">
-    <h1>Ce que vos clients <em>acceptent</em> vraiment.</h1>
-    <p class="lede">D'un côté ce que les marques déploient (la base). De l'autre, ce que les clients en perçoivent : l'enthousiasme et la méfiance par pays, l'acceptation par type d'usage, et les conditions qu'ils posent. Tout est tiré d'études représentatives, sourcées et datées.</p>
+    <h1>${t('Ce que vos clients <em>acceptent</em> vraiment.', 'What your customers <em>actually accept</em>.')}</h1>
+    <p class="lede">${t("D'un côté ce que les marques déploient (la base). De l'autre, ce que les clients en perçoivent : l'enthousiasme et la méfiance par pays, l'acceptation par type d'usage, et les conditions qu'ils posent. Tout est tiré d'études représentatives, sourcées et datées.", 'On one side, what brands deploy (the index). On the other, how customers perceive it: enthusiasm and distrust by country, acceptance by type of use, and the conditions they set. All drawn from representative studies, sourced and dated.')}</p>
   </section>
-  <section class="section"><div class="section-head"><h2>Par type d'usage</h2><p>L'acceptation n'est pas uniforme : chaque famille de la base a ses conditions et ses lignes rouges.</p></div>${usageBlocks}</section>
-  <section class="section"><div class="section-head"><h2>Par pays</h2><p>${esc(P.pays.note_methodologique || '')}</p></div><div class="pays-grid">${paysBlocks}</div></section>
-  <section class="section"><div class="section-head"><h2>Les attentes transverses</h2></div>${(P.attentes.attentes || []).map(themeBlock).join('')}</section>
-  <section class="section"><div class="section-head"><h2>L'adoption réelle</h2><p>L'écart entre la méfiance déclarée et l'usage effectif est l'insight le plus important de cette page.</p></div>${(P.attentes.adoption || []).map(themeBlock).join('')}</section>
-  <section class="section"><div class="section-head"><h2>Par génération</h2></div>${(P.attentes.generations || []).map(themeBlock).join('')}</section>`;
-  return page('L\'acceptation de l\'IA par les clients - AI Showreel', body, {
-    desc: 'Comment les consommateurs perçoivent l\'IA : par pays, par type d\'usage, par génération. Études représentatives sourcées.', path: '/perception.html',
+  <section class="section"><div class="section-head"><h2>${t("Par type d'usage", 'By type of use')}</h2><p>${t("L'acceptation n'est pas uniforme : chaque famille de la base a ses conditions et ses lignes rouges.", 'Acceptance is not uniform: each family in the index has its own conditions and red lines.')}</p></div>${usageBlocks}</section>
+  <section class="section"><div class="section-head"><h2>${t('Par pays', 'By country')}</h2><p>${esc(PC.pays.note_methodologique || '')}</p></div><div class="pays-grid">${paysBlocks}</div></section>
+  <section class="section"><div class="section-head"><h2>${t('Les attentes transverses', 'Cross-cutting expectations')}</h2></div>${(PC.attentes.attentes || []).map(themeBlock).join('')}</section>
+  <section class="section"><div class="section-head"><h2>${t("L'adoption réelle", 'Actual adoption')}</h2><p>${t("L'écart entre la méfiance déclarée et l'usage effectif est l'insight le plus important de cette page.", 'The gap between stated distrust and actual usage is the most important insight on this page.')}</p></div>${(PC.attentes.adoption || []).map(themeBlock).join('')}</section>
+  <section class="section"><div class="section-head"><h2>${t('Par génération', 'By generation')}</h2></div>${(PC.attentes.generations || []).map(themeBlock).join('')}</section>`;
+  return page(t('L\'acceptation de l\'IA par les clients - AI Showreel', 'How customers accept AI - AI Showreel'), body, {
+    desc: t('Comment les consommateurs perçoivent l\'IA : par pays, par type d\'usage, par génération. Études représentatives sourcées.', 'How consumers perceive AI: by country, by type of use, by generation. Representative, sourced studies.'), path: '/perception.html',
   });
 }
 
@@ -534,28 +534,34 @@ function crossStats(c, all) {
 // ---------- page fiche ----------
 function fichePage(c, all = []) {
   const a = c.axes || {};
+  // Contenu traduit : lit i18n.en en EN, retombe sur le FR sinon. Jamais valeur/dates/sources/citation_exacte.
+  const L = LANG === 'en' ? (c.i18n?.en || {}) : null;
+  const F = (fr, en) => (L && en != null) ? en : fr;
+  const seo = c.seo || {};
+  const eseo = L?.seo || {};
   const isEchec = c.type_fiche === 'echec_retrait';
   const topResult = (c.resultats || [])[0];
+  const topMetric = F(topResult?.metrique, L?.resultats?.[0]?.metrique);
   const cross = crossStats(c, all);
   const related = all.filter(x => x.id !== c.id && x.type_fiche === c.type_fiche
     && x.axes?.famille === a.famille && x.axes?.levier === a.levier
     && x.industrie !== c.industrie).slice(0, 3);
   const crossBanner = (!isEchec && cross.covered.length >= 2) ? `
-    <a class="cross-banner" href="/patterns.html#${groupSlug(c)}">
-      <span class="cb-proof">Pattern prouvé dans <strong>${cross.covered.length} industries</strong></span>
-      ${cross.missing.length ? `<span class="cb-gap">encore vierge en ${cross.missing.slice(0, 3).map(i => INDUSTRIES[i]).join(', ')}${cross.missing.length > 3 ? ` +${cross.missing.length - 3}` : ''}</span>` : ''}
-      <span class="cb-arrow">Voir la carte du pattern</span>
+    <a class="cross-banner" href="${P()}/patterns.html#${groupSlug(c)}">
+      <span class="cb-proof">${t('Pattern prouvé dans', 'Pattern proven in')} <strong>${cross.covered.length} ${t('industries', 'industries')}</strong></span>
+      ${cross.missing.length ? `<span class="cb-gap">${t('encore vierge en', 'still untouched in')} ${cross.missing.slice(0, 3).map(i => INDUSTRIES[i]).join(', ')}${cross.missing.length > 3 ? ` +${cross.missing.length - 3}` : ''}</span>` : ''}
+      <span class="cb-arrow">${t('Voir la carte du pattern', 'See the pattern map')}</span>
     </a>` : '';
   const chips = [
-    ['Industrie', INDUSTRIES[c.industrie]], ['Levier', LEVIERS[a.levier]],
-    ['Famille', FAMILLES[a.famille]], ['Implémentation', IMPLEM[c.implementation]],
-    ['Étape', a.etape_parcours],
+    [t('Industrie', 'Industry'), INDUSTRIES[c.industrie]], [t('Levier', 'Lever'), LEVIERS[a.levier]],
+    [t('Famille', 'Family'), FAMILLES[a.famille]], [t('Implémentation', 'Implementation'), IMPLEM[c.implementation]],
+    [t('Étape', 'Stage'), F(a.etape_parcours, L?.etape_parcours)],
   ].filter(([, v]) => v).map(([k, v]) => `<span class="chip"><span class="chip-k">${k}</span>${esc(v)}</span>`).join('');
 
-  const results = (c.resultats || []).map(r => `
+  const results = (c.resultats || []).map((r, i) => `
     <div class="result-card">
       <div class="result-val${longStat(r.valeur) ? ' rv-long' : ''}">${esc(r.valeur)}</div>
-      <div class="result-metric">${esc(r.metrique)}</div>
+      <div class="result-metric">${esc(F(r.metrique, L?.resultats?.[i]?.metrique))}</div>
       <div class="result-cite">“${esc(r.citation_exacte)}” <a href="#src-${esc(r.source_ref)}">${esc(r.source_ref)}</a></div>
     </div>`).join('');
 
@@ -563,24 +569,25 @@ function fichePage(c, all = []) {
     <li id="src-${esc(s.ref)}"><span class="src-ref">${esc(s.ref)}</span>
       <a href="${esc(s.url)}" target="_blank" rel="noopener">${esc(s.titre)}</a>
       ${fiabBadge(s.fiabilite)}
-      <span class="src-meta">${esc(host(s.url))}${s.date_publication ? ' · ' + esc(s.date_publication) : ''} · consulté le ${esc(s.consulte_le)}</span>
-      ${s.archive_url ? `<a class="src-archive" href="${esc(s.archive_url)}" target="_blank" rel="noopener">archive</a>` : `<span class="src-archive pending">archive à générer</span>`}
+      <span class="src-meta">${esc(host(s.url))}${s.date_publication ? ' · ' + esc(s.date_publication) : ''} · ${t('consulté le', 'accessed')} ${esc(s.consulte_le)}</span>
+      ${s.archive_url ? `<a class="src-archive" href="${esc(s.archive_url)}" target="_blank" rel="noopener">${t('archive', 'archive')}</a>` : `<span class="src-archive pending">${t('archive à générer', 'archive pending')}</span>`}
     </li>`).join('');
 
   const flow = c.schema_flow ? `
     <section class="block">
-      <div class="block-head"><h2>Comment ça fonctionne</h2>
-        <span class="flow-mode flow-${c.schema_flow.statut}">${c.schema_flow.statut === 'documente' ? 'Architecture documentée' : 'Approche-type inférée'}</span>
+      <div class="block-head"><h2>${t('Comment ça fonctionne', 'How it works')}</h2>
+        <span class="flow-mode flow-${c.schema_flow.statut}">${c.schema_flow.statut === 'documente' ? t('Architecture documentée', 'Documented architecture') : t('Approche-type inférée', 'Inferred typical approach')}</span>
       </div>
-      ${c.schema_flow.statut === 'approche_type' ? `<p class="approche-note">Le détail interne n'est pas public. Voici une approche éprouvée qui mène au même résultat — à adapter à votre stack.</p>` : ''}
+      ${c.schema_flow.statut === 'approche_type' ? `<p class="approche-note">${t("Le détail interne n'est pas public. Voici une approche éprouvée qui mène au même résultat — à adapter à votre stack.", 'The internal detail is not public. Here is a proven approach that leads to the same result, to adapt to your stack.')}</p>` : ''}
       <div class="flow-wrap">${renderFlow(c.schema_flow)}</div>
-      ${c.stack_technique?.length ? `<div class="tech-detail"><h4>La stack en détail</h4><ul>${c.stack_technique.map(t => `
-        <li><span class="tech-cat tech-${esc(t.categorie)}">${esc(t.categorie)}</span>
-          ${t.url ? `<a href="${esc(t.url)}" target="_blank" rel="noopener"><strong>${esc(t.nom)}</strong></a>` : `<strong>${esc(t.nom)}</strong>`}
-          ${t.detail ? `<span class="tech-note">${esc(t.detail)}</span>` : ''}</li>`).join('')}</ul></div>` : ''}
+      ${c.stack_technique?.length ? `<div class="tech-detail"><h4>${t('La stack en détail', 'The stack in detail')}</h4><ul>${c.stack_technique.map((tk, i) => `
+        <li><span class="tech-cat tech-${esc(tk.categorie)}">${esc(tk.categorie)}</span>
+          ${tk.url ? `<a href="${esc(tk.url)}" target="_blank" rel="noopener"><strong>${esc(tk.nom)}</strong></a>` : `<strong>${esc(tk.nom)}</strong>`}
+          ${tk.detail ? `<span class="tech-note">${esc(F(tk.detail, L?.stack_technique?.[i]?.detail))}</span>` : ''}</li>`).join('')}</ul></div>` : ''}
     </section>` : '';
 
   const fo = c.fonctionnement_operationnel;
+  const efo = L?.fonctionnement_operationnel;
   const acteurClass = (x = '') => {
     const s = x.toLowerCase();
     if (s.includes('ia') || s.includes('algo') || s.includes('modèle')) return 'act-ia';
@@ -592,145 +599,151 @@ function fichePage(c, all = []) {
   };
   const foBlock = fo ? `
     <section class="block">
-      <div class="block-head"><h2>Comment ça tourne, concrètement</h2><span class="ops-tag">Pour les équipes ops</span></div>
+      <div class="block-head"><h2>${t('Comment ça tourne, concrètement', 'How it runs, concretely')}</h2><span class="ops-tag">${t('Pour les équipes ops', 'For ops teams')}</span></div>
       <div class="ops-meta">
-        <div class="ops-kv"><span>Cadence</span><strong>${esc(fo.cadence)}</strong></div>
-        <div class="ops-kv"><span>Opéré par</span><strong>${esc(fo.opere_par)}</strong></div>
+        <div class="ops-kv"><span>${t('Cadence', 'Cadence')}</span><strong>${esc(F(fo.cadence, efo?.cadence))}</strong></div>
+        <div class="ops-kv"><span>${t('Opéré par', 'Operated by')}</span><strong>${esc(F(fo.opere_par, efo?.opere_par))}</strong></div>
       </div>
       <ol class="ops-steps">
         ${(fo.etapes || []).map((e, i) => `<li class="${acteurClass(e.acteur)}">
           <div class="ops-num">${i + 1}</div>
-          <div class="ops-body"><div class="ops-etape">${esc(e.etape)} <span class="ops-acteur">${esc(e.acteur)}</span></div><p>${esc(e.detail)}</p></div>
+          <div class="ops-body"><div class="ops-etape">${esc(F(e.etape, efo?.etapes?.[i]?.etape))} <span class="ops-acteur">${esc(F(e.acteur, efo?.etapes?.[i]?.acteur))}</span></div><p>${esc(F(e.detail, efo?.etapes?.[i]?.detail))}</p></div>
         </li>`).join('')}
       </ol>
-      ${fo.signal_pilote ? `<div class="ops-signal"><span>Le signal qui pilote</span><p>${esc(fo.signal_pilote)}</p></div>` : ''}
+      ${fo.signal_pilote ? `<div class="ops-signal"><span>${t('Le signal qui pilote', 'The signal that drives it')}</span><p>${esc(F(fo.signal_pilote, efo?.signal_pilote))}</p></div>` : ''}
     </section>` : '';
 
   const rep = c.replication;
+  const erep = L?.replication;
   const repBlock = rep ? `
     <section class="block block-infere">
-      <div class="block-head"><h2>Comment répliquer</h2><span class="infere-tag">Inférence — non sourcé</span></div>
+      <div class="block-head"><h2>${t('Comment répliquer', 'How to replicate')}</h2><span class="infere-tag">${t('Inférence — non sourcé', 'Inference, not sourced')}</span></div>
       <div class="rep-grid">
-        <div><h4>Prérequis data</h4><ul>${(rep.prerequis_data || []).map(x => `<li>${esc(x)}</li>`).join('')}</ul></div>
-        ${rep.prerequis_orga?.length ? `<div><h4>Prérequis orga</h4><ul>${rep.prerequis_orga.map(x => `<li>${esc(x)}</li>`).join('')}</ul></div>` : ''}
-        <div><h4>Stack possible</h4><ul>${(rep.stack_possible || []).map(x => `<li>${esc(x)}</li>`).join('')}</ul></div>
+        <div><h4>${t('Prérequis data', 'Data prerequisites')}</h4><ul>${(F(rep.prerequis_data, erep?.prerequis_data) || []).map(x => `<li>${esc(x)}</li>`).join('')}</ul></div>
+        ${rep.prerequis_orga?.length ? `<div><h4>${t('Prérequis orga', 'Org prerequisites')}</h4><ul>${(F(rep.prerequis_orga, erep?.prerequis_orga) || []).map(x => `<li>${esc(x)}</li>`).join('')}</ul></div>` : ''}
+        <div><h4>${t('Stack possible', 'Possible stack')}</h4><ul>${(F(rep.stack_possible, erep?.stack_possible) || []).map(x => `<li>${esc(x)}</li>`).join('')}</ul></div>
       </div>
-      ${rep.equipe ? `<div class="rep-foot"><div class="rep-kv"><span>Équipe pour opérer</span><strong>${esc(rep.equipe)}</strong></div></div>` : ''}
-      ${rep.playbook?.length ? `<div class="playbook"><h4>Le plan, étape par étape</h4><ol>${rep.playbook.map((p, i) => `
-        <li><div class="pb-phase">Étape ${i + 1}</div>
-          <div class="pb-body"><strong>${esc(p.action)}</strong>${p.livrable ? `<span class="pb-livrable">Livrable : ${esc(p.livrable)}</span>` : ''}</div></li>`).join('')}</ol></div>` : ''}
-      <p class="rep-first"><strong>Première étape :</strong> ${esc(rep.premiere_etape)}</p>
+      ${rep.equipe ? `<div class="rep-foot"><div class="rep-kv"><span>${t('Équipe pour opérer', 'Team to operate')}</span><strong>${esc(F(rep.equipe, erep?.equipe))}</strong></div></div>` : ''}
+      ${rep.playbook?.length ? `<div class="playbook"><h4>${t('Le plan, étape par étape', 'The plan, step by step')}</h4><ol>${rep.playbook.map((p, i) => `
+        <li><div class="pb-phase">${t('Étape', 'Step')} ${i + 1}</div>
+          <div class="pb-body"><strong>${esc(F(p.action, erep?.playbook?.[i]?.action))}</strong>${p.livrable ? `<span class="pb-livrable">${t('Livrable :', 'Deliverable:')} ${esc(F(p.livrable, erep?.playbook?.[i]?.livrable))}</span>` : ''}</div></li>`).join('')}</ol></div>` : ''}
+      <p class="rep-first"><strong>${t('Première étape :', 'First step:')}</strong> ${esc(F(rep.premiere_etape, erep?.premiere_etape))}</p>
     </section>` : '';
 
   const pm = c.post_mortem;
+  const epm = L?.post_mortem;
   const pmBlock = pm ? `
     <section class="block block-pm">
-      <div class="block-head"><h2>Post-mortem</h2><span class="pm-tag">Cimetière</span></div>
-      <h4>Ce qui s'est passé <span class="src-flag">sourcé</span></h4><p>${esc(pm.ce_qui_s_est_passe)}</p>
-      <h4>Raison de l'échec <span class="src-flag">sourcé</span></h4><p>${esc(pm.raison_echec)}</p>
-      ${pm.cout_estime ? `<h4>Coût <span class="src-flag">sourcé</span></h4><p>${esc(pm.cout_estime)}</p>` : ''}
-      ${pm.signaux_avant_coureurs ? `<h4>Signaux avant-coureurs <span class="infere-flag">inféré</span></h4><p>${esc(pm.signaux_avant_coureurs)}</p>` : ''}
-      <h4>Leçons avec recul <span class="infere-flag">inféré</span></h4><p>${esc(pm.lecons_avec_recul)}</p>
-      ${pm.le_pattern_reste_il_valide ? `<div class="pm-verdict"><span>Le pattern reste-t-il valide ?</span><p>${esc(pm.le_pattern_reste_il_valide)}</p></div>` : ''}
+      <div class="block-head"><h2>${t('Post-mortem', 'Post-mortem')}</h2><span class="pm-tag">${t('Cimetière', 'Graveyard')}</span></div>
+      <h4>${t("Ce qui s'est passé", 'What happened')} <span class="src-flag">${t('sourcé', 'sourced')}</span></h4><p>${esc(F(pm.ce_qui_s_est_passe, epm?.ce_qui_s_est_passe))}</p>
+      <h4>${t("Raison de l'échec", 'Reason for failure')} <span class="src-flag">${t('sourcé', 'sourced')}</span></h4><p>${esc(F(pm.raison_echec, epm?.raison_echec))}</p>
+      ${pm.cout_estime ? `<h4>${t('Coût', 'Cost')} <span class="src-flag">${t('sourcé', 'sourced')}</span></h4><p>${esc(F(pm.cout_estime, epm?.cout_estime))}</p>` : ''}
+      ${pm.signaux_avant_coureurs ? `<h4>${t('Signaux avant-coureurs', 'Warning signs')} <span class="infere-flag">${t('inféré', 'inferred')}</span></h4><p>${esc(F(pm.signaux_avant_coureurs, epm?.signaux_avant_coureurs))}</p>` : ''}
+      <h4>${t('Leçons avec recul', 'Lessons in hindsight')} <span class="infere-flag">${t('inféré', 'inferred')}</span></h4><p>${esc(F(pm.lecons_avec_recul, epm?.lecons_avec_recul))}</p>
+      ${pm.le_pattern_reste_il_valide ? `<div class="pm-verdict"><span>${t('Le pattern reste-t-il valide ?', 'Is the pattern still valid?')}</span><p>${esc(F(pm.le_pattern_reste_il_valide, epm?.le_pattern_reste_il_valide))}</p></div>` : ''}
     </section>` : '';
 
   const ue = c.transposable_ue;
+  const resumeCitable = F(seo.resume_citable, eseo.resume_citable);
+  const pointsCles = F(c.points_cles, L?.points_cles);
   const body = `
   <article class="fiche">
-    <a class="back" href="/">← La base</a>
+    <a class="back" href="${P()}/">${t('← La base', '← The index')}</a>
     <div class="fiche-top">
       <div class="fiche-top-main">
-        <div class="badges">${preuveBadge(c.niveau_preuve?.niveau)} ${vivantBadge(c.statut_vivant?.statut)} ${isEchec ? '<span class="echec-badge">Échec / retrait</span>' : ''}</div>
+        <div class="badges">${preuveBadge(c.niveau_preuve?.niveau)} ${vivantBadge(c.statut_vivant?.statut)} ${isEchec ? `<span class="echec-badge">${t('Échec / retrait', 'Failure / pullback')}</span>` : ''}</div>
         <div class="fiche-title">${brandLogo(c, 'big')}<h1>${esc(c.marque)}</h1></div>
-        <p class="pattern">${esc(a.pattern || '')}</p>
+        <p class="pattern">${esc(F(a.pattern, L?.pattern) || '')}</p>
         <div class="chips">${chips}</div>
         ${crossBanner}
       </div>
       ${topResult ? `<div class="headline-stat ${isEchec ? 'hs-echec' : ''}">
         <div class="hs-val${longStat(topResult.valeur) ? ' hs-long' : ''}">${esc(topResult.valeur)}</div>
-        <div class="hs-metric">${esc(topResult.metrique)}</div>
+        <div class="hs-metric">${esc(topMetric)}</div>
         <div class="hs-src">“${esc(topResult.citation_exacte)}” <a href="#src-${esc(topResult.source_ref)}">${esc(topResult.source_ref)}</a></div>
       </div>` : ''}
     </div>
 
     <div class="fiche-cols">
       <div class="fiche-main">
-        ${c.seo?.resume_citable ? `<p class="citable-lead">${esc(c.seo.resume_citable)}</p>` : ''}
-        ${c.points_cles?.length ? `<section class="essentiel"><h2>L'essentiel</h2><ul>${c.points_cles.map(p => `<li>${esc(p)}</li>`).join('')}</ul></section>` : ''}
-        <section class="block"><h2>Objectif</h2><p>${esc(c.objectif_business)}</p></section>
-        <section class="block"><h2>Le déploiement</h2><p>${esc(c.description)}</p></section>
+        ${resumeCitable ? `<p class="citable-lead">${esc(resumeCitable)}</p>` : ''}
+        ${pointsCles?.length ? `<section class="essentiel"><h2>${t("L'essentiel", 'Key points')}</h2><ul>${pointsCles.map(p => `<li>${esc(p)}</li>`).join('')}</ul></section>` : ''}
+        <section class="block"><h2>${t('Objectif', 'Objective')}</h2><p>${esc(F(c.objectif_business, L?.objectif_business))}</p></section>
+        <section class="block"><h2>${t('Le déploiement', 'The deployment')}</h2><p>${esc(F(c.description, L?.description))}</p></section>
         ${mediaBlock(c)}
-        ${results ? `<section class="block"><h2>Résultats <span class="grade-inline">${preuveBadge(c.niveau_preuve?.niveau)}</span></h2><div class="results">${results}</div><p class="preuve-just">${esc(c.niveau_preuve?.justification || '')}</p></section>` : ''}
+        ${results ? `<section class="block"><h2>${t('Résultats', 'Results')} <span class="grade-inline">${preuveBadge(c.niveau_preuve?.niveau)}</span></h2><div class="results">${results}</div><p class="preuve-just">${esc(F(c.niveau_preuve?.justification, L?.niveau_preuve?.justification) || '')}</p></section>` : ''}
         ${flow}
         ${foBlock}
         ${pmBlock}
         ${perceptionBlock(a.famille)}
         ${repBlock}
         ${related.length ? `<section class="block block-related">
-          <div class="block-head"><h2>${isEchec ? 'Le même piège, ailleurs' : 'Le même pattern, prouvé dans d\'autres industries'}</h2></div>
+          <div class="block-head"><h2>${isEchec ? t('Le même piège, ailleurs', 'The same trap, elsewhere') : t("Le même pattern, prouvé dans d'autres industries", 'The same pattern, proven in other industries')}</h2></div>
           <div class="cards related-cards">${related.map(caseCard).join('')}</div>
-          ${!isEchec && cross.missing.length ? `<p class="related-gap">Aucun déploiement prouvé de ce pattern en <strong>${cross.missing.slice(0, 5).map(i => INDUSTRIES[i]).join(', ')}</strong>${cross.missing.length > 5 ? ` et ${cross.missing.length - 5} autres industries` : ''} : c'est là que se trouve la fenêtre.</p>` : ''}
+          ${!isEchec && cross.missing.length ? `<p class="related-gap">${t('Aucun déploiement prouvé de ce pattern en', 'No proven deployment of this pattern in')} <strong>${cross.missing.slice(0, 5).map(i => INDUSTRIES[i]).join(', ')}</strong>${cross.missing.length > 5 ? t(` et ${cross.missing.length - 5} autres industries`, ` and ${cross.missing.length - 5} more industries`) : ''}${t(" : c'est là que se trouve la fenêtre.", ': that is where the opening is.')}</p>` : ''}
         </section>` : ''}
       </div>
       <aside class="fiche-side">
         <div class="side-card">
-          <h3>Preuve</h3>
-          <div class="side-kv"><span>Niveau</span>${preuveBadge(c.niveau_preuve?.niveau)}</div>
-          <div class="side-kv"><span>Vivacité</span>${vivantBadge(c.statut_vivant?.statut)}</div>
-          <p class="side-note">${esc(c.statut_vivant?.note || '')}</p>
+          <h3>${t('Preuve', 'Evidence')}</h3>
+          <div class="side-kv"><span>${t('Niveau', 'Level')}</span>${preuveBadge(c.niveau_preuve?.niveau)}</div>
+          <div class="side-kv"><span>${t('Vivacité', 'Liveness')}</span>${vivantBadge(c.statut_vivant?.statut)}</div>
+          <p class="side-note">${esc(F(c.statut_vivant?.note, L?.statut_vivant?.note) || '')}</p>
         </div>
         <div class="side-card">
-          <h3>Dates</h3>
-          <div class="side-kv"><span>Lancement</span><strong>${esc(c.dates?.lancement || '—')}</strong></div>
-          <div class="side-kv"><span>Dernier signal</span><strong>${esc(c.dates?.derniere_confirmation_activite || '—')}</strong></div>
-          <div class="side-kv"><span>Vérifié le</span><strong>${esc(c.dates?.verifie_le || '—')}</strong></div>
+          <h3>${t('Dates', 'Dates')}</h3>
+          <div class="side-kv"><span>${t('Lancement', 'Launch')}</span><strong>${esc(c.dates?.lancement || '—')}</strong></div>
+          <div class="side-kv"><span>${t('Dernier signal', 'Last signal')}</span><strong>${esc(c.dates?.derniere_confirmation_activite || '—')}</strong></div>
+          <div class="side-kv"><span>${t('Vérifié le', 'Verified on')}</span><strong>${esc(c.dates?.verifie_le || '—')}</strong></div>
         </div>
         <div class="side-card">
-          <h3>Stack / plateforme</h3>
+          <h3>${t('Stack / plateforme', 'Stack / platform')}</h3>
           <ul class="side-tags tools">${(a.plateforme_stack || []).map(toolLink).join('')}</ul>
         </div>
         ${ue ? `<div class="side-card side-ue ue-${ue.flag}">
-          <h3>Transposable UE</h3>
+          <h3>${t('Transposable UE', 'Transposable to EU')}</h3>
           <div class="ue-flag">${ue.flag.replace(/_/g, ' ')}</div>
-          <p class="side-note">${esc(ue.note)}</p>
+          <p class="side-note">${esc(F(ue.note, L?.transposable_ue?.note))}</p>
         </div>` : ''}
         ${(c.type_fiche !== 'echec_retrait' && (c.marque_linkedin || c.intervenants?.length || c.agences?.length)) ? `<div class="side-card side-people">
-          <h3>Qui l'a porté</h3>
+          <h3>${t("Qui l'a porté", 'Who drove it')}</h3>
           ${c.marque_linkedin ? `<a class="li-company" href="${esc(c.marque_linkedin)}" target="_blank" rel="noopener"><span class="li-ic">in</span>${esc(c.marque)}</a>` : ''}
           ${c.intervenants?.length ? `<ul class="people">${c.intervenants.map(p => `
             <li>${p.linkedin_url ? `<a href="${esc(p.linkedin_url)}" target="_blank" rel="noopener"><span class="li-ic">in</span>${esc(p.nom)}</a>` : `<span class="person-noli">${esc(p.nom)}</span>`}
               <span class="person-role">${esc(p.role)} <a class="person-src" href="#src-${esc(p.source_ref)}">${esc(p.source_ref)}</a></span></li>`).join('')}</ul>` : ''}
-          ${c.agences?.length ? `<div class="agences"><span class="agences-h">Agences & partenaires</span><ul class="people">${c.agences.map(ag => `
+          ${c.agences?.length ? `<div class="agences"><span class="agences-h">${t('Agences & partenaires', 'Agencies & partners')}</span><ul class="people">${c.agences.map(ag => `
             <li>${ag.linkedin_url ? `<a href="${esc(ag.linkedin_url)}" target="_blank" rel="noopener"><span class="li-ic">in</span>${esc(ag.nom)}</a>` : `<span class="person-noli">${esc(ag.nom)}</span>`}
               <span class="person-role">${esc(ag.role)} <a class="person-src" href="#src-${esc(ag.source_ref)}">${esc(ag.source_ref)}</a></span></li>`).join('')}</ul></div>` : ''}
         </div>` : ''}
         <div class="side-card side-visual">
-          <h3>Preuve visuelle</h3>
-          ${c.preuve_visuelle?.url_capture ? `<img src="${esc(c.preuve_visuelle.url_capture)}" alt="capture ${esc(c.marque)}">` : `<div class="visual-pending">Capture datée à générer (PeekShot)</div>`}
+          <h3>${t('Preuve visuelle', 'Visual proof')}</h3>
+          ${c.preuve_visuelle?.url_capture ? `<img src="${esc(c.preuve_visuelle.url_capture)}" alt="capture ${esc(c.marque)}">` : `<div class="visual-pending">${t('Capture datée à générer (PeekShot)', 'Dated screenshot pending (PeekShot)')}</div>`}
         </div>
       </aside>
     </div>
 
-    <section class="block block-sources"><h2>Sources</h2><ol class="sources">${sources}</ol></section>
+    <section class="block block-sources"><h2>${t('Sources', 'Sources')}</h2><ol class="sources">${sources}</ol></section>
 
     <section class="feedback">
       <div>
-        <h3>Une erreur, une info plus récente, une source&nbsp;?</h3>
-        <p>Cette fiche vit de sa justesse. Si un chiffre a bougé, si le déploiement a changé, ou si vous avez une source de meilleure qualité, dites-le nous. Toute correction sourcée est vérifiée avant publication.</p>
+        <h3>${t('Une erreur, une info plus récente, une source&nbsp;?', 'An error, newer info, a source?')}</h3>
+        <p>${t("Cette fiche vit de sa justesse. Si un chiffre a bougé, si le déploiement a changé, ou si vous avez une source de meilleure qualité, dites-le nous. Toute correction sourcée est vérifiée avant publication.", 'This page lives on its accuracy. If a figure has moved, if the deployment has changed, or if you have a higher-quality source, tell us. Every sourced correction is verified before publication.')}</p>
       </div>
-      <a class="feedback-btn" href="${feedbackLink(c)}">Proposer une correction</a>
+      <a class="feedback-btn" href="${feedbackLink(c)}">${t('Proposer une correction', 'Suggest a correction')}</a>
     </section>
   </article>`;
 
-  const _url = SITE + `/cas/${c.id}.html`;
-  const _kw = [INDUSTRIES[c.industrie], LEVIERS[a.levier], FAMILLES[a.famille], a.pattern, ...(c.stack_technique || []).map(t => t.nom)].filter(Boolean).join(', ');
+  const _url = SITE + P() + `/cas/${c.id}.html`;
+  const _kw = [INDUSTRIES[c.industrie], LEVIERS[a.levier], FAMILLES[a.famille], F(a.pattern, L?.pattern), ...(c.stack_technique || []).map(tk => tk.nom)].filter(Boolean).join(', ');
+  const _title = F(seo.title, eseo.title) || `${c.marque} - AI Showreel`;
+  const _desc = F(seo.meta_description, eseo.meta_description) || resumeCitable || '';
   const nodes = [{
     '@type': 'Article',
     '@id': _url + '#article',
-    headline: c.seo?.title || c.marque,
-    description: c.seo?.meta_description || c.seo?.resume_citable || '',
+    headline: F(seo.title, eseo.title) || c.marque,
+    description: _desc,
     about: { '@type': 'Thing', name: c.marque },
-    keywords: _kw, inLanguage: 'fr',
+    keywords: _kw, inLanguage: LANG,
     datePublished: c.dates?.verifie_le, dateModified: c.dates?.verifie_le,
     mainEntityOfPage: _url, isPartOf: { '@id': SITE + '/#site' },
     author: { '@id': SITE + '/#org' }, publisher: { '@id': SITE + '/#org' },
@@ -738,13 +751,14 @@ function fichePage(c, all = []) {
   }, {
     '@type': 'BreadcrumbList',
     itemListElement: [
-      { '@type': 'ListItem', position: 1, name: 'La base', item: SITE + '/' },
-      { '@type': 'ListItem', position: 2, name: INDUSTRIES[c.industrie], item: SITE + `/rapport/${industrySlug(c.industrie)}.html` },
+      { '@type': 'ListItem', position: 1, name: t('La base', 'The index'), item: SITE + P() + '/' },
+      { '@type': 'ListItem', position: 2, name: INDUSTRIES[c.industrie], item: SITE + P() + `/rapport/${industrySlug(c.industrie)}.html` },
       { '@type': 'ListItem', position: 3, name: c.marque, item: _url },
     ],
   }];
-  if (c.seo?.faq?.length) nodes.push({ '@type': 'FAQPage', mainEntity: c.seo.faq.map(f => ({ '@type': 'Question', name: f.q, acceptedAnswer: { '@type': 'Answer', text: f.a } })) });
-  return page(c.seo?.title || `${c.marque} - AI Showreel`, body, { desc: c.seo?.meta_description || '', jsonld: JSON.stringify(nodes), path: `/cas/${c.id}.html` });
+  const efaq = F(seo.faq, eseo.faq);
+  if (efaq?.length) nodes.push({ '@type': 'FAQPage', mainEntity: efaq.map(f => ({ '@type': 'Question', name: f.q, acceptedAnswer: { '@type': 'Answer', text: f.a } })) });
+  return page(_title, body, { desc: _desc, jsonld: JSON.stringify(nodes), path: `/cas/${c.id}.html` });
 }
 
 // ---------- matrice de couverture ----------
@@ -754,15 +768,15 @@ function coverageMatrix(cases, { echec = false } = {}) {
   let rows = inds.map(ind => {
     const cells = levs.map(lev => {
       const hits = cases.filter(c => c.industrie === ind && c.axes?.levier === lev);
-      if (!hits.length) return `<td class="cell empty" title="Angle mort : aucun cas prouvé"></td>`;
+      if (!hits.length) return `<td class="cell empty" title="${t('Angle mort : aucun cas prouvé', 'Blind spot: no proven case')}"></td>`;
       const best = hits.map(h => h.niveau_preuve?.niveau).sort()[0];
-      return `<td class="cell filled g-${best}"><a class="mcell-link" href="/?ind=${ind}&lev=${lev}#cas" data-ind="${ind}" data-lev="${lev}" title="${hits.length} cas prouvés : ${INDUSTRIES[ind]} × ${LEVIERS[lev]}">${hits.length}</a></td>`;
+      return `<td class="cell filled g-${best}"><a class="mcell-link" href="${P()}/?ind=${ind}&lev=${lev}#cas" data-ind="${ind}" data-lev="${lev}" title="${hits.length} ${t('cas prouvés', 'proven cases')} : ${INDUSTRIES[ind]} × ${LEVIERS[lev]}">${hits.length}</a></td>`;
     }).join('');
     return `<tr><th class="row-h">${INDUSTRIES[ind]}</th>${cells}</tr>`;
   }).join('');
   const head = levs.map(l => `<th class="col-h">${LEVIERS[l]}</th>`).join('');
   return `<div class="matrix-wrap"><table class="matrix"><thead><tr><th></th>${head}</tr></thead><tbody>${rows}</tbody></table>
-    <p class="matrix-legend"><span class="lg cell empty"></span> angle mort (opportunité) &nbsp; <span class="lg cell filled g-A"></span> preuve forte &nbsp; le chiffre = nombre de cas prouvés</p></div>`;
+    <p class="matrix-legend"><span class="lg cell empty"></span> ${t('angle mort (opportunité)', 'blind spot (opportunity)')} &nbsp; <span class="lg cell filled g-A"></span> ${t('preuve forte', 'strong evidence')} &nbsp; ${t('le chiffre = nombre de cas prouvés', 'the number = count of proven cases')}</p></div>`;
 }
 
 // Rendu "texte lisible" (pas chiffre-heros geant) si la valeur est longue OU si elle ne contient
@@ -772,11 +786,14 @@ const longStat = v => { const s = String(v || '').replace(/\s+/g, ' ').trim(); r
 function caseCard(c) {
   const a = c.axes || {};
   const top = (c.resultats || [])[0];
-  return `<a class="card" href="/cas/${c.id}.html" data-ind="${c.industrie}" data-lev="${a.levier || ''}">
+  const en = LANG === 'en' ? (c.i18n?.en || {}) : null;
+  const pat = (en && en.pattern != null) ? en.pattern : a.pattern;
+  const metr = (en && en.resultats?.[0]?.metrique != null) ? en.resultats[0].metrique : top?.metrique;
+  return `<a class="card" href="${P()}/cas/${c.id}.html" data-ind="${c.industrie}" data-lev="${a.levier || ''}">
     <div class="card-head">${brandLogo(c)}<div class="card-badges">${preuveBadge(c.niveau_preuve?.niveau)} ${vivantBadge(c.statut_vivant?.statut)}</div></div>
     <h3>${esc(c.marque)}</h3>
-    <p class="card-pattern">${esc(a.pattern || '')}</p>
-    ${top ? `<div class="card-result"><strong${longStat(top.valeur) ? ' class="cr-long"' : ''}>${esc(top.valeur)}</strong> ${esc(top.metrique)}</div>` : ''}
+    <p class="card-pattern">${esc(pat || '')}</p>
+    ${top ? `<div class="card-result"><strong${longStat(top.valeur) ? ' class="cr-long"' : ''}>${esc(top.valeur)}</strong> ${esc(metr)}</div>` : ''}
     <div class="card-foot"><span>${esc(INDUSTRIES[c.industrie] || '')}</span><span>${esc(FAMILLES[a.famille] || '')}</span></div>
   </a>`;
 }
@@ -826,23 +843,24 @@ var q=new URLSearchParams(location.search);if(q.get('ind')||q.get('lev'))apply(q
   </script>`;
   const years = cases.map(c => (c.dates?.verifie_le || '').slice(0, 4)).filter(Boolean).sort();
   const temporal = years.length ? `${years[0]}/${years[years.length - 1]}` : '';
+  const nInd = new Set(succes.map(c => c.industrie)).size;
   const dataset = {
     '@type': 'Dataset',
     '@id': SITE + '/#dataset',
-    name: 'AI Showreel - index des déploiements IA prouvés en marketing digital',
-    description: `Index indépendant de ${succes.length} déploiements IA réellement prouvés à l'échelle par de grandes marques en marketing digital, sur ${new Set(succes.map(c => c.industrie)).size} industries. Chaque cas est noté sur une échelle de preuve publique (de A à D), vérifié vivant à sa date, sourcé, et mappé sur le parcours client.`,
-    url: SITE + '/',
-    inLanguage: 'fr',
+    name: t('AI Showreel - index des déploiements IA prouvés en marketing digital', 'AI Showreel - index of proven AI deployments in digital marketing'),
+    description: t(`Index indépendant de ${succes.length} déploiements IA réellement prouvés à l'échelle par de grandes marques en marketing digital, sur ${nInd} industries. Chaque cas est noté sur une échelle de preuve publique (de A à D), vérifié vivant à sa date, sourcé, et mappé sur le parcours client.`, `An independent index of ${succes.length} AI deployments actually proven at scale by major brands in digital marketing, across ${nInd} industries. Every case is graded on a public evidence scale (A to D), verified live at its date, sourced, and mapped to the customer journey.`),
+    url: SITE + P() + '/',
+    inLanguage: LANG,
     isAccessibleForFree: true,
     creator: { '@id': SITE + '/#org' },
     publisher: { '@id': SITE + '/#org' },
     isPartOf: { '@id': SITE + '/#site' },
-    keywords: ['IA marketing', 'intelligence artificielle', "cas d'usage IA", 'marketing digital', 'preuve publique', "déploiement à l'échelle"],
-    variableMeasured: ['industrie', 'levier growth', 'niveau de preuve public', 'statut de vivacité', 'stack technique'],
+    keywords: t('IA marketing, intelligence artificielle, cas d\'usage IA, marketing digital, preuve publique', 'AI marketing, artificial intelligence, AI use cases, digital marketing, public evidence').split(', '),
+    variableMeasured: t('industrie, levier growth, niveau de preuve public, statut de vivacité, stack technique', 'industry, growth lever, public evidence level, liveness status, tech stack').split(', '),
     ...(temporal ? { temporalCoverage: temporal } : {}),
   };
-  return page('AI Showreel — les déploiements IA prouvés du marketing digital', body, {
-    desc: 'Index indépendant des déploiements IA à l\'échelle en marketing digital, noté sur une échelle de preuve publique et vérifié vivant.', path: '/',
+  return page(t('AI Showreel — les déploiements IA prouvés du marketing digital', 'AI Showreel — the proven AI deployments of digital marketing'), body, {
+    desc: t('Index indépendant des déploiements IA à l\'échelle en marketing digital, noté sur une échelle de preuve publique et vérifié vivant.', 'An independent index of AI deployments at scale in digital marketing, graded on a public evidence scale and verified live.'), path: '/',
     jsonld: JSON.stringify(dataset),
   });
 }
@@ -851,14 +869,14 @@ function cimetierePage(cases) {
   const echecs = cases.filter(c => c.type_fiche === 'echec_retrait');
   const body = `
   <section class="hero hero-pm">
-    <h1>Le cimetière des cas d'usage</h1>
-    <p class="lede">Ce que personne ne montre : les déploiements IA de grandes marques qui ont échoué, été retirés, ou fait machine arrière. Avec, à chaque fois, la vraie question — le pattern était-il condamné, ou seulement son exécution&nbsp;?</p>
+    <h1>${t("Le cimetière des cas d'usage", 'The use-case graveyard')}</h1>
+    <p class="lede">${t("Ce que personne ne montre : les déploiements IA de grandes marques qui ont échoué, été retirés, ou fait machine arrière. Avec, à chaque fois, la vraie question — le pattern était-il condamné, ou seulement son exécution&nbsp;?", 'What no one shows: AI deployments by major brands that failed, were pulled back, or reversed. Each time with the real question: was the pattern doomed, or only its execution?')}</p>
   </section>
   <section class="section">
-    ${echecs.length ? `<div class="cards">${echecs.map(caseCard).join('')}</div>` : `<p class="empty-note">Collecte en cours — les premiers post-mortems arrivent (Air Canada, Zillow Offers, McDonald's voice AI).</p>`}
+    ${echecs.length ? `<div class="cards">${echecs.map(caseCard).join('')}</div>` : `<p class="empty-note">${t("Collecte en cours — les premiers post-mortems arrivent (Air Canada, Zillow Offers, McDonald's voice AI).", 'Collection in progress: the first post-mortems are coming (Air Canada, Zillow Offers, McDonald\'s voice AI).')}</p>`}
   </section>`;
-  return page('Le cimetière des cas d\'usage IA — AI Showreel', body, {
-    desc: 'Les déploiements IA de grandes marques qui ont échoué ou été retirés, documentés avec les leçons à en tirer.', path: '/cimetiere.html',
+  return page(t('Le cimetière des cas d\'usage IA — AI Showreel', 'The AI use-case graveyard — AI Showreel'), body, {
+    desc: t('Les déploiements IA de grandes marques qui ont échoué ou été retirés, documentés avec les leçons à en tirer.', 'AI deployments by major brands that failed or were pulled, documented with the lessons to draw from them.'), path: '/cimetiere.html',
   });
 }
 
@@ -882,55 +900,55 @@ function patternsPage(cases) {
     return `<section class="pattern-group" id="${groupSlug(c0)}">
       <div class="pg-head">
         <h2>${esc(groupLabel(c0))}</h2>
-        <div class="pg-stats"><strong>${g.cross.covered.length}</strong> industries prouvées · <strong>${g.list.length}</strong> cas</div>
+        <div class="pg-stats"><strong>${g.cross.covered.length}</strong> ${t('industries prouvées', 'proven industries')} · <strong>${g.list.length}</strong> ${t('cas', 'cases')}</div>
       </div>
       <div class="pg-industries">
         ${g.cross.covered.map(i => `<span class="ind-chip covered">${esc(INDUSTRIES[i] || i)}</span>`).join('')}
         ${g.cross.missing.map(i => `<span class="ind-chip open">${esc(INDUSTRIES[i] || i)}</span>`).join('')}
       </div>
-      ${g.cross.missing.length ? `<p class="pg-gap">Encore aucun déploiement prouvé en ${g.cross.missing.slice(0, 4).map(i => INDUSTRIES[i]).join(', ')}${g.cross.missing.length > 4 ? ` (+${g.cross.missing.length - 4})` : ''}.</p>` : `<p class="pg-gap pg-full">Pattern prouvé dans toutes les industries couvertes par la base.</p>`}
+      ${g.cross.missing.length ? `<p class="pg-gap">${t('Encore aucun déploiement prouvé en', 'No proven deployment yet in')} ${g.cross.missing.slice(0, 4).map(i => INDUSTRIES[i]).join(', ')}${g.cross.missing.length > 4 ? ` (+${g.cross.missing.length - 4})` : ''}.</p>` : `<p class="pg-gap pg-full">${t('Pattern prouvé dans toutes les industries couvertes par la base.', 'Pattern proven in every industry the index covers.')}</p>`}
       <div class="cards related-cards">${top.map(caseCard).join('')}</div>
     </section>`;
   }).join('');
 
   const body = `
   <section class="hero">
-    <h1>La carte des <em>patterns</em> cross-industrie.</h1>
-    <p class="lede">Un pattern prouvé dans plusieurs industries et absent de la vôtre n'est pas un risque : c'est une fenêtre. Cette carte montre, pour chaque pattern, où il est prouvé (plein) et où personne ne l'a encore déployé (hachuré).</p>
+    <h1>${t('La carte des <em>patterns</em> cross-industrie.', 'The cross-industry <em>pattern</em> map.')}</h1>
+    <p class="lede">${t("Un pattern prouvé dans plusieurs industries et absent de la vôtre n'est pas un risque : c'est une fenêtre. Cette carte montre, pour chaque pattern, où il est prouvé (plein) et où personne ne l'a encore déployé (hachuré).", 'A pattern proven across several industries and absent from yours is not a risk: it is an opening. This map shows, for each pattern, where it is proven (filled) and where no one has deployed it yet (hatched).')}</p>
   </section>
   ${sections}`;
-  return page('La carte des patterns cross-industrie - AI Showreel', body, {
-    desc: 'Chaque pattern IA marketing, les industries où il est prouvé, et celles où personne ne l\'a encore déployé.', path: '/patterns.html',
+  return page(t('La carte des patterns cross-industrie - AI Showreel', 'The cross-industry pattern map - AI Showreel'), body, {
+    desc: t('Chaque pattern IA marketing, les industries où il est prouvé, et celles où personne ne l\'a encore déployé.', 'Every AI marketing pattern, the industries where it is proven, and those where no one has deployed it yet.'), path: '/patterns.html',
   });
 }
 
 function methodoPage() {
   const body = `
   <section class="section prose">
-    <h1>La méthodologie <span class="is-product">est</span> le produit.</h1>
-    <p class="lede">N'importe qui peut lister des cas d'usage IA. La valeur n'est pas la liste — c'est le regard. Trois disciplines qu'aucun agrégateur ne s'impose.</p>
+    <h1>${t('La méthodologie <span class="is-product">est</span> le produit.', 'The methodology <span class="is-product">is</span> the product.')}</h1>
+    <p class="lede">${t("N'importe qui peut lister des cas d'usage IA. La valeur n'est pas la liste — c'est le regard. Trois disciplines qu'aucun agrégateur ne s'impose.", 'Anyone can list AI use cases. The value is not the list, it is the lens. Three disciplines no aggregator imposes on itself.')}</p>
 
-    <h2>1. Un niveau de preuve public sur chaque cas</h2>
-    <p>~90 % des « cas d'usage IA » en circulation viennent des acteurs qui vendent la techno. Nous notons chaque cas sur une échelle explicite, et nous l'affichons :</p>
+    <h2>${t('1. Un niveau de preuve public sur chaque cas', '1. A public evidence level on every case')}</h2>
+    <p>${t("~90 % des « cas d'usage IA » en circulation viennent des acteurs qui vendent la techno. Nous notons chaque cas sur une échelle explicite, et nous l'affichons :", 'About 90% of the "AI use cases" in circulation come from the players selling the tech. We grade every case on an explicit scale, and we display it:')}</p>
     <ul class="grades-legend">
-      <li>${preuveBadge('A')} Résultats financiers, earnings call, décision de justice — la preuve la plus dure.</li>
-      <li>${preuveBadge('B')} Étude de cas plateforme/vendor chiffrée — utile mais biaisée, plafonnée à B.</li>
-      <li>${preuveBadge('C')} Presse majeure citant nommément la marque.</li>
-      <li>${preuveBadge('D')} Déclaratif en conférence.</li>
+      <li>${preuveBadge('A')} ${t('Résultats financiers, earnings call, décision de justice — la preuve la plus dure.', 'Financial results, earnings call, court ruling: the hardest proof.')}</li>
+      <li>${preuveBadge('B')} ${t('Étude de cas plateforme/vendor chiffrée — utile mais biaisée, plafonnée à B.', 'Quantified platform/vendor case study: useful but biased, capped at B.')}</li>
+      <li>${preuveBadge('C')} ${t('Presse majeure citant nommément la marque.', 'Major press naming the brand.')}</li>
+      <li>${preuveBadge('D')} ${t('Déclaratif en conférence.', 'Statement at a conference.')}</li>
     </ul>
-    <p>Plusieurs sources concordantes font monter le niveau. Chaque chiffre renvoie à sa source, datée et archivée.</p>
+    <p>${t('Plusieurs sources concordantes font monter le niveau. Chaque chiffre renvoie à sa source, datée et archivée.', 'Several concordant sources raise the level. Every figure links back to its source, dated and archived.')}</p>
 
-    <h2>2. Vérifié vivant, à une date</h2>
-    <p>Les marques annoncent fort et enterrent en silence. Chaque cas porte un statut de vivacité et une date de vérification. Un cas qui meurt ne disparaît pas : il part au <a href="/cimetiere.html">cimetière</a>.</p>
+    <h2>${t('2. Vérifié vivant, à une date', '2. Verified live, at a date')}</h2>
+    <p>${t('Les marques annoncent fort et enterrent en silence. Chaque cas porte un statut de vivacité et une date de vérification. Un cas qui meurt ne disparaît pas : il part au', 'Brands announce loudly and bury quietly. Every case carries a liveness status and a verification date. A case that dies does not disappear: it goes to the')} <a href="${P()}/cimetiere.html">${t('cimetière', 'graveyard')}</a>.</p>
 
-    <h2>3. Mappé sur le parcours client</h2>
-    <p>Tous les autres classent par industrie et par techno. Nous croisons industrie × levier growth (acquisition, conversion, rétention, monétisation) × preuve, pour que la <strong>matrice de couverture</strong> rende visibles les angles morts — là où personne n'investit encore.</p>
+    <h2>${t('3. Mappé sur le parcours client', '3. Mapped to the customer journey')}</h2>
+    <p>${t('Tous les autres classent par industrie et par techno. Nous croisons industrie × levier growth (acquisition, conversion, rétention, monétisation) × preuve, pour que la <strong>matrice de couverture</strong> rende visibles les angles morts — là où personne n\'investit encore.', 'Everyone else sorts by industry and tech. We cross industry × growth lever (acquisition, conversion, retention, monetization) × evidence, so the <strong>coverage matrix</strong> makes the blind spots visible, where no one invests yet.')}</p>
 
     <div class="callout">
-      <p><strong>Faits vs inférence.</strong> Ce qui est sourcé et ce qui est notre analyse (« comment répliquer », schémas approche-type) sont toujours séparés visuellement. Une seule affirmation présentée comme un fait qui n'en est pas un, et toute la base perd sa valeur. La crédibilité est le produit.</p>
+      <p><strong>${t('Faits vs inférence.', 'Facts vs inference.')}</strong> ${t("Ce qui est sourcé et ce qui est notre analyse (« comment répliquer », schémas approche-type) sont toujours séparés visuellement. Une seule affirmation présentée comme un fait qui n'en est pas un, et toute la base perd sa valeur. La crédibilité est le produit.", 'What is sourced and what is our analysis ("how to replicate", typical-approach diagrams) are always visually separated. A single claim presented as a fact that is not one, and the whole index loses its value. Credibility is the product.')}</p>
     </div>
   </section>`;
-  return page('Méthodologie — AI Showreel', body, { desc: 'Niveau de preuve public, vérification de vivacité, mapping sur le parcours client : la méthodologie qui distingue AI Showreel d\'un catalogue.', path: '/methodologie.html' });
+  return page(t('Méthodologie — AI Showreel', 'Methodology — AI Showreel'), body, { desc: t('Niveau de preuve public, vérification de vivacité, mapping sur le parcours client : la méthodologie qui distingue AI Showreel d\'un catalogue.', 'Public evidence level, liveness verification, customer-journey mapping: the methodology that sets AI Showreel apart from a catalogue.'), path: '/methodologie.html' });
 }
 
 // ---------- build ----------
@@ -946,40 +964,41 @@ function veillePage(cases) {
   const cimetiereFil = [...echecs].sort((a, b) => dateOf(b.dates?.date_retrait).localeCompare(dateOf(a.dates?.date_retrait))).slice(0, 8);
   const aRevoir = [...succ].filter(c => c.dates?.revoir_apres).sort((a, b) => a.dates.revoir_apres.localeCompare(b.dates.revoir_apres)).slice(0, 15);
 
-  const row = (c, extra = '') => `<a class="veille-row" href="/cas/${c.id}.html">${brandLogo(c)}<div class="vr-main"><div class="vr-marque">${esc(c.marque)}</div><div class="vr-pattern">${esc(c.axes?.pattern || '')}</div></div><div class="vr-meta">${extra}</div></a>`;
+  const rpat = (c) => { const en = LANG === 'en' ? c.i18n?.en?.pattern : null; return en != null ? en : (c.axes?.pattern || ''); };
+  const row = (c, extra = '') => `<a class="veille-row" href="${P()}/cas/${c.id}.html">${brandLogo(c)}<div class="vr-main"><div class="vr-marque">${esc(c.marque)}</div><div class="vr-pattern">${esc(rpat(c))}</div></div><div class="vr-meta">${extra}</div></a>`;
 
   const body = `
   <section class="hero">
-    <h1>Le <em>radar</em>.</h1>
-    <p class="lede">Les marques annoncent fort et enterrent en silence. Le radar suit ce qui bouge : les déploiements à surveiller, ceux qui viennent de mourir, les plus récents, et le calendrier de re-vérification. La preuve, ce n'est pas une photo, c'est un flux.</p>
+    <h1>${t('Le <em>radar</em>.', 'The <em>radar</em>.')}</h1>
+    <p class="lede">${t("Les marques annoncent fort et enterrent en silence. Le radar suit ce qui bouge : les déploiements à surveiller, ceux qui viennent de mourir, les plus récents, et le calendrier de re-vérification. La preuve, ce n'est pas une photo, c'est un flux.", 'Brands announce loudly and bury quietly. The radar tracks what moves: deployments to watch, those that just died, the most recent ones, and the re-verification calendar. Proof is not a snapshot, it is a stream.')}</p>
   </section>
 
   <section class="section">
-    <div class="section-head"><h2>À surveiller</h2><p>${aSurveiller.length} cas au statut fragile (signaux mitigés ou incertain). Prochains à basculer, dans un sens ou dans l'autre.</p></div>
-    <div class="veille-list">${aSurveiller.slice(0, 12).map(c => row(c, `${vivantBadge(c.statut_vivant?.statut)}${c.dates?.revoir_apres ? `<span class="vr-date">à revoir ${esc(c.dates.revoir_apres)}</span>` : ''}`)).join('')}</div>
+    <div class="section-head"><h2>${t('À surveiller', 'To watch')}</h2><p>${aSurveiller.length} ${t("cas au statut fragile (signaux mitigés ou incertain). Prochains à basculer, dans un sens ou dans l'autre.", 'cases with a fragile status (mixed signals or uncertain). Next to tip, one way or the other.')}</p></div>
+    <div class="veille-list">${aSurveiller.slice(0, 12).map(c => row(c, `${vivantBadge(c.statut_vivant?.statut)}${c.dates?.revoir_apres ? `<span class="vr-date">${t('à revoir', 'review by')} ${esc(c.dates.revoir_apres)}</span>` : ''}`)).join('')}</div>
   </section>
 
   <section class="section">
-    <div class="section-head"><h2>Le fil du cimetière</h2><p>Les derniers déploiements retirés, échoués ou en backpedal. L'alerte que personne d'autre n'envoie.</p></div>
-    <div class="veille-list">${cimetiereFil.map(c => row(c, `<span class="echec-badge">retiré</span><span class="vr-date">${esc(dateOf(c.dates?.date_retrait) || '')}</span>`)).join('')}</div>
+    <div class="section-head"><h2>${t('Le fil du cimetière', 'The graveyard feed')}</h2><p>${t("Les derniers déploiements retirés, échoués ou en backpedal. L'alerte que personne d'autre n'envoie.", 'The latest deployments pulled, failed or walked back. The alert no one else sends.')}</p></div>
+    <div class="veille-list">${cimetiereFil.map(c => row(c, `<span class="echec-badge">${t('retiré', 'pulled')}</span><span class="vr-date">${esc(dateOf(c.dates?.date_retrait) || '')}</span>`)).join('')}</div>
   </section>
 
   <section class="section">
-    <div class="section-head"><h2>Les déploiements les plus récents</h2></div>
+    <div class="section-head"><h2>${t('Les déploiements les plus récents', 'The most recent deployments')}</h2></div>
     <div class="veille-list">${recents.map(c => row(c, `${preuveBadge(c.niveau_preuve?.niveau)}<span class="vr-date">${esc(dateOf(c.dates?.lancement) || '')}</span>`)).join('')}</div>
   </section>
 
   <section class="section">
-    <div class="section-head"><h2>Prochaines re-vérifications</h2><p>Notre calendrier de fraîcheur, à découvert. Chaque cas porte une date de péremption de sa vérification.</p></div>
+    <div class="section-head"><h2>${t('Prochaines re-vérifications', 'Next re-verifications')}</h2><p>${t('Notre calendrier de fraîcheur, à découvert. Chaque cas porte une date de péremption de sa vérification.', 'Our freshness calendar, in the open. Every case carries an expiry date on its verification.')}</p></div>
     <div class="veille-list">${aRevoir.map(c => row(c, `<span class="vr-date">${esc(c.dates.revoir_apres)}</span>`)).join('')}</div>
   </section>
 
   <section class="feedback">
-    <div><h3>Le radar, chaque mois, dans votre boîte</h3><p>Ce qui a bougé dans l'IA marketing : nouveaux cas prouvés, cas morts, patterns émergents. La veille gratuite. La version par périmètre (votre secteur, votre stack) alerte dès qu'un cas apparaît ou meurt dans VOTRE matrice.</p></div>
-    <a class="feedback-btn" href="${mailto('Radar AI Showreel - abonnement', 'Je veux recevoir le radar mensuel.\n\nEmail :\nSecteur qui m\'intéresse :')}">Recevoir le radar</a>
+    <div><h3>${t('Le radar, chaque mois, dans votre boîte', 'The radar, every month, in your inbox')}</h3><p>${t("Ce qui a bougé dans l'IA marketing : nouveaux cas prouvés, cas morts, patterns émergents. La veille gratuite. La version par périmètre (votre secteur, votre stack) alerte dès qu'un cas apparaît ou meurt dans VOTRE matrice.", 'What moved in AI marketing: new proven cases, dead cases, emerging patterns. The free watch. The scoped version (your sector, your stack) alerts you the moment a case appears or dies in YOUR matrix.')}</p></div>
+    <a class="feedback-btn" href="${mailto('Radar AI Showreel - abonnement', 'Je veux recevoir le radar mensuel.\n\nEmail :\nSecteur qui m\'intéresse :')}">${t('Recevoir le radar', 'Get the radar')}</a>
   </section>`;
-  return page('Le radar de l\'IA marketing : ce qui bouge - AI Showreel', body, {
-    desc: 'Le suivi vivant des déploiements IA marketing : à surveiller, retirés, récents, et le calendrier de re-vérification.', path: '/veille.html',
+  return page(t('Le radar de l\'IA marketing : ce qui bouge - AI Showreel', 'The AI marketing radar: what moves - AI Showreel'), body, {
+    desc: t('Le suivi vivant des déploiements IA marketing : à surveiller, retirés, récents, et le calendrier de re-vérification.', 'The live tracking of AI marketing deployments: to watch, pulled, recent, and the re-verification calendar.'), path: '/veille.html',
   });
 }
 
@@ -1013,52 +1032,54 @@ function reportPage(ind, cases) {
 
   const byLev = levs.map(l => ({ l, cases: mine.filter(c => c.axes?.levier === l) })).filter(g => g.cases.length);
   const nAB = mine.filter(c => ['A', 'B'].includes(c.niveau_preuve?.niveau)).length;
-  const resume = `En ${label}, AI Showreel recense ${mine.length} déploiements IA marketing prouvés (${nAB} en preuve forte A/B), couvrant ${byLev.length} des 4 leviers growth. ${blindSpots.length ? `${blindSpots.length} patterns prouvés dans d'autres industries n'y sont pas encore déployés.` : ''}`;
+  const resume = t(
+    `En ${label}, AI Showreel recense ${mine.length} déploiements IA marketing prouvés (${nAB} en preuve forte A/B), couvrant ${byLev.length} des 4 leviers growth. ${blindSpots.length ? `${blindSpots.length} patterns prouvés dans d'autres industries n'y sont pas encore déployés.` : ''}`,
+    `In ${label}, AI Showreel lists ${mine.length} proven AI marketing deployments (${nAB} at strong evidence A/B), covering ${byLev.length} of the 4 growth levers. ${blindSpots.length ? `${blindSpots.length} patterns proven in other industries are not deployed here yet.` : ''}`);
 
   const body = `
   <section class="hero">
-    <a class="back" href="/rapports.html">← Tous les rapports</a>
-    <h1>Le plan de bataille IA du <em>${esc(label)}</em>.</h1>
+    <a class="back" href="${P()}/rapports.html">${t('← Tous les rapports', '← All reports')}</a>
+    <h1>${t('Le plan de bataille IA du', 'The AI battle plan for')} <em>${esc(label)}</em>.</h1>
     <p class="lede citable">${esc(resume)}</p>
     <div class="hero-stats">
-      <div><strong>${mine.length}</strong> cas prouvés</div>
-      <div><strong>${nAB}</strong> en preuve A/B</div>
-      <div><strong>${blindSpots.length}</strong> angles morts</div>
+      <div><strong>${mine.length}</strong> ${t('cas prouvés', 'proven cases')}</div>
+      <div><strong>${nAB}</strong> ${t('en preuve A/B', 'at evidence A/B')}</div>
+      <div><strong>${blindSpots.length}</strong> ${t('angles morts', 'blind spots')}</div>
     </div>
   </section>
 
   ${byLev.map(g => `<section class="section">
-    <div class="section-head"><h2>${esc(LEVIERS[g.l])}</h2><p>${g.cases.length} cas prouvés en ${esc(label)}.</p></div>
+    <div class="section-head"><h2>${esc(LEVIERS[g.l])}</h2><p>${g.cases.length} ${t('cas prouvés en', 'proven cases in')} ${esc(label)}.</p></div>
     <div class="cards">${g.cases.slice(0, 6).map(caseCard).join('')}</div>
   </section>`).join('')}
 
   ${blindSpots.length ? `<section class="section">
-    <div class="section-head"><h2>Vos angles morts : prouvé ailleurs, absent chez vous</h2><p>Ces patterns fonctionnent dans d'autres industries et ne sont pas encore déployés en ${esc(label)}. C'est là que se cache l'avance.</p></div>
+    <div class="section-head"><h2>${t('Vos angles morts : prouvé ailleurs, absent chez vous', 'Your blind spots: proven elsewhere, absent here')}</h2><p>${t('Ces patterns fonctionnent dans d\'autres industries et ne sont pas encore déployés en', 'These patterns work in other industries and are not deployed yet in')} ${esc(label)}. ${t("C'est là que se cache l'avance.", 'That is where the head start hides.')}</p></div>
     <div class="cards">${blindSpots.map(b => {
     const ex = b.list.sort((x, y) => (x.niveau_preuve?.niveau || 'D').localeCompare(y.niveau_preuve?.niveau || 'D'))[0];
-    return `<a class="card" href="/cas/${ex.id}.html">
-        <div class="card-head"><span class="ind-chip open">angle mort</span><div class="card-badges">${preuveBadge(ex.niveau_preuve?.niveau)}</div></div>
+    return `<a class="card" href="${P()}/cas/${ex.id}.html">
+        <div class="card-head"><span class="ind-chip open">${t('angle mort', 'blind spot')}</span><div class="card-badges">${preuveBadge(ex.niveau_preuve?.niveau)}</div></div>
         <h3>${esc(FAMILLES[ex.axes?.famille])} × ${esc(LEVIERS[ex.axes?.levier])}</h3>
-        <p class="card-pattern">Prouvé dans ${b.inds} autre(s) industrie(s). Exemple : ${esc(ex.marque)} (${esc(INDUSTRIES[ex.industrie])}).</p>
+        <p class="card-pattern">${t('Prouvé dans', 'Proven in')} ${b.inds} ${t('autre(s) industrie(s). Exemple :', 'other industr(ies). Example:')} ${esc(ex.marque)} (${esc(INDUSTRIES[ex.industrie])}).</p>
       </a>`;
   }).join('')}</div>
   </section>` : ''}
 
   ${topTools.length ? `<section class="section">
-    <div class="section-head"><h2>La stack du secteur</h2><p>Les outils et IA les plus déployés en ${esc(label)}.</p></div>
+    <div class="section-head"><h2>${t('La stack du secteur', 'The sector stack')}</h2><p>${t('Les outils et IA les plus déployés en', 'The most deployed tools and AI in')} ${esc(label)}.</p></div>
     <ul class="side-tags tools report-tools">${topTools.map(([n, v]) => `<li class="tool-chip"><span>${esc(n)} <b>${v}</b></span></li>`).join('')}</ul>
   </section>` : ''}
 
   <section class="feedback">
-    <div><h3>La version adaptée à VOTRE stack</h3><p>Ce rapport est la vue publique du secteur. La version personnalisée croise votre stack martech, vos marchés et l'acceptation de vos clients, avec le plan de priorisation. Sur demande.</p></div>
-    <a class="feedback-btn" href="${mailto('Rapport personnalisé - ' + label, 'Secteur : ' + label + '\n\nVotre métier :\nVotre stack martech (Meta, Google, Salesforce, Adobe...) :\nVos marchés :\n\nOn vous renvoie le plan de bataille adapté.')}">Demander la version personnalisée</a>
+    <div><h3>${t('La version adaptée à VOTRE stack', 'The version tailored to YOUR stack')}</h3><p>${t("Ce rapport est la vue publique du secteur. La version personnalisée croise votre stack martech, vos marchés et l'acceptation de vos clients, avec le plan de priorisation. Sur demande.", 'This report is the public view of the sector. The tailored version crosses your martech stack, your markets and your customers\' acceptance, with the prioritization plan. On request.')}</p></div>
+    <a class="feedback-btn" href="${mailto('Rapport personnalisé - ' + label, 'Secteur : ' + label + '\n\nVotre métier :\nVotre stack martech (Meta, Google, Salesforce, Adobe...) :\nVos marchés :\n\nOn vous renvoie le plan de bataille adapté.')}">${t('Demander la version personnalisée', 'Request the tailored version')}</a>
   </section>`;
 
   const jsonld = JSON.stringify({
-    '@type': 'ItemList', name: `Cas d'usage IA prouvés en ${label}`,
-    itemListElement: mine.slice(0, 20).map((c, i) => ({ '@type': 'ListItem', position: i + 1, url: `${SITE}/cas/${c.id}.html`, name: c.marque })),
+    '@type': 'ItemList', name: t(`Cas d'usage IA prouvés en ${label}`, `Proven AI use cases in ${label}`),
+    itemListElement: mine.slice(0, 20).map((c, i) => ({ '@type': 'ListItem', position: i + 1, url: `${SITE}${P()}/cas/${c.id}.html`, name: c.marque })),
   });
-  return page(`Plan de bataille IA du ${label} : ${mine.length} cas prouvés - AI Showreel`, body, {
+  return page(t(`Plan de bataille IA du ${label} : ${mine.length} cas prouvés - AI Showreel`, `${label} AI battle plan: ${mine.length} proven cases - AI Showreel`), body, {
     desc: resume.slice(0, 160), jsonld, path: `/rapport/${industrySlug(ind)}.html`,
   });
 }
@@ -1069,15 +1090,15 @@ function reportsIndexPage(cases) {
     .sort((a, b) => succ.filter(c => c.industrie === b).length - succ.filter(c => c.industrie === a).length);
   const body = `
   <section class="hero">
-    <h1>Le plan de bataille IA, <em>par secteur</em>.</h1>
-    <p class="lede">Pour chaque industrie : ce que les leaders ont déployé et prouvé, les angles morts encore vierges, et la stack qui tourne derrière. La vue publique. La version personnalisée croise votre stack et vos marchés.</p>
+    <h1>${t('Le plan de bataille IA, <em>par secteur</em>.', 'The AI battle plan, <em>by sector</em>.')}</h1>
+    <p class="lede">${t("Pour chaque industrie : ce que les leaders ont déployé et prouvé, les angles morts encore vierges, et la stack qui tourne derrière. La vue publique. La version personnalisée croise votre stack et vos marchés.", 'For each industry: what the leaders have deployed and proven, the blind spots still untouched, and the stack running behind. The public view. The tailored version crosses your stack and your markets.')}</p>
   </section>
   <section class="section"><div class="cards">${inds.map(i => {
     const n = succ.filter(c => c.industrie === i).length;
-    return `<a class="card" href="/rapport/${industrySlug(i)}.html"><h3>${esc(INDUSTRIES[i])}</h3><p class="card-pattern">Le plan de bataille IA du secteur.</p><div class="card-result"><strong>${n}</strong> cas prouvés</div></a>`;
+    return `<a class="card" href="${P()}/rapport/${industrySlug(i)}.html"><h3>${esc(INDUSTRIES[i])}</h3><p class="card-pattern">${t('Le plan de bataille IA du secteur.', 'The AI battle plan for the sector.')}</p><div class="card-result"><strong>${n}</strong> ${t('cas prouvés', 'proven cases')}</div></a>`;
   }).join('')}</div></section>`;
-  return page('Les plans de bataille IA par secteur - AI Showreel', body, {
-    desc: 'Le plan de bataille IA de chaque industrie : cas prouvés, angles morts, stack déployée.', path: '/rapports.html',
+  return page(t('Les plans de bataille IA par secteur - AI Showreel', 'AI battle plans by sector - AI Showreel'), body, {
+    desc: t('Le plan de bataille IA de chaque industrie : cas prouvés, angles morts, stack déployée.', 'The AI battle plan for each industry: proven cases, blind spots, deployed stack.'), path: '/rapports.html',
   });
 }
 
