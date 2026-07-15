@@ -771,3 +771,10 @@ html:not(.js-anim) .pipeline-line { stroke-dashoffset: 0; }
   .matrix thead th, .matrix .row-h { font-size: 9.5px; }
   .matrix .row-h { padding-right: 8px; white-space: normal; max-width: 96px; }
 }
+
+/* ---- Masthead : eyebrow "kicker" mono (gabarit constant sur toutes les pages, orientation) ---- */
+.kicker { display: inline-flex; align-items: center; gap: 9px; font-family: var(--font-mono); font-size: 11px; font-weight: 500; text-transform: uppercase; letter-spacing: .14em; color: var(--accent-primary); margin: 0 0 18px; }
+.kicker::before { content: ""; width: 22px; height: 1px; background: currentColor; opacity: .6; }
+.hero .kicker { position: relative; z-index: 1; }
+.prose > .kicker { margin-top: 8px; }
+@media (max-width: 780px) { .kicker { margin-bottom: 12px; font-size: 10px; } }

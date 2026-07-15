@@ -463,6 +463,7 @@ function outilsPage(cases) {
 
   const body = `
   <section class="hero">
+    <p class="kicker">${t('Les outils', 'The stack')}</p>
     <h1>${t("La stack réelle de l'IA <em>marketing</em>.", 'The real AI <em>marketing</em> stack.')}</h1>
     <p class="lede">${t(`Pas la théorie : les outils, plateformes et modèles effectivement déployés dans ${total} cas prouvés. Agrégé automatiquement depuis la stack technique de chaque fiche. Le décompte est en nombre de cas où l'outil apparaît.`, `Not theory: the tools, platforms and models actually deployed across ${total} proven cases. Aggregated automatically from each case's tech stack. The count is the number of cases where the tool appears.`)}</p>
   </section>
@@ -540,6 +541,7 @@ function perceptionPage() {
 
   const body = `
   <section class="hero">
+    <p class="kicker">${t("L'acceptation", 'Acceptance')}</p>
     <h1>${t('Ce que vos clients <em>acceptent</em> vraiment.', 'What your customers <em>actually accept</em>.')}</h1>
     <p class="lede">${t("D'un côté ce que les marques déploient (la base). De l'autre, ce que les clients en perçoivent : l'enthousiasme et la méfiance par pays, l'acceptation par type d'usage, et les conditions qu'ils posent. Tout est tiré d'études représentatives, sourcées et datées.", 'On one side, what brands deploy (the index). On the other, how customers perceive it: enthusiasm and distrust by country, acceptance by type of use, and the conditions they set. All drawn from representative studies, sourced and dated.')}</p>
   </section>
@@ -866,6 +868,7 @@ function indexPage(cases) {
   const body = `
   <section class="hero">
     <canvas class="hero-constellation" aria-hidden="true" data-dots="${hCas}"></canvas>
+    <p class="kicker">${t('La base', 'The index')}</p>
     <h1>${t('Ce que les leaders de votre secteur ont <em class="hero-shimmer">vraiment</em> déployé en IA.', 'What the leaders in your industry have <em class="hero-shimmer">actually</em> deployed in AI.')}</h1>
     <p class="lede">${t("Un index indépendant des déploiements IA à l'échelle en marketing digital. Chaque cas est noté sur une échelle de preuve publique, vérifié vivant à sa date, et mappé sur le parcours client. Pas de POC, pas de biais vendeur, pas de slides périmées.", 'An independent index of AI deployments at scale in digital marketing. Every case is graded on a public evidence scale, verified live at its date, and mapped to the customer journey. No POCs, no vendor bias, no stale slides.')}</p>
     <div class="hero-kpis">
@@ -935,6 +938,7 @@ function cimetierePage(cases) {
   const echecs = cases.filter(c => c.type_fiche === 'echec_retrait');
   const body = `
   <section class="hero hero-pm">
+    <p class="kicker">${t('Le cimetière', 'The graveyard')}</p>
     <h1>${t("Le cimetière des cas d'usage", 'The use-case graveyard')}</h1>
     <p class="lede">${t("Ce que personne ne montre : les déploiements IA de grandes marques qui ont échoué, été retirés, ou fait machine arrière. Avec, à chaque fois, la vraie question — le pattern était-il condamné, ou seulement son exécution&nbsp;?", 'What no one shows: AI deployments by major brands that failed, were pulled back, or reversed. Each time with the real question: was the pattern doomed, or only its execution?')}</p>
   </section>
@@ -979,6 +983,7 @@ function patternsPage(cases) {
 
   const body = `
   <section class="hero">
+    <p class="kicker">${t('Les patterns', 'Patterns')}</p>
     <h1>${t('La carte des <em>patterns</em> cross-industrie.', 'The cross-industry <em>pattern</em> map.')}</h1>
     <p class="lede">${t("Un pattern prouvé dans plusieurs industries et absent de la vôtre n'est pas un risque : c'est une fenêtre. Cette carte montre, pour chaque pattern, où il est prouvé (plein) et où personne ne l'a encore déployé (hachuré).", 'A pattern proven across several industries and absent from yours is not a risk: it is an opening. This map shows, for each pattern, where it is proven (filled) and where no one has deployed it yet (hatched).')}</p>
   </section>
@@ -991,6 +996,7 @@ function patternsPage(cases) {
 function methodoPage() {
   const body = `
   <section class="section prose">
+    <p class="kicker">${t('Méthodologie', 'Methodology')}</p>
     <h1>${t('La méthodologie <span class="is-product">est</span> le produit.', 'The methodology <span class="is-product">is</span> the product.')}</h1>
     <p class="lede">${t("N'importe qui peut lister des cas d'usage IA. La valeur n'est pas la liste — c'est le regard. Trois disciplines qu'aucun agrégateur ne s'impose.", 'Anyone can list AI use cases. The value is not the list, it is the lens. Three disciplines no aggregator imposes on itself.')}</p>
     ${(() => {
@@ -1048,6 +1054,7 @@ function veillePage(cases) {
 
   const body = `
   <section class="hero">
+    <p class="kicker">${t('Le radar', 'The radar')}</p>
     <h1>${t('Le <em>radar</em>.', 'The <em>radar</em>.')}</h1>
     <p class="lede">${t("Les marques annoncent fort et enterrent en silence. Le radar suit ce qui bouge : les déploiements à surveiller, ceux qui viennent de mourir, les plus récents, et le calendrier de re-vérification. La preuve, ce n'est pas une photo, c'est un flux.", 'Brands announce loudly and bury quietly. The radar tracks what moves: deployments to watch, those that just died, the most recent ones, and the re-verification calendar. Proof is not a snapshot, it is a stream.')}</p>
   </section>
@@ -1118,6 +1125,7 @@ function reportPage(ind, cases) {
   const body = `
   <section class="hero">
     <a class="back" href="${P()}/rapports.html">${t('← Tous les rapports', '← All reports')}</a>
+    <p class="kicker">${t('Rapport sectoriel', 'Sector report')}</p>
     <h1>${t('Le plan de bataille IA du', 'The AI battle plan for')} <em>${esc(label)}</em>.</h1>
     <p class="lede citable">${esc(resume)}</p>
     <div class="hero-stats">
@@ -1169,6 +1177,7 @@ function reportsIndexPage(cases) {
     .sort((a, b) => succ.filter(c => c.industrie === b).length - succ.filter(c => c.industrie === a).length);
   const body = `
   <section class="hero">
+    <p class="kicker">${t('Les rapports', 'Reports')}</p>
     <h1>${t('Le plan de bataille IA, <em>par secteur</em>.', 'The AI battle plan, <em>by sector</em>.')}</h1>
     <p class="lede">${t("Pour chaque industrie : ce que les leaders ont déployé et prouvé, les angles morts encore vierges, et la stack qui tourne derrière. La vue publique. La version personnalisée croise votre stack et vos marchés.", 'For each industry: what the leaders have deployed and proven, the blind spots still untouched, and the stack running behind. The public view. The tailored version crosses your stack and your markets.')}</p>
   </section>
