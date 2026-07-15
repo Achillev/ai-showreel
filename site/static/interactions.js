@@ -47,19 +47,20 @@
       var target = parseInt(el.dataset.target, 10);
       if (isNaN(target)) return;
       var prefix = el.dataset.prefix || '';
+      var suffix = el.dataset.suffix || '';
       var duration = parseInt(el.dataset.dur, 10) || 2000;
-      if (reduced) { el.textContent = prefix + target; return; }
+      if (reduced) { el.textContent = prefix + target + suffix; return; }
       var start = null, done = false;
       function frame(now) {
         if (done) return;
         if (start === null) start = now;
         var p = Math.min((now - start) / duration, 1);
-        el.textContent = prefix + Math.round(easeOutExpo(p) * target);
+        el.textContent = prefix + Math.round(easeOutExpo(p) * target) + suffix;
         if (p < 1) requestAnimationFrame(frame); else done = true;
       }
       requestAnimationFrame(frame);
       // filet de securite : si rAF est ralenti (onglet en arriere-plan), on fige la vraie valeur
-      setTimeout(function () { if (!done) { done = true; el.textContent = prefix + target; } }, duration + 800);
+      setTimeout(function () { if (!done) { done = true; el.textContent = prefix + target + suffix; } }, duration + 800);
     }
     if (!('IntersectionObserver' in window)) { els.forEach(run); return; }
     var io = new IntersectionObserver(function (entries) {
@@ -217,8 +218,46 @@
     setTimeout(revealAll, 1600); // filet de securite : rien ne reste cache
   }
 
+  /* ---- 4a. Tilt 3D des cartes ---- */
+  function cardTilt() {
+    if (reduced || coarse) return;
+    var MAX = 4;
+    document.querySelectorAll('.card').forEach(function (card) {
+      card.addEventListener('mousemove', function (e) {
+        var r = card.getBoundingClientRect();
+        var x = (e.clientX - r.left) / r.width - 0.5;
+        var y = (e.clientY - r.top) / r.height - 0.5;
+        card.style.transform = 'perspective(1000px) rotateY(' + (x * MAX) + 'deg) rotateX(' + (-y * MAX) + 'deg)';
+      });
+      card.addEventListener('mouseleave', function () { card.style.transform = 'perspective(1000px) rotateY(0) rotateX(0)'; });
+    });
+  }
+
+  /* ---- 4b. Timestamps relatifs "il y a X" (mis a jour cote client) ---- */
+  function liveTimestamps() {
+    var els = document.querySelectorAll('[data-live-time]');
+    if (!els.length || typeof Intl === 'undefined' || !Intl.RelativeTimeFormat) return;
+    var rtf = new Intl.RelativeTimeFormat(isEN ? 'en' : 'fr', { numeric: 'auto' });
+    var verb = tr('Vérifié', 'Verified');
+    els.forEach(function (el) {
+      var iso = el.getAttribute('datetime');
+      if (!iso) return;
+      var d = new Date(iso);
+      if (isNaN(d)) return;
+      var diff = (d - Date.now()) / 1000, abs = Math.abs(diff), rel;
+      if (abs < 3600) rel = rtf.format(Math.round(diff / 60), 'minute');
+      else if (abs < 86400) rel = rtf.format(Math.round(diff / 3600), 'hour');
+      else if (abs < 2592000) rel = rtf.format(Math.round(diff / 86400), 'day');
+      else rel = rtf.format(Math.round(diff / 2592000), 'month');
+      var dot = el.querySelector('.status-dot');
+      el.textContent = '';
+      if (dot) el.appendChild(dot);
+      el.appendChild(document.createTextNode(' ' + verb + ' ' + rel));
+    });
+  }
+
   /* ---- init ---- */
-  function init() { countUp(); constellationCanvas(); matrixInteractions(); }
+  function init() { countUp(); constellationCanvas(); matrixInteractions(); cardTilt(); liveTimestamps(); }
   if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', init);
   else init();
 })();

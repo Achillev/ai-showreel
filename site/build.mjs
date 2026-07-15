@@ -809,6 +809,10 @@ function coverageMatrix(cases, { echec = false } = {}) {
 // Rendu "texte lisible" (pas chiffre-heros geant) si la valeur est longue OU si elle ne contient
 // aucun chiffre (resultat qualitatif) : on ne force jamais un non-chiffre en gros stat bleu.
 const longStat = v => { const s = String(v || '').replace(/\s+/g, ' ').trim(); return s.length > 20 || !/[0-9]/.test(s); };
+// valeur "chiffre simple" (prefixe +/-/~ optionnel, entier, % optionnel) -> eligible au count-up sans risque de mangler la donnee
+const simpleNum = v => { const m = String(v || '').trim().match(/^([+\-~]?)(\d{1,4})(%?)$/); return m ? { prefix: m[1], target: m[2], suffix: m[3] } : null; };
+// couleur du point de statut vivant (vert confirme / orange mitige / muet sinon)
+const statusDot = s => s === 'confirme' ? '' : (s === 'signaux_mitiges' ? ' sd-warn' : ' sd-muted');
 
 function caseCard(c) {
   const a = c.axes || {};
@@ -816,12 +820,24 @@ function caseCard(c) {
   const en = LANG === 'en' ? (c.i18n?.en || {}) : null;
   const pat = (en && en.pattern != null) ? en.pattern : a.pattern;
   const metr = (en && en.resultats?.[0]?.metrique != null) ? en.resultats[0].metrique : top?.metrique;
+  let strong = '';
+  if (top) {
+    const sn = !longStat(top.valeur) && simpleNum(top.valeur);
+    strong = sn
+      ? `<strong data-countup data-target="${sn.target}" data-prefix="${esc(sn.prefix)}" data-suffix="${esc(sn.suffix)}" data-dur="1500">${esc(top.valeur)}</strong>`
+      : `<strong${longStat(top.valeur) ? ' class="cr-long"' : ''}>${esc(top.valeur)}</strong>`;
+  }
+  const verif = c.dates?.verifie_le;
+  const liveTime = verif
+    ? `<time class="live-time" datetime="${esc(verif)}" data-live-time><span class="status-dot${statusDot(c.statut_vivant?.statut)}"></span>${t('Vérifié le', 'Verified')} <span class="num">${esc(verif)}</span></time>`
+    : '';
   return `<a class="card" href="${P()}/cas/${c.id}.html" data-ind="${c.industrie}" data-lev="${a.levier || ''}">
     <div class="card-head">${brandLogo(c)}<div class="card-badges">${preuveBadge(c.niveau_preuve?.niveau)} ${vivantBadge(c.statut_vivant?.statut)}</div></div>
     <h3>${esc(c.marque)}</h3>
     <p class="card-pattern">${esc(pat || '')}</p>
-    ${top ? `<div class="card-result"><strong${longStat(top.valeur) ? ' class="cr-long"' : ''}>${esc(top.valeur)}</strong> ${esc(metr)}</div>` : ''}
+    ${top ? `<div class="card-result">${strong} ${esc(metr)}</div>` : ''}
     <div class="card-foot"><span>${esc(INDUSTRIES[c.industrie] || '')}</span><span>${esc(FAMILLES[a.famille] || '')}</span></div>
+    ${liveTime ? `<div class="card-live">${liveTime}</div>` : ''}
   </a>`;
 }
 

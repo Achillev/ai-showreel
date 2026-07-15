@@ -664,6 +664,7 @@ html.js-anim .status-dot::after { animation-delay: 1s; }
 .status-dot.sd-warn, .status-dot.sd-warn::before, .status-dot.sd-warn::after { background: var(--accent-warning); }
 .status-dot.sd-muted, .status-dot.sd-muted::before, .status-dot.sd-muted::after { background: var(--text-muted); }
 .live-time { display: inline-flex; align-items: center; gap: 6px; font-family: var(--font-mono); font-size: 11px; letter-spacing: .04em; color: var(--text-muted); }
+.card-live { margin-top: 12px; padding-top: 10px; border-top: 1px solid var(--line-soft); }
 
 /* ---- NAV : compteur temps reel ---- */
 .nav-live { display: inline-flex; align-items: center; gap: 8px; font-family: var(--font-mono); font-size: 11px; letter-spacing: .04em; color: var(--text-secondary); white-space: nowrap; }
