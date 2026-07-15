@@ -273,11 +273,11 @@ function page(title, body, { desc = '', jsonld = '', canonical = '', path = '' }
   const graph = { '@context': 'https://schema.org', '@graph': [org, { '@type': 'WebSite', '@id': SITE + '/#site', url: SITE, name: 'AI Showreel', inLanguage: LANG, publisher: { '@id': SITE + '/#org' } }, ...nodes] };
   return normalizeHtmlText(`<!doctype html><html lang="${LANG}"><head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-<script>try{document.documentElement.setAttribute('data-theme',localStorage.getItem('theme')||'light');}catch(e){document.documentElement.setAttribute('data-theme','light');}</script>
+<script>document.documentElement.className+=' js-anim';try{document.documentElement.setAttribute('data-theme',localStorage.getItem('theme')||'dark');}catch(e){document.documentElement.setAttribute('data-theme','dark');}</script>
 <title>${esc(title)}</title>
 <meta name="description" content="${esc(desc)}">
 <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
-<meta name="theme-color" content="#f9f6f1">
+<meta name="theme-color" content="#0A0E1A" media="(prefers-color-scheme: dark)"><meta name="theme-color" content="#0A0E1A">
 <link rel="canonical" href="${esc(can)}">${BILINGUAL ? `
 <link rel="alternate" hreflang="fr" href="${esc(frUrl)}">
 <link rel="alternate" hreflang="en" href="${esc(enUrl)}">
@@ -291,7 +291,7 @@ function page(title, body, { desc = '', jsonld = '', canonical = '', path = '' }
 <meta property="og:image" content="${ogImg}"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta property="og:image:alt" content="${t('AI Showreel, les déploiements IA prouvés du marketing digital', 'AI Showreel, the proven AI deployments of digital marketing')}">
 <meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="${esc(title)}"><meta name="twitter:description" content="${esc(desc)}"><meta name="twitter:image" content="${ogImg}">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400..700;1,9..144,400..600&family=Hanken+Grotesk:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400..700;1,9..144,400..600&family=JetBrains+Mono:wght@400;500;600&display=swap">
 <link rel="stylesheet" href="/assets/style.css?v=${CSS_VER}">
 <script type="application/ld+json">${JSON.stringify(graph)}</script>
 <script defer src="/_vercel/insights/script.js"></script>
