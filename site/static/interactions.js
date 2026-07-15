@@ -337,27 +337,7 @@
     };
   }
 
-  /* ---- 6a. Curseur custom ---- */
-  function customCursor() {
-    if (coarse || reduced) return;
-    var cursor = document.createElement('div');
-    cursor.className = 'custom-cursor';
-    document.body.appendChild(cursor);
-    var mx = 0, my = 0, cx = 0, cy = 0;
-    document.addEventListener('mousemove', function (e) { mx = e.clientX; my = e.clientY; });
-    function loop() {
-      cx += (mx - cx) * 0.18; cy += (my - cy) * 0.18;
-      cursor.style.transform = 'translate3d(' + cx + 'px,' + cy + 'px,0) translate(-50%,-50%)';
-      requestAnimationFrame(loop);
-    }
-    loop();
-    document.querySelectorAll('a, button, [role="button"], .cell.filled, .cell.empty, .card').forEach(function (el) {
-      el.addEventListener('mouseenter', function () { cursor.classList.add('custom-cursor--active'); });
-      el.addEventListener('mouseleave', function () { cursor.classList.remove('custom-cursor--active'); });
-    });
-  }
-
-  /* ---- 6b. Bouton "Get the data" : modal avec exemple curl ---- */
+  /* ---- 6a. Bouton "Get the data" : modal avec exemple curl ---- */
   function getData() {
     var btns = [].slice.call(document.querySelectorAll('[data-getdata]'));
     if (!btns.length) return;
@@ -399,7 +379,7 @@
   }
 
   /* ---- init ---- */
-  function init() { countUp(); constellationCanvas(); matrixInteractions(); cardTilt(); liveTimestamps(); commandPalette(); filterFLIP(); customCursor(); getData(); pipelineReveal(); }
+  function init() { countUp(); constellationCanvas(); matrixInteractions(); cardTilt(); liveTimestamps(); commandPalette(); filterFLIP(); getData(); pipelineReveal(); }
   if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', init);
   else init();
 })();

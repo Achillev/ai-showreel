@@ -9,7 +9,7 @@ Reskin complet vers un dark mode "Bloomberg Terminal moderne" (dark par défaut,
 ### Checklist des 24 micro-interactions
 - [x] 1. Le mot "vraiment"/"actually" a un dégradé qui shift en 4s (`.hero-shimmer`)
 - [x] 2. Les compteurs 212 / 16 / 139 s'animent depuis 0 (easeOutExpo, IntersectionObserver + filet anti-throttle)
-- [x] 3. Le curseur custom grossit sur les éléments interactifs (off tactile / reduced-motion)
+- [ ] 3. Curseur custom — **retiré** (jugé gênant à l'usage ; le curseur natif reste)
 - [x] 4. La constellation pulse doucement derrière le hero (un point par cas, parallax, pause `document.hidden`)
 - [x] 5. Hover d'une case matrice -> focus mode (les autres à 0.4)
 - [x] 6. Hover d'un header ligne/colonne -> surlignage (data-row / data-col)

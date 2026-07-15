@@ -613,7 +613,7 @@ a, button { -webkit-tap-highlight-color: rgba(27, 77, 255, .12); }
 /* ---- Transitions par defaut (brief : polish global) ---- */
 * { transition-property: color, background-color, border-color, transform, opacity, box-shadow; transition-duration: var(--duration-fast); transition-timing-function: var(--ease-out-expo); }
 /* elements pilotes en continu par rAF : jamais de transition (sinon saccades) */
-.hero-constellation, .custom-cursor, .count-target { transition: none !important; }
+.hero-constellation, .count-target { transition: none !important; }
 :focus-visible { outline: 2px solid var(--accent-primary); outline-offset: 2px; border-radius: inherit; }
 
 /* ---- HERO : constellation + KPI giga + shimmer ---- */
@@ -718,11 +718,6 @@ html:not(.js-anim) .pipeline-line { stroke-dashoffset: 0; }
 .built-with .bw-item:hover { opacity: 1; }
 .built-with svg { width: 13px; height: 13px; }
 
-/* ---- Curseur custom ---- */
-.custom-cursor { position: fixed; top: 0; left: 0; width: 12px; height: 12px; border-radius: 50%; background: var(--accent-primary); mix-blend-mode: difference; pointer-events: none; z-index: 9999; transform: translate3d(-50%, -50%, 0); transition: width 200ms var(--ease-out-expo), height 200ms var(--ease-out-expo), opacity 200ms; }
-.custom-cursor--active { width: 40px; height: 40px; background: color-mix(in srgb, var(--accent-primary) 40%, transparent); }
-@media (pointer: coarse) { .custom-cursor { display: none !important; } }
-
 /* ---- @keyframes ---- */
 @keyframes shimmer { 0% { background-position: 0% 50%; } 50% { background-position: 100% 50%; } 100% { background-position: 0% 50%; } }
 @keyframes breathe { 0%, 100% { opacity: .6; } 50% { opacity: 1; } }
@@ -735,7 +730,6 @@ html:not(.js-anim) .pipeline-line { stroke-dashoffset: 0; }
   .status-dot::before, .status-dot::after { animation: none; opacity: 0; }
   .cell.empty { animation: none; opacity: 1; }
   html.js-anim .matrix.is-armed .cell { opacity: 1; transform: none; }
-  .custom-cursor { display: none !important; }
   .pipeline-line { stroke-dashoffset: 0; }
 }
 
