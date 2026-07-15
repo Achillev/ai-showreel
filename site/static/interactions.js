@@ -256,8 +256,89 @@
     });
   }
 
+  /* ---- 5a. Command palette (Cmd/Ctrl + K) ---- */
+  function commandPalette() {
+    var triggers = [].slice.call(document.querySelectorAll('[data-cmdk]'));
+    var overlay, input, list, items = [], sel = -1, DATA = null, loading = false;
+    function path() { return (isEN ? '/en' : '') + '/cases.json'; }
+    function esc(s) { var d = document.createElement('div'); d.textContent = s == null ? '' : s; return d.innerHTML; }
+    function build() {
+      overlay = document.createElement('div');
+      overlay.className = 'cmdk-overlay';
+      overlay.setAttribute('role', 'dialog'); overlay.setAttribute('aria-modal', 'true');
+      overlay.setAttribute('aria-label', tr('Recherche', 'Search'));
+      overlay.innerHTML = '<div class="cmdk"><input class="cmdk-input" type="text" autocomplete="off" spellcheck="false" placeholder="' + tr('Rechercher un cas, une marque, un levier…', 'Search a case, a brand, a lever…') + '" aria-label="' + tr('Rechercher', 'Search') + '"><ul class="cmdk-results" role="listbox"></ul><div class="cmdk-foot"><span>↑↓ ' + tr('naviguer', 'navigate') + '</span><span>↵ ' + tr('ouvrir', 'open') + '</span><span>esc ' + tr('fermer', 'close') + '</span></div></div>';
+      document.body.appendChild(overlay);
+      input = overlay.querySelector('.cmdk-input');
+      list = overlay.querySelector('.cmdk-results');
+      overlay.addEventListener('click', function (e) { if (e.target === overlay) close(); });
+      input.addEventListener('input', render);
+      input.addEventListener('keydown', onKey);
+    }
+    function load() {
+      if (DATA || loading) return; loading = true;
+      fetch(path()).then(function (r) { return r.json(); }).then(function (j) { DATA = j; render(); }).catch(function () { DATA = []; render(); });
+    }
+    function score(q, c) {
+      var hay = (c.marque + ' ' + (c.industrie_label || '') + ' ' + (c.levier_label || '')).toLowerCase();
+      var i = hay.indexOf(q); if (i >= 0) return 1000 - i;
+      var qi = 0; for (var k = 0; k < hay.length && qi < q.length; k++) if (hay[k] === q[qi]) qi++;
+      return qi === q.length ? 1 : -1;
+    }
+    function render() {
+      if (!DATA) { list.innerHTML = '<li class="cmdk-empty">' + tr('Chargement…', 'Loading…') + '</li>'; return; }
+      var q = (input.value || '').trim().toLowerCase();
+      var res = DATA.slice();
+      if (q) res = res.map(function (c) { return { c: c, s: score(q, c) }; }).filter(function (x) { return x.s > 0; }).sort(function (a, b) { return b.s - a.s; }).map(function (x) { return x.c; });
+      items = res.slice(0, 8); sel = items.length ? 0 : -1;
+      if (!items.length) { list.innerHTML = '<li class="cmdk-empty">' + tr('Aucun resultat', 'No result') + '</li>'; return; }
+      list.innerHTML = items.map(function (c, idx) {
+        var logo = c.logo_domain ? '<img class="cr-logo" src="https://www.google.com/s2/favicons?sz=128&domain=' + encodeURIComponent(c.logo_domain) + '" alt="" onerror="this.style.visibility=\'hidden\'">' : '<span class="cr-logo"></span>';
+        return '<li role="option" data-idx="' + idx + '" aria-selected="' + (idx === 0) + '">' + logo + '<span class="cr-name">' + esc(c.marque) + '</span><span class="cr-ind type-tag">' + esc(c.industrie_label || '') + '</span></li>';
+      }).join('');
+      [].slice.call(list.children).forEach(function (li) {
+        li.addEventListener('mouseenter', function () { select(+li.dataset.idx); });
+        li.addEventListener('click', function () { go(+li.dataset.idx); });
+      });
+    }
+    function select(i) {
+      sel = i;
+      [].slice.call(list.children).forEach(function (li) { li.setAttribute('aria-selected', (+li.dataset.idx === i)); });
+      var cur = list.children[i]; if (cur && cur.scrollIntoView) cur.scrollIntoView({ block: 'nearest' });
+    }
+    function go(i) { var c = items[i]; if (c) { try { window.location.href = new URL(c.url, window.location.href).pathname; } catch (e) { window.location.href = c.url; } } }
+    function onKey(e) {
+      if (e.key === 'ArrowDown') { e.preventDefault(); if (items.length) select((sel + 1) % items.length); }
+      else if (e.key === 'ArrowUp') { e.preventDefault(); if (items.length) select((sel - 1 + items.length) % items.length); }
+      else if (e.key === 'Enter') { e.preventDefault(); if (sel >= 0) go(sel); }
+      else if (e.key === 'Escape') { e.preventDefault(); close(); }
+    }
+    function open() { if (!overlay) build(); load(); overlay.classList.add('open'); input.value = ''; render(); input.focus(); }
+    function close() { if (overlay) overlay.classList.remove('open'); }
+    triggers.forEach(function (t) { t.addEventListener('click', open); });
+    document.addEventListener('keydown', function (e) { if ((e.metaKey || e.ctrlKey) && (e.key === 'k' || e.key === 'K')) { e.preventDefault(); open(); } });
+  }
+
+  /* ---- 5b. Filtres : reflow FLIP des cartes restantes ---- */
+  function filterFLIP() {
+    if (reduced) return;
+    window.__cmFlip = function (container, mutate) {
+      if (!container || typeof Element.prototype.animate !== 'function') return mutate();
+      var cards = [].slice.call(container.querySelectorAll('.card'));
+      var first = cards.map(function (c) { return c.getBoundingClientRect(); });
+      var ret = mutate();
+      cards.forEach(function (c, idx) {
+        if (c.style.display === 'none' || first[idx].width === 0) return;
+        var last = c.getBoundingClientRect();
+        var dx = first[idx].left - last.left, dy = first[idx].top - last.top;
+        if (dx || dy) c.animate([{ transform: 'translate(' + dx + 'px,' + dy + 'px)' }, { transform: 'translate(0,0)' }], { duration: 400, easing: 'cubic-bezier(0.16,1,0.3,1)' });
+      });
+      return ret;
+    };
+  }
+
   /* ---- init ---- */
-  function init() { countUp(); constellationCanvas(); matrixInteractions(); cardTilt(); liveTimestamps(); }
+  function init() { countUp(); constellationCanvas(); matrixInteractions(); cardTilt(); liveTimestamps(); commandPalette(); filterFLIP(); }
   if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', init);
   else init();
 })();

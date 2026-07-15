@@ -736,3 +736,10 @@ html:not(.js-anim) .pipeline-line { stroke-dashoffset: 0; }
   .custom-cursor { display: none !important; }
   .pipeline-line { stroke-dashoffset: 0; }
 }
+
+/* ---- Nav refonte : responsive du compteur + bouton Cmd+K ---- */
+@media (max-width: 900px) { .nav-live { display: none; } }
+@media (max-width: 780px) {
+  .cmdk-btn kbd { display: none; }
+  .cmdk-btn { padding: 0 9px; }
+}

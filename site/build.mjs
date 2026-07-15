@@ -13,6 +13,8 @@ const __dir = dirname(fileURLToPath(import.meta.url));
 const CSS_VER = createHash('md5').update(readFileSync(join(__dir, 'style.css'))).digest('hex').slice(0, 8);
 const JS_SRC = join(__dir, 'static', 'interactions.js');
 const JS_VER = existsSync(JS_SRC) ? createHash('md5').update(readFileSync(JS_SRC)).digest('hex').slice(0, 8) : '0';
+// compteur temps reel de la nav (rempli dans build())
+let TOTAL_CASES = 0, LAST_UPD = '';
 const ROOT = join(__dir, '..');
 const CASES_DIR = join(ROOT, 'cases');
 const DIST = join(ROOT, 'dist');
@@ -302,7 +304,9 @@ function page(title, body, { desc = '', jsonld = '', canonical = '', path = '' }
 <a class="skip" href="#main">${t('Aller au contenu', 'Skip to content')}</a>
 <header class="head-top" id="head-top">
   <a class="brand" href="${P()}/" translate="no"><span class="brand-mark" aria-hidden="true">◆</span> AI&nbsp;Showreel <span class="brand-sub">${t("l'analyse niveau grand cabinet, pour tout le monde", 'consulting-grade analysis, for everyone')}</span></a>
-  <div class="nav-utils">${BILINGUAL ? `
+  <div class="nav-live" title="${t('Dernière vérification', 'Last verified')} : ${esc(LAST_UPD)}"><span class="status-dot" aria-hidden="true"></span> <span class="num" data-countup data-target="${TOTAL_CASES}">${TOTAL_CASES}</span> ${t('cas prouvés', 'proven cases')}</div>
+  <div class="nav-utils">
+    <button class="cmdk-btn" type="button" data-cmdk aria-label="${t('Rechercher un cas', 'Search a case')} (Ctrl/Cmd K)"><svg viewBox="0 0 20 20" width="14" height="14" aria-hidden="true"><circle cx="9" cy="9" r="6" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M14 14 L18 18" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg><kbd>⌘K</kbd></button>${BILINGUAL ? `
     <div class="lang-switch" role="group" aria-label="${t('Langue', 'Language')}"><a href="${esc(frUrl)}" hreflang="fr"${LANG === 'fr' ? ' aria-current="true"' : ''}>FR</a><a href="${esc(enUrl)}" hreflang="en"${LANG === 'en' ? ' aria-current="true"' : ''}>EN</a></div>` : ''}
     <button class="theme-toggle" type="button" aria-label="${t('Basculer thème clair/sombre', 'Toggle light/dark theme')}" title="${t('Thème', 'Theme')}"><svg viewBox="0 0 20 20" width="17" height="17" aria-hidden="true"><circle cx="10" cy="10" r="8.2" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M10 1.8 a8.2 8.2 0 0 1 0 16.4 z" fill="currentColor"/></svg></button>
     <button class="nav-burger" type="button" aria-label="${t('Ouvrir le menu', 'Open menu')}" aria-expanded="false" aria-controls="site-nav"><span class="burger" aria-hidden="true"></span></button>
@@ -888,7 +892,7 @@ function indexPage(cases) {
 var cards=[].slice.call(document.querySelectorAll('#cas .card')),cnt=document.querySelector('#cas .cf-count'),btns=[].slice.call(document.querySelectorAll('#cas .cf-btn'));
 var CASWORD=${JSON.stringify(t('cas', 'cases'))};
 function setBtn(l){btns.forEach(function(x){x.classList.toggle('is-on',(x.dataset.lev||'')===(l||''));});}
-function apply(i,l){var n=0;cards.forEach(function(c){var ok=(!i||c.dataset.ind===i)&&(!l||c.dataset.lev===l);c.style.display=ok?'':'none';if(ok)n++;});setBtn(l||'');cnt.textContent=(i||l)?(n+' '+CASWORD):'';}
+function apply(i,l){var run=function(){var n=0;cards.forEach(function(c){var ok=(!i||c.dataset.ind===i)&&(!l||c.dataset.lev===l);c.style.display=ok?'':'none';if(ok)n++;});return n;};var cont=document.querySelector('#cas .cards');var n=(window.__cmFlip&&cont)?window.__cmFlip(cont,run):run();setBtn(l||'');cnt.textContent=(i||l)?(n+' '+CASWORD):'';}
 btns.forEach(function(bn){bn.addEventListener('click',function(){apply('',bn.dataset.lev||'');history.pushState('','',location.pathname+(bn.dataset.lev?('?lev='+bn.dataset.lev):'')+'#cas');});});
 [].slice.call(document.querySelectorAll('.mcell-link')).forEach(function(a){a.addEventListener('click',function(e){e.preventDefault();apply(a.dataset.ind,a.dataset.lev);history.pushState('','',location.pathname+'?ind='+a.dataset.ind+'&lev='+a.dataset.lev+'#cas');var el=document.getElementById('cas');if(el)el.scrollIntoView({behavior:'smooth'});});});
 var q=new URLSearchParams(location.search);if(q.get('ind')||q.get('lev'))apply(q.get('ind')||'',q.get('lev')||'');})();
@@ -1171,6 +1175,9 @@ function build() {
     if (existsSync(p)) { try { c.i18n = { en: JSON.parse(readFileSync(p, 'utf8')) }; nTrad++; } catch (e) { console.error('SKIP trad', c.id, e.message); } }
   }
 
+  TOTAL_CASES = cases.filter(c => c.type_fiche !== 'echec_retrait').length;
+  LAST_UPD = cases.map(c => c.dates?.verifie_le).filter(Boolean).sort().pop() || '';
+
   rmSync(DIST, { recursive: true, force: true });
   mkdirSync(join(DIST, 'assets'), { recursive: true });
 
@@ -1181,6 +1188,16 @@ function build() {
     mkdirSync(join(out, 'cas'), { recursive: true });
     mkdirSync(join(out, 'rapport'), { recursive: true });
     writeFileSync(join(out, 'index.html'), indexPage(cases));
+    // dataset public : alimente le command palette (Cmd+K) et le bouton "Get the data". Que du deja-public.
+    const publicData = cases.filter(c => c.type_fiche !== 'echec_retrait').map(c => ({
+      id: c.id, marque: c.marque, url: SITE + P() + `/cas/${c.id}.html`,
+      industrie: c.industrie, industrie_label: INDUSTRIES[c.industrie] || c.industrie,
+      levier: c.axes?.levier || null, levier_label: LEVIERS[c.axes?.levier] || null,
+      niveau_preuve: c.niveau_preuve?.niveau || null, statut_vivant: c.statut_vivant?.statut || null,
+      verifie_le: c.dates?.verifie_le || null, logo_domain: c.logo_domain || null,
+      resultat: (c.resultats || [])[0] ? { valeur: (c.resultats[0].valeur), metrique: (c.resultats[0].metrique) } : null,
+    }));
+    writeFileSync(join(out, 'cases.json'), JSON.stringify(publicData));
     writeFileSync(join(out, 'veille.html'), veillePage(cases));
     writeFileSync(join(out, 'rapports.html'), reportsIndexPage(cases));
     writeFileSync(join(out, 'patterns.html'), patternsPage(cases));
