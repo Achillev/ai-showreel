@@ -1,0 +1,107 @@
+{
+  "seo": {
+    "title": "Ray-Ban: AI value-optimized Meta sales (Advantage+) - 2.08x incremental ROAS (2025)",
+    "meta_description": "Ray-Ban (EssilorLuxottica) tuned its Meta Advantage+ campaigns on purchase value plus a consideration objective: +32% average order value and 2.08x incremental ROAS in the United States.",
+    "resume_citable": "In 2025, Ray-Ban (EssilorLuxottica) achieved 2.08x incremental ROAS and +32% average order value in the United States by tuning its Meta Advantage+ campaigns on purchase value, combined with a consideration objective, measured by Conversion Lift.",
+    "faq": [
+      {
+        "q": "What is value optimization at Meta?",
+        "a": "A setting where the AI targets high-basket buyers rather than plain purchase volume, drawing on purchase value reported server-side."
+      },
+      {
+        "q": "Is Ray-Ban's result incremental?",
+        "a": "Yes: the 2.08x ROAS and the 80% drop in cost per conversion are measured by a Conversion Lift with a search-lift method, not by attribution."
+      }
+    ]
+  },
+  "pattern": "AI-automated sales campaign optimized on purchase value, combined with a consideration objective, measured incrementally",
+  "etape_parcours": "consideration -> purchase",
+  "stack_technique": [
+    { "detail": "AI-automated sales campaign: audience, placements, and budget managed by Meta." },
+    { "detail": "Optimization setting where the AI targets high-basket buyers rather than gross purchase volume." },
+    { "detail": "Server-side reporting of the purchase and its amount, a signal essential to value optimization." },
+    { "detail": "Incremental measurement with a search-lift method, used to arbitrate between the three tested settings." }
+  ],
+  "objectif_business": "Increase the yield of sales campaigns by pushing the AI to seek high-value buyers rather than plain purchase volume.",
+  "description": "Ray-Ban, the eyewear brand of EssilorLuxottica, tested how to better tune its Meta sales campaigns in the United States. The brand compared three approaches in an A/B/C on Advantage+ Sales campaigns: standard optimization, value optimization (where the AI targets high-basket buyers), and value optimization combined with a consideration objective. The test, from February 4 to March 22, 2025 on an adult audience, was measured by a Conversion Lift with a search-lift method. Value optimization alone brought 9 percent more ROAS and 32 percent more average order value. By adding the consideration objective, Ray-Ban achieved 2.08x incremental ROAS across all purchases, 2.1x on prescription lens purchases, and an 80 percent lower cost per incremental conversion on search visits.",
+  "points_cles": [
+    "A/B/C test of settings on Meta Advantage+ sales campaigns.",
+    "Value optimization plus a consideration objective, measured by Conversion Lift.",
+    "Incremental ROAS of 2.08x and average order value up 32%.",
+    "Evidence B, status confirmed on standard Meta formats."
+  ],
+  "fonctionnement_operationnel": {
+    "cadence": "Continuous delivery; the optimization settings are compared in test waves with a control group.",
+    "opere_par": "The brand's performance marketing team, on the Meta ad account.",
+    "signal_pilote": "The purchase value reported server-side (not just the purchase event). Without reliable value, value optimization has nothing to distinguish a large basket from a small one.",
+    "etapes": [
+      {
+        "etape": "Report purchase value",
+        "detail": "The Pixel and Conversions API send not only the purchase but its amount, to feed value optimization.",
+        "acteur": "Data team"
+      },
+      {
+        "etape": "Choose value optimization",
+        "detail": "The Advantage+ Sales campaign is tuned to target high-basket buyers rather than gross purchase volume.",
+        "acteur": "Media team"
+      },
+      {
+        "etape": "Add the consideration objective",
+        "detail": "Combining value optimization and a consideration objective dropped the cost per incremental conversion and doubled the incremental ROAS in the test.",
+        "acteur": "Media team / Meta AI"
+      },
+      {
+        "etape": "Decide on incrementality",
+        "detail": "The choice between the three settings was made on an A/B/C test and a Conversion Lift (search lift), not on the reported ROAS.",
+        "acteur": "Media team"
+      }
+    ]
+  },
+  "resultats": [
+    { "metrique": "ROAS (value optimization)" },
+    { "metrique": "Average order value (value optimization)" },
+    { "metrique": "Incremental ROAS on all purchases (value + consideration)" },
+    { "metrique": "Cost per incremental conversion, search visits" }
+  ],
+  "niveau_preuve": {
+    "justification": "Official Meta case study, quantified, backed by an A/B/C test and a Conversion Lift (search lift), with a named person; single source published by the platform."
+  },
+  "statut_vivant": {
+    "note": "Ray-Ban (EssilorLuxottica) remains an active Meta advertiser; Advantage+ Sales Campaigns and value optimization are standard Meta features, which ensures the durability of the pattern."
+  },
+  "replication": {
+    "prerequis_data": [
+      "Purchase value reported server-side (amount, not just the event)",
+      "Reliable Pixel + Conversions API",
+      "Sufficient purchase volume for value optimization and a Conversion Lift"
+    ],
+    "prerequis_orga": [
+      "Objective oriented to margin / basket rather than gross volume",
+      "Ability to read an A/B/C test and an incrementality study"
+    ],
+    "stack_possible": [
+      "Meta Advantage+ Sales Campaigns + value optimization + CAPI",
+      "Conversion Lift or geo-test as arbiter"
+    ],
+    "premiere_etape": "Activate value optimization on an Advantage+ Sales campaign and compare it in an A/B to standard optimization, with purchase value reported via CAPI.",
+    "playbook": [
+      {
+        "action": "Make the Pixel and Conversions API reliable by reporting the purchase amount, not just the event.",
+        "livrable": "Purchase events with value verified in Events Manager."
+      },
+      {
+        "action": "Set up the A/B (or A/B/C) test: standard optimization vs value optimization, possibly plus a consideration objective, on Advantage+ Sales.",
+        "livrable": "Test structure with defined cells, budgets, and duration."
+      },
+      {
+        "action": "Deliver with an active Conversion Lift to measure incrementally, without reworking the campaigns during the test.",
+        "livrable": "Campaigns in delivery with incremental measurement connected."
+      },
+      {
+        "action": "Read incremental ROAS, average order value, and cost per incremental conversion, then switch to the winning setting.",
+        "livrable": "Documented decision and campaign in production on the chosen setting."
+      }
+    ],
+    "equipe": "1 Meta media buyer + 1 dev / analyst for the Conversions API and the purchase-value reporting."
+  }
+}

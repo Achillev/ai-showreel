@@ -1,0 +1,110 @@
+{
+  "seo": {
+    "title": "EDF: AI callbot and chatbot - call abandonment -16%, 100,000 exchanges/month (France)",
+    "meta_description": "EDF deployed a callbot and a chatbot on Illuin's Dialogue platform: -16% abandoned calls, +30% direct routing, +7 points of satisfaction, and 100,000 monthly exchanges.",
+    "resume_citable": "EDF's callbot and chatbot on Illuin Technology's Dialogue platform cut call abandonment by 16%, improve direct routing by 30% and satisfaction by 7 points, with 100,000 monthly exchanges and more than 25 million cumulative interactions in France.",
+    "faq": [
+      {
+        "q": "What does EDF's callbot do?",
+        "a": "It interprets the request on the phone and routes the customer to the right path: an EDF advisor, an external service like Enedis, self-service, or a digital resource, while informing the advisor of the nature of the request."
+      },
+      {
+        "q": "What results did EDF get?",
+        "a": "A 16% drop in abandoned calls, a 30% rise in direct routing, a 7-point gain in satisfaction, and about 100,000 exchanges handled per month via the chatbot."
+      }
+    ]
+  },
+  "pattern": "Intelligent routing callbot + self-service chatbot",
+  "etape_parcours": "post-purchase",
+  "objectif_business": "Smooth the phone and digital front desk: reduce abandoned calls, send each customer to the right person the first time, and free advisors from simple requests.",
+  "description": "EDF deployed a callbot and a chatbot on Illuin Technology's Dialogue conversational platform, in SaaS. The callbot interprets the spoken request and routes the call to the right path: an EDF advisor, an external service like Enedis, self-service (bill payment), or a digital resource. The advisor is informed in advance of the nature of the request. The chatbot handles simple requests and manages about 100,000 exchanges per month. The platform, which combines generative AI and more frugal approaches, has been proven by EDF over more than 25 million interactions. EDF's 5,000 advisors, all in France, focus on high-value cases.",
+  "points_cles": ["Intelligent routing callbot and self-service chatbot for the customer front desk.", "Illuin Technology's Dialogue conversational platform, in SaaS.", "Call abandonment -16%, direct routing +30%, satisfaction +7 points, 100,000 exchanges per month.", "Evidence level B, confirmed live status."],
+  "resultats": [
+    { "metrique": "Monthly exchanges handled by the chatbot" },
+    { "metrique": "Cumulative interactions on the Dialogue platform at EDF" },
+    { "metrique": "Call abandonment -16%, direct routing +30%, satisfaction +7 points (callbot)" }
+  ],
+  "niveau_preuve": {
+    "justification": "A quantified case study from the integrator (Illuin Technology) on the phone front desk, confirmed by an AFRC article naming EDF and the customer experience director, and by an AFRC session mentioning more than 25M interactions. Concordant sources."
+  },
+  "stack_technique": [
+    { "detail": "SaaS conversational platform that carries the routing callbot and the self-service chatbot; proven at EDF over more than 25 million interactions." },
+    { "detail": "The platform combines generative AI and more frugal methods; the exact models are not publicly named." },
+    { "detail": "French scale-up publishing the platform, supporting EDF's customer experience division." },
+    { "detail": "5,000 advisors based in France; the callbot routes the call and informs the advisor of the request before handling." }
+  ],
+  "fonctionnement_operationnel": {
+    "cadence": "Real time on every call and every chat conversation.",
+    "opere_par": "EDF's customer experience division, with Illuin Technology as the platform publisher.",
+    "signal_pilote": "Correctly detecting the spoken intent for routing. If the intent is misclassified, the call goes to the wrong path and the gain on abandonment and routing disappears.",
+    "etapes": [
+      {
+        "etape": "Listen and interpret",
+        "detail": "The callbot interprets the customer's request on the phone and identifies the target path.",
+        "acteur": "AI"
+      },
+      {
+        "etape": "Routing",
+        "detail": "It routes to an EDF advisor, an external service (Enedis), self-service, or a digital resource, informing the advisor of the nature of the request.",
+        "acteur": "AI"
+      },
+      {
+        "etape": "Self-service by chat",
+        "detail": "The chatbot handles simple requests and hands off to an advisor when needed.",
+        "acteur": "AI"
+      },
+      {
+        "etape": "Human handling",
+        "detail": "The advisor takes over the high-value cases, already contextualized.",
+        "acteur": "customer service"
+      }
+    ]
+  },
+  "replication": {
+    "prerequis_data": [
+      "a map of intents and journeys",
+      "a directory of services and advisor skills",
+      "a knowledge base for self-service"
+    ],
+    "prerequis_orga": [
+      "a contact center structured by skill",
+      "agreement on the routing rules",
+      "an advisor informed of the request upfront"
+    ],
+    "stack_possible": [
+      "a voice + chat conversational platform (Dialogue or equivalent)",
+      "an intent-based routing engine",
+      "genAI components anchored on a knowledge base"
+    ],
+    "premiere_etape": "Model the most frequent call intents and wire a routing callbot before adding self-service by chat.",
+    "playbook": [
+      {
+        "action": "Map the most frequent call intents and the target paths: advisor, self-service, external service.",
+        "livrable": "An intent reference and validated routing rules"
+      },
+      {
+        "action": "Configure the routing callbot on the platform and wire it to telephony.",
+        "livrable": "A working callbot in pre-production"
+      },
+      {
+        "action": "Launch a pilot on a major call flow, passing the context to the advisor.",
+        "livrable": "First figures on call abandonment and direct routing"
+      },
+      {
+        "action": "Extend to the self-service chatbot on simple requests (bill payment).",
+        "livrable": "Chatbot in production on common requests"
+      },
+      {
+        "action": "Measure abandonment, direct routing, and satisfaction; correct the misclassified intents.",
+        "livrable": "A quantified readout and an intent improvement backlog"
+      }
+    ],
+    "equipe": "1 customer experience lead + 1-2 integration devs (telephony, CRM) + the publisher in support; advisors remain the escalation path."
+  },
+  "statut_vivant": {
+    "note": "Callbot and chatbot in production on the Dialogue platform, monthly volume confirmed at the end of 2025."
+  },
+  "transposable_ue": {
+    "note": "A French deployment on a platform published by the French scale-up Illuin Technology, in SaaS. The approach combines generative AI and more frugal methods, and the 5,000 advisors are based in France, which simplifies the GDPR framing and data localization."
+  }
+}

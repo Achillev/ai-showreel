@@ -1,0 +1,114 @@
+{
+  "seo": {
+    "title": "Mastercard: generative AI fraud detection (Decision Intelligence Pro) - +20% detection (2024)",
+    "meta_description": "Decision Intelligence Pro scores each transaction in less than 50 ms. Mastercard modeling: +20% fraud detection on average, -85% false positives.",
+    "resume_citable": "In 2024, Mastercard launched Decision Intelligence Pro, a generative model that scores each transaction in less than 50 ms; its internal modeling reports +20% fraud detection on average (up to +300%) and more than 85% fewer false positives.",
+    "faq": [
+      {
+        "q": "How does Decision Intelligence Pro work?",
+        "a": "The generative model assesses the relationships between the entities around a transaction, scans a trillion data points and refines a risk score in less than 50 milliseconds, passed to the issuing bank."
+      },
+      {
+        "q": "What gains does Mastercard report?",
+        "a": "According to its initial modeling, the improvement raises the fraud detection rate by 20% on average, up to 300% in some cases, and reduces false positives by more than 85%."
+      }
+    ]
+  },
+  "pattern": "real-time transaction risk scoring",
+  "etape_parcours": "purchase",
+  "objectif_business": "Help issuing banks distinguish legitimate transactions from fraudulent ones in real time, to block more fraud while reducing false declines that degrade experience and lose revenue.",
+  "description": "Decision Intelligence assigns a risk score to each transaction on the network. In February 2024, Mastercard launched Decision Intelligence Pro, a version that relies on a generative model to assess the relationships between the entities around a transaction (merchant, terminal, behavior). The model scans a trillion data points to predict whether a transaction is likely authentic, and refines the Decision Intelligence score in less than 50 milliseconds. According to Mastercard's initial modeling, the improvement raises the fraud detection rate by 20% on average, up to 300% in some cases, and reduces false positives by more than 85%.",
+  "points_cles": [
+    "Real-time fraud risk scoring on every transaction on the network.",
+    "Decision Intelligence Pro, transformer-type generative model, score refined in under 50 ms.",
+    "+20% detection on average (up to +300%), false positives reduced by more than 85%.",
+    "Evidence B, confirmed status: Mastercard internal modeling, picked up by CNBC and PYMNTS."
+  ],
+  "resultats": [
+    { "metrique": "Improvement in the fraud detection rate, up to +300% in some cases (initial modeling)" },
+    { "metrique": "Reduction in false positives (Mastercard internal analysis)" },
+    { "metrique": "Scoring speed, scan of 1 trillion data points" }
+  ],
+  "niveau_preuve": {
+    "justification": "Figures from Mastercard's official press release (internal analysis and modeling, interested source) and picked up by name by CNBC and PYMNTS. These are initial modeling results, not audited financial KPIs; the +20% and +300% are presented by Mastercard as projections, which the record preserves."
+  },
+  "stack_technique": [
+    { "detail": "real-time risk scoring on every transaction on the network, passed to issuing banks at authorization" },
+    { "detail": "transformer-type generative model (launched in February 2024) that assesses the relationships between entities (merchant, terminal, behavior) and refines the score in less than 50 ms" },
+    { "detail": "a trillion data points scanned; the confirmed-fraud labels serve for retraining" },
+    { "detail": "consumes the score in the authorization rules; the final decision stays with the issuer, supervisable and contestable (GDPR, AI Act)" }
+  ],
+  "fonctionnement_operationnel": {
+    "cadence": "Real time, on every transaction on the network, with periodic retraining of the models.",
+    "opere_par": "Mastercard's cyber and intelligence team on the network side; risk teams of issuing banks on the final decision side.",
+    "signal_pilote": "Transaction behavior and the relationships between entities (merchant, terminal, history). If the confirmed-fraud label signal degrades, the model drifts and accuracy drops.",
+    "etapes": [
+      {
+        "etape": "Transaction pass-through",
+        "detail": "A transaction arrives for authorization on the Mastercard network.",
+        "acteur": "site_app / network"
+      },
+      {
+        "etape": "Scoring",
+        "detail": "The model assesses the relationships between entities and scans the context to assign a risk score in less than 50 ms.",
+        "acteur": "AI"
+      },
+      {
+        "etape": "Enrichment of the DI score",
+        "detail": "Decision Intelligence Pro refines the overall score passed to the bank.",
+        "acteur": "AI"
+      },
+      {
+        "etape": "Decision",
+        "detail": "The issuing bank approves or declines the transaction based on the score and its own rules.",
+        "acteur": "issuing bank"
+      }
+    ]
+  },
+  "replication": {
+    "prerequis_data": [
+      "Real-time transaction feed",
+      "History of confirmed fraud for learning",
+      "Relational data between entities (merchant, terminal, device)"
+    ],
+    "prerequis_orga": [
+      "Ability to integrate an external score into the authorization decision engine",
+      "Risk team to calibrate the thresholds"
+    ],
+    "stack_possible": [
+      "Mastercard Decision Intelligence (network activation)",
+      "third-party anti-fraud scoring engines (Feedzai, Featurespace)",
+      "custom model if internal volume and data are sufficient"
+    ],
+    "equipe": "2-3 risk/fraud analysts + 1-2 payment devs for the integration + compliance for the automated decision",
+    "playbook": [
+      {
+        "action": "Frame with the network the activation of the score on the relevant card portfolio",
+        "livrable": "Activation scope + access to the score in the authorization flow"
+      },
+      {
+        "action": "Plug the score into the decision engine, first in observation mode without blocking",
+        "livrable": "Score consumed in production, logged on real traffic"
+      },
+      {
+        "action": "Calibrate the thresholds by segment with the risk team, on history and observed traffic",
+        "livrable": "Tested threshold matrix, trade-off between fraud detected and false declines"
+      },
+      {
+        "action": "Move to decision mode on a pilot segment and compare against a control period",
+        "livrable": "Measurement of detection rate, false positives and approval rate"
+      },
+      {
+        "action": "Generalize to the portfolio and close the retraining loop with confirmed-fraud labels",
+        "livrable": "Detection, false-positive and approval dashboard tracked continuously"
+      }
+    ],
+    "premiere_etape": "For an issuer: plug the existing network score into the authorization rules and measure the effect on false declines and fraud."
+  },
+  "statut_vivant": {
+    "note": "Decision Intelligence is a core Mastercard product. The Pro version launched in 2024 is confirmed active by a 2026 Mastercard publication on the savings generated by anti-fraud AI for banks."
+  },
+  "transposable_ue": {
+    "note": "Mastercard operates this scoring on its network, including in the EU. Real-time fraud scoring processes transaction data; under the GDPR and AI Act, the automated decline decision must remain supervisable and contestable by the issuing bank."
+  }
+}

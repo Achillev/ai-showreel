@@ -1,0 +1,114 @@
+{
+  "seo": {
+    "title": "La Redoute: AI-automated paid social (Meta Advantage+) - +51% incremental ROAS (2024)",
+    "meta_description": "How La Redoute let Meta's AI drive its e-commerce acquisition campaigns in Southern Europe, measured incrementally: +51% ROAS, -26% cost per purchase.",
+    "resume_citable": "In 2024, La Redoute achieved +51% incremental ROAS and -26% cost per purchase by entrusting its acquisition campaigns to Meta's AI (Advantage+ Shopping), enriched with creator Reels, measured by Conversion Lift across Spain and Portugal.",
+    "faq": [
+      {
+        "q": "What AI did La Redoute use?",
+        "a": "Meta Advantage+ Shopping automation, which drives audiences, bids, placements, and creative combinations, with no custom model on the advertiser side."
+      },
+      {
+        "q": "Is the result attributed or incremental?",
+        "a": "Incremental: the brand used a multi-cell Conversion Lift study, more rigorous than a simple attribution measure."
+      }
+    ]
+  },
+  "pattern": "Paid social campaign fully automated by AI (audiences, placements, bids, creative combinations), measured incrementally",
+  "etape_parcours": "Discovery -> Purchase",
+  "objectif_business": "Sell more online in Spain and Portugal without adding campaign management overhead: Meta's AI drives delivery, the team focuses on the catalog and the creative.",
+  "description": "La Redoute, the French fashion and home retailer, handed its sales campaigns on Meta over to Advantage+ Shopping mode. The principle: the advertiser supplies the product catalog and the visuals, and Meta's algorithm decides on its own which audiences, placements, bids, and creative to serve. The team tested a variant by adding creator videos produced with the agency Ykone, served in Reels and Stories. To find out whether it really worked, it did not look at the ROAS displayed in the interface: it ran a Conversion Lift study with a control group, from June 7 to July 11, 2024, comparing Advantage+ alone against Advantage+ enriched with creator creative. The enriched variant delivered +51% incremental ROAS, +35% purchases, and -26% cost per purchase. A second test with the platform The Cirqle gives a consistent order of magnitude, with ROAS rising from 5.19 to 8.35.",
+  "points_cles": ["Paid social campaign fully automated by AI, measured incrementally.", "Meta Advantage+ Shopping enriched with creator Reels, measured through Conversion Lift.", "+51% incremental ROAS, +35% purchases, -26% cost per purchase.", "Evidence level B, status confirmed."],
+  "resultats": [
+    { "metrique": "Incremental ROAS" },
+    { "metrique": "Incremental purchases" },
+    { "metrique": "Cost per incremental purchase" },
+    { "metrique": "Purchase ROAS (separate creator test)" }
+  ],
+  "niveau_preuve": {
+    "justification": "Official Meta case study, quantified and backed by a multi-cell Conversion Lift (a serious incremental method), but published by the platform itself; partially corroborated by a third-party test (The Cirqle) with revenue attribution."
+  },
+  "stack_technique": [
+    { "detail": "targeting, bids, placements, and creative combinations driven by Meta's ML" },
+    { "detail": "server-side reporting of purchases, the signal that feeds the algorithm" },
+    { "detail": "incremental measurement with a control group, the arbiter of the test" },
+    { "detail": "production of the creator videos (Reels/Stories)" }
+  ],
+  "fonctionnement_operationnel": {
+    "cadence": "Continuous, daily budget. Every major change restarts a 1 to 2 week learning phase during which nothing is touched.",
+    "opere_par": "The acquisition team (in-house or media agency), supported by the e-commerce team for the feed and the creative agency for the videos.",
+    "signal_pilote": "The purchases reported by the Pixel and the Conversions API. If this signal is incomplete or delayed, the algorithm optimizes on noise and performance collapses without any visible reason.",
+    "etapes": [
+      {
+        "etape": "Sync the catalog",
+        "detail": "The product feed (price, stock, visuals) goes to Meta and becomes the ad inventory. A dirty or stale feed translates directly into an ad for an out-of-stock product.",
+        "acteur": "E-commerce / feed team"
+      },
+      {
+        "etape": "Make purchase measurement reliable",
+        "detail": "Pixel plus server-side Conversions API, so that every sale is reported even when the browser blocks tracking. This is the fuel of the optimization.",
+        "acteur": "Data team"
+      },
+      {
+        "etape": "Load a stock of creative",
+        "detail": "Feed in vertical videos and creator Reels. The algorithm tests the combinations itself; the team does not pick the winner for it.",
+        "acteur": "Creative agency"
+      },
+      {
+        "etape": "Let the learning happen",
+        "detail": "The algorithm explores audiences, placements, and bids. Cutting a campaign too early or changing it every two days breaks the learning and restarts from scratch.",
+        "acteur": "Meta AI"
+      },
+      {
+        "etape": "Decide on incrementality",
+        "detail": "The decision to keep or cut is made on a Conversion Lift with a control group, not on the attributed ROAS that inflates the figures.",
+        "acteur": "Media team"
+      }
+    ]
+  },
+  "replication": {
+    "prerequis_data": [
+      "Clean and up-to-date product catalog (feed)",
+      "Pixel + Conversions API with reliable purchase events (50+ conversions/week)",
+      "Customer lists for exclusion / capping existing customers"
+    ],
+    "prerequis_orga": [
+      "Bank of vertical video creative (creators / UGC)",
+      "Ability to let the algorithmic learning run without over-managing it"
+    ],
+    "stack_possible": [
+      "Meta Advantage+ Sales Campaigns + CAPI (server-side GTM, Shopify, or partner)",
+      "Measurement through Conversion Lift or geo-test"
+    ],
+    "premiere_etape": "Launch a structured A/B test: an Advantage+ campaign (20-30% of the social budget) vs the existing manual structure, with Conversion Lift or geographic incrementality as the arbiter.",
+    "playbook": [
+      {
+        "action": "Audit the product feed and the purchase measurement",
+        "livrable": "Clean feed (prices, stock, visuals) + valid Pixel/CAPI in Events Manager"
+      },
+      {
+        "action": "Build the creative bank",
+        "livrable": "10-15 vertical videos (creators or UGC) + catalog ads ready"
+      },
+      {
+        "action": "Launch Advantage+ on 20-30% of the social budget",
+        "livrable": "Live campaign, learning phase engaged (stop touching it)"
+      },
+      {
+        "action": "Let it converge, then measure incrementally",
+        "livrable": "Conversion Lift or geo-test that decides against the manual structure"
+      },
+      {
+        "action": "Scale or arbitrate based on incrementality",
+        "livrable": "Budget decision based on the real lift, not the attributed ROAS"
+      }
+    ],
+    "equipe": "1 media buyer + 1 dev (CAPI) + in-house or agency creative"
+  },
+  "statut_vivant": {
+    "note": "La Redoute remains an active Meta advertiser; the Advantage+ Shopping product is now Meta's default sales format (>20bn USD run-rate announced at the end of 2024), which ensures the durability of the pattern."
+  },
+  "transposable_ue": {
+    "note": "Already deployed in the EU. Requires proper GDPR/ePrivacy consent (Pixel + Conversions API); Meta algorithmic targeting is limited risk under the AI Act, with no heavy obligation on the advertiser side."
+  }
+}

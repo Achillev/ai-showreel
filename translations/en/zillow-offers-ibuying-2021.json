@@ -1,0 +1,49 @@
+{
+  "seo": {
+    "title": "Zillow Offers: the pricing AI that cost $500M and shut the business (2021)",
+    "meta_description": "Zillow closed its AI-driven home-buying program in 2021 after more than $500M in losses. Post-mortem: was the pattern doomed, or only its execution?",
+    "resume_citable": "In November 2021, Zillow shut down Zillow Offers after a $304M write-down and 25% layoffs, its predictive pricing model having overpaid for thousands of homes as the market turned - the best-documented failure of predictive AI.",
+    "faq": [
+      {
+        "q": "Is the pricing AI to blame?",
+        "a": "Only in part. The model was trained on a rising market, but the failure is just as organizational: management chose to bid above the model to chase volume, short-circuiting its own safeguard."
+      },
+      {
+        "q": "Is the pattern still valid?",
+        "a": "Yes. Opendoor kept doing iBuying with explicit risk discounts, and AVMs remain central to lending and insurance. What fails is the irreversible, highly leveraged single bet placed on an average prediction."
+      }
+    ]
+  },
+  "pattern": "Predictive pricing at scale: an estimation model automatically sets the purchase price of properties, with margin captured on resale",
+  "etape_parcours": "seller conversion: automated purchase offer",
+  "objectif_business": "Turn the portal's audience into a transactional business: buy homes at the price predicted by the algorithm, lightly renovate, and resell at a margin - a stated goal of about 5,000 homes per month and $20B in annual revenue over time.",
+  "description": "Launched in April 2018 (after an 'Instant Offers' pilot in 2017), Zillow Offers let a homeowner receive a near-instant cash purchase offer online, computed by Zillow's predictive models. The program was extended to 25 metros. In 2021, to gain market share in an overheating market, Zillow deliberately bid above its own model and bought 9,680 homes in Q3 2021 alone. When the market cooled, the algorithm - trained on rising dynamics - kept systematically overpaying: about 9,800 homes in inventory, roughly two thirds worth less than their purchase price. On November 2, 2021, Zillow announced the full shutdown of Zillow Offers, a $304M write-down in Q3, and a 25% cut to its workforce (about 2,000 jobs). It is the most publicly documented failure of predictive AI applied directly to a large company's P&L.",
+  "post_mortem": {
+    "ce_qui_s_est_passe": "Apr. 2018: launch, expansion to 25 metros. Feb. 2021: the Zestimate becomes a 'live' cash offer in some markets. Summer 2021: record purchases (9,680 homes in Q3) as price growth slows. Oct. 17-18, 2021: new acquisitions suspended (officially over renovation capacity). Nov. 2, 2021: full wind-down announced with Q3 results - a $304M write-down, $240-265M expected in Q4, a 25% workforce cut; the stock loses about 25% the next day. 2022: inventory liquidated, cumulative losses estimated above $500M.",
+    "raison_echec": "Official statement from CEO Rich Barton (Nov. 2, 2021): \"We've determined the unpredictability in forecasting home prices far exceeds what we anticipated.\" Analyses (Stanford GSB, press): forecasting error in a turning market, adverse selection (sellers mainly accept the overly generous offers on overvalued properties), and a management decision to bid above the model for volume - a failure that was organizational as much as algorithmic.",
+    "cout_estime": "$304M write-down in Q3 plus $240-265M expected in Q4 (total about $540-569M); about $30,000 average loss per home resold; about 2,000 layoffs; about $2.4B in market value erased in one session.",
+    "signaux_avant_coureurs": "The growing, public gap between the Zestimate and actual sale prices in hot markets. The documented decision to bid ABOVE the model: when you manually override your own algorithm to chase volume, the model no longer protects anything. The October 'pause' attributed to renovation capacity - a classic sign of a deeper problem. And a known structural asymmetry in iBuying: overly high offers are systematically accepted, fair ones refused.",
+    "lecons_avec_recul": "(1) A model that is accurate 'on average' can destroy value when the transaction is irreversible and adverse selection is systematic: the cost of error is asymmetric. (2) Never let a growth target short-circuit the model's outputs - governance matters more than R-squared. (3) Models trained on one market regime fail at a regime change: you need downturn stress tests and circuit breakers on balance-sheet exposure. (4) Backtest profitability per transaction, not prediction accuracy.",
+    "le_pattern_reste_il_valide": "Yes. The failure does not condemn predictive pricing: Opendoor, which stayed disciplined on standardized properties with explicit risk discounts, kept doing iBuying, and AVMs remain central to lending and insurance. What is condemned: applying an average prediction to irreversible, highly leveraged single bets while overriding the model for growth."
+  },
+  "resultats": [
+    { "metrique": "Q3 2021 inventory write-down, plus $240-265M in Q4" },
+    { "metrique": "Layoffs, about 2,000 jobs" },
+    { "metrique": "Official reason given by the CEO" },
+    { "metrique": "Average loss per home" }
+  ],
+  "niveau_preuve": {
+    "justification": "Audited financial results and official SEC filings (8-K and Q3 2021 shareholder letter) quantifying write-downs, layoffs, and reasons, corroborated by major financial press and an academic analysis (Stanford GSB)."
+  },
+  "statut_vivant": {
+    "note": "Program permanently closed at the end of 2021-2022. Kept as a reference: it is the best publicly documented failure of predictive AI."
+  },
+  "stack_technique": [
+    { "detail": "Proprietary automated valuation model (AVM) for properties, which in February 2021 became a live cash offer in some markets." },
+    { "detail": "Pricing and forecasting models that computed the purchase offer; trained on a rising market, they overpaid at the turn, worsened by the management decision to bid above the model." },
+    { "detail": "Online journey where the homeowner received a near-instant purchase offer computed by the models." }
+  ],
+  "transposable_ue": {
+    "note": "The lesson - do not apply an average prediction to irreversible, highly leveraged single bets - is universal. Predictive pricing is still widely used in the EU (credit, insurance) with explicit risk discounts."
+  }
+}

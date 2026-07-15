@@ -1,0 +1,111 @@
+{
+  "seo": {
+    "title": "JD.com: AI-hosted live commerce - broadcast cost cut tenfold (2024)",
+    "meta_description": "JD.com's JoyStreamer digital human hosts live shopping without a human: 50M yuan of sales in one session and broadcast cost cut 90%.",
+    "resume_citable": "In 2024, JD.com's AI avatar of its founder generated about 50 million yuan of sales and more than 20 million views in one hour, while the JoyStreamer digital human cuts a live broadcast's cost by 90% compared with a human host.",
+    "faq": [
+      {
+        "q": "What is JoyStreamer?",
+        "a": "It is JD.com's digital human model that hosts live shopping sessions in place of a human: it presents products, answers the chat, and handles the sale."
+      },
+      {
+        "q": "What result marked the launch?",
+        "a": "In April 2024, an avatar of founder Richard Liu hosted a live exceeding 20 million views in one hour and about 50 million yuan of sales."
+      }
+    ]
+  },
+  "pattern": "AI-generated live commerce host",
+  "etape_parcours": "consideration",
+  "objectif_business": "Run live shopping rooms 24/7 without deploying human hosts, and open live commerce to merchants who cannot afford a studio and a team.",
+  "description": "JoyStreamer is JD.com's digital human model that hosts live shopping rooms in place of a human host. The avatar presents products, answers live chat questions, and handles the sale end to end. The most visible demonstration dates to April 2024: an avatar of founder Richard Liu (Liu Qiangdong), named the Procurement and Sales Digital Human, held a livestream that exceeded 20 million views in the first hour and generated around 50 million yuan in sales. JD then made the tool free for merchants, which pushed adoption up. At the end of 2025, the group highlights more than 50 AI tools for merchants and a shift of JoyStreamer from a broadcast assistant toward a live-growth engine that plans, presents, hosts, and analyzes the session.",
+  "resultats": [
+    { "metrique": "Views on the founder avatar's livestream (first hour)" },
+    { "metrique": "Sales generated during the April 2024 sessions, about 6.9 million USD" },
+    { "metrique": "Drop in broadcast cost vs a human host" },
+    { "metrique": "Rise in order conversion rate during off-peak hours" },
+    { "metrique": "Share of frequently asked questions handled by the avatar" }
+  ],
+  "niveau_preuve": {
+    "justification": "Established press naming JD.com (China Daily HK, Global Times) and the brand's official blog, consistent sources on the workings and the figures. The conversion and cost values are figures communicated by JD through the press, not audited results, which keeps it at C. China Daily and Global Times are Chinese state media, to be read with that bias."
+  },
+  "stack_technique": [
+    { "detail": "JD.com's in-house digital human model: avatar, voice and video synthesis, hosting of the live commerce session" },
+    { "detail": "JD's in-house LLM powering the sales script and the live chat answers" },
+    { "detail": "livestream rooms of the JD app, connected to merchants' catalog, prices, and promotions" },
+    { "detail": "JD.com's internal R&D team that developed and maintains the digital human model" }
+  ],
+  "fonctionnement_operationnel": {
+    "cadence": "Real time, live sessions that can run continuously, including off-peak hours",
+    "opere_par": "Merchant team (setting up the catalog and script) supported by JD's AI team that maintains the JoyStreamer model",
+    "signal_pilote": "Live chat engagement and the conversion rate during the session. If the catalog and prices are not up to date, the avatar presents a wrong offer and the room loses its credibility.",
+    "etapes": [
+      {
+        "etape": "Session preparation",
+        "detail": "The merchant loads the products, prices, and sales script; the avatar and voice are configured.",
+        "acteur": "merchant"
+      },
+      {
+        "etape": "Broadcast",
+        "detail": "JoyStreamer presents the products live, runs the script, and highlights the promotions.",
+        "acteur": "AI"
+      },
+      {
+        "etape": "Interaction",
+        "detail": "The avatar reads the chat and answers buyers' frequently asked questions during the live.",
+        "acteur": "AI"
+      },
+      {
+        "etape": "Post-session analysis",
+        "detail": "The system reports views, conversion, and sales; the team adjusts the catalog, timing, and pitch.",
+        "acteur": "data team"
+      }
+    ]
+  },
+  "replication": {
+    "prerequis_data": [
+      "Structured product catalog with up-to-date prices and stock",
+      "Sales scripts by category",
+      "Voice and video corpus for the avatar (or off-the-shelf avatar)"
+    ],
+    "prerequis_orga": [
+      "Compliance rule on disclosing the synthetic nature of the avatar",
+      "Consent if using a real person's image",
+      "Handoff model to a human on sensitive cases"
+    ],
+    "stack_possible": [
+      "Digital human generator (avatar + voice synthesis)",
+      "LLM for the script and the live chat",
+      "Integration with the catalog and the live commerce engine"
+    ],
+    "premiere_etape": "Choose a high-volume category with a clean catalog, and script a pilot session before opening up traffic.",
+    "playbook": [
+      {
+        "action": "Choose a high-volume category, clean up the catalog and prices, script the sessions",
+        "livrable": "Reliable catalog + sales scripts per product"
+      },
+      {
+        "action": "Configure the digital human solution (avatar, voice) and lock the legal framework (image consent, disclosure of the synthetic nature)",
+        "livrable": "Avatar validated technically and legally"
+      },
+      {
+        "action": "Connect the LLM to the script and the product FAQ, rehearse internally",
+        "livrable": "Pilot session recorded and validated off traffic"
+      },
+      {
+        "action": "Launch the pilot during off-peak hours on real traffic, with human handoff on sensitive cases",
+        "livrable": "Conversion and chat engagement measured vs baseline"
+      },
+      {
+        "action": "Extend the hours then the categories, adjust scripts and promotions on session data",
+        "livrable": "Rooms running near-continuously + cost/conversion dashboard"
+      }
+    ],
+    "equipe": "1 live commerce lead + 1 integration dev + 1 lawyer (image rights, AI transparency)"
+  },
+  "statut_vivant": {
+    "note": "In October 2025, JD confirms that JoyStreamer has moved upmarket and is among the more than 50 AI tools offered to merchants during 11.11. Adoption rising after it became free for merchants."
+  },
+  "transposable_ue": {
+    "note": "The pattern (an AI-generated live commerce host) is transposable, but live shopping is far more mature in China than in Europe, which limits the effect at equal market. Two strong constraints on the EU side: the AI Act requires disclosing that a piece of content or an avatar is synthetic (transparency on deepfakes), and reusing a real person's image and voice requires their explicit consent and a GDPR basis."
+  }
+}

@@ -1,0 +1,108 @@
+{
+  "seo": {
+    "title": "Ray-Ban: AI-automated TikTok buying (Smart+) - +42% ROAS, -50% CPA (2025)",
+    "meta_description": "Ray-Ban switched its TikTok sales campaigns to Smart+ Catalog Ads: ROAS +42%, CPA -50%, and conversion rate +47% vs manual management.",
+    "resume_citable": "Ray-Ban ran its sales campaigns on TikTok via Smart+ Catalog Ads (AI-driven media buying) and achieved 42% higher ROAS, a 50% lower CPA, and a 47% higher conversion rate compared with manual management.",
+    "faq": [
+      {
+        "q": "What is TikTok Smart+ Catalog Ads?",
+        "a": "TikTok's automated format: the advertiser supplies its catalog and an objective, the AI manages targeting, bidding, placements, and creative selection, and dynamically serves the right product to each user."
+      },
+      {
+        "q": "Does the AI create Ray-Ban's advertising?",
+        "a": "No. In this case, the AI optimizes and automates media buying (bidding, targeting, budget). It is optimization, not creative generation."
+      }
+    ]
+  },
+  "pattern": "fully automated paid campaign (bidding, targeting, placement) connected to the product catalog",
+  "etape_parcours": "purchase",
+  "stack_technique": [
+    { "detail": "TikTok automated campaign: targeting, bidding, placements, and creative selection managed by AI from the catalog." },
+    { "detail": "TikTok's AI suite cited in the case's stack." },
+    { "detail": "Product feed (eyewear) connected to TikTok to dynamically serve the right item to each user." },
+    { "detail": "Conversion signal (purchase) reported to the platform; without it, optimization runs blind." }
+  ],
+  "objectif_business": "Sell eyewear directly during the US summer peak without multiplying manual campaign management, by letting TikTok automation seek buyers and serve catalog products.",
+  "description": "Ray-Ban ran its sales campaigns on TikTok via Smart+ Catalog Ads, TikTok's automated format. The advertiser supplies the product catalog and a performance objective; the platform's AI manages targeting, bidding, placements, and creative selection, then dynamically serves the right product to each user. Ray-Ban activated this approach in the US market during the summer months, a period of high demand for sunglasses. Compared with manual management, the switch to automation produced a 50 percent lower cost per acquisition, a 47 percent higher conversion rate, and 42 percent higher ROAS. This is a case of media-buying optimization and automation, not creative generation: the AI arbitrates budget and targeting, it does not build the ad.",
+  "points_cles": [
+    "Fully AI-automated sales campaign connected to the product catalog.",
+    "TikTok Smart+ Catalog Ads tool, with the Symphony suite and the pixel.",
+    "ROAS up 42%, CPA down 50%, conversion up 47%.",
+    "Evidence B, status confirmed on a standard TikTok product."
+  ],
+  "resultats": [
+    { "metrique": "ROAS vs manual management" },
+    { "metrique": "Cost per acquisition (CPA)" },
+    { "metrique": "Conversion rate" }
+  ],
+  "niveau_preuve": {
+    "justification": "Quantified TikTok platform case study citing Ray-Ban and its Performance Marketing Manager by name; interested official source, hence B. The Smart+ product is confirmed by TikTok's launch announcement."
+  },
+  "fonctionnement_operationnel": {
+    "cadence": "Continuous, in real time: bidding and targeting are recomputed on every impression over the whole campaign duration.",
+    "opere_par": "The brand's acquisition / performance marketing team, which feeds the catalog and sets the objective; day-to-day arbitration is delegated to TikTok.",
+    "signal_pilote": "The conversion event reported to TikTok (purchase via pixel and CAPI). If the purchase signal is missing or poorly attributed, the AI optimizes blind and performance drops.",
+    "etapes": [
+      {
+        "etape": "Catalog connection",
+        "detail": "The product feed (eyewear) is connected to TikTok to serve dynamic ads.",
+        "acteur": "e-commerce / marketing team"
+      },
+      {
+        "etape": "Objective definition",
+        "detail": "The brand sets a conversion or ROAS objective and a budget; the rest is left to Smart+.",
+        "acteur": "acquisition team"
+      },
+      {
+        "etape": "Automatic optimization",
+        "detail": "The AI chooses audiences, placements, bids, and creatives, and serves the product suited to each user.",
+        "acteur": "AI (TikTok Smart+)"
+      },
+      {
+        "etape": "Reading and budget arbitration",
+        "detail": "The team tracks ROAS and CPA, adjusts the budget and catalog, no longer micro-manages the bids.",
+        "acteur": "acquisition team"
+      }
+    ]
+  },
+  "replication": {
+    "prerequis_data": [
+      "structured product catalog",
+      "TikTok pixel + CAPI with a reliable purchase event"
+    ],
+    "prerequis_orga": [
+      "dedicated TikTok media budget",
+      "acceptance of ceding fine-grained control to automation"
+    ],
+    "stack_possible": [
+      "TikTok Smart+ Catalog Ads",
+      "e-commerce catalog connector"
+    ],
+    "premiere_etape": "Connect the product catalog and the purchase event, then launch a Smart+ Catalog Ads campaign against a ROAS objective.",
+    "playbook": [
+      {
+        "action": "Connect the product catalog and the tracking (pixel + Events API) with a reliable purchase event.",
+        "livrable": "Validated product feed and a purchase that reports into TikTok Ads."
+      },
+      {
+        "action": "Launch a Smart+ Catalog Ads campaign with a ROAS or conversion objective and a test budget.",
+        "livrable": "Automated campaign in delivery."
+      },
+      {
+        "action": "Let the learning phase run, track ROAS and CPA without micro-managing the bids.",
+        "livrable": "Stabilized read vs a reference manual campaign."
+      },
+      {
+        "action": "Arbitrate: scale the budget, adjust the catalog or the objective based on performance.",
+        "livrable": "Budget decision and documented management rules."
+      }
+    ],
+    "equipe": "1 media buyer + 1 e-commerce integrator for the catalog feed and the Events API."
+  },
+  "statut_vivant": {
+    "note": "Smart+ is a standard product in the TikTok Ads catalog, enriched in 2025 (Advertising Week New York). The activation remains available and documented."
+  },
+  "transposable_ue": {
+    "note": "Smart+ Catalog Ads is available in Europe. Targeting relies on TikTok signals and the product catalog, with no first-party data exported; limited GDPR exposure. Conversion tracking on the EU side requires consent mode and the TikTok CAPI properly configured."
+  }
+}

@@ -1,0 +1,114 @@
+{
+  "seo": {
+    "title": "Meta: AI feed recommendation - +5% time on Facebook, +6% on Instagram (2025)",
+    "meta_description": "Meta's new recommendation models added +5% time spent on Facebook and +6% on Instagram in Q2 2025, according to the earnings call.",
+    "resume_citable": "Meta's AI recommendation models added +5% time spent on Facebook and +6% on Instagram in Q2 2025, then +7% views of organic feed and video posts in Q4 2025.",
+    "faq": [
+      {
+        "q": "How much did AI add to time spent on Meta?",
+        "a": "In Q2 2025, +5% on Facebook and +6% on Instagram, attributed by Zuckerberg to improvements in the recommendation systems."
+      },
+      {
+        "q": "Are these gains recent?",
+        "a": "Yes, reconfirmed through 2025: Meta still cites +7% views of organic feed and video posts on Facebook in Q4 2025."
+      }
+    ]
+  },
+  "pattern": "AI feed and video recommendation (large-scale models / LLMs)",
+  "etape_parcours": "loyalty",
+  "objectif_business": "Increase time spent and engagement on Facebook, Instagram, and Threads by showing each user more relevant content, which directly feeds ad inventory and revenue.",
+  "description": "Meta rearchitected its ranking and recommendation systems with larger-scale models, including LLM-style approaches applied to feed and video ranking. The goal is to better predict what each user will find interesting. Gains are measured in points of time spent and views, and reported quarter by quarter in earnings.",
+  "points_cles": [
+    "Rearchitecture of feed and video ranking and recommendation systems with AI.",
+    "Proprietary large-scale ranking models, with LLM-style approaches.",
+    "+5% time spent on Facebook and +6% on Instagram in Q2 2025.",
+    "Evidence A, confirmed status, gains reconfirmed quarter after quarter."
+  ],
+  "resultats": [
+    { "metrique": "Increase in time spent on Facebook (Q2 2025)" },
+    { "metrique": "Increase in time spent on Instagram (Q2 2025)" },
+    { "metrique": "Increase in views of organic feed and video posts, Facebook (Q4 2025)" }
+  ],
+  "niveau_preuve": {
+    "justification": "Figures stated by Mark Zuckerberg on the Q2 2025 earnings call (reported by the press) and repeated and expanded in an official Meta communication for Q4 2025. Results from a public company, explicitly attributed to improvements in the recommendation systems."
+  },
+  "stack_technique": [
+    { "detail": "Large-scale deep learning recommendation that ranks candidate feed and Reels content; Meta's proprietary ML, not sold commercially." },
+    { "detail": "LLM-style approaches used for feed and video ranking according to Meta; the exact model is not publicly named." },
+    { "detail": "Real-time serving of scoring at each feed load and training on interaction logs." }
+  ],
+  "fonctionnement_operationnel": {
+    "cadence": "Real-time scoring at each feed load; model iterations and gains measured quarter by quarter.",
+    "opere_par": "Meta's Ranking / Recommendation teams, backed by internal ML infrastructure.",
+    "signal_pilote": "Time spent and interactions per user, which serve as the optimization objective and the measure. Without this continuous signal, the ranking models can neither train nor prove their gain.",
+    "etapes": [
+      {
+        "etape": "Interaction collection",
+        "detail": "Views, time spent, likes, shares, and comments are logged per user and per content item.",
+        "acteur": "site_app / data team"
+      },
+      {
+        "etape": "Feed ranking",
+        "detail": "The large-scale models rank candidate content to maximize predicted relevance.",
+        "acteur": "AI"
+      },
+      {
+        "etape": "Personalized rendering",
+        "detail": "Each user sees a feed and Reels ordered for them on Facebook, Instagram, or Threads.",
+        "acteur": "site_app"
+      },
+      {
+        "etape": "Measurement and iteration",
+        "detail": "Gains in time spent and views are measured and reported; models are iterated quarterly.",
+        "acteur": "data team"
+      }
+    ]
+  },
+  "replication": {
+    "playbook": [
+      {
+        "action": "Establish a reliable measure of time spent and views per user, and set up an A/B testing framework on the feed.",
+        "livrable": "Validated engagement dashboard and experimentation protocol."
+      },
+      {
+        "action": "Build the interaction logging pipeline and a ranking baseline measured in production.",
+        "livrable": "Documented baseline with its reference metrics."
+      },
+      {
+        "action": "Train heavier recommendation models on the interactions and evaluate them offline against the baseline.",
+        "livrable": "Candidate model beating the baseline in offline evaluation."
+      },
+      {
+        "action": "Run the A/B test in production on a fraction of traffic and measure time spent and views.",
+        "livrable": "Experiment readout with a significant gain or a stop decision."
+      },
+      {
+        "action": "Generalize the winning model and set up quarterly iterations.",
+        "livrable": "Time-spent and view gains tracked and reported quarter by quarter."
+      }
+    ],
+    "equipe": "3-5 ranking ML engineers + 1 data engineer + 1 PM, backed by an infrastructure team for real-time serving.",
+    "prerequis_data": [
+      "large-scale per-user interaction logs",
+      "indexed content catalog",
+      "explicit and implicit engagement signals"
+    ],
+    "prerequis_orga": [
+      "a ranking ML team",
+      "massive real-time serving infrastructure",
+      "quarterly experimentation capacity"
+    ],
+    "stack_possible": [
+      "custom/in-house",
+      "large-scale recommendation models",
+      "LLM-style architectures for ranking"
+    ],
+    "premiere_etape": "Establish a reliable measure of time spent and an A/B testing framework before investing in heavier ranking models."
+  },
+  "statut_vivant": {
+    "note": "Gains reconfirmed quarter after quarter in 2025; recommendation is central to the Meta product."
+  },
+  "transposable_ue": {
+    "note": "Mass-market content recommendation systems. Profiling subject to GDPR; transparency obligations and a non-personalized feed option are imposed by the DSA on very large platforms. Already operating in the EU."
+  }
+}

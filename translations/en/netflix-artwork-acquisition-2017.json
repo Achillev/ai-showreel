@@ -1,0 +1,115 @@
+{
+  "seo": {
+    "title": "Netflix: personalized artwork via contextual bandits - 20M requests/s (2017)",
+    "meta_description": "Netflix personalizes each title's artwork per member with contextual bandits; over 100M accounts, 20M requests/s, significant A/B gain.",
+    "resume_citable": "Netflix chooses each title's artwork member by member with contextual bandits, a layer distinct from title ranking that serves over 100 million accounts at a peak of 20 million requests per second, with a significant A/B gain that is stronger for unfamiliar titles.",
+    "faq": [
+      {
+        "q": "How is this distinct from Netflix recommendation?",
+        "a": "Recommendation decides which title to show; this layer decides which image to display for that title, member by member, sitting on top of the ranking."
+      },
+      {
+        "q": "What is the scale of the setup?",
+        "a": "Over 100 million personalized accounts, with a peak of 20 million requests per second for image rendering, and an A/B gain described as significant."
+      }
+    ]
+  },
+  "pattern": "personalization of the artwork via contextual bandits",
+  "etape_parcours": "consideration",
+  "objectif_business": "Convert attention into viewing by showing each member the image most likely to trigger the click at the moment of consideration, and help them discover unknown titles.",
+  "description": "This component chooses which image to show for a given title, member by member. It is distinct from the recommendation engine that decides which title to offer: it sits on top of that ranking and personalizes the visual representation of the already-selected title. Netflix describes a contextual bandit problem: among one to several dozen candidate images per title, the model predicts the one that maximizes the probability of a play for that specific member, then keeps the highest-scoring image. The system serves over 100 million accounts, with a peak of 20 million requests per second for rendering the personalized images. A/B tests showed a significant gain over a non-personalized approach, the effect being stronger for members who do not yet know the title. Documented in 2017, the setup is still in production: established press confirms in late 2025 that Netflix's promotion technology remains driven by machine learning, and the research team published work in 2025 on artwork personalization via LLM post-training.",
+  "points_cles": [
+    "Personalization of each title's artwork member by member.",
+    "Proprietary contextual bandits serving over 100 million accounts, peak of 20 million requests per second.",
+    "Significant A/B gain vs non-personalized, stronger for unfamiliar titles.",
+    "Evidence B, confirmed status."
+  ],
+  "resultats": [
+    { "metrique": "Rendering peak, across over 100 million personalized accounts" },
+    { "metrique": "In A/B vs non-personalized, stronger on unfamiliar titles" },
+    { "metrique": "Continuity in production" }
+  ],
+  "niveau_preuve": {
+    "justification": "Primary Netflix engineering blog documenting the system, its scale, and an A/B gain, plus established press and a 2025 research publication confirming continuity in production. The gain is described as significant with no public percentage, hence B."
+  },
+  "stack_technique": [
+    { "detail": "Proprietary ML that chooses, among a title's candidate images, the one with the highest play probability for each member." },
+    { "detail": "Prediction of the play probability per member and per image, learned from first-party engagement signals." },
+    { "detail": "Rendering of personalized images at scale: over 100 million accounts, peak of 20 million requests per second." },
+    { "detail": "Work published by Netflix Research in 2025 evolving artwork personalization via LLM post-training; exact model not named." }
+  ],
+  "fonctionnement_operationnel": {
+    "cadence": "Real-time at each display of the home page, with periodic retraining of the engagement prediction models.",
+    "opere_par": "Netflix's machine learning and personalization teams.",
+    "signal_pilote": "The predicted play probability per member and per title, learned from first-party engagement signals. Without a bank of candidate images per title or an engagement signal, the system has nothing to arbitrate.",
+    "etapes": [
+      {
+        "etape": "Title recommendation",
+        "detail": "The recommendation engine decides which titles to show the member (an upstream, distinct step).",
+        "acteur": "AI (recommendation)"
+      },
+      {
+        "etape": "Image selection",
+        "detail": "Among the title's candidate images, the contextual bandit predicts the one with the highest play probability for that member.",
+        "acteur": "AI (artwork personalization)"
+      },
+      {
+        "etape": "Personalized rendering",
+        "detail": "The selected image is rendered in the interface, at a scale of tens of millions of requests per second.",
+        "acteur": "AI / infrastructure"
+      },
+      {
+        "etape": "Continuous learning",
+        "detail": "Observed clicks and plays refine the predictions through A/B tests and exploration.",
+        "acteur": "ML team"
+      }
+    ]
+  },
+  "replication": {
+    "playbook": [
+      {
+        "action": "Produce several candidate visuals per content item on a high-traffic sub-catalog.",
+        "livrable": "Multi-variant image bank ready to serve."
+      },
+      {
+        "action": "Instrument clicks and plays per displayed visual, then build a first engagement prediction model.",
+        "livrable": "Clean dataset and a model evaluated offline."
+      },
+      {
+        "action": "Launch a simple bandit (epsilon-greedy or Thompson sampling) on a high-traffic surface, on a fraction of traffic.",
+        "livrable": "Bandit in production on a limited scope."
+      },
+      {
+        "action": "Measure incremental clicks and plays in A/B against the single image.",
+        "livrable": "Readout of the incremental gain, or a stop decision."
+      },
+      {
+        "action": "Industrialize: continuous exploration, serving scale-up, drift monitoring.",
+        "livrable": "System in production with a dashboard and alerting."
+      }
+    ],
+    "equipe": "2 ML engineers + 1 data engineer + 1 PM, with a creative pipeline able to produce several visuals per content item.",
+    "prerequis_data": [
+      "several candidate images per content item",
+      "first-party engagement signals (click, play)",
+      "stable member identifier"
+    ],
+    "prerequis_orga": [
+      "an ML team for contextual bandits",
+      "an asset production pipeline per title",
+      "high-load rendering infrastructure"
+    ],
+    "stack_possible": [
+      "contextual bandits framework",
+      "engagement prediction model",
+      "A/B testing and exploration pipeline"
+    ],
+    "premiere_etape": "Produce several visuals per content item and launch a simple bandit test on a high-traffic surface, measuring the incremental click."
+  },
+  "statut_vivant": {
+    "note": "Setup documented in 2017 and still active: the press confirms in October 2025 that promotion technology remains driven by ML, and Netflix Research published in 2025 an evolution of artwork personalization via LLM."
+  },
+  "transposable_ue": {
+    "note": "Artwork personalization relies on first-party engagement data on Netflix's own platform. Little specific GDPR friction, as the data stays internal to the service. Transparency about the personalized nature of the interface remains good practice."
+  }
+}

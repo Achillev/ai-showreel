@@ -1,0 +1,115 @@
+{
+  "seo": {
+    "title": "Trip.com: TripGenie genAI assistant - AI-assisted order volume +400 percent (2026)",
+    "meta_description": "TripGenie, Trip.com's conversational assistant, pushes AI-assisted order volume up 400 percent in one year and cuts hotel-comparison clicks by 80 percent.",
+    "resume_citable": "In 2026, Trip.com reports that the volume of orders assisted by its conversational agent TripGenie grew about 400 percent in one year, with nearly 60 percent of interactions booking-related.",
+    "faq": [
+      {
+        "q": "What is TripGenie?",
+        "a": "Trip.com's conversational assistant, integrated into the app and the site, which helps plan, compare hotels, and book within the chat thread."
+      },
+      {
+        "q": "What results does Trip.com report?",
+        "a": "AI-assisted order volume up about 400 percent over one year, nearly 60 percent of interactions booking-related, and 80 percent fewer clicks on the hotel comparator."
+      }
+    ]
+  },
+  "pattern": "genAI conversational assistant for planning and booking",
+  "etape_parcours": "consideration",
+  "objectif_business": "Turn the conversational assistant into a booking channel in its own right, taking travelers from the open question (where to go, which hotel) through to payment without leaving the chat thread.",
+  "description": "TripGenie is the conversational assistant integrated into the Trip.com app and site. The traveler asks a question in natural language, compares hotels, checks baggage or lounge rules, translates a menu, and can book within the conversation. It also accepts image uploads to start a search. In March 2026, Trip.com Group published a reading of three years of usage: interactions lean toward booking (nearly 60 percent), the hotel comparator shortens the journey, and usage differs by market, real-time decisions in Asia's short-haul markets, planning further ahead in Europe and North America.",
+  "resultats": [
+    { "metrique": "Volume of orders assisted by TripGenie on Trip.com, year over year" },
+    { "metrique": "Use of core tools (hotel comparator, menu, translation), year over year" },
+    { "metrique": "Share of interactions that are booking-related" },
+    { "metrique": "Clicks needed for the hotel comparator" },
+    { "metrique": "7-day AI revisit rate (hotel comparator)" }
+  ],
+  "niveau_preuve": {
+    "justification": "Official Trip.com Group release quantified on three years of usage, echoed consistently by the established travel press (Travel Daily News, Travolution)."
+  },
+  "fonctionnement_operationnel": {
+    "cadence": "Real time on each conversation, with periodic re-analysis of usage logs to adjust the journeys.",
+    "opere_par": "Trip.com Group's AI product team, supported by the data teams and the market leads.",
+    "signal_pilote": "The intent expressed in the conversation, crossed with the live hotel/flight inventory. If the inventory or prices do not surface in real time, the answer loses its transactional value and the assistant becomes a plain answer engine again.",
+    "etapes": [
+      {
+        "etape": "Understanding the request",
+        "detail": "The traveler writes or uploads an image; the assistant extracts the intent (destination, dates, baggage constraint, hotel comparison).",
+        "acteur": "AI"
+      },
+      {
+        "etape": "Querying the inventory",
+        "detail": "The assistant calls the internal hotel, flight, and attraction search engines to retrieve live availability and prices.",
+        "acteur": "AI / data team"
+      },
+      {
+        "etape": "Presentation and comparison",
+        "detail": "It presents compared options and reduces the number of clicks to the choice (hotel comparator).",
+        "acteur": "AI"
+      },
+      {
+        "etape": "Booking in the thread",
+        "detail": "The traveler confirms and pays without leaving the conversation; the order is recorded as an AI-assisted order.",
+        "acteur": "customer"
+      },
+      {
+        "etape": "Usage analysis",
+        "detail": "The teams read the logs by market to spot the uses (real-time decision vs upstream planning) and adjust the features.",
+        "acteur": "data team"
+      }
+    ]
+  },
+  "replication": {
+    "prerequis_data": [
+      "product inventory accessible by API in real time",
+      "conversation logs",
+      "search history per user"
+    ],
+    "prerequis_orga": [
+      "a dedicated AI product team",
+      "personalization governance",
+      "a unit to read usage by market"
+    ],
+    "stack_possible": [
+      "a commercial or open-weights LLM",
+      "a RAG layer over the inventory",
+      "an existing recommendation engine"
+    ],
+    "premiere_etape": "Expose the inventory and prices through a clean API, then connect an assistant on a narrow scope (hotel comparison) before widening.",
+    "playbook": [
+      {
+        "action": "Expose the inventory and prices through a clean, real-time API, a prerequisite for any transactional assistant.",
+        "livrable": "A documented, reliable inventory API."
+      },
+      {
+        "action": "Connect an assistant on a narrow scope (hotel comparison) rather than on the whole catalog.",
+        "livrable": "A transactional conversational prototype on the pilot scope."
+      },
+      {
+        "action": "Integrate booking and payment into the conversation thread, without redirection.",
+        "livrable": "A complete booking flow inside the chat."
+      },
+      {
+        "action": "Instrument usage: AI-assisted orders, 7-day revisit, clicks saved.",
+        "livrable": "A usage and conversion dashboard."
+      },
+      {
+        "action": "Read the logs by market and extend the features (image upload, translation) where usage justifies it.",
+        "livrable": "A functional roadmap by market."
+      }
+    ],
+    "equipe": "1 AI product PM + 3-5 engineers (LLM/RAG, inventory backend) + 1 data analyst to read usage by market."
+  },
+  "statut_vivant": {
+    "note": "A three-year usage study published in March 2026; the assistant remains available on the app and the site."
+  },
+  "transposable_ue": {
+    "note": "The pattern (a conversational assistant connected to inventory and CRM) is transposable. In the EU, using session and history data for personalization requires a GDPR legal basis and clear information; user image uploads add a minimization and retention constraint."
+  },
+  "stack_technique": [
+    { "detail": "In-house conversational assistant integrated into the app and site: planning, hotel comparison, baggage/lounge rules, translation, booking, and payment in the thread." },
+    { "detail": "Generative component with vision (image upload) and translation; Trip.com does not publicly name the model(s) used." },
+    { "detail": "Inventory and prices queried live by the assistant, a condition of its transactional value." }
+  ]
+}

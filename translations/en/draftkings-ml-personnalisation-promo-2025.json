@@ -1,0 +1,110 @@
+{
+  "seo": {
+    "title": "DraftKings: ML personalization and promo optimization - revenue retention per user >100% (2025)",
+    "meta_description": "DraftKings personalizes product, content, and promotions with machine learning; revenue retention per user exceeds 100% and the parlay mix rises by 500 basis points.",
+    "resume_citable": "DraftKings applies machine learning to product personalization, bet recommendation, and promotional optimization: on the Q4 2025 earnings call, management reported revenue retention per user above 100 percent after the initial cohort churn, a parlay handle mix up by nearly 500 basis points, and sportsbook net margin from about 6.5 to over 9 percent.",
+    "faq": [
+      {
+        "q": "How does DraftKings use machine learning in marketing?",
+        "a": "To personalize the interface based on play history, recommend bets and markets, and optimize promotion targeting to improve efficiency rather than volume."
+      },
+      {
+        "q": "What quantified result is documented?",
+        "a": "Revenue retention per user above 100 percent after initial churn, a parlay mix up by nearly 500 basis points, and sportsbook margin from about 6.5 to over 9 percent."
+      }
+    ]
+  },
+  "pattern": "ML personalization and optimization of promotion and pricing across player cohorts",
+  "etape_parcours": "post-purchase",
+  "objectif_business": "Improve the economics of player cohorts by personalizing product, content, and promotions with machine learning, to lift revenue retention per user and sportsbook margin.",
+  "description": "DraftKings described on its Q4 2025 earnings call how AI and machine learning are spreading through product, personalization, and trading. The promotional engine is starting to be optimized by AI to target offers, the super-app interface personalizes based on play history, and content models recommend bets and markets. On the trading side, pricing and risk models operate on live betting. The company ties these pieces to cohort economics that improve over time: revenue retention per user exceeds 100 percent after the initial cohort churn period, and cohorts from older states show both strong retention and higher monetization through a higher parlay mix and more efficient promo. In Q4, the parlay handle mix rose by nearly 500 basis points, contributing to sportsbook margin expansion.",
+  "points_cles": ["ML personalization of the product, of recommendations, and optimization of the promotional engine.", "In-house models for personalization, promo, and live-betting pricing.", "Revenue retention per user above 100%, sportsbook margin from ~6.5% to over 9%.", "Evidence A, confirmed status."],
+  "resultats": [
+    { "metrique": "Revenue retention per user (after initial cohort churn)" },
+    { "metrique": "Rise in the parlay handle mix in Q4 2025, in basis points" },
+    { "metrique": "Rise in sportsbook net margin" }
+  ],
+  "niveau_preuve": {
+    "justification": "Figures stated by management (CEO Jason Robins, CFO) on DraftKings's Q4 2025 earnings call (February 2026), hence level A. The established press transcript corroborates the remarks and the attribution of ML personalization to improved cohort economics."
+  },
+  "stack_technique": [
+    { "detail": "Personalizes the super-app interface based on play history and recommends content, bets, and markets." },
+    { "detail": "Targets offers to maximize promo efficiency rather than volume; early in its rollout according to management." },
+    { "detail": "Adjust odds and risk coverage in real time on live betting." },
+    { "detail": "Single channel where personalization, recommendations, and promotions are delivered to players." }
+  ],
+  "fonctionnement_operationnel": {
+    "cadence": "Continuous: real-time pricing and risk on live betting, session-level interface personalization, periodic retraining of the cohort and promo models.",
+    "opere_par": "DraftKings's data science, trading, and CRM teams.",
+    "signal_pilote": "Per-user play history and cohort performance. Without clean behavioral data and clean attribution, promo personalization drifts into over-promotion or irrelevant offers.",
+    "etapes": [
+      {
+        "etape": "Collecting play behavior",
+        "detail": "History of stakes, markets played, and super-app usage per user and per cohort.",
+        "acteur": "data team / AI"
+      },
+      {
+        "etape": "Interface personalization",
+        "detail": "The super-app UI reorganizes based on play history for cross-sell.",
+        "acteur": "AI"
+      },
+      {
+        "etape": "Promo optimization",
+        "detail": "The promotional engine targets offers to maximize efficiency rather than volume.",
+        "acteur": "AI (promo engine)"
+      },
+      {
+        "etape": "Live pricing and risk",
+        "detail": "Models adjust odds and risk coverage on live betting.",
+        "acteur": "AI (trading)"
+      }
+    ]
+  },
+  "replication": {
+    "prerequis_data": [
+      "transaction and behavior history per user",
+      "attribution by acquisition cohort",
+      "a catalog of markets or products for recommendation"
+    ],
+    "prerequis_orga": [
+      "a data science team to maintain the models",
+      "responsible gambling compliance and a local regulatory framework",
+      "governance of profiling under the AI Act in the EU"
+    ],
+    "stack_possible": [
+      "recommendation and personalization models",
+      "a promotional optimization engine",
+      "real-time pricing / risk models"
+    ],
+    "premiere_etape": "Instrument per-user behavior and cohort attribution, then test an optimized promo engine on a segment before generalizing.",
+    "playbook": [
+      {
+        "action": "Instrument per-user behavior and attribution by acquisition cohort.",
+        "livrable": "A reliable behavior and cohort data foundation"
+      },
+      {
+        "action": "Build a first personalization or recommendation model and test it on a segment.",
+        "livrable": "A model in test with an engagement read by cohort"
+      },
+      {
+        "action": "A/B test the optimized promo engine against the standard promo on a segment.",
+        "livrable": "A read on promo efficiency (cost against incremental revenue)"
+      },
+      {
+        "action": "Generalize the winning pieces and set responsible gambling and profiling governance.",
+        "livrable": "A broader rollout with a documented compliance framework"
+      },
+      {
+        "action": "Extend to real-time pricing if the streaming infrastructure allows.",
+        "livrable": "Pricing models in pilot on live betting"
+      }
+    ],
+    "equipe": "3-5 data scientists / ML engineers + 1 PM + a CRM team + responsible gambling compliance."
+  },
+  "statut_vivant": {
+    "note": "The rollout of AI in personalization and promo optimization is under way and cited as a growth lever on the latest earnings call. The AI promo engine is early in its rollout according to management."
+  },
+  "transposable_ue": {
+    "note": "High regulatory risk. Sports betting in the EU falls under national licensing (for example the ANJ in France) rather than the US model of state-by-state opening. ML offer personalization and promotional optimization run into responsible gambling rules and gambling marketing restrictions, reinforced by the AI Act on profiling. The pattern (ML on cohorts, pricing, promo) is transferable to an EU-licensed operator, but the intensity of profiling and promo is set by the local framework."
+  }
+}

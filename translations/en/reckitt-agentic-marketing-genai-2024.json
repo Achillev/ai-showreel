@@ -1,0 +1,112 @@
+{
+  "seo": {
+    "title": "Reckitt: genAI marketing agents - concept -60%, media analysis -90% (2024)",
+    "meta_description": "Reckitt deployed genAI marketing agents (with BCG) to more than 500 marketers across 4 markets: concept -60%, localization -30%, post-campaign analysis -90%.",
+    "resume_citable": "Reckitt deployed with BCG a suite of genAI marketing agents to more than 500 marketers across four markets, claiming up to 60% less time on concept, about 30% on ad localization, and up to 90% on post-campaign media analysis.",
+    "faq": [
+      {
+        "q": "What gains does Reckitt claim with genAI marketing?",
+        "a": "Up to 60% less time on concept development, about 30% on ad adaptation and localization, and up to 90% on post-campaign media analysis with quality doubled."
+      },
+      {
+        "q": "At what scale did Reckitt deploy these tools?",
+        "a": "To more than 500 marketers across four markets, with an announced doubling, after a four-month pilot presented at Cannes Lions in June 2024."
+      }
+    ]
+  },
+  "pattern": "genAI marketing agents across the concept-adaptation-analysis chain",
+  "etape_parcours": "consideration",
+  "stack_technique": [
+    { "detail": "Custom GPTs trained on Reckitt data for concept, ad adaptation, and post-campaign analysis; the exact hosting infrastructure is not public." },
+    { "detail": "Suite of marketing-focused genAI solutions, co-built with BCG, including multimodal tools and agents." },
+    { "detail": "Co-building of the platform and the genAI marketing solutions." },
+    { "detail": "Industrialization and deployment of agentic marketing AI at scale (more than 500 marketers, four markets)." }
+  ],
+  "objectif_business": "Reduce the time spent on repetitive marketing tasks (concept, ad adaptation by market, post-campaign analysis) while keeping or improving quality, and extend the use to several hundred marketers across several markets.",
+  "description": "Reckitt built with BCG a suite of marketing-focused genAI solutions rather than scattering them across isolated pilots. The tools rely on custom GPTs trained on Reckitt data and cover three chained tasks. Product concept generation, where Reckitt reports up to 60 percent less time with improved quality. Ad adaptation and localization, with about 30 percent less time. Post-campaign media analysis, where time spent drops up to 90 percent with quality doubled. These results were first presented by CMO Fabrice Beaulieu at the Cannes Lions festival in June 2024, on a four-month pilot covering brands such as Gaviscon and Finish. Reckitt then deployed a suite of marketing agents to more than 500 marketers across four markets, with an announced doubling, working on industrialization with EPAM. The claimed approach targets tasks that represented 30 to 40 percent of the teams' time.",
+  "points_cles": [
+    "Suite of genAI marketing agents (concept, adaptation, analysis) co-built with BCG.",
+    "Custom GPTs trained on Reckitt data, industrialization with EPAM.",
+    "Concept -60%, ad localization -30%, post-campaign analysis -90% with quality doubled.",
+    "Deployed to more than 500 marketers across 4 markets, evidence B, status confirmed."
+  ],
+  "resultats": [
+    { "metrique": "Concept development time" },
+    { "metrique": "Ad adaptation and localization time" },
+    { "metrique": "Post-campaign media analysis time, quality doubled" },
+    { "metrique": "Deployment across 4 markets, doubling announced" }
+  ],
+  "niveau_preuve": {
+    "justification": "Figures published by Reckitt (official release and the CMO's presentation at Cannes Lions), corroborated by BCG, co-builder of the platform, and by specialist press (Digiday, EPAM). No isolated figure in financial results, hence B."
+  },
+  "fonctionnement_operationnel": {
+    "cadence": "Continuously, on everyday marketing tasks (concept, adaptation by market, analysis after each campaign).",
+    "opere_par": "Reckitt's marketers themselves (more than 500 across four markets), on a genAI platform built with BCG and industrialized with EPAM.",
+    "signal_pilote": "The quality and freshness of the custom GPTs trained on Reckitt data (brand, campaign history). If the data corpus drifts, localized adaptation and post-campaign analysis lose relevance.",
+    "etapes": [
+      {
+        "etape": "Concept generation",
+        "detail": "The marketer produces product concepts via a genAI interface, up to 60 percent faster.",
+        "acteur": "marketing / AI"
+      },
+      {
+        "etape": "Adaptation and localization",
+        "detail": "Ad variants and localization by market via multimodal tools, about 30 percent faster.",
+        "acteur": "marketing / AI"
+      },
+      {
+        "etape": "Post-campaign analysis",
+        "detail": "Automatic synthesis of media performance after a campaign, up to 90 percent less time.",
+        "acteur": "AI / data team"
+      },
+      {
+        "etape": "Scaling up",
+        "detail": "Rollout of the agent suite to more than 500 marketers across four markets, with an announced extension.",
+        "acteur": "marketing / EPAM"
+      }
+    ]
+  },
+  "replication": {
+    "prerequis_data": [
+      "usable brand corpus and campaign history",
+      "creative assets for adaptation and localization",
+      "structured post-campaign media data"
+    ],
+    "prerequis_orga": [
+      "focus on one domain (marketing) rather than scattered pilots",
+      "change management with the marketers",
+      "quality governance of the custom GPTs"
+    ],
+    "stack_possible": [
+      "custom GPTs trained on internal data",
+      "multimodal genAI tools for adaptation",
+      "integrator for industrialization (BCG, EPAM type)"
+    ],
+    "premiere_etape": "Choose a chain of repetitive marketing tasks (ad adaptation by market) and measure time before / after.",
+    "playbook": [
+      {
+        "action": "Choose a chain of repetitive tasks (ad adaptation and localization by market) and measure the reference time and quality.",
+        "livrable": "Time / quality baseline per task."
+      },
+      {
+        "action": "Build the custom GPTs on the brand corpus and campaign history, with quality governance guardrails.",
+        "livrable": "GenAI tools operable by marketers on a pilot scope."
+      },
+      {
+        "action": "Run the pilot with a group of marketers on 2-3 brands, measuring before / after.",
+        "livrable": "Quantified measurement of time gains and perceived quality."
+      },
+      {
+        "action": "Extend by market with training and change management, concentrating the effort on the marketing domain rather than scattered pilots.",
+        "livrable": "Rollout to a broader population with quality governance in place."
+      }
+    ],
+    "equipe": "1 CMO sponsor + 1 AI PM + 2-3 lead marketers + integrator (BCG / EPAM type) + IT for data security."
+  },
+  "statut_vivant": {
+    "note": "Results presented at Cannes Lions in June 2024 on a four-month pilot, then rollout to more than 500 marketers across four markets with an announced extension and industrialization with EPAM."
+  },
+  "transposable_ue": {
+    "note": "Reckitt is a British group already subject to GDPR. The tools rely on custom GPTs trained on Reckitt data and on internal tasks (concept, adaptation, post-campaign analysis), with no automated decision on individuals. Under the AI Act, standard framing of internal generative tools."
+  }
+}

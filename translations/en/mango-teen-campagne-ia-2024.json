@@ -1,0 +1,113 @@
+{
+  "seo": {
+    "title": "Mango: first fully AI-generated fashion campaign - 95 markets (2024)",
+    "meta_description": "Mango AI-generated the visuals of the Sunset Dream campaign for its Teen line, distributed across 95 markets, by training a model on its real garments.",
+    "resume_citable": "In July 2024, Mango launched the first fully AI-generated campaign for its Teen line, distributed across 95 markets, by training a generative model on photos of its real garments before human retouching in the studio.",
+    "faq": [
+      {
+        "q": "How did Mango generate the visuals?",
+        "a": "By training a generative model on photos of the real garments, then having the images retouched by its art team."
+      },
+      {
+        "q": "Does Mango disclose the AI images?",
+        "a": "Yes, the brand states on its product pages that the model image was created by artificial intelligence."
+      }
+    ]
+  },
+  "pattern": "genAI generation of campaign visuals",
+  "etape_parcours": "discovery",
+  "objectif_business": "Speed up campaign content production and cut its cost, by generating editorial-quality visuals without a classic photo shoot.",
+  "description": "For the limited-edition Sunset Dream collection of its Mango Teen line, Mango produced a campaign whose visuals are AI-generated. The documented process: photograph the real garments, train a generative model to place these garments on a model, generate editorial-quality images, then have these images retouched and mastered by the art team in the studio. The collection is available in 95 markets. Mango states it is one of the first in the sector to develop the graphic image of a collection with this technology, and indicates on its product pages that the model image is created by AI. Campaign launched in July 2024.",
+  "points_cles": [
+    "genAI generation of campaign visuals for Mango's Teen line.",
+    "In-house generative model trained on the real garments, human retouching in studio.",
+    "Collection distributed across 95 markets, AI disclosure on the product pages.",
+    "Evidence C, confirmed status: Mango official announcement corroborated by sector press."
+  ],
+  "resultats": [
+    { "metrique": "Campaign reach" },
+    { "metrique": "Positioning, the brand's first fully AI-generated campaign" }
+  ],
+  "niveau_preuve": {
+    "justification": "Official Mango Fashion Group announcement corroborated by sector press (Business of Fashion, Trend Watching). Multi-market deployment confirmed, but no financial result or quantified conversion metric published."
+  },
+  "stack_technique": [
+    { "detail": "trained on photos of the real garments to place the pieces on a generated model; exact architecture not published" },
+    { "detail": "Mango has run more than 15 machine learning platforms since 2018; the campaign image generation is part of this in-house foundation" },
+    { "detail": "the collection's pieces are photographed to serve as a training base faithful to cut and material" },
+    { "detail": "human selection, retouching and mastering of the generated images before publication, with AI disclosure on the product pages" }
+  ],
+  "fonctionnement_operationnel": {
+    "cadence": "Per campaign or per collection.",
+    "opere_par": "Mango's art and data team (in-house).",
+    "signal_pilote": "The fidelity of the generated garment to the real product. If the model distorts the cut or the material, the image cannot illustrate a product page and the studio has to redo it.",
+    "etapes": [
+      {
+        "etape": "Photographing the garments",
+        "detail": "The real pieces of the collection are photographed to serve as a base.",
+        "acteur": "art team"
+      },
+      {
+        "etape": "Model training",
+        "detail": "A generative model learns to place these garments on a model.",
+        "acteur": "data team"
+      },
+      {
+        "etape": "Visual generation",
+        "detail": "The model produces editorial-quality images.",
+        "acteur": "AI"
+      },
+      {
+        "etape": "Retouching and mastering",
+        "detail": "The art team selects, retouches and masters the images in the studio, and discloses the use of AI on the product pages.",
+        "acteur": "art team"
+      }
+    ]
+  },
+  "replication": {
+    "prerequis_data": [
+      "photos of the real products",
+      "brand visual guidelines",
+      "capacity to train an image model"
+    ],
+    "prerequis_orga": [
+      "art team for the final retouching",
+      "transparency rule on AI visuals"
+    ],
+    "stack_possible": [
+      "image generation model",
+      "fine-tuning on the product catalog",
+      "studio retouching chain"
+    ],
+    "equipe": "1-2 image data scientists + art team for retouching and validation + legal for the AI disclosure",
+    "playbook": [
+      {
+        "action": "Photograph the real pieces of the pilot collection from several angles",
+        "livrable": "Clean and complete set of product images for training"
+      },
+      {
+        "action": "Train the generative model to place the garments on a model, controlling for cut and material fidelity",
+        "livrable": "Model that renders the product without distortion, validated by the business"
+      },
+      {
+        "action": "Generate the bank of campaign visuals in editorial quality",
+        "livrable": "Batch of candidate images for art direction"
+      },
+      {
+        "action": "Have the art team select, retouch and master the images",
+        "livrable": "Final validated visuals, ready to publish"
+      },
+      {
+        "action": "Publish with the AI disclosure on the product pages and compare cost and lead time against a classic shoot",
+        "livrable": "Live campaign + production cost comparison"
+      }
+    ],
+    "premiere_etape": "Train an image model on the real product photos of a pilot collection, then keep human retouching before publication."
+  },
+  "statut_vivant": {
+    "note": "Mango embeds the use of AI in its 2024-2026 Strategic Plan and has run more than 15 machine learning platforms since 2018. The product pages still disclose the AI-generated visuals."
+  },
+  "transposable_ue": {
+    "note": "Spanish brand, so already within the EU perimeter. Mango states on its product pages that the model image is created by AI, which meets the AI Act's transparency requirement on generated content. The lever is campaign visuals, without any processing of personal customer data."
+  }
+}

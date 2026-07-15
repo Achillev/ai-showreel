@@ -1,0 +1,100 @@
+{
+  "seo": {
+    "title": "ENGIE: Agentforce genAI customer agent - 71% of cases resolved on its own (Belgium)",
+    "meta_description": "In Belgium, ENGIE's Agentforce agent resolves 71% of cases autonomously and assists 83% of users in the mobile app, in production in less than a month with Capgemini.",
+    "resume_citable": "ENGIE's Agentforce genAI customer agent, integrated into the mobile app in Belgium, resolves 71% of cases on its own and assists 83% of users, deployed in less than a month versus about nine for prior AI projects.",
+    "faq": [
+      {
+        "q": "What does ENGIE's Agentforce agent do?",
+        "a": "It answers, in the mobile app, questions about billing, clean energy, smart meters, and EV charging, and guides onboarding for Belgian customers."
+      },
+      {
+        "q": "How long did the deployment take?",
+        "a": "Less than a month with the partner Capgemini, versus about nine months for ENGIE's prior AI projects."
+      }
+    ]
+  },
+  "pattern": "Autonomous genAI customer agent integrated with the CRM",
+  "etape_parcours": "post-purchase",
+  "objectif_business": "Answer customers' common questions instantly in the mobile app, resolve as many cases as possible without an advisor, and drastically shorten the time from idea to production for an agent.",
+  "description": "ENGIE integrated Agentforce natively into Salesforce for its Belgian customers with a contract or a smart meter. The agent, available in the ENGIE mobile app, gives immediate answers on billing, clean energy, smart meters, and electric vehicle charging, and guides onboarding. It resolves 71% of cases on its own and assists 83% of users. The go-live, carried out with Capgemini, took less than a month, where prior AI projects required about nine months.",
+  "points_cles": ["Autonomous genAI customer agent in the ENGIE mobile app (billing, meters, EV charging).", "Salesforce Agentforce anchored on the CRM, integrated with Capgemini.", "71% of cases resolved on its own, 83% of users assisted, go-live in less than a month.", "Evidence level B, confirmed live status."],
+  "resultats": [
+    { "metrique": "Cases resolved autonomously by the agent" },
+    { "metrique": "Users assisted by Agentforce" },
+    { "metrique": "Time to go-live, versus about nine months for prior AI projects" }
+  ],
+  "niveau_preuve": {
+    "justification": "A quantified platform case study (Salesforce) with resolution and assistance rates, repeated in an article from the same source. Concordant sources but both from the publisher, hence level B."
+  },
+  "stack_technique": [
+    { "detail": "Salesforce-native genAI agent, anchored on the knowledge base and CRM context; resolves 71% of cases on its own in the app." },
+    { "detail": "Account and contract foundation the agent relies on to contextualize its answers." },
+    { "detail": "Integration partner; go-live in less than a month, versus about nine months for prior AI projects." },
+    { "detail": "The agent's single channel for Belgian customers with a contract or a smart meter." }
+  ],
+  "fonctionnement_operationnel": {
+    "cadence": "Real time in the mobile app, continuously.",
+    "opere_par": "ENGIE's CRM and customer service teams, with Capgemini for the initial integration.",
+    "signal_pilote": "The product knowledge base and the state of the customer account in Salesforce. If the base is incomplete or out of date, the autonomous resolution rate drops and the agent refers to an advisor.",
+    "etapes": [
+      {
+        "etape": "Question in the app",
+        "detail": "The Belgian customer asks a question in the ENGIE mobile app (billing, meter, EV charging).",
+        "acteur": "customer"
+      },
+      {
+        "etape": "Anchored answer",
+        "detail": "Agentforce retrieves the answer from the knowledge base and CRM context, then answers or guides onboarding.",
+        "acteur": "AI"
+      },
+      {
+        "etape": "Resolution or escalation",
+        "detail": "The agent closes the case on its own when it can, otherwise it passes to an advisor.",
+        "acteur": "AI"
+      }
+    ]
+  },
+  "replication": {
+    "prerequis_data": [
+      "a structured product knowledge base",
+      "an up-to-date CRM with account status",
+      "a reference of frequent questions"
+    ],
+    "prerequis_orga": [
+      "a Salesforce CRM already in place",
+      "a team able to maintain the knowledge base",
+      "an integration partner for the start"
+    ],
+    "stack_possible": [
+      "Salesforce Agentforce",
+      "alternative: a genAI agent anchored on a knowledge base and connected to the CRM"
+    ],
+    "premiere_etape": "Structure the knowledge base of the most frequent questions and wire a genAI agent anchored on it in a single channel (the app).",
+    "playbook": [
+      {
+        "action": "Structure the knowledge base of frequent questions: billing, smart meters, EV charging.",
+        "livrable": "A clean, versioned knowledge base"
+      },
+      {
+        "action": "Configure the agent on the CRM: anchoring on the base, tone, answer scope.",
+        "livrable": "An agent configured in a test environment"
+      },
+      {
+        "action": "Test answer accuracy and the escalation rules to an advisor, then wire the app channel.",
+        "livrable": "Test suite passed, escalation working"
+      },
+      {
+        "action": "Go live in the app and track the autonomous resolution rate.",
+        "livrable": "Agent live with a resolution and assistance dashboard"
+      }
+    ],
+    "equipe": "1 Salesforce admin + 1 knowledge base owner + an integrator at the start; advisors handle the escalations."
+  },
+  "statut_vivant": {
+    "note": "Agent in production in the ENGIE app in Belgium. ENGIE announces an extension to other use cases (field agents, sales agents) via Agentforce."
+  },
+  "transposable_ue": {
+    "note": "Already deployed in the EU (Belgium), integrated into the ENGIE mobile app for customers with a contract or a smart meter. The agent answers on factual topics (billing, clean energy, meters, EV charging), which limits exposure to sensitive data and eases the GDPR and AI Act framing."
+  }
+}

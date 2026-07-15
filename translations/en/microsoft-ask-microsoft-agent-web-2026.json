@@ -1,0 +1,120 @@
+{
+  "seo": {
+    "title": "Microsoft: Ask Microsoft web agent for acquisition - 10x more signups and 16% more trials (2026)",
+    "meta_description": "Microsoft uses its own Copilot Studio for the Ask Microsoft agent on Microsoft.com: visitors 10x more likely to sign up, 16% more product trials, 70% fewer human escalations.",
+    "resume_citable": "The Ask Microsoft web agent, built with Copilot Studio, makes Microsoft.com visitors ten times more likely to sign up, increases Azure product trials by 16%, and reduces human escalations by 70%.",
+    "faq": [
+      {
+        "q": "What is Ask Microsoft?",
+        "a": "A conversational web agent built by Microsoft with its own Copilot Studio to help Microsoft.com visitors and steer them toward signup or a product trial."
+      },
+      {
+        "q": "What is the impact on acquisition?",
+        "a": "Visitors who interact with the agent are ten times more likely to sign up, with 16% more trial initiations on the Azure site."
+      }
+    ]
+  },
+  "pattern": "conversational web agent for acquisition and activation on a company's own product pages",
+  "etape_parcours": "consideration",
+  "objectif_business": "Turn navigation help on Microsoft.com into an acquisition lever. The Ask Microsoft agent answers visitors, steers them to the right offer, and raises the likelihood that they sign up or start a product trial, while reducing reliance on human chat.",
+  "description": "Microsoft built Ask Microsoft, a conversational web agent, with its own Copilot Studio, to help millions of visitors find information on Microsoft.com. The agent moved from rigid topic flows to a generative orchestration that understands intent and holds multi-turn conversations. A first agent was deployed in a few weeks, then extended to ten additional product sites at a pace of two per week. On the Azure pages it drives more trials; across the board, visitors who use it view more pages and sign up far more often.",
+  "points_cles": [
+    "Ask Microsoft conversational web agent for acquisition on Microsoft.com.",
+    "Built with Copilot Studio, generative orchestration and RAG over product content.",
+    "Visitors 10 times more likely to sign up, +16% trials on Azure, -70% human escalations.",
+    "Evidence B, confirmed status."
+  ],
+  "resultats": [
+    { "metrique": "Likelihood of moving to signup after interacting with the agent" },
+    { "metrique": "Product trial initiations on the Azure site" },
+    { "metrique": "Reduction in escalations to a human" },
+    { "metrique": "Response latency of the updated agent" }
+  ],
+  "niveau_preuve": {
+    "justification": "Official, quantified Microsoft case study on its own deployment (Ask Microsoft), with conversion and engagement metrics. A single substantial source (Microsoft customer story), corroborated by the same vendor's Copilot Studio documentation, hence a B rather than an A."
+  },
+  "stack_technique": [
+    { "detail": "Low-code platform used to build the Ask Microsoft agent, moved from rigid topic flows to multi-turn generative orchestration." },
+    { "detail": "LLMs built into the platform for intent understanding and response drafting; the exact model is not named in the customer story." },
+    { "detail": "Retrieval-augmented generation: the agent answers from indexed product documentation and steers to the right offer." },
+    { "detail": "Cloud foundation of the setup; the Azure product pages are also the scope of the 16% trials gain." }
+  ],
+  "fonctionnement_operationnel": {
+    "cadence": "Real-time on each session on Microsoft.com, with rapid iterations of testing and tuning the agent",
+    "opere_par": "Microsoft's web and digital marketing team, on Copilot Studio",
+    "signal_pilote": "The intent expressed by the visitor and the indexed product content. Without up-to-date product content to query, the agent steers poorly and the conversion gain is lost.",
+    "etapes": [
+      {
+        "etape": "Intent understanding",
+        "detail": "The generative orchestration interprets the visitor's natural-language request across multiple turns.",
+        "acteur": "AI"
+      },
+      {
+        "etape": "Answer and steering",
+        "detail": "The agent answers from product content and guides toward the right offer or SKU.",
+        "acteur": "AI"
+      },
+      {
+        "etape": "Prompt to trial or signup",
+        "detail": "On product pages, it pushes toward starting a trial or signing up for the service.",
+        "acteur": "AI"
+      },
+      {
+        "etape": "Extension to other sites",
+        "detail": "The team replicates the agent on new product sites at a pace of two per week.",
+        "acteur": "Marketing / web team"
+      },
+      {
+        "etape": "Conversion measurement",
+        "detail": "Move to signup, trials started, and pages per session are tracked to steer the agent.",
+        "acteur": "Marketing / web team"
+      }
+    ]
+  },
+  "replication": {
+    "playbook": [
+      {
+        "action": "Scope a single product line, gather the corresponding content, and set a measurable conversion objective.",
+        "livrable": "Validated scope, product content corpus, and baseline KPI."
+      },
+      {
+        "action": "Build the agent in the low-code platform, enable generative orchestration, and connect the product content.",
+        "livrable": "Working agent in pre-production."
+      },
+      {
+        "action": "Test response accuracy, tone, and human escalation internally, and instrument conversion analytics.",
+        "livrable": "Validated agent with signup/trial tracking in place."
+      },
+      {
+        "action": "Go live on a first site and compare signups and trials of visitors exposed to the agent.",
+        "livrable": "First conversion readout versus unexposed visitors."
+      },
+      {
+        "action": "Replicate the agent on the other product sites at a steady pace, with the same measurement framework.",
+        "livrable": "Agents deployed in series and consolidated conversion reporting."
+      }
+    ],
+    "equipe": "1 web project lead + 1 low-code builder + 1 product content owner, with analytics support.",
+    "prerequis_data": [
+      "indexable product content and documentation",
+      "clear offer and SKU taxonomy",
+      "analytics instrumentation on conversion"
+    ],
+    "prerequis_orga": [
+      "a web/marketing team able to iterate on the agent",
+      "governance of scope and tone"
+    ],
+    "stack_possible": [
+      "low-code agent platform (Copilot Studio or equivalent)",
+      "RAG engine over product content",
+      "conversion analytics tool"
+    ],
+    "premiere_etape": "Scope an agent on a single product line with the corresponding content and a measurable conversion objective."
+  },
+  "statut_vivant": {
+    "note": "The agent is in production on Microsoft.com and being extended to other product sites according to the February 2026 customer story. Copilot Studio is an active product continuously promoted by Microsoft."
+  },
+  "transposable_ue": {
+    "note": "Conversational agent on a mass-market commercial site. In the EU, the AI Act requires informing the user that they are interacting with an automated system, and GDPR governs the collection of browsing and contact data tied to the trial request. No high-risk classification for a purchase-assistance assistant."
+  }
+}

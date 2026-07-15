@@ -1,0 +1,116 @@
+{
+  "seo": {
+    "title": "LVMH: MaIA internal genAI assistant - 40,000 employees, ~2M requests/month (2024)",
+    "meta_description": "MaIA, LVMH's internal genAI assistant built on Google and OpenAI, is used by 40,000 employees for ~1.5 to 2M requests/month, including marketing content.",
+    "resume_citable": "MaIA, LVMH's internal genAI assistant built on Google Gemini/Imagen and OpenAI, is used by 40,000 employees for about 1.5 to 2 million requests per month, including generating marketing content and personalized customer messages.",
+    "faq": [
+      {
+        "q": "How many people use MaIA at LVMH?",
+        "a": "40,000 employees, for on the order of 1.5 to 2 million requests per month according to PYMNTS and WWD."
+      },
+      {
+        "q": "What is MaIA used for on the marketing side?",
+        "a": "To generate e-commerce copy, personalized customer messages and mood boards for design teams, in addition to internal research and translation."
+      }
+    ]
+  },
+  "pattern": "internal enterprise genAI assistant (marketing content, personalization, research)",
+  "etape_parcours": "consideration",
+  "objectif_business": "Equip the marketing, creative and retail teams of the Maisons with a group-wide genAI assistant to speed up content production, customer message personalization and internal research, without exposing the brand universe to consumer chatbots.",
+  "description": "MaIA is LVMH's internal AI assistant, launched in 2024 and built on a combination of Google models (Gemini, Imagen) and OpenAI (GPT), on top of a group data foundation built with Google. It is used by 40,000 employees and handles on the order of 1.5 to 2 million requests per month. On the marketing and creative side, MaIA is used to generate e-commerce copy, personalized customer messages and mood boards for design teams, in addition to document research and translation. Some Maisons turn the platform into dedicated agents: a retail agent at Celine to answer complex questions from advisors, a customer outreach agent at Tiffany and Co. to write personalized messages. LVMH deliberately keeps these tools internal and does not put a chatbot on its sales sites.",
+  "points_cles": [
+    "Internal enterprise genAI assistant for marketing, creative and retail across the LVMH Maisons.",
+    "MaIA platform built on Google (Gemini, Imagen) and OpenAI (GPT) over a group data foundation.",
+    "40,000 employees, about 1.5 to 2 million requests per month, business agents at Celine and Tiffany.",
+    "Evidence C, confirmed status: established press citing LVMH and its technology director."
+  ],
+  "resultats": [
+    { "metrique": "Employee users" },
+    { "metrique": "Monthly requests handled" }
+  ],
+  "niveau_preuve": {
+    "justification": "Two established press outlets (PYMNTS, WWD via Yahoo Finance) naming LVMH and its technology director, with concordant usage figures (40,000 employees, 1.5 to 2M requests/month). No direct financial result attached to MaIA."
+  },
+  "stack_technique": [
+    { "detail": "language model for text generation, translation and internal research" },
+    { "detail": "image generation, notably for the design teams' mood boards" },
+    { "detail": "second text generation foundation; MaIA routes the request to the model suited to the task" },
+    { "detail": "grounds the generation on the group's data and tone, with isolation from third-party models and access logging" },
+    { "detail": "group-wide genAI assistant used by 40,000 employees (1.5 to 2M requests per month), turned into business agents by the Maisons (Celine, Tiffany)" }
+  ],
+  "fonctionnement_operationnel": {
+    "cadence": "Daily on-demand use; new business agents built by the Maisons as needs arise",
+    "opere_par": "Group IT and technology department for the platform; marketing, creative and retail teams of the Maisons as users",
+    "signal_pilote": "Governed access to the group data foundation and brand data. Without a connection to internal data and brand tone, generation stays generic and unusable in luxury.",
+    "etapes": [
+      {
+        "etape": "Business request",
+        "detail": "A marketing or creative employee asks for copy, an image, a translation or research.",
+        "acteur": "marketing / creative"
+      },
+      {
+        "etape": "Multi-model processing",
+        "detail": "MaIA routes to Gemini, Imagen or GPT depending on the task, anchored on the group's data and tone.",
+        "acteur": "AI / platform"
+      },
+      {
+        "etape": "Business agent",
+        "detail": "A Maison turns MaIA into a dedicated agent (Celine retail, Tiffany outreach) for a targeted use.",
+        "acteur": "Maison team"
+      },
+      {
+        "etape": "Human control",
+        "detail": "The employee reviews and validates the content before distribution; the sales sites remain without a chatbot.",
+        "acteur": "marketing / advisor"
+      }
+    ]
+  },
+  "replication": {
+    "prerequis_data": [
+      "governed enterprise data foundation",
+      "reference set for brand tone and universe",
+      "access governance for sensitive data (HR, customer)"
+    ],
+    "prerequis_orga": [
+      "IT department to run the central platform",
+      "enterprise genAI licenses with data isolation",
+      "a liaison in each brand to build the business agents"
+    ],
+    "stack_possible": [
+      "Google Gemini / Vertex AI",
+      "OpenAI ChatGPT Enterprise / Azure OpenAI",
+      "image generation (Imagen, DALL-E)",
+      "agent orchestration"
+    ],
+    "equipe": "1 IT platform team (3-5 people) + business liaisons in each brand for the dedicated agents + data governance and legal",
+    "playbook": [
+      {
+        "action": "Frame the data governance and two priority marketing use cases (e-commerce copy, mood boards)",
+        "livrable": "v1 scope + access rules for sensitive data (HR, customer)"
+      },
+      {
+        "action": "Contract the models in enterprise versions with data isolation and logging",
+        "livrable": "Isolated multi-model API access, validated by security"
+      },
+      {
+        "action": "Build the cross-functional assistant anchored on the data foundation and the brand tone reference",
+        "livrable": "v1 assistant opened to a first group of marketing and creative users"
+      },
+      {
+        "action": "Deploy more broadly, train the teams and track adoption",
+        "livrable": "Requests and adoption dashboard by function"
+      },
+      {
+        "action": "Turn it into business agents per brand (retail support, customer outreach), with human review before distribution",
+        "livrable": "1 to 2 dedicated agents in production in the pilot brands"
+      }
+    ],
+    "premiere_etape": "Open an enterprise genAI assistant anchored on internal data and brand tone, with two priority marketing use cases (copy, mood boards)."
+  },
+  "statut_vivant": {
+    "note": "Group-wide use confirmed mid-2025, with adaptations into business agents by the Maisons (Celine, Tiffany)."
+  },
+  "transposable_ue": {
+    "note": "French group, internal platform built on a group data foundation. genAI use on enterprise data: GDPR framing for HR, customer and supplier data, isolation of data from third-party models (Google, OpenAI) and access logging."
+  }
+}

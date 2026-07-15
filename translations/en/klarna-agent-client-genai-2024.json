@@ -1,0 +1,111 @@
+{
+  "seo": {
+    "title": "Klarna: genAI customer agent - 2.3 million chats in the first month (2024)",
+    "meta_description": "Klarna's AI assistant (OpenAI) handled 2.3M conversations in one month, the equivalent of 700 agents, before a human rebalancing in 2025.",
+    "resume_citable": "In 2024, Klarna's AI assistant built with OpenAI handled 2.3 million conversations in one month (two-thirds of support, the load of 700 agents), before Klarna reopened human roles in 2025.",
+    "faq": [
+      {
+        "q": "What model powers Klarna's assistant?",
+        "a": "It is built with OpenAI (GPT-4), integrated with the app and with Klarna's account data."
+      },
+      {
+        "q": "Did Klarna replace all its human agents?",
+        "a": "No. In 2025, the CEO acknowledged cutting too far and reopened premium support roles staffed by humans, with the assistant remaining in production."
+      }
+    ]
+  },
+  "pattern": "genAI customer agent",
+  "etape_parcours": "Post-purchase",
+  "objectif_business": "Absorb the volume of customer service requests without growing the team, and shorten resolution time on simple cases (refunds, disputes, payments, cancellations) while keeping a human for the rest.",
+  "description": "The assistant lives in the Klarna app and takes over the customer service chat. One month after its February 2024 launch, it had handled 2.3 million conversations, or two-thirds of support chats. It covers 23 markets, converses in more than 35 languages, and closes a request in less than two minutes where an agent used to take eleven. The customer can ask for a human at any time. In 2025, Klarna acknowledged that it had cut headcount too far and reopened premium support roles staffed by humans, while keeping the assistant in production.",
+  "points_cles": ["A genAI customer agent that takes the service chat by default.", "Built with OpenAI GPT-4, integrated with the app and account data.", "2.3 million conversations in the first month, the load of 700 agents.", "Resolution in under 2 minutes, evidence level B, mixed signals."],
+  "resultats": [
+    { "metrique": "Conversations handled in the first month" },
+    { "metrique": "Equivalent workload, in full-time agents" },
+    { "metrique": "Resolution time per request, versus 11 min before" },
+    { "metrique": "Expected profit improvement in 2024" },
+    { "metrique": "Drop in repeat inquiries" }
+  ],
+  "niveau_preuve": {
+    "justification": "Figures published by Klarna (official press release, T1) and echoed in OpenAI's customer story (T2), concordant. The 40m USD gain is an internal company estimate, not an audited result, which caps at B. The 2025 reversal is documented by an established press source (TechCrunch)."
+  },
+  "stack_technique": [
+    { "detail": "the assistant's language model, deployed with OpenAI as partner" },
+    { "detail": "real-time connection to the customer's account, orders, and payment history to handle their specific case" },
+    { "detail": "the assistant takes the chat by default, discloses that it is an AI, and escalates to a human on request or for complex cases" }
+  ],
+  "fonctionnement_operationnel": {
+    "cadence": "Real time, 24/7, on every incoming chat",
+    "opere_par": "Customer service team (supervision and escalated cases) supported by the AI/data team that runs the model",
+    "signal_pilote": "The resolution rate without escalation and the repeat contact rate. If the repeat rate rises, it means the assistant is closing poorly resolved tickets: that is the signal that triggered the 2025 rebalancing.",
+    "etapes": [
+      {
+        "etape": "Chat intake",
+        "detail": "The customer opens the chat in the app; the assistant takes the request by default and discloses that it is an AI.",
+        "acteur": "AI"
+      },
+      {
+        "etape": "Context retrieval",
+        "detail": "The assistant reads the customer's account, orders, and payment history to answer their specific case (refund, dispute, cancellation).",
+        "acteur": "AI"
+      },
+      {
+        "etape": "Resolution or escalation",
+        "detail": "Simple case: the assistant handles and closes it. Complex case or explicit request: handoff to a human agent with the conversation context.",
+        "acteur": "AI / customer service"
+      },
+      {
+        "etape": "Quality loop",
+        "detail": "The team tracks satisfaction, repeat contacts, and escalation volume to adjust the scope entrusted to the AI.",
+        "acteur": "data team"
+      }
+    ]
+  },
+  "replication": {
+    "prerequis_data": [
+      "History of labeled support tickets",
+      "Real-time access to the customer's account and transactions",
+      "Up-to-date knowledge base of procedures and policies"
+    ],
+    "prerequis_orga": [
+      "Clear handoff rule to the human",
+      "Measurement loop for satisfaction and repeat contacts",
+      "Compliance framework (AI transparency, sensitive data)"
+    ],
+    "stack_possible": [
+      "Generative LLM (OpenAI, Anthropic, or open model)",
+      "RAG layer on the knowledge base",
+      "Integration with the ticketing system and core banking"
+    ],
+    "premiere_etape": "Isolate the 5 to 10 most frequent and best-documented request types, and frame a handoff-to-human rule before opening traffic.",
+    "playbook": [
+      {
+        "action": "Isolate the 5 to 10 most frequent request types and update the knowledge base",
+        "livrable": "Documented case scope + up-to-date procedures"
+      },
+      {
+        "action": "Define the handoff-to-human rules and transparency (AI disclosure to the customer)",
+        "livrable": "Escalation policy validated by customer service and compliance"
+      },
+      {
+        "action": "Connect the LLM to account, order, and payment data",
+        "livrable": "Assistant in beta on one market and one language"
+      },
+      {
+        "action": "Pilot on a share of traffic and compare against agents",
+        "livrable": "Resolution rate, repeat contacts, and satisfaction measured"
+      },
+      {
+        "action": "Scale up market by market while monitoring the repeat contact rate (the warning signal at Klarna)",
+        "livrable": "Default assistant with a quality loop in place"
+      }
+    ],
+    "equipe": "1 PM + 2 devs + 1 customer service lead + compliance"
+  },
+  "statut_vivant": {
+    "note": "The assistant is still running, but Klarna corrected course in 2025: the CEO publicly stated that it had cut too many humans and reopened premium support roles staffed by people. The pattern remains in production, the 100% AI execution was rebalanced."
+  },
+  "transposable_ue": {
+    "note": "Klarna is a Swedish bank, so already subject to GDPR. The assistant processes account and transaction data, which requires a clear legal basis and routing to a human on sensitive cases. The AI Act will classify a customer service agent as limited risk (transparency obligation: tell the customer they are talking to an AI)."
+  }
+}

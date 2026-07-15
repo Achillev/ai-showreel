@@ -1,0 +1,123 @@
+{
+  "seo": {
+    "title": "Nivea (Beiersdorf): AI creative optimization - cost per lead -40% (2022)",
+    "meta_description": "Nivea optimizes its creative with Automated Creative and localizes at scale with Grip: cost per lead -40%, cost per visit -60%, ROAS +20%, deployment -50%.",
+    "resume_citable": "Nivea (Beiersdorf) reduced its cost per lead by 40%, its cost per quality visit by 60%, and increased its ROAS by 20% by testing its creative elements with Automated Creative, and localizes its content at scale with Grip (NVIDIA Omniverse digital twins), reducing campaign deployment by more than 50%.",
+    "faq": [
+      {
+        "q": "What results does Nivea get with AI creative optimization?",
+        "a": "A cost per lead reduced by 40%, a cost per quality visit reduced by 60%, and a ROAS up 20%, by testing and tagging its creative elements with Automated Creative."
+      },
+      {
+        "q": "How does Beiersdorf localize its content at scale?",
+        "a": "With Grip and its InstantRender technology based on NVIDIA Omniverse digital twins, which takes production from weeks to minutes and reduces campaign deployment by more than 50%."
+      }
+    ]
+  },
+  "pattern": "genAI testing and optimization of creative elements + automated localization at scale",
+  "etape_parcours": "consideration",
+  "objectif_business": "Produce and localize ad content for every format and market without the delays and costs of shoots and manual retouching, while optimizing media performance asset by asset.",
+  "description": "Beiersdorf, home of Nivea and Eucerin, combines two AI building blocks in its advertising chain. With Automated Creative, the brand tests creative elements (visuals, messages) to improve media performance; each asset is tagged in the background, which makes it possible to understand why an ad worked for a given audience. The first efforts (September 2021, then January 2022) covered messaging, lead generation, web traffic, and retail media. Nivea reports a 40 percent drop in cost per lead on a lead generation campaign, a 60 percent drop in cost per quality visit on a social traffic campaign, and a 20 percent increase in ROAS on an e-commerce campaign. In parallel, Beiersdorf industrializes localization with Grip and its InstantRender technology, built on NVIDIA Omniverse digital twins, which takes production from weeks to minutes and reduces campaign deployment by more than 50 percent. The brand also drew on more than 12 million images from 10,000 women for its Skin Guide recommendation app.",
+  "resultats": [
+    {
+      "metrique": "Cost per lead (lead generation campaign)"
+    },
+    {
+      "metrique": "Cost per quality visit (social traffic campaign)"
+    },
+    {
+      "metrique": "ROAS (e-commerce campaign)"
+    },
+    {
+      "metrique": "Deployment time, production taken from weeks to minutes"
+    }
+  ],
+  "niveau_preuve": {
+    "justification": "Performance figures reported by the specialist press (AdExchanger, Adweek) naming Beiersdorf and Nivea, and by the vendor Grip for localization. No financial results, hence C."
+  },
+  "stack_technique": [
+    {
+      "detail": "Adtech platform for testing and tagging creative elements (visuals, messages), which isolates what drives each asset's performance by audience."
+    },
+    {
+      "detail": "Automated rendering and localization engine for ad content, which takes production from weeks to minutes."
+    },
+    {
+      "detail": "Digital twins platform on which Grip's InstantRender technology is built."
+    }
+  ],
+  "fonctionnement_operationnel": {
+    "cadence": "Continuous per campaign for creative optimization; on demand by format and market for localization.",
+    "opere_par": "Beiersdorf digital and marketing teams, with Automated Creative on optimization and Grip on localization.",
+    "signal_pilote": "The media performance data per asset (cost per lead, cost per visit, ROAS) and the tagging of creative elements. Without clean tagging, you do not know why an ad works and optimization stays blind.",
+    "etapes": [
+      {
+        "etape": "Tagging and testing of creative elements",
+        "detail": "Each asset is broken down and tagged in the background to isolate high-performing visuals and messages.",
+        "acteur": "AI / Automated Creative"
+      },
+      {
+        "etape": "Media optimization",
+        "detail": "The high-performing variants are pushed, which lowers cost per lead and per visit and raises ROAS.",
+        "acteur": "marketing / AI"
+      },
+      {
+        "etape": "Automated localization",
+        "detail": "Grip InstantRender generates the variants by format and market from digital twins, in minutes.",
+        "acteur": "AI / Grip"
+      },
+      {
+        "etape": "Deployment by market",
+        "detail": "Accelerated delivery of the localized campaigns, with a deployment time reduced by more than 50 percent.",
+        "acteur": "marketing"
+      }
+    ]
+  },
+  "replication": {
+    "prerequis_data": [
+      "creative assets that can be broken down and tagged",
+      "media performance data per asset and per audience",
+      "product references and brand rules per market"
+    ],
+    "prerequis_orga": [
+      "continuous creative testing process",
+      "coordination between media optimization and localization",
+      "consent and minimization for any biometric data (Skin Guide)"
+    ],
+    "stack_possible": [
+      "creative testing and tagging platform (Automated Creative type)",
+      "rendering and localization engine (Grip / digital twins type)",
+      "media connectors"
+    ],
+    "premiere_etape": "Tag the assets of a lead generation campaign and test the variants to isolate what lowers cost per lead.",
+    "playbook": [
+      {
+        "action": "Pick a lead generation campaign and break down its assets into testable elements (visuals, messages, formats).",
+        "livrable": "Asset library tagged element by element."
+      },
+      {
+        "action": "Launch the variants in test on paid social with performance measurement per creative element.",
+        "livrable": "Performance matrix by visual and by message."
+      },
+      {
+        "action": "Push the winning combinations and compare cost per lead to the reference campaign.",
+        "livrable": "Documented before/after CPL assessment."
+      },
+      {
+        "action": "Industrialize the localization of the winning creatives by market and format via an automated rendering engine.",
+        "livrable": "Multi-market variants generated in hours rather than weeks."
+      },
+      {
+        "action": "Extend the setup to traffic and e-commerce campaigns, with ROAS as the arbitration metric.",
+        "livrable": "Documented and reproducible continuous creative testing process."
+      }
+    ],
+    "equipe": "1 media lead + 1 creative ops; the technical side is carried by the platforms or the partner agency."
+  },
+  "statut_vivant": {
+    "note": "Automated Creative partnership started in September 2021 with successive efforts (messaging, leads, traffic, retail media); industrialized localization with Grip and NVIDIA Omniverse confirmed over the recent period."
+  },
+  "transposable_ue": {
+    "note": "Beiersdorf is a German group, already fluent in GDPR. Creative optimization relies on media performance data and asset tagging, not on individual profiling. Selfie recommendation applications (Skin Guide) involve biometric data and require explicit consent and minimization under GDPR and the AI Act."
+  }
+}

@@ -1,0 +1,123 @@
+{
+  "seo": {
+    "title": "Yum! Brands: 200M+ AI-generated CRM communications - up to 5x incrementality (2025)",
+    "meta_description": "Yum! Brands generates more than 200 million AI marketing communications on its Red360 first-party data and the Byte platform, up to 5x more incremental.",
+    "resume_citable": "In 2025, Yum! Brands (Taco Bell, KFC, Pizza Hut) sent more than 200 million AI-generated marketing communications, up to five times more incremental than traditional approaches, relying on its Red360 permissioned data program (140 million names) and its in-house Byte by Yum! platform.",
+    "faq": [
+      {
+        "q": "What is Yum! Brands' AI marketing?",
+        "a": "Yum! generates personalized CRM communications at scale (offers, email subject lines, push messages, in-app recommendations) per member, from its Red360 first-party permissioned database and its in-house Byte by Yum! platform. In 2025, the group states more than 200 million AI-generated communications, up to five times more incremental."
+      },
+      {
+        "q": "How does this case differ from voice AI at the drive-thru?",
+        "a": "This is about generating personalized CRM communications (email, SMS, push, in-app) for members, distinct from the deployment of order-taking voice AI at the drive-thru, which is another use case."
+      },
+      {
+        "q": "Is the program still active?",
+        "a": "Yes. Reaffirmed in the following quarters, with a digital sales mix raised to around 63% in the first quarter of 2026 and the Byte by Yum! platform as the backbone of AI personalization."
+      }
+    ]
+  },
+  "pattern": "generation of personalized CRM communications at scale (genAI on first-party data)",
+  "etape_parcours": "loyalty",
+  "objectif_business": "Turn a base of more than 140 million permissioned names into incremental sales by generating personalized marketing communications at scale (offers, email subject lines, push messages) rather than broadcasting the same campaigns to everyone.",
+  "points_cles": [
+    "Generation of personalized CRM communications at scale (offers, email subject lines, push messages).",
+    "In-house Byte by Yum! platform, Red360 first-party data, and OfferFit (Braze).",
+    "More than 200 million AI-generated communications, up to 5x more incremental.",
+    "Evidence level A, confirmed active status."
+  ],
+  "description": "Yum! Brands relies on its Red360 first-party data program (more than 140 million qualified, permissioned names, with transaction history) and on its in-house Byte by Yum! technology platform to produce individualized marketing communications at large scale. In 2025, the group states it sent more than 200 million AI-generated communications, up to five times more incremental than traditional approaches. Concretely, the AI selects and writes the offers, email subject lines, and push messages per member, where the marketing team previously sent uniform campaigns. Yum laid out eleven AI marketing use cases, of which seven were active in the second quarter of 2025. For email and SMS personalization, the group relies on OfferFit, an offer-optimization component acquired by Braze. This setup is part of a broader digital shift: in Q2 2025, Yum's digital sales mix reached 57% (7 points more year-on-year) and digital sales grew 18%. This case covers the generation of personalized CRM communications, distinct from the deployment of voice AI at the Taco Bell drive-thru, which falls under another pattern.",
+  "resultats": [
+    {
+      "metrique": "Volume of AI-generated communications (2025)"
+    },
+    {
+      "metrique": "Incrementality vs traditional approach"
+    },
+    {
+      "metrique": "AI marketing use cases in production (Q2 2025)"
+    },
+    {
+      "metrique": "Digital sales mix, +7 pts year-on-year (Q2 2025)"
+    },
+    {
+      "metrique": "Digital sales growth (Q2 2025)"
+    },
+    {
+      "metrique": "First-party Red360 permissioned names, with history"
+    }
+  ],
+  "niveau_preuve": {
+    "justification": "Figures announced by the CEO and CFO in the Q2 2025 earnings call (verbatim transcript), corroborated by the established marketing press and by continuity signals in the following quarters (Q4 2025, Q1 2026)."
+  },
+  "fonctionnement_operationnel": {
+    "cadence": "Continuous generation of communications per campaign and per trigger, with permanent optimization of offers per member",
+    "opere_par": "Yum!'s data and CRM team (Chief Data Officer) working with the brands' marketing and the Byte product team",
+    "signal_pilote": "Incrementality measured per member (sales attributable to a message versus a scenario without any send). Without this measurement and without Red360's permissioned data, the AI no longer knows which offer to push to whom, and targeting falls back to uniform campaigns.",
+    "etapes": [
+      {
+        "etape": "Feed the permissioned data base",
+        "detail": "Collect and unify in Red360 the permissioned names and transaction history, primarily via Taco Bell, which provides about half.",
+        "acteur": "data team"
+      },
+      {
+        "etape": "Define the marketing use cases",
+        "detail": "Frame the AI marketing use cases (offers, email subject lines, push messages, in-app recommendations) and decide which go to production.",
+        "acteur": "marketing / data team"
+      },
+      {
+        "etape": "Generate and target the communications",
+        "detail": "The AI writes and selects per member the offer and message, with the OfferFit component continuously optimizing which offer to send to maximize incrementality.",
+        "acteur": "AI"
+      },
+      {
+        "etape": "Distribute on the CRM channels",
+        "detail": "Send via email, SMS, push, and in-app recommendations on the brands' app.",
+        "acteur": "AI / Byte platform"
+      },
+      {
+        "etape": "Measure incrementality and loop back",
+        "detail": "Compare the sales generated to a reference scenario, then feed the system back to adjust offers and frequency.",
+        "acteur": "data team"
+      }
+    ]
+  },
+  "replication": {
+    "prerequis_data": [
+      "A permissioned, unified contact base linked to transaction history per person",
+      "A stable customer identifier to attach sends to actual purchases and measure incrementality",
+      "A control-group measurement setup to distinguish incremental sales from sales that would have occurred without a message"
+    ],
+    "prerequis_orga": [
+      "A data or CRM team that owns incrementality measurement, not just sends",
+      "A governance framework for AI marketing use cases with a clear sorting between pilot and production",
+      "Legal basis and GDPR consent for personalization, and transparency about AI-generated content"
+    ],
+    "stack_possible": [
+      "A CDP or first-party customer warehouse",
+      "A content-generation component (offers, subject lines, messages) by LLM",
+      "A self-learning offer-optimization engine (OfferFit type) on the email, SMS, and push channels",
+      "A CRM platform and a mobile app for distribution and in-app recommendations"
+    ],
+    "equipe": "A CRM or data marketing lead, a data profile for incrementality measurement and control groups, a marketing liaison per brand for offer consistency, a product profile for app and channel integration.",
+    "premiere_etape": "Set up incrementality measurement with a control group on an existing channel (email or push), before even automating generation: it is the signal that drives the whole setup."
+  },
+  "statut_vivant": {
+    "note": "Setup reaffirmed quarter after quarter: digital mix 57% in Q2 2025, 60% in Q4 2025, around 63% in Q1 2026, with Byte by Yum! presented as the backbone of AI personalization. Program in expansion, not in retreat."
+  },
+  "transposable_ue": {
+    "note": "The setup relies on a program of consented first-party data (Red360) and on targeted marketing communications (email, SMS, push, in-app recommendations). In the EU, this requires a GDPR legal basis and explicit consent for personalization. The automated generation of messages also falls under AI Act transparency for generated content. Yum has already launched a consumer insights product for international at Pizza Hut UK, which shows a transposition underway on the European side."
+  },
+  "stack_technique": [
+    {
+      "detail": "In-house multi-brand technology platform (digital ordering, operations, personalization, AI), present in around 25,000 restaurants"
+    },
+    {
+      "detail": "First-party permissioned consumer data program (more than 140 million names with transaction history)"
+    },
+    {
+      "detail": "Self-learning offer optimization for email and SMS personalization, acquired by Braze"
+    }
+  ]
+}

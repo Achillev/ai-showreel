@@ -1,0 +1,126 @@
+{
+  "seo": {
+    "title": "Samsung: Performance Max on the Galaxy Campus Store - 2.5x conversions, -60% cost per conversion (2022)",
+    "meta_description": "Samsung added Performance Max to its Display and Discovery campaigns (Galaxy Campus Store, Korea): 2.5x conversions, -60% cost per conversion.",
+    "resume_citable": "Samsung Electronics multiplied conversions by 2.5 and cut cost per conversion by 60% by adding a Google Performance Max campaign on top of its Display and Discovery campaigns for the Galaxy Campus Store in Korea (controlled test over five weeks, 2022).",
+    "faq": [
+      {
+        "q": "Does Performance Max replace existing campaigns?",
+        "a": "In Samsung's case, no: PMax was added on top of the Display and Discovery campaigns already in place, and it was this addition that produced 2.5x more conversions."
+      },
+      {
+        "q": "Do you need to build an AI model?",
+        "a": "No. Performance Max is a Google Ads feature. The key is the quality of conversion tracking and the volume of assets, not building a model."
+      }
+    ]
+  },
+  "pattern": "Adding a Performance Max campaign on top of existing Display and Discovery campaigns, with ML steering of bids, creative mix, and cross-channel allocation on an e-commerce conversion goal",
+  "etape_parcours": "consideration -> purchase",
+  "objectif_business": "Amplify the promotions of the Galaxy Campus Store, Samsung's online store reserved for Korean students, by finding new audiences without blowing up the cost per conversion.",
+  "points_cles": [
+    "Google Performance Max campaign added on top of existing Display and Discovery campaigns (Galaxy Campus Store).",
+    "ML steering of bids, creative mix, and cross-channel allocation, tested against a control over five weeks.",
+    "2.5x conversions, cost per conversion -60%, click-through rate doubled.",
+    "Evidence level B, mixed signals status."
+  ],
+  "description": "Samsung Electronics set up a controlled test in Korea on its Galaxy Campus Store, a store dedicated to students for mobile and IT products. The control group ran with its Display and Discovery campaigns alone; the test group added a Performance Max campaign on top. All targeted the same conversions: a page view or a purchase on the Samsung site. You upload the assets (videos, images, text), and Google's algorithm continuously decides which creative to show, on which channel among Search, YouTube, Display, Discover, Maps, and Gmail, and at what bid. The test ran for five weeks. On top of the existing campaigns, Performance Max produced 2.5 times more conversions, with cost per conversion down 60% and click-through rate doubled. After this result, Samsung extended its use of Performance Max, including on short campaigns, and began rolling out Video action campaigns in the first quarter of 2022.",
+  "resultats": [
+    {
+      "metrique": "Conversions (vs Display + Discovery alone)"
+    },
+    {
+      "metrique": "Cost per conversion"
+    },
+    {
+      "metrique": "Click-through rate"
+    }
+  ],
+  "niveau_preuve": {
+    "justification": "Quantified Think with Google case study, drawn from a controlled test (control group vs test) with a named quote from a Samsung Korea lead - platform bias. The reality of the store (Galaxy Campus Store) is corroborated by an independent press source, but the incremental effect is not confirmed in financial results."
+  },
+  "stack_technique": [
+    {
+      "detail": "single campaign driven by Google's ML: bids, channel choice, and creative rotation across Search, YouTube, Display, Discover, Maps, and Gmail"
+    },
+    {
+      "detail": "automated bidding optimized on the defined conversion action (page view or purchase)"
+    },
+    {
+      "detail": "placement of the e-commerce conversion signal, shared between the control group and the test group"
+    },
+    {
+      "detail": "existing campaigns kept as the control group, PMax added on top in the test group"
+    }
+  ],
+  "fonctionnement_operationnel": {
+    "cadence": "Continuous, with a two-week ramp-up phase. The Samsung case was judged over five weeks, not before.",
+    "opere_par": "The media team (in-house or agency), with the data team for e-commerce conversion tracking.",
+    "signal_pilote": "The e-commerce conversion (page view or purchase). If the conversion tag is poorly placed or incomplete, the algorithm optimizes on noise and the cost per conversion does not come down.",
+    "etapes": [
+      {
+        "etape": "Set up conversion tracking properly",
+        "detail": "Define the same conversion action for all campaigns (page view or purchase on the site), otherwise the A/B test is not comparable.",
+        "acteur": "Data team"
+      },
+      {
+        "etape": "Structure the test incrementally",
+        "detail": "A control group with Display + Discovery alone, a test group with Performance Max added. It is the delta between the two that measures the real contribution.",
+        "acteur": "Media team"
+      },
+      {
+        "etape": "Supply assets in volume",
+        "detail": "Videos, images, and headlines in quantity to give the algorithm material. Few assets and it cycles through the same combinations.",
+        "acteur": "Creative team"
+      },
+      {
+        "etape": "Let it converge before concluding",
+        "detail": "Two weeks of ramp-up minimum. Cutting or reworking during this phase distorts the readout.",
+        "acteur": "Google AI"
+      }
+    ]
+  },
+  "replication": {
+    "prerequis_data": [
+      "Reliable e-commerce conversion tracking (page view / purchase)",
+      "Consent Mode v2 in the EU",
+      "A clean product feed if selling online"
+    ],
+    "prerequis_orga": [
+      "Video/image/text creative assets in volume",
+      "Ability to structure an incremental test (control vs test)"
+    ],
+    "stack_possible": [
+      "Google Ads Performance Max + GA4, on top of existing Display/Discovery campaigns"
+    ],
+    "premiere_etape": "Launch an official Google Ads PMax test on top of the current campaigns, on a single conversion goal, and measure the delta rather than raw volume.",
+    "playbook": [
+      {
+        "action": "Validate conversion tracking: a single conversion action (page view or purchase), identical across all campaigns",
+        "livrable": "Tag validated in Google Ads / GA4, same action for control and test"
+      },
+      {
+        "action": "Gather assets in volume (videos, images, headlines, descriptions) for the asset groups",
+        "livrable": "Asset bank loaded, several formats per group"
+      },
+      {
+        "action": "Structure the incremental test: Display + Discovery alone as control, PMax added on the test scope",
+        "livrable": "Written test plan with budget and KPIs (conversions, cost per conversion)"
+      },
+      {
+        "action": "Launch the campaign and do not rework it during ramp-up",
+        "livrable": "Campaign live, two weeks of learning without intervention"
+      },
+      {
+        "action": "Compare conversions and cost per conversion between control and test, then decide on scaling",
+        "livrable": "Documented incremental readout and budget decision"
+      }
+    ],
+    "equipe": "1 media buyer + 1 data/tracking profile (tag and conversions) + assets supplied by the in-house creative team or an agency"
+  },
+  "statut_vivant": {
+    "note": "The quantified case dates from 2022 and Samsung no longer communicates about it. The pattern itself (PMax on top of existing campaigns) is more central than ever in Google Ads in 2025-2026, and the Galaxy Campus Store is still active according to Korean press."
+  },
+  "transposable_ue": {
+    "note": "Performance Max is available in the EU, but requires Consent Mode v2 (GDPR/DMA) and gives little visibility into placement detail. The case itself ran in Korea; in Europe, plan for consent governance before scaling. No high-risk classification under the AI Act."
+  }
+}

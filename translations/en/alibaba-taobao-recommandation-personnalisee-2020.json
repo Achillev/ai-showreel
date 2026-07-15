@@ -1,0 +1,123 @@
+{
+  "seo": {
+    "title": "Taobao (Alibaba): real-time product recommendation with deep learning - more than 80% of mobile users covered",
+    "meta_description": "Taobao's personalized recommendation is the second navigation mode after search: real-time deep learning across hundreds of scenarios, covering more than 80% of Taobao Mobile users.",
+    "resume_citable": "On Taobao, real-time product recommendation with neural networks covers more than 80% of mobile users and 1000+ scenarios; productized as Alibaba Cloud AIRec, it delivered a 9% conversion gain for a sportswear retailer.",
+    "faq": [
+      {
+        "q": "What role does recommendation play on Taobao?",
+        "a": "It is the second navigation mode after search, served in real time on the home page, the You May Like feed, and search pages."
+      },
+      {
+        "q": "Are the figures independent?",
+        "a": "No: they come from Alibaba Cloud's official technical blogs, an interested source. The 9% conversion figure concerns an AIRec client, not Taobao itself."
+      }
+    ]
+  },
+  "pattern": "Real-time product recommendation with deep learning, served across hundreds of scenarios in the app",
+  "etape_parcours": "discovery -> consideration -> purchase",
+  "objectif_business": "Make recommendation the app's second navigation mode after search, so that a vast catalog stays browsable and converts.",
+  "description": "On Taobao, Alibaba's consumer e-commerce app, personalized recommendation has become the second navigation mode after search. The system captures user behavior (views, clicks, purchases) and serves relevant products within milliseconds, on the home page, in the You May Like feed, on search pages, and during major events like 11.11. The architecture relies on deep neural networks and a recall-then-ranking chain, with model update cycles reduced from hours to minutes. According to Alibaba Cloud, the system covers more than 80% of Taobao Mobile users and powers more than 1000 personalized scenarios across the group. The same technology, productized under the name Alibaba Cloud AIRec, is sold to third-party merchants: in one sportswear retailer case, it raised the transaction conversion rate by 9% and reduced the empty-results rate by 80%.",
+  "points_cles": [
+    "Real-time product recommendation with deep learning, the second navigation mode after search.",
+    "Recall-then-ranking chain on Alibaba Cloud AI OS, productized as AIRec.",
+    "More than 80% of Taobao Mobile users covered, 1000+ scenarios; 9% conversion gain for an AIRec client.",
+    "Evidence level B, living status confirmed."
+  ],
+  "resultats": [
+    {
+      "metrique": "Taobao Mobile user coverage"
+    },
+    {
+      "metrique": "Personalized scenarios served across the group"
+    },
+    {
+      "metrique": "Conversion rate (AIRec client, sportswear retailer)"
+    }
+  ],
+  "niveau_preuve": {
+    "justification": "Figures published by Alibaba Cloud (official technical blogs), therefore an interested source not audited by a third party. Two concordant articles describe the scale on Taobao; the conversion figures come from a client case of the productized AIRec solution."
+  },
+  "stack_technique": [
+    {
+      "detail": "Alibaba's internal platform that unifies recall, ranking, and real-time serving of recommendations across Taobao surfaces."
+    },
+    {
+      "detail": "In-house models for candidate selection then ranking, with update cycles reduced from hours to minutes."
+    },
+    {
+      "detail": "Productized version of Taobao's recommendation engine, sold to third-party merchants."
+    },
+    {
+      "detail": "Continuous capture of views, clicks, and purchases that updates the user profile live."
+    }
+  ],
+  "fonctionnement_operationnel": {
+    "cadence": "Real time on each display, with model retraining and updates reduced from hours to minutes.",
+    "opere_par": "Alibaba's AI and infrastructure teams (AI OS platform), product teams per scenario.",
+    "signal_pilote": "In-session behavior (views, clicks, purchases) captured continuously. Without this real-time stream, recommendations fall back to generic lists and the feed loses its relevance.",
+    "etapes": [
+      {
+        "etape": "Capture behavior",
+        "detail": "Every interaction in the app is reported and updates the user profile live.",
+        "acteur": "AI / platform"
+      },
+      {
+        "etape": "Recall candidates",
+        "detail": "A first layer (recall) selects a subset of relevant items from a vast catalog.",
+        "acteur": "AI / platform"
+      },
+      {
+        "etape": "Rank and serve",
+        "detail": "The neural networks rank the candidates and deliver the list within milliseconds on the relevant surface.",
+        "acteur": "AI / platform"
+      },
+      {
+        "etape": "Refresh the models",
+        "detail": "The update cycles, reduced from hours to minutes, quickly incorporate new signals, useful during peaks like 11.11.",
+        "acteur": "Data / infra team"
+      }
+    ]
+  },
+  "replication": {
+    "prerequis_data": [
+      "Real-time behavioral stream at audience scale",
+      "Broad product catalog with usable attributes",
+      "Low-latency serving infrastructure"
+    ],
+    "prerequis_orga": [
+      "ML and infra team able to run a real-time service",
+      "App surfaces instrumented per scenario"
+    ],
+    "stack_possible": [
+      "Alibaba Cloud AIRec or an equivalent managed recommendation engine (AWS Personalize, Google Recommendations AI)",
+      "Feature store plus a ranking model for a custom version"
+    ],
+    "equipe": "1 ML engineer + 1 data engineer + 1 PM for a managed version; a full ML and infra team for custom at scale",
+    "playbook": [
+      {
+        "action": "Instrument the behavioral stream (views, clicks, purchases) and structure the catalog with stable identifiers.",
+        "livrable": "Reliable real-time event pipeline connected to the catalog"
+      },
+      {
+        "action": "Launch a first managed recommendation (AIRec, AWS Personalize, or equivalent) on a single surface, the home page.",
+        "livrable": "A for-you-style feed in beta on a share of traffic"
+      },
+      {
+        "action": "Run an A/B test against navigation without recommendation and read CTR, conversion, and navigation share.",
+        "livrable": "Controlled test result and rollout decision"
+      },
+      {
+        "action": "Extend to the other surfaces (search, product pages) and shorten the model update cycle.",
+        "livrable": "Recommendation served across multiple scenarios with freshness monitoring"
+      }
+    ],
+    "premiere_etape": "Add a for-you feed on the app's home page, powered by session behavior, and measure its share of navigation and conversion against search alone."
+  },
+  "statut_vivant": {
+    "note": "Recommendation is a pillar of the Taobao app and of Alibaba's cloud offering (AIRec). Recent official documentation (2020-2021) confirming large-scale deployment."
+  },
+  "transposable_ue": {
+    "note": "The pattern (real-time deep learning recommendation on every app surface) transfers, but the scale and signal density of the Chinese market are specific to it. In the EU, real-time profiling requires a GDPR legal basis and disclosure; the data architecture (localization, transfers) must be rethought."
+  }
+}

@@ -1,0 +1,126 @@
+{
+  "seo": {
+    "title": "Lazada: Lazzie assistant and genAI marketplace agents - +42% orders in pilot (2024)",
+    "meta_description": "Lazada deploys the AI Lazzie assistant (Qwen) plus genAI agents for recommendation, review summarization, and listing generation across 6 Southeast Asian markets; +42% orders in pilot, 13 million listings optimized.",
+    "resume_citable": "In 2024, across six Southeast Asian markets, Lazada deployed the AI Lazzie conversational assistant (built on Alibaba's Qwen model) plus genAI agents for recommendation, review summarization, and product listing generation; in the pilot phase the assistant increased orders by 42 percent, and the Product Listing Agent optimized more than 13 million seller listings.",
+    "faq": [
+      {
+        "q": "What model powers Lazada's AI Lazzie assistant?",
+        "a": "Lazzie is built on Qwen, the large language model of the Alibaba Group, Lazada's parent company."
+      },
+      {
+        "q": "Is the +42 percent orders figure a general result?",
+        "a": "No. According to The Manila Times (Nov. 2025), Lazzie increased orders by 42 percent and interactions by 50 percent in the pilot phase only, not as a generalized result."
+      },
+      {
+        "q": "In which markets are these features deployed?",
+        "a": "Lazada's six markets in Southeast Asia: Indonesia, Malaysia, the Philippines, Singapore, Thailand, and Vietnam."
+      }
+    ]
+  },
+  "pattern": "consumer conversational shopping assistant plus genAI agents for recommendation, review summarization, and product listing generation on a marketplace",
+  "etape_parcours": "Consideration",
+  "objectif_business": "Increase conversion and basket size on the marketplace by answering buyers' product questions at the moment of consideration, personalizing recommendations and review summaries, and lowering the cost of producing quality product listings for the million active sellers, across six Southeast Asian markets where appetite for shopping AI is already strong.",
+  "description": "In October 2024, Lazada announced a suite of genAI features for its six Southeast Asian markets (Indonesia, Malaysia, the Philippines, Singapore, Thailand, Vietnam), organized around two sides. On the buyer side, the AI Lazzie assistant answers product questions, compares features, summarizes customer reviews, and personalizes recommendations based on browsing behavior and purchase history; to this are added smart reviews, AI-curated offers and vouchers, and a SmartStack mechanism that automatically combines rewards and seller vouchers. On the seller side, a Product Listing Agent generates titles and descriptions, translates listings into the region's languages through the Marco MT tool, and suggests a competitive price based on real-time demand; a Refund Agent handles refund requests autonomously. The whole thing is built on Qwen, the large language model of the Alibaba Group. Lazada states that it connects about 160 million active users to more than one million active sellers each month. In the pilot phase, Lazzie reportedly increased orders by 42 percent and interactions by 50 percent; these figures are a pilot, not a generalized result. The Product Listing Agent optimized more than 13 million listings, with page views up as much as 180 percent in one week, and 35 percent of refund requests were handled autonomously with 99 percent accuracy (press, November 2025).",
+  "points_cles": ["Lazzie shopping assistant plus genAI agents for recommendation, review summarization, and product listings.", "Built on Alibaba's Qwen LLM, across six Southeast Asian markets.", "Pilot: orders +42%, interactions +50%; more than 13 million listings optimized.", "35% of refunds handled autonomously, evidence level B confirmed."],
+  "resultats": [
+    { "metrique": "Lazzie in pilot phase: orders, interactions +50%" },
+    { "metrique": "Listings optimized by the Listing Agent: 11 hours saved, views +180% in one week" },
+    { "metrique": "Refund requests handled autonomously, 99% accuracy" },
+    { "metrique": "Active users connected to more than one million sellers per month" },
+    { "metrique": "Southeast Asian respondents making purchase decisions through AI content; personalized recommendation 92%, summaries 90%" }
+  ],
+  "niveau_preuve": {
+    "justification": "Official Lazada press release (T1_primary, PR Newswire, Oct. 2024) announcing the genAI suite across six markets and quantifying the marketplace scale (160 million users, one million sellers), consistent with established press (The Manila Times, Nov. 2025) reporting the impact figures attributed to Lazada (13 million listings optimized, autonomous refunds, and the pilot at +42 percent). Public and concordant figures but none at the financial-results level; the +42 percent is explicitly a pilot."
+  },
+  "stack_technique": [
+    { "detail": "Consumer conversational assistant integrated into the Lazada app and site. It answers product questions, compares features, summarizes customer reviews, and follows wishlists and browsing behavior to recommend. Presented as a co-pilot meant to increase conversion." },
+    { "detail": "The Alibaba Group's large language model that powers Lazzie and content generation. Serves as the conversational and generative foundation for the marketplace's genAI features." },
+    { "detail": "LLM-based translation tool, used so that sellers can create product listings in the language of their target market by interpreting cultural and sector-specific terms. The generated descriptions and images are adapted by region, language, and cultural nuance." },
+    { "detail": "Seller-side agent that generates titles and descriptions, translates listings into Southeast Asian languages, and suggests a competitive price based on real-time demand." }
+  ],
+  "fonctionnement_operationnel": {
+    "cadence": "Real time for the Lazzie assistant and buyer-side recommendations; on demand for seller listing generation; price suggestions re-evaluated on real-time demand",
+    "opere_par": "Lazada product and AI teams, on the Alibaba Group's Qwen infrastructure and models",
+    "signal_pilote": "On the buyer side, the intent expressed in the conversation plus browsing behavior and purchase history; on the seller side, the catalog and real-time demand signals. If first-party history or a structured catalog is missing, recommendations and listing generation lose their relevance.",
+    "etapes": [
+      {
+        "etape": "Buyer question",
+        "detail": "The customer asks Lazzie about a product, a comparison, or a review, in the app or on the site.",
+        "acteur": "client"
+      },
+      {
+        "etape": "Conversational response and recommendation",
+        "detail": "Lazzie interprets the request through Qwen, retrieves listings, reviews, and history, summarizes the reviews, and offers personalized recommendations and vouchers.",
+        "acteur": "AI"
+      },
+      {
+        "etape": "Seller-side listing generation",
+        "detail": "The seller submits a product; the Product Listing Agent generates the title and description, translates it into the market's language through Marco MT, and suggests a competitive price.",
+        "acteur": "AI"
+      },
+      {
+        "etape": "Autonomous refund handling",
+        "detail": "The Refund Agent processes part of the refund requests and issues return codes, with no human intervention on standard cases.",
+        "acteur": "AI"
+      },
+      {
+        "etape": "Supervision and steering",
+        "detail": "The teams track conversion, interactions, seller page views, and the autonomous refund rate to extend the scope and adjust the models.",
+        "acteur": "data team"
+      }
+    ]
+  },
+  "replication": {
+    "prerequis_data": [
+      "Structured and multilingual product catalog",
+      "First-party browsing and purchase history per user",
+      "Corpus of customer reviews usable for automatic summarization",
+      "Real-time demand signals for price suggestion"
+    ],
+    "prerequis_orga": [
+      "Marketplace with third-party sellers to equip",
+      "Product and AI team able to operate a conversational assistant continuously",
+      "Access to a multilingual LLM covering the languages of the target markets",
+      "Transparency and compliance framework for conversational AI and generated content"
+    ],
+    "stack_possible": [
+      "Multilingual LLM (like Qwen) as a conversational and generative foundation",
+      "Assistant layer integrated into the app and site, connected to the catalog and reviews",
+      "Product listing generation and translation agent",
+      "Recommendation engine on first-party data",
+      "Automatic review summarization module",
+      "Refund handling agent for standard cases"
+    ],
+    "premiere_etape": "Identify the most costly conversion friction point (the product questions that go unanswered at the moment of consideration) and connect a conversational assistant backed by the catalog and reviews, before extending to seller tools.",
+    "playbook": [
+      {
+        "action": "Map buyers' recurring product questions from search, support, and conversation logs.",
+        "livrable": "Reference of priority purchase intents by volume."
+      },
+      {
+        "action": "Connect a conversational assistant to the catalog, reviews, and first-party history to answer, compare, and recommend.",
+        "livrable": "Assistant in beta on a buyer segment, response rate and conversion tracked."
+      },
+      {
+        "action": "Add an automatic review summarization module and personalized recommendations based on browsing and history.",
+        "livrable": "Review summaries and recommendations displayed on listings and in the assistant."
+      },
+      {
+        "action": "Equip sellers with a listing generation and translation agent and a demand-based price suggestion.",
+        "livrable": "Multilingual listing generation in self-service for sellers."
+      },
+      {
+        "action": "Extend to high-volume operations (standard refunds) with a supervised autonomous agent, then measure conversion, interactions, and seller page views.",
+        "livrable": "Agent suite in production with a buyer and seller impact dashboard."
+      }
+    ],
+    "equipe": "1 e-commerce product team (PM, design) + AI engineers (conversational assistant, recommendation, listing generation, catalog integrations) + data for demand signals + compliance for AI transparency and generated content."
+  },
+  "statut_vivant": {
+    "note": "Suite announced in October 2024 and still documented in November 2025 by the press, with volumes rising on the seller side (more than 13 million listings optimized) and new agents (Refund Agent, Sponsored Max). No signal of withdrawal."
+  },
+  "transposable_ue": {
+    "note": "The pattern (conversational shopping assistant + genAI agents for recommendation, review summarization, and product listing generation) transposes to any marketplace. In the EU, the conversational assistant carries a transparency obligation under the AI Act (tell the customer they are talking to an AI) and a GDPR legal basis for the use of browsing and purchase history that feeds the recommendations. The generated content (descriptions, images, models) falls under European rules on synthetic content. The underlying model here is Qwen, proprietary to the Alibaba Group; a European replicator would substitute a multilingual LLM with compliant hosting and data residency."
+  }
+}

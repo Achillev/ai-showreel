@@ -1,0 +1,111 @@
+{
+  "seo": {
+    "title": "Kraft Heinz: TasteMaker RAG engine - creative design 8x faster (2024)",
+    "meta_description": "Kraft Heinz generates its creative content through TasteMaker, a RAG engine on Google Vertex AI: timelines from weeks to hours (8x), more than 100 brands.",
+    "resume_citable": "Kraft Heinz built TasteMaker, a RAG creative generation engine on Google Vertex AI (with Apply Digital), which takes creative design from weeks to hours (about 8x) for a portfolio of more than 100 brands.",
+    "faq": [
+      {
+        "q": "What is TasteMaker at Kraft Heinz?",
+        "a": "A RAG creative generation engine, built on Google Vertex AI with Apply Digital, that generates images, motion, and video from Kraft Heinz's codified brand assets."
+      },
+      {
+        "q": "What time savings does Kraft Heinz claim?",
+        "a": "Creative design timelines cut from weeks to hours, about 8x faster, across a portfolio of more than 100 brands."
+      }
+    ]
+  },
+  "pattern": "RAG creative generation engine on a proprietary brand corpus",
+  "etape_parcours": "Consideration",
+  "objectif_business": "Produce on-brand creative content on demand for a portfolio of more than 100 brands, without the delays and costs of standard agency cycles, while keeping control of the brands' intellectual property.",
+  "description": "Kraft Heinz built TasteMaker, a RAG-type creative generation engine built on Google Vertex AI with the integrator Apply Digital. The system indexes codified brand assets (guidelines, visuals, product references) in an internal corpus served through BigQuery, then generates images, motion, and video on demand while staying within each brand's rules. The instance is proprietary, which protects the brands' IP. Kraft Heinz manages more than 100 brands and reports that TasteMaker takes creative design timelines from weeks to hours, an acceleration of about 8x. The deployment started on four use cases before being extended after the first results. The roadmap adds fine-tuning of image generation on proprietary data, video, and concept testing on synthetic users.",
+  "points_cles": ["RAG creative generation engine on a proprietary brand corpus.", "Built on Google Vertex AI with Apply Digital as integrator.", "Creative design timelines from weeks to hours, about 8x faster.", "Deployed across more than 100 brands, evidence level C confirmed."],
+  "resultats": [
+    { "metrique": "Creative design timeline, from weeks to hours" },
+    { "metrique": "Scope of global brands covered" },
+    { "metrique": "Formats generated on demand" }
+  ],
+  "niveau_preuve": {
+    "justification": "Several concordant sources naming Kraft Heinz and the 8x factor (Forrester analyst, Google Cloud customer story, integrator Apply Digital, specialized press). No standalone figure in financial results, so C."
+  },
+  "stack_technique": [
+    { "detail": "Kraft Heinz's proprietary instance that generates images, motion, and video within each brand's rules, protecting the IP" },
+    { "detail": "cloud AI foundation on which TasteMaker is built" },
+    { "detail": "Google generative models: text and reasoning (Gemini), image (Imagen), video (Veo)" },
+    { "detail": "serves the codified brand asset corpus (guidelines, visuals, product references) to the RAG engine" },
+    { "detail": "design and development of the platform with the Kraft Heinz teams" }
+  ],
+  "fonctionnement_operationnel": {
+    "cadence": "On demand, per campaign. A creative request results in assets in hours rather than weeks.",
+    "opere_par": "Kraft Heinz brand and marketing teams, on the TasteMaker platform built with Apply Digital on Google Vertex AI.",
+    "signal_pilote": "The corpus of codified brand assets (guidelines, visuals, products) served through RAG. If the corpus is incomplete or poorly indexed, generation drifts from the guidelines and loses brand consistency.",
+    "etapes": [
+      {
+        "etape": "Brand asset indexing",
+        "detail": "Codification of the guidelines, visuals, and product references into an internal corpus served through BigQuery.",
+        "acteur": "data team / Apply Digital"
+      },
+      {
+        "etape": "Creative request",
+        "detail": "The brand team describes the need (format, market, angle) to the platform.",
+        "acteur": "marketing"
+      },
+      {
+        "etape": "Multimodal generation",
+        "detail": "TasteMaker produces images, motion, and video within the brand's rules through Vertex AI (Gemini, Imagen, Veo).",
+        "acteur": "AI"
+      },
+      {
+        "etape": "Brand control and distribution",
+        "detail": "Validation by the brand team, then placement in digital media, on e-commerce pages, and on social.",
+        "acteur": "marketing"
+      }
+    ]
+  },
+  "replication": {
+    "prerequis_data": [
+      "corpus of codified and indexable brand assets",
+      "guidelines and rules per brand and per market",
+      "warehouse-type data infrastructure (BigQuery or equivalent)"
+    ],
+    "prerequis_orga": [
+      "quality governance for the generated content",
+      "private AI instance to protect the brands' IP",
+      "marketing team trained in creative briefing on a genAI tool"
+    ],
+    "stack_possible": [
+      "RAG engine on multimodal generative models",
+      "cloud platform (Vertex AI or equivalent)",
+      "integrator for the assembly (like Apply Digital)"
+    ],
+    "premiere_etape": "Codify the assets of one high-creative-volume brand and measure design timelines before and after.",
+    "playbook": [
+      {
+        "action": "Codify the assets of a high-creative-volume pilot brand (guidelines, visuals, references)",
+        "livrable": "Indexed and queryable brand corpus"
+      },
+      {
+        "action": "Set up the RAG engine on the generative models in a private instance",
+        "livrable": "Platform generating assets compliant with the guidelines"
+      },
+      {
+        "action": "Validate on 3-4 concrete use cases and measure timelines before and after",
+        "livrable": "Assets produced + design timeline comparison"
+      },
+      {
+        "action": "Set up the brief-generation-brand-control workflow and distribute",
+        "livrable": "Process in production across media, e-commerce, and social"
+      },
+      {
+        "action": "Extend to the brand portfolio with quality governance",
+        "livrable": "Corpus per brand + common validation rules"
+      }
+    ],
+    "equipe": "1 PM + integrator (2-4 people during build) + 1 brand manager per brand for codification and control"
+  },
+  "statut_vivant": {
+    "note": "Platform deployed, extended after four initial use cases, with a public roadmap (video, testing on synthetic users). Named and documented by Google Cloud and the integrator Apply Digital."
+  },
+  "transposable_ue": {
+    "note": "The system generates creative content from a private brand corpus, without consumer personal data in the generation loop. Under the AI Act, transparency on generated visuals should be planned. The data layer (BigQuery) and the model (Vertex AI) must be hosted in GDPR compliance for an EU deployment."
+  }
+}

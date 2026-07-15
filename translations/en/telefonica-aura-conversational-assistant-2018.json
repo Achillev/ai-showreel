@@ -1,0 +1,114 @@
+{
+  "seo": {
+    "title": "Telefonica: Aura, multi-brand conversational assistant - 400M interactions/year (2018)",
+    "meta_description": "Aura, Telefonica's conversational assistant since 2018 (Movistar, Vivo, O2): products and billing in natural language, 30+ channels, ~400M interactions/year.",
+    "resume_citable": "Telefonica has operated Aura since 2018, a conversational assistant declined by brand (Movistar, Vivo, O2) that handles products and billing in natural language across more than 30 channels and claims about 400 million interactions per year.",
+    "faq": [
+      {
+        "q": "Is Aura just a chatbot?",
+        "a": "It executes self-care actions (billing, options) in addition to answering, across app, TV, home device, web, and call center, and by group brand."
+      },
+      {
+        "q": "What is the documented contribution?",
+        "a": "The volume and coverage (400M interactions/year, 30+ channels, several markets). The retention impact in points is not published."
+      }
+    ]
+  },
+  "pattern": "Multi-brand customer conversational assistant: a single natural-language AI base handles products, billing, and requests, declined by brand and by language, then enhanced with generative AI",
+  "etape_parcours": "post-purchase / self-care and retention",
+  "objectif_business": "Give customers a single natural-language entry point to manage their subscription and bills, brand by brand, and absorb the volume of contacts without routing it to advisors.",
+  "description": "Aura is Telefonica's conversational assistant, launched in 2018 under the group's brands (Movistar in Spain and Latin America, Vivo in Brazil, O2 in the United Kingdom and Germany). The customer speaks or writes in natural language to check their bill, manage their services, or resolve a question, through the app, TV, the Movistar Home device, the web, or the call center. The base was first trained on Azure Cognitive Services to fit the accents and phrasing of each country, then Telefonica added generative AI for personalized responses and content creation. The group claims about 400 million interactions per year and a presence on more than 30 channels, on a base of more than 350 million customers. Seven years after its launch, Aura remains the group's reference conversational channel.",
+  "points_cles": [
+    "Multi-brand self-care conversational assistant (Movistar, Vivo, O2) in natural language.",
+    "NLP base on Azure Cognitive Services, later enhanced with generative AI.",
+    "About 400 million interactions per year across more than 30 channels.",
+    "Evidence B, confirmed status, active since 2018."
+  ],
+  "resultats": [
+    { "metrique": "Annual interactions" },
+    { "metrique": "Channels covered" },
+    { "metrique": "Reach at launch, across 6 countries" }
+  ],
+  "niveau_preuve": {
+    "justification": "Case documented by Telefonica (official transformation handbook: 400 million interactions/year, 30+ channels) and by a Microsoft customer story at launch (markets, Azure technology). Concordant official Telefonica and vendor sources; the figures cover volume and coverage, not a retention impact in points."
+  },
+  "stack_technique": [
+    { "detail": "Natural language understanding at launch, trained on the accents and phrasing of each market." },
+    { "detail": "Telefonica's internal conversational base, declined by brand (Movistar, Vivo, O2) and by language, connected to the products and billing systems." },
+    { "detail": "Generative AI added for personalized responses and content creation; provider and model not named publicly." },
+    { "detail": "More than 30 channels connected to the same assistant: apps (Mi Movistar, Meu Vivo, MyO2), TV, Movistar Home, web, call center, Facebook Messenger, Google Assistant." }
+  ],
+  "fonctionnement_operationnel": {
+    "cadence": "Real time at each customer interaction. The language model is retrained per brand as intents and the catalog evolve.",
+    "opere_par": "A central AI/product team for the Aura base, each brand's local digital teams for language/offer adaptation and channel integration.",
+    "signal_pilote": "The quality of intent understanding per brand. If the model misreads a local phrasing, it routes the customer to an advisor and the deflection benefit collapses.",
+    "etapes": [
+      {
+        "etape": "Train a base per brand",
+        "detail": "The same conversational engine is trained on the accents, phrasing, and offers of each country rather than duplicating an assistant from scratch.",
+        "acteur": "central AI / data team"
+      },
+      {
+        "etape": "Connect all channels",
+        "detail": "App, TV, home device, web, call center, and third-party channels point to the same assistant, for a consistent answer whatever the entry point.",
+        "acteur": "local digital teams"
+      },
+      {
+        "etape": "Handle products and billing",
+        "detail": "The assistant executes self-care actions (check a bill, activate an option) in addition to answering, to avoid handoff to an advisor.",
+        "acteur": "AI / Aura"
+      },
+      {
+        "etape": "Enhance with generative AI",
+        "detail": "Addition of personalized responses and content creation where NLP scripted fixed answers.",
+        "acteur": "AI / data team"
+      }
+    ]
+  },
+  "replication": {
+    "prerequis_data": [
+      "Corpus of intents and conversations per brand/language",
+      "Access to the billing and service management systems to act, not just answer",
+      "GDPR governance over customer data"
+    ],
+    "prerequis_orga": [
+      "Central AI/product team plus local digital relays",
+      "Ability to integrate the assistant with all existing channels"
+    ],
+    "stack_possible": [
+      "Azure AI, Google Dialogflow/Vertex AI, or a market LLM in RAG",
+      "Multi-channel orchestration layer",
+      "API connection to the billing/services back-offices"
+    ],
+    "equipe": "1 base team (3-5 NLP/backend engineers + 1 PM) + one digital relay per brand for language, offer, and channels.",
+    "playbook": [
+      {
+        "action": "Frame a first market and two or three high-volume self-care intents (check the bill, change an option).",
+        "livrable": "Corpus of intents, target journeys, and deflection objectives."
+      },
+      {
+        "action": "Train the NLU on the local language and phrasing, connect the billing and service management APIs so the assistant acts, not just answers.",
+        "livrable": "Assistant able to execute the self-care actions in pre-production."
+      },
+      {
+        "action": "Launch on a first channel (the app), measure deflection and resolution rate, adjust the misunderstood intents.",
+        "livrable": "Quantified review of the pilot channel with resolution rate per intent."
+      },
+      {
+        "action": "Open the additional channels (web, call center) and industrialize retraining as the catalog evolves.",
+        "livrable": "Multi-channel base in production and intent update process."
+      },
+      {
+        "action": "Replicate brand by brand and country by country on the same base rather than duplicating assistants.",
+        "livrable": "Localization playbook (language, offers, channels) per market."
+      }
+    ],
+    "premiere_etape": "Frame a first market and two or three high-volume self-care intents (bill, option change), measure deflection and resolution rate before opening other channels and countries."
+  },
+  "statut_vivant": {
+    "note": "Aura is described as active in Telefonica's 2025 transformation handbook, with the addition of generative AI. Seven years of continuous production across several markets."
+  },
+  "transposable_ue": {
+    "note": "Already operated in the EU (Spain, Germany, United Kingdom at launch). The assistant handles products, billing, and natural-language requests: processing of customer data subject to GDPR, information, and access security. With the addition of generative AI, vigilance on personalized responses. AI Act: limited risk, obligation of transparency about the automated nature."
+  }
+}

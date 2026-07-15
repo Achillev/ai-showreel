@@ -1,0 +1,122 @@
+{
+  "seo": {
+    "title": "Oneisall: AI-generated ad creatives on Amazon Ads - +50% sales, -22% ACOS (2025)",
+    "meta_description": "Oneisall replaced its white-background visuals with AI-generated lifestyle images (Amazon Ads Image Generator): sales +50% year over year and ACOS -22% in the UK.",
+    "resume_citable": "Oneisall generated its Amazon Ads creatives with the image generator (genAI) in the UK in 2025 and reports sales up 50% year over year, ACOS down 22%, and share of voice up 50% on its main keyword category.",
+    "faq": [
+      {
+        "q": "What does the AI generate in this Amazon case?",
+        "a": "Lifestyle ad images: the tool places the product in context from the product listing, to replace white-background visuals in the Sponsored formats."
+      },
+      {
+        "q": "Why move from white background to lifestyle?",
+        "a": "Amazon documents that ads showing the product in context can have a click-through rate 40 percent higher than white-background visuals."
+      }
+    ]
+  },
+  "pattern": "AI image generation for retail media creatives",
+  "etape_parcours": "purchase",
+  "objectif_business": "Produce in-context ad visuals (products shown in a setting) with no studio or photo budget, to keep up with the pace of creatives that Sponsored campaigns on Amazon demand.",
+  "points_cles": [
+    "AI-generated lifestyle images to replace white-background visuals.",
+    "Amazon Ads Image Generator tool, served across Sponsored Brands, Products, and Display.",
+    "Sales up 50% year over year, ACOS down 22% in the UK.",
+    "Evidence B, confirmed status and an expanding tool."
+  ],
+  "description": "Oneisall, a maker of connected pet products, used the Amazon Ads image generator to replace its white-background visuals with AI-generated lifestyle images. The advertiser starts from the product listing; the tool produces images that place the product in a setting, served in the Sponsored Brands, Sponsored Products, and Sponsored Display formats. In the UK market in 2025, the brand reports a 50 percent year-over-year increase in sales, a 22 percent drop in ACOS, and a 50 percent gain in share of voice on its main keyword category. This is a generation case: the AI produces the ad visuals, whereas bid optimization is a separate mechanism. Amazon also documents that ads showing the product in context can have a click-through rate 40 percent higher than white-background visuals.",
+  "resultats": [
+    {
+      "metrique": "Sales year over year"
+    },
+    {
+      "metrique": "ACOS (advertising cost of sales)"
+    },
+    {
+      "metrique": "Share of voice on the main keyword category"
+    },
+    {
+      "metrique": "Click-through rate, product in context vs white background (Amazon Ads data)"
+    }
+  ],
+  "niveau_preuve": {
+    "justification": "Quantified Amazon Ads platform case study naming Oneisall and its Commercial Director; an official interested source, hence B. The tool and the order of magnitude of the creative gain are confirmed by Amazon's product communications."
+  },
+  "stack_technique": [
+    {
+      "detail": "GenAI image generator integrated into the Amazon Ads console: it produces lifestyle visuals placing the product in a setting from the product listing. Underlying model not published by Amazon."
+    },
+    {
+      "detail": "Amazon Ads formats in which the generated visuals are served and measured (sales, ACOS, share of voice)."
+    },
+    {
+      "detail": "Amazon Ads' genAI creative suite expanded in 2025 (images and video), the natural successor to the image generator for scaling up."
+    }
+  ],
+  "fonctionnement_operationnel": {
+    "cadence": "By campaign and by creative test: images are generated on demand when a new creative is needed, then put into rotation.",
+    "opere_par": "The brand's retail media / marketing team, in the Amazon Ads console.",
+    "signal_pilote": "Creative performance (click-through rate, attributed sales, ACOS) that indicates which image to push. Without reading this performance, the generation runs with no improvement loop.",
+    "etapes": [
+      {
+        "etape": "Product selection",
+        "detail": "The team picks the product listing from which to generate the visuals.",
+        "acteur": "marketing team"
+      },
+      {
+        "etape": "Image generation",
+        "detail": "The tool produces several lifestyle images placing the product in a setting.",
+        "acteur": "AI (Amazon Ads Image Generator)"
+      },
+      {
+        "etape": "Campaign launch",
+        "detail": "The selected visuals feed Sponsored Brands, Sponsored Products, and Sponsored Display.",
+        "acteur": "retail media team"
+      },
+      {
+        "etape": "Measurement and iteration",
+        "detail": "Tracking of sales, ACOS, and share of voice to keep the best creatives.",
+        "acteur": "retail media team"
+      }
+    ]
+  },
+  "replication": {
+    "playbook": [
+      {
+        "action": "Pick a best-seller product and generate a series of lifestyle images from the product listing in the Amazon Ads console.",
+        "livrable": "5-10 candidate visuals selected by the team"
+      },
+      {
+        "action": "Launch a Sponsored Brands test at equal budget: generated lifestyle visuals against existing white-background visuals.",
+        "livrable": "Test campaigns in rotation"
+      },
+      {
+        "action": "Read click-through rate, attributed sales, and ACOS; cut losing creatives, keep the winners.",
+        "livrable": "Documented test read with the retained creatives"
+      },
+      {
+        "action": "Extend to other products and to the Sponsored Products and Display formats, and set up the labeling process for generated visuals (AI Act).",
+        "livrable": "Library of genAI creatives + labeling process"
+      }
+    ],
+    "equipe": "1 retail media lead (in-house or agency); no photo studio or data profile needed",
+    "prerequis_data": [
+      "product listings on Amazon",
+      "access to the Amazon Ads console"
+    ],
+    "prerequis_orga": [
+      "retail media team able to test creatives",
+      "labeling process for generated visuals (AI Act)"
+    ],
+    "stack_possible": [
+      "Amazon Ads Image Generator",
+      "AI Creative Studio"
+    ],
+    "premiere_etape": "Generate lifestyle images for a best-seller product and test them in Sponsored Brands against the white-background visuals."
+  },
+  "statut_vivant": {
+    "note": "Amazon Ads' image generator is a standard tool, expanded in 2025 (AI Creative Studio, Video Generator). A live and expanding feature."
+  },
+  "transposable_ue": {
+    "note": "The case is already European (UK deployment). The tool generates lifestyle images from the product, with no individual profiling; low GDPR exposure. Watch the AI Act on labeling AI-generated visuals."
+  }
+}

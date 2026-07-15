@@ -1,0 +1,109 @@
+{
+  "seo": {
+    "title": "Colgate-Palmolive: genAI video (Google Veo) - production 4 to 6x faster (2024)",
+    "meta_description": "Colgate-Palmolive produced Hill's videos with Google Veo 4 to 6x faster, at a lower cost per concept and with equal or better consideration.",
+    "resume_citable": "Colgate-Palmolive produced two Hill's Pet Nutrition video ads with Google Veo and BCG 4 to 6 times faster than usual, at a significantly lower cost per concept and with equal or better consideration, on a repeatable volume-variety-velocity model meant to be extended.",
+    "faq": [
+      {
+        "q": "What gain did Colgate-Palmolive get with genAI video?",
+        "a": "Two Hill's video ads produced 4 to 6 times faster than the usual lead time, at a significantly lower cost per concept and with consideration equal to or better than classic creative."
+      },
+      {
+        "q": "Which tool and model did Colgate-Palmolive use?",
+        "a": "Google Veo for video generation, in a pilot with Google and BCG built on the three Vs of content: volume, variety, velocity."
+      }
+    ]
+  },
+  "pattern": "genAI video generation on a repeatable volume-variety-velocity model",
+  "etape_parcours": "consideration",
+  "objectif_business": "Prove a repeatable content production model (volume, variety, velocity) that produces video ads faster and cheaper, without losing measured effectiveness, in order to extend it across the portfolio.",
+  "description": "Colgate-Palmolive ran a genAI content pilot with Google and BCG for its Hill's Pet Nutrition division. Using Google Veo, a cross-functional team (Hill's marketers, in-house specialists, BCG, Google technologists) produced two consumer-ready video ads, 4 to 6 times faster than the usual production lead time, at a significantly lower cost per concept and with consideration equal to or better than usual creative. The pilot was built around the three Vs of content: volume, variety, velocity. Colgate-Palmolive positions this approach as a repeatable model to extend to other brands, in a context where the company is deploying genAI marketing more broadly (consumer insights, synthetic consumer twins, team upskilling via Google Workspace with Gemini).",
+  "resultats": [
+    { "metrique": "Video production speed" },
+    { "metrique": "Cost per concept" },
+    { "metrique": "Consideration vs usual creative" }
+  ],
+  "niveau_preuve": {
+    "justification": "Figures published by Google (Think with Google customer story) naming Colgate-Palmolive and its executive, corroborated by press and third-party analysis (MIT Sloan) of the group's genAI marketing. An extended-pilot type case, no financial results, hence C."
+  },
+  "stack_technique": [
+    { "detail": "Google's video generation model, used for the two Hill's spots, including the realistic animal characters" },
+    { "detail": "Google's LLM used in the group's genAI approach, notably for ideation and team upskilling" },
+    { "detail": "work environment where the group deploys Gemini to upskill teams" },
+    { "detail": "framing of the pilot and participation in the cross-functional team" }
+  ],
+  "fonctionnement_operationnel": {
+    "cadence": "Per campaign, on a repeatable model; generation of video concepts in days rather than weeks.",
+    "opere_par": "Cross-functional Colgate-Palmolive team (Hill's marketers, in-house specialists) with Google and BCG.",
+    "signal_pilote": "The consideration measured on the generated creative, compared to usual creative. If consideration drops, the speed gain does not offset the loss of effectiveness.",
+    "etapes": [
+      {
+        "etape": "Framing the model",
+        "detail": "Definition of the three Vs (volume, variety, velocity) and the Hill's scope with BCG and Google.",
+        "acteur": "marketing / BCG"
+      },
+      {
+        "etape": "Video generation",
+        "detail": "Production of two consumer-ready videos via Google Veo, with realistic animal characters.",
+        "acteur": "AI / creative team"
+      },
+      {
+        "etape": "Effectiveness test",
+        "detail": "Measurement of consideration against usual creative and of cost per concept.",
+        "acteur": "insights / marketing"
+      },
+      {
+        "etape": "Extending the model",
+        "detail": "Reuse of the repeatable model on other brands in the portfolio.",
+        "acteur": "marketing"
+      }
+    ]
+  },
+  "replication": {
+    "prerequis_data": [
+      "brand briefs and product references",
+      "a consideration measurement protocol",
+      "history of production costs for comparison"
+    ],
+    "prerequis_orga": [
+      "cross-functional creation / insights / tech team",
+      "documented repeatable model (three Vs)",
+      "an effectiveness safeguard before industrialization"
+    ],
+    "stack_possible": [
+      "video generation tool (Google Veo type)",
+      "LLM for ideation (Gemini type)",
+      "brand safety and human validation"
+    ],
+    "premiere_etape": "Choose one brand and generate two video concepts, then test them on consideration against usual production.",
+    "playbook": [
+      {
+        "action": "Frame the three Vs model (volume, variety, velocity) and the pilot scope on one brand.",
+        "livrable": "Framing note with speed, cost, and effectiveness objectives"
+      },
+      {
+        "action": "Assemble the cross-functional team (marketing, creatives, insights, tech) and open access to the generation tools.",
+        "livrable": "Team and production environment ready"
+      },
+      {
+        "action": "Generate two consumer-ready video concepts, keeping human validation on each shot.",
+        "livrable": "Two finalized spots, lead time and cost per concept measured"
+      },
+      {
+        "action": "Test consideration against usual creative and compare cost per concept to history.",
+        "livrable": "Quantified pilot review (speed, cost, consideration)"
+      },
+      {
+        "action": "Document the repeatable model to extend it to other brands in the portfolio.",
+        "livrable": "Validated internal extension playbook"
+      }
+    ],
+    "equipe": "1 pilot marketer + 1 genAI creative + 1 insights profile, with the tool vendor and a consultancy in support"
+  },
+  "statut_vivant": {
+    "note": "Quantified and documented pilot on Hill's, presented as a repeatable model to extend. The proof of scale rests on deployment intent more than on already-industrialized volume; to re-verify on the actual extension to other brands."
+  },
+  "transposable_ue": {
+    "note": "The model generates video advertising from generative tools (Google Veo), with no personal data in the creation loop. Under the AI Act, transparency to plan for on the generated characters and scenes. The Gemini / Google Workspace component must be configured in GDPR compliance for an EU deployment."
+  }
+}

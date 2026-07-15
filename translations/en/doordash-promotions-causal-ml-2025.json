@@ -1,0 +1,108 @@
+{
+  "seo": {
+    "title": "DoorDash: causal targeting of promotions - cost per incremental order cut by nearly half (2025)",
+    "meta_description": "DoorDash targets its promotions with causal machine learning: by estimating the incremental effect per customer, the personalized approach cuts cost per incremental order by nearly half at equal lift.",
+    "resume_citable": "DoorDash targets its promotions with causal machine learning by estimating each customer's uplift; the personalized approach cuts cost per incremental order by nearly half at equal sales performance.",
+    "faq": [
+      {
+        "q": "How does DoorDash decide who to send a promotion to?",
+        "a": "A causal machine learning model estimates, for each customer, the incremental effect of the promo on their order probability, then the allocation is optimized under a budget constraint."
+      },
+      {
+        "q": "What does causal targeting of promotions gain?",
+        "a": "At equal sales performance, the personalized approach cuts cost per incremental order by nearly half compared with a uniform send."
+      }
+    ]
+  },
+  "pattern": "Causal targeting of promotions (offer personalization)",
+  "etape_parcours": "loyalty",
+  "objectif_business": "Spend the promotional budget where it actually creates additional orders, instead of subsidizing orders that would have happened without a promo.",
+  "description": "DoorDash uses causal machine learning to estimate the incremental effect of a promotion on each user's order probability, then chooses which promos to send under a budget constraint. The framework has two stages: first estimate the causal response per customer with methods like double machine learning and meta-learners, then optimize offer allocation. The problem it addresses is non-incremental promotions, where a discount rewards an order that would have happened anyway and burns margin. The work was presented at the causal ML workshop at KDD 2025.",
+  "points_cles": ["Causal targeting of promotions: incremental effect estimated per customer, then allocation under budget.", "In-house causal framework (double machine learning, T-learner and S-learner meta-learners).", "Cost per incremental order cut by nearly half at equal lift.", "Evidence B, confirmed status, presented at the causal ML workshop at KDD 2025."],
+  "resultats": [
+    { "metrique": "Cost per incremental order reduced, at equal lift, personalized versus uniform" },
+    { "metrique": "Problem addressed by causal targeting, promo not targeted per individual" }
+  ],
+  "niveau_preuve": {
+    "justification": "Technical paper from the DoorDash teams presented at the causal ML workshop at KDD 2025, with a quantified result (cost per incremental order cut by nearly two), plus a concordant official engineering post. No consolidated financial figure, hence level B."
+  },
+  "stack_technique": [
+    { "detail": "Two-stage framework: per-customer uplift estimation (double machine learning, T-learner and S-learner meta-learners), presented at the causal ML workshop at KDD 2025." },
+    { "detail": "Chooses which customers get which offer to maximize incremental orders within the fixed promo budget." },
+    { "detail": "Internal channels through which the targeted promotions are delivered, then the real incremental is measured to retrain the model." }
+  ],
+  "fonctionnement_operationnel": {
+    "cadence": "Per campaign, with uplift estimation before the send and incremental measurement after.",
+    "opere_par": "DoorDash's marketing data science team.",
+    "signal_pilote": "The estimated causal uplift per customer, that is the difference in order probability with and without the promo. Without a causal measurement, correlation is mistaken for effect and the budget scatters across non-incremental orders.",
+    "etapes": [
+      {
+        "etape": "Campaign definition",
+        "detail": "The marketing team sets the objective and budget of the promotional campaign.",
+        "acteur": "marketing"
+      },
+      {
+        "etape": "Causal response estimation",
+        "detail": "A causal model estimates the incremental effect of the promo on each customer's order probability.",
+        "acteur": "AI"
+      },
+      {
+        "etape": "Allocation optimization",
+        "detail": "The system chooses which customers to target to maximize incremental orders under the budget constraint.",
+        "acteur": "AI"
+      },
+      {
+        "etape": "Send and measure",
+        "detail": "The targeted offers are sent, then the real incremental is measured to retrain the model.",
+        "acteur": "data team"
+      }
+    ]
+  },
+  "replication": {
+    "prerequis_data": [
+      "order history with exposure to promos",
+      "a stable customer identifier",
+      "results from experiments or natural variation to anchor the causal estimate"
+    ],
+    "prerequis_orga": [
+      "a data science team comfortable with causal inference",
+      "A/B testing capability",
+      "a promo budget steerable by segment"
+    ],
+    "stack_possible": [
+      "double machine learning and meta-learners for uplift",
+      "a constrained optimizer",
+      "a CRM sending tool"
+    ],
+    "premiere_etape": "Estimate the causal uplift of an existing promo on a segment, then compare uplift-based targeting to a uniform send.",
+    "playbook": [
+      {
+        "action": "Audit the promo history: offer exposures, orders, a stable customer identifier.",
+        "livrable": "An exposure-outcome dataset ready for modeling"
+      },
+      {
+        "action": "Build the uplift estimation (double machine learning or meta-learners) on a past promo.",
+        "livrable": "An uplift model validated offline (uplift by decile, Qini curves)"
+      },
+      {
+        "action": "Add budget-constrained allocation optimization and define the test campaign.",
+        "livrable": "A campaign plan: an uplift-targeted arm against a uniform arm, fixed budget"
+      },
+      {
+        "action": "Run the controlled test, uplift-based targeting against a uniform send.",
+        "livrable": "A read on cost per incremental order for both arms"
+      },
+      {
+        "action": "Industrialize: retraining per campaign and systematic incremental measurement.",
+        "livrable": "A reusable causal promo pipeline for every campaign"
+      }
+    ],
+    "equipe": "2 data scientists comfortable with causal inference + 1 growth PM + 1 CRM operator for the send."
+  },
+  "statut_vivant": {
+    "note": "Causal framework described as applied to DoorDash's real marketing scenarios, documented by an official paper and engineering post."
+  },
+  "transposable_ue": {
+    "note": "Causal targeting of promotions is transferable, but individual profiling to personalize an offer requires a GDPR legal basis and information about the automated decision logic. The causal analysis itself remains neutral under the AI Act."
+  }
+}

@@ -1,0 +1,108 @@
+{
+  "seo": {
+    "title": "KLM: conversational agent BB (BlueBot) - hybrid AI/human booking and service (2017)",
+    "meta_description": "BB (BlueBot), KLM's conversational agent launched in 2017 on Dialogflow, books flights on Messenger and Google Assistant, automates a large part of the conversation, and is backed by 250 agents.",
+    "resume_citable": "KLM has operated BB (BlueBot) since 2017, its conversational agent built with Google Dialogflow, which books flights on Messenger and Google Assistant and combines AI and 250 human agents in the same conversation.",
+    "faq": [
+      {
+        "q": "What is KLM's BB (BlueBot)?",
+        "a": "A conversational agent launched in 2017 that books flights on Messenger and helps prepare luggage through Google Assistant, with handoff to a human agent when it can no longer keep up."
+      },
+      {
+        "q": "What technology does BB run on?",
+        "a": "BB was built largely in-house with Google Dialogflow for natural language understanding, and connected to KLM's CRM."
+      }
+    ]
+  },
+  "pattern": "conversational booking and service agent, hybrid AI/human",
+  "etape_parcours": "Purchase",
+  "objectif_business": "Offer a conversational entry point to travelers who do not download the app, so they can book and get help where they already are (messaging apps and voice assistants), combining AI and human agents in a single conversation.",
+  "description": "BB (Blue Bot) is KLM's conversational agent, launched in September 2017 as a booking bot on Facebook Messenger. The traveler states a destination and dates, BB displays the options, and the purchase, personal details, and confirmation happen within the conversation. In December 2017, KLM added a luggage-packing service on Google Assistant. BB is built largely in-house with Google Dialogflow and connected to KLM's CRM, which lets a human agent take over when the bot can no longer keep up. KLM presents BB as a member of its service family, backed by its social teams that handle a high volume of messages each week.",
+  "resultats": [
+    { "metrique": "Conversation automated through Dialogflow NLU (unquantified, KLM statement)" },
+    { "metrique": "Human service backing behind BB for escalation" }
+  ],
+  "niveau_preuve": {
+    "justification": "Official KLM press release (subject brand) plus a Google Cloud customer case study, two concordant official sources that name the project, its channels, and its actors. KLM did not publish a deflection or conversion rate in figures, so the results remain qualitative and about scale, which caps at C."
+  },
+  "stack_technique": [
+    { "detail": "natural language understanding (NLU) for BB, built largely in-house on this foundation" },
+    { "detail": "messaging channels where BB books and serves the traveler within the conversation thread" },
+    { "detail": "voice channel added in December 2017 for the luggage-packing service" },
+    { "detail": "connection that lets a human agent take over the same conversation when the bot can no longer keep up" }
+  ],
+  "fonctionnement_operationnel": {
+    "cadence": "Real time, on every incoming conversation in the messaging apps and the voice assistant.",
+    "opere_par": "KLM's Social Media team, with customer service agents for escalation.",
+    "signal_pilote": "The quality of intent understanding (NLU) and the link to inventory and CRM. If the NLU does not recognize the request or the CRM does not keep up, human takeover becomes systematic and the channel loses its value.",
+    "etapes": [
+      {
+        "etape": "Conversational entry",
+        "detail": "The traveler writes to BB on Messenger or WhatsApp, or queries it through Google Assistant.",
+        "acteur": "client"
+      },
+      {
+        "etape": "Understanding and search",
+        "detail": "BB recognizes the intent (book, pack luggage) and proposes the suitable options.",
+        "acteur": "AI"
+      },
+      {
+        "etape": "Booking in the thread",
+        "detail": "The traveler chooses, enters their details, and receives confirmation without leaving the conversation.",
+        "acteur": "client"
+      },
+      {
+        "etape": "Human takeover",
+        "detail": "When BB can no longer respond, the CRM lets an agent take over the same conversation.",
+        "acteur": "customer service"
+      }
+    ]
+  },
+  "replication": {
+    "prerequis_data": [
+      "flight search engine and inventory via API",
+      "connected CRM for human takeover",
+      "corpus of intents to train the NLU"
+    ],
+    "prerequis_orga": [
+      "social media team that runs the bot",
+      "escalation procedure within the same conversation",
+      "multilingual management"
+    ],
+    "stack_possible": [
+      "NLU / conversational platform",
+      "messaging integration (Messenger, WhatsApp)",
+      "CRM connector"
+    ],
+    "premiere_etape": "Connect a booking bot to a messaging app with human takeover through the CRM, on a simple purchase journey.",
+    "playbook": [
+      {
+        "action": "Choose a simple purchase journey (direct booking) and build the corpus of intents",
+        "livrable": "List of target intents and dialogues"
+      },
+      {
+        "action": "Build the NLU and the conversation flows on one messaging channel",
+        "livrable": "Working bot in sandbox"
+      },
+      {
+        "action": "Connect the inventory (search and booking API) and the CRM for human takeover",
+        "livrable": "End-to-end booking within the conversation + tested escalation"
+      },
+      {
+        "action": "Open a beta on one market and one language",
+        "livrable": "Automated conversation share and satisfaction measured"
+      },
+      {
+        "action": "Extend languages and channels with the social team as backup",
+        "livrable": "Multilingual bot in production with a well-run escalation procedure"
+      }
+    ],
+    "equipe": "1 conversational PM + 1-2 integration devs + social media team for escalation"
+  },
+  "statut_vivant": {
+    "note": "BB has remained in service since 2017, presented by KLM as active on Messenger, Google Assistant, and WhatsApp, with human agent backing; dedicated page bb.klm.com still online."
+  },
+  "transposable_ue": {
+    "note": "Already operated from the Netherlands, so within the EU framework. A conversational agent that books and serves the customer through Messenger, Google Assistant, and WhatsApp requires GDPR compliance (processing of booking and messaging data) and, under the AI Act, disclosure of the use of AI in the conversation."
+  }
+}

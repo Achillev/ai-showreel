@@ -1,0 +1,117 @@
+{
+  "seo": {
+    "title": "YouTube: deep learning recommendation - ~70% of watch time driven (2018)",
+    "meta_description": "In 2018 YouTube stated that ~70% of watch time comes from its deep learning recommendations, a position confirmed by its official blog in 2021.",
+    "resume_citable": "About 70% of watch time on YouTube is driven by its deep learning recommendations, according to Neal Mohan (CES 2018), with the platform placing recommendation above subscriptions and search.",
+    "faq": [
+      {
+        "q": "What share of YouTube viewing comes from recommendations?",
+        "a": "About 70%, a figure announced by Chief Product Officer Neal Mohan at CES 2018."
+      },
+      {
+        "q": "How does YouTube recommendation work?",
+        "a": "Two deep learning networks, one to generate candidates among billions of videos, the other to rank them by useful watch time."
+      }
+    ]
+  },
+  "pattern": "content recommendation engine",
+  "etape_parcours": "loyalty",
+  "objectif_business": "Maximize useful watch time by automatically chaining relevant videos, to retain the audience on the platform rather than depending on search or subscriptions.",
+  "description": "The system generates for each user a feed of suggestions (home and right-hand column) from their history, watch time, likes, shares, and survey responses. It relies on two deep learning networks, one to select candidates, the other to rank them. It processes more than 80 billion signals and compares viewing habits to those of similar profiles.",
+  "resultats": [
+    {
+      "metrique": "Share of watch time driven by recommendations"
+    },
+    {
+      "metrique": "Weight of recommendations in viewership (official position)"
+    }
+  ],
+  "niveau_preuve": {
+    "justification": "The 70% figure was announced publicly in 2018 by Neal Mohan (then Chief Product Officer of YouTube) and reported by the specialized press. Qualitatively confirmed by the official YouTube blog (2021), which places recommendation above subscriptions and search."
+  },
+  "fonctionnement_operationnel": {
+    "cadence": "Real-time scoring at each session and after each video; periodic retraining of the networks on the logs.",
+    "opere_par": "YouTube Engineering teams, with support from Google Brain.",
+    "signal_pilote": "Watch time and engagement signals (clicks, duration, likes, shares, survey responses). If the system optimizes clicks rather than useful watch time, it drifts toward clickbait.",
+    "etapes": [
+      {
+        "etape": "Signal collection",
+        "detail": "History, watch time, likes, shares, and survey responses are logged per user.",
+        "acteur": "site_app / data team"
+      },
+      {
+        "etape": "Candidate generation",
+        "detail": "A first deep learning network selects a subset of relevant videos among billions.",
+        "acteur": "AI"
+      },
+      {
+        "etape": "Ranking",
+        "detail": "A second network orders the candidates by the probability of useful watch time for this user.",
+        "acteur": "AI"
+      },
+      {
+        "etape": "Rendering and loop",
+        "detail": "Home and suggestions are composed; the viewing that follows feeds the signals back.",
+        "acteur": "site_app / human"
+      }
+    ]
+  },
+  "replication": {
+    "prerequis_data": [
+      "per-user viewing logs",
+      "indexed content catalog",
+      "explicit and implicit engagement signals"
+    ],
+    "prerequis_orga": [
+      "dedicated ML team",
+      "real-time serving infrastructure at scale",
+      "governance over the optimized objective"
+    ],
+    "stack_possible": [
+      "custom/in-house",
+      "deep learning frameworks",
+      "two-tower candidate generation + ranking system"
+    ],
+    "premiere_etape": "Define the optimized objective (useful time, not raw clicks) before training any model, because it drives the entire behavior.",
+    "playbook": [
+      {
+        "action": "Define the optimized objective (useful watch time, not raw clicks) and instrument the logs.",
+        "livrable": "Documented target metric + reliable per-user logging pipeline."
+      },
+      {
+        "action": "Build the candidate generation model.",
+        "livrable": "Subset of relevant candidates evaluated offline against the existing system."
+      },
+      {
+        "action": "Build the ranking model and evaluate it offline.",
+        "livrable": "Ranking that beats the baseline on historical logs."
+      },
+      {
+        "action": "Launch the A/B test in production on a fraction of traffic.",
+        "livrable": "Useful watch time and retention readout vs control group."
+      },
+      {
+        "action": "Industrialize real-time serving and periodic retraining.",
+        "livrable": "Production system with drift and quality monitoring."
+      }
+    ],
+    "equipe": "3-5 ML engineers + 1 PM + infra/SRE team for real-time serving"
+  },
+  "statut_vivant": {
+    "note": "Recommendation remains YouTube's central mechanism; the official system page is still published and the feature is visible in production."
+  },
+  "transposable_ue": {
+    "note": "Recommendation on first-party viewing signals. Profiling subject to GDPR; transparency obligations on recommendation systems under the DSA for a very large platform. Already operated in the EU."
+  },
+  "stack_technique": [
+    {
+      "detail": "Two in-house deep learning networks: candidate generation (selection among billions of videos) then ranking (ordering by useful watch time)."
+    },
+    {
+      "detail": "Google's deep learning team and technologies that support the recommendation networks."
+    },
+    {
+      "detail": "More than 80 billion signals (history, watch time, likes, shares, surveys) logged per user, the raw material of the two networks."
+    }
+  ]
+}

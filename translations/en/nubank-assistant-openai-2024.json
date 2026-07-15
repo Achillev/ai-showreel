@@ -1,0 +1,116 @@
+{
+  "seo": {
+    "title": "Nubank: genAI customer agent (OpenAI) - 2M chats per month, 55% resolved (2024)",
+    "meta_description": "With OpenAI (GPT-4o), Nubank's assistant handles 2M chats per month, resolves 55% of Tier 1 inquiries, and cuts response time by 70%.",
+    "resume_citable": "In 2024, Nubank's customer assistant built with OpenAI (GPT-4o) handles over 2 million chats per month and resolves 55% of Tier 1 inquiries without a human, with chat response time reduced by 70% across a base of 114 million customers.",
+    "faq": [
+      {
+        "q": "What model does Nubank use?",
+        "a": "Nubank relies on OpenAI GPT-4o for its customer assistant and its call center copilot."
+      },
+      {
+        "q": "How many inquiries does the assistant resolve on its own?",
+        "a": "Around 55% of Tier 1 inquiries, across over 2 million chats handled each month."
+      }
+    ]
+  },
+  "pattern": "genAI customer agent + agent copilot",
+  "etape_parcours": "post-purchase",
+  "objectif_business": "Absorb the customer service volume of a base of over 100 million customers without blowing up costs, by automating Tier 1 inquiries and equipping human agents with a copilot to move faster on the rest.",
+  "description": "Nubank deployed, with OpenAI on GPT-4o, two conversational components. A customer assistant holds over 2 million chats per month and resolves around 55% of Tier 1 inquiries without going through a human, with chat response time reduced by 70%. In parallel, a call center copilot assists agents in real time (conversation summaries, sentiment analysis, suggested responses) and is used by over 45% of agents. The bank serves over 114 million customers in Brazil, Mexico, and Colombia.",
+  "points_cles": [
+    "genAI customer assistant and agent copilot for customer service.",
+    "Built with OpenAI GPT-4o and in-house integration.",
+    "Over 2 million chats per month, 55% of Tier 1 inquiries resolved without a human, -70% response time.",
+    "Evidence B, confirmed status."
+  ],
+  "resultats": [
+    { "metrique": "Chats handled by the assistant" },
+    { "metrique": "Tier 1 inquiries resolved without a human" },
+    { "metrique": "Reduction in chat response time" },
+    { "metrique": "Agents using the copilot" }
+  ],
+  "niveau_preuve": {
+    "justification": "Figures from the OpenAI customer story (T2, official but interested source) and picked up by the fintech press (T4), concordant. Operational metrics provided by the platform and the brand, not audited in financial results, hence B."
+  },
+  "stack_technique": [
+    { "detail": "Model behind the customer assistant and the agent copilot, including vision for document analysis." },
+    { "detail": "Conversational component integrated into the Nubank app: over 2 million chats per month, 55% of Tier 1 inquiries resolved without a human." },
+    { "detail": "Conversation summaries, sentiment analysis, and suggested responses in real time on the agent's desk; used by over 45% of agents." },
+    { "detail": "Partner in the deployment of both conversational components." }
+  ],
+  "fonctionnement_operationnel": {
+    "cadence": "Real-time on customer chats and live on the agent's desk",
+    "opere_par": "Nubank's customer service and data/AI teams, on the OpenAI models",
+    "signal_pilote": "The Tier 1 resolution rate without escalation and customer sentiment. If Tier 1 resolution drops or sentiment degrades, volume flows back to agents and the productivity gain disappears.",
+    "etapes": [
+      {
+        "etape": "Incoming chat",
+        "detail": "The customer opens a chat; the assistant handles Tier 1 inquiries (account, card, payment) and closes what it can.",
+        "acteur": "AI"
+      },
+      {
+        "etape": "Escalation to an agent",
+        "detail": "Unresolved inquiries pass to a human agent with the conversation context.",
+        "acteur": "AI / customer service"
+      },
+      {
+        "etape": "Agent copilot",
+        "detail": "On the agent side, the copilot provides a summary, sentiment analysis, and suggested responses in real time.",
+        "acteur": "AI / customer service"
+      },
+      {
+        "etape": "Monitoring and tuning",
+        "detail": "The data team tracks resolution, response time, and copilot adoption to broaden the scope handed to AI.",
+        "acteur": "data team"
+      }
+    ]
+  },
+  "replication": {
+    "playbook": [
+      {
+        "action": "Identify the highest-volume Tier 1 inquiries in the ticket history and define a clear escalation rule to a human.",
+        "livrable": "Inquiry taxonomy and validated handoff rules."
+      },
+      {
+        "action": "Build the assistant on the LLM with access to account data, in a test environment, with a compliance framework for using a third-party LLM.",
+        "livrable": "Assistant in pre-production on 3 to 5 inquiry families."
+      },
+      {
+        "action": "Launch a production pilot on a fraction of chat traffic and measure Tier 1 resolution and response time.",
+        "livrable": "Pilot readout with the resolution-without-a-human rate."
+      },
+      {
+        "action": "Broaden the scope of inquiries covered and deploy across all Tier 1 traffic.",
+        "livrable": "Generalized assistant with a resolution/satisfaction dashboard."
+      },
+      {
+        "action": "Launch the agent copilot (summaries, sentiment, suggestions) and drive adoption with the teams.",
+        "livrable": "Active copilot with agent adoption rate tracked."
+      }
+    ],
+    "equipe": "1 customer service PM + 2-3 integration/AI devs + 1 knowledge base owner, with compliance for using a third-party LLM on customer data.",
+    "prerequis_data": [
+      "Support ticket history labeled by tier",
+      "Real-time access to the customer account",
+      "Call transcripts to train the copilot"
+    ],
+    "prerequis_orga": [
+      "An assistant-to-agent handoff rule",
+      "Copilot adoption on the agent side (change management)",
+      "A compliance framework for using a third-party LLM on customer data"
+    ],
+    "stack_possible": [
+      "Generative LLM (OpenAI GPT-4o or equivalent)",
+      "RAG layer over a knowledge base",
+      "Integration with ticketing and the agent's desk"
+    ],
+    "premiere_etape": "First automate the highest-volume Tier 1 inquiries with a clear escalation rule, then equip agents with the copilot."
+  },
+  "statut_vivant": {
+    "note": "OpenAI partnership and deployment confirmed, with figures published in March 2025 (2M monthly chats, copilot adopted by 45% of agents). Nubank continues to expand its GenAI use cases."
+  },
+  "transposable_ue": {
+    "note": "Deployed in Latin America with OpenAI. In the EU, using GPT-4o on account data requires a GDPR legal basis, framing of transfers outside the EU, and, under the AI Act, AI transparency. The pattern (customer assistant + agent copilot) is transposable; hosting and compliance need review."
+  }
+}

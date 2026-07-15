@@ -1,0 +1,109 @@
+{
+  "seo": {
+    "title": "Kroger / 84.51: predictive household personalization - 62 million households scored (2024)",
+    "meta_description": "Kroger scores more than 62 million households with 84.51 degrees' predictive algorithms to serve personalized offers, coupons, and prices and monetize the audience across 1,500+ brands.",
+    "resume_citable": "Kroger's data subsidiary, 84.51 degrees, scores more than 62 million US households with predictive and prescriptive algorithms to personalize offers, coupons, and prices, delivering more than 6 million personalized offers per quarter and serving more than 1,500 media partners.",
+    "faq": [
+      {
+        "q": "How does Kroger personalize its offers?",
+        "a": "Through its subsidiary 84.51 degrees, which scores each household with predictive and prescriptive algorithms based on Plus Card loyalty data, to generate personalized offers, coupons, and prices."
+      },
+      {
+        "q": "At what scale?",
+        "a": "More than 62 million households covered in the United States, more than 6 million personalized offers delivered in one quarter through My Magazine, and more than 1,500 brand and media partners served."
+      }
+    ]
+  },
+  "pattern": "propensity modeling and predictive household personalization",
+  "etape_parcours": "Loyalty",
+  "objectif_business": "Serve each customer household relevant offers, coupons, and prices based on its predicted buying behavior, in order to strengthen loyalty and monetize the audience with CPG brands.",
+  "description": "84.51 degrees is Kroger's data subsidiary. It combines Plus Card loyalty data, online behavior, seasonality, and the basket to score each household with predictive and prescriptive algorithms. These scores drive personalized offers and coupons (for example through the My Magazine email), personalized pricing for members, and audiences sold to CPG brands through Kroger Precision Marketing. The platform covers more than 62 million households in the United States and serves more than 1,500 partners (brands, agencies, publishers). Propensity modeling segments shoppers and individualizes the experience on each visit.",
+  "points_cles": ["Predictive household personalization: targeted offers, coupons, and prices.", "Data subsidiary 84.51 degrees with predictive and prescriptive propensity algorithms.", "More than 62 million households scored, more than 1,500 partners served.", "More than 6 million personalized offers per quarter, evidence level B confirmed."],
+  "resultats": [
+    { "metrique": "Households covered by the data and personalization" },
+    { "metrique": "Partners served (brands, agencies, publishers)" },
+    { "metrique": "Unique personalized offers delivered to Plus Card members (My Magazine, one quarter)" }
+  ],
+  "niveau_preuve": {
+    "justification": "Figures published by 84.51 degrees (Kroger subsidiary) on its scope of households and partners, corroborated by established press (Food Dive) on the volume of personalized offers. No financial result isolating the AI impact, hence B."
+  },
+  "stack_technique": [
+    { "detail": "Kroger's data subsidiary: personalization platform that scores more than 62 million households" },
+    { "detail": "scoring of thousands of attributes per household (buying propensity, next need), 84.51 proprietary models" },
+    { "detail": "links each basket to the household; without this link, personalization reverts to generic" },
+    { "detail": "retail media network operated by 84.51 that monetizes audiences across more than 1,500 partners" }
+  ],
+  "fonctionnement_operationnel": {
+    "cadence": "Continuous scoring per household, refreshed on each purchase; offers and audiences are produced per campaign and per promotional cycle.",
+    "opere_par": "84.51 degrees data scientists, with Kroger's marketing and retail media teams.",
+    "signal_pilote": "Historical buying behavior per household through the Plus Card. Without reliable linkage of the basket to the household (card not scanned), personalization degrades and offers become generic again.",
+    "etapes": [
+      {
+        "etape": "Household data collection",
+        "detail": "In-store and online purchases, seasonality, basket, and digital behavior are linked to the household through the Plus Card.",
+        "acteur": "84.51 platform / data team"
+      },
+      {
+        "etape": "Predictive scoring",
+        "detail": "Predictive and prescriptive algorithms score thousands of attributes to estimate buying propensity and the next need.",
+        "acteur": "AI model"
+      },
+      {
+        "etape": "Offer activation",
+        "detail": "The scores generate personalized offers, coupons, and prices (My Magazine, app) for each member.",
+        "acteur": "Kroger marketing / platform"
+      },
+      {
+        "etape": "Media monetization",
+        "detail": "The same signals build audiences sold to CPG brands through Kroger Precision Marketing, with measurement at the household level.",
+        "acteur": "retail media team"
+      }
+    ]
+  },
+  "replication": {
+    "prerequis_data": [
+      "loyalty program linking the basket to the household",
+      "rich purchase history per household",
+      "digital and seasonal signals"
+    ],
+    "prerequis_orga": [
+      "in-house or partner data science team",
+      "offer activation capability and, for monetization, a retail media network"
+    ],
+    "stack_possible": [
+      "in-house platform like 84.51 degrees",
+      "CDP + personalization engine (Salesforce, Adobe, Bloomreach)",
+      "predictive analytics native to a CRM"
+    ],
+    "premiere_etape": "Cleanly link each basket to a household through loyalty, then score buying propensity by category to target the first personalized offers.",
+    "playbook": [
+      {
+        "action": "Make basket-to-household linkage reliable through the loyalty program (card scan, online accounts)",
+        "livrable": "Linkage rate measured and improving"
+      },
+      {
+        "action": "Build the first propensity scores by purchase category",
+        "livrable": "Per-household scores validated offline"
+      },
+      {
+        "action": "Activate personalized offers and coupons on a segment, against generic offers",
+        "livrable": "Test campaign with measured redemption lift"
+      },
+      {
+        "action": "Industrialize the offer cycle (score refresh on each purchase) and track retention",
+        "livrable": "Offer engine in production connected to the CRM"
+      },
+      {
+        "action": "Monetize the same signals in retail media with the brands",
+        "livrable": "Packaged audiences with household-level measurement"
+      }
+    ],
+    "equipe": "2-3 data scientists + 1 data engineer + CRM/offers team; retail media in phase 2"
+  },
+  "statut_vivant": {
+    "note": "84.51 degrees is a permanent Kroger activity, described with these figures on its current site; Kroger Precision Marketing is an active retail media network."
+  },
+  "transposable_ue": {
+    "note": "The setup relies on loyalty card data (Plus Card) and predictive household profiling. In the EU, the legal basis for marketing profiling and personalized pricing must be framed (GDPR), with a point of attention on price personalization."
+  }
+}

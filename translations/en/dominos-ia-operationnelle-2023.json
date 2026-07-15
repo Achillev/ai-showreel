@@ -1,0 +1,110 @@
+{
+  "seo": {
+    "title": "Domino's: operational AI - order forecasting from 75% to 95% and a Microsoft genAI assistant (2023)",
+    "meta_description": "Domino's raised its order forecasting accuracy from 75% to 95% and sealed a five-year AI alliance with Microsoft (Azure OpenAI) across 20,000+ stores.",
+    "resume_citable": "Domino's raised its order forecasting accuracy from 75% to 95% with machine learning, and entered a five-year AI alliance with Microsoft (Azure OpenAI) covering more than 20,000 stores in more than 90 markets.",
+    "faq": [
+      {
+        "q": "What did AI bring to Domino's order forecasting?",
+        "a": "Accuracy went from 75% to 95%, and the model's training time from more than 16 hours to under an hour."
+      },
+      {
+        "q": "What does the Microsoft alliance cover?",
+        "a": "A genAI assistant on Azure OpenAI to help managers (inventory, ordering, scheduling) and simplify the ordering journey, over five years."
+      }
+    ]
+  },
+  "pattern": "Operational AI across the order chain: preparation-time forecasting and a genAI management assistant",
+  "etape_parcours": "post-purchase",
+  "objectif_business": "Make the order-to-delivery chain more reliable: predict when each order will be ready to staff better and inform the customer, and offload managers from admin tasks so they can focus on service.",
+  "description": "Domino's uses AI on two operational fronts. A forecasting model, trained on five million orders, estimates when an order will be ready; it raised the accuracy of those forecasts from 75% to 95% and cut the model's training time from more than 16 hours to under an hour. In October 2023, Domino's sealed a five-year alliance with Microsoft to build, on Azure OpenAI Service, a genAI assistant helping store managers with inventory, ingredient ordering, and scheduling, and to simplify and personalize the ordering journey. The group operates more than 20,000 stores across more than 90 markets.",
+  "points_cles": ["Operational AI: order-time forecasting and a genAI store management assistant.", "In-house forecasting model plus an assistant on Microsoft Azure OpenAI Service.", "Forecasting accuracy from 75% to 95%, training cut from 16 hours to under an hour.", "Evidence B, confirmed status."],
+  "resultats": [
+    { "metrique": "Order forecasting accuracy" },
+    { "metrique": "Training time of the forecasting model, reduced" },
+    { "metrique": "5-year AI alliance with Microsoft, across more than 90 markets" }
+  ],
+  "niveau_preuve": {
+    "justification": "Quantified forecasting result (75% to 95%) documented by established tech press, and an AI alliance formalized by an official Domino's/Microsoft press release. The genAI assistant was in a pilot phase at the alliance launch, hence stronger scale evidence on forecasting than on the assistant."
+  },
+  "stack_technique": [
+    { "detail": "Cloud LLM service on which the genAI store management assistant (inventory, ingredient ordering, scheduling) and the simplification of the ordering journey are built." },
+    { "detail": "Technology partner in the five-year alliance announced in October 2023; co-builds the genAI pilots with the Domino's teams." },
+    { "detail": "Domino's proprietary ML trained on five million orders; accuracy up from 75% to 95%, training time cut from more than 16 hours to under an hour." },
+    { "detail": "Channel that consumes the preparation-time forecasts to inform the customer and set staffing." }
+  ],
+  "fonctionnement_operationnel": {
+    "cadence": "Continuous forecasting on the order flow; the genAI assistant is called on as store management tasks come up",
+    "opere_par": "Store managers for operations, Domino's technology team and Microsoft for the models",
+    "signal_pilote": "The historical and real-time order flow. Without clean, up-to-date order data, preparation-time forecasting degrades and staffing goes off.",
+    "etapes": [
+      {
+        "etape": "Order ingestion",
+        "detail": "Live orders and history feed the forecasting model.",
+        "acteur": "Data team"
+      },
+      {
+        "etape": "Preparation-time forecasting",
+        "detail": "The model estimates when each order will be ready to set staffing and inform the customer.",
+        "acteur": "AI"
+      },
+      {
+        "etape": "Management assistance",
+        "detail": "The genAI assistant helps the manager with inventory, ingredient ordering, and scheduling.",
+        "acteur": "AI"
+      },
+      {
+        "etape": "Manager decision",
+        "detail": "The manager validates or adjusts the operational recommendations.",
+        "acteur": "Store manager"
+      }
+    ]
+  },
+  "replication": {
+    "prerequis_data": [
+      "a large, clean order history",
+      "a real-time order flow",
+      "inventory and scheduling data for the management assistant"
+    ],
+    "prerequis_orga": [
+      "a data team or a cloud partner",
+      "managers trained on the assistant",
+      "integration with the ordering and tracking system"
+    ],
+    "stack_possible": [
+      "a forecasting model (ML)",
+      "a cloud with an LLM service (Azure OpenAI, GCP, AWS)",
+      "an ordering app with tracking"
+    ],
+    "premiere_etape": "Consolidate a usable order history and train a first preparation-time forecasting model.",
+    "playbook": [
+      {
+        "action": "Consolidate the order history (volumes, timestamps, preparation times) and make the real-time flow reliable.",
+        "livrable": "Clean training dataset and a data pipeline in place"
+      },
+      {
+        "action": "Train a first preparation-time forecasting model and backtest it against history.",
+        "livrable": "Model validated offline with a measured baseline accuracy"
+      },
+      {
+        "action": "Integrate the forecast into the ordering app and staffing across a set of pilot stores.",
+        "livrable": "Pilot in production on a few stores with accuracy tracking"
+      },
+      {
+        "action": "Generalize the forecast across the network and track accuracy continuously.",
+        "livrable": "Full rollout and an accuracy dashboard"
+      },
+      {
+        "action": "Launch the genAI management assistant pilot (inventory, scheduling) on the chosen cloud LLM service, with a group of managers.",
+        "livrable": "Assistant in pilot with manager feedback collected"
+      }
+    ],
+    "equipe": "2-3 data scientists / ML engineers + 1 operations PM + 1 dev for integration with the ordering system; store managers for pilot feedback."
+  },
+  "statut_vivant": {
+    "note": "The Microsoft alliance runs for five years from 2023 and Domino's has invested in operational AI for a long time. The in-store genAI assistant was at pilot stage at launch; order forecasting is a capability already deployed."
+  },
+  "transposable_ue": {
+    "note": "Operational optimization (order-time forecasting, a management assistant) relies mostly on operations data, less sensitive to the GDPR than customer profiling. The order personalization component remains subject to marketing consent in the EU."
+  }
+}

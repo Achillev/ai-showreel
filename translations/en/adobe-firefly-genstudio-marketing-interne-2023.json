@@ -1,0 +1,130 @@
+{
+  "seo": {
+    "title": "Adobe: generative AI for its own marketing (Firefly, GenStudio) - social production 33% faster, volume doubled (2023)",
+    "meta_description": "Adobe uses Firefly and Generative Fill for its own marketing content: social production time cut by 33% and content volume doubled for its social media.",
+    "resume_citable": "Adobe runs its own marketing on Firefly and Generative Fill: social campaign production time cut by 33% and content volume doubled for Adobe's social media.",
+    "faq": [
+      {
+        "q": "How does Adobe use AI for its own marketing?",
+        "a": "Its teams produce the brand's social content with Firefly and Generative Fill in Photoshop, and industrialize campaigns through GenStudio."
+      },
+      {
+        "q": "What quantified gains does Adobe claim?",
+        "a": "A 33% reduction in social campaign production time and a doubling of content volume for its social media, with tens of thousands of assets on a single campaign."
+      }
+    ]
+  },
+  "pattern": "in-house genAI production of marketing content at scale",
+  "etape_parcours": "discovery",
+  "objectif_business": "Absorb the growing demand for social content and campaigns without inflating costs and timelines. Adobe uses its own generative tools to produce more assets, faster, while keeping brand consistency.",
+  "description": "Adobe runs its own marketing on Firefly and GenStudio. The marketing teams use Generative Fill in Photoshop and Firefly-generated images to produce the brand's social content. Adobe built GenStudio for Performance Marketing by dogfooding these tools: its teams produced tens of thousands of assets for a single campaign. Adobe Brand Studio also used Firefly for the visual identity of Adobe MAX 2024, generating hundreds of on-brand assets. The scope covers the creation, adaptation, and scaling of campaign content.",
+  "points_cles": [
+    "Adobe produces its own marketing content with generative AI.",
+    "Firefly and Generative Fill in Photoshop, industrialized through GenStudio.",
+    "Social campaign production time cut by 33%, volume doubled.",
+    "Evidence level B, live status confirmed."
+  ],
+  "resultats": [
+    {
+      "metrique": "Social campaign production time (Instagram, TikTok)"
+    },
+    {
+      "metrique": "Volume of social content produced for Adobe"
+    },
+    {
+      "metrique": "Assets produced by the marketing teams for one campaign"
+    }
+  ],
+  "niveau_preuve": {
+    "justification": "Figures published by Adobe in its own official press release (33% less time, volume doubled) and internal use confirmed by a second Adobe release (Brand Studio, MAX 2024). Official quantified release from the subject brand, consistent sources."
+  },
+  "fonctionnement_operationnel": {
+    "cadence": "Per campaign and in a continuous flow for social content, with on-demand production",
+    "opere_par": "Adobe's marketing and Brand Studio teams, on Firefly, GenStudio, and Photoshop",
+    "signal_pilote": "The brand guidelines and the customized Firefly models. Without a model trained on the brand assets, generated content drifts and requires more manual rework, which cancels out the time saving.",
+    "etapes": [
+      {
+        "etape": "Campaign framing",
+        "detail": "Marketing defines the brief, the social formats, and the brand rules.",
+        "acteur": "Marketing"
+      },
+      {
+        "etape": "Asset generation",
+        "detail": "Firefly generates images and variants; Generative Fill in Photoshop extends and adapts the visuals.",
+        "acteur": "AI"
+      },
+      {
+        "etape": "Multi-format adaptation",
+        "detail": "The assets are adapted per platform (Instagram, TikTok) via GenStudio.",
+        "acteur": "AI and marketing"
+      },
+      {
+        "etape": "Brand control",
+        "detail": "The teams validate on-brand consistency before publication.",
+        "acteur": "Brand Studio"
+      },
+      {
+        "etape": "Publication and iteration",
+        "detail": "The content goes out on social channels; volumes and timelines are measured.",
+        "acteur": "Marketing"
+      }
+    ]
+  },
+  "replication": {
+    "prerequis_data": [
+      "bank of brand assets to train a custom model",
+      "formalized brand guidelines",
+      "structured campaign briefs"
+    ],
+    "prerequis_orga": [
+      "creative team or brand studio",
+      "on-brand validation process",
+      "tool to measure production time and volume"
+    ],
+    "stack_possible": [
+      "generative image AI (Firefly or equivalent)",
+      "editing tool with generative fill",
+      "content supply chain / DAM"
+    ],
+    "premiere_etape": "Train a generative model on the brand assets and frame a first measurable social production flow.",
+    "playbook": [
+      {
+        "action": "Formalize the brand guidelines and gather the bank of reference assets.",
+        "livrable": "Asset corpus and documented on-brand rules"
+      },
+      {
+        "action": "Train or configure a customized generative model on these assets and equip the creators (generative fill in the editing tool).",
+        "livrable": "Custom model tested on real briefs"
+      },
+      {
+        "action": "Frame a first social production flow: formats, templates, on-brand validation step.",
+        "livrable": "Documented production workflow with a brand control point"
+      },
+      {
+        "action": "Produce at volume, adapt per platform, and compare production time and volume to the previous period.",
+        "livrable": "Published campaign + before/after measure of time and volume"
+      }
+    ],
+    "equipe": "1 art director or brand manager + 1-2 creators trained on generative tools + 1 marketer for measurement"
+  },
+  "stack_technique": [
+    {
+      "detail": "Adobe's generative image models, trained on licensed content, used to produce campaign and social visuals."
+    },
+    {
+      "detail": "Versions of Firefly trained on the brand's assets to keep visual consistency at scale."
+    },
+    {
+      "detail": "Content supply chain that industrializes creation, multi-format adaptation, and validation of campaign assets."
+    },
+    {
+      "detail": "Generative fill used to extend and adapt visuals to social formats (Instagram, TikTok)."
+    }
+  ],
+  "statut_vivant": {
+    "note": "Firefly and GenStudio are strategic Adobe product lines, with more than 22 billion assets generated worldwide. The marketing dogfooding is reaffirmed in the 2024-2025 communications (Brand Studio, GenStudio for Performance Marketing)."
+  },
+  "transposable_ue": {
+    "note": "Production of marketing content by generative AI. Adobe positions Firefly as commercially safe (trained on licensed data), which limits copyright risk on the EU side. The AI Act requires labeling of AI-generated content; no sensitive personal data processing in this asset production case."
+  }
+}

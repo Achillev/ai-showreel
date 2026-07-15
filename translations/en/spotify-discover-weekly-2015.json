@@ -1,0 +1,114 @@
+{
+  "seo": {
+    "title": "Spotify: Discover Weekly - 100B+ tracks streamed in 10 years (2015)",
+    "meta_description": "Spotify's Discover Weekly algorithmic playlist has driven more than 100 billion tracks streamed since 2015 and gets users listening more than 2x as long.",
+    "resume_citable": "Discover Weekly, Spotify's personalized weekly playlist launched in 2015, has accumulated more than 100 billion tracks streamed and gets its users listening more than twice as long.",
+    "faq": [
+      {
+        "q": "How many streams has Discover Weekly generated?",
+        "a": "More than 100 billion tracks streamed since its 2015 launch, according to Spotify's June 2025 anniversary press release."
+      },
+      {
+        "q": "How does Discover Weekly work?",
+        "a": "A 30-track playlist delivered every Monday, built through collaborative filtering, audio analysis, and listening history."
+      }
+    ]
+  },
+  "pattern": "algorithmic discovery playlist",
+  "etape_parcours": "loyalty",
+  "objectif_business": "Make music discovery automatic and effortless, to anchor the habit of opening Spotify every week and increase listening time and loyalty against competing platforms.",
+  "description": "Every Monday, Spotify delivers a playlist of 30 tracks the listener has not yet heard but is likely to enjoy. The system combines collaborative filtering (what similar profiles listen to), audio content analysis, and listening history. The playlist regenerates every week, with no action from the user. Since 2025, the listener can filter Discover Weekly by genre.",
+  "points_cles": [
+    "Weekly playlist of 30 discovery tracks, regenerated every Monday with no action.",
+    "In-house collaborative filtering and audio analysis on listening history.",
+    "More than 100 billion tracks streamed, listening more than 2x longer.",
+    "Evidence B, confirmed status, feature active since 2015 (10-year press release)."
+  ],
+  "resultats": [
+    { "metrique": "Cumulative streams since launch" },
+    { "metrique": "Artist discoveries generated each week" },
+    { "metrique": "Listening intensity vs non-users (historical measure)" }
+  ],
+  "niveau_preuve": {
+    "justification": "Figures published by Spotify (10-year newsroom, and Spotify advertising unit) on a feature in production since 2015. Direct figures from the subject brand, cumulative volume verifiable over time, without going through financial results."
+  },
+  "stack_technique": [
+    { "detail": "matching profiles by co-listening to predict tracks never heard but likely" },
+    { "detail": "audio features of tracks, complementing collaborative filtering where co-listening is missing (new releases, niches)" },
+    { "detail": "regeneration of the 30-track playlist every Monday for each listener, with no action on their part" }
+  ],
+  "fonctionnement_operationnel": {
+    "cadence": "Weekly batch: one new playlist per listener every Monday.",
+    "opere_par": "Spotify Personalization / Recommendation team.",
+    "signal_pilote": "The listener's listening history and co-listening patterns between similar profiles. Without recent listening data, collaborative filtering has nothing to match the listener to other profiles.",
+    "etapes": [
+      {
+        "etape": "Listening aggregation",
+        "detail": "The week's listens, followed playlists, and skipped tracks are consolidated per profile.",
+        "acteur": "data team"
+      },
+      {
+        "etape": "Candidate generation",
+        "detail": "Collaborative filtering and audio analysis produce a list of tracks never heard but likely.",
+        "acteur": "AI"
+      },
+      {
+        "etape": "Playlist assembly",
+        "detail": "The system selects 30 tracks, ordered for the listener, delivered on Monday.",
+        "acteur": "AI"
+      },
+      {
+        "etape": "Feedback loop",
+        "detail": "What the listener plays, saves, or skips in the playlist refines the following week.",
+        "acteur": "human / AI"
+      }
+    ]
+  },
+  "replication": {
+    "prerequis_data": [
+      "per-user listening / consumption history",
+      "catalog with audio features or metadata",
+      "sufficient user volume for collaborative filtering"
+    ],
+    "prerequis_orga": [
+      "data science team",
+      "reliable batch pipeline",
+      "product surface to expose the playlist"
+    ],
+    "stack_possible": [
+      "custom/in-house",
+      "managed recommendation engine",
+      "weekly batch job"
+    ],
+    "equipe": "2 data scientists + 1 data engineer + 1 product PM",
+    "playbook": [
+      {
+        "action": "Check the volume of signal: enough cross usage (active users, co-consumption) for collaborative filtering to produce candidates",
+        "livrable": "Quantified feasibility study, go/no-go"
+      },
+      {
+        "action": "Consolidate histories: listens, saves, and skips per profile in a reliable pipeline",
+        "livrable": "Per-user dataset, refreshed every week"
+      },
+      {
+        "action": "Build the candidate model: collaborative filtering + content features to score items never consumed",
+        "livrable": "Scored candidate list per user, evaluated offline"
+      },
+      {
+        "action": "Assemble the playlist (30 ordered items) and deliver it in a dedicated product surface, on a fixed day",
+        "livrable": "Weekly playlist in beta on a segment"
+      },
+      {
+        "action": "Close the feedback loop: re-inject listens, saves, and skips, measure retention and listening time against a control",
+        "livrable": "Active learning loop and impact reading"
+      }
+    ],
+    "premiere_etape": "Confirm there is enough cross listening volume for collaborative filtering to produce relevant candidates."
+  },
+  "statut_vivant": {
+    "note": "Feature still active after 10 years, enhanced in 2025 with genre filters. Spotify anniversary press release of June 30, 2025."
+  },
+  "transposable_ue": {
+    "note": "Recommendation on first-party listening data; profiling subject to GDPR but standard for a streaming service. Already operated in Spotify's EU markets since 2015."
+  }
+}

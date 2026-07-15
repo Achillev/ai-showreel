@@ -1,0 +1,109 @@
+{
+  "seo": {
+    "title": "Henkel: genAI content supply chain (Adobe Firefly) - personalization at scale (2024)",
+    "meta_description": "Henkel industrializes its content supply chain with Adobe Firefly Custom Models inside RAQN: production brought down to minutes, one-to-one Schwarzkopf personalization.",
+    "resume_citable": "In March 2024 Henkel expanded its Adobe partnership to move its content supply chain to genAI (Firefly Custom Models inside the RAQN platform), bringing production tasks that took hours or days down to minutes and delivering one-to-one personalization at scale, illustrated by Schwarzkopf recommendations based on hair.",
+    "faq": [
+      {
+        "q": "What is Henkel doing with Adobe Firefly?",
+        "a": "Henkel trains Firefly Custom Models on its own assets to generate on-brand, commercially safe content, integrated into its RAQN platform for personalization at scale across its global portfolio."
+      },
+      {
+        "q": "What production gain does Henkel claim?",
+        "a": "Content production tasks that would have taken hours or days brought down to minutes, with a higher volume of personalized messages."
+      }
+    ]
+  },
+  "pattern": "genAI content supply chain for one-to-one personalization at scale",
+  "etape_parcours": "consideration",
+  "objectif_business": "Industrialize the content supply chain to deliver one-to-one personalization at scale across the brand portfolio, cutting time and cost without stepping outside brand and commercial-safety rules.",
+  "description": "In March 2024 Henkel expanded its partnership with Adobe to move its content supply chain to genAI and deliver personalization at scale across its global portfolio. Adobe Firefly and Experience Cloud are integrated into RAQN, Henkel's digital platform built in 2021 for consumer and retail insights. With Firefly Custom Models, teams train and fine-tune generative models on Henkel's own assets to produce on-brand, compliant, commercially safe content. Cited example: the hair care brand Schwarzkopf can generate visuals for one-to-one personalization of product recommendations based on a consumer's hair color, style, or length. Henkel says production tasks that would have taken hours or days can be brought down to minutes, which speeds up production and smooths digital campaign workflows while increasing the volume of personalized messages.",
+  "resultats": [
+    { "metrique": "Content production, from hours or days brought down to minutes" },
+    { "metrique": "Scope" },
+    { "metrique": "Product personalization" }
+  ],
+  "niveau_preuve": {
+    "justification": "Official Henkel press release (subject brand, T1) detailing the rollout and platform, corroborated by trade press. Gains stated in orders of magnitude rather than as an isolated financial figure, hence C."
+  },
+  "stack_technique": [
+    { "detail": "Generative image models trained and fine-tuned on Henkel's own assets to produce on-brand, commercially safe content" },
+    { "detail": "Campaign and experience orchestration suite integrated into the Henkel platform" },
+    { "detail": "CDP that unifies consumer data and provides the one-to-one personalization signal (e.g. Schwarzkopf recommendations based on hair)" },
+    { "detail": "Henkel's in-house digital platform, built in 2021 for consumer and retail insights, into which the Adobe building blocks are integrated" }
+  ],
+  "fonctionnement_operationnel": {
+    "cadence": "Ongoing per campaign; content variants generated in minutes to feed personalization.",
+    "opere_par": "Henkel marketing and digital teams on the RAQN platform, with Adobe Firefly and Experience Cloud.",
+    "signal_pilote": "The unified consumer data in Adobe Real-Time CDP and the quality of the Firefly Custom Models trained on brand assets. Without a proprietary brand corpus, the generated content drifts from the guidelines and commercial safety.",
+    "etapes": [
+      {
+        "etape": "Brand model training",
+        "detail": "Firefly Custom Models fine-tuned on Henkel assets to produce on-brand, commercially safe content.",
+        "acteur": "data team / Adobe"
+      },
+      {
+        "etape": "Content generation",
+        "detail": "Production of visuals and variations in minutes, integrated into RAQN.",
+        "acteur": "AI / marketing"
+      },
+      {
+        "etape": "Personalization",
+        "detail": "Assembly of one-to-one personalized messages (e.g. Schwarzkopf recommendations) via the CDP.",
+        "acteur": "marketing / CDP"
+      },
+      {
+        "etape": "Multichannel delivery",
+        "detail": "Delivery of personalized experiences across digital campaigns and e-commerce.",
+        "acteur": "marketing"
+      }
+    ]
+  },
+  "replication": {
+    "prerequis_data": [
+      "corpus of brand assets to train custom models",
+      "unified consumer data (CDP)",
+      "brand and commercial safety rules"
+    ],
+    "prerequis_orga": [
+      "tooled content supply chain",
+      "brand-safety governance of the custom models",
+      "legal basis for one-to-one personalization"
+    ],
+    "stack_possible": [
+      "custom generative models (Adobe Firefly type)",
+      "real-time CDP",
+      "content orchestration platform"
+    ],
+    "premiere_etape": "Train a custom model on a brand's assets and connect the CDP for a first personalization use case.",
+    "playbook": [
+      {
+        "action": "Gather the asset corpus of a pilot brand (visuals, packshots, guidelines) and set the brand-safety and commercial-safety rules with legal.",
+        "livrable": "Qualified training corpus and approved governance rules"
+      },
+      {
+        "action": "Train and fine-tune a custom model (Firefly Custom Models type) on those assets, with creative review of the outputs.",
+        "livrable": "Brand model producing on-brand visuals approved by the studio"
+      },
+      {
+        "action": "Connect the CDP for a first one-to-one personalization case on a segment (e.g. variations based on a consumer attribute), with the legal basis verified.",
+        "livrable": "First personalized content flow in production on a channel"
+      },
+      {
+        "action": "Integrate generation into campaign workflows so marketing teams produce the variations themselves.",
+        "livrable": "End-to-end tooled content supply chain workflow"
+      },
+      {
+        "action": "Measure production time, volume of personalized messages, and cost per campaign, then extend to other brands in the portfolio.",
+        "livrable": "Quantified review and portfolio expansion plan"
+      }
+    ],
+    "equipe": "1 content supply chain lead + 1 data profile for the CDP + the creative studio trained on the custom models + brand safety / legal"
+  },
+  "statut_vivant": {
+    "note": "Adobe partnership expanded and officially announced in March 2024, integrated into the RAQN platform operated since 2021, with a named use case on Schwarzkopf."
+  },
+  "transposable_ue": {
+    "note": "Henkel is a German group, GDPR by default. The personalization relies on Adobe Real-Time CDP and Firefly Custom Models trained on brand assets, on a commercially safe basis. One-to-one personalization (Schwarzkopf recommendations based on hair) requires a legal basis and minimization of consumer data."
+  }
+}

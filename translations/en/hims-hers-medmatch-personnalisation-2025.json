@@ -1,0 +1,121 @@
+{
+  "seo": {
+    "title": "Hims & Hers: AI-personalized treatment (MedMatch) - 1.4 million subscribers (2025)",
+    "meta_description": "MedMatch routes each Hims & Hers patient to a fitting treatment. In Q1 2025, more than 1.4 million subscribers out of 2.4 million used personalized solutions.",
+    "resume_citable": "In the first quarter of 2025, Hims & Hers counted more than 1.4 million subscribers on personalized solutions out of nearly 2.4 million, its MedMatch engine routing each patient to a fitting treatment, for revenue of 586 million dollars, up 111%.",
+    "faq": [
+      {
+        "q": "What is MedMatch?",
+        "a": "Hims & Hers's personalization engine, launched in 2023, which analyzes a patient's intake data to route them to the fitting care pathway and formulation, before a provider validates it."
+      },
+      {
+        "q": "What share of subscribers is involved?",
+        "a": "In the first quarter of 2025, more than 1.4 million subscribers used personalized solutions, out of a base of nearly 2.4 million subscribers."
+      }
+    ]
+  },
+  "pattern": "AI-driven personalized treatment routing on intake data (MedMatch)",
+  "etape_parcours": "consideration",
+  "objectif_business": "Convert a visitor who fills out a questionnaire into a subscriber of a fitting treatment, by pushing the right formulation and the right care pathway rather than a generic catalog, to increase conversion and anchor the subscription over time.",
+  "description": "MedMatch, launched in 2023, analyzes intake data to route each patient to the care pathway and formulation that fit them. Personalization has become the foundation of the offering: in the first quarter of 2025, out of nearly 2.4 million subscribers, more than 1.4 million used personalized solutions. Management describes a strategic focus on deepening personalization and tied it to the arrival of a chief technology officer tasked with strengthening AI-driven diagnosis and automation. Q1 2025 revenue reached 586 million dollars, up 111% year over year.",
+  "points_cles": [
+    "AI-driven personalized treatment routing on intake data, with clinical validation.",
+    "MedMatch, a proprietary in-house machine learning engine, launched in 2023.",
+    "More than 1.4 million subscribers on personalized solutions out of 2.4 million, Q1 2025 revenue of $586M (+111%).",
+    "Evidence level A, living status confirmed."
+  ],
+  "resultats": [
+    { "metrique": "Subscribers using personalized solutions (Q1 2025)" },
+    { "metrique": "Total subscriber base in Q1 2025, up 38% year over year" },
+    { "metrique": "Q1 2025 revenue, up 111% year over year" },
+    { "metrique": "Role of MedMatch in the journey" }
+  ],
+  "niveau_preuve": {
+    "justification": "The personalized subscriber volumes and revenue are published in Hims & Hers's Q1 2025 financial results (official press release, listed company), a primary source consistent with press coverage documenting MedMatch. Results figures = level A."
+  },
+  "stack_technique": [
+    { "detail": "Hims & Hers's proprietary machine learning engine, launched in 2023, which analyzes intake data to route each patient to the fitting care pathway and formulation; the exact techniques are not published" },
+    { "detail": "Carries the intake questionnaire, the subscription, and the delivery of personalized treatments" },
+    { "detail": "In-house circuit through which a network provider confirms or adjusts each recommendation before prescription" }
+  ],
+  "fonctionnement_operationnel": {
+    "cadence": "Real time at each intake, with ongoing adjustment across renewals and patient feedback",
+    "opere_par": "Product and data science team, working with the clinical team that validates prescriptions",
+    "signal_pilote": "The intake questionnaire answers and the treatment history. Without structured intake data and a clinical follow-up loop, the system falls back on a standard offering and loses its conversion value.",
+    "etapes": [
+      {
+        "etape": "Intake collection",
+        "detail": "The patient fills out a health questionnaire and their goals on the platform.",
+        "acteur": "Customer"
+      },
+      {
+        "etape": "Analysis and routing",
+        "detail": "MedMatch analyzes the data to propose the fitting care pathway and formulation.",
+        "acteur": "AI"
+      },
+      {
+        "etape": "Clinical validation",
+        "detail": "A network provider confirms or adjusts the recommendation before prescription.",
+        "acteur": "Clinical team"
+      },
+      {
+        "etape": "Subscription and delivery",
+        "detail": "The personalized treatment is placed on subscription and shipped.",
+        "acteur": "Platform"
+      },
+      {
+        "etape": "Follow-up and adjustment",
+        "detail": "Renewals, effects, and patient feedback feed the adjustment of the recommendations.",
+        "acteur": "Data and clinical team"
+      }
+    ]
+  },
+  "replication": {
+    "prerequis_data": [
+      "structured intake questionnaire",
+      "first-party treatment history",
+      "outcomes follow-up loop"
+    ],
+    "prerequis_orga": [
+      "network of providers to validate the recommendations",
+      "telehealth regulatory framework",
+      "internal data science team"
+    ],
+    "stack_possible": [
+      "recommendation or scoring engine",
+      "cloud (AWS, GCP, or Azure)",
+      "subscription platform",
+      "clinical review workflow"
+    ],
+    "premiere_etape": "Structure an intake questionnaire usable by a recommendation engine and connect it to a clinical validation workflow.",
+    "playbook": [
+      {
+        "action": "Structure the intake questionnaire with the clinical team and define the reference set of care pathways and formulations; frame compliance (health data, telehealth, GDPR Article 9 in the EU).",
+        "livrable": "Structured intake and pathway reference validated clinically and legally"
+      },
+      {
+        "action": "Build the first version of the routing engine (rules then scoring) and the workflow for provider validation before any prescription.",
+        "livrable": "Recommendation engine connected to the clinical review circuit"
+      },
+      {
+        "action": "Launch a pilot on one vertical with a panel of providers, comparing conversion and relevance against the standard pathway.",
+        "livrable": "Pilot in production with a provider adjustment rate on the recommendations"
+      },
+      {
+        "action": "Connect the subscription and the follow-up loop: renewals, effects, and patient feedback feed the engine's adjustment.",
+        "livrable": "Working follow-up loop and measured retention"
+      },
+      {
+        "action": "Extend to other verticals and refine the engine on the accumulated history.",
+        "livrable": "Multi-vertical engine with a conversion / retention review"
+      }
+    ],
+    "equipe": "2 data scientists + 1 PM + a clinical team of validating providers + health-specialized legal"
+  },
+  "statut_vivant": {
+    "note": "Personalization is the declared pillar of subscription growth, quantified quarter after quarter and reaffirmed in the long-term goals. No signal of withdrawal."
+  },
+  "transposable_ue": {
+    "note": "MedMatch routes a patient to a treatment formulation based on health intake data. In the EU, this data falls under GDPR Article 9 (health data), requiring a legal basis and explicit consent, and the act of prescribing remains governed by each country's medical law. D2C telehealth does not have the same framework everywhere as in the United States. Algorithmic routing of a treatment may also fall under the AI Act's transparency obligations depending on the use."
+  }
+}

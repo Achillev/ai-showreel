@@ -1,0 +1,116 @@
+{
+  "seo": {
+    "title": "Coursera Coach: genAI assistant - 34M messages with 2.4M learners (2023)",
+    "meta_description": "Coursera Coach, a genAI learning assistant in 26 languages, exchanged more than 34 million messages with 2.4 million learners and won the 2025 Newsweek AI Impact Award.",
+    "resume_citable": "Coursera Coach, a genAI learning assistant launched in 2023 and available in 26 languages, had exchanged more than 34 million messages with 2.4 million learners by mid-2025, on a platform with 694.7M dollars in 2024 revenue.",
+    "faq": [
+      {
+        "q": "What is Coursera Coach?",
+        "a": "A genAI learning assistant integrated into the Coursera platform that answers in the context of the course, summarizes, clarifies, and orients toward career goals, in 26 languages, for paying learners and enterprise customers."
+      },
+      {
+        "q": "What is its usage scale?",
+        "a": "More than 34 million messages exchanged with more than 2.4 million learners by mid-2025, according to Coursera's official blog."
+      }
+    ]
+  },
+  "pattern": "genAI learning assistant integrated into the course path",
+  "etape_parcours": "post-purchase",
+  "objectif_business": "Increase engagement and completion by giving each learner an assistant that answers in the context of the course, to support retention of Consumer subscribers and the value perceived by Enterprise customers.",
+  "description": "Coursera Coach is a genAI learning assistant launched in beta in 2023 (April, about six months after ChatGPT's public release). It answers questions in the context of the course being taken, summarizes videos, clarifies concepts, helps with note-taking, and orients toward career goals. It is offered to paying Consumer learners and Enterprise customers, in 26 languages. Institutions activate it for their own courses, such as the University of Michigan.",
+  "points_cles": [
+    "genAI learning assistant that answers in the context of the course, in 26 languages.",
+    "Built on an LLM (vendor not specified) with retrieval on the course content.",
+    "More than 34 million messages exchanged with more than 2.4 million learners.",
+    "Evidence level B, status confirmed, 2025 Newsweek AI Impact Award."
+  ],
+  "resultats": [
+    { "metrique": "Messages exchanged since launch (June 2025)" },
+    { "metrique": "Learners who used Coach" },
+    { "metrique": "Languages supported" },
+    { "metrique": "Coursera annual revenue 2024" }
+  ],
+  "niveau_preuve": {
+    "justification": "Coach usage figures published officially by Coursera (product blog, June 2025) and the Newsweek AI Impact Award; backed by the financial context of a public company (FY2024 results). Official but interested source on product usage, hence level B."
+  },
+  "stack_technique": [
+    { "detail": "Coursera does not publicly name the model behind Coach; the entry stays at the documented level" },
+    { "detail": "learning assistant integrated in-house into the course path, in 26 languages" },
+    { "detail": "grounding of the answers in the context of the course and the lesson, which distinguishes Coach from a generic chatbot" },
+    { "detail": "enterprise space where the administrator activates Coach on its course paths" }
+  ],
+  "fonctionnement_operationnel": {
+    "cadence": "Real time on each learner question, while taking a course.",
+    "opere_par": "Coursera's Product/AI team; on the Enterprise or institution side, the administrator activates Coach on its courses.",
+    "signal_pilote": "The contextual relevance of the answer to the current course. Without grounding in the course content, the assistant becomes a generic chatbot with no retention value.",
+    "etapes": [
+      {
+        "etape": "Opening the course",
+        "detail": "The learner launches a course; Coach is available in the interface.",
+        "acteur": "human"
+      },
+      {
+        "etape": "Contextual question",
+        "detail": "The learner asks a question; the context of the course and lesson is attached to the prompt.",
+        "acteur": "AI"
+      },
+      {
+        "etape": "Answer and guidance",
+        "detail": "The LLM clarifies, summarizes, or orients toward a career goal, in the learner's language.",
+        "acteur": "AI"
+      },
+      {
+        "etape": "Activation on the customer side",
+        "detail": "For Enterprise and institutions, the admin decides to make Coach available on its course paths.",
+        "acteur": "customer"
+      }
+    ]
+  },
+  "replication": {
+    "prerequis_data": [
+      "structured, indexable course catalog",
+      "lesson context linkable to each question",
+      "multilingual content management"
+    ],
+    "prerequis_orga": [
+      "product team able to integrate the assistant into the existing path",
+      "Consumer and Enterprise offering to amortize the cost",
+      "monitoring of inference costs"
+    ],
+    "stack_possible": [
+      "LLM (OpenAI, Anthropic or equivalent)",
+      "retrieval on the course content",
+      "in-house prompt and safeguard layer"
+    ],
+    "premiere_etape": "Wire the assistant to the course context (retrieval) rather than to a bare LLM, so the answer serves completion.",
+    "playbook": [
+      {
+        "action": "Index the course catalog (transcripts, lessons, structure) to enable contextual retrieval.",
+        "livrable": "Content index queryable by course and by lesson"
+      },
+      {
+        "action": "Build the assistant: lesson context attached to the prompt, safeguards, and multilingual handling.",
+        "livrable": "Internal prototype answering in the course context"
+      },
+      {
+        "action": "Open a beta on a subset of courses and paying learners.",
+        "livrable": "Live beta with usage metrics (messages, users)"
+      },
+      {
+        "action": "Measure engagement and completion against a cohort without the assistant, and track inference costs.",
+        "livrable": "Impact review and cost-per-learner model"
+      },
+      {
+        "action": "Open to enterprise customers with admin activation and extend the languages covered.",
+        "livrable": "Assistant generalized across the Consumer and Enterprise offerings"
+      }
+    ],
+    "equipe": "2 developers + 1 PM + 1 learning designer, with data tracking of inference costs"
+  },
+  "statut_vivant": {
+    "note": "Coach opened beyond beta, available to paying learners and Enterprise customers, awarded in 2025 and expanding its languages. Feature active."
+  },
+  "transposable_ue": {
+    "note": "Consumer and enterprise genAI assistant, available in 26 languages. GDPR applies to learner exchanges; the AI Act requires transparency on interaction with an AI. Multilingual support eases EU deployment."
+  }
+}

@@ -1,0 +1,107 @@
+{
+  "seo": {
+    "title": "eBay Magical Listing: a genAI product listing from a photo - 30% of sellers (2023)",
+    "meta_description": "eBay's Magical Listing generates a listing's title and description from a photo. 30% of US app sellers tried it, and more than 95% kept the AI description.",
+    "resume_citable": "With Magical Listing (2023), eBay generates a complete product listing from a photo: 30% of US app sellers tried it and more than 95% of them used the AI-generated description.",
+    "faq": [
+      {
+        "q": "What does Magical Listing generate?",
+        "a": "From a photo, eBay's AI generates a title, description, category, and attributes, and suggests price and shipping."
+      },
+      {
+        "q": "What is the tool's adoption?",
+        "a": "30% of US app sellers tried it at least once and more than 95% used the generated description."
+      }
+    ]
+  },
+  "pattern": "GenAI generation of a product listing from a photo",
+  "etape_parcours": "purchase",
+  "objectif_business": "Reduce listing friction, especially for beginner sellers facing the cold-start problem, by automatically generating a complete listing.",
+  "description": "The Magical Listing tool generates a listing from a single photo taken or uploaded in the eBay app. The AI analyzes the image and produces a title, description, release date, category, and subcategory, and combines with eBay's other components to suggest price and shipping. The seller reviews and edits before publishing. The direct goal: speed up the creation of detailed, consistent listings, especially for new sellers. Rolled out from late 2023 in the Seller Hub and the mobile app.",
+  "points_cles": ["GenAI generation of a product listing from a single photo, with seller review.", "The Magical Listing tool, eBay's in-house vision and LLM models in the Seller Hub.", "30% of US app sellers tried it, more than 95% kept the AI description.", "Evidence B, confirmed status."],
+  "resultats": [
+    { "metrique": "US app sellers who tried the tool at least once" },
+    { "metrique": "Sellers who kept the AI description, with or without edits" }
+  ],
+  "niveau_preuve": {
+    "justification": "Adoption and retention metrics communicated by eBay and reported by specialized press (Retail Dive, TechCrunch). Usage figures at marketplace scale, but no direct financial result."
+  },
+  "stack_technique": [
+    { "detail": "Recognize the object in the photo and generate title, description, category, and attributes; eBay does not publicly detail the models." },
+    { "detail": "Magical Listing's entry points: photo taken or uploaded, then reviewed and edited by the seller before publishing." },
+    { "detail": "Existing eBay components combined with the generation: category and subcategory mapping, price and shipping suggestions." }
+  ],
+  "fonctionnement_operationnel": {
+    "cadence": "On demand, every time a seller creates a listing.",
+    "opere_par": "The eBay platform (in-house); the seller stays in the loop to validate.",
+    "signal_pilote": "The photo quality and object recognition. On a poorly framed or hard-to-identify product, the generated listing goes off and the seller has to redo everything.",
+    "etapes": [
+      {
+        "etape": "Taking the photo",
+        "detail": "The seller photographs or uploads an image of the product in the app.",
+        "acteur": "customer"
+      },
+      {
+        "etape": "Analysis and generation",
+        "detail": "The AI recognizes the object and generates title, description, category, and attributes.",
+        "acteur": "AI"
+      },
+      {
+        "etape": "Additional suggestions",
+        "detail": "The platform suggests price and shipping from its other components.",
+        "acteur": "AI"
+      },
+      {
+        "etape": "Review and publish",
+        "detail": "The seller edits if needed then publishes the listing.",
+        "acteur": "customer"
+      }
+    ]
+  },
+  "replication": {
+    "prerequis_data": [
+      "product images",
+      "a category taxonomy",
+      "an attribute reference"
+    ],
+    "prerequis_orga": [
+      "a vision-language model or API",
+      "a seller validation loop"
+    ],
+    "stack_possible": [
+      "a multimodal image-to-text model",
+      "mapping to the catalog taxonomy",
+      "a price suggestion engine"
+    ],
+    "premiere_etape": "Wire a multimodal model into the listing creation flow and let the seller edit the output.",
+    "playbook": [
+      {
+        "action": "Frame the fields to generate (title, description, category, attributes) and the target taxonomy.",
+        "livrable": "A spec for the generated listing and sets of test photos"
+      },
+      {
+        "action": "Wire a multimodal model (API) into the listing creation flow.",
+        "livrable": "A photo-to-listing prototype on the test catalog"
+      },
+      {
+        "action": "Build the mapping to the taxonomy and the seller review screen.",
+        "livrable": "An editable pre-filled listing in pre-production"
+      },
+      {
+        "action": "Open a beta to a segment of sellers and measure trial and description retention.",
+        "livrable": "Adoption and retention figures on the beta"
+      },
+      {
+        "action": "Generalize and track listing completeness and time to list.",
+        "livrable": "The feature in production with an adoption dashboard"
+      }
+    ],
+    "equipe": "2 devs + 1 PM + 1 data profile for the taxonomy and output evaluation."
+  },
+  "statut_vivant": {
+    "note": "Feature permanently integrated into the Seller Hub and the app; eBay keeps extending its genAI seller tools (official Selling with AI page)."
+  },
+  "transposable_ue": {
+    "note": "A global platform with EU sellers. Generating listings from a photo processes product images, not sensitive personal data. The AI Act requires transparency about generated content, which remains compatible with an assisted, seller-editable listing."
+  }
+}

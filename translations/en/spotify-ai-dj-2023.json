@@ -1,0 +1,114 @@
+{
+  "seo": {
+    "title": "Spotify: genAI voice AI DJ - 25% of listening time captured on usage days (2023)",
+    "meta_description": "Spotify's AI DJ blends generative voice, editorial scripting, and personalization; in beta it captured 25% of listening time and engagement doubled in a year.",
+    "resume_citable": "Spotify's AI DJ (launched 2023, 60+ markets) captures about 25% of listening time on usage days and saw engagement nearly double in a year, according to Spotify's press releases.",
+    "faq": [
+      {
+        "q": "How does Spotify's AI DJ work?",
+        "a": "It combines Spotify personalization, commentary written by music experts and scaled by generative AI, and a Sonantic synthetic voice."
+      },
+      {
+        "q": "Is the AI DJ still active?",
+        "a": "Yes, present in more than 60 markets and enhanced in 2025 with voice requests and Android Auto support."
+      }
+    ]
+  },
+  "pattern": "genAI voice DJ (synthetic voice plus generated commentary)",
+  "etape_parcours": "loyalty",
+  "objectif_business": "Reduce the friction of music choice by giving each listener a voice guide that chains tracks together and explains its choices, to bring the experience closer to a personalized radio station and increase time spent in the app.",
+  "description": "The DJ combines three building blocks: Spotify personalization (what to play), commentary written by an editorial newsroom of music experts and then shaped by generative AI (what to say), and a realistic synthetic voice from Sonantic technology. The listener presses a button, the DJ starts a personalized stream and comments on artists and tracks out loud. Since 2025, the listener can also make voice requests (genre, mood, artist) to reorient the session in real time.",
+  "points_cles": [
+    "genAI voice DJ that chains personalized tracks and comments on them out loud.",
+    "Sonantic synthetic voice, editorial scripting scaled by generative AI.",
+    "25% of listening time captured on usage days, engagement nearly doubled in a year.",
+    "Evidence B, confirmed status, figures from Spotify press releases (2023 and 2025)."
+  ],
+  "resultats": [
+    { "metrique": "Share of listening time spent with the DJ (usage days, beta)" },
+    { "metrique": "Return of first-time listeners the next day (beta)" },
+    { "metrique": "Change in DJ engagement (over one year)" }
+  ],
+  "niveau_preuve": {
+    "justification": "Engagement figures communicated by Spotify in its own press releases (newsroom), with two measurement points at two dates (2023 beta, 2025 update). Direct figures from the subject brand but not audited in financial results."
+  },
+  "stack_technique": [
+    { "detail": "realistic synthetic voice technology, acquired by Spotify in 2022, that gives the DJ its voice" },
+    { "detail": "generative AI technology cited by Spotify at the DJ launch to scale the commentary written by the newsroom" },
+    { "detail": "in-house recommendation systems that choose which tracks to chain, reorientable by voice requests since 2025" }
+  ],
+  "fonctionnement_operationnel": {
+    "cadence": "Real time at each session; the pool of editorial commentary is produced and refreshed continuously by the newsroom.",
+    "opere_par": "Spotify Personalization team + newsroom (music experts, curators, scriptwriters) + voice team.",
+    "signal_pilote": "The listener's listening history and preferences, which feed both the track selection and the choice of commentary. Without this signal, the DJ falls back to a generic radio with no personalization.",
+    "etapes": [
+      {
+        "etape": "Music selection",
+        "detail": "The personalization engine chooses which tracks to chain for the listener, including any voice requests.",
+        "acteur": "AI"
+      },
+      {
+        "etape": "Commentary writing",
+        "detail": "Music experts write contextual scripts about artists and tracks; generative AI scales and personalizes them.",
+        "acteur": "editorial team / AI"
+      },
+      {
+        "etape": "Voice synthesis",
+        "detail": "The Sonantic voice turns the script into realistic audio, inserted between tracks.",
+        "acteur": "AI"
+      },
+      {
+        "etape": "Listening and reorientation",
+        "detail": "The listener listens and can request another genre or mood out loud; the session recomposes.",
+        "acteur": "human / AI"
+      }
+    ]
+  },
+  "replication": {
+    "prerequis_data": [
+      "per-user listening / consumption history",
+      "catalog enriched with editorial metadata",
+      "corpus of scripts per artist / track"
+    ],
+    "prerequis_orga": [
+      "editorial team for the scripts",
+      "licensed voice synthesis capacity",
+      "existing recommendation engine"
+    ],
+    "stack_possible": [
+      "generative voice (Sonantic, ElevenLabs or equivalent)",
+      "LLM to shape the commentary",
+      "custom or managed recommendation engine"
+    ],
+    "equipe": "1 product/ML team building on the existing recommendation + 2-3 editorial experts + 1 voice/TTS engineer + 1 PM",
+    "playbook": [
+      {
+        "action": "Frame the editorial pipeline: who writes the scripts (experts, curators) and in what format per artist and track",
+        "livrable": "Pilot script corpus and editorial guidelines"
+      },
+      {
+        "action": "Expose the track selection from the existing recommendation engine in a continuous session format",
+        "livrable": "Playable personalized stream, without voice"
+      },
+      {
+        "action": "Scale the scripts with an LLM and synthesize the voice under license (Sonantic, ElevenLabs or equivalent)",
+        "livrable": "Voice DJ prototype on a limited catalog"
+      },
+      {
+        "action": "Closed beta on a panel: measure share of listening time and next-day return",
+        "livrable": "Engagement metrics compared to the playlist baseline"
+      },
+      {
+        "action": "Roll out by markets and languages, then add user controls (voice requests)",
+        "livrable": "Feature in production with an engagement dashboard"
+      }
+    ],
+    "premiere_etape": "Frame the editorial pipeline (who writes the scripts) before the voice layer, because it is the quality of the commentary that makes the difference."
+  },
+  "statut_vivant": {
+    "note": "Feature still active and enhanced in 2025 (voice requests, Android Auto extension). DJ present in more than 60 markets."
+  },
+  "transposable_ue": {
+    "note": "The generative voice and the script rely on first-party listening data (lawful basis of legitimate interest or contract). Language constraint: the voice DJ is rolled out in stages by market. No sensitive processing; GDPR-compliant provided there is user information and control."
+  }
+}

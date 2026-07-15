@@ -1,0 +1,116 @@
+{
+  "seo": {
+    "title": "Booking.com: AI Trip Planner genAI - multi-market rollout since 2023 (2026)",
+    "meta_description": "Booking.com's AI Trip Planner, built on the ChatGPT API, has been in production across five markets since 2023, with EU expansion and an app inside ChatGPT since October 2025.",
+    "resume_citable": "Booking.com has run a conversational AI Trip Planner built on the ChatGPT API since 2023, deployed across five English-speaking markets then extended to the EU and to ChatGPT in October 2025.",
+    "faq": [
+      {
+        "q": "How does Booking.com's AI Trip Planner work?",
+        "a": "The traveler asks open-ended questions and receives destination and accommodation suggestions with prices and booking links, drawn from the Booking.com inventory."
+      },
+      {
+        "q": "How long has it been deployed?",
+        "a": "Since June 2023 in beta in the United States, then in the United Kingdom, Australia, New Zealand, and Singapore, with EU expansion and an app inside ChatGPT in October 2025."
+      }
+    ]
+  },
+  "pattern": "genAI trip planning assistant",
+  "etape_parcours": "consideration",
+  "objectif_business": "Capture the inspiration and planning phase in natural language to bring travelers to the Booking.com inventory earlier and shorten the path to booking.",
+  "description": "Booking.com's AI Trip Planner, launched in beta in the United States in June 2023, is a conversational assistant built on in-house ML models and OpenAI's ChatGPT API. The traveler asks open-ended questions (where to go for a romantic weekend), receives destination and accommodation suggestions with prices and booking links, and refines within the conversation. The suite expanded in 2024 with Smart Filter (natural language search), Property Q&A (answers drawn from listings), and Review Summaries. In October 2025, Booking.com also became one of the first partners for apps inside ChatGPT via OpenAI's Apps SDK.",
+  "resultats": [
+    {
+      "metrique": "United States, United Kingdom, Australia, New Zealand, Singapore, EU expansion announced"
+    },
+    {
+      "metrique": "Travelers' stated interest in a personalized AI itinerary"
+    },
+    {
+      "metrique": "Product ambition (one-to-one conversations at scale)"
+    }
+  ],
+  "niveau_preuve": {
+    "justification": "Official Booking.com releases documenting the multi-market rollout and the feature upgrades, picked up by the specialist press (Skift). Evidence of scale = multi-market rollout and more than 12 months in production; the public performance metrics remain qualitative."
+  },
+  "stack_technique": [
+    {
+      "detail": "LLM API underlying the AI Trip Planner; the exact model version is not specified in the sources."
+    },
+    {
+      "detail": "Proprietary recommendation and personalization layers combined with the ChatGPT API, anchored to live inventory and prices."
+    },
+    {
+      "detail": "SDK that carries the Booking.com app inside ChatGPT since October 2025, among the first partners."
+    }
+  ],
+  "fonctionnement_operationnel": {
+    "cadence": "Real time on each conversation, with features added in product waves.",
+    "opere_par": "Booking.com's marketplace product team, supported by the in-house ML teams.",
+    "signal_pilote": "The intent expressed in natural language, crossed with Booking.com's live inventory and prices. If the assistant does not surface real availability, it remains an inspiration engine with no transactional value.",
+    "etapes": [
+      {
+        "etape": "Open-ended question",
+        "detail": "The traveler makes an inspiration or planning request in natural language.",
+        "acteur": "client"
+      },
+      {
+        "etape": "Suggestion generation",
+        "detail": "The assistant combines in-house ML and the ChatGPT API to propose destinations and accommodations.",
+        "acteur": "AI"
+      },
+      {
+        "etape": "Anchoring to the inventory",
+        "detail": "It pulls prices, availability, and booking links from the Booking.com database.",
+        "acteur": "AI / data team"
+      },
+      {
+        "etape": "Refinement and handoff",
+        "detail": "The traveler refines within the conversation then moves to the listing and the booking.",
+        "acteur": "client"
+      }
+    ]
+  },
+  "replication": {
+    "prerequis_data": [
+      "inventory and prices accessible via API",
+      "rich product listings for the Q&A",
+      "customer reviews for the summaries"
+    ],
+    "prerequis_orga": [
+      "AI product team",
+      "governance of multi-market personalization",
+      "country-by-country rollout process"
+    ],
+    "stack_possible": [
+      "commercial LLM API",
+      "RAG layer on the inventory and listings",
+      "existing search engine"
+    ],
+    "premiere_etape": "Start with natural language search (Smart Filter) on one market, before adding planning and product Q&A.",
+    "playbook": [
+      {
+        "action": "Connect a natural language search to the existing search engine, on a single market, in A/B test against the classic filters.",
+        "livrable": "Natural language search in test with a measurement plan."
+      },
+      {
+        "action": "Build the conversational assistant backed by live inventory and prices via API, with real booking links.",
+        "livrable": "Assistant in beta, anchored to real availability."
+      },
+      {
+        "action": "Add the product Q&A drawn from the listings and the review summaries to cover the reassurance phase.",
+        "livrable": "Q&A features and review summaries in production."
+      },
+      {
+        "action": "Measure engagement, customer service contacts, and conversion against the classic journey, then launch the rollout country by country.",
+        "livrable": "Per-market assessment and expansion plan."
+      }
+    ],
+    "equipe": "1 PM + 2-3 developers (LLM API, RAG on the inventory) + 1 data scientist for evaluating the answers."
+  },
+  "statut_vivant": {
+    "note": "Suite of genAI tools expanded in 2024 and extended to ChatGPT in October 2025; active, multi-market product."
+  },
+  "transposable_ue": {
+    "note": "The EU rollout followed the English-language launch, with expansion announced to Spain, Italy, Germany, France, Poland, and the Netherlands. In the EU, using account and search data for personalization falls under GDPR, and the AI Act requires transparency about interaction with an AI."
+  }
+}

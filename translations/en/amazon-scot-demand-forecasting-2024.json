@@ -1,0 +1,126 @@
+{
+  "seo": {
+    "title": "Amazon: deep learning demand forecasting (SCOT) - 15x accuracy across 400M products (2024)",
+    "meta_description": "Amazon's SCOT team forecasts demand for more than 400 million products with probabilistic deep learning models and improved forecast accuracy 15-fold.",
+    "resume_citable": "Amazon's SCOT team forecasts demand for more than 400 million products across 185 countries using probabilistic deep learning models (DeepAR, MQ-Transformer) and achieved a 15x improvement in accuracy after moving to a unified deep learning model.",
+    "faq": [
+      {
+        "q": "How does Amazon forecast demand?",
+        "a": "Through its SCOT team and probabilistic deep learning models (DeepAR, MQ-Transformer) that produce, for each catalog item, a demand distribution over several horizons, which is then consumed by the replenishment systems."
+      },
+      {
+        "q": "What is the measured gain?",
+        "a": "A 15-fold improvement in forecast accuracy after moving from the quantile random forest to a unified deep learning model, at the scale of more than 400 million products."
+      }
+    ]
+  },
+  "pattern": "catalog-scale probabilistic demand forecasting",
+  "etape_parcours": "purchase",
+  "objectif_business": "Predict demand for every product in the catalog to decide how much to order and where to place stock, so that availability holds without tying up capital in overstock.",
+  "description": "Amazon sells more than 400 million products across over 185 countries. Its SCOT team (Supply Chain Optimization Technologies) forecasts demand for each item to drive replenishment, stock placement, and logistics capacity decisions. The system has evolved since 2008: from classic time series methods, to a sparse quantile random forest, and finally to a unified deep learning model. Published work includes DeepAR (autoregressive recurrent networks producing probabilistic forecasts) and MQ-Transformer (multi-horizon forecasts with attention). The forecast is probabilistic: rather than a single number, it produces a distribution, which allows the trade-off between stockout risk and overstock cost.",
+  "points_cles": [
+    "Catalog-scale probabilistic demand forecasting (SCOT team).",
+    "In-house deep learning models (DeepAR, MQ-Transformer) on Apache Spark.",
+    "Forecast accuracy improved 15-fold, across more than 400 million products.",
+    "Evidence level B, confirmed active status."
+  ],
+  "resultats": [
+    {
+      "metrique": "Accuracy improvement of the unified deep learning model vs the previous quantile forest"
+    },
+    {
+      "metrique": "Catalog products covered, across 185+ countries"
+    }
+  ],
+  "niveau_preuve": {
+    "justification": "Technical publications from Amazon Science (Amazon's scientific organization) that name Amazon's forecasting system and its quantified accuracy gain. Official interested source, not independent, hence B."
+  },
+  "fonctionnement_operationnel": {
+    "cadence": "Regular retraining and scoring across the whole catalog; forecasts continuously drive purchasing and stock placement decisions.",
+    "opere_par": "SCOT team (Amazon supply chain scientists and engineers), on an in-house ML platform built on Apache Spark.",
+    "signal_pilote": "The predicted demand distribution per product. If the sales history is short (new product) or disrupted (stockout, exceptional promo), the forecast becomes noisy and the system relies on comparable products.",
+    "etapes": [
+      {
+        "etape": "Data preparation",
+        "detail": "Sales, price, availability, seasonality, and product attributes are consolidated into time series at catalog scale.",
+        "acteur": "ML platform / data team"
+      },
+      {
+        "etape": "Probabilistic forecasting",
+        "detail": "The deep learning model (DeepAR / MQ-Transformer type) produces, for each item, a demand distribution over several horizons.",
+        "acteur": "AI model"
+      },
+      {
+        "etape": "Stock decision",
+        "detail": "The replenishment systems consume these distributions to decide order quantity and placement location.",
+        "acteur": "SCOT systems"
+      },
+      {
+        "etape": "Learning loop",
+        "detail": "Actual sales and observed stockouts flow back as training data and refine subsequent forecasts.",
+        "acteur": "ML platform"
+      }
+    ]
+  },
+  "replication": {
+    "prerequis_data": [
+      "multi-year sales history per SKU",
+      "availability and price signals",
+      "product attributes to link new items to comparables"
+    ],
+    "prerequis_orga": [
+      "supply chain data science team",
+      "replenishment system able to consume probabilistic forecasts"
+    ],
+    "stack_possible": [
+      "in-house forecasting (DeepAR via GluonTS, MQ-Transformer)",
+      "Amazon Forecast / SageMaker",
+      "Google Vertex AI Forecast",
+      "demand planning platforms"
+    ],
+    "premiere_etape": "Replace a point forecast (mean) with a probabilistic forecast (quantiles) on a high-variability category, and measure the gain on stockouts and overstock.",
+    "playbook": [
+      {
+        "action": "Consolidate the time series per SKU: sales, price, availability, product attributes over several years.",
+        "livrable": "Multi-year dataset ready for training"
+      },
+      {
+        "action": "Replace the point forecast with a probabilistic forecast (quantiles, DeepAR type) on a high-variability category.",
+        "livrable": "Quantile model evaluated in backtest against the incumbent"
+      },
+      {
+        "action": "Connect the demand distributions to the stock decision: order quantity and placement.",
+        "livrable": "Ordering rule that consumes the quantiles"
+      },
+      {
+        "action": "Run the pilot in parallel with the existing system and measure stockouts and overstock.",
+        "livrable": "Quantified comparison on the pilot category"
+      },
+      {
+        "action": "Extend to the rest of the catalog and industrialize the retraining loop.",
+        "livrable": "Production forecasting pipeline with accuracy monitoring"
+      }
+    ],
+    "equipe": "2-3 forecasting data scientists + 1-2 data engineers + 1 supply chain lead who owns the ordering rule"
+  },
+  "stack_technique": [
+    {
+      "detail": "Autoregressive recurrent networks for probabilistic forecasting, published by Amazon and available open source via GluonTS."
+    },
+    {
+      "detail": "Multi-horizon quantile model with attention, published by Amazon Science, core of the unified deep learning model."
+    },
+    {
+      "detail": "Training and scoring pipeline at the scale of 400 million items."
+    },
+    {
+      "detail": "Internal systems that consume the demand distributions to decide order quantities and stock placement."
+    }
+  ],
+  "statut_vivant": {
+    "note": "SCOT is a permanent Amazon organization; the forecasting pipeline is a continuous operational asset, described in accessible scientific publications."
+  },
+  "transposable_ue": {
+    "note": "The forecast operates on sales and inventory time series, not on personal data. Already deployed on Amazon's European markets. Little GDPR constraint in principle."
+  }
+}

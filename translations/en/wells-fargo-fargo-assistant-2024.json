@@ -1,0 +1,141 @@
+{
+  "seo": {
+    "title": "Wells Fargo: Fargo assistant with no PII to the LLM - 245.4 million interactions in 2024",
+    "meta_description": "Fargo, the Wells Fargo app assistant, went from 21.3 to 245.4 million interactions in 2024 and passed 1 billion cumulative, without ever exposing PII to the LLM.",
+    "resume_citable": "Fargo, the conversational assistant in the Wells Fargo app launched in 2023, went from 21.3 million interactions in 2023 to 245.4 million in 2024 and passed 1 billion cumulative in less than three years, with an architecture that never sends sensitive customer data to the LLM.",
+    "faq": [
+      {
+        "q": "How many interactions has Fargo handled?",
+        "a": "21.3 million in 2023, 245.4 million in 2024 (more than twice the projections), and more than 1 billion cumulative in less than three years, announced in March 2026."
+      },
+      {
+        "q": "How does Fargo protect customer data?",
+        "a": "Speech is transcribed and masked on the Wells Fargo side; a small model detects PII and only the intent and entities are sent to the LLM (Gemini Flash 2.0). No sensitive data passes through the model."
+      }
+    ]
+  },
+  "pattern": "conversational banking assistant at scale, architecture with no PII to the LLM",
+  "etape_parcours": "post-purchase",
+  "objectif_business": "Handle the customer's everyday banking need in self-service (balance, transactions, Zelle transfers, bill payment, routing numbers, spending insights) inside the app, without going through a costly human channel, and anchor the use of the mobile app as the primary relationship channel.",
+  "points_cles": [
+    "Fargo conversational assistant in the Wells Fargo Mobile app, by voice or text.",
+    "In-house orchestration plus Google Gemini Flash 2.0, PII masked before any call to the LLM.",
+    "From 21.3 million interactions in 2023 to 245.4 million in 2024, more than 1 billion cumulative.",
+    "Evidence level A, confirmed active status."
+  ],
+  "description": "Fargo is the conversational assistant of the Wells Fargo Mobile app, launched in 2023. The customer queries it by voice or text to send money with Zelle, pay a bill, find a routing number, check a balance, or understand their spending. Its architecture is the notable point of the case: speech is transcribed locally, the text is cleaned and tokenized by the Wells Fargo stack, a small model detects PII, and only the intent and entities go to an LLM (Google Gemini Flash 2.0 as the main model). No sensitive customer data passes through the model. Usage jumped from 21.3 million interactions in 2023 to 245.4 million in 2024, more than twice the initial projections, passing 1 billion cumulative interactions in less than three years (March 2026 announcement). More than 3 million Spanish-speaking customers have used Fargo, with more than 160 million interactions.",
+  "resultats": [
+    {
+      "metrique": "Annual interactions, 2023 then 2024, more than 2x the projections"
+    },
+    {
+      "metrique": "Cumulative interactions in less than three years (March 2026)"
+    },
+    {
+      "metrique": "Sensitive data to the LLM, intent and entities only"
+    },
+    {
+      "metrique": "Monthly active users of the mobile app"
+    },
+    {
+      "metrique": "Spanish-speaking customers, more than 160 million interactions"
+    }
+  ],
+  "niveau_preuve": {
+    "justification": "Volumes published by Wells Fargo itself in an official release (1 billion interactions, 33 million mobile active users, March 2026, T1), consistent with the internal figures reported by the established tech press (21.3 million in 2023, 245.4 million in 2024, VentureBeat). Several concordant sources including a primary one from the subject brand, holding over several years, raise the level."
+  },
+  "stack_technique": [
+    {
+      "detail": "Assistant integrated into the Wells Fargo Mobile app. The customer's voice is transcribed locally, the text is cleaned and tokenized by the bank's stack, a small model detects PII; only the intent and entities are then sent to the LLM. Detokenization and API calls stay on the bank's side."
+    },
+    {
+      "detail": "Main model called by the orchestration layer to extract the intent and entities of the request, without ever receiving raw data or PII. Wells Fargo describes a compound system where the orchestration chooses the model based on the task (other models such as Llama or OpenAI can be mobilized)."
+    },
+    {
+      "detail": "Reduced language model that spots and masks personal data before any call to the LLM, key to the privacy-first architecture."
+    },
+    {
+      "detail": "Single channel for Fargo (voice and text), integrated with accounts and transactions; the app has passed 33 million monthly active users."
+    }
+  ],
+  "fonctionnement_operationnel": {
+    "cadence": "Real time, 24/7, in the mobile app; the models and orchestration are maintained continuously",
+    "opere_par": "Wells Fargo Digital Technology and Innovation team, in-house, with Google Cloud for the main model",
+    "signal_pilote": "The intent expressed by the customer, extracted after PII masking. The system optimizes on intent understanding and the human-free resolution rate; if masking or detokenization break, the response can no longer be served without exposing data.",
+    "etapes": [
+      {
+        "etape": "Customer request",
+        "detail": "The customer speaks or types their request in the app (Zelle transfer, bill, balance, routing number, spending).",
+        "acteur": "customer"
+      },
+      {
+        "etape": "Local transcription and masking",
+        "detail": "Speech is transcribed locally; the text is cleaned and tokenized; a small model detects and masks PII before any external call.",
+        "acteur": "AI"
+      },
+      {
+        "etape": "Intent extraction by the LLM",
+        "detail": "The orchestration layer sends the masked text to the LLM (Gemini Flash 2.0), which returns the intent and entities, without ever seeing raw data.",
+        "acteur": "AI"
+      },
+      {
+        "etape": "Execution on the bank side",
+        "detail": "Detokenization, API calls to accounts, and the action (transfer, response, insight) happen entirely on Wells Fargo systems.",
+        "acteur": "data team"
+      },
+      {
+        "etape": "Monitoring and extension",
+        "detail": "The in-house team tracks volumes, resolution, and misunderstood cases to widen the scope and adjust the model choice in the compound system.",
+        "acteur": "data team"
+      }
+    ]
+  },
+  "replication": {
+    "prerequis_data": [
+      "Real-time account and transaction data",
+      "History of customer intents to frame the covered cases",
+      "Reference set of PII to mask (names, account numbers, sensitive amounts)"
+    ],
+    "prerequis_orga": [
+      "Dedicated AI product and engineering team over time",
+      "Banking security and compliance framework",
+      "Governance of model choice in a compound system"
+    ],
+    "stack_possible": [
+      "Small PII detection and masking model on the enterprise side",
+      "Orchestration layer that routes to the right LLM based on the task",
+      "Third-party LLM (Gemini Flash type) called only on masked text",
+      "Detokenization and API calls kept in-house"
+    ],
+    "premiere_etape": "Map the most frequent customer intents in the app, then set up the PII masking layer before any call to an LLM: it is what makes the architecture transposable in a regulated environment.",
+    "playbook": [
+      {
+        "action": "Map the most frequent customer intents (transfer, balance, bill, spending insight) from support and app logs.",
+        "livrable": "Reference set of intents prioritized by volume."
+      },
+      {
+        "action": "Build the masking layer: local transcription, tokenization, small model that detects and replaces PII before any external call.",
+        "livrable": "Tested masking pipeline, zero outbound PII measured."
+      },
+      {
+        "action": "Plug in an orchestration layer that sends the masked text to an LLM and only retrieves the intent and entities.",
+        "livrable": "Intent extraction prototype on masked data."
+      },
+      {
+        "action": "Execute the response and actions (account API calls) entirely in-house, after detokenization, with logging.",
+        "livrable": "Full loop in test, each action traced on the enterprise side."
+      },
+      {
+        "action": "Open a beta to a segment of customers in the app with transparency on the AI nature, then widen the scope and adjust the model choice.",
+        "livrable": "Assistant in beta, human-free resolution rate tracked."
+      }
+    ],
+    "equipe": "1 digital product team (PM, design) + AI engineers (orchestration, PII masking, account integrations) + banking security and compliance involved continuously."
+  },
+  "statut_vivant": {
+    "note": "Continuous and documented growth: 245.4 million interactions in 2024, more than 1 billion cumulative and 33 million mobile active users announced in March 2026. Central feature of the app, no signal of withdrawal."
+  },
+  "transposable_ue": {
+    "note": "Fargo answers in natural language about a customer's accounts and transactions, by voice or text. In the EU, such an assistant requires a clear GDPR legal basis and, under the AI Act, a transparency obligation (telling the customer they are talking to an AI). The interest of the case is precisely its privacy-first architecture: speech is transcribed and detokenized on the bank side, only the intent and entities pass through the LLM, never the sensitive data. This choice transposes well to a GDPR environment; the detail of the orchestration and compliance remains to be redone."
+  }
+}

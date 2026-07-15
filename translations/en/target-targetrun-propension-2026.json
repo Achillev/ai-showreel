@@ -1,0 +1,112 @@
+{
+  "seo": {
+    "title": "Target: TargetRun visit propensity - +78% redemption among low-activity customers (2026)",
+    "meta_description": "Target predicts the visit frequency of its Circle customers with TargetRun (Bi-LSTM) and feeds its CORE offer engine: +78% redemption among customers who rarely redeem offers.",
+    "resume_citable": "Target's TargetRun model predicts a Circle customer's trip count with Bi-LSTMs and feeds the CORE offer engine; an A/B test showed +78% redemption among customers who rarely redeem offers, +15% accuracy, and +40% predictive power.",
+    "faq": [
+      {
+        "q": "What does TargetRun predict?",
+        "a": "How many times a Target Circle customer will visit in the next two to three weeks, from 52 weeks of history, through a bidirectional LSTM model with attention."
+      },
+      {
+        "q": "What is the quantified result?",
+        "a": "In an A/B test, +78% redemption among customers who rarely redeem offers, +15% accuracy, more than +40% predictive power, and -44% over-prediction."
+      }
+    ]
+  },
+  "pattern": "visit propensity (predicted trip count) to frame and target offers",
+  "etape_parcours": "loyalty",
+  "objectif_business": "Predict how many times a Target Circle customer will visit in the coming weeks in order to send them the right offers at the right time, and lift redemption among customers who rarely use offers.",
+  "description": "TargetRun is a deep learning model built by Target's MarTech Offer Personalization team. It predicts a customer's (Guest's) visit frequency over a two-to-three-week horizon. The architecture combines bidirectional LSTMs and multi-head attention over 52 weeks of customer history (spending, digital activity) summarized into sequences of 26 steps, plus static attributes (engagement, membership). The predicted number of visits feeds CORE (Contextual Offer Recommendation Engine), Target's offer engine based on a contextual bandit, which decides which offers a customer sees and how they are structured. CORE served millions of recommended offers in 2023.",
+  "points_cles": [
+    "Prediction of Circle customers' visit frequency with the TargetRun model.",
+    "Bi-LSTM deep learning and multi-head attention, on TensorFlow, PySpark, Kubeflow.",
+    "A/B test: +78% redemption among customers who rarely use offers.",
+    "Evidence B, confirmed status, TargetRun and the CORE engine in production."
+  ],
+  "resultats": [
+    { "metrique": "Increase in redemption among customers who rarely use offers (A/B test)" },
+    { "metrique": "Accuracy gain of the new model" },
+    { "metrique": "Increase in overall predictive power" },
+    { "metrique": "Reduction in over-prediction" },
+    { "metrique": "Recommended offers served by CORE" }
+  ],
+  "niveau_preuve": {
+    "justification": "Official Target engineering blog describing the architecture and the results of a quantified A/B test, corroborated by a second official post on the CORE engine. Primary but internal source (no independent press), hence B."
+  },
+  "stack_technique": [
+    { "detail": "In-house deep learning model: bidirectional LSTMs plus multi-head attention over 52 weeks of history summarized into sequences of 26 steps, plus static attributes." },
+    { "detail": "In-house offer engine based on a contextual bandit, fed by the visit prediction; millions of offers served in 2023." },
+    { "detail": "Framework for training the sequential model." },
+    { "detail": "Distributed preparation of the customer history sequences." },
+    { "detail": "Orchestration of the ML pipelines (recurring training and scoring)." }
+  ],
+  "fonctionnement_operationnel": {
+    "cadence": "Recurring per-customer scoring over a two-to-three-week horizon; the offers are then chosen by CORE as engagement unfolds.",
+    "opere_par": "Target Tech's AI/ML Offer Personalization team (MarTech), on an in-house TensorFlow / PySpark / Kubeflow stack.",
+    "signal_pilote": "The predicted number of visits per customer. If a customer's digital and transactional history is too sparse, the prediction is noisy; the static attributes (engagement, membership) serve as an anchor.",
+    "etapes": [
+      {
+        "etape": "Sequence construction",
+        "detail": "52 weeks of spending and digital activity per customer are summarized into a sequence of 26 steps, plus static attributes.",
+        "acteur": "data team / platform"
+      },
+      {
+        "etape": "Prediction of the number of visits",
+        "detail": "The bidirectional LSTM model with attention predicts how many times the customer will visit in the coming weeks.",
+        "acteur": "AI model (TargetRun)"
+      },
+      {
+        "etape": "Offer selection",
+        "detail": "The prediction feeds CORE (contextual bandit), which chooses the offers to show and their structure to maximize engagement.",
+        "acteur": "AI model (CORE)"
+      },
+      {
+        "etape": "Delivery and measurement",
+        "detail": "The offers go out in the Circle app and by email/push; the reaction (add, redemption) comes back as data and refines the models.",
+        "acteur": "platform / data team"
+      }
+    ]
+  },
+  "replication": {
+    "prerequis_data": [
+      "purchase and digital activity history per customer linked to a single ID",
+      "loyalty program with offers and opt-in",
+      "engagement signals (add, redemption)"
+    ],
+    "prerequis_orga": [
+      "data science team able to maintain a sequential model",
+      "downstream offer decision engine (bandit or recommendation)"
+    ],
+    "stack_possible": [
+      "custom (TensorFlow / PySpark / Kubeflow)",
+      "decisioning platforms (Braze, Salesforce, Adobe) with frequency prediction"
+    ],
+    "equipe": "2 data scientists + 1 ML engineer + 1 MarTech PM, backed by the CRM team that operates the offer program.",
+    "playbook": [
+      {
+        "action": "Frame the data: link 52 weeks of purchase and digital activity history to a single customer ID and build the sequences.",
+        "livrable": "Clean sequential dataset with static attributes (engagement, membership)."
+      },
+      {
+        "action": "Train a simple baseline then the sequential model (LSTM/Bi-LSTM) predicting the number of visits.",
+        "livrable": "Model beating the baseline on accuracy and over-prediction, validated out of sample."
+      },
+      {
+        "action": "Connect the visit prediction to the offer engine (contextual bandit or rules) to frame targeting and timing.",
+        "livrable": "Offer targeting and timing driven by propensity, in pre-production."
+      },
+      {
+        "action": "Run an A/B test on redemption, isolating the segment of customers who rarely use offers.",
+        "livrable": "Lift reading by segment and generalization decision."
+      }
+    ],
+    "premiere_etape": "Predict a visit frequency (trip count) per customer over 2-3 weeks, then connect this prediction to the targeting and timing of the loyalty program's offers."
+  },
+  "statut_vivant": {
+    "note": "TargetRun and CORE are described as in production in Target's recent engineering posts; the Circle setup is active nationwide."
+  },
+  "transposable_ue": {
+    "note": "The model profiles each customer (Guest) from their purchase history and engagement to predict their visit frequency. In the EU, the legal basis for profiling and the loyalty program's consent must be framed (GDPR), without blocking the principle."
+  }
+}

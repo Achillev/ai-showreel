@@ -1,0 +1,107 @@
+{
+  "seo": {
+    "title": "StubHub: Pricing Assistant, dynamic price recommendation for ticket sellers (2019)",
+    "meta_description": "StubHub helps sellers set the right price through Pricing Assistant, an algorithm that adjusts prices up or down according to the market, on nearly twenty years of sales data.",
+    "resume_citable": "In 2019, StubHub launched Pricing Assistant, an engine that recommends and automatically adjusts sellers' ticket prices according to the market and the approach of the event, on nearly twenty years of data.",
+    "faq": [
+      {
+        "q": "What does StubHub's Pricing Assistant do?",
+        "a": "Once activated by the seller, it adjusts ticket prices up or down according to market movements and the approach of the event date."
+      },
+      {
+        "q": "What data does the price recommendation rely on?",
+        "a": "Nearly twenty years of sales history, prices by seat and section, recent comparable transactions, and current market activity."
+      }
+    ]
+  },
+  "pattern": "dynamic price recommendation engine for sellers",
+  "etape_parcours": "purchase",
+  "objectif_business": "Help sellers set a price that maximizes the probability of sale, and thus the transaction volume and the commissions taken by the marketplace.",
+  "description": "Pricing Assistant, rolled out in North America from April 2019 and officially announced in November 2019, is an optional toggle: once activated, the algorithm adjusts ticket prices up or down as the market evolves and the event date approaches. It draws on nearly twenty years of sales data, prices by seat and section, recent comparable transactions, and current market activity, and gives a recommended price along with a high and low range. The Sell It Now feature, launched in parallel, allows an immediate sale at a guaranteed price.",
+  "resultats": [
+    { "metrique": "Price adjusted up or down according to the market" },
+    { "metrique": "Sales history used by the pricing engine" }
+  ],
+  "niveau_preuve": {
+    "justification": "Official StubHub press release and specialized ticketing press describing the tool by name, its operation, and its scope. No public financial result figure, hence a C level."
+  },
+  "stack_technique": [
+    { "detail": "seller toggle: recommended price with a high and low range, then automatic adjustment as the market and the event approach" },
+    { "detail": "model drawing on nearly twenty years of sales data, prices by seat and section, and recent comparable transactions" },
+    { "detail": "immediate sale at a guaranteed price, launched in parallel with Pricing Assistant" }
+  ],
+  "fonctionnement_operationnel": {
+    "cadence": "Continuous repricing according to the market and the approach of the event date.",
+    "opere_par": "Sellers who activate the toggle, StubHub's pricing engine.",
+    "signal_pilote": "Market activity and recent comparable transactions by seat and section. Without liquidity of comparables, the price recommendation loses its reliability.",
+    "etapes": [
+      {
+        "etape": "Activation by the seller",
+        "detail": "The seller activates Pricing Assistant on their listed tickets.",
+        "acteur": "customer"
+      },
+      {
+        "etape": "Reading the market",
+        "detail": "The algorithm reads prices by section and seat, recent comparable transactions, and current activity.",
+        "acteur": "AI"
+      },
+      {
+        "etape": "Price adjustment",
+        "detail": "It raises or lowers the price as the market evolves.",
+        "acteur": "AI"
+      },
+      {
+        "etape": "Reduction as the event approaches",
+        "detail": "It lowers the price as the date approaches to maximize the probability of sale.",
+        "acteur": "AI"
+      }
+    ]
+  },
+  "replication": {
+    "prerequis_data": [
+      "transaction history by seat and section",
+      "real-time market activity",
+      "comparables by event type"
+    ],
+    "prerequis_orga": [
+      "marketplace with seller inventory",
+      "tool to expose the recommendations",
+      "guardrail rules on prices"
+    ],
+    "stack_possible": [
+      "in-house price recommendation engine",
+      "sale probability model",
+      "market data feed"
+    ],
+    "equipe": "1-2 data scientists + 1 seller product dev + 1 marketplace PM",
+    "playbook": [
+      {
+        "action": "Consolidate the history: transactions by event, seat, and section, with comparables",
+        "livrable": "Cleaned and structured transaction dataset"
+      },
+      {
+        "action": "Model the probability of sale by price level from the comparables",
+        "livrable": "Model evaluated in backtest on past sales"
+      },
+      {
+        "action": "Define the guardrails: price bounds, ranges, and rules as the date approaches",
+        "livrable": "Documented and testable pricing policy"
+      },
+      {
+        "action": "Expose the tool to sellers opt-in (toggle) on a pilot segment",
+        "livrable": "Tool active with pilot sellers, sell-through measured"
+      },
+      {
+        "action": "Compare sale rate and listing revenue with and without the tool, adjust then open to all",
+        "livrable": "Quantified reading of sell-through and general rollout"
+      }
+    ],
+    "premiere_etape": "Build a per-price sale probability estimate from the history of comparable transactions."
+  },
+  "statut_vivant": {
+    "note": "The price recommendation tool is still described in StubHub's help pages. Ownership of StubHub changed after 2019 (acquisition by viagogo in 2020), but the feature persists."
+  },
+  "transposable_ue": {
+    "note": "A price recommendation engine for sellers on a marketplace is transposable, and the regulatory friction is low because the seller activates an optional toggle. GDPR applies to seller data but without particular obstacle."
+  }
+}

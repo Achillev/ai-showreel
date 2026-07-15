@@ -1,0 +1,128 @@
+{
+  "seo": {
+    "title": "Wendy's FreshAI: drive-thru voice AI with Google Cloud - heading for 500 restaurants (2025)",
+    "meta_description": "FreshAI, Wendy's drive-thru order-taking voice AI built with Google Cloud, equipped more than 160 restaurants in early 2025 with a target of more than 500.",
+    "resume_citable": "Wendy's FreshAI, a drive-thru order-taking voice agent developed with Google Cloud, equipped more than 160 restaurants in early 2025 for a target of more than 500, processing tens of thousands of orders per day.",
+    "faq": [
+      {
+        "q": "Who did Wendy's develop FreshAI with?",
+        "a": "With Google Cloud, whose large language models power the voice agent, in test since 2023."
+      },
+      {
+        "q": "How many restaurants are equipped?",
+        "a": "More than 160 restaurants in early 2025, with an announced target of more than 500 restaurants over the year."
+      }
+    ]
+  },
+  "pattern": "drive-thru order-taking voice agent with upselling",
+  "etape_parcours": "purchase",
+  "objectif_business": "Take drive-thru orders with a voice AI built with Google Cloud to smooth service, reduce errors, and push upsell suggestions that raise the basket, while freeing up crew members.",
+  "description": "FreshAI is Wendy's drive-thru order-taking voice AI, developed with Google Cloud and launched in test in 2023. It understands natural language, handles millions of order and personalization combinations, and proposes complementary items based on the order in progress. The system started as a pilot in two states in 2024, then a franchise program. In early 2025 it equipped more than 160 restaurants, with a target of more than 500 restaurants over the year, processing tens of thousands of orders per day. Wendy's has since added Spanish.",
+  "resultats": [
+    {
+      "metrique": "Restaurants equipped in early 2025, target of more than 500"
+    },
+    {
+      "metrique": "Orders processed per day"
+    },
+    {
+      "metrique": "Digital mix of total sales, record in Q1"
+    }
+  ],
+  "niveau_preuve": {
+    "justification": "Established restaurant press and official brand communications naming Wendy's, the number of restaurants, and the partner Google Cloud, with a comment from CEO Kirk Tanner on earnings about the digital mix. FreshAI's own metrics (accuracy, wait time) are not published in figures, hence C rather than A."
+  },
+  "fonctionnement_operationnel": {
+    "cadence": "Real time, on every order placed at the drive-thru",
+    "opere_par": "Restaurant crews for takeover and preparation; Wendy's digital team and Google Cloud for the model",
+    "signal_pilote": "Voice understanding accuracy and human takeover rate. The model must handle millions of personalization combinations; if it stumbles on an accent, noise, or an off-menu request, a crew member takes over.",
+    "etapes": [
+      {
+        "etape": "Customer speaks",
+        "detail": "The customer orders at the drive-thru microphone.",
+        "acteur": "Customer"
+      },
+      {
+        "etape": "Understanding and suggestion",
+        "detail": "FreshAI understands the order, handles personalization, and proposes complementary items to raise the basket.",
+        "acteur": "AI"
+      },
+      {
+        "etape": "Display and confirmation",
+        "detail": "The order appears on the digital menu for checking.",
+        "acteur": "Digital menu"
+      },
+      {
+        "etape": "Human takeover if needed",
+        "detail": "A crew member takes over the conversation if it gets stuck.",
+        "acteur": "Crew member"
+      },
+      {
+        "etape": "Preparation",
+        "detail": "The validated order goes to the kitchen.",
+        "acteur": "Crew member"
+      }
+    ]
+  },
+  "replication": {
+    "prerequis_data": [
+      "structured menu with personalization rules",
+      "audio recordings to train and evaluate the ASR",
+      "catalog of complementary items for upselling"
+    ],
+    "prerequis_orga": [
+      "integration with the POS and digital menus",
+      "human takeover process",
+      "franchises on board"
+    ],
+    "stack_possible": [
+      "LLM and voice AI (Google Cloud, other vendors)",
+      "connected digital menus",
+      "integrated POS"
+    ],
+    "premiere_etape": "Test on a handful of restaurants with human takeover by default, measuring accuracy and service time before opening to franchises.",
+    "playbook": [
+      {
+        "action": "Structure the menu and personalization rules into machine-usable data.",
+        "livrable": "Structured menu with valid combinations and suggestion rules."
+      },
+      {
+        "action": "Integrate the voice chain (microphone, ASR, LLM, TTS) into a lab restaurant, human takeover by default.",
+        "livrable": "Prototype taking real orders under supervision."
+      },
+      {
+        "action": "Extend the pilot to a handful of restaurants and measure.",
+        "livrable": "Dashboard of order accuracy / human takeover rate / service time."
+      },
+      {
+        "action": "Integrate POS and digital menus, activate upselling.",
+        "livrable": "Order sent to the kitchen without re-entry, basket tracked."
+      },
+      {
+        "action": "Open the rollout to franchises with training and support.",
+        "livrable": "Multi-restaurant deployment with central metrics tracking."
+      }
+    ],
+    "equipe": "1 operations PM + digital/AI team (or cloud partner) + restaurant crews for human takeover + 1 franchise lead"
+  },
+  "stack_technique": [
+    {
+      "detail": "Technology partner: FreshAI's large language models and voice components run on Google Cloud."
+    },
+    {
+      "detail": "Wendy's custom voice agent on Google Cloud: order understanding, millions of personalization combinations, suggestion of complementary items."
+    },
+    {
+      "detail": "Voice recognition and synthesis at the drive-thru microphone, with human takeover when the model stumbles (accent, noise, off-menu)."
+    },
+    {
+      "detail": "Display of the order for customer confirmation and transmission to the kitchen without re-entry."
+    }
+  ],
+  "statut_vivant": {
+    "note": "Deployment in active expansion in 2025 (target of more than 500 restaurants) and functional enrichment (Spanish). Wendy's has announced continued tech investments on the drive-thru."
+  },
+  "transposable_ue": {
+    "note": "Processing customers' voice at the drive-thru: GDPR legal basis and notice required, AI Act transparency on the AI interlocutor. The language models must be retrained on local accents and languages (Wendy's added Spanish in the United States)."
+  }
+}

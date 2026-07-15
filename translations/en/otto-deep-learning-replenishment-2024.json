@@ -1,0 +1,120 @@
+{
+  "seo": {
+    "title": "Otto: AI-driven autonomous ordering - 90% accuracy and -20% stock (2024)",
+    "meta_description": "Otto predicts demand with a deep-learning model and orders merchandise on its own: 90% accuracy on 30-day sales, 20% less stock, 7.5 billion forecasts a month.",
+    "resume_citable": "Otto predicts short-term demand with a deep-learning model that reaches 90% accuracy on 30-day sales, cuts stock by 20%, and automatically orders merchandise from third-party brands, producing 7.5 billion individual forecasts a month.",
+    "faq": [
+      {
+        "q": "How does Otto use AI for its stock?",
+        "a": "A deep-learning model predicts short-term demand from hundreds of variables; above a confidence threshold, the system orders merchandise from third-party brands on its own, with no human validation."
+      },
+      {
+        "q": "What are the numbers?",
+        "a": "90% accuracy on 30-day sales, a 20% reduction in stock levels, and 7.5 billion individual forecasts produced each month on otto.de."
+      }
+    ]
+  },
+  "pattern": "deep-learning demand forecasting triggering autonomous supplier orders",
+  "etape_parcours": "purchase",
+  "objectif_business": "Predict what customers will order before they do, to order the merchandise ahead of time, cut overstock, and deliver faster from stock already in the right place.",
+  "description": "Otto is one of Germany's largest e-commerce retailers. A large share of its catalog comes from third-party brands, with lead times that made availability hard to hold. Otto put into production a forecasting engine (a deep-learning algorithm derived from particle-physics tools) that predicts short-term demand from hundreds of variables: sales history, site traffic and searches, weather, day of the week, holidays, competitive data. When the forecast is confident enough, the system orders the merchandise from the brands on its own, without human validation, to have it in stock before the customer order. On otto.de, the AI produces 7.5 billion individual forecasts a month to drive warehouse arrivals, sales volumes, and returns.",
+  "resultats": [
+    {
+      "metrique": "Individual forecasts produced each month"
+    },
+    {
+      "metrique": "Forecast accuracy on 30-day sales"
+    },
+    {
+      "metrique": "Reduction in stock levels"
+    }
+  ],
+  "niveau_preuve": {
+    "justification": "The Economist (major press) documents the Otto case and its figures by name, corroborated by Otto's official site (7.5 billion forecasts/month). The accuracy figure originally comes from a case study by the vendor Blue Yonder, hence no A level."
+  },
+  "stack_technique": [
+    {
+      "detail": "Vendor of the demand-forecasting engine used by Otto, documented by the case study reproduced by the press and the HBS analysis."
+    },
+    {
+      "detail": "Short-term forecasting model trained on hundreds of variables (sales, site traffic and searches, weather, calendar, competition); 90% accuracy on 30-day sales."
+    },
+    {
+      "detail": "In-house systems that trigger autonomous supplier orders when the forecast exceeds the confidence threshold, and route uncertain cases to a buyer."
+    }
+  ],
+  "fonctionnement_operationnel": {
+    "cadence": "Continuous forecasting at very large scale (7.5 billion forecasts a month), supplier orders triggered automatically when confidence is sufficient.",
+    "opere_par": "Otto's data science and purchasing team, with the vendor's forecasting engine at the core.",
+    "signal_pilote": "Predicted short-term demand per product. An order is only automated if the forecast is confident enough; below that threshold, it goes back through a human buyer.",
+    "etapes": [
+      {
+        "etape": "Signal collection",
+        "detail": "Sales history, site searches and traffic, weather, day of the week, holidays, and competitive data are aggregated.",
+        "acteur": "Otto systems / data team"
+      },
+      {
+        "etape": "Demand forecasting",
+        "detail": "The deep-learning model predicts what will sell in the short term, with 90% accuracy on 30-day sales.",
+        "acteur": "AI model"
+      },
+      {
+        "etape": "Autonomous ordering",
+        "detail": "Above a confidence threshold, the system orders the merchandise from third-party brands on its own, with no human validation.",
+        "acteur": "AI model / purchasing system"
+      },
+      {
+        "etape": "Human control below threshold",
+        "detail": "Uncertain cases stay with a buyer, who keeps control of items with unstable demand.",
+        "acteur": "Otto buyer"
+      }
+    ]
+  },
+  "replication": {
+    "playbook": [
+      {
+        "action": "Aggregate granular sales history, site signals (traffic, searches), and external data (weather, calendar), plus supplier lead times.",
+        "livrable": "Consolidated, documented feature dataset"
+      },
+      {
+        "action": "Train or configure the forecasting model on a category and backtest it against the buyers' current method.",
+        "livrable": "Accuracy measured vs the existing method, by forecast horizon"
+      },
+      {
+        "action": "Connect the forecasts to the purchasing process in recommendation mode: the buyer validates each proposed order.",
+        "livrable": "Order recommendations integrated into the buyer tool"
+      },
+      {
+        "action": "Define the confidence threshold with purchasing and management, then automate orders above the threshold on a limited scope.",
+        "livrable": "First autonomous orders in production"
+      },
+      {
+        "action": "Expand the automated scope and track stock, availability, and delivery times.",
+        "livrable": "Stock assessment and governance rules for autonomous orders"
+      }
+    ],
+    "equipe": "2-3 data scientists/ML engineers + 1 data engineer + the buyers, who keep control of items below the confidence threshold",
+    "prerequis_data": [
+      "granular sales history",
+      "behavioral site signals (traffic, searches)",
+      "external data (weather, calendar)",
+      "supplier lead times and reliability"
+    ],
+    "prerequis_orga": [
+      "agreement to let an order go out without human validation above a threshold",
+      "supplier relationships compatible with advance orders"
+    ],
+    "stack_possible": [
+      "Blue Yonder",
+      "in-house forecasting (deep learning) + threshold rules",
+      "RELEX, o9"
+    ],
+    "premiere_etape": "Measure the accuracy of a short-term forecast on a category, define a confidence threshold above which the order can go out without validation, then open it up gradually."
+  },
+  "statut_vivant": {
+    "note": "Otto still describes AI on its site as integrated into all its processes, with a quantified monthly forecast volume. A continuous system, not a pilot."
+  },
+  "transposable_ue": {
+    "note": "Otto is a German e-commerce retailer, and the system already runs under European law. The forecasting works on sales and logistics data, not on sensitive personal data."
+  }
+}

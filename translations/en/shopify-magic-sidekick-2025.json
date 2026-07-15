@@ -1,0 +1,123 @@
+{
+  "seo": {
+    "title": "Shopify Magic and Sidekick: genAI merchant content generation - 750,000 merchants (2025)",
+    "meta_description": "Shopify Magic generates descriptions, images, and emails for merchants; Sidekick onboarded 750,000 new merchants in Q3 2025 with nearly 100 million interactions.",
+    "resume_citable": "In Q3 2025, Shopify's genAI agent Sidekick onboarded 750,000 new merchants and accumulated nearly 100 million interactions, with the Magic suite generating descriptions, images, and emails delivered by default on all plans.",
+    "faq": [
+      {
+        "q": "What does Shopify Magic generate?",
+        "a": "Product descriptions, images, emails, and blog articles from the merchant's data, delivered by default on all plans."
+      },
+      {
+        "q": "How much adoption for Sidekick?",
+        "a": "Shopify announced 750,000 new merchants onboarded via Sidekick in Q3 2025, with nearly 100 million interactions."
+      }
+    ]
+  },
+  "pattern": "genAI generation of merchant content",
+  "etape_parcours": "purchase",
+  "objectif_business": "Roll out AI content generation to all merchants, without a separate subscription, to reduce the time spent on production tasks (listings, emails, visuals) and retain merchants on the platform.",
+  "points_cles": [
+    "GenAI generation of merchant content (descriptions, images, emails) via Shopify Magic.",
+    "Sidekick conversational agent that drives these functions in natural language.",
+    "750,000 merchants onboarded and nearly 100 million interactions in Q3 2025.",
+    "Evidence level B, confirmed status, figures communicated by Shopify's president."
+  ],
+  "description": "Shopify Magic groups the genAI functions built into the back office: generation of product descriptions, images, emails, and blog articles from the merchant's data. The description generator accepts detailed inputs (competitor product links, target personas, SEO keywords). Sidekick is the conversational agent that drives these functions in natural language, by voice or screen sharing, and covers task automation, analytics, and support. Magic is delivered by default to every merchant on every plan, with no separate AI subscription. Adoption figures communicated by Shopify's president in Q3 2025.",
+  "resultats": [
+    {
+      "metrique": "New merchants onboarded via Sidekick (Q3 2025)"
+    },
+    {
+      "metrique": "Total interactions"
+    },
+    {
+      "metrique": "Activity generated in October"
+    }
+  ],
+  "niveau_preuve": {
+    "justification": "Adoption figures communicated by Shopify president Harley Finkelstein in the context of the Q3 2025 results, reported by the press. Platform-scale usage metrics, but the quantified activity concerns the agent more than a consolidated financial result."
+  },
+  "stack_technique": [
+    {
+      "detail": "genAI functions built into the admin: product descriptions, images, emails, and articles, generated from the merchant's data"
+    },
+    {
+      "detail": "conversational agent that drives these functions in natural language (voice, screen sharing) and covers automation, analytics, and support"
+    },
+    {
+      "detail": "underlying text and image generation models; the provider is not named in the case's sources"
+    },
+    {
+      "detail": "back office where Magic is delivered by default on all plans, with no separate AI subscription"
+    }
+  ],
+  "fonctionnement_operationnel": {
+    "cadence": "On demand, on each merchant task (listing, email, analytics query).",
+    "opere_par": "The merchant themselves, with the Shopify platform providing the model and the agent.",
+    "signal_pilote": "The quality of the merchant's product data. The generator produces a weak description if the source listing lacks attributes or context.",
+    "etapes": [
+      {
+        "etape": "Natural language request",
+        "detail": "The merchant describes what they want (copy, image, analysis) to Sidekick or activates Magic in the admin.",
+        "acteur": "customer"
+      },
+      {
+        "etape": "Draft generation",
+        "detail": "Magic generates a description, image, email, or answer from the product data and the inputs provided.",
+        "acteur": "AI"
+      },
+      {
+        "etape": "Acceptance or editing",
+        "detail": "The merchant accepts the draft or adjusts it before publishing.",
+        "acteur": "customer"
+      }
+    ]
+  },
+  "replication": {
+    "prerequis_data": [
+      "structured product data",
+      "store history",
+      "merchant content templates"
+    ],
+    "prerequis_orga": [
+      "back-office integration",
+      "a default model with no activation friction"
+    ],
+    "stack_possible": [
+      "foundation LLM via API",
+      "image generation",
+      "conversational agent on the back office"
+    ],
+    "premiere_etape": "Integrate a content generator into the listing-creation flow and offer it enabled by default, with adoption following draft acceptance.",
+    "playbook": [
+      {
+        "action": "List the highest-volume content types (listings, emails, visuals) and the product data available to feed them",
+        "livrable": "Backlog of use cases ranked by volume and value"
+      },
+      {
+        "action": "Integrate description generation into the listing-creation flow, as an editable draft enabled by default",
+        "livrable": "Generator in production on a first flow"
+      },
+      {
+        "action": "Add the enriched inputs: SEO keywords, target persona, competitor references",
+        "livrable": "Contextualized generation, quality assessed on a sample"
+      },
+      {
+        "action": "Expose the functions through a single conversational interface (agent)",
+        "livrable": "Agent covering several tasks, usage instrumented"
+      },
+      {
+        "action": "Track draft acceptance rate, time saved, and retention of users of the function",
+        "livrable": "Adoption dashboard and prioritization of the next functions"
+      }
+    ],
+    "equipe": "on the merchant side: no one, the function is self-service. On the platform side: 1-2 devs + 1 PM + 1 output quality reviewer"
+  },
+  "statut_vivant": {
+    "note": "Magic delivered by default on all plans, Sidekick with strong adoption growth in Q3 2025 according to Shopify's president. Functions positioned at the core of the year-end sales strategy."
+  },
+  "transposable_ue": {
+    "note": "Global platform with EU merchants. Magic generates merchant content (descriptions, images, emails) from the merchant's product data, without processing customer personal data. The AI Act requires transparency about generated content, compatible with a merchant-editable draft."
+  }
+}

@@ -1,0 +1,126 @@
+{
+  "seo": {
+    "title": "Root: AI telematics-driven auto pricing - record 2025 results, +29% revenue (2025)",
+    "meta_description": "Root sets auto prices from driving measured by smartphone. AI telematics model, +29% revenue, and $40.3M net income in 2025.",
+    "resume_citable": "Root makes driving behavior measured by smartphone the primary variable in its auto pricing; in 2025 the app-first insurer reported 29% revenue growth and $40.3 million in net income.",
+    "faq": [
+      {
+        "q": "How does Root set an auto insurance price?",
+        "a": "The Root app measures the prospect's actual driving over a two- to four-week test drive (braking, smoothness, attention, time of day) and a machine learning model infers risk and then price, rather than relying mainly on age or ZIP code."
+      },
+      {
+        "q": "Is Root's telematics model profitable?",
+        "a": "In 2025 Root reported record annual results with 29% revenue growth and about 40 million dollars in net income, versus 30.9 million in 2024."
+      }
+    ]
+  },
+  "pattern": "risk pricing and segmentation from smartphone telematics",
+  "etape_parcours": "purchase",
+  "objectif_business": "Set a fairer price than classic rating by measuring actual driving, screen out the riskiest segments, and improve technical profitability on an auto book.",
+  "points_cles": [
+    "Auto pricing based on actual driving measured by smartphone sensors (2- to 4-week test drive).",
+    "In-house ML risk-scoring models, retrained on claims history.",
+    "Revenue growth +29% and net income $40.3M in 2025 (versus $30.9M in 2024).",
+    "Evidence level A, confirmed status."
+  ],
+  "description": "Root makes actual driving its main pricing variable. When a quote is opened, the app offers a two- to four-week test drive during which the smartphone's sensors measure braking, smoothness, cornering, time of day, and attention at the wheel. This data feeds a machine learning model that estimates individual risk and sets the price, where a classic insurer relies mostly on age, ZIP code, or credit score. Root describes this measurement as the strongest predictor of claims and the variable that weighs most in its underwriting model. Segmentation also serves to screen out a group of drivers judged too risky, up to twice as likely to be in an accident as the average target. In 2025, the company reported record annual results with 29% revenue growth and about 40 million dollars in net income (40.3 million versus 30.9 million in 2024), a sign that the data-driven model is delivering on its economic promise.",
+  "resultats": [
+    {
+      "metrique": "Revenue growth 2025"
+    },
+    {
+      "metrique": "Net income 2025, versus $30.9M in 2024"
+    },
+    {
+      "metrique": "More accidents than the average target, for the screened-out segment"
+    }
+  ],
+  "niveau_preuve": {
+    "justification": "2025 financial results published by Root, Inc. (earnings release and annual report Form 10-K filed with the SEC). The description of the telematics model and segmentation comes from the 10-K, an uninterpreted primary source."
+  },
+  "stack_technique": [
+    {
+      "detail": "Two- to four-week test drive: the smartphone's sensors measure braking, smoothness, cornering, time of day, and attention at the wheel."
+    },
+    {
+      "detail": "In-house machine learning that estimates individual risk from measured driving and sets the price; the heaviest variable in the underwriting model."
+    },
+    {
+      "detail": "Claims history (outcome, cost) that feeds the continuous retraining of the risk models."
+    }
+  ],
+  "fonctionnement_operationnel": {
+    "cadence": "Telematics capture over a two- to four-week test drive per new customer, then continuous retraining of the risk models as claims come in.",
+    "opere_par": "Root's data science and actuarial teams; the app captures the data, the models set the price, humans handle compliance and edge cases.",
+    "signal_pilote": "The measured driving behavior (braking, smoothness, attention, time of day). If sensor capture degrades or is not representative, the scoring and therefore the price lose reliability.",
+    "etapes": [
+      {
+        "etape": "Telematics test drive",
+        "detail": "The prospect drives for two to four weeks with the app measuring their driving via the smartphone's sensors.",
+        "acteur": "customer and AI"
+      },
+      {
+        "etape": "Scoring and pricing",
+        "detail": "The machine learning model estimates individual risk and computes a personalized price.",
+        "acteur": "AI"
+      },
+      {
+        "etape": "Segmentation and selection",
+        "detail": "Segmentation screens out profiles judged too risky and targets careful drivers with a competitive rate.",
+        "acteur": "AI and actuarial"
+      },
+      {
+        "etape": "Monitoring and readjustment",
+        "detail": "Claims outcomes feed the retraining of the models and the adjustment of rates.",
+        "acteur": "data team"
+      }
+    ]
+  },
+  "replication": {
+    "prerequis_data": [
+      "Telematics driving data (mobile sensors or device)",
+      "Claims history with outcome and cost",
+      "Explicit consent to capture"
+    ],
+    "prerequis_orga": [
+      "An insurer or MGA license",
+      "An actuarial function to validate the models",
+      "A compliance framework for automated decision-making and profiling (GDPR, AI Act)"
+    ],
+    "stack_possible": [
+      "Custom telematics platform and SDK (the Root route)",
+      "Third-party telematics SDK + in-house scoring model",
+      "insurtech behavioral pricing solutions"
+    ],
+    "premiere_etape": "Launch an optional telematics program (pay-how-you-drive) on a volunteer segment before making it the primary pricing variable.",
+    "playbook": [
+      {
+        "action": "Frame with actuarial and compliance: permitted variables, consent to capture, the automated decision-making regime (GDPR art. 22 in the EU).",
+        "livrable": "Compliance file and validated variable scope."
+      },
+      {
+        "action": "Set up telematics capture (third-party or in-house SDK) on a volunteer pay-how-you-drive program.",
+        "livrable": "App that collects reliable trips on a pilot segment."
+      },
+      {
+        "action": "Train the scoring model on driving + claims history and backtest it with actuarial.",
+        "livrable": "Validated model with documented predictive lift over classic variables."
+      },
+      {
+        "action": "Launch behavioral pricing as an option (good-driver discount) and clear product regulatory approval.",
+        "livrable": "Approved and marketed pilot product."
+      },
+      {
+        "action": "Gradually raise the weight of the telematics variable in the main pricing, tracking the combined ratio.",
+        "livrable": "Book priced by driving with technical profitability monitoring."
+      }
+    ],
+    "equipe": "2-4 data scientists + actuaries + 1 mobile app PM + compliance/legal."
+  },
+  "statut_vivant": {
+    "note": "Root's core business model, documented in the Form 10-K and the 2025 earnings release, with a return to profitability."
+  },
+  "transposable_ue": {
+    "note": "Pricing from driving behavior measured by smartphone is profiling with direct effect on price: in the EU it falls under automated decision-making (GDPR art. 22) and profiling, with a legal basis, transparency on variables, and a right to contest. Use of location and driving data requires clear consent. EU insurers already do pay-how-you-drive, so the pattern is transposable within that framework."
+  }
+}

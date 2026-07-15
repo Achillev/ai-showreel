@@ -1,0 +1,111 @@
+{
+  "seo": {
+    "title": "Allstate: claims communications written by generative AI - nearly all messages (2025)",
+    "meta_description": "Allstate has OpenAI's GPT write nearly all of its claims communications. 23,000 representatives review 50,000 messages a day.",
+    "resume_citable": "Since early 2025, Allstate has had generative AI (OpenAI's GPT) write nearly all of the claims communications sent to policyholders; its roughly 23,000 representatives review on the order of 50,000 messages a day instead of writing them.",
+    "faq": [
+      {
+        "q": "How does Allstate use generative AI for its communications?",
+        "a": "OpenAI's GPT models write nearly all claims communications in plain language without jargon; the claims handler reviews for accuracy but no longer writes them."
+      },
+      {
+        "q": "At what scale does the system run?",
+        "a": "Allstate cites a workforce of about 23,000 representatives handling on the order of 50,000 customer communications a day, now written by AI and reviewed by a human before sending."
+      }
+    ]
+  },
+  "pattern": "genAI drafting of customer communications with human review",
+  "etape_parcours": "post-purchase",
+  "objectif_business": "Make claims communications clearer and more empathetic at scale, by removing insurance jargon and freeing claims handlers from writing so they can refocus on checking.",
+  "description": "Allstate inserted a generative AI layer (OpenAI's GPT models) into the drafting of communications sent to policyholders during a claim. CIO Zulfi Jeevanjee states that nearly all of the communications representatives send to customers are now written by AI. The stated goal was writing quality: the old messages, even when framed by standards, carried a lot of insurance jargon and lacked empathy, which frustrated claims handlers and muddled the communication. The claims handler no longer writes; they review for accuracy before sending. At scale, this represents a workforce of about 23,000 representatives handling on the order of 50,000 customer communications a day. Allstate sums up the intent by saying that generative AI gives the customer the benefit of the doubt, where text full of jargon could come across as cold or suspicious.",
+  "resultats": [
+    {
+      "metrique": "Share of claims communications written by AI"
+    },
+    {
+      "metrique": "Role of the human handler after the switch"
+    },
+    {
+      "metrique": "Customer communications per day, across about 23,000 representatives"
+    }
+  ],
+  "niveau_preuve": {
+    "justification": "Deployment reported by name in the press (Futurism, Insurance Business) with direct quotes from Allstate's CIO on scope and operation. Facts stated by a brand executive, with no associated audited financial metric."
+  },
+  "stack_technique": [
+    {
+      "detail": "OpenAI language models that write claims communications in plain language, without jargon; the exact version is not published."
+    },
+    {
+      "detail": "Allstate's in-house layer that injects the file context into the model and hands the draft to the claims handler for review."
+    },
+    {
+      "detail": "Communication standards that frame the tone, the generated content, and the compliance of messages."
+    }
+  ],
+  "fonctionnement_operationnel": {
+    "cadence": "Continuously, on every outbound communication tied to a claim file.",
+    "opere_par": "Allstate's claims handlers (review and approval) supported by the IT/AI teams that maintain the model integration.",
+    "signal_pilote": "The claim file context and the communication standards. If the model receives incomplete file data, the message loses accuracy and human review becomes the only safeguard.",
+    "etapes": [
+      {
+        "etape": "Message generation",
+        "detail": "From the file context, the GPT model writes the communication in plain language, without jargon.",
+        "acteur": "AI"
+      },
+      {
+        "etape": "Accuracy review",
+        "detail": "The claims handler checks that the content is accurate and compliant before any sending.",
+        "acteur": "claims handler"
+      },
+      {
+        "etape": "Sending to the customer",
+        "detail": "The approved message goes to the policyholder; the claims handler keeps control over sensitive cases.",
+        "acteur": "claims handler"
+      }
+    ]
+  },
+  "replication": {
+    "prerequis_data": [
+      "Structured file data to inject into the prompt",
+      "Library of communication standards and templates",
+      "Logging of sent messages"
+    ],
+    "prerequis_orga": [
+      "Human review process before sending",
+      "Compliance framework for content and confidentiality",
+      "Training handlers to check rather than write"
+    ],
+    "stack_possible": [
+      "A vendor LLM (the OpenAI GPT route) integrated into the CRM/claims tool",
+      "A drafting assistant constrained by templates",
+      "vendor solutions for augmented customer communication"
+    ],
+    "equipe": "1 PM + 1-2 integration devs + 1 compliance lead + the handlers trained to check rather than write",
+    "playbook": [
+      {
+        "action": "Choose a high-volume, low-risk communication category, and gather templates and communication standards.",
+        "livrable": "A body of templates + tone and compliance rules"
+      },
+      {
+        "action": "Connect generation (LLM + file context) directly into the handlers' tool.",
+        "livrable": "Drafts generated in the existing tool, with no change of channel"
+      },
+      {
+        "action": "Launch the pilot with mandatory review before sending, and measure drafting time and correction rate.",
+        "livrable": "Pilot report: time saved, errors caught in review"
+      },
+      {
+        "action": "Extend to the other communication categories, formalize logging and the compliance framework.",
+        "livrable": "System in production with traceability of sent messages"
+      }
+    ],
+    "premiere_etape": "Choose a high-volume, low-risk communication category and connect assisted generation to it with mandatory review."
+  },
+  "statut_vivant": {
+    "note": "Allstate's CIO describes a system in production across the claims-handling network, with systematic human review before sending."
+  },
+  "transposable_ue": {
+    "note": "AI generation of customer letters with human review does not constitute automated decision-making under GDPR art. 22 as long as the agent reviews and decides. EU watch points: disclosure of AI use in the communication, accuracy and non-deceptiveness of the content, message traceability, and confidentiality of the claim data injected into the model. The pattern is directly transferable."
+  }
+}

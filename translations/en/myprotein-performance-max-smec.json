@@ -1,0 +1,111 @@
+{
+  "seo": {
+    "title": "Myprotein (THG): taking back control of Performance Max - +522% revenue in Ireland",
+    "meta_description": "THG took back control of Performance Max for Myprotein via the smec orchestrator: +522% revenue in Ireland, +148% in Japan (YoY).",
+    "resume_citable": "THG grew Myprotein's revenue by 522% in Ireland and 148% in Japan (YoY) by steering Google Performance Max with the smec orchestrator, which segments the catalog by margin and recalculates tROAS targets and budgets every day.",
+    "faq": [
+      {
+        "q": "Why add a third-party tool on top of Performance Max?",
+        "a": "To take back control of the catalog that PMax automation smooths over. The orchestrator segments by margin and profitability and steers spend toward strategic products."
+      },
+      {
+        "q": "Is this usable without a large catalog?",
+        "a": "The lever has the most value when the catalog is large and heterogeneous in margin. On a small catalog, the gain from dynamic segmentation is lower."
+      }
+    ]
+  },
+  "pattern": "Taking back control of Performance Max via a third-party orchestrator: dynamic catalog segmentation by margin/profitability, tROAS targets and budgets recalculated every day, to steer spend toward strategic products",
+  "etape_parcours": "consideration -> purchase",
+  "objectif_business": "Take back control of Performance Max campaigns that had become black boxes, and steer spend toward premium high-margin products rather than letting automation smooth the catalog.",
+  "description": "Myprotein, the flagship brand of THG's nutrition division, ran its Performance Max campaigns over a large catalog. PMax automation made it lose fine-grained control of the catalog: budget poorly allocated, important products buried. THG plugged smec's Campaign Orchestrator on top of PMax. The system segments products by price, type, and profitability (the Dynamic Segments feature), computes in-house metrics like Sales impact and New Customer Rate to spot products that convert and those that bring new customers, then generates campaigns with tROAS targets and budgets that are adjusted and refreshed every day. Result reported by smec: revenue up 522 percent in Ireland and 148 percent in Japan, year over year.",
+  "points_cles": [
+    "Taking back control of Performance Max via a third-party orchestrator.",
+    "smec Campaign Orchestrator on top of Google PMax, segmentation by margin and tROAS recalculated every day.",
+    "Revenue +522% in Ireland and +148% in Japan year over year.",
+    "Evidence B, confirmed status."
+  ],
+  "resultats": [
+    { "metrique": "Revenue Ireland (YoY)" },
+    { "metrique": "Revenue Japan (YoY)" }
+  ],
+  "niveau_preuve": {
+    "justification": "Quantified, named case study (Myprotein, Mason Park) from a specialist vendor/partner (smec) - an interested source. Myprotein's commercial health and its role as a growth driver at THG are corroborated by 2026 business press, but that press does not confirm the Google-specific figures by market."
+  },
+  "stack_technique": [
+    { "detail": "Automated cross-surface campaigns (Search, Shopping, YouTube, Display, Discover) that execute bidding and delivery." },
+    { "detail": "Third-party orchestrator on top of PMax: dynamic catalog segmentation by price, type, and profitability (Dynamic Segments), tROAS targets and budgets recalculated every day, in-house Sales impact and New Customer Rate metrics." },
+    { "detail": "Automated bidding within PMax, driven by the tROAS targets that the orchestrator sets segment by segment." },
+    { "detail": "Feed with price, type, margin, and profitability at the item level; the raw material of dynamic segmentation." }
+  ],
+  "fonctionnement_operationnel": {
+    "cadence": "Daily refresh of segments, tROAS targets, and budgets. Continuous steering on top of PMax.",
+    "opere_par": "The brand's paid media team, with the third-party orchestration tool (smec) that automates segmentation and rebalancing.",
+    "signal_pilote": "The product metrics (margin, Sales impact, New Customer Rate) drawn from the feed and sales. If the product feed is dirty or margin is missing, segmentation loses its meaning and the orchestrator optimizes blind.",
+    "etapes": [
+      {
+        "etape": "Enrich the product feed",
+        "detail": "Inject price, type, margin, and profitability at the product level. This is the raw material of dynamic segmentation.",
+        "acteur": "Data / e-commerce team"
+      },
+      {
+        "etape": "Define the strategic segments",
+        "detail": "Group products (premium high-margin, brand identity, long tail) by business objectives, not by PMax history alone.",
+        "acteur": "Media team + tool"
+      },
+      {
+        "etape": "Let the orchestrator recalculate",
+        "detail": "tROAS targets and budgets per segment recalculated every day from product signals. The team sets the course, the tool adjusts.",
+        "acteur": "smec Campaign Orchestrator"
+      },
+      {
+        "etape": "Arbitrate business priorities",
+        "detail": "Deciding which products to push (margin, new customers) remains a human choice that the tool then executes.",
+        "acteur": "Media team"
+      }
+    ]
+  },
+  "replication": {
+    "playbook": [
+      {
+        "action": "Enrich the product feed with margin and profitability per item, and check data quality (price, type, availability).",
+        "livrable": "Enriched, clean feed in Merchant Center."
+      },
+      {
+        "action": "Define the strategic segments (premium high-margin, brand identity, long tail) by business objectives.",
+        "livrable": "Segmentation plan validated by the business."
+      },
+      {
+        "action": "Plug the orchestrator on top of PMax and launch campaigns per segment with their tROAS targets.",
+        "livrable": "Segmented campaigns live with daily recalculation active."
+      },
+      {
+        "action": "Let the learning run without over-tuning, and monitor revenue and tROAS per segment.",
+        "livrable": "First revenue/tROAS readout per segment versus a reference period."
+      },
+      {
+        "action": "Arbitrate business priorities (margin vs new customers) and adjust segments and targets.",
+        "livrable": "Consolidated tuning and a quantified assessment of the test."
+      }
+    ],
+    "equipe": "1 Google Ads media buyer + 1 data/feed profile for per-item margin; the orchestrator vendor supports the setup.",
+    "prerequis_data": [
+      "Product feed with margin and profitability at the item level",
+      "Usable sales history",
+      "Consent Mode v2 in the EU"
+    ],
+    "prerequis_orga": [
+      "A large catalog where product prioritization matters",
+      "A budget for a third-party orchestration tool (a layer on top of PMax)"
+    ],
+    "stack_possible": [
+      "Google Ads Performance Max + third-party orchestrator (smec or equivalent) + enriched product feed"
+    ],
+    "premiere_etape": "Enrich the product feed with per-item margin, then segment PMax by profitability before adding an orchestration layer."
+  },
+  "statut_vivant": {
+    "note": "Myprotein is presented in 2026 as the driver of THG's return to growth (Retail Gazette). The smec/PMax partnership is published as an active case study; the exact date of the case is not specified, hence caution about the figure's shelf life."
+  },
+  "transposable_ue": {
+    "note": "European brand, already deployed in Ireland (EU). Performance Max in the EU requires Consent Mode v2 and a clean product feed. The smec layer adds third-party steering on top of PMax, with no high-risk classification under the AI Act."
+  }
+}

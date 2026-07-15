@@ -1,0 +1,116 @@
+{
+  "seo": {
+    "title": "Rent the Runway: AI-personalized discovery - +11% favorites and +129% views (2026)",
+    "meta_description": "Personalized carousels and a For You feed live for all subscribers since April 2026, plus AI-generated product imagery: +11% hearting, +129% views.",
+    "resume_citable": "Rent the Runway made its personalized carousels and For You feed live for all subscribers in April 2026, with an 11% increase in hearting, while AI-generated product imagery pushed views on the affected styles up 129% (Q1 FY2026 results, revenue $89.9M).",
+    "faq": [
+      {
+        "q": "What did Rent the Runway deploy in terms of AI for discovery?",
+        "a": "Personalized carousels and a For You feed live for all subscribers since April 2026, tuned to their favorites and tastes, plus AI-generated product imagery to refresh old inventory. The automated generation of complete outfits was still in internal testing."
+      },
+      {
+        "q": "What results does the brand publish?",
+        "a": "An 11% increase in hearting on the home page for active subscribers and a 129% increase in views on the styles switched to AI imagery, in the Q1 FY2026 results (revenue $89.9M, +29.2% year-over-year, 155,692 active subscribers)."
+      }
+    ]
+  },
+  "pattern": "personalization of the discovery journey (carousels and For You feed) plus AI-generated product imagery on old inventory",
+  "etape_parcours": "discovery",
+  "objectif_business": "Deepen discovery and engagement for active subscribers of the subscription rental service, so they find pieces to rent faster, book more, and stay subscribed. Rent the Runway describes a discovery engine at the core of its 2026 strategy, with add-on revenue up 70.4% year-over-year, driven by stronger subscriber engagement.",
+  "points_cles": [
+    "Personalized carousels and For You feed live for all subscribers since April 2026.",
+    "Recommendation engine on first-party signals plus AI-generated product imagery (stack not disclosed).",
+    "Hearting +11% on the home page, views +129% on styles with AI imagery.",
+    "Evidence A, status confirmed."
+  ],
+  "description": "In April 2026, Rent the Runway deployed personalized carousels across its platform, live for all subscribers. The subscriber discovers pieces close to her recent favorites and browses a For You feed tuned to her tastes. The brand measures an 11% increase in hearting (favoriting) on the home page for active subscribers. Second component, also in April 2026, AI-generated product imagery replaced old visuals with more realistic images meant to help the customer picture herself in the piece; views on these styles increased 129%. A third workstream, the automated generation of complete outfits, entered internal testing in May 2026 and was not yet open to subscribers as of the results date: Rent the Runway indicates it intends to deploy it in the following months, which makes it a future extension rather than a result at scale. The credibility context is a public quarter (Q1 FY2026, closed April 30, 2026, published June 3, 2026) with revenue of 89.9 million dollars, up 29.2% year-over-year, and 155,692 active subscribers at period end. Rent the Runway discloses neither the models nor the providers behind these features.",
+  "resultats": [
+    { "metrique": "Home-page hearting (active subscribers), after the carousels and the For You feed" },
+    { "metrique": "Views on styles, after switching to more realistic AI imagery" },
+    { "metrique": "Personalized carousels live for all subscribers since April 2026 (end of Q1 FY2026)" },
+    { "metrique": "Quarterly revenue, +29.2% year-over-year (Q1 FY2026)" }
+  ],
+  "niveau_preuve": {
+    "justification": "Figures published by Rent the Runway itself in its 8-K filed with the SEC (Exhibit 99.1, Q1 FY2026 results, T1 primary), reproduced identically in its official release and concordant with the earnings call transcript. The +11% hearting and +129% views are explicitly attributed by the brand to the two AI features, and the carousels are declared live for all subscribers. Primary financial-results document, hence level A."
+  },
+  "fonctionnement_operationnel": {
+    "cadence": "Personalized feed recomputed continuously as the subscriber browses and favorites; product imagery regenerated in batches when inventory is updated or refreshed",
+    "opere_par": "Rent the Runway's product and data team (provider and models not disclosed)",
+    "signal_pilote": "The subscriber's first-party engagement signals: favorites (hearts), views, rental history. The For You feed optimizes on these; if these signals are missing or thin for a new subscriber, personalization falls back on generic recommendations.",
+    "etapes": [
+      {
+        "etape": "Collecting engagement signals",
+        "detail": "The subscriber favorites pieces, views listings, rents; these events feed her taste profile.",
+        "acteur": "customer"
+      },
+      {
+        "etape": "Building the For You feed",
+        "detail": "The recommendation engine composes the personalized carousels and the feed from recent favorites and detected preferences.",
+        "acteur": "AI"
+      },
+      {
+        "etape": "Generating product imagery",
+        "detail": "An AI imagery model produces more realistic visuals to replace old inventory images, to help the customer picture herself.",
+        "acteur": "AI"
+      },
+      {
+        "etape": "Delivery on the site and app",
+        "detail": "Carousels, For You feed, and new visuals are served on the home page and product listings of all subscribers.",
+        "acteur": "data team"
+      },
+      {
+        "etape": "Measurement and iteration",
+        "detail": "The team tracks hearting, views, and engagement to validate impact and extend the scope (internal testing of outfit generation ahead of a future deployment).",
+        "acteur": "marketing"
+      }
+    ]
+  },
+  "replication": {
+    "prerequis_data": [
+      "Per-user first-party engagement history (favorites, views, purchases or rentals)",
+      "Structured product catalog with style attributes usable by a recommendation engine",
+      "Product image inventory, with identification of old or underperforming visuals to regenerate"
+    ],
+    "prerequis_orga": [
+      "Product and data team able to operate a recommendation engine over time",
+      "Governance on AI-generated imagery: brand consistency, quality control, transparency on synthetic content",
+      "GDPR legal basis for personalization and, in the EU, AI Act marking of generated visuals"
+    ],
+    "stack_possible": [
+      "Recommendation engine (item-to-item and personalized feed) on first-party data",
+      "Model for generating or improving product images",
+      "Delivery layer on home page and product listings with A/B testing",
+      "Engagement instrumentation (favorites, views) to measure impact"
+    ],
+    "premiere_etape": "Cleanly instrument first-party engagement signals (favorites, views, conversions) and launch a first item-to-item personalized carousel on the home page, in an A/B test, before tackling generated imagery.",
+    "playbook": [
+      {
+        "action": "Audit and make reliable the collection of per-user first-party engagement signals (favorites, views, rentals or purchases).",
+        "livrable": "Usable per-user taste profile, the basis of personalization."
+      },
+      {
+        "action": "Deploy a first personalized carousel and a discovery feed tuned to recent favorites, in an A/B test on the home page.",
+        "livrable": "Personalized carousel measured against a non-personalized feed."
+      },
+      {
+        "action": "Identify products whose imagery is old or underperforming, then regenerate realistic AI visuals with quality control and brand consistency.",
+        "livrable": "Batch of renewed product images, with before/after view tracking."
+      },
+      {
+        "action": "Extend delivery to the whole base once impact is validated, keeping the engagement instrumentation.",
+        "livrable": "Personalization live for all users, impact tracked."
+      },
+      {
+        "action": "Explore the generation of complete outfits in internal testing before any opening, to move from the isolated piece to the look.",
+        "livrable": "Outfit recommendation prototype validated internally."
+      }
+    ],
+    "equipe": "1 product team (PM, design) + data scientists or ML engineers for the recommendation engine and generated imagery + a merchandising or brand function to validate visual consistency."
+  },
+  "statut_vivant": {
+    "note": "Personalized carousels declared live for all subscribers in the June 3, 2026 results, with AI-driven discovery set as a central axis of the 2026 strategy. Recent deployment (about three months as of the verification date): to re-monitor next quarter. Outfit generation remained in internal testing, not open to subscribers."
+  },
+  "transposable_ue": {
+    "note": "The mechanism relies on first-party engagement data (favorites, views, rental history) to personalize a discovery feed, which transposes to a GDPR environment with a clear legal basis and a right to object. The second component, AI-generated product imagery, falls under the transparency obligations on synthetic content provided by the AI Act (marking of AI-generated visuals). The detail of the stack is not disclosed by Rent the Runway, so the orchestration would have to be rebuilt."
+  }
+}

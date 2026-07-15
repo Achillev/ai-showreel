@@ -1,0 +1,127 @@
+{
+  "seo": {
+    "title": "Slazenger: omnichannel AI journeys with Insider - 49x ROI in 8 weeks (2024)",
+    "meta_description": "Slazenger orchestrated cart recovery and price-drop alerts on Insider One AI: 49x ROI in 8 weeks, +700% acquisition, 40% of cart revenue recovered.",
+    "resume_citable": "Slazenger achieved a 49x ROI in eight weeks and +700% customer acquisition by orchestrating on Insider One AI personalized journeys for cart recovery (40% of potential revenue recovered) and price-drop alerts.",
+    "faq": [
+      {
+        "q": "What journeys did Slazenger automate?",
+        "a": "A multichannel abandoned-cart recovery (email, web push, SMS) and price-drop alerts sent within 24 hours when a tracked product drops by at least 10%."
+      },
+      {
+        "q": "What ROI?",
+        "a": "49x ROI in eight weeks, with +700% customer acquisition and 40% of potential revenue recovered on a single abandoned-cart campaign."
+      }
+    ]
+  },
+  "pattern": "orchestration of personalized journeys (cart recovery + price drop)",
+  "etape_parcours": "purchase",
+  "objectif_business": "Convert hesitant visitors on a sportswear e-commerce site by recovering abandoned carts and re-engaging on price drops, without breaking the margin.",
+  "points_cles": [
+    "AI-driven personalized journeys for cart recovery and price-drop alerts.",
+    "Insider stack with Architect and Insider One AI (segmentation, timing, channels).",
+    "49x ROI in 8 weeks, +700% acquisition, 40% of cart revenue recovered.",
+    "Evidence level B, mixed signals status (region and date not disclosed)."
+  ],
+  "description": "Slazenger built personalized journeys on Insider, driven by Insider One AI. For cart abandonment, Architect and the Smart Journey Creator determine the best channels, delays, and send times, with reminders by email, web push, and SMS and a promo code by SMS. For price drops, a notification goes out by email and web push within 24 hours as soon as a product that was viewed, wishlisted, or abandoned drops by at least 10%. The campaigns cover nearly thirty customer segments.",
+  "resultats": [
+    {
+      "metrique": "ROI of the solution"
+    },
+    {
+      "metrique": "Customer acquisition"
+    },
+    {
+      "metrique": "Potential revenue recovered on an abandoned-cart campaign"
+    },
+    {
+      "metrique": "Conversion on the price-sensitive segment"
+    }
+  ],
+  "niveau_preuve": {
+    "justification": "Quantified Insider case study, echoed on a second official Insider page. No independent press source, region not disclosed, hence B."
+  },
+  "stack_technique": [
+    {
+      "detail": "omnichannel engagement platform: unified customer base, journeys, and email, web push, and SMS campaigns"
+    },
+    {
+      "detail": "cross-channel journey orchestrator: choice of channels, delays, and send times"
+    },
+    {
+      "detail": "generative and predictive AI layer: building journeys and segments (nearly thirty segments at Slazenger)"
+    }
+  ],
+  "fonctionnement_operationnel": {
+    "cadence": "Real-time and event-driven: each cart abandonment or price drop triggers the corresponding journey.",
+    "opere_par": "Slazenger's e-commerce team, on Insider in self-service.",
+    "signal_pilote": "Onsite behavior (views, wishlist, carts) and product price. Without reliable per-user tracking of price and cart, the triggering of price-drop notifications and cart reminders no longer works.",
+    "etapes": [
+      {
+        "etape": "Unification and segmentation",
+        "detail": "The unified customer base and the Smart Segment Creator split the audience into nearly thirty segments.",
+        "acteur": "AI (Insider One AI) / e-commerce team"
+      },
+      {
+        "etape": "Journey building",
+        "detail": "Architect and the Smart Journey Creator set the optimal channels, delays, and send times.",
+        "acteur": "AI / e-commerce team"
+      },
+      {
+        "etape": "Cart trigger",
+        "detail": "Email, web push, and SMS reminders with a promo code by SMS on abandoned carts.",
+        "acteur": "AI (automatic trigger)"
+      },
+      {
+        "etape": "Price-drop trigger",
+        "detail": "Email and web push notification within 24 hours when a tracked product drops by at least 10%.",
+        "acteur": "AI (automatic trigger)"
+      }
+    ]
+  },
+  "replication": {
+    "prerequis_data": [
+      "per-user onsite behavioral tracking",
+      "near-real-time product price feed",
+      "email identifiers / web push and SMS opt-in"
+    ],
+    "prerequis_orga": [
+      "an e-commerce team that runs the journeys",
+      "a catalog with price variations to exploit"
+    ],
+    "stack_possible": [
+      "Insider",
+      "any omnichannel engagement platform with cart and price-drop triggers and AI segmentation"
+    ],
+    "premiere_etape": "Connect per-user price and cart tracking, then first arm the cart-abandonment journey before adding price-drop alerts.",
+    "playbook": [
+      {
+        "action": "Connect the signals: onsite behavioral tracking (views, wishlist, cart) and product price feed",
+        "livrable": "Events and prices flowing in near real time into the platform"
+      },
+      {
+        "action": "Collect web push and SMS opt-ins and establish the legal basis for profiling (GDPR)",
+        "livrable": "Channels activated with traced consents"
+      },
+      {
+        "action": "Arm the cart-abandonment journey: multichannel reminder (email, web push, SMS with promo code) at optimized timing",
+        "livrable": "Cart journey live on a test segment"
+      },
+      {
+        "action": "Add the price-drop alert: notification within 24h when a tracked product drops by at least 10%",
+        "livrable": "Second journey live, segments refined"
+      },
+      {
+        "action": "Measure recovered revenue and conversion by segment against the period without journeys",
+        "livrable": "ROI readout by journey and segment extension plan"
+      }
+    ],
+    "equipe": "1 CRM manager + 1 dev for tracking and the price feed; the vendor supports building the first journeys"
+  },
+  "statut_vivant": {
+    "note": "The exact launch date is not disclosed and no third-party source dates the case. The case study remains published and attributed to Insider One AI, a common product."
+  },
+  "transposable_ue": {
+    "note": "The case study does not specify the deployment region. The pattern (web push, SMS, behavioral segmentation) is transposable in the EU subject to consent and a legal basis for profiling (GDPR)."
+  }
+}

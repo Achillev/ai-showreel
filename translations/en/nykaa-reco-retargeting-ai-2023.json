@@ -1,0 +1,127 @@
+{
+  "seo": {
+    "title": "Nykaa: ML recommendation + retargeting - sales x7.5 and average order value +54%",
+    "meta_description": "Nykaa multiplied its sales by 7.5 and raised its average order value by 54% through personalized recommendation and retargeting driven by ML (Criteo).",
+    "resume_citable": "Nykaa multiplied its sales by 7.5, raised its average order value by 54%, and its media ROI by 1.7 through personalized product recommendation and retargeting driven by machine learning.",
+    "faq": [
+      {
+        "q": "What results did Nykaa achieve with ML personalization?",
+        "a": "Sales multiplied by 7.5, average order value up 54%, and media ROI multiplied by 1.7, according to the Criteo case study quoting Nykaa's CMO."
+      },
+      {
+        "q": "On which channels does the personalization operate?",
+        "a": "On Nykaa's app and mobile web, with personalized ad retargeting and on-site product recommendations driven by an ML engine."
+      }
+    ]
+  },
+  "pattern": "ML-driven product recommendation + personalized retargeting",
+  "etape_parcours": "purchase",
+  "objectif_business": "Bring mobile shoppers back to purchase and raise the average order value by pushing the right products at the right time through ML-driven recommendation and retargeting.",
+  "points_cles": [
+    "ML-driven personalized product recommendation and retargeting.",
+    "Criteo Engine for intent scoring, plus an in-house recommendation engine.",
+    "Sales x7.5, average order value +54%, media ROI x1.7.",
+    "Evidence B, confirmed status."
+  ],
+  "description": "Nykaa, an Indian beauty platform, uses product recommendation and dynamic retargeting to engage its shoppers on the app and mobile web. The Criteo Engine draws on a large data pool to estimate purchase propensity and identify the most relevant products, then serves personalized ads in the shopper's preferred format. In parallel, Nykaa is building its own recommendation engines (purchase history, browsing, skin type) and is moving toward a genAI use of personalization, covered by the beauty press.",
+  "resultats": [
+    {
+      "metrique": "Sales (via personalized retargeting/recommendation)"
+    },
+    {
+      "metrique": "Average order value (AOV)"
+    },
+    {
+      "metrique": "Media return on investment"
+    }
+  ],
+  "niveau_preuve": {
+    "justification": "Quantified platform case study (Criteo) with a quote from Nykaa's CMO, complemented by the established beauty press (BeautyMatter) on the brand's AI personalization."
+  },
+  "stack_technique": [
+    {
+      "detail": "Criteo's ML engine that estimates purchase propensity from a large pool of behavioral data and selects the most relevant products for each shopper."
+    },
+    {
+      "detail": "Delivery of personalized ads in the shopper's preferred format, on app and mobile web."
+    },
+    {
+      "detail": "Nykaa's proprietary ML for on-site recommendation, based on purchase history, browsing, and skin type. Exact models not published."
+    }
+  ],
+  "fonctionnement_operationnel": {
+    "cadence": "Real time (recommendations and per-impression bidding), continuous retargeting campaigns",
+    "opere_par": "Nykaa's growth/performance marketing team, with the platform's ML engine (Criteo) and the data team for the in-house recommendation engines",
+    "signal_pilote": "The flow of behavioral data (browsing, cart, history) and a clean product catalog. If tracking or the product feed degrades, recommendation loses relevance and retargeting becomes noise.",
+    "etapes": [
+      {
+        "etape": "Signal collection",
+        "detail": "Browsing, searches, cart additions, and purchases feed the data pool.",
+        "acteur": "site/app + data team"
+      },
+      {
+        "etape": "Intent scoring",
+        "detail": "The ML engine estimates purchase propensity and the most relevant products.",
+        "acteur": "AI (Criteo Engine / Nykaa recommendation)"
+      },
+      {
+        "etape": "Personalized delivery",
+        "detail": "Retargeting ads and recommendations are pushed in the shopper's preferred format.",
+        "acteur": "AI + media team"
+      },
+      {
+        "etape": "Purchase",
+        "detail": "The shopper returns to the app/web and converts.",
+        "acteur": "customer"
+      },
+      {
+        "etape": "Optimization",
+        "detail": "The growth team adjusts budgets, audiences, and product feed based on performance.",
+        "acteur": "marketing / data"
+      }
+    ]
+  },
+  "replication": {
+    "playbook": [
+      {
+        "action": "Make the product feed reliable (price, stock, images, attributes) and verify that behavioral tracking is consented and complete across app and web.",
+        "livrable": "Validated catalog feed + GDPR-compliant tagging plan"
+      },
+      {
+        "action": "Connect the retargeting/recommendation platform to the feed and tracking, and define the highest-intent segments (cart abandoners, repeat PDP visitors).",
+        "livrable": "Campaigns configured on 2-3 pilot segments"
+      },
+      {
+        "action": "Launch the test with a framed media budget and a control group, measuring attributed sales, average order value, and media ROI.",
+        "livrable": "First performance read vs control"
+      },
+      {
+        "action": "Extend to the other segments, adjust budgets, audiences, and product feed based on performance, and turn on on-site recommendation.",
+        "livrable": "Extended setup with documented optimization rules"
+      }
+    ],
+    "equipe": "1 media buyer/growth + 1 developer for tracking and the product feed, with an analyst supporting measurement",
+    "prerequis_data": [
+      "clean, up-to-date product feed",
+      "consented behavioral tracking",
+      "first-party purchase history"
+    ],
+    "prerequis_orga": [
+      "performance marketing team",
+      "consent management (especially in the EU)",
+      "media budget"
+    ],
+    "stack_possible": [
+      "Criteo",
+      "recommendation engine (Algolia, Dynamic Yield, Bloomreach)",
+      "in-house ML recommendation"
+    ],
+    "premiere_etape": "Make the product feed and consented tracking reliable, then turn on a recommendation/retargeting engine on the highest-intent segments."
+  },
+  "statut_vivant": {
+    "note": "Personalization is at the core of Nykaa's model (discovery engine, recommendations), with a stated trajectory toward more genAI."
+  },
+  "transposable_ue": {
+    "note": "Retargeting and recommendation rely on cross-device behavioral tracking. In the EU, this requires a legal basis and compliant cookie/tracker consent (GDPR, ePrivacy), plus consent management for personalized advertising."
+  }
+}

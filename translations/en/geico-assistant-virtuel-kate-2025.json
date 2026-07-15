@@ -1,0 +1,108 @@
+{
+  "seo": {
+    "title": "GEICO: self-service virtual assistant (Kate) - about +10% app engagement (2025)",
+    "meta_description": "GEICO runs a self-service AI assistant (balance, card, documents). At launch, Kate delivered about 10% more engagement in the app.",
+    "resume_citable": "GEICO runs a self-service virtual assistant (Kate in the app, an AI assistant on the site) that handles high-volume account questions; at its launch, PYMNTS reported an increase of about 10% in app engagement.",
+    "faq": [
+      {
+        "q": "What does GEICO's virtual assistant do?",
+        "a": "It answers, in natural language, high-volume, low-stakes account questions (balance, payment due date, insurance card, coverage summary, document downloads) and offers to hand off to a human agent if needed."
+      },
+      {
+        "q": "Is the assistant still in service?",
+        "a": "Yes, a GEICO AI assistant is available live on geico.com, with AI disclosure on every exchange, in continuous production since the launch of Kate in 2017."
+      }
+    ]
+  },
+  "pattern": "self-service virtual assistant on the customer account",
+  "etape_parcours": "post-purchase",
+  "objectif_business": "Replace static FAQs, voice menus, and forms with a conversation that knows what to ask, to resolve routine requests in self-service and relieve the call center.",
+  "description": "GEICO runs a self-service virtual assistant on its digital channels. In the app, the Kate assistant, launched in January 2017, answers, in natural language, high-volume, low-stakes account questions: balance, next payment date, retrieving the insurance card, coverage summary, document downloads, roadside assistance requests. On the site, GEICO now exposes an AI assistant that displays coverages, cards, and documents, and answers policy questions, disclosing on every exchange that the user is talking to an AI and offering to hand off to a human agent when the request exceeds it. At its launch, PYMNTS reported an increase of about 10% in app engagement attributed to Kate. The assistant is still in service and has evolved into a generative layer on the site, in a logic of a conversation that knows what to ask rather than pointing to a help page.",
+  "resultats": [
+    {
+      "metrique": "Increase in app engagement attributed to the Kate assistant (at launch)"
+    },
+    {
+      "metrique": "Systematic AI disclosure, handoff to an agent possible"
+    }
+  ],
+  "niveau_preuve": {
+    "justification": "Assistant documented by GEICO's official page (proof of current service) and by trade press reporting the launch and a quantified engagement increase. The engagement figure dates from launch (2017) and is self-reported; the existence of the service is verifiable live on the site."
+  },
+  "stack_technique": [
+    {
+      "detail": "In-house conversational assistant launched in 2017 in the app, since evolved into a generative layer on the site; GEICO does not publish the underlying technologies"
+    },
+    {
+      "detail": "NLU to identify the request, then generative AI on the current site assistant; exact model not named publicly"
+    },
+    {
+      "detail": "Authenticated access to policy data, payments, and documents, the condition for self-service (balance, due date, card, downloads)"
+    }
+  ],
+  "fonctionnement_operationnel": {
+    "cadence": "Real time, on each customer session in the app or on the site.",
+    "opere_par": "GEICO's digital and customer service teams; the assistant holds the first line, the human agent takes over on complex cases.",
+    "signal_pilote": "Access to the customer's account data (policy, payments, documents). Without authentication and up-to-date data, the assistant cannot answer account questions and is limited to generalities.",
+    "etapes": [
+      {
+        "etape": "Identifying the request",
+        "detail": "The assistant understands the customer's question in natural language and discloses that it is an AI.",
+        "acteur": "AI"
+      },
+      {
+        "etape": "Self-service response",
+        "detail": "It displays the requested account information (balance, due date, card, document) or performs the routine action.",
+        "acteur": "AI"
+      },
+      {
+        "etape": "Handoff to an agent",
+        "detail": "When the request exceeds self-service, the assistant offers to move to a human advisor.",
+        "acteur": "AI and customer service"
+      }
+    ]
+  },
+  "replication": {
+    "prerequis_data": [
+      "Authenticated access to account data (policy, payments, documents)",
+      "Catalog of self-service intents and actions",
+      "Session logging"
+    ],
+    "prerequis_orga": [
+      "AI transparency policy and human handoff",
+      "Account access security",
+      "Quality loop on the responses"
+    ],
+    "stack_possible": [
+      "Custom conversational assistant (GEICO's path)",
+      "Market chatbot/virtual agent platform connected to the customer system",
+      "Framed LLM + connectors to the policy systems"
+    ],
+    "premiere_etape": "Target the five most frequent account questions and handle them in authenticated self-service before widening the scope.",
+    "playbook": [
+      {
+        "action": "Extract the five most frequent account questions from the call center logs and frame the rules: AI transparency, human handoff, access security.",
+        "livrable": "Catalog of prioritized intents and validated governance rules"
+      },
+      {
+        "action": "Connect the assistant to the account data in authenticated access (policy, payments, documents) through read connectors.",
+        "livrable": "Secure account access tested end to end"
+      },
+      {
+        "action": "Launch a pilot on the app or the site with the five intents, AI disclosure on every exchange, and a handoff to an agent.",
+        "livrable": "Assistant in pilot with session logging"
+      },
+      {
+        "action": "Measure self-service resolution and call deflection, correct faulty responses, then widen the scope of intents.",
+        "livrable": "Quantified deflection / resolution review and extension roadmap"
+      }
+    ],
+    "equipe": "1 PM + 2 developers (bot and system connectors) + 1 customer service lead for the scripts and escalation"
+  },
+  "statut_vivant": {
+    "note": "The virtual assistant is accessible live on geico.com, with AI disclosure and a handoff to a human agent; in continuous production since 2017."
+  },
+  "transposable_ue": {
+    "note": "Conversational self-service assistant on the customer account (balance, due date, insurance card, documents). In the EU, you must clearly inform that the interlocutor is an AI, allow a move to a human agent, and secure account access. No automated decision with legal effect: the assistant returns information already held and directs. The pattern is directly transposable."
+  }
+}

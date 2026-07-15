@@ -1,0 +1,73 @@
+{
+  "seo": {
+    "title": "NYC MyCity: the official chatbot advises illegal practices (2024)",
+    "meta_description": "In March 2024, The Markup showed that New York's official MyCity chatbot advised businesses to follow illegal practices. Kept online as a pilot.",
+    "resume_citable": "In March 2024, the city of New York's official MyCity chatbot advised businesses to follow illegal practices, such as taking a cut of tips or refusing Section 8 housing vouchers; the administration kept it online as a pilot.",
+    "faq": [
+      {
+        "q": "What illegal advice did the MyCity chatbot give?",
+        "a": "It stated that an employer could take a cut of tips, that a landlord could refuse Section 8 vouchers, that a tenant could be evicted without process, and that there was no rent cap, all answers contrary to New York law."
+      },
+      {
+        "q": "Did the city pull the chatbot?",
+        "a": "No. After the investigation, the administration kept it online by presenting it as a pilot and adding warnings, rather than pulling it."
+      }
+    ]
+  },
+  "pattern": "public-service RAG conversational agent",
+  "etape_parcours": "post-purchase",
+  "objectif_business": "Help New York City entrepreneurs navigate municipal procedures and regulations through an official conversational assistant, to relieve pressure on city services.",
+  "description": "Announced by Mayor Eric Adams in October 2023, the MyCity portal chatbot was meant to guide businesses through municipal rules. In March 2024, an investigation by The Markup showed that it delivered advice that broke the law: it stated that a landlord could refuse Section 8 housing vouchers, that an employer could take a cut of its workers' tips, or that a restaurant could decline to accept cash. Asked the same question about housing vouchers by ten testers, the bot answered ten times that the landlord was not required to accept them, even though source-of-income discrimination is illegal in New York.",
+  "resultats": [
+    {
+      "metrique": "Advice that broke the law on tips, housing vouchers, and eviction"
+    },
+    {
+      "metrique": "Chatbot kept online despite the evidence, reframed as a pilot"
+    }
+  ],
+  "niveau_preuve": {
+    "justification": "Investigative reporting by The Markup, with reproduced tests and direct quotes, picked up by THE CITY and other established outlets, naming the city of New York and its administration. No published court ruling."
+  },
+  "stack_technique": [
+    {
+      "detail": "Microsoft's AI platform that hosts the MyCity chatbot's LLM, according to the city of New York's own communications."
+    },
+    {
+      "detail": "Text-generation model provided through Azure AI; the city did not publish the exact model or the details of the document-retrieval setup."
+    },
+    {
+      "detail": "The city of New York's official business-services portal, the channel where the chatbot was exposed."
+    }
+  ],
+  "post_mortem": {
+    "ce_qui_s_est_passe": "Mayor Eric Adams announced the MyCity chatbot in October 2023 as an aid to businesses. On March 29, 2024, The Markup published an investigation showing that it gave illegal advice: refusing Section 8 vouchers, taking a cut of tips, eviction without process, and no rent cap. The bot was also inconsistent, answering differently across sessions. On April 2, The Markup found it still online, with the administration having reframed it as a pilot with warnings rather than pulling it.",
+    "raison_echec": "A public-service conversational assistant that delivered generated regulatory answers with no guarantee of legal compliance, no citation of the applicable rule, and no adequate oversight. In a domain where a wrong answer exposes the user to an illegal practice, the system spoke with confidence about things that were false.",
+    "cout_estime": "Reputational and legal cost: an official channel steering businesses toward illegal practices exposes the city to liability. No quantified financial cost published.",
+    "signaux_avant_coureurs": "Inferred: opening an official regulatory-advice channel with no systematic testing on legally high-stakes questions, no citation of the legal source, and no mechanism to decline when the answer is not certain. The inconsistency across sessions already signaled that the system was guessing rather than retrieving the rule.",
+    "lecons_avec_recul": "Inferred: in a domain where a wrong answer carries legal consequences, the assistant must cite the applicable rule, decline when it is not sure, and be tested against a battery of trick questions validated by lawyers. A public-service chatbot cannot rely on a confident tone alone; it needs a compliance chain. And when such a system goes off the rails, keeping it online as a pilot shifts the risk onto the user.",
+    "le_pattern_reste_il_valide": "Inferred: the public-service conversational-assistant pattern remains valid, provided it is grounded in cited legal sources, bounded to the questions it can handle, and able to say when it does not know. The failure condemns an unbounded generative deployment in a legal domain, not the idea of helping users find their way."
+  },
+  "replication": {
+    "prerequis_data": [
+      "up-to-date, structured regulatory corpus",
+      "battery of trick questions validated by lawyers"
+    ],
+    "prerequis_orga": [
+      "legal validation of the scope",
+      "human oversight and a reporting loop"
+    ],
+    "stack_possible": [
+      "RAG bounded to official texts with mandatory citation",
+      "declining to answer outside scope",
+      "periodic legal review"
+    ],
+    "premiere_etape": "Restrict the bot to questions whose answer is grounded in a cited text, and require it to decline rather than guess; have lawyers validate the test battery before launch."
+  },
+  "statut_vivant": {
+    "note": "Partial backpedal: after the investigation, the administration kept the chatbot online by calling it a pilot and adding warnings, rather than pulling it. The case is a documented public backlash with an incomplete retreat, not a clean shutdown."
+  },
+  "transposable_ue": {
+    "note": "In Europe, a public-service chatbot that delivers false regulatory advice would fall under the AI Act's high-risk category (essential public services) and under reinforced obligations of reliability and human oversight. The legal risk is even higher in the EU: steering a user toward an illegal practice through an official channel exposes the administration to liability."
+  }
+}

@@ -1,0 +1,106 @@
+{
+  "seo": {
+    "title": "Naranja X: Demand Gen against paid social - 3x clicks, -61% cost per action (2023)",
+    "meta_description": "Argentine fintech Naranja X tested Google Demand Gen against its paid social campaigns: 3x more clicks and a 61% lower cost per action.",
+    "resume_citable": "Naranja X (Argentine fintech, Grupo Financiero Galicia) got 3x more clicks and a 61% lower cost per action with Google Demand Gen compared to its paid social campaigns, a case highlighted by Google at the format's global launch in October 2023.",
+    "faq": [
+      {
+        "q": "Does Demand Gen replace paid social?",
+        "a": "Not necessarily. In the Naranja X case it served as a complementary top-of-funnel channel on Google's surfaces, evaluated in direct comparison with paid social on CTR and CPA."
+      },
+      {
+        "q": "What is the main prerequisite?",
+        "a": "Video and image assets at volume and clean action tracking. Demand Gen is a Google Ads feature, not a model to build."
+      }
+    ]
+  },
+  "pattern": "Demand Gen campaign driven by Google's AI, mixed video and image formats across YouTube/Discover/Gmail surfaces, tested against paid social campaigns to capture top-of-funnel demand",
+  "etape_parcours": "discovery -> consideration",
+  "objectif_business": "Increase traffic to the site by capturing demand on Google's visual surfaces, at a lower cost per action than paid social campaigns.",
+  "description": "Naranja X, the Argentine fintech of Grupo Financiero Galicia, tested Demand Gen, Google's format designed for demand objectives on YouTube, Discover, and Gmail. The principle: you provide videos and images, and the algorithm places and optimizes the creatives across these visual surfaces toward the profiles most likely to act. Naranja X compared Demand Gen with its paid social campaigns on a traffic objective. The format delivered 3 times more clicks, at a cost per action 61 percent lower than paid social. Google highlighted this case at the global launch of Demand Gen in October 2023, alongside other advertisers such as Samsung Germany.",
+  "points_cles": [
+    "Test of Demand Gen against paid social campaigns on a traffic objective.",
+    "Google Ads Demand Gen, smart bidding and cross-surface allocation across YouTube, Discover, Gmail.",
+    "3 times more clicks and a cost per action 61% lower than paid social.",
+    "Evidence B, mixed-signals status."
+  ],
+  "resultats": [
+    { "metrique": "Click-through rate (vs paid social)" },
+    { "metrique": "Cost per action (vs paid social)" }
+  ],
+  "niveau_preuve": {
+    "justification": "Quantified case published by Google at the launch of Demand Gen (platform source, interested bias), picked up by name by established trade press (MediaPost) the same day. Two concordant sources but no confirmation in financial results, and the benchmark is an internal comparison versus paid social."
+  },
+  "stack_technique": [
+    { "detail": "Google's AI campaign format for demand objectives: you provide videos and images, the algorithm places and optimizes across the visual surfaces." },
+    { "detail": "ML bidding and automatic distribution of the creatives across YouTube, Discover, Gmail, and Display toward the profiles most likely to act." },
+    { "detail": "Delivery inventory for the Demand Gen campaigns." }
+  ],
+  "fonctionnement_operationnel": {
+    "cadence": "Continuous, per campaign, with a learning phase. Video and image creatives are refreshed regularly.",
+    "opere_par": "The media/acquisition team, with the creative team feeding video and image assets.",
+    "signal_pilote": "The defined conversion action (qualified click, visit, on-site action). If the signal is too loose (raw click), the reported CPA drops but so does the real value of the traffic.",
+    "etapes": [
+      {
+        "etape": "Define the action to optimize",
+        "detail": "Choose the objective (traffic, on-site action) and set up the corresponding tracking before comparing with paid social.",
+        "acteur": "Data / media team"
+      },
+      {
+        "etape": "Provide a video + image mix",
+        "detail": "Demand Gen lives on visual surfaces. Mixing video and image formats gives the algorithm material to test and place.",
+        "acteur": "Creative team"
+      },
+      {
+        "etape": "Build the audiences",
+        "detail": "Segments and lookalikes on the Google side. This is the point to frame in the EU for consent compliance.",
+        "acteur": "Media team"
+      },
+      {
+        "etape": "Benchmark against paid social",
+        "detail": "Measure CTR and CPA in parallel with existing social to objectify the gain, rather than judging Demand Gen alone.",
+        "acteur": "Media team"
+      }
+    ]
+  },
+  "replication": {
+    "playbook": [
+      {
+        "action": "Define the action to optimize (qualified traffic, on-site action) and set up the corresponding tracking, including Consent Mode v2 in the EU.",
+        "livrable": "Measurement plan and validated tags."
+      },
+      {
+        "action": "Prepare the video and image asset mix, adapted from existing social campaigns and to Demand Gen specs.",
+        "livrable": "Compliant asset bank loaded into the asset groups."
+      },
+      {
+        "action": "Build the audiences (segments, lookalikes) and launch the campaign in parallel with paid social, at a comparable budget.",
+        "livrable": "Demand Gen campaign live with a test budget."
+      },
+      {
+        "action": "Let the learning phase pass, then compare CTR and CPA against the paid social benchmark.",
+        "livrable": "Comparative readout Demand Gen vs paid social and a scale decision."
+      }
+    ],
+    "equipe": "1 Google Ads media buyer + creative support to adapt the video and image assets.",
+    "prerequis_data": [
+      "Reliable on-site action tracking",
+      "Consent Mode v2 in the EU for the audiences",
+      "First-party audience signals for the lookalikes"
+    ],
+    "prerequis_orga": [
+      "A video and image asset bank",
+      "An existing paid social benchmark to compare against"
+    ],
+    "stack_possible": [
+      "Google Ads Demand Gen + GA4, in parallel with paid social campaigns for comparison"
+    ],
+    "premiere_etape": "Duplicate a top-of-funnel social campaign as Demand Gen with the same objective and the same adapted creatives, then compare CTR and CPA."
+  },
+  "statut_vivant": {
+    "note": "The figure dates from the 2023 launch. Demand Gen has since replaced Discovery campaigns and become widespread, so the pattern is very much alive; Naranja X no longer communicates specifically about this case."
+  },
+  "transposable_ue": {
+    "note": "Demand Gen is available in the EU. The case ran in Argentina; in Europe, plan for Consent Mode v2 and GDPR framing of the audiences (lookalike/segments). No high-risk classification under the AI Act for this type of campaign."
+  }
+}

@@ -1,0 +1,111 @@
+{
+  "seo": {
+    "title": "Target: AI-personalized offers on Target Circle - more than 100 million members, offers x4 (2025)",
+    "meta_description": "Target personalizes its offers with AI on Target Circle (more than 100 million members), with a volume of personalized offers multiplied by four in a year.",
+    "resume_citable": "Target backs AI personalization with its Target Circle program of more than 100 million members, multiplied its volume of personalized offers by four in a year, and attributes billions of dollars in incremental sales to personalization, with Circle 360 members spending seven times more.",
+    "faq": [
+      {
+        "q": "What is the scale of the Target Circle program?",
+        "a": "More than 100 million members. Circle members spend three times more than non-members, and paying Circle 360 subscribers seven times more."
+      },
+      {
+        "q": "How does Target use AI for loyalty?",
+        "a": "An AI engine aligns personalized offers at the level of each member (volume multiplied by four in a year), complemented by conversational search and an in-store genAI companion."
+      }
+    ]
+  },
+  "pattern": "personalized offer engine and conversational search on loyalty data",
+  "etape_parcours": "loyalty",
+  "objectif_business": "Retain and increase spend from a loyalty base of more than 100 million members by personalizing offers and purchase journeys, and by pushing the Circle 360 subscription whose members spend much more.",
+  "description": "Target Circle is Target's loyalty program, with more than 100 million members. Circle members spend on average three times more than non-members, and members of the paid Circle 360 subscription (unlimited same-day delivery) seven times more. Target backs this base with AI personalization: the retailer reports having multiplied the volume of personalized offers by four year over year, and its AI engine aligns offers tailored to each customer's level. The brand has also deployed a genAI companion in stores, used more than 50,000 times by teams with an average response time under a minute, and a conversational search that CEO Michael Fiddelke compares to a personal shopper. He attributes the generation of billions of dollars in incremental sales to personalization.",
+  "points_cles": [],
+  "resultats": [
+    { "metrique": "Target Circle program members" },
+    { "metrique": "Overspend of Circle 360 members vs non-members" },
+    { "metrique": "Volume of personalized offers year over year" },
+    { "metrique": "Incremental sales attributed to personalization (CEO statement)" }
+  ],
+  "niveau_preuve": {
+    "justification": "Two business press sources covering Target's quarterly results (PYMNTS, Grocery Doppio) name the brand, with concordant loyalty and personalization figures and statements from named executives (CEO, Chief Guest Experience Officer). Figures drawn from results communications."
+  },
+  "stack_technique": [
+    { "detail": "In-house AI engine that aligns offers at the level of each member; volume of personalized offers multiplied by four in a year." },
+    { "detail": "Conversational search compared to a personal shopper and a genAI companion used more than 50,000 times by store teams. Underlying models not disclosed." },
+    { "detail": "Loyalty base of more than 100 million members, source of the first-party data (purchases, behavior) that feeds the engine." }
+  ],
+  "fonctionnement_operationnel": {
+    "cadence": "Near real time for offer delivery and conversational search, with a loyalty base updated continuously",
+    "opere_par": "Target's guest experience, marketing, and data teams",
+    "signal_pilote": "Membership and purchase behavior within Target Circle. Without a loyalty identifier linking purchases to a member, the offer engine loses its base and falls back to uniform promotions.",
+    "etapes": [
+      {
+        "etape": "Enrollment and collection",
+        "detail": "The purchases of Target Circle and Circle 360 members feed their profiles.",
+        "acteur": "data team"
+      },
+      {
+        "etape": "Offer personalization",
+        "detail": "The AI engine aligns for each member offers tailored to their profile, at a volume multiplied by four in a year.",
+        "acteur": "AI"
+      },
+      {
+        "etape": "Delivery across journeys",
+        "detail": "Offers and conversational search appear in the app and on the site.",
+        "acteur": "Platform"
+      },
+      {
+        "etape": "In-store assistance",
+        "detail": "A genAI companion helps teams, with more than 50,000 uses and an average response time under a minute.",
+        "acteur": "AI and store teams"
+      },
+      {
+        "etape": "Measurement and arbitration",
+        "detail": "Spend per member and offer conversion are tracked to adjust targeting and push Circle 360.",
+        "acteur": "marketing and data"
+      }
+    ]
+  },
+  "replication": {
+    "prerequis_data": [
+      "first-party data of loyalty members",
+      "identifier linking online and in-store purchases",
+      "sufficient volume to personalize at scale"
+    ],
+    "prerequis_orga": [
+      "loyalty program with a large base and a premium offer (subscription)",
+      "data and guest experience team",
+      "orchestration of offers across app and site"
+    ],
+    "stack_possible": [
+      "recommendation and offer targeting engine",
+      "CDP or customer warehouse",
+      "genAI component for search and assistance"
+    ],
+    "equipe": "2-4 data scientists and data engineers + 1 personalization PM + the CRM/loyalty team for the offers, with a guest experience sponsor.",
+    "playbook": [
+      {
+        "action": "Link online and in-store purchases to a single loyalty identifier and unify the member profiles.",
+        "livrable": "Unified member profile usable by an offer engine."
+      },
+      {
+        "action": "Build a first offer engine (recommendation plus targeting) and test it on a segment of members.",
+        "livrable": "Personalized offers in test on a subset, with a control group."
+      },
+      {
+        "action": "Increase the offer volume, measure spend per member and offer conversion against the control, industrialize the pipeline.",
+        "livrable": "Incremental reading and engine in regular production."
+      },
+      {
+        "action": "Extend to the journeys (app, site) and add the genAI components (conversational search, assistance) where the data base is solid.",
+        "livrable": "Personalization at scale on the main channels."
+      }
+    ],
+    "premiere_etape": "Link online and in-store purchases to a single loyalty identifier to feed a personalized offer engine."
+  },
+  "statut_vivant": {
+    "note": "Personalization backed by Target Circle is presented as a growth driver in the results through 2026, with continuous investment in AI (offer engine, conversational search, in-store genAI companion) and growth of the member base."
+  },
+  "transposable_ue": {
+    "note": "Offer personalization relies on the first-party data of the Target Circle program (purchases, behavior). In the EU, a legal basis and GDPR consent are required for this marketing profiling. A personalized offer engine is not high risk under the AI Act; a genAI assistant steering purchase must remain transparent about its nature."
+  }
+}

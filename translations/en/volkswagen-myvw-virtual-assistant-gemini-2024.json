@@ -1,0 +1,118 @@
+{
+  "seo": {
+    "title": "Volkswagen: genAI owner assistant in the myVW app with Google Gemini (2024)",
+    "meta_description": "Volkswagen of America integrated Google Gemini into the myVW app: an assistant that answers vehicle questions in natural language and identifies dashboard warning lights via the camera.",
+    "resume_citable": "Volkswagen of America integrated Google Gemini (Vertex AI, BigQuery) into its myVW owner app in September 2024, with an assistant that answers in natural language from manuals and guides and identifies dashboard warning lights via the smartphone camera.",
+    "faq": [
+      {
+        "q": "What does the myVW app genAI assistant do?",
+        "a": "It answers vehicle questions in natural language from manuals, FAQs, and guides, and identifies dashboard warning lights by pointing the smartphone camera at them."
+      },
+      {
+        "q": "What technology powers it?",
+        "a": "Google Gemini with Vertex AI and BigQuery, first deployed on the MY24 Atlas and Atlas Cross Sport in the United States."
+      }
+    ]
+  },
+  "pattern": "genAI owner assistant over a knowledge base (multimodal RAG)",
+  "etape_parcours": "post-purchase",
+  "objectif_business": "Make ownership information more accessible in the myVW app to strengthen the owner relationship after purchase: answer vehicle questions in natural language and identify dashboard warning lights, without the customer digging through the paper manual.",
+  "description": "Volkswagen of America integrated Google's generative AI into its myVW owner app to power a virtual assistant. The owner asks questions in natural language (for example, how to change a tire) and the assistant answers using the manuals, FAQs, help articles, official Volkswagen YouTube videos, and step-by-step guides. The multimodal capability also identifies a dashboard warning light by pointing the smartphone camera at it. Announced on September 26, 2024, initially available on the model year 2024 Atlas and Atlas Cross Sport. The setup relies on Google Gemini, Vertex AI, and BigQuery.",
+  "resultats": [
+    {
+      "metrique": "Initial deployment in the myVW app, Atlas and Atlas Cross Sport MY24"
+    },
+    {
+      "metrique": "Multimodal capability: identifying dashboard warning lights via the smartphone camera"
+    }
+  ],
+  "niveau_preuve": {
+    "justification": "Production deployment documented by established marketing press naming Volkswagen of America and by the brand's press release; limited initial scope (two models, one market) and no public adoption metric, hence level C."
+  },
+  "fonctionnement_operationnel": {
+    "cadence": "Real time, on demand, in the myVW app.",
+    "opere_par": "Volkswagen of America's customer experience and digital teams, on Google Cloud services.",
+    "signal_pilote": "The owner's question and the indexed knowledge base (manuals, FAQs, guides, videos). If the documentation is not up to date or poorly indexed, the answers drift or become wrong.",
+    "etapes": [
+      {
+        "etape": "Owner's question",
+        "detail": "The customer asks a question in natural language in the app, or points the camera at the dashboard.",
+        "acteur": "customer"
+      },
+      {
+        "etape": "Context retrieval",
+        "detail": "The assistant queries the indexed base (manuals, FAQs, help articles, videos, guides) via Vertex AI and BigQuery.",
+        "acteur": "AI"
+      },
+      {
+        "etape": "Answer generation",
+        "detail": "Gemini drafts the answer, incorporating image analysis for warning-light identification.",
+        "acteur": "AI"
+      },
+      {
+        "etape": "Base update",
+        "detail": "The teams maintain the source documentation to keep the answers accurate as the range evolves.",
+        "acteur": "data team"
+      }
+    ]
+  },
+  "replication": {
+    "prerequis_data": [
+      "structured product documentation (manuals, FAQs, guides)",
+      "indexable video content and help articles"
+    ],
+    "prerequis_orga": [
+      "customer experience / digital team",
+      "knowledge base maintenance process"
+    ],
+    "stack_possible": [
+      "Gemini / Vertex AI or a cloud LLM with RAG",
+      "warehouse for indexing (BigQuery or equivalent)",
+      "vision component for multimodal"
+    ],
+    "premiere_etape": "Index the manuals and FAQs into a RAG and connect a natural-language assistant into the owner app.",
+    "playbook": [
+      {
+        "action": "Inventory the product documentation (manuals, FAQs, help articles, videos) and assign an owner per source.",
+        "livrable": "Complete source corpus with update owners."
+      },
+      {
+        "action": "Index the corpus into RAG and connect the LLM.",
+        "livrable": "Sandbox assistant that answers correctly on a set of owner questions."
+      },
+      {
+        "action": "Add the multimodal component (recognition of dashboard warning lights).",
+        "livrable": "Camera feature tested on the most common warning lights."
+      },
+      {
+        "action": "Launch the beta in the app on a limited model scope.",
+        "livrable": "Feature live with in-app feedback collected."
+      },
+      {
+        "action": "Set up the knowledge base maintenance process and extend to the range.",
+        "livrable": "Documented update ritual + model extension plan."
+      }
+    ],
+    "equipe": "1 app PM + 1-2 devs (RAG and mobile) + 1 product documentation lead"
+  },
+  "statut_vivant": {
+    "note": "Feature in production in the myVW app in the United States, first on the MY24 Atlas and Atlas Cross Sport, with an extension to other models announced; no public adoption figures."
+  },
+  "transposable_ue": {
+    "note": "Initial US deployment via the myVW owner app. An EU transposition requires localizing manuals and content by market and GDPR compliance on the app data and the images sent for dashboard recognition."
+  },
+  "stack_technique": [
+    {
+      "detail": "Generative and multimodal model: natural-language answers and identification of dashboard warning lights via the camera."
+    },
+    {
+      "detail": "Orchestration platform for the RAG over the knowledge base (manuals, FAQs, guides, videos)."
+    },
+    {
+      "detail": "Warehouse that carries the indexing of the content queried by the assistant."
+    },
+    {
+      "detail": "Volkswagen of America's owner application, the surface of the virtual assistant."
+    }
+  ]
+}

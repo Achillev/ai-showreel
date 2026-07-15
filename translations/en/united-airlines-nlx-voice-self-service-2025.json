@@ -1,0 +1,107 @@
+{
+  "seo": {
+    "title": "United Airlines: NLX self-service voicebot - 64% of wheelchair requests automated (2025)",
+    "meta_description": "United Airlines automates 64% of wheelchair requests (90% CSAT) and 31% of flight cancellations with NLX by voice and chat, to absorb 30 million calls a year.",
+    "resume_citable": "United Airlines connected the NLX platform to its contact center and automated 64% of wheelchair requests (90% CSAT) and 31% of flight cancellations through voice and chat.",
+    "faq": [
+      {
+        "q": "What does United Airlines' AI self-service do?",
+        "a": "It lets a traveler cancel a flight, check a bag, or add an accessibility request through voice or chat, without waiting for an agent, and hands off to a human outside the automated scope."
+      },
+      {
+        "q": "What results did United get?",
+        "a": "64% of wheelchair requests automated with 90% CSAT, and 31% of flight cancellations automated with 82% CSAT, over a 6-month base."
+      }
+    ]
+  },
+  "pattern": "self-service customer service voicebot",
+  "etape_parcours": "post-purchase",
+  "objectif_business": "Absorb a call volume that had become unmanageable after post-covid traffic recovery, by letting travelers handle frequent actions themselves (cancellation, baggage, adding a wheelchair or a service animal) without waiting for an agent.",
+  "description": "United connected the NLX platform to its contact journey to automate specific requests through voice and chat. A traveler who calls or writes can cancel a flight, check a bag, or add an accessibility request to their reservation within minutes, guided by an assistant that understands the request in natural language and executes the action in United's systems. When a case falls outside the automated scope, the handoff goes to an agent. The rollout targets first the high-volume, low-variability requests, where automation holds without degrading the experience.",
+  "points_cles": ["Self-service voicebot for cancellations, baggage, and accessibility requests.", "NLX platform in voice and chat, connected to the IVR and United's PNR.", "64% of wheelchair requests automated (90% CSAT), 31% of cancellations.", "Evidence B, confirmed status, results measured over six months."],
+  "resultats": [
+    { "metrique": "Wheelchair requests automated" },
+    { "metrique": "CSAT on wheelchair and assistance requests" },
+    { "metrique": "Flight cancellation requests automated" },
+    { "metrique": "CSAT on cancellations" },
+    { "metrique": "Annual call volume that prompted the project (2022)" }
+  ],
+  "niveau_preuve": {
+    "justification": "A quantified NLX platform case study (automation rate and CSAT), corroborated by tech press (TechCrunch) that names United and describes the same rollout. The hard figures come from the vendor, the press confirms the scope and scale."
+  },
+  "stack_technique": [
+    { "detail": "Multimodal conversational AI platform (voice and chat) that understands the request in natural language and executes the action in United's systems." },
+    { "detail": "Contact center phone channel to which the assistant is connected." },
+    { "detail": "Live access to the reservation record, a condition for executing cancellations, baggage, and accessibility requests." }
+  ],
+  "fonctionnement_operationnel": {
+    "cadence": "Real time, on each incoming call or conversation.",
+    "opere_par": "United's contact center Service Transformation team, with the NLX platform.",
+    "signal_pilote": "The intent expressed by the traveler, matched against the reservation record live. Without reliable access to the PNR and the inventory systems, the assistant cannot execute the action and shifts everything to the agent, which cancels the gain.",
+    "etapes": [
+      {
+        "etape": "Capturing the request",
+        "detail": "The traveler calls or writes and states their request in natural language (cancel, check a bag, add a wheelchair).",
+        "acteur": "customer"
+      },
+      {
+        "etape": "Understanding and qualification",
+        "detail": "The assistant identifies the intent and checks whether the case falls into an automated scenario.",
+        "acteur": "AI"
+      },
+      {
+        "etape": "Execution",
+        "detail": "For a case within scope, the action is carried out in United's systems and confirmed to the traveler.",
+        "acteur": "AI"
+      },
+      {
+        "etape": "Handoff to the agent",
+        "detail": "Outside scope or on failure, the record and the context are transferred to a human advisor.",
+        "acteur": "AI"
+      }
+    ]
+  },
+  "replication": {
+    "prerequis_data": [
+      "API access to the reservation system (PNR)",
+      "a map of the high-volume intents",
+      "business rules per request type"
+    ],
+    "prerequis_orga": [
+      "a contact center team ready to co-design the scenarios",
+      "governance of the escalation to the agent",
+      "a compliance framework for voice and sensitive data"
+    ],
+    "stack_possible": [
+      "a voice conversational AI platform",
+      "integration with the existing IVR",
+      "connectors to the reservation systems"
+    ],
+    "premiere_etape": "Choose a high-volume, low-variability intent (e.g. cancellation) and automate it end to end before widening.",
+    "playbook": [
+      {
+        "action": "Map the high-volume, low-variability intents (cancellation, baggage, accessibility) and prioritize them by volume and risk.",
+        "livrable": "A prioritized list of intents with annual volumes."
+      },
+      {
+        "action": "Connect the conversational platform to the PNR and the IVR, write the business rules for the first request.",
+        "livrable": "A first end-to-end automated scenario in pre-production."
+      },
+      {
+        "action": "Pilot on one intent with systematic escalation to the agent; measure automation rate and CSAT per scenario.",
+        "livrable": "A pilot review (automation, CSAT, failures and causes)."
+      },
+      {
+        "action": "Extend to the following intents and lock down compliance (voice, sensitive data such as accessibility requests).",
+        "livrable": "A catalog of scenarios in production and a permanent dashboard."
+      }
+    ],
+    "equipe": "1 contact center PM + 1 integration dev (PNR/IVR) + 1 compliance lead; the vendor supports scenario design."
+  },
+  "statut_vivant": {
+    "note": "NLX self-service documented as active, with results measured over six months and external recognition (Opus Research Conversational AI Award 2024) for the automated addition of a wheelchair and a service animal."
+  },
+  "transposable_ue": {
+    "note": "A voice and chat self-service to handle cancellations, baggage, and accessibility requests is transposable to the EU. Recording and processing the voice requires a GDPR legal basis and explicit consent; the AI Act requires informing the customer they are talking to an AI. Implicit health data (wheelchair, service animal) falls under sensitive categories to frame."
+  }
+}

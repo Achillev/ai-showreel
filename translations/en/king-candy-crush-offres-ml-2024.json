@@ -1,0 +1,108 @@
+{
+  "seo": {
+    "title": "King: ML-personalized offers in Candy Crush - +30% clicks, +40% take rate (2024)",
+    "meta_description": "King recommends personalized bundles in Candy Crush Saga with machine learning: +30% on click rate and more than +40% on take rate.",
+    "resume_citable": "King recommends personalized bundles in Candy Crush Saga with a machine learning system deployed at the scale of millions of players, with +30 percent on click rate and more than +40 percent on take rate; in parallel, nearly every level is designed with the help of AI.",
+    "faq": [
+      {
+        "q": "How does King personalize Candy Crush monetization?",
+        "a": "An attention-based model predicts, for each player, the bundle with the highest propensity to buy and serves it in the store, with a measured increase in clicks and take rate."
+      },
+      {
+        "q": "Is AI also used to design the levels?",
+        "a": "Yes. According to King's AI Labs director, nearly every level is now designed with the help of AI, with bots testing each level thousands of times before release."
+      }
+    ]
+  },
+  "pattern": "ML recommendation of personalized offers and bundles",
+  "etape_parcours": "Purchase",
+  "objectif_business": "Increase engagement and conversion on in-game offers by serving each player the most relevant bundle, while producing and testing Candy Crush levels at scale.",
+  "description": "King recommends personalized bundles in Candy Crush Saga with a machine learning system that combines supervised and unsupervised learning and a so-called scale-invariant prediction approach, backed by player-level attention-based models. A paper authored by King teams reports a 30 percent increase in engagement on click rate and more than 40 percent on take rate, with an explicit framing of deployment at the scale of millions of users, of model maintenance and monitoring, and of degenerate feedback loops to watch. In parallel, AI feeds game production: according to the AI Labs director, nearly every Candy Crush level is now designed with the help of AI, with bots playing each level thousands of times to measure difficulty before designers validate. King has also built BAIT, a testing bot that traverses the game through screen capture and interface recognition to detect missing textures, absent text, and rendering artifacts.",
+  "points_cles": ["ML recommendation of personalized bundles in the Candy Crush Saga store.", "In-house attention-based models on TensorFlow, Keras, and Google Cloud.", "+30% click rate and more than +40% take rate.", "Nearly every level designed with the help of AI, evidence level B confirmed."],
+  "resultats": [
+    { "metrique": "Offer engagement (click rate)" },
+    { "metrique": "Take rate of recommended bundles" },
+    { "metrique": "Candy Crush levels designed with the help of AI" }
+  ],
+  "niveau_preuve": {
+    "justification": "Technical paper authored by King teams, with figures on click rate and take rate of a system deployed at the scale of millions of players, corroborated by specialized press and an engineering article on automated testing. Not a financial document, so B."
+  },
+  "stack_technique": [
+    { "detail": "supervised and unsupervised learning, scale-invariant approach, per-player bundle prediction" },
+    { "detail": "ML framework used by King teams to train the models" },
+    { "detail": "neural network building API on top of TensorFlow" },
+    { "detail": "cloud infrastructure for training and serving the models" },
+    { "detail": "bots that play each level thousands of times and detect visual bugs through interface recognition" }
+  ],
+  "fonctionnement_operationnel": {
+    "cadence": "Offer recommendation continuously across sessions; level production and testing in flow, with bots playing each level thousands of times before release.",
+    "opere_par": "King's AI Labs and the game teams, with designers keeping final validation on the levels.",
+    "signal_pilote": "The player's buying and progression behavior (cards or boosters owned, proximity to a goal, purchase frequency). Without fresh behavioral data, the offer recommendation loses relevance and take rate drops.",
+    "etapes": [
+      {
+        "etape": "Automated level testing",
+        "detail": "AI bots play each level thousands of times to measure difficulty and friction; BAIT detects visual bugs.",
+        "acteur": "AI (test bots)"
+      },
+      {
+        "etape": "Design validation",
+        "detail": "Designers read the AI metrics, annotate good and bad examples, and decide whether to adjust.",
+        "acteur": "designers (humans)"
+      },
+      {
+        "etape": "Offer prediction",
+        "detail": "The attention-based model predicts, per player, the bundle with the highest conversion propensity.",
+        "acteur": "AI (recommendation system)"
+      },
+      {
+        "etape": "Display and tracking",
+        "detail": "The store serves the offer; click rate, take rate, diversity, and feedback loops are monitored.",
+        "acteur": "data / LiveOps team"
+      }
+    ]
+  },
+  "replication": {
+    "prerequis_data": [
+      "in-app purchase events",
+      "per-player progression and inventory signals",
+      "catalog of offers and bundles"
+    ],
+    "prerequis_orga": [
+      "data science team to maintain and monitor the models",
+      "design validation process for the levels",
+      "monitoring of feedback loops and diversity"
+    ],
+    "stack_possible": [
+      "custom recommendation model",
+      "TensorFlow or PyTorch",
+      "cloud infrastructure (e.g. Google Cloud)",
+      "A/B testing pipeline"
+    ],
+    "premiere_etape": "Instrument player inventory and progression in fine detail, then test an offer-propensity model on a segment before generalizing.",
+    "playbook": [
+      {
+        "action": "Instrument purchase events, inventory, and progression per player in fine detail",
+        "livrable": "Reliable and documented event pipeline"
+      },
+      {
+        "action": "Build a first offer-propensity model and evaluate it offline",
+        "livrable": "Trained model with offline accuracy metrics"
+      },
+      {
+        "action": "Run an A/B test on a player segment against static offers",
+        "livrable": "Measured lift in click rate and take rate"
+      },
+      {
+        "action": "Generalize and set up monitoring (degenerate feedback loops, offer diversity)",
+        "livrable": "Recommendation in production with continuous monitoring and alerting"
+      }
+    ],
+    "equipe": "2 data scientists + 1 data engineer + 1 LiveOps PM"
+  },
+  "statut_vivant": {
+    "note": "Candy Crush Saga remains a top-grossing game in continuous production. The offer recommendation paper dates from 2024 and the use of AI in level design is confirmed the same year by the AI Labs director."
+  },
+  "transposable_ue": {
+    "note": "Offer recommendation relies on profiling the player's buying and progression behavior. Under GDPR, profiling for monetization purposes requires a legal basis and transparency. Personalization of offers and prices remains under consumer law scrutiny. The pattern is transposable, with a legal framing."
+  }
+}

@@ -1,0 +1,119 @@
+{
+  "seo": {
+    "title": "Michaels: genAI personalization of marketing messaging via Persado - +41% SMS CTR (2022)",
+    "meta_description": "With Persado's genAI tuned to its brand voice, Michaels took personalization from 20 to 95% of its email campaigns: +25% email CTR, +41% SMS CTR.",
+    "resume_citable": "Craft retailer Michaels used Persado's genAI platform, tuned to its brand voice, to personalize the language of its email, SMS, and Facebook campaigns, moving from 20 to 95 percent of personalized email campaigns and gaining 25 percent email CTR and 41 percent SMS CTR (2022 case study).",
+    "faq": [
+      {
+        "q": "What results did Michaels get with Persado?",
+        "a": "A 25 percent lift in email click-through rate and a 41 percent lift in SMS click-through rate, with personalization taken from 20 to 95 percent of email campaigns."
+      },
+      {
+        "q": "How does Michaels' genAI personalization work?",
+        "a": "Persado generates and tests language variants tuned to Michaels' brand voice, then predicts the best-performing message per campaign across email, SMS, and Facebook."
+      }
+    ]
+  },
+  "pattern": "genAI personalization of marketing messaging (copy) at scale, tuned to the brand voice",
+  "etape_parcours": "loyalty",
+  "objectif_business": "Send each customer the message wording most likely to make them click, at the scale of millions of customers with different preferences, without relying on manual A/B testing of copy. The goal is to re-engage and retain the customers Michaels calls Makers across its CRM channels.",
+  "description": "Michaels, a US craft retailer, partnered with Persado in 2019 to personalize the language of its marketing campaigns. Persado's Motivation AI platform generates wording variants, tests them on a sample to feed predictive models, then predicts the best-performing message for the following campaigns. A language model is tuned to Michaels' brand voice and applied across three channels: email, SMS, and Facebook. The share of personalized email campaigns rose from 20 to 95 percent. The reported results are a 25 percent lift in click-through rate on email campaigns and 41 percent on SMS campaigns. The Persado case study detailing these figures was published in March 2022; the partnership was covered by the retail press (Chain Store Age), which quotes Michaels' VP of CRM and repeats the same figures.",
+  "points_cles": [
+    "genAI personalization of marketing messaging across email, SMS, and Facebook, tuned to the brand voice.",
+    "Persado Motivation AI platform that generates, tests, and predicts the message.",
+    "Email personalization taken from 20 to 95 percent, +25% email CTR, +41% SMS CTR.",
+    "Evidence B, mixed-signals status."
+  ],
+  "resultats": [
+    { "metrique": "Share of personalized email campaigns" },
+    { "metrique": "Email click-through rate lift" },
+    { "metrique": "SMS click-through rate lift" }
+  ],
+  "niveau_preuve": {
+    "justification": "Quantified Persado platform case study (personalization from 20 to 95 percent of email campaigns, +25 percent email CTR, +41 percent SMS CTR), corroborated by established retail press (Chain Store Age) that repeats the same figures and names Michaels' VP of CRM. The figures are vendor-sourced, hence B despite the press concordance."
+  },
+  "stack_technique": [
+    { "detail": "Generates marketing language variants, tests them to feed predictive models, then predicts the best-performing wording per campaign. A language model is tuned to Michaels' brand voice and deployed across email, SMS, and Facebook." }
+  ],
+  "fonctionnement_operationnel": {
+    "cadence": "Per campaign (batch), with continuous retraining of the model on the engagement results of previous campaigns.",
+    "opere_par": "Michaels' CRM and marketing team, with language generation and optimization carried by the Persado platform.",
+    "signal_pilote": "The click-through rate per language variant. The model learns which wordings make each segment click; if the engagement feedback (clicks, conversions) stops coming back, the prediction of the optimal message degrades.",
+    "etapes": [
+      {
+        "etape": "Language variant generation",
+        "detail": "Persado produces wordings tuned to Michaels' brand voice for a given campaign objective.",
+        "acteur": "AI / platform"
+      },
+      {
+        "etape": "Sample testing",
+        "detail": "The variants are deployed to a subset of recipients over email, SMS, or Facebook to measure their performance.",
+        "acteur": "marketing"
+      },
+      {
+        "etape": "Measurement and model feeding",
+        "detail": "Click-through rates per variant come back and feed the predictive models of message performance.",
+        "acteur": "platform / data"
+      },
+      {
+        "etape": "Prediction and generalization",
+        "detail": "The message predicted as best-performing is applied to the following campaigns, with personalization extended to up to 95 percent of email campaigns.",
+        "acteur": "AI"
+      },
+      {
+        "etape": "CRM team oversight",
+        "detail": "The team chooses the campaigns and segments, and keeps control of brand voice compliance.",
+        "acteur": "marketing"
+      }
+    ]
+  },
+  "replication": {
+    "prerequis_data": [
+      "First-party engagement data per channel (opens, clicks, conversions)",
+      "Campaign history to frame the variants",
+      "Usable customer segmentation",
+      "A brand voice reference (tone, vocabulary, mandatory disclosures)"
+    ],
+    "prerequis_orga": [
+      "A CRM/marketing team that owns the campaigns",
+      "Brand voice governance to validate the generated wordings",
+      "An accepted test-and-learn culture on the CRM channels"
+    ],
+    "stack_possible": [
+      "A genAI platform for message generation and optimization (Persado-type)",
+      "An ESP for email and an SMS sending platform",
+      "A connection to engagement data as an optimization signal",
+      "A language model tuned to the brand voice"
+    ],
+    "premiere_etape": "Pick the highest-volume channel (email) and run language variant generation on a subset of campaigns, with a control group, to establish a measurable CTR lift before any generalization.",
+    "playbook": [
+      {
+        "action": "Frame the brand voice and guardrails (tone, vocabulary, legal disclosures) so the model generates in the brand register.",
+        "livrable": "A voice charter usable by the model and validated by marketing."
+      },
+      {
+        "action": "Connect engagement data (clicks, conversions) per channel as the message optimization signal.",
+        "livrable": "A feedback flow of CTR per variant."
+      },
+      {
+        "action": "Launch language variant generation on a sample of email campaigns and measure the lift against a control.",
+        "livrable": "A first measured lift, control versus AI variant."
+      },
+      {
+        "action": "Extend personalization to SMS and social campaigns once the email lift is confirmed.",
+        "livrable": "Multichannel personalization in production."
+      },
+      {
+        "action": "Generalize personalization to the majority of campaigns and monitor brand voice drift.",
+        "livrable": "A high share of personalized campaigns and ongoing quality control."
+      }
+    ],
+    "equipe": "A CRM/marketing team (owner of campaigns and segments), a data/analytics profile for the engagement signal, and the genAI platform on the generation side. Using a platform avoids standing up a heavy ML team on the brand side."
+  },
+  "statut_vivant": {
+    "note": "The last solid public confirmation dates from the March 2022 Persado case study. Persado remains an active vendor (2024 MarTech Breakthrough award) and Michaels still runs a large-scale email and SMS CRM program, with no sign of withdrawal. But no fresh public source from 2025-2026 confirms that Persado still powers 95 percent of campaigns. To be reverified."
+  },
+  "transposable_ue": {
+    "note": "The case relies on generating and testing marketing language variants on first-party engagement data (clicks, conversions), not on heavy individual profiling. This mechanism transposes to the EU, but marketing email and SMS require prior consent (GDPR and ePrivacy), and retraining the model on European engagement data must respect purpose limitation. The AI Act angle is light here: this is copy generation, not an automated decision producing legal effects on a person. The brand voice must be recalibrated market by market (language, tone, legal disclosures)."
+  }
+}

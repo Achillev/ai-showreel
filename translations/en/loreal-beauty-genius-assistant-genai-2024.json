@@ -1,0 +1,116 @@
+{
+  "seo": {
+    "title": "L'Oreal Beauty Genius: genAI beauty agent - 50,000 conversations in two months (2024)",
+    "meta_description": "Beauty Genius, L'Oreal Paris's genAI beauty assistant (GPT-4o + RAG + ModiFace), generated more than 50,000 conversations in two months in the United States.",
+    "resume_citable": "Beauty Genius, L'Oreal Paris's genAI beauty assistant on GPT-4o and RAG, stimulated more than 50,000 conversations in two months in the United States in 2024, with a target latency under 5 seconds.",
+    "faq": [
+      {
+        "q": "What technology does Beauty Genius run on?",
+        "a": "On Azure OpenAI (GPT-4o for conversation, Ada embeddings for a RAG system bounded to the L'Oreal catalog) and on ModiFace for skin diagnosis and virtual try-on."
+      },
+      {
+        "q": "Where is it deployed?",
+        "a": "Launched in the United States in 2024 (brand web, app, WhatsApp), with a rollout announced for other key markets in 2025."
+      }
+    ]
+  },
+  "pattern": "24/7 genAI beauty agent (advice + product recommendation)",
+  "etape_parcours": "Consideration",
+  "objectif_business": "Offer personalized, continuously available beauty advice to remove purchase doubt and guide toward the relevant products in the L'Oreal Paris catalog (750+ references).",
+  "description": "Beauty Genius is a genAI beauty assistant accessible from the smartphone (brand web, app, WhatsApp). The user asks a skin, makeup, or coloring question, gets a diagnosis, a virtual try-on, and recommendations drawn from the 750+ L'Oreal Paris products. The engine combines an LLM (GPT-4o) and a RAG system bounded to L'Oreal content to ground the answers, with visual try-on and diagnosis provided by ModiFace. Launched in the United States in 2024, with a rollout announced for other key markets in 2025.",
+  "points_cles": ["24/7 genAI beauty assistant on web, app, and WhatsApp, advice and product recommendation.", "GPT-4o and RAG on Azure OpenAI, Ada embeddings, ModiFace try-on and diagnosis.", "More than 50,000 conversations in two months in the United States, target latency under 5 seconds.", "Evidence level B, status confirmed: documented in L'Oreal's 2024 annual report."],
+  "resultats": [
+    { "metrique": "Conversations generated (US, first two months)" },
+    { "metrique": "Target maximum latency" },
+    { "metrique": "Load tested in simultaneous users" }
+  ],
+  "niveau_preuve": {
+    "justification": "Usage figure published in L'Oreal's official annual report (primary source) and technical architecture confirmed by the Microsoft Azure OpenAI customer story. Two concordant sources, one of them primary."
+  },
+  "stack_technique": [
+    { "detail": "conversation model that formulates the beauty advice and routine recommendation, target latency under 5 seconds" },
+    { "detail": "hosts GPT-4o and the embeddings for L'Oreal, tested up to 2,000 simultaneous users" },
+    { "detail": "vectorization of the L'Oreal catalog and content for the RAG system bounded to the 750+ references" },
+    { "detail": "skin diagnosis and virtual makeup try-on from the camera, L'Oreal subsidiary" },
+    { "detail": "distribution channel for the assistant in addition to the brand web and the app" }
+  ],
+  "fonctionnement_operationnel": {
+    "cadence": "Real time, available 24/7",
+    "opere_par": "L'Oreal Beauty Tech team (AI platform) and the brand's digital team (content, guardrails, catalog)",
+    "signal_pilote": "The freshness and accuracy of the product catalog and the RAG knowledge base. If the RAG is not up to date or poorly bounded, the agent recommends unavailable products or strays outside its advisory scope.",
+    "etapes": [
+      {
+        "etape": "User question",
+        "detail": "The user describes a skin, makeup, or coloring need, or sends a photo for diagnosis/try-on.",
+        "acteur": "client"
+      },
+      {
+        "etape": "Context retrieval",
+        "detail": "The RAG system retrieves, from the L'Oreal knowledge base, the relevant products and content to ground the answer.",
+        "acteur": "AI (Ada embeddings)"
+      },
+      {
+        "etape": "Answer generation",
+        "detail": "GPT-4o formulates personalized advice and a routine recommendation in under 5 seconds.",
+        "acteur": "AI (GPT-4o)"
+      },
+      {
+        "etape": "Diagnosis and visual try-on",
+        "detail": "ModiFace performs the skin diagnosis or the virtual makeup try-on from the camera.",
+        "acteur": "AI (ModiFace)"
+      },
+      {
+        "etape": "Supervision and updating",
+        "detail": "The brand team updates the catalog, checks the content guardrails, and tracks aggregate conversations.",
+        "acteur": "brand / data team"
+      }
+    ]
+  },
+  "replication": {
+    "prerequis_data": [
+      "structured and up-to-date product catalog",
+      "validated expert content (routines, ingredients)",
+      "images for diagnosis/try-on if visual feature"
+    ],
+    "prerequis_orga": [
+      "product/legal team for the advisory guardrails",
+      "catalog update process",
+      "LLM inference budget"
+    ],
+    "stack_possible": [
+      "Azure OpenAI or equivalent (LLM + embeddings)",
+      "RAG engine",
+      "virtual try-on component (ModiFace, Perfect Corp, Banuba)"
+    ],
+    "premiere_etape": "Index the catalog and expert content in a RAG, then connect an LLM with strict guardrails on the advisory scope.",
+    "playbook": [
+      {
+        "action": "Structure the product catalog and expert content (routines, ingredients) then index them",
+        "livrable": "Vectorized knowledge base, up to date and bounded to the advisory scope"
+      },
+      {
+        "action": "Connect the LLM to the RAG with strict guardrails (no medical advice, available products only)",
+        "livrable": "Conversational prototype validated by legal and the business"
+      },
+      {
+        "action": "Closed beta: load, latency, and out-of-scope answer rate testing",
+        "livrable": "Latency under target + evaluation grid for answers on a panel of real questions"
+      },
+      {
+        "action": "Launch on one market and one channel (brand web), with aggregate conversation tracking",
+        "livrable": "Agent in production + conversation/recommendation dashboard"
+      },
+      {
+        "action": "Add the visual component (diagnosis, try-on) and extend to the other channels (app, WhatsApp) and markets",
+        "livrable": "Integrated visual journey + multi-market rollout plan"
+      }
+    ],
+    "equipe": "1 PM + 2 devs (RAG, integration) + 1 subject matter expert for guardrails and content + legal in review"
+  },
+  "statut_vivant": {
+    "note": "Documented in the 2024 annual report with a planned extension in 2025; also available on WhatsApp."
+  },
+  "transposable_ue": {
+    "note": "Consumer conversational agent: consent and minimization of conversation data (GDPR), transparency of the interaction with an AI, and guardrails on health/skin advice (AI Act, information obligations). The RAG must stay bounded to the catalog and validated content to avoid out-of-scope answers."
+  }
+}

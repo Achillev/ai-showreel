@@ -1,0 +1,153 @@
+{
+  "seo": {
+    "title": "Williams-Sonoma: AI across the portfolio (data personalization + Olive agent) - about 21M new subscribers and 60% of chat targeted for self-service (2025)",
+    "meta_description": "Williams-Sonoma unifies its data on Salesforce Data Cloud and deploys the Olive agent on Agentforce across 9 brands: about 21M new subscribers, target of 60% of chat resolved autonomously.",
+    "resume_citable": "Williams-Sonoma scales AI across its nine brands via Salesforce: Data Cloud unifies first-party data for an email personalization associated with about 21 million new subscribers, and the Olive conversational agent, built on Agentforce 360 in less than 30 days, targets autonomous resolution of more than 60 percent of chat inquiries.",
+    "faq": [
+      {
+        "q": "What did Williams-Sonoma deploy with AI?",
+        "a": "Two building blocks on the Salesforce platform, across its nine brands: marketing personalization driven by a unified customer view in Data Cloud, and a conversational agent named Olive, built on Agentforce 360, for service and product discovery."
+      },
+      {
+        "q": "What results are documented?",
+        "a": "The Data Cloud plus Marketing Cloud personalization program, deployed in 7.5 months for an engagement usually of 12 to 18 months, is associated with about 21 million new subscribers. The Olive agent was put into production in less than 30 days, with an announced target of autonomous resolution of more than 60 percent of chat inquiries."
+      },
+      {
+        "q": "Is it transposable to Europe?",
+        "a": "Yes with adaptations. The platform exists in the EU, but unifying purchase data across brands and marketing profiling require a clear GDPR legal basis, and the conversational agent must comply with the AI Act transparency obligation."
+      }
+    ]
+  },
+  "pattern": "AI at the scale of a multi-brand portfolio: data-driven personalization (360 view + dynamic email) coupled with a genAI conversational agent for product discovery and service",
+  "etape_parcours": "consideration",
+  "objectif_business": "Push AI further down the purchase journey and scale personalization across the group's nine brands, with two levers: personalized marketing communications from a unified customer view, and a conversational agent that handles service and product discovery without a systematic human handoff. Stated operational goal: autonomously resolve more than 60 percent of chat inquiries.",
+  "points_cles": [
+    "Data-driven personalization and the Olive conversational agent across the group's nine brands.",
+    "Salesforce Data Cloud, Marketing Cloud, and Agentforce 360.",
+    "About 21 million new subscribers, target of more than 60 percent of chat resolved autonomously.",
+    "Evidence level B, confirmed active status."
+  ],
+  "description": "Williams-Sonoma, Inc. leverages the Salesforce platform on two complementary fronts, across its nine brands. On the personalization side, Data Cloud unifies first-party purchase and browsing data to build a 360 view of each customer, segmented into fine audiences; Marketing Cloud then triggers emails with dynamic images and content at the right moment, for example a kids' bed email after the purchase of a crib. This personalization effort, deployed with Salesforce Professional Services in less than eight months for a project usually of 12 to 18 months, is associated with about 21 million new subscribers. On the journey side, the group put into production at Dreamforce 2025 a conversational agent named Olive, built on Agentforce 360: it handles order status, returns, furniture delivery, and provides culinary guidance drawn from brand recipes and content, escalating to a human on demand. The company says it aims for autonomous resolution of more than 60 percent of chat inquiries, and describes having built the experience in less than 30 days by relying on the platform rather than developing an in-house stack. Interior design agents complete the setup on the discovery side, checking a product's compatibility with the customer's space. During the first-quarter 2026 earnings call, leadership confirmed it had extended AI further into the customer journey and scaled personalization across the portfolio.",
+  "resultats": [
+    {
+      "metrique": "New subscribers linked to the Data Cloud + Marketing Cloud personalization program"
+    },
+    {
+      "metrique": "Deployment of Marketing Cloud and Data Cloud, vs 12 to 18 months usually"
+    },
+    {
+      "metrique": "Chat inquiries resolved autonomously, announced target"
+    },
+    {
+      "metrique": "Putting the Olive agent into production, on the platform rather than an in-house stack"
+    },
+    {
+      "metrique": "Deployment of the agents across the group's brands"
+    },
+    {
+      "metrique": "AI extended into the journey and personalization at scale, earnings call"
+    }
+  ],
+  "niveau_preuve": {
+    "justification": "The hard figures (about 21 million new subscribers, 7.5 months of deployment) come from a quantified Salesforce case study, an official but interested source, hence level B. They are corroborated by two stronger elements on the fact of the deployment: a Salesforce release of October 14, 2025 (multi-brand deployment, goal of more than 60 percent autonomous resolution) and the first-quarter 2026 earnings call where CEO Laura Alber confirms having extended AI into the journey and scaled personalization across the portfolio (level A source on the fact of the scale, but qualitative). The established press (Forbes) independently documents the Olive agent and its deployment in less than 30 days."
+  },
+  "stack_technique": [
+    {
+      "detail": "Data engine that unifies and harmonizes first-party data across the brands to build a 360 view of each customer, segmented into fine audiences (students, newlyweds). It is the common foundation for email personalization and the conversational agent."
+    },
+    {
+      "detail": "Triggers emails with dynamic images and content based on the segment and the moment (documented example: a kids' bed email after the purchase of a crib)."
+    },
+    {
+      "detail": "AI agent platform deployed across the brand portfolio. Powers the Olive agent (customer service and culinary guidance) and interior design agents that check product compatibility with the customer's space. Williams-Sonoma built the experience on the platform rather than an in-house stack."
+    },
+    {
+      "detail": "GenAI conversational agent exposed on the sites. Handles order status, returns, furniture delivery scheduling, routes to a human on demand, and provides culinary guidance backed by brand recipes, videos, and content. Built on Agentforce."
+    }
+  ],
+  "fonctionnement_operationnel": {
+    "cadence": "Real time for the conversational agent on the sites; event-driven triggering for the personalized email (a customer action triggers the message); continuous data unification in Data Cloud.",
+    "opere_par": "Williams-Sonoma marketing/CRM, e-commerce, and customer service teams, on the Salesforce platform, with Salesforce Professional Services for the initial deployment.",
+    "signal_pilote": "The first-party data unified in Data Cloud, that is, the resolved customer identity and purchase history across the brands. If identity does not resolve from one brand to another, email segmentation loses its relevance and the agent loses the customer context it answers on.",
+    "etapes": [
+      {
+        "etape": "Data unification",
+        "detail": "Data Cloud gathers and harmonizes purchase and browsing data from the nine brands to build a 360 view of each customer.",
+        "acteur": "data team"
+      },
+      {
+        "etape": "Segmentation",
+        "detail": "The 360 view is broken down into fine audiences (for example students or newlyweds) usable by marketing.",
+        "acteur": "data team"
+      },
+      {
+        "etape": "Triggered personalized email",
+        "detail": "Marketing Cloud sends at the right moment an email with dynamic images and content, based on the segment and behavior (example: kids' bed after the purchase of a crib).",
+        "acteur": "marketing"
+      },
+      {
+        "etape": "Conversational agent at the front",
+        "detail": "On the sites, the Olive agent (Agentforce) answers service and product discovery questions, connected to the customer view and brand content.",
+        "acteur": "AI"
+      },
+      {
+        "etape": "Human escalation",
+        "detail": "Complex cases or the customer's explicit request are routed to a human advisor.",
+        "acteur": "marketing"
+      },
+      {
+        "etape": "Monitoring and extension",
+        "detail": "The teams track the autonomous resolution rate, engagement, and conversion, and extend the agent to new uses (design, product compatibility).",
+        "acteur": "data team"
+      }
+    ]
+  },
+  "replication": {
+    "prerequis_data": [
+      "First-party purchase and browsing data that can be unified across several brands",
+      "Cross-brand customer identity resolution (the same customer recognized from one banner to another)",
+      "Structured product catalog and brand content usable by an agent (guides, recipes, videos)"
+    ],
+    "prerequis_orga": [
+      "Data governance shared across the group's different brands or business units",
+      "Alignment of the CRM, e-commerce, and customer service teams around the same customer view",
+      "Compliance framework (GDPR and AI Act in an EU environment) for profiling and the conversational agent"
+    ],
+    "stack_possible": [
+      "A CDP to unify first-party data and resolve identity (Data Cloud or equivalent)",
+      "A marketing platform triggering emails with dynamic content",
+      "A conversational agent platform connected to the customer view, or an LLM plus RAG build on the catalog and brand content",
+      "A generative LLM for conversation and product discovery"
+    ],
+    "premiere_etape": "Unify identity and purchase data across the brands into a 360 view before any AI use case: it is the common foundation of both building blocks, email personalization and the conversational agent. Without this identity resolution, neither holds at scale.",
+    "playbook": [
+      {
+        "action": "Unify the brands' first-party data in a single platform and resolve customer identity from one banner to another.",
+        "livrable": "360 view with customer identity recognized across brands."
+      },
+      {
+        "action": "Segment the base into fine audiences and plug a triggered email with dynamic content onto purchase moments.",
+        "livrable": "Personalized campaigns driven by event."
+      },
+      {
+        "action": "Structure the product catalog and brand content (guides, recipes, videos) so an agent can draw on it.",
+        "livrable": "Product and content knowledge base usable by an AI."
+      },
+      {
+        "action": "Deploy a conversational agent on the sites, connected to the 360 view, with guardrails and human escalation on demand.",
+        "livrable": "Agent in production handling routine service and discovery requests."
+      },
+      {
+        "action": "Extend the agent to discovery and design (visualization, product compatibility) and track autonomous resolution, conversion, and average order value.",
+        "livrable": "Multi-use agent measured on service and sales KPIs."
+      }
+    ],
+    "equipe": "A digital product lead, a CRM and marketing team, data engineers for identity unification, conversational and prompt specialists, and compliance involved on profiling and the agent."
+  },
+  "statut_vivant": {
+    "note": "Agents put into production at Dreamforce in October 2025, personalization in place since 2023 and growing, leadership reaffirming the extension of AI and the scaling of personalization during the first-quarter 2026 earnings call. No signal of withdrawal."
+  },
+  "transposable_ue": {
+    "note": "The foundation (Salesforce Data Cloud, Marketing Cloud, Agentforce 360) is available in the EU. What requires adaptation is the raw material of the case: unifying first-party purchase data across several brands of the same group to build a 360 view and marketing profiling assumes an explicit GDPR legal basis and fine-grained management of cross-brand consent. The Olive conversational agent falls under the AI Act transparency obligation (telling the customer they are talking to an AI). The pattern transposes, the data governance and compliance are to be redone."
+  }
+}

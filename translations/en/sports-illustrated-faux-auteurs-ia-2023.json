@@ -1,0 +1,74 @@
+{
+  "seo": {
+    "title": "Sports Illustrated: AI articles under fake authors - content removed (2023)",
+    "meta_description": "In 2023, Sports Illustrated published product articles under fictitious authors with AI-generated portraits. Content removed, CEO fired, license lost in 2024.",
+    "resume_citable": "In November 2023, Sports Illustrated was caught publishing product-recommendation articles bylined to fictitious authors with AI-generated portraits; the content was removed, the vendor partnership severed, and Arena's CEO fired.",
+    "faq": [
+      {
+        "q": "Did Sports Illustrated write its articles with AI?",
+        "a": "The vendor AdVon Commerce told SI that the texts were written and edited by humans, but bylined them to fictitious authors with AI-generated portraits. Sources cited by Futurism claim at least part of the text was also generated automatically."
+      },
+      {
+        "q": "What is the takeaway for a media outlet that wants to use AI?",
+        "a": "Transparency is the red line. Disclosed AI-assisted content and a responsible human byline remain acceptable; fictitious authors and hidden use destroy trust and expose the brand."
+      }
+    ]
+  },
+  "pattern": "AI editorial content generation at scale",
+  "etape_parcours": "consideration",
+  "objectif_business": "Produce, at low cost, a volume of product-recommendation articles that generate affiliate revenue, via an external content vendor.",
+  "description": "On the Sports Illustrated site, product-recommendation articles appeared under the bylines of authors who did not exist. On November 27, 2023, Futurism revealed that bios such as that of Drew Ortiz used portraits bought on generated.photos, a site selling AI-generated faces. The fictitious authors (Drew Ortiz, Sora Tanaka, among others) disappeared from the site as soon as the magazine was questioned. The content came from the vendor AdVon Commerce, which told SI that it was written and edited by humans, but had its authors byline under pseudonyms.",
+  "resultats": [
+    {
+      "metrique": "editorial reaction: AdVon partnership severed"
+    },
+    {
+      "metrique": "newsroom reaction: the union demands journalistic standards"
+    }
+  ],
+  "niveau_preuve": {
+    "justification": "Initial Futurism investigation, picked up by established press (PBS NewsHour, Variety, CBS) that names Sports Illustrated and Arena Group and their statements. Consequences (CEO firing, loss of license) documented by Sportico."
+  },
+  "stack_technique": [
+    {
+      "detail": "external affiliate content vendor; it told SI that the texts were written and edited by humans, but bylined them under pseudonyms and, according to sources cited by Futurism, used at least in part automated text generation (tool not identified)"
+    },
+    {
+      "detail": "bank of AI-generated portraits where the faces of the fictitious authors (Drew Ortiz, Sora Tanaka) were bought"
+    },
+    {
+      "detail": "publishing surface for the product-recommendation articles, with no SI control over the origin of the bylines"
+    }
+  ],
+  "post_mortem": {
+    "ce_qui_s_est_passe": "Sports Illustrated published product-recommendation articles bylined to fictitious authors, with portraits bought on generated.photos. On November 27, 2023, Futurism exposed it; the profiles disappeared from the site at the first questions. Arena Group attributed the content to the vendor AdVon Commerce, removed the articles, and severed the partnership. CEO Ross Levinsohn was fired about two weeks later. In 2024, Arena lost the SI publishing license to Minute Media.",
+    "raison_echec": "Outsourcing a volume of affiliate content to a vendor that used fictitious bylines and, according to sources cited by Futurism, at least in part automated text generation, with no editorial control by SI over the origin of the authors or the texts.",
+    "cout_estime": "Major reputational cost for a title with a strong journalistic history. Firing of Arena's CEO in December 2023. In 2024, Arena lost the SI license and announced layoffs of a third of its staff (legal trigger: a missed license payment, against a backdrop of crisis).",
+    "signaux_avant_coureurs": "Inferred: authors with no verifiable history, portraits found nowhere except on an AI-face seller, a vendor imposing pseudonyms. Each of these signals, verifiable internally before publication, should have blocked going live.",
+    "lecons_avec_recul": "Inferred: content generation at scale is not the problem, deception about the author is. A media outlet can use AI to produce or assist content provided it discloses it and keeps real bylines and a chain of editorial responsibility. Outsourcing production without controlling the origin of the bylines transfers brand risk without transferring accountability.",
+    "le_pattern_reste_il_valide": "Inferred: the pattern of AI-assisted content production remains valid and is spreading in publishing. What is condemned here is the hidden use and the fake authors, not the tool. The red line is transparency: disclosed AI content and a responsible human byline on one side, editorial fraud on the other."
+  },
+  "replication": {
+    "prerequis_data": [
+      "product catalog",
+      "editorial and AI-disclosure guidelines"
+    ],
+    "prerequis_orga": [
+      "a named editorial lead",
+      "an author verification process",
+      "a contractual clause banning fake authors"
+    ],
+    "stack_possible": [
+      "LLM with human review",
+      "a real author byline and verifiable biography",
+      "a mention of AI-assisted content"
+    ],
+    "premiere_etape": "Set a non-negotiable rule: every article has a real, accountable human author, and any use of AI is disclosed to the reader; write it into the vendor contract."
+  },
+  "statut_vivant": {
+    "note": "Removal confirmed: content deleted and the AdVon partnership severed in November 2023. Arena's CEO, Ross Levinsohn, was fired in December 2023; Arena lost the Sports Illustrated license in 2024 (legal trigger: a missed payment, in a context of reputational crisis)."
+  },
+  "transposable_ue": {
+    "note": "The editorial and brand risk is identical in Europe. The AI Act requires transparency about generated content, and the ethics rules of the European press forbid fictitious authors. An EU publisher that outsources affiliate product content to a vendor exposes itself to the same backlash if it does not control the origin of the bylines."
+  }
+}

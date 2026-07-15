@@ -1,0 +1,131 @@
+{
+  "seo": {
+    "title": "Pfizer: genAI marketing-content platform (Charlie) - 600 beta users at launch (2024)",
+    "meta_description": "Charlie, Pfizer's generative AI platform built with Publicis on Marcel, generates emails, media, and presentations under regulatory control. 600 beta users, extension to thousands.",
+    "resume_citable": "In February 2024, Pfizer launched Charlie, a generative AI platform built with Publicis on the Marcel base, which generates emails, digital media, and sales presentations under a red/yellow/green review system, deployed from 600 beta users to thousands of people across its brands.",
+    "faq": [
+      {
+        "q": "Who built Charlie?",
+        "a": "Publicis Groupe built it for Pfizer on the base of its Marcel platform, with a customized GPT-type generation model trained on Pfizer's already-approved content."
+      },
+      {
+        "q": "How does Charlie handle compliance?",
+        "a": "The answers are cross-checked against approved content to limit hallucinations, and a red/yellow/green risk system pre-sorts the assets based on the attention that medical and regulatory review must give them."
+      }
+    ]
+  },
+  "pattern": "genAI marketing-content production platform under regulatory control",
+  "etape_parcours": "consideration",
+  "objectif_business": "Speed up the production and review of Pfizer's marketing content (emails, media, sales presentations) by giving brand teams and agencies a single tool that generates, fact-checks, and pre-sorts what medical review needs to examine closely.",
+  "description": "Charlie, named after co-founder Charles Pfizer, is a generative AI platform launched in February 2024 for the marketing-content production chain. Built by Publicis Groupe on the base of its Marcel platform, it generates digital media, emails, and presentations that sales teams use with physicians, as well as drafts of medical articles. The content is generated via a customized version of GPT trained on already-approved content classified by therapeutic area and by product, and the answers are cross-checked against those sources to limit hallucinations. A red/yellow/green risk system pre-sorts the assets based on the attention that medical review must give them. At launch, about 600 beta users from the central marketing team were using it, with an extension to thousands of people across the brands and to the Publicis and IPG partner agencies.",
+  "resultats": [
+    {
+      "metrique": "Beta users in the central marketing team (launch)"
+    },
+    {
+      "metrique": "Extension to thousands of people across the brands and the Publicis and IPG agencies"
+    },
+    {
+      "metrique": "Digital media, emails, sales presentations, drafts of medical articles"
+    },
+    {
+      "metrique": "Risk pre-sorting that prioritizes medical review"
+    }
+  ],
+  "niveau_preuve": {
+    "justification": "The deployment is documented by the press (Digiday) and by a second consistent publication, with a quantified adoption scale (600 beta users, thousands across the brands). No financial result or independent study on the impact, hence C rather than A or B."
+  },
+  "stack_technique": [
+    {
+      "detail": "Customized version of GPT trained on Pfizer's already-approved content, classified by therapeutic area and by product, with answers cross-checked against those sources."
+    },
+    {
+      "detail": "Publicis Groupe platform on the base of which Charlie was built."
+    },
+    {
+      "detail": "Builder of Charlie for Pfizer; the Publicis and IPG agencies also use the platform."
+    },
+    {
+      "detail": "Custom Charlie component that classifies each generated asset by the attention that medical and regulatory review should give it."
+    }
+  ],
+  "fonctionnement_operationnel": {
+    "cadence": "Continuously, by campaign and by asset, within the brand teams' production flow",
+    "opere_par": "Pfizer's brand marketing teams and partner agencies, with medical and regulatory review in the loop",
+    "signal_pilote": "The corpus of already-approved content, classified by therapeutic area and by product, on which the model relies. Without this up-to-date corpus and without human review, the risk of a non-compliant claim breaks the setup.",
+    "etapes": [
+      {
+        "etape": "Framing the content need",
+        "detail": "The brand team describes the asset to produce (email, media, presentation) for a given therapeutic area.",
+        "acteur": "marketing"
+      },
+      {
+        "etape": "Generation",
+        "detail": "Charlie generates the content from the approved corpus and cross-checks the claims against the sources.",
+        "acteur": "AI"
+      },
+      {
+        "etape": "Risk pre-sorting",
+        "detail": "The red/yellow/green system flags the assets that require the most attention in review.",
+        "acteur": "AI"
+      },
+      {
+        "etape": "Medical and regulatory review",
+        "detail": "Review examines the higher-risk assets first, before approval.",
+        "acteur": "medical and regulatory team"
+      },
+      {
+        "etape": "Distribution",
+        "detail": "The approved content is distributed through the marketing channels and by sales reps to physicians.",
+        "acteur": "marketing"
+      }
+    ]
+  },
+  "replication": {
+    "playbook": [
+      {
+        "action": "Build the corpus of already-approved content, clean and classified by therapeutic area and by product, with the promotional-review rules by market.",
+        "livrable": "RAG-usable corpus + rules reference"
+      },
+      {
+        "action": "Connect an LLM to the corpus with systematic cross-checking of claims against the approved sources, on a first asset type (email).",
+        "livrable": "Generator in beta on one content format"
+      },
+      {
+        "action": "Build the risk pre-sorting (red/yellow/green) and the workflow that prioritizes medical and regulatory review.",
+        "livrable": "Tooled, operational review circuit"
+      },
+      {
+        "action": "Open a beta to a core of marketing users and measure production speed, correction rate in review, and adoption.",
+        "livrable": "Quantified pilot assessment"
+      },
+      {
+        "action": "Extend to the other brands and the partner agencies, with training and content governance.",
+        "livrable": "Platform generalized across the marketing organization"
+      }
+    ],
+    "equipe": "1 PM + 2-4 developers/ML (in-house or agency) + medical and regulatory review integrated into the workflow from the start",
+    "prerequis_data": [
+      "corpus of already-approved, classified content",
+      "product and therapeutic-area reference",
+      "promotional-review rules"
+    ],
+    "prerequis_orga": [
+      "medical and regulatory review team",
+      "marketing-content governance",
+      "AI integration partner"
+    ],
+    "stack_possible": [
+      "LLM (GPT or equivalent) with RAG on the approved corpus",
+      "content orchestration platform",
+      "review workflow"
+    ],
+    "premiere_etape": "Build a corpus of approved content, clean and classified, usable in RAG by an LLM under human review."
+  },
+  "statut_vivant": {
+    "note": "The launch and adoption are documented in early 2024, with an intent to generalize. No recent quantified communication confirming the current scope; the pattern (genAI for the marketing-content chain) remains active at Pfizer and in pharma, but the exact scale of Charlie today is not re-sourced."
+  },
+  "transposable_ue": {
+    "note": "Pharmaceutical promotion is regulated differently in the EU: no consumer advertising for prescription drugs, mandatory medical and regulatory review, pharmacovigilance. A marketing-content generation tool must build in these promotional-review rules by market. The training data (approved content) stays internal, which limits GDPR exposure, but human validation before distribution remains indispensable."
+  }
+}

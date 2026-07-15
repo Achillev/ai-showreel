@@ -1,0 +1,113 @@
+{
+  "seo": {
+    "title": "Stitch Fix: algorithmic styling plus stylist - more than $2B in revenue (FY2021)",
+    "meta_description": "Stitch Fix selects each customer's clothing by combining recommendation models and human stylists. Fiscal 2021 topped 2 billion dollars in revenue for 4.17 million active customers.",
+    "resume_citable": "Stitch Fix combines recommendation algorithms and human stylists to assemble a box of clothing per customer; fiscal 2021 crossed 2.1 billion dollars in revenue (+22.8%) with 4.17 million active customers.",
+    "faq": [
+      {
+        "q": "What is automated at Stitch Fix?",
+        "a": "The presorting of stock per customer through recommendation models. The final choice of the five items is still made by a human stylist."
+      },
+      {
+        "q": "Where does the model's data come from?",
+        "a": "Largely from data declared by the customer (questionnaire, Style Shuffle ratings) and from keep/return feedback on each box, not from scraped data."
+      }
+    ]
+  },
+  "pattern": "One-to-one product curation at scale, recommendation algorithm coupled with a human stylist",
+  "etape_parcours": "consideration -> purchase -> loyalty",
+  "objectif_business": "Sell clothing without the customer browsing a catalog: the algorithm presorts the items most likely to please, a stylist decides, and the box arrives at the customer's door.",
+  "description": "Stitch Fix sells fashion by subscription to a selection. The customer fills out a detailed questionnaire (sizes, budget, styles, what they want to cover or highlight) and receives a Fix, a box of five items chosen for them. They keep what they want and return the rest. Behind this simple gesture, the company combines recommendation algorithms and the judgment of a human stylist. The models predict, for each customer, which items in the stock are most likely to be kept, drawing on data explicitly declared by the customer rather than guessed. The stylist sees a presorted list and makes the final choice, adding a personal note. The Style Shuffle component has customers rate outfits in a Tinder-like way, which further feeds the model with taste signals. In fiscal 2021, Stitch Fix crossed the 2 billion dollar revenue mark for the first time, with 4.17 million active customers.",
+  "points_cles": [
+    "One-to-one fashion curation: algorithmic presorting of stock then a stylist's final choice.",
+    "In-house recommendation models on declared data and Style Shuffle ratings.",
+    "FY2021 revenue of 2.1 billion USD (+22.8%), 4.17 million active customers, 505 USD per customer.",
+    "Evidence A, confirmed status, figures from FY2021 financial results."
+  ],
+  "resultats": [
+    { "metrique": "FY2021 revenue, +22.8% year over year" },
+    { "metrique": "Active customers at the end of FY2021, +18% year over year" },
+    { "metrique": "Net revenue per active customer, +4% year over year" }
+  ],
+  "niveau_preuve": {
+    "justification": "Published financial results figures (FY2021 earnings release, SEC/official Stitch Fix source). The role of the recommendation model coupled with stylists is described in the company's official documents and corroborated by the business press."
+  },
+  "stack_technique": [
+    { "detail": "prediction, for each customer, of the stock items most likely to be kept, on declared rather than guessed data" },
+    { "detail": "outfit rating in the app that feeds the model with additional taste signals" },
+    { "detail": "algorithmically presorted list from which the human stylist picks the five items and adds a personal note" }
+  ],
+  "fonctionnement_operationnel": {
+    "cadence": "Per order (each Fix triggers a cycle) and per stock replenishment. The models are retrained on the continuous flow of purchase and return feedback.",
+    "opere_par": "Data science team for the models, network of stylists for the final call, merchandising team for the stock.",
+    "signal_pilote": "What the customer keeps or returns, and why. Without this structured feedback on each box, the model has no ground truth and the relevance of the selections degrades.",
+    "etapes": [
+      {
+        "etape": "Collect the profile",
+        "detail": "Style questionnaire at sign-up, completed by Style Shuffle ratings. The data is declared by the customer, not scraped.",
+        "acteur": "Customer"
+      },
+      {
+        "etape": "Presort the stock",
+        "detail": "The algorithms rank the available items by probability of being kept for this specific customer.",
+        "acteur": "AI / data team"
+      },
+      {
+        "etape": "Decide the box",
+        "detail": "The stylist picks five items from the presorted list and adds a message. The human gesture corrects what the model does not capture.",
+        "acteur": "Stylist"
+      },
+      {
+        "etape": "Learn from the return",
+        "detail": "What is kept, returned, and the reason for the return feed back into the models and refine the next selection.",
+        "acteur": "AI / data team"
+      }
+    ]
+  },
+  "replication": {
+    "prerequis_data": [
+      "Preference data declared by the customer (sizes, styles, budget)",
+      "Structured purchase and return feedback on each cycle",
+      "Catalog with rich product attributes"
+    ],
+    "prerequis_orga": [
+      "Logistical capacity for shipping and returns (physical or digital curation)",
+      "A human curation team if the stylist loop is kept",
+      "Data science team for the matching models"
+    ],
+    "stack_possible": [
+      "Managed recommendation engine plus business rules for a digital box (personalized edit)",
+      "Preference form plus product scoring for a first version without heavy logistics"
+    ],
+    "equipe": "1-2 data scientists + 1 dev + a human curation team (stylists) sized to volume + merchandising for the stock",
+    "playbook": [
+      {
+        "action": "Frame the declarative data: preference questionnaire (sizes, budget, styles) and the keep/return feedback schema",
+        "livrable": "Questionnaire in production and feedback data model"
+      },
+      {
+        "action": "Enrich the catalog with the product attributes (cut, fabric, style) needed for matching",
+        "livrable": "Attributed catalog usable by the model"
+      },
+      {
+        "action": "Build the presort: customer-product matching model trained on the first data",
+        "livrable": "Per-customer stock scoring, evaluated offline"
+      },
+      {
+        "action": "Add the human loop: presorted list and a final-choice tool with a personal message for the curators",
+        "livrable": "First digital personalized edit in test"
+      },
+      {
+        "action": "Compare the purchase rate on a personalized selection against a generic page and re-inject the feedback from each cycle",
+        "livrable": "Quantified reading and a model retrained on the keep/return flow"
+      }
+    ],
+    "premiere_etape": "Test a digital personalized edit: style questionnaire, algorithmic presorting of the catalog, human validation, and measure the purchase rate on the selection against a generic page."
+  },
+  "statut_vivant": {
+    "note": "Stitch Fix is a public company whose model rests entirely on algorithmic selection plus stylists. Strong growth through 2021, then contraction and withdrawal from the United Kingdom in 2022; the personalization pattern remains at the core of the business."
+  },
+  "transposable_ue": {
+    "note": "The model rests on massive declared data supplied by the customer (measurements, preferences, feedback). In the EU, a clear legal basis is needed for this profiling and GDPR-compliant storage. Stitch Fix had opened in the United Kingdom then withdrew from that market in 2022."
+  }
+}

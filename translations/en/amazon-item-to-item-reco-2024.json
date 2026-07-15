@@ -1,0 +1,111 @@
+{
+  "seo": {
+    "title": "Amazon: item-to-item recommendation engine - up to 35% of purchases driven by recommendations (McKinsey)",
+    "meta_description": "Amazon's item-to-item collaborative filtering, in production since the late 1990s, serves recommendations across every surface of the site. McKinsey estimated that 35% of purchases came from recommendations.",
+    "resume_citable": "Amazon's item-to-item recommendation engine, designed around 1997 and recognized by IEEE in 2017, powers the homepage, product page, cart, and email; McKinsey estimated in 2013 that 35% of purchases on Amazon came from recommendations.",
+    "faq": [
+      {
+        "q": "How does Amazon's recommendation work?",
+        "a": "Through item-to-item collaborative filtering: the algorithm starts from each product and precomputes the items often bought or viewed together, then surfaces them in real time based on what the visitor is looking at."
+      },
+      {
+        "q": "Where does the 35% figure come from?",
+        "a": "From a McKinsey estimate published in 2013. It is not a figure disclosed by Amazon in its financial results."
+      }
+    ]
+  },
+  "pattern": "Item-to-item collaborative filtering product recommendation engine, served across every touchpoint",
+  "etape_parcours": "consideration -> purchase",
+  "objectif_business": "Surface the right product at the right moment for each visitor, on every surface of the site, with no manual merchandising work.",
+  "description": "Amazon developed a recommendation method known as item-to-item collaborative filtering. Rather than matching a customer with other similar customers, the algorithm starts from each item and precomputes the products that frequently appear together in purchase and browsing histories. When a visitor views or buys a product, the system surfaces in real time the items most associated with it, weighted by their proximity to what the person has already looked at. This engine feeds the homepage carousels, the \"Frequently bought together\" blocks on product pages, the cart recommendations, and the email campaigns. The method was designed around 1997 at Amazon by Greg Linden, Brent Smith, and Jeremy York, then described in a paper published in 2003. In 2017, the editorial board of IEEE Internet Computing named it the article in its history that had best withstood the test of time. The system remains the foundation of Amazon's recommendations, enriched since by more recent models.",
+  "resultats": [
+    {
+      "metrique": "Share of purchases attributed to recommendations (McKinsey estimate, 2013)"
+    },
+    {
+      "metrique": "Method in production, recognized by IEEE test of time in 2017"
+    }
+  ],
+  "niveau_preuve": {
+    "justification": "The mechanism and its scaling are documented by Amazon's official science blog and by an IEEE paper recognized in 2017, that is nearly three decades in production. The 35% figure is a 2013 McKinsey estimate, not a financial disclosure from Amazon, so it is not presented as a level A result."
+  },
+  "fonctionnement_operationnel": {
+    "cadence": "Real time at display, with a batch precompute of the item-to-item similarity tables refreshed regularly as new signals arrive.",
+    "opere_par": "Data science and recommendation engineering teams, working with the category retail teams.",
+    "signal_pilote": "Purchase and browsing co-occurrences per product. On a new catalog or a product with no history (cold start), the engine has nothing to associate and falls back on weaker backup heuristics.",
+    "etapes": [
+      {
+        "etape": "Collect the signals",
+        "detail": "Purchases, cart adds, views, and clicks stream in continuously and are attached to the relevant product.",
+        "acteur": "AI / platform"
+      },
+      {
+        "etape": "Precompute the similarities",
+        "detail": "For each item, the list of the most co-consumed products is built offline. This precompute is what makes it possible to handle the load at catalog scale.",
+        "acteur": "Data science team"
+      },
+      {
+        "etape": "Serve the recommendation",
+        "detail": "At display, the system cross-references the items viewed or bought by the person against these tables and ranks the candidates.",
+        "acteur": "AI / platform"
+      },
+      {
+        "etape": "Loop on behavior",
+        "detail": "The click or purchase that follows a recommendation becomes an input signal again. The system corrects itself without a merchandiser hand-picking the products.",
+        "acteur": "AI / platform"
+      }
+    ]
+  },
+  "replication": {
+    "prerequis_data": [
+      "Purchase and browsing history tied to the product and the customer",
+      "Catalog with stable product identifiers",
+      "Enough co-occurrence volume per item to yield good associations"
+    ],
+    "prerequis_orga": [
+      "A data team able to maintain a precompute pipeline and a real-time service",
+      "Display surfaces instrumented to measure clicks and post-recommendation purchases"
+    ],
+    "stack_possible": [
+      "A managed recommendation engine (AWS Personalize, Google Recommendations AI) for a first version without a heavy ML team",
+      "Open source collaborative filtering (implicit, LightFM) for a custom version"
+    ],
+    "equipe": "1 data scientist or ML engineer + 1 front-end developer for the recommendation placements",
+    "playbook": [
+      {
+        "action": "Consolidate the co-purchase and co-view history per product, with stable identifiers.",
+        "livrable": "Co-occurrence matrix over the catalog"
+      },
+      {
+        "action": "Compute the item-to-item similarity tables, in open source (implicit, LightFM) or via a managed engine.",
+        "livrable": "Similarity table evaluated offline"
+      },
+      {
+        "action": "Serve a frequently bought together block on the product pages of one catalog segment.",
+        "livrable": "Recommendation block in production on the pilot segment"
+      },
+      {
+        "action": "Run an A/B test against display without recommendations, measure CTR and assisted conversion, then extend to the cart and email.",
+        "livrable": "Test result and plan to extend to the other surfaces"
+      }
+    ],
+    "premiere_etape": "Wire a \"frequently bought together\" block onto product pages from co-purchases, and measure click rate and assisted conversion against display without recommendations."
+  },
+  "stack_technique": [
+    {
+      "detail": "Amazon's in-house algorithm designed around 1997 (Linden, Smith, York), published in 2003 and recognized by IEEE in 2017; still the foundation of the recommendations."
+    },
+    {
+      "detail": "Product-to-product tables built offline, the key to catalog-scale operation and real-time serving."
+    },
+    {
+      "detail": "Ranking of candidates at display, served on the homepage, product page, cart, and email."
+    }
+  ],
+  "statut_vivant": {
+    "note": "Product recommendation is a structural element of the Amazon experience (homepage, product page, cart, email). Item-to-item filtering remains the base, complemented by more recent models."
+  },
+  "transposable_ue": {
+    "note": "Already deployed in the EU via the local Amazon marketplaces. Product recommendation on first-party behavioral data qualifies as profiling under the GDPR (legal basis, notice, opt-out) but does not fall into the high-risk categories of the AI Act."
+  }
+}

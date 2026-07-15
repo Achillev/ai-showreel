@@ -1,0 +1,104 @@
+{
+  "seo": {
+    "title": "Tapestry (Coach): AI-generated e-commerce copy (Persado) - +3 to 5% online revenue (2023)",
+    "meta_description": "Tapestry, parent company of Coach, uses Persado to generate and optimize its e-commerce language, with +3 to 5% online revenue on personalized web content.",
+    "resume_citable": "Tapestry, parent company of Coach and Kate Spade, uses Persado to generate and optimize its e-commerce copy, with a 3 to 5% increase in online revenue on personalized web content.",
+    "faq": [
+      {
+        "q": "What gain does Tapestry report with Persado?",
+        "a": "A 3 to 5% increase in e-commerce revenue on personalized web content, plus an improvement in conversion and cart abandonment."
+      },
+      {
+        "q": "Where is the generated content used?",
+        "a": "On checkout and landing pages, site banners and buttons, emails, and post-purchase thank-you pages."
+      }
+    ]
+  },
+  "pattern": "generation and optimization of personalized marketing language",
+  "etape_parcours": "purchase",
+  "objectif_business": "Grow e-commerce revenue by replacing generic site copy with AI-generated and optimized language, emotional and conversational, close to what an in-store advisor would say.",
+  "description": "Tapestry, parent company of Coach and Kate Spade, uses Persado to generate and optimize the marketing language of its e-commerce. The platform draws on a dataset from transaction analytics and the interactions of 150 million American consumers to produce emotional and conversational copy. The generated content is deployed on checkout pages, landing pages, site banners and buttons, email campaigns, and post-purchase thank-you pages. Each variant is tested to keep the best-performing wording. Tapestry reports an increase in e-commerce revenue and a decrease in cart abandonment thanks to the personalized content.",
+  "points_cles": [],
+  "resultats": [
+    { "metrique": "Increase in e-commerce revenue (personalized web content)" },
+    { "metrique": "US consumers in the language training base" }
+  ],
+  "niveau_preuve": {
+    "justification": "Two trade press titles (Consumer Goods Technology, Chain Store Age) naming Tapestry and the 3 to 5% e-commerce revenue figure, with a named program manager. Conversion and abandonment figures reported qualitatively."
+  },
+  "stack_technique": [
+    { "detail": "genAI platform for generating and optimizing marketing language: emotional and conversational variants tested location by location." },
+    { "detail": "Proprietary model trained on transaction analytics and the interactions of 150 million US consumers." },
+    { "detail": "Connected locations: checkout, landing pages, banners and buttons, emails, post-purchase thank-you pages." }
+  ],
+  "fonctionnement_operationnel": {
+    "cadence": "Per campaign and per site location; continuous testing of language variants",
+    "opere_par": "Tapestry's content optimization and e-commerce team, on the Persado platform",
+    "signal_pilote": "The measured performance of each variant (click, conversion, revenue). Without enough traffic volume to decide the tests, the selection of the best wording loses its reliability.",
+    "etapes": [
+      {
+        "etape": "Choice of location",
+        "detail": "The team targets a high-stakes location (checkout, landing, banner, email).",
+        "acteur": "marketing / e-commerce"
+      },
+      {
+        "etape": "Variant generation",
+        "detail": "Persado generates several emotional and conversational wordings from its model.",
+        "acteur": "AI"
+      },
+      {
+        "etape": "Test and selection",
+        "detail": "The variants are tested; the best-performing wording is kept.",
+        "acteur": "AI / marketing"
+      },
+      {
+        "etape": "Deployment and measurement",
+        "detail": "The winning content goes live, revenue and abandonment impact is tracked.",
+        "acteur": "e-commerce"
+      }
+    ]
+  },
+  "replication": {
+    "prerequis_data": [
+      "enough e-commerce traffic to decide the tests",
+      "access to the copy locations of the site and emails",
+      "performance history per location"
+    ],
+    "prerequis_orga": [
+      "marketing/e-commerce team driving the tests",
+      "validation process for the generated content",
+      "integration of the platform with the CMS and the ESP"
+    ],
+    "stack_possible": [
+      "Persado or equivalent NLG platform",
+      "A/B testing tool",
+      "e-commerce CMS and ESP"
+    ],
+    "equipe": "1 content optimization lead + 1 CRM/e-commerce marketer + 1 dev contact for the CMS/ESP integration.",
+    "playbook": [
+      {
+        "action": "Choose one or two high-stakes, high-traffic locations (checkout, email) and confirm that the volume allows the tests to be decided.",
+        "livrable": "List of prioritized locations and test plan."
+      },
+      {
+        "action": "Connect the platform to the CMS and the ESP, frame the process for the brand to validate the tone.",
+        "livrable": "Working integration and validation guidelines for the generated content."
+      },
+      {
+        "action": "Generate the variants and test them against the existing copy, location by location.",
+        "livrable": "First tests concluded, winning wordings identified."
+      },
+      {
+        "action": "Deploy the winners, read the revenue and cart abandonment impact, decide on extension to other locations.",
+        "livrable": "Quantified review per location and extension roadmap."
+      }
+    ],
+    "premiere_etape": "Connect a language generator to a high-traffic location (checkout or email) and compare to the existing copy."
+  },
+  "statut_vivant": {
+    "note": "Content personalization program confirmed in 2023; Tapestry has also broadened its use of AI (internal tools Rexy, Mira system) over 2024-2026, a sign of a sustained AI trajectory."
+  },
+  "transposable_ue": {
+    "note": "Persado's language model is trained on US consumer interactions. For the EU, retrain on consented local data and adapt the language and tone per market; the generated content remains subject to marketing control."
+  }
+}

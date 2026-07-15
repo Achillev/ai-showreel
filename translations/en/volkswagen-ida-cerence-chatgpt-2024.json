@@ -1,0 +1,130 @@
+{
+  "seo": {
+    "title": "Volkswagen: ChatGPT in the IDA assistant via Cerence - 4 brands, 5 languages (2024)",
+    "meta_description": "Volkswagen integrated ChatGPT into its IDA voice assistant with Cerence Chat Pro, rolled out from June 2024 across VW, Cupra, Seat, and Skoda in five languages.",
+    "resume_citable": "Volkswagen integrated ChatGPT into its in-car IDA voice assistant via Cerence Chat Pro, rolled out by cloud update from June 2024 across the Volkswagen, Cupra, Seat, and Skoda brands, live in five languages.",
+    "faq": [
+      {
+        "q": "How does ChatGPT reach Volkswagen vehicles?",
+        "a": "Through Cerence Chat Pro, integrated in the background of the IDA voice assistant, activated by cloud update with no installation by the driver."
+      },
+      {
+        "q": "Which brands and languages are covered?",
+        "a": "The Volkswagen, Cupra, Seat, and Skoda brands using IDA, in five languages (US and UK English, German, Spanish, Czech)."
+      }
+    ]
+  },
+  "pattern": "in-car genAI voice assistant",
+  "etape_parcours": "post-purchase",
+  "objectif_business": "Add a natural-language conversation layer to the IDA voice assistant already present in the vehicles, to enrich the in-car experience without the driver having to install or configure anything.",
+  "description": "Cerence Chat Pro integrates ChatGPT into the background of Volkswagen's IDA voice assistant. The driver keeps the embedded vehicle control (climate, navigation, phone) and gains access to conversational answers and real-time web information through the same voice interface, thanks to Cerence's hybrid embedded-plus-cloud approach. Rolled out from June 24, 2024 by cloud update across the European range (ID., Golf, Tiguan, Passat, plus older models), then extended to the United States and other markets in late 2024 and early 2025. Available on Volkswagen, Cupra, Seat, and Skoda, in five languages.",
+  "points_cles": [
+    "Integration of ChatGPT into the embedded IDA voice assistant.",
+    "Cerence Chat Pro in a hybrid embedded/cloud approach, activated by cloud update.",
+    "Deployed on Volkswagen, Cupra, Seat, and Skoda, live in five languages.",
+    "Evidence level B, confirmed status, deployment in Europe then the United States."
+  ],
+  "resultats": [
+    {
+      "metrique": "Languages live on Cerence Chat Pro (EN-US, EN-UK, DE, ES, CS)"
+    },
+    {
+      "metrique": "Group brands covered (Volkswagen, Cupra, Seat, Skoda)"
+    },
+    {
+      "metrique": "Market positioning (group statement)"
+    },
+    {
+      "metrique": "Intended usage (VW statement)"
+    }
+  ],
+  "niveau_preuve": {
+    "justification": "Case study from the vendor Cerence (interested party) quantifying the deployment (five languages, four brands, full range), corroborated by the official Volkswagen Group blog; multi-market reach but no isolated financial usage metric."
+  },
+  "fonctionnement_operationnel": {
+    "cadence": "Real time during the drive; deployment by cloud update, with no action from the driver.",
+    "opere_par": "Volkswagen's product and voice teams with Cerence as integration partner.",
+    "signal_pilote": "The voice request and the distinction between vehicle command (handled onboard) and open question (routed to the cloud LLM). Without connectivity, the cloud conversational part is no longer available.",
+    "etapes": [
+      {
+        "etape": "Activation",
+        "detail": "The driver speaks to the IDA assistant already present in the vehicle.",
+        "acteur": "customer"
+      },
+      {
+        "etape": "Embedded/cloud arbitration",
+        "detail": "The Cerence hybrid approach handles vehicle commands locally and sends open questions to ChatGPT.",
+        "acteur": "AI"
+      },
+      {
+        "etape": "Conversational answer",
+        "detail": "Cerence Chat Pro has ChatGPT draft the answer and delivers it through IDA.",
+        "acteur": "AI"
+      },
+      {
+        "etape": "Distribution by update",
+        "detail": "The feature is activated across the fleet by cloud update, market by market and model by model.",
+        "acteur": "data team"
+      }
+    ]
+  },
+  "replication": {
+    "prerequis_data": [
+      "existing voice assistant to augment",
+      "vehicle and session context"
+    ],
+    "prerequis_orga": [
+      "partnership with an automotive voice vendor",
+      "legal framework on cloud transit"
+    ],
+    "stack_possible": [
+      "Cerence or equivalent automotive voice",
+      "cloud LLM such as ChatGPT",
+      "hybrid embedded/cloud NLU"
+    ],
+    "premiere_etape": "Connect the voice vendor's conversational layer to the already-deployed embedded assistant, then activate by cloud update.",
+    "playbook": [
+      {
+        "action": "Choose the automotive voice vendor and frame the legal side of routing requests to the cloud.",
+        "livrable": "Partner contract + GDPR framework on request data."
+      },
+      {
+        "action": "Integrate the conversational layer into the existing voice assistant, with embedded/cloud arbitration.",
+        "livrable": "Working prototype on bench and test vehicle."
+      },
+      {
+        "action": "Test the target languages and validate driver safety and non-distraction.",
+        "livrable": "Acceptance validated by market and by language."
+      },
+      {
+        "action": "Activate the feature on a pilot fleet by cloud update.",
+        "livrable": "Feature live on a pilot fleet with voice usage metrics."
+      },
+      {
+        "action": "Deploy market by market and model by model.",
+        "livrable": "OTA rollout tracked for usage and incidents."
+      }
+    ],
+    "equipe": "1 embedded product PM + internal voice/HMI team + automotive voice partner + data lawyer"
+  },
+  "statut_vivant": {
+    "note": "Active and expanding roll-out from the European market to the United States and to new 2025 models; initial announcement at CES 2024, first availability to drivers in June 2024."
+  },
+  "transposable_ue": {
+    "note": "First deployment in Europe (June 2024) on the Volkswagen, Cupra, Seat, and Skoda brands. Cerence Chat Pro is designed for automotive use; the GDPR point concerns the transit of requests to the cloud LLM layer."
+  },
+  "stack_technique": [
+    {
+      "detail": "GenAI layer designed for automotive, which integrates ChatGPT into the background of the IDA voice assistant."
+    },
+    {
+      "detail": "Model that drafts the answers to open questions routed to the cloud."
+    },
+    {
+      "detail": "Volkswagen's embedded assistant (vehicle command handled locally), single interface for the driver."
+    },
+    {
+      "detail": "Arbitration between vehicle commands handled onboard and open questions sent to the cloud LLM."
+    }
+  ]
+}

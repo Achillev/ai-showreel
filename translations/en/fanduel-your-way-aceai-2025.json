@@ -1,0 +1,129 @@
+{
+  "seo": {
+    "title": "FanDuel: personalized Your Way bets and AceAI genAI assistant - 1 in 20 customers at the Super Bowl (2025)",
+    "meta_description": "FanDuel personalizes its betting offer through Your Way (AI pricing) and the AceAI genAI assistant; at the 2025 Super Bowl, 1 in 20 customers used it, 90% placing bets they otherwise could not have made.",
+    "resume_citable": "FanDuel personalizes its betting offer with Your Way, a parlay builder priced by its AI pricing models, complemented by the AceAI genAI assistant: according to Flutter's Q4 2024 results, roughly 1 in 20 customers used Your Way at the 2025 Super Bowl and 90 percent of them placed bets impossible without this personalization, on a day of 3 million active customers and 470 million dollars wagered.",
+    "faq": [
+      {
+        "q": "How does FanDuel personalize its betting offer?",
+        "a": "Through Your Way, a customizable parlay builder priced in real time by the proprietary pricing and risk models, and through the AceAI genAI assistant that helps discover and assemble bets."
+      },
+      {
+        "q": "What quantified result is documented?",
+        "a": "According to Flutter's Q4 2024 results, roughly 1 in 20 customers used Your Way at the 2025 Super Bowl and 90 percent of them placed bets they could not have made without this personalization."
+      }
+    ]
+  },
+  "pattern": "personalization of the betting offer driven by AI pricing, with a genAI discovery assistant",
+  "etape_parcours": "purchase",
+  "objectif_business": "Broaden and personalize the betting offer to capture wagers impossible with a standard catalog, drawing on proprietary pricing models and an AI-assisted discovery layer.",
+  "description": "Your Way is FanDuel's customizable parlay product, rolled out in every state for the NFL over the quarter and put to the test at the 2025 Super Bowl. It gives the customer more room to build their parlays, drawing on Flutter's proprietary pricing and risk management capabilities to offer near-unlimited combinations while holding the margin. According to Flutter's Q4 2024 results, roughly 1 in 20 customers used Your Way during the Super Bowl, and 90 percent of them placed bets they could not have made without these personalization options. On Super Bowl day, FanDuel counted 3 million active customers, 17.7 million bets, and 470 million dollars wagered. In addition, FanDuel launched AceAI, a conversational assistant that combines several large language models with the sportsbook infrastructure and numberFire data: the customer can analyze player and team statistics, discover betting ideas, and build their parlays in a single conversation, with adding to the bet slip left to the customer.",
+  "points_cles": [
+    "Personalization of the betting offer through Your Way, with the AceAI genAI discovery assistant.",
+    "In-house Flutter pricing and risk, multi-LLM AceAI, numberFire statistics.",
+    "At the 2025 Super Bowl, 1 in 20 customers used Your Way, 90% placed otherwise impossible bets.",
+    "Evidence level A, confirmed active status."
+  ],
+  "resultats": [
+    {
+      "metrique": "Customers who used Your Way at the 2025 Super Bowl"
+    },
+    {
+      "metrique": "Your Way users placing otherwise impossible bets"
+    },
+    {
+      "metrique": "Amount wagered on Super Bowl day, across 3M customers and 17.7M bets"
+    }
+  ],
+  "niveau_preuve": {
+    "justification": "Figures from Flutter's Q4 2024 financial results (published March 4, 2025) and attributed to CEO Peter Jackson, hence level A. Trade press corroborates the adoption of Your Way at the Super Bowl and FanDuel's activity."
+  },
+  "stack_technique": [
+    {
+      "detail": "Conversational discovery assistant that combines several large language models with the sportsbook infrastructure; the exact models are not named publicly"
+    },
+    {
+      "detail": "Proprietary pricing and risk management models that price the Your Way parlays in real time and cap the exposure"
+    },
+    {
+      "detail": "FanDuel's sports analytics platform that feeds AceAI player and team statistics"
+    },
+    {
+      "detail": "Sportsbook application that exposes the Your Way parlay builder and the AceAI conversation"
+    }
+  ],
+  "fonctionnement_operationnel": {
+    "cadence": "Real time: Your Way parlays are priced on the fly by the pricing models; AceAI responds in conversation with memory of the exchanges.",
+    "opere_par": "FanDuel/Flutter trading, product, and data science teams; AceAI was built by a team of about 20 people (engineers, AI specialists, product, design, compliance).",
+    "signal_pilote": "The pricing and risk management on near-unlimited combinations. Without a solid risk model, an open parlay offer exposes the operator to negative-margin combinations.",
+    "etapes": [
+      {
+        "etape": "Building the parlay",
+        "detail": "The customer assembles a personalized parlay beyond the standard catalog, alone or through AceAI.",
+        "acteur": "customer"
+      },
+      {
+        "etape": "Pricing and risk control",
+        "detail": "The proprietary models price the parlay and cap the exposure while holding the margin.",
+        "acteur": "AI (pricing / risk)"
+      },
+      {
+        "etape": "Assisted discovery",
+        "detail": "AceAI analyzes statistics and trends through numberFire and offers betting ideas in the conversation.",
+        "acteur": "AI (LLM)"
+      },
+      {
+        "etape": "Adding to the bet slip",
+        "detail": "The customer confirms and adds the selection themselves; the AI never places the bet on their behalf.",
+        "acteur": "customer"
+      }
+    ]
+  },
+  "replication": {
+    "prerequis_data": [
+      "granular catalog of markets and props",
+      "parlay correlation and pricing model",
+      "sports statistics data for discovery"
+    ],
+    "prerequis_orga": [
+      "trading and data science team for risk pricing",
+      "responsible gambling compliance and local licensing",
+      "AI Act guardrails on the conversational assistant"
+    ],
+    "stack_possible": [
+      "parlay pricing engine",
+      "LLM assistant connected to the product data",
+      "app with a parlay builder"
+    ],
+    "premiere_etape": "Build a parlay pricing and correlation model, then expose a personalized builder on one sport before adding a conversational layer.",
+    "playbook": [
+      {
+        "action": "Frame the data: granular catalog of markets and props, history of odds and outcomes to model the correlations between selections.",
+        "livrable": "Market reference and usable correlation dataset"
+      },
+      {
+        "action": "Build and backtest the parlay pricing and risk model on one sport, with exposure limits per combination.",
+        "livrable": "Pricing engine validated in backtest, with risk-capping rules"
+      },
+      {
+        "action": "Expose a personalized parlay builder in the app on that sport, priced in real time by the engine.",
+        "livrable": "Builder in production on one sport, priced on the fly"
+      },
+      {
+        "action": "Test in real conditions on a high-traffic event and measure adoption, share of bets made possible, and margin holding.",
+        "livrable": "Quantified adoption / margin review on the test event"
+      },
+      {
+        "action": "Add the conversational discovery layer connected to the statistics, with adding to the bet slip left to the customer and responsible gambling guardrails.",
+        "livrable": "Discovery assistant in beta, compliant with local rules"
+      }
+    ],
+    "equipe": "2-3 pricing quants / data scientists + 1 PM + 2 app developers + 1 responsible gambling compliance profile"
+  },
+  "statut_vivant": {
+    "note": "Your Way has been in production since the 2024-2025 NFL season. AceAI, the genAI conversational layer, was opened more broadly in July 2026. FanDuel's AI personalization program is active and expanding."
+  },
+  "transposable_ue": {
+    "note": "Strong regulatory risk. FanDuel operates online sports betting in the United States under a state-by-state framework, with no direct EU equivalent where licensing is national (ANJ in France, among others). Bet personalization and the genAI discovery assistant fall under responsible gambling and gambling marketing rules, plus the AI Act for profiling and conversational assistants. Flutter also operates EU brands (Paddy Power, Sisal, tombola), so the pattern is portable to a licensed operator, with safeguards on inducement."
+  }
+}

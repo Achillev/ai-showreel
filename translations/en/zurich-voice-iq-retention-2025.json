@@ -1,0 +1,97 @@
+{
+  "seo": {
+    "title": "Zurich: Voice IQ, genAI guidance for retention calls - +20% retention at Sabadell Seguros (2025)",
+    "meta_description": "Voice IQ analyzes calls and guides Zurich agents in real time. At Sabadell Seguros, retention rose 20% (Qorus 2025 award).",
+    "resume_citable": "Voice IQ, Zurich's genAI solution, analyzes retention calls and guides agents in real time; deployed at Sabadell Seguros in Spain, it raised retention by 20% and received a Qorus Innovation in Insurance 2025 award.",
+    "faq": [
+      {
+        "q": "What does Voice IQ do at Zurich?",
+        "a": "Voice IQ analyzes thousands of client calls and gives agents real-time guidance with personalized recommendations, to reduce cancellations during retention conversations."
+      },
+      {
+        "q": "What result did Voice IQ produce?",
+        "a": "At Sabadell Seguros, Zurich's joint venture in Spain, retention rose by 20%, and the solution received a Qorus Innovation in Insurance 2025 award in the GenAI Innovation of the Year category."
+      }
+    ]
+  },
+  "pattern": "genAI call analysis and real-time agent guidance for retention",
+  "etape_parcours": "loyalty",
+  "objectif_business": "Reduce cancellations by equipping agents during the call: detect the reason, propose the right response, and personalize the retention offer at the right moment.",
+  "description": "Voice IQ analyzes thousands of client calls to give contact center teams real-time guidance and recommendations tailored to each conversation. In practice, the tool listens to retention exchanges, identifies what is at stake, and suggests the most relevant response and offer to the agent to prevent cancellation. Zurich first deployed the tool at Sabadell Seguros, its joint venture in Spain, where retention rose by 20%. The solution received a Qorus Innovation in Insurance 2025 award (GenAI Innovation of the Year category, bronze), described as a genAI platform that analyzes retention calls to strengthen the agent-client relationship, improve service practices, and reduce churn. Voice IQ is part of a wider portfolio of Zurich AI tools on the underwriting and service side, including Guideline IQ, an assistant for underwriters already in use across 29 entities.",
+  "resultats": [
+    { "metrique": "Rise in client retention at Sabadell Seguros (Zurich joint venture)" },
+    { "metrique": "Qorus Innovation in Insurance 2025, GenAI Innovation of the Year (bronze)" }
+  ],
+  "niveau_preuve": {
+    "justification": "The +20% retention result was published by Zurich on its official AI page (interested party), corroborated by a third party through the Qorus / NTT DATA 2025 award that documents the VoiceIQ solution by name at Sabadell Seguros. A self-reported figure from the brand, not an audited financial result."
+  },
+  "fonctionnement_operationnel": {
+    "cadence": "Real time during the call for guidance; continuous analysis of the call corpus to refine recommendations.",
+    "opere_par": "The local entity's contact center and data/AI team; the AI guides, the agent decides and speaks to the client.",
+    "signal_pilote": "The content of the retention conversations and the outcome (cancellation avoided or not). Without reliable transcription and feedback on the outcome, the recommendations stop improving.",
+    "etapes": [
+      {
+        "etape": "Call analysis",
+        "detail": "Voice IQ analyzes thousands of calls to spot cancellation reasons and best practices.",
+        "acteur": "AI"
+      },
+      {
+        "etape": "Real-time guidance",
+        "detail": "During the call, the tool suggests the fitting response and retention offer to the agent.",
+        "acteur": "AI"
+      },
+      {
+        "etape": "Agent action",
+        "detail": "The agent applies or adjusts the recommendation and leads the conversation with the client.",
+        "acteur": "agent"
+      }
+    ]
+  },
+  "replication": {
+    "prerequis_data": [
+      "Recordings and transcripts of retention calls",
+      "Labeling of outcomes (cancellation avoided or not)",
+      "Catalog of retention offers"
+    ],
+    "prerequis_orga": [
+      "Contact center with trained agents",
+      "Legal and social framework for call analysis",
+      "Quality loop to validate the recommendations"
+    ],
+    "stack_possible": [
+      "Custom genAI solution (the Voice IQ route)",
+      "Speech analytics platform plus a market real-time assistant",
+      "CCaaS with an agent-assist module"
+    ],
+    "premiere_etape": "Analyze a corpus of cancellation calls to identify recurring reasons before connecting real-time guidance.",
+    "playbook": [
+      {
+        "action": "Frame the legal side (informing clients and agents, works councils) and secure access to the recordings.",
+        "livrable": "Validated framework plus an accessible corpus of retention calls."
+      },
+      {
+        "action": "Analyze the cancellation corpus: recurring reasons and the practices of the best agents.",
+        "livrable": "Taxonomy of reasons plus a playbook of responses by reason."
+      },
+      {
+        "action": "Build the guidance (recommendations by reason, associated retention offers).",
+        "livrable": "Prototype tested on recorded calls, outside production."
+      },
+      {
+        "action": "Launch the real-time pilot on one team against a control team.",
+        "livrable": "Read on retention and call quality, pilot versus control."
+      },
+      {
+        "action": "Close the learning loop on call outcomes and plan the extension.",
+        "livrable": "Refined recommendations plus a rollout plan to the other teams."
+      }
+    ],
+    "equipe": "1 contact center PM + 1-2 data scientists or genAI engineers + 1 lawyer + floor supervisors"
+  },
+  "statut_vivant": {
+    "note": "Voice IQ is presented as an operational use case on Zurich's official AI page and was recognized in 2025; the group's AI tools are being extended to other entities."
+  },
+  "transposable_ue": {
+    "note": "The case originated in the EU (Spain, the Sabadell Seguros joint venture). AI analysis of recorded calls requires informing clients and agents, a legal basis for processing the conversations, and, in some cases, the works council's opinion on the agent-guidance tool. No automated decision with legal effect here: the AI assists the agent, it does not decide in their place."
+  }
+}

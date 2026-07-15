@@ -1,0 +1,114 @@
+{
+  "seo": {
+    "title": "Maersk: Captain Peter, predictive reefer monitoring - more than 80% of the fleet on hourly data (2023)",
+    "meta_description": "Captain Peter, the customer layer of Maersk's Remote Container Management, streams reefer IoT telemetry, alerts on preservation deviations and covers more than 80% of the fleet on hourly data.",
+    "resume_citable": "Maersk exposes Captain Peter to refrigerated freight customers, streaming container IoT telemetry and alerting on preservation deviations; more than 80% of the reefer fleet was transmitting hourly data in 2022.",
+    "faq": [
+      {
+        "q": "What is Maersk's Captain Peter?",
+        "a": "The customer layer of Remote Container Management, which delivers to refrigerated freight customers the status, alerts and history of temperature, humidity and position of their containers."
+      },
+      {
+        "q": "What share of the reefer fleet is covered?",
+        "a": "Maersk states that more than 80% of the reefer fleet was transmitting hourly data in 2022, with a target of 90% by the end of 2023."
+      }
+    ]
+  },
+  "pattern": "predictive monitoring of refrigerated cargo (customer visibility)",
+  "etape_parcours": "post-purchase",
+  "objectif_business": "Give refrigerated freight customers fine, continuous visibility into the state of their perishable cargo, to react before a temperature deviation turns into a loss, and reduce manual status requests.",
+  "description": "Captain Peter is the customer layer of Maersk's Remote Container Management (RCM) system for refrigerated containers. IoT sensors, GPS and transmitters equip the reefer fleet and stream temperature, humidity, atmosphere and position data. Captain Peter delivers status updates, alerts based on thresholds defined by cargo type, and access to history to the customer. The customer downloads the hourly data in Excel or PDF. The service, launched for customers in 2017 then strengthened by a move to hourly data, aims to automate recurring tracking requests and flag preservation anomalies early.",
+  "points_cles": [
+    "Predictive monitoring of refrigerated cargo delivering visibility to Maersk's freight customers.",
+    "Remote Container Management, IoT sensors, GPS and transmitters, threshold-based alerts by cargo type.",
+    "More than 80% of the reefer fleet on hourly data in 2022, target of 90% by the end of 2023.",
+    "Evidence C, confirmed status: Maersk official communications on the customer service and hourly-data ramp-up."
+  ],
+  "resultats": [
+    { "metrique": "Share of the reefer fleet moved to hourly data (2022)" },
+    { "metrique": "Reefer fleet coverage target on hourly datalog, end of 2023" }
+  ],
+  "niveau_preuve": {
+    "justification": "Official Maersk communications (the subject brand) on the customer launch of RCM and the ramp-up to hourly data, two concordant primary sources. The evidence covers coverage and deployment rather than a consolidated financial result, hence C. The AI here is limited to anomaly detection and alerts on telemetry, not generative."
+  },
+  "stack_technique": [
+    { "detail": "Maersk in-house system for collecting reefer telemetry and detecting deviations by thresholds according to cargo type" },
+    { "detail": "customer portal and app: status, alerts, history and export of the hourly datalog in Excel or PDF" },
+    { "detail": "hourly streaming of temperature, humidity, atmosphere and position on more than 80% of the reefer fleet, including at sea via satellite" },
+    { "detail": "integration of the data and the shareable datalog into the customer's systems" }
+  ],
+  "fonctionnement_operationnel": {
+    "cadence": "Continuous flow, with hourly data transmission for most of the reefer fleet, including at sea via satellite.",
+    "opere_par": "Maersk container and reefer management teams, with the customer as the recipient of the alerts.",
+    "signal_pilote": "The container telemetry (temperature, humidity, atmosphere, position) compared against thresholds by cargo. If a sensor or the transmission fails, the alert does not arrive and the loss can go unnoticed until arrival.",
+    "etapes": [
+      {
+        "etape": "Data capture",
+        "detail": "The container's IoT sensors stream temperature, humidity, atmosphere and position, at hourly frequency.",
+        "acteur": "AI"
+      },
+      {
+        "etape": "Comparison against thresholds",
+        "detail": "The system compares the values against thresholds defined by cargo type and detects deviations.",
+        "acteur": "AI"
+      },
+      {
+        "etape": "Alert to the customer",
+        "detail": "Captain Peter notifies the customer (status, alarm) so they can decide on an action for their cargo.",
+        "acteur": "AI"
+      },
+      {
+        "etape": "Decision and export",
+        "detail": "The customer reviews the history, downloads the hourly datalog and makes decisions on their cold chain.",
+        "acteur": "customer"
+      }
+    ]
+  },
+  "replication": {
+    "prerequis_data": [
+      "fleet of containers (or assets) equipped with IoT sensors",
+      "compliance thresholds by cargo type",
+      "connectivity for transmission, including at sea"
+    ],
+    "prerequis_orga": [
+      "operations team for the sensor fleet",
+      "alert and response process on the customer side",
+      "maintenance of the sensors and transmission"
+    ],
+    "stack_possible": [
+      "IoT telemetry platform",
+      "rules engine / anomaly detection",
+      "customer portal for status and export"
+    ],
+    "equipe": "1 IoT operations team (sensor installation and maintenance) + 2-3 platform and portal devs + 1 PM + customer support for handling alerts",
+    "playbook": [
+      {
+        "action": "Equip a subset of critical assets with sensors (temperature, position) and make the data feed reliable",
+        "livrable": "Instrumented pilot with a stable data feed"
+      },
+      {
+        "action": "Define the alert thresholds by cargo type with operations",
+        "livrable": "Validated threshold reference set"
+      },
+      {
+        "action": "Build the alert engine and the customer portal (status, history, export)",
+        "livrable": "Portal in beta with active alerts on the pilot"
+      },
+      {
+        "action": "Make the transmission reliable (network coverage, faulty sensors) and open the service to customers",
+        "livrable": "Service in production with measured coverage and availability rates"
+      },
+      {
+        "action": "Extend to the full fleet and increase the data transmission frequency",
+        "livrable": "Fleet coverage plan (target of about 80-90% on hourly data)"
+      }
+    ],
+    "premiere_etape": "Equip a subset of critical assets with sensors, define the thresholds by cargo, then expose status and alerts to the customer."
+  },
+  "statut_vivant": {
+    "note": "Captain Peter documented as an active service on the reefer fleet, with most containers streaming hourly data and a datalog export available to customers."
+  },
+  "transposable_ue": {
+    "note": "Service already global, EU included. The data processed is mostly technical (temperature, humidity, atmosphere, container position) and hardly personal, which limits GDPR exposure; the use of predictive models for alerts remains to be documented on the AI Act side depending on the criticality of the decisions."
+  }
+}

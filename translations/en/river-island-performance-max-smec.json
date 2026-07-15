@@ -1,0 +1,122 @@
+{
+  "seo": {
+    "title": "River Island: pulling new arrivals out of Performance Max's blind spot - +34% revenue (Kidswear)",
+    "meta_description": "River Island added predictive product scoring (smec) to Performance Max for new arrivals: +34% revenue, +19% ROAS on Kidswear.",
+    "resume_citable": "River Island raised revenue by 34% and ROAS by 19% on Kidswear by adding to Google Performance Max a predictive product scoring (smec SmartScoreAI) that assesses new arrivals by neighborhood effect rather than by their sales history alone.",
+    "faq": [
+      {
+        "q": "What Performance Max problem does this case solve?",
+        "a": "PMax favors products with a strong history and neglects new arrivals and the long tail. Neighborhood scoring assigns them an estimated potential to make them eligible for delivery."
+      },
+      {
+        "q": "Do you need to build the model yourself?",
+        "a": "Not in this case: the scoring comes from a third-party tool (smec) plugged in on top of Google Ads. On the brand side, the key is the richness of product attributes."
+      }
+    ]
+  },
+  "pattern": "Predictive product scoring on top of Performance Max: instead of static hero/zombie bucketing, a model assesses a product's potential by neighborhood effect (comparable attributes) to give visibility to new arrivals and long-tail items that the algorithm overlooks for lack of history",
+  "etape_parcours": "consideration -> purchase",
+  "objectif_business": "Surface the new arrivals and long-tail products that Performance Max ignores for lack of historical data, without sacrificing profitability.",
+  "points_cles": [
+    "Predictive product scoring added on top of Google Performance Max for new arrivals and the long tail.",
+    "smec Campaign Orchestrator stack (SmartScoreAI, Dynamic Segments) on a Merchant Center feed.",
+    "Revenue +34% and ROAS +19% on the Kidswear category.",
+    "Evidence level B, confirmed status, finalist at the European Search Awards 2026."
+  ],
+  "description": "River Island replaced its static product sorting (hero/zombie buckets) with a dynamic, AI-driven approach on top of Performance Max, through smec's Campaign Orchestrator. Three building blocks: SmartScoreAI assesses each product through a neighborhood effect, comparing it to similar items (type, brand, price, seasonality) rather than to its sales history alone; Dynamic Segments automatically groups products into strategic categories (high potential, safe bets, new arrivals, low priority) that shift with the signals; budget and tROAS orchestration steers investment at the account level and redirects spend toward the best-performing campaigns. On the Kidswear category, smec reports revenue up 34% and ROAS up 19%. The work earned smec a finalist spot at the European Search Awards 2026 in the Best Use of AI in PPC category, with River Island.",
+  "resultats": [
+    {
+      "metrique": "Revenue (Kidswear category)"
+    },
+    {
+      "metrique": "ROAS (Kidswear category)"
+    }
+  ],
+  "niveau_preuve": {
+    "justification": "Case study from a specialist partner (smec), quantified and named (River Island, Elvis Mugera) - an interested source. The project is corroborated by its selection as a finalist at the European Search Awards 2026, a third-party program, but the figures are not confirmed in financial results."
+  },
+  "stack_technique": [
+    {
+      "detail": "Orchestration layer on top of Performance Max: budget and tROAS steering at the account level."
+    },
+    {
+      "detail": "Predictive scoring of product potential by neighborhood effect (type, brand, price, seasonality), which rates new arrivals with no history."
+    },
+    {
+      "detail": "Dynamic product segmentation (high potential, safe bets, new arrivals, low priority) that evolves with the signals."
+    },
+    {
+      "detail": "Multi-channel bidding and delivery (Shopping, Search, YouTube, Display) driven by Google's ML."
+    },
+    {
+      "detail": "Product feed powering Performance Max; the richness of attributes conditions neighborhood scoring."
+    }
+  ],
+  "fonctionnement_operationnel": {
+    "cadence": "Continuous scoring and re-segmentation as product signals evolve; budget/tROAS steering at the account level.",
+    "opere_par": "The brand's paid media team, with the third-party orchestration tool that scores and groups the products.",
+    "signal_pilote": "Product attributes and signals (type, brand, price, seasonality, neighbors' performance). Without rich product attributes, the neighborhood effect does not work and new arrivals stay invisible.",
+    "etapes": [
+      {
+        "etape": "Structure product attributes",
+        "detail": "Provide type, brand, price, seasonality at the item level so neighborhood scoring has something to compare.",
+        "acteur": "Data / e-commerce team"
+      },
+      {
+        "etape": "Score by neighborhood effect",
+        "detail": "The model estimates a product's potential from its peers, which gives a score to new arrivals with no history.",
+        "acteur": "SmartScoreAI (tool)"
+      },
+      {
+        "etape": "Re-segment continuously",
+        "detail": "Products move between categories (high potential, safe bets, new arrivals, low priority) as the signals change.",
+        "acteur": "Dynamic Segments (tool)"
+      },
+      {
+        "etape": "Steer budget and tROAS at the account level",
+        "detail": "Spend is reallocated toward the campaigns that perform. The team sets the ROAS thresholds, the tool adjusts.",
+        "acteur": "Media team + tool"
+      }
+    ]
+  },
+  "replication": {
+    "prerequis_data": [
+      "Rich product attributes at the item level (type, brand, price, seasonality)",
+      "A clean Shopping feed",
+      "Consent Mode v2 in the EU"
+    ],
+    "prerequis_orga": [
+      "A catalog with many new arrivals and long-tail items",
+      "A third-party orchestration/scoring tool on top of PMax"
+    ],
+    "stack_possible": [
+      "Google Ads Performance Max + a product scoring and orchestration tool (smec or equivalent) + an enriched product feed"
+    ],
+    "premiere_etape": "Identify the new arrivals and long-tail products with no history, then test neighborhood scoring to give them visibility in PMax.",
+    "playbook": [
+      {
+        "action": "Enrich product attributes at the item level (type, brand, price, seasonality) and clean the Shopping feed.",
+        "livrable": "Enriched and validated Merchant Center feed."
+      },
+      {
+        "action": "Plug in the scoring and orchestration tool on top of Performance Max.",
+        "livrable": "Neighborhood scoring active across the whole catalog."
+      },
+      {
+        "action": "Set up dynamic segments and a campaign structure by strategic category, with tROAS per segment.",
+        "livrable": "Segmented PMax campaigns in delivery."
+      },
+      {
+        "action": "Let the orchestration reallocate budget and tROAS, then read revenue and ROAS on a test category against static bucketing.",
+        "livrable": "Revenue/ROAS comparison vs the static approach and a scaling decision."
+      }
+    ],
+    "equipe": "1 paid media lead + 1 data/e-commerce profile for product attributes + vendor support."
+  },
+  "statut_vivant": {
+    "note": "The case's selection as a finalist at the European Search Awards 2026 dates the work to late 2025-2026, a recent sign of activity. The exact measurement date of the +34%/+19% is not specified."
+  },
+  "transposable_ue": {
+    "note": "UK-based fashion retailer. Performance Max and third-party orchestration are available in the EU; plan for Consent Mode v2 and a clean product feed. No high-risk classification under the AI Act."
+  }
+}

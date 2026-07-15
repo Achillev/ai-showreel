@@ -1,0 +1,115 @@
+{
+  "seo": {
+    "title": "Perplexity Buy with Pro: in-chat checkout and merchant program (2024)",
+    "meta_description": "Since November 2024, Buy with Pro enables one-click purchase inside Perplexity; the platform reports a 5x increase in shopping-intent queries.",
+    "resume_citable": "In November 2024, Perplexity launched Buy with Pro, a one-click checkout in the assistant backed by Shopify, with a free merchant program where brands keep 100 percent of the revenue; Perplexity reports a 5x increase in shopping-intent queries since launch.",
+    "faq": [
+      {
+        "q": "How does a brand appear in Perplexity Shopping?",
+        "a": "Through the free merchant program: the brand shares its product specifications via a single API and becomes eligible for recommendations and Buy with Pro checkout, keeping 100 percent of the revenue."
+      },
+      {
+        "q": "Is Buy with Pro available in Europe?",
+        "a": "The checkout first launched in the United States for Pro subscribers. Availability of the channel outside the US remains to be verified as of this record's date."
+      }
+    ]
+  },
+  "pattern": "agentic commerce (product recommendation and in-chat checkout)",
+  "etape_parcours": "consideration",
+  "objectif_business": "Open a channel where the user moves from product search to purchase without leaving the assistant, and give brands a way to be recommended and sold directly in the answers.",
+  "description": "In November 2024, Perplexity launched Buy with Pro, a one-click checkout reserved at first for its Pro subscribers in the United States. The user receives product recommendations in the answers and can order without going to the merchant's site: address and card stored in Perplexity, tax calculation, free shipping on Buy with Pro orders. The discovery experience relies on a Shopify integration to access the products of merchants that sell and ship to the United States. In parallel, Perplexity opened a free merchant program: brands share their product specifications via a single API, keep 100 percent of the sales revenue, and gain visibility in the recommendations. Perplexity reported a 5x increase in shopping-intent queries since launch.",
+  "resultats": [
+    {
+      "metrique": "Shopping-intent queries since the launch of Buy with Pro"
+    },
+    {
+      "metrique": "Revenue kept by the merchant (free program)"
+    },
+    {
+      "metrique": "Shopping experience, free shipping"
+    }
+  ],
+  "niveau_preuve": {
+    "justification": "Launch covered by name by the established press (TechCrunch), cross-checked by Perplexity's official blog and the e-commerce trade press. The 5x figure is a platform statement, hence a C level rather than B."
+  },
+  "stack_technique": [
+    {
+      "detail": "LLM answer engine that indexes products and recommends them in answers with purchase intent, with the in-app Buy with Pro checkout. Underlying models not detailed for shopping."
+    },
+    {
+      "detail": "Free program: the brand shares its product specifications via a single API, keeps 100 percent of the revenue, and gains visibility in the recommendations."
+    },
+    {
+      "detail": "Integration used for the discovery of products from Shopify merchants that sell and ship to the United States."
+    }
+  ],
+  "fonctionnement_operationnel": {
+    "cadence": "Real time on the user side; on the brand side, the product feed is synchronized continuously via the merchant API.",
+    "opere_par": "On the brand side: the e-commerce / product-feed team that feeds and maintains the specifications. On the channel side: Perplexity operates the engine and the checkout.",
+    "signal_pilote": "The quality and freshness of the product feed (specifications, price, availability). If the feed is poor or stale, the brand is recommended less often and the checkout fails.",
+    "etapes": [
+      {
+        "etape": "Enrollment in the merchant program",
+        "detail": "The brand shares its product specifications via Perplexity's single API, for free.",
+        "acteur": "marketing"
+      },
+      {
+        "etape": "Indexing and recommendation",
+        "detail": "Perplexity indexes the products and offers them in answers with purchase intent.",
+        "acteur": "AI"
+      },
+      {
+        "etape": "In-app checkout",
+        "detail": "The user orders in one click inside Perplexity; the order is passed to the merchant, who keeps 100 percent of the revenue.",
+        "acteur": "customer"
+      },
+      {
+        "etape": "Fulfillment and shipping",
+        "detail": "The brand handles the order and ships it through its existing logistics operation.",
+        "acteur": "e-commerce team"
+      }
+    ]
+  },
+  "replication": {
+    "playbook": [
+      {
+        "action": "Check eligibility (selling and shipping to the United States) and audit the quality of the product feed: specifications, price, availability.",
+        "livrable": "Valid, complete product feed"
+      },
+      {
+        "action": "Enroll in the free merchant program and connect the catalog via Perplexity's product API.",
+        "livrable": "Catalog exposed in the shopping index"
+      },
+      {
+        "action": "Test targeted purchase queries on the category and note the presence of the products in the recommendations.",
+        "livrable": "Visibility record in the shopping answers"
+      },
+      {
+        "action": "Connect measurement of orders coming from the channel and decide on the level of investment (feed enrichment, catalog coverage).",
+        "livrable": "Orders and average-basket read by channel"
+      }
+    ],
+    "equipe": "1 e-commerce/feed lead; existing logistics handles the passed orders",
+    "prerequis_data": [
+      "clean product feed (specs, price, stock)",
+      "US shipping capability",
+      "connectable order system"
+    ],
+    "prerequis_orga": [
+      "e-commerce/feed team that maintains the catalog",
+      "decision on the margin shared via this channel"
+    ],
+    "stack_possible": [
+      "Perplexity merchant program",
+      "Shopify",
+      "feed manager (Productsup, Feedonomics)"
+    ],
+    "premiere_etape": "Check eligibility (US shipping) and the quality of the product feed, then enroll in the free merchant program to test visibility."
+  },
+  "statut_vivant": {
+    "note": "The program expanded in 2025 (PayPal payment partnership to open the checkout beyond Pro subscribers, growth in the number of merchants). A young and moving channel, but active and expanding."
+  },
+  "transposable_ue": {
+    "note": "Buy with Pro launched in the United States. For an EU deployment, the question is not GDPR on the brand side but channel availability: Perplexity's in-chat checkout and merchant program are not open everywhere. An EU brand can already optimize its product presence to be recommended, but in-app payment remains US as of the verification date."
+  }
+}

@@ -1,0 +1,128 @@
+{
+  "seo": {
+    "title": "E.ON: 30+ AI conversational agents - 70% automation across 2 million conversations",
+    "meta_description": "E.ON automates 70% of more than 2 million customer conversations per year with over 30 Cognigy.AI agents across voice and chat, in Germany and the Netherlands.",
+    "resume_citable": "E.ON runs more than 30 Cognigy.AI conversational agents that automate 70% of over two million customer conversations per year, across phone and chat, in Germany and the Netherlands.",
+    "faq": [
+      {
+        "q": "Which tasks do E.ON's AI agents handle?",
+        "a": "Meter readings, self-service billing, end-to-end contract changes, and payment detail updates, with a handoff to an advisor for complex cases."
+      },
+      {
+        "q": "Which channels do they run on?",
+        "a": "Over phone and chat, around the clock, with more than 30 agents in production, including the Robin agent from the Essent subsidiary in the Netherlands."
+      }
+    ]
+  },
+  "pattern": "multichannel conversational agents (voice + chat)",
+  "etape_parcours": "post-purchase",
+  "objectif_business": "Automate repetitive requests across every channel to reduce contact center load and cost, while keeping advisors available for high-value cases.",
+  "description": "E.ON runs a portfolio of more than 30 conversational agents built on Cognigy.AI, active over phone and chat around the clock. They handle routine tasks: meter readings, self-service billing, end-to-end contract changes, and payment detail updates. When a request falls outside their scope, a handoff to an advisor is in place. The Dutch subsidiary Essent built an award-winning agent, Robin, on the same foundation, also operating over phone and chat. Together they handle more than two million conversations per year, with a 70% automation rate across customers and staff.",
+  "points_cles": [
+    "Multichannel voice and chat conversational agents for routine customer service tasks.",
+    "Cognigy.AI platform, more than 30 agents in production, including Robin at Essent.",
+    "70% automation across more than 2 million conversations per year.",
+    "Evidence level B, confirmed active status."
+  ],
+  "resultats": [
+    {
+      "metrique": "Conversation automation rate"
+    },
+    {
+      "metrique": "Conversations handled by the AI agents, more than 200,000 per month"
+    },
+    {
+      "metrique": "Conversational agents in production (chat and voice)"
+    }
+  ],
+  "niveau_preuve": {
+    "justification": "Quantified platform case study (Cognigy) with annual volumes and automation rate, echoed on the vendor's customer page. Sources agree but both come from the vendor, hence a level B rather than higher."
+  },
+  "stack_technique": [
+    {
+      "detail": "Conversational AI platform that runs more than 30 voice and chat agents; 70% automation across more than 2 million conversations per year."
+    },
+    {
+      "detail": "Access to account, billing, and contract systems to run meter readings, contract changes, and payment details end to end."
+    },
+    {
+      "detail": "Award-winning voice and chat agent from the Dutch subsidiary, built on the same Cognigy.AI foundation."
+    },
+    {
+      "detail": "Around-the-clock coverage on both channels, with a conditional handoff to an advisor."
+    }
+  ],
+  "fonctionnement_operationnel": {
+    "cadence": "Real time, around the clock, across the voice and chat channels.",
+    "opere_par": "E.ON's business units, which design their own flows on Cognigy.AI, with vendor support.",
+    "signal_pilote": "The intent detected in the conversation and the resolution rate without a human. If intent is misclassified, handoffs to advisors rise and the automation rate drops.",
+    "etapes": [
+      {
+        "etape": "Multichannel intake",
+        "detail": "The customer arrives by phone or chat; the agent identifies the intent and the account context.",
+        "acteur": "AI"
+      },
+      {
+        "etape": "Task execution",
+        "detail": "The agent completes the routine operation (meter reading, billing, contract change, payment details) end to end.",
+        "acteur": "AI"
+      },
+      {
+        "etape": "Conditional handoff",
+        "detail": "Out of scope or complex cases, the agent hands off to an advisor with the context.",
+        "acteur": "AI"
+      },
+      {
+        "etape": "Continuous improvement",
+        "detail": "Teams analyze aggregated conversations to adjust the flows and the service portfolio.",
+        "acteur": "data team"
+      }
+    ]
+  },
+  "replication": {
+    "prerequis_data": [
+      "catalog of intents and self-service tasks",
+      "API access to billing and contract systems",
+      "conversation history for training"
+    ],
+    "prerequis_orga": [
+      "business teams able to design and maintain the flows",
+      "governance for handoffs to advisors"
+    ],
+    "stack_possible": [
+      "conversational AI platform (Cognigy, Kore.ai, or equivalent)",
+      "CRM and billing connectors",
+      "voice + chat engine"
+    ],
+    "premiere_etape": "Pick two or three high-volume, low-complexity tasks (meter reading, invoice date) and automate them on chat before adding voice.",
+    "playbook": [
+      {
+        "action": "Pick two or three high-volume, low-complexity tasks: meter reading, invoice date.",
+        "livrable": "Prioritized self-service scope with volumes"
+      },
+      {
+        "action": "Build the flows on the platform and the API connectors to billing and contract.",
+        "livrable": "End-to-end flows in a test environment"
+      },
+      {
+        "action": "Launch on chat and measure the automation rate.",
+        "livrable": "First agent in production with a dashboard"
+      },
+      {
+        "action": "Add the voice channel on the same tasks.",
+        "livrable": "Voice agent in production"
+      },
+      {
+        "action": "Expand the task portfolio and set the governance for handoffs to advisors.",
+        "livrable": "Agent portfolio and documented handoff rules"
+      }
+    ],
+    "equipe": "1-2 flow designers on the business side + 1 API developer + 1 contact center lead for handoff governance."
+  },
+  "statut_vivant": {
+    "note": "More than 30 agents in production according to the vendor. Worth rechecking after NiCE's acquisition of Cognigy, which may change the contractual framework."
+  },
+  "transposable_ue": {
+    "note": "Already a European deployment (E.ON and its subsidiary Essent in the Netherlands). Multichannel orchestration collects large volumes of conversations, which requires GDPR scoping on the retention and use of transcripts, but the pattern is natively compatible with the EU market."
+  }
+}

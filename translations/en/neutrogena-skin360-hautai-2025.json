@@ -1,0 +1,104 @@
+{
+  "seo": {
+    "title": "Neutrogena: AI skin diagnosis Skin360 rebuilt with Haut.AI - 8 indicators (2025)",
+    "meta_description": "Kenvue rebuilds Neutrogena Skin360 with Haut.AI: analysis of a selfie on 8 indicators, score 1 to 10, LIQA image quality control, deployed in the US and Canada.",
+    "resume_citable": "Kenvue rebuilt the Neutrogena Skin360 skin diagnosis in 2025 with Haut.AI: analysis of a selfie on eight skin indicators, an overall score from 1 to 10, LIQA image quality control, and product recommendations, deployed in the United States and Canada.",
+    "faq": [
+      {
+        "q": "Who rebuilt Neutrogena Skin360 in 2025?",
+        "a": "Kenvue, Neutrogena's parent company, with the AI skin analysis company Haut.AI, which provides the analysis engine and the LIQA image quality system."
+      },
+      {
+        "q": "What does Neutrogena Skin360 measure?",
+        "a": "Eight skin indicators (hydration, smoothness, evenness, radiance, firmness, spots, wrinkles, clarity) summarized in a Skin360 score from 1 to 10, from a selfie."
+      }
+    ]
+  },
+  "pattern": "AI skin diagnosis from a selfie leading to a product recommendation",
+  "etape_parcours": "consideration",
+  "objectif_business": "Make the skin diagnosis the personalized entry point to the brand, with more accurate product recommendations to convert and retain across the Neutrogena channels.",
+  "description": "Neutrogena Skin360, launched in 2020, scans a selfie and scores skin health. In September 2025, Kenvue rebuilt the experience with Haut.AI. The new engine assesses eight skin indicators (hydration, smoothness, even skin tone, radiance, firmness, dark spots, wrinkles, clarity) and produces an overall Skin360 score rated from 1 to 10. The experience starts with Haut.AI's LIQA system, which guides the user to take a well-framed and well-lit selfie, a condition for a reliable analysis. The refresh brings an analysis engine with enhanced algorithmic accuracy, to identify individual concerns more finely and deliver more accurate product recommendations. The rebuilt experience is available in the United States and Canada via the Neutrogena brand sites and selected retail partners. Neutrogena notes that the tool does not replace a medical consultation.",
+  "resultats": [
+    { "metrique": "Skin indicators, overall score from 1 to 10" },
+    { "metrique": "Accuracy of the analysis engine" },
+    { "metrique": "Markets of the rebuilt deployment" }
+  ],
+  "niveau_preuve": {
+    "justification": "Refresh documented by a joint Haut.AI / Neutrogena press release naming the leads, and press coverage (Fortune, Drug Store News). Quantified product details (8 indicators, score 1 to 10) but no public business metrics, hence C."
+  },
+  "stack_technique": [
+    { "detail": "Computer-vision skin analysis engine: eight indicators (hydration, smoothness, evenness, radiance, firmness, spots, wrinkles, clarity) and an overall score from 1 to 10." },
+    { "detail": "Live Image Quality Assurance that guides selfie framing and lighting before analysis." },
+    { "detail": "Web experience hosting the scan, the score, and tracking over time, in the United States and Canada." },
+    { "detail": "Mapping of the detected indicators and concerns to the Neutrogena catalog." }
+  ],
+  "fonctionnement_operationnel": {
+    "cadence": "Real-time at each scan; tracking over time via the Skin360 score repeated by the user.",
+    "opere_par": "Kenvue/Neutrogena innovation and digital team for the integration, Haut.AI for the analysis engine and LIQA.",
+    "signal_pilote": "The quality of the captured image (framing, light) validated by LIQA. Without a usable image, the eight indicators are noisy and the recommendation loses its credibility.",
+    "etapes": [
+      {
+        "etape": "Guided selfie framing",
+        "detail": "LIQA checks image quality live before analysis.",
+        "acteur": "AI (Haut.AI LIQA)"
+      },
+      {
+        "etape": "Skin indicator analysis",
+        "detail": "The engine scores eight indicators and produces an overall score from 1 to 10.",
+        "acteur": "AI (Haut.AI)"
+      },
+      {
+        "etape": "Product recommendation",
+        "detail": "The score and detected concerns steer toward Neutrogena products.",
+        "acteur": "AI + e-commerce"
+      },
+      {
+        "etape": "Tracking over time",
+        "detail": "The user redoes the scan to track how their skin evolves.",
+        "acteur": "user"
+      }
+    ]
+  },
+  "replication": {
+    "playbook": [
+      {
+        "action": "Frame the legal side (biometric data, explicit consent, non-medical nature) and choose the skin analysis API.",
+        "livrable": "Validated compliance file and signed API contract."
+      },
+      {
+        "action": "Integrate the analysis API and the image quality control into the web or app journey.",
+        "livrable": "Working scan journey in pre-production."
+      },
+      {
+        "action": "Map the skin indicators to the product catalog with recommendation rules validated by the brand.",
+        "livrable": "Indicators-to-products matrix in place."
+      },
+      {
+        "action": "Launch on a page with high purchase hesitation and measure conversion and re-scan rate.",
+        "livrable": "Conversion / repeat-scan readout and expansion plan."
+      }
+    ],
+    "equipe": "1 e-commerce PM + 1-2 front/integration devs + legal support for the biometrics angle; the vendor provides the analysis engine.",
+    "prerequis_data": [
+      "biometric consent and compliant image processing",
+      "product catalog with skin attributes",
+      "possibly a scan history for tracking"
+    ],
+    "prerequis_orga": [
+      "integration into the e-commerce journey",
+      "legal framing on the non-medical nature"
+    ],
+    "stack_possible": [
+      "skin analysis API (Haut.AI, Perfect Corp, ModiFace)",
+      "product recommendation engine",
+      "brand CMS / e-commerce"
+    ],
+    "premiere_etape": "Plug a skin diagnosis API into a product page with high purchase hesitation and measure conversion and repeat scan."
+  },
+  "statut_vivant": {
+    "note": "Skin360 has existed since 2020 and was rebuilt with Haut.AI in September 2025, available in the US and Canada on brand sites and retail partners. A recent and strong sign of vitality."
+  },
+  "transposable_ue": {
+    "note": "Diagnosis based on a selfie, so biometric data under GDPR: explicit consent and minimization. The technical partner Haut.AI is European (Estonia), which eases data alignment; current deployment is US and Canada, and an EU extension would require bringing the image processing into compliance."
+  }
+}

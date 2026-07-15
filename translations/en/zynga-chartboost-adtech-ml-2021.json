@@ -1,0 +1,109 @@
+{
+  "seo": {
+    "title": "Zynga: ML-integrated adtech via Chartboost - $250M to acquire and monetize (2021)",
+    "meta_description": "Zynga bought Chartboost (about $250M) to internalize an ML-driven ad chain, on the acquisition and monetization sides, before selling it to LoopMe in 2024.",
+    "resume_citable": "Zynga bought the ad platform Chartboost in August 2021 for about $250 million ($234.6M in consideration in Take-Two's 8-K) to vertically integrate a DSP, SSP, and mediation chain driven by machine learning, serving acquisition and monetization, before selling it to LoopMe in December 2024.",
+    "faq": [
+      {
+        "q": "Why did Zynga buy Chartboost?",
+        "a": "To take control of its ad chain and optimize it with machine learning, on both the player acquisition and ad monetization sides, through vertical integration."
+      },
+      {
+        "q": "Is the setup still in place?",
+        "a": "The wholly owned platform is not: Zynga, under Take-Two, sold Chartboost to LoopMe in December 2024. ML-driven ad monetization nonetheless remains a central concern."
+      }
+    ]
+  },
+  "pattern": "vertically integrated adtech driven by ML (DSP, SSP, mediation)",
+  "etape_parcours": "discovery",
+  "objectif_business": "Internalize the ad chain, on both the acquisition and monetization sides, to capture the margin and optimize it with machine learning across the Zynga portfolio and the Chartboost partner network.",
+  "description": "In August 2021, Zynga bought Chartboost, a unified ad platform that combines a DSP, an SSP, and mediation through an SDK, and that relies on advanced machine learning and data science to optimize programmatic advertising and yields. The deal, closed on August 4, 2021, was presented at around $250 million in cash, with the exact consideration at $234.6 million in Take-Two's SEC filings. The goal was vertical integration: combining content, a direct relationship with players, massive reach, and a full ad stack, applicable to the Zynga games portfolio and to Chartboost partners alike, to better acquire and monetize players. Zynga, which came under Take-Two in 2022, later sold Chartboost to LoopMe in December 2024. The case illustrates a bet on ML-driven adtech put to work for the UA and ad monetization of a mobile publisher at scale, up to the resale of the platform.",
+  "points_cles": ["Internalization of the ad chain driven by ML (DSP, SSP, mediation).", "The Chartboost platform and its SDK, acquired in 2021.", "Acquired for about $250 million, sold to LoopMe in December 2024.", "Evidence level B, mixed-signals status."],
+  "resultats": [
+    { "metrique": "Chartboost acquisition, closed August 2021, $234.6M in the 8-K" },
+    { "metrique": "Optimizes programmatic advertising and yields" },
+    { "metrique": "Chartboost divestiture, December 2024" }
+  ],
+  "niveau_preuve": {
+    "justification": "The brand's official release and the parent company's SEC filings document the acquisition and the role of ML in the ad chain, with concordant established press. No isolated measure of the AI's performance, hence B."
+  },
+  "fonctionnement_operationnel": {
+    "cadence": "Real-time programmatic bidding, demand side and supply side, with continuous mediation on the games' inventory.",
+    "opere_par": "Zynga's ad tech team (formerly Chartboost), serving the portfolio's UA and monetization teams.",
+    "signal_pilote": "The attribution and user-value signal, which feeds the bid and the yield. If tracking consent degrades, bid optimization and CPM decline.",
+    "etapes": [
+      {
+        "etape": "Inventory sourcing",
+        "detail": "The SSP and the SDK collect ad inventory in Zynga games and across the network.",
+        "acteur": "platform (Chartboost)"
+      },
+      {
+        "etape": "Programmatic bidding",
+        "detail": "The DSP bids on this inventory for UA, arbitrated by ML on estimated value.",
+        "acteur": "AI (bidding ML)"
+      },
+      {
+        "etape": "Mediation and yield",
+        "detail": "Mediation arbitrates between demand sources to maximize CPM and fill rate.",
+        "acteur": "AI (yield ML)"
+      },
+      {
+        "etape": "UA and monetization loop",
+        "detail": "The same players are acquired on one side and monetized through ads on the other, in an integrated chain.",
+        "acteur": "marketing / monetization team"
+      }
+    ]
+  },
+  "replication": {
+    "prerequis_data": [
+      "proprietary ad inventory",
+      "attribution and user-value signals",
+      "enough volume to train the bidding models"
+    ],
+    "prerequis_orga": [
+      "ad tech team able to operate a DSP, SSP, and mediation",
+      "consent and compliance management",
+      "portfolio large enough for vertical integration"
+    ],
+    "stack_possible": [
+      "adtech platform (DSP, SSP, mediation)",
+      "inventory SDK",
+      "bidding and yield ML models"
+    ],
+    "premiere_etape": "Measure the cost and margin of the current ad chain, then test ML mediation on a share of the inventory before considering vertical integration.",
+    "playbook": [
+      {
+        "action": "Measure the cost and margin of the current ad chain, on both the UA and monetization sides.",
+        "livrable": "Baseline CPM, CPI, ROAS, and the share of margin captured by each intermediary."
+      },
+      {
+        "action": "Test ML-driven mediation on a share of the inventory.",
+        "livrable": "Read on yield and fill rate versus current mediation."
+      },
+      {
+        "action": "Progressively internalize the demand side (DSP) on UA campaigns.",
+        "livrable": "UA campaigns run in-house with ROAS compared to external."
+      },
+      {
+        "action": "Consolidate the attribution signals (consent, ATT/SKAN on iOS).",
+        "livrable": "More reliable measurement that feeds the bidding models."
+      },
+      {
+        "action": "Decide build versus buy on the full chain.",
+        "livrable": "Documented decision: third-party platform, build, or acquisition."
+      }
+    ],
+    "equipe": "1 adtech lead + 2-3 ad/ML engineers + the UA and monetization teams + 1 consent/tracking lawyer"
+  },
+  "statut_vivant": {
+    "note": "The chapter of the wholly owned platform closed in December 2024 with the sale of Chartboost to LoopMe. ML-driven ad monetization remains central for Zynga and Take-Two, but vertical integration via Chartboost is no longer the chosen form."
+  },
+  "stack_technique": [
+    { "detail": "Unified ad platform bought by Zynga in 2021: DSP, SSP, and mediation, optimized by machine learning and data science." },
+    { "detail": "Collects ad inventory in Zynga games and across the partner network." },
+    { "detail": "Proprietary models that arbitrate programmatic bidding on the demand side and yield on the supply side; their accuracy depends on the attribution signal and tracking consent." }
+  ],
+  "transposable_ue": {
+    "note": "A programmatic ad chain driven by ML relies on tracking and targeting. Under GDPR, ePrivacy, and ATT (iOS), the attribution signal and bidding accuracy depend on consent. The vertical integration pattern of UA plus ad monetization is transposable, with a consent framing and sufficient inventory."
+  }
+}

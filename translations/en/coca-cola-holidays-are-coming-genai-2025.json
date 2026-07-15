@@ -1,0 +1,109 @@
+{
+  "seo": {
+    "title": "Coca-Cola: Holidays Are Coming in genAI - 70,000 clips, two years, backlash included (2025)",
+    "meta_description": "Coca-Cola recreated its Christmas film in genAI two years running: more than 70,000 clips, global distribution, and a documented public backlash.",
+    "resume_citable": "Coca-Cola recreated its Christmas film Holidays Are Coming in genAI two consecutive years (2024 and 2025), assembling more than 70,000 generated clips with about a hundred people, despite a repeated public backlash over perceived quality.",
+    "faq": [
+      {
+        "q": "Was Coca-Cola's genAI Christmas film a one-off?",
+        "a": "No. It was renewed two years running, in 2024 and 2025, with multi-region distribution, which makes it a repeated production program."
+      },
+      {
+        "q": "What controversies accompanied this case?",
+        "a": "A broad public backlash in both years, over visuals judged uncanny and over the perceived replacement of creative talent."
+      }
+    ]
+  },
+  "pattern": "genAI video production of a global-scale brand campaign",
+  "etape_parcours": "discovery",
+  "objectif_business": "Recreate and adapt the classic Holidays Are Coming at lower cost and in less time, keeping an iconic brand asset alive every year.",
+  "description": "Coca-Cola recreated its Christmas film Holidays Are Coming with genAI two years in a row, making it a renewed production program rather than a one-off. The 2024 version, produced by the studios Secret Level, Silverside AI, and Wild Card with four generative models (Leonardo, Luma, Runway, Kling), triggered a broad backlash: visuals judged uncanny, distorted proportions, wheels that did not turn, inconsistent backgrounds. In 2025, the group ran the format again with two versions, one dedicated to the US market. The press reports a team of about a hundred people and work from more than 70,000 generated clips to assemble the film. Coca-Cola stands by the choice: its executives present AI as a lever for execution and production, while asserting that human creativity remains at the heart of the brand's advertising. The case is included here as a deployment at scale (global, renewed, integrated into the holiday campaign with OOH and merchandising), with its controversies documented honestly.",
+  "resultats": [
+    { "metrique": "AI clips generated for the 2025 film, team of about 100 people" },
+    { "metrique": "Renewed program (2024 and 2025), multi-region distribution" },
+    { "metrique": "Public reception" }
+  ],
+  "niveau_preuve": {
+    "justification": "Official brand press release plus consistent coverage from established press (Forbes, NBC) over two years; the production figures come from the press, not from a financial document, hence C."
+  },
+  "stack_technique": [
+    { "detail": "image generation, one of the four models used for the 2024 version" },
+    { "detail": "video generation (Luma AI), one of the four models in the production" },
+    { "detail": "video generation, one of the four models in the production" },
+    { "detail": "video generation (Kuaishou model), one of the four models in the production" },
+    { "detail": "genAI studio, production of the 2025 version; together with Secret Level (2024 and 2025) and Wild Card (2024), it manages generation, selection, and editing" }
+  ],
+  "fonctionnement_operationnel": {
+    "cadence": "One large annual production, timed to the holiday campaign, plus the OOH and in-store adaptations.",
+    "opere_par": "Coca-Cola generative AI and creative team, directing external genAI studios (Silverside AI, Secret Level).",
+    "signal_pilote": "Fidelity to the brand's iconic imagery (red trucks, atmosphere). When generation drifts on details (wheels, backgrounds), perceived quality drops and the backlash follows.",
+    "etapes": [
+      {
+        "etape": "Creative framing",
+        "detail": "Definition of the film and the shots from the classic Holidays Are Coming, with director-style annotations.",
+        "acteur": "Coca-Cola creative team"
+      },
+      {
+        "etape": "Mass generation",
+        "detail": "Production of tens of thousands of clips across several models, over about a month.",
+        "acteur": "external genAI studios / AI"
+      },
+      {
+        "etape": "Selection and editing",
+        "detail": "Sorting and assembling the best shots into a coherent film by a small team of specialists.",
+        "acteur": "genAI studios + Coca-Cola"
+      },
+      {
+        "etape": "Multi-channel distribution",
+        "detail": "Broadcast by region, plus OOH and in-store merchandising.",
+        "acteur": "Coca-Cola marketing"
+      }
+    ]
+  },
+  "replication": {
+    "prerequis_data": [
+      "brand assets and guidelines",
+      "reference to an iconic film or imagery to adapt"
+    ],
+    "prerequis_orga": [
+      "creative direction able to steer genAI studios",
+      "management of reputational risk and public reception",
+      "a transparency framework for synthetic content"
+    ],
+    "stack_possible": [
+      "video models (Runway, Kling, Luma or equivalents)",
+      "specialized genAI studios",
+      "human sorting and editing chain"
+    ],
+    "premiere_etape": "Choose a high-awareness brand asset and test a genAI adaptation in-house before any public use, with tight quality review.",
+    "playbook": [
+      {
+        "action": "Choose the iconic brand asset to adapt and write the shot-by-shot breakdown with director-style annotations.",
+        "livrable": "Validated creative brief and storyboard"
+      },
+      {
+        "action": "Select the genAI studio and the video models, and produce style tests on a few sensitive shots.",
+        "livrable": "Test shots validated in internal review"
+      },
+      {
+        "action": "Launch mass generation of clips with continuous sorting by the studio's specialists.",
+        "livrable": "Bank of usable shots, rejected shots regenerated"
+      },
+      {
+        "action": "Edit the film, correct the details that betray generation (hands, wheels, backgrounds), finalize sound and color grading.",
+        "livrable": "Finalized film ready to broadcast"
+      },
+      {
+        "action": "Pass the legal and transparency review (mention of generated content), and prepare distribution and reputation monitoring.",
+        "livrable": "Campaign broadcast with a backlash-monitoring setup"
+      }
+    ],
+    "equipe": "1 internal creative direction + external genAI studio (from a few specialists to about a hundred depending on scale) + legal and brand safety"
+  },
+  "statut_vivant": {
+    "note": "Program renewed a second year in 2025 despite the 2024 backlash, with an official press release and press coverage. A 2026 follow-up is not guaranteed."
+  },
+  "transposable_ue": {
+    "note": "Under the AI Act (art. 50), an obligation of transparency on the synthetic nature of advertising content. Above all, the case shows a real reputational risk: two years of public backlash over perceived quality and the replacement of talent. The transposition hinges on brand risk, not data."
+  }
+}

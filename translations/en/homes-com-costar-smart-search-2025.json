@@ -1,0 +1,103 @@
+{
+  "seo": {
+    "title": "Homes.com: Smart Search and Homes AI, natural-language home search (CoStar, 2025)",
+    "meta_description": "Homes.com (CoStar) launched Smart Search in 2025 then Homes AI in 2026. Users of the AI mode stay longer and submit more leads.",
+    "resume_citable": "Homes.com (CoStar Group) launched Smart Search in October 2025 then Homes AI in February 2026 for natural-language home search; the CEO says users of the AI mode spend more time on the site and submit more leads, on an audience of 108 million monthly unique visitors.",
+    "faq": [
+      {
+        "q": "What is Homes.com's Smart Search?",
+        "a": "A natural-language search launched in October 2025 that accepts conversational, multi-city, and point-of-interest queries, as well as voice input."
+      },
+      {
+        "q": "What effect does CoStar report on engagement?",
+        "a": "According to CEO Andy Florance, users who go through the AI mode stay significantly longer on the site and submit more leads."
+      }
+    ]
+  },
+  "pattern": "natural-language voice and text search, then conversational assistant",
+  "etape_parcours": "consideration",
+  "objectif_business": "Replace filters with plain-language search, including multi-city and point-of-interest queries, to keep the user longer on Homes.com and increase the leads sent to subscribing agents.",
+  "description": "Homes.com, CoStar Group's residential portal, launched Smart Search on October 14, 2025: a natural-language search that accepts conversational queries such as a single-story house with a pool in a given city, multi-city searches, point-of-interest queries, and voice input through speech recognition. In February 2026, CoStar rolled out Homes AI, a search interface driven by a language model that enables two-way conversation by voice or text to explore properties and neighborhoods, with data that stays within the Homes.com ecosystem. The CEO reports that users who go through the AI mode stay longer on the site and submit more leads. Homes.com claims 108 million average monthly unique visitors in 2025.",
+  "resultats": [
+    { "metrique": "Effect of the AI mode on engagement and leads" },
+    { "metrique": "Average monthly unique visitors (2025)" }
+  ],
+  "niveau_preuve": {
+    "justification": "Statements from CoStar's CEO reported by trade press (Real Estate News) and consistent official CoStar releases. Qualitative engagement metric and a claimed audience, without a precise figure for the AI effect, hence a level C."
+  },
+  "stack_technique": [
+    { "detail": "Cloud service that provides the conversational model behind the natural-language search and Homes AI; the exact model is not named publicly" },
+    { "detail": "Layer built by CoStar: translation of sentences into search criteria, multi-city and point-of-interest queries, voice input (speech-to-text), then two-way conversation by voice or text" },
+    { "detail": "CoStar Group's residential listings base and local data that feed the search; conversation data stays within the Homes.com ecosystem" }
+  ],
+  "fonctionnement_operationnel": {
+    "cadence": "Real time at each query; ongoing conversation in Homes AI mode.",
+    "opere_par": "CoStar / Homes.com product and AI team; subscribing agents receive the generated leads.",
+    "signal_pilote": "The listings catalog and the neighborhood data, plus the conversation data kept within the Homes.com ecosystem. Without them, the assistant can neither locate nor compare properties.",
+    "etapes": [
+      {
+        "etape": "Voice or text query",
+        "detail": "The user describes their need in plain language, including multi-city or by point of interest.",
+        "acteur": "customer"
+      },
+      {
+        "etape": "Interpretation and retrieval",
+        "detail": "Smart Search translates the sentence into criteria and surfaces the matching properties.",
+        "acteur": "AI"
+      },
+      {
+        "etape": "Two-way conversation",
+        "detail": "In Homes AI mode, the user refines by voice or text to explore properties and neighborhoods.",
+        "acteur": "AI"
+      },
+      {
+        "etape": "Lead generation",
+        "detail": "Strong intent turns into a lead sent to a subscribing agent.",
+        "acteur": "human"
+      }
+    ]
+  },
+  "replication": {
+    "prerequis_data": [
+      "structured listings catalog",
+      "neighborhood data and points of interest",
+      "controlled storage of conversation data"
+    ],
+    "prerequis_orga": [
+      "access to a conversational model (cloud or internal)",
+      "speech recognition",
+      "routing of leads to agents"
+    ],
+    "stack_possible": [
+      "conversational model such as Azure OpenAI",
+      "NL search engine",
+      "speech-to-text"
+    ],
+    "premiere_etape": "Deliver a reliable NL search before opening up two-way conversation.",
+    "playbook": [
+      {
+        "action": "Structure the listings catalog and the neighborhood and point-of-interest data; define where the conversation data lives.",
+        "livrable": "Catalog queryable by criteria and a conversation-retention framework"
+      },
+      {
+        "action": "Build the natural-language search: translation of the sentence into criteria via a conversational model, testing on real queries including multi-city.",
+        "livrable": "NL search in production alongside classic filters"
+      },
+      {
+        "action": "Add voice input (speech-to-text) and measure time spent and search engagement against the filter journey.",
+        "livrable": "Voice mode active and a first engagement review"
+      },
+      {
+        "action": "Open up two-way conversation (property and neighborhood exploration) and connect lead routing to agents.",
+        "livrable": "Conversational assistant in production with lead-volume tracking"
+      }
+    ],
+    "equipe": "2-3 search / ML devs + 1 PM + 1 data engineer for the catalog and points of interest"
+  },
+  "statut_vivant": {
+    "note": "Smart Search has been in production since October 2025 and evolved into Homes AI in February 2026. CoStar is publicly betting on this AI experience after a Q4 2025 judged strong."
+  },
+  "transposable_ue": {
+    "note": "Natural-language voice and text search is transposable to a European portal. The adaptation concerns language, local points of interest, and GDPR on conversation data, which CoStar says it keeps within the Homes.com ecosystem."
+  }
+}

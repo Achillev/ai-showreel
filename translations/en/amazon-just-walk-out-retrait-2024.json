@@ -1,0 +1,80 @@
+{
+  "seo": {
+    "title": "Amazon Just Walk Out: pulled from Amazon Fresh, replaced by Dash Carts (2024)",
+    "meta_description": "In 2024, Amazon pulled Just Walk Out from its US Fresh supermarkets in favor of Dash Carts, amid reports of hidden human supervision.",
+    "resume_citable": "In 2024, Amazon pulled its Just Walk Out cashierless checkout technology from its US Amazon Fresh supermarkets in favor of Dash Carts, after reports of reliance on human annotators; the technology remains in Amazon Go stores and with third parties.",
+    "faq": [
+      {
+        "q": "Did Just Walk Out rely on humans?",
+        "a": "The Information reported that a large share of transactions ran through annotators in India. Amazon disputes any dependence and says these teams mainly train the model and validate only a small minority of uncertain visits."
+      },
+      {
+        "q": "Has Amazon abandoned cashierless checkout?",
+        "a": "No, only on the supermarket format. Just Walk Out remains in Amazon Go stores, in smaller stores in the United Kingdom, and is licensed to third parties such as stadiums and airports."
+      }
+    ]
+  },
+  "pattern": "Cashierless checkout via computer vision",
+  "etape_parcours": "purchase",
+  "objectif_business": "Remove the checkout in-store: the customer takes their items and leaves, the system detects what they carry out and bills it automatically, to reduce friction and the cost of checkout.",
+  "description": "Just Walk Out equipped Amazon Fresh stores with ceiling cameras and sensors to automatically bill what the customer carries out, with no checkout. In 2024, Amazon pulls this technology from its US Amazon Fresh stores and replaces it with Dash Carts, carts that scan items. Reports, including from The Information, say that a large share of transactions in fact went through human annotators in India who validated the video. Amazon disputes the characterization of a dependence on human reviewers.",
+  "resultats": [
+    {
+      "metrique": "withdrawal"
+    },
+    {
+      "metrique": "human supervision"
+    }
+  ],
+  "niveau_preuve": {
+    "justification": "Withdrawal reported by established press (Retail Dive, based on The Information) naming Amazon and its official spokesperson response. No isolated financial disclosure and no court decision."
+  },
+  "post_mortem": {
+    "ce_qui_s_est_passe": "Amazon deploys Just Walk Out in its Amazon Fresh stores starting in 2020. In 2024, the company pulls this technology from its US Amazon Fresh stores and replaces it with Dash Carts, carts that scan items during the shopping trip. The Information reports that a large share of sales relied on annotators in India validating the video. Amazon responds that the technology does not depend on human reviewers, that these teams mainly train the model and validate only a small minority of visits. Just Walk Out remains in Amazon Go stores and with third-party customers.",
+    "raison_echec": "On the supermarket format, the economics did not hold up: an environment dense in items and customers required costly human supervision to reach billing reliability, without the expected economies of scale. The Dash Cart, which hands scanning back to the customer, offered a simpler cost/reliability trade-off for this format.",
+    "cout_estime": "Cost not publicly disclosed. Multi-year investment in cameras, sensors, and per-store infrastructure, plus the cost of human annotation, for a format where the technology was ultimately replaced. Reputational cost tied to the gap between the image of full automation and the reliance on annotators.",
+    "signaux_avant_coureurs": "Inferred: a high per-store cost (ceiling cameras and sensors), a persistent need for human annotation to reach reliability, and a supermarket format expansion slower than announced. The dependence on human supervision in complex scenes indicated that the automation was not yet autonomous at this level of density.",
+    "lecons_avec_recul": "Inferred: measure the full cost of an automation, human supervision included, and weigh it against the real format. A technology that works in a small convenience store (Amazon Go) does not transpose mechanically to a dense supermarket. And communicating an automation as total when it partly relies on humans creates a reputational risk when the gap becomes visible.",
+    "le_pattern_reste_il_valide": "Inferred: yes, the frictionless checkout pattern remains valid, but its economics depend heavily on the format. Amazon itself keeps it in smaller stores and licenses it to third parties. The failure is a targeted retreat on the supermarket, not a condemnation of computer vision checkout. The Dash Cart shows that a semi-automated compromise can fit a given format better."
+  },
+  "replication": {
+    "prerequis_data": [
+      "multi-camera video feed",
+      "weight/shelf sensors",
+      "catalog and planogram"
+    ],
+    "prerequis_orga": [
+      "an annotation and supervision team",
+      "an economic model validated per format"
+    ],
+    "stack_possible": [
+      "computer vision + sensor fusion",
+      "scanning cart (semi-automated compromise)",
+      "GDPR compliance on in-store capture"
+    ],
+    "premiere_etape": "Cost out the full cost per format, human supervision included, on a pilot store, before committing to instrumentation at scale."
+  },
+  "stack_technique": [
+    {
+      "detail": "In-house cashierless checkout technology, pulled from US Amazon Fresh stores in 2024 but kept in Amazon Go stores and licensed to third parties via AWS."
+    },
+    {
+      "detail": "In-house models that detect items picked off the shelf from the camera and sensor feeds; architecture not published."
+    },
+    {
+      "detail": "Physical instrumentation per store, the main cost driver of the supermarket format."
+    },
+    {
+      "detail": "Teams, notably in India, that train the model and validate low-confidence visits; Amazon disputes a structural dependence."
+    },
+    {
+      "detail": "Onboard scanning cart that replaced Just Walk Out in the US Amazon Fresh stores, a semi-automated compromise."
+    }
+  ],
+  "statut_vivant": {
+    "note": "Partial withdrawal: Just Walk Out is pulled from the US Amazon Fresh stores, but remains in Amazon Go stores, in smaller stores in the United Kingdom, and is licensed to third parties (stadiums, airports). This is a targeted retreat on the supermarket format, not the abandonment of the technology."
+  },
+  "transposable_ue": {
+    "note": "Computer vision checkout is deployable in Europe, but in-store video capture and human annotation of customer images fall under the GDPR (legal basis, notice, minimization) and, depending on the use, under rules on biometrics. The economic lesson (the hidden cost of human supervision behind an automation presented as total) transposes as is."
+  }
+}

@@ -1,0 +1,137 @@
+{
+  "seo": {
+    "title": "Ocado: OSP deep-learning forecasting - 0.49% waste and 98% auto-ordering (2025)",
+    "meta_description": "Ocado drives its replenishment with deep-learning models: up to 98% of stock ordered automatically, 0.49% waste, forecasts up to 40% more accurate.",
+    "resume_citable": "Ocado runs over 70 million supply chain calculations a day with deep-learning models, orders up to 98% of its stock automatically, has 94.5% of recommended purchase orders accepted without intervention, and keeps food waste at 0.49% of all stock handled.",
+    "faq": [
+      {
+        "q": "What AI does Ocado use for its replenishment?",
+        "a": "A deep-learning control center (encoder-decoder networks) trained on years of sales data, integrated into Ocado Smart Platform, which predicts demand product by product and day by day and issues automatic supplier orders."
+      },
+      {
+        "q": "What are the numbers?",
+        "a": "Up to 40% more accuracy than traditional systems, up to 98% of stock ordered automatically, over 94.5% of recommended purchase orders accepted, and food waste held to 0.49% of stock handled."
+      }
+    ]
+  },
+  "pattern": "deep-learning demand forecasting for availability and waste reduction",
+  "etape_parcours": "purchase",
+  "objectif_business": "Order the right quantity of each fresh product to keep availability high without overstock, driving replenishment by predicted demand rather than by fixed planner rules.",
+  "points_cles": [
+    "Deep-learning demand forecasting for replenishment and waste reduction.",
+    "In-house encoder-decoder networks on Ocado Smart Platform, more than 70 million calculations a day.",
+    "Up to 98% of stock ordered automatically, 0.49% waste, 94.5% of orders accepted.",
+    "Evidence B, confirmed status."
+  ],
+  "description": "Ocado sells groceries online in the UK through Ocado.com and licenses its technology (Ocado Smart Platform) to retailers worldwide. The forecasting engine trains deep-learning models on years of sales data to predict, product by product and day by day, what customers will buy. These forecasts trigger automatic supplier orders and set stock levels in the automated warehouses. For perishables like bananas, the system combines stock, remaining shelf life, and expected demand to avoid waste, and launches flash sales when a batch approaches its date. A planner can override a forecast, with visibility into its accuracy history.",
+  "resultats": [
+    {
+      "metrique": "Supply chain calculations run each day"
+    },
+    {
+      "metrique": "Model accuracy vs traditional systems"
+    },
+    {
+      "metrique": "Share of stock ordered automatically"
+    },
+    {
+      "metrique": "Recommended purchase orders (RPOs) accepted without intervention"
+    },
+    {
+      "metrique": "Food waste as a share of stock handled"
+    }
+  ],
+  "niveau_preuve": {
+    "justification": "Figures published by Ocado Group on its own product and editorial pages, consistent across several official pages. Since Ocado sells OSP to third parties, these results function as a quantified platform case study. No independent press reproducing these exact figures, hence B and not C."
+  },
+  "stack_technique": [
+    {
+      "detail": "The supply chain module of Ocado Group's commerce platform: forecasting, supplier order generation, stock and waste management. Sold to partner retailers."
+    },
+    {
+      "detail": "In-house probabilistic demand-forecasting models trained on years of sales data, product by product and day by day."
+    },
+    {
+      "detail": "Ocado's automated Customer Fulfilment Centres, whose stock levels are set by the engine's forecasts."
+    }
+  ],
+  "fonctionnement_operationnel": {
+    "cadence": "Large-scale daily batch: more than 70 million supply chain calculations a day, forecasts refreshed as real stock moves.",
+    "opere_par": "Ocado's data science and supply chain planning team (and, on the OSP client side, the partner retailer's planners).",
+    "signal_pilote": "Predicted demand per product, combined with the remaining shelf life of stock. If sales history or expiry data is missing, the forecast degrades and the system falls back to more conservative rules, at the cost of overstock or shortages.",
+    "etapes": [
+      {
+        "etape": "Data ingestion",
+        "detail": "Historical sales, past shortages, promotions, holidays, delivery slots, and product attributes feed the deep-learning control center.",
+        "acteur": "OSP platform / data team"
+      },
+      {
+        "etape": "Demand forecasting",
+        "detail": "The encoder-decoder networks predict demand per product and per day, with accuracy up to 40% higher than conventional systems.",
+        "acteur": "AI model"
+      },
+      {
+        "etape": "Order generation",
+        "detail": "The system calculates the optimal quantity to order and issues automatic supplier orders; up to 98% of stock is ordered without human input.",
+        "acteur": "AI model / OSP"
+      },
+      {
+        "etape": "Planner control",
+        "detail": "A planner can override a forecast, with visibility into historical accuracy; over 94.5% of recommendations go through as is.",
+        "acteur": "supply chain planner"
+      },
+      {
+        "etape": "Waste management",
+        "detail": "For perishables, the system detects purge risk and triggers flash sales to clear stock before expiry, keeping waste at 0.49%.",
+        "acteur": "OSP"
+      }
+    ]
+  },
+  "replication": {
+    "playbook": [
+      {
+        "action": "Consolidate clean sales history by SKU and by day, with past shortages, promotions, calendar, and expiry dates for fresh.",
+        "livrable": "Usable sales and product-attribute dataset"
+      },
+      {
+        "action": "Train or configure a forecasting model on a perishable category where waste is visible, and backtest it against the current method.",
+        "livrable": "Accuracy report compared vs existing rules"
+      },
+      {
+        "action": "Connect the forecasts to replenishment in recommendation mode: the planner validates each proposed order.",
+        "livrable": "Recommended orders in the planners' tool, acceptance rate tracked"
+      },
+      {
+        "action": "Automate orders above a confidence threshold, keeping the planner override with visibility into historical accuracy.",
+        "livrable": "Share of stock ordered automatically, measured by category"
+      },
+      {
+        "action": "Extend to all categories and add waste management (flash sales on batches near date).",
+        "livrable": "Availability and waste report vs pre-project baseline"
+      }
+    ],
+    "equipe": "2-4 data scientists + 1 data engineer + 1 supply chain PM, plus planners trained to control and override forecasts",
+    "prerequis_data": [
+      "granular sales history per product and per day",
+      "real-time stock data",
+      "product attributes and expiry dates for fresh",
+      "promotions and holidays calendar"
+    ],
+    "prerequis_orga": [
+      "in-house data science team or a forecasting platform",
+      "replenishment process able to accept automatic orders"
+    ],
+    "stack_possible": [
+      "Ocado Smart Platform (for a partner retailer)",
+      "in-house forecasting on cloud (SageMaker, Vertex AI)",
+      "demand planning platforms (Blue Yonder, RELEX, o9)"
+    ],
+    "premiere_etape": "Consolidate clean sales history by SKU and by store, then test a forecasting model on a perishable category where waste is visible."
+  },
+  "statut_vivant": {
+    "note": "OSP Supply Chain is an active commercial product of Ocado Group, described with these figures on the current site and in a story dated October 2025."
+  },
+  "transposable_ue": {
+    "note": "Ocado Group is British and already runs OSP for European retailers (Groupe Casino in France, Bon Preu in Spain). The forecasting works on stock and sales data, not sensitive personal data, so there is little GDPR friction."
+  }
+}

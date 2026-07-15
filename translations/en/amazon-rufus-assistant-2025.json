@@ -1,0 +1,131 @@
+{
+  "seo": {
+    "title": "Amazon Rufus: genAI shopping assistant - ~10B USD in incremental sales (2025)",
+    "meta_description": "Rufus, Amazon's conversational assistant, is reported to have generated a 10B USD run rate of incremental sales and makes shoppers 60% more likely to buy.",
+    "resume_citable": "In 2025, Amazon's genAI shopping assistant Rufus reached an annualized run rate of 10 billion USD in incremental sales and made its users 60% more likely to buy, according to the Q3 2025 earnings call.",
+    "faq": [
+      {
+        "q": "How much does Rufus bring in for Amazon?",
+        "a": "Andy Jassy announced in Q3 2025 an annualized run rate of 10 billion USD in incremental sales attributed to Rufus."
+      },
+      {
+        "q": "Does Rufus improve conversion?",
+        "a": "Amazon states that customers who use Rufus are 60% more likely to complete a purchase than non-users."
+      }
+    ]
+  },
+  "pattern": "genAI shopping assistant",
+  "etape_parcours": "consideration",
+  "objectif_business": "Turn product search into a dialogue to address purchase objections earlier in the journey and increase conversion across a catalog of hundreds of millions of items.",
+  "points_cles": [
+    "Conversational genAI shopping assistant on the Amazon app and site.",
+    "In-house LLM plus RAG over the catalog, product pages, and reviews, with agentic functions.",
+    "Run rate of about 10 billion USD in incremental sales, users 60% more likely to buy.",
+    "Level A evidence, living status confirmed."
+  ],
+  "description": "Rufus is a conversational assistant built into the Amazon app and site. The customer asks a question in natural language (compare two models, check compatibility, find a gift within a budget) and Rufus answers by drawing on the catalog, the product pages, and the reviews. It has evolved toward agentic functions: recommending a single product via Help Me Decide, buying on the customer's behalf via Buy for Me, and searching beyond the Amazon catalog. Launched in beta in February 2024 in the US, extended to seven other markets in 2025.",
+  "resultats": [
+    {
+      "metrique": "Incremental sales, annualized run rate (Q3 2025)"
+    },
+    {
+      "metrique": "Likelihood to purchase, users vs non-users"
+    },
+    {
+      "metrique": "Shoppers who used Rufus in 2025"
+    },
+    {
+      "metrique": "Interactions, year over year"
+    }
+  ],
+  "niveau_preuve": {
+    "justification": "Figures announced by CEO Andy Jassy on Amazon's Q3 2025 earnings call, reported by Fortune and the business press. Result tied to financial results, with the attribution method (seven-day rolling window) specified."
+  },
+  "fonctionnement_operationnel": {
+    "cadence": "Real time on each customer session, with attribution measured over a seven-day rolling window.",
+    "opere_par": "Amazon product and data science team (in-house), connected to the catalog and the review feed.",
+    "signal_pilote": "The quality and freshness of the product pages and reviews. If a product has few reviews or incomplete specs, Rufus answers poorly and the conversion effect fades on that item.",
+    "etapes": [
+      {
+        "etape": "Natural language question",
+        "detail": "The customer types or dictates a question in the search bar or on a product page.",
+        "acteur": "customer"
+      },
+      {
+        "etape": "Retrieval and generation",
+        "detail": "The model retrieves the relevant product pages, specs, and reviews, then generates a synthetic answer with suggested products.",
+        "acteur": "AI"
+      },
+      {
+        "etape": "Decision support",
+        "detail": "On a hesitant basket, Help Me Decide proposes a single product with a generated justification.",
+        "acteur": "AI"
+      },
+      {
+        "etape": "Measure the downstream impact",
+        "detail": "Purchases following an interaction are attributed via a seven-day window to steer optimization.",
+        "acteur": "data team"
+      }
+    ]
+  },
+  "replication": {
+    "prerequis_data": [
+      "a structured and up-to-date product catalog",
+      "usable customer reviews",
+      "first-party browsing history"
+    ],
+    "prerequis_orga": [
+      "a data science team or an internal LLM platform",
+      "guardrails against hallucinations on product specs"
+    ],
+    "stack_possible": [
+      "a foundation LLM (via API or self-hosted)",
+      "a RAG engine over the catalog",
+      "a conversion attribution layer"
+    ],
+    "premiere_etape": "Scope a set of high-traffic product questions and wire a RAG onto the existing product pages and reviews.",
+    "playbook": [
+      {
+        "action": "Scope the high-traffic product questions and structure access to the catalog, product pages, and reviews.",
+        "livrable": "v1 scope + RAG index over product pages and reviews"
+      },
+      {
+        "action": "Build the assistant (LLM + RAG) with guardrails against hallucinations on product specs.",
+        "livrable": "Prototype that answers within scope while citing its sources"
+      },
+      {
+        "action": "Integrate the assistant into the journey (search bar, product page) and set up purchase attribution on a rolling window.",
+        "livrable": "Assistant in beta on a share of traffic, measurement wired in"
+      },
+      {
+        "action": "Run the conversion A/B test users vs non-users and fix the categories where the assistant answers poorly.",
+        "livrable": "Conversion impact read and error rate per category"
+      },
+      {
+        "action": "Extend the scope and add decision-support functions.",
+        "livrable": "Assistant in production with an assisted-sales dashboard"
+      }
+    ],
+    "equipe": "1 PM + 2-3 ML/LLM engineers + 1 catalog data engineer + a continuous quality review of the answers"
+  },
+  "stack_technique": [
+    {
+      "detail": "Language model built in-house and specialized for shopping (catalog, reviews, web); Amazon does not publish the exact architecture."
+    },
+    {
+      "detail": "Retrieval of the relevant product pages, specs, and reviews before generating the answer, to keep claims traceable."
+    },
+    {
+      "detail": "Training and inference of the in-house foundation models on AWS infrastructure."
+    },
+    {
+      "detail": "Recommendation of a single product with a generated justification, and purchase on the customer's behalf."
+    }
+  ],
+  "statut_vivant": {
+    "note": "Assistant active in eight markets at the end of 2025, with continuous addition of functions (Help Me Decide in October 2025, Buy for Me). Figures confirmed on the earnings call."
+  },
+  "transposable_ue": {
+    "note": "Already in production in several EU markets (France, Germany, Italy, Spain). The assistant processes first-party browsing and purchase data; GDPR use is framed by Amazon's contractual basis. Generated answers must stay traceable to reviews and product pages to avoid unfounded claims."
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "seo": {
+    "title": "McDonald's: drive-thru voice AI switched off in 2024 after the viral videos",
+    "meta_description": "McDonald's pulled its AI voice ordering (IBM) from 100+ drive-thrus in 2024. Post-mortem: why 85% accuracy is not enough, and why the pattern remains valid.",
+    "resume_citable": "In June 2024, McDonald's ended its AI voice ordering test with IBM across more than 100 drive-thrus, with accuracy capping at about 85%; the chain nonetheless pursues the voice AI ambition via Google Cloud.",
+    "faq": [
+      {
+        "q": "Why is 85% accuracy a failure?",
+        "a": "At the drive-thru, the main channel, 15% friction on the most frequent action costs more in human recovery and reputation than it saves. The operational threshold is close to human level."
+      },
+      {
+        "q": "Is drive-thru voice AI dead?",
+        "a": "No. Wendy's (FreshAI) and Taco Bell extended it in 2024-2025, and McDonald's re-pivoted toward Google Cloud. The failure is that of a technology generation, not of the pattern."
+      }
+    ]
+  },
+  "pattern": "Transactional voice AI: speech recognition and understanding replacing the employee at drive-thru order taking, in an uncontrolled acoustic environment",
+  "etape_parcours": "order: voice order taking at the moment of purchase",
+  "objectif_business": "Reduce labor costs and wait times at the drive-thru (the majority channel for US sales), standardize order taking and free up the teams.",
+  "description": "McDonald's acquired the voice AI startup Apprente in 2019, tested automated voice order taking in Chicago drive-thrus, then sold its McD Tech Labs subsidiary to IBM in late 2021 while signing a partnership to industrialize the technology. The system was deployed in more than 100 US drive-thrus between 2021 and 2024. The customer spoke to an AI at the kiosk, with an employee stepping in only as backup. Reported accuracy capped at around 85%, with human intervention on about one order in five. In 2023-2024, viral TikTok videos documented absurd orders: nine sweet teas instead of one, hundreds of McNuggets added while customers shouted stop. On June 13, 2024, McDonald's told franchisees the IBM partnership would end and the system would be shut off no later than July 26, 2024 - while reaffirming that drive-thru voice AI would be part of the future of its restaurants.",
+  "resultats": [
+    { "metrique": "Scale of the withdrawal, pilot restaurants unplugged" },
+    { "metrique": "Shut-off date (at the latest)" },
+    { "metrique": "Reported accuracy, human intervention on about one order in five" },
+    { "metrique": "Post-withdrawal position, voice AI stays in the roadmap" }
+  ],
+  "niveau_preuve": {
+    "justification": "No published financial figures: the facts rest on an internal franchisee memo revealed and confirmed by major business press (CNBC, CBS News, Restaurant Business) and on McDonald's official statement - solid, convergent press sourcing, but without a public financial document."
+  },
+  "stack_technique": [
+    { "detail": "ASR/NLU startup acquired by McDonald's in 2019, becoming McD Tech Labs then sold to IBM in late 2021" },
+    { "detail": "voice order taking system industrialized by IBM and deployed in more than 100 US drive-thrus between 2021 and 2024" },
+    { "detail": "pre-LLM generation speech recognition and understanding; reported accuracy of about 85% at the drive-thru, human recovery on about one order in five" },
+    { "detail": "microphones and speakers in an uncontrolled acoustic environment (noise, accents, two lanes), the worst case for ASR" }
+  ],
+  "post_mortem": {
+    "ce_qui_s_est_passe": "2019: acquisition of Apprente, first tests in Chicago. Oct. 2021: sale of McD Tech Labs to IBM + AOT partnership. 2021-2024: test in 100+ drive-thrus. 2023-2024: viral TikTok videos of erroneous orders, picked up by national press. June 13, 2024: internal memo to franchisees announcing the end of the IBM test; shut-off no later than July 26, 2024. McDonald's then announces an expanded partnership with Google Cloud on generative AI.",
+    "raison_echec": "No official quantified admission, but a documented body of evidence: accuracy of about 85% with human intervention on roughly 1 order in 5, inability to handle accents, ambient noise and multiple voices, and the reputational damage of the viral videos. McDonald's statement: the test aimed to check whether automated voice could simplify operations for crew; the company ends the IBM partnership while wanting to explore voice ordering solutions more broadly - a disavowal of the execution, not of the ambition.",
+    "cout_estime": "Not published. Identifiable costs: acquisition of Apprente (estimated tens of millions of dollars), 3 years of piloting across 100+ sites, resale to IBM, and a real reputational cost (TikTok videos accumulating tens of millions of views, becoming the public symbol of failed voice AI). For IBM: loss of the most visible showcase of its AOT offering.",
+    "signaux_avant_coureurs": "An accuracy of about 85% at the drive-thru means 15% friction on the most frequent action of the main channel: the tolerance threshold (>95%) was known and not reached after 3 years. The drive-thru environment (noise, accents, two lanes) is the worst case for ASR - choosing the hardest terrain first was risky. The virality was predictable: every failure happens in front of a customer with a smartphone. And the sale to IBM as early as 2021 suggested that McDonald's no longer wanted to carry the development in-house.",
+    "lecons_avec_recul": "(1) For a transactional AI in a physical environment, the required accuracy rate is near human level from day 1: at 85%, automation costs more (recovery + reputation) than it brings in. (2) Testing a voice system in its most hostile environment, with high public visibility, maximizes reputational risk - start with channels where failure is private (app, phone). (3) Make human interventions per order an explicit stop criterion for the pilot. (4) McDonald's exit (end of the partnership, not of the technology) is a model of controlled backpedal that preserves the future option.",
+    "le_pattern_reste_il_valide": "Yes, clearly. McDonald's reaffirmed that a drive-thru voice solution will be part of its future and partnered with Google Cloud; Wendy's expanded FreshAI, Taco Bell/Yum! deployed voice AI across hundreds of drive-thrus in 2024-2025. The failure condemns an execution (pre-LLM 2019-2021 technology, hostile environment, insufficient accuracy), not the pattern - a case of too early with the wrong technology generation."
+  },
+  "statut_vivant": {
+    "note": "IBM system switched off mid-2024. McDonald's pursues the voice AI ambition via a new Google Cloud partnership - the pattern continues at other chains (Wendy's, Taco Bell)."
+  },
+  "transposable_ue": {
+    "note": "The lesson applies to any transactional AI in a noisy physical environment. No blocking GDPR/AI Act specificity - the challenge is operational (accuracy threshold), not regulatory."
+  }
+}

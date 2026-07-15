@@ -1,0 +1,108 @@
+{
+  "seo": {
+    "title": "DFS: personalized welcome series on Bloomreach - +4.2% conversion (2024)",
+    "meta_description": "DFS personalizes its welcome series on Bloomreach Engagement and Loomi from zero-party data: +4.2% conversion and +3.9% revenue versus control.",
+    "resume_citable": "DFS gained +4.2% conversion and +3.9% revenue on its welcome series by personalizing email content from zero-party data with Bloomreach Engagement and Loomi, a program run with the agency CACI.",
+    "faq": [
+      {
+        "q": "How does DFS personalize its welcome emails?",
+        "a": "By asking the new contact what they are looking for (zero-party data), then automatically routing the matching guide and Loomi product recommendations in Bloomreach Engagement."
+      },
+      {
+        "q": "What were the results?",
+        "a": "Against a control group with no personalization, +4.2% conversion rate and +3.9% revenue on the welcome series."
+      }
+    ]
+  },
+  "pattern": "Welcome series personalized on zero-party data with AI product recommendation",
+  "etape_parcours": "consideration",
+  "objectif_business": "Bridge the gap between rare, expensive furniture purchases by engaging new contacts early with content matched to what they are actually looking for.",
+  "description": "DFS, the UK's leading sofa retailer, engages its new contacts with an automated welcome series on Bloomreach Engagement. The brand first asks the customer what interests them (zero-party data via the what's your thing question), then the flow automatically sends the matching guide, for example a bedroom furniture buying guide if the customer is interested, and invites them into the showroom at the right point in the journey. Loomi provides the personalized product recommendation layer.",
+  "points_cles": ["Welcome series personalized on zero-party data with AI product recommendation.", "Bloomreach Engagement and Loomi, plus an ML algorithm from the agency CACI.", "+4.2% conversion and +3.9% revenue versus control, +866% revenue on the CACI campaign.", "Evidence B, confirmed status."],
+  "resultats": [
+    { "metrique": "Conversion rate of the welcome series (versus a control group with no personalization)" },
+    { "metrique": "Revenue of the welcome series (versus the control group)" },
+    { "metrique": "Revenue of an email campaign driven by CACI's ML algorithm (within 14 days)" }
+  ],
+  "niveau_preuve": {
+    "justification": "Quantified Bloomreach customer story (welcome series) and a quantified case study from the agency CACI (ML email campaign). Two interested but concordant sources on DFS's AI email program; no third-party press, hence B."
+  },
+  "stack_technique": [
+    { "detail": "CRM engagement platform that collects the zero-party data and orchestrates the branched flows of the welcome series" },
+    { "detail": "Bloomreach's AI layer that personalizes product recommendation in the emails" },
+    { "detail": "model built by the agency on transactional history, behind the +866% revenue email campaign" },
+    { "detail": "DFS's data activation and engagement strategy partner" }
+  ],
+  "fonctionnement_operationnel": {
+    "cadence": "Event-driven: the welcome series triggers on signup and branches according to the customer's answer.",
+    "opere_par": "DFS's CRM / data team, with the agency CACI on the engagement strategy.",
+    "signal_pilote": "The zero-party data (what the customer says they are looking for). Without this answer, the flow does not know which guide or category to push and falls back to a generic message.",
+    "etapes": [
+      {
+        "etape": "Collecting the preference",
+        "detail": "The customer answers the what's your thing question, which captures their furniture category of interest.",
+        "acteur": "Customer"
+      },
+      {
+        "etape": "Branching the flow",
+        "detail": "Bloomreach Engagement routes to the matching guide (for example bedroom) based on the answer.",
+        "acteur": "AI / Bloomreach platform"
+      },
+      {
+        "etape": "Product recommendation",
+        "detail": "Loomi personalizes the recommended products in the email.",
+        "acteur": "AI (Loomi)"
+      },
+      {
+        "etape": "Bridge to the showroom",
+        "detail": "The series invites the customer into the store at the right point in the journey for an in-person try.",
+        "acteur": "CRM team / platform"
+      }
+    ]
+  },
+  "replication": {
+    "prerequis_data": [
+      "a mechanism to collect zero-party data (preference questionnaire)",
+      "a catalog structured by category",
+      "opt-in email identifiers"
+    ],
+    "prerequis_orga": [
+      "a CRM team able to build branched flows",
+      "coordination between email and the physical network for considered purchases"
+    ],
+    "stack_possible": [
+      "Bloomreach Engagement + Loomi",
+      "any CRM platform with conditional flows and AI product recommendation"
+    ],
+    "premiere_etape": "Add a preference question at signup, then wire a welcome flow that routes content based on the answer.",
+    "playbook": [
+      {
+        "action": "Add the preference question at signup (which product category the contact is interested in).",
+        "livrable": "Zero-party data collection active on new signups"
+      },
+      {
+        "action": "Build the branched welcome flow that routes content (guides, categories) based on the answer.",
+        "livrable": "Conditional flow validated in test"
+      },
+      {
+        "action": "Wire the AI product recommendation into the series emails.",
+        "livrable": "Personalized emails in production"
+      },
+      {
+        "action": "Set a control group with no personalization to measure the real gap.",
+        "livrable": "Active A/B test with documented split"
+      },
+      {
+        "action": "Read conversion and revenue against the control, then generalize the series and add the showroom invitation at the right moment.",
+        "livrable": "Quantified readout and generalized welcome series"
+      }
+    ],
+    "equipe": "1 CRM manager + 1 email integrator / designer, with a data agency optional for the ML layer"
+  },
+  "statut_vivant": {
+    "note": "Bloomreach keeps the DFS case online with the mention of Loomi (a current AI product). CACI is an official Bloomreach partner."
+  },
+  "transposable_ue": {
+    "note": "Already deployed in the EU (Spain, Ireland). Collecting zero-party data through an explicit questionnaire is fairly GDPR-friendly (data provided and consented)."
+  }
+}

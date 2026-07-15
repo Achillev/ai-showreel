@@ -1,0 +1,114 @@
+{
+  "seo": {
+    "title": "Loro Piana: AI-automated e-commerce selling (Meta Advantage+) - 2x purchases, -52% cost per purchase (2024)",
+    "meta_description": "Loro Piana (LVMH) handed its Meta selling campaigns to Advantage+ AI in the UAE: twice as many purchases and a cost per purchase 52% lower than the manual structure.",
+    "resume_citable": "In 2024, Loro Piana (LVMH) doubled its online purchases and cut its cost per purchase by 52% in the UAE by handing its selling campaigns to Meta's AI (Advantage+ Sales Campaigns), against its manual catalog structure.",
+    "faq": [
+      {
+        "q": "Which tool did Loro Piana use?",
+        "a": "Meta Advantage+ Sales Campaigns, which manages audiences, bids, placements and creatives, and covers prospecting and remarketing in a single campaign."
+      },
+      {
+        "q": "What is the performance compared against?",
+        "a": "Against the brand's previous manual catalog campaigns, with targeting and segmentation done by hand."
+      }
+    ]
+  },
+  "pattern": "Selling campaign fully automated by AI (audiences, placements, bids, creative combinations), remarketing and prospecting in a single campaign",
+  "etape_parcours": "consideration -> purchase",
+  "objectif_business": "Sell more luxury products online in the UAE without multiplying manual campaigns: Meta's AI handles targeting and delivery, the team keeps control of the catalog and creatives.",
+  "description": "Loro Piana, the Italian fashion and cashmere house of the LVMH group, compared its former catalog campaign structure (manual targeting and segmentation) against Meta's Advantage+ Sales Campaigns mode. The principle: the advertiser provides the catalog and visuals (photo and catalog carousels, collection ads, photo ads), and the algorithm decides on its own the audiences, placements, bids and creative combinations, while covering remarketing and prospecting in a single campaign. The test targeted men and women aged 18 and over in the United Arab Emirates, with custom audiences of existing customers and site visitors. Over the period from March 7 to April 6, 2024, the Advantage+ campaign delivered twice as many purchases and a cost per purchase 52 percent lower than the manual structure, with a cost per add-to-cart down 13 percent.",
+  "points_cles": [
+    "E-commerce selling campaign fully automated by Meta's AI in the UAE.",
+    "Meta Advantage+ Sales Campaigns, Pixel and Conversions API, custom audiences.",
+    "Twice as many purchases, cost per purchase -52%, cost per add-to-cart -13%.",
+    "Evidence B, confirmed status: Meta case study on a test compared against the manual structure."
+  ],
+  "resultats": [
+    { "metrique": "Purchase volume vs manual campaigns" },
+    { "metrique": "Cost per purchase vs manual campaigns" },
+    { "metrique": "Cost per add-to-cart vs manual campaigns" }
+  ],
+  "niveau_preuve": {
+    "justification": "Official Meta case study, quantified, backed by a test comparing Advantage+ against the manual structure, with named people and agency; single source published by the platform, not corroborated by a primary or press source."
+  },
+  "stack_technique": [
+    { "detail": "audiences, placements, bids and creative combinations driven by Meta's ML, prospecting and remarketing in a single campaign" },
+    { "detail": "reporting of purchases and add-to-carts, the signal the algorithm optimizes on" },
+    { "detail": "lists of existing customers and site visitors, used as value signals and for remarketing" },
+    { "detail": "the creative bank fed to the algorithm, which tests the combinations without human arbitration" },
+    { "detail": "media agency on the account, co-piloting the test comparing Advantage+ against the manual structure" }
+  ],
+  "fonctionnement_operationnel": {
+    "cadence": "Continuous, campaign budget managed by the algorithm (Advantage+ campaign budget). Each major change restarts a 1 to 2 week learning phase.",
+    "opere_par": "The brand's performance marketing team, supported by the media agency Spark Foundry (Publicis) and the e-commerce team for the feed.",
+    "signal_pilote": "Purchases and add-to-carts reported by the Pixel and Conversions API. If this signal is incomplete, the algorithm optimizes on noise and the cost per purchase rises.",
+    "etapes": [
+      {
+        "etape": "Provide catalog and creatives",
+        "detail": "Product feed plus a stock of varied formats: photo and catalog carousels, collection ads, photo ads. The algorithm tests the combinations, the team does not pick the winner.",
+        "acteur": "E-commerce / creative team"
+      },
+      {
+        "etape": "Load the custom audiences",
+        "detail": "Lists of existing customers and site visitors, used as value signals and for remarketing within the same campaign.",
+        "acteur": "Data / CRM team"
+      },
+      {
+        "etape": "Let the AI drive",
+        "detail": "Advantage+ decides audiences, placements and bids, and combines prospecting and remarketing. Editing the campaign too often breaks the learning.",
+        "acteur": "Meta AI"
+      },
+      {
+        "etape": "Compare against the manual structure",
+        "detail": "The decision to switch was made on a test comparing Advantage+ against manual catalog campaigns, judged on cost per purchase and volume.",
+        "acteur": "Media / agency team"
+      }
+    ]
+  },
+  "replication": {
+    "prerequis_data": [
+      "Clean and up-to-date product catalog (feed)",
+      "Pixel + Conversions API with reliable purchase and add-to-cart events",
+      "Customer and visitor lists for custom audiences and exclusions"
+    ],
+    "prerequis_orga": [
+      "Multi-format creative bank (carousels, collection, photo)",
+      "Accept letting the learning run without over-managing the campaign"
+    ],
+    "stack_possible": [
+      "Meta Advantage+ Sales Campaigns + CAPI (server-side GTM or partner)",
+      "Advantage+ campaign budget"
+    ],
+    "equipe": "1 media buyer + 1 dev for the Conversions API + the e-commerce team for the feed",
+    "playbook": [
+      {
+        "action": "Make the product feed and measurement reliable: Pixel + Conversions API with verified purchase and add-to-cart events",
+        "livrable": "Clean feed + validated events in Events Manager"
+      },
+      {
+        "action": "Load the custom audiences (customers, visitors) and build the multi-format creative bank",
+        "livrable": "Active audiences + carousels, collection and photo ads ready"
+      },
+      {
+        "action": "Launch Advantage+ Sales alongside the manual catalog structure, on a share of the budget",
+        "livrable": "Live comparative test, learning phase started"
+      },
+      {
+        "action": "Let it converge without editing the campaign, since each major change restarts 1 to 2 weeks of learning",
+        "livrable": "Campaign out of the learning phase, stable data"
+      },
+      {
+        "action": "Judge on cost per purchase and purchase volume against the manual structure",
+        "livrable": "Quantified decision to shift the catalog budget to Advantage+"
+      }
+    ],
+    "premiere_etape": "Launch a comparative test: an Advantage+ Sales campaign against the existing manual catalog structure, on 20 to 30 percent of the social budget, judged on cost per purchase."
+  },
+  "statut_vivant": {
+    "note": "Loro Piana remains an active Meta advertiser and Advantage+ Sales Campaigns is Meta's default selling format (over $20B annual run-rate announced at the end of 2024), which ensures the durability of the pattern."
+  },
+  "transposable_ue": {
+    "note": "The case is run by a European LVMH team (Publicis/Spark Foundry). In the EU, activation requires proper GDPR/ePrivacy consent (Pixel + Conversions API) and the use of custom audiences. Meta's algorithmic targeting remains a limited risk under the AI Act on the advertiser side."
+  }
+}

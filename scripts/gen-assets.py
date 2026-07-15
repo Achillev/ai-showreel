@@ -67,48 +67,41 @@ def draw_tracked(d, xy, text, font, fill, tracking):
 
 SS = 2
 W, H = 1200 * SS, 630 * SS
-og = Image.new("RGB", (W, H), CREAM)
-d = ImageDraw.Draw(og)
 
-# barre d'accent haute
-d.rectangle([0, 0, W, 9 * SS], fill=ACCENT)
+def make_og(fname, title1, title2, sub1, sub2, footer_right):
+    og = Image.new("RGB", (W, H), CREAM)
+    d = ImageDraw.Draw(og)
+    d.rectangle([0, 0, W, 9 * SS], fill=ACCENT)  # barre d'accent haute
+    # watermark : grand losange accent tres discret, debordant a droite
+    wm = Image.new("RGBA", (W, H), (0, 0, 0, 0))
+    ImageDraw.Draw(wm).polygon(diamond(int(W * 0.92), int(H * 0.52), int(H * 0.5)), fill=ACCENT + (14,))
+    og = Image.alpha_composite(og.convert("RGBA"), wm).convert("RGB")
+    d = ImageDraw.Draw(og)
+    M = 80 * SS
+    ey = 78 * SS  # eyebrow : losange + wordmark tracke
+    d.polygon(diamond(M + 9 * SS, ey + 13 * SS, 9 * SS), fill=ACCENT)
+    draw_tracked(d, (M + 28 * SS, ey), "AI SHOWREEL", fnt(HANK, 27 * SS, 700), INK, 3 * SS)
+    th = fnt(NEWS, 66 * SS, 560, opsz=72)  # titre (Newsreader display)
+    d.text((M, 172 * SS), title1, font=th, fill=INK)
+    d.text((M, 250 * SS), title2, font=th, fill=INK)
+    sf = fnt(HANK, 29 * SS, 450)  # sous-titre (Hanken)
+    d.text((M, 356 * SS), sub1, font=sf, fill=MUTED)
+    d.text((M, 396 * SS), sub2, font=sf, fill=MUTED)
+    d.line([(M, 520 * SS), (W - M, 520 * SS)], fill=HAIR, width=2 * SS)  # filet + pied
+    d.text((M, 548 * SS), "ai-showreel.com", font=fnt(HANK, 28 * SS, 700), fill=INK)
+    rf = fnt(HANK, 24 * SS, 500)
+    rw = d.textlength(footer_right, font=rf)
+    d.text((W - M - rw, 552 * SS), footer_right, font=rf, fill=MUTED)
+    og.resize((1200, 630), Image.LANCZOS).save(os.path.join(OUT, fname))
 
-# watermark : grand losange accent tres discret, debordant a droite
-wm = Image.new("RGBA", (W, H), (0, 0, 0, 0))
-dwm = ImageDraw.Draw(wm)
-dwm.polygon(diamond(int(W * 0.92), int(H * 0.52), int(H * 0.5)),
-            fill=ACCENT + (14,))
-og = Image.alpha_composite(og.convert("RGBA"), wm).convert("RGB")
-d = ImageDraw.Draw(og)
-
-M = 80 * SS
-# eyebrow : losange + wordmark tracke
-ey = 78 * SS
-d.polygon(diamond(M + 9 * SS, ey + 13 * SS, 9 * SS), fill=ACCENT)
-draw_tracked(d, (M + 28 * SS, ey), "AI SHOWREEL",
-             fnt(HANK, 27 * SS, 700), INK, 3 * SS)
-
-# titre (Newsreader display)
-th = fnt(NEWS, 66 * SS, 560, opsz=72)
-d.text((M, 172 * SS), "Les déploiements IA prouvés", font=th, fill=INK)
-d.text((M, 250 * SS), "du marketing digital", font=th, fill=INK)
-
-# sous-titre (Hanken)
-sf = fnt(HANK, 29 * SS, 450)
-d.text((M, 356 * SS),
-       "200+ cas de grandes marques, sourcés et notés sur", font=sf, fill=MUTED)
-d.text((M, 396 * SS),
-       "une échelle de preuve publique, vérifiés vivants.", font=sf, fill=MUTED)
-
-# filet + pied
-d.line([(M, 520 * SS), (W - M, 520 * SS)], fill=HAIR, width=2 * SS)
-d.text((M, 548 * SS), "ai-showreel.com", font=fnt(HANK, 28 * SS, 700), fill=INK)
-rf = fnt(HANK, 24 * SS, 500)
-rt = "index indépendant, sans biais vendeur"
-rw = d.textlength(rt, font=rf)
-d.text((W - M - rw, 552 * SS), rt, font=rf, fill=MUTED)
-
-og.resize((1200, 630), Image.LANCZOS).save(os.path.join(OUT, "og-image.png"))
+make_og("og-image.png", "Les déploiements IA prouvés", "du marketing digital",
+        "200+ cas de grandes marques, sourcés et notés sur",
+        "une échelle de preuve publique, vérifiés vivants.",
+        "index indépendant, sans biais vendeur")
+make_og("og-image-en.png", "The proven AI deployments", "of digital marketing",
+        "200+ cases from major brands, sourced and graded",
+        "on a public evidence scale, verified live.",
+        "independent index, no vendor bias")
 
 # ---------- MANIFEST ----------
 with open(os.path.join(OUT, "site.webmanifest"), "w") as f:

@@ -1,0 +1,126 @@
+{
+  "seo": {
+    "title": "Airbnb: Smart Pricing, dynamic price suggestion to hosts validated in A/B testing (2018)",
+    "meta_description": "Airbnb suggests a nightly price to hosts through a model combining booking probability and optimal price, deployed in production on Price Tips and Smart Pricing and validated in A/B testing.",
+    "resume_citable": "Airbnb computes a nightly price for each host with a three-part model (booking probability, optimal price, personalization), deployed in production and validated through A/B testing (KDD 2018).",
+    "faq": [
+      {
+        "q": "How does Airbnb's Smart Pricing work?",
+        "a": "A model predicts the booking probability of each night, then an optimal price and a personalization; the host sets bounds and the price adjusts automatically each day."
+      },
+      {
+        "q": "Why does Airbnb not use a classic demand curve?",
+        "a": "Because no two listings are alike, which makes estimating a standard demand curve impossible; the model works around the problem with a custom loss function."
+      }
+    ]
+  },
+  "pattern": "dynamic price suggestion to sellers (host pricing)",
+  "etape_parcours": "purchase",
+  "objectif_business": "Help each host set a nightly price that maximizes both booking probability and revenue, across a catalog where no two listings are alike.",
+  "description": "Price Tips, launched in 2015, suggests a nightly price to the host. Smart Pricing, launched the same year, automatically adjusts the price within the bounds the host sets. The model published at KDD 2018 combines three parts: a classifier that predicts the booking probability of each listing-night, a regression that predicts the optimal price with a custom loss function, and then a personalization layer that produces the final suggestion. The difficulty specific to Airbnb is that no two listings are identical, which prevents estimating a classic demand curve. The model is deployed in production and validated through A/B testing.",
+  "points_cles": [
+    "Dynamic price suggestion to hosts (Price Tips, Smart Pricing).",
+    "In-house model in three parts: classifier, regression, personalization.",
+    "Deployed in production, effectiveness demonstrated in online A/B testing.",
+    "Evidence level B, confirmed active status."
+  ],
+  "resultats": [
+    {
+      "metrique": "Production validation"
+    },
+    {
+      "metrique": "Deployment scope"
+    }
+  ],
+  "niveau_preuve": {
+    "justification": "Scientific paper published by Airbnb's teams at KDD 2018, describing a production system validated through A/B testing. No public revenue figure isolates the model's effect, hence level B rather than A."
+  },
+  "fonctionnement_operationnel": {
+    "cadence": "Daily update of the suggested prices, with automatic adjustment if Smart Pricing is enabled.",
+    "opere_par": "Airbnb's pricing and data science team for the model, the hosts for the settings.",
+    "signal_pilote": "The predicted booking probability per listing-night, crossed with local demand. Without this signal, the price suggestion loses its relevance and the host falls back on a static price.",
+    "etapes": [
+      {
+        "etape": "Predicting booking probability",
+        "detail": "A classifier estimates the chance that a listing-night is booked at a given price.",
+        "acteur": "AI"
+      },
+      {
+        "etape": "Computing the optimal price",
+        "detail": "A regression with a custom loss function proposes the price that balances booking and revenue.",
+        "acteur": "AI"
+      },
+      {
+        "etape": "Personalizing the suggestion",
+        "detail": "A personalization layer adjusts the final suggestion for the listing.",
+        "acteur": "AI"
+      },
+      {
+        "etape": "Host settings",
+        "detail": "The host sets minimum and maximum price bounds and enables or disables the automatic adjustment.",
+        "acteur": "customer"
+      }
+    ]
+  },
+  "replication": {
+    "prerequis_data": [
+      "booking and price history",
+      "local demand signals (events, seasonality)",
+      "listing attributes"
+    ],
+    "prerequis_orga": [
+      "pricing data science team",
+      "host tool to surface the suggestions",
+      "A/B testing loop"
+    ],
+    "stack_possible": [
+      "classifier and regression on tabular data",
+      "personalization layer",
+      "daily update pipeline"
+    ],
+    "premiere_etape": "Build a booking probability model per listing-night before attaching price optimization to it.",
+    "playbook": [
+      {
+        "action": "Consolidate the booking and price history with local demand signals (seasonality, events).",
+        "livrable": "Listing-night dataset ready for training"
+      },
+      {
+        "action": "Train the booking probability classifier and validate it offline.",
+        "livrable": "Model evaluated with calibration curves"
+      },
+      {
+        "action": "Attach the price optimization (regression with a tailored loss function) and the personalization layer.",
+        "livrable": "Per-night price suggestion validated in backtest"
+      },
+      {
+        "action": "Surface the suggestions in the seller tool with minimum and maximum bounds controlled by the host.",
+        "livrable": "Price suggestion interface in beta"
+      },
+      {
+        "action": "Run an A/B test on a subset of hosts and measure occupancy and revenue.",
+        "livrable": "Controlled test result and deployment decision"
+      }
+    ],
+    "equipe": "2 pricing data scientists + 1 data engineer + 1 PM on the seller tool side"
+  },
+  "stack_technique": [
+    {
+      "detail": "Airbnb in-house model that predicts the chance a listing-night is booked at a given price."
+    },
+    {
+      "detail": "In-house model that computes the optimal price by balancing booking probability and revenue, published at KDD 2018."
+    },
+    {
+      "detail": "Adjusts the final suggestion to the specific attributes of each listing."
+    },
+    {
+      "detail": "Host tools that surface the suggestion and apply the daily automatic adjustment within the bounds set by the host."
+    }
+  ],
+  "statut_vivant": {
+    "note": "Smart Pricing remains a standard host feature on Airbnb. The model described dates from 2018 and has probably evolved since, but the dynamic price suggestion pattern is still active."
+  },
+  "transposable_ue": {
+    "note": "A price suggestion tool for hosts carries over directly; regulatory friction is low because the host keeps control of the price bounds and of activation. GDPR applies to host data but with no particular obstacle."
+  }
+}

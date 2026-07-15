@@ -1,0 +1,128 @@
+{
+  "seo": {
+    "title": "Sephora: beauty personalization (Color IQ + on-site recs) - 6-to-1 ROI on product recommendations",
+    "meta_description": "Sephora connects Color IQ shade scanning with personalized on-site recommendations. Sephora SEA drew a 6-to-1 ROI from product-page recommendations via Dynamic Yield, and Color IQ generated 14 million matches.",
+    "resume_citable": "Sephora personalizes the beauty journey through computer vision (Color IQ, 14 million matches) and on-site recommendation: Sephora SEA achieved a 6-to-1 ROI on product-page recommendations via Dynamic Yield, with 82 experiences in six months.",
+    "faq": [
+      {
+        "q": "What does Color IQ do?",
+        "a": "It scans skin tone in store and assigns a shade code that, linked to the Beauty Insider account, then filters foundations and concealers online."
+      },
+      {
+        "q": "Where does the 6-to-1 ROI come from?",
+        "a": "From a Dynamic Yield case study on Sephora SEA, covering product-page recommendations. It is a vendor source, not a group financial result."
+      }
+    ]
+  },
+  "pattern": "Product matching by computer vision (skin tone) plus personalized on-site recommendation, synchronized between store and online",
+  "etape_parcours": "consideration -> purchase -> loyalty",
+  "objectif_business": "Reproduce online the personalized advice of the store: find the right shade, recommend the right products, and keep the thread between the in-store purchase and the web session.",
+  "points_cles": [
+    "Product matching by computer vision (Color IQ) plus personalized on-site recommendation, synchronized store-to-online.",
+    "In-house Color IQ and Dynamic Yield stack, unified by the Beauty Insider loyalty program.",
+    "6-to-1 ROI on product-page recommendations (Sephora SEA), 82 experiences in six months.",
+    "14 million Color IQ matches, evidence level B, confirmed status."
+  ],
+  "description": "Sephora personalizes the beauty journey on two fronts. In store, Color IQ scans the customer's skin tone and translates it into a four-digit code drawn from a shade library built with the Pantone Color Institute; this code then filters foundations and concealers on mobile and online, once linked to the Beauty Insider loyalty account. Since its launch, Color IQ has generated 14 million matches in store. Online, Sephora SEA (Southeast Asia) entrusted Dynamic Yield with personalizing product recommendations and optimizing discovery points. Six months after the start, the team had set up 82 personalized experiences; product-page recommendations alone yielded a 6-to-1 ROI, with more than 6.50 dollars of direct revenue per dollar invested. Personalization extends to the no-results page, where contextual recommendations lifted the add-to-cart rate to 30% for returning visitors.",
+  "resultats": [
+    {
+      "metrique": "ROI of product-page recommendations (Sephora SEA)"
+    },
+    {
+      "metrique": "Color IQ matches generated in store"
+    },
+    {
+      "metrique": "Personalized experiences deployed in 6 months (Sephora SEA)"
+    }
+  ],
+  "niveau_preuve": {
+    "justification": "The on-site ROI comes from a quantified Dynamic Yield case study (an interested vendor source); the 14 million Color IQ matches figure is reported by the press (Digiday) with a quote from a Sephora lead. Two aligned strands, but no consolidated financial result at the group level."
+  },
+  "stack_technique": [
+    {
+      "detail": "on-site personalization engine: recommendations on product pages and the no-results page, optimization of discovery points (82 experiences in six months at Sephora SEA)"
+    },
+    {
+      "detail": "in-house in-store skin tone scan (computer vision), translated into a four-digit code linked to the customer account"
+    },
+    {
+      "detail": "loyalty program that unifies shade code, in-store purchases, and online browsing, the key to omnichannel synchronization"
+    },
+    {
+      "detail": "partner in building the Color IQ shade library"
+    }
+  ],
+  "fonctionnement_operationnel": {
+    "cadence": "One-off Color IQ scan in store (durable data linked to the account); on-site recommendations served in real time on each session.",
+    "opere_par": "Sephora's innovation/retail team for Color IQ; e-commerce and CRM team for on-site personalization, tooled by Dynamic Yield.",
+    "signal_pilote": "The shade code and the purchase/browsing history, synchronized between store and online via the Beauty Insider account. If the CRM link breaks, the online session starts without context and the recommendation loses its relevance.",
+    "etapes": [
+      {
+        "etape": "Capture skin tone in store",
+        "detail": "Color IQ scans the skin and assigns a shade code, linked to the customer's Beauty Insider account.",
+        "acteur": "AI / retail team"
+      },
+      {
+        "etape": "Filter products by shade",
+        "detail": "The code filters foundations and concealers on mobile and online, to show only the matching shades.",
+        "acteur": "AI / platform"
+      },
+      {
+        "etape": "Personalize on-site recommendations",
+        "detail": "On product pages and the no-results page, Dynamic Yield serves recommendations by context (similar products, bought together, automatic) and picks the best strategy by market.",
+        "acteur": "AI / e-commerce team"
+      },
+      {
+        "etape": "Synchronize store and online",
+        "detail": "CRM data feeds the online session from in-store purchases and behaviors.",
+        "acteur": "CRM team"
+      }
+    ]
+  },
+  "replication": {
+    "prerequis_data": [
+      "A unified customer account linking store and online purchases (CRM / loyalty)",
+      "Fine-grained product attributes (shades, categories) to filter and recommend",
+      "On-site browsing and purchase history"
+    ],
+    "prerequis_orga": [
+      "A loyalty program as the data-unification key",
+      "In-store scanning hardware if you want the shade component",
+      "An e-commerce team running the personalization tool"
+    ],
+    "stack_possible": [
+      "On-site personalization engine (Dynamic Yield, or equivalent) for recommendations and page optimization",
+      "A dedicated product-matching component (shade, size) depending on the sector"
+    ],
+    "premiere_etape": "Deploy recommendations on product pages and on the no-results page via a personalization engine, and measure direct ROI against a control group.",
+    "playbook": [
+      {
+        "action": "Unify the customer key: verify that the loyalty program links store purchases, profile, and online sessions",
+        "livrable": "Single customer account with consolidated history"
+      },
+      {
+        "action": "Structure the fine-grained product attributes (shades, categories, complements) needed for filtering and recommendation",
+        "livrable": "Catalog with attributes usable by the engine"
+      },
+      {
+        "action": "Deploy the personalization engine on product pages and the no-results page, with a control group",
+        "livrable": "First recommendations in production, measured against a control"
+      },
+      {
+        "action": "Roll out the recommendation strategies (similar, bought together, automatic) by page and by market",
+        "livrable": "A set of experiences A/B tested in production"
+      },
+      {
+        "action": "Measure direct revenue per euro invested against the control, generalize what wins; the in-store scan component comes later, if the business justifies it",
+        "livrable": "ROI table by experience and a scaling plan"
+      }
+    ],
+    "equipe": "1 e-commerce PM + 1 front-end dev for integration + 1 CRM manager; the vendor supports campaign setup"
+  },
+  "statut_vivant": {
+    "note": "Color IQ is a long-standing in-store service, relaunched with a more inclusive technology; Sephora SEA's on-site personalization relies on Dynamic Yield. Active pattern."
+  },
+  "transposable_ue": {
+    "note": "Sephora operates in the EU. Color IQ (skin tone scan) and CRM synchronization between store and online fall under the GDPR: personal data, a legal basis for profiling, customer information. No high AI Act risk on product recommendation and skin tone scanning."
+  }
+}

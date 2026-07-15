@@ -1,0 +1,132 @@
+{
+  "seo": {
+    "title": "Roblox: ML-driven discovery and economy - regional pricing and $923M to creators (2025)",
+    "meta_description": "Roblox drives discovery and the economy with machine learning: in-house recommendation, automated regional pricing, and $923 million paid to creators in 2024.",
+    "resume_citable": "Roblox runs an in-house discovery engine (sequence modeling, self-supervised) that concentrates most traffic on the home page and an Economy ML team that optimizes pricing and storefronts, with automated regional pricing launched in April 2025 and $923 million paid to creators in 2024.",
+    "faq": [
+      {
+        "q": "What is Roblox's Economy ML?",
+        "a": "A dedicated team builds the models that drive smart pricing, personalized storefronts, and regional pricing, automatically optimized to each user's local economy."
+      },
+      {
+        "q": "How does AI support Roblox's monetization?",
+        "a": "By making discovery more effective (thus more engagement and Robux spend) and by adjusting price by market to maximize purchase volume."
+      }
+    ]
+  },
+  "pattern": "ML discovery engine plus ML economy (personalized pricing and storefronts)",
+  "etape_parcours": "discovery",
+  "objectif_business": "Maximize the discovery of relevant content, hence engagement and Robux spend, and optimize the economy (price by market, personalized storefronts) to strengthen monetization over time.",
+  "points_cles": [
+    "In-house discovery engine plus ML economy (smart pricing and personalized storefronts).",
+    "Proprietary models (sequence modeling, self-supervised, counterfactual) and automated regional pricing launched in April 2025.",
+    "$923M paid to creators in 2024 (+25%), with most traffic flowing through the ML-driven home page.",
+    "Evidence level B, confirmed status."
+  ],
+  "description": "Roblox runs an in-house discovery engine where the home page concentrates most of the traffic. The teams train proprietary models rather than off-the-shelf LLMs, with sequence modeling on play history, self-supervised representation, and counterfactual evaluation, on infrastructure rebuilt to stay real time without blowing up the cost of service. The Recommended For You row relies on engagement signals such as the qualified play-through rate, 7-Day Playtime, and Robux Spend, with the addition of a social co-play dimension. An Economy ML team builds the machine learning layer for the marketplace, creator monetization, and payments, with smart pricing and personalized storefronts. In April 2025, Roblox launched regional pricing that automatically optimizes the price of each item to the user's local economy, with an item at 199 Robux in the United States shown at 139 Robux in Brazil, the stated goal being to capture 10 percent of global video game spending. Creators earned 923 million dollars in 2024, up 25 percent, on a daily active user base growing 21 percent.",
+  "resultats": [
+    {
+      "metrique": "Payouts to creators (2024), +25 percent year over year"
+    },
+    {
+      "metrique": "Price optimized by local economy (US vs Brazil)"
+    },
+    {
+      "metrique": "Centrality of discovery"
+    }
+  ],
+  "niveau_preuve": {
+    "justification": "Two official Roblox releases document the ML discovery and economy systems, established press confirms the automated regional pricing, and the financial scale ($923 million to creators) is public. The isolated impact of AI is not a single financial line, hence B."
+  },
+  "stack_technique": [
+    {
+      "detail": "In-house recommendation models: sequence modeling on play history, self-supervised representation, counterfactual evaluation; no off-the-shelf LLM."
+    },
+    {
+      "detail": "Marketplace ML layer: smart pricing, personalized storefronts, creator monetization, and payments."
+    },
+    {
+      "detail": "Automatic optimization of each item's price to the user's local economy (launched April 2025), with VPN detection on the anti-fraud side."
+    },
+    {
+      "detail": "Infrastructure rebuilt to serve recommendations in real time without blowing up the cost of service."
+    }
+  ],
+  "fonctionnement_operationnel": {
+    "cadence": "Real-time recommendation on each home page visit; regional pricing updated periodically as the virtual economy shifts.",
+    "opere_par": "Roblox's Search and Discovery and Economy ML teams, on proprietary infrastructure.",
+    "signal_pilote": "The engagement signals (qualified play-through rate, 7-Day Playtime, Robux Spend, co-play). If these signals degrade or are poorly attributed, recommendation relevance and spend optimization decline.",
+    "etapes": [
+      {
+        "etape": "Signal ingestion",
+        "detail": "Play history, engagement, and Robux spend feed the proprietary models.",
+        "acteur": "data / AI team"
+      },
+      {
+        "etape": "Discovery recommendation",
+        "detail": "Sequence modeling and self-supervised representation rank the experiences on the home page.",
+        "acteur": "AI (Search and Discovery)"
+      },
+      {
+        "etape": "Economy optimization",
+        "detail": "Smart pricing, personalized storefronts, and regional pricing by local economy.",
+        "acteur": "AI (Economy ML)"
+      },
+      {
+        "etape": "Anti-fraud and control",
+        "detail": "VPN and location detection to prevent circumvention of regional pricing.",
+        "acteur": "AI / trust team"
+      }
+    ]
+  },
+  "replication": {
+    "prerequis_data": [
+      "per-user engagement and play history",
+      "spend signals",
+      "a catalog of content and items",
+      "reliable location"
+    ],
+    "prerequis_orga": [
+      "an ML recommendation team",
+      "an economy or pricing team",
+      "cost-controlled real-time infrastructure",
+      "governance over minors and pricing"
+    ],
+    "stack_possible": [
+      "custom recommendation models",
+      "sequence modeling",
+      "pricing engine",
+      "real-time serving infrastructure"
+    ],
+    "premiere_etape": "Define the reference engagement signals (play-through, playtime, spend) and launch a first recommendation model on the highest-traffic surface.",
+    "playbook": [
+      {
+        "action": "Define the reference engagement signals (qualified play-through, playtime, spend) and instrument them.",
+        "livrable": "Signal taxonomy measured in production."
+      },
+      {
+        "action": "Train a first recommendation model on the highest-traffic surface and A/B test it.",
+        "livrable": "v1 model with measured engagement uplift."
+      },
+      {
+        "action": "Industrialize cost-controlled real-time serving (latency and cost per request tracked).",
+        "livrable": "Recommendation engine in production at scale."
+      },
+      {
+        "action": "Launch the economy layer (pricing by market, personalized storefronts) on a pilot scope, with anti-fraud guardrails (location, VPN).",
+        "livrable": "Controlled pricing test with spend measurement."
+      },
+      {
+        "action": "Generalize and set governance (profiling of minors, consumer law on pricing).",
+        "livrable": "Monitoring setup and operational compliance rules."
+      }
+    ],
+    "equipe": "3-6 ML engineers (recommendation + economy) + 1 PM + infra/platform team + trust and safety."
+  },
+  "statut_vivant": {
+    "note": "ML discovery and economy systems confirmed by Roblox's 2023 and 2025 releases, with regional pricing launched in April 2025 and covered by the press."
+  },
+  "transposable_ue": {
+    "note": "The platform has a large share of minors, which increases GDPR and AI Act constraints on profiling and recommendation. Automated regional pricing touches consumer law and anti-fraud (VPN detection). The discovery plus ML economy pattern is transposable, but the framing on minors and pricing is structural."
+  }
+}

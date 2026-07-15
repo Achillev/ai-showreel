@@ -1,0 +1,113 @@
+{
+  "seo": {
+    "title": "Lumen: B2B campaigns in 9 days instead of 25 with Adobe GenStudio (2025)",
+    "meta_description": "Lumen Technologies produces its B2B campaigns in Adobe GenStudio and Firefly and goes from 25 to 9 days from concept to launch, about 3x faster.",
+    "resume_citable": "Lumen Technologies cut its B2B campaign launch time from 25 to 9 days (about 3x faster) by generating on-brand copy and visuals in Adobe GenStudio for Performance Marketing with Firefly and Custom Models.",
+    "faq": [
+      {
+        "q": "Which Adobe tools does Lumen use?",
+        "a": "GenStudio for Performance Marketing, Firefly and Custom Models for content, Workfront for brand and legal approval."
+      },
+      {
+        "q": "What time savings?",
+        "a": "Campaigns that took 25 days from concept to launch are now done in 9 days, about three times faster."
+      }
+    ]
+  },
+  "pattern": "genAI content supply chain (producing on-brand assets at scale)",
+  "etape_parcours": "discovery",
+  "objectif_business": "Reduce the time between a B2B campaign concept and its go-live, while keeping assets on-brand and legally approved.",
+  "description": "Lumen Technologies, a US B2B telecom operator, produces its campaigns (paid social, display, banners, emails) in Adobe GenStudio for Performance Marketing. The application generates copy tailored to each persona and, via Firefly and Custom Models trained on Lumen's IP, the campaign visuals. The assets are ingested into Adobe Workfront for legal and brand approval before distribution. The same space is used to generate, test and adapt the creatives.",
+  "points_cles": [
+    "genAI production of B2B campaigns: per-persona copy and on-brand visuals.",
+    "Adobe GenStudio, Firefly and Custom Models on Lumen's IP, approval via Workfront.",
+    "Campaign launch time cut from 25 to 9 days, about 3x faster.",
+    "Evidence B, confirmed status: Adobe announcement and customer story from June 2025."
+  ],
+  "resultats": [
+    { "metrique": "B2B campaign launch time, about 3x faster (from concept to go-live)" }
+  ],
+  "niveau_preuve": {
+    "justification": "Official Adobe announcement picked up on BusinessWire and documented in an Adobe customer story, with figures consistent across the three. All sources come from Adobe or its press wire (interested parties), hence B and not C."
+  },
+  "stack_technique": [
+    { "detail": "single space to generate, test and adapt campaign assets (per-persona copy + visuals)" },
+    { "detail": "image generation model trained on commercially licensed content, used for the campaign visuals" },
+    { "detail": "Firefly models fine-tuned on Lumen's IP and brand guidelines to keep generation on-brand" },
+    { "detail": "brand and legal approval workflow for the generated assets before distribution" },
+    { "detail": "fast versioning and adaptation of the creatives by the marketing teams" }
+  ],
+  "fonctionnement_operationnel": {
+    "cadence": "Per campaign: each brief launches a generation, test and approval cycle in GenStudio.",
+    "opere_par": "Lumen's marketing and creative teams, with legal and brand reviewing via Workfront.",
+    "signal_pilote": "The campaign brief and target personas feed the generation. The brand guidelines encoded in the Custom Models ensure the generated content stays on-brand; without them, production loses its brand consistency.",
+    "etapes": [
+      {
+        "etape": "Framing the brief and personas",
+        "detail": "Marketing defines the campaign, the audiences and the message per persona.",
+        "acteur": "Marketing team"
+      },
+      {
+        "etape": "Asset generation",
+        "detail": "GenStudio produces the per-persona copy; Firefly and the Custom Models generate the visuals within brand rules.",
+        "acteur": "AI (GenStudio / Firefly)"
+      },
+      {
+        "etape": "Brand and legal review",
+        "detail": "The assets are ingested into Workfront for approval before distribution.",
+        "acteur": "Creative / legal team"
+      },
+      {
+        "etape": "Distribution and adaptation",
+        "detail": "The creatives go out in paid social, display, email; the team tests and adapts in the same space.",
+        "acteur": "Marketing team"
+      }
+    ]
+  },
+  "replication": {
+    "prerequis_data": [
+      "brand guidelines and IP assets usable to train Custom Models",
+      "personas and target messages",
+      "reference creative library"
+    ],
+    "prerequis_orga": [
+      "brand and legal approval workflow",
+      "creative team able to frame the models",
+      "governance over generated content"
+    ],
+    "stack_possible": [
+      "Adobe GenStudio + Firefly + Workfront",
+      "any genAI content supply chain with fine-tuning on brand IP and an approval step"
+    ],
+    "equipe": "1 marketing ops lead + 1 creative lead to frame the models + legal and brand in review + 1 platform admin",
+    "playbook": [
+      {
+        "action": "Map the current concept-to-go-live cycle and locate the brand/legal bottlenecks",
+        "livrable": "Cycle map with time per step (the 25-day baseline)"
+      },
+      {
+        "action": "Gather brand guidelines, personas and IP assets usable for training",
+        "livrable": "Structured brand kit, validated by creative"
+      },
+      {
+        "action": "Train the Custom Models and configure generation in GenStudio",
+        "livrable": "On-brand copy + visual generation validated on a test batch"
+      },
+      {
+        "action": "Wire in the brand and legal approval workflow (Workfront or equivalent)",
+        "livrable": "End-to-end generation, review then distribution flow operational"
+      },
+      {
+        "action": "Launch a pilot campaign and measure cycle time against the baseline",
+        "livrable": "Before/after comparison of launch time + expansion plan"
+      }
+    ],
+    "premiere_etape": "Map the current concept-to-go-live cycle and identify where brand/legal approval blocks, before plugging on-brand generation into it."
+  },
+  "statut_vivant": {
+    "note": "Deployment described as an ongoing adoption; Adobe kept extending GenStudio (new capabilities, Firefly Foundry) through 2025. To recheck for a signal more recent than June 2025."
+  },
+  "transposable_ue": {
+    "note": "Firefly is trained on commercially licensed content (lower IP risk). In the EU, transparency about AI-generated content (AI Act) and brand/legal validation must be built in, which Lumen already does via Workfront."
+  }
+}

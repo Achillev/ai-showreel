@@ -1,0 +1,113 @@
+{
+  "seo": {
+    "title": "Mercedes-Benz: MBUX voice assistant augmented with ChatGPT - more than 3 million vehicles (2024)",
+    "meta_description": "Mercedes-Benz pushed ChatGPT via Azure OpenAI to more than 3 million MBUX vehicles in December 2024, after a US beta of 900,000 vehicles in 2023.",
+    "resume_citable": "In December 2024, Mercedes-Benz made ChatGPT (Azure OpenAI + Bing) available as a free update on more than three million MBUX vehicles, after a US beta covering more than 900,000 vehicles in June 2023.",
+    "faq": [
+      {
+        "q": "What technology powers Mercedes-Benz's genAI voice assistant?",
+        "a": "ChatGPT via Microsoft Azure OpenAI Service, coupled with a Microsoft Bing search for up-to-date answers."
+      },
+      {
+        "q": "On how many vehicles is the feature deployed?",
+        "a": "More than three million MBUX-equipped vehicles worldwide since December 2024, after a US beta of more than 900,000 vehicles in 2023."
+      }
+    ]
+  },
+  "pattern": "in-car genAI voice assistant",
+  "etape_parcours": "post-purchase",
+  "objectif_business": "Enrich the in-car voice assistant with natural-language answers on open topics, beyond vehicle commands, to strengthen brand attachment over the ownership period and differentiate the onboard experience.",
+  "description": "On vehicles equipped with the MBUX infotainment system, the user activates the assistant by saying Hey Mercedes or via the steering-wheel button. Beyond the classic commands (navigation, phone, climate control), the assistant triggers a Bing search and has ChatGPT, via Azure OpenAI, write a natural-language answer. The driver can ask general-knowledge questions, about a destination, the weather, a recipe, and continue the conversation on the topic. Launched as a beta program in the US on June 16, 2023 for more than 900,000 vehicles, then pushed into series production to more than three million vehicles worldwide via a remote update in December 2024, in German, British English and American English.",
+  "resultats": [
+    { "metrique": "Vehicles eligible for the ChatGPT update (series production, December 2024)" },
+    { "metrique": "Vehicles in the US beta program (June 2023)" },
+    { "metrique": "Positioning of the feature (CTO statement)" }
+  ],
+  "niveau_preuve": {
+    "justification": "Public deployment figure (more than three million vehicles) from Mercedes-Benz's official press release and picked up by several concordant press outlets; no financial metric isolating the impact, hence level C rather than A."
+  },
+  "stack_technique": [
+    { "detail": "Conversational model that writes natural-language answers to the driver's open questions." },
+    { "detail": "Cloud hosting of the ChatGPT model used by Mercedes-Benz for the assistant's generative layer." },
+    { "detail": "Web search triggered by the assistant to retrieve up-to-date information before writing the answer." },
+    { "detail": "Onboard infotainment system that captures the voice, distinguishes vehicle command from open question, and delivers the answer." },
+    { "detail": "Storage and anonymization of voice command data before analysis." }
+  ],
+  "fonctionnement_operationnel": {
+    "cadence": "Real time, one request at a time during the trip.",
+    "opere_par": "Mercedes-Benz's connected services and voice team, with Microsoft Azure OpenAI on the back end.",
+    "signal_pilote": "The voice request and its context. Without cellular connectivity or cloud access, the search and genAI answer part falls away and the assistant falls back on local commands.",
+    "etapes": [
+      {
+        "etape": "Activation",
+        "detail": "The driver says Hey Mercedes or presses the steering-wheel button.",
+        "acteur": "customer"
+      },
+      {
+        "etape": "Understanding and routing",
+        "detail": "The MBUX assistant distinguishes a vehicle command from an open question; open questions go to the genAI layer.",
+        "acteur": "AI"
+      },
+      {
+        "etape": "Search and writing",
+        "detail": "A Bing search retrieves up-to-date information, ChatGPT via Azure OpenAI writes a natural-language answer.",
+        "acteur": "AI"
+      },
+      {
+        "etape": "Delivery and follow-up",
+        "detail": "The answer is read to the driver, who can continue the conversation on the same topic.",
+        "acteur": "AI"
+      },
+      {
+        "etape": "Logging",
+        "detail": "The voice command data is stored in the Mercedes-Benz Intelligent Cloud, anonymized then analyzed.",
+        "acteur": "data team"
+      }
+    ]
+  },
+  "replication": {
+    "prerequis_data": [
+      "up-to-date reference content (web search or knowledge base)",
+      "vehicle and session context"
+    ],
+    "prerequis_orga": [
+      "connected services team",
+      "legal and privacy agreement on sending requests to the cloud"
+    ],
+    "stack_possible": [
+      "Azure OpenAI or equivalent cloud LLM",
+      "search/RAG engine",
+      "onboard ASR/TTS layer"
+    ],
+    "equipe": "1 voice PM + 2-4 embedded/connected services devs + 1 cloud/LLM engineer, with privacy legal support.",
+    "playbook": [
+      {
+        "action": "Isolate the open questions the current voice assistant cannot handle and frame the legal side of consent to sending requests to the cloud.",
+        "livrable": "Prioritized list of use cases and validated privacy file."
+      },
+      {
+        "action": "Prototype the intent routing (vehicle command vs open question) and plug a cloud LLM with web search on a test bench.",
+        "livrable": "Working prototype outside the vehicle with measured latency."
+      },
+      {
+        "action": "Harden the system: filtering of sensitive topics, behavior on connectivity loss, embedded ASR/TTS integration.",
+        "livrable": "Hardened version tested in real driving conditions."
+      },
+      {
+        "action": "Open a beta program on a subset of the fleet via remote update and measure voice engagement.",
+        "livrable": "Beta report: usage, requested topics, incidents."
+      },
+      {
+        "action": "Deploy into series production via OTA update and track usage in production.",
+        "livrable": "Feature in production on the target fleet with a usage dashboard."
+      }
+    ],
+    "premiere_etape": "Isolate the open questions the current voice assistant cannot handle and route them to an LLM with search."
+  },
+  "statut_vivant": {
+    "note": "Feature pushed into series production via remote update in December 2024, active on the MBUX fleet; the brand also announced the next-generation MBUX Virtual Assistant genAI (MB.OS) for the following platforms."
+  },
+  "transposable_ue": {
+    "note": "Already deployed in Germany and the UK as of December 2024. The voice command data transits through the Mercedes-Benz Intelligent Cloud then is anonymized; the GDPR watchpoint concerns consent to sending the request to Azure OpenAI and Bing."
+  }
+}

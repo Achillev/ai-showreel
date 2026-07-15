@@ -1,0 +1,101 @@
+{
+  "seo": {
+    "title": "Duke Energy: self-service chatbot in the app - 280,000 interactions in 3 months (2023)",
+    "meta_description": "Duke Energy's mobile app chatbot handled more than 280,000 interactions in three months and cut manual feedback forms by 90% in the US.",
+    "resume_citable": "The self-service chatbot in Duke Energy's mobile app logged more than 280,000 interactions from 55,000 unique users in three months and cut manual feedback form submissions by 90%.",
+    "faq": [
+      {
+        "q": "What does Duke Energy's chatbot do?",
+        "a": "It answers, in the mobile app, the main pain points identified through the feedback feature and steers customers toward self-service."
+      },
+      {
+        "q": "What were the results in the first months?",
+        "a": "More than 280,000 interactions and 104,000 sessions from 55,000 unique users in three months, with a 90% drop in manual feedback forms."
+      }
+    ]
+  },
+  "pattern": "Self-service chatbot in the mobile app",
+  "etape_parcours": "post-purchase",
+  "objectif_business": "Handle customers' most frequent pain points in the mobile app to deflect requests toward self-service and ease the other channels.",
+  "description": "Duke Energy launched a chatbot in its customer mobile app in April 2023, built with its Mobile App and Chatbot teams. It answers the main pain points identified through the app's feedback feature, alongside a redesign of the More screen. In its first three months it logged more than 280,000 interactions and 104,000 chat sessions from 55,000 unique users, and cut manual feedback form submissions by 90%. The project received a Gold Digital Experience Award.",
+  "resultats": [
+    { "metrique": "Interactions in 3 months, including 104,000 sessions and 55,000 unique users" },
+    { "metrique": "Reduction in manual feedback form submissions" }
+  ],
+  "niveau_preuve": {
+    "justification": "Figures presented by Duke Energy at a conference (a Chartwell writeup quoting the product leads), repeated with the same values by a sector analysis. A real, quantified deployment, but with conference-declared sourcing."
+  },
+  "stack_technique": [
+    { "detail": "NLP chatbot developed by the internal Mobile App and Chatbot teams; no external platform is publicly named." },
+    { "detail": "The chatbot's single channel, with access to customer account data and a redesign of the More screen carried out in parallel." },
+    { "detail": "Source of the pain points that prioritize the cases handled by the bot; manual form submissions dropped by 90%." }
+  ],
+  "fonctionnement_operationnel": {
+    "cadence": "Real time in the mobile app.",
+    "opere_par": "Duke Energy's Mobile App and Chatbot teams.",
+    "signal_pilote": "The pain points surfaced by the app's feedback feature. Without this feedback flow, the chatbot targets the wrong cases and deflection drops.",
+    "etapes": [
+      {
+        "etape": "Detecting pain points",
+        "detail": "The app's feedback feature surfaces the main customer pains.",
+        "acteur": "data team"
+      },
+      {
+        "etape": "Answering in the app",
+        "detail": "The chatbot answers common requests and guides toward self-service.",
+        "acteur": "AI"
+      },
+      {
+        "etape": "Measured deflection",
+        "detail": "Feedback form submissions drop as answers are resolved upstream.",
+        "acteur": "AI"
+      }
+    ]
+  },
+  "replication": {
+    "prerequis_data": [
+      "structured surfacing of customer pain points",
+      "access to account data",
+      "a catalog of frequent requests"
+    ],
+    "prerequis_orga": [
+      "a mobile product team",
+      "an active feedback loop in the app"
+    ],
+    "stack_possible": [
+      "an NLP chatbot integrated into the mobile app",
+      "connectors to the account systems",
+      "a feedback analysis tool"
+    ],
+    "premiere_etape": "Analyze the app's feedback to list the five most frequent pains and answer them with a chatbot in the app.",
+    "playbook": [
+      {
+        "action": "Analyze in-app feedback and list the five most frequent pain points.",
+        "livrable": "A prioritized list of cases to handle, with volumes"
+      },
+      {
+        "action": "Design the response journeys and read access to account data.",
+        "livrable": "Dialogue scripts and account connectors validated"
+      },
+      {
+        "action": "Develop and test the chatbot in the app, with QA on the five priority cases.",
+        "livrable": "A working bot in pre-production"
+      },
+      {
+        "action": "Roll out gradually to a fraction of the app's users.",
+        "livrable": "Chatbot in production with session tracking"
+      },
+      {
+        "action": "Measure deflection (forms, contacts) and extend the covered cases.",
+        "livrable": "A quantified deflection readout and a backlog of the next cases"
+      }
+    ],
+    "equipe": "1 mobile product PM + 2 devs (app and chatbot) + 1 analyst for the feedback."
+  },
+  "statut_vivant": {
+    "note": "The app chatbot is still referenced (Duke Energy support pages). The figures cover the first three months of 2023; the evolution since has not been published, so activity confirmation should be re-verified."
+  },
+  "transposable_ue": {
+    "note": "A self-service chatbot in the mobile app is transferable to the EU. The GDPR framing covers the account data displayed and the conversation history. The described case targets US customers of a regulated utility, a different regulatory context from the European market."
+  }
+}

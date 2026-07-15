@@ -1,0 +1,96 @@
+{
+  "seo": {
+    "title": "Lidl: Lidlize genAI campaign - 1.7M visuals in 3 weeks (2025)",
+    "meta_description": "Lidl France and the agency Marcel launched Lidlize, a genAI app generating objects in the brand palette: 1.7M visuals and 1M+ participants in 3 weeks.",
+    "resume_citable": "In 2025, Lidl France and the agency Marcel (Publicis) launched Lidlize, a genAI app (fine-tuned Bria model plus OpenAI and spaCy) that generated more than 1.7 million brand visuals in three weeks, with more than one million participants and peaks beyond 1,000 image requests per minute.",
+    "faq": [
+      {
+        "q": "What AI did the Lidlize campaign use?",
+        "a": "A Bria image generation model fine-tuned on Lidl's visual language, paired with an OpenAI LLM to interpret the user's intent and spaCy for content moderation, all hosted on AWS."
+      },
+      {
+        "q": "What was the viral mechanic?",
+        "a": "The user typed the name of an object and got a visual in Lidl's identity; the creations were displayed in a public gallery and the most liked one was to be made and sold for real."
+      },
+      {
+        "q": "Is this a permanent deployment?",
+        "a": "No. It is a one-off campaign that ran for about three weeks in 2025; it is notable for its scale (1.7M visuals, 1M+ participants) and a Wood Pencil at the D&AD 2025, not for a durable production rollout."
+      }
+    ]
+  },
+  "pattern": "participatory genAI campaign: UGC image generator in the brand palette",
+  "etape_parcours": "Discovery",
+  "objectif_business": "Bring the Lidl brand to life with the general public by letting them create objects in the retailer's visual identity themselves, with a viral mechanic: the most liked creation is actually made and sold.",
+  "description": "Lidl France, with the agency Marcel (Publicis), launched an app called Lidlize that lets anyone generate a visual in the brand's red, blue, and yellow palette. The user types the name of an object, a car, sneakers, a pet figurine, without any prompt engineering skill. Behind it, an OpenAI LLM interprets the intent and composes a structured prompt, spaCy applies the allowed-content rules, and a Bria model trained on Lidl's visual language produces the image so that it stays recognizable as Lidl whatever the requested object. The creations were displayed in a public gallery where the community voted: the most liked was to be actually made and sold by the retailer, which provided the incentive mechanic. The system runs on AWS, with multilingual input (French entries translated) and a generation time cut from 8 to 2 seconds to handle the load.",
+  "points_cles": ["Lidlize genAI app letting the public create objects in the Lidl brand palette.", "Fine-tuned Bria model, OpenAI LLM for intent, spaCy for moderation, on AWS.", "1.7 million visuals and more than 1 million participants in 3 weeks.", "Evidence level B, status mixed signals: one-off campaign awarded at D&AD 2025."],
+  "resultats": [
+    { "metrique": "Unique visuals generated in 3 weeks" },
+    { "metrique": "Load peak in image requests per minute" },
+    { "metrique": "Generation time" },
+    { "metrique": "Participants" }
+  ],
+  "niveau_preuve": {
+    "justification": "Quantified case study from the vendor Bria, plus established press (PYMNTS) naming Lidl and Marcel, plus an official D&AD archive entry confirming the scale of participation. Concordant sources on the same orders of magnitude. Not level A: no financial result or attributed revenue."
+  },
+  "stack_technique": [
+    { "detail": "Image generation model fine-tuned on Lidl's visual language" },
+    { "detail": "Interpretation of user intent and generation of the structured prompt" },
+    { "detail": "Open-source NLP for applying the allowed-content rules" },
+    { "detail": "Hosting and auto-scaling to handle the load peaks" }
+  ],
+  "fonctionnement_operationnel": {
+    "cadence": "Real time during the campaign window (about 3 weeks), on-demand generation for each user",
+    "opere_par": "Creative agency (Marcel) plus the Lidl France brand team, on an auto-scaled cloud infrastructure",
+    "signal_pilote": "The user's intent (the word or object entered): this is what the LLM turns into a structured prompt. If intent interpretation or moderation fails, off-guideline or forbidden content is generated, and the image no longer looks like Lidl.",
+    "etapes": [
+      {
+        "etape": "Free user entry",
+        "detail": "The user types the name of an object in the app, without prompt engineering, in French.",
+        "acteur": "client / general public"
+      },
+      {
+        "etape": "Prompt interpretation and structuring",
+        "detail": "An OpenAI LLM understands the intent and composes a standardized structured prompt; spaCy filters the allowed content.",
+        "acteur": "AI"
+      },
+      {
+        "etape": "Generation in the Lidl visual language",
+        "detail": "The fine-tuned Bria model produces the image in the brand's palette and style, in about 2 seconds.",
+        "acteur": "AI"
+      },
+      {
+        "etape": "Display and community voting",
+        "detail": "The creation enters a public gallery where the community votes; the most liked visual is meant to be made and sold.",
+        "acteur": "client / brand team"
+      }
+    ]
+  },
+  "replication": {
+    "prerequis_data": [
+      "A brand visual language codified enough (palette, shapes, style) to fine-tune a generation model",
+      "Licensed training datasets, to avoid the risk of unsourced content",
+      "Explicit allowed-content rules to translate into moderation filters"
+    ],
+    "prerequis_orga": [
+      "A creative agency or team able to orchestrate the intent LLM, moderation, and the image model",
+      "A real incentive mechanic on the retailer side (here, making the winning product) to trigger virality",
+      "An infrastructure able to absorb sudden traffic peaks (auto-scaling)",
+      "A legal review of submitted and generated images (GDPR, image rights, AI Act)"
+    ],
+    "stack_possible": [
+      "Image generation model fine-tunable on brand guidelines (like Bria)",
+      "LLM to turn a free entry into a structured prompt",
+      "NLP library for moderation (like spaCy)",
+      "Cloud with auto-scaling",
+      "Web gallery with a voting system"
+    ],
+    "premiere_etape": "Verify that you can fine-tune a generation model on the brand guidelines with licensed data: this is what makes each image recognizable and legally defensible.",
+    "equipe": "A creative director on the agency side, a technical profile to connect the intent LLM, moderation, and the image model, a data/MLOps for the fine-tuning and the load, a legal counsel for the content."
+  },
+  "statut_vivant": {
+    "note": "One-off campaign, not a durable deployment: the app ran for about three weeks in 2025 and then the campaign closed. It passes the filter through documented volume and virality (1.7M visuals, 1M+ participants, peaks >1,000 requests/min) and through D&AD 2025 recognition. The pattern (genAI generator in the brand palette, voting mechanic) remains replayable but this specific case is no longer online."
+  },
+  "transposable_ue": {
+    "note": "Case already run in the EU (Lidl France). The setup was built with an explicit concern for compliance: Bria model trained on licensed datasets, traceability of each generated asset back to its source, integrated content moderation. Replicating it requires a GDPR legal basis for user-submitted images and AI Act vigilance on the generated content."
+  }
+}

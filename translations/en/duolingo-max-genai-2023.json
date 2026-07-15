@@ -1,0 +1,110 @@
+{
+  "seo": {
+    "title": "Duolingo Max: a GPT-4 genAI tutor - ~5% of subscribers and a bookings driver (2023)",
+    "meta_description": "Duolingo Max sells genAI features (Video Call, Roleplay, GPT-4) as a premium tier; ~5% of subscribers in Q4 2024 and a driver of bookings outperformance.",
+    "resume_citable": "Duolingo Max, a premium genAI tier built on GPT-4 (Video Call, Roleplay), accounted for about 5% of subscribers in late 2024 and drove bookings outperformance (+42% in Q4 2024), according to the earnings call.",
+    "faq": [
+      {
+        "q": "What is Duolingo Max?",
+        "a": "A premium subscription tier adding genAI features built on GPT-4: Explain My Answer, Roleplay, and Video Call (a video call with an AI character)."
+      },
+      {
+        "q": "What is Max's economic weight?",
+        "a": "About 5% of subscribers in Q4 2024, cited by management as a key driver of bookings outperformance in the quarter."
+      }
+    ]
+  },
+  "pattern": "Conversational genAI tutor inside a premium subscription",
+  "etape_parcours": "loyalty",
+  "objectif_business": "Create a higher subscription tier (Max) above Super, selling genAI features the free version cannot offer, to raise revenue per user and bookings.",
+  "description": "Duolingo Max adds genAI features on top of the subscription: Explain My Answer (the AI explains why an answer is wrong), Roleplay (a written conversation with an AI character), and Video Call, a video call with an animated character (Lily) that holds a spoken conversation generated in real time. These features run on GPT-4. Max is offered as a premium tier to a subset of users.",
+  "points_cles": ["Premium Max tier adding genAI features (Explain My Answer, Roleplay, Video Call).", "Built on OpenAI GPT-4 with an in-house integration layer.", "About 5% of subscribers in late 2024, bookings up 42% year over year.", "Evidence A, confirmed status."],
+  "resultats": [
+    { "metrique": "Max's share of total subscribers (Q4 2024)" },
+    { "metrique": "Bookings growth (Q4 2024, YoY)" },
+    { "metrique": "2025 bookings guidance" }
+  ],
+  "niveau_preuve": {
+    "justification": "Figures from Duolingo's Q4 2024 earnings call (transcript), where management explicitly attributes part of the bookings outperformance to Duolingo Max subscriptions. Financial results from a listed company."
+  },
+  "stack_technique": [
+    { "detail": "Model behind Explain My Answer, Roleplay, and Video Call; generates explanations and dialogue turns in real time." },
+    { "detail": "Prompting with lesson context and the learner's answer, guardrails, and rendering in the interface." },
+    { "detail": "Packaging of the genAI features into a subscription tier above Super." },
+    { "detail": "Syncs the real-time generated spoken conversation with the animated character Lily." }
+  ],
+  "fonctionnement_operationnel": {
+    "cadence": "Real time on every learner interaction; inference costs are tracked as a margin line.",
+    "opere_par": "Duolingo's Product / AI team, with the OpenAI API on the back end.",
+    "signal_pilote": "The perceived quality of the generated conversation and explanation, which justifies the price of the Max tier. If the LLM response is generic or wrong, the value of the upgrade collapses.",
+    "etapes": [
+      {
+        "etape": "Trigger",
+        "detail": "The learner launches Explain My Answer, Roleplay, or Video Call from the app.",
+        "acteur": "human"
+      },
+      {
+        "etape": "Generation",
+        "detail": "The prompt (lesson context, learner's answer) is sent to the LLM, which produces the explanation or dialogue turn.",
+        "acteur": "AI"
+      },
+      {
+        "etape": "Rendering",
+        "detail": "The text or voice is rendered in the interface; for Video Call, synced with the animated character.",
+        "acteur": "site_app"
+      },
+      {
+        "etape": "Economic steering",
+        "detail": "The team tracks inference cost per use and compares it with Max revenue to hold the margin.",
+        "acteur": "data / finance team"
+      }
+    ]
+  },
+  "replication": {
+    "prerequis_data": [
+      "structured educational content",
+      "usage context (current answer, level)",
+      "guardrails on the LLM's responses"
+    ],
+    "prerequis_orga": [
+      "a product team able to package a premium tier",
+      "tracking of inference costs",
+      "a quality evaluation process for genAI outputs"
+    ],
+    "stack_possible": [
+      "OpenAI / Anthropic or an equivalent LLM",
+      "an in-house prompt and guardrail layer",
+      "integration with the existing app"
+    ],
+    "premiere_etape": "Isolate a feature with high perceived value (the contextualized explanation) and verify that the LLM makes it reliable before turning it into a paid subscription argument.",
+    "playbook": [
+      {
+        "action": "Isolate a feature with high perceived value (the contextualized explanation) and prototype it on the LLM.",
+        "livrable": "A working prototype on real learner cases"
+      },
+      {
+        "action": "Evaluate the reliability of the outputs and set the guardrails.",
+        "livrable": "A quality evaluation grid and an acceptable error rate reached"
+      },
+      {
+        "action": "Package the premium tier: pricing, paywall, upgrade journey.",
+        "livrable": "A premium offer ready with per-use inference cost tracking"
+      },
+      {
+        "action": "Launch a pilot on a subset of users and measure conversion and retention.",
+        "livrable": "A read on tier conversion and churn on the pilot"
+      },
+      {
+        "action": "Launch more broadly and steer the margin: Max revenue against inference cost.",
+        "livrable": "The tier in production with a margin dashboard"
+      }
+    ],
+    "equipe": "2-3 product devs + 1 PM + 1 genAI quality evaluation profile + finance for the inference cost tracking."
+  },
+  "statut_vivant": {
+    "note": "Max cited in Q4 2024 results as a driver of the outperformance and available to the majority of DAU; the feature is active and expanding."
+  },
+  "transposable_ue": {
+    "note": "A consumer conversational genAI feature. The GDPR applies to the exchanges with the learner; the AI Act requires transparency about interacting with an AI. Rolled out in waves by language and market."
+  }
+}

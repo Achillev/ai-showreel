@@ -1,0 +1,127 @@
+{
+  "seo": {
+    "title": "Papa Johns: AI loyalty personalization with Google Cloud - 150 million customers (2025)",
+    "meta_description": "Papa Johns personalizes loyalty and ordering with Google Cloud (BigQuery, Vertex AI, Gemini) and deploys the first omnichannel Food Ordering agent for its 150 million customers.",
+    "resume_citable": "Papa Johns formalized a multi-year partnership with Google Cloud to personalize loyalty and ordering via BigQuery, Vertex AI, and Gemini, and in 2026 became the first to deploy Google Cloud's omnichannel Food Ordering agent for more than 150 million customers.",
+    "faq": [
+      {
+        "q": "Which Google Cloud tools does Papa Johns use?",
+        "a": "BigQuery for data, Vertex AI and Gemini for personalization, and the omnichannel Food Ordering agent for ordering, carried by the PJX innovation team."
+      },
+      {
+        "q": "Is the system fully deployed?",
+        "a": "No. The partnership is active and the ordering agent began its deployment in early 2026, with a national rollout targeted for the end of 2026; the quantified impact is not yet published."
+      }
+    ]
+  },
+  "pattern": "real-time personalization of loyalty and ordering with generative AI",
+  "etape_parcours": "loyalty",
+  "objectif_business": "Anticipate the needs of Papa Rewards customers and personalize offers, content, and the ordering journey in real time, to bring loyal members back and drive reordering.",
+  "description": "In April 2025, Papa Johns expanded its multi-year partnership with Google Cloud and created an innovation team, PJX, to apply BigQuery, Vertex AI, and Gemini to its data. Stated goals: personalize the site and app experience in real time (promo codes and messages based on history, preferences, and location), predict ordering habits to offer deals and shortcuts, and deploy a chatbot and voice ordering. In January 2026, Papa Johns became the first partner to deploy Google Cloud's omnichannel Food Ordering agent, which recognizes Papa Rewards members for a smooth reorder; the national deployment is planned by the end of 2026. The network has more than 6,000 restaurants and serves more than 150 million customers.",
+  "resultats": [
+    {
+      "metrique": "Customer base served worldwide"
+    },
+    {
+      "metrique": "Restaurant network across about 50 countries"
+    },
+    {
+      "metrique": "Google Cloud omnichannel Food Ordering agent"
+    }
+  ],
+  "niveau_preuve": {
+    "justification": "Partnership formalized by official Papa Johns and Google Cloud releases naming the brand, with a first deployment of the ordering agent announced in early 2026. The personalization capabilities are being rolled out and the omnichannel agent is in national rollout by the end of 2026; no quantified performance result is published yet, hence C."
+  },
+  "stack_technique": [
+    {
+      "detail": "Data warehouse where Papa Johns centralizes its ordering and Papa Rewards loyalty data."
+    },
+    {
+      "detail": "Google Cloud's ML platform used for the personalization models (offers, content, suggestions based on the profile)."
+    },
+    {
+      "detail": "Google's model family used for the setup's generative capabilities (personalization, chatbot, voice ordering)."
+    },
+    {
+      "detail": "Google Cloud's omnichannel ordering agent, of which Papa Johns is the first deployer; it recognizes Papa Rewards members for reordering."
+    },
+    {
+      "detail": "Multi-year technology partner, alongside Papa Johns' in-house PJX innovation team."
+    }
+  ],
+  "fonctionnement_operationnel": {
+    "cadence": "Real time on the digital surfaces (site, app, ordering agent); personalized marketing campaigns by trigger",
+    "opere_par": "Papa Johns' PJX innovation team with Google Cloud, and loyalty marketing",
+    "signal_pilote": "The Papa Rewards profile: history, preferences, location. Without member identification and up-to-date ordering data, personalization and proactive reordering fall back to a generic experience.",
+    "etapes": [
+      {
+        "etape": "Data unification",
+        "detail": "Ordering and loyalty data are centralized in BigQuery.",
+        "acteur": "PJX / data team"
+      },
+      {
+        "etape": "Personalization models",
+        "detail": "Vertex AI and Gemini compute offers, content, and suggestions based on the profile.",
+        "acteur": "AI"
+      },
+      {
+        "etape": "Surface personalization",
+        "detail": "Site, app, and ordering agent adapt the experience and recognize Papa Rewards members for reordering.",
+        "acteur": "AI / site and app"
+      },
+      {
+        "etape": "Triggered campaigns",
+        "detail": "Personalized push and email go out based on anticipated occasions and preferences.",
+        "acteur": "marketing"
+      }
+    ]
+  },
+  "replication": {
+    "playbook": [
+      {
+        "action": "Unify ordering and loyalty data in a cloud warehouse, with each customer identified through the loyalty program.",
+        "livrable": "Unified, queryable customer data"
+      },
+      {
+        "action": "Build the first personalization models: offers and messages based on history, preferences, and location, tested on a segment.",
+        "livrable": "Offer engine in test with a control group"
+      },
+      {
+        "action": "Personalize the surfaces (site, app) for identified members and connect triggered campaigns (push, email) to anticipated occasions.",
+        "livrable": "Personalized surfaces and campaigns in production"
+      },
+      {
+        "action": "Pilot a conversational ordering agent on one channel, with member recognition for reordering.",
+        "livrable": "Agent piloted on a limited scope"
+      },
+      {
+        "action": "Extend the setup and measure reordering, frequency, and retention against non-exposed cohorts.",
+        "livrable": "Quantified retention assessment by cohort"
+      }
+    ],
+    "equipe": "1 data team of 2-4 people + 1 loyalty PM + a cloud partner; CRM marketing runs the campaigns day to day",
+    "prerequis_data": [
+      "unified ordering and loyalty data",
+      "loyalty program identifying each customer",
+      "contextual signals (location, occasions)"
+    ],
+    "prerequis_orga": [
+      "data team or a cloud partner",
+      "active loyalty program",
+      "marketing-consent governance"
+    ],
+    "stack_possible": [
+      "data warehouse (BigQuery, Snowflake)",
+      "ML and LLM platform (Vertex AI, Gemini)",
+      "conversational ordering agent",
+      "app and site"
+    ],
+    "premiere_etape": "Unify ordering and loyalty data in a warehouse usable by personalization models."
+  },
+  "statut_vivant": {
+    "note": "The partnership and the PJX team are active, and the ordering agent began its deployment in early 2026. But part of the setup (omnichannel agent, real-time personalization) is still in a national rollout targeted for the end of 2026; the evidence relies more on the commitment and the first deployment than on a quantified impact at scale."
+  },
+  "transposable_ue": {
+    "note": "Real-time personalization of loyalty and offers relies on the customer profile: a GDPR legal basis and consent are required for profiling and targeted marketing, with AI Act transparency for the conversational ordering agent."
+  }
+}

@@ -1,0 +1,109 @@
+{
+  "seo": {
+    "title": "De Paardendrogist: AI-automated Meta sales (Advantage+) - +404% peak revenue, ROAS >18 (2024)",
+    "meta_description": "With scandiweb, Dutch retailer De Paardendrogist restructured its Meta account around Advantage+ Shopping: +111% revenue, +404% at the November peak and a ROAS above 18.",
+    "resume_citable": "In 2024, Dutch e-commerce retailer De Paardendrogist grew revenue by 111% (and +404% at the November peak, ROAS above 18) by restructuring its Meta account around Advantage+ Shopping campaigns and geographic targeting, across the Netherlands, Belgium, and Germany.",
+    "faq": [
+      {
+        "q": "Which AI tool did De Paardendrogist use?",
+        "a": "Meta Advantage+ Shopping, which manages audiences, placements, and creative from the catalog, combined with boosted posts and geographic targeting."
+      },
+      {
+        "q": "Is the result incremental or attributed?",
+        "a": "Attributed: the figures come from the agency scandiweb (revenue and ROAS measured on the account), with no incrementality study published for this case."
+      }
+    ]
+  },
+  "pattern": "AI-automated sales campaign combined with geographic targeting and boosted posts, within a restructured account",
+  "etape_parcours": "discovery -> purchase",
+  "objectif_business": "Restructure the Meta account to better allocate budget, grow revenue on the private-label products, and hold a ROAS of at least 10.",
+  "description": "De Paardendrogist, a Dutch e-commerce retailer of horse care products with more than 30 years of history, restructured its Meta account with the agency scandiweb. The setup relies on Advantage+ Shopping campaigns, where the AI chooses audiences, placements, and creative from the product catalog, combined with boosted posts, retargeting, and geographic targeting focused on areas with a high density of horse farms, in the Netherlands, Belgium, and Germany. The formats tested range from a simple visual to catalog carousels and collection ads. Advantage+ Shopping and boosted posts together drove 45 percent of Meta revenue. The restructuring raised revenue by 111.2 percent, with a conversion rate up 30 percent. At the November 2024 peak compared to November 2023, revenue jumped 404 percent and overall ROAS exceeded 18, particularly strong in the Dutch market.",
+  "points_cles": [
+    "Meta account restructured around AI-automated sales campaigns.",
+    "Meta Advantage+ Shopping plus boosted posts, retargeting, and geographic targeting.",
+    "Revenue +111.2% and +404% at the November peak, ROAS above 18.",
+    "Evidence level B, status confirmed, project run with the agency scandiweb."
+  ],
+  "resultats": [
+    { "metrique": "Revenue growth after restructuring" },
+    { "metrique": "Share of Meta revenue driven by Advantage+ Shopping and boosted posts" },
+    { "metrique": "Revenue at the November 2024 peak vs November 2023" },
+    { "metrique": "Overall ROAS over the period" }
+  ],
+  "niveau_preuve": {
+    "justification": "Two quantified case studies from the integrator that ran the project (scandiweb), consistent on the same brand and the same Advantage+ setup; published by the agency, without primary or independent press corroboration."
+  },
+  "stack_technique": [
+    { "detail": "automated sales campaign: audiences, bids, placements, and creative driven by Meta ML from the catalog" },
+    { "detail": "purchase reporting, the signal that lets the algorithm hold the ROAS target of at least 10" },
+    { "detail": "rules that adjust spend based on an external factor, here the weather that affects demand for equine products" },
+    { "detail": "e-commerce agency that restructured the account and manages the campaigns" }
+  ],
+  "fonctionnement_operationnel": {
+    "cadence": "Continuous delivery, with a ramp-up at the seasonal November peak; automatic rules to adjust spend based on the weather, which weighs on demand for equine products.",
+    "opere_par": "The agency scandiweb with the De Paardendrogist team.",
+    "signal_pilote": "The purchases reported by Meta tracking and the ROAS target of at least 10. If the purchase signal is missing, the algorithm optimizes poorly and ROAS drops.",
+    "etapes": [
+      {
+        "etape": "Restructure the account",
+        "detail": "Reorganization of the campaigns for better budget allocation between Advantage+ Shopping, boosted posts, and retargeting.",
+        "acteur": "Agency"
+      },
+      {
+        "etape": "Deliver through Meta AI",
+        "detail": "Advantage+ Shopping chooses audiences, placements, and creative from the catalog. Formats tested: simple visual, catalog carousels, collection ads.",
+        "acteur": "Meta AI"
+      },
+      {
+        "etape": "Target equine areas and manage the weather",
+        "detail": "Geographic targeting on regions with a high density of horse farms, with automatic rules that adjust spend based on the weather.",
+        "acteur": "Agency"
+      }
+    ]
+  },
+  "replication": {
+    "prerequis_data": [
+      "Clean, up-to-date product catalog (feed)",
+      "Reliable Meta purchase tracking (Pixel + Conversions API)",
+      "Geographic data to target high-demand areas"
+    ],
+    "prerequis_orga": [
+      "A Meta account to restructure in order to reallocate budget",
+      "Automatic rules to manage spend based on an external factor (here the weather)"
+    ],
+    "stack_possible": [
+      "Meta Advantage+ Sales Campaigns + CAPI",
+      "Automatic budget management rules"
+    ],
+    "premiere_etape": "Restructure the account around an Advantage+ Shopping campaign and geographic targeting, with a clear ROAS target to defend.",
+    "playbook": [
+      {
+        "action": "Audit and restructure the account: budget allocation between Advantage+ Shopping, boosted posts, and retargeting.",
+        "livrable": "New account plan with budget split"
+      },
+      {
+        "action": "Make the catalog feed and purchase measurement reliable (Pixel + Conversions API).",
+        "livrable": "Validated purchase tracking in Events Manager"
+      },
+      {
+        "action": "Launch Advantage+ Shopping with a clear ROAS target and geographic targeting on high-demand areas.",
+        "livrable": "Campaigns active in the target markets"
+      },
+      {
+        "action": "Let the learning phase converge and test the formats (simple visual, catalog carousel, collection ads).",
+        "livrable": "Winning formats identified by cost and ROAS"
+      },
+      {
+        "action": "Set the automatic rules on the relevant external factor (here the weather) and read revenue, conversion, and ROAS.",
+        "livrable": "Documented management and budget reallocated to what performs"
+      }
+    ],
+    "equipe": "1 media buyer (in-house or agency) + dev access for the feed and the Conversions API"
+  },
+  "statut_vivant": {
+    "note": "De Paardendrogist remains an active e-commerce retailer and Advantage+ Shopping is Meta's default sales format; scandiweb remains an e-commerce partner, which secures the durability of the pattern."
+  },
+  "transposable_ue": {
+    "note": "A case already deployed in the Netherlands, Belgium, and Germany, hence in a GDPR/ePrivacy environment. It relies on the product catalog and Meta purchase tracking; activation is subject to consent. Manual geographic targeting stays under the advertiser's control. Limited AI Act risk."
+  }
+}

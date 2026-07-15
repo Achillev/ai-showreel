@@ -1,0 +1,126 @@
+{
+  "seo": {
+    "title": "Zalando: high-frequency AI markdown pricing - about 6% more profit, validated across 12 markets (2024)",
+    "meta_description": "Zalando re-optimizes markdowns on millions of items several times a week via forecasting and multi-objective optimization; the system brought about 6% more profit, validated by 23 A/B tests.",
+    "resume_citable": "Zalando drives the markdowns of several million items through forecasting and multi-objective optimization; validated by 23 A/B tests across 12 markets, the system delivered about 6% more profit at equivalent sales and revenue.",
+    "faq": [
+      {
+        "q": "How does Zalando set its markdowns?",
+        "a": "A demand forecast by gradient-boosted trees feeds a multi-objective optimization that chooses the markdown levels on millions of items, several times a week."
+      },
+      {
+        "q": "What was the impact of the new pricing system?",
+        "a": "About 6% more profit at equivalent sales and revenue, and a decision time cut from hours to minutes, validated by 23 A/B tests across 12 markets."
+      }
+    ]
+  },
+  "pattern": "high-frequency markdown pricing (predict-then-optimize)",
+  "etape_parcours": "purchase",
+  "objectif_business": "Set the right discount level several times a week on millions of items with a limited shelf life, to maximize profit without sacrificing sales or revenue.",
+  "points_cles": [
+    "High-frequency markdown pricing on millions of items, several times a week.",
+    "In-house gradient-boosted trees forecasting and multi-objective optimization (predict-then-optimize).",
+    "About 6 percent more profit, decision time cut from hours to minutes.",
+    "Evidence level B, validated by 23 A/B tests across 12 markets, confirmed active status."
+  ],
+  "description": "Zalando, one of Europe's leading fashion e-commerce players, has to re-optimize markdowns on a catalog of several million items, several times a week, with a decision window of a few hours. The system described combines a daily-resolution demand forecast by gradient-boosted trees and a multi-objective optimization framework, following the predict-then-optimize paradigm. It manages the price of around 600,000 items at any given moment across all markets. The new system was validated by 23 A/B tests across 12 markets during the 2023-2024 sales campaigns, then deployed to production.",
+  "resultats": [
+    {
+      "metrique": "Profit vs previous approach, at equivalent sales and revenue"
+    },
+    {
+      "metrique": "Price decision time"
+    },
+    {
+      "metrique": "Additional weekly profit, large-scale decomposition framework"
+    }
+  ],
+  "niveau_preuve": {
+    "justification": "Two technical papers by Zalando's teams describing the system in production, with quantified results validated by 23 A/B tests across 12 markets. Figures from internal research and not consolidated into financial results, hence a B level."
+  },
+  "fonctionnement_operationnel": {
+    "cadence": "Re-optimization several times a week, with a window of a few hours to decide markdowns across the whole catalog.",
+    "opere_par": "Zalando pricing and data science team.",
+    "signal_pilote": "The daily demand forecast per item and per market, which feeds the markdown optimization. Without a reliable forecast, the trade-off between profit, sales, and revenue degrades.",
+    "etapes": [
+      {
+        "etape": "Demand forecast",
+        "detail": "Gradient-boosted trees models estimate daily demand per item as a function of price.",
+        "acteur": "AI"
+      },
+      {
+        "etape": "Multi-objective optimization",
+        "detail": "An optimization framework chooses the markdown levels that trade off profit, sales, and revenue across millions of items.",
+        "acteur": "AI"
+      },
+      {
+        "etape": "Price application",
+        "detail": "The computed markdowns are applied on the site and the app for all relevant markets.",
+        "acteur": "AI"
+      },
+      {
+        "etape": "Oversight and A/B testing",
+        "detail": "The pricing team validates changes via A/B tests and monitors the profit impact.",
+        "acteur": "data team"
+      }
+    ]
+  },
+  "replication": {
+    "prerequis_data": [
+      "sales and price history per item",
+      "catalog with product life cycle",
+      "cost and margin structure per item"
+    ],
+    "prerequis_orga": [
+      "pricing and data science team",
+      "compute infrastructure to re-optimize the whole catalog in hours",
+      "A/B testing process"
+    ],
+    "stack_possible": [
+      "gradient-boosted trees forecasting",
+      "multi-objective optimization solver",
+      "predict-then-optimize pipeline"
+    ],
+    "premiere_etape": "Build a demand forecast per item and per price before attaching the markdown optimization to it.",
+    "playbook": [
+      {
+        "action": "Gather the sales/price history per item and the margin structure.",
+        "livrable": "Item x day x price dataset with costs and product life cycle."
+      },
+      {
+        "action": "Build the demand forecast per item as a function of price.",
+        "livrable": "Forecast backtested on history, errors documented by category."
+      },
+      {
+        "action": "Attach markdown optimization under constraints (profit, sales, revenue) on a sub-catalog.",
+        "livrable": "Markdown engine operational on a limited scope."
+      },
+      {
+        "action": "Validate via A/B tests against the current pricing rules, market by market.",
+        "livrable": "Profit readout at equivalent sales and revenue vs previous approach."
+      },
+      {
+        "action": "Industrialize: short re-optimization window, monitoring, extension to the full catalog.",
+        "livrable": "Production system re-optimizing the catalog several times a week."
+      }
+    ],
+    "equipe": "2-4 data scientists (forecasting + optimization) + 1 data engineer + business pricing team"
+  },
+  "statut_vivant": {
+    "note": "System deployed to production after 23 A/B tests across 12 markets; the publications describe it as deeply integrated into Zalando's production environment."
+  },
+  "transposable_ue": {
+    "note": "System already designed and operated in Europe. The pricing covers catalog prices and discounts (markdown), not a price personalized per individual, which limits GDPR exposure. The AI Act requires documenting the use."
+  },
+  "stack_technique": [
+    {
+      "detail": "Daily-resolution demand forecast per item and per price, the foundation of the predict-then-optimize system."
+    },
+    {
+      "detail": "Chooses the markdown levels that trade off profit, sales, and revenue, with Lagrangian decomposition to hold the scale (around 600,000 items managed at any given moment)."
+    },
+    {
+      "detail": "Production chain that re-optimizes the catalog several times a week within a window of a few hours, validated by 23 A/B tests across 12 markets."
+    }
+  ]
+}

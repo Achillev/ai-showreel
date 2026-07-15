@@ -1,0 +1,119 @@
+{
+  "seo": {
+    "title": "Atlassian: Rovo for its own ABM marketing - Customer 360 Agent and genAI content (2026)",
+    "meta_description": "Atlassian uses its own Rovo in marketing: a Customer 360 Agent aggregates the CRM to target ABM accounts and agents write content, with millions of Rovo users.",
+    "resume_citable": "Atlassian runs its ABM marketing on its own Rovo: a Customer 360 Agent aggregates the CRM to prioritize target accounts and agents write the content, with Rovo counting millions of monthly active users.",
+    "faq": [
+      {
+        "q": "How does Atlassian's marketing use Rovo?",
+        "a": "Via a Customer 360 Agent that aggregates the CRM to identify priority ABM accounts, and content agents that draft blog, copy, and social from Confluence."
+      },
+      {
+        "q": "Is the impact quantified?",
+        "a": "The use is documented by Atlassian marketers as an efficiency win, with no public conversion metric. The evidence of scale comes from Rovo's adoption, with millions of monthly active users."
+      }
+    ]
+  },
+  "pattern": "internal genAI agents for account targeting and marketing content production",
+  "etape_parcours": "consideration",
+  "objectif_business": "Run its own marketing on its own product. Atlassian's marketing teams use Rovo to spot priority accounts, prepare ABM campaigns, and produce content, as public dogfooding of the technology Atlassian sells.",
+  "description": "Atlassian uses Rovo, its genAI agent layer, internally in marketing. The account-based marketing team built a Customer 360 Agent that aggregates CRM data (renewal dates, key contacts, product usage, opportunities) to identify high-potential accounts and prepare targeted campaigns. Other agents, fed by Confluence pages and internal metrics, draft blog posts, campaign copy, and social content. The use is documented by Atlassian marketers themselves. The evidence of scale comes from Rovo's adoption, with millions of monthly active users claimed by Atlassian.",
+  "resultats": [
+    {
+      "metrique": "Account preparation and ABM targeting, gain claimed by the team (unquantified)"
+    },
+    {
+      "metrique": "Rovo monthly active users (evidence of scale)"
+    }
+  ],
+  "niveau_preuve": {
+    "justification": "The internal marketing use is documented by Atlassian marketers in an official blog, but without a conversion or ROI metric. The evidence of scale rests on Rovo's adoption (millions of monthly active users) communicated in the shareholder letter. Internal, self-reported, honestly graded."
+  },
+  "stack_technique": [
+    {
+      "detail": "Atlassian's genAI agent layer, which hosts the Customer 360 Agent and the content agents used by internal marketing."
+    },
+    {
+      "detail": "AI features embedded in Atlassian products, foundation of the generative capabilities; the underlying LLMs are not named in the sources."
+    },
+    {
+      "detail": "Internal knowledge base whose pages feed the writing agents (blog, copy, social) through RAG."
+    },
+    {
+      "detail": "Source of renewal dates, contacts, product usage, and opportunities aggregated by the Customer 360 Agent; the CRM vendor is not named in the sources."
+    }
+  ],
+  "fonctionnement_operationnel": {
+    "cadence": "Per campaign for ABM targeting, continuous for content production",
+    "opere_par": "Atlassian's account-based marketing team, on Rovo connected to Confluence and the CRM",
+    "signal_pilote": "The CRM data and the internal Confluence pages. Without a clean CRM and an up-to-date knowledge base, the Customer 360 Agent returns poorly prioritized accounts and off-topic content.",
+    "etapes": [
+      {
+        "etape": "Account data aggregation",
+        "detail": "The Customer 360 Agent consolidates renewal dates, contacts, product usage, and opportunities from the CRM.",
+        "acteur": "AI"
+      },
+      {
+        "etape": "Prioritization and white space",
+        "detail": "The agent identifies high-potential accounts and the areas to cover for campaigns.",
+        "acteur": "AI and marketing"
+      },
+      {
+        "etape": "Content production",
+        "detail": "Content agents draft blog, copy, and social from Confluence.",
+        "acteur": "AI"
+      },
+      {
+        "etape": "Human validation",
+        "detail": "Marketers review, adjust, and launch the campaigns.",
+        "acteur": "Marketing"
+      }
+    ]
+  },
+  "replication": {
+    "prerequis_data": [
+      "clean, usable CRM",
+      "internal knowledge base (wiki, docs)",
+      "definition of the target accounts"
+    ],
+    "prerequis_orga": [
+      "marketing team able to build and supervise agents",
+      "governance of access to internal data"
+    ],
+    "stack_possible": [
+      "genAI agent platform (Rovo or equivalent)",
+      "CRM connector",
+      "RAG engine on the internal wiki"
+    ],
+    "premiere_etape": "Connect an agent to the CRM and the internal wiki to automate account-sheet preparation and ABM prioritization.",
+    "playbook": [
+      {
+        "action": "Inventory the sources (CRM, internal wiki) and set the access governance: which data each agent is allowed to read.",
+        "livrable": "Authorized data scope, documented per agent."
+      },
+      {
+        "action": "Build a first Customer 360 agent that consolidates account sheets (renewals, contacts, usage, opportunities) and test it on 10-20 accounts.",
+        "livrable": "Agent in test with generated, verifiable account sheets."
+      },
+      {
+        "action": "Have marketers check the reliability of the prioritizations, tune prompts and connectors until the error rate is acceptable.",
+        "livrable": "Agent validated and adopted by the ABM team."
+      },
+      {
+        "action": "Add content agents connected to the wiki, with systematic human review before publication.",
+        "livrable": "Generated blog and copy drafts, validation workflow in place."
+      },
+      {
+        "action": "Measure the preparation time for an account and a campaign before/after to quantify the gain.",
+        "livrable": "Quantified efficiency assessment internally."
+      }
+    ],
+    "equipe": "1 marketing ops person who builds and maintains the agents + 1 platform admin for the connectors and access; no dedicated data team."
+  },
+  "statut_vivant": {
+    "note": "Rovo is a strategic focus for Atlassian, growing per the April 2026 shareholder letter. The marketing dogfooding is publicly documented by Atlassian teams."
+  },
+  "transposable_ue": {
+    "note": "Internal genAI agents that query the company's CRM and knowledge base. In the EU, GDPR on the account and contact data aggregated by the agent, and governance of internal access. No consumer processing in this internal marketing use case."
+  }
+}

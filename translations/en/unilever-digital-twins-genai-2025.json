@@ -1,0 +1,104 @@
+{
+  "seo": {
+    "title": "Unilever: digital twins and genAI - creative production twice as fast at half the cost (2025)",
+    "meta_description": "Unilever produces its beauty visuals from digital twins and genAI: up to 55% savings, 65% faster, across 18 markets.",
+    "resume_citable": "Unilever industrialized genAI creative production from product digital twins, reaching about 55% savings and 65% shorter turnaround on beauty, with video completion rate and click-through rate doubled, across 18 markets.",
+    "faq": [
+      {
+        "q": "Does Unilever generate images of people with AI?",
+        "a": "No. The system works the product, the packaging, and the staging from a digital twin, without creating images of people."
+      },
+      {
+        "q": "What gains does Unilever claim?",
+        "a": "Twice as fast and half the cost overall, and on beauty about 55 percent savings and 65 percent shorter turnaround."
+      }
+    ]
+  },
+  "pattern": "genAI creative production from product digital twins",
+  "etape_parcours": "consideration",
+  "objectif_business": "Move away from advertising production designed for television first and feed the digital channels with product visuals, faster and cheaper, without a systematic reshoot.",
+  "description": "Unilever is building a digital twin of each product: a single 3D source that holds the variants, the packaging, and the legal text in every language. From that source, teams generate and adapt visuals for paid social, programmatic display, and e-commerce listings without starting from a photo shoot. The Beauty AI Studio, built with The Brandtech Group, serves brands such as Dove Intensive Repair, TRESemme Lamellar Shine, and Vaseline Gluta Hya, and runs across 18 markets. The system does not produce images of people: it works the product, the background, and the staging. Unilever puts the whole at production cost halved and production twice as fast overall, with, on the beauty scope, gains on the order of 55 percent savings and 65 percent shorter turnaround.",
+  "resultats": [
+    { "metrique": "Beauty production savings, product content 65% faster" },
+    { "metrique": "Content production overall, at half the cost" },
+    { "metrique": "Video completion rate and advertising click-through rate" }
+  ],
+  "niveau_preuve": {
+    "justification": "Figures stated by the brand (Chief Growth and Marketing Officer) and echoed by several established marketing press titles; no line isolable in the financial results, hence C rather than A."
+  },
+  "stack_technique": [
+    { "detail": "Platform to create the 3D digital twins of the products (variants, packaging, per-language text)." },
+    { "detail": "3D description framework used as the format for the digital twins." },
+    { "detail": "genAI production line for beauty, built with Brandtech, in service across 18 markets (Dove, TRESemme, Vaseline)." },
+    { "detail": "Generation of scenes, backgrounds, and variations from the digital twin, without images of people; exact models not publicly named." }
+  ],
+  "fonctionnement_operationnel": {
+    "cadence": "Continuous, by campaign wave and by product launch; visuals adapted on demand once the digital twin is created.",
+    "opere_par": "The brands' creative and e-commerce teams, supported by the Beauty AI Studio (Brandtech) and a central digital-twins team.",
+    "signal_pilote": "The fidelity of the digital twin to the real product (packaging, shade, per-market legal text). If the twin drifts from the product sold, all the generated content becomes false and unusable.",
+    "etapes": [
+      {
+        "etape": "Create the digital twin",
+        "detail": "3D modeling of the product in Omniverse/OpenUSD, with its variants, packagings, and per-language labels.",
+        "acteur": "data / 3D team + Nvidia (tech)"
+      },
+      {
+        "etape": "Generate the visuals",
+        "detail": "From the twin, generate the scenes, backgrounds, and variations for paid social, display, and e-commerce, without a reshoot.",
+        "acteur": "Beauty AI Studio (Brandtech) / AI"
+      },
+      {
+        "etape": "Adapt by market",
+        "detail": "Localize the text, formats, and messages for the 18 markets, starting from the same source.",
+        "acteur": "local brand teams"
+      },
+      {
+        "etape": "Deliver and measure",
+        "detail": "Publish on the paid and e-commerce channels, track video completion rate and click-through rate.",
+        "acteur": "marketing / e-commerce"
+      }
+    ]
+  },
+  "replication": {
+    "prerequis_data": [
+      "usable 3D files or product photos",
+      "packaging and legal text reference by market",
+      "brand guidelines"
+    ],
+    "prerequis_orga": [
+      "a creative team able to run a genAI pipeline",
+      "a legal validation process for synthetic visuals"
+    ],
+    "stack_possible": [
+      "a 3D engine (Omniverse or equivalent)",
+      "image generation models",
+      "an assembly platform like Brandtech, or an in-house stack"
+    ],
+    "premiere_etape": "Choose a range with a high volume of e-commerce variations and model a pilot digital twin of it.",
+    "playbook": [
+      {
+        "action": "Choose a range with a high volume of e-commerce variations and gather the sources: 3D files or product photos, packaging, and legal text by market.",
+        "livrable": "A complete source dossier for the pilot range."
+      },
+      {
+        "action": "Model the digital twin (3D, variants, languages) and validate it against the real product.",
+        "livrable": "A validated digital twin, compliant with the packaging sold."
+      },
+      {
+        "action": "Generate the variations for paid social, display, and e-commerce listings, with brand and legal validation of each synthetic visual.",
+        "livrable": "A library of approved visuals by channel and by market."
+      },
+      {
+        "action": "Deploy, then compare cost per asset, turnaround, video completion, and CTR to classic production.",
+        "livrable": "A cost/turnaround review and a decision to extend to other ranges."
+      }
+    ],
+    "equipe": "1 3D artist + 1 genAI creative technologist + 1 brand lead for validation + 1 lawyer for the legal text and AI Act transparency."
+  },
+  "statut_vivant": {
+    "note": "Program presented as deployed across 18 markets and extended in 2025; recent official communication."
+  },
+  "transposable_ue": {
+    "note": "Little personal data at stake: the visuals start from product digital twins, without creating images of people. Under the AI Act, transparency about the synthetic nature of the advertising visuals should be planned for (art. 50)."
+  }
+}

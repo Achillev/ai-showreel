@@ -1,0 +1,129 @@
+{
+  "seo": {
+    "title": "Alaska Airlines: Alaska Inspires genAI search - planning time down 75 percent (2026)",
+    "meta_description": "Alaska Inspires, Alaska Airlines' natural language destination search on Azure OpenAI, cuts planning time by 75 percent and converts at 7 percent versus 5 percent for the standard.",
+    "resume_citable": "Alaska Airlines reports that Alaska Inspires, its genAI destination search, cuts planning time by 75 percent and converts at 7 percent, versus 5 percent for the standard search.",
+    "faq": [
+      {
+        "q": "What is Alaska Inspires?",
+        "a": "A natural language destination search by Alaska Airlines, built on Azure OpenAI, that lets travelers describe a trip desire by text or voice in more than 90 languages."
+      },
+      {
+        "q": "What results are published?",
+        "a": "A 75 percent reduction in planning time, a 7 percent conversion rate versus 5 percent for the standard, 90 percent satisfaction, and 87 percent intent to reuse."
+      }
+    ]
+  },
+  "pattern": "natural language search for travel inspiration",
+  "etape_parcours": "discovery",
+  "objectif_business": "Open up the discovery phase, long underused on the site, by letting the traveler describe what they want rather than starting from an origin-destination pair, and then connecting them to the inventory and the loyalty program.",
+  "description": "Alaska Inspires is Alaska Airlines' natural language destination search tool, launched publicly in 2024 and built on Azure OpenAI in Foundry Models. The traveler describes what they are looking for (mood, budget, type of experience), by text or by voice, and the tool suggests, compares, and lets them book. It handles more than 90 languages and connects to the loyalty program to personalize based on points, status, and travel goals. Before this tool, fewer than 1 percent of visitors clicked on the where-to-fly entry point and the average search time ran into dozens of hours.",
+  "resultats": [
+    {
+      "metrique": "Reduction in destination planning time"
+    },
+    {
+      "metrique": "Conversion rate of the tool, versus 5 percent for the standard"
+    },
+    {
+      "metrique": "Reported satisfaction"
+    },
+    {
+      "metrique": "Intent to reuse"
+    },
+    {
+      "metrique": "Supported languages"
+    }
+  ],
+  "niveau_preuve": {
+    "justification": "Established trade press (CX Dive) relaying the figures from the Microsoft customer story, with a consistent vendor source and a statement from a named executive."
+  },
+  "fonctionnement_operationnel": {
+    "cadence": "Real time on each query, with re-analysis of the journeys to adjust the suggestions.",
+    "opere_par": "Alaska Airlines' innovation and digital team, on Azure OpenAI.",
+    "signal_pilote": "The traveler's description of what they want, crossed with the map of served destinations and the loyalty data. Without a link to the route inventory and the member's status, the tool suggests destinations that are not bookable or not relevant.",
+    "etapes": [
+      {
+        "etape": "Expressing the desire",
+        "detail": "The traveler describes their need in natural language, by text or by voice, in one of the 90 languages.",
+        "acteur": "customer"
+      },
+      {
+        "etape": "Interpretation",
+        "detail": "The engine translates the desire into constraints (budget, mood, period) and searches for served destinations.",
+        "acteur": "AI"
+      },
+      {
+        "etape": "Loyalty personalization",
+        "detail": "It adjusts based on the points, status, and goals of the loyalty program member.",
+        "acteur": "AI / data team"
+      },
+      {
+        "etape": "Comparison and booking",
+        "detail": "The traveler compares the options and moves to booking.",
+        "acteur": "customer"
+      }
+    ]
+  },
+  "replication": {
+    "prerequis_data": [
+      "catalog of destinations and routes",
+      "loyalty data per member",
+      "descriptive content for the destinations for semantic search"
+    ],
+    "prerequis_orga": [
+      "innovation or digital product team",
+      "link to the loyalty program",
+      "personalization governance"
+    ],
+    "stack_possible": [
+      "Azure OpenAI or equivalent",
+      "semantic / vector search",
+      "connector to the booking engine"
+    ],
+    "premiere_etape": "Index the destinations with rich descriptive content, then expose a natural language search over that catalog before adding loyalty personalization.",
+    "playbook": [
+      {
+        "action": "Index the catalog of served destinations with rich descriptive content (mood, budget, season).",
+        "livrable": "Semantic index of destinations ready to query"
+      },
+      {
+        "action": "Build the engine (LLM plus semantic search) that translates the expressed desire into constraints and returns bookable destinations.",
+        "livrable": "Natural language search prototype over the catalog"
+      },
+      {
+        "action": "Connect the route inventory and the handoff to the booking engine.",
+        "livrable": "Discovery-to-booking journey tested end to end"
+      },
+      {
+        "action": "Run a user pilot and compare conversion and satisfaction against the standard search.",
+        "livrable": "Pilot report with compared metrics"
+      },
+      {
+        "action": "Add loyalty personalization (points, status) and deploy to production.",
+        "livrable": "Tool in production with a conversion and reuse dashboard"
+      }
+    ],
+    "equipe": "1 innovation PM + 2 developers (LLM / semantic search and booking integration) + 1 designer"
+  },
+  "stack_technique": [
+    {
+      "detail": "Generative foundation of the search engine, with support for more than 90 languages and voice input."
+    },
+    {
+      "detail": "In-house layer that translates the traveler's desire into constraints and queries the network of served destinations."
+    },
+    {
+      "detail": "Personalization of the suggestions based on the member's points, status, and travel goals."
+    },
+    {
+      "detail": "Platform provider and technical partner for the deployment."
+    }
+  ],
+  "statut_vivant": {
+    "note": "Figures published in late 2025; tool accessible on Alaska Airlines' site."
+  },
+  "transposable_ue": {
+    "note": "A natural language destination search carries over. In the EU, personalization through the loyalty program falls under GDPR; voice input and multilingual support simplify access but require clear disclosure of the AI use (AI Act)."
+  }
+}

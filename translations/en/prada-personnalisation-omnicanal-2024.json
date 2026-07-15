@@ -1,0 +1,119 @@
+{
+  "seo": {
+    "title": "Prada Group: omnichannel personalization and composable commerce - +50% cross-channel purchases (2024)",
+    "meta_description": "Prada Group rebuilt its e-commerce and unified its customer data: checkout 60% faster, +15% completions, +50% cross-channel purchases, and +15% online revenue.",
+    "resume_citable": "Prada Group deployed a composable commerce platform and a unified customer profile, achieving a checkout 60% faster, +15% completions, +50% cross-channel purchases, and +15% online revenue.",
+    "faq": [
+      {
+        "q": "What results did Prada achieve?",
+        "a": "A checkout 60% faster, 15% more shoppers completing, over 50% more cross-channel purchases, and +15% online revenue, according to the Accenture case study."
+      },
+      {
+        "q": "What technology powers the personalization?",
+        "a": "A unified customer profile via Adobe Real-Time CDP and Journey Optimizer, a Databricks data foundation, and a composable e-commerce architecture integrated by Accenture."
+      }
+    ]
+  },
+  "pattern": "composable commerce + personalization and product recommendation",
+  "etape_parcours": "purchase",
+  "stack_technique": [
+    { "detail": "Builds unified opt-in customer profiles and orchestrates journeys; enables recognizing the customer in store along with their preferences." },
+    { "detail": "Data foundation that unifies the group's data for forecasting, personalization, and marketing optimization models." },
+    { "detail": "Personalized product search and recommendation engine on e-commerce." },
+    { "detail": "Order management (OMS) within the group's composable architecture." },
+    { "detail": "Product information management (PIM) feeding the e-commerce catalog." },
+    { "detail": "Integrator of the composable commerce platform and the omnichannel experience, with SAP in the group's systems landscape." }
+  ],
+  "objectif_business": "Unify customer data and deploy a composable commerce platform to deliver a personalized, seamless experience across the web and the 600 stores, removing journey and purchase friction.",
+  "description": "Prada Group rebuilt its e-commerce foundation on a composable architecture integrated by Accenture, with personalized product search and recommendation components. The checkout was redesigned to be faster and lift the completion rate. In parallel, the group is deploying Adobe Real-Time Customer Data Platform and Journey Optimizer to build unified customer profiles: an opt-in customer can be recognized when entering a store, with their preferences visible to the sales associate. On the data side, Databricks unifies data for forecasting, personalization, and marketing optimization models. The group operates more than 600 stores in 70 countries.",
+  "points_cles": [
+    "Composable commerce with personalization, product recommendation, and a rebuilt checkout.",
+    "Adobe Real-Time CDP, Databricks, and Algolia, integrated by Accenture.",
+    "Checkout 60% faster, +15% completions, +50% cross-channel purchases.",
+    "Evidence B, status confirmed, phased rollout across 600 stores."
+  ],
+  "resultats": [
+    { "metrique": "Checkout speed" },
+    { "metrique": "More shoppers completing checkout" },
+    { "metrique": "Cross-channel purchases" },
+    { "metrique": "Online revenue (phased rollout)" }
+  ],
+  "niveau_preuve": {
+    "justification": "Accenture case study quantifying several conversion and revenue metrics, with named Prada executives, confirmed by the Databricks customer story on the data foundation and the group's scope. Two concordant interested official sources."
+  },
+  "fonctionnement_operationnel": {
+    "cadence": "Real-time on the web and in store; phased quarterly rollout component by component",
+    "opere_par": "The group's e-commerce and IT leadership, with Accenture as integrator and the data teams on the models",
+    "signal_pilote": "The unified customer profile (reconciled web and store identity, consent, history). Without opt-in reconciliation, in-store recognition and real-time personalization break down.",
+    "etapes": [
+      {
+        "etape": "Data unification",
+        "detail": "Adobe Real-Time CDP merges shopper data to create a single customer profile.",
+        "acteur": "data team / Adobe"
+      },
+      {
+        "etape": "Journey personalization",
+        "detail": "Product search and recommendations are personalized online; checkout friction is removed.",
+        "acteur": "AI / e-commerce team"
+      },
+      {
+        "etape": "In-store recognition",
+        "detail": "When an opt-in customer arrives, the associate sees their preferences and history.",
+        "acteur": "sales associate"
+      },
+      {
+        "etape": "Data loop",
+        "detail": "Cross-channel purchases and interactions flow back into the CDP and feed the forecasting and personalization models.",
+        "acteur": "data team"
+      }
+    ]
+  },
+  "replication": {
+    "playbook": [
+      {
+        "action": "Reconcile web and store customer identities in a CDP, with a clean opt-in journey for the unified profile.",
+        "livrable": "Unified customer profile live in a pilot market"
+      },
+      {
+        "action": "Personalize product search and recommendations online in that market, connected to the profile and catalog.",
+        "livrable": "Personalized search/recommendation engine in pilot production"
+      },
+      {
+        "action": "Rebuild the checkout to remove friction and measure speed and completion rate in an A/B test.",
+        "livrable": "New checkout tested with a quantified read"
+      },
+      {
+        "action": "Equip store associates with opt-in customer recognition: preferences and history visible when the customer arrives.",
+        "livrable": "Clienteling connected to the CDP in a pilot store"
+      },
+      {
+        "action": "Expand in phases to other brands and markets, component by component, measuring cross-channel purchases.",
+        "livrable": "Multi-market rollout with a cross-channel review"
+      }
+    ],
+    "equipe": "1 e-commerce/IT program lead + a data team of 3-5 people + the integrator; store associates trained on clienteling",
+    "prerequis_data": [
+      "customer identity reconciled across web and store",
+      "opt-in consent for the unified profile",
+      "real-time catalog and stock feeds"
+    ],
+    "prerequis_orga": [
+      "data and consent governance",
+      "integrator for the composable architecture",
+      "alignment across e-commerce, retail, and IT"
+    ],
+    "stack_possible": [
+      "CDP (Adobe, Salesforce, Segment)",
+      "search/recommendation engine (Algolia, Constructor)",
+      "data/ML platform (Databricks)",
+      "composable commerce"
+    ],
+    "premiere_etape": "Unify web and store customer identities in a CDP, then personalize search and recommendations in a pilot market."
+  },
+  "statut_vivant": {
+    "note": "Platform rolled out in quarterly phases across brands and markets; Databricks data foundation confirmed in 2025 for forecasting, personalization, and marketing."
+  },
+  "transposable_ue": {
+    "note": "Italian group. Personalization and in-store customer recognition rely on a unified opt-in profile (Adobe Real-Time CDP). Consent and minimization need to be framed for real-time in-store data use under GDPR."
+  }
+}

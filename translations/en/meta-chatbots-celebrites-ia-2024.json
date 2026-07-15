@@ -1,0 +1,48 @@
+{
+  "seo": {
+    "title": "Meta: celebrity AI chatbots pulled for lack of audience (2024)",
+    "meta_description": "Launched in September 2023, Meta's celebrity AI chatbots (Kendall Jenner, Snoop Dogg) were pulled in July 2024 for lack of engagement.",
+    "resume_citable": "Meta launched celebrity-styled AI chatbots such as Kendall Jenner and Snoop Dogg in September 2023, then pulled them in July 2024 for lack of audience, despite multi-million-dollar deals.",
+    "faq": [
+      {
+        "q": "Why did Meta pull its celebrity chatbots?",
+        "a": "None of these chatbots gathered a notable audience. Chatting with an AI styled like a celebrity, while the real person is reachable elsewhere, did not find its public. Meta pulled them in July 2024, less than a year after launch, and pivoted to AI Studio."
+      },
+      {
+        "q": "Are AI conversational personas a doomed pattern?",
+        "a": "No. The failure is about imposed celebrity personas, not about AI agents in general or user-created characters, which Meta switched to. The category survives, this execution failed."
+      }
+    ]
+  },
+  "pattern": "AI chatbots styled after celebrities",
+  "etape_parcours": "loyalty",
+  "objectif_business": "Increase engagement on Meta's apps with chatbots embodying celebrity-inspired personas (voice, style), to make people want to chat with the AI.",
+  "description": "In September 2023, at its Connect conference, Meta launched a first series of 28 AI chatbots embodying celebrity-inspired personas, with figures like Kendall Jenner, Charli D'Amelio, Chris Paul or Snoop Dogg lending their image. Meta reportedly paid several million dollars for these deals. Less than a year later, in July 2024, the company quietly pulled these chatbots. None had gathered a notable audience, far behind the personal accounts of the celebrities involved. Meta refocused on AI Studio, a tool that lets users create their own AI characters.",
+  "resultats": [
+    { "metrique": "Withdrawal of the celebrity chatbots after launch" },
+    { "metrique": "cause of the withdrawal" }
+  ],
+  "niveau_preuve": {
+    "justification": "The Information revealed the withdrawal and several tech outlets (Social Media Today, WinBuzzer) confirmed it, naming the brand, the celebrities and the cause. No detailed financial document, hence C."
+  },
+  "stack_technique": [
+    { "detail": "Meta's proprietary LLM powering the personas; the exact model is not named in the sources." },
+    { "detail": "28 characters built in-house on the image and style of celebrities, under personality-rights agreements." },
+    { "detail": "Distribution channels for the chatbots to users of Meta's apps." },
+    { "detail": "AI character creation tool for users, which Meta pivoted to after the withdrawal." }
+  ],
+  "post_mortem": {
+    "ce_qui_s_est_passe": "In September 2023, Meta presented at Connect a first series of 28 AI chatbots embodying celebrity-inspired personas, with figures like Kendall Jenner, Snoop Dogg, Charli D'Amelio or Chris Paul. According to the press, Meta reportedly paid several million dollars for these deals. The bots did not attract a notable audience. In July 2024, Meta quietly pulled them and refocused on AI Studio, which lets users create their own AI characters.",
+    "raison_echec": "The documented cause is the lack of adoption: none of these chatbots gathered a significant audience. Chatting with an AI styled like a celebrity, while the real person is reachable elsewhere, did not find its public. The product rested on a usage bet that did not pan out, despite the investment in the personality deals.",
+    "cout_estime": "Several million dollars in celebrity deals, according to the press, for a product pulled in less than a year. Exact amount not published.",
+    "signaux_avant_coureurs": "Inferred: doubt about the appetite for fake celebrity personas existed from launch. A celebrity's value rests on the authenticity of the connection, hard to replicate with a chatbot. A more modest usage test before the big deals could have revealed the weak traction.",
+    "lecons_avec_recul": "Inferred: paying personality rights does not create usage. An AI persona does not replace the connection an audience has with a real person. It is better to validate appetite on a lightweight format before committing to costly deals. The pivot to user-created characters suggests the demand was for creation, not for consuming imposed personas.",
+    "le_pattern_reste_il_valide": "Inferred: the conversational personas pattern remains valid, but shifted. The failure is about imposed celebrity personas, not about AI agents in general or user-created characters, which Meta pivoted to. The category survives, the celebrity execution failed."
+  },
+  "statut_vivant": {
+    "note": "Withdrawal confirmed in July 2024. Meta switched to AI Studio (user-created characters). Distinct from the January 2025 affair about Meta-generated AI character accounts."
+  },
+  "transposable_ue": {
+    "note": "Transposable, but with stronger EU constraints: use of the image and voice of public figures (personality rights), transparency about the artificial nature of the agent (AI Act), and protection of minors. Beyond the law, the main lesson is a product one and not a legal one: users' appetite for a celebrity-styled chatbot proved weak. This finding holds on both sides of the Atlantic."
+  }
+}

@@ -1,0 +1,108 @@
+{
+  "seo": {
+    "title": "Realtor.com: AI natural-language home search with image analysis (2025)",
+    "meta_description": "Realtor.com deployed in 2025 a natural-language search that recognizes more than 300 terms and analyzes listing photos.",
+    "resume_citable": "Realtor.com deployed in October 2025 a natural-language home search that recognizes more than 300 terms and analyzes listing photos, then launched RealAssist AI built with Google Gemini in June 2026.",
+    "faq": [
+      {
+        "q": "How does Realtor.com's AI search work?",
+        "a": "The user phrases their search the way they speak; the system recognizes more than three hundred terms, analyzes listing photos, and learns from behavior to personalize the results."
+      },
+      {
+        "q": "What is RealAssist AI?",
+        "a": "A conversational search experience launched in beta in June 2026, built with Google Gemini and Google Cloud, that guides the buyer from budget to being connected with a local agent."
+      }
+    ]
+  },
+  "pattern": "natural-language search with understanding of listing images",
+  "etape_parcours": "consideration",
+  "stack_technique": [
+    { "detail": "Models for the RealAssist AI conversational search (understanding the need, preference memory)." },
+    { "detail": "Cloud platform on which RealAssist AI is built." },
+    { "detail": "Voice and text natural-language search that recognizes more than 300 terms and learns from user behavior." },
+    { "detail": "Understanding of listing photos to surface properties matching the stated criteria; the exact vision model is not named." }
+  ],
+  "objectif_business": "Let the buyer phrase their search the way they speak, including complex criteria, and match their words to listing descriptions and photos to bring them faster toward a property and an agent.",
+  "description": "Realtor.com deploys in October 2025 a voice and text natural-language search that interprets complex queries, for example a single-story house with a pool in a given city and less than five years old. It also analyzes listing photos to surface matching properties, recognizes more than three hundred terms such as cathedral ceilings or a modern kitchen, and learns from the user's behavior to personalize the results. In June 2026, Realtor.com launches RealAssist AI, a conversational search experience built with Google Gemini and Google Cloud, available in beta to a group of logged-in users on desktop, app, and mobile web. RealAssist guides the buyer from their first budget questions through to being connected with a local agent, remembering preferences from one session to the next.",
+  "resultats": [
+    { "metrique": "Terms recognized by the NL search" },
+    { "metrique": "Text and image matching capability" }
+  ],
+  "niveau_preuve": {
+    "justification": "Specialist press (HousingWire, Real Estate News) and an official Google Cloud release (T2) concordant on the deployment, with quantified feature characteristics. No isolated public engagement metric, hence a C level."
+  },
+  "fonctionnement_operationnel": {
+    "cadence": "Real-time on each query; preference memory across sessions for RealAssist.",
+    "opere_par": "Realtor.com's product and AI team, with Google Cloud as the model provider for RealAssist.",
+    "signal_pilote": "The richness of listings in text and images, plus user behavior. Without usable descriptions and photos, matching on precise terms degrades.",
+    "etapes": [
+      {
+        "etape": "Spoken or written query",
+        "detail": "The user phrases their search the way they speak, including complex criteria.",
+        "acteur": "customer"
+      },
+      {
+        "etape": "Text and image interpretation",
+        "detail": "The system recognizes more than three hundred terms and analyzes listing photos to find matching properties.",
+        "acteur": "AI"
+      },
+      {
+        "etape": "Personalization and memory",
+        "detail": "It learns from behavior and, with RealAssist, retains preferences from one session to the next.",
+        "acteur": "AI"
+      },
+      {
+        "etape": "Agent connection",
+        "detail": "RealAssist guides from budget through to being connected with a local agent.",
+        "acteur": "human"
+      }
+    ]
+  },
+  "replication": {
+    "prerequis_data": [
+      "listings with rich descriptions and photos",
+      "reference of real-estate terms",
+      "user behavior history"
+    ],
+    "prerequis_orga": [
+      "AI team or cloud partner for the models",
+      "computer vision capability on the photos",
+      "personalization loop"
+    ],
+    "stack_possible": [
+      "LLM for query understanding",
+      "vision model for image analysis",
+      "search and ranking engine"
+    ],
+    "premiere_etape": "Enrich and normalize listing vocabulary before connecting image understanding.",
+    "playbook": [
+      {
+        "action": "Normalize listing descriptions and build the reference of real-estate terms for the target market.",
+        "livrable": "Structured vocabulary mapped to the listing inventory."
+      },
+      {
+        "action": "Connect natural-language query understanding to the existing search engine.",
+        "livrable": "Internal beta of NL search on textual criteria."
+      },
+      {
+        "action": "Index listing photos with a vision model to cover visual criteria (pool, single-story, modern kitchen).",
+        "livrable": "Image-to-criteria index connected to the search."
+      },
+      {
+        "action": "Open a user beta and add personalization by learning from behavior.",
+        "livrable": "Public beta with search engagement measurement."
+      },
+      {
+        "action": "Link the search to being connected with an agent and generalize.",
+        "livrable": "Complete query-to-property-to-agent journey, with a relevance dashboard."
+      }
+    ],
+    "equipe": "1 PM + 2-4 search / ML engineers + 1 data engineer for the listings pipeline + cloud partner for the models."
+  },
+  "statut_vivant": {
+    "note": "The NL search has been in production since October 2025 and evolved into RealAssist AI in June 2026, a sign of continued investment in the AI search block."
+  },
+  "transposable_ue": {
+    "note": "Natural-language search with listing image analysis is transposable to a European portal. The adaptation concerns language, local real-estate vocabulary, and GDPR on learning from user behavior."
+  }
+}

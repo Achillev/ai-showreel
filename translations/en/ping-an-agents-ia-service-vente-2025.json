@@ -1,0 +1,129 @@
+{
+  "seo": {
+    "title": "Ping An: AI service and sales agents - 80% of customer service and RMB 133 billion in assisted sales (2025)",
+    "meta_description": "In 2025, Ping An's AI representatives handle 80% of customer service and help realize RMB 133 billion in sales, with +30% policies reactivated.",
+    "resume_citable": "In 2025, Ping An's AI agents handled about 1,702 million service interactions (80% of total volume), helped realize RMB 133,179 million in sales, and made it possible to reactivate 30% more policies via an AI plus human setup.",
+    "faq": [
+      {
+        "q": "What share of Ping An's customer service goes through AI?",
+        "a": "In 2025, the group's AI representatives handled about 1,702 million interactions, or 80% of the total customer service volume according to Ping An's results communications."
+      },
+      {
+        "q": "Does Ping An's AI also serve to sell?",
+        "a": "Yes. Ping An states that its AI agents helped realize RMB 133,179 million in sales in 2025 and that the AI plus human reactivation setup made it possible to reactivate 30% more policies."
+      }
+    ]
+  },
+  "pattern": "AI conversational agent for service and sales support on the customer base",
+  "etape_parcours": "post-purchase",
+  "objectif_business": "Absorb a massive service volume without inflating headcount, and make AI a sales and retention channel in its own right by assisting agents and re-engaging customers whose policy has lapsed.",
+  "points_cles": [
+    "Fleet of AI service and sales-support agents on the customer base.",
+    "In-house agent platform, proprietary LLMs, and an in-house voice layer.",
+    "80% of customer service, RMB 133,179 million in assisted sales, +30% policies reactivated.",
+    "Evidence A, confirmed status via the group's 2025 results."
+  ],
+  "description": "Ping An runs a fleet of AI agents on its customer base. On the service side, AI representatives take the front line of incoming requests (policy questions, claims, routine operations) in natural language, in writing and by voice. On the distribution side, the same components assist sales agents and drive sales and follow-up campaigns. An 'AI + human' reactivation system splits the re-contact tasks on lapsed policies, with the AI prioritizing the cases and preparing the action, and the human closing. The group quantifies the impact in its 2025 results communications: about 1,702 million service interactions handled by the AI representatives, or 80% of the total customer service volume, RMB 133,179 million in sales realized with the help of the AI agents, and 30% more policies reactivated thanks to the AI + human setup. Internally, more than 230,000 employees use the agent platform and more than 70,000 agent applications have been built.",
+  "resultats": [
+    {
+      "metrique": "Sales realized with the help of the AI agents in 2025"
+    },
+    {
+      "metrique": "About 1,702 million service interactions, or 80% of the total volume"
+    },
+    {
+      "metrique": "More policies reactivated via the AI + human distribution system"
+    }
+  ],
+  "niveau_preuve": {
+    "justification": "Figures published by Ping An in its 2025 annual results communications (the group's report and official release), reproduced verbatim by the PR Newswire press distribution. Primary results source, several consistent operational metrics."
+  },
+  "stack_technique": [
+    {
+      "detail": "The group's internal platform on which more than 230,000 employees work and more than 70,000 agent applications have been built."
+    },
+    {
+      "detail": "LLMs and NLP components developed in-house by the group for service, sales, and reactivation; exact models not published in the sources."
+    },
+    {
+      "detail": "In-house voice layer that lets the AI representatives handle requests by voice as well as in writing."
+    },
+    {
+      "detail": "Data foundation (policies, interactions, payments) that feeds the prioritization of follow-ups and the relevance of the answers."
+    }
+  ],
+  "fonctionnement_operationnel": {
+    "cadence": "Real time on inbound service; by campaign on sales and reactivation; continuous model retraining as interactions and outcomes come back.",
+    "opere_par": "The group's AI and data teams for the agent platform; service teams and the sales network for the human front line and closing.",
+    "signal_pilote": "Unified customer data (policy history, interactions, payment status). If the customer base is not up to date, the prioritization of follow-ups and the relevance of recommendations degrade.",
+    "etapes": [
+      {
+        "etape": "Handling inbound service",
+        "detail": "The AI representative answers routine requests in natural language, in writing or by voice, and resolves what can be resolved without a human.",
+        "acteur": "AI"
+      },
+      {
+        "etape": "Sales assistance",
+        "detail": "The AI agent prepares and prioritizes opportunities, assists the sales agent or runs the direct follow-up depending on the channel.",
+        "acteur": "AI"
+      },
+      {
+        "etape": "Reactivation of lapsed policies",
+        "detail": "The system splits the re-contact tasks; the AI targets and prepares, the human contacts and finalizes the reactivation.",
+        "acteur": "AI and sales network"
+      },
+      {
+        "etape": "Escalation and human closing",
+        "detail": "Complex or high-stakes cases go to a human advisor.",
+        "acteur": "service team and sales reps"
+      }
+    ]
+  },
+  "replication": {
+    "playbook": [
+      {
+        "action": "Target a high-volume, low-stakes inbound service flow, and frame compliance: escalation rules, informing the individual, human oversight (GDPR art. 22, AI Act for insurance).",
+        "livrable": "Validated scope + documented escalation rules"
+      },
+      {
+        "action": "Deploy a conversational agent on this flow with systematic human escalation on complex cases.",
+        "livrable": "Agent in production on one channel"
+      },
+      {
+        "action": "Extend to voice and track the share of volume handled by the AI, first-contact resolution, and satisfaction.",
+        "livrable": "Automated share tracked monthly"
+      },
+      {
+        "action": "Add sales support: the AI prioritizes and prepares the follow-ups (lapsed policies, opportunities), the human contacts and finalizes.",
+        "livrable": "AI + human reactivation setup with a measured rate"
+      },
+      {
+        "action": "Industrialize an internal agent platform so teams can build their own use cases under governance.",
+        "livrable": "Agent catalog and model governance"
+      }
+    ],
+    "equipe": "At the start: 1 PM + 2-3 conversational engineers + compliance; at scale, dedicated AI teams and a sales network trained in the AI + human tandem",
+    "prerequis_data": [
+      "Unified customer base (policy, interactions, payments)",
+      "History of sales and reactivation outcomes",
+      "Logging of service conversations"
+    ],
+    "prerequis_orga": [
+      "Sales network ready to work in tandem with the AI",
+      "Compliance function for assisted sales and profiling",
+      "Governance of the conversational models"
+    ],
+    "stack_possible": [
+      "Custom agent platform (Ping An route)",
+      "LLM + rules engine + voice layer",
+      "market conversational-agent solutions for a narrower scope"
+    ],
+    "premiere_etape": "Target a high-volume, low-stakes inbound service flow, connect a conversational agent to it before adding sales support."
+  },
+  "statut_vivant": {
+    "note": "AI agents are a central theme of Ping An's 2025 results communications, with volumes rising from one period to the next."
+  },
+  "transposable_ue": {
+    "note": "The pattern (AI service and sales agents on the customer base) is transposable, but the Chinese scale rests on a customer database and a data framework specific to China. In the EU, an AI agent that recommends or sells a policy and drives reactivation follow-ups touches on automated decision-making (GDPR art. 22) and profiling: informing the individual, a legal basis, and human oversight on cases with a significant effect. Underwriting assistance in insurance is classified as high-risk by the AI Act."
+  }
+}

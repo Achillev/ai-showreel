@@ -1,0 +1,121 @@
+{
+  "seo": {
+    "title": "Starbucks: AI-personalized offers (Deep Brew) - 16 million members targeted (2024)",
+    "meta_description": "Starbucks personalizes offers and recommendations for 16 million Rewards members through a reinforcement learning engine (Deep Brew) on Azure.",
+    "resume_citable": "Starbucks pushes personalized recommendations to 16 million active Rewards members through its Deep Brew reinforcement learning engine hosted on Microsoft Azure, cited by the CEO on the Q1 2024 earnings call.",
+    "faq": [
+      {
+        "q": "What is Deep Brew?",
+        "a": "Starbucks's in-house AI platform, launched in 2019, whose personalization component computes offers and product recommendations through reinforcement learning on Microsoft Azure."
+      },
+      {
+        "q": "How many customers are affected?",
+        "a": "16 million active members were receiving personalized recommendations in the app, out of a US base of 34.3 million active members in Q1 of fiscal 2024."
+      }
+    ]
+  },
+  "pattern": "personalized recommendations and offers through reinforcement learning on loyalty data",
+  "etape_parcours": "loyalty",
+  "objectif_business": "Increase visit frequency and spend of Starbucks Rewards members by pushing the right offer or product each time the app opens, to anchor regular customers and bring back less frequent ones.",
+  "description": "Deep Brew is Starbucks's in-house AI platform, launched in 2019. Its personalization component runs on a reinforcement learning engine hosted in Microsoft Azure. When a Rewards member opens the app, the system proposes products and offers computed from their order history, the store, the time, the weather, and the preferences of customers with similar profiles. The same engine is used to design offers targeted by member cohorts. Starbucks reports 16 million active members receiving these recommendations in the app, out of a US loyalty base of 34.3 million active members in the first quarter of fiscal 2024.",
+  "points_cles": [
+    "Personalized recommendations and offers when the Starbucks Rewards app opens.",
+    "Deep Brew reinforcement learning engine hosted on Microsoft Azure.",
+    "16 million members targeted, out of a US base of 34.3 million active members.",
+    "Evidence A, mixed-signals status (Deep Brew cited less in earnings since 2024)."
+  ],
+  "resultats": [
+    { "metrique": "Members receiving personalized recommendations through reinforcement learning" },
+    { "metrique": "US active loyalty members, up 13% year over year (Q1 FY2024)" },
+    { "metrique": "Deep Brew enables cohort-based offer targeting (2024)" }
+  ],
+  "niveau_preuve": {
+    "justification": "Deep Brew is named by CEO Laxman Narasimhan on the Q1 FY2024 earnings call as a lever for offer personalization, and the reinforcement learning architecture is documented and quantified (16 million members) by the Microsoft customer story. Concordant sources: primary earnings + platform."
+  },
+  "stack_technique": [
+    { "detail": "Starbucks's in-house AI platform (2019), whose personalization component computes offers and recommendations per member" },
+    { "detail": "cloud that hosts the personalization engine, documented by the Microsoft customer story" },
+    { "detail": "ranks offers and products per member from order history, store, time, weather, and similar profiles" },
+    { "detail": "delivery surface and identification key for the customer (34.3 million active US members in Q1 FY2024)" }
+  ],
+  "fonctionnement_operationnel": {
+    "cadence": "Real time when the app opens, continuous retraining of the engine as interactions occur",
+    "opere_par": "Starbucks analytics and data science team, working with loyalty marketing",
+    "signal_pilote": "The member's first-party transactional history and their reaction to offers. Without a loyalty identifier linking orders to a person, the engine loses its material and falls back to generic per-store recommendations.",
+    "etapes": [
+      {
+        "etape": "Signal collection",
+        "detail": "Order history, store, time, weather, and preferences of similar members feed into the profile.",
+        "acteur": "data team"
+      },
+      {
+        "etape": "Scoring of offers and products",
+        "detail": "The reinforcement learning engine ranks, for each member, the recommendations most likely to trigger an order.",
+        "acteur": "AI"
+      },
+      {
+        "etape": "Display in the app",
+        "detail": "The personalized recommendations and offers appear when the app opens.",
+        "acteur": "Application"
+      },
+      {
+        "etape": "Response measurement",
+        "detail": "Order, offer redemption, and frequency are measured and fed back to the engine.",
+        "acteur": "data team"
+      },
+      {
+        "etape": "Retraining",
+        "detail": "The engine adjusts its recommendations with the new signals; marketing defines the cohorts to incentivize.",
+        "acteur": "data and marketing team"
+      }
+    ]
+  },
+  "replication": {
+    "prerequis_data": [
+      "first-party transactional history",
+      "loyalty program identifying each customer",
+      "contextual signals (time, store, weather)"
+    ],
+    "prerequis_orga": [
+      "internal data science team",
+      "active loyalty program with a member base",
+      "offer measurement loop"
+    ],
+    "stack_possible": [
+      "recommendation engine (reinforcement learning or collaborative filtering)",
+      "cloud (Azure, GCP or AWS)",
+      "CDP",
+      "mobile app"
+    ],
+    "equipe": "2-3 data scientists + 1 data engineer + 1 loyalty PM + CRM marketing for offer design",
+    "playbook": [
+      {
+        "action": "Unify the member profile: consolidate the transactional history of loyalty members into a usable profile",
+        "livrable": "Single customer profile with orders, store, and context"
+      },
+      {
+        "action": "Build v1 of the engine: collaborative filtering or simple offer scoring on the chosen cloud",
+        "livrable": "Scoring model evaluated offline on history"
+      },
+      {
+        "action": "Expose recommendations when the app opens for a member segment, A/B against generic offers",
+        "livrable": "Personalization live and measured on a segment"
+      },
+      {
+        "action": "Move to reinforcement learning: connect the response to offers (order, redemption) as a reward signal",
+        "livrable": "Continuous retraining loop in production"
+      },
+      {
+        "action": "Equip marketing: control over the cohorts to incentivize and the design of targeted offers",
+        "livrable": "Cohort-based targeting operational, routine measurement of frequency and basket"
+      }
+    ],
+    "premiere_etape": "Unify the order history of loyalty members into a profile usable by a recommendation engine."
+  },
+  "statut_vivant": {
+    "note": "The last named mention of Deep Brew in earnings dates from 2024. Personalization remains a claimed pillar (2026 loyalty program overhaul centered on personalization), but recent communication highlights the loyalty program more than the Deep Brew brand. The pattern is active; the Deep Brew label perhaps less so."
+  },
+  "transposable_ue": {
+    "note": "Personalization relies on a customer profile identified through the loyalty program. In the EU, a legal basis and GDPR consent are required for marketing profiling; the AI Act does not classify this type of product recommendation as high risk, but transparency about data use is required."
+  }
+}

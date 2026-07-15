@@ -1,0 +1,109 @@
+{
+  "seo": {
+    "title": "Lemonade: AI-driven underwriting and claims - LAE ratio ~4% (2025)",
+    "meta_description": "Maya underwrites in 90s, AI Jim settles 55% of claims without a human. AI automation pulls Lemonade's LAE ratio toward ~4%.",
+    "resume_citable": "By the end of 2025, Lemonade's AI agents (Maya for underwriting, AI Jim for claims) handle about 96% of first notices of loss without a human and automate about 55% of cases, pulling the LAE ratio toward ~4% versus 13% three years earlier.",
+    "faq": [
+      {
+        "q": "What do Maya and AI Jim do at Lemonade?",
+        "a": "Maya handles conversational underwriting and generates a priced quote in under 90 seconds; AI Jim takes claim reports and settles about 55% of cases end to end without human intervention."
+      },
+      {
+        "q": "What is the economic impact of this automation?",
+        "a": "Lemonade cites an LAE ratio of about 4% for the AI-driven portion and an overall LAE ratio that fell from 13% to 7% in three years, while claim volume grew by more than 2.5 times."
+      }
+    ]
+  },
+  "pattern": "AI-driven underwriting and claims management",
+  "etape_parcours": "Post-purchase",
+  "objectif_business": "Reduce the cost of claims management and refine risk pricing by automating underwriting and claims handling, in order to hold management ratios far below those of traditional insurers with a smaller headcount.",
+  "description": "Lemonade runs two AI agents. Maya handles conversational underwriting: it recommends coverage, generates a personalized quote, and collects payment in under 90 seconds, backed by the customer cortex, a machine learning system that estimates risk and price in real time. AI Jim handles claims: it takes the first notice of loss and resolves part of the cases end to end, without human intervention. As of the end of 2025, the company states that about 96% of first notices of loss are taken by AI without human intervention and that about 55% of claims are fully automated. This automation pulls the LAE ratio down: Lemonade cites an LAE ratio of about 4% for the AI-driven portion, and an overall LAE ratio that fell from 13% to 7% in three years, while claim volume grew by more than 2.5 times.",
+  "points_cles": ["AI-driven underwriting and claims management through Maya and AI Jim.", "In-house platform with customer cortex, risk machine learning, and pricing.", "About 96% of loss notices taken without a human, 55% automated.", "LAE ratio pulled toward about 4%, evidence level A confirmed."],
+  "resultats": [
+    { "metrique": "LAE ratio (claims management cost) driven by AI automation" },
+    { "metrique": "Customers with continuous telemetry feeding real-time pricing" }
+  ],
+  "niveau_preuve": {
+    "justification": "Figures published in Lemonade's shareholder letters (filed as 8-K with the SEC) and echoed by the business press. Primary source of financial results, with several concordant quarters on the automation trajectory."
+  },
+  "stack_technique": [
+    { "detail": "in-house conversational agent that recommends coverage, generates the quote, and collects payment in under 90 seconds" },
+    { "detail": "takes about 96% of first notices of loss in chat and settles about 55% of cases end to end" },
+    { "detail": "Lemonade's proprietary machine learning system that estimates risk and price in real time; exact models not published" },
+    { "detail": "more than 90% of customers equipped; feeds real-time pricing and model retraining" }
+  ],
+  "fonctionnement_operationnel": {
+    "cadence": "Real time at every interaction (quote or claim), continuous retraining of the risk models as cases resolve.",
+    "opere_par": "Lemonade's data science and insurance teams; the AI agents (Maya, AI Jim) hold the front line, humans handle the non-automated cases.",
+    "signal_pilote": "Risk data and the outcome of past claims. If the quality of claim labels degrades, pricing and automation become less reliable.",
+    "etapes": [
+      {
+        "etape": "Conversational underwriting",
+        "detail": "Maya converses with the prospect, estimates risk through the customer cortex, and generates a quote paid in under 90 seconds.",
+        "acteur": "AI"
+      },
+      {
+        "etape": "Claim report",
+        "detail": "AI Jim takes the first notice of loss in chat and collects the information.",
+        "acteur": "AI"
+      },
+      {
+        "etape": "Automatic resolution",
+        "detail": "For about 55% of cases, AI Jim verifies and settles the claim end to end, without a human.",
+        "acteur": "AI"
+      },
+      {
+        "etape": "Human escalation",
+        "detail": "Complex or suspicious cases go to a human handler.",
+        "acteur": "claims team"
+      }
+    ]
+  },
+  "replication": {
+    "prerequis_data": [
+      "History of claims with outcome and cost",
+      "First-party risk data (underwriting, telemetry)",
+      "Logging of customer interactions"
+    ],
+    "prerequis_orga": [
+      "Insurer or MGA license",
+      "Actuarial function to validate the pricing models",
+      "Compliance framework for automated decision-making (GDPR, AI Act)"
+    ],
+    "stack_possible": [
+      "Custom platform (the Lemonade path)",
+      "Conversational AI + rules engine + actuarial model",
+      "insurtech solutions for automated claims management"
+    ],
+    "premiere_etape": "Automate the first notice of loss first (information intake in chat) before aiming for end-to-end settlement.",
+    "playbook": [
+      {
+        "action": "Frame the data: history of claims with outcome and cost, underwriting data, mapping of automatable cases",
+        "livrable": "Labeled dataset + list of claim types that are candidates for automation"
+      },
+      {
+        "action": "Automate the first notice of loss: a conversational agent collects the information, the human keeps the settlement",
+        "livrable": "Claim report chat in production, AI intake rate measured"
+      },
+      {
+        "action": "Build the risk scoring and automatic settlement rules on simple cases, with actuarial validation",
+        "livrable": "Model validated by the actuarial function + documented GDPR/AI Act compliance framework (oversight, contestation)"
+      },
+      {
+        "action": "Open end-to-end settlement on a limited scope (small claims, low fraud risk), with systematic human escalation on doubtful cases",
+        "livrable": "Share of cases settled without a human measured + working escalation path"
+      },
+      {
+        "action": "Extend claim type by claim type and track the economic effect",
+        "livrable": "LAE ratio / automation rate dashboard compared to the reference period"
+      }
+    ],
+    "equipe": "2-4 data scientists + 1 actuary + 1 PM + claims team for escalations, with compliance/DPO on an ongoing basis"
+  },
+  "statut_vivant": {
+    "note": "AI automation is at the heart of the Lemonade model and is documented in the most recent shareholder letters (Q3 2025 and later), with metrics improving."
+  },
+  "transposable_ue": {
+    "note": "Lemonade already operates in the EU (Germany, Netherlands, France). AI-driven underwriting and pricing constitute automated decision-making under GDPR (art. 22) and are classified as high risk by the AI Act for insurance: human oversight, explainability, and a right to contest are mandatory."
+  }
+}

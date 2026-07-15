@@ -1,0 +1,123 @@
+{
+  "seo": {
+    "title": "PayPal: deep-learning fraud detection on GPU - +10% detection, 8x fewer servers (2019)",
+    "meta_description": "PayPal moved its real-time fraud detection to NVIDIA GPU: +10% detection while cutting the required server capacity by about 8x.",
+    "resume_citable": "PayPal deployed a global real-time fraud-detection system on NVIDIA GPUs, improving detection by 10% while cutting the required server capacity by nearly 8x.",
+    "faq": [
+      {
+        "q": "How did PayPal improve its fraud detection?",
+        "a": "By moving the inference of its neural networks to NVIDIA T4 GPUs, which enabled a global real-time 24/7 system that CPU servers alone could not sustain."
+      },
+      {
+        "q": "What gains does PayPal report?",
+        "a": "According to NVIDIA's documentation, a 10% improvement in real-time fraud detection and a required server capacity cut by nearly 8x."
+      }
+    ]
+  },
+  "pattern": "real-time fraud detection with deep learning",
+  "etape_parcours": "purchase",
+  "objectif_business": "Detect fraud in real time on a global payments flow, 24 hours a day, without degrading checkout latency or exploding infrastructure cost.",
+  "points_cles": [
+    "Real-time fraud detection with deep neural networks.",
+    "Inference moved to NVIDIA T4 GPUs, custom 24/7 scoring system.",
+    "Detection improved by 10%, server capacity cut by nearly 8x.",
+    "Evidence B, mixed-signals status (figures from 2019)."
+  ],
+  "description": "PayPal deployed a global real-time fraud-detection system backed by deep neural networks. CPU servers alone could not handle the load for a service that must run continuously and decide on the fly on every transaction. PayPal moved the inference to NVIDIA T4 GPUs. The result documented by NVIDIA: a 10% improvement in real-time fraud detection, while cutting the required server capacity by nearly 8x. PayPal's CTO describes a system that makes possible capabilities that were previously out of reach.",
+  "resultats": [
+    {
+      "metrique": "Improvement in real-time fraud detection (move to GPU)"
+    },
+    {
+      "metrique": "Reduction in required server capacity"
+    }
+  ],
+  "niveau_preuve": {
+    "justification": "Quantified deployment documented by NVIDIA (infrastructure partner, an interested source) in two consistent publications, with a direct quote from PayPal's CTO tying the brand to the project. Not a financial result; the figures come from the vendor."
+  },
+  "stack_technique": [
+    {
+      "detail": "PayPal's proprietary anti-fraud models, trained on the payments flow and confirmed fraud; exact architecture not published."
+    },
+    {
+      "detail": "GPUs to which PayPal moved real-time inference: +10% detection and server capacity cut by nearly 8x compared to CPUs."
+    },
+    {
+      "detail": "Custom chain that scores each transaction on the fly, 24/7, and routes it to approval, blocking, or human review."
+    }
+  ],
+  "fonctionnement_operationnel": {
+    "cadence": "Real time, on every transaction, continuously 24/7 with manageable peaks (high-load events such as sale periods).",
+    "opere_par": "PayPal's data science and risk engineering teams.",
+    "signal_pilote": "Transaction behavior and confirmed fraud. If inference latency rises or the labels degrade, the system blocks legitimate payments or lets fraud through.",
+    "etapes": [
+      {
+        "etape": "Transaction",
+        "detail": "A payment is initiated on the PayPal network.",
+        "acteur": "site_app"
+      },
+      {
+        "etape": "Real-time scoring",
+        "detail": "The neural networks evaluate the transaction with low-latency GPU inference.",
+        "acteur": "AI"
+      },
+      {
+        "etape": "Decision",
+        "detail": "The payment is approved, blocked, or put in review based on the score.",
+        "acteur": "AI / risk team"
+      },
+      {
+        "etape": "Retraining",
+        "detail": "Confirmed fraud comes back to feed the training of the models.",
+        "acteur": "data team"
+      }
+    ]
+  },
+  "replication": {
+    "playbook": [
+      {
+        "action": "Measure the baseline: latency and cost of current inference, detection rate, false-positive rate, quality of confirmed-fraud labels.",
+        "livrable": "Quantified baseline shared with the risk team"
+      },
+      {
+        "action": "Decide build (in-house model + GPU inference) vs a market anti-fraud engine, with a POC on replayed traffic.",
+        "livrable": "Documented detection / latency / cost comparison"
+      },
+      {
+        "action": "Deploy the chosen system in shadow mode on the real flow: scoring in parallel with no impact on decisions.",
+        "livrable": "Decision gaps documented over several weeks"
+      },
+      {
+        "action": "Gradually switch over automatic decisioning, with human review on the gray zone and dispute governance (GDPR, explainability).",
+        "livrable": "System in production with blocking and review rules"
+      },
+      {
+        "action": "Feed confirmed fraud back into training and monitor model drift.",
+        "livrable": "Operational label loop and drift monitoring"
+      }
+    ],
+    "equipe": "2-4 risk data scientists + MLOps engineers to hold latency + fraud analysts for reviews and label quality",
+    "prerequis_data": [
+      "real-time payments flow",
+      "labeled history of confirmed fraud",
+      "behavioral and device signals"
+    ],
+    "prerequis_orga": [
+      "data science and risk engineering team",
+      "low-latency inference infrastructure (GPU)",
+      "governance of automated decisioning"
+    ],
+    "stack_possible": [
+      "custom deep-learning model (PayPal route)",
+      "third-party anti-fraud engines (Feedzai, Featurespace, Sift)",
+      "GPU inference to hold latency"
+    ],
+    "premiere_etape": "Measure the latency and cost of current inference before deciding on a move to GPU or an external engine."
+  },
+  "statut_vivant": {
+    "note": "Deep-learning fraud detection is a central, live asset at PayPal. The precise figures (10%, 8x) date from the GPU deployment documented in 2019; the architecture has probably evolved since, with no equivalent quantified public update found."
+  },
+  "transposable_ue": {
+    "note": "Real-time fraud scoring operates on payments, EU included. Under GDPR and the AI Act, an automatic blocking decision must remain explainable and contestable; transaction data is processed for fraud prevention."
+  }
+}

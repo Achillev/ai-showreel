@@ -1,0 +1,114 @@
+{
+  "seo": {
+    "title": "Rakuten: AI prediction of future buyers - CPA cut by 50% (2025)",
+    "meta_description": "Rakuten's Future Purchase Prediction ad service predicts future buyers from more than 70 services and halves the cost of acquisition.",
+    "resume_citable": "In 2025, Rakuten's Future Purchase Prediction ad service predicts future buyers from the data of more than 70 services in its ecosystem and cuts advertisers' customer acquisition cost by 50% on average.",
+    "faq": [
+      {
+        "q": "How does Future Purchase Prediction work?",
+        "a": "The AI crosses data from more than 70 Rakuten services with advertiser data to predict who will buy, then targets those profiles with advertising."
+      },
+      {
+        "q": "What gain is reported?",
+        "a": "Rakuten reports an average 50% reduction in customer acquisition cost on cases such as a home manufacturer and a beverage manufacturer."
+      }
+    ]
+  },
+  "pattern": "prediction of future buyers for ad targeting",
+  "etape_parcours": "discovery",
+  "stack_technique": [
+    { "detail": "Rakuten ad service that predicts future buyers and targets them for advertisers." },
+    { "detail": "Machine learning on behavioral data crossed with advertiser data; the exact model architecture is not public." },
+    { "detail": "Data from more than 70 services (Ichiba marketplace, mobile, banking, travel, content) under a single ID." },
+    { "detail": "Delivery of ads to the predicted profiles across the Rakuten network." }
+  ],
+  "objectif_business": "Find buyers that classic ad targeting misses, by predicting who will buy before they show it, and lower the acquisition cost of advertisers who buy space at Rakuten.",
+  "description": "Future Purchase Prediction is a Rakuten ad service that uses AI to forecast which users will buy. It draws on cross-service data from more than 70 services in the Rakuten ecosystem (Ichiba marketplace, mobile, banking, travel, content) plus advertiser data. The AI identifies demand that human targeters do not see and goes after potential customers missed by conventional targeting campaigns. Rakuten highlights concrete cases, including a home manufacturer and a beverage manufacturer, with an average halving of the customer acquisition cost.",
+  "points_cles": [
+    "AI prediction of future buyers for ad targeting.",
+    "Proprietary predictive model fed by data from more than 70 Rakuten services.",
+    "Customer acquisition cost cut by 50% on average across the cases cited.",
+    "Evidence B, status confirmed in Rakuten's October 2025 communication."
+  ],
+  "resultats": [
+    { "metrique": "Average reduction in customer acquisition cost (CPA)" },
+    { "metrique": "Rakuten services drawn into the database" }
+  ],
+  "niveau_preuve": {
+    "justification": "Figure published by Rakuten in its own innovation communication (interested official source, T2) and picked up by established specialist press (PYMNTS, T4). The 50% CPA gain is an average communicated by Rakuten from client cases, not a result audited by a third party, which places it at B."
+  },
+  "fonctionnement_operationnel": {
+    "cadence": "Predictive scoring retrained on behavioral data, activated per advertiser campaign",
+    "opere_par": "Rakuten's data and ad sales teams; the advertiser sets its target and its CPA goal",
+    "signal_pilote": "The purchase signals crossed across the more than 70 Rakuten services. If the user is not in the ecosystem or refuses data crossing, the model loses its advantage.",
+    "etapes": [
+      {
+        "etape": "Campaign definition",
+        "detail": "The advertiser specifies the product, the target, and the acquisition cost goal.",
+        "acteur": "customer"
+      },
+      {
+        "etape": "Buyer prediction",
+        "detail": "The model crosses Rakuten ecosystem and advertiser data to score future buyers.",
+        "acteur": "AI"
+      },
+      {
+        "etape": "Targeted delivery",
+        "detail": "The ad sales operation serves ads to the predicted profiles, including those missed by classic targeting.",
+        "acteur": "AI / ad sales"
+      },
+      {
+        "etape": "Measurement and adjustment",
+        "detail": "The team tracks the real CPA against the goal and adjusts the targeting scope.",
+        "acteur": "data team"
+      }
+    ]
+  },
+  "replication": {
+    "prerequis_data": [
+      "Broad-coverage behavioral and purchase signals",
+      "Unified customer ID across services",
+      "Advertiser conversion data for training"
+    ],
+    "prerequis_orga": [
+      "GDPR legal basis for cross-service data crossing",
+      "Ad sales operation or ad activation platform",
+      "Per-campaign CPA measurement loop"
+    ],
+    "stack_possible": [
+      "Predictive model on first-party data",
+      "CDP unifying the IDs",
+      "Ad activation platform"
+    ],
+    "premiere_etape": "Verify that you have a unified customer ID and a sufficient volume of conversions to train a purchase prediction model.",
+    "playbook": [
+      {
+        "action": "Audit the data: unified customer ID, usable conversion volume, legal basis for crossing (GDPR in the EU).",
+        "livrable": "Data mapping and compliance opinion."
+      },
+      {
+        "action": "Consolidate behavioral and purchase signals in a CDP or feature store under a single ID.",
+        "livrable": "Unified profiles activated for training."
+      },
+      {
+        "action": "Train a purchase prediction model and backtest it on the conversion history.",
+        "livrable": "Scoring model with offline measured lift."
+      },
+      {
+        "action": "Activate an advertising pilot on the predicted profiles, with a CPA goal and a classic targeting cell for comparison.",
+        "livrable": "Test campaign vs conventional targeting."
+      },
+      {
+        "action": "Read the real CPA against the goal, adjust the targeting scope, and industrialize per-campaign scoring.",
+        "livrable": "Documented CPA comparison and a reproducible scoring process."
+      }
+    ],
+    "equipe": "2 data scientists + 1 data engineer + 1 PM + 1 traffic manager; GDPR legal for the data crossing."
+  },
+  "statut_vivant": {
+    "note": "Service presented as active in Rakuten's official October 2025 communication, with quantified client cases in support."
+  },
+  "transposable_ue": {
+    "note": "The engine relies on cross-service data from more than 70 Rakuten services under a single ID (purchases, mobile, banking, travel, content), a crossing of personal data that would be heavily regulated in the EU. GDPR requires a legal basis and clear consent for this kind of cross-service matching, and the AI Act adds obligations on profiling. The pattern (predicting future buyers to target ads) remains valid, but the data ecosystem that makes it effective is specific to Rakuten in Japan."
+  }
+}

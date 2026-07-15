@@ -1,0 +1,105 @@
+{
+  "seo": {
+    "title": "Redfin: Ask Redfin, a genAI assistant on the listing, 93% weekly return (2024)",
+    "meta_description": "Ask Redfin answers buyers' questions about a listing and directs them to an agent. 93% of users return within a week.",
+    "resume_citable": "Ask Redfin, a genAI assistant launched nationwide in May 2024, answers questions about a listing: 93% of users return to the app within a week and nearly 1 in 10 request to be connected with an agent.",
+    "faq": [
+      {
+        "q": "What does Ask Redfin do?",
+        "a": "It is a genAI assistant on a listing page that answers questions about the property, the local market, and tours, then directs to a Redfin agent for service requests."
+      },
+      {
+        "q": "Does Ask Redfin handle the risk of housing discrimination?",
+        "a": "Yes, it was designed with instructions to answer in line with fair housing rules and to refuse questions that touch on housing discrimination."
+      }
+    ]
+  },
+  "pattern": "genAI assistant on the product page that answers then routes to an agent",
+  "etape_parcours": "consideration",
+  "stack_technique": [
+    { "detail": "AI conversational agent platform cited as a partner in building Ask Redfin." },
+    { "detail": "Generated answers grounded in listing details and the local market; the exact model is not publicly named." },
+    { "detail": "Structured listing content and local conditions that serve as grounding for the answers." },
+    { "detail": "A set of instructions that enforces answers compliant with fair housing rules and refuses questions touching on housing discrimination." }
+  ],
+  "objectif_business": "Answer a buyer's questions about a listing, the local market, and tours instantly, to keep them in the app and convert them into a connection with a Redfin agent.",
+  "description": "Ask Redfin is a genAI virtual assistant launched in beta on March 7, 2024, then opened nationwide to iPhone app users in the United States on May 2, 2024. It appears on a listing's detail page and answers questions about the property's features, local market conditions, neighboring amenities, and tour availability. For requests that go beyond the listing details, it hands off to Redfin's support team to connect the user with a licensed agent. The tool was designed with a set of instructions to answer in line with fair housing rules and to refuse questions that touch on housing discrimination. After launch, Redfin observes an increase in connections with agents.",
+  "resultats": [
+    { "metrique": "Ask Redfin users returning to the app within a week" },
+    { "metrique": "Share of questions about the property being viewed" },
+    { "metrique": "Users requesting to be connected with an agent" },
+    { "metrique": "Users requesting a tour" }
+  ],
+  "niveau_preuve": {
+    "justification": "Engagement figures reported by Redfin on its own official channel (T1) and picked up by specialist press (Inman, HousingWire). Usage and conversion metrics, without isolated financial impact, hence a C level."
+  },
+  "fonctionnement_operationnel": {
+    "cadence": "Real-time, on each opening of the assistant on a listing page.",
+    "opere_par": "Redfin's product and data team for the assistant; the support team for the handoff to an agent.",
+    "signal_pilote": "The structured content of the listing and the local market data. If the assistant answers without grounding in this data, it drifts and steps outside the fair housing frame.",
+    "etapes": [
+      {
+        "etape": "Question about the listing",
+        "detail": "The user opens Ask Redfin on a listing and asks a question about the property or the market.",
+        "acteur": "customer"
+      },
+      {
+        "etape": "Grounded and filtered answer",
+        "detail": "The assistant answers from the listing details and local conditions, refusing fair-housing-risk questions.",
+        "acteur": "AI"
+      },
+      {
+        "etape": "Handoff to an agent",
+        "detail": "For a service or tour request, the assistant hands off to the support team, which connects to a licensed agent.",
+        "acteur": "human"
+      }
+    ]
+  },
+  "replication": {
+    "prerequis_data": [
+      "structured listings with usable features",
+      "local market data",
+      "tour availability and routing to agents"
+    ],
+    "prerequis_orga": [
+      "compliance and anti-discrimination guardrails",
+      "support team for the human handoff",
+      "engagement and conversion measurement loop"
+    ],
+    "stack_possible": [
+      "LLM grounded on the listing (RAG)",
+      "conversational agent platform",
+      "refusal rules on sensitive subjects"
+    ],
+    "premiere_etape": "Ground the answers on the structured listing content before opening up the field of questions.",
+    "playbook": [
+      {
+        "action": "Define the scope of covered questions and write the compliance guardrails (anti-discrimination, refused subjects).",
+        "livrable": "Documented answer and refusal rules."
+      },
+      {
+        "action": "Build the assistant grounded on the structured listing content (RAG) via a conversational platform.",
+        "livrable": "Internal beta on a subset of listings."
+      },
+      {
+        "action": "Connect the human handoff: escalation to the support team then connection with a licensed agent, and tour availability.",
+        "livrable": "End-to-end escalation journey operational."
+      },
+      {
+        "action": "Open a public beta on a single surface (mobile app) with measurement of return to the app and agent requests.",
+        "livrable": "Live assistant with an engagement dashboard."
+      },
+      {
+        "action": "Read engagement and conversion (tour requests, connections) and extend the surface.",
+        "livrable": "Quantified review and a generalization plan."
+      }
+    ],
+    "equipe": "1 PM + 2 devs + 1 housing compliance lawyer + the support team for the human handoff."
+  },
+  "statut_vivant": {
+    "note": "Ask Redfin has been in production since May 2024. Redfin has since added a conversational search, a sign that the AI assistance block on the listing remains active and invested in."
+  },
+  "transposable_ue": {
+    "note": "A genAI assistant on a listing page is transposable to a European portal. The main constraint is the anti-discrimination housing frame, which Redfin handled through fair housing guardrails; in Europe, GDPR and the AI Act on a customer-facing system are added."
+  }
+}

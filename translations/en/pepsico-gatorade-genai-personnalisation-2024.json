@@ -1,0 +1,119 @@
+{
+  "seo": {
+    "title": "Gatorade (PepsiCo): genAI-personalized Squeeze bottle - 200,000 Firefly assets (2024)",
+    "meta_description": "Gatorade lets athletes design their Squeeze Bottle with genAI (Adobe Firefly) on gatorade.com: 200,000 assets, millions of options, still online.",
+    "resume_citable": "Gatorade (PepsiCo) launched in 2024 a genAI-driven Squeeze bottle configurator using Adobe Firefly, with 200,000 pre-generated assets and millions of options, still online on gatorade.com more than 18 months later.",
+    "faq": [
+      {
+        "q": "How does Gatorade's genAI personalization work?",
+        "a": "On gatorade.com, a Gatorade iD member enters their interests; Adobe Firefly generates a pattern applied to the Squeeze Bottle. Two free designs, then payment in points; bottle at $34.99."
+      },
+      {
+        "q": "Is it just a PR stunt?",
+        "a": "No. It is a productized D2C feature, connected to the loyalty program, with a dedicated product page still active more than 18 months after launch."
+      }
+    ]
+  },
+  "pattern": "self-service genAI product personalization on a D2C site",
+  "etape_parcours": "purchase",
+  "objectif_business": "Give a reason to sign up and buy on the D2C channel by letting athletes design a unique bottle, while keeping the iconic visual identity of the Squeeze Bottle.",
+  "description": "Gatorade put a genAI-driven Squeeze bottle configurator online on gatorade.com, accessible through the free Gatorade iD loyalty platform. The user types in their interests (a sport, a hobby), picks a pattern mood and a palette, and the tool generates a design applied to the bottle without breaking its iconic look. The technology relies on Adobe Firefly Services, with a repository of 200,000 pre-generated assets to handle the load and the personalization. Each member gets two free designs, then pays in loyalty points (200 points per following generation); the custom bottle costs 34.99 dollars. The tool, launched in October 2024, is still available on gatorade.com as of the verification date. It is a productized, durable deployment, not a PR stunt: a D2C feature connected to loyalty, with a dedicated product page still online.",
+  "resultats": [
+    {
+      "metrique": "Library of pre-generated assets via Adobe Firefly"
+    },
+    {
+      "metrique": "Design options offered (depth of personalization)"
+    },
+    {
+      "metrique": "Custom bottle: 2 free designs, then 200 loyalty points"
+    }
+  ],
+  "niveau_preuve": {
+    "justification": "Official PepsiCo release plus an Adobe (partner) case study and press, with liveness confirmed by the gatorade.com product page; the published indicators describe the scale and the model, not yet audited business results, hence C."
+  },
+  "stack_technique": [
+    {
+      "detail": "Adobe's commercial genAI models used to generate the patterns applied to the Squeeze Bottle, with a repository of 200,000 pre-generated assets to handle the load."
+    },
+    {
+      "detail": "Gatorade's free loyalty platform that carries access to the configurator and payment in points (200 points per generation after two free designs)."
+    },
+    {
+      "detail": "Agency that integrated the personalization experience into gatorade.com."
+    }
+  ],
+  "fonctionnement_operationnel": {
+    "cadence": "Real time, self-service: each generation is triggered on demand by a Gatorade iD member.",
+    "opere_par": "PepsiCo/Gatorade's design and D2C teams, on Adobe Firefly Services, integration by Work & Co.",
+    "signal_pilote": "The user's prompt and their loyalty account. Without guardrails (moderation, an imposed iconic look, prompt filtering), the output can drift off-brand or produce unwanted content.",
+    "etapes": [
+      {
+        "etape": "Entering the configurator",
+        "detail": "The Gatorade iD member opens the tool on gatorade.com and enters their interests.",
+        "acteur": "customer"
+      },
+      {
+        "etape": "Design generation",
+        "detail": "Firefly generates a pattern applied to the Squeeze Bottle, keeping the iconic look.",
+        "acteur": "AI (Adobe Firefly Services)"
+      },
+      {
+        "etape": "Choice and billing",
+        "detail": "Two free designs, then 200 loyalty points per generation; order of the bottle at 34.99 dollars.",
+        "acteur": "D2C platform / customer"
+      },
+      {
+        "etape": "Production and delivery",
+        "detail": "Printing of the chosen design on the bottle and shipping.",
+        "acteur": "supply / e-commerce"
+      }
+    ]
+  },
+  "replication": {
+    "playbook": [
+      {
+        "action": "Pick a customizable product with strong identity weight and frame the guardrails: imposed brand look, moderation of prompts and outputs.",
+        "livrable": "Creative brief + brand and moderation rules"
+      },
+      {
+        "action": "Prototype the configurator on a commercial image model, with the product as a fixed template and the pattern as the only generated area.",
+        "livrable": "Demo generating brand-compliant designs"
+      },
+      {
+        "action": "Pre-generate an asset library to handle the load and connect the customer account or loyalty program as the entry point.",
+        "livrable": "Asset library + working member journey"
+      },
+      {
+        "action": "Connect production to demand (printing the design, shipping) and the checkout.",
+        "livrable": "Order-to-production chain tested end to end"
+      },
+      {
+        "action": "Launch, then track sign-ups, conversion rate on the custom product, and moderation incidents.",
+        "livrable": "Feature in production with a dashboard"
+      }
+    ],
+    "equipe": "1 D2C PM + 1 art director + an integration agency; moderation and customer service absorb the flow at launch",
+    "prerequis_data": [
+      "customer account / loyalty program",
+      "product visual guidelines to preserve",
+      "asset library or a commercial genAI model"
+    ],
+    "prerequis_orga": [
+      "personalization-production chain (print on demand)",
+      "moderation of prompts and outputs"
+    ],
+    "stack_possible": [
+      "Adobe Firefly Services or an equivalent commercial image model",
+      "D2C platform with a customer account",
+      "front-end integrator"
+    ],
+    "premiere_etape": "Pick a customizable product with strong identity weight and prototype a genAI configurator with an imposed brand look and prompt guardrails."
+  },
+  "statut_vivant": {
+    "note": "The tool is described as still available on gatorade.com and has a dedicated product page active at verification, more than 18 months after launch."
+  },
+  "transposable_ue": {
+    "note": "The user enters prompts and the designs are tied to a loyalty account: personal data and user-generated content to be framed (GDPR, moderation, prompt filtering). Under the AI Act, the genAI nature of the tool must remain transparent."
+  }
+}

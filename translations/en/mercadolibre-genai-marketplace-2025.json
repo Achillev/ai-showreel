@@ -1,0 +1,114 @@
+{
+  "seo": {
+    "title": "MercadoLibre: genAI in the marketplace - advertising revenue +67% in Q4 2025",
+    "meta_description": "MercadoLibre integrated AI search, a buyer assistant and a generative Seller Assistant: advertising revenue +67% in constant currency and ~20% of GMV advised by AI in Q4 2025.",
+    "resume_citable": "MercadoLibre embedded generative AI in its marketplace (AI search in Argentina, buyer assistant, Seller Assistant creating videos from a product photo), driving its advertising revenue to +67% in constant currency in Q4 2025 and ~20% of its GMV advised by the seller assistant.",
+    "faq": [
+      {
+        "q": "How does this case differ from an advertiser buying advertising AI?",
+        "a": "MercadoLibre does not rent a platform's AI: the company builds the AI into its own product (search, assistants, seller tools) and monetizes it through its ad business. The leverage comes from owning the marketplace, its data and its ad inventory."
+      },
+      {
+        "q": "What is the main prerequisite to replicate this pattern?",
+        "a": "Owning an audience or a marketplace with a volume of first-party behavioral data, plus internal AI engineering capacity. This is not a feature to activate but a product and data program."
+      }
+    ]
+  },
+  "pattern": "GenAI embedded in a marketplace: AI search and conversational assistant on the buyer side, a Seller Assistant that generates listings and short videos on the seller side, all feeding the ad business where AI optimizes bids. The brand owns the marketplace, hence the behavioral data and the ad inventory.",
+  "etape_parcours": "discovery -> consideration -> purchase -> post-purchase",
+  "objectif_business": "Make AI a cross-functional growth engine: improve product discovery and conversion on the buyer side, speed up and industrialize supply on the seller side, and above all monetize through an ad business where AI drives bids and campaigns. All without raising churn or degrading conversion.",
+  "description": "MercadoLibre, the number one marketplace and fintech in Latin America, integrated generative AI at several points of its ecosystem and documented it in its fourth-quarter 2025 results (published on February 24, 2026). On the buyer side: an AI-enriched search launched in Argentina, which starts from a broad term and expands it based on customer behavior. The word 'ball' returns tennis balls to a tennis player and soccer balls to a football fan, and may show brands or a price range depending on what the platform knows about the buyer. A conversational assistant refines a vague search like 'smartphone' by guiding the user on product attributes. On the seller side: the Seller Assistant speeds up sellers' progression toward better reputation tiers, improves listing quality, creates short videos from a single product photo, and handles requests that previously went through customer service. According to management, about 20% of GMV is advised by this assistant. These building blocks feed the ad business: advertising revenue climbed 67% in constant currency in Q4 2025 (70% in dollars), driven by search ads and by investments in bidding and campaign tools. In parallel, Mercado Pago's AI assistant, launched in October 2025, handled more than 9 million conversations over the quarter, nearly 90% of them resolved without human intervention.",
+  "points_cles": [
+    "GenAI embedded in the marketplace: AI search, buyer assistant, Seller Assistant.",
+    "Custom in-house building blocks feeding the ad business where AI optimizes bids.",
+    "Advertising revenue +67% in constant currency in Q4 2025, ~20% of GMV advised by the assistant.",
+    "Evidence A, confirmed status: figures from the Q4 2025 SEC 8-K and earnings call."
+  ],
+  "resultats": [
+    { "metrique": "Advertising revenue growth in constant currency, +70% in USD (Q4 2025)" },
+    { "metrique": "Share of GMV advised by the Seller Assistant" },
+    { "metrique": "Mercado Pago AI assistant, ~90% resolved without a human (Q4 2025)" }
+  ],
+  "niveau_preuve": {
+    "justification": "Figures published in the Q4 2025 financial results (SEC 8-K, exhibit 99.1, letter to shareholders), with the detail of the AI use cases and quantified advertising growth. Confirmed by the earnings call transcript (share of GMV advised by the assistant) and picked up by business press. Three concordant sources including a primary SEC document."
+  },
+  "stack_technique": [
+    {}
+  ],
+  "fonctionnement_operationnel": {
+    "cadence": "Continuous. AI search and the buyer assistant run in real time on every query; the Seller Assistant is called at listing creation or optimization; the ad business optimizes bids campaign by campaign. The models are retrained on the marketplace's behavioral flow.",
+    "opere_par": "MercadoLibre's product and data teams for the models; the retail media / ads team for monetization; sellers themselves activate the Seller Assistant on their listings.",
+    "signal_pilote": "First-party purchase and search behavior (history, transactions, viewed attributes). This is the signal that personalizes search, feeds ad bidding and trains the seller recommendations. Without this volume of proprietary data, personalization and bid optimization lose their basis.",
+    "etapes": [
+      {
+        "etape": "Understand intent at search",
+        "detail": "The AI engine expands a broad term into relevant results based on the buyer's profile, where a keyword search returned an undifferentiated list.",
+        "acteur": "AI (search model)"
+      },
+      {
+        "etape": "Assist the buyer in conversation",
+        "detail": "An agent guides the user on product attributes to turn a vague query into a precise selection.",
+        "acteur": "AI (conversational agent)"
+      },
+      {
+        "etape": "Industrialize seller supply",
+        "detail": "The Seller Assistant generates short videos from a photo, improves listings and answers customer questions; the seller validates and publishes.",
+        "acteur": "AI + seller"
+      },
+      {
+        "etape": "Monetize through the ad business",
+        "detail": "Search ads are optimized by bidding algorithms and automated campaign tools; advertisers pay on performance.",
+        "acteur": "AI (bidding) + ads team"
+      },
+      {
+        "etape": "Loop back on the data",
+        "detail": "Each interaction (search, click, purchase, conversation) enriches the behavioral signal that refines the models on the next round.",
+        "acteur": "Data team"
+      }
+    ]
+  },
+  "replication": {
+    "prerequis_data": [
+      "Volume of first-party behavioral data (search, transactions)",
+      "Structured product catalog and usable attributes",
+      "Proprietary ad inventory to monetize"
+    ],
+    "prerequis_orga": [
+      "Own the marketplace or the audience (not transposable to a pure advertiser)",
+      "Durable internal AI engineering capacity",
+      "An ad business or retail media program to run"
+    ],
+    "stack_possible": [
+      "LLM and semantic search models (in-house or vendor)",
+      "Video/image generation from a product photo",
+      "Conversational agent connected to the catalog",
+      "ML bidding engine for the ad business"
+    ],
+    "equipe": "Internal product and data science team for the search and generative models, a retail media team for monetization, and seller-side liaisons to adopt the tools. This is not a platform activation: it is a sustained engineering and data program.",
+    "playbook": [
+      {
+        "action": "Map the available first-party behavioral data (searches, clicks, purchases, viewed attributes) and verify it is usable for personalization, including the legal basis in the EU.",
+        "livrable": "Data inventory and compliance framing."
+      },
+      {
+        "action": "Start with search: move from a keyword engine to a search that understands intent and expands based on the profile, on a perimeter where failure is low-cost.",
+        "livrable": "AI search in test on one segment or category."
+      },
+      {
+        "action": "Add a conversational assistant on the buyer side to refine vague queries, then a generative tool on the supply side (listings, visuals, short videos) to industrialize the catalog.",
+        "livrable": "Buyer assistant and seller tool in production on a subset."
+      },
+      {
+        "action": "Connect these building blocks to monetization: optimize the ad business's bids and campaigns on the same behavioral signal, measuring the effect on ad revenue, conversion and churn.",
+        "livrable": "Instrumented discovery -> ads loop with conversion/churn guardrails."
+      }
+    ],
+    "premiere_etape": "Spot a high-volume, low-relevance search, plug in an engine that understands intent, and measure the effect on conversion before extending to the other building blocks."
+  },
+  "statut_vivant": {
+    "note": "Documented in the most recent quarterly results (February 2026) as an initiative being extended to the whole marketplace. The 67% advertising growth is an audited financial result for the quarter."
+  },
+  "transposable_ue": {
+    "note": "The pattern (AI search, buyer assistant, generative seller tool feeding the ad business) is transposable to any marketplace or retailer that owns its own audience and first-party data. In the EU, personalizing search on purchase history and the conversational agent fall under the GDPR (legal basis, consent), and an assistant that advises the buyer may fall under the AI Act's transparency obligations. The hard point is not legal but structural: you need to own the marketplace and the volume of behavioral data."
+  }
+}

@@ -1,0 +1,116 @@
+{
+  "seo": {
+    "title": "Commonwealth Bank: GenAI customer messaging - 40% shorter wait times (2024)",
+    "meta_description": "CommBank's GenAI messaging handles 50,000 enquiries a day, cut call center wait times by 40% and scam-related losses by 50%.",
+    "resume_citable": "In 2024, Commonwealth Bank of Australia's GenAI customer messaging handled more than 50,000 enquiries a day, with a 40% drop in call center wait times and a 50% reduction in scam-related losses.",
+    "faq": [
+      {
+        "q": "What does CommBank's GenAI messaging do?",
+        "a": "It responds in real time to more than 50,000 customer enquiries a day in the app and pushes proactive alerts on suspicious transactions."
+      },
+      {
+        "q": "What effect on the call center?",
+        "a": "CommBank attributes to this messaging a 40% drop in call center wait times over the year."
+      }
+    ]
+  },
+  "pattern": "GenAI customer messaging + proactive alerts",
+  "etape_parcours": "post-purchase",
+  "objectif_business": "Shift call volume to GenAI messaging in the app to reduce wait times, and use the same AI layer to send proactive alerts that cut fraud and scams before they succeed.",
+  "description": "Commonwealth Bank put generative AI-powered customer messaging in its mobile app, which handles more than 50,000 retail customer enquiries a day. Over the past financial year, the bank attributes a 40% reduction in call center wait times to this messaging. The same AI component sends proactive alerts on suspicious transactions (around 20,000 a day, with a planned ramp-up to 35,000), which CBA links to a 30% drop in customer-reported frauds and a 50% reduction in scam-related losses through its NameCheck, CallerCheck, and CustomerCheck features.",
+  "points_cles": [
+    "GenAI customer messaging in the app plus proactive suspicious-transaction alerts.",
+    "In-house GenAI layer on the transaction flow, with NameCheck, CallerCheck, and CustomerCheck.",
+    "More than 50,000 enquiries a day, wait times -40%, scam losses -50%.",
+    "Evidence level B, live status confirmed."
+  ],
+  "resultats": [
+    { "metrique": "Reduction in call center wait times" },
+    { "metrique": "Customer enquiries a day (GenAI messaging)" },
+    { "metrique": "Drop in customer-reported frauds" },
+    { "metrique": "Reduction in scam-related losses" }
+  ],
+  "niveau_preuve": {
+    "justification": "Figures published by CommBank in an official communication (T1) aligned with its FY24 results, picked up by specialized press (T2/T4). Operational metrics tied to the results but not audited P&L lines, hence B rather than A."
+  },
+  "stack_technique": [
+    { "detail": "generative messaging developed in-house; the underlying models are not publicly disclosed" },
+    { "detail": "in-house models that continuously scan the transaction flow and trigger the proactive alerts (about 20,000 a day)" },
+    { "detail": "in-house anti-scam features to which CBA links the 50% reduction in scam-related losses" },
+    { "detail": "single channel for the GenAI messaging and the proactive alerts, wired to the core banking system" }
+  ],
+  "fonctionnement_operationnel": {
+    "cadence": "Real time for messaging; proactive alerts triggered continuously on transactions",
+    "opere_par": "CommBank customer service and risk/fraud teams, on an in-house GenAI layer",
+    "signal_pilote": "Real-time transaction data. It feeds both the messaging responses and the anomaly detection for the alerts. Without a clean transaction flow, the proactive alerts become noise and lose customer trust.",
+    "etapes": [
+      {
+        "etape": "Messaging enquiry",
+        "detail": "The customer writes in the app messaging; the GenAI layer answers common enquiries and relieves the call center.",
+        "acteur": "AI"
+      },
+      {
+        "etape": "Transaction monitoring",
+        "detail": "In parallel, the system scans transactions to spot fraud and scam patterns.",
+        "acteur": "AI"
+      },
+      {
+        "etape": "Proactive alert",
+        "detail": "On a suspicious transaction, an alert is pushed to the customer (about 20,000 a day), with the NameCheck, CallerCheck, and CustomerCheck controls.",
+        "acteur": "AI"
+      },
+      {
+        "etape": "Escalation and management",
+        "detail": "Complex or high-risk cases go to an agent; the teams track wait times, fraud rate, and losses to adjust.",
+        "acteur": "customer service / risk team"
+      }
+    ]
+  },
+  "replication": {
+    "prerequis_data": [
+      "Real-time transaction flow",
+      "Labeled fraud and scam history",
+      "Knowledge base of frequent customer enquiries"
+    ],
+    "prerequis_orga": [
+      "Coordination between customer service and the risk/fraud team",
+      "A proactive messaging policy (frequency, false positives)",
+      "A compliance and AI transparency framework"
+    ],
+    "stack_possible": [
+      "Generative LLM for messaging",
+      "Anomaly detection models on transactions",
+      "Mobile app and core banking integration"
+    ],
+    "premiere_etape": "Start with messaging on the most frequent enquiries to reduce calls, then wire anomaly detection onto the transaction flow for alerts.",
+    "playbook": [
+      {
+        "action": "Map the most frequent customer messaging enquiries and set the compliance framework (transaction data, AI transparency).",
+        "livrable": "Prioritized enquiry corpus and validated legal framework"
+      },
+      {
+        "action": "Build the GenAI messaging on the top enquiries, integrated into the app, with an equipped escalation path to an agent.",
+        "livrable": "Working internal beta with an escalation flow"
+      },
+      {
+        "action": "Roll out progressively to customers and measure the effect on call center wait times.",
+        "livrable": "Messaging in production with a deflection dashboard"
+      },
+      {
+        "action": "Wire anomaly detection onto the real-time transaction flow and calibrate false-positive thresholds.",
+        "livrable": "Alert engine validated in pre-production"
+      },
+      {
+        "action": "Launch the proactive alerts with a shared customer service / risk team loop and track reported frauds and losses.",
+        "livrable": "Alerts in production with fraud and loss monitoring"
+      }
+    ],
+    "equipe": "2-4 ML/LLM engineers + 1 PM + fraud risk team + customer service for escalation"
+  },
+  "statut_vivant": {
+    "note": "Deployment confirmed over the 2024 financial year and extended in 2025 (ramp-up of proactive alerts, extension of other GenAI tools such as ChatIT internally). Feature active in the app."
+  },
+  "transposable_ue": {
+    "note": "GenAI messaging deployed in Australia. In the EU, using transactional data for messaging and anti-fraud alerts requires a GDPR legal basis and an AI transparency obligation under the AI Act. The pattern (GenAI customer messaging + proactive alerts) is transposable; compliance must be redone per market."
+  }
+}

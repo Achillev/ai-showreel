@@ -1,0 +1,125 @@
+{
+  "seo": {
+    "title": "Olay: AI skin diagnostic on a selfie - conversion rate doubled (2016)",
+    "meta_description": "Olay Skin Advisor analyzes a selfie with deep learning to recommend a routine: conversion doubled, bounce -1/3, basket +40% in China, 4M consumers.",
+    "resume_citable": "In 2016, Olay (P&G) launched Skin Advisor, a deep-learning skin diagnostic on a selfie that doubled the conversion rate, cut bounce by a third, raised the average basket by 40% in China, and engaged more than 4 million consumers.",
+    "faq": [
+      {
+        "q": "How does Olay Skin Advisor work?",
+        "a": "The user takes a selfie; a deep-learning model estimates skin age and the areas to treat, then a recommendation engine proposes a tailored Olay routine."
+      },
+      {
+        "q": "What results does Olay claim?",
+        "a": "A doubled conversion rate, an online bounce rate cut by a third, an average basket up 40% in China, and more than 4 million consumers engaged."
+      }
+    ]
+  },
+  "pattern": "AI skin diagnostic on a selfie leading to a product recommendation",
+  "etape_parcours": "consideration",
+  "objectif_business": "Reduce friction and uncertainty when buying skincare online by replacing the catalog with a personalized diagnostic, to convert better and raise the basket.",
+  "description": "Olay Skin Advisor asks for a selfie and a few answers, then estimates a skin age and points to the areas to treat with deep learning. From there, the tool suggests a routine and tailored Olay products. Launched in 2016 after two years of development and the analysis of millions of selfies, it first ran in beta in North America before a global rollout, including China. P&G reports that the platform doubled the sales conversion rate, cut the online bounce rate by a third, and raised the average basket. In China, the average basket rose by 40 percent. The tool has engaged more than 4 million consumers and serves recommendations to tens of thousands of users each week, 94 percent of whom receive personalized suggestions. The recommendation engine was built with Nara Logics, with the image analysis relying on NVIDIA's GPU platform.",
+  "resultats": [
+    {
+      "metrique": "Sales conversion rate"
+    },
+    {
+      "metrique": "Online bounce rate"
+    },
+    {
+      "metrique": "Average basket in China"
+    },
+    {
+      "metrique": "Consumers engaged"
+    }
+  ],
+  "niveau_preuve": {
+    "justification": "Figures attributed to P&G and reproduced by several press outlets (VentureBeat, Marketing Dive, The Drum) naming Olay; no separate line in the group's financial results, hence C rather than A."
+  },
+  "stack_technique": [
+    {
+      "detail": "Image-analysis model developed for Olay, trained on millions of selfies: estimating skin age and detecting the areas to treat."
+    },
+    {
+      "detail": "AI recommendation engine that matches the skin profile and questionnaire answers to Olay products and routines."
+    },
+    {
+      "detail": "GPU platform used for training and inference of the image-analysis models."
+    },
+    {
+      "detail": "Consumer web app that carries the selfie, questionnaire, diagnostic, and recommendation journey, linked to Olay e-commerce."
+    }
+  ],
+  "fonctionnement_operationnel": {
+    "cadence": "Real time on each user session; periodic model retraining on new selfies and product feedback.",
+    "opere_par": "Olay/P&G data science team for the model, e-commerce and CRM teams for integration into the purchase journey.",
+    "signal_pilote": "The quality of the selfie and the consistency between the skin score and the recommendation. Poor framing or lighting degrades the diagnostic and undermines confidence in the recommendation.",
+    "etapes": [
+      {
+        "etape": "Selfie capture and analysis",
+        "detail": "Estimating skin age and detecting the areas to treat with vision and deep learning.",
+        "acteur": "AI"
+      },
+      {
+        "etape": "Follow-up questionnaire",
+        "detail": "A few questions about concerns and habits refine the profile.",
+        "acteur": "user"
+      },
+      {
+        "etape": "Routine recommendation",
+        "detail": "The engine matches the profile to Olay products and proposes a routine.",
+        "acteur": "AI (Nara Logics engine)"
+      },
+      {
+        "etape": "Move to purchase",
+        "detail": "The recommended products are pushed to the e-commerce cart, measured on conversion and basket.",
+        "acteur": "e-commerce"
+      }
+    ]
+  },
+  "replication": {
+    "playbook": [
+      {
+        "action": "Pick a category with high purchase hesitation and frame the diagnostic: which skin attributes lead to which products in the catalog.",
+        "livrable": "Skin-profile-to-catalog mapping, validated by the product teams"
+      },
+      {
+        "action": "Integrate a market skin-analysis API (Haut.AI, Perfect Corp, ModiFace) with the follow-up questionnaire, white-labeled on the site.",
+        "livrable": "End-to-end working diagnostic prototype"
+      },
+      {
+        "action": "Secure the biometric aspect: explicit consent, minimization, clear notice that the output is indicative and not medical.",
+        "livrable": "Legally validated consent journey"
+      },
+      {
+        "action": "Launch an A/B test of diagnostic vs standard catalog page and measure conversion, basket, and bounce.",
+        "livrable": "Test read with a go/no-go decision"
+      },
+      {
+        "action": "Industrialize: CRM integration, a full multi-product routine, and a usage-feedback loop to refine recommendations.",
+        "livrable": "Feature in production with continuous monitoring"
+      }
+    ],
+    "equipe": "1 front-end developer + 1 back-end/integration developer + 1 e-commerce PM, with a lawyer for the biometric aspect; a data scientist needed only for the custom route",
+    "prerequis_data": [
+      "corpus of labeled skin images to train or calibrate the model",
+      "structured product catalog with skin attributes",
+      "GDPR-compliant biometric consent"
+    ],
+    "prerequis_orga": [
+      "data science team or a vision partner",
+      "governance on the non-medical nature of the output"
+    ],
+    "stack_possible": [
+      "third-party skin-analysis API (such as Haut.AI, Perfect Corp, ModiFace)",
+      "product recommendation engine",
+      "integration with the CMS / e-commerce"
+    ],
+    "premiere_etape": "Test a skin diagnostic on a high-hesitation category and measure conversion and basket against the standard catalog page."
+  },
+  "statut_vivant": {
+    "note": "Skin Advisor remains the brand's diagnostic entry point for Olay, deployed globally and still referenced in beauty-sector analyses in 2024."
+  },
+  "transposable_ue": {
+    "note": "The diagnostic relies on analyzing a selfie, biometric data under GDPR. Explicit consent and a legal basis are required, with processing preferably on the client side or with minimization. Under the AI Act, a consumer skin-diagnostic tool stays out of high-risk but requires transparency that the output is indicative, not medical."
+  }
+}

@@ -1,0 +1,128 @@
+{
+  "seo": {
+    "title": "Walmart Sparky: genAI shopping assistant - average basket +35% (2025)",
+    "meta_description": "Sparky, Walmart's genAI assistant, generates baskets 35% larger than non-users and more than quadrupled units purchased in one quarter.",
+    "resume_citable": "Walmart customers who use the Sparky genAI assistant have an average basket about 35% higher than non-users, and units purchased through Sparky more than quadrupled in one fiscal quarter (FY2026 earnings call).",
+    "faq": [
+      {
+        "q": "What effect does Sparky have on the basket?",
+        "a": "Walmart states that the average basket of Sparky users is about 35% higher than that of non-users."
+      },
+      {
+        "q": "Where is Sparky available?",
+        "a": "On the Walmart app, site, and stores in the United States, with Spanish support added since launch."
+      }
+    ]
+  },
+  "pattern": "genAI shopping assistant",
+  "etape_parcours": "consideration",
+  "objectif_business": "Move from keyword search to intent-based search to increase average basket and app usage frequency.",
+  "description": "Sparky is Walmart's genAI assistant, accessible via the Ask Sparky button in the app and then extended to the site and stores. The customer expresses an intent (organizing a birthday, choosing a sunscreen under 30 dollars) and Sparky returns recommendations synthesized from the catalog and reviews, with product comparisons. Launched the week of June 6, 2025 on the app. Features added later: automatic replenishment of essentials, meal planning, and Spanish support.",
+  "points_cles": [
+    "Sparky genAI shopping assistant, from intent-based search to recommendations.",
+    "In-house LLM and RAG setup over the catalog and customer reviews.",
+    "Average basket +35% vs non-users, units purchased more than quadrupled.",
+    "Evidence level A, confirmed status, present on the US app, site, and stores."
+  ],
+  "resultats": [
+    {
+      "metrique": "Average basket of users"
+    },
+    {
+      "metrique": "Weekly active users"
+    },
+    {
+      "metrique": "Units purchased via Sparky"
+    }
+  ],
+  "niveau_preuve": {
+    "justification": "Figures disclosed during the Walmart earnings call (fiscal year 2026), reported by Digital Commerce 360 and Modern Retail. Metrics tied to the group's financial communication."
+  },
+  "fonctionnement_operationnel": {
+    "cadence": "Real time at each session, with basket and unit metrics tracked by fiscal quarter.",
+    "opere_par": "Emerging Tech team and Walmart U.S. (in-house), connected to the catalog and reviews.",
+    "signal_pilote": "The match between the intent expressed in natural language and the structured product data. If the catalog is not enriched, Sparky does not find the right product and the basket effect disappears.",
+    "etapes": [
+      {
+        "etape": "Intent expression",
+        "detail": "The customer describes a need or an occasion via Ask Sparky.",
+        "acteur": "customer"
+      },
+      {
+        "etape": "Synthesis and recommendation",
+        "detail": "The RAG system synthesizes reviews and product pages, returns recommendations and comparisons.",
+        "acteur": "AI"
+      },
+      {
+        "etape": "Transactional actions",
+        "detail": "Sparky helps compare, add to cart, and, in some cases, replenish essentials.",
+        "acteur": "AI"
+      },
+      {
+        "etape": "Metrics reading",
+        "detail": "Average basket, units, and weekly actives are tracked to steer the extension of capabilities.",
+        "acteur": "data team"
+      }
+    ]
+  },
+  "replication": {
+    "prerequis_data": [
+      "enriched and structured product catalog",
+      "customer reviews",
+      "intent signals per category"
+    ],
+    "prerequis_orga": [
+      "in-house AI team or partner",
+      "catalog quality governance"
+    ],
+    "stack_possible": [
+      "foundation LLM",
+      "RAG engine over the catalog",
+      "multimodal text and image orchestration"
+    ],
+    "premiere_etape": "Audit the richness of the catalog (specs, attributes, reviews) before connecting an assistant, because it is the limiting factor.",
+    "playbook": [
+      {
+        "action": "Audit the richness of the catalog (attributes, specs, reviews) category by category.",
+        "livrable": "Coverage report + product page enrichment plan."
+      },
+      {
+        "action": "Build the catalog + reviews RAG and a first assistant on a few well-covered categories.",
+        "livrable": "Prototype that answers typical intents (occasion, budget, constraint)."
+      },
+      {
+        "action": "Launch the in-app beta with a dedicated entry point on a user segment.",
+        "livrable": "Average basket and engagement measures, users vs non-users."
+      },
+      {
+        "action": "Add the transactional actions (comparison, add to cart).",
+        "livrable": "Transactional assistant integrated into checkout."
+      },
+      {
+        "action": "Extend the capabilities (replenishment, languages) based on the metrics.",
+        "livrable": "Roadmap prioritized by average basket, units, and weekly actives."
+      }
+    ],
+    "equipe": "1 PM + 3-4 engineers (LLM/RAG, app) + catalog/content team + 1 data analyst for measurement"
+  },
+  "statut_vivant": {
+    "note": "Present on app, site, and stores in 2026, with new capabilities (replenishment, meal planning, Spanish) and usage growth confirmed on the earnings call."
+  },
+  "transposable_ue": {
+    "note": "Deployed only in the US (app, site, stores). An EU transposition would require a catalog enriched per market and AI Act compliance on the transparency of the conversational agent. The underlying data (reviews, catalog) is first-party, so GDPR is manageable."
+  },
+  "stack_technique": [
+    {
+      "detail": "GenAI shopping assistant developed in-house by Walmart, accessible via the Ask Sparky button in the app and then on the site and in store."
+    },
+    {
+      "detail": "Walmart does not publicly name the foundation model; the sources describe an in-house LLM + RAG multimodal setup."
+    },
+    {
+      "detail": "The synthesis of recommendations relies on product pages and reviews; the richness of the catalog is the limiting factor."
+    },
+    {
+      "detail": "Exposure surfaces for Sparky, integrated into the purchase journey (comparison, add to cart, replenishment)."
+    }
+  ]
+}

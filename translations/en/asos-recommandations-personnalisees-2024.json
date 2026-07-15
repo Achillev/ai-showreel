@@ -1,0 +1,127 @@
+{
+  "seo": {
+    "title": "ASOS: deep learning product recommendation - 5 billion requests per day (2024)",
+    "meta_description": "ASOS ranks nearly 50,000 products by personalized recommendation across its touchpoints. Its new transformer model improved its metrics by more than 20%, for 5 billion requests served per day.",
+    "resume_citable": "ASOS serves roughly 5 billion recommendation requests per day across nearly 50,000 products; its move to a transformer model in 2024 improved its evaluation metrics by more than 20%, complemented by a conversational AI Stylist on Azure OpenAI.",
+    "faq": [
+      {
+        "q": "How does ASOS personalize product discovery?",
+        "a": "By ranking the catalog through deep learning recommendation based on customer interactions, and via a conversational AI Stylist that answers in natural language."
+      },
+      {
+        "q": "Is the 20%+ gain a sales result?",
+        "a": "No: it is an improvement in the model's evaluation metrics over the previous baseline, not an audited revenue figure."
+      }
+    ]
+  },
+  "pattern": "catalog-scale deep learning product recommendation, plus a conversational style assistant",
+  "etape_parcours": "discovery -> consideration -> purchase",
+  "objectif_business": "Make a catalog of tens of thousands of items, refreshed every week, browsable and relevant for a largely mobile audience.",
+  "description": "ASOS sells fashion online to a young audience, with nearly 50,000 items available at any time and hundreds of new products each week. To keep this catalog navigable, the company ranks products by personalized recommendation across its various touchpoints, based on customer interactions (purchases, saves, cart additions) processed by deep learning. In 2024, the team replaced its longstanding matrix factorization model with a transformer model, which improved its evaluation metrics by more than 20% over that baseline. The recommendation system serves about 5 billion requests per day, in nine languages and more than 200 markets. ASOS has also launched an AI Stylist, a conversational assistant built with Microsoft on Azure OpenAI, that helps the customer discover products through dialogue based on their style and the occasion.",
+  "points_cles": [
+    "Personalized deep learning product recommendation across the whole catalog.",
+    "In-house transformer model plus a conversational AI Stylist on Azure OpenAI.",
+    "Evaluation metrics improved by more than 20%, about 5 billion requests per day.",
+    "Evidence level B, confirmed active status."
+  ],
+  "fonctionnement_operationnel": {
+    "cadence": "Real-time serving of recommendations; periodic retraining of the models as the catalog and interactions evolve.",
+    "opere_par": "ASOS data science and machine learning team, working with the product and merchandising teams; the conversational assistant relies on Microsoft's Azure stack.",
+    "signal_pilote": "Customer interactions (purchases, saves, cart additions). On a catalog refreshed every week, a new product starts with no history and must be attached to signals quickly, or it stays invisible in the feeds.",
+    "etapes": [
+      {
+        "etape": "Aggregate interactions",
+        "detail": "Purchases, saved products, and cart additions continuously feed the customer's taste profile.",
+        "acteur": "AI / data team"
+      },
+      {
+        "etape": "Rank the catalog per customer",
+        "detail": "The transformer model orders products by relevance for each person, on each surface.",
+        "acteur": "AI / data team"
+      },
+      {
+        "etape": "Serve at scale",
+        "detail": "About 5 billion recommendation requests per day are served in nine languages and more than 200 markets.",
+        "acteur": "AI / platform"
+      },
+      {
+        "etape": "Open discovery to dialogue",
+        "detail": "The AI Stylist lets the customer describe what they are looking for in natural language and suggests products in response.",
+        "acteur": "AI / conversational assistant"
+      }
+    ]
+  },
+  "resultats": [
+    {
+      "metrique": "Evaluation metric improvement of the new transformer model vs baseline"
+    },
+    {
+      "metrique": "Recommendation requests served per day"
+    },
+    {
+      "metrique": "Catalog served in 9 languages and more than 200 markets"
+    }
+  ],
+  "niveau_preuve": {
+    "justification": "Figures published on the official ASOS technical blog (recommendation team) and corroborated by a Microsoft customer story for the conversational assistant. The 20%+ improvement is an offline evaluation metric, not an audited business result; the scale, on the other hand, is well documented."
+  },
+  "stack_technique": [
+    {
+      "detail": "In-house model that replaced matrix factorization in 2024 (+20% on evaluation metrics) and serves about 5 billion requests per day."
+    },
+    {
+      "detail": "Azure environment used with Microsoft to build the conversational AI Stylist assistant."
+    },
+    {
+      "detail": "OpenAI models served via Azure, the LLM component of the AI Stylist; the exact model version is not named in the sources."
+    },
+    {
+      "detail": "Product discovery assistant through dialogue (style, occasion), connected to the ASOS catalog."
+    }
+  ],
+  "replication": {
+    "prerequis_data": [
+      "History of customer interactions (purchases, saves, cart)",
+      "Catalog with product attributes and a stream of new arrivals",
+      "Real-time serving infrastructure"
+    ],
+    "prerequis_orga": [
+      "ML team to maintain and retrain the ranking models",
+      "For the conversational assistant, a governed LLM component (safeguards, transparency)"
+    ],
+    "stack_possible": [
+      "Managed recommendation engine (AWS Personalize, Google Recommendations AI) for a first version",
+      "Azure OpenAI or equivalent for a style assistant, connected to the catalog"
+    ],
+    "premiere_etape": "Replace the default sort on a high-traffic surface (app home) with a personalized ranking based on interactions, and measure engagement and conversion against the current sort.",
+    "playbook": [
+      {
+        "action": "Audit the collection of customer interactions (purchases, saves, cart additions) and attach it cleanly to a per-person identifier.",
+        "livrable": "Usable interaction dataset, per customer and per product."
+      },
+      {
+        "action": "Put in place a first personalized ranking on a high-traffic surface (app home), via a managed engine or a simple model, in A/B test against the current sort.",
+        "livrable": "Personalized feed in test with a locked measurement plan."
+      },
+      {
+        "action": "Read the A/B test (engagement, conversion) and handle the cold start of new arrivals via product attributes.",
+        "livrable": "A/B report and new-product attachment rules."
+      },
+      {
+        "action": "Extend the ranking to the other surfaces and industrialize retraining as the catalog refreshes.",
+        "livrable": "Retraining pipeline and production monitoring."
+      },
+      {
+        "action": "Prototype a conversational style assistant connected to the catalog, in closed beta, with safeguards and transparency.",
+        "livrable": "Assistant tested on a limited scope before opening."
+      }
+    ],
+    "equipe": "2 data scientists / ML engineers + 1 product PM; for the conversational assistant, 1 additional developer on the LLM component and the safeguards."
+  },
+  "statut_vivant": {
+    "note": "ASOS is an active, listed pure-play fashion retailer (LSE). Recent technical publication on the recommendation engine overhaul, and a conversational assistant in service."
+  },
+  "transposable_ue": {
+    "note": "ASOS already operates in the EU and serves its recommendations across more than 200 markets. Profiling on purchase behavior falls under GDPR (legal basis, information, opt-out); the LLM-based conversational assistant adds the AI Act transparency obligations for generative systems."
+  }
+}

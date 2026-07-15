@@ -1,0 +1,122 @@
+{
+  "seo": {
+    "title": "Wiley: Agentforce genAI agent - +40% case resolution (2024)",
+    "meta_description": "Wiley deploys Salesforce Agentforce for conversational self-service and resolves more than 40% more cases vs its old chatbot within the first weeks.",
+    "resume_citable": "Wiley increased its case resolution by more than 40% within the first weeks with the Salesforce Agentforce genAI agent, while onboarding its seasonal agents 50% faster, for a Salesforce ROI of 213%.",
+    "faq": [
+      {
+        "q": "What does the Agentforce agent do at Wiley?",
+        "a": "It answers in conversational self-service from Wiley's knowledge base and automatically resolves account access and password reset cases."
+      },
+      {
+        "q": "What are the quantified results?",
+        "a": "More than 40% more case resolution vs the old chatbot within the first weeks, seasonal agents onboarded 50% faster, and a Salesforce ROI of 213%."
+      }
+    ]
+  },
+  "pattern": "autonomous genAI customer service agent (conversational self-service)",
+  "etape_parcours": "post-purchase",
+  "objectif_business": "Absorb routine service requests (account access, password reset) during peaks, to free up human agents for complex cases.",
+  "description": "Wiley, an academic and training publisher, deploys Agentforce for conversational self-service. The agent answers by drawing on Wiley's knowledge base and automatically resolves account access and password reset cases. When a case ends, Agentforce summarizes the conversation for the next person or supervisor, and Wiley uses these summaries to spot trends. Einstein separately helps agents draft their responses from the CRM and the knowledge base.",
+  "resultats": [
+    {
+      "metrique": "Case resolution (vs old chatbot, first few weeks)"
+    },
+    {
+      "metrique": "Onboarding of seasonal agents"
+    },
+    {
+      "metrique": "Return on investment with Salesforce"
+    }
+  ],
+  "niveau_preuve": {
+    "justification": "Quantified Salesforce customer story (T2) corroborated by the established tech press diginomica (T3) covering the announcement at Dreamforce 24. Multiple concordant sources with independent press, hence C."
+  },
+  "fonctionnement_operationnel": {
+    "cadence": "Real time: the agent handles incoming requests continuously, with seasonal peaks (back-to-school, exams).",
+    "opere_par": "Wiley customer service team, with supervisors who use the case summaries and handle escalations.",
+    "signal_pilote": "Wiley's knowledge base, which grounds the agent's responses. If it is incomplete or outdated, the agent resolves fewer cases and has to escalate more to humans.",
+    "etapes": [
+      {
+        "etape": "Grounding the agent",
+        "detail": "Agentforce is configured to answer from Wiley's knowledge base and CRM data.",
+        "acteur": "Customer service team / AI"
+      },
+      {
+        "etape": "Self-service resolution",
+        "detail": "The agent handles routine requests (account access, password reset) conversationally and autonomously.",
+        "acteur": "AI (Agentforce)"
+      },
+      {
+        "etape": "Summary and handoff",
+        "detail": "At the end of a case, the agent summarizes the conversation for the next person or supervisor.",
+        "acteur": "AI (Agentforce)"
+      },
+      {
+        "etape": "Escalation and analysis",
+        "detail": "Complex cases go to a human agent; the summaries are used to spot trends and surface product feedback.",
+        "acteur": "Human agents / supervisors"
+      }
+    ]
+  },
+  "replication": {
+    "prerequis_data": [
+      "structured and up-to-date knowledge base",
+      "customer CRM data accessible to the agent",
+      "case history to frame the intents"
+    ],
+    "prerequis_orga": [
+      "customer service on Salesforce Service Cloud",
+      "human escalation process for complex cases",
+      "governance over the agent's responses"
+    ],
+    "stack_possible": [
+      "Salesforce Agentforce + Service Cloud",
+      "any genAI service agent platform grounded on a knowledge base and CRM"
+    ],
+    "premiere_etape": "Update and structure the knowledge base on the most frequent requests (account access, password), then ground the agent on it before widening the scope.",
+    "playbook": [
+      {
+        "action": "Update and structure the knowledge base on the highest-volume requests (account access, password).",
+        "livrable": "Up-to-date articles covering the target intents."
+      },
+      {
+        "action": "Configure the agent: grounding on the base and the CRM, guardrails, escalation rules.",
+        "livrable": "Agent in sandbox validated on test scenarios."
+      },
+      {
+        "action": "Launch the pilot on a share of chat traffic.",
+        "livrable": "Resolution rate compared to the old chatbot."
+      },
+      {
+        "action": "Activate case summaries and the supervisor loop (trends, product feedback).",
+        "livrable": "Documented handoffs + trends surfaced each week."
+      },
+      {
+        "action": "Widen the scope of intents based on the observed resolution rates.",
+        "livrable": "Extension plan prioritized by volume and success rate."
+      }
+    ],
+    "equipe": "1 Salesforce admin + 1 knowledge base owner + customer service supervisors for escalation and the quality loop"
+  },
+  "stack_technique": [
+    {
+      "detail": "Autonomous genAI agent that resolves routine requests (account access, password) and summarizes each case for the human handoff."
+    },
+    {
+      "detail": "Foundation of Wiley's customer service: cases, routing, and escalation to human agents."
+    },
+    {
+      "detail": "Helps human agents draft their responses from the CRM and the knowledge base."
+    },
+    {
+      "detail": "Corpus that grounds the agent's responses; if it is outdated, the resolution rate drops and escalation rises."
+    }
+  ],
+  "statut_vivant": {
+    "note": "Wiley is a recurring Agentforce reference since 2024. Agentforce is in broad commercial deployment at Salesforce in 2025."
+  },
+  "transposable_ue": {
+    "note": "GenAI customer service agent grounded on the knowledge base and CRM. In the EU, transparency about the AI agent (AI Act), handling of customer data, and human oversight of complex cases to be framed."
+  }
+}

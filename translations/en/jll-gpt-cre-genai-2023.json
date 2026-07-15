@@ -1,0 +1,108 @@
+{
+  "seo": {
+    "title": "JLL: JLL GPT, industry LLM for commercial real estate, 47,000 professional users (2023)",
+    "meta_description": "JLL GPT, an LLM built for commercial real estate. More than 11,000 employees in 48 hours and more than 47,000 professional users in 2024.",
+    "resume_citable": "JLL GPT, launched in August 2023, is a vertical LLM for commercial real estate trained on JLL's internal transaction data; more than 11,000 employees used it within 48 hours and more than 47,000 professionals in 2024.",
+    "faq": [
+      {
+        "q": "What is JLL GPT?",
+        "a": "A large language model built by JLL Technologies for commercial real estate, trained on decades of internal transaction data and deployed in a secure environment for JLL employees."
+      },
+      {
+        "q": "How many employees use JLL GPT?",
+        "a": "More than 11,000 employees used it within 48 hours of the August 2023 launch, and more than 47,000 JLL professionals had used it by October 2024."
+      }
+    ]
+  },
+  "pattern": "industry genAI assistant built on a proprietary vertical LLM",
+  "etape_parcours": "consideration",
+  "objectif_business": "Give commercial brokerage teams a genAI assistant that meets JLL's security and confidentiality requirements, to research deals, model, and produce client deliverables faster on proprietary data.",
+  "description": "JLL GPT was launched on August 1, 2023 by the JLL Technologies division, presented as the first large language model built specifically for commercial real estate. It is trained on decades of JLL's internal transaction data supplemented by external sources, and deployed in a secure computing environment. Within 48 hours of opening, more than 11,000 employees out of a workforce of about 103,000 were using it. In October 2024, at the launch of the JLL Falcon platform, more than 47,000 professionals had already used it. JLL GPT had by then gained image understanding and twenty-five times more working memory than its initial version. Falcon adds access to several LLMs, multimodal models, and more than sixty AI functions by line of business. Brokers use it to research deals, model cash flows, and prepare client deliverables.",
+  "resultats": [
+    { "metrique": "Adoption in 48h, out of a workforce of about 103,000" },
+    { "metrique": "Professionals who used the tool (October 2024)" }
+  ],
+  "niveau_preuve": {
+    "justification": "Official JLL releases (T1) and established press (CIO Dive) consistent, with adoption figures at global scale. No isolated financial impact published, hence a level C rather than A."
+  },
+  "stack_technique": [
+    { "detail": "proprietary vertical LLM trained on decades of internal CRE transaction data, enriched with image understanding in 2024" },
+    { "detail": "secure computing environment in which the model is deployed" },
+    { "detail": "retrieval from JLL's internal data before generation, key to the industry advantage vs a public LLM" },
+    { "detail": "platform launched at the end of 2024: access to several LLMs, multimodal models, and more than sixty AI functions by line of business" }
+  ],
+  "fonctionnement_operationnel": {
+    "cadence": "On demand, in real time, on an employee's request while working on a deal.",
+    "opere_par": "JLL Technologies maintains the model and data governance; brokerage teams use it daily.",
+    "signal_pilote": "The corpus of proprietary CRE data, cleaned and governed. Without it, the model answers generically and loses its industry advantage against a public LLM.",
+    "etapes": [
+      {
+        "etape": "Natural-language question",
+        "detail": "The broker asks a question about a market, an asset, or a model.",
+        "acteur": "human"
+      },
+      {
+        "etape": "Retrieval on governed data",
+        "detail": "The system retrieves information from JLL's internal CRE data before answering.",
+        "acteur": "AI"
+      },
+      {
+        "etape": "Deliverable generation",
+        "detail": "JLL GPT produces an answer, a synthesis, or a draft document, with image understanding since 2024.",
+        "acteur": "AI"
+      },
+      {
+        "etape": "Human validation",
+        "detail": "The broker checks and uses the output in their client work; the AI does not replace expertise.",
+        "acteur": "human"
+      }
+    ]
+  },
+  "replication": {
+    "prerequis_data": [
+      "large, structured proprietary industry corpus",
+      "data governance and quality",
+      "clear usage rights on client data"
+    ],
+    "prerequis_orga": [
+      "dedicated ML and security team",
+      "compliant computing environment",
+      "change management with the business lines"
+    ],
+    "stack_possible": [
+      "LLM on a secure cloud",
+      "RAG layer over the internal document base",
+      "compliance and confidentiality controls"
+    ],
+    "premiere_etape": "Build and govern a clean industry corpus before connecting an LLM to it.",
+    "playbook": [
+      {
+        "action": "Build and govern the proprietary industry corpus (cleaning, usage rights, quality)",
+        "livrable": "Documented corpus with valid rights and identified owners"
+      },
+      {
+        "action": "Stand up the secure computing environment (access, logs, confidentiality) with the security team",
+        "livrable": "Compliant cloud infra validated by security"
+      },
+      {
+        "action": "Connect the LLM and the RAG layer to the corpus, on one pilot business line",
+        "livrable": "Assistant in alpha with a reference set of industry questions"
+      },
+      {
+        "action": "Pilot with a group of business users, measure answer quality and adoption",
+        "livrable": "Quality feedback + usage rate of the pilot group"
+      },
+      {
+        "action": "Deploy broadly with change management and usage tracking",
+        "livrable": "Assistant open to the workforce, adoption tracked continuously"
+      }
+    ],
+    "equipe": "2-3 ML/data engineers + 1 security/compliance lead + 1 PM + champions in the business lines"
+  },
+  "statut_vivant": {
+    "note": "JLL GPT has been integrated into the Falcon platform since the end of 2024 and continues to evolve. In 2026 the CTO confirms daily use of the internal AI platforms by a significant share of the workforce."
+  },
+  "transposable_ue": {
+    "note": "JLL deployed the tool to its global workforce, Europe included. Transposition requires strict governance of business data and a GDPR- and AI Act-compliant computing environment, which JLL explicitly claims as a prerequisite."
+  }
+}

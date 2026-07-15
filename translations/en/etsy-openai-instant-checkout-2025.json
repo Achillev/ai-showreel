@@ -1,0 +1,120 @@
+{
+  "seo": {
+    "title": "Etsy: agentic commerce in ChatGPT (OpenAI Instant Checkout) - stock +16 percent (2025)",
+    "meta_description": "On September 29, 2025, Etsy became a day-one merchant of Instant Checkout in ChatGPT; its stock jumped roughly 16 percent on the announcement.",
+    "resume_citable": "On September 29, 2025, OpenAI launched Instant Checkout in ChatGPT with Etsy as a first-day merchant: US users buy an item from an Etsy seller without leaving the conversation, through the Agentic Commerce Protocol co-built with Stripe; Etsy's stock jumped roughly 16 percent on the announcement.",
+    "faq": [
+      {
+        "q": "How does Instant Checkout work for a brand?",
+        "a": "The brand exposes its catalog to the Agentic Commerce Protocol; ChatGPT recommends the products and passes the order to the merchant backend, which accepts it, with payment handled by Stripe and OpenAI taking a small commission."
+      },
+      {
+        "q": "Is the setup already mature?",
+        "a": "No, it is young: single-item purchases, United States only at launch, transaction volume not published. The extension to Shopify merchants and multi-item carts was announced as upcoming."
+      }
+    ]
+  },
+  "pattern": "agentic commerce (in-chat checkout through an open protocol)",
+  "etape_parcours": "purchase",
+  "objectif_business": "Capture buying demand where the user is already looking for what to buy (ChatGPT, 700 million users per week) and convert without pushing them out of the conversation.",
+  "description": "On September 29, 2025, OpenAI launched Instant Checkout in ChatGPT, with Etsy as an available merchant from day one: US ChatGPT users (Plus, Pro, and Free) can buy an item from a US Etsy seller without leaving the conversation. The transaction runs through the Agentic Commerce Protocol, an open protocol co-built with Stripe: ChatGPT passes the order to the merchant backend, which accepts or rejects it, then payment is triggered. OpenAI takes a small commission on completed purchases. At launch, the system only handles single-item purchases, with multi-item carts, additional merchants (more than one million Shopify merchants such as Glossier, SKIMS, Spanx, Vuori), and regions to come. On the announcement, Etsy's stock jumped roughly 16 percent.",
+  "resultats": [
+    {
+      "metrique": "Etsy stock on the Instant Checkout announcement"
+    },
+    {
+      "metrique": "Weekly ChatGPT users, size of the exposed channel"
+    },
+    {
+      "metrique": "Scope at launch, US Etsy sellers"
+    }
+  ],
+  "niveau_preuve": {
+    "justification": "Launch announced by OpenAI and covered by name by several established outlets (CNBC, TechCrunch, Digital Commerce 360); public market signal (Etsy stock). Recent case (less than 12 months at verification) with transaction volume not yet published, hence a level C and a cautious active status."
+  },
+  "stack_technique": [
+    {
+      "detail": "In-chat buying channel: recommends the product, prepares the order, and passes it to the merchant; a commission is taken on completed purchases."
+    },
+    {
+      "detail": "Open protocol co-built by OpenAI and Stripe, which standardizes the order/acceptance exchange between the agent and the merchant backend."
+    },
+    {
+      "detail": "Processes the payment for the in-chat transaction."
+    },
+    {
+      "detail": "Accepts or rejects each order passed by ChatGPT and manages stock, price, and shipping."
+    }
+  ],
+  "fonctionnement_operationnel": {
+    "cadence": "Real time on each purchase; on the brand side, product feed and availability maintained continuously to respond to the protocol's requests.",
+    "opere_par": "On the Etsy/merchant side: e-commerce and payment team that exposes the catalog and processes the orders. On the channel side: OpenAI operates the agent, Stripe the payment.",
+    "signal_pilote": "The availability and accuracy of the product returned at the moment of purchase. If the merchant backend rejects poorly or returns wrong stock, the in-chat conversion breaks, which was a reported friction point for other merchants in the setup.",
+    "etapes": [
+      {
+        "etape": "Exposing the catalog to the protocol",
+        "detail": "The merchant makes its products accessible to the Agentic Commerce Protocol so they can be offered in ChatGPT.",
+        "acteur": "e-commerce team"
+      },
+      {
+        "etape": "Recommendation and buying intent",
+        "detail": "ChatGPT offers relevant products in the conversation and prepares the order.",
+        "acteur": "AI"
+      },
+      {
+        "etape": "Confirmation and payment",
+        "detail": "The user confirms the order, delivery, and payment in-chat; Stripe processes the payment, OpenAI takes a small commission.",
+        "acteur": "customer"
+      },
+      {
+        "etape": "Acceptance and fulfillment",
+        "detail": "The merchant backend accepts or rejects, then processes and ships the order.",
+        "acteur": "e-commerce team"
+      }
+    ]
+  },
+  "replication": {
+    "prerequis_data": [
+      "clean product catalog exposed to the protocol",
+      "reliable real-time stock and price",
+      "backend able to accept or reject an order via API"
+    ],
+    "prerequis_orga": [
+      "e-commerce/payment team for the ACP integration",
+      "decision on the commission ceded to the platform",
+      "US logistics capacity"
+    ],
+    "stack_possible": [
+      "Agentic Commerce Protocol (open source)",
+      "Stripe",
+      "Shopify",
+      "OpenAI"
+    ],
+    "premiere_etape": "Make the real-time stock/price feed reliable, since it is what breaks agentic conversion, before integrating the protocol.",
+    "playbook": [
+      {
+        "action": "Make the real-time stock and price feed reliable: it is what breaks agentic conversion.",
+        "livrable": "Reliable catalog feed exposed via API"
+      },
+      {
+        "action": "Implement the order API: acceptance, rejection, statuses, refunds.",
+        "livrable": "Order backend compliant with the protocol"
+      },
+      {
+        "action": "Integrate the Agentic Commerce Protocol and test in sandbox with payment.",
+        "livrable": "In-chat purchase flow validated end to end"
+      },
+      {
+        "action": "Launch on the allowed scope (US, single item) and track in-chat conversion.",
+        "livrable": "Active channel with tracking of sales and order rejections"
+      }
+    ],
+    "equipe": "1-2 e-commerce backend developers + 1 PM + 1 payment and fraud lead."
+  },
+  "statut_vivant": {
+    "note": "The channel is active and the open protocol (ACP) is opening up to other merchants, but the rollout is still young: single-item purchases, US only, transaction volume not published. In-chat agentic commerce is still in a proof phase on real conversion, which justifies rechecking the entry in the short term."
+  },
+  "transposable_ue": {
+    "note": "Instant Checkout launched in the United States for US Etsy sellers. The constraint is not primarily GDPR on the brand side but the opening of the channel: in-chat payment is not available in the EU as of the verification date. An EU brand can prepare by exposing its own catalog to the open protocol (ACP), without an active EU transaction for now."
+  }
+}

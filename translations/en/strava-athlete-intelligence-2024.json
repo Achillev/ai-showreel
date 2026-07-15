@@ -1,0 +1,108 @@
+{
+  "seo": {
+    "title": "Strava: AI-personalized training insights (Athlete Intelligence) - 125 million athletes (2024)",
+    "meta_description": "Strava translates training data into personalized natural-language insights through Athlete Intelligence; deployed in 14 languages to more than 125 million athletes.",
+    "resume_citable": "Strava launched Athlete Intelligence in October 2024 to translate training data into personalized natural-language insights: the feature covers pace, heart rate, power, and Relative Effort over a rolling 30 days, in 14 languages, on a base of more than 125 million athletes and 10 billion uploaded activities.",
+    "faq": [
+      {
+        "q": "What does Strava's Athlete Intelligence do?",
+        "a": "It analyzes the last 30 days of training data and translates it into personalized natural-language insights and guidance, with detection of records and milestones."
+      },
+      {
+        "q": "Who is the feature available for?",
+        "a": "For Strava subscribers, in public beta at launch, available in 14 languages with an opt-out option."
+      }
+    ]
+  },
+  "pattern": "personalized natural-language training insights from activity data",
+  "etape_parcours": "loyalty",
+  "objectif_business": "Strengthen the value of the Strava subscription by translating complex training data into simple, personalized insights, to retain subscribers and make their metrics actionable.",
+  "description": "Athlete Intelligence is the AI feature launched by Strava on October 3, 2024, first in public beta for subscribers. It analyzes and interprets training data into personalized insights and natural-language guidance. The feature aggregates the trends of the last 30 days of sessions and covers pace, heart rate, elevation, power, and Relative Effort, Strava's proprietary intensity metric. It detects milestones and surfaces highlights: fastest pace, longest distance, highest Relative Effort, greatest elevation. It is available in 14 languages, with an opt-out option. Strava counts more than 125 million athletes in more than 190 countries and more than 10 billion uploaded activities, which gives the system a base of training data at large scale.",
+  "resultats": [
+    { "metrique": "Platform athlete base, in more than 190 countries" },
+    { "metrique": "Uploaded activities, base of training data" },
+    { "metrique": "Language coverage at launch, in global public beta" }
+  ],
+  "niveau_preuve": {
+    "justification": "Brand press release (picked up by PRNewswire) plus established tech press naming Strava and the Athlete Intelligence feature. Platform scale figures documented, but no isolated retention KPI or business result, hence C."
+  },
+  "stack_technique": [
+    { "detail": "in-house generation of natural-language insights and guidance from sessions, opt-in for subscribers" },
+    { "detail": "translation of the aggregated metrics into personalized text in 14 languages; the provider is not named in the record's sources" },
+    { "detail": "rolling aggregation of sessions: pace, heart rate, power, elevation, and Relative Effort, with record detection" }
+  ],
+  "fonctionnement_operationnel": {
+    "cadence": "At each activity for the post-session summary, with a rolling 30-day aggregation of trends.",
+    "opere_par": "Strava's product and data teams; the feature is self-service for the subscriber.",
+    "signal_pilote": "The uploaded activity data (pace, heart rate, power, Relative Effort). Without a sensor or regular uploads, the 30-day aggregation empties out and the insights become generic.",
+    "etapes": [
+      {
+        "etape": "Activity upload",
+        "detail": "The athlete syncs their watch or phone; the activity feeds Strava.",
+        "acteur": "athlete"
+      },
+      {
+        "etape": "Trend aggregation",
+        "detail": "The system aggregates the last 30 days of sessions across the key metrics.",
+        "acteur": "AI / data team"
+      },
+      {
+        "etape": "Insight generation",
+        "detail": "An LLM translates the data into a personalized insight and natural-language guidance, in the subscriber's language.",
+        "acteur": "AI"
+      },
+      {
+        "etape": "Delivery",
+        "detail": "The insight and the highlights (pace records, elevation) appear after the activity.",
+        "acteur": "site_app"
+      }
+    ]
+  },
+  "replication": {
+    "prerequis_data": [
+      "per-user activity or usage feed",
+      "structured performance metrics",
+      "rolling history over several weeks"
+    ],
+    "prerequis_orga": [
+      "product team to frame the insight format",
+      "legal basis for data close to health data",
+      "multilingual layer if the audience is international"
+    ],
+    "stack_possible": [
+      "managed or in-house LLM",
+      "metric aggregation pipeline",
+      "app with post-activity delivery"
+    ],
+    "equipe": "1 PM + 1 data engineer + 1 backend dev + a legal review for data close to health data",
+    "playbook": [
+      {
+        "action": "Define 3 to 5 high-value insights (records, 30-day trends) from the metrics already collected",
+        "livrable": "Insight spec with formulas and thresholds"
+      },
+      {
+        "action": "Set up the rolling 30-day aggregation pipeline of per-user metrics",
+        "livrable": "Aggregates computed and tested on real data"
+      },
+      {
+        "action": "Connect the LLM to the aggregates with templates and guardrails (no medical advice), opt-in",
+        "livrable": "Post-activity summary generated, in beta"
+      },
+      {
+        "action": "Frame compliance: legal basis for data close to health data, user information, opt-out option",
+        "livrable": "GDPR file and functional opt-out"
+      },
+      {
+        "action": "Open in beta, measure engagement and perceived value, then extend languages and covered metrics",
+        "livrable": "Feature in production, multilingual, with a usage dashboard"
+      }
+    ],
+    "premiere_etape": "Define 3 to 5 high-value insights (records, trends) and connect an LLM to the metrics already available, opt-in."
+  },
+  "statut_vivant": {
+    "note": "Athlete Intelligence moved from beta to an established feature (February 2025) with successive enhancements. It is part of Strava's subscriber offering."
+  },
+  "transposable_ue": {
+    "note": "Athlete Intelligence processes training and heart-rate data, close to health data. Under GDPR, this data calls for a robust legal basis and clear user information. The feature is already distributed in the EU as part of the multilingual rollout (14 languages), opt-in for subscribers."
+  }
+}

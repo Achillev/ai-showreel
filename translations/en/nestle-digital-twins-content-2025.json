@@ -1,0 +1,108 @@
+{
+  "seo": {
+    "title": "Nestle: genAI content factory from digital twins - over 70% savings (2025)",
+    "meta_description": "Nestle generates its product content from 4,000 digital twins via genAI: over 70% savings, 45 studios, 7 marketing hubs.",
+    "resume_citable": "Nestle launched in 2025 an in-house digital twins and genAI content service (Accenture Song, Nvidia, Microsoft) claiming over 70% savings on scaling, with 4,000 digitized products (target 10,000) and 45 content studios.",
+    "faq": [
+      {
+        "q": "How many products has Nestle digitized?",
+        "a": "4,000 digital master products to date, with a target of 10,000 digital twins in two years."
+      },
+      {
+        "q": "What savings does Nestle claim?",
+        "a": "Over 70 percent savings on scaling the digital twins, according to its official press release."
+      }
+    ]
+  },
+  "pattern": "genAI product content factory from digital twins",
+  "etape_parcours": "consideration",
+  "objectif_business": "Produce consistent-quality product content at scale, faster and much cheaper, to feed media personalization and e-commerce product pages across hundreds of references.",
+  "description": "Nestle launched an in-house service that creates digital twins of its products, developed with Accenture Song, built on Nvidia Omniverse and NVIDIA AI Enterprise and hosted at Microsoft. From these 3D models, teams generate fresh content without reshooting, and adapt it by channel and market. The group reports 4,000 digital master products digitized and targets 10,000 in two years. Production relies on 45 content studios and on Integrated Marketing Services, that is 250 marketing experts spread across 7 hubs that run the scaling and localization. Nestle puts the savings tied to scaling the digital twins at over 70 percent. The brands cited include Purina, Nescafe Dolce Gusto, and Nespresso. The wider context: 72 percent of media investment in digital and over 340 million first-party data records.",
+  "resultats": [
+    { "metrique": "Savings on scaling the digital twins" },
+    { "metrique": "Digital twins created, target 10,000 in two years" },
+    { "metrique": "Content studios, 250 experts spread across 7 hubs" }
+  ],
+  "niveau_preuve": {
+    "justification": "Figures published by Nestle (official press release and an executive quote), corroborated by the trade press; no isolated detail in financial results, hence C."
+  },
+  "stack_technique": [
+    { "detail": "Creation and management of the products' 3D digital twins (4,000 master products, target 10,000)." },
+    { "detail": "AI software foundation to generate the content from the twins, without a new shoot; the precise generative models are not named in the sources." },
+    { "detail": "Hosting of the digital twins and content service." },
+    { "detail": "Development of the in-house digital twins and content service with Nestle." }
+  ],
+  "fonctionnement_operationnel": {
+    "cadence": "Continuous, per product reference and per campaign; content regenerated without a reshoot when a format or market requires it.",
+    "opere_par": "Integrated Marketing Services (250 experts, 7 hubs) and 45 content studios, with Accenture Song on the technical foundation.",
+    "signal_pilote": "The accuracy of the digital twin against the product sold and brand consistency. A wrong twin propagates the error across all the generated content.",
+    "etapes": [
+      {
+        "etape": "Product digitization",
+        "detail": "Creation of the digital master product (4,000 to date, target 10,000) in Omniverse.",
+        "acteur": "data / 3D team + Accenture Song"
+      },
+      {
+        "etape": "Content generation",
+        "detail": "Production of visuals and product pages from the twin, without a new shoot.",
+        "acteur": "content studios / AI"
+      },
+      {
+        "etape": "Localization and scaling",
+        "detail": "Adaptation by brand, market, and format via the 7 marketing hubs.",
+        "acteur": "Integrated Marketing Services"
+      },
+      {
+        "etape": "Distribution and personalization",
+        "detail": "Feeding e-commerce product pages and media channels, with targeting on first-party data.",
+        "acteur": "marketing / e-commerce"
+      }
+    ]
+  },
+  "replication": {
+    "playbook": [
+      {
+        "action": "Choose a category with a high volume of references and audit the existing 3D and photo assets (packaging, guidelines, per-market disclosures).",
+        "livrable": "Pilot scope and inventory of usable assets."
+      },
+      {
+        "action": "Digitize a first batch of products into 3D twins, with a studio or an integrator.",
+        "livrable": "Batch of digital master products validated by the brands."
+      },
+      {
+        "action": "Stand up the visual generation pipeline from the twins and the brand validation workflow.",
+        "livrable": "Operational pipeline and first published visuals."
+      },
+      {
+        "action": "Adapt by channel and localize by market via a centralized production structure.",
+        "livrable": "Multi-market variants in production."
+      },
+      {
+        "action": "Measure cost per visual before/after and arbitrate the expansion of the twins catalog.",
+        "livrable": "Quantified savings assessment and expansion plan."
+      }
+    ],
+    "equipe": "1 content production lead + 2-3 3D artists or a studio + 1 pipeline/tooling profile, plus validation by the brand teams; integrator optional.",
+    "prerequis_data": [
+      "product catalog with usable 3D or photo references",
+      "brand rules and per-market disclosures",
+      "first-party data for personalization"
+    ],
+    "prerequis_orga": [
+      "a centralized hub-type production structure",
+      "quality governance of the generated content"
+    ],
+    "stack_possible": [
+      "3D engine / digital twins",
+      "image generation models",
+      "integrator (Accenture Song type) or internal team"
+    ],
+    "premiere_etape": "Digitize a category with a high volume of references and measure cost per visual before / after."
+  },
+  "statut_vivant": {
+    "note": "Service officially announced in June 2025 with a quantified two-year target; infrastructure and partners named."
+  },
+  "transposable_ue": {
+    "note": "Product content without images of people; personal data limited to media personalization. Under the AI Act, transparency on synthetic visuals should be planned. The group is Swiss and already well-versed in GDPR."
+  }
+}

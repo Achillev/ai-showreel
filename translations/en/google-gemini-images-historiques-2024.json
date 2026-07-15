@@ -1,0 +1,73 @@
+{
+  "seo": {
+    "title": "Google Gemini: historical image generation suspended after overcorrection (2024)",
+    "meta_description": "On February 22, 2024, Google suspended the generation of images of people in Gemini after inaccurate historical images. The anti-bias tuning had overcorrected.",
+    "resume_citable": "On February 22, 2024, Google suspended the generation of images of people in Gemini after a non-contextual anti-bias tuning produced historically inaccurate images, such as racially diverse Nazi soldiers; Google acknowledged it in an official post.",
+    "faq": [
+      {
+        "q": "Why did Google suspend images of people in Gemini?",
+        "a": "A tuning meant to show a diversity of people applied even to historical contexts where accurate representation is required, producing inaccurate images. The model also became too cautious and refused innocuous requests. Google suspended the feature on February 22, 2024."
+      },
+      {
+        "q": "Is the AI image generation pattern doomed?",
+        "a": "No. Consumer image generation remains central to AI assistants. The failure condemns an anti-bias tuning applied without regard for the prompt context, not image generation itself."
+      }
+    ]
+  },
+  "pattern": "consumer genAI image generation",
+  "etape_parcours": "consideration",
+  "objectif_business": "Offer in Gemini a consumer image generation competitive against other AI assistants, to retain and engage users.",
+  "description": "In early February 2024, Google enables the generation of images of people in Gemini. Users find that the model produces historically inaccurate images: racially diverse World War II German soldiers, non-white American Founding Fathers, female popes. On February 22, 2024, Google suspends the generation of images of people. In an official post on February 23, the company explains that its tuning intended to show a diversity of people failed to exclude the cases where that diversity had no place, and that the model had become too cautious, refusing innocuous requests.",
+  "resultats": [
+    {
+      "metrique": "Generation of images of people suspended"
+    },
+    {
+      "metrique": "Google acknowledges that the tuning missed its target on historical images"
+    }
+  ],
+  "niveau_preuve": {
+    "justification": "Case established by an official Google post (primary source, brand admission) and by established press (TechCrunch, CNBC, Time, Variety) citing the suspension and its reasons. The level remains C for lack of a financial or judicial document, but the official admission strengthens the reliability."
+  },
+  "post_mortem": {
+    "ce_qui_s_est_passe": "In early February 2024, Google enables the generation of images of people in Gemini. Users show that it produces historically inaccurate images: racially diverse 1939-1945 German soldiers, non-white Founding Fathers, female popes. On February 22, Google suspends the generation of images of people. On February 23, an official post explains that the tuning meant to show a diversity of people failed to exclude the cases where it had no place, and that the model was also wrongly refusing innocuous requests.",
+    "raison_echec": "An anti-bias tuning applied globally to guarantee the diversity of generated people, with no exception for historical contexts where accurate representation is required. The system overcorrected, producing inaccurate images, then became too restrictive. Google acknowledges it publicly.",
+    "cout_estime": "Significant reputational and political cost: worldwide controversy, accusations of ideological bias, pressure on leadership. The generation of images of people stayed unavailable for several months. Quantified impact on the stock or revenue not isolated publicly.",
+    "signaux_avant_coureurs": "Inferred: applying a diversity rule uniformly, without distinguishing the prompts where historical accuracy takes priority, was a predictable breaking point. A test set covering well-known historical figures and periods would have revealed the overcorrection before the public release.",
+    "lecons_avec_recul": "Inferred: a bias fix applied globally must be conditional on the prompt context. Diversity by default is useful for generic people, harmful for precise historical facts. A generative model must be tested against cases where the correct answer is constrained, not only against open cases, and provide a fast disable mechanism, which Google did have.",
+    "le_pattern_reste_il_valide": "Inferred: yes, consumer image generation remains a valid and central pattern in AI assistants, Google included after the fix. The failure condemns a non-contextual anti-bias tuning method, not image generation. The lesson is to calibrate diversity to the prompt context rather than imposing it everywhere."
+  },
+  "stack_technique": [
+    {
+      "detail": "Consumer assistant app in which the generation of images of people was enabled in early February 2024 then suspended on February 22"
+    },
+    {
+      "detail": "Google's image generation model (diffusion) used behind Gemini"
+    },
+    {
+      "detail": "In-house tuning intended to show a diversity of people, applied without regard for context; this is the component Google faulted in its February 23, 2024 post"
+    }
+  ],
+  "replication": {
+    "prerequis_data": [
+      "test set of historical and sensitive prompts",
+      "grid of contexts where accuracy takes priority over diversity"
+    ],
+    "prerequis_orga": [
+      "product review before launch",
+      "fast disable mechanism for a feature"
+    ],
+    "stack_possible": [
+      "diversity tuning conditional on the prompt context",
+      "adversarial test bench before release",
+      "feature kill switch"
+    ],
+    "premiere_etape": "Build a test bench of constrained-answer prompts (historical figures and periods) and require it to pass before any public opening of the generator."
+  },
+  "statut_vivant": {
+    "note": "Withdrawal confirmed: the generation of images of people was suspended on February 22, 2024. Google announced a corrected version later; the entry documents the withdrawal episode, not the current state of the product."
+  },
+  "transposable_ue": {
+    "note": "The product risk is identical in Europe. The AI Act imposes transparency obligations on generated content, and a consumer AI producing historically false images exposes the publisher to public backlash and compliance questions. The lesson about anti-bias tuning going off the rails applies to any generative model deployed at scale, in any market."
+  }
+}

@@ -1,0 +1,129 @@
+{
+  "seo": {
+    "title": "bunq: Finn financial assistant (GenAI) - 97% of support, 90% satisfaction (2023)",
+    "meta_description": "Finn, bunq's GenAI assistant launched in late 2023, handles about 97% of support activity with 90% satisfaction and a 47s response time.",
+    "resume_citable": "Finn, the GenAI assistant of the Dutch bank bunq launched in December 2023, handles about 97% of support activity with 90% satisfaction and a 47-second response time, on a base of more than 20 million European users at the end of 2025.",
+    "faq": [
+      {
+        "q": "What does Finn do in the bunq app?",
+        "a": "Finn replaces the app's search: the user asks their finance, budget, and transaction questions in natural language, and Finn also handles support."
+      },
+      {
+        "q": "What share of support does Finn take?",
+        "a": "bunq states that Finn handles about 97% of support activity, independently resolves up to 40% of requests, and assists 35% more."
+      }
+    ]
+  },
+  "pattern": "genAI financial assistant (search + support)",
+  "etape_parcours": "post-purchase",
+  "objectif_business": "Replace the app's search function with a conversational assistant that answers directly on finances, budget, and transactions, and absorb support to serve a fast-growing European base without growing the teams.",
+  "description": "bunq launched Finn in December 2023, presenting itself as Europe's first bank with a GenAI assistant. Finn replaces the app's search function: the user asks questions in natural language about their finances, budget, transactions, and spending. The bank then made Finn fully conversational (memory of previous exchanges, chained questions). According to bunq, Finn independently resolves up to 40% of requests and assists 35% more; on its first anniversary, the bank announced that Finn handles about 97% of support activity with 90% satisfaction and a 47-second response time. bunq had 11 million users in the EU at launch, more than 20 million at the end of 2025.",
+  "points_cles": [
+    "Finn GenAI financial assistant that replaces the app's search and absorbs support.",
+    "Third-party LLM connected to transactions via an in-house RAG layer, in the bunq app.",
+    "About 97% of support handled, 90% satisfaction, 47-second response.",
+    "Evidence level B, confirmed active status."
+  ],
+  "resultats": [
+    {
+      "metrique": "Support activity handled by Finn"
+    },
+    {
+      "metrique": "User satisfaction"
+    },
+    {
+      "metrique": "Response time"
+    },
+    {
+      "metrique": "Requests resolved independently, 35% more assisted"
+    }
+  ],
+  "niveau_preuve": {
+    "justification": "Figures published by bunq in its official releases (T1) and picked up by the fintech press (T3/T4), consistent. Operational metrics provided by the brand, not audited as financial results, hence B."
+  },
+  "stack_technique": [
+    {
+      "detail": "bunq does not publicly disclose the provider or the model version behind Finn; the record stays at the documented level: a third-party generative LLM."
+    },
+    {
+      "detail": "Internal pipelines that connect the LLM to the client's transactions and account data, with memory of previous exchanges."
+    },
+    {
+      "detail": "Finn's single channel, which replaces the in-app search function and absorbs support."
+    }
+  ],
+  "fonctionnement_operationnel": {
+    "cadence": "Real time in the app, on every question and every support request",
+    "opere_par": "bunq's product and data team, on an in-house GenAI layer (RAG on bunq's data pipelines)",
+    "signal_pilote": "The share of requests resolved without a human and satisfaction. Since Finn relies on the client's transaction data via RAG, answer quality depends directly on the freshness and structure of that data.",
+    "etapes": [
+      {
+        "etape": "Question in the app",
+        "detail": "The user asks their question in natural language instead of a search (budget, transaction, spending, support).",
+        "acteur": "client"
+      },
+      {
+        "etape": "Contextualized answer",
+        "detail": "Finn combines the LLM and the client's account data (RAG) to answer precisely, keeping track of previous exchanges.",
+        "acteur": "AI"
+      },
+      {
+        "etape": "Support escalation",
+        "detail": "Requests that Finn does not resolve are assisted or passed to a human.",
+        "acteur": "AI / support"
+      },
+      {
+        "etape": "Monitoring",
+        "detail": "The team tracks resolution rate, satisfaction, and response time to adjust Finn's scope.",
+        "acteur": "data team"
+      }
+    ]
+  },
+  "replication": {
+    "prerequis_data": [
+      "Structured and fresh transaction and account data",
+      "Support knowledge base",
+      "Conversation history for refinement"
+    ],
+    "prerequis_orga": [
+      "In-house or tooled RAG layer connecting LLM and client data",
+      "Escalation rule to support",
+      "Owned AI transparency on the product side"
+    ],
+    "stack_possible": [
+      "Generative LLM (third-party or open)",
+      "RAG pipeline on the banking data",
+      "Integration with the mobile app"
+    ],
+    "premiere_etape": "Replace the app's search with an assistant connected via RAG to the client's transactions, on a scoped set of questions, before opening support.",
+    "playbook": [
+      {
+        "action": "Scope a set of frequent questions (balance, budget, transactions) and the data access rules: read-only, confidentiality, AI transparency.",
+        "livrable": "Functional scope and compliance framework validated."
+      },
+      {
+        "action": "Build the RAG layer between the LLM and the structured account data, and test it on the set of questions in a test environment.",
+        "livrable": "Assistant answering the scoped set of questions correctly."
+      },
+      {
+        "action": "Replace the app's search with the assistant for a beta segment, with the AI nature displayed to the client.",
+        "livrable": "Beta in production with satisfaction tracking."
+      },
+      {
+        "action": "Open first-level support with a clear escalation rule to a human.",
+        "livrable": "Assistant handling simple support requests, working escalation."
+      },
+      {
+        "action": "Measure the without-human resolution rate, satisfaction, and response time, then broaden the covered scope.",
+        "livrable": "Resolution dashboard and expansion roadmap."
+      }
+    ],
+    "equipe": "2-3 developers / ML engineers + 1 PM + customer support to define the escalation rules."
+  },
+  "statut_vivant": {
+    "note": "Finn in production since December 2023, with successive upgrades (conversational in 2024, real-time voice translation, December 2025 upgrade). bunq continues to make it a central product focus."
+  },
+  "transposable_ue": {
+    "note": "bunq is a Dutch bank operating in the EU, so natively under GDPR. Finn reads transactions and account data to answer; under the AI Act, the assistant falls under limited risk with a transparency obligation (already met, Finn presents itself as an AI). Case directly relevant to an EU context."
+  }
+}

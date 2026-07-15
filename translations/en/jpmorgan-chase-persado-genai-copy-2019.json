@@ -1,0 +1,111 @@
+{
+  "seo": {
+    "title": "JPMorgan Chase: AI-generated marketing copy (Persado) - up to +450% CTR (2019)",
+    "meta_description": "Chase handed the copy of its direct-response campaigns to Persado's AI. Pilot: up to +450% click-through rate vs human variants.",
+    "resume_citable": "In 2019, JPMorgan Chase signed an enterprise-wide 5-year deal with Persado to generate its marketing copy with AI, after a pilot showing up to +450% click-through rate against 50 to 200% for human variants.",
+    "faq": [
+      {
+        "q": "What gain did AI-generated copy bring Chase?",
+        "a": "In the pilot, the copy produced by Persado showed up to 450% lift in click-through rate, against a range of 50 to 200% for human-written variants."
+      },
+      {
+        "q": "On which products did Chase deploy this AI?",
+        "a": "The pilot covered the Card and Mortgage businesses in 2016, then the 2019 deal covered personal banking, home lending, wealth management, and digital advertising."
+      }
+    ]
+  },
+  "pattern": "AI-generated marketing copy",
+  "etape_parcours": "consideration",
+  "objectif_business": "Increase the yield of Chase's direct marketing campaigns (Card, Mortgage, personal banking, home lending, wealth management) by entrusting the writing and optimization of copy to an AI engine rather than to marketers' judgment alone.",
+  "description": "Chase uses Persado's platform to generate the headlines, body copy, and calls to action of its direct-response campaigns. The engine starts from a base of words and phrases tagged by emotional charge, produces many variants, tests them in real delivery, and favors the wordings that perform. The partnership began with a pilot in 2016 on the Card and Mortgage businesses, then was extended in 2019 by a five-year enterprise-wide deal. In the pilot, the copy produced by Persado showed up to 450% lift in click-through rate, where human-written variants sat in a range of 50 to 200%.",
+  "points_cles": [
+    "Marketing copy (headline, body, CTA) generated and optimized by AI.",
+    "Via the Persado platform, on email, display, and push.",
+    "Pilot: up to +450% click-through rate against 50 to 200% for human copy.",
+    "Evidence B, living status mixed signals."
+  ],
+  "resultats": [
+    { "metrique": "Click-through rate lift on the AI copy (pilot), against 50 to 200% for human copy" }
+  ],
+  "niveau_preuve": {
+    "justification": "Pilot figure published in Persado's official press release (vendor, interested source) and picked up by name in trade press (Marketing Dive, Banking Dive). It is not an audited financial result, but several sources agree on the same figure and the same scope."
+  },
+  "stack_technique": [
+    { "detail": "generation and optimization of marketing copy from a base of words and phrases tagged by emotional charge" },
+    { "detail": "generation of variants (headline, body, CTA) and learning on per-variant performance in real delivery" },
+    { "detail": "delivery of the variants on Chase's direct-response channels; the sending tooling is not named in the sources" }
+  ],
+  "fonctionnement_operationnel": {
+    "cadence": "Per campaign, with an ongoing optimization loop on variant performance.",
+    "opere_par": "Chase's marketing and growth team, interfacing with the Persado platform.",
+    "signal_pilote": "The click-through and conversion rate per message variant. Without enough exposure volume, the engine cannot statistically separate the wordings.",
+    "etapes": [
+      {
+        "etape": "Brief and framing",
+        "detail": "Marketers define the offer, the audience, and the brand and compliance guardrails.",
+        "acteur": "marketing"
+      },
+      {
+        "etape": "Variant generation",
+        "detail": "Persado produces many wordings (headline, body, CTA) from its base of words tagged by emotional charge.",
+        "acteur": "AI"
+      },
+      {
+        "etape": "Delivery and testing",
+        "detail": "The variants run in real delivery on email, display, and push.",
+        "acteur": "marketing / platform"
+      },
+      {
+        "etape": "Optimization",
+        "detail": "Per-variant performance flows back into the model, which favors the winning wordings for the next round.",
+        "acteur": "AI"
+      }
+    ]
+  },
+  "replication": {
+    "prerequis_data": [
+      "Campaign history with per-variant performance",
+      "Sufficient audience volume to test statistically"
+    ],
+    "prerequis_orga": [
+      "Brand and compliance validation process compatible with generated variants",
+      "Acceptance of letting a model write the copy"
+    ],
+    "stack_possible": [
+      "Persado",
+      "Phrasee",
+      "Jasper or another marketing NLG",
+      "Native A/B testing of the emailing platform"
+    ],
+    "premiere_etape": "Choose a high-volume channel (promotional email) and test generated variants against human copy on the same audience.",
+    "playbook": [
+      {
+        "action": "Choose a high-volume channel (promotional email) and establish the performance baseline",
+        "livrable": "Per-variant performance history + defined test audience"
+      },
+      {
+        "action": "Frame the brand and compliance guardrails for generated wordings (essential in banking)",
+        "livrable": "Validation rules approved by compliance"
+      },
+      {
+        "action": "Have the platform generate the variants from the brief (offer, audience, constraints)",
+        "livrable": "Set of approved variants ready to deliver"
+      },
+      {
+        "action": "Test in real delivery against human copy on the same audience",
+        "livrable": "CTR and conversion lift per variant, statistically separated"
+      },
+      {
+        "action": "Extend to the next channels and products and industrialize the brief-generation-validation loop",
+        "livrable": "Process in place with the ongoing optimization loop"
+      }
+    ],
+    "equipe": "1 CRM/acquisition lead + 1 marketer per channel + compliance validation; no data scientist required"
+  },
+  "statut_vivant": {
+    "note": "The announced deal ran for five years (2019 to 2024). JPMorgan has since built its own internal genAI tools (LLM Suite, 2024 rollout). The pattern -AI-generated marketing copy- is alive at JPMorgan, but the current status of the Persado contract is not publicly confirmed after 2024."
+  },
+  "transposable_ue": {
+    "note": "Generating marketing copy is transposable in the EU. Constraints: GDPR on the use of audience data to target and optimize, and vigilance on the regulatory disclosures of credit products (generated wordings to be revalidated by compliance)."
+  }
+}

@@ -1,0 +1,60 @@
+{
+  "seo": {
+    "title": "Air Canada: the chatbot that invented a refund policy (2024 ruling)",
+    "meta_description": "Air Canada's chatbot hallucinated a bereavement fare policy; a tribunal ruled against the airline in 2024. The reference legal precedent on chatbot liability.",
+    "resume_citable": "In February 2024, a Canadian tribunal ruled against Air Canada over false information given by its chatbot, establishing that a brand is responsible for what its chatbot says in the same way as for a page on its site.",
+    "faq": [
+      {
+        "q": "Is the chatbot pattern discredited?",
+        "a": "No. What is discredited is ungrounded free generation on contractual policies, without guardrails. The customer service chatbot remains widely deployed."
+      },
+      {
+        "q": "What is the lesson that carries over to Europe?",
+        "a": "A chatbot binds the brand just like a page on its site; the AI Act strengthens transparency obligations for conversational systems."
+      }
+    ]
+  },
+  "pattern": "Self-service support chatbot answering fare policy questions to deflect calls from the call center",
+  "etape_parcours": "pre-purchase / fare information research",
+  "objectif_business": "Reduce call center load and cost per contact by automating answers to travelers' frequently asked questions.",
+  "description": "Air Canada deployed a chatbot on its public site to answer customer questions in natural language, notably about fare policies. On November 11, 2022, a customer trying to book a last-minute flight after a death asked the chatbot about bereavement fares. The chatbot stated that he could pay full fare and then request a partial refund within 90 days of the flight - an invented policy, contradicted by the official page on the same site. The customer paid, requested the refund, and Air Canada refused. After months of back-and-forth, he filed with the Civil Resolution Tribunal of British Columbia. On February 14, 2024, the tribunal ruled against Air Canada for negligent misrepresentation, explicitly rejecting the argument that the chatbot was a separate legal entity. It became the leading global legal precedent on brands' liability for what their chatbots say.",
+  "post_mortem": {
+    "ce_qui_s_est_passe": "Nov 11, 2022: the chatbot tells J. Moffatt that a bereavement fare refund can be requested up to 90 days after the flight. Nov 2022 - Feb 2023: Air Canada refuses the refund (the actual policy excludes requests made after travel) and offers a 200 CAD credit. The customer files with the BC Civil Resolution Tribunal. Feb 14, 2024: the Moffatt v. Air Canada decision, 2024 BCCRT 149 - the tribunal finds that Air Canada 'did not take reasonable care to ensure its chatbot was accurate' and orders it to pay 650.88 CAD plus 36.14 CAD in interest and 125 CAD in fees. Press coverage notes that the chatbot was no longer accessible by the time the case drew attention.",
+    "raison_echec": "The chatbot provided false information that contradicted the official policy published on the same site. The tribunal held Air Canada responsible for 'all the information on its website, whether it comes from a static page or a chatbot,' and rejected the defense that presented the chatbot as a separate entity, calling it a 'remarkable submission.'",
+    "cout_estime": "Direct: 812.02 CAD. Indirect: global reputational cost (CBC, BBC, Wired, Forbes) and the creation of a legal precedent cited internationally - the real cost is in case law.",
+    "signaux_avant_coureurs": "The contradiction between the chatbot and the official page was detectable through a simple QA test cross-checking the bot's answers against the published policies - financially sensitive topics should have been a priority test set. The absence of a disclaimer and of human escalation on sensitive fare questions was a signal. Finally, the handling of the dispute (refusal, a 200 CAD credit, silence) turned a 650 CAD incident into a global precedent.",
+    "lecons_avec_recul": "(1) Legally, your chatbot IS your site: everything it says binds you. (2) Grounding is mandatory: a customer bot must answer from versioned policy documents (constrained RAG plus citations), never through free generation on financially sensitive topics. (3) Plan a make-good path: honoring the bot's errors below a threshold costs less than litigation. (4) Adversarial QA on refund policies before and during production.",
+    "le_pattern_reste_il_valide": "Yes. The customer service chatbot remains broadly valid and widely deployed (Klarna claimed the equivalent of 700 agents in 2024). The failure condemns one execution: ungrounded generation on contractual policies, with no guardrails and no remediation strategy. It sets the liability framework within which the pattern must now operate."
+  },
+  "resultats": [
+    {
+      "metrique": "Damages awarded, plus 36.14 in interest and 125 in fees"
+    },
+    {
+      "metrique": "Attribution of liability"
+    },
+    {
+      "metrique": "Defense rejected"
+    }
+  ],
+  "niveau_preuve": {
+    "justification": "Published, publicly available court decision (Moffatt v. Air Canada, 2024 BCCRT 149, CanLII): facts, timeline, amounts, and reasoning established by a tribunal, plus law firm analyses and major press."
+  },
+  "stack_technique": [
+    {
+      "detail": "NLP chatbot integrated into aircanada.com, generating freely on fare policies; the stack was not published."
+    },
+    {
+      "detail": "AI-assisted conversational technology; neither the model nor the vendor was made public during the litigation."
+    },
+    {
+      "detail": "The same site hosted the official fare policy, which the chatbot did not consult (no grounding), the source of the contradiction that was adjudicated."
+    }
+  ],
+  "statut_vivant": {
+    "note": "Chatbot observed offline after the February 2024 ruling; Air Canada has not communicated about a replacement."
+  },
+  "transposable_ue": {
+    "note": "The liability lesson carries over directly to the EU: a customer-facing chatbot binds the brand just like a page on its site. The AI Act further strengthens transparency obligations for conversational systems."
+  }
+}

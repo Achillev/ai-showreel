@@ -1,0 +1,105 @@
+{
+  "seo": {
+    "title": "TAF (The Athlete's Foot): AI-automated sneaker sales (Meta Advantage+) - +165% incremental ROAS (2024)",
+    "meta_description": "With Adsmurai, TAF raised the budget of its Meta Advantage+ Shopping campaigns: +165% incremental ROAS and 16.2 ROAS on add-to-cart in Mexico and Latin America.",
+    "resume_citable": "In 2024, TAF (The Athlete's Foot), a sneaker leader in Mexico, achieved +165% incremental ROAS and a 16.2 ROAS on add-to-cart by raising the budget of its Meta Advantage+ Shopping campaigns, measured against its usual strategy.",
+    "faq": [
+      {
+        "q": "What AI tool did TAF use?",
+        "a": "Meta Advantage+ Shopping and Advantage+ Catalog Ads, which drive audiences, placements, and creatives from the product catalog, with prospecting and retargeting."
+      },
+      {
+        "q": "Is the 165% gain incremental?",
+        "a": "Yes: it is measured incrementally on the add-to-cart event, against the brand's usual (business as usual) strategy."
+      }
+    ]
+  },
+  "pattern": "AI-automated sales campaign plus dynamic catalog ads, with prospecting and retargeting, measured incrementally",
+  "etape_parcours": "consideration -> purchase",
+  "objectif_business": "Increase online sneaker sales by raising the budget on AI-automated campaigns, while verifying the real gain incrementally.",
+  "description": "TAF, The Athlete's Foot, presented as a leader of the sneaker market in Mexico and Latin America, worked with the agency Adsmurai to push its sales campaigns on Meta. The strategy consisted of raising the budget of Advantage+ Shopping campaigns, where the AI chooses audiences, placements, and creatives from the product catalog, with Advantage+ Catalog Ads combining quality images and videos, and a prospecting and retargeting logic. The setup was compared to the usual strategy (business as usual) and measured incrementally. On the add-to-cart event, the Meta Advantage strategy delivered 165 percent more incremental ROAS and 15 percent more incremental conversions, with a 16.2 ROAS on the Advantage+ Shopping campaign and an incremental ROAS close to 2x. The case was picked up by Meta as an example of maximizing sales with Advantage+ campaigns.",
+  "points_cles": [
+    "Budget increase on AI-automated sales campaigns, measured incrementally.",
+    "Meta Advantage+ Shopping and Catalog Ads stack, measured with Conversion Lift.",
+    "Incremental ROAS +165%, conversions +15%, 16.2 ROAS on add-to-cart.",
+    "Evidence B, confirmed status, case study from Meta partner Adsmurai."
+  ],
+  "resultats": [
+    { "metrique": "Incremental ROAS on the add-to-cart event vs usual strategy" },
+    { "metrique": "Incremental conversions vs usual strategy" },
+    { "metrique": "ROAS of the Advantage+ Shopping campaign on add-to-cart" }
+  ],
+  "niveau_preuve": {
+    "justification": "Case study from a Meta partner (Adsmurai), quantified, with a strategy compared incrementally and a named person, picked up by Meta; published by the integrator, not corroborated by a primary or independent press source."
+  },
+  "stack_technique": [
+    { "detail": "Meta's AI-automated sales campaigns: audiences, bids, placements, and creative combinations driven by the algorithm, prospecting and retargeting included." },
+    { "detail": "Dynamic catalog ads combining images and videos from the product feed." },
+    { "detail": "Reporting of purchases and add-to-cart that serves as the optimization signal for the algorithm." },
+    { "detail": "Incremental measurement of the setup against the usual strategy (business as usual)." },
+    { "detail": "Meta partner agency that drove the strategy, the creatives, and the measurement." }
+  ],
+  "fonctionnement_operationnel": {
+    "cadence": "Continuous delivery, with a budget increase on Advantage+ campaigns; comparison to the usual strategy through incremental measurement.",
+    "opere_par": "The agency Adsmurai with TAF's e-commerce team.",
+    "signal_pilote": "The purchases and add-to-cart events reported by the Pixel and the Conversions API. Without this signal, the algorithm optimizes on noise and the incremental ROAS collapses.",
+    "etapes": [
+      {
+        "etape": "Feed the catalog and creatives",
+        "detail": "Product feed plus Advantage+ Catalog Ads in quality images and videos, with optimized calls to action. The algorithm tests the combinations.",
+        "acteur": "Agency / creative team"
+      },
+      {
+        "etape": "Raise the Advantage+ budget",
+        "detail": "The budget of the Advantage+ Shopping campaigns is increased, with prospecting and retargeting driven by the AI.",
+        "acteur": "Agency / Meta AI"
+      },
+      {
+        "etape": "Compare to the usual strategy",
+        "detail": "The gain is read incrementally against business as usual, on the add-to-cart event, not on the displayed ROAS alone.",
+        "acteur": "Agency / Meta"
+      }
+    ]
+  },
+  "replication": {
+    "prerequis_data": [
+      "Clean and up-to-date product catalog (feed)",
+      "Pixel + Conversions API with reliable purchases and add-to-cart",
+      "Sufficient volume for an incremental test against business as usual"
+    ],
+    "prerequis_orga": [
+      "Bank of catalog creatives, images and videos",
+      "Willingness to raise the budget on the automated setup and let the learning run"
+    ],
+    "stack_possible": [
+      "Meta Advantage+ Sales Campaigns + Catalog Ads + CAPI",
+      "Conversion Lift or geo-test as the arbiter"
+    ],
+    "equipe": "1 Meta media buyer + 1 creative profile for the catalog ads + 1 dev for Pixel/CAPI, or a Meta partner agency as in this case.",
+    "playbook": [
+      {
+        "action": "Check the data prerequisites: clean and up-to-date catalog feed, Pixel and Conversions API reliably reporting purchases and add-to-cart.",
+        "livrable": "Validated event audit and ready feed."
+      },
+      {
+        "action": "Produce the catalog creatives (images and videos), set up the Advantage+ Shopping campaign, and frame the incremental test against business as usual.",
+        "livrable": "Campaigns ready and measurement protocol (Conversion Lift or geo-test)."
+      },
+      {
+        "action": "Launch, let the learning run without touching the settings, and raise the budget gradually.",
+        "livrable": "Campaign out of the learning phase with the target budget reached."
+      },
+      {
+        "action": "Read the incremental result (ROAS, conversions) and decide on the budget shift.",
+        "livrable": "Incremental report vs business as usual and allocation decision."
+      }
+    ],
+    "premiere_etape": "Shift part of the budget to an Advantage+ Shopping campaign with catalog ads, and measure the incremental gain against the usual structure."
+  },
+  "statut_vivant": {
+    "note": "TAF remains an active e-commerce merchant in Mexico and Advantage+ Shopping is Meta's default sales format; Adsmurai remains a Meta partner, which ensures the durability of the pattern."
+  },
+  "transposable_ue": {
+    "note": "Case run in Mexico and Latin America. The pattern (Advantage+ Shopping plus catalog ads, arbitrated incrementally) transposes to the EU, but activation requires GDPR/ePrivacy consent and compliant Pixel and Conversions API. Limited AI Act risk on the advertiser side."
+  }
+}

@@ -1,0 +1,110 @@
+{
+  "seo": {
+    "title": "Verizon: Gemini agent assist across 28,000 advisors - care sales +40% (2025)",
+    "meta_description": "Verizon deployed a Gemini assistant across 28,000 care advisors and stores: 95% of requests covered and sales through care up nearly 40%.",
+    "resume_citable": "Verizon equipped 28,000 care advisors and stores with a Gemini assistant (Vertex AI) connected to 15,000 internal documents, reaching 95% answerability and a nearly 40% rise in sales through care in Q1 2025.",
+    "faq": [
+      {
+        "q": "Does the AI replace the advisors?",
+        "a": "No. It assists a human who stays in control. Verizon reskilled its care advisors into sellers rather than cutting headcount."
+      },
+      {
+        "q": "Does the +40% in sales come only from the AI?",
+        "a": "The figure covers sales through the care team over the quarter. The assistant contributes, along with the reskilling of the agents, but the share strictly attributable to the AI is not isolated publicly."
+      }
+    ]
+  },
+  "pattern": "genAI agent assist: an LLM connected to the internal document base and customer context feeds the advisor the relevant answer and offer in real time",
+  "etape_parcours": "post-purchase / service and upsell",
+  "objectif_business": "Give each advisor a reliable answer in real time to shorten calls, resolve better, and turn service into a sales channel while the base loses subscribers.",
+  "description": "Verizon connected Gemini to its care platforms via Vertex AI. The advisor stays in control, but a conversational assistant called Personal Research Assistant looks up the answer across about 15,000 internal documents and the customer's context, then surfaces it in real time instead of leaving the agent to dig through a knowledge base. A second agent, Problem Solver, guides troubleshooting. The system covers 28,000 advisors and stores. Verizon reports 95 percent of requests the assistant can answer. Over the quarter, sales made through the care team jumped nearly 40 percent: Verizon reskilled its care agents into agents able to sell, while the group was losing postpaid subscribers after price increases. The rollout is part of a five-year collaboration with Google Cloud.",
+  "points_cles": ["genAI agent assist that feeds the advisor the relevant answer and offer in real time.", "Gemini on Vertex AI, RAG over about 15,000 internal documents.", "95% of requests covered, sales through care up nearly 40%.", "Evidence B, confirmed status, 28,000 advisors and stores equipped."],
+  "resultats": [
+    { "metrique": "Sales through the care team" },
+    { "metrique": "Assistant answerability rate" },
+    { "metrique": "Care advisors and stores equipped" }
+  ],
+  "niveau_preuve": {
+    "justification": "Deployment figures confirmed by the official Google Cloud release (28,000 advisors, 95 percent answerability) and a nearly 40 percent sales rise reported around Verizon's Q1 2025 results. Vendor release plus press pickup: solid, but answerability is an internal measure and the +40 percent does not isolate the share strictly attributable to the AI."
+  },
+  "stack_technique": [
+    { "detail": "LLM that generates the responses of the conversational assistant (Personal Research Assistant) and the troubleshooting guide (Problem Solver)." },
+    { "detail": "Hosting and orchestration platform for the conversational agents connected to the document base." },
+    { "detail": "Panel integrated into the workstation of the 28,000 advisors, which surfaces the relevant answer and offer in real time." },
+    { "detail": "About 15,000 documents (procedures, offers, pricing, troubleshooting) indexed in RAG and reindexed continuously." },
+    { "detail": "Technology partner for the rollout, as part of a five-year collaboration with Verizon." }
+  ],
+  "fonctionnement_operationnel": {
+    "cadence": "Real time during the interaction. The document base is reindexed continuously as products and pricing are updated.",
+    "opere_par": "The care and retail teams day to day, a Verizon data/platform team for the indexing and answer quality, Google Cloud for the infrastructure.",
+    "signal_pilote": "The quality and freshness of the indexed document base. If a document is stale or missing, the assistant answers wrong with confidence and the advisor propagates the error.",
+    "etapes": [
+      {
+        "etape": "Index the internal knowledge",
+        "detail": "About 15,000 documents (procedures, offers, pricing, troubleshooting) are made available to the LLM in RAG. Without this clean base, the assistant hallucinates.",
+        "acteur": "Data / platform team"
+      },
+      {
+        "etape": "Assist the advisor in real time",
+        "detail": "During the call or chat, the assistant reads the intent and customer context, surfaces the relevant answer and offer in the Agent Assist Panel.",
+        "acteur": "AI / Gemini"
+      },
+      {
+        "etape": "Keep the human as decision-maker",
+        "detail": "The advisor validates, rephrases, and decides the offer. The assistant proposes, it does not close the sale in their place.",
+        "acteur": "Care / sales advisor"
+      },
+      {
+        "etape": "Measure answerability and sales",
+        "detail": "Tracking of the share of requests covered, call duration, and sales through care to decide the extension.",
+        "acteur": "Data team + care management"
+      }
+    ]
+  },
+  "replication": {
+    "prerequis_data": [
+      "A clean, up-to-date internal document base (procedures, offers, pricing, troubleshooting)",
+      "Access to the customer context in real time at the advisor's desk",
+      "GDPR governance over the customer data exposed to the LLM"
+    ],
+    "prerequis_orga": [
+      "A care/retail team trained to work with an assistant",
+      "A process to maintain the document base (who keeps it up to date)"
+    ],
+    "stack_possible": [
+      "Vertex AI + Gemini, or Azure OpenAI, or an in-house RAG on a market LLM",
+      "An agent-assist component integrated into the CRM / advisor desk",
+      "A vector search engine over the internal docs"
+    ],
+    "premiere_etape": "Choose a high-volume care domain, index the corresponding docs in RAG, and measure answerability and call duration on a pilot group of advisors against a control group.",
+    "playbook": [
+      {
+        "action": "Choose a high-volume care domain and audit the associated documentation (freshness, owners, gaps).",
+        "livrable": "A documentation inventory with owners and update status."
+      },
+      {
+        "action": "Index the documentation in RAG, connect the LLM, and test answerability internally on a set of real questions.",
+        "livrable": "An assistant in sandbox with an answer rate measured question by question."
+      },
+      {
+        "action": "Launch the pilot on a group of advisors against a control group.",
+        "livrable": "A reading of call duration, answerability, and satisfaction, pilot vs control."
+      },
+      {
+        "action": "Integrate the customer context and offers into the advisor panel, with the human keeping the decision.",
+        "livrable": "An assistant that proposes the relevant offer at the workstation."
+      },
+      {
+        "action": "Set up the document-base maintenance process and plan the extension to the other domains.",
+        "livrable": "A documentation-update ritual + a costed rollout plan."
+      }
+    ],
+    "equipe": "1 PM + 1-2 data/RAG engineers + 1 knowledge-base owner + care managers for the pilot"
+  },
+  "statut_vivant": {
+    "note": "National-scale rollout confirmed in April 2025 in a joint Google Cloud / Verizon release, backed by a multi-year partnership. No signal of withdrawal."
+  },
+  "transposable_ue": {
+    "note": "The assistant reads internal documents and customer context to help a human advisor, no automated decision on the customer. In the EU, frame the handling of customer data (GDPR) and the use of an LLM on billing data. AI Act: limited risk, transparency obligation if offers are pushed automatically."
+  }
+}

@@ -1,0 +1,116 @@
+{
+  "seo": {
+    "title": "Nubank: credit scoring by foundation model (nuFormer) - largest market share gain in 10 quarters (2025)",
+    "meta_description": "Nubank's transactional foundation model: +1.25% AuC vs LightGBM, -4.4% churn, largest credit card market share gain in 10 quarters.",
+    "resume_citable": "In 2025, Nubank put nuFormer into production, a transactional foundation model that improves credit scoring AuC by +1.25% relative to LightGBM, reduces churn by 4.4%, and earns it its largest quarterly credit card market share gain in Brazil in ten quarters.",
+    "faq": [
+      {
+        "q": "What is nuFormer?",
+        "a": "A self-supervised foundation model trained on Nubank customers' transactions, which produces behavior embeddings fused with tabular variables to score credit risk."
+      },
+      {
+        "q": "What results does Nubank report?",
+        "a": "A relative AuC improvement of +1.25% against LightGBM, a 4.4% churn reduction in production, and the largest quarterly credit card market share gain in Brazil in ten quarters in Q4 2025."
+      }
+    ]
+  },
+  "pattern": "transactional foundation model for credit scoring",
+  "etape_parcours": "post-purchase",
+  "objectif_business": "Approve credit for profiles that classic scoring rejects, without degrading portfolio quality, and gain credit card market share by making better risk decisions at scale.",
+  "description": "Nubank built nuFormer, a self-supervised foundation model trained on its transaction data. The model produces embeddings of the customer's transactional behavior, which it fuses with classic tabular variables to score credit risk and feed origination and limit-increase decisions. On comparable segments, the fused version delivered a relative AuC improvement of +1.25% over the industry reference (LightGBM), and the model in production reduced customer churn by 4.4% in relative terms against the reference model. Nubank attributes to nuFormer its largest quarterly credit card market share gain in Brazil in ten quarters, in the fourth quarter of 2025. The model is operational in Brazil and is being deployed toward personal loans and the Mexico and Colombia markets.",
+  "points_cles": [
+    "Transactional foundation model nuFormer for credit scoring.",
+    "Custom self-supervised transformer, embeddings fused with tabular variables (PyTorch, Databricks).",
+    "+1.25% relative AuC vs LightGBM, -4.4% churn, largest market share gain in 10 quarters.",
+    "Evidence B, confirmed status."
+  ],
+  "resultats": [
+    { "metrique": "Relative AuC gain of the scoring, against the LightGBM industry baseline" },
+    { "metrique": "Relative reduction in customer churn, against the reference model" },
+    { "metrique": "Largest quarterly credit card market share gain in Brazil (Q4 2025)" }
+  ],
+  "niveau_preuve": {
+    "justification": "The model gains (AuC, churn) come from research published by Nubank and its production deployment; the market share gain appears in the fourth quarter 2025 results. Concordant sources (official Nubank page, third-party analysis repeating the same figures). Attribution of the market share gain to nuFormer is carried by Nubank, so kept as such."
+  },
+  "stack_technique": [
+    { "detail": "Self-supervised transformer foundation model trained in-house on transaction sequences, producing customer behavior embeddings fused with tabular variables." },
+    { "detail": "Gradient boosting serving as the industry scoring baseline, beaten by +1.25% relative AuC by the fused model." },
+    { "detail": "Training framework for the foundation model." },
+    { "detail": "Large-scale data processing platform for training and scoring." },
+    { "detail": "Transactional data preparation pipelines." }
+  ],
+  "fonctionnement_operationnel": {
+    "cadence": "Periodic batch training of the foundation model, continuous scoring for credit decisions; frequent model iterations.",
+    "opere_par": "Nubank's data science and credit risk teams.",
+    "signal_pilote": "Transaction behavior and observed repayment. If the transactional data degrades or default labels arrive late, risk calibration becomes less reliable.",
+    "etapes": [
+      {
+        "etape": "Pre-training",
+        "detail": "nuFormer learns self-supervised on transaction sequences to produce customer behavior embeddings.",
+        "acteur": "data team"
+      },
+      {
+        "etape": "Fusion and scoring",
+        "detail": "The embeddings are combined with classic tabular variables to score credit risk.",
+        "acteur": "AI"
+      },
+      {
+        "etape": "Credit decision",
+        "detail": "The score feeds origination, the limit, and its increase, under risk-policy guardrails.",
+        "acteur": "risk team"
+      },
+      {
+        "etape": "Production monitoring",
+        "detail": "More than a thousand monitoring indicators are watched to detect drift and trigger a retraining.",
+        "acteur": "data team"
+      }
+    ]
+  },
+  "replication": {
+    "playbook": [
+      {
+        "action": "Establish a robust scoring baseline (gradient boosting on tabular variables) and document its AuC per segment.",
+        "livrable": "Documented baseline with reference metrics."
+      },
+      {
+        "action": "Pre-train a self-supervised model on the first-party transaction sequences.",
+        "livrable": "Transactional embeddings evaluated offline."
+      },
+      {
+        "action": "Fuse embeddings and tabular variables, then measure the marginal AuC gain against the baseline on comparable segments.",
+        "livrable": "Fused model beating the baseline, with a quantified gain."
+      },
+      {
+        "action": "Pass risk and compliance validation: explainability, human oversight, high-risk system governance (AI Act, GDPR art. 22).",
+        "livrable": "Approved model governance file."
+      },
+      {
+        "action": "Deploy progressively on origination and limit decisions, with drift monitoring and triggerable retraining.",
+        "livrable": "Model in production with monitoring indicators and a fallback plan."
+      }
+    ],
+    "equipe": "3-5 data scientists / ML engineers + 1 data engineer, plus a dedicated credit risk and compliance function for model governance.",
+    "prerequis_data": [
+      "A large volume of first-party transaction sequences",
+      "Labeled default and repayment history",
+      "Large-scale processing infrastructure"
+    ],
+    "prerequis_orga": [
+      "A data science team able to train a foundation model",
+      "A credit risk and compliance function",
+      "Model governance (AI Act high-risk)"
+    ],
+    "stack_possible": [
+      "Custom foundation model (the Nubank path)",
+      "LightGBM-type gradient boosting as a baseline",
+      "PyTorch, Databricks, Spark"
+    ],
+    "premiere_etape": "Establish a robust scoring baseline (gradient boosting) and measure the marginal gain of transactional embeddings before industrializing."
+  },
+  "statut_vivant": {
+    "note": "nuFormer is in production on credit in Brazil and being deployed toward personal loans and the Mexico and Colombia markets, confirmed by Nubank's communications in late 2025 and 2026."
+  },
+  "transposable_ue": {
+    "note": "Credit scoring by foundation model is transposable, but the AI Act classifies creditworthiness assessment as a high-risk system: documentation, human oversight, and explainability required. GDPR (art. 22) governs automated credit decisions; a right to explanation and to contest is needed."
+  }
+}

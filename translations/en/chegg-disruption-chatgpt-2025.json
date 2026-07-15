@@ -1,0 +1,64 @@
+{
+  "seo": {
+    "title": "Chegg: the subscription model disrupted by ChatGPT - strategic review (2025)",
+    "meta_description": "Chegg lost half its subscribers and 30 percent of its revenue after ChatGPT. Its CheggMate assistant, a wrapper on GPT-4, protected nothing. Post-mortem.",
+    "resume_citable": "After ChatGPT launched, Chegg saw its subscribers fall from about 7.8 million to 3.2 million and its Q1 2025 revenue drop 30 percent; its CheggMate assistant built on GPT-4 created no barrier against the free model.",
+    "faq": [
+      {
+        "q": "Why did CheggMate fail to retain subscribers?",
+        "a": "Because it was built on GPT-4, the same type of model as ChatGPT available for free. A wrapper on a third-party LLM adds no barrier when the base model is directly available at no cost."
+      },
+      {
+        "q": "Is generative AI in education a doomed pattern?",
+        "a": "No. What fails is the layer without a data or distribution moat. AI in education remains valid for players that own proprietary data and a usage lock-in."
+      }
+    ]
+  },
+  "pattern": "verticalized AI assistant built as a wrapper on a third-party LLM",
+  "etape_parcours": "loyalty (retention of paying subscribers)",
+  "objectif_business": "Defend a homework-help subscription model (step-by-step answers, tutoring) against the arrival of free generative AI, by adding an in-house AI assistant meant to retain students.",
+  "description": "Chegg sold subscription access to a database of exercise answers and to tutoring. After ChatGPT launched in late 2022, students could get the same kind of help for free. In April 2023, Chegg responded with CheggMate, an assistant built on GPT-4 in partnership with OpenAI, to retain its subscribers. The wrapper created no barrier: students who accessed ChatGPT directly no longer had a reason to pay. Subscriber count fell from a peak of about 7.8 million to 3.2 million in the first quarter of 2025. In February 2025, Chegg sued Google, accusing AI Overviews of destroying its traffic, and entered a strategic review. In the first quarter of 2025, revenue fell 30 percent and the company cut about 22 percent of its workforce.",
+  "resultats": [
+    { "metrique": "Q1 2025 revenue, down about 30 percent year-on-year" },
+    { "metrique": "Strategic response" },
+    { "metrique": "Cited pressure factors" }
+  ],
+  "niveau_preuve": {
+    "justification": "Financial results filed with the SEC (quarterly results quantifying revenue, subscribers, and layoffs), corroborated by major financial press (CNBC, Bloomberg) reporting the strategic review and the lawsuit against Google."
+  },
+  "post_mortem": {
+    "ce_qui_s_est_passe": "Chegg sold subscription access to a database of exercise answers and tutoring. ChatGPT launched in late 2022 and offered equivalent help for free. In April 2023, Chegg launched CheggMate, an assistant built on GPT-4 with OpenAI, to retain its subscribers. Subscriber count fell from a peak of about 7.8 million toward 3.2 million in Q1 2025. In February 2025, Chegg sued Google, accusing AI Overviews of destroying its traffic, and announced a strategic review. In Q1 2025, revenue fell about 30 percent and Chegg cut about 22 percent of its workforce (248 positions).",
+    "raison_echec": "Chegg's paid content (step-by-step answers) became available for free through ChatGPT, and its own CheggMate assistant, a simple layer on GPT-4, added no barrier since the underlying model was directly available at no cost. On top of that came the search traffic decline tied to Google's AI Overviews, which Chegg is contesting in court.",
+    "cout_estime": "Market capitalization dropped from about 14.7 billion dollars (February 2021) to a few hundred million dollars; subscribers cut by more than half; about 22 percent of the workforce cut in Q1 2025.",
+    "signaux_avant_coureurs": "Inferred: when the value proposition is content the user can get for free elsewhere, an in-house assistant built on the same model as the free competitor protects nothing. The fact that Chegg's response relied on GPT-4, the very technology threatening its market, was a signal in itself. Dependence on Google's organic search traffic was a second known fragility.",
+    "lecons_avec_recul": "Inferred: a wrapper on a third-party LLM creates no defensibility if the base model is directly accessible. The barrier must come from elsewhere: proprietary data, workflow integration, captive distribution, or an experience the raw model does not provide. Responding to a disruption with the technology that causes it, without a proprietary advantage, amounts to funding your competitor.",
+    "le_pattern_reste_il_valide": "Inferred: nuanced. Generative AI in education remains a valid pattern, and Chegg has real assets (a question-answer database, a brand). What is doomed is the moatless wrapper strategy: adding an AI layer built on the free competitor's model, with no data or distribution moat. Players that own proprietary data and a usage lock-in hold up better."
+  },
+  "stack_technique": [
+    { "detail": "underlying model of CheggMate, provided through the OpenAI partnership announced in April 2023; the same type of model as the free ChatGPT that was disrupting the market" },
+    { "detail": "in-house conversational assistant built as a layer on GPT-4, backed by Chegg's question-answer database" },
+    { "detail": "proprietary database of exercise answers and tutoring that constituted the paid value of the subscription" }
+  ],
+  "replication": {
+    "prerequis_data": [
+      "proprietary data not replicable by a generic LLM",
+      "a usage signal or captive workflow"
+    ],
+    "prerequis_orga": [
+      "ability to measure real added value vs the free raw model",
+      "diversification of acquisition channels beyond organic search"
+    ],
+    "stack_possible": [
+      "third-party LLM only as a complement to a proprietary moat",
+      "exclusive first-party data",
+      "deep product integration"
+    ],
+    "premiere_etape": "Before adding an AI layer, test whether a user already gets the same result for free with the base model; if so, the advantage must come from data or distribution, not the model."
+  },
+  "statut_vivant": {
+    "note": "Chegg still exists but is in sharp contraction: subscribers and revenue falling, workforce reduced, company in strategic review (acquisition, delisting, or status quo). CheggMate did not reverse the trend."
+  },
+  "transposable_ue": {
+    "note": "The risk is structural and borderless: any business whose value rests on content the user can now get for free from a mainstream LLM is exposed. The lesson applies to a European publisher or subscription service just as much as an American one."
+  }
+}

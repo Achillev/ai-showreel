@@ -1,0 +1,120 @@
+{
+  "seo": {
+    "title": "American Express: deep learning fraud detection - +6% accuracy, lowest fraud rate (2021)",
+    "meta_description": "Amex scores every transaction in milliseconds across ~$1.2T in annual spend. Deep learning on GPU improved detection accuracy by 6%.",
+    "resume_citable": "American Express scores every transaction in milliseconds across roughly $1.2 trillion in annual spend; the move to deep learning on GPU improved fraud detection accuracy by 6%, and the network claims the lowest fraud rate in the industry for 14 consecutive years (Nilson, 2021).",
+    "faq": [
+      {
+        "q": "How does American Express detect fraud?",
+        "a": "Machine learning and deep learning models evaluate every transaction at the moment of authorization, compare it to the cardholder's spending habits, and return a decision in milliseconds, across the entire global network."
+      },
+      {
+        "q": "What gain did deep learning deliver?",
+        "a": "Served on GPU via NVIDIA TensorRT and Triton, it improved fraud detection accuracy by 6% over the previous models."
+      }
+    ]
+  },
+  "pattern": "real-time fraud detection with deep learning",
+  "etape_parcours": "purchase",
+  "objectif_business": "Detect fraud on every transaction in milliseconds to limit losses and protect the customer relationship, while keeping the false-decline rate low enough not to block legitimate purchases.",
+  "description": "American Express runs machine learning models that evaluate every transaction at the moment of authorization, worldwide, and return a fraud decision in milliseconds. The models learn from the cardholder's spending habits and buying behavior at merchants. American Express monitors on the order of $1.2 trillion in annual spend and evaluates several billion transactions per year. By moving to deep learning models served on GPU (via NVIDIA TensorRT and Triton), fraud detection accuracy improved by 6%. The company claims the lowest fraud rate among the major card networks for 14 consecutive years, per the February 2021 Nilson Report.",
+  "resultats": [
+    {
+      "metrique": "Fraud detection accuracy improvement (move to deep learning on GPU)"
+    },
+    {
+      "metrique": "Lowest fraud rate in the industry (Nilson Report, Feb. 2021)"
+    },
+    {
+      "metrique": "Annual spend monitored in real time"
+    }
+  ],
+  "niveau_preuve": {
+    "justification": "Figures documented by NVIDIA's technical blog (infrastructure partner, interested source) for the +6%, and by a specialist analysis (Emerj) that reports the monitored spend and the lowest-fraud-rate claim (from the Nilson Report cited by American Express). No financial result isolating the effect of AI."
+  },
+  "stack_technique": [
+    {
+      "detail": "In-house models trained on cardholder spending habits and merchant context; fraud decision returned in milliseconds on each authorization."
+    },
+    {
+      "detail": "Inference optimization for deep learning models on GPU, associated with the documented 6% accuracy gain."
+    },
+    {
+      "detail": "Low-latency model serving in production on the global authorization stream."
+    }
+  ],
+  "fonctionnement_operationnel": {
+    "cadence": "Real time, on every authorization, with periodic retraining on confirmed fraud.",
+    "opere_par": "AmEx AI Labs and American Express risk teams.",
+    "signal_pilote": "The cardholder's spending habits and confirmed-fraud labels. If labels arrive too late or are noisy, the model drifts and either lets fraud through or multiplies false declines.",
+    "etapes": [
+      {
+        "etape": "Transaction submitted",
+        "detail": "A transaction reaches authorization on the American Express network.",
+        "acteur": "site_app / network"
+      },
+      {
+        "etape": "Scoring in milliseconds",
+        "detail": "The deep learning models compare the transaction to the cardholder's habits and merchant context and return a score.",
+        "acteur": "AI"
+      },
+      {
+        "etape": "Decision",
+        "detail": "The transaction is approved, declined, or flagged for review depending on the score and thresholds.",
+        "acteur": "AI / risk team"
+      },
+      {
+        "etape": "Learning loop",
+        "detail": "Confirmed fraud and disputes flow back to feed retraining.",
+        "acteur": "data team"
+      }
+    ]
+  },
+  "replication": {
+    "prerequis_data": [
+      "Real-time transaction stream",
+      "History of labeled confirmed fraud",
+      "Spending profiles per cardholder"
+    ],
+    "prerequis_orga": [
+      "Data science and risk team",
+      "Low-latency inference infrastructure",
+      "Governance over the automated decision"
+    ],
+    "stack_possible": [
+      "Custom model (the American Express route)",
+      "third-party anti-fraud engines (Feedzai, Featurespace, SAS)",
+      "GPU inference for real-time deep learning"
+    ],
+    "premiere_etape": "Assemble a set of labeled confirmed fraud and train a first scoring model on the highest-risk transactions.",
+    "playbook": [
+      {
+        "action": "Consolidate the transaction history with confirmed-fraud labels and per-cardholder spending profiles.",
+        "livrable": "Labeled dataset, ready for training."
+      },
+      {
+        "action": "Train a first scoring model on the highest-risk transactions and evaluate it offline against the current rules.",
+        "livrable": "Model evaluated (accuracy, false positives) against the baseline."
+      },
+      {
+        "action": "Connect the model in shadow mode on the authorization stream, with no customer impact, to check latency and scores under real conditions.",
+        "livrable": "Shadow-mode report: production scores vs current decisions."
+      },
+      {
+        "action": "Move the model to decisioning on a limited segment, with thresholds, human review of ambiguous cases, and a dispute procedure.",
+        "livrable": "Model in production on a defined scope, governance of the automated decision in place."
+      },
+      {
+        "action": "Build the retraining loop on confirmed fraud and disputes, with model drift monitoring.",
+        "livrable": "Retraining pipeline and fraud / false-decline dashboard."
+      }
+    ],
+    "equipe": "2-3 data scientists + 1 ML engineer (low-latency inference) + the risk/fraud team for thresholds and case review."
+  },
+  "statut_vivant": {
+    "note": "ML fraud detection is a core American Express asset, operated by a dedicated AI Labs team. The pattern remains in production; the lowest-fraud-rate claim rests on a 2021 Nilson ranking, to be refreshed."
+  },
+  "transposable_ue": {
+    "note": "Real-time fraud scoring applies to the network, the EU included. Under GDPR and the AI Act, the automated rejection of a transaction must remain supervisable and contestable; transaction data is processed on the legitimate-interest basis of fraud prevention."
+  }
+}

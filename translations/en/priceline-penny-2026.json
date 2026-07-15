@@ -1,0 +1,110 @@
+{
+  "seo": {
+    "title": "Priceline: agentic assistant Penny - nearly 10 minutes saved per trip (2026)",
+    "meta_description": "Penny, Priceline's AI travel agent that went agentic in 2026 on Claude, saves nearly 10 minutes per trip and shows higher engagement and conversion.",
+    "resume_citable": "In 2026, Priceline made its Penny agent fully agentic on the Claude models; travelers who use it save on average nearly 10 minutes per trip and convert more.",
+    "faq": [
+      {
+        "q": "What is Priceline's Penny?",
+        "a": "An AI travel agent that understands a complex request, compares price and availability in real time, and lets travelers book without leaving the conversation."
+      },
+      {
+        "q": "What technology does Penny use?",
+        "a": "Anthropic's Claude models for reasoning, the Priceline stack on Google Cloud, and OpenAI for voice."
+      }
+    ]
+  },
+  "pattern": "agentic genAI booking agent",
+  "etape_parcours": "purchase",
+  "stack_technique": [
+    { "detail": "Claude models for Penny's conversational reasoning and agentic planning (multi-city comparison, trade-offs)." },
+    { "detail": "Real-time voice block for Penny's voice interface." },
+    { "detail": "Hosting for Priceline's AI stack." },
+    { "detail": "Deals engine, traveler preference memory, real-time inventory and pricing, booking flow integrated into the conversation." }
+  ],
+  "objectif_business": "Move travel search from a stack of filters and tabs to a single conversation where the traveler describes their need and the agent compares, weighs trade-offs, and books.",
+  "description": "Penny is Priceline's AI travel agent. In 2026 it becomes agentic: it understands a complex request (comparing flights to several cities over a given week), evaluates price and availability live, surfaces the trade-offs, and lets travelers book without leaving the conversation. The reasoning relies on Anthropic's Claude models on the Priceline stack hosted on Google Cloud, with OpenAI for voice. Priceline positions Penny on preference memory and its deals technology, not just the model.",
+  "resultats": [
+    { "metrique": "Average time saved per trip, vs contacting customer service" },
+    { "metrique": "Engagement and conversion of Penny users" },
+    { "metrique": "Experience comparison (Evercore ISI analysis)" },
+    { "metrique": "Signal in Booking Holdings earnings (Q1 2026)" }
+  ],
+  "niveau_preuve": {
+    "justification": "Quantified official Priceline press release, a concordant mention in the Booking Holdings Q1 2026 earnings call, and specialist press coverage (Skift); the hard public figure (time saved) remains a brand claim."
+  },
+  "fonctionnement_operationnel": {
+    "cadence": "Real-time on every conversation, with continuous evaluation of price and availability.",
+    "opere_par": "Priceline's AI Experiences team, on an in-house stack hosted on Google Cloud.",
+    "signal_pilote": "The expressed travel intent, crossed with live inventory and pricing and the traveler's preference memory. Without a reliable price and availability feed, the proposed trade-offs become wrong and conversion drops.",
+    "etapes": [
+      {
+        "etape": "Stating the need",
+        "detail": "The traveler describes their trip, including complex multi-destination requests, by text or voice.",
+        "acteur": "customer"
+      },
+      {
+        "etape": "Reasoning and search",
+        "detail": "The agent plans, queries inventory, and compares options across several cities and dates.",
+        "acteur": "AI"
+      },
+      {
+        "etape": "Presenting the trade-offs",
+        "detail": "It surfaces price, availability, and compromises, drawing on preference memory and Priceline deals.",
+        "acteur": "AI"
+      },
+      {
+        "etape": "Booking in the thread",
+        "detail": "The traveler confirms and pays without leaving the conversation.",
+        "acteur": "customer"
+      }
+    ]
+  },
+  "replication": {
+    "prerequis_data": [
+      "real-time inventory and pricing via API",
+      "per-user preference memory",
+      "booking history"
+    ],
+    "prerequis_orga": [
+      "product AI team",
+      "in-thread payment integration",
+      "governance of the proposed trade-offs"
+    ],
+    "stack_possible": [
+      "commercial LLM for reasoning",
+      "existing travel search engine",
+      "real-time voice block"
+    ],
+    "premiere_etape": "Connect a conversational assistant to inventory for a narrow use case (flight comparison), then add in-thread booking.",
+    "playbook": [
+      {
+        "action": "Frame a narrow use case (flight comparison) and connect a conversational assistant to inventory and pricing via API.",
+        "livrable": "Conversational prototype that answers with real inventory data."
+      },
+      {
+        "action": "Add per-user preference memory and trade-off presentation (price, availability, compromises).",
+        "livrable": "Agent able to compare several cities and dates with persisted preferences."
+      },
+      {
+        "action": "Integrate booking and payment into the conversation thread, with payment compliance (PSD2/SCA in the EU).",
+        "livrable": "Transactional booking flow accessible without leaving the conversation."
+      },
+      {
+        "action": "Add the real-time voice block and open a beta to a group of users.",
+        "livrable": "Voice interface in beta with measurement of time saved per trip."
+      },
+      {
+        "action": "Compare agent users to non-users (engagement, conversion, customer-service contacts) and generalize.",
+        "livrable": "Quantified read vs the classic journey and a full rollout plan."
+      }
+    ],
+    "equipe": "1 AI PM + 3-5 devs (inventory API, conversational front end, payment) + 1 ML/prompt engineer + payment and GDPR legal."
+  },
+  "statut_vivant": {
+    "note": "Agentic version announced in June 2026, with a switch of the reasoning engine to Claude; product live on the site and app."
+  },
+  "transposable_ue": {
+    "note": "An agentic booking agent is transposable, but the use of voice and preference memory requires in the EU a GDPR legal basis, AI disclosure (AI Act), and consent for voice recording. In-thread payment integrations require PSD2 / SCA compliance."
+  }
+}

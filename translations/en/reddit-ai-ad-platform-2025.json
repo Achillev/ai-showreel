@@ -1,0 +1,126 @@
+{
+  "seo": {
+    "title": "Reddit: AI-optimized ad platform - revenue +70% in Q4 2025 (2025)",
+    "meta_description": "Reddit built an AI-optimized ad platform (Reddit Max, Shopping ML, conversation summaries): ad revenue +75% to $690M in Q4 2025, CPA -17%.",
+    "resume_citable": "In Q4 2025, Reddit's AI ad platform (Reddit Max, Dynamic Product Ads, Conversation Summaries) carried ad revenue to $690M (+75% year-over-year), with automated Reddit Max campaigns showing a 17% lower CPA and a 27% higher conversion volume in testing.",
+    "faq": [
+      {
+        "q": "What is Reddit Max?",
+        "a": "An automated Reddit ad campaign type: the advertiser sets the objective and budget, and the AI models arbitrate placements and bids across the mid and lower funnel from community signals."
+      },
+      {
+        "q": "What results did Reddit's AI ad layer produce?",
+        "a": "Ad revenue of $690M in Q4 2025 (+75% year-over-year), Reddit Max campaigns with CPA -17% and conversions +27% in testing, and Shopping ROAS improved by more than 75% over 2025."
+      },
+      {
+        "q": "Is Reddit Answers monetized?",
+        "a": "Not in Q4 2025. This genAI conversational search brings on-platform search to more than 80 million people per week, but remains unmonetized and mainly expands future inventory."
+      }
+    ]
+  },
+  "pattern": "ML-optimized ad platform (automated campaigns + ranking + genAI formats)",
+  "etape_parcours": "purchase",
+  "objectif_business": "Grow the monetization of Reddit inventory by improving advertiser performance, via an AI layer that automates campaign management and the display of lower-funnel ads.",
+  "points_cles": [
+    "In-house AI-optimized ad platform (Reddit Max, Dynamic Product Ads, conversation summaries).",
+    "Bidding and ranking optimization ML on community signals.",
+    "Ad revenue $690M in Q4 2025 (+75%), CPA -17% and conversions +27% in testing.",
+    "Shopping ROAS +75% over 2025, evidence A, status confirmed."
+  ],
+  "description": "Reddit built an AI layer on top of its ad platform in-house. It is made of three blocks. Reddit Max is an automated campaign type: the advertiser sets the objective, budget, and broad target, and the models choose placements and bids across the mid and lower funnel from community signals (posts, comments, interests). Shopping ads (Dynamic Product Ads) rely on ML ranking models that pull from a product catalog and improved throughout 2025, with a peak on Black Friday and Cyber Monday. Finally, genAI formats such as Conversation Summaries embed excerpts of Reddit discussions into ads. In parallel, on the consumer side, Reddit Answers brings a conversational search that took direct searches on Reddit to more than 80 million people per week in Q4 2025; this surface remains unmonetized for now but broadens future ad inventory. The whole runs for tens of thousands of advertisers and accounts for most of the group's revenue.",
+  "resultats": [
+    { "metrique": "Total Q4 2025 revenue, +70% year-over-year" },
+    { "metrique": "Ad revenue Q4 2025, +75% year-over-year" },
+    { "metrique": "Reddit Max campaigns (test), conversions +27% vs standard" },
+    { "metrique": "ROAS of Shopping ads (Dynamic Product Ads), after ML model overhaul" },
+    { "metrique": "On-platform search (Reddit Answers) in Q4 2025, vs 60M a year earlier" }
+  ],
+  "niveau_preuve": {
+    "justification": "Figures from the Q4/full-year 2025 financial results (official release filed with the SEC and the February 5, 2026 earnings call), corroborated by the press. The advertising metrics (CPA, ROAS) are announced by the COO on the earnings call."
+  },
+  "fonctionnement_operationnel": {
+    "cadence": "Real-time for bid and ranking optimization; continuous retraining of the ML models on conversion signals; per-campaign management on the advertiser side.",
+    "opere_par": "Reddit's product and data science teams for the models; advertisers and their agencies for campaign launch and budget.",
+    "signal_pilote": "The conversion signal reported by the advertiser (pixel + Conversions API) and the intent signals from communities. Without proper conversion tracking, automated lower-funnel campaigns lose their optimization loop and fall back on weaker proxies.",
+    "etapes": [
+      {
+        "etape": "The advertiser configures a lower-funnel objective",
+        "detail": "They choose an automated campaign type (Reddit Max), set budget and objective, provide creatives and, for Shopping, a product catalog.",
+        "acteur": "advertiser / agency"
+      },
+      {
+        "etape": "The models allocate placements and bids",
+        "detail": "The AI arbitrates in real time the placements on the feed, conversation threads, and search, drawing on community signals.",
+        "acteur": "AI (Reddit models)"
+      },
+      {
+        "etape": "Shopping ads rank the catalog",
+        "detail": "The Dynamic Product Ads ML models select and order products by conversion probability.",
+        "acteur": "AI (Reddit models)"
+      },
+      {
+        "etape": "The conversion loop retrains the system",
+        "detail": "Reported conversions adjust the allocation; the data teams monitor CPA and ROAS and expand automation.",
+        "acteur": "Reddit data team"
+      }
+    ]
+  },
+  "stack_technique": [
+    { "detail": "Automated mid/lower funnel campaign type, in-house" },
+    { "detail": "ML ranking models on the product catalog, in-house" },
+    { "detail": "On-platform genAI conversational search (unmonetized in Q4 2025)" },
+    { "detail": "GenAI ad format embedding discussion excerpts" }
+  ],
+  "replication": {
+    "prerequis_data": [
+      "Robust conversion tracking on the advertiser side (pixel + server-side conversions API)",
+      "First-party intent signals at volume (engagement, interests)",
+      "Structured, up-to-date product catalog for Shopping ads"
+    ],
+    "prerequis_orga": [
+      "Ad-ops team able to run automated campaigns and read incrementality",
+      "Data science capability for ranking and allocation models (platform side)",
+      "GDPR-compliant data governance for signal use and server-side tracking"
+    ],
+    "stack_possible": [
+      "Automated campaign products (Reddit Max, Meta Advantage+, Google Performance Max)",
+      "Catalog feed for Dynamic Product Ads",
+      "Server-side conversions API (Conversions API)",
+      "Native platform genAI formats (conversation summaries)"
+    ],
+    "playbook": [
+      {
+        "action": "Instrument end-to-end conversion tracking (pixel + server API)",
+        "livrable": "Reliable conversion signal that feeds optimization"
+      },
+      {
+        "action": "Structure the available intent signals and first-party segments",
+        "livrable": "Clean and compliant targeting base"
+      },
+      {
+        "action": "Activate an automated campaign type on a lower-funnel objective",
+        "livrable": "Campaign driven by the models rather than manual settings"
+      },
+      {
+        "action": "Connect a product catalog for dynamic Shopping ads",
+        "livrable": "Product ads ranked by conversion probability"
+      },
+      {
+        "action": "Add native genAI formats (conversation summaries) on the creatives",
+        "livrable": "Contextualized formats tested against standard formats"
+      },
+      {
+        "action": "Measure CPA and ROAS incrementally and reallocate budget",
+        "livrable": "Budget arbitration based on measured performance"
+      }
+    ],
+    "equipe": "Ad-ops and growth marketing profiles for management; data science for the models on the platform side; analyst for incremental measurement.",
+    "premiere_etape": "Connect server-side conversion tracking and activate an automated campaign type on a lower-funnel objective, before opening the budget."
+  },
+  "statut_vivant": {
+    "note": "Products active and central in the Q4 2025 results published on February 5, 2026; Reddit announces expanding automation and advertiser onboarding over 2026."
+  },
+  "transposable_ue": {
+    "note": "Reddit's automated ad products are available to EU advertisers. On the advertiser side, use of intent signals and server-side conversion tracking (Conversions API) requires a GDPR basis (consent, minimization). The AI Act requires transparency on automated media allocation decisions, without blocking activation."
+  }
+}

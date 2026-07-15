@@ -1,0 +1,57 @@
+{
+  "seo": {
+    "title": "Willy's Chocolate Experience: AI overselling visuals - event shut down (2024)",
+    "meta_description": "In February 2024, a Willy Wonka event in Glasgow sold with misleading AI visuals delivered an empty warehouse. Police called, shut down the same day.",
+    "resume_citable": "In February 2024, the Willy's Chocolate Experience event in Glasgow sold tickets at around 35 pounds with AI-generated visuals unrelated to reality; the police were called and the event was shut down the same day.",
+    "faq": [
+      {
+        "q": "What happened at the Willy's Chocolate Experience in Glasgow?",
+        "a": "The event was promoted with AI-generated images promising an enchanted world. On site, families found a nearly empty warehouse with cheap props. Anger, refund demands, police called, shutdown the same day."
+      },
+      {
+        "q": "Is AI marketing visual generation to blame?",
+        "a": "No, not the tool itself. The failure comes from the use: AI visuals created a promise impossible to keep. The same generator, framed on a real service and supervised, produces legitimate promotional material."
+      }
+    ]
+  },
+  "pattern": "AI-generated event visuals (overselling)",
+  "etape_parcours": "purchase",
+  "objectif_business": "Sell tickets for an immersive experience inspired by the Willy Wonka universe, relying on attractive visuals to convince families.",
+  "description": "In February 2024, an event named Willy's Chocolate Experience took place in a Glasgow warehouse. The ticketing site promised an enchanted world with gardens, characters, and shows, illustrated with AI-generated images. The visuals contained telltale signs, including made-up text such as exarserdray lollipop. On site, families who had paid around 35 pounds per ticket found a nearly empty warehouse with a few cheap props and an inflatable structure. The gap triggered anger, refund demands, and a call to the police. The event was shut down the same day. An actor who was hired described the script he received as AI-generated gibberish.",
+  "resultats": [
+    {
+      "metrique": "Anger, refunds demanded, police called to the site"
+    },
+    {
+      "metrique": "Sign of AI overselling in the promotional material"
+    }
+  ],
+  "niveau_preuve": {
+    "justification": "Established press and a reference institute (Poynter, Semafor, The Hollywood Reporter, New York Times cited) document the event by name, the use of AI images, and the shutdown. No published court decision at the time of verification, hence C."
+  },
+  "stack_technique": [
+    {
+      "detail": "Consumer image-generation tool used for the promotional visuals; the visible made-up text (exarserdray lollipop) reveals the generative origin. The organizer did not disclose the exact tool."
+    },
+    {
+      "detail": "The script provided to the actors was described as AI-generated gibberish; the specific tool is not documented."
+    },
+    {
+      "detail": "Distribution channel for the generated visuals and ticket sales at around 35 pounds; closed after the event."
+    }
+  ],
+  "post_mortem": {
+    "ce_qui_s_est_passe": "In February 2024, an organizer sold tickets at around 35 pounds for Willy's Chocolate Experience in Glasgow, illustrating the offer with AI-generated images promising gardens, characters, and shows. On the day, families found a nearly empty warehouse with cheap props. Anger, refund demands, police called, shutdown the same day. The script provided to the actors was also AI-generated and judged unusable. The affair went viral and was covered even by the New York Times.",
+    "raison_echec": "The AI visuals created a promise with no connection to what could be delivered. The core problem is a gap between advertising and service. AI was used both to produce images too good to be true and a meaningless script, with no human oversight to check feasibility or coherence.",
+    "cout_estime": "Refunds demanded by families, major reputational cost for the organizer, worldwide press coverage. Precise amounts not published in consolidated form.",
+    "signaux_avant_coureurs": "Inferred: promotional visuals too perfect for a small event operation, made-up text visible in the material, and a script produced without review are clear signals. A marketing promise that no production budget could keep should have raised a flag before tickets went on sale.",
+    "lecons_avec_recul": "Inferred: the marketing image must stay anchored to what will actually be delivered. Using AI to paint an experience you cannot produce turns a marketing operation into deception. The simple rule: never show in promotion what the service cannot honor, AI or not.",
+    "le_pattern_reste_il_valide": "Inferred: the pattern of AI-generated marketing visuals remains valid and widespread. What failed here is not the tool but its use to oversell. The same image generator, framed on a real service and supervised, produces legitimate promotional material."
+  },
+  "statut_vivant": {
+    "note": "Event shut down the same day, refunds demanded. The case became a viral reference for AI marketing overselling, nicknamed in the press a Fyre Festival for children."
+  },
+  "transposable_ue": {
+    "note": "Directly transposable case: promoting a paid event with AI-generated visuals unrelated to reality amounts to misleading advertising, punishable everywhere in the EU. The AI Act adds an obligation to flag synthetic images. The problem is not the tool but the gap between the marketing promise and the service delivered."
+  }
+}

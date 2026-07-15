@@ -1,0 +1,120 @@
+{
+  "seo": {
+    "title": "Taco Bell: drive-thru voice AI - about 890 restaurants across 38 states (2024-2026)",
+    "meta_description": "Taco Bell (Yum! Brands) takes drive-thru orders through an Omilia voice AI deployed in about 890 restaurants across 38 states, integrated with the Poseidon POS.",
+    "resume_citable": "Taco Bell deployed drive-thru order-taking voice AI (Omilia) in about 890 restaurants across 38 states, with transaction times on par with or faster than human order-taking.",
+    "faq": [
+      {
+        "q": "Who provides Taco Bell's voice AI?",
+        "a": "Omilia, a partner since 2023, whose solution is integrated with Yum! Brands's proprietary Poseidon POS and the digital menus."
+      },
+      {
+        "q": "Did the rollout hit any problems?",
+        "a": "Yes. In the summer of 2025, customers pushed absurd orders to trip up the system, which led Yum! to slow down and review the rollout before resuming it."
+      }
+    ]
+  },
+  "pattern": "drive-thru voice ordering agent integrated with the POS",
+  "etape_parcours": "purchase",
+  "objectif_business": "Take drive orders through a voice AI to relieve crew members, keep service fast and consistent at peak hours, and free staff for greeting and preparation.",
+  "description": "Taco Bell is deploying a voice AI, provided by Omilia, that takes orders at the drive-thru. The system understands natural language, handles order modifications without a fixed script, adapts to stock in real time and to limited offers, filters road noise, and handles different accents. It is connected to Yum!'s proprietary Poseidon POS and the digital menus. Starting from more than 100 restaurants in 13 states in the summer of 2024, the deployment reached about 890 restaurants across 38 states. The rollout hit a publicized snag in the summer of 2025 (aberrant orders pushed by customers to trip up the system), which led Yum! to pause before resuming the expansion.",
+  "points_cles": [
+    "Voice AI for order-taking at the drive-thru, integrated with the POS and the digital menus.",
+    "Omilia Voice AI solution connected to Yum!'s Poseidon POS.",
+    "About 890 restaurants across 38 states, transaction times on par or faster.",
+    "Evidence A, mixed-signals status (viral incident summer 2025, rollout slowed then resumed)."
+  ],
+  "resultats": [
+    { "metrique": "US Taco Bell restaurants equipped with the voice AI, across 38 states" },
+    { "metrique": "Initial scope of the deployment, across 13 states (July 2024)" },
+    { "metrique": "Drive transaction time, against classic order-taking" }
+  ],
+  "niveau_preuve": {
+    "justification": "Scale deployment announced by official Yum! Brands press release (100+ restaurants, 13 states in 2024) and confirmed as continuously expanding by established restaurant press (about 890 restaurants, 38 states). Primary brand source plus concordant press coverage."
+  },
+  "stack_technique": [
+    { "detail": "Voice order-taking solution at the drive: ASR, natural language understanding, handling of order modifications, filtering of noise and accents, voice synthesis." },
+    { "detail": "Yum! Brands's proprietary POS to which the voice order is sent to the kitchen." },
+    { "detail": "Screens for visual confirmation of the order, synchronized with real-time stock and limited offers." }
+  ],
+  "fonctionnement_operationnel": {
+    "cadence": "Real time, on each order placed at the drive",
+    "opere_par": "Restaurant teams for escalation and preparation; Taco Bell/Yum! digital team and Omilia for the model and integration",
+    "signal_pilote": "Voice recognition accuracy and the escalation rate to a crew member. If the AI does not handle accents, noise, or complex modifications, the experience degrades and staff must take over.",
+    "etapes": [
+      {
+        "etape": "Customer speaks",
+        "detail": "The customer places their order at the drive microphone.",
+        "acteur": "Customer"
+      },
+      {
+        "etape": "Understanding and handling the order",
+        "detail": "The voice AI transcribes, understands, handles modifications, and adapts to stock and current offers.",
+        "acteur": "AI"
+      },
+      {
+        "etape": "Visual confirmation",
+        "detail": "The order appears on the digital menu for the customer to check.",
+        "acteur": "Digital menu"
+      },
+      {
+        "etape": "Sending to the kitchen",
+        "detail": "The order goes to the Poseidon POS.",
+        "acteur": "AI / POS"
+      },
+      {
+        "etape": "Human escalation",
+        "detail": "In case of a block or a complex order, a crew member takes over the conversation.",
+        "acteur": "Crew member"
+      }
+    ]
+  },
+  "replication": {
+    "prerequis_data": [
+      "structured menu and personalization rules",
+      "stock state and limited offers in real time",
+      "audio recordings to train and evaluate the ASR"
+    ],
+    "prerequis_orga": [
+      "integration with the existing POS",
+      "human escalation process",
+      "franchise buy-in",
+      "network of digital menus"
+    ],
+    "stack_possible": [
+      "voice AI vendor (Omilia, Google Cloud)",
+      "integrated POS",
+      "connected digital menus"
+    ],
+    "equipe": "1 restaurant operations PM + 1 POS integrator + the voice AI vendor; in operation, crew members handle escalation and preparation.",
+    "playbook": [
+      {
+        "action": "Structure the menu and the personalization rules, map the POS integration and the real-time stock state.",
+        "livrable": "Structured menu usable by the voice AI vendor and POS integration spec."
+      },
+      {
+        "action": "Integrate the voice AI with the POS and digital menus on 2-3 pilot restaurants, with systematic human escalation.",
+        "livrable": "Functional pilot: end-to-end voice ordering, crew member as safety net."
+      },
+      {
+        "action": "Measure order accuracy, service time, and escalation rate against human order-taking.",
+        "livrable": "Comparative dashboard per pilot restaurant."
+      },
+      {
+        "action": "Harden the system (noise, accents, out-of-norm or sabotage orders) and lock the escalation rules.",
+        "livrable": "Operations playbook per restaurant, documented incidents."
+      },
+      {
+        "action": "Deploy in waves with franchise buy-in, tracking the same metrics.",
+        "livrable": "Multi-site rollout plan and weekly indicator tracking."
+      }
+    ],
+    "premiere_etape": "Pilot on a few restaurants with systematic human escalation, measuring order accuracy and service time before expanding."
+  },
+  "statut_vivant": {
+    "note": "The deployment is very much alive and has continued its expansion to about 890 restaurants. But the summer of 2025 saw a viral incident (customers placing absurd orders to trip up the AI) that pushed Yum! to slow down and review the rollout before resuming. The technology holds up on standard orders, less so on very customized ones."
+  },
+  "transposable_ue": {
+    "note": "Recording and processing of customers' voices: GDPR information and legal basis required, limited retention. The AI Act requires transparency about the fact that the customer is speaking to an AI. Multilingualism and local accents to be retrained per market."
+  }
+}

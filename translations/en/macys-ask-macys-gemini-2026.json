@@ -1,0 +1,96 @@
+{
+  "seo": {
+    "title": "Macy's: Ask Macy's conversational shopping assistant (Gemini) - 4.75x revenue per visit (2026)",
+    "meta_description": "Macy's deployed Ask Macy's, a Gemini shopping agent with virtual try-on, to 100% of its visitors. In beta, revenue per visit was 4.75x higher among users.",
+    "resume_citable": "In March 2026, Macy's launched Ask Macy's, a multimodal conversational shopping agent based on Google Gemini Enterprise, deployed to 100% of its web and app visitors over a catalog of 2.5 million SKUs; in beta, revenue per visit was 4.75 times higher among the agent's users.",
+    "faq": [
+      {
+        "q": "What AI runs Ask Macy's?",
+        "a": "The agent is built on Google Cloud's Gemini Enterprise for Customer Experience. It is a multimodal agent that handles text and image, with a virtual try-on on photo upload."
+      },
+      {
+        "q": "Is the 4.75x figure a result at scale?",
+        "a": "The 4.75x revenue per visit was measured in an A/B test during the beta, with about half of the visitors. The deployment itself moved to 100% of web and app visitors, over a catalog of more than 2.5 million SKUs."
+      },
+      {
+        "q": "Is Ask Macy's transposable to Europe?",
+        "a": "Yes with adaptations. Virtual try-on handles customer photos (sensitive data close to biometric in the EU), which requires explicit GDPR consent and AI transparency under the AI Act."
+      }
+    ]
+  },
+  "pattern": "conversational genAI shopping assistant (multimodal agent with virtual try-on)",
+  "etape_parcours": "consideration",
+  "objectif_business": "Turn product search into guided discovery to grow revenue per visit and help the customer find what they are really looking for, from the hesitant browser to the buyer.",
+  "description": "Ask Macy's is a conversational shopping agent deployed on macys.com (desktop and mobile) and the Macy's app (iOS and Android). The customer describes in natural language what they are looking for - budget, occasion, color, style, size - and the agent responds like a salesperson: it suggests brands and trends, recommends products, completes the outfit (complete the look option for accessories). It is a multimodal agent that handles text and image: the customer can upload a photo for a virtual try-on that shows the garment worn, with different backgrounds, including in store. The system operates on a catalog of more than 2.5 million SKUs. Built on Google Cloud's Gemini Enterprise for Customer Experience after abandoning a first approach run over about six months, the agent was stood up in less than six weeks: first meeting on February 9, 2026, beta four weeks later with a small share of visitors and thousands of employees, moving to 50% of visitors the next day, then 100% a week later. The public launch took place around March 23-24, 2026, announced at the Shoptalk conference in Las Vegas, after an internal dark launch in December 2025.",
+  "points_cles": [
+    "Multimodal conversational shopping agent with virtual try-on on macys.com and the app.",
+    "Google Gemini Enterprise for Customer Experience, catalog of 2.5 million SKUs.",
+    "Revenue per visit 4.75x in beta, thousands of customers per day two months after launch.",
+    "Evidence B, confirmed status: deployed to 100% of visitors, A/B measurement cited by Macy's."
+  ],
+  "resultats": [
+    { "metrique": "Revenue per visit (users vs non-users, in beta)" },
+    { "metrique": "Online spend of users vs non-users" },
+    { "metrique": "Customers per day, two months after launch" }
+  ],
+  "niveau_preuve": {
+    "justification": "Revenue-per-visit figure (4.75x) from an A/B test cited by Macy's, picked up in Google Cloud's official customer story (vendor) and corroborated by two established press outlets (Fortune, Retail Dive). This is not a financial-results figure, hence level B rather than A."
+  },
+  "stack_technique": [
+    { "detail": "Google Cloud agentic platform, integrated with Macy's existing systems; multimodal agent (text and image) with virtual try-on." }
+  ],
+  "fonctionnement_operationnel": {
+    "cadence": "Real time on every customer session; the agent responds as the conversation unfolds.",
+    "opere_par": "Macy's digital product and customer experience team, with support from Google Cloud on the Gemini Enterprise platform.",
+    "signal_pilote": "The context provided by the customer in the conversation (budget, occasion, color, style, size) crossed with the real-time product catalog. If the catalog feed or availability data is missing, the agent recommends wrong or out-of-stock SKUs and loses its credibility.",
+    "etapes": [
+      {
+        "etape": "Capture intent in natural language",
+        "detail": "The customer describes what they are looking for; the agent asks framing questions (occasion, budget, size, style) rather than returning a list of results.",
+        "acteur": "AI"
+      },
+      {
+        "etape": "Query the catalog and recommend",
+        "detail": "The agent crosses the intent with the catalog of more than 2.5 million SKUs to suggest products, brands and complete outfits (complete the look).",
+        "acteur": "AI"
+      },
+      {
+        "etape": "Offer the virtual try-on",
+        "detail": "On photo upload, the agent shows the product worn, with different backgrounds, including an in-store variant.",
+        "acteur": "AI"
+      },
+      {
+        "etape": "Supervise and adjust",
+        "detail": "The team refines the tone and guardrails (for example adjustments to account for the weather, a friendlier tone) and monitors answer quality; a warning indicates the AI can be wrong.",
+        "acteur": "product / customer experience team"
+      }
+    ]
+  },
+  "replication": {
+    "prerequis_data": [
+      "Structured product catalog, up to date and queryable in real time (attributes, visuals, availability, price)",
+      "Rich attribute reference set (occasion, style, color, size) so the agent reasons beyond the keyword",
+      "For virtual try-on: the ability to process uploaded images within a clear consent framework"
+    ],
+    "prerequis_orga": [
+      "A digital product team able to run an agent in production and iterate on tone and guardrails",
+      "A platform partnership (here Google Cloud) or an internal AI team for integration and evaluation",
+      "An A/B measurement setup to isolate the agent's effect on revenue per visit",
+      "Photo data governance (biometric in the EU) and compliant AI transparency"
+    ],
+    "stack_possible": [
+      "Google Gemini Enterprise for Customer Experience",
+      "Or a conversational agent built on a multimodal LLM connected to the catalog via RAG",
+      "Image-based virtual try-on component",
+      "Native or third-party A/B testing tooling"
+    ],
+    "equipe": "A product owner for the conversational experience, engineers for integration with the catalog and existing systems, a data profile for evaluation and A/B testing, a merchandising liaison for recommendation quality.",
+    "premiere_etape": "Verify that the product catalog is queryable in real time with attributes rich enough for an agent to reason by occasion and style, not just by keyword: that is what separates a real assistant from a search engine in disguise."
+  },
+  "statut_vivant": {
+    "note": "Deployed to 100% of web visitors and on the app, over a catalog of more than 2.5 million SKUs. Google Cloud's customer story confirms thousands of daily users two months after launch. The 4.75x is a beta figure; the deployment itself is at scale."
+  },
+  "transposable_ue": {
+    "note": "Virtual try-on relies on the upload of a customer photo, sensitive data that brings the processing close to biometric: in the EU, a legal basis and explicit GDPR consent are required, and the AI Act mandates transparency about the fact that the interlocutor is an AI. The agent already displays a warning (the AI can be wrong), a useful starting point for AI Act compliance."
+  }
+}

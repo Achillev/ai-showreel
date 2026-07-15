@@ -1,0 +1,108 @@
+{
+  "seo": {
+    "title": "The Trade Desk: Kokai AI copilot for media buying - -26% CPA (2025)",
+    "meta_description": "Kokai, The Trade Desk's DSP, optimizes media buying with AI: -26% CPA, -58% cost per reach, +94% CTR, 85% of clients migrated in 2025.",
+    "resume_citable": "In 2025, The Trade Desk's Kokai media-buying platform optimizes programmatic campaigns through its Koa AI: management cites -26% CPA, -58% cost per unique reach, and +94% CTR, with about 85% of clients using it by default in the third quarter of 2025, and a Specsavers campaign in the UK nearly halved its time to convert.",
+    "faq": [
+      {
+        "q": "What are Kokai and its Koa AI?",
+        "a": "Kokai is The Trade Desk's media-buying platform (DSP), released in 2023. Its in-house Koa AI serves as a copilot to the buyer: it scores impressions in real time, adjusts bids, and allocates budget across display, CTV, video, audio, and retail media, with the buyer keeping control of the strategy."
+      },
+      {
+        "q": "What results does The Trade Desk claim for Kokai?",
+        "a": "The official pages cite in aggregate -43% cost per unique reach, -24% cost per click, and -27% CPA. At the third-quarter 2025 results, management put forward -26% CPA, -58% cost per unique reach, and +94% CTR. A Specsavers campaign in the UK shows -43% cost per booking and a time to convert cut from 11 to 6 days."
+      },
+      {
+        "q": "Is the case still active?",
+        "a": "Yes. Kokai is The Trade Desk's core product. In the third quarter of 2025, about 85% of clients use it as their default platform, up from 75% the prior quarter, with the remaining clients' migration targeted for the end of 2025."
+      }
+    ]
+  },
+  "pattern": "AI copilot for optimizing programmatic campaigns (DSP)",
+  "etape_parcours": "consideration",
+  "objectif_business": "Lower acquisition cost and extend the useful reach of programmatic campaigns by handing an AI the optimization of bids, targeting, and cross-channel budget allocation, rather than driving it by hand.",
+  "description": "Kokai is The Trade Desk's media-buying platform (DSP), released in 2023 and widely deployed through 2024. Its in-house AI, Koa, serves as a copilot to the media buyer: it scores ad impressions in real time, adjusts bids, allocates budget across display, CTV, video, audio, and retail media, and surfaces optimization levers. The buyer (brand or agency) keeps control of the strategy and guardrails; the AI handles the fine-grained steering across billions of impressions. The Trade Desk made the migration of its clients to Kokai the core of its 2024-2025 roadmap and reports on it at every quarterly result. In the UK, Specsavers and its agency Manning Gottlieb OMD ran four full-funnel omnichannel campaigns in Kokai combining video, CTV, and display. Two sets of aggregate figures coexist: the brand's official pages cite 43% lower cost per unique reach, 24% lower cost per click, and 27% lower CPA; at the third-quarter 2025 results, management put forward more recent gains of 26% on CPA, 58% on cost per unique reach, and 94% on CTR. Both series come from The Trade Desk and cover different scopes and measurement periods.",
+  "points_cles": ["Koa AI copilot optimizes bids, targeting, and cross-channel budget in the Kokai DSP.", "Real-time impression scoring across display, CTV, video, audio, retail media.", "Management figures Q3 2025: -26% CPA, -58% cost per reach, +94% CTR.", "Evidence A, confirmed status, about 85% of clients on Kokai at end of 2025."],
+  "resultats": [
+    { "metrique": "Aggregate CPA (management figure, Q3 2025)" },
+    { "metrique": "Cost per unique reach (management figure, Q3 2025)" },
+    { "metrique": "Click-through rate (management figure, Q3 2025)" },
+    { "metrique": "Aggregate cost per unique reach (official pages)" },
+    { "metrique": "Clients on Kokai by default, Q3 2025 (75% in Q2)" },
+    { "metrique": "Specsavers (UK), cost per booking vs DSP benchmark" },
+    { "metrique": "Specsavers (UK) - time to convert" }
+  ],
+  "niveau_preuve": {
+    "justification": "The scaling and liveness rest on official financial results: Kokai adoption and revenue growth published in the 2025 quarterly results (primary source), aggregate performance gains put forward by management at the Q3 2025 earnings call, corroborated by an official quantified case study (Specsavers). Several consistent sources from The Trade Desk."
+  },
+  "fonctionnement_operationnel": {
+    "cadence": "Real time: bids and impression scoring are decided at the moment of each programmatic auction, with budget steering adjusted continuously over the campaign's duration.",
+    "opere_par": "The brand's media trading team or its agency, which sets the objectives and guardrails; the Koa AI then handles the fine-grained optimization.",
+    "signal_pilote": "The first-party conversion and reach signals tied to the campaign (site events, bookings, purchases). Without a clean, reliable conversion signal, optimization toward CPA loses its target and falls back on less useful proxies.",
+    "etapes": [
+      {
+        "etape": "Set objective and guardrails",
+        "detail": "The buyer sets the target KPI (CPA, reach, CTR), the budget, the channels, and the brand rules in Kokai.",
+        "acteur": "marketing / media trading (brand or agency)"
+      },
+      {
+        "etape": "Connect data and measurement",
+        "detail": "Connect first-party conversion signals, audiences, and where relevant retail media, so the AI optimizes toward the right event.",
+        "acteur": "data team / agency"
+      },
+      {
+        "etape": "Score and bid in real time",
+        "detail": "Koa scores each impression, adjusts the bid, and allocates budget across display, CTV, video, and audio at each opportunity.",
+        "acteur": "AI (Koa)"
+      },
+      {
+        "etape": "Read the KPIs and arbitrate",
+        "detail": "The team tracks CPA, reach, and CTR, adjusts the guardrails, and redirects media pressure toward what converts.",
+        "acteur": "media trading / marketing"
+      }
+    ]
+  },
+  "replication": {
+    "prerequis_data": [
+      "A clean, reliable first-party conversion signal (site event, lead, purchase) to optimize on",
+      "Activatable audiences or segments and a coherent reach measurement across channels",
+      "A legal basis and GDPR consent for data collection and activation, a third-party cost key or an identifier like UID2 if the third-party cookie is missing"
+    ],
+    "prerequis_orga": [
+      "A programmatic budget large enough for AI optimization to have material to learn from",
+      "An in-house media trading team or an agency able to set objectives and guardrails and then read the KPIs",
+      "Marketing / data agreement on the definition of the target conversion and the brand rules"
+    ],
+    "stack_possible": [
+      "The Trade Desk Kokai with Koa AI",
+      "Another DSP with an AI optimization layer (equivalent approach)",
+      "A cross-channel conversion and reach measurement component"
+    ],
+    "playbook": [
+      {
+        "action": "Choose the conversion event to optimize and verify its tracking is clean",
+        "livrable": "A reliable conversion signal connected to the platform"
+      },
+      {
+        "action": "Connect audiences, measurement, and cross-channel inventory in the DSP",
+        "livrable": "An omnichannel campaign set up with objectives and guardrails"
+      },
+      {
+        "action": "Let the AI score and bid, framing budget and brand rules",
+        "livrable": "Real-time optimization toward the target KPI"
+      },
+      {
+        "action": "Read CPA, reach, and CTR by channel and reallocate media pressure",
+        "livrable": "A reading loop linking spend, conversions, and reach"
+      }
+    ],
+    "equipe": "A media trading lead or a programmatic agency, a data profile to connect the conversion signals and the measurement, a brand marketing contact for the guardrails and message consistency.",
+    "premiere_etape": "Verify that the target conversion event is correctly tracked and usable: that signal drives the whole AI optimization, and without it the CPA gains do not materialize."
+  },
+  "statut_vivant": {
+    "note": "Kokai is The Trade Desk's core product and the through-line of its financial communication. In Q3 2025 (November 2025), about 85% of clients use it as their default platform, up from 75% in Q2, with the migration of the remaining clients targeted for year-end."
+  },
+  "transposable_ue": {
+    "note": "Already operated in the EU and the UK (Specsavers, Danone campaigns). Kokai drives media buying from first-party audience and conversion signals: use assumes a GDPR legal basis and compliant consent for data collection and activation, all the more so as The Trade Desk pushes its UID2 identifier as an alternative to the third-party cookie."
+  }
+}

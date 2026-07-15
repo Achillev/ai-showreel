@@ -1,0 +1,129 @@
+{
+  "seo": {
+    "title": "Walgreens: mass personalization on myWalgreens - 110 million members targeted daily (2024)",
+    "meta_description": "Walgreens personalizes offers, search, and banners for more than 110 million myWalgreens members daily, via an Adobe activation layer and AI-driven steering.",
+    "resume_citable": "Walgreens serves personalized offers daily to more than 110 million myWalgreens members, via a personalization engine on an Adobe activation layer that tailors search, banners, and offers to each customer's profile.",
+    "faq": [
+      {
+        "q": "How many customers does Walgreens personalize for?",
+        "a": "More than 110 million members of the myWalgreens program receive personalized offers daily, according to a May 2024 press release."
+      },
+      {
+        "q": "What technology does the personalization rely on?",
+        "a": "On a loyalty customer profile activated through an Adobe layer, which personalizes search results, marketing banners, and myWalgreens carousel offers, with regional contextual alerts."
+      }
+    ]
+  },
+  "pattern": "mass personalization of offers on a loyalty base via CDP and activation",
+  "etape_parcours": "loyalty",
+  "objectif_business": "Serve more than 110 million myWalgreens program members the most relevant offer, content, and recommendations on the app and site, to convert more clicks into purchases and strengthen loyalty across a massive customer base.",
+  "description": "The myWalgreens loyalty program and app feed a personalization engine that pushes offers, content, and recommendations tailored to each customer's profile. On the Adobe activation layer, Walgreens personalizes search results, marketing banners, and myWalgreens carousel offers, with regional contextual alerts (flu peak, pollen). According to a May 2024 press release, more than 110 million members receive personalized offers every day. The CIO describes an AI embedded in the customer relationship to serve the best promotion and the best content, including support journeys for patients with chronic conditions.",
+  "resultats": [
+    {
+      "metrique": "Members receiving personalized offers every day"
+    },
+    {
+      "metrique": "Role of AI in the personalization"
+    },
+    {
+      "metrique": "Walgreens Boots Alliance customer scope"
+    }
+  ],
+  "niveau_preuve": {
+    "justification": "The scale of the personalization (more than 110 million members receiving personalized offers every day) is asserted by an official Walgreens press release, and the Adobe setup plus AI steering are documented by a case study and by tech press naming the leads. No independent quantified impact result (conversion), hence C."
+  },
+  "fonctionnement_operationnel": {
+    "cadence": "Real time on app and site open, with offers refreshed as purchase behavior evolves",
+    "opere_par": "Walgreens marketing and loyalty team, with the activation technology partner (Adobe)",
+    "signal_pilote": "The myWalgreens loyalty ID that links purchases to a person, plus browsing behavior and regional signals. Without this ID, personalization falls back to generic per-store offers.",
+    "etapes": [
+      {
+        "etape": "Profile building",
+        "detail": "Purchases, browsing, and myWalgreens program membership feed a customer profile.",
+        "acteur": "Data team"
+      },
+      {
+        "etape": "Offer selection",
+        "detail": "The engine picks the most relevant offers, recommendations, and banners for each profile.",
+        "acteur": "AI"
+      },
+      {
+        "etape": "Activation",
+        "detail": "The Adobe layer pushes the personalized content onto the app, the site, and the myWalgreens carousel.",
+        "acteur": "Marketing and technology partner"
+      },
+      {
+        "etape": "Contextual alerts",
+        "detail": "Regional alerts (flu, pollen) trigger tailored offers and messages.",
+        "acteur": "AI"
+      },
+      {
+        "etape": "Measurement and loop",
+        "detail": "Clicks and purchases flow back to the profile and refine the next offers.",
+        "acteur": "Data and marketing team"
+      }
+    ]
+  },
+  "replication": {
+    "prerequis_data": [
+      "loyalty program identifying each customer",
+      "first-party purchase and browsing history",
+      "contextual signals (region, seasonality)"
+    ],
+    "prerequis_orga": [
+      "CRM and loyalty team",
+      "activation partner or martech stack",
+      "offer measurement loop"
+    ],
+    "stack_possible": [
+      "CDP",
+      "recommendation or personalization engine",
+      "activation platform (Adobe, Salesforce, custom)",
+      "mobile app and site"
+    ],
+    "premiere_etape": "Unify loyalty members' purchases into a profile usable by a personalization activation layer.",
+    "playbook": [
+      {
+        "action": "Unify purchases and browsing under the loyalty ID into a usable customer profile.",
+        "livrable": "Unified profile per member, tested on a sample."
+      },
+      {
+        "action": "Connect the activation layer to a first placement (offer carousel).",
+        "livrable": "Personalized offers live on a single placement."
+      },
+      {
+        "action": "Compare personalized vs generic via A/B test.",
+        "livrable": "Click-to-purchase conversion reading, personalized against control."
+      },
+      {
+        "action": "Extend to the other placements (search, banners) and add the regional contextual alerts.",
+        "livrable": "Multi-placement personalization in production."
+      },
+      {
+        "action": "Close the continuous measurement loop and the offer governance (eligibility, commercial pressure).",
+        "livrable": "Offer dashboard + documented eligibility rules."
+      }
+    ],
+    "equipe": "1 CRM/loyalty PM + 1-2 data engineers + 1 data scientist (offer engine) + marketing team for the offer rules"
+  },
+  "statut_vivant": {
+    "note": "Loyalty base of more than 110 million members confirmed mid-2024, personalization described as central by the CIO. The myWalgreens program remains active. To be re-verified given the restructurings underway at Walgreens Boots Alliance."
+  },
+  "transposable_ue": {
+    "note": "Offer personalization relies on a loyalty customer profile and purchase behavior data, sometimes adjacent to health (vaccines, pharmacy products). In the EU, marketing profiling is subject to a legal basis and GDPR consent, and health-related contextual alerts call for vigilance on Article 9. The pattern (CDP plus activation) transposes; the scope of usable data is narrower."
+  },
+  "stack_technique": [
+    {
+      "detail": "Activation layer that personalizes search results, marketing banners, and myWalgreens carousel offers."
+    },
+    {
+      "detail": "In-house models that pick the best offer and best content per profile; the exact architecture is not published."
+    },
+    {
+      "detail": "ID that links purchases, browsing, and profile for more than 110 million members; without it, back to generic per-store offers."
+    },
+    {
+      "detail": "Delivery surfaces for personalized offers and regional contextual alerts (flu, pollen)."
+    }
+  ]
+}

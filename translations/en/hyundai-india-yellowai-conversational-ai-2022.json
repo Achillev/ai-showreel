@@ -1,0 +1,117 @@
+{
+  "seo": {
+    "title": "Hyundai Motor India: omnichannel conversational agent (Yellow.ai) - 1000+ sales and 50% conversion (2022)",
+    "meta_description": "Hyundai Motor India's omnichannel conversational agent (Yellow.ai) generated more than 1000 vehicle sales, 50% lead-to-retail conversion, and more than 1 million impressions.",
+    "resume_citable": "Hyundai Motor India's omnichannel conversational agent (Yellow.ai, on web, WhatsApp, Facebook, and Google Business Messages) contributed to more than 1000 vehicle sales, 50% lead-to-retail conversion, and more than one million impressions across 14 outbound campaigns.",
+    "faq": [
+      {
+        "q": "What business results did Hyundai India get with its conversational agent?",
+        "a": "More than 1000 vehicle sales generated, 50% lead-to-retail conversion, and more than one million impressions across 14 outbound campaigns, according to the Yellow.ai case study."
+      },
+      {
+        "q": "On which channels is the agent present?",
+        "a": "Website, WhatsApp, Facebook, and Google Business Messages, with an outbound campaign module on WhatsApp and a helpdesk for human handoff."
+      }
+    ]
+  },
+  "pattern": "conversational commerce and lead-gen agent",
+  "etape_parcours": "consideration",
+  "objectif_business": "Turn online interest into test drives and sales: let prospects explore models, choose a trim, and book a test drive via a conversational agent available on the channels where Indian buyers are, and feed personalized outbound campaigns.",
+  "description": "Hyundai Motor India deployed with Yellow.ai an omnichannel conversational agent (website, WhatsApp, Facebook, Google Business Messages) that lets the customer explore the lineup, choose a trim, and book a test drive. The Engage module serves personalized WhatsApp campaigns; the helpdesk module equips human agents for service. The setup combines automated purchase journeys and outbound campaigns measured through real-time dashboards. On the published results for this period: sales generated, lead-to-retail conversion, and campaign impression volume.",
+  "points_cles": [
+    "Omnichannel conversational commerce and lead-gen agent (exploration, trim, test drive).",
+    "Yellow.ai (DynamicNLP, Engage module, helpdesk) on web, WhatsApp, Facebook, and GBM.",
+    "1000+ vehicle sales, 50% lead-to-retail conversion, 1 million+ impressions.",
+    "Evidence level B, living status mixed signals."
+  ],
+  "resultats": [
+    { "metrique": "Vehicle sales generated via the agent (automated journeys + outbound campaigns)" },
+    { "metrique": "Lead-to-retail conversion" },
+    { "metrique": "Customer impressions (14 outbound campaigns)" },
+    { "metrique": "Average response time (helpdesk)" }
+  ],
+  "niveau_preuve": {
+    "justification": "Quantified case study from the vendor Yellow.ai (interested party) with sales and conversion metrics, corroborated by Indian press confirming the deployment of a Hyundai India AI chatbot on its online sales site. Data from the 2022 period."
+  },
+  "stack_technique": [
+    { "detail": "Omnichannel conversational AI platform that carries the commerce agent on the website, WhatsApp, Facebook, and Google Business Messages" },
+    { "detail": "The platform's NLP engine that understands prospect requests without intent-by-intent training" },
+    { "detail": "Module for personalized outbound campaigns on WhatsApp, 14 campaigns and more than one million impressions over the period" },
+    { "detail": "Main conversion and campaign channel in India, operated through the platform" },
+    { "detail": "Equips human agents to take over on service, with an average response time of 22 seconds" }
+  ],
+  "fonctionnement_operationnel": {
+    "cadence": "Real time on inbound channels; scheduled outbound campaigns (monthly) on WhatsApp.",
+    "opere_par": "Hyundai Motor India's digital marketing and CRM team, on the Yellow.ai platform, with human agents as backup via the helpdesk.",
+    "signal_pilote": "Conversation behavior and conversion events (test drive booked, trim chosen). Without opt-in and clean segmentation, the WhatsApp outbound campaigns lose relevance and deliverability.",
+    "etapes": [
+      {
+        "etape": "Entering the conversation",
+        "detail": "The prospect engages the agent on the site, WhatsApp, Facebook, or Google Business Messages.",
+        "acteur": "customer"
+      },
+      {
+        "etape": "Qualification and configuration",
+        "detail": "The agent helps explore the lineup, choose a trim, and offers to book a test drive.",
+        "acteur": "AI"
+      },
+      {
+        "etape": "Outbound campaigns",
+        "detail": "The Engage module sends personalized WhatsApp campaigns to targeted segments.",
+        "acteur": "marketing"
+      },
+      {
+        "etape": "Human handoff and service",
+        "detail": "The helpdesk lets agents take over for personalized resolutions.",
+        "acteur": "customer service"
+      },
+      {
+        "etape": "Measurement",
+        "detail": "Real-time dashboards track conversions, sales, and campaign performance.",
+        "acteur": "data team"
+      }
+    ]
+  },
+  "replication": {
+    "prerequis_data": [
+      "product catalog and trims",
+      "prospect base with consent",
+      "conversion events (test drives, sales)"
+    ],
+    "prerequis_orga": [
+      "digital marketing and CRM team",
+      "handoff process to dealerships and service"
+    ],
+    "stack_possible": [
+      "Yellow.ai or a conversational agent platform",
+      "WhatsApp Business API",
+      "CRM for lead capture"
+    ],
+    "premiere_etape": "Connect a conversational agent to the site and WhatsApp with a test-drive booking journey tied to the CRM.",
+    "playbook": [
+      {
+        "action": "Frame the target journey (lineup exploration, trim choice, test-drive booking) and prepare the product catalog and the opt-in prospect base.",
+        "livrable": "Specified conversational journey and a ready opt-in base"
+      },
+      {
+        "action": "Configure the agent on the conversational platform, deploy it on the site and WhatsApp, and connect test-drive booking to the CRM and dealerships.",
+        "livrable": "Agent in production on two channels with leads flowing to the CRM"
+      },
+      {
+        "action": "Launch the first WhatsApp outbound campaigns on opt-in target segments and activate the helpdesk for human handoff.",
+        "livrable": "Active campaigns and an escalation circuit to agents in place"
+      },
+      {
+        "action": "Track lead-to-retail conversion, booked test drives, and campaign performance in the dashboards, and adjust segments and journey.",
+        "livrable": "Conversion dashboard and optimization plan"
+      }
+    ],
+    "equipe": "1 CRM / digital project lead + 1 conversation designer (or the platform's editor) + dealership and customer service backup"
+  },
+  "statut_vivant": {
+    "note": "The deployment of a Hyundai India AI chatbot is attested by the press; the quantified metrics come from a vendor case study of the 2022 period, without a recent quantified confirmation."
+  },
+  "transposable_ue": {
+    "note": "Relies heavily on WhatsApp as a conversion channel, dominant in India. In the EU, marketing opt-in consent (GDPR) is required for outbound campaigns and the channel mix needs to be adapted."
+  }
+}

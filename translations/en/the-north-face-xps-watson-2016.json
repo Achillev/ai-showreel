@@ -1,0 +1,102 @@
+{
+  "seo": {
+    "title": "The North Face: conversational shopping assistant (IBM Watson XPS) - 60% click-through to recos (pilot)",
+    "meta_description": "In 2015-2016, The North Face launched XPS, a conversational shopping assistant on IBM Watson that recommended jackets by use case. Pilot: 60% click-through to recos, 40% more time on site.",
+    "resume_citable": "As early as 2015, The North Face tested XPS, a conversational shopping assistant on IBM Watson that recommended products by use case and weather; the pilot reached 60% click-through to recommendations and 40% more time on site.",
+    "faq": [
+      {
+        "q": "Is The North Face's XPS assistant still in service?",
+        "a": "No, it no longer appears in production. Fluid's XPS unit was acquired by IBM in late 2016. It is a founding case of conversational advice, now carried forward by LLMs."
+      },
+      {
+        "q": "What did it personalize the recommendation on?",
+        "a": "On the request expressed in natural language (activity, place, season), crossed with estimates of conditions such as temperature and wind."
+      }
+    ]
+  },
+  "pattern": "Conversational shopping assistant that personalizes the product recommendation through dialogue (use case, weather, activity)",
+  "etape_parcours": "consideration -> purchase",
+  "objectif_business": "Reproduce online the advice of a specialist salesperson: ask a few questions about the intended use and surface the right products, rather than leaving the customer to filter a catalog alone.",
+  "description": "In 2015-2016, The North Face put XPS (Expert Personal Shopper) online, a conversational shopping assistant built by the agency Fluid and powered by IBM Watson. The customer describes what they are looking for in natural language, for example a jacket for a hike at a given place and season; the system interprets the request, estimates the conditions (temperature, wind), and ranks the products accordingly. Launched in beta in December 2015 after a one-month pilot, the tool was at first limited to jackets. On the pilot, the average session lasted two minutes and the click-through rate to recommendations reached 60%. According to later accounts, customers who used the assistant spent 40% more time on the site and 75% said they would use it again. In November 2016, IBM acquired Fluid's XPS unit. The original setup no longer appears in service today; the pattern itself has become widespread with LLM-based conversational assistants.",
+  "resultats": [
+    { "metrique": "Click-through rate to recommendations (pilot)" },
+    { "metrique": "Time on site with the assistant" },
+    { "metrique": "Intent to reuse" }
+  ],
+  "niveau_preuve": {
+    "justification": "Official launch release (pilot figures: 60% click-through, 2-minute sessions) and consistent third-party analyst accounts for time on site and intent to reuse. No financial result; an old setup whose liveness is no longer confirmed."
+  },
+  "stack_technique": [
+    { "detail": "Cognitive technology (NLP) that interpreted the request in natural language and estimated the context (temperature, wind) for the place and season." },
+    { "detail": "Conversational shopping assistant designed by the agency Fluid on Watson; the XPS unit was acquired by IBM in November 2016." },
+    { "detail": "Integration point for the assistant, at first limited to the jackets category." }
+  ],
+  "fonctionnement_operationnel": {
+    "cadence": "Real time, on the customer's request during their shopping session.",
+    "opere_par": "The brand's e-commerce / digital team, with the assistant provided by a technology partner (here Fluid on IBM Watson).",
+    "signal_pilote": "The request expressed by the customer in natural language, crossed with context data (place, season, weather). Without a reliable mapping between intent and product attributes, the assistant recommends off target.",
+    "etapes": [
+      {
+        "etape": "Collect the request",
+        "detail": "The customer states their need in natural language (activity, place, season).",
+        "acteur": "Customer"
+      },
+      {
+        "etape": "Interpret and contextualize",
+        "detail": "NLP extracts the intent and estimates the conditions (temperature, wind) for the place and period.",
+        "acteur": "AI / conversational assistant"
+      },
+      {
+        "etape": "Rank the products",
+        "detail": "Items are ordered by fit to the stated need and context, then presented to the customer.",
+        "acteur": "AI / conversational assistant"
+      },
+      {
+        "etape": "Measure engagement",
+        "detail": "Time on site, clicks to recommendations, and intent to reuse serve to judge the tool.",
+        "acteur": "E-commerce team"
+      }
+    ]
+  },
+  "replication": {
+    "prerequis_data": [
+      "A catalog with usable use-case attributes (activity, season, conditions)",
+      "A mapping between customer intents and product attributes",
+      "An external context source if relevant (weather, location)"
+    ],
+    "prerequis_orga": [
+      "A framed conversational component (guardrails, transparency)",
+      "An e-commerce team to maintain the intent-to-product mapping"
+    ],
+    "stack_possible": [
+      "An LLM-based conversational assistant (Azure OpenAI, Google, or equivalent) connected to the catalog",
+      "A contextual recommendation engine behind the assistant"
+    ],
+    "premiere_etape": "Target a category with a high need for advice (outdoor gear, tech), connect a conversational assistant to the catalog, and measure click-through to recos and conversion against the classic filtered path.",
+    "playbook": [
+      {
+        "action": "Pick a category with a high need for advice and map the catalog's use-case attributes (activity, season, conditions).",
+        "livrable": "Mapping of customer intent to product attributes."
+      },
+      {
+        "action": "Connect a conversational assistant (on an LLM today) to the category catalog, with guardrails and transparency about its AI nature.",
+        "livrable": "Assistant in pre-production on the pilot category."
+      },
+      {
+        "action": "Open in beta on part of the traffic and measure click-through to recommendations, time on site, and conversion against the classic filtered path.",
+        "livrable": "Controlled-test results."
+      },
+      {
+        "action": "Iterate on the intent-to-product mapping from real conversations and decide on extending to other categories.",
+        "livrable": "Review and extension roadmap."
+      }
+    ],
+    "equipe": "1 e-commerce PM + 1-2 devs + 1 catalog owner to maintain the intent-to-product mapping."
+  },
+  "statut_vivant": {
+    "note": "The original XPS setup (Watson plus Fluid) appears to have been withdrawn long ago; Fluid's XPS unit was acquired by IBM in late 2016. The pattern (conversational shopping assistant) is by contrast very much alive, now carried by LLMs. Read this case as a founding one, not a feature in production."
+  },
+  "transposable_ue": {
+    "note": "A conversational shopping assistant on an e-commerce site, transposable to the EU. A 2025 equivalent would rely on LLMs and fall under the AI Act's transparency obligations for generative AI. Note: the original setup (Watson XPS) is old and no longer appears in service."
+  }
+}

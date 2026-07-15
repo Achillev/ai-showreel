@@ -1,0 +1,110 @@
+{
+  "seo": {
+    "title": "Kingfisher (B&Q, Castorama): AI recommendations and genAI DIY assistant - about 80m GBP in sales (2023)",
+    "meta_description": "At Kingfisher, AI recommendations and the Hello Casto DIY assistant generated about 80m GBP in sales in H1 2025/26, up about 37% year over year.",
+    "resume_citable": "At Kingfisher, AI-driven recommendations and personalization generated about 80m GBP in sales in the first half of 2025/26, up about 37% year over year, and the Hello Casto DIY assistant has about 60,000 users per month.",
+    "faq": [
+      {
+        "q": "What did Kingfisher deploy in AI?",
+        "a": "Personalized recommendation engines and conversational genAI DIY assistants (Hello Casto, Hello B&Q), orchestrated by its in-house framework Athena."
+      },
+      {
+        "q": "What is the measured result?",
+        "a": "About 80m GBP in sales attributed to AI recommendation and personalization in H1 2025/26, up about 37% year over year, according to the group's half-year results."
+      }
+    ]
+  },
+  "pattern": "personalized recommendations plus a genAI conversational DIY assistant",
+  "etape_parcours": "Consideration",
+  "objectif_business": "Grow online sales by pushing the right product recommendations and answering DIY questions in natural language, in order to turn a technical catalog into a guided journey.",
+  "description": "Kingfisher built Athena, an in-house orchestration framework that connects several language models to its retail brands. On this foundation, the group launched Hello Casto, its first conversational genAI DIY assistant, on Castorama France on November 14, 2023, then Hello B&Q in the United Kingdom. The customer asks a DIY question in natural language and receives step-by-step advice and suitable products. In parallel, recommendation and personalization engines feed the product pages. According to the group's 2025/26 half-year results, AI-driven recommendations and personalization generated about 80 million pounds in sales in the first half, up about 37% year over year. Hello Casto has helped about 350,000 customers and has on the order of 60,000 users per month.",
+  "points_cles": ["Personalized recommendations and the conversational DIY assistants Hello Casto and Hello B&Q.", "In-house Athena orchestration on Google Cloud Vertex AI and the Nucleus data lake.", "About 80m GBP in AI sales in H1 2025/26, +37% year over year.", "Hello Casto has about 60,000 monthly users, evidence level A confirmed."],
+  "resultats": [
+    { "metrique": "AI recommendation and personalization sales in H1 2025/26, +37% year over year" },
+    { "metrique": "Share of e-commerce sales driven by recommendation algorithms (B&Q)" },
+    { "metrique": "Monthly users of the Hello Casto assistant" }
+  ],
+  "niveau_preuve": {
+    "justification": "The central figure, about 80m GBP in sales up about 37% year over year, comes from Kingfisher's 2025/26 half-year results (financial document from the brand). It is corroborated by specialized press (Digiday on Hello Casto users) and by the Google Cloud partnership announcement. Its presence in the financial results puts it at A."
+  },
+  "stack_technique": [
+    { "detail": "Kingfisher's orchestration framework that connects several language models to the group's retail brands" },
+    { "detail": "AI foundation of the Google Cloud partnership, including Vertex AI Search for Commerce for search and assistants" },
+    { "detail": "group data lake: browsing and purchase behavior, catalog, foundation for the recommendations" },
+    { "detail": "personalized recommendations on product pages and conversational genAI DIY assistants per brand" }
+  ],
+  "fonctionnement_operationnel": {
+    "cadence": "Real time for the assistant and the recommendations; the models are connected and orchestrated through Athena.",
+    "opere_par": "Kingfisher's group data and AI team, which runs Athena, the Nucleus data lake, and the recommendation models.",
+    "signal_pilote": "The browsing and purchase behavior that feeds the recommendations, and the quality of the catalog for the assistant. Without clean browsing data or a structured catalog, recommendation loses relevance and the assistant answers off target.",
+    "etapes": [
+      {
+        "etape": "Question or browsing",
+        "detail": "The customer asks a DIY question to Hello Casto or Hello B&Q, or browses the product pages.",
+        "acteur": "client"
+      },
+      {
+        "etape": "Orchestration",
+        "detail": "Athena routes the request to the right model and composes advice and recommendations.",
+        "acteur": "AI"
+      },
+      {
+        "etape": "Personalized recommendation",
+        "detail": "The recommendation engines rank products according to the customer's behavior and context.",
+        "acteur": "AI"
+      },
+      {
+        "etape": "Measurement and attribution",
+        "detail": "The teams track sales attributed to recommendation and personalization and arbitrate between the models.",
+        "acteur": "data team"
+      }
+    ]
+  },
+  "replication": {
+    "prerequis_data": [
+      "Unified data lake of browsing and purchase behavior",
+      "Structured product catalog for the assistant and recommendation",
+      "Attribution of sales to recommendations"
+    ],
+    "prerequis_orga": [
+      "Multi-model orchestration framework",
+      "Group data team able to serve several retail brands",
+      "AI transparency rule"
+    ],
+    "stack_possible": [
+      "LLM orchestration layer like Athena",
+      "Behavior-based recommendation engine",
+      "Commerce semantic search"
+    ],
+    "premiere_etape": "Unify browsing data and the catalog, connect a recommendation engine, then expose a conversational assistant on a pilot brand.",
+    "playbook": [
+      {
+        "action": "Unify browsing data and the product catalog in the data lake",
+        "livrable": "Structured catalog + queryable browsing data"
+      },
+      {
+        "action": "Connect a recommendation engine to the product pages with sales attribution",
+        "livrable": "Personalized recommendation in production on a pilot brand"
+      },
+      {
+        "action": "Build the conversational assistant on the catalog (step-by-step advice + products)",
+        "livrable": "Assistant in beta on a scope of DIY questions"
+      },
+      {
+        "action": "Launch the assistant on the pilot brand and measure usage and attributed sales",
+        "livrable": "Monthly users + sales attributed to recommendation and the assistant"
+      },
+      {
+        "action": "Pool through a multi-model orchestration layer and extend to the other brands",
+        "livrable": "Common framework like Athena serving several retail brands"
+      }
+    ],
+    "equipe": "1 PM + 2 ML/data engineers + 1 catalog lead + e-commerce liaison per brand"
+  },
+  "statut_vivant": {
+    "note": "Google Cloud partnership announced in March 2026 to extend the AI assistants and search across B&Q, Castorama, and Brico Depot; the AI sales figures appear in the 2025/26 half-year results."
+  },
+  "transposable_ue": {
+    "note": "Already deployed in the EU (Castorama France and Poland, Brico Depot France). The conversational DIY assistants and recommendation personalization run on Kingfisher first-party data. In the EU, the AI Act requires transparency about the use of AI and GDPR governs personalization based on browsing behavior."
+  }
+}

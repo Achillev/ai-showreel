@@ -1,0 +1,125 @@
+{
+  "seo": {
+    "title": "Sephora Virtual Artist: virtual AR try-on - hundreds of millions of shades tried on (2016-2018)",
+    "meta_description": "Sephora Virtual Artist, built with ModiFace, has let customers virtually try on hundreds of millions of shade combinations since 2016.",
+    "resume_citable": "Sephora Virtual Artist, the AR try-on built with ModiFace, has let customers try on hundreds of millions of shade combinations since 2016 (more than 200 million shades and 8.5 million visits cumulatively by 2018).",
+    "faq": [
+      {
+        "q": "Who built Sephora Virtual Artist?",
+        "a": "The feature was developed by the Sephora Innovation Lab with the AR provider ModiFace, launched in 2016."
+      },
+      {
+        "q": "What usage volume did it reach?",
+        "a": "Hundreds of millions of shade combinations tried on since 2016, including more than 200 million shades and 8.5 million visits cumulatively by 2018 according to the press."
+      }
+    ]
+  },
+  "pattern": "virtual AR try-on (synthetic makeup rendering on the face)",
+  "etape_parcours": "consideration",
+  "objectif_business": "Have thousands of shades tried on virtually to remove color doubt, increase conversion, and reduce returns on makeup.",
+  "points_cles": [
+    "Virtual AR makeup try-on via the camera (app, web, in-store kiosk).",
+    "ModiFace engine: facial mapping, skin tone analysis, and real-time rendering on a catalog of calibrated shades.",
+    "Hundreds of millions of shades tried on since 2016 (200M shades, 8.5M visits by 2018).",
+    "Evidence level B, confirmed status."
+  ],
+  "description": "Sephora Virtual Artist, launched in 2016 and built with ModiFace, lets customers virtually try on thousands of makeup products from the app or the web via the camera. The system does facial mapping and skin tone analysis to apply a realistic rendering (lips, eyes, cheeks), offers expert looks and tutorials, and a before/after split-screen view. The feature is also available in store. Sephora operates more than 2,300 stores in 33 countries and 14,000 products from 200 brands.",
+  "resultats": [
+    {
+      "metrique": "Shade combinations tried on (since 2016)"
+    },
+    {
+      "metrique": "Retail footprint supporting the try-on, in 33 countries"
+    },
+    {
+      "metrique": "Shades tried on by 2018, and 8.5M visits"
+    }
+  ],
+  "niveau_preuve": {
+    "justification": "Usage figure cited in an official Sephora release (primary source, VP Innovation) and confirmed by the press. Multiple aligned sources on the same feature."
+  },
+  "stack_technique": [
+    {
+      "detail": "AR try-on engine: facial mapping, skin tone analysis, and real-time makeup rendering (lips, eyes, cheeks)"
+    },
+    {
+      "detail": "in-house try-on surfaces: mobile app, web, and in-store kiosks"
+    },
+    {
+      "detail": "product reference set (14,000 items, 200 brands) whose shades are calibrated so the AR rendering matches the real product"
+    }
+  ],
+  "fonctionnement_operationnel": {
+    "cadence": "Real time (try-on when the camera opens), available continuously",
+    "opere_par": "Sephora Innovation Lab for the feature, with ModiFace as the provider of the AR engine",
+    "signal_pilote": "The match between the product's real shade and the AR rendering. A poorly calibrated shade distorts the try-on and can generate returns instead of reducing them.",
+    "etapes": [
+      {
+        "etape": "Select a product or look",
+        "detail": "The user picks a shade, an expert look, or a tutorial in the app.",
+        "acteur": "customer"
+      },
+      {
+        "etape": "Facial mapping",
+        "detail": "The engine maps the face and analyzes skin tone via the camera.",
+        "acteur": "AI (ModiFace)"
+      },
+      {
+        "etape": "Rendering and comparison",
+        "detail": "The product is applied in real time; the split screen shows before/after.",
+        "acteur": "AI (ModiFace)"
+      },
+      {
+        "etape": "Purchase",
+        "detail": "The user adds the virtually validated items to the cart.",
+        "acteur": "customer"
+      },
+      {
+        "etape": "AR catalog update",
+        "detail": "Sephora and ModiFace add new items and recalibrate the renderings.",
+        "acteur": "Sephora / ModiFace team"
+      }
+    ]
+  },
+  "replication": {
+    "prerequis_data": [
+      "makeup product reference set with calibrated shades",
+      "visual assets of the looks"
+    ],
+    "prerequis_orga": [
+      "app/e-commerce integration",
+      "continuous calibration process"
+    ],
+    "stack_possible": [
+      "ModiFace",
+      "Perfect Corp (YouCam)",
+      "Banuba"
+    ],
+    "premiere_etape": "Enable AR try-on on the highest-traffic makeup categories and calibrate the best-seller shades.",
+    "playbook": [
+      {
+        "action": "Choose the AR provider (ModiFace, Perfect Corp, Banuba) on rendering realism and product coverage",
+        "livrable": "Provider selected and contract signed"
+      },
+      {
+        "action": "Calibrate the best-seller shades: match the real shade and the AR rendering on the highest-traffic items",
+        "livrable": "AR catalog calibrated on the top sellers"
+      },
+      {
+        "action": "Integrate the SDK into makeup product pages, with explicit camera consent and non-retention of face images (GDPR)",
+        "livrable": "Live try-on on a pilot scope"
+      },
+      {
+        "action": "Track shades tried on, conversion, and returns against pages without try-on, then extend to the other categories",
+        "livrable": "Quantified readout, extension plan, and continuous calibration process for new items"
+      }
+    ],
+    "equipe": "1 e-commerce PM + 1 mobile/front-end dev + 1 catalog owner for shade calibration"
+  },
+  "statut_vivant": {
+    "note": "Virtual Artist remains a standard feature of the Sephora ecosystem; AR try-on has become the foundation of the online beauty experience."
+  },
+  "transposable_ue": {
+    "note": "AR try-on via the camera: the rendering can run client-side, which limits biometric data storage. Plan for explicit camera consent and non-retention of face images (GDPR)."
+  }
+}

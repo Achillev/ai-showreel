@@ -1,0 +1,119 @@
+{
+  "seo": {
+    "title": "Pinterest: Performance+ AI ad suite - 30% of lower-funnel revenue automated (2025)",
+    "meta_description": "Performance+, Pinterest's AI ad suite: automated bidding and acquisition. +64% net-new conversions, +28% ROAS, 30% of lower-funnel revenue.",
+    "resume_citable": "In 2025, Pinterest's Performance+ AI ad suite carried about 30% of lower-funnel revenue, with +64% new-customer conversions via New Customer Acquisition and +28% ROAS for SMB advertisers, built on the in-house recommendation models OmniSage and PinFM.",
+    "faq": [
+      {
+        "q": "What is Pinterest Performance+?",
+        "a": "An ad suite in which Pinterest's algorithm manages a campaign's bidding, targeting, and budget. It includes ROAS bidding, which optimizes on conversion value, and New Customer Acquisition, which prioritizes net-new buyers from a list of existing customers."
+      },
+      {
+        "q": "Which AI models does Pinterest use?",
+        "a": "In-house models: OmniSage, trained on the taste graph to recommend and rank content (+450 basis points of sitewide saves), and PinFM, a foundational ranking model based on user history (+240 basis points of saves)."
+      },
+      {
+        "q": "What is the evidence of scale?",
+        "a": "The results are cited by the CEO on the Q3 and Q4 2025 earnings calls: about 30% of lower-funnel revenue flows through Performance+ one year after the October 2024 global launch."
+      }
+    ]
+  },
+  "pattern": "full-funnel AI ad suite (automated ROAS bidding, new-customer prioritization, budgets and targeting managed by the algorithm)",
+  "etape_parcours": "purchase",
+  "objectif_business": "Route a growing share of Pinterest's lower-funnel ad revenue through an AI-automated ad suite, improving ROAS and new-customer acquisition for advertisers while strengthening the engagement that feeds monetizable inventory.",
+  "description": "Pinterest built Performance+, an ad suite where the algorithm takes over a campaign's bidding, targeting, and budget. An advertiser picks an objective, lets the system optimize delivery, and can turn on two key building blocks: ROAS bidding, which optimizes on conversion value rather than plain volume, and New Customer Acquisition, which uses an advertiser-supplied list of existing customers to prioritize delivery toward net-new buyers. Underneath this ad layer run Pinterest's in-house recommendation models. OmniSage, trained on the taste graph, serves as a single signal to retrieve and rank content; PinFM, a foundational ranking model, distills a user's full history into home feed and related Pin recommendations. These models increase saves, and therefore the engagement and inventory the ad suite can then monetize. The suite launched globally in October 2024, ROAS bidding was added in the first quarter of 2025, and about 30% of lower-funnel revenue was flowing through Performance+ one year after the global launch.",
+  "points_cles": [
+    "Full-funnel AI ad suite automating bidding, targeting, and budget (Performance+).",
+    "ROAS bidding and New Customer Acquisition blocks, in-house models OmniSage and PinFM.",
+    "About 30% of lower-funnel revenue automated, +64% new-customer conversions.",
+    "Evidence A, status confirmed via the 2025 earnings calls."
+  ],
+  "resultats": [
+    { "metrique": "Lower-funnel retail revenue via ROAS bidding" },
+    { "metrique": "Conversion lift for retail advertisers on Performance+" },
+    { "metrique": "New-customer conversions with New Customer Acquisition vs control" },
+    { "metrique": "ROAS for SMB advertisers after delivery model update" },
+    { "metrique": "Sitewide saves driven by the OmniSage model" },
+    { "metrique": "Unique shopping SKUs with a paid impression (YoY, Q3 2025)" },
+    { "metrique": "Share of international revenue carried by shopping ads (2023 to Q3 2025)" }
+  ],
+  "niveau_preuve": {
+    "justification": "Quantified results announced by the CEO on the Q3 and Q4 2025 earnings calls, corroborated by official Pinterest blogs; several concordant primary sources."
+  },
+  "stack_technique": [
+    { "detail": "Ad suite automating bidding, targeting, and budget" },
+    { "detail": "Recommendation and ranking model trained on the Pinterest taste graph" },
+    { "detail": "Foundational ranking model distilling user history into the home feed" },
+    { "detail": "Core model reducing latency and cost (about 90% less than a leading third-party model)" }
+  ],
+  "fonctionnement_operationnel": {
+    "cadence": "Real-time bidding on every impression; periodic retraining of the recommendation and ranking models",
+    "opere_par": "On the platform side, Pinterest's ML and ads engineering teams; on the advertiser side, a growth/paid team that sets the objective and supplies the data",
+    "signal_pilote": "The conversion value reported by the advertiser for ROAS bidding, and the list of existing customers for New Customer Acquisition. Without a valued conversion signal, bidding falls back to volume; without a customer list, new-buyer prioritization does not work.",
+    "etapes": [
+      {
+        "etape": "Supply the catalog and conversion signals",
+        "detail": "The advertiser connects its product feed and valued-conversion reporting so the system optimizes on value rather than plain clicks.",
+        "acteur": "advertiser / data team"
+      },
+      {
+        "etape": "Upload the list of existing customers",
+        "detail": "To activate New Customer Acquisition, the advertiser imports its customer base; the system assigns higher value to net-new prospects and prioritizes their delivery.",
+        "acteur": "advertiser / marketing"
+      },
+      {
+        "etape": "Let Performance+ manage bidding, targeting, and budget",
+        "detail": "Once the objective is set, the algorithm automates delivery across the home feed and shopping surfaces.",
+        "acteur": "AI / Pinterest platform"
+      },
+      {
+        "etape": "Feed inventory through the recommendation models",
+        "detail": "OmniSage and PinFM rank content and personalize the feed, which increases the saves and engagement the ad suite then monetizes.",
+        "acteur": "AI / Pinterest ML team"
+      }
+    ]
+  },
+  "replication": {
+    "prerequis_data": [
+      "Clean, up-to-date product catalog feed",
+      "Valued-conversion reporting (purchase value, not just clicks) via pixel/conversion API",
+      "Usable list of existing customers to distinguish net-new buyers"
+    ],
+    "prerequis_orga": [
+      "Marketing/data alignment on a shared definition of conversion value and new customer",
+      "Legal basis and GDPR consent for matching the customer list",
+      "Willingness to delegate bidding, targeting, and budget to the platform algorithm"
+    ],
+    "stack_possible": [
+      "Pinterest Performance+ (ROAS bidding, New Customer Acquisition)",
+      "Platform equivalents: Meta Advantage+ with a new-customer objective, Google Performance Max with value-based bidding and a new customer acquisition goal",
+      "Native platform incrementality measurement to validate the contribution"
+    ],
+    "playbook": [
+      {
+        "action": "Instrument conversion value rather than plain volume, so bidding optimizes on ROAS",
+        "livrable": "Valued-conversion feed reported to the platform"
+      },
+      {
+        "action": "Build and upload the list of existing customers to prioritize net-new buyers",
+        "livrable": "Customer segment used as a reference for new-customer targeting"
+      },
+      {
+        "action": "Activate the automated suite on a lower-funnel objective and let the algorithm drive",
+        "livrable": "Performance+ campaign in automated delivery"
+      },
+      {
+        "action": "Measure incremental contribution and new-customer ROAS against a control campaign",
+        "livrable": "Read on the real uplift of automation and the new-customer block"
+      }
+    ],
+    "equipe": "A paid/growth lead on the advertiser side, plus a data profile for valued-conversion measurement and customer-list matching.",
+    "premiere_etape": "Instrument conversion value and prepare the list of existing customers: these are the two signals that make ROAS bidding and new-customer prioritization work."
+  },
+  "statut_vivant": {
+    "note": "About 30% of lower-funnel revenue flows through Performance+ one year after the global launch. The suite keeps expanding (new blocks announced in June 2026), and the OmniSage/PinFM models were still highlighted at the Q4 2025 earnings call."
+  },
+  "transposable_ue": {
+    "note": "Performance+ is available in Pinterest's European markets. The New Customer Acquisition feature relies on uploading a list of existing customers to prioritize new buyers: this matching of personal data assumes a GDPR legal basis and market-compliant consent."
+  }
+}

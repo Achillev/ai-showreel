@@ -1,0 +1,109 @@
+{
+  "seo": {
+    "title": "Telstra: genAI agent assist (Ask Telstra, One Sentence Summary) - 20% fewer follow-up contacts (2023)",
+    "meta_description": "Telstra: two genAI tools (Azure OpenAI) for its advisors, Ask Telstra and One Sentence Summary. 90% report time saved, 20% fewer follow-up contacts.",
+    "resume_citable": "Telstra rolled out to its contact centers two genAI tools built on Azure OpenAI (One Sentence Summary, Ask Telstra): 90% of advisors report saving time, with 20% fewer follow-up contacts and 80% reporting a positive impact on the customer interaction.",
+    "faq": [
+      {
+        "q": "Does the AI talk directly to the customer?",
+        "a": "No. Both tools assist the advisor, who stays in control. One summarizes the account, the other answers the advisor's business questions from the internal knowledge base."
+      },
+      {
+        "q": "Are the figures a measured gain or self-reported?",
+        "a": "They come from advisor self-assessment on the trials (90% report time saved, 20% fewer follow-up contacts). That is a strong signal, not a controlled incremental measurement."
+      }
+    ]
+  },
+  "pattern": "Dual genAI agent assist: one tool summarizes the customer history in a single sentence, the other answers the advisor's questions from the internal knowledge base",
+  "etape_parcours": "post-purchase / service",
+  "objectif_business": "Save advisor time on each contact, cut callbacks, and make the interaction smoother by giving the advisor the customer history and the business answer in real time.",
+  "description": "Telstra built two genAI tools on Azure OpenAI and extended them to its contact centers and store teams. One Sentence Summary condenses a customer's history, notes, and transactions into a short summary, so the advisor grasps the situation at a glance without rereading the whole file. Ask Telstra lets the advisor query the internal knowledge base in natural language and get a generated answer. On the trials run in late 2023 with about 200 advisors, 90 percent of One Sentence Summary users reported saving time and being more effective, with 20 percent fewer follow-up contacts, and more than 80 percent of Ask Telstra testers said the tool improves the customer interaction. Telstra extended both tools to all its contact center and store teams over 2024, with Microsoft and Accenture.",
+  "points_cles": ["Two genAI agent-assist tools: a customer account summary and a business answer in RAG.", "Built on Azure OpenAI and Azure AI Search, with Microsoft and Accenture.", "90% of advisors save time, 20% fewer follow-up contacts.", "Evidence B, confirmed status, extended to contact centers and stores in 2024."],
+  "resultats": [
+    { "metrique": "Advisors saving time (One Sentence Summary)" },
+    { "metrique": "Follow-up contacts avoided" },
+    { "metrique": "Reported positive impact (Ask Telstra)" }
+  ],
+  "niveau_preuve": {
+    "justification": "Figures published by Telstra in its official release and echoed in a Microsoft customer story with the same values (90 percent time saved, 20 percent fewer callbacks, 80 percent positive impact). Brand release plus vendor are consistent; the measures are self-reported (advisor self-assessment on the trials), not an efficiency gain measured on incrementality."
+  },
+  "stack_technique": [
+    { "detail": "OpenAI models hosted on Azure, used for account summarization (One Sentence Summary) and answer generation (Ask Telstra). Model version not disclosed." },
+    { "detail": "Indexing and search of the internal knowledge base for Ask Telstra's RAG." },
+    { "detail": "ML platform used to operate the summarization and generation components." },
+    { "detail": "Scaling and data modernization partner for the extension to all teams." }
+  ],
+  "fonctionnement_operationnel": {
+    "cadence": "Real time during the customer contact. The knowledge base queried by Ask Telstra is updated as products and processes evolve.",
+    "opere_par": "The contact center and store teams day to day, a Telstra data/AI team for the models and the base, Microsoft and Accenture for the platform and scaling.",
+    "signal_pilote": "The freshness and accuracy of the knowledge base behind Ask Telstra. If it is stale, the tool returns a wrong answer that the advisor passes on to the customer.",
+    "etapes": [
+      {
+        "etape": "Summarize the customer account",
+        "detail": "One Sentence Summary compiles history, notes, and transactions into one sentence to save the advisor from rereading the whole file.",
+        "acteur": "AI / Azure OpenAI"
+      },
+      {
+        "etape": "Answer business questions",
+        "detail": "Ask Telstra queries the internal knowledge base in natural language and surfaces a generated answer to the advisor.",
+        "acteur": "AI / RAG"
+      },
+      {
+        "etape": "Keep the advisor as decision-maker",
+        "detail": "The advisor reads, checks, and decides the answer to the customer. The AI prepares and suggests; it does not speak to the customer in the advisor's place.",
+        "acteur": "Human advisor"
+      },
+      {
+        "etape": "Measure time saved and callbacks",
+        "detail": "Tracking of time saved, follow-up contacts avoided, and perceived quality to decide the extension to all teams.",
+        "acteur": "Data team + management"
+      }
+    ]
+  },
+  "replication": {
+    "prerequis_data": [
+      "Consolidated customer history (notes, transactions) accessible at the advisor's desk",
+      "A clean, up-to-date internal knowledge base",
+      "GDPR governance over the data exposed to the LLM"
+    ],
+    "prerequis_orga": [
+      "Advisors trained to verify the AI's outputs",
+      "A process to maintain the knowledge base"
+    ],
+    "stack_possible": [
+      "Azure OpenAI + Azure AI Search, or Vertex AI, or a market LLM in RAG",
+      "A component to summarize the customer account automatically",
+      "Integration with the advisor's desktop / CRM"
+    ],
+    "premiere_etape": "Pilot the account summary on a group of advisors, measure time saved and callbacks avoided against a control group, then add the business answer in RAG.",
+    "playbook": [
+      {
+        "action": "Clean up the internal knowledge base and consolidate the customer history (notes, transactions) accessible at the advisor's desk, with GDPR framing.",
+        "livrable": "An indexable knowledge base and validated data access."
+      },
+      {
+        "action": "Build the automatic account summary and integrate it into the advisor's desktop.",
+        "livrable": "A summary tool piloted on a real flow."
+      },
+      {
+        "action": "Pilot on 100-200 advisors with a control group; measure time saved, callbacks avoided, and perceived quality.",
+        "livrable": "Pilot results against control."
+      },
+      {
+        "action": "Add the business answer in RAG on the knowledge base, with systematic human verification.",
+        "livrable": "A business-answer assistant in pilot."
+      },
+      {
+        "action": "Extend to the contact center and store teams, train on verifying outputs, set up the knowledge-base maintenance process.",
+        "livrable": "Full deployment and a routine to keep the base updated."
+      }
+    ],
+    "equipe": "1 PM + 2 devs for the advisor-desktop integration + 1 data engineer for the knowledge base + 1 contact center subject expert; optional integrator for scaling."
+  },
+  "statut_vivant": {
+    "note": "Moved from trial (200 advisors, 2023) to full deployment across contact centers and stores over 2024, with Microsoft and Accenture. Program extended, no signal of withdrawal."
+  },
+  "transposable_ue": {
+    "note": "Deployed in Australia on Azure OpenAI. Both tools read customer history and notes to assist a human advisor: in the EU, frame the handling of customer data (GDPR) and hosting. AI Act: limited risk for an internal assistance tool, transparency to plan for."
+  }
+}

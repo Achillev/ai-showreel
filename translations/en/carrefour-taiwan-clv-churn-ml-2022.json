@@ -1,0 +1,121 @@
+{
+  "seo": {
+    "title": "Carrefour Taiwan: AI models for customer lifetime value and churn - cost per action -40%, ROAS x2.64 (2022)",
+    "meta_description": "Carrefour Taiwan built customer lifetime value and churn models on Google Cloud AutoML to target the customers worth keeping: cost per action -40%, ROAS x2.64.",
+    "resume_citable": "Carrefour Taiwan built four predictive models on Google Cloud AutoML (customer lifetime value, segmentation, conversion, churn) to focus its advertising on the customers worth keeping, lowering its cost per action by 40% and raising its return on ad spend to 2.64 times its prior level.",
+    "faq": [
+      {
+        "q": "Which models did Carrefour Taiwan build?",
+        "a": "Four machine learning models on Google Cloud AutoML: customer lifetime value, segmentation, conversion prediction, and churn prediction, to target advertising at high-value customers."
+      },
+      {
+        "q": "What media results were achieved?",
+        "a": "A 40% drop in the cost per action of online advertising and a return on ad spend raised to 2.64 times its prior level, per the Google Cloud case study."
+      }
+    ]
+  },
+  "pattern": "customer lifetime value and churn models to focus marketing effort on the customers worth keeping",
+  "etape_parcours": "loyalty",
+  "objectif_business": "Focus marketing spend on the highest-value customers and those at risk of leaving, using predictive models to identify who is worth addressing, in order to lower acquisition cost and raise return on ad spend.",
+  "description": "Carrefour Taiwan loaded its customer data into Google Cloud AutoML starting in 2019 and built four machine learning models: customer lifetime value, segmentation, conversion rate prediction, and churn rate prediction. By targeting advertising primarily at the high-value customers identified by these models, the retailer lowered its online advertising cost per action by 40% and raised its return on ad spend to 2.64 times its prior level. The infrastructure later migrated to Google Cloud (migration completed in July 2021), with the app passing five million downloads in June 2022. The setup is part of a broader Carrefour group data modernization on Google Cloud, where BigQuery serves as the analytics foundation and the group claims 104 million households reached per year worldwide.",
+  "points_cles": [
+    "Four predictive models (customer lifetime value, segmentation, conversion, churn) to target the customers worth keeping.",
+    "Built on Google Cloud AutoML and BigQuery, activation through Google Ads.",
+    "Cost per action -40%, return on ad spend x2.64, app with more than 5 million downloads.",
+    "Evidence level B, status mixed signals."
+  ],
+  "resultats": [
+    { "metrique": "Drop in the cost per action of online advertising" },
+    { "metrique": "Return on ad spend, vs the prior level" },
+    { "metrique": "App downloads (June 2022)" },
+    { "metrique": "Households reached per year worldwide (Carrefour group)" }
+  ],
+  "niveau_preuve": {
+    "justification": "Two quantified Google Cloud customer stories attributed to named executives (Henry Ting in Taiwan, David Kestermans in Belgium) documenting the predictive models and media results. Official interested sources (the cloud vendor), with no independent press corroboration of the Taiwan figures."
+  },
+  "stack_technique": [
+    { "detail": "Automated training service on which the four models (customer lifetime value, segmentation, conversion, churn) were built from 2019." },
+    { "detail": "Analytics warehouse underpinning the customer data, within the Carrefour group's data modernization on Google Cloud." },
+    { "detail": "Google Cloud product recommendation service used on the app and the e-commerce site." },
+    { "detail": "Activation channel: online advertising is focused on the high-value customers identified by the models." }
+  ],
+  "fonctionnement_operationnel": {
+    "cadence": "Batch: periodic retraining of the models, ad targeting adjusted per campaign",
+    "opere_par": "Carrefour Taiwan digital and data team, on Google Cloud infrastructure",
+    "signal_pilote": "The purchase and behavior history that feeds the CLV and churn models. Without rich enough data per customer, the predictions degrade and targeting falls back on broad, unprofitable segments.",
+    "etapes": [
+      {
+        "etape": "Loading the customer data",
+        "detail": "Customer data is sent into AutoML for model training.",
+        "acteur": "Data team"
+      },
+      {
+        "etape": "Building the models",
+        "detail": "Four models are trained: customer lifetime value, segmentation, conversion, churn.",
+        "acteur": "AI"
+      },
+      {
+        "etape": "Identifying the customers to keep",
+        "detail": "The models flag the high-value customers and those at risk of leaving.",
+        "acteur": "AI"
+      },
+      {
+        "etape": "Media targeting",
+        "detail": "Online advertising is concentrated on these customers through the Google Ads integration.",
+        "acteur": "Marketing"
+      },
+      {
+        "etape": "Measurement and retraining",
+        "detail": "Cost per action and return on ad spend are tracked and fed back to the models.",
+        "acteur": "Data team"
+      }
+    ]
+  },
+  "replication": {
+    "prerequis_data": [
+      "purchase and behavior history per customer",
+      "enough volume to train CLV and churn models",
+      "reliable linking of purchases to a customer identifier"
+    ],
+    "prerequis_orga": [
+      "data team able to train and maintain models",
+      "integration between models and the media platform",
+      "a cost per action measurement loop"
+    ],
+    "stack_possible": [
+      "AutoML or equivalent (Vertex AI, cloud ML)",
+      "data warehouse (BigQuery, Snowflake)",
+      "connection to the advertising platforms"
+    ],
+    "premiere_etape": "Train a customer lifetime value model on purchase history to identify the customers to prioritize in media targeting.",
+    "playbook": [
+      {
+        "action": "Consolidate purchase and behavior history in the warehouse, linked to a reliable customer identifier.",
+        "livrable": "Unified customer table, ready for training."
+      },
+      {
+        "action": "Train a first customer lifetime value model (AutoML or equivalent) and validate it offline against history.",
+        "livrable": "CLV scores per customer, evaluated and documented."
+      },
+      {
+        "action": "Add the churn and conversion models, then define the segments to address first.",
+        "livrable": "Scores in batch production and actionable segments."
+      },
+      {
+        "action": "Connect the segments to the advertising platform as first-party audiences and launch the targeted campaigns.",
+        "livrable": "Campaigns focused on the customers to keep."
+      },
+      {
+        "action": "Compare cost per action and return on ad spend against prior targeting, and set up periodic retraining.",
+        "livrable": "Quantified media review and retraining pipeline."
+      }
+    ],
+    "equipe": "1-2 data scientists or analysts + 1 data engineer for the pipelines + 1 media lead for activation."
+  },
+  "statut_vivant": {
+    "note": "The Taiwan case is documented through 2022, with no more recent public confirmation of the same figures. Carrefour's data and AI partnership with Google Cloud remains active at group level (data platform, Gemini assistant deployed in 2025), but the detail of the Taiwan CLV and churn models has no recent verified update."
+  },
+  "transposable_ue": {
+    "note": "The customer lifetime value and churn models rely on first-party customer data. In the EU, predictive profiling for marketing purposes requires a legal basis and GDPR consent, plus information on the model's logic if a significant decision follows. Predicting churn and CLV to target advertising remains outside high-risk under the AI Act."
+  }
+}

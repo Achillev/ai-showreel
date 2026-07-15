@@ -1,0 +1,109 @@
+{
+  "seo": {
+    "title": "Coupang: multi-surface AI recommendation and personalization at scale (2023)",
+    "meta_description": "Coupang's ML platform powers recommendation, search, and ads across all its apps, with more than 600 ML projects and 100,000 workflow runs a year.",
+    "resume_citable": "Coupang runs an in-house ML platform that powers recommendation, search, and ads across all its apps, with more than 600 ML projects and more than 100,000 workflow runs a year, adopted by all its major ML groups.",
+    "faq": [
+      {
+        "q": "What is Coupang's ML platform for?",
+        "a": "It industrializes the training and productionization of the models that personalize the home feed, search, and ads across the Coupang apps."
+      },
+      {
+        "q": "Does Coupang publish a conversion gain attributed to recommendation?",
+        "a": "No. What is publicly documented is the scale of the deployment (more than 600 ML projects) and the confirmation of AI investment in financial results, not a per-surface lift."
+      }
+    ]
+  },
+  "pattern": "multi-surface recommendation and personalization engine",
+  "etape_parcours": "consideration",
+  "objectif_business": "Personalize every surface of the app (home, search, ads) and industrialize the productionization of models to support both revenue growth and operational efficiency.",
+  "description": "Coupang runs an in-house foundation, the Coupang ML Platform, which industrializes the model lifecycle end to end: exploration, training data preparation, development, and productionization. This foundation powers the recommendation and personalization surfaces of the app (home feed, search, product ads) across Coupang shopping, Coupang Eats, and Coupang Play, as well as price forecasting and search query understanding via language models. According to the engineering blog published in September 2023, all of Coupang's major ML groups use one or more of the platform's services, with more than 100,000 workflow runs over a year across more than 600 ML projects. Coupang presents AI as a long-term lever for revenue growth and margin expansion.",
+  "resultats": [
+    { "metrique": "Workflow runs over a year" },
+    { "metrique": "Internal adoption of the platform" },
+    { "metrique": "Q3 2025 revenue, +18% year-on-year" }
+  ],
+  "niveau_preuve": {
+    "justification": "Coupang's official engineering blog (interested source, infrastructure figures) and the public company's financial results for measuring scale. Coupang does not publish a conversion gain attributed precisely to recommendation; what is proven is an industrialized, durable deployment (more than 600 ML projects, more than 100,000 runs a year) and a scale confirmed in financial results. C out of caution, absent a quantified per-surface lift."
+  },
+  "stack_technique": [
+    { "detail": "in-house MLOps platform that industrializes exploration, data preparation, training, and productionization (more than 100,000 workflow runs a year, 600+ projects)" },
+    { "detail": "in-house models that personalize the home feed, search, and ads across Coupang, Coupang Eats, and Coupang Play" },
+    { "detail": "Korean variant of BERT integrated by Coupang for search query understanding" },
+    { "detail": "in-house price forecasting models fed by the same platform" }
+  ],
+  "fonctionnement_operationnel": {
+    "cadence": "Near real-time recommendation on each surface; continuous training and productionization via the platform",
+    "opere_par": "Coupang's ML groups, supported by the in-house ML platform that standardizes training and deployment",
+    "signal_pilote": "Browsing and purchase behavior per surface. If the feedback data (clicks, purchases) is not clean and fresh, recommendations drift.",
+    "etapes": [
+      {
+        "etape": "Data preparation",
+        "detail": "The platform prepares the training data from customer behavior per surface.",
+        "acteur": "data team"
+      },
+      {
+        "etape": "Model training",
+        "detail": "The ML groups develop and train the recommendation, search, and price models via the platform.",
+        "acteur": "data team"
+      },
+      {
+        "etape": "Productionization",
+        "detail": "The models are deployed on the app's home feed, search, and ads.",
+        "acteur": "AI"
+      },
+      {
+        "etape": "Feedback loop",
+        "detail": "Clicks and purchases feed back into training to adjust the recommendations.",
+        "acteur": "AI / data team"
+      }
+    ]
+  },
+  "replication": {
+    "prerequis_data": [
+      "Customer behavior logs per surface",
+      "Clean, fresh feedback data (clicks, purchases)",
+      "Catalog and search signals"
+    ],
+    "prerequis_orga": [
+      "An ML industrialization platform (training, deployment, monitoring)",
+      "ML teams per domain",
+      "A measurement loop on engagement and conversion"
+    ],
+    "stack_possible": [
+      "In-house or managed MLOps platform",
+      "Recommendation and ranking models",
+      "Language models for search"
+    ],
+    "premiere_etape": "Set up a clean feedback loop on a single surface (for example the home feed) before extending to search and ads.",
+    "playbook": [
+      {
+        "action": "Choose a single surface (for example the home feed) and audit the available behavior logs.",
+        "livrable": "Clean training dataset on the chosen surface"
+      },
+      {
+        "action": "Build the feedback loop (clicks, purchases) and the reproducible training pipeline.",
+        "livrable": "Versioned data and training pipeline"
+      },
+      {
+        "action": "Train a first recommendation model and deploy it in an A/B test on a fraction of traffic.",
+        "livrable": "Model in production on a limited share of traffic"
+      },
+      {
+        "action": "Measure engagement and conversion against the existing heuristic, iterate on the features and the ranking.",
+        "livrable": "Quantified review and winning model generalized on the surface"
+      },
+      {
+        "action": "Industrialize (monitoring, regular retraining) and extend to a second surface such as search.",
+        "livrable": "Reusable MLOps foundation and second surface underway"
+      }
+    ],
+    "equipe": "2 data scientists + 1-2 ML engineers + 1 PM, with a data platform team in support"
+  },
+  "statut_vivant": {
+    "note": "Coupang reaffirms in its Q3 2025 results its investment in AI, including its own compute infrastructure, for service quality and efficiency. The ML platform has been in production for several years."
+  },
+  "transposable_ue": {
+    "note": "A multi-surface recommendation and personalization engine (home feed, search, ads) is an e-commerce standard, transposable to the EU. The point of attention is GDPR on the use of browsing and purchase history to personalize, and the transparency expected on ad ranking. The real difficulty is engineering and data, not geography."
+  }
+}

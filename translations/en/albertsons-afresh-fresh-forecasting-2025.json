@@ -1,0 +1,124 @@
+{
+  "seo": {
+    "title": "Albertsons: AI fresh demand forecasting (Afresh) - rollout across 2,257 stores (2025)",
+    "meta_description": "Albertsons completed in 2025 the rollout of Afresh's fresh demand forecasting across all its fresh departments (2,257 stores), a platform that reports 25% less shrink and 3% more sales.",
+    "resume_citable": "Albertsons completed in October 2025 the rollout of Afresh's AI fresh demand forecasting solution across the fresh departments of its 2,257 stores; the platform claims typical results of 25% less shrink, 3% more sales, 7% higher inventory turns, and more than 100 million pounds of food waste avoided.",
+    "faq": [
+      {
+        "q": "What does Albertsons do with Afresh's AI?",
+        "a": "It predicts demand for each fresh product department by department and recommends order quantities to store teams, across bakery, deli, meat, seafood, and produce, with a forecasting component at the distribution center level."
+      },
+      {
+        "q": "What scale and what results?",
+        "a": "Rollout completed across the fresh departments of Albertsons' 2,257 stores in October 2025. Afresh claims aggregate typical results of 25% less shrink, 3% more sales, 7% higher inventory turns, and more than 100 million pounds of food waste avoided."
+      }
+    ]
+  },
+  "pattern": "AI demand forecasting for fresh and automated shelf replenishment",
+  "etape_parcours": "purchase",
+  "objectif_business": "Predict demand for each fresh product department by department to order the right quantity, maintain availability, and reduce spoilage on short-shelf-life products.",
+  "description": "Albertsons Companies operates 2,257 stores in the United States under the Safeway, Albertsons, Jewel-Osco, Shaw's, Vons, and ACME banners. Since 2022, the retailer has been deploying Afresh's AI solution in its fresh departments. The system factors in promotions, featured displays, seasonality, and holidays to predict demand and recommend order quantities to store teams, on products where spoilage is structural. In October 2025, Afresh announced the completion of the rollout across all of the network's fresh departments (bakery, deli, meat, seafood, produce), complemented by a DC Forecast component that gives buyers daily forecasts at the distribution center level.",
+  "resultats": [
+    {
+      "metrique": "Albertsons stores covered, all fresh departments"
+    },
+    {
+      "metrique": "Shrink reduction (typical Afresh platform result, aggregated across clients)"
+    },
+    {
+      "metrique": "Sales uplift (typical Afresh platform result, aggregated across clients)"
+    },
+    {
+      "metrique": "Inventory turns (typical Afresh platform result, aggregated across clients)"
+    },
+    {
+      "metrique": "Food waste avoided (cumulative across Afresh platform)"
+    }
+  ],
+  "niveau_preuve": {
+    "justification": "Deployment documented by an Afresh press release naming Albertsons (quotes from Albertsons' Chief Merchandising Officer) and by established trade press (Grocery Dive). The shrink, sales, and turns percentages are aggregate typical results for the Afresh platform, not isolated for Albertsons, hence no level B on impact."
+  },
+  "stack_technique": [
+    {
+      "detail": "SaaS demand forecasting and replenishment solution dedicated to fresh departments."
+    },
+    {
+      "detail": "Component that gives buyers daily forecasts at the distribution center level."
+    },
+    {
+      "detail": "Afresh's proprietary machine learning incorporating promotions, featured displays, seasonality, and holidays; the exact algorithm is not published."
+    },
+    {
+      "detail": "Connection to sales and fresh inventory data from the 2,257 stores, a condition for reliable recommendations."
+    }
+  ],
+  "fonctionnement_operationnel": {
+    "cadence": "Order recommendations per department at the store's replenishment frequency; daily forecasts at the distribution center level (DC Forecast).",
+    "opere_par": "Store teams (fresh department managers) for orders, buyers for distribution centers, on the Afresh platform.",
+    "signal_pilote": "Predicted fresh demand by product and department. If fresh inventory is mis-recorded or sales data is noisy, the recommendation becomes wrong and spoilage or stockouts rise.",
+    "etapes": [
+      {
+        "etape": "Fresh data ingestion",
+        "detail": "Sales, inventory, promotions, featured displays, seasonality, and holidays feed the model by department.",
+        "acteur": "Afresh platform"
+      },
+      {
+        "etape": "Demand forecasting",
+        "detail": "The model predicts demand for each fresh product over the replenishment horizon.",
+        "acteur": "AI model (Afresh)"
+      },
+      {
+        "etape": "Order recommendation",
+        "detail": "The system proposes an order quantity to the department manager, who approves or adjusts it.",
+        "acteur": "fresh department manager"
+      },
+      {
+        "etape": "Distribution center forecasting",
+        "detail": "DC Forecast provides buyers with daily forecasts to set upstream orders to the stores.",
+        "acteur": "buyer / Afresh platform"
+      }
+    ]
+  },
+  "replication": {
+    "prerequis_data": [
+      "reliable fresh sales and inventory data by department and store",
+      "promotions and featured-display calendar",
+      "shelf-life attributes for fresh products"
+    ],
+    "prerequis_orga": [
+      "department managers ready to follow order recommendations",
+      "a disciplined fresh inventory process"
+    ],
+    "stack_possible": [
+      "Afresh",
+      "RELEX, Blue Yonder, Invafresh (specialized fresh forecasting)",
+      "in-house forecasting"
+    ],
+    "equipe": "1 supply project manager + 1 data engineer for sales and inventory flows + trained department managers; the vendor owns the model",
+    "playbook": [
+      {
+        "action": "Make fresh inventory reliable for a high-spoilage category (produce, for example) and connect the sales data.",
+        "livrable": "Clean sales and stock data for the pilot category"
+      },
+      {
+        "action": "Configure the platform: fresh catalog, promotions, featured displays, product shelf lives.",
+        "livrable": "Forecasts computed in shadow mode, compared with actual orders"
+      },
+      {
+        "action": "Launch the in-store pilot: order recommendations approved or adjusted by the department manager.",
+        "livrable": "Shrink and availability measured against control stores"
+      },
+      {
+        "action": "Extend to the other fresh departments and stores, train the teams, add forecasting at the distribution center level.",
+        "livrable": "Rollout plan + shrink and turns dashboard by department"
+      }
+    ],
+    "premiere_etape": "Make fresh inventory reliable for a high-spoilage category (produce, for example), then connect a forecasting engine that recommends order quantities to the department manager."
+  },
+  "statut_vivant": {
+    "note": "Rollout announced as completed across all of Albertsons' fresh departments in October 2025; Afresh is an active vendor present in more than 12,500 store departments."
+  },
+  "transposable_ue": {
+    "note": "The forecasting concerns demand for fresh products by department and store, not personal data. No GDPR obstacle in principle; the challenge is the quality of the fresh sales and stock data."
+  }
+}

@@ -1,0 +1,108 @@
+{
+  "seo": {
+    "title": "UPS: MeRA genAI assistant - 50% time saved on customer emails (2024)",
+    "meta_description": "MeRA, UPS's genAI assistant, drafts replies to customer emails validated by an advisor and cuts handling time by 50%, on a flow of about 52,000 emails a day.",
+    "resume_citable": "UPS deployed MeRA, a genAI assistant that drafts replies to customer emails (validated by an advisor) and cuts handling time by 50%, on about 52,000 emails received each day.",
+    "faq": [
+      {
+        "q": "What is MeRA at UPS?",
+        "a": "A genAI assistant that reads a customer's email, analyzes sentiment, and drafts a complete reply that the advisor validates or adjusts before sending."
+      },
+      {
+        "q": "What gain did MeRA deliver?",
+        "a": "A 50% reduction in the time advisors spend handling emails during the pilot, on a volume of about 52,000 emails a day."
+      }
+    ]
+  },
+  "pattern": "genAI agent assistance (reply drafting)",
+  "etape_parcours": "post-purchase",
+  "objectif_business": "Reduce the time advisors spend drafting email replies against a massive volume, without degrading quality or tone, keeping the human as final validator.",
+  "description": "MeRA (Message Response Automation) is a genAI assistant that drafts replies to UPS customer emails. The system reads the incoming message, analyzes sentiment, applies UPS's business rules and knowledge base, then proposes a complete reply that the advisor confirms or edits before sending. The agent's role shifts to validation, which speeds up handling while keeping a human in control. UPS started from the GPT-3.5 Turbo and GPT-4 models via Azure OpenAI, with a sequential reasoning framework trained on its own rules.",
+  "resultats": [
+    { "metrique": "Reduction in handling time per email (pilot)" },
+    { "metrique": "Daily volume of customer emails addressed" }
+  ],
+  "niveau_preuve": {
+    "justification": "Established press (CIO) naming UPS, with figures and a quote from the executive, confirmed by a second specialist-press pickup (Supply Chain 24/7). External recognition via the CIO 100 Award 2024. A pilot figure rather than a consolidated financial result, hence C."
+  },
+  "stack_technique": [
+    { "detail": "Cloud platform that provides UPS with the OpenAI models in an enterprise framework." },
+    { "detail": "MeRA's starting models to read the email, assess sentiment, and draft the reply." },
+    { "detail": "UPS custom system: a sequential reasoning framework trained on the in-house business rules and knowledge base." },
+    { "detail": "Inbound channel (about 52,000 customer emails a day) in which MeRA proposes its drafts to the advisor." }
+  ],
+  "fonctionnement_operationnel": {
+    "cadence": "Real time, on each incoming customer email, in the advisor's workflow.",
+    "opere_par": "UPS contact center, with the Digital and Technology leadership for the MeRA system.",
+    "signal_pilote": "The quality of the business rules and knowledge base that feed the model. If those rules are outdated, the proposed draft becomes wrong and the advisor has to rewrite everything, which erases the time gain.",
+    "etapes": [
+      {
+        "etape": "Receiving the email",
+        "detail": "A customer message arrives in the customer service queue.",
+        "acteur": "customer"
+      },
+      {
+        "etape": "Analysis and drafting",
+        "detail": "MeRA reads the message, evaluates sentiment, applies UPS's rules, and drafts a complete reply.",
+        "acteur": "AI"
+      },
+      {
+        "etape": "Human validation",
+        "detail": "The advisor confirms or adjusts the proposed reply before sending.",
+        "acteur": "customer service"
+      },
+      {
+        "etape": "Sending and loop",
+        "detail": "The validated reply goes to the customer; the edits feed the improvement of the system.",
+        "acteur": "customer service"
+      }
+    ]
+  },
+  "replication": {
+    "prerequis_data": [
+      "a history of labeled customer emails",
+      "an up-to-date knowledge base and business rules",
+      "a sentiment model or an LLM with tone analysis"
+    ],
+    "prerequis_orga": [
+      "advisors trained in the validator role",
+      "a correction loop to improve the model",
+      "a compliance framework for handling customer data"
+    ],
+    "stack_possible": [
+      "a commercial LLM via cloud",
+      "integration with the ticketing / email tool",
+      "a business-rules layer"
+    ],
+    "premiere_etape": "Take a high-volume, well-documented email category, generate drafts validated by the agent, measure the time saved.",
+    "playbook": [
+      {
+        "action": "Choose a high-volume, well-documented email category; gather the corresponding history and business rules.",
+        "livrable": "A corpus of labeled emails + documented, up-to-date business rules."
+      },
+      {
+        "action": "Connect the LLM (Azure OpenAI or equivalent) to the rules and knowledge base, generate drafts in shadow mode.",
+        "livrable": "Drafts compared to agents' real replies, gaps analyzed."
+      },
+      {
+        "action": "Launch the pilot with human validation on a group of agents and measure handling time.",
+        "livrable": "A time-per-email table: pilot group vs control group."
+      },
+      {
+        "action": "Set up the correction loop: agents' edits feed prompts and rules.",
+        "livrable": "A documented rise in the rate of drafts accepted without edits."
+      },
+      {
+        "action": "Extend to neighboring email categories with tone and compliance guardrails.",
+        "livrable": "Production on the target email domain with weekly quality tracking."
+      }
+    ],
+    "equipe": "1 PM + 1-2 devs (LLM and ticketing integration) + 1 customer service subject expert + pilot agents as validators"
+  },
+  "statut_vivant": {
+    "note": "MeRA documented in production on the contact center, with a plan to extend to other functions (HR, sales, finance)."
+  },
+  "transposable_ue": {
+    "note": "A genAI assistant that drafts customer service email replies is transposable to the EU. Processing customer content through an LLM requires a GDPR legal basis, control over the data hosting and processing location, and information under the AI Act. Keeping human validation before sending eases compliance."
+  }
+}

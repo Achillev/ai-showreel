@@ -1,0 +1,129 @@
+{
+  "seo": {
+    "title": "Shopee: AI-automated seller campaigns (GMV Max) - conversion +8% (2025)",
+    "meta_description": "GMV Max, Shopee's AI ad tool, optimizes seller campaigns: +8% purchase conversion and +70 basis points ad take rate in one year.",
+    "resume_citable": "In the second quarter of 2025, Shopee's AI ad automation (GMV Max) coincided with an 8% rise in the purchase conversion rate, a gain of nearly 70 basis points in ad take rate, and growth of more than 40% in average ad spend per seller.",
+    "faq": [
+      {
+        "q": "What is GMV Max?",
+        "a": "It is Shopee's automated ad tool: the AI drives the seller's traffic allocation and bids to maximize their GMV, without manual campaign management."
+      },
+      {
+        "q": "What impact did Shopee report?",
+        "a": "In Q2 2025, Sea Limited reported an 8% rise in the purchase conversion rate and an ad take rate improved by nearly 70 basis points year over year."
+      }
+    ]
+  },
+  "pattern": "AI automation of seller ad campaigns",
+  "etape_parcours": "purchase",
+  "objectif_business": "Raise Shopee's ad revenue by making advertising accessible to sellers who cannot manage campaigns: the AI optimizes traffic allocation and bids on their behalf, which increases both their conversion and the share of monetized GMV.",
+  "points_cles": [
+    "AI automation of seller ad campaigns (traffic allocation and bids).",
+    "GMV Max tool on Shopee's in-house ad engine.",
+    "Purchase conversion +8%, ad take rate +70 basis points, ad spend per seller +40% year over year.",
+    "Evidence level A, confirmed status, figures from Sea Limited's Q2 2025 earnings call."
+  ],
+  "description": "GMV Max is Shopee's automated ad tool: the seller delegates campaign steering to the AI, which handles traffic allocation and optimization to maximize GMV. It is one building block of a dedicated ad-tech team that, since 2024, has been reworking the algorithms, traffic-allocation efficiency, and service to advertising sellers. In the second quarter of 2025, Shopee attributes to these technical improvements an 8% rise in the purchase conversion rate and a gain of nearly 70 basis points in its ad take rate over one year. The number of sellers buying ads rose about 20% and their average quarterly ad spend more than 40% year over year.",
+  "resultats": [
+    {
+      "metrique": "Rise in the purchase conversion rate on Shopee (Q2 2025)"
+    },
+    {
+      "metrique": "Improvement in ad take rate over one year (Q2 2025)"
+    },
+    {
+      "metrique": "Growth in the number of sellers buying ads (Q2 2025)"
+    },
+    {
+      "metrique": "Average quarterly ad spend per seller, year over year (Q2 2025)"
+    }
+  ],
+  "niveau_preuve": {
+    "justification": "Figures drawn from the official transcript of Sea Limited's earnings call for the second quarter of 2025 (a primary document from the listed company, T1), confirmed by an established press analysis (T3). These are figures communicated in financial results to investors."
+  },
+  "stack_technique": [
+    {
+      "detail": "Shopee's automated ad tool: the seller sets budget and goal, the AI handles traffic allocation and bids to maximize GMV"
+    },
+    {
+      "detail": "bidding, traffic-allocation, and matching algorithms reworked by the dedicated ad-tech team since 2024; proprietary ML, not detailed publicly"
+    },
+    {
+      "detail": "sellers' self-serve ad inventory on which the optimization is applied"
+    }
+  ],
+  "fonctionnement_operationnel": {
+    "cadence": "Continuous campaign optimization, driven by the algorithm in near real time",
+    "opere_par": "Shopee's ad-tech team that maintains the algorithms; the seller activates the tool and sets the budget",
+    "signal_pilote": "The GMV and conversion attributed to the ads. If the conversion signal is noisy or the inventory poorly tagged, traffic allocation optimizes on nothing.",
+    "etapes": [
+      {
+        "etape": "Activation by the seller",
+        "detail": "The seller activates GMV Max and sets budget and goal, without managing each bid.",
+        "acteur": "customer"
+      },
+      {
+        "etape": "Traffic allocation",
+        "detail": "The algorithm distributes traffic and sets bids to maximize the seller's GMV.",
+        "acteur": "AI"
+      },
+      {
+        "etape": "Continuous optimization",
+        "detail": "The system continuously readjusts based on the conversion observed on the ads.",
+        "acteur": "AI"
+      },
+      {
+        "etape": "Monetization tracking",
+        "detail": "The ad-tech team tracks take rate, conversion, and seller adoption to improve the algorithms.",
+        "acteur": "data team"
+      }
+    ]
+  },
+  "replication": {
+    "prerequis_data": [
+      "Conversion signals attributed to the ads",
+      "Well-tagged product inventory",
+      "Campaign performance history"
+    ],
+    "prerequis_orga": [
+      "Ad inventory and bidding on the platform",
+      "A transparency rule on ad ranking",
+      "An ad-tech team to maintain the algorithms"
+    ],
+    "stack_possible": [
+      "A bidding and traffic-allocation optimization engine",
+      "A self-serve ad platform for sellers",
+      "A conversion attribution loop"
+    ],
+    "premiere_etape": "Make conversion attribution reliable on the ads before automating traffic allocation.",
+    "playbook": [
+      {
+        "action": "Make attribution reliable: validate conversion and GMV tracking attributed to the ads, clean up product inventory tagging",
+        "livrable": "Audited attribution loop, clean conversion signal"
+      },
+      {
+        "action": "Build v1 of the engine: traffic allocation and automatic bidding on a GMV goal",
+        "livrable": "Engine in test on a subset of categories"
+      },
+      {
+        "action": "Open a seller pilot: beta on a panel, with settings reduced to budget + goal",
+        "livrable": "Pilot campaigns compared to manual management (conversion, seller feedback)"
+      },
+      {
+        "action": "Industrialize self-serve for non-expert sellers and simplify onboarding",
+        "livrable": "Product opened to all, seller adoption tracked"
+      },
+      {
+        "action": "Close the continuous-improvement loop: track take rate, conversion, and spend per seller, iterate on the algorithms",
+        "livrable": "Monetization dashboard and regular engine releases"
+      }
+    ],
+    "equipe": "1 dedicated ad-tech team (3-6 ML/data engineers) + 1 monetization PM + 1 seller support team"
+  },
+  "statut_vivant": {
+    "note": "Confirmed in Sea Limited's Q2 2025 earnings call (August 2025), with results rising quarter after quarter and an ad take rate presented as having potential to double over time."
+  },
+  "transposable_ue": {
+    "note": "AI ad automation on the seller side (traffic allocation, bidding, GMV optimization) is a pattern already common among large Western platforms. The EU constraint is mainly transparency on ad ranking and the use of purchase-behavior data (GDPR, DSA for very large platforms). The mechanism itself is not specifically Asian."
+  }
+}

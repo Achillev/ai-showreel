@@ -1,0 +1,132 @@
+{
+  "seo": {
+    "title": "AT&T: Ask AT&T, genAI assistant for 100,000 employees - care resolution -33% (2023)",
+    "meta_description": "Ask AT&T, an internal genAI assistant (Azure OpenAI) launched in 2023: 100,000+ employees, 71 solutions, care resolution time reduced by 33%.",
+    "resume_citable": "AT&T deployed Ask AT&T, a governed internal genAI assistant (Azure OpenAI) used by more than 100,000 employees across 71 solutions, processing about 9 billion tokens per day and reducing customer care resolution time by 33%.",
+    "faq": [
+      {
+        "q": "Is it a customer chatbot?",
+        "a": "No: it is an internal assistant for employees. The customer benefit comes indirectly from faster care (-33% resolution time)."
+      },
+      {
+        "q": "Where do the 9 billion tokens per day come from?",
+        "a": "Most come from internal systems that call the assistant via API, not from humans typing queries at their desks."
+      }
+    ]
+  },
+  "pattern": "Governed enterprise genAI assistant: an LLM connected to internal knowledge, open to tens of thousands of employees and called at scale by automated systems",
+  "etape_parcours": "post-purchase / service and back office",
+  "objectif_business": "Put a reliable AI assistant in employees' hands to shorten customer resolution and industrialize productivity gains, under governance.",
+  "description": "Ask AT&T is AT&T's internal genAI assistant, launched in June 2023. It gives access to an LLM connected to company knowledge to summarize documents, query contracts, write code, analyze the network, or answer general questions. Usage grew fast: more than 80,000 employees had access by summer 2024, and more than 100,000 by the end of 2025. AT&T says it deployed 71 distinct genAI solutions and reduced customer care resolution time by 33 percent. The platform processes about 9 billion tokens per day, most coming from internal systems calling it via API rather than from humans. AT&T links these solutions to annual savings in the hundreds of millions, as part of a group-wide cost reduction program.",
+  "points_cles": [
+    "Governed internal genAI assistant (Ask AT&T) for employees.",
+    "Azure OpenAI LLM plus RAG on internal knowledge, called via API.",
+    "Care resolution time -33%, 71 solutions, ~9 billion tokens per day.",
+    "Evidence level B, confirmed active status."
+  ],
+  "fonctionnement_operationnel": {
+    "cadence": "Real time for employee use and for system calls. The knowledge base is updated continuously; the models and safeguards are reviewed regularly.",
+    "opere_par": "A central data science / AI team (governance, models, platform), the business units that build their use cases on it, and Microsoft for the Azure infrastructure.",
+    "signal_pilote": "Governance: each use case goes through a control before production. Without that filter, an assistant open to 100,000 people propagates false answers or data leaks at scale.",
+    "etapes": [
+      {
+        "etape": "Open a governed foundation",
+        "detail": "A single platform gives access to the LLM with access control, logging, and usage rules, rather than unmanaged tools per team.",
+        "acteur": "Data science / AI team"
+      },
+      {
+        "etape": "Let the business units build",
+        "detail": "Each team connects its use case (care, code, contracts, network) to the foundation via RAG. 71 solutions were built this way.",
+        "acteur": "Business units + AI"
+      },
+      {
+        "etape": "Industrialize via API",
+        "detail": "Internal systems call the assistant at scale (most of the 9 billion tokens per day), not only humans at their desks.",
+        "acteur": "Internal systems / AI"
+      },
+      {
+        "etape": "Measure and govern continuously",
+        "detail": "Tracking of care resolution time, adoption, and savings; review of safeguards as usage grows.",
+        "acteur": "AI team + management"
+      }
+    ]
+  },
+  "resultats": [
+    {
+      "metrique": "Customer care resolution time"
+    },
+    {
+      "metrique": "GenAI solutions deployed"
+    },
+    {
+      "metrique": "Volume processed"
+    },
+    {
+      "metrique": "Employee users, from 80,000+ in 2024 to 100,000+ in 2025"
+    }
+  ],
+  "niveau_preuve": {
+    "justification": "Operational figures confirmed by a Microsoft customer story with a named AT&T spokesperson (71 solutions, 100,000 employees, 9 billion tokens/day, -33 percent care resolution time) and picked up by the specialist press. Vendor source plus press: solid on scale and adoption; the savings remain aggregated at group level, not isolated per case."
+  },
+  "stack_technique": [
+    {
+      "detail": "OpenAI models served via Azure, the LLM component of Ask AT&T; the exact model versions are not detailed publicly."
+    },
+    {
+      "detail": "Azure database supporting the platform and its high-volume use cases."
+    },
+    {
+      "detail": "Governed foundation built by AT&T: RAG on internal knowledge, access control, logging, API for internal systems; 71 solutions built on it."
+    },
+    {
+      "detail": "Cloud infrastructure for the setup, operated within the AT&T-Microsoft partnership."
+    }
+  ],
+  "replication": {
+    "prerequis_data": [
+      "Accessible internal knowledge (documents, procedures, contracts, business databases)",
+      "A single foundation with access control and logging",
+      "Governance and compliance rules on the exposed data"
+    ],
+    "prerequis_orga": [
+      "A central AI team that maintains the platform and the safeguards",
+      "Business units authorized to build their use cases on it",
+      "Change management / training at scale"
+    ],
+    "stack_possible": [
+      "Azure OpenAI, or Vertex AI, or a market LLM in RAG",
+      "Vector database on the internal documentation",
+      "Governance and prompt-logging layer"
+    ],
+    "premiere_etape": "Build a governed foundation with a first high-volume care case, measure resolution time before/after, then open building to other teams once the safeguards are proven.",
+    "playbook": [
+      {
+        "action": "Pick a first high-volume care case and set the governance: access control, prompt logging, usage and compliance rules.",
+        "livrable": "Usage charter and pilot scope validated."
+      },
+      {
+        "action": "Build the foundation (LLM + RAG on the care documentation) and put it in the hands of a pilot group of advisors.",
+        "livrable": "Pilot assistant in service, resolution time measured."
+      },
+      {
+        "action": "Compare resolution time before/after, correct false answers, and harden the safeguards.",
+        "livrable": "Quantified pilot assessment and list of applied fixes."
+      },
+      {
+        "action": "Open the foundation to other teams (code, contracts, network) with a review process before each case goes to production.",
+        "livrable": "3-5 use cases in production under governance."
+      },
+      {
+        "action": "Expose the assistant via API to internal systems and track adoption, volumes, and savings.",
+        "livrable": "Active internal API, usage and savings dashboard."
+      }
+    ],
+    "equipe": "1 central AI team (2-4 engineers + 1 governance lead) + business referents per use case + change management for adoption."
+  },
+  "statut_vivant": {
+    "note": "Continuously rising adoption from 2023 to end of 2025 (80,000 then 100,000+ employees), 71 solutions in production, and an active Azure partnership. Structurally embedded program."
+  },
+  "transposable_ue": {
+    "note": "Internal assistant connected to company data, with governance and controlled access. In the EU, frame the HR use (informing employees), the customer data if it enters the care cases, and data hosting. AI Act: limited risk for internal use, care needed on cases touching the customer."
+  }
+}

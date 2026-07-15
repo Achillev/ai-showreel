@@ -1,0 +1,120 @@
+{
+  "seo": {
+    "title": "Rightmove: AI property search and genAI image restyling (UK, 2025)",
+    "meta_description": "Rightmove rolled out AI Keywords and Style with AI in 2025, then a conversational search on Google Gemini in 2026 (UK).",
+    "resume_citable": "Rightmove rolled out AI Keywords in 2025, trained on 25 years of data, and Style with AI to restyle listing photos, then a conversational search on Google Gemini models in 2026; more than 80% of the time spent on UK property portals is spent on Rightmove.",
+    "faq": [
+      {
+        "q": "What does Rightmove's AI Keywords do?",
+        "a": "Smart prompts such as river view or underfloor heating, trained on twenty-five years of data, that scan the images and text of listings to surface more relevant properties."
+      },
+      {
+        "q": "What is Style with AI?",
+        "a": "A tool that removes the furniture from a photo, adjusts the lighting, and changes a home's style, for example toward a Scandinavian or art deco look, to help the buyer picture themselves in it."
+      }
+    ]
+  },
+  "pattern": "natural language search plus genAI restyling of listing images",
+  "etape_parcours": "consideration",
+  "objectif_business": "Help the user find a property that matches their exact criteria in plain language, and help them picture themselves in a home to sustain engagement on the UK's leading property portal.",
+  "description": "Rightmove rolls out AI Keywords on its app in 2025: smart prompts such as exposed brick, river view, or underfloor heating as a visible feature, trained on twenty-five years of Rightmove data, that scan the images and text of listings to surface more relevant properties. The same year, Style with AI lets a buyer remove the furniture from a photo, adjust the lighting, and change a home's style, for example toward a Scandinavian or art deco look, to help them picture themselves in it. In February 2026, Rightmove opens a conversational search in beta through a Use AI button, where the user describes their need in natural language and refines it through conversation; this search is built with Google Cloud on Gemini models. Rightmove states that more than eighty percent of the time spent on property portals is spent on Rightmove and that it has twenty-seven AI initiatives in development.",
+  "resultats": [
+    {
+      "metrique": "Share of time on property portals captured by Rightmove"
+    },
+    {
+      "metrique": "Training base for the search, Rightmove history"
+    }
+  ],
+  "niveau_preuve": {
+    "justification": "Official Rightmove releases (T1) and UK trade press aligned on the rollout, with evidence of scale (share of time spent, a 25-year database). No isolated effect metric, hence level C."
+  },
+  "stack_technique": [
+    {
+      "detail": "Models behind the Use AI conversational search (beta February 2026)."
+    },
+    {
+      "detail": "Cloud platform on which the conversational search is built."
+    },
+    {
+      "detail": "Smart prompts trained on 25 years of Rightmove data that scan the images and text of listings."
+    },
+    {
+      "detail": "GenAI restyling of listing photos (furniture removal, lighting, styles); the underlying generative model is not named."
+    }
+  ],
+  "fonctionnement_operationnel": {
+    "cadence": "Real time on each query; on-demand image generation for Style with AI.",
+    "opere_par": "Rightmove's technology and product team, with Google Cloud as the provider of the Gemini models for the conversational search.",
+    "signal_pilote": "The images and text of listings plus twenty-five years of Rightmove data. Without this corpus, the smart prompts cannot find the properties that carry the requested criterion.",
+    "etapes": [
+      {
+        "etape": "Search by prompt or conversation",
+        "detail": "The user picks a smart prompt or describes their need in natural language through Use AI.",
+        "acteur": "customer"
+      },
+      {
+        "etape": "Scanning images and text",
+        "detail": "AI Keywords scans the images and text of listings to surface more relevant properties.",
+        "acteur": "AI"
+      },
+      {
+        "etape": "Conversational refinement",
+        "detail": "Use AI search refines the results through conversation, on Gemini models.",
+        "acteur": "AI"
+      },
+      {
+        "etape": "Visual projection",
+        "detail": "Style with AI removes furniture, adjusts lighting, or changes a photo's style to help buyers picture themselves.",
+        "acteur": "AI"
+      }
+    ]
+  },
+  "replication": {
+    "prerequis_data": [
+      "listings with usable images and text",
+      "a long data history for training",
+      "image rights for restyling"
+    ],
+    "prerequis_orga": [
+      "an AI team or cloud partner for the models",
+      "vision and image generation capability",
+      "a high-traffic search surface"
+    ],
+    "stack_possible": [
+      "NL search model",
+      "vision model to scan listings",
+      "generative image model for restyling"
+    ],
+    "premiere_etape": "Index listing images and text so that prompts find the right criterion before adding generation.",
+    "playbook": [
+      {
+        "action": "Index the images and text of listings and build the reference set of searched criteria (exposed brick, underfloor heating, view).",
+        "livrable": "Multimodal listing index mapped to a vocabulary of criteria."
+      },
+      {
+        "action": "Launch natural language prompt/keyword search on the app.",
+        "livrable": "NL search in production on a subset of criteria."
+      },
+      {
+        "action": "Add the image restyling module (visual projection), after verifying photo rights.",
+        "livrable": "Restyling tool in beta with a validated legal framework."
+      },
+      {
+        "action": "Build the conversational search on an LLM (refining the need through dialogue), with a cloud partner.",
+        "livrable": "Conversational beta with a user group."
+      },
+      {
+        "action": "Measure relevance and engagement, then generalize.",
+        "livrable": "Relevance/engagement dashboard and roadmap of the next initiatives."
+      }
+    ],
+    "equipe": "1 PM + 2-4 ML/search engineers + 1 product designer + legal for image rights."
+  },
+  "statut_vivant": {
+    "note": "AI Keywords and Style with AI have been in production since 2025, the conversational search has been in beta since February 2026, with twenty-seven AI initiatives announced."
+  },
+  "transposable_ue": {
+    "note": "Rightmove operates in the UK, already under a data regime close to the GDPR. The building blocks (NL search trained on listings, genAI image restyling) are directly transposable to an EU portal, subject to the AI Act on generative functions."
+  }
+}

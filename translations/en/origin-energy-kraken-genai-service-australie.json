@@ -1,0 +1,129 @@
+{
+  "seo": {
+    "title": "Origin Energy: AI-native Kraken platform - $170M less in cost-to-serve (Australia)",
+    "meta_description": "Origin Energy migrated 4.2 million customers to Kraken, an AI-native platform with the genAI tool Magic Ink: $170M saved in cost-to-serve and 87% satisfaction in Australia.",
+    "resume_citable": "Origin Energy migrated 4.2 million Australian customers to Kraken, the Octopus group's AI-native platform including the genAI tool Magic Ink, for $170 million saved in cost-to-serve and an 87% satisfaction index.",
+    "faq": [
+      {
+        "q": "What is AI's role in Origin's result?",
+        "a": "The Kraken platform is AI-native and integrates the genAI tool Magic Ink for drafting assistance. The cost-to-serve savings and satisfaction are measured at the platform level; the Magic Ink volumes are published at the group level."
+      },
+      {
+        "q": "How many customers were migrated?",
+        "a": "4.2 million residential and business customers over two and a half years, in Australia."
+      }
+    ]
+  },
+  "pattern": "AI-native customer operations platform + genAI drafting assistance",
+  "etape_parcours": "post-purchase",
+  "objectif_business": "Reduce the cost-to-serve and gain agility by replacing legacy systems with an AI-native platform, while improving the customer experience across more than 4 million accounts.",
+  "points_cles": [
+    "Migration of 4.2 million customers to an AI-native platform.",
+    "Kraken platform with the genAI tool Magic Ink to summarize and draft.",
+    "$170 million saved in cost-to-serve, 87% satisfaction.",
+    "Evidence B, confirmed status and a platform in production."
+  ],
+  "description": "Origin Energy migrated its residential and business customer base to Kraken, the Octopus group's AI-native operations platform. The switch covered 4.2 million customers over two and a half years. The platform integrates Magic Ink, the genAI tool that summarizes interactions and drafts replies for Origin's agents. Origin highlights a cost-to-serve reduced by $170 million, a Customer Happiness Index of 87 percent, and a Trustpilot rating raised to Excellent. The platform's speed is cited as a factor: a change that took three to four months on the old system ships in two to three weeks on Kraken.",
+  "resultats": [
+    {
+      "metrique": "Customers migrated to the AI-native platform, over 2.5 years"
+    },
+    {
+      "metrique": "Cost-to-serve reduction"
+    },
+    {
+      "metrique": "Customer Happiness Index"
+    },
+    {
+      "metrique": "Deployment of a change, versus 3 to 4 months on the old system (Origin testimony)"
+    }
+  ],
+  "niveau_preuve": {
+    "justification": "Quantified platform case study (Kraken) with migration volume, cost-to-serve, and satisfaction, corroborated by the trade press (iTnews) reproducing the savings announced in Origin's half-year results. The Magic Ink genAI metrics are group-level, not isolated for Origin."
+  },
+  "stack_technique": [
+    {
+      "detail": "The Octopus group's AI-native customer operations platform (account, billing, interactions), to which Origin migrated 4.2 million customers."
+    },
+    {
+      "detail": "GenAI tool integrated into Kraken: it summarizes interactions and drafts replies for Origin's agents."
+    },
+    {
+      "detail": "GPT-type text-generation models used by Magic Ink; version and provider not published."
+    }
+  ],
+  "fonctionnement_operationnel": {
+    "cadence": "Real time for drafting assistance; migration run in waves over two and a half years.",
+    "opere_par": "Origin's customer service teams, on a platform maintained by Kraken.",
+    "signal_pilote": "The cost-to-serve per account and the satisfaction index. The platform relies on a unified customer history; without that view, the genAI assistance loses its value.",
+    "etapes": [
+      {
+        "etape": "Account migration",
+        "detail": "Origin transfers its customers from the old system to Kraken, in successive waves.",
+        "acteur": "data team"
+      },
+      {
+        "etape": "Drafting assistance",
+        "detail": "Magic Ink summarizes interactions and proposes draft replies to agents.",
+        "acteur": "AI"
+      },
+      {
+        "etape": "Customer handling",
+        "detail": "The agent validates and replies; routine operations move to self-service.",
+        "acteur": "customer service"
+      },
+      {
+        "etape": "Product iteration",
+        "detail": "Journey changes are shipped in a few weeks rather than several months.",
+        "acteur": "agency"
+      }
+    ]
+  },
+  "replication": {
+    "playbook": [
+      {
+        "action": "Audit the legacy systems (CRM, billing, channels) and frame the migration: scope, account waves, success criteria.",
+        "livrable": "Wave-based migration plan with milestones"
+      },
+      {
+        "action": "Migrate a first wave of accounts to the target platform and stabilize operations on that cohort.",
+        "livrable": "Pilot cohort operated entirely on the new platform"
+      },
+      {
+        "action": "Chain the following waves and train customer service to supervise the genAI assistance (review, correct, send).",
+        "livrable": "Majority of the base migrated, agents trained"
+      },
+      {
+        "action": "Turn on drafting assistance and self-service across the whole base, with measurement of satisfaction and volume handled per agent.",
+        "livrable": "GenAI drafts in production, satisfaction dashboard"
+      },
+      {
+        "action": "Decommission the legacy systems and quantify the cost-to-serve per account against the pre-migration baseline.",
+        "livrable": "Documented economic assessment"
+      }
+    ],
+    "equipe": "A migration program team (data, IT, business), the customer service teams trained in supervision, and the platform vendor as an end-to-end partner",
+    "prerequis_data": [
+      "unified customer history on a single platform",
+      "billing and contract data accessible in real time",
+      "corpus of interactions for the genAI assistance"
+    ],
+    "prerequis_orga": [
+      "willingness to replace legacy systems",
+      "wave-based migration program",
+      "customer service trained in AI assistance"
+    ],
+    "stack_possible": [
+      "AI-native energy operations platform (Kraken)",
+      "enterprise LLM for drafting assistance",
+      "integrated CRM/billing"
+    ],
+    "premiere_etape": "Unify the customer history on a single platform before turning on genAI drafting assistance."
+  },
+  "statut_vivant": {
+    "note": "Migration completed and platform in production. Origin increased its stake in Kraken in 2026, a sign of continuity."
+  },
+  "transposable_ue": {
+    "note": "The pattern (AI-native customer operations system with genAI drafting assistance) is transposable to the EU, but the Kraken platform comes from the British ecosystem and the deployment described is Australian. In the EU, transcript retention and the use of LLMs on customer data must be framed under GDPR and the AI Act."
+  }
+}

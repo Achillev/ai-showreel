@@ -1,0 +1,110 @@
+{
+  "seo": {
+    "title": "Supercell: ML-served card offers in Clash Royale - 7 years in production (2018)",
+    "meta_description": "Clash Royale has served card offers personalized by machine learning since 2018; in 2025, Supercell extends AI to acquisition and monetization.",
+    "resume_citable": "Clash Royale has served card offers personalized by machine learning since 2018 based on the player's inventory, progression, and purchase frequency, with a small data science team automating recurring monetization; in 2025, Supercell described extending AI to acquisition and monetization.",
+    "faq": [
+      {
+        "q": "How does Supercell personalize Clash Royale's monetization?",
+        "a": "A machine learning model chooses, based on the player's state, which cards to propose in the store; the price and bundle size are still set by hand."
+      },
+      {
+        "q": "How long has this system been running?",
+        "a": "Since 2018, which makes it an ML monetization setup in continuous production in a top-grossing game, extended in 2025 to acquisition and monetization."
+      }
+    ]
+  },
+  "pattern": "ML personalization of in-game offers (which card or offer to serve)",
+  "etape_parcours": "purchase",
+  "objectif_business": "Increase conversion and LTV by serving each player the most relevant card offer, with a small team that automates recurring monetization rather than growing it.",
+  "description": "Since 2018, Clash Royale has served personalized card offers in its store through machine learning. The system looks at the number of cards already owned, how close a player is to an upgrade tier, and their purchase frequency, among other factors, to decide which offers to show. The price and bundle size remain hardcoded; the ML chooses the cards the player is most likely to buy. The logic the team embraces is to stay small and automate everything that recurs on a regular basis. In 2025, Supercell described a broader AI plan presented by its AI Lead, with mass personalization for acquisition, prediction of player behavior, and adjustment of retention and monetization activities to maximize LTV, along with pilots of UA asset creation. The group also runs in production an AI support agent built with OpenAI in Brawl Stars.",
+  "points_cles": [],
+  "resultats": [
+    { "metrique": "Card offers served by ML, top-grossing game" },
+    { "metrique": "Mass personalization of UA and monetization, LTV steering" },
+    { "metrique": "Cost per ticket, Brawl Stars AI support agent; +20% CSAT, 7 s response" }
+  ],
+  "niveau_preuve": {
+    "justification": "Recognized specialized press reporting by name the interventions of Supercell's data scientists and AI Lead on monetization and UA, plus a quantified vendor case study for the support agent. No financial figure on monetization itself, hence C."
+  },
+  "stack_technique": [
+    { "detail": "ML that chooses which cards to propose based on the cards owned, the proximity of an upgrade tier, and purchase frequency; price and bundle size remain hardcoded" },
+    { "detail": "player state (inventory, progression, purchases) kept up to date to serve the store offer" },
+    { "detail": "models used for the AI support agent in production in Brawl Stars, a system distinct from ML monetization" },
+    { "detail": "partner in building the Brawl Stars AI support agent" }
+  ],
+  "fonctionnement_operationnel": {
+    "cadence": "Offer served continuously across sessions, on a regular basis that the team seeks to automate as much as possible.",
+    "opere_par": "Supercell's data science team, small by choice, with the game teams.",
+    "signal_pilote": "The player's state: cards owned, proximity of an upgrade tier, purchase frequency. Without this up-to-date signal, the served offer loses its relevance and conversion drops.",
+    "etapes": [
+      {
+        "etape": "Reading the player's state",
+        "detail": "The system measures inventory, progression, and purchase history.",
+        "acteur": "AI (data science)"
+      },
+      {
+        "etape": "Offer selection",
+        "detail": "The ML chooses which cards to propose; the price and bundle size are hardcoded.",
+        "acteur": "AI (data science)"
+      },
+      {
+        "etape": "Display in the store",
+        "detail": "The personalized offer appears in the game store.",
+        "acteur": "game (Clash Royale)"
+      },
+      {
+        "etape": "Measurement loop",
+        "detail": "Conversion and purchases fed back to refine the propensities.",
+        "acteur": "data team"
+      }
+    ]
+  },
+  "replication": {
+    "prerequis_data": [
+      "inventory and progression per player",
+      "purchase history and frequency",
+      "offer catalog"
+    ],
+    "prerequis_orga": [
+      "small autonomous data science team",
+      "A/B testing process for offers",
+      "governance over offer personalization"
+    ],
+    "stack_possible": [
+      "custom propensity model",
+      "player feature pipeline",
+      "in-game offer system"
+    ],
+    "equipe": "1-2 data scientists + 1 backend dev, working with the game team and monetization design",
+    "playbook": [
+      {
+        "action": "Map the player's state: inventory, progression, and purchase history consolidated per player",
+        "livrable": "Player feature pipeline kept up to date continuously"
+      },
+      {
+        "action": "Define the offer space: what the ML chooses (content) and what stays fixed (price, bundle size), plus personalization governance",
+        "livrable": "Offer catalog and written rules"
+      },
+      {
+        "action": "Train the propensity model: predict per player the content most likely to be bought",
+        "livrable": "Model evaluated offline on purchase history"
+      },
+      {
+        "action": "A/B test: personalized offers served to a segment against the standard store",
+        "livrable": "Conversion and revenue-per-player reading on the test"
+      },
+      {
+        "action": "Generalize to the whole base and automate everything that recurs on a regular basis",
+        "livrable": "ML-served offers as routine, permanent measurement loop"
+      }
+    ],
+    "premiere_etape": "Map the player's state (inventory, progression, purchase frequency) and test a propensity model on a segment before generalizing to the store."
+  },
+  "statut_vivant": {
+    "note": "ML personalization of monetization has run in Clash Royale since 2018, and Supercell described in 2025 its extension to acquisition and monetization, with an AI support agent in production."
+  },
+  "transposable_ue": {
+    "note": "Personalization of card offers relies on the player's purchase and progression behavior. Under GDPR, this profiling for monetization purposes requires a legal basis and transparency, and offer personalization remains monitored by consumer law. The pattern of an offer served by ML is transposable, with this framing."
+  }
+}

@@ -1,0 +1,113 @@
+{
+  "seo": {
+    "title": "Netflix: recommendation engine - 80% of hours watched and > $1B/year in retention (2015)",
+    "meta_description": "Netflix's recommendation system drives ~80% of hours watched and is estimated to be worth over $1B/year in retention, according to two Netflix executives.",
+    "resume_citable": "At Netflix, around 80% of hours watched come from personalized recommendations, a system its executives value at over 1 billion dollars per year in retention (ACM article, 2015).",
+    "faq": [
+      {
+        "q": "How much is Netflix recommendation worth?",
+        "a": "Two Netflix executives estimated it at over 1 billion dollars per year in retention value in a 2015 ACM article."
+      },
+      {
+        "q": "What share of viewing comes from recommendations?",
+        "a": "Around 80% of hours of content streamed on Netflix come from recommendations, not from search."
+      }
+    ]
+  },
+  "pattern": "content recommendation engine",
+  "etape_parcours": "loyalty",
+  "objectif_business": "Reduce churn by helping each subscriber quickly find a title to watch, before they leave the app. Personalization replaces search as the entry point to the catalog and increases the lifetime value of the subscription.",
+  "description": "The system ranks and orders the catalog for each profile from viewing signals (what is clicked, how long it is watched, the time of day, the device, what is ignored). It drives the home page: the choice of rows, the order of titles within each row, and even the artwork displayed per title. The vast majority of hours watched come from these recommendations, not from an active search.",
+  "points_cles": [
+    "Recommendation engine that ranks the catalog for each profile.",
+    "Custom collaborative filtering and personalized ranking, driving home, rows, and artwork.",
+    "Around 80% of hours watched come from recommendations, estimated at over $1B per year in value.",
+    "Evidence B, confirmed status."
+  ],
+  "resultats": [
+    { "metrique": "Share of hours watched coming from recommendations" },
+    { "metrique": "Estimated annual value of retention via personalization (2016)" }
+  ],
+  "niveau_preuve": {
+    "justification": "Figures published by two Netflix executives (Gomez-Uribe, VP Product Innovation, and Neil Hunt, Chief Product Officer) in a peer-reviewed ACM article, picked up and attributed by an independent research report. A direct figure from the subject brand, not from financial results per se."
+  },
+  "stack_technique": [
+    { "detail": "Collaborative filtering and personalized ranking that drive the choice of rows, the order of titles, and the artwork; Netflix's proprietary ML." },
+    { "detail": "Per-profile logging (play, duration, drop-off, device, time) feeding real-time scoring and batch retraining." },
+    { "detail": "Continuous experimentation on the interface to validate each evolution of the recommendation models." }
+  ],
+  "fonctionnement_operationnel": {
+    "cadence": "Real-time scoring at each session open; regular batch retraining of the models on viewing logs.",
+    "opere_par": "Netflix's central Personalization / Machine Learning team, backed by the Product teams.",
+    "signal_pilote": "Implicit viewing (play, watch duration, drop-off, scroll without a click). If this log flow is cut or biased, the ranking degrades and the home page loses its relevance.",
+    "etapes": [
+      {
+        "etape": "Signal collection",
+        "detail": "Each subscriber interaction (play, duration, device, time, ignored titles) is logged per profile.",
+        "acteur": "site_app / data team"
+      },
+      {
+        "etape": "Scoring and ranking",
+        "detail": "The models order the catalog for the profile: which rows, which title order, which artwork to show.",
+        "acteur": "AI"
+      },
+      {
+        "etape": "Home page rendering",
+        "detail": "The app composes the personalized home from the scores; the subscriber sees a grid specific to their profile.",
+        "acteur": "site_app"
+      },
+      {
+        "etape": "Retraining loop",
+        "detail": "New viewing logs feed the models back to adjust the following recommendations.",
+        "acteur": "data team / AI"
+      }
+    ]
+  },
+  "replication": {
+    "playbook": [
+      {
+        "action": "Cleanly instrument implicit viewing (play, duration, drop-off, scroll without a click) per profile.",
+        "livrable": "Reliable log pipeline and catalog structure with metadata."
+      },
+      {
+        "action": "Build a first collaborative filtering model and a ranking evaluated offline on the history.",
+        "livrable": "Baseline model with documented offline metrics."
+      },
+      {
+        "action": "Launch an A/B test on one row or one section of the home page.",
+        "livrable": "Engagement readout vs a control group."
+      },
+      {
+        "action": "Extend the steering to the entire home: choice of rows, order of titles.",
+        "livrable": "Generalized personalized home page."
+      },
+      {
+        "action": "Set up the regular retraining loop and churn / hours-watched monitoring.",
+        "livrable": "Iteration process and a retention dashboard."
+      }
+    ],
+    "equipe": "2-3 data scientists + 1 data engineer + 1 PM, with an A/B testing capability on the interface.",
+    "prerequis_data": [
+      "per-user viewing / consumption logs",
+      "structured catalog with metadata",
+      "stable profile identifier"
+    ],
+    "prerequis_orga": [
+      "an internal data science team",
+      "an A/B testing capability on the interface",
+      "a real-time log pipeline"
+    ],
+    "stack_possible": [
+      "custom/in-house",
+      "AWS Personalize or a managed recommendation engine",
+      "feature store"
+    ],
+    "premiere_etape": "Cleanly instrument implicit viewing (play, duration, drop-off) per profile before any model."
+  },
+  "statut_vivant": {
+    "note": "Recommendation remains the central mechanic of the Netflix app; a feature visible in production for every subscriber."
+  },
+  "transposable_ue": {
+    "note": "Recommendation on first-party viewing data, a lawful basis of legitimate interest or contract. GDPR applies to profiling; the AI Act does not classify an entertainment content recommender as high-risk. Already operating in Netflix's EU markets."
+  }
+}

@@ -1,0 +1,134 @@
+{
+  "seo": {
+    "title": "ServiceNow: Now Assist on its own funnel - 16x lead-to-sale conversion and 86% deflection (2025)",
+    "meta_description": "ServiceNow deploys its own Now Assist internally: the CEO reports a 16x lead-to-sale conversion improvement and more than 86% deflection of repetitive tasks.",
+    "resume_citable": "ServiceNow uses its own Now Assist internally, with a 16x lead-to-sale conversion improvement and more than 86% deflection of repetitive tasks, figures cited by the CEO on 2025 earnings.",
+    "faq": [
+      {
+        "q": "How does ServiceNow use Now Assist for its own growth?",
+        "a": "Internally on its sales funnel and processes, to improve lead-to-sale conversion and automate the teams' repetitive tasks."
+      },
+      {
+        "q": "What figures were communicated?",
+        "a": "A 16x higher lead-to-sale conversion and more than 86% deflection, with 2.3 million hours saved through employee self-service in 2025."
+      }
+    ]
+  },
+  "pattern": "internal agentic AI for lead-to-sale conversion and task automation",
+  "etape_parcours": "consideration",
+  "objectif_business": "Run ServiceNow on ServiceNow. The company deploys its own Now Assist internally to improve the conversion of its leads into sales and automate its teams' repetitive tasks, as public proof of its product.",
+  "points_cles": [
+    "Internal deployment of the Now Assist genAI suite across the sales funnel and support.",
+    "ServiceNow Now Assist stack on the Now Platform, with scoring and next-best-action agents.",
+    "16x lead-to-sale conversion, more than 86% deflection, 2.3 million hours saved in 2025.",
+    "Evidence level A, confirmed status, figures cited by the CEO on 2025 earnings."
+  ],
+  "description": "ServiceNow uses Now Assist, its genAI suite, on its own processes. CEO Bill McDermott reported on earnings a 16x lead-to-sale conversion gain and more than 86% deflection of repetitive tasks thanks to the internal deployment. Beyond the sales funnel, ServiceNow claims 2.3 million hours saved through employee self-service in 2025, a level-1 IT service desk operated by an AI agent described as 99% faster than the previous human agents, and 85% of its service desk staff redeployed to higher-value tasks.",
+  "resultats": [
+    {
+      "metrique": "Improvement in internal lead-to-sale conversion"
+    },
+    {
+      "metrique": "Deflection of internal repetitive tasks"
+    },
+    {
+      "metrique": "Hours saved through employee self-service (2025)"
+    }
+  ],
+  "niveau_preuve": {
+    "justification": "Figures put forward by CEO Bill McDermott during an earnings call (Q1 2025) and picked up by the business press. Statement in financial results plus aligned press sources."
+  },
+  "stack_technique": [
+    {
+      "detail": "ServiceNow's genAI suite (agents, summarization, generation), deployed here by ServiceNow on its own sales and support processes"
+    },
+    {
+      "detail": "workflow platform on which the sales funnel, IT service desk, and employee self-service run"
+    },
+    {
+      "detail": "lead prioritization and next-best-action suggestion; the underlying models are not detailed in the sources"
+    },
+    {
+      "detail": "handling of internal IT requests, described as 99% faster than the previous human agents, with deflection to self-service"
+    }
+  ],
+  "fonctionnement_operationnel": {
+    "cadence": "Continuous on the sales funnel and self-service, with retraining as interactions accumulate",
+    "opere_par": "ServiceNow's revenue operations and IT teams, on the Now Assist platform",
+    "signal_pilote": "Lead data and the history of internal interactions. Without clean, instrumented funnel data, lead-to-sale scoring and deflection lose reliability.",
+    "etapes": [
+      {
+        "etape": "Lead capture and scoring",
+        "detail": "Now Assist prioritizes leads and suggests the next sales action.",
+        "acteur": "AI"
+      },
+      {
+        "etape": "Automation of repetitive tasks",
+        "detail": "Recurring internal requests are deflected to self-service and agents.",
+        "acteur": "AI"
+      },
+      {
+        "etape": "Employee self-service",
+        "detail": "Staff resolve requests on their own via the agent, which frees up hours.",
+        "acteur": "AI and employees"
+      },
+      {
+        "etape": "Human redeployment",
+        "detail": "Teams freed from routine tasks move to higher-value work.",
+        "acteur": "Operations"
+      },
+      {
+        "etape": "Measurement",
+        "detail": "Lead-to-sale conversion, deflection, and hours saved are tracked and communicated in results.",
+        "acteur": "Revenue operations"
+      }
+    ]
+  },
+  "replication": {
+    "prerequis_data": [
+      "first-party sales funnel data",
+      "history of internal requests",
+      "conversion instrumentation"
+    ],
+    "prerequis_orga": [
+      "a revenue operations team",
+      "a process to redeploy freed-up teams",
+      "governance of internal agents"
+    ],
+    "stack_possible": [
+      "a genAI agent platform (Now Assist or equivalent)",
+      "CRM",
+      "workflow engine"
+    ],
+    "premiere_etape": "Instrument the lead-to-sale funnel, then connect a scoring and next-best-action agent on a pilot segment.",
+    "playbook": [
+      {
+        "action": "Instrument the funnel: trace each lead-to-sale stage in the CRM and workflows, define the reference conversion",
+        "livrable": "Funnel measured end to end with a quantified baseline"
+      },
+      {
+        "action": "Connect the scoring and next-best-action agent on a pilot sales segment",
+        "livrable": "Leads prioritized by the AI, conversion tracked against the baseline"
+      },
+      {
+        "action": "Map the repetitive internal requests and arm self-service and the level-1 agent",
+        "livrable": "Deflection rate measured on the target cases"
+      },
+      {
+        "action": "Redeploy the freed-up hours to higher-value tasks, with HR support",
+        "livrable": "Effective redeployment plan and tracking of hours saved"
+      },
+      {
+        "action": "Extend to the other segments and set up agent governance (permissions, response review, human escalation)",
+        "livrable": "Generalized agents, routine conversion and deflection reporting"
+      }
+    ],
+    "equipe": "1 revenue operations lead + 1 platform admin + 1 data analyst, with sales and IT sponsors"
+  },
+  "statut_vivant": {
+    "note": "Now Assist is a growth engine claimed by ServiceNow (more than 600 million dollars of ACV) and the internal dogfooding is cited as proof in every 2025 earnings cycle."
+  },
+  "transposable_ue": {
+    "note": "Internal use of AI agents on sales and support processes. In the EU, GDPR on lead and employee data, and AI Act information on automation. Lead-to-sale conversion scoring assumes a clear legal basis for processing prospect data."
+  }
+}

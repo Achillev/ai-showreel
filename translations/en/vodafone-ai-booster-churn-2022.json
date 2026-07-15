@@ -1,0 +1,142 @@
+{
+  "seo": {
+    "title": "Vodafone: industrialized churn prediction across 8+ countries (AI Booster / Vertex AI)",
+    "meta_description": "How Vodafone industrialized churn prediction across 8+ markets with a group MLOps platform (AI Booster), moving a model from PoC to production in 4 weeks.",
+    "resume_citable": "Vodafone industrialized churn prediction across more than 8 countries through AI Booster, its MLOps platform on Vertex AI, cutting model time-to-market by 5x and moving from PoC to production in 4 weeks instead of 5 months.",
+    "faq": [
+      {
+        "q": "Can a smaller brand replicate this?",
+        "a": "The pattern yes, the scale no: it requires a unified customer history, a data science team, and an activation loop. The effort is high - this is a project, not a feature toggle."
+      },
+      {
+        "q": "What is the real documented gain?",
+        "a": "The public figures cover the speed and scale of model production (MLOps), not churn points avoided, which are not published."
+      }
+    ]
+  },
+  "pattern": "Industrialized churn prediction: cancellation models trained per market on a group MLOps platform, with standardized templates replicated from country to country to trigger proactive retention actions",
+  "etape_parcours": "post-purchase / loyalty",
+  "objectif_business": "Retain customers before they leave, market by market, and stop rebuilding a churn model from scratch in every country.",
+  "description": "Vodafone built AI Booster, an internal model-productionization platform built on Vertex AI and connected to Neuron, its group data warehouse. The founding use case is cancellation prediction. The Big Data & AI team builds a churn model for one market from usage, billing, contract, and interaction data, pushes it to production through standardized pipelines, then reuses the same template in another country without starting over. The resulting scores feed retention campaigns and offer personalization. The platform runs thousands of models per day across more than eight countries, and moves a model from trial to production in four weeks instead of five months. One point of honesty: the public figures cover the speed and scale of production, not churn points avoided, which Vodafone does not disclose.",
+  "points_cles": [
+    "Industrialized churn prediction, one model per market replicated from country to country.",
+    "AI Booster MLOps platform on Vertex AI, XGBoost baseline, unified data on BigQuery.",
+    "Time-to-market cut by 5x, PoC to production in 4 weeks instead of 5 months.",
+    "Evidence level B, confirmed status, thousands of models per day across 8+ countries."
+  ],
+  "resultats": [
+    {
+      "metrique": "Time-to-market of ML models"
+    },
+    {
+      "metrique": "PoC-to-production time, versus roughly 5 months previously"
+    },
+    {
+      "metrique": "Deployment frequency"
+    },
+    {
+      "metrique": "ML models in production per day, across 8+ countries"
+    }
+  ],
+  "niveau_preuve": {
+    "justification": "Documented by official Google Cloud sources and an integrator (Datatonic) with named Vodafone spokespeople - solid but operational figures (MLOps speed/scale): no churn impact in percentage points is public, and the sources are on the vendor side."
+  },
+  "fonctionnement_operationnel": {
+    "cadence": "Scores recomputed on a regular batch (often weekly), models retrained when their performance drifts. It is a permanent program, not a campaign.",
+    "opere_par": "A central data science team for the models and the platform, local marketing/CRM teams for activation.",
+    "signal_pilote": "The historical cancellation label. If it is poorly defined (when do we consider that a customer has churned?), the whole model is biased, whatever its stated accuracy.",
+    "etapes": [
+      {
+        "etape": "Unify the customer data",
+        "detail": "Usage, billing, contracts, and support tickets gathered in one place, with at least twelve months of depth. Without this foundation, no reliable model.",
+        "acteur": "Data team"
+      },
+      {
+        "etape": "Train and score",
+        "detail": "A model learns to spot departure signals and assigns each customer a churn probability. An XGBoost is often enough as a starting point.",
+        "acteur": "AI / data science"
+      },
+      {
+        "etape": "Hand off to local teams",
+        "detail": "The scores go into the CRM. Country marketing decides what to do with at-risk customers: an offer, a call, a commercial gesture.",
+        "acteur": "Local marketing / CRM"
+      },
+      {
+        "etape": "Always keep a control group",
+        "detail": "You do not contact 100% of at-risk customers. Part of them serves as a control, otherwise it is impossible to know whether the retention comes from the action or from chance.",
+        "acteur": "Data team + marketing"
+      },
+      {
+        "etape": "Monitor drift and retrain",
+        "detail": "Customer behavior changes; a model left as is degrades silently. The platform tracks this drift and triggers retraining.",
+        "acteur": "AI / MLOps"
+      }
+    ]
+  },
+  "replication": {
+    "prerequis_data": [
+      "Unified customer history (usage, billing, contracts, tickets, interactions)",
+      "Reliable cancellation label, 12+ months of depth",
+      "GDPR governance of the profiling"
+    ],
+    "prerequis_orga": [
+      "Data science team + marketing activation loop",
+      "Ability to run controlled tests (control group)"
+    ],
+    "stack_possible": [
+      "Vertex AI or equivalent (Databricks, SageMaker, Snowflake+ML)",
+      "XGBoost as baseline",
+      "Activation via CDP/CRM (Salesforce Marketing Cloud, Braze)"
+    ],
+    "premiere_etape": "Scope a pilot on a high-value segment: define the churn label, train a baseline model on the existing warehouse, measure the uplift of a targeted retention campaign on high scores vs a control group.",
+    "playbook": [
+      {
+        "action": "Define the cancellation label (when has a customer churned) and unify the customer data over 12+ months.",
+        "livrable": "Validated label definition + unified customer table (usage, billing, contracts, tickets)."
+      },
+      {
+        "action": "Train a baseline model (XGBoost) and backtest it on history.",
+        "livrable": "Model with performance metrics on past data."
+      },
+      {
+        "action": "Push the scores into the CRM and launch a pilot campaign on the high scores, with an uncontacted control group.",
+        "livrable": "Live retention campaign + measurement design with control."
+      },
+      {
+        "action": "Measure the retention uplift and industrialize the pipeline (retraining, drift detection).",
+        "livrable": "Uplift reading vs control + documented automated pipeline."
+      },
+      {
+        "action": "Replicate the template on a second segment or market without starting over.",
+        "livrable": "Reusable pipeline template, second model in production."
+      }
+    ],
+    "equipe": "2 data scientists + 1 data engineer + 1 PM + local CRM/marketing team for activation"
+  },
+  "stack_technique": [
+    {
+      "detail": "Foundation of the internal AI Booster platform: training, pipelines, and serving of the per-market churn models."
+    },
+    {
+      "detail": "Classification algorithm used as a baseline for the cancellation models."
+    },
+    {
+      "detail": "Warehouse of the group data ocean (Neuron) that unifies usage, billing, contracts, and tickets."
+    },
+    {
+      "detail": "CI/CD of the standardized pipelines LAB to STAGING to PROD, replicated from country to country."
+    },
+    {
+      "detail": "Vodafone's internal MLOps platform built on Vertex AI: thousands of models per day across 8+ countries, PoC to production in 4 weeks."
+    },
+    {
+      "detail": "Integrator that built the AI Booster platform with the Vodafone teams."
+    }
+  ],
+  "statut_vivant": {
+    "note": "The Vodafone-Google Cloud relationship has deepened (10-year deal Oct. 2024, AI products through April 2026) and Vertex AI remains the group's ML platform - the infrastructure of the churn use case is structurally sustained."
+  },
+  "transposable_ue": {
+    "note": "Already operated mostly in the EU. Churn scoring is GDPR profiling (legal basis, data minimization, customer information); if fully automated decisions follow from it, GDPR Article 22 must be framed. AI Act: limited risk, transparency obligations."
+  }
+}

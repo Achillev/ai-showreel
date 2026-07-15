@@ -249,7 +249,7 @@ function scoreBar(label, val) {
 const SITE = 'https://ai-showreel.com';
 // Flag bilingue : passe à true quand le contenu EN (fiches + pages) est traduit et prêt à indexer.
 // false = seul le FR est généré/indexé ; la machinerie i18n reste en place mais l'anglais n'est pas exposé.
-const BILINGUAL = false;
+const BILINGUAL = true;
 const ORG_JSONLD = { '@type': 'Organization', '@id': SITE + '/#org', name: 'AI Showreel', url: SITE, description: 'Index indépendant des déploiements IA prouvés en marketing digital, noté sur une échelle de preuve publique.' };
 
 const _NAV = [
@@ -1110,6 +1110,14 @@ function build() {
   }
   const files = readdirSync(CASES_DIR).filter(f => f.endsWith('.json'));
   const cases = files.map(f => { try { return JSON.parse(readFileSync(join(CASES_DIR, f), 'utf8')); } catch (e) { console.error('SKIP', f, e.message); return null; } }).filter(Boolean);
+
+  // traductions EN : fichiers separes translations/en/<id>.json fusionnes en c.i18n.en (sources intactes)
+  const I18N_EN = join(ROOT, 'translations', 'en');
+  let nTrad = 0;
+  if (existsSync(I18N_EN)) for (const c of cases) {
+    const p = join(I18N_EN, `${c.id}.json`);
+    if (existsSync(p)) { try { c.i18n = { en: JSON.parse(readFileSync(p, 'utf8')) }; nTrad++; } catch (e) { console.error('SKIP trad', c.id, e.message); } }
+  }
 
   rmSync(DIST, { recursive: true, force: true });
   mkdirSync(join(DIST, 'assets'), { recursive: true });

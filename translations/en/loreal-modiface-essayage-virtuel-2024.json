@@ -1,0 +1,114 @@
+{
+  "seo": {
+    "title": "L'Oreal ModiFace: AR virtual try-on - 100M sessions in 2023, conversion x3",
+    "meta_description": "L'Oreal's ModiFace virtual try-on engine exceeded 100 million sessions in 2023 (40M in 2022) and triples conversion rates.",
+    "resume_citable": "L'Oreal's ModiFace virtual try-on totaled more than 100 million sessions in 2023 (versus 40 million in 2022) and triples the conversion rate where it is deployed.",
+    "faq": [
+      {
+        "q": "How many virtual try-on sessions did L'Oreal record?",
+        "a": "More than 100 million digital try-on sessions in 2023, versus 40 million in 2022, according to the group's earnings presentation."
+      },
+      {
+        "q": "What is the effect on sales?",
+        "a": "Where ModiFace try-on is deployed, time spent increases and the conversion rate is tripled according to L'Oreal."
+      }
+    ]
+  },
+  "pattern": "AR virtual try-on (synthetic makeup rendering on the face)",
+  "etape_parcours": "Consideration",
+  "objectif_business": "Reduce purchase doubt on makeup (color, shade) by letting customers test products on their own face, and increase conversion and engagement on e-commerce and in store.",
+  "description": "ModiFace, acquired by L'Oreal in 2018, provides virtual try-on and beauty diagnosis to a large share of the group's brands (Maybelline, L'Oreal Paris, Lancome, Urban Decay, etc.) as well as to retailers and platforms (Amazon, A.S. Watson, DM). The user opens the camera, the system detects and tracks the face in real time, then applies a photorealistic rendering of the product (lipstick, eyeshadow, foundation). The same engine also powers skin diagnosis. Global deployment, on brand websites, at retailers, and through in-store mirrors/kiosks.",
+  "points_cles": ["AR virtual try-on of makeup on the face, online and in store.", "ModiFace engine (vision, deep learning, real-time rendering), L'Oreal subsidiary.", "More than 100 million sessions in 2023 (40M in 2022), conversion tripled.", "Evidence level A, status confirmed: figure stated in 2024 annual results."],
+  "resultats": [
+    { "metrique": "Digital try-on sessions in 2023, versus 40 million in 2022" },
+    { "metrique": "Effect on conversion (with vs without try-on)" },
+    { "metrique": "Looks tried per user" }
+  ],
+  "niveau_preuve": {
+    "justification": "The 100 million sessions figure stated by CEO Nicolas Hieronimus in an earnings presentation (February 2024), corroborated by the Chief Digital Officer (The Drum) and by the documented multi-retailer deployment (WWD)."
+  },
+  "stack_technique": [
+    { "detail": "virtual try-on and beauty diagnosis engine acquired by L'Oreal in 2018, used by the group's brands and by retailers (Amazon, A.S. Watson, DM)" },
+    { "detail": "ModiFace proprietary deep learning: feature detection and real-time tracking before applying the photorealistic rendering" },
+    { "detail": "component embedded on product pages, apps, and in-store mirrors/kiosks; inference most often runs locally on the device" },
+    { "detail": "product/rendering mapping (shades, textures) maintained by the teams for each collection; this is what makes the try-on reliable" }
+  ],
+  "fonctionnement_operationnel": {
+    "cadence": "Real time (rendering when the camera opens), continuously integrated on the commerce surfaces",
+    "opere_par": "ModiFace / Beauty Tech team for the engine, brand and retailer e-commerce teams for the integration",
+    "signal_pilote": "The precise mapping of product references (shades, textures) onto the rendering. If a shade is not correctly calibrated, the try-on misleads and breaks purchase confidence.",
+    "etapes": [
+      {
+        "etape": "Opening the try-on",
+        "detail": "The user activates the camera on the product page or the in-store kiosk.",
+        "acteur": "client"
+      },
+      {
+        "etape": "Face detection and tracking",
+        "detail": "The engine detects the features and tracks the movements in real time.",
+        "acteur": "AI (ModiFace)"
+      },
+      {
+        "etape": "Product rendering",
+        "detail": "The selected shade/texture is applied photorealistically and follows the face like a mirror.",
+        "acteur": "AI (ModiFace)"
+      },
+      {
+        "etape": "Comparison and add to cart",
+        "detail": "The user goes through looks, compares before/after, and moves to purchase.",
+        "acteur": "client"
+      },
+      {
+        "etape": "Calibration and catalog",
+        "detail": "The teams maintain the product/rendering match with each new collection.",
+        "acteur": "brand / ModiFace team"
+      }
+    ]
+  },
+  "replication": {
+    "prerequis_data": [
+      "product reference with shades/textures calibrated for the AR rendering",
+      "product visual assets"
+    ],
+    "prerequis_orga": [
+      "e-commerce integration (product page, app)",
+      "calibration process for each collection"
+    ],
+    "stack_possible": [
+      "ModiFace",
+      "Perfect Corp (YouCam)",
+      "Banuba",
+      "Wanna/AR SaaS"
+    ],
+    "premiere_etape": "Connect a try-on SaaS to the highest-traffic makeup product pages and calibrate the priority shades.",
+    "playbook": [
+      {
+        "action": "Choose the highest-traffic makeup product pages and contract a try-on SaaS",
+        "livrable": "List of pilot SKUs + signed SaaS contract"
+      },
+      {
+        "action": "Calibrate the priority shades and textures with the vendor",
+        "livrable": "Shade/rendering reference visually validated by the business"
+      },
+      {
+        "action": "Integrate the SDK on the pilot pages with camera consent and no image retention",
+        "livrable": "Try-on in production on the pilot pages, GDPR-compliant"
+      },
+      {
+        "action": "Measure the effect on conversion and engagement in A/B (with vs without try-on)",
+        "livrable": "Quantified read of the conversion lift and time spent"
+      },
+      {
+        "action": "Extend to the rest of the catalog, to the apps, and to in-store kiosks, with calibration for each collection",
+        "livrable": "Rollout plan by collection + recurring calibration process"
+      }
+    ],
+    "equipe": "1 e-commerce PM + 1 front-end dev + 1 product lead for shade calibration"
+  },
+  "statut_vivant": {
+    "note": "Strong growth stated in the 2023 results, extension from makeup to skincare confirmed by the CEO."
+  },
+  "transposable_ue": {
+    "note": "Virtual try-on most often runs locally on the device (camera); little biometric data stored if the inference stays on the client side. Verify camera consent and non-retention of face images to stay GDPR-compliant."
+  }
+}

@@ -1,0 +1,108 @@
+{
+  "seo": {
+    "title": "DHL Freight: VIVA chatbot and voicebot - 93% of requests handled without human intervention (2024)",
+    "meta_description": "VIVA, DHL Freight's AI assistant (chatbot and voicebot), handles 93% of customer requests without human intervention, 24/7, deployed in Sweden, France, and the Czech Republic.",
+    "resume_citable": "VIVA, DHL Freight's AI assistant delivered as a chatbot and voicebot, answers 93% of customer requests without human intervention, deployed in Sweden (2021), France (2024), and the Czech Republic (2025).",
+    "faq": [
+      {
+        "q": "What is DHL Freight's VIVA?",
+        "a": "An AI customer service assistant, in chatbot and voicebot form, that handles shipment tracking, claims, and product questions 24 hours a day."
+      },
+      {
+        "q": "What resolution rate does VIVA reach?",
+        "a": "DHL Freight states that VIVA answers 93% of requests without human intervention, with the rest handed to an agent."
+      }
+    ]
+  },
+  "pattern": "Autonomous genAI customer service chatbot and voicebot",
+  "etape_parcours": "post-purchase",
+  "objectif_business": "Absorb recurring freight customer service requests (shipment tracking, claims, product questions) autonomously and 24/7, across several countries, without scaling up headcount.",
+  "description": "VIVA is the AI assistant for DHL Freight customer service, delivered as a chatbot and a voicebot under the internal ICE 2.0 project. A customer can track a shipment, open a claim, or ask a question about DHL Freight products, in writing through the help center or by phone with the voicebot, 24 hours a day. The 2025 version adds short-term memory that lets the assistant remember earlier questions within the same conversation. DHL first launched VIVA in Sweden in 2021 as an intent-based version, then moved to a genAI version able to phrase complete answers.",
+  "resultats": [
+    { "metrique": "Requests handled autonomously, without human intervention" },
+    { "metrique": "Deployment: Sweden (2021), France (2024), Czech Republic (2025)" }
+  ],
+  "niveau_preuve": {
+    "justification": "Official communication from the DHL Freight brand (blog and VIVA product pages by country) with figures, and a multi-market deployment verifiable through the online help centers. Single organization source (DHL) but confirmed by several official pages and the existence of the services in production, hence C rather than B."
+  },
+  "stack_technique": [
+    { "detail": "conversational foundation of the internal program that carries the VIVA chatbot and voicebot in each country" },
+    { "detail": "generative version of the assistant since 2024, with short-term memory since 2025; the model vendor is not publicly disclosed" },
+    { "detail": "VIVA's phone channel, rolled out country by country alongside the help center chat" },
+    { "detail": "real-time tracking data, the bulk of the request volume; if this link goes down, the assistant switches to a human" }
+  ],
+  "fonctionnement_operationnel": {
+    "cadence": "Real time, 24/7, on every incoming conversation in chat or by phone.",
+    "opere_par": "DHL Freight customer service, within the ICE 2.0 program.",
+    "signal_pilote": "Access to shipment status and the product knowledge base. If the link to tracking data goes down, the assistant can no longer answer tracking requests, which make up most of the volume, and hands off to a human.",
+    "etapes": [
+      {
+        "etape": "Customer contact",
+        "detail": "The customer opens the help center chat or calls and states the request (tracking, claim, product question).",
+        "acteur": "customer"
+      },
+      {
+        "etape": "Understanding",
+        "detail": "VIVA identifies the intent, with memory of earlier exchanges in the conversation since 2025.",
+        "acteur": "AI"
+      },
+      {
+        "etape": "Autonomous answer",
+        "detail": "The assistant phrases a complete answer from tracking data and the product base.",
+        "acteur": "AI"
+      },
+      {
+        "etape": "Escalate if needed",
+        "detail": "The 7% of out-of-scope cases are transferred to a customer service agent.",
+        "acteur": "AI"
+      }
+    ]
+  },
+  "replication": {
+    "prerequis_data": [
+      "real-time shipment tracking API",
+      "product and procedure knowledge base",
+      "conversation history for training"
+    ],
+    "prerequis_orga": [
+      "a pilot customer service team per country",
+      "multilingual governance and phased rollout",
+      "a GDPR / AI Act framework for a customer assistant"
+    ],
+    "stack_possible": [
+      "an LLM with intent orchestration",
+      "a voicebot component for the phone channel",
+      "connectors to the tracking system"
+    ],
+    "premiere_etape": "Deploy the chatbot on shipment tracking in a pilot country, measure the autonomous resolution rate, then add claims and the voicebot.",
+    "playbook": [
+      {
+        "action": "Frame the pilot scope (shipment tracking first) and the GDPR / AI Act setup (terms of use, privacy notice).",
+        "livrable": "Functional scope and legal framework published"
+      },
+      {
+        "action": "Connect the assistant to the tracking API and the product knowledge base.",
+        "livrable": "A bot able to answer tracking in test"
+      },
+      {
+        "action": "Launch the chatbot in a pilot country with escalation to an agent, and measure the autonomous resolution rate.",
+        "livrable": "Chatbot in production with a tracked resolution rate"
+      },
+      {
+        "action": "Add claims, product questions, and conversation memory.",
+        "livrable": "Broader functional coverage in the pilot country"
+      },
+      {
+        "action": "Add the voice channel and replicate the foundation in the next country.",
+        "livrable": "Voicebot live and a second country rolling out"
+      }
+    ],
+    "equipe": "2-3 conversational devs + 1 PM + customer service leads per country"
+  },
+  "statut_vivant": {
+    "note": "VIVA in production in several countries, with help center pages and terms of use published by DHL, and a schedule to extend to Germany, Italy, and the Netherlands."
+  },
+  "transposable_ue": {
+    "note": "Already deployed in the EU (Sweden, France, Czech Republic, with an extension to Germany/Italy/the Netherlands planned). The execution therefore builds in GDPR and the AI Act: terms of use and a privacy notice dedicated to the VIVA chatbot published by DHL, information about AI use, and controls on the handling of transport data."
+  }
+}

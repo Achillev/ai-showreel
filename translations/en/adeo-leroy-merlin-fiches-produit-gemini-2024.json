@@ -1,0 +1,135 @@
+{
+  "seo": {
+    "title": "Leroy Merlin (Adeo): product pages enriched by generative AI - coverage from 27% to 87% (2024)",
+    "meta_description": "Adeo, the parent company of Leroy Merlin, enriches its product pages with Gemini and Artefact: attribute coverage rose from 27% to 87%, with over 96% accuracy.",
+    "resume_citable": "With Gemini and Artefact, Adeo (Leroy Merlin) raised the attribute coverage of its product pages from 27% to 87%, with over 96% accuracy and 63% of products above 96% precision.",
+    "faq": [
+      {
+        "q": "What does the AI do on Adeo's product pages?",
+        "a": "A classification model sorts the products and Gemini automatically extracts the attribute values, with a self-verification step, to complete the pages at scale."
+      },
+      {
+        "q": "What is the quantified gain?",
+        "a": "Attribute coverage rose from 27% to 87%, with over 96% accuracy on the measured batch and an error rate of 3.6% versus roughly 8% for a human."
+      }
+    ]
+  },
+  "pattern": "genAI enrichment of product attributes and pages",
+  "etape_parcours": "consideration",
+  "objectif_business": "Make product pages complete and reliable at scale, to avoid losing sales because of thin product content and to improve search and filtering on the site.",
+  "description": "Adeo, the parent company of Leroy Merlin, industrialized the enrichment of its product pages with generative AI, in partnership with Artefact and on Google Cloud. The catalog covers around 3,600 categories, with 50 to 60 attributes on average per product and a library of 11,000 attributes. A DistilBERT classification model sorts the products, then Gemini extracts the attribute values with a built-in self-verification step. Attribute coverage rose from 27% to 87%. On a measured batch, around 32,000 predictions were made, over 20,000 of them fully automated, with over 96% accuracy and an error rate of 3.6%, versus roughly 8% for a human. 63% of products reach precision above 96%.",
+  "points_cles": [
+    "Automated enrichment of product pages with generative AI, together with Artefact.",
+    "DistilBERT classification then attribute extraction by Gemini with self-verification.",
+    "Attribute coverage rose from 27% to 87%, with over 96% accuracy.",
+    "Evidence level B, live status confirmed in production."
+  ],
+  "resultats": [
+    {
+      "metrique": "Product attribute coverage"
+    },
+    {
+      "metrique": "Error rate of 3.6%, versus roughly 8% for a human"
+    },
+    {
+      "metrique": "of products exceed 96% precision"
+    },
+    {
+      "metrique": "Fully automated AI predictions, out of around 32,000"
+    }
+  ],
+  "niveau_preuve": {
+    "justification": "Quantified case study published by the integrator Artefact and by Google Cloud (official interested sources), with measures of coverage, accuracy, and error rate on a production batch. Figures come from the project partners, not from a third-party audit, which places it at B."
+  },
+  "fonctionnement_operationnel": {
+    "cadence": "In batches across the catalog, with continuous processing of new products and references to enrich.",
+    "opere_par": "Adeo's data and catalog team, with support from Artefact for building the pipeline.",
+    "signal_pilote": "The quality of the product sources (supplier documents, labels) and the attribute reference. If the source is thin, extraction degrades and the error rate rises.",
+    "etapes": [
+      {
+        "etape": "Classification",
+        "detail": "DistilBERT sorts each product into one of the 3,600 reference categories.",
+        "acteur": "AI"
+      },
+      {
+        "etape": "Attribute extraction",
+        "detail": "Gemini extracts the attribute values from the product documents and labels.",
+        "acteur": "AI"
+      },
+      {
+        "etape": "Self-verification",
+        "detail": "A built-in verification step filters out low-confidence predictions before automation.",
+        "acteur": "AI"
+      },
+      {
+        "etape": "Review and handoff",
+        "detail": "Confident predictions are automated, uncertain cases go to human review before publication.",
+        "acteur": "data team"
+      }
+    ]
+  },
+  "replication": {
+    "prerequis_data": [
+      "Attribute reference and category taxonomy",
+      "Usable supplier product documents and labels",
+      "Validation set to measure precision and error"
+    ],
+    "prerequis_orga": [
+      "Rule for automatic handoff to human review on uncertain cases",
+      "Catalog team to adjudicate edge cases",
+      "Coverage and error metrics tracked"
+    ],
+    "stack_possible": [
+      "Product classification model",
+      "Generative LLM for attribute extraction",
+      "Self-verification step and confidence threshold"
+    ],
+    "premiere_etape": "Pick a high-volume category with thin pages, connect classification then genAI extraction, and set an automation threshold with review of uncertain cases.",
+    "playbook": [
+      {
+        "action": "Pick a high-volume category with thin pages, audit the attribute reference and the quality of supplier sources.",
+        "livrable": "Pilot scope defined plus annotated validation set"
+      },
+      {
+        "action": "Set up product classification (DistilBERT-type model) on the category reference.",
+        "livrable": "Classifier evaluated on the validation set"
+      },
+      {
+        "action": "Connect LLM attribute extraction with self-verification and a confidence threshold.",
+        "livrable": "Extraction pipeline with error rate measured against human entry"
+      },
+      {
+        "action": "Wire the handoff: confident predictions automated, uncertain cases sent to a human review queue.",
+        "livrable": "Tooled review queue and documented handoff rule"
+      },
+      {
+        "action": "Move the pilot category into production, track coverage and error rate, decide on extension.",
+        "livrable": "Coverage/precision dashboard and extension plan for the next categories"
+      }
+    ],
+    "equipe": "1 ML engineer + 1 data engineer + 1 catalog product owner, with category experts for the review of uncertain cases"
+  },
+  "stack_technique": [
+    {
+      "detail": "Google's Gemini models used to extract product attribute values, with a built-in self-verification step."
+    },
+    {
+      "detail": "Open source classification model (a distilled version of BERT) that sorts each product into one of the 3,600 reference categories."
+    },
+    {
+      "detail": "Cloud foundation on which the Adeo catalog enrichment pipeline runs."
+    },
+    {
+      "detail": "Implementation partner for the classification and attribute extraction pipeline."
+    },
+    {
+      "detail": "In-house orchestration: a reference of 11,000 attributes, confidence thresholds, and handoff to human review."
+    }
+  ],
+  "statut_vivant": {
+    "note": "Artefact and Google Cloud case study describing a system in production on the Adeo catalog, with the group's generative AI strategy (Gemini) extending across several banners."
+  },
+  "transposable_ue": {
+    "note": "Already deployed in the EU (Adeo, based in France). The automatic enrichment of product attributes by generative AI works on catalog data, not on personal data. A verification step and human control over uncertain cases address the quality and traceability requirements expected under the AI Act."
+  }
+}

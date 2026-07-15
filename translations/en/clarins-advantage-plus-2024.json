@@ -1,0 +1,111 @@
+{
+  "seo": {
+    "title": "Clarins: Meta acquisition managed on incrementality (Advantage+) - +22% incremental web purchases (2024)",
+    "meta_description": "Clarins measured Meta's real contribution in France via Conversion Lift: +22% incremental web purchases and 85% of purchases invisible to last-click.",
+    "resume_citable": "In 2024, Clarins measured through Conversion Lift that its Meta Advantage+ campaigns delivered +22% incremental web purchases in France, of which 85% remained invisible to last-click attribution.",
+    "faq": [
+      {
+        "q": "Is the Clarins result attributed or incremental?",
+        "a": "Incremental: the brand used a Conversion Lift study with a control group, cross-checked with Google Analytics, more rigorous than a last-click measure."
+      },
+      {
+        "q": "Which AI tool did Clarins use?",
+        "a": "Meta Advantage+ Shopping and Advantage+ Catalog Ads, which manage audiences, placements, and creative from the product catalog."
+      }
+    ]
+  },
+  "pattern": "AI-automated sales campaign plus dynamic catalog ads, evaluated on incrementality via Conversion Lift against last-click",
+  "etape_parcours": "discovery -> purchase",
+  "objectif_business": "Prove that Meta is an acquisition channel underestimated by last-click measurement, and manage it on incrementality rather than attribution.",
+  "description": "Clarins, the French cosmetics and skincare brand, set out to measure Meta's true contribution to its online sales in France, beyond what last-click attribution reports. The brand ran its Advantage+ Shopping and Advantage+ Catalog Ads campaigns, where Meta's AI chooses audiences, placements, and creative from the product catalog, then ran a Conversion Lift study with a control group from May 6 to May 31, 2024, cross-checked with Google Analytics. The result: Meta ads generated 22 percent incremental web purchases and 19 percent incremental paid search visits, and 85 percent of the web purchases attributable to Meta did not appear in the last-click model. Measured by Conversion Lift, web purchases were 6.5 times higher than what attribution saw.",
+  "points_cles": [
+    "Automated Meta sales campaigns (Advantage+ Shopping and Catalog Ads) measured on incrementality.",
+    "Conversion Lift study with a control group cross-checked with Google Analytics, with the agency tigrz.",
+    "+22% incremental web purchases, 85% invisible to last-click, web purchases x6.5 vs last-click.",
+    "Evidence level B, live status confirmed."
+  ],
+  "resultats": [
+    { "metrique": "Incremental web purchases attributed to Meta" },
+    { "metrique": "Incremental paid search visits attributed to Meta" },
+    { "metrique": "Web purchases not seen by last-click" },
+    { "metrique": "Web purchases measured by Conversion Lift vs last-click" }
+  ],
+  "niveau_preuve": {
+    "justification": "Official Meta case study, quantified and backed by a Conversion Lift with a control group cross-checked with Google Analytics (a serious incrementality method), with named person and agency; single source published by the platform."
+  },
+  "stack_technique": [
+    { "detail": "automated sales campaign: audiences, bids, and placements driven by Meta ML" },
+    { "detail": "dynamic catalog ads generated from the product feed" },
+    { "detail": "web purchases sent from the browser and server side in consented mode, the signal that feeds the algorithm" },
+    { "detail": "incrementality study with a control group, the arbiter of the test against last-click" },
+    { "detail": "cross-checking the incrementality measure with in-house analytics" }
+  ],
+  "fonctionnement_operationnel": {
+    "cadence": "Continuous delivery; incrementality measurement is done in test waves (here a 4-week test window with a control group).",
+    "opere_par": "The France e-commerce / acquisition / CRM team, with the social agency tigrz.",
+    "signal_pilote": "Web purchases reported by the Pixel and the Conversions API, and the Conversion Lift control group. Without a proper control group, you fall back on attribution that underestimates the channel.",
+    "etapes": [
+      {
+        "etape": "Deliver through Meta AI",
+        "detail": "Advantage+ Shopping and Catalog Ads choose audiences, placements, and creative from the product catalog. The team provides the feed and the visuals.",
+        "acteur": "Meta AI"
+      },
+      {
+        "etape": "Set up the incrementality study",
+        "detail": "Conversion Lift with a control group in France, May 2024, cross-checked with Google Analytics to compare real contribution and last-click.",
+        "acteur": "Data team / Meta"
+      },
+      {
+        "etape": "Read the gap with attribution",
+        "detail": "The analysis shows the share of purchases invisible to last-click (85 percent) and the 6.5x multiplier. This is what justifies the budget internally.",
+        "acteur": "Media team"
+      }
+    ]
+  },
+  "replication": {
+    "prerequis_data": [
+      "Clean, up-to-date product catalog (feed)",
+      "Pixel + Conversions API with reliable purchases",
+      "Enough volume for a Conversion Lift control group"
+    ],
+    "prerequis_orga": [
+      "Internal agreement to manage on incrementality rather than last-click",
+      "Ability to set up and read an incrementality study"
+    ],
+    "stack_possible": [
+      "Meta Advantage+ Sales Campaigns + Catalog Ads + CAPI",
+      "Conversion Lift or geo-test as the arbiter",
+      "Cross-check with the in-house analytics tool"
+    ],
+    "premiere_etape": "Run a Conversion Lift study with a control group on existing Advantage+ campaigns, and compare the result to last-click attribution.",
+    "playbook": [
+      {
+        "action": "Make the product feed and purchase measurement reliable (Pixel + Conversions API) in compliant consent mode.",
+        "livrable": "Clean feed and valid purchase events in Events Manager"
+      },
+      {
+        "action": "Switch or launch the Advantage+ Shopping and Catalog Ads campaigns on the scope to be measured.",
+        "livrable": "Automated campaigns active, learning phase started"
+      },
+      {
+        "action": "Set up the Conversion Lift study with Meta: control group, roughly 4-week test window, analytics cross-check plan.",
+        "livrable": "Validated test protocol with a control group"
+      },
+      {
+        "action": "Let the test window run without changing the campaign structure.",
+        "livrable": "Incrementality data collected over the period"
+      },
+      {
+        "action": "Read the lift against last-click attribution, cross-check with Google Analytics, and set budget on incrementality.",
+        "livrable": "Incrementality report and budget management rule"
+      }
+    ],
+    "equipe": "1 Meta media buyer + 1 data analyst for reading incrementality, social agency optional"
+  },
+  "statut_vivant": {
+    "note": "Clarins remains an active Meta advertiser in France and Advantage+ is Meta's default sales format, which secures the durability of the pattern."
+  },
+  "transposable_ue": {
+    "note": "A case already deployed in France, hence in a GDPR/ePrivacy environment. Measurement relies on a Meta Conversion Lift study and Google Analytics; activation requires consent and a compliant Pixel and Conversions API. Meta's algorithmic targeting is limited risk under the AI Act on the advertiser side."
+  }
+}

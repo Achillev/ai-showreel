@@ -1,0 +1,114 @@
+{
+  "seo": {
+    "title": "UnitedHealthcare: genAI member companion (Avery) - 6.5 million members, 90% in self-service (2026)",
+    "meta_description": "Avery, UnitedHealthcare's generative AI companion, answers 24/7 on benefits and costs. Open to 6.5 million members, targeting 20.5 million, 90% of cases resolved without an advocate.",
+    "resume_citable": "UnitedHealthcare launched Avery in March 2026, a generative AI companion open to 6.5 million members and targeting 20.5 million by year-end, with 90% of users resolving their request without a human advocate.",
+    "faq": [
+      {
+        "q": "What does Avery do?",
+        "a": "It answers in natural language 24/7 on coverage, reimbursements, cost estimates, and care options, and can call a network provider to book an appointment on the member's behalf."
+      },
+      {
+        "q": "How many members are covered?",
+        "a": "About 6.5 million members on employer-sponsored plans and 160,000 on Medicare Advantage at launch, with a target of 20.5 million members by the end of 2026."
+      }
+    ]
+  },
+  "pattern": "genAI companion for benefits navigation and care coordination",
+  "etape_parcours": "post-purchase",
+  "objectif_business": "Make using health insurance simpler for the member, by answering 24/7 in natural language on coverage, reimbursements, and costs, and easing the load on human advocates for requests the member can resolve alone.",
+  "description": "Avery is a generative AI companion launched by UnitedHealthcare on March 26, 2026. It answers in natural language, 24/7, on coverage, reimbursement details, cost estimates, appointment-booking help, and care options, and can call network providers to book an appointment on the member's behalf. It is accessible through the UnitedHealthcare app and myuhc.com. At launch, Avery is open to about 6.5 million members on employer-sponsored plans and 160,000 Medicare Advantage members, with a target of 20.5 million commercial, Medicare, and Medicaid members by year-end. UnitedHealthcare says that 90% of the time, members who use Avery did not need an advocate.",
+  "resultats": [
+    { "metrique": "Members with access at launch (employer-sponsored plans), plus 160,000 on Medicare Advantage" },
+    { "metrique": "Year-end target, commercial, Medicare, and Medicaid members" },
+    { "metrique": "Resolution without a human advocate" }
+  ],
+  "niveau_preuve": {
+    "justification": "The launch and volumes are documented by the official UnitedHealth Group release and by established press (Fierce Healthcare). The launch scope (6.5 million) is in production; the 20.5 million target is prospective. Press naming the brand plus a primary source = C, not A because it is not a financial result."
+  },
+  "stack_technique": [
+    { "detail": "Generative AI companion developed in-house by UnitedHealthcare: natural-language answers on benefits, reimbursements, and costs, and appointment booking by calling providers." },
+    { "detail": "UnitedHealthcare does not name the underlying generative model; the sources describe a custom/in-house generative AI." },
+    { "detail": "Member's access surfaces to Avery, open to about 6.5 million members at launch." },
+    { "detail": "Plan data, reimbursement history, and cost reference that feed the personalized answers; without up-to-date access, the assistant refers the member to a human." }
+  ],
+  "fonctionnement_operationnel": {
+    "cadence": "Real time, available 24/7, with learning as interactions accrue",
+    "opere_par": "UnitedHealthcare's digital product team, backed by member advocates who take over on complex cases",
+    "signal_pilote": "The member's own benefits, reimbursement, and cost data. Without up-to-date access to the plan and the claims history, the assistant cannot give a reliable personalized answer and refers to a human.",
+    "etapes": [
+      {
+        "etape": "Member question",
+        "detail": "The member queries Avery through the app or myuhc.com about their coverage, a cost, or an appointment.",
+        "acteur": "Customer"
+      },
+      {
+        "etape": "Personalized answer",
+        "detail": "Avery answers in natural language from the member's benefits and history.",
+        "acteur": "AI"
+      },
+      {
+        "etape": "Action on the care journey",
+        "detail": "If needed, Avery calls a network provider to book an appointment on the member's behalf.",
+        "acteur": "AI"
+      },
+      {
+        "etape": "Escalation",
+        "detail": "Unresolved cases are passed to a human advocate (about 10% of cases).",
+        "acteur": "Member advocate"
+      },
+      {
+        "etape": "Learning",
+        "detail": "The interactions feed the improvement of the answers and the self-service.",
+        "acteur": "Product team"
+      }
+    ]
+  },
+  "replication": {
+    "prerequis_data": [
+      "benefits and plan data per member",
+      "claims history",
+      "a reference set of costs and the provider network"
+    ],
+    "prerequis_orga": [
+      "a conversational product team",
+      "advocates for escalation",
+      "health compliance governance"
+    ],
+    "stack_possible": [
+      "an LLM with RAG over the plan data",
+      "conversational agent orchestration",
+      "telephony integration for appointment booking"
+    ],
+    "premiere_etape": "Reliably tie a member's benefits and claims data to a conversational assistant, with a clear human escalation.",
+    "playbook": [
+      {
+        "action": "Frame the data and compliance: map benefits, claims, and costs per member, set the health legal framework.",
+        "livrable": "An inventory of member data accessible in real time + a validated compliance dossier."
+      },
+      {
+        "action": "Build the assistant on a narrow scope of frequent questions (coverage, reimbursements), in RAG over the plan data.",
+        "livrable": "An internal prototype tested by advocates on real cases."
+      },
+      {
+        "action": "Connect human escalation and launch a closed pilot on a member segment.",
+        "livrable": "A pilot with self-service resolution rate and escalation rate measured."
+      },
+      {
+        "action": "Add actions on the care journey (appointment booking, calling providers) with full logging.",
+        "livrable": "An assistant able to act, each action traced."
+      },
+      {
+        "action": "Roll out progressively by line of contracts, tracking the use of advocates.",
+        "livrable": "A rollout with a self-service vs escalation dashboard by population."
+      }
+    ],
+    "equipe": "1 PM + 3-5 engineers (LLM/RAG, integrations) + 1 health compliance lawyer + member advocates for escalation"
+  },
+  "statut_vivant": {
+    "note": "A recent launch with a scope in production (6.5 million members) and an announced extension trajectory toward 20.5 million by end of 2026. To re-verify after the target date to confirm the scope was reached."
+  },
+  "transposable_ue": {
+    "note": "Avery answers in natural language on a member's coverage, reimbursements, and costs, and can call providers to book appointments. In the EU, this data falls under Article 9 GDPR (health data), with reinforced consent and information. An assistant that acts on the care journey may fall under AI Act transparency obligations. The private American health insurance model does not transpose as is to European systems."
+  }
+}

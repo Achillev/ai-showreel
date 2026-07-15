@@ -1,0 +1,109 @@
+{
+  "seo": {
+    "title": "IKEA: brand assistant on the OpenAI GPT Store - about 1,500 users per month (2024)",
+    "meta_description": "IKEA published a genAI assistant on the OpenAI GPT Store in 2024: furniture recommendations, renderings, and product identification, with about 1,500 users per month.",
+    "resume_citable": "IKEA published its genAI assistant on the OpenAI GPT Store in February 2024: three months later, it had about 1,500 users per month, of which 20% led to a visit to ikea.com and 5% of those visits to a transaction.",
+    "faq": [
+      {
+        "q": "What does the IKEA AI Assistant do?",
+        "a": "Published on the OpenAI GPT Store in 2024, it recommends furniture based on the room, style, and budget, generates renderings, and identifies a product from a photo."
+      },
+      {
+        "q": "What results?",
+        "a": "Modest, learning-oriented usage: about 1,500 users per month three months after launch, 20% referral to ikea.com, and 5% transactions on those visits."
+      }
+    ]
+  },
+  "pattern": "brand assistant published on a third-party GPT store",
+  "etape_parcours": "discovery",
+  "objectif_business": "Test the GPT Store as an acquisition and inspiration channel, by giving personalized furnishing recommendations, while learning what it takes to build a useful marketplace GPT.",
+  "description": "IKEA published its IKEA AI Assistant on the OpenAI GPT Store on February 5, 2024, for GPT Plus users in the United States. The assistant gives furniture and decor recommendations based on room dimensions, style, budget, and sustainability criteria, can generate rendering images, and can identify a piece of furniture from a photo. Ingka frames the initiative as a pragmatic, learning-oriented move. Three months after launch, Ingka's chief data and analytics officer told Digiday about 1,500 users a month. Twenty percent of those interactions led to a visit to ikea.com, mostly toward outdoor furniture and sofas, and 5% of those visits ended in a transaction. The exercise mainly served to test search behavior and to see whether the GPT Store could be an acquisition channel, before integrating the technology directly into IKEA's own surfaces.",
+  "resultats": [
+    { "metrique": "Monthly users, three months after launch" },
+    { "metrique": "Interactions leading to a visit to ikea.com" },
+    { "metrique": "Visits ending in a transaction" }
+  ],
+  "niveau_preuve": {
+    "justification": "Official Ingka press release on the launch and usage figures given by Ingka's chief data and analytics officer to Digiday, established press naming the brand. The volumes are modest and the claimed use is that of a test, which is sourced but does not go beyond C."
+  },
+  "stack_technique": [
+    { "detail": "distribution store for the brand GPT, restricted to ChatGPT Plus subscribers at launch" },
+    { "detail": "OpenAI generative model powering the store's GPTs; exact version not specified in the sources" },
+    { "detail": "furnishing renderings generated and identification of a piece of furniture from a photo, via the native capabilities of GPTs" },
+    { "detail": "product, style, and budget reference on the IKEA side, with tracked referral to the site for availability and purchase" }
+  ],
+  "fonctionnement_operationnel": {
+    "cadence": "Real time at each conversation, in the environment of a third-party GPT store.",
+    "opere_par": "Ingka's digital and data team, which configures the GPT and tracks usage and referral metrics.",
+    "signal_pilote": "The referral to ikea.com and the transaction that follows. Because the conversation lives with a third party, IKEA sees only a partial signal of the journey and depends on the store for distribution.",
+    "etapes": [
+      {
+        "etape": "Expressing the need",
+        "detail": "The user describes their room, style, budget, or sends a photo of a piece of furniture to identify.",
+        "acteur": "customer"
+      },
+      {
+        "etape": "Recommendation",
+        "detail": "The assistant proposes IKEA products, generated renderings, and selection criteria.",
+        "acteur": "AI"
+      },
+      {
+        "etape": "Referral to the site",
+        "detail": "The user clicks through to ikea.com to check availability and buy.",
+        "acteur": "customer"
+      },
+      {
+        "etape": "Measurement and learning",
+        "detail": "The team tracks users, referral rate, and transactions to judge the channel.",
+        "acteur": "data team"
+      }
+    ]
+  },
+  "replication": {
+    "prerequis_data": [
+      "Product catalog and availability exposable to a GPT",
+      "Reference set of styles and criteria (budget, sustainability)",
+      "Tracking of referral to the site and of the transaction"
+    ],
+    "prerequis_orga": [
+      "Acceptance of distributing via a third-party platform",
+      "Governance framework for conversation data",
+      "Channel metrics (users, referral, transaction)"
+    ],
+    "stack_possible": [
+      "Brand GPT on a third-party store",
+      "Connection to the catalog and availability",
+      "Rendering image generation"
+    ],
+    "premiere_etape": "Publish a brand GPT connected to the catalog, instrument the referral to the site, and judge the channel on volume and transaction before investing.",
+    "playbook": [
+      {
+        "action": "Frame the GPT's scope: brand tone, use cases covered, guardrails, and referral rules to the site",
+        "livrable": "Approved GPT brief (instructions, examples, limits)"
+      },
+      {
+        "action": "Build the GPT and connect it to the catalog (products, styles, budget), with tracked outbound links (UTM)",
+        "livrable": "Working GPT tested internally, instrumented links to the site"
+      },
+      {
+        "action": "Validate legal and data (use of conversations by the third-party platform), then publish on the store",
+        "livrable": "Published GPT + documented data governance framework"
+      },
+      {
+        "action": "Track users, referral rate to the site, and transactions from the referral",
+        "livrable": "Channel dashboard with the three metrics"
+      },
+      {
+        "action": "Judge the channel on volume and transaction before investing more (integration into own surfaces or shutdown)",
+        "livrable": "Documented go/no-go decision"
+      }
+    ],
+    "equipe": "1 digital PM + 1 dev (catalog connection and tracking) + legal/data validation"
+  },
+  "statut_vivant": {
+    "note": "The last solid public signal dates from May 2024 (Digiday), with modest volumes (about 1,500 users per month) and a use described as learning. Ingka then mentioned a future integration of the technology into IKEA's own surfaces, leaving it uncertain whether the assistant was still on the GPT Store in 2026."
+  },
+  "transposable_ue": {
+    "note": "Publishing a brand assistant on a third-party GPT store is transposable anywhere the service is available. In the EU, the AI Act requires transparency about the use of an AI, and entrusting the assistant to a third-party platform raises the question of the transfer and use of conversation data, to be framed under GDPR."
+  }
+}

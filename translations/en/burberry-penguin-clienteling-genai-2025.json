@@ -1,0 +1,117 @@
+{
+  "seo": {
+    "title": "Burberry: genAI clienteling copilot (Penguin) - +24% average transaction value (2025)",
+    "meta_description": "Penguin, Burberry's in-house generative clienteling platform, delivers a 24% lift in average transaction value across customer service channels and equips 100+ consultants.",
+    "resume_citable": "Penguin, the genAI clienteling copilot Burberry built in-house, delivered a 24% lift in average transaction value across customer service channels and equipped more than 100 consultants across every market.",
+    "faq": [
+      {
+        "q": "What did Penguin deliver for Burberry?",
+        "a": "A 24% lift in average transaction value across customer service channels, with more than 100 consultants equipped, per the 2025 DataIQ Awards."
+      },
+      {
+        "q": "What does Penguin do?",
+        "a": "Natural language product search, recognition of a Burberry item from a photo, and generation of complete outfits consistent with the brand aesthetic."
+      }
+    ]
+  },
+  "pattern": "genAI copilot for consultants (search, image recognition, complete-the-look)",
+  "etape_parcours": "consideration",
+  "objectif_business": "Give Burberry customer service consultants a genAI copilot that speeds up product search, item recognition, and outfit suggestions, so they serve customers faster and raise transaction value.",
+  "description": "Penguin is a generative platform built in-house by a three-person data science team together with customer service. It combines three functions: multilingual natural language product search, street-to-shop image recognition that identifies a Burberry product in a photo and matches it to the catalog, and a complete-the-look feature that generates coherent outfit suggestions in line with the brand aesthetic from a single item. Penguin relies on transformers and LLMs fine-tuned on Burberry looks. In parallel, Burberry runs a suite of data models (intent, recommendation, product affinity) that powers store-led campaigns. The effort was recognized at the 2025 DataIQ Awards.",
+  "points_cles": [
+    "Penguin GenAI copilot for consultants: product search, street-to-shop image recognition, complete-the-look.",
+    "Built in-house (transformers and LLMs fine-tuned on Burberry looks) by a three-person team.",
+    "+24% average transaction value across customer service channels, 100+ consultants equipped.",
+    "Evidence level B, live status confirmed (2025 DataIQ Awards)."
+  ],
+  "resultats": [
+    { "metrique": "Average transaction value lift (customer service channels)" },
+    { "metrique": "Consultants equipped, across all markets" },
+    { "metrique": "Incremental store campaign revenue 2024, +11% year-on-year" },
+    { "metrique": "Store-led campaigns using the AI framework" }
+  ],
+  "niveau_preuve": {
+    "justification": "Two award-winning 2025 DataIQ Awards submissions quantifying separately the clienteling copilot (Penguin, +24% ATV) and the data transformation (7M GBP incremental). Quantified case study, judged by an industry third party, not a figure from the brand alone."
+  },
+  "stack_technique": [
+    { "detail": "Language models adapted to the brand's curated corpus of looks for complete-the-look; the base model is not named in the sources." },
+    { "detail": "Detection of a Burberry product in a photo and matching to the catalog, integrated into Penguin." },
+    { "detail": "Penguin's search function, built in-house on the product catalog." },
+    { "detail": "In-house models that power store-led campaigns, with more than 90% of store-led campaigns using this framework." }
+  ],
+  "fonctionnement_operationnel": {
+    "cadence": "Real time during the customer interaction; the product and look models are retrained as collections evolve",
+    "opere_par": "Customer service consultants, equipped by the in-house data science team (three people) and customer service",
+    "signal_pilote": "The up-to-date product catalog and the curated Burberry looks used for fine-tuning. Without this brand corpus, complete-the-look drifts away from the aesthetic and loses credibility.",
+    "etapes": [
+      {
+        "etape": "Consultant query",
+        "detail": "The consultant asks a product question in natural language or uploads a photo of an item to identify.",
+        "acteur": "customer service consultant"
+      },
+      {
+        "etape": "Search and recognition",
+        "detail": "Penguin interprets the query or detects the product in the image (street-to-shop) and links it to the catalog.",
+        "acteur": "AI"
+      },
+      {
+        "etape": "Outfit suggestion",
+        "detail": "From a single item, complete-the-look generates suggestions consistent with Burberry looks.",
+        "acteur": "AI"
+      },
+      {
+        "etape": "Response to the customer",
+        "detail": "The consultant validates, adjusts, and delivers the response to the customer, staying in control of the relationship.",
+        "acteur": "customer service consultant"
+      }
+    ]
+  },
+  "replication": {
+    "prerequis_data": [
+      "structured product catalog with images",
+      "brand look corpus for fine-tuning",
+      "opt-in customer data for personalization"
+    ],
+    "prerequis_orga": [
+      "in-house data science team able to fine-tune LLMs",
+      "customer service involved in the design",
+      "change management on the consultant side"
+    ],
+    "stack_possible": [
+      "open or API LLM with fine-tuning",
+      "vision model (product detection)",
+      "recommendation engine",
+      "mobile/tablet consultant interface"
+    ],
+    "premiere_etape": "Prototype a natural language product search plus a complete-the-look on a catalog, tested with a handful of consultants.",
+    "playbook": [
+      {
+        "action": "Structure the catalog (attributes, images) and curate a brand look corpus with the style teams.",
+        "livrable": "Training corpus validated by style leadership."
+      },
+      {
+        "action": "Prototype the natural language product search on the catalog and have it tested by a handful of consultants.",
+        "livrable": "Prototype tested with documented consultant feedback."
+      },
+      {
+        "action": "Add image recognition and the complete-the-look fine-tuned on the look corpus.",
+        "livrable": "Three-function copilot piloted on a limited scope."
+      },
+      {
+        "action": "Roll out to consultants in one market with training; the consultant keeps control of the response to the customer.",
+        "livrable": "Adoption measured in a first market."
+      },
+      {
+        "action": "Compare average transaction value across equipped and non-equipped channels, then decide on expansion to other markets.",
+        "livrable": "Average transaction value review and rollout plan."
+      }
+    ],
+    "equipe": "2-3 data scientists + customer service involved in the design + 1 retail sponsor for consultant adoption."
+  },
+  "statut_vivant": {
+    "note": "Platform recognized at the 2025 DataIQ Awards, adopted across all markets. Built and maintained in-house by the data science team."
+  },
+  "transposable_ue": {
+    "note": "British group. The clienteling component relies on opt-in customer data (behavior, history). A processing legal basis and data minimization need to be set for real-time use of in-store data on the EU side."
+  }
+}

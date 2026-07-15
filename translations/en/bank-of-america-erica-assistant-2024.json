@@ -1,0 +1,129 @@
+{
+  "seo": {
+    "title": "Bank of America: Erica assistant - more than 3 billion interactions (2024-2025)",
+    "meta_description": "Erica, the Bank of America app assistant, passed 2 billion interactions in 2024 and 3 billion in 2025, with 58 million per month.",
+    "resume_citable": "Erica, the conversational assistant in the Bank of America app launched in 2018, passed 2 billion interactions and 42 million clients in April 2024, then 3 billion interactions and nearly 50 million users in August 2025.",
+    "faq": [
+      {
+        "q": "How many interactions has Erica handled?",
+        "a": "More than 2 billion announced in April 2024 and more than 3 billion in August 2025, with an average of more than 58 million per month."
+      },
+      {
+        "q": "Does Erica respond quickly?",
+        "a": "Bank of America states that more than 98% of clients receive an answer in 44 seconds on average."
+      }
+    ]
+  },
+  "pattern": "conversational financial assistant at scale",
+  "etape_parcours": "post-purchase",
+  "objectif_business": "Handle most of clients' daily needs in self-service (balance, transactions, budget, alerts, transfers) in the app, deflect simple requests away from costly channels, and push proactive insights to anchor app usage.",
+  "description": "Erica is the assistant built into the Bank of America mobile app, launched in 2018. The client queries it in natural language or by voice to check a balance, find a transaction, manage a budget, or receive an alert. The volumes are massive and documented by the bank: more than 2 billion interactions and 42 million clients helped announced in April 2024, then 3 billion interactions and nearly 50 million users in August 2025, with an average of more than 58 million interactions per month. Erica also pushes proactive personalized insights without the client having to ask.",
+  "points_cles": [
+    "Erica conversational assistant in the mobile app for balance, transactions, budget, and proactive alerts.",
+    "In-house NLP and voice engine, integrated with core banking, on real-time account data.",
+    "More than 3 billion interactions and 58 million per month; response in 44 seconds for 98% of clients.",
+    "Evidence level A, confirmed active status."
+  ],
+  "resultats": [
+    {
+      "metrique": "Cumulative interactions (April 2024)"
+    },
+    {
+      "metrique": "Response time for more than 98% of clients"
+    },
+    {
+      "metrique": "Cumulative interactions (August 2025)"
+    },
+    {
+      "metrique": "Average monthly interactions (2025)"
+    }
+  ],
+  "niveau_preuve": {
+    "justification": "Volumes published by Bank of America itself in several consistent official press releases (T1), over several years (2 billion in 2024, 3 billion in 2025), in line with its digital engagement disclosures tied to quarterly reporting. Several consistent primary sources from the subject brand raise the level."
+  },
+  "stack_technique": [
+    {
+      "detail": "Natural language and voice understanding engine built in-house by Bank of America, integrated with core banking; the sources do not name any third-party LLM."
+    },
+    {
+      "detail": "Predictive analysis on transactions that detects events (unusual spending, upcoming due date, savings opportunity) and pushes personalized alerts."
+    },
+    {
+      "detail": "Erica's single channel (text and voice), with deep integration to accounts and transactions in real time."
+    }
+  ],
+  "fonctionnement_operationnel": {
+    "cadence": "Real time, 24/7, in the mobile app; proactive insights pushed continuously",
+    "opere_par": "Bank of America digital product and technology team, in-house",
+    "signal_pilote": "The intent expressed by the client (natural language or voice query) plus the transactional signals that trigger proactive insights. Without clean, up-to-date account data, the insights and alerts lose their relevance.",
+    "etapes": [
+      {
+        "etape": "Client request",
+        "detail": "The client types or says their request in the app (balance, transaction, budget, transfer).",
+        "acteur": "client"
+      },
+      {
+        "etape": "Understanding and response",
+        "detail": "Erica interprets the intent, fetches the account data, and responds, on average in under 44 seconds.",
+        "acteur": "AI"
+      },
+      {
+        "etape": "Proactive insights",
+        "detail": "Outside of any request, Erica detects events (unusual spending, upcoming due date, savings opportunity) and pushes a personalized alert.",
+        "acteur": "AI"
+      },
+      {
+        "etape": "Supervision and improvement",
+        "detail": "The in-house team tracks volumes, satisfaction, and misunderstood cases to broaden the handled scope.",
+        "acteur": "data team"
+      }
+    ]
+  },
+  "replication": {
+    "prerequis_data": [
+      "Real-time account and transaction data",
+      "History of client intents for training",
+      "Event detection rules for the proactive insights"
+    ],
+    "prerequis_orga": [
+      "Dedicated digital product team over time",
+      "Banking security and compliance framework",
+      "Governance of proactive messages (frequency, relevance)"
+    ],
+    "stack_possible": [
+      "NLP/LLM engine",
+      "Predictive analysis layer on transactions",
+      "Deep integration with core banking and the mobile app"
+    ],
+    "premiere_etape": "Map the 20 most frequent client intents in the app and connect the assistant to account data in read mode before adding the proactive layer.",
+    "playbook": [
+      {
+        "action": "Map the 20 most frequent client intents (balance, transaction, transfer, budget) from support and app logs.",
+        "livrable": "Intent repository prioritized by volume."
+      },
+      {
+        "action": "Build the assistant in read-only mode on account data for these intents, in a test environment.",
+        "livrable": "Internal prototype tested on real data."
+      },
+      {
+        "action": "Open a beta to a client segment in the app, with human escalation and transparency on the AI nature.",
+        "livrable": "Assistant in beta, resolution rate and satisfaction tracked."
+      },
+      {
+        "action": "Broaden the scope to transactional actions and alerts, with banking security and compliance validation.",
+        "livrable": "Assistant generalized in the app."
+      },
+      {
+        "action": "Add the proactive insights triggered by transactional signals, with governance of message frequency.",
+        "livrable": "Personalized alert engine in production."
+      }
+    ],
+    "equipe": "1 dedicated digital product team (PM, design) + 3-5 NLP/ML engineers + banking compliance and security involved continuously."
+  },
+  "statut_vivant": {
+    "note": "Continuous, documented growth: 2 billion interactions in April 2024, 3 billion in August 2025, 58 million per month. Core app feature, no sign of withdrawal."
+  },
+  "transposable_ue": {
+    "note": "Assistant deployed in the United States. In the EU, an assistant that reads accounts and transactions requires a clear GDPR legal basis and, under the AI Act, a transparency obligation (telling the client they are talking to an AI). The pattern is transposable, the data architecture and compliance have to be redone."
+  }
+}

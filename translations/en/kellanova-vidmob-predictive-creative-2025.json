@@ -1,0 +1,116 @@
+{
+  "seo": {
+    "title": "Kellanova: predictive creative scoring (Vidmob) - +2.16x performance (2025)",
+    "meta_description": "Kellanova scored 443 assets across 10 brands with Vidmob Aperture: VTR predicted at 83%, performance 2.16x, Profit ROI +11% on scored assets.",
+    "resume_citable": "Kellanova ran a 12-month study with Vidmob and MMA Global on 443 creative assets (10 brands, Meta paid social) showing predictive scoring of the 3-second VTR at 83% accuracy, performance multiplied by 2.16, and Profit ROI up 11% on scored assets.",
+    "faq": [
+      {
+        "q": "What does Kellanova and Vidmob's predictive scoring measure?",
+        "a": "It predicts an asset's three-second view-through rate on Meta with 83% accuracy, before delivery, based on 19 cross-cutting creative criteria and 11 per category."
+      },
+      {
+        "q": "What results does Kellanova claim?",
+        "a": "Scored-asset performance multiplied by 2.16 and an 11% rise in Profit ROI, in a 12-month study covering 443 assets and ten brands."
+      }
+    ]
+  },
+  "pattern": "predictive scoring of creative effectiveness before delivery",
+  "etape_parcours": "consideration",
+  "objectif_business": "Understand which creative elements make an ad perform, predict effectiveness before delivery, guide creative production, and rebuild the agency relationship on a quantitative rather than subjective metric.",
+  "description": "Kellanova, owner of Pringles, Pop-Tarts, Cheez-It, and Rice Krispies Treats, ran with Vidmob and the association MMA Global a twelve-month study on the performance of 443 creative assets, spread across ten brands, delivered in the United States on Meta ad units. Vidmob's Aperture platform relies on machine learning, historical data, and LLMs including Google Gemini. The analysis established 19 cross-cutting scoring criteria and 11 per-category criteria, common to assets reaching a view-through rate of at least three seconds, then built two predictive models (one for savory, one for sweet). Kellanova reports that the predictive scoring forecasts the three-second VTR with 83 percent accuracy, improves performance by 2.16x, and contributes to an 11 percent rise in Profit ROI on scored assets. The company uses these results to tighten its creative production and to move from a subjective metric to a quantitative one in its agency relationships. The framework is first applied to paid social, with an extension planned to TikTok, Pinterest, and Reddit.",
+  "points_cles": [
+    "Predictive scoring of creative effectiveness before delivery, on 443 assets and 10 brands.",
+    "Vidmob Aperture platform with machine learning and Google Gemini.",
+    "3-second VTR predicted at 83%, performance 2.16x, Profit ROI +11%.",
+    "Evidence B, status confirmed."
+  ],
+  "resultats": [
+    { "metrique": "Accuracy of 3-second VTR prediction" },
+    { "metrique": "Performance improvement of scored assets" },
+    { "metrique": "Rise in Profit ROI on scored assets" },
+    { "metrique": "Creative assets analyzed, across 10 brands and 12 months" }
+  ],
+  "niveau_preuve": {
+    "justification": "Quantified study published jointly by Vidmob, Kellanova, and MMA Global (release via Businesswire), corroborated by trade press (Digiday, Adweek) naming Kellanova and its figures. No isolated financial results, so B."
+  },
+  "stack_technique": [
+    { "detail": "creative analytics platform: tagging of creative elements and predictive impact scoring before delivery" },
+    { "detail": "LLM used by Aperture to analyze the creative assets" },
+    { "detail": "two ML models trained on the creative criteria correlated with the 3-second VTR, 83% accuracy" },
+    { "detail": "3-second VTR and performance of Meta ad units, the training and validation signal" },
+    { "detail": "industry association that framed the twelve-month study with Kellanova and Vidmob" }
+  ],
+  "fonctionnement_operationnel": {
+    "cadence": "Per asset and per creative production wave; scoring before delivery, model retraining as performance data accumulates.",
+    "opere_par": "Kellanova's media and digital team, with Vidmob's Aperture platform; MMA Global framed the study.",
+    "signal_pilote": "The three-second view-through rate on Meta, the reference benchmark. Without enough historical performance data, the predictive models lose accuracy.",
+    "etapes": [
+      {
+        "etape": "Collection and tagging",
+        "detail": "Analysis of 443 assets across ten brands, extraction of 19 cross-cutting criteria and 11 per category.",
+        "acteur": "AI / Vidmob"
+      },
+      {
+        "etape": "Model building",
+        "detail": "Two predictive models (savory, sweet) trained on the criteria correlated with the 3-second VTR.",
+        "acteur": "AI / data team"
+      },
+      {
+        "etape": "Scoring before delivery",
+        "detail": "Each new asset gets a predictive impact score before going into media.",
+        "acteur": "marketing / AI"
+      },
+      {
+        "etape": "Production and agency relationship",
+        "detail": "The insights guide creative production and serve as a quantitative metric in agency contracts.",
+        "acteur": "marketing"
+      }
+    ]
+  },
+  "replication": {
+    "prerequis_data": [
+      "history of tagged creative assets",
+      "media performance data per asset (VTR, views)",
+      "enough volume to train per-category models"
+    ],
+    "prerequis_orga": [
+      "alignment of media / creative / agencies on a common metric",
+      "governance of creative production driven by the score"
+    ],
+    "stack_possible": [
+      "creative analytics platform (Vidmob Aperture type)",
+      "LLM for asset analysis",
+      "connectors to media platforms (Meta, TikTok)"
+    ],
+    "premiere_etape": "Tag a history of paid social assets and correlate the creative elements with the 3-second VTR.",
+    "playbook": [
+      {
+        "action": "Gather the history of assets and the media performance per asset (aim for several hundred assets)",
+        "livrable": "Consolidated asset-performance dataset"
+      },
+      {
+        "action": "Tag the creative elements against a grid of cross-cutting and per-category criteria",
+        "livrable": "Tagged assets with a documented grid"
+      },
+      {
+        "action": "Correlate criteria and 3-second VTR, build a predictive model per category",
+        "livrable": "Model with accuracy measured on a holdout sample"
+      },
+      {
+        "action": "Score new assets before going into media and guide production",
+        "livrable": "Pre-delivery scoring process integrated into the creative workflow"
+      },
+      {
+        "action": "Make the score a contractual metric with agencies and extend to other platforms",
+        "livrable": "Quantitative metric in the briefs and the agency contracts"
+      }
+    ],
+    "equipe": "1 media lead + 1 data analyst + the creative agencies involved in the scoring grid"
+  },
+  "statut_vivant": {
+    "note": "Twelve-month study closed and published in August 2025, with the framework applied to paid social and an announced extension to TikTok, Pinterest, and Reddit as well as other markets."
+  },
+  "transposable_ue": {
+    "note": "The system scores creative assets, not people. It relies on ad performance data and LLMs (Gemini), with no identifying personal data in the scoring loop. Transposable in the EU with compliant hosting; the extension to other platforms follows local advertising rules."
+  }
+}

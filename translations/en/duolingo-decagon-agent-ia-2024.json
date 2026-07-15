@@ -1,0 +1,110 @@
+{
+  "seo": {
+    "title": "Duolingo: AI customer agent (Decagon) - 80 percent chat deflection (2024)",
+    "meta_description": "In 2024, Duolingo deployed the Decagon AI agent and deflected 80 percent of its chat volume, versus 30 percent with the previous vendor.",
+    "resume_citable": "In 2024, Duolingo deployed Decagon's AI support agent on its chat and deflected 80 percent of incoming volume, versus 30 percent with the previous vendor, with go-live in about one month.",
+    "faq": [
+      {
+        "q": "What deflection rate did Duolingo get with Decagon?",
+        "a": "80 percent of incoming chat volume, versus 30 percent with the previous vendor, according to Decagon's case study quoting a Duolingo operations manager."
+      },
+      {
+        "q": "How long did the deployment take?",
+        "a": "About one month between the first discussions and go-live on chat, with email planned for early 2025."
+      }
+    ]
+  },
+  "pattern": "GenAI customer agent",
+  "etape_parcours": "post-purchase",
+  "objectif_business": "Bring down the ticket volume handled by humans and the time the team spends maintaining the support tool, on a base of several hundred million users.",
+  "description": "Duolingo deployed Decagon's AI support agent on its chat in 2024. The agent deflects 80 percent of incoming chat volume, versus 30 percent with the previous vendor. Setup took about one month from the first discussions to go-live. Email was planned for early 2025. The switch also lightened the team's load: automatic hourly sync of the FAQ, less manual maintenance, and human agents refocused on complex cases. Duolingo claims a base of 500 million users, which gives a sense of the contact volume absorbed.",
+  "points_cles": ["AI support agent deployed on in-app chat, then extended to email.", "The Decagon platform built on OpenAI models, with the FAQ synced hourly.", "80% chat deflection versus 30% before, go-live in about one month.", "Evidence B, confirmed status."],
+  "resultats": [
+    { "metrique": "Chat deflection rate, versus 30 percent with the previous vendor" },
+    { "metrique": "Time to go-live" }
+  ],
+  "niveau_preuve": {
+    "justification": "A quantified case study from the Decagon platform with a named, quoted person (Ian Riggins); cross-checked by the OpenAI customer story on Decagon. A clear deflection figure but from an interested source, hence level B."
+  },
+  "stack_technique": [
+    { "detail": "AI support agent platform deployed on in-app chat; 80 percent deflection versus 30 with the previous vendor." },
+    { "detail": "Decagon builds its agents on OpenAI models, according to the OpenAI customer story on Decagon." },
+    { "detail": "Source of the agent's answers, synced automatically every hour." },
+    { "detail": "Initial deployment channel; extension to email planned for early 2025." }
+  ],
+  "fonctionnement_operationnel": {
+    "cadence": "Real time on chat, with automatic hourly sync of the FAQ base.",
+    "opere_par": "Duolingo's support operations team, with Decagon Agent Product Managers and engineers supporting at launch.",
+    "signal_pilote": "The deflection rate and the accuracy of the answers. The system relies on an FAQ synced hourly; if this base drifts, answer quality drops and volume returns to humans.",
+    "etapes": [
+      {
+        "etape": "Connecting the knowledge base",
+        "detail": "Wire the FAQ and procedures so the agent answers on up-to-date content, with automatic hourly sync.",
+        "acteur": "operations team"
+      },
+      {
+        "etape": "Chat go-live",
+        "detail": "Deploy the agent on incoming chat; the switch took about one month.",
+        "acteur": "agency"
+      },
+      {
+        "etape": "Handling and deflection",
+        "detail": "The agent resolves the majority of requests without a human (80 percent), and surfaces complex cases.",
+        "acteur": "AI"
+      },
+      {
+        "etape": "Refocusing the agents",
+        "detail": "Human agents focus on complex cases; the tool's maintenance load collapses.",
+        "acteur": "operations team"
+      }
+    ]
+  },
+  "replication": {
+    "prerequis_data": [
+      "structured, up-to-date FAQ and procedures",
+      "ticket history",
+      "read access to the user account"
+    ],
+    "prerequis_orga": [
+      "a support team ready to move into supervision",
+      "a process to update the FAQ",
+      "escalation rules"
+    ],
+    "stack_possible": [
+      "Decagon",
+      "Sierra",
+      "Intercom Fin",
+      "Zendesk AI"
+    ],
+    "premiere_etape": "Audit the existing FAQ and clean it up: it drives the agent's quality, even before choosing the tool.",
+    "playbook": [
+      {
+        "action": "Audit and clean the FAQ and procedures: this base drives the agent's quality.",
+        "livrable": "An up-to-date, structured knowledge base"
+      },
+      {
+        "action": "Connect the base to the agent platform and configure automatic sync.",
+        "livrable": "Agent wired to up-to-date content"
+      },
+      {
+        "action": "Test answer accuracy internally and define the escalation rules to humans.",
+        "livrable": "Test suite passed, escalations defined"
+      },
+      {
+        "action": "Go live on chat and track the deflection rate.",
+        "livrable": "Agent live on chat with a deflection dashboard"
+      },
+      {
+        "action": "Extend to email and refocus the support team on complex cases.",
+        "livrable": "A second channel covered, maintenance load reduced"
+      }
+    ],
+    "equipe": "1 support operations lead (FAQ owner) + 1 dev for the connectors; the vendor provides Agent Product Managers at launch."
+  },
+  "statut_vivant": {
+    "note": "The case is still published by Decagon and the scope extended toward email in 2025. Decagon has also consolidated a base of large accounts, which makes withdrawal unlikely."
+  },
+  "transposable_ue": {
+    "note": "A low-stakes consumer app support case. Under the GDPR, plan for transparency about the automated interaction and a human path; few sensitive data involved compared with fintech or healthcare."
+  }
+}

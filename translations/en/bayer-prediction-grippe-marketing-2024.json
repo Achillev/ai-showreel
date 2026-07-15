@@ -1,0 +1,131 @@
+{
+  "seo": {
+    "title": "Bayer: AI flu demand forecasting - +85% CTR, 2.6x traffic (2024)",
+    "meta_description": "Bayer Consumer Health forecasts cold and flu peaks with Google Cloud ML to drive its media. Paid search result: +85% CTR, -33% cost per click, 2.6x traffic.",
+    "resume_citable": "Bayer Consumer Health built a model on Google Cloud that forecasts cold and flu search peaks by region, driving a paid search program to +85% click-through rate, -33% cost per click, and 2.6x traffic year-on-year.",
+    "faq": [
+      {
+        "q": "How does Bayer's forecasting model work?",
+        "a": "It combines Google Trends data with open weather and climate data on Google Cloud's machine learning technology to anticipate cold and flu search peaks by region, first in Australia."
+      },
+      {
+        "q": "What media results did the model enable?",
+        "a": "On paid search, an 85% increase in click-through rate year-on-year, a 33% reduction in cost per click, and a 2.6x increase in traffic to the site."
+      }
+    ]
+  },
+  "pattern": "machine learning demand forecasting on search trends to drive media",
+  "etape_parcours": "discovery",
+  "objectif_business": "Forecast cold and flu product search peaks by region, to give marketing teams time to plan and activate campaigns at the right moment, and serve the right offer to consumers looking to relieve their symptoms.",
+  "description": "The Bayer Consumer Health team in Australia built, in early 2022, a forecasting model on Google Cloud's machine learning technology, combining Google Trends data with open external data such as weather and climate, to anticipate cold and flu trends by Australian region. These forecasts served as data-driven marketing triggers to plan and activate media campaigns earlier. On paid search, Bayer reports an 85% increase in click-through rate year-on-year, a 33% reduction in cost per click, and a 2.6x increase in traffic to its site. The project proved convincing enough for the team to aim for a global rollout.",
+  "points_cles": [
+    "ML model forecasting cold and flu search peaks by region.",
+    "Built on Google Cloud with Google Trends and weather/climate data, activated on paid search.",
+    "Paid search: +85% CTR, -33% cost per click, 2.6x traffic year-on-year.",
+    "Evidence level B, mixed-signals status (Australia case, global rollout targeted)."
+  ],
+  "resultats": [
+    {
+      "metrique": "Paid search click-through rate (year-on-year)"
+    },
+    {
+      "metrique": "Cost per click, year-on-year"
+    },
+    {
+      "metrique": "Traffic to the site, year-on-year"
+    }
+  ],
+  "niveau_preuve": {
+    "justification": "The media results (85% CTR, 33% cost per click, 2.6x traffic) are documented and quantified by the Google case study (Think with Google), corroborated by a second source on Bayer Consumer Health's AI marketing strategy. Quantified platform case study = B."
+  },
+  "stack_technique": [
+    {
+      "detail": "ML technology on which the forecasting model was built; the source does not specify the exact service (Vertex AI, BigQuery ML)."
+    },
+    {
+      "detail": "Main model signal: cold and flu search trends by region, crossed with open weather and climate data."
+    },
+    {
+      "detail": "Paid search activation channel triggered by the forecasts, where CTR, cost per click, and traffic are measured."
+    }
+  ],
+  "fonctionnement_operationnel": {
+    "cadence": "Retraining and forecasting per season, with media activation as the anticipated peaks approach",
+    "opere_par": "Bayer Consumer Health marketing and data team, with Google Cloud's machine learning technology",
+    "signal_pilote": "Search trends by region crossed with weather and climate. Without up-to-date search data and per-region history, the model loses its ability to anticipate the peaks and the timing advantage disappears.",
+    "etapes": [
+      {
+        "etape": "Signal collection",
+        "detail": "Google Trends data and open external data (weather, climate) are gathered by region.",
+        "acteur": "Data team"
+      },
+      {
+        "etape": "Forecasting",
+        "detail": "The machine learning model anticipates cold and flu search peaks by region.",
+        "acteur": "AI"
+      },
+      {
+        "etape": "Media planning",
+        "detail": "Marketing uses the lead time gained to plan and calibrate the campaigns.",
+        "acteur": "Marketing"
+      },
+      {
+        "etape": "Activation",
+        "detail": "The paid search campaigns are triggered at the right moment in the affected regions.",
+        "acteur": "Marketing"
+      },
+      {
+        "etape": "Measurement",
+        "detail": "CTR, cost per click, and traffic are measured and compared to the previous year.",
+        "acteur": "Data and marketing team"
+      }
+    ]
+  },
+  "replication": {
+    "prerequis_data": [
+      "search trends data by region",
+      "open external data (weather, climate)",
+      "media performance history"
+    ],
+    "prerequis_orga": [
+      "marketing data team",
+      "access to an ML platform",
+      "coordination with media activation"
+    ],
+    "stack_possible": [
+      "ML platform (Google Cloud, Vertex AI, BigQuery ML or equivalent)",
+      "Google Trends or a trends source",
+      "paid search platform"
+    ],
+    "premiere_etape": "Assemble a search trends dataset by region crossed with weather, and test it on one season against the media history.",
+    "playbook": [
+      {
+        "action": "Gather the search trends history by region and the open weather data, then align them with the media performance history.",
+        "livrable": "Regional dataset covering 2-3 seasons."
+      },
+      {
+        "action": "Train a model to forecast search peaks by region and backtest it against the previous season.",
+        "livrable": "Model with forecast error measured on the history."
+      },
+      {
+        "action": "Define the trigger thresholds and the anticipated media planning process with the activation team.",
+        "livrable": "Activation calendar driven by the forecasts."
+      },
+      {
+        "action": "Activate on a test season in 1-2 regions and compare CTR, cost per click, and traffic to the previous year.",
+        "livrable": "Quantified season assessment against the history."
+      },
+      {
+        "action": "Extend to the other regions and automate the refresh of the forecasts each season.",
+        "livrable": "Seasonal forecasting pipeline in production."
+      }
+    ],
+    "equipe": "1 data scientist + 1 search media buyer + 1 marketing lead to arbitrate the activation calendar."
+  },
+  "statut_vivant": {
+    "note": "The Australian case is documented and quantified, with an intention to expand globally. The scale of deployment outside Australia is not re-sourced with up-to-date figures; the pattern (demand forecasting to drive media) remains active at Bayer Consumer Health, which is also investing in AI marketing."
+  },
+  "transposable_ue": {
+    "note": "The model trains on aggregated search trends and open data (weather, climate), without individual health data, which limits GDPR exposure. The use (demand forecasting to drive seasonal media) is low-sensitivity under the AI Act. The pattern transposes directly in the EU, provided the trends data is available per market."
+  }
+}

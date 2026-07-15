@@ -1,0 +1,104 @@
+{
+  "seo": {
+    "title": "The Home Depot: genAI project assistant Magic Apron - millions of product pages (2025)",
+    "meta_description": "Magic Apron, The Home Depot's genAI suite launched in 2025, answers DIY questions across millions of product pages and extends in store with Google Cloud.",
+    "resume_citable": "Launched in March 2025, The Home Depot's genAI suite Magic Apron answers project questions across millions of product pages on homedepot.com and extended in January 2026 with Google Cloud toward multimodal input and the in-store experience.",
+    "faq": [
+      {
+        "q": "What is Magic Apron?",
+        "a": "It is The Home Depot's suite of genAI assistants, launched in 2025, which answers DIY questions and summarizes reviews from an in-house knowledge base."
+      },
+      {
+        "q": "Is it deployed at scale?",
+        "a": "Yes. The assistant covers millions of product pages on homedepot.com and the app, and was extended in January 2026 with Google Cloud toward multimodal input and an in-store experience in testing."
+      }
+    ]
+  },
+  "pattern": "genAI conversational project assistant backed by an in-house knowledge base",
+  "etape_parcours": "consideration",
+  "objectif_business": "Bring the expertise of in-store associates to the digital channel, to give the customer the confidence to take on their DIY project and remove decision friction on technical products.",
+  "description": "Magic Apron is The Home Depot's suite of genAI tools, launched on March 6, 2025. To start, an assistant present on millions of product pages of homedepot.com and in the app answers DIY questions and summarizes customer reviews, drawing on an in-house knowledge base that blends the retailer's data and its product expertise. The customer describes their project in natural language and gets advice and recommendations, from fixing a faucet to remodeling a kitchen. In January 2026, at NRF, Home Depot extended Magic Apron with Google Cloud: richer conversational capabilities, multimodal features (image upload), and an in-store experience in testing with local stock and aisle guidance. Home Depot then describes an assistant that already produces better engagement and resolution results.",
+  "resultats": [
+    { "metrique": "Product pages covered, on homedepot.com and the app" },
+    { "metrique": "Stated effect on engagement and resolution" }
+  ],
+  "niveau_preuve": {
+    "justification": "Official press releases from The Home Depot and Google Cloud naming the brand, plus major retail press on the launch. The scope (millions of pages, national extension) establishes scale, but no results figure is published, only a stated improvement in engagement and resolution, which caps at C."
+  },
+  "stack_technique": [
+    { "detail": "The Home Depot's custom genAI suite: project conversation, review summarization, RAG over the in-house base, multimodal features (image upload) added in 2026; the underlying LLM at launch is not named" },
+    { "detail": "Product data, project expertise, customer reviews, and local stock, the foundation of the RAG and the condition for accurate answers" },
+    { "detail": "Partner for the agentic extension announced at NRF 2026: richer conversational capabilities, multimodal input, in-store experience in testing" },
+    { "detail": "Deployment surfaces for the assistant, across millions of product pages" }
+  ],
+  "fonctionnement_operationnel": {
+    "cadence": "Real time at each customer question on web, app, and in testing on the in-store experience.",
+    "opere_par": "The Home Depot's customer experience and digital team, which maintains the in-house knowledge base and the model.",
+    "signal_pilote": "The coverage and freshness of the product and project knowledge base. If it is not up to date, the assistant answers off the mark or steers toward an unsuitable product.",
+    "etapes": [
+      {
+        "etape": "Project question",
+        "detail": "The customer describes their project or asks a question on a product page, in text or via an image.",
+        "acteur": "customer"
+      },
+      {
+        "etape": "Retrieval from the in-house base",
+        "detail": "The assistant retrieves advice, product specifications, and reviews from the proprietary knowledge base.",
+        "acteur": "AI"
+      },
+      {
+        "etape": "Answer and recommendation",
+        "detail": "It composes project advice, summarizes reviews, and recommends products; in store, it adds local stock and aisle.",
+        "acteur": "AI"
+      },
+      {
+        "etape": "Follow-up and extension",
+        "detail": "Teams measure engagement and resolution and extend the scope (pros, stores, voice).",
+        "acteur": "data team"
+      }
+    ]
+  },
+  "replication": {
+    "prerequis_data": [
+      "Structured product and project knowledge base",
+      "Usable customer reviews for summarization",
+      "Local stock and store layout for the in-store version"
+    ],
+    "prerequis_orga": [
+      "AI transparency rule toward the customer",
+      "Team to maintain and refresh the knowledge base",
+      "Engagement and resolution measurement loop"
+    ],
+    "stack_possible": [
+      "Generative LLM via API",
+      "RAG layer over the in-house knowledge base",
+      "Multimodal module for image upload"
+    ],
+    "premiere_etape": "Build a product and project knowledge base, connect a RAG assistant on high-traffic pages, then measure engagement and resolution.",
+    "playbook": [
+      {
+        "action": "Consolidate the knowledge base: product specifications, project guides, customer reviews, with a refresh process.",
+        "livrable": "Indexed, queryable knowledge base"
+      },
+      {
+        "action": "Connect a RAG assistant (LLM via API) on high-traffic product pages, with AI transparency and guardrails on technical advice.",
+        "livrable": "Assistant piloted on a first batch of product pages"
+      },
+      {
+        "action": "Add review summarization and measure engagement and question resolution against pages without the assistant.",
+        "livrable": "Quantified engagement / resolution review on the pilot scope"
+      },
+      {
+        "action": "Extend to the full catalog and prepare the extensions: multimodal (image), local stock, and in-store guidance.",
+        "livrable": "Generalized assistant and framed in-store roadmap"
+      }
+    ],
+    "equipe": "2-3 ML / back-end devs + 1 PM + 1 product content lead for the knowledge base"
+  },
+  "statut_vivant": {
+    "note": "Agentic extension announced at NRF on January 11, 2026 with Google Cloud (multimodal features, in-store experience in testing, national rollout of materials lists for pros)."
+  },
+  "transposable_ue": {
+    "note": "A conversational assistant backed by an in-house product knowledge base is transposable to any retailer. In the EU, the AI Act requires telling the customer they are talking to an AI, and using history and location for the in-store version falls under GDPR."
+  }
+}

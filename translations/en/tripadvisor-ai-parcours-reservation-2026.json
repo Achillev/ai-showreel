@@ -1,0 +1,122 @@
+{
+  "seo": {
+    "title": "Tripadvisor: AI integrated into the booking journey - point-of-sale conversion +20% over two quarters (2026)",
+    "meta_description": "Tripadvisor integrated AI assistants into Viator, TheFork, and its point of sale: +20% conversion over two quarters and more than doubled operator sign-up.",
+    "resume_citable": "In Q1 2026, Tripadvisor quantified the effect of AI on its booking journey: more than 20% growth in point-of-sale conversion over two quarters, a more than doubled sign-up conversion rate for Viator experience operators, an Ask TheFork assistant doing full-content search on menus, photos, and reviews, and about 40% of TheFork's B2C support handled by AI.",
+    "faq": [
+      {
+        "q": "What effect did AI have on Tripadvisor's conversion?",
+        "a": "At the Tripadvisor point of sale, journey simplification and AI improvements produced more than 20% growth in conversion over two quarters. On the Viator side, AI-assisted experience-operator sign-up more than doubled the sign-up conversion rate."
+      },
+      {
+        "q": "What do TheFork and Viator's AI assistants do?",
+        "a": "On TheFork, an AI assistant (Ask TheFork) does full-content search on menus, photos, and reviews for restaurant discovery, and about 40% of B2C customer support is handled by AI. On the Viator app, an AI pre-booking chat answers questions before purchase."
+      },
+      {
+        "q": "Does traffic from AI platforms convert well?",
+        "a": "Tripadvisor says the volume from AI sources remains small but its conversion is already among the highest of any of its channels, which the group links to the high intent of conversational search."
+      }
+    ]
+  },
+  "pattern": "conversational AI assistants integrated into the booking journey (full-content search, pre-booking chat, operator onboarding)",
+  "etape_parcours": "consideration and purchase",
+  "objectif_business": "Grow conversion throughout the group's booking journey (discovery, pre-booking, checkout) and lift the supply constraint on the operator side, by integrating AI assistants across the three brands Tripadvisor, Viator, and TheFork rather than in a single surface.",
+  "description": "Tripadvisor integrated AI at several points of the booking journey across its three brands, and quantified the effect at its Q1 2026 earnings call (May 2026). On TheFork, an AI assistant (presented as Ask TheFork) does full-content search on menus, photos, and reviews to make restaurant discovery more intuitive and push recommendation relevance; about 40% of TheFork's B2C customer support queries are already handled by AI. On the Viator app, an AI pre-booking chat answers questions before purchase. Also on the Viator side, sign-up of new experience operators was simplified by a sign-up assist AI, which more than doubled the sign-up conversion rate and unlocked supply volume. At the Tripadvisor point of sale, journey simplification combined with the AI improvements produced more than 20% conversion growth over two quarters. The group also notes that traffic from AI platforms remains small in volume but already converts among the best of all its channels, a signal it links to the high intent of conversational search. Tripadvisor has moreover set up integrations with several AI platforms (OpenAI, Perplexity, Microsoft, Amazon, and recently Anthropic).",
+  "points_cles": ["AI assistants integrated into the booking journey of Tripadvisor, Viator, and TheFork.", "Ask TheFork full-content search, Viator pre-booking chat, assisted operator onboarding.", "+20% point-of-sale conversion over two quarters, operator sign-up more than doubled.", "Evidence A, confirmed status, figures from the Q1 2026 earnings call."],
+  "resultats": [
+    { "metrique": "Point-of-sale conversion growth, over two quarters" },
+    { "metrique": "Experience-operator sign-up conversion (Viator, AI-assisted sign-up)" },
+    { "metrique": "Conversion of traffic from AI sources (volume still small)" },
+    { "metrique": "TheFork B2C customer support queries handled by AI" },
+    { "metrique": "TheFork revenue Q1 2026, the brand carrying the AI (+11% at constant currency, EBITDA 8%)" }
+  ],
+  "niveau_preuve": {
+    "justification": "Figures announced by Tripadvisor's President and CEO and CFO at the Q1 2026 earnings call (May 2026), reproduced consistently by three transcripts from established financial press (Motley Fool, Investing.com, Insider Monkey). Financial-results type source, several consistent reproductions of the same verbatims."
+  },
+  "stack_technique": [
+    { "detail": "TheFork's conversational assistant that does full-content search on menus, photos, and reviews to make restaurant discovery more intuitive and improve recommendation relevance, engagement, and conversion." },
+    { "detail": "Conversational chat added to the Viator app to answer pre-booking questions and help the customer decide with more confidence." },
+    { "detail": "Onboarding of new experience operators simplified by an AI that speeds up filling in and publishing offers; presented as a supply-volume lever." }
+  ],
+  "fonctionnement_operationnel": {
+    "cadence": "Real time in the customer surfaces (Viator pre-booking chat, Ask TheFork assistant, TheFork AI support); by product wave on the operator-onboarding side; conversion tracked quarter over quarter.",
+    "opere_par": "Product and data teams of each group brand (Tripadvisor, Viator, TheFork), with in-house AI orchestration and partner LLMs called per surface.",
+    "signal_pilote": "The conversion rate (restaurant or experience booking, operator sign-up) and the intent signals from the questions asked in the chat. If the content corpus (menus, photos, reviews, experience listings) or the full-content indexing degrade, answer relevance and thus conversion drop.",
+    "etapes": [
+      {
+        "etape": "Question from the traveler or diner",
+        "detail": "The customer queries the assistant: restaurant search on TheFork, or a pre-booking question about an activity in the Viator app.",
+        "acteur": "customer"
+      },
+      {
+        "etape": "Full-content search and answer generation",
+        "detail": "The AI assistant searches across menus, photos, and reviews (TheFork) or experience listings (Viator), then generates an answer and targeted recommendations.",
+        "acteur": "AI"
+      },
+      {
+        "etape": "Move to booking",
+        "detail": "The checkout journey, simplified and coupled with payment options, turns the answer into a booking; conversion is measured at the point of sale.",
+        "acteur": "customer"
+      },
+      {
+        "etape": "AI-assisted operator onboarding",
+        "detail": "On the supply side, a new experience operator fills in and publishes their offer with an AI that speeds up sign-up; the supply team tracks the sign-up conversion rate.",
+        "acteur": "AI"
+      },
+      {
+        "etape": "Support and supervision",
+        "detail": "TheFork's AI handles part of the B2C support queries; product teams track conversion, engagement, and poorly understood cases to widen the scope.",
+        "acteur": "data team"
+      }
+    ]
+  },
+  "replication": {
+    "prerequis_data": [
+      "A rich, clean content corpus: menus, photos, reviews, product or experience listings, indexable for full-content search",
+      "First-party behavior history (searches, bookings) to frame recommendation relevance",
+      "A structured supply catalog on the operator side to connect assisted onboarding"
+    ],
+    "prerequis_orga": [
+      "A two-sided marketplace (demand and supply) where operator onboarding is a real growth constraint",
+      "A product and data team able to run conversational assistants in production across several surfaces",
+      "A compliance framework for AI transparency (AI Act) and the GDPR legal basis for booking data"
+    ],
+    "stack_possible": [
+      "An in-house conversational assistant coupled with a third-party LLM called per surface",
+      "A full-content / semantic search engine over the unstructured content corpus",
+      "A pre-booking chat integrated into the booking app",
+      "A sign-up assistant that pre-fills and publishes the offer on the operator side",
+      "AI automation of first-level customer support"
+    ],
+    "premiere_etape": "Choose a single high-volume surface (for example product search) and connect an assistant that queries the existing content (menus, reviews, listings), measuring conversion before and after rather than engagement alone.",
+    "playbook": [
+      {
+        "action": "Map the journey surfaces where the user asks questions or hesitates: search, comparison, pre-booking, operator onboarding.",
+        "livrable": "A prioritized list of surfaces by volume and conversion impact."
+      },
+      {
+        "action": "Clean and index the content corpus (menus, photos, reviews, listings) to enable reliable full-content search.",
+        "livrable": "A content index queryable by the assistant."
+      },
+      {
+        "action": "Connect a conversational assistant to a first surface, with transparency about its AI nature, and constrain it to the marketplace's verified content.",
+        "livrable": "An assistant in production on one surface, with answers traceable to the source content."
+      },
+      {
+        "action": "Measure the incremental conversion of the equipped surface against a control surface, not just the chat's engagement.",
+        "livrable": "A conversion reading before / after, with an extend-or-stop decision."
+      },
+      {
+        "action": "Extend to the supply side: a sign-up assistant that speeds up publishing operator offers, tracked on the sign-up conversion rate.",
+        "livrable": "Assisted operator onboarding, with sign-up conversion measured."
+      }
+    ],
+    "equipe": "1 product team per surface (PM, conversational design) + AI engineers (orchestration, full-content search, LLM integration) + a marketplace data team + GDPR / AI Act compliance involved continuously."
+  },
+  "statut_vivant": {
+    "note": "Conversion gains presented as ongoing and growing at the May 7, 2026 earnings call, two months before verification. The features are already in production on the three brands and the group announces it wants to extend the payment layer and the chat to capture more conversion."
+  },
+  "transposable_ue": {
+    "note": "The case is already partly European: TheFork is a brand born in Europe (headquartered in Paris, markets in France, Spain, Italy), and both its full-content AI search assistant and its AI customer support run on European traffic. The EU constraint bears mainly on AI Act transparency (telling the user they are talking to an AI in the pre-booking chat and the restaurant assistant) and on the GDPR legal basis for the booking and behavior data feeding personalization. The corpus used (menus, photos, reviews, experience listings) is editorial content and not sensitive personal data, which eases the transposition."
+  }
+}

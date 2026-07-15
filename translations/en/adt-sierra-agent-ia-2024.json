@@ -1,0 +1,123 @@
+{
+  "seo": {
+    "title": "ADT: AI customer agent (Sierra) across 2 million requests per month (2024)",
+    "meta_description": "ADT deployed a Sierra AI agent on its help center in late 2024, in a context of 2 million care requests per month.",
+    "resume_citable": "ADT, a major US home security player, deployed an AI agent built on Sierra in late 2024 to handle troubleshooting and account questions, across a volume of around 2 million care requests per month, with tight guardrails and human review.",
+    "faq": [
+      {
+        "q": "What does ADT's AI agent handle?",
+        "a": "Help center questions: equipment troubleshooting, password reset, EasyPay enrollment, with a planned extension toward payment and appointment rescheduling."
+      },
+      {
+        "q": "Why does human review matter here?",
+        "a": "For a security customer, a wrong intent classification has real consequences, so ADT wires a human escalation whenever there is any doubt."
+      }
+    ]
+  },
+  "pattern": "genAI customer agent",
+  "etape_parcours": "post-purchase",
+  "objectif_business": "Absorb a share of the 2 million service requests per month with a reliable AI agent, without degrading quality in a sector where a misclassification has real consequences.",
+  "description": "ADT, one of the largest US home security players, deployed an AI agent in late 2024 built on the Sierra platform (Bret Taylor's company). The agent handles help center questions: troubleshooting (for example why a panel is beeping), password reset, EasyPay direct debit enrollment. ADT handles around 2 million care requests per month. The capabilities announced as extensions cover payment, appointment rescheduling, and ordering yard signs or batteries. The agent runs with tight guardrails and human review, because a mistake in intent classification for a security customer carries a real cost.",
+  "points_cles": [
+    "AI customer agent on the help center (troubleshooting, password, EasyPay).",
+    "Built on the Sierra platform, with guardrails and human escalation.",
+    "Context of around 2 million care requests per month.",
+    "Evidence level B, live status confirmed."
+  ],
+  "resultats": [
+    {
+      "metrique": "Care requests handled per month"
+    },
+    {
+      "metrique": "Functional scope"
+    }
+  ],
+  "niveau_preuve": {
+    "justification": "Case study from the Sierra platform (official interested source) cross-checked by trade press that covered the partnership in November 2024; no deviation metric published, hence a B level rather than higher."
+  },
+  "fonctionnement_operationnel": {
+    "cadence": "Real time, with dense human review on high-risk intents and regular iterations on the workflows.",
+    "opere_par": "ADT's customer experience team, co-building with Sierra engineers who embed on the workflows.",
+    "signal_pilote": "The accuracy of intent classification. For a security customer, confusing an emergency with a billing question carries a real cost, so human escalation is wired at the slightest doubt.",
+    "etapes": [
+      {
+        "etape": "Definition of intents and guardrails",
+        "detail": "Map the handleable requests (troubleshooting, password, EasyPay) and set strict limits on what the agent may not do on its own.",
+        "acteur": "customer experience team"
+      },
+      {
+        "etape": "Agent build",
+        "detail": "Wire the workflows, the connections to the customer account, and the escalation rules on the Sierra platform.",
+        "acteur": "agency"
+      },
+      {
+        "etape": "Request handling",
+        "detail": "The agent answers troubleshooting and account questions, routing sensitive cases to a human.",
+        "acteur": "AI"
+      },
+      {
+        "etape": "Review and extension",
+        "detail": "Monitor conversations, fix errors, gradually open up new capabilities (payment, appointments).",
+        "acteur": "customer experience team"
+      }
+    ]
+  },
+  "replication": {
+    "prerequis_data": [
+      "help center knowledge base",
+      "read access to account and billing",
+      "ticket history by intent"
+    ],
+    "prerequis_orga": [
+      "support team supervising the agent",
+      "escalation rules on sensitive cases",
+      "conversation review process"
+    ],
+    "stack_possible": [
+      "Sierra",
+      "Decagon",
+      "Intercom Fin",
+      "LLM + in-house orchestrator"
+    ],
+    "premiere_etape": "Pick the low-risk intents (password, account status) for a pilot, and define the red line of intents to escalate automatically.",
+    "playbook": [
+      {
+        "action": "Map the support intents, pick a low-risk batch (password, account status), and write the red line of cases to escalate automatically.",
+        "livrable": "Intent map + validated escalation rules"
+      },
+      {
+        "action": "Build the agent on the platform: workflows, read connection to the customer account, guardrails.",
+        "livrable": "Working agent in a test environment"
+      },
+      {
+        "action": "Open a pilot on a share of the traffic with systematic review of the conversations.",
+        "livrable": "Pilot report: resolution rate, intent classification errors"
+      },
+      {
+        "action": "Gradually broaden the scope (payment, appointments) and set up weekly conversation review.",
+        "livrable": "Agent in production on the intent batch, volume deviation dashboard"
+      }
+    ],
+    "equipe": "1 customer experience lead + 1 integration developer (account and billing API) + support supervisors for conversation review, with support from the vendor's engineers"
+  },
+  "stack_technique": [
+    {
+      "detail": "AI agent platform for customer service on which the ADT agent is built: workflows, guardrails, and escalation rules."
+    },
+    {
+      "detail": "Language models managed by the platform; neither ADT nor Sierra publishes the exact models used."
+    },
+    {
+      "detail": "Component that distinguishes handleable requests (troubleshooting, password, EasyPay) from sensitive cases to route to a human agent."
+    },
+    {
+      "detail": "Access to the customer account (EasyPay, status, billing) to handle transactional requests."
+    }
+  ],
+  "statut_vivant": {
+    "note": "The ADT case is still listed by Sierra as a customer, and Sierra moved to a multi-billion valuation in 2025 with a base of large accounts, which makes abandoning the deployment unlikely in the short term."
+  },
+  "transposable_ue": {
+    "note": "Transposable pattern, but home security is a sensitive domain: under the AI Act and GDPR, intent classification (telling an emergency apart from a billing question) must be governed, with a human path and logging. ADT runs it with tight guardrails and human review."
+  }
+}

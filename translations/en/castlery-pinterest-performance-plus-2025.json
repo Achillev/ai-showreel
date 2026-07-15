@@ -1,0 +1,108 @@
+{
+  "seo": {
+    "title": "Castlery: AI-automated Pinterest shopping (Performance+) - ROAS x2.3, average order value +98% (2025)",
+    "meta_description": "Castlery moved its catalog campaigns to Pinterest Performance+: ROAS multiplied by 2.3, average order value +98% and CPA -14% vs manual management in APAC.",
+    "resume_citable": "Castlery replaced its manual catalog campaign with the Pinterest Performance+ suite (AI-automated media buying) and multiplied its ROAS by 2.3, raised its average order value by 98%, and lowered its CPA by 14% on a comparable scope.",
+    "faq": [
+      {
+        "q": "What does Pinterest Performance+ automate?",
+        "a": "The bids, targeting, budget, and creative selection of a shopping campaign: the advertiser sets an objective and a budget, and the AI handles the rest."
+      },
+      {
+        "q": "Does the gain come from better creative?",
+        "a": "No. This is a media buying optimization case at equal catalog. The automation targets high-basket buyers better; it does not generate new visuals."
+      }
+    ]
+  },
+  "pattern": "fully automated shopping campaign (bids, targeting, budget, creative)",
+  "etape_parcours": "consideration",
+  "objectif_business": "Move from manual management of catalog campaigns to automated acquisition on Pinterest, to sell more furniture with fewer manual adjustments.",
+  "description": "Castlery, a direct-to-consumer furniture brand, compared its manually managed Catalog Sales campaign to the full Pinterest Performance+ suite, which automates bids, targeting, budget, and creative selection. Across Asia-Pacific, with Aleph as its Pinterest business partner, the automated version produced a ROAS multiplied by 2.3, an average order value up 98 percent, and a cost per acquisition down 14 percent against manual management. What makes the case interesting is the measured gap on a comparable scope: same brand, same catalog, but the automation searches better for high-basket buyers. This is a media buying optimization and automation case, not generation.",
+  "points_cles": [
+    "Switch from a manual catalog campaign to Pinterest Performance+ (automated bids, targeting, budget, creative).",
+    "Pinterest Performance+ suite run with the business partner Aleph in Asia-Pacific.",
+    "ROAS x2.3, average order value +98%, cost per acquisition -14% vs manual management.",
+    "Evidence level B, live status confirmed."
+  ],
+  "resultats": [
+    { "metrique": "ROAS vs manual campaign" },
+    { "metrique": "Average order value (AOV)" },
+    { "metrique": "Cost per acquisition (CPA)" }
+  ],
+  "niveau_preuve": {
+    "justification": "Quantified Pinterest platform case study naming Castlery, its Performance Marketing lead, and the partner Aleph; an official interested source, hence B. The Performance+ product is confirmed by the Pinterest product page."
+  },
+  "stack_technique": [
+    { "detail": "Pinterest Ads automation suite: bids, targeting, budget, and creative selection driven by Pinterest ML" },
+    { "detail": "purchase events sent from the browser and server side, the signal that feeds ROAS and average order value optimization" },
+    { "detail": "product feed (visuals, prices, stock) that powers the automated shopping ads" },
+    { "detail": "official Pinterest business partner in Asia-Pacific, supporting the Castlery activation" }
+  ],
+  "fonctionnement_operationnel": {
+    "cadence": "Continuous, per campaign: once launched, the campaign optimizes in real time without manual bid adjustment.",
+    "opere_par": "The brand's performance marketing team, supported by the Pinterest business partner (Aleph in APAC).",
+    "signal_pilote": "The conversion event (purchase) reported through the Pinterest tag and the conversions API. Without this signal, ROAS and average order value optimization cannot work.",
+    "etapes": [
+      {
+        "etape": "Catalog and tracking connection",
+        "detail": "The product feed and the purchase event are wired into Pinterest.",
+        "acteur": "e-commerce team"
+      },
+      {
+        "etape": "Choosing the objective",
+        "detail": "The brand sets the objective (ROAS or conversions) and the budget, then activates the Performance+ suite.",
+        "acteur": "acquisition team"
+      },
+      {
+        "etape": "Automatic optimization",
+        "detail": "The AI manages bids, targeting, budget, and creative selection to search for high-basket buyers.",
+        "acteur": "AI (Pinterest Performance+)"
+      },
+      {
+        "etape": "Reading the results",
+        "detail": "The team tracks ROAS, average order value, and CPA, and adjusts budget and catalog.",
+        "acteur": "acquisition team"
+      }
+    ]
+  },
+  "replication": {
+    "prerequis_data": [
+      "structured product catalog",
+      "Pinterest tag + conversions API with a purchase event"
+    ],
+    "prerequis_orga": [
+      "dedicated Pinterest media budget",
+      "willingness to delegate management to automation"
+    ],
+    "stack_possible": [
+      "Pinterest Performance+",
+      "e-commerce catalog connector"
+    ],
+    "premiere_etape": "Duplicate a manual catalog campaign in Performance+ and compare ROAS, average order value, and CPA on an equal scope.",
+    "playbook": [
+      {
+        "action": "Wire the catalog feed and purchase measurement (Pinterest tag + conversions API), and verify the events reported.",
+        "livrable": "Catalog synced and purchases visible in Pinterest Ads Manager"
+      },
+      {
+        "action": "Duplicate the manual catalog campaign as a Performance+ version, same budget, same objective (ROAS or conversions).",
+        "livrable": "Two comparable campaigns active, manual and automated"
+      },
+      {
+        "action": "Let the learning phase converge without touching the settings.",
+        "livrable": "Campaign out of learning with a readable conversion volume"
+      },
+      {
+        "action": "Compare ROAS, average order value, and CPA on an equal scope, then shift the budget to the winning version.",
+        "livrable": "Quantified review and budget shift decision"
+      }
+    ],
+    "equipe": "1 media buyer + 1 developer or e-commerce integrator for the catalog feed and the conversions API"
+  },
+  "statut_vivant": {
+    "note": "Pinterest Performance+ is a standard product highlighted by Pinterest in 2025 (SMB blog, product page). Live and available activation."
+  },
+  "transposable_ue": {
+    "note": "Pinterest Performance+ is available in Europe. The automation relies on Pinterest signals and the product catalog, with no exported first-party data; limited GDPR exposure. Conversion tracking on the EU side through the Pinterest tag and conversions API in consented mode."
+  }
+}

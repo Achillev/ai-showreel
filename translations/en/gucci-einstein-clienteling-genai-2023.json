@@ -1,0 +1,104 @@
+{
+  "seo": {
+    "title": "Gucci: brand-voice genAI reply suggestions for 600 advisors (Gucci 9, 2023)",
+    "meta_description": "Gucci equips its 600 Gucci 9 advisors, across 7 hubs, with Einstein for Service, which suggests replies in a guccified brand voice and speeds up onboarding.",
+    "resume_citable": "Gucci equips the 600 advisors of its Gucci 9 network, spread across seven global hubs, with Einstein for Service, which generates reply suggestions in a guccified brand voice and shortens the ramp-up time for new advisors.",
+    "faq": [
+      {
+        "q": "How many advisors does Gucci use with AI?",
+        "a": "600 client advisors across seven global hubs in the Gucci 9 network, according to the Salesforce customer story."
+      },
+      {
+        "q": "What does the AI do for Gucci advisors?",
+        "a": "It suggests short replies in the guccified brand voice, which the advisor can use, edit, or replace, keeping control of the relationship."
+      }
+    ]
+  },
+  "pattern": "genAI copilot for advisors (brand-voice reply suggestion)",
+  "etape_parcours": "post-purchase",
+  "objectif_business": "Help Gucci 9 advisors respond to clients with a consistent brand voice across every channel, and shorten the ramp-up time for new advisors without diluting premium service.",
+  "description": "Gucci placed AI at the heart of Gucci 9, its global client service network. Using Salesforce Einstein for Service, the system generates short reply suggestions in a guccified brand voice, combining internal data and AI, to help advisors handle requests that range from restoring a vintage bag to booking a table at a Gucci Osteria restaurant. The advisor can use the reply as is, edit it to personalize the exchange, or write their own. Gucci 9 relies on 600 advisors spread across seven global hubs, reachable in store, by phone, or via WhatsApp. The setup shortens how long it takes new hires to learn the brand voice.",
+  "resultats": [
+    { "metrique": "Gucci 9 advisors covered, across 7 global hubs" },
+    { "metrique": "Reported effect on new advisors" }
+  ],
+  "niveau_preuve": {
+    "justification": "Salesforce customer story quantifying the scale of the rollout (600 advisors, 7 hubs), confirmed by trade press naming Gucci and the VP Global Gucci 9 with positive results. No public conversion or revenue metric."
+  },
+  "stack_technique": [
+    { "detail": "Generates the short reply suggestions in the brand voice from internal data; the advisor keeps control of the message sent" },
+    { "detail": "Client data foundation that feeds Einstein's suggestions on Gucci 9 requests" },
+    { "detail": "In-house corpus and rules that frame the guccified voice of the generated replies" },
+    { "detail": "One of Gucci 9's contact channels, alongside the store and phone" }
+  ],
+  "fonctionnement_operationnel": {
+    "cadence": "Real time during the client exchange; suggestions generated at each interaction",
+    "opere_par": "Gucci 9 advisors across the seven hubs, on Einstein for Service",
+    "signal_pilote": "The internal client data and the brand-voice reference that feed the suggestion. Without this guccified reference, the generated reply falls outside the brand voice and becomes unusable.",
+    "etapes": [
+      {
+        "etape": "Client request",
+        "detail": "A client contacts Gucci 9 in store, by phone, or via WhatsApp.",
+        "acteur": "client"
+      },
+      {
+        "etape": "Reply suggestion",
+        "detail": "Einstein for Service generates a short reply in the brand voice from internal data.",
+        "acteur": "AI"
+      },
+      {
+        "etape": "Advisor judgment",
+        "detail": "The advisor uses, edits, or rewrites the suggestion based on the relationship context.",
+        "acteur": "advisor"
+      },
+      {
+        "etape": "Ramp-up",
+        "detail": "The suggestions also serve as a tone guide to train new advisors faster.",
+        "acteur": "advisor / management"
+      }
+    ]
+  },
+  "replication": {
+    "prerequis_data": [
+      "centralized client history and data (CRM)",
+      "brand tone and voice reference",
+      "corpus of quality replies to frame the style"
+    ],
+    "prerequis_orga": [
+      "structured client service network",
+      "clear rule of human control before sending",
+      "advisor training on the tool"
+    ],
+    "stack_possible": [
+      "Salesforce Einstein for Service",
+      "other CRM suites with service genAI",
+      "LLM with brand-voice guardrails"
+    ],
+    "premiere_etape": "Connect the service CRM to a reply generator framed by the brand voice, tested on one team of advisors.",
+    "playbook": [
+      {
+        "action": "Build the brand-voice reference: a corpus of quality replies, style rules, forbidden cases, and set the rule of human control before sending.",
+        "livrable": "Brand-voice reference approved by client relations leadership"
+      },
+      {
+        "action": "Configure suggestion generation in the service CRM (Einstein for Service or equivalent), connected to client data and the reference.",
+        "livrable": "Working reply suggestions in a test environment"
+      },
+      {
+        "action": "Launch a pilot with one hub's team of advisors, giving them the freedom to use, edit, or rewrite each suggestion.",
+        "livrable": "Pilot in production with a tracked suggestion-usage rate"
+      },
+      {
+        "action": "Measure tone compliance, response time, and new-hire ramp-up, train the managers, then extend to the other hubs.",
+        "livrable": "Pilot review and multi-hub rollout plan"
+      }
+    ],
+    "equipe": "1 Salesforce admin + 1 quality / brand-voice lead + the advisors' managers for training"
+  },
+  "statut_vivant": {
+    "note": "Gucci 9 is an operational client service network; the use of Einstein for Service is documented in 2023. The last public quantified confirmation dates from 2023."
+  },
+  "transposable_ue": {
+    "note": "Italian brand, multichannel client service. The AI generates reply suggestions from internal client data; frame the handling of conversation data (GDPR) and keep the advisor as the decision-maker on the message sent."
+  }
+}

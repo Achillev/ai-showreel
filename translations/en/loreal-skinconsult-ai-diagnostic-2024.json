@@ -1,0 +1,120 @@
+{
+  "seo": {
+    "title": "L'Oreal SkinConsult AI: selfie-based skin diagnosis - up to 70% purchase, 56 countries (2024)",
+    "meta_description": "L'Oreal's AI skin diagnosis (SkinConsult AI / ModiFace) is deployed in 56 countries across 7 brands, with up to 70% purchase after the experience.",
+    "resume_citable": "L'Oreal's AI skin diagnosis (SkinConsult AI, ModiFace engine) is deployed in stores in 56 countries across 7 brands, with up to 70% of consumers buying after the experience.",
+    "faq": [
+      {
+        "q": "How does SkinConsult AI work?",
+        "a": "A selfie is compared against L'Oreal's Skin Ageing Atlases image database to score signs of ageing and propose a personalized product routine."
+      },
+      {
+        "q": "What is the reported commercial impact?",
+        "a": "Up to 70% of consumers buy after the diagnostic experience, deployed in stores in 56 countries across 7 brands according to L'Oreal's annual report."
+      }
+    ]
+  },
+  "pattern": "AI diagnosis from a selfie plus routine recommendation",
+  "etape_parcours": "consideration",
+  "objectif_business": "Turn a selfie into a personalized skin diagnosis and product routine, to steer online and in-store purchase and lift conversion.",
+  "description": "SkinConsult AI analyzes a selfie to assess signs of skin ageing (wrinkles, spots, pores, firmness) through a comparative algorithm trained on L'Oreal's Skin Ageing Atlases image database, then proposes a suitable product routine. The technology, powered by ModiFace, feeds the skin diagnosis of the group's brands (Vichy, La Roche-Posay, L'Oreal Paris) on their sites, in stores, and on Tmall in China. In 2024, L'Oreal reports providing skin diagnosis and routine in stores in 56 countries across seven of its brands.",
+  "points_cles": [
+    "AI skin diagnosis from a selfie, then product routine recommendation.",
+    "ModiFace / SkinConsult AI engine, trained on the 6,000-image Skin Ageing Atlases dataset.",
+    "Up to 70% purchase after the experience, deployed in stores across 56 countries via 7 brands.",
+    "Evidence B, confirmed status: documented in L'Oreal's 2024 annual report."
+  ],
+  "resultats": [
+    { "metrique": "Purchase rate after the diagnostic experience" },
+    { "metrique": "In-store diagnosis coverage" },
+    { "metrique": "Algorithm training images, Skin Ageing Atlases database" }
+  ],
+  "niveau_preuve": {
+    "justification": "Conversion figure and market coverage published in L'Oreal's official annual report (primary source), technology described by established press and by the brand. Concordant sources, one of them primary."
+  },
+  "stack_technique": [
+    { "detail": "diagnosis of skin ageing signs (wrinkles, spots, pores, firmness) from a selfie, with routine recommendation" },
+    { "detail": "computer vision engine (L'Oreal subsidiary) that powers the diagnosis for the group's brands" },
+    { "detail": "proprietary L'Oreal database of 6,000 graded images used as a comparative reference for the algorithm" },
+    { "detail": "distribution channel for the diagnosis in China, in addition to brand sites and in-store kiosks" }
+  ],
+  "fonctionnement_operationnel": {
+    "cadence": "On demand (one analysis per selfie), continuously available online and in store",
+    "opere_par": "Beauty Tech / ModiFace team for the engine, brand teams and in-store advisors for usage",
+    "signal_pilote": "The quality and representativeness of the reference image database (Skin Ageing Atlases). A biased or too narrow training set degrades the diagnosis for certain skin phototypes.",
+    "etapes": [
+      {
+        "etape": "Selfie capture",
+        "detail": "The user uploads a selfie on the brand site or in store.",
+        "acteur": "customer"
+      },
+      {
+        "etape": "Comparative analysis",
+        "detail": "The algorithm compares the face against the graded image database and scores signs of ageing.",
+        "acteur": "AI (ModiFace / SkinConsult AI)"
+      },
+      {
+        "etape": "Diagnosis and routine",
+        "detail": "The system returns a diagnosis and a personalized product routine.",
+        "acteur": "AI"
+      },
+      {
+        "etape": "Advice and purchase",
+        "detail": "The advisor (store) or the page (web) steers the customer toward buying the recommended products.",
+        "acteur": "advisor / customer"
+      },
+      {
+        "etape": "Model maintenance",
+        "detail": "The teams update the image database and the diagnosis-to-product mapping.",
+        "acteur": "data / brand team"
+      }
+    ]
+  },
+  "replication": {
+    "prerequis_data": [
+      "graded and diverse reference image database",
+      "diagnosis-to-product mapping",
+      "image consent and non-retention policy"
+    ],
+    "prerequis_orga": [
+      "dermatology/data expertise for training and validation",
+      "site integration plus training of in-store advisors"
+    ],
+    "stack_possible": [
+      "ModiFace",
+      "Perfect Corp (skin analysis)",
+      "Haut.AI",
+      "internal vision model"
+    ],
+    "equipe": "1 PM + 1-2 vision data scientists (custom path) + 1 dermatology/domain expert + legal for facial data",
+    "playbook": [
+      {
+        "action": "Build or license a graded and diverse reference image database, and frame compliance (consent, non-retention of the image, non-medical nature of the diagnosis)",
+        "livrable": "Validated reference dataset + GDPR impact assessment"
+      },
+      {
+        "action": "Define the diagnosis-to-product and routine mapping with domain experts",
+        "livrable": "Validated diagnosis/routine matrix"
+      },
+      {
+        "action": "Train the classification model or integrate a skin-analysis SaaS, then validate accuracy across varied phototypes",
+        "livrable": "Prototype with error rate measured by phototype"
+      },
+      {
+        "action": "Integrate the selfie, diagnosis, then routine journey on the site and in a store pilot, with advisor training",
+        "livrable": "Journey in production on one market + trained advisors"
+      },
+      {
+        "action": "Measure the post-diagnosis purchase rate and extend to other brands and markets",
+        "livrable": "Post-diagnosis conversion dashboard + expansion plan"
+      }
+    ],
+    "premiere_etape": "Build or license a validated reference image database and define the diagnosis-to-product mapping before any deployment."
+  },
+  "statut_vivant": {
+    "note": "AI skin diagnosis generalized at group scale (56 countries, 7 brands) according to the 2024 annual report."
+  },
+  "transposable_ue": {
+    "note": "Diagnosis from a selfie: the face image is personal data (potentially sensitive depending on use). Require explicit consent, minimization and non-retention of the image, and clear transparency about the non-medical nature of the diagnosis (GDPR, AI Act)."
+  }
+}

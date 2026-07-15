@@ -1,0 +1,108 @@
+{
+  "seo": {
+    "title": "Deutsche Telekom: Frag Magenta, a self-care chatbot - 4M dialogues, one third resolved (2016)",
+    "meta_description": "Frag Magenta, Deutsche Telekom's service chatbot since 2016: 380+ contact reasons across chat and voice, 4M+ dialogues in 2022, more than a third resolved immediately.",
+    "resume_citable": "Deutsche Telekom has run Frag Magenta since 2016, a customer service chatbot on chat and voice covering more than 380 contact reasons, which handled over 4 million dialogues in 2022 and resolves more than a third of requests immediately.",
+    "faq": [
+      {
+        "q": "Does the chatbot also handle voice?",
+        "a": "Yes, since 2020 on the hotline, and since 2023 through Frag Magenta Voice. Deutsche Telekom is rebuilding the stack on an LLM with the 1BOT project."
+      },
+      {
+        "q": "How many requests does it resolve on its own?",
+        "a": "More than a third of requests are resolved immediately according to Deutsche Telekom; the rest are handed to an advisor with the context already captured."
+      }
+    ]
+  },
+  "pattern": "Natural-language self-care service chatbot, extended to voice and then rebuilt on an LLM (Frag Magenta 1BOT) to cover hundreds of contact reasons",
+  "etape_parcours": "post-purchase / service and loyalty",
+  "objectif_business": "Absorb as many routine requests as possible in self-care (billing, moving, outages, offers) before they reach an advisor, on both chat and phone.",
+  "description": "Frag Magenta is Deutsche Telekom's service chatbot, in production since fall 2016. The customer states the request in natural language and the assistant handles more than 380 different reasons, from moving to billing to outages and new offers. Since 2020 it also answers by voice on the hotline, and since fall 2023 Frag Magenta Voice relies on Rasa's voice capabilities. In 2022, Frag Magenta ran more than four million customer dialogues and resolves more than a third of requests immediately, with the rest handed to an advisor. Deutsche Telekom also launched Frag Magenta 1BOT, a rebuild on a multi-agent LLM platform, to move past the limits of scripted NLU and extend coverage. The stack is designed for the group's European customer base.",
+  "points_cles": ["Natural-language self-care service chatbot, extended to voice, across 380+ reasons.", "Rasa (NLU) foundation then a rebuild on the multi-agent LLM platform Frag Magenta 1BOT.", "More than 4 million dialogues in 2022, over a third resolved immediately.", "Evidence B, confirmed status."],
+  "resultats": [
+    { "metrique": "Customer dialogues (2022)" },
+    { "metrique": "Requests resolved immediately" },
+    { "metrique": "Contact reasons covered" }
+  ],
+  "niveau_preuve": {
+    "justification": "Figures published by Deutsche Telekom on its own site (4 million dialogues in 2022, more than a third resolved immediately, 380+ reasons) plus press reporting quoting a group executive on the chat and voice scaling strategy. Primary brand source plus established press: solid on volume and deflection; the retention impact in points is not isolated."
+  },
+  "stack_technique": [
+    { "detail": "NLU for the original Frag Magenta stack and the voice capabilities of Frag Magenta Voice since fall 2023" },
+    { "detail": "internal rebuild on a multi-agent LLM platform to move past scripted NLU; the underlying models are not disclosed" },
+    { "detail": "integration with the telekom.de chat, the MeinMagenta app, and the phone hotline" }
+  ],
+  "fonctionnement_operationnel": {
+    "cadence": "Real time on every contact, in chat and voice. Intents and journeys are enriched continuously; the move to an LLM changes the update cadence.",
+    "opere_par": "Deutsche Telekom's AI competence center for the platform and models, and the customer service teams for the business journeys and escalation.",
+    "signal_pilote": "The immediate resolution rate versus transfer. If it drops, the chatbot no longer deflects and pushes the load back onto advisors instead of absorbing it.",
+    "etapes": [
+      {
+        "etape": "Map the contact reasons",
+        "detail": "More than 380 reasons are modeled with their journeys, from moving to outages, so the assistant knows what to do with the request.",
+        "acteur": "Customer service team + AI"
+      },
+      {
+        "etape": "Understand natural language",
+        "detail": "The NLU reads the customer's free-form phrasing and links it to a reason, in chat and by voice on the hotline.",
+        "acteur": "AI / NLU"
+      },
+      {
+        "etape": "Resolve or transfer",
+        "detail": "More than a third of requests are resolved immediately; the rest go to an advisor with the context already captured.",
+        "acteur": "AI then human advisor"
+      },
+      {
+        "etape": "Move to the LLM (1BOT)",
+        "detail": "Rebuild on a multi-agent LLM platform to widen coverage and move past purely scripted answers.",
+        "acteur": "AI competence center"
+      }
+    ]
+  },
+  "replication": {
+    "prerequis_data": [
+      "A map of contact reasons and their resolution journeys",
+      "A corpus of conversations to train intent understanding",
+      "Access to self-care systems to take action (billing, options, outages)"
+    ],
+    "prerequis_orga": [
+      "An AI/customer service team that maintains the journeys",
+      "A clean escalation process to advisors"
+    ],
+    "stack_possible": [
+      "Rasa or a market LLM in RAG for understanding",
+      "A voice component for the hotline",
+      "API connection to service back offices"
+    ],
+    "premiere_etape": "Prioritize the 10 to 20 highest-volume contact reasons, model their journeys, and measure the immediate resolution rate against transfer before expanding.",
+    "playbook": [
+      {
+        "action": "Prioritize the 10 to 20 highest-volume contact reasons and map their resolution journeys.",
+        "livrable": "Catalog of reasons with modeled journeys"
+      },
+      {
+        "action": "Build language understanding (NLU or an LLM in RAG) and connect the self-care back-office APIs (billing, options, outages).",
+        "livrable": "A bot able to resolve the priority reasons in test"
+      },
+      {
+        "action": "Launch in beta on web chat with an escalation to an advisor that passes on the context already captured.",
+        "livrable": "Bot in limited production, immediate resolution rate measured"
+      },
+      {
+        "action": "Generalize chat, enrich the reasons continuously, and monitor the resolution / transfer ratio.",
+        "livrable": "Extended coverage with a deflection dashboard"
+      },
+      {
+        "action": "Extend the stack to voice on the hotline with a voice component.",
+        "livrable": "Voicebot in production on the highest-volume reasons"
+      }
+    ],
+    "equipe": "2-4 conversational ML / devs + 1 PM + customer service experts for the journeys and escalation"
+  },
+  "statut_vivant": {
+    "note": "Chatbot in continuous production since 2016, extended to voice and rebuilt on an LLM (1BOT). Executive communication in 2023 on a massive chat and voice scale-up. No signal of withdrawal."
+  },
+  "transposable_ue": {
+    "note": "Already operated in the EU (Germany). Handling of natural-language customer requests touching billing, contracts, and outages: data subject to the GDPR, with information and safeguards. With the arrival of LLMs (project 1BOT), care is needed on generated responses. AI Act: limited risk, transparency about the automated nature."
+  }
+}

@@ -1,0 +1,102 @@
+{
+  "seo": {
+    "title": "Zillow: natural-language home search, a first for a major US portal (2023)",
+    "meta_description": "Zillow lets buyers describe their ideal home in one sentence. Launched in 2023, enriched in 2024, a first for a major US portal.",
+    "resume_citable": "Zillow launched natural-language home search in January 2023, presented as a first for a major residential portal, enriched in September 2024 with commute time, budget, schools, and points of interest.",
+    "faq": [
+      {
+        "q": "How does Zillow's natural-language search work?",
+        "a": "The user describes their ideal home in one sentence; machine learning models translate the sentence into criteria and scan millions of listings to surface relevant properties."
+      },
+      {
+        "q": "Is this search the same as Zillow Offers?",
+        "a": "No. Zillow Offers was a home-buying program (iBuying) stopped in 2021. Natural-language search is a search and personalization feature, separate and still active."
+      }
+    ]
+  },
+  "pattern": "natural-language search over a listings catalog",
+  "etape_parcours": "consideration",
+  "objectif_business": "Let the buyer or renter describe their ideal home in one sentence rather than juggle filters, to surface relevant listings faster and shorten the search.",
+  "description": "Zillow launched natural-language search on January 26, 2023 on its iOS app, presented as a first for a major residential portal. The user types a sentence such as a price and neighborhood goal with a specific criterion, and the system scans millions of listing details to surface relevant properties. On September 4, 2024, an enriched version added search by commute time, monthly budget, schools, and points of interest, with queries such as a maximum commute time from a location or a home near a train station. Machine learning models parse the query, personalize the results, and learn to respond better to human sentences. The user can save a search and be notified when a new listing matches. Zillow is described as the most-visited real estate site in the United States.",
+  "resultats": [
+    { "metrique": "First residential portal to deploy this AI search" },
+    { "metrique": "Listing details scanned per query" }
+  ],
+  "niveau_preuve": {
+    "justification": "Official Zillow releases (T1) and specialized press agree on a rollout at the scale of the leading US portal. Without an isolated, public engagement metric for this specific feature, the level stays C."
+  },
+  "fonctionnement_operationnel": {
+    "cadence": "Real time on each query; push or email notifications when a new listing matches a saved search.",
+    "opere_par": "Zillow's AI and search team for the models; the listings catalog feeds the results.",
+    "signal_pilote": "The quality and freshness of listing details and local data (commute, schools, points of interest). Without them, the user's sentence does not translate into relevant filters.",
+    "etapes": [
+      {
+        "etape": "Natural-language query",
+        "detail": "The user describes their ideal home in one sentence in the search bar.",
+        "acteur": "client"
+      },
+      {
+        "etape": "Interpretation and scan",
+        "detail": "The ML models translate the sentence into criteria and scan millions of listings.",
+        "acteur": "AI"
+      },
+      {
+        "etape": "Result personalization",
+        "detail": "The system ranks the most relevant properties by the expressed preferences.",
+        "acteur": "AI"
+      },
+      {
+        "etape": "Save and alert",
+        "detail": "The user saves the search and gets a notification when a matching listing appears.",
+        "acteur": "client"
+      }
+    ]
+  },
+  "replication": {
+    "prerequis_data": [
+      "rich, structured listings catalog",
+      "local geographic data (commute, schools, points of interest)",
+      "behavioral history for personalization"
+    ],
+    "prerequis_orga": [
+      "NLP and search team",
+      "large-scale search infrastructure",
+      "saved-search and notification system"
+    ],
+    "stack_possible": [
+      "NL query understanding model",
+      "search and ranking engine",
+      "notification pipeline"
+    ],
+    "premiere_etape": "Translate a free-form sentence into reliable search criteria before adding personalization.",
+    "playbook": [
+      {
+        "action": "Structure the catalog and local data (commute, schools, points of interest) into queryable attributes.",
+        "livrable": "Enriched catalog with normalized attributes."
+      },
+      {
+        "action": "Build the query understanding model (sentence to criteria).",
+        "livrable": "Parsing evaluated on a corpus of real queries."
+      },
+      {
+        "action": "Connect the parsing to the search engine and ranking.",
+        "livrable": "Relevant results validated in an internal beta."
+      },
+      {
+        "action": "Open the public beta on one platform (mobile app first).",
+        "livrable": "Engagement and saved-property measures."
+      },
+      {
+        "action": "Add saved searches and notifications, extend the criteria covered.",
+        "livrable": "Active retention loop (new-listing alerts)."
+      }
+    ],
+    "equipe": "1 PM + 2-3 engineers (NLP, search) + 1 data engineer on the catalog and local data"
+  },
+  "statut_vivant": {
+    "note": "Natural-language search was expanded in September 2024 and remains a standard building block of the Zillow experience. Distinct from Zillow Offers (iBuying, stopped in 2021), it concerns search and personalization."
+  },
+  "transposable_ue": {
+    "note": "Natural-language search over a listings catalog is transposable to a European portal. The adaptation concerns coverage of local data (commute time, schools, points of interest) and GDPR for saved searches and notifications."
+  }
+}

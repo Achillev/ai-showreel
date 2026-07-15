@@ -1,0 +1,109 @@
+{
+  "seo": {
+    "title": "Lowe's: Mylow genAI advisor with OpenAI - 1 million questions per month (2025)",
+    "meta_description": "Mylow, Lowe's genAI shopping advisor built with OpenAI, and Mylow Companion, deployed to all associates across 1,700 stores, handle about 1 million questions per month.",
+    "resume_citable": "Launched in 2025 with OpenAI, Lowe's Mylow genAI advisor and its associate copilot Mylow Companion, deployed to all associates across more than 1,700 stores, together handle about 1 million questions per month.",
+    "faq": [
+      {
+        "q": "What is Mylow?",
+        "a": "It is Lowe's conversational genAI shopping advisor, launched in March 2025 with OpenAI: the customer describes their project and receives step-by-step advice and product recommendations."
+      },
+      {
+        "q": "Is it deployed at scale?",
+        "a": "Yes. Mylow Companion was deployed to all associates across Lowe's more than 1,700 stores in May 2025, and together they handle about 1 million questions per month."
+      }
+    ]
+  },
+  "pattern": "conversational genAI shopping advisor plus associate copilot",
+  "etape_parcours": "consideration",
+  "objectif_business": "Give every customer expert project advice on lowes.com and give every in-store associate the equivalent of an expert colleague, to remove decision friction on technical projects and convert more.",
+  "description": "Mylow is Lowe's conversational shopping advisor, launched in March 2025 on lowes.com and mobile web, developed with OpenAI. The customer asks open questions about their project and receives step-by-step advice, product recommendations, and links to how-to articles and videos. In May 2025, Lowe's deployed Mylow Companion to all associates across its more than 1,700 stores, on the terminals they already use. The associate queries the assistant in natural language, including by voice, on product details, installation advice, or stock. According to Retail Dive, Mylow and Mylow Companion together handle about 1 million questions per month. A Spanish version of Mylow Companion was added in February 2026.",
+  "resultats": [
+    { "metrique": "Questions handled per month (Mylow + Mylow Companion)" },
+    { "metrique": "Copilot deployed to all associates, across more than 1,700 stores" },
+    { "metrique": "Customer satisfaction since the rollout (associate help and knowledge)" }
+  ],
+  "niveau_preuve": {
+    "justification": "Deployment and usage figures released by Lowe's in its official press releases (1,700 stores, all associates) and picked up by major retail press (Retail Dive, CX Dive), which names the brand and the volume of a million questions per month. No isolated financial result published on the tool, which caps it at C despite concordant sources."
+  },
+  "stack_technique": [
+    { "detail": "conversational backbone of Mylow and Mylow Companion, developed in partnership with OpenAI; model version not published" },
+    { "detail": "conversational shopping advisor on lowes.com and mobile web: step-by-step project advice, product recommendations, how-to links" },
+    { "detail": "associate copilot deployed on the existing terminals of the more than 1,700 stores, queryable by text and voice, Spanish version added in 2026" },
+    { "detail": "project knowledge base, product catalog and local stock exposed to the agent in real time" }
+  ],
+  "fonctionnement_operationnel": {
+    "cadence": "Real time on every web customer session and on every associate request in store.",
+    "opere_par": "Lowe's data and AI team, which maintains the project knowledge base and the RAG layer; the associates are the daily users of the copilot.",
+    "signal_pilote": "The quality of project answers and the availability of local stock. If the product reference data and inventory are not up to date, the assistant steers toward the wrong products or out-of-stock items.",
+    "etapes": [
+      {
+        "etape": "Project question",
+        "detail": "The customer on lowes.com or the associate in store asks a question in natural language, by text or voice.",
+        "acteur": "customer or associate"
+      },
+      {
+        "etape": "Understanding and retrieval",
+        "detail": "The LLM interprets the request and fetches project advice, product sheets and stock from the Lowe's knowledge base.",
+        "acteur": "AI"
+      },
+      {
+        "etape": "Guided answer",
+        "detail": "The assistant returns step-by-step advice, products and how-to links, and on the store side serves the associate speaking to the customer.",
+        "acteur": "AI"
+      },
+      {
+        "etape": "Follow-up and adaptation",
+        "detail": "The teams measure volume, satisfaction and adoption, and adjust the knowledge and journeys by segment (consumer, pro).",
+        "acteur": "data team"
+      }
+    ]
+  },
+  "replication": {
+    "prerequis_data": [
+      "Structured project and how-to knowledge base",
+      "Product catalog and local stock exposed in real time",
+      "Session history to measure satisfaction and conversion"
+    ],
+    "prerequis_orga": [
+      "AI transparency rule toward the customer",
+      "Associate devices able to carry the copilot in store",
+      "Adoption and satisfaction measurement loop"
+    ],
+    "stack_possible": [
+      "Generative LLM via API",
+      "RAG layer over project knowledge and catalog",
+      "Voice interface for field use"
+    ],
+    "equipe": "1 PM + 2-3 devs (RAG, catalog/stock integrations) + 1 how-to content lead + store operations liaison for the associate version",
+    "playbook": [
+      {
+        "action": "Index project knowledge, catalog and local stock for RAG",
+        "livrable": "Queryable base with verified stock freshness"
+      },
+      {
+        "action": "Build the web advisor on a high-traffic technical category, with guardrails and AI transparency",
+        "livrable": "Agent in beta, correct-answer rate evaluated on real questions"
+      },
+      {
+        "action": "Launch on the site and measure volume, satisfaction and effect on project conversion",
+        "livrable": "Agent in production + usage dashboard"
+      },
+      {
+        "action": "Bring the copilot onto associate terminals, including the voice interface, in a pilot on a subset of stores",
+        "livrable": "Store pilot with measured associate adoption"
+      },
+      {
+        "action": "Deploy to the full network and localize by segment and language",
+        "livrable": "Full rollout + versions by segment (consumer, pro) and by language"
+      }
+    ],
+    "premiere_etape": "Index project knowledge and the catalog for RAG, launch a web advisor on a high-traffic technical category, then extend to associates."
+  },
+  "statut_vivant": {
+    "note": "Retail Dive (March 2026) describes Mylow and Mylow Companion in production, with a Spanish version added in February 2026 and about 1 million questions handled per month."
+  },
+  "transposable_ue": {
+    "note": "A conversational shopping advisor and an in-store associate assistant are transposable to any home-improvement retailer. In the EU, the AI Act requires disclosing to the customer that they are talking to an AI, and the GDPR governs the use of purchase history and loyalty profile to personalize answers. The store version, which runs on associate terminals, remains applicable without sensitive customer data."
+  }
+}

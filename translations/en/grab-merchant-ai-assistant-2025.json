@@ -1,0 +1,126 @@
+{
+  "seo": {
+    "title": "Grab: AI assistant for merchants - more than 1 million interactions in five months (2025)",
+    "meta_description": "Grab's AI merchant assistant advises and activates merchants around the clock: more than 1 million interactions in Indonesia and 11% more ad efficiency.",
+    "resume_citable": "In 2025, Grab's AI merchant assistant surpassed one million interactions in under five months in Indonesia, with 96.1% satisfaction and advertising efficiency up 11% among the merchants who use it.",
+    "faq": [
+      {
+        "q": "What is Grab's AI merchant assistant for?",
+        "a": "It answers merchants' operational questions around the clock, creates their advertising campaigns, updates their menu, and suggests actions to sell more."
+      },
+      {
+        "q": "What advertising impact is measured?",
+        "a": "Grab reports an 11% improvement in advertising efficiency among the merchants who use the assistant."
+      }
+    ]
+  },
+  "pattern": "AI assistant for merchant advice and activation",
+  "etape_parcours": "loyalty",
+  "objectif_business": "Give every merchant, even small and without a marketing team, an always-on advisor that answers their operational questions, creates their advertising campaigns, and updates their menu, to lift their revenue and their ad spend on the platform.",
+  "description": "In April 2025, Grab launched an AI assistant for its merchants, presented as a business advisor available around the clock in the GrabMerchant app. The merchant asks it operational questions (how to sell more, adjust the menu, run a promo) and the assistant responds with personalized recommendations, can create advertising campaigns, and update the menu. It can also take the initiative and suggest actions. In Indonesia, where the tool was deployed at scale, merchants exchanged with the assistant more than one million times in under five months, with a high satisfaction rate. Grab measures an improvement in advertising efficiency among the merchants who use it.",
+  "resultats": [
+    {
+      "metrique": "Merchant interactions in 5 months, Indonesia (1,083,425 messages)"
+    },
+    {
+      "metrique": "Improvement in advertising efficiency of the merchants using it"
+    },
+    {
+      "metrique": "User satisfaction rate"
+    },
+    {
+      "metrique": "New GrabFood merchants (onboarded since January 2026) who used the assistant"
+    }
+  ],
+  "niveau_preuve": {
+    "justification": "Official Grab press release (T1) on the launch and architecture, and established regional press (Marketing-Interactive, T3) reporting the usage and efficiency figures in Indonesia. Consistent sources. The 11% advertising efficiency is a figure reported by Grab, not an audited result, which keeps it at C."
+  },
+  "stack_technique": [
+    {
+      "detail": "Grab's model partner (collaboration announced in May 2024, expanded in 2025); exact model not named publicly"
+    },
+    {
+      "detail": "Grab's strategic partner on agentic AI solutions"
+    },
+    {
+      "detail": "Merchant back-office into which the assistant is integrated, with access to each merchant's sales, campaigns, and menu"
+    },
+    {
+      "detail": "Grab's advertising platform on which the assistant directly creates the merchants' campaigns"
+    }
+  ],
+  "fonctionnement_operationnel": {
+    "cadence": "Real time, available around the clock in the merchant app, with proactive follow-ups",
+    "opere_par": "Grab's product and data team that maintains the assistant; the merchant is the autonomous end user",
+    "signal_pilote": "The merchant's operational data (sales, campaigns, menu). Without an order and campaign history specific to each merchant, the assistant cannot personalize its advice.",
+    "etapes": [
+      {
+        "etape": "Merchant question",
+        "detail": "The merchant opens the chat in GrabMerchant and asks a business question or an action request.",
+        "acteur": "merchant"
+      },
+      {
+        "etape": "Reading the context",
+        "detail": "The assistant reads the merchant's sales, campaign, and menu data to answer their specific case.",
+        "acteur": "AI"
+      },
+      {
+        "etape": "Recommendation or action",
+        "detail": "It suggests an action (promo, menu adjustment) or executes it, such as creating an advertising campaign.",
+        "acteur": "AI"
+      },
+      {
+        "etape": "Proactive follow-up",
+        "detail": "The assistant comes back to the merchant with suggestions to improve their sales.",
+        "acteur": "AI"
+      }
+    ]
+  },
+  "replication": {
+    "prerequis_data": [
+      "Order and sales history per merchant",
+      "Advertising campaign data",
+      "Menu or catalog structure per merchant"
+    ],
+    "prerequis_orga": [
+      "AI transparency rule toward the merchant",
+      "Connected action tools (campaign creation, menu editing)",
+      "Measurement loop on ad efficiency and adoption"
+    ],
+    "stack_possible": [
+      "Generative LLM (OpenAI, Anthropic, or an open model)",
+      "Tools layer connected to the merchant back-office",
+      "Integration with the advertising platform"
+    ],
+    "premiere_etape": "List the 10 most frequent merchant questions and actions, and first connect campaign creation and menu editing.",
+    "playbook": [
+      {
+        "action": "List the 10 most frequent merchant questions and actions (support, account managers) and check that sales, campaigns, and catalog are accessible per merchant.",
+        "livrable": "Prioritized functional scope and validated data access"
+      },
+      {
+        "action": "Connect the LLM to the merchant's operational data in read mode, then to the first two actions in write mode: campaign creation and menu editing.",
+        "livrable": "Assistant able to answer the merchant's case and execute two actions"
+      },
+      {
+        "action": "Launch a pilot on a market or a segment of merchants, with AI transparency and guardrails on the actions (confirmation before execution).",
+        "livrable": "Pilot in production with conversation logging"
+      },
+      {
+        "action": "Measure adoption, satisfaction, and advertising efficiency of the merchants using it against a control group.",
+        "livrable": "Quantified adoption / satisfaction / ad efficiency review"
+      },
+      {
+        "action": "Add proactive follow-ups (suggestions sent by the assistant) and extend to the next markets.",
+        "livrable": "Proactive assistant deployed beyond the pilot"
+      }
+    ],
+    "equipe": "2-3 developers (LLM and back-office connectors) + 1 PM + 1 data analyst + merchant support for the quality loop"
+  },
+  "statut_vivant": {
+    "note": "In July 2026, regional press confirms the at-scale use in Indonesia with a high reuse rate among merchants (89.9% among long tail, 97.2% among mid-market)."
+  },
+  "transposable_ue": {
+    "note": "An AI assistant that advises merchants on their sales and advertising is transposable to any marketplace. The constraint is not technical but data-related: it requires an order and campaign history per merchant, and a clear GDPR framework on the use of this merchant data. The AI Act classifies an assistant of this kind as limited risk (transparency obligation about the advice coming from an AI)."
+  }
+}

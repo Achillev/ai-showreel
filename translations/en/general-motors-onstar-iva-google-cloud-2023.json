@@ -1,0 +1,118 @@
+{
+  "seo": {
+    "title": "General Motors: OnStar assistant on Google Cloud - more than 1 million requests per month (2023)",
+    "meta_description": "GM's OnStar Interactive Virtual Assistant, based on Google Cloud Dialogflow, handles more than one million customer requests per month in the United States and Canada.",
+    "resume_citable": "General Motors' OnStar Interactive Virtual Assistant, based on Google Cloud Dialogflow, handles more than one million customer requests per month in the United States and Canada, on GM vehicles connected to OnStar from model year 2015.",
+    "faq": [
+      {
+        "q": "What volume does GM's OnStar assistant handle?",
+        "a": "More than one million customer requests per month in the United States and Canada, according to public data from 2023."
+      },
+      {
+        "q": "What technology is it based on?",
+        "a": "Google Cloud's intent recognition (Dialogflow), extended to genAI chatbots on GM sites for the buying experience."
+      }
+    ]
+  },
+  "pattern": "service voice assistant + genAI web agent",
+  "etape_parcours": "post-purchase",
+  "objectif_business": "Absorb at scale the non-urgent requests of OnStar members (routing, navigation, vehicle questions) through conversational AI, and extend the use to the buying experience through genAI chatbots on GM sites.",
+  "description": "The OnStar Interactive Virtual Assistant, launched in 2022, relies on Google Cloud's intent recognition (Dialogflow) to help OnStar members with non-urgent requests: directions, navigation, routing. It is available on most OnStar-connected GM vehicles from model year 2015. GM is extending the approach to genAI chatbots on its websites to answer buyer questions about vehicles, and is piloting generative AI use cases with Google Cloud for the buying and ownership experience.",
+  "resultats": [
+    {
+      "metrique": "Customer requests handled per month (US + Canada)"
+    },
+    {
+      "metrique": "Fleet covered: OnStar-connected GM vehicles"
+    },
+    {
+      "metrique": "Stated genAI ambition: buying, ownership, interaction"
+    }
+  ],
+  "niveau_preuve": {
+    "justification": "Public usage figure (more than one million requests per month) reported by several established outlets naming GM and Google Cloud; the genAI web component is more recent and less quantified. Reference data dated 2023."
+  },
+  "stack_technique": [
+    {
+      "detail": "Intent recognition (NLU) at the core of the OnStar Interactive Virtual Assistant: classifies non-urgent requests (directions, navigation, routing) and decides how to handle them"
+    },
+    {
+      "detail": "Google Cloud genAI components for the GM site chatbots and the pilot use cases on the buying experience; exact model not named in the sources"
+    },
+    {
+      "detail": "GM's embedded connected services platform, the voice channel of the assistant on model year 2015 and newer vehicles"
+    },
+    {
+      "detail": "Provider of the conversational and generative AI components and partner in the rollout"
+    }
+  ],
+  "fonctionnement_operationnel": {
+    "cadence": "Real time, 24/7, on each OnStar member interaction or GM site visitor.",
+    "opere_par": "GM's OnStar and customer service teams, with Google Cloud for the AI layer.",
+    "signal_pilote": "The intent detected in the request. If the intent is poorly recognized, the request is misrouted or falls back to a human agent, which degrades call deflection.",
+    "etapes": [
+      {
+        "etape": "Receiving the request",
+        "detail": "A member calls on OnStar by voice, or a visitor opens the chatbot on a GM site.",
+        "acteur": "customer"
+      },
+      {
+        "etape": "Intent recognition",
+        "detail": "Dialogflow classifies the request (directions, navigation, vehicle question) and decides how to handle it.",
+        "acteur": "AI"
+      },
+      {
+        "etape": "Response or routing",
+        "detail": "The assistant answers directly for non-urgent requests, or routes to the right service.",
+        "acteur": "AI"
+      },
+      {
+        "etape": "Human escalation",
+        "detail": "Out-of-scope or urgent cases are transferred to an advisor.",
+        "acteur": "customer service"
+      }
+    ]
+  },
+  "replication": {
+    "prerequis_data": [
+      "history of requests and intents",
+      "vehicle and service knowledge base",
+      "routing flow reference"
+    ],
+    "prerequis_orga": [
+      "customer service team",
+      "governance on human escalation"
+    ],
+    "stack_possible": [
+      "Dialogflow or equivalent NLU",
+      "cloud LLM for the genAI responses",
+      "CRM/service connectors"
+    ],
+    "premiere_etape": "Map the most frequent customer service intents and first automate those that are high volume and low risk.",
+    "playbook": [
+      {
+        "action": "Map the customer service intents from the request history and keep those that are high volume and low risk.",
+        "livrable": "Prioritized list of intents with volumes and escalation rules"
+      },
+      {
+        "action": "Build the agent on Dialogflow (or an equivalent NLU) for the selected intents, connected to the vehicle and service knowledge base.",
+        "livrable": "Working conversational agent in a test environment"
+      },
+      {
+        "action": "Integrate the channels (embedded voice, web chat) and the routing to an advisor for out-of-scope or urgent cases.",
+        "livrable": "Assistant in pilot on one channel with human escalation working"
+      },
+      {
+        "action": "Measure volume handled and call deflection, correct poorly recognized intents, then add the genAI layer for open questions.",
+        "livrable": "Quantified deflection review and framed genAI extension"
+      }
+    ],
+    "equipe": "1 conversation designer + 2 integration developers + 1 customer service lead; a cloud integrator can carry the build"
+  },
+  "statut_vivant": {
+    "note": "OnStar remains GM's flagship service and the assistant is still in service, but the last public quantified metric (one million requests per month) dates from 2023; no recent quantified update found."
+  },
+  "transposable_ue": {
+    "note": "North America deployment; an EU transposition requires language localization, GDPR compliance on conversation data, and adaptation of the customer service flows by country."
+  }
+}

@@ -1,0 +1,136 @@
+{
+  "seo": {
+    "title": "Estee Lauder: 240+ custom GPTs (OpenAI) - R&D/marketing response time improved by 90% (2024)",
+    "meta_description": "Estee Lauder deployed more than 240 custom GPTs through OpenAI and a cross-functional GPT Lab, improving R&D and marketing response times by more than 90%.",
+    "resume_citable": "Estee Lauder deployed more than 240 custom GPTs through its OpenAI partnership and a cross-functional GPT Lab, improving the response times of R&D and marketing teams by more than 90% across a portfolio of over 20 brands.",
+    "faq": [
+      {
+        "q": "How many custom GPTs did Estee Lauder deploy?",
+        "a": "More than 240 custom GPTs, made available to staff through ChatGPT Enterprise and coordinated by a cross-functional GPT Lab."
+      },
+      {
+        "q": "What measured gain was reported?",
+        "a": "An improvement of more than 90% in the response times of R&D and marketing teams, according to trade press citing the company."
+      }
+    ]
+  },
+  "pattern": "internal enterprise genAI (custom GPTs on proprietary data)",
+  "etape_parcours": "consideration",
+  "objectif_business": "Speed up time to market and the use of proprietary data (consumer studies, clinical trials, product data) across a portfolio of more than 20 brands, through specialized genAI assistants.",
+  "description": "ELC made more than 240 custom GPTs available to its staff through its OpenAI partnership, coordinated by a cross-functional GPT Lab that prototypes and prioritizes high-impact use cases. Applications range from analyzing large consumer study databases to synthesizing supplier information, along with per-brand copywriting GPTs. In parallel, a tool running on Azure OpenAI draws on the proprietary base of product data and claims to launch locally relevant campaigns faster. Through ChatGPT Enterprise, staff query the data vault (clinical trials, consumer studies) drawn from a portfolio of more than 20 brands including Clinique and Aveda.",
+  "points_cles": [
+    "Internal enterprise genAI, 240+ custom GPTs connected to proprietary data.",
+    "OpenAI ChatGPT Enterprise and Azure OpenAI, coordinated by a cross-functional GPT Lab.",
+    "R&D and marketing response times improved by more than 90%, across 20+ brands.",
+    "Evidence level B, confirmed active status."
+  ],
+  "resultats": [
+    {
+      "metrique": "Custom GPTs deployed"
+    },
+    {
+      "metrique": "Response time gain (R&D and marketing)"
+    },
+    {
+      "metrique": "Portfolio scope"
+    }
+  ],
+  "niveau_preuve": {
+    "justification": "Official ELC press release (primary source) on the genAI program and its scope, complemented by trade press quantifying the 240 GPTs and the response time gain. Two consistent sources, one of them primary."
+  },
+  "stack_technique": [
+    {
+      "detail": "Foundation for staff access to the custom GPTs, with enterprise data isolation."
+    },
+    {
+      "detail": "Specialized assistants connected to proprietary data: consumer studies, claims, supplier information, per-brand copywriting."
+    },
+    {
+      "detail": "Runs the tool that draws on the proprietary base of product data and claims to speed up local campaigns."
+    },
+    {
+      "detail": "Extended collaboration announced in April 2024 for genAI across the brand portfolio."
+    },
+    {
+      "detail": "Consumer studies, clinical trials, and product data from more than 20 brands; this is the grounding source for the GPTs."
+    }
+  ],
+  "fonctionnement_operationnel": {
+    "cadence": "Daily use by the teams; new GPTs prototyped as use cases are prioritized",
+    "opere_par": "Cross-functional GPT Lab (architecture, AI, R&D) that identifies, prototypes, and prioritizes; brand, marketing, and R&D teams as users",
+    "signal_pilote": "The quality of and access to proprietary data (consumer studies, clinical trials, product data). If the assistant is not connected to this data, it loses its specificity and only produces generic output.",
+    "etapes": [
+      {
+        "etape": "Use case detection",
+        "detail": "The GPT Lab weighs value and effort, and prioritizes GPTs that are high value and quick to build.",
+        "acteur": "GPT Lab / AI team"
+      },
+      {
+        "etape": "GPT build",
+        "detail": "A custom GPT is connected to the relevant data (survey, claims, suppliers).",
+        "acteur": "AI team"
+      },
+      {
+        "etape": "Rollout",
+        "detail": "The GPT is published to the relevant teams through ChatGPT Enterprise.",
+        "acteur": "AI / platform"
+      },
+      {
+        "etape": "Business use",
+        "detail": "Marketing and R&D query the data vault for insights, copywriting, synthesis.",
+        "acteur": "marketing / R&D"
+      },
+      {
+        "etape": "Adoption tracking",
+        "detail": "The GPT Lab measures adoption and time gains to decide the next use cases.",
+        "acteur": "GPT Lab"
+      }
+    ]
+  },
+  "replication": {
+    "prerequis_data": [
+      "structured proprietary data (studies, claims, catalog)",
+      "access governance for sensitive data"
+    ],
+    "prerequis_orga": [
+      "cross-functional cell to prioritize use cases",
+      "enterprise genAI license with data isolation",
+      "change management / adoption"
+    ],
+    "stack_possible": [
+      "OpenAI ChatGPT Enterprise",
+      "Azure OpenAI Service",
+      "custom assistants/GPTs connected to internal data"
+    ],
+    "premiere_etape": "Map the repetitive marketing/R&D tasks on proprietary data and launch 2 or 3 priority GPTs with a dedicated cell.",
+    "playbook": [
+      {
+        "action": "Map the repetitive marketing and R&D tasks on proprietary data and prioritize by value and effort.",
+        "livrable": "Prioritized use case backlog"
+      },
+      {
+        "action": "Lay the foundation: enterprise genAI license, data access governance, cross-functional cell of the GPT Lab type.",
+        "livrable": "Usage framework and cell in place"
+      },
+      {
+        "action": "Build 2 or 3 pilot GPTs connected to the relevant data.",
+        "livrable": "Pilot GPTs published to the relevant teams"
+      },
+      {
+        "action": "Train the teams and track adoption and time gains.",
+        "livrable": "Adoption and time-saved dashboard"
+      },
+      {
+        "action": "Decide the next wave of GPTs from the measurements.",
+        "livrable": "Backlog v2 prioritized by the cell"
+      }
+    ],
+    "equipe": "Cross-functional cell of 2-3 people (architecture, AI, data) + per-brand business liaisons; data governance for sensitive access."
+  },
+  "statut_vivant": {
+    "note": "Program extended (OpenAI, then the Microsoft/Azure collaboration in 2024), GPT Lab active to prioritize new use cases."
+  },
+  "transposable_ue": {
+    "note": "Internal genAI use on proprietary data (consumer studies, clinical trials, product data). Go through an enterprise offering with data isolation (no training on prompts), access control, and logging to stay compliant with GDPR and trade secrecy."
+  }
+}

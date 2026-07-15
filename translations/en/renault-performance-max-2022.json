@@ -1,0 +1,115 @@
+{
+  "seo": {
+    "title": "Renault: auto lead generation driven by Google's AI (Performance Max) - -86% cost per conversion",
+    "meta_description": "How Renault consolidated its lead-generation campaigns into a single Performance Max campaign driven by Google's ML: -86% cost per conversion.",
+    "resume_citable": "Renault (Turkey) cut its cost per conversion by 86% by consolidating its lead-generation campaigns into a single Google Performance Max campaign driven by machine learning; the UK entity replicated it with a CPA 67% below its target.",
+    "faq": [
+      {
+        "q": "Do you need a custom AI model to replicate?",
+        "a": "No: Performance Max is a Google Ads feature. The challenge is the quality of conversion tracking and the volume of creative assets, not developing a model."
+      },
+      {
+        "q": "What is the risk in Europe?",
+        "a": "Consent Mode v2 mandatory and low transparency on placements (black box) - to be framed on the governance side, without high-risk classification under the AI Act."
+      }
+    ]
+  },
+  "pattern": "Consolidation of multiple formats and channels into a single campaign driven by Google's machine learning (bidding, creative mix, channels) on a conversion objective",
+  "etape_parcours": "consideration -> lead",
+  "stack_technique": [
+    { "detail": "Single multi-channel campaign (Search, YouTube, Display, Discover, Maps, Gmail) driven by Google's ML: bidding, creative mix, allocation." },
+    { "detail": "Automatic machine-learning bidding on a conversion objective." },
+    { "detail": "Reporting of qualified leads from dealers into Google Ads, so the algorithm learns on real conversion." },
+    { "detail": "CRM used by Renault Group to requalify leads and feed their quality back into Google." },
+    { "detail": "Renault Mais (Turkey) media agency on the Performance Max consolidation." }
+  ],
+  "objectif_business": "Lower the cost per qualified lead and stop managing one campaign per format and per channel: a single campaign, driven by Google's AI.",
+  "points_cles": [
+    "Lead-generation campaigns consolidated into a single Google Performance Max campaign.",
+    "Driven by Google's machine learning (bidding, creative mix, channels), lead quality imported from the CRM.",
+    "Cost per conversion -86% in Turkey, +1,261 leads at CPA -67% in the United Kingdom.",
+    "Evidence B, status mixed signals."
+  ],
+  "description": "In Turkey, the Renault Mais team managed its lead-generation campaigns (test drives, dealer contacts) separately by format and by platform, with the agency OMD. It consolidated everything into a single Performance Max campaign. The principle: you upload the assets - videos, images, texts - and Google's algorithm continuously decides which creative to show, on which channel among Search, YouTube, Display, Discover, Maps, and Gmail, and at what bid. Creatives that do not convert are dropped automatically. Renault Mais reports a cost per conversion divided by almost seven, or -86%. The same pattern runs elsewhere in the group: in the United Kingdom, Renault Retail Group generated 1,261 more leads at a cost 67% below its target. Since then, Performance Max has become Google's default format for this kind of acquisition.",
+  "fonctionnement_operationnel": {
+    "cadence": "Continuous, with a learning phase of 4 to 6 weeks at the start. Results are not judged before it has passed.",
+    "opere_par": "The media team (or the agency), with the CRM/data team to feed lead quality back into Google.",
+    "signal_pilote": "The imported conversion. If you optimize on gross lead volume rather than leads actually qualified by dealers, the algorithm produces worthless contacts.",
+    "etapes": [
+      {
+        "etape": "Define the real conversion",
+        "detail": "A lead is not a completed form: it is a contact the dealer judges actionable. It is this definition that you give Google, not the click.",
+        "acteur": "Marketing team + dealer network"
+      },
+      {
+        "etape": "Feed quality back from the CRM",
+        "detail": "Leads that lead to a test drive or a quote are fed back into Google Ads (offline import). The algorithm then learns to seek the right profiles, not the curious.",
+        "acteur": "Data / CRM team"
+      },
+      {
+        "etape": "Supply assets in volume",
+        "detail": "Videos, images, and hooks in quantity, to give material to test. Too few assets and the algorithm keeps cycling the same combinations.",
+        "acteur": "Creative agency"
+      },
+      {
+        "etape": "Frame EU compliance",
+        "detail": "In Europe, Consent Mode v2 is mandatory and the campaign remains a black box on placement detail. To be framed on the governance side before scaling.",
+        "acteur": "Data / legal team"
+      },
+      {
+        "etape": "Let it converge before judging",
+        "detail": "During learning, the CPA is unstable. Cutting or reworking at this stage means sabotaging the campaign.",
+        "acteur": "Google AI"
+      }
+    ]
+  },
+  "resultats": [
+    { "metrique": "Cost per conversion (Turkey)" },
+    { "metrique": "Additional conversions (UK)" },
+    { "metrique": "CPA vs target (UK)" }
+  ],
+  "niveau_preuve": {
+    "justification": "Think with Google case study quantified with a named quote from a Renault Mais executive (platform bias), corroborated by an independent agency case study on another Renault entity (UK) - no confirmation in financial results."
+  },
+  "statut_vivant": {
+    "note": "The quantified case dates from 2022 and Renault no longer communicates publicly about it; on the other hand, the pattern itself is more alive than ever (PMax = central Google Ads format in 2025-2026) and the multi-entity Renault use (Turkey + UK network) suggests durable adoption."
+  },
+  "replication": {
+    "prerequis_data": [
+      "Reliable conversion tracking (qualified leads, not gross)",
+      "Consent Mode v2 in the EU",
+      "Differentiated conversion values (lead scoring)"
+    ],
+    "prerequis_orga": [
+      "Video/image/text creative assets in volume",
+      "Import of lead quality from the CRM"
+    ],
+    "stack_possible": [
+      "Google Ads Performance Max + GA4 + offline conversion import (CRM / Salesforce)"
+    ],
+    "premiere_etape": "Official Google Ads experiment 'PMax vs existing campaigns' on a single conversion objective, with import of lead quality from the CRM before any scaling.",
+    "playbook": [
+      {
+        "action": "Define the real conversion (a lead judged actionable by the dealer, not the form) and connect GA4 + offline conversion import from the CRM.",
+        "livrable": "Reliable imported conversion in Google Ads."
+      },
+      {
+        "action": "Produce the assets in volume (videos, images, hooks) and build the asset groups.",
+        "livrable": "Complete asset groups ready to deliver."
+      },
+      {
+        "action": "Launch Performance Max as an official experiment against the existing campaigns, on a single conversion objective. In the EU, verify Consent Mode v2 before launch.",
+        "livrable": "Structured test in delivery."
+      },
+      {
+        "action": "Let the learning phase pass (4 to 6 weeks) without cutting or reworking.",
+        "livrable": "Converged campaign with a stabilized CPA."
+      },
+      {
+        "action": "Read cost per conversion and volume vs historical campaigns, arbitrate the consolidation, and set the governance (placement transparency).",
+        "livrable": "Documented consolidation decision and management rules."
+      }
+    ],
+    "equipe": "1 media buyer (or the agency) + 1 data / CRM profile for the offline import + the creative agency for the assets."
+  }
+}

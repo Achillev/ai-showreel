@@ -1,0 +1,143 @@
+{
+  "seo": {
+    "title": "Air India: AI.g genAI agent - 40,000 queries a day automated at 97 percent (2026)",
+    "meta_description": "AI.g, Air India's generative agent on Azure OpenAI, handles about 40,000 queries a day and automates 97 percent of requests, saving several million dollars a year.",
+    "resume_citable": "Air India's generative customer agent, AI.g, handles about 40,000 queries a day and has resolved more than 13 million conversations with a 97 percent automation rate.",
+    "faq": [
+      {
+        "q": "What is Air India's AI.g?",
+        "a": "A generative customer service agent built on Azure OpenAI that answers questions about flights, baggage, check-in, refunds, and loyalty on the site and app."
+      },
+      {
+        "q": "What is its automation rate?",
+        "a": "About 97 percent of requests are handled without human intervention, with the remaining 3 percent escalated to an agent."
+      }
+    ]
+  },
+  "pattern": "genAI customer agent (automated customer service)",
+  "etape_parcours": "post-purchase",
+  "objectif_business": "Absorb the rise in contact volume after passenger traffic doubled without growing the call center, by automating recurring questions and reserving human agents for complex cases.",
+  "description": "AI.g (also called Maharaja) is Air India's generative virtual agent, built on Azure OpenAI Service. It answers passengers on the site and app about flight status, baggage, check-in, changes, refunds, and the loyalty program, covering more than 1,300 question types. Piloted in March 2023 and then expanded, it handles questions in natural language and hands off to a human agent for out-of-scope cases. Microsoft documents a continuous scale-up: about 40,000 queries per day and more than 13 million conversations resolved, with half of customers now choosing the AI as their first point of contact.",
+  "points_cles": [
+    "GenAI customer agent (AI.g / Maharaja) on the site and app.",
+    "Built on Azure OpenAI, with escalation to a human agent.",
+    "About 40,000 queries per day, 97% automated, 13 million conversations resolved.",
+    "Evidence level B, confirmed active status."
+  ],
+  "resultats": [
+    {
+      "metrique": "Queries handled per day"
+    },
+    {
+      "metrique": "Conversations resolved (cumulative)"
+    },
+    {
+      "metrique": "Automation / success rate"
+    },
+    {
+      "metrique": "Share of customers choosing the AI as first point of contact"
+    },
+    {
+      "metrique": "Annual customer service savings"
+    }
+  ],
+  "niveau_preuve": {
+    "justification": "Quantified Microsoft (vendor) case study, updated between 2024 and 2026 with consistent figures, complemented by Air India's official deployment press release."
+  },
+  "fonctionnement_operationnel": {
+    "cadence": "Real time, 24 hours a day, with supervision and continuous expansion of the question scope.",
+    "opere_par": "Air India's digital and technology team, working with the contact center and Microsoft's teams for the platform.",
+    "signal_pilote": "The passenger's question, matched against the booking and operations systems (flight status, baggage, loyalty). If the agent loses live access to these systems, it can no longer answer transactional cases and human escalation rises.",
+    "etapes": [
+      {
+        "etape": "Receiving the question",
+        "detail": "The passenger asks the question in natural language on the site or app.",
+        "acteur": "customer"
+      },
+      {
+        "etape": "Classification and retrieval",
+        "detail": "The agent identifies the topic among more than 1,300 categories and queries the internal systems for context (booking, flight status).",
+        "acteur": "AI"
+      },
+      {
+        "etape": "Answer or action",
+        "detail": "It answers, guides a change or a refund, or handles the request automatically when it is within scope.",
+        "acteur": "AI"
+      },
+      {
+        "etape": "Escalation",
+        "detail": "About 3 percent of cases are handed off to a human agent for complex situations.",
+        "acteur": "AI / human"
+      },
+      {
+        "etape": "Supervision and improvement",
+        "detail": "The teams review failures and expand the covered scope wave after wave.",
+        "acteur": "data team"
+      }
+    ]
+  },
+  "replication": {
+    "prerequis_data": [
+      "structured customer service knowledge base",
+      "API access to the booking and operations systems",
+      "ticket history to frame the scope"
+    ],
+    "prerequis_orga": [
+      "product and data team",
+      "defined human escalation process",
+      "answer governance and compliance"
+    ],
+    "stack_possible": [
+      "Azure OpenAI or equivalent",
+      "RAG layer over the knowledge base",
+      "connectors to the PSS / CRM"
+    ],
+    "premiere_etape": "Map the 20 to 30 most frequent contact center intents and connect the agent to that base before expanding.",
+    "playbook": [
+      {
+        "action": "Map the 20 to 30 most frequent contact center intents and structure the associated knowledge base.",
+        "livrable": "Locked v1 scope plus a structured knowledge corpus"
+      },
+      {
+        "action": "Build the agent (LLM plus retrieval over the base) and define the human escalation rules.",
+        "livrable": "Agent in pre-production on informational questions"
+      },
+      {
+        "action": "Connect the transactional systems in read mode: booking, flight status, baggage, loyalty.",
+        "livrable": "Context-aware answers tested on real cases"
+      },
+      {
+        "action": "Run a pilot on one channel (website) and track resolution rate and failures.",
+        "livrable": "Pilot report with a production go-live threshold"
+      },
+      {
+        "action": "Move to production, expand the scope in waves, and review failures each week.",
+        "livrable": "Automation / escalation dashboard monitored routinely"
+      }
+    ],
+    "equipe": "1 PM + 2-3 developers (LLM/RAG and API integration) + 1 contact center lead + supervisors for escalation review"
+  },
+  "stack_technique": [
+    {
+      "detail": "Azure service exposing OpenAI's models, the foundation of the AI.g agent."
+    },
+    {
+      "detail": "Generative language models served through Azure OpenAI; the exact version is not published."
+    },
+    {
+      "detail": "Azure data and application components around the agent (hosting, security, scaling)."
+    },
+    {
+      "detail": "In-house integration to booking, flight status, baggage, and the loyalty program, required for transactional answers."
+    },
+    {
+      "detail": "Technical partner for the deployment and the scale-up."
+    }
+  ],
+  "statut_vivant": {
+    "note": "Figures reaffirmed in a February 2026 Microsoft customer story; the agent remains in production on the site and app."
+  },
+  "transposable_ue": {
+    "note": "A genAI customer service agent on Azure OpenAI is replicable in the EU. Constraints: GDPR-compliant hosting and processing of personal data, logging of decisions and human escalation, informing passengers about the automation. The AI Act classifies customer assistance as low risk but requires transparency about interacting with an AI."
+  }
+}

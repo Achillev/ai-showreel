@@ -1,0 +1,132 @@
+{
+  "seo": {
+    "title": "Peloton: AI-personalized training plans and insights (Peloton IQ) - millions of insights a week (2025)",
+    "meta_description": "Peloton IQ generates personalized training plans and recommendations on Amazon Bedrock; millions of insights a week for more than 6 million members.",
+    "resume_citable": "Peloton IQ, launched in October 2025 on Amazon Bedrock (GPT and Llama 4 Scout), generates personalized weekly training plans and recommendations: millions of insights a week for more than 6 million members and nearly 50 million workouts a month.",
+    "faq": [
+      {
+        "q": "What does Peloton IQ do for the member?",
+        "a": "It generates an editable weekly training plan and personalized recommendations from the training history and third-party wearable data."
+      },
+      {
+        "q": "What technology does Peloton IQ run on?",
+        "a": "On Amazon Bedrock, with OpenAI's GPT models for complex reasoning and Meta's Llama 4 Scout for real-time insights, fine-tuned on SageMaker."
+      }
+    ]
+  },
+  "pattern": "genAI-personalized training plans and recommendations from usage data",
+  "etape_parcours": "loyalty",
+  "objectif_business": "Reignite member engagement by turning training history into personalized weekly plans and recommendations, to support usage frequency and subscription retention.",
+  "points_cles": [
+    "GenAI-personalized weekly training plans and insights (Peloton IQ).",
+    "Runs on Amazon Bedrock, with OpenAI's GPT and Meta's Llama 4 Scout.",
+    "Millions of insights a week for more than 6 million members.",
+    "Evidence B, confirmed status in production since October 2025."
+  ],
+  "description": "Peloton IQ is the AI and computer-vision layer launched in October 2025 across all Peloton connected equipment and the mobile app. For each member, it generates an editable weekly training plan, adjusted to goals (strength, weight, longevity), level, and stated preferences. With each workout, the recommendations refine, with performance targets computed from the member's history and third-party wearable data (Garmin Connect, Fitbit, Apple Health). The insights turn activities, on and off the platform, into performance, recovery, and consistency trends. The system runs on Amazon Bedrock, with a dual workflow: cached batch pre-generation for immediate display, and real-time generation triggered by the member's actions. Peloton uses OpenAI's GPT models for complex reasoning and Meta's Llama 4 Scout for real-time insights, with fine-tuning on SageMaker.",
+  "resultats": [
+    {
+      "metrique": "Personalized Peloton IQ insights generated each week"
+    },
+    {
+      "metrique": "Member base served"
+    },
+    {
+      "metrique": "Workouts handled each month"
+    }
+  ],
+  "niveau_preuve": {
+    "justification": "Quantified platform case study (AWS) on the architecture and volume (millions of weekly insights, 6 million members, 50 million monthly workouts), corroborated by Peloton's investor release announcing Peloton IQ. Usage volumes documented, but no isolated retention KPI, hence B."
+  },
+  "stack_technique": [
+    {
+      "detail": "AWS's managed genAI platform on which Peloton IQ runs, with a dual workflow: cached batch pre-generation and real-time generation."
+    },
+    {
+      "detail": "OpenAI's GPT models used for complex reasoning (building the training plans)."
+    },
+    {
+      "detail": "Meta's model used for real-time insights triggered by the member's actions."
+    },
+    {
+      "detail": "AWS service used for fine-tuning the models on Peloton's data."
+    },
+    {
+      "detail": "Third-party data sources that enrich the member's context beyond the workouts on Peloton equipment."
+    }
+  ],
+  "fonctionnement_operationnel": {
+    "cadence": "Dual: cached batch pre-generation for immediate display, and real-time generation triggered by the member's action. Plans reviewed weekly.",
+    "opere_par": "Peloton's product and machine learning teams, on the AI infrastructure managed by AWS.",
+    "signal_pilote": "Training history and third-party wearable data. If the member does not connect their devices or trains little, the context thins out and the insights lose relevance.",
+    "etapes": [
+      {
+        "etape": "Member context collection",
+        "detail": "Training history, connected-device biometrics, preferences, and third-party wearable data are aggregated.",
+        "acteur": "data / AI team"
+      },
+      {
+        "etape": "Batch pre-generation",
+        "detail": "Insights and performance targets are pre-computed and cached for instant display.",
+        "acteur": "AI (Bedrock, batch)"
+      },
+      {
+        "etape": "Real-time generation",
+        "detail": "On the member's action, an insight or plan adjustment is generated on the fly by the LLMs.",
+        "acteur": "AI (Llama 4 Scout / GPT)"
+      },
+      {
+        "etape": "Delivery and editing",
+        "detail": "The weekly plan displays on the screen and the app; the member can edit it.",
+        "acteur": "member"
+      }
+    ]
+  },
+  "replication": {
+    "playbook": [
+      {
+        "action": "Structure the training or usage history per user (workouts, goals, stated preferences) in a queryable profile.",
+        "livrable": "Unified usage profile per user"
+      },
+      {
+        "action": "Connect a managed LLM to a first insight case, for example the weekly summary, in batch pre-generation.",
+        "livrable": "Batch insights in internal beta"
+      },
+      {
+        "action": "Cache and display the insights in the app, measuring open and engagement on a beta cohort.",
+        "livrable": "Feature in user beta with engagement metrics"
+      },
+      {
+        "action": "Add real-time generation triggered by the user's action and editable plans.",
+        "livrable": "Personalized plans in production on the app"
+      },
+      {
+        "action": "Connect third-party wearables or sensors to enrich the context and refine the performance targets.",
+        "livrable": "Enriched pipeline + frequency and retention assessment"
+      }
+    ],
+    "equipe": "2-3 ML engineers + 1 app developer + 1 PM, with a lawyer for health data (GDPR art. 9 in the EU)",
+    "prerequis_data": [
+      "training or usage history per user",
+      "connection to wearables or biometric sensors",
+      "stated preferences and goals"
+    ],
+    "prerequis_orga": [
+      "ML team to maintain prompts and fine-tuning",
+      "legal basis for processing health data",
+      "capacity for real-time display on the app and devices"
+    ],
+    "stack_possible": [
+      "managed LLM platform (Bedrock, Vertex AI, Azure OpenAI)",
+      "batch + real-time pipeline",
+      "wearable integration"
+    ],
+    "premiere_etape": "Structure the training history per user and connect a managed LLM to a first insight case (for example a weekly summary), before adding real-time generation."
+  },
+  "statut_vivant": {
+    "note": "Peloton IQ has been in production across the whole fleet of connected equipment and the mobile app since October 2025, with an architecture documented by AWS in November 2025."
+  },
+  "transposable_ue": {
+    "note": "Peloton IQ analyzes biometric and training data from connected devices and third-party wearables (Garmin, Fitbit, Apple Health). Under GDPR, health data is a special category (art. 9): explicit consent, minimization, and localization of processing. Amazon Bedrock is available in EU regions, which makes the pattern transposable with a suitable legal basis."
+  }
+}

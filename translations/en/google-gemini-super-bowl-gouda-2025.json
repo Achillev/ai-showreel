@@ -1,0 +1,73 @@
+{
+  "seo": {
+    "title": "Google Gemini: false gouda figure in a Super Bowl ad - correction (2025)",
+    "meta_description": "In February 2025, a Gemini Super Bowl ad states a false figure about gouda. Google defends then removes the statistic before the game.",
+    "resume_citable": "In February 2025, a Google Gemini Super Bowl ad wrongly claimed that gouda accounted for 50 to 60 percent of global cheese consumption; Google removed the figure from the ad before the game aired.",
+    "faq": [
+      {
+        "q": "What error did the Gemini Super Bowl 2025 ad contain?",
+        "a": "The generated text claimed that gouda accounts for 50 to 60 percent of global cheese consumption, which is false. An executive first denied a hallucination by invoking a web source, then Google removed the figure from the ad and the product page."
+      },
+      {
+        "q": "Should AI marketing content generation be abandoned?",
+        "a": "No. The failure comes from the lack of fact-checking and a clumsy crisis communication, not from the pattern. With a human review of the quantified claims before airing, the same demonstration holds."
+      }
+    ]
+  },
+  "pattern": "generative AI response featured in advertising (false fact)",
+  "etape_parcours": "discovery",
+  "objectif_business": "Promote Gemini to small businesses during the 2025 Super Bowl by showing the AI write product descriptions, here for a cheese merchant.",
+  "description": "For the 2025 Super Bowl, Google runs a campaign showing Gemini helping small businesses write their content. In the spot devoted to a Wisconsin cheesemonger, the generated text claims that gouda accounts for 50 to 60 percent of global cheese consumption. The figure is false: gouda does not even appear in the top 10 according to public data. A Google executive first defends the ad by saying it is not a hallucination, since the model relied on a web source. Faced with the controversy, the figure is removed from the ad and the product page before the game airs.",
+  "resultats": [
+    {
+      "metrique": "Gouda statistic removed from the spot and the product page"
+    },
+    {
+      "metrique": "Initial defense: a Google executive invokes a web source"
+    }
+  ],
+  "niveau_preuve": {
+    "justification": "Established press (Fortune, TechRadar) documents the brand by name, the false figure, the executive's defense, and the correction. Google's edit of the ad confirms the facts. No financial document, hence C."
+  },
+  "post_mortem": {
+    "ce_qui_s_est_passe": "In early February 2025, Google runs a Super Bowl campaign showing Gemini write descriptions for small businesses. The cheesemonger spot has the AI claim that gouda accounts for 50 to 60 percent of global cheese consumption. An observer flags the error. A Google executive first defends the ad by saying it is not a hallucination but a repeat of a web source. Faced with the controversy, Google removes the figure from the ad and the product page before the game airs.",
+    "raison_echec": "The model repeated a false figure present on a web page and integrated it into validated marketing content without verification. The initial public defense (it is not a hallucination) made things worse by revealing that no factual guardrail separated the model's output from going on air. The error was all the more visible because the ad was precisely meant to tout Gemini's reliability.",
+    "cout_estime": "Reputational cost: the blunder is picked up by the tech press at the worst moment for a reliability demonstration. No direct financial cost published.",
+    "signaux_avant_coureurs": "Inferred: airing an LLM output containing a quantified statistic without human verification is a known risk. The fact that the model relies on the web does not guarantee accuracy, since the web contains errors. A factual review of the quantified claims before filming would have sufficed.",
+    "lecons_avec_recul": "Inferred: any AI-generated quantified claim meant to be published must go through human verification, especially in an ad that sells that AI's reliability. Distinguishing a hallucination from a repeat of a false source changes nothing for the public: it is the brand that owns the error. Checking the salient facts is not optional.",
+    "le_pattern_reste_il_valide": "Inferred: yes, showing a generative AI write marketing content remains a valid and widespread pattern. The failure is about the lack of factual control and a clumsy crisis communication, not about the idea. With a check of the figures before airing, the same demonstration holds."
+  },
+  "stack_technique": [
+    {
+      "detail": "Generative LLM staged in the campaign: it writes the cheesemonger's product description, including the false gouda statistic"
+    },
+    {
+      "detail": "The false figure came from a web page repeated by the model; it is the lack of verification of this repeat that is at fault, not a hallucination according to Google"
+    },
+    {
+      "detail": "Google product pages featuring Gemini's responses for small businesses, corrected at the same time as the spot"
+    }
+  ],
+  "replication": {
+    "prerequis_data": [
+      "content to generate",
+      "verifiable reference sources"
+    ],
+    "prerequis_orga": [
+      "human factual review before publication",
+      "fast correction process"
+    ],
+    "stack_possible": [
+      "generative LLM",
+      "verification of quantified claims",
+      "editorial validation chain"
+    ],
+    "premiere_etape": "Add a mandatory human fact-check step for any generated content meant for public release, all the more so an ad that touts the AI."
+  },
+  "statut_vivant": {
+    "note": "Correction confirmed: the figure was removed from the ad and the page before the Super Bowl aired. The campaign and Gemini continued, only the false claim was removed."
+  },
+  "transposable_ue": {
+    "note": "Identical risk for any brand that features an AI response in its advertising: a wrong figure shown on screen exposes the brand to misleading advertising liability. In the EU, the AI Act and fair advertising rules make it all the more necessary to verify the generated quantified claims. The problem is not the language or the market, it is the control of the facts the model produces."
+  }
+}

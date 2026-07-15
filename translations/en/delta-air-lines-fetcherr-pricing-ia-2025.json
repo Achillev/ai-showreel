@@ -1,0 +1,114 @@
+{
+  "seo": {
+    "title": "Delta Air Lines: AI dynamic pricing with Fetcherr - 3% of domestic fares, target 20% (2025)",
+    "meta_description": "Delta sets about 3% of its domestic fares via Fetcherr's AI engine in 2025, with a target of 20% by year-end, announced on the earnings call.",
+    "resume_citable": "In 2025, Delta Air Lines sets about 3% of its domestic fares with Fetcherr's AI engine and targets 20% by the end of 2025, according to its President on the earnings call.",
+    "faq": [
+      {
+        "q": "How does Delta use AI for its prices?",
+        "a": "Fetcherr's engine, a large market model, ingests searches, competitor prices, and demand signals, then sets the fare per route in place of fixed fare classes."
+      },
+      {
+        "q": "What share of Delta's fares is set by AI?",
+        "a": "About 3% of the domestic network in the second quarter of 2025, versus 1% at the end of 2024, with an announced target of 20% for the end of 2025."
+      }
+    ]
+  },
+  "pattern": "AI dynamic pricing (yield management)",
+  "etape_parcours": "purchase",
+  "objectif_business": "Set each fare at the level the market accepts, route by route, instead of relying on fixed fare classes, to capture more revenue per seat.",
+  "description": "Delta is progressively replacing its fare-class grids with prices computed by Fetcherr's engine, described as a large market model. The system ingests consumer searches, competitor prices, and demand signals such as the weather, then sets the fare. In the second quarter of 2025, about 3 percent of domestic network fares were set by AI, up from 1 percent at the end of 2024, with an announced target of 20 percent by the end of 2025. Delta says it is still in a test and ramp-up phase.",
+  "points_cles": [
+    "Fare-class grids replaced by AI-computed prices, route by route.",
+    "Fetcherr pricing engine (large market model) integrated into revenue management.",
+    "About 3% of domestic fares set by AI in Q2 2025, target 20% by end of 2025.",
+    "Evidence level A, status mixed signals."
+  ],
+  "resultats": [
+    { "metrique": "Share of domestic fares set by AI (Q2 2025, target end of 2025)" },
+    { "metrique": "Revenue framing on the earnings call (Q2 2025)" },
+    { "metrique": "Management's read on the early results" }
+  ],
+  "niveau_preuve": {
+    "justification": "Figures and framing stated by Delta's President on the second-quarter 2025 earnings call, corroborated by several established press outlets that report the same values (3% current, 20% targeted)."
+  },
+  "stack_technique": [
+    { "detail": "AI pricing engine (large market model) that ingests searches, competitor prices, and demand signals, then sets the price per route" },
+    { "detail": "in-house systems the engine is integrated into and that keep supervision of the AI-managed scope" },
+    { "detail": "surfaces where the computed fare is published and sold" }
+  ],
+  "fonctionnement_operationnel": {
+    "cadence": "Continuous reoptimization of fares as demand and the market evolve.",
+    "opere_par": "Delta's revenue management team, with the Fetcherr pricing engine.",
+    "signal_pilote": "The demand predicted per route and date, cross-referenced with competitor prices and consumer searches. Without a reliable market data flow, the proposed price drifts and unit revenue degrades.",
+    "etapes": [
+      {
+        "etape": "Ingesting market data",
+        "detail": "Consumer searches, competitor prices, and demand signals such as the weather are aggregated continuously.",
+        "acteur": "AI"
+      },
+      {
+        "etape": "Demand prediction",
+        "detail": "The large market model estimates demand and willingness to pay per route and date.",
+        "acteur": "AI"
+      },
+      {
+        "etape": "Setting the fare",
+        "detail": "The engine sets a price per route, replacing the fixed fare classes.",
+        "acteur": "AI"
+      },
+      {
+        "etape": "Supervision and ramp-up",
+        "detail": "The revenue management team progressively extends the scope of AI-managed fares and monitors the results.",
+        "acteur": "revenue management team"
+      }
+    ]
+  },
+  "replication": {
+    "prerequis_data": [
+      "booking and fare history",
+      "real-time competitor prices",
+      "demand signals (events, weather, searches)"
+    ],
+    "prerequis_orga": [
+      "a mature revenue management team",
+      "integration of the pricing engine into the distribution channels",
+      "governance on price transparency and fairness"
+    ],
+    "stack_possible": [
+      "vendor AI pricing engine (Fetcherr type)",
+      "in-house demand models",
+      "existing revenue management system"
+    ],
+    "premiere_etape": "Isolate a subset of domestic routes and test the pricing engine there against the current fare grid.",
+    "playbook": [
+      {
+        "action": "Audit the data (booking and fare history, competitor prices, demand signals) and isolate a pilot scope of routes.",
+        "livrable": "Pilot scope defined and data flows wired"
+      },
+      {
+        "action": "Integrate the pricing engine into the revenue management and distribution systems.",
+        "livrable": "AI-computed prices available in pre-production"
+      },
+      {
+        "action": "Run the engine in shadow mode: compare its prices to the current grid without showing them.",
+        "livrable": "Gap report and estimate of incremental revenue"
+      },
+      {
+        "action": "Switch a small percentage of fares into production with safeguards (floors, ceilings, human supervision).",
+        "livrable": "1-3% of fares managed by AI with unit revenue monitoring"
+      },
+      {
+        "action": "Ramp up progressively and set the governance on price transparency and fairness.",
+        "livrable": "Extended scope with an oversight committee and reporting"
+      }
+    ],
+    "equipe": "existing revenue management team + 1-2 data engineers for the integration + legal for price compliance"
+  },
+  "statut_vivant": {
+    "note": "The last quantified public confirmation dates to the July 2025 earnings call, with a target of 20% for the end of 2025. No verified quantified update in 2026, and the program prompted a request for explanations from US senators on AI-driven pricing."
+  },
+  "transposable_ue": {
+    "note": "AI dynamic pricing is transposable, but the EU governs personalized pricing: the Omnibus directive requires informing the customer when a price is personalized by automated decision, GDPR requires a legal basis as soon as personal data feeds the price, and the AI Act requires documenting the use. Delta stresses demand-driven pricing, not individualized per person."
+  }
+}

@@ -1,0 +1,122 @@
+{
+  "seo": {
+    "title": "Ralph Lauren: Ask Ralph, the genAI styling assistant that generates shoppable outfits (2025)",
+    "meta_description": "Ask Ralph, the conversational assistant in the Ralph Lauren app launched in 2025 (Azure OpenAI), generates complete shoppable outfits from natural-language prompts.",
+    "resume_citable": "Ask Ralph, the conversational assistant in the Ralph Lauren mobile app launched in September 2025 in the United States and built with Microsoft on Azure OpenAI, generates complete shoppable outfits from natural-language prompts, surfacing only items available in the Polo Ralph Lauren inventory.",
+    "faq": [
+      {
+        "q": "What is Ask Ralph and how does it work?",
+        "a": "Ask Ralph is a conversational assistant in the Ralph Lauren mobile app. The user writes a natural-language request and receives complete shoppable outfits, presented as a visual laydown with style advice, drawn from the available Polo Ralph Lauren inventory."
+      },
+      {
+        "q": "What technology powers Ask Ralph and where is it deployed?",
+        "a": "It was built with Microsoft on Azure OpenAI and combines a personalized shopping agent and a natural-language search engine. It is live in the Ralph Lauren app in the United States (iOS and Android) since September 2025, with an announced expansion to other brands and markets."
+      }
+    ]
+  },
+  "pattern": "genAI conversational shopping assistant that generates complete shoppable outfits from natural-language prompts",
+  "etape_parcours": "consideration",
+  "stack_technique": [
+    { "detail": "Provides the generative and language AI models that interpret open prompts and power the conversation. Ralph Lauren describes a long-standing partnership with Microsoft, continued on Azure OpenAI for Ask Ralph." },
+    { "detail": "Built jointly with Microsoft. Interprets intent rather than keywords, adapts recommendations to tone, satisfaction, and context (place, event), and composes complete outfits only from available inventory." },
+    { "detail": "Optimized for detailed inputs, it links the user's prompt to the Polo Ralph Lauren catalog to surface only genuinely available items." },
+    { "detail": "The delivery channel for Ask Ralph, on iOS and Android, for account holders in the United States. The assistant is integrated there as a styling and shopping tool." }
+  ],
+  "objectif_business": "Turn product discovery in the app into a styling conversation that leads to a purchase. Ask Ralph reproduces the guidance of an in-store associate, foregrounds the brand's point of view on style, and pushes complete buyable outfits rather than isolated items, to deepen the customer relationship in the digital channel.",
+  "description": "Ask Ralph is a conversational assistant integrated into the Ralph Lauren mobile app, launched in September 2025 in the United States (iOS and Android). The user writes a natural-language request, such as \"What should I wear to a concert?\" or \"How can I style my navy-blue men's blazer?\", and receives complete outfits presented as a visual laydown, with style advice and gift ideas. Each piece is shoppable: you can buy one item or the whole outfit. The assistant, built with Microsoft on Azure OpenAI, interprets intent rather than matching keywords, asks clarifying questions, and refines its suggestions based on expressed preferences. It only offers items available in the Polo Ralph Lauren inventory, men's and women's. Ralph Lauren describes a tool meant to grow richer with use and announces a roadmap: voice commands, preference memory, image navigation, extension to other group brands and other markets. No adoption or conversion metric has been made public at this stage.",
+  "points_cles": [
+    "GenAI conversational shopping assistant generating complete shoppable outfits (Ask Ralph).",
+    "Agent built with Microsoft on Azure OpenAI, natural-language search on the catalog.",
+    "Rollout live in the US app (iOS and Android) since September 2025.",
+    "Evidence B, status confirmed; no public adoption metric at this stage."
+  ],
+  "resultats": [
+    { "metrique": "Deployment status" },
+    { "metrique": "Output delivered to the user" },
+    { "metrique": "Market scope at launch" }
+  ],
+  "niveau_preuve": {
+    "justification": "The deployment is triangulated by three concordant sources: the official Ralph Lauren press release (T1 primary, Sept 9, 2025), the Microsoft customer story that documents the stack and quotes the Chief Digital Officer (T2), and established specialist press (Marketing Dive, T3). The feature is live at US national scale in the brand's flagship app and confirmed active in mid-2026. No public adoption or conversion metric exists to date, which caps the level below A."
+  },
+  "fonctionnement_operationnel": {
+    "cadence": "Real-time, in the mobile app, 24/7. Recommendations are recomputed on each prompt and refocus over the course of the conversation.",
+    "opere_par": "Ralph Lauren's digital and e-commerce team, with Microsoft for the Azure OpenAI layer and the personalized shopping agent. Merchandising feeds and frames the catalog used.",
+    "signal_pilote": "The intent expressed in the prompt, crossed with real inventory availability. If the catalog and stock feed is not synchronized, the assistant risks composing outfits with unavailable items and breaks the shoppable experience.",
+    "etapes": [
+      {
+        "etape": "User prompt",
+        "detail": "The customer writes an open request in the app (occasion, item to style, gift idea).",
+        "acteur": "customer"
+      },
+      {
+        "etape": "Intent interpretation",
+        "detail": "The agent, via Azure OpenAI, understands the context rather than keywords and, if needed, asks a clarifying question.",
+        "acteur": "AI"
+      },
+      {
+        "etape": "Catalog search",
+        "detail": "The natural-language search engine links the intent to product listings and keeps only Polo Ralph Lauren items in stock.",
+        "acteur": "AI"
+      },
+      {
+        "etape": "Composition and display",
+        "detail": "The assistant composes complete outfits as a visual laydown, with style advice, and lets the user buy a piece or the set.",
+        "acteur": "AI"
+      },
+      {
+        "etape": "Refinement and oversight",
+        "detail": "The customer refines their preferences; the team tracks recommendation quality, frames the catalog, and extends the scope (new brands, voice, image).",
+        "acteur": "marketing"
+      }
+    ]
+  },
+  "replication": {
+    "prerequis_data": [
+      "Structured product catalog with usable style attributes (color, material, occasion, category)",
+      "Real-time availability and stock to offer only buyable items",
+      "Clean product images usable in an outfit laydown",
+      "Outfit-building rules or styling history to frame the associations"
+    ],
+    "prerequis_orga": [
+      "Merchandising team that owns and qualifies the catalog used",
+      "Digital/e-commerce team to integrate the assistant into the app and cart",
+      "Cloud/LLM partnership and a governance framework for the AI's answers"
+    ],
+    "stack_possible": [
+      "LLM via cloud (Azure OpenAI or equivalent) for conversation and intent interpretation",
+      "Semantic search engine on the catalog (RAG approach) connected to stock",
+      "Outfit-building layer that assembles complete looks from the surfaced items",
+      "Commerce app and cart integration for one-gesture purchase"
+    ],
+    "premiere_etape": "Qualify the catalog with style attributes and connect real-time stock availability: without this foundation, an assistant that composes outfits quickly surfaces unavailable items and loses its shoppable promise.",
+    "playbook": [
+      {
+        "action": "Structure and enrich the product catalog with style and occasion attributes, and connect the real-time availability feed.",
+        "livrable": "Catalog usable by a semantic search, limited to items in stock."
+      },
+      {
+        "action": "Set up a natural-language search engine that links a free prompt to relevant, available products.",
+        "livrable": "Intent search validated on a sample of customer queries."
+      },
+      {
+        "action": "Add the conversational layer (LLM via cloud) that interprets context, asks clarifying questions, and composes complete outfits.",
+        "livrable": "Assistant able to render coherent complete outfits as a laydown."
+      },
+      {
+        "action": "Integrate the assistant into the app and cart to make each piece and each outfit buyable in one gesture.",
+        "livrable": "End-to-end prompt-to-purchase journey in the app."
+      },
+      {
+        "action": "Open to a segment of users, track recommendation quality and conversion, then broaden the scope (brands, channels, markets) and modalities (voice, image, memory).",
+        "livrable": "Assistant in production with a quality tracking loop and an extension roadmap."
+      }
+    ],
+    "equipe": "Merchandising team that owns the catalog, AI/data engineers for semantic search and LLM orchestration, product and e-commerce team for the app and cart integration, cloud partner for the generative layer."
+  },
+  "statut_vivant": {
+    "note": "Feature still available in mid-2026 for US account holders, with a dedicated product page (ralphlauren.com/askralphinfo) and a public roadmap (voice, preference memory, image navigation, other brands and markets). About 10 months in production, no signal of withdrawal."
+  },
+  "transposable_ue": {
+    "note": "Ask Ralph generates shoppable outfits from natural-language prompts, drawing on the catalog and available inventory. The pattern transposes well in the EU because it rests mainly on first-party product data (listings, images, stock) and not on sensitive data. Two points to handle: under the AI Act, a transparency obligation (informing the user they are talking to an AI); under GDPR, a clear legal basis whenever the assistant memorizes preferences or personalizes on history. The technical foundation (Azure OpenAI, natural-language search on catalog) is available in a European region."
+  }
+}

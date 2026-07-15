@@ -1,0 +1,132 @@
+{
+  "seo": {
+    "title": "Grammarly: AI writing assistant - 40M daily users (2024)",
+    "meta_description": "Grammarly, a freemium AI writing assistant with the GrammarlyGO generative layer, claims more than 40 million daily users and 50,000 organizations, for a 13 billion dollar valuation.",
+    "resume_citable": "Grammarly, a freemium AI writing assistant with the GrammarlyGO generative layer, claimed in 2025 more than 40 million daily users and 50,000 customer organizations, for a valuation of 13 billion dollars and a growth financing of 1 billion raised in 2024.",
+    "faq": [
+      {
+        "q": "How does Grammarly monetize its AI?",
+        "a": "Through a freemium model: free to enter, premium subscriptions for advanced features and GrammarlyGO, and licenses for businesses and higher education institutions."
+      },
+      {
+        "q": "What is its scale?",
+        "a": "More than 40 million daily users and 50,000 customer organizations in 2025 according to Forbes, for a valuation of 13 billion dollars."
+      }
+    ]
+  },
+  "pattern": "freemium AI writing assistant converted into premium subscriptions and organizational licenses",
+  "etape_parcours": "loyalty",
+  "objectif_business": "Convert a very large free base of writing-assistant users into premium subscriptions and organizational licenses (businesses and institutions), with the generative UI (GrammarlyGO) serving to defend and increase premium value.",
+  "description": "Grammarly corrects spelling, grammar, tone, and style across apps and the browser, inserting itself wherever the user writes. GrammarlyGO adds a generative layer to draft, rephrase, and reply. The model is freemium: free to enter, premium for advanced features, and licenses for organizations (Grammarly for Business, Grammarly for Education in higher education). In 2025, the company claims more than 40 million daily users and 50,000 customer organizations.",
+  "points_cles": [
+    "Freemium AI writing assistant converted into premium and organizational licenses.",
+    "Proprietary NLP engines and the GrammarlyGO generative layer.",
+    "40 million+ daily users, 50,000+ organizations, 13 billion dollar valuation.",
+    "Evidence level C, confirmed active status."
+  ],
+  "resultats": [
+    {
+      "metrique": "Daily users (2025)"
+    },
+    {
+      "metrique": "Customer organizations (2025)"
+    },
+    {
+      "metrique": "Valuation"
+    },
+    {
+      "metrique": "Growth financing raised from General Catalyst (2024)"
+    }
+  ],
+  "niveau_preuve": {
+    "justification": "Grammarly is a private company with no public financial results; the usage figures (40M daily users, 50,000 organizations) are reported by major business press (Forbes) citing the brand, and the 1 billion dollar financing is confirmed by an official Grammarly release. Press citing the brand plus an official release, hence level C."
+  },
+  "stack_technique": [
+    {
+      "detail": "In-house models for spelling, grammar, tone, and style correction, analyzing text in context as the user types"
+    },
+    {
+      "detail": "Generative layer launched in 2023 to draft, rephrase, and reply; the underlying LLMs are not detailed publicly"
+    },
+    {
+      "detail": "Browser extension and apps that insert the assistant wherever the user writes"
+    },
+    {
+      "detail": "Management of licenses, analytics, and style rules for organizational accounts, with enterprise-grade data protections"
+    }
+  ],
+  "fonctionnement_operationnel": {
+    "cadence": "Real time as the user types; suggestions and generation on the user's demand.",
+    "opere_par": "Grammarly's Product/AI team; on the organization side, the administrator manages licenses, analytics, and rules.",
+    "signal_pilote": "The relevance and accuracy of the suggestions in the context where the user writes. A wrong or off-tone suggestion erodes trust and therefore premium conversion.",
+    "etapes": [
+      {
+        "etape": "Insertion into writing",
+        "detail": "The user writes in an app or the browser; Grammarly analyzes the text in context.",
+        "acteur": "human"
+      },
+      {
+        "etape": "Suggestions and generation",
+        "detail": "The engine offers corrections, tone adjustments and, with GrammarlyGO, drafting or rephrasing.",
+        "acteur": "AI"
+      },
+      {
+        "etape": "Conversion",
+        "detail": "The advanced features push toward premium; organizations buy bundled licenses.",
+        "acteur": "marketing"
+      },
+      {
+        "etape": "Organization administration",
+        "detail": "For Business/Education accounts, the admin manages access, analytics, and style rules.",
+        "acteur": "customer"
+      }
+    ]
+  },
+  "replication": {
+    "prerequis_data": [
+      "access to the user's text in context, with consent",
+      "reliable correction and generation engines",
+      "data protections for organizational accounts"
+    ],
+    "prerequis_orga": [
+      "freemium model with a clear premium tier",
+      "license offering for businesses and institutions",
+      "administration and analytics on the customer side"
+    ],
+    "stack_possible": [
+      "proprietary NLP engines or LLMs",
+      "genAI writing-assistance layer",
+      "multi-surface distribution (browser, apps)"
+    ],
+    "premiere_etape": "Choose a high-frequency writing surface and make the suggestion reliable there, before grafting generation and premium onto it.",
+    "playbook": [
+      {
+        "action": "Choose a high-frequency writing surface (browser or a target app) and build the suggestion engine, framing consent and text processing.",
+        "livrable": "Suggestion-in-context prototype on the chosen surface"
+      },
+      {
+        "action": "Open a free version and measure the suggestion acceptance rate, the only real quality signal; iterate until a sufficient confidence level.",
+        "livrable": "Free user base with acceptance rate tracked"
+      },
+      {
+        "action": "Graft the generative layer (drafting, rephrasing) drawing on market LLMs.",
+        "livrable": "Generative features in beta on the existing base"
+      },
+      {
+        "action": "Launch the premium tier on the advanced features and measure free-to-paid conversion.",
+        "livrable": "Premium offering in production with a measured conversion funnel"
+      },
+      {
+        "action": "Build the organizational offering: administration, analytics, style rules, enterprise data protections.",
+        "livrable": "Sellable B2B / education license offering"
+      }
+    ],
+    "equipe": "3-5 NLP / ML engineers + 1 PM + 1 designer + 1 growth for the freemium funnel"
+  },
+  "statut_vivant": {
+    "note": "Base and customer roster growing; 1 billion dollar financing in 2024, acquisitions of Coda (2024) and Superhuman (2025), new CEO in late 2024. Product active and expanding toward AI agents."
+  },
+  "transposable_ue": {
+    "note": "Freemium AI writing assistant, consumer, enterprise, and education (higher education institutions). GDPR applies to the processing of users' text; the AI Act requires transparency about AI assistance. Grammarly highlights enterprise-grade protections for organizational accounts."
+  }
+}

@@ -1,0 +1,120 @@
+{
+  "seo": {
+    "title": "CVS Health: conversation intelligence on 100% of calls (Cresta) - predictive CSAT (2025)",
+    "meta_description": "CVS Health now scores 100% of its member calls versus 5% before, with predictive CSAT via Cresta, and extends Salesforce Agentforce AI agents to millions of members.",
+    "resume_citable": "CVS Health, which serves 185 million people a year, went from scoring 5% to 100% of its calls by deploying Cresta's conversation intelligence with a predictive CSAT on every call, and is extending Salesforce Agentforce Health AI agents to its Aetna and Caremark members.",
+    "faq": [
+      {
+        "q": "What did conversation intelligence change at CVS Health?",
+        "a": "The company scored 5% of its calls manually; with Cresta, it scores 100% and computes a predictive CSAT on every call, with a near-immediate reduction in after-call work for advisors."
+      },
+      {
+        "q": "What is the role of Salesforce Agentforce Health?",
+        "a": "It adds a layer of AI agents that assist Aetna and CVS Caremark advisors in resolving member requests faster, across a scope of several tens of millions of members."
+      }
+    ]
+  },
+  "pattern": "conversation intelligence and AI agents on 100% of contact center calls",
+  "etape_parcours": "post-purchase",
+  "objectif_business": "Move from a sample of manually scored calls to reading 100% of contact center interactions, to measure satisfaction on every call, reduce advisors' after-call work, and detect issues in real time rather than after weeks of surveys.",
+  "description": "CVS Health deployed Cresta's conversation intelligence in its member contact center. The company used to score 5% of its calls; it now scores 100%. The starting point was automatic call summarization, which reduced advisors' after-call work, before opening up a predictive satisfaction score (CSAT) on every call. CVS Health serves 185 million people a year. In parallel, the company is extending a layer of AI agents via Salesforce Agentforce Health for its Aetna and CVS Caremark businesses, across a scope of several tens of millions of members.",
+  "points_cles": [
+    "Conversation intelligence applied to 100% of member contact center calls.",
+    "Cresta platform (summarization, predictive CSAT) plus Salesforce Agentforce Health agents.",
+    "Share of scored calls raised from 5% to 100%, across 185 million people served a year.",
+    "Evidence level B, status confirmed."
+  ],
+  "resultats": [
+    { "metrique": "Share of calls scored by AI" },
+    { "metrique": "Predictive satisfaction scoring" },
+    { "metrique": "After-call work" },
+    { "metrique": "People served a year (CVS Health member relations)" }
+  ],
+  "niveau_preuve": {
+    "justification": "The central result (going from 5% to 100% of scored calls, predictive CSAT) is documented by a quantified platform case study (Cresta), corroborated by a CVS/Salesforce announcement on the deployment of AI agents at the scale of several tens of millions of members. Quantified vendor case study = B."
+  },
+  "stack_technique": [
+    { "detail": "contact center conversation intelligence: transcription, automatic call summarization, and predictive CSAT on 100% of calls" },
+    { "detail": "contact center AI agents for Aetna and CVS Caremark members, extension announced in 2026" },
+    { "detail": "speech-to-text component integrated into the conversation platform, a prerequisite for summarization and scoring" }
+  ],
+  "fonctionnement_operationnel": {
+    "cadence": "Real time on every call, with continuous post-call analysis",
+    "opere_par": "CVS Health customer experience and insights leadership, above the contact center teams",
+    "signal_pilote": "The content of the transcribed calls and the predictive CSAT computed on it. Without reliable transcription or a consent basis for call analysis, coverage falls back to the manual sample it started from.",
+    "etapes": [
+      {
+        "etape": "Capture and transcription",
+        "detail": "Every member call is transcribed and made analyzable.",
+        "acteur": "AI"
+      },
+      {
+        "etape": "Automatic summarization",
+        "detail": "The system generates a call summary that lightens the advisor's after-call work.",
+        "acteur": "AI"
+      },
+      {
+        "etape": "Predictive scoring",
+        "detail": "A predictive CSAT is computed on 100% of calls, with a per-advisor view.",
+        "acteur": "AI"
+      },
+      {
+        "etape": "Detection and remediation",
+        "detail": "The teams spot issues in real time and act without waiting for a survey.",
+        "acteur": "Customer experience team"
+      },
+      {
+        "etape": "AI agent extension",
+        "detail": "AI agents (Agentforce Health) assist Aetna and Caremark advisors with members.",
+        "acteur": "AI and member relations team"
+      }
+    ]
+  },
+  "replication": {
+    "prerequis_data": [
+      "transcribed calls",
+      "CSAT history to train the scoring",
+      "a consent basis for call analysis"
+    ],
+    "prerequis_orga": [
+      "contact center with call volume",
+      "quality/customer experience team",
+      "a compliance framework for recording"
+    ],
+    "stack_possible": [
+      "conversation intelligence platform (Cresta, Observe.ai, etc.)",
+      "AI service agents (Agentforce, custom)",
+      "voice transcription"
+    ],
+    "premiere_etape": "Wire up call transcription and launch automatic summarization as a first, fast-ROI use case.",
+    "playbook": [
+      {
+        "action": "Set the compliance framework (call recording, consent, health data) and contract the platform.",
+        "livrable": "Validated compliance file and signed contract"
+      },
+      {
+        "action": "Wire transcription onto the calls and launch automatic summarization on a pilot team.",
+        "livrable": "Summaries in limited production, after-call time measured before / after"
+      },
+      {
+        "action": "Generalize automatic summarization and calibrate the predictive CSAT on the history of manual scores.",
+        "livrable": "Predictive scoring validated against the manually scored sample"
+      },
+      {
+        "action": "Move to 100% of calls scored with dashboards per team and per advisor.",
+        "livrable": "Full call coverage with management views"
+      },
+      {
+        "action": "Set up the real-time remediation loop on the customer experience side, without waiting for surveys.",
+        "livrable": "Documented and operated detection-action process"
+      }
+    ],
+    "equipe": "1 customer experience lead + 1 contact center project manager + telephony IT, with legal and compliance in support"
+  },
+  "statut_vivant": {
+    "note": "Cresta deployment documented in late 2025 with live results, and Agentforce Health extension announced in mid-2026. Active and recent momentum on member relations at the contact center."
+  },
+  "transposable_ue": {
+    "note": "AI analysis of recorded calls and predictive satisfaction scoring touch health data and voice recordings. In the EU, a GDPR legal basis and member information are required, call recording is governed by national law, and AI Act vigilance applies to behavioral analysis. Health data falls under Article 9 GDPR."
+  }
+}

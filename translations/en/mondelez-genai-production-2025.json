@@ -1,0 +1,103 @@
+{
+  "seo": {
+    "title": "Mondelez: $40M into a genAI platform to cut 30 to 50% of ad production cost (2025)",
+    "meta_description": "Mondelez invests $40M in a genAI platform (Accenture, Publicis) targeting 30 to 50% savings on marketing production. Chips Ahoy and Milka already live.",
+    "resume_citable": "Mondelez invested 40 million dollars in a proprietary genAI platform (with Accenture and Publicis) targeting a 30 to 50% drop in marketing production cost, with social content already live for Chips Ahoy and Milka.",
+    "faq": [
+      {
+        "q": "What does Mondelez's genAI platform produce today?",
+        "a": "Social content (Chips Ahoy, Milka) and Oreo product pages, with short TV spots scheduled for the holidays and systematic human review."
+      },
+      {
+        "q": "Does Mondelez use generated images of people?",
+        "a": "No, the group avoids images of people and focuses on animated product visuals."
+      }
+    ]
+  },
+  "pattern": "proprietary genAI platform for ad production",
+  "etape_parcours": "discovery",
+  "objectif_business": "Reduce the share of the ad budget eaten by creative and production (around 60 percent at a large CPG), produce more variants faster, and spend less on external agencies.",
+  "description": "Mondelez invested 40 million dollars in a proprietary genAI platform, developed with Accenture and Publicis Groupe. The group targets a 30 to 50 percent drop in the production cost of marketing content, on a creative-production line item that accounts for around 60 percent of a large consumer-goods maker's ad budget. The first uses are already live: social content for Chips Ahoy and Milka, Oreo product pages on Amazon and Walmart. For now the group avoids images of people and focuses on animated product visuals, with human review of everything the AI outputs. The roadmap pushes toward short, ready-to-air TV spots for the 2025-2026 holidays, with the stated ambition of a Super Bowl 2027 format. One cited example: an eight-second Milka animation where waves of chocolate roll over a biscuit, the kind of shot that traditionally costs hundreds of thousands of dollars.",
+  "resultats": [
+    { "metrique": "Committed investment" },
+    { "metrique": "Targeted reduction in marketing content production cost" },
+    { "metrique": "Share of the ad budget in creative-production (CPG context)" }
+  ],
+  "niveau_preuve": {
+    "justification": "Investment and objectives announced by Mondelez through its executives, picked up by CNBC and the trade press; the cost reduction is a stated target, not yet an audited result, hence C."
+  },
+  "stack_technique": [
+    { "detail": "Internal ad production platform (40M dollars invested): animated product visuals and videos, with a human review workflow and exclusion of images of people." },
+    { "detail": "Generative models built into the platform; their names are not published in the sources." },
+    { "detail": "Co-development of the proprietary genAI platform." },
+    { "detail": "Co-development of the proprietary genAI platform." }
+  ],
+  "fonctionnement_operationnel": {
+    "cadence": "Per campaign and per launch; production of many variants on demand, with systematic human review before release.",
+    "opere_par": "Mondelez's consumer experience and data teams, with Accenture and Publicis on the platform.",
+    "signal_pilote": "The fidelity of the product rendering and adherence to brand guidelines. The guardrail held: no images of people, human review of each output before it goes live.",
+    "etapes": [
+      {
+        "etape": "Brief and framing",
+        "detail": "Definition of the product, format, and message per market, fed into the proprietary platform.",
+        "acteur": "marketing / brand"
+      },
+      {
+        "etape": "Variant generation",
+        "detail": "Production of animated product visuals and videos (e.g. the Milka animation), in several versions.",
+        "acteur": "AI / platform (Accenture, Publicis)"
+      },
+      {
+        "etape": "Human review",
+        "detail": "Quality and compliance check of each output before release; exclusion of images of people.",
+        "acteur": "Mondelez creative team"
+      },
+      {
+        "etape": "Distribution",
+        "detail": "Go-live on social and e-commerce product pages, with progressive extension to TV.",
+        "acteur": "marketing / e-commerce"
+      }
+    ]
+  },
+  "replication": {
+    "playbook": [
+      {
+        "action": "Pick a high-volume scope (social content and product pages for one brand) and gather product assets, packaging, and guidelines.",
+        "livrable": "Brand corpus ready and a backlog of formats to produce."
+      },
+      {
+        "action": "Stand up a POC with an integrator or an internal team on a batch of product visuals, setting the guardrails (no people, systematic human review).",
+        "livrable": "First visuals validated by the brand and a written guardrails charter."
+      },
+      {
+        "action": "Industrialize the generation -> review -> publication workflow and measure cost per asset before/after.",
+        "livrable": "Tooled pipeline with documented cost per visual."
+      },
+      {
+        "action": "Extend to other brands and markets, then to short video formats.",
+        "livrable": "Catalog of multi-market variants in production and a savings assessment."
+      }
+    ],
+    "equipe": "1 content lead + 1-2 creatives (art direction, prompts) + 1 data/tooling profile, plus human review by the brand teams; integrator optional.",
+    "prerequis_data": [
+      "product assets and brand guidelines",
+      "packaging references per market"
+    ],
+    "prerequis_orga": [
+      "a team able to run a genAI platform and handle its review",
+      "a make-or-buy trade-off against external agencies"
+    ],
+    "stack_possible": [
+      "genAI platform (in-house or via integrator)",
+      "image and video models",
+      "human review workflow"
+    ],
+    "premiere_etape": "Target social content and e-commerce product pages, where volume and repetitiveness justify automation."
+  },
+  "statut_vivant": {
+    "note": "Platform announced in October 2025 with social uses already live (Chips Ahoy, Milka) and Oreo product pages; TV deployments scheduled for the holidays."
+  },
+  "transposable_ue": {
+    "note": "Mondelez avoids images of people and runs all generated content through human review, which limits GDPR exposure and eases AI Act compliance on synthetic visuals. Milka and Cadbury are already European brands."
+  }
+}

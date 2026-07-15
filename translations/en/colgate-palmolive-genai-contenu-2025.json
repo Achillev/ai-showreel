@@ -1,0 +1,114 @@
+{
+  "seo": {
+    "title": "Colgate-Palmolive: genAI video advertising - production 4 to 6x faster (2025)",
+    "meta_description": "Colgate-Palmolive and Hill's produce genAI video ads (Google Veo): 4 to 6 times faster, lower cost per concept, consideration lift maintained.",
+    "resume_citable": "Colgate-Palmolive produced genAI video ads with Hill's Pet Nutrition (Google Veo, BCG) 4 to 6 times faster than classic production, at a significantly lower cost per concept and with a consideration lift equal to or better than business-as-usual creative.",
+    "faq": [
+      {
+        "q": "Which genAI tool did Colgate-Palmolive use?",
+        "a": "Google's Veo tool, in a pilot run with the Hill's Pet Nutrition division and Boston Consulting Group."
+      },
+      {
+        "q": "What production gain did the pilot show?",
+        "a": "Videos produced 4 to 6 times faster, at a significantly lower cost per concept, with a consideration lift equal to or better than classic creative."
+      }
+    ]
+  },
+  "pattern": "genAI video and marketing content production at scale",
+  "etape_parcours": "discovery",
+  "objectif_business": "Produce more marketing content, faster and cheaper, without losing advertising effectiveness, to fuel volume, variety, and velocity across the group's brands.",
+  "description": "Colgate-Palmolive ran a genAI marketing content pilot with its Hill's Pet Nutrition division, in partnership with Google and Boston Consulting Group. Using Google's Veo tool, the teams produced two consumer-ready video ads 4 to 6 times faster than usual production, at a significantly lower cost per concept, while achieving a consideration lift equal to or better than business-as-usual creative. One of the spots generated natural-looking animal characters via AI, hard to obtain otherwise. Brigitte King, Chief Digital and Insights Officer, sums up the goal around the three Vs of content: volume, variety, velocity. Once a product and a campaign are framed, the group uses AI to rapidly develop thousands of content assets, adapted by market and by channel.",
+  "points_cles": [
+    "Production of genAI video ads with Hill's Pet Nutrition (three Vs: volume, variety, velocity).",
+    "Google Veo tool, in partnership with Google and Boston Consulting Group.",
+    "Videos produced 4 to 6 times faster, lower cost per concept, consideration lift equal or better.",
+    "Evidence level B, live status confirmed."
+  ],
+  "resultats": [
+    { "metrique": "Video production speed" },
+    { "metrique": "Consideration lift vs classic creative" },
+    { "metrique": "Cost per concept" }
+  ],
+  "niveau_preuve": {
+    "justification": "Platform case study (Think with Google) quantified on speed and consideration lift, with a named executive; corroborated by press coverage and MIT Sloan analysis of the group's genAI strategy. Speed quantified but no financial results, hence B."
+  },
+  "stack_technique": [
+    { "detail": "Google's video generation model, used to produce the spots, including the synthetic animal characters" },
+    { "detail": "technical support for the tool and the genAI pilot" },
+    { "detail": "consulting partner for the pilot, framing and cross-functional team" },
+    { "detail": "effectiveness measurement of generated creative against business-as-usual creative; protocol not publicly detailed" }
+  ],
+  "fonctionnement_operationnel": {
+    "cadence": "Per campaign for the master videos, then continuous production of adaptations at scale once the concept is validated.",
+    "opere_par": "Colgate-Palmolive marketing and digital team, with Google on the tool and Boston Consulting Group on framing the pilot.",
+    "signal_pilote": "The consideration lift of the creative and the cost per concept. If generated assets do not hold the effectiveness level of classic creative, the speed gain is worthless.",
+    "etapes": [
+      {
+        "etape": "Concept framing",
+        "detail": "Definition of the product, the message, and the creative framework of the campaign.",
+        "acteur": "marketing"
+      },
+      {
+        "etape": "Generation of the master videos",
+        "detail": "Production of spots via Veo, including synthetic characters.",
+        "acteur": "AI (Google Veo) + creative team"
+      },
+      {
+        "etape": "Effectiveness check",
+        "detail": "Measurement of the consideration lift against business-as-usual creative.",
+        "acteur": "insights team"
+      },
+      {
+        "etape": "Multi-market scaling",
+        "detail": "Adaptation into thousands of assets tailored by market and channel.",
+        "acteur": "AI + local marketing"
+      }
+    ]
+  },
+  "replication": {
+    "prerequis_data": [
+      "brand guidelines and rules per market",
+      "a creative testing setup (consideration lift, pretest)",
+      "structured campaign briefs"
+    ],
+    "prerequis_orga": [
+      "creative team able to steer genAI tools",
+      "governance on synthetic content and advertising compliance"
+    ],
+    "stack_possible": [
+      "video generation model (Veo, Runway, Sora)",
+      "adaptation / creative automation tools",
+      "advertising pretest solution"
+    ],
+    "premiere_etape": "Take an existing campaign, produce a genAI version in parallel, and compare cost, lead time, and consideration lift.",
+    "playbook": [
+      {
+        "action": "Choose the pilot brand and campaign, frame the message and the brand safeguards for generation.",
+        "livrable": "Validated campaign brief and creative framework"
+      },
+      {
+        "action": "Assemble the cross-functional team (creatives, insights, tech) and set up access to the video generation tool.",
+        "livrable": "Working team, tool configured on brand assets"
+      },
+      {
+        "action": "Produce one or two genAI spots alongside a classic production reference.",
+        "livrable": "Ready-to-broadcast videos, cost and lead time documented"
+      },
+      {
+        "action": "Pretest the consideration lift of the genAI spots against business-as-usual creative.",
+        "livrable": "Comparative report on cost / lead time / lift"
+      },
+      {
+        "action": "If the lift holds, industrialize the adaptation into assets tailored by market and channel.",
+        "livrable": "Multi-market asset library deployed"
+      }
+    ],
+    "equipe": "1 marketing lead + 1-2 creatives trained on genAI tools + 1 insights lead for the pretest, external consulting optional"
+  },
+  "statut_vivant": {
+    "note": "Pilot documented in late 2025 by Think with Google; the group describes an extension to the production of thousands of assets per market and channel. The group's genAI strategy is also documented by MIT Sloan."
+  },
+  "transposable_ue": {
+    "note": "Marketing content production by genAI, with no personal data at the core of the setup. Under the AI Act, transparency to plan for on generated content, notably the synthetic animal characters. The visuals must comply with local advertising rules per market."
+  }
+}

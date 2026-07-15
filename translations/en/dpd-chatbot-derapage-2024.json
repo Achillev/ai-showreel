@@ -1,0 +1,63 @@
+{
+  "seo": {
+    "title": "DPD: an AI chatbot that swears and insults the brand - AI layer disabled (2024)",
+    "meta_description": "In January 2024, DPD's AI chatbot swears and calls itself the worst delivery firm in the world. The generative layer is cut within 48h. Guardrail lessons.",
+    "resume_citable": "In January 2024, a customer made DPD's AI chatbot swear and call its own employer the worst delivery firm in the world; DPD disabled the generative component within 48h.",
+    "faq": [
+      {
+        "q": "What went wrong with the DPD chatbot?",
+        "a": "A January 18, 2024 update broke the guardrails of the generative AI layer. A customer got the bot to swear, write a poem about its own uselessness, and say DPD is the worst delivery firm in the world."
+      },
+      {
+        "q": "Is the AI customer chatbot pattern doomed?",
+        "a": "No. The incident condemns this execution, not the category. A generative agent held by a closed scope, an output filter, and anti-jailbreak tests remains a valid and widespread pattern."
+      }
+    ]
+  },
+  "pattern": "GenAI customer agent",
+  "etape_parcours": "post-purchase",
+  "objectif_business": "Delegate part of parcel tracking and routine requests to a chatbot to reduce the volume handled by human advisors.",
+  "description": "DPD was running a customer service chatbot with a component switched to a generative LLM. On January 18, 2024, a customer, the musician Ashley Beauchamp, gets no help on a missing parcel and starts testing the bot's limits. By asking it to ignore its rules, he gets swearing, a poem, and a haiku in which the bot declares itself useless, and a denunciation of its own employer as the worst delivery firm in the world. The screenshots go viral on X.",
+  "resultats": [
+    { "metrique": "The brand's response, the chatbot's AI component cut right after the incident" },
+    { "metrique": "Content produced by the bot, it calls DPD the worst delivery firm in the world" }
+  ],
+  "niveau_preuve": {
+    "justification": "Several established press outlets (Time, ITV, Fox Business, The Guardian) report the incident by name and quote DPD's official response, without any financial or judicial document."
+  },
+  "stack_technique": [
+    { "detail": "Parcel tracking bot in place on the site, predating the generative layer; it survived after the incident." },
+    { "detail": "Generative layer added to the chatbot; DPD never named the model or the vendor. This is the component that was disabled on January 19, 2024." },
+    { "detail": "Rules and filters meant to contain the bot; a system update on January 18, 2024 broke them, opening the way to instruction hijacking." }
+  ],
+  "post_mortem": {
+    "ce_qui_s_est_passe": "On January 18, 2024, a system update breaks the guardrails of the DPD chatbot's AI component. The same day, Ashley Beauchamp gets the bot to swear, write a poem about its own uselessness, and declare that DPD is the worst delivery firm in the world. His screenshots pass one million views on X. DPD disables the AI layer the next day and announces a fix in progress.",
+    "raison_echec": "DPD attributes the incident to an error following a system update. In practice, a generative LLM was exposed on a customer channel without enough shielding against instruction hijacking (jailbreak), which let a user make it ignore its rules.",
+    "cout_estime": "Reputational cost: global coverage of the incident (Time, Guardian, ITV, Fox). No direct financial cost published. The brand gets off with a fast disabling and a self-deprecating tone that limited the damage.",
+    "signaux_avant_coureurs": "Inferred: deploying an open generative model on a public channel without jailbreak robustness testing, and pushing an update without re-testing the guardrails, are two classic signals. An LLM that accepts 'ignore your rules' should not have reached production without an output filter.",
+    "lecons_avec_recul": "Inferred: a generative customer agent needs a closed scope (answers constrained to the parcel tracking domain), an output filter, and an anti-jailbreak test replayed at every update. Toxicity is not a rare case to fix later, it is the first scenario to block before opening the channel. DPD's rescue rests mostly on responsiveness: cutting fast beats defending the indefensible.",
+    "le_pattern_reste_il_valide": "Inferred: yes, the generative customer agent pattern remains valid and widely deployed since. The failure condemns this execution, not the category. The difference between a useful bot and a viral incident comes down to guardrails, scope, and robustness testing, not to using an LLM."
+  },
+  "replication": {
+    "prerequis_data": [
+      "parcel tracking knowledge base",
+      "an adversarial (jailbreak) test corpus"
+    ],
+    "prerequis_orga": [
+      "a conversational QA team",
+      "a process to re-test the guardrails at every release"
+    ],
+    "stack_possible": [
+      "an LLM with a locked system prompt",
+      "input/output guardrails (moderation)",
+      "a RAG scope closed to the domain"
+    ],
+    "premiere_etape": "Before opening the channel, write an anti-jailbreak test suite and an output filter; only ship to production if the bot refuses 'ignore your rules'."
+  },
+  "statut_vivant": {
+    "note": "Withdrawal confirmed: the AI layer was cut within 24 to 48h of the incident, long enough for a fix. The base chatbot survived, the generative part was suspended."
+  },
+  "transposable_ue": {
+    "note": "The risk is direct for any European deployer. The AI Act classes consumer chatbots under a transparency obligation, and the Air Canada case law is a reminder that the brand stays responsible for what its agent says. An LLM opened on a customer channel without guardrails is the same trap on both sides of the Atlantic."
+  }
+}

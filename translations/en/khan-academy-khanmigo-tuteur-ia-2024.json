@@ -1,0 +1,110 @@
+{
+  "seo": {
+    "title": "Khan Academy Khanmigo: GPT-4 genAI tutor reaching 2 million users (2024)",
+    "meta_description": "Khanmigo, Khan Academy's GPT-4 genAI tutor, reached 2 million users in 2024-25, including 770,000 students in US district partnerships, with signups up 731%.",
+    "resume_citable": "Khanmigo, Khan Academy's GPT-4 genAI tutor, reached 2.0 million users worldwide in 2024-25, including 770,000 students in US district partnerships, with signups growing 731% year over year.",
+    "faq": [
+      {
+        "q": "What is Khanmigo?",
+        "a": "A GPT-4 genAI tutor that guides the student through questioning rather than giving the answer, paired with a teacher assistant that helps prepare lessons and grade work."
+      },
+      {
+        "q": "What is its deployment scale?",
+        "a": "2.0 million users worldwide in 2024-25 according to Khan Academy's annual report, including 770,000 students through district partnerships in the United States, with expansion into India, Brazil, and the Philippines."
+      }
+    ]
+  },
+  "pattern": "genAI conversational tutor at the scale of a school district",
+  "etape_parcours": "Consideration",
+  "objectif_business": "Get entire school districts to adopt Khanmigo as a student tutor and teacher assistant, in order to anchor Khan Academy in daily classroom use and convert free consumer usage into paid district partnerships.",
+  "description": "Khanmigo is a genAI tutor built on GPT-4. For the student, it guides step by step without giving the answer directly, in the spirit of Socratic questioning, and follows the context of the exercise in progress. For the teacher, Khanmigo for Teachers prepares lesson plans, drafts instructions, and helps with grading. The product is sold to districts (the Khan Academy Districts program) with a tracking dashboard, and remains freely available to individual teachers in more than 70 countries.",
+  "points_cles": ["A genAI conversational tutor that guides the student without giving the answer.", "Khanmigo built on OpenAI GPT-4, with student and teacher versions.", "2.0 million users in 2024-25, including 770,000 students in US districts.", "+731% signups year over year, evidence level B confirmed."],
+  "resultats": [
+    { "metrique": "Khanmigo users worldwide (SY24-25)" },
+    { "metrique": "US students in district partnerships using Khanmigo" },
+    { "metrique": "Signup growth (YoY, SY24-25 vs SY23-24)" }
+  ],
+  "niveau_preuve": {
+    "justification": "Deployment figures published by Khan Academy in its official SY24-25 annual report (primary source from the subject brand), corroborated by a state government announcement (New Hampshire) confirming a real deployment at the state level."
+  },
+  "stack_technique": [
+    { "detail": "language model powering the tutor and the teacher assistant since the March 2023 launch" },
+    { "detail": "Khan Academy's product layer: tracking of the exercise context, Socratic prompts, student and teacher versions" },
+    { "detail": "rules preventing the answer from being given directly and filtering content unsuitable for minors" },
+    { "detail": "aggregate usage tracking for district partnerships (Khan Academy Districts program)" }
+  ],
+  "fonctionnement_operationnel": {
+    "cadence": "Real time at every student or teacher interaction; deployment in waves following the school calendar (start of year, semesters).",
+    "opere_par": "Khan Academy's Product/AI team for the system; on the client side, the district administrator provisions the accounts and teachers drive classroom use.",
+    "signal_pilote": "The quality of step-by-step guidance: the tutor must steer without giving the answer. If the LLM releases the solution or makes a mistake, the educational value and the teacher's trust collapse.",
+    "etapes": [
+      {
+        "etape": "District provisioning",
+        "detail": "The district signs the partnership, creates student and teacher accounts, and sets up access.",
+        "acteur": "client"
+      },
+      {
+        "etape": "Student interaction",
+        "detail": "The student works through an exercise and calls on Khanmigo, which asks questions and guides rather than answering.",
+        "acteur": "AI"
+      },
+      {
+        "etape": "Teacher support",
+        "detail": "The teacher generates lesson plans and instructions through Khanmigo for Teachers and tracks student activity.",
+        "acteur": "marketing"
+      },
+      {
+        "etape": "Guardrails and tracking",
+        "detail": "Khan Academy applies guardrails on outputs and tracks aggregate usage for the district.",
+        "acteur": "data team"
+      }
+    ]
+  },
+  "replication": {
+    "prerequis_data": [
+      "structured educational content aligned to the curriculum",
+      "context of the exercise in progress (question, answer, level)",
+      "strict guardrails on LLM outputs (do not give the answer, no content unsuitable for minors)"
+    ],
+    "prerequis_orga": [
+      "sales model for institutions (districts, schools)",
+      "student data governance and compliance",
+      "process for continuous evaluation of educational quality"
+    ],
+    "stack_possible": [
+      "LLM (OpenAI, Anthropic, or equivalent)",
+      "Socratic prompt and guardrail layer",
+      "tracking dashboard for the institution"
+    ],
+    "premiere_etape": "Define the central educational guardrail (the tutor guides without giving the answer) and validate it on one subject before opening a pilot to a school.",
+    "playbook": [
+      {
+        "action": "Define the central educational guardrail (guide without giving the answer) and the subject scope",
+        "livrable": "Tutor spec + answer evaluation set"
+      },
+      {
+        "action": "Connect the LLM to the educational content and the context of the exercise in progress",
+        "livrable": "Working prototype on one subject"
+      },
+      {
+        "action": "Evaluate educational quality and lock down compliance for minors' data",
+        "livrable": "Evaluation report + validated legal framework"
+      },
+      {
+        "action": "Pilot in a school with volunteer teachers, student and teacher versions",
+        "livrable": "Teacher feedback + real usage metrics"
+      },
+      {
+        "action": "Build the institution dashboard and the sales model for schools",
+        "livrable": "Institutional offer ready, sales cycle underway"
+      }
+    ],
+    "equipe": "1 PM + 2 devs + 1 education expert + 1 legal counsel (minors' data)"
+  },
+  "statut_vivant": {
+    "note": "Deployment expanding into SY25-26 (Districts blog), new countries (India, Brazil, Philippines), and US states. Feature active and central to the product."
+  },
+  "transposable_ue": {
+    "note": "genAI tutor aimed at minors in a school context. GDPR and student data protection (equivalent to FERPA) are at the heart of the matter; the AI Act classifies education among high-risk uses, which requires transparency, human oversight, and evaluation. Khan Academy keeps the teacher in the loop, which helps compliance."
+  }
+}

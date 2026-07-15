@@ -1,0 +1,115 @@
+{
+  "seo": {
+    "title": "Lufthansa Group: Cognigy conversational agents - 16 million conversations per year (2024)",
+    "meta_description": "The Lufthansa group runs its customer service assistants on Cognigy and handles 16 million conversations per year, with peaks at 375,000 interactions per day, in several languages.",
+    "resume_citable": "The Lufthansa group handles 16 million conversations per year on the Cognigy platform, with peaks of up to 375,000 interactions per day, for rebooking and multilingual customer service.",
+    "faq": [
+      {
+        "q": "What technology powers Lufthansa's AI customer service?",
+        "a": "The Cognigy conversational AI platform, with real-time translation, for the Lufthansa hub airlines, Austrian Airlines and SWISS."
+      },
+      {
+        "q": "What volume does Lufthansa's AI handle?",
+        "a": "About 16 million conversations per year, with peaks of up to 375,000 interactions in a single high-demand day."
+      }
+    ]
+  },
+  "pattern": "multilingual customer service conversational agent",
+  "etape_parcours": "post-purchase",
+  "objectif_business": "Replace a rigid internal chatbot, overwhelmed by demand spikes during and after covid, with a platform able to absorb millions of conversations in several languages and free up agents for complex cases.",
+  "description": "The Lufthansa group runs its digital assistants on the Cognigy platform for the hub airlines (Lufthansa, Austrian Airlines, SWISS). A customer can ask a question on the site, in live chat, by SMS or by voice, in their language, and the agent handles common tasks: rebooking, travel information, alternative flight search, refund request. Real-time translation makes it possible to serve an international audience on a single foundation. When the request goes beyond what can be automated, it is handed off to a human advisor.",
+  "points_cles": [
+    "Multilingual customer service conversational agents across the Lufthansa hub airlines.",
+    "Cognigy.AI platform, NLU, real-time translation, chat, SMS and voice channels.",
+    "16 million conversations per year, peaks of up to 375,000 interactions per day.",
+    "Evidence B, confirmed status: Cognigy case study and interview with the product manager."
+  ],
+  "resultats": [
+    { "metrique": "Conversations handled per year with the AI" },
+    { "metrique": "Interaction peak on a high-demand day" },
+    { "metrique": "Reported annual split: about 10M in chat, over 1M in voice" }
+  ],
+  "niveau_preuve": {
+    "justification": "Quantified Cognigy platform case study (annual volume and daily peak), complemented by a public interview with the Lufthansa product manager (VUX World) detailing the chat and voice scale. Hard figures on the vendor side, corroborated by the executive's statements."
+  },
+  "stack_technique": [
+    { "detail": "enterprise conversational AI platform (NLU, dialog orchestration) that powers the hub airlines' assistants, 16 million conversations per year" },
+    { "detail": "the same conversational foundation exposed in live chat (about 10M interactions per year), SMS and voice (over 1M per year)" },
+    { "detail": "makes it possible to serve a multilingual international audience with a single dialog foundation" },
+    { "detail": "real-time access to booking records, flight status and inventory for rebooking; the critical signal during a crisis" }
+  ],
+  "fonctionnement_operationnel": {
+    "cadence": "Real time, continuous, with seasonal and crisis peaks (weather, strikes) that multiply the volume.",
+    "opere_par": "Lufthansa group's Digital Assistants team, on the Cognigy platform.",
+    "signal_pilote": "The customer's intent crossed with the state of their booking and the availability of alternative flights. If the inventory and flight-status feed degrades during a crisis, the rebooking proposals become wrong just as the volume explodes.",
+    "etapes": [
+      {
+        "etape": "Multichannel entry",
+        "detail": "The customer writes or speaks on the site, in live chat, by SMS or by voice, in their language.",
+        "acteur": "customer"
+      },
+      {
+        "etape": "Understanding and translation",
+        "detail": "The agent identifies the intent and applies real-time translation for a single multilingual foundation.",
+        "acteur": "AI"
+      },
+      {
+        "etape": "Request handling",
+        "detail": "Rebooking, travel information, alternative flight search or refund are executed or prepared.",
+        "acteur": "AI"
+      },
+      {
+        "etape": "Human escalation",
+        "detail": "Complex or sensitive cases are passed to an advisor with the conversation context.",
+        "acteur": "AI"
+      }
+    ]
+  },
+  "replication": {
+    "prerequis_data": [
+      "real-time access to flight status and inventory",
+      "access to booking records",
+      "multilingual knowledge base"
+    ],
+    "prerequis_orga": [
+      "product team dedicated to the assistants",
+      "escalation process to advisors",
+      "ability to hold the load during crisis peaks"
+    ],
+    "stack_possible": [
+      "enterprise conversational AI platform",
+      "real-time translation component",
+      "connectors to booking systems"
+    ],
+    "equipe": "1 assistants product manager + 2-3 conversational and integration devs + the customer service teams for the escalation journeys",
+    "playbook": [
+      {
+        "action": "Frame the priority use cases (rebooking, travel information, refund) on one channel and one language",
+        "livrable": "v1 scope + targeted conversational journeys"
+      },
+      {
+        "action": "Connect the booking systems, flight status and inventory",
+        "livrable": "Real-time connectors tested, including in degraded mode"
+      },
+      {
+        "action": "Build and launch the agent in live chat with escalation to an advisor, conversation context passed along",
+        "livrable": "v1 agent in production on one channel, resolution rate measured"
+      },
+      {
+        "action": "Extend languages via real-time translation and add SMS then voice",
+        "livrable": "Multilingual multichannel foundation in production"
+      },
+      {
+        "action": "Test load handling on peaks (weather, strikes) and industrialize measurement",
+        "livrable": "Capacity plan + volume, resolution, AHT dashboard"
+      }
+    ],
+    "premiere_etape": "Deploy an agent on one channel (live chat) and one language for rebooking, then extend to the other languages and channels."
+  },
+  "statut_vivant": {
+    "note": "Agents in production across the Lufthansa hub airlines, with an annual volume on the order of 16 million conversations documented by the vendor."
+  },
+  "transposable_ue": {
+    "note": "Already deployed in the EU (Lufthansa group airlines, Austrian Airlines, SWISS). The GDPR and AI Act constraints are therefore built into execution: AI disclosure, consent management for voice, minimization of the booking data processed."
+  }
+}

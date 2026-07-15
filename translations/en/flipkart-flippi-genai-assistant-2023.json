@@ -1,0 +1,128 @@
+{
+  "seo": {
+    "title": "Flipkart: Flippi genAI shopping assistant - 1.3 million active users (2023)",
+    "meta_description": "Flippi, Flipkart's conversational genAI shopping assistant, reaches 1.3 million engaged active users, roughly 1% conversion, and 68% positive reviews.",
+    "resume_citable": "Launched in 2023, Flippi, Flipkart's conversational genAI shopping assistant, runs in production with 1.3 million engaged monthly active users, a last-touch conversion of roughly 1%, and 68% positive reviews.",
+    "faq": [
+      {
+        "q": "What is Flippi?",
+        "a": "It is Flipkart's conversational genAI shopping assistant, launched in October 2023: the customer describes their need in natural language and receives products to compare."
+      },
+      {
+        "q": "Is it really deployed at scale?",
+        "a": "Yes. Flipkart's technical paper describes it in production, iterated through A/B testing, with 1.3 million engaged monthly active users."
+      }
+    ]
+  },
+  "pattern": "conversational genAI shopping assistant",
+  "etape_parcours": "consideration",
+  "objectif_business": "Bring online shopping closer to the experience of an in-store salesperson: the customer describes what they want in natural language, and the assistant helps them discover, compare, and choose, to remove product discovery friction and convert more.",
+  "description": "Flippi is Flipkart's conversational genAI shopping assistant, launched on October 4, 2023 ahead of the major Big Billion Days event. The customer says what they are looking for and receives options to compare, as if talking to a salesperson. Under the hood, a modular architecture chains query rewriting, intent detection, RAG, entity recognition, and context reduction to handle product discovery, personalization, offer identification, and comparison. According to the technical paper published by the Flipkart teams, the system runs in production with A/B testing iteration cycles, tested on search, browse, and category pages. It reaches 1.3 million engaged monthly active users, a last-touch conversion of roughly 1%, and 68% positive reviews (thumbs up).",
+  "points_cles": [
+    "Conversational genAI shopping assistant (rewriting, intent, RAG, entities).",
+    "In-house modular Flippi architecture backed by OpenAI, iterated through A/B testing.",
+    "1.3 million engaged monthly active users, roughly 1% conversion, 68% positive reviews.",
+    "Evidence level B, confirmed active status."
+  ],
+  "resultats": [
+    {
+      "metrique": "Engaged monthly active users"
+    },
+    {
+      "metrique": "Last-touch conversion"
+    },
+    {
+      "metrique": "Satisfaction (share of thumbs up)"
+    },
+    {
+      "metrique": "Improvement in the ability to answer the session over the period"
+    }
+  ],
+  "niveau_preuve": {
+    "justification": "Quantified technical paper published by the Flipkart teams (official interested source, production measurements and A/B tests), corroborated by established Indian press on the launch and positioning. The figures come from the brand, not a third-party audit, which places it at B."
+  },
+  "stack_technique": [
+    {
+      "detail": "Underlying generative model; the assistant was presented as ChatGPT-powered at launch, without the exact model version being published"
+    },
+    {
+      "detail": "Pipeline built by the Flipkart teams: query rewriting, intent detection, entity recognition, context reduction"
+    },
+    {
+      "detail": "Retrieval of products, offers, and comparisons from the indexed catalog to compose the responses"
+    },
+    {
+      "detail": "Production iteration cycles on search, browse, and category pages, with conversion and satisfaction measurement"
+    }
+  ],
+  "fonctionnement_operationnel": {
+    "cadence": "Real time on each shopping session, with A/B testing iteration",
+    "opere_par": "Flipkart's AI and product team that maintains the modular architecture and the models",
+    "signal_pilote": "The ability to answer the session and the conversion that follows. If the catalog and offers are not well indexed for RAG, the assistant gives vague or wrong answers.",
+    "etapes": [
+      {
+        "etape": "Expressing the need",
+        "detail": "The customer describes what they are looking for in natural language in search or the assistant.",
+        "acteur": "customer"
+      },
+      {
+        "etape": "Understanding the query",
+        "detail": "Rewriting, intent detection, and entity recognition structure the request.",
+        "acteur": "AI"
+      },
+      {
+        "etape": "Retrieval and response",
+        "detail": "RAG retrieves products, offers, and comparisons from the catalog and composes the response.",
+        "acteur": "AI"
+      },
+      {
+        "etape": "Iteration",
+        "detail": "The teams measure conversion, satisfaction, and session coverage and adjust through A/B tests.",
+        "acteur": "data team"
+      }
+    ]
+  },
+  "replication": {
+    "prerequis_data": [
+      "Rich, well-structured product catalog",
+      "Offer and promotion base indexed for RAG",
+      "Session history to measure coverage and conversion"
+    ],
+    "prerequis_orga": [
+      "Production A/B testing framework",
+      "AI transparency rule toward the customer",
+      "Team able to maintain a modular pipeline (intent, RAG, entities)"
+    ],
+    "stack_possible": [
+      "Generative LLM",
+      "RAG layer over the catalog and offers",
+      "Intent detection and entity recognition modules"
+    ],
+    "premiere_etape": "Cleanly index the catalog and offers for RAG, then launch a pilot on a high-traffic category with conversion measurement.",
+    "playbook": [
+      {
+        "action": "Index the catalog, offers, and product attributes for RAG; define the pilot scope on a high-traffic category.",
+        "livrable": "Queryable catalog index and validated pilot scope"
+      },
+      {
+        "action": "Assemble the pipeline: query rewriting, intent detection, RAG, entity recognition, with a market LLM via API.",
+        "livrable": "Working assistant in a test environment on the pilot category"
+      },
+      {
+        "action": "Launch in an A/B test on search and the pilot category pages, with a clear notice that the customer is talking to an AI.",
+        "livrable": "First production A/B test with conversion, satisfaction, and session coverage measurement"
+      },
+      {
+        "action": "Iterate on the uncovered cases (vague answers, poorly recognized entities), then extend to other categories.",
+        "livrable": "Quantified pilot review and per-category extension plan"
+      }
+    ],
+    "equipe": "2-3 ML engineers + 1 PM + 1 data analyst for measurement, backed by the catalog team"
+  },
+  "statut_vivant": {
+    "note": "The 2025 technical paper describes Flippi as a system in production, iterated through A/B testing and exposed during major commercial events."
+  },
+  "transposable_ue": {
+    "note": "A conversational genAI shopping assistant is transposable to any e-commerce. The India-specific part is multilingualism (Flipkart serves in English and eleven other languages) and the market context. In the EU, the AI Act requires telling the customer they are talking to an AI, and GDPR governs the use of browsing and purchase history to personalize responses."
+  }
+}

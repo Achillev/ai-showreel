@@ -1,0 +1,110 @@
+{
+  "seo": {
+    "title": "Prose: algorithm-formulated hair care - 55% repeat rate, 75% subscription (2017)",
+    "meta_description": "Prose formulates custom hair care by algorithm from a 25-question quiz: 55% repeat rate over 12 months, 75% of revenue from subscriptions.",
+    "resume_citable": "Prose formulates custom hair care by algorithm from a questionnaire, with a space of 79 trillion formulations, a 55 percent repeat rate over twelve months (vs ~30 percent in the sector) and 75 percent of revenue from subscriptions.",
+    "faq": [
+      {
+        "q": "How does Prose personalize its products?",
+        "a": "A 25-question quiz feeds an algorithm that composes a custom formula from tens of trillions of combinations, then manufactured to order."
+      },
+      {
+        "q": "What is the evidence of Prose's repeat rate?",
+        "a": "55 percent of the more than 2 million customers who completed the questionnaire made repeat purchases in the latest twelve months, versus a sector average near 30 percent, and 75 percent of revenue comes from subscriptions."
+      }
+    ]
+  },
+  "pattern": "algorithm-personalized product formulation from a questionnaire",
+  "etape_parcours": "purchase",
+  "stack_technique": [
+    { "detail": "In-house engine (rules + machine learning) that converts questionnaire answers into a formula, across more than 160 ingredients and up to 79 trillion combinations." },
+    { "detail": "25-question quiz (hair, scalp, lifestyle, zip code) that feeds the algorithm." },
+    { "detail": "Automated line capable of producing up to 30,000 custom bottles per day." },
+    { "detail": "Structured usage feedback that adjusts the formula for the next repeat order." }
+  ],
+  "objectif_business": "Replace the generic formula with a formula made for each customer, to beat standard products on perceived performance and establish repeat purchase through subscription.",
+  "description": "Prose has customers fill out an online questionnaire (25 questions on hair type, scalp condition, lifestyle, down to zip code for the local environment), then its algorithm composes a custom formula. The system can generate up to 79 trillion formulations from more than 160 ingredients, and products are made to order on an automated line capable of producing up to 30,000 bottles per day. In 2020, Prose was on track for 50 million dollars in revenue, more than triple the prior year; more than 2 million customers had completed the questionnaire and 55 percent of them had made a repeat purchase in the latest twelve months, versus a sector average closer to 30 percent. The fund Forerunner Ventures indicates that today 75 percent of Prose's revenue comes from subscriptions. A double-blind clinical study run by the independent organization Intertek on 206 participants over 28 days compared Prose products with six store references.",
+  "resultats": [
+    { "metrique": "Repeat purchase over 12 months, vs ~30% sector average" },
+    { "metrique": "2020 revenue, more than triple the prior year" },
+    { "metrique": "Share of revenue from subscription" },
+    { "metrique": "Customers who completed the questionnaire" }
+  ],
+  "niveau_preuve": {
+    "justification": "Growth, repeat, and volume figures reported by Forbes citing the company and its CEO by name, complemented by the Forerunner Ventures investor page on the subscription share. Established press plus a concordant investor source, but no public financial results, hence C."
+  },
+  "fonctionnement_operationnel": {
+    "cadence": "Made to order for manufacturing; recurring re-subscription; formula refinement with each customer feedback.",
+    "opere_par": "Data science team and chemists for the algorithm and formulas, operations for on-demand manufacturing, CRM for the subscription.",
+    "signal_pilote": "The questionnaire answers and usage feedback (Review & Refine feature). Without structured feedback, the formula does not improve and repeat purchase collapses.",
+    "etapes": [
+      {
+        "etape": "Online consultation",
+        "detail": "25 questions on hair, scalp, lifestyle, and environment (zip code).",
+        "acteur": "customer"
+      },
+      {
+        "etape": "Algorithmic formulation",
+        "detail": "The algorithm composes a formula from a space of tens of trillions of possibilities.",
+        "acteur": "AI / algorithm"
+      },
+      {
+        "etape": "Made-to-order manufacturing",
+        "detail": "The automated line produces the custom bottle (up to 30,000 per day).",
+        "acteur": "operations"
+      },
+      {
+        "etape": "Feedback and refinement",
+        "detail": "The customer rates the product, the formula adjusts for the next repeat order.",
+        "acteur": "customer + algorithm"
+      }
+    ]
+  },
+  "replication": {
+    "prerequis_data": [
+      "structured questionnaire converting answers into formula attributes",
+      "ingredient reference and compatibility rules",
+      "product feedback loop"
+    ],
+    "prerequis_orga": [
+      "made-to-order manufacturing capacity or a flexible contract manufacturer",
+      "chemists / R&D to validate the formulas",
+      "subscription engine and CRM"
+    ],
+    "stack_possible": [
+      "personalization engine / rules + ML",
+      "modular production line",
+      "e-commerce platform with subscription"
+    ],
+    "premiere_etape": "Model the answers-to-formula mapping on a simple category, then test the industrial feasibility of made-to-order manufacturing.",
+    "playbook": [
+      {
+        "action": "Model the answers-to-formula mapping on a simple category, with the chemists / R&D.",
+        "livrable": "Customer-attributes-to-ingredients matrix validated by R&D."
+      },
+      {
+        "action": "Build the online questionnaire and the v1 formulation engine (rules + ML), with ingredient compatibility rules.",
+        "livrable": "Quiz-to-formula prototype testable internally."
+      },
+      {
+        "action": "In parallel, validate industrial feasibility: flexible contract manufacturer or a made-to-order mini-line.",
+        "livrable": "Pilot on-demand production capacity."
+      },
+      {
+        "action": "Launch a D2C pilot on a segment, with subscription and CRM.",
+        "livrable": "First customer cohort with repeat-purchase measurement."
+      },
+      {
+        "action": "Connect the product feedback loop (Review & Refine type) and scale up capacity.",
+        "livrable": "Repeat rate measured vs sector benchmark and an industrial capacity plan."
+      }
+    ],
+    "equipe": "1-2 data scientists + 2-3 chemists / R&D + 1 PM + industrial operations + CRM for the subscription."
+  },
+  "statut_vivant": {
+    "note": "Prose remains active in D2C (online store and quiz), clinical study and sector coverage in 2025. Subscription model still at the core of revenue according to Forerunner Ventures."
+  },
+  "transposable_ue": {
+    "note": "D2C made-to-order model based on a questionnaire. The data collected (hair type, scalp, zip code, lifestyle) is personal but not very sensitive; GDPR applies to profiling and retention. The real constraint on export is industrial: reproducing the on-demand manufacturing chain."
+  }
+}

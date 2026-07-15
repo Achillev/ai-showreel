@@ -1,0 +1,120 @@
+{
+  "seo": {
+    "title": "Intuit: in-house genAI (GenOS, Intuit Assist) for its growth - filing time cut 12% (2025)",
+    "meta_description": "Intuit runs its growth on its own genAI system GenOS and Intuit Assist: TurboTax filing time cut 12%, experts 20% faster, 15% revenue growth.",
+    "resume_citable": "Intuit uses its own genAI system GenOS and Intuit Assist in TurboTax and QuickBooks: filing time cut 12%, experts 20% faster, 15% revenue growth tied to AI.",
+    "faq": [
+      {
+        "q": "How does Intuit use AI for its own growth?",
+        "a": "Through GenOS and Intuit Assist integrated into TurboTax and QuickBooks, to reduce journey friction, speed up experts, and convert its 100 million customers better."
+      },
+      {
+        "q": "What quantified results does Intuit tie to this AI?",
+        "a": "A 12% reduction in filing time on TurboTax's done-for-you product, experts 20% faster, and 15% revenue growth."
+      }
+    ]
+  },
+  "pattern": "done-for-you genAI assistant integrated into the product to reduce friction and convert",
+  "etape_parcours": "purchase",
+  "objectif_business": "Reduce the friction that makes people abandon a tax or accounting journey, and increase the value delivered by experts, to convert and retain its 100 million customers better. Intuit runs its growth on its own genAI system, GenOS and Intuit Assist.",
+  "description": "Intuit built GenOS, its proprietary genAI operating system, and Intuit Assist, the assistant that comes from it, integrated into TurboTax and QuickBooks. TurboTax's done-for-you product, mobile and AI-driven, pre-fills and guides the taxpayer to reduce the time spent filing. On the assisted-service side, AI supports human experts so they handle a case faster. CEO Sasan Goodarzi ties revenue growth to this AI strategy. The scope covers about 100 million customers.",
+  "points_cles": [
+    "Done-for-you genAI assistant integrated into TurboTax and QuickBooks to reduce friction.",
+    "Built on GenOS and Intuit Assist, a proprietary in-house genAI system.",
+    "Filing time cut 12%, experts about 20% faster.",
+    "15% revenue growth tied to AI, evidence A confirmed."
+  ],
+  "resultats": [
+    { "metrique": "Reduction in the average time spent filing (TurboTax done-for-you)" },
+    { "metrique": "Time experts spend preparing a return (full-service)" },
+    { "metrique": "Revenue growth tied to the AI strategy, year over year" }
+  ],
+  "niveau_preuve": {
+    "justification": "Figures put forward by CEO Sasan Goodarzi at the earnings release (Q3 FY2025) and documented in trade press, with the genAI deployment (Intuit Assist) confirmed by Intuit's investor releases."
+  },
+  "stack_technique": [
+    { "detail": "Intuit's proprietary genAI operating system, the common foundation for the group's AI uses" },
+    { "detail": "genAI assistant derived from GenOS, integrated into TurboTax and QuickBooks (pre-fill, guidance, expert support)" },
+    { "detail": "combination of proprietary models and third-party LLMs; the exact models are not detailed in the sources" },
+    { "detail": "imported documents and the customer's financial history, the fuel for the done-for-you pre-fill" }
+  ],
+  "fonctionnement_operationnel": {
+    "cadence": "Real time within the product journey, with strong tax seasonality for TurboTax",
+    "opere_par": "Intuit's product and data science teams, on GenOS and Intuit Assist",
+    "signal_pilote": "The customer's first-party financial data and imported documents. Without well-structured proprietary data, the done-for-you pre-fill degrades and the time savings disappear.",
+    "etapes": [
+      {
+        "etape": "Data import and understanding",
+        "detail": "Intuit Assist retrieves and interprets the customer's documents and financial history.",
+        "acteur": "AI"
+      },
+      {
+        "etape": "Pre-fill and guidance",
+        "detail": "The done-for-you product pre-fills the return and guides the remaining steps.",
+        "acteur": "AI"
+      },
+      {
+        "etape": "Expert support",
+        "detail": "For full-service, the AI prepares the case so the human expert handles it faster.",
+        "acteur": "AI and expert"
+      },
+      {
+        "etape": "Validation and filing",
+        "detail": "The customer or the expert validates and files the return.",
+        "acteur": "Customer / expert"
+      },
+      {
+        "etape": "Measurement",
+        "detail": "Completion time, expert time, and conversion are tracked and tied to growth.",
+        "acteur": "Product team"
+      }
+    ]
+  },
+  "replication": {
+    "prerequis_data": [
+      "structured first-party customer data",
+      "importable, usable documents",
+      "instrumentation of completion time"
+    ],
+    "prerequis_orga": [
+      "product data science team",
+      "AI-support loop for human operators",
+      "governance over sensitive data"
+    ],
+    "stack_possible": [
+      "genAI assistant integrated into the product (custom or LLM + RAG)",
+      "first-party data pipeline",
+      "funnel measurement layer"
+    ],
+    "premiere_etape": "Target a high-abandonment step of the journey and connect an assistant that pre-fills and guides, with measurement of completion time.",
+    "playbook": [
+      {
+        "action": "Target a high-abandonment step of the journey and instrument completion time",
+        "livrable": "Quantified baseline (time, abandonment rate) on the target step"
+      },
+      {
+        "action": "Build the first-party data and document-import pipeline, with the governance that goes with it",
+        "livrable": "Structured customer data usable by the assistant"
+      },
+      {
+        "action": "Develop the assistant that pre-fills and guides on this narrow scope",
+        "livrable": "MVP in internal beta with measurement of pre-fill quality"
+      },
+      {
+        "action": "Launch a controlled test on a segment of real customers",
+        "livrable": "Completion time savings and conversion impact measured vs a control group"
+      },
+      {
+        "action": "Extend to human-operator support (pre-prepared cases) and generalize",
+        "livrable": "Assistant in production + tracking of expert productivity"
+      }
+    ],
+    "equipe": "1 PM + 2-4 ML/backend engineers + 1 designer + compliance (sensitive financial data)"
+  },
+  "statut_vivant": {
+    "note": "Intuit continues to invest in GenOS and Intuit Assist as a strategic focus (agentic AI 2025), and explicitly ties it to its growth in its investor communications."
+  },
+  "transposable_ue": {
+    "note": "genAI assistant embedded in a consumer and SMB financial product. In the EU, GDPR on personal financial data, and AI Act vigilance on uses close to taxation and credit. The pattern (reducing onboarding and completion friction with AI) remains transposable outside the US tax scope."
+  }
+}

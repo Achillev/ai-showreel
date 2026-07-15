@@ -1,0 +1,107 @@
+{
+  "seo": {
+    "title": "Uber: machine-learning upfront pricing - average fares up more than 40% over three years (2023)",
+    "meta_description": "Uber computes each ride's upfront price with machine learning from time, distance, and route demand; average fares climbed more than 40% in three years.",
+    "resume_citable": "Uber sets each ride's upfront price via a machine-learning model combining time, distance, and route demand, a pricing mode generalized since 2022.",
+    "faq": [
+      {
+        "q": "How does Uber compute the price shown before the ride?",
+        "a": "A machine-learning model combines estimated time and distance, demand patterns on the route at that hour, and the aggregated response of drivers to set a single upfront price."
+      },
+      {
+        "q": "What is Uber's route-based pricing?",
+        "a": "An extension of upfront pricing that draws on drivers' aggregated responses to similar requests and on long-term demand by zone."
+      }
+    ]
+  },
+  "pattern": "dynamic / upfront pricing through machine learning",
+  "etape_parcours": "purchase",
+  "objectif_business": "Show, before booking, a per-route price that balances supply and demand and optimizes the ride's revenue, while keeping a high matching rate.",
+  "description": "Since 2022, Uber has shown an upfront price computed before booking from the estimated time and distance from origin to destination, and from demand patterns for that route at that hour. Route-based pricing extends this logic by drawing on the aggregated, anonymized response of drivers to similar requests and on long-term demand by zone. Bloomberg, echoed by Slate, reports that Uber uses machine learning to compute fares beyond time and distance alone, based on what the platform knows or assumes about the rider.",
+  "resultats": [
+    { "metrique": "Use of machine learning for pricing" },
+    { "metrique": "Rise in average fares (Uber and Lyft, over three years)" },
+    { "metrique": "Basis of the upfront price for the rider" }
+  ],
+  "niveau_preuve": {
+    "justification": "Official Uber pages describing the mechanism, plus Bloomberg reporting echoed by established press attributing machine learning to Uber by name. No financial figure isolating the effect of ML on revenue."
+  },
+  "stack_technique": [
+    { "detail": "Prediction of time and distance per route and of demand patterns by hour; exact algorithms not published." },
+    { "detail": "Computation of a single price before booking, extended by the aggregated, anonymized response of drivers to similar requests and long-term demand by zone." },
+    { "detail": "Traffic, zone-level demand, and driver-availability data served in real time to the pricing and matching engine." }
+  ],
+  "fonctionnement_operationnel": {
+    "cadence": "Real time, a price computed on each ride request.",
+    "opere_par": "Uber's marketplace and pricing team, on an in-house stack.",
+    "signal_pilote": "The demand predicted per route and per hour, crossed with estimated time and distance and the aggregated driver response. Without reliable traffic and demand data, the price prediction degrades.",
+    "etapes": [
+      {
+        "etape": "Trip estimation",
+        "detail": "The system estimates time and distance from origin to destination.",
+        "acteur": "AI"
+      },
+      {
+        "etape": "Demand prediction",
+        "detail": "Demand patterns on the route at that hour and the aggregated driver response are evaluated.",
+        "acteur": "AI"
+      },
+      {
+        "etape": "Upfront price computation",
+        "detail": "A single price is computed before booking, including applicable tolls, taxes, and surcharges.",
+        "acteur": "AI"
+      },
+      {
+        "etape": "Display and acceptance",
+        "detail": "The rider sees the price before requesting and accepts or declines the ride.",
+        "acteur": "customer"
+      }
+    ]
+  },
+  "replication": {
+    "prerequis_data": [
+      "history of trips and prices",
+      "real-time demand by zone",
+      "supply availability (drivers)"
+    ],
+    "prerequis_orga": [
+      "a marketplace and data science team",
+      "real-time compute capacity",
+      "governance on fare fairness"
+    ],
+    "stack_possible": [
+      "in-house ML demand models",
+      "a real-time matching and pricing engine"
+    ],
+    "premiere_etape": "Build a per-route time-and-distance prediction model before adding the demand layer.",
+    "playbook": [
+      {
+        "action": "Consolidate the trip-and-price history and zone-level demand in a usable warehouse.",
+        "livrable": "A marketplace data warehouse with reliable history."
+      },
+      {
+        "action": "Build the per-route time-and-distance prediction model.",
+        "livrable": "An estimator validated against the actuals (measured error)."
+      },
+      {
+        "action": "Add the demand layer (patterns per route and per hour) and compute an upfront price in shadow mode, without displaying it.",
+        "livrable": "A price model compared to current pricing on real data."
+      },
+      {
+        "action": "Test the upfront price on one zone against the current pricing, tracking matching rate, revenue per ride, and complaints.",
+        "livrable": "Test reading and documented fare-fairness rules."
+      },
+      {
+        "action": "Generalize zone by zone with continuous monitoring of prediction drift.",
+        "livrable": "A pricing engine in production with alerting."
+      }
+    ],
+    "equipe": "3-6 data scientists and ML engineers + 1 marketplace PM + 1 pricing analyst, with legal governance over personalized pricing (Omnibus Directive, GDPR)."
+  },
+  "statut_vivant": {
+    "note": "Upfront pricing and route-based pricing remain the default pricing mode, documented on Uber's official pages."
+  },
+  "transposable_ue": {
+    "note": "ML-computed upfront pricing is transposable, but the EU frames personalized pricing: mandatory information on prices personalized by automated decision (Omnibus Directive), a GDPR legal basis if personal data enters the computation, and vigilance on price discrimination. The component tied to the rider's profile is the most sensitive."
+  }
+}

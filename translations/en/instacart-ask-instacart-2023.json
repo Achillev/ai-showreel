@@ -1,0 +1,107 @@
+{
+  "seo": {
+    "title": "Instacart: genAI conversational search Ask Instacart - 1B+ items (2023)",
+    "meta_description": "Ask Instacart turns the search bar into a genAI food assistant, combining the ChatGPT API and Instacart's catalog of more than a billion items.",
+    "resume_citable": "Ask Instacart, launched in May 2023, is a genAI conversational search that combines OpenAI's ChatGPT API and a catalog of more than a billion items across more than 80,000 retail partner locations, deployed to all US customers.",
+    "faq": [
+      {
+        "q": "What technology is Ask Instacart built on?",
+        "a": "On OpenAI's ChatGPT API combined with Instacart's in-house models and its catalog of more than a billion items."
+      },
+      {
+        "q": "Does Ask Instacart answer any question?",
+        "a": "No, the model is deliberately specialized and only answers questions related to food."
+      }
+    ]
+  },
+  "pattern": "genAI conversational search",
+  "etape_parcours": "consideration",
+  "objectif_business": "Turn the search bar into a food inspiration tool to remove indecision (what to cook, what to buy) and grow the basket.",
+  "description": "Ask Instacart is a conversational search integrated into the app's search bar. The customer asks an open-ended food question (side-dish ideas for a dish, options for a diet) and the tool returns organized recommendations plus information on preparation, product attributes, and dietary considerations. It combines OpenAI's ChatGPT API, Instacart's in-house models, and a catalog of more than a billion items across more than 80,000 retail partner locations. The model is deliberately specialized in food questions. Launched on May 31, 2023, rolled out to all US customers in the following weeks.",
+  "resultats": [
+    { "metrique": "Catalog items, across 80,000+ retail partner locations" },
+    { "metrique": "Rollout" }
+  ],
+  "niveau_preuve": {
+    "justification": "Official Instacart announcement corroborated by press (Search Engine Land, PR Newswire release). Proof of scale through catalog coverage and national rollout, but no published financial result or conversion metric. Still live in 2026 (extension to OpenAI's ChatGPT app)."
+  },
+  "stack_technique": [
+    { "detail": "interpretation of the open-ended food question and generation of the answer" },
+    { "detail": "alignment of the answer with the catalog and reranking of products by location" },
+    { "detail": "more than a billion items across more than 80,000 retail partner locations, with dietary and preparation attributes" },
+    { "detail": "in-house framing that limits the model to relevant food questions" }
+  ],
+  "fonctionnement_operationnel": {
+    "cadence": "Real time at each search query.",
+    "opere_par": "Instacart's product and ML team, with OpenAI's ChatGPT API as an external dependency.",
+    "signal_pilote": "The match between the food question and the local partner catalog. If an item is not carried by the customer's retailer, the recommendation does not convert into a basket.",
+    "etapes": [
+      {
+        "etape": "Open-ended food question",
+        "detail": "The customer types a question into the search bar rather than a product keyword.",
+        "acteur": "customer"
+      },
+      {
+        "etape": "Understanding and generation",
+        "detail": "The ChatGPT API interprets the intent, Instacart's models align the answer with the catalog.",
+        "acteur": "AI"
+      },
+      {
+        "etape": "Organizing the results",
+        "detail": "Products are grouped with preparation info and dietary attributes, and matched to brands' sponsored campaigns.",
+        "acteur": "AI"
+      },
+      {
+        "etape": "Scope framing",
+        "detail": "The model is constrained to answer only relevant food questions.",
+        "acteur": "data team"
+      }
+    ]
+  },
+  "replication": {
+    "prerequis_data": [
+      "broad catalog localized by point of sale",
+      "dietary and preparation attributes",
+      "brands' sponsored campaigns"
+    ],
+    "prerequis_orga": [
+      "agreement to use a third-party LLM API",
+      "topic-scope guardrails"
+    ],
+    "stack_possible": [
+      "LLM API (e.g. OpenAI)",
+      "in-house reranking models",
+      "RAG over the catalog"
+    ],
+    "premiere_etape": "Restrict the scope to one domain (here food) and connect an LLM API to the enriched catalog.",
+    "playbook": [
+      {
+        "action": "Enrich the catalog with usable attributes (dietary, preparation, localization by point of sale)",
+        "livrable": "Enriched catalog queryable by attribute"
+      },
+      {
+        "action": "Define the topic scope and the guardrails (what the assistant refuses to handle)",
+        "livrable": "Scoping spec + set of test questions"
+      },
+      {
+        "action": "Connect the LLM API to the catalog and build the in-house reranking layer",
+        "livrable": "Conversational search prototype on a subset of the catalog"
+      },
+      {
+        "action": "Open a beta on a traffic segment and compare against keyword search",
+        "livrable": "Engagement and add-to-basket metrics vs classic search"
+      },
+      {
+        "action": "Roll out progressively and monitor the answer-to-local-catalog match",
+        "livrable": "Full rollout + tracking of basket conversion"
+      }
+    ],
+    "equipe": "1 PM + 2 ML/backend engineers + 1 data analyst; catalog enrichment is the bulk of the work"
+  },
+  "statut_vivant": {
+    "note": "Instacart's AI search remains active and the company has extended its genAI offering, becoming the first app to offer the Instant Checkout experience in OpenAI's ChatGPT."
+  },
+  "transposable_ue": {
+    "note": "Deployed in the US on a multi-retailer grocery marketplace model. In the EU, the partner catalog and food regulations differ; the call to the ChatGPT API involves a data transfer to be framed (GDPR, AI Act transparency). The deliberately narrow scope on food questions limits the risk."
+  }
+}

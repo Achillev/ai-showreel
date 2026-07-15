@@ -1,0 +1,114 @@
+{
+  "seo": {
+    "title": "Kayo Sports: 1:1 AI decisioning with Braze - +14% subscriptions FY24 (2024)",
+    "meta_description": "Kayo Sports built its Customer Cortex on BrazeAI Decisioning Studio: +14% subscriptions in FY24, +105% cross-sell, 1.2 million possible actions per customer.",
+    "resume_citable": "Kayo Sports grew subscriptions +14% in FY24 and cross-sell +105% with a 1:1 AI decisioning engine on Braze, taking the number of possible personalized actions per customer from 300 to 1.2 million.",
+    "faq": [
+      {
+        "q": "What AI runs Kayo Sports's system?",
+        "a": "BrazeAI Decisioning Studio, fed by ten reinforcement learning models trained on Kayo's first- and third-party data."
+      },
+      {
+        "q": "What quantified results?",
+        "a": "+14% subscriptions in FY24, +105% cross-sell, and a move from 300 to 1.2 million possible personalized actions per subscriber."
+      }
+    ]
+  },
+  "pattern": "1:1 AI decisioning (message, creative, channel, timing, frequency, promo per individual)",
+  "etape_parcours": "loyalty",
+  "objectif_business": "Increase subscriptions and reduce churn for a sports streaming service by orchestrating a 1:1 relationship at scale rather than fixed-rule campaigns.",
+  "description": "Kayo Sports, Australia's largest sports streaming service, built its Customer Cortex on Braze and BrazeAI Decisioning Studio. Ten reinforcement learning models trained on its first- and third-party data analyze each subscriber, and the decisioning chooses for them the message, the creative, the channel, the timing, the frequency, and the promotion. Orchestration runs through Canvas on email, push, in-app, and SMS. The number of possible actions per customer went from 300 to 1.2 million.",
+  "points_cles": [
+    "1:1 AI decisioning chooses message, creative, channel, timing, and promo per subscriber.",
+    "On Braze and BrazeAI Decisioning Studio, ten reinforcement learning models.",
+    "+14% subscriptions in FY24, +105% cross-sell.",
+    "Actions per customer from 300 to 1.2 million, evidence B confirmed."
+  ],
+  "resultats": [
+    { "metrique": "Subscriptions over the FY24 fiscal year" },
+    { "metrique": "Cross-sell" },
+    { "metrique": "Possible personalized actions per customer" }
+  ],
+  "niveau_preuve": {
+    "justification": "Quantified Braze customer story cited by name, corroborated by the Australian martech press Mi3 (specialized, T4). Consistent but without major general press, hence B."
+  },
+  "stack_technique": [
+    { "detail": "customer engagement platform that carries the profiles, the channels, and the orchestration" },
+    { "detail": "next-best-action decisioning engine: choice of message, creative, channel, timing, frequency, and promo per subscriber" },
+    { "detail": "multichannel journey orchestration on email, push, in-app, and SMS" },
+    { "detail": "in-house models trained on Kayo's first- and third-party data, which turn behavior into signals for the decisioning" }
+  ],
+  "fonctionnement_operationnel": {
+    "cadence": "Near real time: the decisioning chooses the next best action along each subscriber's behavior, and the models readjust continuously.",
+    "opere_par": "Kayo's CRM / revenue team, on Braze and Decisioning Studio, with data support for the RL models.",
+    "signal_pilote": "Each subscriber's engagement and viewing behavior. The reinforcement learning learns from the reaction to each message; without that feedback, the system falls back on generic rules.",
+    "etapes": [
+      {
+        "etape": "Data unification",
+        "detail": "First- and third-party data (viewing, subscriptions) feed the Customer Cortex.",
+        "acteur": "Data team"
+      },
+      {
+        "etape": "Modeling",
+        "detail": "Ten reinforcement learning models turn this data into usable signals.",
+        "acteur": "Data / AI team"
+      },
+      {
+        "etape": "Next-action decision",
+        "detail": "Decisioning Studio chooses message, creative, channel, timing, frequency, and promo for each subscriber.",
+        "acteur": "AI (BrazeAI Decisioning Studio)"
+      },
+      {
+        "etape": "Orchestration and loop",
+        "detail": "Canvas delivers on email, push, in-app, and SMS; the customer's reaction feeds the next choice.",
+        "acteur": "AI / CRM team"
+      }
+    ]
+  },
+  "replication": {
+    "prerequis_data": [
+      "per-subscriber engagement and consumption data, unified",
+      "enough interaction volume to train reinforcement learning",
+      "multichannel consent"
+    ],
+    "prerequis_orga": [
+      "data team able to build and maintain RL models",
+      "CRM team that sets goals and guardrails",
+      "subscription model with churn to manage"
+    ],
+    "stack_possible": [
+      "Braze + BrazeAI Decisioning Studio",
+      "any engagement platform with a next-best-action decisioning engine"
+    ],
+    "premiere_etape": "Unify per-subscriber engagement data and define the metric the decisioning should optimize (retention, cross-sell) before opening up the action space.",
+    "playbook": [
+      {
+        "action": "Unify per-subscriber engagement and consumption data in the platform",
+        "livrable": "Unified customer profile fed continuously"
+      },
+      {
+        "action": "Define the metric the decisioning optimizes (retention, cross-sell) and the guardrails (max contact pressure)",
+        "livrable": "Documented decisioning goals and constraints"
+      },
+      {
+        "action": "Activate the decisioning on a pilot lifecycle (e.g. onboarding or reactivation) with a control group",
+        "livrable": "First next-best-action program in production, measured vs control"
+      },
+      {
+        "action": "Broaden the action space: channels, promotions, frequencies, creatives",
+        "livrable": "Extended action catalog + incremental measurements per wave"
+      },
+      {
+        "action": "Add in-house predictive models (churn, propensity) upstream of the decisioning",
+        "livrable": "Proprietary scores plugged into the decision engine"
+      }
+    ],
+    "equipe": "1-2 CRM managers + 1 data scientist + 1 data engineer for the flows"
+  },
+  "statut_vivant": {
+    "note": "System described as in production in 2025, with an announced extension to BINGE (another brand in the group). Kayo cited in the Braze 2025 review."
+  },
+  "transposable_ue": {
+    "note": "The 1:1 decisioning combines first- and third-party data and drives several channels. In the EU, the basis for profiling, multichannel consent, and the use of third-party data need to be framed (GDPR)."
+  }
+}

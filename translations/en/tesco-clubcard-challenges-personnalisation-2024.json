@@ -1,0 +1,115 @@
+{
+  "seo": {
+    "title": "Tesco: AI-personalized loyalty challenges (Clubcard Challenges) - 10 million members targeted (2024)",
+    "meta_description": "Tesco uses AI to personalize spending challenges (Eagle Eye) on Clubcard data: up to 10 million members and half a billion points in 2024.",
+    "resume_citable": "Tesco targeted up to 10 million Clubcard members with spending challenges personalized by Eagle Eye's AI engine, distributing more than half a billion points across its 2024 campaigns, on a program through which 82% of UK sales flow.",
+    "faq": [
+      {
+        "q": "How do Clubcard Challenges work?",
+        "a": "Each member receives spending goals in the Tesco app, computed by Eagle Eye's AI engine from their history, and earns Clubcard points (up to 50 pounds) if they hit them over six weeks."
+      },
+      {
+        "q": "What scale did the program reach?",
+        "a": "Tesco ran four six-week campaigns in 2024, the last one targeting up to 10 million customers, with more than half a billion Clubcard points distributed over the period."
+      }
+    ]
+  },
+  "pattern": "loyalty gamification through AI-computed personalized spending goals",
+  "etape_parcours": "loyalty",
+  "objectif_business": "Bring Clubcard members back more often and grow their spend over a six-week period by offering them numeric challenges sized to their usual basket rather than uniform promotions.",
+  "description": "Clubcard Challenges are personalized spending challenges offered in the Tesco app. Each member receives goals (for example spending a certain amount in a category) and earns Clubcard points if they hit them over six weeks, up to 50 pounds in points. The assignment of challenges is computed by Eagle Eye's AI engine, which according to the vendor takes more than 190 decisions per member to set target products, spending thresholds, and reward levels from purchase history. Tesco ran four six-week campaigns in 2024, widening the included population each wave, up to 10 million customers for the last. The program draws on the Clubcard's data, through which 82% of Tesco's UK sales flow.",
+  "points_cles": ["AI-personalized spending challenges in the Clubcard app.", "Eagle Eye decision engine on purchase history, backed by dunnhumby.", "Up to 10 million members targeted, over half a billion points in 2024.", "Evidence B, confirmed status, four six-week campaigns in 2024."],
+  "resultats": [
+    { "metrique": "Customers targeted by the latest Clubcard Challenges campaign (2024)" },
+    { "metrique": "Extra Clubcard points distributed through the Challenges" },
+    { "metrique": "Challenges-page visitors converted to players" },
+    { "metrique": "Share of Tesco UK sales made through Clubcard" }
+  ],
+  "niveau_preuve": {
+    "justification": "A quantified case study from the Eagle Eye platform (reach, player conversion, points distributed) quoting CEO Ken Murphy, corroborated by eMarketer analysis on the weight of the Clubcard (82% of UK sales). A vendor source with an interest, but consistent with the analyst press."
+  },
+  "stack_technique": [
+    { "detail": "Loyalty platform whose AI engine calibrates the challenges: more than 190 decisions per member (target products, spending threshold, reward) from purchase history." },
+    { "detail": "Tesco's data subsidiary, behind the Clubcard, which handles the customer modeling upstream of the engine." },
+    { "detail": "Distribution channel for the challenges and source of the data: 82% of Tesco's UK sales flow through the Clubcard." }
+  ],
+  "fonctionnement_operationnel": {
+    "cadence": "By campaign (six-week waves), with individual challenge assignment ahead of each wave",
+    "opere_par": "Tesco's loyalty and CRM team, supported by dunnhumby for the data and by Eagle Eye for execution",
+    "signal_pilote": "Each member's Clubcard purchase history. Without an identifier linking receipts to a person, the engine cannot calibrate a reachable spending threshold, and the challenge becomes either trivial or out of reach.",
+    "etapes": [
+      {
+        "etape": "Population selection",
+        "detail": "The loyalty team sets the wave's scope and the number of customers included, widened campaign after campaign.",
+        "acteur": "Loyalty marketing"
+      },
+      {
+        "etape": "Challenge calibration",
+        "detail": "The Eagle Eye engine computes for each member the target products, spending threshold, and reward from their history.",
+        "acteur": "AI"
+      },
+      {
+        "etape": "Delivery in the app",
+        "detail": "The challenges appear in the Tesco app with progress and the Clubcard point reward.",
+        "acteur": "Application"
+      },
+      {
+        "etape": "Progress tracking",
+        "detail": "Each purchase updates the member's progress toward their goal over the six weeks.",
+        "acteur": "AI"
+      },
+      {
+        "etape": "Measurement and iteration",
+        "detail": "Participation, completion, and incremental spend are measured, then the next wave widens the target.",
+        "acteur": "Data and marketing team"
+      }
+    ]
+  },
+  "replication": {
+    "prerequis_data": [
+      "first-party transactional history per member",
+      "a loyalty program that identifies each customer",
+      "the ability to tie each receipt to the right profile"
+    ],
+    "prerequis_orga": [
+      "an active loyalty program with a large base",
+      "a CRM team running the campaigns",
+      "an incremental measurement loop"
+    ],
+    "stack_possible": [
+      "a loyalty platform with an offer engine (Eagle Eye, Talon.One, or equivalent)",
+      "a CDP or customer warehouse",
+      "a mobile app"
+    ],
+    "premiere_etape": "Define a numeric challenge mechanic and connect the offer engine to members' purchase history to calibrate individual thresholds.",
+    "playbook": [
+      {
+        "action": "Define the challenge mechanic (duration, reward, eligible categories) and the scope of the pilot population.",
+        "livrable": "Challenge spec and individual calibration rules."
+      },
+      {
+        "action": "Connect the offer engine to members' purchase history to compute reachable per-person spending thresholds.",
+        "livrable": "Thresholds and rewards computed for the test population."
+      },
+      {
+        "action": "Run a first six-week campaign on a smaller population, with a control group and progress tracking in the app.",
+        "livrable": "Live campaign, progress visible to the member."
+      },
+      {
+        "action": "Read participation, completion, and incremental spend against the control.",
+        "livrable": "Quantified review of the pilot wave."
+      },
+      {
+        "action": "Widen the population wave after wave, adjusting the calibration on the learnings.",
+        "livrable": "Scaling plan and schedule for the following campaigns."
+      }
+    ],
+    "equipe": "1 loyalty/CRM lead + 1 data analyst + the loyalty vendor, with an app contact for displaying the challenges."
+  },
+  "statut_vivant": {
+    "note": "The Challenges were widened campaign after campaign in 2024 and are presented by Tesco as a driver of its record digital engagement. The Clubcard remains central to the group's retail media and loyalty strategy."
+  },
+  "transposable_ue": {
+    "note": "The mechanic relies on transactional profiling of loyalty members. In the EU, a legal basis and GDPR consent are required to personalize goals and rewards. A system that sets an individual spending threshold from history stays outside high risk under the AI Act, but transparency about the targeting logic is required."
+  }
+}

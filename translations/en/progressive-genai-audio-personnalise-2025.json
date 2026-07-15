@@ -1,0 +1,100 @@
+{
+  "seo": {
+    "title": "Progressive: personalized genAI audio ads - +31% quote starts (2025)",
+    "meta_description": "96 genAI audio variants in 14 days, optimized by segment with Claritas: Progressive gains 31% more quote starts (197% lift vs control).",
+    "resume_citable": "On an audio campaign, Progressive had generative AI produce 96 variants (scripts, voice, music) approved in 14 days, optimized by segment with Claritas, for a 31% gain in quote starts and a 197% lift over the control group.",
+    "faq": [
+      {
+        "q": "What did AI generate in Progressive's audio campaign?",
+        "a": "The AI wrote the scripts and created the voices and music beds for 96 audio variants, approved in 14 days instead of a handful of spots over about seven weeks with the classic method."
+      },
+      {
+        "q": "What results did the campaign produce?",
+        "a": "Progressive and Claritas report 31% more quote starts, a 197% lift over the control group, and 98% listen-through to the end of the spots."
+      }
+    ]
+  },
+  "pattern": "personalized genAI creative at scale (scripts, voice, music) optimized by segment",
+  "etape_parcours": "discovery",
+  "stack_technique": [
+    { "detail": "Learning-based creative optimization: activating audio variants by segment and stopping the weakest performers." },
+    { "detail": "Generated the scripts, synthetic voices, and music beds for the 96 variants; the exact tools are not publicly named." },
+    { "detail": "Delivery of the variants in audio streaming." },
+    { "detail": "Delivery of the variants in audio streaming with targeting by segment." },
+    { "detail": "Delivery of the variants in audio streaming." }
+  ],
+  "objectif_business": "Produce a large number of personalized audio variants in a few days instead of several weeks, then deliver only the ones that perform, to pull up quote starts at lower cost and lead time.",
+  "description": "Progressive handed generative AI the writing of the scripts and the creation of the voices and music beds for an audio campaign, then let an optimization engine sort the variants by their real performance. The team had 96 variants approved in 14 days, versus a handful of spots produced over about seven weeks with the classic method. The variants were delivered in streaming (SiriusXM, Spotify, iHeart, and others), then activated and optimized by segment through the Claritas tool. Progressive and Claritas report a 31% gain in quote starts, a 197% lift over the control group, and 98% listen-through to the end. The operational lesson comes down to one sentence from the Claritas side: 96 versions was perhaps too many, a sign that the volume of creatives should stay driven by measurement rather than maximized for its own sake.",
+  "resultats": [
+    { "metrique": "Increase in quote starts" },
+    { "metrique": "Performance lift vs control group" },
+    { "metrique": "GenAI audio variants approved in 14 days" }
+  ],
+  "niveau_preuve": {
+    "justification": "Campaign reported by name in the marketing press (The Drum) with quotes from the Progressive lead and the Claritas executive, corroborated by specialist audio press on the volume of variants and the effect on quote starts. Figures declared by both parties to the campaign, not an audited financial result."
+  },
+  "fonctionnement_operationnel": {
+    "cadence": "Per campaign: a production sprint of a few days, then continuous optimization in delivery as long as the campaign runs.",
+    "opere_par": "Progressive's marketing/analytics team with the data partner Claritas; the AI produces, humans validate, the optimization engine arbitrates.",
+    "signal_pilote": "Quote starts and engagement per variant. If the per-segment performance signal is missing, you no longer know which variants to cut and the volume of creatives becomes noise.",
+    "etapes": [
+      {
+        "etape": "Generating the variants",
+        "detail": "The AI writes the scripts, generates the voices and music beds; the team gets the selected variants approved.",
+        "acteur": "AI and marketing"
+      },
+      {
+        "etape": "Multi-platform delivery",
+        "detail": "The variants go out in audio streaming (SiriusXM, Spotify, iHeart) with targeting by segment.",
+        "acteur": "marketing and agency"
+      },
+      {
+        "etape": "Optimization by segment",
+        "detail": "The Claritas engine activates and prioritizes variants by their real performance and cuts the least effective.",
+        "acteur": "AI and agency"
+      }
+    ]
+  },
+  "replication": {
+    "prerequis_data": [
+      "Usable audience segments",
+      "Reliable measurement of quote starts per variant",
+      "Rights to the brand voice or a licensed synthetic voice"
+    ],
+    "prerequis_orga": [
+      "Accelerated creative validation chain",
+      "Media optimization partner or tool",
+      "Brand rules to frame genAI"
+    ],
+    "stack_possible": [
+      "GenAI text/voice/music tools + creative optimization platform (the Claritas route)",
+      "Audio DSP with dynamic creative"
+    ],
+    "premiere_etape": "Launch an A/B test of a few genAI variants on an audio channel and connect quote-start measurement before scaling up the volume.",
+    "playbook": [
+      {
+        "action": "Secure voice rights (licensed synthetic or brand voice), set the brand rules for genAI, and connect quote-start measurement per variant.",
+        "livrable": "Legal framework and per-variant measurement operational."
+      },
+      {
+        "action": "GenAI production sprint (scripts, voice, music) and validation through the accelerated creative chain.",
+        "livrable": "Batch of 10 to 20 approved audio variants for the pilot."
+      },
+      {
+        "action": "Deliver as a test with a control group on a streaming channel, targeting by segment.",
+        "livrable": "Live pilot campaign with per-segment performance read."
+      },
+      {
+        "action": "Cut the weak variants, measure the lift vs control, and decide the next production volume (volume stays driven by measurement).",
+        "livrable": "Lift vs control review and scale plan."
+      }
+    ],
+    "equipe": "1 audio media lead + 1 creative to validate scripts and voices + the data/optimization partner; legal for voice rights."
+  },
+  "statut_vivant": {
+    "note": "Progressive has publicly described its investment in generative AI for marketing personalization; the genAI audio campaign is documented and attributed by name."
+  },
+  "transposable_ue": {
+    "note": "The AI generation of audio variants and their optimization by segment rely on ad targeting and synthetic voices. In the EU, use of a cloned synthetic voice assumes explicit rights, and targeting activates audience data subject to GDPR (legal basis, consent on cookies and advertising identifiers). The pattern remains transposable, the data-audience assembly has to be rebuilt to local rules."
+  }
+}

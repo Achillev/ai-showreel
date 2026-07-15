@@ -1,0 +1,115 @@
+{
+  "seo": {
+    "title": "Expedia: app in ChatGPT - OpenAI launch partner across 6 markets (2026)",
+    "meta_description": "Expedia is among the first partners of the apps in ChatGPT launched by OpenAI on October 6, 2025, with a rollout in six non-EU markets and a ChatGPT plugin in production since 2023.",
+    "resume_citable": "Expedia was one of the first partners of the apps in ChatGPT launched by OpenAI on October 6, 2025, exposing its inventory inside the conversation across six non-EU markets.",
+    "faq": [
+      {
+        "q": "How does Expedia in ChatGPT work?",
+        "a": "The logged-in user asks for travel options in ChatGPT; the Expedia app surfaces hotels, flights, and destinations with live prices and availability through OpenAI's Apps SDK."
+      },
+      {
+        "q": "Where is it available?",
+        "a": "At launch, in six non-EU markets: United States, Canada excluding Quebec, New Zealand, India, Singapore, and Mexico."
+      }
+    ]
+  },
+  "pattern": "distribution through a third-party conversational assistant (app in ChatGPT)",
+  "etape_parcours": "discovery",
+  "objectif_business": "Show up where travelers start planning outside Expedia's own site, by exposing flight, hotel, and destination inventory directly inside a ChatGPT conversation, with live prices and availability.",
+  "description": "Expedia was one of the first partners of the apps in ChatGPT, launched by OpenAI on October 6, 2025 through the Apps SDK built on the Model Context Protocol. A user logged in to ChatGPT can ask for travel options (hotels, flights, destinations) with dynamic prices and availability, pulled live from Expedia's infrastructure. The app extends Expedia's ChatGPT plugin launched in 2023, one of the first from a travel player. At launch, it is available to logged-in users in six non-EU markets.",
+  "resultats": [
+    {
+      "metrique": "Non-EU markets in production for the app in ChatGPT"
+    },
+    {
+      "metrique": "OpenAI launch partner for the apps in ChatGPT (Oct 6, 2025)"
+    }
+  ],
+  "niveau_preuve": {
+    "justification": "Official Expedia press release and established trade press (Skift, PhocusWire) documenting a multi-market rollout and an OpenAI launch partner status. Proof of scale = multi-market rollout plus a plugin in production since 2023; performance metrics are not public."
+  },
+  "stack_technique": [
+    {
+      "detail": "Assistant that hosts the Expedia app; available to logged-in users in six non-EU markets at launch."
+    },
+    {
+      "detail": "Development kit for the apps in ChatGPT, launched on October 6, 2025, on which the Expedia app is built."
+    },
+    {
+      "detail": "Open protocol on which the Apps SDK is built; connects the conversation to Expedia's inventory."
+    },
+    {
+      "detail": "Provides flights, hotels, and destinations with live prices and availability, extending the 2023 ChatGPT plugin."
+    }
+  ],
+  "fonctionnement_operationnel": {
+    "cadence": "Real time on each request in ChatGPT; the app calls Expedia's inventory live.",
+    "opere_par": "Expedia Group's distribution and product team, with the technical integration through OpenAI's Apps SDK.",
+    "signal_pilote": "The user's request in ChatGPT, resolved against Expedia's inventory and prices through the Model Context Protocol. If the MCP connection or the price feed goes down, the app no longer surfaces bookable options.",
+    "etapes": [
+      {
+        "etape": "Request in ChatGPT",
+        "detail": "The logged-in user asks for travel options in a ChatGPT conversation.",
+        "acteur": "customer"
+      },
+      {
+        "etape": "Expedia app call",
+        "detail": "ChatGPT invokes the Expedia app through the Apps SDK and the Model Context Protocol.",
+        "acteur": "AI"
+      },
+      {
+        "etape": "Inventory retrieval",
+        "detail": "The app queries Expedia's infrastructure for live prices and availability.",
+        "acteur": "AI / data team"
+      },
+      {
+        "etape": "Display and handover",
+        "detail": "The options are presented in the conversation, with a handover to Expedia to complete the booking.",
+        "acteur": "customer"
+      }
+    ]
+  },
+  "replication": {
+    "prerequis_data": [
+      "inventory and prices exposable via API",
+      "product catalog structured for a third-party assistant"
+    ],
+    "prerequis_orga": [
+      "distribution and product team",
+      "ability to publish and maintain an app on a third-party platform",
+      "brand governance outside its own channel"
+    ],
+    "stack_possible": [
+      "OpenAI Apps SDK / Model Context Protocol",
+      "real-time connector to the inventory",
+      "user authentication"
+    ],
+    "premiere_etape": "Expose the inventory through a clean API and an MCP connector, then publish an app on the conversational platform where the audience is.",
+    "playbook": [
+      {
+        "action": "Expose inventory, prices, and availability through a clean, stable API.",
+        "livrable": "Documented inventory API load-tested"
+      },
+      {
+        "action": "Build the MCP connector and the app through the Apps SDK: search, display, handover to the site to complete.",
+        "livrable": "Working app in a test environment"
+      },
+      {
+        "action": "Handle user authentication and pass the platform's publication review.",
+        "livrable": "App validated and published in the allowed markets"
+      },
+      {
+        "action": "Launch, track in-chat traffic and handovers to the site.",
+        "livrable": "Traffic and conversion dashboard for the new channel"
+      }
+    ],
+    "equipe": "2 API / integration developers + 1 distribution PM + 1 lawyer for markets and data."
+  },
+  "statut_vivant": {
+    "note": "App in ChatGPT launched in October 2025 across six markets; extends a plugin in production since 2023."
+  },
+  "transposable_ue": {
+    "note": "The apps in ChatGPT are open to users outside the European Economic Area, Switzerland, and the United Kingdom; Expedia in ChatGPT is not available in the EU at launch. The pattern of distribution through a third-party assistant remains transposable if the app is published in an EU market, subject to GDPR and the AI Act."
+  }
+}

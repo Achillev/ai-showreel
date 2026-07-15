@@ -1,0 +1,132 @@
+{
+  "seo": {
+    "title": "Function of Beauty: hair care formulated by AI quiz - 80% of the business (2015)",
+    "meta_description": "Function of Beauty turns a quiz into a custom formula through an algorithm: the quiz carries 80% of the business, more than one million engagements/year, 15M formulas.",
+    "resume_citable": "Function of Beauty formulates custom hair care through an algorithm from a quiz that supports 80 percent of its business (more than one million engagements per year), with more than 15 million formulations created and expected 2023 revenue of 125 to 150 million dollars.",
+    "faq": [
+      {
+        "q": "What role does the quiz play at Function of Beauty?",
+        "a": "The quiz into the personalized subscription experience supports 80 percent of the business, more than one million engagements per year, with an 80 percent completion rate after a redesign."
+      },
+      {
+        "q": "How many formulations has Function of Beauty created?",
+        "a": "More than 15 million custom formulations to date, with a potential of billions of combinations, on automated made-to-order manufacturing lines."
+      }
+    ]
+  },
+  "pattern": "personalized product formulation by algorithm from a quiz",
+  "etape_parcours": "purchase",
+  "objectif_business": "Convert through a quiz that turns hair goals into a custom formula, make the quiz the near-single entry point of the business, and fuel subscription-based replenishment.",
+  "description": "Function of Beauty, founded in 2015, personalizes hair, skin, and body care from an online quiz. The answers feed a proprietary algorithm that composes a custom formula and routine, then an API passes the profile to manufacturing to customize product and bottle. The company says it has created more than 15 million personalized formulations to date, with a potential of billions of combinations, on a factory with automated lines. The quiz carries most of the activity: it supports 80 percent of the business, more than one million engagements per year. After a quiz redesign, the brand reached an 80 percent completion rate, up 16.4 percent from its in-house solution, with hundreds of thousands of completed quizzes in the first three months. Expected 2023 revenue was between 125 and 150 million dollars; the company has raised 164 million dollars in total and acquired Atolla in 2021.",
+  "points_cles": [
+    "Personalized product formulation by algorithm from an online quiz.",
+    "Proprietary algorithm, Visual Quiz Builder front end, made-to-order factory.",
+    "Quiz carrying 80% of the business, 80% completion (+16.4%), more than 15 million formulations.",
+    "Evidence level B, confirmed active status."
+  ],
+  "resultats": [
+    {
+      "metrique": "Share of the business carried by the quiz, more than one million engagements/year"
+    },
+    {
+      "metrique": "Quiz completion rate after redesign, +16.4% vs the in-house solution"
+    },
+    {
+      "metrique": "Personalized formulations created"
+    },
+    {
+      "metrique": "Expected 2023 revenue"
+    }
+  ],
+  "niveau_preuve": {
+    "justification": "Platform case study (Visual Quiz Builder) quantifying the share of the business and completion, plus a BeautyMatter profile quantifying formulations and revenue. Two consistent quantified sources, but interested or secondary and without public financial results, hence B."
+  },
+  "stack_technique": [
+    {
+      "detail": "In-house engine that converts profile and hair goals into a custom formula and routine; its exact nature is not detailed publicly"
+    },
+    {
+      "detail": "Online quiz front end, used for the redesign that raised completion to 80 percent"
+    },
+    {
+      "detail": "In-house API that passes the quiz profile to the factory to customize product and bottle"
+    },
+    {
+      "detail": "Automated lines producing the personalized formulas one at a time, more than 15 million formulations created"
+    }
+  ],
+  "fonctionnement_operationnel": {
+    "cadence": "Made to order for manufacturing; subscription-based replenishment; the quiz runs continuously as the entry point.",
+    "opere_par": "Data / algorithm team for formulation, operations for automated manufacturing, e-commerce and CRM for the subscription.",
+    "signal_pilote": "The quiz answers and its completion rate. If the quiz drops off, it is 80 percent of the business that loses its entry point.",
+    "etapes": [
+      {
+        "etape": "Online quiz",
+        "detail": "The customer fills in profile and hair goals (up to several goals).",
+        "acteur": "customer"
+      },
+      {
+        "etape": "Algorithmic formulation",
+        "detail": "The proprietary algorithm composes a custom formula and routine.",
+        "acteur": "AI / algorithm"
+      },
+      {
+        "etape": "Handover to manufacturing",
+        "detail": "An API sends the profile to the factory to customize product and bottle.",
+        "acteur": "AI + operations"
+      },
+      {
+        "etape": "Manufacturing and replenishment",
+        "detail": "Made-to-order production on automated lines, then re-subscription.",
+        "acteur": "operations + CRM"
+      }
+    ]
+  },
+  "replication": {
+    "prerequis_data": [
+      "structured quiz converting goals into formula attributes",
+      "ingredient reference and compatibility rules",
+      "data connection between the quiz front end and manufacturing"
+    ],
+    "prerequis_orga": [
+      "made-to-order manufacturing or a flexible contract manufacturer",
+      "product R&D to validate the formulas",
+      "e-commerce with subscription"
+    ],
+    "stack_possible": [
+      "quiz builder (Visual Quiz Builder type)",
+      "personalization / rules engine",
+      "modular production line + API"
+    ],
+    "premiere_etape": "Build the quiz and the mapping to a formula on one category, then prototype the connection to made-to-order production.",
+    "playbook": [
+      {
+        "action": "Build the quiz (profile, goals) and the ingredient reference with compatibility rules, validated by product R&D.",
+        "livrable": "Online quiz and answer-to-formula-attribute mapping on one category"
+      },
+      {
+        "action": "Develop the formulation engine (rules or scoring) and have a first set of formulas validated by R&D.",
+        "livrable": "Engine that outputs a valid formula for each answer combination"
+      },
+      {
+        "action": "Prototype made-to-order production with a flexible contract manufacturer and the API that passes the profile to manufacturing.",
+        "livrable": "Quiz-to-manufacturing chain tested on a pilot batch"
+      },
+      {
+        "action": "Launch D2C on the pilot category with subscription, and measure quiz completion, conversion, and replenishment.",
+        "livrable": "Offer on sale with a completion / conversion / replenishment dashboard"
+      },
+      {
+        "action": "Optimize the quiz (completion) and ramp up industrial capacity before opening other categories.",
+        "livrable": "Stabilized production and category extension plan"
+      }
+    ],
+    "equipe": "1 quiz / e-commerce developer + 1 data profile for the formulation engine + product R&D + manufacturing operations"
+  },
+  "statut_vivant": {
+    "note": "Brand active in D2C and mass retail; redesigned quiz documented in 2024, 2023 revenue quantified, acquisition of Atolla in 2021. The quiz remains the core of the model."
+  },
+  "transposable_ue": {
+    "note": "D2C plus retail model, made to order from a quiz. Low-sensitivity personal data (hair profile and goals), GDPR applicable to profiling. The export constraint remains industrial: manufacturing personalized formulas at scale."
+  }
+}
