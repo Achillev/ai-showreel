@@ -52,6 +52,21 @@ cadence + opere_par + signal_pilote + etapes[] (chaque étape : etape, detail, a
 - Style : pas d'antithèse décorative en rafale (« ce n'est pas X, c'est Y »), pas de règle de trois systématique, pas d'intensificateurs vides (« véritable », « puissant »), pas de méta-phrases. Noms concrets, chiffres réels, verbes simples, longueur de phrase variée. Écris comme un analyste, pas comme un modèle.
 - Les `citation_exacte` restent exactes au mot près, dans la langue d'origine, courtes (< 15 mots).
 
+## `citation_exacte` : la règle qui casse le plus souvent (audit 2026-07-16)
+Un audit mécanique des 780 citations du corpus a trouvé **195 citations absentes de leur source** (28% des citations vérifiables). Dans ~70% des cas le CHIFFRE était juste : c'est la citation qui avait été **réécrite**. Le champ n'est donc pas compris. Il l'est maintenant :
+
+`citation_exacte` = **une sous-chaîne littérale et contiguë de la source**. Tu dois pouvoir faire Ctrl+F dans la page et la trouver telle quelle. Ce n'est PAS un résumé du fait, PAS une reformulation, PAS un collage de deux bouts de phrase.
+
+Les 4 façons de se tromper, toutes vues en vrai dans le corpus :
+1. **Résumer** : la source dit « Return on ad spend improved by 66% in low-funnel and 81% in mid-funnel campaigns », tu écris « improved return on ad spend by 81% in mid-funnel campaigns ». Le fait est juste, la citation est fausse.
+2. **Coller deux fragments** : « from 1.25X to 2.08X » alors que la source dit « from 1.25X in January to 2.08X by the end of May ». Une citation ne saute pas de mots.
+3. **Citer le journaliste au lieu de la personne** : la prose non guillemetée d'un article n'est pas une déclaration de la marque.
+4. **Amputer le sujet** : la source dit « the solution touts a 3-5% increase », tu gardes « a 3-5% increase ». Tu viens de transformer un claim vendeur en résultat de marque. C'est le cas le plus grave : la troncature change le sens.
+
+Si aucune phrase courte de la source ne dit proprement le fait : **cite une phrase plus longue, ou ne mets pas de citation**. Une citation absente est acceptable ; une citation inventée ne l'est pas.
+
+Vérifie-toi avant de rendre : `node site/verify-citations.mjs --only <id>`. Verdict attendu : 0 ABSENTE.
+
 ## L'essentiel (`points_cles`) — résumé scannable
 Ajoute un champ `points_cles` : un tableau de 3 à 4 puces courtes (une phrase chacune, < 20 mots) qui résument le cas pour une lecture rapide sur mobile. Chaque puce = un fait tiré du contenu que tu as déjà sourcé (marque + déploiement, résultat chiffré, mécanisme/stack, niveau de preuve ou vivacité). JAMAIS de chiffre ou de fait absent des sources, jamais d'inférence déguisée. C'est une reformulation condensée de la fiche, pas un ajout d'information. Ordre : ce qui a été fait -> avec quoi -> le résultat chiffré -> le statut/preuve.
 

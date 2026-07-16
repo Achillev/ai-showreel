@@ -66,6 +66,15 @@ une fiche OU un rejet motive, jamais de fabrication.
    `node site/translate-check.mjs --count` renvoie 0 avant le build. Sans ca les nouvelles fiches
    s'affichent en EN avec fallback FR (pas casse, mais pas traduit).
 
+6ter. **Verification des citations (nouvelles fiches).** `node site/verify-citations.mjs --only <id>`
+   pour chaque fiche fraichement promue. Le script va chercher la source et verifie que chaque
+   `citation_exacte` y figure LITTERALEMENT. Verdict attendu : 0 ABSENTE. Une "ABSENTE" = la
+   citation a ete reecrite/resumee/collee au lieu d'etre copiee : corrige la fiche (ou retire la
+   citation) avant de continuer. INJOIGNABLE (403/paywall) n'est pas un echec, c'est non conclusif.
+   Contexte : l'audit du 2026-07-16 a trouve 195 citations absentes sur 780 (28% des verifiables),
+   alors meme que la regle "exact au mot pres" existait deja dans le brief. Elle ne suffisait pas ;
+   ce controle si.
+
 7. **Build.** `node site/qa-gate.mjs && node site/build.mjs`. Si qa-gate bloque, corrige
    la typographie fautive dans les fiches concernees puis rebuild. Anti-slop s'applique aussi
    aux traductions EN (guillemets droits, tiret simple).
