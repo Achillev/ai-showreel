@@ -37,14 +37,8 @@
   },
   "implementation": "custom",
   "objectif_business": "Remplacer les FAQ statiques, les serveurs vocaux et les formulaires par une conversation qui sait quoi demander, pour resoudre les demandes courantes en self-service et desengorger le centre d'appels.",
-  "description": "GEICO fait tourner un assistant virtuel de self-service sur ses canaux numeriques. Dans l'application, l'assistant Kate, lance en janvier 2017, repond en langage naturel aux questions de compte a fort volume et faible enjeu : solde, date du prochain paiement, recuperation de la carte d'assurance, resume de couverture, telechargement de documents, demande d'assistance routiere. Sur le site, GEICO expose desormais un assistant IA qui affiche les couvertures, les cartes et documents, et repond aux questions de police, en signalant a chaque echange que l'on parle a une IA et en proposant de basculer vers un agent humain quand la demande le depasse. A son lancement, PYMNTS a rapporte une hausse d'environ 10% de l'engagement dans l'application attribuee a Kate. L'assistant est toujours en service et a evolue vers une couche generative cote site, dans une logique de conversation qui sait quoi demander plutot que de renvoyer vers une page d'aide.",
+  "description": "GEICO fait tourner un assistant virtuel de self-service sur ses canaux numeriques. Dans l'application, l'assistant Kate, lance en janvier 2017, repond en langage naturel aux questions de compte a fort volume et faible enjeu : solde, date du prochain paiement, recuperation de la carte d'assurance, resume de couverture, telechargement de documents, demande d'assistance routiere. Sur le site, GEICO expose desormais un assistant IA qui affiche les couvertures, les cartes et documents, et repond aux questions de police, en signalant a chaque echange que l'on parle a une IA et en proposant de basculer vers un agent humain quand la demande le depasse. GEICO ne publie aucun resultat chiffre sur l'assistant : les articles de lancement de janvier 2017 documentent le dispositif, pas sa performance. L'assistant est toujours en service et a evolue vers une couche generative cote site, dans une logique de conversation qui sait quoi demander plutot que de renvoyer vers une page d'aide.",
   "resultats": [
-    {
-      "metrique": "Hausse de l'engagement dans l'application attribuee a l'assistant Kate (au lancement)",
-      "valeur": "environ +10%",
-      "citation_exacte": "10% increase in mobile app engagement attributable to Kate",
-      "source_ref": "S2"
-    },
     {
       "metrique": "Signalement systematique de l'IA, bascule vers un agent possible",
       "valeur": "IA toujours signalee",
@@ -54,7 +48,7 @@
   ],
   "niveau_preuve": {
     "niveau": "C",
-    "justification": "Assistant documente par la page officielle GEICO (preuve de service actuel) et par la presse spécialisée qui rapporte le lancement et une hausse d'engagement chiffree. Le chiffre d'engagement date du lancement (2017) et est declaratif ; l'existence du service est verifiable en direct sur le site."
+    "justification": "Assistant documente par la page officielle GEICO (preuve de service actuel, verifiable en direct sur le site) et par la presse etablie qui rapporte son lancement en janvier 2017 en citant le directeur mobile et digital de la marque. Aucun resultat chiffre publie : la hausse d'engagement d'environ 10% que portait cette fiche a ete retiree le 2026-07-16, faute de source. Le texte integral de l'article PYMNTS de janvier 2017, relu via archive, ne contient aucun chiffre d'engagement ; la formulation provenait d'un blog marketing genere par IA qui l'attribuait a tort a PYMNTS."
   },
   "dates": {
     "lancement": "Janvier 2017 (assistant Kate dans l'app), evolue depuis vers un assistant IA cote site",
@@ -224,9 +218,9 @@
   },
   "seo": {
     "slug": "geico-assistant-virtuel-kate-2025",
-    "title": "GEICO : assistant virtuel de self-service (Kate) - environ +10% d'engagement dans l'app (2025)",
-    "meta_description": "GEICO fait tourner un assistant IA de self-service (solde, carte, documents). Au lancement, Kate a apporte environ 10% d'engagement en plus dans l'application.",
-    "resume_citable": "GEICO exploite un assistant virtuel de self-service (Kate dans l'app, un assistant IA sur le site) qui traite les questions de compte a fort volume ; a son lancement, PYMNTS a rapporte une hausse d'environ 10% de l'engagement dans l'application.",
+    "title": "GEICO : assistant virtuel de self-service (Kate) dans l'app et sur le site (2025)",
+    "meta_description": "GEICO fait tourner un assistant IA de self-service (solde, carte, documents), qui signale l'IA a chaque echange et propose de basculer vers un agent humain.",
+    "resume_citable": "GEICO exploite un assistant virtuel de self-service (Kate dans l'app depuis 2017, un assistant IA sur le site) qui traite les questions de compte a fort volume en signalant a chaque echange que l'interlocuteur est une IA ; la marque ne publie pas de resultat chiffre.",
     "faq": [
       {
         "q": "Que fait l'assistant virtuel de GEICO ?",

@@ -50,31 +50,31 @@
   },
   "implementation": "custom",
   "objectif_business": "Elargir et personnaliser l'offre de paris pour capter des mises impossibles avec un catalogue standard, en s'appuyant sur les modeles de pricing proprietaires et une couche de decouverte assistee par IA.",
-  "points_cles": ["Personnalisation de l'offre de paris via Your Way, avec assistant genAI AceAI de decouverte.", "Pricing et risque in-house Flutter, AceAI multi-LLM, statistiques numberFire.", "Au Super Bowl 2025, 1 client sur 20 a utilise Your Way, 90% ont place des paris autrement impossibles.", "Niveau de preuve A, statut vivant confirme."],
-  "description": "Your Way est le produit de parlay personnalisable de FanDuel, deploye dans tous les Etats pour la NFL au cours du trimestre et mis a l'epreuve au Super Bowl 2025. Il donne au client une plus grande latitude pour construire ses combines, en s'appuyant sur les capacites proprietaires de pricing et de gestion du risque de Flutter pour proposer des combinaisons quasi illimitees tout en tenant la marge. Selon les resultats du T4 2024 de Flutter, environ 1 client sur 20 a utilise Your Way pendant le Super Bowl, et 90 pour cent d'entre eux ont place des paris qu'ils n'auraient pas pu faire sans ces options de personnalisation. Le jour du Super Bowl, FanDuel a compte 3 millions de clients actifs, 17,7 millions de paris et 470 millions de dollars mises. En complement, FanDuel a lance AceAI, un assistant conversationnel qui combine plusieurs grands modeles de langage a l'infrastructure sportsbook et aux donnees de numberFire : le client peut y analyser des statistiques joueurs et equipes, decouvrir des idees de paris et construire ses combines dans une seule conversation, l'ajout au coupon restant a sa main.",
+  "points_cles": ["Personnalisation de l'offre de paris via Your Way, avec assistant genAI AceAI de decouverte.", "Pricing et risque in-house Flutter, AceAI multi-LLM, statistiques numberFire.", "Au Super Bowl 2025, 1 client sur 20 a utilise Your Way ; 90% des paris places etaient autrement impossibles.", "Niveau de preuve A, statut vivant confirme."],
+  "description": "Your Way est le produit de parlay personnalisable de FanDuel, deploye dans tous les Etats pour la NFL au cours du trimestre et mis a l'epreuve au Super Bowl 2025. Il donne au client une plus grande latitude pour construire ses combines, en s'appuyant sur les capacites proprietaires de pricing et de gestion du risque de Flutter pour proposer des combinaisons quasi illimitees tout en tenant la marge. Sur la conference de resultats du T4 2024 de Flutter, le CEO Peter Jackson indique qu'environ 1 client sur 20 a utilise Your Way au Super Bowl, sans marketing agressif du produit, et qu'environ 90 pour cent des paris places l'ont ete grace a la personnalisation, sans laquelle ils n'auraient pas ete possibles. Il ajoute qu'environ 25 pour cent des clients ont place des combines de plus de 10 selections. Le jour du Super Bowl, FanDuel a compte 3 millions de clients actifs, 17,7 millions de paris et 470 millions de dollars mises. En complement, FanDuel a lance AceAI, un assistant conversationnel qui combine plusieurs grands modeles de langage a l'infrastructure sportsbook et aux donnees de numberFire : le client peut y analyser des statistiques joueurs et equipes, decouvrir des idees de paris et construire ses combines dans une seule conversation, l'ajout au coupon restant a sa main.",
   "resultats": [
     {
-      "metrique": "Clients ayant utilise Your Way au Super Bowl 2025",
+      "metrique": "Clients ayant utilise Your Way au Super Bowl 2025, selon le CEO de Flutter",
       "valeur": "1 sur 20 environ",
-      "citation_exacte": "approximately 1 in 20 customers used the product",
-      "source_ref": "S1"
+      "citation_exacte": "We saw around 1 in 20 customers use the product at the Super Bowl.",
+      "source_ref": "S5"
     },
     {
-      "metrique": "Utilisateurs Your Way placant des paris autrement impossibles",
-      "valeur": "90%",
-      "citation_exacte": "90% placing bets they couldn't have made",
-      "source_ref": "S1"
+      "metrique": "Part des paris places via Your Way qui auraient ete impossibles sans la personnalisation",
+      "valeur": "90% des paris",
+      "citation_exacte": "I think around 90% of the bets that people placed were bets so they couldn't have done without utilizing the customization that's available within the Your Way product.",
+      "source_ref": "S5"
     },
     {
       "metrique": "Mises le jour du Super Bowl, sur 3M de clients et 17,7M de paris",
       "valeur": "470M$",
-      "citation_exacte": "3 million active customers placing 17.7 million bets with $470 million wagered",
+      "citation_exacte": "FanDuel had 3m active customers placing 17.7m bets with $470m wagered on the day",
       "source_ref": "S1"
     }
   ],
   "niveau_preuve": {
     "niveau": "A",
-    "justification": "Chiffres issus des resultats financiers du T4 2024 de Flutter (publies le 4 mars 2025) et attribues au CEO Peter Jackson, donc niveau A. La presse specialisee corrobore l'adoption de Your Way au Super Bowl et l'activite FanDuel."
+    "justification": "Chiffres issus des resultats du T4 2024 de Flutter (4 mars 2025) : les mises du jour du Super Bowl viennent du communique, l'adoption de Your Way et la part de paris rendus possibles par la personnalisation viennent des reponses du CEO Peter Jackson sur la conference de resultats du meme jour. Declarations primaires attribuees, donc niveau A. La presse specialisee corrobore l'adoption de Your Way au Super Bowl et l'activite FanDuel."
   },
   "dates": {
     "lancement": "2024-2025 (Your Way deploye tous Etats pour la NFL ; AceAI lance en juillet 2026)",
@@ -122,6 +122,15 @@
       "url": "https://www.playusa.com/news/fanduel-expands-ai-sports-betting-assistant/",
       "date_publication": "2026-07",
       "consulte_le": "2026-07-11"
+    },
+    {
+      "ref": "S5",
+      "type": "earnings_call",
+      "fiabilite": "T1_primaire",
+      "titre": "Flutter Entertainment plc (NYSE:FLUT) Q4 2024 Earnings Call Transcript",
+      "url": "https://www.insidermonkey.com/blog/flutter-entertainment-plc-nyseflut-q4-2024-earnings-call-transcript-1472463/",
+      "date_publication": "2025-03-04",
+      "consulte_le": "2026-07-16"
     }
   ],
   "fonctionnement_operationnel": {
@@ -286,8 +295,8 @@
   "seo": {
     "slug": "fanduel-your-way-aceai-2025",
     "title": "FanDuel : paris personnalises Your Way et assistant genAI AceAI - 1 client sur 20 au Super Bowl (2025)",
-    "meta_description": "FanDuel personnalise l'offre de paris via Your Way (pricing IA) et l'assistant genAI AceAI ; au Super Bowl 2025, 1 client sur 20 l'a utilise, 90% placant des paris autrement impossibles.",
-    "resume_citable": "FanDuel personnalise l'offre de paris avec Your Way, un constructeur de combines cote par ses modeles de pricing IA, complete par l'assistant genAI AceAI : selon les resultats T4 2024 de Flutter, environ 1 client sur 20 a utilise Your Way au Super Bowl 2025 et 90 pour cent d'entre eux ont place des paris impossibles sans cette personnalisation, sur une journee a 3 millions de clients actifs et 470 millions de dollars mises.",
+    "meta_description": "FanDuel personnalise l'offre de paris via Your Way (pricing IA) et l'assistant genAI AceAI ; au Super Bowl 2025, 1 client sur 20 l'a utilise et 90% des paris places etaient impossibles sans la personnalisation.",
+    "resume_citable": "FanDuel personnalise l'offre de paris avec Your Way, un constructeur de combines cote par ses modeles de pricing IA, complete par l'assistant genAI AceAI : sur la conference de resultats T4 2024 de Flutter, le CEO Peter Jackson indique qu'environ 1 client sur 20 a utilise Your Way au Super Bowl 2025 et qu'environ 90 pour cent des paris places auraient ete impossibles sans cette personnalisation, sur une journee a 3 millions de clients actifs et 470 millions de dollars mises.",
     "faq": [
       {
         "q": "Comment FanDuel personnalise l'offre de paris ?",
@@ -295,7 +304,7 @@
       },
       {
         "q": "Quel resultat chiffre est documente ?",
-        "a": "Selon les resultats T4 2024 de Flutter, environ 1 client sur 20 a utilise Your Way au Super Bowl 2025 et 90 pour cent d'entre eux ont place des paris qu'ils n'auraient pas pu faire sans cette personnalisation."
+        "a": "Sur la conference de resultats T4 2024 de Flutter, le CEO Peter Jackson indique qu'environ 1 client sur 20 a utilise Your Way au Super Bowl 2025 et qu'environ 90 pour cent des paris places n'auraient pas ete possibles sans cette personnalisation."
       }
     ]
   },

@@ -42,12 +42,15 @@ const CONC = 8;
 const UA = 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36';
 
 // --- normalisation : on compare du texte, pas de la typographie ---
-const ENT = { '&nbsp;': ' ', '&amp;': '&', '&quot;': '"', '&#39;': "'", '&apos;': "'", '&lt;': '<', '&gt;': '>', '&mdash;': '-', '&ndash;': '-', '&rsquo;': "'", '&lsquo;': "'", '&ldquo;': '"', '&rdquo;': '"', '&hellip;': '...', '&eacute;': 'e', '&egrave;': 'e', '&agrave;': 'a' };
+const ENT = { '&nbsp;': ' ', '&amp;': '&', '&quot;': '"', '&#39;': "'", '&apos;': "'", '&lt;': '<', '&gt;': '>', '&mdash;': '-', '&ndash;': '-', '&rsquo;': "'", '&lsquo;': "'", '&ldquo;': '"', '&rdquo;': '"', '&hellip;': '...', '&eacute;': 'e', '&egrave;': 'e', '&agrave;': 'a', '&pound;': '£', '&euro;': '€', '&yen;': '¥', '&reg;': '(r)', '&trade;': '(tm)' };
 function norm(s) {
   return String(s || '')
+    // Hexa AVANT decimal : &#x2019; (apostrophe) etait laisse tel quel, donc toute citation
+    // apostrophee sur un site encodant en hexa etait condamnee d'office (cas FanDuel).
+    .replace(/&#x([0-9a-f]+);/gi, (_, h) => String.fromCharCode(parseInt(h, 16)))
     .replace(/&#(\d+);/g, (_, d) => String.fromCharCode(+d))
     .replace(/&[a-z]+;/gi, (m) => ENT[m.toLowerCase()] ?? ' ')
-    .replace(/[‘’ʼ′]/g, "'")
+    .replace(/[‘’ʼ′Õ]/g, "'") // Õ : apostrophe MacRoman (0xD5) telle que sortie des PDF anciens
     .replace(/[“”«»″]/g, '"')
     .replace(/[‐-―−]/g, '-')
     .replace(/…/g, '...')
@@ -76,6 +79,10 @@ function stripHtml(html) {
     .replace(/<script[^>]*>([\s\S]*?)<\/script>/gi, (_, js) => ' ' + unescapeEmbedded(js) + ' ')
     .replace(/<style[\s\S]*?<\/style>/gi, ' ')
     .replace(/<[^>]*\salt=(?:"([^"]*)"|'([^']*)')[^>]*>/gi, (_, d, s) => ' ' + (d ?? s ?? '') + ' ')
+    // Les balises INLINE ne creent pas d'espace dans un navigateur : <span>f</span><span>ashion</span>
+    // se lit "fashion". Les remplacer par une espace coupait le mot en deux ("f ashion") et condamnait
+    // une citation exacte (communique H&M colle depuis Word). On imite le rendu : inline -> rien.
+    .replace(/<\/?(?:span|a|b|i|u|em|strong|sup|sub|small|mark|abbr|cite|q|code|font|wbr)(?:\s[^>]*)?>/gi, '')
     .replace(/<[^>]+>/g, ' ');
 }
 // --- extraction PDF (zlib est natif : toujours zero dependance externe) ---
@@ -134,7 +141,13 @@ function pdfText(buf) {
   }
   const text = out.join('\n');
   const letters = (text.match(/[a-z]/gi) || []).length;
-  return { text, partial: hexOps > 0 || letters < 200 || encrypted || failed > streams.length / 2 };
+  // Les PDF LaTeX positionnent chaque mot par des operateurs de placement, sans jamais emettre
+  // d'espace : l'extraction rend "Promotionalcampaignscangrowauserbase". Le texte est plein de
+  // lettres (le garde `letters < 200` ne voit rien) mais AUCUNE citation multi-mots ne peut y
+  // correspondre. Sans ce test, tout papier academique condamnait ses citations a tort.
+  const spaces = (text.match(/ /g) || []).length;
+  const noSpacing = letters > 400 && spaces / letters < 0.05;
+  return { text, partial: hexOps > 0 || letters < 200 || encrypted || noSpacing || failed > streams.length / 2 };
 }
 
 // la citation peut etre stockee avec des guillemets englobants ou une ponctuation finale
@@ -214,6 +227,12 @@ for (const it of items) {
   if (!it.url) { rows.push({ ...it, verdict: 'INJOIGNABLE', why: 'pas d url' }); continue; }
   if (LIMIT && !targetUrls.includes(it.url)) continue;
   const test = (txt) => variants(it.citation).some(v => v.length > 8 && txt.includes(v));
+  // Un article sur une marque la nomme. Si la page lue ne contient meme pas son nom, on n'a pas lu
+  // l'article : redirection silencieuse en 200 vers un index (Gucci, Instacart), mur de consentement
+  // (Yahoo), page remaniee qui parle desormais d'un autre client (Wiley). Verdict INJOIGNABLE, jamais
+  // ABSENTE : on perd du signal, on ne condamne pas a tort.
+  const brandKey = norm(String(it.marque || '').split(/[ (]/)[0]).replace(/[^a-z0-9]/g, '');
+  const offTopic = (txt) => brandKey.length >= 4 && !txt.replace(/[^a-z0-9]/g, '').includes(brandKey);
   const r = await getText(it.url);
   let found = r.ok && test(r.text);
   // Repli sur archive_url : la source vit (schema : url = canonique, archive_url = la preuve), mais
@@ -227,6 +246,7 @@ for (const it of items) {
   }
   if (found) { rows.push({ ...it, verdict: 'OK', why: via.trim() }); continue; }
   if (!r.ok) { rows.push({ ...it, verdict: 'INJOIGNABLE', why: r.why }); continue; }
+  if (offTopic(r.text)) { rows.push({ ...it, verdict: 'INJOIGNABLE', why: 'la page lue ne mentionne pas la marque (redirection, mur de consentement ou page remaniee)' }); continue; }
   // Une correspondance positive reste fiable meme sur une extraction partielle. En revanche, ne pas
   // trouver une citation dans un document qu'on n'a lu qu'en partie ne prouve rien : c'est INJOIGNABLE.
   if (r.partial) { rows.push({ ...it, verdict: 'INJOIGNABLE', why: 'source non extractible (pdf chiffre/CID, ou page rendue cote client)' }); continue; }

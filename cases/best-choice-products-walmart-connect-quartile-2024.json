@@ -65,26 +65,26 @@
     }
   ],
   "objectif_business": "Faire travailler le budget Sponsored Products sur Walmart sans micro-pilotage manuel, en laissant l'IA ajuster enchères, budgets et placements au fil de la demande.",
-  "points_cles": ["Optimisation IA des Sponsored Products sur Walmart Connect (encheres, budget, placements en temps reel).", "Operee par le partenaire Quartile en Managed Serve via l'API Walmart Connect.", "Test octobre 2024 : ROAS +27%, conversions +17%, ventes attribuees +50%.", "Preuve B, statut vivant confirme."],
-  "description": "Best Choice Products, marque de mobilier, jouets et articles de plein air vendue sur Walmart, a confie ses campagnes Sponsored Products a Quartile, partenaire ad-tech du Walmart Connect Partner Network. La technologie de Quartile ajuste en temps reel les enchères, reaffecte les budgets et affine les placements sur le site et l'application Walmart, en s'appuyant sur les donnees de conversion et d'engagement pour cibler selon l'appareil et le moment. Sur une periode de test du 10 au 25 octobre 2024, la marque a obtenu un ROAS en hausse de 27 pour cent, des conversions en hausse de 17 pour cent et un chiffre d'affaires attribue en hausse de 50 pour cent. C'est un cas d'optimisation et d'automatisation de l'achat media sur retail media, pas de generation creative.",
+  "points_cles": ["Optimisation IA des Sponsored Products sur Walmart Connect (encheres, budget, placements en temps reel).", "Operee par le partenaire Quartile en Managed Serve via l'API Walmart Connect.", "En annee glissante : ROAS +27%, taux de conversion +17%, ventes totales +50%.", "Preuve B, statut vivant confirme."],
+  "description": "Best Choice Products, marque de mobilier, jouets et articles de plein air vendue sur Walmart, a confie ses campagnes Sponsored Products a Quartile, partenaire ad-tech du Walmart Connect Partner Network. La technologie de Quartile ajuste en temps reel les enchères, reaffecte les budgets et affine les placements sur le site et l'application Walmart, en s'appuyant sur les donnees de conversion et d'engagement pour cibler selon l'appareil et le moment. Walmart Connect date la campagne du 10 au 25 octobre 2024, mais les gains publies sont mesures en annee glissante (donnees Walmart first-party, janvier 2024-janvier 2025 contre janvier 2023-janvier 2024), pas sur ces quinze jours. Sur cette base annuelle, Quartile rapporte un ROAS en hausse de 27 pour cent, un taux de conversion en hausse de 17 pour cent et des ventes totales en hausse de 50 pour cent. C'est un cas d'optimisation et d'automatisation de l'achat media sur retail media, pas de generation creative.",
   "resultats": [
     {
-      "metrique": "ROAS",
+      "metrique": "ROAS, en annee glissante",
       "valeur": "+27%",
-      "citation_exacte": "27% increase in ROAS",
-      "source_ref": "S1"
+      "citation_exacte": "+27% improvement in ROAS",
+      "source_ref": "S2"
     },
     {
-      "metrique": "Conversions",
+      "metrique": "Taux de conversion, en annee glissante",
       "valeur": "+17%",
-      "citation_exacte": "17% increase in conversions",
-      "source_ref": "S1"
+      "citation_exacte": "+17% increase in conversion rate YoY",
+      "source_ref": "S2"
     },
     {
-      "metrique": "Chiffre d'affaires attribue",
+      "metrique": "Ventes totales, en annee glissante",
       "valeur": "+50%",
-      "citation_exacte": "50% increase in total attributed sales revenue",
-      "source_ref": "S1"
+      "citation_exacte": "+50% increase in total sales YoY",
+      "source_ref": "S2"
     }
   ],
   "niveau_preuve": {
@@ -113,6 +113,15 @@
     },
     {
       "ref": "S2",
+      "type": "customer_story_plateforme",
+      "fiabilite": "T2_officiel_interesse",
+      "titre": "Paced to Win: How Quartile Helped Best Choice Products Unlock Walmart Connect",
+      "url": "https://www.quartile.com/case-studies/how-quartile-helped-best-choice-products-unlock-walmart-connect",
+      "date_publication": "2025",
+      "consulte_le": "2026-07-16"
+    },
+    {
+      "ref": "S3",
       "type": "blog_officiel",
       "fiabilite": "T4_secondaire",
       "titre": "Walmart Ad Revenue Grew 46% Last Year. Are You Capturing the Upside? (Quartile, cite Best Choice Products)",
@@ -240,9 +249,9 @@
   },
   "seo": {
     "slug": "best-choice-products-walmart-connect-quartile-2024",
-    "title": "Best Choice Products : optimisation IA des Sponsored Products sur Walmart Connect - ROAS +27%, ventes attribuees +50% (2024)",
-    "meta_description": "Best Choice Products a confie ses Sponsored Products Walmart Connect a l'IA de Quartile : ROAS +27%, conversions +17% et chiffre d'affaires attribue +50% sur un test d'octobre 2024.",
-    "resume_citable": "Best Choice Products a fait piloter ses campagnes Sponsored Products sur Walmart Connect par l'IA de Quartile (enchères, budget et placements en temps reel) et rapporte, sur un test d'octobre 2024, un ROAS en hausse de 27%, des conversions en hausse de 17% et un chiffre d'affaires attribue en hausse de 50%.",
+    "title": "Best Choice Products : optimisation IA des Sponsored Products sur Walmart Connect - ROAS +27%, ventes totales +50% (2024)",
+    "meta_description": "Best Choice Products a confie ses Sponsored Products Walmart Connect a l'IA de Quartile : ROAS +27%, taux de conversion +17% et ventes totales +50% en annee glissante.",
+    "resume_citable": "Best Choice Products a fait piloter ses campagnes Sponsored Products sur Walmart Connect par l'IA de Quartile (enchères, budget et placements en temps reel) et rapporte, en annee glissante, un ROAS en hausse de 27%, un taux de conversion en hausse de 17% et des ventes totales en hausse de 50%.",
     "faq": [
       {
         "q": "Que fait l'IA de Quartile sur Walmart Connect ?",
@@ -250,7 +259,7 @@
       },
       {
         "q": "Sur quelle periode ces resultats ont-ils ete mesures ?",
-        "a": "Sur un test du 10 au 25 octobre 2024, avec des donnees Walmart first-party comparant l'annee ecoulee a la precedente."
+        "a": "La campagne citee par Walmart Connect court du 10 au 25 octobre 2024, mais les gains publies sont mesures en annee glissante : donnees Walmart first-party de janvier 2024 a janvier 2025, comparees a janvier 2023-janvier 2024."
       }
     ]
   },

@@ -38,7 +38,7 @@
     ],
     "objectif_metrique": [
       "taux de resolution autonome",
-      "taux d'assistance client",
+      "taux d'exactitude des reponses",
       "delai de mise en production"
     ]
   },
@@ -70,8 +70,8 @@
     }
   ],
   "objectif_business": "Repondre instantanement aux questions courantes des clients dans l'app mobile, resoudre un maximum de cas sans conseiller et raccourcir drastiquement le delai entre l'idee et la mise en production d'un agent.",
-  "points_cles": ["Agent client genAI autonome dans l'app mobile ENGIE (facturation, compteurs, recharge VE).", "Salesforce Agentforce ancre sur le CRM, integre avec Capgemini.", "71% des cas resolus seul, 83% des utilisateurs assistes, mise en production en moins d'un mois.", "Niveau de preuve B, statut vivant confirme."],
-  "description": "ENGIE a integre Agentforce nativement dans Salesforce pour ses clients belges disposant d'un contrat ou d'un compteur intelligent. L'agent, accessible dans l'application mobile ENGIE, donne des reponses immediates sur la facturation, l'energie propre, les compteurs intelligents et la recharge de vehicules electriques, et guide l'onboarding. Il resout seul 71 % des cas et assiste 83 % des utilisateurs. La mise en production, menee avec Capgemini, a pris moins d'un mois, la ou les projets IA precedents demandaient environ neuf mois.",
+  "points_cles": ["Agent client genAI autonome dans l'app mobile ENGIE (facturation, compteurs, recharge VE).", "Salesforce Agentforce ancre sur le CRM, integre avec Capgemini.", "71% des cas resolus seul, 83% d'exactitude des reponses, mise en production en moins d'un mois.", "Niveau de preuve B, statut vivant confirme."],
+  "description": "ENGIE a integre Agentforce nativement dans Salesforce pour ses clients belges disposant d'un contrat ou d'un compteur intelligent. L'agent, accessible dans l'application mobile ENGIE, donne des reponses immediates sur la facturation, l'energie propre, les compteurs intelligents et la recharge de vehicules electriques, et guide l'onboarding. Il resout seul 71 % des cas, avec 83 % d'exactitude des reponses. La mise en production, menee avec Capgemini, a pris moins d'un mois, la ou les projets IA precedents demandaient environ neuf mois.",
   "resultats": [
     {
       "metrique": "Cas resolus de facon autonome par l'agent",
@@ -80,9 +80,9 @@
       "source_ref": "S1"
     },
     {
-      "metrique": "Utilisateurs assistes par Agentforce",
+      "metrique": "Exactitude des reponses de l'agent",
       "valeur": "83 %",
-      "citation_exacte": "assisting 83% of users with Agentforce",
+      "citation_exacte": "delivering consistent, unified messaging across every interaction with 83% accuracy",
       "source_ref": "S1"
     },
     {
@@ -94,7 +94,7 @@
   ],
   "niveau_preuve": {
     "niveau": "B",
-    "justification": "Etude de cas plateforme chiffree (Salesforce) avec taux de resolution et d'assistance, reprise dans un article de la meme source. Sources concordantes mais toutes deux de l'editeur, d'ou un niveau B."
+    "justification": "Etude de cas plateforme chiffree (Salesforce) avec taux de resolution et d'exactitude, reprise dans un article de la meme source. Sources concordantes mais toutes deux de l'editeur, d'ou un niveau B."
   },
   "dates": {
     "lancement": "2024-2025 (deploiement Agentforce cote client belge)",
@@ -244,7 +244,7 @@
       },
       {
         "action": "Mettre en production dans l'app et suivre le taux de resolution autonome.",
-        "livrable": "Agent live avec tableau de bord resolution et assistance"
+        "livrable": "Agent live avec tableau de bord resolution et exactitude"
       }
     ],
     "equipe": "1 admin Salesforce + 1 owner de la base de connaissance + integrateur au demarrage; les conseillers traitent les escalades."
@@ -252,8 +252,8 @@
   "seo": {
     "slug": "engie-agentforce-agent-client-belgique",
     "title": "ENGIE : agent client genAI Agentforce - 71 % des cas resolus seul (Belgique)",
-    "meta_description": "En Belgique, l'agent Agentforce d'ENGIE resout 71 % des cas de facon autonome et assiste 83 % des utilisateurs dans l'app mobile, mis en production en moins d'un mois avec Capgemini.",
-    "resume_citable": "L'agent client genAI Agentforce d'ENGIE, integre a l'app mobile en Belgique, resout seul 71 % des cas et assiste 83 % des utilisateurs, deploye en moins d'un mois contre environ neuf pour les projets IA anterieurs.",
+    "meta_description": "En Belgique, l'agent Agentforce d'ENGIE resout 71 % des cas de facon autonome avec 83 % d'exactitude des reponses dans l'app mobile, mis en production en moins d'un mois avec Capgemini.",
+    "resume_citable": "L'agent client genAI Agentforce d'ENGIE, integre a l'app mobile en Belgique, resout seul 71 % des cas avec 83 % d'exactitude des reponses, deploye en moins d'un mois contre environ neuf pour les projets IA anterieurs.",
     "faq": [
       {
         "q": "Que fait l'agent Agentforce d'ENGIE ?",

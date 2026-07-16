@@ -1,8 +1,8 @@
 {
   "seo": {
     "title": "ENGIE: Agentforce genAI customer agent - 71% of cases resolved on its own (Belgium)",
-    "meta_description": "In Belgium, ENGIE's Agentforce agent resolves 71% of cases autonomously and assists 83% of users in the mobile app, in production in less than a month with Capgemini.",
-    "resume_citable": "ENGIE's Agentforce genAI customer agent, integrated into the mobile app in Belgium, resolves 71% of cases on its own and assists 83% of users, deployed in less than a month versus about nine for prior AI projects.",
+    "meta_description": "In Belgium, ENGIE's Agentforce agent resolves 71% of cases autonomously with 83% response accuracy in the mobile app, in production in less than a month with Capgemini.",
+    "resume_citable": "ENGIE's Agentforce genAI customer agent, integrated into the mobile app in Belgium, resolves 71% of cases on its own with 83% response accuracy, deployed in less than a month versus about nine for prior AI projects.",
     "faq": [
       {
         "q": "What does ENGIE's Agentforce agent do?",
@@ -17,15 +17,15 @@
   "pattern": "Autonomous genAI customer agent integrated with the CRM",
   "etape_parcours": "post-purchase",
   "objectif_business": "Answer customers' common questions instantly in the mobile app, resolve as many cases as possible without an advisor, and drastically shorten the time from idea to production for an agent.",
-  "description": "ENGIE integrated Agentforce natively into Salesforce for its Belgian customers with a contract or a smart meter. The agent, available in the ENGIE mobile app, gives immediate answers on billing, clean energy, smart meters, and electric vehicle charging, and guides onboarding. It resolves 71% of cases on its own and assists 83% of users. The go-live, carried out with Capgemini, took less than a month, where prior AI projects required about nine months.",
-  "points_cles": ["Autonomous genAI customer agent in the ENGIE mobile app (billing, meters, EV charging).", "Salesforce Agentforce anchored on the CRM, integrated with Capgemini.", "71% of cases resolved on its own, 83% of users assisted, go-live in less than a month.", "Evidence level B, confirmed live status."],
+  "description": "ENGIE integrated Agentforce natively into Salesforce for its Belgian customers with a contract or a smart meter. The agent, available in the ENGIE mobile app, gives immediate answers on billing, clean energy, smart meters, and electric vehicle charging, and guides onboarding. It resolves 71% of cases on its own, with 83% response accuracy. The go-live, carried out with Capgemini, took less than a month, where prior AI projects required about nine months.",
+  "points_cles": ["Autonomous genAI customer agent in the ENGIE mobile app (billing, meters, EV charging).", "Salesforce Agentforce anchored on the CRM, integrated with Capgemini.", "71% of cases resolved on its own, 83% response accuracy, go-live in less than a month.", "Evidence level B, confirmed live status."],
   "resultats": [
     { "metrique": "Cases resolved autonomously by the agent" },
-    { "metrique": "Users assisted by Agentforce" },
+    { "metrique": "Agent response accuracy" },
     { "metrique": "Time to go-live, versus about nine months for prior AI projects" }
   ],
   "niveau_preuve": {
-    "justification": "A quantified platform case study (Salesforce) with resolution and assistance rates, repeated in an article from the same source. Concordant sources but both from the publisher, hence level B."
+    "justification": "A quantified platform case study (Salesforce) with resolution and accuracy rates, repeated in an article from the same source. Concordant sources but both from the publisher, hence level B."
   },
   "stack_technique": [
     { "detail": "Salesforce-native genAI agent, anchored on the knowledge base and CRM context; resolves 71% of cases on its own in the app." },
@@ -86,7 +86,7 @@
       },
       {
         "action": "Go live in the app and track the autonomous resolution rate.",
-        "livrable": "Agent live with a resolution and assistance dashboard"
+        "livrable": "Agent live with a resolution and accuracy dashboard"
       }
     ],
     "equipe": "1 Salesforce admin + 1 knowledge base owner + an integrator at the start; advisors handle the escalations."

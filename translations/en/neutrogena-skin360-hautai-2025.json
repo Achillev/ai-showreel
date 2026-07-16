@@ -17,14 +17,23 @@
   "pattern": "AI skin diagnosis from a selfie leading to a product recommendation",
   "etape_parcours": "consideration",
   "objectif_business": "Make the skin diagnosis the personalized entry point to the brand, with more accurate product recommendations to convert and retain across the Neutrogena channels.",
-  "description": "Neutrogena Skin360, launched in 2020, scans a selfie and scores skin health. In September 2025, Kenvue rebuilt the experience with Haut.AI. The new engine assesses eight skin indicators (hydration, smoothness, even skin tone, radiance, firmness, dark spots, wrinkles, clarity) and produces an overall Skin360 score rated from 1 to 10. The experience starts with Haut.AI's LIQA system, which guides the user to take a well-framed and well-lit selfie, a condition for a reliable analysis. The refresh brings an analysis engine with enhanced algorithmic accuracy, to identify individual concerns more finely and deliver more accurate product recommendations. The rebuilt experience is available in the United States and Canada via the Neutrogena brand sites and selected retail partners. Neutrogena notes that the tool does not replace a medical consultation.",
+  "points_cles": [
+    "Kenvue rebuilt the Skin360 skin diagnosis with Haut.AI in September 2025, in the United States and Canada.",
+    "The engine scores eight skin indicators and an overall score from 1 to 10, after LIQA image quality control.",
+    "A proposed $4.7M settlement targets the collection of facial geometry via Skin360 between 2019 and 2023 (BIPA, Illinois).",
+    "Kenvue denies collecting any biometric data. The service still runs; the suit concerns the earlier Perfect Corp engine."
+  ],
+  "description": "Neutrogena Skin360, launched as a mobile app in late 2019 and on the web in 2020, scans a selfie and scores skin health. In September 2025, Kenvue rebuilt the experience with Haut.AI. The new engine assesses eight skin indicators (hydration, smoothness, even skin tone, radiance, firmness, dark spots, wrinkles, clarity) and produces an overall Skin360 score rated from 1 to 10. The experience starts with Haut.AI's LIQA system, which guides the user to take a well-framed and well-lit selfie, a condition for a reliable analysis. The refresh brings an analysis engine with enhanced algorithmic accuracy, to identify individual concerns more finely and deliver more accurate product recommendations. The rebuilt experience is available in the United States and Canada via the Neutrogena brand sites and selected retail partners. Neutrogena notes that the tool does not replace a medical consultation. The product also carries a biometric dispute in the United States. In Melzer v. Johnson & Johnson Consumer Inc. (D.N.J., No. 3:22-cv-03149), four plaintiffs accuse the company of collecting their facial geometry via Skin360 without informed written consent, in violation of the Illinois Biometric Information Privacy Act. On 17 February 2026, the parties filed a motion for preliminary approval of a $4.7M settlement covering roughly 11,000 people who ran a scan from Illinois between 9 December 2019 and 5 May 2023. Over that period the scan was run by Perfect Corp, not by Haut.AI, and the original mobile app was discontinued on or about 20 April 2023 while the web experience continued. The company denies collecting biometric data and admits no wrongdoing; the settlement remains subject to court approval. The prospective relief provides for deletion of the images from that period, a user notice and written consent mechanism, and a retention and destruction policy.",
   "resultats": [
     { "metrique": "Skin indicators, overall score from 1 to 10" },
     { "metrique": "Accuracy of the analysis engine" },
-    { "metrique": "Markets of the rebuilt deployment" }
+    { "metrique": "Markets of the rebuilt deployment" },
+    { "metrique": "Proposed settlement (BIPA Illinois) over the collection of facial geometry via Skin360: non-reversionary fund paid by JJCI (n/k/a Kenvue Brands LLC), class estimated at 11,000 people, period from 9 December 2019 to 5 May 2023. Motion for preliminary approval filed 17 February 2026; court approval not confirmed to date." },
+    { "metrique": "JJCI's position (n/k/a Kenvue Brands LLC): a settlement is not a conviction. The company denies capturing or collecting biometric data via Skin360 and admits no wrongdoing." },
+    { "metrique": "Facial scanning engine in service during the period covered by the settlement (2019-2023): Perfect Corp, not Haut.AI, which only arrives with the September 2025 refresh. The suit therefore does not target the engine described in this case." }
   ],
   "niveau_preuve": {
-    "justification": "Refresh documented by a joint Haut.AI / Neutrogena press release naming the leads, and press coverage (Fortune, Drug Store News). Quantified product details (8 indicators, score 1 to 10) but no public business metrics, hence C."
+    "justification": "The court record in Melzer v. Johnson & Johnson Consumer Inc. (D.N.J.) is a primary source documenting the deployment and its scale: launch dates of the mobile app and the web version, discontinuation of the app in April 2023, the scan vendor for that period (Perfect Corp), roughly 11,000 people who scanned from Illinois alone, and a prospective obligation to maintain consent for Skin360. Add the joint Haut.AI / Neutrogena release on the 2025 refresh and the press (Fortune, Drug Store News). Business metrics remain absent, but the evidence of deployment is primary, hence A. Note: the filing is a motion for preliminary approval, not a ruling on the merits."
   },
   "stack_technique": [
     { "detail": "Computer-vision skin analysis engine: eight indicators (hydration, smoothness, evenness, radiance, firmness, spots, wrinkles, clarity) and an overall score from 1 to 10." },
@@ -62,8 +71,8 @@
   "replication": {
     "playbook": [
       {
-        "action": "Frame the legal side (biometric data, explicit consent, non-medical nature) and choose the skin analysis API.",
-        "livrable": "Validated compliance file and signed API contract."
+        "action": "Frame the legal side (biometric data, informed written consent collected before the scan, published retention and destruction policy, non-medical nature) and choose the skin analysis API. This is the risk centre of the pattern, not a formality: the Skin360 dispute is about consent, not about diagnostic quality.",
+        "livrable": "Validated compliance file, notice and consent in place, signed API contract."
       },
       {
         "action": "Integrate the analysis API and the image quality control into the web or app journey.",
@@ -80,13 +89,15 @@
     ],
     "equipe": "1 e-commerce PM + 1-2 front/integration devs + legal support for the biometrics angle; the vendor provides the analysis engine.",
     "prerequis_data": [
-      "biometric consent and compliant image processing",
+      "informed written biometric consent, collected before the scan",
+      "published retention and destruction policy for the images",
       "product catalog with skin attributes",
       "possibly a scan history for tracking"
     ],
     "prerequis_orga": [
       "integration into the e-commerce journey",
-      "legal framing on the non-medical nature"
+      "legal framing on the non-medical nature",
+      "clarify by contract who captures and who processes the image: delegating the scan to a vendor does not shield the brand from biometric risk"
     ],
     "stack_possible": [
       "skin analysis API (Haut.AI, Perfect Corp, ModiFace)",
@@ -96,9 +107,9 @@
     "premiere_etape": "Plug a skin diagnosis API into a product page with high purchase hesitation and measure conversion and repeat scan."
   },
   "statut_vivant": {
-    "note": "Skin360 has existed since 2020 and was rebuilt with Haut.AI in September 2025, available in the US and Canada on brand sites and retail partners. A recent and strong sign of vitality."
+    "note": "Skin360 has existed since 2019-2020 and was rebuilt with Haut.AI in September 2025, available in the US and Canada on brand sites and retail partners. The original mobile app was discontinued on or about 20 April 2023, but the web experience continued and is the one that was rebuilt. The February 2026 court record requires the company to maintain a user notice and written consent mechanism for Skin360, which confirms the service still runs. Status confirmed, with an unresolved biometric dispute over the 2019-2023 period."
   },
   "transposable_ue": {
-    "note": "Diagnosis based on a selfie, so biometric data under GDPR: explicit consent and minimization. The technical partner Haut.AI is European (Estonia), which eases data alignment; current deployment is US and Canada, and an EU extension would require bringing the image processing into compliance."
+    "note": "Diagnosis based on a selfie: under GDPR, facial geometry is Article 9 biometric data, requiring explicit consent, minimization, and a retention policy. The risk is not theoretical. In the United States, JJCI (n/k/a Kenvue Brands LLC) filed a motion for preliminary approval on 17 February 2026 for a $4.7M settlement to close an Illinois class action (BIPA) targeting precisely the collection of facial geometry via Skin360 between December 2019 and May 2023, a period when the scan was run by Perfect Corp and not by Haut.AI. The company denies collecting biometric data and admits no wrongdoing. The prospective relief sketches the standard to aim for before replicating the pattern: deletion of the images from that period, a user notice and written consent mechanism, and a written retention and destruction policy. The current technical partner Haut.AI is European (Estonia), which eases data alignment; current deployment is US and Canada, and an EU extension would require bringing the image processing into compliance."
   }
 }
