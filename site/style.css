@@ -83,7 +83,7 @@ body.nav-hidden .head-links { transform: translateY(-102%); }
 .brand-mark { color: var(--accent); }
 .brand-sub { font-weight: 400; font-size: 12.5px; color: var(--ink-faint); letter-spacing: 0; }
 .head-links nav { display: flex; gap: 22px; font-size: 14.5px; font-weight: 500; }
-.head-links nav a { position: relative; color: var(--ink-soft); padding: 3px 0; transition: color .15s ease; text-decoration: none; }
+.head-links nav a { position: relative; color: var(--ink); font-weight: 600; padding: 3px 0; transition: color .15s ease; text-decoration: none; }
 .head-links nav a::after { content: ""; position: absolute; left: 0; right: 0; bottom: -3px; height: 2px; border-radius: 2px; background: var(--accent); transform: scaleX(0); transform-origin: left; transition: transform .24s cubic-bezier(.4,0,.2,1); }
 .head-links nav { max-width: 1120px; margin: 0 auto; padding: 12px 24px; }
 .nav-utils { display: flex; align-items: center; gap: 14px; flex-shrink: 0; }

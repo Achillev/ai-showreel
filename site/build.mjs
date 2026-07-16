@@ -277,11 +277,11 @@ function page(title, body, { desc = '', jsonld = '', canonical = '', path = '' }
   const graph = { '@context': 'https://schema.org', '@graph': [org, { '@type': 'WebSite', '@id': SITE + '/#site', url: SITE, name: 'AI Showreel', inLanguage: LANG, publisher: { '@id': SITE + '/#org' } }, ...nodes] };
   return normalizeHtmlText(`<!doctype html><html lang="${LANG}"><head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-<script>document.documentElement.className+=' js-anim';try{document.documentElement.setAttribute('data-theme',localStorage.getItem('theme')||'dark');}catch(e){document.documentElement.setAttribute('data-theme','dark');}</script>
+<script>document.documentElement.className+=' js-anim';try{var _s=localStorage.getItem('theme'),_h=new Date().getHours();document.documentElement.setAttribute('data-theme',_s||((_h>=19||_h<7)?'dark':'light'));}catch(e){document.documentElement.setAttribute('data-theme','light');}</script>
 <title>${esc(title)}</title>
 <meta name="description" content="${esc(desc)}">
 <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
-<meta name="theme-color" content="#0A0E1A" media="(prefers-color-scheme: dark)"><meta name="theme-color" content="#0A0E1A">
+<meta name="theme-color" content="#0A0E1A" media="(prefers-color-scheme: dark)"><meta name="theme-color" content="#FAF6EE">
 <link rel="canonical" href="${esc(can)}">${BILINGUAL ? `
 <link rel="alternate" hreflang="fr" href="${esc(frUrl)}">
 <link rel="alternate" hreflang="en" href="${esc(enUrl)}">
