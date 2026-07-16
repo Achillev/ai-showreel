@@ -1,33 +1,46 @@
 {
   "seo": {
-    "title": "Amazon: item-to-item recommendation engine - up to 35% of purchases driven by recommendations (McKinsey)",
-    "meta_description": "Amazon's item-to-item collaborative filtering, in production since the late 1990s, serves recommendations across every surface of the site. McKinsey estimated that 35% of purchases came from recommendations.",
-    "resume_citable": "Amazon's item-to-item recommendation engine, designed around 1997 and recognized by IEEE in 2017, powers the homepage, product page, cart, and email; McKinsey estimated in 2013 that 35% of purchases on Amazon came from recommendations.",
+    "title": "Amazon: item-to-item recommendation engine - in service since 1997, recognized by IEEE in 2017",
+    "meta_description": "Amazon's item-to-item collaborative filtering, in service since 1997, recognized by IEEE in 2017. Amazon has never published an impact figure.",
+    "resume_citable": "Amazon's item-to-item recommendation engine, in service since around 1997 and named in 2017 by IEEE Internet Computing as the paper that had best withstood the test of time, was already serving most of the site's pages and many email campaigns by 2003; Amazon has never published an impact figure, and the widely cited \"35% of purchases\" is a 2013 McKinsey estimate the company has never confirmed.",
     "faq": [
       {
         "q": "How does Amazon's recommendation work?",
         "a": "Through item-to-item collaborative filtering: the algorithm starts from each product and precomputes the items often bought or viewed together, then surfaces them in real time based on what the visitor is looking at."
       },
       {
-        "q": "Where does the 35% figure come from?",
-        "a": "From a McKinsey estimate published in 2013. It is not a figure disclosed by Amazon in its financial results."
+        "q": "Where does the 35% of purchases figure come from?",
+        "a": "From an estimate published by McKinsey in October 2013, with no methodology disclosed. Amazon has never confirmed it and publishes no figure on what its recommendations contribute. Professor Anuj Kumar (University of Florida) finds the estimate hard to believe."
+      },
+      {
+        "q": "Has Amazon published an impact figure for its recommendations?",
+        "a": "No. Its 2003 paper only claims, without quantifying it, that the click-through and conversion rates of recommendations vastly exceed those of untargeted content such as banner ads."
       }
     ]
   },
   "pattern": "Item-to-item collaborative filtering product recommendation engine, served across every touchpoint",
   "etape_parcours": "consideration -> purchase",
   "objectif_business": "Surface the right product at the right moment for each visitor, on every surface of the site, with no manual merchandising work.",
-  "description": "Amazon developed a recommendation method known as item-to-item collaborative filtering. Rather than matching a customer with other similar customers, the algorithm starts from each item and precomputes the products that frequently appear together in purchase and browsing histories. When a visitor views or buys a product, the system surfaces in real time the items most associated with it, weighted by their proximity to what the person has already looked at. This engine feeds the homepage carousels, the \"Frequently bought together\" blocks on product pages, the cart recommendations, and the email campaigns. The method was designed around 1997 at Amazon by Greg Linden, Brent Smith, and Jeremy York, then described in a paper published in 2003. In 2017, the editorial board of IEEE Internet Computing named it the article in its history that had best withstood the test of time. The system remains the foundation of Amazon's recommendations, enriched since by more recent models.",
+  "points_cles": [
+    "Amazon built its own item-to-item recommendation engine around 1997, because off-the-shelf algorithms could not handle its scale.",
+    "The engine precomputes co-purchased products per item, then serves them in real time across the site and in email.",
+    "Amazon has never published an impact figure on its sales; the \"35%\" in circulation is a 2013 McKinsey estimate.",
+    "Evidence: the 2003 IEEE paper authored by Amazon, named in 2017 the one that had best withstood the test of time."
+  ],
+  "description": "Amazon developed a recommendation method known as item-to-item collaborative filtering. Rather than matching a customer with other similar customers, the algorithm starts from each item and precomputes the products that frequently appear together in purchase and browsing histories. When a visitor views or buys a product, the system surfaces in real time the items most associated with it. In 2003 its authors describe an in-house engine, built because existing algorithms could not handle the load of Amazon's tens of millions of customers and products, and already used on most of the site's pages as well as in many email campaigns. The method was designed around 1997 by Greg Linden, Brent Smith, and Jeremy York, then published in IEEE Internet Computing in 2003. In 2017, the journal's editorial board named it the article in its history that had best withstood the test of time. On commercial impact, Amazon has never published a figure. The 2003 paper only claims, without quantifying it, that the click-through and conversion rates of recommendations vastly exceed those of untargeted content such as banner ads or top-seller lists. The \"35% of purchases on Amazon come from recommendations\" line that circulates everywhere is not an Amazon figure: it is an estimate published by McKinsey in 2013, with no methodology disclosed, that the company has never confirmed. Researchers dispute it: Anuj Kumar (University of Florida) finds it hard to believe, and the study he published with Kartik Hosanagar in Information Systems Research, run at a department store rather than at Amazon, measures a different indicator - an 11% gain in sales attributable to recommendations. Finally, no public Amazon document confirms that item-to-item filtering remains the basis of the system today: the most recent primary documentation, the 2019 Amazon Science blog, retraces its history and describes more recent models that outperform it on Prime Video movie recommendations.",
   "resultats": [
     {
-      "metrique": "Share of purchases attributed to recommendations (McKinsey estimate, 2013)"
+      "metrique": "How long the item-to-item engine had been in production at Amazon: already six years in service when its authors published the paper in 2003"
     },
     {
-      "metrique": "Method in production, recognized by IEEE test of time in 2017"
+      "metrique": "Paper named by the editorial board of IEEE Internet Computing, across 20 years of archives, as the one that had best withstood the test of time"
+    },
+    {
+      "metrique": "The scale off-the-shelf algorithms could not handle, which pushed Amazon to build its own, according to its 2003 paper"
     }
   ],
   "niveau_preuve": {
-    "justification": "The mechanism and its scaling are documented by Amazon's official science blog and by an IEEE paper recognized in 2017, that is nearly three decades in production. The 35% figure is a 2013 McKinsey estimate, not a financial disclosure from Amazon, so it is not presented as a level A result."
+    "justification": "The mechanism, the scale, and the longevity are documented by Amazon itself (the 2003 IEEE paper authored by its engineers, the Amazon Science blog), and corroborated by the 2017 IEEE recognition. But Amazon has never published a quantified commercial result for its recommendations: the case therefore cannot claim level A (financial disclosure) or level B (quantified case study). The 35% of purchases figure, widely recycled, is a 2013 McKinsey estimate that the company has never confirmed and that researchers dispute; it is not retained as a result."
   },
   "fonctionnement_operationnel": {
     "cadence": "Real time at display, with a batch precompute of the item-to-item similarity tables refreshed regularly as new signals arrive.",
@@ -93,17 +106,17 @@
   },
   "stack_technique": [
     {
-      "detail": "Amazon's in-house algorithm designed around 1997 (Linden, Smith, York), published in 2003 and recognized by IEEE in 2017; still the foundation of the recommendations."
+      "detail": "Amazon's in-house algorithm designed around 1997 (Linden, Smith, York), published in 2003 and recognized by IEEE in 2017. No public Amazon document specifies its current role in the system."
     },
     {
       "detail": "Product-to-product tables built offline, the key to catalog-scale operation and real-time serving."
     },
     {
-      "detail": "Ranking of candidates at display, served on the homepage, product page, cart, and email."
+      "detail": "Ranking of candidates at display. In 2003, Amazon describes recommendations served on most of the site's pages and in many email campaigns."
     }
   ],
   "statut_vivant": {
-    "note": "Product recommendation is a structural element of the Amazon experience (homepage, product page, cart, email). Item-to-item filtering remains the base, complemented by more recent models."
+    "note": "Product recommendation remains a structural element of the Amazon experience (homepage, product page, cart, email). The current role of item-to-item filtering, however, is not publicly documented: the most recent primary source, Amazon Science in 2019, describes more recent models that outperform it on Prime Video movie recommendations."
   },
   "transposable_ue": {
     "note": "Already deployed in the EU via the local Amazon marketplaces. Product recommendation on first-party behavioral data qualifies as profiling under the GDPR (legal basis, notice, opt-out) but does not fall into the high-risk categories of the AI Act."

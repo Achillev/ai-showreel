@@ -15,7 +15,7 @@
   "intervenants": [
     {
       "nom": "John Donahoe",
-      "role": "President-directeur general, Nike (au moment de l'earnings call FY21 Q4)",
+      "role": "President-directeur general, Nike (au moment de l'earnings call FY22 Q1)",
       "source_ref": "S3"
     }
   ],
@@ -85,16 +85,16 @@
   "description": "Sur SNKRS, l'application de drops de Nike, l'Exclusive Access envoie des invitations d'achat personnalisees pour les paires les plus convoitees. Le choix des destinataires combine des signaux d'engagement in-app et l'historique de tentatives d'achat, sans criteres fixes que l'on pourrait cocher pour garantir l'invitation. Nike decrit le systeme comme evolutif : le mix de facteurs change en continu. En parallele, la couche de recommandation de l'application Nike s'appuie sur les donnees first-party de membres et sur les briques predictives issues des acquisitions de Zodiac (valeur client) et Celect (demand sensing), et Nike utilise du machine learning pour retirer les bots des lancements les plus populaires. Sur le drop de la Dunk Off-White, 90 pour cent des invitations sont allees a des membres qui n'avaient pas obtenu de collaboration Off-White au cours des deux annees precedentes.",
   "resultats": [
     {
-      "metrique": "Croissance trimestrielle des membres acheteurs recurrents (FY21 Q4)",
+      "metrique": "Croissance des membres acheteurs recurrents sur le trimestre (FY22 Q1, clos le 31 aout 2021)",
       "valeur": "+70 pour cent",
       "citation_exacte": "repeat buying members grew more than 70%",
-      "source_ref": "S1"
+      "source_ref": "S5"
     },
     {
       "metrique": "Invitations Dunk Off-White allees a des membres sans collab depuis 2 ans",
       "valeur": "90 pour cent",
-      "citation_exacte": "90% of invitations went to members",
-      "source_ref": "S1"
+      "citation_exacte": "90% of the invitees for the Off-White Dunk went to members",
+      "source_ref": "S5"
     },
     {
       "metrique": "Taille du programme Nike Membership en 2021",
@@ -105,17 +105,17 @@
   ],
   "niveau_preuve": {
     "niveau": "C",
-    "justification": "Presse etablie citant nommement Nike et reprenant les chiffres de l'earnings call FY2021 Q4 (croissance des acheteurs recurrents, ciblage SNKRS). Concordance de plusieurs sources, mais pas d'isolation financiere de la seule contribution IA, donc C plutot que A."
+    "justification": "Chiffres prononces par John Donahoe a l'earnings call FY2022 Q1 du 23 septembre 2021, repris par la presse specialisee le lendemain. Le transcript officiel Nike n'est plus en ligne (l'IR n'expose que les 4 derniers trimestres) : la trace disponible est une transcription tierce, pas un document financier primaire, et la contribution de la seule IA n'est pas isolee dans les comptes. D'ou C plutot que A."
   },
   "dates": {
     "lancement": "2018-2019 (Exclusive Access sur SNKRS ; acquisitions Zodiac 2018 et Celect 2019)",
-    "derniere_confirmation_activite": "2021 (earnings call FY21 Q4, juin 2021)",
+    "derniere_confirmation_activite": "2021 (earnings call FY22 Q1, 23 septembre 2021)",
     "verifie_le": "2026-07-11",
     "revoir_apres": "2027-01-11"
   },
   "statut_vivant": {
     "statut": "confirme",
-    "note": "SNKRS et Nike Membership restent au coeur de la strategie direct-to-consumer de Nike. L'Exclusive Access personnalise est toujours actif ; le dernier signal chiffre fort reste l'earnings FY21, la mecanique n'a pas ete dementie depuis."
+    "note": "SNKRS et Nike Membership restent au coeur de la strategie direct-to-consumer de Nike. L'Exclusive Access personnalise est toujours actif ; le dernier signal chiffre fort reste l'earnings call FY22 Q1 de septembre 2021, la mecanique n'a pas ete dementie depuis."
   },
   "sources": [
     {
@@ -153,6 +153,15 @@
       "url": "https://consumergoods.com/nikes-record-quarter-fueled-300-million-members-and-their-consumer-insights",
       "date_publication": "2021-06",
       "consulte_le": "2026-07-11"
+    },
+    {
+      "ref": "S5",
+      "type": "earnings_call",
+      "fiabilite": "T4_secondaire",
+      "titre": "NIKE, inc (NKE) Q1 2022 Earnings Call Transcript (23 septembre 2021, trimestre clos le 31 aout 2021)",
+      "url": "https://www.fool.com/earnings/call-transcripts/2021/09/23/nike-inc-nke-q1-2022-earnings-call-transcript/",
+      "date_publication": "2021-09-23",
+      "consulte_le": "2026-07-16"
     }
   ],
   "fonctionnement_operationnel": {
@@ -276,7 +285,7 @@
     "slug": "nike-snkrs-exclusive-access-2021",
     "title": "Nike : Exclusive Access personnalise sur SNKRS - membres acheteurs recurrents +70% (2021)",
     "meta_description": "Nike reserve ses drops SNKRS aux membres les plus engages via un scoring IA ; les membres acheteurs recurrents ont cru de plus de 70% sur un trimestre.",
-    "resume_citable": "Nike personnalise l'acces exclusif a ses paires rares sur SNKRS selon l'engagement et l'historique membre : sur le drop Dunk Off-White, 90 pour cent des invitations sont allees a des membres sans collaboration Off-White depuis deux ans, et les membres acheteurs recurrents ont progresse de plus de 70 pour cent au T4 fiscal 2021.",
+    "resume_citable": "Nike personnalise l'acces exclusif a ses paires rares sur SNKRS selon l'engagement et l'historique membre : sur le drop Dunk Off-White, 90 pour cent des invitations sont allees a des membres sans collaboration Off-White depuis deux ans, et les membres acheteurs recurrents ont progresse de plus de 70 pour cent au T1 fiscal 2022.",
     "faq": [
       {
         "q": "Comment Nike choisit qui recoit l'Exclusive Access sur SNKRS ?",

@@ -1,72 +1,91 @@
 {
   "seo": {
-    "title": "Otto: AI-driven autonomous ordering - 90% accuracy and -20% stock (2024)",
-    "meta_description": "Otto predicts demand with a deep-learning model and orders merchandise on its own: 90% accuracy on 30-day sales, 20% less stock, 7.5 billion forecasts a month.",
-    "resume_citable": "Otto predicts short-term demand with a deep-learning model that reaches 90% accuracy on 30-day sales, cuts stock by 20%, and automatically orders merchandise from third-party brands, producing 7.5 billion individual forecasts a month.",
+    "title": "Otto: AI-driven autonomous replenishment - 90% accuracy on 30-day sales, -20% surplus stock (2017-2024)",
+    "meta_description": "Otto forecasts demand with deep learning and orders on its own from third-party brands: 90% accuracy on 30-day sales, -20% surplus stock (2017).",
+    "resume_citable": "Otto put into production in 2017 a deep-learning forecasting engine built on Blue Yonder's technology that reaches 90% accuracy on 30-day sales, cuts surplus stock by a fifth, avoids more than 2 million returns a year, and buys around 200,000 items a month from third-party brands on its own; the engine has changed since (an in-house solution since 2019, a TiDE model on Vertex AI) and Otto now reports 35% of its product ranges being automatically reordered.",
     "faq": [
       {
         "q": "How does Otto use AI for its stock?",
-        "a": "A deep-learning model predicts short-term demand from hundreds of variables; above a confidence threshold, the system orders merchandise from third-party brands on its own, with no human validation."
+        "a": "A deep-learning model predicts short-term demand from hundreds of variables, and the system orders merchandise from third-party brands on its own, with no human intervention, across the automated scope - today 35% of product ranges."
       },
       {
         "q": "What are the numbers?",
-        "a": "90% accuracy on 30-day sales, a 20% reduction in stock levels, and 7.5 billion individual forecasts produced each month on otto.de."
+        "a": "For the 2017 system, The Economist reports 90% accuracy on 30-day sales, surplus stock down by a fifth, more than 2 million returns avoided a year, and around 200,000 items bought on its own each month. The Google Cloud case study credits the current TiDE model with up to 30% more accuracy."
+      },
+      {
+        "q": "Which engine does Otto use today?",
+        "a": "No longer the 2017 one. Otto has run an in-house forecasting solution since 2019, at around 30 billion individual forecasts a month, and the Google Cloud case study documents a TiDE model trained on Vertex AI and deployed on GKE."
       }
     ]
   },
   "pattern": "deep-learning demand forecasting triggering autonomous supplier orders",
   "etape_parcours": "purchase",
-  "objectif_business": "Predict what customers will order before they do, to order the merchandise ahead of time, cut overstock, and deliver faster from stock already in the right place.",
-  "description": "Otto is one of Germany's largest e-commerce retailers. A large share of its catalog comes from third-party brands, with lead times that made availability hard to hold. Otto put into production a forecasting engine (a deep-learning algorithm derived from particle-physics tools) that predicts short-term demand from hundreds of variables: sales history, site traffic and searches, weather, day of the week, holidays, competitive data. When the forecast is confident enough, the system orders the merchandise from the brands on its own, without human validation, to have it in stock before the customer order. On otto.de, the AI produces 7.5 billion individual forecasts a month to drive warehouse arrivals, sales volumes, and returns.",
+  "objectif_business": "Predict what customers will order before they do, to order the merchandise from third-party brands ahead of time, cut surplus stock and returns, and deliver faster from stock already in the right place.",
+  "description": "Otto is one of Germany's largest e-commerce retailers, with more than 18 million items in its catalog. A large share of its offer comes from third-party brands that Otto does not stock itself, which stretched lead times and multiplied separately shipped parcels. Around 2016-2017, Otto put into production a forecasting engine built on the technology of Blue Yonder, a German vendor in which it holds a stake: a deep-learning algorithm originally designed for particle-physics experiments at CERN, which analyses around 3 billion past transactions and 200 variables (past sales, searches on Otto's site, weather) to predict what customers will buy a week before they order. The system proved reliable enough that Otto lets it buy around 200,000 items a month from third-party brands on its own, with no human intervention. The engine has changed since: Otto has run an in-house forecasting solution since 2019, and the Google Cloud case study documents the current engine, a TiDE model trained on Vertex AI and deployed on GKE. Otto today reports 35% of its product ranges being automatically reordered, on the basis of around 30 billion individual forecasts a month.",
   "resultats": [
     {
-      "metrique": "Individual forecasts produced each month"
+      "metrique": "Forecast accuracy on 30-day sales (Blue Yonder system, 2017)"
     },
     {
-      "metrique": "Forecast accuracy on 30-day sales"
+      "metrique": "Reduction in the surplus stock Otto must hold (2017, \"a fifth\")"
     },
     {
-      "metrique": "Reduction in stock levels"
+      "metrique": "Product returns avoided each year after go-live (2017)"
+    },
+    {
+      "metrique": "Items ordered automatically from third-party brands, with no human intervention (2017)"
+    },
+    {
+      "metrique": "Share of product ranges already reordered automatically (current state, stated by Otto)"
+    },
+    {
+      "metrique": "Individual forecasts produced each month by Otto's AI Forecasting"
+    },
+    {
+      "metrique": "Forecast accuracy gain from the TiDE model on Vertex AI"
     }
   ],
   "niveau_preuve": {
-    "justification": "The Economist (major press) documents the Otto case and its figures by name, corroborated by Otto's official site (7.5 billion forecasts/month). The accuracy figure originally comes from a case study by the vendor Blue Yonder, hence no A level."
+    "justification": "The Economist (April 2017) documents the case by name, names Blue Yonder, and carries the figures word for word: 90% accuracy on 30-day sales, surplus stock down by a fifth, more than 2 million returns avoided a year, 200,000 items bought on its own each month. Two quantified vendor case studies corroborate (Blue Yonder, Google Cloud), and Otto's official site confirms the current automated scope. Important caveat: the Blue Yonder case study defines its own 90% differently (the share of items ordered from partners that sell out within 30 days, per Mathias Stuben) and contains an unrelated 90% (the online shop's share of annual sales); only The Economist's 90%, which does measure forecast accuracy, is used here. No A level, as there are no financial results."
   },
   "stack_technique": [
     {
-      "detail": "Vendor of the demand-forecasting engine used by Otto, documented by the case study reproduced by the press and the HBS analysis."
+      "detail": "Engine of the initial deployment (2017). A deep-learning algorithm originally designed for particle-physics experiments at CERN, analysing around 3 billion past transactions and 200 variables. Blue Yonder was acquired by JDA Software in 2018."
     },
     {
-      "detail": "Short-term forecasting model trained on hundreds of variables (sales, site traffic and searches, weather, calendar, competition); 90% accuracy on 30-day sales."
+      "detail": "Current engine documented by the Google Cloud case study: a Time-series Dense Encoder model trained on Vertex AI and deployed on GKE, delivering up to 30% more forecast accuracy."
     },
     {
-      "detail": "In-house systems that trigger autonomous supplier orders when the forecast exceeds the confidence threshold, and route uncertain cases to a buyer."
+      "detail": "Since 2019, Otto has run an in-house forecasting solution: around 30 billion individual forecasts a month, around 2.5 million item numbers analysed each day over 450 days."
+    },
+    {
+      "detail": "In-house systems that trigger supplier orders across the automated scope, today 35% of product ranges."
     }
   ],
   "fonctionnement_operationnel": {
-    "cadence": "Continuous forecasting at very large scale (7.5 billion forecasts a month), supplier orders triggered automatically when confidence is sufficient.",
-    "opere_par": "Otto's data science and purchasing team, with the vendor's forecasting engine at the core.",
-    "signal_pilote": "Predicted short-term demand per product. An order is only automated if the forecast is confident enough; below that threshold, it goes back through a human buyer.",
+    "cadence": "Daily forecasting at item level (colour and size), at a scale of around 30 billion individual forecasts a month, with supplier orders triggered automatically across the automated scope.",
+    "opere_par": "Otto's data science and purchasing teams; the Google Cloud case study names the forecasting team \"Team Lumen\".",
+    "signal_pilote": "Predicted short-term demand per item, re-forecast every day from sales history, customer behaviour, seasonal trends, public holidays, planned marketing activities, and the weather.",
     "etapes": [
       {
         "etape": "Signal collection",
-        "detail": "Sales history, site searches and traffic, weather, day of the week, holidays, and competitive data are aggregated.",
+        "detail": "Sales history, customer behaviour, seasonal trends, public holidays, planned marketing activities, and weather are aggregated. The 2017 deployment drew on around 3 billion past transactions and 200 variables.",
         "acteur": "Otto systems / data team"
       },
       {
         "etape": "Demand forecasting",
-        "detail": "The deep-learning model predicts what will sell in the short term, with 90% accuracy on 30-day sales.",
+        "detail": "The model predicts what will sell in the short term. The Economist reports 90% accuracy on 30-day sales for the 2017 Blue Yonder system; the Google Cloud case study credits the TiDE model with up to 30% more accuracy.",
         "acteur": "AI model"
       },
       {
         "etape": "Autonomous ordering",
-        "detail": "Above a confidence threshold, the system orders the merchandise from third-party brands on its own, with no human validation.",
+        "detail": "Across the automated scope, the system orders merchandise from third-party brands on its own, with no human intervention: around 200,000 items a month in 2017.",
         "acteur": "AI model / purchasing system"
       },
       {
-        "etape": "Human control below threshold",
-        "detail": "Uncertain cases stay with a buyer, who keeps control of items with unstable demand.",
-        "acteur": "Otto buyer"
+        "etape": "Partial automated scope",
+        "detail": "Automation does not cover the whole catalog: Otto reports 35% of product ranges already being reordered automatically. Public sources do not describe the rule that decides the scope.",
+        "acteur": "Otto purchasing"
       }
     ]
   },
@@ -85,15 +104,15 @@
         "livrable": "Order recommendations integrated into the buyer tool"
       },
       {
-        "action": "Define the confidence threshold with purchasing and management, then automate orders above the threshold on a limited scope.",
+        "action": "Agree with purchasing and management on the rule that lets an order go out without validation, then automate on a limited scope.",
         "livrable": "First autonomous orders in production"
       },
       {
-        "action": "Expand the automated scope and track stock, availability, and delivery times.",
+        "action": "Expand the automated scope and track surplus stock, return rate, availability, and delivery times.",
         "livrable": "Stock assessment and governance rules for autonomous orders"
       }
     ],
-    "equipe": "2-3 data scientists/ML engineers + 1 data engineer + the buyers, who keep control of items below the confidence threshold",
+    "equipe": "2-3 data scientists/ML engineers + 1 data engineer + the buyers, who keep control of ranges outside the automated scope",
     "prerequis_data": [
       "granular sales history",
       "behavioral site signals (traffic, searches)",
@@ -101,18 +120,19 @@
       "supplier lead times and reliability"
     ],
     "prerequis_orga": [
-      "agreement to let an order go out without human validation above a threshold",
+      "agreement to let an order go out without human validation across a defined scope",
       "supplier relationships compatible with advance orders"
     ],
     "stack_possible": [
       "Blue Yonder",
-      "in-house forecasting (deep learning) + threshold rules",
+      "Google Cloud (Vertex AI, BigQuery, GKE)",
+      "in-house forecasting (deep learning)",
       "RELEX, o9"
     ],
-    "premiere_etape": "Measure the accuracy of a short-term forecast on a category, define a confidence threshold above which the order can go out without validation, then open it up gradually."
+    "premiere_etape": "Measure the accuracy of a short-term forecast on a category, define the rule beyond which an order can go out without validation, then open the scope up gradually."
   },
   "statut_vivant": {
-    "note": "Otto still describes AI on its site as integrated into all its processes, with a quantified monthly forecast volume. A continuous system, not a pilot."
+    "note": "The pattern is still in production, but the engine has changed. The initial 2017 deployment ran on Blue Yonder's technology; since 2019 Otto has run an in-house forecasting solution, and the Google Cloud case study documents a TiDE model on Vertex AI. The 2017 figures describe the Blue Yonder system, not the current engine."
   },
   "transposable_ue": {
     "note": "Otto is a German e-commerce retailer, and the system already runs under European law. The forecasting works on sales and logistics data, not on sensitive personal data."

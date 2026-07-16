@@ -16,8 +16,13 @@
   "agences": [
     {
       "nom": "Blue Yonder",
-      "role": "Editeur du moteur de prevision (case study OTTO reprise par la presse)",
-      "source_ref": "S3"
+      "role": "Editeur du moteur de prevision du deploiement initial (2017). The Economist precise qu'Otto detient une participation dans Blue Yonder.",
+      "source_ref": "S1"
+    },
+    {
+      "nom": "Google Cloud",
+      "role": "Fournisseur du moteur actuel documente (modele TiDE entraine sur Vertex AI, deploye sur GKE), avec Google Research et Google Professional Services.",
+      "source_ref": "S4"
     }
   ],
   "axes": {
@@ -32,128 +37,169 @@
     "pattern": "prevision de demande deep learning declenchant des commandes fournisseurs autonomes",
     "type_ia": [
       "deep learning",
-      "prevision de demande a court terme"
+      "prevision de demande a court terme",
+      "modele TiDE (Time-series Dense Encoder)"
     ],
     "plateforme_stack": [
       "Blue Yonder",
-      "systemes internes Otto"
+      "Google Cloud (Vertex AI, BigQuery, GKE)",
+      "solution de prevision developpee en interne par Otto"
     ],
     "objectif_metrique": [
       "precision de prevision de vente",
-      "niveau de stock",
+      "niveau de surstock",
+      "taux de retours",
       "delai de livraison"
     ]
   },
   "implementation": "hybride",
   "stack_technique": [
     {
-      "nom": "Blue Yonder",
+      "nom": "Blue Yonder Demand Forecast & Replenishment",
       "categorie": "plateforme",
-      "detail": "Editeur du moteur de prevision de demande utilise par Otto, documente par la case study reprise par la presse et l'analyse HBS.",
+      "detail": "Moteur du deploiement initial (2017). Algorithme de deep learning concu a l'origine pour les experiences de physique des particules du CERN, analysant environ 3 milliards de transactions passees et 200 variables. Blue Yonder a ete rachete par JDA Software en 2018.",
       "url": "https://blueyonder.com"
     },
     {
-      "nom": "Algorithme deep learning (derive de la physique des particules)",
-      "categorie": "llm",
-      "detail": "Modele de prevision a court terme entraine sur des centaines de variables (ventes, trafic et recherches site, meteo, calendrier, concurrence) ; 90% de precision sur les ventes a 30 jours.",
-      "url": "https://blueyonder.com"
+      "nom": "Google Cloud (Vertex AI, BigQuery, GKE) + modele TiDE",
+      "categorie": "plateforme",
+      "detail": "Moteur actuel documente par la case study Google Cloud : modele Time-series Dense Encoder entraine sur Vertex AI et deploye sur GKE, jusqu'a 30% de precision de prevision en plus.",
+      "url": "https://cloud.google.com/customers/otto"
+    },
+    {
+      "nom": "AI Forecasting (solution developpee en interne par Otto)",
+      "categorie": "outil",
+      "detail": "Depuis 2019, Otto exploite une solution de prevision developpee en interne : environ 30 milliards de previsions individuelles par mois, environ 2,5 millions de references analysees chaque jour sur 450 jours.",
+      "url": "https://www.otto.de"
     },
     {
       "nom": "Systemes d'achat et de reapprovisionnement Otto",
       "categorie": "outil",
-      "detail": "Systemes internes qui declenchent les commandes fournisseurs autonomes quand la prevision depasse le seuil de confiance, et routent les cas incertains vers un acheteur.",
+      "detail": "Systemes internes qui declenchent les commandes fournisseurs sur le perimetre automatise, aujourd'hui 35% des gammes.",
       "url": "https://www.otto.de"
     }
   ],
-  "objectif_business": "Predire ce que les clients vont commander avant qu'ils ne le fassent pour commander la marchandise en amont, reduire le surstock et livrer plus vite depuis un stock deja au bon endroit.",
-  "description": "Otto est l'un des plus gros e-commercants d'Allemagne. Une grande partie de son catalogue provient de marques tierces, avec des delais qui rendaient la disponibilite difficile a tenir. Otto a mis en production un moteur de prevision (algorithme de deep learning derive d'outils de physique des particules) qui predit la demande a court terme a partir de centaines de variables: historique de vente, trafic et recherches sur le site, meteo, jour de la semaine, jours feries, donnees concurrentielles. Quand la prevision est assez sure, le systeme commande de lui-meme la marchandise aupres des marques, sans validation humaine, pour l'avoir en stock avant la commande client. Cote otto.de, l'IA produit 7,5 milliards de previsions individuelles par mois pour piloter arrivees en entrepot, volumes de vente et retours.",
+  "objectif_business": "Predire ce que les clients vont commander avant qu'ils ne le fassent pour commander la marchandise en amont aupres des marques tierces, reduire le surstock et les retours, et livrer plus vite depuis un stock deja au bon endroit.",
+  "description": "Otto est l'un des plus gros e-commercants d'Allemagne, avec plus de 18 millions d'articles au catalogue. Une grande partie de son offre vient de marques tierces qu'Otto ne stocke pas lui-meme, ce qui allongeait les delais et multipliait les colis expedies separement. Vers 2016-2017, Otto met en production un moteur de prevision construit sur la technologie de Blue Yonder, editeur allemand dans lequel il detient une participation : un algorithme de deep learning concu a l'origine pour les experiences de physique des particules du CERN, qui analyse environ 3 milliards de transactions passees et 200 variables (ventes passees, recherches sur le site, meteo) pour predire ce que les clients vont acheter une semaine avant qu'ils ne commandent. Le systeme s'est revele assez fiable pour qu'Otto le laisse acheter seul environ 200 000 articles par mois aupres des marques tierces, sans intervention humaine. Le moteur a change depuis : Otto exploite une solution de prevision developpee en interne depuis 2019, et la case study Google Cloud documente le moteur actuel, un modele TiDE entraine sur Vertex AI et deploye sur GKE. Otto indique aujourd'hui 35% des gammes reapprovisionnees automatiquement, sur la base d'environ 30 milliards de previsions individuelles par mois.",
   "resultats": [
     {
-      "metrique": "Previsions individuelles produites chaque mois",
-      "valeur": "7,5 milliards",
-      "citation_exacte": "the AI makes 7.5 billion individual forecasts",
-      "source_ref": "S2"
-    },
-    {
-      "metrique": "Precision de prevision sur les ventes a 30 jours",
+      "metrique": "Precision de prevision sur les ventes a 30 jours (systeme Blue Yonder, 2017)",
       "valeur": "90%",
-      "citation_exacte": "predict with 90% accuracy on any given day what items will be sold",
+      "citation_exacte": "it predicts with 90% accuracy what will be sold within 30 days",
+      "source_ref": "S1"
+    },
+    {
+      "metrique": "Reduction du surstock qu'Otto doit detenir (2017, « a fifth »)",
+      "valeur": "-20%",
+      "citation_exacte": "the surplus stock that Otto must hold has declined by a fifth",
+      "source_ref": "S1"
+    },
+    {
+      "metrique": "Retours produits evites chaque annee apres la mise en service (2017)",
+      "valeur": "-2 millions/an",
+      "citation_exacte": "reduced product returns by more than 2m items a year",
+      "source_ref": "S1"
+    },
+    {
+      "metrique": "Articles commandes automatiquement aupres des marques tierces, sans intervention humaine (2017)",
+      "valeur": "200 000/mois",
+      "citation_exacte": "purchase around 200,000 items a month from third-party brands with no human intervention",
+      "source_ref": "S1"
+    },
+    {
+      "metrique": "Part des gammes deja reapprovisionnees automatiquement (etat actuel, declare par Otto)",
+      "valeur": "35%",
+      "citation_exacte": "35% of the product ranges are already being automatically reordered",
       "source_ref": "S3"
     },
     {
-      "metrique": "Reduction des niveaux de stock",
-      "valeur": "20%",
-      "citation_exacte": "reduce inventory levels by 20%",
+      "metrique": "Previsions individuelles produites chaque mois par l'AI Forecasting d'Otto",
+      "valeur": "30 milliards/mois",
+      "citation_exacte": "around 30 billion individual forecasts per month",
       "source_ref": "S3"
+    },
+    {
+      "metrique": "Gain de precision de prevision apporte par le modele TiDE sur Vertex AI",
+      "valeur": "+30%",
+      "citation_exacte": "improve the accuracy of demand forecasts by up to 30%",
+      "source_ref": "S4"
     }
   ],
   "niveau_preuve": {
-    "niveau": "C",
-    "justification": "The Economist (presse majeure) documente nommement le cas Otto et ses chiffres, corrobore par le site officiel d'Otto (7,5 milliards de previsions/mois). Le chiffre de precision provient a l'origine d'une case study de l'editeur Blue Yonder, d'ou pas de niveau A."
+    "niveau": "B",
+    "justification": "The Economist (avril 2017) documente nommement le cas, nomme Blue Yonder et porte les chiffres au mot : 90% de precision a 30 jours, surstock en baisse d'un cinquieme, plus de 2 millions de retours evites par an, 200 000 articles achetes seuls chaque mois. Deux case studies editeurs chiffrees corroborent (Blue Yonder, Google Cloud) et le site officiel d'Otto confirme le perimetre automatise actuel. Reserve importante : la case study Blue Yonder definit son propre 90% autrement (part des articles commandes aux partenaires ecoules sous 30 jours, selon Mathias Stuben) et contient un 90% sans aucun rapport (part de la boutique en ligne dans le chiffre d'affaires annuel) ; seul le 90% de The Economist, qui mesure bien une precision de prevision, est repris ici. Pas de niveau A faute de resultats financiers."
   },
   "dates": {
-    "lancement": "systeme en production autour de 2016-2017 (documente par The Economist en avril 2017)",
-    "derniere_confirmation_activite": "page technologie officielle d'Otto a jour citant 7,5 milliards de previsions par mois",
-    "verifie_le": "2026-07-11",
-    "revoir_apres": "2027-01-11"
+    "lancement": "Deploiement Blue Yonder en production autour de 2016-2017 (documente par The Economist le 12 avril 2017) ; solution de prevision developpee en interne par Otto depuis 2019 ; modele TiDE sur Google Cloud documente par la case study Google Cloud",
+    "derniere_confirmation_activite": "Page officielle Otto sur l'AI Forecasting (35% des gammes reapprovisionnees automatiquement, environ 30 milliards de previsions par mois), consultee le 2026-07-16",
+    "verifie_le": "2026-07-16",
+    "revoir_apres": "2027-01-16"
   },
   "statut_vivant": {
     "statut": "confirme",
-    "note": "Otto decrit toujours sur son site l'IA comme integree a tous ses processus, avec un volume de previsions mensuel chiffre. Systeme continu, pas un pilote."
+    "note": "Le pattern est toujours en production, mais le moteur a change. Le deploiement initial de 2017 tournait sur la technologie de Blue Yonder ; depuis 2019 Otto exploite une solution de prevision developpee en interne, et la case study Google Cloud documente un modele TiDE sur Vertex AI. Les chiffres de 2017 decrivent le systeme Blue Yonder, pas le moteur actuel."
   },
   "sources": [
     {
       "ref": "S1",
       "type": "presse",
       "fiabilite": "T3_presse_etablie",
-      "titre": "How Germany's Otto uses artificial intelligence",
+      "titre": "Automatic for the people: How Germany's Otto uses artificial intelligence",
       "url": "https://www.economist.com/business/2017/04/12/how-germanys-otto-uses-artificial-intelligence",
       "date_publication": "2017-04-12",
-      "consulte_le": "2026-07-11"
+      "consulte_le": "2026-07-16",
+      "archive_url": "http://web.archive.org/web/20170413022220/https://www.economist.com/news/business/21720675-firm-using-algorithm-designed-cern-laboratory-how-germanys-otto-uses"
     },
     {
       "ref": "S2",
-      "type": "blog_officiel",
-      "fiabilite": "T1_primaire",
-      "titre": "Artificial intelligence at OTTO - already part of all business processes today",
-      "url": "https://www.otto.de/unternehmen/en/technologie/artificial-intelligence-at-otto-already-part-of-all-business-processes-today",
-      "date_publication": "2023",
-      "consulte_le": "2026-07-11"
+      "type": "customer_story_plateforme",
+      "fiabilite": "T2_officiel_interesse",
+      "titre": "Replenishment and Price Optimization at OTTO (case study Blue Yonder / JDA)",
+      "url": "https://cdn.featuredcustomers.com/CustomerCaseStudy.document/jda-software_otto_None.pdf",
+      "date_publication": "2018",
+      "consulte_le": "2026-07-16"
     },
     {
       "ref": "S3",
-      "type": "analyse_academique",
-      "fiabilite": "T4_secondaire",
-      "titre": "Autonomous Stock Replenishment at Online Retailer OTTO (Harvard TOM / HBS AI Institute)",
-      "url": "https://aiinstitute.hbs.edu/platform-rctom/submission/autonomous-stock-replenishment-at-online-retailer-otto/",
-      "date_publication": "2018",
-      "consulte_le": "2026-07-11"
+      "type": "blog_officiel",
+      "fiabilite": "T1_primaire",
+      "titre": "Knowing what will be bought tomorrow: How OTTO uses artificial intelligence to forecast sales",
+      "url": "https://www.otto.de/unternehmen/en/technologie/wissen-was-morgen-gekauft-wird-wie-otto-k%C3%BCnstliche-intelligenz-zur-absatzprognose-einsetzt",
+      "consulte_le": "2026-07-16"
+    },
+    {
+      "ref": "S4",
+      "type": "customer_story_plateforme",
+      "fiabilite": "T2_officiel_interesse",
+      "titre": "OTTO boosts forecasting accuracy up to 30% with Google Cloud's TiDE and Vertex AI Innovations",
+      "url": "https://cloud.google.com/customers/otto",
+      "consulte_le": "2026-07-16"
     }
   ],
   "fonctionnement_operationnel": {
-    "cadence": "Prevision continue a tres grande echelle (7,5 milliards de previsions par mois), commandes fournisseurs declenchees automatiquement quand la confiance est suffisante.",
-    "opere_par": "Equipe data science et achats d'Otto, avec le moteur de prevision de l'editeur en coeur de dispositif.",
-    "signal_pilote": "La demande predite a court terme par produit. La commande n'est automatisee que si la prevision est assez sure; sous ce seuil, elle repasse par un acheteur humain.",
+    "cadence": "Prevision quotidienne au niveau de l'article (couleur et taille), a l'echelle d'environ 30 milliards de previsions individuelles par mois, avec commandes fournisseurs declenchees automatiquement sur le perimetre automatise.",
+    "opere_par": "Equipe data science et achats d'Otto ; la case study Google Cloud nomme l'equipe de prevision « Team Lumen ».",
+    "signal_pilote": "La demande predite a court terme par article, reprevue chaque jour a partir de l'historique de vente, du comportement client, des tendances saisonnieres, des jours feries, des operations marketing prevues et de la meteo.",
     "etapes": [
       {
         "etape": "Collecte des signaux",
-        "detail": "Historique de vente, recherches et trafic sur le site, meteo, jour de la semaine, jours feries et donnees concurrentielles sont agreges.",
+        "detail": "Historique de vente, comportement client, tendances saisonnieres, jours feries, operations marketing prevues et meteo sont agreges. Le deploiement de 2017 exploitait environ 3 milliards de transactions passees et 200 variables.",
         "acteur": "systemes Otto / equipe data"
       },
       {
         "etape": "Prevision de demande",
-        "detail": "Le modele deep learning predit ce qui sera vendu a court terme, avec une precision de 90% sur les ventes a 30 jours.",
+        "detail": "Le modele predit ce qui sera vendu a court terme. The Economist rapporte 90% de precision sur les ventes a 30 jours pour le systeme Blue Yonder de 2017 ; la case study Google Cloud attribue au modele TiDE jusqu'a 30% de precision supplementaire.",
         "acteur": "modele IA"
       },
       {
         "etape": "Commande autonome",
-        "detail": "Au-dela d'un seuil de confiance, le systeme commande lui-meme la marchandise aupres des marques tierces sans validation humaine.",
+        "detail": "Sur le perimetre automatise, le systeme commande lui-meme la marchandise aupres des marques tierces sans intervention humaine : environ 200 000 articles par mois en 2017.",
         "acteur": "modele IA / systeme d'achat"
       },
       {
-        "etape": "Controle humain sous seuil",
-        "detail": "Les cas incertains restent traites par un acheteur, qui garde la main sur les references a demande instable.",
-        "acteur": "acheteur Otto"
+        "etape": "Perimetre automatise partiel",
+        "detail": "L'automatisation ne couvre pas tout le catalogue : Otto indique 35% des gammes deja reapprovisionnees automatiquement. Les sources publiques ne decrivent pas la regle qui decide du perimetre.",
+        "acteur": "achats Otto"
       }
     ]
   },
@@ -163,13 +209,13 @@
       {
         "id": "n1",
         "role_generique": "data_source",
-        "label": "Ventes, trafic, recherches, meteo, jours feries, concurrence"
+        "label": "Ventes passees, comportement client, recherches site, meteo, jours feries, operations marketing"
       },
       {
         "id": "n2",
         "role_generique": "modele_ia",
         "label": "Moteur de prevision deep learning",
-        "outil_documente": "Blue Yonder"
+        "outil_documente": "Blue Yonder (2017), puis solution interne Otto et modele TiDE sur Vertex AI / GKE"
       },
       {
         "id": "n3",
@@ -179,7 +225,7 @@
       {
         "id": "n4",
         "role_generique": "humain",
-        "label": "Acheteur (cas sous seuil de confiance)"
+        "label": "Acheteur (gammes hors perimetre automatise)"
       },
       {
         "id": "n5",
@@ -199,12 +245,12 @@
       [
         "n3",
         "n5",
-        "commande autonome au-dela du seuil"
+        "commande autonome sur le perimetre automatise"
       ],
       [
         "n2",
         "n4",
-        "cas incertains"
+        "gammes hors perimetre automatise"
       ],
       [
         "n5",
@@ -229,15 +275,15 @@
         "livrable": "Recommandations de commande integrees a l'outil acheteur"
       },
       {
-        "action": "Definir le seuil de confiance avec les achats et la direction, puis automatiser les commandes au-dessus du seuil sur un perimetre restreint.",
+        "action": "Definir avec les achats et la direction la regle qui autorise une commande a partir sans validation, puis automatiser sur un perimetre restreint.",
         "livrable": "Premieres commandes autonomes en production"
       },
       {
-        "action": "Elargir le perimetre automatise et suivre stock, disponibilite et delais de livraison.",
+        "action": "Elargir le perimetre automatise et suivre surstock, taux de retours, disponibilite et delais de livraison.",
         "livrable": "Bilan stock et regles de gouvernance des commandes autonomes"
       }
     ],
-    "equipe": "2-3 data scientists/ML engineers + 1 data engineer + les acheteurs, qui gardent la main sur les references sous le seuil de confiance",
+    "equipe": "2-3 data scientists/ML engineers + 1 data engineer + les acheteurs, qui gardent la main sur les gammes hors perimetre automatise",
     "prerequis_data": [
       "historique de vente granulaire",
       "signaux comportementaux du site (trafic, recherches)",
@@ -245,29 +291,34 @@
       "delais et fiabilite fournisseurs"
     ],
     "prerequis_orga": [
-      "accord pour laisser une commande partir sans validation humaine au-dela d'un seuil",
+      "accord pour laisser une commande partir sans validation humaine sur un perimetre defini",
       "relations fournisseurs compatibles avec des commandes anticipees"
     ],
     "stack_possible": [
       "Blue Yonder",
-      "forecasting maison (deep learning) + regles de seuil",
+      "Google Cloud (Vertex AI, BigQuery, GKE)",
+      "forecasting maison (deep learning)",
       "RELEX, o9"
     ],
-    "premiere_etape": "Mesurer la precision d'une prevision a court terme sur une categorie, definir un seuil de confiance au-dela duquel la commande peut partir sans validation, puis l'ouvrir progressivement."
+    "premiere_etape": "Mesurer la precision d'une prevision a court terme sur une categorie, definir la regle au-dela de laquelle la commande peut partir sans validation, puis ouvrir le perimetre progressivement."
   },
   "seo": {
     "slug": "otto-deep-learning-replenishment-2024",
-    "title": "Otto : commandes autonomes pilotees par IA - 90% de precision et -20% de stock (2024)",
-    "meta_description": "Otto predit la demande avec un modele deep learning et commande de lui-meme la marchandise: 90% de precision sur les ventes a 30 jours, 20% de stock en moins, 7,5 milliards de previsions par mois.",
-    "resume_citable": "Otto predit la demande a court terme avec un modele deep learning qui atteint 90% de precision sur les ventes a 30 jours, reduit les stocks de 20% et commande automatiquement la marchandise aupres des marques tierces, en produisant 7,5 milliards de previsions individuelles par mois.",
+    "title": "Otto : reapprovisionnement autonome pilote par IA - 90% de precision a 30 jours, -20% de surstock (2017-2024)",
+    "meta_description": "Otto predit la demande en deep learning et commande seul aupres des marques tierces : 90% de precision sur les ventes a 30 jours, -20% de surstock (2017).",
+    "resume_citable": "Otto a mis en production en 2017 un moteur de prevision deep learning construit sur la technologie de Blue Yonder qui atteint 90% de precision sur les ventes a 30 jours, fait baisser d'un cinquieme le surstock, evite plus de 2 millions de retours par an et achete seul environ 200 000 articles par mois aupres des marques tierces ; le moteur a change depuis (solution developpee en interne depuis 2019, modele TiDE sur Vertex AI) et Otto indique aujourd'hui 35% des gammes reapprovisionnees automatiquement.",
     "faq": [
       {
         "q": "Comment Otto utilise-t-il l'IA pour ses stocks ?",
-        "a": "Un modele de deep learning predit la demande a court terme a partir de centaines de variables; au-dela d'un seuil de confiance, le systeme commande lui-meme la marchandise aupres des marques tierces sans validation humaine."
+        "a": "Un modele de deep learning predit la demande a court terme a partir de centaines de variables, et le systeme commande lui-meme la marchandise aupres des marques tierces sans intervention humaine sur le perimetre automatise, aujourd'hui 35% des gammes."
       },
       {
         "q": "Quels resultats chiffres ?",
-        "a": "90% de precision sur les ventes a 30 jours, une reduction des niveaux de stock de 20%, et 7,5 milliards de previsions individuelles produites chaque mois cote otto.de."
+        "a": "Pour le systeme de 2017, The Economist rapporte 90% de precision sur les ventes a 30 jours, un surstock en baisse d'un cinquieme, plus de 2 millions de retours evites par an et environ 200 000 articles achetes seuls chaque mois. La case study Google Cloud attribue au modele TiDE actuel jusqu'a 30% de precision supplementaire."
+      },
+      {
+        "q": "Quel moteur Otto utilise-t-il aujourd'hui ?",
+        "a": "Plus celui de 2017. Otto exploite une solution de prevision developpee en interne depuis 2019, environ 30 milliards de previsions individuelles par mois, et la case study Google Cloud documente un modele TiDE entraine sur Vertex AI et deploye sur GKE."
       }
     ]
   },

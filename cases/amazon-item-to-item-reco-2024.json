@@ -34,14 +34,20 @@
       "custom/in-house"
     ],
     "objectif_metrique": [
-      "part des achats issus des recommandations",
+      "taux de clic des recommandations",
       "taux de conversion",
-      "valeur du panier"
+      "passage a l'echelle du catalogue"
     ]
   },
   "implementation": "custom",
   "objectif_business": "Faire remonter le bon produit au bon moment pour chaque visiteur, sur chaque surface du site, sans intervention manuelle de merchandising.",
-  "description": "Amazon a mis au point une methode de recommandation dite item-to-item collaborative filtering. Plutot que de rapprocher un client d'autres clients qui lui ressemblent, l'algorithme part de chaque article et calcule a l'avance les produits qui apparaissent souvent ensemble dans les historiques d'achat et de navigation. Quand un visiteur regarde ou achete un produit, le systeme ressort en temps reel les articles les plus associes, ponderes selon la proximite avec ce que la personne a deja consulte. Ce moteur alimente les carrousels de la page d'accueil, les blocs \" Frequemment achetes ensemble \" des fiches produit, les recommandations du panier et les campagnes email. La methode a ete concue vers 1997 chez Amazon par Greg Linden, Brent Smith et Jeremy York, puis decrite dans un papier publie en 2003. En 2017, le comite editorial d'IEEE Internet Computing l'a designe comme l'article de son histoire ayant le mieux resiste a l'epreuve du temps. Le systeme reste la fondation de la recommandation Amazon, enrichi depuis par des modeles plus recents.",
+  "points_cles": [
+    "Amazon a concu vers 1997 son propre moteur de reco item-to-item, les algorithmes du marche ne tenant pas sa charge.",
+    "Le moteur pre-calcule les produits co-achetes par article, puis les sert en temps reel sur le site et en email.",
+    "Amazon n'a jamais publie de chiffre d'impact sur ses ventes ; le « 35 % » qui circule est une estimation McKinsey de 2013.",
+    "Preuve : le papier IEEE 2003 signe par Amazon, designe en 2017 comme celui ayant le mieux resiste a l'epreuve du temps."
+  ],
+  "description": "Amazon a mis au point une methode de recommandation dite item-to-item collaborative filtering. Plutot que de rapprocher un client d'autres clients qui lui ressemblent, l'algorithme part de chaque article et calcule a l'avance les produits qui apparaissent souvent ensemble dans les historiques d'achat et de navigation. Quand un visiteur regarde ou achete un produit, le systeme ressort en temps reel les articles les plus associes. Ses auteurs decrivent en 2003 un moteur maison, construit parce que les algorithmes existants ne tenaient pas la charge des dizaines de millions de clients et de produits d'Amazon, et deja utilise sur la majorite des pages du site ainsi que dans de nombreuses campagnes email. La methode a ete concue vers 1997 par Greg Linden, Brent Smith et Jeremy York, puis publiee dans IEEE Internet Computing en 2003. En 2017, le comite editorial de la revue l'a designee comme l'article de son histoire ayant le mieux resiste a l'epreuve du temps. Sur l'impact commercial, Amazon n'a jamais publie de chiffre. Le papier de 2003 affirme seulement, sans le quantifier, que les taux de clic et de conversion des recommandations depassent largement ceux des contenus non cibles comme les bannieres ou les listes de meilleures ventes. Le « 35 % des achats sur Amazon viennent des recommandations » qui circule partout n'est pas un chiffre Amazon : c'est une estimation publiee par McKinsey en 2013, sans methodologie exposee, que la marque n'a jamais confirmee. Des chercheurs la contestent : Anuj Kumar (universite de Floride) la juge difficile a croire, et l'etude qu'il a publiee avec Kartik Hosanagar dans Information Systems Research, menee chez un grand magasin et non chez Amazon, mesure un indicateur different - un gain de ventes de 11 % attribuable aux recommandations. Enfin, aucun document public d'Amazon ne confirme que le filtrage item-to-item reste aujourd'hui la base du systeme : la derniere documentation primaire, le blog Amazon Science de 2019, retrace son histoire et decrit des modeles plus recents qui le surpassent sur la recommandation de films Prime Video.",
   "fonctionnement_operationnel": {
     "cadence": "Temps reel a l'affichage, avec un pre-calcul batch des tables de similarite item-to-item reactualise regulierement a mesure que de nouveaux signaux arrivent.",
     "opere_par": "Equipes data science et ingenierie recommandation, en lien avec les equipes retail par categorie.",
@@ -71,46 +77,52 @@
   },
   "resultats": [
     {
-      "metrique": "Part des achats attribues aux recommandations (estimation McKinsey, 2013)",
-      "valeur": "35 %",
-      "citation_exacte": "35 percent of what consumers purchase on Amazon come from product recommendations",
-      "source_ref": "S2"
+      "metrique": "Anciennete du moteur item-to-item en production chez Amazon : deja six ans de service quand ses auteurs publient le papier en 2003",
+      "valeur": "depuis 1997",
+      "citation_exacte": "their item-based recommendation algorithm had already been in use for six years",
+      "source_ref": "S1"
     },
     {
-      "metrique": "Methode en production, distinguee IEEE test of time en 2017",
-      "valeur": "depuis ~1997",
-      "citation_exacte": "the single paper ... that had best withstood the test of time",
+      "metrique": "Papier designe par le comite editorial d'IEEE Internet Computing, sur 20 ans d'archives, comme celui ayant le mieux resiste a l'epreuve du temps",
+      "valeur": "IEEE 2017",
+      "citation_exacte": "that had best withstood the \"test of time\"",
       "source_ref": "S1"
+    },
+    {
+      "metrique": "Echelle que les algorithmes du marche ne tenaient pas et qui a pousse Amazon a developper le sien, selon son papier de 2003",
+      "valeur": "Dizaines de millions",
+      "citation_exacte": "Amazon.com's tens of millions of customers and products",
+      "source_ref": "S3"
     }
   ],
   "niveau_preuve": {
     "niveau": "C",
-    "justification": "Le mecanisme et son passage a l'echelle sont documentes par le blog scientifique officiel d'Amazon et par un papier IEEE distingue en 2017, soit pres de trois decennies en production. Le chiffre de 35 % des achats est une estimation McKinsey de 2013, pas une divulgation financiere d'Amazon : on ne le presente donc pas comme un resultat de niveau A."
+    "justification": "Le mecanisme, l'echelle et l'anciennete sont documentes par Amazon elle-meme (papier IEEE de 2003 signe par ses ingenieurs, blog Amazon Science), et corrobores par la distinction IEEE de 2017. Mais Amazon n'a jamais publie de resultat commercial chiffre sur ses recommandations : le cas ne peut donc pretendre ni au niveau A (divulgation financiere) ni au niveau B (etude de cas chiffree). Le chiffre de 35 % des achats, largement recycle, est une estimation McKinsey de 2013 non confirmee par la marque et contestee par des chercheurs ; il n'est pas retenu comme resultat."
   },
   "dates": {
-    "lancement": "1998 (filtrage collaboratif item-to-item), formalise dans le papier IEEE de 2003",
-    "derniere_confirmation_activite": "2024 - recommandations toujours servies sur l'ensemble des surfaces Amazon, algorithme decrit comme la fondation du systeme par Amazon Science",
-    "verifie_le": "2026-07-11",
-    "revoir_apres": "2027-01-11"
+    "lancement": "~1997 (filtrage collaboratif item-to-item, deja en service six ans avant la publication du papier IEEE de 2003)",
+    "derniere_confirmation_activite": "2019 - derniere documentation primaire (Amazon Science) retracant l'histoire de l'algorithme ; aucun document public d'Amazon ne confirme depuis que l'item-to-item reste la base du systeme",
+    "verifie_le": "2026-07-16",
+    "revoir_apres": "2027-01-16"
   },
   "statut_vivant": {
-    "statut": "confirme",
-    "note": "La recommandation produit est un element structurel de l'experience Amazon (page d'accueil, fiche produit, panier, email). Le filtrage item-to-item reste la base, complete par des modeles plus recents."
+    "statut": "signaux_mitiges",
+    "note": "La recommandation produit reste un element structurel de l'experience Amazon (page d'accueil, fiche produit, panier, email). En revanche, le role actuel du filtrage item-to-item n'est pas documente publiquement : la derniere source primaire, Amazon Science en 2019, decrit des modeles plus recents qui le surpassent sur la recommandation de films Prime Video."
   },
   "sources": [
     {
       "ref": "S1",
       "type": "blog_officiel",
-      "titre": "The history of Amazon's recommendation algorithm - Amazon Science",
+      "titre": "The history of Amazon's recommendation algorithm - Amazon Science (Larry Hardesty)",
       "url": "https://www.amazon.science/the-history-of-amazons-recommendation-algorithm",
-      "date_publication": "2019",
-      "consulte_le": "2026-07-11",
+      "date_publication": "2019-11-22",
+      "consulte_le": "2026-07-16",
       "fiabilite": "T1_primaire"
     },
     {
       "ref": "S2",
       "type": "analyse_academique",
-      "titre": "How retailers can keep up with consumers - McKinsey & Company",
+      "titre": "How retailers can keep up with consumers - McKinsey & Company (Ian MacKenzie, Chris Meyer, Steve Noble)",
       "url": "https://www.mckinsey.com/industries/retail/our-insights/how-retailers-can-keep-up-with-consumers",
       "date_publication": "2013-10",
       "consulte_le": "2026-07-11",
@@ -119,11 +131,30 @@
     {
       "ref": "S3",
       "type": "analyse_academique",
-      "titre": "Amazon.com recommendations: item-to-item collaborative filtering - IEEE Internet Computing (Linden, Smith, York)",
+      "titre": "Amazon.com Recommendations: Item-to-Item Collaborative Filtering - IEEE Internet Computing (Linden, Smith, York)",
       "url": "https://ieeexplore.ieee.org/document/1167344/",
-      "date_publication": "2003",
-      "consulte_le": "2026-07-11",
+      "archive_url": "https://www.cs.umd.edu/~samir/498/Amazon-Recommendations.pdf",
+      "date_publication": "2003-01",
+      "consulte_le": "2026-07-16",
       "fiabilite": "T1_primaire"
+    },
+    {
+      "ref": "S4",
+      "type": "analyse_academique",
+      "titre": "Why Am I Seeing This? Case Study: Amazon - New America, Open Technology Institute",
+      "url": "https://www.newamerica.org/oti/reports/why-am-i-seeing-this/case-study-amazon/",
+      "date_publication": "2018",
+      "consulte_le": "2026-07-16",
+      "fiabilite": "T4_secondaire"
+    },
+    {
+      "ref": "S5",
+      "type": "analyse_academique",
+      "titre": "How helpful are product recommendations, really? - University of Florida News (etude Kumar & Hosanagar, Information Systems Research)",
+      "url": "https://archive.news.ufl.edu/articles/2018/09/how-helpful-are-product-recommendations-really-1.html",
+      "date_publication": "2018-09",
+      "consulte_le": "2026-07-16",
+      "fiabilite": "T4_secondaire"
     }
   ],
   "schema_flow": {
@@ -195,7 +226,7 @@
       "Moteur de reco manage (AWS Personalize, Google Recommendations AI) pour une premiere version sans equipe ML lourde",
       "Filtrage collaboratif open source (implicit, LightFM) pour une version custom"
     ],
-    "premiere_etape": "Brancher un bloc \" souvent achetes ensemble \" sur les fiches produit a partir des co-achats, et mesurer le taux de clic et la conversion assistee contre l'affichage sans reco.",
+    "premiere_etape": "Brancher un bloc « souvent achetes ensemble » sur les fiches produit a partir des co-achats, et mesurer le taux de clic et la conversion assistee contre l'affichage sans reco.",
     "playbook": [
       {
         "action": "Consolider l'historique de co-achats et de co-vues par produit, avec identifiants stables.",
@@ -220,7 +251,7 @@
     {
       "nom": "Filtrage collaboratif item-to-item",
       "categorie": "llm",
-      "detail": "Algorithme maison d'Amazon concu vers 1997 (Linden, Smith, York), publie en 2003 et distingue par IEEE en 2017 ; toujours la fondation de la recommandation.",
+      "detail": "Algorithme maison d'Amazon concu vers 1997 (Linden, Smith, York), publie en 2003 et distingue par IEEE en 2017. Aucun document public d'Amazon ne precise son role actuel dans le systeme.",
       "url": "https://www.amazon.science"
     },
     {
@@ -232,23 +263,27 @@
     {
       "nom": "Service de recommandation temps reel",
       "categorie": "outil",
-      "detail": "Classement des candidats a l'affichage, servi sur accueil, fiche produit, panier et email.",
+      "detail": "Classement des candidats a l'affichage. En 2003, Amazon decrit des recommandations servies sur la majorite des pages du site et dans de nombreuses campagnes email.",
       "url": "https://www.amazon.com"
     }
   ],
   "seo": {
     "slug": "amazon-item-to-item-reco-2024",
-    "title": "Amazon : moteur de recommandation item-to-item - jusqu'a 35 % des achats issus des recos (McKinsey)",
-    "meta_description": "Le filtrage collaboratif item-to-item d'Amazon, en production depuis la fin des annees 1990, sert les recommandations sur toutes les surfaces du site. McKinsey estimait a 35 % la part des achats issus des recos.",
-    "resume_citable": "Le moteur de recommandation item-to-item d'Amazon, concu vers 1997 et distingue par IEEE en 2017, alimente accueil, fiche produit, panier et email ; McKinsey estimait en 2013 que 35 % des achats sur Amazon venaient des recommandations.",
+    "title": "Amazon : moteur de recommandation item-to-item - en service depuis 1997, distingue par IEEE en 2017",
+    "meta_description": "Le filtrage collaboratif item-to-item d'Amazon, en service depuis 1997, distingue par IEEE en 2017. Amazon n'a jamais chiffre l'apport des recommandations.",
+    "resume_citable": "Le moteur de recommandation item-to-item d'Amazon, en service depuis environ 1997 et designe en 2017 par IEEE Internet Computing comme l'article ayant le mieux resiste a l'epreuve du temps, servait deja en 2003 la majorite des pages du site et de nombreuses campagnes email ; Amazon n'a jamais publie de chiffre d'impact, et le « 35 % des achats » souvent cite est une estimation McKinsey de 2013 jamais confirmee par la marque.",
     "faq": [
       {
         "q": "Comment fonctionne la recommandation d'Amazon ?",
         "a": "Par filtrage collaboratif item-to-item : l'algorithme part de chaque produit et pre-calcule les articles souvent achetes ou consultes ensemble, puis les ressort en temps reel selon ce que le visiteur regarde."
       },
       {
-        "q": "D'ou vient le chiffre de 35 % ?",
-        "a": "D'une estimation McKinsey publiee en 2013. Ce n'est pas un chiffre communique par Amazon dans ses resultats financiers."
+        "q": "D'ou vient le chiffre de 35 % des achats ?",
+        "a": "D'une estimation publiee par McKinsey en octobre 2013, sans methodologie exposee. Amazon ne l'a jamais confirmee et ne publie aucun chiffre sur l'apport de ses recommandations. Le professeur Anuj Kumar (universite de Floride) juge cette estimation difficile a croire."
+      },
+      {
+        "q": "Amazon a-t-elle publie un chiffre d'impact de ses recommandations ?",
+        "a": "Non. Son papier de 2003 affirme seulement, sans le quantifier, que les taux de clic et de conversion des recommandations depassent largement ceux des contenus non cibles comme les bannieres."
       }
     ]
   },
