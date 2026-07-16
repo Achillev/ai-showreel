@@ -1,0 +1,295 @@
+{
+  "id": "coffret-dor-coffmi-analyse-ia-line-2020",
+  "type_fiche": "succes",
+  "marque": "Coffret d'Or",
+  "groupe": "Kanebo Cosmetics (Kao)",
+  "industrie": "luxe_beaute",
+  "marches_deploiement": [
+    "Japon"
+  ],
+  "transposable_ue": {
+    "flag": "oui_avec_adaptations",
+    "note": "Le canal conversationnel LINE est propre au Japon ; en Europe il faut le remplacer par WhatsApp, un web-app ou un mini-site. L'analyse repose sur une photo du visage et des indicateurs de peau : donnees biometriques sensibles au sens du RGPD (consentement explicite, minimisation) et usage a cadrer au titre de l'AI Act pour les systemes de categorisation biometrique."
+  },
+  "metier": "marketing digital / CRM beaute",
+  "logo_domain": "kanebo-cosmetics.jp",
+  "intervenants": [
+    {
+      "nom": "Kaori Kawano",
+      "role": "Marketing Regional Brand Group, Kanebo Cosmetics",
+      "source_ref": "S1"
+    },
+    {
+      "nom": "Rikako Tutsumi",
+      "role": "Marketing Regional Brand Group, Kanebo Cosmetics",
+      "source_ref": "S1"
+    }
+  ],
+  "agences": [
+    {
+      "nom": "Perfect Corp",
+      "role": "Fournisseur de la brique IA d'analyse faciale (AI Face Attribute) et de l'essayage virtuel (YouCam Makeup)",
+      "source_ref": "S1"
+    }
+  ],
+  "axes": {
+    "levier": "activation_conversion",
+    "touchpoints": [
+      "LINE",
+      "application mobile",
+      "essayage AR",
+      "diagnostic de peau"
+    ],
+    "etape_parcours": "considération",
+    "famille": "personnalisation",
+    "pattern": "analyse de peau par vision IA routant vers une reco produit personnalisee",
+    "type_ia": [
+      "vision par ordinateur",
+      "analyse faciale",
+      "realite augmentee"
+    ],
+    "plateforme_stack": [
+      "Perfect Corp AI Face Attribute",
+      "YouCam Makeup",
+      "LINE"
+    ],
+    "objectif_metrique": [
+      "temps passe sur la page",
+      "abonnes canal",
+      "engagement produit"
+    ]
+  },
+  "implementation": "plateforme",
+  "objectif_business": "Offrir un conseil maquillage personnalise 24h/24 aux clientes qui ne peuvent pas se rendre en boutique, faute de temps ou de proximite, et router chaque cliente vers les produits Coffret d'Or adaptes a sa peau et a ses traits.",
+  "points_cles": [
+    "Coffret d'Or (Kanebo) a lance COFFmi sur LINE en septembre 2020 : analyse de peau IA et reco maquillage.",
+    "L'IA Perfect Corp analyse hydratation, sebum, taches et grain de peau, puis propose parmi environ 7 000 combinaisons.",
+    "Temps passe sur la page multiplie par 2,48 et pages vues par 11,4 apres l'ajout de l'analyse IA (source vendeur).",
+    "Deploiement arrete fin 2024 : Kao a stoppe toute la marque Coffret d'Or pour recentrage de portefeuille, pas pour un echec de l'IA."
+  ],
+  "description": "COFFmi est un service de conseil beaute digital de la marque Coffret d'Or, accessible en ajoutant un compte sur l'application de messagerie LINE. La cliente prend une photo de son visage et repond a un court questionnaire ; la fonction COFFmi CHECKER, appuyee sur la solution AI Face Attribute de Perfect Corp, analyse l'hydratation, le sebum, les taches et le grain de peau ainsi que les traits du visage. A partir du diagnostic, le service recommande les produits et teintes adaptes parmi environ 7 000 combinaisons, et permet un essayage virtuel en realite augmentee via la camera. Les resultats s'accumulent sur une page personnelle sous forme de journal. Coffret d'Or presente ce dispositif comme la premiere adoption mondiale de la technologie AI Face Attribute.",
+  "resultats": [
+    {
+      "metrique": "Temps passe sur la page apres ajout de l'analyse IA",
+      "valeur": "+2,48x",
+      "citation_exacte": "2.48 times increase in time spent on the page",
+      "source_ref": "S1"
+    },
+    {
+      "metrique": "Pages vues (PV) apres le lancement",
+      "valeur": "+11,4x",
+      "citation_exacte": "11.4 times increase in PV",
+      "source_ref": "S1"
+    },
+    {
+      "metrique": "Nouveaux abonnes LINE en deux semaines apres le lancement",
+      "valeur": "300 000+",
+      "citation_exacte": "More than 300,000 new LINE followers within two weeks after the launch",
+      "source_ref": "S1"
+    },
+    {
+      "metrique": "Retombees media autour du lancement",
+      "valeur": "150+",
+      "citation_exacte": "more than 150 media exposures",
+      "source_ref": "S1"
+    }
+  ],
+  "niveau_preuve": {
+    "niveau": "B",
+    "justification": "Metriques d'engagement issues de la success story de Perfect Corp (vendeur de la techno, donc interesse) : plafond B. La presse japonaise (Fashionsnap, TechCrunch Japan) corrobore le deploiement, les 7 000 combinaisons et l'analyse de peau, sans confirmer les chiffres d'engagement, qui restent d'origine vendeur."
+  },
+  "dates": {
+    "lancement": "2020-09-17",
+    "derniere_confirmation_activite": "fin 2024 (arret de la marque Coffret d'Or)",
+    "verifie_le": "2026-07-16",
+    "revoir_apres": "2027-01-16"
+  },
+  "statut_vivant": {
+    "statut": "signaux_mitiges",
+    "note": "Le service a tourne environ quatre ans (2020-2024), ce qui atteste du passage a l'echelle. Mais Kao a annonce le 1er avril 2024 l'arret de toute la marque Coffret d'Or : fin de production a partir de juin 2024, fin des ventes fin decembre 2024, dans le cadre d'un recentrage sur une vingtaine de marques de croissance. Le deploiement n'est donc plus actif ; son arret tient a la disparition de la marque, pas a un echec de l'IA."
+  },
+  "sources": [
+    {
+      "ref": "S1",
+      "type": "customer_story_plateforme",
+      "fiabilite": "T2_officiel_interesse",
+      "titre": "COFFRET D'OR - Perfect Corp Business Success Story",
+      "url": "https://www.perfectcorp.com/business/successstory/COFFRET-DOR",
+      "date_publication": "2020",
+      "consulte_le": "2026-07-16"
+    },
+    {
+      "ref": "S2",
+      "type": "presse",
+      "fiabilite": "T3_presse_etablie",
+      "titre": "コフレドールが世界初、スマホの顔写真と診断結果から最適なメイクを提案するサービス開始",
+      "url": "https://www.fashionsnap.com/article/2020-09-17/coffmi-start/",
+      "date_publication": "2020-09-17",
+      "consulte_le": "2026-07-16"
+    },
+    {
+      "ref": "S3",
+      "type": "presse",
+      "fiabilite": "T3_presse_etablie",
+      "titre": "花王、化粧品「コフレドール」販売終了 構造改革で",
+      "url": "https://www.nikkei.com/article/DGXZQOUC011BF0R00C24A4000000/",
+      "date_publication": "2024-04-01",
+      "consulte_le": "2026-07-16"
+    }
+  ],
+  "fonctionnement_operationnel": {
+    "cadence": "Temps reel, a chaque interaction de la cliente sur LINE.",
+    "opere_par": "L'equipe digitale/CRM de la marque, avec la brique d'analyse et d'essayage fournie et maintenue par Perfect Corp.",
+    "signal_pilote": "La photo du visage envoyee par la cliente et les reponses au questionnaire. Sans image exploitable (cadrage, lumiere), le diagnostic ne se fait pas et la reco tombe a plat.",
+    "etapes": [
+      {
+        "etape": "Entree dans le service",
+        "detail": "La cliente ajoute le compte COFFmi comme ami sur LINE et lance COFFmi CHECKER.",
+        "acteur": "client"
+      },
+      {
+        "etape": "Capture et analyse",
+        "detail": "Prise de photo du visage et court questionnaire ; l'IA mesure hydratation, sebum, taches, grain de peau et traits du visage.",
+        "acteur": "IA"
+      },
+      {
+        "etape": "Reco produit",
+        "detail": "Le systeme selectionne produits et teintes parmi environ 7 000 combinaisons a partir du diagnostic.",
+        "acteur": "IA"
+      },
+      {
+        "etape": "Essayage virtuel",
+        "detail": "La cliente teste les produits recommandes en realite augmentee via la camera.",
+        "acteur": "client"
+      },
+      {
+        "etape": "Suivi",
+        "detail": "Les resultats s'accumulent sur une page personnelle en format journal, pour un reengagement dans le temps.",
+        "acteur": "IA"
+      }
+    ]
+  },
+  "schema_flow": {
+    "statut": "documente",
+    "noeuds": [
+      {
+        "id": "cliente",
+        "role_generique": "humain",
+        "label": "Cliente"
+      },
+      {
+        "id": "line",
+        "role_generique": "canal_conversationnel",
+        "label": "LINE (compte COFFmi)",
+        "outil_documente": "LINE"
+      },
+      {
+        "id": "photo",
+        "role_generique": "data_source",
+        "label": "Photo du visage + questionnaire"
+      },
+      {
+        "id": "ia",
+        "role_generique": "modele_ia",
+        "label": "Analyse faciale et de peau",
+        "outil_documente": "Perfect Corp AI Face Attribute"
+      },
+      {
+        "id": "catalogue",
+        "role_generique": "data_source",
+        "label": "Catalogue Coffret d'Or (~7 000 combinaisons)"
+      },
+      {
+        "id": "reco",
+        "role_generique": "site_app",
+        "label": "Reco produit + essayage AR",
+        "outil_documente": "YouCam Makeup"
+      }
+    ],
+    "liens": [
+      [
+        "cliente",
+        "line"
+      ],
+      [
+        "line",
+        "photo"
+      ],
+      [
+        "photo",
+        "ia"
+      ],
+      [
+        "catalogue",
+        "ia"
+      ],
+      [
+        "ia",
+        "reco"
+      ],
+      [
+        "reco",
+        "cliente",
+        "reco personnalisee et essayage"
+      ]
+    ]
+  },
+  "stack_technique": [
+    {
+      "nom": "AI Face Attribute",
+      "categorie": "plateforme",
+      "detail": "Analyse des traits du visage et des indicateurs de peau, fournie par Perfect Corp",
+      "url": "https://www.perfectcorp.com"
+    },
+    {
+      "nom": "YouCam Makeup",
+      "categorie": "outil",
+      "detail": "Essayage maquillage en realite augmentee",
+      "url": "https://www.perfectcorp.com"
+    },
+    {
+      "nom": "LINE",
+      "categorie": "plateforme",
+      "detail": "Canal conversationnel d'acces au service au Japon",
+      "url": "https://line.me"
+    }
+  ],
+  "replication": {
+    "statut_epistemique": "infere",
+    "prerequis_data": [
+      "Catalogue produit structure avec attributs (teintes, finis, cibles peau) exploitables par un moteur de reco",
+      "Consentement explicite pour traiter la photo du visage et les indicateurs de peau (donnees biometriques sensibles)"
+    ],
+    "prerequis_orga": [
+      "Une equipe digitale/CRM capable d'operer un canal conversationnel et d'en lire les remontees",
+      "Un accord juridique/DPO sur le traitement d'images faciales cote UE"
+    ],
+    "stack_possible": [
+      "Brique d'analyse de peau et d'essayage AR sur etagere (type Perfect Corp, Revieve, ModiFace)",
+      "Canal conversationnel adapte au marche (WhatsApp, web-app, mini-app)",
+      "Moteur de reco relie au catalogue produit"
+    ],
+    "equipe": "Un responsable CRM/digital pour piloter le parcours, un profil data/produit pour cabler le catalogue au moteur de reco, un relais juridique/DPO pour le traitement biometrique.",
+    "premiere_etape": "Cartographier les attributs du catalogue produit et definir les preoccupations de peau a detecter, avant de brancher une brique d'analyse sur etagere sur un canal test."
+  },
+  "seo": {
+    "slug": "coffret-dor-coffmi-analyse-ia-line-2020",
+    "title": "Coffret d'Or : analyse de peau IA sur LINE (COFFmi) - +2,48x de temps sur la page (2020)",
+    "meta_description": "Coffret d'Or (Kanebo) a lance COFFmi sur LINE : analyse de peau IA Perfect Corp et reco maquillage. +2,48x de temps sur la page. Arrete fin 2024 avec la marque.",
+    "resume_citable": "En 2020, la marque japonaise Coffret d'Or (Kanebo) a deploye sur LINE le service COFFmi, une analyse de peau par IA (Perfect Corp) routant vers environ 7 000 combinaisons de maquillage, avec un temps passe sur la page multiplie par 2,48 ; le service a ete arrete fin 2024 avec l'ensemble de la marque.",
+    "faq": [
+      {
+        "q": "Qu'est-ce que COFFmi de Coffret d'Or ?",
+        "a": "Un service de conseil beaute digital lance en septembre 2020 sur l'application LINE : la cliente prend une photo de son visage, une IA analyse sa peau et ses traits, puis le service recommande des produits parmi environ 7 000 combinaisons et propose un essayage en realite augmentee."
+      },
+      {
+        "q": "Quels resultats l'analyse IA a-t-elle produits ?",
+        "a": "Selon la success story de Perfect Corp (fournisseur de la techno), le temps passe sur la page a ete multiplie par 2,48 et les pages vues par 11,4, avec plus de 300 000 nouveaux abonnes LINE en deux semaines. Chiffres d'origine vendeur, a lire avec cette reserve."
+      },
+      {
+        "q": "Le service est-il toujours actif ?",
+        "a": "Non. Kao a annonce en avril 2024 l'arret de la marque Coffret d'Or, avec fin des ventes fin decembre 2024. Le service COFFmi a donc disparu avec la marque, dans le cadre d'un recentrage de portefeuille, sans lien avec la performance de l'IA."
+      }
+    ]
+  }
+}

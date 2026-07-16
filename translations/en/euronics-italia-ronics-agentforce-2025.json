@@ -1,0 +1,120 @@
+{
+  "seo": {
+    "title": "Euronics Italia: Ronics shopping agent (Salesforce Agentforce) - +53% conversion on assisted sessions (2025)",
+    "meta_description": "Euronics Italia launched Ronics, a shopping agent on Salesforce Agentforce covering 26,000 references. On assisted sessions, the conversion rate rises by 53%.",
+    "resume_citable": "In August 2025, Euronics Italia (the country's third-largest consumer electronics retailer, 463 stores) deployed Ronics, a conversational shopping agent on Salesforce Agentforce covering a catalog of 26,000 references: on agent-assisted sessions the conversion rate rises by 53%, with +13% online sales and +2% overall conversion in 2025.",
+    "faq": [
+      {
+        "q": "What technology is Ronics built on?",
+        "a": "Ronics is a shopping agent built on the Salesforce Agentforce 360 platform, with the catalog of 26,000 references stored in Salesforce Data 360. The integrator Retail Reply set it up in about fifteen weeks."
+      },
+      {
+        "q": "What does the +53% conversion mean?",
+        "a": "According to the Salesforce customer story, since the late August 2025 launch Ronics drives a 53% rise in the conversion rate on sessions where it assists the customer, while overall e-commerce conversion rises by 2% over 2025."
+      },
+      {
+        "q": "Is the case transposable to Europe?",
+        "a": "Yes, it is already deployed in Italy. Replicating it assumes a catalog queryable in real time, a GDPR legal basis for personalization, and AI transparency under the AI Act."
+      }
+    ]
+  },
+  "pattern": "genAI conversational shopping agent",
+  "etape_parcours": "consideration",
+  "objectif_business": "Bring the in-store salesperson's guidance online to turn every digital interaction into a sales opportunity, and lift the conversion rate on a catalog of 26,000 references where the customer gets lost alone.",
+  "description": "Ronics is a conversational shopping assistant available on the euronics.it site and the Euronics Italia app. The customer starts a chat and describes what they are looking for in natural language: the agent asks questions, compares options, explains the differences between models, and adds the recommended products to the cart. It draws on the catalog of 26,000 references stored in Salesforce Data 360, and also covers order tracking, since locating orders is the most frequent contact reason in e-commerce. The goal is to reproduce online the exchange with a salesperson who knows the aisle. The agent is built on Salesforce's Agentforce 360 platform, which links e-commerce, marketing, service, and product data in a unified context. Launched in late August 2025 (after an announcement around June 2025), it was set up with the integrator Retail Reply in about fifteen weeks, of which seven were framing and eight were testing and deployment. Since launch, Ronics has run more than 8,000 purchase-oriented conversations.",
+  "points_cles": [
+    "Euronics Italia (463 stores, Italy's third-largest consumer electronics retailer) launched Ronics in late August 2025, a shopping agent on Salesforce Agentforce.",
+    "Ronics guides the customer in natural language across a catalog of 26,000 references and adds the recommended products to the cart.",
+    "On sessions assisted by Ronics, the conversion rate rises by 53%; +13% online sales and +2% overall conversion in 2025.",
+    "Level B evidence: a quantified Salesforce customer story (vendor), corroborated by Il Sole 24 Ore; more than 8,000 conversations handled."
+  ],
+  "resultats": [
+    {
+      "metrique": "Rise in conversion rate on sessions assisted by Ronics (since the late August 2025 launch)"
+    },
+    {
+      "metrique": "Click-through rate on products shown by Ronics"
+    },
+    {
+      "metrique": "Online sales growth in 2025 (overall e-commerce scope)"
+    },
+    {
+      "metrique": "Rise in the overall e-commerce conversion rate in 2025"
+    },
+    {
+      "metrique": "Purchase-oriented conversations handled by Ronics since launch"
+    }
+  ],
+  "niveau_preuve": {
+    "justification": "Figures (+53% conversion on Ronics sessions, 7% product CTR, +13% online sales, +2% overall conversion) come from the Salesforce customer story, a vendor and therefore interested source: capped at B. Corroborated by Il Sole 24 Ore (Agentforce deployment, the retailer's scale) and the Italian trade press (26,000 references, executive quoted). No detailed financial results, hence B and not A."
+  },
+  "fonctionnement_operationnel": {
+    "cadence": "Real time on each customer session, on the site and the app.",
+    "opere_par": "Euronics Italia's digital and e-commerce team, with the integrator Retail Reply for the Agentforce platform.",
+    "signal_pilote": "The conversation context cross-referenced with the catalog of 26,000 references and availability data in Data 360. If the catalog feed or the stock data degrades, the agent recommends wrong or out-of-stock products and loses the trust that gives it its value.",
+    "etapes": [
+      {
+        "etape": "Open the conversation",
+        "detail": "The customer starts a chat with Ronics from the site or the app and states their request in natural language.",
+        "acteur": "customer"
+      },
+      {
+        "etape": "Understand and frame the need",
+        "detail": "The agent asks questions, compares options, and explains the differences between models, like a salesperson on the floor.",
+        "acteur": "AI"
+      },
+      {
+        "etape": "Recommend and fill the cart",
+        "detail": "Ronics queries the catalog of 26,000 references in Data 360, suggests suitable products, and adds them to the cart.",
+        "acteur": "AI"
+      },
+      {
+        "etape": "Handle service and follow-up",
+        "detail": "The agent also handles order-tracking requests, the most frequent contact reason, thanks to the service/commerce link in Agentforce 360.",
+        "acteur": "AI"
+      },
+      {
+        "etape": "Supervise and iterate",
+        "detail": "The digital team and the integrator monitor the quality of the responses and recommendations and adjust the agent as usage evolves.",
+        "acteur": "digital team / agency"
+      }
+    ]
+  },
+  "stack_technique": [
+    {
+      "detail": "AI agent platform linking e-commerce, marketing, and service; runs the Ronics agent."
+    },
+    {
+      "detail": "Unified data layer where the catalog of 26,000 references queried by the agent is stored."
+    },
+    {
+      "detail": "Partner integrator that built and deployed Ronics in about fifteen weeks."
+    }
+  ],
+  "replication": {
+    "prerequis_data": [
+      "A structured, up-to-date product catalog queryable in real time (attributes, visuals, availability, price) across all references",
+      "Order and stock data accessible to the agent to cover tracking and avoid recommending out-of-stock products",
+      "Customer purchase history and context for personalization, within a clear GDPR consent framework"
+    ],
+    "prerequis_orga": [
+      "A digital/e-commerce team able to run an agent in production and iterate on its responses",
+      "A platform integrator or an in-house AI team to connect the agent to the catalog and existing systems",
+      "A conversion measurement that isolates agent-assisted sessions, to separate its effect from the rest of the traffic",
+      "AI transparency compliant with the AI Act (the customer knows they are talking to an AI)"
+    ],
+    "stack_possible": [
+      "Salesforce Agentforce 360 + Data 360 (the stack documented here)",
+      "Or an LLM-based conversational agent connected to the catalog via RAG, with a link to order/stock systems",
+      "A/B testing or measurement tooling to isolate the agent's effect on conversion"
+    ],
+    "equipe": "A conversational experience lead on the e-commerce side, integration profiles to connect the agent to the catalog and order systems, a data profile for conversion measurement, and a merchandising contact for recommendation quality.",
+    "premiere_etape": "Check that the catalog and stock data are queryable in real time with attributes rich enough for an agent to compare models rather than return a list: that is what separates a credible advisor from a search engine in disguise."
+  },
+  "statut_vivant": {
+    "note": "Ronics has been in production on the Euronics Italia site and app since late August 2025, on a catalog of 26,000 references. The Salesforce customer story reports more than 8,000 conversations and conversion results measured over 2025."
+  },
+  "transposable_ue": {
+    "note": "The case is already deployed in the EU (Italy), so there is no transposition barrier. The agent handles purchase history and context to personalize its recommendations: a legal basis and GDPR notice are required, and the AI Act requires that the customer know they are talking to an AI."
+  }
+}

@@ -1,0 +1,130 @@
+{
+  "seo": {
+    "title": "Toast: AI menu upsell agent (Sous Chef, ToastIQ) - +6% basket in pilot (2025)",
+    "meta_description": "Toast brings an AI upsell (Sous Chef, the ToastIQ ecosystem) into the moment of ordering: +6% average volume at a pilot restaurant, ToastIQ adopted by half of 164,000 locations.",
+    "resume_citable": "Toast launched ToastIQ and the Sous Chef AI agent in 2025 to suggest add-on items to the customer at the moment of ordering; a pilot restaurant saw its average order volume rise 6 percent, and ToastIQ was used by more than half of the 164,000 locations within four months of launch, with more than 8 million queries.",
+    "faq": [
+      {
+        "q": "Is the +6 percent in average order volume an average across the Toast base?",
+        "a": "No. According to PYMNTS (May 2025), it is a pilot result at a single restaurant using the menu upsell tool, not a generalized average across the 164,000 locations."
+      },
+      {
+        "q": "What are Sous Chef and ToastIQ at Toast?",
+        "a": "ToastIQ is the intelligence layer launched in May 2025 (operator co-pilot plus customer-facing functions); Sous Chef is the AI agent and assistant, a conversational and voice lineage credited with the menu upsell."
+      },
+      {
+        "q": "Is the voice upsell agent already deployed at scale?",
+        "a": "The ToastIQ ecosystem is (more than half of locations, 8 million queries). The voice agent for kiosks and drive-thru is rolling out, with a multi-lane drive-thru product announced for 2026."
+      }
+    ]
+  },
+  "pattern": "AI voice order-taking agent with menu upsell (basket increase)",
+  "etape_parcours": "purchase",
+  "objectif_business": "Increase the value of each order at the moment the customer orders, by having an AI suggest relevant add-on items (upsell), and make the platform more useful to the operator through an AI assistant grounded in its sales data. All across a base of 164,000 restaurants in the United States, where staff time is the main constraint.",
+  "description": "Toast, the point-of-sale and management platform for US restaurants, brings AI into the moment of ordering. In May 2025, the company launched ToastIQ, an intelligence layer that acts as a co-pilot for the operator (menu analysis, marketing, inventory) and houses customer-facing functions. The one most directly tied to revenue is a menu upsell tool attached to the Sous Chef AI agent: as the order is being built, the AI suggests the relevant add-on items to lift the basket. In the pilot program, one restaurant saw its average order volume rise 6 percent thanks to this tool (source PYMNTS, May 2025). This is a pilot result at a single location, not a generalized average across the base. The ecosystem itself is already widely adopted: in the fourth quarter of 2025, Toast reports that more than half of its locations used ToastIQ within four months of launch, with more than 8 million queries sent. The company also announced the rollout of AI voice agents for kiosks and drive-thru, with a multi-lane drive-thru product planned for 2026: this is where voice upsell most directly touches the end customer's experience. At scale: 164,000 locations at end of 2025, 30,000 net added during the year, and ARR that surpasses 2 billion dollars, up 26 percent.",
+  "points_cles": [
+    "Toast has an AI (Sous Chef, the ToastIQ ecosystem) suggest add-on items at the moment of ordering to increase the basket.",
+    "A pilot restaurant saw its average order volume rise 6 percent thanks to the menu upsell tool.",
+    "ToastIQ was used by more than half of locations within four months, with more than 8 million queries.",
+    "At scale: 164,000 restaurants and ARR above 2 billion dollars (+26 percent) at end of 2025; voice agent for kiosks and drive-thru rolling out in 2026."
+  ],
+  "resultats": [
+    {
+      "metrique": "Average order volume at a pilot restaurant, via the AI menu upsell tool (pilot, single location, not generalized)"
+    },
+    {
+      "metrique": "Share of locations that used ToastIQ within four months of launch"
+    },
+    {
+      "metrique": "Volume of queries sent to ToastIQ"
+    },
+    {
+      "metrique": "Restaurant base (locations) on the Toast platform at end of 2025"
+    },
+    {
+      "metrique": "Toast's ARR at end of 2025"
+    }
+  ],
+  "niveau_preuve": {
+    "justification": "Toast's AI ecosystem is quantified in the Q4 2025 earnings call (ToastIQ adoption by more than half of locations within four months, 8 million queries, 164,000 locations, ARR of 2 billion dollars up 26 percent): this is financial-results-grade evidence for scale. But the upsell figure that carries the case, +6 percent in average order volume, is a pilot result at a single restaurant reported by the press (PYMNTS, May 2025), not a base-wide average. Hence a B level and not A: the scale evidence is solid, the evidence of impact on conversion/monetization remains at the pilot stage."
+  },
+  "stack_technique": [
+    {
+      "detail": "Toast's intelligence layer launched in May 2025, which turns the restaurant operating system into a conversational co-pilot for the operator (menu analysis, marketing, inventory) and houses customer-facing AI functions such as upsell."
+    },
+    {
+      "detail": "Toast's AI agent and assistant, a conversational and voice lineage integrated into the ToastIQ ecosystem; it is the component credited with a menu upsell that increases average order volume."
+    }
+  ],
+  "fonctionnement_operationnel": {
+    "cadence": "Real time, at every order (kiosk, drive-thru, voice order-taking); the ToastIQ operator assistant responds on demand.",
+    "opere_par": "The restaurant, through the Toast platform; the upsell agent and the assistant run on Toast's infrastructure and models, with no data team on the restaurant side.",
+    "signal_pilote": "The structured menu (items, options, add-ons) and the order history. Without a clean, up-to-date menu, the AI does not know what to offer as upsell and the suggestions lose their relevance.",
+    "etapes": [
+      {
+        "etape": "The customer starts their order",
+        "detail": "The customer interacts with the kiosk, the drive-thru, or voice order-taking, or the team enters the order on the Toast POS.",
+        "acteur": "customer"
+      },
+      {
+        "etape": "AI upsell suggestion",
+        "detail": "As the basket is being built, the Sous Chef agent suggests the relevant add-on items based on the menu and the order context.",
+        "acteur": "AI"
+      },
+      {
+        "etape": "Add to basket and checkout",
+        "detail": "The customer accepts the suggestion or not; the item is added to the order and flows to the POS for checkout.",
+        "acteur": "customer"
+      },
+      {
+        "etape": "Operator steering",
+        "detail": "The operator queries ToastIQ (menu analysis, marketing, inventory) to adjust the menu and offers, and tracks the effect on average order volume.",
+        "acteur": "marketing"
+      }
+    ]
+  },
+  "replication": {
+    "prerequis_data": [
+      "A structured, up-to-date menu (items, options, add-ons, prices)",
+      "First-party order history to refine the suggestions",
+      "Instrumented order points (kiosk, drive-thru, POS) able to display or speak a suggestion"
+    ],
+    "prerequis_orga": [
+      "A point-of-sale system able to host an AI upsell layer",
+      "Business rules on what can be offered (margins, allergens, availability)",
+      "A transparency and compliance framework if the upsell goes through a voice (AI Act, GDPR on the voice and the history)"
+    ],
+    "stack_possible": [
+      "A voice or conversational agent connected to the order system",
+      "An add-on recommendation engine grounded in the menu and the history",
+      "An operator assistant to steer menu, marketing, and inventory",
+      "A POS or kiosk as the display and checkout point"
+    ],
+    "premiere_etape": "Pick a high-volume order channel (drive-thru or kiosk) and test an AI upsell there on a selection of high-margin add-on items, measuring the effect on average order volume before extending.",
+    "playbook": [
+      {
+        "action": "Structure and clean up the menu (items, options, add-ons, margins) so the AI knows what to offer.",
+        "livrable": "A menu usable by a recommendation engine, with suggestion rules."
+      },
+      {
+        "action": "Connect an upsell agent to a pilot order channel (drive-thru or kiosk) and define the suggestion moments.",
+        "livrable": "AI upsell active on one channel, at one or a few locations."
+      },
+      {
+        "action": "Measure the effect on average order volume and the suggestion acceptance rate, and adjust the rules.",
+        "livrable": "A quantified reading of basket impact and the most-accepted suggestions."
+      },
+      {
+        "action": "Extend to other channels and locations, and give the operator an assistant to steer menu and offers.",
+        "livrable": "AI upsell generalized plus operator assistant in production."
+      }
+    ],
+    "equipe": "On the platform side: product and AI teams for the upsell agent, the recommendation engine, and the operator assistant. On the restaurant side: a menu/marketing lead to frame the suggestion rules and read the impact, with no dedicated data team."
+  },
+  "statut_vivant": {
+    "note": "ToastIQ, launched in May 2025, is confirmed in full expansion at the Q4 2025 earnings call (February 2026): more than half of locations use it, 8 million queries, and Toast announces the rollout of AI voice agents for kiosks and drive-thru plus a multi-lane drive-thru product for 2026. No signal of withdrawal."
+  },
+  "transposable_ue": {
+    "note": "The pattern (an AI voice order-taking agent that suggests add-on items to increase the basket, plus an operator AI assistant grounded in sales data) transposes to any restaurant chain equipped with kiosks, drive-thru, or a POS. Toast today operates essentially in the United States. In the EU, the voice agent requires the transparency provided for by the AI Act (telling the customer they are talking to an AI) and a GDPR legal basis to use the order history that feeds the suggestions; the voice itself is data to be governed. The foundation is proprietary to Toast (ToastIQ); a European replicator would connect a voice agent to its own point-of-sale system and menu catalog."
+  }
+}

@@ -1,0 +1,283 @@
+{
+  "id": "garanti-bbva-ugi-genai-2025",
+  "type_fiche": "succes",
+  "marque": "Garanti BBVA",
+  "groupe": "BBVA",
+  "industrie": "banque_assurance_fintech",
+  "marches_deploiement": [
+    "Turquie"
+  ],
+  "transposable_ue": {
+    "flag": "oui_avec_adaptations",
+    "note": "Deploye en Turquie, hors UE. Un assistant qui lit les comptes et execute des operations (virements, paiements, demandes de carte) impose en UE une base legale RGPD claire et, sous l'AI Act, une obligation de transparence sur la nature IA de l'interlocuteur. Le pattern est transposable ; l'architecture data et la conformite sont a refaire."
+  },
+  "metier": "service client",
+  "intervenants": [
+    {
+      "nom": "Ceren Acer Kezik",
+      "role": "Executive Vice President, Garanti BBVA",
+      "source_ref": "S1"
+    }
+  ],
+  "axes": {
+    "levier": "retention",
+    "touchpoints": [
+      "app mobile Garanti BBVA",
+      "assistant conversationnel Ugi"
+    ],
+    "etape_parcours": "post-achat",
+    "famille": "conversation",
+    "pattern": "assistant client genAI de bout en bout",
+    "type_ia": [
+      "grand modele de langage",
+      "assistant conversationnel",
+      "traitement du langage naturel"
+    ],
+    "plateforme_stack": [
+      "custom/in-house"
+    ],
+    "objectif_metrique": [
+      "part des demandes comprises",
+      "volume de conversations traitees",
+      "operations executees en libre-service"
+    ]
+  },
+  "implementation": "custom",
+  "stack_technique": [
+    {
+      "nom": "Ugi (assistant genAI base LLM)",
+      "categorie": "outil",
+      "detail": "Assistant de l'app mobile initialement a base de regles, migre vers une infrastructure LLM permettant le suivi de contexte et l'anticipation des besoins. Les sources ne nomment pas de modele tiers precis.",
+      "url": "https://www.garantibbva.com.tr"
+    },
+    {
+      "nom": "App mobile Garanti BBVA",
+      "categorie": "plateforme",
+      "detail": "Canal de Ugi, integre aux comptes et aux operations bancaires en temps reel.",
+      "url": "https://www.garantibbva.com.tr"
+    }
+  ],
+  "objectif_business": "Traiter en libre-service la majeure partie des demandes clients dans l'app (demandes de carte, paiements de carte, virements, mots de passe de carte, informations) et absorber le volume quotidien hors des canaux couteux, en poussant une experience conversationnelle qui anticipe les besoins.",
+  "points_cles": [
+    "Ugi, l'assistant de l'app mobile Garanti BBVA, migre d'un moteur a regles vers une infrastructure LLM.",
+    "Sur un an : plus de 5 millions de clients assistes et plus de 60 millions de conversations.",
+    "Comprend 90% des demandes et couvre plus de 300 operations bancaires de bout en bout.",
+    "Preuve B, deux communiques officiels concordants ; statut vivant confirme (10 ans du service, mai 2026)."
+  ],
+  "description": "Ugi est l'assistant integre a l'app mobile de Garanti BBVA, la filiale turque de BBVA. Lance en 2016 comme chatbot a base de regles, il a ete migre sur une infrastructure de grands modeles de langage, qui lui permet de suivre le contexte d'une conversation et d'anticiper les besoins du client. Le client s'adresse a Ugi en langage naturel pour executer des operations : demande de carte de credit ou de debit, paiement de carte, transaction liee au mot de passe de carte, virement, ou demande d'information. Sur les douze mois precedant le communique d'avril 2025, Ugi a assiste plus de 5 millions de clients et tenu plus de 60 millions de conversations. Le communique de mai 2026 (dixieme anniversaire du service) precise qu'il comprend 90% des demandes, couvre plus de 300 operations de bout en bout, compte 1,6 million d'utilisateurs actifs et traite en moyenne plus de 6,4 millions d'interactions par mois.",
+  "resultats": [
+    {
+      "metrique": "Clients assistes sur un an (a avril 2025)",
+      "valeur": "5 M+",
+      "citation_exacte": "assisted over five million customers",
+      "source_ref": "S1"
+    },
+    {
+      "metrique": "Conversations tenues sur un an (a avril 2025)",
+      "valeur": "60 M+",
+      "citation_exacte": "held more than 60 million conversations",
+      "source_ref": "S1"
+    },
+    {
+      "metrique": "Part des demandes clients comprises",
+      "valeur": "90%",
+      "citation_exacte": "can now understand 90% of user requests",
+      "source_ref": "S2"
+    },
+    {
+      "metrique": "Operations bancaires de bout en bout couvertes",
+      "valeur": "300+",
+      "citation_exacte": "more than 300 end-to-end banking transactions",
+      "source_ref": "S2"
+    },
+    {
+      "metrique": "Interactions mensuelles moyennes (a mai 2026)",
+      "valeur": "6,4 M/mois",
+      "citation_exacte": "more than 6.4 million monthly interactions on average",
+      "source_ref": "S2"
+    }
+  ],
+  "niveau_preuve": {
+    "niveau": "B",
+    "justification": "Figures auto-rapportees par Garanti BBVA dans deux communiques officiels concordants sur plus d'un an (upgrade genAI d'avril 2025 ; dixieme anniversaire du service en mai 2026), redistribues par un fil de presse. Sources primaires de la marque-sujet, sans biais vendeur tiers, mais non rattachees a une disclosure financiere : d'ou un niveau B plutot que A."
+  },
+  "dates": {
+    "lancement": "2016 (Ugi) ; upgrade genAI avril 2025",
+    "derniere_confirmation_activite": "2026-05",
+    "verifie_le": "2026-07-16",
+    "revoir_apres": "2027-01-16"
+  },
+  "statut_vivant": {
+    "statut": "confirme",
+    "note": "Le communique de mai 2026 (dixieme anniversaire de Ugi) confirme le service en production et en croissance : 90% des demandes comprises, plus de 300 operations couvertes, 1,6 million d'utilisateurs actifs, plus de 6,4 millions d'interactions mensuelles. Aucun signal de retrait."
+  },
+  "sources": [
+    {
+      "ref": "S1",
+      "type": "blog_officiel",
+      "fiabilite": "T1_primaire",
+      "titre": "Garanti BBVA enhances its smart assistant Ugi using generative artificial intelligence",
+      "url": "https://www.bbva.com/en/innovation/garanti-bbva-enhances-its-smart-assistant-ugi-using-generative-artificial-intelligence/",
+      "date_publication": "2025-04-22",
+      "consulte_le": "2026-07-16"
+    },
+    {
+      "ref": "S2",
+      "type": "blog_officiel",
+      "fiabilite": "T1_primaire",
+      "titre": "Garanti BBVA's smart assistant Ugi turns 10: AI transforming banking",
+      "url": "https://www.bbva.com/en/innovation/garanti-bbvas-smart-assistant-ugi-turns-10-ai-transforming-banking/",
+      "date_publication": "2026-05",
+      "consulte_le": "2026-07-16"
+    },
+    {
+      "ref": "S3",
+      "type": "presse",
+      "fiabilite": "T4_secondaire",
+      "titre": "Garanti BBVA Advances Digital Banking with Generative AI Upgrade to Smart Assistant Ugi",
+      "url": "https://news.europawire.eu/garanti-bbva-advances-digital-banking-with-generative-ai-upgrade-to-smart-assistant-ugi/eu-press-release/2025/04/17/14/26/33/152376/",
+      "date_publication": "2025-04-17",
+      "consulte_le": "2026-07-16"
+    }
+  ],
+  "fonctionnement_operationnel": {
+    "cadence": "Temps reel, 24/7, dans l'app mobile ; notifications proactives poussees en continu",
+    "opere_par": "Equipe digitale et data de Garanti BBVA, en interne",
+    "signal_pilote": "L'intention exprimee par le client en langage naturel, plus les signaux de compte et de transaction qui alimentent l'anticipation des besoins. Sans donnees de compte a jour et sans historique d'intents pour l'apprentissage continu, la comprehension et le proactif se degradent.",
+    "etapes": [
+      {
+        "etape": "Requete client",
+        "detail": "Le client formule sa demande en langage naturel dans l'app (demande de carte, paiement, virement, mot de passe de carte, information).",
+        "acteur": "client"
+      },
+      {
+        "etape": "Comprehension et suivi de contexte",
+        "detail": "Le moteur LLM interprete l'intention et suit le fil de la conversation ; il comprend 90% des demandes.",
+        "acteur": "IA"
+      },
+      {
+        "etape": "Execution de l'operation",
+        "detail": "Ugi execute l'operation bancaire de bout en bout parmi plus de 300 transactions couvertes, en s'appuyant sur les donnees de compte.",
+        "acteur": "IA"
+      },
+      {
+        "etape": "Anticipation et notifications",
+        "detail": "Hors requete, Ugi anticipe des besoins et pousse des notifications instantanees personnalisees.",
+        "acteur": "IA"
+      },
+      {
+        "etape": "Apprentissage continu et supervision",
+        "detail": "L'equipe interne exploite les transactions et les retours utilisateurs pour elargir le perimetre traite et corriger les cas mal compris.",
+        "acteur": "equipe data"
+      }
+    ]
+  },
+  "schema_flow": {
+    "statut": "approche_type",
+    "noeuds": [
+      {
+        "id": "client",
+        "role_generique": "site_app",
+        "label": "Client dans l'app mobile Garanti BBVA"
+      },
+      {
+        "id": "ugi",
+        "role_generique": "modele_ia",
+        "label": "Ugi (assistant genAI base LLM)"
+      },
+      {
+        "id": "compte",
+        "role_generique": "data_source",
+        "label": "Comptes, cartes, transactions"
+      },
+      {
+        "id": "core",
+        "role_generique": "site_app",
+        "label": "Systeme bancaire (execution des operations)"
+      }
+    ],
+    "liens": [
+      [
+        "client",
+        "ugi"
+      ],
+      [
+        "ugi",
+        "compte"
+      ],
+      [
+        "compte",
+        "ugi"
+      ],
+      [
+        "ugi",
+        "core",
+        "execute l'operation"
+      ],
+      [
+        "ugi",
+        "client",
+        "notification proactive"
+      ]
+    ]
+  },
+  "replication": {
+    "statut_epistemique": "infere",
+    "prerequis_data": [
+      "Donnees de compte, de carte et de transaction en temps reel",
+      "Historique d'intents clients pour l'entrainement et l'apprentissage continu",
+      "Referentiel des operations bancaires eligibles au libre-service"
+    ],
+    "prerequis_orga": [
+      "Equipe digitale et data dediee dans la duree",
+      "Cadre de securite et de conformite bancaire pour les operations executees",
+      "Gouvernance des notifications proactives (frequence, pertinence, consentement)"
+    ],
+    "stack_possible": [
+      "Grand modele de langage avec suivi de contexte",
+      "Couche d'orchestration reliant l'intention comprise a l'execution des operations",
+      "Integration profonde au core banking et a l'app mobile"
+    ],
+    "premiere_etape": "Partir d'un assistant a regles ou d'un FAQ conversationnel existant, cartographier les operations les plus demandees, puis migrer la comprehension vers un LLM avant d'ouvrir l'execution transactionnelle.",
+    "playbook": [
+      {
+        "action": "Cartographier les operations et demandes les plus frequentes dans l'app a partir des logs support et des parcours clients.",
+        "livrable": "Referentiel d'intentions et d'operations priorisees par volume."
+      },
+      {
+        "action": "Migrer la couche de comprehension d'un moteur a regles vers un LLM capable de suivre le contexte, en environnement de test.",
+        "livrable": "Assistant genAI en lecture, teste sur donnees reelles."
+      },
+      {
+        "action": "Brancher l'execution transactionnelle de bout en bout pour un premier lot d'operations, avec validation securite et conformite.",
+        "livrable": "Assistant capable d'executer un sous-ensemble d'operations en beta."
+      },
+      {
+        "action": "Elargir le perimetre aux operations sensibles (virements, cartes, mots de passe) et ajouter l'anticipation et les notifications proactives.",
+        "livrable": "Assistant generalise couvrant un large catalogue d'operations."
+      },
+      {
+        "action": "Mettre en place l'apprentissage continu sur les transactions et retours pour ameliorer le taux de comprehension.",
+        "livrable": "Boucle d'amelioration continue en production."
+      }
+    ],
+    "equipe": "Une equipe produit digital (PM, design conversationnel), des ingenieurs NLP/LLM et des profils MLOps, avec securite et conformite bancaire impliquees en continu."
+  },
+  "seo": {
+    "slug": "garanti-bbva-ugi-genai-2025",
+    "title": "Garanti BBVA : assistant genAI Ugi - 60 millions de conversations en un an (2025)",
+    "meta_description": "L'assistant Ugi de Garanti BBVA, migre sur LLM, a assiste plus de 5 millions de clients et tenu plus de 60 millions de conversations en un an.",
+    "resume_citable": "Ugi, l'assistant de l'app mobile de Garanti BBVA migre sur une infrastructure LLM, a assiste plus de 5 millions de clients et tenu plus de 60 millions de conversations sur un an, comprend 90% des demandes et couvre plus de 300 operations bancaires de bout en bout.",
+    "faq": [
+      {
+        "q": "Que peut faire l'assistant Ugi de Garanti BBVA ?",
+        "a": "Ugi execute des operations bancaires de bout en bout dans l'app mobile : demandes de carte, paiements de carte, mots de passe de carte, virements et demandes d'information, en comprenant 90% des demandes."
+      },
+      {
+        "q": "Quel volume Ugi traite-t-il ?",
+        "a": "Sur un an, Garanti BBVA annonce plus de 5 millions de clients assistes et plus de 60 millions de conversations, avec en moyenne plus de 6,4 millions d'interactions par mois en 2026."
+      }
+    ]
+  },
+  "logo_domain": "garantibbva.com.tr"
+}

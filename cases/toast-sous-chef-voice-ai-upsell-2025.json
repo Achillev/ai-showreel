@@ -1,0 +1,280 @@
+{
+  "id": "toast-sous-chef-voice-ai-upsell-2025",
+  "type_fiche": "succes",
+  "marque": "Toast",
+  "industrie": "tech_saas",
+  "marches_deploiement": [
+    "Etats-Unis"
+  ],
+  "transposable_ue": {
+    "flag": "oui_avec_adaptations",
+    "note": "Le pattern (agent vocal IA de prise de commande qui propose des articles complementaires pour augmenter le panier, plus un assistant IA operateur adosse aux donnees de vente) se transpose a toute chaine de restauration equipee de bornes, de drive ou d'un POS. Toast opere aujourd'hui essentiellement aux Etats-Unis. En UE, l'agent vocal impose la transparence prevue par l'AI Act (indiquer au client qu'il parle a une IA) et une base legale RGPD pour exploiter l'historique de commande qui alimente les suggestions ; la voix elle-meme est une donnee a encadrer. Le socle est proprietaire a Toast (ToastIQ) ; un replicateur europeen brancherait un agent vocal sur son propre systeme de caisse et son catalogue de menu."
+  },
+  "metier": "restauration / prise de commande et point de vente (experience client au moment de commander)",
+  "axes": {
+    "levier": "monetisation",
+    "touchpoints": [
+      "borne de commande (kiosque)",
+      "borne de drive",
+      "prise de commande vocale",
+      "point de vente Toast (POS) et terminaux mobiles"
+    ],
+    "etape_parcours": "achat",
+    "famille": "conversation",
+    "pattern": "agent vocal IA de prise de commande avec upsell de menu (augmentation du panier)",
+    "type_ia": [
+      "IA generative",
+      "agent vocal conversationnel",
+      "recommandation et upsell"
+    ],
+    "plateforme_stack": [
+      "Toast (ecosysteme ToastIQ)",
+      "Sous Chef (agent et assistant IA)",
+      "custom/in-house Toast"
+    ],
+    "objectif_metrique": [
+      "volume moyen de commande (AOV)",
+      "adoption de l'assistant IA par les locations",
+      "volume de requetes traitees"
+    ]
+  },
+  "implementation": "plateforme",
+  "stack_technique": [
+    {
+      "nom": "ToastIQ",
+      "categorie": "plateforme",
+      "detail": "Couche d'intelligence de Toast lancee en mai 2025, qui transforme le systeme d'exploitation du restaurant en co-pilote conversationnel pour l'operateur (analyse du menu, marketing, inventaire) et abrite les fonctions IA cote client comme l'upsell.",
+      "url": "https://pos.toasttab.com/products/toast-iq"
+    },
+    {
+      "nom": "Sous Chef",
+      "categorie": "outil",
+      "detail": "Agent et assistant IA de Toast, lignee conversationnelle et vocale integree a l'ecosysteme ToastIQ ; c'est le composant credite d'un upsell de menu qui augmente le volume moyen de commande.",
+      "url": "https://pos.toasttab.com/products/toast-iq"
+    }
+  ],
+  "objectif_business": "Augmenter la valeur de chaque commande au moment ou le client commande, en faisant proposer par une IA les articles complementaires pertinents (upsell), et rendre la plateforme plus utile a l'operateur via un assistant IA adosse a ses donnees de vente. Le tout sur un parc de 164 000 restaurants aux Etats-Unis, ou le temps des equipes est la contrainte principale.",
+  "points_cles": [
+    "Toast fait proposer par une IA (Sous Chef, ecosysteme ToastIQ) des articles complementaires au moment de la commande pour augmenter le panier.",
+    "Un restaurant pilote a vu son volume moyen de commande progresser de 6 pour cent grace a l'outil d'upsell de menu.",
+    "ToastIQ a ete utilise par plus de la moitie des locations en quatre mois, avec plus de 8 millions de requetes.",
+    "A l'echelle : 164 000 restaurants et un ARR de plus de 2 milliards de dollars (+26 pour cent) fin 2025 ; agent vocal pour bornes et drive en deploiement 2026."
+  ],
+  "description": "Toast, la plateforme de caisse et de gestion des restaurants americains, integre l'IA dans le moment de la commande. En mai 2025, l'entreprise lance ToastIQ, une couche d'intelligence qui sert de co-pilote a l'operateur (analyse du menu, marketing, inventaire) et abrite des fonctions cote client. La plus directe pour le chiffre d'affaires est un outil d'upsell de menu, rattache a l'agent IA Sous Chef : au moment ou la commande se construit, l'IA propose les articles complementaires pertinents pour faire monter le panier. Dans le programme pilote, un restaurant a vu son volume moyen de commande augmenter de 6 pour cent grace a cet outil (source PYMNTS, mai 2025). C'est un resultat pilote sur un etablissement, pas une moyenne generalisee du parc. L'ecosysteme, lui, est deja largement adopte : au quatrieme trimestre 2025, Toast rapporte que plus de la moitie de ses locations ont utilise ToastIQ dans les quatre mois suivant le lancement, avec plus de 8 millions de requetes envoyees. L'entreprise annonce aussi le deploiement d'agents vocaux IA pour les bornes et le drive, avec un produit multi-files pour drive prevu en 2026 : c'est la ou l'upsell vocal touche le plus directement l'experience du client final. A l'echelle : 164 000 locations fin 2025, 30 000 nettes ajoutees dans l'annee, et un ARR qui depasse 2 milliards de dollars en hausse de 26 pour cent.",
+  "resultats": [
+    {
+      "metrique": "Volume moyen de commande sur un restaurant pilote, via l'outil d'upsell de menu IA (pilote, un etablissement, non generalise)",
+      "valeur": "+6% (pilote)",
+      "citation_exacte": "a menu upsell tool increased its average order volume by 6%",
+      "source_ref": "S2"
+    },
+    {
+      "metrique": "Part des locations ayant utilise ToastIQ dans les quatre mois suivant le lancement",
+      "valeur": "moitie en 4 mois",
+      "citation_exacte": "Over half of all locations have used ToastIQ within four months of launch",
+      "source_ref": "S1"
+    },
+    {
+      "metrique": "Volume de requetes envoyees a ToastIQ",
+      "valeur": "8 M+",
+      "citation_exacte": "with more than 8 million queries sent",
+      "source_ref": "S1"
+    },
+    {
+      "metrique": "Parc de restaurants (locations) sur la plateforme Toast fin 2025",
+      "valeur": "164 000",
+      "citation_exacte": "reaching 164,000 total locations at year-end",
+      "source_ref": "S1"
+    },
+    {
+      "metrique": "ARR de Toast fin 2025",
+      "valeur": "2 Md$ (+26%)",
+      "citation_exacte": "ARR grew 26% to surpass $2 billion",
+      "source_ref": "S1"
+    }
+  ],
+  "niveau_preuve": {
+    "niveau": "B",
+    "justification": "L'ecosysteme IA de Toast est chiffre dans l'earnings call Q4 2025 (adoption de ToastIQ par plus de la moitie des locations en quatre mois, 8 millions de requetes, 164 000 locations, ARR 2 milliards de dollars en hausse de 26 pour cent) : c'est du niveau resultats financiers pour l'echelle. Mais le chiffre d'upsell qui porte le cas, +6 pour cent de volume moyen de commande, est un resultat pilote sur un seul restaurant rapporte par la presse (PYMNTS, mai 2025), pas une moyenne du parc. D'ou un niveau B et non A : la preuve d'echelle est solide, la preuve d'impact sur la conversion/monetisation reste au stade pilote."
+  },
+  "dates": {
+    "lancement": "2025-05",
+    "derniere_confirmation_activite": "2026-02",
+    "verifie_le": "2026-07-16",
+    "revoir_apres": "2027-01-16"
+  },
+  "statut_vivant": {
+    "statut": "confirme",
+    "note": "ToastIQ, lance en mai 2025, est confirme en pleine expansion a l'earnings call Q4 2025 (fevrier 2026) : plus de la moitie des locations l'utilisent, 8 millions de requetes, et Toast annonce le deploiement d'agents vocaux IA pour bornes et drive plus un produit drive multi-files pour 2026. Aucun signal de retrait."
+  },
+  "sources": [
+    {
+      "ref": "S1",
+      "type": "earnings_call",
+      "fiabilite": "T3_presse_etablie",
+      "titre": "Toast (TOST) Q4 2025 Earnings Call Transcript",
+      "url": "https://www.fool.com/earnings/call-transcripts/2026/02/12/toast-tost-q4-2025-earnings-call-transcript/",
+      "date_publication": "2026-02-12",
+      "consulte_le": "2026-07-16"
+    },
+    {
+      "ref": "S2",
+      "type": "presse",
+      "fiabilite": "T3_presse_etablie",
+      "titre": "Toast: AI-Powered Menu Upsell Tool Boosts Restaurant's Average Order Volume 6%",
+      "url": "https://www.pymnts.com/earnings/2025/toast-ai-powered-menu-upsell-tool-boosts-restaurants-average-order-volume-6percent/",
+      "date_publication": "2025-05-09",
+      "consulte_le": "2026-07-16"
+    }
+  ],
+  "fonctionnement_operationnel": {
+    "cadence": "Temps reel, a chaque prise de commande (borne, drive, prise vocale) ; l'assistant operateur ToastIQ repond a la demande.",
+    "opere_par": "Le restaurant, via la plateforme Toast ; l'agent d'upsell et l'assistant tournent sur l'infrastructure et les modeles de Toast, sans equipe data cote restaurant.",
+    "signal_pilote": "Le menu structure (articles, options, complements) et l'historique de commande. Sans menu propre et a jour, l'IA ne sait pas quoi proposer en upsell et les suggestions perdent leur pertinence.",
+    "etapes": [
+      {
+        "etape": "Le client commence sa commande",
+        "detail": "Le client interagit avec la borne, le drive ou la prise de commande vocale, ou l'equipe saisit la commande sur le POS Toast.",
+        "acteur": "client"
+      },
+      {
+        "etape": "Suggestion d'upsell par l'IA",
+        "detail": "Pendant la construction du panier, l'agent Sous Chef propose les articles complementaires pertinents selon le menu et le contexte de commande.",
+        "acteur": "IA"
+      },
+      {
+        "etape": "Ajout au panier et encaissement",
+        "detail": "Le client accepte ou non la suggestion ; l'article s'ajoute a la commande et remonte au POS pour l'encaissement.",
+        "acteur": "client"
+      },
+      {
+        "etape": "Pilotage par l'operateur",
+        "detail": "Le restaurateur interroge ToastIQ (analyse du menu, marketing, inventaire) pour ajuster carte et offres, et suit l'effet sur le volume moyen de commande.",
+        "acteur": "marketing"
+      }
+    ]
+  },
+  "schema_flow": {
+    "statut": "approche_type",
+    "noeuds": [
+      {
+        "id": "client",
+        "role_generique": "humain",
+        "label": "Client qui commande (borne, drive, vocal)"
+      },
+      {
+        "id": "agent",
+        "role_generique": "canal_conversationnel",
+        "label": "Agent IA de prise de commande et d'upsell",
+        "outil_documente": "Sous Chef (ecosysteme ToastIQ)"
+      },
+      {
+        "id": "menu",
+        "role_generique": "data_source",
+        "label": "Menu structure et historique de commande"
+      },
+      {
+        "id": "pos",
+        "role_generique": "site_app",
+        "label": "Point de vente Toast (POS) et terminaux"
+      },
+      {
+        "id": "operateur",
+        "role_generique": "humain",
+        "label": "Operateur du restaurant"
+      }
+    ],
+    "liens": [
+      [
+        "client",
+        "agent",
+        "commande en cours"
+      ],
+      [
+        "agent",
+        "menu",
+        "lecture menu et contexte"
+      ],
+      [
+        "menu",
+        "agent",
+        "articles complementaires pertinents"
+      ],
+      [
+        "agent",
+        "client",
+        "suggestion d'upsell"
+      ],
+      [
+        "agent",
+        "pos",
+        "article ajoute au panier"
+      ],
+      [
+        "operateur",
+        "menu",
+        "gestion de la carte via ToastIQ"
+      ]
+    ]
+  },
+  "replication": {
+    "statut_epistemique": "infere",
+    "prerequis_data": [
+      "Menu structure et a jour (articles, options, complements, prix)",
+      "Historique de commande first-party pour affiner les suggestions",
+      "Points de commande instrumentes (borne, drive, POS) capables d'afficher ou de dire une suggestion"
+    ],
+    "prerequis_orga": [
+      "Systeme de caisse capable d'accueillir une couche IA d'upsell",
+      "Regles metier sur ce qui peut etre propose (marges, allergenes, disponibilite)",
+      "Cadre de transparence et de conformite si l'upsell passe par une voix (AI Act, RGPD sur la voix et l'historique)"
+    ],
+    "stack_possible": [
+      "Agent vocal ou conversationnel branche sur le systeme de commande",
+      "Moteur de recommandation d'articles complementaires adosse au menu et a l'historique",
+      "Assistant operateur pour piloter menu, marketing et inventaire",
+      "POS ou borne comme point d'affichage et d'encaissement"
+    ],
+    "premiere_etape": "Choisir un canal de commande a fort volume (drive ou borne) et y tester un upsell IA sur une selection d'articles complementaires a forte marge, en mesurant l'effet sur le volume moyen de commande avant d'etendre.",
+    "playbook": [
+      {
+        "action": "Structurer et fiabiliser le menu (articles, options, complements, marges) pour que l'IA sache quoi proposer.",
+        "livrable": "Menu exploitable par un moteur de recommandation, avec regles de suggestion."
+      },
+      {
+        "action": "Brancher un agent d'upsell sur un canal de commande pilote (drive ou borne) et definir les moments de suggestion.",
+        "livrable": "Upsell IA actif sur un canal, sur un ou quelques etablissements."
+      },
+      {
+        "action": "Mesurer l'effet sur le volume moyen de commande et le taux d'acceptation des suggestions, ajuster les regles.",
+        "livrable": "Lecture chiffree de l'impact panier et des suggestions les plus acceptees."
+      },
+      {
+        "action": "Etendre aux autres canaux et etablissements, et donner a l'operateur un assistant pour piloter menu et offres.",
+        "livrable": "Upsell IA generalise plus assistant operateur en production."
+      }
+    ],
+    "equipe": "Cote plateforme : equipe produit et IA pour l'agent d'upsell, le moteur de recommandation et l'assistant operateur. Cote restaurant : un responsable menu/marketing pour cadrer les regles de suggestion et lire l'impact, sans equipe data dediee."
+  },
+  "seo": {
+    "slug": "toast-sous-chef-voice-ai-upsell-2025",
+    "title": "Toast : agent IA d'upsell de menu (Sous Chef, ToastIQ) - +6% de panier en pilote (2025)",
+    "meta_description": "Toast integre un upsell IA (Sous Chef, ecosysteme ToastIQ) au moment de la commande : +6% de volume moyen sur un restaurant pilote, ToastIQ adopte par la moitie de 164 000 locations.",
+    "resume_citable": "Toast a lance en 2025 ToastIQ et l'agent IA Sous Chef qui proposent au client des articles complementaires au moment de la commande ; un restaurant pilote a vu son volume moyen de commande augmenter de 6 pour cent, et ToastIQ a ete utilise par plus de la moitie des 164 000 locations dans les quatre mois suivant le lancement, avec plus de 8 millions de requetes.",
+    "faq": [
+      {
+        "q": "Le +6 pour cent de volume moyen de commande est-il une moyenne du parc Toast ?",
+        "a": "Non. Selon PYMNTS (mai 2025), c'est un resultat pilote sur un seul restaurant utilisant l'outil d'upsell de menu, pas une moyenne generalisee des 164 000 locations."
+      },
+      {
+        "q": "Qu'est-ce que Sous Chef et ToastIQ chez Toast ?",
+        "a": "ToastIQ est la couche d'intelligence lancee en mai 2025 (co-pilote operateur plus fonctions client) ; Sous Chef est l'agent et assistant IA, lignee conversationnelle et vocale creditee de l'upsell de menu."
+      },
+      {
+        "q": "L'agent vocal d'upsell est-il deja deploye a l'echelle ?",
+        "a": "L'ecosysteme ToastIQ l'est (plus de la moitie des locations, 8 millions de requetes). L'agent vocal pour bornes et drive est en deploiement, avec un produit drive multi-files annonce pour 2026."
+      }
+    ]
+  },
+  "logo_domain": "toasttab.com"
+}

@@ -1,0 +1,100 @@
+{
+  "seo": {
+    "title": "Yum China: SmartK, the AI ordering agent in the KFC super app - 2 million member users (2026)",
+    "meta_description": "Yum China opened SmartK, its AI ordering agent, to all users of the KFC super app in January 2026. Already used by 2 million members.",
+    "resume_citable": "In January 2026, Yum China opened SmartK, an AI ordering agent, to all users of the KFC super app; already used by 2 million members, mostly for breakfast and coffee, in a context where 94% of sales go through digital.",
+    "faq": [
+      {
+        "q": "What is SmartK at Yum China?",
+        "a": "SmartK is an AI-based ordering assistant integrated into the KFC super app. It helps the customer place an order and offers personalized suggestions. Yum China opened it to all users of the KFC super app in January 2026; by Q4 2025 it had already been used by 2 million members."
+      },
+      {
+        "q": "Is SmartK the same thing as Q-Smart?",
+        "a": "No. SmartK is the customer-facing ordering assistant in the KFC app. Q-Smart is a separate AI assistant Yum China is testing for restaurant managers (scheduling, inventory, quality)."
+      },
+      {
+        "q": "Is this case the same as Yum! Brands' AI marketing?",
+        "a": "No. Yum China is a legally separate, separately listed entity that operates KFC and Pizza Hut in China. The Yum! Brands case is about generating CRM communications in the United States, a different pattern."
+      }
+    ]
+  },
+  "pattern": "genAI conversational ordering agent in a brand app",
+  "etape_parcours": "purchase",
+  "objectif_business": "Streamline order-taking in the KFC super app and push personalized suggestions at the scale of a loyalty base of several hundred million members, in a context where nearly all sales go through digital.",
+  "description": "SmartK is an AI-based ordering assistant integrated into Yum China's KFC super app. It helps the customer place an order in the app and offers personalized suggestions during the journey. Yum China opened it to all users of the KFC super app in January 2026. At the time of the fourth quarter 2025 earnings call, management indicates the feature has already been used by 2 million members, with stronger adoption on breakfast and coffee orders. The setup sits on an already very deep digital base in China: 94% of sales go through digital, digital sales reach 10.4 billion dollars in 2025, and the loyalty program counts 590 million members for 265 million active members. SmartK is distinct from Q-Smart, the AI assistant Yum China is testing on the operations side for restaurant managers (scheduling, inventory, quality). It is also distinct from Yum! Brands' AI marketing setup in the United States: Yum China is a legally separate, separately listed entity that operates KFC and Pizza Hut in China. The AI model underlying SmartK is not detailed publicly in the available sources.",
+  "points_cles": [
+    "Yum China rolled out SmartK, an AI ordering agent, to all users of the KFC super app in January 2026.",
+    "The assistant has already been used by 2 million members, mostly for breakfast and coffee.",
+    "Context at scale: 94% of sales digital, 10.4 billion dollars in digital sales, 590 million loyalty members.",
+    "Case confirmed by Yum China's Q4 2025 earnings call (primary source), a customer-facing assistant in production."
+  ],
+  "resultats": [
+    {
+      "metrique": "Members who have used SmartK since the rollout (January 2026)"
+    },
+    {
+      "metrique": "Share of sales made through digital (2025)"
+    },
+    {
+      "metrique": "Digital sales 2025 (+8% year over year)"
+    },
+    {
+      "metrique": "Total loyalty program members (+13% year over year)"
+    }
+  ],
+  "niveau_preuve": {
+    "justification": "The rollout of SmartK to all users of the KFC super app and the figure of 2 million member users are stated by management on Yum China's Q4 2025 earnings call (verbatim transcript, primary source). The context figures (94% digital sales, 10.4 billion dollars, 590M members) are confirmed by the same quarter's results slides. The headline result is an adoption metric, not a quantified conversion lift."
+  },
+  "fonctionnement_operationnel": {
+    "cadence": "Real time, at every ordering session of a user in the KFC super app",
+    "opere_par": "Yum China's digital and product team, which owns the app, the catalog, and the recommendation logic",
+    "signal_pilote": "The order history and the member's context (time of day, breakfast and coffee habits). Without loyalty data tied to the member, the assistant loses personalization and falls back on generic order-taking.",
+    "etapes": [
+      {
+        "etape": "Opening the super app",
+        "detail": "The member opens the KFC app and reaches the SmartK assistant in the ordering journey.",
+        "acteur": "customer"
+      },
+      {
+        "etape": "Understanding the request",
+        "detail": "SmartK interprets the customer's request and suggests suitable items or add-ons, with stronger relevance on breakfast and coffee.",
+        "acteur": "AI"
+      },
+      {
+        "etape": "Personalization from the profile",
+        "detail": "The assistant draws on the member's history and context to tune the suggestions to the basket in progress.",
+        "acteur": "AI"
+      },
+      {
+        "etape": "Confirmation and order",
+        "detail": "The customer confirms the suggested basket, and the order goes into the app's usual digital flow.",
+        "acteur": "customer"
+      }
+    ]
+  },
+  "replication": {
+    "prerequis_data": [
+      "A base of identified members with order history tied to each profile",
+      "A structured product catalog, with offers and availability by time slot (breakfast, coffee, lunch)",
+      "A session context usable in real time (time of day, pickup or delivery point)"
+    ],
+    "prerequis_orga": [
+      "A brand app where a significant share of orders already go through digital",
+      "A product and digital team that owns the in-app ordering journey",
+      "A legal basis and GDPR- and AI Act-compliant information for personalization and conversational interaction in the EU"
+    ],
+    "stack_possible": [
+      "A genAI conversational assistant integrated into the app's order flow",
+      "A recommendation engine connected to the member's history and the catalog",
+      "A contextual personalization layer by time slot and purchase habit"
+    ],
+    "equipe": "A digital product lead for the ordering journey, a data profile for personalization and adoption measurement, a conversational design profile for the assistant, a marketing relay for the offers pushed into the flow.",
+    "premiere_etape": "Target a high-repetition, low-basket-complexity ordering moment, for example breakfast and coffee, to launch the assistant where personalized suggestion has the most traction."
+  },
+  "statut_vivant": {
+    "note": "Feature opened to all users of the KFC super app in January 2026 and presented as growing in adoption on the February 2026 earnings call. No signal of withdrawal."
+  },
+  "transposable_ue": {
+    "note": "The model rests on a very high-adoption branded super app (94% of sales digital in China), a rare configuration in Europe where ordering is split between the brand app, delivery aggregators, and the web. A conversational ordering agent that suggests products from purchase history assumes, in the EU, a GDPR legal basis for personalization and clear information under the AI Act about interacting with an AI system. The pattern remains transposable to a brand app with a consented loyalty base."
+  }
+}

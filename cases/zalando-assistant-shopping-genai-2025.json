@@ -1,0 +1,302 @@
+{
+  "id": "zalando-assistant-shopping-genai-2025",
+  "type_fiche": "succes",
+  "marque": "Zalando",
+  "industrie": "retail_ecom",
+  "marches_deploiement": [
+    "25 marches Zalando (Europe)"
+  ],
+  "transposable_ue": {
+    "flag": "oui",
+    "note": "Cas deja concu et opere en Europe, sur les 25 marches de Zalando. L'assistant est conversationnel et connecte au compte client pour personnaliser, donc en UE il impose une obligation de transparence sous l'AI Act (dire au client qu'il parle a une IA) et une base legale RGPD pour l'usage de l'historique de navigation et d'achat. Le socle combine des modeles maison Zalando et un LLM OpenAI (GPT-4o mini) ; un replicateur soumis a des contraintes de residence des donnees substituerait le LLM ou son hebergement."
+  },
+  "metier": "e-commerce / personnalisation et recommandation",
+  "intervenants": [
+    {
+      "nom": "Tian Su",
+      "role": "VP Personalisation and Recommendation, Zalando",
+      "source_ref": "S1"
+    }
+  ],
+  "axes": {
+    "levier": "activation_conversion",
+    "touchpoints": [
+      "application et site Zalando",
+      "assistant conversationnel Zalando Assistant",
+      "compte client"
+    ],
+    "etape_parcours": "consideration",
+    "famille": "conversation",
+    "pattern": "assistant shopping conversationnel genAI grand public",
+    "type_ia": [
+      "IA generative",
+      "assistant conversationnel",
+      "recommandation"
+    ],
+    "plateforme_stack": [
+      "custom/in-house (modeles Zalando)",
+      "OpenAI GPT-4o mini (LLM)"
+    ],
+    "objectif_metrique": [
+      "interactions a forte valeur (like, ajout au panier)",
+      "adoption clients",
+      "pertinence des recommandations",
+      "montee en charge du trafic"
+    ]
+  },
+  "implementation": "hybride",
+  "stack_technique": [
+    {
+      "nom": "Zalando Assistant",
+      "categorie": "outil",
+      "detail": "Assistant shopping conversationnel integre a l'app et au site Zalando, disponible pour les clients connectes dans les langues locales. Il inspire, propose des tenues et recommande des articles en tenant compte du contexte (lieu, meteo, occasion) et de la section parcourue. Connecte au compte client pour approfondir la personnalisation des recommandations.",
+      "url": "https://www.zalando.com"
+    },
+    {
+      "nom": "OpenAI GPT-4o mini",
+      "categorie": "llm",
+      "detail": "LLM d'OpenAI adopte en remplacement de GPT-3.5 pour ses capacites multilingues et son cout reduit. Le passage a GPT-4o mini a permis d'etendre l'assistant a l'ensemble des marches et de monter en charge le trafic sans surcout significatif.",
+      "url": "https://openai.com"
+    },
+    {
+      "nom": "Modeles de personnalisation Zalando (in-house)",
+      "categorie": "outil",
+      "detail": "Modeles proprietaires de Zalando qui alimentent l'assistant en signaux de personnalisation a partir du compte et du comportement de navigation.",
+      "url": "https://corporate.zalando.com"
+    }
+  ],
+  "objectif_business": "Aider les clients a se laisser inspirer et a trouver plus vite les articles qui leur plaisent, au moment de la consideration, pour transformer la navigation en interactions a forte valeur (like, ajout au panier) sur l'ensemble des marches europeens de Zalando.",
+  "points_cles": [
+    "Assistant shopping conversationnel genAI, live sur les 25 marches Zalando depuis octobre 2024.",
+    "Adosse aux modeles maison Zalando et au LLM GPT-4o mini d'OpenAI.",
+    "Plus de 2 millions de clients l'ont utilise ; +40% d'interactions a forte valeur en pilote.",
+    "Preuve B (communique Zalando plus customer story OpenAI), statut vivant confirme."
+  ],
+  "description": "Le Zalando Assistant est un assistant shopping conversationnel accessible aux clients connectes dans l'app et sur le site, dans leur langue locale. Le client formule une demande en langage naturel, par exemple ce qu'il devrait porter pour un anniversaire en novembre a Barcelone, et l'assistant propose des tenues et des articles en tenant compte du lieu, de la meteo et de l'occasion, ainsi que de la section parcourue. Lance en beta pour les clients connectes en octobre 2024, il a ete deploye des cette date sur les 25 marches de Zalando, adosse aux modeles maison de Zalando et aux modeles de langage d'OpenAI. Le 27 mars 2025, Zalando a lance une version enrichie : nouvelle identite visuelle, connexion au compte client pour une personnalisation plus profonde, et meilleure prise en compte du contexte de navigation. Cote technique, l'equipe a fait passer l'assistant de GPT-3.5 a GPT-4o mini, migrant 50 pour cent du trafic en deux semaines, ce qui a permis d'etendre le service a tous les marches et de multiplier le trafic par douze sans surcout significatif. En phase pilote, Zalando a observe +40 pour cent d'interactions a forte valeur comme un like ou un ajout au panier ; ce chiffre est un pilote, pas un resultat generalise. Plus de 2 millions de clients l'ont utilise depuis octobre 2024.",
+  "resultats": [
+    {
+      "metrique": "Interactions a forte valeur (like, ajout au panier) en phase pilote",
+      "valeur": "+40%",
+      "citation_exacte": "a +40% increase in high-value interactions",
+      "source_ref": "S1"
+    },
+    {
+      "metrique": "Clients ayant utilise l'assistant depuis octobre 2024, sur 25 marches",
+      "valeur": "2 millions+",
+      "citation_exacte": "Over 2 million customers have used it",
+      "source_ref": "S1"
+    },
+    {
+      "metrique": "Montee en charge du trafic apres passage a GPT-4o mini, sans surcout significatif",
+      "valeur": "12x",
+      "citation_exacte": "scale its traffic 12x by deploying the Assistant to more markets",
+      "source_ref": "S2"
+    },
+    {
+      "metrique": "Recommandations jugees 'unhelpful' par les utilisateurs apres migration",
+      "valeur": "-5%",
+      "citation_exacte": "recommendations deemed unhelpful by users decreased by 5%",
+      "source_ref": "S2"
+    }
+  ],
+  "niveau_preuve": {
+    "niveau": "B",
+    "justification": "Communique officiel de Zalando (T1_primaire, corporate.zalando.com) chiffrant l'adoption (plus de 2 millions de clients), la couverture (25 marches) et le pilote (+40 pour cent d'interactions a forte valeur), concordant avec la customer story OpenAI (T2, GPT-4o mini) qui documente le stack et la montee en charge (trafic 12x, recommandations jugees inutiles -5 pour cent). Chiffres publics et concordants mais aucun consolide en resultats financiers, et le +40 pour cent est explicitement un pilote, d'ou un niveau B."
+  },
+  "dates": {
+    "lancement": "2024-10 (beta clients connectes, 25 marches) ; version enrichie le 2025-03-27",
+    "derniere_confirmation_activite": "2025-03 (communique version enrichie et 2 millions de clients)",
+    "verifie_le": "2026-07-16",
+    "revoir_apres": "2027-01-16"
+  },
+  "statut_vivant": {
+    "statut": "confirme",
+    "note": "Assistant live sur les 25 marches depuis octobre 2024, avec une version enrichie annoncee le 27 mars 2025 (connexion au compte, contexte de navigation). Plus de 2 millions d'utilisateurs cumules. Aucun signal de retrait."
+  },
+  "sources": [
+    {
+      "ref": "S1",
+      "type": "blog_officiel",
+      "fiabilite": "T1_primaire",
+      "titre": "More personal and smarter - the Zalando Assistant with enhanced capabilities to inspire customers",
+      "url": "https://corporate.zalando.com/en/technology/more-personal-and-smarter-zalando-assistant-enhanced-capabilities-inspire-customers",
+      "date_publication": "2025-03-27",
+      "consulte_le": "2026-07-16"
+    },
+    {
+      "ref": "S2",
+      "type": "customer_story_plateforme",
+      "fiabilite": "T2_officiel_interesse",
+      "titre": "Boosting the customer retail experience with GPT-4o mini",
+      "url": "https://openai.com/index/zalando/",
+      "date_publication": "2024",
+      "consulte_le": "2026-07-16"
+    },
+    {
+      "ref": "S3",
+      "type": "blog_officiel",
+      "fiabilite": "T1_primaire",
+      "titre": "Zalando brings its AI-powered assistant to all markets and adds four new cities to its Trend Spotter",
+      "url": "https://corporate.zalando.com/en/technology/zalando-brings-its-ai-powered-assistant-all-markets-and-adds-four-new-cities-its-trend",
+      "date_publication": "2024-10-01",
+      "consulte_le": "2026-07-16"
+    }
+  ],
+  "fonctionnement_operationnel": {
+    "cadence": "Temps reel : chaque requete client est traitee a la volee par l'assistant, dans la langue du marche.",
+    "opere_par": "Equipes personnalisation et recommandation de Zalando, sur les modeles maison et le LLM OpenAI.",
+    "signal_pilote": "L'intention exprimee dans la conversation, plus le compte client et le contexte de navigation (section parcourue, historique). Sans ce signal first-party, les recommandations perdent en pertinence et l'interaction retombe au niveau d'une recherche generique.",
+    "etapes": [
+      {
+        "etape": "Demande du client",
+        "detail": "Le client connecte decrit un besoin en langage naturel dans l'app ou sur le site (occasion, style, contexte).",
+        "acteur": "client"
+      },
+      {
+        "etape": "Interpretation et recuperation",
+        "detail": "L'assistant interprete la requete via le LLM, croise le compte client, le contexte de navigation et le catalogue pour selectionner articles et tenues.",
+        "acteur": "IA"
+      },
+      {
+        "etape": "Reponse et recommandation",
+        "detail": "L'assistant propose des tenues et des articles adaptes au lieu, a la meteo et a l'occasion, avec possibilite de liker ou d'ajouter au panier.",
+        "acteur": "IA"
+      },
+      {
+        "etape": "Supervision et arbitrage de modele",
+        "detail": "Les equipes suivent l'adoption, les interactions a forte valeur et la part de recommandations jugees inutiles, et arbitrent le modele sous-jacent (migration GPT-3.5 vers GPT-4o mini) selon cout et qualite.",
+        "acteur": "equipe data"
+      }
+    ]
+  },
+  "schema_flow": {
+    "statut": "approche_type",
+    "noeuds": [
+      {
+        "id": "client",
+        "role_generique": "site_app",
+        "label": "Client connecte dans l'app et le site Zalando"
+      },
+      {
+        "id": "assistant",
+        "role_generique": "canal_conversationnel",
+        "label": "Zalando Assistant (assistant shopping conversationnel)",
+        "outil_documente": "OpenAI GPT-4o mini"
+      },
+      {
+        "id": "signaux",
+        "role_generique": "data_source",
+        "label": "Compte client, historique et contexte de navigation, catalogue"
+      },
+      {
+        "id": "perso",
+        "role_generique": "modele_ia",
+        "label": "Modeles de personnalisation Zalando (in-house)"
+      },
+      {
+        "id": "team",
+        "role_generique": "humain",
+        "label": "Equipe personnalisation et recommandation"
+      }
+    ],
+    "liens": [
+      [
+        "client",
+        "assistant",
+        "demande en langage naturel"
+      ],
+      [
+        "assistant",
+        "signaux",
+        "recherche articles et contexte"
+      ],
+      [
+        "perso",
+        "assistant",
+        "signaux de personnalisation"
+      ],
+      [
+        "signaux",
+        "assistant",
+        "catalogue, compte, contexte"
+      ],
+      [
+        "assistant",
+        "client",
+        "tenues et recommandations"
+      ],
+      [
+        "team",
+        "assistant",
+        "arbitrage de modele et supervision"
+      ]
+    ]
+  },
+  "replication": {
+    "statut_epistemique": "infere",
+    "prerequis_data": [
+      "Catalogue produit structure et multilingue",
+      "Compte client avec historique de navigation et d'achat first-party",
+      "Signaux de contexte de navigation (section parcouru, panier)",
+      "Metadonnees produit exploitables pour composer des tenues et des recommandations"
+    ],
+    "prerequis_orga": [
+      "Equipe personnalisation et recommandation capable d'operer un assistant conversationnel en continu",
+      "Acces a un LLM multilingue couvrant les langues des marches vises",
+      "Processus d'arbitrage de modele (cout, qualite, latence) et de mesure d'impact",
+      "Cadre de transparence et de conformite sur l'IA conversationnelle et l'usage des donnees de compte"
+    ],
+    "stack_possible": [
+      "LLM multilingue (type GPT-4o mini) comme socle conversationnel",
+      "Modeles maison de personnalisation branches sur le compte et la navigation",
+      "Couche assistant integree a l'app et au site, connectee au catalogue",
+      "Instrumentation des interactions a forte valeur (like, ajout au panier)"
+    ],
+    "premiere_etape": "Identifier le moment de consideration ou le client cherche l'inspiration sans reponse (que porter pour telle occasion) et y brancher un assistant conversationnel adosse au catalogue et au compte, sur un marche pilote.",
+    "playbook": [
+      {
+        "action": "Cartographier les demandes d'inspiration recurrentes a partir des logs de recherche et de conversation.",
+        "livrable": "Referentiel des intentions d'achat prioritaires au moment de la consideration."
+      },
+      {
+        "action": "Brancher un assistant conversationnel sur le catalogue, le compte client et le contexte de navigation pour repondre et recommander.",
+        "livrable": "Assistant en beta pour les clients connectes sur un marche, interactions a forte valeur suivies."
+      },
+      {
+        "action": "Instrumenter les interactions a forte valeur (like, ajout au panier) et la part de recommandations jugees inutiles.",
+        "livrable": "Tableau de bord d'impact permettant l'arbitrage de modele et de prompts."
+      },
+      {
+        "action": "Arbitrer le LLM sous-jacent selon cout, qualite multilingue et latence, puis migrer progressivement le trafic.",
+        "livrable": "Socle de modele stabilise, montee en charge sans surcout significatif."
+      },
+      {
+        "action": "Etendre a l'ensemble des marches dans les langues locales et enrichir la personnalisation via la connexion au compte.",
+        "livrable": "Assistant en production multi-marches avec personnalisation liee au compte."
+      }
+    ],
+    "equipe": "1 equipe produit e-commerce (PM, design conversationnel) plus ingenieurs IA (assistant conversationnel, integration catalogue et compte) plus data pour les signaux de personnalisation et la mesure, plus conformite pour la transparence IA et l'usage des donnees de compte."
+  },
+  "seo": {
+    "slug": "zalando-assistant-shopping-genai-2025",
+    "title": "Zalando : assistant shopping conversationnel genAI - +40% d'interactions a forte valeur en pilote (2025)",
+    "meta_description": "Le Zalando Assistant, assistant shopping conversationnel genAI (modeles maison plus GPT-4o mini), est live sur les 25 marches ; plus de 2 millions de clients, +40% d'interactions a forte valeur en pilote.",
+    "resume_citable": "Le Zalando Assistant, assistant shopping conversationnel genAI adosse aux modeles maison de Zalando et au LLM GPT-4o mini d'OpenAI, est live pour les clients connectes sur les 25 marches depuis octobre 2024 ; plus de 2 millions de clients l'ont utilise et Zalando a observe +40 pour cent d'interactions a forte valeur (like, ajout au panier) en phase pilote.",
+    "faq": [
+      {
+        "q": "Que fait le Zalando Assistant ?",
+        "a": "C'est un assistant shopping conversationnel : le client connecte decrit un besoin en langage naturel et l'assistant propose des tenues et des articles adaptes au lieu, a la meteo et a l'occasion, dans sa langue locale."
+      },
+      {
+        "q": "Quel modele alimente le Zalando Assistant ?",
+        "a": "Il combine les modeles de personnalisation maison de Zalando et le LLM GPT-4o mini d'OpenAI, adopte en remplacement de GPT-3.5 pour ses capacites multilingues et son cout reduit."
+      },
+      {
+        "q": "Le chiffre de +40 pour cent est-il un resultat general ?",
+        "a": "Non. Selon Zalando, ce +40 pour cent d'interactions a forte valeur (like, ajout au panier) a ete observe en phase pilote, pas en resultat generalise."
+      }
+    ]
+  },
+  "logo_domain": "zalando.com",
+  "marque_linkedin": "https://www.linkedin.com/company/zalando/"
+}

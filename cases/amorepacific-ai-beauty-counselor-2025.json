@@ -1,0 +1,308 @@
+{
+  "id": "amorepacific-ai-beauty-counselor-2025",
+  "type_fiche": "succes",
+  "marque": "Amorepacific",
+  "groupe": "Amorepacific Group",
+  "industrie": "luxe_beaute",
+  "marches_deploiement": [
+    "Coree du Sud (Amore Mall)",
+    "International (app AMORE MALL sur ChatGPT, a partir de 2026)"
+  ],
+  "transposable_ue": {
+    "flag": "oui_avec_adaptations",
+    "note": "Le diagnostic de peau repose sur des photos de visage, soit des donnees biometriques sensibles au sens du RGPD : base legale explicite, consentement et minimisation requis, et vigilance sur la reconnaissance faciale au titre de l'AI Act. Le volet conseil genAI doit afficher la transparence sur le caractere automatise des recommandations. Le socle technique (Azure OpenAI, GPT-4o) est disponible en region europeenne."
+  },
+  "metier": "marketing / e-commerce / conseil client",
+  "logo_domain": "apgroup.com",
+  "intervenants": [
+    {
+      "nom": "Seongbong Hong",
+      "role": "Chief Digital Technology Officer, Amorepacific",
+      "source_ref": "S1"
+    },
+    {
+      "nom": "Chikook Noh",
+      "role": "AI Solutions Team Leader, Amorepacific",
+      "source_ref": "S1"
+    },
+    {
+      "nom": "Donghyeon Kim",
+      "role": "AI Beauty Tech Development Team, Amorepacific",
+      "source_ref": "S2"
+    }
+  ],
+  "agences": [
+    {
+      "nom": "Microsoft",
+      "role": "Fournisseur du socle IA et cloud (Azure OpenAI Service, Microsoft Fabric, Azure AI Foundry)",
+      "source_ref": "S1"
+    }
+  ],
+  "axes": {
+    "levier": "activation_conversion",
+    "touchpoints": [
+      "Amore Mall (site e-commerce)",
+      "app mobile",
+      "outil de diagnostic de peau en ligne et en boutique",
+      "app AMORE MALL sur ChatGPT"
+    ],
+    "etape_parcours": "consideration",
+    "famille": "conversation",
+    "pattern": "agent conseil beaute genAI adosse a un diagnostic de peau",
+    "type_ia": [
+      "genAI / LLM",
+      "vision par ordinateur (diagnostic de peau)",
+      "recommandation / RAG"
+    ],
+    "plateforme_stack": [
+      "Azure OpenAI Service",
+      "GPT-4o",
+      "GPT-4o-mini",
+      "Microsoft Fabric (Data Factory)",
+      "Azure AI Foundry (AI Search)"
+    ],
+    "objectif_metrique": [
+      "taux de transition vers l'achat en ligne",
+      "personnalisation du conseil",
+      "engagement client"
+    ]
+  },
+  "implementation": "hybride",
+  "objectif_business": "Reproduire en ligne le conseil qui fait vendre en boutique. Amorepacific constate que le diagnostic de peau convertit moins bien sur le web qu'en magasin, ou une conseillere echange avec la cliente. L'app genAI vise a combler cet ecart en dispensant un conseil personnalise a partir de l'historique d'achat et du diagnostic.",
+  "points_cles": [
+    "Amorepacific met en production AI Beauty Counselor (AMORE CHAT), son premier usage grand public de genAI, sur Amore Mall.",
+    "L'app tourne sur Azure OpenAI (GPT-4o et 4o-mini), avec Microsoft Fabric et Azure AI Foundry pour les donnees et la recherche.",
+    "Elle s'adosse a un outil de diagnostic de peau deja utilise 2,5 millions de fois en ligne et en boutique sur quatre ans.",
+    "Deploiement confirme et vivant en 2026 : service en usage multi-marques, et app Amore Mall lancee sur ChatGPT."
+  ],
+  "description": "Amorepacific, premier groupe coreen de cosmetiques (30+ marques dont Sulwhasoo, Laneige, Innisfree), a construit une app de conseil beaute generative sur son socle Azure. L'AI Beauty Counselor, mis en service sous le nom AMORE CHAT sur la boutique en ligne Amore Mall, repond aux questions des clientes et recommande des produits a partir de leur historique d'achat, de leurs avis et de leur expertise maison. Il utilise les modeles GPT-4o et GPT-4o-mini via Azure OpenAI Service, avec Data Factory sur Microsoft Fabric pour la donnee et les fonctions AI Search d'Azure AI Foundry pour retrouver l'information produit pertinente. En amont, un outil de diagnostic de peau interroge la cliente (par exemple noter si la peau est grasse de 1 a 5) et analyse une photo du visage. Ce diagnostic a ete utilise 2,5 millions de fois en ligne et en boutique sur quatre ans, mais il convertissait moins bien en ligne qu'en magasin. Le conseil genAI vient brancher ce diagnostic sur une conversation qui oriente vers les produits adaptes. Le groupe a ensuite etendu la brique diagnostic (Dr.AMORE, precision superieure a 90% face aux appareils professionnels) a plusieurs marques et points de contact, puis lance en 2026 une app Amore Mall sur ChatGPT, une premiere dans la beaute coreenne.",
+  "resultats": [
+    {
+      "metrique": "Utilisations du diagnostic de peau, en ligne et en boutique, sur quatre ans",
+      "valeur": "2,5 millions",
+      "citation_exacte": "used 2.5 million times online and in stores by consumers",
+      "source_ref": "S1"
+    },
+    {
+      "metrique": "Precision du diagnostic Dr.AMORE face aux appareils de mesure professionnels",
+      "valeur": "90%+",
+      "citation_exacte": "achieves accuracy exceeding 90% compared to professional skin measurement devices",
+      "source_ref": "S2"
+    },
+    {
+      "metrique": "Statut de deploiement de la brique diagnostic et conseil IA",
+      "valeur": "En service, multi-marques",
+      "citation_exacte": "real customers actively using it today",
+      "source_ref": "S2"
+    },
+    {
+      "metrique": "Rang de l'app dans l'adoption genAI du groupe",
+      "valeur": "1er usage grand public",
+      "citation_exacte": "Amorepacific's first public-facing use of generative AI",
+      "source_ref": "S1"
+    }
+  ],
+  "niveau_preuve": {
+    "niveau": "B",
+    "justification": "Le chiffre-cle (2,5 M d'utilisations du diagnostic) et le detail de la stack viennent d'une customer story Microsoft, source officielle mais interessee (biais vendeur), ce qui plafonne le cas au niveau B. La mise en production et la vivacite sont corroborees par deux sources officielles Amorepacific (communiques stories.amorepacific.com de 2026). Aucun impact conversion chiffre n'est publie en resultats financiers, donc pas de niveau A."
+  },
+  "dates": {
+    "lancement": "AI Beauty Counselor devoile en mars 2025 ; mise en service sous le nom AMORE CHAT sur Amore Mall le 23 mai 2025",
+    "derniere_confirmation_activite": "2026 : diagnostic et conseil IA en usage multi-marques (mai 2026) et app Amore Mall lancee sur ChatGPT (mars 2026)",
+    "verifie_le": "2026-07-16",
+    "revoir_apres": "2027-01-16"
+  },
+  "statut_vivant": {
+    "statut": "confirme",
+    "note": "AMORE CHAT est decrit comme le service de conseil beaute IA d'Amorepacific, avec des clients qui l'utilisent en 2026. Le groupe a etendu la brique diagnostic a plusieurs marques et lance en mars 2026 une app Amore Mall sur ChatGPT, signal d'un investissement IA toujours actif sur le meme parcours d'achat."
+  },
+  "sources": [
+    {
+      "ref": "S1",
+      "type": "customer_story_plateforme",
+      "fiabilite": "T2_officiel_interesse",
+      "titre": "Meet your AI Beauty Counselor: K-beauty giant Amorepacific builds an AI app for personalized advice",
+      "url": "https://news.microsoft.com/source/asia/features/meet-your-ai-beauty-counselor-k-beauty-giant-amorepacific-builds-an-ai-app-for-personalized-advice/",
+      "date_publication": "2025-03-26",
+      "consulte_le": "2026-07-16"
+    },
+    {
+      "ref": "S2",
+      "type": "blog_officiel",
+      "fiabilite": "T1_primaire",
+      "titre": "AI Beauty Tech: Beyond Technology, Toward Connected Experience",
+      "url": "https://stories.amorepacific.com/en/amorepacific-ai-beauty-tech-beyond-technology-toward-connected-experience/",
+      "date_publication": "2026-05-22",
+      "consulte_le": "2026-07-16"
+    },
+    {
+      "ref": "S3",
+      "type": "blog_officiel",
+      "fiabilite": "T1_primaire",
+      "titre": "Amorepacific Launches 'AMORE MALL' App on ChatGPT",
+      "url": "https://stories.amorepacific.com/en/amorepacific-launches-amore-mall-app-on-chatgpt/",
+      "date_publication": "2026-03-16",
+      "consulte_le": "2026-07-16"
+    }
+  ],
+  "fonctionnement_operationnel": {
+    "cadence": "Temps reel : le conseil se genere a chaque conversation cliente sur Amore Mall ; le diagnostic de peau tourne a la demande, en ligne ou en boutique.",
+    "opere_par": "Equipe IA et digitale d'Amorepacific (AI Solutions et AI Beauty Tech), sur le socle Azure de Microsoft.",
+    "signal_pilote": "L'historique d'achat, les avis et les donnees de diagnostic de la cliente. Sans ces donnees first-party rattachees a un compte, le conseil retombe sur des recommandations generiques et perd son interet face a une conseillere en boutique.",
+    "etapes": [
+      {
+        "etape": "Recueillir le diagnostic de peau",
+        "detail": "La cliente repond a un questionnaire (par exemple noter la peau grasse de 1 a 5) et prend une photo de son visage, en ligne ou en boutique.",
+        "acteur": "client, outil de diagnostic"
+      },
+      {
+        "etape": "Rassembler le contexte client",
+        "detail": "Consolider historique d'achat, avis et resultats de diagnostic via Data Factory sur Microsoft Fabric.",
+        "acteur": "equipe data / IA"
+      },
+      {
+        "etape": "Retrouver l'information produit pertinente",
+        "detail": "Les fonctions AI Search d'Azure AI Foundry remontent l'expertise maison et le catalogue adaptes au profil.",
+        "acteur": "IA (recherche / RAG)"
+      },
+      {
+        "etape": "Generer le conseil et la recommandation",
+        "detail": "GPT-4o et GPT-4o-mini via Azure OpenAI produisent la reponse conversationnelle et les produits suggeres.",
+        "acteur": "IA (LLM)"
+      },
+      {
+        "etape": "Orienter vers l'achat sur Amore Mall",
+        "detail": "La conversation guide la cliente vers les produits adaptes pour relever la transition vers l'achat en ligne.",
+        "acteur": "app AMORE CHAT / e-commerce"
+      }
+    ]
+  },
+  "schema_flow": {
+    "statut": "documente",
+    "noeuds": [
+      {
+        "id": "client",
+        "role_generique": "humain",
+        "label": "Cliente sur Amore Mall ou en boutique"
+      },
+      {
+        "id": "diag",
+        "role_generique": "site_app",
+        "label": "Outil de diagnostic de peau (questionnaire + photo)"
+      },
+      {
+        "id": "data",
+        "role_generique": "data_source",
+        "label": "Historique achat, avis, donnees diagnostic",
+        "outil_documente": "Data Factory sur Microsoft Fabric"
+      },
+      {
+        "id": "search",
+        "role_generique": "modele_ia",
+        "label": "Recherche expertise et catalogue produit",
+        "outil_documente": "Azure AI Foundry (AI Search)"
+      },
+      {
+        "id": "llm",
+        "role_generique": "modele_ia",
+        "label": "Generation du conseil conversationnel",
+        "outil_documente": "GPT-4o / GPT-4o-mini via Azure OpenAI"
+      },
+      {
+        "id": "app",
+        "role_generique": "site_app",
+        "label": "AI Beauty Counselor / AMORE CHAT sur Amore Mall"
+      }
+    ],
+    "liens": [
+      [
+        "client",
+        "diag"
+      ],
+      [
+        "diag",
+        "data"
+      ],
+      [
+        "data",
+        "search"
+      ],
+      [
+        "data",
+        "llm"
+      ],
+      [
+        "search",
+        "llm"
+      ],
+      [
+        "llm",
+        "app"
+      ],
+      [
+        "app",
+        "client",
+        "conseil et recommandation produit"
+      ]
+    ]
+  },
+  "replication": {
+    "statut_epistemique": "infere",
+    "prerequis_data": [
+      "Comptes clients rattachant historique d'achat et avis a chaque profil",
+      "Donnees de diagnostic de peau (questionnaire structure et/ou photo de visage) reliees au compte",
+      "Base d'expertise produit et catalogue indexes pour la recherche (RAG)"
+    ],
+    "prerequis_orga": [
+      "Cadre RGPD/biometrie pour la photo de visage : consentement, base legale, minimisation, duree de conservation",
+      "Alignement e-commerce, data et conseil produit sur un meme parcours",
+      "Transparence sur le caractere automatise du conseil"
+    ],
+    "stack_possible": [
+      "LLM via une plateforme cloud (Azure OpenAI, ou equivalent)",
+      "Couche RAG sur le catalogue et l'expertise produit",
+      "Pipeline data pour consolider profil et diagnostic",
+      "Brique de diagnostic de peau (vision par ordinateur) si volet image"
+    ],
+    "playbook": [
+      {
+        "action": "Cadrer la conformite biometrie/RGPD avant tout traitement de photo de visage",
+        "livrable": "Base legale, consentement et politique de conservation valides"
+      },
+      {
+        "action": "Consolider les donnees first-party (achats, avis, diagnostic) par profil client",
+        "livrable": "Contexte client unifie exploitable par l'IA"
+      },
+      {
+        "action": "Indexer l'expertise produit et le catalogue pour la recherche",
+        "livrable": "Couche RAG interrogeable par le LLM"
+      },
+      {
+        "action": "Brancher un LLM sur ce contexte pour generer conseil et recommandation",
+        "livrable": "Assistant conversationnel repondant a partir des donnees maison"
+      },
+      {
+        "action": "Mettre en service sur le parcours d'achat en ligne et mesurer la transition vers l'achat",
+        "livrable": "Feature en production avec lecture de l'impact conversion"
+      }
+    ],
+    "equipe": "Une equipe data pour le contexte client, un profil ML/IA pour le RAG et le LLM, un responsable e-commerce pour l'integration au parcours, et un juriste protection des donnees pour le volet biometrie.",
+    "premiere_etape": "Verifier que le diagnostic de peau et l'historique client sont bien rattaches a un compte identifie : sans cette donnee first-party consolidee, le conseil genAI n'a rien de personnel a dire."
+  },
+  "seo": {
+    "slug": "amorepacific-ai-beauty-counselor-2025",
+    "title": "Amorepacific : AI Beauty Counselor genAI sur Amore Mall - diagnostic de peau a 2,5 M d'usages (2025)",
+    "meta_description": "Amorepacific met en service AI Beauty Counselor (AMORE CHAT) sur Amore Mall : conseil genAI GPT-4o via Azure, adosse a un diagnostic de peau utilise 2,5 M de fois.",
+    "resume_citable": "En 2025, Amorepacific a mis en service AI Beauty Counselor (AMORE CHAT) sur sa boutique Amore Mall, une app de conseil beaute generative sur Azure OpenAI (GPT-4o et 4o-mini) adossee a un outil de diagnostic de peau deja utilise 2,5 millions de fois en ligne et en boutique sur quatre ans, avec pour but de relever la transition vers l'achat en ligne.",
+    "faq": [
+      {
+        "q": "Qu'est-ce que l'AI Beauty Counselor d'Amorepacific ?",
+        "a": "C'est l'app de conseil beaute generative d'Amorepacific, mise en service sous le nom AMORE CHAT sur la boutique en ligne Amore Mall. Elle recommande des produits a partir de l'historique d'achat, des avis et du diagnostic de peau, en s'appuyant sur GPT-4o et GPT-4o-mini via Azure OpenAI."
+      },
+      {
+        "q": "A quelle echelle le diagnostic de peau est-il utilise ?",
+        "a": "L'outil de diagnostic de peau d'Amorepacific a ete utilise 2,5 millions de fois en ligne et en boutique par les consommateurs sur quatre ans, d'apres la customer story Microsoft. Le conseil genAI vient se brancher sur ce diagnostic pour orienter vers les produits adaptes."
+      }
+    ]
+  }
+}

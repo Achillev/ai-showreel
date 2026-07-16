@@ -1,0 +1,136 @@
+{
+  "seo": {
+    "title": "Zalando: genAI conversational shopping assistant - +40% high-value interactions in pilot (2025)",
+    "meta_description": "The Zalando Assistant, a genAI conversational shopping assistant (in-house models plus GPT-4o mini), is live across 25 markets; more than 2 million customers, +40% high-value interactions in pilot.",
+    "resume_citable": "The Zalando Assistant, a genAI conversational shopping assistant built on Zalando's in-house models and OpenAI's GPT-4o mini LLM, has been live for logged-in customers across 25 markets since October 2024; more than 2 million customers have used it and Zalando observed +40 percent high-value interactions (like, add to basket) in the pilot phase.",
+    "faq": [
+      {
+        "q": "What does the Zalando Assistant do?",
+        "a": "It is a conversational shopping assistant: the logged-in customer describes a need in natural language and the assistant suggests outfits and items suited to the place, the weather, and the occasion, in their local language."
+      },
+      {
+        "q": "Which model powers the Zalando Assistant?",
+        "a": "It combines Zalando's in-house personalization models and OpenAI's GPT-4o mini LLM, adopted in place of GPT-3.5 for its multilingual capabilities and lower cost."
+      },
+      {
+        "q": "Is the +40 percent figure a general result?",
+        "a": "No. According to Zalando, this +40 percent in high-value interactions (like, add to basket) was observed in the pilot phase, not as a generalized result."
+      }
+    ]
+  },
+  "pattern": "consumer genAI conversational shopping assistant",
+  "etape_parcours": "consideration",
+  "objectif_business": "Help customers get inspired and find the items they like faster, at the consideration stage, to turn browsing into high-value interactions (like, add to basket) across all of Zalando's European markets.",
+  "description": "The Zalando Assistant is a conversational shopping assistant available to logged-in customers in the app and on the site, in their local language. The customer phrases a request in natural language, for example what they should wear for a birthday in November in Barcelona, and the assistant suggests outfits and items taking into account the place, the weather, and the occasion, as well as the section being browsed. Launched in beta for logged-in customers in October 2024, it was deployed from that date across Zalando's 25 markets, built on Zalando's in-house models and OpenAI's language models. On March 27, 2025, Zalando launched an enhanced version: a new visual identity, connection to the customer account for deeper personalization, and better use of the browsing context. On the technical side, the team moved the assistant from GPT-3.5 to GPT-4o mini, migrating 50 percent of the traffic in two weeks, which made it possible to extend the service to all markets and multiply traffic twelvefold with no significant extra cost. In the pilot phase, Zalando observed +40 percent high-value interactions such as a like or an add to basket; this figure is a pilot, not a generalized result. More than 2 million customers have used it since October 2024.",
+  "points_cles": [
+    "A genAI conversational shopping assistant, live in Zalando's 25 markets since October 2024.",
+    "Built on Zalando's in-house models and OpenAI's GPT-4o mini LLM.",
+    "More than 2 million customers have used it; +40% high-value interactions in pilot.",
+    "Evidence level B (Zalando release plus OpenAI customer story), confirmed live status."
+  ],
+  "resultats": [
+    {
+      "metrique": "High-value interactions (like, add to basket) in the pilot phase"
+    },
+    {
+      "metrique": "Customers who have used the assistant since October 2024, across 25 markets"
+    },
+    {
+      "metrique": "Traffic scale-up after the move to GPT-4o mini, with no significant extra cost"
+    },
+    {
+      "metrique": "Recommendations deemed 'unhelpful' by users after migration"
+    }
+  ],
+  "niveau_preuve": {
+    "justification": "Official Zalando release (T1 primary, corporate.zalando.com) quantifying adoption (more than 2 million customers), coverage (25 markets), and the pilot (+40 percent high-value interactions), consistent with the OpenAI customer story (T2, GPT-4o mini) which documents the stack and the scale-up (traffic 12x, recommendations deemed unhelpful -5 percent). Public and consistent figures but none consolidated into financial results, and the +40 percent is explicitly a pilot, hence a B level."
+  },
+  "stack_technique": [
+    {
+      "detail": "A conversational shopping assistant integrated into the Zalando app and site, available to logged-in customers in local languages. It inspires, suggests outfits, and recommends items taking into account the context (place, weather, occasion) and the section being browsed. Connected to the customer account to deepen the personalization of recommendations."
+    },
+    {
+      "detail": "OpenAI's LLM adopted in place of GPT-3.5 for its multilingual capabilities and lower cost. The move to GPT-4o mini made it possible to extend the assistant to all markets and scale up traffic with no significant extra cost."
+    },
+    {
+      "detail": "Zalando's proprietary models that feed the assistant with personalization signals from the account and browsing behavior."
+    }
+  ],
+  "fonctionnement_operationnel": {
+    "cadence": "Real time: each customer request is handled on the fly by the assistant, in the market's language.",
+    "opere_par": "Zalando's personalization and recommendation teams, on the in-house models and the OpenAI LLM.",
+    "signal_pilote": "The intent expressed in the conversation, plus the customer account and browsing context (section browsed, history). Without this first-party signal, recommendations lose relevance and the interaction falls back to the level of a generic search.",
+    "etapes": [
+      {
+        "etape": "Customer request",
+        "detail": "The logged-in customer describes a need in natural language in the app or on the site (occasion, style, context).",
+        "acteur": "customer"
+      },
+      {
+        "etape": "Interpretation and retrieval",
+        "detail": "The assistant interprets the request via the LLM, cross-referencing the customer account, the browsing context, and the catalog to select items and outfits.",
+        "acteur": "AI"
+      },
+      {
+        "etape": "Response and recommendation",
+        "detail": "The assistant suggests outfits and items suited to the place, the weather, and the occasion, with the option to like or add to basket.",
+        "acteur": "AI"
+      },
+      {
+        "etape": "Oversight and model arbitration",
+        "detail": "The teams track adoption, high-value interactions, and the share of recommendations deemed unhelpful, and arbitrate the underlying model (GPT-3.5 to GPT-4o mini migration) based on cost and quality.",
+        "acteur": "data team"
+      }
+    ]
+  },
+  "replication": {
+    "prerequis_data": [
+      "A structured, multilingual product catalog",
+      "A customer account with first-party browsing and purchase history",
+      "Browsing context signals (section browsed, basket)",
+      "Usable product metadata to compose outfits and recommendations"
+    ],
+    "prerequis_orga": [
+      "A personalization and recommendation team able to operate a conversational assistant continuously",
+      "Access to a multilingual LLM covering the languages of the target markets",
+      "A model arbitration process (cost, quality, latency) and impact measurement",
+      "A transparency and compliance framework for conversational AI and the use of account data"
+    ],
+    "stack_possible": [
+      "A multilingual LLM (such as GPT-4o mini) as the conversational foundation",
+      "In-house personalization models connected to the account and browsing",
+      "An assistant layer integrated into the app and site, connected to the catalog",
+      "Instrumentation of high-value interactions (like, add to basket)"
+    ],
+    "premiere_etape": "Identify the consideration moment where the customer seeks inspiration without an answer (what to wear for a given occasion) and connect a conversational assistant there, grounded in the catalog and the account, on a pilot market.",
+    "playbook": [
+      {
+        "action": "Map the recurring inspiration requests from search and conversation logs.",
+        "livrable": "A reference set of priority purchase intents at the consideration stage."
+      },
+      {
+        "action": "Connect a conversational assistant to the catalog, the customer account, and the browsing context to respond and recommend.",
+        "livrable": "An assistant in beta for logged-in customers on one market, with high-value interactions tracked."
+      },
+      {
+        "action": "Instrument the high-value interactions (like, add to basket) and the share of recommendations deemed unhelpful.",
+        "livrable": "An impact dashboard enabling model and prompt arbitration."
+      },
+      {
+        "action": "Arbitrate the underlying LLM based on cost, multilingual quality, and latency, then migrate the traffic progressively.",
+        "livrable": "A stabilized model foundation, scaled up with no significant extra cost."
+      },
+      {
+        "action": "Extend to all markets in local languages and enrich the personalization through the account connection.",
+        "livrable": "An assistant in production across markets with account-linked personalization."
+      }
+    ],
+    "equipe": "1 e-commerce product team (PM, conversational design) plus AI engineers (conversational assistant, catalog and account integration) plus data for the personalization signals and measurement, plus compliance for AI transparency and the use of account data."
+  },
+  "statut_vivant": {
+    "note": "Assistant live in the 25 markets since October 2024, with an enhanced version announced on March 27, 2025 (account connection, browsing context). More than 2 million cumulative users. No signal of withdrawal."
+  },
+  "transposable_ue": {
+    "note": "A case already designed and operated in Europe, across Zalando's 25 markets. The assistant is conversational and connected to the customer account for personalization, so in the EU it requires a transparency obligation under the AI Act (telling the customer they are talking to an AI) and a GDPR legal basis for using browsing and purchase history. The foundation combines Zalando's in-house models and an OpenAI LLM (GPT-4o mini); a replicator subject to data residency constraints would substitute the LLM or its hosting."
+  }
+}

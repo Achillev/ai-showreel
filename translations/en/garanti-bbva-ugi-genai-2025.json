@@ -1,0 +1,134 @@
+{
+  "seo": {
+    "title": "Garanti BBVA: Ugi genAI assistant - 60 million conversations in one year (2025)",
+    "meta_description": "Garanti BBVA's Ugi assistant, migrated to an LLM, assisted more than 5 million customers and held more than 60 million conversations in one year.",
+    "resume_citable": "Ugi, the assistant in Garanti BBVA's mobile app migrated to an LLM infrastructure, assisted more than 5 million customers and held more than 60 million conversations in one year, understands 90% of requests, and covers more than 300 end-to-end banking transactions.",
+    "faq": [
+      {
+        "q": "What can Garanti BBVA's Ugi assistant do?",
+        "a": "Ugi executes end-to-end banking operations in the mobile app: card requests, card payments, card passwords, transfers, and information requests, while understanding 90% of requests."
+      },
+      {
+        "q": "What volume does Ugi handle?",
+        "a": "Over one year, Garanti BBVA reports more than 5 million customers assisted and more than 60 million conversations, with on average more than 6.4 million interactions per month in 2026."
+      }
+    ]
+  },
+  "pattern": "end-to-end genAI customer assistant",
+  "etape_parcours": "post-purchase",
+  "objectif_business": "Handle most customer requests in self-service within the app (card requests, card payments, transfers, card passwords, information) and absorb the daily volume away from costly channels, by pushing a conversational experience that anticipates needs.",
+  "description": "Ugi is the assistant built into the mobile app of Garanti BBVA, BBVA's Turkish subsidiary. Launched in 2016 as a rules-based chatbot, it has been migrated to a large language model infrastructure, which lets it track the context of a conversation and anticipate the customer's needs. The customer talks to Ugi in natural language to carry out operations: a credit or debit card request, a card payment, a card-password transaction, a transfer, or an information request. In the twelve months before the April 2025 release, Ugi assisted more than 5 million customers and held more than 60 million conversations. The May 2026 release (the service's tenth anniversary) states that it understands 90% of requests, covers more than 300 end-to-end operations, has 1.6 million active users, and handles on average more than 6.4 million interactions per month.",
+  "points_cles": [
+    "Ugi, the assistant in the Garanti BBVA mobile app, moves from a rules engine to an LLM infrastructure.",
+    "Over one year: more than 5 million customers assisted and more than 60 million conversations.",
+    "Understands 90% of requests and covers more than 300 end-to-end banking transactions.",
+    "Level B evidence, two consistent official releases; live status confirmed (the service's tenth anniversary, May 2026)."
+  ],
+  "resultats": [
+    {
+      "metrique": "Customers assisted over one year (as of April 2025)"
+    },
+    {
+      "metrique": "Conversations held over one year (as of April 2025)"
+    },
+    {
+      "metrique": "Share of customer requests understood"
+    },
+    {
+      "metrique": "End-to-end banking transactions covered"
+    },
+    {
+      "metrique": "Average monthly interactions (as of May 2026)"
+    }
+  ],
+  "niveau_preuve": {
+    "justification": "Figures self-reported by Garanti BBVA in two consistent official releases over more than a year (the genAI upgrade of April 2025; the service's tenth anniversary in May 2026), redistributed by a press wire. Primary sources from the subject brand, with no third-party vendor bias, but not tied to a financial disclosure: hence a B rather than an A."
+  },
+  "stack_technique": [
+    {
+      "detail": "The mobile app assistant, initially rules-based, migrated to an LLM infrastructure that enables context tracking and anticipation of needs. The sources do not name a specific third-party model."
+    },
+    {
+      "detail": "Ugi's channel, integrated with accounts and banking operations in real time."
+    }
+  ],
+  "fonctionnement_operationnel": {
+    "cadence": "Real time, 24/7, in the mobile app; proactive notifications pushed continuously",
+    "opere_par": "Garanti BBVA's digital and data team, in-house",
+    "signal_pilote": "The intent the customer expresses in natural language, plus the account and transaction signals that feed the anticipation of needs. Without up-to-date account data and an intent history for continuous learning, understanding and proactivity degrade.",
+    "etapes": [
+      {
+        "etape": "Customer request",
+        "detail": "The customer states their request in natural language in the app (card request, payment, transfer, card password, information).",
+        "acteur": "customer"
+      },
+      {
+        "etape": "Understanding and context tracking",
+        "detail": "The LLM engine interprets the intent and follows the thread of the conversation; it understands 90% of requests.",
+        "acteur": "AI"
+      },
+      {
+        "etape": "Executing the operation",
+        "detail": "Ugi carries out the banking operation end to end among more than 300 covered transactions, drawing on account data.",
+        "acteur": "AI"
+      },
+      {
+        "etape": "Anticipation and notifications",
+        "detail": "Outside of requests, Ugi anticipates needs and pushes instant personalized notifications.",
+        "acteur": "AI"
+      },
+      {
+        "etape": "Continuous learning and supervision",
+        "detail": "The in-house team uses transactions and user feedback to widen the scope handled and fix poorly understood cases.",
+        "acteur": "data team"
+      }
+    ]
+  },
+  "replication": {
+    "prerequis_data": [
+      "Real-time account, card, and transaction data",
+      "A history of customer intents for training and continuous learning",
+      "A reference of banking operations eligible for self-service"
+    ],
+    "prerequis_orga": [
+      "A dedicated digital and data team over time",
+      "A banking security and compliance framework for the operations executed",
+      "Governance of proactive notifications (frequency, relevance, consent)"
+    ],
+    "stack_possible": [
+      "A large language model with context tracking",
+      "An orchestration layer linking the understood intent to the execution of operations",
+      "Deep integration with the core banking system and the mobile app"
+    ],
+    "equipe": "A digital product team (PM, conversational design), NLP/LLM engineers and MLOps profiles, with banking security and compliance involved throughout.",
+    "premiere_etape": "Start from an existing rules-based assistant or conversational FAQ, map the most requested operations, then migrate understanding to an LLM before opening up transactional execution.",
+    "playbook": [
+      {
+        "action": "Map the most frequent operations and requests in the app from support logs and customer journeys.",
+        "livrable": "A reference of intents and operations prioritized by volume."
+      },
+      {
+        "action": "Migrate the understanding layer from a rules engine to an LLM able to track context, in a test environment.",
+        "livrable": "A read-only genAI assistant, tested on real data."
+      },
+      {
+        "action": "Connect end-to-end transactional execution for a first batch of operations, with security and compliance sign-off.",
+        "livrable": "An assistant able to execute a subset of operations in beta."
+      },
+      {
+        "action": "Widen the scope to sensitive operations (transfers, cards, passwords) and add anticipation and proactive notifications.",
+        "livrable": "A generalized assistant covering a broad catalog of operations."
+      },
+      {
+        "action": "Set up continuous learning on transactions and feedback to improve the understanding rate.",
+        "livrable": "A continuous improvement loop in production."
+      }
+    ]
+  },
+  "statut_vivant": {
+    "note": "The May 2026 release (Ugi's tenth anniversary) confirms the service is in production and growing: 90% of requests understood, more than 300 operations covered, 1.6 million active users, more than 6.4 million monthly interactions. No sign of withdrawal."
+  },
+  "transposable_ue": {
+    "note": "Deployed in Turkey, outside the EU. An assistant that reads accounts and executes operations (transfers, payments, card requests) requires, in the EU, a clear GDPR legal basis and, under the AI Act, a transparency obligation about the AI nature of the counterpart. The pattern is transposable; the data architecture and compliance have to be rebuilt."
+  }
+}

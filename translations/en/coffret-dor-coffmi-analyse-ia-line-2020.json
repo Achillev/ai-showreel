@@ -1,0 +1,114 @@
+{
+  "seo": {
+    "title": "Coffret d'Or: AI skin analysis on LINE (COFFmi) - +2.48x time on page (2020)",
+    "meta_description": "Coffret d'Or (Kanebo) launched COFFmi on LINE: Perfect Corp AI skin analysis and makeup recommendations. +2.48x time on page. Stopped at the end of 2024 with the brand.",
+    "resume_citable": "In 2020, the Japanese brand Coffret d'Or (Kanebo) deployed the COFFmi service on LINE, an AI skin analysis (Perfect Corp) routing to about 7,000 makeup combinations, with time on page multiplied by 2.48; the service was stopped at the end of 2024 along with the entire brand.",
+    "faq": [
+      {
+        "q": "What is Coffret d'Or's COFFmi?",
+        "a": "A digital beauty advice service launched in September 2020 on the LINE app: the customer takes a photo of her face, an AI analyzes her skin and features, then the service recommends products from about 7,000 combinations and offers an augmented reality try-on."
+      },
+      {
+        "q": "What results did the AI analysis produce?",
+        "a": "According to Perfect Corp's success story (the technology supplier), time on page was multiplied by 2.48 and page views by 11.4, with more than 300,000 new LINE followers in two weeks. These are vendor-sourced figures, to be read with that caveat."
+      },
+      {
+        "q": "Is the service still active?",
+        "a": "No. Kao announced in April 2024 the discontinuation of the Coffret d'Or brand, with sales ending at the end of December 2024. The COFFmi service therefore disappeared along with the brand, as part of a portfolio refocus, with no link to the AI's performance."
+      }
+    ]
+  },
+  "pattern": "vision-AI skin analysis routing to a personalized product recommendation",
+  "etape_parcours": "consideration",
+  "objectif_business": "Offer personalized makeup advice around the clock to customers who cannot visit a store, whether for lack of time or proximity, and route each customer to the Coffret d'Or products suited to her skin and features.",
+  "description": "COFFmi is a digital beauty advice service from the Coffret d'Or brand, accessed by adding an account on the LINE messaging app. The customer takes a photo of her face and answers a short questionnaire; the COFFmi CHECKER function, built on Perfect Corp's AI Face Attribute solution, analyzes hydration, sebum, spots, and skin texture as well as facial features. From the diagnostic, the service recommends suitable products and shades from about 7,000 combinations, and allows a virtual try-on in augmented reality through the camera. Results accumulate on a personal page in the form of a journal. Coffret d'Or presents this setup as the world's first adoption of AI Face Attribute technology.",
+  "points_cles": [
+    "Coffret d'Or (Kanebo) launched COFFmi on LINE in September 2020: AI skin analysis and makeup recommendations.",
+    "The Perfect Corp AI analyzes hydration, sebum, spots, and skin texture, then recommends from about 7,000 combinations.",
+    "Time on page multiplied by 2.48 and page views by 11.4 after adding the AI analysis (vendor source).",
+    "Deployment stopped at the end of 2024: Kao discontinued the entire Coffret d'Or brand to refocus its portfolio, not because of any AI failure."
+  ],
+  "resultats": [
+    {
+      "metrique": "Time on page after adding the AI analysis"
+    },
+    {
+      "metrique": "Page views (PV) after launch"
+    },
+    {
+      "metrique": "New LINE followers within two weeks of launch"
+    },
+    {
+      "metrique": "Media pickups around the launch"
+    }
+  ],
+  "niveau_preuve": {
+    "justification": "Engagement metrics come from Perfect Corp's success story (the technology vendor, so an interested party): capped at B. The Japanese press (Fashionsnap, TechCrunch Japan) corroborates the deployment, the 7,000 combinations, and the skin analysis, without confirming the engagement figures, which remain vendor-sourced."
+  },
+  "fonctionnement_operationnel": {
+    "cadence": "Real time, with each customer interaction on LINE.",
+    "opere_par": "The brand's digital/CRM team, with the analysis and try-on component supplied and maintained by Perfect Corp.",
+    "signal_pilote": "The face photo sent by the customer and her answers to the questionnaire. Without a usable image (framing, lighting), the diagnostic cannot run and the recommendation falls flat.",
+    "etapes": [
+      {
+        "etape": "Enter the service",
+        "detail": "The customer adds the COFFmi account as a friend on LINE and starts COFFmi CHECKER.",
+        "acteur": "customer"
+      },
+      {
+        "etape": "Capture and analysis",
+        "detail": "A photo of the face and a short questionnaire; the AI measures hydration, sebum, spots, skin texture, and facial features.",
+        "acteur": "AI"
+      },
+      {
+        "etape": "Product recommendation",
+        "detail": "The system selects products and shades from about 7,000 combinations based on the diagnostic.",
+        "acteur": "AI"
+      },
+      {
+        "etape": "Virtual try-on",
+        "detail": "The customer tests the recommended products in augmented reality through the camera.",
+        "acteur": "customer"
+      },
+      {
+        "etape": "Follow-up",
+        "detail": "Results accumulate on a personal page in journal format, for re-engagement over time.",
+        "acteur": "AI"
+      }
+    ]
+  },
+  "stack_technique": [
+    {
+      "detail": "Analysis of facial features and skin indicators, supplied by Perfect Corp"
+    },
+    {
+      "detail": "Makeup try-on in augmented reality"
+    },
+    {
+      "detail": "Conversational channel for accessing the service in Japan"
+    }
+  ],
+  "replication": {
+    "prerequis_data": [
+      "A structured product catalog with attributes (shades, finishes, skin targets) usable by a recommendation engine",
+      "Explicit consent to process the face photo and skin indicators (sensitive biometric data)"
+    ],
+    "prerequis_orga": [
+      "A digital/CRM team able to run a conversational channel and read what comes back from it",
+      "Legal/DPO sign-off on the processing of facial images on the EU side"
+    ],
+    "stack_possible": [
+      "An off-the-shelf skin analysis and AR try-on component (such as Perfect Corp, Revieve, ModiFace)",
+      "A conversational channel suited to the market (WhatsApp, web app, mini-app)",
+      "A recommendation engine connected to the product catalog"
+    ],
+    "equipe": "A CRM/digital lead to run the journey, a data/product profile to wire the catalog to the recommendation engine, and a legal/DPO contact for the biometric processing.",
+    "premiere_etape": "Map the product catalog attributes and define the skin concerns to detect, before connecting an off-the-shelf analysis component to a test channel."
+  },
+  "statut_vivant": {
+    "note": "The service ran for about four years (2020-2024), which attests to scale. But Kao announced on April 1, 2024 the discontinuation of the entire Coffret d'Or brand: production ending from June 2024, sales ending at the end of December 2024, as part of a refocus on around twenty growth brands. The deployment is therefore no longer active; its end comes from the disappearance of the brand, not from an AI failure."
+  },
+  "transposable_ue": {
+    "note": "The LINE conversational channel is specific to Japan; in Europe it must be replaced with WhatsApp, a web app, or a mini-site. The analysis relies on a photo of the face and skin indicators: sensitive biometric data under the GDPR (explicit consent, minimization), and a use to frame under the AI Act for biometric categorization systems."
+  }
+}

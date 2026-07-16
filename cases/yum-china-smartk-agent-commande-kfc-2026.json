@@ -1,0 +1,260 @@
+{
+  "id": "yum-china-smartk-agent-commande-kfc-2026",
+  "type_fiche": "succes",
+  "marque": "Yum China",
+  "groupe": "Yum China Holdings (KFC, Pizza Hut, K Coffee, Taco Bell Chine)",
+  "industrie": "food_beverage",
+  "marches_deploiement": [
+    "Chine"
+  ],
+  "transposable_ue": {
+    "flag": "oui_avec_adaptations",
+    "note": "Le modele repose sur une super app de marque a tres forte adoption (94% des ventes en digital en Chine), configuration rare en Europe ou la commande se repartit entre app de marque, agregateurs de livraison et web. Un agent de commande conversationnel qui suggere des produits a partir de l'historique d'achat suppose en UE une base legale RGPD pour la personnalisation et une information claire au titre de l'AI Act sur l'interaction avec un systeme d'IA. Le pattern reste transposable a une app de marque disposant d'une base fidelite consentie."
+  },
+  "metier": "e-commerce / commande digitale / experience client",
+  "logo_domain": "yumchina.com",
+  "intervenants": [
+    {
+      "nom": "Joey Wat",
+      "role": "CEO de Yum China au moment de l'annonce (earnings Q4 2025)",
+      "source_ref": "S1"
+    }
+  ],
+  "axes": {
+    "levier": "activation_conversion",
+    "touchpoints": [
+      "application mobile KFC (super app)",
+      "assistant conversationnel in-app",
+      "tunnel de commande"
+    ],
+    "etape_parcours": "achat",
+    "famille": "conversation",
+    "pattern": "agent de commande conversationnel genAI dans une app de marque",
+    "type_ia": [
+      "IA generative",
+      "agent conversationnel",
+      "recommandation personnalisee"
+    ],
+    "plateforme_stack": [
+      "super app KFC (in-house)",
+      "modele d'IA non detaille publiquement"
+    ],
+    "objectif_metrique": [
+      "adoption de l'assistant",
+      "conversion de la commande digitale",
+      "personnalisation du panier"
+    ]
+  },
+  "implementation": "custom",
+  "objectif_business": "Fluidifier la prise de commande dans la super app KFC et pousser des suggestions personnalisees a l'echelle d'une base fidelite de plusieurs centaines de millions de membres, dans un contexte ou la quasi-totalite des ventes passe par le digital.",
+  "points_cles": [
+    "Yum China a deploye SmartK, agent de commande IA, a tous les utilisateurs de la super app KFC en janvier 2026.",
+    "L'assistant a deja ete utilise par 2 millions de membres, surtout pour le petit-dejeuner et le cafe.",
+    "Contexte a l'echelle : 94% des ventes en digital, 10,4 Md$ de ventes digitales, 590 millions de membres fidelite.",
+    "Cas confirme par l'earnings call Q4 2025 de Yum China (source primaire), assistant client-facing en production."
+  ],
+  "description": "SmartK est un assistant de commande base sur l'IA integre a la super app KFC de Yum China. Il aide le client a passer commande dans l'application et lui propose des suggestions personnalisees pendant le parcours. Yum China l'a ouvert a tous les utilisateurs de la super app KFC en janvier 2026. Au moment de l'earnings call du quatrieme trimestre 2025, la direction indique que la fonction a deja ete utilisee par 2 millions de membres, avec une adoption plus marquee sur les commandes de petit-dejeuner et de cafe. Le dispositif s'inscrit dans une base digitale deja tres profonde en Chine : 94% des ventes passent par le digital, les ventes digitales atteignent 10,4 milliards de dollars en 2025, et le programme de fidelite compte 590 millions de membres pour 265 millions de membres actifs. SmartK est distinct de Q-Smart, l'assistant IA que Yum China teste cote operations pour les directeurs de restaurant (planning, stocks, qualite). Il est aussi distinct du dispositif d'IA marketing de Yum! Brands aux Etats-Unis : Yum China est une entite juridiquement separee, cotee separement, qui opere KFC et Pizza Hut en Chine. Le modele d'IA sous-jacent a SmartK n'est pas detaille publiquement dans les sources disponibles.",
+  "resultats": [
+    {
+      "metrique": "Membres ayant utilise SmartK depuis le deploiement (janvier 2026)",
+      "valeur": "2 millions",
+      "citation_exacte": "This feature has already been used by 2 million members",
+      "source_ref": "S1"
+    },
+    {
+      "metrique": "Part des ventes realisees en digital (2025)",
+      "valeur": "94%",
+      "citation_exacte": "Digital ordering accounted for 94% of sales",
+      "source_ref": "S2"
+    },
+    {
+      "metrique": "Ventes digitales 2025 (+8% sur un an)",
+      "valeur": "10,4 Md$",
+      "citation_exacte": "digital sales grew 8% to $10.4 billion",
+      "source_ref": "S2"
+    },
+    {
+      "metrique": "Membres totaux du programme de fidelite (+13% sur un an)",
+      "valeur": "590 millions",
+      "citation_exacte": "590 million total members",
+      "source_ref": "S2"
+    }
+  ],
+  "niveau_preuve": {
+    "niveau": "A",
+    "justification": "Le deploiement de SmartK a tous les utilisateurs de la super app KFC et le chiffre de 2 millions de membres utilisateurs sont enonces par la direction dans l'earnings call Q4 2025 de Yum China (transcript verbatim, source primaire). Les figures de contexte (94% de ventes digitales, 10,4 Md$, 590M de membres) sont confirmees par les slides de resultats du meme trimestre. Le resultat mis en avant est une metrique d'adoption, pas un lift de conversion chiffre."
+  },
+  "dates": {
+    "lancement": "Janvier 2026 (ouverture a tous les utilisateurs de la super app KFC)",
+    "derniere_confirmation_activite": "Fevrier 2026 (earnings call Q4 2025 : 2 millions de membres utilisateurs)",
+    "verifie_le": "2026-07-16",
+    "revoir_apres": "2026-10-16"
+  },
+  "statut_vivant": {
+    "statut": "confirme",
+    "note": "Fonction ouverte a l'ensemble des utilisateurs de la super app KFC en janvier 2026 et presentee en croissance d'adoption lors de l'earnings call de fevrier 2026. Aucun signal de retrait."
+  },
+  "sources": [
+    {
+      "ref": "S1",
+      "type": "earnings_call",
+      "fiabilite": "T1_primaire",
+      "titre": "Yum China (YUMC) Q4 2025 Earnings Call Transcript",
+      "url": "https://www.fool.com/earnings/call-transcripts/2026/02/04/yum-china-yumc-q4-2025-earnings-call-transcript/",
+      "date_publication": "2026-02-04",
+      "consulte_le": "2026-07-16"
+    },
+    {
+      "ref": "S2",
+      "type": "presse",
+      "fiabilite": "T3_presse_etablie",
+      "titre": "Yum China Q4 2025 slides: sales acceleration and record expansion drive earnings beat",
+      "url": "https://www.investing.com/news/company-news/yum-china-q4-2025-slides-sales-acceleration-and-record-expansion-drive-earnings-beat-93CH-4484808",
+      "date_publication": "fevrier 2026",
+      "consulte_le": "2026-07-16"
+    },
+    {
+      "ref": "S3",
+      "type": "presse",
+      "fiabilite": "T3_presse_etablie",
+      "titre": "KFC, Pizza Hut operator Yum China embraces AI to boost efficiency, profitability",
+      "url": "https://www.scmp.com/business/china-business/article/3317135/kfc-pizza-hut-operator-yum-china-embraces-ai-boost-efficiency-profitability",
+      "date_publication": "2025",
+      "consulte_le": "2026-07-16"
+    }
+  ],
+  "fonctionnement_operationnel": {
+    "cadence": "Temps reel, a chaque session de commande d'un utilisateur dans la super app KFC",
+    "opere_par": "Equipe digitale et produit de Yum China, qui tient l'app, le catalogue et la logique de recommandation",
+    "signal_pilote": "L'historique de commande et le contexte du membre (moment de la journee, habitudes petit-dejeuner et cafe). Sans donnee fidelite rattachee au membre, l'assistant perd la personnalisation et retombe sur une prise de commande generique.",
+    "etapes": [
+      {
+        "etape": "Ouverture de la super app",
+        "detail": "Le membre ouvre l'application KFC et accede a l'assistant SmartK dans le parcours de commande.",
+        "acteur": "client"
+      },
+      {
+        "etape": "Comprehension de la demande",
+        "detail": "SmartK interprete la demande du client et propose des articles ou des ajouts adaptes, avec une pertinence plus forte sur le petit-dejeuner et le cafe.",
+        "acteur": "IA"
+      },
+      {
+        "etape": "Personnalisation a partir du profil",
+        "detail": "L'assistant s'appuie sur l'historique et le contexte du membre pour ajuster les suggestions au panier en cours.",
+        "acteur": "IA"
+      },
+      {
+        "etape": "Validation et commande",
+        "detail": "Le client confirme le panier suggere, la commande part dans le flux digital habituel de l'app.",
+        "acteur": "client"
+      }
+    ]
+  },
+  "schema_flow": {
+    "statut": "approche_type",
+    "noeuds": [
+      {
+        "id": "membre",
+        "role_generique": "humain",
+        "label": "Membre de la super app KFC"
+      },
+      {
+        "id": "app",
+        "role_generique": "site_app",
+        "label": "Super app KFC (commande digitale)"
+      },
+      {
+        "id": "smartk",
+        "role_generique": "canal_conversationnel",
+        "label": "SmartK : assistant de commande IA"
+      },
+      {
+        "id": "profil",
+        "role_generique": "data_source",
+        "label": "Historique et profil du membre (programme fidelite)"
+      },
+      {
+        "id": "catalogue",
+        "role_generique": "data_source",
+        "label": "Catalogue produits et offres KFC"
+      },
+      {
+        "id": "commande",
+        "role_generique": "site_app",
+        "label": "Prise de commande et paiement digital"
+      }
+    ],
+    "liens": [
+      [
+        "membre",
+        "app"
+      ],
+      [
+        "app",
+        "smartk"
+      ],
+      [
+        "profil",
+        "smartk"
+      ],
+      [
+        "catalogue",
+        "smartk"
+      ],
+      [
+        "smartk",
+        "membre",
+        "suggestions personnalisees"
+      ],
+      [
+        "smartk",
+        "commande"
+      ],
+      [
+        "commande",
+        "profil",
+        "boucle historique de commande"
+      ]
+    ]
+  },
+  "replication": {
+    "statut_epistemique": "infere",
+    "prerequis_data": [
+      "Une base de membres identifies avec historique de commande rattache a chaque profil",
+      "Un catalogue produits structure, avec offres et disponibilite par creneau (petit-dejeuner, cafe, midi)",
+      "Un contexte de session exploitable en temps reel (moment de la journee, point de retrait ou livraison)"
+    ],
+    "prerequis_orga": [
+      "Une app de marque ou une part significative des commandes passe deja par le digital",
+      "Une equipe produit et digitale proprietaire du parcours de commande in-app",
+      "Une base legale et une information conformes RGPD et AI Act pour la personnalisation et l'interaction conversationnelle en UE"
+    ],
+    "stack_possible": [
+      "Un assistant conversationnel genAI integre au tunnel de commande de l'app",
+      "Un moteur de recommandation branche sur l'historique du membre et le catalogue",
+      "Une couche de personnalisation contextuelle par creneau et habitude d'achat"
+    ],
+    "equipe": "Un responsable produit digital pour le parcours de commande, un profil data pour la personnalisation et la mesure d'adoption, un profil conception conversationnelle pour l'assistant, un relais marketing pour les offres poussees dans le flux.",
+    "premiere_etape": "Cibler un moment de commande a forte repetition et faible complexite de panier, par exemple le petit-dejeuner et le cafe, pour lancer l'assistant la ou la suggestion personnalisee a le plus de prise."
+  },
+  "seo": {
+    "slug": "yum-china-smartk-agent-commande-kfc-2026",
+    "title": "Yum China : SmartK, agent de commande IA de la super app KFC - 2 millions de membres utilisateurs (2026)",
+    "meta_description": "Yum China a ouvert SmartK, son agent de commande IA, a tous les utilisateurs de la super app KFC en janvier 2026. Deja utilise par 2 millions de membres.",
+    "resume_citable": "En janvier 2026, Yum China a ouvert SmartK, un agent de commande IA, a tous les utilisateurs de la super app KFC ; deja utilise par 2 millions de membres, surtout pour le petit-dejeuner et le cafe, dans un contexte ou 94% des ventes passent par le digital.",
+    "faq": [
+      {
+        "q": "Qu'est-ce que SmartK chez Yum China ?",
+        "a": "SmartK est un assistant de commande base sur l'IA integre a la super app KFC. Il aide le client a passer commande et lui propose des suggestions personnalisees. Yum China l'a ouvert a tous les utilisateurs de la super app KFC en janvier 2026 ; au T4 2025, il avait deja ete utilise par 2 millions de membres."
+      },
+      {
+        "q": "SmartK est-il la meme chose que Q-Smart ?",
+        "a": "Non. SmartK est l'assistant de commande cote client dans l'app KFC. Q-Smart est un assistant IA distinct que Yum China teste pour les directeurs de restaurant (planning, stocks, qualite)."
+      },
+      {
+        "q": "Ce cas est-il le meme que l'IA marketing de Yum! Brands ?",
+        "a": "Non. Yum China est une entite juridiquement separee et cotee separement, qui opere KFC et Pizza Hut en Chine. Le cas Yum! Brands porte sur la generation de communications CRM aux Etats-Unis, un autre pattern."
+      }
+    ]
+  }
+}
