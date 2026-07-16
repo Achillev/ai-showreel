@@ -12,13 +12,25 @@ une fiche OU un rejet motive, jamais de fabrication.
 
 ## Etapes
 
-1. **Decouverte (Mode B).** Lance 1 a 2 agents de recherche ciblee (Agent tool). Chacun
-   cherche via WebSearch/WebFetch des deploiements IA marketing REELS et A L'ECHELLE
-   par de GRANDES marques, annonces recemment (earnings calls du trimestre + presse
-   etablie), qui ne sont PAS deja en base (cases/*.json). Chaque agent ecrit ses leads
-   dans un fichier JSON dans batch/modeB/ au format :
+0. **Cibler les angles morts (AVANT de chercher).** `node site/gaps.mjs --brief` (et `--json`
+   pour batch/_gaps.json). Le script lit la matrice de couverture et sort les croisements
+   industrie x levier VIDES, priorises par levier le plus pauvre. La carte des angles morts EST
+   le produit qu'on vend : elle doit piloter la collecte, sinon on renforce le gras (retail /
+   acquisition) et les trous restent. Colle ce brief dans les agents de l'etape 1.
+   Prepare aussi l'anti-doublon : liste des marques deja en base ->
+   `node -e "..."` vers batch/_existing-brands.txt (ou equivalent).
+
+1. **Decouverte (Mode B), pilotee par les gaps.** Lance 1 a 2 agents de recherche ciblee
+   (Agent tool). Chacun cherche via WebSearch/WebFetch des deploiements IA marketing REELS et
+   A L'ECHELLE par de GRANDES marques, qui ne sont PAS deja en base (cases/*.json). **Donne a
+   chaque agent le brief de l'etape 0 : il doit chercher EN PRIORITE sur les croisements vides**
+   (un cas en `energie x monetisation` vaut plus qu'un enieme cas retail). Garde un agent sur la
+   veille large (earnings du trimestre + presse etablie) pour ne pas rater les gros signaux.
+   Chaque agent ecrit ses leads dans un fichier JSON dans batch/modeB/ au format :
    {marque, pattern, industrie_probable, source_urls[], niveau_preuve_estime (A/B/C/D),
-   justification}. Vise des leads niveau A/B (chiffres publics/earnings).
+   justification}. Vise des leads niveau A/B (chiffres publics/earnings). Regle qui ne bouge pas :
+   si un croisement vide ne donne rien de solide, on le laisse vide - un angle mort honnete est
+   une information, un cas force est une faute.
 
 2. **Triage deterministe.** `node site/triage.mjs --cap 12`
    -> produit batch/_triage-queue.json (voie `queue` = nouveaux, `revue_distinction`

@@ -303,7 +303,7 @@ function page(title, body, { desc = '', jsonld = '', canonical = '', path = '' }
 </head><body>
 <a class="skip" href="#main">${t('Aller au contenu', 'Skip to content')}</a>
 <header class="head-top" id="head-top">
-  <a class="brand" href="${P()}/" translate="no"><span class="brand-mark" aria-hidden="true">◆</span> AI&nbsp;Showreel <span class="brand-sub">${t("l'analyse niveau grand cabinet, pour tout le monde", 'consulting-grade analysis, for everyone')}</span></a>
+  <a class="brand" href="${P()}/" translate="no"><span class="brand-mark" aria-hidden="true">◆</span> AI&nbsp;Showreel <span class="brand-sub">${t("l'observatoire indépendant de l'IA marketing", 'the independent observatory of AI in marketing')}</span></a>
   <div class="nav-live" title="${t('Dernière vérification', 'Last verified')} : ${esc(LAST_UPD)}"><span class="status-dot" aria-hidden="true"></span> <span class="num" data-countup data-target="${TOTAL_CASES}">${TOTAL_CASES}</span> ${t('cas prouvés', 'proven cases')}</div>
   <div class="nav-utils">
     <button class="cmdk-btn" type="button" data-cmdk aria-label="${t('Rechercher un cas', 'Search a case')} (Ctrl/Cmd K)"><svg viewBox="0 0 20 20" width="14" height="14" aria-hidden="true"><circle cx="9" cy="9" r="6" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M14 14 L18 18" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg><kbd>⌘K</kbd></button>${BILINGUAL ? `
