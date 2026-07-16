@@ -16,21 +16,35 @@
   },
   "pattern": "proprietary genAI platform for ad production",
   "etape_parcours": "discovery",
-  "objectif_business": "Reduce the share of the ad budget eaten by creative and production (around 60 percent at a large CPG), produce more variants faster, and spend less on external agencies.",
-  "description": "Mondelez invested 40 million dollars in a proprietary genAI platform, developed with Accenture and Publicis Groupe. The group targets a 30 to 50 percent drop in the production cost of marketing content, on a creative-production line item that accounts for around 60 percent of a large consumer-goods maker's ad budget. The first uses are already live: social content for Chips Ahoy and Milka, Oreo product pages on Amazon and Walmart. For now the group avoids images of people and focuses on animated product visuals, with human review of everything the AI outputs. The roadmap pushes toward short, ready-to-air TV spots for the 2025-2026 holidays, with the stated ambition of a Super Bowl 2027 format. One cited example: an eight-second Milka animation where waves of chocolate roll over a biscuit, the kind of shot that traditionally costs hundreds of thousands of dollars.",
+  "objectif_business": "Reduce the share of advertising and consumer promotion spend eaten by creative and production (more than 60 percent at Mondelez, per its SVP of consumer experience), produce more variants faster, and spend less on external agencies.",
+  "description": "Mondelez invested 40 million dollars in a proprietary genAI platform, developed with Accenture and Publicis Groupe. The group targets a 30 to 50 percent drop in the production cost of marketing content, on a creative-production line item that absorbs more than 60 percent of its advertising and consumer promotion spend, according to Jon Halvorson. The first uses are already live: social content for Chips Ahoy and Milka, Oreo product pages on Amazon and Walmart. For now the group avoids images of people and focuses on animated product visuals, with human review of everything the AI outputs. The roadmap pushes toward short, ready-to-air TV spots for the 2025-2026 holidays, with the stated ambition of a Super Bowl 2027 format. One cited example: an eight-second Milka animation where waves of chocolate roll over a biscuit, the kind of shot that traditionally costs hundreds of thousands of dollars.",
   "resultats": [
-    { "metrique": "Committed investment" },
-    { "metrique": "Targeted reduction in marketing content production cost" },
-    { "metrique": "Share of the ad budget in creative-production (CPG context)" }
+    {
+      "metrique": "Committed investment"
+    },
+    {
+      "metrique": "Targeted reduction in marketing content production cost"
+    },
+    {
+      "metrique": "Share of Mondelez's advertising and consumer promotion spend going to creative development and production, as stated by Jon Halvorson"
+    }
   ],
   "niveau_preuve": {
-    "justification": "Investment and objectives announced by Mondelez through its executives, picked up by CNBC and the trade press; the cost reduction is a stated target, not yet an audited result, hence C."
+    "justification": "Investment and objectives announced by Mondelez through its executives, picked up by CNBC and Digiday; the figure of more than 60 percent of advertising and consumer promotion spend going to creative-production is a statement by Jon Halvorson to Digiday, not an independent measurement. The cost reduction is a stated target, not yet an audited result, hence C."
   },
   "stack_technique": [
-    { "detail": "Internal ad production platform (40M dollars invested): animated product visuals and videos, with a human review workflow and exclusion of images of people." },
-    { "detail": "Generative models built into the platform; their names are not published in the sources." },
-    { "detail": "Co-development of the proprietary genAI platform." },
-    { "detail": "Co-development of the proprietary genAI platform." }
+    {
+      "detail": "Internal ad production platform (40M dollars invested): animated product visuals and videos, with a human review workflow and exclusion of images of people."
+    },
+    {
+      "detail": "Generative models built into the platform; their names are not published in the sources."
+    },
+    {
+      "detail": "Co-development of the proprietary genAI platform."
+    },
+    {
+      "detail": "Co-development of the proprietary genAI platform."
+    }
   ],
   "fonctionnement_operationnel": {
     "cadence": "Per campaign and per launch; production of many variants on demand, with systematic human review before release.",

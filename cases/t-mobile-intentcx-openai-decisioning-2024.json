@@ -41,7 +41,7 @@
  },
  "implementation": "custom",
  "objectif_business": "Comprendre l'intention du client en direct, proposer ou executer la bonne action, et faire baisser le volume d'appels au service client tout en gardant le client autonome.",
- "description": "IntentCX est la plateforme de decisioning que T-Mobile construit avec OpenAI, annoncee en septembre 2024. Elle est concue pour comprendre l'intention et le sentiment du client en temps reel, proposer une resolution et prendre des actions de facon autonome avec la permission du client, en s'appuyant sur des milliards de points de donnees d'interactions reelles. T-Mobile la presente comme allant au-dela des chatbots et lui a fixe un objectif interne de reduction de 75 pour cent des appels au service client. Le deploiement est progressif : fin 2025, la direction indique que les premiers elements du programme touchent les clients, notamment dans les flux d'upgrade, ou 75 pour cent des upgrades d'iPhone pendant la fenetre de precommande sont passes par les canaux digitaux. Les resultats a l'echelle de la plateforme ne sont pas encore publies : ce cas documente un deploiement reel en phase precoce, pas encore un impact churn ou volume chiffre et attribue.",
+ "description": "IntentCX est la plateforme de decisioning que T-Mobile construit avec OpenAI, annoncee en septembre 2024. Elle est concue pour comprendre l'intention et le sentiment du client en temps reel, proposer une resolution et prendre des actions de facon autonome avec la permission du client, en s'appuyant sur des milliards de points de donnees d'interactions reelles. T-Mobile la presente comme allant au-dela des chatbots. Le deploiement est progressif : fin 2025, la direction indique que les premiers elements du programme touchent les clients, notamment dans les flux d'upgrade, ou trois upgrades d'iPhone sur quatre pendant la fenetre de precommande sont passes par les canaux digitaux. Les resultats a l'echelle de la plateforme ne sont pas encore publies : ce cas documente un deploiement reel en phase precoce, pas encore un impact churn ou volume chiffre et attribue.",
  "fonctionnement_operationnel": {
   "cadence": "Temps reel : lecture de l'intention et decision au fil de l'interaction. Les modeles sont optimises avec un support recherche dedie d'OpenAI.",
   "opere_par": "Les equipes care et digital de T-Mobile pour l'exploitation et les parcours, OpenAI pour les modeles et l'optimisation, une equipe data pour la connexion aux systemes de care et de transaction.",
@@ -73,19 +73,13 @@
   {
    "metrique": "Part des upgrades iPhone en digital (fenetre de precommande)",
    "valeur": "75%",
-   "citation_exacte": "75% of iPhone upgrades during T-Mobile's preorder window were completed through digital channels",
-   "source_ref": "S2"
-  },
-  {
-   "metrique": "Objectif interne de reduction des appels care (non atteint)",
-   "valeur": "-75%",
-   "citation_exacte": "internal goal to reduce customer service calls by 75%",
-   "source_ref": "S2"
+   "citation_exacte": "Three out of four of our iPhone upgrades during our preorder window were digital",
+   "source_ref": "S4"
   }
  ],
  "niveau_preuve": {
   "niveau": "A",
-  "justification": "Le chiffre de 75% est trace a l'earnings call T-Mobile du 23 octobre 2025, dont le transcript est publie par la relation investisseurs de la marque : le directeur des operations Srini Gopalan y declare « Three out of four of our iPhone upgrades during our preorder window were digital », et le CEO Mike Sievert rattache ces resultats a IntentCX en ajoutant « some of the early elements of IntentCX are hitting customers now ». La marque chiffre elle-meme en earnings call = A. A noter : l'objectif de -75% d'appels care reste un objectif interne non atteint, et aucun resultat a l'echelle de la plateforme n'est publie."
+  "justification": "Le chiffre est trace a l'earnings call T-Mobile du 23 octobre 2025, dont le transcript est publie par la relation investisseurs de la marque : le directeur des operations Srini Gopalan y declare « Three out of four of our iPhone upgrades during our preorder window were digital », soit les 75% affiches, qu'il reprend en pourcentage plus loin dans l'appel (« Like we said, 75% of our upgrades are now on T-Life »). Le CEO Mike Sievert rattache ces resultats a IntentCX en ajoutant « some of the early elements of IntentCX are hitting customers now ». La marque chiffre elle-meme en earnings call = A. A noter : aucun resultat a l'echelle de la plateforme n'est publie, et la part d'upgrades en digital mesure l'adoption du parcours digital, pas un effet isole d'IntentCX."
  },
  "dates": {
   "lancement": "Annonce septembre 2024 ; premiers elements en production courant 2025",
@@ -226,7 +220,7 @@
   "slug": "t-mobile-intentcx-openai-decisioning-intention-2024",
   "title": "T-Mobile : IntentCX avec OpenAI, decisioning par l'intention - rollout progressif (2024)",
   "meta_description": "IntentCX, la plateforme de decisioning de T-Mobile avec OpenAI, lit l'intention client en temps reel et execute des actions. Rollout precoce depuis 2025.",
-  "resume_citable": "T-Mobile construit avec OpenAI IntentCX, une plateforme de decisioning qui lit l'intention et le sentiment client en temps reel pour proposer ou executer une action, avec un objectif interne de -75% d'appels care ; les premiers elements touchent les clients depuis 2025, sans resultat a l'echelle encore publie.",
+  "resume_citable": "T-Mobile construit avec OpenAI IntentCX, une plateforme de decisioning qui lit l'intention et le sentiment client en temps reel pour proposer ou executer une action ; les premiers elements touchent les clients depuis 2025, avec trois upgrades d'iPhone sur quatre passes en digital pendant la fenetre de precommande, sans resultat a l'echelle encore publie.",
   "faq": [
    {
     "q": "IntentCX est-il pleinement deploye ?",
@@ -234,7 +228,7 @@
    },
    {
     "q": "Pourquoi ce cas est-il classe en niveau de preuve A ?",
-    "a": "Le chiffre de 75% d'upgrades iPhone realises en digital est prononce par la direction de T-Mobile en earnings call le 23 octobre 2025, et le CEO y rattache explicitement ces resultats a IntentCX : la marque chiffre elle-meme, donc A. L'objectif de -75% d'appels au service client reste en revanche un objectif interne non atteint, et aucun resultat a l'echelle de la plateforme n'est publie."
+    "a": "Le chiffre de 75% d'upgrades iPhone realises en digital est prononce par la direction de T-Mobile en earnings call le 23 octobre 2025, et le CEO y rattache explicitement ces resultats a IntentCX : la marque chiffre elle-meme, donc A. Aucun resultat a l'echelle de la plateforme n'est en revanche publie."
    }
   ]
  },

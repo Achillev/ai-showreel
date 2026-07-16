@@ -100,26 +100,28 @@
   ],
   "niveau_preuve": {
     "niveau": "B",
-    "justification": "Les resultats media (85% de CTR, 33% de cout par clic, 2,6x de trafic) sont documentes et chiffres par l'etude de cas Google (Think with Google), corroboree par une seconde source sur la strategie AI marketing de Bayer Consumer Health. Etude de cas plateforme chiffree = B."
+    "justification": "Les resultats media (85% de CTR, 33% de cout par clic, 2,6x de trafic) sont documentes et chiffres par l'etude de cas Google (Think with Google, octobre 2022), corroboree par une seconde source sur la strategie AI marketing de Bayer Consumer Health. Etude de cas plateforme chiffree = B. Les trois chiffres sont des comparaisons d'une annee sur l'autre, sans groupe de controle : la part revenant au modele de prevision n'est pas isolee."
   },
   "dates": {
     "lancement": "debut 2022 (Australie)",
-    "derniere_confirmation_activite": "2024 (etude de cas Google publiee, resultats media chiffres, intention d'extension mondiale)",
-    "verifie_le": "2026-07-11",
-    "revoir_apres": "2027-01-11"
+    "derniere_confirmation_activite": "novembre 2023 (Adweek : Patricia Corsi decrit la prevision des tendances rhume et grippe avec Google comme un dispositif en cours)",
+    "verifie_le": "2026-07-16",
+    "revoir_apres": "2027-01-16"
   },
   "statut_vivant": {
     "statut": "signaux_mitiges",
-    "note": "Le cas australien est documente et chiffre, avec une intention d'extension mondiale. L'ampleur du deploiement hors Australie n'est pas re-sourcee avec des chiffres a jour ; le pattern (prevision de demande pour piloter le media) reste actif chez Bayer Consumer Health, qui investit par ailleurs dans l'IA marketing."
+    "note": "Le cas australien est documente et chiffre pour la saison 2022, avec une intention d'extension mondiale annoncee des l'etude de cas. L'ampleur du deploiement hors Australie n'est pas re-sourcee avec des chiffres a jour ; la derniere trace publique du dispositif date de novembre 2023, quand Bayer Consumer Health le presente comme en cours."
   },
   "sources": [
     {
       "ref": "S1",
       "type": "customer_story_plateforme",
       "fiabilite": "T2_officiel_interesse",
-      "titre": "Predicting demand through search trends (Bayer, Think with Google)",
-      "url": "https://www.thinkwithgoogle.com/intl/en-cee/marketing-strategies/automation/search-trends-demand-predictions-bayer/",
-      "consulte_le": "2026-07-11"
+      "titre": "How Bayer used machine learning to predict cold and flu trends (Think with Google)",
+      "url": "https://business.google.com/us/think/ai-excellence/search-trends-demand-predictions-bayer/",
+      "archive_url": "https://web.archive.org/web/20231004222959/https://www.thinkwithgoogle.com/intl/en-cee/marketing-strategies/automation/search-trends-demand-predictions-bayer/",
+      "date_publication": "2022-10",
+      "consulte_le": "2026-07-16"
     },
     {
       "ref": "S2",
@@ -127,7 +129,8 @@
       "fiabilite": "T4_secondaire",
       "titre": "Why Bayer Has Turned to AI to Transform Consumer Self-Care",
       "url": "https://www.adweek.com/sponsored/why-bayer-has-turned-to-ai-to-transform-consumer-self-care/",
-      "consulte_le": "2026-07-11"
+      "date_publication": "2023-11-16",
+      "consulte_le": "2026-07-16"
     }
   ],
   "fonctionnement_operationnel": {

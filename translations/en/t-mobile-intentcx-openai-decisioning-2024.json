@@ -2,7 +2,7 @@
  "seo": {
   "title": "T-Mobile: IntentCX with OpenAI, intent-driven decisioning - progressive rollout (2024)",
   "meta_description": "IntentCX, T-Mobile's decisioning platform with OpenAI, reads customer intent in real time and executes actions. Early rollout since 2025.",
-  "resume_citable": "T-Mobile is building IntentCX with OpenAI, a decisioning platform that reads customer intent and sentiment in real time to propose or execute an action, with an internal goal of -75% care calls; the first elements have reached customers since 2025, with no platform-scale result yet published.",
+  "resume_citable": "T-Mobile is building IntentCX with OpenAI, a decisioning platform that reads customer intent and sentiment in real time to propose or execute an action; the first elements have reached customers since 2025, with three out of four iPhone upgrades going digital during the preorder window, and no platform-scale result yet published.",
   "faq": [
    {
     "q": "Is IntentCX fully deployed?",
@@ -10,24 +10,21 @@
    },
    {
     "q": "Why is this case classified at evidence level A?",
-    "a": "The 75% figure for iPhone upgrades completed digitally is stated by T-Mobile management on the earnings call of October 23, 2025, and the CEO explicitly ties those results to IntentCX: the brand quantifies it itself, hence A. The -75% target on care calls remains an unreached internal goal, however, and no platform-scale result is published."
+    "a": "The 75% figure for iPhone upgrades completed digitally is stated by T-Mobile management on the earnings call of October 23, 2025, and the CEO explicitly ties those results to IntentCX: the brand quantifies it itself, hence A. No platform-scale result is published, however."
    }
   ]
  },
  "pattern": "Intent-driven decisioning platform: an engine reads customer intent and sentiment in real time, decides the next action, and can execute it, beyond a simple chatbot",
  "etape_parcours": "post-purchase / service and retention",
  "objectif_business": "Understand the customer's intent live, propose or execute the right action, and lower the volume of customer service calls while keeping the customer autonomous.",
- "description": "IntentCX is the decisioning platform T-Mobile is building with OpenAI, announced in September 2024. It is designed to understand the customer's intent and sentiment in real time, propose a resolution, and take actions autonomously with the customer's permission, drawing on billions of data points from real interactions. T-Mobile presents it as going beyond chatbots and has set it an internal goal of a 75 percent reduction in customer service calls. The rollout is progressive: at the end of 2025, management indicates that the first elements of the program are reaching customers, notably in the upgrade flows, where 75 percent of iPhone upgrades during the preorder window went through digital channels. Platform-scale results are not yet published: this case documents a real deployment in an early phase, not yet a quantified and attributed churn or volume impact.",
+ "description": "IntentCX is the decisioning platform T-Mobile is building with OpenAI, announced in September 2024. It is designed to understand the customer's intent and sentiment in real time, propose a resolution, and take actions autonomously with the customer's permission, drawing on billions of data points from real interactions. T-Mobile presents it as going beyond chatbots. The rollout is progressive: at the end of 2025, management indicates that the first elements of the program are reaching customers, notably in the upgrade flows, where three out of four iPhone upgrades during the preorder window went through digital channels. Platform-scale results are not yet published: this case documents a real deployment in an early phase, not yet a quantified and attributed churn or volume impact.",
  "resultats": [
   {
    "metrique": "Share of iPhone upgrades in digital (preorder window)"
-  },
-  {
-   "metrique": "Internal goal of reducing care calls (not reached)"
   }
  ],
  "niveau_preuve": {
-  "justification": "The 75% figure is traced to the T-Mobile earnings call of October 23, 2025, whose transcript is published by the brand's investor relations: chief operating officer Srini Gopalan states there \"Three out of four of our iPhone upgrades during our preorder window were digital\", and CEO Mike Sievert ties these results to IntentCX, adding \"some of the early elements of IntentCX are hitting customers now\". The brand putting the figure out itself on an earnings call = A. Note: the -75% care calls target remains an internal goal not reached, and no platform-scale result is published."
+  "justification": "The figure is traced to the T-Mobile earnings call of October 23, 2025, whose transcript is published by the brand's investor relations: chief operating officer Srini Gopalan states there \"Three out of four of our iPhone upgrades during our preorder window were digital\", which is the 75% displayed, a figure he restates as a percentage later in the call (\"Like we said, 75% of our upgrades are now on T-Life\"). CEO Mike Sievert ties these results to IntentCX, adding \"some of the early elements of IntentCX are hitting customers now\". The brand putting the figure out itself on an earnings call = A. Note: no platform-scale result is published, and the share of digital upgrades measures adoption of the digital journey, not an isolated IntentCX effect."
  },
  "stack_technique": [
   {

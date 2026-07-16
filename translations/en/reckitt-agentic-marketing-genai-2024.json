@@ -17,10 +17,18 @@
   "pattern": "genAI marketing agents across the concept-adaptation-analysis chain",
   "etape_parcours": "consideration",
   "stack_technique": [
-    { "detail": "Custom GPTs trained on Reckitt data for concept, ad adaptation, and post-campaign analysis; the exact hosting infrastructure is not public." },
-    { "detail": "Suite of marketing-focused genAI solutions, co-built with BCG, including multimodal tools and agents." },
-    { "detail": "Co-building of the platform and the genAI marketing solutions." },
-    { "detail": "Industrialization and deployment of agentic marketing AI at scale (more than 500 marketers, four markets)." }
+    {
+      "detail": "Custom GPTs trained on Reckitt data for concept, ad adaptation, and post-campaign analysis; the exact hosting infrastructure is not public."
+    },
+    {
+      "detail": "Suite of marketing-focused genAI solutions, co-built with BCG, including multimodal tools and agents."
+    },
+    {
+      "detail": "Co-building of the platform and the genAI marketing solutions."
+    },
+    {
+      "detail": "Industrialization and deployment of agentic marketing AI at scale (more than 500 marketers, four markets)."
+    }
   ],
   "objectif_business": "Reduce the time spent on repetitive marketing tasks (concept, ad adaptation by market, post-campaign analysis) while keeping or improving quality, and extend the use to several hundred marketers across several markets.",
   "description": "Reckitt built with BCG a suite of marketing-focused genAI solutions rather than scattering them across isolated pilots. The tools rely on custom GPTs trained on Reckitt data and cover three chained tasks. Product concept generation, where Reckitt reports up to 60 percent less time with improved quality. Ad adaptation and localization, with about 30 percent less time. Post-campaign media analysis, where time spent drops up to 90 percent with quality doubled. These results were first presented by CMO Fabrice Beaulieu at the Cannes Lions festival in June 2024, on a four-month pilot covering brands such as Gaviscon and Finish. Reckitt then deployed a suite of marketing agents to more than 500 marketers across four markets, with an announced doubling, working on industrialization with EPAM. The claimed approach targets tasks that represented 30 to 40 percent of the teams' time.",
@@ -31,13 +39,21 @@
     "Deployed to more than 500 marketers across 4 markets, evidence B, status confirmed."
   ],
   "resultats": [
-    { "metrique": "Concept development time" },
-    { "metrique": "Ad adaptation and localization time" },
-    { "metrique": "Post-campaign media analysis time, quality doubled" },
-    { "metrique": "Deployment across 4 markets, doubling announced" }
+    {
+      "metrique": "Concept development time"
+    },
+    {
+      "metrique": "Ad adaptation and localization time"
+    },
+    {
+      "metrique": "Post-campaign media analysis time, quality doubled"
+    },
+    {
+      "metrique": "Deployment across 4 markets, doubling announced (figure from content sponsored by Empathy Lab / EPAM)"
+    }
   ],
   "niveau_preuve": {
-    "justification": "Figures published by Reckitt (official release and the CMO's presentation at Cannes Lions), corroborated by BCG, co-builder of the platform, and by specialist press (Digiday, EPAM). No isolated figure in financial results, hence B."
+    "justification": "The three time savings (concept, adaptation, post-campaign analysis) come from Reckitt's official June 2024 release, a primary source; Digiday independently corroborates the roughly 30 percent speed-up on asset adaptation. The scale figure (more than 500 marketers across four markets) does not come from independent press but from content sponsored by Empathy Lab / EPAM on The Drum, so it reads as an integrator claim. No isolated figure in financial results, hence B."
   },
   "fonctionnement_operationnel": {
     "cadence": "Continuously, on everyday marketing tasks (concept, adaptation by market, analysis after each campaign).",

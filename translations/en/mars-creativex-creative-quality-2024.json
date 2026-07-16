@@ -1,112 +1,123 @@
 {
-  "seo": {
-    "title": "Mars: AI scoring of creative quality across 50 brands - +33% NSV ROI on TikTok (2024)",
-    "meta_description": "Mars scores the creative quality of its ads with AI (CreativeX) across 50 brands and 65 markets: +33% NSV ROI on TikTok for the best assets.",
-    "resume_citable": "Mars deployed with CreativeX an AI scoring of creative quality across 50 brands and 65 markets; across 30 TikTok campaigns in 2023-2024, high-scoring assets delivered about 33% more NSV ROI.",
-    "faq": [
-      {
-        "q": "Does Mars' AI generate the ad creative?",
-        "a": "No. It scores the creative quality of the assets and steers the media budget toward those that follow the rules and perform best. It is optimization, not generation."
-      },
-      {
-        "q": "What gain does Mars measure?",
-        "a": "About 33 percent more NSV ROI on TikTok for high-quality-score assets, across 30 campaigns measured in 2023-2024."
-      }
-    ]
+ "seo": {
+  "title": "Mars: AI scoring of creative quality across 50 brands - +33% NSV ROI on TikTok (2024)",
+  "meta_description": "Mars scores the creative quality of its ads with AI (CreativeX) across 50 brands and 65 markets: +33% NSV ROI on TikTok for the best assets.",
+  "resume_citable": "Mars deployed with CreativeX an AI scoring of creative quality across 50 brands and 65 markets; across 30 TikTok campaigns in 2023-2024, high-scoring assets delivered about 33% more NSV ROI.",
+  "faq": [
+   {
+    "q": "Does Mars' AI generate the ad creative?",
+    "a": "No. It scores the creative quality of the assets and steers the media budget toward those that follow the rules and perform best. It is optimization, not generation."
+   },
+   {
+    "q": "What gain does Mars measure?",
+    "a": "About 33 percent more NSV ROI on TikTok for high-quality-score assets, across 30 campaigns measured in 2023-2024."
+   }
+  ]
+ },
+ "pattern": "AI scoring of creative quality plugged into media production",
+ "etape_parcours": "discovery",
+ "objectif_business": "Enforce creative quality standards across dozens of brands and markets, so that the media budget works harder rather than funding poorly calibrated assets.",
+ "description": "Mars and its agency EssenceMediaCom relied on CreativeX to deploy a creative excellence program across 50 brands and 65 markets, over five years. CreativeX scores each asset with a Creative Quality Score, plugged into the group's content production ecosystem (platforms, agencies, media partners, measurement teams). The AI checks whether assets follow the platforms' creative rules (framing, logo, duration, subtitles, etc.). Across 30 Mars campaigns measured on TikTok between 2023 and 2024, the assets that followed four or more creative rules, and showed a high quality score, outperformed: about 33 percent more NSV ROI on TikTok. The program is presented as generating media savings in the millions. This is an optimization case, not generation: the AI does not write the creative, it scores it and steers the budget toward what works.",
+ "points_cles": [
+  "AI scoring of the creative quality of ad assets, plugged into media production.",
+  "CreativeX platform (Creative Quality Score, vision), EssenceMediaCom agency.",
+  "About +33% NSV ROI on TikTok for high-scoring assets, 50 brands and 65 markets.",
+  "Evidence B, mixed-signals status: latest quantified evidence from 2023-2024."
+ ],
+ "resultats": [
+  {
+   "metrique": "Sales ROI (NSV) on TikTok, high-quality-score assets, across 30 campaigns 2023-2024"
   },
-  "pattern": "AI scoring of creative quality plugged into media production",
-  "etape_parcours": "discovery",
-  "objectif_business": "Enforce creative quality standards across dozens of brands and markets, so that the media budget works harder rather than funding poorly calibrated assets.",
-  "description": "Mars and its agency EssenceMediaCom relied on CreativeX to deploy a creative excellence program across 50 brands and 65 markets, over five years. CreativeX scores each asset with a Creative Quality Score, plugged into the group's content production ecosystem (platforms, agencies, media partners, measurement teams). The AI checks whether assets follow the platforms' creative rules (framing, logo, duration, subtitles, etc.). Across 30 Mars campaigns measured on TikTok between 2023 and 2024, the assets that followed four or more creative rules, and showed a high quality score, outperformed: about 33 percent more NSV ROI on TikTok. The program is presented as generating media savings in the millions. This is an optimization case, not generation: the AI does not write the creative, it scores it and steers the budget toward what works.",
-  "points_cles": [
-    "AI scoring of the creative quality of ad assets, plugged into media production.",
-    "CreativeX platform (Creative Quality Score, vision), EssenceMediaCom agency.",
-    "About +33% NSV ROI on TikTok for high-scoring assets, 50 brands and 65 markets.",
-    "Evidence B, mixed-signals status: latest quantified evidence from 2023-2024."
-  ],
-  "resultats": [
-    { "metrique": "Sales ROI (NSV) on TikTok, high-quality-score assets" },
-    { "metrique": "Program scale, 65 markets over 5 years" },
-    { "metrique": "Cost per completed view for +10 pts of creative score (CreativeX research 2024)" }
-  ],
-  "niveau_preuve": {
-    "justification": "Quantified case study from the measurement partner (CreativeX / Circana) naming Mars; interested source, hence B and not A, but quantified and multi-market."
-  },
-  "stack_technique": [
-    { "detail": "creative analytics platform that scores each asset via computer vision (Creative Quality Score) and checks creative rules by platform (framing, logo, duration, subtitles)" },
-    { "detail": "the scoring plugs into the production ecosystem and the platforms (TikTok, paid social, display) to read assets and performance" },
-    { "detail": "media agency, co-piloting the creative excellence program across 50 brands and 65 markets" },
-    { "detail": "partner measuring the link between creative score and sales ROI (NSV)" }
-  ],
-  "fonctionnement_operationnel": {
-    "cadence": "Continuous: each produced asset is scored before and during distribution, with a correction loop per campaign.",
-    "opere_par": "Mars media and brand teams, with EssenceMediaCom, on the CreativeX platform.",
-    "signal_pilote": "The Creative Quality Score and compliance with the platforms' creative guidelines. Without an asset feed connected to the platform, the scoring has nothing to measure and the program stops.",
-    "etapes": [
-      {
-        "etape": "Asset ingestion",
-        "detail": "The creatives pass through CreativeX, plugged into the platforms, agencies and media partners.",
-        "acteur": "media team / agency"
-      },
-      {
-        "etape": "Automatic scoring",
-        "detail": "The AI assigns a Creative Quality Score and checks compliance with creative rules by platform.",
-        "acteur": "AI (CreativeX)"
-      },
-      {
-        "etape": "Correction and arbitration",
-        "detail": "Weak assets are corrected or deprioritized; the budget concentrates on high-scoring creatives.",
-        "acteur": "brand / media teams"
-      },
-      {
-        "etape": "Impact measurement",
-        "detail": "Tracking of NSV ROI and cost per completed view to loop back on creative quality.",
-        "acteur": "measurement team / Circana"
-      }
-    ]
-  },
-  "replication": {
-    "prerequis_data": [
-      "centralized creative asset feed",
-      "access to media performance by platform"
-    ],
-    "prerequis_orga": [
-      "creative standards shared across brands and agencies",
-      "media governance able to enforce the fixes"
-    ],
-    "stack_possible": [
-      "creative analytics platform (CreativeX or equivalent)",
-      "connection to media platforms"
-    ],
-    "equipe": "1 creative excellence lead + the media agency + one brand liaison per brand",
-    "playbook": [
-      {
-        "action": "Centralize the asset feed of a pilot platform (for example TikTok) and connect it to the scoring",
-        "livrable": "Assets from a first batch of campaigns ingested into the platform"
-      },
-      {
-        "action": "Encode the creative rules to check by platform, aligned across brands and agencies",
-        "livrable": "Shared and configured guidelines reference set"
-      },
-      {
-        "action": "Score the campaign stock and read the gaps by brand",
-        "livrable": "Creative Quality Score baseline by brand and by platform"
-      },
-      {
-        "action": "Correct or deprioritize weak assets and concentrate the budget on high scores",
-        "livrable": "Campaigns relaunched with a compliant asset mix"
-      },
-      {
-        "action": "Measure the score/performance link (NSV ROI, cost per completed view) to decide on expansion",
-        "livrable": "Quantified read that justifies or not the multi-market rollout"
-      }
-    ],
-    "premiere_etape": "Connect the assets of one platform (e.g. TikTok) to the creative scoring and compare the performance of high- vs low-scoring assets."
-  },
-  "statut_vivant": {
-    "note": "Program described as spanning five years, so structurally live, but the latest public quantified evidence covers 2023-2024. To reconfirm with more recent data."
-  },
-  "transposable_ue": {
-    "note": "The system scores the creative quality of ad assets, without individual profiling; low GDPR exposure. Transposable as-is in the EU, where the program is already deployed via a multi-market media network."
+  {
+   "metrique": "Program scale, 65 markets over 5 years"
   }
+ ],
+ "niveau_preuve": {
+  "justification": "Quantified case study from the measurement partner (CreativeX / Circana) naming Mars; interested source, hence B and not A, but quantified and multi-market."
+ },
+ "stack_technique": [
+  {
+   "detail": "creative analytics platform that scores each asset via computer vision (Creative Quality Score) and checks creative rules by platform (framing, logo, duration, subtitles)"
+  },
+  {
+   "detail": "the scoring plugs into the production ecosystem and the platforms (TikTok, paid social, display) to read assets and performance"
+  },
+  {
+   "detail": "media agency, co-piloting the creative excellence program across 50 brands and 65 markets"
+  },
+  {
+   "detail": "partner measuring the link between creative score and sales ROI (NSV)"
+  }
+ ],
+ "fonctionnement_operationnel": {
+  "cadence": "Continuous: each produced asset is scored before and during distribution, with a correction loop per campaign.",
+  "opere_par": "Mars media and brand teams, with EssenceMediaCom, on the CreativeX platform.",
+  "signal_pilote": "The Creative Quality Score and compliance with the platforms' creative guidelines. Without an asset feed connected to the platform, the scoring has nothing to measure and the program stops.",
+  "etapes": [
+   {
+    "etape": "Asset ingestion",
+    "detail": "The creatives pass through CreativeX, plugged into the platforms, agencies and media partners.",
+    "acteur": "media team / agency"
+   },
+   {
+    "etape": "Automatic scoring",
+    "detail": "The AI assigns a Creative Quality Score and checks compliance with creative rules by platform.",
+    "acteur": "AI (CreativeX)"
+   },
+   {
+    "etape": "Correction and arbitration",
+    "detail": "Weak assets are corrected or deprioritized; the budget concentrates on high-scoring creatives.",
+    "acteur": "brand / media teams"
+   },
+   {
+    "etape": "Impact measurement",
+    "detail": "Tracking of NSV ROI and incremental sales to loop back on creative quality.",
+    "acteur": "measurement team / Circana"
+   }
+  ]
+ },
+ "replication": {
+  "prerequis_data": [
+   "centralized creative asset feed",
+   "access to media performance by platform"
+  ],
+  "prerequis_orga": [
+   "creative standards shared across brands and agencies",
+   "media governance able to enforce the fixes"
+  ],
+  "stack_possible": [
+   "creative analytics platform (CreativeX or equivalent)",
+   "connection to media platforms"
+  ],
+  "equipe": "1 creative excellence lead + the media agency + one brand liaison per brand",
+  "playbook": [
+   {
+    "action": "Centralize the asset feed of a pilot platform (for example TikTok) and connect it to the scoring",
+    "livrable": "Assets from a first batch of campaigns ingested into the platform"
+   },
+   {
+    "action": "Encode the creative rules to check by platform, aligned across brands and agencies",
+    "livrable": "Shared and configured guidelines reference set"
+   },
+   {
+    "action": "Score the campaign stock and read the gaps by brand",
+    "livrable": "Creative Quality Score baseline by brand and by platform"
+   },
+   {
+    "action": "Correct or deprioritize weak assets and concentrate the budget on high scores",
+    "livrable": "Campaigns relaunched with a compliant asset mix"
+   },
+   {
+    "action": "Measure the score/performance link (NSV ROI, incremental sales) to decide on expansion",
+    "livrable": "Quantified read that justifies or not the multi-market rollout"
+   }
+  ],
+  "premiere_etape": "Connect the assets of one platform (e.g. TikTok) to the creative scoring and compare the performance of high- vs low-scoring assets."
+ },
+ "statut_vivant": {
+  "note": "Program described as spanning five years, so structurally live, but the latest public quantified evidence covers 2023-2024. To reconfirm with more recent data."
+ },
+ "transposable_ue": {
+  "note": "The system scores the creative quality of ad assets, without individual profiling; low GDPR exposure. Transposable as-is in the EU, where the program is already deployed via a multi-market media network."
+ }
 }

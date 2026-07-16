@@ -13,13 +13,21 @@
 // Verdicts :
 //   OK          la citation est presente au mot pres dans la source
 //   ABSENTE     la source est lisible mais la citation N'Y EST PAS  <- defaut a haute confiance
-//   INJOIGNABLE la source n'a pas pu etre lue (403/paywall/timeout) -> non conclusif
+//   INJOIGNABLE la source n'a pas pu etre lue (403/paywall/timeout, PDF non extractible)
+//               -> non conclusif, ne JAMAIS corriger une fiche sur cette base
 //
-// Zero dependance externe.
+// Les PDF sont decompresses (zlib) et lus via leurs operateurs de texte. Une police en
+// sous-ensemble CID (texte en hexa, sans table ToUnicode) reste illisible : l'extraction est alors
+// marquee partielle et une citation non trouvee rend INJOIGNABLE, pas ABSENTE. Corollaire a retenir
+// avant de "reparer" quoi que ce soit : un ABSENTE se corrige en citant mieux la source, jamais en
+// supprimant une citation exacte que l'outil n'a pas su lire.
+//
+// Zero dependance externe (node:zlib est natif).
 
 import { readFileSync, readdirSync, writeFileSync, existsSync, mkdirSync } from 'node:fs';
 import { fileURLToPath } from 'node:url';
 import { dirname, join } from 'node:path';
+import { inflateSync, inflateRawSync } from 'node:zlib';
 
 const __dir = dirname(fileURLToPath(import.meta.url));
 const ROOT = join(__dir, '..');
@@ -49,12 +57,86 @@ function norm(s) {
     .replace(/\s+/g, ' ')
     .trim();
 }
+// Desechappe le texte livre a l'interieur d'un payload JSON (<, \", \/ ...).
+function unescapeEmbedded(s) {
+  return String(s)
+    .replace(/\\u003c/gi, '<').replace(/\\u003e/gi, '>').replace(/\\u0026/gi, '&')
+    .replace(/\\u00e9/gi, 'e').replace(/\\u2019/gi, "'").replace(/\\u201[cd]/gi, '"')
+    .replace(/\\"/g, '"').replace(/\\'/g, "'").replace(/\\\//g, '/').replace(/\\[nrt]/g, ' ');
+}
+// Deux angles morts corriges le 2026-07-16 : ils produisaient des ABSENTE a tort (la citation
+// etait bel et bien publiee, l'extracteur ne la voyait pas). La logique de comparaison
+// (sous-chaine litterale apres normalisation) est inchangee : on elargit le texte lu, pas le test.
+//  1. <script> : sur Wix / Next.js, le CORPS de l'article est livre dans un payload d'hydratation
+//     JSON. Le jeter en bloc rendait invisible le texte publie (ex. circana.com).
+//  2. alt="" : un resultat chiffre vit souvent dans un visuel, et son seul equivalent texte publie
+//     est l'attribut alt de l'image (ex. les nuggets Think with Google).
 function stripHtml(html) {
   return String(html)
-    .replace(/<script[\s\S]*?<\/script>/gi, ' ')
+    .replace(/<script[^>]*>([\s\S]*?)<\/script>/gi, (_, js) => ' ' + unescapeEmbedded(js) + ' ')
     .replace(/<style[\s\S]*?<\/style>/gi, ' ')
+    .replace(/<[^>]*\salt=(?:"([^"]*)"|'([^']*)')[^>]*>/gi, (_, d, s) => ' ' + (d ?? s ?? '') + ' ')
     .replace(/<[^>]+>/g, ' ');
 }
+// --- extraction PDF (zlib est natif : toujours zero dependance externe) ---
+// Un PDF stocke son texte dans des flux compresses. L'ancienne version se contentait de retirer
+// les octets non-ASCII du fichier brut : elle ne lisait donc AUCUN PDF compresse et rendait un
+// verdict ABSENTE sur des citations pourtant exactes. Ici on decompresse les flux et on lit les
+// operateurs de texte. Trois cas restent illisibles : les polices en sous-ensemble CID (texte en
+// hexa <...> Tj) sans leur table ToUnicode, les PDF chiffres (/Encrypt) dont zlib ne peut pas
+// decompresser les flux, et les documents dont la majorite des flux echouent a l'inflate. Dans ces
+// cas l'extraction est marquee `partial` et une citation non trouvee devient INJOIGNABLE, jamais
+// ABSENTE : on ne conclut pas d'un document qu'on n'a pas su lire.
+function pdfStreams(buf) {
+  const out = []; let failed = 0;
+  const S = Buffer.from('stream'), E = Buffer.from('endstream'); let i = 0;
+  while (true) {
+    const s = buf.indexOf(S, i); if (s < 0) break;
+    const e = buf.indexOf(E, s); if (e < 0) break;
+    let st = s + S.length;
+    if (buf[st] === 0x0d) st++;
+    if (buf[st] === 0x0a) st++;
+    const chunk = buf.subarray(st, e);
+    let d = null;
+    try { d = inflateSync(chunk); } catch { try { d = inflateRawSync(chunk); } catch { d = null; } }
+    // un flux qui ne se decompresse pas peut simplement etre stocke en clair : on le lit tel quel
+    if (d === null) failed++;
+    out.push(d ? d.toString('latin1') : chunk.toString('latin1'));
+    i = e + E.length;
+  }
+  return { streams: out, failed };
+}
+const PDF_ESC = { n: '\n', r: '\r', t: '\t', b: '\b', f: '\f', '(': '(', ')': ')', '\\': '\\' };
+function pdfUnescape(s) {
+  return s.replace(/\\(\d{1,3}|.)/gs, (_, g) => (/^\d+$/.test(g) ? String.fromCharCode(parseInt(g, 8)) : (PDF_ESC[g] ?? g)));
+}
+function pdfText(buf) {
+  let out = [], hexOps = 0;
+  const { streams, failed } = pdfStreams(buf);
+  // Un PDF chiffre (/Encrypt : le rapport annuel Zurich 2025 est en AES-256, lecture libre mais copie
+  // interdite) a des flux que zlib ne sait pas decompresser. L'extraction ne rend alors que du bruit
+  // binaire, qui contient assez de lettres pour passer le seuil ci-dessous : sans ce garde-fou, une
+  // citation pourtant exacte etait declaree ABSENTE.
+  const encrypted = buf.indexOf(Buffer.from('/Encrypt')) >= 0;
+  for (const c of streams) {
+    // (texte) Tj|'|"   et   [(a) -3 (b)] TJ  ; <hexa> Tj/TJ = texte CID non decode
+    const re = /\[((?:[^\[\]\\]|\\.)*)\]\s*TJ|\(((?:[^()\\]|\\.)*)\)\s*(?:Tj|'|")|<([0-9A-Fa-f\s]+)>\s*(?:Tj|TJ)/gs;
+    let m;
+    while ((m = re.exec(c))) {
+      if (m[1] !== undefined) {
+        let s = ''; const inner = /\(((?:[^()\\]|\\.)*)\)/gs; let p;
+        while ((p = inner.exec(m[1]))) s += pdfUnescape(p[1]);
+        if (/<[0-9A-Fa-f\s]+>/.test(m[1])) hexOps++;
+        if (s) out.push(s);
+      } else if (m[2] !== undefined) out.push(pdfUnescape(m[2]));
+      else hexOps++;
+    }
+  }
+  const text = out.join('\n');
+  const letters = (text.match(/[a-z]/gi) || []).length;
+  return { text, partial: hexOps > 0 || letters < 200 || encrypted || failed > streams.length / 2 };
+}
+
 // la citation peut etre stockee avec des guillemets englobants ou une ponctuation finale
 function variants(c) {
   const base = norm(c);
@@ -96,12 +178,15 @@ async function getText(url) {
       const buf = await res.arrayBuffer();
       let text = new TextDecoder('utf-8', { fatal: false }).decode(buf);
       if (ct.includes('pdf') || text.slice(0, 5) === '%PDF-') {
-        // extraction PDF grossiere : suffit pour un test de presence
-        text = text.replace(/[^\x20-\x7E\n]/g, ' ');
-      } else {
-        text = stripHtml(text);
+        const { text: t, partial } = pdfText(Buffer.from(buf));
+        return { ok: true, text: norm(t), partial };
       }
-      return { ok: true, text: norm(text) };
+      // Meme principe que pour les PDF : une page rendue cote client (Wix, Next, React) ne livre au
+      // fetcher qu'une coquille de navigation. On n'a pas lu l'article -> une citation non trouvee
+      // ne prouve rien. Seuil bas et volontairement prudent : sous ~1200 caracteres de prose, aucune
+      // page de cas client reelle n'existe (perfectcorp.com sert 60 Ko de shell generique).
+      const html = norm(stripHtml(text));
+      return { ok: true, text: html, partial: html.length < 1200 };
     } catch (e) {
       return { ok: false, why: String(e.name === 'AbortError' ? 'timeout' : e.message).slice(0, 40) };
     }
@@ -128,10 +213,24 @@ const rows = [];
 for (const it of items) {
   if (!it.url) { rows.push({ ...it, verdict: 'INJOIGNABLE', why: 'pas d url' }); continue; }
   if (LIMIT && !targetUrls.includes(it.url)) continue;
+  const test = (txt) => variants(it.citation).some(v => v.length > 8 && txt.includes(v));
   const r = await getText(it.url);
+  let found = r.ok && test(r.text);
+  // Repli sur archive_url : la source vit (schema : url = canonique, archive_url = la preuve), mais
+  // le lien a pu mourir, migrer ou passer en rendu client depuis la collecte. L'archive est ce que le
+  // collecteur a REELLEMENT lu : c'est elle qui fait foi pour juger la citation, pas l'etat du jour.
+  let via = '';
+  if (!found && it.archive) {
+    const a = await getText(it.archive);
+    if (a.ok && test(a.text)) { found = true; via = ' (via archive_url)'; }
+    else if (!found && a.ok && a.partial) { rows.push({ ...it, verdict: 'INJOIGNABLE', why: 'live + archive non extractibles' }); continue; }
+  }
+  if (found) { rows.push({ ...it, verdict: 'OK', why: via.trim() }); continue; }
   if (!r.ok) { rows.push({ ...it, verdict: 'INJOIGNABLE', why: r.why }); continue; }
-  const found = variants(it.citation).some(v => v.length > 8 && r.text.includes(v));
-  rows.push({ ...it, verdict: found ? 'OK' : 'ABSENTE', why: found ? '' : 'non trouvee dans la source lue' });
+  // Une correspondance positive reste fiable meme sur une extraction partielle. En revanche, ne pas
+  // trouver une citation dans un document qu'on n'a lu qu'en partie ne prouve rien : c'est INJOIGNABLE.
+  if (r.partial) { rows.push({ ...it, verdict: 'INJOIGNABLE', why: 'source non extractible (pdf chiffre/CID, ou page rendue cote client)' }); continue; }
+  rows.push({ ...it, verdict: 'ABSENTE', why: 'non trouvee dans la source lue' });
 }
 
 const by = (v) => rows.filter(r => r.verdict === v);
