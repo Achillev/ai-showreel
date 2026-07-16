@@ -116,8 +116,8 @@
     }
   ],
   "niveau_preuve": {
-    "niveau": "C",
-    "justification": "Chiffres publies par Nestle (communique officiel et citation d'un dirigeant), corrobores par la presse specialisee ; pas de detail isole en resultats financiers, donc C."
+    "niveau": "B",
+    "justification": "Les chiffres publies par Nestle (S1) sont repris et confirmes par les deux plateformes qui portent le service : Microsoft, qui l'heberge, redonne les 4 000 jumeaux numeriques, la cible de 10 000, les 45 studios, les 250 experts en 7 hubs et les 70% de temps et de cout economises sur la mise a l'echelle (S4) ; NVIDIA, dont Omniverse fait tourner la creation, confirme les 70% (S5). Etudes de cas plateforme chiffrees et concordantes avec la marque, donc B. Pas de detail isole en resultats financiers, ce qui exclut A."
   },
   "dates": {
     "lancement": "2025-06",
@@ -156,6 +156,24 @@
       "url": "https://consumergoods.com/nestle-lvmh-loreal-ramp-content-creation-ai-powered-digital-twins",
       "date_publication": "2025",
       "consulte_le": "2026-07-11"
+    },
+    {
+      "ref": "S4",
+      "type": "customer_story_plateforme",
+      "fiabilite": "T2_officiel_interesse",
+      "titre": "The next wave of AI for content creation includes digital twins (Microsoft Cloud Blog)",
+      "url": "https://www.microsoft.com/en-us/industry/blog/retail/2025/07/15/the-next-wave-of-ai-for-content-creation-includes-digital-twins/",
+      "date_publication": "2025-07-15",
+      "consulte_le": "2026-07-16"
+    },
+    {
+      "ref": "S5",
+      "type": "customer_story_plateforme",
+      "fiabilite": "T2_officiel_interesse",
+      "titre": "Into the Omniverse: How Global Brands Are Scaling Personalized Advertising With AI and 3D Content Generation (NVIDIA)",
+      "url": "https://blogs.nvidia.com/blog/personalized-advertising-ai-3d-content-generation/",
+      "date_publication": "2025-07-23",
+      "consulte_le": "2026-07-16"
     }
   ],
   "fonctionnement_operationnel": {

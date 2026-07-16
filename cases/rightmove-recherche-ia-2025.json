@@ -89,8 +89,8 @@
     }
   ],
   "niveau_preuve": {
-    "niveau": "C",
-    "justification": "Communiques officiels Rightmove (T1) et presse specialisee britannique concordants sur le deploiement, avec une preuve d'echelle (part du temps passe, base de donnees de 25 ans). Pas de metrique d'effet isolee, d'ou un niveau C."
+    "niveau": "A",
+    "justification": "Les resultats annuels audites 2025 de Rightmove plc (RNS du 27 fevrier 2026) reprennent mot pour mot le chiffre d'echelle de la fiche (over 80% of all time spent on property portals is on Rightmove) et citent Style with AI et AI Keywords parmi les features consommateurs lancees dans l'annee, plus la recherche conversationnelle construite avec Google Cloud. Le chiffre et le deploiement sont donc portes par un document de resultats financiers, pas seulement par des communiques et de la presse. Toujours pas de metrique d'effet isolee sur les outils IA eux-memes."
   },
   "dates": {
     "lancement": "2025 (AI Keywords et Style with AI) ; 2026-02-13 (recherche conversationnelle Use AI, beta)",
@@ -129,6 +129,15 @@
       "url": "https://www.rightmove.co.uk/press-centre/rightmove-launches-next-phase-of-ai-powered-property-search/",
       "date_publication": "2026-02",
       "consulte_le": "2026-07-11"
+    },
+    {
+      "ref": "S4",
+      "type": "document_officiel_sec",
+      "fiabilite": "T1_primaire",
+      "titre": "Rightmove plc - Full Year Results for the year ended 31 December 2025 (resultats annuels audites, RNS)",
+      "url": "https://plc.rightmove.co.uk/content/uploads/2026/02/Rightmove-RNS-27.02.26.pdf",
+      "date_publication": "2026-02-27",
+      "consulte_le": "2026-07-16"
     }
   ],
   "fonctionnement_operationnel": {

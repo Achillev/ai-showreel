@@ -19,18 +19,32 @@
   "objectif_business": "Move away from advertising production designed for television first and feed the digital channels with product visuals, faster and cheaper, without a systematic reshoot.",
   "description": "Unilever is building a digital twin of each product: a single 3D source that holds the variants, the packaging, and the legal text in every language. From that source, teams generate and adapt visuals for paid social, programmatic display, and e-commerce listings without starting from a photo shoot. The Beauty AI Studio, built with The Brandtech Group, serves brands such as Dove Intensive Repair, TRESemme Lamellar Shine, and Vaseline Gluta Hya, and runs across 18 markets. The system does not produce images of people: it works the product, the background, and the staging. Unilever puts the whole at production cost halved and production twice as fast overall, with, on the beauty scope, gains on the order of 55 percent savings and 65 percent shorter turnaround.",
   "resultats": [
-    { "metrique": "Beauty production savings, product content 65% faster" },
-    { "metrique": "Content production overall, at half the cost" },
-    { "metrique": "Video completion rate and advertising click-through rate" }
+    {
+      "metrique": "Beauty production savings, product content 65% faster"
+    },
+    {
+      "metrique": "Content production overall, at half the cost"
+    },
+    {
+      "metrique": "Video completion rate and advertising click-through rate"
+    }
   ],
   "niveau_preuve": {
-    "justification": "Figures stated by the brand (Chief Growth and Marketing Officer) and echoed by several established marketing press titles; no line isolable in the financial results, hence C rather than A."
+    "justification": "The NVIDIA case study (S4), the platform behind the initiative via Omniverse and OpenUSD, quantifies the same result as the brand: product imagery created twice as fast and at half the cost of the traditional route, with 2x on workflows and -50% on production costs in a summary callout. The central figure of the case is therefore corroborated by the vendor in addition to the Unilever press release and the marketing press. The figures of 55% savings, 65% gain in turnaround time and the doubling of the advertising rates remain, for their part, stated by the brand. No isolable line in the financial results, hence B and not A."
   },
   "stack_technique": [
-    { "detail": "Platform to create the 3D digital twins of the products (variants, packaging, per-language text)." },
-    { "detail": "3D description framework used as the format for the digital twins." },
-    { "detail": "genAI production line for beauty, built with Brandtech, in service across 18 markets (Dove, TRESemme, Vaseline)." },
-    { "detail": "Generation of scenes, backgrounds, and variations from the digital twin, without images of people; exact models not publicly named." }
+    {
+      "detail": "Platform to create the 3D digital twins of the products (variants, packaging, per-language text)."
+    },
+    {
+      "detail": "3D description framework used as the format for the digital twins."
+    },
+    {
+      "detail": "genAI production line for beauty, built with Brandtech, in service across 18 markets (Dove, TRESemme, Vaseline)."
+    },
+    {
+      "detail": "Generation of scenes, backgrounds, and variations from the digital twin, without images of people; exact models not publicly named."
+    }
   ],
   "fonctionnement_operationnel": {
     "cadence": "Continuous, by campaign wave and by product launch; visuals adapted on demand once the digital twin is created.",

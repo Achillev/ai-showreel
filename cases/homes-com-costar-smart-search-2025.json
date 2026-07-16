@@ -61,8 +61,8 @@
     }
   ],
   "niveau_preuve": {
-    "niveau": "C",
-    "justification": "Declarations du CEO de CoStar rapportees par la presse specialisee (Real Estate News) et communiques officiels CoStar concordants. Metrique d'engagement qualitative et audience revendiquee, sans chiffrage precis de l'effet IA, d'ou un niveau C."
+    "niveau": "A",
+    "justification": "Les deux resultats de la fiche sont corrobores par des documents financiers CoStar du 24 fevrier 2026. Le communique de resultats annuels 2025 depose en Form 8-K reprend a l'identique les 108 millions de visiteurs uniques mensuels moyens en 2025. L'earnings call du meme jour chiffre l'effet du mode IA rapporte qualitativement par la presse : 16 minutes 50 passees sur le site contre 4 minutes 24 pour les non-utilisateurs, et sept fois plus de leads email soumis."
   },
   "dates": {
     "lancement": "2025-10-14 (Smart Search) ; 2026-02 (Homes AI)",
@@ -101,6 +101,24 @@
       "url": "https://www.costargroup.com/press-room/2025/homescom-launches-smart-search-feature-enabling-users-search-way",
       "date_publication": "2025-10-14",
       "consulte_le": "2026-07-11"
+    },
+    {
+      "ref": "S4",
+      "type": "document_officiel_sec",
+      "fiabilite": "T1_primaire",
+      "titre": "CoStar Group Full Year 2025 results - communique de resultats depose en Form 8-K (exhibit 99.1)",
+      "url": "https://www.sec.gov/Archives/edgar/data/1057352/000105735226000012/q42025earningspressrelea.htm",
+      "date_publication": "2026-02-24",
+      "consulte_le": "2026-07-16"
+    },
+    {
+      "ref": "S5",
+      "type": "earnings_call",
+      "fiabilite": "T1_primaire",
+      "titre": "CoStar Group (CSGP) Q4 2025 earnings call - transcription",
+      "url": "https://stockanalysis.com/stocks/csgp/transcripts/393568-q4-2025/",
+      "date_publication": "2026-02-24",
+      "consulte_le": "2026-07-16"
     }
   ],
   "fonctionnement_operationnel": {

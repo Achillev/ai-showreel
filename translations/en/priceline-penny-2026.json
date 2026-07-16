@@ -17,21 +17,37 @@
   "pattern": "agentic genAI booking agent",
   "etape_parcours": "purchase",
   "stack_technique": [
-    { "detail": "Claude models for Penny's conversational reasoning and agentic planning (multi-city comparison, trade-offs)." },
-    { "detail": "Real-time voice block for Penny's voice interface." },
-    { "detail": "Hosting for Priceline's AI stack." },
-    { "detail": "Deals engine, traveler preference memory, real-time inventory and pricing, booking flow integrated into the conversation." }
+    {
+      "detail": "Claude models for Penny's conversational reasoning and agentic planning (multi-city comparison, trade-offs)."
+    },
+    {
+      "detail": "Real-time voice block for Penny's voice interface."
+    },
+    {
+      "detail": "Hosting for Priceline's AI stack."
+    },
+    {
+      "detail": "Deals engine, traveler preference memory, real-time inventory and pricing, booking flow integrated into the conversation."
+    }
   ],
   "objectif_business": "Move travel search from a stack of filters and tabs to a single conversation where the traveler describes their need and the agent compares, weighs trade-offs, and books.",
   "description": "Penny is Priceline's AI travel agent. In 2026 it becomes agentic: it understands a complex request (comparing flights to several cities over a given week), evaluates price and availability live, surfaces the trade-offs, and lets travelers book without leaving the conversation. The reasoning relies on Anthropic's Claude models on the Priceline stack hosted on Google Cloud, with OpenAI for voice. Priceline positions Penny on preference memory and its deals technology, not just the model.",
   "resultats": [
-    { "metrique": "Average time saved per trip, vs contacting customer service" },
-    { "metrique": "Engagement and conversion of Penny users" },
-    { "metrique": "Experience comparison (Evercore ISI analysis)" },
-    { "metrique": "Signal in Booking Holdings earnings (Q1 2026)" }
+    {
+      "metrique": "Average time saved per trip, vs contacting customer service"
+    },
+    {
+      "metrique": "Engagement and conversion of Penny users"
+    },
+    {
+      "metrique": "Experience comparison (Evercore ISI analysis)"
+    },
+    {
+      "metrique": "Signal in Booking Holdings earnings (Q1 2026)"
+    }
   ],
   "niveau_preuve": {
-    "justification": "Quantified official Priceline press release, a concordant mention in the Booking Holdings Q1 2026 earnings call, and specialist press coverage (Skift); the hard public figure (time saved) remains a brand claim."
+    "justification": "The official transcript of the Booking Holdings earnings call of 28 April 2026, published on the group's investor site (S4), contains word for word the increase observed among Penny users versus non-users, and CEO Glenn Fogel confirms there a conversion gain during the Q&A. The primary document replaces the press coverage on this point. Caveat to keep in mind: the earnings call describes the gain without quantifying it and speaks of a very small sample; the figure for time saved per trip remains, for its part, a brand claim (Priceline press release)."
   },
   "fonctionnement_operationnel": {
     "cadence": "Real-time on every conversation, with continuous evaluation of price and availability.",

@@ -84,8 +84,8 @@
     }
   ],
   "niveau_preuve": {
-    "niveau": "C",
-    "justification": "Trois sources presse concordantes (Glossy, PYMNTS, CX Dive) citent Ulta nommement avec des chiffres coherents entre eux et avec les resultats financiers de la marque (plus de 95% des ventes issues des membres, base de fidelite de 44 a 47 millions selon la periode). Convergence de sources etablies."
+    "niveau": "A",
+    "justification": "Ulta chiffre elle-meme le socle du cas dans ses resultats financiers. Le 10-K de l'exercice 2025, depose a la SEC le 26 mars 2026, indique environ 95% des ventes issues des membres et plus de 46 millions de membres a la cloture, et rattache explicitement cette base a la personnalisation via son CRM (S4). L'earnings call du 12 mars 2026 donne le compte de 46,7 millions de membres actifs, en hausse de 5% sur un an (S5). Les trois sources presse (S1 a S3) restent la couche qui documente l'usage de l'IA sur cette donnee."
   },
   "dates": {
     "lancement": "Programme de fidelite lance en 2014 (Ultamate Rewards), renomme Ulta Beauty Rewards en 2024 ; personnalisation par IA amplifiee a partir de 2024",
@@ -124,6 +124,24 @@
       "url": "https://www.customerexperiencedive.com/news/ulta-ai-personalization-loyalty-program/814711/",
       "date_publication": "2026-03-13",
       "consulte_le": "2026-07-11"
+    },
+    {
+      "ref": "S4",
+      "type": "document_officiel_sec",
+      "fiabilite": "T1_primaire",
+      "titre": "Ulta Beauty, Inc. - Form 10-K, exercice clos le 31 janvier 2026 (fiscal 2025)",
+      "url": "https://www.sec.gov/Archives/edgar/data/1403568/000110465926035243/ulta-20260131x10k.htm",
+      "date_publication": "2026-03-26",
+      "consulte_le": "2026-07-16"
+    },
+    {
+      "ref": "S5",
+      "type": "earnings_call",
+      "fiabilite": "T1_primaire",
+      "titre": "Ulta Beauty (ULTA) Q4 2025 Earnings Call Transcript",
+      "url": "https://www.fool.com/earnings/call-transcripts/2026/03/12/ulta-beauty-ulta-q4-2025-earnings-transcript/",
+      "date_publication": "2026-03-12",
+      "consulte_le": "2026-07-16"
     }
   ],
   "fonctionnement_operationnel": {

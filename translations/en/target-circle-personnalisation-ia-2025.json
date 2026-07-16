@@ -20,18 +20,32 @@
   "description": "Target Circle is Target's loyalty program, with more than 100 million members. Circle members spend on average three times more than non-members, and members of the paid Circle 360 subscription (unlimited same-day delivery) seven times more. Target backs this base with AI personalization: the retailer reports having multiplied the volume of personalized offers by four year over year, and its AI engine aligns offers tailored to each customer's level. The brand has also deployed a genAI companion in stores, used more than 50,000 times by teams with an average response time under a minute, and a conversational search that CEO Michael Fiddelke compares to a personal shopper. He attributes the generation of billions of dollars in incremental sales to personalization.",
   "points_cles": [],
   "resultats": [
-    { "metrique": "Target Circle program members" },
-    { "metrique": "Overspend of Circle 360 members vs non-members" },
-    { "metrique": "Volume of personalized offers year over year" },
-    { "metrique": "Incremental sales attributed to personalization (CEO statement)" }
+    {
+      "metrique": "Target Circle program members"
+    },
+    {
+      "metrique": "Overspend of Circle 360 members vs non-members"
+    },
+    {
+      "metrique": "Volume of personalized offers year over year"
+    },
+    {
+      "metrique": "Incremental sales attributed to personalization (CEO statement)"
+    }
   ],
   "niveau_preuve": {
-    "justification": "Two business press sources covering Target's quarterly results (PYMNTS, Grocery Doppio) name the brand, with concordant loyalty and personalization figures and statements from named executives (CEO, Chief Guest Experience Officer). Figures drawn from results communications."
+    "justification": "The official transcript of the Target earnings call of 3 March 2026 (2026 Financial Community Meeting, published by Target) carries the key figures: the CEO states there that Circle members spend 3 times more, Circle 360 subscribers seven times more, and that the AI personalization engine built on Target Circle generates billions of dollars in incremental sales. The brand quantifies this itself, in results communications. The figures for the member base (more than 100 million) and for the volume of personalized offers (x4) remain covered by the business press (PYMNTS, Grocery Doppio)."
   },
   "stack_technique": [
-    { "detail": "In-house AI engine that aligns offers at the level of each member; volume of personalized offers multiplied by four in a year." },
-    { "detail": "Conversational search compared to a personal shopper and a genAI companion used more than 50,000 times by store teams. Underlying models not disclosed." },
-    { "detail": "Loyalty base of more than 100 million members, source of the first-party data (purchases, behavior) that feeds the engine." }
+    {
+      "detail": "In-house AI engine that aligns offers at the level of each member; volume of personalized offers multiplied by four in a year."
+    },
+    {
+      "detail": "Conversational search compared to a personal shopper and a genAI companion used more than 50,000 times by store teams. Underlying models not disclosed."
+    },
+    {
+      "detail": "Loyalty base of more than 100 million members, source of the first-party data (purchases, behavior) that feeds the engine."
+    }
   ],
   "fonctionnement_operationnel": {
     "cadence": "Near real time for offer delivery and conversational search, with a loyalty base updated continuously",

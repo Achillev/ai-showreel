@@ -1,273 +1,282 @@
 {
-  "type_fiche": "succes",
-  "id": "t-mobile-intentcx-openai-decisioning-2024",
-  "marque": "T-Mobile US",
-  "groupe": "Deutsche Telekom (T-Mobile US)",
-  "industrie": "telco",
-  "marches_deploiement": [
-    "Etats-Unis (premiers elements en production, deploiement progressif depuis 2025)"
+ "type_fiche": "succes",
+ "id": "t-mobile-intentcx-openai-decisioning-2024",
+ "marque": "T-Mobile US",
+ "groupe": "Deutsche Telekom (T-Mobile US)",
+ "industrie": "telco",
+ "marches_deploiement": [
+  "Etats-Unis (premiers elements en production, deploiement progressif depuis 2025)"
+ ],
+ "transposable_ue": {
+  "flag": "oui_avec_adaptations",
+  "note": "Plateforme de decisioning branchee sur les donnees client en temps reel qui peut executer des actions au nom du client avec sa permission. En UE, l'article 22 RGPD (decision automatisee) et l'AI Act encadrent fortement ce type d'agent : consentement, droit a l'intervention humaine, transparence. Transposable mais avec un cadrage juridique lourd."
+ },
+ "metier": "Service client / decisioning et next-best-action",
+ "marque_linkedin": "https://www.linkedin.com/company/t-mobile",
+ "axes": {
+  "levier": "retention",
+  "touchpoints": [
+   "parcours de service et de care",
+   "flux d'upgrade et de souscription (app T-Life)",
+   "actions proactives sur le compte client"
   ],
-  "transposable_ue": {
-    "flag": "oui_avec_adaptations",
-    "note": "Plateforme de decisioning branchee sur les donnees client en temps reel qui peut executer des actions au nom du client avec sa permission. En UE, l'article 22 RGPD (decision automatisee) et l'AI Act encadrent fortement ce type d'agent : consentement, droit a l'intervention humaine, transparence. Transposable mais avec un cadrage juridique lourd."
-  },
-  "metier": "Service client / decisioning et next-best-action",
-  "marque_linkedin": "https://www.linkedin.com/company/t-mobile",
-  "axes": {
-    "levier": "retention",
-    "touchpoints": [
-      "parcours de service et de care",
-      "flux d'upgrade et de souscription (app T-Life)",
-      "actions proactives sur le compte client"
-    ],
-    "etape_parcours": "post-achat / service et fidelisation",
-    "famille": "prediction",
-    "pattern": "Plateforme de decisioning pilotee par l'intention : un moteur lit l'intention et le sentiment client en temps reel, decide de l'action suivante et peut l'executer, au-dela d'un simple chatbot",
-    "type_ia": [
-      "LLM et agents (OpenAI)",
-      "detection d'intention et de sentiment en temps reel",
-      "moteur de decisioning / next-best-action"
-    ],
-    "plateforme_stack": [
-      "OpenAI (modeles et support recherche dedie)",
-      "systemes de care et de transaction T-Mobile",
-      "donnees d'interaction et de reseau en temps reel"
-    ],
-    "objectif_metrique": [
-      "volume d'appels au service client",
-      "taux de rappel / repetition",
-      "part des parcours traites en digital"
-    ]
-  },
-  "implementation": "custom",
-  "objectif_business": "Comprendre l'intention du client en direct, proposer ou executer la bonne action, et faire baisser le volume d'appels au service client tout en gardant le client autonome.",
-  "description": "IntentCX est la plateforme de decisioning que T-Mobile construit avec OpenAI, annoncee en septembre 2024. Elle est concue pour comprendre l'intention et le sentiment du client en temps reel, proposer une resolution et prendre des actions de facon autonome avec la permission du client, en s'appuyant sur des milliards de points de donnees d'interactions reelles. T-Mobile la presente comme allant au-dela des chatbots et lui a fixe un objectif interne de reduction de 75 pour cent des appels au service client. Le deploiement est progressif : fin 2025, la direction indique que les premiers elements du programme touchent les clients, notamment dans les flux d'upgrade, ou 75 pour cent des upgrades d'iPhone pendant la fenetre de precommande sont passes par les canaux digitaux. Les resultats a l'echelle de la plateforme ne sont pas encore publies : ce cas documente un deploiement reel en phase precoce, pas encore un impact churn ou volume chiffre et attribue.",
-  "fonctionnement_operationnel": {
-    "cadence": "Temps reel : lecture de l'intention et decision au fil de l'interaction. Les modeles sont optimises avec un support recherche dedie d'OpenAI.",
-    "opere_par": "Les equipes care et digital de T-Mobile pour l'exploitation et les parcours, OpenAI pour les modeles et l'optimisation, une equipe data pour la connexion aux systemes de care et de transaction.",
-    "signal_pilote": "La justesse de la detection d'intention et l'acces temps reel aux systemes de transaction. Si l'intention est mal lue ou l'action mal executee sans supervision, le risque n'est plus une mauvaise reponse mais une mauvaise action sur le compte.",
-    "etapes": [
-      {
-        "etape": "Alimenter le moteur en donnees d'interaction",
-        "detail": "Des milliards de points issus des interactions reelles, de l'experience reseau et des services nourrissent la comprehension du client.",
-        "acteur": "Equipe data"
-      },
-      {
-        "etape": "Lire l'intention en temps reel",
-        "detail": "Le moteur detecte l'intention et le sentiment pendant l'interaction pour decider de la meilleure action suivante.",
-        "acteur": "IA / OpenAI"
-      },
-      {
-        "etape": "Proposer ou executer, avec permission",
-        "detail": "L'agent resout, ou execute une action sur le compte avec l'accord du client, plutot que de renvoyer vers un conseiller.",
-        "acteur": "IA sous controle client"
-      },
-      {
-        "etape": "Deployer par flux, en commencant par l'upgrade",
-        "detail": "Le rollout est progressif ; les flux d'upgrade et de souscription sont parmi les premiers a passer en digital.",
-        "acteur": "Equipes care / digital"
-      }
-    ]
-  },
-  "resultats": [
-    {
-      "metrique": "Part des upgrades iPhone en digital (fenetre de precommande)",
-      "valeur": "75%",
-      "citation_exacte": "75% of iPhone upgrades during T-Mobile's preorder window were completed through digital channels",
-      "source_ref": "S2"
-    },
-    {
-      "metrique": "Objectif interne de reduction des appels care (non atteint)",
-      "valeur": "-75%",
-      "citation_exacte": "internal goal to reduce customer service calls by 75%",
-      "source_ref": "S2"
-    }
+  "etape_parcours": "post-achat / service et fidelisation",
+  "famille": "prediction",
+  "pattern": "Plateforme de decisioning pilotee par l'intention : un moteur lit l'intention et le sentiment client en temps reel, decide de l'action suivante et peut l'executer, au-dela d'un simple chatbot",
+  "type_ia": [
+   "LLM et agents (OpenAI)",
+   "detection d'intention et de sentiment en temps reel",
+   "moteur de decisioning / next-best-action"
   ],
-  "niveau_preuve": {
-    "niveau": "C",
-    "justification": "Partenariat et perimetre documentes par le communique officiel T-Mobile (T1) et le suivi du rollout par la presse specialisee (T3) citant nommement la direction. Mais les chiffres publics sont soit une capacite annoncee, soit un objectif interne, soit une adoption digitale non strictement attribuee a IntentCX. Deploiement reel en phase precoce, impact a l'echelle non encore prouve : niveau volontairement plafonne."
-  },
-  "dates": {
-    "lancement": "Annonce septembre 2024 ; premiers elements en production courant 2025",
-    "derniere_confirmation_activite": "2025-10 (direction T-Mobile : premiers elements touchant les clients, flux d'upgrade en digital)",
-    "verifie_le": "2026-07-11",
-    "revoir_apres": "2026-11-11"
-  },
-  "statut_vivant": {
-    "statut": "signaux_mitiges",
-    "note": "Le partenariat OpenAI est actif et les premiers elements touchent les clients fin 2025, mais IntentCX reste en montee en charge : pas de resultat a l'echelle de la plateforme publie. A revoir plus tot que les cas confirmes."
-  },
-  "sources": [
-    {
-      "ref": "S1",
-      "type": "blog_officiel",
-      "titre": "T-Mobile and OpenAI Join Forces to Revolutionize the Customer Experience with IntentCX",
-      "url": "https://www.t-mobile.com/news/business/t-mobile-launches-intentcx-with-openai",
-      "date_publication": "2024-09-18",
-      "consulte_le": "2026-07-11",
-      "fiabilite": "T1_primaire"
-    },
-    {
-      "ref": "S2",
-      "type": "presse",
-      "titre": "T-Mobile sets its sights on eliminating the pain of signups and upgrades",
-      "url": "https://www.customerexperiencedive.com/news/t-mobile-eliminating-pain-signups-upgrades/803797/",
-      "date_publication": "2025-10-27",
-      "consulte_le": "2026-07-11",
-      "fiabilite": "T3_presse_etablie"
-    },
-    {
-      "ref": "S3",
-      "type": "presse",
-      "titre": "T-Mobile, OpenAI to equip customer care agents with AI platform",
-      "url": "https://www.customerexperiencedive.com/news/t-mobile-openai-customer-service-agents-generative-ai-intentcx/727572/",
-      "date_publication": "2024-09-19",
-      "consulte_le": "2026-07-11",
-      "fiabilite": "T3_presse_etablie"
-    }
+  "plateforme_stack": [
+   "OpenAI (modeles et support recherche dedie)",
+   "systemes de care et de transaction T-Mobile",
+   "donnees d'interaction et de reseau en temps reel"
   ],
-  "schema_flow": {
-    "statut": "approche_type",
-    "noeuds": [
-      {
-        "id": "data",
-        "role_generique": "data_source",
-        "label": "Milliards de points d'interaction, reseau et services (temps reel)"
-      },
-      {
-        "id": "engine",
-        "role_generique": "modele_ia",
-        "label": "Moteur de decisioning pilote par l'intention (IntentCX)",
-        "outil_documente": "OpenAI (modeles + optimisation dediee)"
-      },
-      {
-        "id": "care",
-        "role_generique": "site_app",
-        "label": "Systemes de care et de transaction (upgrade, souscription)"
-      },
-      {
-        "id": "client",
-        "role_generique": "canal_conversationnel",
-        "label": "Client, qui autorise ou non l'action"
-      }
-    ],
-    "liens": [
-      [
-        "data",
-        "engine"
-      ],
-      [
-        "engine",
-        "care"
-      ],
-      [
-        "care",
-        "client",
-        "action proposee ou executee avec permission"
-      ],
-      [
-        "client",
-        "engine",
-        "reaction -> reevaluation de l'intention"
-      ]
-    ]
-  },
-  "replication": {
-    "statut_epistemique": "infere",
-    "prerequis_data": [
-      "Donnees d'interaction et de compte accessibles en temps reel",
-      "Systemes de transaction ouverts a des actions pilotees par l'IA",
-      "Consentement client et tracage des actions (RGPD / article 22 en UE)"
-    ],
-    "prerequis_orga": [
-      "Equipe capable d'operer un agent qui agit, pas seulement qui repond",
-      "Gouvernance forte du perimetre d'action autonome et de la supervision humaine"
-    ],
-    "stack_possible": [
-      "LLM et agents (OpenAI, Anthropic, ou equivalent) avec support d'optimisation",
-      "Couche de decisioning / next-best-action branchee sur le CRM et les back-offices",
-      "Detection d'intention et de sentiment en temps reel"
-    ],
-    "premiere_etape": "Isoler un flux a fort volume et faible risque (ex. upgrade), y limiter le perimetre d'action autonome sous permission client, et mesurer la deflection d'appels contre un groupe temoin avant d'elargir.",
-    "playbook": [
-      {
-        "action": "Cadrer la data : inventorier les donnees d'interaction accessibles en temps reel et les systemes de transaction ouvrables a un agent.",
-        "livrable": "Carte des flux de donnees et des API de transaction, avec les trous a combler."
-      },
-      {
-        "action": "Choisir un flux a fort volume et faible risque (ex. upgrade), definir le perimetre d'action autonome, le consentement client et le cadre juridique (RGPD article 22).",
-        "livrable": "Spec du perimetre d'action et dossier juridique valide par le DPO."
-      },
-      {
-        "action": "Construire l'agent (detection d'intention plus decisioning), d'abord en lecture seule, puis en execution supervisee sur le flux pilote.",
-        "livrable": "Agent en pre-production, chaque action tracee et reversible."
-      },
-      {
-        "action": "Passer le flux pilote en production sous permission client et mesurer la deflection d'appels contre un groupe temoin.",
-        "livrable": "Resultats du test controle : deflection, taux de rappel, incidents."
-      },
-      {
-        "action": "Elargir flux par flux en gardant la supervision humaine sur les actions nouvelles.",
-        "livrable": "Roadmap de rollout par flux avec seuils de qualite a franchir."
-      }
-    ],
-    "equipe": "1 PM + 3-5 ingenieurs (ML/backend) + 1 data engineer + 1 juriste/DPO pour la decision automatisee, adosses aux equipes care pour la conception des parcours."
-  },
-  "seo": {
-    "slug": "t-mobile-intentcx-openai-decisioning-intention-2024",
-    "title": "T-Mobile : IntentCX avec OpenAI, decisioning par l'intention - rollout progressif (2024)",
-    "meta_description": "IntentCX, la plateforme de decisioning de T-Mobile avec OpenAI, lit l'intention client en temps reel et execute des actions. Rollout precoce depuis 2025.",
-    "resume_citable": "T-Mobile construit avec OpenAI IntentCX, une plateforme de decisioning qui lit l'intention et le sentiment client en temps reel pour proposer ou executer une action, avec un objectif interne de -75% d'appels care ; les premiers elements touchent les clients depuis 2025, sans resultat a l'echelle encore publie.",
-    "faq": [
-      {
-        "q": "IntentCX est-il pleinement deploye ?",
-        "a": "Non. Les premiers elements touchent les clients depuis 2025 (flux d'upgrade), mais la plateforme reste en montee en charge et aucun impact churn ou volume a l'echelle n'est publie."
-      },
-      {
-        "q": "Pourquoi ce cas est-il classe en niveau de preuve C ?",
-        "a": "Le perimetre est documente par T-Mobile et suivi par la presse, mais les chiffres publics sont des capacites, un objectif interne ou une adoption digitale non attribuee strictement a IntentCX."
-      }
-    ]
-  },
-  "agences": [
-    {
-      "nom": "OpenAI",
-      "role": "Partenaire technologique : modeles et optimisation dediee",
-      "source_ref": "S1"
-    }
-  ],
-  "intervenants": [
-    {
-      "nom": "Mike Sievert",
-      "role": "President et CEO puis vice-chairman de T-Mobile (cite sur le rollout)",
-      "source_ref": "S2"
-    }
-  ],
-  "logo_domain": "t-mobile.com",
-  "stack_technique": [
-    {
-      "nom": "OpenAI",
-      "categorie": "llm",
-      "detail": "Modeles OpenAI au coeur d'IntentCX, avec un support recherche dedie pour l'optimisation. Le modele exact n'est pas nomme publiquement.",
-      "url": "https://openai.com"
-    },
-    {
-      "nom": "IntentCX",
-      "categorie": "plateforme",
-      "detail": "Plateforme de decisioning construite par T-Mobile avec OpenAI : lecture d'intention et de sentiment en temps reel, next-best-action, execution d'actions avec la permission du client.",
-      "url": "https://www.t-mobile.com"
-    },
-    {
-      "nom": "Systemes de care et de transaction T-Mobile",
-      "categorie": "infra",
-      "detail": "Back-offices d'upgrade et de souscription (dont l'app T-Life) ouverts a l'execution d'actions par l'agent.",
-      "url": "https://www.t-mobile.com"
-    },
-    {
-      "nom": "Donnees d'interaction et de reseau temps reel",
-      "categorie": "infra",
-      "detail": "Milliards de points issus des interactions reelles, de l'experience reseau et des services, qui alimentent la comprehension du client.",
-      "url": "https://www.t-mobile.com"
-    }
+  "objectif_metrique": [
+   "volume d'appels au service client",
+   "taux de rappel / repetition",
+   "part des parcours traites en digital"
   ]
+ },
+ "implementation": "custom",
+ "objectif_business": "Comprendre l'intention du client en direct, proposer ou executer la bonne action, et faire baisser le volume d'appels au service client tout en gardant le client autonome.",
+ "description": "IntentCX est la plateforme de decisioning que T-Mobile construit avec OpenAI, annoncee en septembre 2024. Elle est concue pour comprendre l'intention et le sentiment du client en temps reel, proposer une resolution et prendre des actions de facon autonome avec la permission du client, en s'appuyant sur des milliards de points de donnees d'interactions reelles. T-Mobile la presente comme allant au-dela des chatbots et lui a fixe un objectif interne de reduction de 75 pour cent des appels au service client. Le deploiement est progressif : fin 2025, la direction indique que les premiers elements du programme touchent les clients, notamment dans les flux d'upgrade, ou 75 pour cent des upgrades d'iPhone pendant la fenetre de precommande sont passes par les canaux digitaux. Les resultats a l'echelle de la plateforme ne sont pas encore publies : ce cas documente un deploiement reel en phase precoce, pas encore un impact churn ou volume chiffre et attribue.",
+ "fonctionnement_operationnel": {
+  "cadence": "Temps reel : lecture de l'intention et decision au fil de l'interaction. Les modeles sont optimises avec un support recherche dedie d'OpenAI.",
+  "opere_par": "Les equipes care et digital de T-Mobile pour l'exploitation et les parcours, OpenAI pour les modeles et l'optimisation, une equipe data pour la connexion aux systemes de care et de transaction.",
+  "signal_pilote": "La justesse de la detection d'intention et l'acces temps reel aux systemes de transaction. Si l'intention est mal lue ou l'action mal executee sans supervision, le risque n'est plus une mauvaise reponse mais une mauvaise action sur le compte.",
+  "etapes": [
+   {
+    "etape": "Alimenter le moteur en donnees d'interaction",
+    "detail": "Des milliards de points issus des interactions reelles, de l'experience reseau et des services nourrissent la comprehension du client.",
+    "acteur": "Equipe data"
+   },
+   {
+    "etape": "Lire l'intention en temps reel",
+    "detail": "Le moteur detecte l'intention et le sentiment pendant l'interaction pour decider de la meilleure action suivante.",
+    "acteur": "IA / OpenAI"
+   },
+   {
+    "etape": "Proposer ou executer, avec permission",
+    "detail": "L'agent resout, ou execute une action sur le compte avec l'accord du client, plutot que de renvoyer vers un conseiller.",
+    "acteur": "IA sous controle client"
+   },
+   {
+    "etape": "Deployer par flux, en commencant par l'upgrade",
+    "detail": "Le rollout est progressif ; les flux d'upgrade et de souscription sont parmi les premiers a passer en digital.",
+    "acteur": "Equipes care / digital"
+   }
+  ]
+ },
+ "resultats": [
+  {
+   "metrique": "Part des upgrades iPhone en digital (fenetre de precommande)",
+   "valeur": "75%",
+   "citation_exacte": "75% of iPhone upgrades during T-Mobile's preorder window were completed through digital channels",
+   "source_ref": "S2"
+  },
+  {
+   "metrique": "Objectif interne de reduction des appels care (non atteint)",
+   "valeur": "-75%",
+   "citation_exacte": "internal goal to reduce customer service calls by 75%",
+   "source_ref": "S2"
+  }
+ ],
+ "niveau_preuve": {
+  "niveau": "A",
+  "justification": "Le chiffre de 75% est trace a l'earnings call T-Mobile du 23 octobre 2025, dont le transcript est publie par la relation investisseurs de la marque : le directeur des operations Srini Gopalan y declare « Three out of four of our iPhone upgrades during our preorder window were digital », et le CEO Mike Sievert rattache ces resultats a IntentCX en ajoutant « some of the early elements of IntentCX are hitting customers now ». La marque chiffre elle-meme en earnings call = A. A noter : l'objectif de -75% d'appels care reste un objectif interne non atteint, et aucun resultat a l'echelle de la plateforme n'est publie."
+ },
+ "dates": {
+  "lancement": "Annonce septembre 2024 ; premiers elements en production courant 2025",
+  "derniere_confirmation_activite": "2025-10 (direction T-Mobile : premiers elements touchant les clients, flux d'upgrade en digital)",
+  "verifie_le": "2026-07-11",
+  "revoir_apres": "2026-11-11"
+ },
+ "statut_vivant": {
+  "statut": "signaux_mitiges",
+  "note": "Le partenariat OpenAI est actif et les premiers elements touchent les clients fin 2025, mais IntentCX reste en montee en charge : pas de resultat a l'echelle de la plateforme publie. A revoir plus tot que les cas confirmes."
+ },
+ "sources": [
+  {
+   "ref": "S1",
+   "type": "blog_officiel",
+   "titre": "T-Mobile and OpenAI Join Forces to Revolutionize the Customer Experience with IntentCX",
+   "url": "https://www.t-mobile.com/news/business/t-mobile-launches-intentcx-with-openai",
+   "date_publication": "2024-09-18",
+   "consulte_le": "2026-07-11",
+   "fiabilite": "T1_primaire"
+  },
+  {
+   "ref": "S2",
+   "type": "presse",
+   "titre": "T-Mobile sets its sights on eliminating the pain of signups and upgrades",
+   "url": "https://www.customerexperiencedive.com/news/t-mobile-eliminating-pain-signups-upgrades/803797/",
+   "date_publication": "2025-10-27",
+   "consulte_le": "2026-07-11",
+   "fiabilite": "T3_presse_etablie"
+  },
+  {
+   "ref": "S3",
+   "type": "presse",
+   "titre": "T-Mobile, OpenAI to equip customer care agents with AI platform",
+   "url": "https://www.customerexperiencedive.com/news/t-mobile-openai-customer-service-agents-generative-ai-intentcx/727572/",
+   "date_publication": "2024-09-19",
+   "consulte_le": "2026-07-11",
+   "fiabilite": "T3_presse_etablie"
+  },
+  {
+   "ref": "S4",
+   "type": "earnings_call",
+   "titre": "Q3 2025 T-Mobile US Inc Earnings Call - transcript publie par la relation investisseurs T-Mobile",
+   "url": "https://s29.q4cdn.com/310188824/files/doc_financials/2025/q3/TMUS-USQ_Transcript_2025-10-23.pdf",
+   "date_publication": "2025-10-23",
+   "consulte_le": "2026-07-16",
+   "fiabilite": "T1_primaire"
+  }
+ ],
+ "schema_flow": {
+  "statut": "approche_type",
+  "noeuds": [
+   {
+    "id": "data",
+    "role_generique": "data_source",
+    "label": "Milliards de points d'interaction, reseau et services (temps reel)"
+   },
+   {
+    "id": "engine",
+    "role_generique": "modele_ia",
+    "label": "Moteur de decisioning pilote par l'intention (IntentCX)",
+    "outil_documente": "OpenAI (modeles + optimisation dediee)"
+   },
+   {
+    "id": "care",
+    "role_generique": "site_app",
+    "label": "Systemes de care et de transaction (upgrade, souscription)"
+   },
+   {
+    "id": "client",
+    "role_generique": "canal_conversationnel",
+    "label": "Client, qui autorise ou non l'action"
+   }
+  ],
+  "liens": [
+   [
+    "data",
+    "engine"
+   ],
+   [
+    "engine",
+    "care"
+   ],
+   [
+    "care",
+    "client",
+    "action proposee ou executee avec permission"
+   ],
+   [
+    "client",
+    "engine",
+    "reaction -> reevaluation de l'intention"
+   ]
+  ]
+ },
+ "replication": {
+  "statut_epistemique": "infere",
+  "prerequis_data": [
+   "Donnees d'interaction et de compte accessibles en temps reel",
+   "Systemes de transaction ouverts a des actions pilotees par l'IA",
+   "Consentement client et tracage des actions (RGPD / article 22 en UE)"
+  ],
+  "prerequis_orga": [
+   "Equipe capable d'operer un agent qui agit, pas seulement qui repond",
+   "Gouvernance forte du perimetre d'action autonome et de la supervision humaine"
+  ],
+  "stack_possible": [
+   "LLM et agents (OpenAI, Anthropic, ou equivalent) avec support d'optimisation",
+   "Couche de decisioning / next-best-action branchee sur le CRM et les back-offices",
+   "Detection d'intention et de sentiment en temps reel"
+  ],
+  "premiere_etape": "Isoler un flux a fort volume et faible risque (ex. upgrade), y limiter le perimetre d'action autonome sous permission client, et mesurer la deflection d'appels contre un groupe temoin avant d'elargir.",
+  "playbook": [
+   {
+    "action": "Cadrer la data : inventorier les donnees d'interaction accessibles en temps reel et les systemes de transaction ouvrables a un agent.",
+    "livrable": "Carte des flux de donnees et des API de transaction, avec les trous a combler."
+   },
+   {
+    "action": "Choisir un flux a fort volume et faible risque (ex. upgrade), definir le perimetre d'action autonome, le consentement client et le cadre juridique (RGPD article 22).",
+    "livrable": "Spec du perimetre d'action et dossier juridique valide par le DPO."
+   },
+   {
+    "action": "Construire l'agent (detection d'intention plus decisioning), d'abord en lecture seule, puis en execution supervisee sur le flux pilote.",
+    "livrable": "Agent en pre-production, chaque action tracee et reversible."
+   },
+   {
+    "action": "Passer le flux pilote en production sous permission client et mesurer la deflection d'appels contre un groupe temoin.",
+    "livrable": "Resultats du test controle : deflection, taux de rappel, incidents."
+   },
+   {
+    "action": "Elargir flux par flux en gardant la supervision humaine sur les actions nouvelles.",
+    "livrable": "Roadmap de rollout par flux avec seuils de qualite a franchir."
+   }
+  ],
+  "equipe": "1 PM + 3-5 ingenieurs (ML/backend) + 1 data engineer + 1 juriste/DPO pour la decision automatisee, adosses aux equipes care pour la conception des parcours."
+ },
+ "seo": {
+  "slug": "t-mobile-intentcx-openai-decisioning-intention-2024",
+  "title": "T-Mobile : IntentCX avec OpenAI, decisioning par l'intention - rollout progressif (2024)",
+  "meta_description": "IntentCX, la plateforme de decisioning de T-Mobile avec OpenAI, lit l'intention client en temps reel et execute des actions. Rollout precoce depuis 2025.",
+  "resume_citable": "T-Mobile construit avec OpenAI IntentCX, une plateforme de decisioning qui lit l'intention et le sentiment client en temps reel pour proposer ou executer une action, avec un objectif interne de -75% d'appels care ; les premiers elements touchent les clients depuis 2025, sans resultat a l'echelle encore publie.",
+  "faq": [
+   {
+    "q": "IntentCX est-il pleinement deploye ?",
+    "a": "Non. Les premiers elements touchent les clients depuis 2025 (flux d'upgrade), mais la plateforme reste en montee en charge et aucun impact churn ou volume a l'echelle n'est publie."
+   },
+   {
+    "q": "Pourquoi ce cas est-il classe en niveau de preuve A ?",
+    "a": "Le chiffre de 75% d'upgrades iPhone realises en digital est prononce par la direction de T-Mobile en earnings call le 23 octobre 2025, et le CEO y rattache explicitement ces resultats a IntentCX : la marque chiffre elle-meme, donc A. L'objectif de -75% d'appels au service client reste en revanche un objectif interne non atteint, et aucun resultat a l'echelle de la plateforme n'est publie."
+   }
+  ]
+ },
+ "agences": [
+  {
+   "nom": "OpenAI",
+   "role": "Partenaire technologique : modeles et optimisation dediee",
+   "source_ref": "S1"
+  }
+ ],
+ "intervenants": [
+  {
+   "nom": "Mike Sievert",
+   "role": "President et CEO puis vice-chairman de T-Mobile (cite sur le rollout)",
+   "source_ref": "S2"
+  }
+ ],
+ "logo_domain": "t-mobile.com",
+ "stack_technique": [
+  {
+   "nom": "OpenAI",
+   "categorie": "llm",
+   "detail": "Modeles OpenAI au coeur d'IntentCX, avec un support recherche dedie pour l'optimisation. Le modele exact n'est pas nomme publiquement.",
+   "url": "https://openai.com"
+  },
+  {
+   "nom": "IntentCX",
+   "categorie": "plateforme",
+   "detail": "Plateforme de decisioning construite par T-Mobile avec OpenAI : lecture d'intention et de sentiment en temps reel, next-best-action, execution d'actions avec la permission du client.",
+   "url": "https://www.t-mobile.com"
+  },
+  {
+   "nom": "Systemes de care et de transaction T-Mobile",
+   "categorie": "infra",
+   "detail": "Back-offices d'upgrade et de souscription (dont l'app T-Life) ouverts a l'execution d'actions par l'agent.",
+   "url": "https://www.t-mobile.com"
+  },
+  {
+   "nom": "Donnees d'interaction et de reseau temps reel",
+   "categorie": "infra",
+   "detail": "Milliards de points issus des interactions reelles, de l'experience reseau et des services, qui alimentent la comprehension du client.",
+   "url": "https://www.t-mobile.com"
+  }
+ ]
 }

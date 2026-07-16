@@ -81,8 +81,8 @@
     }
   ],
   "niveau_preuve": {
-    "niveau": "C",
-    "justification": "Chiffres de deploiement et d'usage communiques par Lowe's dans ses communiques officiels (1 700 magasins, tous les vendeurs) et repris par la presse retail majeure (Retail Dive, CX Dive) qui cite nommement la marque et le volume d'un million de questions par mois. Pas de resultat financier isole publie sur l'outil, ce qui plafonne a C malgre la concordance des sources."
+    "niveau": "B",
+    "justification": "Chiffres de deploiement et d'usage communiques par Lowe's dans ses communiques officiels (1 700 magasins, tous les vendeurs) et repris par la presse retail majeure (Retail Dive, CX Dive) qui cite nommement la marque et le volume d'un million de questions par mois. L'etude de cas client publiee par OpenAI, fournisseur du modele, confirme le deploiement de Mylow Companion a 100% des 1 700 magasins et documente le dispositif cote plateforme : etude de cas plateforme chiffree = B. Pas de resultat financier isole publie sur l'outil, donc pas A."
   },
   "dates": {
     "lancement": "2025-03-05 (Mylow), 2025-05-05 (Mylow Companion)",
@@ -130,6 +130,14 @@
       "url": "https://www.customerexperiencedive.com/news/lowes-associate-facing-app-customer-satisfaction/758216/",
       "date_publication": "2025",
       "consulte_le": "2026-07-11"
+    },
+    {
+      "ref": "S5",
+      "type": "customer_story_plateforme",
+      "fiabilite": "T2_officiel_interesse",
+      "titre": "Lowe's puts project expertise into every hand",
+      "url": "https://openai.com/index/lowes/",
+      "consulte_le": "2026-07-16"
     }
   ],
   "fonctionnement_operationnel": {

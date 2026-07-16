@@ -1,107 +1,119 @@
 {
-  "seo": {
-    "title": "T-Mobile: IntentCX with OpenAI, intent-driven decisioning - progressive rollout (2024)",
-    "meta_description": "IntentCX, T-Mobile's decisioning platform with OpenAI, reads customer intent in real time and executes actions. Early rollout since 2025.",
-    "resume_citable": "T-Mobile is building IntentCX with OpenAI, a decisioning platform that reads customer intent and sentiment in real time to propose or execute an action, with an internal goal of -75% care calls; the first elements have reached customers since 2025, with no platform-scale result yet published.",
-    "faq": [
-      {
-        "q": "Is IntentCX fully deployed?",
-        "a": "No. The first elements have reached customers since 2025 (upgrade flows), but the platform is still ramping up and no platform-scale churn or volume impact has been published."
-      },
-      {
-        "q": "Why is this case classified at evidence level C?",
-        "a": "The scope is documented by T-Mobile and tracked by the press, but the public figures are capabilities, an internal goal, or digital adoption not strictly attributed to IntentCX."
-      }
-    ]
+ "seo": {
+  "title": "T-Mobile: IntentCX with OpenAI, intent-driven decisioning - progressive rollout (2024)",
+  "meta_description": "IntentCX, T-Mobile's decisioning platform with OpenAI, reads customer intent in real time and executes actions. Early rollout since 2025.",
+  "resume_citable": "T-Mobile is building IntentCX with OpenAI, a decisioning platform that reads customer intent and sentiment in real time to propose or execute an action, with an internal goal of -75% care calls; the first elements have reached customers since 2025, with no platform-scale result yet published.",
+  "faq": [
+   {
+    "q": "Is IntentCX fully deployed?",
+    "a": "No. The first elements have reached customers since 2025 (upgrade flows), but the platform is still ramping up and no platform-scale churn or volume impact has been published."
+   },
+   {
+    "q": "Why is this case classified at evidence level A?",
+    "a": "The 75% figure for iPhone upgrades completed digitally is stated by T-Mobile management on the earnings call of October 23, 2025, and the CEO explicitly ties those results to IntentCX: the brand quantifies it itself, hence A. The -75% target on care calls remains an unreached internal goal, however, and no platform-scale result is published."
+   }
+  ]
+ },
+ "pattern": "Intent-driven decisioning platform: an engine reads customer intent and sentiment in real time, decides the next action, and can execute it, beyond a simple chatbot",
+ "etape_parcours": "post-purchase / service and retention",
+ "objectif_business": "Understand the customer's intent live, propose or execute the right action, and lower the volume of customer service calls while keeping the customer autonomous.",
+ "description": "IntentCX is the decisioning platform T-Mobile is building with OpenAI, announced in September 2024. It is designed to understand the customer's intent and sentiment in real time, propose a resolution, and take actions autonomously with the customer's permission, drawing on billions of data points from real interactions. T-Mobile presents it as going beyond chatbots and has set it an internal goal of a 75 percent reduction in customer service calls. The rollout is progressive: at the end of 2025, management indicates that the first elements of the program are reaching customers, notably in the upgrade flows, where 75 percent of iPhone upgrades during the preorder window went through digital channels. Platform-scale results are not yet published: this case documents a real deployment in an early phase, not yet a quantified and attributed churn or volume impact.",
+ "resultats": [
+  {
+   "metrique": "Share of iPhone upgrades in digital (preorder window)"
   },
-  "pattern": "Intent-driven decisioning platform: an engine reads customer intent and sentiment in real time, decides the next action, and can execute it, beyond a simple chatbot",
-  "etape_parcours": "post-purchase / service and retention",
-  "objectif_business": "Understand the customer's intent live, propose or execute the right action, and lower the volume of customer service calls while keeping the customer autonomous.",
-  "description": "IntentCX is the decisioning platform T-Mobile is building with OpenAI, announced in September 2024. It is designed to understand the customer's intent and sentiment in real time, propose a resolution, and take actions autonomously with the customer's permission, drawing on billions of data points from real interactions. T-Mobile presents it as going beyond chatbots and has set it an internal goal of a 75 percent reduction in customer service calls. The rollout is progressive: at the end of 2025, management indicates that the first elements of the program are reaching customers, notably in the upgrade flows, where 75 percent of iPhone upgrades during the preorder window went through digital channels. Platform-scale results are not yet published: this case documents a real deployment in an early phase, not yet a quantified and attributed churn or volume impact.",
-  "resultats": [
-    { "metrique": "Share of iPhone upgrades in digital (preorder window)" },
-    { "metrique": "Internal goal of reducing care calls (not reached)" }
-  ],
-  "niveau_preuve": {
-    "justification": "Partnership and scope documented by the official T-Mobile press release (T1) and rollout tracking by specialized press (T3) naming management. But the public figures are either an announced capability, an internal goal, or digital adoption not strictly attributed to IntentCX. Real deployment in an early phase, scale impact not yet proven: level deliberately capped."
-  },
-  "stack_technique": [
-    { "detail": "OpenAI models at the core of IntentCX, with dedicated research support for optimization. The exact model is not named publicly." },
-    { "detail": "Decisioning platform built by T-Mobile with OpenAI: real-time reading of intent and sentiment, next-best-action, execution of actions with the customer's permission." },
-    { "detail": "Upgrade and subscription back-offices (including the T-Life app) opened to the execution of actions by the agent." },
-    { "detail": "Billions of data points from real interactions, network experience, and services, which feed the understanding of the customer." }
-  ],
-  "fonctionnement_operationnel": {
-    "cadence": "Real time: reading intent and deciding as the interaction unfolds. The models are optimized with dedicated research support from OpenAI.",
-    "opere_par": "T-Mobile's care and digital teams for operation and journeys, OpenAI for the models and optimization, a data team for the connection to the care and transaction systems.",
-    "signal_pilote": "The accuracy of intent detection and real-time access to the transaction systems. If the intent is misread or the action wrongly executed without supervision, the risk is no longer a bad answer but a bad action on the account.",
-    "etapes": [
-      {
-        "etape": "Feed the engine with interaction data",
-        "detail": "Billions of points from real interactions, network experience, and services feed the understanding of the customer.",
-        "acteur": "data team"
-      },
-      {
-        "etape": "Read intent in real time",
-        "detail": "The engine detects intent and sentiment during the interaction to decide the best next action.",
-        "acteur": "AI / OpenAI"
-      },
-      {
-        "etape": "Propose or execute, with permission",
-        "detail": "The agent resolves, or executes an action on the account with the customer's agreement, rather than routing to an advisor.",
-        "acteur": "AI under customer control"
-      },
-      {
-        "etape": "Deploy by flow, starting with upgrade",
-        "detail": "The rollout is progressive; the upgrade and subscription flows are among the first to move to digital.",
-        "acteur": "care / digital teams"
-      }
-    ]
-  },
-  "replication": {
-    "prerequis_data": [
-      "Interaction and account data accessible in real time",
-      "Transaction systems open to AI-driven actions",
-      "Customer consent and action logging (GDPR / article 22 in the EU)"
-    ],
-    "prerequis_orga": [
-      "Team able to operate an agent that acts, not only responds",
-      "Strong governance of the autonomous action scope and human oversight"
-    ],
-    "stack_possible": [
-      "LLMs and agents (OpenAI, Anthropic, or equivalent) with optimization support",
-      "Decisioning / next-best-action layer connected to the CRM and back-offices",
-      "Real-time intent and sentiment detection"
-    ],
-    "equipe": "1 PM + 3-5 engineers (ML/backend) + 1 data engineer + 1 lawyer/DPO for automated decisioning, backed by the care teams for journey design.",
-    "playbook": [
-      {
-        "action": "Frame the data: inventory the interaction data accessible in real time and the transaction systems that can be opened to an agent.",
-        "livrable": "Map of the data flows and transaction APIs, with the gaps to fill."
-      },
-      {
-        "action": "Choose a high-volume, low-risk flow (e.g. upgrade), define the autonomous action scope, customer consent, and the legal framework (GDPR article 22).",
-        "livrable": "Action scope spec and legal file validated by the DPO."
-      },
-      {
-        "action": "Build the agent (intent detection plus decisioning), first read-only, then supervised execution on the pilot flow.",
-        "livrable": "Agent in pre-production, each action logged and reversible."
-      },
-      {
-        "action": "Move the pilot flow to production under customer permission and measure call deflection against a control group.",
-        "livrable": "Controlled test results: deflection, repeat rate, incidents."
-      },
-      {
-        "action": "Expand flow by flow while keeping human oversight on the new actions.",
-        "livrable": "Rollout roadmap by flow with quality thresholds to clear."
-      }
-    ],
-    "premiere_etape": "Isolate a high-volume, low-risk flow (e.g. upgrade), limit the autonomous action scope there under customer permission, and measure call deflection against a control group before expanding."
-  },
-  "statut_vivant": {
-    "note": "The OpenAI partnership is active and the first elements are reaching customers at the end of 2025, but IntentCX is still ramping up: no platform-scale result published. To review sooner than the confirmed cases."
-  },
-  "transposable_ue": {
-    "note": "Decisioning platform connected to real-time customer data that can execute actions on the customer's behalf with their permission. In the EU, GDPR article 22 (automated decision) and the AI Act strongly regulate this type of agent: consent, right to human intervention, transparency. Transposable but with a heavy legal framing."
+  {
+   "metrique": "Internal goal of reducing care calls (not reached)"
   }
+ ],
+ "niveau_preuve": {
+  "justification": "The 75% figure is traced to the T-Mobile earnings call of October 23, 2025, whose transcript is published by the brand's investor relations: chief operating officer Srini Gopalan states there \"Three out of four of our iPhone upgrades during our preorder window were digital\", and CEO Mike Sievert ties these results to IntentCX, adding \"some of the early elements of IntentCX are hitting customers now\". The brand putting the figure out itself on an earnings call = A. Note: the -75% care calls target remains an internal goal not reached, and no platform-scale result is published."
+ },
+ "stack_technique": [
+  {
+   "detail": "OpenAI models at the core of IntentCX, with dedicated research support for optimization. The exact model is not named publicly."
+  },
+  {
+   "detail": "Decisioning platform built by T-Mobile with OpenAI: real-time reading of intent and sentiment, next-best-action, execution of actions with the customer's permission."
+  },
+  {
+   "detail": "Upgrade and subscription back-offices (including the T-Life app) opened to the execution of actions by the agent."
+  },
+  {
+   "detail": "Billions of data points from real interactions, network experience, and services, which feed the understanding of the customer."
+  }
+ ],
+ "fonctionnement_operationnel": {
+  "cadence": "Real time: reading intent and deciding as the interaction unfolds. The models are optimized with dedicated research support from OpenAI.",
+  "opere_par": "T-Mobile's care and digital teams for operation and journeys, OpenAI for the models and optimization, a data team for the connection to the care and transaction systems.",
+  "signal_pilote": "The accuracy of intent detection and real-time access to the transaction systems. If the intent is misread or the action wrongly executed without supervision, the risk is no longer a bad answer but a bad action on the account.",
+  "etapes": [
+   {
+    "etape": "Feed the engine with interaction data",
+    "detail": "Billions of points from real interactions, network experience, and services feed the understanding of the customer.",
+    "acteur": "data team"
+   },
+   {
+    "etape": "Read intent in real time",
+    "detail": "The engine detects intent and sentiment during the interaction to decide the best next action.",
+    "acteur": "AI / OpenAI"
+   },
+   {
+    "etape": "Propose or execute, with permission",
+    "detail": "The agent resolves, or executes an action on the account with the customer's agreement, rather than routing to an advisor.",
+    "acteur": "AI under customer control"
+   },
+   {
+    "etape": "Deploy by flow, starting with upgrade",
+    "detail": "The rollout is progressive; the upgrade and subscription flows are among the first to move to digital.",
+    "acteur": "care / digital teams"
+   }
+  ]
+ },
+ "replication": {
+  "prerequis_data": [
+   "Interaction and account data accessible in real time",
+   "Transaction systems open to AI-driven actions",
+   "Customer consent and action logging (GDPR / article 22 in the EU)"
+  ],
+  "prerequis_orga": [
+   "Team able to operate an agent that acts, not only responds",
+   "Strong governance of the autonomous action scope and human oversight"
+  ],
+  "stack_possible": [
+   "LLMs and agents (OpenAI, Anthropic, or equivalent) with optimization support",
+   "Decisioning / next-best-action layer connected to the CRM and back-offices",
+   "Real-time intent and sentiment detection"
+  ],
+  "equipe": "1 PM + 3-5 engineers (ML/backend) + 1 data engineer + 1 lawyer/DPO for automated decisioning, backed by the care teams for journey design.",
+  "playbook": [
+   {
+    "action": "Frame the data: inventory the interaction data accessible in real time and the transaction systems that can be opened to an agent.",
+    "livrable": "Map of the data flows and transaction APIs, with the gaps to fill."
+   },
+   {
+    "action": "Choose a high-volume, low-risk flow (e.g. upgrade), define the autonomous action scope, customer consent, and the legal framework (GDPR article 22).",
+    "livrable": "Action scope spec and legal file validated by the DPO."
+   },
+   {
+    "action": "Build the agent (intent detection plus decisioning), first read-only, then supervised execution on the pilot flow.",
+    "livrable": "Agent in pre-production, each action logged and reversible."
+   },
+   {
+    "action": "Move the pilot flow to production under customer permission and measure call deflection against a control group.",
+    "livrable": "Controlled test results: deflection, repeat rate, incidents."
+   },
+   {
+    "action": "Expand flow by flow while keeping human oversight on the new actions.",
+    "livrable": "Rollout roadmap by flow with quality thresholds to clear."
+   }
+  ],
+  "premiere_etape": "Isolate a high-volume, low-risk flow (e.g. upgrade), limit the autonomous action scope there under customer permission, and measure call deflection against a control group before expanding."
+ },
+ "statut_vivant": {
+  "note": "The OpenAI partnership is active and the first elements are reaching customers at the end of 2025, but IntentCX is still ramping up: no platform-scale result published. To review sooner than the confirmed cases."
+ },
+ "transposable_ue": {
+  "note": "Decisioning platform connected to real-time customer data that can execute actions on the customer's behalf with their permission. In the EU, GDPR article 22 (automated decision) and the AI Act strongly regulate this type of agent: consent, right to human intervention, transparency. Transposable but with a heavy legal framing."
+ }
 }

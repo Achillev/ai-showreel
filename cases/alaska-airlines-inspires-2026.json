@@ -89,8 +89,8 @@
     }
   ],
   "niveau_preuve": {
-    "niveau": "C",
-    "justification": "Presse spécialisée établie (CX Dive) reprenant les chiffres de la customer story Microsoft, avec source vendor concordante et déclaration d'une dirigeante nommée."
+    "niveau": "B",
+    "justification": "La customer story Microsoft (S3), étude de cas plateforme chiffrée, confirme au mot près les 75 pour cent de temps de planification économisé, les 90 pour cent de satisfaction, les 87 pour cent d'intention de réutilisation et les 90 langues, et situe la conversion à 7,16 pour cent contre 5 pour cent pour le widget standard ; la presse établie (S1) concorde."
   },
   "dates": {
     "lancement": "2024 (lancement public d'Alaska Inspires)",
@@ -120,6 +120,15 @@
       "url": "https://skift.com/2024/05/12/alaska-airlines-tests-ai-vision-for-loyalty-and-flight-search/",
       "date_publication": "2024-05-12",
       "consulte_le": "2026-07-11"
+    },
+    {
+      "ref": "S3",
+      "type": "customer_story_plateforme",
+      "fiabilite": "T2_officiel_interesse",
+      "titre": "Alaska Airlines inspires destination discovery with Microsoft Foundry",
+      "url": "https://www.microsoft.com/en/customers/story/25850-alaska-airlines-azure-openai",
+      "date_publication": "2025-12-10",
+      "consulte_le": "2026-07-16"
     }
   ],
   "fonctionnement_operationnel": {

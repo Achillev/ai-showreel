@@ -86,8 +86,8 @@
     }
   ],
   "niveau_preuve": {
-    "niveau": "C",
-    "justification": "Lancement annonce par OpenAI et couvert nommement par plusieurs presses etablies (CNBC, TechCrunch, Digital Commerce 360) ; signal de marche public (action Etsy). Cas recent (moins de 12 mois a la verification) et volume transactionnel non encore publie, d'ou un niveau C et un statut vivant prudent."
+    "niveau": "B",
+    "justification": "L'annonce officielle d'OpenAI (S5), plateforme du dispositif, nomme Etsy et documente les deux chiffres de perimetre repris ici : plus de 700 millions d'utilisateurs hebdomadaires de ChatGPT et un achat limite a un seul article au lancement. Elle est corroboree par la presse etablie (CNBC, TechCrunch, Digital Commerce 360) et par le signal de marche public sur l'action Etsy. Pas de volume transactionnel publie ni de ligne de resultats financiers isolant le canal, donc B et pas A."
   },
   "dates": {
     "lancement": "2025-09-29",
@@ -135,6 +135,15 @@
       "url": "https://builtin.com/articles/openai-instant-checkout-launch-20250930",
       "date_publication": "2025-09-30",
       "consulte_le": "2026-07-11"
+    },
+    {
+      "ref": "S5",
+      "type": "blog_officiel",
+      "fiabilite": "T2_officiel_interesse",
+      "titre": "Buy it in ChatGPT: Instant Checkout and the Agentic Commerce Protocol (OpenAI)",
+      "url": "https://openai.com/index/buy-it-in-chatgpt/",
+      "date_publication": "2025-09-29",
+      "consulte_le": "2026-07-16"
     }
   ],
   "fonctionnement_operationnel": {
