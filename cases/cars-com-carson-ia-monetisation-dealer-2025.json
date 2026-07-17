@@ -1,0 +1,358 @@
+{
+  "id": "cars-com-carson-ia-monetisation-dealer-2025",
+  "type_fiche": "succes",
+  "marque": "Cars.com",
+  "groupe": "Cars Commerce Inc. (NYSE: CARS)",
+  "industrie": "auto",
+  "marches_deploiement": [
+    "Etats-Unis"
+  ],
+  "transposable_ue": {
+    "flag": "oui_avec_adaptations",
+    "note": "Cars.com est une marketplace automobile purement americaine, mais le montage est transposable a une place de marche auto europeenne (leboncoin, La Centrale, AutoScout24, mobile.de) : recherche conversationnelle multilingue cote acheteur pour ameliorer la conversion des pages de resultats vers les fiches vehicule, et briques IA (generation de video d'inventaire, expansion de zone de chalandise) packagees et vendues aux concessionnaires abonnes. Contraintes UE : transparence AI Act sur le fait que l'utilisateur dialogue avec une IA dans le moteur de recherche (Carson est deja multilingue, ce qui simplifie l'adaptation), et base legale RGPD pour la personnalisation a partir du comportement de recherche. La donnee exploitee cote acheteur est surtout du contenu d'inventaire (fiches vehicule, prix), pas de la donnee personnelle sensible, ce qui facilite la transposition."
+  },
+  "metier": "marketplace / marketing digital / monetisation B2B concessionnaires",
+  "intervenants": [
+    {
+      "nom": "Alex Vetter",
+      "role": "Chief Executive Officer, Cars Commerce",
+      "source_ref": "S2"
+    },
+    {
+      "nom": "Matt McDonald",
+      "role": "Senior Director of Product Management, Cars.com Inc.",
+      "source_ref": "S1"
+    },
+    {
+      "nom": "Lisa Gosselin",
+      "role": "Chief Commercial Officer, Cars.com Inc.",
+      "source_ref": "S3"
+    },
+    {
+      "nom": "Sonia Jain",
+      "role": "Chief Financial Officer, Cars Commerce",
+      "source_ref": "S2"
+    }
+  ],
+  "axes": {
+    "levier": "monetisation",
+    "touchpoints": [
+      "moteur de recherche IA Carson (web et mobile web)",
+      "pages de resultats de recherche (SRP)",
+      "fiches vehicule (VDP)",
+      "solution AI-Powered Inventory Video vendue aux concessionnaires",
+      "abonnements marketplace des concessionnaires"
+    ],
+    "etape_parcours": "consideration et achat",
+    "famille": "conversation",
+    "pattern": "briques IA de marketplace monetisees en double face : recherche conversationnelle cote acheteur pour la conversion, generation et outils IA packages et vendus aux concessionnaires abonnes",
+    "type_ia": [
+      "IA generative",
+      "assistant conversationnel",
+      "traitement du langage naturel",
+      "generation de video"
+    ],
+    "plateforme_stack": [
+      "custom/in-house (Cars Commerce)",
+      "Carson (moteur de recherche IA)",
+      "AI-Powered Inventory Video",
+      "AccuTrade"
+    ],
+    "objectif_metrique": [
+      "taux de conversion des pages de resultats vers les fiches vehicule",
+      "engagement et retours des visiteurs",
+      "vehicules sauvegardes et leads generes",
+      "revenu dealer et nombre de concessionnaires abonnes"
+    ]
+  },
+  "implementation": "custom",
+  "stack_technique": [
+    {
+      "nom": "Carson",
+      "categorie": "outil",
+      "detail": "Moteur de recherche IA multilingue de Cars.com, lance le 6 novembre 2025, qui transforme des requetes en langage naturel (par exemple un besoin de vehicule fiable et abordable pour une famille) en resultats cibles, en remplacement de la navigation par filtres. Deploiement web et mobile web, rollout de l'app mobile en pilote au T4 2025.",
+      "url": "https://www.cars.com"
+    },
+    {
+      "nom": "AI-Powered Inventory Video",
+      "categorie": "outil",
+      "detail": "Solution de generation de publicites video specifiques au VIN avec ciblage d'audience, vendue aux concessionnaires ; presentee comme generant deux fois plus de conversion de leads sur leur site que la creation video traditionnelle.",
+      "url": "https://www.cars.com"
+    },
+    {
+      "nom": "AccuTrade",
+      "categorie": "outil",
+      "detail": "Solution d'estimation et de reprise de Cars Commerce, integree a l'offre concessionnaires ; plus d'un million d'estimations trimestrielles au T3 2025.",
+      "url": "https://www.accutrade.com"
+    }
+  ],
+  "objectif_business": "Faire de l'IA un levier de monetisation pour une marketplace auto dont environ 89% du chiffre d'affaires vient des concessionnaires abonnes. Cars.com utilise le moteur Carson cote acheteur pour rendre sa place de marche plus performante (plus d'engagement, meilleure conversion des resultats vers les fiches vehicule), ce qui renforce la valeur vendue aux concessionnaires, puis package ses briques IA en solutions payantes proposees a ces memes concessionnaires pour generer plus de leads et de profit.",
+  "points_cles": [
+    "Cars.com a lance Carson, moteur de recherche IA en langage naturel multilingue, le 6 novembre 2025.",
+    "Carson assiste environ 15% des recherches web et mobile web et augmente d'environ 30% la conversion des pages de resultats vers les fiches vehicule.",
+    "L'IA sert la monetisation : environ 89% des 182 millions USD de CA record du T3 2025 viennent des concessionnaires abonnes.",
+    "Les briques IA sont packagees et vendues aux concessionnaires (AI-Powered Inventory Video, deux fois plus de conversion de leads)."
+  ],
+  "description": "Cars.com opere une place de marche automobile americaine dont le revenu vient surtout des concessionnaires abonnes (162 millions USD sur les 181,6 millions de CA du troisieme trimestre 2025, soit environ 89%). Le 6 novembre 2025, elle a lance Carson, un moteur de recherche IA multilingue qui transforme une requete en langage naturel (par exemple un vehicule fiable et abordable pour une famille de cinq personnes) en resultats cibles, a la place des filtres. Plus de 70% des visiteurs demarrent leur recherche sans marque ni modele en tete, ce que Carson est cense debloquer. Cote acheteur, Cars.com chiffre l'effet : Carson assiste environ 15% des recherches web et mobile web, ses utilisateurs reviennent deux fois plus souvent, sauvegardent trois fois plus de vehicules et convertissent pres de 30% mieux des pages de resultats vers les fiches vehicule. Le CEO Alex Vetter a resume l'impact a l'earnings du T3 2025 en parlant d'un doublement de l'engagement des visiteurs. Cote monetisation, Cars.com transforme ces capacites IA en produits vendus a ses concessionnaires : le 29 janvier 2026, elle a annonce quatre solutions dont AI-Powered Inventory Video, qui genere des publicites video specifiques a chaque vehicule et affiche deux fois plus de conversion de leads que la video classique. Le nombre de concessionnaires abonnes a atteint 19 526 au T3 2025, un plus haut de trois ans, et le revenu dealer est reparti a la hausse (+2% en glissement annuel) sur le trimestre du CA record.",
+  "resultats": [
+    {
+      "metrique": "Part des recherches web et mobile web assistees par Carson",
+      "valeur": "~15%",
+      "citation_exacte": "Carson currently assists approximately 15% of web and mobile web searches",
+      "source_ref": "S1"
+    },
+    {
+      "metrique": "Amelioration du taux de conversion des pages de resultats (SRP) vers les fiches vehicule (VDP) pour les utilisateurs de Carson",
+      "valeur": "~+30%",
+      "citation_exacte": "a nearly 30% higher rate of conversion from Search Results Pages to Vehicle Detail Pages",
+      "source_ref": "S1"
+    },
+    {
+      "metrique": "Vehicules sauvegardes par les utilisateurs de Carson par rapport aux autres shoppers",
+      "valeur": "3x plus",
+      "citation_exacte": "Consumers using Carson save 3x more vehicles than other shoppers.",
+      "source_ref": "S1"
+    },
+    {
+      "metrique": "Retours sur Cars.com des utilisateurs de Carson par rapport aux autres shoppers",
+      "valeur": "2x plus",
+      "citation_exacte": "Consumers using Carson return to Cars.com 2x more than other shoppers.",
+      "source_ref": "S1"
+    },
+    {
+      "metrique": "Chiffre d'affaires trimestriel record et croissance du revenu dealer, T3 2025",
+      "valeur": "182M USD",
+      "citation_exacte": "Achieved Record Total Revenue of $182 Million and Dealer Revenue Growth of 2% Year-over-Year",
+      "source_ref": "S2"
+    },
+    {
+      "metrique": "Effet de Carson sur l'engagement des visiteurs, cite par le CEO a l'earnings T3 2025",
+      "valeur": "2x",
+      "citation_exacte": "yielding a 2x improvement in visitor engagement",
+      "source_ref": "S2"
+    },
+    {
+      "metrique": "Conversion de leads de la solution AI-Powered Inventory Video vendue aux concessionnaires, vs video traditionnelle",
+      "valeur": "2x plus",
+      "citation_exacte": "the new AI-video solution is driving a 2X lift in website lead conversion for dealers versus traditional video creative.",
+      "source_ref": "S3"
+    }
+  ],
+  "niveau_preuve": {
+    "niveau": "A",
+    "justification": "Les chiffres de monetisation viennent de l'exhibit 99.1 du 8-K depose a la SEC pour le T3 2025 (CA record de 182 millions USD, revenu dealer de 162 millions, croissance dealer +2%, 19 526 concessionnaires), un document primaire non interprete. Les metriques de Carson et des solutions dealer viennent de communiques officiels de la marque publies sur cars.com. Trois sources T1 concordantes, dont un depot financier."
+  },
+  "dates": {
+    "lancement": "2025-11-06",
+    "derniere_confirmation_activite": "2026-01-29",
+    "verifie_le": "2026-07-17",
+    "revoir_apres": "2027-01-17"
+  },
+  "statut_vivant": {
+    "statut": "confirme",
+    "note": "Carson lance le 6 novembre 2025 avec rollout de l'app mobile en pilote au T4 2025, deja a ~15% des recherches web. Les solutions IA vendues aux concessionnaires ont ete annoncees le 29 janvier 2026, ce qui confirme la continuite du deploiement et de la strategie de monetisation moins de six mois avant verification."
+  },
+  "sources": [
+    {
+      "ref": "S1",
+      "type": "blog_officiel",
+      "fiabilite": "T1_primaire",
+      "titre": "Meet Carson, Cars.com's New AI Engine for Car Shopping",
+      "url": "https://www.cars.com/articles/meet-carson-cars-coms-new-ai-engine-for-car-shopping-518222/",
+      "date_publication": "2025-11-06",
+      "consulte_le": "2026-07-17"
+    },
+    {
+      "ref": "S2",
+      "type": "document_officiel_sec",
+      "fiabilite": "T1_primaire",
+      "titre": "Cars.com Reports Third Quarter 2025 Results (Form 8-K, Exhibit 99.1)",
+      "url": "https://www.sec.gov/Archives/edgar/data/1683606/000119312525268110/cars-ex99_1.htm",
+      "date_publication": "2025-11-06",
+      "consulte_le": "2026-07-17"
+    },
+    {
+      "ref": "S3",
+      "type": "blog_officiel",
+      "fiabilite": "T1_primaire",
+      "titre": "Cars.com Launches Powerful New Solutions Helping Dealers Turn Smarter Technology Into Real Profit",
+      "url": "https://www.cars.com/articles/cars-com-launches-powerful-new-solutions-helping-dealers-turn-smarter-technology-into-real-profit-521022/",
+      "date_publication": "2026-01-29",
+      "consulte_le": "2026-07-17"
+    }
+  ],
+  "fonctionnement_operationnel": {
+    "cadence": "Temps reel cote acheteur (Carson repond aux requetes de recherche a chaque session) ; par campagne cote concessionnaire (generation de video d'inventaire par vehicule) ; suivi de la conversion et du revenu dealer au fil des trimestres.",
+    "opere_par": "Les equipes produit et data de Cars Commerce operent Carson et les solutions IA vendues ; les concessionnaires abonnes activent et pilotent les produits Ia achetes (video d'inventaire, expansion de zone).",
+    "signal_pilote": "La conversion des pages de resultats vers les fiches vehicule et la conversion de leads cote concessionnaire. Si l'inventaire indexe (fiches, prix, photos) se degrade, la pertinence des reponses de Carson et donc la conversion chutent, et la valeur vendue aux concessionnaires baisse avec elle.",
+    "etapes": [
+      {
+        "etape": "Requete en langage naturel de l'acheteur",
+        "detail": "Le visiteur decrit son besoin en langage courant (budget, usage, fiabilite) au lieu de manier des filtres ; plus de 70% arrivent sans marque ni modele en tete.",
+        "acteur": "client"
+      },
+      {
+        "etape": "Interpretation et retour de resultats cibles",
+        "detail": "Carson interprete la requete et renvoie une page de resultats adaptee, avec des resumes (vehicules primes, index made in America), pour pousser le clic vers les fiches vehicule.",
+        "acteur": "IA"
+      },
+      {
+        "etape": "Conversion vers la fiche vehicule et le concessionnaire",
+        "detail": "L'acheteur passe des resultats a la fiche vehicule puis vers le concessionnaire ; Cars.com mesure la conversion SRP vers VDP, les sauvegardes et les leads.",
+        "acteur": "client"
+      },
+      {
+        "etape": "Packaging des briques IA en solutions vendues",
+        "detail": "Cars Commerce transforme ses capacites IA en produits payants (video d'inventaire par VIN, expansion de zone de chalandise, reporting) proposes aux concessionnaires abonnes.",
+        "acteur": "equipe data"
+      },
+      {
+        "etape": "Activation par le concessionnaire et facturation par abonnement",
+        "detail": "Le concessionnaire souscrit et active la solution IA sur son inventaire ; le revenu remonte dans le revenu dealer, qui pese environ 89% du CA du groupe.",
+        "acteur": "client"
+      }
+    ]
+  },
+  "schema_flow": {
+    "statut": "approche_type",
+    "noeuds": [
+      {
+        "id": "acheteur",
+        "role_generique": "site_app",
+        "label": "Acheteur sur Cars.com (web et mobile web)"
+      },
+      {
+        "id": "carson",
+        "role_generique": "canal_conversationnel",
+        "label": "Carson, moteur de recherche IA en langage naturel"
+      },
+      {
+        "id": "inventaire",
+        "role_generique": "data_source",
+        "label": "Catalogue d'inventaire : fiches vehicule, prix, photos"
+      },
+      {
+        "id": "resultats",
+        "role_generique": "site_app",
+        "label": "Pages de resultats (SRP) et fiches vehicule (VDP)"
+      },
+      {
+        "id": "concessionnaire",
+        "role_generique": "humain",
+        "label": "Concessionnaire abonne"
+      },
+      {
+        "id": "solutions_ia",
+        "role_generique": "modele_ia",
+        "label": "Solutions IA vendues (AI-Powered Inventory Video, expansion de zone)"
+      },
+      {
+        "id": "revenu",
+        "role_generique": "data_source",
+        "label": "Revenu dealer (abonnements et solutions), ~89% du CA"
+      }
+    ],
+    "liens": [
+      [
+        "acheteur",
+        "carson",
+        "requete en langage naturel"
+      ],
+      [
+        "carson",
+        "inventaire",
+        "recherche sur l'inventaire"
+      ],
+      [
+        "inventaire",
+        "resultats",
+        "resultats cibles"
+      ],
+      [
+        "resultats",
+        "concessionnaire",
+        "leads et mise en relation"
+      ],
+      [
+        "concessionnaire",
+        "solutions_ia",
+        "souscription aux briques IA"
+      ],
+      [
+        "solutions_ia",
+        "inventaire",
+        "video et mise en avant de l'inventaire"
+      ],
+      [
+        "concessionnaire",
+        "revenu",
+        "abonnement et achat de solutions"
+      ]
+    ]
+  },
+  "replication": {
+    "statut_epistemique": "infere",
+    "prerequis_data": [
+      "Un catalogue d'inventaire riche et propre (fiches, prix, photos, caracteristiques) indexable pour une recherche en langage naturel",
+      "Un historique de comportement de recherche first-party pour cadrer la pertinence des resultats",
+      "Une mesure fiable de la conversion des pages de resultats vers les fiches produit et vers le lead, avant et apres"
+    ],
+    "prerequis_orga": [
+      "Un modele economique de marketplace ou l'essentiel du revenu vient de vendeurs abonnes, pas de la marge sur transaction",
+      "Une equipe produit et data capable d'operer un moteur conversationnel en production et de packager des briques IA en offres commerciales",
+      "Une force commerciale capable de vendre et d'operer ces solutions IA aupres des vendeurs",
+      "Un cadre de conformite pour la transparence IA (AI Act) et la base legale RGPD de la personnalisation"
+    ],
+    "stack_possible": [
+      "Moteur de recherche conversationnel maison couple a un LLM et a un index de l'inventaire",
+      "Generateur de creatives video par annonce pour les vendeurs",
+      "Outils d'expansion de zone de chalandise et de ciblage d'audience",
+      "Reporting consolide en self-service pour les vendeurs"
+    ],
+    "premiere_etape": "Brancher un moteur de recherche conversationnel sur l'inventaire existant d'une seule surface a fort volume, et mesurer la conversion des pages de resultats vers les fiches produit contre l'ancien parcours a filtres, avant d'en faire une brique vendue aux vendeurs.",
+    "playbook": [
+      {
+        "action": "Indexer l'inventaire (fiches, prix, photos, attributs) pour permettre une recherche en langage naturel fiable et multilingue.",
+        "livrable": "Index d'inventaire interrogeable par un assistant conversationnel."
+      },
+      {
+        "action": "Deployer un moteur de recherche conversationnel cote acheteur sur une surface a fort volume, avec transparence sur sa nature IA.",
+        "livrable": "Moteur en production, resultats tracables a l'inventaire source."
+      },
+      {
+        "action": "Mesurer la conversion des pages de resultats vers les fiches produit et le lead, sur la surface equipee contre l'ancien parcours.",
+        "livrable": "Lecture de conversion avant et apres, decision d'extension ou d'arret."
+      },
+      {
+        "action": "Packager les capacites IA en solutions payantes pour les vendeurs (generation de video par annonce, expansion de zone, reporting).",
+        "livrable": "Offre commerciale de briques IA activable par les vendeurs abonnes."
+      },
+      {
+        "action": "Suivre l'effet sur le revenu vendeur et la conversion de leads pour justifier le prix et etendre le catalogue de solutions.",
+        "livrable": "Lecture du revenu vendeur incremental attribuable aux solutions IA."
+      }
+    ],
+    "equipe": "Ingenieurs IA (moteur conversationnel, index d'inventaire, generation video), une equipe produit marketplace, une equipe data pour la mesure de conversion, une equipe commerciale et success pour vendre et operer les solutions aupres des vendeurs, et une fonction conformite RGPD et AI Act impliquee en continu."
+  },
+  "seo": {
+    "slug": "cars-com-carson-ia-monetisation-dealer-2025",
+    "title": "Cars.com : moteur de recherche IA Carson et monetisation dealer - conversion resultats vers fiches +30% (2025)",
+    "meta_description": "Cars.com a lance Carson, moteur de recherche IA en langage naturel : +30% de conversion des resultats vers les fiches, et des briques IA vendues aux concessionnaires (89% du CA).",
+    "resume_citable": "Le 6 novembre 2025, Cars.com a lance Carson, un moteur de recherche IA multilingue en langage naturel qui assiste environ 15% des recherches web et mobile web et ameliore de pres de 30% la conversion des pages de resultats vers les fiches vehicule ; l'IA sert la monetisation d'une marketplace dont environ 89% du CA record de 182 millions USD au T3 2025 vient des concessionnaires abonnes, a qui Cars.com vend aussi des briques IA comme la video d'inventaire (deux fois plus de conversion de leads).",
+    "faq": [
+      {
+        "q": "Qu'est-ce que Carson, le moteur de recherche IA de Cars.com ?",
+        "a": "Carson est un moteur de recherche IA multilingue lance le 6 novembre 2025 qui transforme une requete en langage naturel en resultats cibles, a la place des filtres. Il assiste environ 15% des recherches web et mobile web ; ses utilisateurs reviennent deux fois plus, sauvegardent trois fois plus de vehicules et convertissent pres de 30% mieux des pages de resultats vers les fiches vehicule."
+      },
+      {
+        "q": "En quoi l'IA sert-elle la monetisation de Cars.com ?",
+        "a": "Cars.com est une marketplace dont le revenu vient surtout des concessionnaires abonnes (162 millions USD sur 181,6 millions de CA au T3 2025, soit environ 89%). Le moteur Carson rend la place de marche plus performante cote acheteur, et Cars.com package ses capacites IA en solutions vendues aux concessionnaires, comme AI-Powered Inventory Video, qui affiche deux fois plus de conversion de leads que la video classique."
+      },
+      {
+        "q": "Le cas est-il encore actif ?",
+        "a": "Oui. Carson a ete lance en novembre 2025 avec un rollout de l'app mobile en pilote au T4 2025, et Cars.com a annonce quatre nouvelles solutions IA pour concessionnaires le 29 janvier 2026, ce qui confirme la continuite de la strategie."
+      }
+    ]
+  },
+  "logo_domain": "cars.com"
+}

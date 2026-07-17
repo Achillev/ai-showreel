@@ -1,0 +1,320 @@
+{
+  "id": "cargurus-ia-monetisation-dealers-2026",
+  "type_fiche": "succes",
+  "marque": "CarGurus",
+  "industrie": "auto",
+  "marches_deploiement": [
+    "Etats-Unis",
+    "International (dealers payants CarGurus, dont Royaume-Uni et Canada)"
+  ],
+  "transposable_ue": {
+    "flag": "oui_avec_adaptations",
+    "note": "Le modele est deja international : CarGurus compte 8 360 dealers payants hors Etats-Unis fin 2025, et les Dealer Data Insights sont mesures sur la base des dealers payants mondiaux. La transposition UE porte sur deux points. D'abord la base legale RGPD des 500 millions de signaux first-party captes chaque jour cote acheteurs, qui alimentent la plateforme d'intelligence predictive vendue aux concessionnaires. Ensuite la transparence AI Act sur les surfaces conversationnelles grand public (recherche en langage naturel CG Discover, recommandations et pour/contre generes par IA dans Dealership Mode), ou l'utilisateur doit savoir qu'il dialogue avec une IA et sur quelles donnees reposent les recommandations dites non biaisees."
+  },
+  "metier": "marketplace / marketing digital / produits data pour concessionnaires",
+  "logo_domain": "cargurus.com",
+  "intervenants": [
+    {
+      "nom": "Jason Trevisan",
+      "role": "Chief Executive Officer, CarGurus",
+      "source_ref": "S2"
+    },
+    {
+      "nom": "Dafna Sarnoff",
+      "role": "Chief Marketing Officer, CarGurus",
+      "source_ref": "S3"
+    }
+  ],
+  "axes": {
+    "levier": "monetisation",
+    "touchpoints": [
+      "recherche en langage naturel CG Discover (app et web grand public)",
+      "Dealership Mode dans l'app CarGurus (sur le parking du concessionnaire)",
+      "produits logiciels dealers (Dealer Data Insights, PriceVantage)",
+      "plateforme d'intelligence predictive vendue par abonnement aux concessionnaires"
+    ],
+    "etape_parcours": "consideration et achat cote acheteur, post-vente et operations cote concessionnaire",
+    "famille": "prediction",
+    "pattern": "monetiser une audience proprietaire en revendant aux fournisseurs une intelligence predictive alimentee par les signaux comportementaux des acheteurs",
+    "type_ia": [
+      "IA predictive sur signaux comportementaux",
+      "IA generative (recherche en langage naturel)",
+      "recommandation et scoring",
+      "traitement du langage naturel"
+    ],
+    "plateforme_stack": [
+      "custom/in-house (plateforme d'intelligence predictive et produits logiciels dealers)",
+      "CG Discover (recherche generative maison)",
+      "PriceVantage (produit de pricing dealers)"
+    ],
+    "objectif_metrique": [
+      "revenu par dealer et adoption des produits monetises",
+      "taux d'utilisation des Dealer Data Insights par les dealers payants",
+      "retention et acquisition de dealers",
+      "conversion et engagement des acheteurs sur les surfaces IA"
+    ]
+  },
+  "implementation": "custom",
+  "stack_technique": [
+    {
+      "nom": "CG Discover",
+      "categorie": "outil",
+      "detail": "Experience de recherche generative ou l'acheteur decrit ses priorites (budget, mode de vie, options) en langage naturel plutot que par filtres, et recoit une liste curatee tiree de la selection de vehicules neufs et d'occasion. Presentee comme montant en charge lors de l'earnings Q4 2025.",
+      "url": "https://www.cargurus.com"
+    },
+    {
+      "nom": "Dealership Mode",
+      "categorie": "outil",
+      "detail": "Mode de l'app grand public qui, par geolocalisation, adapte l'experience au concessionnaire ou se trouve l'acheteur : inventaire du parking, details vehicules, pour/contre generes par IA, recommandation presentee comme non biaisee et estimation du prix tout compris. Annonce live pour tous les utilisateurs de l'app.",
+      "url": "https://www.cargurus.com"
+    },
+    {
+      "nom": "Dealer Data Insights",
+      "categorie": "plateforme",
+      "detail": "Rapports d'intelligence issus des signaux first-party des acheteurs, devenus centraux dans le workflow des concessionnaires ; utilises par 60% des dealers payants mondiaux en 2025.",
+      "url": "https://www.cargurus.com"
+    },
+    {
+      "nom": "PriceVantage",
+      "categorie": "plateforme",
+      "detail": "Premier produit logiciel specialise, lance en octobre 2025, qui fait passer les dealers de la consommation passive de donnees a des decisions de pricing orientees action.",
+      "url": "https://www.cargurus.com"
+    }
+  ],
+  "objectif_business": "Faire passer CarGurus d'une place de marche a lead vers un partenaire logiciel du quotidien pour les concessionnaires, en revendant sous forme d'abonnements une intelligence predictive (demande, pricing, inventaire) que la marque produit a partir des signaux comportementaux captes sur ses propres surfaces d'achat. Les experiences IA grand public (Discover, Dealership Mode) attirent et instrumentent l'audience ; cette audience nourrit la plateforme predictive vendue aux dealers.",
+  "points_cles": [
+    "CarGurus revend aux concessionnaires une intelligence predictive nourrie par les signaux de ses acheteurs.",
+    "CG Discover (recherche en langage naturel) et Dealership Mode instrumentent l'audience : environ 500 millions de signaux first-party par jour.",
+    "Dealer Data Insights utilises par 60% des dealers payants mondiaux en 2025 ; produits monetises attendus a +15x en 2026.",
+    "Preuve A : resultats annuels 2025, revenu 907 M USD (+14%), 34 409 dealers payants, statut confirme."
+  ],
+  "description": "CarGurus vend son audience deux fois. Cote acheteur, la marque a deploye des surfaces IA : CG Discover, une recherche generative ou l'utilisateur decrit en langage naturel ce qu'il veut (budget, usage, options) et recoit une liste curatee, et Dealership Mode, un mode de l'app qui se declenche par geolocalisation quand l'acheteur est sur le parking d'un concessionnaire et qui affiche l'inventaire du lot, des pour/contre generes par IA, une recommandation dite non biaisee et un prix tout compris. Dealership Mode est annonce live pour tous les utilisateurs de l'app. Ces surfaces captent en moyenne environ 500 millions de signaux first-party par jour en 2025. CarGurus traduit ces signaux en intelligence predictive sur la demande, le pricing et l'inventaire, puis la revend aux concessionnaires sous forme de produits logiciels. Les Dealer Data Insights, rapports d'intelligence pour concessionnaires, etaient utilises par 60% des dealers payants mondiaux en 2025 ; en octobre 2025 la marque a ajoute PriceVantage, un produit de pricing oriente action. Au niveau du groupe, le revenu annuel 2025 des activites continues a progresse de 14% pour la deuxieme annee consecutive, a 907,0 millions de dollars, avec 34 409 concessionnaires payants. La direction attend des produits dealers monetises lances en 2025 une croissance d'environ 15x en 2026. En parallele, CarGurus a cede son activite de gros CarOffer pour se concentrer sur la place de marche et la plateforme logicielle pour dealers.",
+  "resultats": [
+    {
+      "metrique": "Revenu annuel 2025 des activites continues, deuxieme annee consecutive de croissance a ce rythme",
+      "valeur": "+14%",
+      "citation_exacte": "Full-year revenue grew 14% for the second consecutive year",
+      "source_ref": "S1"
+    },
+    {
+      "metrique": "Part des dealers payants mondiaux utilisant les Dealer Data Insights en 2025",
+      "valeur": "60%",
+      "citation_exacte": "60% of global paying dealers using these insights across their operations",
+      "source_ref": "S2"
+    },
+    {
+      "metrique": "Signaux first-party d'acheteurs ingeres en moyenne chaque jour en 2025",
+      "valeur": "~500M/jour",
+      "citation_exacte": "we ingested approximately 0.5 billion first-party shopper signals each day",
+      "source_ref": "S2"
+    },
+    {
+      "metrique": "Croissance attendue en 2026 des produits dealers monetises lances en 2025",
+      "valeur": "~15x",
+      "citation_exacte": "monetized dealer products we launched in 2025 to grow approximately 15x in 2026",
+      "source_ref": "S2"
+    },
+    {
+      "metrique": "Deploiement de Dealership Mode dans l'app grand public",
+      "valeur": "toute l'app",
+      "citation_exacte": "Dealership Mode now live across all consumer app users",
+      "source_ref": "S2"
+    }
+  ],
+  "niveau_preuve": {
+    "niveau": "A",
+    "justification": "Chiffres issus des resultats annuels et du quatrieme trimestre 2025 de CarGurus, publies le 19 fevrier 2026 : communique officiel de la marque (revenu 907,0 M USD, +14%, 34 409 dealers payants) et transcript de l'earnings call ou le CEO detaille l'adoption des Dealer Data Insights (60%), le volume de signaux first-party (environ 500 millions par jour) et la croissance attendue des produits monetises (environ 15x). Source de type resultats financiers, avec un communique primaire et un transcript concordant."
+  },
+  "dates": {
+    "lancement": "2025 (produits dealers monetises, PriceVantage en octobre 2025) ; fevrier 2026 (mise en avant grand public de CG Discover et Dealership Mode dans la campagne Big Deal)",
+    "derniere_confirmation_activite": "2026-02",
+    "verifie_le": "2026-07-17",
+    "revoir_apres": "2027-01-17"
+  },
+  "statut_vivant": {
+    "statut": "confirme",
+    "note": "Adoption et produits presentes comme en montee lors de l'earnings call du 19 fevrier 2026 : Dealer Data Insights a 60% des dealers payants, CG Discover qui continue de monter en charge, Dealership Mode live pour tous les utilisateurs de l'app. La direction guide une croissance de revenu de 10 a 13% en 2026 et une multiplication par environ 15 des produits monetises lances en 2025. Verification cinq mois apres l'annonce."
+  },
+  "sources": [
+    {
+      "ref": "S1",
+      "type": "document_officiel_sec",
+      "fiabilite": "T1_primaire",
+      "titre": "CarGurus Announces Fourth Quarter and Full-Year 2025 Results",
+      "url": "https://www.globenewswire.com/news-release/2026/02/19/3241535/0/en/CarGurus-Announces-Fourth-Quarter-and-Full-Year-2025-Results.html",
+      "date_publication": "2026-02-19",
+      "consulte_le": "2026-07-17"
+    },
+    {
+      "ref": "S2",
+      "type": "earnings_call",
+      "fiabilite": "T3_presse_etablie",
+      "titre": "CarGurus, Inc. (NASDAQ:CARG) Q4 2025 Earnings Call Transcript",
+      "url": "https://www.insidermonkey.com/blog/cargurus-inc-nasdaqcarg-q4-2025-earnings-call-transcript-1699753/",
+      "date_publication": "2026-02-19",
+      "consulte_le": "2026-07-17"
+    },
+    {
+      "ref": "S3",
+      "type": "blog_officiel",
+      "fiabilite": "T1_primaire",
+      "titre": "CarGurus Expands Big Deal Brand Campaign, Introducing AI-Powered Dealership Mode and CarGurus Discover",
+      "url": "https://www.cargurus.com/about/press/big-deal-2026",
+      "date_publication": "2026-02-11",
+      "consulte_le": "2026-07-17"
+    }
+  ],
+  "fonctionnement_operationnel": {
+    "cadence": "Temps reel sur les surfaces grand public (recherche CG Discover, declenchement geolocalise de Dealership Mode). Ingestion continue des signaux first-party, environ 500 millions par jour en moyenne. Consommation par abonnement cote concessionnaire, avec des rapports d'intelligence utilises dans le workflow quotidien.",
+    "opere_par": "Equipes produit et data de CarGurus pour les surfaces IA et la plateforme predictive ; les concessionnaires payants consomment les Dealer Data Insights et des produits comme PriceVantage dans leurs operations.",
+    "signal_pilote": "Les signaux comportementaux first-party des acheteurs (recherches, comparaisons, interactions sur le parking via Dealership Mode). C'est la matiere premiere de l'intelligence predictive revendue : si le volume ou la qualite de ces signaux baisse, la pertinence des insights sur la demande, le pricing et l'inventaire se degrade, et avec elle la valeur percue des produits dealers.",
+    "etapes": [
+      {
+        "etape": "Capture de l'intention cote acheteur",
+        "detail": "L'acheteur decrit son besoin en langage naturel dans CG Discover, ou entre en Dealership Mode sur le parking d'un concessionnaire pour voir l'inventaire, les pour/contre et une recommandation.",
+        "acteur": "client"
+      },
+      {
+        "etape": "Ingestion des signaux first-party",
+        "detail": "Chaque interaction alimente le socle de donnees ; environ 500 millions de signaux sont ingeres par jour en moyenne en 2025.",
+        "acteur": "IA"
+      },
+      {
+        "etape": "Traduction en intelligence predictive",
+        "detail": "L'IA transforme ces signaux en insights temps reel sur la demande, le pricing et l'inventaire.",
+        "acteur": "IA"
+      },
+      {
+        "etape": "Livraison aux concessionnaires",
+        "detail": "Les insights sont packages en produits logiciels (Dealer Data Insights, PriceVantage) integres au workflow du dealer ; 60% des dealers payants mondiaux utilisaient les Dealer Data Insights en 2025.",
+        "acteur": "equipe data"
+      },
+      {
+        "etape": "Action et monetisation",
+        "detail": "Le concessionnaire ajuste pricing, acquisition d'inventaire et marketing a partir des insights ; l'abonnement a ces produits fait monter le revenu par dealer, suivi trimestre apres trimestre.",
+        "acteur": "client"
+      }
+    ]
+  },
+  "schema_flow": {
+    "statut": "approche_type",
+    "noeuds": [
+      {
+        "id": "consumer_ai",
+        "role_generique": "site_app",
+        "label": "Surfaces IA grand public (CG Discover, Dealership Mode)"
+      },
+      {
+        "id": "signals",
+        "role_generique": "data_source",
+        "label": "Signaux first-party des acheteurs (environ 500M/jour)"
+      },
+      {
+        "id": "predictive",
+        "role_generique": "modele_ia",
+        "label": "Plateforme d'intelligence predictive (demande, pricing, inventaire)"
+      },
+      {
+        "id": "dealer_products",
+        "role_generique": "site_app",
+        "label": "Produits logiciels dealers (Dealer Data Insights, PriceVantage)"
+      },
+      {
+        "id": "dealer",
+        "role_generique": "humain",
+        "label": "Concessionnaire payant (abonnement)"
+      }
+    ],
+    "liens": [
+      [
+        "consumer_ai",
+        "signals",
+        "comportement d'achat capte"
+      ],
+      [
+        "signals",
+        "predictive",
+        "signaux temps reel"
+      ],
+      [
+        "predictive",
+        "dealer_products",
+        "insights predictifs packages"
+      ],
+      [
+        "dealer_products",
+        "dealer",
+        "decisions pricing, inventaire, marketing"
+      ],
+      [
+        "dealer",
+        "consumer_ai",
+        "inventaire et offres exposes a l'acheteur"
+      ]
+    ]
+  },
+  "replication": {
+    "statut_epistemique": "infere",
+    "prerequis_data": [
+      "Une audience proprietaire a fort volume qui genere des signaux comportementaux exploitables (recherches, comparaisons, interactions)",
+      "Une capacite d'ingestion et de structuration de ces signaux en continu, a grande echelle",
+      "Un referentiel d'inventaire et de pricing cote fournisseurs pour ancrer les insights predictifs",
+      "Une base de contenu produit assez riche pour alimenter une recherche en langage naturel"
+    ],
+    "prerequis_orga": [
+      "Une place de marche a deux faces ou les fournisseurs (ici les concessionnaires) paient deja et peuvent monter en gamme vers des produits logiciels",
+      "Une equipe produit et data capable d'operer a la fois des surfaces IA grand public et une plateforme d'analytics vendue par abonnement",
+      "Une base legale RGPD claire pour la reutilisation des signaux first-party et un dispositif de transparence IA (AI Act) sur les surfaces conversationnelles"
+    ],
+    "stack_possible": [
+      "Moteur de recherche generative en langage naturel sur le catalogue",
+      "Recommandation et scoring sur signaux comportementaux",
+      "Plateforme d'analytics predictive (demande, pricing, inventaire)",
+      "Produits logiciels par abonnement livres dans le workflow du fournisseur"
+    ],
+    "premiere_etape": "Identifier le signal comportemental le plus dense de son audience (par exemple ce que les acheteurs comparent avant d'acheter) et en tirer un premier rapport d'intelligence utile a un fournisseur, teste avec un petit groupe de comptes payants avant d'en faire un produit.",
+    "playbook": [
+      {
+        "action": "Cartographier les signaux first-party deja captes par les surfaces d'achat et evaluer lesquels predisent une decision cote fournisseur (demande, prix, rotation d'inventaire).",
+        "livrable": "Inventaire des signaux exploitables, classes par valeur predictive."
+      },
+      {
+        "action": "Deployer une ou deux surfaces IA grand public (recherche en langage naturel, mode contextuel) qui enrichissent la captation de signaux, avec transparence sur leur nature IA.",
+        "livrable": "Surfaces IA en production qui augmentent le volume et la finesse des signaux."
+      },
+      {
+        "action": "Construire une plateforme qui traduit ces signaux en insights predictifs temps reel, puis packager un premier rapport pour les fournisseurs.",
+        "livrable": "Premier produit d'intelligence livre a un panel de comptes payants."
+      },
+      {
+        "action": "Integrer le produit au workflow du fournisseur (pricing, inventaire) et mesurer l'adoption et le revenu par compte plutot que le seul usage.",
+        "livrable": "Produit adopte dans les operations, lecture du revenu incremental par compte."
+      },
+      {
+        "action": "Etendre la gamme (pricing, acquisition d'inventaire, marketing) et suivre la part de fournisseurs actifs sur ces produits comme signal de passage a l'echelle.",
+        "livrable": "Suite de produits monetises, taux d'adoption suivi dans le temps."
+      }
+    ],
+    "equipe": "Ingenieurs IA et data (ingestion des signaux, modeles predictifs, recherche generative) + une equipe produit sur les surfaces grand public + une equipe produit sur les outils dealers + une fonction commerciale et success pour vendre et faire adopter les abonnements + conformite RGPD / AI Act impliquee en continu."
+  },
+  "seo": {
+    "slug": "cargurus-ia-monetisation-dealers-2026",
+    "title": "CarGurus : intelligence predictive IA vendue aux concessionnaires - Dealer Data Insights chez 60% des dealers payants (2026)",
+    "meta_description": "CarGurus monetise ses concessionnaires avec une intelligence predictive IA nourrie par 500M de signaux/jour : Dealer Data Insights chez 60% des dealers payants en 2025.",
+    "resume_citable": "Aux resultats annuels 2025 (publies le 19 fevrier 2026), CarGurus a chiffre sa strategie de monetisation par l'IA : environ 500 millions de signaux first-party d'acheteurs ingeres par jour, transformes en intelligence predictive et revendus aux concessionnaires via des produits comme Dealer Data Insights (utilises par 60% des dealers payants mondiaux) et PriceVantage, avec un revenu annuel de 907,0 millions de dollars en hausse de 14% et des produits monetises attendus en croissance d'environ 15x en 2026.",
+    "faq": [
+      {
+        "q": "Comment CarGurus utilise-t-il l'IA pour monetiser les concessionnaires ?",
+        "a": "CarGurus capte environ 500 millions de signaux first-party d'acheteurs par jour sur ses surfaces d'achat, dont la recherche en langage naturel CG Discover et Dealership Mode. Il traduit ces signaux en intelligence predictive sur la demande, le pricing et l'inventaire, puis la revend aux concessionnaires via des produits logiciels comme Dealer Data Insights et PriceVantage."
+      },
+      {
+        "q": "Quelle est la preuve d'echelle de cette strategie ?",
+        "a": "En 2025, 60% des dealers payants mondiaux utilisaient les Dealer Data Insights dans leurs operations. Le groupe comptait 34 409 concessionnaires payants et un revenu annuel de 907,0 millions de dollars, en hausse de 14%. La direction attend des produits dealers monetises lances en 2025 une croissance d'environ 15x en 2026."
+      },
+      {
+        "q": "Que sont CG Discover et Dealership Mode ?",
+        "a": "CG Discover est une recherche generative ou l'acheteur decrit en langage naturel ce qu'il cherche et recoit une liste curatee. Dealership Mode se declenche par geolocalisation quand l'acheteur est sur le parking d'un concessionnaire et affiche l'inventaire du lot, des pour/contre generes par IA et une recommandation ; il est annonce live pour tous les utilisateurs de l'app."
+      }
+    ]
+  }
+}

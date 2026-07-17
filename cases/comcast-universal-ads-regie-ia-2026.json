@@ -1,0 +1,384 @@
+{
+  "id": "comcast-universal-ads-regie-ia-2026",
+  "type_fiche": "succes",
+  "marque": "Comcast",
+  "groupe": "Comcast Corporation (Comcast Advertising, Universal Ads, FreeWheel, NBCUniversal)",
+  "industrie": "media_entertainment",
+  "marches_deploiement": [
+    "Etats-Unis",
+    "Royaume-Uni (depuis juin 2026, avec Channel 4, ITV et Sky)"
+  ],
+  "transposable_ue": {
+    "flag": "oui_avec_adaptations",
+    "note": "La transposabilite est deja demontree : Universal Ads a ete lance au Royaume-Uni en juin 2026 avec Channel 4, ITV et Sky, apres une annonce a Cannes Lions 2025. Deux contraintes cadrent une extension a l'UE continentale. D'abord l'AI Act, qui impose la transparence sur le contenu genere par IA : les spots produits par l'outil Waymark devront etre signalables comme creations assistees par IA. Ensuite le RGPD sur les donnees de ciblage des campagnes (audiences, mesure), la creation creative elle-meme reposant surtout sur le contenu public du site de l'annonceur, ce qui limite l'exposition en donnee personnelle. L'inventaire concerne (TV et CTV premium) et les regies partenaires locales conditionnent chaque marche."
+  },
+  "metier": "publicite / adtech / regie publicitaire (monetisation media)",
+  "logo_domain": "comcast.com",
+  "intervenants": [
+    {
+      "nom": "Dawn Williamson",
+      "role": "Chief Revenue Officer, Media Solutions (Comcast Advertising)",
+      "source_ref": "S3"
+    },
+    {
+      "nom": "Hayden Gilmer",
+      "role": "Vice President of Revenue, Waymark",
+      "source_ref": "S3"
+    },
+    {
+      "nom": "James Borow",
+      "role": "General Manager, Universal Ads (ancien dirigeant Snap)",
+      "source_ref": "S4"
+    },
+    {
+      "nom": "James Rooke",
+      "role": "President, Comcast Advertising",
+      "source_ref": "S1"
+    }
+  ],
+  "agences": [
+    {
+      "nom": "Waymark",
+      "role": "Partenaire technologique fournissant le moteur d'IA generative qui cree les spots video a partir du site web de l'annonceur",
+      "source_ref": "S3"
+    }
+  ],
+  "axes": {
+    "levier": "monetisation",
+    "touchpoints": [
+      "plateforme self-serve Universal Ads (Universal Ads Manager)",
+      "outil de creation de spots par IA (partenariat Waymark)",
+      "API marketing pour reporting et mesure",
+      "inventaire TV lineaire et CTV premium (NBCUniversal, Paramount, Fox, Warner Bros. Discovery, Roku et autres)",
+      "campagnes Performance+ (optimisation de la diffusion)"
+    ],
+    "etape_parcours": "monetisation de l'inventaire publicitaire (amont annonceur : production creative et achat media)",
+    "famille": "generation",
+    "pattern": "regie publicitaire IA : creation de spots TV par IA generative couplee a une plateforme d'achat self-serve, pour ouvrir l'inventaire premium aux petits annonceurs",
+    "type_ia": [
+      "IA generative video (texte et contenu web vers spot video)",
+      "generation multimodale (voix off, graphismes, langues)",
+      "optimisation automatisee de la diffusion (Performance+)"
+    ],
+    "plateforme_stack": [
+      "Universal Ads / Universal Ads Manager (custom/in-house Comcast)",
+      "FreeWheel (adtech, filiale Comcast)",
+      "Waymark (moteur d'IA generative creative)",
+      "campagnes Performance+",
+      "API marketing"
+    ],
+    "objectif_metrique": [
+      "budgets publicitaires PME captes sur l'inventaire TV premium",
+      "volume de creatives video produites",
+      "portee (foyers atteints)",
+      "part de l'inventaire premium monetisee"
+    ]
+  },
+  "implementation": "hybride",
+  "stack_technique": [
+    {
+      "nom": "Universal Ads / Universal Ads Manager",
+      "categorie": "plateforme",
+      "detail": "Plateforme d'achat publicitaire self-serve gratuite, construite sur la technologie adtech de FreeWheel, qui donne acces a l'inventaire TV et CTV premium de plusieurs editeurs et gere le ciblage, le budget et la mise en ligne des campagnes.",
+      "url": "https://www.universalads.com"
+    },
+    {
+      "nom": "FreeWheel",
+      "categorie": "plateforme",
+      "detail": "Filiale adtech de Comcast dont la technologie sert de socle a Universal Ads pour l'acces cross-editeurs a l'inventaire premium.",
+      "url": "https://www.freewheel.com"
+    },
+    {
+      "nom": "Waymark",
+      "categorie": "outil",
+      "detail": "Moteur d'IA generative qui scanne le site web de l'annonceur et produit un spot video ajustable (message, graphismes, styles de voix off, langue).",
+      "url": "https://waymark.com"
+    },
+    {
+      "nom": "Performance+",
+      "categorie": "outil",
+      "detail": "Type de campagne Universal Ads qui optimise en continu la diffusion selon l'objectif (reach incremental, frequence, ventes online, installs d'app, volume d'appels), etendu a l'inventaire lineaire en avril 2026.",
+      "url": "https://www.universalads.com"
+    }
+  ],
+  "objectif_business": "Capter les budgets publicitaires des PME et des annonceurs digital-native en supprimant les deux freins qui les tenaient a l'ecart de la TV premium : le cout et le delai de production d'un spot d'un cote, la complexite d'achat de l'espace de l'autre. La creation de spots par IA (Waymark) leve le premier frein, la plateforme self-serve Universal Ads (socle adtech FreeWheel) leve le second. Comcast monetise ainsi un inventaire TV et CTV premium encore largement absent du programmatique.",
+  "points_cles": [
+    "Universal Ads, plateforme d'achat pub self-serve gratuite sur techno FreeWheel, ouvre l'inventaire TV et CTV premium aux petits annonceurs.",
+    "Un outil IA developpe avec Waymark genere un spot pret a diffuser a partir du site web de l'annonceur, en minutes.",
+    "Des milliers de creatives video deja produites ; inventaire atteignant plus de 90% des foyers americains.",
+    "Toujours actif : inventaire lineaire en self-service en avril 2026, lancement au Royaume-Uni avec Channel 4, ITV et Sky en juin 2026."
+  ],
+  "description": "Comcast a lance Universal Ads, une plateforme d'achat publicitaire self-serve gratuite ouverte au premier trimestre 2025 et construite sur la technologie adtech de sa filiale FreeWheel. Elle donne aux annonceurs de toute taille un acces direct a l'inventaire TV et CTV premium de NBCUniversal, Paramount, Fox, Warner Bros. Discovery, Roku et d'autres editeurs, soit une portee de plus de 90% des foyers americains. La brique IA est arrivee en mai 2025, avec un outil de creation de spots developpe en partenariat avec Waymark. L'annonceur entre l'adresse de son site, l'IA scanne le contenu et genere un spot video pret a diffuser, que l'on ajuste ensuite : message, graphismes, styles de voix off, langue. L'objectif est d'abaisser la double barriere de la TV pour les PME, le cout et le delai de production creative d'abord, la complexite d'achat ensuite. Depuis, Comcast a etendu la plateforme a l'inventaire lineaire en self-service (avril 2026, via des campagnes Performance+ qui optimisent la diffusion) et l'a lancee au Royaume-Uni avec Channel 4, ITV et Sky (juin 2026). L'enjeu de monetisation : capter les budgets des annonceurs digital-native et des PME qui trouvaient la TV hors de portee, sur un inventaire premium encore peu transige en programmatique, de l'ordre de 20%.",
+  "resultats": [
+    {
+      "metrique": "Creatives video produites depuis la mise a disposition de l'outil IA (mai 2025)",
+      "valeur": "des milliers",
+      "citation_exacte": "thousands of new video creatives have been built for advertisers",
+      "source_ref": "S3"
+    },
+    {
+      "metrique": "Portee de l'inventaire premium accessible via Universal Ads (foyers americains)",
+      "valeur": "90%+ des foyers US",
+      "citation_exacte": "premium, brand-safe video that reaches over 90% of U.S. Households",
+      "source_ref": "S1"
+    },
+    {
+      "metrique": "Vitesse de production creative revendiquee pour un spot genere par IA",
+      "valeur": "en minutes",
+      "citation_exacte": "the ability to create effective, high-quality video ads in minutes",
+      "source_ref": "S3"
+    },
+    {
+      "metrique": "Part de la video premium transigee en programmatique (le gap de monetisation vise)",
+      "valeur": "environ 20%",
+      "citation_exacte": "only about 20% of premium video is transacted programmatically",
+      "source_ref": "S1"
+    }
+  ],
+  "niveau_preuve": {
+    "niveau": "B",
+    "justification": "Les chiffres proviennent des communiques officiels de Comcast (Comcast Advertising, Universal Ads) et de son partenaire Waymark : adoption (des milliers de creatives produites), portee de l'inventaire (plus de 90% des foyers americains), part programmatique de la video premium. Communique primaire de la marque-sujet plus reproductions concordantes dans la presse specialisee. Ce ne sont pas des chiffres d'earnings pour cette brique precise, d'ou le niveau B (etude de cas plateforme/vendor chiffree, multi-sources concordantes)."
+  },
+  "dates": {
+    "lancement": "T1 2025 (Universal Ads, annonce au CES en janvier 2025) ; mai 2025 pour l'outil de creation de spots par IA (Waymark)",
+    "derniere_confirmation_activite": "2026-06",
+    "verifie_le": "2026-07-17",
+    "revoir_apres": "2027-01-17"
+  },
+  "statut_vivant": {
+    "statut": "confirme",
+    "note": "Plateforme en expansion active : ajout de l'inventaire TV lineaire en self-service en avril 2026 (campagnes Performance+), lancement au Royaume-Uni avec Channel 4, ITV et Sky en juin 2026, et nomination d'un responsable de l'expansion internationale (David Shaw). L'outil de creation de spots par IA reste central dans l'offre depuis mai 2025."
+  },
+  "sources": [
+    {
+      "ref": "S1",
+      "type": "blog_officiel",
+      "fiabilite": "T1_primaire",
+      "titre": "Comcast to Launch Industry-Changing, Cross-Publisher Advertising Solution For the Premium Video Category",
+      "url": "https://corporate.comcast.com/press/releases/comcast-cross-publisher-advertising-solution-premium-video-category",
+      "date_publication": "2025-01-06",
+      "consulte_le": "2026-07-17"
+    },
+    {
+      "ref": "S2",
+      "type": "presse",
+      "fiabilite": "T3_presse_etablie",
+      "titre": "Comcast Targets Social Media Advertisers with New Self-Serve Platform 'Universal Ads'",
+      "url": "https://videoweek.com/2025/01/07/comcast-targets-social-media-advertisers-with-new-self-serve-platform-universal-ads/",
+      "date_publication": "2025-01-07",
+      "consulte_le": "2026-07-17"
+    },
+    {
+      "ref": "S3",
+      "type": "presse",
+      "fiabilite": "T4_secondaire",
+      "titre": "Comcast Advertising Introduces AI Platform for Small and Local Businesses",
+      "url": "https://www.telecompetitor.com/comcast-advertising-introduces-ai-platform-for-small-and-local-businesses/",
+      "date_publication": "2025-05",
+      "consulte_le": "2026-07-17"
+    },
+    {
+      "ref": "S4",
+      "type": "presse",
+      "fiabilite": "T4_secondaire",
+      "titre": "Comcast's Universal Ads Makes Linear TV Self-Service, Bringing Incremental TV Reach to Advertisers of Any Size",
+      "url": "https://martechseries.com/sales-marketing/programmatic-buying/comcasts-universal-ads-makes-linear-tv-self-service-bringing-incremental-tv-reach-to-advertisers-of-any-size/",
+      "date_publication": "2026-04-27",
+      "consulte_le": "2026-07-17"
+    },
+    {
+      "ref": "S5",
+      "type": "presse",
+      "fiabilite": "T3_presse_etablie",
+      "titre": "Comcast's Universal Ads Launches in the UK with Channel 4, ITV & Sky",
+      "url": "https://www.exchangewire.com/blog/2026/06/23/comcasts-universal-ads-launches-in-the-uk-with-channel-4-itv-sky-to-simplify-access-to-premium-tv-advertising-for-smes/",
+      "date_publication": "2026-06-23",
+      "consulte_le": "2026-07-17"
+    }
+  ],
+  "fonctionnement_operationnel": {
+    "cadence": "Creation creative a la demande (un spot genere en minutes), achat et lancement self-serve par campagne, optimisation continue de la diffusion via les campagnes Performance+.",
+    "opere_par": "L'annonceur lui-meme, en self-service, sur Universal Ads Manager. Comcast Advertising / Universal Ads exploite la plateforme, le socle FreeWheel et l'acces a l'inventaire premium. Waymark fournit le moteur d'IA generative de creation video.",
+    "signal_pilote": "L'objectif de campagne selectionne (reach incremental, frequence, ventes online, installs d'app, volume d'appels), sur lequel Performance+ optimise la diffusion. En amont, le contenu du site web de l'annonceur alimente la generation du spot : un site pauvre ou absent degrade la qualite de la creative produite.",
+    "etapes": [
+      {
+        "etape": "Saisie du site web",
+        "detail": "L'annonceur entre l'adresse de son site dans l'outil de creation. Aucun brief creatif ni tournage prealable.",
+        "acteur": "client"
+      },
+      {
+        "etape": "Scan et generation du spot",
+        "detail": "L'IA Waymark scanne le contenu du site et genere un spot video pret a diffuser.",
+        "acteur": "IA"
+      },
+      {
+        "etape": "Personnalisation de la creative",
+        "detail": "L'annonceur ajuste le spot : message, graphismes, styles de voix off, langue, jusqu'a la version voulue.",
+        "acteur": "client"
+      },
+      {
+        "etape": "Achat self-serve et ciblage",
+        "detail": "Sur Universal Ads Manager, l'annonceur choisit son budget et sa cible, puis lance la campagne sur l'inventaire TV et CTV premium.",
+        "acteur": "client"
+      },
+      {
+        "etape": "Diffusion et optimisation",
+        "detail": "FreeWheel diffuse la campagne ; les campagnes Performance+ optimisent la delivrance selon l'objectif fixe.",
+        "acteur": "IA"
+      }
+    ]
+  },
+  "schema_flow": {
+    "statut": "documente",
+    "noeuds": [
+      {
+        "id": "annonceur",
+        "role_generique": "humain",
+        "label": "Annonceur PME / digital-native (self-serve)"
+      },
+      {
+        "id": "site",
+        "role_generique": "data_source",
+        "label": "Site web de l'annonceur (entree de la generation)"
+      },
+      {
+        "id": "waymark",
+        "role_generique": "modele_ia",
+        "label": "IA generative Waymark (scan du site, creation du spot)",
+        "outil_documente": "Waymark"
+      },
+      {
+        "id": "creative",
+        "role_generique": "site_app",
+        "label": "Spot video ajustable (message, graphismes, voix off, langue)"
+      },
+      {
+        "id": "uam",
+        "role_generique": "paid_platform",
+        "label": "Universal Ads Manager (achat self-serve, budget, ciblage)",
+        "outil_documente": "Universal Ads"
+      },
+      {
+        "id": "freewheel",
+        "role_generique": "paid_platform",
+        "label": "FreeWheel (adtech, diffusion, Performance+)",
+        "outil_documente": "FreeWheel"
+      },
+      {
+        "id": "inventaire",
+        "role_generique": "data_source",
+        "label": "Inventaire TV/CTV premium (NBCUniversal, Paramount, Fox, WBD, Roku...)"
+      },
+      {
+        "id": "viewer",
+        "role_generique": "humain",
+        "label": "Telespectateur (TV lineaire et streaming)"
+      }
+    ],
+    "liens": [
+      [
+        "annonceur",
+        "site",
+        "fournit l'URL"
+      ],
+      [
+        "site",
+        "waymark",
+        "scan du contenu"
+      ],
+      [
+        "waymark",
+        "creative",
+        "spot genere"
+      ],
+      [
+        "annonceur",
+        "creative",
+        "personnalise message, voix, langue"
+      ],
+      [
+        "creative",
+        "uam",
+        "creative prete a diffuser"
+      ],
+      [
+        "uam",
+        "freewheel",
+        "achat self-serve et ciblage"
+      ],
+      [
+        "freewheel",
+        "inventaire",
+        "diffusion optimisee (Performance+)"
+      ],
+      [
+        "inventaire",
+        "viewer",
+        "spot diffuse sur TV/CTV premium"
+      ]
+    ]
+  },
+  "replication": {
+    "statut_epistemique": "infere",
+    "prerequis_data": [
+      "Un inventaire publicitaire premium propre a monetiser (le sien ou celui d'editeurs partenaires), avec une portee et un ciblage exploitables",
+      "L'acces au contenu public des sites des annonceurs comme matiere premiere de la generation creative",
+      "Des signaux de diffusion (delivrance, frequence, objectifs de campagne) pour alimenter l'optimisation"
+    ],
+    "prerequis_orga": [
+      "Une position de regie ou d'agregateur d'inventaire (sell-side) cherchant a elargir sa base d'annonceurs vers les PME",
+      "Un partenariat ou un moteur d'IA generative video capable de produire des spots diffusables a la marque",
+      "Un cadre de conformite pour la transparence AI Act sur les creatives generees et le RGPD sur les donnees de ciblage"
+    ],
+    "stack_possible": [
+      "Plateforme d'achat self-serve construite sur un socle adtech (type FreeWheel)",
+      "Moteur d'IA generative video branche sur le site de l'annonceur (type Waymark)",
+      "API marketing pour reporting et mesure",
+      "Campagnes optimisees a l'objectif sur inventaire lineaire et streaming"
+    ],
+    "premiere_etape": "Brancher un outil de creation de spots par IA sur une premiere poche d'annonceurs PME nouveaux a la TV, en generant la creative depuis leur site web, puis mesurer le volume de campagnes reellement lancees et diffusees plutot que le nombre de creatives seulement generees.",
+    "playbook": [
+      {
+        "action": "Cartographier l'inventaire premium disponible a la monetisation et la barriere qui tient les petits annonceurs a l'ecart (production creative, complexite d'achat).",
+        "livrable": "Diagnostic de l'inventaire sous-exploite et du frein annonceur dominant."
+      },
+      {
+        "action": "Integrer un moteur d'IA generative qui produit un spot diffusable a partir du site web de l'annonceur, avec personnalisation message, voix et langue.",
+        "livrable": "Outil de creation de spots par IA operationnel en self-service."
+      },
+      {
+        "action": "Coupler l'outil creatif a une plateforme d'achat self-serve gratuite (budget, ciblage, mise en ligne) sur socle adtech.",
+        "livrable": "Parcours complet, de la creation a la diffusion, sans intermediaire."
+      },
+      {
+        "action": "Optimiser la diffusion a l'objectif (reach, frequence, ventes, appels) et suivre la conversion des annonceurs generes vers des campagnes payantes.",
+        "livrable": "Boucle de mesure : creatives generees, campagnes lancees, budgets captes."
+      },
+      {
+        "action": "Etendre l'inventaire (lineaire plus streaming) et les marches, en tenant la conformite IA et donnees.",
+        "livrable": "Couverture elargie de l'inventaire et des geographies."
+      }
+    ],
+    "equipe": "Une equipe adtech/produit pour la plateforme self-serve et l'integration du socle de diffusion, une equipe partenariats IA pour le moteur creatif, une equipe sell-side/regie pour l'inventaire et la relation editeurs, et une fonction conformite (AI Act, RGPD) impliquee en continu."
+  },
+  "seo": {
+    "slug": "comcast-universal-ads-regie-ia-2026",
+    "title": "Comcast Universal Ads : regie IA et creation de spots par IA - des milliers de creatives et 90%+ des foyers US (2026)",
+    "meta_description": "Comcast monetise une regie pub IA : Universal Ads (self-serve, techno FreeWheel) plus un outil Waymark qui genere des spots TV en minutes. Des milliers de creatives, 90%+ des foyers US.",
+    "resume_citable": "Comcast a lance Universal Ads, plateforme d'achat pub self-serve gratuite sur techno FreeWheel, doublee en mai 2025 d'un outil d'IA generative (Waymark) qui cree un spot TV pret a diffuser a partir du site web de l'annonceur en minutes : des milliers de creatives produites, un inventaire premium atteignant plus de 90% des foyers americains, etendu au lineaire self-service (avril 2026) et au Royaume-Uni (juin 2026).",
+    "faq": [
+      {
+        "q": "Comment fonctionne l'outil de creation de spots par IA de Comcast ?",
+        "a": "L'annonceur entre l'adresse de son site, l'IA (developpee avec Waymark) scanne le contenu et genere un spot video pret a diffuser, ajustable ensuite en message, graphismes, styles de voix off et langue. La revendication est de produire un spot en minutes."
+      },
+      {
+        "q": "Qu'est-ce que Universal Ads et sur quelle technologie repose-t-il ?",
+        "a": "Universal Ads est une plateforme d'achat publicitaire self-serve gratuite lancee au premier trimestre 2025, construite sur la technologie adtech de FreeWheel (filiale de Comcast). Elle donne aux annonceurs de toute taille un acces direct a l'inventaire TV et CTV premium de NBCUniversal, Paramount, Fox, Warner Bros. Discovery, Roku et d'autres editeurs."
+      },
+      {
+        "q": "Le dispositif est-il toujours actif en 2026 ?",
+        "a": "Oui. Universal Ads a ajoute l'inventaire TV lineaire en self-service en avril 2026 (campagnes Performance+) et a ete lance au Royaume-Uni avec Channel 4, ITV et Sky en juin 2026, avec un responsable dedie a l'expansion internationale."
+      }
+    ]
+  }
+}

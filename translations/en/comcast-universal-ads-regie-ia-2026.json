@@ -1,0 +1,142 @@
+{
+  "transposable_ue": {
+    "note": "Transposability is already proven: Universal Ads launched in the United Kingdom in June 2026 with Channel 4, ITV and Sky, after an announcement at Cannes Lions 2025. Two constraints frame an extension to continental Europe. First the AI Act, which requires transparency on AI-generated content: spots produced by the Waymark tool will need to be flaggable as AI-assisted creations. Second the GDPR on campaign targeting data (audiences, measurement), with the creative production itself relying mostly on the public content of the advertiser's website, which limits exposure to personal data. The inventory involved (premium TV and CTV) and local partner sales houses condition each market."
+  },
+  "pattern": "AI ad sales operation: generative AI production of TV spots coupled with a self-serve buying platform, to open premium inventory to small advertisers.",
+  "etape_parcours": "monetization of ad inventory (upstream advertiser side: creative production and media buying)",
+  "objectif_business": "Capture the ad budgets of SMBs and digital-native advertisers by removing the two barriers that kept them out of premium TV: the cost and lead time of producing a spot on one side, the complexity of buying the space on the other. AI spot creation (Waymark) lifts the first barrier, the Universal Ads self-serve platform (FreeWheel adtech foundation) lifts the second. Comcast thereby monetizes premium TV and CTV inventory that is still largely absent from programmatic.",
+  "description": "Comcast launched Universal Ads, a free self-serve ad-buying platform opened in the first quarter of 2025 and built on the adtech technology of its subsidiary FreeWheel. It gives advertisers of any size direct access to the premium TV and CTV inventory of NBCUniversal, Paramount, Fox, Warner Bros. Discovery, Roku and other publishers, a reach of more than 90% of U.S. households. The AI component arrived in May 2025, with a spot-creation tool developed in partnership with Waymark. The advertiser enters its website address, the AI scans the content and generates a ready-to-air video spot, which is then adjusted: message, graphics, voice-over styles, language. The goal is to lower TV's double barrier for SMBs, the cost and lead time of creative production first, the buying complexity next. Since then, Comcast has extended the platform to self-serve linear inventory (April 2026, through Performance+ campaigns that optimize delivery) and launched it in the United Kingdom with Channel 4, ITV and Sky (June 2026). The monetization stake: capture the budgets of digital-native advertisers and SMBs that found TV out of reach, on premium inventory still lightly traded in programmatic, on the order of 20%.",
+  "points_cles": [
+    "Universal Ads, a free self-serve ad-buying platform on FreeWheel technology, opens premium TV and CTV inventory to small advertisers.",
+    "An AI tool developed with Waymark generates a ready-to-air spot from the advertiser's website, in minutes.",
+    "Thousands of video creatives already produced; inventory reaching more than 90% of U.S. households.",
+    "Still active: self-serve linear inventory in April 2026, UK launch with Channel 4, ITV and Sky in June 2026."
+  ],
+  "resultats": [
+    {
+      "metrique": "Video creatives produced since the AI tool became available (May 2025)"
+    },
+    {
+      "metrique": "Reach of the premium inventory accessible through Universal Ads (U.S. households)"
+    },
+    {
+      "metrique": "Claimed creative production speed for an AI-generated spot"
+    },
+    {
+      "metrique": "Share of premium video traded programmatically (the targeted monetization gap)"
+    }
+  ],
+  "niveau_preuve": {
+    "justification": "The figures come from official releases by Comcast (Comcast Advertising, Universal Ads) and its partner Waymark: adoption (thousands of creatives produced), inventory reach (more than 90% of U.S. households), programmatic share of premium video. Primary release from the subject brand plus concordant reproductions in the trade press. These are not earnings figures for this specific component, hence level B (a quantified platform/vendor case study, concordant across multiple sources)."
+  },
+  "stack_technique": [
+    {
+      "detail": "A free self-serve ad-buying platform, built on FreeWheel's adtech technology, that provides access to the premium TV and CTV inventory of several publishers and handles campaign targeting, budget and go-live."
+    },
+    {
+      "detail": "Comcast's adtech subsidiary whose technology serves as the foundation for Universal Ads' cross-publisher access to premium inventory."
+    },
+    {
+      "detail": "A generative AI engine that scans the advertiser's website and produces an adjustable video spot (message, graphics, voice-over styles, language)."
+    },
+    {
+      "detail": "A Universal Ads campaign type that continuously optimizes delivery according to the objective (incremental reach, frequency, online sales, app installs, call volume), extended to linear inventory in April 2026."
+    }
+  ],
+  "fonctionnement_operationnel": {
+    "cadence": "On-demand creative production (a spot generated in minutes), self-serve buying and launch per campaign, continuous delivery optimization through Performance+ campaigns.",
+    "opere_par": "The advertiser itself, self-serve, on Universal Ads Manager. Comcast Advertising / Universal Ads runs the platform, the FreeWheel foundation and access to premium inventory. Waymark provides the generative AI engine for video creation.",
+    "signal_pilote": "The selected campaign objective (incremental reach, frequency, online sales, app installs, call volume), which Performance+ optimizes delivery against. Upstream, the content of the advertiser's website feeds spot generation: a thin or missing site degrades the quality of the creative produced.",
+    "etapes": [
+      {
+        "etape": "Website entry",
+        "detail": "The advertiser enters its website address into the creation tool. No creative brief or prior shoot.",
+        "acteur": "client"
+      },
+      {
+        "etape": "Scan and spot generation",
+        "detail": "The Waymark AI scans the site content and generates a ready-to-air video spot.",
+        "acteur": "IA"
+      },
+      {
+        "etape": "Creative customization",
+        "detail": "The advertiser adjusts the spot: message, graphics, voice-over styles, language, up to the desired version.",
+        "acteur": "client"
+      },
+      {
+        "etape": "Self-serve buying and targeting",
+        "detail": "On Universal Ads Manager, the advertiser chooses its budget and target, then launches the campaign on premium TV and CTV inventory.",
+        "acteur": "client"
+      },
+      {
+        "etape": "Delivery and optimization",
+        "detail": "FreeWheel delivers the campaign; Performance+ campaigns optimize delivery according to the set objective.",
+        "acteur": "IA"
+      }
+    ]
+  },
+  "replication": {
+    "prerequis_data": [
+      "Premium ad inventory of one's own to monetize (owned or from partner publishers), with usable reach and targeting",
+      "Access to the public content of advertisers' websites as raw material for creative generation",
+      "Delivery signals (delivery, frequency, campaign objectives) to feed optimization"
+    ],
+    "prerequis_orga": [
+      "A sales-house or inventory-aggregator position (sell-side) seeking to broaden its advertiser base toward SMBs",
+      "A partnership with, or an in-house, generative video AI engine able to produce on-brand airable spots",
+      "A compliance framework for AI Act transparency on generated creatives and GDPR on targeting data"
+    ],
+    "stack_possible": [
+      "A self-serve buying platform built on an adtech foundation (FreeWheel type)",
+      "A generative video AI engine wired to the advertiser's website (Waymark type)",
+      "A marketing API for reporting and measurement",
+      "Objective-optimized campaigns on linear and streaming inventory"
+    ],
+    "premiere_etape": "Wire an AI spot-creation tool to a first pocket of SMB advertisers new to TV, generating the creative from their website, then measure the volume of campaigns actually launched and delivered rather than the number of creatives merely generated.",
+    "playbook": [
+      {
+        "action": "Map the premium inventory available for monetization and the barrier that keeps small advertisers out (creative production, buying complexity).",
+        "livrable": "Diagnosis of underused inventory and the dominant advertiser barrier."
+      },
+      {
+        "action": "Integrate a generative AI engine that produces an airable spot from the advertiser's website, with message, voice and language customization.",
+        "livrable": "An AI spot-creation tool live in self-serve."
+      },
+      {
+        "action": "Couple the creative tool with a free self-serve buying platform (budget, targeting, go-live) on an adtech foundation.",
+        "livrable": "A complete path, from creation to delivery, with no intermediary."
+      },
+      {
+        "action": "Optimize delivery to the objective (reach, frequency, sales, calls) and track the conversion of generated advertisers into paid campaigns.",
+        "livrable": "A measurement loop: creatives generated, campaigns launched, budgets captured."
+      },
+      {
+        "action": "Extend the inventory (linear plus streaming) and the markets, while holding AI and data compliance.",
+        "livrable": "Broadened coverage of inventory and geographies."
+      }
+    ],
+    "equipe": "An adtech/product team for the self-serve platform and the delivery-foundation integration, an AI partnerships team for the creative engine, a sell-side/sales-house team for the inventory and publisher relationships, and a compliance function (AI Act, GDPR) involved on an ongoing basis."
+  },
+  "statut_vivant": {
+    "note": "Platform in active expansion: addition of self-serve linear TV inventory in April 2026 (Performance+ campaigns), UK launch with Channel 4, ITV and Sky in June 2026, and appointment of a head of international expansion (David Shaw). The AI spot-creation tool has remained central to the offering since May 2025."
+  },
+  "seo": {
+    "title": "Comcast Universal Ads: AI ad sales and AI spot creation - thousands of creatives and 90%+ of U.S. households (2026)",
+    "meta_description": "Comcast monetizes an AI ad sales operation: Universal Ads (self-serve, FreeWheel technology) plus a Waymark tool that generates TV spots in minutes. Thousands of creatives, 90%+ of U.S. households.",
+    "resume_citable": "Comcast launched Universal Ads, a free self-serve ad-buying platform on FreeWheel technology, paired in May 2025 with a generative AI tool (Waymark) that creates a ready-to-air TV spot from the advertiser's website in minutes: thousands of creatives produced, premium inventory reaching more than 90% of U.S. households, extended to self-serve linear (April 2026) and to the United Kingdom (June 2026).",
+    "faq": [
+      {
+        "q": "How does Comcast's AI spot-creation tool work?",
+        "a": "The advertiser enters its website address, the AI (developed with Waymark) scans the content and generates a ready-to-air video spot, then adjustable in message, graphics, voice-over styles and language. The claim is to produce a spot in minutes."
+      },
+      {
+        "q": "What is Universal Ads and what technology is it built on?",
+        "a": "Universal Ads is a free self-serve ad-buying platform launched in the first quarter of 2025, built on FreeWheel's adtech technology (a Comcast subsidiary). It gives advertisers of any size direct access to the premium TV and CTV inventory of NBCUniversal, Paramount, Fox, Warner Bros. Discovery, Roku and other publishers."
+      },
+      {
+        "q": "Is the setup still active in 2026?",
+        "a": "Yes. Universal Ads added self-serve linear TV inventory in April 2026 (Performance+ campaigns) and launched in the United Kingdom with Channel 4, ITV and Sky in June 2026, with a dedicated head of international expansion."
+      }
+    ]
+  }
+}
