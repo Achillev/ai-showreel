@@ -20,7 +20,7 @@ const CASES_DIR = join(ROOT, 'cases');
 const DIST = join(ROOT, 'dist');
 
 // Adresse de réception des corrections (à remplacer par l'adresse projet au moment du naming).
-const FEEDBACK_EMAIL = 'access@starfox-analytics.com';
+const FEEDBACK_EMAIL = 'oracle@ai-showreel.com';
 
 function mailto(subject, body) {
   return `mailto:${FEEDBACK_EMAIL}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
