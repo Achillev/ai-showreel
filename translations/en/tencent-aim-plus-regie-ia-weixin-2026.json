@@ -1,0 +1,137 @@
+{
+  "transposable_ue": {
+    "note": "The pattern itself, an AI ad recommendation engine coupled with automated campaign management on proprietary inventory, already exists in Europe at the large platforms. What does not transpose as-is is the foundation: the Weixin closed loop (mini programs, mini shops, video accounts, payment) that gives Tencent its own conversion signal. A European publisher will have to rebuild that signal from its own transactional journey, under GDPR constraints on targeting and AI Act transparency requirements on automated delivery."
+  },
+  "pattern": "AI ad sales operation: retrained ad recommendation model plus automated campaign management, on proprietary closed-loop social inventory",
+  "etape_parcours": "monetization of ad inventory (upstream advertiser side: targeting, bidding and campaign management)",
+  "objectif_business": "Monetize an already massive ad inventory more heavily without increasing the ad load users see. The lever is not impression volume but unit value: better ad-to-user matching improves performance, and therefore the price an advertiser will pay. In parallel, automating campaign management lowers the entry cost for a category of advertisers with no media team, in particular mini game publishers, mini drama publishers and mini shops.",
+  "description": "In the first quarter of 2026, Tencent's advertising growth rested on two distinct AI components. The first is the ad recommendation engine, upgraded and coupled with an expansion of closed-loop marketing capabilities inside the Weixin ecosystem: when the ad, the mini program, the mini shop and the payment all live in the same application, the conversion signal comes back to the model instead of getting lost. Tencent explicitly ties this improvement to two effects, ad performance and ad pricing. The second component is AIM+, Tencent Ads' automated campaign management solution, launched in November 2025 according to KrASIA. The advertiser hands campaign management over instead of setting targeting and bids itself. In the first quarter of 2026, AIM+ powered roughly 30% of all advertiser marketing services spending, with marked adoption among three categories born inside the ecosystem: mini games, mini dramas and mini shops. These are precisely the advertisers with no structured media team, for whom automation is the condition of entry. The commercial result is published: RMB 38.2 billion in Marketing Services revenue for the quarter, up 20% year over year, on group revenue of RMB 196.5 billion, up 9%. Advertising is therefore growing more than twice as fast as the group.",
+  "points_cles": [
+    "Tencent upgraded its ad recommendation model and expanded closed-loop marketing inside Weixin.",
+    "AIM+, its automated campaign management suite, powers roughly 30% of advertiser ad spending.",
+    "Marketing Services revenue reached RMB 38.2 billion in Q1 2026, up 20% year over year.",
+    "Level A evidence: figures published in the results announcement of May 13, 2026."
+  ],
+  "resultats": [
+    {
+      "metrique": "Share of advertiser ad spending powered by the AIM+ automated campaign management solution (Q1 2026)"
+    },
+    {
+      "metrique": "Marketing Services revenue in the first quarter of 2026, year-over-year growth"
+    },
+    {
+      "metrique": "Stated effect of the ad recommendation model upgrade"
+    },
+    {
+      "metrique": "Advertiser categories where AIM+ adoption is strongest"
+    }
+  ],
+  "niveau_preuve": {
+    "justification": "Every figure retained comes from Tencent's first quarter 2026 results announcement, published on May 13, 2026: share of advertiser spending powered by AIM+, Marketing Services revenue and year-over-year growth, stated effect on ad performance and pricing. Primary document from the subject brand, corroborated by KrASIA coverage (May 22, 2026), which repeats the same figures and dates the AIM+ launch to November 2025."
+  },
+  "stack_technique": [
+    {
+      "detail": "Tencent Ads' automated media buying suite. It takes over campaign management on the advertiser side and powered roughly 30% of reported marketing services spending in the first quarter of 2026, with strong adoption among mini game, mini drama and mini shop advertisers."
+    },
+    {
+      "detail": "Ad recommendation model upgraded in the first quarter of 2026, coupled with an expansion of closed-loop marketing capabilities inside the Weixin ecosystem."
+    }
+  ],
+  "fonctionnement_operationnel": {
+    "cadence": "Real-time delivery and bidding on every impression; continuous campaign management on the AIM+ side; recommendation model retraining on product cycles that are not published.",
+    "opere_par": "Tencent Ads advertising and machine learning teams for the engine and the buying suite. On the advertiser side, the campaign is handed to AIM+: the media team sets the objective and the budget rather than the settings.",
+    "signal_pilote": "The conversion signal from the Weixin closed loop (mini program, mini shop, payment). That is what lets the model learn what actually converts. Outside a closed loop, the model falls back on engagement signals, and the improvement in performance and pricing that Tencent describes does not reproduce.",
+    "etapes": [
+      {
+        "etape": "Setting the campaign objective",
+        "detail": "The advertiser declares its objective and budget in AIM+ instead of configuring targeting and bids by hand.",
+        "acteur": "client"
+      },
+      {
+        "etape": "Automated creation and management of campaign units",
+        "detail": "AIM+ takes over campaign management: building the units, allocating budget, adjusting bids.",
+        "acteur": "AI"
+      },
+      {
+        "etape": "Ad-to-user matching",
+        "detail": "The ad recommendation engine ranks candidate ads for each impression across Weixin inventory.",
+        "acteur": "AI"
+      },
+      {
+        "etape": "Closed-loop conversion",
+        "detail": "The user stays inside Weixin to buy (mini program, mini shop, payment), which closes the loop.",
+        "acteur": "client"
+      },
+      {
+        "etape": "Signal returned to the model",
+        "detail": "Conversions observed inside the closed loop feed the recommendation engine, which improves performance and pricing.",
+        "acteur": "AI"
+      }
+    ]
+  },
+  "replication": {
+    "prerequis_data": [
+      "A first-party conversion signal attachable to ad exposure, ideally in the same environment as the ad",
+      "Enough impression volume for the ranking model to learn by advertiser category",
+      "A campaign history allowing automated management to be compared with manual management"
+    ],
+    "prerequis_orga": [
+      "A publisher or owned sales house position on your own inventory",
+      "A machine learning team able to run an ad ranking engine in production",
+      "An advertiser offer that assumes delegated management: the advertiser declares an objective, not settings",
+      "In Europe, a compliance framework on targeting (GDPR) and on automated delivery (AI Act)"
+    ],
+    "stack_possible": [
+      "Custom ad ranking engine on first-party signals",
+      "Campaign automation layer driven by objective",
+      "Transactional journey integrated into the exposure environment (mini application, embedded shop, payment)",
+      "Incremental measurement to separate the model effect from the demand effect"
+    ],
+    "equipe": "An advertising machine learning team for the ranking engine, an adtech product team for the automation layer, a commercial team able to sell delegated management to lightly equipped advertisers, and a measurement function to separate model effect from market effect.",
+    "playbook": [
+      {
+        "action": "Close the loop between ad exposure and purchase to recover a clean conversion signal.",
+        "livrable": "First-party conversion signal attached to the impression."
+      },
+      {
+        "action": "Retrain the ad-to-user matching engine on that signal rather than on engagement alone.",
+        "livrable": "Ad recommendation model measured on conversion."
+      },
+      {
+        "action": "Open an automated campaign mode where the advertiser declares only an objective and a budget.",
+        "livrable": "Automated campaign management suite in production."
+      },
+      {
+        "action": "Target first the advertiser categories with no media team, where automation removes an entry barrier.",
+        "livrable": "Broader advertiser base, measured in new spending."
+      },
+      {
+        "action": "Track the share of total spending powered by automation, and the effect on inventory performance and pricing.",
+        "livrable": "Monetization dashboard: automated share, performance, pricing."
+      }
+    ],
+    "premiere_etape": "Identify the advertiser category with no media team, for which manual management is the real barrier, then open an objective-driven campaign mode for it. That is where automation creates new spending rather than moving existing spending around."
+  },
+  "statut_vivant": {
+    "note": "The setup is described in the present tense in the results announcement of May 13, 2026, with an already significant share of advertiser spending (roughly 30%) and growing adoption across three advertiser categories. No signal of withdrawal."
+  },
+  "seo": {
+    "title": "Tencent AIM+: AI-automated campaign management - roughly 30% of advertiser spending and +20% ad revenue (2026)",
+    "meta_description": "Tencent upgraded its ad recommendation engine and deployed AIM+, its automated campaign management suite, which powers roughly 30% of advertiser spending. Marketing Services: RMB 38.2bn, +20%.",
+    "resume_citable": "In the first quarter of 2026, Tencent states that its AIM+ automated campaign management suite powers roughly 30% of its advertisers' ad spending, and that upgrading its ad recommendation engine, coupled with closed-loop marketing inside Weixin, improved ad performance and pricing: Marketing Services revenue reached RMB 38.2 billion, up 20% year over year.",
+    "faq": [
+      {
+        "q": "What is AIM+ at Tencent?",
+        "a": "AIM+ is Tencent Ads' automated campaign management suite, launched in November 2025 according to KrASIA. The advertiser delegates campaign management instead of setting targeting and bids itself. In the first quarter of 2026, Tencent states that it powers roughly 30% of all its advertisers' marketing services spending."
+      },
+      {
+        "q": "What effect has AI had on Tencent's ad revenue?",
+        "a": "Marketing Services revenue reached RMB 38.2 billion in the first quarter of 2026, up 20% year over year, against +9% for group revenue. Tencent attributes the improvement in ad performance and pricing to the upgrade of its ad recommendation model and to the expansion of closed-loop marketing inside Weixin."
+      },
+      {
+        "q": "Which advertisers adopt this automation most?",
+        "a": "The announcement cites notable traction among mini game, mini drama and mini shop advertisers, three categories born inside the Weixin ecosystem and generally without a structured media team."
+      }
+    ]
+  }
+}

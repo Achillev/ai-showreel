@@ -50,9 +50,12 @@
 :root[data-theme="dark"] { color-scheme: dark; }
 /* Mode light = alternative "impression" (screenshot vers un deck PDF). Seuls fond/texte/bordure/ombre changent ; les accents restent. */
 :root[data-theme="light"] {
-  --bg-primary: #FAF6EE; --bg-secondary: #F5F1E8; --bg-elevated: #FFFFFF; --bg-overlay: rgba(250,246,238,.85);
-  --text-primary: #0F1419; --text-secondary: #3A4258; --text-muted: #636A7E;
-  --border-subtle: #E5DFD0; --border-strong: #C8C0AC;
+  /* Light = blanc neutre (2026-07-17). Page blanche, cartes en gris tres clair pour rester
+     distinctes du fond, elements sureleves en blanc pur + ombre. Bordures neutralisees : les
+     beiges chauds juraient avec le blanc. */
+  --bg-primary: #FFFFFF; --bg-secondary: #F6F7F9; --bg-elevated: #FFFFFF; --bg-overlay: rgba(255,255,255,.88);
+  --text-primary: #0F1419; --text-secondary: #3A4258; --text-muted: #61687C;
+  --border-subtle: #E3E6EB; --border-strong: #C3C8D1;
   /* Roles TEXTE en light : sur fond clair il faut assombrir, pas eclaircir. Sans ca le vert de
      marque tombait a 1.40:1 et l'orange a 1.49:1 (illisibles). Les fonds de badge, points de
      statut, bordures et heatmap gardent les couleurs de marque : seul le TEXTE change. */
@@ -88,7 +91,7 @@ p { text-wrap: pretty; }
 /* partie haute : logo + tagline + utilitaires (langue/theme) ; defile normalement, pas sticky */
 .head-top { max-width: 1120px; margin: 0 auto; padding: 16px 24px; display: flex; align-items: center; justify-content: space-between; gap: 20px; }
 /* barre de liens : sticky (enfant direct du body -> colle sur toute la page), se cache au scroll bas, reapparait au scroll haut (sans le logo) */
-.head-links { position: sticky; top: 0; z-index: 100; background: var(--bar); -webkit-backdrop-filter: saturate(1.5) blur(12px); backdrop-filter: saturate(1.5) blur(12px); border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); transition: transform .32s cubic-bezier(.4,0,.2,1); }
+.head-links { position: sticky; top: 0; z-index: 100; background: var(--bar); -webkit-backdrop-filter: saturate(1.5) blur(12px); backdrop-filter: saturate(1.5) blur(12px); border-top: 1px solid var(--line); border-bottom: 2px solid var(--border-strong); box-shadow: 0 1px 12px -6px rgba(0,0,0,.28); transition: transform .32s cubic-bezier(.4,0,.2,1); }
 body.nav-hidden .head-links { transform: translateY(-102%); }
 .brand { color: var(--ink); font-weight: 700; font-size: 18px; letter-spacing: -.02em; display: flex; align-items: baseline; gap: 8px; }
 .brand:hover { text-decoration: none; }
@@ -96,7 +99,7 @@ body.nav-hidden .head-links { transform: translateY(-102%); }
 .brand-sub { font-weight: 400; font-size: 12.5px; color: var(--ink-faint); letter-spacing: 0; }
 .head-links nav { display: flex; gap: 22px; font-size: 14.5px; font-weight: 500; }
 .head-links nav a { position: relative; color: var(--ink); font-weight: 600; padding: 3px 0; transition: color .15s ease; text-decoration: none; }
-.head-links nav a::after { content: ""; position: absolute; left: 0; right: 0; bottom: -3px; height: 2px; border-radius: 2px; background: var(--accent); transform: scaleX(0); transform-origin: left; transition: transform .24s cubic-bezier(.4,0,.2,1); }
+.head-links nav a::after { content: ""; position: absolute; left: 0; right: 0; bottom: -6px; height: 3px; border-radius: 2px; background: var(--accent-text); transform: scaleX(0); transform-origin: left; transition: transform .24s cubic-bezier(.4,0,.2,1); }
 .head-links nav { max-width: 1120px; margin: 0 auto; padding: 12px 24px; }
 .nav-utils { display: flex; align-items: center; gap: 14px; flex-shrink: 0; }
 .nav-burger { display: none; align-items: center; justify-content: center; width: 40px; height: 40px; border: 1px solid var(--line); border-radius: var(--radius-pill); background: var(--surface); color: var(--ink); cursor: pointer; padding: 0; flex-shrink: 0; }
@@ -539,7 +542,7 @@ a, button, summary, [role="button"], [tabindex] { touch-action: manipulation; }
 .skip:focus { top: 12px; text-decoration: none; }
 main:focus, main:focus-visible { outline: none; }
 /* onglet de nav actif : "vous etes ici" */
-.head-links nav a[aria-current="page"] { color: var(--ink); font-weight: 600; }
+.head-links nav a[aria-current="page"] { color: var(--accent-text); font-weight: 700; }
 .head-links nav a[aria-current="page"]::after { transform: scaleX(1); }
 /* cibles tactiles confortables sur mobile */
 @media (max-width: 780px) {

@@ -1,0 +1,140 @@
+{
+  "transposable_ue": {
+    "note": "A European telecom or cable operator with a local sales house can reproduce the setup: spot generation from the advertiser's website, plus a planning tool fed by its own audience data. Two hard points. The AI Act requires transparency on generated creatives, which means tracing how the spot was produced. GDPR governs the use of a subscriber's TV and streaming consumption data for ad planning, where Charter relies on its direct connections to more than 30 million U.S. households. Fragmented local markets in Europe are an obstacle to scale, not to the principle."
+  },
+  "pattern": "AI local sales house: TV spot generation for SMB advertisers coupled with a media planning tool fed by the operator's first-party data",
+  "etape_parcours": "monetization of local ad inventory (upstream advertiser side: creative production and media planning)",
+  "objectif_business": "Open TV advertising to local SMBs, kept away by the cost and complexity of producing a spot, then by the difficulty of building a media plan. For Charter, the point is monetizing local inventory that large advertisers do not fill: every SMB converted into a TV advertiser is a new budget, not a shifted one. Creative generation removes the first barrier, the planning tool the second.",
+  "points_cles": [
+    "Spectrum Reach clients have created more than 15,000 spots with Waymark's AI platform since early 2023.",
+    "The setup covers 91 local markets, with 6,737 completed projects and 138% year-over-year growth.",
+    "Ad budgets carried by these AI creatives rose from $11.5 million in 2022 to $27 million in 2023.",
+    "Spectrum Reach Architect, AI media planning, has been generally available since July 2025 after a trial with more than 2,000 advertisers."
+  ],
+  "description": "Charter monetizes its local ad inventory from the bottom of the market, attacking the two obstacles that keep SMBs away from TV. The first is creative: since a deal announced in early 2023, Spectrum Reach clients produce their spots on Waymark's generative AI platform. In October 2025, Spectrum Reach announced that its clients had created more than 15,000 ads this way. The case study published by Waymark gives the detail: 91 local markets covered, 6,737 completed projects, 138% year-over-year growth, and ad budgets made possible by generated creative rising from $11.5 million in 2022 to $27 million in 2023. The second obstacle is planning. On July 29, 2025, Spectrum Reach made its Spectrum Reach Architect tool generally available, after a six-month trial with more than 2,000 local advertisers. The tool recommends an allocation across TV, digital and streaming based on campaign history and the operator's first-party data, including data from the Spectrum TV App. That data foundation is what Charter claims cannot be reproduced: its direct connections to more than 30 million U.S. households. Worth noting for anyone comparing with the Comcast Universal Ads case already indexed: the creative partner is the same (Waymark), but the setup differs. Comcast built a cross-publisher self-serve buying platform; Charter grafts AI onto an existing local sales house, with salespeople who walk the advertiser through it.",
+  "resultats": [
+    {
+      "metrique": "Ads created by Spectrum Reach clients on Waymark's AI platform since early 2023"
+    },
+    {
+      "metrique": "Ad budgets made possible by AI-generated video creative"
+    },
+    {
+      "metrique": "Growth in ad budgets captured between 2022 and 2023"
+    },
+    {
+      "metrique": "Completed projects and geographic coverage"
+    },
+    {
+      "metrique": "Local advertisers involved in the six-month Spectrum Reach Architect trial before general availability"
+    }
+  ],
+  "niveau_preuve": {
+    "justification": "Three concordant sources of different kinds. The volume of more than 15,000 ads created is announced by Spectrum Reach and reported by TV Technology, established trade press. The dollar figures ($11.5 million in 2022, $27 million in 2023), markets (91) and projects (6,737) come from the case study published by the vendor Waymark, an official but interested source. General availability of Spectrum Reach Architect after a trial with more than 2,000 advertisers is established by Charter's announcement. Level B rather than A: Charter publishes no AI-attributable ad revenue in its financial documents, and the dollar figures come from the vendor."
+  },
+  "stack_technique": [
+    {
+      "detail": "AI ad creation platform used by Spectrum Reach clients to produce their TV spots. Partnership announced in early 2023."
+    },
+    {
+      "detail": "Proprietary media planning tool, generally available on July 29, 2025 after a six-month trial with more than 2,000 local advertisers. It produces TV, digital and streaming recommendations from campaign history and the operator's first-party data."
+    }
+  ],
+  "fonctionnement_operationnel": {
+    "cadence": "On-demand creative production, per advertiser and per campaign. Media planning on every new plan. The local salesperson stays in the loop on both steps.",
+    "opere_par": "Spectrum Reach local sales teams, market by market. Waymark supplies the creation platform, Charter runs the planning tool and the inventory.",
+    "signal_pilote": "Campaign performance history and the operator's first-party data, including from the Spectrum TV App, feed the media plan recommendations. Without owned audience data, the planning tool loses what distinguishes it from a simple budget simulator.",
+    "etapes": [
+      {
+        "etape": "Sales outreach",
+        "detail": "The local salesperson approaches an SMB that has never run TV and shows that a spot can be produced without a shoot.",
+        "acteur": "agency"
+      },
+      {
+        "etape": "Spot generation",
+        "detail": "The spot is created on the Waymark platform from the advertiser's assets.",
+        "acteur": "AI"
+      },
+      {
+        "etape": "Advertiser sign-off",
+        "detail": "The SMB approves or adjusts the creative before airing.",
+        "acteur": "client"
+      },
+      {
+        "etape": "Building the media plan",
+        "detail": "Spectrum Reach Architect recommends the split across TV, digital and streaming from campaign history and first-party data.",
+        "acteur": "AI"
+      },
+      {
+        "etape": "Delivery on local inventory",
+        "detail": "The campaign runs on the operator's inventory in the relevant market.",
+        "acteur": "data team"
+      }
+    ]
+  },
+  "replication": {
+    "prerequis_data": [
+      "First-party audience data from distribution (set-top box, TV app, streaming) attachable to a local market",
+      "A local campaign history usable to feed media plan recommendations",
+      "The advertiser's brand assets (website, visuals, logo) as raw material for creative generation"
+    ],
+    "prerequis_orga": [
+      "A local sales house with salespeople in contact with SMBs: they are what converts, the tool does not sell itself",
+      "A partnership with an AI video creation platform, or an internal equivalent",
+      "Under-monetized local ad inventory to fill",
+      "In Europe, a compliance framework on TV consumption data and on transparency for generated creatives"
+    ],
+    "stack_possible": [
+      "Video spot generation platform connected to the advertiser's assets",
+      "Media planning tool fed by campaign history and owned audience data",
+      "Existing TV, digital and streaming delivery chain",
+      "Tracking of budget captured per newly converted advertiser"
+    ],
+    "equipe": "A local sales force in contact with SMBs, a creative production team to hold the quality bar on generated spots, an audience data team to feed planning, and a legal function on the use of TV consumption data.",
+    "playbook": [
+      {
+        "action": "Identify under-sold pockets of local inventory and the advertiser type absent from TV for lack of creative.",
+        "livrable": "Map of available inventory and target advertiser segment."
+      },
+      {
+        "action": "Connect a spot generation platform to the advertiser's brand assets, with human sign-off before airing.",
+        "livrable": "Creative production chain with no shoot, operable by a salesperson."
+      },
+      {
+        "action": "Equip the local sales force to lead with the spot as the entry argument, not as an option.",
+        "livrable": "Sales pitch built on an already produced creative."
+      },
+      {
+        "action": "Build the planning tool on campaign history and owned audience data.",
+        "livrable": "TV, digital and streaming split recommendation per advertiser."
+      },
+      {
+        "action": "Track new spending and shifted spending separately, market by market.",
+        "livrable": "Incremental monetization measurement and geographic coverage."
+      }
+    ],
+    "premiere_etape": "Take a single local market and a segment of SMBs that have never advertised on TV, produce them a spot with no shoot, and measure the budget committed by those who would never have bought otherwise. That number, the new spending, is the only one that says whether the setup creates monetization or moves an existing budget."
+  },
+  "statut_vivant": {
+    "note": "Two recent, converging signals: general availability of Spectrum Reach Architect on July 29, 2025, and the announcement of the 15,000-ad milestone with Waymark in October 2025. Caveat: no publication after October 2025 was found on spot volume, so the case deserves revalidation at the next review date."
+  },
+  "seo": {
+    "title": "Spectrum Reach (Charter): AI local sales house - more than 15,000 generated spots and $27M in captured budgets (2025)",
+    "meta_description": "Spectrum Reach opens TV to SMBs: spots generated by AI with Waymark (15,000+ since 2023, 91 markets) and Spectrum Reach Architect media planning, generally available since July 2025.",
+    "resume_citable": "Clients of Spectrum Reach, the advertising sales house of Charter Communications, have created more than 15,000 TV ads on Waymark's generative AI platform since the early 2023 partnership, across 91 local markets and 6,737 completed projects, with ad budgets made possible by generated creative rising from $11.5 million in 2022 to $27 million in 2023, complemented since July 2025 by the Spectrum Reach Architect media planning tool.",
+    "faq": [
+      {
+        "q": "How does Spectrum Reach use AI to sell TV advertising to SMBs?",
+        "a": "On two fronts. Creative first: clients produce their spot on Waymark's generative AI platform, with no shoot, which has yielded more than 15,000 ads since early 2023 across 91 markets. Planning second: Spectrum Reach Architect recommends a split across TV, digital and streaming from campaign history and the operator's first-party data."
+      },
+      {
+        "q": "What budgets has this setup captured?",
+        "a": "According to the case study published by Waymark, ad budgets made possible by generated creative rose from $11.5 million in 2022 to $27 million in 2023, across 6,737 completed projects. These figures come from the vendor, not from Charter's financial documents."
+      },
+      {
+        "q": "How does this differ from Comcast Universal Ads?",
+        "a": "The creative generation partner is the same, Waymark, but the setup differs. Comcast built a cross-publisher self-serve buying platform where the advertiser acts alone. Charter grafts AI onto an existing local sales house, with salespeople carrying the sale market by market."
+      }
+    ]
+  }
+}

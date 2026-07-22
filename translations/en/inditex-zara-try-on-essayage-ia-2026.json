@@ -1,0 +1,123 @@
+{
+  "transposable_ue": {
+    "note": "The setup already runs from Spain across 43 markets, including the European Union, so transposition is not the question. The sensitive point is the data: the avatar is built from the customer's personal photos, therefore from biometric data in the broad sense. That requires an explicit legal basis, a short retention period and clear information on how the images are used. The useful comparison is the U.S. litigation over virtual try-on in beauty, where it was precisely the capture of body images that was challenged."
+  },
+  "pattern": "AI-generated virtual try-on: avatar created from the customer's photos, dressed in real catalog products",
+  "etape_parcours": "consideration and purchase",
+  "objectif_business": "Remove the uncertainty about how a garment will look before purchase, which is the main friction in online fashion and the leading cause of returns. By letting the customer see themselves wearing the real product, Zara acts on conversion upstream and, potentially, on the return rate downstream. The group has published no metric on either effect: what is published is usage scale.",
+  "points_cles": [
+    "Zara Try-on lets the customer create an avatar from their own photos and see it wearing real products.",
+    "Launched in December 2025, the feature is deployed across 43 markets.",
+    "More than seven million cumulative sessions, with rollout under way to the group's other brands.",
+    "Neither conversion rate nor return rate is published: the scale is proven, the effect is not."
+  ],
+  "description": "Inditex put virtual try-on at the center of its 2025 annual results presentation on March 11, 2026. The feature, ZARA Try-on, has been live since December 2025: the customer creates an avatar from their own photos, then generates images of that avatar wearing real catalog products. What separates it from older image overlays is precisely that point, the product shown is the one on sale, not an approximation. The group gives two scale figures: 43 markets covered and more than seven million cumulative sessions, with rollout under way to the group's other brands. That is what takes the case out of pilot territory: a tested feature does not extend to 43 countries and to sister brands. The commercial context is published in the same document: EUR 39.9 billion in 2025 sales, of which EUR 10.7 billion online, up 4.8%. What the group does not publish, and what is missing to judge the feature: the effect on conversion and on the return rate, which are the two reasons a virtual try-on exists.",
+  "resultats": [
+    {
+      "metrique": "Markets where virtual try-on is deployed and cumulative sessions"
+    },
+    {
+      "metrique": "Mechanism and go-live date"
+    },
+    {
+      "metrique": "Extension of the feature beyond Zara"
+    },
+    {
+      "metrique": "Group online sales in 2025 (published context, not attributed to virtual try-on)"
+    }
+  ],
+  "niveau_preuve": {
+    "justification": "The feature and its scale figures (43 markets, more than seven million sessions, extension to other brands) were announced by Inditex when publishing its 2025 annual results on March 11, 2026, and reported consistently by two press outlets the same day. Management commitment, not isolated product communication. Level B rather than A: no conversion, basket or return-rate metric is published, so the commercial result of the feature remains publicly unmeasured."
+  },
+  "fonctionnement_operationnel": {
+    "cadence": "On demand, session by session: the avatar is created once, then reused across the products viewed.",
+    "opere_par": "Inditex e-commerce and technology teams. The first step belongs to the customer, who supplies the photos.",
+    "signal_pilote": "The quality of catalog product visuals and the fidelity of the rendering on the avatar. An unconvincing rendering works against the objective: it increases doubt instead of removing it, and can feed returns instead of preventing them.",
+    "etapes": [
+      {
+        "etape": "Avatar creation",
+        "detail": "The customer uploads their own photos, from which an avatar is generated.",
+        "acteur": "client"
+      },
+      {
+        "etape": "Rendering generation",
+        "detail": "The system generates images of the avatar wearing real catalog products.",
+        "acteur": "AI"
+      },
+      {
+        "etape": "Viewing and decision",
+        "detail": "The customer views the rendering on the products of interest and decides whether to buy.",
+        "acteur": "client"
+      },
+      {
+        "etape": "Scope extension",
+        "detail": "The feature is extended to new markets and to the group's other brands.",
+        "acteur": "data team"
+      }
+    ]
+  },
+  "replication": {
+    "prerequis_data": [
+      "A product catalog with visuals usable for rendering, consistent from one reference to the next",
+      "A compliant processing chain for customer photos, with limited retention",
+      "Measurement comparing conversion and return rate between sessions with and without virtual try-on"
+    ],
+    "prerequis_orga": [
+      "An explicit legal basis for processing personal photos and the avatar derived from them",
+      "An accepted quality bar on rendering: an approximate rendering undermines the objective",
+      "The ability to extend the feature across several brands and markets, failing which it stays a brand gimmick"
+    ],
+    "stack_possible": [
+      "Image generation model conditioned on the customer's photo",
+      "Faithful product rendering from catalog visuals",
+      "Integration into the product page and the mobile app",
+      "Conversion and returns instrumentation per session"
+    ],
+    "equipe": "A computer vision or image generation team, an e-commerce product team for product page integration, a visual quality team for catalog rendering, and a legal function on the processing of personal photos.",
+    "playbook": [
+      {
+        "action": "Pick the categories where rendering uncertainty blocks purchase most and where returns cost most.",
+        "livrable": "Priority product scope, quantified in return cost."
+      },
+      {
+        "action": "Establish the customer photo processing chain with a legal basis and limited retention.",
+        "livrable": "Compliant avatar creation journey."
+      },
+      {
+        "action": "Reach a credible rendering standard on the priority catalog before any broad rollout.",
+        "livrable": "Rendering quality validated on a sample of references."
+      },
+      {
+        "action": "Open in one market with conversion and return-rate measurement, against a comparison group.",
+        "livrable": "Measured effect, not just usage volume."
+      },
+      {
+        "action": "Extend market by market, then to the other brands.",
+        "livrable": "Geographic and multi-brand coverage."
+      }
+    ],
+    "premiere_etape": "Instrument return measurement before opening the feature. Virtual try-on is justified by two effects, conversion and returns; if the second is not measurable by category and by size, you will never know whether the feature paid off. The Zara case illustrates that gap: the scale is published, the effect is not."
+  },
+  "statut_vivant": {
+    "note": "Presented as active and expanding at the annual results of March 11, 2026, with rollout under way to the group's other brands. Caveat: no publication after March 2026 was found on session volume, so the case deserves revalidation at the review date."
+  },
+  "seo": {
+    "title": "Zara Try-on (Inditex): AI virtual try-on - 43 markets and more than 7 million sessions (2026)",
+    "meta_description": "Zara Try-on lets the customer create an avatar from their photos and see it wearing real products. Launched in December 2025, deployed across 43 markets, more than 7 million sessions.",
+    "resume_citable": "Inditex announced at its 2025 annual results on March 11, 2026 that its AI virtual try-on ZARA Try-on, live since December 2025, lets customers create an avatar from their own photos and generate images of that avatar wearing real products, deployed across 43 markets with more than seven million cumulative sessions and a rollout under way to the group's other brands.",
+    "faq": [
+      {
+        "q": "How does Zara Try-on work?",
+        "a": "The customer uploads their own photos, from which an avatar is generated, then the system produces images of that avatar wearing real catalog products. The feature has been live since December 2025."
+      },
+      {
+        "q": "At what scale is it deployed?",
+        "a": "Inditex reports 43 markets covered and more than seven million cumulative sessions as of March 11, 2026, with rollout under way to the group's other brands."
+      },
+      {
+        "q": "What effect on sales and returns?",
+        "a": "Inditex does not publish it. The group communicates usage scale, not the effect on conversion or on the return rate, even though those are the usual justifications for a virtual try-on. That is the limit of this case."
+      }
+    ]
+  }
+}

@@ -1,0 +1,331 @@
+{
+  "id": "kuaishou-modeles-generatifs-monetisation-publicitaire-2026",
+  "type_fiche": "succes",
+  "marque": "Kuaishou",
+  "groupe": "Kuaishou Technology",
+  "industrie": "media_entertainment",
+  "marches_deploiement": [
+    "Chine (marche domestique)"
+  ],
+  "transposable_ue": {
+    "flag": "oui_avec_adaptations",
+    "note": "Trois briques du dispositif se transposent sans difficulte conceptuelle : le modele de recommandation publicitaire, l'enchere automatisee et la generation de creatives publicitaires. La quatrieme, la recherche marchande qui produit de la GMV incrementale, suppose un inventaire e-commerce integre a la plateforme de contenu, ce que peu d'acteurs europeens possedent. Contraintes a prevoir : RGPD sur les signaux de ciblage, et transparence AI Act sur les creatives generees comme sur l'automatisation de la diffusion."
+  },
+  "metier": "publicite / regie publicitaire et search commerce (monetisation)",
+  "logo_domain": "kuaishou.com",
+  "axes": {
+    "levier": "monetisation",
+    "touchpoints": [
+      "inventaire publicitaire short video de l'application Kuaishou",
+      "solution de placement UAX (avec mode Agent)",
+      "moteur de recherche e-commerce OneSearch",
+      "creatives publicitaires generees (AIGC)"
+    ],
+    "etape_parcours": "monetisation de l'inventaire publicitaire et de la recherche marchande",
+    "famille": "optimisation_automatisation",
+    "pattern": "monetisation publicitaire par modeles generatifs : recommandation generative et enchere intelligente, plus generation de creatives et recherche marchande refondue",
+    "type_ia": [
+      "modeles de recommandation generative pour la publicite",
+      "modeles d'enchere intelligente",
+      "generation de creatives publicitaires (AIGC)",
+      "modele d'inference applique a la recherche e-commerce"
+    ],
+    "plateforme_stack": [
+      "modeles de recommandation generative et d'enchere intelligente (custom/in-house)",
+      "UAX (solution de placement publicitaire) et son mode Agent",
+      "OneSearch V2 (moteur de recherche e-commerce)",
+      "creatives AIGC"
+    ],
+    "objectif_metrique": [
+      "revenus des services marketing en ligne",
+      "GMV incrementale sur la recherche marchande",
+      "part des depenses publicitaires portee par des creatives generees"
+    ]
+  },
+  "implementation": "custom",
+  "stack_technique": [
+    {
+      "nom": "Modeles de recommandation generative et d'enchere intelligente",
+      "categorie": "infra",
+      "detail": "Grands modeles appliques au marketing en ligne. Kuaishou chiffre leur contribution a environ 3,0% a 4,0% de croissance des revenus des services marketing domestiques au premier trimestre 2026."
+    },
+    {
+      "nom": "UAX",
+      "categorie": "plateforme",
+      "detail": "Solution de placement publicitaire de Kuaishou, dotee au premier trimestre 2026 d'un mode Agent qui prend en charge des taches jusque-la manuelles cote equipe marketing, dont la creation des unites de campagne."
+    },
+    {
+      "nom": "OneSearch V2",
+      "categorie": "outil",
+      "detail": "Moteur de recherche e-commerce dont les capacites d'inference et l'experience de recherche ont ete renforcees, avec une GMV incrementale d'environ 3,0% attribuee a cette evolution."
+    }
+  ],
+  "objectif_business": "Faire progresser le revenu publicitaire sans dependre de la croissance de l'audience, qui plafonne (412,7 millions d'utilisateurs actifs quotidiens, +1,2% sur un an). L'enjeu est la valeur par impression et par requete : mieux appairer annonce et utilisateur, automatiser l'enchere, industrialiser la production de creatives pour les annonceurs qui n'en produisent pas assez, et transformer la recherche marchande en surface de conversion. Kuaishou est l'un des rares acteurs a publier la contribution incrementale de ces briques a sa croissance.",
+  "points_cles": [
+    "Recommandation generative et enchere intelligente contribuent pour 3,0% a 4,0% a la croissance du revenu marketing domestique.",
+    "OneSearch V2, la recherche e-commerce refondue, apporte environ 3,0% de GMV incrementale.",
+    "Les creatives generees par IA representent 10,0% des depenses publicitaires short video en mars 2026.",
+    "Preuve de niveau A : communique de resultats du premier trimestre 2026, publie le 27 mai 2026."
+  ],
+  "description": "Kuaishou publie une chose que presque aucune plateforme ne publie : la contribution chiffree de ses modeles IA a la croissance de son revenu publicitaire. Au premier trimestre 2026, l'entreprise declare que l'approfondissement de ses grands modeles de recommandation generative et d'enchere intelligente a produit a lui seul environ 3,0% a 4,0% de croissance des revenus des services marketing domestiques. Le revenu total des services marketing en ligne atteint 19,6 milliards de RMB, en hausse de 9,3% sur un an : la contribution des modeles represente donc une part importante de cette croissance. Trois autres briques completent le dispositif. La solution de placement UAX a recu un mode Agent qui prend en charge des taches jusque-la tenues par les equipes marketing, dont la creation des unites de campagne. Les creatives publicitaires generees par IA sont passees a l'echelle : en mars 2026, elles portent 10,0% de l'ensemble des depenses publicitaires short video de la plateforme. Enfin, la recherche marchande a ete refondue avec OneSearch V2, dont Kuaishou dit que le renforcement des capacites d'inference et de l'experience de recherche a produit environ 3,0% de GMV incrementale. Le meme trimestre, l'activite de generation video Kling AI depasse 650 millions de RMB de revenus, en croissance de plus de 300% sur un an, ce qui donne a Kuaishou une seconde source de monetisation IA distincte de la publicite.",
+  "resultats": [
+    {
+      "metrique": "Contribution des modeles de recommandation generative et d'enchere intelligente a la croissance des revenus des services marketing domestiques (T1 2026)",
+      "valeur": "3,0% a 4,0%",
+      "citation_exacte": "growth in domestic online marketing services revenue in the first quarter of 2026",
+      "source_ref": "S1"
+    },
+    {
+      "metrique": "GMV incrementale attribuee au renforcement du moteur de recherche e-commerce",
+      "valeur": "environ +3,0% de GMV",
+      "citation_exacte": "which drove an incremental GMV growth of approximately 3.0%",
+      "source_ref": "S1"
+    },
+    {
+      "metrique": "Part des depenses publicitaires short video portee par des creatives generees par IA (mars 2026)",
+      "valeur": "10,0%",
+      "citation_exacte": "AIGC short video marketing materials spending contributed 10.0% of total short video online marketing spending",
+      "source_ref": "S1"
+    },
+    {
+      "metrique": "Revenus des services marketing en ligne au premier trimestre 2026",
+      "valeur": "19,6 Md RMB, +9,3%",
+      "citation_exacte": "Online Marketing Services Revenue: RMB19.6 billion, up 9.3% year-over-year.",
+      "source_ref": "S2"
+    }
+  ],
+  "niveau_preuve": {
+    "niveau": "A",
+    "justification": "Les chiffres viennent du communique de resultats non audites du premier trimestre 2026 de Kuaishou, publie le 27 mai 2026 : contribution des modeles a la croissance du revenu marketing domestique, GMV incrementale de la recherche, part des creatives generees dans la depense publicitaire. Document primaire de la marque-sujet. Le chiffre d'affaires des services marketing en ligne est corrobore par la synthese de l'earnings call publiee le meme jour. Rarete a signaler : l'entreprise isole elle-meme la contribution incrementale de l'IA, ce qui evite l'attribution par inference."
+  },
+  "dates": {
+    "lancement": "Deploiement progressif des modeles de recommandation generative et d'enchere intelligente sur le marketing en ligne ; mode Agent d'UAX et OneSearch V2 constates au T1 2026 ; part AIGC mesuree en mars 2026",
+    "derniere_confirmation_activite": "2026-05",
+    "verifie_le": "2026-07-21",
+    "revoir_apres": "2027-01-21"
+  },
+  "statut_vivant": {
+    "statut": "confirme",
+    "note": "Le communique du 27 mai 2026 decrit un approfondissement en cours, avec des chiffres mesures sur le trimestre et une mesure datee de mars 2026 pour la part des creatives generees. Aucun signal de retrait ni de repli."
+  },
+  "sources": [
+    {
+      "ref": "S1",
+      "type": "earnings_call",
+      "fiabilite": "T1_primaire",
+      "titre": "Kuaishou Technology Announces First Quarter 2026 Unaudited Financial Results",
+      "url": "https://www.prnewswire.com/apac/news-releases/kuaishou-technology-announces-first-quarter-2026-unaudited-financial-results-302782902.html",
+      "date_publication": "2026-05-27",
+      "consulte_le": "2026-07-21"
+    },
+    {
+      "ref": "S2",
+      "type": "earnings_call",
+      "fiabilite": "T4_secondaire",
+      "titre": "Kuaishou Technology (KUASF) Q1 2026 Earnings Call Highlights: Revenue Growth Driven by AI",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/kuaishou-technology-kuasf-q1-2026-190032642.html",
+      "date_publication": "2026-05-27",
+      "consulte_le": "2026-07-21"
+    },
+    {
+      "ref": "S3",
+      "type": "presse",
+      "fiabilite": "T3_presse_etablie",
+      "titre": "Kuaishou's Q1 Revenue Rises but Profit Slides on Margin Pressure",
+      "url": "https://www.theglobeandmail.com/investing/markets/stocks/KUASF/pressreleases/2169623/kuaishous-q1-revenue-rises-but-profit-slides-on-margin-pressure/",
+      "date_publication": "2026-05-28",
+      "consulte_le": "2026-07-21"
+    }
+  ],
+  "fonctionnement_operationnel": {
+    "cadence": "Enchere et recommandation en temps reel a l'impression ; generation de creatives a la demande cote annonceur ; mesure de la contribution incrementale par trimestre.",
+    "opere_par": "Les equipes machine learning et monetisation de Kuaishou pour les modeles de recommandation, d'enchere et de recherche. Cote annonceur, une partie du travail de campagne passe au mode Agent d'UAX.",
+    "signal_pilote": "Les conversions marchandes observees sur la plateforme, qui servent a la fois de cible d'optimisation publicitaire et de retour pour la recherche e-commerce. Sans e-commerce integre, la brique recherche perd son objet et il ne reste que la partie recommandation et enchere.",
+    "etapes": [
+      {
+        "etape": "Production des creatives",
+        "detail": "L'annonceur produit ses materiels publicitaires, en s'appuyant sur la generation AIGC pour une part croissante du volume.",
+        "acteur": "IA"
+      },
+      {
+        "etape": "Mise en campagne",
+        "detail": "Les unites de campagne sont creees dans UAX, avec un mode Agent qui prend en charge des taches jusque-la manuelles.",
+        "acteur": "IA"
+      },
+      {
+        "etape": "Appariement et enchere",
+        "detail": "Les modeles de recommandation generative et d'enchere intelligente decident quelle annonce est servie, a qui, et a quel prix.",
+        "acteur": "IA"
+      },
+      {
+        "etape": "Recherche marchande",
+        "detail": "L'utilisateur qui cherche un produit passe par OneSearch, dont les capacites d'inference ont ete renforcees.",
+        "acteur": "client"
+      },
+      {
+        "etape": "Boucle de conversion",
+        "detail": "Les achats realises alimentent en retour les modeles publicitaires et le classement de la recherche.",
+        "acteur": "IA"
+      }
+    ]
+  },
+  "schema_flow": {
+    "statut": "approche_type",
+    "noeuds": [
+      {
+        "id": "annonceur",
+        "role_generique": "humain",
+        "label": "Annonceur"
+      },
+      {
+        "id": "aigc",
+        "role_generique": "modele_ia",
+        "label": "Generation de creatives publicitaires (AIGC)"
+      },
+      {
+        "id": "uax",
+        "role_generique": "paid_platform",
+        "label": "UAX (placement publicitaire, mode Agent)",
+        "outil_documente": "UAX"
+      },
+      {
+        "id": "reco",
+        "role_generique": "modele_ia",
+        "label": "Recommandation generative et enchere intelligente"
+      },
+      {
+        "id": "app",
+        "role_generique": "site_app",
+        "label": "Application Kuaishou (inventaire short video)"
+      },
+      {
+        "id": "search",
+        "role_generique": "modele_ia",
+        "label": "OneSearch V2 (recherche e-commerce)",
+        "outil_documente": "OneSearch"
+      },
+      {
+        "id": "utilisateur",
+        "role_generique": "humain",
+        "label": "Utilisateur / acheteur"
+      },
+      {
+        "id": "conv",
+        "role_generique": "data_source",
+        "label": "Conversions et GMV observees"
+      }
+    ],
+    "liens": [
+      [
+        "annonceur",
+        "aigc",
+        "brief creatif"
+      ],
+      [
+        "aigc",
+        "uax",
+        "materiels generes"
+      ],
+      [
+        "annonceur",
+        "uax",
+        "objectif de campagne"
+      ],
+      [
+        "uax",
+        "reco",
+        "unites de campagne"
+      ],
+      [
+        "reco",
+        "app",
+        "annonce servie"
+      ],
+      [
+        "app",
+        "utilisateur",
+        "exposition"
+      ],
+      [
+        "utilisateur",
+        "search",
+        "requete marchande"
+      ],
+      [
+        "search",
+        "conv",
+        "achat"
+      ],
+      [
+        "conv",
+        "reco",
+        "signal de conversion"
+      ]
+    ]
+  },
+  "replication": {
+    "statut_epistemique": "infere",
+    "prerequis_data": [
+      "Des conversions marchandes observables sur la plateforme, rattachables a l'exposition publicitaire",
+      "Un historique de requetes de recherche marchande assez dense pour entrainer un moteur d'inference",
+      "Un catalogue produit structure cote marchands",
+      "Une mesure capable d'isoler la contribution incrementale du modele, sans quoi la croissance publicitaire ne peut pas lui etre attribuee"
+    ],
+    "prerequis_orga": [
+      "La maitrise conjointe de l'inventaire publicitaire et du parcours d'achat",
+      "Une equipe machine learning capable de tenir en production des modeles de recommandation et d'enchere",
+      "Une offre creative integree pour les annonceurs qui ne produisent pas assez de materiels",
+      "En Europe, un cadre de transparence sur les creatives generees et sur l'automatisation de la diffusion"
+    ],
+    "stack_possible": [
+      "Modeles de recommandation et d'enchere entraines sur signaux de conversion first-party",
+      "Generation de creatives publicitaires integree a l'outil de campagne",
+      "Moteur de recherche marchande avec couche d'inference",
+      "Dispositif de mesure incrementale par trimestre"
+    ],
+    "premiere_etape": "Instrumenter la mesure incrementale avant de toucher au modele. Ce qui rend ce cas exploitable, ce n'est pas la technologie employee mais le fait que la plateforme sache dire combien de points de croissance viennent d'elle. Sans ce dispositif, on ne saura jamais si le modele a cree de la valeur ou capte une croissance qui existait deja.",
+    "playbook": [
+      {
+        "action": "Mettre en place la mesure permettant d'isoler la contribution du modele a la croissance du revenu publicitaire.",
+        "livrable": "Methode de mesure incrementale documentee et repetable par periode."
+      },
+      {
+        "action": "Reentrainer le couple recommandation et enchere sur les conversions marchandes plutot que sur l'engagement.",
+        "livrable": "Modeles publicitaires optimises sur la conversion."
+      },
+      {
+        "action": "Integrer la generation de creatives a l'outil de campagne pour les annonceurs a faible production creative.",
+        "livrable": "Part mesurable de la depense portee par des creatives generees."
+      },
+      {
+        "action": "Renforcer la recherche marchande, en traitant la requete comme une surface de conversion et non comme un simple filtre de catalogue.",
+        "livrable": "GMV incrementale attribuee a la recherche."
+      },
+      {
+        "action": "Automatiser la creation des unites de campagne pour abaisser le cout d'entree des annonceurs peu outilles.",
+        "livrable": "Mode de campagne agentique en production."
+      }
+    ],
+    "equipe": "Une equipe machine learning monetisation pour les modeles de ranking et d'enchere, une equipe search e-commerce, une equipe produit publicitaire pour la couche d'automatisation et la generation de creatives, et une fonction analytique dediee a la mesure incrementale."
+  },
+  "seo": {
+    "slug": "kuaishou-modeles-generatifs-monetisation-publicitaire-2026",
+    "title": "Kuaishou : recommandation generative et enchere intelligente - 3 a 4 points de croissance du revenu publicitaire domestique (2026)",
+    "meta_description": "Kuaishou chiffre la contribution de ses modeles IA a sa monetisation : 3,0% a 4,0% de croissance du revenu marketing domestique, +3,0% de GMV sur la recherche, 10,0% des depenses short video en creatives generees.",
+    "resume_citable": "Au premier trimestre 2026, Kuaishou declare que ses grands modeles de recommandation generative et d'enchere intelligente ont produit environ 3,0% a 4,0% de croissance des revenus des services marketing domestiques, que la refonte de sa recherche e-commerce OneSearch a genere environ 3,0% de GMV incrementale, et qu'en mars 2026 les creatives generees par IA portaient 10,0% de l'ensemble des depenses publicitaires short video de la plateforme.",
+    "faq": [
+      {
+        "q": "Combien l'IA rapporte-t-elle a la monetisation publicitaire de Kuaishou ?",
+        "a": "Kuaishou declare dans son communique du 27 mai 2026 que ses modeles de recommandation generative et d'enchere intelligente ont produit environ 3,0% a 4,0% de croissance des revenus des services marketing domestiques au premier trimestre 2026, sur un revenu total de services marketing en ligne de 19,6 milliards de RMB en hausse de 9,3%."
+      },
+      {
+        "q": "Quelle part des publicites de Kuaishou est generee par IA ?",
+        "a": "En mars 2026, les materiels publicitaires short video generes par IA representaient 10,0% de l'ensemble des depenses publicitaires short video de la plateforme."
+      },
+      {
+        "q": "Qu'apporte OneSearch V2 ?",
+        "a": "OneSearch V2 est le moteur de recherche e-commerce de Kuaishou. Le renforcement de ses capacites d'inference et de l'experience de recherche est associe a une GMV incrementale d'environ 3,0% sur la recherche marchande."
+      }
+    ]
+  }
+}

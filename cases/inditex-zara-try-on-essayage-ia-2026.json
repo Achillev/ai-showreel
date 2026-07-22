@@ -1,0 +1,255 @@
+{
+  "id": "inditex-zara-try-on-essayage-ia-2026",
+  "type_fiche": "succes",
+  "marque": "Zara",
+  "groupe": "Inditex",
+  "industrie": "retail_ecom",
+  "marches_deploiement": [
+    "43 marches dans le monde"
+  ],
+  "transposable_ue": {
+    "flag": "oui",
+    "note": "Le dispositif est deja deploye depuis l'Espagne sur 43 marches, dont l'Union europeenne. Le point sensible est la donnee : l'avatar est construit a partir des photos personnelles du client, donc de donnees biometriques au sens large. Cela impose une base legale explicite, une duree de conservation courte et une information claire sur l'usage des images. La comparaison utile est le contentieux americain sur l'essayage virtuel en beaute, ou c'est precisement la captation d'images du corps qui a ete attaquee."
+  },
+  "metier": "e-commerce / experience produit",
+  "logo_domain": "zara.com",
+  "axes": {
+    "levier": "activation_conversion",
+    "touchpoints": [
+      "fiche produit et application Zara",
+      "creation d'avatar a partir des photos du client",
+      "generation d'images de l'avatar portant les produits du catalogue"
+    ],
+    "etape_parcours": "consideration et achat",
+    "famille": "generation",
+    "pattern": "essayage virtuel genere par IA : avatar cree a partir des photos du client, habille avec les produits reels du catalogue",
+    "type_ia": [
+      "generation d'images a partir de photos du client",
+      "rendu du produit reel sur avatar"
+    ],
+    "plateforme_stack": [
+      "ZARA Try-on (custom/in-house, non documente publiquement)"
+    ],
+    "objectif_metrique": [
+      "sessions d'essayage virtuel",
+      "nombre de marches couverts",
+      "ventes en ligne"
+    ]
+  },
+  "implementation": "custom",
+  "objectif_business": "Lever l'incertitude sur le rendu d'un vetement avant l'achat, qui est le frein principal de la mode en ligne et la premiere cause de retour. En laissant le client se voir porter le produit reel, Zara agit sur la conversion en amont et, potentiellement, sur le taux de retour en aval. Le groupe n'a publie aucune metrique sur ces deux effets : ce qui est publie, c'est l'echelle d'usage.",
+  "points_cles": [
+    "Zara Try-on laisse le client creer un avatar a partir de ses propres photos et le voir porter des produits reels.",
+    "Lance en decembre 2025, le dispositif est deploye sur 43 marches.",
+    "Plus de sept millions de sessions cumulees, avec un deploiement en cours sur les autres marques du groupe.",
+    "Ni taux de conversion ni taux de retour ne sont publies : l'echelle est prouvee, l'effet ne l'est pas."
+  ],
+  "description": "Inditex a mis l'essayage virtuel au centre de la presentation de ses resultats annuels 2025, le 11 mars 2026. Le dispositif, ZARA Try-on, est en service depuis decembre 2025 : le client cree un avatar a partir de ses propres photos, puis genere des images de cet avatar portant des produits reels du catalogue. La difference avec les superpositions d'images plus anciennes tient a ce point precis, le produit affiche est celui qui est en vente, pas une approximation. Le groupe donne deux chiffres d'echelle : 43 marches couverts et plus de sept millions de sessions cumulees, avec un deploiement en cours sur les autres marques du groupe. C'est ce qui sort le cas du pilote : un dispositif teste ne s'etend pas a 43 pays ni aux enseignes soeurs. Le contexte commercial du groupe est publie dans le meme document : 39,9 milliards d'euros de ventes en 2025, dont 10,7 milliards en ligne, en hausse de 4,8%. Ce que le groupe ne publie pas, et qui manque pour juger le dispositif : l'effet sur la conversion et sur le taux de retour, qui sont pourtant les deux raisons d'etre d'un essayage virtuel.",
+  "resultats": [
+    {
+      "metrique": "Marches ou l'essayage virtuel est deploye et sessions cumulees",
+      "valeur": "43 marches",
+      "citation_exacte": "the technology is deployed in 43 global markets with more than seven million sessions so far",
+      "source_ref": "S1"
+    },
+    {
+      "metrique": "Mecanisme et date de mise en service",
+      "valeur": "depuis decembre 2025",
+      "citation_exacte": "which since December has let customers create an avatar from their own photos",
+      "source_ref": "S2"
+    },
+    {
+      "metrique": "Extension du dispositif au-dela de Zara",
+      "valeur": "autres marques du groupe",
+      "citation_exacte": "and is being rolled out to other brands",
+      "source_ref": "S2"
+    },
+    {
+      "metrique": "Ventes en ligne du groupe en 2025 (contexte publie, non attribue a l'essayage virtuel)",
+      "valeur": "10,7 Md EUR, +4,8%",
+      "citation_exacte": "online sales grew 4.8% to reach €10.7 billion",
+      "source_ref": "S2"
+    }
+  ],
+  "niveau_preuve": {
+    "niveau": "B",
+    "justification": "Le dispositif et ses chiffres d'echelle (43 marches, plus de sept millions de sessions, extension aux autres marques) sont annonces par Inditex dans la publication de ses resultats annuels 2025, le 11 mars 2026, et rapportes de facon concordante par deux titres de presse le meme jour. Engagement du management, pas communication produit isolee. Niveau B et non A : aucune metrique de conversion, de panier ou de taux de retour n'est publiee, donc le resultat commercial du dispositif reste non mesure publiquement."
+  },
+  "dates": {
+    "lancement": "decembre 2025",
+    "derniere_confirmation_activite": "2026-03",
+    "verifie_le": "2026-07-21",
+    "revoir_apres": "2027-01-21"
+  },
+  "statut_vivant": {
+    "statut": "confirme",
+    "note": "Presente comme actif et en extension lors des resultats annuels du 11 mars 2026, avec un deploiement en cours sur les autres marques du groupe. Reserve : aucune publication posterieure a mars 2026 n'a ete trouvee sur le volume de sessions, la fiche merite une revalidation a l'echeance."
+  },
+  "sources": [
+    {
+      "ref": "S1",
+      "type": "presse",
+      "fiabilite": "T4_secondaire",
+      "titre": "Inditex posts upbeat results for 2025 as it looks to invest in long-term future",
+      "url": "https://www.theindustry.fashion/inditex-posts-upbeat-results-for-2025-as-it-looks-to-invest-in-long-term-future/",
+      "date_publication": "2026-03-11",
+      "consulte_le": "2026-07-21"
+    },
+    {
+      "ref": "S2",
+      "type": "presse",
+      "fiabilite": "T3_presse_etablie",
+      "titre": "Sales jump for Zara owner Inditex as it taps into AI for virtual changing rooms",
+      "url": "https://uk.finance.yahoo.com/news/sales-jump-zara-owner-inditex-091924035.html",
+      "date_publication": "2026-03-11",
+      "consulte_le": "2026-07-21"
+    }
+  ],
+  "fonctionnement_operationnel": {
+    "cadence": "A la demande, session par session : l'avatar est cree une fois puis reutilise sur les produits consultes.",
+    "opere_par": "Les equipes e-commerce et technologie d'Inditex. Le geste initial appartient au client, qui fournit ses photos.",
+    "signal_pilote": "La qualite des visuels produits du catalogue et la fidelite du rendu sur l'avatar. Un rendu peu credible se retourne contre l'objectif : il augmente le doute au lieu de le lever, et peut alimenter le retour au lieu de le prevenir.",
+    "etapes": [
+      {
+        "etape": "Creation de l'avatar",
+        "detail": "Le client televerse ses propres photos, a partir desquelles un avatar est genere.",
+        "acteur": "client"
+      },
+      {
+        "etape": "Generation du rendu",
+        "detail": "Le systeme genere des images de l'avatar portant les produits reels du catalogue.",
+        "acteur": "IA"
+      },
+      {
+        "etape": "Consultation et decision",
+        "detail": "Le client visualise le rendu sur les produits qui l'interessent et arbitre son achat.",
+        "acteur": "client"
+      },
+      {
+        "etape": "Extension du perimetre",
+        "detail": "Le dispositif est etendu a de nouveaux marches et aux autres enseignes du groupe.",
+        "acteur": "equipe data"
+      }
+    ]
+  },
+  "schema_flow": {
+    "statut": "approche_type",
+    "noeuds": [
+      {
+        "id": "client",
+        "role_generique": "humain",
+        "label": "Client (fournit ses photos)"
+      },
+      {
+        "id": "avatar",
+        "role_generique": "modele_ia",
+        "label": "Generation de l'avatar"
+      },
+      {
+        "id": "catalogue",
+        "role_generique": "dam",
+        "label": "Catalogue produits reels (visuels et references)"
+      },
+      {
+        "id": "rendu",
+        "role_generique": "modele_ia",
+        "label": "Generation du rendu avatar habille"
+      },
+      {
+        "id": "fiche",
+        "role_generique": "site_app",
+        "label": "Fiche produit et application Zara"
+      }
+    ],
+    "liens": [
+      [
+        "client",
+        "avatar",
+        "photos personnelles"
+      ],
+      [
+        "avatar",
+        "rendu",
+        "avatar du client"
+      ],
+      [
+        "catalogue",
+        "rendu",
+        "produit reel a rendre"
+      ],
+      [
+        "rendu",
+        "fiche",
+        "images generees"
+      ],
+      [
+        "fiche",
+        "client",
+        "visualisation avant achat"
+      ]
+    ]
+  },
+  "replication": {
+    "statut_epistemique": "infere",
+    "prerequis_data": [
+      "Un catalogue produit avec des visuels exploitables pour le rendu, homogenes d'une reference a l'autre",
+      "Une chaine de traitement des photos client conforme, avec conservation limitee",
+      "Une mesure comparant conversion et taux de retour entre sessions avec et sans essayage virtuel"
+    ],
+    "prerequis_orga": [
+      "Une base legale explicite pour le traitement des photos personnelles et de l'avatar qui en decoule",
+      "Une exigence de qualite de rendu assumee : un rendu approximatif nuit a l'objectif",
+      "La capacite a etendre le dispositif a plusieurs marques et marches, faute de quoi il reste un gadget de marque"
+    ],
+    "stack_possible": [
+      "Modele de generation d'image conditionne par la photo du client",
+      "Rendu produit fidele a partir des visuels du catalogue",
+      "Integration a la fiche produit et a l'application mobile",
+      "Instrumentation conversion et retours par session"
+    ],
+    "premiere_etape": "Instrumenter la mesure du retour produit avant d'ouvrir la fonction. L'essayage virtuel se justifie par deux effets, la conversion et le retour ; si le second n'est pas mesurable par categorie et par taille, on ne saura jamais si le dispositif a paye. Le cas Zara illustre ce manque : l'echelle est publiee, l'effet non.",
+    "playbook": [
+      {
+        "action": "Choisir les categories ou l'incertitude de rendu bloque le plus l'achat et ou le retour coute le plus cher.",
+        "livrable": "Perimetre produit prioritaire, chiffre en cout de retour."
+      },
+      {
+        "action": "Etablir la chaine de traitement des photos client avec une base legale et une conservation limitee.",
+        "livrable": "Parcours de creation d'avatar conforme."
+      },
+      {
+        "action": "Atteindre un niveau de rendu credible sur le catalogue prioritaire avant toute ouverture large.",
+        "livrable": "Qualite de rendu validee sur un echantillon de references."
+      },
+      {
+        "action": "Ouvrir sur un marche avec mesure de la conversion et du taux de retour, avec groupe de comparaison.",
+        "livrable": "Effet mesure, et non seulement volume d'usage."
+      },
+      {
+        "action": "Etendre marche par marche, puis aux autres enseignes.",
+        "livrable": "Couverture geographique et multi-marques."
+      }
+    ],
+    "equipe": "Une equipe vision par ordinateur ou generation d'images, une equipe e-commerce produit pour l'integration a la fiche, une equipe qualite visuelle pour le rendu catalogue, et une fonction juridique sur le traitement des photos personnelles."
+  },
+  "seo": {
+    "slug": "inditex-zara-try-on-essayage-ia-2026",
+    "title": "Zara Try-on (Inditex) : essayage virtuel par IA - 43 marches et plus de 7 millions de sessions (2026)",
+    "meta_description": "Zara Try-on laisse le client creer un avatar depuis ses photos et le voir porter des produits reels. Lance en decembre 2025, deploye sur 43 marches, plus de 7 millions de sessions.",
+    "resume_citable": "Inditex a annonce dans ses resultats annuels 2025, le 11 mars 2026, que son essayage virtuel par IA ZARA Try-on, en service depuis decembre 2025, laisse le client creer un avatar a partir de ses propres photos et generer des images de cet avatar portant des produits reels, avec un deploiement sur 43 marches, plus de sept millions de sessions cumulees et une extension en cours aux autres marques du groupe.",
+    "faq": [
+      {
+        "q": "Comment fonctionne Zara Try-on ?",
+        "a": "Le client televerse ses propres photos, a partir desquelles un avatar est genere, puis le systeme produit des images de cet avatar portant des produits reels du catalogue. Le dispositif est en service depuis decembre 2025."
+      },
+      {
+        "q": "A quelle echelle le dispositif est-il deploye ?",
+        "a": "Inditex indique 43 marches couverts et plus de sept millions de sessions cumulees au 11 mars 2026, avec un deploiement en cours sur les autres marques du groupe."
+      },
+      {
+        "q": "Quel effet sur les ventes et les retours ?",
+        "a": "Inditex ne le publie pas. Le groupe communique l'echelle d'usage, pas l'effet sur la conversion ni sur le taux de retour, alors que ce sont les deux justifications habituelles d'un essayage virtuel. C'est la limite de ce cas."
+      }
+    ]
+  }
+}

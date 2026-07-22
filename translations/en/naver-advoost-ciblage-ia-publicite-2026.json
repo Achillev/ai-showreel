@@ -1,0 +1,131 @@
+{
+  "transposable_ue": {
+    "note": "The pattern is that of a portal replacing declarative ad targeting with targeting learned from its own usage signals. It transposes to any publisher with a logged-in audience and owned inventory. Two constraints in Europe: GDPR on building audiences from navigation and search signals, and AI Act transparency on automated optimization. NAVER's Korean foundation, which combines search, commerce and payment, provides a richer conversion signal than an isolated European publisher would have."
+  },
+  "pattern": "AI ad targeting on first-party signals from a search and commerce portal, measured as a share of ad revenue growth",
+  "etape_parcours": "monetization of ad inventory (targeting and delivery optimization)",
+  "objectif_business": "Grow ad revenue at a mature portal, in a domestic market where audience no longer expands mechanically and where generative search threatens the historical sponsored-link model. The chosen lever is targeting quality: match ad to intent better in order to raise the value of every impression, drawing on signals NAVER owns outright because search, commerce and subscription all live in the same ecosystem.",
+  "description": "NAVER has made its ad targeting engine the main contributor to its advertising growth, and says so in its results. In the first quarter of 2026, ad revenue grew 9.3% year over year, and the company attributes more than half of that growth to AI, naming the advanced targeting capabilities of its ADVoost solution. What makes the case usable is that attribution: most publishers announce AI usage without ever saying what share of their growth depends on it. The foundation is the portal's first-party signal. NAVER combines search, marketplace, subscription and delivery inside the same ecosystem, which allows ad exposure to be tied to intent and purchase without relying on third-party data. In the same quarter, service revenue grew 35.6% year over year, driven by that commerce ecosystem spanning NAVER Plus Store, NAVER Plus Membership and N Delivery. The group reports quarterly revenue of KRW 3,241.1 billion and operating profit of KRW 541.8 billion.",
+  "points_cles": [
+    "ADVoost, NAVER's AI ad targeting solution, drives the growth of ad revenue.",
+    "AI accounts for more than 50% of the quarter's ad growth, which reached 9.3% year over year.",
+    "Service revenue grew 35.6%, driven by the commerce ecosystem (Plus Store, Plus Membership, N Delivery).",
+    "Level A evidence: results announcement of April 30, 2026, corroborated by the Korea Herald."
+  ],
+  "resultats": [
+    {
+      "metrique": "Share of ad revenue growth attributed to AI (Q1 2026)"
+    },
+    {
+      "metrique": "Ad revenue growth in the first quarter of 2026"
+    },
+    {
+      "metrique": "Service revenue growth, driven by the commerce ecosystem"
+    },
+    {
+      "metrique": "Press corroboration of the targeting mechanism"
+    }
+  ],
+  "niveau_preuve": {
+    "justification": "The central figure, more than 50% of ad growth attributed to AI via ADVoost, is published in NAVER's first quarter 2026 results announcement, dated April 30, 2026. Primary document from the subject brand, corroborated the same day by the Korea Herald, established press, which repeats the attribution and names ADVoost. Honest caveat: the announcement does not detail the model mechanics nor the measurement protocol behind that attribution."
+  },
+  "stack_technique": [
+    {
+      "detail": "NAVER's ad targeting solution. The first quarter 2026 results announcement ties its advanced targeting capabilities to 9.3% year-over-year ad revenue growth, of which more than 50% is attributed to AI."
+    }
+  ],
+  "fonctionnement_operationnel": {
+    "cadence": "Continuous targeting and optimization on every campaign; quarterly reading of the AI contribution to ad growth, in results.",
+    "opere_par": "NAVER's advertising and data teams for the targeting engine. The advertiser stays on campaign objectives and delegates audience building and refinement.",
+    "signal_pilote": "The portal's first-party signals: search queries, commerce navigation, Plus Membership enrollment, purchase events. That is what allows exposure to be tied to intent. A publisher without an integrated transactional journey loses the part of the signal that drives performance.",
+    "etapes": [
+      {
+        "etape": "First-party signal collection",
+        "detail": "Search, commerce navigation and subscription produce the intent signals usable for targeting.",
+        "acteur": "AI"
+      },
+      {
+        "etape": "Audience building",
+        "detail": "ADVoost builds and refines targeting segments from those signals, without detailed manual settings from the advertiser.",
+        "acteur": "AI"
+      },
+      {
+        "etape": "Delivery and optimization",
+        "detail": "The campaign runs across NAVER inventory, with continuous delivery optimization.",
+        "acteur": "AI"
+      },
+      {
+        "etape": "Conversion feedback",
+        "detail": "Conversions observed in the commerce ecosystem feed back into targeting.",
+        "acteur": "AI"
+      },
+      {
+        "etape": "Reading the contribution",
+        "detail": "The share of ad growth attributable to AI is measured and published in quarterly results.",
+        "acteur": "data team"
+      }
+    ]
+  },
+  "replication": {
+    "prerequis_data": [
+      "A logged-in audience producing owned intent signals (search, navigation, subscription)",
+      "A transactional journey attachable to ad exposure",
+      "Ad inventory owned outright, not merely resold",
+      "An attribution method able to say what share of ad growth comes from the model"
+    ],
+    "prerequis_orga": [
+      "An integrated sales house on the publisher side, rather than dependence on third-party platforms",
+      "An advertising data team able to run audience models in production",
+      "A clear legal basis for using usage signals for targeting purposes",
+      "An investor narrative ready to stand behind a quantified attribution, which means being able to hold it"
+    ],
+    "stack_possible": [
+      "Targeting engine trained on first-party signals",
+      "Automated delivery optimization layer",
+      "Attachment of commerce conversions to ad exposure",
+      "Measurement framework able to isolate the model's contribution"
+    ],
+    "equipe": "An advertising data team for audience and performance models, a sales house product team for the advertiser interface, an analytics team for the attribution protocol, and a legal function on the use of usage signals.",
+    "playbook": [
+      {
+        "action": "Map the intent signals owned outright and how they attach to the purchase event.",
+        "livrable": "Inventory of first-party signal usable for targeting."
+      },
+      {
+        "action": "Replace declarative targeting with targeting learned from those signals, on a first inventory segment.",
+        "livrable": "Targeting engine in production on a limited scope."
+      },
+      {
+        "action": "Establish the attribution protocol that will isolate the model's contribution to ad growth.",
+        "livrable": "Measurement method repeatable from quarter to quarter."
+      },
+      {
+        "action": "Extend to the full inventory once contribution is established, keeping measurement in place.",
+        "livrable": "AI targeting generalized, with tracking of the attributable share of growth."
+      }
+    ],
+    "premiere_etape": "Check whether you really own the signal before talking about a model. The condition that makes ADVoost readable at NAVER is that search, purchase and subscription belong to the same ecosystem. The first task is to map which intent signals you own and which you rent."
+  },
+  "statut_vivant": {
+    "note": "The announcement of April 30, 2026 describes ADVoost as the driver of the quarter's ad growth, and Korean press reported in July 2026 that NAVER is continuing its AI advertising push. No signal of withdrawal."
+  },
+  "seo": {
+    "title": "NAVER ADVoost: AI ad targeting - more than 50% of ad revenue growth (2026)",
+    "meta_description": "NAVER attributes more than 50% of its Q1 2026 ad revenue growth (+9.3% year over year) to AI, driven by the targeting capabilities of its ADVoost solution.",
+    "resume_citable": "In the first quarter of 2026, NAVER states that its ad revenue grew 9.3% year over year and that AI accounts for more than 50% of that growth, driven by the advanced targeting capabilities of its ADVoost solution, while service revenue grew 35.6% on the back of the NAVER Plus Store, NAVER Plus Membership and N Delivery commerce ecosystem.",
+    "faq": [
+      {
+        "q": "What is ADVoost?",
+        "a": "ADVoost is NAVER's ad targeting solution. The first quarter 2026 results announcement credits it with the advanced targeting capabilities driving the group's ad revenue growth."
+      },
+      {
+        "q": "What share of NAVER's ad growth comes from AI?",
+        "a": "More than 50%. NAVER states that ad revenue grew 9.3% year over year in the first quarter of 2026 and that AI accounts for more than half of that growth. The Korea Herald repeats the same attribution on publication day."
+      },
+      {
+        "q": "Why is this case hard to replicate as-is?",
+        "a": "Because the targeting relies on signals NAVER owns outright: search, marketplace, subscription and delivery all live in the same ecosystem. A publisher without an integrated transactional journey does not have the same link between exposure and intent."
+      }
+    ]
+  }
+}

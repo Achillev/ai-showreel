@@ -15,10 +15,10 @@ os.makedirs(OUT, exist_ok=True)
 
 # --- palette refonte (miroir des tokens de site/style.css) ---
 ACCENT = (124, 92, 255)     # #7C5CFF  violet AI (accent-primary)
-CREAM  = (250, 246, 238)    # #FAF6EE  bg-primary (light)
+CREAM  = (255, 255, 255)    # #FFFFFF  bg-primary (light) - passe au blanc le 2026-07-17
 INK    = (15, 20, 25)       # #0F1419  text-primary (light)
 MUTED  = (107, 115, 137)    # #6B7389  text-muted
-HAIR   = (229, 223, 208)    # #E5DFD0  border-subtle (light)
+HAIR   = (227, 230, 235)    # #E3E6EB  border-subtle (light, neutralisee)
 BEIGE  = (245, 241, 232)    # #F5F1E8  text-primary (dark) = le beige signature
 
 FRAU = os.path.join(FONTS, "Fraunces.ttf")
@@ -124,7 +124,7 @@ with open(os.path.join(OUT, "site.webmanifest"), "w") as f:
             '  "icons": [\n'
             '    { "src": "/icon-192.png", "sizes": "192x192", "type": "image/png" },\n'
             '    { "src": "/icon-512.png", "sizes": "512x512", "type": "image/png" }\n'
-            '  ],\n  "theme_color": "#7C5CFF",\n  "background_color": "#FAF6EE",\n'
+            '  ],\n  "theme_color": "#7C5CFF",\n  "background_color": "#FFFFFF",\n'
             '  "display": "standalone",\n  "start_url": "/"\n}\n')
 
 print("Assets generes dans", OUT)

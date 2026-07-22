@@ -1,0 +1,141 @@
+{
+  "transposable_ue": {
+    "note": "Three parts of the setup transpose with no conceptual difficulty: the ad recommendation model, automated bidding, and ad creative generation. The fourth, merchant search producing incremental GMV, assumes an e-commerce inventory integrated into the content platform, which few European players own. Constraints to plan for: GDPR on targeting signals, and AI Act transparency on generated creatives as well as on automated delivery."
+  },
+  "pattern": "ad monetization through generative models: generative recommendation and intelligent bidding, plus creative generation and rebuilt merchant search",
+  "etape_parcours": "monetization of ad inventory and of merchant search",
+  "objectif_business": "Grow ad revenue without depending on audience growth, which is flattening (412.7 million daily active users, +1.2% year over year). The issue is value per impression and per query: match ad to user better, automate bidding, industrialize creative production for advertisers who do not produce enough of it, and turn merchant search into a conversion surface. Kuaishou is one of the rare players to publish the incremental contribution of these components to its growth.",
+  "description": "Kuaishou publishes something almost no platform publishes: the quantified contribution of its AI models to the growth of its ad revenue. In the first quarter of 2026, the company states that deepening its generative recommendation and intelligent bidding large models produced roughly 3.0% to 4.0% growth in domestic marketing services revenue on its own. Total online marketing services revenue reached RMB 19.6 billion, up 9.3% year over year: the models' contribution therefore represents a substantial share of that growth. Three other components complete the setup. The UAX placement solution received an Agent feature that takes over tasks previously handled by marketing teams, including campaign unit creation. AI-generated ad creatives have scaled: in March 2026 they carried 10.0% of all short video ad spending on the platform. Finally, merchant search was rebuilt with OneSearch V2, where Kuaishou says stronger inference capabilities and a better search experience produced roughly 3.0% incremental GMV. In the same quarter, the Kling AI video generation business passed RMB 650 million in revenue, growing more than 300% year over year, giving Kuaishou a second AI monetization stream distinct from advertising.",
+  "points_cles": [
+    "Generative recommendation and intelligent bidding contribute 3.0% to 4.0% of domestic marketing revenue growth.",
+    "OneSearch V2, the rebuilt e-commerce search, delivers roughly 3.0% incremental GMV.",
+    "AI-generated creatives account for 10.0% of short video ad spending as of March 2026.",
+    "Level A evidence: first quarter 2026 results announcement, published May 27, 2026."
+  ],
+  "resultats": [
+    {
+      "metrique": "Contribution of generative recommendation and intelligent bidding models to domestic marketing services revenue growth (Q1 2026)"
+    },
+    {
+      "metrique": "Incremental GMV attributed to the strengthening of the e-commerce search engine"
+    },
+    {
+      "metrique": "Share of short video ad spending carried by AI-generated creatives (March 2026)"
+    },
+    {
+      "metrique": "Online marketing services revenue in the first quarter of 2026"
+    }
+  ],
+  "niveau_preuve": {
+    "justification": "The figures come from Kuaishou's unaudited first quarter 2026 results announcement, published on May 27, 2026: contribution of the models to domestic marketing revenue growth, incremental GMV from search, share of generated creatives in ad spending. Primary document from the subject brand. Online marketing services revenue is corroborated by the earnings call summary published the same day. Worth flagging as rare: the company itself isolates the incremental contribution of AI, which removes the need for attribution by inference."
+  },
+  "stack_technique": [
+    {
+      "detail": "Large models applied to online marketing. Kuaishou quantifies their contribution at roughly 3.0% to 4.0% growth in domestic marketing services revenue for the first quarter of 2026."
+    },
+    {
+      "detail": "Kuaishou's ad placement solution, equipped in the first quarter of 2026 with an Agent feature that takes over tasks previously handled manually by marketing teams, including campaign unit creation."
+    },
+    {
+      "detail": "E-commerce search engine whose inference capabilities and search experience were strengthened, with roughly 3.0% incremental GMV attributed to that change."
+    }
+  ],
+  "fonctionnement_operationnel": {
+    "cadence": "Real-time bidding and recommendation at impression level; on-demand creative generation on the advertiser side; quarterly measurement of incremental contribution.",
+    "opere_par": "Kuaishou's machine learning and monetization teams for the recommendation, bidding and search models. On the advertiser side, part of the campaign work moves to the UAX Agent mode.",
+    "signal_pilote": "Merchant conversions observed on the platform, which serve both as the ad optimization target and as feedback for e-commerce search. Without integrated e-commerce, the search component loses its purpose and only recommendation and bidding remain.",
+    "etapes": [
+      {
+        "etape": "Creative production",
+        "detail": "The advertiser produces its ad materials, relying on AIGC generation for a growing share of the volume.",
+        "acteur": "AI"
+      },
+      {
+        "etape": "Campaign setup",
+        "detail": "Campaign units are created in UAX, with an Agent mode taking over previously manual tasks.",
+        "acteur": "AI"
+      },
+      {
+        "etape": "Matching and bidding",
+        "detail": "Generative recommendation and intelligent bidding models decide which ad is served, to whom, and at what price.",
+        "acteur": "AI"
+      },
+      {
+        "etape": "Merchant search",
+        "detail": "Users looking for a product go through OneSearch, whose inference capabilities have been strengthened.",
+        "acteur": "client"
+      },
+      {
+        "etape": "Conversion loop",
+        "detail": "Completed purchases feed back into the ad models and the search ranking.",
+        "acteur": "AI"
+      }
+    ]
+  },
+  "replication": {
+    "prerequis_data": [
+      "Merchant conversions observable on the platform and attachable to ad exposure",
+      "A merchant search query history dense enough to train an inference engine",
+      "A structured product catalog on the merchant side",
+      "Measurement able to isolate the model's incremental contribution, without which ad growth cannot be attributed to it"
+    ],
+    "prerequis_orga": [
+      "Joint control of the ad inventory and the purchase journey",
+      "A machine learning team able to run recommendation and bidding models in production",
+      "An integrated creative offer for advertisers who do not produce enough material",
+      "In Europe, a transparency framework on generated creatives and on automated delivery"
+    ],
+    "stack_possible": [
+      "Recommendation and bidding models trained on first-party conversion signals",
+      "Ad creative generation integrated into the campaign tool",
+      "Merchant search engine with an inference layer",
+      "Quarterly incremental measurement setup"
+    ],
+    "equipe": "A monetization machine learning team for ranking and bidding models, an e-commerce search team, an advertising product team for the automation layer and creative generation, and an analytics function dedicated to incremental measurement.",
+    "playbook": [
+      {
+        "action": "Put in place the measurement that isolates the model's contribution to ad revenue growth.",
+        "livrable": "Documented incremental measurement method, repeatable by period."
+      },
+      {
+        "action": "Retrain the recommendation and bidding pair on merchant conversions rather than on engagement.",
+        "livrable": "Ad models optimized on conversion."
+      },
+      {
+        "action": "Integrate creative generation into the campaign tool for advertisers with low creative output.",
+        "livrable": "Measurable share of spending carried by generated creatives."
+      },
+      {
+        "action": "Strengthen merchant search, treating the query as a conversion surface rather than a catalog filter.",
+        "livrable": "Incremental GMV attributed to search."
+      },
+      {
+        "action": "Automate campaign unit creation to lower the entry cost for lightly equipped advertisers.",
+        "livrable": "Agentic campaign mode in production."
+      }
+    ],
+    "premiere_etape": "Instrument incremental measurement before touching the model. What makes this case usable is not the technology employed but the fact that the platform can say how many points of growth come from it. Without that setup, you will never know whether the model created value or captured growth that already existed."
+  },
+  "statut_vivant": {
+    "note": "The May 27, 2026 announcement describes work in progress, with figures measured over the quarter and a measurement dated March 2026 for the share of generated creatives. No signal of withdrawal or retrenchment."
+  },
+  "seo": {
+    "title": "Kuaishou: generative recommendation and intelligent bidding - 3 to 4 points of domestic ad revenue growth (2026)",
+    "meta_description": "Kuaishou quantifies its AI models' contribution to monetization: 3.0% to 4.0% of domestic marketing revenue growth, +3.0% GMV on search, 10.0% of short video spending on generated creatives.",
+    "resume_citable": "In the first quarter of 2026, Kuaishou states that its generative recommendation and intelligent bidding large models produced roughly 3.0% to 4.0% growth in domestic marketing services revenue, that rebuilding its OneSearch e-commerce search generated roughly 3.0% incremental GMV, and that as of March 2026 AI-generated creatives carried 10.0% of all short video ad spending on the platform.",
+    "faq": [
+      {
+        "q": "How much does AI contribute to Kuaishou's ad monetization?",
+        "a": "Kuaishou states in its May 27, 2026 announcement that its generative recommendation and intelligent bidding models produced roughly 3.0% to 4.0% growth in domestic marketing services revenue in the first quarter of 2026, on total online marketing services revenue of RMB 19.6 billion, up 9.3%."
+      },
+      {
+        "q": "What share of Kuaishou's ads is AI-generated?",
+        "a": "As of March 2026, AI-generated short video marketing materials accounted for 10.0% of all short video ad spending on the platform."
+      },
+      {
+        "q": "What does OneSearch V2 deliver?",
+        "a": "OneSearch V2 is Kuaishou's e-commerce search engine. Strengthening its inference capabilities and search experience is associated with roughly 3.0% incremental GMV on merchant search."
+      }
+    ]
+  }
+}

@@ -281,7 +281,7 @@ function page(title, body, { desc = '', jsonld = '', canonical = '', path = '' }
 <title>${esc(title)}</title>
 <meta name="description" content="${esc(desc)}">
 <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
-<meta name="theme-color" content="#0A0E1A" media="(prefers-color-scheme: dark)"><meta name="theme-color" content="#FAF6EE">
+<meta name="theme-color" content="#0A0E1A" media="(prefers-color-scheme: dark)"><meta name="theme-color" content="#FFFFFF">
 <link rel="canonical" href="${esc(can)}">${BILINGUAL ? `
 <link rel="alternate" hreflang="fr" href="${esc(frUrl)}">
 <link rel="alternate" hreflang="en" href="${esc(enUrl)}">

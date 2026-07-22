@@ -1,0 +1,297 @@
+{
+  "id": "tencent-aim-plus-regie-ia-weixin-2026",
+  "type_fiche": "succes",
+  "marque": "Tencent",
+  "groupe": "Tencent Holdings Limited",
+  "industrie": "media_entertainment",
+  "marches_deploiement": [
+    "Chine (ecosysteme Weixin / WeChat)"
+  ],
+  "transposable_ue": {
+    "flag": "oui_avec_adaptations",
+    "note": "Le pattern lui-meme, un moteur de recommandation publicitaire IA couple a une gestion de campagne automatisee sur un inventaire proprietaire, existe deja en Europe chez les grandes plateformes. Ce qui ne se transpose pas tel quel, c'est le socle : la boucle fermee de Weixin (mini-programmes, mini-boutiques, comptes video, paiement) qui donne a Tencent le signal de conversion en propre. Un editeur europeen devra reconstruire ce signal a partir de son propre parcours transactionnel, sous contrainte RGPD sur le ciblage et de transparence AI Act sur l'automatisation de la diffusion."
+  },
+  "metier": "publicite / regie publicitaire (monetisation de l'inventaire social)",
+  "logo_domain": "tencent.com",
+  "axes": {
+    "levier": "monetisation",
+    "touchpoints": [
+      "inventaire publicitaire Weixin / WeChat (Moments, comptes officiels, comptes video)",
+      "mini-programmes, mini-dramas et mini-boutiques (boucle fermee transactionnelle)",
+      "suite d'achat media AIM+ (gestion de campagne automatisee)",
+      "moteur de recommandation publicitaire"
+    ],
+    "etape_parcours": "monetisation de l'inventaire publicitaire (amont annonceur : ciblage, enchere et pilotage de campagne)",
+    "famille": "optimisation_automatisation",
+    "pattern": "regie publicitaire IA : modele de recommandation publicitaire reentraine plus gestion de campagne automatisee, sur un inventaire social proprietaire a boucle fermee",
+    "type_ia": [
+      "modele de recommandation publicitaire (ranking et matching annonce-utilisateur)",
+      "automatisation de la gestion de campagne (creation d'unites, enchere, allocation budgetaire)"
+    ],
+    "plateforme_stack": [
+      "AIM+ (suite d'achat media automatisee de Tencent Ads)",
+      "moteur de recommandation publicitaire Tencent (custom/in-house)",
+      "ecosysteme Weixin : mini-programmes, mini-boutiques, comptes video"
+    ],
+    "objectif_metrique": [
+      "revenus Marketing Services",
+      "part des depenses annonceurs pilotee par l'automatisation",
+      "performance et prix de l'inventaire publicitaire"
+    ]
+  },
+  "implementation": "custom",
+  "stack_technique": [
+    {
+      "nom": "AIM+",
+      "categorie": "plateforme",
+      "detail": "Suite d'achat media automatisee de Tencent Ads. Elle prend en charge la gestion de campagne cote annonceur et pilote environ 30% des depenses marketing services declarees au premier trimestre 2026, avec une adoption forte chez les annonceurs mini-jeux, mini-dramas et mini-boutiques."
+    },
+    {
+      "nom": "Moteur de recommandation publicitaire Tencent",
+      "categorie": "infra",
+      "detail": "Modele de recommandation publicitaire mis a niveau au premier trimestre 2026, couple a l'elargissement des capacites de marketing en boucle fermee dans l'ecosysteme Weixin."
+    }
+  ],
+  "objectif_business": "Monetiser plus fortement un inventaire publicitaire deja massif sans augmenter la charge publicitaire vue par l'utilisateur. Le levier n'est pas le volume d'impressions mais leur valeur unitaire : un meilleur appariement annonce-utilisateur ameliore la performance, donc le prix que l'annonceur accepte de payer. En parallele, l'automatisation de la gestion de campagne abaisse le cout d'entree pour une categorie d'annonceurs qui n'a pas d'equipe media, en particulier les editeurs de mini-jeux, de mini-dramas et les mini-boutiques.",
+  "points_cles": [
+    "Tencent a remis a niveau son modele de recommandation publicitaire et elargi le marketing en boucle fermee dans Weixin.",
+    "AIM+, sa suite de gestion de campagne automatisee, pilote environ 30% des depenses publicitaires des annonceurs.",
+    "Les revenus Marketing Services atteignent 38,2 milliards de RMB au T1 2026, en hausse de 20% sur un an.",
+    "Preuve de niveau A : chiffres publies dans le communique de resultats du 13 mai 2026."
+  ],
+  "description": "Au premier trimestre 2026, Tencent a fait porter sa croissance publicitaire par deux briques IA distinctes. La premiere est le moteur de recommandation publicitaire, mis a niveau et couple a un elargissement des capacites de marketing en boucle fermee dans l'ecosysteme Weixin : quand l'annonce, le mini-programme, la mini-boutique et le paiement vivent dans la meme application, le signal de conversion revient au modele au lieu de se perdre. Tencent relie explicitement cette amelioration a deux effets, la performance des annonces et leur prix. La seconde brique est AIM+, la suite de gestion de campagne automatisee de Tencent Ads, lancee en novembre 2025 selon KrASIA. L'annonceur y delegue le pilotage de la campagne au lieu de regler lui-meme ciblage et encheres. Au premier trimestre 2026, AIM+ pilote environ 30% de l'ensemble des depenses marketing services des annonceurs, avec une adoption marquee chez trois categories nees dans l'ecosysteme : mini-jeux, mini-dramas et mini-boutiques. Ce sont precisement des annonceurs sans equipe media structuree, pour qui l'automatisation est la condition d'acces. Le resultat commercial est publie : 38,2 milliards de RMB de revenus Marketing Services au trimestre, en hausse de 20% sur un an, sur un chiffre d'affaires groupe de 196,5 milliards de RMB en hausse de 9%. La publicite croit donc plus de deux fois plus vite que le groupe.",
+  "resultats": [
+    {
+      "metrique": "Part des depenses publicitaires des annonceurs pilotee par la gestion de campagne automatisee AIM+ (T1 2026)",
+      "valeur": "environ 30%",
+      "citation_exacte": "AIM+ powered approximately 30% of our total marketing services spending from advertisers",
+      "source_ref": "S1"
+    },
+    {
+      "metrique": "Revenus Marketing Services au premier trimestre 2026, croissance annuelle",
+      "valeur": "+20% sur un an",
+      "citation_exacte": "Revenues from Marketing Services were RMB38.2 billion",
+      "source_ref": "S1"
+    },
+    {
+      "metrique": "Effet declare de la mise a niveau du modele de recommandation publicitaire",
+      "valeur": "performance et prix",
+      "citation_exacte": "which improved ad performance and pricing",
+      "source_ref": "S1"
+    },
+    {
+      "metrique": "Categories d'annonceurs ou l'adoption d'AIM+ est la plus forte",
+      "valeur": "mini-jeux, mini-dramas, mini-boutiques",
+      "citation_exacte": "gaining notable traction among mini game, mini drama and mini shop advertisers",
+      "source_ref": "S1"
+    }
+  ],
+  "niveau_preuve": {
+    "niveau": "A",
+    "justification": "Tous les chiffres retenus viennent du communique de resultats du premier trimestre 2026 de Tencent, publie le 13 mai 2026 : part des depenses annonceurs pilotee par AIM+, revenus Marketing Services et croissance annuelle, effet declare sur la performance et le prix des annonces. Document primaire de la marque-sujet, corrobore par la couverture de KrASIA (22 mai 2026) qui reprend les memes chiffres et date le lancement d'AIM+ a novembre 2025."
+  },
+  "dates": {
+    "lancement": "novembre 2025 pour la suite AIM+ (date rapportee par KrASIA) ; mise a niveau du modele de recommandation publicitaire constatee au T1 2026",
+    "derniere_confirmation_activite": "2026-05",
+    "verifie_le": "2026-07-21",
+    "revoir_apres": "2027-01-21"
+  },
+  "statut_vivant": {
+    "statut": "confirme",
+    "note": "Dispositif decrit au present dans le communique de resultats du 13 mai 2026, avec une part de depenses annonceurs deja significative (environ 30%) et une adoption en progression sur trois categories d'annonceurs. Aucun signal de retrait."
+  },
+  "sources": [
+    {
+      "ref": "S1",
+      "type": "earnings_call",
+      "fiabilite": "T1_primaire",
+      "titre": "TENCENT ANNOUNCES 2026 FIRST QUARTER RESULTS",
+      "url": "https://www.prnewswire.com/apac/news-releases/tencent-announces-2026-first-quarter-results-302770779.html",
+      "date_publication": "2026-05-13",
+      "consulte_le": "2026-07-21"
+    },
+    {
+      "ref": "S2",
+      "type": "presse",
+      "fiabilite": "T4_secondaire",
+      "titre": "Tencent is putting AI into everything, but when will it pay off?",
+      "url": "https://kr-asia.com/tencent-is-putting-ai-into-everything-but-when-will-it-pay-off",
+      "date_publication": "2026-05-22",
+      "consulte_le": "2026-07-21"
+    }
+  ],
+  "fonctionnement_operationnel": {
+    "cadence": "Diffusion et enchere en temps reel sur chaque impression ; pilotage de campagne continu cote AIM+ ; reentrainement du modele de recommandation par cycles produit, non publie.",
+    "opere_par": "Les equipes publicite et machine learning de Tencent Ads pour le moteur et la suite d'achat. Cote annonceur, la campagne est deleguee a AIM+ : l'equipe media fixe l'objectif et le budget plutot que les reglages.",
+    "signal_pilote": "Le signal de conversion issu de la boucle fermee Weixin (mini-programme, mini-boutique, paiement). C'est lui qui permet au modele d'apprendre ce qui convertit vraiment. Hors boucle fermee, le modele retombe sur des signaux d'engagement, et l'amelioration de performance et de prix decrite par Tencent ne se reproduit pas.",
+    "etapes": [
+      {
+        "etape": "Definition de l'objectif de campagne",
+        "detail": "L'annonceur declare son objectif et son budget dans AIM+ au lieu de configurer ciblage et encheres manuellement.",
+        "acteur": "client"
+      },
+      {
+        "etape": "Creation et pilotage automatises des unites de campagne",
+        "detail": "AIM+ prend en charge la gestion de campagne : construction des unites, allocation du budget, ajustement des encheres.",
+        "acteur": "IA"
+      },
+      {
+        "etape": "Appariement annonce-utilisateur",
+        "detail": "Le moteur de recommandation publicitaire classe les annonces candidates pour chaque impression sur l'inventaire Weixin.",
+        "acteur": "IA"
+      },
+      {
+        "etape": "Conversion en boucle fermee",
+        "detail": "L'utilisateur reste dans Weixin pour l'achat (mini-programme, mini-boutique, paiement), ce qui referme la boucle.",
+        "acteur": "client"
+      },
+      {
+        "etape": "Retour du signal au modele",
+        "detail": "Les conversions observees dans la boucle fermee realimentent le moteur de recommandation, qui ameliore performance et prix.",
+        "acteur": "IA"
+      }
+    ]
+  },
+  "schema_flow": {
+    "statut": "approche_type",
+    "noeuds": [
+      {
+        "id": "annonceur",
+        "role_generique": "humain",
+        "label": "Annonceur (mini-jeu, mini-drama, mini-boutique)"
+      },
+      {
+        "id": "aim",
+        "role_generique": "paid_platform",
+        "label": "AIM+ (gestion de campagne automatisee)",
+        "outil_documente": "AIM+"
+      },
+      {
+        "id": "reco",
+        "role_generique": "modele_ia",
+        "label": "Moteur de recommandation publicitaire (appariement et enchere)"
+      },
+      {
+        "id": "weixin",
+        "role_generique": "site_app",
+        "label": "Inventaire Weixin (Moments, comptes officiels, comptes video)"
+      },
+      {
+        "id": "boucle",
+        "role_generique": "site_app",
+        "label": "Boucle fermee : mini-programme, mini-boutique, paiement"
+      },
+      {
+        "id": "utilisateur",
+        "role_generique": "humain",
+        "label": "Utilisateur Weixin"
+      },
+      {
+        "id": "signal",
+        "role_generique": "data_source",
+        "label": "Signal de conversion first-party"
+      }
+    ],
+    "liens": [
+      [
+        "annonceur",
+        "aim",
+        "objectif et budget"
+      ],
+      [
+        "aim",
+        "reco",
+        "unites de campagne et encheres"
+      ],
+      [
+        "reco",
+        "weixin",
+        "annonce servie a l'impression"
+      ],
+      [
+        "weixin",
+        "utilisateur",
+        "exposition"
+      ],
+      [
+        "utilisateur",
+        "boucle",
+        "achat sans quitter l'application"
+      ],
+      [
+        "boucle",
+        "signal",
+        "conversion observee"
+      ],
+      [
+        "signal",
+        "reco",
+        "reentrainement du modele"
+      ]
+    ]
+  },
+  "replication": {
+    "statut_epistemique": "infere",
+    "prerequis_data": [
+      "Un signal de conversion first-party rattachable a l'exposition publicitaire, idealement dans le meme environnement que l'annonce",
+      "Un volume d'impressions suffisant pour que le modele de ranking apprenne par categorie d'annonceur",
+      "Un historique de campagnes permettant de comparer le pilotage automatise au pilotage manuel"
+    ],
+    "prerequis_orga": [
+      "Une position d'editeur ou de regie proprietaire sur son propre inventaire",
+      "Une equipe machine learning capable de tenir un moteur de ranking publicitaire en production",
+      "Une offre annonceur assumant la delegation du pilotage : l'annonceur declare un objectif, plus des reglages",
+      "Un cadre de conformite sur le ciblage (RGPD) et sur l'automatisation de la diffusion (AI Act) en Europe"
+    ],
+    "stack_possible": [
+      "Moteur de ranking publicitaire custom sur signaux first-party",
+      "Couche d'automatisation de campagne pilotee a l'objectif",
+      "Parcours transactionnel integre a l'environnement d'exposition (mini-application, boutique embarquee, paiement)",
+      "Mesure incrementale pour distinguer l'effet du modele de l'effet de la demande"
+    ],
+    "premiere_etape": "Identifier la categorie d'annonceurs qui n'a pas d'equipe media et pour qui le pilotage manuel est le vrai frein, puis lui ouvrir un mode de campagne pilote a l'objectif. C'est la ou l'automatisation cree de la depense nouvelle plutot que de deplacer de la depense existante.",
+    "playbook": [
+      {
+        "action": "Refermer la boucle entre l'exposition publicitaire et l'acte d'achat pour recuperer un signal de conversion propre.",
+        "livrable": "Signal de conversion first-party rattache a l'impression."
+      },
+      {
+        "action": "Reentrainer le moteur d'appariement annonce-utilisateur sur ce signal plutot que sur l'engagement seul.",
+        "livrable": "Modele de recommandation publicitaire mesure sur la conversion."
+      },
+      {
+        "action": "Ouvrir un mode de campagne automatise ou l'annonceur ne declare qu'un objectif et un budget.",
+        "livrable": "Suite de gestion de campagne automatisee en production."
+      },
+      {
+        "action": "Cibler en priorite les categories d'annonceurs sans equipe media, chez qui l'automatisation leve une barriere d'acces.",
+        "livrable": "Base d'annonceurs elargie, mesuree en depense nouvelle."
+      },
+      {
+        "action": "Suivre la part des depenses totales pilotee par l'automatisation, et l'effet sur la performance et le prix de l'inventaire.",
+        "livrable": "Tableau de bord de monetisation : part automatisee, performance, prix."
+      }
+    ],
+    "equipe": "Une equipe machine learning publicite pour le moteur de ranking, une equipe produit adtech pour la couche d'automatisation de campagne, une equipe commerciale capable de vendre la delegation du pilotage a des annonceurs peu outilles, et une fonction mesure pour separer l'effet modele de l'effet marche."
+  },
+  "seo": {
+    "slug": "tencent-aim-plus-regie-ia-weixin-2026",
+    "title": "Tencent AIM+ : gestion de campagne automatisee par IA - environ 30% des depenses annonceurs et +20% de revenus publicitaires (2026)",
+    "meta_description": "Tencent a remis a niveau son moteur de recommandation publicitaire et deploye AIM+, sa gestion de campagne automatisee, qui pilote environ 30% des depenses annonceurs. Marketing Services : 38,2 Md RMB, +20%.",
+    "resume_citable": "Au premier trimestre 2026, Tencent declare que sa suite de gestion de campagne automatisee AIM+ pilote environ 30% des depenses publicitaires de ses annonceurs et que la mise a niveau de son moteur de recommandation publicitaire, couplee au marketing en boucle fermee dans Weixin, a ameliore la performance et le prix des annonces : les revenus Marketing Services atteignent 38,2 milliards de RMB, en hausse de 20% sur un an.",
+    "faq": [
+      {
+        "q": "Qu'est-ce que AIM+ chez Tencent ?",
+        "a": "AIM+ est la suite de gestion de campagne automatisee de Tencent Ads, lancee en novembre 2025 selon KrASIA. L'annonceur delegue le pilotage de sa campagne au lieu de regler lui-meme ciblage et encheres. Au premier trimestre 2026, Tencent declare qu'elle pilote environ 30% de l'ensemble des depenses marketing services de ses annonceurs."
+      },
+      {
+        "q": "Quel effet l'IA a-t-elle eu sur les revenus publicitaires de Tencent ?",
+        "a": "Les revenus Marketing Services atteignent 38,2 milliards de RMB au premier trimestre 2026, en hausse de 20% sur un an, contre +9% pour le chiffre d'affaires groupe. Tencent attribue l'amelioration de la performance et du prix des annonces a la mise a niveau de son modele de recommandation publicitaire et a l'elargissement du marketing en boucle fermee dans Weixin."
+      },
+      {
+        "q": "Quels annonceurs adoptent le plus cette automatisation ?",
+        "a": "Le communique cite une traction notable chez les annonceurs de mini-jeux, de mini-dramas et de mini-boutiques, trois categories nees dans l'ecosysteme Weixin et generalement depourvues d'equipe media structuree."
+      }
+    ]
+  }
+}

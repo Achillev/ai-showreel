@@ -1,0 +1,278 @@
+{
+  "id": "naver-advoost-ciblage-ia-publicite-2026",
+  "type_fiche": "succes",
+  "marque": "NAVER",
+  "groupe": "NAVER Corporation",
+  "industrie": "media_entertainment",
+  "marches_deploiement": [
+    "Coree du Sud"
+  ],
+  "transposable_ue": {
+    "flag": "oui_avec_adaptations",
+    "note": "Le pattern est celui d'un portail qui remplace le ciblage publicitaire declaratif par un ciblage appris sur ses propres signaux d'usage. Il se transpose a tout editeur disposant d'une audience connectee et d'un inventaire en propre. Deux contraintes en Europe : le RGPD sur la constitution des audiences a partir des signaux de navigation et de recherche, et la transparence AI Act sur l'optimisation automatisee. Le socle coreen de NAVER, qui cumule recherche, commerce et paiement, donne un signal de conversion plus riche que celui d'un editeur europeen isole."
+  },
+  "metier": "publicite / regie publicitaire (monetisation de l'audience search et commerce)",
+  "logo_domain": "navercorp.com",
+  "axes": {
+    "levier": "monetisation",
+    "touchpoints": [
+      "inventaire publicitaire search et display du portail NAVER",
+      "solution de ciblage publicitaire ADVoost",
+      "ecosysteme commerce (NAVER Plus Store, NAVER Plus Membership, N Delivery)"
+    ],
+    "etape_parcours": "monetisation de l'inventaire publicitaire (ciblage et optimisation de la diffusion)",
+    "famille": "optimisation_automatisation",
+    "pattern": "ciblage publicitaire par IA sur signaux first-party d'un portail search et commerce, mesure en part de la croissance du revenu publicitaire",
+    "type_ia": [
+      "ciblage publicitaire appris (modeles d'audience et de performance)",
+      "optimisation automatisee de la diffusion"
+    ],
+    "plateforme_stack": [
+      "ADVoost (solution de ciblage publicitaire NAVER)",
+      "signaux first-party du portail : recherche, commerce, membership",
+      "inventaire publicitaire NAVER"
+    ],
+    "objectif_metrique": [
+      "revenus publicitaires",
+      "part de la croissance publicitaire attribuable a l'IA",
+      "revenus des services commerce"
+    ]
+  },
+  "implementation": "custom",
+  "stack_technique": [
+    {
+      "nom": "ADVoost",
+      "categorie": "plateforme",
+      "detail": "Solution de ciblage publicitaire de NAVER. Le communique de resultats du premier trimestre 2026 relie ses capacites de ciblage avancees a une croissance du revenu publicitaire de 9,3% sur un an, dont plus de 50% est attribue a l'IA."
+    }
+  ],
+  "objectif_business": "Faire croitre le revenu publicitaire d'un portail mature, sur un marche domestique ou l'audience ne progresse plus mecaniquement et ou la recherche generative menace le modele historique du lien sponsorise. Le levier retenu est la qualite du ciblage : mieux appairer annonce et intention pour augmenter la valeur de chaque impression, en s'appuyant sur des signaux que NAVER possede en propre parce que la recherche, le commerce et l'abonnement vivent dans le meme ecosysteme.",
+  "points_cles": [
+    "ADVoost, la solution de ciblage publicitaire IA de NAVER, porte la croissance du revenu publicitaire.",
+    "L'IA represente plus de 50% de la croissance publicitaire du trimestre, qui atteint 9,3% sur un an.",
+    "Les revenus de services progressent de 35,6%, tires par l'ecosysteme commerce (Plus Store, Plus Membership, N Delivery).",
+    "Preuve de niveau A : communique de resultats du 30 avril 2026, corrobore par le Korea Herald."
+  ],
+  "description": "NAVER a fait de son moteur de ciblage publicitaire le principal contributeur de sa croissance publicitaire, et le declare en resultats. Au premier trimestre 2026, le revenu publicitaire progresse de 9,3% sur un an, et l'entreprise attribue plus de la moitie de cette croissance a l'IA, en citant nommement les capacites de ciblage avancees de la solution ADVoost. Ce qui rend le cas exploitable, c'est cette attribution : la plupart des editeurs annoncent un usage de l'IA sans jamais dire quelle part de leur croissance en depend. Le socle du dispositif est le signal first-party du portail. NAVER cumule recherche, marketplace, abonnement et livraison dans le meme ecosysteme, ce qui permet de relier l'exposition publicitaire a l'intention et a l'achat sans dependre de donnees tierces. Sur le meme trimestre, les revenus de services progressent de 35,6% sur un an, portes par cet ecosysteme commerce qui reunit NAVER Plus Store, NAVER Plus Membership et N Delivery. Le groupe publie un chiffre d'affaires trimestriel de 3 241,1 milliards de wons et un resultat operationnel de 541,8 milliards de wons.",
+  "resultats": [
+    {
+      "metrique": "Part de la croissance du revenu publicitaire attribuee a l'IA (T1 2026)",
+      "valeur": "plus de 50%",
+      "citation_exacte": "advertising revenue grew 9.3% year-on-year, with AI accounting for over 50% of this growth",
+      "source_ref": "S1"
+    },
+    {
+      "metrique": "Croissance du revenu publicitaire au premier trimestre 2026",
+      "valeur": "+9,3% sur un an",
+      "citation_exacte": "Backed by advanced targeting capabilities from solutions like ADVoost",
+      "source_ref": "S1"
+    },
+    {
+      "metrique": "Croissance des revenus de services, portee par l'ecosysteme commerce",
+      "valeur": "+35,6% sur un an",
+      "citation_exacte": "Service revenue increased 35.6% year-on-year, driven by a commerce ecosystem",
+      "source_ref": "S1"
+    },
+    {
+      "metrique": "Corroboration presse du mecanisme de ciblage",
+      "valeur": "plus de la moitie",
+      "citation_exacte": "with AI accounting for more than half of that growth through targeting improvements",
+      "source_ref": "S2"
+    }
+  ],
+  "niveau_preuve": {
+    "niveau": "A",
+    "justification": "Le chiffre central, plus de 50% de la croissance publicitaire attribuee a l'IA via ADVoost, est publie dans le communique de resultats du premier trimestre 2026 de NAVER, date du 30 avril 2026. Document primaire de la marque-sujet, corrobore le meme jour par le Korea Herald, presse etablie, qui reprend l'attribution et nomme ADVoost. Reserve honnete : le communique ne detaille pas la mecanique du modele ni le protocole de mesure de cette attribution."
+  },
+  "dates": {
+    "lancement": "ADVoost en production sur l'inventaire publicitaire NAVER, avec un renforcement des capacites de ciblage constate au T1 2026",
+    "derniere_confirmation_activite": "2026-04",
+    "verifie_le": "2026-07-21",
+    "revoir_apres": "2027-01-21"
+  },
+  "statut_vivant": {
+    "statut": "confirme",
+    "note": "Le communique du 30 avril 2026 decrit ADVoost comme le moteur de la croissance publicitaire du trimestre en cours, et la presse coreenne relaie en juillet 2026 la poursuite de l'effort publicitaire IA de NAVER. Aucun signal de retrait."
+  },
+  "sources": [
+    {
+      "ref": "S1",
+      "type": "earnings_call",
+      "fiabilite": "T1_primaire",
+      "titre": "NAVER Records Q1 2026 Revenue of KRW 3.2411 Trillion and Operating Profit of KRW 541.8 Billion",
+      "url": "https://www.navercorp.com/en/media/pressReleasesDetail?seq=10034270",
+      "date_publication": "2026-04-30",
+      "consulte_le": "2026-07-21"
+    },
+    {
+      "ref": "S2",
+      "type": "presse",
+      "fiabilite": "T3_presse_etablie",
+      "titre": "Naver Q1 profit up 7% as AI begins to pay off",
+      "url": "https://www.koreaherald.com/article/10729307",
+      "date_publication": "2026-04-30",
+      "consulte_le": "2026-07-21"
+    }
+  ],
+  "fonctionnement_operationnel": {
+    "cadence": "Ciblage et optimisation en continu sur chaque campagne ; lecture de la contribution IA a la croissance publicitaire par trimestre, en resultats.",
+    "opere_par": "Les equipes publicite et data de NAVER pour le moteur de ciblage. L'annonceur reste sur ses objectifs de campagne et delegue la constitution et l'affinage des audiences.",
+    "signal_pilote": "Les signaux first-party du portail : requetes de recherche, navigation commerce, appartenance au programme Plus Membership, actes d'achat. C'est ce qui permet de relier une exposition a une intention. Un editeur sans parcours transactionnel integre perd la partie du signal qui fait la performance.",
+    "etapes": [
+      {
+        "etape": "Collecte du signal first-party",
+        "detail": "Recherche, navigation commerce et abonnement produisent les signaux d'intention exploitables pour le ciblage.",
+        "acteur": "IA"
+      },
+      {
+        "etape": "Construction des audiences",
+        "detail": "ADVoost constitue et affine les segments de ciblage a partir de ces signaux, sans reglage manuel detaille de l'annonceur.",
+        "acteur": "IA"
+      },
+      {
+        "etape": "Diffusion et optimisation",
+        "detail": "La campagne est diffusee sur l'inventaire NAVER, avec optimisation continue de la delivrance.",
+        "acteur": "IA"
+      },
+      {
+        "etape": "Retour de conversion",
+        "detail": "Les conversions observees dans l'ecosysteme commerce realimentent le ciblage.",
+        "acteur": "IA"
+      },
+      {
+        "etape": "Lecture de la contribution",
+        "detail": "La part de la croissance publicitaire imputable a l'IA est mesuree et publiee en resultats trimestriels.",
+        "acteur": "equipe data"
+      }
+    ]
+  },
+  "schema_flow": {
+    "statut": "approche_type",
+    "noeuds": [
+      {
+        "id": "signaux",
+        "role_generique": "data_source",
+        "label": "Signaux first-party : recherche, commerce, membership"
+      },
+      {
+        "id": "advoost",
+        "role_generique": "modele_ia",
+        "label": "ADVoost (ciblage publicitaire appris)",
+        "outil_documente": "ADVoost"
+      },
+      {
+        "id": "annonceur",
+        "role_generique": "humain",
+        "label": "Annonceur (objectif et budget)"
+      },
+      {
+        "id": "inventaire",
+        "role_generique": "paid_platform",
+        "label": "Inventaire publicitaire NAVER (search et display)"
+      },
+      {
+        "id": "utilisateur",
+        "role_generique": "humain",
+        "label": "Utilisateur du portail"
+      },
+      {
+        "id": "commerce",
+        "role_generique": "site_app",
+        "label": "Ecosysteme commerce (Plus Store, Plus Membership, N Delivery)"
+      }
+    ],
+    "liens": [
+      [
+        "signaux",
+        "advoost",
+        "alimentation du ciblage"
+      ],
+      [
+        "annonceur",
+        "advoost",
+        "objectif de campagne"
+      ],
+      [
+        "advoost",
+        "inventaire",
+        "audiences et optimisation"
+      ],
+      [
+        "inventaire",
+        "utilisateur",
+        "exposition"
+      ],
+      [
+        "utilisateur",
+        "commerce",
+        "achat"
+      ],
+      [
+        "commerce",
+        "signaux",
+        "retour de conversion"
+      ]
+    ]
+  },
+  "replication": {
+    "statut_epistemique": "infere",
+    "prerequis_data": [
+      "Une audience connectee produisant des signaux d'intention en propre (recherche, navigation, abonnement)",
+      "Un parcours transactionnel rattachable a l'exposition publicitaire",
+      "Un inventaire publicitaire detenu en propre, pas seulement revendu",
+      "Une methode d'attribution capable de dire quelle part de la croissance publicitaire vient du modele"
+    ],
+    "prerequis_orga": [
+      "Une regie integree, cote editeur, plutot qu'une dependance a des plateformes tierces",
+      "Une equipe data publicitaire capable de tenir des modeles d'audience en production",
+      "Une base juridique claire pour l'usage des signaux d'usage a des fins de ciblage",
+      "Un discours investisseurs pret a assumer une attribution chiffree, ce qui suppose de la tenir"
+    ],
+    "stack_possible": [
+      "Moteur de ciblage entraine sur signaux first-party",
+      "Couche d'optimisation automatisee de la diffusion",
+      "Rattachement des conversions commerce a l'exposition publicitaire",
+      "Cadre de mesure permettant d'isoler la contribution du modele"
+    ],
+    "premiere_etape": "Verifier si l'on possede vraiment le signal avant de parler de modele. La condition qui rend ADVoost lisible chez NAVER, c'est que la recherche, l'achat et l'abonnement appartiennent au meme ecosysteme. Le premier travail consiste a cartographier quels signaux d'intention on detient en propre et lesquels on loue.",
+    "playbook": [
+      {
+        "action": "Cartographier les signaux d'intention detenus en propre et leur rattachement a l'acte d'achat.",
+        "livrable": "Inventaire du signal first-party exploitable pour le ciblage."
+      },
+      {
+        "action": "Remplacer le ciblage declaratif par un ciblage appris sur ces signaux, sur un premier segment d'inventaire.",
+        "livrable": "Moteur de ciblage en production sur un perimetre limite."
+      },
+      {
+        "action": "Etablir le protocole d'attribution qui isolera la contribution du modele a la croissance publicitaire.",
+        "livrable": "Methode de mesure repetable d'un trimestre a l'autre."
+      },
+      {
+        "action": "Etendre a l'ensemble de l'inventaire une fois la contribution etablie, en gardant la mesure en place.",
+        "livrable": "Ciblage IA generalise, avec suivi de la part de croissance imputable."
+      }
+    ],
+    "equipe": "Une equipe data publicitaire pour les modeles d'audience et de performance, une equipe produit regie pour l'interface annonceur, une equipe analytique pour le protocole d'attribution, et une fonction juridique sur l'usage des signaux d'usage."
+  },
+  "seo": {
+    "slug": "naver-advoost-ciblage-ia-publicite-2026",
+    "title": "NAVER ADVoost : ciblage publicitaire IA - plus de 50% de la croissance du revenu publicitaire (2026)",
+    "meta_description": "NAVER attribue a l'IA plus de 50% de la croissance de son revenu publicitaire au T1 2026 (+9,3% sur un an), portee par les capacites de ciblage de sa solution ADVoost.",
+    "resume_citable": "Au premier trimestre 2026, NAVER declare que son revenu publicitaire a progresse de 9,3% sur un an et que l'IA represente plus de 50% de cette croissance, portee par les capacites de ciblage avancees de sa solution ADVoost, tandis que ses revenus de services progressent de 35,6% grace a l'ecosysteme commerce NAVER Plus Store, NAVER Plus Membership et N Delivery.",
+    "faq": [
+      {
+        "q": "Qu'est-ce qu'ADVoost ?",
+        "a": "ADVoost est la solution de ciblage publicitaire de NAVER. Le communique de resultats du premier trimestre 2026 lui attribue les capacites de ciblage avancees qui portent la croissance du revenu publicitaire du groupe."
+      },
+      {
+        "q": "Quelle part de la croissance publicitaire de NAVER vient de l'IA ?",
+        "a": "Plus de 50%. NAVER indique que le revenu publicitaire a progresse de 9,3% sur un an au premier trimestre 2026 et que l'IA compte pour plus de la moitie de cette croissance. Le Korea Herald reprend la meme attribution le jour de la publication."
+      },
+      {
+        "q": "Pourquoi ce cas est-il difficile a repliquer tel quel ?",
+        "a": "Parce que le ciblage s'appuie sur des signaux que NAVER detient en propre : recherche, marketplace, abonnement et livraison vivent dans le meme ecosysteme. Un editeur sans parcours transactionnel integre ne dispose pas du meme lien entre exposition et intention."
+      }
+    ]
+  }
+}
