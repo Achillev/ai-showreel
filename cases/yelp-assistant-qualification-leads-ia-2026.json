@@ -1,0 +1,312 @@
+{
+  "id": "yelp-assistant-qualification-leads-ia-2026",
+  "type_fiche": "succes",
+  "marque": "Yelp",
+  "groupe": "Yelp Inc.",
+  "industrie": "media_entertainment",
+  "marches_deploiement": [
+    "Etats-Unis",
+    "Canada"
+  ],
+  "transposable_ue": {
+    "flag": "oui_avec_adaptations",
+    "note": "Le pattern, un assistant conversationnel qui qualifie l'intention d'un consommateur et la transforme en demande de devis adressee a des entreprises payantes, se transpose a toute marketplace de services locaux. Deux contraintes en Europe. L'AI Act impose la transparence sur l'assistant et sur le fait qu'une reponse oriente vers des annonceurs payants. Le RGPD encadre la collecte des elements de projet fournis en conversation, qui sont des donnees personnelles des lors qu'ils decrivent un besoin a une adresse. Le point de vigilance propre au modele est la neutralite percue : un assistant qui dirige vers les annonceurs doit rester utile au consommateur, sinon il detruit la confiance qui fait la valeur de la plateforme."
+  },
+  "metier": "marketplace publicitaire locale / generation et qualification de leads",
+  "logo_domain": "yelp.com",
+  "intervenants": [
+    {
+      "nom": "Jeremy Stoppelman",
+      "role": "Co-founder and Chief Executive Officer, Yelp",
+      "source_ref": "S1"
+    },
+    {
+      "nom": "David Schwarzbach",
+      "role": "Chief Financial Officer, Yelp",
+      "source_ref": "S1"
+    }
+  ],
+  "axes": {
+    "levier": "activation_conversion",
+    "touchpoints": [
+      "assistant conversationnel Yelp Assistant",
+      "flux Request-a-Quote (demande de devis)",
+      "application et site Yelp",
+      "mise en relation avec les entreprises annonceurs"
+    ],
+    "etape_parcours": "consideration et achat (mise en relation consommateur et prestataire)",
+    "famille": "conversation",
+    "pattern": "assistant conversationnel de qualification d'intention qui transforme une recherche locale en demande de devis, generant des leads pour les entreprises annonceurs",
+    "type_ia": [
+      "assistant conversationnel (LLM)",
+      "qualification et matching d'intention consommateur vers prestataire"
+    ],
+    "plateforme_stack": [
+      "Yelp Assistant (custom/in-house)",
+      "Hatch (reponse et suivi automatises des leads cote entreprise, filiale Yelp)"
+    ],
+    "objectif_metrique": [
+      "part des Request-a-Quote passant par l'assistant",
+      "volume de leads generes pour les annonceurs",
+      "other revenue"
+    ]
+  },
+  "implementation": "custom",
+  "stack_technique": [
+    {
+      "nom": "Yelp Assistant",
+      "categorie": "outil",
+      "detail": "Assistant conversationnel qui, apres avoir dialogue avec le consommateur pour cerner son besoin, produit une demande de devis adressee aux entreprises pertinentes. Etendu a toutes les categories au premier trimestre 2026.",
+      "url": "https://www.yelp.com"
+    },
+    {
+      "nom": "Hatch",
+      "categorie": "outil",
+      "detail": "Solution de reponse et de suivi automatises des leads cote entreprise, citee par le CFO parmi les moteurs de croissance de l'other revenue.",
+      "url": "https://www.usehatchapp.com"
+    }
+  ],
+  "objectif_business": "Reconstruire le parcours autour de la reponse et de l'action plutot que de la seule recherche. La valeur commerciale de Yelp tient a la qualite des mises en relation qu'elle vend a des entreprises locales : une recherche qui n'aboutit pas a une demande de devis ne rapporte rien. L'assistant capte l'intention pendant qu'elle est encore floue, la met en forme en demande qualifiee, et alimente ainsi le flux de leads payants, sur un marche publicitaire local sous pression ou la croissance vient de l'other revenue plutot que de la publicite historique.",
+  "points_cles": [
+    "Yelp Assistant est un assistant conversationnel qui transforme une recherche locale en demande de devis qualifiee.",
+    "Au T1 2026, il represente environ 15% des Request-a-Quote, contre 5% un an plus tot.",
+    "Il a ete etendu a toutes les categories ; l'other revenue croit de 75% sur un an, a 29 M$.",
+    "Preuve de niveau A : resultats du T1 2026 deposes a la SEC et earnings call du 7 mai 2026."
+  ],
+  "description": "Yelp a fait de son assistant conversationnel le nouveau point d'entree de son moteur de mise en relation. Yelp Assistant dialogue avec le consommateur pour cerner un besoin de service local, puis met ce besoin en forme comme une demande de devis, le flux Request-a-Quote, adressee aux entreprises pertinentes. Ces entreprises sont les clientes payantes de Yelp : chaque demande qualifiee est un lead qui alimente le modele publicitaire. Au premier trimestre 2026, l'assistant a ete etendu a toutes les categories, et il represente deja environ 15% des Request-a-Quote du trimestre, contre 5% un an plus tot d'apres l'echange en earnings call. La direction relie explicitement l'assistant a la bascule strategique de l'entreprise, qu'elle decrit comme une reconception autour des reponses et des actions. Cote resultats, la croissance ne vient plus de la publicite locale, restee quasi stable (chiffre d'affaires net de 361 millions de dollars, plus 1% sur un an), mais de l'other revenue, qui progresse de 75% sur un an pour atteindre un record de 29 millions de dollars, portee par Yelp Assistant, la solution de reponse aux leads Hatch, l'offre Yelp Host et la cession de donnees. Yelp fixe une cible de 250 millions de dollars de run rate annuel d'other revenue d'ici fin 2028. Ce que le cas ne dit pas : l'effet net sur le revenu publicitaire par entreprise, ni le taux de transformation d'un devis genere par l'assistant en client servi.",
+  "resultats": [
+    {
+      "metrique": "Part des Request-a-Quote passant par Yelp Assistant au T1 2026, et progression sur un an",
+      "valeur": "15% (vs 5%)",
+      "citation_exacte": "Yelp Assistant now accounts for 15% of Request-A-Quote projects, up from 5% a year ago",
+      "source_ref": "S2"
+    },
+    {
+      "metrique": "Extension du perimetre fonctionnel de l'assistant",
+      "valeur": "toutes categories",
+      "citation_exacte": "a new Yelp Assistant that now works across all categories",
+      "source_ref": "S1"
+    },
+    {
+      "metrique": "Croissance de l'other revenue au T1 2026 (le poste ou vit la monetisation des nouvelles briques IA)",
+      "valeur": "+75%, 29 M$",
+      "citation_exacte": "other revenue grew 75% year over year to a record $29 million",
+      "source_ref": "S1"
+    },
+    {
+      "metrique": "Cible de run rate annuel d'other revenue fixee par la direction",
+      "valeur": "250 M$ d'ici 2028",
+      "citation_exacte": "We are targeting an annual run rate of $250 million in other revenue by the end of 2028.",
+      "source_ref": "S1"
+    }
+  ],
+  "niveau_preuve": {
+    "niveau": "A",
+    "justification": "Le cas repose sur les resultats du premier trimestre 2026 de Yelp, deposes a la SEC (formulaire 8-K, exhibit 99.1) et commentes en earnings call le 7 mai 2026. Le communique primaire donne la croissance de l'other revenue (plus 75%, 29 millions de dollars), l'extension de Yelp Assistant a toutes les categories et la cible de 250 millions de dollars a fin 2028. La part de 15% des Request-a-Quote portee par l'assistant, contre 5% un an plus tot, vient de la lettre aux actionnaires et de l'echange en earnings call. Reserve honnete : le poste other revenue agrege plusieurs briques (Yelp Assistant, Hatch, Yelp Host, cession de donnees), donc le revenu propre a l'assistant n'est pas isole ; l'attribution la plus nette est la part des Request-a-Quote, une metrique d'usage."
+  },
+  "dates": {
+    "lancement": "Yelp Assistant lance en 2024, etendu a toutes les categories au premier trimestre 2026",
+    "derniere_confirmation_activite": "2026-05",
+    "verifie_le": "2026-07-22",
+    "revoir_apres": "2027-01-22"
+  },
+  "statut_vivant": {
+    "statut": "confirme",
+    "note": "Decrit au present dans les resultats du premier trimestre 2026 (7 mai 2026), avec une part des Request-a-Quote en forte progression sur un an et une extension recente a toutes les categories. La direction en fait un pilier de sa strategie affichee. Aucun signal de retrait."
+  },
+  "sources": [
+    {
+      "ref": "S1",
+      "type": "document_officiel_sec",
+      "fiabilite": "T1_primaire",
+      "titre": "Yelp Reports First Quarter 2026 Results, Advances AI Transformation (Form 8-K, Exhibit 99.1)",
+      "url": "https://www.sec.gov/Archives/edgar/data/0001345016/000134501626000037/yelpq1-26ex991pressrelease.htm",
+      "date_publication": "2026-05-07",
+      "consulte_le": "2026-07-22"
+    },
+    {
+      "ref": "S2",
+      "type": "earnings_call",
+      "fiabilite": "T4_secondaire",
+      "titre": "Yelp Inc. Q1 2026 Earnings Call Summary",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/yelp-inc-q1-2026-earnings-123000331.html",
+      "date_publication": "2026-05-08",
+      "consulte_le": "2026-07-22"
+    },
+    {
+      "ref": "S3",
+      "type": "presse",
+      "fiabilite": "T4_secondaire",
+      "titre": "Yelp (YELP) posts Q1 2026 results and doubles down on AI strategy",
+      "url": "https://www.stocktitan.net/sec-filings/YELP/8-k-yelp-inc-reports-material-event-02ccec354684.html",
+      "date_publication": "2026-05-07",
+      "consulte_le": "2026-07-22"
+    }
+  ],
+  "fonctionnement_operationnel": {
+    "cadence": "Temps reel, a chaque conversation initiee par un consommateur qui cherche un service local.",
+    "opere_par": "Les equipes produit et IA de Yelp pour l'assistant. Cote entreprise, la reponse au lead peut etre automatisee via Hatch. Le geste initial appartient au consommateur.",
+    "signal_pilote": "La qualite des elements de projet extraits en conversation, qui determine la pertinence de la mise en relation. Un besoin mal qualifie envoie un mauvais lead a l'entreprise et abime les deux cotes du marche. La densite d'entreprises actives par categorie et par zone conditionne aussi ce que l'assistant peut proposer.",
+    "etapes": [
+      {
+        "etape": "Expression du besoin",
+        "detail": "Le consommateur decrit son besoin de service local a l'assistant, en langage naturel.",
+        "acteur": "client"
+      },
+      {
+        "etape": "Qualification de l'intention",
+        "detail": "Yelp Assistant dialogue pour preciser le projet (nature, contexte) et le met en forme.",
+        "acteur": "IA"
+      },
+      {
+        "etape": "Generation de la demande de devis",
+        "detail": "L'assistant transforme le besoin qualifie en Request-a-Quote adressee aux entreprises pertinentes.",
+        "acteur": "IA"
+      },
+      {
+        "etape": "Reception et reponse cote entreprise",
+        "detail": "Les entreprises annonceurs recoivent le lead et y repondent, avec une reponse pouvant etre automatisee via Hatch.",
+        "acteur": "IA"
+      },
+      {
+        "etape": "Mise en relation",
+        "detail": "Le consommateur compare les reponses et choisit un prestataire, ce qui ferme la boucle de conversion.",
+        "acteur": "client"
+      }
+    ]
+  },
+  "schema_flow": {
+    "statut": "approche_type",
+    "noeuds": [
+      {
+        "id": "conso",
+        "role_generique": "humain",
+        "label": "Consommateur cherchant un service local"
+      },
+      {
+        "id": "assistant",
+        "role_generique": "canal_conversationnel",
+        "label": "Yelp Assistant (qualification d'intention)",
+        "outil_documente": "Yelp Assistant"
+      },
+      {
+        "id": "raq",
+        "role_generique": "site_app",
+        "label": "Demande de devis (Request-a-Quote)"
+      },
+      {
+        "id": "annuaire",
+        "role_generique": "data_source",
+        "label": "Base d'entreprises locales et annonceurs Yelp"
+      },
+      {
+        "id": "hatch",
+        "role_generique": "crm",
+        "label": "Hatch (reponse et suivi automatises des leads)",
+        "outil_documente": "Hatch"
+      },
+      {
+        "id": "entreprise",
+        "role_generique": "humain",
+        "label": "Entreprise annonceur (client payant)"
+      }
+    ],
+    "liens": [
+      [
+        "conso",
+        "assistant",
+        "besoin en langage naturel"
+      ],
+      [
+        "assistant",
+        "raq",
+        "demande de devis qualifiee"
+      ],
+      [
+        "annuaire",
+        "assistant",
+        "entreprises pertinentes"
+      ],
+      [
+        "raq",
+        "hatch",
+        "lead transmis"
+      ],
+      [
+        "hatch",
+        "entreprise",
+        "reponse au lead"
+      ],
+      [
+        "entreprise",
+        "conso",
+        "devis et mise en relation"
+      ]
+    ]
+  },
+  "replication": {
+    "statut_epistemique": "infere",
+    "prerequis_data": [
+      "Une base d'entreprises locales assez dense par categorie et par zone pour que la mise en relation ait du sens",
+      "Un historique de demandes et de mises en relation pour entrainer la qualification d'intention",
+      "Un referentiel de categories de services structure",
+      "Une mesure distinguant les leads issus de l'assistant des leads issus du parcours classique, sinon aucun effet propre ne sera lisible"
+    ],
+    "prerequis_orga": [
+      "Un modele economique ou la mise en relation qualifiee est ce qui se monetise",
+      "Une exigence de neutralite percue : l'assistant doit rester utile au consommateur tout en orientant vers des annonceurs",
+      "Une chaine de reponse cote entreprise, sans quoi un lead qualifie se perd",
+      "Une conformite AI Act sur l'assistant et RGPD sur les elements de projet collectes"
+    ],
+    "stack_possible": [
+      "Assistant conversationnel branche sur l'annuaire d'entreprises et l'historique de demandes",
+      "Generation de demande de devis structuree a partir de la conversation",
+      "Outil de reponse et de suivi des leads cote entreprise",
+      "Mesure comparative des leads assistes et non assistes"
+    ],
+    "premiere_etape": "Definir la mesure avant l'assistant. Le seul chiffre net de ce cas est la part des Request-a-Quote portee par l'assistant, parce que Yelp a su l'isoler. Le premier travail est de rendre traçable, dans le flux de leads, ce qui vient de l'assistant et ce qui vient du parcours classique, pour pouvoir juger l'effet.",
+    "playbook": [
+      {
+        "action": "Instrumenter le flux de leads pour distinguer ceux generes par l'assistant de ceux du parcours classique.",
+        "livrable": "Mesure de la part des demandes qualifiees portee par l'assistant."
+      },
+      {
+        "action": "Entrainer la qualification d'intention sur l'historique de demandes et de mises en relation.",
+        "livrable": "Assistant capable de transformer un besoin flou en demande structuree."
+      },
+      {
+        "action": "Ouvrir l'assistant sur une categorie dense, ou l'offre d'entreprises repond a la demande.",
+        "livrable": "Assistant en production sur un perimetre ou la mise en relation aboutit."
+      },
+      {
+        "action": "Brancher une chaine de reponse cote entreprise pour que le lead qualifie soit traite vite.",
+        "livrable": "Boucle lead genere puis lead traite, mesurable de bout en bout."
+      },
+      {
+        "action": "Etendre a toutes les categories en surveillant la neutralite percue et le taux de transformation.",
+        "livrable": "Couverture large, avec suivi de la satisfaction consommateur et du rendement annonceur."
+      }
+    ],
+    "equipe": "Une equipe produit conversationnel, une equipe data pour la qualification d'intention et le matching, une equipe marketplace pour l'equilibre entre demande consommateur et offre annonceur, et une fonction conformite sur l'assistant et les donnees de projet."
+  },
+  "seo": {
+    "slug": "yelp-assistant-qualification-leads-ia-2026",
+    "title": "Yelp Assistant : qualification de leads par IA - 15% des demandes de devis, contre 5% un an plus tot (2026)",
+    "meta_description": "Yelp Assistant transforme une recherche locale en demande de devis qualifiee. Au T1 2026, il porte environ 15% des Request-a-Quote contre 5% un an avant ; l'other revenue croit de 75% a 29 M$.",
+    "resume_citable": "Au premier trimestre 2026, Yelp indique que son assistant conversationnel Yelp Assistant, etendu a toutes les categories, represente environ 15% des demandes de devis Request-a-Quote contre 5% un an plus tot, alimentant un poste other revenue en hausse de 75% sur un an a un record de 29 millions de dollars, avec une cible de 250 millions de dollars de run rate annuel d'ici fin 2028.",
+    "faq": [
+      {
+        "q": "Qu'est-ce que Yelp Assistant ?",
+        "a": "Yelp Assistant est un assistant conversationnel qui dialogue avec le consommateur pour cerner un besoin de service local, puis met ce besoin en forme comme une demande de devis (Request-a-Quote) adressee aux entreprises pertinentes, qui sont les clientes payantes de Yelp. Il a ete etendu a toutes les categories au premier trimestre 2026."
+      },
+      {
+        "q": "Quel resultat chiffre Yelp attribue-t-il a l'assistant ?",
+        "a": "Au premier trimestre 2026, Yelp Assistant represente environ 15% des Request-a-Quote, contre 5% un an plus tot. La monetisation vit dans le poste other revenue, en hausse de 75% sur un an a un record de 29 millions de dollars, mais ce poste agrege plusieurs briques et n'isole pas le revenu propre a l'assistant."
+      },
+      {
+        "q": "Quelle est la limite de ce cas ?",
+        "a": "L'effet le plus net est une metrique d'usage (la part des demandes de devis portee par l'assistant), pas un revenu isole. Yelp ne publie ni l'effet sur le revenu publicitaire par entreprise, ni le taux de transformation d'un devis genere par l'assistant en client effectivement servi."
+      }
+    ]
+  }
+}

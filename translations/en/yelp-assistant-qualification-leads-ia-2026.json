@@ -1,0 +1,137 @@
+{
+  "transposable_ue": {
+    "note": "The pattern, a conversational assistant that qualifies a consumer's intent and turns it into a quote request sent to paying businesses, transposes to any local services marketplace. Two constraints in Europe. The AI Act requires transparency on the assistant and on the fact that an answer steers toward paying advertisers. GDPR governs the collection of project details given in conversation, which are personal data once they describe a need at an address. The model-specific watch point is perceived neutrality: an assistant that steers toward advertisers must stay useful to the consumer, otherwise it destroys the trust that gives the platform its value."
+  },
+  "pattern": "conversational intent-qualification assistant that turns a local search into a quote request, generating leads for advertiser businesses",
+  "etape_parcours": "consideration and purchase (matching consumer to service provider)",
+  "objectif_business": "Rebuild the journey around answers and actions rather than search alone. Yelp's commercial value rests on the quality of the matches it sells to local businesses: a search that does not lead to a quote request earns nothing. The assistant captures intent while it is still vague, shapes it into a qualified request, and thereby feeds the flow of paid leads, in a pressured local advertising market where growth comes from other revenue rather than from legacy advertising.",
+  "points_cles": [
+    "Yelp Assistant is a conversational assistant that turns a local search into a qualified quote request.",
+    "In Q1 2026 it accounts for roughly 15% of Request-a-Quote projects, up from 5% a year earlier.",
+    "It was extended to all categories; other revenue grew 75% year over year to $29 million.",
+    "Level A evidence: Q1 2026 results filed with the SEC and the earnings call of May 7, 2026."
+  ],
+  "resultats": [
+    {
+      "metrique": "Share of Request-a-Quote projects going through Yelp Assistant in Q1 2026, and year-over-year change"
+    },
+    {
+      "metrique": "Extension of the assistant's functional scope"
+    },
+    {
+      "metrique": "Other revenue growth in Q1 2026 (the line where the new AI components are monetized)"
+    },
+    {
+      "metrique": "Other revenue annual run-rate target set by management"
+    }
+  ],
+  "niveau_preuve": {
+    "justification": "The case rests on Yelp's first quarter 2026 results, filed with the SEC (Form 8-K, Exhibit 99.1) and discussed on the earnings call of May 7, 2026. The primary release gives other revenue growth (up 75%, $29 million), the extension of Yelp Assistant to all categories, and the target of $250 million by end of 2028. The 15% share of Request-a-Quote carried by the assistant, versus 5% a year earlier, comes from the shareholder letter and the earnings call exchange. Honest caveat: the other revenue line aggregates several components (Yelp Assistant, Hatch, Yelp Host, data licensing), so the revenue specific to the assistant is not isolated; the cleanest attribution is the share of Request-a-Quote, a usage metric."
+  },
+  "stack_technique": [
+    {
+      "detail": "Conversational assistant that, after dialoguing with the consumer to pin down the need, produces a quote request sent to the relevant businesses. Extended to all categories in the first quarter of 2026."
+    },
+    {
+      "detail": "Automated lead response and follow-up solution on the business side, cited by the CFO among the drivers of other revenue growth."
+    }
+  ],
+  "fonctionnement_operationnel": {
+    "cadence": "Real time, on every conversation started by a consumer looking for a local service.",
+    "opere_par": "Yelp's product and AI teams for the assistant. On the business side, the lead response can be automated via Hatch. The first move belongs to the consumer.",
+    "signal_pilote": "The quality of the project details extracted in conversation, which determines how relevant the match is. A poorly qualified need sends a bad lead to the business and damages both sides of the market. The density of active businesses per category and area also conditions what the assistant can offer.",
+    "etapes": [
+      {
+        "etape": "Expressing the need",
+        "detail": "The consumer describes a local service need to the assistant, in natural language.",
+        "acteur": "client"
+      },
+      {
+        "etape": "Intent qualification",
+        "detail": "Yelp Assistant dialogues to pin down the project (nature, context) and shapes it.",
+        "acteur": "AI"
+      },
+      {
+        "etape": "Quote request generation",
+        "detail": "The assistant turns the qualified need into a Request-a-Quote sent to the relevant businesses.",
+        "acteur": "AI"
+      },
+      {
+        "etape": "Reception and response on the business side",
+        "detail": "Advertiser businesses receive the lead and respond, with a response that can be automated via Hatch.",
+        "acteur": "AI"
+      },
+      {
+        "etape": "Matching",
+        "detail": "The consumer compares responses and picks a provider, which closes the conversion loop.",
+        "acteur": "client"
+      }
+    ]
+  },
+  "replication": {
+    "prerequis_data": [
+      "A base of local businesses dense enough by category and area for matching to make sense",
+      "A history of requests and matches to train intent qualification",
+      "A structured service category taxonomy",
+      "Measurement distinguishing assistant-generated leads from classic-journey leads, without which no specific effect will be legible"
+    ],
+    "prerequis_orga": [
+      "A business model where the qualified match is what gets monetized",
+      "A perceived-neutrality requirement: the assistant must stay useful to the consumer while steering toward advertisers",
+      "A response chain on the business side, without which a qualified lead is lost",
+      "AI Act compliance on the assistant and GDPR on the project details collected"
+    ],
+    "stack_possible": [
+      "Conversational assistant connected to the business directory and request history",
+      "Structured quote request generation from the conversation",
+      "Lead response and follow-up tool on the business side",
+      "Comparative measurement of assisted versus non-assisted leads"
+    ],
+    "equipe": "A conversational product team, a data team for intent qualification and matching, a marketplace team for the balance between consumer demand and advertiser supply, and a compliance function on the assistant and project data.",
+    "playbook": [
+      {
+        "action": "Instrument the lead flow to distinguish assistant-generated leads from classic-journey leads.",
+        "livrable": "Measurement of the share of qualified requests carried by the assistant."
+      },
+      {
+        "action": "Train intent qualification on the history of requests and matches.",
+        "livrable": "Assistant able to turn a vague need into a structured request."
+      },
+      {
+        "action": "Open the assistant on a dense category, where the supply of businesses meets demand.",
+        "livrable": "Assistant in production on a scope where matching succeeds."
+      },
+      {
+        "action": "Connect a response chain on the business side so the qualified lead is handled quickly.",
+        "livrable": "Lead-generated to lead-handled loop, measurable end to end."
+      },
+      {
+        "action": "Extend to all categories while watching perceived neutrality and the conversion rate.",
+        "livrable": "Broad coverage, with tracking of consumer satisfaction and advertiser yield."
+      }
+    ],
+    "premiere_etape": "Define the measurement before the assistant. The only clean number in this case is the share of Request-a-Quote carried by the assistant, because Yelp was able to isolate it. The first task is to make traceable, within the lead flow, what comes from the assistant and what comes from the classic journey, in order to judge the effect."
+  },
+  "statut_vivant": {
+    "note": "Described in the present tense in the first quarter 2026 results (May 7, 2026), with a sharply rising year-over-year share of Request-a-Quote and a recent extension to all categories. Management frames it as a pillar of its stated strategy. No signal of withdrawal."
+  },
+  "seo": {
+    "title": "Yelp Assistant: AI lead qualification - 15% of quote requests, up from 5% a year earlier (2026)",
+    "meta_description": "Yelp Assistant turns a local search into a qualified quote request. In Q1 2026 it carries roughly 15% of Request-a-Quote projects, up from 5% a year earlier; other revenue grew 75% to $29 million.",
+    "resume_citable": "In the first quarter of 2026, Yelp states that its conversational assistant Yelp Assistant, extended to all categories, accounts for roughly 15% of Request-a-Quote projects, up from 5% a year earlier, feeding an other revenue line up 75% year over year to a record $29 million, with a target of $250 million in annual run rate by the end of 2028.",
+    "faq": [
+      {
+        "q": "What is Yelp Assistant?",
+        "a": "Yelp Assistant is a conversational assistant that dialogues with the consumer to pin down a local service need, then shapes that need into a quote request (Request-a-Quote) sent to the relevant businesses, which are Yelp's paying customers. It was extended to all categories in the first quarter of 2026."
+      },
+      {
+        "q": "What measured result does Yelp attribute to the assistant?",
+        "a": "In the first quarter of 2026, Yelp Assistant accounts for roughly 15% of Request-a-Quote projects, up from 5% a year earlier. Monetization sits in the other revenue line, up 75% year over year to a record $29 million, but that line aggregates several components and does not isolate the revenue specific to the assistant."
+      },
+      {
+        "q": "What is the limit of this case?",
+        "a": "The cleanest effect is a usage metric (the share of quote requests carried by the assistant), not an isolated revenue figure. Yelp publishes neither the effect on advertising revenue per business nor the conversion rate of an assistant-generated quote into a customer actually served."
+      }
+    ]
+  }
+}
