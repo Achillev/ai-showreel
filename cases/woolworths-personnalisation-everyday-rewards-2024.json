@@ -1,0 +1,289 @@
+{
+  "id": "woolworths-personnalisation-everyday-rewards-2024",
+  "type_fiche": "succes",
+  "marque": "Woolworths Group",
+  "industrie": "retail_ecom",
+  "marches_deploiement": [
+    "Australie"
+  ],
+  "transposable_ue": {
+    "flag": "oui_avec_adaptations",
+    "note": "Le dispositif repose sur la donnee de fidelite d'un programme a l'echelle nationale et sur des offres personnalisees decidees par un modele. En Europe, cela suppose une base legale claire sur le profilage marketing et l'information des membres. Le moteur (Eagle Eye) est une plateforme deja operee en Europe, la question est donc moins technique que juridique : traiter en temps reel l'historique d'achat individuel pour arbitrer une offre releve du RGPD sur le profilage."
+  },
+  "metier": "CRM / marketing client (programme de fidelite et personnalisation)",
+  "logo_domain": "woolworthsgroup.com.au",
+  "intervenants": [
+    {
+      "nom": "Brad Banducci",
+      "role": "CEO de Woolworths au moment de l'earnings call 2023 (cite comme ancien CEO dans la source de 2024)",
+      "source_ref": "S1"
+    }
+  ],
+  "agences": [
+    {
+      "nom": "Eagle Eye",
+      "role": "Fournisseur du moteur de fidelite et de personnalisation temps reel sous-jacent a Everyday Rewards",
+      "source_ref": "S2"
+    },
+    {
+      "nom": "Quantium",
+      "role": "Analyste data detenu a 75 pour cent par Woolworths, socle analytique de la personnalisation",
+      "source_ref": "S1"
+    }
+  ],
+  "axes": {
+    "levier": "activation_conversion",
+    "touchpoints": [
+      "programme de fidelite Everyday Rewards (application, carte, point de vente)",
+      "offres personnalisees en magasin et en ligne",
+      "prix membres et promotions ciblees"
+    ],
+    "etape_parcours": "achat et fidelite",
+    "famille": "personnalisation",
+    "pattern": "moteur de personnalisation temps reel adosse a un programme de fidelite de masse, generant des offres individualisees a la place du marketing de masse",
+    "type_ia": [
+      "modeles de personnalisation et de recommandation d'offres",
+      "analytics predictif sur donnee de fidelite"
+    ],
+    "plateforme_stack": [
+      "Eagle Eye (moteur de fidelite et de personnalisation temps reel)",
+      "Quantium (analyse de donnee, detenu a 75 pour cent par Woolworths)",
+      "connexion des systemes de point de vente au programme de fidelite en temps reel"
+    ],
+    "objectif_metrique": [
+      "propension d'achat des clients exposes aux offres personnalisees",
+      "penetration et activite du programme de fidelite",
+      "conversion des offres ciblees"
+    ]
+  },
+  "implementation": "plateforme",
+  "objectif_business": "Sortir du marketing de masse pour un distributeur alimentaire dont la marge est mince et le panier repete. L'enjeu est de faire acheter davantage un client deja present dans le programme, en lui poussant la bonne offre au bon moment plutot qu'une promotion generique. Woolworths a bati ce dispositif sur deux actifs : l'analyse de donnee de Quantium, dont elle detient 75 pour cent, et un moteur de fidelite temps reel fourni par Eagle Eye, qui connecte le point de vente au programme Everyday Rewards pour decider une offre pendant que le client fait ses courses.",
+  "points_cles": [
+    "Woolworths pilote les offres personnalisees d'Everyday Rewards via le moteur temps reel Eagle Eye et l'analyste data Quantium (detenu a 75 pour cent).",
+    "L'entreprise rapporte des clients cinq fois plus enclins a acheter face au moteur de personnalisation qu'avec le marketing traditionnel.",
+    "Le passage a un systeme de fidelite temps reel a demande environ 3,5 ans selon l'ex-CEO Brad Banducci (earnings call 2023).",
+    "Le programme Everyday Rewards adosse au moteur compte de l'ordre de 15 millions de membres (RetailBiz, juin 2024)."
+  ],
+  "description": "Woolworths, distributeur alimentaire australien, a fait de son programme de fidelite Everyday Rewards le support d'une personnalisation a l'echelle. Le principe pour le client : au lieu d'une promotion identique pour tous, il recoit des offres et des prix membres calcules a partir de son historique et pousses en temps reel, y compris pendant qu'il fait ses courses, grace a la connexion entre le point de vente et le programme de fidelite. Deux briques rendent cela possible. Quantium, l'analyste data dont Woolworths detient 75 pour cent, fournit la couche d'analyse de la donnee client. Eagle Eye fournit le moteur de fidelite et de promotions temps reel sous Everyday Rewards, decrit par la presse australienne comme la vraie disruption du programme, avec un dirigeant, Tim Mason, qui avait lance la Tesco Clubcard en 1995. Sur ses resultats, l'entreprise rapporte que les clients exposes a ce moteur de personnalisation etaient cinq fois plus enclins a acheter qu'avec le marketing traditionnel. Le chantier n'a pas ete rapide : l'ancien CEO Brad Banducci a decrit en earnings call 2023 une re-plateformisation d'environ 3,5 ans pour passer d'un systeme herite et contraint a un systeme temps reel. Ce qu'il faut garder en tete : le chiffre des cinq fois est un reporting d'entreprise relaye par la presse specialisee, pas un resultat isole dans un document financier, et aucun volume d'offres propre a Woolworths n'est publie a l'appui.",
+  "resultats": [
+    {
+      "metrique": "Propension d'achat des clients face au moteur de personnalisation, comparee au marketing traditionnel (reporting Woolworths relaye par AiThority)",
+      "valeur": "5x",
+      "citation_exacte": "customers were five times more likely to buy",
+      "source_ref": "S1"
+    },
+    {
+      "metrique": "Duree de re-plateformisation vers un systeme de fidelite temps reel (ex-CEO Brad Banducci, earnings call 2023)",
+      "valeur": "3,5 ans",
+      "citation_exacte": "taken us close to 3.5 years to go from a legacy system",
+      "source_ref": "S1"
+    },
+    {
+      "metrique": "Participation de Woolworths dans l'analyste data Quantium, socle de la personnalisation",
+      "valeur": "75%",
+      "citation_exacte": "75% purchase of data analytics company Quantium",
+      "source_ref": "S1"
+    },
+    {
+      "metrique": "Moteur de fidelite temps reel sous-jacent au programme Everyday Rewards",
+      "valeur": "Eagle Eye",
+      "citation_exacte": "the loyalty engine underneath Everyday Rewards, provided by Eagle Eye",
+      "source_ref": "S2"
+    },
+    {
+      "metrique": "Base de membres du programme Everyday Rewards adosse au moteur Eagle Eye (RetailBiz, juin 2024)",
+      "valeur": "15 millions",
+      "citation_exacte": "a total base of 15 million Everyday Rewards members",
+      "source_ref": "S2"
+    }
+  ],
+  "niveau_preuve": {
+    "niveau": "B",
+    "justification": "Le dispositif et son echelle sont documentes par deux sources concordantes : la presse specialisee (AiThority, 3 decembre 2024) qui relaie le reporting de Woolworths et cite en earnings call 2023 l'ex-CEO Brad Banducci sur la re-plateformisation de 3,5 ans et sur Eagle Eye, et la presse de distribution australienne (RetailBiz, 7 juin 2024) qui confirme le moteur Eagle Eye sous Everyday Rewards et une base d'environ 15 millions de membres. B et non A parce que le seul resultat marketing chiffre, les clients cinq fois plus enclins a acheter, est un reporting d'entreprise non isole dans un document financier, sans volume d'offres publie, et parce que la brique de personnalisation repose sur une plateforme vendeur (Eagle Eye), ce qui plafonne le cas a B. Au-dessus de C car le deploiement est prouve a l'echelle nationale sur plusieurs annees, avec une acquisition (75 pour cent de Quantium) et une base de fidelite de l'ordre de 15 millions de membres verifiables."
+  },
+  "dates": {
+    "lancement": "Re-plateformisation vers un systeme de fidelite temps reel decrite comme aboutie sur environ 3,5 ans a l'earnings call 2023 (ex-CEO Brad Banducci)",
+    "derniere_confirmation_activite": "2024-12",
+    "verifie_le": "2026-07-28",
+    "revoir_apres": "2027-01-28"
+  },
+  "statut_vivant": {
+    "statut": "confirme",
+    "note": "Deux confirmations en 2024 : RetailBiz decrit le moteur Eagle Eye sous Everyday Rewards en juin 2024, AiThority relaie le reporting de personnalisation en decembre 2024. Le programme Everyday Rewards reste actif et adosse au meme moteur."
+  },
+  "sources": [
+    {
+      "ref": "S1",
+      "type": "presse",
+      "fiabilite": "T4_secondaire",
+      "titre": "Why Woolworths Went Big on AI Personalisation",
+      "url": "https://aithority.com/machine-learning/why-woolworths-went-big-on-ai-personalisation/",
+      "date_publication": "2024-12-03",
+      "consulte_le": "2026-07-28"
+    },
+    {
+      "ref": "S2",
+      "type": "presse",
+      "fiabilite": "T3_presse_etablie",
+      "titre": "What's the secret sauce behind Woolworths' high-performing loyalty program?",
+      "url": "https://www.retailbiz.com.au/topics/marketing/whats-the-secret-sauce-behind-woolworths-high-performing-loyalty-program/",
+      "date_publication": "2024-06-07",
+      "consulte_le": "2026-07-28"
+    }
+  ],
+  "fonctionnement_operationnel": {
+    "cadence": "Temps reel au point de vente et dans l'application, adosse a un programme de fidelite permanent ; l'analyse de la donnee client tourne en continu.",
+    "opere_par": "L'equipe CRM et fidelite d'Everyday Rewards pour les regles d'offre, l'equipe data (appuyee sur Quantium) pour les modeles, avec le moteur Eagle Eye comme couche d'execution.",
+    "signal_pilote": "L'historique d'achat individuel rattache au membre du programme. Sans identification du client au point de vente (carte ou application scannee), l'offre personnalisee ne peut pas etre calculee ni servie : le taux d'identification des ventes est le nerf du dispositif.",
+    "etapes": [
+      {
+        "etape": "Identification du membre",
+        "detail": "Le client scanne sa carte ou son application Everyday Rewards au point de vente ou en ligne, ce qui rattache l'achat a son profil.",
+        "acteur": "client"
+      },
+      {
+        "etape": "Analyse de la donnee",
+        "detail": "L'historique et le comportement d'achat sont analyses pour estimer les offres les plus pertinentes, sur la base analytique de Quantium.",
+        "acteur": "equipe data"
+      },
+      {
+        "etape": "Decision d'offre temps reel",
+        "detail": "Le moteur Eagle Eye decide et sert l'offre ou le prix membre personnalise, en connectant le point de vente au programme de fidelite.",
+        "acteur": "IA"
+      },
+      {
+        "etape": "Exposition et achat",
+        "detail": "Le client voit l'offre personnalisee pendant ses courses ou dans l'application et decide de l'utiliser.",
+        "acteur": "client"
+      },
+      {
+        "etape": "Pilotage des campagnes",
+        "detail": "L'equipe CRM ajuste les regles et les segments d'offre en fonction de la performance observee.",
+        "acteur": "marketing"
+      }
+    ]
+  },
+  "schema_flow": {
+    "statut": "approche_type",
+    "noeuds": [
+      {
+        "id": "pos",
+        "role_generique": "data_source",
+        "label": "Point de vente et application, identification du membre Everyday Rewards"
+      },
+      {
+        "id": "loyalty",
+        "role_generique": "crm",
+        "label": "Programme de fidelite Everyday Rewards (profil et historique membre)"
+      },
+      {
+        "id": "analytics",
+        "role_generique": "modele_ia",
+        "label": "Analyse de donnee client",
+        "outil_documente": "Quantium (detenu a 75 pour cent par Woolworths)"
+      },
+      {
+        "id": "engine",
+        "role_generique": "modele_ia",
+        "label": "Moteur de personnalisation et d'offres temps reel",
+        "outil_documente": "Eagle Eye"
+      },
+      {
+        "id": "offer",
+        "role_generique": "site_app",
+        "label": "Offre personnalisee et prix membre servis au client"
+      }
+    ],
+    "liens": [
+      [
+        "pos",
+        "loyalty",
+        "achat rattache au membre"
+      ],
+      [
+        "loyalty",
+        "analytics",
+        "historique et comportement"
+      ],
+      [
+        "analytics",
+        "engine",
+        "signaux de personnalisation"
+      ],
+      [
+        "engine",
+        "offer",
+        "offre decidee en temps reel"
+      ],
+      [
+        "offer",
+        "pos",
+        "achats suivants"
+      ]
+    ]
+  },
+  "replication": {
+    "statut_epistemique": "infere",
+    "prerequis_data": [
+      "Un programme de fidelite avec un taux d'identification des ventes eleve, sinon la majorite des achats reste anonyme et non personnalisable",
+      "Un historique d'achat individuel assez profond pour distinguer les habitudes d'un membre",
+      "Une donnee de point de vente connectee au programme de fidelite en temps reel"
+    ],
+    "prerequis_orga": [
+      "Une equipe CRM et fidelite autorisee a differencier les offres selon le profil",
+      "Une capacite d'analyse de donnee interne ou partenaire pour alimenter les modeles",
+      "Une analyse RGPD sur le profilage marketing et l'information des membres",
+      "Une discipline de mesure avec groupe de controle, sans laquelle l'effet des offres personnalisees reste declaratif, comme ici pour le chiffre des cinq fois"
+    ],
+    "stack_possible": [
+      "Moteur de fidelite et de promotions temps reel de type Eagle Eye",
+      "Couche d'analyse de donnee client (interne ou partenaire de type Quantium)",
+      "Integration du point de vente au programme de fidelite",
+      "Application mobile de fidelite pour porter l'offre au client"
+    ],
+    "premiere_etape": "Mesurer d'abord le taux d'identification des ventes au point de vente. Si une part importante des achats reste anonyme, aucun moteur de personnalisation ne peut agir : le premier chantier est de faire scanner la carte ou l'application, pas de choisir un modele.",
+    "playbook": [
+      {
+        "action": "Augmenter le taux d'identification des membres au point de vente et en ligne.",
+        "livrable": "Part des ventes rattachees a un profil client suffisante pour personnaliser."
+      },
+      {
+        "action": "Constituer une base analytique de la donnee d'achat individuelle.",
+        "livrable": "Historique client exploitable par des modeles de recommandation d'offres."
+      },
+      {
+        "action": "Deployer un moteur de fidelite temps reel connecte au point de vente.",
+        "livrable": "Capacite a servir une offre personnalisee pendant l'acte d'achat."
+      },
+      {
+        "action": "Definir les regles d'offre et de prix membre pilotees par le profil.",
+        "livrable": "Segments et offres personnalisees operationnels."
+      },
+      {
+        "action": "Deployer avec un groupe de controle pour attribuer un effet au dispositif.",
+        "livrable": "Protocole de mesure permettant une attribution causale de l'uplift."
+      }
+    ],
+    "equipe": "Une equipe CRM et fidelite pour les regles d'offre, une equipe data ou un partenaire analytique pour les modeles, une equipe d'integration pour connecter point de vente et programme de fidelite, et une fonction juridique sur le profilage."
+  },
+  "seo": {
+    "slug": "woolworths-personnalisation-everyday-rewards-2024",
+    "title": "Woolworths : personnalisation temps reel d'Everyday Rewards - des clients cinq fois plus enclins a acheter (2024)",
+    "meta_description": "Woolworths pilote les offres personnalisees d'Everyday Rewards via le moteur temps reel Eagle Eye et l'analyste data Quantium. L'entreprise rapporte des clients cinq fois plus enclins a acheter.",
+    "resume_citable": "Woolworths adosse la personnalisation temps reel a son programme de fidelite Everyday Rewards (de l'ordre de 15 millions de membres) via le moteur Eagle Eye et l'analyste data Quantium detenu a 75 pour cent, et rapporte des clients cinq fois plus enclins a acheter qu'avec le marketing traditionnel, un chiffre d'entreprise relaye par la presse et non isole dans un document financier.",
+    "faq": [
+      {
+        "q": "Quel resultat Woolworths rapporte-t-il pour son moteur de personnalisation ?",
+        "a": "Que les clients exposes au moteur de personnalisation etaient cinq fois plus enclins a acheter qu'avec le marketing traditionnel. C'est un reporting d'entreprise relaye par la presse specialisee, pas un resultat isole dans un document financier, d'ou le niveau de preuve B."
+      },
+      {
+        "q": "Sur quelle stack repose la personnalisation d'Everyday Rewards ?",
+        "a": "Sur le moteur de fidelite et de promotions temps reel d'Eagle Eye, connecte au point de vente, et sur la couche d'analyse de donnee de Quantium, l'analyste data dont Woolworths detient 75 pour cent."
+      },
+      {
+        "q": "Combien de temps a pris la mise en place du systeme temps reel ?",
+        "a": "Environ 3,5 ans selon l'ancien CEO Brad Banducci en earnings call 2023, pour passer d'un systeme herite et contraint a un systeme de fidelite temps reel."
+      }
+    ]
+  }
+}

@@ -1,0 +1,133 @@
+{
+  "seo": {
+    "title": "JD Sports Fashion: AI-driven lifecycle orchestration with Loomi AI - +65% conversion in the UK (2025)",
+    "meta_description": "JD Sports unified its customer data on Bloomreach and Loomi AI to orchestrate personalized multi-market flows: +65% conversion in the UK, +75% open rate in Spain.",
+    "resume_citable": "JD Sports Fashion adopted Bloomreach and its Loomi AI layer to unify customer data and orchestrate personalized flows (welcome, abandoned cart, win-back, real-time recommendations) triggered on micro-behaviors via email, push, and on-site across several European markets; the vendor attributes to these campaigns +65% conversion rate in the UK and +75% open rate in Spain.",
+    "faq": [
+      {
+        "q": "Which AI does JD Sports use to personalize its customer journeys?",
+        "a": "JD Sports adopted Bloomreach's personalization platform and its Loomi AI layer, which drives advanced segmentation, dynamic campaign content, and omnichannel orchestration, with real-time product recommendations. The setup unifies customer data and triggers lifecycle flows on micro-behaviors."
+      },
+      {
+        "q": "What results are attributed to the setup?",
+        "a": "According to the Bloomreach case study, the Loomi AI-powered campaigns lifted the conversion rate by 65% in the UK and the open rate by 75% in Spain, with an increase in incremental revenue since adopting the platform. These figures come from the vendor, which places the case at evidence level B."
+      },
+      {
+        "q": "Is the case transposable in Europe?",
+        "a": "Yes, it is already deployed in the UK and in European markets including Spain. The main constraint is the GDPR legal basis for tracking the micro-behaviors that trigger the flows, and for consent to prospecting via email and push."
+      }
+    ]
+  },
+  "pattern": "AI-personalized lifecycle orchestration on micro-behaviors, deployed multi-market",
+  "etape_parcours": "loyalty",
+  "objectif_business": "Scale the customer engagement setup at the pace of the retailer's growth, without adding complexity, by unifying customer data and automating end-to-end personalized journeys across several markets. The stated aim: move from a classic CRM to a revenue engine.",
+  "description": "JD Sports, a fast-growing sportswear retailer, adopted Bloomreach's personalization platform and its Loomi AI layer to unify its customer data and orchestrate personalized journeys across several markets. Concretely, the retailer automates lifecycle flows triggered by each customer's behavior: welcome campaign, abandoned-cart follow-up, reactivation (win-back), and real-time product recommendations, served via email, push notifications, and on the site. Loomi AI drives the segmentation, the dynamic content of campaigns, and the omnichannel orchestration, which allows an individualized message to be delivered based on each customer's behavior, preferences, and life stage. The setup runs in parallel across several European markets: the vendor attributes to these campaigns a 65% rise in conversion rate in the UK and a 75% rise in open rate in Spain, as well as an increase in incremental revenue since adopting the platform. According to JD Sports's Head of CRM, Bloomreach gave the group the infrastructure to move faster and activate across all channels in the UK as well as in European markets, with CRM becoming a revenue engine for the business.",
+  "points_cles": [
+    "JD Sports adopted Bloomreach and Loomi AI to unify its data and orchestrate personalized multi-market journeys.",
+    "The flows (abandoned cart, win-back, welcome, real-time recommendations) trigger on micro-behaviors via email, push, and on-site.",
+    "Results attributed by the vendor: +65% conversion rate in the UK, +75% open rate in Spain.",
+    "Level B: quantified platform case study; figures from the vendor, multi-market deployment documented."
+  ],
+  "resultats": [
+    {
+      "metrique": "Rise in conversion rate in the UK on the Loomi AI-powered campaigns"
+    },
+    {
+      "metrique": "Rise in open rate in Spain on the Loomi AI-powered campaigns"
+    },
+    {
+      "metrique": "Incremental revenue since adopting the Bloomreach personalization platform"
+    }
+  ],
+  "niveau_preuve": {
+    "justification": "Quantified platform case study (Bloomreach, Loomi AI engine) with results attributed by name to JD Sports and documented multi-market deployment; the figures come from the vendor (vendor bias), which caps it at B. The second source (DestinationCRM) independently corroborates the existence and capabilities of Loomi AI but does not cite JD Sports or the figures."
+  },
+  "stack_technique": [
+    {
+      "detail": "Personalization and omnichannel orchestration platform (formerly Exponea) that unifies customer data and drives the lifecycle flows."
+    },
+    {
+      "detail": "Bloomreach's AI layer that drives advanced segmentation, dynamic campaign content, and omnichannel orchestration, with real-time recommendations."
+    }
+  ],
+  "fonctionnement_operationnel": {
+    "cadence": "Real time on behavioral triggers: each micro-behavior (browsing, add to cart, open, inactivity) can trigger a flow. The lifecycle campaigns run continuously and serve the message at the event.",
+    "opere_par": "JD Sports's CRM team, on the Bloomreach Engagement platform, with the Loomi AI layer handling segmentation, dynamic content, and orchestration.",
+    "signal_pilote": "Individual behavior unified in the platform (browsing, cart, history, life stage). If customer data is not unified and clean, segmentation and triggers degrade and the flows lose their relevance.",
+    "etapes": [
+      {
+        "etape": "Unifying customer data",
+        "detail": "Behavioral and transactional data are centralized in Bloomreach to obtain a single view per customer.",
+        "acteur": "data team"
+      },
+      {
+        "etape": "Segmentation and dynamic content",
+        "detail": "Loomi AI builds the advanced segmentation and adapts campaign content based on behavior, preferences, and life stage.",
+        "acteur": "AI"
+      },
+      {
+        "etape": "Triggering the lifecycle flows",
+        "detail": "Micro-behaviors trigger the welcome, abandoned-cart, and win-back flows, served via email, push, and on-site.",
+        "acteur": "AI"
+      },
+      {
+        "etape": "Real-time recommendations",
+        "detail": "Product recommendations are personalized on the fly for each customer across the activated channels.",
+        "acteur": "AI"
+      },
+      {
+        "etape": "Multi-market deployment and tracking",
+        "detail": "The CRM team extends the setup in parallel across several European markets and tracks conversion, open rate, and incremental revenue.",
+        "acteur": "marketing"
+      }
+    ]
+  },
+  "replication": {
+    "prerequis_data": [
+      "Unified customer data (browsing behavior, cart, purchase history, email and push engagement) in a single platform",
+      "Consented tracking of micro-behaviors (GDPR) to trigger the flows in real time",
+      "A usable product catalog for personalized recommendations"
+    ],
+    "prerequis_orga": [
+      "A CRM team able to operate an omnichannel orchestration platform day to day",
+      "A GDPR compliance foundation for consent to tracking and to email and push prospecting",
+      "Multi-market governance to replicate the flows from one market to another"
+    ],
+    "stack_possible": [
+      "Personalization and omnichannel orchestration platform unifying customer data (Bloomreach Engagement type)",
+      "AI segmentation and dynamic content layer plugged into this platform (Loomi AI type)",
+      "Real-time product recommendation engine connected to the catalog",
+      "Email, push, and on-site activation channels driven from the same platform"
+    ],
+    "premiere_etape": "Unify behavioral and transactional data in a single platform, then launch a first high-volume lifecycle flow (abandoned-cart follow-up) triggered in real time on a single market, before extending to the other flows and markets.",
+    "playbook": [
+      {
+        "action": "Centralize behavioral and transactional data in a single engagement platform to obtain a unified customer view.",
+        "livrable": "Unified customer profile usable for segmentation and triggering."
+      },
+      {
+        "action": "Set up advanced segmentation and dynamic content driven by the AI layer.",
+        "livrable": "Segments and campaign templates adapted to behavior and life stage."
+      },
+      {
+        "action": "Activate the lifecycle flows triggered by micro-behaviors (welcome, abandoned cart, win-back) via email, push, and on-site.",
+        "livrable": "Automated flows in production on a first market."
+      },
+      {
+        "action": "Connect real-time product recommendations to the activated channels.",
+        "livrable": "Personalized recommendations served on the fly."
+      },
+      {
+        "action": "Replicate the setup across the other markets and track conversion, open rate, and incremental revenue.",
+        "livrable": "Instrumented multi-market setup."
+      }
+    ],
+    "equipe": "A CRM team that runs the orchestration day to day, customer-data specialists for unification and quality, a personalization profile for segmentation and dynamic content, and a GDPR compliance function involved on tracking and prospecting."
+  },
+  "statut_vivant": {
+    "note": "Case study published by Bloomreach describing a production deployment in the UK and in European markets, with JD Sports's Head of CRM quoted. Remote verification on the vendor page; no capture of the feature in production on the customer side."
+  },
+  "transposable_ue": {
+    "note": "The case is already deployed in the UK and in European markets (including Spain), so the pattern is transposable as is to a European retailer. The main constraint is the GDPR legal basis for the behavioral triggers: the abandoned-cart, win-back, and welcome flows rely on tracking micro-behaviors (browsing, opens, add to cart) and assume consent to tracking and to prospecting via email and push. Customer data must be unified in a single platform before orchestration."
+  }
+}

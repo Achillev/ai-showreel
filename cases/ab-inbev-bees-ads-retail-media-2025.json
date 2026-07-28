@@ -1,0 +1,305 @@
+{
+  "id": "ab-inbev-bees-ads-retail-media-2025",
+  "type_fiche": "succes",
+  "marque": "AB InBev",
+  "groupe": "Anheuser-Busch InBev (super app BEES, regie BEES Ads)",
+  "industrie": "cpg_d2c",
+  "marches_deploiement": [
+    "International (29 marches ou BEES est deploye au 31 decembre 2025)"
+  ],
+  "transposable_ue": {
+    "flag": "oui_avec_adaptations",
+    "note": "BEES est deja deploye a l'echelle internationale, Europe comprise, donc la brique regie retail media est transposable techniquement. Deux contraintes cadrent l'usage en UE. D'abord le RGPD : la personnalisation des emplacements repose sur le profil du detaillant et son historique d'achat, donnees de client professionnel dont le traitement a des fins publicitaires demande une base legale et une information claires. Ensuite, l'AI Act n'impose pas de contrainte forte sur une enchere publicitaire de ce type, mais la transparence sur le ciblage automatise reste attendue. Le modele lui-meme (un distributeur qui monetise l'audience de son propre canal B2B) ne pose pas d'obstacle reglementaire specifique."
+  },
+  "metier": "retail media / regie publicitaire (monetisation d'une audience B2B first-party)",
+  "logo_domain": "ab-inbev.com",
+  "agences": [
+    {
+      "nom": "Topsort",
+      "role": "Fournit l'infrastructure publicitaire a enchere (auction-based) et la personnalisation par IA qui equipe BEES Ads, ainsi que l'interface self-service pour les marques.",
+      "source_ref": "S1"
+    }
+  ],
+  "axes": {
+    "levier": "monetisation",
+    "touchpoints": [
+      "super app B2B BEES (application de commande utilisee par les detaillants pour se reapprovisionner)",
+      "emplacements sponsorises inseres dans le parcours d'achat BEES",
+      "plateforme self-service Be Ads pour les marques annonceuses"
+    ],
+    "etape_parcours": "monetisation de l'audience B2B (amont annonceur : achat media retail)",
+    "famille": "optimisation_automatisation",
+    "pattern": "regie retail media sur super app B2B : enchere automatisee et personnalisation par IA des emplacements sponsorises selon le profil du detaillant, en self-service pour les marques tierces",
+    "type_ia": [
+      "personnalisation par IA (ciblage selon le profil et l'historique d'achat du detaillant)",
+      "enchere publicitaire automatisee (auction-based bidding, paiement au coup par coup)"
+    ],
+    "plateforme_stack": [
+      "BEES (super app B2B, AB InBev)",
+      "Topsort (infrastructure ad retail media a enchere)",
+      "Be Ads / BEES Ads (plateforme self-service pour les marques)"
+    ],
+    "objectif_metrique": [
+      "revenu publicitaire retail media",
+      "part de l'audience B2B monetisee",
+      "ROI annonceur (paiement uniquement pour les ads affichees)"
+    ]
+  },
+  "implementation": "hybride",
+  "stack_technique": [
+    {
+      "nom": "BEES",
+      "categorie": "plateforme",
+      "detail": "Super app B2B d'AB InBev par laquelle les detaillants passent commande et se reapprovisionnent. Sert de canal et de source de donnees (profil et historique d'achat) pour la regie BEES Ads.",
+      "url": "https://www.ab-inbev.com"
+    },
+    {
+      "nom": "Topsort",
+      "categorie": "plateforme",
+      "detail": "Infrastructure retail media a enchere qui equipe BEES Ads : ciblage des emplacements sponsorises, enchere automatisee, interface self-service et suivi de campagne en temps reel.",
+      "url": "https://www.topsort.com"
+    }
+  ],
+  "objectif_business": "Monetiser l'audience de detaillants captive du super app BEES en la transformant en regie retail media. AB InBev, fabricant et distributeur, devient vendeur d'espace publicitaire sur son propre canal de commande : les marques (les siennes comme des tierces) achetent des emplacements sponsorises cibles sur les detaillants qui se reapprovisionnent deja sur la plateforme. La monetisation vient donc s'ajouter au GMV existant, sans cout d'acquisition d'audience supplementaire.",
+  "points_cles": [
+    "AB InBev transforme sa super app de commande BEES (3,9M utilisateurs actifs/mois) en regie retail media avec Topsort.",
+    "Chaque ad est cible sur le profil et l'historique d'achat du detaillant ; les marques gerent leurs campagnes en self-service.",
+    "Enchere automatisee : l'annonceur ne paie que pour les ads reellement affichees.",
+    "Socle a l'echelle : BEES a genere 52,5 Md$ de GMV en 2025 (+12%), deploye sur 29 marches, 72% du CA du groupe via les plateformes B2B digitales."
+  ],
+  "description": "BEES est la super app B2B d'AB InBev : les detaillants (epiceries, bars, points de vente) y passent commande pour se reapprovisionner. AB InBev a greffe sur ce canal une regie retail media, BEES Ads, batie sur l'infrastructure publicitaire de Topsort. Des emplacements sponsorises sont inseres dans le parcours d'achat de l'app. Chaque annonce est ciblee sur le profil du detaillant et son historique d'achat, de sorte que les marques touchent les acheteurs les plus pertinents. La reservation fonctionne a l'enchere : l'annonceur ne paie que pour les ads effectivement affichees. Les marques, y compris tierces, montent, pilotent et suivent leurs campagnes en self-service depuis la plateforme Be Ads, avec un suivi de performance en temps reel. Le modele economique : AB InBev, qui possede deja le canal et la donnee d'achat, vend de l'audience sur son propre reseau de distribution. Le socle est massif et public : BEES a genere 52,5 milliards de dollars de GMV en 2025 (en hausse de 12%), etait deploye sur 29 marches au 31 decembre, avec 72% du chiffre d'affaires du groupe capte via les plateformes B2B digitales, et une audience de 3,9 millions d'utilisateurs actifs mensuels sur laquelle la regie s'appuie. La reserve honnete : aucun revenu publicitaire propre a BEES Ads n'est isole publiquement, et la mecanique de la regie n'est decrite que par l'editeur Topsort.",
+  "resultats": [
+    {
+      "metrique": "Audience mensuelle du super app BEES sur laquelle s'appuie la regie BEES Ads",
+      "valeur": "3,9M MAU",
+      "citation_exacte": "3.9 million monthly active users",
+      "source_ref": "S1"
+    },
+    {
+      "metrique": "GMV de la plateforme BEES en 2025 et croissance annuelle",
+      "valeur": "52,5 Md$ (+12%)",
+      "citation_exacte": "BEES generated $52.5 billion in gross merchandise value in 2025, up 12%",
+      "source_ref": "S2"
+    },
+    {
+      "metrique": "Marches ou BEES est deploye au 31 decembre 2025",
+      "valeur": "29 marches",
+      "citation_exacte": "BEES was live in 29 markets",
+      "source_ref": "S2"
+    },
+    {
+      "metrique": "Part du chiffre d'affaires AB InBev capte via les plateformes B2B digitales",
+      "valeur": "72% du CA",
+      "citation_exacte": "72% of company revenue captured through B2B digital platforms",
+      "source_ref": "S2"
+    }
+  ],
+  "niveau_preuve": {
+    "niveau": "B",
+    "justification": "La mecanique de BEES Ads (enchere automatisee, personnalisation par IA selon le profil et l'historique d'achat du detaillant, self-service pour les marques, 3,9 millions d'utilisateurs actifs mensuels) est documentee par une etude de cas chiffree de l'editeur Topsort, ce qui correspond au niveau B (etude de cas plateforme/vendor chiffree). L'echelle du socle est corroboree par une source de presse etablie (Digital Commerce 360) reprenant les resultats annuels 2025 d'AB InBev : 52,5 Md$ de GMV (+12%), 29 marches, 72% du CA via les plateformes B2B digitales. Reserve qui empeche de monter plus haut : aucun revenu publicitaire propre a BEES Ads n'est isole dans un document financier, aucune date de lancement precise n'est publiee, et la description du dispositif publicitaire repose sur le seul editeur. La page officielle AB InBev consultee ne mentionne pas BEES Ads."
+  },
+  "dates": {
+    "lancement": "2024 (lancement de BEES Ads annonce par Topsort ; date precise non publiee)",
+    "derniere_confirmation_activite": "2026-02",
+    "verifie_le": "2026-07-28",
+    "revoir_apres": "2028-01-28"
+  },
+  "statut_vivant": {
+    "statut": "confirme",
+    "note": "Le socle BEES est en croissance active (52,5 Md$ de GMV en 2025, +12%, resultats annuels publies en fevrier 2026), et AB InBev structure une equipe retail media dediee (poste de Director, Ads Business Strategy and Development pour l'equipe BEES Retail Media and CRM). La reserve : la vivacite propre a BEES Ads n'est confirmee que par l'editeur Topsort, aucun revenu publicitaire n'etant publie separement."
+  },
+  "sources": [
+    {
+      "ref": "S1",
+      "type": "customer_story_plateforme",
+      "fiabilite": "T2_officiel_interesse",
+      "titre": "BEES Launches BEES Ads Powered by Topsort",
+      "url": "https://www.topsort.com/casestudy/bees",
+      "date_publication": "2024",
+      "consulte_le": "2026-07-28"
+    },
+    {
+      "ref": "S2",
+      "type": "presse",
+      "fiabilite": "T3_presse_etablie",
+      "titre": "AB InBev expands BEES B2B platform as volumes decline",
+      "url": "https://www.digitalcommerce360.com/article/ab-inbev-bees-b2b-marketplace/",
+      "date_publication": "2026-02-12",
+      "consulte_le": "2026-07-28"
+    },
+    {
+      "ref": "S3",
+      "type": "customer_story_plateforme",
+      "fiabilite": "T2_officiel_interesse",
+      "titre": "BEES (Topsort customer story)",
+      "url": "https://www.topsort.com/customer-blog/bees",
+      "date_publication": "2024",
+      "consulte_le": "2026-07-28"
+    }
+  ],
+  "fonctionnement_operationnel": {
+    "cadence": "Temps reel : les emplacements sponsorises sont attribues a l'enchere a chaque affichage dans l'app, les marques activent ou mettent en pause leurs campagnes quand elles veulent, le suivi de performance est en continu.",
+    "opere_par": "L'equipe BEES Retail Media / CRM d'AB InBev exploite la regie et la relation annonceurs. Les marques annonceuses pilotent leurs campagnes en self-service. Topsort fournit et opere l'infrastructure d'enchere et de ciblage.",
+    "signal_pilote": "Le profil du detaillant et son historique d'achat sur BEES : c'est ce qui cible chaque annonce vers les acheteurs pertinents. Sans cette donnee first-party de commande, la personnalisation et la valeur de l'inventaire s'effondrent.",
+    "etapes": [
+      {
+        "etape": "Mise a disposition de l'inventaire",
+        "detail": "AB InBev ouvre des emplacements sponsorises dans le parcours d'achat de l'app BEES, adosses a l'infrastructure Topsort.",
+        "acteur": "IA"
+      },
+      {
+        "etape": "Creation de campagne self-service",
+        "detail": "La marque annonceuse monte sa campagne, definit son budget et ses cibles directement sur la plateforme Be Ads.",
+        "acteur": "marketing"
+      },
+      {
+        "etape": "Ciblage et enchere",
+        "detail": "A chaque affichage, l'ad la plus pertinente pour le detaillant est selectionnee a l'enchere selon son profil et son historique d'achat ; l'annonceur ne paie que pour les ads affichees.",
+        "acteur": "IA"
+      },
+      {
+        "etape": "Suivi et pilotage",
+        "detail": "La marque suit la performance en temps reel et ajuste, active ou met en pause sa campagne.",
+        "acteur": "marketing"
+      }
+    ]
+  },
+  "schema_flow": {
+    "statut": "documente",
+    "noeuds": [
+      {
+        "id": "detaillant",
+        "role_generique": "humain",
+        "label": "Detaillant (passe commande sur l'app BEES)"
+      },
+      {
+        "id": "bees",
+        "role_generique": "site_app",
+        "label": "Super app B2B BEES (canal et donnee first-party)",
+        "outil_documente": "BEES"
+      },
+      {
+        "id": "donnee",
+        "role_generique": "data_source",
+        "label": "Profil et historique d'achat du detaillant"
+      },
+      {
+        "id": "topsort",
+        "role_generique": "paid_platform",
+        "label": "Infrastructure retail media a enchere + personnalisation IA",
+        "outil_documente": "Topsort"
+      },
+      {
+        "id": "beads",
+        "role_generique": "paid_platform",
+        "label": "Be Ads (interface self-service des marques)",
+        "outil_documente": "BEES Ads"
+      },
+      {
+        "id": "marque",
+        "role_generique": "humain",
+        "label": "Marque annonceuse (AB InBev ou tierce)"
+      }
+    ],
+    "liens": [
+      [
+        "detaillant",
+        "bees",
+        "commande et navigation"
+      ],
+      [
+        "bees",
+        "donnee",
+        "genere profil et historique d'achat"
+      ],
+      [
+        "donnee",
+        "topsort",
+        "alimente le ciblage"
+      ],
+      [
+        "marque",
+        "beads",
+        "monte et pilote la campagne"
+      ],
+      [
+        "beads",
+        "topsort",
+        "campagne et budget"
+      ],
+      [
+        "topsort",
+        "bees",
+        "emplacement sponsorise attribue a l'enchere"
+      ],
+      [
+        "bees",
+        "detaillant",
+        "ad ciblee affichee dans le parcours d'achat"
+      ]
+    ]
+  },
+  "replication": {
+    "statut_epistemique": "infere",
+    "prerequis_data": [
+      "Un canal digital proprietaire a audience captive (app, marketplace, portail) sur lequel une population revient regulierement",
+      "Une donnee first-party de comportement et d'achat par utilisateur, propre a cibler les emplacements",
+      "Un inventaire d'emplacements identifiable dans le parcours (accueil, recherche, page produit, panier)"
+    ],
+    "prerequis_orga": [
+      "Une equipe retail media / regie dediee, distincte du marketing de marque, pour vendre l'inventaire et tenir la relation annonceurs",
+      "Un cadre de conformite sur l'usage des donnees de ciblage (RGPD si audience UE, information des utilisateurs professionnels)",
+      "Une gouvernance claire entre les marques maison et les marques tierces qui acheteront le meme inventaire"
+    ],
+    "stack_possible": [
+      "Une infrastructure retail media a enchere clef en main (type Topsort) branchee sur l'app existante",
+      "Une interface self-service pour que les marques montent et suivent leurs campagnes",
+      "Une brique de ciblage/personnalisation adossee a la donnee d'achat first-party",
+      "Un module de mesure et de facturation au coup par coup"
+    ],
+    "premiere_etape": "Cartographier l'audience captive du canal proprietaire et la donnee d'achat disponible, puis identifier une premiere poche d'emplacements sponsorisables dans le parcours, avant d'ouvrir un pilote a enchere sur un petit panel de marques.",
+    "playbook": [
+      {
+        "action": "Qualifier l'audience du canal proprietaire (frequence de retour, volume, donnee d'achat par utilisateur) et estimer la valeur d'un inventaire publicitaire cible.",
+        "livrable": "Diagnostic de l'audience monetisable et de la donnee de ciblage disponible."
+      },
+      {
+        "action": "Brancher une infrastructure retail media a enchere sur l'app, avec ciblage adosse au profil et a l'historique d'achat.",
+        "livrable": "Emplacements sponsorises cibles, attribues a l'enchere, dans le parcours."
+      },
+      {
+        "action": "Ouvrir une interface self-service pour que les marques montent, pilotent et suivent leurs campagnes.",
+        "livrable": "Parcours annonceur autonome, de la creation au reporting temps reel."
+      },
+      {
+        "action": "Facturer au coup par coup (paiement pour les ads affichees) et mesurer la performance annonceur pour retenir la demande.",
+        "livrable": "Boucle de monetisation avec mesure de ROI annonceur."
+      },
+      {
+        "action": "Elargir l'inventaire et ouvrir aux marques tierces, en cadrant la conformite donnees et la gouvernance maison/tiers.",
+        "livrable": "Regie retail media ouverte au-dela des marques du groupe."
+      }
+    ],
+    "equipe": "Une equipe retail media / regie pour la vente d'inventaire et la relation annonceurs, une equipe data pour la donnee de ciblage first-party, une equipe produit/adtech pour l'integration de l'infrastructure d'enchere, et une fonction conformite (RGPD, information des utilisateurs professionnels) impliquee en continu."
+  },
+  "seo": {
+    "slug": "ab-inbev-bees-ads-retail-media-2025",
+    "title": "AB InBev BEES Ads : regie retail media par IA sur une super app B2B - 3,9M MAU, 52,5 Md$ de GMV (2025)",
+    "meta_description": "AB InBev transforme son super app de commande BEES en regie retail media avec Topsort : enchere automatisee, ciblage IA par profil du detaillant, self-service pour les marques. 3,9M MAU, 52,5 Md$ de GMV.",
+    "resume_citable": "AB InBev a transforme sa super app de commande B2B BEES (3,9 millions d'utilisateurs actifs mensuels, 52,5 milliards de dollars de GMV en 2025, 29 marches) en regie retail media, BEES Ads, batie sur l'infrastructure Topsort : chaque emplacement sponsorise est attribue a l'enchere et cible sur le profil et l'historique d'achat du detaillant, les marques tierces pilotant leurs campagnes en self-service.",
+    "faq": [
+      {
+        "q": "Qu'est-ce que BEES Ads ?",
+        "a": "BEES Ads est la regie retail media d'AB InBev, greffee sur son super app de commande B2B BEES. Batie sur l'infrastructure de Topsort, elle insere des emplacements sponsorises dans le parcours d'achat de l'app, cibles sur le profil et l'historique d'achat du detaillant, et permet aux marques de gerer leurs campagnes en self-service avec une facturation a l'enchere (paiement pour les ads affichees)."
+      },
+      {
+        "q": "Quelle est l'echelle du dispositif ?",
+        "a": "La regie s'appuie sur l'audience du super app BEES : 3,9 millions d'utilisateurs actifs mensuels. La plateforme BEES a genere 52,5 milliards de dollars de GMV en 2025 (en hausse de 12%), etait deployee sur 29 marches au 31 decembre, avec 72% du chiffre d'affaires du groupe capte via les plateformes B2B digitales."
+      },
+      {
+        "q": "Quel est le niveau de preuve ?",
+        "a": "Niveau B. La mecanique publicitaire (enchere, ciblage IA, self-service) est documentee par une etude de cas chiffree de l'editeur Topsort, et l'echelle du socle est corroboree par la presse etablie reprenant les resultats annuels 2025 d'AB InBev. Aucun revenu publicitaire propre a BEES Ads n'est isole publiquement, et aucune date de lancement precise n'est communiquee."
+      }
+    ]
+  }
+}

@@ -1,0 +1,130 @@
+{
+  "seo": {
+    "title": "ImmoScout24 (Scout24): end-to-end AI layer - HeyImmo, image search, and ChatGPT app (2026)",
+    "meta_description": "Scout24 laid an AI layer over ImmoScout24: HeyImmo assistant, natural language image search, ChatGPT app, Propstack CRM AI features. No isolated AI revenue published.",
+    "resume_citable": "ImmoScout24 launched in 2025 the AI search assistant HeyImmo, an image search that accepts natural language queries, and AI features in its professional CRM Propstack, and became one of the first European real estate platforms to launch an app in ChatGPT, on 2025 revenue of 649.6 million euros up 14.7% that the company does not attribute to AI.",
+    "faq": [
+      {
+        "q": "Which AI products has ImmoScout24 deployed?",
+        "a": "HeyImmo, an AI assistant that personalizes the property search experience; an image search that accepts natural language queries; an app in ChatGPT, one of the first for a European real estate platform; and AI features in the professional CRM Propstack, including voice-based listing creation and automatic floor plan generation."
+      },
+      {
+        "q": "How does Scout24 monetize this AI layer?",
+        "a": "Indirectly. The AI features feed higher-tier professional subscriptions rather than being sold as a separate product. Scout24 publishes professional ARPU up 9.5% in 2025, but does not attribute it to AI and isolates no revenue for these products."
+      },
+      {
+        "q": "What is the evidence level of this case?",
+        "a": "Level B. The deployment and the 2025 figures are documented by Scout24's official results publication, but no revenue is isolated for the AI products and the ARPU increase is not attributed to AI. The deployment is proven; the specific commercial effect is not."
+      }
+    ]
+  },
+  "pattern": "end-to-end AI layer over a marketplace, pushed into higher-tier subscriptions to raise revenue per professional client",
+  "etape_parcours": "discovery and consideration on the property seeker side; monetization on the professional client side",
+  "objectif_business": "Answer the threat that generative search poses to classifieds marketplaces by becoming the intelligence layer itself rather than a catalog queried by others. On the demand side, the assistant and image search aim to keep the property seeker on the platform. On the revenue side, the AI features feed higher-tier professional subscriptions: monetization does not come from selling a standalone AI product but from moving professional clients toward more expensive offers.",
+  "description": "Scout24 spent 2025 laying an AI layer across the whole of ImmoScout24, on both sides of the market. On the property seeker side, the platform launched HeyImmo, an AI assistant that personalizes the search experience, and built an image search that accepts natural language queries into its classic filter-based search. It also became one of the first European real estate platforms to launch an app in ChatGPT, which amounts to accepting that the entry point for search can be a third-party agent. On the professional side, the Propstack CRM was enriched in 2025 with AI features: voice-dictated listing creation and automatic floor plan generation. The whole is presented as an agentic operating system for real estate, built on the immo.ai layer. The monetization logic is indirect: these features feed higher-tier professional subscriptions. The 2025 figures published on February 26, 2026 show revenue of 649.6 million euros, up 14.7%, professional revenue of 470.5 million, up 14.8%, professional ARPU up 9.5%, consumer ARPU up 4.2%, and an average of 26,027 professional clients. A necessary caveat: Scout24 publishes no isolated revenue for its AI products and does not attribute the ARPU increase to AI. The setup is established; its commercial effect is not.",
+  "points_cles": [
+    "ImmoScout24 launched HeyImmo, an AI property search assistant, and a natural language image search.",
+    "The platform is one of the first European real estate marketplaces to launch an app in ChatGPT.",
+    "The professional CRM Propstack received AI features: voice-dictated listings, automatic floor plan generation.",
+    "2025 revenue of 649.6 million euros (+14.7%) and professional ARPU +9.5%, with no attribution to AI by the company."
+  ],
+  "resultats": [
+    { "metrique": "AI property search assistant launched on the consumer side" },
+    { "metrique": "Image search with natural language query" },
+    { "metrique": "Exposure of the catalog to a third-party conversational agent" },
+    { "metrique": "AI features on the professional side in the Propstack CRM" },
+    { "metrique": "2025 revenue (published context, not attributed to AI by the company)" }
+  ],
+  "niveau_preuve": {
+    "justification": "The anchor source S1 is Scout24's official publication of preliminary 2025 results (February 26, 2026), a primary document that records the AI products launched (HeyImmo, natural language image search, app in ChatGPT, Propstack AI features) and provides the year's financial figures: revenue of 649.6 million euros up 14.7%, professional ARPU up 9.5%. The Online Marketplaces coverage (S2, June 22, 2026) confirms the agentic positioning. This is not level A because Scout24 isolates no revenue for these AI products and does not attribute the ARPU increase to AI: the specific commercial result is not proven. It is above a plain level C because the deployment and the figures come from the company's primary results document, not from the press. Presenting ARPU as an effect of the setup would be an inference dressed up as fact."
+  },
+  "stack_technique": [
+    { "detail": "AI assistant that personalizes the property search experience on the consumer side, advanced as part of the 2025 AI strategy." },
+    { "detail": "Visual search that accepts a natural language query, integrated into the classic filter-based search." },
+    { "detail": "ImmoScout24 is one of the first European real estate platforms to launch an app in ChatGPT, which exposes its catalog to a third-party conversational agent." },
+    { "detail": "CRM aimed at real estate professionals, enriched in 2025 with AI features including voice-based listing creation and automatic floor plan generation." },
+    { "detail": "AI layer presented as the foundation of an agentic operating system for real estate." }
+  ],
+  "fonctionnement_operationnel": {
+    "cadence": "Assistant and search in real time on each session; CRM AI features on the professional's demand; catalog enrichment on a continuous basis.",
+    "opere_par": "Scout24's product and data teams for the immo.ai layer and the assistants; the client agencies for the Propstack CRM AI features.",
+    "signal_pilote": "The listings catalog itself, its freshness and the richness of its attributes. A search assistant is only as good as the structuring of the properties it queries: photos, floor plans, features. This is also why the listing-creation features on the professional side matter; they improve the raw material.",
+    "etapes": [
+      {
+        "etape": "Listing submission",
+        "detail": "The professional creates the listing in Propstack, with voice dictation and automatic floor plan generation.",
+        "acteur": "client"
+      },
+      {
+        "etape": "Catalog structuring",
+        "detail": "The enriched listings feed the catalog that the assistants can query.",
+        "acteur": "AI"
+      },
+      {
+        "etape": "Search on the consumer side",
+        "detail": "The property seeker queries HeyImmo in conversation or launches a natural language image search.",
+        "acteur": "AI"
+      },
+      {
+        "etape": "Entry through a third-party agent",
+        "detail": "Some searches go through the ImmoScout24 app in ChatGPT.",
+        "acteur": "AI"
+      },
+      {
+        "etape": "Subscription upgrade",
+        "detail": "The AI features feed the higher professional offers, which carry revenue per client.",
+        "acteur": "marketing"
+      }
+    ]
+  },
+  "replication": {
+    "prerequis_data": [
+      "A structured and fresh listings catalog, with attributes usable by an assistant",
+      "Visuals of sufficient quality to support an image search",
+      "A search history that makes it possible to understand the intents actually expressed",
+      "A link between the use of the AI features and the subscribed subscription tier, without which monetization will stay invisible"
+    ],
+    "prerequis_orga": [
+      "Control of the catalog and of the listing-submission tool, on the professional side",
+      "A clear policy on exposing the catalog to third-party agents, which shifts part of the customer relationship",
+      "A range of professional subscriptions able to absorb the new features as an upgrade argument",
+      "AI Act compliance for the generated recommendations"
+    ],
+    "stack_possible": [
+      "Conversational assistant connected to the catalog",
+      "Visual search with a natural language query",
+      "Content generation features in the professional tool (dictation, floor plans)",
+      "App or connector to a consumer conversational agent"
+    ],
+    "premiere_etape": "Improve the raw material before the interface. A search assistant fails first on poor listings, not on its model. The first useful piece of work is to tool the listing-submission process on the professional side so that each property arrives structured, with usable floor plans and attributes.",
+    "playbook": [
+      {
+        "action": "Tool the listing-submission process on the professional side to enrich the catalog automatically (dictation, floor plan generation).",
+        "livrable": "A more structured catalog, with no extra effort for the agency."
+      },
+      {
+        "action": "Connect a conversational assistant to this catalog, on a limited search scope.",
+        "livrable": "Search assistant in production on one segment."
+      },
+      {
+        "action": "Add visual search for the intents that text expresses poorly.",
+        "livrable": "Natural language image search."
+      },
+      {
+        "action": "Decide explicitly on exposure to a third-party agent, weighing the traffic gained against the customer relationship shifted.",
+        "livrable": "Documented position on presence in consumer agents."
+      },
+      {
+        "action": "Link the AI features to the subscription range and measure the actual upgrade.",
+        "livrable": "Measurement of revenue per professional client attributable to the new features."
+      }
+    ],
+    "equipe": "A marketplace product team, a data team for the search and recommendation layer, a professional-subscription sales team for the upgrade, and a compliance function for the generated recommendations."
+  },
+  "statut_vivant": {
+    "note": "Confirmed twice in 2026: the preliminary results publication of February 26, 2026 lists the AI products launched, and the June 22, 2026 coverage reports that the company positions itself on an agentic operating system for real estate, with growth guidance of 16% to 18% for 2026."
+  },
+  "transposable_ue": {
+    "note": "The setup is already operated from Germany by a listed European company, so under GDPR and the AI Act. Two points to watch for anyone reproducing the arrangement: transparency about the property recommendations produced by a conversational assistant, and exposure of the catalog to a third-party agent (here an app in ChatGPT), which shifts part of the customer relationship off the platform."
+  }
+}

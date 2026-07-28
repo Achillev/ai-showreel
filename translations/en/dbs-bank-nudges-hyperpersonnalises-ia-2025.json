@@ -1,0 +1,142 @@
+{
+  "seo": {
+    "title": "DBS Bank: AI-driven hyperpersonalized nudges - SGD 1 billion in economic value in 2025",
+    "meta_description": "DBS sends more than 1.2 billion AI nudges per year to 13 million customers and claims SGD 1 billion in economic value from AI in 2025.",
+    "resume_citable": "DBS Bank pushes more than 1.2 billion hyperpersonalized nudges per year to over 13 million customers (45 million per month to over 5 million retail-banking customers), driven by more than 600 AI/ML models and 300 use cases analyzing a data mart of 15,000 data points; the bank claims a record SGD 1 billion in economic value from AI in 2025, after SGD 750 million in 2024 and SGD 180 million in 2022 (including SGD 150 million in revenue uplift).",
+    "faq": [
+      {
+        "q": "How many AI nudges does DBS send and to how many customers?",
+        "a": "At group scale, DBS sends more than 1.2 billion personalized nudges per year to over 13 million customers in the region. Its retail bank (Consumer Banking Group) alone sends 45 million hyperpersonalized nudges per month to over 5 million customers."
+      },
+      {
+        "q": "What economic value does DBS derive from AI?",
+        "a": "DBS calculates the economic value of its AI use cases by comparing exposed customers with a control group. It was SGD 180 million in 2022 (including SGD 150 million in revenue uplift), SGD 370 million cumulative at the end of 2023, over SGD 750 million for 2024 alone, and the bank claims a record SGD 1 billion in 2025."
+      },
+      {
+        "q": "How does the DBS nudge engine work?",
+        "a": "More than 100 AI/ML algorithms analyze an internal data mart of 15,000 data points per customer to generate seven types of nudges (product recommendation, duplicate-payment alert, favorable exchange rate, bill reminder). At group scale, DBS reports more than 600 AI/ML models and about 300 use cases in production."
+      }
+    ]
+  },
+  "pattern": "hyperpersonalized nudges at scale driven by ML models and measured incrementally",
+  "etape_parcours": "loyalty",
+  "objectif_business": "Increase the economic value drawn from each retail customer by pushing, in the app, hyperpersonalized nudges at the right moment: product recommendation, duplicate-payment alert, favorable exchange rate for a transfer, bill reminder. The goal is to get customers to save, invest, and insure more while generating incremental revenue, with value measured by comparing exposed customers against a control group.",
+  "description": "DBS pushes personalized messages to its retail customers directly inside its banking app, what it calls nudges. Each nudge is triggered by machine learning models that read the customer's behavior: they spot an upcoming duplicate payment, an advantageous exchange rate for a transfer, a bill nearing its due date, or suggest a product suited to the profile. The engine relies on more than 100 AI/ML algorithms that analyze an internal data mart of 15,000 data points per customer to produce seven types of nudges. At group scale, DBS reports more than 600 AI/ML models and about 300 use cases in production. The volumes are public: the retail bank (Consumer Banking Group) sends 45 million hyperpersonalized nudges per month to over 5 million customers, and the group as a whole exceeds 1.2 billion nudges per year to over 13 million customers in the region. DBS does not simply measure usage: the economic value of each case is calculated by comparing exposed customers against a control group. In 2022, these AI/ML use cases produced SGD 180 million in economic value, including SGD 150 million in revenue uplift and SGD 30 million in cost savings and productivity gains. Cumulative value reached SGD 370 million at the end of 2023, then over SGD 750 million for 2024 alone, and the bank claims a record SGD 1 billion in 2025. In Singapore, customers who use the nudges and the AI financial planning tool save twice as much, invest five times as much, and are nearly three times as insured as non-users.",
+  "points_cles": [
+    "DBS sends more than 1.2 billion hyperpersonalized nudges per year to over 13 million customers in the region, and 45 million per month to over 5 million retail-banking customers.",
+    "The engine relies on more than 600 AI/ML models and 300 use cases, including more than 100 algorithms that analyze a data mart of 15,000 customer data points.",
+    "The bank claims a record SGD 1 billion in economic value from AI in 2025, after SGD 750 million in 2024 and SGD 180 million in 2022 (including SGD 150 million in revenue uplift).",
+    "In Singapore, customers who use the nudges and the AI planning tool save twice as much, invest five times as much, and are nearly three times as insured as non-users."
+  ],
+  "resultats": [
+    {
+      "metrique": "Economic value from AI in 2025 (record), aggregate of revenue + cost avoided + risk avoided"
+    },
+    {
+      "metrique": "Economic value of data/AI initiatives in 2024 (more than double 2023)"
+    },
+    {
+      "metrique": "Economic value of AI/ML use cases in 2022, including SGD 150M in revenue uplift"
+    },
+    {
+      "metrique": "Hyperpersonalized nudges sent each month by the retail bank to over 5 million customers"
+    },
+    {
+      "metrique": "Personalized nudges per year at group scale, to over 13 million customers"
+    },
+    {
+      "metrique": "Saving, investment, and insurance coverage of nudge users vs non-users (Singapore)"
+    }
+  ],
+  "niveau_preuve": {
+    "justification": "Volumes and economic value are documented by DBS primary sources (2024 annual report for the 1.2 billion nudges, 13 million customers, and SGD 750 million in 2024; official AI page for the 600 models, 45 million monthly nudges, and the SGD 180 million from 2022 with breakdown) and are consistent with a Forrester analysis (record of SGD 1 billion in 2025, SGD 370 million cumulative at the end of 2023). These are not audited financial result lines but an economic-value metric calculated by the bank, measured in A/B testing against a control group. The caveat that keeps it at B rather than A: the SGD 1 billion aggregate blends revenue uplift, cost savings, and risk avoided, so the strictly marketing share cannot be isolated; only 2022 gives the breakdown (SGD 150 million in revenue uplift out of SGD 180 million). Multiple, consistent official primary sources justify the top of the B range."
+  },
+  "stack_technique": [
+    {
+      "detail": "More than 600 AI/ML models and 300 use cases according to DBS; more than 100 AI/ML algorithms analyze an internal data mart of 15,000 customer data points to generate seven types of nudges."
+    },
+    {
+      "detail": "Internal repository aggregating 15,000 data points per customer, the basis of the recommendations and nudges."
+    }
+  ],
+  "fonctionnement_operationnel": {
+    "cadence": "Continuous: the models constantly evaluate each customer's events and context, and trigger nudges on the fly in the app. Economic-value measurement is consolidated by period (annually in public communication).",
+    "opere_par": "DBS's data and AI teams maintain the models and the data mart; the retail bank's marketing and product teams define the use cases and the types of nudges.",
+    "signal_pilote": "The measured outcome of each nudge against a control group (did it lead to an action: saving, investment, subscription, avoidance of a fee). Without this control setup, the economic value attributed to AI can no longer be isolated, nor can the models be retrained on what works.",
+    "etapes": [
+      {
+        "etape": "Building the data mart",
+        "detail": "Customer data is aggregated in an internal data mart of 15,000 data points, the basis of the models.",
+        "acteur": "data team"
+      },
+      {
+        "etape": "Nudge detection and generation",
+        "detail": "More than 100 AI/ML algorithms analyze the data mart and generate seven types of nudges (product recommendation, duplicate alert, favorable exchange rate, bill reminder, life stage).",
+        "acteur": "AI"
+      },
+      {
+        "etape": "Delivery in the app",
+        "detail": "The relevant nudge is served to the customer in the banking app, at the moment it is actionable.",
+        "acteur": "AI"
+      },
+      {
+        "etape": "Incremental measurement",
+        "detail": "The outcome is compared against a control group to quantify the economic value truly attributable to AI (revenue, cost avoided, risk avoided).",
+        "acteur": "data team"
+      },
+      {
+        "etape": "Consolidation and steering",
+        "detail": "Economic values are aggregated and tracked over time (SGD 180M in 2022, SGD 370M cumulative at end of 2023, SGD 750M+ in 2024, SGD 1B in 2025) and feed the prioritization of use cases.",
+        "acteur": "marketing"
+      }
+    ]
+  },
+  "replication": {
+    "prerequis_data": [
+      "A unified, rich customer repository (transactional events, products held, in-app behavior) aggregated in a data mart that the models can query",
+      "A history of outcomes (action or not after exposure) to train and measure",
+      "The ability to build clean control groups to isolate the incremental effect"
+    ],
+    "prerequis_orga": [
+      "An internal data/AI team able to maintain dozens of models in production",
+      "Marketing and product teams that define the use cases and the allowed types of nudges",
+      "Measurement governance: the value declared must rest on a test against a control group, not on an estimate"
+    ],
+    "stack_possible": [
+      "Continuously fed customer data mart or feature store",
+      "Predictive and recommendation ML models (next best action)",
+      "Real-time decision engine connected to the mobile app",
+      "Experimentation / A-B testing framework for incremental measurement"
+    ],
+    "premiere_etape": "Choose a small number of nudges with high immediate usefulness for the customer (for example a duplicate-payment alert or a bill reminder), connect them to a reliable data source, and launch them against a control group to measure value before expanding the use-case catalog.",
+    "playbook": [
+      {
+        "action": "Build a unified customer data mart and define the data points usable by the models.",
+        "livrable": "Queryable customer repository, the basis of future nudges."
+      },
+      {
+        "action": "Identify the first high-value use cases for the customer and for the bank, and translate them into types of nudges.",
+        "livrable": "Initial nudge catalog with their trigger and target action."
+      },
+      {
+        "action": "Train the detection and recommendation models, and connect a decision engine to the app.",
+        "livrable": "Nudges served in context in the app at the actionable moment."
+      },
+      {
+        "action": "Set up measurement against a control group to quantify the economic value attributable to AI.",
+        "livrable": "Incremental value per use case, defensible and tracked over time."
+      },
+      {
+        "action": "Expand the catalog of use cases and models, prioritizing those with the highest measured value.",
+        "livrable": "Growing portfolio of AI use cases, steered by value."
+      }
+    ],
+    "equipe": "A data/AI team (data engineering, ML, experimentation), marketing and product teams from the retail bank to frame the nudges, and a compliance/risk function to govern profiling and financial recommendations."
+  },
+  "statut_vivant": {
+    "note": "Program in production at scale for several years, with a rising time series of economic value: SGD 180 million in 2022, SGD 370 million cumulative at the end of 2023, over SGD 750 million in 2024, SGD 1 billion claimed in 2025. Volumes confirmed by DBS's 2024 annual report."
+  },
+  "transposable_ue": {
+    "note": "The pattern (hyperpersonalized nudges generated by ML models on a customer data mart, served in the banking app and measured by A/B testing against a control group) transposes. The adaptation concerns the European framework: GDPR governs profiling from thousands of customer data points and requires a legal basis plus the right to object, the AI Act classifies financial scoring and targeting among sensitive uses, and local credit/investment regulation applies as soon as the nudge steers toward a savings, investment, or insurance product."
+  }
+}

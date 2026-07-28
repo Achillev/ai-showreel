@@ -1,0 +1,124 @@
+{
+  "seo": {
+    "title": "Prosus: Large Commerce Model on iFood - +19% homepage conversion and +75% on notifications (2026)",
+    "meta_description": "Prosus has put into production a proprietary Large Commerce Model that drives iFood: +19% homepage conversion, -51% ad cost, +75% on notifications, more than 100 million customers modeled.",
+    "resume_citable": "Prosus states in its FY2026 results and at its Prosus Forward event that its proprietary Large Commerce Model, already in production across more than 40 use cases on iFood, delivers +19% homepage conversion, -51% ad conversion cost, and +75% notification conversion, with more than 100 million customers modeled and expansion under way toward India and Europe.",
+    "faq": [
+      {
+        "q": "What is Prosus's Large Commerce Model?",
+        "a": "A proprietary AI model trained on the group's transactional data (orders, searches, clicks, repurchases) rather than on a purchased general-purpose LLM. It drives commerce personalization, first at iFood, and Prosus states that more than 100 million customers are modeled there."
+      },
+      {
+        "q": "What results does Prosus attribute to the model on iFood?",
+        "a": "Prosus quantifies, across more than 40 use cases, +19% homepage conversion, -51% ad conversion cost, and +75% notification conversion. This uplift is self-declared by Prosus and is not isolated in the accounts, which places the case at evidence level B."
+      },
+      {
+        "q": "What is the role of the Ailo, Zapia, Sofia, Luzia, and Toqi assistants?",
+        "a": "They are consumer conversational assistants that carry the customer relationship at the agent level. Ailo, iFood's assistant, is approaching one million users; Zapia, the ecosystem agent, claims six million users across Latin America. Prosus's thesis is that the relationship is moving from apps to agents."
+      }
+    ]
+  },
+  "pattern": "proprietary commerce model trained on the group's transactional data, connected to conversion (homepage, ads, notifications), paired with a fleet of conversational assistants that shift the relationship from apps to agents",
+  "etape_parcours": "discovery, consideration, purchase, and loyalty",
+  "objectif_business": "Get ahead of the moment when the customer relationship moves from apps to agents. The CEO sets out the thesis: the world is changing, customers will use services through agents and assistants, and the companies that lead on this ground become the leaders. Prosus's answer is a proprietary commerce model, the Large Commerce Model, trained on the group's data and connected to conversion, plus a family of consumer assistants meant to hold the relationship at the agent level. iFood serves as the foundation: the model already runs there, ahead of expansion to India and Europe.",
+  "description": "Prosus, the holding company behind iFood (meal delivery), OLX (classifieds), and a fintech portfolio, has built a proprietary AI model it calls the Large Commerce Model. Rather than buying a general-purpose LLM, the group trains its own model on its transactional data (orders, searches, clicks, repurchases) to drive commerce. At its Prosus Forward event and in its FY2026 annual results (year ended March 31, 2026), Prosus describes this model as already in production on iFood: live across more than 40 use cases, it feeds the homepage, advertising, and notifications. The company puts the effect at +19% homepage conversion, -51% ad conversion cost, and +75% notification conversion. CEO Fabricio Bloisi states that more than 100 million customers are modeled inside the model and that expansion to India and Europe is under way. On top of this, Prosus claims a family of consumer conversational assistants: Ailo, iFood's assistant, is approaching one million users; Zapia, the ecosystem agent, claims six million users across Latin America; Sofia, Luzia, and Toqi round out the set. The stated thesis is that the customer relationship is shifting from apps to agents, and that Prosus wants to lead on this ground in Latin America, Europe, and India. At the group level, the FY2026 results show $9.7 billion in revenue, $1.3 billion in adjusted EBITDA up 44%, and 12% ecosystem revenue growth. These figures measure the group, not AI alone: Prosus publishes no accounting isolation of the model's contribution.",
+  "points_cles": [
+    "Prosus has put into production a proprietary Large Commerce Model that already drives how iFood operates.",
+    "On iFood, Prosus attributes to the model +19% homepage conversion, -51% ad conversion cost, and +75% on notifications, across more than 40 use cases.",
+    "More than 100 million customers are modeled inside the model; a fleet of assistants (Zapia 6 million users, Ailo close to one million) extends the strategy.",
+    "At the group level, $9.7 billion in revenue and adjusted EBITDA up 44%; level B because the AI uplift is declared by Prosus and not isolated in the accounts."
+  ],
+  "resultats": [
+    { "metrique": "Deployment of the Large Commerce Model at iFood" },
+    { "metrique": "Homepage conversion uplift at iFood attributed to the LCM" },
+    { "metrique": "Reduction in ad conversion cost attributed to the LCM" },
+    { "metrique": "Improvement in notification conversion attributed to the LCM" },
+    { "metrique": "Customers modeled inside the Large Commerce Model (CEO statement, FY2026 results)" },
+    { "metrique": "Users of the Zapia ecosystem assistant in Latin America" },
+    { "metrique": "Group FY2026 revenue (context, not attributed to AI by Prosus)" },
+    { "metrique": "FY2026 ecosystem revenue (context, not attributed to AI)" }
+  ],
+  "niveau_preuve": {
+    "justification": "Two primary Prosus sources agree on the deployment: the official Prosus Forward event release quantifies the Large Commerce Model's effect on iFood (+19% homepage conversion, -51% ad conversion cost, +75% on notifications, across more than 40 use cases), and the FY2026 results transcript has the CEO say that the model powers iFood, that more than 100 million customers are modeled there, and that the India and Europe expansion is under way. An independent press source (ITWeb, October 2025) corroborates the existence of the LCM, born first with iFood. The group publishes earnings-level figures ($9.7 billion in revenue, adjusted EBITDA +44%), but these amounts are group P&L and are not attributed to AI. The conversion uplift is quantified but remains self-declared by Prosus, which promotes its own model, and is not isolated in the accounts or audited: this caps the case at level B (a quantified in-house case study) rather than A."
+  },
+  "fonctionnement_operationnel": {
+    "cadence": "Real time on each customer session (homepage, offers, notifications); the model learns continuously from the group's stream of orders, searches, and clicks.",
+    "opere_par": "The Prosus and iFood AI teams that train and operate the Large Commerce Model; the platforms' product and marketing teams that connect its outputs to conversion surfaces.",
+    "signal_pilote": "The group's transactional history (orders, searches, clicks, repurchases), the model's training material. Without the volume and quality of this data, the model has nothing to personalize with and the cost advantage over a general-purpose LLM disappears.",
+    "etapes": [
+      {
+        "etape": "Assembling the data",
+        "detail": "The group aggregates the transactional history of its platforms (iFood first) to train an in-house model rather than buying a general-purpose LLM.",
+        "acteur": "data team"
+      },
+      {
+        "etape": "Training the proprietary model",
+        "detail": "The Large Commerce Model learns from this data; Prosus claims more than 100 million customers modeled.",
+        "acteur": "AI"
+      },
+      {
+        "etape": "Connection to conversion surfaces",
+        "detail": "The model's outputs feed iFood's homepage, advertising, and notifications, across more than 40 use cases.",
+        "acteur": "marketing"
+      },
+      {
+        "etape": "Consumer assistant layer",
+        "detail": "Conversational assistants (Ailo, Zapia, Sofia, Luzia, Toqi) carry the relationship at the agent level, beyond the apps.",
+        "acteur": "AI"
+      },
+      {
+        "etape": "Multi-market expansion",
+        "detail": "The model, proven in Latin America on iFood, is being extended to India and Europe.",
+        "acteur": "data team"
+      }
+    ]
+  },
+  "replication": {
+    "prerequis_data": [
+      "A broad, clean transactional history (orders, searches, clicks, repurchases), the only training material for a commerce model",
+      "Instrumentation that separates sessions exposed to the model from control sessions, without which the uplift cannot be isolated",
+      "A unified data pipeline across the group's platforms to feed a shared model"
+    ],
+    "prerequis_orga": [
+      "A decision to build an in-house model rather than buy a general-purpose LLM, with the matching AI team",
+      "GDPR governance over the use of customer data and AI Act vigilance over automated recommendations, offers, and notifications",
+      "Coordination between the AI, product, and marketing teams to connect the model's outputs to conversion surfaces"
+    ],
+    "stack_possible": [
+      "Proprietary model trained on internal transactional data",
+      "Connection of the model to the homepage, advertising, and notifications",
+      "Consumer conversational assistants as an added layer",
+      "Measurement framework comparing exposed and control surfaces"
+    ],
+    "premiere_etape": "Check that a sufficient volume of transactional data is available and instrument a control measurement first of all. The value of the Prosus case lies in the group training on its own data; without that base, an in-house model has no advantage over a market LLM.",
+    "playbook": [
+      {
+        "action": "Gather and clean the platforms' transactional history to make it usable training material.",
+        "livrable": "Unified, documented transactional dataset."
+      },
+      {
+        "action": "Train a proprietary model on this data and connect it to a first high-volume use case, for example the homepage.",
+        "livrable": "Model in production on one conversion surface, with a control measurement."
+      },
+      {
+        "action": "Extend to the other surfaces (advertising, notifications) once the effect is measured on the first.",
+        "livrable": "Several use cases covered with separate impact tracking."
+      },
+      {
+        "action": "Add a layer of conversational assistants to carry the relationship at the agent level.",
+        "livrable": "Consumer assistant in production backed by the model."
+      },
+      {
+        "action": "Replicate the model in other markets or verticals once the approach is proven.",
+        "livrable": "Multi-market deployment of the model."
+      }
+    ],
+    "equipe": "An AI team able to train and operate a proprietary model, a data team for the transactional pipeline, product and marketing teams to connect the model to the surfaces, and an analytics function dedicated to isolating the effect."
+  },
+  "statut_vivant": {
+    "note": "FY2026 results and the June 2026 Prosus Forward release describe the model in the present tense, live on iFood, with expansion announced toward India and Europe. No sign of rollback."
+  },
+  "transposable_ue": {
+    "note": "Prosus itself announces extending its Large Commerce Model to Europe, so the topic is already framed for the EU. A proprietary model trained on the history of orders, searches, and clicks amounts to profiling and personalization at scale: GDPR framing over usage data, and AI Act vigilance as soon as the system automates recommendations, offers, and notifications. The transposable point is doctrinal: build an in-house model on your own transactional data rather than buy a general-purpose LLM."
+  }
+}

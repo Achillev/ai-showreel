@@ -1,0 +1,122 @@
+{
+  "seo": {
+    "title": "Woolworths: real-time personalization of Everyday Rewards - customers five times more likely to buy (2024)",
+    "meta_description": "Woolworths drives Everyday Rewards' personalized offers through the real-time Eagle Eye engine and the data analytics firm Quantium. The company reports customers five times more likely to buy.",
+    "resume_citable": "Woolworths backs real-time personalization onto its Everyday Rewards loyalty program (on the order of 15 million members) through the Eagle Eye engine and the data analytics firm Quantium, 75 percent owned, and reports customers five times more likely to buy than with traditional marketing, a company figure relayed by the press and not isolated in a financial document.",
+    "faq": [
+      {
+        "q": "What result does Woolworths report for its personalization engine?",
+        "a": "That customers exposed to the personalization engine were five times more likely to buy than with traditional marketing. This is company reporting relayed by the trade press, not a result isolated in a financial document, hence evidence level B."
+      },
+      {
+        "q": "What stack does Everyday Rewards' personalization rest on?",
+        "a": "On Eagle Eye's real-time loyalty and promotions engine, connected to the point of sale, and on the data analysis layer of Quantium, the data analytics firm of which Woolworths owns 75 percent."
+      },
+      {
+        "q": "How long did setting up the real-time system take?",
+        "a": "About 3.5 years according to former CEO Brad Banducci in a 2023 earnings call, to move from a legacy, constrained system to a real-time loyalty system."
+      }
+    ]
+  },
+  "pattern": "real-time personalization engine backed by a mass loyalty program, generating individualized offers in place of mass marketing",
+  "etape_parcours": "purchase and loyalty",
+  "objectif_business": "Move beyond mass marketing for a grocery retailer with thin margins and a repeat basket. The point is to make a customer already in the program buy more, by pushing the right offer at the right moment rather than a generic promotion. Woolworths built this setup on two assets: Quantium's data analysis, of which it owns 75 percent, and a real-time loyalty engine provided by Eagle Eye, which connects the point of sale to the Everyday Rewards program to decide an offer while the customer is shopping.",
+  "description": "Woolworths, an Australian grocery retailer, has turned its Everyday Rewards loyalty program into the vehicle for personalization at scale. The principle for the customer: instead of a promotion identical for everyone, they receive offers and member prices computed from their history and pushed in real time, including while they are shopping, thanks to the connection between the point of sale and the loyalty program. Two building blocks make this possible. Quantium, the data analytics firm of which Woolworths owns 75 percent, provides the customer data analysis layer. Eagle Eye provides the real-time loyalty and promotions engine underneath Everyday Rewards, described by the Australian press as the program's real disruption, led by an executive, Tim Mason, who had launched the Tesco Clubcard in 1995. In its results, the company reports that customers exposed to this personalization engine were five times more likely to buy than with traditional marketing. The work was not quick: former CEO Brad Banducci described in a 2023 earnings call a re-platforming of about 3.5 years to move from a legacy, constrained system to a real-time one. What to keep in mind: the five-times figure is company reporting relayed by the trade press, not a result isolated in a financial document, and no offer volume specific to Woolworths is published in support.",
+  "points_cles": [
+    "Woolworths drives Everyday Rewards' personalized offers through the real-time Eagle Eye engine and the data analytics firm Quantium (75 percent owned).",
+    "The company reports customers five times more likely to buy when facing the personalization engine than with traditional marketing.",
+    "The move to a real-time loyalty system took about 3.5 years according to former CEO Brad Banducci (2023 earnings call).",
+    "The Everyday Rewards program backed by the engine has on the order of 15 million members (RetailBiz, June 2024)."
+  ],
+  "resultats": [
+    { "metrique": "Customer purchase propensity facing the personalization engine, compared with traditional marketing (Woolworths reporting relayed by AiThority)" },
+    { "metrique": "Duration of the re-platforming toward a real-time loyalty system (former CEO Brad Banducci, 2023 earnings call)" },
+    { "metrique": "Woolworths's stake in the data analytics firm Quantium, the foundation of the personalization" },
+    { "metrique": "Real-time loyalty engine underlying the Everyday Rewards program" },
+    { "metrique": "Member base of the Everyday Rewards program backed by the Eagle Eye engine (RetailBiz, June 2024)" }
+  ],
+  "niveau_preuve": {
+    "justification": "The setup and its scale are documented by two concordant sources: the trade press (AiThority, December 3, 2024), which relays Woolworths's reporting and cites, from a 2023 earnings call, former CEO Brad Banducci on the 3.5-year re-platforming and on Eagle Eye, and the Australian retail press (RetailBiz, June 7, 2024), which confirms the Eagle Eye engine underneath Everyday Rewards and a base of about 15 million members. B and not A because the only quantified marketing result, customers five times more likely to buy, is company reporting not isolated in a financial document, with no offer volume published, and because the personalization block rests on a vendor platform (Eagle Eye), which caps the case at B. Above C because the deployment is proven at national scale over several years, with an acquisition (75 percent of Quantium) and a loyalty base on the order of 15 million verifiable members."
+  },
+  "fonctionnement_operationnel": {
+    "cadence": "Real time at the point of sale and in the app, backed by a permanent loyalty program; customer data analysis runs continuously.",
+    "opere_par": "The Everyday Rewards CRM and loyalty team for the offer rules, the data team (supported by Quantium) for the models, with the Eagle Eye engine as the execution layer.",
+    "signal_pilote": "The individual purchase history linked to the program member. Without customer identification at the point of sale (card or app scanned), the personalized offer cannot be computed or served: the sales identification rate is the crux of the setup.",
+    "etapes": [
+      {
+        "etape": "Member identification",
+        "detail": "The customer scans their Everyday Rewards card or app at the point of sale or online, which links the purchase to their profile.",
+        "acteur": "client"
+      },
+      {
+        "etape": "Data analysis",
+        "detail": "Purchase history and behavior are analyzed to estimate the most relevant offers, on Quantium's analytics base.",
+        "acteur": "data team"
+      },
+      {
+        "etape": "Real-time offer decision",
+        "detail": "The Eagle Eye engine decides and serves the personalized offer or member price, connecting the point of sale to the loyalty program.",
+        "acteur": "AI"
+      },
+      {
+        "etape": "Exposure and purchase",
+        "detail": "The customer sees the personalized offer while shopping or in the app and decides to use it.",
+        "acteur": "client"
+      },
+      {
+        "etape": "Campaign steering",
+        "detail": "The CRM team adjusts the offer rules and segments based on observed performance.",
+        "acteur": "marketing"
+      }
+    ]
+  },
+  "replication": {
+    "prerequis_data": [
+      "A loyalty program with a high sales identification rate, otherwise the majority of purchases stays anonymous and cannot be personalized",
+      "An individual purchase history deep enough to distinguish a member's habits",
+      "Point-of-sale data connected to the loyalty program in real time"
+    ],
+    "prerequis_orga": [
+      "A CRM and loyalty team allowed to differentiate offers by profile",
+      "An in-house or partner data analysis capability to feed the models",
+      "A GDPR analysis of marketing profiling and member disclosure",
+      "Measurement discipline with a control group, without which the effect of personalized offers stays declarative, as here for the five-times figure"
+    ],
+    "stack_possible": [
+      "Real-time loyalty and promotions engine of the Eagle Eye type",
+      "Customer data analysis layer (in-house or partner of the Quantium type)",
+      "Integration of the point of sale with the loyalty program",
+      "Mobile loyalty app to carry the offer to the customer"
+    ],
+    "premiere_etape": "First measure the sales identification rate at the point of sale. If a large share of purchases stays anonymous, no personalization engine can act: the first piece of work is to get the card or app scanned, not to choose a model.",
+    "playbook": [
+      {
+        "action": "Increase the member identification rate at the point of sale and online.",
+        "livrable": "Share of sales linked to a customer profile sufficient to personalize."
+      },
+      {
+        "action": "Build an analytics base of individual purchase data.",
+        "livrable": "Customer history usable by offer recommendation models."
+      },
+      {
+        "action": "Deploy a real-time loyalty engine connected to the point of sale.",
+        "livrable": "Ability to serve a personalized offer during the act of purchase."
+      },
+      {
+        "action": "Define the offer and member-price rules driven by the profile.",
+        "livrable": "Operational segments and personalized offers."
+      },
+      {
+        "action": "Deploy with a control group to attribute an effect to the setup.",
+        "livrable": "Measurement protocol enabling a causal attribution of the uplift."
+      }
+    ],
+    "equipe": "A CRM and loyalty team for the offer rules, a data team or analytics partner for the models, an integration team to connect the point of sale and the loyalty program, and a legal function for profiling."
+  },
+  "statut_vivant": {
+    "note": "Two confirmations in 2024: RetailBiz describes the Eagle Eye engine underneath Everyday Rewards in June 2024, AiThority relays the personalization reporting in December 2024. The Everyday Rewards program remains active and backed by the same engine."
+  },
+  "transposable_ue": {
+    "note": "The setup rests on the loyalty data of a nationwide program and on personalized offers decided by a model. In Europe, this assumes a clear legal basis for marketing profiling and member disclosure. The engine (Eagle Eye) is a platform already operated in Europe, so the question is less technical than legal: processing individual purchase history in real time to arbitrate an offer falls under GDPR on profiling."
+  }
+}

@@ -1,0 +1,310 @@
+{
+  "id": "prosus-large-commerce-model-ifood-2026",
+  "type_fiche": "succes",
+  "marque": "Prosus (iFood, OLX)",
+  "groupe": "Prosus / Naspers",
+  "industrie": "retail_ecom",
+  "marches_deploiement": [
+    "Amerique latine (iFood, Bresil et region)",
+    "Extension en cours annoncee vers l'Inde et l'Europe"
+  ],
+  "transposable_ue": {
+    "flag": "oui_avec_adaptations",
+    "note": "Prosus annonce elle-meme etendre son Large Commerce Model a l'Europe, donc le sujet est deja pense pour l'UE. Un modele proprietaire entraine sur l'historique de commandes, recherches et clics releve du profilage et de la personnalisation a grande echelle : encadrement RGPD sur les donnees d'usage, et vigilance AI Act des lors que le systeme automatise recommandations, offres et notifications. Le point transposable est doctrinal : construire un modele maison sur sa propre donnee transactionnelle plutot que d'acheter un LLM generaliste."
+  },
+  "metier": "e-commerce / marketing (personnalisation, publicite, notifications) et assistants conversationnels grand public",
+  "logo_domain": "prosus.com",
+  "axes": {
+    "levier": "activation_conversion",
+    "touchpoints": [
+      "page d'accueil et parcours d'achat iFood",
+      "publicite et offres personnalisees sur les plateformes du groupe",
+      "notifications push",
+      "assistants conversationnels grand public (Ailo, Zapia, Sofia, Luzia, Toqi)"
+    ],
+    "etape_parcours": "decouverte, consideration, achat et fidelite",
+    "famille": "personnalisation",
+    "pattern": "modele de commerce proprietaire entraine sur la donnee transactionnelle du groupe, branche sur la conversion (accueil, pub, notifications), double d'une flotte d'assistants conversationnels qui deplacent la relation des apps vers les agents",
+    "type_ia": [
+      "Large Commerce Model (modele proprietaire type commerce)",
+      "personnalisation et recommandation",
+      "assistants conversationnels grand public"
+    ],
+    "plateforme_stack": [
+      "Large Commerce Model (custom/in-house Prosus)",
+      "assistants Ailo, Zapia, Sofia, Luzia, Toqi",
+      "plateforme interne d'agents Toqan"
+    ],
+    "objectif_metrique": [
+      "taux de conversion (page d'accueil, notifications)",
+      "cout de conversion publicitaire",
+      "nombre d'utilisateurs des assistants",
+      "revenus et EBITDA ajuste du groupe"
+    ]
+  },
+  "implementation": "custom",
+  "objectif_business": "Prendre de l'avance sur le moment ou la relation client passe des applications aux agents. Le CEO pose la these : le monde change, les clients vont utiliser les services via des agents et des assistants, et les entreprises qui menent sur ce terrain deviennent les leaders. La reponse de Prosus est un modele de commerce proprietaire, le Large Commerce Model, entraine sur la donnee du groupe et branche sur la conversion, plus une famille d'assistants grand public censes tenir la relation au niveau de l'agent. iFood sert de foundation : le modele y tourne deja, avant l'extension a l'Inde et a l'Europe.",
+  "points_cles": [
+    "Prosus a mis en production un Large Commerce Model proprietaire qui pilote deja le fonctionnement d'iFood.",
+    "Sur iFood, Prosus attribue au modele +19% de conversion sur la page d'accueil, -51% de cout de conversion publicitaire et +75% sur les notifications, dans plus de 40 cas d'usage.",
+    "Plus de 100 millions de clients sont modelises dans le modele ; une flotte d'assistants (Zapia 6 millions d'utilisateurs, Ailo pres d'un million) etend la strategie.",
+    "Cote groupe, 9,7 milliards de dollars de revenus et un EBITDA ajuste en hausse de 44% ; niveau B car les uplift IA sont declares par Prosus et non isoles dans les comptes."
+  ],
+  "description": "Prosus, holding derriere iFood (livraison de repas), OLX (petites annonces) et un portefeuille fintech, a construit un modele d'IA proprietaire qu'elle appelle Large Commerce Model. Plutot que d'acheter un LLM generaliste, le groupe entraine son propre modele sur sa donnee transactionnelle (commandes, recherches, clics, reachats) pour piloter le commerce. Dans son evenement Prosus Forward et ses resultats annuels FY2026 (annee close au 31 mars 2026), Prosus decrit ce modele comme deja en production sur iFood : live dans plus de 40 cas d'usage, il alimente la page d'accueil, la publicite et les notifications. L'entreprise chiffre l'effet a +19% de conversion sur la page d'accueil, -51% de cout de conversion publicitaire et +75% de conversion sur les notifications. Le CEO Fabricio Bloisi indique que plus de 100 millions de clients sont modelises dans le modele et que l'extension a l'Inde et a l'Europe est en cours. En surcouche, Prosus revendique une famille d'assistants conversationnels grand public : Ailo, l'assistant d'iFood, approche du million d'utilisateurs ; Zapia, l'agent de l'ecosysteme, revendique six millions d'utilisateurs en Amerique latine ; s'y ajoutent Sofia, Luzia et Toqi. La these affichee est que la relation client se deplace des applications vers les agents, et que Prosus veut mener sur ce terrain en Amerique latine, en Europe et en Inde. Au niveau du groupe, les resultats FY2026 affichent 9,7 milliards de dollars de revenus, 1,3 milliard d'EBITDA ajuste en hausse de 44% et une croissance de revenus de l'ecosysteme de 12%. Ces chiffres mesurent le groupe, pas l'IA seule : Prosus ne publie pas d'isolation comptable de l'apport du modele.",
+  "resultats": [
+    {
+      "metrique": "Deploiement du Large Commerce Model chez iFood",
+      "valeur": "40+ cas d'usage",
+      "citation_exacte": "Already live in 40+ use cases at iFood",
+      "source_ref": "S2"
+    },
+    {
+      "metrique": "Hausse de conversion sur la page d'accueil iFood attribuee au LCM",
+      "valeur": "+19%",
+      "citation_exacte": "a +19% increase in homepage conversions",
+      "source_ref": "S2"
+    },
+    {
+      "metrique": "Baisse du cout de conversion publicitaire attribuee au LCM",
+      "valeur": "-51%",
+      "citation_exacte": "a 51% reduction in ad conversion costs",
+      "source_ref": "S2"
+    },
+    {
+      "metrique": "Amelioration de la conversion sur notifications attribuee au LCM",
+      "valeur": "+75%",
+      "citation_exacte": "a +75% improvement in notification conversion",
+      "source_ref": "S2"
+    },
+    {
+      "metrique": "Clients modelises dans le Large Commerce Model (declaration CEO, resultats FY2026)",
+      "valeur": "100M+",
+      "citation_exacte": "have more than $100m customers modelled inside our model",
+      "source_ref": "S1"
+    },
+    {
+      "metrique": "Utilisateurs de l'assistant d'ecosysteme Zapia en Amerique latine",
+      "valeur": "6M",
+      "citation_exacte": "the Prosus ecosystem agent with six million users across Latin America",
+      "source_ref": "S2"
+    },
+    {
+      "metrique": "Revenus du groupe FY2026 (contexte, non attribue a l'IA par Prosus)",
+      "valeur": "9,7 Md$",
+      "citation_exacte": "We grew to $9.7b in revenue",
+      "source_ref": "S1"
+    },
+    {
+      "metrique": "Revenus de l'ecosysteme FY2026 (contexte, non attribue a l'IA)",
+      "valeur": "+12%",
+      "citation_exacte": "Our ecosystem revenue grew strongly at 12%",
+      "source_ref": "S1"
+    }
+  ],
+  "niveau_preuve": {
+    "niveau": "B",
+    "justification": "Deux sources primaires de Prosus concordent sur le deploiement : le communique officiel de l'evenement Prosus Forward chiffre l'effet du Large Commerce Model sur iFood (+19% de conversion page d'accueil, -51% de cout de conversion publicitaire, +75% sur les notifications, dans plus de 40 cas d'usage), et le transcript des resultats FY2026 fait dire au CEO que le modele powers iFood, que plus de 100 millions de clients y sont modelises et que l'extension Inde et Europe est en cours. Une source de presse independante (ITWeb, octobre 2025) corrobore l'existence du LCM ne d'abord avec iFood. Le groupe publie des chiffres de niveau earnings (9,7 Md$ de revenus, EBITDA ajuste +44%), mais ces montants sont de P&L groupe et ne sont pas attribues a l'IA. Les uplift de conversion sont quantifies mais restent auto-declares par Prosus qui promeut son propre modele, et ne sont pas isoles dans les comptes ni audites : cela plafonne le cas au niveau B (etude de cas maison chiffree) plutot qu'A."
+  },
+  "dates": {
+    "lancement": "Large Commerce Model developpe d'abord avec iFood, presente publiquement en octobre 2025 ; deploiement chiffre et strategie assistants exposes a Prosus Forward et dans les resultats FY2026 (juin 2026, annee close au 31 mars 2026)",
+    "derniere_confirmation_activite": "2026-06",
+    "verifie_le": "2026-07-28",
+    "revoir_apres": "2027-01-28"
+  },
+  "statut_vivant": {
+    "statut": "confirme",
+    "note": "Resultats FY2026 et communique Prosus Forward de juin 2026 decrivant le modele au present, live sur iFood, avec extension annoncee vers l'Inde et l'Europe. Aucun signal de retrait."
+  },
+  "sources": [
+    {
+      "ref": "S1",
+      "type": "earnings_call",
+      "fiabilite": "T1_primaire",
+      "titre": "FY2026 Results Video Transcript - Prosus and Naspers CEO Fabricio Bloisi and CFO Nico Marais",
+      "url": "https://www.prosus.com/~/media/Files/P/prosus-corp-v2/results-reports-and-events-archive/annual-report/2026/fy2026-results-transcript.pdf",
+      "date_publication": "2026-06",
+      "consulte_le": "2026-07-28"
+    },
+    {
+      "ref": "S2",
+      "type": "blog_officiel",
+      "fiabilite": "T1_primaire",
+      "titre": "Prosus unveils AI-first vision at inaugural Prosus Forward tech event",
+      "url": "https://www.prosus.com/news-insights/2026/prosus-unveils-ai-first-vision-at-inaugural-prosus-forward-tech-event",
+      "date_publication": "2026-06",
+      "consulte_le": "2026-07-28"
+    },
+    {
+      "ref": "S3",
+      "type": "presse",
+      "fiabilite": "T4_secondaire",
+      "titre": "Prosus unveils AI-powered large commerce models",
+      "url": "https://www.itweb.co.za/article/prosus-unveils-ai-powered-large-commerce-models/GxwQD71DgD4vlPVo",
+      "date_publication": "2025-10-10",
+      "consulte_le": "2026-07-28"
+    }
+  ],
+  "fonctionnement_operationnel": {
+    "cadence": "Temps reel a chaque session client (page d'accueil, offres, notifications) ; le modele apprend en continu sur le flux de commandes, recherches et clics du groupe.",
+    "opere_par": "Les equipes IA de Prosus et d'iFood qui entrainent et operent le Large Commerce Model ; les equipes produit et marketing des plateformes qui branchent ses sorties sur les surfaces de conversion.",
+    "signal_pilote": "L'historique transactionnel du groupe (commandes, recherches, clics, reachats), matiere d'entrainement du modele. Sans volume et sans qualite de cette donnee, le modele n'a rien pour personnaliser et l'avantage de cout face a un LLM generaliste disparait.",
+    "etapes": [
+      {
+        "etape": "Constitution de la donnee",
+        "detail": "Le groupe agrege l'historique transactionnel de ses plateformes (iFood en premier) pour entrainer un modele maison plutot que d'acheter un LLM generaliste.",
+        "acteur": "equipe data"
+      },
+      {
+        "etape": "Entrainement du modele proprietaire",
+        "detail": "Le Large Commerce Model apprend sur cette donnee ; Prosus revendique plus de 100 millions de clients modelises.",
+        "acteur": "IA"
+      },
+      {
+        "etape": "Branchement sur les surfaces de conversion",
+        "detail": "Les sorties du modele alimentent la page d'accueil, la publicite et les notifications d'iFood, dans plus de 40 cas d'usage.",
+        "acteur": "marketing"
+      },
+      {
+        "etape": "Couche assistants grand public",
+        "detail": "Des assistants conversationnels (Ailo, Zapia, Sofia, Luzia, Toqi) portent la relation au niveau de l'agent, au-dela des apps.",
+        "acteur": "IA"
+      },
+      {
+        "etape": "Extension multi-marches",
+        "detail": "Le modele, prouve en Amerique latine sur iFood, est etendu a l'Inde et a l'Europe.",
+        "acteur": "equipe data"
+      }
+    ]
+  },
+  "schema_flow": {
+    "statut": "approche_type",
+    "noeuds": [
+      {
+        "id": "data",
+        "role_generique": "data_source",
+        "label": "Donnee transactionnelle du groupe (commandes, recherches, clics, reachats)"
+      },
+      {
+        "id": "lcm",
+        "role_generique": "modele_ia",
+        "label": "Large Commerce Model (proprietaire Prosus)",
+        "outil_documente": "Large Commerce Model in-house"
+      },
+      {
+        "id": "surfaces",
+        "role_generique": "site_app",
+        "label": "Surfaces de conversion iFood (accueil, pub, notifications)"
+      },
+      {
+        "id": "assistants",
+        "role_generique": "canal_conversationnel",
+        "label": "Assistants grand public (Ailo, Zapia, Sofia, Luzia, Toqi)"
+      },
+      {
+        "id": "client",
+        "role_generique": "humain",
+        "label": "Client"
+      }
+    ],
+    "liens": [
+      [
+        "client",
+        "data",
+        "genere de la donnee d'usage"
+      ],
+      [
+        "data",
+        "lcm",
+        "entraine le modele"
+      ],
+      [
+        "lcm",
+        "surfaces",
+        "personnalise accueil, pub, notifications"
+      ],
+      [
+        "lcm",
+        "assistants",
+        "alimente les agents"
+      ],
+      [
+        "surfaces",
+        "client",
+        "conversion"
+      ],
+      [
+        "assistants",
+        "client",
+        "relation au niveau de l'agent"
+      ],
+      [
+        "client",
+        "data",
+        "boucle d'apprentissage continue"
+      ]
+    ]
+  },
+  "replication": {
+    "statut_epistemique": "infere",
+    "prerequis_data": [
+      "Un historique transactionnel large et propre (commandes, recherches, clics, reachats), seule matiere d'entrainement d'un modele de commerce",
+      "Une instrumentation qui distingue les sessions exposees au modele des sessions temoins, sans quoi les uplift ne sont pas isolables",
+      "Un pipeline de donnee unifie a travers les plateformes du groupe pour nourrir un modele partage"
+    ],
+    "prerequis_orga": [
+      "Une decision de construire un modele maison plutot que d'acheter un LLM generaliste, avec l'equipe IA correspondante",
+      "Une gouvernance RGPD sur l'usage de la donnee client et une vigilance AI Act sur les recommandations, offres et notifications automatisees",
+      "Une coordination entre equipe IA, produit et marketing pour brancher les sorties du modele sur les surfaces de conversion"
+    ],
+    "stack_possible": [
+      "Modele proprietaire entraine sur la donnee transactionnelle interne",
+      "Connexion du modele a la page d'accueil, a la publicite et aux notifications",
+      "Assistants conversationnels grand public en surcouche",
+      "Cadre de mesure comparant surfaces exposees et surfaces temoins"
+    ],
+    "premiere_etape": "Verifier qu'on dispose d'un volume de donnee transactionnelle suffisant et instrumenter une mesure temoin avant tout. L'interet du cas Prosus tient a ce que le groupe entraine sur sa propre donnee ; sans ce socle, un modele maison n'a aucun avantage sur un LLM du marche.",
+    "playbook": [
+      {
+        "action": "Rassembler et nettoyer l'historique transactionnel des plateformes pour en faire une matiere d'entrainement exploitable.",
+        "livrable": "Jeu de donnees transactionnel unifie et documente."
+      },
+      {
+        "action": "Entrainer un modele proprietaire sur cette donnee et le brancher sur un premier cas d'usage a fort volume, par exemple la page d'accueil.",
+        "livrable": "Modele en production sur une surface de conversion, avec mesure temoin."
+      },
+      {
+        "action": "Etendre aux autres surfaces (publicite, notifications) une fois l'effet mesure sur la premiere.",
+        "livrable": "Plusieurs cas d'usage couverts avec suivi d'impact separe."
+      },
+      {
+        "action": "Ajouter une couche d'assistants conversationnels pour porter la relation au niveau de l'agent.",
+        "livrable": "Assistant grand public en production adosse au modele."
+      },
+      {
+        "action": "Repliquer le modele sur d'autres marches ou verticales une fois l'approche prouvee.",
+        "livrable": "Deploiement multi-marches du modele."
+      }
+    ],
+    "equipe": "Une equipe IA capable d'entrainer et d'operer un modele proprietaire, une equipe data pour le pipeline transactionnel, des equipes produit et marketing pour brancher le modele sur les surfaces, et une fonction analytique dediee a l'isolation de l'effet."
+  },
+  "seo": {
+    "slug": "prosus-large-commerce-model-ifood-2026",
+    "title": "Prosus : Large Commerce Model sur iFood - +19% de conversion accueil et +75% sur les notifications (2026)",
+    "meta_description": "Prosus a mis en production un Large Commerce Model proprietaire qui pilote iFood : +19% de conversion accueil, -51% de cout pub, +75% sur les notifications, plus de 100 millions de clients modelises.",
+    "resume_citable": "Prosus declare dans ses resultats FY2026 et a son evenement Prosus Forward que son Large Commerce Model proprietaire, deja en production dans plus de 40 cas d'usage sur iFood, apporte +19% de conversion sur la page d'accueil, -51% de cout de conversion publicitaire et +75% de conversion sur les notifications, avec plus de 100 millions de clients modelises et une extension en cours vers l'Inde et l'Europe.",
+    "faq": [
+      {
+        "q": "Qu'est-ce que le Large Commerce Model de Prosus ?",
+        "a": "Un modele d'IA proprietaire entraine sur la donnee transactionnelle du groupe (commandes, recherches, clics, reachats) plutot que sur un LLM generaliste achete. Il pilote la personnalisation du commerce, d'abord chez iFood, et Prosus indique que plus de 100 millions de clients y sont modelises."
+      },
+      {
+        "q": "Quels resultats Prosus attribue-t-il au modele sur iFood ?",
+        "a": "Prosus chiffre, dans plus de 40 cas d'usage, +19% de conversion sur la page d'accueil, -51% de cout de conversion publicitaire et +75% de conversion sur les notifications. Ces uplift sont auto-declares par Prosus et ne sont pas isoles dans les comptes, ce qui place le cas en niveau de preuve B."
+      },
+      {
+        "q": "Quel est le role des assistants Ailo, Zapia, Sofia, Luzia et Toqi ?",
+        "a": "Ce sont des assistants conversationnels grand public qui portent la relation client au niveau de l'agent. Ailo, l'assistant d'iFood, approche du million d'utilisateurs ; Zapia, l'agent de l'ecosysteme, revendique six millions d'utilisateurs en Amerique latine. La these de Prosus est que la relation passe des applications aux agents."
+      }
+    ]
+  }
+}

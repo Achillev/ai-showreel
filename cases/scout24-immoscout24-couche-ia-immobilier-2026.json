@@ -1,0 +1,330 @@
+{
+  "id": "scout24-immoscout24-couche-ia-immobilier-2026",
+  "type_fiche": "succes",
+  "marque": "ImmoScout24",
+  "groupe": "Scout24 SE",
+  "industrie": "immobilier",
+  "marches_deploiement": [
+    "Allemagne",
+    "Autriche"
+  ],
+  "transposable_ue": {
+    "flag": "oui",
+    "note": "Le dispositif est deja opere depuis l'Allemagne par une entreprise europeenne cotee, donc sous RGPD et AI Act. Deux points a surveiller pour qui reproduit le montage : la transparence sur les recommandations de biens produites par un assistant conversationnel, et l'exposition du catalogue a un agent tiers (ici une application dans ChatGPT), qui deplace une partie de la relation client hors de la plateforme."
+  },
+  "metier": "marketplace / produit et monetisation (abonnements professionnels)",
+  "logo_domain": "scout24.com",
+  "axes": {
+    "levier": "monetisation",
+    "touchpoints": [
+      "assistant de recherche conversationnel HeyImmo",
+      "recherche par image en langage naturel",
+      "application ImmoScout24 dans ChatGPT",
+      "fonctions IA du CRM Propstack pour les professionnels"
+    ],
+    "etape_parcours": "decouverte et consideration cote chercheur de bien ; monetisation cote client professionnel",
+    "famille": "conversation",
+    "pattern": "couche IA de bout en bout sur une marketplace, poussee dans les abonnements de gamme superieure pour faire monter le revenu par client professionnel",
+    "type_ia": [
+      "assistant conversationnel de recherche de biens",
+      "recherche par image avec requete en langage naturel",
+      "generation de contenu (annonce dictee a la voix, plans automatises)"
+    ],
+    "plateforme_stack": [
+      "HeyImmo (assistant IA de recherche)",
+      "recherche par image en langage naturel",
+      "application dans ChatGPT",
+      "Propstack (CRM professionnel, fonctions IA)",
+      "couche immo.ai"
+    ],
+    "objectif_metrique": [
+      "revenu par client professionnel (ARPU)",
+      "nombre de clients professionnels",
+      "chiffre d'affaires"
+    ]
+  },
+  "implementation": "custom",
+  "stack_technique": [
+    {
+      "nom": "HeyImmo",
+      "categorie": "outil",
+      "detail": "Assistant IA qui personnalise l'experience de recherche de bien cote grand public, avance dans le cadre de la strategie IA 2025."
+    },
+    {
+      "nom": "Recherche par image",
+      "categorie": "outil",
+      "detail": "Recherche visuelle acceptant une requete en langage naturel, integree dans la recherche a filtres classique."
+    },
+    {
+      "nom": "Application dans ChatGPT",
+      "categorie": "plateforme",
+      "detail": "ImmoScout24 est l'une des premieres plateformes immobilieres europeennes a lancer une application dans ChatGPT, ce qui expose son catalogue a un agent conversationnel tiers."
+    },
+    {
+      "nom": "Propstack",
+      "categorie": "plateforme",
+      "detail": "CRM destine aux professionnels de l'immobilier, enrichi en 2025 de fonctions IA dont la creation d'annonce a la voix et la generation automatique de plans."
+    },
+    {
+      "nom": "immo.ai",
+      "categorie": "infra",
+      "detail": "Couche IA presentee comme le socle d'un systeme d'exploitation agentique pour l'immobilier."
+    }
+  ],
+  "objectif_business": "Repondre a la menace que la recherche generative fait peser sur les places de marche de petites annonces, en devenant soi-meme la couche d'intelligence plutot qu'un catalogue interroge par d'autres. Cote demande, l'assistant et la recherche par image visent a garder le chercheur de bien sur la plateforme. Cote revenus, les fonctions IA nourrissent les abonnements professionnels de gamme superieure : la monetisation ne vient pas de la vente d'un produit IA isole mais du deplacement des clients professionnels vers des offres plus cheres.",
+  "points_cles": [
+    "ImmoScout24 a lance HeyImmo, un assistant IA de recherche de bien, et une recherche par image en langage naturel.",
+    "La plateforme est l'une des premieres marketplaces immobilieres europeennes a lancer une application dans ChatGPT.",
+    "Le CRM professionnel Propstack a recu des fonctions IA : annonce dictee a la voix, generation automatique de plans.",
+    "Chiffre d'affaires 2025 de 649,6 M EUR (+14,7%) et ARPU professionnels +9,5%, sans attribution a l'IA par l'entreprise."
+  ],
+  "description": "Scout24 a passe 2025 a poser une couche IA sur toute la chaine d'ImmoScout24, des deux cotes du marche. Cote chercheur de bien, la plateforme a lance HeyImmo, un assistant IA qui personnalise l'experience de recherche, et integre une recherche par image acceptant des requetes en langage naturel dans sa recherche a filtres classique. Elle est aussi devenue l'une des premieres plateformes immobilieres europeennes a lancer une application dans ChatGPT, ce qui revient a accepter que le point d'entree de la recherche puisse etre un agent tiers. Cote professionnel, le CRM Propstack a ete enrichi en 2025 de fonctions IA : creation d'annonce dictee a la voix, generation automatique de plans. L'ensemble est presente comme un systeme d'exploitation agentique pour l'immobilier, construit sur la couche immo.ai. La logique de monetisation est indirecte : ces fonctions alimentent les abonnements professionnels de gamme superieure. Les chiffres 2025 publies le 26 fevrier 2026 montrent un chiffre d'affaires de 649,6 millions d'euros en hausse de 14,7%, un revenu professionnel de 470,5 millions en hausse de 14,8%, un ARPU professionnels en hausse de 9,5%, un ARPU particuliers en hausse de 4,2% et une moyenne de 26 027 clients professionnels. Precision necessaire : Scout24 ne publie aucun revenu isole pour ses produits IA et n'attribue pas la hausse d'ARPU a l'IA. Le dispositif est etabli, son effet commercial ne l'est pas.",
+  "resultats": [
+    {
+      "metrique": "Assistant IA de recherche de bien lance cote grand public",
+      "valeur": "HeyImmo",
+      "citation_exacte": "HeyImmo, an AI assistant that personalises the property search experience",
+      "source_ref": "S1"
+    },
+    {
+      "metrique": "Recherche par image avec requete en langage naturel",
+      "valeur": "recherche par image",
+      "citation_exacte": "AI-powered image search with natural language query capabilities",
+      "source_ref": "S1"
+    },
+    {
+      "metrique": "Exposition du catalogue a un agent conversationnel tiers",
+      "valeur": "app dans ChatGPT",
+      "citation_exacte": "one of the first European real estate platforms to launch an app in ChatGPT",
+      "source_ref": "S1"
+    },
+    {
+      "metrique": "Fonctions IA cote professionnel dans le CRM Propstack",
+      "valeur": "voix + plans",
+      "citation_exacte": "voice-based property listing creation and automated floor plan generation",
+      "source_ref": "S1"
+    },
+    {
+      "metrique": "Chiffre d'affaires 2025 (contexte publie, non attribue a l'IA par l'entreprise)",
+      "valeur": "649,6 M EUR, +14,7%",
+      "citation_exacte": "reported 2025 revenue of €649.6 million, up 14.7%",
+      "source_ref": "S2"
+    }
+  ],
+  "niveau_preuve": {
+    "niveau": "B",
+    "justification": "La source d'ancrage S1 est la publication officielle de resultats preliminaires 2025 de Scout24 (26 fevrier 2026), un document primaire qui documente les produits IA lances (HeyImmo, recherche par image en langage naturel, application dans ChatGPT, fonctions IA de Propstack) et fournit les chiffres financiers de l'annee : chiffre d'affaires 649,6 M EUR en hausse de 14,7%, ARPU professionnels en hausse de 9,5%. La couverture Online Marketplaces (S2, 22 juin 2026) confirme le positionnement agentique. Ce n'est pas un niveau A parce que Scout24 n'isole aucun revenu pour ces produits IA et n'attribue pas la hausse d'ARPU a l'IA : le resultat commercial specifique n'est pas prouve. C'est au-dessus d'un simple niveau C parce que le deploiement et les chiffres viennent du document de resultats primaire de l'entreprise, pas de la presse. Presenter l'ARPU comme un effet du dispositif serait une inference deguisee en fait."
+  },
+  "dates": {
+    "lancement": "2025 pour HeyImmo, la recherche par image et les fonctions IA de Propstack ; application dans ChatGPT annoncee dans le meme cycle",
+    "derniere_confirmation_activite": "2026-06",
+    "verifie_le": "2026-07-28",
+    "revoir_apres": "2027-01-28"
+  },
+  "statut_vivant": {
+    "statut": "confirme",
+    "note": "Confirme deux fois en 2026 : la publication de resultats preliminaires du 26 fevrier 2026 liste les produits IA lances, et la couverture du 22 juin 2026 rapporte que l'entreprise se positionne sur un systeme d'exploitation agentique pour l'immobilier, avec une guidance de croissance de 16% a 18% pour 2026."
+  },
+  "sources": [
+    {
+      "ref": "S1",
+      "type": "document_officiel_sec",
+      "fiabilite": "T1_primaire",
+      "titre": "Scout24 publishes preliminary results for 2025 and provides guidance for 2026",
+      "url": "https://www.scout24.com/en/news-media/news/detail/scout24-veroeffentlicht-vorlaeufige-ergebnisse-fuer-2025-und-gibt-prognose-fuer-2026-bekannt-wachstum-und-starke-operative-entwicklung-bestaetigt",
+      "date_publication": "2026-02-26",
+      "consulte_le": "2026-07-28"
+    },
+    {
+      "ref": "S2",
+      "type": "presse",
+      "fiabilite": "T4_secondaire",
+      "titre": "Scout24 Lifts Shareholder Returns to €455M and Bets Big on Agentic AI",
+      "url": "https://www.onlinemarketplaces.com/articles/scout24-lifts-shareholder-returns-to-e455m-and-bets-big-on-agentic-ai/",
+      "date_publication": "2026-06-22",
+      "consulte_le": "2026-07-28"
+    }
+  ],
+  "fonctionnement_operationnel": {
+    "cadence": "Assistant et recherche en temps reel a chaque session ; fonctions IA du CRM a la demande du professionnel ; enrichissement du catalogue en continu.",
+    "opere_par": "Les equipes produit et data de Scout24 pour la couche immo.ai et les assistants ; les agences clientes pour les fonctions IA du CRM Propstack.",
+    "signal_pilote": "Le catalogue d'annonces lui-meme, sa fraicheur et la richesse de ses attributs. Un assistant de recherche ne vaut que ce que vaut la structuration des biens qu'il interroge : photos, plans, caracteristiques. C'est aussi pourquoi les fonctions de creation d'annonce cote professionnel comptent, elles ameliorent la matiere premiere.",
+    "etapes": [
+      {
+        "etape": "Depot de l'annonce",
+        "detail": "Le professionnel cree son annonce dans Propstack, avec dictee vocale et generation automatique de plans.",
+        "acteur": "client"
+      },
+      {
+        "etape": "Structuration du catalogue",
+        "detail": "Les annonces enrichies alimentent le catalogue interrogeable par les assistants.",
+        "acteur": "IA"
+      },
+      {
+        "etape": "Recherche cote grand public",
+        "detail": "Le chercheur de bien interroge HeyImmo en conversation ou lance une recherche par image en langage naturel.",
+        "acteur": "IA"
+      },
+      {
+        "etape": "Entree par un agent tiers",
+        "detail": "Une partie des recherches passe par l'application ImmoScout24 dans ChatGPT.",
+        "acteur": "IA"
+      },
+      {
+        "etape": "Montee en gamme d'abonnement",
+        "detail": "Les fonctions IA nourrissent les offres professionnelles superieures, qui portent le revenu par client.",
+        "acteur": "marketing"
+      }
+    ]
+  },
+  "schema_flow": {
+    "statut": "approche_type",
+    "noeuds": [
+      {
+        "id": "pro",
+        "role_generique": "humain",
+        "label": "Professionnel de l'immobilier (client payant)"
+      },
+      {
+        "id": "propstack",
+        "role_generique": "crm",
+        "label": "Propstack (CRM, annonce a la voix, plans generes)",
+        "outil_documente": "Propstack"
+      },
+      {
+        "id": "catalogue",
+        "role_generique": "data_source",
+        "label": "Catalogue d'annonces ImmoScout24"
+      },
+      {
+        "id": "immoai",
+        "role_generique": "modele_ia",
+        "label": "Couche immo.ai",
+        "outil_documente": "immo.ai"
+      },
+      {
+        "id": "heyimmo",
+        "role_generique": "canal_conversationnel",
+        "label": "HeyImmo (assistant de recherche)",
+        "outil_documente": "HeyImmo"
+      },
+      {
+        "id": "chatgpt",
+        "role_generique": "canal_conversationnel",
+        "label": "Application ImmoScout24 dans ChatGPT"
+      },
+      {
+        "id": "chercheur",
+        "role_generique": "humain",
+        "label": "Chercheur de bien"
+      }
+    ],
+    "liens": [
+      [
+        "pro",
+        "propstack",
+        "depot et enrichissement de l'annonce"
+      ],
+      [
+        "propstack",
+        "catalogue",
+        "annonces structurees"
+      ],
+      [
+        "catalogue",
+        "immoai",
+        "matiere premiere"
+      ],
+      [
+        "immoai",
+        "heyimmo",
+        "recherche conversationnelle et visuelle"
+      ],
+      [
+        "immoai",
+        "chatgpt",
+        "exposition a un agent tiers"
+      ],
+      [
+        "heyimmo",
+        "chercheur",
+        "biens recommandes"
+      ],
+      [
+        "chatgpt",
+        "chercheur",
+        "biens recommandes hors plateforme"
+      ],
+      [
+        "chercheur",
+        "pro",
+        "mise en relation"
+      ]
+    ]
+  },
+  "replication": {
+    "statut_epistemique": "infere",
+    "prerequis_data": [
+      "Un catalogue d'annonces structure et frais, avec des attributs exploitables par un assistant",
+      "Des visuels de qualite suffisante pour supporter une recherche par image",
+      "Un historique de recherches permettant de comprendre les intentions reellement formulees",
+      "Un rattachement entre l'usage des fonctions IA et le niveau d'abonnement souscrit, sans quoi la monetisation restera invisible"
+    ],
+    "prerequis_orga": [
+      "La maitrise du catalogue et de l'outil de depot des annonces, cote professionnel",
+      "Une politique claire sur l'exposition du catalogue a des agents tiers, qui deplace une partie de la relation client",
+      "Une gamme d'abonnements professionnels capable d'absorber les nouvelles fonctions comme argument de montee en gamme",
+      "Une conformite AI Act sur les recommandations generees"
+    ],
+    "stack_possible": [
+      "Assistant conversationnel branche sur le catalogue",
+      "Recherche visuelle avec requete en langage naturel",
+      "Fonctions de generation de contenu dans l'outil professionnel (dictee, plans)",
+      "Application ou connecteur vers un agent conversationnel grand public"
+    ],
+    "premiere_etape": "Ameliorer la matiere premiere avant l'interface. Un assistant de recherche echoue d'abord sur des annonces pauvres, pas sur son modele. Le premier chantier utile est d'outiller le depot d'annonce cote professionnel pour que chaque bien arrive structure, avec plans et attributs exploitables.",
+    "playbook": [
+      {
+        "action": "Outiller le depot d'annonce cote professionnel pour enrichir mecaniquement le catalogue (dictee, generation de plans).",
+        "livrable": "Catalogue plus structure, sans effort supplementaire pour l'agence."
+      },
+      {
+        "action": "Brancher un assistant conversationnel sur ce catalogue, sur un perimetre de recherche limite.",
+        "livrable": "Assistant de recherche en production sur un segment."
+      },
+      {
+        "action": "Ajouter la recherche visuelle pour les intentions que le texte exprime mal.",
+        "livrable": "Recherche par image en langage naturel."
+      },
+      {
+        "action": "Decider explicitement de l'exposition a un agent tiers, en pesant le trafic gagne contre la relation client deplacee.",
+        "livrable": "Position documentee sur la presence dans les agents grand public."
+      },
+      {
+        "action": "Rattacher les fonctions IA a la gamme d'abonnements et mesurer la montee en gamme reelle.",
+        "livrable": "Mesure du revenu par client professionnel attribuable aux nouvelles fonctions."
+      }
+    ],
+    "equipe": "Une equipe produit marketplace, une equipe data pour la couche de recherche et de recommandation, une equipe commerciale abonnements professionnels pour la montee en gamme, et une fonction conformite sur les recommandations generees."
+  },
+  "seo": {
+    "slug": "scout24-immoscout24-couche-ia-immobilier-2026",
+    "title": "ImmoScout24 (Scout24) : couche IA de bout en bout - HeyImmo, recherche par image et app ChatGPT (2026)",
+    "meta_description": "Scout24 a pose une couche IA sur ImmoScout24 : assistant HeyImmo, recherche par image en langage naturel, app ChatGPT, fonctions IA du CRM Propstack. Aucun revenu IA isole publie.",
+    "resume_citable": "ImmoScout24 a lance en 2025 l'assistant de recherche IA HeyImmo, une recherche par image acceptant des requetes en langage naturel et des fonctions IA dans son CRM professionnel Propstack, et est devenue l'une des premieres plateformes immobilieres europeennes a lancer une application dans ChatGPT, sur un chiffre d'affaires 2025 de 649,6 millions d'euros en hausse de 14,7% que l'entreprise n'attribue pas a l'IA.",
+    "faq": [
+      {
+        "q": "Quels produits IA ImmoScout24 a-t-elle deployes ?",
+        "a": "HeyImmo, un assistant IA qui personnalise l'experience de recherche de bien ; une recherche par image acceptant des requetes en langage naturel ; une application dans ChatGPT, l'une des premieres pour une plateforme immobiliere europeenne ; et des fonctions IA dans le CRM professionnel Propstack, dont la creation d'annonce a la voix et la generation automatique de plans."
+      },
+      {
+        "q": "Comment Scout24 monetise-t-elle cette couche IA ?",
+        "a": "Indirectement. Les fonctions IA nourrissent les abonnements professionnels de gamme superieure plutot que d'etre vendues comme un produit separe. Scout24 publie un ARPU professionnels en hausse de 9,5% en 2025, mais ne l'attribue pas a l'IA et n'isole aucun revenu pour ces produits."
+      },
+      {
+        "q": "Quel est le niveau de preuve de ce cas ?",
+        "a": "Niveau B. Le deploiement et les chiffres 2025 sont documentes par la publication officielle de resultats de Scout24, mais aucun revenu n'est isole pour les produits IA et la hausse d'ARPU n'est pas attribuee a l'IA. Le deploiement est prouve, l'effet commercial specifique ne l'est pas."
+      }
+    ]
+  }
+}

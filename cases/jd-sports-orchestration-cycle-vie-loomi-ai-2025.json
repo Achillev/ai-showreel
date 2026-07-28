@@ -1,0 +1,284 @@
+{
+  "id": "jd-sports-orchestration-cycle-vie-loomi-ai-2025",
+  "type_fiche": "succes",
+  "marque": "JD Sports Fashion",
+  "groupe": "JD Sports Fashion plc",
+  "industrie": "sport_fitness",
+  "marches_deploiement": [
+    "Royaume-Uni",
+    "Espagne",
+    "Marches europeens"
+  ],
+  "transposable_ue": {
+    "flag": "oui",
+    "note": "Le cas est deja deploye au Royaume-Uni et sur des marches europeens (dont l'Espagne), donc le pattern est transposable en l'etat a un detaillant europeen. La contrainte principale est la base legale RGPD des declencheurs comportementaux : les flux panier abandonne, win-back et welcome s'appuient sur le suivi des micro-comportements (navigation, ouverture, ajout au panier) et supposent le consentement au tracking et a la prospection par email et push. La donnee client doit etre unifiee dans une plateforme unique avant orchestration."
+  },
+  "metier": "CRM / marketing digital",
+  "intervenants": [
+    {
+      "nom": "Lorna Harford",
+      "role": "Head of CRM, JD Sports",
+      "source_ref": "S1"
+    }
+  ],
+  "axes": {
+    "levier": "retention",
+    "touchpoints": [
+      "email",
+      "notifications push",
+      "experience on-site",
+      "flux panier abandonne",
+      "flux win-back",
+      "flux welcome",
+      "recommandations produit en temps reel"
+    ],
+    "etape_parcours": "fidelite",
+    "famille": "personnalisation",
+    "pattern": "orchestration de cycle de vie personnalisee par IA sur micro-comportements, deployee multi-marches",
+    "type_ia": [
+      "personnalisation IA",
+      "segmentation automatisee",
+      "orchestration omnicanale",
+      "recommandation produit en temps reel"
+    ],
+    "plateforme_stack": [
+      "Bloomreach Engagement",
+      "Loomi AI"
+    ],
+    "objectif_metrique": [
+      "taux de conversion",
+      "taux d'ouverture",
+      "revenu incremental"
+    ]
+  },
+  "implementation": "plateforme",
+  "stack_technique": [
+    {
+      "nom": "Bloomreach Engagement",
+      "categorie": "plateforme",
+      "detail": "Plateforme de personnalisation et d'orchestration omnicanale (ex-Exponea) qui unifie la donnee client et pilote les flux de cycle de vie.",
+      "url": "https://www.bloomreach.com"
+    },
+    {
+      "nom": "Loomi AI",
+      "categorie": "outil",
+      "detail": "Couche IA de Bloomreach qui pilote la segmentation avancee, le contenu dynamique de campagne et l'orchestration omnicanale, avec recommandations en temps reel.",
+      "url": "https://www.bloomreach.com"
+    }
+  ],
+  "objectif_business": "Faire evoluer le dispositif d'engagement client au rythme de la croissance de l'enseigne, sans ajouter de complexite, en unifiant la donnee client et en automatisant des parcours personnalises de bout en bout sur plusieurs marches. L'enjeu declare : passer d'un CRM classique a un moteur de revenu.",
+  "points_cles": [
+    "JD Sports a adopte Bloomreach et Loomi AI pour unifier sa donnee et orchestrer des parcours personnalises multi-marches.",
+    "Les flux (panier abandonne, win-back, welcome, reco temps reel) se declenchent sur les micro-comportements par email, push et on-site.",
+    "Resultats attribues par l'editeur : +65% de taux de conversion au Royaume-Uni, +75% de taux d'ouverture en Espagne.",
+    "Niveau B : etude de cas plateforme chiffree ; chiffres issus de l'editeur, deploiement multi-marches documente."
+  ],
+  "description": "JD Sports, detaillant sportswear a croissance rapide, a adopte la plateforme de personnalisation de Bloomreach et sa couche Loomi AI pour unifier sa donnee client et orchestrer des parcours personnalises sur plusieurs marches. Concretement, l'enseigne automatise des flux de cycle de vie declenches par les comportements de chaque client : campagne de bienvenue, relance de panier abandonne, reactivation (win-back) et recommandations produit en temps reel, servis par email, notifications push et sur le site. Loomi AI pilote la segmentation, le contenu dynamique des campagnes et l'orchestration omnicanale, ce qui permet de delivrer un message individualise selon le comportement, les preferences et l'etape de vie de chaque client. Le dispositif tourne en parallele sur plusieurs marches europeens : l'editeur attribue a ces campagnes une hausse de 65% du taux de conversion au Royaume-Uni et de 75% du taux d'ouverture en Espagne, ainsi qu'une hausse du revenu incremental depuis l'adoption de la plateforme. Selon la Head of CRM de JD Sports, Bloomreach a donne au groupe l'infrastructure pour aller plus vite et activer sur tous les canaux au Royaume-Uni comme sur les marches europeens, le CRM devenant un moteur de revenu pour l'entreprise.",
+  "resultats": [
+    {
+      "metrique": "Hausse du taux de conversion au Royaume-Uni sur les campagnes propulsees par Loomi AI",
+      "valeur": "+65%",
+      "citation_exacte": "+65% conversion rate in the UK from Loomi AI-powered campaigns",
+      "source_ref": "S1"
+    },
+    {
+      "metrique": "Hausse du taux d'ouverture en Espagne sur les campagnes propulsees par Loomi AI",
+      "valeur": "+75%",
+      "citation_exacte": "+75% open rate in Spain from Loomi AI-powered campaigns",
+      "source_ref": "S1"
+    },
+    {
+      "metrique": "Revenu incremental depuis l'adoption de la plateforme de personnalisation Bloomreach",
+      "valeur": "en hausse",
+      "citation_exacte": "a notable increase in incremental revenue since adopting Bloomreach's personalization platform",
+      "source_ref": "S1"
+    }
+  ],
+  "niveau_preuve": {
+    "niveau": "B",
+    "justification": "Etude de cas plateforme chiffree (Bloomreach, moteur Loomi AI) avec resultats attribues nommement a JD Sports et deploiement multi-marches documente ; les chiffres proviennent de l'editeur (biais vendeur), ce qui plafonne a B. La seconde source (DestinationCRM) corrobore de facon independante l'existence et les capacites de Loomi AI mais ne cite pas JD Sports ni les chiffres."
+  },
+  "dates": {
+    "lancement": "2024-2025 (adoption de Bloomreach / Loomi AI par JD Sports)",
+    "derniere_confirmation_activite": "2025",
+    "verifie_le": "2026-07-28",
+    "revoir_apres": "2027-01-28"
+  },
+  "statut_vivant": {
+    "statut": "confirme",
+    "note": "Etude de cas publiee par Bloomreach decrivant un deploiement en production au Royaume-Uni et sur des marches europeens, avec la Head of CRM de JD Sports citee. Verification a distance sur la page editeur ; pas de capture de la feature en production cote client."
+  },
+  "sources": [
+    {
+      "ref": "S1",
+      "type": "customer_story_plateforme",
+      "fiabilite": "T2_officiel_interesse",
+      "titre": "JD Sports Drives Global Personalization at Scale | Bloomreach",
+      "url": "https://www.bloomreach.com/en/case-studies/jd-sports",
+      "consulte_le": "2026-07-28"
+    },
+    {
+      "ref": "S2",
+      "type": "presse",
+      "fiabilite": "T4_secondaire",
+      "titre": "Bloomreach Drives Data-Driven Personalization: The 2025 CRM Conversation Starters",
+      "url": "https://www.destinationcrm.com/Articles/Editorial/Magazine-Features/Bloomreach-Drives-Data-Driven-Personalization-The-2025-CRM-Conversation-Starters-171198.aspx",
+      "consulte_le": "2026-07-28"
+    }
+  ],
+  "fonctionnement_operationnel": {
+    "cadence": "Temps reel sur les declencheurs comportementaux : chaque micro-comportement (navigation, ajout au panier, ouverture, inactivite) peut declencher un flux. Les campagnes de cycle de vie tournent en continu et servent le message a l'evenement.",
+    "opere_par": "Equipe CRM de JD Sports, sur la plateforme Bloomreach Engagement, la couche Loomi AI prenant en charge la segmentation, le contenu dynamique et l'orchestration.",
+    "signal_pilote": "Le comportement individuel unifie dans la plateforme (navigation, panier, historique, etape de vie). Si la donnee client n'est pas unifiee et propre, la segmentation et les declencheurs se degradent et les flux perdent leur pertinence.",
+    "etapes": [
+      {
+        "etape": "Unification de la donnee client",
+        "detail": "Les donnees comportementales et transactionnelles sont centralisees dans Bloomreach pour obtenir une vue unique par client.",
+        "acteur": "equipe data"
+      },
+      {
+        "etape": "Segmentation et contenu dynamique",
+        "detail": "Loomi AI construit la segmentation avancee et adapte le contenu des campagnes selon le comportement, les preferences et l'etape de vie.",
+        "acteur": "IA"
+      },
+      {
+        "etape": "Declenchement des flux de cycle de vie",
+        "detail": "Les micro-comportements declenchent les flux welcome, panier abandonne et win-back, servis par email, push et on-site.",
+        "acteur": "IA"
+      },
+      {
+        "etape": "Recommandations en temps reel",
+        "detail": "Les recommandations produit sont personnalisees a la volee pour chaque client sur les canaux actives.",
+        "acteur": "IA"
+      },
+      {
+        "etape": "Deploiement multi-marches et suivi",
+        "detail": "L'equipe CRM etend le dispositif en parallele sur plusieurs marches europeens et suit conversion, ouverture et revenu incremental.",
+        "acteur": "marketing"
+      }
+    ]
+  },
+  "schema_flow": {
+    "statut": "approche_type",
+    "noeuds": [
+      {
+        "id": "behavior",
+        "role_generique": "data_source",
+        "label": "Micro-comportements client (navigation, panier, ouverture, inactivite)"
+      },
+      {
+        "id": "cdp",
+        "role_generique": "cdp",
+        "label": "Bloomreach Engagement (donnee client unifiee)",
+        "outil_documente": "Bloomreach Engagement"
+      },
+      {
+        "id": "ai",
+        "role_generique": "modele_ia",
+        "label": "Loomi AI (segmentation, contenu dynamique, orchestration)",
+        "outil_documente": "Loomi AI"
+      },
+      {
+        "id": "channels",
+        "role_generique": "crm",
+        "label": "Canaux d'activation (email, push, on-site)"
+      },
+      {
+        "id": "customer",
+        "role_generique": "site_app",
+        "label": "Client JD Sports"
+      }
+    ],
+    "liens": [
+      [
+        "behavior",
+        "cdp",
+        "evenements comportementaux"
+      ],
+      [
+        "cdp",
+        "ai",
+        "profil unifie"
+      ],
+      [
+        "ai",
+        "channels",
+        "flux personnalise declenche"
+      ],
+      [
+        "channels",
+        "customer",
+        "message individualise"
+      ],
+      [
+        "customer",
+        "behavior",
+        "nouveau comportement"
+      ]
+    ]
+  },
+  "replication": {
+    "statut_epistemique": "infere",
+    "prerequis_data": [
+      "Une donnee client unifiee (comportement de navigation, panier, historique d'achat, engagement email et push) dans une seule plateforme",
+      "Un tracking des micro-comportements consenti (RGPD) pour declencher les flux en temps reel",
+      "Un catalogue produit exploitable pour les recommandations personnalisees"
+    ],
+    "prerequis_orga": [
+      "Une equipe CRM capable d'operer une plateforme d'orchestration omnicanale au quotidien",
+      "Un socle de conformite RGPD pour le consentement au tracking et a la prospection email et push",
+      "Une gouvernance multi-marches pour repliquer les flux d'un marche a l'autre"
+    ],
+    "stack_possible": [
+      "Plateforme de personnalisation et d'orchestration omnicanale unifiant la donnee client (type Bloomreach Engagement)",
+      "Couche IA de segmentation et de contenu dynamique branchee sur cette plateforme (type Loomi AI)",
+      "Moteur de recommandation produit en temps reel connecte au catalogue",
+      "Canaux d'activation email, push et on-site pilotes depuis la meme plateforme"
+    ],
+    "premiere_etape": "Unifier la donnee comportementale et transactionnelle dans une plateforme unique, puis lancer un premier flux de cycle de vie a fort volume (relance de panier abandonne) declenche en temps reel sur un seul marche, avant d'etendre aux autres flux et marches.",
+    "playbook": [
+      {
+        "action": "Centraliser la donnee comportementale et transactionnelle dans une plateforme d'engagement unique pour obtenir une vue client unifiee.",
+        "livrable": "Profil client unifie exploitable pour la segmentation et le declenchement."
+      },
+      {
+        "action": "Mettre en place la segmentation avancee et le contenu dynamique portes par la couche IA.",
+        "livrable": "Segments et modeles de campagne adaptes au comportement et a l'etape de vie."
+      },
+      {
+        "action": "Activer les flux de cycle de vie declenches par les micro-comportements (welcome, panier abandonne, win-back) sur email, push et on-site.",
+        "livrable": "Flux automatises en production sur un premier marche."
+      },
+      {
+        "action": "Brancher les recommandations produit en temps reel sur les canaux actives.",
+        "livrable": "Recommandations personnalisees servies a la volee."
+      },
+      {
+        "action": "Repliquer le dispositif sur les autres marches et suivre conversion, ouverture et revenu incremental.",
+        "livrable": "Dispositif multi-marches instrumente."
+      }
+    ],
+    "equipe": "Une equipe CRM qui tient l'orchestration au quotidien, des specialistes de la donnee client pour l'unification et la qualite, un profil personnalisation pour la segmentation et le contenu dynamique, et une fonction conformite RGPD impliquee sur le tracking et la prospection."
+  },
+  "seo": {
+    "slug": "jd-sports-orchestration-cycle-vie-loomi-ai-2025",
+    "title": "JD Sports Fashion : orchestration de cycle de vie personnalisee par Loomi AI - +65% de conversion au Royaume-Uni (2025)",
+    "meta_description": "JD Sports a unifie sa donnee client sur Bloomreach et Loomi AI pour orchestrer des flux personnalises multi-marches : +65% de conversion au Royaume-Uni, +75% d'ouverture en Espagne.",
+    "resume_citable": "JD Sports Fashion a adopte Bloomreach et sa couche Loomi AI pour unifier sa donnee client et orchestrer des flux personnalises (welcome, panier abandonne, win-back, reco temps reel) declenches sur les micro-comportements par email, push et on-site sur plusieurs marches europeens ; l'editeur attribue a ces campagnes +65% de taux de conversion au Royaume-Uni et +75% de taux d'ouverture en Espagne.",
+    "faq": [
+      {
+        "q": "Quelle IA JD Sports utilise-t-elle pour personnaliser ses parcours client ?",
+        "a": "JD Sports a adopte la plateforme de personnalisation de Bloomreach et sa couche Loomi AI, qui pilote la segmentation avancee, le contenu dynamique des campagnes et l'orchestration omnicanale, avec des recommandations produit en temps reel. Le dispositif unifie la donnee client et declenche des flux de cycle de vie sur les micro-comportements."
+      },
+      {
+        "q": "Quels resultats sont attribues au dispositif ?",
+        "a": "Selon l'etude de cas Bloomreach, les campagnes propulsees par Loomi AI ont fait progresser le taux de conversion de 65% au Royaume-Uni et le taux d'ouverture de 75% en Espagne, avec une hausse du revenu incremental depuis l'adoption de la plateforme. Ces chiffres proviennent de l'editeur, ce qui situe le cas au niveau de preuve B."
+      },
+      {
+        "q": "Le cas est-il transposable en Europe ?",
+        "a": "Oui, il est deja deploye au Royaume-Uni et sur des marches europeens dont l'Espagne. La contrainte principale est la base legale RGPD du tracking des micro-comportements qui declenchent les flux, et du consentement a la prospection par email et push."
+      }
+    ]
+  },
+  "logo_domain": "jdsports.co.uk"
+}
