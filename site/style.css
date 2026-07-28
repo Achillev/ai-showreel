@@ -812,3 +812,8 @@ html.js-anim .matrix.hdr-in thead th.col-h { animation: hdrPop .6s var(--ease-ou
 .hero .kicker { position: relative; z-index: 1; }
 .prose > .kicker { margin-top: 8px; }
 @media (max-width: 780px) { .kicker { margin-bottom: 12px; font-size: 10px; } }
+
+/* ---- "Voir plus" : cartes au-dela de 48 chargees a la demande (allege le DOM de la home) ---- */
+.cards-more { display: flex; justify-content: center; margin-top: 26px; }
+.cards-more-btn { background: var(--surface); border: 1px solid var(--border-strong); border-radius: var(--radius-pill); padding: 12px 26px; font: inherit; font-size: 14px; font-weight: 600; color: var(--ink); cursor: pointer; transition: border-color var(--duration-fast) var(--ease-out-expo), color var(--duration-fast) var(--ease-out-expo); }
+.cards-more-btn:hover { border-color: var(--accent-primary); color: var(--accent-text); }

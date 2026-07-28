@@ -889,7 +889,9 @@ function indexPage(cases) {
       ${Object.entries(LEVIERS).map(([k, v]) => `<button type="button" class="cf-btn" data-lev="${k}">${esc(v)}</button>`).join('')}
       <span class="cf-count" aria-live="polite"></span>
     </div>
-    <div class="cards">${succes.map(caseCard).join('')}</div>
+    <div class="cards">${succes.slice(0, 48).map(caseCard).join('')}</div>
+    ${succes.length > 48 ? `<template id="more-cas">${succes.slice(48).map(caseCard).join('')}</template>
+    <div class="cards-more"><button type="button" class="cards-more-btn" id="see-all-cas">${t('Voir les ' + (succes.length - 48) + ' cas restants', 'See the ' + (succes.length - 48) + ' remaining cases')}</button></div>` : ''}
   </section>
 
   <section class="feedback">
@@ -898,10 +900,22 @@ function indexPage(cases) {
   </section>
   <script>
 (function(){
-var cards=[].slice.call(document.querySelectorAll('#cas .card')),cnt=document.querySelector('#cas .cf-count'),btns=[].slice.call(document.querySelectorAll('#cas .cf-btn'));
+var box=document.querySelector('#cas .cards'),moreT=document.getElementById('more-cas'),moreWrap=document.querySelector('#cas .cards-more');
+var cards=[].slice.call(box.querySelectorAll('.card')),cnt=document.querySelector('#cas .cf-count'),btns=[].slice.call(document.querySelectorAll('#cas .cf-btn'));
 var CASWORD=${JSON.stringify(t('cas', 'cases'))};
+/* les cartes au-dela de 48 vivent dans un <template> (hors DOM) pour alleger la page ; on les
+   injecte au clic "Voir plus", ou automatiquement des qu'un filtre est applique (pour filtrer sur
+   l'ensemble). Sans JS : 48 cartes visibles + tout le reste dans le sitemap et les pages liees. */
+function revealBatch(){if(!moreT)return 0;var c=moreT.content,f=document.createDocumentFragment(),i=0;while(i<24&&c.firstElementChild){f.appendChild(c.firstElementChild);i++;}if(i){box.appendChild(f);cards=[].slice.call(box.querySelectorAll('.card'));}if(!c.firstElementChild&&moreWrap){moreWrap.remove();moreWrap=null;}return i;}
+function revealAll(){while(revealBatch());}
+var mb=document.getElementById('see-all-cas');if(mb)mb.addEventListener('click',revealAll);
+/* lazy-load : on injecte par lots de 24 a l'approche du bas ; le DOM initial reste leger (~1200 noeuds
+   au lieu de ~4700). Le bouton reste comme fallback sans JS. Un filtre revele tout (revealAll) d'abord. */
+var ticking=false;function fill(){if(!moreWrap||!moreT||!moreT.content.firstElementChild)return;if(moreWrap.getBoundingClientRect().top<window.innerHeight+800){revealBatch();requestAnimationFrame(fill);}}
+window.addEventListener('scroll',function(){if(ticking)return;ticking=true;requestAnimationFrame(function(){fill();ticking=false;});},{passive:true});
+window.addEventListener('resize',fill,{passive:true});fill();
 function setBtn(l){btns.forEach(function(x){x.classList.toggle('is-on',(x.dataset.lev||'')===(l||''));});}
-function apply(i,l){var run=function(){var n=0;cards.forEach(function(c){var ok=(!i||c.dataset.ind===i)&&(!l||c.dataset.lev===l);c.style.display=ok?'':'none';if(ok)n++;});return n;};var cont=document.querySelector('#cas .cards');var n=(window.__cmFlip&&cont)?window.__cmFlip(cont,run):run();setBtn(l||'');cnt.textContent=(i||l)?(n+' '+CASWORD):'';}
+function apply(i,l){revealAll();var run=function(){var n=0;cards.forEach(function(c){var ok=(!i||c.dataset.ind===i)&&(!l||c.dataset.lev===l);c.style.display=ok?'':'none';if(ok)n++;});return n;};var n=(window.__cmFlip&&box)?window.__cmFlip(box,run):run();setBtn(l||'');cnt.textContent=(i||l)?(n+' '+CASWORD):'';}
 btns.forEach(function(bn){bn.addEventListener('click',function(){apply('',bn.dataset.lev||'');history.pushState('','',location.pathname+(bn.dataset.lev?('?lev='+bn.dataset.lev):'')+'#cas');});});
 [].slice.call(document.querySelectorAll('.mcell-link')).forEach(function(a){a.addEventListener('click',function(e){e.preventDefault();apply(a.dataset.ind,a.dataset.lev);history.pushState('','',location.pathname+'?ind='+a.dataset.ind+'&lev='+a.dataset.lev+'#cas');var el=document.getElementById('cas');if(el)el.scrollIntoView({behavior:'smooth'});});});
 var q=new URLSearchParams(location.search);if(q.get('ind')||q.get('lev'))apply(q.get('ind')||'',q.get('lev')||'');})();
