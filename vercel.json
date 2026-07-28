@@ -3,7 +3,7 @@
   "buildCommand": "node site/build.mjs",
   "outputDirectory": "dist",
   "framework": null,
-  "trailingSlash": false,
+  "trailingSlash": true,
   "headers": [
     {
       "source": "/assets/(.*)",
