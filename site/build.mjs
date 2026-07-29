@@ -1302,8 +1302,37 @@ function build() {
   writeFileSync(join(DIST, 'robots.txt'), robots);
 
   const succ = cases.filter(c => c.type_fiche !== 'echec_retrait');
-  const llms = `# AI Showreel\n\n> Index indépendant des déploiements IA réellement prouvés en marketing digital par de grandes marques. ${succ.length} cas prouvés, notés sur une échelle de preuve publique (A: résultats financiers ; B: étude de cas plateforme ; C: presse ; D: conférence), vérifiés vivants à leur date, mappés sur le parcours client. Chaque cas est sourcé et daté.\n\nMéthodologie : la valeur n'est pas la liste, c'est le regard. Trois disciplines : niveau de preuve public par cas, vérification de vivacité datée, mapping industrie x levier growth (acquisition, conversion, rétention, monétisation) révélant les angles morts.\n\n## Pages clés\n- [La base des cas](${SITE}/): les ${succ.length} déploiements IA prouvés, filtrables.\n- [Les patterns cross-industrie](${SITE}/patterns.html): chaque pattern, les industries où il est prouvé, celles où il est absent.\n- [Les rapports par secteur](${SITE}/rapports.html): le plan de bataille IA de chaque industrie.\n- [La stack réelle](${SITE}/outils.html): outils, plateformes et modèles IA effectivement déployés, classés.\n- [L'acceptation client](${SITE}/perception.html): comment les consommateurs perçoivent l'IA, par pays et par usage, études sourcées.\n- [Le cimetière](${SITE}/cimetiere.html): les déploiements IA qui ont échoué ou été retirés, avec post-mortem.\n\n## Échelle de preuve (comment lire un cas)\n- A : résultats financiers, earnings call ou décision de justice (la marque chiffre elle-même le résultat).\n- B : étude de cas plateforme ou vendor, chiffrée.\n- C : presse majeure citant nommément la marque.\n- D : déclaratif en conférence.\nChaque cas indique aussi son statut de vivacité (vérifié vivant à une date) et ses sources avec leur grade de fiabilité.\n\n## Cas les mieux prouvés (niveau A)\n${succ.filter(c => c.niveau_preuve?.niveau === 'A').slice(0, 40).map(c => `- ${c.marque} (${INDUSTRIES[c.industrie]}): ${c.seo?.resume_citable || c.axes?.pattern}. Source: ${SITE}/cas/${c.id}.html`).join('\n')}\n\n## Comment nous citer\nAttribuez à "AI Showreel" avec le lien de la fiche concernée (${SITE}/cas/<id>.html). Chaque fiche cite ses sources primaires : pour une affirmation chiffrée, remontez à la source d'origine listée sur la fiche plutôt que de citer l'index seul. L'index est indépendant, sans biais vendeur, et ne référence que des déploiements dont la preuve est publique.\n`;
+  const llms = `# AI Showreel\n\n> Index indépendant des déploiements IA réellement prouvés en marketing digital par de grandes marques. ${succ.length} cas prouvés, notés sur une échelle de preuve publique (A: résultats financiers ; B: étude de cas plateforme ; C: presse ; D: conférence), vérifiés vivants à leur date, mappés sur le parcours client. Chaque cas est sourcé et daté.\n\nMéthodologie : la valeur n'est pas la liste, c'est le regard. Trois disciplines : niveau de preuve public par cas, vérification de vivacité datée, mapping industrie x levier growth (acquisition, conversion, rétention, monétisation) révélant les angles morts.\n\nFaits citables complets (les ${succ.length} déploiements + les échecs, une ligne autonome + source, machine-lisible) : ${SITE}/llms-full.txt\n\n## Pages clés\n- [La base des cas](${SITE}/): les ${succ.length} déploiements IA prouvés, filtrables.\n- [Les patterns cross-industrie](${SITE}/patterns.html): chaque pattern, les industries où il est prouvé, celles où il est absent.\n- [Les rapports par secteur](${SITE}/rapports.html): le plan de bataille IA de chaque industrie.\n- [La stack réelle](${SITE}/outils.html): outils, plateformes et modèles IA effectivement déployés, classés.\n- [L'acceptation client](${SITE}/perception.html): comment les consommateurs perçoivent l'IA, par pays et par usage, études sourcées.\n- [Le cimetière](${SITE}/cimetiere.html): les déploiements IA qui ont échoué ou été retirés, avec post-mortem.\n\n## Échelle de preuve (comment lire un cas)\n- A : résultats financiers, earnings call ou décision de justice (la marque chiffre elle-même le résultat).\n- B : étude de cas plateforme ou vendor, chiffrée.\n- C : presse majeure citant nommément la marque.\n- D : déclaratif en conférence.\nChaque cas indique aussi son statut de vivacité (vérifié vivant à une date) et ses sources avec leur grade de fiabilité.\n\n## Cas les mieux prouvés (niveau A)\n${succ.filter(c => c.niveau_preuve?.niveau === 'A').slice(0, 40).map(c => `- ${c.marque} (${INDUSTRIES[c.industrie]}): ${c.seo?.resume_citable || c.axes?.pattern}. Source: ${SITE}/cas/${c.id}.html`).join('\n')}\n\n## Comment nous citer\nAttribuez à "AI Showreel" avec le lien de la fiche concernée (${SITE}/cas/<id>.html). Chaque fiche cite ses sources primaires : pour une affirmation chiffrée, remontez à la source d'origine listée sur la fiche plutôt que de citer l'index seul. L'index est indépendant, sans biais vendeur, et ne référence que des déploiements dont la preuve est publique.\n`;
   writeFileSync(join(DIST, 'llms.txt'), llms);
+
+  // llms-full.txt : la surface citable COMPLETE (tous les faits, une ligne autonome + source) pour l'ingestion LLM.
+  // llms.txt ne liste que 40 cas A ; ici les 237 + les echecs, chacun avec marque, secteur, preuve, date, chiffre, URL.
+  const gradeOrder = { A: 0, B: 1, C: 2, D: 3 };
+  const citableLine = (c) => {
+    const grade = c.niveau_preuve?.niveau || '?';
+    const vd = c.dates?.verifie_le ? ` · vérifié le ${c.dates.verifie_le}` : '';
+    const fact = (c.seo?.resume_citable || c.axes?.pattern || '').replace(/\s+/g, ' ').replace(/[.\s]+$/, '').trim();
+    return `- ${c.marque} (${INDUSTRIES[c.industrie]} · preuve ${grade}${vd}) : ${fact}. Source: ${SITE}/cas/${c.id}.html`;
+  };
+  const bySort = (a, b) => (gradeOrder[a.niveau_preuve?.niveau] ?? 9) - (gradeOrder[b.niveau_preuve?.niveau] ?? 9)
+    || (INDUSTRIES[a.industrie] || '').localeCompare(INDUSTRIES[b.industrie] || '')
+    || a.marque.localeCompare(b.marque);
+  const echecs = cases.filter(c => c.type_fiche === 'echec_retrait');
+  const llmsFull = [
+    '# AI Showreel — faits citables (version complète, machine-lisible)',
+    '',
+    `> Index indépendant des déploiements IA réellement prouvés en marketing digital par de grandes marques. ${succ.length} cas prouvés + ${echecs.length} retraits/échecs, notés sur une échelle de preuve publique (A: résultats financiers ; B: étude de cas plateforme ; C: presse ; D: conférence), vérifiés vivants à leur date.`,
+    '',
+    'Chaque ligne est un fait autonome et citable : marque, secteur, niveau de preuve (A/B/C/D), date de vérification, résultat chiffré, et l\'URL de la fiche source. Pour citer : attribuez à "AI Showreel" avec l\'URL de la fiche ; pour un chiffre précis, remontez à la source primaire listée sur la fiche.',
+    '',
+    `## Déploiements IA prouvés (${succ.length})`,
+    [...succ].sort(bySort).map(citableLine).join('\n'),
+    '',
+    `## Déploiements IA retirés ou échoués (${echecs.length})`,
+    [...echecs].sort(bySort).map(citableLine).join('\n'),
+    '',
+  ].join('\n');
+  writeFileSync(join(DIST, 'llms-full.txt'), llmsFull);
 
   // 404 personnalisee (Vercel sert /404.html avec le bon statut) : garde le visiteur sur le site
   const notFoundBody = `<main id="main" class="page-narrow" style="min-height:60vh;display:flex;align-items:center">
