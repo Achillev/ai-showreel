@@ -21,9 +21,11 @@ const DIST = join(ROOT, 'dist');
 
 // Adresse de réception des corrections (à remplacer par l'adresse projet au moment du naming).
 const FEEDBACK_EMAIL = 'oracle@ai-showreel.com';
+// anti-scrape : encode l'adresse en entites HTML numeriques (le navigateur decode, le mailto marche)
+const entifyEmail = (s) => s.replace(/./g, c => `&#${c.charCodeAt(0)};`);
 
 function mailto(subject, body) {
-  return `mailto:${FEEDBACK_EMAIL}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+  return `mailto:${entifyEmail(FEEDBACK_EMAIL)}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
 }
 function feedbackLink(c) {
   const title = c?.seo?.title || c?.marque || 'AI Showreel';
@@ -958,7 +960,7 @@ var q=new URLSearchParams(location.search);if(q.get('ind')||q.get('lev'))apply(q
     ...(temporal ? { temporalCoverage: temporal } : {}),
   };
   return page(t('AI Showreel — les déploiements IA prouvés en marketing', 'AI Showreel — proven AI deployments in marketing'), body, {
-    desc: t('Index indépendant des déploiements IA à l\'échelle en marketing digital, noté sur une échelle de preuve publique et vérifié vivant.', 'An independent index of AI deployments at scale in digital marketing, graded on a public evidence scale and verified live.'), path: '/',
+    desc: t(`${TOTAL_CASES} cas d'usage IA prouvés en marketing par les grandes marques, notés sur une échelle de preuve publique (A/B/C/D) et vérifiés vivants. L'index indépendant, sans biais vendeur.`, `${TOTAL_CASES} proven AI marketing use cases from major brands, graded on a public evidence scale (A/B/C/D) and verified live. The independent, vendor-neutral index.`), path: '/',
     jsonld: JSON.stringify(dataset),
   });
 }
@@ -1196,7 +1198,7 @@ function reportPage(ind, cases) {
     itemListElement: mine.slice(0, 20).map((c, i) => ({ '@type': 'ListItem', position: i + 1, url: `${SITE}${P()}/cas/${c.id}.html`, name: c.marque })),
   });
   return page(t(`${label} : plan de bataille IA`, `${label}: AI battle plan`), body, {
-    desc: resume.slice(0, 160), jsonld, path: `/rapport/${industrySlug(ind)}.html`,
+    desc: t(`${label} : les cas d'usage IA marketing prouvés, les angles morts et la stack déployée. ${mine.length} déploiements sourcés et notés sur une échelle de preuve.`, `${label}: proven AI marketing use cases, blind spots and the deployed stack. ${mine.length} sourced deployments graded on an evidence scale.`), jsonld, path: `/rapport/${industrySlug(ind)}.html`,
   });
 }
 
@@ -1215,7 +1217,7 @@ function reportsIndexPage(cases) {
     return `<a class="card" href="${P()}/rapport/${industrySlug(i)}.html"><h3>${esc(INDUSTRIES[i])}</h3><p class="card-pattern">${t('Le plan de bataille IA du secteur.', 'The AI battle plan for the sector.')}</p><div class="card-result"><strong>${n}</strong> ${t('cas prouvés', 'proven cases')}</div></a>`;
   }).join('')}</div></section>`;
   return page(t('Les plans de bataille IA par secteur - AI Showreel', 'AI battle plans by sector - AI Showreel'), body, {
-    desc: t('Le plan de bataille IA de chaque industrie : cas prouvés, angles morts, stack déployée.', 'The AI battle plan for each industry: proven cases, blind spots, deployed stack.'), path: '/rapports.html',
+    desc: t("Les cas d'usage IA marketing prouvés de chaque secteur : déploiements sourcés, angles morts et stack réellement utilisée. Le plan de bataille IA par industrie.", 'Proven AI marketing use cases for every sector: sourced deployments, blind spots and the stack actually used. The AI battle plan by industry.'), path: '/rapports.html',
   });
 }
 

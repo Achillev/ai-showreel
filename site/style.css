@@ -67,6 +67,7 @@
 }
 
 * { box-sizing: border-box; }
+img { max-width: 100%; height: auto; } /* images fluides : ne debordent jamais du viewport mobile */
 html { -webkit-text-size-adjust: 100%; }
 body {
   margin: 0; background: var(--bg); color: var(--ink); font-family: var(--sans);
