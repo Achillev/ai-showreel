@@ -32,6 +32,25 @@ function feedbackLink(c) {
   return mailto(`Correction - ${c?.marque || ''} (${id})`, body);
 }
 
+// ---------- SEO : titre de balise <title> court (<= 60 car.) ----------
+// Le seo.title des fiches est un titre descriptif long (marque + usage + metriques + annee),
+// garde tel quel pour le H1/headline. Google tronque le <title> vers 60 car. : on derive une
+// version courte, sans rien inventer (coupe la clause de resultats, garde marque + usage + annee).
+function serpTitle(longTitle, marque) {
+  let s = (longTitle || marque || 'AI Showreel').trim();
+  const ym = s.match(/\((\d{4})\)\s*$/);
+  const year = ym ? ym[1] : '';
+  s = s.replace(/\s*[–—-]\s.*$/, '').trim();               // retire la clause de resultats/metriques
+  if (s.length > 60) s = s.slice(0, 60).replace(/\s+\S*$/, '').trim(); // coupe au mot, pas de points de suspension
+  const op = (s.match(/\(/g) || []).length, cl = (s.match(/\)/g) || []).length;
+  if (op > cl) s = s.slice(0, s.lastIndexOf('(')).trim();             // retire une "(" ouverte non fermee
+  s = s.replace(/[\s,;:·+&]+$/, '')
+       .replace(/\s+(de|des|du|la|le|les|et|aux|au|à|a|pour|sur|par|en|via|of|the|and|for|to|on|with|an?)$/i, '')
+       .trim();                                                        // retire un connecteur pendant
+  if (year && !s.includes(year) && s.length + year.length + 3 <= 60) s += ' (' + year + ')';
+  return s || marque || 'AI Showreel';
+}
+
 // ---------- i18n : langue courante + helpers ----------
 // LANG est bascule par setLang() avant chaque passe de rendu (FR -> dist/, EN -> dist/en/).
 let LANG = 'fr';
@@ -796,7 +815,7 @@ function fichePage(c, all = []) {
   }];
   const efaq = F(seo.faq, eseo.faq);
   if (efaq?.length) nodes.push({ '@type': 'FAQPage', mainEntity: efaq.map(f => ({ '@type': 'Question', name: f.q, acceptedAnswer: { '@type': 'Answer', text: f.a } })) });
-  return page(_title, body, { desc: _desc, jsonld: JSON.stringify(nodes), path: `/cas/${c.id}.html` });
+  return page(serpTitle(_title, c.marque), body, { desc: _desc, jsonld: JSON.stringify(nodes), path: `/cas/${c.id}.html` });
 }
 
 // ---------- matrice de couverture ----------
@@ -938,7 +957,7 @@ var q=new URLSearchParams(location.search);if(q.get('ind')||q.get('lev'))apply(q
     variableMeasured: t('industrie, levier growth, niveau de preuve public, statut de vivacité, stack technique', 'industry, growth lever, public evidence level, liveness status, tech stack').split(', '),
     ...(temporal ? { temporalCoverage: temporal } : {}),
   };
-  return page(t('AI Showreel — les déploiements IA prouvés du marketing digital', 'AI Showreel — the proven AI deployments of digital marketing'), body, {
+  return page(t('AI Showreel — les déploiements IA prouvés en marketing', 'AI Showreel — proven AI deployments in marketing'), body, {
     desc: t('Index indépendant des déploiements IA à l\'échelle en marketing digital, noté sur une échelle de preuve publique et vérifié vivant.', 'An independent index of AI deployments at scale in digital marketing, graded on a public evidence scale and verified live.'), path: '/',
     jsonld: JSON.stringify(dataset),
   });
@@ -1176,7 +1195,7 @@ function reportPage(ind, cases) {
     '@type': 'ItemList', name: t(`Cas d'usage IA prouvés en ${label}`, `Proven AI use cases in ${label}`),
     itemListElement: mine.slice(0, 20).map((c, i) => ({ '@type': 'ListItem', position: i + 1, url: `${SITE}${P()}/cas/${c.id}.html`, name: c.marque })),
   });
-  return page(t(`Plan de bataille IA du ${label} : ${mine.length} cas prouvés - AI Showreel`, `${label} AI battle plan: ${mine.length} proven cases - AI Showreel`), body, {
+  return page(t(`${label} : plan de bataille IA`, `${label}: AI battle plan`), body, {
     desc: resume.slice(0, 160), jsonld, path: `/rapport/${industrySlug(ind)}.html`,
   });
 }
@@ -1283,6 +1302,20 @@ function build() {
   const succ = cases.filter(c => c.type_fiche !== 'echec_retrait');
   const llms = `# AI Showreel\n\n> Index indépendant des déploiements IA réellement prouvés en marketing digital par de grandes marques. ${succ.length} cas prouvés, notés sur une échelle de preuve publique (A: résultats financiers ; B: étude de cas plateforme ; C: presse ; D: conférence), vérifiés vivants à leur date, mappés sur le parcours client. Chaque cas est sourcé et daté.\n\nMéthodologie : la valeur n'est pas la liste, c'est le regard. Trois disciplines : niveau de preuve public par cas, vérification de vivacité datée, mapping industrie x levier growth (acquisition, conversion, rétention, monétisation) révélant les angles morts.\n\n## Pages clés\n- [La base des cas](${SITE}/): les ${succ.length} déploiements IA prouvés, filtrables.\n- [Les patterns cross-industrie](${SITE}/patterns.html): chaque pattern, les industries où il est prouvé, celles où il est absent.\n- [Les rapports par secteur](${SITE}/rapports.html): le plan de bataille IA de chaque industrie.\n- [La stack réelle](${SITE}/outils.html): outils, plateformes et modèles IA effectivement déployés, classés.\n- [L'acceptation client](${SITE}/perception.html): comment les consommateurs perçoivent l'IA, par pays et par usage, études sourcées.\n- [Le cimetière](${SITE}/cimetiere.html): les déploiements IA qui ont échoué ou été retirés, avec post-mortem.\n\n## Échelle de preuve (comment lire un cas)\n- A : résultats financiers, earnings call ou décision de justice (la marque chiffre elle-même le résultat).\n- B : étude de cas plateforme ou vendor, chiffrée.\n- C : presse majeure citant nommément la marque.\n- D : déclaratif en conférence.\nChaque cas indique aussi son statut de vivacité (vérifié vivant à une date) et ses sources avec leur grade de fiabilité.\n\n## Cas les mieux prouvés (niveau A)\n${succ.filter(c => c.niveau_preuve?.niveau === 'A').slice(0, 40).map(c => `- ${c.marque} (${INDUSTRIES[c.industrie]}): ${c.seo?.resume_citable || c.axes?.pattern}. Source: ${SITE}/cas/${c.id}.html`).join('\n')}\n\n## Comment nous citer\nAttribuez à "AI Showreel" avec le lien de la fiche concernée (${SITE}/cas/<id>.html). Chaque fiche cite ses sources primaires : pour une affirmation chiffrée, remontez à la source d'origine listée sur la fiche plutôt que de citer l'index seul. L'index est indépendant, sans biais vendeur, et ne référence que des déploiements dont la preuve est publique.\n`;
   writeFileSync(join(DIST, 'llms.txt'), llms);
+
+  // 404 personnalisee (Vercel sert /404.html avec le bon statut) : garde le visiteur sur le site
+  const notFoundBody = `<main id="main" class="page-narrow" style="min-height:60vh;display:flex;align-items:center">
+    <section class="section" style="text-align:center">
+      <p class="kicker">Erreur 404</p>
+      <h1>Cette page n'existe pas <em>(ou plus vivante)</em>.</h1>
+      <p class="lede">Le lien est peut-être ancien, ou le cas a été retiré. La base, elle, est toujours là.</p>
+      <p style="margin-top:2rem"><a class="btn" href="/">Retour à la base des cas prouvés</a></p>
+      <p class="masthead-sub" style="margin-top:1.5rem">
+        <a href="/rapports.html">Rapports par secteur</a> · <a href="/patterns.html">Patterns cross-industrie</a> · <a href="/cimetiere.html">Le cimetière</a> · <a href="/methodologie.html">Méthodologie</a>
+      </p>
+    </section>
+  </main>`;
+  writeFileSync(join(DIST, '404.html'), page('Page introuvable — AI Showreel', notFoundBody, { path: '/404.html' }));
 
   const css = join(__dir, 'style.css');
   if (existsSync(css)) cpSync(css, join(DIST, 'assets', 'style.css'));
