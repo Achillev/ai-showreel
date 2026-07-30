@@ -283,6 +283,7 @@ const ORG_JSONLD = { '@type': 'Organization', '@id': SITE + '/#org', name: 'AI S
 const _NAV = [
   ['/', 'La base', 'The index'], ['/veille.html', 'Le radar', 'The radar'], ['/rapports.html', 'Les rapports', 'The reports'],
   ['/patterns.html', 'Les patterns', 'The patterns'], ['/outils.html', 'Les outils', 'The stack'],
+  ['/chiffres-cles.html', 'Chiffres clés', 'Key figures'],
   ['/perception.html', "L'acceptation", 'Acceptance'], ['/cimetiere.html', 'Le cimetière', 'The graveyard'],
 ];
 function page(title, body, { desc = '', jsonld = '', canonical = '', path = '' } = {}) {
@@ -982,6 +983,71 @@ function cimetierePage(cases) {
 }
 
 // ---------- page patterns : la carte cross-industrie ----------
+// Page "Chiffres cles" : les resultats IA marketing au plus haut niveau de preuve (A), groupes par levier growth.
+// Aimant a citation (GEO) : chaque fait est autonome, date, source, avec le lien fiche + la source primaire.
+function chiffresPage(cases) {
+  const succ = cases.filter(c => c.type_fiche !== 'echec_retrait');
+  const aCases = succ.filter(c => c.niveau_preuve?.niveau === 'A');
+  const industries = new Set(succ.map(c => c.industrie));
+  const echecs = cases.filter(c => c.type_fiche === 'echec_retrait');
+  const leverOrder = ['acquisition', 'activation_conversion', 'retention', 'monetisation'];
+
+  const factCard = (c) => {
+    const Lx = LANG === 'en' ? (c.i18n?.en || {}) : null;
+    const Fx = (fr, en) => (Lx && en != null) ? en : fr;
+    const eseo = Lx?.seo || {};
+    const claim = Fx(c.seo?.resume_citable, eseo.resume_citable) || Fx(c.axes?.pattern, Lx?.pattern) || '';
+    const src = (c.sources || []).find(s => s.fiabilite === 'T1_primaire') || (c.sources || [])[0];
+    const vd = c.dates?.verifie_le ? `<span class="sf-date">${t('vérifié', 'verified')} ${esc(c.dates.verifie_le)}</span>` : '';
+    return `<div class="stat-fact">
+      <div class="sf-head">${brandLogo(c)}<span class="sf-brand">${esc(c.marque)}</span><span class="sf-ind">${esc(INDUSTRIES[c.industrie] || '')}</span>${preuveBadge('A')}${vd}</div>
+      <p class="sf-claim">${esc(claim)}</p>
+      <p class="sf-links"><a href="${P()}/cas/${c.id}.html">${t('La fiche', 'The case')}</a>${src ? ` · <a href="${esc(src.url)}" target="_blank" rel="noopener">${t('Source primaire', 'Primary source')}</a>` : ''}</p>
+    </div>`;
+  };
+
+  const sections = leverOrder.map(lev => {
+    const list = aCases.filter(c => c.axes?.levier === lev)
+      .sort((a, b) => (b.dates?.verifie_le || '').localeCompare(a.dates?.verifie_le || ''));
+    if (!list.length) return '';
+    return `<section class="section">
+      <div class="section-head"><h2>${esc(LEVIERS[lev] || lev)}</h2><p>${list.length} ${t('résultats prouvés au niveau A (la marque chiffre elle-même : résultats financiers, earnings call, décision de justice).', 'results proven at level A (the brand quantifies its own: financial results, earnings call, court ruling).')}</p></div>
+      <div class="stat-grid">${list.map(factCard).join('')}</div>
+    </section>`;
+  }).join('');
+
+  const body = `
+  <section class="hero">
+    <p class="kicker">${t('Chiffres clés', 'Key figures')}</p>
+    <h1>${t('Les résultats IA marketing <em>prouvés</em>, chiffrés.', 'The <em>proven</em> AI marketing results, in numbers.')}</h1>
+    <p class="lede">${t(`${aCases.length} résultats au plus haut niveau de preuve (A : la marque chiffre elle-même en résultats financiers, earnings call ou décision de justice), groupés par levier de croissance. Chaque chiffre est daté, sourcé et vérifié vivant.`, `${aCases.length} results at the highest evidence level (A: the brand quantifies its own result in financial statements, earnings calls or court rulings), grouped by growth lever. Every figure is dated, sourced and verified live.`)}</p>
+  </section>
+  <div class="stat-band">
+    <div class="sb-item"><span class="sb-num">${succ.length}</span><span class="sb-lab">${t('cas prouvés', 'proven cases')}</span></div>
+    <div class="sb-item"><span class="sb-num">${aCases.length}</span><span class="sb-lab">${t('au niveau A', 'at level A')}</span></div>
+    <div class="sb-item"><span class="sb-num">${industries.size}</span><span class="sb-lab">${t('industries', 'industries')}</span></div>
+    <div class="sb-item"><span class="sb-num">${echecs.length}</span><span class="sb-lab">${t('retraits / échecs', 'pullbacks / failures')}</span></div>
+  </div>
+  ${sections}
+  <section class="section"><p class="pg-gap">${t('Les niveaux B, C et D (études plateforme, presse, conférence) sont dans', 'Levels B, C and D (platform studies, press, conference) are in')} <a href="${P()}/">${t('la base complète', 'the full index')}</a>. ${t('Faits citables machine-lisibles', 'Machine-readable citable facts')} : <a href="/llms-full.txt">llms-full.txt</a>.</p></section>`;
+
+  const jsonld = JSON.stringify({
+    '@context': 'https://schema.org', '@type': 'ItemList',
+    name: t('Chiffres clés des déploiements IA marketing prouvés', 'Key figures of proven AI marketing deployments'),
+    numberOfItems: aCases.length,
+    itemListElement: aCases.slice(0, 60).map((c, i) => ({ '@type': 'ListItem', position: i + 1, url: `${SITE}${P()}/cas/${c.id}.html`, name: c.marque })),
+  });
+
+  return page(
+    t('Chiffres clés : les résultats IA marketing prouvés', 'Key figures: proven AI marketing results'),
+    body,
+    {
+      desc: t(`${aCases.length} résultats IA marketing prouvés au plus haut niveau de preuve (résultats financiers, earnings call), datés et sourcés, par levier de croissance.`, `${aCases.length} AI marketing results proven at the highest evidence level (financial results, earnings calls), dated and sourced, by growth lever.`),
+      jsonld, path: '/chiffres-cles.html',
+    }
+  );
+}
+
 function patternsPage(cases) {
   const succ = cases.filter(c => c.type_fiche !== 'echec_retrait');
   const groups = new Map();
@@ -1264,6 +1330,7 @@ function build() {
     writeFileSync(join(out, 'veille.html'), veillePage(cases));
     writeFileSync(join(out, 'rapports.html'), reportsIndexPage(cases));
     writeFileSync(join(out, 'patterns.html'), patternsPage(cases));
+    writeFileSync(join(out, 'chiffres-cles.html'), chiffresPage(cases));
     writeFileSync(join(out, 'outils.html'), outilsPage(cases));
     writeFileSync(join(out, 'perception.html'), perceptionPage());
     writeFileSync(join(out, 'cimetiere.html'), cimetierePage(cases));
@@ -1280,7 +1347,7 @@ function build() {
   if (BILINGUAL) renderAll('en');
 
   // GEO/SEO : sitemap bilingue (alternates hreflang), robots, llms.txt
-  const staticUrls = ['/', '/veille.html', '/rapports.html', '/patterns.html', '/outils.html', '/perception.html', '/cimetiere.html', '/methodologie.html'];
+  const staticUrls = ['/', '/veille.html', '/rapports.html', '/patterns.html', '/outils.html', '/chiffres-cles.html', '/perception.html', '/cimetiere.html', '/methodologie.html'];
   const latest = cases.map(c => c.dates?.verifie_le).filter(Boolean).sort().pop() || '';
   const logical = [
     ...staticUrls.map(u => ({ u, d: latest, p: u === '/' ? '1.0' : '0.7' })),
@@ -1302,7 +1369,7 @@ function build() {
   writeFileSync(join(DIST, 'robots.txt'), robots);
 
   const succ = cases.filter(c => c.type_fiche !== 'echec_retrait');
-  const llms = `# AI Showreel\n\n> Index indépendant des déploiements IA réellement prouvés en marketing digital par de grandes marques. ${succ.length} cas prouvés, notés sur une échelle de preuve publique (A: résultats financiers ; B: étude de cas plateforme ; C: presse ; D: conférence), vérifiés vivants à leur date, mappés sur le parcours client. Chaque cas est sourcé et daté.\n\nMéthodologie : la valeur n'est pas la liste, c'est le regard. Trois disciplines : niveau de preuve public par cas, vérification de vivacité datée, mapping industrie x levier growth (acquisition, conversion, rétention, monétisation) révélant les angles morts.\n\nFaits citables complets (les ${succ.length} déploiements + les échecs, une ligne autonome + source, machine-lisible) : ${SITE}/llms-full.txt\n\n## Pages clés\n- [La base des cas](${SITE}/): les ${succ.length} déploiements IA prouvés, filtrables.\n- [Les patterns cross-industrie](${SITE}/patterns.html): chaque pattern, les industries où il est prouvé, celles où il est absent.\n- [Les rapports par secteur](${SITE}/rapports.html): le plan de bataille IA de chaque industrie.\n- [La stack réelle](${SITE}/outils.html): outils, plateformes et modèles IA effectivement déployés, classés.\n- [L'acceptation client](${SITE}/perception.html): comment les consommateurs perçoivent l'IA, par pays et par usage, études sourcées.\n- [Le cimetière](${SITE}/cimetiere.html): les déploiements IA qui ont échoué ou été retirés, avec post-mortem.\n\n## Échelle de preuve (comment lire un cas)\n- A : résultats financiers, earnings call ou décision de justice (la marque chiffre elle-même le résultat).\n- B : étude de cas plateforme ou vendor, chiffrée.\n- C : presse majeure citant nommément la marque.\n- D : déclaratif en conférence.\nChaque cas indique aussi son statut de vivacité (vérifié vivant à une date) et ses sources avec leur grade de fiabilité.\n\n## Cas les mieux prouvés (niveau A)\n${succ.filter(c => c.niveau_preuve?.niveau === 'A').slice(0, 40).map(c => `- ${c.marque} (${INDUSTRIES[c.industrie]}): ${c.seo?.resume_citable || c.axes?.pattern}. Source: ${SITE}/cas/${c.id}.html`).join('\n')}\n\n## Comment nous citer\nAttribuez à "AI Showreel" avec le lien de la fiche concernée (${SITE}/cas/<id>.html). Chaque fiche cite ses sources primaires : pour une affirmation chiffrée, remontez à la source d'origine listée sur la fiche plutôt que de citer l'index seul. L'index est indépendant, sans biais vendeur, et ne référence que des déploiements dont la preuve est publique.\n`;
+  const llms = `# AI Showreel\n\n> Index indépendant des déploiements IA réellement prouvés en marketing digital par de grandes marques. ${succ.length} cas prouvés, notés sur une échelle de preuve publique (A: résultats financiers ; B: étude de cas plateforme ; C: presse ; D: conférence), vérifiés vivants à leur date, mappés sur le parcours client. Chaque cas est sourcé et daté.\n\nMéthodologie : la valeur n'est pas la liste, c'est le regard. Trois disciplines : niveau de preuve public par cas, vérification de vivacité datée, mapping industrie x levier growth (acquisition, conversion, rétention, monétisation) révélant les angles morts.\n\nFaits citables complets (les ${succ.length} déploiements + les échecs, une ligne autonome + source, machine-lisible) : ${SITE}/llms-full.txt\n\n## Pages clés\n- [La base des cas](${SITE}/): les ${succ.length} déploiements IA prouvés, filtrables.\n- [Les chiffres clés](${SITE}/chiffres-cles.html): les résultats prouvés au plus haut niveau de preuve (A: la marque chiffre elle-même), groupés par levier de croissance, datés et sourcés.\n- [Les patterns cross-industrie](${SITE}/patterns.html): chaque pattern, les industries où il est prouvé, celles où il est absent.\n- [Les rapports par secteur](${SITE}/rapports.html): le plan de bataille IA de chaque industrie.\n- [La stack réelle](${SITE}/outils.html): outils, plateformes et modèles IA effectivement déployés, classés.\n- [L'acceptation client](${SITE}/perception.html): comment les consommateurs perçoivent l'IA, par pays et par usage, études sourcées.\n- [Le cimetière](${SITE}/cimetiere.html): les déploiements IA qui ont échoué ou été retirés, avec post-mortem.\n\n## Échelle de preuve (comment lire un cas)\n- A : résultats financiers, earnings call ou décision de justice (la marque chiffre elle-même le résultat).\n- B : étude de cas plateforme ou vendor, chiffrée.\n- C : presse majeure citant nommément la marque.\n- D : déclaratif en conférence.\nChaque cas indique aussi son statut de vivacité (vérifié vivant à une date) et ses sources avec leur grade de fiabilité.\n\n## Cas les mieux prouvés (niveau A)\n${succ.filter(c => c.niveau_preuve?.niveau === 'A').slice(0, 40).map(c => `- ${c.marque} (${INDUSTRIES[c.industrie]}): ${c.seo?.resume_citable || c.axes?.pattern}. Source: ${SITE}/cas/${c.id}.html`).join('\n')}\n\n## Comment nous citer\nAttribuez à "AI Showreel" avec le lien de la fiche concernée (${SITE}/cas/<id>.html). Chaque fiche cite ses sources primaires : pour une affirmation chiffrée, remontez à la source d'origine listée sur la fiche plutôt que de citer l'index seul. L'index est indépendant, sans biais vendeur, et ne référence que des déploiements dont la preuve est publique.\n`;
   writeFileSync(join(DIST, 'llms.txt'), llms);
 
   // llms-full.txt : la surface citable COMPLETE (tous les faits, une ligne autonome + source) pour l'ingestion LLM.
