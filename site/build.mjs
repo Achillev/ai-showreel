@@ -797,12 +797,31 @@ function fichePage(c, all = []) {
   const _kw = [INDUSTRIES[c.industrie], LEVIERS[a.levier], FAMILLES[a.famille], F(a.pattern, L?.pattern), ...(c.stack_technique || []).map(tk => tk.nom)].filter(Boolean).join(', ');
   const _title = F(seo.title, eseo.title) || `${c.marque} - AI Showreel`;
   const _desc = F(seo.meta_description, eseo.meta_description) || resumeCitable || '';
+  // GEO : chaque resultat chiffre balise individuellement (extractible par moteurs/LLM), relie a sa source.
+  // metrique traduite en EN ; valeur, citation_exacte et source restent l'original (jamais reinterpretes).
+  const srcByRef = Object.fromEntries((c.sources || []).map(s => [s.ref, s]));
+  const eRes = L?.resultats || [];
+  const resultsSD = (c.resultats || []).map((r, i) => ({
+    metrique: (L && eRes[i]?.metrique != null) ? eRes[i].metrique : r.metrique,
+    valeur: r.valeur, cite: r.citation_exacte, src: srcByRef[r.source_ref],
+  })).filter(r => r.metrique && r.valeur);
+  const measured = resultsSD.map(r => ({
+    '@type': 'PropertyValue', name: r.metrique, value: r.valeur,
+    ...(r.cite ? { description: r.cite } : {}),
+    ...(r.src?.url ? { url: r.src.url } : {}),
+  }));
+  const claimNodes = resultsSD.map((r, i) => ({
+    '@type': 'Claim', '@id': _url + '#claim-' + (i + 1),
+    text: `${r.metrique} : ${r.valeur}`,
+    about: { '@type': 'Thing', name: c.marque },
+    ...(r.src ? { appearance: { '@type': 'CreativeWork', name: r.src.titre, url: r.src.url, ...(r.src.date_publication ? { datePublished: r.src.date_publication } : {}) } } : {}),
+  }));
   const nodes = [{
     '@type': 'Article',
     '@id': _url + '#article',
     headline: F(seo.title, eseo.title) || c.marque,
     description: _desc,
-    about: { '@type': 'Thing', name: c.marque },
+    about: { '@type': 'Thing', name: c.marque, ...(measured.length ? { additionalProperty: measured } : {}) },
     keywords: _kw, inLanguage: LANG,
     datePublished: c.dates?.verifie_le, dateModified: c.dates?.verifie_le,
     mainEntityOfPage: _url, isPartOf: { '@id': SITE + '/#site' },
@@ -818,6 +837,7 @@ function fichePage(c, all = []) {
   }];
   const efaq = F(seo.faq, eseo.faq);
   if (efaq?.length) nodes.push({ '@type': 'FAQPage', mainEntity: efaq.map(f => ({ '@type': 'Question', name: f.q, acceptedAnswer: { '@type': 'Answer', text: f.a } })) });
+  if (claimNodes.length) { nodes[0].mentions = claimNodes.map(cl => ({ '@id': cl['@id'] })); nodes.push(...claimNodes); }
   return page(serpTitle(_title, c.marque), body, { desc: _desc, jsonld: JSON.stringify(nodes), path: `/cas/${c.id}.html` });
 }
 
