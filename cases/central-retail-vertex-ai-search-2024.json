@@ -1,0 +1,295 @@
+{
+  "id": "central-retail-vertex-ai-search-2024",
+  "type_fiche": "succes",
+  "marque": "Central Retail",
+  "groupe": "Central Group",
+  "industrie": "retail_ecom",
+  "marches_deploiement": [
+    "Thailande"
+  ],
+  "transposable_ue": {
+    "flag": "oui_avec_adaptations",
+    "note": "Vertex AI Search et Gemini sont disponibles en UE. La recherche visuelle traite des images uploadees par le client: en UE, base legale RGPD a cadrer et information sur le traitement. L'enrichissement de catalogue et l'assistant d'achat se transposent, le grounding sur le catalogue local et les regles de contenu sont a refaire par marche."
+  },
+  "metier": "e-commerce et merchandising",
+  "marque_linkedin": "https://www.linkedin.com/company/central-retail-corporation/",
+  "intervenants": [
+    {
+      "nom": "Max Pakapol",
+      "role": "Senior Vice President and Head of Digital Office, Central Group",
+      "source_ref": "S1"
+    }
+  ],
+  "axes": {
+    "levier": "activation_conversion",
+    "touchpoints": [
+      "compte officiel LINE Tops Thailand",
+      "site du grand magasin",
+      "service de personal shopper",
+      "Tops Online"
+    ],
+    "etape_parcours": "consideration",
+    "famille": "conversation",
+    "pattern": "assistant d'achat genAI et recherche visuelle produit",
+    "type_ia": [
+      "grand modele de langage",
+      "recherche semantique et visuelle",
+      "generation de texte"
+    ],
+    "plateforme_stack": [
+      "Gemini 1.5 Flash",
+      "Vertex AI",
+      "Vertex AI Search (for retail)"
+    ],
+    "objectif_metrique": [
+      "taux de conversion",
+      "temps de recherche produit",
+      "temps de production des fiches produit"
+    ]
+  },
+  "implementation": "plateforme",
+  "stack_technique": [
+    {
+      "nom": "Gemini 1.5 Flash",
+      "categorie": "llm",
+      "detail": "Modele qui alimente Chefbot: il mappe les ingredients d'une recette a plus de 50 000 SKU Tops pour generer une liste de courses pour le personal shopper.",
+      "url": "https://cloud.google.com/vertex-ai"
+    },
+    {
+      "nom": "Vertex AI Search",
+      "categorie": "plateforme",
+      "detail": "Recherche visuelle: analyse les images uploadees par le client et les met en correspondance avec le catalogue en temps reel; sert aussi de couche de grounding pour Chefbot.",
+      "url": "https://cloud.google.com/enterprise-search"
+    },
+    {
+      "nom": "Vertex AI (LLM d'enrichissement de catalogue)",
+      "categorie": "plateforme",
+      "detail": "Genere des fiches produit optimisees SEO en anglais et en thai a partir des descriptions existantes, en extrayant nom, marque et prix.",
+      "url": "https://cloud.google.com/vertex-ai"
+    }
+  ],
+  "objectif_business": "Aider les clients a trouver et acheter plus vite en ligne, liberer les personal shoppers pour le cross-sell et l'up-sell, et industrialiser la production des fiches produit sur un catalogue qui grossit de 400 nouveaux produits par jour.",
+  "points_cles": [
+    "Central Retail (groupe Central) a deploye recherche visuelle Vertex AI Search, assistant Chefbot sous Gemini 1.5 Flash et enrichissement de catalogue.",
+    "Recherche visuelle: temps de recherche des categories prix/promo/stock reduit de 94%, conversion en hausse de 10%.",
+    "Fiches produit generees jusqu'a 50% plus vite; Chefbot mappe les recettes a plus de 50 000 SKU Tops.",
+    "Preuve B: etude de cas Google Cloud chiffree, corroboree par le communique Google Cloud; deploiement lance en octobre 2024, statut confirme."
+  ],
+  "description": "Central Retail, filiale du groupe thailandais Central, exploite Tops, la plus grande chaine de supermarches de Thailande, et un service de personal shoppers qui font les courses pour les clients en ligne. Le groupe a deploye trois usages Google Cloud. Chefbot, lance le 9 octobre 2024 sur le compte officiel LINE de Tops Thailand, est un assistant genAI sous Gemini 1.5 Flash: il genere des recettes achetables selon les preferences du client, puis mappe leurs ingredients a plus de 50 000 SKU Tops pour construire une liste de courses que le personal shopper execute. Sur le site du grand magasin, une recherche visuelle sous Vertex AI Search analyse une image uploadee par le client et la met en correspondance avec le catalogue en temps reel, les resultats etant partages avec le personal shopper. Enfin, un outil d'enrichissement de catalogue sous Vertex AI genere des fiches produit optimisees SEO en anglais et en thai, la ou les merchandisers ecrivaient a la main pour 400 nouveaux produits par jour.",
+  "resultats": [
+    {
+      "metrique": "Hausse du taux de conversion avec la recherche visuelle",
+      "valeur": "+10%",
+      "citation_exacte": "conversion rate has been uplifted by 10% with the help of the tool",
+      "source_ref": "S1"
+    },
+    {
+      "metrique": "Reduction du temps de recherche (categories prix/promo/stock)",
+      "valeur": "-94%",
+      "citation_exacte": "from 32 minutes to between one to two minutes, a 94% reduction",
+      "source_ref": "S1"
+    },
+    {
+      "metrique": "Gain de vitesse sur la production des fiches produit",
+      "valeur": "jusqu'a 50%",
+      "citation_exacte": "consistent product descriptions up to 50% faster",
+      "source_ref": "S1"
+    },
+    {
+      "metrique": "SKU Tops mappes par Chefbot pour la liste de courses",
+      "valeur": "50 000+",
+      "citation_exacte": "over 50,000 Tops-specific product stock-keeping units (SKUs)",
+      "source_ref": "S1"
+    }
+  ],
+  "niveau_preuve": {
+    "niveau": "B",
+    "justification": "Etude de cas client Google Cloud chiffree (vendor, T2) avec conversion +10%, temps de recherche -94% et fiches produit jusqu'a 50% plus vite, corroboree par le communique Google Cloud Press Corner (T2) qui documente la stack Gemini 1.5 Flash et Vertex AI Search. Les metriques mesurent les outils IA eux-memes. Pas de source de resultats financiers, donc B et non A."
+  },
+  "dates": {
+    "lancement": "2024-10",
+    "derniere_confirmation_activite": "2025",
+    "verifie_le": "2026-08-16",
+    "revoir_apres": "2027-02-16"
+  },
+  "statut_vivant": {
+    "statut": "confirme",
+    "note": "Chefbot lance en pilote au Tops Food Hall de Central Chidlom en decembre 2024 avec un plan d'extension a tous les Tops du pays. Etude de cas Google Cloud publiant des resultats chiffres posterieurs, aucun signal de retrait."
+  },
+  "sources": [
+    {
+      "ref": "S1",
+      "type": "customer_story_plateforme",
+      "fiabilite": "T2_officiel_interesse",
+      "titre": "Central Group: Pioneering the future of retail with AI",
+      "url": "https://cloud.google.com/customers/central-group",
+      "date_publication": "2025",
+      "consulte_le": "2026-08-16"
+    },
+    {
+      "ref": "S2",
+      "type": "presse",
+      "fiabilite": "T2_officiel_interesse",
+      "titre": "Central Food Retail Group Debuts Generative AI-Powered 'Tops Chef Bot' with Central Retail Digital and Google Cloud",
+      "url": "https://www.googlecloudpresscorner.com/2024-12-04-Central-Food-Retail-Group-Debuts-Generative-AI-Powered-Tops-Chef-Bot-with-Central-Retail-Digital-and-Google-Cloud",
+      "date_publication": "2024-12-04",
+      "consulte_le": "2026-08-16"
+    },
+    {
+      "ref": "S3",
+      "type": "blog_officiel",
+      "fiabilite": "T1_primaire",
+      "titre": "First in Thailand! Central Food Retail Group collaborates with Central Retail Digital and Google Cloud to debut 'Tops Chef Bot'",
+      "url": "https://www.centralretail.com/en/newsroom/news-and-activities/902/first-in-thailand-central-food-retail-group-collaborates-with-central-retail-digital-and-google-cloud-to-debut-tops-chef-bot-powered-by-generative-ai-transforming-retail-with-next-gen-omni-channel-technology",
+      "date_publication": "2024-12",
+      "consulte_le": "2026-08-16"
+    }
+  ],
+  "fonctionnement_operationnel": {
+    "cadence": "Temps reel pour Chefbot et la recherche visuelle; enrichissement de catalogue en continu au rythme des nouveaux produits",
+    "opere_par": "Central Retail Digital, l'entite digitale du groupe, avec l'appui de Google Cloud",
+    "signal_pilote": "La correspondance entre la requete client (texte, recette ou image) et le catalogue Tops (inventaire, SKU, stock, promo). Si le catalogue et le stock ne sont pas a jour dans la source de grounding, les listes de courses et la recherche visuelle renvoient de mauvais produits.",
+    "etapes": [
+      {
+        "etape": "Demande client",
+        "detail": "Le client demande une recette a Chefbot sur LINE, ou uploade une image produit sur le site du grand magasin.",
+        "acteur": "client"
+      },
+      {
+        "etape": "Mise en correspondance",
+        "detail": "Chefbot (Gemini 1.5 Flash) mappe les ingredients aux 50 000+ SKU Tops; la recherche visuelle (Vertex AI Search) apparie l'image au catalogue en temps reel.",
+        "acteur": "IA"
+      },
+      {
+        "etape": "Execution par le personal shopper",
+        "detail": "La liste de courses ou les resultats de recherche sont transmis au personal shopper, qui selectionne les produits et conseille le client.",
+        "acteur": "humain"
+      },
+      {
+        "etape": "Enrichissement du catalogue",
+        "detail": "L'outil sous Vertex AI genere les fiches produit optimisees SEO en anglais et en thai a partir des descriptions existantes, selon les regles de contenu Central Retail.",
+        "acteur": "IA"
+      }
+    ]
+  },
+  "schema_flow": {
+    "statut": "documente",
+    "noeuds": [
+      {
+        "id": "client",
+        "role_generique": "site_app",
+        "label": "Client (LINE / site)",
+        "outil_documente": "Compte LINE Tops Thailand, site du grand magasin"
+      },
+      {
+        "id": "chefbot",
+        "role_generique": "modele_ia",
+        "label": "Chefbot (recettes -> liste de courses)",
+        "outil_documente": "Gemini 1.5 Flash"
+      },
+      {
+        "id": "search",
+        "role_generique": "modele_ia",
+        "label": "Recherche visuelle produit",
+        "outil_documente": "Vertex AI Search"
+      },
+      {
+        "id": "catalog",
+        "role_generique": "data_source",
+        "label": "Catalogue Tops (50 000+ SKU, stock, promo, recettes)"
+      },
+      {
+        "id": "shopper",
+        "role_generique": "humain",
+        "label": "Personal shopper"
+      }
+    ],
+    "liens": [
+      [
+        "client",
+        "chefbot"
+      ],
+      [
+        "chefbot",
+        "catalog"
+      ],
+      [
+        "catalog",
+        "chefbot"
+      ],
+      [
+        "client",
+        "search"
+      ],
+      [
+        "search",
+        "catalog"
+      ],
+      [
+        "chefbot",
+        "shopper",
+        "liste de courses"
+      ],
+      [
+        "search",
+        "shopper",
+        "resultats produit"
+      ]
+    ]
+  },
+  "replication": {
+    "statut_epistemique": "infere",
+    "prerequis_data": [
+      "Catalogue produit structure avec SKU, stock et promotions a jour",
+      "Recettes ou contenu editorial a mapper aux produits pour l'assistant d'achat",
+      "Descriptions produit existantes servant de base a l'enrichissement"
+    ],
+    "prerequis_orga": [
+      "Regles de contenu produit claires (langues, ton, SEO)",
+      "Articulation entre l'assistant IA et un service humain (personal shopper) pour l'execution",
+      "Canal client existant a fort trafic (messagerie, site) pour brancher l'assistant"
+    ],
+    "stack_possible": [
+      "LLM manage pour l'assistant et l'enrichissement de fiches",
+      "Moteur de recherche semantique et visuelle grounde sur le catalogue",
+      "Connexion temps reel a l'inventaire et au stock"
+    ],
+    "premiere_etape": "Choisir un canal client a fort trafic et grounder un assistant de recherche sur le catalogue en temps reel avant d'ajouter la generation de recettes ou de fiches.",
+    "playbook": [
+      {
+        "action": "Structurer le catalogue (SKU, stock, promo) et l'exposer a une couche de recherche semantique.",
+        "livrable": "Recherche produit grounded sur le catalogue en temps reel."
+      },
+      {
+        "action": "Ajouter la recherche visuelle: apparier une image uploadee au catalogue et remonter les resultats au vendeur ou au client.",
+        "livrable": "Recherche par image en production sur un canal."
+      },
+      {
+        "action": "Brancher un assistant d'achat qui traduit une intention (recette, besoin) en liste de produits mappes aux SKU.",
+        "livrable": "Assistant qui genere des listes de courses executables."
+      },
+      {
+        "action": "Industrialiser l'enrichissement des fiches produit multilingue et SEO a partir des descriptions existantes.",
+        "livrable": "Pipeline de generation de fiches produit a l'echelle."
+      }
+    ],
+    "equipe": "Equipe digitale retail (product, data) avec administration d'une plateforme de recherche et d'un LLM manage, et coordination avec le merchandising et le service personal shopper."
+  },
+  "seo": {
+    "slug": "central-retail-vertex-ai-search-2024",
+    "title": "Central Retail : recherche visuelle Vertex AI et Chefbot Gemini - conversion +10% (2024)",
+    "meta_description": "Central Retail (groupe Central) a deploye recherche visuelle Vertex AI Search, l'assistant Chefbot sous Gemini 1.5 Flash et l'enrichissement de catalogue. Conversion +10%, temps de recherche -94%.",
+    "resume_citable": "Central Retail (groupe Central, Thailande) a deploye une recherche visuelle Vertex AI Search et l'assistant Chefbot sous Gemini 1.5 Flash, obtenant une hausse de 10% du taux de conversion, une reduction de 94% du temps de recherche et des fiches produit generees jusqu'a 50% plus vite.",
+    "faq": [
+      {
+        "q": "Quels outils IA Central Retail a-t-il deployes ?",
+        "a": "Une recherche visuelle sous Vertex AI Search, un assistant d'achat Chefbot sous Gemini 1.5 Flash, et un outil d'enrichissement de catalogue sous Vertex AI pour les fiches produit."
+      },
+      {
+        "q": "Quels resultats sont documentes ?",
+        "a": "Un taux de conversion en hausse de 10% avec la recherche visuelle, un temps de recherche des categories prix/promo/stock reduit de 94% (de 32 minutes a une ou deux minutes) et des fiches produit generees jusqu'a 50% plus vite."
+      }
+    ]
+  },
+  "logo_domain": "centralretail.com"
+}

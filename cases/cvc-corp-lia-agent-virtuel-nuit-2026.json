@@ -1,0 +1,313 @@
+{
+  "id": "cvc-corp-lia-agent-virtuel-nuit-2026",
+  "type_fiche": "succes",
+  "marque": "CVC Corp",
+  "groupe": "CVC Brasil Operadora e Agencia de Viagens S.A.",
+  "industrie": "voyage_hospitality",
+  "marches_deploiement": [
+    "Bresil"
+  ],
+  "transposable_ue": {
+    "flag": "oui_avec_adaptations",
+    "note": "Le pattern se transpose a tout reseau de points de vente physiques dont les horaires d'ouverture bornent la prise de contact : agences de voyage, concessions automobiles, agences immobilieres, courtiers. Trois contraintes en Europe. L'AI Act impose de dire au client qu'il parle a une machine, ce qui est d'autant plus sensible que la conversation a lieu la nuit et debouche sur un rappel commercial. Le RGPD encadre la qualification de prospect : les elements collectes en conversation (projet, budget, dates, composition du foyer) sont des donnees personnelles, et leur transmission a un conseiller doit reposer sur une base legale et une information explicite. Enfin la prospection commerciale qui suit le passage de relais est soumise aux regles nationales de consentement."
+  },
+  "metier": "distribution de voyage / generation et qualification de leads en reseau d'agences",
+  "logo_domain": "cvc.com.br",
+  "intervenants": [
+    {
+      "nom": "Fabio Mader",
+      "role": "Chief Executive Officer, CVC Corp",
+      "source_ref": "S1"
+    },
+    {
+      "nom": "Felipe Gomes",
+      "role": "Chief Financial Officer and Investor Relations Officer, CVC Corp",
+      "source_ref": "S1"
+    }
+  ],
+  "axes": {
+    "levier": "activation_conversion",
+    "touchpoints": [
+      "agent conversationnel Lia",
+      "canaux digitaux de CVC hors horaires d'ouverture",
+      "reseau d'agences physiques",
+      "conseillers de vente en agence"
+    ],
+    "etape_parcours": "consideration et achat",
+    "famille": "conversation",
+    "pattern": "agent conversationnel qui couvre les heures de fermeture du reseau physique, qualifie les prospects et les transmet aux vendeurs a l'ouverture",
+    "type_ia": [
+      "agent conversationnel (LLM)",
+      "qualification de prospect"
+    ],
+    "plateforme_stack": [
+      "custom/in-house",
+      "nouvelle plateforme de vente concue autour de l'IA"
+    ],
+    "objectif_metrique": [
+      "volume d'interactions avec l'agent",
+      "taux d'engagement des clients passes par l'agent",
+      "taux de conversion en agence"
+    ]
+  },
+  "implementation": "custom",
+  "stack_technique": [
+    {
+      "nom": "Lia",
+      "categorie": "outil",
+      "detail": "Agent virtuel client de CVC Corp, en production depuis le debut de l'annee 2026. Il dialogue avec les clients pendant que les agences sont fermees, qualifie les demandes et prepare le travail des conseillers pour la reouverture."
+    },
+    {
+      "nom": "Nouvelle plateforme de vente",
+      "categorie": "plateforme",
+      "detail": "Plateforme de vente decrite par la direction comme concue selon une logique AI first, dans laquelle Lia est destinee a prendre en charge la relation client et la qualification des prospects."
+    }
+  ],
+  "objectif_business": "Recuperer la demande qui se manifeste quand le reseau physique est ferme. CVC Corp vend le voyage par un reseau d'agences dont la valeur tient au conseiller, mais dont les horaires laissent partir toute intention exprimee le soir ou la nuit. Lia occupe cette plage : elle repond, comprend le projet, qualifie le prospect, et le conseiller retrouve le matin un dossier deja prepare plutot qu'un formulaire froid. Le pari commercial est que la conversion en agence monte parce que le client a deja avance, pas parce que le vendeur travaille plus vite.",
+  "points_cles": [
+    "Lia est l'agent virtuel de CVC Corp qui dialogue avec les clients quand les agences sont fermees.",
+    "1,3 million d'interactions entre Lia et les clients sur le dernier mois.",
+    "50% des clients ayant interagi avec Lia ont ensuite echange avec un conseiller en agence.",
+    "La direction chiffre a 150% la hausse de conversion depuis la mise en service de Lia."
+  ],
+  "description": "CVC Corp est le principal reseau de distribution de voyage du Bresil, adosse a un maillage d'agences physiques. Depuis le debut de l'annee 2026, la societe a mis en service Lia, un agent virtuel qui prend la main sur les canaux clients quand les points de vente sont fermes, soit approximativement de 22 heures a 10 heures selon la description faite par la direction en earnings call. Lia dialogue avec le client, comprend le projet de voyage, qualifie le prospect, et transmet ce travail aux conseillers a la reouverture. Le mecanisme n'est donc pas une vente automatisee de bout en bout : c'est un relais nocturne dont la sortie est un rendez-vous commercial mieux prepare. Les chiffres donnes lors de la publication des resultats du deuxieme trimestre 2026, le 13 aout 2026, portent sur le dernier mois ecoule : 1,3 million d'interactions entre Lia et les clients, et un engagement de 50%, la direction precisant que la moitie des clients ayant interagi avec Lia ont ensuite echange avec un conseiller en agence. Le dirigeant affirme par ailleurs que la conversion a progresse de 150% par rapport a la periode anterieure a Lia. Le contexte financier du trimestre est difficile par ailleurs : le chiffre d'affaires net recule de 6,5% a 319,5 millions de reais et la perte nette ajustee se creuse a 51,3 millions de reais, sous l'effet notamment de la hausse des tarifs aeriens. Ce que le cas ne dit pas : la base de comparaison exacte du chiffre de conversion, le perimetre des canaux couverts par Lia, et la part du reseau concernee.",
+  "resultats": [
+    {
+      "metrique": "Volume d'interactions entre l'agent virtuel Lia et les clients sur le dernier mois",
+      "valeur": "1,3 M d'interactions",
+      "citation_exacte": "Last month, we had 1.3 million interactions between Lia and our customers.",
+      "source_ref": "S1"
+    },
+    {
+      "metrique": "Part des clients ayant interagi avec Lia qui echangent ensuite avec un conseiller en agence",
+      "valeur": "50%",
+      "citation_exacte": "It means that 50% of the customers who interacted with Lia also engaged with a sales consultant at the store.",
+      "source_ref": "S1"
+    },
+    {
+      "metrique": "Progression de la conversion depuis la mise en service de Lia, selon la direction",
+      "valeur": "+150%",
+      "citation_exacte": "With that, our conversion has grown 150% compared to the time before we had Lia.",
+      "source_ref": "S1"
+    },
+    {
+      "metrique": "Plage horaire couverte par l'agent, quand le reseau physique est ferme",
+      "valeur": "nuit, agences fermees",
+      "citation_exacte": "This AI virtual agent relates with our customers while the stores are closed.",
+      "source_ref": "S1"
+    }
+  ],
+  "niveau_preuve": {
+    "niveau": "B",
+    "justification": "Les chiffres sont ceux donnes par la direction de CVC Corp lors de la publication des resultats du deuxieme trimestre 2026, le 13 aout 2026, donc un evenement de niveau A par nature. Le niveau retenu est B parce que la seule source atteinte portant les declarations sur Lia est une transcription secondaire de l'earnings call (Investing.com), le document primaire de la societe n'ayant pas ete obtenu a la collecte. Les chiffres mesurent bien le dispositif lui-meme (interactions avec l'agent, engagement des clients passes par l'agent, conversion avant et apres sa mise en service) et non le contexte d'entreprise : les resultats financiers du trimestre, en recul, sont cites comme contexte et ne sont attribues a l'IA par aucune source, ni en bien ni en mal. Reserve honnete sur le chiffre le plus spectaculaire : la hausse de conversion de 150% est une affirmation de dirigeant sans base de comparaison publiee ni methode de mesure, elle est restituee comme telle et non comme un resultat mesure contradictoirement."
+  },
+  "dates": {
+    "lancement": "Debut 2026, selon la direction lors de l'earnings call du deuxieme trimestre 2026",
+    "derniere_confirmation_activite": "2026-08",
+    "verifie_le": "2026-08-15",
+    "revoir_apres": "2027-02-15"
+  },
+  "statut_vivant": {
+    "statut": "confirme",
+    "note": "Dispositif decrit au present, avec des chiffres portant sur le mois precedent, lors de la publication des resultats du deuxieme trimestre 2026 le 13 aout 2026. La direction annonce en outre une nouvelle plateforme de vente construite autour de l'IA dans laquelle Lia tient un role central, ce qui indique une trajectoire d'extension et non de retrait."
+  },
+  "sources": [
+    {
+      "ref": "S1",
+      "type": "earnings_call",
+      "fiabilite": "T4_secondaire",
+      "titre": "Earnings call transcript: CVC Corp posts mixed Q2 2026 as July sales improve",
+      "url": "https://m.investing.com/news/transcripts/earnings-call-transcript-cvc-corp-posts-mixed-q2-2026-as-july-sales-improve-93CH-4858437",
+      "date_publication": "2026-08-13",
+      "consulte_le": "2026-08-15"
+    },
+    {
+      "ref": "S2",
+      "type": "presse",
+      "fiabilite": "T3_presse_etablie",
+      "titre": "CVC (CVCB3): prejuizo liquido ajustado sobe mais de 3 vezes e vai a R$ 51,3 mi no 2T",
+      "url": "https://www.infomoney.com.br/mercados/cvc-cvcb3-resultados-segundo-trimestre-2026/",
+      "date_publication": "2026-08-12",
+      "consulte_le": "2026-08-15"
+    },
+    {
+      "ref": "S3",
+      "type": "document_officiel_sec",
+      "fiabilite": "T1_primaire",
+      "titre": "CVC Corp, centre de resultats (relations investisseurs)",
+      "url": "https://www.cvccorp.com.br/en/ir/results-center/",
+      "date_publication": "2026-08",
+      "consulte_le": "2026-08-15"
+    }
+  ],
+  "fonctionnement_operationnel": {
+    "cadence": "Temps reel sur la plage de fermeture du reseau, avec passage de relais aux conseillers a l'ouverture des agences.",
+    "opere_par": "Les equipes digitales de CVC Corp pour l'agent, le reseau d'agences et ses conseillers pour la reprise du dossier.",
+    "signal_pilote": "La qualite de la qualification produite pendant la nuit. Si l'agent transmet un dossier incomplet ou mal compris, le conseiller repart de zero le matin et le gain disparait. La disponibilite d'un conseiller a la reouverture pour traiter le flux qualifie conditionne aussi tout le reste.",
+    "etapes": [
+      {
+        "etape": "Prise de contact hors horaires",
+        "detail": "Le client sollicite CVC quand les agences sont fermees et entre en conversation avec Lia.",
+        "acteur": "client"
+      },
+      {
+        "etape": "Qualification du projet",
+        "detail": "Lia dialogue pour cerner le projet de voyage et qualifier le prospect.",
+        "acteur": "IA"
+      },
+      {
+        "etape": "Constitution du dossier",
+        "detail": "Les elements collectes sont mis en forme et rattaches au client pour la reprise en agence.",
+        "acteur": "IA"
+      },
+      {
+        "etape": "Passage de relais",
+        "detail": "A l'ouverture, le conseiller reprend le dossier deja qualifie plutot qu'un contact froid.",
+        "acteur": "conseiller en agence"
+      },
+      {
+        "etape": "Conversion en agence",
+        "detail": "Le conseiller conclut la vente ; l'engagement post-Lia est suivi comme metrique du dispositif.",
+        "acteur": "conseiller en agence"
+      }
+    ]
+  },
+  "schema_flow": {
+    "statut": "approche_type",
+    "noeuds": [
+      {
+        "id": "client",
+        "role_generique": "humain",
+        "label": "Client sollicitant CVC hors horaires"
+      },
+      {
+        "id": "lia",
+        "role_generique": "canal_conversationnel",
+        "label": "Lia, agent virtuel client",
+        "outil_documente": "Lia"
+      },
+      {
+        "id": "plateforme",
+        "role_generique": "site_app",
+        "label": "Plateforme de vente CVC"
+      },
+      {
+        "id": "crm",
+        "role_generique": "crm",
+        "label": "Dossier prospect qualifie"
+      },
+      {
+        "id": "conseiller",
+        "role_generique": "humain",
+        "label": "Conseiller de vente en agence"
+      },
+      {
+        "id": "mesure",
+        "role_generique": "data_source",
+        "label": "Suivi engagement et conversion"
+      }
+    ],
+    "liens": [
+      [
+        "client",
+        "lia",
+        "demande exprimee la nuit"
+      ],
+      [
+        "lia",
+        "crm",
+        "prospect qualifie"
+      ],
+      [
+        "plateforme",
+        "lia",
+        "offre et disponibilites"
+      ],
+      [
+        "crm",
+        "conseiller",
+        "dossier repris a l'ouverture"
+      ],
+      [
+        "conseiller",
+        "client",
+        "vente en agence"
+      ],
+      [
+        "conseiller",
+        "mesure",
+        "engagement et conversion"
+      ],
+      [
+        "mesure",
+        "lia",
+        "boucle de qualification"
+      ]
+    ]
+  },
+  "replication": {
+    "statut_epistemique": "infere",
+    "prerequis_data": [
+      "Un referentiel d'offre interrogeable en conversation (destinations, disponibilites, conditions)",
+      "Un rattachement fiable entre la conversation nocturne et le dossier client repris en agence",
+      "Un historique de ventes pour savoir ce qui constitue un prospect reellement qualifie",
+      "Une mesure distinguant les clients passes par l'agent de ceux qui ne le sont pas"
+    ],
+    "prerequis_orga": [
+      "Un reseau physique dont les horaires laissent une plage de demande non traitee",
+      "Un accord du reseau sur le fait que l'agent prepare la vente sans la prendre",
+      "Une capacite de traitement a la reouverture, faute de quoi le flux qualifie se perime",
+      "Une information claire au client sur le fait qu'il dialogue avec une machine"
+    ],
+    "stack_possible": [
+      "Agent conversationnel branche sur le referentiel d'offre",
+      "Qualification structuree du besoin et remontee dans l'outil de gestion commerciale",
+      "Routage du dossier vers le point de vente pertinent",
+      "Suivi comparatif de la conversion avec et sans passage par l'agent"
+    ],
+    "premiere_etape": "Mesurer d'abord la demande perdue hors horaires. Le cas ne tient que si une part significative des sollicitations arrive quand personne ne peut repondre ; sans ce chiffre, l'agent nocturne resout un probleme qu'on n'a pas.",
+    "playbook": [
+      {
+        "action": "Quantifier les sollicitations entrantes sur la plage de fermeture du reseau.",
+        "livrable": "Volume et nature de la demande aujourd'hui non traitee."
+      },
+      {
+        "action": "Definir ce qu'est un prospect qualifie avec les conseillers eux-memes.",
+        "livrable": "Grille de qualification partagee entre l'agent et le reseau."
+      },
+      {
+        "action": "Brancher l'agent sur le referentiel d'offre et sur l'outil de gestion commerciale.",
+        "livrable": "Dossier prospect complet, disponible a la reouverture."
+      },
+      {
+        "action": "Ouvrir sur un sous-ensemble de points de vente volontaires.",
+        "livrable": "Pilote mesure sur un perimetre restreint du reseau."
+      },
+      {
+        "action": "Comparer la conversion des dossiers issus de l'agent a celle des contacts classiques.",
+        "livrable": "Lecture de l'effet propre, independante du discours commercial."
+      }
+    ],
+    "equipe": "Une equipe produit conversationnel, une equipe data pour la qualification et la mesure, un referent reseau capable de faire adopter le passage de relais par les conseillers, et une fonction conformite sur la transparence de l'agent et les donnees de projet collectees."
+  },
+  "seo": {
+    "slug": "cvc-corp-lia-agent-virtuel-nuit-2026",
+    "title": "CVC Corp : Lia, agent IA qui vend la nuit pour les agences - 1,3 M d'interactions par mois (2026)",
+    "meta_description": "CVC Corp fait tourner Lia, un agent IA qui dialogue avec les clients quand ses agences sont fermees, qualifie les prospects et les passe aux conseillers : 1,3 M d'interactions sur un mois, 50% d'engagement.",
+    "resume_citable": "Lors de la publication de ses resultats du deuxieme trimestre 2026, le 13 aout 2026, le distributeur de voyage bresilien CVC Corp indique que son agent virtuel Lia, qui dialogue avec les clients pendant la fermeture des agences et qualifie les prospects pour les conseillers, a enregistre 1,3 million d'interactions sur le dernier mois, avec 50% des clients concernes ensuite en contact avec un conseiller en agence.",
+    "faq": [
+      {
+        "q": "Que fait Lia, l'agent IA de CVC Corp ?",
+        "a": "Lia dialogue avec les clients pendant que le reseau d'agences est ferme, approximativement de 22 heures a 10 heures. Elle comprend le projet de voyage, qualifie le prospect et transmet le dossier aux conseillers, qui reprennent la main a l'ouverture des points de vente."
+      },
+      {
+        "q": "Quels chiffres CVC Corp attribue-t-il a Lia ?",
+        "a": "1,3 million d'interactions entre Lia et les clients sur le dernier mois, 50% des clients ayant interagi avec Lia qui echangent ensuite avec un conseiller en agence, et une hausse de conversion de 150% par rapport a la periode anterieure a Lia selon la direction."
+      },
+      {
+        "q": "Quelle est la limite de ce cas ?",
+        "a": "La hausse de conversion de 150% est une affirmation de dirigeant en earnings call, sans base de comparaison publiee ni methode de mesure detaillee. Par ailleurs le trimestre est financierement en recul (chiffre d'affaires net de 319,5 millions de reais, moins 6,5%), ce recul n'etant attribue a l'IA par aucune source."
+      }
+    ]
+  }
+}

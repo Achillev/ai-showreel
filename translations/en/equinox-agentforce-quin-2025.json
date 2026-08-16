@@ -1,0 +1,129 @@
+{
+  "transposable_ue": {
+    "note": "Agentforce is available in the EU. An agent that captures and qualifies leads requires a clear GDPR legal basis for processing prospect data and, under the AI Act, a transparency obligation: telling the visitor they are talking to an AI. The conversational SDR pattern transposes, but data compliance and grounding on approved content have to be redone."
+  },
+  "pattern": "genAI SDR agent for lead engagement and qualification",
+  "etape_parcours": "consideration",
+  "objectif_business": "Engage high-intent prospects 24/7 from the moment they request information on the site, qualify the right leads, and offload appointment booking, to free membership advisors for high-value interactions during demand peaks.",
+  "points_cles": [
+    "Quin, an Agentforce SDR agent, engages Equinox prospects over chat and email, qualifies leads, and books club visits.",
+    "Built on Agentforce Sales and Data 360, grounded on Equinox site content, launched ahead of the December 2025 holidays.",
+    "48% of prospects handed to an advisor become members, 7,300+ leads engaged, response time down from 48 hours to 17 seconds.",
+    "Level B evidence: two consistent Salesforce case studies, live status confirmed."
+  ],
+  "resultats": [
+    {
+      "metrique": "Prospects handed to an advisor who become members"
+    },
+    {
+      "metrique": "Open rate of Quin's emails (about 3x the industry average)"
+    },
+    {
+      "metrique": "Leads autonomously developed by Quin (New York clubs, 5+ months)"
+    },
+    {
+      "metrique": "Response time to requests"
+    }
+  ],
+  "niveau_preuve": {
+    "justification": "Two Salesforce case studies (vendor, T2) published in August 2026 and consistent with each other: one focused on lead engagement (Quin as SDR), the other on building the agent, with the same figures (48%, 60%, 7,300+) and the 48 hours to 17 seconds response time. The metrics measure the AI deployment itself, not a general company context."
+  },
+  "stack_technique": [
+    {
+      "detail": "Quin is built on Agentforce Sales from the ready-made Agentforce Lead Nurturing template, then configured to the Equinox brand voice. Low code: natural language plus a bit of Apex."
+    },
+    {
+      "detail": "Grounds Quin's answers in approved Equinox content, pulled from the Equinox.com sitemap (clubs, equipment, policies, memberships)."
+    },
+    {
+      "detail": "Syncs emails and calendar between Agentforce Sales and Microsoft Outlook, giving advisors visibility into the conversations and visits scheduled by Quin."
+    }
+  ],
+  "fonctionnement_operationnel": {
+    "cadence": "Real time, 24/7, from the moment information is requested on the site; email follow-ups spread over several days per prospect.",
+    "opere_par": "Equinox product and marketing teams, with support from Salesforce teams for scoping and governance.",
+    "signal_pilote": "The intent expressed by the prospect in their request, plus the lead's state in Agentforce Sales (engaged, waiting, missed appointment). Without up-to-date Equinox content in Data 360 and up-to-date advisor availability in Outlook, the answers and bookings lose their reliability.",
+    "etapes": [
+      {
+        "etape": "First contact",
+        "detail": "The prospect opens a conversation with Quin from the Equinox site and asks about membership, equipment, clubs.",
+        "acteur": "client"
+      },
+      {
+        "etape": "Grounded answer",
+        "detail": "Quin analyzes the intent, retrieves the answer via Data 360 (Equinox.com sitemap content), and replies over chat or email; the request is captured as a lead in Agentforce Sales.",
+        "acteur": "IA"
+      },
+      {
+        "etape": "Appointment booking",
+        "detail": "On a visit request, Quin recommends a nearby club via Google Maps and reads advisors' real availability via Outlook to schedule the visit.",
+        "acteur": "IA"
+      },
+      {
+        "etape": "Handoff",
+        "detail": "As soon as an advisor engages, Quin steps back to avoid double contact; it re-engages if the conversation stalls or an appointment is missed.",
+        "acteur": "humain"
+      },
+      {
+        "etape": "Oversight",
+        "detail": "The team tracks engaged leads, the conversion rate into membership, and mishandled cases through the test frameworks set up at launch.",
+        "acteur": "equipe data"
+      }
+    ]
+  },
+  "replication": {
+    "prerequis_data": [
+      "Up-to-date reference content (offers, clubs, policies) exposable to the agent in read mode",
+      "A history of frequent prospect questions to frame the scope",
+      "Access to sales reps' calendars for appointment booking"
+    ],
+    "prerequis_orga": [
+      "A clear handoff rule between the agent and the human sales rep",
+      "Governance of email follow-up frequency",
+      "A test framework validated before exposure to real prospects"
+    ],
+    "stack_possible": [
+      "A conversational agent platform connected to the CRM",
+      "A grounding layer on site content (RAG)",
+      "A calendar and mapping connector for appointment booking"
+    ],
+    "premiere_etape": "List the 15 to 20 most frequent prospect questions and connect a read-only agent to the site content before opening up appointment booking.",
+    "playbook": [
+      {
+        "action": "Map recurring prospect questions from sales conversations and inbound requests.",
+        "livrable": "A repository of questions and approved answers."
+      },
+      {
+        "action": "Configure an agent on the CRM platform from a lead nurturing template, grounded on site content in read mode.",
+        "livrable": "Agent that answers frequent questions in the brand voice."
+      },
+      {
+        "action": "Define the handoff rule: when the agent steps back for the sales rep, when it re-engages.",
+        "livrable": "Handoff logic tested on real cases."
+      },
+      {
+        "action": "Connect the calendar and mapping for appointment booking, then open up to a prospect segment with conversion tracking.",
+        "livrable": "Autonomous appointment booking and tracked conversion rate."
+      }
+    ],
+    "equipe": "A product and marketing team (product manager, sales ops) with a profile to administer the CRM platform and the agent layer."
+  },
+  "statut_vivant": {
+    "note": "Salesforce case studies dated August 11, 2026. A multi-agent exploration around Quin started in the summer of 2026, a sign of extension rather than withdrawal."
+  },
+  "seo": {
+    "title": "Equinox: Quin SDR agent on Agentforce - 48% of leads converted to members (2025)",
+    "meta_description": "Equinox deployed Quin, an Agentforce SDR agent that engages leads 24/7. 48% of prospects handed off become members, response time from 48 hours to 17 seconds.",
+    "resume_citable": "Quin, Equinox's SDR agent built on Salesforce Agentforce and launched ahead of December 2025, developed more than 7,300 leads with a 60% email open rate, converted 48% of handed-off prospects into members, and brought response time down from 48 hours to 17 seconds.",
+    "faq": [
+      {
+        "q": "What is Quin at Equinox?",
+        "a": "Quin is a sales development rep (SDR) built on Salesforce Agentforce. It engages prospects 24/7 over chat and email, qualifies leads, and books club visits."
+      },
+      {
+        "q": "What results does Equinox report?",
+        "a": "48% of prospects handed to an advisor become members, more than 7,300 leads engaged with a 60% email open rate, and a response time down from 48 hours to 17 seconds."
+      }
+    ]
+  }
+}

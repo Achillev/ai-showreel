@@ -1,0 +1,119 @@
+{
+  "transposable_ue": {
+    "note": "Deployed across Choice Hotels' franchise network, mainly in the United States. In the EU, an AI that processes event planners' data and responds to requests for proposals requires a GDPR legal basis; the AI Act calls for transparency on the use of AI. The pattern of AI response to group RFPs transposes, but the data architecture and compliance have to be rebuilt."
+  },
+  "pattern": "AI response to group requests for proposals",
+  "etape_parcours": "purchase",
+  "objectif_business": "Win more group business for franchise hotels by automating and optimizing the response to requests for proposals, and free up operational time in the hotel through an AI assistant integrated into the management system.",
+  "points_cles": [
+    "EasyBid, an AI platform for responding to group RFPs, deployed across the Choice Hotels franchise network.",
+    "Group RFP conversion improved by 360 basis points, contributing to +16% group revenue in Q2 2026.",
+    "Charlie, an AI assistant in the PMS, cut operational support requests by about 40% in a pilot.",
+    "Level A evidence (Q2 2026 earnings call plus the official May 7, 2026 release), status confirmed."
+  ],
+  "description": "Choice Hotels made an AI platform, EasyBid, available to its franchise hotels to handle group requests for proposals. When an event planner sends a request, EasyBid helps produce and optimize the response, which raises the odds of converting the request into a booking. The brand reports a 360 basis point improvement in group RFP conversion, which contributed to 16% growth in group revenue in the second quarter of 2026. In parallel, an AI assistant integrated into the property management system, called Charlie, cut operational support requests by about 40% in an early pilot, freeing up time for hotel teams. Both tools were unveiled publicly on May 7, 2026, and their first quantified results were disclosed on the Q2 2026 earnings call, on August 4, 2026.",
+  "resultats": [
+    {
+      "metrique": "Group RFP conversion via EasyBid"
+    },
+    {
+      "metrique": "Group revenue growth in Q2 2026"
+    },
+    {
+      "metrique": "Reduction in operational support requests (Charlie pilot)"
+    }
+  ],
+  "niveau_preuve": {
+    "justification": "Conversion and group revenue figures disclosed by a Choice Hotels executive on the Q2 2026 earnings call (verbatim transcript), as part of financial reporting. The existence and scope of the EasyBid and Charlie tools are confirmed by the brand's official release of May 7, 2026."
+  },
+  "stack_technique": [
+    {
+      "detail": "AI platform that responds to and optimizes group requests for proposals (RFPs) for franchise hotels, to improve the conversion of requests into bookings."
+    },
+    {
+      "detail": "AI assistant integrated into the hotel's property management system, which reduces the operational support requests from teams."
+    }
+  ],
+  "fonctionnement_operationnel": {
+    "cadence": "Continuous, on every group request for proposals received; real-time operational support via the Charlie assistant.",
+    "opere_par": "Group sales teams at the franchise hotels, supported by the AI platform, and hotel teams for Charlie.",
+    "signal_pilote": "The content of the request for proposals (dates, volume, planner needs) and the history of winning responses. Without RFP data and past outcomes, response optimization loses its relevance.",
+    "etapes": [
+      {
+        "etape": "RFP received",
+        "detail": "An event planner sends a group request to a franchise hotel.",
+        "acteur": "client"
+      },
+      {
+        "etape": "Optimized response",
+        "detail": "EasyBid helps produce and optimize the response to the request for proposals to maximize conversion.",
+        "acteur": "IA"
+      },
+      {
+        "etape": "Conversion and follow-up",
+        "detail": "The group sales team finalizes the booking; conversion improves by 360 basis points.",
+        "acteur": "hotel"
+      },
+      {
+        "etape": "Operational support in the hotel",
+        "detail": "Charlie, in the property management system, handles support requests and cuts their volume by about 40% in a pilot.",
+        "acteur": "IA"
+      }
+    ]
+  },
+  "replication": {
+    "prerequis_data": [
+      "A history of group requests for proposals and their outcomes (won / lost)",
+      "Pricing and availability data by hotel",
+      "A reference base of operational support requests for the in-hotel assistant"
+    ],
+    "prerequis_orga": [
+      "Group sales teams ready to integrate AI assistance into their RFP responses",
+      "Quality and compliance governance for automated responses",
+      "Support for franchises in adopting the tools"
+    ],
+    "stack_possible": [
+      "An engine to optimize RFP responses",
+      "A conversational assistant integrated into the PMS",
+      "A data layer for pricing and availability"
+    ],
+    "premiere_etape": "Map the current conversion rate of group RFPs and the reasons for losses, then test AI-assisted responses on a segment of hotels before rolling out more broadly.",
+    "playbook": [
+      {
+        "action": "Consolidate the history of group RFPs and measure the conversion rate and the reasons for losses.",
+        "livrable": "A baseline of RFP conversion by segment."
+      },
+      {
+        "action": "Build AI assistance for RFP responses and test it on a pilot group of hotels.",
+        "livrable": "A response tool tested with conversion tracking."
+      },
+      {
+        "action": "Roll out to franchise hotels with adoption support and group revenue tracking.",
+        "livrable": "An RFP response platform in production across the network."
+      },
+      {
+        "action": "Add an operational AI assistant in the PMS to reduce the support load in the hotel.",
+        "livrable": "An operational assistant in pilot with tracking of request volume."
+      }
+    ],
+    "equipe": "A product and data team for the RFP response tool and the PMS assistant, working with the group sales teams and the franchise network."
+  },
+  "statut_vivant": {
+    "note": "Tools unveiled in May 2026 and first quantified results disclosed on the Q2 2026 earnings call. Charlie still at the early pilot stage; EasyBid already in production with measured conversion impact. No signal of withdrawal."
+  },
+  "seo": {
+    "title": "Choice Hotels: EasyBid, AI response to group RFPs - +360 bps conversion (2026)",
+    "meta_description": "Choice Hotels' EasyBid AI platform improved group RFP conversion by 360 basis points, contributing to +16% group revenue in Q2 2026.",
+    "resume_citable": "In the second quarter of 2026, Choice Hotels' EasyBid AI platform improved the conversion of group requests for proposals by 360 basis points, contributing to a 16% rise in group revenue, while the Charlie AI assistant cut operational support requests by about 40% in a pilot.",
+    "faq": [
+      {
+        "q": "What is EasyBid at Choice Hotels?",
+        "a": "An AI platform that helps franchise hotels respond to and optimize group requests for proposals, which improved conversion by 360 basis points in Q2 2026."
+      },
+      {
+        "q": "What does the Charlie AI assistant do?",
+        "a": "Integrated into the property management system, Charlie cut operational support requests by about 40% in an early pilot, freeing up time for hotel teams."
+      }
+    ]
+  }
+}

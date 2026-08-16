@@ -1,0 +1,125 @@
+{
+  "transposable_ue": {
+    "note": "The case is already deployed in Germany, so natively under GDPR and the AI Act. It involves bidding and audience targeting on an advertising platform (Microsoft Advertising), not high-stakes automated individual decisions: the pattern transposes as is to another EU market, provided conversion tracking complies with consent."
+  },
+  "pattern": "full-funnel paid campaign driven by AI (Performance Max) optimized for new customer acquisition",
+  "etape_parcours": "consideration",
+  "objectif_business": "Sell new ADAC car insurance policies by reaching drivers as they compare offers, including in the new AI search surfaces, while holding the cost of acquisition and prioritizing first-time buyers over already-insured customers.",
+  "points_cles": [
+    "ADAC Autoversicherung drives its car insurance acquisition with Microsoft Advertising Performance Max, using AI bidding and targeting.",
+    "From January 1 to November 30, 2025: +104% conversions and +89% clicks, with CPA down 4%.",
+    "The new customer acquisition (NCA) option produced a ROAS near 600% in its first weeks.",
+    "Level B evidence (a quantified Microsoft case study, corroborated by the agency), living status confirmed, budget doubled."
+  ],
+  "description": "ADAC Autoversicherung AG is the car insurance subsidiary of ADAC, the German automobile club known for its yellow tow trucks (the 'Yellow Angels'). To sell policies, it relies on Microsoft Advertising Performance Max campaigns run by the agency ad agents. Performance Max is a format in which the algorithm itself allocates budget, bids, creatives and audiences across Bing search, Microsoft Copilot, native placements and the audience network. In December 2025, the team turned on the 'Optimize for new customer acquisition' option, which pushes the campaign to prioritize people buying for the first time over already-insured customers. What this means in practice for the user: when a driver searches for car insurance, the AI chooses where and at what price to show the ADAC ad, with increased visibility reaching into Copilot's answers.",
+  "resultats": [
+    {
+      "metrique": "Increase in conversions via Performance Max (January 1 to November 30, 2025 vs 2024)"
+    },
+    {
+      "metrique": "Increase in clicks via Performance Max (same period)"
+    },
+    {
+      "metrique": "Reduction in cost per acquisition over the period"
+    },
+    {
+      "metrique": "Increase in conversion rate when optimizing for new customer acquisition"
+    },
+    {
+      "metrique": "ROAS on new customers (NCA option, first weeks, December 2025)"
+    }
+  ],
+  "niveau_preuve": {
+    "justification": "Official quantified Microsoft Advertising case study (Tier 2), published January 20, 2026, corroborated by the page of the agency ad agents that runs the account. The figures are attributed explicitly to Performance Max over a named period (January 1 to November 30, 2025, compared with 2024). No ADAC financial result isolates this impact as a primary source, hence B rather than A."
+  },
+  "stack_technique": [
+    {
+      "detail": "Microsoft Advertising's single campaign format that allocates budget, bids and creatives through machine learning across search, Copilot, native placements and the audience network."
+    },
+    {
+      "detail": "A Performance Max option that prioritizes first-time policy buyers while maintaining engagement with existing customers."
+    }
+  ],
+  "fonctionnement_operationnel": {
+    "cadence": "Campaigns run continuously; daily optimization by the bidding algorithm, weekly steering and budget arbitration by the agency.",
+    "opere_par": "The agency ad agents (ad pepper group) on behalf of ADAC Autoversicherung AG.",
+    "signal_pilote": "The conversions reported to Microsoft Advertising (quotes and policy purchases). The algorithm optimizes bids and placements on this signal. If conversion tracking breaks or is not segmented between new and existing customers, the acquisition feature loses its target.",
+    "etapes": [
+      {
+        "etape": "Feed the campaign",
+        "detail": "Provide Performance Max with audience signals, creatives and clean conversion tracking (quote, policy purchase).",
+        "acteur": "agence"
+      },
+      {
+        "etape": "Multi-placement delivery",
+        "detail": "Performance Max allocates budget and bids across Bing search, Copilot, native placements and the audience network.",
+        "acteur": "IA"
+      },
+      {
+        "etape": "New customer optimization",
+        "detail": "Turn on 'Optimize for new customer acquisition' to prioritize first-time buyers over already-insured customers.",
+        "acteur": "agence"
+      },
+      {
+        "etape": "Monitoring and reallocation",
+        "detail": "Read the KPIs (conversions, CPA, conversion rate, new customer ROAS) and decide on budget increases.",
+        "acteur": "agence"
+      }
+    ]
+  },
+  "replication": {
+    "prerequis_data": [
+      "Reliable conversion tracking on the advertiser side (quote, policy purchase), ideally segmented new vs existing customers",
+      "First-party audience signals to guide the algorithm",
+      "A product feed and creatives suited to insurance"
+    ],
+    "prerequis_orga": [
+      "An active Microsoft Advertising account and a dedicated budget",
+      "An in-house SEA team or an agency to steer and arbitrate",
+      "A compliant consent framework for conversion tracking in the EU"
+    ],
+    "stack_possible": [
+      "Microsoft Advertising Performance Max with the Optimize for new customer acquisition option",
+      "The Google Ads Performance Max equivalent with a new customer acquisition goal",
+      "A conversion measurement layer (tag, CAPI, offline import)"
+    ],
+    "equipe": "A paid acquisition lead or an SEA agency, supported by a data/tracking person to guarantee the reliability of the conversion signal.",
+    "premiere_etape": "Set up clean conversion tracking that distinguishes new from existing customers before even turning on the acquisition option, otherwise the algorithm optimizes blind.",
+    "playbook": [
+      {
+        "action": "Make conversion tracking reliable (quote and policy purchase) and segment it between new and existing customers.",
+        "livrable": "A clean conversion signal the platform can use."
+      },
+      {
+        "action": "Launch a Performance Max campaign with creatives, product feed and audience signals.",
+        "livrable": "A campaign delivering across search, Copilot, native and audience."
+      },
+      {
+        "action": "Turn on the new customer acquisition option to prioritize first-time buyers.",
+        "livrable": "Acquisition-oriented delivery, with new customer ROAS measured."
+      },
+      {
+        "action": "Track CPA, conversion rate and ROAS, then reallocate budget toward what performs.",
+        "livrable": "A budget-increase decision backed by the KPIs."
+      }
+    ]
+  },
+  "statut_vivant": {
+    "note": "Case study published January 20, 2026. ADAC doubled its Microsoft Advertising budget following these results, and the agency says it wants to continue with Microsoft's AI formats. No signal of withdrawal."
+  },
+  "seo": {
+    "title": "ADAC Autoversicherung: AI Performance Max - +104% conversions (2025)",
+    "meta_description": "With Microsoft Advertising Performance Max, ADAC Autoversicherung achieved +104% conversions and -4% CPA over 2025, and a ROAS near 600% on new customers.",
+    "resume_citable": "With Microsoft Advertising Performance Max, ADAC Autoversicherung (car insurance from the German club ADAC) achieved +104% conversions, +89% clicks and -4% CPA from January 1 to November 30, 2025, and a ROAS near 600% on new customers after turning on the acquisition option.",
+    "faq": [
+      {
+        "q": "What results did ADAC Autoversicherung achieve with Performance Max?",
+        "a": "From January 1 to November 30, 2025 (vs 2024), Microsoft reports +104% conversions, +89% clicks, -4% CPA and +8% conversion rate, plus a ROAS near 600% on new customers."
+      },
+      {
+        "q": "Which AI is used?",
+        "a": "Microsoft Advertising Performance Max, a format in which machine learning allocates budget, bids and placements across Bing search, Copilot, native placements and the audience network, with an option to optimize for new customer acquisition."
+      }
+    ]
+  }
+}

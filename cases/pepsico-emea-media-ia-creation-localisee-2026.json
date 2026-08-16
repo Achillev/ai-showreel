@@ -1,0 +1,333 @@
+{
+  "id": "pepsico-emea-media-ia-creation-localisee-2026",
+  "type_fiche": "succes",
+  "marque": "PepsiCo",
+  "groupe": "PepsiCo, Inc.",
+  "industrie": "food_beverage",
+  "marches_deploiement": [
+    "Pays-Bas",
+    "Belgique",
+    "Espagne",
+    "Pologne",
+    "Royaume-Uni"
+  ],
+  "transposable_ue": {
+    "flag": "oui",
+    "note": "Le cas est deja europeen : il est conduit par l'organisation media de PepsiCo pour l'Europe, le Moyen-Orient et l'Afrique, et la campagne documentee tourne aux Pays-Bas et en Belgique. Les contraintes sont celles de tout dispositif publicitaire genAI en Europe. L'AI Act impose la transparence sur les contenus generes lorsque le format peut faire croire a une captation reelle. Le RGPD s'applique a l'analyse des reponses de consommateurs qui alimente la production creative, meme agregee, et au ciblage geographique et contextuel. Point de vigilance propre au pattern : la creation hyper-localisee multiplie les variantes, donc les occasions de dire dans une langue ce qu'on n'aurait pas valide dans une autre. Le controle de marque doit passer a l'echelle en meme temps que la production."
+  },
+  "metier": "marketing de marque / media et creation publicitaire",
+  "logo_domain": "pepsico.com",
+  "intervenants": [
+    {
+      "nom": "Josep Hernandez",
+      "role": "VP of Media, PepsiCo Europe, Middle East, and Africa",
+      "source_ref": "S1"
+    }
+  ],
+  "agences": [
+    {
+      "nom": "Boomerang",
+      "role": "Agence citee sur la campagne Lay's aux Pays-Bas, sur le travail d'analyse et de traduction des insights en visuels",
+      "source_ref": "S2"
+    }
+  ],
+  "axes": {
+    "levier": "acquisition",
+    "touchpoints": [
+      "YouTube (campagnes video reach)",
+      "Search et Shopping",
+      "campagnes Performance Max",
+      "creations publicitaires localisees par marche"
+    ],
+    "etape_parcours": "decouverte",
+    "famille": "generation",
+    "pattern": "declinaison IA d'une plateforme de marque mondiale en creations hyper-localisees par marche, couplee a un achat media automatise",
+    "type_ia": [
+      "analyse d'insights consommateurs par LLM",
+      "generation de variantes creatives localisees",
+      "achat media automatise (video reach, Performance Max)",
+      "detection de moments d'attention dans la video"
+    ],
+    "plateforme_stack": [
+      "Gemini",
+      "Google Ads video reach campaigns",
+      "Performance Max",
+      "Peak Points"
+    ],
+    "objectif_metrique": [
+      "portee en utilisateurs uniques",
+      "memorisation publicitaire (ad recall)",
+      "cout pour mille impressions",
+      "part des campagnes video pilotees par IA"
+    ]
+  },
+  "implementation": "plateforme",
+  "stack_technique": [
+    {
+      "nom": "Gemini",
+      "categorie": "llm",
+      "detail": "Utilise pour analyser les reponses de consommateurs et en tirer les nuances culturelles par pays, puis pour decliner la plateforme creative mondiale en accroches locales.",
+      "url": "https://gemini.google.com"
+    },
+    {
+      "nom": "Video reach campaigns",
+      "categorie": "plateforme",
+      "detail": "Format d'achat video automatise sur YouTube. Selon PepsiCo, ces campagnes pilotees par IA representent plus de 60% de son activite YouTube Ads."
+    },
+    {
+      "nom": "Performance Max",
+      "categorie": "plateforme",
+      "detail": "Campagnes automatisees testees par Lay's en Espagne dans le cadre du meme ecosysteme."
+    },
+    {
+      "nom": "Peak Points",
+      "categorie": "outil",
+      "detail": "Technologie de detection des moments d'attention dans la video, adossee a Gemini, testee par Doritos au Royaume-Uni."
+    }
+  ],
+  "objectif_business": "Faire parler une marque mondiale comme une marque locale, sans multiplier le cout de production par le nombre de marches. PepsiCo diffuse une meme plateforme creative dans des dizaines de pays ou l'accroche qui fonctionne n'est pas la meme d'une frontiere a l'autre. Le dispositif consiste a faire porter par l'IA le travail d'ecoute (comprendre ce qui fait sens localement) et le travail de declinaison (produire les variantes), pendant que l'achat media automatise place ces variantes. L'enjeu economique est le cout au mille : gagner en pertinence locale doit se lire dans le CPM et la memorisation, sinon la localisation n'est qu'un surcout.",
+  "points_cles": [
+    "PepsiCo EMEA decline ses plateformes de marque en creations locales avec Gemini, puis les diffuse en achat media automatise.",
+    "La campagne Lay's au Benelux a touche 6,5 millions d'utilisateurs uniques en un mois, avec 4 points de memorisation publicitaire en plus.",
+    "Le cout pour mille impressions de cette campagne est ressorti environ 30% sous celui des campagnes habituelles de la marque.",
+    "Les campagnes video pilotees par IA representent plus de 60% de l'activite YouTube Ads de PepsiCo."
+  ],
+  "description": "PepsiCo a construit pour sa zone Europe, Moyen-Orient et Afrique une chaine de production publicitaire ou l'IA intervient a deux endroits : avant la creation, pour comprendre ce qui fait sens localement, et pendant, pour decliner une meme plateforme de marque en variantes de pays. Le cas le plus documente est celui de Lay's au Benelux, qui devait adapter la plateforme mondiale « Joy is a simple recipe ». La joie etant une notion abstraite, les equipes ont fait analyser par Gemini les reponses de plus de 6 000 consommateurs, en injectant des termes natifs pour faire ressortir les nuances propres a chaque pays. Le modele a fait apparaitre des ecarts entre voisins immediats : le bonheur neerlandais s'exprime davantage par des activites comme la navigation sur les canaux, le bonheur belge penche vers la culture du velo. La plateforme mondiale a ensuite ete declinee en une trentaine de creations personnalisees de trois mots, batie sur une structure fixe (action, lieu, twist), donnant des accroches aussi specifiques que « koers, kasseien, demarrage » en Belgique et « bootje, Oude Delft, familie » aux Pays-Bas. Resultat publie : 6,5 millions d'utilisateurs uniques touches en un peu plus d'un mois, 4 points de memorisation publicitaire en plus, et un cout pour mille impressions environ 30% inferieur aux campagnes habituelles de la marque. Au niveau de la zone, PepsiCo indique que les campagnes video pilotees par IA representent plus de 60% de son activite YouTube Ads, avec un CPM YouTube en baisse d'environ 25% sur un an. D'autres briques sont citees a l'etat de pilote : detection des moments d'attention dans la video pour Doritos au Royaume-Uni, campagnes automatisees pour Lay's en Espagne, prediction creative pour Lay's en Pologne. Ce que le cas ne dit pas : l'effet sur les ventes, et ce qu'aurait donne la meme campagne localisee sans IA.",
+  "resultats": [
+    {
+      "metrique": "Portee et memorisation publicitaire de la campagne Lay's localisee par IA au Benelux, sur un mois",
+      "valeur": "6,5 M d'uniques",
+      "citation_exacte": "reached 6.5 million unique users in one month, with a 4 percentage-point increase in ad recall",
+      "source_ref": "S1"
+    },
+    {
+      "metrique": "Cout pour mille impressions de la campagne, compare aux campagnes habituelles de la marque",
+      "valeur": "-30% de CPM",
+      "citation_exacte": "cost per thousand impressions (CPM) was 30% below our typical campaigns",
+      "source_ref": "S1"
+    },
+    {
+      "metrique": "Part des campagnes video pilotees par IA dans l'activite YouTube Ads de PepsiCo",
+      "valeur": "plus de 60%",
+      "citation_exacte": "AI-powered Video reach campaigns already account for more than 60% of our YouTube Ads activity",
+      "source_ref": "S1"
+    },
+    {
+      "metrique": "Evolution du cout pour mille impressions sur YouTube sur un an",
+      "valeur": "-25% sur un an",
+      "citation_exacte": "reducing our YouTube CPM by around 25% year-over-year",
+      "source_ref": "S1"
+    },
+    {
+      "metrique": "Volume de reponses consommateurs analysees pour nourrir la creation locale",
+      "valeur": "6 000 reponses",
+      "citation_exacte": "We had over 6,000 responses",
+      "source_ref": "S2"
+    }
+  ],
+  "niveau_preuve": {
+    "niveau": "B",
+    "justification": "Etude de cas plateforme chiffree : les deux sources sont des publications editoriales de Google consacrees au travail de PepsiCo, l'une sur l'ecosysteme media IA de la zone EMEA (mars 2026), l'autre sur la campagne Lay's aux Pays-Bas et en Belgique. Les chiffres mesurent le dispositif lui-meme (portee, memorisation, CPM de la campagne generee, part des campagnes video pilotees par IA) et sont attribues nommement par le responsable media EMEA de PepsiCo. Reserve honnete, qui interdit de monter plus haut : les deux sources appartiennent au meme editeur, qui est aussi le fournisseur des technologies employees, donc partie interessee. Aucune corroboration par une source de presse independante n'a ete trouvee a la collecte, et aucun document de PepsiCo ne reprend ces chiffres. Le communique de PepsiCo d'avril 2026 sur sa collaboration avec Google Cloud a ete ecarte comme source : il porte sur la chaine d'approvisionnement et les outils internes, pas sur ce dispositif marketing, et l'utiliser aurait fabrique une corroboration qui n'existe pas."
+  },
+  "dates": {
+    "lancement": "Campagne Lay's Benelux documentee en janvier 2025 ; ecosysteme media IA decrit a l'echelle EMEA en mars 2026",
+    "derniere_confirmation_activite": "2026-03",
+    "verifie_le": "2026-08-15",
+    "revoir_apres": "2027-02-15"
+  },
+  "statut_vivant": {
+    "statut": "confirme",
+    "note": "L'article de mars 2026 decrit le dispositif au present et a l'echelle de la zone EMEA, avec des pilotes en cours sur plusieurs marques et pays. La campagne Lay's elle-meme est anterieure : elle est documentee dans une etude de cas publiee en janvier 2025, et sert d'illustration au dispositif. Aucun signal de retrait, mais la derniere confirmation date de mars 2026 : a re-verifier avant fin 2026."
+  },
+  "sources": [
+    {
+      "ref": "S1",
+      "type": "customer_story_plateforme",
+      "fiabilite": "T2_officiel_interesse",
+      "titre": "Inside PepsiCo's AI marketing ecosystem: A 2026 strategic vision",
+      "url": "https://business.google.com/en-all/think/ai-excellence/pepsico-ai-marketing-ecosystem/",
+      "date_publication": "2026-03",
+      "consulte_le": "2026-08-15"
+    },
+    {
+      "ref": "S2",
+      "type": "customer_story_plateforme",
+      "fiabilite": "T2_officiel_interesse",
+      "titre": "Lay's recipe for personalisation: Bespoke insights to media placements",
+      "url": "https://business.google.com/en-all/think/ai-excellence/gemini-lays-insights/",
+      "date_publication": "2025-01",
+      "consulte_le": "2026-08-15"
+    }
+  ],
+  "fonctionnement_operationnel": {
+    "cadence": "Par campagne pour la production creative localisee ; continue pour l'achat media automatise.",
+    "opere_par": "L'equipe media de la zone EMEA de PepsiCo, avec les equipes marque par marche et les agences partenaires.",
+    "signal_pilote": "Les reponses de consommateurs collectees par marche, qui fondent la nuance locale. Sans elles, la localisation retombe sur des cliches nationaux, ce qui est le risque principal du pattern. Cote media, le signal est le CPM et la memorisation, qui disent si la variante locale merite son cout.",
+    "etapes": [
+      {
+        "etape": "Collecte des insights locaux",
+        "detail": "Des reponses de consommateurs sont recueillies par marche, en langue locale.",
+        "acteur": "marketing"
+      },
+      {
+        "etape": "Analyse des nuances culturelles",
+        "detail": "Gemini analyse les reponses, avec des termes natifs en entree, pour faire ressortir ce qui differe d'un pays a l'autre.",
+        "acteur": "IA"
+      },
+      {
+        "etape": "Declinaison creative",
+        "detail": "La plateforme de marque mondiale est declinee en variantes locales suivant une structure fixe.",
+        "acteur": "IA"
+      },
+      {
+        "etape": "Validation de marque",
+        "detail": "Les variantes sont revues avant diffusion, la multiplication des versions multipliant les risques d'ecart.",
+        "acteur": "marketing"
+      },
+      {
+        "etape": "Diffusion automatisee",
+        "detail": "Les creations partent en campagnes video et en achat automatise, avec ciblage geographique et contextuel.",
+        "acteur": "IA"
+      },
+      {
+        "etape": "Lecture des resultats",
+        "detail": "Portee, memorisation et CPM sont compares aux campagnes habituelles de la marque.",
+        "acteur": "equipe data"
+      }
+    ]
+  },
+  "schema_flow": {
+    "statut": "approche_type",
+    "noeuds": [
+      {
+        "id": "voc",
+        "role_generique": "data_source",
+        "label": "Reponses consommateurs par marche"
+      },
+      {
+        "id": "llm",
+        "role_generique": "modele_ia",
+        "label": "Analyse des nuances culturelles",
+        "outil_documente": "Gemini"
+      },
+      {
+        "id": "plateforme_marque",
+        "role_generique": "data_source",
+        "label": "Plateforme creative mondiale"
+      },
+      {
+        "id": "variantes",
+        "role_generique": "dam",
+        "label": "Variantes creatives localisees"
+      },
+      {
+        "id": "media",
+        "role_generique": "paid_platform",
+        "label": "Achat media automatise",
+        "outil_documente": "Video reach campaigns, Performance Max"
+      },
+      {
+        "id": "mesure",
+        "role_generique": "data_source",
+        "label": "Portee, memorisation, CPM"
+      }
+    ],
+    "liens": [
+      [
+        "voc",
+        "llm",
+        "reponses en langue locale"
+      ],
+      [
+        "plateforme_marque",
+        "llm",
+        "cadre creatif mondial"
+      ],
+      [
+        "llm",
+        "variantes",
+        "accroches locales"
+      ],
+      [
+        "variantes",
+        "media",
+        "creations a diffuser"
+      ],
+      [
+        "media",
+        "mesure",
+        "performance par marche"
+      ],
+      [
+        "mesure",
+        "variantes",
+        "boucle de selection creative"
+      ]
+    ]
+  },
+  "replication": {
+    "statut_epistemique": "infere",
+    "prerequis_data": [
+      "Une collecte de verbatims consommateurs par marche, en langue locale et non traduite",
+      "Une plateforme de marque assez explicite pour etre declinee sans se dissoudre",
+      "Un referentiel de contraintes de marque opposable aux variantes generees",
+      "Une mesure comparative par marche entre creations localisees et creation standard"
+    ],
+    "prerequis_orga": [
+      "Un mandat clair entre l'echelon central et les marches sur qui valide quoi",
+      "Une revue de marque capable de suivre le rythme de production des variantes",
+      "Une politique de transparence sur les contenus generes lorsque le format le justifie",
+      "Une equipe media capable de lire un CPM par variante et pas seulement par campagne"
+    ],
+    "stack_possible": [
+      "LLM pour l'analyse de verbatims et la production de variantes d'accroches",
+      "Bibliotheque d'assets et de regles de marque pour cadrer la generation",
+      "Achat media automatise avec ciblage geographique et contextuel",
+      "Mesure de memorisation et de portee par marche"
+    ],
+    "premiere_etape": "Recolter des verbatims consommateurs dans la langue du marche, sans passer par une traduction. Le coeur du cas n'est pas la generation d'images, c'est le fait d'avoir donne au modele de la matiere locale non traduite : c'est la que naissent les ecarts entre pays voisins qui rendent l'accroche credible.",
+    "playbook": [
+      {
+        "action": "Collecter des reponses consommateurs en langue locale sur le territoire de marque.",
+        "livrable": "Corpus de verbatims exploitable par marche."
+      },
+      {
+        "action": "Faire ressortir les ecarts culturels entre marches voisins plutot que les points communs.",
+        "livrable": "Liste de situations et de references propres a chaque pays."
+      },
+      {
+        "action": "Definir une structure creative fixe qui borne la declinaison.",
+        "livrable": "Gabarit de variante, reproductible et controlable."
+      },
+      {
+        "action": "Produire les variantes et les passer en revue de marque avant diffusion.",
+        "livrable": "Jeu de creations locales validees."
+      },
+      {
+        "action": "Diffuser en achat automatise et comparer portee, memorisation et CPM aux campagnes de reference.",
+        "livrable": "Lecture chiffree du gain de la localisation, marche par marche."
+      }
+    ],
+    "equipe": "Une equipe media centrale qui tient le cadre et la mesure, des referents marque par marche pour la validation locale, un profil creatif capable de definir la structure de declinaison, et une agence ou une equipe de production pour la mise en image."
+  },
+  "seo": {
+    "slug": "pepsico-emea-media-ia-creation-localisee-2026",
+    "title": "PepsiCo EMEA : creations publicitaires localisees par IA - 6,5 M d'uniques et CPM en baisse de 30% (2026)",
+    "meta_description": "PepsiCo decline ses plateformes de marque en creations locales avec Gemini : la campagne Lay's au Benelux touche 6,5 M d'uniques en un mois, +4 pts de memorisation, CPM 30% sous la normale.",
+    "resume_citable": "PepsiCo indique que sa campagne Lay's localisee par IA aux Pays-Bas et en Belgique a touche 6,5 millions d'utilisateurs uniques en un peu plus d'un mois avec 4 points de memorisation publicitaire supplementaires et un cout pour mille impressions environ 30% inferieur a ses campagnes habituelles, et que les campagnes video pilotees par IA representent plus de 60% de son activite YouTube Ads.",
+    "faq": [
+      {
+        "q": "Comment PepsiCo utilise-t-il l'IA dans sa creation publicitaire ?",
+        "a": "L'IA intervient a deux endroits. Avant la creation, Gemini analyse des reponses de consommateurs collectees en langue locale pour faire ressortir les nuances culturelles d'un pays a l'autre. Pendant la creation, la plateforme de marque mondiale est declinee en variantes locales suivant une structure fixe, puis diffusee en achat media automatise."
+      },
+      {
+        "q": "Quels resultats sont publies ?",
+        "a": "Pour la campagne Lay's au Benelux : 6,5 millions d'utilisateurs uniques touches en un peu plus d'un mois, 4 points de memorisation publicitaire en plus, un CPM environ 30% inferieur aux campagnes habituelles de la marque. A l'echelle de la zone : plus de 60% de l'activite YouTube Ads en campagnes video pilotees par IA, et un CPM YouTube en baisse d'environ 25% sur un an."
+      },
+      {
+        "q": "Quelle est la limite de ce cas ?",
+        "a": "Les deux sources disponibles sont des publications de Google, qui fournit aussi les technologies employees. Aucune corroboration independante n'a ete trouvee, et aucun effet sur les ventes n'est publie : les chiffres portent sur la portee, la memorisation et le cout media."
+      }
+    ]
+  }
+}

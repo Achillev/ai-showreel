@@ -1,0 +1,135 @@
+{
+  "seo": {
+    "title": "Boozt: AI shopping assistant - 2.5x conversion and 8% higher baskets among its users (2026)",
+    "meta_description": "Boozt put numbers on its AI shopping assistant in its Q2 2026 results: users convert roughly 2.5 times more and spend 8% more per order, with 10,000 AI visuals produced since April.",
+    "resume_citable": "Reporting its second quarter 2026 results on 14 August 2026, Nordic online fashion group Boozt said customers using its AI shopping assistant convert roughly 2.5 times more than the normal rate and spend about 8% more per order, and that around 10,000 AI-generated model images have been produced since April 2026.",
+    "faq": [
+      {
+        "q": "What does Boozt's AI shopping assistant do?",
+        "a": "It replaces manual filtering across a wide fashion catalogue: the customer describes what they are looking for and the assistant proposes items, along with generated product descriptions and styling suggestions. It is exposed to customers on the Boozt platform."
+      },
+      {
+        "q": "What results does Boozt attribute to the system?",
+        "a": "In its second quarter 2026 results, management said assistant users convert roughly 2.5 times more than the normal rate and spend about 8% more per order, and that around 10,000 AI-generated model images have been produced since April 2026. The quarter's 13% revenue growth is not attributed to AI by any source."
+      },
+      {
+        "q": "What is the limit of this case?",
+        "a": "The conversion gap compares assistant users with other visitors, not a test group with a control group. It therefore mixes the effect of the system with the fact that customers who choose to use an assistant already have stronger purchase intent. Boozt also does not publish what share of visitors use it."
+      }
+    ]
+  },
+  "pattern": "conversational shopping assistant paired with pipeline generation of product visuals",
+  "etape_parcours": "consideration and purchase",
+  "objectif_business": "Lift conversion and basket size on a fashion site where shoppers arbitrate between thousands of items, without adding production cost for every new item. The conversational assistant takes over the selection work the customer would otherwise do alone inside filters, and image generation replaces part of the photo shoots. Both push the same outcome: more orders converted per visitor, with a content cost that no longer grows at the pace of the catalogue.",
+  "description": "Boozt runs two online fashion department stores in the Nordic countries, Boozt.com and Booztlet.com. The company placed a conversational shopping assistant between the catalogue and the customer: instead of filtering alone through a wide assortment, the shopper describes what they want and the assistant proposes products. Reporting its second quarter 2026 results, management put a number on the assistant: customers who use it convert roughly 2.5 times more than the normal rate and spend about 8% more per order. In parallel, Boozt industrialized the production of on-model product visuals: around 10,000 AI-generated model images since April 2026, a pipeline that cuts content cost and shortens the delay between receiving an item and putting it online. The quarter itself was strong, with 13% revenue growth and an EBIT margin around 6.5%, but nothing in the sources attributes that growth to AI: the only figures tied to the system are those of the assistant and the image volume. What the case does not say: what share of visitors actually use the assistant, and whether the conversion gap measures the effect of the assistant or the stronger intent of customers who choose to use it. Management also notes that average order value on Boozt.com declined year over year, driven by a higher proportion of new customers and fewer items per basket, which coexists with the higher basket observed among assistant users.",
+  "points_cles": [
+    "Boozt exposes a conversational shopping assistant to customers on its Nordic fashion platform.",
+    "Its users convert roughly 2.5 times more than the normal rate and spend about 8% more per order.",
+    "Around 10,000 AI-generated model images have been produced since April 2026.",
+    "Figures disclosed with the second quarter 2026 results, on 14 August 2026."
+  ],
+  "resultats": [
+    {
+      "metrique": "Conversion rate of customers using the shopping assistant, compared with the normal rate"
+    },
+    {
+      "metrique": "Spend per order among users of the shopping assistant"
+    },
+    {
+      "metrique": "Volume of AI-generated product visuals produced since April 2026"
+    }
+  ],
+  "niveau_preuve": {
+    "justification": "The figures come from Boozt's second quarter 2026 results, presented on 14 August 2026, which is a level A event by nature. The level retained is B rather than A because the primary document could not be reached at collection: both accessible sources are secondary accounts of the earnings call (GuruFocus relayed by Yahoo Finance for the second quarter, GuruFocus relayed by Investing.com for the first). The figures retained measure the AI system itself, conversion among assistant users, basket among those same users, volume of images generated, and not company context: the quarter's 13% growth is not attributed to AI by any source and is not counted as a result. Caveat: the conversion gap is measured between users and non-users of the assistant, not against a control group, so it blends the effect of the system with self-selection by the customers who use it."
+  },
+  "stack_technique": [
+    {
+      "detail": "Conversational assistant exposed to customers on the Boozt platform. Management disclosed its effect on conversion and basket in the second quarter 2026 results. The models used are not publicly detailed."
+    },
+    {
+      "detail": "Production pipeline for on-model product visuals, generated by AI. Around 10,000 images produced since April 2026 according to the second quarter results disclosure."
+    }
+  ],
+  "fonctionnement_operationnel": {
+    "cadence": "Real time for the assistant, on every shopping session. Batch for image generation, at the pace of new items entering the catalogue.",
+    "opere_par": "Boozt's product and e-commerce teams, with content teams for the visual pipeline.",
+    "signal_pilote": "The structured catalogue and purchase behavior data. If product attributes are incomplete or inconsistent, the assistant recommends badly and conversion degrades instead of rising. On images, the signal is how faithful the render is to the real product: an image that flatters the cut manufactures returns.",
+    "etapes": [
+      {
+        "etape": "Stating the need",
+        "detail": "The customer describes what they are looking for to the assistant rather than filtering alone through the catalogue.",
+        "acteur": "customer"
+      },
+      {
+        "etape": "Assisted selection",
+        "detail": "The assistant queries the catalogue and proposes items, with descriptions and styling suggestions.",
+        "acteur": "AI"
+      },
+      {
+        "etape": "Visual production",
+        "detail": "On-model images of the items are generated in batches and published on product pages.",
+        "acteur": "AI"
+      },
+      {
+        "etape": "Segmented measurement",
+        "detail": "Conversion rate and basket among assistant users are tracked separately from the rest of the traffic.",
+        "acteur": "data team"
+      },
+      {
+        "etape": "Assortment decisions",
+        "detail": "What the assistant reveals feeds merchandising and the choice of items to promote.",
+        "acteur": "marketing"
+      }
+    ]
+  },
+  "replication": {
+    "prerequis_data": [
+      "A richly attributed product catalogue (fabric, cut, use case, size): the assistant is only worth what the attributes are worth",
+      "Browsing and purchase history to anchor recommendations",
+      "Measurement separating sessions with the assistant from sessions without, the condition for the effect to be readable",
+      "Clean reference visuals to train and control image generation"
+    ],
+    "prerequis_orga": [
+      "An agreement between merchandising and product on what the assistant is allowed to promote",
+      "Human quality control on generated visuals before they go live",
+      "A transparency policy on synthetic content at the product page level",
+      "Tracking of the return rate alongside conversion, to catch a render that flatters too much"
+    ],
+    "stack_possible": [
+      "Conversational assistant connected to the catalogue and customer history",
+      "Product image generation pipeline with human review",
+      "Generation of product descriptions and styling suggestions",
+      "Analytics instrumentation by assistant user segment"
+    ],
+    "premiere_etape": "Clean and enrich catalogue attributes before connecting anything conversational. An assistant placed on a poorly described catalogue simply rephrases noise, and the measured conversion gap becomes impossible to interpret.",
+    "playbook": [
+      {
+        "action": "Audit the completeness of product attributes on the best-selling categories.",
+        "livrable": "Reliable attribute reference on a pilot scope."
+      },
+      {
+        "action": "Instrument measurement to separate sessions that go through the assistant from the others.",
+        "livrable": "Separate tracking of conversion and basket by segment."
+      },
+      {
+        "action": "Open the assistant on a category where customer arbitration is hard.",
+        "livrable": "Assistant in production on a narrow, measured scope."
+      },
+      {
+        "action": "Industrialize product visual generation with systematic human review.",
+        "livrable": "Image production pipeline with quality control and return tracking."
+      },
+      {
+        "action": "Compare segments over time and monitor the merchandise return rate.",
+        "livrable": "A reading of the effect net of self-selection bias and logistics cost."
+      }
+    ],
+    "equipe": "An e-commerce product team for the assistant, a data team for segmented measurement, a content and merchandising team for the catalogue and visual review, and a compliance function covering data and transparency on generated content."
+  },
+  "statut_vivant": {
+    "note": "System described in the present tense and quantified by management at the second quarter 2026 results disclosure on 14 August 2026, the day before verification. The first quarter 2026 report already documented the use of AI for product descriptions and styling suggestions. No signal of withdrawal."
+  },
+  "transposable_ue": {
+    "note": "The case is already European: Boozt is a Swedish and Danish company listed on Nasdaq Stockholm, operating from Sweden and Denmark, therefore under GDPR and the AI Act. Two points of attention remain for anyone replicating it. The shopping assistant processes browsing and taste data, which requires a legal basis and clear disclosure under GDPR. AI-generated model images fall under transparency obligations on synthetic content: the shopper must be able to know that the visual is not a photograph of the product worn by a real person, and the render must not alter perception of the garment's cut or color."
+  }
+}

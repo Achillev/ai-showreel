@@ -1,0 +1,276 @@
+{
+  "id": "lululemon-performance-max-acquisition-2025",
+  "type_fiche": "succes",
+  "marque": "Lululemon",
+  "groupe": "lululemon athletica inc.",
+  "industrie": "sport_fitness",
+  "marches_deploiement": [
+    "Canada"
+  ],
+  "transposable_ue": {
+    "flag": "oui_avec_adaptations",
+    "note": "Performance Max est disponible en UE. Le cas repose sur la donnee first-party et la distinction nouveaux clients vs clients existants injectee dans l'IA de Google. En UE, cela impose Consent Mode et une base legale RGPD pour l'usage des signaux de conversion et des audiences. Le pattern (campagne nonbranded orientee acquisition + mesure incrementale) se transpose, la collecte et le consentement sont a refaire."
+  },
+  "metier": "marketing",
+  "logo_domain": "lululemon.com",
+  "axes": {
+    "levier": "acquisition",
+    "touchpoints": [
+      "Google Search",
+      "YouTube",
+      "reseau Google (Performance Max multi-canal)"
+    ],
+    "etape_parcours": "consideration",
+    "famille": "optimisation_automatisation",
+    "pattern": "paid media pilote par IA (Performance Max) oriente acquisition de nouveaux clients",
+    "type_ia": [
+      "optimisation d'encheres et de placements",
+      "machine learning",
+      "attribution multi-touch"
+    ],
+    "plateforme_stack": [
+      "Google Performance Max",
+      "Google Ads",
+      "Marketing Mix Modeling",
+      "custom/in-house"
+    ],
+    "objectif_metrique": [
+      "ROAS",
+      "cout d'acquisition client",
+      "part de revenu issue des nouveaux clients"
+    ]
+  },
+  "implementation": "hybride",
+  "stack_technique": [
+    {
+      "nom": "Google Performance Max",
+      "categorie": "plateforme",
+      "detail": "Campagne unique ou l'IA de Google optimise encheres et placements et distribue les annonces sur Search, YouTube et le reste du reseau Google. Utilisee ici sur des campagnes nonbranded (marque exclue) pour aller chercher des nouveaux clients.",
+      "url": "https://business.google.com/us/ad-solutions/performance-max/"
+    },
+    {
+      "nom": "Google Ads",
+      "categorie": "plateforme",
+      "detail": "Compte publicitaire operant les campagnes shopping restructurees et le moteur d'acquisition.",
+      "url": "https://ads.google.com"
+    },
+    {
+      "nom": "Measurement trifecta (MMM + experiences + attribution)",
+      "categorie": "outil",
+      "detail": "Combinaison de Marketing Mix Modeling, d'experiences (tests geo/incrementaux) et d'attribution pour mesurer l'impact reel et piloter l'optimisation vers les nouveaux clients.",
+      "url": "https://business.google.com/us/think/ai-excellence/lululemon-ai-performance-marketing-strategy/"
+    }
+  ],
+  "objectif_business": "Faire baisser le cout d'acquisition sur les campagnes hors marque au Canada et augmenter la part de revenu venant de nouveaux clients, en confiant a l'IA de Google la distribution et l'optimisation des annonces sur Search et YouTube depuis une seule campagne, avec une mesure assez solide pour distinguer l'incremental du deja-acquis.",
+  "points_cles": [
+    "Campagnes Performance Max nonbranded pilotees par l'IA de Google, au Canada, pour aller chercher de nouveaux clients.",
+    "ROAS ameliore de 8% et cout d'acquisition en baisse sur les campagnes hors marque.",
+    "Part de revenu issue des nouveaux clients passee de 6% a 15%.",
+    "Mesure via MMM, experiences et attribution ; cas publie par Google, encore actif en 2026 (preuve B)."
+  ],
+  "description": "Lululemon a revu son dispositif Google Ads autour de trois chantiers : restructurer les campagnes shopping, construire un moteur d'acquisition de nouveaux clients, et solidifier la mesure. Le coeur du dispositif est Performance Max, une campagne unique ou l'IA de Google choisit les encheres, les audiences et les placements et diffuse sur Search, YouTube et le reste du reseau. Pour orienter l'algorithme vers l'acquisition plutot que vers des clients deja gagnes, l'equipe a travaille sur des campagnes nonbranded (marque exclue) au Canada et injecte la donnee first-party ainsi que la distinction nouveaux clients vs clients existants. En parallele, elle a mis en place une trifecta de mesure (Marketing Mix Modeling, experiences, attribution) pour verifier que la baisse de cout et la hausse de revenu nouveaux clients etaient reelles. Le cas a ete documente par Google et a recu une distinction aux Google Search Honours ; la strategie a ensuite ete etendue a l'international.",
+  "resultats": [
+    {
+      "metrique": "ROAS des campagnes (Canada)",
+      "valeur": "+8%",
+      "citation_exacte": "boosting ROAS by 8%",
+      "source_ref": "S1"
+    },
+    {
+      "metrique": "Part de revenu issue des nouveaux clients",
+      "valeur": "de 6% a 15%",
+      "citation_exacte": "from 6% to 15%",
+      "source_ref": "S3"
+    },
+    {
+      "metrique": "Cout d'acquisition, campagnes nonbranded Performance Max au Canada",
+      "valeur": "en baisse",
+      "citation_exacte": "resulted in lower customer acquisition costs for its nonbranded campaigns in Canada",
+      "source_ref": "S2"
+    }
+  ],
+  "niveau_preuve": {
+    "niveau": "B",
+    "justification": "Cas chiffre publie par Google (Think with Google) sur un deploiement Performance Max nomme et quantifie (ROAS +8%, part de revenu nouveaux clients de 6% a 15%, cout d'acquisition en baisse au Canada), corrobore par la presse ecommerce etablie (Digital Commerce 360, juillet 2026) qui reprend le meme cas en citant Google. Etude de cas plateforme chiffree = B."
+  },
+  "dates": {
+    "lancement": "2024",
+    "derniere_confirmation_activite": "2026-07",
+    "verifie_le": "2026-08-16",
+    "revoir_apres": "2027-02-16"
+  },
+  "statut_vivant": {
+    "statut": "confirme",
+    "note": "Cas documente par Google et distingue aux Google Search Honours (travaux reconnus des l'automne 2024). En juillet 2026, Digital Commerce 360 confirme que Lululemon continue d'utiliser Performance Max pilote par IA pour l'acquisition. Aucun signal de retrait."
+  },
+  "sources": [
+    {
+      "ref": "S1",
+      "type": "customer_story_plateforme",
+      "fiabilite": "T2_officiel_interesse",
+      "titre": "Lululemon's AI performance marketing strategy",
+      "url": "https://business.google.com/us/think/ai-excellence/lululemon-ai-performance-marketing-strategy/",
+      "date_publication": "2025",
+      "consulte_le": "2026-08-16"
+    },
+    {
+      "ref": "S2",
+      "type": "presse",
+      "fiabilite": "T3_presse_etablie",
+      "titre": "Ecommerce Trends: How Lululemon is using AI",
+      "url": "https://www.digitalcommerce360.com/2026/07/30/how-lululemon-is-using-ai/",
+      "date_publication": "2026-07-30",
+      "consulte_le": "2026-08-16"
+    },
+    {
+      "ref": "S3",
+      "type": "analyse_academique",
+      "fiabilite": "T4_secondaire",
+      "titre": "How Lululemon's AI-Driven Marketing Strategy Redefined Customer Acquisition",
+      "url": "https://digitalsix.com.au/how-lululemons-ai-driven-marketing-strategy-redefined-customer-acquisition/",
+      "date_publication": "2025-06-04",
+      "consulte_le": "2026-08-16"
+    }
+  ],
+  "fonctionnement_operationnel": {
+    "cadence": "Continu, par campagne. L'IA de Performance Max optimise encheres et placements en permanence ; la mesure (MMM, experiences) est relue par cycles pour recalibrer les objectifs.",
+    "opere_par": "Equipe performance marketing / acquisition de Lululemon, sur Google Ads.",
+    "signal_pilote": "La donnee first-party et les conversions taggees nouveaux clients vs clients existants. Sans ce signal de conversion propre et sans la distinction nouveau/ancien, l'algorithme optimise vers le volume et retombe sur des clients deja acquis au lieu d'aller chercher de l'incremental.",
+    "etapes": [
+      {
+        "etape": "Restructurer les campagnes shopping",
+        "detail": "Reorganiser et nettoyer la structure des campagnes Google Ads pour donner a l'IA une base saine.",
+        "acteur": "marketing"
+      },
+      {
+        "etape": "Construire un moteur d'acquisition nouveaux clients",
+        "detail": "Creer des campagnes nonbranded (marque exclue) et fixer un objectif d'acquisition de nouveaux clients, en alimentant la donnee first-party.",
+        "acteur": "marketing"
+      },
+      {
+        "etape": "Diffusion et optimisation",
+        "detail": "Performance Max choisit encheres, audiences et placements et diffuse sur Search, YouTube et le reseau Google depuis une seule campagne.",
+        "acteur": "IA"
+      },
+      {
+        "etape": "Mesurer et recalibrer",
+        "detail": "Croiser Marketing Mix Modeling, experiences et attribution pour verifier l'incrementalite et reorienter le budget vers ce qui amene vraiment des nouveaux clients.",
+        "acteur": "equipe data"
+      }
+    ]
+  },
+  "schema_flow": {
+    "statut": "documente",
+    "noeuds": [
+      {
+        "id": "data",
+        "role_generique": "data_source",
+        "label": "Donnee first-party + signaux de conversion (nouveaux vs anciens clients)"
+      },
+      {
+        "id": "pmax",
+        "role_generique": "paid_platform",
+        "label": "Performance Max (IA d'encheres et de placements)",
+        "outil_documente": "Google Performance Max"
+      },
+      {
+        "id": "client",
+        "role_generique": "site_app",
+        "label": "Prospects / nouveaux clients (Search, YouTube)"
+      },
+      {
+        "id": "mesure",
+        "role_generique": "modele_ia",
+        "label": "Mesure: MMM, experiences, attribution"
+      }
+    ],
+    "liens": [
+      [
+        "data",
+        "pmax",
+        "signaux d'optimisation"
+      ],
+      [
+        "pmax",
+        "client",
+        "annonces Search / YouTube"
+      ],
+      [
+        "client",
+        "data",
+        "conversions"
+      ],
+      [
+        "data",
+        "mesure"
+      ],
+      [
+        "mesure",
+        "pmax",
+        "recalibrage vers l'acquisition"
+      ]
+    ]
+  },
+  "replication": {
+    "statut_epistemique": "infere",
+    "prerequis_data": [
+      "Donnee first-party propre et exploitable en publicite",
+      "Distinction nouveaux clients vs clients existants dans le suivi des conversions",
+      "Suivi fiable des conversions et du revenu par campagne"
+    ],
+    "prerequis_orga": [
+      "Equipe performance marketing capable d'operer Performance Max au quotidien",
+      "Une fonction mesure qui sait monter MMM, experiences et attribution",
+      "Budget media dedie a l'acquisition hors marque"
+    ],
+    "stack_possible": [
+      "Google Performance Max ou equivalent (Meta Advantage+)",
+      "Marketing Mix Modeling",
+      "Plateforme d'attribution / d'experiences geo"
+    ],
+    "premiere_etape": "Separer les nouveaux clients des clients existants dans le suivi des conversions, puis lancer une campagne Performance Max nonbranded avec un objectif explicite d'acquisition de nouveaux clients.",
+    "playbook": [
+      {
+        "action": "Nettoyer et restructurer les campagnes shopping existantes pour donner une base propre a l'IA.",
+        "livrable": "Structure de compte simplifiee et lisible."
+      },
+      {
+        "action": "Tagger les conversions pour distinguer nouveaux clients et clients existants, et brancher la donnee first-party.",
+        "livrable": "Signal d'acquisition exploitable par l'algorithme."
+      },
+      {
+        "action": "Lancer une campagne Performance Max nonbranded avec objectif d'acquisition de nouveaux clients.",
+        "livrable": "Moteur d'acquisition en production sur Search et YouTube."
+      },
+      {
+        "action": "Mettre en place la trifecta de mesure (MMM, experiences, attribution) pour valider l'incrementalite.",
+        "livrable": "Lecture fiable du cout d'acquisition et de la part de revenu nouveaux clients."
+      },
+      {
+        "action": "Reallouer le budget vers ce qui amene reellement des nouveaux clients, puis etendre a d'autres marches.",
+        "livrable": "Dispositif d'acquisition scale a l'international."
+      }
+    ],
+    "equipe": "Une equipe performance marketing (acquisition paid) plus un profil mesure/analytics capable de tenir MMM, experiences et attribution."
+  },
+  "seo": {
+    "slug": "lululemon-performance-max-acquisition-2025",
+    "title": "Lululemon : Performance Max pilote par IA - ROAS +8% et acquisition de nouveaux clients (2025)",
+    "meta_description": "Avec Performance Max pilote par IA sur des campagnes nonbranded au Canada, Lululemon a ameliore son ROAS de 8% et fait passer la part de revenu nouveaux clients de 6% a 15%.",
+    "resume_citable": "En 2024-2025 au Canada, Lululemon a utilise les campagnes Performance Max pilotees par l'IA de Google (marque exclue) pour baisser son cout d'acquisition, ameliorer son ROAS de 8% et faire passer la part de revenu issue des nouveaux clients de 6% a 15%, cas documente par Google.",
+    "faq": [
+      {
+        "q": "Quels resultats Lululemon a obtenus avec Performance Max ?",
+        "a": "Google rapporte un ROAS ameliore de 8% et un cout d'acquisition en baisse sur les campagnes nonbranded au Canada, avec une part de revenu issue des nouveaux clients passee de 6% a 15%."
+      },
+      {
+        "q": "Qu'est-ce qui rend le cas oriente acquisition et non retention ?",
+        "a": "Les campagnes excluent la marque (nonbranded) et l'IA est pilotee vers l'acquisition de nouveaux clients grace au tag nouveaux vs anciens clients, avec une mesure incrementale pour le verifier."
+      },
+      {
+        "q": "Le cas est-il encore actif ?",
+        "a": "Oui. En juillet 2026, Digital Commerce 360 confirme que Lululemon continue d'utiliser Performance Max pilote par IA pour l'acquisition."
+      }
+    ]
+  }
+}

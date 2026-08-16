@@ -1,0 +1,130 @@
+{
+  "transposable_ue": {
+    "note": "Xometry already runs a marketplace in Europe, so the pattern is active there. In the EU, models that use buyer data for personalization and acquisition targeting require a clear GDPR legal basis; the AI Act does not classify this kind of marketplace optimization as high risk, but it does require transparency."
+  },
+  "pattern": "AI-optimized B2B marketplace (quoting and recommendations)",
+  "etape_parcours": "consideration",
+  "objectif_business": "Raise the conversion rate and value per buyer on the marketplace by making instant quotes and manufacturing recommendations more reliable, while lowering the cost of acquisition through martech and personalization.",
+  "points_cles": [
+    "Xometry's proprietary AI models drive quoting, sourcing and process recommendations on the marketplace.",
+    "CNC cost prediction accuracy improved by about 15%, with more than 85% of recommendations accepted.",
+    "Martech and personalization: nearly 4,000 net new buyers in Q2 2026, the highest in 10 quarters.",
+    "Level A evidence (Q2 2026 earnings call plus official release), living status confirmed."
+  ],
+  "description": "Xometry runs an on-demand manufacturing marketplace where a buyer uploads a part and receives an instant quote. In the second quarter of 2026, the company announced improvements to the proprietary AI models that handle costing, sourcing and process recommendations. The model reads each part's parameters and delivers about 15% more accuracy on CNC machining cost prediction, which strengthens buyer confidence and conversion. Buyers now accept the process recommendation more than 85% of the time, with the largest gains among new customers. In parallel, the marketing teams strengthened martech and personalization, which helped generate nearly 4,000 net new buyers over the quarter, the best level in ten quarters, while bringing marketplace advertising spend to a record low as a share of revenue. Revenue for the quarter reached $229 million, up 41%, with the marketplace growing 45% and active buyers reaching 89,557, up 20%.",
+  "resultats": [
+    {
+      "metrique": "CNC cost prediction accuracy after the AI model upgrade"
+    },
+    {
+      "metrique": "Rate at which buyers accept process recommendations"
+    },
+    {
+      "metrique": "Net new buyers in Q2 2026 (highest in 10 quarters)"
+    },
+    {
+      "metrique": "Role of the AI models in marketplace performance"
+    },
+    {
+      "metrique": "Marketplace active buyers (as of June 30, 2026)"
+    }
+  ],
+  "niveau_preuve": {
+    "justification": "Results disclosed by Xometry on its Q2 2026 earnings call (verbatim transcript) and corroborated by its official quarterly results release. The figures on conversion, model accuracy and net new buyers are attributed by name to executives as part of financial reporting."
+  },
+  "stack_technique": [
+    {
+      "detail": "Proprietary AI models for cost prediction, sourcing and process recommendation, trained on a decade of quoting and part data. The sources do not name any third-party LLM."
+    },
+    {
+      "detail": "Marketing stack that personalizes acquisition and the timing of sales outreach to raise net new buyers while lowering the share of advertising spend."
+    }
+  ],
+  "fonctionnement_operationnel": {
+    "cadence": "Real time on every quote; model retraining and upgrades in cycles (major improvements delivered in Q2 2026).",
+    "opere_par": "Xometry's data and product team, in house, working with marketing on the acquisition layer.",
+    "signal_pilote": "The parameters of the uploaded part and a decade of historical quoting data. Without this proprietary database, cost prediction and recommendations lose their accuracy.",
+    "etapes": [
+      {
+        "etape": "Part upload",
+        "detail": "The buyer uploads a file for the part to be manufactured to the marketplace.",
+        "acteur": "client"
+      },
+      {
+        "etape": "Instant quote",
+        "detail": "The AI model reads the parameters, predicts the machining cost and proposes a price, with about 15% better accuracy on CNC.",
+        "acteur": "IA"
+      },
+      {
+        "etape": "Process recommendation",
+        "detail": "The model recommends the manufacturing process; the buyer accepts it more than 85% of the time, especially new customers.",
+        "acteur": "IA"
+      },
+      {
+        "etape": "Personalized acquisition",
+        "detail": "Martech targets and personalizes acquisition and the timing of sales outreach to raise net new buyers at lower cost.",
+        "acteur": "marketing"
+      },
+      {
+        "etape": "Model monitoring and upgrades",
+        "detail": "The data team tracks conversion and accuracy, and ships model improvements in cycles.",
+        "acteur": "equipe data"
+      }
+    ]
+  },
+  "replication": {
+    "prerequis_data": [
+      "A rich history of quotes and parts to train cost prediction",
+      "Conversion data and recommendation acceptance data",
+      "Behavioral buyer signals for acquisition targeting"
+    ],
+    "prerequis_orga": [
+      "A data and product team able to maintain and retrain the models",
+      "Alignment between data and marketing on the conversion and acquisition loop",
+      "Quality governance for automated quotes"
+    ],
+    "stack_possible": [
+      "In-house cost prediction models or models on cloud ML infrastructure",
+      "A recommendation engine",
+      "A martech layer for personalization and buyer scoring"
+    ],
+    "premiere_etape": "Measure the current quote conversion rate and the recommendation acceptance rate, then focus first on making cost prediction reliable in the highest-volume category.",
+    "playbook": [
+      {
+        "action": "Consolidate the quoting and part history and measure current cost accuracy by manufacturing category.",
+        "livrable": "A baseline of accuracy and conversion by category."
+      },
+      {
+        "action": "Train a cost prediction model on the highest-volume category and test it in shadow before production.",
+        "livrable": "A costing model validated on one category."
+      },
+      {
+        "action": "Add a process recommendation model and measure the acceptance rate, especially among new buyers.",
+        "livrable": "Recommendations in production with acceptance tracking."
+      },
+      {
+        "action": "Connect a martech personalization layer to target acquisition and sales timing.",
+        "livrable": "Personalized acquisition with cost-per-net-buyer tracking."
+      }
+    ],
+    "equipe": "A data/ML team (cost prediction, recommendation) plus a martech team for the acquisition layer, working with the marketplace product team."
+  },
+  "statut_vivant": {
+    "note": "AI models at the core of the marketplace, highlighted in the Q2 2026 results with growing conversion and acquisition figures. No signal of withdrawal."
+  },
+  "seo": {
+    "title": "Xometry: AI-driven marketplace - 15% better CNC cost accuracy, ~4,000 net new buyers (2026)",
+    "meta_description": "In Q2 2026, Xometry's AI models improved CNC cost accuracy by about 15% and martech generated nearly 4,000 net new buyers.",
+    "resume_citable": "In the second quarter of 2026, Xometry improved its AI models' CNC cost prediction accuracy by about 15%, pushed process recommendation acceptance beyond 85%, and generated nearly 4,000 net new buyers through martech and personalization, on revenue of $229 million, up 41%.",
+    "faq": [
+      {
+        "q": "How does Xometry's AI improve conversion?",
+        "a": "Its models make the instant quote more reliable, with about 15% better accuracy on CNC cost, and recommend the manufacturing process, accepted more than 85% of the time."
+      },
+      {
+        "q": "What is the effect on acquisition?",
+        "a": "The marketing teams strengthened martech and personalization, which helped generate nearly 4,000 net new buyers in Q2 2026, while lowering the share of advertising spend."
+      }
+    ]
+  }
+}

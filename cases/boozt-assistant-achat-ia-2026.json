@@ -1,0 +1,302 @@
+{
+  "id": "boozt-assistant-achat-ia-2026",
+  "type_fiche": "succes",
+  "marque": "Boozt",
+  "groupe": "Boozt AB (publ)",
+  "industrie": "retail_ecom",
+  "marches_deploiement": [
+    "Pays nordiques"
+  ],
+  "transposable_ue": {
+    "flag": "oui",
+    "note": "Le cas est deja europeen : Boozt est une societe suedo-danoise cotee a Nasdaq Stockholm, operant depuis la Suede et le Danemark, donc sous RGPD et AI Act. Deux points de vigilance restent pour qui replique. L'assistant d'achat traite des donnees de navigation et de gout, ce qui suppose une base legale et une information claire au titre du RGPD. Les images de mannequins generees par IA relevent des obligations de transparence sur les contenus synthetiques : l'acheteur doit pouvoir savoir que le visuel qu'il regarde n'est pas une photographie du produit porte par une personne reelle, et le rendu ne doit pas modifier la perception de la coupe ou de la couleur du vetement."
+  },
+  "metier": "e-commerce mode / merchandising et experience d'achat",
+  "logo_domain": "boozt.com",
+  "intervenants": [
+    {
+      "nom": "Hermann Haraldsson",
+      "role": "Group Chief Executive Officer, Boozt",
+      "source_ref": "S1"
+    }
+  ],
+  "axes": {
+    "levier": "activation_conversion",
+    "touchpoints": [
+      "assistant d'achat sur le site et l'application Boozt.com",
+      "fiches produit",
+      "visuels produit portes (images de mannequins generees)",
+      "descriptions et suggestions de style"
+    ],
+    "etape_parcours": "consideration et achat",
+    "famille": "conversation",
+    "pattern": "assistant d'achat conversationnel couple a une generation de visuels produit a la chaine",
+    "type_ia": [
+      "assistant conversationnel (LLM)",
+      "generation d'images de mannequins",
+      "generation de descriptions produit et de suggestions de style"
+    ],
+    "plateforme_stack": [
+      "custom/in-house"
+    ],
+    "objectif_metrique": [
+      "taux de conversion des utilisateurs de l'assistant",
+      "panier moyen",
+      "volume de visuels produit produits",
+      "marge brute"
+    ]
+  },
+  "implementation": "custom",
+  "stack_technique": [
+    {
+      "nom": "Assistant d'achat Boozt",
+      "categorie": "outil",
+      "detail": "Assistant conversationnel expose aux clients sur la plateforme Boozt. La direction publie son effet sur la conversion et sur le panier dans le rapport du deuxieme trimestre 2026. Le detail des modeles utilises n'est pas rendu public."
+    },
+    {
+      "nom": "Generation d'images de mannequins",
+      "categorie": "outil",
+      "detail": "Chaine de production de visuels produit portes, generes par IA. Environ 10 000 images produites depuis avril 2026 d'apres la publication des resultats du deuxieme trimestre."
+    }
+  ],
+  "objectif_business": "Faire monter la conversion et le panier sur un site de mode ou l'acheteur arbitre entre des milliers de references, sans ajouter de cout de production a chaque nouvelle reference. L'assistant conversationnel prend en charge le travail de selection que le client ferait autrement seul dans des filtres, et la generation d'images remplace une partie des seances photo. Les deux briques poussent le meme resultat : plus de commandes converties par visiteur, avec un cout de contenu qui ne croit plus au rythme du catalogue.",
+  "points_cles": [
+    "Boozt expose un assistant d'achat conversationnel a ses clients sur sa plateforme de mode nordique.",
+    "Ses utilisateurs convertissent environ 2,5 fois plus que la normale et depensent environ 8% de plus par commande.",
+    "Environ 10 000 images de mannequins generees par IA ont ete produites depuis avril 2026.",
+    "Chiffres communiques a la publication des resultats du deuxieme trimestre 2026, le 14 aout 2026."
+  ],
+  "description": "Boozt exploite deux grands magasins de mode en ligne dans les pays nordiques, Boozt.com et Booztlet.com. La marque a mis un assistant d'achat conversationnel entre le catalogue et le client : plutot que de filtrer seul dans un assortiment large, l'acheteur decrit ce qu'il cherche et l'assistant lui propose des produits. A la publication des resultats du deuxieme trimestre 2026, la direction chiffre l'effet de cet assistant : les clients qui l'utilisent convertissent environ 2,5 fois plus que la normale et depensent environ 8% de plus par commande. En parallele, Boozt a industrialise la production de visuels produit portes : environ 10 000 images de mannequins generees par IA depuis avril 2026, une chaine qui reduit le cout du contenu et raccourcit le delai entre la reception d'une reference et sa mise en ligne. Le trimestre lui-meme est bon, avec une croissance du chiffre d'affaires de 13% et une marge EBIT autour de 6,5%, mais rien dans les sources n'attribue cette croissance a l'IA : les seuls chiffres relies au dispositif sont ceux de l'assistant et le volume d'images. Ce que le cas ne dit pas : quelle part des visiteurs utilise reellement l'assistant, et si l'ecart de conversion mesure l'effet de l'assistant ou l'intention plus forte des clients qui choisissent de s'en servir. La direction note par ailleurs que le panier moyen sur Boozt.com recule sur un an, en raison d'une plus forte proportion de nouveaux clients et d'un nombre d'articles par panier plus faible, ce qui coexiste avec le panier superieur constate chez les utilisateurs de l'assistant.",
+  "resultats": [
+    {
+      "metrique": "Taux de conversion des clients utilisant l'assistant d'achat, compare au taux normal",
+      "valeur": "x2,5",
+      "citation_exacte": "AI shopping assistant users convert at roughly 2.5 times the normal rate",
+      "source_ref": "S1"
+    },
+    {
+      "metrique": "Depense par commande des utilisateurs de l'assistant d'achat",
+      "valeur": "+8% par commande",
+      "citation_exacte": "AI shopping assistant users convert at roughly 2.5 times the normal rate and spend about 8% more per order",
+      "source_ref": "S1"
+    },
+    {
+      "metrique": "Volume de visuels produit generes par IA depuis avril 2026",
+      "valeur": "10 000 images",
+      "citation_exacte": "around 10,000 AI model images produced since April",
+      "source_ref": "S1"
+    }
+  ],
+  "niveau_preuve": {
+    "niveau": "B",
+    "justification": "Les chiffres viennent de la publication des resultats du deuxieme trimestre 2026 de Boozt, presentee le 14 aout 2026, donc d'un evenement de niveau A par nature. Le niveau retenu est B et non A parce que le document primaire n'a pas pu etre atteint a la collecte : les deux sources accessibles sont des comptes rendus secondaires de l'earnings call (GuruFocus relaye par Yahoo Finance pour le deuxieme trimestre, GuruFocus relaye par Investing.com pour le premier). Les chiffres retenus mesurent bien le dispositif IA lui-meme, conversion des utilisateurs de l'assistant, panier de ces memes utilisateurs, volume d'images generees, et non le contexte d'entreprise : la croissance de 13% du trimestre n'est attribuee a l'IA par aucune source et n'est pas comptee comme resultat. Reserve : l'ecart de conversion est mesure entre utilisateurs et non-utilisateurs de l'assistant, pas contre un groupe temoin, donc il melange l'effet du dispositif et l'auto-selection des clients qui l'utilisent."
+  },
+  "dates": {
+    "lancement": "Assistant d'achat en production en 2026 ; generation d'images de mannequins depuis avril 2026",
+    "derniere_confirmation_activite": "2026-08",
+    "verifie_le": "2026-08-15",
+    "revoir_apres": "2027-02-15"
+  },
+  "statut_vivant": {
+    "statut": "confirme",
+    "note": "Dispositif decrit au present et chiffre par la direction lors de la publication des resultats du deuxieme trimestre 2026, le 14 aout 2026, soit la veille de la verification. Le rapport du premier trimestre 2026 documentait deja l'usage de l'IA pour les descriptions produit et les suggestions de style. Aucun signal de retrait."
+  },
+  "sources": [
+    {
+      "ref": "S1",
+      "type": "earnings_call",
+      "fiabilite": "T4_secondaire",
+      "titre": "Boozt AB (BOZTY) (Q2 2026) Earnings Call Highlights: Revenue Surges 13% and EBIT Margin Nearly Doubles",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/boozt-ab-bozty-q2-2026-150059584.html",
+      "date_publication": "2026-08-14",
+      "consulte_le": "2026-08-15"
+    },
+    {
+      "ref": "S2",
+      "type": "earnings_call",
+      "fiabilite": "T4_secondaire",
+      "titre": "Boozt AB (STU:BOK) Q1 2026 Earnings Call Highlights: Strategic Growth and AI Integration",
+      "url": "https://ca.investing.com/news/company-news/boozt-ab-stubok-q1-2026-earnings-call-highlights-strategic-growth-and-ai-integration-drive--4587575",
+      "date_publication": "2026-04-24",
+      "consulte_le": "2026-08-15"
+    },
+    {
+      "ref": "S3",
+      "type": "document_officiel_sec",
+      "fiabilite": "T1_primaire",
+      "titre": "Boozt Group, calendrier financier (Interim Financial Report Q2 publie le 14 aout 2026)",
+      "url": "https://www.booztgroup.com/financial-calendar",
+      "date_publication": "2026-08-14",
+      "consulte_le": "2026-08-15"
+    }
+  ],
+  "fonctionnement_operationnel": {
+    "cadence": "Temps reel pour l'assistant, a chaque session d'achat. Par lot pour la generation d'images, au rythme des nouvelles references entrant au catalogue.",
+    "opere_par": "Les equipes produit et e-commerce de Boozt, avec les equipes contenu pour la chaine de visuels.",
+    "signal_pilote": "Le catalogue structure et les donnees de comportement d'achat. Si les attributs produit sont incomplets ou incoherents, l'assistant recommande mal et la conversion se degrade au lieu de monter. Cote images, le signal est la fidelite du rendu au produit reel : une image qui flatte la coupe fabrique du retour marchandise.",
+    "etapes": [
+      {
+        "etape": "Expression du besoin",
+        "detail": "Le client decrit ce qu'il cherche a l'assistant plutot que de filtrer seul dans le catalogue.",
+        "acteur": "client"
+      },
+      {
+        "etape": "Selection assistee",
+        "detail": "L'assistant interroge le catalogue et propose des references, avec descriptions et suggestions de style.",
+        "acteur": "IA"
+      },
+      {
+        "etape": "Production des visuels",
+        "detail": "Les images de mannequins portant les references sont generees par lot et publiees sur les fiches produit.",
+        "acteur": "IA"
+      },
+      {
+        "etape": "Mesure comparee",
+        "detail": "Le taux de conversion et le panier des utilisateurs de l'assistant sont suivis separement du reste du trafic.",
+        "acteur": "equipe data"
+      },
+      {
+        "etape": "Arbitrage assortiment",
+        "detail": "Les enseignements de l'assistant nourrissent le merchandising et le choix des references mises en avant.",
+        "acteur": "marketing"
+      }
+    ]
+  },
+  "schema_flow": {
+    "statut": "approche_type",
+    "noeuds": [
+      {
+        "id": "client",
+        "role_generique": "humain",
+        "label": "Client sur Boozt.com"
+      },
+      {
+        "id": "assistant",
+        "role_generique": "canal_conversationnel",
+        "label": "Assistant d'achat conversationnel"
+      },
+      {
+        "id": "catalogue",
+        "role_generique": "data_source",
+        "label": "Catalogue produit et attributs"
+      },
+      {
+        "id": "genimg",
+        "role_generique": "modele_ia",
+        "label": "Generation d'images de mannequins"
+      },
+      {
+        "id": "fiche",
+        "role_generique": "site_app",
+        "label": "Fiche produit et parcours d'achat"
+      },
+      {
+        "id": "mesure",
+        "role_generique": "data_source",
+        "label": "Mesure conversion et panier par segment"
+      }
+    ],
+    "liens": [
+      [
+        "client",
+        "assistant",
+        "besoin exprime"
+      ],
+      [
+        "catalogue",
+        "assistant",
+        "references et attributs"
+      ],
+      [
+        "assistant",
+        "fiche",
+        "selection proposee"
+      ],
+      [
+        "catalogue",
+        "genimg",
+        "references a illustrer"
+      ],
+      [
+        "genimg",
+        "fiche",
+        "visuels produit portes"
+      ],
+      [
+        "fiche",
+        "mesure",
+        "conversion et panier"
+      ],
+      [
+        "mesure",
+        "assistant",
+        "boucle d'optimisation"
+      ]
+    ]
+  },
+  "replication": {
+    "statut_epistemique": "infere",
+    "prerequis_data": [
+      "Un catalogue produit richement attribue (matiere, coupe, usage, taille) : l'assistant ne vaut que ce que valent les attributs",
+      "Un historique de navigation et d'achat pour ancrer les recommandations",
+      "Une mesure separant les sessions avec assistant des sessions sans, condition pour que l'effet soit lisible",
+      "Des visuels de reference propres pour entrainer et controler la generation d'images"
+    ],
+    "prerequis_orga": [
+      "Un accord entre merchandising et produit sur ce que l'assistant a le droit de mettre en avant",
+      "Un controle qualite humain sur les visuels generes avant mise en ligne",
+      "Une politique de transparence sur les contenus synthetiques cote fiche produit",
+      "Un suivi du taux de retour marchandise en parallele de la conversion, pour detecter un rendu trop flatteur"
+    ],
+    "stack_possible": [
+      "Assistant conversationnel branche sur le catalogue et l'historique client",
+      "Chaine de generation d'images produit avec revue humaine",
+      "Generation de descriptions produit et de suggestions de style",
+      "Instrumentation analytique par segment utilisateur de l'assistant"
+    ],
+    "premiere_etape": "Nettoyer et enrichir les attributs du catalogue avant de brancher quoi que ce soit de conversationnel. Un assistant pose sur un catalogue mal decrit se contente de reformuler du bruit, et l'ecart de conversion mesure devient impossible a interpreter.",
+    "playbook": [
+      {
+        "action": "Auditer la completude des attributs produit sur les categories les plus vendues.",
+        "livrable": "Referentiel d'attributs fiable sur un perimetre pilote."
+      },
+      {
+        "action": "Instrumenter la mesure pour distinguer les sessions passant par l'assistant des autres.",
+        "livrable": "Suivi separe de la conversion et du panier par segment."
+      },
+      {
+        "action": "Ouvrir l'assistant sur une categorie ou l'arbitrage client est difficile.",
+        "livrable": "Assistant en production sur un perimetre restreint et mesure."
+      },
+      {
+        "action": "Industrialiser la generation de visuels produit avec une revue humaine systematique.",
+        "livrable": "Chaine de production d'images avec controle qualite et suivi des retours."
+      },
+      {
+        "action": "Comparer les segments dans la duree et surveiller le taux de retour marchandise.",
+        "livrable": "Lecture de l'effet nette du biais d'auto-selection et du cout logistique."
+      }
+    ],
+    "equipe": "Une equipe produit e-commerce pour l'assistant, une equipe data pour la mesure par segment, une equipe contenu et merchandising pour le catalogue et la revue des visuels, et une fonction conformite sur les donnees et la transparence des contenus generes."
+  },
+  "seo": {
+    "slug": "boozt-assistant-achat-ia-2026",
+    "title": "Boozt : assistant d'achat IA - conversion x2,5 et panier +8% chez ses utilisateurs (2026)",
+    "meta_description": "Boozt chiffre son assistant d'achat IA aux resultats du T2 2026 : ses utilisateurs convertissent environ 2,5 fois plus et depensent 8% de plus par commande, avec 10 000 visuels generes depuis avril.",
+    "resume_citable": "A la publication de ses resultats du deuxieme trimestre 2026, le 14 aout 2026, le groupe de mode en ligne nordique Boozt indique que les clients utilisant son assistant d'achat IA convertissent environ 2,5 fois plus que la normale et depensent environ 8% de plus par commande, et qu'environ 10 000 images de mannequins generees par IA ont ete produites depuis avril 2026.",
+    "faq": [
+      {
+        "q": "Que fait l'assistant d'achat IA de Boozt ?",
+        "a": "Il remplace le filtrage manuel dans un catalogue de mode large : le client decrit ce qu'il cherche et l'assistant lui propose des references, accompagnees de descriptions et de suggestions de style generees. Il est expose aux clients sur la plateforme Boozt."
+      },
+      {
+        "q": "Quels resultats Boozt attribue-t-il a ce dispositif ?",
+        "a": "A la publication des resultats du deuxieme trimestre 2026, la direction indique que les utilisateurs de l'assistant convertissent environ 2,5 fois plus que la normale et depensent environ 8% de plus par commande, et qu'environ 10 000 images de mannequins generees par IA ont ete produites depuis avril 2026. La croissance de 13% du chiffre d'affaires du trimestre n'est attribuee a l'IA par aucune source."
+      },
+      {
+        "q": "Quelle est la limite de ce cas ?",
+        "a": "L'ecart de conversion compare les utilisateurs de l'assistant aux autres visiteurs, pas un groupe test a un groupe temoin. Il melange donc l'effet du dispositif et le fait que les clients qui choisissent d'utiliser un assistant ont deja une intention d'achat plus forte. Boozt ne publie pas non plus la part de visiteurs qui s'en servent."
+      }
+    ]
+  }
+}

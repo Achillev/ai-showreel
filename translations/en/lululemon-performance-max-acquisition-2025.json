@@ -1,0 +1,129 @@
+{
+  "transposable_ue": {
+    "note": "Performance Max is available in the EU. The case rests on first-party data and the distinction between new and existing customers fed into Google's AI. In the EU, this requires Consent Mode and a GDPR legal basis for the use of conversion signals and audiences. The pattern (nonbranded acquisition-focused campaign plus incremental measurement) transposes, but collection and consent have to be redone."
+  },
+  "pattern": "AI-driven paid media (Performance Max) focused on new-customer acquisition",
+  "etape_parcours": "consideration",
+  "objectif_business": "Bring down acquisition cost on nonbranded campaigns in Canada and increase the share of revenue coming from new customers, by handing Google's AI the distribution and optimization of ads on Search and YouTube from a single campaign, with measurement solid enough to separate the incremental from the already-acquired.",
+  "points_cles": [
+    "Nonbranded Performance Max campaigns driven by Google's AI, in Canada, to win new customers.",
+    "ROAS improved by 8% and acquisition cost down on nonbranded campaigns.",
+    "Share of revenue from new customers rose from 6% to 15%.",
+    "Measured via MMM, experiments, and attribution; case published by Google, still active in 2026 (Level B evidence)."
+  ],
+  "resultats": [
+    {
+      "metrique": "Campaign ROAS (Canada)"
+    },
+    {
+      "metrique": "Share of revenue from new customers"
+    },
+    {
+      "metrique": "Acquisition cost, nonbranded Performance Max campaigns in Canada"
+    }
+  ],
+  "niveau_preuve": {
+    "justification": "Quantified case published by Google (Think with Google) on a named and quantified Performance Max deployment (ROAS +8%, share of new-customer revenue from 6% to 15%, acquisition cost down in Canada), corroborated by established ecommerce press (Digital Commerce 360, July 2026) that covers the same case citing Google. Quantified platform case study equals B."
+  },
+  "stack_technique": [
+    {
+      "detail": "A single campaign where Google's AI optimizes bids and placements and distributes ads across Search, YouTube, and the rest of the Google network. Used here on nonbranded campaigns (brand excluded) to go after new customers."
+    },
+    {
+      "detail": "Ad account operating the restructured shopping campaigns and the acquisition engine."
+    },
+    {
+      "detail": "Combination of Marketing Mix Modeling, experiments (geo/incremental tests), and attribution to measure the real impact and steer optimization toward new customers."
+    }
+  ],
+  "fonctionnement_operationnel": {
+    "cadence": "Continuous, per campaign. Performance Max's AI optimizes bids and placements constantly; measurement (MMM, experiments) is reviewed in cycles to recalibrate the objectives.",
+    "opere_par": "Lululemon's performance marketing / acquisition team, on Google Ads.",
+    "signal_pilote": "First-party data and conversions tagged as new versus existing customers. Without this clean conversion signal and the new/existing distinction, the algorithm optimizes for volume and falls back on already-acquired customers instead of chasing incremental ones.",
+    "etapes": [
+      {
+        "etape": "Restructure the shopping campaigns",
+        "detail": "Reorganize and clean up the Google Ads campaign structure to give the AI a sound base.",
+        "acteur": "marketing"
+      },
+      {
+        "etape": "Build a new-customer acquisition engine",
+        "detail": "Create nonbranded campaigns (brand excluded) and set a new-customer acquisition objective, feeding in first-party data.",
+        "acteur": "marketing"
+      },
+      {
+        "etape": "Distribution and optimization",
+        "detail": "Performance Max chooses bids, audiences, and placements and distributes across Search, YouTube, and the Google network from a single campaign.",
+        "acteur": "IA"
+      },
+      {
+        "etape": "Measure and recalibrate",
+        "detail": "Cross-reference Marketing Mix Modeling, experiments, and attribution to verify incrementality and redirect budget toward what really brings in new customers.",
+        "acteur": "equipe data"
+      }
+    ]
+  },
+  "replication": {
+    "prerequis_data": [
+      "Clean first-party data usable in advertising",
+      "A new-versus-existing-customer distinction in conversion tracking",
+      "Reliable tracking of conversions and revenue by campaign"
+    ],
+    "prerequis_orga": [
+      "A performance marketing team able to run Performance Max day to day",
+      "A measurement function that can build MMM, experiments, and attribution",
+      "A media budget dedicated to nonbranded acquisition"
+    ],
+    "stack_possible": [
+      "Google Performance Max or equivalent (Meta Advantage+)",
+      "Marketing Mix Modeling",
+      "Attribution / geo experiment platform"
+    ],
+    "premiere_etape": "Separate new customers from existing ones in conversion tracking, then launch a nonbranded Performance Max campaign with an explicit new-customer acquisition objective.",
+    "playbook": [
+      {
+        "action": "Clean up and restructure the existing shopping campaigns to give the AI a clean base.",
+        "livrable": "A simplified, readable account structure."
+      },
+      {
+        "action": "Tag conversions to distinguish new customers from existing ones, and connect the first-party data.",
+        "livrable": "An acquisition signal usable by the algorithm."
+      },
+      {
+        "action": "Launch a nonbranded Performance Max campaign with a new-customer acquisition objective.",
+        "livrable": "An acquisition engine in production on Search and YouTube."
+      },
+      {
+        "action": "Set up the measurement trifecta (MMM, experiments, attribution) to validate incrementality.",
+        "livrable": "A reliable read on acquisition cost and the share of new-customer revenue."
+      },
+      {
+        "action": "Reallocate budget toward what actually brings in new customers, then extend to other markets.",
+        "livrable": "An acquisition setup scaled internationally."
+      }
+    ],
+    "equipe": "A performance marketing team (paid acquisition) plus a measurement/analytics profile able to run MMM, experiments, and attribution."
+  },
+  "statut_vivant": {
+    "note": "Case documented by Google and recognized at the Google Search Honours (work acknowledged as early as fall 2024). In July 2026, Digital Commerce 360 confirms that Lululemon continues to use AI-driven Performance Max for acquisition. No signal of withdrawal."
+  },
+  "seo": {
+    "title": "Lululemon: AI-driven Performance Max - ROAS +8% and new-customer acquisition (2025)",
+    "meta_description": "With AI-driven Performance Max on nonbranded campaigns in Canada, Lululemon improved its ROAS by 8% and raised the share of new-customer revenue from 6% to 15%.",
+    "resume_citable": "In 2024-2025 in Canada, Lululemon used Google's AI-driven Performance Max campaigns (brand excluded) to lower its acquisition cost, improve its ROAS by 8%, and raise the share of revenue from new customers from 6% to 15%, a case documented by Google.",
+    "faq": [
+      {
+        "q": "What results did Lululemon get with Performance Max?",
+        "a": "Google reports a ROAS improved by 8% and a lower acquisition cost on nonbranded campaigns in Canada, with the share of revenue from new customers rising from 6% to 15%."
+      },
+      {
+        "q": "What makes the case acquisition-focused rather than retention?",
+        "a": "The campaigns exclude the brand (nonbranded) and the AI is steered toward new-customer acquisition through the new-versus-existing-customer tag, with incremental measurement to verify it."
+      },
+      {
+        "q": "Is the case still active?",
+        "a": "Yes. In July 2026, Digital Commerce 360 confirms that Lululemon continues to use AI-driven Performance Max for acquisition."
+      }
+    ]
+  }
+}

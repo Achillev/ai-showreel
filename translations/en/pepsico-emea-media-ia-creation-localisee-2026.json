@@ -1,0 +1,152 @@
+{
+  "seo": {
+    "title": "PepsiCo EMEA: ad creative localized by AI - 6.5M unique users and CPM down 30% (2026)",
+    "meta_description": "PepsiCo adapts its brand platforms into local creative with Gemini: the Lay's campaign in Benelux reached 6.5M unique users in a month, +4 pts ad recall, CPM 30% below normal.",
+    "resume_citable": "PepsiCo states that its AI-localized Lay's campaign in the Netherlands and Belgium reached 6.5 million unique users in just over a month with a 4 percentage-point increase in ad recall and a cost per thousand impressions around 30% below its typical campaigns, and that AI-powered video campaigns now account for more than 60% of its YouTube Ads activity.",
+    "faq": [
+      {
+        "q": "How does PepsiCo use AI in its ad creative?",
+        "a": "AI comes in at two points. Before creation, Gemini analyzes consumer responses collected in the local language to surface cultural nuances from one country to the next. During creation, the global brand platform is adapted into local variants following a fixed structure, then distributed through automated media buying."
+      },
+      {
+        "q": "What results are published?",
+        "a": "For the Lay's campaign in Benelux: 6.5 million unique users reached in just over a month, a 4 percentage-point increase in ad recall, and a CPM around 30% below the brand's typical campaigns. At regional level: more than 60% of YouTube Ads activity in AI-powered video campaigns, and a YouTube CPM down around 25% year over year."
+      },
+      {
+        "q": "What is the limit of this case?",
+        "a": "Both available sources are Google publications, and Google also supplies the technologies used. No independent corroboration was found, and no sales effect is published: the figures cover reach, recall and media cost."
+      }
+    ]
+  },
+  "pattern": "AI adaptation of a global brand platform into hyper-local creative by market, paired with automated media buying",
+  "etape_parcours": "discovery",
+  "objectif_business": "Make a global brand sound like a local one, without multiplying production cost by the number of markets. PepsiCo runs the same creative platform across dozens of countries where the hook that works is not the same on either side of a border. The system has AI carry the listening work (understanding what makes sense locally) and the adaptation work (producing the variants), while automated media buying places those variants. The economic stake is cost per thousand: gaining local relevance has to show up in CPM and recall, otherwise localization is only overhead.",
+  "points_cles": [
+    "PepsiCo EMEA adapts its brand platforms into local creative with Gemini, then distributes them through automated media buying.",
+    "The Lay's campaign in Benelux reached 6.5 million unique users in a month, with 4 percentage points more ad recall.",
+    "That campaign's cost per thousand impressions came in around 30% below the brand's typical campaigns.",
+    "AI-powered video campaigns account for more than 60% of PepsiCo's YouTube Ads activity."
+  ],
+  "description": "For its Europe, Middle East and Africa region, PepsiCo built an advertising production chain where AI intervenes in two places: before creation, to understand what makes sense locally, and during it, to adapt the same brand platform into country variants. The best documented case is Lay's in Benelux, which had to adapt the global platform \"Joy is a simple recipe\". Since joy is an abstract notion, the teams had Gemini analyze responses from more than 6,000 consumers, feeding in native terms to surface the nuances specific to each country. The model brought out gaps between immediate neighbors: Dutch happiness expressed more through activities such as boating on the canals, Belgian happiness leaning toward cycling culture. The global platform was then adapted into about thirty personalized three-word creatives, built on a fixed structure (action, place, twist), producing hooks as specific as \"koers, kasseien, demarrage\" in Belgium and \"bootje, Oude Delft, familie\" in the Netherlands. Published result: 6.5 million unique users reached in just over a month, 4 percentage points more ad recall, and a cost per thousand impressions around 30% below the brand's typical campaigns. At regional level, PepsiCo states that AI-powered video campaigns account for more than 60% of its YouTube Ads activity, with YouTube CPM down around 25% year over year. Other components are cited at pilot stage: attention moment detection in video for Doritos in the UK, automated campaigns for Lay's in Spain, creative prediction for Lay's in Poland. What the case does not say: the effect on sales, and what the same localized campaign would have delivered without AI.",
+  "resultats": [
+    {
+      "metrique": "Reach and ad recall of the AI-localized Lay's campaign in Benelux, over one month"
+    },
+    {
+      "metrique": "Cost per thousand impressions of the campaign, compared with the brand's typical campaigns"
+    },
+    {
+      "metrique": "Share of AI-powered video campaigns in PepsiCo's YouTube Ads activity"
+    },
+    {
+      "metrique": "Change in YouTube cost per thousand impressions year over year"
+    },
+    {
+      "metrique": "Volume of consumer responses analyzed to feed local creative"
+    }
+  ],
+  "niveau_preuve": {
+    "justification": "Quantified platform case study: both sources are editorial publications by Google covering PepsiCo's work, one on the AI media ecosystem of the EMEA region (March 2026), the other on the Lay's campaign in the Netherlands and Belgium. The figures measure the system itself (reach, recall, CPM of the generated campaign, share of AI-powered video campaigns) and are attributed by name to PepsiCo's EMEA media lead. Honest caveat, which rules out a higher level: both sources belong to the same publisher, which is also the supplier of the technologies used, therefore an interested party. No corroboration by an independent press source was found at collection, and no PepsiCo document repeats these figures. PepsiCo's April 2026 press release on its Google Cloud collaboration was rejected as a source: it covers supply chain and internal tooling, not this marketing system, and using it would have manufactured a corroboration that does not exist."
+  },
+  "stack_technique": [
+    {
+      "detail": "Used to analyze consumer responses and extract cultural nuances by country, then to adapt the global creative platform into local hooks."
+    },
+    {
+      "detail": "Automated video buying format on YouTube. According to PepsiCo, these AI-powered campaigns account for more than 60% of its YouTube Ads activity."
+    },
+    {
+      "detail": "Automated campaigns tested by Lay's in Spain as part of the same ecosystem."
+    },
+    {
+      "detail": "Attention moment detection technology in video, built on Gemini, tested by Doritos in the UK."
+    }
+  ],
+  "fonctionnement_operationnel": {
+    "cadence": "Per campaign for localized creative production; continuous for automated media buying.",
+    "opere_par": "PepsiCo's EMEA media team, with brand teams by market and partner agencies.",
+    "signal_pilote": "Consumer responses collected by market, which ground the local nuance. Without them, localization falls back on national cliches, the main risk of this pattern. On the media side, the signal is CPM and recall, which say whether the local variant earns its cost.",
+    "etapes": [
+      {
+        "etape": "Collecting local insight",
+        "detail": "Consumer responses are gathered by market, in the local language.",
+        "acteur": "marketing"
+      },
+      {
+        "etape": "Analyzing cultural nuance",
+        "detail": "Gemini analyzes the responses, with native terms as input, to surface what differs from one country to the next.",
+        "acteur": "AI"
+      },
+      {
+        "etape": "Creative adaptation",
+        "detail": "The global brand platform is adapted into local variants following a fixed structure.",
+        "acteur": "AI"
+      },
+      {
+        "etape": "Brand validation",
+        "detail": "Variants are reviewed before distribution, since multiplying versions multiplies the chances of drift.",
+        "acteur": "marketing"
+      },
+      {
+        "etape": "Automated distribution",
+        "detail": "Creative goes out in video campaigns and automated buying, with geographic and contextual targeting.",
+        "acteur": "AI"
+      },
+      {
+        "etape": "Reading the results",
+        "detail": "Reach, recall and CPM are compared with the brand's typical campaigns.",
+        "acteur": "data team"
+      }
+    ]
+  },
+  "replication": {
+    "prerequis_data": [
+      "Collection of consumer verbatims by market, in the local language and untranslated",
+      "A brand platform explicit enough to be adapted without dissolving",
+      "A reference set of brand constraints that can be enforced against generated variants",
+      "Comparative measurement by market between localized creative and standard creative"
+    ],
+    "prerequis_orga": [
+      "A clear mandate between the central level and markets on who validates what",
+      "A brand review capable of keeping pace with variant production",
+      "A transparency policy on generated content where the format warrants it",
+      "A media team able to read CPM per variant, not only per campaign"
+    ],
+    "stack_possible": [
+      "LLM for verbatim analysis and production of hook variants",
+      "Asset library and brand rules to frame generation",
+      "Automated media buying with geographic and contextual targeting",
+      "Recall and reach measurement by market"
+    ],
+    "premiere_etape": "Collect consumer verbatims in the language of the market, without going through translation. The core of this case is not image generation, it is having given the model untranslated local material: that is where the gaps between neighboring countries come from, and those gaps are what make the hook credible.",
+    "playbook": [
+      {
+        "action": "Collect consumer responses in the local language on the brand territory.",
+        "livrable": "A usable verbatim corpus per market."
+      },
+      {
+        "action": "Surface cultural gaps between neighboring markets rather than what they share.",
+        "livrable": "A list of situations and references specific to each country."
+      },
+      {
+        "action": "Define a fixed creative structure that bounds the adaptation.",
+        "livrable": "A variant template, reproducible and controllable."
+      },
+      {
+        "action": "Produce the variants and put them through brand review before distribution.",
+        "livrable": "A validated set of local creative."
+      },
+      {
+        "action": "Distribute through automated buying and compare reach, recall and CPM with reference campaigns.",
+        "livrable": "A quantified reading of what localization gains, market by market."
+      }
+    ],
+    "equipe": "A central media team holding the framework and the measurement, brand leads by market for local validation, a creative profile able to define the adaptation structure, and an agency or production team for execution."
+  },
+  "statut_vivant": {
+    "note": "The March 2026 article describes the system in the present tense and at the scale of the EMEA region, with pilots running across several brands and countries. The Lay's campaign itself is older: it is documented in a case study published in January 2025 and serves as an illustration of the system. No signal of withdrawal, but the last confirmation dates from March 2026: to be re-checked before the end of 2026."
+  },
+  "transposable_ue": {
+    "note": "The case is already European: it is run by PepsiCo's media organization for Europe, the Middle East and Africa, and the documented campaign runs in the Netherlands and Belgium. The constraints are those of any generative AI advertising system in Europe. The AI Act requires transparency on generated content where the format could suggest a real capture. GDPR applies to the analysis of consumer responses feeding creative production, even in aggregate, and to geographic and contextual targeting. Point of attention specific to the pattern: hyper-local creative multiplies variants, and therefore the opportunities to say in one language what would not have been approved in another. Brand control has to scale at the same time as production."
+  }
+}

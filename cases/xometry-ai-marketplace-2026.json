@@ -1,0 +1,290 @@
+{
+  "id": "xometry-ai-marketplace-2026",
+  "type_fiche": "succes",
+  "marque": "Xometry",
+  "groupe": "Xometry, Inc.",
+  "industrie": "tech_saas",
+  "marches_deploiement": [
+    "Etats-Unis",
+    "Europe"
+  ],
+  "transposable_ue": {
+    "flag": "oui",
+    "note": "Xometry opere deja une marketplace en Europe, le pattern y est donc actif. En UE, les modeles qui exploitent les donnees d'acheteurs pour la personnalisation et le ciblage acquisition imposent une base legale RGPD claire ; l'AI Act ne classe pas ce type d'optimisation marketplace en risque eleve, mais impose de la transparence."
+  },
+  "metier": "e-commerce et marketplace (conversion et acquisition)",
+  "intervenants": [
+    {
+      "nom": "James Miln",
+      "role": "Chief Financial Officer, Xometry",
+      "source_ref": "S1"
+    }
+  ],
+  "axes": {
+    "levier": "activation_conversion",
+    "touchpoints": [
+      "marketplace web Xometry",
+      "moteur de devis instantane"
+    ],
+    "etape_parcours": "consideration",
+    "famille": "optimisation_automatisation",
+    "pattern": "marketplace B2B optimisee par IA (devis et recommandations)",
+    "type_ia": [
+      "modeles de prediction de couts",
+      "systeme de recommandation",
+      "optimisation de conversion"
+    ],
+    "plateforme_stack": [
+      "custom/in-house"
+    ],
+    "objectif_metrique": [
+      "taux de conversion",
+      "nouveaux acheteurs nets",
+      "cout d'acquisition"
+    ]
+  },
+  "implementation": "custom",
+  "stack_technique": [
+    {
+      "nom": "Moteur de devis IA Xometry (costing / sourcing)",
+      "categorie": "outil",
+      "detail": "Modeles IA proprietaires de prediction de couts, de sourcing et de recommandation de process, entraines sur une decennie de donnees de devis et de pieces. Les sources ne nomment pas de LLM tiers.",
+      "url": "https://www.xometry.com"
+    },
+    {
+      "nom": "Couche martech et personnalisation",
+      "categorie": "outil",
+      "detail": "Stack marketing qui personnalise l'acquisition et le timing des interventions commerciales pour augmenter les acheteurs nets tout en baissant la part de depense publicitaire.",
+      "url": "https://www.xometry.com"
+    }
+  ],
+  "objectif_business": "Augmenter le taux de conversion et la valeur par acheteur sur la marketplace en fiabilisant les devis instantanes et les recommandations de fabrication, tout en baissant le cout d'acquisition grace au martech et a la personnalisation.",
+  "points_cles": [
+    "Modeles IA proprietaires de Xometry pilotant devis, sourcing et recommandations de process sur la marketplace.",
+    "Precision de prediction des couts CNC amelioree d'environ 15%, plus de 85% des recommandations acceptees.",
+    "Martech et personnalisation: pres de 4 000 nouveaux acheteurs nets au T2 2026, plus haut en 10 trimestres.",
+    "Preuve A (earnings call T2 2026 plus communique officiel), statut vivant confirme."
+  ],
+  "description": "Xometry exploite une marketplace de fabrication a la demande ou un acheteur telecharge une piece et recoit un devis instantane. Au deuxieme trimestre 2026, l'entreprise a annonce des ameliorations de ses modeles IA proprietaires qui gerent le costing, le sourcing et les recommandations de process. Le modele lit les parametres de chaque piece et livre environ 15% de precision en plus sur la prediction des couts d'usinage CNC, ce qui renforce la confiance de l'acheteur et la conversion. Les acheteurs acceptent desormais la recommandation de process plus de 85% du temps, avec les plus gros gains chez les nouveaux clients. En parallele, les equipes marketing ont renforce le martech et la personnalisation, ce qui a aide a generer pres de 4 000 acheteurs nets sur le trimestre, le meilleur niveau en dix trimestres, tout en ramenant la depense publicitaire de la marketplace a un plus bas record en part du chiffre d'affaires. Le chiffre d'affaires du trimestre a atteint 229 millions de dollars, en hausse de 41%, la marketplace progressant de 45% et les acheteurs actifs atteignant 89 557, en hausse de 20%.",
+  "resultats": [
+    {
+      "metrique": "Precision de prediction des couts CNC apres upgrade des modeles IA",
+      "valeur": "+15% environ",
+      "citation_exacte": "an approximately 15% improvement in CNC cost prediction accuracy",
+      "source_ref": "S1"
+    },
+    {
+      "metrique": "Taux d'acceptation des recommandations de process par les acheteurs",
+      "valeur": "85%+",
+      "citation_exacte": "Buyers are now accepting the recommendation more than 85% of the time",
+      "source_ref": "S1"
+    },
+    {
+      "metrique": "Nouveaux acheteurs nets au T2 2026 (plus haut en 10 trimestres)",
+      "valeur": "~4 000",
+      "citation_exacte": "strengthened our martech and personalization capabilities, helping drive almost 4,000 net adds",
+      "source_ref": "S1"
+    },
+    {
+      "metrique": "Role des modeles IA sur la performance marketplace",
+      "valeur": "conversion + croissance",
+      "citation_exacte": "Our AI models are effectively optimizing conversion, buyer growth and market share gains",
+      "source_ref": "S1"
+    },
+    {
+      "metrique": "Acheteurs actifs de la marketplace (au 30 juin 2026)",
+      "valeur": "+20%",
+      "citation_exacte": "Marketplace Active Buyers increased 20%",
+      "source_ref": "S2"
+    }
+  ],
+  "niveau_preuve": {
+    "niveau": "A",
+    "justification": "Resultats divulgues par Xometry dans son earnings call du T2 2026 (transcription verbatim) et corrobores par son communique officiel de resultats trimestriels. Les chiffres de conversion, de precision des modeles et d'acheteurs nets sont attribues nommement par les dirigeants dans le cadre du reporting financier."
+  },
+  "dates": {
+    "lancement": "2017 (moteur de devis instantane) ; ameliorations majeures des modeles IA au T2 2026",
+    "derniere_confirmation_activite": "2026-08",
+    "verifie_le": "2026-08-16",
+    "revoir_apres": "2027-02-16"
+  },
+  "statut_vivant": {
+    "statut": "confirme",
+    "note": "Modeles IA au coeur de la marketplace, mis en avant dans les resultats du T2 2026 avec chiffres de conversion et d'acquisition en croissance. Aucun signal de retrait."
+  },
+  "sources": [
+    {
+      "ref": "S1",
+      "type": "earnings_call",
+      "fiabilite": "T1_primaire",
+      "titre": "Xometry (XMTR) Q2 2026 Earnings Call Transcript",
+      "url": "https://www.fool.com/earnings/call-transcripts/2026/08/11/xometry-xmtr-q2-2026-earnings-call-transcript/",
+      "date_publication": "2026-08-11",
+      "consulte_le": "2026-08-16"
+    },
+    {
+      "ref": "S2",
+      "type": "document_officiel_sec",
+      "fiabilite": "T1_primaire",
+      "titre": "Xometry Reports Record Second Quarter 2026 Results",
+      "url": "https://investors.xometry.com/news-releases/news-release-details/xometry-reports-record-second-quarter-2026-results",
+      "date_publication": "2026-08-04",
+      "consulte_le": "2026-08-16"
+    },
+    {
+      "ref": "S3",
+      "type": "presse",
+      "fiabilite": "T4_secondaire",
+      "titre": "Xometry Q2 2026 slides show 41% revenue growth, raised outlook",
+      "url": "https://www.investing.com/news/company-news/xometry-q2-2026-slides-show-41-revenue-growth-raised-outlook-93CH-4835067",
+      "date_publication": "2026-08-04",
+      "consulte_le": "2026-08-16"
+    }
+  ],
+  "fonctionnement_operationnel": {
+    "cadence": "Temps reel sur chaque devis ; reentrainement et upgrades des modeles par cycles (ameliorations majeures livrees au T2 2026)",
+    "opere_par": "Equipe data et produit de Xometry, en interne, en lien avec le marketing pour la couche acquisition",
+    "signal_pilote": "Les parametres de la piece uploadee et une decennie de donnees de devis historiques. Sans cette base de donnees proprietaire, la prediction de cout et les recommandations perdent leur precision.",
+    "etapes": [
+      {
+        "etape": "Upload de la piece",
+        "detail": "L'acheteur telecharge un fichier de piece a fabriquer sur la marketplace.",
+        "acteur": "client"
+      },
+      {
+        "etape": "Devis instantane",
+        "detail": "Le modele IA lit les parametres, predit le cout d'usinage et propose un prix, avec une precision amelioree d'environ 15% sur le CNC.",
+        "acteur": "IA"
+      },
+      {
+        "etape": "Recommandation de process",
+        "detail": "Le modele recommande le procede de fabrication ; l'acheteur l'accepte plus de 85% du temps, surtout les nouveaux clients.",
+        "acteur": "IA"
+      },
+      {
+        "etape": "Acquisition personnalisee",
+        "detail": "Le martech cible et personnalise l'acquisition et le timing des interventions commerciales pour augmenter les acheteurs nets a moindre cout.",
+        "acteur": "marketing"
+      },
+      {
+        "etape": "Suivi et upgrade des modeles",
+        "detail": "L'equipe data suit la conversion et la precision, et livre des ameliorations de modeles par cycles.",
+        "acteur": "equipe data"
+      }
+    ]
+  },
+  "schema_flow": {
+    "statut": "approche_type",
+    "noeuds": [
+      {
+        "id": "buyer",
+        "role_generique": "site_app",
+        "label": "Acheteur sur la marketplace Xometry"
+      },
+      {
+        "id": "quoting",
+        "role_generique": "modele_ia",
+        "label": "Moteur de devis IA (costing / sourcing)"
+      },
+      {
+        "id": "recos",
+        "role_generique": "modele_ia",
+        "label": "Modele de recommandation de process"
+      },
+      {
+        "id": "data",
+        "role_generique": "data_source",
+        "label": "Donnees proprietaires (decennie de devis et de pieces)"
+      },
+      {
+        "id": "martech",
+        "role_generique": "paid_platform",
+        "label": "Martech et personnalisation acquisition"
+      }
+    ],
+    "liens": [
+      [
+        "buyer",
+        "quoting"
+      ],
+      [
+        "data",
+        "quoting"
+      ],
+      [
+        "quoting",
+        "buyer",
+        "devis instantane"
+      ],
+      [
+        "data",
+        "recos"
+      ],
+      [
+        "recos",
+        "buyer",
+        "reco de process"
+      ],
+      [
+        "martech",
+        "buyer",
+        "acquisition ciblee"
+      ]
+    ]
+  },
+  "replication": {
+    "statut_epistemique": "infere",
+    "prerequis_data": [
+      "Historique riche de devis et de pieces pour entrainer la prediction de cout",
+      "Donnees de conversion et d'acceptation des recommandations",
+      "Signaux comportementaux d'acheteurs pour le ciblage acquisition"
+    ],
+    "prerequis_orga": [
+      "Equipe data et produit capable de maintenir et reentrainer les modeles",
+      "Alignement entre data et marketing sur la boucle conversion / acquisition",
+      "Gouvernance de la qualite des devis automatiques"
+    ],
+    "stack_possible": [
+      "Modeles de prediction de cout maison ou sur infra cloud ML",
+      "Moteur de recommandation",
+      "Couche martech de personnalisation et de scoring d'acheteurs"
+    ],
+    "premiere_etape": "Mesurer la conversion actuelle des devis et le taux d'acceptation des recommandations, puis cibler d'abord la fiabilisation de la prediction de cout sur la categorie la plus volumineuse.",
+    "playbook": [
+      {
+        "action": "Consolider l'historique de devis et de pieces et mesurer la precision de cout actuelle par categorie de fabrication.",
+        "livrable": "Base de reference de precision et de conversion par categorie."
+      },
+      {
+        "action": "Entrainer un modele de prediction de cout sur la categorie la plus volumineuse et le tester en shadow avant mise en production.",
+        "livrable": "Modele de costing valide sur une categorie."
+      },
+      {
+        "action": "Ajouter un modele de recommandation de process et mesurer le taux d'acceptation, en particulier chez les nouveaux acheteurs.",
+        "livrable": "Recommandations en production avec suivi d'acceptation."
+      },
+      {
+        "action": "Brancher une couche martech de personnalisation pour cibler l'acquisition et le timing commercial.",
+        "livrable": "Acquisition personnalisee avec suivi du cout par acheteur net."
+      }
+    ],
+    "equipe": "Une equipe data/ML (prediction de cout, recommandation) plus une equipe martech pour la couche acquisition, en lien avec le produit marketplace."
+  },
+  "seo": {
+    "slug": "xometry-ai-marketplace-2026",
+    "title": "Xometry : marketplace pilotee par IA - +15% de precision de cout CNC, ~4 000 acheteurs nets (2026)",
+    "meta_description": "Au T2 2026, les modeles IA de Xometry ont ameliore la precision de cout CNC d'environ 15% et le martech a genere pres de 4 000 acheteurs nets.",
+    "resume_citable": "Au deuxieme trimestre 2026, Xometry a ameliore d'environ 15% la precision de prediction des couts CNC de ses modeles IA, porte l'acceptation des recommandations de process au-dela de 85%, et genere pres de 4 000 acheteurs nets via martech et personnalisation, sur un chiffre d'affaires de 229 millions de dollars en hausse de 41%.",
+    "faq": [
+      {
+        "q": "Comment l'IA de Xometry ameliore-t-elle la conversion ?",
+        "a": "Ses modeles fiabilisent le devis instantane, avec environ 15% de precision en plus sur le cout CNC, et recommandent le process de fabrication, accepte plus de 85% du temps."
+      },
+      {
+        "q": "Quel effet sur l'acquisition ?",
+        "a": "Les equipes marketing ont renforce le martech et la personnalisation, ce qui a aide a generer pres de 4 000 acheteurs nets au T2 2026, tout en baissant la part de depense publicitaire."
+      }
+    ]
+  },
+  "logo_domain": "xometry.com"
+}

@@ -1,0 +1,257 @@
+{
+  "id": "choice-hotels-easybid-rfp-2026",
+  "type_fiche": "succes",
+  "marque": "Choice Hotels",
+  "groupe": "Choice Hotels International, Inc.",
+  "industrie": "voyage_hospitality",
+  "marches_deploiement": [
+    "Etats-Unis"
+  ],
+  "transposable_ue": {
+    "flag": "oui_avec_adaptations",
+    "note": "Deploiement sur le reseau de franchises de Choice Hotels, essentiellement aux Etats-Unis. En UE, une IA qui traite les donnees des organisateurs d'evenements et repond aux appels d'offres impose une base legale RGPD ; l'AI Act demande de la transparence sur l'usage de l'IA. Le pattern de reponse IA aux RFP groupes est transposable, l'architecture de donnees et la conformite sont a refaire."
+  },
+  "metier": "vente groupes et e-commerce (conversion)",
+  "axes": {
+    "levier": "activation_conversion",
+    "touchpoints": [
+      "plateforme EasyBid (RFP groupes)",
+      "property management system"
+    ],
+    "etape_parcours": "achat",
+    "famille": "optimisation_automatisation",
+    "pattern": "reponse IA aux appels d'offres groupes",
+    "type_ia": [
+      "automatisation IA de reponse aux RFP",
+      "assistant operationnel IA"
+    ],
+    "plateforme_stack": [
+      "custom/in-house"
+    ],
+    "objectif_metrique": [
+      "taux de conversion des RFP groupes",
+      "revenu groupes",
+      "charge de support operationnel"
+    ]
+  },
+  "implementation": "custom",
+  "stack_technique": [
+    {
+      "nom": "EasyBid",
+      "categorie": "outil",
+      "detail": "Plateforme IA qui repond et optimise les appels d'offres groupes (RFP) pour les hotels franchises, afin d'ameliorer la conversion des demandes en reservations.",
+      "url": "https://www.choicehotels.com"
+    },
+    {
+      "nom": "Charlie",
+      "categorie": "outil",
+      "detail": "Assistant IA integre au property management system de l'hotel, qui reduit les demandes de support operationnel des equipes.",
+      "url": "https://www.choicehotels.com"
+    }
+  ],
+  "objectif_business": "Gagner plus de business groupes pour les hotels franchises en automatisant et en optimisant la reponse aux appels d'offres, et liberer du temps operationnel en hotel via un assistant IA integre au systeme de gestion.",
+  "points_cles": [
+    "EasyBid, plateforme IA de reponse aux RFP groupes, deployee sur le reseau de franchises Choice Hotels.",
+    "Conversion des RFP groupes amelioree de 360 points de base, contribuant a +16% de revenu groupes au T2 2026.",
+    "Charlie, assistant IA dans le PMS, reduit d'environ 40% les demandes de support operationnel en pilote.",
+    "Preuve A (earnings call T2 2026 plus communique officiel du 7 mai 2026), statut confirme."
+  ],
+  "description": "Choice Hotels a mis a disposition de ses hotels franchises une plateforme IA, EasyBid, qui traite les appels d'offres groupes. Quand un organisateur d'evenement envoie une demande, EasyBid aide a produire et optimiser la reponse, ce qui augmente la probabilite de convertir la demande en reservation. La marque annonce une amelioration de la conversion des RFP groupes de 360 points de base, qui a contribue a une croissance de 16% du revenu groupes au deuxieme trimestre 2026. En parallele, un assistant IA integre au property management system, appele Charlie, a reduit d'environ 40% les demandes de support operationnel dans un pilote precoce, ce qui libere du temps pour les equipes en hotel. Les deux outils ont ete devoiles publiquement le 7 mai 2026 et leurs premiers resultats chiffres ont ete communiques lors de l'earnings call du T2 2026, le 4 aout 2026.",
+  "resultats": [
+    {
+      "metrique": "Conversion des RFP groupes via EasyBid",
+      "valeur": "+360 bps",
+      "citation_exacte": "improved group RFP conversion by 360 basis points",
+      "source_ref": "S1"
+    },
+    {
+      "metrique": "Croissance du revenu groupes au T2 2026",
+      "valeur": "+16%",
+      "citation_exacte": "16% year-over-year growth in group revenue in the second quarter",
+      "source_ref": "S1"
+    },
+    {
+      "metrique": "Reduction des demandes de support operationnel (pilote Charlie)",
+      "valeur": "~40%",
+      "citation_exacte": "reduced requests for operational support by about 40% in an early pilot",
+      "source_ref": "S1"
+    }
+  ],
+  "niveau_preuve": {
+    "niveau": "A",
+    "justification": "Chiffres de conversion et de revenu groupes divulgues par le dirigeant de Choice Hotels lors de l'earnings call du T2 2026 (transcription verbatim), dans le cadre du reporting financier. L'existence et le perimetre des outils EasyBid et Charlie sont confirmes par le communique officiel de la marque du 7 mai 2026."
+  },
+  "dates": {
+    "lancement": "2026-05 (annonce publique d'EasyBid et Charlie)",
+    "derniere_confirmation_activite": "2026-08",
+    "verifie_le": "2026-08-16",
+    "revoir_apres": "2027-02-16"
+  },
+  "statut_vivant": {
+    "statut": "confirme",
+    "note": "Outils devoiles en mai 2026 et premiers resultats chiffres communiques a l'earnings call du T2 2026. Charlie encore au stade pilote precoce ; EasyBid deja en production avec impact conversion mesure. Aucun signal de retrait."
+  },
+  "sources": [
+    {
+      "ref": "S1",
+      "type": "earnings_call",
+      "fiabilite": "T1_primaire",
+      "titre": "Choice Hotels (CHH) Q2 2026 Earnings Call Transcript",
+      "url": "https://www.fool.com/earnings/call-transcripts/2026/08/12/choice-hotels-chh-q2-2026-earnings-call-transcript/",
+      "date_publication": "2026-08-12",
+      "consulte_le": "2026-08-16"
+    },
+    {
+      "ref": "S2",
+      "type": "blog_officiel",
+      "fiabilite": "T1_primaire",
+      "titre": "Choice Hotels International Unveils New Technologies and AI-Powered Solutions to Help Owners Capture More Demand and Operational Excellence",
+      "url": "https://media.choicehotels.com/2026-05-07-Choice-Hotels-International-Unveils-New-Technologies-and-AI-Powered-Solutions-to-Help-Owners-Capture-More-Demand-and-Operational-Excellence",
+      "date_publication": "2026-05-07",
+      "consulte_le": "2026-08-16"
+    },
+    {
+      "ref": "S3",
+      "type": "presse",
+      "fiabilite": "T3_presse_etablie",
+      "titre": "Choice Hotels International Inc (CHH) (Q2 2026) Earnings Call Highlights",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/choice-hotels-international-inc-chh-210813386.html",
+      "date_publication": "2026-08",
+      "consulte_le": "2026-08-16"
+    }
+  ],
+  "fonctionnement_operationnel": {
+    "cadence": "En continu, a chaque appel d'offres groupe recu ; support operationnel en temps reel via l'assistant Charlie",
+    "opere_par": "Equipes de vente groupes des hotels franchises, appuyees par la plateforme IA, et equipes en hotel pour Charlie",
+    "signal_pilote": "Le contenu de l'appel d'offres (dates, volume, besoins de l'organisateur) et l'historique des reponses gagnantes. Sans donnees de RFP et de resultats passes, l'optimisation de la reponse perd sa pertinence.",
+    "etapes": [
+      {
+        "etape": "Reception du RFP",
+        "detail": "Un organisateur d'evenement envoie une demande de groupe a un hotel franchise.",
+        "acteur": "client"
+      },
+      {
+        "etape": "Reponse optimisee",
+        "detail": "EasyBid aide a produire et optimiser la reponse a l'appel d'offres pour maximiser la conversion.",
+        "acteur": "IA"
+      },
+      {
+        "etape": "Conversion et suivi",
+        "detail": "L'equipe de vente groupes finalise la reservation ; la conversion s'ameliore de 360 points de base.",
+        "acteur": "hotel"
+      },
+      {
+        "etape": "Support operationnel en hotel",
+        "detail": "Charlie, dans le property management system, traite des demandes de support et en reduit le volume d'environ 40% en pilote.",
+        "acteur": "IA"
+      }
+    ]
+  },
+  "schema_flow": {
+    "statut": "approche_type",
+    "noeuds": [
+      {
+        "id": "planner",
+        "role_generique": "humain",
+        "label": "Organisateur d'evenement (RFP groupe)"
+      },
+      {
+        "id": "easybid",
+        "role_generique": "modele_ia",
+        "label": "EasyBid (reponse IA aux RFP)"
+      },
+      {
+        "id": "hotel",
+        "role_generique": "site_app",
+        "label": "Hotel franchise et systeme de reservation"
+      },
+      {
+        "id": "pms",
+        "role_generique": "site_app",
+        "label": "Property Management System"
+      },
+      {
+        "id": "charlie",
+        "role_generique": "modele_ia",
+        "label": "Charlie (assistant IA operationnel)"
+      }
+    ],
+    "liens": [
+      [
+        "planner",
+        "easybid",
+        "envoi du RFP"
+      ],
+      [
+        "easybid",
+        "hotel",
+        "reponse optimisee"
+      ],
+      [
+        "hotel",
+        "planner",
+        "conversion en reservation"
+      ],
+      [
+        "charlie",
+        "pms",
+        "support reduit"
+      ]
+    ]
+  },
+  "replication": {
+    "statut_epistemique": "infere",
+    "prerequis_data": [
+      "Historique des appels d'offres groupes et de leurs issues (gagne / perdu)",
+      "Donnees de tarification et de disponibilite par hotel",
+      "Referentiel des demandes de support operationnel pour l'assistant en hotel"
+    ],
+    "prerequis_orga": [
+      "Equipes de vente groupes pretes a integrer une aide IA dans leur reponse aux RFP",
+      "Gouvernance de la qualite et de la conformite des reponses automatisees",
+      "Accompagnement des franchises pour l'adoption des outils"
+    ],
+    "stack_possible": [
+      "Moteur d'optimisation de reponse aux RFP",
+      "Assistant conversationnel integre au PMS",
+      "Couche data de tarification et de disponibilite"
+    ],
+    "premiere_etape": "Cartographier le taux de conversion actuel des RFP groupes et les motifs de perte, puis tester une aide IA a la reponse sur un segment d'hotels avant de generaliser.",
+    "playbook": [
+      {
+        "action": "Consolider l'historique des RFP groupes et mesurer le taux de conversion et les motifs de perte.",
+        "livrable": "Base de reference de conversion des RFP par segment."
+      },
+      {
+        "action": "Construire une aide IA a la reponse aux RFP et la tester sur un groupe pilote d'hotels.",
+        "livrable": "Outil de reponse teste avec suivi de conversion."
+      },
+      {
+        "action": "Generaliser aux hotels franchises avec accompagnement a l'adoption et suivi du revenu groupes.",
+        "livrable": "Plateforme de reponse aux RFP en production sur le reseau."
+      },
+      {
+        "action": "Ajouter un assistant IA operationnel dans le PMS pour reduire la charge de support en hotel.",
+        "livrable": "Assistant operationnel en pilote avec suivi du volume de demandes."
+      }
+    ],
+    "equipe": "Une equipe produit et data pour l'outil de reponse aux RFP et l'assistant PMS, en lien avec les equipes de vente groupes et le reseau de franchises."
+  },
+  "seo": {
+    "slug": "choice-hotels-easybid-rfp-2026",
+    "title": "Choice Hotels : EasyBid, reponse IA aux RFP groupes - +360 bps de conversion (2026)",
+    "meta_description": "La plateforme IA EasyBid de Choice Hotels a ameliore la conversion des RFP groupes de 360 points de base, contribuant a +16% de revenu groupes au T2 2026.",
+    "resume_citable": "Au deuxieme trimestre 2026, la plateforme IA EasyBid de Choice Hotels a ameliore la conversion des appels d'offres groupes de 360 points de base, contribuant a une hausse de 16% du revenu groupes, tandis que l'assistant IA Charlie reduisait d'environ 40% les demandes de support operationnel en pilote.",
+    "faq": [
+      {
+        "q": "Qu'est-ce qu'EasyBid chez Choice Hotels ?",
+        "a": "Une plateforme IA qui aide les hotels franchises a repondre et optimiser les appels d'offres groupes, ce qui a ameliore la conversion de 360 points de base au T2 2026."
+      },
+      {
+        "q": "Que fait l'assistant IA Charlie ?",
+        "a": "Integre au property management system, Charlie a reduit d'environ 40% les demandes de support operationnel dans un pilote precoce, liberant du temps pour les equipes en hotel."
+      }
+    ]
+  },
+  "logo_domain": "choicehotels.com"
+}

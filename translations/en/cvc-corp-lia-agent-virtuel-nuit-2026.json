@@ -1,0 +1,138 @@
+{
+  "seo": {
+    "title": "CVC Corp: Lia, the AI agent that sells overnight for its stores - 1.3M interactions a month (2026)",
+    "meta_description": "CVC Corp runs Lia, an AI agent that talks to customers while its travel stores are closed, qualifies leads and hands them to consultants: 1.3M interactions in a month, 50% engagement.",
+    "resume_citable": "Reporting its second quarter 2026 results on 13 August 2026, Brazilian travel distributor CVC Corp said its virtual agent Lia, which talks to customers while its stores are closed and qualifies leads for sales consultants, recorded 1.3 million interactions over the previous month, with 50% of those customers subsequently engaging with a consultant in store.",
+    "faq": [
+      {
+        "q": "What does Lia, CVC Corp's AI agent, do?",
+        "a": "Lia talks to customers while the store network is closed, roughly from 10 p.m. to 10 a.m. It understands the travel project, qualifies the lead and hands the file to sales consultants, who take over when the stores open."
+      },
+      {
+        "q": "What figures does CVC Corp attribute to Lia?",
+        "a": "1.3 million interactions between Lia and customers over the previous month, 50% of customers who interacted with Lia subsequently engaging with a consultant in store, and a 150% increase in conversion compared with the period before Lia, according to management."
+      },
+      {
+        "q": "What is the limit of this case?",
+        "a": "The 150% conversion increase is an executive claim made on an earnings call, with no published baseline or detailed measurement method. The quarter itself was financially down (net revenue of 319.5 million reais, minus 6.5%), a decline not attributed to AI by any source."
+      }
+    ]
+  },
+  "pattern": "conversational agent covering the hours when the physical network is closed, qualifying leads and handing them to salespeople at opening",
+  "etape_parcours": "consideration and purchase",
+  "objectif_business": "Recover demand that shows up when the physical network is closed. CVC Corp sells travel through a network of stores whose value rests on the consultant, but whose opening hours let every intent expressed in the evening or overnight walk away. Lia occupies that window: it answers, understands the project, qualifies the lead, and the consultant finds a prepared file in the morning rather than a cold form. The commercial bet is that in-store conversion rises because the customer has already moved forward, not because the salesperson works faster.",
+  "description": "CVC Corp is Brazil's main travel distribution network, built on a footprint of physical stores. Since early 2026 the company has run Lia, a virtual agent that takes over customer channels when the stores are closed, roughly from 10 p.m. to 10 a.m. according to management's description on the earnings call. Lia talks to the customer, understands the travel project, qualifies the lead, and passes that work to consultants at opening. The mechanism is therefore not end-to-end automated selling: it is an overnight relay whose output is a better prepared sales conversation. The figures given at the second quarter 2026 results disclosure on 13 August 2026 cover the previous month: 1.3 million interactions between Lia and customers, and 50% engagement, management specifying that half of the customers who interacted with Lia went on to engage with a consultant in store. The executive further states that conversion has grown 150% compared with the period before Lia. The quarter's financial context is difficult on other grounds: net revenue fell 6.5% to 319.5 million reais and the adjusted net loss widened to 51.3 million reais, driven notably by higher airfares. What the case does not say: the exact baseline behind the conversion figure, the scope of channels Lia covers, and how much of the network is involved.",
+  "points_cles": [
+    "Lia is CVC Corp's virtual agent, talking to customers when the stores are closed.",
+    "1.3 million interactions between Lia and customers over the previous month.",
+    "50% of customers who interacted with Lia went on to engage with a consultant in store.",
+    "Management puts the increase in conversion since Lia went live at 150%."
+  ],
+  "resultats": [
+    {
+      "metrique": "Volume of interactions between the virtual agent Lia and customers over the previous month"
+    },
+    {
+      "metrique": "Share of customers who interacted with Lia and subsequently engaged with a consultant in store"
+    },
+    {
+      "metrique": "Increase in conversion since Lia went live, according to management"
+    },
+    {
+      "metrique": "Time window covered by the agent, when the physical network is closed"
+    }
+  ],
+  "niveau_preuve": {
+    "justification": "The figures are those given by CVC Corp management at the second quarter 2026 results disclosure on 13 August 2026, which is a level A event by nature. The level retained is B because the only source reached carrying the statements about Lia is a secondary transcript of the earnings call (Investing.com), the company's primary document not having been obtained at collection. The figures do measure the system itself (interactions with the agent, engagement of customers who went through it, conversion before and after it went live) and not company context: the quarter's financial results, which are down, are cited as context and are not attributed to AI by any source, either favorably or unfavorably. Honest caveat on the most striking figure: the 150% increase in conversion is an executive claim with no published baseline or measurement method, and it is reported as such rather than as an independently measured result."
+  },
+  "stack_technique": [
+    {
+      "detail": "CVC Corp's customer virtual agent, in production since early 2026. It talks to customers while the stores are closed, qualifies requests and prepares the consultants' work for reopening."
+    },
+    {
+      "detail": "Sales platform described by management as designed AI first, in which Lia is meant to carry the customer relationship and lead qualification."
+    }
+  ],
+  "fonctionnement_operationnel": {
+    "cadence": "Real time over the window when the network is closed, with a handover to consultants when the stores open.",
+    "opere_par": "CVC Corp's digital teams for the agent, the store network and its consultants for picking the file back up.",
+    "signal_pilote": "The quality of the qualification produced overnight. If the agent hands over an incomplete or misunderstood file, the consultant starts from scratch in the morning and the gain disappears. Consultant availability at reopening to handle the qualified flow also conditions everything else.",
+    "etapes": [
+      {
+        "etape": "Contact outside opening hours",
+        "detail": "The customer reaches out to CVC when the stores are closed and enters a conversation with Lia.",
+        "acteur": "customer"
+      },
+      {
+        "etape": "Qualifying the project",
+        "detail": "Lia talks through the travel project and qualifies the lead.",
+        "acteur": "AI"
+      },
+      {
+        "etape": "Building the file",
+        "detail": "The collected elements are structured and attached to the customer for in-store pickup.",
+        "acteur": "AI"
+      },
+      {
+        "etape": "Handover",
+        "detail": "At opening, the consultant picks up a file already qualified rather than a cold contact.",
+        "acteur": "store consultant"
+      },
+      {
+        "etape": "In-store conversion",
+        "detail": "The consultant closes the sale; post-Lia engagement is tracked as the system's metric.",
+        "acteur": "store consultant"
+      }
+    ]
+  },
+  "replication": {
+    "prerequis_data": [
+      "An inventory reference that can be queried in conversation (destinations, availability, conditions)",
+      "A reliable link between the overnight conversation and the customer file picked up in store",
+      "Sales history to define what actually counts as a qualified lead",
+      "Measurement separating customers who went through the agent from those who did not"
+    ],
+    "prerequis_orga": [
+      "A physical network whose opening hours leave a window of untreated demand",
+      "Agreement from the network that the agent prepares the sale rather than taking it",
+      "Processing capacity at reopening, without which the qualified flow goes stale",
+      "Clear disclosure to the customer that they are talking to a machine"
+    ],
+    "stack_possible": [
+      "Conversational agent connected to the inventory reference",
+      "Structured need qualification pushed into the sales management system",
+      "Routing of the file to the relevant point of sale",
+      "Comparative tracking of conversion with and without the agent"
+    ],
+    "premiere_etape": "Start by measuring the demand lost outside opening hours. The case only holds if a meaningful share of inbound requests arrive when nobody can answer; without that number, an overnight agent solves a problem you do not have.",
+    "playbook": [
+      {
+        "action": "Quantify inbound requests during the window when the network is closed.",
+        "livrable": "Volume and nature of demand currently going untreated."
+      },
+      {
+        "action": "Define what a qualified lead is together with the consultants themselves.",
+        "livrable": "Qualification grid shared between the agent and the network."
+      },
+      {
+        "action": "Connect the agent to the inventory reference and the sales management system.",
+        "livrable": "Complete lead file, available at reopening."
+      },
+      {
+        "action": "Open with a subset of volunteer points of sale.",
+        "livrable": "Measured pilot on a narrow part of the network."
+      },
+      {
+        "action": "Compare conversion of agent-sourced files with that of standard contacts.",
+        "livrable": "A reading of the true effect, independent of the sales narrative."
+      }
+    ],
+    "equipe": "A conversational product team, a data team for qualification and measurement, a network lead able to get consultants to adopt the handover, and a compliance function covering agent disclosure and the project data collected."
+  },
+  "statut_vivant": {
+    "note": "System described in the present tense, with figures covering the previous month, at the second quarter 2026 results disclosure on 13 August 2026. Management also announced a new sales platform built around AI in which Lia holds a central role, which points to expansion rather than withdrawal."
+  },
+  "transposable_ue": {
+    "note": "The pattern transposes to any network of physical points of sale whose opening hours bound first contact: travel agencies, car dealerships, real estate agencies, brokers. Three constraints in Europe. The AI Act requires telling the customer they are talking to a machine, which matters all the more because the conversation happens overnight and leads to a commercial callback. GDPR governs lead qualification: the elements collected in conversation (project, budget, dates, household composition) are personal data, and passing them to a consultant needs a legal basis and explicit disclosure. Finally, the commercial outreach that follows the handover is subject to national consent rules."
+  }
+}

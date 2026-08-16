@@ -1,0 +1,124 @@
+{
+  "transposable_ue": {
+    "note": "Vertex AI Search and Gemini are available in the EU. Visual search processes images uploaded by the customer: in the EU, the GDPR legal basis has to be framed and the processing disclosed. Catalog enrichment and the shopping assistant transpose, but grounding on the local catalog and the content rules have to be redone market by market."
+  },
+  "pattern": "genAI shopping assistant and visual product search",
+  "etape_parcours": "consideration",
+  "objectif_business": "Help customers find and buy faster online, free up personal shoppers for cross-sell and up-sell, and industrialize product page production on a catalog that grows by 400 new products a day.",
+  "points_cles": [
+    "Central Retail (Central group) deployed Vertex AI Search visual search, the Chefbot assistant on Gemini 1.5 Flash, and catalog enrichment.",
+    "Visual search: search time for price/promo/stock categories cut by 94%, conversion up 10%.",
+    "Product pages generated up to 50% faster; Chefbot maps recipes to more than 50,000 Tops SKUs.",
+    "Level B evidence: a quantified Google Cloud case study, corroborated by the Google Cloud press release; deployment launched in October 2024, status confirmed."
+  ],
+  "resultats": [
+    {
+      "metrique": "Conversion rate uplift with visual search"
+    },
+    {
+      "metrique": "Reduction in search time (price/promo/stock categories)"
+    },
+    {
+      "metrique": "Speed gain on product page production"
+    },
+    {
+      "metrique": "Tops SKUs mapped by Chefbot for the shopping list"
+    }
+  ],
+  "niveau_preuve": {
+    "justification": "Quantified Google Cloud customer case study (vendor, T2) reporting conversion up 10%, search time down 94%, and product pages up to 50% faster, corroborated by the Google Cloud Press Corner release (T2) that documents the Gemini 1.5 Flash and Vertex AI Search stack. The metrics measure the AI tools themselves. No financial results source, so B and not A."
+  },
+  "stack_technique": [
+    {
+      "detail": "Model that powers Chefbot: it maps the ingredients of a recipe to more than 50,000 Tops SKUs to generate a shopping list for the personal shopper."
+    },
+    {
+      "detail": "Visual search: analyzes images uploaded by the customer and matches them to the catalog in real time; also serves as a grounding layer for Chefbot."
+    },
+    {
+      "detail": "Generates SEO-optimized product pages in English and Thai from existing descriptions, extracting name, brand, and price."
+    }
+  ],
+  "fonctionnement_operationnel": {
+    "cadence": "Real time for Chefbot and visual search; catalog enrichment runs continuously at the pace of new products.",
+    "opere_par": "Central Retail Digital, the group's digital arm, with support from Google Cloud.",
+    "signal_pilote": "The match between the customer request (text, recipe, or image) and the Tops catalog (inventory, SKU, stock, promo). If the catalog and stock are not up to date in the grounding source, shopping lists and visual search return the wrong products.",
+    "etapes": [
+      {
+        "etape": "Customer request",
+        "detail": "The customer asks Chefbot for a recipe on LINE, or uploads a product image on the department store site.",
+        "acteur": "client"
+      },
+      {
+        "etape": "Matching",
+        "detail": "Chefbot (Gemini 1.5 Flash) maps the ingredients to the 50,000+ Tops SKUs; visual search (Vertex AI Search) matches the image to the catalog in real time.",
+        "acteur": "IA"
+      },
+      {
+        "etape": "Execution by the personal shopper",
+        "detail": "The shopping list or search results are passed to the personal shopper, who picks the products and advises the customer.",
+        "acteur": "humain"
+      },
+      {
+        "etape": "Catalog enrichment",
+        "detail": "The Vertex AI tool generates SEO-optimized product pages in English and Thai from existing descriptions, following Central Retail content rules.",
+        "acteur": "IA"
+      }
+    ]
+  },
+  "replication": {
+    "prerequis_data": [
+      "A structured product catalog with up-to-date SKUs, stock, and promotions",
+      "Recipes or editorial content to map to products for the shopping assistant",
+      "Existing product descriptions to serve as the base for enrichment"
+    ],
+    "prerequis_orga": [
+      "Clear product content rules (languages, tone, SEO)",
+      "A link between the AI assistant and a human service (personal shopper) for execution",
+      "An existing high-traffic customer channel (messaging, site) to connect the assistant to"
+    ],
+    "stack_possible": [
+      "Managed LLM for the assistant and page enrichment",
+      "Semantic and visual search engine grounded on the catalog",
+      "Real-time connection to inventory and stock"
+    ],
+    "premiere_etape": "Pick a high-traffic customer channel and ground a search assistant on the catalog in real time before adding recipe or page generation.",
+    "playbook": [
+      {
+        "action": "Structure the catalog (SKU, stock, promo) and expose it to a semantic search layer.",
+        "livrable": "Product search grounded on the catalog in real time."
+      },
+      {
+        "action": "Add visual search: match an uploaded image to the catalog and surface results to the seller or the customer.",
+        "livrable": "Image search in production on one channel."
+      },
+      {
+        "action": "Connect a shopping assistant that turns an intent (recipe, need) into a list of products mapped to SKUs.",
+        "livrable": "Assistant that generates executable shopping lists."
+      },
+      {
+        "action": "Industrialize multilingual, SEO product page enrichment from existing descriptions.",
+        "livrable": "Product page generation pipeline at scale."
+      }
+    ],
+    "equipe": "A retail digital team (product, data) administering a search platform and a managed LLM, coordinating with merchandising and the personal shopper service."
+  },
+  "statut_vivant": {
+    "note": "Chefbot launched as a pilot at the Tops Food Hall of Central Chidlom in December 2024, with a plan to extend it to every Tops in the country. The Google Cloud case study publishes later quantified results, with no signal of withdrawal."
+  },
+  "seo": {
+    "title": "Central Retail: Vertex AI visual search and Gemini Chefbot - conversion up 10% (2024)",
+    "meta_description": "Central Retail (Central group) deployed Vertex AI Search visual search, the Chefbot assistant on Gemini 1.5 Flash, and catalog enrichment. Conversion up 10%, search time down 94%.",
+    "resume_citable": "Central Retail (Central group, Thailand) deployed Vertex AI Search visual search and the Chefbot assistant on Gemini 1.5 Flash, obtaining a 10% uplift in conversion rate, a 94% reduction in search time, and product pages generated up to 50% faster.",
+    "faq": [
+      {
+        "q": "Which AI tools did Central Retail deploy?",
+        "a": "A visual search on Vertex AI Search, a Chefbot shopping assistant on Gemini 1.5 Flash, and a catalog enrichment tool on Vertex AI for product pages."
+      },
+      {
+        "q": "What results are documented?",
+        "a": "A conversion rate up 10% with visual search, search time for price/promo/stock categories cut by 94% (from 32 minutes to one or two minutes), and product pages generated up to 50% faster."
+      }
+    ]
+  }
+}
