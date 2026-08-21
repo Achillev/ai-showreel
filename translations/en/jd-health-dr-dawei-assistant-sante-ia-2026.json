@@ -1,0 +1,130 @@
+{
+  "seo": {
+    "title": "JD Health: Dr. Dawei, consumer AI health agent - user base up nearly fourfold (2026)",
+    "meta_description": "JD Health grew the user base of its Dr. Dawei AI health agent nearly fourfold in the first half of 2026, with a 98% favorable rating.",
+    "resume_citable": "JD Health, which runs the largest online medicine sales platform in China, grew the user base of its Dr. Dawei AI health agent nearly fourfold in the first half of 2026. The agent has logged several hundred million interactions and a 98% favorable rating, but its effect on revenue is not quantified publicly.",
+    "faq": [
+      {
+        "q": "What is Dr. Dawei at JD Health?",
+        "a": "A consumer-facing doctor agent inside the JD Health app: it triages the health request, runs the exchange, reads a test report, then points the user to a product in the pharmacy catalog or to a doctor at the group's online hospital. It is one of the agents of AI Hospital 1.0, presented in September 2025 and built on the in-house medical model Jingyi Qianxun."
+      },
+      {
+        "q": "Which results are actually attributed to the deployment?",
+        "a": "A user base up nearly fourfold in the first half of 2026, presented as driving conversion into product purchases, and cumulatively several hundred million interactions with a 98% favorable rating and nearly 70% of users coming from tier 3 cities and below."
+      },
+      {
+        "q": "Is the monetization of Dr. Dawei quantified?",
+        "a": "No. Management says it has signed commercialization agreements and sees a clear path, without publishing revenue, basket size or ARPU. The rise of more than 20% in the number of advertising merchants cited on the same earnings call measures JD Health's advertising platform, not the agent."
+      }
+    ]
+  },
+  "pattern": "free consumer AI agent that routes the request toward a product purchase and serves as the base for commercialization",
+  "etape_parcours": "consideration",
+  "objectif_business": "Convert a free health consultation audience into purchases on JD's pharmacy platform, chaining triage, teleconsultation, testing and medicine purchase inside a single conversation. Management says it then wants to turn this into a business line of its own, with agreements already signed, but publishes no revenue figure attributed to the deployment.",
+  "description": "JD Health runs the largest online medicine sales platform in China. Dr. Dawei is its consumer-facing doctor agent: the user asks a health question in the app, the agent triages it, runs a consultation-style exchange, reads a test report if needed, then points to a product in the pharmacy catalog or to a doctor at the group's online hospital. The agent was presented on September 25, 2025 among the ten or so agents of AI Hospital 1.0, all built on the in-house medical model Jingyi Qianxun, whose 2.0 version was unveiled the same day. JD Health describes this architecture as a chain running from triage to consultation, testing and medicine purchase. In the first half of 2026, Dr. Dawei gained a long-term health record memory, which supports follow-up between two exchanges instead of a one-off answer. The half-year report states that the number of users served by the agent rose nearly fourfold year over year during the 618 festival, and the earnings call ties that growth to better conversion into product purchases. Cumulatively, the agent has logged several hundred million interactions, a 98% favorable rating, and nearly seven users out of ten coming from tier 3 cities or below. One point stays open: the only figure attached to the deployment is this audience growth. Management says it has signed commercialization agreements for Dr. Dawei and sees a clear path, without publishing revenue, basket size or ARPU. The rise of more than 20% in the number of advertising merchants, cited on the same call, measures JD Health's advertising platform and is not presented as an effect of the agent.",
+  "points_cles": [
+    "JD Health operates Dr. Dawei, a consumer AI health agent built into its pharmacy e-commerce platform.",
+    "Its user base grew nearly fourfold over the first half of 2026.",
+    "Several hundred million cumulative interactions, 98% satisfaction, nearly 70% of users in tier 3 cities and below.",
+    "Evidence level A: earnings call of August 13, 2026, but the monetization effect stays qualitative, with no revenue figure."
+  ],
+  "resultats": [
+    {
+      "metrique": "Growth of the Dr. Dawei user base over the first half of 2026, tied by management to better conversion into product purchases"
+    },
+    {
+      "metrique": "Users served by Dr. Dawei during the 618 festival, year over year (2026 half-year report)"
+    },
+    {
+      "metrique": "Favorable rating across several hundred million cumulative interactions, with nearly 70% of users coming from tier 3 cities and beyond"
+    }
+  ],
+  "niveau_preuve": {
+    "justification": "The central figure comes from the August 13, 2026 earnings call on first-half results, and it is corroborated by two established press outlets relaying the half-year report (Science and Technology Daily, China News Service). Limit to accept: only the agent's audience growth is quantified and attributed to the deployment. The monetization effect stays declarative (commercialization agreements signed, clear path ahead), with no published revenue or basket size, and the rise of more than 20% in advertising merchants measures the advertising platform, not Dr. Dawei. Axis classification: this case is filed under activation_conversion rather than monetization, because the only effect measured and attributed to the deployment concerns audience and routing toward purchase. Monetization of Dr. Dawei is announced, not yet quantified; filing it under monetization would have filled an empty cross-section with an unproven result."
+  },
+  "stack_technique": [
+    {
+      "detail": "In-house medical model from JD Health, presented in version 2.0 on September 25, 2025. It is the model the AI Hospital 1.0 agents rely on, including the doctor agent Dr. Dawei."
+    }
+  ],
+  "fonctionnement_operationnel": {
+    "cadence": "Real time, continuously in the app. The medical model and the agents move forward by versions: Jingyi Qianxun 2.0 in September 2025, health record memory added over the first half of 2026.",
+    "opere_par": "The AI health teams at JD Health, with doctors from the group's online hospital taking over the cases the agent does not handle.",
+    "signal_pilote": "The link between the health answer and a product available in the pharmacy catalog plus an execution capacity (medicine delivery, testing, a doctor within reach). If the catalog, the stock or the logistics are not wired into the conversation, the agent answers but converts nothing: audience growth then turns into nothing measurable on the commerce side.",
+    "etapes": [
+      {
+        "etape": "Entry through the health question",
+        "detail": "The user describes a symptom or uploads a test report in the JD Health app.",
+        "acteur": "customer"
+      },
+      {
+        "etape": "Triage and exchange",
+        "detail": "Dr. Dawei, built on the Jingyi Qianxun model, routes the request, runs the consultation-style exchange and reads the documents provided.",
+        "acteur": "AI"
+      },
+      {
+        "etape": "Record recall",
+        "detail": "The health record memory added in the first half of 2026 makes it possible to pick up the user's history from one exchange to the next, instead of starting over.",
+        "acteur": "AI"
+      },
+      {
+        "etape": "Move to action",
+        "detail": "The exchange leads to a product in the pharmacy catalog, a test, or a handoff to a doctor at the group's online hospital.",
+        "acteur": "AI"
+      },
+      {
+        "etape": "Human relay",
+        "detail": "Doctors at the online hospital take over whatever falls outside the agent's scope, in particular anything that requires a prescription.",
+        "acteur": "human"
+      }
+    ]
+  },
+  "replication": {
+    "prerequis_data": [
+      "Product catalog with stock and availability actually queryable from the conversation",
+      "Persistent user history between two sessions, so the agent follows a record instead of answering case by case",
+      "Reliable domain corpus to ground the answers, with an explicit scope of what the agent refuses to handle"
+    ],
+    "prerequis_orga": [
+      "An execution chain behind the conversation (order, delivery, appointment booking), otherwise the agent produces audience and nothing else",
+      "A qualified human relay for cases outside the authorized scope, and the rule that triggers that relay",
+      "A compliance framework validated before going live when the domain is regulated"
+    ],
+    "stack_possible": [
+      "Language model specialized on the domain, owned or adapted",
+      "Retrieval layer over the domain corpus and over the live catalog",
+      "Persistent user memory attached to the account",
+      "Gateway to the ordering tool and to the human back office"
+    ],
+    "equipe": "A product and AI team owning the agent, domain specialists to validate the content and the scope, a data team for conversion attribution, and a compliance function when the sector is regulated.",
+    "playbook": [
+      {
+        "action": "Write down what the agent handles and what it passes to a human, and code that scope as a routing rule.",
+        "livrable": "Documented scope of intervention and escalation rule."
+      },
+      {
+        "action": "Ground the answers on the domain corpus and on the catalog queried in real time, rather than on the model's knowledge alone.",
+        "livrable": "Agent that only recommends products actually available."
+      },
+      {
+        "action": "Add a persistent user memory, to turn the one-off answer into follow-up.",
+        "livrable": "History reusable from one session to the next."
+      },
+      {
+        "action": "Instrument the conversation all the way to the action, so conversion can be tied to the agent and not only to overall traffic.",
+        "livrable": "Conversion measurement attributed to the agent."
+      },
+      {
+        "action": "Open commercialization only once that measurement is in place, otherwise audience growth stays the only available indicator.",
+        "livrable": "Revenue model backed by a measurement, not by usage volume."
+      }
+    ],
+    "premiere_etape": "Wire the agent to the catalog and to the execution capacity before opening the conversation to the public: measure the share of exchanges that end in an action first, not the volume of exchanges."
+  },
+  "statut_vivant": {
+    "note": "Deployment cited in the half-year results of August 13, 2026, with a functional change dated within the half (health record memory) and usage figures growing. No sign of withdrawal."
+  },
+  "transposable_ue": {
+    "note": "The mechanism (a free conversational agent wired to a catalog and to delivery logistics) transposes, the medical content much less. An agent that steers a course of care may qualify as medical device software (MDR regulation) and fall under AI Act obligations on high-risk systems in health. The exchanges are health data within the meaning of article 9 of the GDPR, with a legal basis and data minimization to define. Coupling health advice with medicine sales is regulated country by country in the EU, in particular for prescription-only medicines."
+  }
+}

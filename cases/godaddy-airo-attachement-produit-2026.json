@@ -1,0 +1,350 @@
+{
+  "id": "godaddy-airo-attachement-produit-2026",
+  "type_fiche": "succes",
+  "marque": "GoDaddy",
+  "groupe": "GoDaddy Inc. (NYSE: GDDY)",
+  "industrie": "tech_saas",
+  "marches_deploiement": [
+    "Etats-Unis",
+    "International"
+  ],
+  "transposable_ue": {
+    "flag": "oui_avec_adaptations",
+    "note": "La brique publicitaire d'Airo est deja diffusee en Irlande, marche UE anglophone, ce qui montre que le dispositif tourne sous RGPD. Deux points a cadrer pour repliquer en Europe : la base legale du traitement des donnees clients utilisees pour recommander et attacher des produits, et l'information de l'utilisateur sur le caractere genere des contenus produits (site, logo, annonces). L'AI Act impose cette transparence sans classer ce type d'usage marketing en risque eleve."
+  },
+  "metier": "marketing et e-commerce (monetisation de la base clients)",
+  "marque_linkedin": "https://www.linkedin.com/company/godaddy/",
+  "logo_domain": "godaddy.com",
+  "intervenants": [
+    {
+      "nom": "Aman Bhutani",
+      "role": "Chief Executive Officer, GoDaddy",
+      "source_ref": "S1"
+    },
+    {
+      "nom": "Mark McCaffrey",
+      "role": "Chief Financial Officer, GoDaddy",
+      "source_ref": "S1"
+    },
+    {
+      "nom": "Selina Bieber",
+      "role": "Vice President of International Markets, GoDaddy",
+      "source_ref": "S4"
+    }
+  ],
+  "axes": {
+    "levier": "monetisation",
+    "touchpoints": [
+      "parcours d'achat de domaine godaddy.com",
+      "onboarding et tableau de bord client GoDaddy",
+      "experience Airo",
+      "Airo Digital Ads"
+    ],
+    "etape_parcours": "post-achat",
+    "famille": "generation",
+    "pattern": "assistant genAI de creation qui pilote l'attachement produit et la montee en gamme",
+    "type_ia": [
+      "IA generative de site et de marque",
+      "generation d'annonces et de contenus marketing",
+      "agents IA"
+    ],
+    "plateforme_stack": [
+      "custom/in-house (GoDaddy Airo)"
+    ],
+    "objectif_metrique": [
+      "reservations annualisees",
+      "taux d'attachement produit",
+      "conversion du gratuit vers le payant",
+      "ARPU"
+    ]
+  },
+  "implementation": "custom",
+  "stack_technique": [
+    {
+      "nom": "GoDaddy Airo",
+      "categorie": "plateforme",
+      "detail": "Systeme IA maison presente par GoDaddy comme un systeme d'exploitation agentique pour tres petites entreprises : creation de site, identite de marque, contenus et campagnes. Monetise par un abonnement complete par la consommation de tokens. Les sources publiques ne nomment pas le ou les modeles sous-jacents.",
+      "url": "https://www.godaddy.com/airo"
+    },
+    {
+      "nom": "Airo Digital Ads",
+      "categorie": "outil",
+      "detail": "Brique publicitaire d'Airo : redaction des annonces, selection des mots-cles et structuration de campagnes Google Ads depuis le tableau de bord GoDaddy.",
+      "url": "https://www.godaddy.com/airo"
+    },
+    {
+      "nom": "GoDaddy Developer Platform",
+      "categorie": "infra",
+      "detail": "Generation d'API annoncee au T2 2026 permettant a des developpeurs et a des systemes IA de rechercher, acheter, configurer et gerer des domaines depuis leurs propres outils.",
+      "url": "https://developer.godaddy.com"
+    }
+  ],
+  "objectif_business": "Faire d'Airo le point d'entree de la base clients GoDaddy pour vendre plus de produits par client : convertir les inscrits gratuits en payants, augmenter le nombre de produits detenus par compte et creer une ligne de revenu propre, en abonnement et en consommation de tokens.",
+  "points_cles": [
+    "GoDaddy a place Airo, son systeme IA pour tres petites entreprises, au centre de son offre.",
+    "Run rate annualise des reservations Airo a 50 millions de dollars au T2 2026, cinq fois le trimestre precedent.",
+    "Plus de 70% des utilisateurs Airo detiennent au moins deux produits, contre plus de 50% sur l'ensemble de la base.",
+    "Preuve A : communique de resultats T2 2026, presentation investisseurs et earnings call du 30 juillet 2026."
+  ],
+  "description": "Airo est l'experience IA que GoDaddy propose a ses clients tres petites entreprises : a partir d'un nom de domaine ou d'une description d'activite, le systeme produit un site, une identite de marque, des contenus et des campagnes publicitaires, puis propose les produits GoDaddy correspondants au fil de l'usage. GoDaddy le decrit comme un systeme d'exploitation agentique pour petites entreprises et l'a place au centre de sa transformation. La monetisation combine un abonnement et la consommation de tokens, ce qui distingue Airo des produits historiques vendus a l'unite. Au deuxieme trimestre 2026, GoDaddy a publie un run rate annualise de reservations de 50 millions de dollars pour Airo, cinq fois le niveau de 10 millions communique un trimestre plus tot, en precisant que la quasi-totalite de cette croissance etait organique avant tout effort marketing significatif. La direction a aussi indique que plus de 70% des clients ayant utilise Airo dans l'annee detenaient au moins deux produits, contre plus de 50% sur l'ensemble de la base, et que la conversion du gratuit vers le payant s'ameliorait par rapport a la periode anterieure a Airo. GoDaddy teste desormais Airo dans le parcours d'achat de domaine, son plus gros entonnoir. Cette bascule a un cout assume : la demande pour les services professionnels factures quelques milliers de dollars et pour les constructeurs de sites a base de modeles se retrecit a mesure qu'Airo absorbe ces usages. Sur le perimetre publicitaire, GoDaddy a etendu Airo Digital Ads a neuf nouveaux marches anglophones en octobre 2025, dont l'Irlande, Singapour, la Nouvelle-Zelande et les Emirats arabes unis. Un point de vigilance sur la lecture des chiffres : l'ARPU de 250 dollars en hausse de 9% publie le meme jour est un agregat calcule sur le chiffre d'affaires total divise par le nombre moyen de clients, presente par GoDaddy comme le fruit de cohortes a forte valeur, et non un resultat attribue a Airo.",
+  "resultats": [
+    {
+      "metrique": "Run rate annualise des reservations attribuees a Airo au T2 2026, contre 10 millions de dollars un trimestre plus tot",
+      "valeur": "50 M$ (x5)",
+      "citation_exacte": "Airo continued to gain traction, reaching an annualized bookings run rate of $50 million",
+      "source_ref": "S1"
+    },
+    {
+      "metrique": "Part des clients ayant utilise Airo dans l'annee qui detiennent au moins deux produits, contre plus de 50% sur l'ensemble de la base",
+      "valeur": "70%+",
+      "citation_exacte": "over 70% of our customers who have used Airo this year have two or more products",
+      "source_ref": "S3"
+    },
+    {
+      "metrique": "Conversion du gratuit vers le payant sur les parcours Airo, comparee a la periode anterieure a Airo (aucun chiffre publie)",
+      "valeur": "en amelioration",
+      "citation_exacte": "we are seeing better free to paid conversion with Airo",
+      "source_ref": "S3"
+    },
+    {
+      "metrique": "Mise en test d'Airo dans le parcours d'achat de domaine, principal entonnoir d'entree de GoDaddy",
+      "valeur": "parcours domaines",
+      "citation_exacte": "Actively testing Airo in domains purchase path",
+      "source_ref": "S2"
+    }
+  ],
+  "niveau_preuve": {
+    "niveau": "A",
+    "justification": "Le chiffre central, 50 millions de dollars de run rate annualise de reservations pour Airo et sa multiplication par cinq en un trimestre, figure dans le communique de resultats du T2 2026 depose en EX-99.1 au 8-K du 30 juillet 2026 et dans la presentation investisseurs du meme jour, nommement rattache a Airo. L'attachement de plus de 70% et la conversion gratuit vers payant viennent des declarations du directeur financier sur l'earnings call, donc du meme reporting financier mais via une transcription tierce. Un chiffre a ete ecarte : l'ARPU en hausse de 9% a 250 dollars n'est pas attribue a Airo. GoDaddy le calcule comme le chiffre d'affaires total des douze derniers mois divise par le nombre moyen de clients, et le presente sur une planche consacree aux cohortes depensant plus de 500 dollars par an. Le directeur financier a lui-meme rattache la progression de l'ARPU a la strategie generale de recrutement de clients a forte intention, pas a Airo. La retention n'est pas non plus attribuee a Airo et n'est pas revendiquee ici."
+  },
+  "dates": {
+    "lancement": "Airo deja en production et en expansion internationale en octobre 2025 ; premier chiffrage public de sa monetisation au T1 2026 (10 M$ de run rate annualise), porte a 50 M$ au T2 2026",
+    "derniere_confirmation_activite": "2026-08",
+    "verifie_le": "2026-08-21",
+    "revoir_apres": "2027-02-21"
+  },
+  "statut_vivant": {
+    "statut": "confirme",
+    "note": "Airo est presente comme le centre de la transformation de GoDaddy dans les resultats du 30 juillet 2026, avec une mise en test dans le parcours d'achat de domaine et une hausse annoncee des depenses marketing sur le second semestre. Le directeur financier a de nouveau detaille la trajectoire d'Airo dans un entretien publie le 12 aout 2026."
+  },
+  "sources": [
+    {
+      "ref": "S1",
+      "type": "document_officiel_sec",
+      "fiabilite": "T1_primaire",
+      "titre": "GoDaddy Reports Second Quarter 2026 Financial Results (EX-99.1 au formulaire 8-K du 30 juillet 2026)",
+      "url": "https://www.sec.gov/Archives/edgar/data/0001609711/000160971126000087/gddyex991-20260630xq2earni.htm",
+      "date_publication": "2026-07-30",
+      "consulte_le": "2026-08-21",
+      "archive_url": "https://www.stocktitan.net/sec-filings/GDDY/8-k-go-daddy-inc-reports-material-event-8ae3f5b94515.html"
+    },
+    {
+      "ref": "S2",
+      "type": "communique_officiel",
+      "fiabilite": "T1_primaire",
+      "titre": "GoDaddy Q2 2026 Earnings Presentation",
+      "url": "https://s23.q4cdn.com/406380394/files/doc_financials/2026/q2/GDDY-Q2-2026-Earnings-Presentation.pdf",
+      "date_publication": "2026-07-30",
+      "consulte_le": "2026-08-21"
+    },
+    {
+      "ref": "S3",
+      "type": "earnings_call",
+      "fiabilite": "T4_secondaire",
+      "titre": "Earnings call transcript: GoDaddy beats Q2 2026 estimates but shares fall",
+      "url": "https://www.investing.com/news/transcripts/earnings-call-transcript-godaddy-beats-q2-2026-estimates-but-shares-fall-93CH-4826468",
+      "date_publication": "2026-07-30",
+      "consulte_le": "2026-08-21"
+    },
+    {
+      "ref": "S4",
+      "type": "communique_officiel",
+      "fiabilite": "T1_primaire",
+      "titre": "GoDaddy Brings AI-Powered Digital Ads to Entrepreneurs, Empowering Faster Online Growth",
+      "url": "https://www.prnewswire.com/apac/news-releases/godaddy-brings-ai-powered-digital-ads-to-entrepreneurs-empowering-faster-online-growth-302579420.html",
+      "date_publication": "2025-10-09",
+      "consulte_le": "2026-08-21"
+    },
+    {
+      "ref": "S5",
+      "type": "presse",
+      "fiabilite": "T4_secondaire",
+      "titre": "Exclusive: GoDaddy CFO on Airo, ARPU growth and the shift to AI discovery",
+      "url": "https://www.investing.com/news/stock-market-news/exclusive-godaddy-cfo-on-airo-arpu-growth-and-the-shift-to-ai-discovery-4855436",
+      "date_publication": "2026-08-12",
+      "consulte_le": "2026-08-21"
+    }
+  ],
+  "fonctionnement_operationnel": {
+    "cadence": "Temps reel a chaque interaction client dans Airo ; pilotage des reservations et de l'attachement au rythme du reporting trimestriel ; ouverture progressive des parcours d'entree (domaines) par test",
+    "opere_par": "Equipes produit et IA de GoDaddy pour le systeme lui-meme, equipe finance pour le suivi des reservations et de l'attachement, marketing pour l'ouverture des parcours et la depense d'acquisition",
+    "signal_pilote": "Le nombre de produits detenus par compte et la conversion du gratuit vers le payant. Sans une mesure propre des cohortes Airo face aux cohortes non-Airo, il devient impossible de distinguer l'effet du dispositif de la croissance generale de la base, ce qui est exactement le piege sur l'ARPU.",
+    "etapes": [
+      {
+        "etape": "Entree dans le parcours",
+        "detail": "Le client arrive par l'achat d'un domaine ou par une inscription gratuite et decrit son activite.",
+        "acteur": "client"
+      },
+      {
+        "etape": "Generation de l'experience",
+        "detail": "Airo produit le site, l'identite de marque et les contenus marketing correspondants, puis propose les briques GoDaddy adaptees a ce que le client cherche a faire.",
+        "acteur": "IA"
+      },
+      {
+        "etape": "Monetisation",
+        "detail": "L'usage est facture par un abonnement complete par la consommation de tokens, en lieu et place d'achats de produits a l'unite.",
+        "acteur": "IA"
+      },
+      {
+        "etape": "Mesure de l'attachement",
+        "detail": "La finance suit le nombre de produits par compte sur les cohortes Airo et les compare aux cohortes non-Airo, ainsi que la conversion du gratuit vers le payant.",
+        "acteur": "equipe data"
+      },
+      {
+        "etape": "Ouverture des entonnoirs",
+        "detail": "Le marketing teste Airo dans le parcours d'achat de domaine avant d'engager davantage de depense publicitaire, sous contrainte de rentabilite.",
+        "acteur": "marketing"
+      },
+      {
+        "etape": "Arbitrage de catalogue",
+        "detail": "Les produits absorbes par Airo, services professionnels et constructeurs de sites a modeles, sont volontairement moins pousses, ce qui pese sur les reservations historiques.",
+        "acteur": "produit"
+      }
+    ]
+  },
+  "schema_flow": {
+    "statut": "approche_type",
+    "noeuds": [
+      {
+        "id": "client",
+        "role_generique": "site_app",
+        "label": "Tres petite entreprise sur godaddy.com"
+      },
+      {
+        "id": "domaine",
+        "role_generique": "site_app",
+        "label": "Parcours d'achat de domaine (entonnoir d'entree)"
+      },
+      {
+        "id": "airo",
+        "role_generique": "modele_ia",
+        "label": "Airo : generation de site, marque, contenus et campagnes",
+        "outil_documente": "GoDaddy Airo"
+      },
+      {
+        "id": "catalogue",
+        "role_generique": "site_app",
+        "label": "Catalogue GoDaddy (hebergement, email, commerce, publicite)"
+      },
+      {
+        "id": "ads",
+        "role_generique": "paid_platform",
+        "label": "Airo Digital Ads vers Google Ads"
+      },
+      {
+        "id": "mesure",
+        "role_generique": "data_source",
+        "label": "Cohortes Airo et non-Airo : produits par compte, conversion gratuit vers payant"
+      }
+    ],
+    "liens": [
+      [
+        "client",
+        "domaine"
+      ],
+      [
+        "domaine",
+        "airo"
+      ],
+      [
+        "airo",
+        "client",
+        "site, marque et contenus generes"
+      ],
+      [
+        "airo",
+        "catalogue",
+        "attachement produit"
+      ],
+      [
+        "airo",
+        "ads",
+        "campagnes generees"
+      ],
+      [
+        "catalogue",
+        "mesure"
+      ],
+      [
+        "mesure",
+        "airo",
+        "arbitrage des parcours et de la depense"
+      ]
+    ]
+  },
+  "replication": {
+    "statut_epistemique": "infere",
+    "prerequis_data": [
+      "Base clients identifiee avec historique des produits detenus par compte",
+      "Suivi des cohortes exposees au dispositif IA et des cohortes non exposees, sur le meme perimetre",
+      "Signaux d'usage produit permettant de declencher une recommandation pertinente",
+      "Mesure de la conversion du gratuit vers le payant avant lancement, pour disposer d'un point de comparaison"
+    ],
+    "prerequis_orga": [
+      "Accord entre produit, finance et marketing sur la definition de l'attachement mesure",
+      "Acceptation explicite de la cannibalisation des produits que le dispositif absorbe",
+      "Modele de facturation capable de gerer un abonnement et une consommation variable",
+      "Gouvernance sur la transparence des contenus generes remis au client"
+    ],
+    "stack_possible": [
+      "Assistant genAI branche sur le catalogue produit et le compte client",
+      "Couche de recommandation contextuelle dans le parcours d'onboarding",
+      "Facturation hybride abonnement plus consommation",
+      "Outil de mesure de cohortes exposees et non exposees"
+    ],
+    "premiere_etape": "Mesurer le nombre de produits detenus par compte et la conversion du gratuit vers le payant sur la base actuelle, puis definir la cohorte temoin qui servira de reference avant d'exposer quiconque au dispositif.",
+    "playbook": [
+      {
+        "action": "Etablir la mesure de reference : produits par compte, conversion gratuit vers payant, revenu par compte, sur des cohortes comparables.",
+        "livrable": "Point de depart chiffre et definition d'une cohorte temoin."
+      },
+      {
+        "action": "Choisir un seul entonnoir d'entree a fort volume et y brancher l'assistant genAI, sans l'ouvrir a toute la base.",
+        "livrable": "Dispositif en production sur un parcours limite."
+      },
+      {
+        "action": "Relier l'assistant au catalogue produit pour qu'il propose la brique correspondant a ce que le client cherche a faire, plutot qu'un catalogue generique.",
+        "livrable": "Recommandations contextuelles branchees sur le compte client."
+      },
+      {
+        "action": "Mettre en place la facturation hybride, abonnement plus consommation, et verifier qu'elle ne detruit pas plus de revenu qu'elle n'en cree sur les produits absorbes.",
+        "livrable": "Modele economique verifie sur le perimetre teste."
+      },
+      {
+        "action": "Comparer cohortes exposees et non exposees sur l'attachement et la conversion, puis n'ouvrir l'entonnoir principal et la depense marketing qu'une fois l'ecart etabli.",
+        "livrable": "Decision d'extension appuyee sur un ecart mesure."
+      }
+    ],
+    "equipe": "Une equipe produit IA pour l'assistant et son branchement au catalogue, une equipe data pour le suivi des cohortes et de l'attachement, un relais finance pour le modele de facturation hybride, et un marketing capable d'ouvrir les parcours par paliers."
+  },
+  "seo": {
+    "slug": "godaddy-airo-attachement-produit-2026",
+    "title": "GoDaddy : Airo, l'IA qui pilote l'attachement produit - 50 M$ de run rate et 70% de clients multi-produits (2026)",
+    "meta_description": "Au T2 2026, GoDaddy a publie 50 M$ de run rate annualise pour Airo, cinq fois le trimestre precedent, et plus de 70% d'utilisateurs Airo multi-produits.",
+    "resume_citable": "Au deuxieme trimestre 2026, GoDaddy a publie un run rate annualise de reservations de 50 millions de dollars pour Airo, son systeme IA pour tres petites entreprises, soit cinq fois les 10 millions du trimestre precedent, avec plus de 70% des utilisateurs Airo detenant au moins deux produits contre plus de 50% sur l'ensemble de la base de 20,5 millions de clients.",
+    "faq": [
+      {
+        "q": "Quel chiffre GoDaddy attribue-t-il directement a Airo ?",
+        "a": "Le run rate annualise de reservations d'Airo, 50 millions de dollars au T2 2026, cinq fois le niveau de 10 millions publie un trimestre plus tot, ainsi que l'attachement de plus de 70% de clients multi-produits chez les utilisateurs Airo."
+      },
+      {
+        "q": "La hausse de 9% de l'ARPU vient-elle d'Airo ?",
+        "a": "Non. GoDaddy calcule l'ARPU comme le chiffre d'affaires total divise par le nombre moyen de clients et le presente sur une planche consacree aux cohortes depensant plus de 500 dollars par an. Le directeur financier rattache cette progression a la strategie generale de recrutement, pas a Airo."
+      },
+      {
+        "q": "Quel est le cout de cette bascule pour GoDaddy ?",
+        "a": "La demande pour les services professionnels factures quelques milliers de dollars et pour les constructeurs de sites a base de modeles se retrecit a mesure qu'Airo absorbe ces usages, ce qui pese sur les reservations des produits historiques."
+      }
+    ]
+  }
+}

@@ -1,0 +1,130 @@
+{
+  "transposable_ue": {
+    "note": "AI Max is a Google Ads campaign option available in Europe, so the setup transposes without a technical project. Two points need framing before turning it on in an EU market. First, conversion tracking, here insurance leads, which has to rest on a legal basis and a consent collection that comply with GDPR, failing which the signal driving the campaign degrades. Second, the automatic customization of ad text, which produces messages that are not reviewed one by one, while advertising for insurance products is regulated in several EU countries. So the elements the system may rephrase have to be bounded, and human validation kept on regulated wording."
+  },
+  "pattern": "AI-driven search campaign that customizes ad text and reaches long queries beyond the purchased keywords",
+  "etape_parcours": "consideration",
+  "objectif_business": "Reach American drivers and households at the moment they search for insurance on Google, including on long and very specific queries the club had not bought as keywords, and bring down the cost of an insurance lead in a market where the search auction is among the most expensive.",
+  "points_cles": [
+    "AAA Auto Club Enterprises turned on AI Max for its Google Ads insurance Search campaigns.",
+    "The system customizes creative and reaches insurance searches that keep getting more detailed.",
+    "Google reports 17% more conversion volume and 11% lower cost per lead.",
+    "Figures published by Alphabet, an interested party: no AAA or third-party source confirms them."
+  ],
+  "description": "AAA Auto Club Enterprises is the largest federation of AAA clubs in the United States. Its careers site states that it serves more than 18 million members across 24 states, and auto and home insurance is one of its main revenue lines. On Google Ads, the club turned on AI Max for its Search campaigns. AI Max is a campaign option Google took out of beta in 2026: instead of staying within the purchased keywords, the system reads the advertiser's ads and site content to reach queries no keyword covered, rewrites the ad text based on the search entered, and picks the landing page closest to the request itself. What this changes for the user: someone typing a very specific search, for example a driver profile or a particular insurance situation, sees an AAA ad whose headline has been rewritten to match that search, and lands on the matching quote page rather than on a generic one. Philipp Schindler, chief business officer of Alphabet, cited this case when the second quarter 2026 results were published, stating that AAA Auto Club Enterprises was using it to customize its creative assets and capture the growth of increasingly detailed insurance searches. The exact scope of the rollout, number of campaigns, states covered, product lines, has not been published.",
+  "resultats": [
+    {
+      "metrique": "Increase in conversion volume on the Search campaigns moved to AI Max, according to Alphabet"
+    },
+    {
+      "metrique": "Decrease in cost per lead over the same scope, according to Alphabet"
+    }
+  ],
+  "niveau_preuve": {
+    "justification": "Both figures come from one and the same sentence, spoken by Philipp Schindler, chief business officer of Alphabet, during the second quarter 2026 earnings call on July 22, 2026. The sentence appears word for word in the official transcript published by Alphabet (S1) and in the full transcripts published by AlphaStreet (S2) and Investing.com (S3); the quote is anchored on S2, whose text is machine readable, where the official PDF exposes no extractable text layer. None of these three sources is independent: it is the same statement, and Alphabet is an interested party here, the seller of AI Max praising its product through a named advertiser. Searches on the Google Ads and Think with Google side turned up no AI Max case study citing AAA (the Think with Google page on AI Max cites ClickUp, Royal Canin and Klook, not AAA), and no established marketing press picks up or verifies the case. So there is no confirmation on the AAA side: no press release, no public appearance, no company figure isolating this effect. Not an A, for lack of financial reporting by the subject brand on its own result, and the B should be read with that reservation: a single voice, the platform's."
+  },
+  "stack_technique": [
+    {
+      "detail": "A Google Ads campaign option out of beta in 2026. Google describes it as combining the elements provided by the advertiser, ads and site content, with richer signals, and it bundles three parts: search term matching, text customization and final URL expansion."
+    },
+    {
+      "detail": "The advertiser account, conversion tracking and budget the AI Max campaign relies on."
+    }
+  ],
+  "fonctionnement_operationnel": {
+    "cadence": "Campaigns run continuously. Query matching, text rewriting and landing page selection are decided at each auction; human steering is a review rhythm, daily at launch then weekly.",
+    "opere_par": "The advertiser's paid acquisition team, or its SEA agency, with a compliance contact on the insurance side for what the machine is allowed to rephrase.",
+    "signal_pilote": "The conversions reported to Google Ads, here insurance leads (quote request, form, call). The system optimizes on this signal and on cost per lead. If the lead is reported without any quality attached, the campaign learns to produce form volume rather than policies; if tracking breaks or falls under consent, broad matching becomes blind spend.",
+    "etapes": [
+      {
+        "etape": "Prepare the material",
+        "detail": "Provide the ads, landing pages and site content the system relies on to understand the offer. One quote page per insurance situation beats a generic page.",
+        "acteur": "marketing"
+      },
+      {
+        "etape": "Turn on AI Max on an existing Search campaign",
+        "detail": "The option is added to a campaign already in place; query matching is no longer limited to the purchased keywords.",
+        "acteur": "acquisition team"
+      },
+      {
+        "etape": "Matching and rewriting at auction time",
+        "detail": "The system connects the search entered to the offer, adapts the ad text and selects the landing page.",
+        "acteur": "AI"
+      },
+      {
+        "etape": "Control what gets served",
+        "detail": "Review the search terms captured and the text variants generated, exclude what falls outside the scope or touches regulated wording.",
+        "acteur": "acquisition team and compliance"
+      },
+      {
+        "etape": "Arbitrate on cost per lead",
+        "detail": "Track conversion volume and cost per lead, feed lead quality back from the CRM so that optimization aims at the policy and not at the form.",
+        "acteur": "acquisition team and data"
+      }
+    ]
+  },
+  "replication": {
+    "prerequis_data": [
+      "Reliable conversion tracking on the insurance lead (quote, form, call), compliant with consent",
+      "A lead quality feed from the CRM, otherwise optimization aims at the form and not at the policy",
+      "Landing pages per insurance situation, so that automatic page selection has something to choose from",
+      "A body of ads and site content explicit enough about the offer"
+    ],
+    "prerequis_orga": [
+      "A Google Ads account with Search campaigns already in place and a conversion history",
+      "A compliance validation route for generated ad texts, mandatory in insurance",
+      "A routine for reading the search terms captured and updating exclusions"
+    ],
+    "stack_possible": [
+      "Google Ads with AI Max turned on for the Search campaigns",
+      "The Microsoft Advertising equivalent on automated campaign formats",
+      "Measurement layer: offline conversion import from the CRM to requalify leads"
+    ],
+    "equipe": "A paid acquisition lead or an SEA agency, a data or tracking person to hold the conversion signal and the CRM import, and a compliance contact on the insurance side to arbitrate on generated texts.",
+    "playbook": [
+      {
+        "action": "Make conversion tracking on the insurance lead reliable and connect the offline conversion import from the CRM.",
+        "livrable": "A conversion signal that tells a completed form apart from a policy."
+      },
+      {
+        "action": "Map the existing quote pages by insurance situation and fill the gaps.",
+        "livrable": "A set of landing pages granular enough for automatic selection."
+      },
+      {
+        "action": "Turn on AI Max for a representative Search campaign, keeping a control campaign on the previous setup.",
+        "livrable": "A readable comparison on conversion volume and cost per lead."
+      },
+      {
+        "action": "Put in place the review of captured search terms and generated text variants, together with compliance.",
+        "livrable": "An exclusion list and a written frame for what the machine may rephrase."
+      },
+      {
+        "action": "Extend to the other campaigns once cost per lead holds, keeping the CRM quality reading as the arbiter.",
+        "livrable": "A gradual rollout backed by lead quality, not by volume alone."
+      }
+    ],
+    "premiere_etape": "Check that the lead is reported to Google Ads with its real quality, by importing from the CRM the leads that end in a policy, before opening matching beyond the purchased keywords."
+  },
+  "statut_vivant": {
+    "note": "The case was cited as active on July 22, 2026, less than a month before verification, and AI Max is an expanding product: Google announced the automatic migration of Dynamic Search Ads campaigns to AI Max. No signal of a stop. The reservation is about the single source: it is Google talking about AAA's campaign, not AAA."
+  },
+  "seo": {
+    "title": "AAA Auto Club Enterprises: AI Max on Google Ads - +17% conversions (2026)",
+    "meta_description": "Alphabet reports +17% conversion volume and -11% cost per lead for AAA Auto Club Enterprises after turning on AI Max for its Search campaigns.",
+    "resume_citable": "With AI Max, the Google Ads Search campaign option that customizes ad text and reaches queries beyond the purchased keywords, AAA Auto Club Enterprises got 17% more conversion volume and 11% lower cost per lead, figures announced by Alphabet during its second quarter 2026 earnings call on July 22, 2026.",
+    "faq": [
+      {
+        "q": "What results did AAA Auto Club Enterprises get with AI Max?",
+        "a": "Alphabet announced on July 22, 2026 a 17% increase in conversion volume and an 11% decrease in cost per lead. These figures come from a single sentence in Alphabet's earnings call and are confirmed by no source on the AAA side."
+      },
+      {
+        "q": "What is AI Max on Google Ads?",
+        "a": "A Search campaign option out of beta in 2026 that combines the advertiser's ads and site content with richer signals. It bundles broadened search term matching, ad text customization and automatic landing page selection."
+      },
+      {
+        "q": "Can this case be replicated in Europe?",
+        "a": "Yes, AI Max is available in Google Ads in Europe. Two precautions: GDPR-compliant conversion tracking for insurance leads, and human validation of generated texts, since insurance advertising is regulated."
+      }
+    ]
+  }
+}

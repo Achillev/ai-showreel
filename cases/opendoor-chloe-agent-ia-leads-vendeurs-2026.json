@@ -1,0 +1,269 @@
+{
+  "id": "opendoor-chloe-agent-ia-leads-vendeurs-2026",
+  "type_fiche": "succes",
+  "marque": "Opendoor",
+  "groupe": "Opendoor Technologies Inc.",
+  "industrie": "immobilier",
+  "marches_deploiement": [
+    "Etats-Unis"
+  ],
+  "transposable_ue": {
+    "flag": "oui_avec_adaptations",
+    "note": "Opendoor n'opere qu'aux Etats-Unis. Le pattern, un agent IA qui prend le premier contact avec un lead vendeur et le fait avancer jusqu'a l'equipe commerciale, se transpose en UE mais impose une base legale RGPD pour le traitement des donnees du prospect et des donnees de bien. L'AI Act demande d'informer la personne qu'elle parle a une IA : Opendoor le fait deja, le dispositif se declare bot."
+  },
+  "metier": "vente et generation de leads vendeurs",
+  "logo_domain": "opendoor.com",
+  "intervenants": [
+    {
+      "nom": "Kasra Nejatian",
+      "role": "CEO d'Opendoor, a presente Chloe et ses chiffres lors de l'earnings call du T2 2026",
+      "source_ref": "S1"
+    }
+  ],
+  "axes": {
+    "levier": "activation_conversion",
+    "touchpoints": [
+      "premier contact avec le lead vendeur",
+      "equipes de vente Opendoor"
+    ],
+    "etape_parcours": "consideration",
+    "famille": "conversation",
+    "pattern": "agent IA de qualification et de conversion des leads entrants",
+    "type_ia": [
+      "assistant conversationnel IA",
+      "agent IA integre a une equipe de vente"
+    ],
+    "plateforme_stack": [
+      "custom/in-house"
+    ],
+    "objectif_metrique": [
+      "taux de conversion des leads vendeurs",
+      "cout par conversion",
+      "couverture horaire du traitement des leads"
+    ]
+  },
+  "implementation": "custom",
+  "stack_technique": [
+    {
+      "nom": "Chloe",
+      "categorie": "outil",
+      "detail": "Assistant IA d'Opendoor, decrit par le CEO comme un membre a part entiere des equipes de vente. Le dispositif se declare explicitement comme un bot aupres des interlocuteurs.",
+      "url": "https://www.opendoor.com"
+    }
+  ],
+  "objectif_business": "Convertir davantage de leads vendeurs sans elargir l'equipe commerciale, en confiant a un agent IA le traitement continu des contacts entrants et en gardant les vendeurs humains sur les dossiers qui le demandent.",
+  "points_cles": [
+    "Opendoor a integre son assistant IA Chloe aux equipes de vente qui traitent les leads vendeurs.",
+    "Chloe convertit 3 fois plus qu'en janvier 2026, pour un tiers du cout.",
+    "Elle est disponible 168 heures par semaine et se declare explicitement comme un bot.",
+    "Preuve A : chiffres annonces par le CEO a l'earnings call du T2 2026 (4 aout 2026)."
+  ],
+  "description": "Chloe est l'assistant IA d'Opendoor. Lors de l'earnings call du deuxieme trimestre 2026, le CEO Kasra Nejatian la presente comme un membre a part entiere des equipes de vente de l'entreprise, et non plus comme un outil annexe. Elle traite les contacts entrants en continu : le chiffre communique est de 168 heures par semaine, soit la totalite des heures d'une semaine. Elle annonce a son interlocuteur qu'elle est un bot. Sur le trimestre, Opendoor declare que Chloe convertit trois fois plus qu'en janvier 2026, pour un tiers du cout. La comparaison porte sur la performance de Chloe elle-meme entre janvier et le T2 2026, pas sur un ecart avec un commercial humain : Opendoor ne publie ni le volume de leads traites, ni le taux de conversion absolu, ni la base sur laquelle le cout est calcule. Le meme trimestre a vu Opendoor pousser plusieurs autres briques IA (auto-underwriter sur environ une valorisation sur cinq, Ops Hub, Opendoor 2.0 pour les agents), mais les chiffres de conversion et de cout cites ici sont attribues a Chloe seule.",
+  "resultats": [
+    {
+      "metrique": "Conversion de Chloe au T2 2026 rapportee a janvier 2026",
+      "valeur": "3x vs janvier",
+      "citation_exacte": "She converts 3x what she did in January at 1/3 of the cost.",
+      "source_ref": "S1"
+    },
+    {
+      "metrique": "Cout de la conversion sur la meme periode de reference",
+      "valeur": "1/3 du cout",
+      "citation_exacte": "She converts 3x what she did in January at 1/3 of the cost.",
+      "source_ref": "S1"
+    },
+    {
+      "metrique": "Couverture horaire du traitement des leads",
+      "valeur": "168 h/semaine",
+      "citation_exacte": "She works 168 hours a week, takes no vacations or bathroom breaks",
+      "source_ref": "S1"
+    }
+  ],
+  "niveau_preuve": {
+    "niveau": "A",
+    "justification": "Chiffres enonces par le CEO d'Opendoor pendant l'earnings call du T2 2026 du 4 aout 2026, dans le cadre du reporting financier, et disponibles en transcription verbatim chez deux editeurs independants. Les chiffres sont explicitement rattaches au dispositif Chloe, pas aux resultats globaux de l'entreprise."
+  },
+  "dates": {
+    "lancement": "Avant janvier 2026 (le CEO prend janvier 2026 comme point de comparaison de la performance de Chloe)",
+    "derniere_confirmation_activite": "2026-08",
+    "verifie_le": "2026-08-21",
+    "revoir_apres": "2027-02-21"
+  },
+  "statut_vivant": {
+    "statut": "confirme",
+    "note": "Dispositif presente comme en production et en progression lors de l'earnings call du 4 aout 2026. Opendoor ne communique pas publiquement sur Chloe en dehors de ce canal : pas de page produit, pas de communique, pas de couverture presse dediee. La verification repose donc sur la parole du dirigeant en resultats financiers."
+  },
+  "sources": [
+    {
+      "ref": "S1",
+      "type": "earnings_call",
+      "fiabilite": "T1_primaire",
+      "titre": "Opendoor (OPEN) Q2 2026 Earnings Call Transcript",
+      "url": "https://www.theglobeandmail.com/investing/markets/stocks/OPEN-Q/pressreleases/3793210/opendoor-open-q2-2026-earnings-call-transcript/",
+      "date_publication": "2026-08-04",
+      "consulte_le": "2026-08-21"
+    },
+    {
+      "ref": "S2",
+      "type": "earnings_call",
+      "fiabilite": "T4_secondaire",
+      "titre": "Earnings call transcript: Opendoor Q2 2026 misses estimates as shares fall after hours",
+      "url": "https://www.investing.com/news/transcripts/earnings-call-transcript-opendoor-q2-2026-misses-estimates-as-shares-fall-after-hours-93CH-4836132",
+      "date_publication": "2026-08-04",
+      "consulte_le": "2026-08-21"
+    },
+    {
+      "ref": "S3",
+      "type": "document_officiel_sec",
+      "fiabilite": "T1_primaire",
+      "titre": "Opendoor 2Q26 Financial Open House on August 4th, 2026",
+      "url": "https://investor.opendoor.com/news-releases/news-release-details/opendoor-2q26-financial-open-house-august-4th-2026",
+      "date_publication": "2026-08",
+      "consulte_le": "2026-08-21"
+    }
+  ],
+  "fonctionnement_operationnel": {
+    "cadence": "En continu, sans interruption : le chiffre communique par Opendoor est de 168 heures par semaine",
+    "opere_par": "Les equipes de vente d'Opendoor, dont Chloe fait partie selon la direction",
+    "signal_pilote": "La conversion des leads vendeurs entrants. C'est la metrique sur laquelle Opendoor mesure Chloe (trois fois plus qu'en janvier 2026). Sans suivi du devenir de chaque lead, le gain n'est ni pilotable ni demontrable.",
+    "etapes": [
+      {
+        "etape": "Arrivee du lead vendeur",
+        "detail": "Un proprietaire prend contact avec Opendoor pour vendre son bien.",
+        "acteur": "client"
+      },
+      {
+        "etape": "Prise en charge par Chloe",
+        "detail": "L'assistant IA prend le contact et annonce qu'il est un bot. La prise en charge ne depend ni des horaires ni des absences d'une equipe humaine.",
+        "acteur": "IA"
+      },
+      {
+        "etape": "Avancement du dossier vers la vente",
+        "detail": "Chloe fait progresser le lead comme le ferait un membre de l'equipe commerciale ; c'est ce parcours qui est mesure en conversion.",
+        "acteur": "IA"
+      },
+      {
+        "etape": "Suivi de la performance",
+        "detail": "Opendoor suit la conversion et le cout du dispositif dans le temps, et compare la periode courante a janvier 2026.",
+        "acteur": "equipe data"
+      }
+    ]
+  },
+  "schema_flow": {
+    "statut": "approche_type",
+    "noeuds": [
+      {
+        "id": "vendeur",
+        "role_generique": "humain",
+        "label": "Proprietaire qui veut vendre (lead entrant)"
+      },
+      {
+        "id": "canal",
+        "role_generique": "canal_conversationnel",
+        "label": "Canal de contact Opendoor"
+      },
+      {
+        "id": "chloe",
+        "role_generique": "modele_ia",
+        "label": "Chloe, assistant IA de vente",
+        "outil_documente": "Chloe (Opendoor)"
+      },
+      {
+        "id": "sales",
+        "role_generique": "humain",
+        "label": "Equipes de vente Opendoor"
+      },
+      {
+        "id": "offre",
+        "role_generique": "site_app",
+        "label": "Parcours d'offre et de transaction Opendoor"
+      }
+    ],
+    "liens": [
+      [
+        "vendeur",
+        "canal",
+        "prise de contact"
+      ],
+      [
+        "canal",
+        "chloe",
+        "traitement continu"
+      ],
+      [
+        "chloe",
+        "sales",
+        "dossiers qui demandent un humain"
+      ],
+      [
+        "chloe",
+        "offre",
+        "avancement vers l'offre"
+      ],
+      [
+        "offre",
+        "chloe",
+        "issue du lead, mesure de conversion"
+      ]
+    ]
+  },
+  "replication": {
+    "statut_epistemique": "infere",
+    "prerequis_data": [
+      "Historique des leads entrants avec leur issue, pour mesurer une conversion avant et apres",
+      "Donnees de qualification du bien et du vendeur consultables par l'agent",
+      "Tracabilite des echanges pour pouvoir auditer ce que l'agent a dit"
+    ],
+    "prerequis_orga": [
+      "Equipe commerciale prete a partager son pipeline de leads avec un agent IA plutot qu'a le recevoir filtre",
+      "Regle de transparence assumee : l'agent se declare comme un bot",
+      "Regle de passage de relais claire vers un humain",
+      "Suivi du cout du dispositif rapporte a la conversion, pas au volume de messages"
+    ],
+    "stack_possible": [
+      "Agent conversationnel branche sur le canal de contact entrant",
+      "CRM ou base de leads accessible en lecture et en ecriture par l'agent",
+      "Couche de mesure de conversion par cohorte de leads"
+    ],
+    "premiere_etape": "Mesurer la conversion actuelle des leads entrants par creneau horaire, pour isoler ce que coute l'attente hors des heures ouvrees avant d'y mettre un agent.",
+    "playbook": [
+      {
+        "action": "Etablir la conversion de reference des leads entrants, par source et par moment d'arrivee.",
+        "livrable": "Base de reference chiffree contre laquelle tout gain sera mesure."
+      },
+      {
+        "action": "Mettre un agent IA sur un sous-ensemble de leads, avec declaration explicite de sa nature de bot.",
+        "livrable": "Agent en production sur un perimetre restreint, avec journal des echanges."
+      },
+      {
+        "action": "Definir le point de passage vers un commercial humain et ce que l'agent transmet a ce moment-la.",
+        "livrable": "Regle de relais ecrite et appliquee dans l'outil."
+      },
+      {
+        "action": "Comparer conversion et cout du perimetre agent au perimetre de reference, puis elargir.",
+        "livrable": "Lecture conversion et cout par cohorte, decision d'extension."
+      }
+    ],
+    "equipe": "Un responsable produit sur l'agent, un profil data pour la mesure de conversion, et un responsable des ventes qui garde la main sur les regles de relais et sur la qualite des echanges."
+  },
+  "seo": {
+    "slug": "opendoor-chloe-agent-ia-leads-vendeurs-2026",
+    "title": "Opendoor : Chloe, agent IA de vente - conversion x3 en six mois (2026)",
+    "meta_description": "Opendoor a integre son assistant IA Chloe a ses equipes de vente : elle convertit 3 fois plus qu'en janvier 2026, pour un tiers du cout, 168 heures par semaine.",
+    "resume_citable": "Au deuxieme trimestre 2026, Opendoor declare que son assistant IA Chloe, integre aux equipes de vente et disponible 168 heures par semaine, convertit trois fois plus qu'en janvier 2026 pour un tiers du cout.",
+    "faq": [
+      {
+        "q": "Qu'est-ce que Chloe chez Opendoor ?",
+        "a": "L'assistant IA d'Opendoor, presente par le CEO comme un membre des equipes de vente. Il prend en charge les contacts entrants en continu et se declare explicitement comme un bot."
+      },
+      {
+        "q": "Que mesure le chiffre de conversion multipliee par trois ?",
+        "a": "Il compare la conversion obtenue par Chloe au T2 2026 a celle qu'elle obtenait en janvier 2026, pour un tiers du cout. Opendoor ne publie ni le volume de leads traites ni le taux de conversion absolu."
+      },
+      {
+        "q": "Le dispositif est-il toujours actif ?",
+        "a": "Il a ete presente comme en production et en progression lors de l'earnings call du 4 aout 2026. Opendoor ne communique pas sur Chloe en dehors de ce canal."
+      }
+    ]
+  }
+}

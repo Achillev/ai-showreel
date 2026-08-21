@@ -1,0 +1,146 @@
+{
+  "transposable_ue": {
+    "note": "The advertising part of Airo is already served in Ireland, an English-speaking EU market, which shows the setup runs under GDPR. Two points to frame for a European replication: the legal basis for processing the customer data used to recommend and attach products, and informing the user that the content produced (site, logo, ads) is generated. The AI Act requires that transparency without classifying this type of marketing use as high risk."
+  },
+  "pattern": "genAI creation assistant that drives product attach and upsell",
+  "etape_parcours": "post-purchase",
+  "objectif_business": "Make Airo the entry point to the GoDaddy customer base in order to sell more products per customer: convert free signups into paying ones, raise the number of products held per account, and create a revenue line of its own, through subscription and token consumption.",
+  "points_cles": [
+    "GoDaddy put Airo, its AI system for very small businesses, at the center of its offer.",
+    "Annualized bookings run rate for Airo at 50 million dollars in Q2 2026, five times the previous quarter.",
+    "More than 70% of Airo users hold at least two products, against more than 50% across the whole base.",
+    "Level A evidence: Q2 2026 earnings release, investor presentation and earnings call of July 30, 2026."
+  ],
+  "description": "Airo is the AI experience GoDaddy offers its very small business customers: starting from a domain name or a description of the business, the system produces a site, a brand identity, content and ad campaigns, then suggests the matching GoDaddy products as usage goes on. GoDaddy describes it as an agentic operating system for small businesses and has placed it at the center of its transformation. Monetization combines a subscription and token consumption, which sets Airo apart from the legacy products sold per unit. In the second quarter of 2026, GoDaddy published an annualized bookings run rate of 50 million dollars for Airo, five times the 10 million level communicated a quarter earlier, noting that nearly all of that growth was organic ahead of any significant marketing effort. Management also stated that more than 70% of customers who had used Airo during the year held at least two products, against more than 50% across the whole base, and that free-to-paid conversion was improving compared with the period before Airo. GoDaddy is now testing Airo in the domain purchase path, its largest funnel. This shift comes at an accepted cost: demand for professional services billed at a few thousand dollars and for template-based website builders is shrinking as Airo absorbs those uses. On the advertising side, GoDaddy extended Airo Digital Ads to nine new English-speaking markets in October 2025, including Ireland, Singapore, New Zealand and the United Arab Emirates. One caution when reading the figures: the ARPU of 250 dollars, up 9% and published the same day, is an aggregate computed as total revenue divided by the average number of customers, presented by GoDaddy as the result of high-value cohorts, and not a result attributed to Airo.",
+  "resultats": [
+    {
+      "metrique": "Annualized bookings run rate attributed to Airo in Q2 2026, against 10 million dollars a quarter earlier"
+    },
+    {
+      "metrique": "Share of customers who used Airo during the year and hold at least two products, against more than 50% across the whole base"
+    },
+    {
+      "metrique": "Free-to-paid conversion on the Airo paths, compared with the period before Airo (no figure published)"
+    },
+    {
+      "metrique": "Airo put into testing in the domain purchase path, GoDaddy's main entry funnel"
+    }
+  ],
+  "niveau_preuve": {
+    "justification": "The central figure, 50 million dollars of annualized bookings run rate for Airo and its fivefold increase in one quarter, appears in the Q2 2026 earnings release filed as EX-99.1 to the 8-K of July 30, 2026 and in the investor presentation of the same day, named and tied to Airo. The attach rate above 70% and the free-to-paid conversion come from the chief financial officer's statements on the earnings call, so from the same financial reporting but through a third-party transcript. One figure was set aside: the ARPU up 9% to 250 dollars is not attributed to Airo. GoDaddy computes it as total revenue over the trailing twelve months divided by the average number of customers, and presents it on a slide devoted to cohorts spending more than 500 dollars a year. The chief financial officer himself tied the ARPU progression to the general strategy of recruiting high-intent customers, not to Airo. Retention is likewise not attributed to Airo and is not claimed here."
+  },
+  "stack_technique": [
+    {
+      "detail": "In-house AI system presented by GoDaddy as an agentic operating system for very small businesses: site creation, brand identity, content and campaigns. Monetized through a subscription topped up by token consumption. Public sources do not name the underlying model or models."
+    },
+    {
+      "detail": "The advertising part of Airo: ad copywriting, keyword selection and Google Ads campaign structuring from the GoDaddy dashboard."
+    },
+    {
+      "detail": "API generation announced in Q2 2026 allowing developers and AI systems to search, buy, configure and manage domains from their own tools."
+    }
+  ],
+  "fonctionnement_operationnel": {
+    "cadence": "Real time at each customer interaction in Airo; steering of bookings and attach at the pace of quarterly reporting; gradual opening of the entry paths (domains) through testing",
+    "opere_par": "GoDaddy product and AI teams for the system itself, the finance team for tracking bookings and attach, marketing for opening the paths and for acquisition spend",
+    "signal_pilote": "The number of products held per account and free-to-paid conversion. Without a clean measurement of Airo cohorts against non-Airo cohorts, it becomes impossible to tell the effect of the setup apart from the general growth of the base, which is exactly the trap on ARPU.",
+    "etapes": [
+      {
+        "etape": "Entry into the path",
+        "detail": "The customer arrives through a domain purchase or a free signup and describes their business.",
+        "acteur": "customer"
+      },
+      {
+        "etape": "Generation of the experience",
+        "detail": "Airo produces the matching site, brand identity and marketing content, then suggests the GoDaddy building blocks suited to what the customer is trying to do.",
+        "acteur": "AI"
+      },
+      {
+        "etape": "Monetization",
+        "detail": "Usage is billed through a subscription topped up by token consumption, in place of buying products per unit.",
+        "acteur": "AI"
+      },
+      {
+        "etape": "Attach measurement",
+        "detail": "Finance tracks the number of products per account on the Airo cohorts and compares them with the non-Airo cohorts, along with free-to-paid conversion.",
+        "acteur": "data team"
+      },
+      {
+        "etape": "Opening the funnels",
+        "detail": "Marketing tests Airo in the domain purchase path before committing more ad spend, under a profitability constraint.",
+        "acteur": "marketing"
+      },
+      {
+        "etape": "Catalog arbitration",
+        "detail": "The products absorbed by Airo, professional services and template-based website builders, are deliberately pushed less, which weighs on legacy bookings.",
+        "acteur": "product"
+      }
+    ]
+  },
+  "replication": {
+    "prerequis_data": [
+      "An identified customer base with a history of the products held per account",
+      "Tracking of the cohorts exposed to the AI setup and of the unexposed cohorts, over the same scope",
+      "Product usage signals that make it possible to trigger a relevant recommendation",
+      "Measurement of free-to-paid conversion before launch, to have a point of comparison"
+    ],
+    "prerequis_orga": [
+      "Agreement between product, finance and marketing on the definition of the attach being measured",
+      "Explicit acceptance of the cannibalization of the products the setup absorbs",
+      "A billing model able to handle a subscription and variable consumption",
+      "Governance on the transparency of generated content delivered to the customer"
+    ],
+    "stack_possible": [
+      "A genAI assistant connected to the product catalog and the customer account",
+      "A contextual recommendation layer in the onboarding path",
+      "Hybrid billing, subscription plus consumption",
+      "A tool for measuring exposed and unexposed cohorts"
+    ],
+    "premiere_etape": "Measure the number of products held per account and free-to-paid conversion on the current base, then define the control cohort that will serve as the reference before exposing anyone to the setup.",
+    "playbook": [
+      {
+        "action": "Establish the baseline measurement: products per account, free-to-paid conversion, revenue per account, on comparable cohorts.",
+        "livrable": "A quantified starting point and the definition of a control cohort."
+      },
+      {
+        "action": "Pick a single high-volume entry funnel and connect the genAI assistant to it, without opening it to the whole base.",
+        "livrable": "The setup in production on a limited path."
+      },
+      {
+        "action": "Connect the assistant to the product catalog so that it suggests the block matching what the customer is trying to do, rather than a generic catalog.",
+        "livrable": "Contextual recommendations connected to the customer account."
+      },
+      {
+        "action": "Put hybrid billing in place, subscription plus consumption, and check that it does not destroy more revenue than it creates on the absorbed products.",
+        "livrable": "An economic model verified on the tested scope."
+      },
+      {
+        "action": "Compare exposed and unexposed cohorts on attach and conversion, then open the main funnel and the marketing spend only once the gap is established.",
+        "livrable": "An expansion decision backed by a measured gap."
+      }
+    ],
+    "equipe": "An AI product team for the assistant and its connection to the catalog, a data team to track cohorts and attach, a finance contact for the hybrid billing model, and a marketing team able to open the paths in stages."
+  },
+  "statut_vivant": {
+    "note": "Airo is presented as the center of GoDaddy's transformation in the results of July 30, 2026, with a test in the domain purchase path and an announced increase in marketing spend over the second half. The chief financial officer detailed Airo's trajectory again in an interview published on August 12, 2026."
+  },
+  "seo": {
+    "title": "GoDaddy: Airo, the AI that drives product attach - 50M dollars run rate and 70% multi-product customers (2026)",
+    "meta_description": "In Q2 2026, GoDaddy published a 50M dollar annualized run rate for Airo, five times the previous quarter, and more than 70% of Airo users holding multiple products.",
+    "resume_citable": "In the second quarter of 2026, GoDaddy published an annualized bookings run rate of 50 million dollars for Airo, its AI system for very small businesses, five times the 10 million of the previous quarter, with more than 70% of Airo users holding at least two products against more than 50% across the whole base of 20.5 million customers.",
+    "faq": [
+      {
+        "q": "Which figure does GoDaddy attribute directly to Airo?",
+        "a": "Airo's annualized bookings run rate, 50 million dollars in Q2 2026, five times the 10 million level published a quarter earlier, along with the attach of more than 70% multi-product customers among Airo users."
+      },
+      {
+        "q": "Does the 9% rise in ARPU come from Airo?",
+        "a": "No. GoDaddy computes ARPU as total revenue divided by the average number of customers and presents it on a slide devoted to cohorts spending more than 500 dollars a year. The chief financial officer ties this progression to the general recruitment strategy, not to Airo."
+      },
+      {
+        "q": "What does this shift cost GoDaddy?",
+        "a": "Demand for professional services billed at a few thousand dollars and for template-based website builders is shrinking as Airo absorbs those uses, which weighs on bookings for the legacy products."
+      }
+    ]
+  }
+}

@@ -1,0 +1,289 @@
+{
+  "id": "jd-health-dr-dawei-assistant-sante-ia-2026",
+  "type_fiche": "succes",
+  "marque": "JD Health",
+  "groupe": "JD.com",
+  "industrie": "sante_pharma",
+  "marches_deploiement": [
+    "Chine"
+  ],
+  "transposable_ue": {
+    "flag": "oui_avec_adaptations",
+    "note": "Le mecanisme (agent conversationnel gratuit branche sur un catalogue et sur une logistique de livraison) se transpose, le contenu medical beaucoup moins. Un agent qui oriente vers une conduite de soins releve potentiellement du logiciel dispositif medical (reglement MDR) et des obligations de l'AI Act sur les systemes a risque eleve en sante. Les echanges sont des donnees de sante au sens de l'article 9 du RGPD, avec base legale et minimisation a cadrer. Le couplage conseil de sante et vente de medicaments est encadre pays par pays en UE, notamment pour les medicaments soumis a prescription."
+  },
+  "metier": "e-commerce sante et services medicaux en ligne",
+  "logo_domain": "jdhealth.com",
+  "axes": {
+    "levier": "activation_conversion",
+    "touchpoints": [
+      "application JD Health",
+      "plateforme e-commerce pharmacie de JD",
+      "hopital en ligne JD Health"
+    ],
+    "etape_parcours": "consideration",
+    "famille": "conversation",
+    "pattern": "agent IA grand public gratuit qui route la demande vers l'achat produit et sert de base a la commercialisation",
+    "type_ia": [
+      "agent conversationnel IA",
+      "grand modele de langage medical"
+    ],
+    "plateforme_stack": [
+      "Jingyi Qianxun (jing yi qian xun), modele medical proprietaire de JD Health",
+      "custom/in-house"
+    ],
+    "objectif_metrique": [
+      "utilisateurs servis par l'agent",
+      "conversion en achat produit",
+      "taux de satisfaction"
+    ]
+  },
+  "implementation": "custom",
+  "stack_technique": [
+    {
+      "nom": "Jingyi Qianxun 2.0",
+      "categorie": "llm",
+      "detail": "Modele medical proprietaire de JD Health, presente en version 2.0 le 25 septembre 2025. C'est le modele sur lequel s'appuient les agents de l'AI Hospital 1.0, dont l'agent medecin Dr. Dawei.",
+      "url": "https://www.jd.com"
+    }
+  ],
+  "objectif_business": "Convertir une audience de consultation sante gratuite en achats sur la plateforme pharmacie de JD, en enchainant orientation, teleconsultation, examen et achat de medicament dans une meme conversation. La direction annonce vouloir en faire ensuite une activite commerciale a part entiere, avec des accords deja signes, mais ne publie aucun chiffre de revenu attribue au dispositif.",
+  "points_cles": [
+    "JD Health opere Dr. Dawei, un agent IA sante grand public integre a sa plateforme e-commerce pharmacie.",
+    "Sa base d'utilisateurs a ete multipliee par pres de 4 sur le premier semestre 2026.",
+    "Plusieurs centaines de millions d'interactions cumulees, 98% de satisfaction, pres de 70% d'utilisateurs en villes de rang 3 et moins.",
+    "Preuve A : earnings call du 13 aout 2026, mais l'effet monetisation reste qualitatif, sans chiffre de revenu."
+  ],
+  "description": "JD Health exploite la premiere plateforme de vente de medicaments en ligne en Chine. Dr. Dawei est son agent medecin destine au grand public : l'utilisateur pose sa question de sante dans l'application, l'agent l'oriente, mene l'echange de type consultation, lit un compte rendu d'examen si besoin, puis renvoie vers un produit du catalogue pharmacie ou vers un medecin de l'hopital en ligne du groupe. L'agent a ete presente le 25 septembre 2025 parmi la dizaine d'agents de l'AI Hospital 1.0, tous adosses au modele medical maison Jingyi Qianxun, dont la version 2.0 a ete devoilee le meme jour ; JD Health decrit cette architecture comme un enchainement orientation, consultation, examen, achat de medicament. Sur le premier semestre 2026, Dr. Dawei a recu une memoire de dossier de sante longue duree, qui permet un suivi entre deux echanges au lieu d'une reponse ponctuelle. Le rapport semestriel annonce un nombre d'utilisateurs servis par l'agent en hausse de pres de 4 fois en glissement annuel pendant le festival 618, et l'earnings call rattache cette croissance a une meilleure conversion en achat de produits. En cumule, l'agent totalise plusieurs centaines de millions d'interactions, un taux d'avis favorables de 98%, et pres de sept utilisateurs sur dix venant de villes de rang 3 ou inferieur. Un point reste ouvert : le seul chiffre attache au dispositif est cette croissance d'audience. La direction dit avoir signe des accords de commercialisation pour Dr. Dawei et voir une voie degagee, sans publier de revenu, de panier ni d'ARPU. La hausse de plus de 20% du nombre de marchands annonceurs, citee au meme call, mesure la plateforme publicitaire de JD Health et n'est pas presentee comme un effet de l'agent.",
+  "resultats": [
+    {
+      "metrique": "Croissance de la base d'utilisateurs de Dr. Dawei sur le premier semestre 2026, rattachee par la direction a une meilleure conversion en achat de produits",
+      "valeur": "pres de x4",
+      "citation_exacte": "Its user base has increased by nearly fourfold, driving the higher product purchase conversion.",
+      "source_ref": "S1"
+    },
+    {
+      "metrique": "Utilisateurs servis par Dr. Dawei pendant le festival 618, en glissement annuel (rapport semestriel 2026)",
+      "valeur": "x4 pendant 618",
+      "citation_exacte": "618期间，AI医生\"大为\"服务用户数同比增长近4倍",
+      "source_ref": "S2"
+    },
+    {
+      "metrique": "Taux d'avis favorables sur plusieurs centaines de millions d'interactions cumulees, avec pres de 70% des utilisateurs venant de villes de rang 3 et au-dela",
+      "valeur": "98%",
+      "citation_exacte": "AI医生\"大为\"已实现累计数亿次交互，好评率98%，近七成用户来自三线及以下城市。",
+      "source_ref": "S3"
+    }
+  ],
+  "niveau_preuve": {
+    "niveau": "A",
+    "justification": "Le chiffre central vient de l'earnings call du 13 aout 2026 sur les resultats du premier semestre, et il est corrobore par deux titres de presse etablie relayant le rapport semestriel (Science and Technology Daily, China News Service). Limite a assumer : seule la croissance d'audience de l'agent est chiffree et attribuee au dispositif. L'effet monetisation reste declaratif (accords de commercialisation signes, voie degagee), sans revenu ni panier publie, et la hausse de plus de 20% des marchands annonceurs mesure la plateforme publicitaire, pas Dr. Dawei. Classement du levier : la fiche est rangee en activation_conversion et non en monetisation, parce que le seul effet mesure et attribue au dispositif porte sur l audience et l orientation vers l achat. La monetisation de Dr. Dawei est annoncee, pas encore chiffree ; la ranger en monetisation aurait comble un croisement vide avec un resultat non prouve."
+  },
+  "dates": {
+    "lancement": "2025 (Dr. Dawei figure parmi les agents de l'AI Hospital 1.0 presentee le 25 septembre 2025)",
+    "derniere_confirmation_activite": "2026-08",
+    "verifie_le": "2026-08-21",
+    "revoir_apres": "2027-02-21"
+  },
+  "statut_vivant": {
+    "statut": "confirme",
+    "note": "Dispositif cite dans les resultats semestriels du 13 aout 2026, avec une evolution fonctionnelle datee du semestre (memoire de dossier de sante) et des chiffres d'usage en croissance. Aucun signal de retrait."
+  },
+  "sources": [
+    {
+      "ref": "S1",
+      "type": "earnings_call",
+      "fiabilite": "T4_secondaire",
+      "titre": "Earnings call transcript: JD Health posts strong H1 2026 profit growth",
+      "url": "https://uk.investing.com/news/transcripts/earnings-call-transcript-jd-health-posts-strong-h1-2026-profit-growth-93CH-4829678",
+      "date_publication": "2026-08-13",
+      "consulte_le": "2026-08-21"
+    },
+    {
+      "ref": "S2",
+      "type": "presse",
+      "fiabilite": "T3_presse_etablie",
+      "titre": "京东健康：人工智能驱动诊疗提效，AI医生服务用户增近4倍 (Science and Technology Daily)",
+      "url": "https://www.stdaily.com/web/gdxw/2026-08/14/content_563925.html",
+      "date_publication": "2026-08-14",
+      "consulte_le": "2026-08-21"
+    },
+    {
+      "ref": "S3",
+      "type": "presse",
+      "fiabilite": "T3_presse_etablie",
+      "titre": "AI医生进医院，新药首发到基层：京东健康半年报里的普惠医疗实践 (China News Service)",
+      "url": "https://www.chinanews.com.cn/cj/2026/08-14/10677909.shtml",
+      "date_publication": "2026-08-14",
+      "consulte_le": "2026-08-21"
+    },
+    {
+      "ref": "S4",
+      "type": "presse",
+      "fiabilite": "T3_presse_etablie",
+      "titre": "2025京东全球科技探索者大会：京东健康发布\"AI医院\"、升级\"京医千询2.0\" (Beijing Business Today)",
+      "url": "https://www.bbtnews.com.cn/2025/0925/571105.shtml",
+      "date_publication": "2025-09-25",
+      "consulte_le": "2026-08-21"
+    }
+  ],
+  "fonctionnement_operationnel": {
+    "cadence": "Temps reel, en continu dans l'application. Le modele medical et les agents evoluent par versions : Jingyi Qianxun 2.0 en septembre 2025, ajout de la memoire de dossier de sante sur le premier semestre 2026.",
+    "opere_par": "Les equipes IA sante de JD Health, avec les medecins de l'hopital en ligne du groupe en relais sur les cas que l'agent ne traite pas.",
+    "signal_pilote": "Le rattachement de la reponse sante a un produit disponible au catalogue pharmacie et a une capacite d'execution (livraison du medicament, examen, medecin joignable). Si le catalogue, le stock ou la logistique ne sont pas branches sur la conversation, l'agent repond mais ne convertit rien : la croissance d'audience ne se traduit alors en rien de mesurable cote commerce.",
+    "etapes": [
+      {
+        "etape": "Entree par la question de sante",
+        "detail": "L'utilisateur decrit un symptome ou depose un compte rendu d'examen dans l'application JD Health.",
+        "acteur": "client"
+      },
+      {
+        "etape": "Orientation et echange",
+        "detail": "Dr. Dawei, adosse au modele Jingyi Qianxun, oriente la demande, mene l'echange de type consultation et lit les documents fournis.",
+        "acteur": "IA"
+      },
+      {
+        "etape": "Rappel du dossier",
+        "detail": "La memoire de dossier de sante ajoutee au premier semestre 2026 permet de reprendre l'historique de l'utilisateur d'un echange a l'autre, au lieu de repartir de zero.",
+        "acteur": "IA"
+      },
+      {
+        "etape": "Passage a l'acte",
+        "detail": "L'echange debouche sur un produit du catalogue pharmacie, un examen, ou le renvoi vers un medecin de l'hopital en ligne du groupe.",
+        "acteur": "IA"
+      },
+      {
+        "etape": "Relais humain",
+        "detail": "Les medecins de l'hopital en ligne prennent la main sur ce qui sort du perimetre de l'agent, notamment ce qui exige une prescription.",
+        "acteur": "humain"
+      }
+    ]
+  },
+  "schema_flow": {
+    "statut": "documente",
+    "noeuds": [
+      {
+        "id": "utilisateur",
+        "role_generique": "site_app",
+        "label": "Utilisateur dans l'application JD Health"
+      },
+      {
+        "id": "dawei",
+        "role_generique": "modele_ia",
+        "label": "Dr. Dawei, agent medecin grand public",
+        "outil_documente": "Agent de l'AI Hospital 1.0 adosse au modele Jingyi Qianxun"
+      },
+      {
+        "id": "dossier",
+        "role_generique": "data_source",
+        "label": "Dossier de sante longue duree de l'utilisateur"
+      },
+      {
+        "id": "catalogue",
+        "role_generique": "data_source",
+        "label": "Catalogue pharmacie et logistique JD"
+      },
+      {
+        "id": "medecin",
+        "role_generique": "humain",
+        "label": "Medecin de l'hopital en ligne JD Health"
+      },
+      {
+        "id": "achat",
+        "role_generique": "site_app",
+        "label": "Achat de produit sur la plateforme"
+      }
+    ],
+    "liens": [
+      [
+        "utilisateur",
+        "dawei"
+      ],
+      [
+        "dossier",
+        "dawei",
+        "historique de l'utilisateur"
+      ],
+      [
+        "dawei",
+        "dossier",
+        "mise a jour du dossier"
+      ],
+      [
+        "dawei",
+        "catalogue"
+      ],
+      [
+        "catalogue",
+        "achat"
+      ],
+      [
+        "dawei",
+        "medecin",
+        "cas hors perimetre de l'agent"
+      ]
+    ]
+  },
+  "replication": {
+    "statut_epistemique": "infere",
+    "prerequis_data": [
+      "Catalogue produit avec stock et disponibilite reellement interrogeables depuis la conversation",
+      "Historique utilisateur persistant entre deux sessions, pour que l'agent suive un dossier au lieu de repondre au coup par coup",
+      "Corpus metier fiable sur lequel ancrer les reponses, avec un perimetre explicite de ce que l'agent refuse de traiter"
+    ],
+    "prerequis_orga": [
+      "Une chaine d'execution derriere la conversation (commande, livraison, prise de rendez-vous), sinon l'agent produit de l'audience et rien d'autre",
+      "Un relais humain qualifie pour les cas qui sortent du perimetre autorise, et la regle qui declenche ce relais",
+      "Un cadre de conformite valide avant la mise en ligne quand le domaine est reglemente"
+    ],
+    "stack_possible": [
+      "Modele de langage specialise sur le domaine, propre ou adapte",
+      "Couche de recuperation sur le corpus metier et sur le catalogue en temps reel",
+      "Memoire utilisateur persistante rattachee au compte",
+      "Passerelle vers l'outil de commande et vers le back-office humain"
+    ],
+    "premiere_etape": "Brancher l'agent sur le catalogue et sur la capacite d'execution avant d'ouvrir la conversation au public : mesurer d'abord la part des echanges qui aboutissent a un acte, pas le volume d'echanges.",
+    "playbook": [
+      {
+        "action": "Delimiter par ecrit ce que l'agent traite et ce qu'il transmet a un humain, et coder ce perimetre comme une regle de routage.",
+        "livrable": "Perimetre d'intervention et regle d'escalade documentes."
+      },
+      {
+        "action": "Ancrer les reponses sur le corpus metier et sur le catalogue interroge en temps reel, plutot que sur les seules connaissances du modele.",
+        "livrable": "Agent qui ne recommande que des produits reellement disponibles."
+      },
+      {
+        "action": "Ajouter une memoire utilisateur persistante, pour transformer la reponse ponctuelle en suivi.",
+        "livrable": "Historique reutilisable d'une session a l'autre."
+      },
+      {
+        "action": "Instrumenter la conversation jusqu'a l'acte, pour rattacher la conversion a l'agent et pas seulement au trafic global.",
+        "livrable": "Mesure de la conversion attribuee a l'agent."
+      },
+      {
+        "action": "Ouvrir la commercialisation seulement une fois cette mesure en place, faute de quoi la croissance d'audience reste le seul indicateur disponible.",
+        "livrable": "Modele de revenu adosse a une mesure, pas a un volume d'usage."
+      }
+    ],
+    "equipe": "Une equipe produit et IA proprietaire de l'agent, des specialistes du domaine pour valider le contenu et le perimetre, une equipe data pour l'attribution de la conversion, et une fonction conformite quand le secteur est reglemente."
+  },
+  "seo": {
+    "slug": "jd-health-dr-dawei-assistant-sante-ia-2026",
+    "title": "JD Health : Dr. Dawei, agent IA sante grand public - base d'utilisateurs multipliee par pres de 4 (2026)",
+    "meta_description": "JD Health a fait croitre de pres de 4 fois la base d'utilisateurs de son agent IA sante Dr. Dawei sur le premier semestre 2026, avec 98% d'avis favorables.",
+    "resume_citable": "JD Health, premiere plateforme chinoise de vente de medicaments en ligne, a multiplie par pres de 4 la base d'utilisateurs de son agent IA sante Dr. Dawei sur le premier semestre 2026, agent qui totalise plusieurs centaines de millions d'interactions et 98% d'avis favorables, mais dont l'effet sur le revenu n'est pas chiffre publiquement.",
+    "faq": [
+      {
+        "q": "Qu'est-ce que Dr. Dawei chez JD Health ?",
+        "a": "Un agent medecin destine au grand public dans l'application JD Health : il oriente la demande de sante, mene l'echange, lit un compte rendu d'examen, puis renvoie vers un produit du catalogue pharmacie ou vers un medecin de l'hopital en ligne du groupe. Il fait partie des agents de l'AI Hospital 1.0 presentee en septembre 2025, adosses au modele medical maison Jingyi Qianxun."
+      },
+      {
+        "q": "Quels resultats sont reellement attribues au dispositif ?",
+        "a": "Une base d'utilisateurs multipliee par pres de 4 sur le premier semestre 2026, presentee comme tirant la conversion en achat de produits, et en cumule plusieurs centaines de millions d'interactions avec 98% d'avis favorables et pres de 70% d'utilisateurs venant de villes de rang 3 et au-dela."
+      },
+      {
+        "q": "La monetisation de Dr. Dawei est-elle chiffree ?",
+        "a": "Non. La direction indique avoir signe des accords de commercialisation et voir une voie degagee, sans publier de revenu, de panier ni d'ARPU. La hausse de plus de 20% du nombre de marchands annonceurs citee au meme earnings call mesure la plateforme publicitaire de JD Health, pas l'agent."
+      }
+    ]
+  }
+}

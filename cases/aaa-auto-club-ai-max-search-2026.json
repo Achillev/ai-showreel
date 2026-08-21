@@ -1,0 +1,299 @@
+{
+  "id": "aaa-auto-club-ai-max-search-2026",
+  "type_fiche": "succes",
+  "marque": "AAA Auto Club Enterprises",
+  "groupe": "AAA (American Automobile Association)",
+  "industrie": "banque_assurance_fintech",
+  "marches_deploiement": [
+    "Etats-Unis"
+  ],
+  "transposable_ue": {
+    "flag": "oui_avec_adaptations",
+    "note": "AI Max est une option de campagne Google Ads disponible en Europe, donc le dispositif se transpose sans projet technique. Deux points a cadrer avant de l'activer sur un marche UE. D'abord le suivi de conversion, ici des leads assurance, qui doit reposer sur une base legale et un recueil de consentement conformes au RGPD, faute de quoi le signal qui pilote la campagne se degrade. Ensuite la personnalisation automatique du texte des annonces, qui produit des messages non relus un par un alors que la publicite pour des produits d'assurance est encadree dans plusieurs pays de l'UE. Il faut donc borner les elements que le systeme peut reformuler et garder une validation humaine sur les mentions reglementees."
+  },
+  "metier": "marketing digital / acquisition payante (SEA, generation de leads)",
+  "marque_linkedin": "https://www.linkedin.com/company/aaa-auto-club-enterprises",
+  "logo_domain": "aaa.com",
+  "axes": {
+    "levier": "acquisition",
+    "touchpoints": [
+      "recherche Google",
+      "annonces Search Google Ads",
+      "pages de devis assurance"
+    ],
+    "etape_parcours": "consideration",
+    "famille": "optimisation_automatisation",
+    "pattern": "campagne search pilotee par IA qui personnalise le texte des annonces et va chercher les requetes longues au-dela des mots-cles achetes",
+    "type_ia": [
+      "matching semantique de requetes",
+      "personnalisation automatique du texte des annonces",
+      "selection automatique de la page de destination"
+    ],
+    "plateforme_stack": [
+      "Google Ads",
+      "AI Max for Search campaigns"
+    ],
+    "objectif_metrique": [
+      "volume de conversions",
+      "cout par lead"
+    ]
+  },
+  "implementation": "plateforme",
+  "stack_technique": [
+    {
+      "nom": "AI Max for Search campaigns",
+      "categorie": "plateforme",
+      "detail": "Option de campagne Google Ads sortie de beta en 2026. Google la decrit comme combinant les elements fournis par l'annonceur, annonces et contenu du site, avec des signaux plus riches, et regroupe trois briques : search term matching, text customization et final URL expansion.",
+      "url": "https://blog.google/products/ads-commerce/dsa-upgrade-to-ai-max-2026/"
+    },
+    {
+      "nom": "Google Ads",
+      "categorie": "plateforme",
+      "detail": "Compte annonceur, suivi de conversion et budget sur lesquels la campagne AI Max s'appuie.",
+      "url": "https://ads.google.com"
+    }
+  ],
+  "objectif_business": "Capter les conducteurs et foyers americains au moment ou ils cherchent une assurance sur Google, y compris sur des requetes longues et tres specifiques que le club n'avait pas achetees en mots-cles, et faire baisser le cout du lead assurance sur un marche ou l'enchere search est parmi les plus cheres.",
+  "points_cles": [
+    "AAA Auto Club Enterprises a active AI Max sur ses campagnes Search assurance Google Ads.",
+    "Le systeme personnalise les creatifs et va chercher les recherches d'assurance de plus en plus detaillees.",
+    "Google annonce 17% de volume de conversions en plus et 11% de cout par lead en moins.",
+    "Chiffres publies par Alphabet, partie interessee : aucune source AAA ni tierce ne les confirme."
+  ],
+  "description": "AAA Auto Club Enterprises est la plus grosse federation de clubs AAA aux Etats-Unis. Son site carriere indique qu'elle sert plus de 18 millions de membres dans 24 Etats, et l'assurance auto et habitation est une de ses lignes de revenus principales. Sur Google Ads, le club a active AI Max sur ses campagnes Search. AI Max est une option de campagne que Google a sortie de beta en 2026 : au lieu de se limiter aux mots-cles achetes, le systeme lit les annonces et le contenu du site de l'annonceur pour aller chercher des requetes qu'aucun mot-cle ne couvrait, reformule le texte des annonces en fonction de la recherche saisie et choisit lui-meme la page de destination la plus proche de la demande. Ce que ca change pour l'internaute : quelqu'un qui tape une recherche tres specifique, par exemple un profil de conducteur ou une situation d'assurance particuliere, voit une annonce AAA dont le titre a ete reecrit pour coller a sa recherche, et arrive sur la page de devis correspondante plutot que sur une page generique. Philipp Schindler, directeur commercial d'Alphabet, a cite ce cas lors de la publication des resultats du deuxieme trimestre 2026, en indiquant que AAA Auto Club Enterprises s'en servait pour personnaliser ses assets creatifs et capter la croissance des recherches d'assurance de plus en plus detaillees. Le perimetre exact du deploiement, nombre de campagnes, Etats couverts, lignes de produits, n'a pas ete publie.",
+  "resultats": [
+    {
+      "metrique": "Hausse du volume de conversions sur les campagnes Search passees sous AI Max, selon Alphabet",
+      "valeur": "+17%",
+      "citation_exacte": "This led to a 17% improvement in conversion volume and an 11% decrease in cost per lead.",
+      "source_ref": "S2"
+    },
+    {
+      "metrique": "Baisse du cout par lead sur le meme perimetre, selon Alphabet",
+      "valeur": "-11%",
+      "citation_exacte": "This led to a 17% improvement in conversion volume and an 11% decrease in cost per lead.",
+      "source_ref": "S2"
+    }
+  ],
+  "niveau_preuve": {
+    "niveau": "B",
+    "justification": "Les deux chiffres viennent d'une seule et meme phrase, prononcee par Philipp Schindler, directeur commercial d'Alphabet, lors de l'earnings call du deuxieme trimestre 2026 le 22 juillet 2026. La phrase figure mot pour mot dans la transcription officielle publiee par Alphabet (S1) et dans les transcriptions integrales publiees par AlphaStreet (S2) et Investing.com (S3) ; la citation est ancree sur S2, dont le texte est lisible en machine, la ou le PDF officiel n'expose pas de couche texte extractible. Aucune de ces trois sources n'est independante : c'est la meme declaration, et Alphabet est ici partie interessee, le vendeur de AI Max qui vante son produit sur un annonceur nomme. Recherche faite du cote Google Ads et Think with Google, aucune etude de cas AI Max citant AAA n'existe (la page Think with Google sur AI Max cite ClickUp, Royal Canin et Klook, pas AAA), et aucune presse marketing etablie ne reprend ni ne verifie le cas. Il n'y a donc aucune confirmation cote AAA : ni communique, ni intervention publique, ni chiffre d'entreprise isolant cet effet. Pas de A, faute d'un reporting financier de la marque-sujet sur son propre resultat, et le B se lit avec cette reserve : une seule voix, celle de la plateforme."
+  },
+  "dates": {
+    "lancement": "2026 (date d'activation non publiee ; AI Max est sorti de beta en 2026)",
+    "derniere_confirmation_activite": "2026-07-22",
+    "verifie_le": "2026-08-21",
+    "revoir_apres": "2027-02-21"
+  },
+  "statut_vivant": {
+    "statut": "confirme",
+    "note": "Le cas a ete cite comme actif le 22 juillet 2026, soit moins d'un mois avant verification, et AI Max est un produit en expansion : Google a annonce la bascule automatique des campagnes Dynamic Search Ads vers AI Max. Aucun signal d'arret. La reserve porte sur la source unique : c'est Google qui parle de la campagne de AAA, pas AAA."
+  },
+  "sources": [
+    {
+      "ref": "S1",
+      "type": "earnings_call",
+      "fiabilite": "T2_officiel_interesse",
+      "titre": "Alphabet Q2 2026 Earnings Call Transcript (transcription officielle publiee par Alphabet)",
+      "url": "https://s206.q4cdn.com/479360582/files/doc_events/2026/Jul/22/2026_Q2_Earnings_Transcript.pdf",
+      "date_publication": "2026-07-22",
+      "consulte_le": "2026-08-21"
+    },
+    {
+      "ref": "S2",
+      "type": "earnings_call",
+      "fiabilite": "T4_secondaire",
+      "titre": "Alphabet Inc. (GOOGL) Q2 2026 Earnings Call Transcript - AlphaStreet",
+      "url": "https://news.alphastreet.com/alphabet-inc-googl-q2-2026-earnings-call-transcript/",
+      "date_publication": "2026-07-22",
+      "consulte_le": "2026-08-21"
+    },
+    {
+      "ref": "S3",
+      "type": "earnings_call",
+      "fiabilite": "T4_secondaire",
+      "titre": "Earnings call transcript: Alphabet beats Q2 2026 estimates, shares fall on capex surge",
+      "url": "https://www.investing.com/news/transcripts/earnings-call-transcript-alphabet-beats-q2-2026-estimates-shares-fall-on-capex-surge-93CH-4807140",
+      "date_publication": "2026-07-22",
+      "consulte_le": "2026-08-21"
+    },
+    {
+      "ref": "S4",
+      "type": "blog_officiel",
+      "fiabilite": "T1_primaire",
+      "titre": "AAA Auto Club Enterprises Careers (site officiel : plus de 18 millions de membres dans 24 Etats)",
+      "url": "https://careers.ace.aaa.com/",
+      "consulte_le": "2026-08-21"
+    },
+    {
+      "ref": "S5",
+      "type": "blog_officiel",
+      "fiabilite": "T2_officiel_interesse",
+      "titre": "Google's Dynamic Search Ads are upgrading to AI Max",
+      "url": "https://blog.google/products/ads-commerce/dsa-upgrade-to-ai-max-2026/",
+      "date_publication": "2026-04-15",
+      "consulte_le": "2026-08-21"
+    }
+  ],
+  "fonctionnement_operationnel": {
+    "cadence": "Campagnes en continu. L'appariement des requetes, la reecriture du texte et le choix de la page de destination se decident a chaque enchere ; le pilotage humain est un rythme de revue, quotidien au demarrage puis hebdomadaire.",
+    "opere_par": "L'equipe acquisition payante de l'annonceur, ou son agence SEA, avec un relais conformite du cote assurance pour ce que la machine a le droit de reformuler.",
+    "signal_pilote": "Les conversions remontees a Google Ads, ici des leads assurance (demande de devis, formulaire, appel). Le systeme optimise sur ce signal et sur le cout par lead. Si le lead remonte sans qualite associee, la campagne apprend a produire du volume de formulaires plutot que des souscriptions ; si le tracking casse ou tombe sous le consentement, l'appariement large devient une depense a l'aveugle.",
+    "etapes": [
+      {
+        "etape": "Preparer la matiere",
+        "detail": "Fournir les annonces, les pages de destination et le contenu du site sur lesquels le systeme s'appuie pour comprendre l'offre. Une page de devis par situation d'assurance vaut mieux qu'une page generique.",
+        "acteur": "marketing"
+      },
+      {
+        "etape": "Activer AI Max sur une campagne Search existante",
+        "detail": "L'option s'ajoute a une campagne en place ; l'appariement des requetes ne se limite plus aux mots-cles achetes.",
+        "acteur": "equipe acquisition"
+      },
+      {
+        "etape": "Appariement et reecriture a l'enchere",
+        "detail": "Le systeme rapproche la recherche saisie de l'offre, adapte le texte de l'annonce et selectionne la page de destination.",
+        "acteur": "IA"
+      },
+      {
+        "etape": "Controler ce qui est diffuse",
+        "detail": "Relire les termes de recherche captes et les variantes de texte generees, exclure ce qui sort du perimetre ou touche a une mention reglementee.",
+        "acteur": "equipe acquisition et conformite"
+      },
+      {
+        "etape": "Arbitrer sur le cout par lead",
+        "detail": "Suivre volume de conversions et cout par lead, remonter la qualite du lead depuis le CRM pour que l'optimisation vise la souscription et pas le formulaire.",
+        "acteur": "equipe acquisition et data"
+      }
+    ]
+  },
+  "schema_flow": {
+    "statut": "approche_type",
+    "noeuds": [
+      {
+        "id": "user",
+        "role_generique": "humain",
+        "label": "Internaute cherchant une assurance sur Google"
+      },
+      {
+        "id": "search",
+        "role_generique": "paid_platform",
+        "label": "Recherche Google et enchere Search",
+        "outil_documente": "Google Ads"
+      },
+      {
+        "id": "aimax",
+        "role_generique": "modele_ia",
+        "label": "AI Max : appariement de requetes, reecriture du texte, choix de la page",
+        "outil_documente": "AI Max for Search campaigns"
+      },
+      {
+        "id": "assets",
+        "role_generique": "data_source",
+        "label": "Annonces, contenu du site et pages de devis de l'annonceur"
+      },
+      {
+        "id": "site",
+        "role_generique": "site_app",
+        "label": "Page de devis assurance AAA"
+      },
+      {
+        "id": "conv",
+        "role_generique": "data_source",
+        "label": "Suivi de conversion (leads assurance)"
+      }
+    ],
+    "liens": [
+      [
+        "user",
+        "search",
+        "requete detaillee"
+      ],
+      [
+        "assets",
+        "aimax"
+      ],
+      [
+        "aimax",
+        "search",
+        "annonce reecrite pour la requete"
+      ],
+      [
+        "search",
+        "site"
+      ],
+      [
+        "site",
+        "conv"
+      ],
+      [
+        "conv",
+        "aimax",
+        "boucle d'optimisation sur le cout par lead"
+      ]
+    ]
+  },
+  "replication": {
+    "statut_epistemique": "infere",
+    "prerequis_data": [
+      "Un suivi de conversion fiable sur le lead assurance (devis, formulaire, appel), conforme au consentement",
+      "Une remontee de qualite du lead depuis le CRM, sinon l'optimisation vise le formulaire et pas la souscription",
+      "Des pages de destination par situation d'assurance, pour que la selection automatique de page ait de quoi choisir",
+      "Un corpus d'annonces et un contenu de site suffisamment explicites sur l'offre"
+    ],
+    "prerequis_orga": [
+      "Un compte Google Ads avec des campagnes Search deja en place et un historique de conversions",
+      "Un circuit de validation conformite pour les textes d'annonces generes, obligatoire en assurance",
+      "Une routine de lecture des termes de recherche captes et de mise a jour des exclusions"
+    ],
+    "stack_possible": [
+      "Google Ads avec AI Max active sur les campagnes Search",
+      "Equivalent Microsoft Advertising sur les formats de campagne automatises",
+      "Couche de mesure : import de conversions hors ligne depuis le CRM pour requalifier les leads"
+    ],
+    "equipe": "Un responsable acquisition payante ou une agence SEA, un profil data ou tracking pour tenir le signal de conversion et l'import CRM, et un referent conformite cote assurance pour arbitrer sur les textes generes.",
+    "premiere_etape": "Verifier que le lead remonte a Google Ads avec sa qualite reelle, en important depuis le CRM les leads qui aboutissent a une souscription, avant d'ouvrir l'appariement au-dela des mots-cles achetes.",
+    "playbook": [
+      {
+        "action": "Fiabiliser le suivi de conversion sur le lead assurance et brancher l'import des conversions hors ligne depuis le CRM.",
+        "livrable": "Un signal de conversion qui distingue le formulaire rempli de la souscription."
+      },
+      {
+        "action": "Cartographier les pages de devis existantes par situation d'assurance et combler les manques.",
+        "livrable": "Un jeu de pages de destination assez fin pour la selection automatique."
+      },
+      {
+        "action": "Activer AI Max sur une campagne Search representative, en gardant une campagne temoin sur le fonctionnement precedent.",
+        "livrable": "Une comparaison lisible sur le volume de conversions et le cout par lead."
+      },
+      {
+        "action": "Mettre en place la revue des termes de recherche captes et des variantes de texte generees, avec la conformite.",
+        "livrable": "Une liste d'exclusions et un cadre ecrit de ce que la machine peut reformuler."
+      },
+      {
+        "action": "Etendre aux autres campagnes une fois le cout par lead tenu, en gardant la lecture qualite du CRM comme arbitre.",
+        "livrable": "Un deploiement progressif adosse a la qualite du lead, pas au seul volume."
+      }
+    ]
+  },
+  "seo": {
+    "slug": "aaa-auto-club-ai-max-search-2026",
+    "title": "AAA Auto Club Enterprises : AI Max sur Google Ads - +17% de conversions (2026)",
+    "meta_description": "Alphabet annonce +17% de volume de conversions et -11% de cout par lead pour AAA Auto Club Enterprises apres activation d'AI Max sur ses campagnes Search.",
+    "resume_citable": "Avec AI Max, l'option de campagne Search de Google Ads qui personnalise le texte des annonces et va chercher les requetes au-dela des mots-cles achetes, AAA Auto Club Enterprises a obtenu 17% de volume de conversions en plus et 11% de cout par lead en moins, chiffres annonces par Alphabet lors de son earnings call du deuxieme trimestre 2026, le 22 juillet 2026.",
+    "faq": [
+      {
+        "q": "Quels resultats AAA Auto Club Enterprises a-t-il obtenus avec AI Max ?",
+        "a": "Alphabet a annonce le 22 juillet 2026 une hausse de 17% du volume de conversions et une baisse de 11% du cout par lead. Ces chiffres viennent d'une seule phrase de l'earnings call d'Alphabet et ne sont confirmes par aucune source cote AAA."
+      },
+      {
+        "q": "Qu'est-ce que AI Max sur Google Ads ?",
+        "a": "Une option de campagne Search sortie de beta en 2026 qui combine les annonces et le contenu du site de l'annonceur avec des signaux plus riches. Elle regroupe l'appariement elargi des termes de recherche, la personnalisation du texte des annonces et la selection automatique de la page de destination."
+      },
+      {
+        "q": "Peut-on repliquer ce cas en Europe ?",
+        "a": "Oui, AI Max est disponible dans Google Ads en Europe. Deux precautions : un suivi de conversion conforme au RGPD pour les leads assurance, et une validation humaine des textes generes, la publicite assurance etant reglementee."
+      }
+    ]
+  }
+}

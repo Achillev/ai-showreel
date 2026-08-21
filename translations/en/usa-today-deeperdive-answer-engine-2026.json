@@ -1,0 +1,145 @@
+{
+  "seo": {
+    "title": "USA TODAY: DeeperDive AI answer engine, 50 million questions and 390,000 interactions a day (2026)",
+    "meta_description": "USA TODAY rolled out DeeperDive, Taboola's genAI answer engine, in September 2025: 50M questions and 390,000 interactions a day in Q2 2026.",
+    "resume_citable": "USA TODAY rolled out DeeperDive in September 2025, a Taboola genAI answer engine grounded on its own content, and announced in the second quarter of 2026 more than 50 million questions asked and 390,000 average daily interactions, with an effect described without figures on time on site, advertising revenue per session and subscription intent.",
+    "faq": [
+      {
+        "q": "What is DeeperDive on USA TODAY?",
+        "a": "A generative answer engine built by Taboola, embedded in USA TODAY pages. The reader asks a question on the newspaper's site, and the answer is composed from content produced by USA TODAY and the USA TODAY Network, with the relevant articles attached."
+      },
+      {
+        "q": "What figures has USA TODAY published?",
+        "a": "On the second quarter 2026 earnings call, the group announced more than 50 million questions asked since the September 2025 launch and average daily activity above 390,000 interactions. The September 2025 rollout covered a stated audience of more than 195 million monthly unique visitors."
+      },
+      {
+        "q": "What is the effect on revenue?",
+        "a": "The group compares pages equipped with DeeperDive to pages without and announces more time on site, more advertising revenue per session and stronger subscription intent. No percentage has been published on those three effects, and the quarter's financial results are the group's, not DeeperDive's."
+      },
+      {
+        "q": "How does Palantir fit in?",
+        "a": "It is a separate component, announced on August 6, 2026: connecting audience behavior, content engagement and first-party data, and automating the matching of affiliate offers to content, where the work used to be manual. It is presented in the future tense by management and has produced no published result."
+      }
+    ]
+  },
+  "pattern": "genAI answer engine embedded in editorial content, monetized at the session level",
+  "etape_parcours": "consideration",
+  "objectif_business": "Search traffic is receding and monthly unique visitors are falling. The goal is no longer to win page views but to hold the reader who already arrived for longer, and to draw more revenue from each session: advertising served during the conversation, then conversion to a subscription.",
+  "description": "DeeperDive is a generative answer engine built by Taboola and installed directly in USA TODAY pages. The reader asks a question on the newspaper's own site instead of going to ask an outside engine. The answer is composed from content produced by USA TODAY journalists and the USA TODAY Network, with the relevant articles attached around it. A beta ran on part of the readership starting in June 2025, then the system was rolled out to the whole audience on September 15, 2025, on a stated base of more than 195 million monthly unique visitors. Gannett presented itself at the time as the first US publisher to embed this technology.\n\nThe monetization logic fits in one sentence from the group: keep the conversation on your own inventory. A session spent in DeeperDive carries advertising served by the publisher, and the launch release announced higher ad CPMs, curated ads inside the experience, then tests of LLM ad formats with brands starting in the fourth quarter. The announced next stage of the partnership plans for agents able to offer the reader a purchase.\n\nTen months later, on the second quarter 2026 earnings call (August 6, 2026), Michael Reed gave the volumes: more than 50 million questions asked since launch, and average daily activity above 390,000 interactions. On the business effect, he compared pages equipped with DeeperDive to pages without, and described it as a direction, not in points: more time on site, more advertising revenue per session, stronger subscription intent. No figure was published on those three effects. The group says it wants to extend usage beyond USA TODAY, to the whole network.\n\nThe same call announced a separate layer: a partnership with Palantir to connect audience behavior, content engagement and first-party data, and to automate the matching of affiliate offers to content, where the work used to be manual. This component is presented in the future tense by management, it has produced no published result at this stage and should not be read as an achievement of DeeperDive.",
+  "points_cles": [
+    "USA TODAY rolled out DeeperDive, Taboola's genAI answer engine, across its whole site in September 2025.",
+    "The engine answers from content produced by USA TODAY and the USA TODAY Network.",
+    "More than 50 million questions asked since launch, 390,000 interactions a day on average.",
+    "The business effect is announced as a direction only: no percentage published on time on site or revenue per session."
+  ],
+  "resultats": [
+    {
+      "metrique": "Questions asked by readers since the September 2025 launch, cumulative total announced in Q2 2026"
+    },
+    {
+      "metrique": "Average daily interactions on DeeperDive in the second quarter of 2026"
+    },
+    {
+      "metrique": "Effect measured by comparing pages equipped with DeeperDive to pages without. Announced as a direction only: no percentage, no absolute value, no test method published"
+    },
+    {
+      "metrique": "Audience covered by the general rollout on USA TODAY, September 2025"
+    }
+  ],
+  "niveau_preuve": {
+    "justification": "The figures come from the Q2 2026 earnings call held by the CEO and are corroborated by the official launch release and by trade press. Caveat to state upfront: the only hard figures are usage volumes (50 million questions, 390,000 interactions a day). The business effect is stated as a direction, without any percentage, and the group published neither a measured gap nor the protocol of the with/without page test. The quarter's financial results are the group's, they do not measure DeeperDive."
+  },
+  "stack_technique": [
+    {
+      "detail": "Taboola's genAI answer engine, integrated into USA TODAY pages and grounded on the editorial corpus of the USA TODAY Network. The underlying language model is not disclosed publicly."
+    },
+    {
+      "detail": "Partnership announced on August 6, 2026 on audience and first-party data. The exact product is not named publicly, and no result is published."
+    }
+  ],
+  "fonctionnement_operationnel": {
+    "cadence": "Real time on every question a reader asks, with an editorial corpus that refreshes as the newsroom publishes",
+    "opere_par": "USA TODAY's product and audience teams for the integration in the pages and the ad placement, Taboola for the engine itself",
+    "signal_pilote": "The indexed editorial corpus and its freshness. If the day's articles are not available to the engine, the answer loses its edge over a general-purpose assistant and the reader goes elsewhere with the question. The second signal is the page with / page without measurement, without which the effect on revenue per session stays an impression.",
+    "etapes": [
+      {
+        "etape": "The reader asks a question inside the page",
+        "detail": "The entry point is built into USA TODAY pages rather than sitting on a dedicated page, so it captures the reader who already arrived through an article.",
+        "acteur": "Reader"
+      },
+      {
+        "etape": "The engine composes an answer from in-house content",
+        "detail": "The answer is generated from content produced by USA TODAY and the USA TODAY Network, with the relevant articles attached around it to give context.",
+        "acteur": "AI (Taboola DeeperDive)"
+      },
+      {
+        "etape": "The session is monetized during the conversation",
+        "detail": "Advertising served inside the answer experience, with the stated goal of higher CPMs and curated ads, then a test of LLM ad formats with advertisers.",
+        "acteur": "Publisher ad sales"
+      },
+      {
+        "etape": "The engaged reader is pushed toward subscription",
+        "detail": "Longer engagement serves as the lead-in to paid conversion, subscription intent being one of the three effects management tracks.",
+        "acteur": "Subscription team"
+      },
+      {
+        "etape": "Management decides on a with / without comparison",
+        "detail": "Steering rests on comparing equipped pages with unequipped pages, on time on site, advertising revenue per session and subscription intent.",
+        "acteur": "Management, data team"
+      }
+    ]
+  },
+  "replication": {
+    "prerequis_data": [
+      "An editorial corpus owned outright, deep enough and fresh enough to answer better than a general-purpose assistant on the topics where you are legitimate",
+      "Content indexing that keeps up with the newsroom's publishing pace, including same-day content",
+      "Measurement at the session level, not the page view level: time on site, advertising revenue and subscription event tied to the same session",
+      "The ability to serve equipped pages and unequipped pages in parallel, to hold an honest comparison"
+    ],
+    "prerequis_orga": [
+      "A clear agreement between newsroom and product team on what the engine is allowed to rephrase, and on how the AI answer is flagged to the reader",
+      "An ad sales operation able to sell the inventory of the conversational session, otherwise the extra engagement does not turn into revenue",
+      "An accepted trade-off between keeping the reader inside the answer and sending them back to the articles"
+    ],
+    "stack_possible": [
+      "An off-the-shelf publisher answer engine (Taboola DeeperDive or equivalent)",
+      "Or an in-house build: search over the editorial corpus, answer generated by an LLM, systematic citation of the source articles",
+      "Existing ad server, extended to the answer format",
+      "Paywall and subscription offer tooling already in place"
+    ],
+    "equipe": "An editorial product owner, a data profile able to hold session-level measurement, a newsroom point of contact on the editorial rule, an ad salesperson who takes the new placement into their portfolio, and a technical integrator on the site side",
+    "playbook": [
+      {
+        "action": "Agree with the newsroom on what the engine can answer, on which topics, and how the answer is presented to the reader",
+        "livrable": "Written editorial rule, binding on the product"
+      },
+      {
+        "action": "Make the corpus queryable and keep it up to date at the pace of publication",
+        "livrable": "Index of in-house content, fed continuously"
+      },
+      {
+        "action": "Open the engine to a fraction of the audience and keep a group of unequipped pages",
+        "livrable": "Measurable beta with a point of comparison"
+      },
+      {
+        "action": "Instrument the session: time on site, impressions and advertising revenue, subscription event",
+        "livrable": "Single session view that brings engagement and revenue together"
+      },
+      {
+        "action": "Sell the inventory of the conversation, including the formats specific to the answer",
+        "livrable": "Commercial offer for that placement"
+      },
+      {
+        "action": "Compare equipped pages and unequipped pages before rolling out, then extend to the group's other titles",
+        "livrable": "A measured, quantified gap that decides the rollout"
+      }
+    ],
+    "premiere_etape": "Take the ten questions readers most often ask an outside assistant on your topics, check whether your own archive answers them better, and go further only if the answer is yes."
+  },
+  "statut_vivant": {
+    "note": "Usage volumes given by management two weeks before verification, with a stated intent to extend DeeperDive to the rest of the USA TODAY Network."
+  },
+  "transposable_ue": {
+    "note": "The mechanism rests on editorial content owned outright and on first-party data, which avoids sharing data with a third-party advertising partner. Two points to handle in the EU: AI Act transparency on AI-generated content displayed next to bylined journalism, and the GDPR legal basis if the questions asked are used to build an advertising profile or a subscription targeting. The answer component itself (a genAI engine grounded on its own corpus) is neutral on both counts."
+  }
+}

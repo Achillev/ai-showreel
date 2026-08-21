@@ -1,0 +1,362 @@
+{
+  "id": "usa-today-deeperdive-answer-engine-2026",
+  "type_fiche": "succes",
+  "marque": "USA TODAY",
+  "groupe": "USA TODAY Co., Inc. (ex-Gannett)",
+  "industrie": "media_entertainment",
+  "marches_deploiement": [
+    "Etats-Unis"
+  ],
+  "transposable_ue": {
+    "flag": "oui_avec_adaptations",
+    "note": "Le mecanisme repose sur du contenu editorial detenu en propre et sur de la donnee first-party, ce qui evite le partage de donnees avec un tiers publicitaire. Deux points a traiter en UE : la transparence AI Act sur un contenu genere par IA affiche a cote de journalisme signe, et la base legale RGPD si les questions posees servent a construire un profil publicitaire ou un ciblage d'abonnement. La brique reponse elle-meme (moteur genAI ancre sur son propre corpus) est neutre sur ces deux plans."
+  },
+  "metier": "marketing, monetisation d'audience, produit editorial",
+  "logo_domain": "usatoday.com",
+  "axes": {
+    "levier": "monetisation",
+    "touchpoints": [
+      "site editorial usatoday.com",
+      "pages article",
+      "moteur de reponses embarque dans la page"
+    ],
+    "etape_parcours": "consideration",
+    "famille": "conversation",
+    "pattern": "moteur de reponses genAI embarque dans le contenu editorial, monetise a la session",
+    "type_ia": [
+      "IA generative",
+      "moteur de reponses ancre sur un corpus editorial proprietaire"
+    ],
+    "plateforme_stack": [
+      "Taboola DeeperDive"
+    ],
+    "objectif_metrique": [
+      "temps passe sur le site",
+      "revenu publicitaire par session",
+      "intention d'abonnement",
+      "interactions quotidiennes"
+    ]
+  },
+  "implementation": "plateforme",
+  "objectif_business": "Le trafic de recherche recule et les visiteurs uniques mensuels baissent. L'objectif n'est plus de gagner des pages vues mais de retenir plus longtemps le lecteur deja arrive, et de tirer davantage de revenu de chaque session : publicite servie pendant la conversation, puis conversion vers un abonnement.",
+  "points_cles": [
+    "USA TODAY a deploye DeeperDive, le moteur de reponses genAI de Taboola, sur tout son site en septembre 2025.",
+    "Le moteur repond a partir du contenu produit par USA TODAY et le USA TODAY Network.",
+    "Plus de 50 millions de questions posees depuis le lancement, 390 000 interactions par jour en moyenne.",
+    "L'effet business est annonce en direction seulement : aucun pourcentage publie sur le temps passe ou le revenu par session."
+  ],
+  "description": "DeeperDive est un moteur de reponses generatives cree par Taboola et installe directement dans les pages de USA TODAY. Le lecteur pose sa question sur le site du journal au lieu d'aller la poser a un moteur externe. La reponse est composee a partir du contenu produit par les journalistes de USA TODAY et du USA TODAY Network, avec les articles pertinents rattaches autour. Un beta a tourne sur une partie des lecteurs a partir de juin 2025, puis le dispositif a ete generalise a toute l'audience le 15 septembre 2025, sur une base annoncee de plus de 195 millions de visiteurs uniques mensuels. Gannett se presentait alors comme le premier editeur americain a embarquer cette technologie.\n\nLa logique de monetisation tient en une phrase du groupe : garder la conversation sur son propre inventaire. Une session passee dans DeeperDive porte de la publicite servie par l'editeur, et le communique de lancement annoncait des CPM publicitaires plus eleves, des annonces curatees dans l'experience, puis des tests de formats publicitaires LLM avec des marques a partir du quatrieme trimestre. La suite annoncee du partenariat prevoit des agents capables de proposer un achat au lecteur.\n\nDix mois apres, sur l'appel de resultats du deuxieme trimestre 2026 (6 aout 2026), Michael Reed a donne les volumes : plus de 50 millions de questions posees depuis le lancement, et une activite quotidienne moyenne au-dessus de 390 000 interactions. Sur l'effet business, il a compare des pages equipees de DeeperDive a des pages sans, et l'a decrit en direction, pas en points : plus de temps sur le site, plus de revenu publicitaire par session, une intention d'abonnement plus forte. Aucun chiffre n'a ete publie sur ces trois effets. Le groupe indique vouloir etendre l'usage au-dela de USA TODAY, a l'ensemble du reseau.\n\nLe meme appel a annonce une couche separee : un partenariat avec Palantir pour relier comportement d'audience, engagement contenu et donnees first-party, et pour automatiser l'appariement des offres affiliees au contenu, la ou le travail etait manuel. Cette brique est presentee au futur par la direction, elle n'a produit aucun resultat publie a ce stade et ne doit pas etre lue comme un acquis de DeeperDive.",
+  "resultats": [
+    {
+      "metrique": "Questions posees par les lecteurs depuis le lancement de septembre 2025, cumul annonce au T2 2026",
+      "valeur": "50 M+ de questions",
+      "citation_exacte": "readers have asked more than 50 million questions",
+      "source_ref": "S1"
+    },
+    {
+      "metrique": "Interactions quotidiennes moyennes sur DeeperDive au deuxieme trimestre 2026",
+      "valeur": "390 000/jour",
+      "citation_exacte": "average daily activity now exceeding 390,000 interactions",
+      "source_ref": "S1"
+    },
+    {
+      "metrique": "Effet mesure en comparant des pages equipees de DeeperDive a des pages sans. Annonce en direction uniquement : ni pourcentage, ni valeur absolue, ni methode de test publies",
+      "valeur": "effet non chiffre",
+      "citation_exacte": "DeeperDive generated longer time on site, higher advertising revenue per session and stronger subscription intent",
+      "source_ref": "S1"
+    },
+    {
+      "metrique": "Audience couverte par la generalisation du dispositif sur USA TODAY, septembre 2025",
+      "valeur": "195 M de VU/mois",
+      "citation_exacte": "an audience of over 195 million monthly unique visitors",
+      "source_ref": "S2"
+    }
+  ],
+  "niveau_preuve": {
+    "niveau": "A",
+    "justification": "Les chiffres viennent de l'appel de resultats du T2 2026 tenu par le PDG et sont corrobores par le communique officiel de lancement et par la presse specialisee. Reserve a poser d'emblee : les seuls chiffres durs sont des volumes d'usage (50 millions de questions, 390 000 interactions par jour). L'effet business est formule en direction, sans aucun pourcentage, et le groupe n'a publie ni ecart mesure ni protocole du test avec/sans page. Les resultats financiers du trimestre sont ceux du groupe, ils ne mesurent pas DeeperDive."
+  },
+  "dates": {
+    "lancement": "Beta en juin 2025, generalisation a toute l'audience de USA TODAY le 15 septembre 2025",
+    "derniere_confirmation_activite": "6 aout 2026, appel de resultats du deuxieme trimestre 2026",
+    "verifie_le": "2026-08-21",
+    "revoir_apres": "2027-02-21"
+  },
+  "statut_vivant": {
+    "statut": "confirme",
+    "note": "Volumes d'usage donnes par la direction deux semaines avant la verification, avec une intention declaree d'etendre DeeperDive au reste du USA TODAY Network."
+  },
+  "sources": [
+    {
+      "ref": "S1",
+      "type": "earnings_call",
+      "fiabilite": "T1_primaire",
+      "titre": "USA TODAY (TDAY) Q2 2026 Earnings Call Transcript",
+      "url": "https://www.fool.com/earnings/call-transcripts/2026/08/13/usa-today-tday-q2-2026-earnings-call-transcript/",
+      "date_publication": "2026-08-13",
+      "consulte_le": "2026-08-21"
+    },
+    {
+      "ref": "S2",
+      "type": "blog_officiel",
+      "fiabilite": "T1_primaire",
+      "titre": "USA TODAY Deploys Taboola's DeeperDive AI Answer Engine for all Audiences",
+      "url": "https://www.usatodayco.com/pr/usa-today-deploys-taboolas-deeperdive-ai-answer-engine-for-all-audiences/",
+      "date_publication": "2025-09-15",
+      "consulte_le": "2026-08-21"
+    },
+    {
+      "ref": "S3",
+      "type": "presse",
+      "fiabilite": "T4_secondaire",
+      "titre": "USA TODAY Co. loses 22 million monthly unique visitors in one quarter",
+      "url": "https://ppc.land/usa-today-co-loses-22-million-monthly-unique-visitors-in-one-quarter/",
+      "date_publication": "2026-08",
+      "consulte_le": "2026-08-21"
+    },
+    {
+      "ref": "S4",
+      "type": "presse",
+      "fiabilite": "T3_presse_etablie",
+      "titre": "USA Today Co. announces partnership with data analytics giant Palantir",
+      "url": "https://www.poynter.org/business-work/2026/usa-today-parnership-deal-palantir/",
+      "date_publication": "2026-08",
+      "consulte_le": "2026-08-21"
+    }
+  ],
+  "intervenants": [
+    {
+      "nom": "Michael Reed",
+      "role": "Chairman and Chief Executive Officer, USA TODAY Co. (Gannett | USA TODAY Network)",
+      "source_ref": "S1"
+    },
+    {
+      "nom": "Kristin Roberts",
+      "role": "President of USA TODAY Media",
+      "source_ref": "S1"
+    },
+    {
+      "nom": "Adam Singolda",
+      "role": "CEO et fondateur de Taboola, editeur de DeeperDive",
+      "source_ref": "S2"
+    }
+  ],
+  "agences": [
+    {
+      "nom": "Taboola",
+      "role": "Editeur de DeeperDive, le moteur de reponses genAI deploye sur USA TODAY",
+      "source_ref": "S2"
+    },
+    {
+      "nom": "Palantir",
+      "role": "Partenaire annonce le 6 aout 2026 pour relier comportement d'audience, engagement contenu et donnees first-party, et automatiser l'appariement des offres affiliees au contenu. Brique distincte de DeeperDive, sans resultat publie",
+      "source_ref": "S4"
+    }
+  ],
+  "fonctionnement_operationnel": {
+    "cadence": "Temps reel a chaque question posee par un lecteur, avec un corpus editorial qui s'actualise au fil des publications de la redaction",
+    "opere_par": "Les equipes produit et audience de USA TODAY pour l'integration dans les pages et le placement publicitaire, Taboola pour le moteur lui-meme",
+    "signal_pilote": "Le corpus editorial indexe et sa fraicheur. Si les articles du jour ne sont pas disponibles au moteur, la reponse perd son avantage sur un assistant generaliste et le lecteur repart poser sa question ailleurs. Le second signal est la mesure page avec / page sans, sans laquelle l'effet sur le revenu par session reste une impression.",
+    "etapes": [
+      {
+        "etape": "Le lecteur pose sa question dans la page",
+        "detail": "Le point d'entree est integre aux pages de USA TODAY plutot que sur une page dediee, donc il capte le lecteur deja arrive par un article.",
+        "acteur": "Lecteur"
+      },
+      {
+        "etape": "Le moteur compose une reponse a partir du contenu maison",
+        "detail": "La reponse est generee a partir du contenu produit par USA TODAY et le USA TODAY Network, avec les articles pertinents rattaches autour pour donner le contexte.",
+        "acteur": "IA (Taboola DeeperDive)"
+      },
+      {
+        "etape": "La session est monetisee pendant la conversation",
+        "detail": "Publicite servie dans l'experience de reponse, avec l'objectif annonce de CPM plus eleves et d'annonces curatees, puis test de formats publicitaires LLM avec des annonceurs.",
+        "acteur": "Regie publicitaire de l'editeur"
+      },
+      {
+        "etape": "Le lecteur engage est pousse vers l'abonnement",
+        "detail": "L'engagement plus long sert d'amorce a la conversion payante, l'intention d'abonnement etant l'un des trois effets suivis par la direction.",
+        "acteur": "Equipe abonnement"
+      },
+      {
+        "etape": "La direction arbitre sur une comparaison avec / sans",
+        "detail": "Le pilotage repose sur la comparaison de pages equipees et de pages non equipees, sur le temps passe, le revenu publicitaire par session et l'intention d'abonnement.",
+        "acteur": "Direction, equipe data"
+      }
+    ]
+  },
+  "stack_technique": [
+    {
+      "nom": "DeeperDive",
+      "categorie": "plateforme",
+      "detail": "Moteur de reponses genAI de Taboola, integre aux pages de USA TODAY et ancre sur le corpus editorial du USA TODAY Network. Le modele de langage sous-jacent n'est pas precise publiquement.",
+      "url": "https://www.taboola.com/"
+    },
+    {
+      "nom": "Palantir",
+      "categorie": "plateforme",
+      "detail": "Partenariat annonce le 6 aout 2026 sur la donnee d'audience et first-party. Le produit exact n'est pas nomme publiquement, et aucun resultat n'est publie.",
+      "url": "https://www.palantir.com/"
+    }
+  ],
+  "schema_flow": {
+    "statut": "approche_type",
+    "noeuds": [
+      {
+        "id": "lecteur",
+        "role_generique": "humain",
+        "label": "Lecteur arrive sur un article"
+      },
+      {
+        "id": "site",
+        "role_generique": "site_app",
+        "label": "Pages USA TODAY",
+        "outil_documente": "usatoday.com"
+      },
+      {
+        "id": "corpus",
+        "role_generique": "data_source",
+        "label": "Contenu USA TODAY et USA TODAY Network"
+      },
+      {
+        "id": "moteur",
+        "role_generique": "modele_ia",
+        "label": "Moteur de reponses genAI",
+        "outil_documente": "Taboola DeeperDive"
+      },
+      {
+        "id": "pub",
+        "role_generique": "paid_platform",
+        "label": "Publicite servie dans la session"
+      },
+      {
+        "id": "abo",
+        "role_generique": "crm",
+        "label": "Offre d'abonnement"
+      },
+      {
+        "id": "mesure",
+        "role_generique": "data_source",
+        "label": "Comparaison pages avec / pages sans"
+      }
+    ],
+    "liens": [
+      [
+        "lecteur",
+        "site"
+      ],
+      [
+        "site",
+        "moteur",
+        "question du lecteur"
+      ],
+      [
+        "corpus",
+        "moteur",
+        "contenu maison en entree"
+      ],
+      [
+        "moteur",
+        "site",
+        "reponse et articles rattaches"
+      ],
+      [
+        "site",
+        "pub",
+        "impressions pendant la conversation"
+      ],
+      [
+        "site",
+        "abo",
+        "intention d'abonnement"
+      ],
+      [
+        "pub",
+        "mesure",
+        "revenu par session"
+      ],
+      [
+        "abo",
+        "mesure",
+        "conversion"
+      ],
+      [
+        "mesure",
+        "site",
+        "arbitrage de deploiement"
+      ]
+    ]
+  },
+  "replication": {
+    "statut_epistemique": "infere",
+    "prerequis_data": [
+      "Un corpus editorial detenu en propre, assez profond et assez frais pour repondre mieux qu'un assistant generaliste sur les sujets ou l'on est legitime",
+      "Une indexation du contenu qui suit le rythme de publication de la redaction, y compris le contenu du jour",
+      "Une mesure au niveau session, pas au niveau page vue : temps passe, revenu publicitaire, evenement d'abonnement rattaches a la meme session",
+      "La capacite de servir des pages equipees et des pages non equipees en parallele, pour tenir une comparaison honnete"
+    ],
+    "prerequis_orga": [
+      "Un accord clair entre redaction et equipe produit sur ce que le moteur a le droit de reformuler, et sur la facon dont la reponse IA est signalee au lecteur",
+      "Une regie capable de vendre l'inventaire de la session conversationnelle, sinon l'engagement supplementaire ne se transforme pas en revenu",
+      "Un arbitrage assume entre garder le lecteur dans la reponse et le renvoyer vers les articles"
+    ],
+    "stack_possible": [
+      "Un moteur de reponses editeur cle en main (Taboola DeeperDive ou equivalent)",
+      "Ou une construction maison : recherche sur le corpus editorial, generation de la reponse par un LLM, citation systematique des articles sources",
+      "Serveur publicitaire existant, etendu au format de reponse",
+      "Mur payant et outil d'offre d'abonnement deja en place"
+    ],
+    "playbook": [
+      {
+        "action": "Cadrer avec la redaction ce que le moteur peut repondre, sur quels sujets, et comment la reponse est presentee au lecteur",
+        "livrable": "Regle editoriale ecrite, opposable au produit"
+      },
+      {
+        "action": "Rendre le corpus interrogeable et le maintenir a jour au rythme de la publication",
+        "livrable": "Index du contenu maison, alimente en continu"
+      },
+      {
+        "action": "Ouvrir le moteur a une fraction de l'audience et garder un groupe de pages non equipees",
+        "livrable": "Beta mesurable avec un point de comparaison"
+      },
+      {
+        "action": "Instrumenter la session : temps passe, impressions et revenu publicitaire, evenement d'abonnement",
+        "livrable": "Vue session unique qui rapproche engagement et revenu"
+      },
+      {
+        "action": "Vendre l'inventaire de la conversation, y compris les formats propres a la reponse",
+        "livrable": "Offre commerciale pour ce placement"
+      },
+      {
+        "action": "Comparer pages equipees et pages non equipees avant de generaliser, puis etendre aux autres titres du groupe",
+        "livrable": "Ecart mesure, chiffre, qui decide de la generalisation"
+      }
+    ],
+    "equipe": "Un responsable produit editorial, un profil data capable de tenir la mesure au niveau session, un referent redaction sur la regle editoriale, un commercial publicitaire qui prend le nouveau placement en portefeuille, et un integrateur technique cote site",
+    "premiere_etape": "Prendre les dix questions que les lecteurs posent le plus a un assistant externe sur vos sujets, verifier si votre propre archive y repond mieux, et n'aller plus loin que si la reponse est oui."
+  },
+  "seo": {
+    "slug": "usa-today-deeperdive-answer-engine-2026",
+    "title": "USA TODAY : moteur de reponses IA DeeperDive, 50 millions de questions et 390 000 interactions par jour (2026)",
+    "meta_description": "USA TODAY a generalise DeeperDive, le moteur de reponses genAI de Taboola, en septembre 2025 : 50 M de questions et 390 000 interactions par jour au T2 2026.",
+    "resume_citable": "USA TODAY a generalise en septembre 2025 DeeperDive, un moteur de reponses genAI de Taboola ancre sur son propre contenu, et a annonce au deuxieme trimestre 2026 plus de 50 millions de questions posees et 390 000 interactions quotidiennes moyennes, avec un effet decrit sans chiffre sur le temps passe, le revenu publicitaire par session et l'intention d'abonnement.",
+    "faq": [
+      {
+        "q": "Qu'est-ce que DeeperDive sur USA TODAY ?",
+        "a": "Un moteur de reponses generatives cree par Taboola, integre aux pages de USA TODAY. Le lecteur pose sa question sur le site du journal, et la reponse est composee a partir du contenu produit par USA TODAY et le USA TODAY Network, avec les articles pertinents rattaches."
+      },
+      {
+        "q": "Quels chiffres USA TODAY a-t-il publies ?",
+        "a": "Sur l'appel de resultats du deuxieme trimestre 2026, le groupe annonce plus de 50 millions de questions posees depuis le lancement de septembre 2025 et une activite quotidienne moyenne superieure a 390 000 interactions. Le deploiement de septembre 2025 portait sur une audience annoncee de plus de 195 millions de visiteurs uniques mensuels."
+      },
+      {
+        "q": "Quel est l'effet sur le revenu ?",
+        "a": "Le groupe compare des pages equipees de DeeperDive a des pages sans et annonce plus de temps sur le site, plus de revenu publicitaire par session et une intention d'abonnement plus forte. Aucun pourcentage n'a ete publie sur ces trois effets, et les resultats financiers du trimestre sont ceux du groupe, pas de DeeperDive."
+      },
+      {
+        "q": "Quel est le rapport avec Palantir ?",
+        "a": "C'est une brique separee, annoncee le 6 aout 2026 : relier comportement d'audience, engagement contenu et donnees first-party, et automatiser l'appariement des offres affiliees au contenu, la ou le travail etait manuel. Elle est presentee au futur par la direction et n'a produit aucun resultat publie."
+      }
+    ]
+  }
+}

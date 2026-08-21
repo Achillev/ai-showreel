@@ -1,0 +1,121 @@
+{
+  "seo": {
+    "title": "Opendoor: Chloe, AI sales agent - conversion up 3x in six months (2026)",
+    "meta_description": "Opendoor embedded its AI assistant Chloe in its sales teams: she converts 3 times more than in January 2026, at a third of the cost, 168 hours a week.",
+    "resume_citable": "In the second quarter of 2026, Opendoor states that its AI assistant Chloe, embedded in the sales teams and available 168 hours a week, converts three times more than in January 2026 at a third of the cost.",
+    "faq": [
+      {
+        "q": "What is Chloe at Opendoor?",
+        "a": "Opendoor's AI assistant, presented by the CEO as a member of the sales teams. It handles inbound contacts continuously and explicitly declares itself a bot."
+      },
+      {
+        "q": "What does the threefold conversion figure measure?",
+        "a": "It compares the conversion Chloe achieved in Q2 2026 with the conversion she achieved in January 2026, at a third of the cost. Opendoor publishes neither the volume of leads handled nor the absolute conversion rate."
+      },
+      {
+        "q": "Is the deployment still live?",
+        "a": "It was presented as in production and improving on the earnings call of August 4, 2026. Opendoor does not communicate about Chloe outside that channel."
+      }
+    ]
+  },
+  "pattern": "AI agent for qualifying and converting inbound leads",
+  "etape_parcours": "consideration",
+  "objectif_business": "Convert more seller leads without growing the sales team, by handing an AI agent the continuous handling of inbound contacts and keeping human salespeople on the cases that require them.",
+  "description": "Chloe is Opendoor's AI assistant. On the second quarter 2026 earnings call, CEO Kasra Nejatian presents her as a full member of the company's sales teams, no longer as a side tool. She handles inbound contacts continuously: the figure communicated is 168 hours a week, the entire week. She tells the person she is talking to that she is a bot. For the quarter, Opendoor states that Chloe converts three times more than in January 2026, at a third of the cost. The comparison is about Chloe's own performance between January and Q2 2026, not about a gap with a human salesperson: Opendoor publishes neither the volume of leads handled, nor the absolute conversion rate, nor the base used to compute the cost. The same quarter saw Opendoor push several other AI components (an auto-underwriter on roughly one valuation in five, Ops Hub, Opendoor 2.0 for agents), but the conversion and cost figures cited here are attributed to Chloe alone.",
+  "points_cles": [
+    "Opendoor embedded its AI assistant Chloe in the sales teams that handle seller leads.",
+    "Chloe converts 3 times more than in January 2026, at a third of the cost.",
+    "She is available 168 hours a week and explicitly declares herself a bot.",
+    "Evidence level A: figures announced by the CEO on the Q2 2026 earnings call (August 4, 2026)."
+  ],
+  "resultats": [
+    {
+      "metrique": "Chloe's conversion in Q2 2026 relative to January 2026"
+    },
+    {
+      "metrique": "Cost of conversion over the same reference period"
+    },
+    {
+      "metrique": "Hourly coverage of lead handling"
+    }
+  ],
+  "niveau_preuve": {
+    "justification": "Figures stated by Opendoor's CEO during the Q2 2026 earnings call of August 4, 2026, within financial reporting, and available in verbatim transcripts from two independent publishers. The figures are explicitly tied to the Chloe deployment, not to the company's overall results."
+  },
+  "stack_technique": [
+    {
+      "detail": "Opendoor's AI assistant, described by the CEO as a full member of the sales teams. The system explicitly declares itself a bot to the people it talks to."
+    }
+  ],
+  "fonctionnement_operationnel": {
+    "cadence": "Continuously, without interruption: the figure communicated by Opendoor is 168 hours a week",
+    "opere_par": "Opendoor's sales teams, which Chloe is part of according to management",
+    "signal_pilote": "The conversion of inbound seller leads. That is the metric Opendoor uses to measure Chloe (three times more than in January 2026). Without tracking what happens to each lead, the gain is neither steerable nor demonstrable.",
+    "etapes": [
+      {
+        "etape": "Seller lead arrives",
+        "detail": "A homeowner contacts Opendoor to sell their property.",
+        "acteur": "customer"
+      },
+      {
+        "etape": "Chloe takes the case",
+        "detail": "The AI assistant takes the contact and states that it is a bot. Handling does not depend on the working hours or the absences of a human team.",
+        "acteur": "AI"
+      },
+      {
+        "etape": "Moving the case toward the sale",
+        "detail": "Chloe moves the lead forward the way a member of the sales team would; that path is what gets measured as conversion.",
+        "acteur": "AI"
+      },
+      {
+        "etape": "Performance tracking",
+        "detail": "Opendoor tracks the conversion and the cost of the deployment over time, and compares the current period with January 2026.",
+        "acteur": "data team"
+      }
+    ]
+  },
+  "replication": {
+    "prerequis_data": [
+      "History of inbound leads with their outcome, to measure conversion before and after",
+      "Qualification data on the property and the seller, readable by the agent",
+      "Traceability of exchanges so that what the agent said can be audited"
+    ],
+    "prerequis_orga": [
+      "Sales team ready to share its lead pipeline with an AI agent rather than receive it filtered",
+      "An accepted transparency rule: the agent declares itself a bot",
+      "A clear handoff rule toward a human",
+      "Tracking of the deployment cost relative to conversion, not to message volume"
+    ],
+    "stack_possible": [
+      "Conversational agent wired to the inbound contact channel",
+      "CRM or lead database readable and writable by the agent",
+      "Conversion measurement layer by lead cohort"
+    ],
+    "equipe": "A product owner for the agent, a data profile for conversion measurement, and a sales lead who keeps control of the handoff rules and of the quality of the exchanges.",
+    "playbook": [
+      {
+        "action": "Establish the baseline conversion of inbound leads, by source and by time of arrival.",
+        "livrable": "Quantified baseline against which any gain will be measured."
+      },
+      {
+        "action": "Put an AI agent on a subset of leads, with an explicit declaration of its bot nature.",
+        "livrable": "Agent in production on a restricted scope, with a log of exchanges."
+      },
+      {
+        "action": "Define the handoff point to a human salesperson and what the agent passes on at that moment.",
+        "livrable": "Handoff rule written and applied in the tool."
+      },
+      {
+        "action": "Compare conversion and cost on the agent scope with the baseline scope, then expand.",
+        "livrable": "Conversion and cost read by cohort, decision to extend."
+      }
+    ],
+    "premiere_etape": "Measure the current conversion of inbound leads by time slot, to isolate what waiting outside business hours costs before putting an agent on it."
+  },
+  "statut_vivant": {
+    "note": "Presented as in production and improving on the earnings call of August 4, 2026. Opendoor does not communicate publicly about Chloe outside that channel: no product page, no press release, no dedicated press coverage. Verification therefore rests on the executive's statements in financial results."
+  },
+  "transposable_ue": {
+    "note": "Opendoor operates only in the United States. The pattern, an AI agent that takes first contact with a seller lead and moves it forward to the sales team, transposes to the EU but requires a GDPR legal basis for processing prospect data and property data. The AI Act requires informing the person that they are talking to an AI: Opendoor already does this, the system declares itself a bot."
+  }
+}
