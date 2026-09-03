@@ -1,0 +1,152 @@
+{
+  "seo": {
+    "title": "Indeed: AI recommendation ahead of search - 70% of applications (2026)",
+    "meta_description": "At Indeed, 70% of applications come from recommendations and AI tools, against 30% for keyword search. Monthly active users up 18% in March 2026.",
+    "resume_citable": "On May 15, 2026, Hisayuki Idekoba, CEO of Recruit Holdings, said that 70% of applications on Indeed now come from recommendations and AI tools, against 30% for keyword search; monthly active users hit a record in March 2026, up 18% year over year, employers using Sponsored Jobs respond 45% faster to candidates, and Indeed claims 31 hires per minute, up from 27.",
+    "faq": [
+      {
+        "q": "What share of applications on Indeed goes through AI?",
+        "a": "70%, according to the CEO of Recruit Holdings at the May 15, 2026 earnings presentation. Keyword search, the historical path, now brings only 30% of applications. The remaining 70% come from jobs offered in the feed, from emails, and from pop-ups triggered by the matching engine."
+      },
+      {
+        "q": "Which AI tools make up the setup?",
+        "a": "Smart Sourcing proactively surfaces candidates to the recruiter, Smart Screening pre-qualifies applications against criteria set by the employer, Career Scout and personalized feeds help the candidate discover jobs, and Premium Sponsored Jobs carries the paid distribution. Indeed launched Sourcing Assistant in June 2026."
+      },
+      {
+        "q": "Are these figures verified by a third party?",
+        "a": "No. They come from the official transcript of the Recruit Holdings earnings call and from an Indeed press release published the same day. The HR trade press reports them without auditing them. The 31 hires per minute figure is explicitly Indeed internal data."
+      },
+      {
+        "q": "Can the setup be transposed to Europe?",
+        "a": "Yes, with adaptations. The AI Act classifies as high risk the AI used to target job ads and to filter applications, which imposes documentation, human oversight, and disclosure to the people concerned. The GDPR further governs automated decision-making and profiling."
+      }
+    ]
+  },
+  "pattern": "recommendation engine that becomes the main source of conversion on a marketplace, ahead of keyword search",
+  "etape_parcours": "purchase",
+  "objectif_business": "Make recommendation, rather than keyword search, the mechanism that brings a candidate to apply. Two things are at stake: giving time-pressed employers applications they can act on right away, and keeping candidates on Indeed while conversational assistants and AI-generated search summaries divert part of job boards' traffic.",
+  "description": "Indeed is the job platform of Recruit Holdings. Its May 15, 2026 press release gives the scale: more than 645 million candidate profiles, more than 3.3 million employers, more than 60 countries, and integrations with more than 350 applicant tracking systems. The setup addresses one precise point in the journey: the path by which a candidate reaches the job they apply to. The historical mechanism was keyword search. Someone types \"French chef\", sponsored listings surface in the results, they apply. On May 15, 2026, presenting the results for the fiscal year ended March 2026, Hisayuki Idekoba put a number on the split between the two sources of applications for the first time: keyword search now brings only 30% of them, the remaining 70% come from recommendations and AI tools. What the candidate sees is jobs offered in their feed, emails and pop-ups saying, in substance, that this company seems to want them to apply. Those messages are triggered by what employers do in their own tools: Smart Sourcing surfaces likely-fit candidates to the recruiter, Smart Screening filters applications against criteria the recruiter has set. The hiring-intent signal produced this way flows back to the candidate side. Career Scout and personalized feeds round out the setup on job discovery from skills and stated preferences. Indeed also announced an integration with ChatGPT in February 2026. Two results are put forward on the employer side: an average 20% drop in time to hire for those using Smart Screening in early US tests, and up to 50% with Premium Sponsored Jobs. These are recruiter productivity gains. The marketplace effect reads elsewhere: employers using Sponsored Jobs respond 45% faster to candidates, monthly active users hit a record in March 2026, up 18% year over year, and Indeed counts 31 hires per minute, against 27 previously. The exact country-by-country scope of the rollout is not published.",
+  "points_cles": [
+    "Indeed has shifted the application from keyword search to AI recommendation.",
+    "The setup relies on Sponsored Jobs, Smart Sourcing, Smart Screening, and Career Scout.",
+    "70% of applications come from recommendations, monthly actives up 18% in March 2026, 31 hires per minute.",
+    "Figures stated by the CEO at the annual results and repeated in an Indeed press release."
+  ],
+  "resultats": [
+    {
+      "metrique": "Share of applications arriving through recommendations and AI tools rather than keyword search, a figure given for the first time by the CEO of Recruit Holdings on May 15, 2026"
+    },
+    {
+      "metrique": "Indeed monthly active users in March 2026, described as a record by the CEO and attributed by him to the improvement of the experience through AI"
+    },
+    {
+      "metrique": "Completed hires through the platform every minute, against 27 previously, on Indeed worldwide data averaged over 2025"
+    },
+    {
+      "metrique": "Speed at which employers using Sponsored Jobs respond to candidates, the number one friction point on the candidate side according to the CEO"
+    }
+  ],
+  "niveau_preuve": {
+    "justification": "Three of the four figures are spoken by Hisayuki Idekoba, CEO of Recruit Holdings, during the fourth quarter and full year FY2025 earnings presentation on May 15, 2026, and appear word for word in the official transcript published by the company on its investor page (S1). The fourth comes from the press release Indeed published the same day (S2). The established HR trade press covers the case and the 70% figure (S3), and the setup is still discussed at the quarterly results of August 7, 2026 (S4). One reservation to keep in mind: all these sources trace back to the company itself, and no third party verifies the measurements. The 31 hires per minute and the 20% reduction in time to hire are explicitly Indeed internal data. And the causal link between AI and the rise in active users is the CEO's reading, not a test result. The company figures for the quarter, US revenue and earnings per share, are not results of this setup and are out of scope here."
+  },
+  "stack_technique": [
+    {
+      "detail": "Employer tool that proactively surfaces candidates likely to fit the role, so the recruiter can start the conversation earlier. The signals it produces also feed the recommendations sent to candidates."
+    },
+    {
+      "detail": "Pre-qualification of applications against criteria defined by the employer, ahead of human review. Indeed reports an average 20% reduction in time to hire in early US tests."
+    },
+    {
+      "detail": "On the candidate side, helps discover roles from skills, career history, and stated preferences, alongside personalized feeds and alerts."
+    },
+    {
+      "detail": "Premium version of the sponsored listing, combining distribution, employer brand, and sourcing. Indeed reports time to hire reduced by up to 50% compared with non-sponsored jobs, on US data."
+    }
+  ],
+  "fonctionnement_operationnel": {
+    "cadence": "Continuous. Recommendations are recomputed at each candidate session and each time an email or a notification fires. The human rhythm is that of the recruiter, who sets criteria and answers applications.",
+    "opere_par": "Indeed's product and data teams run the engine. On the client side, recruiters feed the system: they define Smart Screening criteria, launch and budget their Sponsored Jobs, and engage the candidates surfaced by Smart Sourcing.",
+    "signal_pilote": "The actual hiring outcome, not the click or the application. Indeed says it can see what happens after the application thanks to integrations with more than 350 applicant tracking systems and to small businesses that run their entire hiring on the platform. Without that hiring feedback, the engine falls back on surface signals, application volume replaces quality, and the problem described by the CEO returns: the candidate applies and nobody answers.",
+    "etapes": [
+      {
+        "etape": "Collect the intent signal on the employer side",
+        "detail": "What the recruiter does in their tools, filtering criteria, candidates contacted, jobs they pay more for, indicates which companies genuinely want to hire and for which profiles.",
+        "acteur": "employer / recruiter"
+      },
+      {
+        "etape": "Match profiles and roles",
+        "detail": "The engine crosses skills, experience, stated preferences, and employer activity to identify the pairs where both sides have an interest in saying yes.",
+        "acteur": "AI"
+      },
+      {
+        "etape": "Go to the candidate instead of waiting for their search",
+        "detail": "The job is pushed into the personalized feed, by email or by pop-up, with a message saying the company is looking for this profile. That path now brings in the bulk of applications.",
+        "acteur": "AI"
+      },
+      {
+        "etape": "Pre-qualify and answer fast",
+        "detail": "Smart Screening filters out off-criteria applications upfront so the recruiter spends their time on the rest. The hiring decision stays human.",
+        "acteur": "employer / recruiter, assisted by AI"
+      },
+      {
+        "etape": "Loop back on the actual hire",
+        "detail": "The outcomes reported through the applicant tracking system integrations come back to feed the matching. A completed hire, a candidate who has become unavailable, a filled role change the following recommendations.",
+        "acteur": "data team / AI"
+      }
+    ]
+  },
+  "replication": {
+    "prerequis_data": [
+      "A demand-side profile rich enough to recommend without a query: skills, history, stated preferences",
+      "An intent signal on the supply side, that is, what the seller or employer actually does in their own tools, and not only what they declare",
+      "Reporting of the final outcome, here the hire, without which the engine can only learn from the click",
+      "Outbound channels wired to the engine: personalized feed, email, notification, with the consent management that comes with them"
+    ],
+    "prerequis_orga": [
+      "Accepting that search stops being the main path, which moves product work from the relevance of results to the quality of outbound messages",
+      "A shared definition of the conversion that matters: here the hire, not the application",
+      "A legal framework for automated pre-qualification, mandatory as soon as the decision affects access to employment or credit",
+      "A feedback loop with the tools on the client side, without which the outcome stays invisible"
+    ],
+    "stack_possible": [
+      "In-house recommendation engine on a data warehouse, with an online scoring service",
+      "Managed recommendation components to start, before bringing it in-house",
+      "Email and push platform wired to the engine, not to static segments",
+      "Connectors to the client-side business tools to retrieve the actual outcome"
+    ],
+    "equipe": "A product lead who arbitrates between search and recommendation, data and machine learning profiles for the engine and its measurement, engineers for the connectors to client tools, and a legal contact on profiling and automated decision-making.",
+    "playbook": [
+      {
+        "action": "Instrument the journey so that for each conversion you know which path the user came through: search, feed, email, notification.",
+        "livrable": "A quantified split of conversions by path, used as the baseline."
+      },
+      {
+        "action": "Define the conversion that counts from the point of view of both sides of the marketplace, and track it through to its actual outcome.",
+        "livrable": "A reliable outcome event, distinct from the request simply being sent."
+      },
+      {
+        "action": "Build the supply-side intent signal from actions observed in the client's tools, not from their declarations.",
+        "livrable": "An intent score per listing or per seller, usable by the engine."
+      },
+      {
+        "action": "Open an outbound recommendation channel on a limited segment, with a control group that stays on search alone.",
+        "livrable": "A readable comparison between incremental conversion and simple traffic displacement."
+      },
+      {
+        "action": "Loop back on the actual outcome and remove already-filled items from the engine, so recommendation does not push what is no longer available.",
+        "livrable": "A retraining loop fed by outcomes, not by clicks."
+      },
+      {
+        "action": "Frame automated pre-qualification: explicit criteria, human oversight on the final decision, disclosure to the person being assessed.",
+        "livrable": "A written, enforceable framework, a condition for deployment in Europe."
+      }
+    ],
+    "premiere_etape": "Measure the current split of conversions between internal search and pushed channels. Without that starting point, you will not know whether recommendation adds conversion or displaces the conversion that already existed."
+  },
+  "statut_vivant": {
+    "note": "The setup is presented as the group's growth engine at the Q1 FY2026 results on August 7, 2026, where Smart Sourcing and Smart Screening are cited as revenue lines in their own right. Indeed also launched Sourcing Assistant on June 15, 2026, an additional component of the same setup. No signal of a stop or a rollback."
+  },
+  "transposable_ue": {
+    "note": "Indeed already operates in Europe, so the question is not technical but regulatory. The AI Act classifies as high risk the AI systems used for recruitment, notably the targeting of job ads, the filtering and screening of applications, and the assessment of candidates (Annex III, point 4). A setup of this kind on an EU market therefore requires technical documentation, human oversight, and disclosure to the people concerned. On the GDPR side, automated pre-qualification against employer criteria touches Article 22 on automated decision-making and profiling: it needs a legal basis, transparency on the criteria, and a route to human review for the rejected candidate."
+  }
+}

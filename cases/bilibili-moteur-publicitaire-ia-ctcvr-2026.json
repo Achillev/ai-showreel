@@ -1,0 +1,314 @@
+{
+  "id": "bilibili-moteur-publicitaire-ia-ctcvr-2026",
+  "type_fiche": "succes",
+  "marque": "Bilibili",
+  "groupe": "Bilibili Inc. (Nasdaq: BILI, HKEX: 9626)",
+  "industrie": "media_entertainment",
+  "marches_deploiement": [
+    "Chine"
+  ],
+  "transposable_ue": {
+    "flag": "oui_avec_adaptations",
+    "note": "Le dispositif est une regie publicitaire interne : un editeur europeen qui monetise sa propre audience peut viser le meme mecanisme, mais il ne l'achete pas sur etagere. Trois points a cadrer. Le moteur s'entraine sur des interets utilisateur deduits du comportement de navigation, donc du profilage a des fins de publicite ciblee : en UE cela releve du consentement et de la base legale au titre du RGPD et de la directive ePrivacy, pas de l'interet legitime par defaut. Le DSA interdit par ailleurs la publicite ciblee sur des categories sensibles et, pour les mineurs, la publicite fondee sur le profilage, ce qui contraint un inventaire dont l'audience est jeune. Enfin la comprehension automatisee des creatifs des annonceurs suppose un cadre contractuel explicite sur ce que la regie a le droit de lire, d'indexer et de reformuler."
+  },
+  "metier": "monetisation / regie publicitaire d'une plateforme video",
+  "marque_linkedin": "https://www.linkedin.com/company/bilibili",
+  "logo_domain": "bilibili.com",
+  "intervenants": [
+    {
+      "nom": "Rui Chen",
+      "role": "Chairman of the Board and Chief Executive Officer",
+      "source_ref": "S1"
+    }
+  ],
+  "axes": {
+    "levier": "monetisation",
+    "touchpoints": [
+      "fil de recommandation de l'application Bilibili",
+      "pages de lecture video",
+      "recherche interne",
+      "PC, smart TV et watch page"
+    ],
+    "etape_parcours": "consideration",
+    "famille": "optimisation_automatisation",
+    "pattern": "moteur d'appariement publicitaire IA qui croise fiche produit, creatif, interets utilisateur et objectif de conversion pour choisir l'annonce servie",
+    "type_ia": [
+      "comprehension automatisee des informations produit et des creatifs",
+      "modelisation des interets utilisateur",
+      "prediction conjointe du clic et de la conversion (CTCVR)",
+      "generation de creatifs publicitaires (AIGC)",
+      "agents de placement publicitaire"
+    ],
+    "plateforme_stack": [
+      "custom/in-house (regie publicitaire Bilibili)"
+    ],
+    "objectif_metrique": [
+      "CTCVR (taux de clic multiplie par taux de conversion)",
+      "efficacite d'appariement des annonces",
+      "revenus publicitaires"
+    ]
+  },
+  "implementation": "custom",
+  "objectif_business": "Faire de la publicite la premiere ligne de revenus du groupe en augmentant ce que chaque impression rapporte, sur une audience jeune et tres engagee mais dans un marche chinois ou les annonceurs exigent une efficacite de conversion demontree. Le levier choisi n'est pas l'ajout de pression publicitaire mais la qualite de l'appariement entre l'annonce et l'utilisateur.",
+  "points_cles": [
+    "Chez Bilibili, l'IA choisit l'annonce servie a partir du produit, du creatif, des interets utilisateur et de l'objectif de conversion.",
+    "Le PDG Rui Chen rattache a ce dispositif un CTCVR en hausse de 19% sur un an au deuxieme trimestre 2026.",
+    "Le groupe etend l'IA au-dela de l'appariement : outils AIGC de production creative et agents de placement publicitaire.",
+    "Chiffre annonce en resultats trimestriels, avec transcription officielle publiee par Bilibili : niveau de preuve A."
+  ],
+  "description": "Bilibili est la plateforme video communautaire chinoise nee autour de l'animation, du jeu video et des contenus d'interet. Au deuxieme trimestre 2026 elle declare 117 millions d'utilisateurs actifs quotidiens, 371 millions d'actifs mensuels et 113 minutes de temps passe par jour et par utilisateur. La publicite y est devenue la premiere ligne de revenus : 3,13 milliards de RMB sur le trimestre, en hausse de 28% sur un an. Le communique officiel attribue cette croissance a l'amelioration de l'offre de produits publicitaires et a une meilleure efficacite publicitaire. Le mecanisme derriere cette efficacite, decrit par le PDG Rui Chen dans les remarques preparees de la conference de resultats du 27 aout 2026, est un appariement pilote par IA : le systeme approfondit la comprehension des informations produit, des creatifs fournis par l'annonceur, des interets des utilisateurs et de l'objectif de conversion vise par la campagne, puis sert l'annonce jugee la plus pertinente. La metrique sur laquelle le groupe rend compte de ce travail est le CTCVR, le produit du taux de clic et du taux de conversion, que Bilibili definit dans son glossaire comme la mesure de l'efficacite d'une annonce a declencher une action. Ce CTCVR progresse de 19% sur un an au deuxieme trimestre. Concretement, pour un utilisateur, cela signifie voir dans son fil ou sur une page de lecture une annonce choisie sur sa proximite avec ses centres d'interet et avec ce que l'annonceur cherche a obtenir, plutot que sur un ciblage declaratif. Bilibili indique etendre l'IA au-dela de l'appariement, vers la production creative avec des outils AIGC et vers la conduite des campagnes avec des agents de placement publicitaire, l'objectif affiche etant d'ouvrir la regie a des annonceurs moins outilles. Le poste recherche et developpement du trimestre, 1,01 milliard de RMB, progresse de 16% sur un an, hausse que le directeur financier Sam Fan rattache a l'investissement continu dans les capacites IA. L'architecture technique du moteur, les modeles utilises et le perimetre exact des campagnes concernees ne sont pas publies.",
+  "resultats": [
+    {
+      "metrique": "CTCVR de la regie publicitaire Bilibili, produit du taux de clic et du taux de conversion, en glissement annuel au deuxieme trimestre 2026. Le PDG enonce ce chiffre juste apres avoir decrit l'appariement IA comme la cause de l'efficacite gagnee.",
+      "valeur": "+19%",
+      "citation_exacte": "Our CTCVR continued to improve, increasing 19% year-over-year in Q2.",
+      "source_ref": "S3"
+    }
+  ],
+  "niveau_preuve": {
+    "niveau": "A",
+    "justification": "Le chiffre vient des remarques preparees du PDG Rui Chen a la conference de resultats du deuxieme trimestre 2026, tenue le 27 aout 2026, et la transcription est publiee par Bilibili elle-meme sur son site relations investisseurs (S1), ce qui en fait un document primaire de la marque-sujet et non une reprise. Il est corrobore mot pour mot par la transcription independante publiee par The Motley Fool (S3), qui le reprend aussi dans ses points saillants en le rattachant a l'effet de l'IA sur l'efficacite d'appariement publicitaire. La citation est ancree sur S3, dont le texte est lisible en machine, la ou le PDF officiel n'expose pas de couche texte extractible ; la phrase y est identique a un trait d'union pres, S1 ecrivant year over year la ou S3 ecrit year-over-year. Le communique de resultats officiel (S2) ne cite pas le CTCVR mais attribue la hausse de 28% des revenus publicitaires a l'amelioration des produits publicitaires et a une meilleure efficacite publicitaire, ce qui recoupe le mecanisme sans le chiffrer. Deux resultats ont ete ecartes parce qu'ils ne sont pas attribues au dispositif par la source. D'abord les 28% de croissance des revenus publicitaires du trimestre, qui agregent l'elargissement des verticales annonceurs, l'ouverture de nouveaux inventaires et l'effet d'appariement, sans que la part de l'IA soit isolee. Ensuite le doublement des revenus de la recherche, presente par le PDG dans un paragraphe distinct consacre a l'extension de la monetisation vers de nouveaux scenarios a forte intention, donc a une ouverture d'inventaire et non au moteur d'appariement. On note egalement un piege de lecture dans la couverture secondaire : la phrase sur les revenus qui doublent concerne la verticale des annonceurs du secteur de l'IA, c'est-a-dire des entreprises d'IA qui achetent de la publicite, et non un revenu publicitaire genere par l'IA."
+  },
+  "dates": {
+    "lancement": "Anterieur a 2026. Le PDG parle d'un CTCVR qui continue de s'ameliorer, ce qui suppose un moteur deja en service les trimestres precedents, mais Bilibili n'a pas publie de date de mise en production.",
+    "derniere_confirmation_activite": "2026-08-27",
+    "verifie_le": "2026-09-03",
+    "revoir_apres": "2027-03-03"
+  },
+  "statut_vivant": {
+    "statut": "confirme",
+    "note": "Confirme par la marque elle-meme une semaine avant la verification, en resultats trimestriels. La formulation employee decrit un systeme en fonctionnement et en extension, avec des chantiers annonces sur la production creative et les agents de placement, et le poste recherche et developpement du trimestre progresse de 16% du fait de l'investissement IA. Aucun signal d'arret ni de retrait."
+  },
+  "sources": [
+    {
+      "ref": "S1",
+      "type": "earnings_call",
+      "fiabilite": "T1_primaire",
+      "titre": "BILI 2Q26 Earnings Script (transcription officielle de la conference de resultats, publiee par Bilibili)",
+      "url": "https://ir.bilibili.com/media/4rcljgil/bili-2q26-earnings-transcript.pdf",
+      "date_publication": "2026-08-27",
+      "consulte_le": "2026-09-03"
+    },
+    {
+      "ref": "S2",
+      "type": "document_officiel_sec",
+      "fiabilite": "T1_primaire",
+      "titre": "Bilibili Inc. Announces Second Quarter 2026 Financial Results",
+      "url": "https://ir.bilibili.com/media/ywxkb3pf/bilibili-inc-announces-second-quarter-2026-financial-results.pdf",
+      "date_publication": "2026-08-27",
+      "consulte_le": "2026-09-03"
+    },
+    {
+      "ref": "S3",
+      "type": "earnings_call",
+      "fiabilite": "T4_secondaire",
+      "titre": "Bilibili (BILI) Q2 2026 Earnings Call Transcript - The Motley Fool",
+      "url": "https://www.fool.com/earnings/call-transcripts/2026/08/31/bilibili-bili-q2-2026-earnings-call-transcript/",
+      "date_publication": "2026-08-31",
+      "consulte_le": "2026-09-03"
+    }
+  ],
+  "fonctionnement_operationnel": {
+    "cadence": "Temps reel a la decision d'affichage : l'annonce est choisie au moment ou l'utilisateur charge son fil ou une page de lecture. Le reentrainement des modeles et la revue des campagnes suivent un rythme propre, non publie par Bilibili.",
+    "opere_par": "Les equipes produit publicitaire et data de la regie, cote plateforme, avec les equipes commerciales qui accompagnent les annonceurs sur le parametrage des objectifs de conversion.",
+    "signal_pilote": "Le couple clic puis conversion, agrege dans le CTCVR. Le systeme optimise sur ce signal, ce qui suppose que l'annonceur remonte une conversion exploitable et un objectif declare. Si l'objectif de conversion est mal defini ou si la remontee s'arrete, le moteur retombe sur le clic seul et apprend a produire de l'engagement sans valeur commerciale.",
+    "etapes": [
+      {
+        "etape": "Constituer la matiere annonceur",
+        "detail": "Recuperer les informations produit, les creatifs de la campagne et l'objectif de conversion vise, et les rendre lisibles par le moteur.",
+        "acteur": "annonceur et equipe commerciale de la regie"
+      },
+      {
+        "etape": "Comprendre le contenu et le creatif",
+        "detail": "Le systeme analyse ce que vend l'annonceur et ce que montre le creatif pour les rapprocher des centres d'interet exprimes sur la plateforme.",
+        "acteur": "IA"
+      },
+      {
+        "etape": "Modeliser les interets utilisateur",
+        "detail": "Les signaux d'usage de la plateforme, contenus regardes, interactions, alimentent une representation des interets qui sert a l'appariement.",
+        "acteur": "IA et equipe data"
+      },
+      {
+        "etape": "Choisir l'annonce servie",
+        "detail": "A l'affichage, le moteur retient l'annonce qui maximise la probabilite conjointe de clic et de conversion pour cet utilisateur et cet objectif.",
+        "acteur": "IA"
+      },
+      {
+        "etape": "Produire et adapter les creatifs",
+        "detail": "Des outils AIGC prennent en charge une partie de la production creative, en complement de ce que fournit l'annonceur.",
+        "acteur": "IA et annonceur"
+      },
+      {
+        "etape": "Piloter la campagne",
+        "detail": "Des agents de placement conduisent le parametrage et l'ajustement des campagnes, pour ouvrir la regie a des annonceurs qui n'ont pas d'equipe media dediee.",
+        "acteur": "IA et equipe commerciale"
+      },
+      {
+        "etape": "Rendre compte sur le CTCVR",
+        "detail": "La regie suit le produit du taux de clic et du taux de conversion comme metrique d'efficacite et le publie en resultats trimestriels.",
+        "acteur": "equipe data et direction"
+      }
+    ]
+  },
+  "schema_flow": {
+    "statut": "approche_type",
+    "noeuds": [
+      {
+        "id": "annonceur",
+        "role_generique": "data_source",
+        "label": "Annonceur : informations produit, creatifs, objectif de conversion"
+      },
+      {
+        "id": "usage",
+        "role_generique": "data_source",
+        "label": "Signaux d'usage de la plateforme : contenus vus, interactions, recherches"
+      },
+      {
+        "id": "moteur",
+        "role_generique": "modele_ia",
+        "label": "Moteur d'appariement : comprehension produit et creatif, interets utilisateur, prediction clic et conversion"
+      },
+      {
+        "id": "aigc",
+        "role_generique": "modele_ia",
+        "label": "Outils AIGC de production creative et agents de placement"
+      },
+      {
+        "id": "regie",
+        "role_generique": "paid_platform",
+        "label": "Regie publicitaire Bilibili : selection de l'annonce a l'affichage"
+      },
+      {
+        "id": "app",
+        "role_generique": "site_app",
+        "label": "Application Bilibili : fil de recommandation, page de lecture, recherche"
+      },
+      {
+        "id": "user",
+        "role_generique": "humain",
+        "label": "Utilisateur Bilibili"
+      },
+      {
+        "id": "ctcvr",
+        "role_generique": "data_source",
+        "label": "Mesure CTCVR : clic puis conversion"
+      }
+    ],
+    "liens": [
+      [
+        "annonceur",
+        "moteur",
+        "produit, creatif, objectif"
+      ],
+      [
+        "usage",
+        "moteur",
+        "interets utilisateur"
+      ],
+      [
+        "annonceur",
+        "aigc"
+      ],
+      [
+        "aigc",
+        "regie",
+        "creatifs et parametrage"
+      ],
+      [
+        "moteur",
+        "regie",
+        "annonce retenue"
+      ],
+      [
+        "regie",
+        "app"
+      ],
+      [
+        "app",
+        "user"
+      ],
+      [
+        "user",
+        "ctcvr",
+        "clic puis conversion"
+      ],
+      [
+        "ctcvr",
+        "moteur",
+        "boucle d'optimisation sur le CTCVR"
+      ]
+    ]
+  },
+  "replication": {
+    "statut_epistemique": "infere",
+    "prerequis_data": [
+      "Un inventaire publicitaire proprietaire et un volume d'impressions suffisant pour entrainer un modele d'appariement",
+      "Des signaux d'usage first party riches et continus : contenus consommes, interactions, recherches internes",
+      "Un referentiel exploitable des informations produit et des creatifs fournis par les annonceurs",
+      "Une remontee de conversion cote annonceur, sans laquelle le systeme n'optimise que le clic",
+      "Une base legale et un recueil de consentement conformes pour le profilage publicitaire en UE"
+    ],
+    "prerequis_orga": [
+      "Une regie interne, ou au minimum la maitrise de la couche de decision d'affichage",
+      "Une equipe data science qui tient les modeles de prediction clic et conversion en production",
+      "Un cadre contractuel avec les annonceurs sur la lecture et l'indexation de leurs creatifs et de leurs objectifs",
+      "Une metrique d'efficacite partagee entre la regie et les annonceurs, plutot que le seul taux de clic",
+      "Un controle des categories d'audience et de contenus exclus du ciblage, notamment pour les mineurs"
+    ],
+    "stack_possible": [
+      "Developpement interne du moteur d'appariement et des modeles de prediction clic et conversion",
+      "Serveur publicitaire proprietaire ou solution d'ad serving qui laisse la main sur la logique de selection",
+      "Encodage multimodal des creatifs et des fiches produit pour rapprocher offre et interets",
+      "Outils de generation de creatifs publicitaires pour les annonceurs sans studio",
+      "Plan de mesure de conversion cote annonceur, avec remontee vers la regie"
+    ],
+    "equipe": "Un responsable de la monetisation publicitaire qui arbitre entre pression publicitaire et experience, des data scientists sur les modeles de prediction clic et conversion, des ingenieurs plateforme sur la selection en temps reel a l'affichage, une equipe commerciale capable de faire declarer aux annonceurs un objectif de conversion exploitable, et un referent juridique sur le profilage et la publicite aux mineurs.",
+    "premiere_etape": "Se donner la metrique avant le modele : mesurer le CTCVR reel de l'inventaire actuel, campagne par campagne, en obtenant des annonceurs une remontee de conversion et pas seulement le clic. Sans ce point de depart, aucune amelioration d'appariement ne sera attribuable.",
+    "playbook": [
+      {
+        "action": "Instrumenter la mesure de bout en bout, du clic jusqu'a la conversion declaree par l'annonceur, et en faire la metrique de reference de la regie.",
+        "livrable": "Un CTCVR de reference par campagne et par format, avec sa methode de calcul ecrite."
+      },
+      {
+        "action": "Structurer la matiere annonceur : collecter les informations produit, les creatifs et l'objectif de conversion dans un format que le systeme peut lire.",
+        "livrable": "Un referentiel annonceur exploitable par les modeles, alimente au moment de la prise de brief."
+      },
+      {
+        "action": "Construire la representation des interets utilisateur a partir des signaux d'usage de la plateforme, en cadrant des le depart les exclusions de ciblage.",
+        "livrable": "Une couche d'interets documentee, avec ses regles de consentement et ses categories interdites."
+      },
+      {
+        "action": "Entrainer et mettre en service un modele de prediction conjointe du clic et de la conversion sur une part de l'inventaire, en gardant un inventaire temoin.",
+        "livrable": "Une comparaison lisible du CTCVR entre inventaire pilote et inventaire temoin."
+      },
+      {
+        "action": "Etendre au-dela de l'appariement une fois l'effet mesure : production de creatifs assistee et automatisation du parametrage pour les annonceurs peu outilles.",
+        "livrable": "Une offre self service qui ouvre la regie a des annonceurs sans equipe media."
+      }
+    ]
+  },
+  "seo": {
+    "slug": "bilibili-moteur-publicitaire-ia-ctcvr-2026",
+    "title": "Bilibili : appariement publicitaire IA - CTCVR +19% en un an (2026)",
+    "meta_description": "Bilibili fait choisir ses annonces par un moteur IA qui lit produit, creatif, interets et objectif de conversion. CTCVR en hausse de 19% sur un an au T2 2026.",
+    "resume_citable": "Bilibili fait selectionner les annonces servies sur sa plateforme video par un moteur IA qui croise les informations produit, les creatifs, les interets des utilisateurs et l'objectif de conversion de la campagne ; son PDG Rui Chen a annonce le 27 aout 2026, en resultats du deuxieme trimestre, un CTCVR en hausse de 19% sur un an, la publicite atteignant 3,13 milliards de RMB sur le trimestre.",
+    "faq": [
+      {
+        "q": "Quel resultat Bilibili attribue-t-il a son moteur publicitaire IA ?",
+        "a": "Une hausse de 19% du CTCVR en glissement annuel au deuxieme trimestre 2026. Le CTCVR est le produit du taux de clic et du taux de conversion. Le chiffre est enonce par le PDG Rui Chen a la conference de resultats du 27 aout 2026, juste apres la description de l'appariement pilote par IA."
+      },
+      {
+        "q": "Les 28% de croissance des revenus publicitaires sont-ils dus a l'IA ?",
+        "a": "Bilibili ne le dit pas. Le communique attribue cette croissance a l'amelioration des produits publicitaires et a une meilleure efficacite publicitaire, sans isoler la part de l'IA, et la croissance agrege aussi l'elargissement des verticales annonceurs et l'ouverture de nouveaux inventaires comme la recherche interne."
+      },
+      {
+        "q": "Que fait exactement l'IA dans la regie de Bilibili ?",
+        "a": "Elle comprend les informations produit et les creatifs de l'annonceur, modelise les interets des utilisateurs, puis choisit l'annonce qui maximise la probabilite conjointe de clic et de conversion. Bilibili indique l'etendre a la production creative avec des outils AIGC et a la conduite des campagnes avec des agents de placement publicitaire."
+      },
+      {
+        "q": "Ce dispositif est-il transposable en Europe ?",
+        "a": "Le mecanisme oui, pour un editeur qui maitrise sa propre regie, mais il ne s'achete pas sur etagere. Le profilage publicitaire suppose une base legale et un consentement conformes au RGPD, et le DSA interdit la publicite ciblee par profilage aux mineurs, ce qui contraint un inventaire a audience jeune."
+      }
+    ]
+  }
+}

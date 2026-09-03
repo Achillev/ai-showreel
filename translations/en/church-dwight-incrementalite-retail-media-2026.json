@@ -1,0 +1,175 @@
+{
+  "transposable_ue": {
+    "note": "The setup runs on sales aggregated by SKU and by campaign, not on individual profiles: the causal modeling itself raises few GDPR difficulties. The constraint lies elsewhere. A retailer has to agree to deliver SKU-level sales data on a daily basis, and the media buying platform has to offer a write API on the campaigns of the retail media network involved. In Europe, retail media supply is more fragmented than in the United States and data feedback varies widely from one retailer to the next, which makes feasibility a market-by-market question."
+  },
+  "pattern": "daily causal measurement wired directly into media buying, reallocating budget across retail media campaigns",
+  "etape_parcours": "purchase",
+  "objectif_business": "Move retail media past last click and past the ROAS each platform reports on itself, in order to know which spend actually produces sales that would not have happened otherwise, and to redeploy the existing budget toward those campaigns without asking for more.",
+  "points_cles": [
+    "Church & Dwight wired daily incrementality measurement directly into its retail media buying.",
+    "Three players: WPP Media steering, Incremental for the causal model, Skai for automated execution.",
+    "Batiste on Target: 292% more media efficiency, with spend unchanged.",
+    "Figures published by the vendors and picked up by the trade press, never confirmed by Church & Dwight."
+  ],
+  "description": "The starting point is an arbitration problem. On retail media networks, each platform grades its own campaigns and reports a ROAS that also counts sales that would have happened without advertising. Church & Dwight was therefore judging its campaigns on last click, on metrics that arrive late and do not say where to send the next dollar. Three vendors were assembled to answer that question. Incremental produces a daily causal reading at campaign level: the model breaks total sales into three parts, the organic baseline, the effect of digital shelf movements (price, promotions, coupons, ratings and reviews, search position), and what is left, attributed to advertising. That residual share divided by spend gives iROI, incremental return on investment, which Incremental's documentation defines as incremental profit over spend. The method combines econometric modeling, dedicated experiments and quasi-experimental techniques of the difference-in-differences type. Skai brings the other half. A direct API connection between the two platforms pushes Incremental's daily recommendation down into Skai's optimization rules and bidding algorithms, which execute it across thousands of campaigns with no spreadsheet in between. WPP Media, through Wavemaker, holds the strategic guardrails and arbitrates. The most visible operational consequence is the shift from a frozen monthly budget to a weekly reallocation: investment moves each week toward campaigns with high incremental return and pulls back from the rest. Campaign structures were rebuilt to allow granular testing, by SKU, by page type and by product category. The setup was applied to the Batiste, TheraBreath and Arm & Hammer brands, at Target and on Instacart. It won the Grand Prix at The Drum Awards for Commerce Media on April 27, 2026 in Miami, along with the Commerce Media Partnership of the Year award, and Incremental was recognized by the Adweek Tech Stack Awards 2026 in August 2026 on the basis of this case.",
+  "resultats": [
+    {
+      "metrique": "Media efficiency on the Batiste brand at Target, with no increase in working media budget. The Drum and Adweek present the same figure as an increase in incremental return on investment."
+    },
+    {
+      "metrique": "The same Batiste result as worded by the trade press, with spend explicitly stated as held flat"
+    },
+    {
+      "metrique": "Media efficiency on the TheraBreath brand at Target"
+    },
+    {
+      "metrique": "Year-over-year revenue growth for Arm & Hammer Laundry on Instacart, presented as a sales record"
+    },
+    {
+      "metrique": "Budget scope of the setup: the gains are obtained with no increase in working media budget"
+    },
+    {
+      "metrique": "Aggregate figures across the three brands published by Incremental, on a fixed budget. They do not reconcile with the per-brand figures published by Skai, see the evidence level."
+    }
+  ],
+  "niveau_preuve": {
+    "justification": "The most precise source is the case study published by Skai on May 22, 2026, which names the brand, the three products, the two retailers and gives the figures with their exact scope. It is an official source, but an interested one: Skai sells the activation platform used in the setup. Incremental, the other vendor, publishes its own figures on the same case. Two trade publications pick up the results, The Drum on April 28, 2026 after its jury, and Adweek on August 4, 2026 in an awards list. None of these texts is independent of the setup it describes: both articles report on award entries. Church & Dwight, for its part, has never confirmed these figures, neither in a press release nor in its financial results. Two discrepancies justify not going higher. First the wording: Skai speaks of media efficiency at Target, while The Drum and Adweek speak of incremental return on investment for the same 292%, with no source saying whether the two measure the same thing. Then the orders of magnitude: Incremental's methodology page claims up to 122% iROI gains across TheraBreath, Batiste and Arm & Hammer Laundry combined, which does not reconcile with the 292% Skai reports on Batiste alone. So the two vendors on the same project do not publish the same figure for the same thing. Church & Dwight's organic growth and group revenue are not counted here: nothing in the sources ties them to this setup."
+  },
+  "statut_vivant": {
+    "note": "The most recent public signal as of the verification date is one month old: Adweek named Incremental a 2026 winner in the Commerce Product/Platform category, citing this case. The vendors describe a system running continuously, with weekly reallocation and daily retraining, not a one-off operation. On the other hand, no communication from Church & Dwight makes it possible to verify that the brand still operates it."
+  },
+  "fonctionnement_operationnel": {
+    "cadence": "The causal model is retrained and recommendations are produced every day. Budgets are reallocated every week, where they used to be frozen for the month.",
+    "opere_par": "The commerce activation team at WPP Media, on the agency side, with Church & Dwight's marketing teams on guardrails and scope.",
+    "signal_pilote": "Incremental return per campaign, produced by the causal model. It assumes a daily SKU-level sales feed from the retailer and a reading of digital shelf movements. Without that feed, the model cannot separate the organic baseline from the advertising effect, and the system falls back on the ROAS each platform reports, which is the problem it started from.",
+    "etapes": [
+      {
+        "etape": "Rebuild the campaign structures",
+        "detail": "Campaigns are re-cut to allow granular testing by SKU, by page type and by product category. Without that split, measurement has nothing to compare.",
+        "acteur": "Agency commerce activation team"
+      },
+      {
+        "etape": "Daily decomposition of sales",
+        "detail": "The model isolates the organic baseline, then removes the effect of prices, promotions, coupons, reviews and search position. What is left is attributed to advertising.",
+        "acteur": "Incremental causal model"
+      },
+      {
+        "etape": "Compute incremental return",
+        "detail": "The residual share over spend gives iROI per campaign, with response curves showing where spend saturates and where it still has room.",
+        "acteur": "Incremental causal model"
+      },
+      {
+        "etape": "Transmission by API",
+        "detail": "The day's recommendation flows straight into the optimization rules and bidding algorithms of the activation platform, with no manual re-entry.",
+        "acteur": "Skai-Incremental connection"
+      },
+      {
+        "etape": "Automated execution",
+        "detail": "Bids and budgets are changed across thousands of campaigns. The sources state that decisions that used to take weeks are now made and applied within hours.",
+        "acteur": "Skai activation platform"
+      },
+      {
+        "etape": "Weekly reallocation",
+        "detail": "Investment moves each week toward high-return areas and pulls back from low-return ones, with the overall envelope unchanged.",
+        "acteur": "Agency, based on the model's output"
+      },
+      {
+        "etape": "Arbitration and guardrails",
+        "detail": "The agency sets what the automation is allowed to do, which brands and which retailers fall in scope, and which limits are not crossed.",
+        "acteur": "WPP Media with the brand teams"
+      }
+    ]
+  },
+  "stack_technique": [
+    {
+      "detail": "Ensemble causal model: econometrics, dedicated experiments and difference-in-differences, with daily campaign-level output"
+    },
+    {
+      "detail": "Omnichannel activation, optimization rules and bidding algorithms on retail media networks"
+    },
+    {
+      "detail": "Direct feed of the daily measurement into media buying workflows, with no manual re-entry"
+    },
+    {
+      "detail": "Strategic steering and orchestration of media buying"
+    }
+  ],
+  "replication": {
+    "prerequis_data": [
+      "A daily SKU-level sales feed from the retailer, not a monthly report",
+      "The history of digital shelf movements: prices, promotions, coupons, ratings and reviews, position in internal search",
+      "Detailed media spend and delivery by campaign and by retailer",
+      "A campaign split fine enough for measurement to have something to compare: by SKU, by page type, by category",
+      "Enough historical depth for the model to establish a credible organic baseline per SKU"
+    ],
+    "prerequis_orga": [
+      "Accepting to judge media on incrementality rather than on the ROAS each platform reports, including when the verdict is less flattering",
+      "A media buying platform with a write API on the campaigns of the retail networks in scope",
+      "A commercial agreement with the retailers on sharing sales data",
+      "Governance that allows weekly budget arbitration across brands and retailers, instead of the monthly plan",
+      "A clear mandate on what the automation is allowed to decide on its own"
+    ],
+    "stack_possible": [
+      "A third-party causal incrementality measurement vendor, independent of the ad platforms",
+      "A retail media buying platform steerable by API",
+      "A connector between the two, or a native integration",
+      "A data warehouse for retailer sales and digital shelf signals",
+      "A feed of price, promotion and review data by SKU"
+    ],
+    "playbook": [
+      {
+        "action": "Start by checking what sales data the target retailers agree to deliver, and at what frequency",
+        "livrable": "A feasibility map retailer by retailer, saying where the setup is possible and where it is not"
+      },
+      {
+        "action": "Re-cut the campaigns so that measurement has comparable units",
+        "livrable": "A campaign structure by SKU, page type and category"
+      },
+      {
+        "action": "Establish an organic baseline per SKU and separate the effect of prices, promotions and reviews",
+        "livrable": "A decomposition of sales into baseline, shelf and advertising"
+      },
+      {
+        "action": "Validate the model with dedicated experiments or geographic holdouts before trusting it with budgets",
+        "livrable": "A measured gap between model and experiment, saying whether it can be relied on"
+      },
+      {
+        "action": "Wire the model's output into the buying platform, first read-only then write on a limited scope",
+        "livrable": "A measurement-to-activation loop running on a subset of campaigns"
+      },
+      {
+        "action": "Move from a frozen monthly budget to weekly reallocation, on that limited scope",
+        "livrable": "A weekly arbitration ritual and a record of budget moves"
+      },
+      {
+        "action": "Extend to the other brands and the other retailers once the loop is stable",
+        "livrable": "An extended scope with written guardrails"
+      }
+    ],
+    "equipe": "A retail media lead able to hold the relationship with the retailers and obtain the sales data. A data or econometrics profile to instruct the causal model and judge its validity rather than take it at face value. A media buying operator comfortable with automated rules and APIs. And an arbiter on the brand side, willing to move budget across brands and retailers every week.",
+    "premiere_etape": "Go and ask a retailer what SKU-level sales data it agrees to deliver, and at what frequency. As long as the answer is monthly or aggregated, no daily causal model holds and the rest of the setup is pointless."
+  },
+  "seo": {
+    "title": "Church & Dwight: causal measurement wired into retail media buying - 292% more efficiency on Batiste (2026)",
+    "meta_description": "Church & Dwight, WPP Media, Incremental and Skai wired daily causal measurement into retail media buying. Batiste at Target: +292% with flat spend.",
+    "resume_citable": "Church & Dwight, with WPP Media, Incremental and Skai, wired daily causal incrementality modeling directly into its retail media buying, with weekly budget reallocation: the Skai case study of May 2026 reports 292% more media efficiency for Batiste at Target, 161% for TheraBreath at Target and 32% revenue growth for Arm & Hammer Laundry on Instacart, with no increase in working media budget.",
+    "faq": [
+      {
+        "q": "What is iROI in this case?",
+        "a": "iROI is incremental return on investment. The model breaks total sales into three parts: the organic baseline, the effect of digital shelf movements such as prices, promotions, coupons and reviews, and the residual attributed to advertising. Incremental's documentation puts it this way: Divide incremental profit by spend and you have iROI. It differs from classic ROAS, which also counts sales that would have happened without advertising."
+      },
+      {
+        "q": "Was spend really held flat?",
+        "a": "Three sources say so explicitly. The Drum writes that Batiste saw a 292% increase in incremental ROI with flat spend. The Skai case study speaks of improvements obtained without increasing working media budgets. Incremental's blog specifies all on a fixed budget. That is what gives the case its value: the gain comes from reallocating the existing budget, not from additional investment."
+      },
+      {
+        "q": "Are these figures confirmed by Church & Dwight?",
+        "a": "No. Every published figure comes from the project's vendors, Skai and Incremental, or from trade press reporting on award entries. Church & Dwight has communicated neither on the setup nor on its results. The group's organic growth and revenue cannot be tied to this setup."
+      },
+      {
+        "q": "Do the sources all give the same figures?",
+        "a": "No, and the gap is worth noting. Skai reports 292% media efficiency for Batiste at Target, while Incremental's methodology page claims up to 122% iROI gains across TheraBreath, Batiste and Arm & Hammer Laundry combined. The wording differs too: media efficiency at Skai, incremental return on investment at The Drum and Adweek for the same 292%. No source specifies the measurement windows, which makes the two impossible to reconcile."
+      }
+    ]
+  }
+}

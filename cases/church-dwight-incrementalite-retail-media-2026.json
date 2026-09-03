@@ -1,0 +1,421 @@
+{
+  "id": "church-dwight-incrementalite-retail-media-2026",
+  "type_fiche": "succes",
+  "marque": "Church & Dwight",
+  "industrie": "cpg_d2c",
+  "marches_deploiement": [
+    "Etats-Unis"
+  ],
+  "transposable_ue": {
+    "flag": "oui_avec_adaptations",
+    "note": "Le dispositif tourne sur des ventes agregees par SKU et par campagne, pas sur des profils individuels : la modelisation causale elle-meme pose peu de difficultes RGPD. La contrainte est ailleurs. Il faut qu'un distributeur accepte de livrer des donnees de vente au SKU a frequence quotidienne, et que la plateforme d'achat media dispose d'une API d'ecriture sur les campagnes du reseau retail concerne. En Europe, l'offre retail media est plus fragmentee qu'aux Etats-Unis et les remontees de donnees varient fortement d'une enseigne a l'autre, ce qui conditionne la faisabilite marche par marche."
+  },
+  "metier": "marketing digital, achat media retail et mesure",
+  "logo_domain": "churchdwight.com",
+  "intervenants": [
+    {
+      "nom": "Jess Chen",
+      "role": "Group Director, Commerce Activation. Citee dans l'etude de cas Skai comme la voix du dispositif ; la source ne precise pas son employeur.",
+      "source_ref": "S1"
+    }
+  ],
+  "agences": [
+    {
+      "nom": "WPP Media (Wavemaker)",
+      "role": "Pilotage strategique du dispositif et orchestration des achats media",
+      "source_ref": "S1"
+    },
+    {
+      "nom": "Incremental",
+      "role": "Modelisation causale d'incrementalite quotidienne au niveau campagne",
+      "source_ref": "S1"
+    },
+    {
+      "nom": "Skai",
+      "role": "Plateforme d'activation omnicanale, execution automatisee des arbitrages",
+      "source_ref": "S1"
+    }
+  ],
+  "axes": {
+    "levier": "acquisition",
+    "touchpoints": [
+      "Target.com",
+      "Instacart",
+      "fiches produit des distributeurs",
+      "reseaux retail media"
+    ],
+    "etape_parcours": "achat",
+    "famille": "optimisation_automatisation",
+    "pattern": "mesure causale quotidienne branchee en direct sur l'achat media, qui reaffecte le budget entre campagnes retail media",
+    "type_ia": [
+      "modelisation causale",
+      "modelisation econometrique",
+      "experimentation et quasi-experimentation (difference-in-differences)",
+      "encheres et arbitrage budgetaire automatises"
+    ],
+    "plateforme_stack": [
+      "Incremental",
+      "Skai",
+      "API Skai-Incremental",
+      "reseaux retail media Target et Instacart"
+    ],
+    "objectif_metrique": [
+      "retour sur investissement incremental (iROI)",
+      "ventes incrementales",
+      "efficacite media a budget constant",
+      "chiffre d'affaires par marque et par distributeur"
+    ]
+  },
+  "implementation": "hybride",
+  "objectif_business": "Sortir le retail media du dernier clic et du ROAS declaratif de chaque plateforme, pour savoir quelle depense produit reellement des ventes qui n'auraient pas eu lieu, et redeployer le budget existant vers ces campagnes-la sans en demander davantage.",
+  "points_cles": [
+    "Church & Dwight a branche une mesure d'incrementalite quotidienne directement sur son achat media retail.",
+    "Trois acteurs : WPP Media au pilotage, Incremental pour le modele causal, Skai pour l'execution automatisee.",
+    "Batiste sur Target : 292 pour cent d'efficacite media en plus, a depense inchangee.",
+    "Chiffres publies par les prestataires et repris par la presse specialisee, jamais confirmes par Church & Dwight."
+  ],
+  "description": "Le point de depart est un probleme d'arbitrage. Sur les reseaux retail media, chaque plateforme note ses propres campagnes et remonte un ROAS qui compte aussi les ventes qui auraient eu lieu sans publicite. Church & Dwight jugeait donc ses campagnes au dernier clic, sur des metriques qui arrivent en retard et qui ne disent pas ou envoyer le prochain dollar. Trois prestataires ont ete assembles pour repondre a cette question. Incremental produit chaque jour une lecture causale au niveau de la campagne : le modele decompose les ventes totales en trois parts, la base organique, l'effet des mouvements de rayon numerique (prix, promotions, coupons, notes et avis, position dans la recherche), et ce qui reste, attribue a la publicite. Cette part residuelle divisee par la depense donne l'iROI, le retour sur investissement incremental, que la documentation d'Incremental definit comme le profit incremental rapporte a la depense. La methode combine modelisation econometrique, experiences dediees et techniques quasi-experimentales de type difference-in-differences. Skai apporte l'autre moitie. Une connexion API directe entre les deux plateformes fait descendre la recommandation quotidienne d'Incremental dans les regles d'optimisation et les algorithmes d'achat de Skai, qui l'executent sur des milliers de campagnes sans passage par un tableur. WPP Media, via Wavemaker, tient les garde-fous strategiques et arbitre. La consequence operationnelle la plus visible est le passage du budget mensuel fige a une reaffectation hebdomadaire : l'investissement glisse chaque semaine vers les campagnes a fort rendement incremental et se retire des autres. Les structures de campagne ont ete refaites pour permettre un test granulaire, par SKU, par type de page et par categorie de produit. Le dispositif a ete applique aux marques Batiste, TheraBreath et Arm & Hammer, chez Target et sur Instacart. Il a recu le Grand Prix des Drum Awards for Commerce Media le 27 avril 2026 a Miami, ainsi que le prix Commerce Media Partnership of the Year, et Incremental a ete distingue par les Adweek Tech Stack Awards 2026 en aout 2026 sur la base de ce cas.",
+  "resultats": [
+    {
+      "metrique": "Efficacite media sur la marque Batiste chez Target, sans hausse du budget media travaille. Le Drum et Adweek presentent le meme chiffre comme une hausse du retour sur investissement incremental.",
+      "valeur": "+292%",
+      "citation_exacte": "292% increase in media efficiency for Batiste on Target",
+      "source_ref": "S1"
+    },
+    {
+      "metrique": "Meme resultat Batiste formule par la presse specialisee, avec la mention explicite d'une depense tenue constante",
+      "valeur": "+292% a budget egal",
+      "citation_exacte": "Batiste saw a 292% increase in incremental ROI with flat spend",
+      "source_ref": "S2"
+    },
+    {
+      "metrique": "Efficacite media sur la marque TheraBreath chez Target",
+      "valeur": "+161%",
+      "citation_exacte": "161% increase in media efficiency for TheraBreath on Target",
+      "source_ref": "S1"
+    },
+    {
+      "metrique": "Croissance du chiffre d'affaires d'Arm & Hammer Laundry sur Instacart en glissement annuel, presentee comme un record de ventes",
+      "valeur": "+32%",
+      "citation_exacte": "32% revenue growth for Arm & Hammer Laundry on Instacart (achieving record sales)",
+      "source_ref": "S1"
+    },
+    {
+      "metrique": "Perimetre budgetaire du dispositif : les gains sont obtenus sans augmentation du budget media travaille",
+      "valeur": "budget inchange",
+      "citation_exacte": "improvements in both media efficiency and topline revenue without increasing working media budgets",
+      "source_ref": "S1"
+    },
+    {
+      "metrique": "Chiffres agreges sur les trois marques publies par Incremental, a budget fixe. Ils ne recoupent pas les chiffres par marque publies par Skai, voir le niveau de preuve.",
+      "valeur": "+309% / +122%",
+      "citation_exacte": "up to 309% incremental sales improvement and up to 122% iROI gains",
+      "source_ref": "S3"
+    }
+  ],
+  "niveau_preuve": {
+    "niveau": "B",
+    "justification": "La source la plus precise est l'etude de cas publiee par Skai le 22 mai 2026, qui nomme la marque, les trois produits, les deux distributeurs et donne les chiffres avec leur perimetre exact. C'est une source officielle mais interessee : Skai vend la plateforme d'activation du dispositif. Incremental, l'autre prestataire, publie ses propres chiffres sur le meme cas. Deux titres de presse specialisee reprennent les resultats, The Drum le 28 avril 2026 apres son jury, et Adweek le 4 aout 2026 dans un palmares. Aucun de ces textes n'est independant du dispositif qu'il decrit : les deux articles rapportent des dossiers de candidature a des prix. Church & Dwight n'a de son cote jamais confirme ces chiffres, ni dans un communique, ni dans ses resultats financiers. Deux ecarts justifient de ne pas monter plus haut. D'abord le libelle : Skai parle d'efficacite media chez Target, The Drum et Adweek parlent de retour sur investissement incremental pour le meme 292 pour cent, sans que la source dise si les deux mesurent la meme chose. Ensuite les ordres de grandeur : la page de methodologie d'Incremental annonce jusqu'a 122 pour cent de gain d'iROI sur l'ensemble TheraBreath, Batiste et Arm & Hammer Laundry, ce qui ne se reconcilie pas avec les 292 pour cent affiches par Skai sur Batiste seule. Les deux prestataires du meme projet ne publient donc pas le meme chiffre pour la meme chose. La croissance organique et le chiffre d'affaires du groupe Church & Dwight ne sont pas retenus ici : rien dans les sources ne les rattache a ce dispositif."
+  },
+  "dates": {
+    "lancement": "Non date par les sources. Le dispositif est presente comme etabli et deja mesure lors des Drum Awards for Commerce Media du 27 avril 2026.",
+    "derniere_confirmation_activite": "4 aout 2026 (Adweek Tech Stack Awards 2026, qui cite les resultats Batiste et Arm & Hammer)",
+    "verifie_le": "2026-09-03",
+    "revoir_apres": "2027-03-03"
+  },
+  "statut_vivant": {
+    "statut": "confirme",
+    "note": "Le signal public le plus recent a la date de verification date d'un mois : Adweek a designe Incremental laureat 2026 dans la categorie Commerce Product/Platform en citant ce cas. Les prestataires decrivent un systeme qui tourne en continu, avec une reaffectation hebdomadaire et un reentrainement quotidien, pas une operation ponctuelle. En revanche, aucune communication de Church & Dwight ne permet de verifier que la marque continue de l'operer."
+  },
+  "sources": [
+    {
+      "ref": "S1",
+      "type": "customer_story_plateforme",
+      "fiabilite": "T2_officiel_interesse",
+      "titre": "How WPP Media Drove Up to 292% Efficiency Gains for Church & Dwight by Replacing Attribution with Incrementality",
+      "url": "https://skai.io/case-studies/how-wpp-media-drove-up-to-292-efficiency-gains-for-church-dwight-by-replacing-attribution-with-incrementality/",
+      "date_publication": "2026-05-22",
+      "consulte_le": "2026-09-03"
+    },
+    {
+      "ref": "S2",
+      "type": "presse",
+      "fiabilite": "T4_secondaire",
+      "titre": "Why WPP's Church & Dwight work took the Grand Prix - and what it says about commerce media now",
+      "url": "https://www.thedrum.com/news/why-wpp-s-church-dwight-work-took-the-grand-prix-and-what-it-says-about-commerce-media-now",
+      "date_publication": "2026-04-28",
+      "consulte_le": "2026-09-03"
+    },
+    {
+      "ref": "S3",
+      "type": "blog_officiel",
+      "fiabilite": "T2_officiel_interesse",
+      "titre": "How to Prove Incremental ROAS: A Working Methodology (Incremental)",
+      "url": "https://www.incremental.com/blog/1h5qzwkeruzrh80c2bfzh0wgr96xca",
+      "date_publication": "2026-05-18",
+      "consulte_le": "2026-09-03"
+    },
+    {
+      "ref": "S4",
+      "type": "presse",
+      "fiabilite": "T4_secondaire",
+      "titre": "ADWEEK's 2026 Tech Stack Awards: Because Data Is Only as Good as Marketers' Ability to Act On It",
+      "url": "https://www.adweek.com/brand-marketing/2026-tech-stack-awards-ai-data-marketing-technology/",
+      "date_publication": "2026-08-04",
+      "consulte_le": "2026-09-03"
+    },
+    {
+      "ref": "S5",
+      "type": "presse",
+      "fiabilite": "T4_secondaire",
+      "titre": "Revealed: The Drum Awards for Commerce Media winners 2026",
+      "url": "https://www.thedrum.com/news/revealed-the-drum-awards-for-commerce-media-winners-2026",
+      "date_publication": "2026-04-28",
+      "consulte_le": "2026-09-03"
+    }
+  ],
+  "fonctionnement_operationnel": {
+    "cadence": "Modele causal reentraine et recommandations produites chaque jour. Les budgets sont reaffectes chaque semaine, la ou ils etaient auparavant figes pour le mois.",
+    "opere_par": "L'equipe commerce activation de WPP Media, cote agence, avec les equipes marketing de Church & Dwight sur les garde-fous et le perimetre.",
+    "signal_pilote": "Le rendement incremental par campagne, produit par le modele causal. Il suppose une remontee quotidienne des ventes au SKU chez le distributeur et une lecture des mouvements de rayon numerique. Sans cette remontee, le modele ne peut pas separer la base organique de l'effet publicitaire, et le systeme retombe sur le ROAS declare par chaque plateforme, c'est-a-dire sur le probleme de depart.",
+    "etapes": [
+      {
+        "etape": "Refonte des structures de campagne",
+        "detail": "Les campagnes sont redecoupees pour permettre un test granulaire par SKU, par type de page et par categorie de produit. Sans ce decoupage, la mesure n'a rien a comparer.",
+        "acteur": "Equipe commerce activation de l'agence"
+      },
+      {
+        "etape": "Decomposition quotidienne des ventes",
+        "detail": "Le modele isole la base organique, puis retire l'effet des prix, promotions, coupons, avis et position dans la recherche. Ce qui reste est attribue a la publicite.",
+        "acteur": "Modele causal Incremental"
+      },
+      {
+        "etape": "Calcul du rendement incremental",
+        "detail": "La part residuelle rapportee a la depense donne l'iROI par campagne, avec des courbes de reponse qui indiquent ou la depense sature et ou elle a encore de la marge.",
+        "acteur": "Modele causal Incremental"
+      },
+      {
+        "etape": "Transmission par API",
+        "detail": "La recommandation du jour descend directement dans les regles d'optimisation et les algorithmes d'achat de la plateforme d'activation, sans reprise manuelle.",
+        "acteur": "Connexion Skai-Incremental"
+      },
+      {
+        "etape": "Execution automatisee",
+        "detail": "Encheres et budgets sont modifies sur des milliers de campagnes. Les sources indiquent que des decisions qui prenaient des semaines sont desormais prises et appliquees en quelques heures.",
+        "acteur": "Plateforme d'activation Skai"
+      },
+      {
+        "etape": "Reaffectation hebdomadaire",
+        "detail": "L'investissement glisse chaque semaine vers les zones a fort rendement et se retire des zones a faible rendement, a enveloppe globale inchangee.",
+        "acteur": "Agence, sur la base des sorties du modele"
+      },
+      {
+        "etape": "Arbitrage et garde-fous",
+        "detail": "L'agence fixe ce que l'automatisation a le droit de faire, quelles marques et quels distributeurs entrent dans le perimetre, et quelles bornes ne sont pas franchies.",
+        "acteur": "WPP Media avec les equipes marque"
+      }
+    ]
+  },
+  "schema_flow": {
+    "statut": "documente",
+    "noeuds": [
+      {
+        "id": "ventes",
+        "role_generique": "data_source",
+        "label": "Ventes quotidiennes au SKU chez le distributeur"
+      },
+      {
+        "id": "rayon",
+        "role_generique": "data_source",
+        "label": "Mouvements de rayon numerique : prix, promotions, coupons, avis, position en recherche"
+      },
+      {
+        "id": "media",
+        "role_generique": "data_source",
+        "label": "Depense et livraison des campagnes retail media"
+      },
+      {
+        "id": "modele",
+        "role_generique": "modele_ia",
+        "label": "Modele causal d'incrementalite quotidienne",
+        "outil_documente": "Incremental"
+      },
+      {
+        "id": "iroi",
+        "role_generique": "modele_ia",
+        "label": "iROI par campagne et courbes de reponse"
+      },
+      {
+        "id": "api",
+        "role_generique": "site_app",
+        "label": "Connexion API entre mesure et activation",
+        "outil_documente": "API Skai-Incremental"
+      },
+      {
+        "id": "activation",
+        "role_generique": "paid_platform",
+        "label": "Achat et arbitrage automatises sur des milliers de campagnes",
+        "outil_documente": "Skai"
+      },
+      {
+        "id": "reseaux",
+        "role_generique": "paid_platform",
+        "label": "Reseaux retail media Target et Instacart"
+      },
+      {
+        "id": "agence",
+        "role_generique": "humain",
+        "label": "Equipe commerce activation WPP Media"
+      }
+    ],
+    "liens": [
+      [
+        "ventes",
+        "modele"
+      ],
+      [
+        "rayon",
+        "modele"
+      ],
+      [
+        "media",
+        "modele"
+      ],
+      [
+        "modele",
+        "iroi"
+      ],
+      [
+        "iroi",
+        "api"
+      ],
+      [
+        "api",
+        "activation"
+      ],
+      [
+        "activation",
+        "reseaux"
+      ],
+      [
+        "reseaux",
+        "ventes",
+        "boucle de mesure quotidienne"
+      ],
+      [
+        "agence",
+        "activation",
+        "garde-fous et perimetre"
+      ],
+      [
+        "iroi",
+        "agence",
+        "reaffectation hebdomadaire du budget"
+      ]
+    ]
+  },
+  "stack_technique": [
+    {
+      "nom": "Incremental",
+      "categorie": "plateforme",
+      "detail": "Modele causal en ensemble : econometrie, experiences dediees et difference-in-differences, sortie quotidienne au niveau campagne",
+      "url": "https://www.incremental.com/"
+    },
+    {
+      "nom": "Skai",
+      "categorie": "plateforme",
+      "detail": "Activation omnicanale, regles d'optimisation et algorithmes d'achat sur les reseaux retail media",
+      "url": "https://skai.io/"
+    },
+    {
+      "nom": "Connexion API Skai-Incremental",
+      "categorie": "infra",
+      "detail": "Descente directe de la mesure quotidienne dans les workflows d'achat media, sans reprise manuelle"
+    },
+    {
+      "nom": "WPP Media (Wavemaker)",
+      "categorie": "integrateur",
+      "detail": "Pilotage strategique et orchestration des achats"
+    }
+  ],
+  "replication": {
+    "statut_epistemique": "infere",
+    "prerequis_data": [
+      "Une remontee de ventes au SKU a frequence quotidienne depuis le distributeur, pas un rapport mensuel",
+      "L'historique des mouvements de rayon numerique : prix, promotions, coupons, notes et avis, position dans la recherche interne",
+      "Le detail de la depense et de la livraison media par campagne et par retailer",
+      "Un decoupage de campagnes assez fin pour que la mesure puisse comparer quelque chose : par SKU, par type de page, par categorie",
+      "Assez de profondeur d'historique pour que le modele etablisse une base organique credible par SKU"
+    ],
+    "prerequis_orga": [
+      "Accepter de juger le media a l'incrementalite plutot qu'au ROAS remonte par chaque plateforme, y compris quand le verdict est moins flatteur",
+      "Une plateforme d'achat media disposant d'une API d'ecriture sur les campagnes des reseaux retail vises",
+      "Un accord commercial avec les distributeurs sur le partage des donnees de vente",
+      "Une gouvernance qui autorise un arbitrage budgetaire hebdomadaire entre marques et enseignes, au lieu du plan mensuel",
+      "Un mandat clair sur ce que l'automatisation a le droit de decider seule"
+    ],
+    "stack_possible": [
+      "Un fournisseur de mesure d'incrementalite causale tiers, independant des regies",
+      "Une plateforme d'achat retail media pilotable par API",
+      "Un connecteur entre les deux, ou une integration native",
+      "Un entrepot de donnees pour les ventes distributeur et les signaux de rayon numerique",
+      "Un flux de donnees de prix, promotions et avis par SKU"
+    ],
+    "playbook": [
+      {
+        "action": "Verifier d'abord ce que les distributeurs vises acceptent de livrer comme donnees de vente, et a quelle frequence",
+        "livrable": "Une carte de faisabilite enseigne par enseigne, qui dit ou le dispositif est possible et ou il ne l'est pas"
+      },
+      {
+        "action": "Redecouper les campagnes pour que la mesure ait des unites comparables",
+        "livrable": "Une structure de campagnes par SKU, type de page et categorie"
+      },
+      {
+        "action": "Etablir une base organique par SKU et separer l'effet des prix, promotions et avis",
+        "livrable": "Une decomposition des ventes en base, rayon et publicite"
+      },
+      {
+        "action": "Valider le modele par des experiences dediees ou des holdouts geographiques avant de lui confier des budgets",
+        "livrable": "Un ecart mesure entre le modele et l'experience, qui dit si l'on peut s'y fier"
+      },
+      {
+        "action": "Brancher la sortie du modele sur la plateforme d'achat, d'abord en lecture puis en ecriture sur un perimetre restreint",
+        "livrable": "Une boucle mesure-activation qui tourne sur un sous-ensemble de campagnes"
+      },
+      {
+        "action": "Passer du budget mensuel fige a une reaffectation hebdomadaire, sur ce perimetre restreint",
+        "livrable": "Un rituel d'arbitrage hebdomadaire et une trace des mouvements de budget"
+      },
+      {
+        "action": "Elargir aux autres marques et aux autres enseignes une fois la boucle stable",
+        "livrable": "Un perimetre etendu avec des garde-fous ecrits"
+      }
+    ],
+    "equipe": "Un responsable retail media capable de tenir la relation avec les enseignes et d'obtenir les donnees de vente. Un profil data ou econometricien pour instruire le modele causal et juger sa validite plutot que le subir. Un operateur d'achat media a l'aise avec les regles automatisees et les API. Et un arbitre cote marque, qui accepte de deplacer du budget entre marques et enseignes toutes les semaines.",
+    "premiere_etape": "Aller demander a un distributeur ce qu'il accepte de livrer comme donnees de vente au SKU, et a quelle frequence. Tant que cette reponse est mensuelle ou agregee, aucun modele causal quotidien ne tient et le reste du dispositif ne sert a rien."
+  },
+  "seo": {
+    "slug": "church-dwight-incrementalite-retail-media-2026",
+    "title": "Church & Dwight : mesure causale branchee sur l'achat media retail - 292% d'efficacite en plus sur Batiste (2026)",
+    "meta_description": "Church & Dwight, WPP Media, Incremental et Skai ont branche une mesure causale quotidienne sur l'achat media retail. Batiste chez Target : +292% a budget egal.",
+    "resume_citable": "Church & Dwight, avec WPP Media, Incremental et Skai, a branche une modelisation causale d'incrementalite quotidienne directement sur ses achats retail media, avec une reaffectation hebdomadaire du budget : l'etude de cas Skai de mai 2026 annonce 292 pour cent d'efficacite media en plus pour Batiste chez Target, 161 pour cent pour TheraBreath chez Target et 32 pour cent de croissance du chiffre d'affaires pour Arm & Hammer Laundry sur Instacart, sans augmentation du budget media travaille.",
+    "faq": [
+      {
+        "q": "Qu'est-ce que l'iROI dans ce cas ?",
+        "a": "L'iROI est le retour sur investissement incremental. Le modele decompose les ventes totales en trois parts : la base organique, l'effet des mouvements de rayon numerique comme les prix, promotions, coupons et avis, et le residu attribue a la publicite. La documentation d'Incremental le formule ainsi : Divide incremental profit by spend and you have iROI. Il se distingue du ROAS classique, qui compte aussi les ventes qui auraient eu lieu sans publicite."
+      },
+      {
+        "q": "La depense a-t-elle vraiment ete tenue constante ?",
+        "a": "Trois sources le disent explicitement. The Drum ecrit que Batiste a gagne 292 pour cent d'incremental ROI with flat spend. L'etude de cas Skai parle d'ameliorations obtenues without increasing working media budgets. Le blog d'Incremental precise all on a fixed budget. C'est ce qui donne sa valeur au cas : le gain vient de la reaffectation du budget existant, pas d'un investissement supplementaire."
+      },
+      {
+        "q": "Ces chiffres sont-ils confirmes par Church & Dwight ?",
+        "a": "Non. Toutes les publications chiffrees viennent des prestataires du projet, Skai et Incremental, ou de la presse specialisee rapportant des dossiers de candidature a des prix. Church & Dwight n'a communique ni sur le dispositif ni sur ses resultats. La croissance organique et le chiffre d'affaires du groupe ne sont pas rattachables a ce dispositif."
+      },
+      {
+        "q": "Les sources donnent-elles toutes les memes chiffres ?",
+        "a": "Non, et l'ecart merite d'etre note. Skai annonce 292 pour cent d'efficacite media pour Batiste chez Target, quand la page de methodologie d'Incremental annonce jusqu'a 122 pour cent de gain d'iROI sur l'ensemble TheraBreath, Batiste et Arm & Hammer Laundry. Les libelles different aussi : efficacite media chez Skai, retour sur investissement incremental chez The Drum et Adweek pour le meme 292 pour cent. Aucune source ne precise les fenetres de mesure, ce qui empeche de reconcilier les deux."
+      }
+    ]
+  }
+}

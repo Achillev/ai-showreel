@@ -1,0 +1,138 @@
+{
+  "transposable_ue": {
+    "note": "The setup is an in-house ad sales operation: a European publisher that monetizes its own audience can aim for the same mechanism, but it does not buy it off the shelf. Three points need framing. The engine trains on user interests inferred from browsing behavior, so on profiling for targeted advertising: in the EU that falls under consent and a legal basis under the GDPR and the ePrivacy directive, not under legitimate interest by default. The DSA also bans targeted advertising on sensitive categories and, for minors, advertising based on profiling, which constrains an inventory whose audience is young. Finally, the automated understanding of advertisers' creatives implies an explicit contractual framework on what the ad business is allowed to read, index and rephrase."
+  },
+  "pattern": "AI ad matching engine that combines product information, creative, user interests and conversion objective to pick the ad served",
+  "etape_parcours": "consideration",
+  "objectif_business": "Make advertising the group's first revenue line by increasing what each impression yields, on a young and highly engaged audience but in a Chinese market where advertisers demand demonstrated conversion efficiency. The lever chosen is not more ad load but the quality of the match between the ad and the user.",
+  "points_cles": [
+    "At Bilibili, AI picks the ad served from the product, the creative, user interests and the conversion objective.",
+    "CEO Rui Chen ties a 19% year over year increase in CTCVR in the second quarter of 2026 to this setup.",
+    "The group is extending AI beyond matching: AIGC tools for creative production and ad placement agents.",
+    "Figure announced in quarterly results, with an official transcript published by Bilibili: evidence level A."
+  ],
+  "description": "Bilibili is the Chinese community video platform born around animation, video games and interest-based content. In the second quarter of 2026 it reports 117 million daily active users, 371 million monthly active users and 113 minutes spent per day per user. Advertising has become its first revenue line: 3.13 billion RMB over the quarter, up 28% year over year. The official release attributes this growth to the improvement of the ad product offering and to better advertising efficiency. The mechanism behind that efficiency, described by CEO Rui Chen in the prepared remarks of the August 27, 2026 earnings call, is AI-driven matching: the system deepens its understanding of product information, of the creatives supplied by the advertiser, of user interests and of the conversion objective the campaign targets, then serves the ad judged most relevant. The metric the group reports on for this work is CTCVR, the product of click-through rate and conversion rate, which Bilibili defines in its glossary as the measure of an ad's effectiveness at triggering an action. That CTCVR is up 19% year over year in the second quarter. In concrete terms, for a user, this means seeing in the feed or on a watch page an ad chosen on its proximity to their interests and to what the advertiser is trying to obtain, rather than on declared targeting. Bilibili says it is extending AI beyond matching, toward creative production with AIGC tools and toward campaign management with ad placement agents, the stated goal being to open the ad business to less equipped advertisers. Research and development expense for the quarter, 1.01 billion RMB, is up 16% year over year, an increase that CFO Sam Fan ties to continued investment in AI capabilities. The technical architecture of the engine, the models used and the exact scope of the campaigns concerned are not published.",
+  "resultats": [
+    {
+      "metrique": "CTCVR of Bilibili's ad business, the product of click-through rate and conversion rate, year over year in the second quarter of 2026. The CEO states this figure right after describing AI matching as the cause of the efficiency gained."
+    }
+  ],
+  "niveau_preuve": {
+    "justification": "The figure comes from the prepared remarks of CEO Rui Chen at the second quarter 2026 earnings call, held on August 27, 2026, and the transcript is published by Bilibili itself on its investor relations site (S1), which makes it a primary document from the subject brand and not a pickup. It is corroborated word for word by the independent transcript published by The Motley Fool (S3), which also carries it in its highlights, tying it to the effect of AI on ad matching efficiency. The quote is anchored on S3, whose text is machine readable, where the official PDF exposes no extractable text layer; the sentence there is identical down to one hyphen, S1 writing year over year where S3 writes year-over-year. The official earnings release (S2) does not cite CTCVR but attributes the 28% growth in advertising revenue to improved ad products and better advertising efficiency, which corroborates the mechanism without quantifying it. Two results were set aside because the source does not attribute them to the setup. First, the 28% growth in the quarter's advertising revenue, which aggregates the broadening of advertiser verticals, the opening of new inventory and the matching effect, without isolating AI's share. Then the doubling of search revenue, presented by the CEO in a separate paragraph devoted to extending monetization toward new high-intent scenarios, so to an inventory opening and not to the matching engine. Note also a reading trap in the secondary coverage: the sentence about revenue doubling concerns the vertical of advertisers from the AI sector, that is, AI companies buying advertising, and not advertising revenue generated by AI."
+  },
+  "fonctionnement_operationnel": {
+    "cadence": "Real time at the display decision: the ad is picked at the moment the user loads their feed or a watch page. Model retraining and campaign review follow their own rhythm, not published by Bilibili.",
+    "opere_par": "The ad product and data teams of the ad business, on the platform side, with the sales teams that support advertisers on setting conversion objectives.",
+    "signal_pilote": "The click then conversion pair, aggregated into CTCVR. The system optimizes on this signal, which assumes the advertiser reports a usable conversion and a declared objective. If the conversion objective is poorly defined or if reporting stops, the engine falls back on clicks alone and learns to produce engagement with no commercial value.",
+    "etapes": [
+      {
+        "etape": "Assemble the advertiser material",
+        "detail": "Collect the product information, the campaign creatives and the conversion objective targeted, and make them readable by the engine.",
+        "acteur": "advertiser and ad sales team"
+      },
+      {
+        "etape": "Understand content and creative",
+        "detail": "The system analyzes what the advertiser sells and what the creative shows in order to connect them to the interests expressed on the platform.",
+        "acteur": "AI"
+      },
+      {
+        "etape": "Model user interests",
+        "detail": "Platform usage signals, content watched, interactions, feed a representation of interests used for matching.",
+        "acteur": "AI and data team"
+      },
+      {
+        "etape": "Pick the ad served",
+        "detail": "At display time, the engine keeps the ad that maximizes the joint probability of click and conversion for this user and this objective.",
+        "acteur": "AI"
+      },
+      {
+        "etape": "Produce and adapt creatives",
+        "detail": "AIGC tools take on part of the creative production, alongside what the advertiser supplies.",
+        "acteur": "AI and advertiser"
+      },
+      {
+        "etape": "Run the campaign",
+        "detail": "Placement agents handle campaign setup and adjustment, to open the ad business to advertisers that have no dedicated media team.",
+        "acteur": "AI and sales team"
+      },
+      {
+        "etape": "Report on CTCVR",
+        "detail": "The ad business tracks the product of click-through rate and conversion rate as its efficiency metric and publishes it in quarterly results.",
+        "acteur": "data team and management"
+      }
+    ]
+  },
+  "replication": {
+    "prerequis_data": [
+      "A proprietary ad inventory and enough impression volume to train a matching model",
+      "Rich and continuous first party usage signals: content consumed, interactions, internal searches",
+      "A usable repository of the product information and the creatives supplied by advertisers",
+      "Conversion reporting on the advertiser side, without which the system optimizes clicks only",
+      "A compliant legal basis and consent collection for advertising profiling in the EU"
+    ],
+    "prerequis_orga": [
+      "An in-house ad business, or at minimum control over the display decision layer",
+      "A data science team that keeps the click and conversion prediction models running in production",
+      "A contractual framework with advertisers on reading and indexing their creatives and their objectives",
+      "An efficiency metric shared between the ad business and the advertisers, rather than click-through rate alone",
+      "Control over the audience and content categories excluded from targeting, in particular for minors"
+    ],
+    "stack_possible": [
+      "In-house development of the matching engine and of the click and conversion prediction models",
+      "A proprietary ad server, or an ad serving solution that leaves control over the selection logic",
+      "Multimodal encoding of creatives and product records to bring offer and interests together",
+      "Ad creative generation tools for advertisers without a studio",
+      "A conversion measurement plan on the advertiser side, reporting back to the ad business"
+    ],
+    "equipe": "An advertising monetization lead who arbitrates between ad load and experience, data scientists on the click and conversion prediction models, platform engineers on real time selection at display, a sales team able to get advertisers to declare a usable conversion objective, and a legal contact on profiling and advertising to minors.",
+    "playbook": [
+      {
+        "action": "Instrument end to end measurement, from the click through to the conversion declared by the advertiser, and make it the reference metric of the ad business.",
+        "livrable": "A baseline CTCVR per campaign and per format, with its calculation method written down."
+      },
+      {
+        "action": "Structure the advertiser material: collect the product information, the creatives and the conversion objective in a format the system can read.",
+        "livrable": "An advertiser repository usable by the models, populated at brief intake."
+      },
+      {
+        "action": "Build the user interest representation from platform usage signals, framing targeting exclusions from the start.",
+        "livrable": "A documented interest layer, with its consent rules and its banned categories."
+      },
+      {
+        "action": "Train and put into service a joint click and conversion prediction model on part of the inventory, keeping a control inventory.",
+        "livrable": "A readable comparison of CTCVR between pilot inventory and control inventory."
+      },
+      {
+        "action": "Extend beyond matching once the effect is measured: assisted creative production and setup automation for advertisers with few tools.",
+        "livrable": "A self service offering that opens the ad business to advertisers with no media team."
+      }
+    ],
+    "premiere_etape": "Get the metric before the model: measure the real CTCVR of the current inventory, campaign by campaign, by obtaining conversion reporting from advertisers and not clicks alone. Without that starting point, no matching improvement will be attributable."
+  },
+  "statut_vivant": {
+    "note": "Confirmed by the brand itself one week before verification, in quarterly results. The wording used describes a system in operation and being extended, with announced work on creative production and placement agents, and research and development expense for the quarter is up 16% because of AI investment. No signal of a stop or a rollback."
+  },
+  "seo": {
+    "title": "Bilibili: AI ad matching - CTCVR +19% year over year (2026)",
+    "meta_description": "Bilibili has an AI engine pick its ads by reading product, creative, interests and conversion objective. CTCVR up 19% year over year in Q2 2026.",
+    "resume_citable": "Bilibili has the ads served on its video platform selected by an AI engine that combines product information, creatives, user interests and the campaign's conversion objective; its CEO Rui Chen announced on August 27, 2026, in second quarter results, a CTCVR up 19% year over year, with advertising reaching 3.13 billion RMB over the quarter.",
+    "faq": [
+      {
+        "q": "What result does Bilibili attribute to its AI ad engine?",
+        "a": "A 19% increase in CTCVR year over year in the second quarter of 2026. CTCVR is the product of click-through rate and conversion rate. The figure is stated by CEO Rui Chen at the August 27, 2026 earnings call, right after the description of AI-driven matching."
+      },
+      {
+        "q": "Is the 28% growth in advertising revenue due to AI?",
+        "a": "Bilibili does not say so. The release attributes this growth to improved ad products and better advertising efficiency, without isolating AI's share, and the growth also aggregates the broadening of advertiser verticals and the opening of new inventory such as internal search."
+      },
+      {
+        "q": "What exactly does AI do in Bilibili's ad business?",
+        "a": "It understands the advertiser's product information and creatives, models user interests, then picks the ad that maximizes the joint probability of click and conversion. Bilibili says it is extending this to creative production with AIGC tools and to campaign management with ad placement agents."
+      },
+      {
+        "q": "Can this setup be transposed to Europe?",
+        "a": "The mechanism yes, for a publisher that controls its own ad business, but it does not come off the shelf. Advertising profiling requires a legal basis and consent that comply with the GDPR, and the DSA bans profiling-based targeted advertising to minors, which constrains an inventory with a young audience."
+      }
+    ]
+  }
+}

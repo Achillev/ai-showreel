@@ -1,0 +1,284 @@
+{
+  "id": "ke-holdings-client-manager-ia-leads-2026",
+  "type_fiche": "succes",
+  "marque": "KE Holdings",
+  "groupe": "KE Holdings Inc. (Beike / Lianjia)",
+  "industrie": "immobilier",
+  "marches_deploiement": [
+    "Chine"
+  ],
+  "transposable_ue": {
+    "flag": "oui_avec_adaptations",
+    "note": "Le dispositif tourne en Chine, sur la plateforme Beike et le reseau Lianjia. Le pattern, une couche IA qui met en forme la donnee du prospect avant qu'un role humain dedie ne le qualifie et le passe a l'agent, se transpose en UE. Il impose une base legale RGPD pour le profilage du prospect immobilier, une information claire sur la construction du profil transmis a l'agent, et une duree de conservation definie pour les donnees de lead. La decision de qualification reste humaine, ce qui limite l'exposition aux regles sur la decision automatisee."
+  },
+  "metier": "generation et qualification de leads immobiliers",
+  "logo_domain": "ke.com",
+  "intervenants": [
+    {
+      "nom": "Stanley Yongdong Peng",
+      "role": "Chairman et CEO de KE Holdings, a decrit le role de client manager assiste par IA et ses chiffres lors de l'earnings call du T2 2026",
+      "source_ref": "S1"
+    }
+  ],
+  "axes": {
+    "levier": "activation_conversion",
+    "touchpoints": [
+      "leads entrants sur la plateforme Beike et Lianjia",
+      "client manager, role humain assiste par IA",
+      "agent immobilier",
+      "visite de bien"
+    ],
+    "etape_parcours": "consideration",
+    "famille": "optimisation_automatisation",
+    "pattern": "role humain dedie, assiste par IA, intercale entre le lead entrant et le commercial",
+    "type_ia": [
+      "organisation automatisee des donnees de prospect",
+      "aide a la decision pour un role humain de qualification"
+    ],
+    "plateforme_stack": [
+      "custom/in-house"
+    ],
+    "objectif_metrique": [
+      "taux de conversion lead vers visite",
+      "volume de leads traites",
+      "continuite du suivi du lead apres son passage a l'agent"
+    ]
+  },
+  "implementation": "custom",
+  "objectif_business": "Convertir davantage de leads entrants en visites de biens, en cessant de perdre la main sur le prospect au moment ou il est transmis a un agent, et en confiant sa qualification a un role paye hors commission de transaction.",
+  "points_cles": [
+    "KE Holdings a cree un role de client manager assiste par IA, place entre le lead entrant et l'agent immobilier.",
+    "L'IA organise la donnee, un humain evalue l'etape et les besoins du client, l'agent recoit un client entierement profile.",
+    "De mai a juillet 2026, plus de 50 000 leads traites et 7,4% de conversion lead vers visite, contre 5% pour le marche.",
+    "Preuve A : chiffres enonces par le CEO Stanley Peng a l'earnings call du T2 2026, le 21 aout 2026."
+  ],
+  "description": "KE Holdings exploite Beike et Lianjia, la plus grande plateforme de transaction immobiliere chinoise, avec 60 274 magasins au 30 juin 2026. Lors de l'earnings call du deuxieme trimestre 2026, le CEO Stanley Peng decrit un nouveau role dans la chaine de traitement des leads : le client manager. Il repond a un trou de suivi qu'il nomme explicitement, la perte d'information de la plateforme des qu'un lead atteint un agent. Le partage des taches est decrit dans ces termes : l'IA organise la donnee, un humain evalue l'etape du parcours et les besoins du client, et l'agent recoit un client entierement profile. Le point structurant n'est pas technique mais salarial : le client manager n'est pas paye a la transaction, ce que Peng repete deux fois dans le meme passage, et c'est ce qui est presente comme la garantie de son objectivite quand il oriente ou ecarte un dossier. Sur la fenetre mai a juillet 2026, le role a traite plus de 50 000 leads avec un taux de conversion lead vers visite de 7,4%, contre 5% pour le marche selon Peng. Deux precisions comptent pour lire ce chiffre. La fenetre de mesure deborde du trimestre calendaire, qui s'arrete fin juin. Et KE Holdings ne publie ni la definition de sa moyenne de marche, ni la composition des leads confies au dispositif, ni la part de son flux total que representent ces 50 000 leads. Le meme trimestre affiche un benefice net en hausse de 100,8% sur un an et une marge nette non-GAAP au plus haut depuis trois ans : ces resultats sont ceux de l'entreprise, attribues par la direction a des optimisations de couts et a un mix d'activite favorable, et ne sont pas presentes comme un effet du client manager.",
+  "resultats": [
+    {
+      "metrique": "Taux de conversion lead vers visite des leads traites par le client manager, contre 5% pour le marche selon KE Holdings",
+      "valeur": "7,4% vs 5%",
+      "citation_exacte": "From May to July, this role handled over 50,000 leads, achieving a 7.4% lead to showing conversion rate, outperforming the broader market's 5%.",
+      "source_ref": "S1"
+    },
+    {
+      "metrique": "Volume de leads traites par le role sur la fenetre mai a juillet 2026",
+      "valeur": "50 000+ leads",
+      "citation_exacte": "From May to July, this role handled over 50,000 leads, achieving a 7.4% lead to showing conversion rate, outperforming the broader market's 5%.",
+      "source_ref": "S1"
+    }
+  ],
+  "niveau_preuve": {
+    "niveau": "A",
+    "justification": "Chiffres enonces par le Chairman et CEO de KE Holdings pendant l'earnings call du T2 2026 du 21 aout 2026, dans le cadre du reporting financier, et verifiables en transcription verbatim chez deux editeurs. Le volume, le taux et la fenetre de mesure sont rattaches explicitement au role de client manager, pas aux resultats globaux du groupe."
+  },
+  "dates": {
+    "lancement": "Non precise publiquement ; la fenetre de mesure communiquee par la direction demarre en mai 2026",
+    "derniere_confirmation_activite": "2026-08",
+    "verifie_le": "2026-09-03",
+    "revoir_apres": "2027-03-03"
+  },
+  "statut_vivant": {
+    "statut": "confirme",
+    "note": "Role presente comme en production et chiffre lors de l'earnings call du 21 aout 2026. Le communique de resultats depose a la SEC le meme jour parle d'IA en termes generaux, sans nommer le client manager ni reprendre ses chiffres : la verification repose sur la parole du dirigeant en resultats financiers et sur les transcriptions verbatim."
+  },
+  "sources": [
+    {
+      "ref": "S1",
+      "type": "earnings_call",
+      "fiabilite": "T1_primaire",
+      "titre": "KE Holdings (BEKE) Q2 2026 Earnings Call Transcript",
+      "url": "https://www.fool.com/earnings/call-transcripts/2026/08/21/ke-holdings-beke-q2-2026-earnings-call-transcript/",
+      "date_publication": "2026-08-21",
+      "consulte_le": "2026-09-03"
+    },
+    {
+      "ref": "S2",
+      "type": "document_officiel_sec",
+      "fiabilite": "T1_primaire",
+      "titre": "KE Holdings Inc. Announces Second Quarter 2026 Unaudited Financial Results (Form 6-K, Exhibit 99.1)",
+      "url": "https://www.sec.gov/Archives/edgar/data/0001809587/000110465926100295/tm2623857d1_ex99-1.htm",
+      "date_publication": "2026-08-21",
+      "consulte_le": "2026-09-03"
+    },
+    {
+      "ref": "S3",
+      "type": "earnings_call",
+      "fiabilite": "T3_presse_etablie",
+      "titre": "KE Holdings (BEKE) Q2 2026 Earnings Call Transcript - The Globe and Mail",
+      "url": "https://www.theglobeandmail.com/investing/markets/markets-news/motley/3980472/ke-holdings-beke-q2-2026-earnings-call-transcript/",
+      "date_publication": "2026-08-21",
+      "consulte_le": "2026-09-03"
+    }
+  ],
+  "stack_technique": [
+    {
+      "nom": "Plateforme Beike / Lianjia",
+      "categorie": "plateforme",
+      "detail": "Plateforme proprietaire de transaction immobiliere de KE Holdings. C'est elle qui collecte le lead et qui, jusqu'ici, perdait la visibilite sur le prospect une fois celui-ci transmis a un agent.",
+      "url": "https://www.ke.com"
+    }
+  ],
+  "fonctionnement_operationnel": {
+    "cadence": "En continu sur le flux de leads entrants ; la direction communique un cumul sur trois mois, de mai a juillet 2026",
+    "opere_par": "Un corps de client managers dedie, remunere hors commission de transaction, adosse aux equipes plateforme de Beike",
+    "signal_pilote": "Le passage du lead a la visite de bien. C'est la metrique publiee (7,4% contre 5% pour le marche). Elle n'existe que si le suivi du prospect continue apres sa transmission a l'agent : c'est precisement le trou que Peng decrit avant l'arrivee du role.",
+    "etapes": [
+      {
+        "etape": "Arrivee du lead",
+        "detail": "Un acheteur ou un vendeur prend contact via la plateforme Beike ou le reseau Lianjia.",
+        "acteur": "client"
+      },
+      {
+        "etape": "Mise en forme de la donnee du prospect",
+        "detail": "La couche IA organise les donnees disponibles sur le prospect et son projet.",
+        "acteur": "IA"
+      },
+      {
+        "etape": "Qualification humaine",
+        "detail": "Le client manager evalue l'etape du parcours du client et ses besoins. Il n'est pas paye a la transaction, ce qui le laisse libre d'ecarter un dossier ou de temporiser.",
+        "acteur": "client manager"
+      },
+      {
+        "etape": "Transmission a l'agent",
+        "detail": "L'agent immobilier recoit un client deja profile et n'a plus a refaire le travail de cadrage.",
+        "acteur": "agent immobilier"
+      },
+      {
+        "etape": "Mesure de la conversion",
+        "detail": "La plateforme suit le devenir du lead jusqu'a la visite de bien et compare son taux a la moyenne de marche.",
+        "acteur": "equipe data"
+      }
+    ]
+  },
+  "schema_flow": {
+    "statut": "approche_type",
+    "noeuds": [
+      {
+        "id": "lead",
+        "role_generique": "humain",
+        "label": "Prospect entrant (acheteur ou vendeur)"
+      },
+      {
+        "id": "plateforme",
+        "role_generique": "site_app",
+        "label": "Plateforme Beike / Lianjia",
+        "outil_documente": "Beike / Lianjia"
+      },
+      {
+        "id": "ia",
+        "role_generique": "modele_ia",
+        "label": "Couche IA qui organise les donnees du prospect"
+      },
+      {
+        "id": "cm",
+        "role_generique": "humain",
+        "label": "Client manager, remunere hors commission de transaction"
+      },
+      {
+        "id": "agent",
+        "role_generique": "humain",
+        "label": "Agent immobilier"
+      },
+      {
+        "id": "mesure",
+        "role_generique": "data_source",
+        "label": "Suivi lead vers visite de bien"
+      }
+    ],
+    "liens": [
+      [
+        "lead",
+        "plateforme",
+        "prise de contact"
+      ],
+      [
+        "plateforme",
+        "ia",
+        "donnees du prospect"
+      ],
+      [
+        "ia",
+        "cm",
+        "dossier organise"
+      ],
+      [
+        "cm",
+        "agent",
+        "client entierement profile"
+      ],
+      [
+        "agent",
+        "mesure",
+        "visite de bien"
+      ],
+      [
+        "mesure",
+        "plateforme",
+        "issue du lead, taux de conversion"
+      ]
+    ]
+  },
+  "replication": {
+    "statut_epistemique": "infere",
+    "prerequis_data": [
+      "Historique des leads entrants avec leur issue jusqu'a la visite, et pas seulement jusqu'a l'attribution a un commercial",
+      "Donnees de projet du prospect exploitables et rattachees a un identifiant stable tout au long du parcours",
+      "Une reference de conversion de marche ou interne a laquelle comparer le dispositif, dont la definition est ecrite avant la mesure"
+    ],
+    "prerequis_orga": [
+      "Accepter un role intercale entre le lead et le commercial, donc un partage du contact que les equipes de vente percoivent comme leur",
+      "Un mode de remuneration du role de qualification decorrele du volume de transactions",
+      "Une regle ecrite de ce qui constitue un dossier profile et transmissible",
+      "Un droit de suite de la plateforme sur le lead apres transmission au commercial"
+    ],
+    "stack_possible": [
+      "Couche de structuration automatique des donnees de prospect branchee sur le CRM",
+      "Poste de travail de qualification donnant au role humain la vue consolidee du prospect",
+      "Mesure de conversion par cohorte de leads, du contact jusqu'a l'evenement de milieu de parcours retenu"
+    ],
+    "premiere_etape": "Mesurer la conversion actuelle des leads entrants jusqu'a l'evenement de milieu de parcours qui compte chez vous, et verifier si ce suivi survit au passage du lead a un commercial. Si l'information s'arrete la, le trou a combler est celui-la avant toute IA.",
+    "playbook": [
+      {
+        "action": "Reconstituer le parcours du lead entrant jusqu'a l'evenement qui precede la vente, et identifier ou le suivi se perd.",
+        "livrable": "Une conversion de reference chiffree, et le point de rupture du suivi."
+      },
+      {
+        "action": "Definir le role de qualification : ce qu'il decide, ce qu'il transmet, et sur quoi il est paye.",
+        "livrable": "Fiche de poste et regle de remuneration decorrelee des closings."
+      },
+      {
+        "action": "Automatiser la mise en forme de la donnee de prospect en amont de ce role, sans lui retirer la decision.",
+        "livrable": "Dossier prospect consolide, presente au qualificateur a l'ouverture."
+      },
+      {
+        "action": "Ouvrir le dispositif sur un sous-ensemble de leads et comparer sa conversion a la reference, a composition de leads comparable.",
+        "livrable": "Lecture par cohorte, avec la composition des leads documentee des le depart."
+      },
+      {
+        "action": "Elargir aux autres sources de leads en gardant la mesure de conversion et la regle de transmission au commercial.",
+        "livrable": "Dispositif etendu et suivi de conversion tenu dans la duree."
+      }
+    ],
+    "equipe": "Un responsable des operations commerciales qui porte le role de qualification et arbitre avec les equipes de vente, un profil data pour le suivi de conversion par cohorte, un profil produit ou data engineering pour la couche de structuration des donnees de prospect."
+  },
+  "seo": {
+    "slug": "ke-holdings-client-manager-ia-leads-2026",
+    "title": "KE Holdings : client manager assiste par IA - 7,4% de conversion lead vers visite (2026)",
+    "meta_description": "KE Holdings a intercale un client manager assiste par IA avant l'agent : 50 000 leads de mai a juillet 2026, 7,4% de conversion contre 5% du marche.",
+    "resume_citable": "De mai a juillet 2026, le role de client manager assiste par IA de KE Holdings (Beike, Lianjia) a traite plus de 50 000 leads immobiliers avec un taux de conversion lead vers visite de 7,4%, contre 5% pour la moyenne de marche citee par le CEO Stanley Peng.",
+    "faq": [
+      {
+        "q": "Qu'est-ce que le client manager de KE Holdings ?",
+        "a": "Un role humain assiste par IA, intercale entre le lead entrant et l'agent immobilier. L'IA organise la donnee du prospect, le client manager evalue son etape de parcours et ses besoins, puis l'agent recoit un client deja profile. Ce role n'est pas paye a la transaction."
+      },
+      {
+        "q": "Que mesure le taux de 7,4% ?",
+        "a": "La conversion des leads traites par ce role vers une visite de bien, de mai a juillet 2026, sur plus de 50 000 leads. Le CEO la compare a 5% pour le marche. KE Holdings ne publie ni la definition de cette moyenne de marche ni la composition des leads confies au dispositif."
+      },
+      {
+        "q": "Le benefice net en hausse de 100,8% vient-il de ce dispositif ?",
+        "a": "Non. La hausse du benefice net et la marge nette non-GAAP au plus haut depuis trois ans sont attribuees par la direction a des optimisations de couts et a un mix d'activite favorable. Elles ne sont pas presentees comme un effet du client manager."
+      }
+    ]
+  }
+}

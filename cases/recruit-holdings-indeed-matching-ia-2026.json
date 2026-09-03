@@ -1,0 +1,394 @@
+{
+  "id": "recruit-holdings-indeed-matching-ia-2026",
+  "type_fiche": "succes",
+  "marque": "Indeed",
+  "groupe": "Recruit Holdings",
+  "industrie": "autre",
+  "marches_deploiement": [
+    "Etats-Unis",
+    "Japon",
+    "Royaume-Uni",
+    "Canada",
+    "plus de 60 pays ou Indeed opere"
+  ],
+  "transposable_ue": {
+    "flag": "oui_avec_adaptations",
+    "note": "Indeed opere deja en Europe, donc la question n'est pas technique mais reglementaire. L'AI Act classe en haut risque les systemes d'IA utilises pour le recrutement, notamment le ciblage des annonces d'emploi, le tri et le filtrage des candidatures et l'evaluation des candidats (annexe III, point 4). Un dispositif de ce type sur un marche UE demande donc une documentation technique, une supervision humaine et une information des personnes concernees. Cote RGPD, la pre-qualification automatique selon des criteres employeur touche a l'article 22 sur la decision automatisee et au profilage : il faut une base legale, une transparence sur les criteres et une voie de recours humaine pour le candidat ecarte."
+  },
+  "metier": "produit et marketing digital d'une marketplace biface (acquisition et conversion des candidats, monetisation cote employeur)",
+  "marque_linkedin": "https://www.linkedin.com/company/indeed-com",
+  "logo_domain": "indeed.com",
+  "intervenants": [
+    {
+      "nom": "Hisayuki Idekoba",
+      "role": "Representative Director, President and CEO, Recruit Holdings",
+      "source_ref": "S1"
+    },
+    {
+      "nom": "Junichi Arai",
+      "role": "Executive Vice President and Chief Financial Officer, Recruit Holdings",
+      "source_ref": "S1"
+    }
+  ],
+  "axes": {
+    "levier": "activation_conversion",
+    "touchpoints": [
+      "site et application Indeed",
+      "recherche d'offres",
+      "flux d'offres personnalise",
+      "emails de recommandation",
+      "pop-ups et notifications dans le produit",
+      "espace employeur (Smart Sourcing, Smart Screening)"
+    ],
+    "etape_parcours": "achat",
+    "famille": "personnalisation",
+    "pattern": "moteur de recommandation qui devient la source principale de conversion sur une marketplace, devant la recherche par mots-cles",
+    "type_ia": [
+      "recommandation et matching biface",
+      "scoring de l'intention d'embauche cote employeur",
+      "pre-qualification automatique selon criteres employeur"
+    ],
+    "plateforme_stack": [
+      "custom/in-house (Indeed)",
+      "Sponsored Jobs et Premium Sponsored Jobs",
+      "Smart Sourcing",
+      "Smart Screening",
+      "Career Scout"
+    ],
+    "objectif_metrique": [
+      "part des candidatures issues des recommandations",
+      "utilisateurs actifs mensuels",
+      "embauches abouties",
+      "delai de reponse de l'employeur au candidat"
+    ]
+  },
+  "implementation": "custom",
+  "stack_technique": [
+    {
+      "nom": "Smart Sourcing",
+      "categorie": "outil",
+      "detail": "Outil employeur qui remonte de facon proactive les candidats susceptibles de correspondre au poste, pour que le recruteur engage la conversation plus tot. Les signaux qu'il produit alimentent aussi les recommandations envoyees aux candidats.",
+      "url": "https://www.indeed.com/news/releases/indeed-31-hires-per-minute-ai-matching"
+    },
+    {
+      "nom": "Smart Screening",
+      "categorie": "outil",
+      "detail": "Pre-qualification des candidatures selon des criteres definis par l'employeur, en amont de l'evaluation humaine. Indeed indique une baisse moyenne de 20 % du delai d'embauche lors des premiers tests aux Etats-Unis.",
+      "url": "https://www.indeed.com/news/releases/indeed-31-hires-per-minute-ai-matching"
+    },
+    {
+      "nom": "Career Scout",
+      "categorie": "outil",
+      "detail": "Cote candidat, aide a decouvrir des postes a partir des competences, du parcours et des preferences declarees, en complement des flux et alertes personnalises.",
+      "url": "https://www.indeed.com/news/releases/indeed-31-hires-per-minute-ai-matching"
+    },
+    {
+      "nom": "Premium Sponsored Jobs",
+      "categorie": "plateforme",
+      "detail": "Version haut de gamme de l'annonce sponsorisee, qui combine diffusion, marque employeur et sourcing. Indeed annonce un delai d'embauche reduit jusqu'a 50 % par rapport aux offres non sponsorisees, sur donnees americaines.",
+      "url": "https://www.indeed.com/news/releases/indeed-31-hires-per-minute-ai-matching"
+    }
+  ],
+  "objectif_business": "Faire de la recommandation, et non plus de la recherche par mots-cles, le mecanisme qui amene un candidat a postuler. L'enjeu est double : donner aux employeurs presses des candidatures qu'ils peuvent traiter tout de suite, et garder les candidats sur Indeed alors que les assistants conversationnels et les resumes de recherche generes par IA detournent une partie du trafic des sites d'emploi.",
+  "points_cles": [
+    "Indeed a bascule la candidature de la recherche par mots-cles vers la recommandation IA.",
+    "Le dispositif s'appuie sur Sponsored Jobs, Smart Sourcing, Smart Screening et Career Scout.",
+    "70 % des candidatures viennent des recommandations, actifs mensuels +18 % en mars 2026, 31 embauches par minute.",
+    "Chiffres dits par le CEO en resultats annuels et repris dans un communique Indeed."
+  ],
+  "description": "Indeed est la plateforme d'emploi de Recruit Holdings. Son communique du 15 mai 2026 donne l'echelle : plus de 645 millions de profils de candidats, plus de 3,3 millions d'employeurs, plus de 60 pays, et des integrations avec plus de 350 logiciels de suivi des candidatures. Le dispositif porte sur un point precis du parcours : par quel chemin un candidat arrive sur l'offre a laquelle il postule. La mecanique historique etait la recherche par mots-cles. Quelqu'un tape « chef francais », des annonces sponsorisees remontent dans les resultats, il postule. Le 15 mai 2026, en presentant les resultats de l'exercice clos en mars 2026, Hisayuki Idekoba a chiffre pour la premiere fois le partage entre les deux sources de candidatures : la recherche par mots-cles n'en apporte plus que 30 %, les 70 % restants viennent des recommandations et des outils IA. Ce que voit le candidat, ce sont des offres proposees dans son flux, des emails et des pop-ups qui lui disent en substance que cette entreprise semble vouloir qu'il postule. Ces messages sont declenches par ce que font les employeurs dans leurs propres outils : Smart Sourcing remonte au recruteur des candidats susceptibles de convenir, Smart Screening trie les candidatures selon des criteres qu'il a definis. Le signal d'intention d'embauche ainsi produit revient cote candidat. Career Scout et les flux personnalises completent le dispositif sur la decouverte de postes a partir des competences et des preferences. Indeed a par ailleurs annonce en fevrier 2026 une integration avec ChatGPT. Deux resultats sont mis en avant cote employeur : une baisse moyenne de 20 % du delai d'embauche pour ceux qui utilisent Smart Screening lors des premiers tests americains, et jusqu'a 50 % avec Premium Sponsored Jobs. Ce sont des gains de productivite de recruteur. L'effet marketplace se lit ailleurs : les employeurs qui utilisent Sponsored Jobs repondent 45 % plus vite aux candidats, les utilisateurs actifs mensuels ont atteint un record en mars 2026 avec 18 % de hausse sur un an, et Indeed compte 31 embauches par minute contre 27 auparavant. Le perimetre exact du deploiement pays par pays n'est pas publie.",
+  "resultats": [
+    {
+      "metrique": "Part des candidatures qui arrivent par les recommandations et les outils IA, et non plus par la recherche par mots-cles, chiffre donne pour la premiere fois par le CEO de Recruit Holdings le 15 mai 2026",
+      "valeur": "70%",
+      "citation_exacte": "we send emails or show pop-ups saying things like, \"This company seems to want you to apply for this position.\" In fact, this accounts for 70%.",
+      "source_ref": "S1"
+    },
+    {
+      "metrique": "Utilisateurs actifs mensuels d'Indeed en mars 2026, decrits comme un record par le CEO et attribues par lui a l'amelioration de l'experience par l'IA",
+      "valeur": "+18%",
+      "citation_exacte": "As a result, the number of monthly active users in March increased 18% year over year.",
+      "source_ref": "S1"
+    },
+    {
+      "metrique": "Embauches abouties via la plateforme chaque minute, contre 27 auparavant, sur donnees Indeed monde en moyenne 2025",
+      "valeur": "31 par minute",
+      "citation_exacte": "31 hires happen through its platform every minute",
+      "source_ref": "S2"
+    },
+    {
+      "metrique": "Vitesse a laquelle les employeurs utilisant Sponsored Jobs repondent aux candidats, le point de friction numero un cote candidat selon le CEO",
+      "valeur": "45% plus vite",
+      "citation_exacte": "customers using Sponsored Jobs respond 45% faster.",
+      "source_ref": "S1"
+    }
+  ],
+  "niveau_preuve": {
+    "niveau": "A",
+    "justification": "Trois des quatre chiffres sont prononces par Hisayuki Idekoba, CEO de Recruit Holdings, pendant la presentation des resultats du quatrieme trimestre et de l'exercice FY2025, le 15 mai 2026, et figurent mot pour mot dans la transcription officielle publiee par l'entreprise sur sa page investisseurs (S1). Le quatrieme vient du communique publie le meme jour par Indeed (S2). La presse RH etablie reprend le cas et le chiffre de 70 % (S3), et le dispositif est encore commente en resultats trimestriels le 7 aout 2026 (S4). Reserve a garder en tete : toutes ces sources remontent a l'entreprise elle-meme, aucun tiers ne verifie les mesures. Le 31 embauches par minute et le 20 % de delai d'embauche sont explicitement des donnees internes Indeed. Et le lien de causalite entre l'IA et la hausse des utilisateurs actifs est une lecture du CEO, pas un resultat de test. Les chiffres d'entreprise du trimestre, revenu americain et benefice par action, ne sont pas des resultats de ce dispositif et n'entrent pas dans cette fiche."
+  },
+  "dates": {
+    "lancement": "Deploiement progressif sur plusieurs annees ; le partage 30 % recherche contre 70 % recommandations est publie pour la premiere fois le 15 mai 2026, sur l'exercice clos en mars 2026",
+    "derniere_confirmation_activite": "2026-08-07",
+    "verifie_le": "2026-09-03",
+    "revoir_apres": "2027-03-03"
+  },
+  "statut_vivant": {
+    "statut": "confirme",
+    "note": "Le dispositif est presente comme le moteur de croissance du groupe lors des resultats du premier trimestre FY2026, le 7 aout 2026, ou Smart Sourcing et Smart Screening sont cites comme lignes de revenus a part entiere. Indeed a par ailleurs lance Sourcing Assistant le 15 juin 2026, une brique supplementaire du meme dispositif. Aucun signal d'arret ni de retrait."
+  },
+  "sources": [
+    {
+      "ref": "S1",
+      "type": "earnings_call",
+      "fiabilite": "T1_primaire",
+      "titre": "Transcript of Earnings Results Call for Q4 FY2025 - Recruit Holdings (transcription officielle)",
+      "url": "https://recruit-holdings.com/en/ir/library/upload/recruit_202603Q4_call-transcript_en.html",
+      "date_publication": "2026-05-15",
+      "consulte_le": "2026-09-03"
+    },
+    {
+      "ref": "S2",
+      "type": "communique_officiel",
+      "fiabilite": "T1_primaire",
+      "titre": "Indeed Helps 31 People Get Hired Every Minute, Powered by AI-Driven Matching and Hiring Innovation",
+      "url": "https://www.indeed.com/news/releases/indeed-31-hires-per-minute-ai-matching",
+      "date_publication": "2026-05-15",
+      "consulte_le": "2026-09-03"
+    },
+    {
+      "ref": "S3",
+      "type": "presse",
+      "fiabilite": "T3_presse_etablie",
+      "titre": "Indeed parent company touts record growth driven by AI - HR Dive",
+      "url": "https://www.hrdive.com/news/indeed-parent-company-touts-record-growth-driven-by-ai/820710/",
+      "date_publication": "2026-05-20",
+      "consulte_le": "2026-09-03"
+    },
+    {
+      "ref": "S4",
+      "type": "earnings_call",
+      "fiabilite": "T1_primaire",
+      "titre": "Transcript of Earnings Results Call for Q1 FY2026 - Recruit Holdings (transcription officielle, preuve de vivacite)",
+      "url": "https://recruit-holdings.com/en/ir/library/upload/Recruit_202703Q1_call-transcript_en.html",
+      "date_publication": "2026-08-07",
+      "consulte_le": "2026-09-03"
+    },
+    {
+      "ref": "S5",
+      "type": "communique_officiel",
+      "fiabilite": "T1_primaire",
+      "titre": "Indeed's AI-Powered Sourcing Assistant Helps Employers Hire Over 30% Faster",
+      "url": "https://www.indeed.com/news/releases/indeeds-ai-powered-sourcing-assistant-helps-employers-hire-over-30-faster",
+      "date_publication": "2026-06-15",
+      "consulte_le": "2026-09-03"
+    },
+    {
+      "ref": "S6",
+      "type": "earnings_call",
+      "fiabilite": "T1_primaire",
+      "titre": "Recruit Holdings Q4 FY2025 Earnings Call - transcription officielle en PDF (meme document que S1)",
+      "url": "https://file.recruit-holdings.com/files/en/Recruit_202603Q4_call-transcript_en.pdf",
+      "date_publication": "2026-05-15",
+      "consulte_le": "2026-09-03"
+    }
+  ],
+  "fonctionnement_operationnel": {
+    "cadence": "En continu. Les recommandations se recalculent a chaque session du candidat et a chaque declenchement d'email ou de notification. Le rythme humain, lui, est celui du recruteur qui parametre ses criteres et repond aux candidatures.",
+    "opere_par": "Les equipes produit et data d'Indeed tiennent le moteur. Cote client, ce sont les recruteurs qui alimentent le systeme : ils definissent les criteres de Smart Screening, lancent et budgetent leurs Sponsored Jobs, et engagent les candidats remontes par Smart Sourcing.",
+    "signal_pilote": "L'issue reelle du recrutement, pas le clic ni la candidature. Indeed dit voir ce qui se passe apres la candidature grace aux integrations avec plus de 350 logiciels de suivi des candidatures et aux petites entreprises qui gerent tout leur recrutement sur la plateforme. Sans ce retour d'embauche, le moteur retombe sur des signaux de surface, le volume de candidatures remplace la qualite, et le probleme decrit par le CEO revient : le candidat postule et personne ne lui repond.",
+    "etapes": [
+      {
+        "etape": "Collecter le signal d'intention cote employeur",
+        "detail": "Ce que le recruteur fait dans ses outils, criteres de tri, candidats contactes, offres pour lesquelles il paye davantage, indique quelles entreprises veulent vraiment recruter et sur quels profils.",
+        "acteur": "employeur / recruteur"
+      },
+      {
+        "etape": "Rapprocher profils et postes",
+        "detail": "Le moteur croise competences, experience, preferences declarees et activite employeur pour identifier les paires ou les deux cotes ont interet a dire oui.",
+        "acteur": "IA"
+      },
+      {
+        "etape": "Aller chercher le candidat au lieu d'attendre sa recherche",
+        "detail": "L'offre est poussee dans le flux personnalise, par email ou par pop-up, avec un message qui dit que l'entreprise cherche ce profil. C'est ce chemin qui apporte desormais l'essentiel des candidatures.",
+        "acteur": "IA"
+      },
+      {
+        "etape": "Pre-qualifier et repondre vite",
+        "detail": "Smart Screening ecarte en amont les candidatures hors criteres pour que le recruteur passe son temps sur les autres. La decision d'embauche reste humaine.",
+        "acteur": "employeur / recruteur, assiste par l'IA"
+      },
+      {
+        "etape": "Reboucler sur l'embauche effective",
+        "detail": "Les issues remontees par les integrations avec les logiciels de suivi des candidatures reviennent nourrir le matching. Une embauche faite, un candidat devenu indisponible, un poste pourvu changent les recommandations suivantes.",
+        "acteur": "equipe data / IA"
+      }
+    ]
+  },
+  "schema_flow": {
+    "statut": "approche_type",
+    "noeuds": [
+      {
+        "id": "candidat",
+        "role_generique": "humain",
+        "label": "Candidat sur Indeed"
+      },
+      {
+        "id": "profils",
+        "role_generique": "data_source",
+        "label": "Profils candidats, competences et preferences declarees"
+      },
+      {
+        "id": "employeur",
+        "role_generique": "humain",
+        "label": "Employeur ou recruteur"
+      },
+      {
+        "id": "outils_emp",
+        "role_generique": "site_app",
+        "label": "Outils employeur : Sponsored Jobs, Smart Sourcing, Smart Screening",
+        "outil_documente": "Indeed"
+      },
+      {
+        "id": "matching",
+        "role_generique": "modele_ia",
+        "label": "Moteur de matching et de recommandation"
+      },
+      {
+        "id": "canaux",
+        "role_generique": "canal_conversationnel",
+        "label": "Flux personnalise, emails et pop-ups de recommandation"
+      },
+      {
+        "id": "app",
+        "role_generique": "site_app",
+        "label": "Site et application Indeed"
+      },
+      {
+        "id": "ats",
+        "role_generique": "data_source",
+        "label": "Retour d'embauche via les logiciels de suivi des candidatures"
+      }
+    ],
+    "liens": [
+      [
+        "candidat",
+        "profils"
+      ],
+      [
+        "employeur",
+        "outils_emp",
+        "criteres, budget, candidats contactes"
+      ],
+      [
+        "profils",
+        "matching"
+      ],
+      [
+        "outils_emp",
+        "matching",
+        "signal d'intention d'embauche"
+      ],
+      [
+        "matching",
+        "canaux",
+        "offres poussees au candidat"
+      ],
+      [
+        "canaux",
+        "candidat"
+      ],
+      [
+        "candidat",
+        "app",
+        "candidature"
+      ],
+      [
+        "app",
+        "outils_emp"
+      ],
+      [
+        "outils_emp",
+        "ats"
+      ],
+      [
+        "ats",
+        "matching",
+        "boucle : l'embauche effective corrige le matching"
+      ]
+    ]
+  },
+  "replication": {
+    "statut_epistemique": "infere",
+    "prerequis_data": [
+      "Un profil cote demande assez riche pour recommander sans requete : competences, historique, preferences declarees",
+      "Un signal d'intention cote offre, c'est-a-dire ce que fait reellement le vendeur ou l'employeur dans ses propres outils, et pas seulement ce qu'il declare",
+      "La remontee de l'issue finale, ici l'embauche, sans laquelle le moteur ne peut apprendre que sur le clic",
+      "Des canaux sortants relies au moteur : flux personnalise, email, notification, avec la gestion du consentement qui va avec"
+    ],
+    "prerequis_orga": [
+      "Accepter que la recherche cesse d'etre le chemin principal, ce qui deplace le travail produit de la pertinence des resultats vers la qualite des messages sortants",
+      "Une definition partagee de la conversion utile : ici l'embauche, pas la candidature",
+      "Un cadre juridique pour la pre-qualification automatique, obligatoire des que la decision touche l'acces a l'emploi ou au credit",
+      "Une boucle de retour avec les outils du cote client, sans laquelle l'issue reste invisible"
+    ],
+    "stack_possible": [
+      "Moteur de recommandation maison sur un entrepot de donnees, avec un service de scoring en ligne",
+      "Briques de recommandation managees pour demarrer, avant internalisation",
+      "Plateforme d'envoi email et push branchee sur le moteur, pas sur des segments statiques",
+      "Connecteurs vers les outils metier du cote client pour recuperer l'issue reelle"
+    ],
+    "equipe": "Un responsable produit qui arbitre entre recherche et recommandation, des profils data et machine learning pour le moteur et sa mesure, des ingenieurs pour les connecteurs vers les outils clients, et un referent juridique sur le profilage et la decision automatisee.",
+    "premiere_etape": "Mesurer la repartition actuelle des conversions entre la recherche interne et les canaux pousses. Sans ce point de depart, on ne saura pas si la recommandation ajoute de la conversion ou deplace celle qui existait deja.",
+    "playbook": [
+      {
+        "action": "Instrumenter le parcours pour savoir, pour chaque conversion, par quel chemin l'utilisateur est arrive : recherche, flux, email, notification.",
+        "livrable": "Une repartition chiffree des conversions par chemin, qui sert de reference."
+      },
+      {
+        "action": "Definir la conversion qui compte du point de vue des deux cotes de la marketplace, et la remonter jusqu'a son issue reelle.",
+        "livrable": "Un evenement d'issue fiable, distinct de la simple demande envoyee."
+      },
+      {
+        "action": "Construire le signal d'intention cote offre a partir des actions observees dans les outils du client, et non de ses declarations.",
+        "livrable": "Un score d'intention par annonce ou par vendeur, utilisable par le moteur."
+      },
+      {
+        "action": "Ouvrir un canal de recommandation sortant sur un segment restreint, avec un groupe temoin qui reste sur la recherche seule.",
+        "livrable": "Une comparaison lisible entre conversion incrementale et simple deplacement de trafic."
+      },
+      {
+        "action": "Boucler sur l'issue reelle et retirer du moteur les objets deja pourvus, pour que la recommandation ne pousse pas ce qui n'est plus disponible.",
+        "livrable": "Une boucle de reentrainement alimentee par les issues, pas par les clics."
+      },
+      {
+        "action": "Encadrer la pre-qualification automatique : criteres explicites, supervision humaine sur la decision finale, information de la personne evaluee.",
+        "livrable": "Un cadre ecrit opposable, condition d'un deploiement en Europe."
+      }
+    ]
+  },
+  "seo": {
+    "slug": "recruit-holdings-indeed-matching-ia-2026",
+    "title": "Indeed : la recommandation IA devant la recherche - 70 % des candidatures (2026)",
+    "meta_description": "Chez Indeed, 70 % des candidatures viennent des recommandations et outils IA, contre 30 % pour la recherche par mots-cles. Actifs mensuels +18 % en mars 2026.",
+    "resume_citable": "Le 15 mai 2026, Hisayuki Idekoba, CEO de Recruit Holdings, a indique que 70 % des candidatures sur Indeed viennent desormais des recommandations et des outils IA, contre 30 % pour la recherche par mots-cles ; les utilisateurs actifs mensuels ont atteint un record en mars 2026 avec 18 % de hausse sur un an, les employeurs utilisant Sponsored Jobs repondent 45 % plus vite aux candidats, et Indeed revendique 31 embauches par minute contre 27 auparavant.",
+    "faq": [
+      {
+        "q": "Quelle part des candidatures sur Indeed passe par l'IA ?",
+        "a": "70 %, selon le CEO de Recruit Holdings lors de la presentation des resultats du 15 mai 2026. La recherche par mots-cles, qui etait le chemin historique, n'apporte plus que 30 % des candidatures. Les 70 % restants viennent des offres proposees dans le flux, des emails et des pop-ups declenches par le moteur de matching."
+      },
+      {
+        "q": "Quels outils IA composent le dispositif ?",
+        "a": "Smart Sourcing remonte proactivement des candidats au recruteur, Smart Screening pre-qualifie les candidatures selon des criteres definis par l'employeur, Career Scout et les flux personnalises aident le candidat a decouvrir des postes, et Premium Sponsored Jobs porte la diffusion payante. Indeed a lance Sourcing Assistant en juin 2026."
+      },
+      {
+        "q": "Ces chiffres sont-ils verifies par un tiers ?",
+        "a": "Non. Ils viennent de la transcription officielle de l'appel resultats de Recruit Holdings et d'un communique Indeed publies le meme jour. La presse RH les reprend sans les auditer. Le chiffre de 31 embauches par minute est explicitement une donnee interne Indeed."
+      },
+      {
+        "q": "Le dispositif est-il transposable en Europe ?",
+        "a": "Oui avec des adaptations. L'AI Act classe en haut risque l'IA utilisee pour le ciblage des annonces d'emploi et le tri des candidatures, ce qui impose documentation, supervision humaine et information des personnes. Le RGPD encadre en plus la decision automatisee et le profilage."
+      }
+    ]
+  }
+}

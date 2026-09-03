@@ -1,0 +1,129 @@
+{
+  "seo": {
+    "title": "Target: AI-generated back-to-school wish lists - conversion on key pages up nearly 20% (2026)",
+    "meta_description": "Target plugged AI recommendations into its back-to-school wish lists: list creations up more than 50% and conversion on key pages up nearly 20%.",
+    "resume_citable": "For the 2026 back-to-school season, Target plugged AI recommendations into its teacher and back-to-college wish lists, on Target.com and in its app: wish list creations rose more than 50% year over year, items added to those lists more than doubled, and conversion on the key back-to-school pages rose nearly 20%, figures given by Target on its August 19, 2026 earnings call.",
+    "faq": [
+      {
+        "q": "What did Target put in place for the 2026 back-to-school season?",
+        "a": "AI recommendations on its teacher and back-to-college wish lists, on Target.com and in the app, to suggest items to add to the list being built and surface forgotten essentials. Personalized content on the app home screen shipped at the same time."
+      },
+      {
+        "q": "What results did Target report?",
+        "a": "On the second-quarter 2026 earnings call, held on August 19, 2026: total wish list creations up more than 50% year over year, items added to those lists more than doubled, conversion on the key back-to-school pages up nearly 20%."
+      },
+      {
+        "q": "Is traffic from outside AI platforms part of that result?",
+        "a": "No. The growth in digital traffic coming from outside AI platforms, more than 3.5 times faster than the industry year over year, is measured at the site level and comes from agentic commerce partnerships. It is market context, not a performance figure for the wish lists."
+      }
+    ]
+  },
+  "pattern": "AI recommendations plugged into the list a customer is building, inside a seasonal window",
+  "etape_parcours": "consideration",
+  "objectif_business": "Make list building the entry point of the back-to-school season: help a parent, a teacher or a student complete a list without forgetting an item, then turn that list into an order on the seasonal pages.",
+  "description": "For the 2026 back-to-school season, Target added AI recommendations to two lists its customers were already building by hand: a teacher's wish list and the gear list of a student leaving for college. On Target.com and in the app, the engine suggests items to add to the list in progress, with the goal of surfacing forgotten essentials. The feature was announced on June 24, 2026, alongside the opening of the back-to-school and back-to-college season, at the same time as personalized content on the app home screen. On August 19, 2026, on the second-quarter earnings call, Chief Merchandising Officer Cara Sylvester put numbers on the customer response: wish list creations up more than 50% year over year, items added to those lists more than doubled, conversion on the key back-to-school pages up nearly 20%. Target states these three figures right after citing the AI wish lists and the personalized home screen content together, without isolating the contribution of each piece. One point of context that should not be mistaken for a result of the feature: CEO Michael Fiddelke said on the same call that Target's digital traffic coming from outside AI platforms (OpenAI, Google Gemini and others, under agentic commerce partnerships) is growing more than 3.5 times faster than the industry year over year. That is an inbound market flow, measured at the site level, not the performance of the lists.",
+  "points_cles": [
+    "Target plugged AI recommendations into its teacher and back-to-college wish lists for the 2026 back-to-school season.",
+    "Rolled out on Target.com and in the app, with personalized content on the home screen.",
+    "Wish list creations up more than 50% year over year, items added more than doubled.",
+    "Conversion on the key back-to-school pages up nearly 20%, figures given on an earnings call."
+  ],
+  "resultats": [
+    {
+      "metrique": "Total wish list creations year over year, 2026 back-to-school season"
+    },
+    {
+      "metrique": "Items added to those lists, year over year"
+    },
+    {
+      "metrique": "Conversion on the key back-to-school pages, year over year"
+    }
+  ],
+  "niveau_preuve": {
+    "justification": "The three figures come from the official transcript of Target's second-quarter 2026 earnings call (LSEG StreetEvents, published by Target on corporate.target.com, call held on August 19, 2026), where the Chief Merchandising Officer states them herself. They are repeated in the Q2 2026 Earnings Highlights document Target published the same day, and the feature is described in the official June 24, 2026 press release that opens the season. The business press (PYMNTS) confirmed the more than 50% rise in list creations on the day of the call. Earnings communication, primary source, several concurring sources."
+  },
+  "stack_technique": [
+    {
+      "detail": "Item recommendations plugged into the teacher and back-to-college wish lists, on Target.com and in the app. Target discloses neither the model nor the vendor."
+    },
+    {
+      "detail": "The persistent list object attached to the account, already in place, that the recommendation engine plugs into."
+    }
+  ],
+  "fonctionnement_operationnel": {
+    "cadence": "Seasonal: the feature opens with the back-to-school and back-to-college season and plays out over a few weeks. Suggestions are computed as the list is built.",
+    "opere_par": "Target's digital merchandising and tech teams, with the season's merchants who own the assortment and the pages.",
+    "signal_pilote": "The list in progress and the account it is attached to. If the list is empty and the account has no history, the recommendation has little left to work with and falls back on standard seasonal lists.",
+    "etapes": [
+      {
+        "etape": "Opening the list",
+        "detail": "The customer creates a teacher wish list or a back-to-college list on Target.com or in the app.",
+        "acteur": "Customer"
+      },
+      {
+        "etape": "Item suggestions",
+        "detail": "The engine proposes items to add, to surface forgotten essentials and seasonal ideas.",
+        "acteur": "AI"
+      },
+      {
+        "etape": "Personalizing the app entry point",
+        "detail": "The app home screen serves personalized content during the back-to-school window.",
+        "acteur": "Platform"
+      },
+      {
+        "etape": "From list to order",
+        "detail": "The key back-to-school and back-to-college pages carry the conversion of the lists that have been built.",
+        "acteur": "Platform and merchandising"
+      },
+      {
+        "etape": "Measurement",
+        "detail": "Target tracks three counters: list creations, items added per list, conversion on the season's key pages.",
+        "acteur": "Merchandising and data"
+      }
+    ]
+  },
+  "replication": {
+    "prerequis_data": [
+      "customer account with purchase and browsing history",
+      "persistent list object attached to the account (wish list, registry)",
+      "product catalog finely attributed on season and grade level",
+      "conversion measurement that can be isolated at the seasonal page level"
+    ],
+    "prerequis_orga": [
+      "a merchandising team that owns the season, its assortment and its pages",
+      "ability to ship the feature before the seasonal window opens, not during it",
+      "prior agreement on which counters to track and on what may be attributed to them"
+    ],
+    "stack_possible": [
+      "product recommendation engine, in-house or a personalization platform",
+      "the site's list and registry engine",
+      "personalized content tool on the app home screen"
+    ],
+    "equipe": "A digital merchandising PM who owns the list object, a recommendation profile on the data side, a front-end developer for the list and the app home screen, with the season's merchants as sponsors.",
+    "playbook": [
+      {
+        "action": "Identify the existing list moments in the journey (back-to-school, holidays, baby, moving) and measure how many lists are created and abandoned empty.",
+        "livrable": "Map of list moments with a volume and an abandonment rate for each."
+      },
+      {
+        "action": "Pick one season and enrich the product catalog with the attributes the recommendation needs to complete a list, not just to propose a similar product.",
+        "livrable": "Season assortment attributed and usable by a completion engine."
+      },
+      {
+        "action": "Plug a recommendation engine into the list in progress, with the intent of completing what is missing, and test it on part of the traffic against a control group.",
+        "livrable": "Suggestions in production on a subset, read against a control."
+      },
+      {
+        "action": "Instrument the three counters (list creations, items added, conversion on the season's pages) before the window opens, and separate the contribution of the list recommendation from that of the personalized content if both ship together.",
+        "livrable": "Read per component, decision on whether to run it again next season."
+      }
+    ],
+    "premiere_etape": "Spot the list your customers already build by hand during a strong season, then plug the recommendation into that list object rather than into the product page."
+  },
+  "statut_vivant": {
+    "note": "Seasonal feature. As of August 19, 2026, Target describes it as active and not finished: management refers to important weeks still ahead before the season ends. It remains to be confirmed whether it is run again or extended to other list moments (holidays, baby registries) in 2027."
+  },
+  "transposable_ue": {
+    "note": "The recommendations rely on the customer account and on the list being built. In the EU, marketing profiling tied to an account requires a legal basis and GDPR consent. A teacher list meant to be shared exposes data attributable to an identified person: minimization and control of sharing need to be framed. A product recommendation engine does not qualify as high risk under the AI Act."
+  }
+}

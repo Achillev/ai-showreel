@@ -1,0 +1,127 @@
+{
+  "seo": {
+    "title": "KE Holdings: AI-assisted client manager - 7.4% lead to showing conversion (2026)",
+    "meta_description": "KE Holdings inserted an AI-assisted client manager ahead of the agent: 50,000 leads from May to July 2026, 7.4% conversion versus 5% for the market.",
+    "resume_citable": "From May to July 2026, the AI-assisted client manager role at KE Holdings (Beike, Lianjia) handled more than 50,000 real estate leads with a 7.4% lead to showing conversion rate, versus the 5% market average cited by CEO Stanley Peng.",
+    "faq": [
+      {
+        "q": "What is the KE Holdings client manager?",
+        "a": "A human role, assisted by AI, inserted between the inbound lead and the real estate agent. The AI organizes the prospect data, the client manager assesses the customer's journey stage and needs, then the agent receives an already profiled customer. This role is not paid on transactions."
+      },
+      {
+        "q": "What does the 7.4% rate measure?",
+        "a": "The conversion of the leads handled by this role into a property showing, from May to July 2026, across more than 50,000 leads. The CEO compares it to 5% for the market. KE Holdings publishes neither the definition of that market average nor the composition of the leads assigned to the setup."
+      },
+      {
+        "q": "Does the 100.8% rise in net income come from this setup?",
+        "a": "No. The rise in net income and the non-GAAP net margin at a three-year high are attributed by management to cost optimizations and a favorable business mix. They are not presented as an effect of the client manager."
+      }
+    ]
+  },
+  "pattern": "a dedicated human role, assisted by AI, inserted between the inbound lead and the sales agent",
+  "etape_parcours": "consideration",
+  "objectif_business": "Convert more inbound leads into property showings, by no longer losing track of the prospect at the point of handoff to an agent, and by assigning qualification to a role paid outside transaction commission.",
+  "description": "KE Holdings operates Beike and Lianjia, the largest real estate transaction platform in China, with 60,274 stores as of June 30, 2026. On the second quarter 2026 earnings call, CEO Stanley Peng described a new role in the lead handling chain: the client manager. It answers a follow-up gap he names explicitly, the platform losing information as soon as a lead reaches an agent. The division of labor is described in these terms: the AI organizes the data, a human assesses the customer's journey stage and needs, and the agent receives a fully profiled customer. The structuring point is not technical but about pay: the client manager is not paid on transactions, which Peng repeats twice in the same passage, and that is what is presented as the guarantee of objectivity when the role routes or sets aside a case. Over the May to July 2026 window, the role handled more than 50,000 leads with a 7.4% lead to showing conversion rate, versus 5% for the market according to Peng. Two caveats matter when reading that figure. The measurement window runs past the calendar quarter, which ends in late June. And KE Holdings publishes neither the definition of its market average, nor the composition of the leads assigned to the setup, nor the share of its total flow that these 50,000 leads represent. The same quarter shows net income up 100.8% year over year and a non-GAAP net margin at a three-year high: those results are the company's, attributed by management to cost optimizations and a favorable business mix, and are not presented as an effect of the client manager.",
+  "points_cles": [
+    "KE Holdings created an AI-assisted client manager role, placed between the inbound lead and the real estate agent.",
+    "The AI organizes the data, a human assesses the customer's stage and needs, the agent receives a fully profiled customer.",
+    "From May to July 2026, more than 50,000 leads handled and 7.4% lead to showing conversion, versus 5% for the market.",
+    "Evidence level A: figures stated by CEO Stanley Peng on the Q2 2026 earnings call, on August 21, 2026."
+  ],
+  "resultats": [
+    {
+      "metrique": "Lead to showing conversion rate of the leads handled by the client manager, versus 5% for the market according to KE Holdings"
+    },
+    {
+      "metrique": "Volume of leads handled by the role over the May to July 2026 window"
+    }
+  ],
+  "niveau_preuve": {
+    "justification": "Figures stated by the Chairman and CEO of KE Holdings during the Q2 2026 earnings call of August 21, 2026, as part of financial reporting, and verifiable in verbatim transcripts from two publishers. The volume, the rate and the measurement window are tied explicitly to the client manager role, not to the group's overall results."
+  },
+  "stack_technique": [
+    {
+      "detail": "KE Holdings' proprietary real estate transaction platform. It is what collects the lead and what, until now, lost visibility on the prospect once that prospect was handed to an agent."
+    }
+  ],
+  "fonctionnement_operationnel": {
+    "cadence": "Continuous on the inbound lead flow; management reports a three-month cumulative figure, from May to July 2026",
+    "opere_par": "A dedicated body of client managers, paid outside transaction commission, attached to the Beike platform teams",
+    "signal_pilote": "The move from lead to property showing. That is the published metric (7.4% versus 5% for the market). It only exists if the prospect is still tracked after the handoff to the agent: that is precisely the gap Peng describes before the role was introduced.",
+    "etapes": [
+      {
+        "etape": "Lead arrives",
+        "detail": "A buyer or a seller makes contact through the Beike platform or the Lianjia network.",
+        "acteur": "customer"
+      },
+      {
+        "etape": "Structuring of the prospect data",
+        "detail": "The AI layer organizes the available data on the prospect and the prospect's project.",
+        "acteur": "AI"
+      },
+      {
+        "etape": "Human qualification",
+        "detail": "The client manager assesses the customer's journey stage and needs. This role is not paid on transactions, which leaves it free to set a case aside or to wait.",
+        "acteur": "client manager"
+      },
+      {
+        "etape": "Handoff to the agent",
+        "detail": "The real estate agent receives an already profiled customer and no longer has to redo the framing work.",
+        "acteur": "real estate agent"
+      },
+      {
+        "etape": "Conversion measurement",
+        "detail": "The platform tracks what becomes of the lead up to the property showing and compares its rate to the market average.",
+        "acteur": "data team"
+      }
+    ]
+  },
+  "replication": {
+    "prerequis_data": [
+      "History of inbound leads with their outcome all the way to the showing, and not only up to assignment to a salesperson",
+      "Usable prospect project data tied to a stable identifier across the whole journey",
+      "A market or internal conversion benchmark to compare the setup against, with its definition written down before measurement starts"
+    ],
+    "prerequis_orga": [
+      "Accepting a role inserted between the lead and the salesperson, and therefore sharing a contact that the sales teams see as theirs",
+      "A pay model for the qualification role that is decoupled from transaction volume",
+      "A written rule for what counts as a profiled case that can be handed over",
+      "A right for the platform to keep tracking the lead after the handoff to the salesperson"
+    ],
+    "stack_possible": [
+      "Automatic structuring layer for prospect data, plugged into the CRM",
+      "Qualification workstation giving the human role a consolidated view of the prospect",
+      "Conversion measurement by lead cohort, from first contact to the chosen mid-journey event"
+    ],
+    "equipe": "A sales operations lead who owns the qualification role and arbitrates with the sales teams, a data profile for cohort conversion tracking, a product or data engineering profile for the prospect data structuring layer.",
+    "playbook": [
+      {
+        "action": "Reconstruct the inbound lead journey up to the event that precedes the sale, and identify where tracking breaks down.",
+        "livrable": "A quantified baseline conversion rate, and the point where tracking breaks."
+      },
+      {
+        "action": "Define the qualification role: what it decides, what it hands over, and what it is paid on.",
+        "livrable": "Job description and a pay rule decoupled from closings."
+      },
+      {
+        "action": "Automate the structuring of prospect data upstream of that role, without taking the decision away from it.",
+        "livrable": "Consolidated prospect file, presented to the qualifier on open."
+      },
+      {
+        "action": "Open the setup on a subset of leads and compare its conversion to the baseline, at comparable lead composition.",
+        "livrable": "Cohort-level reading, with lead composition documented from the start."
+      },
+      {
+        "action": "Extend to other lead sources while keeping the conversion measurement and the handoff rule to the salesperson.",
+        "livrable": "Extended setup and conversion tracking sustained over time."
+      }
+    ],
+    "premiere_etape": "Measure the current conversion of inbound leads up to the mid-journey event that matters for you, and check whether that tracking survives the handoff of the lead to a salesperson. If the information stops there, that is the gap to close before any AI."
+  },
+  "statut_vivant": {
+    "note": "Role presented as in production and quantified on the earnings call of August 21, 2026. The results release filed with the SEC the same day speaks of AI in general terms, without naming the client manager or repeating its figures: verification rests on the executive's words in financial results and on the verbatim transcripts."
+  },
+  "transposable_ue": {
+    "note": "The setup runs in China, on the Beike platform and the Lianjia network. The pattern, an AI layer that structures the prospect data before a dedicated human role qualifies the prospect and passes it to the agent, transposes to the EU. It requires a GDPR legal basis for profiling the real estate prospect, clear information about how the profile handed to the agent is built, and a defined retention period for lead data. The qualification decision stays human, which limits exposure to the rules on automated decision-making."
+  }
+}
