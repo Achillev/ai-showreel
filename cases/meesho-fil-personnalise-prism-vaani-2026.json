@@ -1,0 +1,341 @@
+{
+  "id": "meesho-fil-personnalise-prism-vaani-2026",
+  "type_fiche": "succes",
+  "marque": "Meesho",
+  "groupe": "Meesho Limited",
+  "industrie": "retail_ecom",
+  "marches_deploiement": [
+    "Inde"
+  ],
+  "transposable_ue": {
+    "flag": "oui_avec_adaptations",
+    "note": "Le fil de PRISM s'appuie sur le profil long terme et le comportement en session de chaque utilisateur : en UE, ce profilage marketing demande une base legale RGPD et une information claire, et le DSA impose aux grandes plateformes de proposer au moins une option de recommandation non fondee sur le profilage. Vaani traite la voix du client ; Meesho indique que le traitement de la parole tourne sur l'appareil, ce qui limite les transferts, mais la conservation des conversations (memoire episodique annoncee) serait a cadrer. Un agent d'achat conversationnel est soumis aux obligations de transparence de l'AI Act (l'utilisateur doit savoir qu'il parle a une IA)."
+  },
+  "metier": "e-commerce / produit et decouverte",
+  "logo_domain": "meesho.com",
+  "intervenants": [
+    {
+      "nom": "Vidit Aatrey",
+      "role": "Fondateur et CEO, Meesho",
+      "source_ref": "S1"
+    }
+  ],
+  "axes": {
+    "levier": "activation_conversion",
+    "touchpoints": [
+      "fil d'accueil de l'application Meesho",
+      "flux de decouverte personnalises",
+      "assistant d'achat vocal Vaani dans l'app"
+    ],
+    "etape_parcours": "consideration",
+    "famille": "personnalisation",
+    "pattern": "fil de decouverte personnalise par IA qui remplace la recherche par mots-cles, complete par un agent d'achat vocal multilingue",
+    "type_ia": [
+      "systemes de recommandation",
+      "modeles de classement (deep learning)",
+      "LLM",
+      "agent conversationnel vocal"
+    ],
+    "plateforme_stack": [
+      "custom/in-house",
+      "PRISM",
+      "Trendpulse",
+      "Vaani",
+      "BharatMLStack"
+    ],
+    "objectif_metrique": [
+      "part des commandes issues des fils personnalises",
+      "taux de conversion",
+      "temps de demarrage des nouvelles annonces vendeurs",
+      "conversion des adoptants de Vaani"
+    ]
+  },
+  "implementation": "custom",
+  "objectif_business": "Faire acheter en ligne des consommateurs indiens qui ne savent pas ou ne veulent pas taper une requete, souvent en langue locale et pour leur premier achat : le fil devine l'intention a leur place, et la voix remplace la barre de recherche pour ceux qui preferent parler.",
+  "points_cles": [
+    "Meesho a remplace la recherche par un fil d'accueil classe par son moteur maison PRISM.",
+    "Plus de 75 % des commandes viennent de ces fils, selon la lettre aux actionnaires de mai 2026.",
+    "PRISM a ameliore la conversion d'environ 15 % en un an ; Vaani, l'agent vocal, +22 % chez ses adoptants.",
+    "Chiffres publies dans une lettre deposee en bourse ; PRISM est encore cite en juillet 2026."
+  ],
+  "description": "Meesho, place de marche indienne qui revendique 264 millions d'acheteurs annuels a fin mars 2026, part d'un constat expose dans sa lettre aux actionnaires du 6 mai 2026 : la plupart de ses clients arrivent sans produit precis en tete et ne tapent pas de requete. Son systeme de recommandation PRISM (Personalised Ranking and Intent Signal Module) construit donc l'essentiel du parcours a partir d'un fil de decouverte personnalise plutot que de la barre de recherche. Selon la lettre, PRISM combine plus de 100 modeles de classement (jusqu'a 300 millions de parametres), lit le profil long terme de l'utilisateur et son comportement dans la session, et execute plus de 6 000 milliards d'inferences par jour. Un module, Trendpulse, utilise des LLM pour reperer des pics de recherche regionaux et en tirer des tendances culturelles a pousser dans les fils. Meesho chiffre trois effets : plus de 75 % des commandes viennent de ces fils personnalises, la conversion a progresse d'environ 15 % sur un an grace aux evolutions de PRISM, et le temps qu'il faut a une nouvelle annonce vendeur pour trouver ses premiers acheteurs a baisse d'environ 27 %. Le second dispositif, Vaani, est un agent d'achat vocal lance au quatrieme trimestre de l'exercice 2026 (janvier a mars 2026). L'utilisateur decrit ce qu'il cherche dans sa langue, pose des questions, et l'agent enchaine recherche dans le catalogue, avis clients en cas d'hesitation, paiement et confirmation ; la reconnaissance vocale tourne sur le telephone pour tenir sur des reseaux lents. Meesho annonce 1,5 million d'utilisateurs le premier mois, une conversion en hausse de 22 % chez ceux qui l'ont adopte, et 79 % d'utilisateurs declarant que la voix rend l'achat plus simple. Lors de l'appel avec les analystes, le CEO Vidit Aatrey ajoute que Vaani a permis de convertir davantage de clients ruraux et a fait baisser le cout d'acquisition, sans chiffre. Deux reserves : les +15 % et +22 % sont des mesures internes dont la methode (groupe temoin, periode) n'est pas publiee, et le +22 % porte sur des adoptants volontaires, une population qui convertit sans doute deja mieux que la moyenne.",
+  "resultats": [
+    {
+      "metrique": "Part des commandes Meesho issues des fils personnalises par IA (PRISM), au T4 de l'exercice 2026",
+      "valeur": "75%+",
+      "citation_exacte": "The number that matters: 75%+ of orders on Meesho come from AI-driven personalized feeds.",
+      "source_ref": "S1"
+    },
+    {
+      "metrique": "Amelioration de la conversion attribuee aux evolutions de PRISM sur l'annee",
+      "valeur": "c.15%",
+      "citation_exacte": "advances in PRISM have improved conversion by c.15%",
+      "source_ref": "S1"
+    },
+    {
+      "metrique": "Baisse du temps de demarrage (time-to-traction) des nouvelles annonces vendeurs",
+      "valeur": "-27% environ",
+      "citation_exacte": "PRISM has reduced time-to-traction for new product listings by c.27%",
+      "source_ref": "S1"
+    },
+    {
+      "metrique": "Utilisateurs de l'agent vocal Vaani le premier mois",
+      "valeur": "1,5M",
+      "citation_exacte": "Vaani crossed 1.5M users in the first month",
+      "source_ref": "S1"
+    },
+    {
+      "metrique": "Hausse de conversion chez les utilisateurs ayant adopte Vaani (adoptants volontaires, methode non publiee)",
+      "valeur": "+22%",
+      "citation_exacte": "Conversion improved 22% for those who adopted",
+      "source_ref": "S1"
+    }
+  ],
+  "niveau_preuve": {
+    "niveau": "A",
+    "justification": "Les chiffres viennent de la lettre aux actionnaires du T4 de l'exercice 2026 deposee par Meesho Limited aupres du NSE le 6 mai 2026, sont repris dans le communique de resultats depose le meme jour et commentes par le CEO dans la transcription officielle de l'appel aux analystes ; Outlook Business les rapporte le jour meme. Communication financiere d'une societe cotee, plusieurs sources concordantes."
+  },
+  "dates": {
+    "lancement": "PRISM en production avant l'exercice 2026 (date de lancement non publiee) ; Vaani lance au T4 de l'exercice 2026, soit entre janvier et mars 2026",
+    "derniere_confirmation_activite": "23 juillet 2026 (lettre aux actionnaires du T1 de l'exercice 2027 : les evolutions de PRISM continuent d'ameliorer la conversion)",
+    "verifie_le": "2026-10-05",
+    "revoir_apres": "2027-04-05"
+  },
+  "statut_vivant": {
+    "statut": "confirme",
+    "note": "La lettre du 23 juillet 2026 cite encore PRISM comme moteur de la conversion, sans nouveau chiffre. Vaani n'y est pas nomme : sa trajectoire apres le premier mois reste a verifier au prochain trimestre."
+  },
+  "sources": [
+    {
+      "ref": "S1",
+      "type": "document_officiel_sec",
+      "fiabilite": "T1_primaire",
+      "titre": "Meesho Limited - Shareholders' Letter for Q4 and year ended March 31, 2026 (depot NSE)",
+      "url": "https://nsearchives.nseindia.com/corporate/MEESHO_06052026171413_IntimationShareholdersresult0605.pdf",
+      "date_publication": "2026-05-06",
+      "consulte_le": "2026-10-05"
+    },
+    {
+      "ref": "S2",
+      "type": "blog_officiel",
+      "fiabilite": "T1_primaire",
+      "titre": "Meesho Limited - Press Release, Q4 FY26 and full year results (depot NSE)",
+      "url": "https://nsearchives.nseindia.com/corporate/MEESHO_06052026171858_MLPress_Release.pdf",
+      "date_publication": "2026-05-06",
+      "consulte_le": "2026-10-05"
+    },
+    {
+      "ref": "S3",
+      "type": "earnings_call",
+      "fiabilite": "T1_primaire",
+      "titre": "Meesho Limited - Transcript of the Q4 FY26 earnings conference call (depot NSE)",
+      "url": "https://nsearchives.nseindia.com/corporate/MEESHO_12052026175613_MLtranscript.pdf",
+      "date_publication": "2026-05-12",
+      "consulte_le": "2026-10-05"
+    },
+    {
+      "ref": "S4",
+      "type": "document_officiel_sec",
+      "fiabilite": "T1_primaire",
+      "titre": "Meesho Limited - Shareholders' Letter, Q1 FY2027 (dated July 23, 2026)",
+      "url": "https://static-assets.meesho.com/investor-relations/1784806298911/Q1ShareholdersLetter.pdf",
+      "date_publication": "2026-07-23",
+      "consulte_le": "2026-10-05"
+    },
+    {
+      "ref": "S5",
+      "type": "presse",
+      "fiabilite": "T3_presse_etablie",
+      "titre": "Meesho Q4 Loss Narrows 88% as Revenue Jumps 47%",
+      "url": "https://www.outlookbusiness.com/corporate/meesho-q4-loss-narrows-88-as-revenue-jumps-47",
+      "date_publication": "2026-05-06",
+      "consulte_le": "2026-10-05"
+    }
+  ],
+  "fonctionnement_operationnel": {
+    "cadence": "Temps reel pour le classement du fil (chaque inference en quelques millisecondes selon Meesho) ; les modeles se reentrainent sur les donnees d'usage, a une frequence non publiee.",
+    "opere_par": "Equipes produit, data science et ML de Meesho, sur la plateforme interne BharatMLStack ; aucun prestataire externe n'est cite.",
+    "signal_pilote": "Le comportement de navigation et d'achat : profil long terme plus signaux de la session en cours, completes par les pics de recherche regionaux pour Trendpulse. Sans historique (nouvel utilisateur, nouvelle annonce), le fil a peu a exploiter ; c'est le cas du demarrage a froid que Meesho dit avoir reduit d'environ 27 % cote vendeurs.",
+    "etapes": [
+      {
+        "etape": "Collecte des signaux",
+        "detail": "Chaque vue produit, ajout, commande, note et retour alimente le profil de l'utilisateur et les donnees d'entrainement.",
+        "acteur": "Plateforme"
+      },
+      {
+        "etape": "Classement du fil",
+        "detail": "PRISM classe les produits a afficher dans le fil d'accueil a partir du profil et de l'intention estimee dans la session.",
+        "acteur": "IA"
+      },
+      {
+        "etape": "Detection de tendances",
+        "detail": "Trendpulse lit les pics de recherche regionaux avec des LLM et en tire des tendances a pousser dans les fils avant que la demande ne soit exprimee.",
+        "acteur": "IA"
+      },
+      {
+        "etape": "Parcours vocal",
+        "detail": "Pour l'utilisateur qui choisit Vaani, l'agent comprend la demande dans sa langue, cherche dans le catalogue, montre des avis en cas d'hesitation et guide jusqu'au paiement.",
+        "acteur": "IA et client"
+      },
+      {
+        "etape": "Mesure et experimentation",
+        "detail": "Les equipes suivent la part des commandes issues des fils, la conversion et le demarrage des nouvelles annonces ; Meesho indique avoir double le nombre d'experiences sur la plateforme au T4 par rapport a l'annee precedente.",
+        "acteur": "Equipes produit et data"
+      }
+    ]
+  },
+  "schema_flow": {
+    "statut": "approche_type",
+    "noeuds": [
+      {
+        "id": "n1",
+        "role_generique": "data_source",
+        "label": "Signaux de navigation, d'achat et de recherche regionale"
+      },
+      {
+        "id": "n2",
+        "role_generique": "modele_ia",
+        "label": "PRISM : modeles de classement du fil",
+        "outil_documente": "PRISM"
+      },
+      {
+        "id": "n3",
+        "role_generique": "modele_ia",
+        "label": "Trendpulse : detection de tendances par LLM",
+        "outil_documente": "Trendpulse"
+      },
+      {
+        "id": "n4",
+        "role_generique": "canal_conversationnel",
+        "label": "Vaani : agent d'achat vocal multilingue",
+        "outil_documente": "Vaani"
+      },
+      {
+        "id": "n5",
+        "role_generique": "site_app",
+        "label": "Application Meesho : fil d'accueil et parcours d'achat"
+      },
+      {
+        "id": "n6",
+        "role_generique": "humain",
+        "label": "Acheteur"
+      }
+    ],
+    "liens": [
+      [
+        "n1",
+        "n2"
+      ],
+      [
+        "n1",
+        "n3"
+      ],
+      [
+        "n3",
+        "n2",
+        "tendances injectees"
+      ],
+      [
+        "n2",
+        "n5",
+        "fil classe"
+      ],
+      [
+        "n4",
+        "n5",
+        "achat par la conversation"
+      ],
+      [
+        "n5",
+        "n6"
+      ],
+      [
+        "n6",
+        "n1",
+        "chaque interaction devient donnee d'entrainement"
+      ]
+    ]
+  },
+  "stack_technique": [
+    {
+      "nom": "PRISM (Personalised Ranking and Intent Signal Module)",
+      "categorie": "plateforme",
+      "detail": "Systeme de recommandation interne : plus de 100 modeles de classement, jusqu'a 300 millions de parametres, plus de 6 000 milliards d'inferences par jour selon la lettre aux actionnaires."
+    },
+    {
+      "nom": "Trendpulse",
+      "categorie": "outil",
+      "detail": "Module de PRISM qui utilise des LLM pour transformer des pics de recherche regionaux en tendances a pousser. Les LLM employes ne sont pas nommes."
+    },
+    {
+      "nom": "Vaani",
+      "categorie": "outil",
+      "detail": "Agent d'achat vocal interne qui orchestre plusieurs systemes agentiques ; traitement de la parole sur l'appareil. Modeles sous-jacents non publies."
+    },
+    {
+      "nom": "BharatMLStack",
+      "categorie": "infra",
+      "detail": "Plateforme ML interne de Meesho, publiee en open source sur GitHub ; Meesho la dit 60 a 70 % moins chere en inference que des services cloud equivalents."
+    }
+  ],
+  "replication": {
+    "statut_epistemique": "infere",
+    "prerequis_data": [
+      "historique de navigation et d'achat a l'echelle, rattache a un identifiant utilisateur",
+      "signaux de session collectes en temps reel (vues, ajouts, abandons)",
+      "catalogue attribue proprement, y compris pour les nouvelles annonces sans historique",
+      "pour la voix : donnees de reconnaissance vocale dans les langues de la clientele"
+    ],
+    "prerequis_orga": [
+      "decider que l'accueil de l'app est un fil classe et non une page editoriale fixe",
+      "equipe ML capable d'operer un classement en temps reel et de le faire evoluer par experiences A/B",
+      "politique de mesure avec groupe temoin pour separer l'effet du fil de celui de l'acquisition"
+    ],
+    "stack_possible": [
+      "moteur de recommandation maison ou plateforme de personnalisation e-commerce",
+      "feature store et service d'inference temps reel",
+      "LLM pour la lecture des tendances de recherche",
+      "briques de reconnaissance et de synthese vocale multilingues avec un LLM orchestrateur"
+    ],
+    "premiere_etape": "Mesurer quelle part des commandes passe aujourd'hui par la recherche et quelle part par la navigation, puis tester un fil d'accueil classe par modele contre l'accueil actuel sur une partie du trafic.",
+    "playbook": [
+      {
+        "action": "Instrumenter l'origine de chaque commande (recherche, fil, categorie, lien externe) pour connaitre le point de depart.",
+        "livrable": "Repartition des commandes par point d'entree."
+      },
+      {
+        "action": "Construire un premier modele de classement sur l'historique d'achat et l'enrichir des signaux de session.",
+        "livrable": "Fil d'accueil personnalise teste contre l'accueil existant."
+      },
+      {
+        "action": "Traiter le demarrage a froid des nouveaux produits avec une part d'exploration dans le fil, et suivre leur temps jusqu'a la premiere vente.",
+        "livrable": "Indicateur de time-to-traction des nouvelles annonces."
+      },
+      {
+        "action": "Ajouter un canal vocal ou conversationnel pour les segments qui ne tapent pas de requete, en le mesurant contre un groupe temoin plutot que sur les seuls adoptants.",
+        "livrable": "Lecture de l'effet incremental de l'agent conversationnel."
+      }
+    ],
+    "equipe": "Un responsable produit decouverte, des ingenieurs ML pour le classement et l'inference temps reel, un profil data pour la mesure incrementale, et pour la voix une equipe parole et LLM."
+  },
+  "seo": {
+    "slug": "meesho-fil-personnalise-prism-vaani-2026",
+    "title": "Meesho : fil personnalise par IA et agent vocal Vaani - plus de 75 % des commandes issues du fil (2026)",
+    "meta_description": "Meesho remplace la recherche par un fil classe par son moteur PRISM : plus de 75 % des commandes, conversion +15 % ; l'agent vocal Vaani, +22 % chez ses adoptants.",
+    "resume_citable": "Selon sa lettre aux actionnaires du 6 mai 2026, plus de 75 % des commandes de Meesho viennent de fils personnalises par son moteur PRISM, dont les evolutions ont ameliore la conversion d'environ 15 % en un an, et son agent d'achat vocal Vaani a touche 1,5 million d'utilisateurs le premier mois avec une conversion en hausse de 22 % chez ses adoptants.",
+    "faq": [
+      {
+        "q": "Qu'est-ce que PRISM chez Meesho ?",
+        "a": "Le systeme de recommandation interne de Meesho (Personalised Ranking and Intent Signal Module). Il classe le fil de decouverte de chaque utilisateur a partir de son profil et de son comportement en session ; plus de 75 % des commandes en viennent selon la lettre aux actionnaires de mai 2026."
+      },
+      {
+        "q": "Qu'est-ce que Vaani ?",
+        "a": "Un agent d'achat vocal lance entre janvier et mars 2026 : l'utilisateur decrit ce qu'il veut dans sa langue et l'agent le guide jusqu'au paiement. Meesho annonce 1,5 million d'utilisateurs le premier mois et une conversion en hausse de 22 % chez les adoptants."
+      },
+      {
+        "q": "Les gains de conversion sont-ils mesures contre un groupe temoin ?",
+        "a": "Meesho ne publie pas la methode. Le +22 % de Vaani porte sur des utilisateurs qui ont choisi l'outil, ce qui peut gonfler l'ecart par rapport a la moyenne."
+      }
+    ]
+  }
+}

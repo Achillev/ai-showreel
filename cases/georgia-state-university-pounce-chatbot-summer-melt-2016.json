@@ -1,0 +1,360 @@
+{
+  "id": "georgia-state-university-pounce-chatbot-summer-melt-2016",
+  "type_fiche": "succes",
+  "marque": "Georgia State University",
+  "industrie": "education",
+  "marches_deploiement": [
+    "Etats-Unis (Georgie : campus d'Atlanta et Perimeter College)"
+  ],
+  "transposable_ue": {
+    "flag": "oui_avec_adaptations",
+    "note": "Le dispositif repose sur des SMS envoyes a des admis et sur la donnee d'avancement de leur dossier (aide financiere, logement, inscription aux cours). En UE, l'envoi de SMS proactifs demande une base legale claire et une information au moment de la collecte du numero (RGPD, regles ePrivacy sur les communications electroniques). L'AI Act impose de signaler a l'utilisateur qu'il parle a un systeme d'IA, ce que le nom de mascotte ne suffit pas a faire. La question des mineurs se pose pour les admis qui n'ont pas encore 18 ans. Le principe (relance personnalisee par tache manquante, escalade vers un humain) n'a rien de specifique aux Etats-Unis, mais le probleme d'origine (formulaire FAFSA, depots de garantie) est propre au systeme americain : la liste des taches est a reconstruire pour chaque pays."
+  },
+  "metier": "admissions / marketing de recrutement etudiant (conversion des admis en inscrits)",
+  "logo_domain": "gsu.edu",
+  "intervenants": [
+    {
+      "nom": "Scott Burke",
+      "role": "Assistant vice president of undergraduate admissions, Georgia State University",
+      "source_ref": "S3"
+    },
+    {
+      "nom": "Lindsay C. Page",
+      "role": "Chercheuse en politique educative, co-autrice de l'essai randomise (University of Pittsburgh au moment de l'essai, puis Brown University)",
+      "source_ref": "S1"
+    },
+    {
+      "nom": "Hunter Gehlbach",
+      "role": "Chercheur, co-auteur de l'essai randomise (UC Santa Barbara au moment de l'essai)",
+      "source_ref": "S1"
+    },
+    {
+      "nom": "Tim Renick",
+      "role": "Directeur executif fondateur du National Institute for Student Success de Georgia State",
+      "source_ref": "S4"
+    }
+  ],
+  "agences": [
+    {
+      "nom": "AdmitHub (devenu Mainstay)",
+      "role": "Editeur qui a concu et opere Pounce : technologie d'IA conversationnelle par SMS, equipe qui supervise l'apprentissage de l'assistant et traite une partie des messages.",
+      "source_ref": "S5"
+    }
+  ],
+  "axes": {
+    "levier": "activation_conversion",
+    "touchpoints": [
+      "SMS sur le telephone mobile de l'admis (conversation bidirectionnelle)",
+      "relances proactives liees aux taches d'inscription (aide financiere, logement, inscription aux cours, envoi des scores)",
+      "escalade vers le personnel des admissions pour les questions non resolues"
+    ],
+    "etape_parcours": "achat",
+    "famille": "conversation",
+    "pattern": "assistant conversationnel par SMS qui relance chaque prospect sur l'etape precise ou il bloque, alimente par la donnee d'avancement de son dossier",
+    "type_ia": [
+      "IA conversationnelle (comprehension de questions en langage naturel et reponses automatiques)",
+      "personnalisation des relances selon les taches non completees"
+    ],
+    "plateforme_stack": [
+      "AdmitHub / Mainstay (assistant conversationnel par SMS)",
+      "donnees d'avancement du dossier des admis (systemes de Georgia State)"
+    ],
+    "objectif_metrique": [
+      "taux d'inscription effective des admis a la rentree (inverse du summer melt)",
+      "taux de completion des etapes avant inscription",
+      "charge de travail du personnel des admissions"
+    ]
+  },
+  "implementation": "hybride",
+  "stack_technique": [
+    {
+      "nom": "Mainstay (anciennement AdmitHub)",
+      "categorie": "plateforme",
+      "detail": "Assistant conversationnel par SMS concu sur mesure pour Georgia State et baptise Pounce, du nom de la mascotte. L'equipe de l'editeur supervise l'apprentissage de l'assistant.",
+      "url": "https://mainstay.com"
+    }
+  ],
+  "objectif_business": "Reduire le summer melt, c'est-a-dire la part d'admis qui ont confirme leur venue au printemps mais ne se presentent pas a la rentree. A Georgia State, ce taux etait monte d'environ 12 % a pres de 19 % selon Campus Technology, et le courrier, l'e-mail et le telephone donnaient peu de resultats. L'universite voulait suivre chaque admis individuellement sur ses demarches sans recruter l'equipe que ce volume de conversations aurait exige.",
+  "points_cles": [
+    "Georgia State lance en avril 2016 Pounce, assistant SMS d'AdmitHub (devenu Mainstay), aupres des admis.",
+    "Les relances suivent les taches que chaque admis n'a pas encore faites ; moins de 1 % des messages remontent au personnel.",
+    "Essai randomise publie dans AERA Open : +3,3 points d'inscription a l'heure dans le groupe traite.",
+    "Etendu a environ 40 000 etudiants (GSU, 2024), encore cite en avril 2026 par U.S. News."
+  ],
+  "description": "Pounce est un assistant conversationnel par SMS construit par AdmitHub (aujourd'hui Mainstay) pour Georgia State University et lance en avril 2016. Il ecrit aux admis pendant l'ete qui separe l'admission de la rentree : rappels de date limite, informations sur l'aide financiere, le logement ou l'inscription aux cours, sondages, et reponses instantanees aux questions posees a toute heure (date de paiement des frais, envoi des scores ACT, formulaire FAFSA). Les relances ne sont pas les memes pour tous : le systeme croise la donnee de l'universite sur l'avancement de chaque dossier et n'insiste que sur les taches ou l'admis est en retard. Les questions que l'assistant ne sait pas traiter passent a l'equipe de l'editeur ou au personnel de Georgia State. La premiere saison a ete menee comme un essai randomise : sur plus de 7 000 admis disposant d'un numero de mobile americain, la moitie a recu Pounce, l'autre moitie la communication habituelle par e-mail et courrier. L'essai, conduit par Lindsay Page et Hunter Gehlbach et publie dans la revue AERA Open, mesure chez les admis engages envers Georgia State une meilleure completion des formalites et une probabilite d'inscription a l'heure plus elevee de 3,3 points. Campus Technology, reprenant l'etude de cas de l'editeur, rapporte pour le groupe traite un summer melt inferieur de 21,4 % a celui du groupe temoin, pres de 200 000 messages echanges et moins de 1 % des 50 000 messages d'etudiants ayant demande l'intervention du personnel. L'universite a ensuite etendu Pounce aux communications d'inscription d'environ 40 000 etudiants sur ses campus d'Atlanta et de Perimeter College, puis l'a decline en assistant de cours a partir de 2021. Deux reserves. Le chiffre le plus solide reste celui de l'essai de 2016 : les montees en charge suivantes ne sont pas mesurees avec groupe temoin dans les sources consultees. Et la baisse du summer melt de 19 % a 9 % citee par l'universite en 2024 n'est pas attribuee au seul chatbot.",
+  "resultats": [
+    {
+      "metrique": "Hausse de la probabilite d'inscription a l'heure chez les admis engages envers GSU, groupe traite contre groupe temoin (essai randomise, 2016)",
+      "valeur": "+3,3 points",
+      "citation_exacte": "were 3.3 percentage points more likely to enroll on time",
+      "source_ref": "S1"
+    },
+    {
+      "metrique": "Ecart de summer melt entre groupe traite et groupe temoin, selon l'etude de cas de l'editeur reprise par la presse",
+      "valeur": "-21,4 %",
+      "citation_exacte": "The treatment group had a 21.4 percent lower summer melt rate",
+      "source_ref": "S3"
+    },
+    {
+      "metrique": "Messages echanges par Pounce avec le groupe traite pendant l'essai de quatre mois",
+      "valeur": "~200 000",
+      "citation_exacte": "Pounce exchanged nearly 200,000 messages with students in the treatment group",
+      "source_ref": "S3"
+    },
+    {
+      "metrique": "Part des plus de 50 000 messages d'etudiants ayant necessite l'intervention du personnel de GSU pendant l'essai",
+      "valeur": "< 1 %",
+      "citation_exacte": "less than one percent required the attention of Georgia State staff",
+      "source_ref": "S5"
+    },
+    {
+      "metrique": "Etudiants couverts par Pounce pour les communications d'inscription apres extension (Atlanta et Perimeter College)",
+      "valeur": "~40 000",
+      "citation_exacte": "expanded the use of the Pounce chatbot for enrollment-related communications to around 40,000 students",
+      "source_ref": "S4"
+    }
+  ],
+  "niveau_preuve": {
+    "niveau": "A",
+    "justification": "Aucune des categories A a D ne decrit litteralement le cas : la preuve centrale est un essai randomise controle publie dans une revue a comite de lecture (AERA Open, 2017), conduit par des chercheurs universitaires et reproduit par l'institut de Georgia State (S1). C'est une preuve primaire non interpretee de l'effet causal, plus forte qu'une etude de cas editeur (B), d'ou le classement A par equivalence ; elle est corroboree par un communique officiel de l'universite (S4, extension a environ 40 000 etudiants), par l'etude de cas de Mainstay (S5) et par la presse (S3, S6). Reserve : l'effet mesure date de la saison 2016 et l'editeur a participe a la mise en place de l'essai."
+  },
+  "dates": {
+    "lancement": "2016-04",
+    "derniere_confirmation_activite": "2026-04",
+    "verifie_le": "2026-10-05",
+    "revoir_apres": "2027-10-05"
+  },
+  "statut_vivant": {
+    "statut": "confirme",
+    "note": "Georgia State decrivait en janvier 2024 l'extension de Pounce a environ 40 000 etudiants et sa declinaison en assistant de cours, financee par une subvention de 7,6 M$ du Department of Education. En avril 2026, une chronique U.S. News le presente au present comme l'outil qui accompagne les admis jusqu'a l'inscription. La source la plus recente est une chronique et non un document de l'universite : aucun chiffre d'usage posterieur a 2024 n'a ete trouve."
+  },
+  "sources": [
+    {
+      "ref": "S1",
+      "type": "analyse_academique",
+      "fiabilite": "T1_primaire",
+      "titre": "How an Artificially Intelligent Virtual Assistant Helps Students Navigate the Road to College (Page et Gehlbach, AERA Open, resume reproduit par le National Institute for Student Success de Georgia State)",
+      "url": "https://niss.gsu.edu/digital-library/how-an-artificially-intelligent-virtual-assistant-helps-students-navigate-the-road-to-college/",
+      "date_publication": "2017-11",
+      "consulte_le": "2026-10-05"
+    },
+    {
+      "ref": "S2",
+      "type": "analyse_academique",
+      "fiabilite": "T1_primaire",
+      "titre": "How an Artificially Intelligent Virtual Assistant Helps Students Navigate the Road to College (AERA Open, vol. 3, DOI 10.1177/2332858417749220)",
+      "url": "https://journals.sagepub.com/doi/10.1177/2332858417749220",
+      "date_publication": "2017-11",
+      "consulte_le": "2026-10-05"
+    },
+    {
+      "ref": "S3",
+      "type": "presse",
+      "fiabilite": "T4_secondaire",
+      "titre": "Using AI Chatbots to Freeze 'Summer Melt' in Higher Ed (Campus Technology)",
+      "url": "https://campustechnology.com/articles/2017/03/07/using-ai-chatbots-to-freeze-summer-melt-in-higher-ed.aspx",
+      "date_publication": "2017-03-07",
+      "consulte_le": "2026-10-05"
+    },
+    {
+      "ref": "S4",
+      "type": "blog_officiel",
+      "fiabilite": "T1_primaire",
+      "titre": "National Institute for Student Success at Georgia State Awarded $7.6M to Study Benefits of AI-Enhanced Classroom Chatbots (Georgia State University News)",
+      "url": "https://news.gsu.edu/2024/01/11/national-institute-for-student-success-awarded-7-6-million-grant-by-u-s-department-of-education/",
+      "date_publication": "2024-01-11",
+      "consulte_le": "2026-10-05"
+    },
+    {
+      "ref": "S5",
+      "type": "customer_story_plateforme",
+      "fiabilite": "T2_officiel_interesse",
+      "titre": "Georgia State University supports every student with personalized text messaging (Mainstay)",
+      "url": "https://mainstay.com/case-study/how-georgia-state-university-supports-every-student",
+      "consulte_le": "2026-10-05"
+    },
+    {
+      "ref": "S6",
+      "type": "presse",
+      "fiabilite": "T3_presse_etablie",
+      "titre": "One New Thing: Reducing 'Summer Melt' With a Helpful Chatbot (U.S. News Higher Ground)",
+      "url": "https://www.usnews.com/education/u-s-news-higher-ground/articles/2026-04-30/ai-chatbot-georgia-state-university",
+      "date_publication": "2026-04-30",
+      "consulte_le": "2026-10-05"
+    }
+  ],
+  "fonctionnement_operationnel": {
+    "cadence": "Saisonniere et continue : la campagne court de l'admission au printemps jusqu'a la rentree d'automne ; dans cette fenetre, les relances partent selon le calendrier des dates limites et les reponses aux questions sont instantanees, jour et nuit.",
+    "opere_par": "Les admissions de Georgia State definissent les taches, les dates limites et les contenus, et traitent les questions escaladees. L'equipe de l'editeur (AdmitHub, devenu Mainstay) supervise l'apprentissage de l'assistant et prend une partie des messages que l'IA ne resout pas.",
+    "signal_pilote": "L'etat d'avancement de chaque admis sur les taches obligatoires (aide financiere, logement, inscription aux cours, paiements), tire des systemes de l'universite. Sans cette donnee a jour, l'assistant relance des etudiants deja en regle ou oublie ceux qui bloquent, et la relance redevient un envoi de masse.",
+    "etapes": [
+      {
+        "etape": "Recensement des taches",
+        "detail": "Les admissions listent les etapes obligatoires avant la rentree et leurs dates limites, et redigent la base de reponses propre a l'universite.",
+        "acteur": "marketing"
+      },
+      {
+        "etape": "Synchronisation des dossiers",
+        "detail": "La donnee d'avancement de chaque admis est transmise a l'assistant pour savoir quelles taches restent a faire.",
+        "acteur": "equipe data"
+      },
+      {
+        "etape": "Relance ciblee par SMS",
+        "detail": "Pounce envoie a chaque admis les rappels et informations correspondant aux taches qu'il n'a pas terminees, et des sondages.",
+        "acteur": "IA"
+      },
+      {
+        "etape": "Reponse aux questions",
+        "detail": "L'admis ecrit en langage naturel ; l'assistant repond immediatement a la grande majorite des messages.",
+        "acteur": "IA"
+      },
+      {
+        "etape": "Escalade",
+        "detail": "Les messages non resolus passent a l'equipe de l'editeur ou au personnel de Georgia State (moins de 1 % des messages d'etudiants pendant l'essai).",
+        "acteur": "humain"
+      },
+      {
+        "etape": "Lecture des intentions et mesure",
+        "detail": "Les changements de decision signales par les admis dans la conversation donnent aux admissions une vision en continu des inscriptions attendues ; la saison se mesure en taux d'inscription effective.",
+        "acteur": "marketing"
+      }
+    ]
+  },
+  "schema_flow": {
+    "statut": "documente",
+    "noeuds": [
+      {
+        "id": "sis",
+        "role_generique": "data_source",
+        "label": "Dossiers des admis : taches faites et manquantes",
+        "outil_documente": "Systemes de Georgia State"
+      },
+      {
+        "id": "pounce",
+        "role_generique": "modele_ia",
+        "label": "Assistant conversationnel Pounce",
+        "outil_documente": "AdmitHub / Mainstay"
+      },
+      {
+        "id": "sms",
+        "role_generique": "canal_conversationnel",
+        "label": "SMS sur le mobile de l'admis"
+      },
+      {
+        "id": "admis",
+        "role_generique": "humain",
+        "label": "Admis (avant la rentree)"
+      },
+      {
+        "id": "staff",
+        "role_generique": "humain",
+        "label": "Equipe editeur et personnel des admissions (escalade)"
+      }
+    ],
+    "liens": [
+      [
+        "sis",
+        "pounce",
+        "taches restantes par admis"
+      ],
+      [
+        "pounce",
+        "sms",
+        "relances ciblees et reponses"
+      ],
+      [
+        "sms",
+        "admis"
+      ],
+      [
+        "admis",
+        "sms",
+        "questions et changements de decision"
+      ],
+      [
+        "sms",
+        "pounce"
+      ],
+      [
+        "pounce",
+        "staff",
+        "questions non resolues"
+      ],
+      [
+        "staff",
+        "pounce",
+        "reponses et apprentissage de l'assistant"
+      ]
+    ]
+  },
+  "replication": {
+    "statut_epistemique": "infere",
+    "prerequis_data": [
+      "Une liste des etapes obligatoires entre l'engagement du client et sa premiere utilisation effective, avec leurs dates limites",
+      "Une donnee a jour, par personne, de ce qui est fait et de ce qui manque, exportable vers l'outil de conversation",
+      "Un numero de mobile collecte avec le consentement adapte a des relances par SMS"
+    ],
+    "prerequis_orga": [
+      "Une equipe metier qui redige et maintient la base de reponses et prend les escalades",
+      "Un circuit clair d'escalade vers un humain pour les questions sensibles (argent, situation personnelle)",
+      "La volonte de mesurer avec un groupe temoin sur la premiere saison, comme l'a fait Georgia State"
+    ],
+    "stack_possible": [
+      "Une plateforme d'assistant conversationnel par SMS ou messagerie avec reconnaissance des questions et relances programmees (type Mainstay)",
+      "Un connecteur vers le systeme qui porte l'avancement des dossiers (CRM, systeme de gestion des inscriptions)",
+      "Un outil de tirage aleatoire et de suivi pour comparer groupe traite et groupe temoin"
+    ],
+    "premiere_etape": "Isoler l'etape du parcours ou des personnes deja engagees abandonnent avant d'utiliser le service, lister les taches qui les bloquent et verifier que leur avancement est lisible individuellement dans les systemes.",
+    "playbook": [
+      {
+        "action": "Mesurer le taux d'abandon entre l'engagement et l'activation, et identifier les taches qui le provoquent.",
+        "livrable": "Liste priorisee des taches bloquantes, avec leur donnee de suivi."
+      },
+      {
+        "action": "Rediger la base de reponses aux questions frequentes et le calendrier des relances par tache.",
+        "livrable": "Contenu de l'assistant et scenario de relance."
+      },
+      {
+        "action": "Brancher la donnee d'avancement individuelle sur l'assistant pour que chaque relance vise une tache manquante.",
+        "livrable": "Relances personnalisees par personne."
+      },
+      {
+        "action": "Lancer la premiere saison sur la moitie de la population tiree au hasard, l'autre moitie recevant la communication habituelle.",
+        "livrable": "Mesure causale de l'effet sur l'activation."
+      },
+      {
+        "action": "Organiser l'escalade vers l'equipe humaine et reinjecter les reponses dans la base.",
+        "livrable": "Assistant qui progresse et equipe qui ne traite que les cas difficiles."
+      },
+      {
+        "action": "Etendre a toute la population si l'effet est confirme, puis a d'autres moments du parcours.",
+        "livrable": "Dispositif generalise et deuxieme cas d'usage."
+      }
+    ],
+    "equipe": "Un responsable metier (admissions ou onboarding client) qui possede les taches et les contenus, un profil data pour la synchronisation des dossiers, des conseillers qui prennent les escalades, et un appui methodologique pour la conception de l'essai et la lecture des resultats."
+  },
+  "seo": {
+    "slug": "georgia-state-university-pounce-chatbot-summer-melt-2016",
+    "title": "Georgia State University : chatbot SMS Pounce pour convertir les admis - +3,3 points d'inscription en essai randomise (2016)",
+    "meta_description": "Georgia State relance ses admis par SMS avec Pounce (AdmitHub, devenu Mainstay). Essai randomise publie : +3,3 points d'inscription a l'heure.",
+    "resume_citable": "En 2016, Georgia State University a confie a Pounce, un assistant SMS d'AdmitHub (devenu Mainstay), le suivi de ses admis jusqu'a la rentree : dans un essai randomise sur plus de 7 000 admis publie dans AERA Open, le groupe traite a ete 3,3 points plus susceptible de s'inscrire a l'heure, avec moins de 1 % des messages remontes au personnel.",
+    "faq": [
+      {
+        "q": "Qu'est-ce que Pounce ?",
+        "a": "Pounce est l'assistant conversationnel par SMS de Georgia State University, construit par AdmitHub (devenu Mainstay) et lance en avril 2016. Il relance les admis sur les demarches qu'ils n'ont pas terminees avant la rentree et repond a leurs questions a toute heure, en escaladant les cas non resolus vers des humains."
+      },
+      {
+        "q": "Quel est l'effet mesure ?",
+        "a": "Dans l'essai randomise publie dans AERA Open par Lindsay Page et Hunter Gehlbach, les admis engages envers Georgia State qui ont recu Pounce ont ete 3,3 points plus susceptibles de s'inscrire a l'heure que le groupe temoin. Selon l'etude de cas de l'editeur reprise par Campus Technology, le summer melt du groupe traite etait inferieur de 21,4 %."
+      },
+      {
+        "q": "Le dispositif est-il toujours en service ?",
+        "a": "En janvier 2024, Georgia State indiquait avoir etendu Pounce aux communications d'inscription d'environ 40 000 etudiants et l'avoir decline en assistant de cours. En avril 2026, U.S. News le decrit encore au present. Aucun chiffre d'usage plus recent n'a ete publie."
+      },
+      {
+        "q": "Quel est le niveau de preuve ?",
+        "a": "Niveau A par equivalence : l'effet vient d'un essai randomise controle publie dans une revue a comite de lecture, corrobore par un communique de l'universite, l'etude de cas de l'editeur et la presse. L'effet mesure date de 2016."
+      }
+    ]
+  }
+}

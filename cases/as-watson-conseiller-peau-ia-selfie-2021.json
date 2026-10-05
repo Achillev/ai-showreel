@@ -1,0 +1,310 @@
+{
+  "id": "as-watson-conseiller-peau-ia-selfie-2021",
+  "type_fiche": "succes",
+  "marque": "A.S. Watson (Superdrug, ICI Paris XL, Watsons)",
+  "groupe": "CK Hutchison Holdings",
+  "industrie": "retail_ecom",
+  "marches_deploiement": [
+    "Royaume-Uni (Superdrug)",
+    "Pays-Bas (ICI PARIS XL, sous le nom Skin Analyser)",
+    "Asie (Watsons : Hong Kong, puis Thailande, Taiwan, Philippines, Singapour, Malaisie, Indonesie annonces pour debut 2023)"
+  ],
+  "transposable_ue": {
+    "flag": "oui_avec_adaptations",
+    "note": "Deja deploye en Europe (Superdrug au Royaume-Uni, ICI PARIS XL aux Pays-Bas). L'analyse d'un selfie produit des donnees que A.S. Watson qualifie elle-meme de biometriques : base legale, consentement explicite, minimisation et duree de conservation a cadrer au titre du RGPD. Une analyse de peau qui ne sert pas a identifier la personne reste a qualifier au regard de l'AI Act, sans etre a priori un systeme de reconnaissance faciale."
+  },
+  "metier": "e-commerce / conseil client / merchandising",
+  "logo_domain": "aswatson.com",
+  "intervenants": [
+    {
+      "nom": "Dan Jarvis",
+      "role": "Chief Digital Officer (Europe), A.S. Watson Group",
+      "source_ref": "S1"
+    },
+    {
+      "nom": "Freda Ng",
+      "role": "Chief Digital Officer (Asia), A.S. Watson Group",
+      "source_ref": "S3"
+    }
+  ],
+  "agences": [
+    {
+      "nom": "Revieve",
+      "role": "Tech Partner, fournisseur de l'AI Skin Advisor (vision par ordinateur et diagnostic de peau mobile) deploye chez Superdrug et ICI PARIS XL",
+      "source_ref": "S2"
+    },
+    {
+      "nom": "ModiFace (groupe L'Oreal)",
+      "role": "Co-developpeur avec A.S. Watson de Skinfie Lab, l'outil d'analyse de peau par selfie de Watsons en Asie",
+      "source_ref": "S3"
+    }
+  ],
+  "axes": {
+    "levier": "activation_conversion",
+    "touchpoints": [
+      "site e-commerce Superdrug (page skin-analysis)",
+      "site e-commerce ICI PARIS XL",
+      "app mobile Watsons (Skinfie Lab)"
+    ],
+    "etape_parcours": "consideration",
+    "famille": "personnalisation",
+    "pattern": "diagnostic de peau par selfie et recommandation de routine produit",
+    "type_ia": [
+      "vision par ordinateur (analyse de selfie)",
+      "recommandation produit"
+    ],
+    "plateforme_stack": [
+      "Revieve AI Skin Advisor",
+      "ModiFace (Skinfie Lab, Asie)"
+    ],
+    "objectif_metrique": [
+      "taux de conversion",
+      "panier moyen",
+      "temps passe sur le site"
+    ]
+  },
+  "implementation": "plateforme",
+  "objectif_business": "Remplacer en ligne le conseil d'une vendeuse de rayon soin. Le client en ligne ne sait pas quel produit convient a sa peau parmi des milliers de references ; A.S. Watson lui donne un diagnostic et une routine tires du catalogue du site, pour lever cette hesitation et vendre plus de produits par commande.",
+  "points_cles": [
+    "A.S. Watson deploie un conseiller de peau par selfie chez Superdrug (Royaume-Uni) et ICI PARIS XL (Pays-Bas).",
+    "L'outil vient de Revieve : vision par ordinateur, plus de 120 indicateurs de peau, recommandations du catalogue.",
+    "Chez Superdrug, les utilisateurs de l'outil convertissent plus de 100% mieux, panier moyen +20%.",
+    "Le groupe a etendu le pattern en Asie avec ModiFace (Skinfie Lab), toujours propose dans l'app Watsons en 2026."
+  ],
+  "description": "A.S. Watson, premier distributeur international de sante et beaute (Superdrug, ICI PARIS XL, Kruidvat, Watsons), a installe un conseiller de peau par IA sur les sites de deux de ses enseignes europeennes. L'outil est fourni par Revieve, l'un des Tech Partners du groupe, et deploye par l'equipe eLab d'A.S. Watson. Il s'appelle AI Skin Advisor chez Superdrug au Royaume-Uni et Skin Analyser chez ICI PARIS XL aux Pays-Bas. Le client prend un selfie sur son mobile et repond a quelques questions sur son type de peau et ses preoccupations. Le moteur de Revieve analyse plus de 120 indicateurs de peau sur le visage, signale en direct un eclairage insuffisant, des lunettes ou un visage mal cadre, puis renvoie une analyse detaillee et une liste de produits du site adaptes. A.S. Watson et Revieve ont publie les resultats en decembre 2021 : chez Superdrug, les utilisateurs de l'outil convertissent plus de 100% mieux et le panier moyen progresse de plus de 20% ; chez ICI PARIS XL, les utilisateurs passent deux fois plus de temps sur le site. Les sources ne precisent pas la base de comparaison et ne decrivent aucun test A/B : il s'agit d'utilisateurs engages, donc une part de l'ecart peut venir de l'auto-selection. En Asie, le groupe a reproduit le pattern avec un autre fournisseur : Skinfie Lab, co-developpe avec ModiFace (L'Oreal), lance en octobre 2022 chez Watsons Hong Kong et annonce pour six autres marches. Il recommande une routine parmi les produits de l'eStore Watsons, du nettoyant a la creme solaire.",
+  "resultats": [
+    {
+      "metrique": "Taux de conversion des utilisateurs de l'AI Skin Advisor chez Superdrug, (base de comparaison non precisee, pas de test A/B decrit)",
+      "valeur": "+100%",
+      "citation_exacte": "Superdrug saw that its users converted over 100% better",
+      "source_ref": "S2"
+    },
+    {
+      "metrique": "Panier moyen chez Superdrug depuis l'introduction de l'outil",
+      "valeur": "+20%",
+      "citation_exacte": "Superdrug has seen an over 20% increase in average order value",
+      "source_ref": "S1"
+    },
+    {
+      "metrique": "Temps passe sur le site par les utilisateurs du Skin Analyser chez ICI PARIS XL",
+      "valeur": "x2",
+      "citation_exacte": "ICI PARIS XL users spent twice the amount of time on-site",
+      "source_ref": "S2"
+    },
+    {
+      "metrique": "Images de selfies utilisees pour construire et valider Skinfie Lab en Asie",
+      "valeur": "16 000+",
+      "citation_exacte": "built and validated using over 16,000 selfie images",
+      "source_ref": "S3"
+    }
+  ],
+  "niveau_preuve": {
+    "niveau": "B",
+    "justification": "Les chiffres viennent d'un communique conjoint vendor (Revieve) concordant avec le communique officiel d'A.S. Watson, qui reprend les memes resultats Superdrug ; aucune mention en resultats financiers et aucun protocole de mesure publie, donc niveau B."
+  },
+  "dates": {
+    "lancement": "AI Skin Advisor en service chez Superdrug avant l'annonce du 15 decembre 2021 (date exacte de lancement non publiee) ; Skinfie Lab lance chez Watsons Hong Kong en octobre 2022",
+    "derniere_confirmation_activite": "2026-09-24 : fiche Google Play de l'app Watsons Singapour (mise a jour a cette date) qui presente Skinfie Lab ; page skin-analysis de Superdrug toujours en ligne le 2026-10-05",
+    "verifie_le": "2026-10-05",
+    "revoir_apres": "2027-04-05"
+  },
+  "statut_vivant": {
+    "statut": "confirme",
+    "note": "Le pattern est vivant au niveau du groupe : l'app Watsons Singapour, mise a jour le 24 septembre 2026, presente toujours Skinfie Lab. Cote Europe, la page skin-analysis de Superdrug est en ligne le 5 octobre 2026 et porte encore le code d'affichage du module Revieve, mais nous n'avons pas pu confirmer que le diagnostic se lance de bout en bout, et aucun chiffre plus recent que 2021 n'a ete publie sur Superdrug ou ICI PARIS XL."
+  },
+  "sources": [
+    {
+      "ref": "S1",
+      "type": "blog_officiel",
+      "fiabilite": "T1_primaire",
+      "titre": "AS Watson O+O AI-Powered Skincare Solutions Double Conversion Rate",
+      "url": "https://www.aswatson.com/article/a-s-watson-oo-ai-powered-skincare-solutions-double-conversion-rate",
+      "date_publication": "2021-12-15",
+      "consulte_le": "2026-10-05"
+    },
+    {
+      "ref": "S2",
+      "type": "customer_story_plateforme",
+      "fiabilite": "T2_officiel_interesse",
+      "titre": "A.S. Watson O+O AI-Powered Skin Advisor Doubles Conversion Rate Enabled by Revieve",
+      "url": "https://www.revieve.com/resources/a-s-watson-o-o-ai-powered-skin-advisor-doubles-conversion-rate-enabled-by-revieve-r",
+      "date_publication": "2021-12-14",
+      "consulte_le": "2026-10-05"
+    },
+    {
+      "ref": "S3",
+      "type": "blog_officiel",
+      "fiabilite": "T1_primaire",
+      "titre": "AS Watson Innovates AI-Powered Skincare Solutions with L'Oreal's ModiFace in Asia",
+      "url": "https://www.aswatson.com/article/a-s-watson-innovates-ai-powered-skincare-solutions-with-loreals-modiface-in-asia",
+      "date_publication": "2022-10-07",
+      "consulte_le": "2026-10-05"
+    },
+    {
+      "ref": "S4",
+      "type": "page_app_officielle",
+      "fiabilite": "T1_primaire",
+      "titre": "Watsons SG: Your Official App - Google Play",
+      "url": "https://play.google.com/store/apps/details?id=com.watsons.sg.android&hl=en",
+      "date_publication": "2026-09-24",
+      "consulte_le": "2026-10-05"
+    },
+    {
+      "ref": "S5",
+      "type": "page_produit_officielle",
+      "fiabilite": "T1_primaire",
+      "titre": "Skin Analysis | Skin & Age Analyser | Skincare | Superdrug",
+      "url": "https://www.superdrug.com/skin-analysis",
+      "consulte_le": "2026-10-05"
+    }
+  ],
+  "fonctionnement_operationnel": {
+    "cadence": "Temps reel : l'analyse tourne a chaque selfie soumis par un client, sur mobile, et renvoie la routine dans la meme session.",
+    "opere_par": "L'equipe eLab d'A.S. Watson (digital Europe) avec le fournisseur Revieve ; en Asie, l'equipe digitale Watsons avec ModiFace.",
+    "signal_pilote": "La qualite du selfie et les reponses du client sur son type de peau, croisees avec le catalogue disponible sur le site. Si le catalogue relie a l'outil n'est pas a jour (references retirees, ruptures), la routine pousse des produits que le client ne peut pas acheter.",
+    "etapes": [
+      {
+        "etape": "Prendre le selfie et repondre au questionnaire",
+        "detail": "Le client photographie son visage sur mobile et indique son type de peau et ses preoccupations.",
+        "acteur": "client"
+      },
+      {
+        "etape": "Controler la photo en direct",
+        "detail": "Le module signale un eclairage insuffisant, des lunettes ou un visage mal positionne avant l'analyse.",
+        "acteur": "IA (vision par ordinateur)"
+      },
+      {
+        "etape": "Analyser la peau",
+        "detail": "Le moteur mesure plus de 120 indicateurs de peau sur le visage et produit une analyse detaillee.",
+        "acteur": "IA (Revieve)"
+      },
+      {
+        "etape": "Recommander une routine du catalogue",
+        "detail": "L'outil renvoie une liste de produits du site adaptee au profil, que le client peut ajouter au panier.",
+        "acteur": "IA / e-commerce"
+      },
+      {
+        "etape": "Suivre l'effet commercial",
+        "detail": "L'equipe digitale suit conversion, panier moyen et temps passe des utilisateurs de l'outil.",
+        "acteur": "equipe digitale (eLab)"
+      }
+    ]
+  },
+  "schema_flow": {
+    "statut": "approche_type",
+    "noeuds": [
+      {
+        "id": "client",
+        "role_generique": "humain",
+        "label": "Client sur mobile (selfie et questionnaire)"
+      },
+      {
+        "id": "vision",
+        "role_generique": "modele_ia",
+        "label": "Analyse de peau par vision par ordinateur",
+        "outil_documente": "Revieve AI Skin Advisor (Europe) / ModiFace Skinfie Lab (Asie)"
+      },
+      {
+        "id": "catalogue",
+        "role_generique": "data_source",
+        "label": "Catalogue produits du site marchand"
+      },
+      {
+        "id": "site",
+        "role_generique": "site_app",
+        "label": "Page conseil et panier (Superdrug, ICI PARIS XL, app Watsons)"
+      }
+    ],
+    "liens": [
+      [
+        "client",
+        "vision"
+      ],
+      [
+        "catalogue",
+        "vision"
+      ],
+      [
+        "vision",
+        "site",
+        "analyse et routine produits"
+      ],
+      [
+        "site",
+        "client",
+        "achat"
+      ]
+    ]
+  },
+  "stack_technique": [
+    {
+      "nom": "Revieve AI Skin Advisor",
+      "categorie": "plateforme",
+      "detail": "Diagnostic de peau mobile, plus de 120 indicateurs, deploye chez Superdrug et ICI PARIS XL",
+      "url": "https://www.revieve.com"
+    },
+    {
+      "nom": "ModiFace",
+      "categorie": "plateforme",
+      "detail": "Co-developpement de Skinfie Lab avec A.S. Watson pour Watsons en Asie"
+    }
+  ],
+  "replication": {
+    "statut_epistemique": "infere",
+    "prerequis_data": [
+      "Catalogue soin structure par type de peau, preoccupation et etape de routine",
+      "Disponibilite produit synchronisee avec l'outil pour ne recommander que du vendable",
+      "Tracking qui distingue les sessions ayant utilise l'outil des autres"
+    ],
+    "prerequis_orga": [
+      "Cadre RGPD pour le traitement de selfies : consentement, minimisation, conservation",
+      "Un responsable e-commerce proprietaire de l'outil et de son placement dans le parcours",
+      "Validation du discours de conseil par un expert soin ou dermatologue"
+    ],
+    "stack_possible": [
+      "Module de diagnostic de peau en marque blanche (Revieve, ModiFace ou equivalent)",
+      "Flux catalogue vers le module de recommandation",
+      "Outil d'experimentation pour mesurer l'effet en test A/B plutot qu'en comparaison d'utilisateurs"
+    ],
+    "playbook": [
+      {
+        "action": "Cadrer le traitement des selfies avec le DPO avant tout developpement",
+        "livrable": "Base legale, mentions et politique de conservation validees"
+      },
+      {
+        "action": "Mapper le catalogue soin sur les preoccupations detectables (acne, rides, pores, taches)",
+        "livrable": "Regles de correspondance profil vers produits"
+      },
+      {
+        "action": "Integrer un module de diagnostic fournisseur sur une page dediee et sur les fiches soin",
+        "livrable": "Parcours selfie, analyse, routine, ajout au panier en production"
+      },
+      {
+        "action": "Mesurer l'effet par test A/B sur l'exposition a l'outil, pas seulement chez ses utilisateurs",
+        "livrable": "Lecture incrementale de conversion et panier moyen"
+      }
+    ],
+    "equipe": "Un responsable e-commerce soin, un developpeur front pour l'integration, un analyste pour la mesure, un juriste donnees personnelles, et le fournisseur du module.",
+    "premiere_etape": "Verifier que le catalogue soin est tague par preoccupation de peau : sans ce mapping, le diagnostic le plus precis ne sait pas quel produit proposer."
+  },
+  "seo": {
+    "slug": "as-watson-conseiller-peau-ia-selfie-2021",
+    "title": "A.S. Watson : conseiller de peau IA par selfie chez Superdrug - conversion des utilisateurs doublee (2021)",
+    "meta_description": "Superdrug et ICI PARIS XL (A.S. Watson) analysent un selfie avec Revieve pour recommander une routine : utilisateurs convertis 100% mieux, panier +20%.",
+    "resume_citable": "Chez Superdrug, enseigne d'A.S. Watson, les utilisateurs de l'AI Skin Advisor de Revieve, qui analyse un selfie sur plus de 120 indicateurs de peau pour recommander une routine du catalogue, convertissent plus de 100% mieux avec un panier moyen en hausse de plus de 20% (chiffres publies en decembre 2021).",
+    "faq": [
+      {
+        "q": "Comment fonctionne le conseiller de peau IA de Superdrug ?",
+        "a": "Le client prend un selfie sur mobile et repond a quelques questions sur sa peau. Le moteur de Revieve analyse plus de 120 indicateurs sur le visage et renvoie une analyse detaillee avec une liste de produits du site Superdrug adaptes."
+      },
+      {
+        "q": "Les chiffres de conversion sont-ils issus d'un test A/B ?",
+        "a": "Aucune source ne le dit. A.S. Watson et Revieve parlent des utilisateurs de l'outil sans preciser la base de comparaison, ce qui peut surestimer son effet propre par auto-selection."
+      },
+      {
+        "q": "L'outil existe-t-il ailleurs dans le groupe A.S. Watson ?",
+        "a": "Oui. En Asie, Watsons propose Skinfie Lab, co-developpe avec ModiFace (L'Oreal) et lance a Hong Kong en octobre 2022. L'app Watsons Singapour le presente toujours en septembre 2026."
+      }
+    ]
+  }
+}

@@ -1,0 +1,346 @@
+{
+  "id": "magalu-whatsapp-da-lu-ai-commerce-2026",
+  "type_fiche": "succes",
+  "marque": "Magalu",
+  "groupe": "Magazine Luiza S.A.",
+  "industrie": "retail_ecom",
+  "marches_deploiement": [
+    "Bresil"
+  ],
+  "transposable_ue": {
+    "flag": "oui_avec_adaptations",
+    "note": "Le canal repose sur la WhatsApp Business Platform, disponible en UE, mais le paiement dans la conversation s'appuie sur Pix, propre au Bresil : en Europe il faudrait un autre moyen de paiement integre ou une redirection. Les messages marketing sortants exigent un opt-in WhatsApp et un consentement RGPD, et la memoire des preferences client est un profilage a encadrer. Un agent conversationnel de vente releve des obligations de transparence de l'AI Act (dire au client qu'il parle a une IA), pas du haut risque."
+  },
+  "metier": "e-commerce / commerce conversationnel",
+  "logo_domain": "magazineluiza.com.br",
+  "intervenants": [
+    {
+      "nom": "Fred Trajano",
+      "role": "CEO, Magalu",
+      "source_ref": "S2"
+    },
+    {
+      "nom": "Ricardo Querino",
+      "role": "Directeur experience client, Magalu",
+      "source_ref": "S3"
+    }
+  ],
+  "agences": [
+    {
+      "nom": "Bain & Company",
+      "role": "Co-developpement de l'assistante avec Luizalabs, Meta et Google Cloud",
+      "source_ref": "S2"
+    },
+    {
+      "nom": "Meta (WhatsApp)",
+      "role": "Partenaire de developpement, plateforme WhatsApp Business et paiements dans WhatsApp",
+      "source_ref": "S2"
+    },
+    {
+      "nom": "Google Cloud",
+      "role": "Partenaire de developpement",
+      "source_ref": "S2"
+    }
+  ],
+  "axes": {
+    "levier": "activation_conversion",
+    "touchpoints": [
+      "WhatsApp (WhatsApp da Lu)",
+      "messages marketing WhatsApp",
+      "paiement Pix et carte dans la conversation",
+      "suivi de commande et SAV dans WhatsApp"
+    ],
+    "etape_parcours": "achat",
+    "famille": "conversation",
+    "pattern": "agent de vente genAI de bout en bout dans une messagerie, du conseil au paiement",
+    "type_ia": [
+      "LLM",
+      "systeme multi-agents",
+      "recherche multimodale (texte, voix, image)",
+      "recommandation"
+    ],
+    "plateforme_stack": [
+      "WhatsApp Business Platform",
+      "Google Cloud",
+      "custom/in-house (Luizalabs)"
+    ],
+    "objectif_metrique": [
+      "taux de conversion",
+      "ventes cumulees du canal",
+      "taux de reachat",
+      "NPS"
+    ]
+  },
+  "implementation": "hybride",
+  "objectif_business": "Ouvrir un canal de vente la ou les clients bresiliens passent deja leur temps, WhatsApp, et y faire tenir tout le parcours d'achat par la Lu, l'influenceuse virtuelle de la marque, pour convertir mieux que l'app et le site.",
+  "points_cles": [
+    "Magalu vend dans WhatsApp via la Lu, une IA qui conseille, encaisse et suit la commande.",
+    "Plus de 20 agents IA orchestres, co-developpes par Luizalabs avec Meta, Google Cloud et Bain.",
+    "Conversion trois fois superieure a la recherche classique de l'app, environ 20 % de reachat.",
+    "Plus de 100 millions de reais de ventes cumulees, chiffres repris dans le release de resultats 2T26."
+  ],
+  "description": "Le WhatsApp da Lu est un canal de vente ouvert par Magalu en novembre 2025, d'abord pour un groupe de 1 million de clients actifs, puis pour tous les consommateurs avant la fin de 2025. Le client ecrit a la Lu, le personnage virtuel de la marque, en texte, en vocal ou en envoyant une photo. L'assistante pose des questions de precision (style, budget, usage), propose une selection issue du catalogue en propre (1P) et de celui des quelque 300 000 vendeurs de la marketplace (3P), puis encaisse le paiement dans la conversation, par Pix ou par carte, sans redirection. Le suivi de commande et le service apres-vente passent par le meme fil. D'apres l'etude de cas de Bain, le systeme orchestre plus de 20 agents IA qui se partagent la decouverte produit, la recommandation, l'interpretation des recherches, le service client et la transaction, sur une architecture qui melange modeles proprietaires et modeles tiers. Le developpement est porte par Luizalabs, la division technologie de Magalu, avec Meta, Google Cloud et Bain & Company. Cote WhatsApp, Meta indique que Magalu s'appuie sur les carrousels de cartes, WhatsApp Flows et les paiements dans WhatsApp, et que les messages marketing servent de porte d'entree principale. Dans son release du deuxieme trimestre 2026, Magalu fait du canal le coeur de son nouveau cycle strategique : plus de 18 millions de conversations depuis le lancement, une conversion trois fois superieure a la recherche classique de l'application, un NPS de 84, environ 20 % de reachat chez les clients ayant deja achete, et plus de 100 millions de reais de ventes cumulees atteints en juillet 2026. La base de comparaison du chiffre de conversion change selon la source : la recherche de l'app dans le release, l'application dans l'etude Bain, les canaux de vente existants dans le communique relaye par la presse. A l'echelle du groupe, le canal reste petit : le meme release donne 9,3 milliards de reais de ventes e-commerce sur le seul trimestre, en baisse de 11,9 % sur un an. En 2026, Magalu a ajoute une operation Fete des meres (video personnalisee generee par IA a partir d'un vocal et d'une photo), une premiere campagne TV dediee au canal en juin, et le dispositif a recu un Lion de bronze a Cannes 2026.",
+  "resultats": [
+    {
+      "metrique": "Taux de conversion du canal, compare a la recherche classique de l'application Magalu",
+      "valeur": "x3",
+      "citation_exacte": "três vezes superior à busca tradicional do aplicativo e um NPS de 84 pontos",
+      "source_ref": "S1"
+    },
+    {
+      "metrique": "Ventes cumulees du canal depuis le lancement de novembre 2025, seuil franchi en juillet 2026",
+      "valeur": "R$ 100M+",
+      "citation_exacte": "já totalizaram mais de 100 milhões de reais",
+      "source_ref": "S1"
+    },
+    {
+      "metrique": "Part des clients ayant deja achete avec la Lu qui ont rachete par le canal",
+      "valeur": "environ 20%",
+      "citation_exacte": "dos clientes que já compraram com a Lu, cerca de 20% voltaram a comprar",
+      "source_ref": "S1"
+    },
+    {
+      "metrique": "Conversations cumulees depuis le lancement, au release du 2T26",
+      "valeur": "18M+",
+      "citation_exacte": "superou a marca de 18 milhões de conversas desde o seu lançamento",
+      "source_ref": "S1"
+    },
+    {
+      "metrique": "Utilisateurs uniques sur les huit premiers mois d'operation, selon l'entreprise",
+      "valeur": "7,7M",
+      "citation_exacte": "alcançou 7,7 milhões de usuários únicos em oito meses de operação",
+      "source_ref": "S3"
+    }
+  ],
+  "niveau_preuve": {
+    "niveau": "A",
+    "justification": "Conversion x3, NPS, reachat d'environ 20 %, 18 millions de conversations et 100 millions de reais de ventes figurent dans le release de resultats 2T26 publie par Magalu sur son site investisseurs ; ils concordent avec l'etude de cas Bain, la customer story WhatsApp Business et le communique relaye par Central do Varejo."
+  },
+  "dates": {
+    "lancement": "Novembre 2025 (1 million de clients actifs), ouvert a tous les consommateurs avant la fin de 2025",
+    "derniere_confirmation_activite": "Aout 2026 (release de resultats 2T26, teleconference du 7 aout 2026)",
+    "verifie_le": "2026-10-05",
+    "revoir_apres": "2027-04-05"
+  },
+  "statut_vivant": {
+    "statut": "confirme",
+    "note": "Canal actif et mis en avant par la direction dans le release 2T26 comme pilier du cycle strategique 2026, avec des fonctionnalites ajoutees en cours d'annee et une campagne TV en juin 2026. Les ventes cumulees restent faibles rapportees au volume e-commerce trimestriel du groupe."
+  },
+  "sources": [
+    {
+      "ref": "S1",
+      "type": "earnings_call",
+      "fiabilite": "T1_primaire",
+      "titre": "Magazine Luiza - Divulgacao de Resultados 2T26 (release de resultats)",
+      "url": "https://ri.magazineluiza.com.br/Download/Release-de-Resultado?=dL1FGoA0QI/SvcDvROsA7g==",
+      "date_publication": "Aout 2026 (teleconference de resultats du 7 aout 2026)",
+      "consulte_le": "2026-10-05"
+    },
+    {
+      "ref": "S2",
+      "type": "customer_story_plateforme",
+      "fiabilite": "T2_officiel_interesse",
+      "titre": "Magalu e pioneira em compras com inteligencia artificial no WhatsApp (Bain & Company, client results)",
+      "url": "https://www.bain.com/pt-br/client-results/ai/magalu/",
+      "consulte_le": "2026-10-05"
+    },
+    {
+      "ref": "S3",
+      "type": "presse",
+      "fiabilite": "T4_secondaire",
+      "titre": "Magalu ultrapassa R$ 100 milhoes em vendas com canal de compras no WhatsApp (Central do Varejo)",
+      "url": "https://centraldovarejo.com.br/magalu-ultrapassa-r-100-milhoes-em-vendas-com-canal-de-compras-no-whatsapp/",
+      "date_publication": "2026-07-09",
+      "consulte_le": "2026-10-05"
+    },
+    {
+      "ref": "S4",
+      "type": "customer_story_plateforme",
+      "fiabilite": "T2_officiel_interesse",
+      "titre": "Magalu | WhatsApp for Business (success story)",
+      "url": "https://whatsappbusiness.com/pt-br/resources/success-stories/magalu/",
+      "consulte_le": "2026-10-05"
+    }
+  ],
+  "fonctionnement_operationnel": {
+    "cadence": "Temps reel pour chaque conversation. Les campagnes de messages marketing WhatsApp et les operations saisonnieres (Fete des meres, campagne TV) alimentent le trafic par vagues.",
+    "opere_par": "Luizalabs pour la plateforme et les agents, l'equipe experience client de Magalu pour la qualite de service, le marketing pour les campagnes d'entree dans le canal.",
+    "signal_pilote": "Les conversations elles-memes et l'historique d'interactions, qui servent a apprendre les preferences de chaque client, plus le catalogue 1P et 3P. Bain indique que chaque interaction est suivie par des metriques de performance et des controles qualite : sans catalogue a jour (prix, stock, vendeurs), l'agent recommande des produits qu'il ne peut pas vendre.",
+    "etapes": [
+      {
+        "etape": "Entree dans le canal",
+        "detail": "Le client arrive dans la conversation, le plus souvent via un message marketing WhatsApp ou une campagne qui pousse le canal.",
+        "acteur": "Marketing"
+      },
+      {
+        "etape": "Comprehension de la demande",
+        "detail": "La Lu interprete un texte, un vocal ou une photo et pose des questions de precision sur le style, le budget et l'usage.",
+        "acteur": "IA"
+      },
+      {
+        "etape": "Selection et presentation",
+        "detail": "Les agents de recherche et de recommandation puisent dans le catalogue 1P et 3P et affichent une selection en carrousel, avec fiches produit structurees.",
+        "acteur": "IA"
+      },
+      {
+        "etape": "Paiement dans la conversation",
+        "detail": "Le client paie par Pix ou par carte sans quitter WhatsApp.",
+        "acteur": "Client et plateforme de paiement"
+      },
+      {
+        "etape": "Suivi et SAV",
+        "detail": "La Lu envoie les mises a jour d'expedition et traite les demandes apres-vente dans le meme fil.",
+        "acteur": "IA, avec l'equipe experience client"
+      },
+      {
+        "etape": "Mesure",
+        "detail": "Magalu suit conversations, conversion, NPS, reachat et ventes cumulees, et les remonte dans sa communication financiere.",
+        "acteur": "Equipe experience client et direction"
+      }
+    ]
+  },
+  "schema_flow": {
+    "statut": "approche_type",
+    "noeuds": [
+      {
+        "id": "n1",
+        "role_generique": "humain",
+        "label": "Client Magalu sur WhatsApp"
+      },
+      {
+        "id": "n2",
+        "role_generique": "canal_conversationnel",
+        "label": "WhatsApp da Lu",
+        "outil_documente": "WhatsApp Business Platform (carrousels, Flows, paiements)"
+      },
+      {
+        "id": "n3",
+        "role_generique": "modele_ia",
+        "label": "Orchestration de plus de 20 agents IA (modeles proprietaires et tiers)"
+      },
+      {
+        "id": "n4",
+        "role_generique": "data_source",
+        "label": "Catalogue 1P et 3P, historique d'interactions client"
+      },
+      {
+        "id": "n5",
+        "role_generique": "site_app",
+        "label": "Paiement Pix ou carte, suivi de commande"
+      }
+    ],
+    "liens": [
+      [
+        "n1",
+        "n2"
+      ],
+      [
+        "n2",
+        "n3"
+      ],
+      [
+        "n4",
+        "n3"
+      ],
+      [
+        "n3",
+        "n2",
+        "recommandations en carrousel"
+      ],
+      [
+        "n2",
+        "n5"
+      ],
+      [
+        "n2",
+        "n4",
+        "preferences memorisees, boucle d'apprentissage"
+      ]
+    ]
+  },
+  "stack_technique": [
+    {
+      "nom": "WhatsApp Business Platform",
+      "categorie": "plateforme",
+      "detail": "Carrousels de cartes, WhatsApp Flows pour les fiches produit, paiements dans WhatsApp integres a Pix, messages marketing comme point d'entree.",
+      "url": "https://business.whatsapp.com"
+    },
+    {
+      "nom": "Google Cloud",
+      "categorie": "infra",
+      "detail": "Partenaire de developpement cite par Bain ; les services utilises ne sont pas detailles publiquement.",
+      "url": "https://cloud.google.com"
+    },
+    {
+      "nom": "Systeme multi-agents Luizalabs",
+      "categorie": "plateforme",
+      "detail": "Plus de 20 agents IA orchestres, modeles proprietaires entraines sur les donnees Magalu et modeles tiers non nommes.",
+      "url": "https://luizalabs.com"
+    }
+  ],
+  "replication": {
+    "statut_epistemique": "infere",
+    "prerequis_data": [
+      "catalogue produit structure et a jour en prix, stock et vendeur, interrogeable en temps reel",
+      "base clients joignable sur WhatsApp avec opt-in pour les messages marketing",
+      "historique d'interactions rattache au client pour memoriser ses preferences",
+      "suivi de commande expose par API pour repondre dans la conversation"
+    ],
+    "prerequis_orga": [
+      "un personnage de marque ou une voix deja connue des clients, qui donne une raison d'ecrire au canal",
+      "une equipe produit qui possede le canal de bout en bout, de la conversation au paiement",
+      "un moyen de paiement natif dans la messagerie sur le marche vise",
+      "un dispositif de controle qualite des conversations avant et apres la mise en production"
+    ],
+    "stack_possible": [
+      "WhatsApp Business Platform via un fournisseur BSP",
+      "LLM d'un fournisseur cloud, avec orchestration d'agents et outils branches sur le catalogue",
+      "moteur de recherche produit et de recommandation existant expose comme outil aux agents",
+      "solution de paiement integree a la messagerie ou lien de paiement"
+    ],
+    "premiere_etape": "Ouvrir le canal a un groupe restreint de clients actifs, sur un perimetre de categories limite, et comparer sa conversion a la recherche de l'app sur ces memes clients.",
+    "playbook": [
+      {
+        "action": "Cartographier le parcours d'achat a faire tenir dans la conversation (recherche, precision du besoin, recommandation, paiement, suivi, SAV) et decider ce qui reste hors canal au depart.",
+        "livrable": "Perimetre fonctionnel de la premiere version."
+      },
+      {
+        "action": "Decouper le travail en agents specialises (recherche, recommandation, transaction, service) branches sur le catalogue et les API de commande, plutot qu'un seul modele qui fait tout.",
+        "livrable": "Architecture d'agents et outils exposes."
+      },
+      {
+        "action": "Integrer le paiement dans la conversation avec le moyen de paiement local dominant.",
+        "livrable": "Commande payee de bout en bout sans redirection."
+      },
+      {
+        "action": "Lancer sur un groupe de clients actifs, suivre conversion, NPS et reachat contre la recherche de l'app, puis ouvrir a tous.",
+        "livrable": "Lecture comparative et decision d'ouverture."
+      },
+      {
+        "action": "Pousser le canal par les messages marketing et des operations saisonnieres, et suivre la part de nouveaux utilisateurs qu'elles amenent.",
+        "livrable": "Calendrier d'activation du canal."
+      }
+    ],
+    "equipe": "Un product owner du canal, des ingenieurs IA pour l'orchestration des agents et l'evaluation des conversations, des developpeurs d'integration (catalogue, paiement, commandes), l'equipe service client pour les cas que l'IA ne resout pas, et le marketing CRM pour les campagnes WhatsApp."
+  },
+  "seo": {
+    "slug": "magalu-whatsapp-da-lu-ai-commerce-2026",
+    "title": "Magalu : agent de vente IA dans WhatsApp - conversion x3 et plus de 100 millions de reais de ventes (2026)",
+    "meta_description": "Magalu vend dans WhatsApp avec la Lu, plus de 20 agents IA : conversion trois fois superieure a la recherche de l'app et plus de R$ 100M de ventes.",
+    "resume_citable": "Lance en novembre 2025, le WhatsApp da Lu de Magalu fait tenir tout l'achat dans WhatsApp grace a plus de 20 agents IA orchestres ; selon le release de resultats 2T26 de Magalu, le canal depasse 18 millions de conversations, convertit trois fois mieux que la recherche classique de l'app, affiche un NPS de 84, environ 20 % de reachat et plus de 100 millions de reais de ventes cumulees.",
+    "faq": [
+      {
+        "q": "Qu'est-ce que le WhatsApp da Lu de Magalu ?",
+        "a": "Un canal de vente dans WhatsApp ou la Lu, le personnage virtuel de Magalu, conseille le client en texte, vocal ou photo, recommande des produits du catalogue et de la marketplace, encaisse le paiement par Pix ou carte et assure le suivi de commande et le SAV, sans quitter la conversation."
+      },
+      {
+        "q": "Quels resultats Magalu publie-t-elle ?",
+        "a": "Dans le release de resultats du deuxieme trimestre 2026 : plus de 18 millions de conversations depuis le lancement, une conversion trois fois superieure a la recherche classique de l'app, un NPS de 84, environ 20 % de reachat et plus de 100 millions de reais de ventes cumulees atteints en juillet 2026."
+      },
+      {
+        "q": "Qui a developpe l'assistante ?",
+        "a": "Luizalabs, la division technologie de Magalu, avec Meta, Google Cloud et Bain & Company, selon l'etude de cas de Bain. Le systeme orchestre plus de 20 agents IA et combine modeles proprietaires et modeles tiers."
+      }
+    ]
+  }
+}

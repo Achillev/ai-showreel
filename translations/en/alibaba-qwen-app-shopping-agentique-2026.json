@@ -1,0 +1,115 @@
+{
+  "seo": {
+    "title": "Qwen App (Alibaba): AI shopping agent connected to Taobao - 250 million first AI-driven purchases (2026)",
+    "meta_description": "Alibaba connects its Qwen AI app to Taobao and Tmall: 250 million users have made a first AI-driven purchase. No conversion effect published.",
+    "resume_citable": "According to its results filed with the SEC, Alibaba counts 250 million users who made their first AI-driven purchase through the agentic features of the Qwen app (up from about 140 million at the end of February 2026), without publishing any effect on conversion or GMV.",
+    "faq": [
+      {
+        "q": "How is this different from Taobao's recommendations?",
+        "a": "Recommendation ranks products in the app's feeds. Here, a conversational agent searches, compares and places the order on the user's behalf, from the Qwen app or from an assistant inside Taobao."
+      },
+      {
+        "q": "Does Alibaba publish a conversion or GMV gain?",
+        "a": "No. The results quantify adoption (250 million users who made a first AI-driven purchase) but no isolated commercial effect, and the launch was backed by three billion yuan in incentives."
+      },
+      {
+        "q": "How much does it cost Alibaba?",
+        "a": "The group does not put a figure on the cost of this program alone. It attributes part of its AI segment's loss to the rise in inference costs tied to the Qwen app."
+      }
+    ]
+  },
+  "pattern": "GenAI shopping agent that searches, compares and places orders in a marketplace catalog from a chat interface",
+  "etape_parcours": "discovery -> consideration -> purchase -> post-purchase",
+  "objectif_business": "Make Alibaba's consumer AI assistant a new entry point to its marketplaces, by moving the start of the purchase from the search bar to the conversation, and thereby extend the customer reach of the group's e-commerce.",
+  "description": "Qwen, Alibaba's consumer AI app, was connected on January 15, 2026 to the group's services (Taobao and Tmall, Taobao Instant Commerce, Amap, Fliggy, Alipay) to carry out real tasks: ordering a meal or groceries, booking a ticket, buying a product. The launch was driven by a Chinese New Year campaign starting February 6, with three billion yuan in incentives announced by the group. According to the quarterly results published in March 2026, about 140 million users had made their first AI-driven purchase through Qwen's agentic features by the end of February, and Qwen had passed 300 million monthly active users. On May 11, 2026, Alibaba opened the entire Taobao and Tmall catalog (more than 4 billion products) to the Qwen app, whereas the commerce features had until then covered only a few test categories, and launched a Qwen Shopping Assistant in the Taobao app, reachable from the messages tab: comparisons, virtual try-on for clothing, coupon stacking during shopping festivals, and 30-day price tracking that places the order automatically once the target price is reached. In its results for the quarter ended June 30, 2026, Alibaba reports 250 million users who have made their first AI-driven purchase through Qwen since its launch. The group, however, publishes no conversion, basket or GMV figure attributed to these agents; on the contrary, it cites a rise in inference costs tied to the Qwen app among the losses of its AI segment. The evidence therefore covers adoption at scale, not an isolated commercial effect, and that adoption was obtained with heavy subsidies.",
+  "points_cles": [
+    "Alibaba connects its Qwen AI app to Taobao, Tmall and fast delivery so users can shop in conversation.",
+    "Qwen agents with order, logistics and customer service skills, across more than 4 billion products.",
+    "250 million users have made a first AI-driven purchase through Qwen.",
+    "Evidence A on scale only: no effect on conversion or GMV published, launch heavily subsidized."
+  ],
+  "resultats": [
+    { "metrique": "Users who have made a first AI-driven purchase through Qwen since its launch (as of the quarter ended June 30, 2026)" },
+    { "metrique": "Same indicator at the end of February 2026, after the Chinese New Year campaign" },
+    { "metrique": "Monthly active users of consumer Qwen, across all platforms (February 2026)" },
+    { "metrique": "Taobao and Tmall catalog products accessible to the agent since May 2026" }
+  ],
+  "niveau_preuve": {
+    "justification": "The adoption figures appear in two earnings releases filed with the SEC (6-K); they prove scale, but no effect on conversion or GMV is published, and initial adoption was bought through a three billion yuan campaign."
+  },
+  "stack_technique": [
+    { "detail": "In-house foundation model, described as fine-tuned on more than twenty years of transaction and merchant operations data; multimodal model for virtual try-on." },
+    { "detail": "Order management, logistics and after-sales service skills connected to the catalog." },
+    { "detail": "The group's marketplaces and fast delivery service, integrated into the Qwen app." }
+  ],
+  "fonctionnement_operationnel": {
+    "cadence": "Real time, at each user request in the chat; peak periods driven by campaigns (Chinese New Year, 618) with financial incentives.",
+    "opere_par": "The consumer Qwen group (now AI Labs and Applications) for the app, Taobao and Tmall e-commerce teams for the integrated assistant and the catalog.",
+    "signal_pilote": "The intent expressed in natural language and the user's order history. Without access to the full catalog and to the order and logistics skills, the agent can only advise and sends the user back to classic search.",
+    "etapes": [
+      {
+        "etape": "Capture the intent",
+        "detail": "The user describes a need in the chat; the agent asks follow-up questions about budget or style.",
+        "acteur": "AI"
+      },
+      {
+        "etape": "Search and compare",
+        "detail": "The agent queries the Taobao and Tmall catalog, suggests options or a product bundle and side-by-side comparisons, drawing on the order history.",
+        "acteur": "AI"
+      },
+      {
+        "etape": "Order in the chat",
+        "detail": "The transaction is completed in the conversation window, with platform coupons stacked; price tracking can trigger the purchase automatically at the threshold set by the user.",
+        "acteur": "AI / user"
+      },
+      {
+        "etape": "Track and provide after-sales service",
+        "detail": "The agent's skills cover order management, logistics and after-sales service.",
+        "acteur": "AI / e-commerce platform"
+      }
+    ]
+  },
+  "replication": {
+    "prerequis_data": [
+      "A structured product catalog that can be exposed to an agent (attributes, stock, prices, lead times)",
+      "Order history and customer reviews usable for personalization",
+      "Order, logistics tracking and after-sales APIs the agent can call"
+    ],
+    "prerequis_orga": [
+      "A clear decision on how the classic search journey and the conversational journey coexist",
+      "Guardrails on purchases triggered by the agent (confirmation, caps, cancellation)",
+      "Measurement of the incremental effect planned from the start, separate from adoption"
+    ],
+    "stack_possible": [
+      "General-purpose LLM with tool calling (function calling) connected to the commerce APIs",
+      "Agentic purchase protocols offered by platforms and payment providers",
+      "Existing product search engine exposed as a tool for the agent"
+    ],
+    "equipe": "Conversational commerce product manager, LLM and API integration engineers, data analyst for incremental measurement, lawyer for automatic purchases and data protection.",
+    "playbook": [
+      {
+        "action": "Expose the catalog, the cart and order tracking as tools an agent can call.",
+        "livrable": "A documented and secured commerce API layer for the agent"
+      },
+      {
+        "action": "Launch a shopping assistant on a few test categories, with follow-up questions and comparisons.",
+        "livrable": "Assistant in production on a limited scope"
+      },
+      {
+        "action": "Run a controlled test against the classic search journey and read conversion, basket and returns.",
+        "livrable": "Measurement of the incremental effect, separated from volumes driven by incentives"
+      },
+      {
+        "action": "Extend to the full catalog and add after-sales skills and price tracking.",
+        "livrable": "Agent covering the whole journey, from inspiration to after-sales"
+      }
+    ],
+    "premiere_etape": "Pick a category where comparison is tedious (equipment, home appliances), connect an agent there that queries the catalog and prepares the cart, and compare its conversion with classic search on a randomly drawn sample."
+  },
+  "statut_vivant": {
+    "note": "Program cited in the August 2026 results, with a rise in the number of users since February; the group created a dedicated segment (AI Labs and Applications) that includes the Qwen app."
+  },
+  "transposable_ue": {
+    "note": "The setup relies on an integrated ecosystem (AI assistant, marketplace, fast delivery, payment) owned by a single group, which a European retailer generally does not have. In the EU, using order history to personalize, automatic purchases triggered by a price threshold and conversation as a shopping interface require a GDPR legal basis, transparency about the AI (AI Act) and explicit consent to the payment order."
+  }
+}

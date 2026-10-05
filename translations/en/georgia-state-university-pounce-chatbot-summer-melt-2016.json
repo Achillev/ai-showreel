@@ -1,0 +1,136 @@
+{
+  "seo": {
+    "title": "Georgia State University: Pounce SMS chatbot to convert admitted students - +3.3 points of enrollment in a randomized trial (2016)",
+    "meta_description": "Georgia State follows up with admitted students by SMS through Pounce (AdmitHub, now Mainstay). Published randomized trial: +3.3 points of on-time enrollment.",
+    "resume_citable": "In 2016, Georgia State University handed Pounce, an SMS assistant from AdmitHub (now Mainstay), the follow-up of its admitted students until the start of term: in a randomized trial on more than 7,000 admitted students published in AERA Open, the treatment group was 3.3 points more likely to enroll on time, with fewer than 1% of messages escalated to staff.",
+    "faq": [
+      {
+        "q": "What is Pounce?",
+        "a": "Pounce is Georgia State University's SMS conversational assistant, built by AdmitHub (now Mainstay) and launched in April 2016. It nudges admitted students on the steps they have not completed before the start of term and answers their questions at any hour, escalating unresolved cases to humans."
+      },
+      {
+        "q": "What effect was measured?",
+        "a": "In the randomized trial published in AERA Open by Lindsay Page and Hunter Gehlbach, admitted students committed to Georgia State who received Pounce were 3.3 points more likely to enroll on time than the control group. According to the vendor case study cited by Campus Technology, summer melt in the treatment group was 21.4% lower."
+      },
+      {
+        "q": "Is the system still in service?",
+        "a": "In January 2024, Georgia State said it had extended Pounce to the enrollment communications of about 40,000 students and adapted it into a course assistant. In April 2026, U.S. News still describes it in the present tense. No more recent usage figure has been published."
+      },
+      {
+        "q": "What is the level of evidence?",
+        "a": "Level A by equivalence: the effect comes from a randomized controlled trial published in a peer-reviewed journal, corroborated by a university press release, the vendor case study and the press. The measured effect dates from 2016."
+      }
+    ]
+  },
+  "pattern": "SMS conversational assistant that follows up with each prospect on the exact step where they are stuck, fed by data on the progress of their file",
+  "etape_parcours": "purchase",
+  "objectif_business": "Reduce summer melt, meaning the share of admitted students who confirmed their attendance in the spring but do not show up at the start of term. At Georgia State, this rate had risen from about 12% to nearly 19% according to Campus Technology, and mail, email and phone produced few results. The university wanted to follow each admitted student individually on their steps without hiring the team that this volume of conversations would have required.",
+  "description": "Pounce is an SMS conversational assistant built by AdmitHub (now Mainstay) for Georgia State University and launched in April 2016. It writes to admitted students during the summer between admission and the start of term: deadline reminders, information on financial aid, housing or course registration, surveys, and instant answers to questions asked at any hour (tuition payment date, sending ACT scores, the FAFSA form). The nudges are not the same for everyone: the system cross-references the university's data on the progress of each file and only pushes on the tasks where the admitted student is behind. Questions the assistant cannot handle go to the vendor's team or to Georgia State staff. The first season was run as a randomized trial: of more than 7,000 admitted students with a US mobile number, half received Pounce and the other half the usual communication by email and mail. The trial, led by Lindsay Page and Hunter Gehlbach and published in the journal AERA Open, measures among admitted students committed to Georgia State better completion of required steps and a 3.3-point higher probability of enrolling on time. Campus Technology, drawing on the vendor case study, reports for the treatment group a summer melt 21.4% lower than in the control group, nearly 200,000 messages exchanged, and fewer than 1% of the 50,000 student messages requiring staff intervention. The university then extended Pounce to the enrollment communications of about 40,000 students on its Atlanta and Perimeter College campuses, then adapted it into a course assistant from 2021. Two caveats. The strongest figure remains the one from the 2016 trial: the later scale-ups are not measured against a control group in the sources consulted. And the drop in summer melt from 19% to 9% cited by the university in 2024 is not attributed to the chatbot alone.",
+  "points_cles": [
+    "In April 2016, Georgia State launches Pounce, an SMS assistant from AdmitHub (now Mainstay), for admitted students.",
+    "Nudges follow the tasks each admitted student has not yet done; fewer than 1% of messages are escalated to staff.",
+    "Randomized trial published in AERA Open: +3.3 points of on-time enrollment in the treatment group.",
+    "Extended to about 40,000 students (GSU, 2024), still cited in April 2026 by U.S. News."
+  ],
+  "resultats": [
+    { "metrique": "Increase in the probability of on-time enrollment among admitted students committed to GSU, treatment group versus control group (randomized trial, 2016)" },
+    { "metrique": "Difference in summer melt between treatment group and control group, according to the vendor case study cited by the press" },
+    { "metrique": "Messages exchanged by Pounce with the treatment group during the four-month trial" },
+    { "metrique": "Share of the more than 50,000 student messages that required GSU staff intervention during the trial" },
+    { "metrique": "Students covered by Pounce for enrollment communications after the extension (Atlanta and Perimeter College)" }
+  ],
+  "niveau_preuve": {
+    "justification": "None of the categories A to D literally describes the case: the core evidence is a randomized controlled trial published in a peer-reviewed journal (AERA Open, 2017), led by academic researchers and reproduced by Georgia State's institute (S1). It is primary, uninterpreted evidence of the causal effect, stronger than a vendor case study (B), hence the A rating by equivalence; it is corroborated by an official university press release (S4, extension to about 40,000 students), by the Mainstay case study (S5) and by the press (S3, S6). Caveat: the measured effect dates from the 2016 season and the vendor took part in setting up the trial."
+  },
+  "stack_technique": [
+    { "detail": "SMS conversational assistant custom-built for Georgia State and named Pounce, after the mascot. The vendor's team supervises the assistant's learning." }
+  ],
+  "fonctionnement_operationnel": {
+    "cadence": "Seasonal and continuous: the campaign runs from admission in the spring to the fall start of term; within that window, nudges go out according to the deadline calendar and answers to questions are instant, day and night.",
+    "opere_par": "Georgia State admissions define the tasks, deadlines and content, and handle escalated questions. The vendor's team (AdmitHub, now Mainstay) supervises the assistant's learning and takes part of the messages the AI does not resolve.",
+    "signal_pilote": "Each admitted student's progress on required tasks (financial aid, housing, course registration, payments), pulled from the university's systems. Without this data kept current, the assistant nudges students who are already in order or misses those who are stuck, and the nudge turns back into a mass mailing.",
+    "etapes": [
+      {
+        "etape": "Task inventory",
+        "detail": "Admissions list the required steps before the start of term and their deadlines, and write the university's own answer base.",
+        "acteur": "marketing"
+      },
+      {
+        "etape": "File synchronization",
+        "detail": "Each admitted student's progress data is passed to the assistant so it knows which tasks remain to be done.",
+        "acteur": "data team"
+      },
+      {
+        "etape": "Targeted SMS nudge",
+        "detail": "Pounce sends each admitted student the reminders and information matching the tasks they have not finished, plus surveys.",
+        "acteur": "AI"
+      },
+      {
+        "etape": "Answering questions",
+        "detail": "The admitted student writes in natural language; the assistant answers the vast majority of messages immediately.",
+        "acteur": "AI"
+      },
+      {
+        "etape": "Escalation",
+        "detail": "Unresolved messages go to the vendor's team or to Georgia State staff (fewer than 1% of student messages during the trial).",
+        "acteur": "human"
+      },
+      {
+        "etape": "Reading intent and measurement",
+        "detail": "Changes of decision reported by admitted students in the conversation give admissions a continuous view of expected enrollments; the season is measured by actual enrollment rate.",
+        "acteur": "marketing"
+      }
+    ]
+  },
+  "replication": {
+    "prerequis_data": [
+      "A list of the required steps between the customer's commitment and their first actual use, with their deadlines",
+      "Current data, per person, on what has been done and what is missing, exportable to the conversation tool",
+      "A mobile number collected with consent suited to SMS nudges"
+    ],
+    "prerequis_orga": [
+      "A business team that writes and maintains the answer base and handles escalations",
+      "A clear escalation path to a human for sensitive questions (money, personal circumstances)",
+      "The willingness to measure against a control group in the first season, as Georgia State did"
+    ],
+    "stack_possible": [
+      "An SMS or messaging conversational assistant platform with question recognition and scheduled nudges (Mainstay type)",
+      "A connector to the system that holds file progress (CRM, enrollment management system)",
+      "A randomization and tracking tool to compare treatment group and control group"
+    ],
+    "premiere_etape": "Isolate the stage of the journey where people who are already committed drop out before using the service, list the tasks that block them and check that their progress can be read individually in the systems.",
+    "playbook": [
+      {
+        "action": "Measure the drop-off rate between commitment and activation, and identify the tasks that cause it.",
+        "livrable": "Prioritized list of blocking tasks, with their tracking data."
+      },
+      {
+        "action": "Write the answer base for frequent questions and the nudge calendar per task.",
+        "livrable": "Assistant content and nudge scenario."
+      },
+      {
+        "action": "Connect individual progress data to the assistant so that each nudge targets a missing task.",
+        "livrable": "Nudges personalized per person."
+      },
+      {
+        "action": "Launch the first season on a randomly drawn half of the population, with the other half receiving the usual communication.",
+        "livrable": "Causal measurement of the effect on activation."
+      },
+      {
+        "action": "Set up escalation to the human team and feed the answers back into the base.",
+        "livrable": "An assistant that improves and a team that handles only the difficult cases."
+      },
+      {
+        "action": "Extend to the whole population if the effect is confirmed, then to other moments in the journey.",
+        "livrable": "Generalized system and a second use case."
+      }
+    ],
+    "equipe": "A business owner (admissions or customer onboarding) who owns the tasks and content, a data profile for file synchronization, advisors who handle escalations, and methodological support for designing the trial and reading the results."
+  },
+  "statut_vivant": {
+    "note": "In January 2024, Georgia State described the extension of Pounce to about 40,000 students and its adaptation into a course assistant, funded by a $7.6M Department of Education grant. In April 2026, a U.S. News column presents it in the present tense as the tool that supports admitted students through to enrollment. The most recent source is a column, not a university document: no usage figure after 2024 was found."
+  },
+  "transposable_ue": {
+    "note": "The system relies on SMS sent to admitted students and on data about the progress of their file (financial aid, housing, course registration). In the EU, sending proactive SMS requires a clear legal basis and notice at the time the number is collected (GDPR, ePrivacy rules on electronic communications). The AI Act requires telling users they are talking to an AI system, which a mascot name is not enough to do. The question of minors arises for admitted students who are not yet 18. The principle (nudge personalized by missing task, escalation to a human) is not specific to the United States, but the original problem (FAFSA form, deposits) is specific to the US system: the task list has to be rebuilt for each country."
+  }
+}

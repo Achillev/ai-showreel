@@ -1,0 +1,126 @@
+{
+  "seo": {
+    "title": "Clinique: AI shade diagnosis and virtual try-on - conversion x2.5, basket +30%",
+    "meta_description": "Clinique scans the face to find the foundation shade and try it on in AR with Perfect Corp.: conversion x2.5, basket +30%, time on site x4 to x5.",
+    "resume_citable": "With Perfect Corp.'s AI face scan and virtual try-on, Clinique reports customers 2.5 times more likely to buy, a basket 30% larger and time on site multiplied by 4 to 5 after try-on.",
+    "faq": [
+      {
+        "q": "How does Clinique's shade diagnosis work?",
+        "a": "The customer has their face scanned; Perfect Corp.'s AI and Clinique's color algorithm (Shade Match Science) find the foundation shade, then recommend three matching lipsticks, which the customer can try on in AR."
+      },
+      {
+        "q": "What results does Clinique report?",
+        "a": "According to Jeremy Harris, the brand's VP of technology, in the Perfect Corp. case study: customers 2.5 times more likely to buy, a basket about 30% larger and time on site 4 to 5 times longer after try-on. The study is not dated."
+      },
+      {
+        "q": "Where is the setup deployed?",
+        "a": "On iPads in stores, on the desktop and mobile site and on microsites reached by QR code, in markets across Europe, Asia-Pacific, Latin America and North America."
+      }
+    ]
+  },
+  "pattern": "AI face scan shade diagnosis + AR virtual try-on + complementary product recommendation",
+  "etape_parcours": "consideration",
+  "objectif_business": "Remove the main barrier to buying foundation, choosing the right shade, by scanning the customer's face to suggest their shade, then sell more by recommending matching lipsticks and letting customers try on all the makeup without a sample.",
+  "description": "Clinique, a brand of the Estee Lauder group, built with Perfect Corp. a two-step shade selection journey. The customer has their face scanned; Perfect Corp.'s AI, combined with Clinique's color algorithm, called Shade Match Science, suggests the foundation shade, then recommends three lipsticks matched to that shade. The AR virtual try-on covers the brand's entire makeup range. The setup runs on three surfaces: iPads placed on in-store counters, which play an attract loop and also serve as a conversation opener for beauty advisors; the website, on desktop and mobile; and microsites opened by QR codes placed on displays, badge lanyards and other materials, which let customers continue trying on from home. During the COVID-19 pandemic, Perfect Corp. adjusted its algorithms so that the shade recommendation works even with a mask. According to Jeremy Harris, the brand's head of technology, the deployment covers retail and online markets in Europe, Asia-Pacific, Latin America and North America. The case study is not dated; the virtual try-on page on clinique.com is online as of October 5, 2026.",
+  "points_cles": [
+    "Clinique scans the customer's face to find their foundation shade and try it on in AR.",
+    "In-house color algorithm (Shade Match Science) combined with Perfect Corp.'s AI and AR.",
+    "Conversion x2.5, basket +30% and time on site x4 to x5 after try-on, according to the brand.",
+    "Evidence B (vendor case study); virtual try-on still live on clinique.com in October 2026."
+  ],
+  "resultats": [
+    { "metrique": "Purchase likelihood of customers who used the virtual try-on, as reported by the brand" },
+    { "metrique": "Basket size after virtual try-on (the pull quote at the top of the page says 35%, the body text and the headline say 30%)" },
+    { "metrique": "Time spent on site after virtual try-on" },
+    { "metrique": "Share of buyers of a product carrying the microsite QR code who used that code to do the virtual try-on" }
+  ],
+  "niveau_preuve": {
+    "justification": "Figures from a case study by the vendor Perfect Corp., stated by name by Clinique's VP of technology; the official clinique.com page confirms that the virtual try-on is still in production, without giving any figure."
+  },
+  "stack_technique": [
+    { "detail": "Virtual try-on for Clinique's entire makeup range, in store, on the website and on the microsites" },
+    { "detail": "Face scan to determine skin tone, adjusted to work with a mask" },
+    { "detail": "Recommendation of three lipsticks based on the foundation shade" },
+    { "detail": "Clinique's proprietary color algorithm combined with Perfect Corp.'s AI" }
+  ],
+  "fonctionnement_operationnel": {
+    "cadence": "Real time at each scan or try-on; shade catalog updated at each product launch",
+    "opere_par": "Clinique's Brand Technology team with Perfect Corp. (account, program and technical management); beauty advisors for in-store use",
+    "signal_pilote": "The match between the detected skin tone and Clinique's shade reference (Shade Match Science). If a shade is poorly calibrated or the capture is distorted (lighting, mask), the recommendation misleads and the conversion gain disappears.",
+    "etapes": [
+      {
+        "etape": "Entering the experience",
+        "detail": "The customer arrives through the counter iPad (attract loop), through the website, or by scanning a QR code on a display or a purchased product.",
+        "acteur": "customer / beauty advisor"
+      },
+      {
+        "etape": "Face scan and shade selection",
+        "detail": "Perfect Corp.'s AI analyzes the face; Clinique's color algorithm derives the foundation shade from it.",
+        "acteur": "AI (Perfect Corp. + Shade Match Science)"
+      },
+      {
+        "etape": "Complementary recommendation",
+        "detail": "The system suggests three lipsticks matched to the foundation shade found.",
+        "acteur": "AI (product recommendation)"
+      },
+      {
+        "etape": "AR try-on",
+        "detail": "The customer virtually tries on the foundation, lips and the rest of the makeup before buying.",
+        "acteur": "customer"
+      },
+      {
+        "etape": "Maintenance and roadmap",
+        "detail": "Clinique and Perfect Corp. evolve the features along a shared roadmap, such as the adaptation to mask wearing during the pandemic.",
+        "acteur": "Brand Technology team / Perfect Corp."
+      }
+    ]
+  },
+  "replication": {
+    "prerequis_data": [
+      "Catalog shade reference (foundation, lips) with usable colorimetric values",
+      "Matching rules between foundation shade and complementary products",
+      "Analytics tracking that distinguishes sessions with and without try-on"
+    ],
+    "prerequis_orga": [
+      "A technology lead on the brand side who manages the vendor",
+      "Training for in-store beauty advisors on using the tool",
+      "Camera consent and an image non-retention policy validated by the DPO"
+    ],
+    "stack_possible": [
+      "Perfect Corp.",
+      "ModiFace",
+      "Banuba",
+      "Revieve"
+    ],
+    "equipe": "An e-commerce or brand technology project manager, a front-end developer for the integration, a product lead for shade calibration, and retail to train the beauty advisors.",
+    "playbook": [
+      {
+        "action": "Start with foundation: calibrate the shade reference with the vendor and test scan accuracy on a panel of varied skin tones",
+        "livrable": "Shade finder validated on foundation"
+      },
+      {
+        "action": "Connect the AR try-on to the makeup product pages of the website, desktop and mobile",
+        "livrable": "Online try-on with camera consent"
+      },
+      {
+        "action": "Add complementary product recommendations based on the shade found",
+        "livrable": "Shade-to-product matching rules in production"
+      },
+      {
+        "action": "Measure conversion, basket and time spent by comparing users and non-users, ideally through A/B testing",
+        "livrable": "Quantified reading of the effect, corrected for self-selection bias"
+      },
+      {
+        "action": "Extend to stores (counter tablets) and link store and home through QR codes",
+        "livrable": "Omnichannel journey with QR scan tracking"
+      }
+    ],
+    "premiere_etape": "Launch a shade finder on the best-selling foundation range and measure user conversion against a control group."
+  },
+  "statut_vivant": {
+    "note": "The virtual try-on is accessible from the Services menu of clinique.com (Makeup Virtual Try-On page) in October 2026. The quantified case study, however, is not dated: the results cannot be tied to a specific period."
+  },
+  "transposable_ue": {
+    "note": "The face scan is used to determine skin tone: depending on the configuration, this may constitute processing of biometric data under GDPR. Plan for explicit camera consent, clear information and non-retention of images. Already deployed in Europe according to the brand."
+  }
+}

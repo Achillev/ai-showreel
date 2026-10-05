@@ -1,0 +1,113 @@
+{
+  "seo": {
+    "title": "Amity University Online: broad match and Smart Bidding on Search - cost per admission -54% (2025)",
+    "meta_description": "Amity University Online and its agency Univo moved their Search campaigns to broad match with Smart Bidding: cost per admission -54%, conversion x2.5.",
+    "resume_citable": "Amity University Online, with its agency Univo, combined broad match and Smart Bidding on its Google Search campaigns: cost per admission down 54% year over year, conversion rate x2.5 and admissions +10%, according to the case published by Google in March 2025.",
+    "faq": [
+      {
+        "q": "Doesn't broad match blow up irrelevant traffic?",
+        "a": "That is the risk. In the Amity case, the agency Univo offset it with account-level exclusions and work on search terms, and Smart Bidding bids according to the probability of conversion."
+      },
+      {
+        "q": "Are the figures independently verified?",
+        "a": "No. The three campaign figures come from Google. Univo confirms the acquisition partnership and the scale of the program, not the campaign figures."
+      }
+    ]
+  },
+  "pattern": "Broad match combined with Smart Bidding automated bidding on Search campaigns, with account-level exclusions, to lower acquisition cost without losing volume",
+  "etape_parcours": "discovery -> consideration -> purchase",
+  "objectif_business": "Lower the cost of acquiring online students on performance channels without reducing enrollment volume.",
+  "description": "Amity University Online is the online degree offering of the Indian private university Amity. Its partner Univo, which runs the end-to-end chain on its behalf (program design, UGC compliance, learner acquisition, digital delivery), says it has grown the ecosystem to more than 2 lakh learners (200,000) in India and internationally. The goal set for performance campaigns was to reduce acquisition cost without losing enrollment volume. Univo switched the Google Search campaigns to broad match combined with Smart Bidding: Google matches queries to keywords by meaning and adjusts the bid on each query according to the probability of conversion. To keep broad match from pulling in useless traffic, the agency set account-level exclusions and reworked the search terms. Google reports, over one year, a 54% drop in cost per admission, a conversion rate multiplied by 2.5 and 10% more admissions. The case appears in the series \"How businesses are putting AI to work to drive results\" published by Google in March 2025. The exact campaign period and the amounts invested are not published.",
+  "points_cles": [
+    "Amity University Online moved its Search campaigns to broad match with Smart Bidding, through the agency Univo.",
+    "Account-level exclusions to filter off-target traffic and keep qualified leads.",
+    "Cost per admission down 54% year over year, conversion rate x2.5, admissions +10%.",
+    "Evidence B: case published by Google in March 2025, acquisition partnership confirmed by Univo."
+  ],
+  "resultats": [
+    { "metrique": "Cost per admission, year over year" },
+    { "metrique": "Conversion rate" },
+    { "metrique": "Admissions volume" },
+    { "metrique": "Learners reached by Amity Online with Univo (program scale)" }
+  ],
+  "niveau_preuve": {
+    "justification": "The three campaign figures come from a case published by Google (an interested platform source); the agency Univo confirms on its side the long-term acquisition partnership and the scale of the program, without repeating the campaign figures."
+  },
+  "stack_technique": [
+    { "detail": "Campaigns on the Google search network, run by the agency Univo." },
+    { "detail": "Google automated bidding that adjusts the bid on each query according to conversion signals." },
+    { "detail": "Broad keyword matching: Google matches queries by meaning, and the agency filters off-target traffic with account-level exclusions." }
+  ],
+  "fonctionnement_operationnel": {
+    "cadence": "Continuous on Search campaigns, with regular review of search terms reports and updates to exclusions.",
+    "opere_par": "The performance marketing team of the agency Univo, on behalf of Amity University Online.",
+    "signal_pilote": "The conversion reported to Google Ads (qualified lead, then admission). If only the raw lead is reported, Smart Bidding optimizes toward filled-in forms and cost per admission can rise without cost per lead showing it.",
+    "etapes": [
+      {
+        "etape": "Set the reference conversion",
+        "detail": "Define the event the bids should target (qualified lead, admission) and report it into Google Ads.",
+        "acteur": "Agency / data team"
+      },
+      {
+        "etape": "Open keywords to broad match",
+        "detail": "Move the Search ad groups to broad match to widen coverage of applicant queries.",
+        "acteur": "Agency"
+      },
+      {
+        "etape": "Let Smart Bidding set the bids",
+        "detail": "The algorithm adjusts the bid on each query according to the probability of conversion.",
+        "acteur": "Google AI"
+      },
+      {
+        "etape": "Filter off-target traffic",
+        "detail": "Read the search terms triggered and add account-level exclusions to rule out irrelevant queries.",
+        "acteur": "Agency"
+      },
+      {
+        "etape": "Compare with the same month of the previous year",
+        "detail": "Track cost per admission, conversion rate and admissions volume year over year, given the seasonality of intakes.",
+        "acteur": "Agency / Amity marketing"
+      }
+    ]
+  },
+  "replication": {
+    "prerequis_data": [
+      "Lead tracking through to admission, matchable with Google clicks",
+      "Enough conversion history for Smart Bidding to learn",
+      "Consent Mode v2 and a legal basis for importing conversions in the EU"
+    ],
+    "prerequis_orga": [
+      "Agreement between marketing and the admissions office on the definition of a qualified lead",
+      "Regular review of search terms by the agency or the in-house team"
+    ],
+    "stack_possible": [
+      "Google Ads Search in broad match + Smart Bidding, offline conversion import from the admissions CRM"
+    ],
+    "equipe": "A Search media buyer, a data or CRM profile for importing offline conversions, and a contact on the admissions side to qualify leads.",
+    "playbook": [
+      {
+        "action": "Report into Google Ads a conversion close to actual enrollment (qualified lead or admission imported from the CRM), including Consent Mode v2 in the EU.",
+        "livrable": "A reliable reference conversion action, usable by Smart Bidding."
+      },
+      {
+        "action": "Move part of the Search campaigns to broad match with a Smart Bidding strategy on that conversion, keeping a control campaign in exact or phrase match.",
+        "livrable": "Broad match versus control test live."
+      },
+      {
+        "action": "Read the search terms reports and build an account-level exclusion list.",
+        "livrable": "Shared exclusion list and regular review."
+      },
+      {
+        "action": "Compare cost per admission, conversion rate and volume year over year before rolling out.",
+        "livrable": "Documented switch decision."
+      }
+    ],
+    "premiere_etape": "Check that the admission (and not only the form) is reported as a conversion in Google Ads, then launch a broad match plus Smart Bidding test on a high-volume campaign."
+  },
+  "statut_vivant": {
+    "note": "The Univo-Amity partnership and acquisition on Google are still active according to Univo, but no source after March 2025 confirms that the broad match plus Smart Bidding setup or the figures still hold."
+  },
+  "transposable_ue": {
+    "note": "Broad match and Smart Bidding are available in the EU without restriction. The case ran in India; in Europe, optimizing on admission requires reporting an offline event (paid enrollment) to Google Ads, hence Consent Mode v2, conversion import governed by GDPR and a legal basis for CRM matching. No high-risk classification under the AI Act for this type of campaign."
+  }
+}

@@ -1,0 +1,300 @@
+{
+  "id": "westpac-intelligence-offres-epargne-personnalisees-2026",
+  "type_fiche": "succes",
+  "marque": "Westpac",
+  "groupe": "Westpac Banking Corporation",
+  "industrie": "banque_assurance_fintech",
+  "marches_deploiement": [
+    "Australie"
+  ],
+  "transposable_ue": {
+    "flag": "oui_avec_adaptations",
+    "note": "Le ciblage d'offres d'epargne repose sur les donnees de compte et de comportement des clients. En UE, ce profilage marketing demande une base legale RGPD (interet legitime documente ou consentement selon le canal), un droit d'opposition au marketing direct et une information claire. Une offre de depot ciblee ne releve pas du haut risque de l'AI Act, contrairement au scoring de credit : garder le moteur d'offres separe des modeles d'octroi."
+  },
+  "metier": "marketing client / CRM bancaire",
+  "logo_domain": "westpac.com.au",
+  "intervenants": [
+    {
+      "nom": "Andrew McMullan",
+      "role": "Chief Data, Digital and AI Officer, Westpac",
+      "source_ref": "S1"
+    },
+    {
+      "nom": "Dan Jermyn",
+      "role": "Chief AI Officer, Westpac",
+      "source_ref": "S1"
+    },
+    {
+      "nom": "Luis Uguina",
+      "role": "General manager data, digital and AI, division Consumer, Westpac",
+      "source_ref": "S3"
+    }
+  ],
+  "axes": {
+    "levier": "activation_conversion",
+    "touchpoints": [
+      "application mobile Westpac",
+      "canaux digitaux de la banque",
+      "conversations avec les banquiers Business"
+    ],
+    "etape_parcours": "fidelite",
+    "famille": "personnalisation",
+    "pattern": "offres produit personnalisees sur la base clients existante, mesurees contre groupe de controle",
+    "type_ia": [
+      "machine learning",
+      "modeles de propension"
+    ],
+    "plateforme_stack": [
+      "Westpac Intelligence (intelligence layer in-house)",
+      "Snowflake (partenaire Intelligence Layer)"
+    ],
+    "objectif_metrique": [
+      "taux d'ouverture de compte de depot",
+      "clients touches",
+      "settlements issus des leads Business"
+    ]
+  },
+  "implementation": "hybride",
+  "objectif_business": "Renforcer la collecte de depots aupres des clients particuliers deja en portefeuille, en leur adressant la bonne offre d'epargne au bon moment, et faire remonter aux banquiers Business les opportunites detectees dans les donnees.",
+  "points_cles": [
+    "Westpac pousse des offres d'epargne personnalisees a ses clients particuliers via sa couche Westpac Intelligence.",
+    "500 000 clients touches en deux semaines par ces offres de depot.",
+    "Ouverture de compte plus de deux fois superieure au groupe de controle.",
+    "Chiffres publies dans la presentation investisseurs du 15 septembre 2026."
+  ],
+  "description": "Westpac, deuxieme banque australienne, a construit une couche de donnees et d'IA baptisee Westpac Intelligence, posee sur une fondation de donnees unique qui agrege 285 systemes sources. Cette couche alimente l'application mobile, le digital banker et le centre de contact digital. Son premier usage chiffre est commercial : des offres de depot personnalisees envoyees aux clients particuliers. Selon la presentation Data, Digital and AI Update du 15 septembre 2026, ces offres ont touche 500 000 clients en deux semaines, avec une ouverture de compte plus de deux fois superieure a celle du groupe de controle. Westpac precise en note de bas de page que la comparaison se fait contre ce groupe de controle, ce qui en fait une mesure incrementale et pas un simple taux de reponse. Le meme moteur produit des smart digital leads pour la banque Business : 16 000 conversations clients et des settlements multiplies par 2,8 sur les cinq mois a fin aout 2026, compare a la meme periode un an plus tot (comparaison sur periode, sans groupe temoin). En juin 2026, Luis Uguina, general manager data, digital and AI de la division Consumer, decrivait l'intention : reperer dans les signaux comportementaux le client qui envisage de changer de banque et lui adresser une offre d'epargne par le bon canal, au bon moment. La banque cite Snowflake comme partenaire de cette couche. Hors perimetre de la fiche mais publie le meme jour : un moteur de recherche IA sur le site public, lance le 21 aout 2026, avec une selection du premier resultat en hausse de 75 % contre les 12 semaines precedentes. Westpac ne communique ni le montant des depots collectes, ni le modele utilise.",
+  "resultats": [
+    {
+      "metrique": "Clients particuliers touches par les offres de depot personnalisees en deux semaines",
+      "valeur": "500k",
+      "citation_exacte": "Customers reached in 2 weeks",
+      "source_ref": "S1"
+    },
+    {
+      "metrique": "Ouverture de compte (account uptake) contre le groupe de controle",
+      "valeur": ">2x",
+      "citation_exacte": "Compared to the control group",
+      "source_ref": "S1"
+    },
+    {
+      "metrique": "Settlements issus des smart digital leads Business, cinq mois a fin aout 2026 contre la meme periode un an plus tot (16 000 conversations clients)",
+      "valeur": "x2,8",
+      "citation_exacte": "Increase in settlements",
+      "source_ref": "S1"
+    }
+  ],
+  "niveau_preuve": {
+    "niveau": "A",
+    "justification": "Les chiffres viennent de la presentation investisseurs officielle Data, Digital and AI Update du 15 septembre 2026, publiee sur le site investisseurs de Westpac (banque cotee a l'ASX), avec une note explicite de comparaison au groupe de controle ; Capital Brief couvre la presentation le jour meme et Cyber Daily documente en juin 2026 l'intention de ciblage d'offres d'epargne par l'Intelligence Layer."
+  },
+  "dates": {
+    "lancement": "Intelligence Layer devoilee en novembre 2025 selon Cyber Daily ; date de lancement des offres de depot personnalisees non publiee",
+    "derniere_confirmation_activite": "15 septembre 2026 (presentation investisseurs Data, Digital and AI Update)",
+    "verifie_le": "2026-10-05",
+    "revoir_apres": "2027-04-05"
+  },
+  "statut_vivant": {
+    "statut": "confirme",
+    "note": "Chiffres presentes aux investisseurs le 15 septembre 2026, sur des donnees arretees a fin aout 2026. Le perimetre exact (canaux, produits d'epargne concernes) et la duree de la campagne de deux semaines ne sont pas detailles. A verifier aux resultats annuels de novembre 2026."
+  },
+  "sources": [
+    {
+      "ref": "S1",
+      "type": "document_officiel_sec",
+      "fiabilite": "T1_primaire",
+      "titre": "Westpac Banking Corporation - Data, Digital and AI Update, September 2026 (presentation investisseurs)",
+      "url": "https://www.westpac.com.au/content/dam/public/wbc/documents/pdf/aw/ic/wbc-DDAI-Update-Sep26.pdf",
+      "date_publication": "2026-09-15",
+      "consulte_le": "2026-10-05"
+    },
+    {
+      "ref": "S2",
+      "type": "presse",
+      "fiabilite": "T3_presse_etablie",
+      "titre": "Westpac goes all in on AI (Capital Brief, Rose Mackenzie)",
+      "url": "https://www.capitalbrief.com/article/westpac-goes-all-in-on-ai-137b0bf5-149c-4644-ba9f-f46fe177140d/",
+      "date_publication": "2026-09-15",
+      "consulte_le": "2026-10-05"
+    },
+    {
+      "ref": "S3",
+      "type": "presse",
+      "fiabilite": "T4_secondaire",
+      "titre": "Westpac's AI use will see the bank shift to a 'digital-first service' (Cyber Daily, Daniel Croft)",
+      "url": "https://www.cyberdaily.au/digital-transformation/13744-westpacs-ai-use-will-see-the-bank-shift-to-a-digital-first-service",
+      "date_publication": "2026-06-12",
+      "consulte_le": "2026-10-05"
+    }
+  ],
+  "fonctionnement_operationnel": {
+    "cadence": "Campagnes d'offres declenchees depuis la couche Westpac Intelligence, qui capte en continu les signaux et evenements des clients ; les leads Business sont produits au fil de l'eau pour les banquiers.",
+    "opere_par": "Equipe Data, Digital and AI de Westpac (direction d'Andrew McMullan) avec les equipes produit epargne de la division Consumer ; les banquiers Business pour les leads.",
+    "signal_pilote": "L'ouverture de compte par les clients cibles, comparee a un groupe de controle qui ne recoit pas l'offre. Sans ce groupe temoin, la banque ne distingue plus ce que l'offre provoque de ce que les clients auraient fait seuls.",
+    "etapes": [
+      {
+        "etape": "Consolidation des donnees",
+        "detail": "Les donnees des 285 systemes sources sont regroupees dans une fondation de donnees gouvernee, sur laquelle s'appuie la couche Westpac Intelligence.",
+        "acteur": "Equipe data"
+      },
+      {
+        "etape": "Detection et selection des clients",
+        "detail": "La couche traite les signaux comportementaux pour reperer les clients a qui adresser une offre de depot, par exemple ceux qui envisagent de changer de banque.",
+        "acteur": "IA"
+      },
+      {
+        "etape": "Diffusion de l'offre",
+        "detail": "L'offre personnalisee part dans l'application et les canaux digitaux ; un groupe de controle est retenu.",
+        "acteur": "Marketing et plateforme digitale"
+      },
+      {
+        "etape": "Leads Business",
+        "detail": "Pour la banque Business, la meme couche genere des smart digital leads qui ouvrent une conversation entre banquier et client.",
+        "acteur": "IA puis banquier"
+      },
+      {
+        "etape": "Mesure",
+        "detail": "Ouverture de compte comparee au groupe de controle pour les offres ; conversations et settlements compares a la periode precedente pour les leads.",
+        "acteur": "Equipe data et marketing"
+      }
+    ]
+  },
+  "schema_flow": {
+    "statut": "approche_type",
+    "noeuds": [
+      {
+        "id": "n1",
+        "role_generique": "data_source",
+        "label": "285 systemes sources : comptes, operations, produits"
+      },
+      {
+        "id": "n2",
+        "role_generique": "cdp",
+        "label": "Fondation de donnees gouvernee unique"
+      },
+      {
+        "id": "n3",
+        "role_generique": "modele_ia",
+        "label": "Westpac Intelligence : signaux, predictions, offres et leads",
+        "outil_documente": "Westpac Intelligence"
+      },
+      {
+        "id": "n4",
+        "role_generique": "site_app",
+        "label": "Application mobile et canaux digitaux"
+      },
+      {
+        "id": "n5",
+        "role_generique": "humain",
+        "label": "Banquiers Business"
+      },
+      {
+        "id": "n6",
+        "role_generique": "humain",
+        "label": "Clients particuliers et groupe de controle"
+      }
+    ],
+    "liens": [
+      [
+        "n1",
+        "n2"
+      ],
+      [
+        "n2",
+        "n3"
+      ],
+      [
+        "n3",
+        "n4",
+        "offre de depot personnalisee"
+      ],
+      [
+        "n3",
+        "n5",
+        "smart digital leads"
+      ],
+      [
+        "n4",
+        "n6"
+      ],
+      [
+        "n6",
+        "n3",
+        "ouverture de compte, boucle de mesure"
+      ]
+    ]
+  },
+  "stack_technique": [
+    {
+      "nom": "Westpac Intelligence",
+      "categorie": "plateforme",
+      "detail": "Couche in-house qui relie donnees et IA et alimente l'app, le digital banker et le centre de contact digital. Westpac annonce une activation des insights clients 6 fois plus rapide sur les premiers cas d'usage.",
+      "url": "https://www.westpac.com.au"
+    },
+    {
+      "nom": "Snowflake",
+      "categorie": "infra",
+      "detail": "Cite par Westpac comme partenaire de l'Intelligence Layer dans la presentation du 15 septembre 2026.",
+      "url": "https://www.snowflake.com"
+    }
+  ],
+  "replication": {
+    "statut_epistemique": "infere",
+    "prerequis_data": [
+      "vue client unifiee couvrant comptes, operations et produits detenus",
+      "signaux comportementaux exploitables (soldes, virements sortants, baisse d'usage)",
+      "historique des reponses aux offres precedentes pour entrainer la propension",
+      "dispositif de groupe de controle integre a l'outil de campagne"
+    ],
+    "prerequis_orga": [
+      "une equipe data et IA qui possede la couche d'activation, distincte des projets d'infrastructure",
+      "un accord avec les equipes produit epargne sur les offres et les marges autorisees",
+      "une regle de mesure fixee avant le lancement : incrementalite contre groupe temoin"
+    ],
+    "stack_possible": [
+      "data warehouse cloud (Snowflake, BigQuery, Databricks)",
+      "modeles de propension in-house ou plateforme de next best offer",
+      "outil de campagne CRM capable de gerer un groupe de controle",
+      "notifications in-app et canaux digitaux"
+    ],
+    "premiere_etape": "Choisir un seul produit d'epargne, construire un score de propension sur les clients existants, et envoyer l'offre a une population ciblee avec un groupe de controle tire au hasard.",
+    "playbook": [
+      {
+        "action": "Consolider les donnees de compte et de comportement dans une base gouvernee accessible a l'equipe data.",
+        "livrable": "Vue client unifiee exploitable pour le ciblage."
+      },
+      {
+        "action": "Definir les signaux declencheurs (risque de depart, excedent de liquidites) et entrainer un modele de propension a l'ouverture d'un compte d'epargne.",
+        "livrable": "Score de propension par client et liste de declencheurs."
+      },
+      {
+        "action": "Diffuser l'offre dans l'app sur la population ciblee en retenant un groupe de controle aleatoire.",
+        "livrable": "Campagne en production avec groupe temoin."
+      },
+      {
+        "action": "Mesurer l'ouverture de compte contre le groupe de controle, puis etendre a d'autres produits et aux leads pour les banquiers.",
+        "livrable": "Lecture incrementale et decision d'extension."
+      }
+    ],
+    "equipe": "Un data scientist propension, un ingenieur data sur la fondation de donnees, un responsable CRM qui pilote les campagnes et le groupe de controle, un product owner epargne cote metier."
+  },
+  "seo": {
+    "slug": "westpac-intelligence-offres-epargne-personnalisees-2026",
+    "title": "Westpac : offres d'epargne personnalisees par IA - ouverture de compte plus de 2 fois le groupe de controle (2026)",
+    "meta_description": "Westpac Intelligence pousse des offres de depot personnalisees : 500 000 clients en deux semaines, ouverture de compte plus de deux fois le groupe de controle.",
+    "resume_citable": "Avec sa couche de donnees et d'IA Westpac Intelligence, la banque australienne Westpac a adresse des offres de depot personnalisees a 500 000 clients particuliers en deux semaines, pour une ouverture de compte plus de deux fois superieure au groupe de controle, selon sa presentation investisseurs du 15 septembre 2026.",
+    "faq": [
+      {
+        "q": "Qu'est-ce que Westpac Intelligence ?",
+        "a": "La couche de donnees et d'IA de Westpac, posee sur une fondation de donnees unique alimentee par 285 systemes sources. Elle produit des insights, des offres et des leads pour l'app mobile, le digital banker et le centre de contact digital."
+      },
+      {
+        "q": "Quels resultats Westpac a-t-elle publies ?",
+        "a": "Des offres de depot personnalisees ont touche 500 000 clients en deux semaines avec une ouverture de compte plus de deux fois superieure au groupe de controle. Cote Business, les smart digital leads ont genere 16 000 conversations et des settlements multiplies par 2,8 sur cinq mois a fin aout 2026, compare a la meme periode un an plus tot."
+      },
+      {
+        "q": "Le resultat est-il incremental ?",
+        "a": "Pour les offres de depot, oui : Westpac indique que la comparaison se fait contre un groupe de controle. Pour les leads Business, la comparaison porte sur la periode precedente, sans groupe temoin."
+      }
+    ]
+  }
+}

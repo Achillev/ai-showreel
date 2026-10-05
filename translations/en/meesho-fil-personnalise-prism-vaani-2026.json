@@ -1,0 +1,124 @@
+{
+  "seo": {
+    "title": "Meesho: AI-personalized feed and Vaani voice agent - more than 75% of orders come from the feed (2026)",
+    "meta_description": "Meesho replaces search with a feed ranked by its PRISM engine: over 75% of orders, conversion +15%; the Vaani voice agent, +22% among its adopters.",
+    "resume_citable": "According to its shareholder letter of May 6, 2026, more than 75% of Meesho's orders come from feeds personalized by its PRISM engine, whose improvements lifted conversion by about 15% in one year, and its voice shopping agent Vaani reached 1.5 million users in its first month with conversion up 22% among its adopters.",
+    "faq": [
+      {
+        "q": "What is PRISM at Meesho?",
+        "a": "Meesho's in-house recommendation system (Personalised Ranking and Intent Signal Module). It ranks each user's discovery feed based on their profile and in-session behavior; more than 75% of orders come from it according to the May 2026 shareholder letter."
+      },
+      {
+        "q": "What is Vaani?",
+        "a": "A voice shopping agent launched between January and March 2026: the user describes what they want in their own language and the agent guides them through to payment. Meesho reports 1.5 million users in the first month and conversion up 22% among adopters."
+      },
+      {
+        "q": "Are the conversion gains measured against a control group?",
+        "a": "Meesho does not publish the method. Vaani's +22% concerns users who chose the tool, which can inflate the gap relative to the average."
+      }
+    ]
+  },
+  "pattern": "AI-personalized discovery feed that replaces keyword search, complemented by a multilingual voice shopping agent",
+  "etape_parcours": "consideration",
+  "objectif_business": "Get Indian consumers to buy online who do not know how to, or do not want to, type a query, often in a local language and for their first purchase: the feed guesses the intent for them, and voice replaces the search bar for those who prefer to speak.",
+  "description": "Meesho, an Indian marketplace that claims 264 million annual buyers at the end of March 2026, starts from an observation set out in its shareholder letter of May 6, 2026: most of its customers arrive without a specific product in mind and do not type a query. Its recommendation system PRISM (Personalised Ranking and Intent Signal Module) therefore builds most of the journey from a personalized discovery feed rather than from the search bar. According to the letter, PRISM combines more than 100 ranking models (up to 300 million parameters), reads the user's long-term profile and in-session behavior, and runs more than 6 trillion inferences per day. One module, Trendpulse, uses LLMs to spot regional search spikes and derive cultural trends to push in the feeds. Meesho quantifies three effects: more than 75% of orders come from these personalized feeds, conversion rose about 15% year on year thanks to improvements to PRISM, and the time it takes a new seller listing to find its first buyers fell by about 27%. The second system, Vaani, is a voice shopping agent launched in the fourth quarter of fiscal 2026 (January to March 2026). The user describes what they are looking for in their own language, asks questions, and the agent chains catalog search, customer reviews when the user hesitates, payment and confirmation; speech recognition runs on the phone to cope with slow networks. Meesho reports 1.5 million users in the first month, conversion up 22% among those who adopted it, and 79% of users saying voice makes shopping simpler. On the analyst call, CEO Vidit Aatrey adds that Vaani helped convert more rural customers and lowered acquisition cost, without a figure. Two caveats: the +15% and +22% are internal measurements whose method (control group, period) is not published, and the +22% concerns voluntary adopters, a population that probably already converts better than average.",
+  "points_cles": [
+    "Meesho replaced search with a home feed ranked by its in-house engine PRISM.",
+    "More than 75% of orders come from these feeds, according to the May 2026 shareholder letter.",
+    "PRISM improved conversion by about 15% in one year; Vaani, the voice agent, +22% among its adopters.",
+    "Figures published in a letter filed with the stock exchange; PRISM is still cited in July 2026."
+  ],
+  "resultats": [
+    { "metrique": "Share of Meesho orders coming from AI-personalized feeds (PRISM), Q4 of fiscal 2026" },
+    { "metrique": "Conversion improvement attributed to PRISM improvements over the year" },
+    { "metrique": "Reduction in time-to-traction for new seller listings" },
+    { "metrique": "Users of the Vaani voice agent in the first month" },
+    { "metrique": "Conversion increase among users who adopted Vaani (voluntary adopters, method not published)" }
+  ],
+  "niveau_preuve": {
+    "justification": "The figures come from the Q4 fiscal 2026 shareholder letter filed by Meesho Limited with the NSE on May 6, 2026, are repeated in the earnings release filed the same day and discussed by the CEO in the official transcript of the analyst call; Outlook Business reported them the same day. Financial communication from a listed company, several consistent sources."
+  },
+  "stack_technique": [
+    { "detail": "In-house recommendation system: more than 100 ranking models, up to 300 million parameters, more than 6 trillion inferences per day according to the shareholder letter." },
+    { "detail": "PRISM module that uses LLMs to turn regional search spikes into trends to push. The LLMs used are not named." },
+    { "detail": "In-house voice shopping agent that orchestrates several agentic systems; speech processing on the device. Underlying models not disclosed." },
+    { "detail": "Meesho's in-house ML platform, released as open source on GitHub; Meesho says it is 60 to 70% cheaper for inference than equivalent cloud services." }
+  ],
+  "fonctionnement_operationnel": {
+    "cadence": "Real time for feed ranking (each inference in a few milliseconds according to Meesho); the models are retrained on usage data, at an undisclosed frequency.",
+    "opere_par": "Meesho's product, data science and ML teams, on the in-house BharatMLStack platform; no external vendor is cited.",
+    "signal_pilote": "Browsing and purchase behavior: long-term profile plus signals from the current session, complemented by regional search spikes for Trendpulse. Without history (new user, new listing), the feed has little to work with; this is the cold start that Meesho says it reduced by about 27% on the seller side.",
+    "etapes": [
+      {
+        "etape": "Signal collection",
+        "detail": "Every product view, add to cart, order, rating and return feeds the user's profile and the training data.",
+        "acteur": "Platform"
+      },
+      {
+        "etape": "Feed ranking",
+        "detail": "PRISM ranks the products to show in the home feed based on the profile and the intent estimated in the session.",
+        "acteur": "AI"
+      },
+      {
+        "etape": "Trend detection",
+        "detail": "Trendpulse reads regional search spikes with LLMs and derives trends to push in the feeds before demand is expressed.",
+        "acteur": "AI"
+      },
+      {
+        "etape": "Voice journey",
+        "detail": "For users who choose Vaani, the agent understands the request in their language, searches the catalog, shows reviews when the user hesitates and guides them through to payment.",
+        "acteur": "AI and customer"
+      },
+      {
+        "etape": "Measurement and experimentation",
+        "detail": "The teams track the share of orders coming from the feeds, conversion and the ramp-up of new listings; Meesho says it doubled the number of experiments on the platform in Q4 compared with the previous year.",
+        "acteur": "Product and data teams"
+      }
+    ]
+  },
+  "replication": {
+    "prerequis_data": [
+      "browsing and purchase history at scale, tied to a user identifier",
+      "session signals collected in real time (views, adds to cart, abandonments)",
+      "cleanly attributed catalog, including for new listings with no history",
+      "for voice: speech recognition data in the customers' languages"
+    ],
+    "prerequis_orga": [
+      "decide that the app home is a ranked feed and not a fixed editorial page",
+      "an ML team able to run real-time ranking and evolve it through A/B experiments",
+      "a measurement policy with a control group to separate the effect of the feed from that of acquisition"
+    ],
+    "stack_possible": [
+      "in-house recommendation engine or e-commerce personalization platform",
+      "feature store and real-time inference service",
+      "LLM for reading search trends",
+      "multilingual speech recognition and synthesis components with an orchestrating LLM"
+    ],
+    "premiere_etape": "Measure what share of orders goes through search today and what share through browsing, then test a model-ranked home feed against the current home on part of the traffic.",
+    "playbook": [
+      {
+        "action": "Instrument the origin of each order (search, feed, category, external link) to establish the baseline.",
+        "livrable": "Breakdown of orders by entry point."
+      },
+      {
+        "action": "Build a first ranking model on purchase history and enrich it with session signals.",
+        "livrable": "Personalized home feed tested against the existing home."
+      },
+      {
+        "action": "Handle the cold start of new products with a share of exploration in the feed, and track their time to first sale.",
+        "livrable": "Time-to-traction indicator for new listings."
+      },
+      {
+        "action": "Add a voice or conversational channel for segments that do not type queries, measuring it against a control group rather than on adopters alone.",
+        "livrable": "Read of the incremental effect of the conversational agent."
+      }
+    ],
+    "equipe": "A discovery product lead, ML engineers for ranking and real-time inference, a data profile for incremental measurement, and for voice a speech and LLM team."
+  },
+  "statut_vivant": {
+    "note": "The letter of July 23, 2026 still cites PRISM as the driver of conversion, with no new figure. Vaani is not named in it: its trajectory after the first month remains to be checked next quarter."
+  },
+  "transposable_ue": {
+    "note": "The PRISM feed relies on each user's long-term profile and in-session behavior: in the EU, this marketing profiling requires a GDPR legal basis and clear notice, and the DSA requires very large platforms to offer at least one recommendation option not based on profiling. Vaani processes the customer's voice; Meesho says speech processing runs on the device, which limits transfers, but retention of conversations (announced episodic memory) would need a framework. A conversational shopping agent is subject to the AI Act transparency obligations (users must know they are talking to an AI)."
+  }
+}

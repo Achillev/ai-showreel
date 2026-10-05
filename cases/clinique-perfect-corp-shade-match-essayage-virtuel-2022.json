@@ -1,0 +1,321 @@
+{
+  "id": "clinique-perfect-corp-shade-match-essayage-virtuel-2022",
+  "type_fiche": "succes",
+  "marque": "Clinique",
+  "groupe": "The Estee Lauder Companies",
+  "industrie": "luxe_beaute",
+  "marches_deploiement": [
+    "International (multi-marches)",
+    "Europe",
+    "Asie-Pacifique",
+    "Amerique latine",
+    "Amerique du Nord"
+  ],
+  "transposable_ue": {
+    "flag": "oui_avec_adaptations",
+    "note": "Le scan du visage sert a determiner la teinte de peau : selon la configuration, il peut s'agir d'un traitement de donnees biometriques au sens du RGPD. Prevoir consentement camera explicite, information claire et non-conservation des images. Deja deploye en Europe selon la marque."
+  },
+  "metier": "e-commerce / retail / marketing",
+  "logo_domain": "clinique.com",
+  "intervenants": [
+    {
+      "nom": "Jeremy Harris",
+      "role": "Vice President, Executive Director, Clinique Brand Technology Leader",
+      "source_ref": "S1"
+    }
+  ],
+  "agences": [
+    {
+      "nom": "Perfect Corp.",
+      "role": "Fournisseur de la technologie IA/AR (AR Makeup Virtual Try-On, AI Skin Shade Finder, AI Product Recommendations)",
+      "source_ref": "S1"
+    }
+  ],
+  "axes": {
+    "levier": "activation_conversion",
+    "touchpoints": [
+      "site e-commerce (desktop et mobile)",
+      "iPad en magasin sur les comptoirs",
+      "microsites accessibles par QR code"
+    ],
+    "etape_parcours": "consideration",
+    "famille": "personnalisation",
+    "pattern": "diagnostic de teinte par scan facial IA + essayage virtuel AR + recommandation de produits complementaires",
+    "type_ia": [
+      "vision par ordinateur (scan facial, detection de la teinte de peau)",
+      "AR (rendu temps reel)",
+      "machine learning (recommandation produit)"
+    ],
+    "plateforme_stack": [
+      "Perfect Corp. (AR Makeup Virtual Try-On, AI Skin Shade Finder, AI Product Recommendations)",
+      "Clinique Shade Match Science"
+    ],
+    "objectif_metrique": [
+      "taux de conversion",
+      "taille du panier",
+      "temps passe sur le site"
+    ]
+  },
+  "implementation": "hybride",
+  "objectif_business": "Lever le principal frein a l'achat du fond de teint, le choix de la bonne teinte, en scannant le visage du client pour lui proposer sa teinte, puis vendre davantage en recommandant des rouges a levres assortis et en laissant essayer tout le maquillage sans echantillon.",
+  "points_cles": [
+    "Clinique scanne le visage du client pour trouver sa teinte de fond de teint et l'essayer en AR.",
+    "Algorithme couleur maison (Shade Match Science) couple a l'IA et l'AR de Perfect Corp.",
+    "Conversion x2,5, panier +30 % et temps sur site x4 a x5 apres essayage, selon la marque.",
+    "Preuve B (etude de cas fournisseur) ; essayage virtuel toujours en ligne sur clinique.com en octobre 2026."
+  ],
+  "description": "Clinique, marque du groupe Estee Lauder, a construit avec Perfect Corp. un parcours de choix de teinte en deux temps. Le client se fait scanner le visage ; l'IA de Perfect Corp. associee a l'algorithme couleur de Clinique, baptise Shade Match Science, propose la teinte de fond de teint, puis recommande trois rouges a levres assortis a cette teinte. L'essayage virtuel AR couvre l'ensemble du maquillage de la marque. Le dispositif tourne sur trois surfaces : des iPad poses sur les comptoirs en magasin, qui diffusent une boucle d'attraction et servent aussi d'outil d'accroche aux conseilleres beaute ; le site, sur desktop et mobile ; et des microsites ouverts par QR code places sur les presentoirs, les cordons de badge et d'autres supports, qui permettent de poursuivre l'essayage depuis chez soi. Pendant la pandemie de COVID-19, Perfect Corp. a ajuste ses algorithmes pour que la recommandation de teinte fonctionne meme avec un masque. Selon Jeremy Harris, responsable technologie de la marque, le deploiement couvre des marches retail et en ligne en Europe, Asie-Pacifique, Amerique latine et Amerique du Nord. L'etude de cas n'est pas datee ; la page d'essayage virtuel de clinique.com est en ligne au 5 octobre 2026.",
+  "resultats": [
+    {
+      "metrique": "Probabilite d'achat des clients ayant utilise l'essayage virtuel, declaree par la marque",
+      "valeur": "x2,5",
+      "citation_exacte": "about two and a half times more likely to make a purchase",
+      "source_ref": "S1"
+    },
+    {
+      "metrique": "Taille du panier apres essayage virtuel (la citation mise en exergue en haut de page indique 35 %, le corps du texte et le titre 30 %)",
+      "valeur": "+30%",
+      "citation_exacte": "Basket size is about 30% greater after a customer engages in virtual try-on.",
+      "source_ref": "S1"
+    },
+    {
+      "metrique": "Temps passe sur le site apres essayage virtuel",
+      "valeur": "x4 a x5",
+      "citation_exacte": "Customers stay 4 to 5 times longer after engaging in our VTO",
+      "source_ref": "S1"
+    },
+    {
+      "metrique": "Part des acheteurs d'un produit portant le QR code microsite qui ont utilise ce code pour faire l'essayage virtuel",
+      "valeur": "20%",
+      "citation_exacte": "20% of customers who purchased a product with our microsite QR code on it, used the code to go to our site to engage in VTO",
+      "source_ref": "S1"
+    }
+  ],
+  "niveau_preuve": {
+    "niveau": "B",
+    "justification": "Chiffres issus d'une etude de cas du fournisseur Perfect Corp., declares nommement par le VP technologie de Clinique ; la page officielle clinique.com confirme que l'essayage virtuel est toujours en production, sans donner de chiffre."
+  },
+  "dates": {
+    "lancement": "Non date : partenariat decrit comme engage plusieurs annees avant l'etude de cas, ajustement des algorithmes pendant la pandemie de COVID-19",
+    "derniere_confirmation_activite": "Page Makeup Virtual Try-On en ligne sur clinique.com, consultee le 2026-10-05",
+    "verifie_le": "2026-10-05",
+    "revoir_apres": "2027-04-05"
+  },
+  "statut_vivant": {
+    "statut": "confirme",
+    "note": "L'essayage virtuel est accessible depuis le menu Services de clinique.com (page Makeup Virtual Try-On) en octobre 2026. L'etude de cas chiffree, elle, n'est pas datee : les resultats ne sont pas rattachables a une periode precise."
+  },
+  "sources": [
+    {
+      "ref": "S1",
+      "type": "customer_story_plateforme",
+      "fiabilite": "T2_officiel_interesse",
+      "titre": "Clinique Boosts Conversions by 2.5 times, 30% Larger Basket Size, and 5x Longer Dwell Time with Perfect Corp. VTO",
+      "url": "https://www.perfectcorp.com/business/successstory/Clinique-AR-Solutions-Success-Story",
+      "date_publication": "non datee",
+      "consulte_le": "2026-10-05"
+    },
+    {
+      "ref": "S2",
+      "type": "blog_officiel",
+      "fiabilite": "T1_primaire",
+      "titre": "Makeup Virtual Try On | Clinique",
+      "url": "https://www.clinique.com/pages/makeup-virtual-try-on",
+      "consulte_le": "2026-10-05"
+    }
+  ],
+  "fonctionnement_operationnel": {
+    "cadence": "Temps reel a chaque scan ou essayage ; mise a jour du catalogue de teintes a chaque lancement produit",
+    "opere_par": "Equipe Brand Technology de Clinique avec Perfect Corp. (gestion de compte, programme et technique) ; conseilleres beaute pour l'usage en magasin",
+    "signal_pilote": "La correspondance entre la teinte de peau detectee et le referentiel de teintes Clinique (Shade Match Science). Si une teinte est mal calibree ou si la capture est faussee (eclairage, masque), la recommandation induit en erreur et le gain de conversion disparait.",
+    "etapes": [
+      {
+        "etape": "Entree dans l'experience",
+        "detail": "Le client arrive par l'iPad du comptoir (boucle d'attraction), par le site, ou en scannant un QR code sur un presentoir ou un produit achete.",
+        "acteur": "client / conseillere beaute"
+      },
+      {
+        "etape": "Scan du visage et choix de la teinte",
+        "detail": "L'IA de Perfect Corp. analyse le visage ; l'algorithme couleur de Clinique en deduit la teinte de fond de teint.",
+        "acteur": "IA (Perfect Corp. + Shade Match Science)"
+      },
+      {
+        "etape": "Recommandation complementaire",
+        "detail": "Le systeme propose trois rouges a levres assortis a la teinte de fond de teint trouvee.",
+        "acteur": "IA (recommandation produit)"
+      },
+      {
+        "etape": "Essayage AR",
+        "detail": "Le client essaie virtuellement le fond de teint, les levres et le reste du maquillage avant d'acheter.",
+        "acteur": "client"
+      },
+      {
+        "etape": "Maintenance et feuille de route",
+        "detail": "Clinique et Perfect Corp. font evoluer les fonctionnalites selon une feuille de route commune, comme l'adaptation au port du masque pendant la pandemie.",
+        "acteur": "equipe Brand Technology / Perfect Corp."
+      }
+    ]
+  },
+  "schema_flow": {
+    "statut": "approche_type",
+    "noeuds": [
+      {
+        "id": "client",
+        "role_generique": "humain",
+        "label": "Client (camera)"
+      },
+      {
+        "id": "surfaces",
+        "role_generique": "site_app",
+        "label": "iPad magasin / site / microsite QR"
+      },
+      {
+        "id": "scan",
+        "role_generique": "modele_ia",
+        "label": "Scan facial et detection de teinte",
+        "outil_documente": "Perfect Corp. AI Skin Shade Finder"
+      },
+      {
+        "id": "match",
+        "role_generique": "data_source",
+        "label": "Referentiel de teintes Clinique",
+        "outil_documente": "Shade Match Science"
+      },
+      {
+        "id": "reco",
+        "role_generique": "modele_ia",
+        "label": "Recommandation produits complementaires",
+        "outil_documente": "Perfect Corp. AI Product Recommendations"
+      },
+      {
+        "id": "vto",
+        "role_generique": "modele_ia",
+        "label": "Essayage virtuel AR",
+        "outil_documente": "Perfect Corp. AR Makeup Virtual Try-On"
+      }
+    ],
+    "liens": [
+      [
+        "client",
+        "surfaces"
+      ],
+      [
+        "surfaces",
+        "scan"
+      ],
+      [
+        "match",
+        "scan",
+        "teinte de fond de teint"
+      ],
+      [
+        "scan",
+        "reco",
+        "3 rouges a levres assortis"
+      ],
+      [
+        "reco",
+        "vto"
+      ],
+      [
+        "vto",
+        "surfaces",
+        "rendu temps reel"
+      ],
+      [
+        "surfaces",
+        "client",
+        "essai puis achat"
+      ]
+    ]
+  },
+  "stack_technique": [
+    {
+      "nom": "Perfect Corp. AR Makeup Virtual Try-On",
+      "categorie": "plateforme",
+      "detail": "essayage virtuel de l'ensemble du maquillage Clinique, en magasin, sur le site et sur les microsites",
+      "url": "https://www.perfectcorp.com"
+    },
+    {
+      "nom": "Perfect Corp. AI Skin Shade Finder",
+      "categorie": "outil",
+      "detail": "scan facial pour determiner la teinte de peau, ajuste pour fonctionner avec un masque",
+      "url": "https://www.perfectcorp.com"
+    },
+    {
+      "nom": "Perfect Corp. AI Product Recommendations",
+      "categorie": "outil",
+      "detail": "recommandation de trois rouges a levres a partir de la teinte de fond de teint",
+      "url": "https://www.perfectcorp.com"
+    },
+    {
+      "nom": "Clinique Shade Match Science",
+      "categorie": "outil",
+      "detail": "algorithme couleur proprietaire de Clinique couple a l'IA de Perfect Corp.",
+      "url": "https://www.clinique.com"
+    }
+  ],
+  "replication": {
+    "statut_epistemique": "infere",
+    "prerequis_data": [
+      "referentiel de teintes du catalogue (fond de teint, levres) avec valeurs colorimetriques exploitables",
+      "regles d'association entre teinte de fond de teint et produits complementaires",
+      "suivi analytics distinguant les sessions avec et sans essayage"
+    ],
+    "prerequis_orga": [
+      "un responsable technologie cote marque qui pilote le fournisseur",
+      "formation des conseilleres en magasin a l'usage de l'outil",
+      "consentement camera et politique de non-conservation des images validee par le DPO"
+    ],
+    "stack_possible": [
+      "Perfect Corp.",
+      "ModiFace",
+      "Banuba",
+      "Revieve"
+    ],
+    "playbook": [
+      {
+        "action": "Commencer par le fond de teint : calibrer le referentiel de teintes avec le fournisseur et tester la precision du scan sur un panel de carnations variees",
+        "livrable": "Shade finder valide sur le fond de teint"
+      },
+      {
+        "action": "Brancher l'essayage AR sur les pages produit maquillage du site, desktop et mobile",
+        "livrable": "Essayage en ligne avec consentement camera"
+      },
+      {
+        "action": "Ajouter la recommandation de produits complementaires a partir de la teinte trouvee",
+        "livrable": "Regles d'association teinte vers produits en production"
+      },
+      {
+        "action": "Mesurer conversion, panier et temps passe en comparant utilisateurs et non-utilisateurs, idealement en A/B",
+        "livrable": "Lecture chiffree de l'effet, corrigee du biais d'auto-selection"
+      },
+      {
+        "action": "Etendre au magasin (tablettes sur comptoir) et relier magasin et maison par QR code",
+        "livrable": "Parcours omnicanal avec suivi des scans QR"
+      }
+    ],
+    "equipe": "Un chef de projet e-commerce ou brand technology, un developpeur front pour l'integration, un referent produit pour la calibration des teintes, et le retail pour former les conseilleres.",
+    "premiere_etape": "Lancer un shade finder sur la gamme de fond de teint la plus vendue et mesurer la conversion des utilisateurs contre un groupe temoin."
+  },
+  "seo": {
+    "slug": "clinique-perfect-corp-shade-match-essayage-virtuel-2022",
+    "title": "Clinique : diagnostic de teinte IA et essayage virtuel - conversion x2,5, panier +30 %",
+    "meta_description": "Clinique scanne le visage pour trouver la teinte de fond de teint et l'essayer en AR avec Perfect Corp. : conversion x2,5, panier +30 %, temps sur site x4 a x5.",
+    "resume_citable": "Avec le scan facial IA et l'essayage virtuel de Perfect Corp., Clinique declare des clients 2,5 fois plus enclins a acheter, un panier 30 % plus eleve et un temps sur site multiplie par 4 a 5 apres essayage.",
+    "faq": [
+      {
+        "q": "Comment fonctionne le diagnostic de teinte de Clinique ?",
+        "a": "Le client se fait scanner le visage ; l'IA de Perfect Corp. et l'algorithme couleur de Clinique (Shade Match Science) trouvent la teinte de fond de teint, puis recommandent trois rouges a levres assortis, que le client peut essayer en AR."
+      },
+      {
+        "q": "Quels resultats Clinique annonce-t-il ?",
+        "a": "Selon Jeremy Harris, VP technologie de la marque, dans l'etude de cas Perfect Corp. : clients 2,5 fois plus enclins a acheter, panier environ 30 % plus eleve et temps sur site 4 a 5 fois plus long apres essayage. L'etude n'est pas datee."
+      },
+      {
+        "q": "Ou le dispositif est-il deploye ?",
+        "a": "Sur des iPad en magasin, sur le site desktop et mobile et sur des microsites par QR code, dans des marches d'Europe, d'Asie-Pacifique, d'Amerique latine et d'Amerique du Nord."
+      }
+    ]
+  }
+}

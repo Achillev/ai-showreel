@@ -1,0 +1,291 @@
+{
+  "type_fiche": "succes",
+  "id": "alibaba-qwen-app-shopping-agentique-2026",
+  "marque": "Qwen App",
+  "groupe": "Alibaba Group",
+  "industrie": "retail_ecom",
+  "marches_deploiement": [
+    "Chine"
+  ],
+  "transposable_ue": {
+    "flag": "oui_avec_adaptations",
+    "note": "Le dispositif repose sur un ecosysteme integre (assistant IA, place de marche, livraison rapide, paiement) detenu par un seul groupe, ce qu'un distributeur europeen n'a generalement pas. En UE, l'usage de l'historique de commandes pour personnaliser, l'achat automatique declenche par un seuil de prix et la conversation comme interface d'achat demandent base legale RGPD, transparence sur l'IA (AI Act) et consentement explicite a l'ordre de paiement."
+  },
+  "metier": "E-commerce / commerce conversationnel agentique",
+  "logo_domain": "alibabagroup.com",
+  "axes": {
+    "levier": "activation_conversion",
+    "touchpoints": [
+      "Application Qwen (chat grand public)",
+      "Onglet messages de l'app Taobao (Qwen Shopping Assistant)",
+      "Taobao Instant Commerce (livraison rapide) appele depuis Qwen"
+    ],
+    "etape_parcours": "decouverte -> consideration -> achat -> post-achat",
+    "famille": "conversation",
+    "pattern": "Agent d'achat genAI qui recherche, compare et passe commande dans le catalogue d'une place de marche depuis une interface de chat",
+    "type_ia": [
+      "LLM (famille Qwen)",
+      "agents IA avec bibliotheque de competences",
+      "modele multimodal (essayage virtuel)"
+    ],
+    "plateforme_stack": [
+      "Qwen (modeles maison)",
+      "Taobao et Tmall",
+      "Taobao Instant Commerce",
+      "custom/in-house"
+    ],
+    "objectif_metrique": [
+      "nombre d'utilisateurs ayant fait un premier achat pilote par IA",
+      "utilisateurs actifs mensuels de Qwen",
+      "portee clients du e-commerce du groupe"
+    ]
+  },
+  "implementation": "custom",
+  "objectif_business": "Faire de l'assistant IA grand public d'Alibaba un nouveau point d'entree vers ses places de marche, en deplacant le debut de l'achat de la barre de recherche vers la conversation, et etendre ainsi la portee clients du e-commerce du groupe.",
+  "points_cles": [
+    "Alibaba branche son app IA Qwen sur Taobao, Tmall et la livraison rapide pour acheter en conversation.",
+    "Agents Qwen avec competences commande, logistique et SAV, sur plus de 4 milliards de produits.",
+    "250 millions d'utilisateurs ont fait un premier achat pilote par IA via Qwen.",
+    "Preuve A sur l'echelle seulement : aucun effet sur conversion ou GMV publie, lancement massivement subventionne."
+  ],
+  "description": "Qwen, l'application IA grand public d'Alibaba, a ete reliee le 15 janvier 2026 aux services du groupe (Taobao et Tmall, Taobao Instant Commerce, Amap, Fliggy, Alipay) pour executer des taches reelles : commander un repas ou des courses, reserver un billet, acheter un produit. Le lancement a ete porte par une campagne du Nouvel An chinois a partir du 6 fevrier, avec trois milliards de yuans d'incitations annonces par le groupe. Selon les resultats trimestriels publies en mars 2026, environ 140 millions d'utilisateurs avaient fait fin fevrier leur premier achat pilote par IA via les fonctions agentiques de Qwen, et Qwen depassait 300 millions d'utilisateurs actifs mensuels. Le 11 mai 2026, Alibaba a ouvert l'integralite du catalogue Taobao et Tmall (plus de 4 milliards de produits) a l'app Qwen, alors que les fonctions commerce ne couvraient jusque-la que quelques categories test, et a lance dans l'app Taobao un Qwen Shopping Assistant accessible par l'onglet messages : comparaisons, essayage virtuel de vetements, cumul de coupons pendant les fetes commerciales, suivi de prix sur 30 jours qui passe la commande automatiquement une fois le prix cible atteint. Aux resultats du trimestre clos le 30 juin 2026, Alibaba annonce 250 millions d'utilisateurs ayant fait leur premier achat pilote par IA via Qwen depuis son lancement. Le groupe ne publie en revanche aucun chiffre de conversion, de panier ou de GMV attribue a ces agents ; il signale au contraire un cout d'inference en hausse lie a l'app Qwen dans les pertes de son segment IA. La preuve porte donc sur l'adoption a grande echelle, pas sur un effet commercial isole, et cette adoption a ete obtenue avec de fortes subventions.",
+  "fonctionnement_operationnel": {
+    "cadence": "Temps reel, a chaque requete de l'utilisateur dans le chat ; temps forts pilotes par campagnes (Nouvel An chinois, 618) avec incitations financieres.",
+    "opere_par": "Groupe Qwen grand public (devenu AI Labs and Applications) pour l'app, equipes e-commerce Taobao et Tmall pour l'assistant integre et le catalogue.",
+    "signal_pilote": "L'intention exprimee en langage naturel et l'historique de commandes de l'utilisateur. Sans acces au catalogue complet et aux competences de commande et de logistique, l'agent ne fait que conseiller et renvoie vers la recherche classique.",
+    "etapes": [
+      {
+        "etape": "Recueillir l'intention",
+        "detail": "L'utilisateur decrit un besoin dans le chat ; l'agent pose des questions de relance sur le budget ou le style.",
+        "acteur": "IA"
+      },
+      {
+        "etape": "Chercher et comparer",
+        "detail": "L'agent interroge le catalogue Taobao et Tmall, propose des options ou un lot de produits et des comparaisons cote a cote, en s'appuyant sur l'historique de commandes.",
+        "acteur": "IA"
+      },
+      {
+        "etape": "Commander dans le chat",
+        "detail": "La transaction est conclue dans la fenetre de conversation, avec cumul des coupons de la plateforme ; un suivi de prix peut declencher l'achat automatiquement au seuil fixe par l'utilisateur.",
+        "acteur": "IA / utilisateur"
+      },
+      {
+        "etape": "Suivre et servir apres-vente",
+        "detail": "Les competences de l'agent couvrent la gestion de commande, la logistique et le service apres-vente.",
+        "acteur": "IA / plateforme e-commerce"
+      }
+    ]
+  },
+  "resultats": [
+    {
+      "metrique": "Utilisateurs ayant fait un premier achat pilote par IA via Qwen depuis son lancement (au trimestre clos le 30 juin 2026)",
+      "valeur": "250M",
+      "citation_exacte": "250 million users have had their first AI-driven shopping experience",
+      "source_ref": "S1"
+    },
+    {
+      "metrique": "Meme indicateur fin fevrier 2026, apres la campagne du Nouvel An chinois",
+      "valeur": "140M",
+      "citation_exacte": "approximately 140 million users have had their first AI-driven shopping experience",
+      "source_ref": "S2"
+    },
+    {
+      "metrique": "Utilisateurs actifs mensuels de Qwen grand public, toutes plateformes (fevrier 2026)",
+      "valeur": "300M+",
+      "citation_exacte": "consumer-facing Qwen has surpassed 300 million monthly active users across all platforms",
+      "source_ref": "S2"
+    },
+    {
+      "metrique": "Produits du catalogue Taobao et Tmall accessibles a l'agent depuis mai 2026",
+      "valeur": "4 Mds+",
+      "citation_exacte": "catalog of over 4 billion products",
+      "source_ref": "S3"
+    }
+  ],
+  "niveau_preuve": {
+    "niveau": "A",
+    "justification": "Les chiffres d'adoption figurent dans deux communiques de resultats deposes a la SEC (6-K) ; ils prouvent l'echelle mais aucun effet sur la conversion ou le GMV n'est publie, et l'adoption initiale a ete achetee par une campagne de trois milliards de yuans."
+  },
+  "dates": {
+    "lancement": "15 janvier 2026 (integration de Qwen aux services du groupe) ; 11 mai 2026 (catalogue Taobao complet et Qwen Shopping Assistant dans Taobao)",
+    "derniere_confirmation_activite": "20 aout 2026 - resultats du trimestre clos le 30 juin 2026 : 250 millions d'utilisateurs ayant fait un premier achat pilote par IA via Qwen",
+    "verifie_le": "2026-10-05",
+    "revoir_apres": "2027-04-05"
+  },
+  "statut_vivant": {
+    "statut": "confirme",
+    "note": "Dispositif cite dans les resultats d'aout 2026, avec une hausse du nombre d'utilisateurs depuis fevrier ; le groupe a cree un segment dedie (AI Labs and Applications) qui inclut l'app Qwen."
+  },
+  "sources": [
+    {
+      "ref": "S1",
+      "type": "document_officiel_sec",
+      "fiabilite": "T1_primaire",
+      "titre": "Alibaba Group Announces June Quarter 2026 Results (Form 6-K, Exhibit 99.1)",
+      "url": "https://www.sec.gov/Archives/edgar/data/0001577552/000110465926099220/tm2623667d1_ex99-1.htm",
+      "date_publication": "2026-08-20",
+      "consulte_le": "2026-10-05"
+    },
+    {
+      "ref": "S2",
+      "type": "document_officiel_sec",
+      "fiabilite": "T1_primaire",
+      "titre": "Alibaba Group Announces December Quarter 2025 Results (Form 6-K, Exhibit 99.1)",
+      "url": "https://www.sec.gov/Archives/edgar/data/1577552/000110465926032060/tm269353d1_ex99-1.htm",
+      "date_publication": "2026-03-19",
+      "consulte_le": "2026-10-05"
+    },
+    {
+      "ref": "S3",
+      "type": "blog_officiel",
+      "fiabilite": "T1_primaire",
+      "titre": "Alibaba Opens All of Taobao to Qwen AI, Ushering in a New Agentic Shopping Experience - Alibaba Group",
+      "url": "https://www.alibabagroup.com/document-1991231293551017984",
+      "date_publication": "2026-05-11",
+      "consulte_le": "2026-10-05"
+    },
+    {
+      "ref": "S4",
+      "type": "presse",
+      "fiabilite": "T3_presse_etablie",
+      "titre": "Alibaba in 3b yuan Lunar New Year red envelopes push - RTHK",
+      "url": "https://news.rthk.hk/rthk/en/component/k2/1842352-20260202.htm",
+      "date_publication": "2026-02-02",
+      "consulte_le": "2026-10-05"
+    }
+  ],
+  "schema_flow": {
+    "statut": "documente",
+    "noeuds": [
+      {
+        "id": "user",
+        "role_generique": "canal_conversationnel",
+        "label": "Requete en langage naturel (app Qwen ou onglet messages Taobao)"
+      },
+      {
+        "id": "hist",
+        "role_generique": "data_source",
+        "label": "Historique de commandes et avis clients",
+        "outil_documente": "Taobao"
+      },
+      {
+        "id": "agent",
+        "role_generique": "modele_ia",
+        "label": "Agents Qwen avec bibliotheque de competences",
+        "outil_documente": "Qwen"
+      },
+      {
+        "id": "cat",
+        "role_generique": "site_app",
+        "label": "Catalogue Taobao et Tmall, Taobao Instant Commerce",
+        "outil_documente": "Taobao / Tmall"
+      },
+      {
+        "id": "order",
+        "role_generique": "site_app",
+        "label": "Commande dans le chat, logistique, apres-vente"
+      }
+    ],
+    "liens": [
+      [
+        "user",
+        "agent"
+      ],
+      [
+        "hist",
+        "agent"
+      ],
+      [
+        "agent",
+        "cat"
+      ],
+      [
+        "cat",
+        "order"
+      ],
+      [
+        "order",
+        "agent",
+        "retours d'usage reels pour ameliorer les modeles"
+      ]
+    ]
+  },
+  "stack_technique": [
+    {
+      "nom": "Qwen (famille de modeles de langage et multimodaux)",
+      "categorie": "llm",
+      "detail": "Modele de fondation maison, decrit comme affine sur plus de vingt ans de donnees de transactions et d'operations marchandes ; modele multimodal pour l'essayage virtuel.",
+      "url": "https://www.alibabagroup.com"
+    },
+    {
+      "nom": "Agents IA a bibliotheque de competences",
+      "categorie": "outil",
+      "detail": "Competences de gestion de commande, logistique et service apres-vente branchees sur le catalogue.",
+      "url": "https://www.alibabagroup.com"
+    },
+    {
+      "nom": "Taobao, Tmall et Taobao Instant Commerce",
+      "categorie": "plateforme",
+      "detail": "Places de marche et service de livraison rapide du groupe, integres a l'app Qwen.",
+      "url": "https://www.taobao.com"
+    }
+  ],
+  "replication": {
+    "statut_epistemique": "infere",
+    "prerequis_data": [
+      "Catalogue produit structure et exposable a un agent (attributs, stocks, prix, delais)",
+      "Historique de commandes et avis clients exploitables pour personnaliser",
+      "API de commande, de suivi logistique et d'apres-vente appelables par l'agent"
+    ],
+    "prerequis_orga": [
+      "Arbitrage clair entre le parcours de recherche classique et le parcours conversationnel",
+      "Regles de garde sur les achats declenches par l'agent (confirmation, plafonds, annulation)",
+      "Mesure de l'effet incrementale prevue des le depart, distincte de l'adoption"
+    ],
+    "stack_possible": [
+      "LLM generaliste avec appel d'outils (function calling) branche sur les API commerce",
+      "Protocoles d'achat agentique proposes par les plateformes et moyens de paiement",
+      "Moteur de recherche produit existant expose comme outil de l'agent"
+    ],
+    "playbook": [
+      {
+        "action": "Exposer le catalogue, le panier et le suivi de commande sous forme d'outils appelables par un agent.",
+        "livrable": "Couche d'API commerce documentee et securisee pour l'agent"
+      },
+      {
+        "action": "Lancer un assistant d'achat sur quelques categories test, avec questions de relance et comparaisons.",
+        "livrable": "Assistant en production sur un perimetre restreint"
+      },
+      {
+        "action": "Mener un test controle face au parcours de recherche classique et lire conversion, panier et retours.",
+        "livrable": "Mesure de l'effet incremental, separee des volumes dus aux incitations"
+      },
+      {
+        "action": "Etendre au catalogue complet et ajouter les competences apres-vente et le suivi de prix.",
+        "livrable": "Agent couvrant tout le parcours, de l'inspiration a l'apres-vente"
+      }
+    ],
+    "equipe": "Product manager commerce conversationnel, ingenieurs LLM et integration API, data analyst pour la mesure incrementale, juriste pour les achats automatiques et la protection des donnees.",
+    "premiere_etape": "Choisir une categorie ou la comparaison est penible (equipement, electromenager), y brancher un agent qui interroge le catalogue et prepare le panier, et comparer sa conversion a celle de la recherche classique sur un echantillon tire au hasard."
+  },
+  "seo": {
+    "slug": "alibaba-qwen-app-shopping-agentique-2026",
+    "title": "Qwen App (Alibaba) : agent d'achat IA branche sur Taobao - 250 millions de premiers achats pilotes par IA (2026)",
+    "meta_description": "Alibaba relie son app IA Qwen a Taobao et Tmall : 250 millions d'utilisateurs ont fait un premier achat pilote par IA. Aucun effet de conversion publie.",
+    "resume_citable": "Selon ses resultats deposes a la SEC, Alibaba compte 250 millions d'utilisateurs ayant fait leur premier achat pilote par IA via les fonctions agentiques de l'app Qwen (contre environ 140 millions fin fevrier 2026), sans publier d'effet sur la conversion ou le GMV.",
+    "faq": [
+      {
+        "q": "Quelle difference avec la recommandation de Taobao ?",
+        "a": "La recommandation classe des produits dans les flux de l'app. Ici, un agent conversationnel recherche, compare et passe commande a la place de l'utilisateur, depuis l'app Qwen ou un assistant dans Taobao."
+      },
+      {
+        "q": "Alibaba publie-t-il un gain de conversion ou de GMV ?",
+        "a": "Non. Les resultats chiffrent l'adoption (250 millions d'utilisateurs ayant fait un premier achat pilote par IA) mais aucun effet commercial isole, et le lancement a ete soutenu par trois milliards de yuans d'incitations."
+      },
+      {
+        "q": "Combien cela coute-t-il a Alibaba ?",
+        "a": "Le groupe ne chiffre pas le cout du seul dispositif. Il attribue en partie la perte de son segment IA a la hausse du cout d'inference liee a l'app Qwen."
+      }
+    ]
+  }
+}

@@ -1,0 +1,304 @@
+{
+  "id": "asset-living-eliseai-cycle-locataire-2025",
+  "type_fiche": "succes",
+  "marque": "Asset Living",
+  "industrie": "immobilier",
+  "marches_deploiement": [
+    "Etats-Unis (plus de 40 Etats)"
+  ],
+  "transposable_ue": {
+    "flag": "oui_avec_adaptations",
+    "note": "Le dispositif est deploye aux Etats-Unis uniquement. Le pattern (agents IA qui ecrivent et parlent aux prospects et aux locataires pour la location, les relances de paiement, la maintenance et les renouvellements) se transpose chez un gestionnaire locatif europeen, mais les relances d'impayes touchent a des donnees financieres de personnes physiques : base legale RGPD, minimisation et tracabilite des messages a prevoir. L'AI Act impose d'informer le locataire qu'il echange avec une IA, et le recouvrement est encadre par le droit de la consommation de chaque pays."
+  },
+  "metier": "relation locataire, location et recouvrement",
+  "logo_domain": "assetliving.com",
+  "intervenants": [
+    {
+      "nom": "David Walther",
+      "role": "Chief Revenue Officer d'Asset Living, cite dans le communique d'annonce du partenariat",
+      "source_ref": "S2"
+    }
+  ],
+  "agences": [
+    {
+      "nom": "EliseAI",
+      "role": "Editeur de la plateforme IA (LeasingAI, Delinquency, Maintenance, Renewals, VoiceAI) deployee dans les communautes d'Asset Living",
+      "source_ref": "S1"
+    }
+  ],
+  "axes": {
+    "levier": "retention",
+    "touchpoints": [
+      "messages de relance de paiement aux locataires",
+      "reponses aux prospects (LeasingAI), y compris hors heures ouvrees",
+      "demandes de maintenance",
+      "campagnes de renouvellement de bail",
+      "agent vocal (VoiceAI)"
+    ],
+    "etape_parcours": "post-achat",
+    "famille": "conversation",
+    "pattern": "agent IA sur tout le cycle prospect-locataire",
+    "type_ia": [
+      "agents conversationnels IA (texte et voix)",
+      "messages de relance personnalises generes par IA"
+    ],
+    "plateforme_stack": [
+      "EliseAI"
+    ],
+    "objectif_metrique": [
+      "taux de loyers payes a l'heure",
+      "taux d'occupation",
+      "part des communications transactionnelles automatisees"
+    ]
+  },
+  "implementation": "plateforme",
+  "stack_technique": [
+    {
+      "nom": "EliseAI LeasingAI",
+      "categorie": "plateforme",
+      "detail": "Reponse et relance des prospects en continu, y compris hors heures ouvrees",
+      "url": "https://eliseai.com"
+    },
+    {
+      "nom": "EliseAI Delinquency",
+      "categorie": "plateforme",
+      "detail": "Relances de paiement personnalisees envoyees aux locataires",
+      "url": "https://eliseai.com"
+    },
+    {
+      "nom": "EliseAI Maintenance, Renewals et VoiceAI",
+      "categorie": "plateforme",
+      "detail": "Demandes de maintenance, renouvellements de bail et agent vocal sur la meme plateforme",
+      "url": "https://eliseai.com"
+    }
+  ],
+  "objectif_business": "Tenir la qualite de service aupres des locataires et des prospects pendant une croissance de 70 000 a plus de 450 000 logements geres, en confiant les echanges repetitifs (relances, reponses, demandes courantes) a des agents IA et en gardant les equipes sur place pour les interactions qui font les renouvellements.",
+  "points_cles": [
+    "Asset Living, numero 2 du classement NMHC, a deploye les agents IA d'EliseAI sur tout le cycle locataire.",
+    "Location, relances de paiement, maintenance, renouvellements et voix passent par une seule plateforme.",
+    "Au T2 2025 : 591 points de base de loyers payes a l'heure en plus, apres 130 000 relances.",
+    "Preuve B : etude de cas EliseAI, chiffres repris dans le communique d'Asset Living de septembre 2025."
+  ],
+  "description": "Asset Living gere plus de 450 000 logements pour plus de 500 clients dans plus de 40 Etats americains, et se classe deuxieme du NMHC Top 50 des gestionnaires. Le portefeuille est passe de 70 000 logements en 2020 a plus de 450 000. Pour absorber cette croissance, le groupe a deploye la plateforme EliseAI sur le parcours complet du prospect au locataire : LeasingAI repond aux prospects et les relance, y compris le soir et le week-end (pres de 50 % des demandes arrivent hors heures ouvrees selon l'etude de cas), Delinquency envoie aux locataires des rappels de paiement personnalises, et les modules Maintenance, Renewals et VoiceAI prennent les demandes d'intervention, les renouvellements de bail et les appels. EliseAI indique que 85 % des communications transactionnelles du cycle locataire sont automatisees. Au deuxieme trimestre 2025, les communautes equipees du module Delinquency ont envoye plus de 130 000 relances et vu le taux de loyers payes a l'heure progresser de 591 points de base. Depuis le debut de 2025, l'occupation des communautes equipees a gagne 278 points de base, gain que l'etude attribue a la relance continue des prospects. Le communique d'Asset Living du 16 septembre 2025 reprend ces chiffres arrondis a 600 et 300 points de base. Deux reserves. Aucun taux de renouvellement isole n'est publie, alors que le module Renewals fait partie du deploiement : l'effet sur la retention des locataires reste non mesure publiquement. Les chiffres viennent de l'editeur et du client, sans groupe temoin decrit. Le gain de capacite des equipes (78,2 heures par communaute et par mois dans le communique, 72 heures dans le corps de l'etude de cas) est un indicateur de productivite interne et n'est pas retenu ici comme resultat client.",
+  "resultats": [
+    {
+      "metrique": "Taux de loyers payes a l'heure dans les communautes equipees du module Delinquency, T2 2025 (arrondi a 600 bps dans le communique)",
+      "valeur": "+591 bps",
+      "citation_exacte": "saw a 591 bps increase in on-time rent payments",
+      "source_ref": "S1"
+    },
+    {
+      "metrique": "Relances de paiement personnalisees envoyees aux locataires au T2 2025",
+      "valeur": "130 000+",
+      "citation_exacte": "sending over 130,000 personalized, empathetic payment reminder messages",
+      "source_ref": "S1"
+    },
+    {
+      "metrique": "Taux d'occupation des communautes equipees depuis le debut de 2025, attribue a la relance continue des prospects (arrondi a 300 bps dans le communique)",
+      "valeur": "+278 bps",
+      "citation_exacte": "have seen a 278bps overall increase in occupancy rates",
+      "source_ref": "S1"
+    },
+    {
+      "metrique": "Part des communications transactionnelles du cycle locataire prises en charge par l'IA",
+      "valeur": "85%",
+      "citation_exacte": "automating 85% of transactional communications across the resident lifecycle",
+      "source_ref": "S1"
+    }
+  ],
+  "niveau_preuve": {
+    "niveau": "B",
+    "justification": "Etude de cas chiffree de l'editeur EliseAI, dont les memes resultats (arrondis) sont repris dans le communique officiel publie par Asset Living sur son propre site et par EliseAI le 16 septembre 2025 ; aucune source independante ni resultat financier ne les confirme."
+  },
+  "dates": {
+    "lancement": "Non publie ; l'occupation des communautes equipees est mesuree depuis le debut de 2025",
+    "derniere_confirmation_activite": "2025-09",
+    "verifie_le": "2026-10-05",
+    "revoir_apres": "2027-04-05"
+  },
+  "statut_vivant": {
+    "statut": "confirme",
+    "note": "En septembre 2025, Asset Living annonce etendre l'usage d'EliseAI au niveau national et piloter Lease Audits et AI-Guided Tours. L'etude de cas reste en ligne chez EliseAI au 5 octobre 2026. Aucun signal public date de moins de 12 mois n'a ete trouve : a revoir en priorite."
+  },
+  "sources": [
+    {
+      "ref": "S1",
+      "type": "customer_story_plateforme",
+      "fiabilite": "T2_officiel_interesse",
+      "titre": "How Asset Living Revamped Lead Nurturing and Delinquency with EliseAI",
+      "url": "https://eliseai.com/customer-stories/how-asset-living-revamped-lead-nurturing-and-delinquency-management-with-eliseai",
+      "date_publication": "2025",
+      "consulte_le": "2026-10-05"
+    },
+    {
+      "ref": "S2",
+      "type": "blog_officiel",
+      "fiabilite": "T1_primaire",
+      "titre": "Asset Living Advances Operational Excellence with EliseAI Partnership",
+      "url": "https://www.assetliving.com/blogs/asset-living-advances-operational-excellence-with-eliseai-partnership",
+      "date_publication": "2025-09-16",
+      "consulte_le": "2026-10-05"
+    },
+    {
+      "ref": "S3",
+      "type": "blog_officiel",
+      "fiabilite": "T2_officiel_interesse",
+      "titre": "Asset Living Advances Operational Excellence with EliseAI Partnership (blog EliseAI)",
+      "url": "https://eliseai.com/blog/asset-living-partners-with-eliseai",
+      "date_publication": "2025-09-16",
+      "consulte_le": "2026-10-05"
+    }
+  ],
+  "fonctionnement_operationnel": {
+    "cadence": "En continu : les agents repondent a toute heure, les relances de paiement partent a chaque echeance de loyer",
+    "opere_par": "Les equipes sur site d'Asset Living, qui reprennent les echanges que l'IA ne traite pas, avec la plateforme EliseAI en appui",
+    "signal_pilote": "Le statut de paiement de chaque locataire et le statut de chaque prospect dans le parcours de location. Sans donnees de paiement a jour, une relance part a un locataire qui a deja paye ; sans suivi des prospects, la relance continue ne se mesure pas en occupation.",
+    "etapes": [
+      {
+        "etape": "Prise en charge des prospects",
+        "detail": "LeasingAI repond aux demandes entrantes, y compris hors heures ouvrees, et relance les prospects tiedes jusqu'a la visite ou la signature.",
+        "acteur": "IA"
+      },
+      {
+        "etape": "Relance des loyers en retard",
+        "detail": "Le module Delinquency envoie aux locataires des rappels de paiement personnalises. Plus de 130 000 messages au T2 2025.",
+        "acteur": "IA"
+      },
+      {
+        "etape": "Demandes courantes des locataires",
+        "detail": "Maintenance, renouvellements et appels passent par les agents texte et voix, qui traitent la part transactionnelle (85 % selon EliseAI).",
+        "acteur": "IA"
+      },
+      {
+        "etape": "Reprise humaine",
+        "detail": "Les associes sur site gardent les echanges a forte valeur et les rencontres en personne, celles qu'Asset Living relie aux renouvellements.",
+        "acteur": "equipe sur site"
+      },
+      {
+        "etape": "Mesure",
+        "detail": "Asset Living et EliseAI suivent l'occupation, le taux de loyers payes a l'heure et les temps de resolution des demandes par communaute.",
+        "acteur": "equipe data"
+      }
+    ]
+  },
+  "schema_flow": {
+    "statut": "approche_type",
+    "noeuds": [
+      {
+        "id": "prospect",
+        "role_generique": "humain",
+        "label": "Prospect et locataire"
+      },
+      {
+        "id": "canaux",
+        "role_generique": "canal_conversationnel",
+        "label": "SMS, e-mail, chat et telephone"
+      },
+      {
+        "id": "elise",
+        "role_generique": "modele_ia",
+        "label": "Agents IA de location, recouvrement, maintenance, renouvellement et voix",
+        "outil_documente": "EliseAI"
+      },
+      {
+        "id": "pms",
+        "role_generique": "data_source",
+        "label": "Donnees de bail, de paiement et de demandes"
+      },
+      {
+        "id": "site",
+        "role_generique": "humain",
+        "label": "Equipes sur site Asset Living"
+      }
+    ],
+    "liens": [
+      [
+        "prospect",
+        "canaux",
+        "demande ou echeance"
+      ],
+      [
+        "canaux",
+        "elise"
+      ],
+      [
+        "pms",
+        "elise",
+        "statut de paiement et de bail"
+      ],
+      [
+        "elise",
+        "prospect",
+        "reponse, relance, rappel"
+      ],
+      [
+        "elise",
+        "site",
+        "cas a traiter par un humain"
+      ],
+      [
+        "prospect",
+        "pms",
+        "paiement, signature, mesure"
+      ]
+    ]
+  },
+  "replication": {
+    "statut_epistemique": "infere",
+    "prerequis_data": [
+      "Logiciel de gestion locative a jour sur les baux, echeances et paiements, consultable par l'agent",
+      "Historique des demandes de prospects et de leur issue pour mesurer l'occupation avant et apres",
+      "Base de reference du taux de loyers payes a l'heure par residence"
+    ],
+    "prerequis_orga": [
+      "Equipes sur site d'accord pour laisser les relances et reponses courantes a un agent",
+      "Regle de reprise par un humain sur les cas sensibles (difficulte de paiement, litige)",
+      "Validation juridique du ton et du contenu des relances d'impayes"
+    ],
+    "stack_possible": [
+      "Plateforme d'agents IA specialisee gestion locative branchee sur le logiciel de gestion",
+      "Canaux SMS, e-mail et telephonie avec journal des echanges",
+      "Tableau de bord par residence : occupation, paiements a l'heure, temps de resolution"
+    ],
+    "premiere_etape": "Mesurer, residence par residence, le taux de loyers payes a l'heure et la part des demandes de prospects arrivees hors heures ouvrees, pour savoir ou un agent change le plus le resultat.",
+    "playbook": [
+      {
+        "action": "Etablir la reference : occupation, paiements a l'heure, delai de reponse aux prospects, par residence.",
+        "livrable": "Base chiffree avant deploiement."
+      },
+      {
+        "action": "Deployer d'abord le module de relance de paiement sur un groupe de residences, avec des messages valides juridiquement.",
+        "livrable": "Relances automatiques en production et comparaison avec les residences non equipees."
+      },
+      {
+        "action": "Ajouter la prise en charge des prospects hors heures ouvrees, puis maintenance et renouvellements.",
+        "livrable": "Cycle locataire couvert sur une seule plateforme."
+      },
+      {
+        "action": "Mesurer separement l'effet sur les renouvellements, que le cas Asset Living ne publie pas.",
+        "livrable": "Taux de renouvellement par cohorte, equipee et non equipee."
+      }
+    ],
+    "equipe": "Un responsable des operations locatives qui porte le deploiement, un profil data pour la mesure par residence, un relais juridique pour les relances d'impayes et les responsables de site qui gerent la reprise humaine."
+  },
+  "seo": {
+    "slug": "asset-living-eliseai-cycle-locataire-2025",
+    "title": "Asset Living : agents IA EliseAI sur le cycle locataire - +591 bps de loyers payes a l'heure (2025)",
+    "meta_description": "Asset Living (450 000 logements) a confie relances, location et maintenance aux agents EliseAI : +591 bps de loyers payes a l'heure au T2 2025.",
+    "resume_citable": "Au deuxieme trimestre 2025, les communautes d'Asset Living equipees du module Delinquency d'EliseAI ont envoye plus de 130 000 relances personnalisees et vu les loyers payes a l'heure progresser de 591 points de base, tandis que l'occupation gagnait 278 points de base depuis le debut de 2025.",
+    "faq": [
+      {
+        "q": "Que fait l'IA d'EliseAI chez Asset Living ?",
+        "a": "Elle repond aux prospects et les relance, envoie aux locataires des rappels de paiement personnalises et traite maintenance, renouvellements et appels via LeasingAI, Delinquency, Maintenance, Renewals et VoiceAI. 85 % des communications transactionnelles du cycle locataire sont automatisees selon EliseAI."
+      },
+      {
+        "q": "Quels resultats sont publies ?",
+        "a": "Plus 591 points de base de loyers payes a l'heure au T2 2025 apres plus de 130 000 relances, et plus 278 points de base d'occupation depuis le debut de 2025. Le communique d'Asset Living arrondit a 600 et 300 points de base."
+      },
+      {
+        "q": "L'effet sur les renouvellements est-il mesure ?",
+        "a": "Pas publiquement. Le module Renewals fait partie du deploiement, mais aucun taux de renouvellement isole n'est publie."
+      }
+    ]
+  }
+}

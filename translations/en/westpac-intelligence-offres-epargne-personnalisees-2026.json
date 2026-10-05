@@ -1,0 +1,120 @@
+{
+  "seo": {
+    "title": "Westpac: AI-personalized savings offers - account uptake more than 2x the control group (2026)",
+    "meta_description": "Westpac Intelligence pushes personalized deposit offers: 500,000 customers in two weeks, account uptake more than twice the control group.",
+    "resume_citable": "With its data and AI layer Westpac Intelligence, Australian bank Westpac sent personalized deposit offers to 500,000 retail customers in two weeks, with account uptake more than twice that of the control group, according to its investor presentation of September 15, 2026.",
+    "faq": [
+      {
+        "q": "What is Westpac Intelligence?",
+        "a": "Westpac's data and AI layer, built on a single data foundation fed by 285 source systems. It produces insights, offers and leads for the mobile app, the digital banker and the digital contact center."
+      },
+      {
+        "q": "What results has Westpac published?",
+        "a": "Personalized deposit offers reached 500,000 customers in two weeks with account uptake more than twice that of the control group. On the Business side, smart digital leads generated 16,000 conversations and 2.8 times more settlements over the five months to the end of August 2026, compared with the same period a year earlier."
+      },
+      {
+        "q": "Is the result incremental?",
+        "a": "For the deposit offers, yes: Westpac states that the comparison is made against a control group. For the Business leads, the comparison is against the prior period, with no control group."
+      }
+    ]
+  },
+  "pattern": "personalized product offers to the existing customer base, measured against a control group",
+  "etape_parcours": "loyalty",
+  "objectif_business": "Strengthen deposit gathering from existing retail customers by sending them the right savings offer at the right time, and surface to Business bankers the opportunities detected in the data.",
+  "description": "Westpac, Australia's second-largest bank, has built a data and AI layer called Westpac Intelligence, sitting on a single data foundation that aggregates 285 source systems. This layer feeds the mobile app, the digital banker and the digital contact center. Its first quantified use is commercial: personalized deposit offers sent to retail customers. According to the Data, Digital and AI Update presentation of September 15, 2026, these offers reached 500,000 customers in two weeks, with account uptake more than twice that of the control group. Westpac states in a footnote that the comparison is made against this control group, which makes it an incremental measurement and not a simple response rate. The same engine produces smart digital leads for the Business bank: 16,000 customer conversations and 2.8 times more settlements over the five months to the end of August 2026, compared with the same period a year earlier (period comparison, with no control group). In June 2026, Luis Uguina, general manager data, digital and AI of the Consumer division, described the intent: spot in behavioral signals the customer who is considering switching banks and send them a savings offer through the right channel, at the right time. The bank cites Snowflake as a partner for this layer. Outside the scope of this case but published the same day: an AI search engine on the public website, launched on August 21, 2026, with selection of the first result up 75% against the previous 12 weeks. Westpac discloses neither the amount of deposits gathered nor the model used.",
+  "points_cles": [
+    "Westpac pushes personalized savings offers to its retail customers through its Westpac Intelligence layer.",
+    "500,000 customers reached in two weeks by these deposit offers.",
+    "Account uptake more than twice that of the control group.",
+    "Figures published in the investor presentation of September 15, 2026."
+  ],
+  "resultats": [
+    { "metrique": "Retail customers reached by the personalized deposit offers in two weeks" },
+    { "metrique": "Account opening (account uptake) against the control group" },
+    { "metrique": "Settlements from Business smart digital leads, five months to the end of August 2026 versus the same period a year earlier (16,000 customer conversations)" }
+  ],
+  "niveau_preuve": {
+    "justification": "The figures come from the official investor presentation Data, Digital and AI Update of September 15, 2026, published on the investor site of Westpac (a bank listed on the ASX), with an explicit note on the comparison with the control group; Capital Brief covered the presentation the same day and Cyber Daily documented in June 2026 the intent to target savings offers through the Intelligence Layer."
+  },
+  "stack_technique": [
+    { "detail": "In-house layer that connects data and AI and feeds the app, the digital banker and the digital contact center. Westpac reports 6 times faster activation of customer insights on the first use cases." },
+    { "detail": "Cited by Westpac as a partner of the Intelligence Layer in the September 15, 2026 presentation." }
+  ],
+  "fonctionnement_operationnel": {
+    "cadence": "Offer campaigns triggered from the Westpac Intelligence layer, which continuously captures customer signals and events; Business leads are produced on an ongoing basis for bankers.",
+    "opere_par": "Westpac's Data, Digital and AI team (led by Andrew McMullan) with the savings product teams of the Consumer division; Business bankers for the leads.",
+    "signal_pilote": "Account opening by targeted customers, compared with a control group that does not receive the offer. Without this control group, the bank can no longer separate what the offer causes from what customers would have done on their own.",
+    "etapes": [
+      {
+        "etape": "Data consolidation",
+        "detail": "Data from the 285 source systems is brought together in a governed data foundation, on which the Westpac Intelligence layer relies.",
+        "acteur": "Data team"
+      },
+      {
+        "etape": "Customer detection and selection",
+        "detail": "The layer processes behavioral signals to identify customers to send a deposit offer to, for example those considering switching banks.",
+        "acteur": "AI"
+      },
+      {
+        "etape": "Offer delivery",
+        "detail": "The personalized offer goes out in the app and digital channels; a control group is held out.",
+        "acteur": "Marketing and digital platform"
+      },
+      {
+        "etape": "Business leads",
+        "detail": "For the Business bank, the same layer generates smart digital leads that open a conversation between banker and customer.",
+        "acteur": "AI then banker"
+      },
+      {
+        "etape": "Measurement",
+        "detail": "Account opening compared with the control group for the offers; conversations and settlements compared with the prior period for the leads.",
+        "acteur": "Data and marketing team"
+      }
+    ]
+  },
+  "replication": {
+    "prerequis_data": [
+      "unified customer view covering accounts, transactions and products held",
+      "usable behavioral signals (balances, outgoing transfers, declining usage)",
+      "history of responses to previous offers to train propensity",
+      "control group mechanism built into the campaign tool"
+    ],
+    "prerequis_orga": [
+      "a data and AI team that owns the activation layer, separate from infrastructure projects",
+      "an agreement with the savings product teams on the offers and the margins allowed",
+      "a measurement rule set before launch: incrementality against a control group"
+    ],
+    "stack_possible": [
+      "cloud data warehouse (Snowflake, BigQuery, Databricks)",
+      "in-house propensity models or next best offer platform",
+      "CRM campaign tool able to manage a control group",
+      "in-app notifications and digital channels"
+    ],
+    "premiere_etape": "Pick a single savings product, build a propensity score on existing customers, and send the offer to a targeted population with a randomly drawn control group.",
+    "playbook": [
+      {
+        "action": "Consolidate account and behavioral data in a governed base accessible to the data team.",
+        "livrable": "Unified customer view usable for targeting."
+      },
+      {
+        "action": "Define the trigger signals (attrition risk, excess liquidity) and train a propensity model for opening a savings account.",
+        "livrable": "Propensity score per customer and list of triggers."
+      },
+      {
+        "action": "Deliver the offer in the app to the targeted population while holding out a random control group.",
+        "livrable": "Campaign in production with a control group."
+      },
+      {
+        "action": "Measure account opening against the control group, then extend to other products and to leads for bankers.",
+        "livrable": "Incremental read and extension decision."
+      }
+    ],
+    "equipe": "A propensity data scientist, a data engineer on the data foundation, a CRM lead who runs the campaigns and the control group, and a savings product owner on the business side."
+  },
+  "statut_vivant": {
+    "note": "Figures presented to investors on September 15, 2026, on data as of the end of August 2026. The exact scope (channels, savings products involved) and the duration of the two-week campaign are not detailed. To be checked at the November 2026 annual results."
+  },
+  "transposable_ue": {
+    "note": "Targeting savings offers relies on customers' account and behavioral data. In the EU, this marketing profiling requires a GDPR legal basis (documented legitimate interest or consent depending on the channel), a right to object to direct marketing and clear notice. A targeted deposit offer is not high risk under the AI Act, unlike credit scoring: keep the offer engine separate from lending models."
+  }
+}

@@ -1,0 +1,309 @@
+{
+  "id": "costco-carrousels-recommandations-personnalisees-2026",
+  "type_fiche": "succes",
+  "marque": "Costco",
+  "groupe": "Costco Wholesale Corporation",
+  "industrie": "retail_ecom",
+  "marches_deploiement": [
+    "Etats-Unis"
+  ],
+  "transposable_ue": {
+    "flag": "oui_avec_adaptations",
+    "note": "Les recommandations s'appuient sur l'historique de recherche et d'achat rattache au compte membre. En UE, ce profilage marketing demande une base legale et, pour les traceurs du site et de l'app, un consentement RGPD et ePrivacy. Un moteur de recommandation produit ne releve pas du haut risque au sens de l'AI Act. Le modele de club a adhesion, ou chaque client est identifie, facilite la reconciliation des donnees mais ne dispense pas de l'information des membres."
+  },
+  "metier": "e-commerce / experience digitale membre",
+  "logo_domain": "costco.com",
+  "intervenants": [
+    {
+      "nom": "Gary Millerchip",
+      "role": "Executive Vice President et Chief Financial Officer, Costco",
+      "source_ref": "S1"
+    },
+    {
+      "nom": "Ron Vachris",
+      "role": "President et Chief Executive Officer, Costco",
+      "source_ref": "S5"
+    }
+  ],
+  "axes": {
+    "levier": "activation_conversion",
+    "touchpoints": [
+      "costco.com",
+      "application mobile Costco",
+      "carrousels de recommandations produits",
+      "placements produits personnalises",
+      "e-mails aux membres"
+    ],
+    "etape_parcours": "consideration",
+    "famille": "personnalisation",
+    "pattern": "carrousels de recommandations produits personnalises a partir de l'historique du membre, sur le site et l'app",
+    "type_ia": [
+      "systemes de recommandation"
+    ],
+    "plateforme_stack": [
+      "custom/in-house (fournisseur et modele non communiques par Costco)"
+    ],
+    "objectif_metrique": [
+      "ventes e-commerce issues des carrousels",
+      "taux de conversion des carrousels",
+      "part des commandes costco.com contenant un article personnalise"
+    ]
+  },
+  "implementation": "custom",
+  "objectif_business": "Rattraper le retard digital d'un distributeur dont le e-commerce pese peu dans le chiffre d'affaires, en rendant le site et l'app plus pertinents pour chaque membre : plus d'articles dans le panier en ligne, plus de visites, et une relation membre plus solide alors que les adhesions prises en ligne se renouvellent un peu moins bien que celles prises en entrepot.",
+  "points_cles": [
+    "Costco sert depuis fin 2025 des carrousels de recommandations personnalises sur costco.com et dans son app.",
+    "Les suggestions partent de l'historique du membre, notamment ses recherches passees, selon le CEO Ron Vachris.",
+    "Plus de 470 M$ de ventes via les carrousels au T2 de l'exercice 2026, conversion x3 au T3.",
+    "Au T4, 10 % des commandes costco.com contiennent un article personnalise, chiffres donnes en earnings call."
+  ],
+  "description": "Costco a commence a personnaliser son site et son application au premier trimestre de son exercice 2026 (septembre a novembre 2025). Le CEO Ron Vachris presente alors de nouvelles capacites qui proposent aux membres des recommandations produits plus pertinentes a partir de leur historique de recherche. Le format le plus visible est le carrousel de recommandations produits personnalisees, place sur costco.com et dans l'app. Le CFO Gary Millerchip en donne les resultats trimestre apres trimestre sur les earnings calls. Au deuxieme trimestre (call du 5 mars 2026), les carrousels generent plus de 470 millions de dollars de ventes e-commerce. Au troisieme trimestre (call du 28 mai 2026), ils convertissent trois fois mieux que le taux de conversion habituel du site ; Retail Dive rapporte que Millerchip chiffre leur contribution a un peu moins de 500 millions de dollars de ventes digitales, la transcription Motley Fool de ce passage portant une erreur de montant manifeste. Au quatrieme trimestre (call du 24 septembre 2026), Costco elargit le perimetre aux placements produits et aux e-mails : les ventes issues des initiatives de personnalisation affichent une croissance a trois chiffres et 10 % des commandes costco.com contiennent un article personnalise. Costco ne publie ni le modele, ni le fournisseur, ni la methode de mesure de ces ventes attribuees, et ne qualifie pas lui-meme les carrousels d'IA sur ses calls ; c'est la presse retail (Retail Customer Experience) qui les decrit comme alimentes par l'IA. A ne pas confondre avec un resultat de ce dispositif : le trafic venu des moteurs de recherche IA externes, que Costco dit en croissance a trois chiffres sur le meme call, provient d'assistants tiers et non de la personnalisation de Costco.",
+  "resultats": [
+    {
+      "metrique": "Ventes e-commerce generees par les carrousels de recommandations personnalisees, T2 de l'exercice 2026",
+      "valeur": "470 M$+",
+      "citation_exacte": "our personalized product recommendation carousels drove over $470,000,000 of ecommerce sales",
+      "source_ref": "S2"
+    },
+    {
+      "metrique": "Taux de conversion des carrousels par rapport au taux de conversion habituel du site, T3 de l'exercice 2026",
+      "valeur": "x3",
+      "citation_exacte": "our personalized product recommendation carousels delivered conversion rates 3x better than our typical conversion rates",
+      "source_ref": "S3"
+    },
+    {
+      "metrique": "Part des commandes costco.com contenant un article personnalise, fin de l'exercice 2026",
+      "valeur": "10%",
+      "citation_exacte": "10% of all costco.com orders now include a personalized item",
+      "source_ref": "S1"
+    },
+    {
+      "metrique": "Croissance des ventes issues des initiatives de personnalisation (placements produits et e-mails inclus), T4 de l'exercice 2026",
+      "valeur": "triple digit",
+      "citation_exacte": "triple-digit growth in sales from personalized initiatives in Q4",
+      "source_ref": "S1"
+    }
+  ],
+  "niveau_preuve": {
+    "niveau": "A",
+    "justification": "Les chiffres sont enonces par le CFO de Costco dans ses remarques preparees sur trois earnings calls consecutifs (T2, T3 et T4 de l'exercice 2026), cites ici via les transcriptions publiees par The Motley Fool, et repris par Retail Dive et Digital Commerce 360. Communication de resultats, plusieurs sources concordantes ; la qualification IA du moteur vient de la presse specialisee, pas de Costco."
+  },
+  "dates": {
+    "lancement": "Nouvelles capacites de personnalisation lancees au T1 de l'exercice 2026 (septembre a novembre 2025), resultats des carrousels publies a partir du call du 5 mars 2026",
+    "derniere_confirmation_activite": "24 septembre 2026 (earnings call du T4 de l'exercice 2026)",
+    "verifie_le": "2026-10-05",
+    "revoir_apres": "2027-04-05"
+  },
+  "statut_vivant": {
+    "statut": "confirme",
+    "note": "Le dispositif est cite sur quatre calls consecutifs, du T1 au T4 de l'exercice 2026, et son perimetre s'elargit au T4 (placements produits, e-mails). Le montant du T3 n'est connu que par la presse : la transcription Motley Fool de ce call affiche un chiffre en milliards incoherent avec les autres sources."
+  },
+  "sources": [
+    {
+      "ref": "S1",
+      "type": "earnings_call",
+      "fiabilite": "T3_presse_etablie",
+      "titre": "Costco (COST) Q4 2026 Earnings Call Transcript",
+      "url": "https://www.fool.com/earnings/call-transcripts/2026/09/29/costco-cost-q4-2026-earnings-call-transcript/",
+      "date_publication": "2026-09-29 (transcription de l'appel du 24 septembre 2026)",
+      "consulte_le": "2026-10-05"
+    },
+    {
+      "ref": "S2",
+      "type": "earnings_call",
+      "fiabilite": "T3_presse_etablie",
+      "titre": "Costco (COST) Q2 2026 Earnings Call Transcript",
+      "url": "https://www.fool.com/earnings/call-transcripts/2026/03/05/costco-cost-q2-2026-earnings-call-transcript/",
+      "date_publication": "2026-03-05",
+      "consulte_le": "2026-10-05"
+    },
+    {
+      "ref": "S3",
+      "type": "earnings_call",
+      "fiabilite": "T3_presse_etablie",
+      "titre": "Costco (COST) Q3 2026 Earnings Transcript",
+      "url": "https://www.fool.com/earnings/call-transcripts/2026/05/28/costco-cost-q3-2026-earnings-transcript/",
+      "date_publication": "2026-05-28",
+      "consulte_le": "2026-10-05"
+    },
+    {
+      "ref": "S4",
+      "type": "presse",
+      "fiabilite": "T3_presse_etablie",
+      "titre": "Costco's personalization effort drives $500M in digital sales",
+      "url": "https://www.retaildive.com/news/costco-digital-personalization-500-million/821702/",
+      "date_publication": "2026-06-03",
+      "consulte_le": "2026-10-05"
+    },
+    {
+      "ref": "S5",
+      "type": "presse",
+      "fiabilite": "T4_secondaire",
+      "titre": "Costco ecommerce sales growth tops 20% in Q1",
+      "url": "https://www.digitalcommerce360.com/2025/12/15/costco-ecommerce-sales-q1-fy26/",
+      "date_publication": "2025-12-15",
+      "consulte_le": "2026-10-05"
+    },
+    {
+      "ref": "S6",
+      "type": "presse",
+      "fiabilite": "T4_secondaire",
+      "titre": "Costco CEO, CFO talk AI-powered online sales jump, tariff strategy",
+      "url": "https://www.retailcustomerexperience.com/articles/costco-ceo-cfo-talk-ai-powered-online-sales-jump-tariff-strategy/",
+      "date_publication": "2026-03-17",
+      "consulte_le": "2026-10-05"
+    }
+  ],
+  "fonctionnement_operationnel": {
+    "cadence": "En continu : les carrousels se recalculent a la navigation du membre. Le pilotage se lit au trimestre, Costco publiant ventes attribuees et conversion a chaque earnings call.",
+    "opere_par": "Equipes e-commerce et digitales de Costco ; aucun prestataire n'est nomme dans les sources.",
+    "signal_pilote": "L'historique du membre connecte, en particulier ses recherches passees. Un visiteur non identifie ou un membre sans historique en ligne ne donne presque rien a exploiter, ce qui limite la portee des carrousels pour les membres qui achetent surtout en entrepot.",
+    "etapes": [
+      {
+        "etape": "Collecte du signal",
+        "detail": "Le site et l'app enregistrent les recherches et les achats du membre rattaches a son numero d'adhesion.",
+        "acteur": "Plateforme"
+      },
+      {
+        "etape": "Calcul des recommandations",
+        "detail": "Le moteur choisit les produits a pousser dans les carrousels a partir de cet historique.",
+        "acteur": "IA"
+      },
+      {
+        "etape": "Affichage",
+        "detail": "Les carrousels personnalises s'affichent sur costco.com et dans l'app ; au T4, la meme logique alimente des placements produits et des e-mails.",
+        "acteur": "Plateforme et equipes e-commerce"
+      },
+      {
+        "etape": "Attribution et lecture trimestrielle",
+        "detail": "Costco suit les ventes passees par les carrousels, leur conversion contre le taux habituel du site et la part des commandes contenant un article personnalise, puis les rapporte aux investisseurs.",
+        "acteur": "Finance et equipe digitale"
+      }
+    ]
+  },
+  "schema_flow": {
+    "statut": "approche_type",
+    "noeuds": [
+      {
+        "id": "n1",
+        "role_generique": "data_source",
+        "label": "Historique membre : recherches et achats en ligne"
+      },
+      {
+        "id": "n2",
+        "role_generique": "modele_ia",
+        "label": "Moteur de recommandations produits"
+      },
+      {
+        "id": "n3",
+        "role_generique": "site_app",
+        "label": "Carrousels sur costco.com et l'app Costco"
+      },
+      {
+        "id": "n4",
+        "role_generique": "crm",
+        "label": "E-mails et placements produits personnalises"
+      },
+      {
+        "id": "n5",
+        "role_generique": "humain",
+        "label": "Membre Costco"
+      }
+    ],
+    "liens": [
+      [
+        "n1",
+        "n2"
+      ],
+      [
+        "n2",
+        "n3",
+        "produits recommandes"
+      ],
+      [
+        "n2",
+        "n4"
+      ],
+      [
+        "n3",
+        "n5"
+      ],
+      [
+        "n4",
+        "n5"
+      ],
+      [
+        "n5",
+        "n1",
+        "clics et achats, boucle de feedback"
+      ]
+    ]
+  },
+  "stack_technique": [
+    {
+      "nom": "Carrousels de recommandations personnalisees (Costco)",
+      "categorie": "plateforme",
+      "detail": "Deployes sur costco.com et l'app. Costco ne communique ni le modele ni le fournisseur du moteur.",
+      "url": "https://www.costco.com"
+    }
+  ],
+  "replication": {
+    "statut_epistemique": "infere",
+    "prerequis_data": [
+      "client identifie a la connexion, idealement par un numero de compte ou d'adhesion commun au magasin et au site",
+      "historique de recherche et d'achat en ligne exploitable par profil",
+      "catalogue produit propre et attribue",
+      "tracking capable d'attribuer une vente a un carrousel et de comparer sa conversion au taux du site"
+    ],
+    "prerequis_orga": [
+      "une equipe e-commerce qui possede les emplacements de carrousels sur le site et l'app",
+      "une regle d'attribution des ventes fixee avant le lancement, pour que le chiffre rapporte soit defendable",
+      "un arbitrage merchandising sur ce que le moteur a le droit de pousser"
+    ],
+    "stack_possible": [
+      "moteur de recommandation in-house ou plateforme de personnalisation e-commerce",
+      "CDP ou entrepot de donnees client relie au compte",
+      "outil d'emailing capable de reutiliser les memes recommandations"
+    ],
+    "premiere_etape": "Placer un premier carrousel personnalise sur une page a fort trafic pour les clients connectes, et mesurer sa conversion contre le taux habituel du site avant d'etendre a d'autres emplacements.",
+    "playbook": [
+      {
+        "action": "Rattacher les recherches et achats en ligne a un identifiant client unique, et mesurer quelle part du trafic est connectee.",
+        "livrable": "Profil client exploitable et taille de l'audience adressable."
+      },
+      {
+        "action": "Lancer un carrousel de recommandations sur un emplacement prioritaire, avec un groupe temoin sans personnalisation.",
+        "livrable": "Lecture de conversion du carrousel contre le taux habituel et contre le temoin."
+      },
+      {
+        "action": "Etendre aux autres emplacements du site et de l'app, puis reutiliser les recommandations dans les e-mails et les placements produits.",
+        "livrable": "Personnalisation multi-emplacements avec une attribution commune."
+      },
+      {
+        "action": "Suivre a chaque cycle de reporting les ventes attribuees, la conversion et la part des commandes contenant un article recommande.",
+        "livrable": "Tableau de bord de personnalisation lu par la direction."
+      }
+    ],
+    "equipe": "Un product manager e-commerce qui possede les emplacements, des profils data science pour le moteur et l'attribution, des developpeurs front pour le site et l'app, avec le merchandising comme garde-fou sur l'assortiment pousse."
+  },
+  "seo": {
+    "slug": "costco-carrousels-recommandations-personnalisees-2026",
+    "title": "Costco : carrousels de recommandations personnalisees - 470 M$ de ventes en un trimestre et conversion x3 (2026)",
+    "meta_description": "Costco personnalise costco.com et son app : carrousels a plus de 470 M$ de ventes au T2, conversion trois fois superieure, 10 % des commandes personnalisees.",
+    "resume_citable": "Les carrousels de recommandations produits personnalisees de Costco sur costco.com et dans son app ont genere plus de 470 millions de dollars de ventes e-commerce au deuxieme trimestre de l'exercice 2026 et converti trois fois mieux que le taux habituel du site au troisieme ; au quatrieme trimestre, 10 % des commandes costco.com contenaient un article personnalise, selon le CFO Gary Millerchip sur les earnings calls.",
+    "faq": [
+      {
+        "q": "Qu'a deploye Costco ?",
+        "a": "Des carrousels de recommandations produits personnalisees sur costco.com et dans l'app, a partir de l'historique du membre, notamment ses recherches passees. Au T4 de l'exercice 2026, la personnalisation s'etend aux placements produits et aux e-mails."
+      },
+      {
+        "q": "Quels resultats Costco a-t-il publies ?",
+        "a": "Plus de 470 millions de dollars de ventes e-commerce generees par les carrousels au T2 de l'exercice 2026, une conversion trois fois superieure au taux habituel au T3, puis au T4 une croissance a trois chiffres des ventes issues de la personnalisation et 10 % des commandes costco.com contenant un article personnalise."
+      },
+      {
+        "q": "Le trafic venu des recherches IA fait-il partie de ce resultat ?",
+        "a": "Non. Le trafic issu des moteurs de recherche IA externes, en croissance a trois chiffres selon Costco, vient d'assistants tiers. C'est un canal d'acquisition distinct de la personnalisation du site."
+      }
+    ]
+  }
+}

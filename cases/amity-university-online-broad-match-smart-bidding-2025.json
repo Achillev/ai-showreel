@@ -1,0 +1,300 @@
+{
+  "type_fiche": "succes",
+  "id": "amity-university-online-broad-match-smart-bidding-2025",
+  "marque": "Amity University Online",
+  "industrie": "education",
+  "marches_deploiement": [
+    "Inde"
+  ],
+  "transposable_ue": {
+    "flag": "oui_avec_adaptations",
+    "note": "Requete large et Smart Bidding sont disponibles en UE sans restriction. Le cas a tourne en Inde ; en Europe, l'optimisation sur l'admission suppose de remonter un evenement hors ligne (inscription payee) vers Google Ads, donc Consent Mode v2, import de conversions encadre par le RGPD et base legale pour le rapprochement CRM. Pas de classification haut risque au sens de l'AI Act pour ce type de campagne."
+  },
+  "metier": "Acquisition media / recrutement d'etudiants",
+  "logo_domain": "amityonline.com",
+  "intervenants": [
+    {
+      "nom": "Samir Prakash",
+      "role": "V.P. of Performance Marketing, Univo",
+      "source_ref": "S1"
+    }
+  ],
+  "agences": [
+    {
+      "nom": "Univo",
+      "role": "Agence et partenaire de long terme d'Amity University Online : conception des programmes, acquisition des apprenants, delivery numerique ; a pilote les campagnes Search",
+      "source_ref": "S1"
+    }
+  ],
+  "axes": {
+    "levier": "acquisition",
+    "touchpoints": [
+      "Google Search"
+    ],
+    "etape_parcours": "découverte -> considération -> achat",
+    "famille": "optimisation_automatisation",
+    "pattern": "Requete large (broad match) couplee aux encheres automatiques Smart Bidding sur les campagnes Search, avec exclusions au niveau du compte, pour baisser le cout d'acquisition sans perdre de volume",
+    "type_ia": [
+      "smart bidding (encheres ML)",
+      "correspondance semantique des requetes (broad match)"
+    ],
+    "plateforme_stack": [
+      "Google Ads Search",
+      "Smart Bidding",
+      "Broad match"
+    ],
+    "objectif_metrique": [
+      "cout par admission",
+      "taux de conversion",
+      "volume d'admissions"
+    ]
+  },
+  "implementation": "plateforme",
+  "stack_technique": [
+    {
+      "nom": "Google Ads Search",
+      "categorie": "plateforme",
+      "detail": "Campagnes sur le reseau de recherche Google, pilotees par l'agence Univo.",
+      "url": "https://ads.google.com"
+    },
+    {
+      "nom": "Smart Bidding",
+      "categorie": "outil",
+      "detail": "Encheres automatiques de Google qui ajustent l'offre a chaque requete selon les signaux de conversion.",
+      "url": "https://ads.google.com"
+    },
+    {
+      "nom": "Broad match",
+      "categorie": "outil",
+      "detail": "Correspondance large des mots-cles : Google rapproche les requetes par le sens, l'agence filtre le trafic hors cible par des exclusions au niveau du compte.",
+      "url": "https://ads.google.com"
+    }
+  ],
+  "objectif_business": "Baisser le cout d'acquisition des etudiants en ligne sur les canaux de performance sans faire baisser le volume d'inscriptions.",
+  "points_cles": [
+    "Amity University Online a passe ses campagnes Search en requete large avec Smart Bidding, via l'agence Univo.",
+    "Exclusions au niveau du compte pour filtrer le trafic hors cible et garder des leads qualifies.",
+    "Cout par admission en baisse de 54 % sur un an, taux de conversion x2,5, admissions +10 %.",
+    "Preuve B : cas publie par Google en mars 2025, partenariat d'acquisition confirme par Univo."
+  ],
+  "description": "Amity University Online est l'offre de diplomes en ligne de l'universite privee indienne Amity. Son partenaire Univo, qui gere pour elle la chaine de bout en bout (conception des programmes, conformite UGC, acquisition des apprenants, delivery numerique), indique avoir porte l'ecosysteme a plus de 2 lakh apprenants (200 000) en Inde et a l'international. L'objectif fixe aux campagnes de performance etait de reduire le cout d'acquisition sans perdre de volume d'inscriptions. Univo a bascule les campagnes Search de Google en requete large (broad match) couplee a Smart Bidding : Google rapproche les requetes des mots-cles par le sens et ajuste l'enchere a chaque requete selon la probabilite de conversion. Pour eviter que la requete large n'aspire du trafic inutile, l'agence a pose des exclusions au niveau du compte et retravaille les termes de recherche. Google rapporte, sur un an, un cout par admission en baisse de 54 %, un taux de conversion multiplie par 2,5 et 10 % d'admissions en plus. Le cas figure dans la serie « How businesses are putting AI to work to drive results » publiee par Google en mars 2025. La periode exacte de la campagne et les montants investis ne sont pas publies.",
+  "fonctionnement_operationnel": {
+    "cadence": "En continu sur les campagnes Search, avec revue reguliere des rapports de termes de recherche et mise a jour des exclusions.",
+    "opere_par": "L'equipe performance marketing de l'agence Univo, pour le compte d'Amity University Online.",
+    "signal_pilote": "La conversion remontee a Google Ads (lead qualifie puis admission). Si seul le lead brut remonte, Smart Bidding optimise vers des formulaires remplis et le cout par admission peut remonter sans que le cout par lead ne le montre.",
+    "etapes": [
+      {
+        "etape": "Fixer la conversion de reference",
+        "detail": "Definir l'evenement que les encheres doivent viser (lead qualifie, admission) et le remonter dans Google Ads.",
+        "acteur": "Agence / equipe data"
+      },
+      {
+        "etape": "Ouvrir les mots-cles en requete large",
+        "detail": "Passer les groupes d'annonces Search en broad match pour elargir la couverture des requetes de candidats.",
+        "acteur": "Agence"
+      },
+      {
+        "etape": "Laisser Smart Bidding fixer les encheres",
+        "detail": "L'algorithme ajuste l'offre a chaque requete selon la probabilite de conversion.",
+        "acteur": "IA Google"
+      },
+      {
+        "etape": "Filtrer le trafic hors cible",
+        "detail": "Lire les termes de recherche declenches et ajouter des exclusions au niveau du compte pour ecarter les requetes non pertinentes.",
+        "acteur": "Agence"
+      },
+      {
+        "etape": "Comparer au meme mois de l'annee precedente",
+        "detail": "Suivre cout par admission, taux de conversion et volume d'admissions en glissement annuel, saisonnalite des rentrees oblige.",
+        "acteur": "Agence / marketing Amity"
+      }
+    ]
+  },
+  "resultats": [
+    {
+      "metrique": "Cout par admission, sur un an",
+      "valeur": "-54 %",
+      "citation_exacte": "54% reduction in cost per admission compared to the previous year",
+      "source_ref": "S1"
+    },
+    {
+      "metrique": "Taux de conversion",
+      "valeur": "x2,5",
+      "citation_exacte": "raise their conversion rate by 2.5x",
+      "source_ref": "S1"
+    },
+    {
+      "metrique": "Volume d'admissions",
+      "valeur": "+10 %",
+      "citation_exacte": "drive a 10% increase in admissions",
+      "source_ref": "S1"
+    },
+    {
+      "metrique": "Apprenants atteints par Amity Online avec Univo (echelle du programme)",
+      "valeur": "200 000+",
+      "citation_exacte": "helped Amity reach over 2 lakh learners across India and international markets",
+      "source_ref": "S2"
+    }
+  ],
+  "niveau_preuve": {
+    "niveau": "B",
+    "justification": "Les trois chiffres de campagne viennent d'un cas publie par Google (source plateforme interessee) ; l'agence Univo confirme de son cote le partenariat d'acquisition de long terme et l'echelle du programme, sans reprendre les chiffres de campagne."
+  },
+  "dates": {
+    "lancement": "Non date precisement ; resultats compares a l'annee precedente, cas publie par Google en mars 2025",
+    "derniere_confirmation_activite": "2026-10 - page de cas Google toujours en ligne ; Univo presente toujours Amity University Online comme partenaire de long terme incluant l'acquisition des apprenants",
+    "verifie_le": "2026-10-05",
+    "revoir_apres": "2027-01-05"
+  },
+  "statut_vivant": {
+    "statut": "signaux_mitiges",
+    "note": "Le partenariat Univo-Amity et l'acquisition sur Google sont toujours actifs selon Univo, mais aucune source ne confirme apres mars 2025 le maintien du dispositif requete large plus Smart Bidding ni les chiffres."
+  },
+  "sources": [
+    {
+      "ref": "S1",
+      "type": "customer_story_plateforme",
+      "titre": "How businesses are putting AI to work to drive results - Google Business (Inde)",
+      "url": "https://business.google.com/in/accelerate/resources/articles/generate-leads-case-studies/",
+      "date_publication": "2025-03",
+      "consulte_le": "2026-10-05",
+      "fiabilite": "T2_officiel_interesse"
+    },
+    {
+      "ref": "S2",
+      "type": "blog_officiel",
+      "titre": "UNIVO Education - Scaling Amity University's Online Degree Ecosystem",
+      "url": "https://univoeducation.com/",
+      "consulte_le": "2026-10-05",
+      "fiabilite": "T2_officiel_interesse"
+    },
+    {
+      "ref": "S3",
+      "type": "customer_story_plateforme",
+      "titre": "How businesses are putting AI to work to drive results - Google Ads Help",
+      "url": "https://support.google.com/google-ads/answer/15796550?hl=en-AU",
+      "consulte_le": "2026-10-05",
+      "fiabilite": "T2_officiel_interesse"
+    }
+  ],
+  "schema_flow": {
+    "statut": "approche_type",
+    "noeuds": [
+      {
+        "id": "kw",
+        "role_generique": "data_source",
+        "label": "Mots-cles en requete large + exclusions compte",
+        "outil_documente": "Google Ads broad match"
+      },
+      {
+        "id": "bid",
+        "role_generique": "paid_platform",
+        "label": "Smart Bidding : enchere par requete",
+        "outil_documente": "Google Ads Smart Bidding"
+      },
+      {
+        "id": "serp",
+        "role_generique": "site_app",
+        "label": "Annonces Google Search"
+      },
+      {
+        "id": "site",
+        "role_generique": "site_app",
+        "label": "Site Amity Online : formulaire de candidature"
+      },
+      {
+        "id": "crm",
+        "role_generique": "crm",
+        "label": "Suivi lead -> admission"
+      },
+      {
+        "id": "ops",
+        "role_generique": "humain",
+        "label": "Agence Univo : revue des termes de recherche"
+      }
+    ],
+    "liens": [
+      [
+        "kw",
+        "bid"
+      ],
+      [
+        "bid",
+        "serp"
+      ],
+      [
+        "serp",
+        "site"
+      ],
+      [
+        "site",
+        "crm"
+      ],
+      [
+        "crm",
+        "bid",
+        "conversions remontees"
+      ],
+      [
+        "serp",
+        "ops"
+      ],
+      [
+        "ops",
+        "kw",
+        "nouvelles exclusions"
+      ]
+    ]
+  },
+  "replication": {
+    "statut_epistemique": "infere",
+    "playbook": [
+      {
+        "action": "Remonter dans Google Ads une conversion proche de l'inscription reelle (lead qualifie ou admission importee depuis le CRM), Consent Mode v2 compris en UE.",
+        "livrable": "Action de conversion de reference fiable, utilisable par Smart Bidding."
+      },
+      {
+        "action": "Passer une partie des campagnes Search en requete large avec une strategie Smart Bidding sur cette conversion, en gardant une campagne temoin en correspondance exacte ou expression.",
+        "livrable": "Test broad match contre temoin en ligne."
+      },
+      {
+        "action": "Lire les rapports de termes de recherche et construire une liste d'exclusions au niveau du compte.",
+        "livrable": "Liste d'exclusions partagee et revue reguliere."
+      },
+      {
+        "action": "Comparer cout par admission, taux de conversion et volume en glissement annuel avant de generaliser.",
+        "livrable": "Decision de bascule documentee."
+      }
+    ],
+    "equipe": "Un media buyer Search, un profil data ou CRM pour l'import des conversions hors ligne, et un relais cote admissions pour qualifier les leads.",
+    "prerequis_data": [
+      "Suivi des leads jusqu'a l'admission, rapprochable des clics Google",
+      "Historique de conversions suffisant pour que Smart Bidding apprenne",
+      "Consent Mode v2 et base legale pour l'import de conversions en UE"
+    ],
+    "prerequis_orga": [
+      "Accord entre marketing et service admissions sur la definition d'un lead qualifie",
+      "Revue reguliere des termes de recherche par l'agence ou l'equipe interne"
+    ],
+    "stack_possible": [
+      "Google Ads Search en broad match + Smart Bidding, import de conversions hors ligne depuis le CRM admissions"
+    ],
+    "premiere_etape": "Verifier que l'admission (et pas seulement le formulaire) remonte comme conversion dans Google Ads, puis lancer un test broad match plus Smart Bidding sur une campagne a fort volume."
+  },
+  "seo": {
+    "slug": "amity-university-online-broad-match-smart-bidding-2025",
+    "title": "Amity University Online : requete large et Smart Bidding sur Search - cout par admission -54 % (2025)",
+    "meta_description": "Amity University Online et son agence Univo ont passe leurs campagnes Search en broad match avec Smart Bidding : cout par admission -54 %, conversion x2,5.",
+    "resume_citable": "Amity University Online, avec son agence Univo, a couple requete large et Smart Bidding sur ses campagnes Google Search : cout par admission en baisse de 54 % sur un an, taux de conversion x2,5 et admissions +10 %, selon le cas publie par Google en mars 2025.",
+    "faq": [
+      {
+        "q": "La requete large ne fait-elle pas exploser le trafic inutile ?",
+        "a": "C'est le risque. Dans le cas Amity, l'agence Univo a compense par des exclusions au niveau du compte et un travail sur les termes de recherche, et Smart Bidding encherit selon la probabilite de conversion."
+      },
+      {
+        "q": "Les chiffres sont-ils verifies de facon independante ?",
+        "a": "Non. Les trois chiffres de campagne viennent de Google. Univo confirme le partenariat d'acquisition et l'echelle du programme, pas les chiffres de la campagne."
+      }
+    ]
+  }
+}

@@ -1,0 +1,120 @@
+{
+  "seo": {
+    "title": "Asset Living: EliseAI AI agents across the resident lifecycle - +591 bps in on-time rent payments (2025)",
+    "meta_description": "Asset Living (450,000 units) handed payment reminders, leasing and maintenance to EliseAI agents: +591 bps in on-time rent payments in Q2 2025.",
+    "resume_citable": "In the second quarter of 2025, Asset Living communities equipped with EliseAI's Delinquency module sent more than 130,000 personalized reminders and saw on-time rent payments rise by 591 basis points, while occupancy gained 278 basis points since the start of 2025.",
+    "faq": [
+      {
+        "q": "What does EliseAI's AI do at Asset Living?",
+        "a": "It answers prospects and follows up with them, sends residents personalized payment reminders, and handles maintenance, renewals and calls through LeasingAI, Delinquency, Maintenance, Renewals and VoiceAI. According to EliseAI, 85% of transactional communications across the resident lifecycle are automated."
+      },
+      {
+        "q": "What results are published?",
+        "a": "Plus 591 basis points in on-time rent payments in Q2 2025 after more than 130,000 reminders, and plus 278 basis points in occupancy since the start of 2025. Asset Living's press release rounds these to 600 and 300 basis points."
+      },
+      {
+        "q": "Is the effect on renewals measured?",
+        "a": "Not publicly. The Renewals module is part of the deployment, but no isolated renewal rate is published."
+      }
+    ]
+  },
+  "pattern": "AI agent across the whole prospect-to-resident lifecycle",
+  "etape_parcours": "post-purchase",
+  "objectif_business": "Maintain service quality for residents and prospects during growth from 70,000 to more than 450,000 managed units, by handing repetitive exchanges (reminders, replies, routine requests) to AI agents and keeping on-site teams on the interactions that drive renewals.",
+  "description": "Asset Living manages more than 450,000 units for more than 500 clients in more than 40 US states, and ranks second in the NMHC Top 50 managers. The portfolio grew from 70,000 units in 2020 to more than 450,000. To absorb this growth, the group deployed the EliseAI platform across the full journey from prospect to resident: LeasingAI answers prospects and follows up with them, including evenings and weekends (nearly 50% of inquiries arrive outside business hours according to the case study), Delinquency sends residents personalized payment reminders, and the Maintenance, Renewals and VoiceAI modules take service requests, lease renewals and calls. EliseAI states that 85% of transactional communications in the resident lifecycle are automated. In the second quarter of 2025, communities equipped with the Delinquency module sent more than 130,000 reminders and saw the on-time rent payment rate rise by 591 basis points. Since the start of 2025, occupancy in equipped communities has gained 278 basis points, a gain the study attributes to continuous prospect follow-up. Asset Living's press release of September 16, 2025 repeats these figures rounded to 600 and 300 basis points. Two caveats. No isolated renewal rate is published, even though the Renewals module is part of the deployment: the effect on resident retention remains publicly unmeasured. The figures come from the vendor and the client, with no control group described. The capacity gain for teams (78.2 hours per community per month in the press release, 72 hours in the body of the case study) is an internal productivity indicator and is not retained here as a client result.",
+  "points_cles": [
+    "Asset Living, number 2 in the NMHC ranking, deployed EliseAI's AI agents across the whole resident lifecycle.",
+    "Leasing, payment reminders, maintenance, renewals and voice all run through a single platform.",
+    "In Q2 2025: 591 more basis points of on-time rent payments, after 130,000 reminders.",
+    "Evidence B: EliseAI case study, figures repeated in Asset Living's September 2025 press release."
+  ],
+  "resultats": [
+    { "metrique": "On-time rent payment rate in communities equipped with the Delinquency module, Q2 2025 (rounded to 600 bps in the press release)" },
+    { "metrique": "Personalized payment reminders sent to residents in Q2 2025" },
+    { "metrique": "Occupancy rate of equipped communities since the start of 2025, attributed to continuous prospect follow-up (rounded to 300 bps in the press release)" },
+    { "metrique": "Share of transactional communications in the resident lifecycle handled by AI" }
+  ],
+  "niveau_preuve": {
+    "justification": "A quantified case study from the vendor EliseAI, whose same results (rounded) are repeated in the official press release published by Asset Living on its own site and by EliseAI on September 16, 2025; no independent source or financial result confirms them."
+  },
+  "stack_technique": [
+    { "detail": "Continuous replies to and follow-up of prospects, including outside business hours" },
+    { "detail": "Personalized payment reminders sent to residents" },
+    { "detail": "Maintenance requests, lease renewals and voice agent on the same platform" }
+  ],
+  "fonctionnement_operationnel": {
+    "cadence": "Continuous: the agents reply at any hour, payment reminders go out at each rent due date",
+    "opere_par": "Asset Living's on-site teams, who take over the exchanges the AI does not handle, supported by the EliseAI platform",
+    "signal_pilote": "Each resident's payment status and each prospect's status in the leasing journey. Without up-to-date payment data, a reminder goes to a resident who has already paid; without prospect tracking, continuous follow-up cannot be measured in occupancy.",
+    "etapes": [
+      {
+        "etape": "Handling prospects",
+        "detail": "LeasingAI answers incoming inquiries, including outside business hours, and follows up with lukewarm prospects until the tour or the signing.",
+        "acteur": "AI"
+      },
+      {
+        "etape": "Reminders on late rent",
+        "detail": "The Delinquency module sends residents personalized payment reminders. More than 130,000 messages in Q2 2025.",
+        "acteur": "AI"
+      },
+      {
+        "etape": "Routine resident requests",
+        "detail": "Maintenance, renewals and calls go through the text and voice agents, which handle the transactional share (85% according to EliseAI).",
+        "acteur": "AI"
+      },
+      {
+        "etape": "Human takeover",
+        "detail": "On-site associates keep the high-value exchanges and in-person meetings, which Asset Living links to renewals.",
+        "acteur": "on-site team"
+      },
+      {
+        "etape": "Measurement",
+        "detail": "Asset Living and EliseAI track occupancy, on-time rent payment rate and request resolution times by community.",
+        "acteur": "data team"
+      }
+    ]
+  },
+  "replication": {
+    "prerequis_data": [
+      "Property management software up to date on leases, due dates and payments, accessible to the agent",
+      "History of prospect inquiries and their outcome, to measure occupancy before and after",
+      "A baseline on-time rent payment rate per property"
+    ],
+    "prerequis_orga": [
+      "On-site teams willing to leave reminders and routine replies to an agent",
+      "A human takeover rule for sensitive cases (payment difficulty, dispute)",
+      "Legal validation of the tone and content of late payment reminders"
+    ],
+    "stack_possible": [
+      "AI agent platform specialized in property management, connected to the management software",
+      "SMS, email and phone channels with a log of exchanges",
+      "Dashboard per property: occupancy, on-time payments, resolution time"
+    ],
+    "equipe": "A head of leasing operations who owns the deployment, a data profile for per-property measurement, a legal contact for late payment reminders, and the site managers who handle human takeover.",
+    "playbook": [
+      {
+        "action": "Set the baseline: occupancy, on-time payments, response time to prospects, per property.",
+        "livrable": "Quantified baseline before deployment."
+      },
+      {
+        "action": "Deploy the payment reminder module first on a group of properties, with legally validated messages.",
+        "livrable": "Automatic reminders in production and comparison with non-equipped properties."
+      },
+      {
+        "action": "Add prospect handling outside business hours, then maintenance and renewals.",
+        "livrable": "Resident lifecycle covered on a single platform."
+      },
+      {
+        "action": "Measure the effect on renewals separately, which the Asset Living case does not publish.",
+        "livrable": "Renewal rate by cohort, equipped and non-equipped."
+      }
+    ],
+    "premiere_etape": "Measure, property by property, the on-time rent payment rate and the share of prospect inquiries arriving outside business hours, to know where an agent changes the result the most."
+  },
+  "statut_vivant": {
+    "note": "In September 2025, Asset Living announced it was extending its use of EliseAI nationwide and piloting Lease Audits and AI-Guided Tours. The case study is still online at EliseAI as of October 5, 2026. No public signal dated less than 12 months ago was found: to be reviewed as a priority."
+  },
+  "transposable_ue": {
+    "note": "The setup is deployed in the United States only. The pattern (AI agents that write and speak to prospects and residents for leasing, payment reminders, maintenance and renewals) transposes to a European property manager, but late payment reminders involve financial data about individuals: GDPR legal basis, minimization and traceability of messages need to be planned. The AI Act requires informing the resident that they are interacting with an AI, and debt collection is regulated by each country's consumer law."
+  }
+}

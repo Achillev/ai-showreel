@@ -1,0 +1,133 @@
+{
+  "seo": {
+    "title": "Magalu: AI sales agent in WhatsApp - 3x conversion and more than 100 million reais in sales (2026)",
+    "meta_description": "Magalu sells in WhatsApp with Lu and more than 20 AI agents: conversion three times higher than app search and more than R$ 100M in sales.",
+    "resume_citable": "Launched in November 2025, Magalu's WhatsApp da Lu keeps the entire purchase inside WhatsApp through more than 20 orchestrated AI agents; according to Magalu's 2Q26 earnings release, the channel has passed 18 million conversations, converts three times better than standard app search, posts an NPS of 84, about 20% repurchase and more than 100 million reais in cumulative sales.",
+    "faq": [
+      {
+        "q": "What is Magalu's WhatsApp da Lu?",
+        "a": "A sales channel in WhatsApp where Lu, Magalu's virtual character, advises the customer by text, voice or photo, recommends products from the catalog and the marketplace, takes payment by Pix or card and handles order tracking and after-sales service, without leaving the conversation."
+      },
+      {
+        "q": "What results has Magalu published?",
+        "a": "In the second quarter 2026 earnings release: more than 18 million conversations since launch, conversion three times higher than standard app search, an NPS of 84, about 20% repurchase and more than 100 million reais in cumulative sales reached in July 2026."
+      },
+      {
+        "q": "Who developed the assistant?",
+        "a": "Luizalabs, Magalu's technology division, with Meta, Google Cloud and Bain & Company, according to Bain's case study. The system orchestrates more than 20 AI agents and combines proprietary and third-party models."
+      }
+    ]
+  },
+  "pattern": "end-to-end genAI sales agent in a messaging app, from advice to payment",
+  "etape_parcours": "purchase",
+  "objectif_business": "Open a sales channel where Brazilian customers already spend their time, WhatsApp, and have Lu, the brand's virtual influencer, carry the entire purchase journey there, to convert better than the app and the website.",
+  "description": "WhatsApp da Lu is a sales channel Magalu opened in November 2025, first for a group of 1 million active customers, then for all consumers before the end of 2025. The customer writes to Lu, the brand's virtual character, by text, voice message or by sending a photo. The assistant asks clarifying questions (style, budget, use), proposes a selection from the first-party (1P) catalog and from that of the roughly 300,000 marketplace sellers (3P), then takes payment within the conversation, by Pix or card, with no redirect. Order tracking and after-sales service go through the same thread. According to Bain's case study, the system orchestrates more than 20 AI agents that split product discovery, recommendation, search interpretation, customer service and the transaction, on an architecture that mixes proprietary and third-party models. Development is led by Luizalabs, Magalu's technology division, with Meta, Google Cloud and Bain & Company. On the WhatsApp side, Meta says Magalu relies on card carousels, WhatsApp Flows and payments in WhatsApp, and that marketing messages are the main entry point. In its second quarter 2026 release, Magalu makes the channel the core of its new strategic cycle: more than 18 million conversations since launch, conversion three times higher than standard app search, an NPS of 84, about 20% repurchase among customers who have already bought, and more than 100 million reais in cumulative sales reached in July 2026. The comparison base for the conversion figure varies by source: app search in the release, the app in the Bain study, existing sales channels in the press release relayed by the press. At group scale, the channel remains small: the same release reports 9.3 billion reais in e-commerce sales for the quarter alone, down 11.9% year on year. In 2026, Magalu added a Mother's Day operation (personalized AI-generated video from a voice message and a photo), a first TV campaign dedicated to the channel in June, and the system won a bronze Lion at Cannes 2026.",
+  "points_cles": [
+    "Magalu sells in WhatsApp through Lu, an AI that advises, takes payment and tracks the order.",
+    "More than 20 orchestrated AI agents, co-developed by Luizalabs with Meta, Google Cloud and Bain.",
+    "Conversion three times higher than standard app search, about 20% repurchase.",
+    "More than 100 million reais in cumulative sales, figures included in the 2Q26 earnings release."
+  ],
+  "resultats": [
+    { "metrique": "Channel conversion rate, compared with standard search in the Magalu app" },
+    { "metrique": "Cumulative channel sales since the November 2025 launch, threshold passed in July 2026" },
+    { "metrique": "Share of customers who had already bought with Lu who bought again through the channel" },
+    { "metrique": "Cumulative conversations since launch, as of the 2Q26 release" },
+    { "metrique": "Unique users over the first eight months of operation, according to the company" }
+  ],
+  "niveau_preuve": {
+    "justification": "The 3x conversion, NPS, repurchase of about 20%, 18 million conversations and 100 million reais in sales appear in the 2Q26 earnings release published by Magalu on its investor relations site; they are consistent with the Bain case study, the WhatsApp Business customer story and the press release relayed by Central do Varejo."
+  },
+  "stack_technique": [
+    { "detail": "Card carousels, WhatsApp Flows for product pages, payments in WhatsApp integrated with Pix, marketing messages as the entry point." },
+    { "detail": "Development partner cited by Bain; the services used are not publicly detailed." },
+    { "detail": "More than 20 orchestrated AI agents, proprietary models trained on Magalu data and unnamed third-party models." }
+  ],
+  "fonctionnement_operationnel": {
+    "cadence": "Real time for each conversation. WhatsApp marketing message campaigns and seasonal operations (Mother's Day, TV campaign) drive traffic in waves.",
+    "opere_par": "Luizalabs for the platform and the agents, Magalu's customer experience team for service quality, marketing for the campaigns that bring people into the channel.",
+    "signal_pilote": "The conversations themselves and the interaction history, used to learn each customer's preferences, plus the 1P and 3P catalog. Bain says each interaction is tracked with performance metrics and quality checks: without a current catalog (price, stock, sellers), the agent recommends products it cannot sell.",
+    "etapes": [
+      {
+        "etape": "Entry into the channel",
+        "detail": "The customer arrives in the conversation, most often through a WhatsApp marketing message or a campaign promoting the channel.",
+        "acteur": "Marketing"
+      },
+      {
+        "etape": "Understanding the request",
+        "detail": "Lu interprets a text, a voice message or a photo and asks clarifying questions about style, budget and use.",
+        "acteur": "AI"
+      },
+      {
+        "etape": "Selection and presentation",
+        "detail": "The search and recommendation agents draw on the 1P and 3P catalog and display a selection in a carousel, with structured product pages.",
+        "acteur": "AI"
+      },
+      {
+        "etape": "Payment in the conversation",
+        "detail": "The customer pays by Pix or card without leaving WhatsApp.",
+        "acteur": "Customer and payment platform"
+      },
+      {
+        "etape": "Tracking and after-sales",
+        "detail": "Lu sends shipping updates and handles after-sales requests in the same thread.",
+        "acteur": "AI, with the customer experience team"
+      },
+      {
+        "etape": "Measurement",
+        "detail": "Magalu tracks conversations, conversion, NPS, repurchase and cumulative sales, and reports them in its financial communication.",
+        "acteur": "Customer experience team and senior management"
+      }
+    ]
+  },
+  "replication": {
+    "prerequis_data": [
+      "structured product catalog kept current on price, stock and seller, queryable in real time",
+      "customer base reachable on WhatsApp with opt-in for marketing messages",
+      "interaction history tied to the customer to remember their preferences",
+      "order tracking exposed through an API to answer within the conversation"
+    ],
+    "prerequis_orga": [
+      "a brand character or a voice customers already know, which gives them a reason to write to the channel",
+      "a product team that owns the channel end to end, from conversation to payment",
+      "a payment method native to the messaging app in the target market",
+      "a quality control process for conversations before and after going to production"
+    ],
+    "stack_possible": [
+      "WhatsApp Business Platform through a BSP provider",
+      "LLM from a cloud provider, with agent orchestration and tools connected to the catalog",
+      "existing product search and recommendation engine exposed as a tool to the agents",
+      "payment solution integrated with the messaging app, or a payment link"
+    ],
+    "premiere_etape": "Open the channel to a limited group of active customers, on a narrow set of categories, and compare its conversion with app search for those same customers.",
+    "playbook": [
+      {
+        "action": "Map the purchase journey to fit into the conversation (search, clarifying the need, recommendation, payment, tracking, after-sales) and decide what stays outside the channel at first.",
+        "livrable": "Functional scope of the first version."
+      },
+      {
+        "action": "Split the work into specialized agents (search, recommendation, transaction, service) connected to the catalog and order APIs, rather than a single model that does everything.",
+        "livrable": "Agent architecture and exposed tools."
+      },
+      {
+        "action": "Integrate payment into the conversation with the dominant local payment method.",
+        "livrable": "Order paid end to end with no redirect."
+      },
+      {
+        "action": "Launch with a group of active customers, track conversion, NPS and repurchase against app search, then open to everyone.",
+        "livrable": "Comparative read and decision to open."
+      },
+      {
+        "action": "Promote the channel through marketing messages and seasonal operations, and track the share of new users they bring.",
+        "livrable": "Channel activation calendar."
+      }
+    ],
+    "equipe": "A channel product owner, AI engineers for agent orchestration and conversation evaluation, integration developers (catalog, payment, orders), the customer service team for cases the AI does not resolve, and CRM marketing for WhatsApp campaigns."
+  },
+  "statut_vivant": {
+    "note": "Active channel, highlighted by management in the 2Q26 release as a pillar of the 2026 strategic cycle, with features added during the year and a TV campaign in June 2026. Cumulative sales remain small relative to the group's quarterly e-commerce volume."
+  },
+  "transposable_ue": {
+    "note": "The channel relies on the WhatsApp Business Platform, available in the EU, but payment within the conversation relies on Pix, which is specific to Brazil: in Europe it would take another integrated payment method or a redirect. Outbound marketing messages require WhatsApp opt-in and GDPR consent, and remembering customer preferences is profiling that needs a framework. A conversational sales agent falls under the AI Act transparency obligations (telling the customer they are talking to an AI), not high risk."
+  }
+}
